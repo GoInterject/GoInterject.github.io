@@ -1,0 +1,102 @@
+
+<!-- Page generated {{ site.time }} -->
+<!-- relative link basehrefs -->
+{% if page.path contains "index.md" %}
+	{% capture basehref %}{{ page.url }}{% endcapture %}
+{% else %}
+	{% assign crumbs = page.url | split: '/' %}
+	{% assign stoppingpoint = crumbs | size | minus: 1 %}
+	{% for crumb in crumbs %}
+		{% if forloop.index == stoppingpoint %}
+			{% capture basehref %}{{basehref}}{{ crumb }}/{% endcapture %}
+			{% break %}
+		{% else %}
+			{% capture basehref %}{{basehref}}{{ crumb }}/{% endcapture %}
+		{% endif %}
+	{% endfor %}
+{% endif %}
+
+<!-- Logic for 'edit this button' -->
+{% assign edit_url = "https://github.com/docker/docker.github.io/edit/master/" | append: page.path %}
+{% for entry in site.data.not_edited_here.overrides %}
+	{% if page.path contains entry.path %}
+		{% if entry.source %}
+			{% assign edit_url = entry.source %}
+		{% else %}
+			{% assign edit_url = "" %}
+		{% endif %}
+	{% break %}
+	{% endif %}
+{% endfor %}
+
+<!-- End of logic for 'edit this button' -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %} {% include header.html %}
+
+<body>
+    <section class="post-wrapper">
+    </section>
+    <article class="post-content">
+        {{content}}
+    </article>
+
+    <nav class="col-nav">
+        <div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+            {% include side-menu.html %}
+        </div>
+    </nav>
+    <div class="sidebar hidden-xs hidden-sm">
+        <div class="toc-nav">
+            <div class="feedback-links">
+                <ul>
+                    {% if edit_url != "" %}
+                    <li style="visibility: hidden">
+                        <a href="{{ edit_url }}">
+                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit this page</a>
+                    </li>{% endif %}
+                    <li>
+                        <a href="https://github.com/docker/docker.github.io/issues/new?body=File: [{{ page.path }}](https://docs.docker.com{{ page.url }})"
+                            class="nomunge">
+                            <i class="fa fa-check" aria-hidden="true"></i> Request docs changes</a>
+                    </li>
+                    <li>
+                        <a href="https://success.docker.com/support">
+                            <i class="fa fa-question" aria-hidden="true"></i> Get support</a>
+                    </li>
+                    <!-- toggle mode -->
+                    <li>
+                        <div class="toggle-mode">
+                            <div class="icon">
+                                <i class="fa fa-sun-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="toggle-switch">
+                                <label class="switch">
+                                    <input type="checkbox" id="switch-style">
+                                    <div class="slider round"></div>
+                                </label>
+                            </div>
+                            <div class="icon">
+                                <i class="fa fa-moon-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            {% unless page.notoc %} {% assign my_min = page.toc_min | default: site.toc_min | default: 2 %} {% assign my_max = page.toc_max
+            | default: site.toc_max | default: 3 %} {% assign my_name = page.url | default: "unnamed" %}
+            <div id="side-toc-title">On this page:</div>
+            {% include toc_pure_liquid.html html=content sanitize=true class="inline_toc" id="my_toc" toc_min=my_min toc_max=my_max page_name=my_name
+            %}
+        </div>
+        {% endunless %}
+    </div>
+
+</body>
+
+{% include footer.html %}
+
+</html>
