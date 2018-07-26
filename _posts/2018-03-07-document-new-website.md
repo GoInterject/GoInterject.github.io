@@ -16,6 +16,11 @@ Minimize what standard user sees in the portals site. Remove/Move:
 4. Instead of having a vertical main menu we should have a horizontal menu.
 5. Top bar should include links back to portal site. (screenshot 11)
 
+### Rebuilding Portal site
+1. Example site - [zapier]
+
+![images12](/images/Image12.png){:class="img-responsive"}
+
 ### Workflow for app development.
 Example site: https://zapier.com/ - Connecting application and automate workflow
 1. Steps to create an application
@@ -29,9 +34,10 @@ Example site: https://zapier.com/ - Connecting application and automate workflow
         1. Create Name/description specify public private
             1. (optional) Need a way to link to  app documentation/ or add documentation
         2. Select excel templates
-            1. need access to report library from 
+            1. need access to report library from web
+            2. select the templates that we what to include.
+            3. At this point we should be able to figure out the portals and connections needed. This should be defaulted but allow users to change and modify. 
         3. Select portals
-            1. 
         4. Select connection  
             1. will default based on the portals that are selected
             2. specify the connection that can be overwrite
@@ -41,7 +47,7 @@ Example site: https://zapier.com/ - Connecting application and automate workflow
 ![images10](/images/Image10.png){:class="img-responsive"} 
 
 ## Documentation
-1. Native GitHub static website https://help.github.com/articles/what-is-github-pages/
+1. Native GitHub static website [pages.github]
 2. Having 2 documentation location may cause issues with having to duplicate documentation. An alliterative is to display different documentation based on roles that a users has in Interject
     1. Basic documentation
         1. Mostly graphical
@@ -88,13 +94,14 @@ Apple defiantly has the best organization for forums (screenshot 5,6). Microsoft
 
 ![images6](/images/Image6.png){:class="img-responsive"}
 
-### Discource Platform
-The best platform for a forum is https://Discource.org
+### Discourse Platform
+The best platform for a forum is [Discourse]
+
 This is opensource software with many sites that will host and maintain it
 
 ![images11](/images/Image11.png){:class="img-responsive"}
 
 
-
-
-
+[zapier]: https://zapier.com
+[pages.github]: https://help.github.com/articles/what-is-github-pages/
+[Discourse]: https://www.discourse.org/
