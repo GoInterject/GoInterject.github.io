@@ -7,6 +7,12 @@ categories: documentation
 
 Portal site should be the go to area. Whether it is downloads or documentation or forms. However to make it more easy to follow we need to reduce the options we have in the site for most users.
 
+## On bording new developers from start to finish. 
+1. Email invitation new clients (simplify)
+2. Download turorial package 
+3. 
+
+
 ## Portal 
 Minimize what standard user sees in the portals site. Remove/Move:
 1. My Offerings - should be part of myApps
