@@ -63,6 +63,19 @@ responsive_image:
   # Path to the image template.
   template: _includes/responsive-image.html
 
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: docs
+      toc_min: 2
+      toc_max: 3
+      tree: true
+
+
 # Assets
 #
 # We specify the directory for Jekyll so we can use @imports.
