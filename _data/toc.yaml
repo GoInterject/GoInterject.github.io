@@ -1,11 +1,11 @@
 horizontalnav:
-- title: Guides
+- title: Get Started
   path: /
   node: guides
+- title: Api
+  path: /wiki/ID/
+  node: custom2
 - title: Design
-  path: /ee/
-  node: manuals
-- title: Glossary
   path: /glossary/
   node: glossary
 - title: Reference
@@ -14,6 +14,58 @@ horizontalnav:
 - title: Samples
   path: /samples/
   node: samples
+
+
+
+custom2:
+- sectiontitle: Overview
+  section:
+  - title: INTERJECT Data Systems 
+    path: /wiki/ID/HowToDevelop.html
+  - title: What Does INTERJECT Do?
+    path: /wiki/ID/61702415.html
+  - title: Real World Use Cases
+    path: /wiki/ID/Real-World-Use-Cases_61702417.html
+  - title: Why CFO's Like INTERJECT
+    path: /wiki/ID/Why-CFO%27s-Like-INTERJECT_61702437.html
+  - title: Why CIO's Like INTERJECT
+    path: /wiki/ID/Why-CIO%27s-Like-INTERJECT_61702419.html
+  - title: What You Need to Know
+    path: /wiki/ID/What-You-Need-to-Know_61702914.html
+- sectiontitle: How to
+  section:  
+  - title: Using INTERJECT
+    path: /wiki/ID/Using-INTERJECT_61702183.html
+  - title: Installing INTERJECT
+    path: /wiki/ID/Installing-INTERJECT_91881528.html
+  - title: Logging In
+    path: /wiki/ID/Logging-In_63275074.html
+  - title: Adding a User
+    path: /wiki/ID/Adding-a-User_61702191.html
+  - title: Report Library Basics
+    path: /wiki/ID/Report-Library-Basics_61702517.html
+  - title: Real-World Walkthroughs
+    path: /wiki/ID/Real-World-Walkthroughs_128091006.html
+  - title: Customer Aging
+    path: /wiki/ID/Customer-Aging_128091294.html
+  - title: Inventory Reports
+    path: /wiki/ID/Inventory-Reports_128091499.html
+  - title: Financial Report
+    path: /wiki/ID/Financial-Report_128091561.html
+  - title: Updating INTERJECT
+    path: /wiki/ID/Updating-INTERJECT_128493904.html
+- sectiontitle: Interject at work
+  section: 
+  - title: Working with INTERJECT
+    path: /wiki/ID/Working-with-INTERJECT_61702912.html
+  - title: Basics of Report Formulas
+    path: /wiki/ID/Basics-of-Report-Formulas_61702189.html
+  - title: Tabular vs Data Cells
+    path: /wiki/ID/Tabular-vs-Data-Cells_61702447.html
+  - title: Creating with INTERJECT
+    path: /wiki/ID/Creating-with-INTERJECT_61702187.html
+  - title: Modifying an Existing Report
+    path: /wiki/ID/Modifying-an-Existing-Report_62849215.html
 
 guides:
 - sectiontitle: Get Docker

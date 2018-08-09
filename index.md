@@ -1,8 +1,10 @@
 ---
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: custom
+landing: true
+notoc: true
+notags: true
 ---
 
 <!-- list all posts  -->
@@ -13,7 +15,6 @@ layout: home
     </li>
   {% endfor %}
 </ul> 
-
 
 
 <!-- {% for post in site.categories[page.category] %}

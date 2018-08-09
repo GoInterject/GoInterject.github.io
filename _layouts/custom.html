@@ -81,9 +81,11 @@
 	{% if page.hide_from_sitemap %}<meta name="robots" content="noindex" />{% endif %}
 
 </head>	
-{% include header.html %}
-<body ng-app="Docker" ng-controller="DockerController" class="colums">
 
+<body ng-app="Docker" ng-controller="DockerController" class="colums">
+	<header>
+		{% if page.landing == true %}{% include global-header.html %}{% endif %} {% if page.landing != true %}{% include header.html %}{% endif %}
+	</header>
 
 	<div class="{% if page.landing == true %}wrapper{%else%}wrapper right-open{% endif %}">
 		<div class="container-fluid">
