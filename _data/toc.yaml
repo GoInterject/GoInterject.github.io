@@ -1,7 +1,10 @@
 horizontalnav:
-- title: Get Started
+- title: About
   path: /
   node: guides
+- title: Get Started
+  path: /wiki/ID/
+  node: custom2
 - title: Api
   path: /wiki/ID/
   node: custom2
@@ -13,6 +16,9 @@ horizontalnav:
   node: reference
 - title: Website Portal
   path: /samples/
+  node: samples
+- title: Apps
+  path: /zApp/
   node: samples
 
 

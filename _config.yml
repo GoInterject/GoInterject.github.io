@@ -70,7 +70,7 @@ defaults:
       path: ""
       type: "pages"
     values:
-      layout: docs
+      layout: custom
       toc_min: 2
       toc_max: 3
       tree: true

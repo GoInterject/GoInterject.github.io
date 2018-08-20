@@ -77,7 +77,10 @@ function walkTree(tree)
     if (tree[j].section)
     {
       var sectionHasPath = findMyTopic(tree[j].section);
-      outputLetNav.push('<li><a onclick="navClicked(' + totalTopics +')" data-target="#item' + totalTopics +'" data-toggle="collapse" data-parent="#stacked-menu"')
+     // Add hyperlink to subtitle
+     // outputLetNav.push('<li><a href="' + tree[j].path + '" onclick="navClicked(' + totalTopics +')" data-target="#item' + totalTopics +'" data-toggle="collapse" data-parent="#stacked-menu"')
+     outputLetNav.push('<li><a onclick="navClicked(' + totalTopics +')" data-target="#item' + totalTopics +'" data-toggle="collapse" data-parent="#stacked-menu"')
+       
       if (sectionHasPath)
       {
         outputLetNav.push('aria-expanded="true"')
