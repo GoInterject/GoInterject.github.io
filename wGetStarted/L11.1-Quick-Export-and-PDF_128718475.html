@@ -1,0 +1,242 @@
+---
+title: Interject Documentation > L11.1 Quick Export and PDF
+layout: custom
+---
+<div class="wiki-content group" id="main-content">
+ <hr/>
+ <div id="Main Content">
+  <h2 id="L11.1QuickExportandPDF-Overview">
+   <strong>
+    Overview
+   </strong>
+  </h2>
+  <p>
+   <span style="color: rgb(0,0,0);">
+    This method of distribution is the simplest. The purpose of Quick Export is to build a new workbook from the current workbook and remove all the external links and
+    <a data-linked-resource-id="61702447" data-linked-resource-type="page" data-linked-resource-version="85" href="Tabular-vs-Data-Cells_61702447.html">
+     Data Cell
+    </a>
+    formulas so users without INTERJECT can view the report. It's important to note that
+    <a href="https://interject.atlassian.net/wiki/spaces/ID/pages/61702447/Tabular+vs+Data+Cells" rel="nofollow">
+     Tabular
+    </a>
+    INTERJECT reports can be viewed immediately by users without INTERJECT and do not need to be exported to be shared. Although Tabular reports use special report formulas, the formulas remain out of view for users without INTERJECT, and any data pulled into the report are simply values. Outside users can view them without any modification.
+   </span>
+  </p>
+  <h3 id="L11.1QuickExportandPDF-QuickExport">
+   Quick Export
+  </h3>
+  <p>
+   Quick Export removes
+   <a href="https://interject.atlassian.net/wiki/spaces/ID/pages/61702447/Data+Lists+vs+Data+Cells" rel="nofollow">
+    Data Cell
+   </a>
+   formulas and external links from a workbook so users without INTERJECT can view them.
+  </p>
+  <p>
+   Take the report
+   <strong>
+    PL Trend Report with Data Cells
+   </strong>
+   from the
+   <a href="https://interject.atlassian.net/wiki/spaces/ID/pages/128091561/Financial+Report" rel="nofollow">
+    Financial Walk-through
+   </a>
+   as an example. It is shown below.
+   <br/>
+   <span class="confluence-embedded-file-wrapper image-center-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128718475/129049218.png" data-linked-resource-container-id="128718475" data-linked-resource-container-version="40" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-7-12_15-6-33.png" data-linked-resource-id="129049218" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="46fd7528-4f1a-4b5b-a278-23d81509f467" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128718475/129049218.png"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 1:
+   </strong>
+   First, use the
+   <a href="https://interject.atlassian.net/wiki/content-only/viewpage.action?pageId=83689479&amp;iframeId=fallback-mode&amp;user_key=ff8080814d41a454014d440734dd0001&amp;user_id=MariaH&amp;xdm_e=https://interject.atlassian.net/&amp;xsm_c=fallback-mode-fake-key__4605840879355454&amp;cp=/wiki&amp;cv=0.0.0-fallback-mode&amp;lic=none#InterjectRibbonMenuItems-PullData" rel="nofollow">
+    <strong>
+     Pull Data
+    </strong>
+   </a>
+   operation to pull the report for Location 7002 and month 2002-05.
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper image-center-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128718475/129249083.png" data-linked-resource-container-id="128718475" data-linked-resource-container-version="40" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-7-20_16-1-54.png" data-linked-resource-id="129249083" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="a80aace0-451a-4b30-b7e8-2da504ca6edf" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128718475/129249083.png"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   Now you have the report to distribute. However, if you send this report with data cells, people without INTERJECT will not be able to view all the Data Cell formulas like in cell K16 below. Without INTERJECT installed that formula will show as
+   <strong>
+    #NAME
+   </strong>
+   .
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper image-center-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128718475/129050135.png" data-linked-resource-container-id="128718475" data-linked-resource-container-version="40" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-7-12_16-9-36.png" data-linked-resource-id="129050135" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="81734c14-d719-474c-a606-938080bc266a" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128718475/129050135.png"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 2:
+   </strong>
+   To prevent this issue, you can use
+   <strong>
+    <a href="https://interject.atlassian.net/wiki/content-only/viewpage.action?pageId=83689479&amp;iframeId=fallback-mode&amp;user_key=ff8080814d41a454014d440734dd0001&amp;user_id=MariaH&amp;xdm_e=https://interject.atlassian.net/&amp;xsm_c=fallback-mode-fake-key__6999655859767222&amp;cp=/wiki&amp;cv=0.0.0-fallback-mode&amp;lic=none#InterjectRibbonMenuItems-ExportBook" rel="nofollow">
+     Export Book
+    </a>
+   </strong>
+   to create a new book and convert the data cell functions into regular values.
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper image-center-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128718475/129249266.png" data-linked-resource-container-id="128718475" data-linked-resource-container-version="40" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-7-20_16-9-19.png" data-linked-resource-id="129249266" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="79a9bcb4-8c26-4284-9411-9a8abed862a5" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128718475/129249266.png"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   Once complete, the report will upload into a brand new workbook with fixed values instead of data cell formulas. This allows users without INTERJECT to view the report.
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper image-center-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128718475/129050583.png" data-linked-resource-container-id="128718475" data-linked-resource-container-version="40" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-7-12_16-29-12.png" data-linked-resource-id="129050583" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="dea8ee5f-8e5e-4a61-89ca-6d1e2da3c383" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128718475/129050583.png"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <h3 id="L11.1QuickExportandPDF-QuickPDF">
+   Quick PDF
+  </h3>
+  <p>
+   Exporting to PDFs from Excel has been available since Excel 2010 (and even with Excel 2007 accompanied by the download available
+   <span style="color: rgb(51,102,255);">
+    <u>
+     <span style="color: rgb(51,102,255);">
+      <a class="external-link" href="http://www.microsoft.com/downloads/details.aspx?familyid=4d951911-3e7e-4ae6-b059-a2e79ed87041" rel="nofollow">
+       here
+      </a>
+     </span>
+    </u>
+   </span>
+   ). You will select this option and choose a folder in which to save the PDF. After saving, the PDF will open for review.
+  </p>
+  <p>
+   <strong>
+    Step 1:
+   </strong>
+   Go back to the PL Trend with Data Cells from the previous section. You can again select
+   <a href="https://interject.atlassian.net/wiki/content-only/viewpage.action?pageId=83689479&amp;iframeId=fallback-mode&amp;user_key=ff8080814d41a454014d440734dd0001&amp;user_id=MariaH&amp;xdm_e=https://interject.atlassian.net/&amp;xsm_c=fallback-mode-fake-key__6999655859767222&amp;cp=/wiki&amp;cv=0.0.0-fallback-mode&amp;lic=none#InterjectRibbonMenuItems-ExportBook" rel="nofollow">
+    <strong>
+     Export Book
+    </strong>
+    ,
+   </a>
+   but this time follow up with the
+   <strong>
+    Quick PDF
+   </strong>
+   button.
+  </p>
+  <p>
+   <strong>
+    <span class="confluence-embedded-file-wrapper image-center-wrapper">
+     <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128718475/129633262.png" data-linked-resource-container-id="128718475" data-linked-resource-container-version="40" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-8-9_9-27-41.png" data-linked-resource-id="129633262" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="3b3ee1cd-3f8a-4928-83c9-93cf48f5556e" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128718475/129633262.png"/>
+    </span>
+    <br/>
+   </strong>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 2:
+   </strong>
+   When you export to a PDF you will be required to declare a save location.
+  </p>
+  <p>
+   <strong>
+    <span class="confluence-embedded-file-wrapper image-center-wrapper">
+     <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128718475/129050647.png" data-linked-resource-container-id="128718475" data-linked-resource-container-version="40" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-7-12_16-33-30.png" data-linked-resource-id="129050647" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="8f9ee1a6-b54b-4a66-8bb2-c3392e7e70e8" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128718475/129050647.png"/>
+    </span>
+    <br/>
+   </strong>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 3:
+   </strong>
+   The PDF opens in the default browser. The published file should look like the one below.
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper image-center-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128718475/129050671.png" data-linked-resource-container-id="128718475" data-linked-resource-container-version="40" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-7-12_16-34-24.png" data-linked-resource-id="129050671" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="b73d8378-f1c2-46db-97e7-5e2aeeb12c55" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128718475/129050671.png"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   You have completed exporting. Continue on to learn about the
+   <a href="https://interject.atlassian.net/wiki/spaces/ID/pages/128719024/Basic+Distribution" rel="nofollow">
+    Basics of Distribution
+   </a>
+   .
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Next Step:
+   </strong>
+   <a href="https://interject.atlassian.net/wiki/spaces/ID/pages/128719024/Basic+Distribution" rel="nofollow">
+    Basic Distribution
+   </a>
+  </p>
+ </div>
+ <p>
+  <br/>
+ </p>
+ <h2 id="L11.1QuickExportandPDF-RelatedLinks:">
+  <span style="color: rgb(0,0,0);">
+   Related Links:
+  </span>
+ </h2>
+ <p>
+  <a data-linked-resource-id="128091499" data-linked-resource-type="page" data-linked-resource-version="130" href="Inventory-Reports_128091499.html">
+   Inventory Reports
+  </a>
+ </p>
+ <p>
+  <a data-linked-resource-id="61702447" data-linked-resource-type="page" data-linked-resource-version="85" href="Tabular-vs-Data-Cells_61702447.html">
+   Tabular vs Data Cells
+  </a>
+ </p>
+ <p>
+  <a data-linked-resource-id="83689479" data-linked-resource-type="page" data-linked-resource-version="130" href="INTERJECT-Ribbon-Menu-Items_83689479.html">
+   INTERJECT Ribbon Menu Items
+  </a>
+ </p>
+ <p>
+  <a data-linked-resource-id="128719024" data-linked-resource-type="page" data-linked-resource-version="68" href="L11.2-Basic-Distribution_128719024.html">
+   L11.2 Basic Distribution
+  </a>
+ </p>
+</div>

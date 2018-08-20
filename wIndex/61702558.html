@@ -1,0 +1,254 @@
+---
+title: Interject Documentation > ReportRun()
+layout: custom
+---
+<div class="wiki-content group" id="main-content">
+ <hr/>
+ <p>
+  <br/>
+ </p>
+ <h2 id="ReportRun()-FunctionSummary">
+  Function Summary
+ </h2>
+ <p>
+  <span style="color: rgb(0,0,0);">
+   ReportRun executes a Report Function in another tab without changing the tab focus. It can handle both run and clear events.
+  </span>
+ </p>
+ <p>
+  <strong>
+   <br/>
+  </strong>
+ </p>
+ <h3 id="ReportRun()-FunctionArguments">
+  Function Arguments
+ </h3>
+ <div class="table-wrap">
+  <table class="wrapped confluenceTable">
+   <colgroup>
+    <col/>
+    <col/>
+    <col/>
+    <col/>
+   </colgroup>
+   <tbody>
+    <tr>
+     <th class="confluenceTh">
+      Parameter Name
+     </th>
+     <th class="confluenceTh">
+      Description
+     </th>
+     <th class="confluenceTh">
+      Default
+     </th>
+     <th class="confluenceTh">
+      Optional
+     </th>
+    </tr>
+    <tr>
+     <td class="confluenceTd">
+      <p>
+       <span>
+        <span style="color: rgb(0,0,0);">
+         ReportCellToRun
+        </span>
+       </span>
+      </p>
+     </td>
+     <td class="confluenceTd">
+      <span>
+       <span style="color: rgb(0,0,0);">
+        A range within the target worksheet to run a report function.
+       </span>
+      </span>
+     </td>
+     <td class="confluenceTd">
+      <br/>
+     </td>
+     <td class="confluenceTd">
+      <p>
+       NO
+      </p>
+     </td>
+    </tr>
+    <tr>
+     <td class="confluenceTd" colspan="1">
+      <span>
+       <span style="color: rgb(0,0,0);">
+        RunEntireWorksheet
+       </span>
+      </span>
+     </td>
+     <td class="confluenceTd" colspan="1">
+      <span>
+       <span style="color: rgb(0,0,0);">
+        A boolean toggle that will enable or disable an entire Worksheet’s Report Functions from running. (CLEAN UP LANGUAGE / CLARIFY HOW TO USE)
+       </span>
+      </span>
+     </td>
+     <td class="confluenceTd" colspan="1">
+      TRUE
+     </td>
+     <td class="confluenceTd" colspan="1">
+      YES
+     </td>
+    </tr>
+    <tr>
+     <td class="confluenceTd" colspan="1">
+      <span>
+       <span style="color: rgb(0,0,0);">
+        OnAction
+       </span>
+      </span>
+     </td>
+     <td class="confluenceTd" colspan="1">
+      <p>
+       <span style="color: rgb(0,0,0);">
+        A control for which type of Report Function to run. Options include:
+       </span>
+      </p>
+      <ul>
+       <li>
+        <span style="color: rgb(0,0,0);">
+         ‘Pull’
+        </span>
+       </li>
+       <li>
+        <span style="color: rgb(0,0,0);">
+         ‘Save’
+        </span>
+       </li>
+       <li>
+        <span style="color: rgb(0,0,0);">
+         'PullAndSave’
+        </span>
+       </li>
+       <li>
+        <span style="color: rgb(0,0,0);">
+         ‘PullClear’
+        </span>
+       </li>
+       <li>
+        <span style="color: rgb(0,0,0);">
+         ‘SaveClear’
+        </span>
+       </li>
+       <li>
+        <span style="color: rgb(0,0,0);">
+         ‘PullAndSaveClear’
+        </span>
+       </li>
+       <li>
+        <span style="color: rgb(0,0,0);">
+         'Back’
+        </span>
+       </li>
+      </ul>
+     </td>
+     <td class="confluenceTd" colspan="1">
+      PULL
+     </td>
+     <td class="confluenceTd" colspan="1">
+      YES
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <p>
+  <br/>
+ </p>
+ <h3 id="ReportRun()-FunctionComposition">
+  Function Composition
+ </h3>
+ <div class="panel" style="border-width: 1px;">
+  <div class="panelContent">
+   <p>
+    <span style="color: rgb(0,0,0);">
+     =ReportRun(
+    </span>
+   </p>
+   <p>
+    <span style="color: rgb(0,0,0);">
+     ReportCellToRun
+    </span>
+   </p>
+   <p>
+    <span style="color: rgb(0,0,0);">
+     ,RunEntireWorksheet
+    </span>
+   </p>
+   <p>
+    <span style="color: rgb(0,0,0);">
+     ,OnAction
+    </span>
+   </p>
+   <p>
+    <span style="color: rgb(0,0,0);">
+     )
+    </span>
+   </p>
+   <div>
+    <span style="color: rgb(0,0,0);">
+     <br/>
+    </span>
+   </div>
+  </div>
+ </div>
+ <p>
+  <br/>
+ </p>
+ <h3 id="ReportRun()-FunctionExample">
+  Function Example
+ </h3>
+ <div class="table-wrap">
+  <table class="wrapped confluenceTable">
+   <colgroup>
+    <col/>
+    <col/>
+   </colgroup>
+   <tbody>
+    <tr>
+     <th class="confluenceTh">
+      From File
+     </th>
+     <th class="confluenceTh">
+      Worksheet
+     </th>
+    </tr>
+    <tr>
+     <td class="confluenceTd">
+      <span>
+       InterjectBasic
+      </span>
+     </td>
+     <td class="confluenceTd">
+      <span>
+       <span style="color: rgb(0,0,0);">
+        ReportRun
+       </span>
+      </span>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <div>
+  <div class="panel" style="border-width: 1px;">
+   <div class="panelContent">
+    <p>
+     =ReportRun(ReportRunTarget!C2,TRUE,"Pull")
+    </p>
+    <div>
+     <span style="color: rgb(0,0,0);">
+      <br/>
+     </span>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p>
+  <br/>
+ </p>
+</div>

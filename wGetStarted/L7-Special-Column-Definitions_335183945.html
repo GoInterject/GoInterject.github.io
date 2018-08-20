@@ -1,0 +1,564 @@
+---
+title: Interject Documentation > L7 Special Column Definitions
+layout: custom
+---
+<div class="wiki-content group" id="main-content">
+ <hr/>
+ <div id="Main Content">
+  <h2 id="L7SpecialColumnDefinitions-Overview:">
+   <strong>
+    Overview:
+   </strong>
+   <span>
+   </span>
+  </h2>
+  <p>
+   <span>
+    Special column definitions provide additional features to your reports
+   </span>
+   <span>
+    . There are three options:
+   </span>
+  </p>
+  <ol>
+   <li>
+    <strong>
+     <a href="#L7SpecialColumnDefinitions-CellValueC">
+      Adding a cell comment
+     </a>
+    </strong>
+   </li>
+   <li>
+    <span>
+     <a href="#L7SpecialColumnDefinitions-CellValueHyperLi">
+      <strong>
+       Adding a hyperlink to a web address
+      </strong>
+     </a>
+    </span>
+   </li>
+   <li>
+    <span>
+     <a href="#L7SpecialColumnDefinitions-CellValueVa">
+      <strong>
+       Adding a custom drop down validation to each row
+      </strong>
+     </a>
+    </span>
+   </li>
+   <li>
+    <strong>
+     <a href="#L7SpecialColumnDefinitions-StackCellValues">
+      Adding multiple cell values stacked on a single cell
+     </a>
+    </strong>
+   </li>
+  </ol>
+  <p>
+   <span>
+    These additional features are added by editing the Column Definition Row. The Column Definition Row is a row that designates, and filters, the placement of information. For example, if your report is presenting the field “Company Name”,  your Column Definition would have a cell with the value “Company Name”. To add one of these features to the cells in a column where the report is populated you use an identifier such as
+   </span>
+   <strong>
+    AddComm
+   </strong>
+   <span>
+    for comments,
+   </span>
+   <strong>
+    hLink
+   </strong>
+   <span>
+    for hyperlinks, and
+   </span>
+   <strong>
+    Valuelist
+   </strong>
+   <span>
+    for a drop down list. This lab uses the
+    <strong>
+     Customer Credits
+    </strong>
+    report.
+   </span>
+  </p>
+  <h3 id="L7SpecialColumnDefinitions-CellValueComment">
+   <span>
+    <span class="confluence-anchor-link" id="L7SpecialColumnDefinitions-CellValueComment">
+    </span>
+   </span>
+  </h3>
+  <h3 id="L7SpecialColumnDefinitions-SpecialCellValueComment">
+   <span>
+    Special Cell Value Comment
+   </span>
+  </h3>
+  <p>
+   <span>
+    A comment is often used to note more detailed information about the data in a cell. Comments are useful when the information contained within them are not required but need to be referenced when you put your mouse over the cell. In this example you will add comments to the credit limit column to note who last changed the credit.
+   </span>
+  </p>
+  <p>
+   <span>
+    To start, unfreeze the panes
+   </span>
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/335183945/346194026.jpg" data-linked-resource-container-id="335183945" data-linked-resource-container-version="18" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="01.jpg" data-linked-resource-id="346194026" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="6e464c57-9680-4081-b4b1-e2d9f9526edc" data-media-type="file" data-unresolved-comment-count="0" src="attachments/335183945/346194026.jpg"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <span>
+    In the Company Name field in cell
+   </span>
+   <strong>
+    C21
+   </strong>
+   <span>
+    input
+   </span>
+   <strong>
+    Market
+   </strong>
+   and
+   <span>
+    Pull the data
+   </span>
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/335183945/346259541.jpg" data-linked-resource-container-id="335183945" data-linked-resource-container-version="18" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="02.jpg" data-linked-resource-id="346259541" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="ec2c820e-ed92-4a84-acec-b09a8fef9848" data-media-type="file" data-unresolved-comment-count="0" src="attachments/335183945/346259541.jpg"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <span>
+    The report looks like this
+   </span>
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/335183945/346194031.jpg" data-linked-resource-container-id="335183945" data-linked-resource-container-version="18" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="03.jpg" data-linked-resource-id="346194031" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="584260a8-d849-489b-ae13-6b40335d0c2a" data-media-type="file" data-unresolved-comment-count="0" src="attachments/335183945/346194031.jpg"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <span>
+    Select cell
+   </span>
+   <strong>
+    H2
+   </strong>
+   <span>
+    and input
+   </span>
+   <strong>
+    CreditLimit Addcomm:LastCredit
+   </strong>
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/335183945/346062917.jpg" data-linked-resource-container-id="335183945" data-linked-resource-container-version="18" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="04.jpg" data-linked-resource-id="346062917" data-linked-resource-type="attachment" data-linked-resource-version="2" data-media-id="481053c5-a4b1-4da5-bad7-6c95857c60d3" data-media-type="file" data-unresolved-comment-count="0" src="attachments/335183945/346062917.jpg"/>
+   </span>
+  </p>
+  <p>
+   <strong>
+    Note:
+   </strong>
+   <strong>
+    Addcomm
+   </strong>
+   <span>
+    designates the type of special column that you are using and
+   </span>
+   <strong>
+    LastCredit
+   </strong>
+   <span>
+    is the actual content in the comment
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <span>
+    Pull the data
+   </span>
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/335183945/346095732.jpg" data-linked-resource-container-id="335183945" data-linked-resource-container-version="18" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="05.jpg" data-linked-resource-id="346095732" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="3ceab156-9a5d-4ee0-b168-b8e08416a668" data-media-type="file" data-unresolved-comment-count="0" src="attachments/335183945/346095732.jpg"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <span>
+    Place your cursor over cell
+   </span>
+   <strong>
+    H27
+   </strong>
+   <span>
+    and review the comment that is placed in the cell. Notice that the
+   </span>
+   <strong>
+    Credit Limit
+   </strong>
+   <span>
+    column was pulled as it was before the changes but it has a comment associated with it that now details the changes made to that column.
+   </span>
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/335183945/346194036.jpg" data-linked-resource-container-id="335183945" data-linked-resource-container-version="18" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="06.jpg" data-linked-resource-id="346194036" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="636caf93-6343-41ef-a473-ac13c2323a0e" data-media-type="file" data-unresolved-comment-count="0" src="attachments/335183945/346194036.jpg"/>
+   </span>
+  </p>
+  <p>
+   <strong>
+    Note:
+   </strong>
+   <span>
+    Not all of the cells have been changed, and so there is no comment created for those cells.
+   </span>
+  </p>
+  <h3 id="L7SpecialColumnDefinitions-CellValueHyperLink">
+   <span>
+    <span class="confluence-anchor-link" id="L7SpecialColumnDefinitions-CellValueHyperLink">
+    </span>
+   </span>
+  </h3>
+  <h3 id="L7SpecialColumnDefinitions-SpecialCellValueHyperlink">
+   <span>
+    Special Cell Value Hyperlink
+   </span>
+  </h3>
+  <p>
+   <span>
+    Excel has two types of hyperlinks, the hyperlink property and the Hyperlink() spreadsheet function.  This feature uses the spreadsheet function in the report so users can click to open specific web pages.  In this example you will use INTERJECT to add hyperlinks to the address column of the report that links the address to a google map search.
+   </span>
+  </p>
+  <p>
+   <span>
+    Select cell
+   </span>
+   <strong>
+    C2
+   </strong>
+   <span>
+    and input
+   </span>
+   <strong>
+    CompanyName hlink:MapsURL
+   </strong>
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/335183945/346357890.jpg" data-linked-resource-container-id="335183945" data-linked-resource-container-version="18" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="07.jpg" data-linked-resource-id="346357890" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="47814e17-391f-4277-baaa-3b4e5b83ddd4" data-media-type="file" data-unresolved-comment-count="0" src="attachments/335183945/346357890.jpg"/>
+   </span>
+  </p>
+  <p>
+   <strong>
+    Note:
+   </strong>
+   <span>
+    The
+   </span>
+   <strong>
+    MapsURL
+   </strong>
+   <span>
+    segment of the
+   </span>
+   <strong>
+    hlink
+   </strong>
+   <span>
+    string designates a column built in the SQL stored procedure. The hlink string only links to a whole column of data you cannot concatenate values in excel, but can in the SQL stored procedure as long as it results in a single column.
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <span>
+    Pull the data
+   </span>
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/335183945/346259546.jpg" data-linked-resource-container-id="335183945" data-linked-resource-container-version="18" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="08.jpg" data-linked-resource-id="346259546" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="49130aed-6f64-4134-8345-1400b3598f1f" data-media-type="file" data-unresolved-comment-count="0" src="attachments/335183945/346259546.jpg"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    CompanyName
+   </strong>
+   <span>
+    is still pulled normally but instead of the normal dataset look, it will create a hyperlink formula. The
+   </span>
+   <strong>
+    Link Location
+   </strong>
+   <span>
+    goes to Google Maps and searches for the full address for that company.concatenated with the address associated with each company. This way the location data is accessible but does not overcrowd the information while the
+   </span>
+   <strong>
+    Friendly Name
+   </strong>
+   <span>
+    of the URL  is the
+   </span>
+   <strong>
+    Company Name
+   </strong>
+   <span>
+    .
+   </span>
+  </p>
+  <p>
+   <span>
+    <span class="confluence-embedded-file-wrapper">
+     <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/335183945/348684292.jpg" data-linked-resource-container-id="335183945" data-linked-resource-container-version="18" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="Adendum.jpg" data-linked-resource-id="348684292" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="a91ef6a5-eb1b-4987-b895-5f7ff30dc7d5" data-media-type="file" data-unresolved-comment-count="0" src="attachments/335183945/348684292.jpg"/>
+    </span>
+   </span>
+  </p>
+  <p>
+   <span>
+    Select cell
+   </span>
+   <strong>
+    C27
+   </strong>
+   <span>
+    and notice that it takes you to Google Maps
+   </span>
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/335183945/346161326.jpg" data-linked-resource-container-id="335183945" data-linked-resource-container-version="18" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="09.jpg" data-linked-resource-id="346161326" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="5d9c658d-085d-4ebf-ba17-ceaa26b8db7d" data-media-type="file" data-unresolved-comment-count="0" src="attachments/335183945/346161326.jpg"/>
+   </span>
+  </p>
+  <p>
+   <strong>
+    Note:
+   </strong>
+   <span>
+    The addresses may not be valid as they are fabricated data from the Northwind Database.
+   </span>
+  </p>
+  <h3 id="L7SpecialColumnDefinitions-CellValueValidationList">
+   <span>
+    <span class="confluence-anchor-link" id="L7SpecialColumnDefinitions-CellValueValidationList">
+    </span>
+   </span>
+  </h3>
+  <h3 id="L7SpecialColumnDefinitions-SpecialCellValueValidationList">
+   <span>
+    Special Cell Value Validation List
+   </span>
+  </h3>
+  <p>
+   <span>
+    Inserting data validation dropdown lists are similar to the other special column definitions.
+   </span>
+   <span>
+    When used they create dropdown lists using comma delimited strings, with each value inside the string separated by commas.
+   </span>
+   <span>
+    In this example you will add data validation to the account freeze column to limit possible input values.
+   </span>
+  </p>
+  <p>
+   <span>
+    For this example, use
+   </span>
+   <strong>
+    AccountFreeze
+   </strong>
+   <span>
+    in cell
+   </span>
+   <strong>
+    K2
+   </strong>
+   <span>
+    .
+   </span>
+  </p>
+  <p>
+   <span>
+    Select the cell, then input
+   </span>
+   <strong>
+    AccountFreeze valuelist:FreezeOptions
+   </strong>
+  </p>
+  <p>
+   <span>
+    <span class="confluence-embedded-file-wrapper">
+     <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/335183945/346259551.jpg" data-linked-resource-container-id="335183945" data-linked-resource-container-version="18" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="10.jpg" data-linked-resource-id="346259551" data-linked-resource-type="attachment" data-linked-resource-version="2" data-media-id="7c036dfb-ebd6-46b5-a3b4-f107bb15f6b6" data-media-type="file" data-unresolved-comment-count="0" src="attachments/335183945/346259551.jpg"/>
+    </span>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    AccountFreeze
+   </strong>
+   <span>
+    will be shown as a blank value but upon selecting the cell, you can see that there is a drop down list with the options
+   </span>
+   <strong>
+    Yes
+   </strong>
+   <span>
+    or
+   </span>
+   <strong>
+    No
+   </strong>
+   <span>
+    . If there was a comma separated list instead of
+   </span>
+   <strong>
+    FreezeOptions
+   </strong>
+   <span>
+    , the value list would only include what is in the comma separated list.
+   </span>
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/335183945/346062922.jpg" data-linked-resource-container-id="335183945" data-linked-resource-container-version="18" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="11.jpg" data-linked-resource-id="346062922" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="2a462a3d-fd10-4804-899d-6f96604ec56d" data-media-type="file" data-unresolved-comment-count="0" src="attachments/335183945/346062922.jpg"/>
+   </span>
+  </p>
+  <p>
+   <span>
+    Through using this feature with INTERJECT, you can have a different validation list for every row in your report. Even though this is not shown in this example, if you wanted to select a city name inside of a state, it is possible to have the validation list only show the cities available within the state which would have to change based on the row the data is on.
+   </span>
+  </p>
+  <h3 id="L7SpecialColumnDefinitions-StackCellValues">
+   <span>
+    <span class="confluence-anchor-link" id="L7SpecialColumnDefinitions-StackCellValues">
+    </span>
+   </span>
+  </h3>
+  <h3 id="L7SpecialColumnDefinitions-StackingSpecialCellTypes">
+   <span>
+    Stacking Special Cell Types
+   </span>
+  </h3>
+  <p>
+   <span>
+    Excel allows users to have multiple special cell values attributed to a single cell. This is also the case when using INTERJECT integration. You can add multiple cell value types in the column definitions of the report.
+   </span>
+  </p>
+  <p>
+   <span>
+    For this example, use
+   </span>
+   <strong>
+    Company Name
+   </strong>
+   <span>
+    cell
+   </span>
+   <strong>
+    C2
+   </strong>
+  </p>
+  <p>
+   <span>
+    Select the cell, then input
+   </span>
+   <strong>
+    CompanyName hlink:MapURL
+   </strong>
+   <strong>
+    addcomm:AddressLong
+   </strong>
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/335183945/346357895.jpg" data-linked-resource-container-id="335183945" data-linked-resource-container-version="18" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="12.jpg" data-linked-resource-id="346357895" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="32e8b656-2e81-4106-a9c2-8af591b9171f" data-media-type="file" data-unresolved-comment-count="0" src="attachments/335183945/346357895.jpg"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <span>
+    Pull the data
+   </span>
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/335183945/346194044.jpg" data-linked-resource-container-id="335183945" data-linked-resource-container-version="18" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="12.5.jpg" data-linked-resource-id="346194044" data-linked-resource-type="attachment" data-linked-resource-version="2" data-media-id="ed0af21e-988b-434f-9681-f49198009eaf" data-media-type="file" data-unresolved-comment-count="0" src="attachments/335183945/346194044.jpg"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <span>
+    Hover your mouse over cell
+   </span>
+   <strong>
+    C27
+   </strong>
+   <span>
+    and it will have a comment attributed to the cell along with the hyperlink.
+   </span>
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/335183945/346128491.jpg" data-linked-resource-container-id="335183945" data-linked-resource-container-version="18" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="13.jpg" data-linked-resource-id="346128491" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="94c8a8dc-0539-45b0-99a8-03cf66bb7586" data-media-type="file" data-unresolved-comment-count="0" src="attachments/335183945/346128491.jpg"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <span>
+    Click on the hyperlink in cell
+   </span>
+   <strong>
+    C27
+   </strong>
+   <span>
+    and
+   </span>
+   <span>
+    notice that the functionality of the hyperlink is unaltered and that the comment brought back the address that is used in the google map search.
+   </span>
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/335183945/346161326.jpg" data-linked-resource-container-id="335183945" data-linked-resource-container-version="18" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="09.jpg" data-linked-resource-id="346161326" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="5d9c658d-085d-4ebf-ba17-ceaa26b8db7d" data-media-type="file" data-unresolved-comment-count="0" src="attachments/335183945/346161326.jpg"/>
+   </span>
+  </p>
+  <p>
+   <span>
+    If there are any additional special column features that are not listed here or you have any questions, please contact INTERJECT at info@gointerject.com
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+ </div>
+</div>

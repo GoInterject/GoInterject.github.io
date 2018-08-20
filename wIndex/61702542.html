@@ -1,0 +1,166 @@
+---
+title: Interject Documentation > jCombine()
+layout: custom
+---
+<div class="wiki-content group" id="main-content">
+ <hr/>
+ <p>
+  <br/>
+ </p>
+ <h2 class="auto-cursor-target" id="jCombine()-FunctionSummary">
+  Function Summary
+ </h2>
+ <p>
+  The jCombine() function is helpful for developers who want to concatenate the values of cells while simultaneously skipping any empty cell. jCombine() can use both a cell range and a list of cell addresses. A list of cell address will require a delimiting character between each of the cell address in the list. The delimiter character can be custom, but it is a comma by default. When using jCombine() in a delimited list, it needs to have a second pair of parentheses around the first set.
+ </p>
+ <h3 id="jCombine()-FunctionArguments">
+  Function Arguments
+ </h3>
+ <div class="table-wrap">
+  <table class="relative-table wrapped confluenceTable" style="width: 100.0%;">
+   <colgroup>
+    <col style="width: 7.24479%;"/>
+    <col style="width: 72.9418%;"/>
+    <col style="width: 10.9221%;"/>
+    <col style="width: 8.89133%;"/>
+   </colgroup>
+   <tbody>
+    <tr>
+     <th class="confluenceTh">
+      Parameter Name
+     </th>
+     <th class="confluenceTh">
+      Description
+     </th>
+     <th class="confluenceTh">
+      Default
+     </th>
+     <th class="confluenceTh">
+      Optional
+     </th>
+    </tr>
+    <tr>
+     <td class="confluenceTd">
+      SelectedRange
+     </td>
+     <td class="confluenceTd">
+      This designates a range of cells from a worksheet that will be concatenated. This can also be used with a delimited list of cells.
+     </td>
+     <td class="confluenceTd">
+      <br/>
+     </td>
+     <td class="confluenceTd">
+      NO
+     </td>
+    </tr>
+    <tr>
+     <td class="confluenceTd">
+      Delimiter
+     </td>
+     <td class="confluenceTd">
+      This defines a character value that will designate a separation between cell addresses. The default delimiter is a comma.
+     </td>
+     <td class="confluenceTd">
+      <br/>
+     </td>
+     <td class="confluenceTd">
+      NO
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <h3 class="auto-cursor-target" id="jCombine()-FunctionComposition">
+  Function Composition
+ </h3>
+ <div class="table-wrap">
+  <table class="relative-table wrapped confluenceTable" style="width: 100.0%;">
+   <colgroup>
+    <col style="width: 27.7168%;"/>
+    <col style="width: 28.5401%;"/>
+    <col style="width: 43.7431%;"/>
+   </colgroup>
+   <tbody>
+    <tr>
+     <th class="confluenceTh">
+      Formula
+     </th>
+     <th class="confluenceTh">
+      Example
+     </th>
+     <th class="confluenceTh">
+      Explanation
+     </th>
+    </tr>
+    <tr>
+     <td class="confluenceTd">
+      <p>
+       =jCombine(
+      </p>
+      <p>
+       (
+      </p>
+      <p>
+       SelectedRange
+      </p>
+      <p>
+       )
+      </p>
+      <p>
+       ,Delimiter
+      </p>
+      <p>
+       )
+      </p>
+     </td>
+     <td class="confluenceTd">
+      <p>
+       =jCombine(
+      </p>
+      <p>
+       (
+      </p>
+      <p>
+       <span style="color: rgb(0,0,255);">
+        <strong>
+         <span style="color: rgb(0,0,0);">
+          "A1;B22;C4;I12"
+         </span>
+        </strong>
+       </span>
+      </p>
+      <p>
+       )
+      </p>
+      <p>
+       ,
+       <strong>
+        ";"
+       </strong>
+      </p>
+      <p>
+       )
+      </p>
+     </td>
+     <td class="confluenceTd">
+      <p>
+       <br/>
+      </p>
+      <p>
+       <br/>
+      </p>
+      <p>
+       ← A List or range of cell addresses to be concatenated.
+      </p>
+      <p>
+       <br/>
+      </p>
+      <p>
+       ← A custom character that separates each cell address in a delimited list.
+      </p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+</div>

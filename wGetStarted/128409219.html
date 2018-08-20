@@ -1,0 +1,685 @@
+---
+title: Interject Documentation > L4.3 Drill> Financial Report
+layout: custom
+---
+<div class="wiki-content group" id="main-content">
+ <hr/>
+ <div id="Main Content">
+  <h2 id="L4.3Drill:FinancialReport-Overview">
+   <strong>
+    Overview
+   </strong>
+  </h2>
+  <p>
+   <span style="color: rgb(0,0,0);">
+    For this drill example you will use the
+    <strong>
+     PL Trend
+    </strong>
+    that was previously reviewed in the
+    <a data-linked-resource-id="128091561" data-linked-resource-type="page" data-linked-resource-version="210" href="Financial-Report_128091561.html">
+     Financial Report - Walkthrough
+    </a>
+    . This time you will be drilling to a separate workbook instead of drilling to another worksheet in the same workbook. This can be very useful when there is a common report, such as one that shows general ledger detail, that can be used as a drill from several different reports and workbooks. You will be viewing that same example with the JE
+    <span style="color: rgb(0,0,0);">
+     (Journal Entry)
+    </span>
+    Query drill report.
+   </span>
+  </p>
+  <p>
+   <span style="color: rgb(0,0,0);">
+    <span style="color: rgb(0,0,0);">
+     Click one of the links below to
+    </span>
+    go directly to any section of this walk-through.
+   </span>
+  </p>
+  <ul>
+   <li style="list-style-type: none;background-image: none;">
+    <ul>
+     <li>
+      <h4 id="L4.3Drill:FinancialReport-UnfreezingtheTab">
+       <a href="#L4.3Drill:FinancialReport-Unfreeze">
+        Unfreezing the Tab
+       </a>
+      </h4>
+     </li>
+     <li>
+      <h4 id="L4.3Drill:FinancialReport-BuildingtheDrill">
+       <a href="#L4.3Drill:FinancialReport-BuildingTheDrill">
+        Building the Drill
+       </a>
+      </h4>
+     </li>
+     <li>
+      <strong>
+       <a href="#L4.3Drill:FinancialReport-ExecutingTheDrill">
+        Executing the Drill
+       </a>
+      </strong>
+     </li>
+    </ul>
+   </li>
+  </ul>
+  <p>
+   <span class="confluence-anchor-link" id="L4.3Drill:FinancialReport-Unfreeze">
+   </span>
+  </p>
+  <h3 id="L4.3Drill:FinancialReport-UnfreezingtheReport">
+   Unfreezing the Report
+  </h3>
+  <p>
+   <span style="color: rgb(0,0,0);">
+    <span style="color: rgb(0,0,0);">
+     <strong>
+      Step 1
+     </strong>
+     : For this example you will be using a modified
+     <a href="https://interject.atlassian.net/wiki/spaces/ID/pages/128091561/Financial+Report" rel="nofollow">
+      PL trend report
+     </a>
+     , which can be download here
+     <a data-linked-resource-container-id="128409219" data-linked-resource-container-version="58" data-linked-resource-content-type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" data-linked-resource-default-alias="Demo_Interject_PLTrend.xlsx" data-linked-resource-id="129432246" data-linked-resource-type="attachment" data-linked-resource-version="1" data-nice-type="Microsoft Excel Spreadsheet" href="attachments/128409219/129432246.xlsx">
+      Demo_Interject_PLTrend.xlsx
+     </a>
+     . This report has been prepared specifically for this exercise.
+    </span>
+   </span>
+  </p>
+  <p>
+   <span style="color: rgb(0,0,0);">
+    <span style="color: rgb(0,0,0);">
+     <span style="color: rgb(51,51,51);">
+      <span class="confluence-embedded-file-wrapper image-center-wrapper">
+       <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128409219/129338926.png" data-linked-resource-container-id="128409219" data-linked-resource-container-version="58" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-7-25_11-18-40.png" data-linked-resource-id="129338926" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="85cd60db-2e82-4d4e-95ab-266694ad7cac" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128409219/129338926.png"/>
+      </span>
+     </span>
+    </span>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    <span style="color: rgb(0,0,0);">
+     <span style="color: rgb(0,0,0);">
+      <span style="color: rgb(51,51,51);">
+       Step 2:
+      </span>
+     </span>
+    </span>
+   </strong>
+   <span style="color: rgb(0,0,0);">
+    <span style="color: rgb(0,0,0);">
+     <span style="color: rgb(51,51,51);">
+      <span style="color: rgb(51,51,51);">
+       To unfreeze the panels, go to the
+       <strong>
+        View
+       </strong>
+       tab, find the
+       <strong>
+        Freeze Pane
+       </strong>
+       option, and select
+       <strong>
+        Unfreeze Panes
+       </strong>
+       .
+      </span>
+     </span>
+    </span>
+   </span>
+  </p>
+  <p>
+   <span style="color: rgb(0,0,0);">
+    <span style="color: rgb(0,0,0);">
+     <span style="color: rgb(51,51,51);">
+      <span class="confluence-embedded-file-wrapper image-center-wrapper">
+       <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128409219/129339008.png" data-linked-resource-container-id="128409219" data-linked-resource-container-version="58" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-7-25_11-24-2.png" data-linked-resource-id="129339008" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="ea02be0e-91c2-4493-bb06-e77083f82785" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128409219/129339008.png"/>
+      </span>
+     </span>
+    </span>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    <span style="color: rgb(0,0,0);">
+     <span style="color: rgb(0,0,0);">
+      <span style="color: rgb(51,51,51);">
+       Step 3:
+      </span>
+     </span>
+    </span>
+   </strong>
+   <span style="color: rgb(0,0,0);">
+    <span style="color: rgb(0,0,0);">
+     <span style="color: rgb(51,51,51);">
+      For this example, type in
+      <strong>
+       7002
+      </strong>
+      for the location in M21. And type
+      <strong>
+       2002-05
+      </strong>
+      for the month in cell M22.
+     </span>
+    </span>
+   </span>
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper image-center-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128409219/129734953.png" data-linked-resource-container-id="128409219" data-linked-resource-container-version="58" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-8-13_23-7-39.png" data-linked-resource-id="129734953" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="a0b7fc9c-58cf-41a9-868e-d24db8ad4665" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128409219/129734953.png"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <span class="confluence-anchor-link" id="L4.3Drill:FinancialReport-BuildingTheDrill">
+   </span>
+  </p>
+  <h3 id="L4.3Drill:FinancialReport-BuildingTheDrill">
+   Building The Drill
+  </h3>
+  <p>
+   <span style="color: rgb(0,0,0);">
+    Continue setting up the drill formula.
+   </span>
+  </p>
+  <p>
+   <strong>
+    Step 1:
+   </strong>
+   <span style="color: rgb(0,0,0);">
+    In cell G17, type
+    <strong>
+     =
+     <a data-linked-resource-id="61702556" data-linked-resource-type="page" data-linked-resource-version="61" href="61702556.html">
+      ReportDrill()
+     </a>
+    </strong>
+    . Column G is fairly narrow, but it will simply overlap the cells to the right. Then click the
+    <strong>
+     fx
+    </strong>
+    button as illustrated below to bring up the Function Wizard.
+   </span>
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper image-center-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128409219/129340426.png" data-linked-resource-container-id="128409219" data-linked-resource-container-version="58" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-7-25_12-30-41.png" data-linked-resource-id="129340426" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="22a38167-4677-4310-bef7-db366f8bd8db" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128409219/129340426.png"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 2:
+   </strong>
+   <span style="color: rgb(0,0,0);">
+    In previous drill exercises you have used the ReportCellToRun argument. That is only for drilling within the same workbook. In this example you are drilling to a separate workbook. Type
+    <strong>
+     Interject_JEQuery
+    </strong>
+    into the ReportCodeToRun argument as seen below. The Drill Code
+    <strong>
+     Interject_JEQuery
+    </strong>
+    was setup previously by adding the code to a Report Library report. You will learn how to setup a Drill Code in the page
+    <a data-linked-resource-id="62849583" data-linked-resource-type="page" data-linked-resource-version="51" href="L10-Updating-the-Report-Library_62849583.html">
+     L10 Updating the Report Library
+    </a>
+    later.
+   </span>
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper image-center-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128409219/129367151.png" data-linked-resource-container-id="128409219" data-linked-resource-container-version="58" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-7-27_10-34-48.png" data-linked-resource-id="129367151" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="a0ed6ab0-b971-4465-a378-4f2d69d337f7" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128409219/129367151.png"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 3:
+   </strong>
+   <span style="color: rgb(51,51,51);">
+    Next you will use the
+   </span>
+   <span style="color: rgb(51,51,51);">
+    TransferPairs argument to note which cell values in the source worksheet will be transferred to the target worksheet during the drill operation. To do this, use special functions to pair the source cells to the target cells. Type
+   </span>
+   <strong>
+    <a href="https://interject.atlassian.net/wiki/spaces/ID/pages/81756186/PairGroup" rel="nofollow">
+     PairGroup(Pair())
+    </a>
+   </strong>
+   <span style="color: rgb(51,51,51);">
+    in the TransferPairs argument to get it started. You will return to add more to this argument.
+   </span>
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper image-center-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128409219/129734523.png" data-linked-resource-container-id="128409219" data-linked-resource-container-version="58" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-8-13_22-36-0.png" data-linked-resource-id="129734523" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="f8709c31-9010-4ddd-85a4-9ee78ccdef75" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128409219/129734523.png"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 4:
+   </strong>
+   <span style="color: rgb(51,51,51);">
+    In the Formula Bar, click within the word
+    <strong>
+     Pair()
+    </strong>
+    inside the text
+    <strong>
+     PairGroup(Pair())
+    </strong>
+    . See the illustration below. Once this is done, the Function Wizard will automatically change to help with the Pair() function. Type
+    <strong>
+     L12:N12
+    </strong>
+    in the From argument. This is the row that will indicate which month the user was on when the drill was activated and it will pass it to the target worksheet
+   </span>
+   .
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper image-center-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128409219/129734553.png" data-linked-resource-container-id="128409219" data-linked-resource-container-version="58" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-8-13_22-38-45.png" data-linked-resource-id="129734553" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="613afc7c-fd51-43c9-a63e-0cb8d4cd1200" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128409219/129734553.png"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 5:
+   </strong>
+   Now, type
+   <strong>
+    DateBegin
+   </strong>
+   in the Target argument to establish the target cell that will receive the month.
+   <strong>
+    DateBegin
+   </strong>
+   is a Named Range in the target sheet. Named Ranges are used in MS Excel to assign a name to a specific cell, such as G15. You use Named Ranges in your drill in case rows or columns are changed in the target worksheet where the address of the target cell changes. By using Named Ranges, the drill will continue to find the correct cell to place the month into.
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper image-center-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128409219/129354351.png" data-linked-resource-container-id="128409219" data-linked-resource-container-version="58" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-7-26_11-54-57.png" data-linked-resource-id="129354351" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="182e691f-013a-4c3a-9dde-6bd753b7e6b6" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128409219/129354351.png"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 6:
+   </strong>
+   Now, type
+   <strong>
+    True
+   </strong>
+   in the RequireValue argument because the From value must exist to trigger the drill. There would be no point in drilling to the target report without filtering for a specific month. The
+   <strong>
+    True
+   </strong>
+   value is not required since, if left blank,
+   <strong>
+    True
+   </strong>
+   is assumed. Since this drill exercise will have other Pairs() that are not required, it is good practice to specify it explicitly in this case.
+  </p>
+  <p>
+   Note the next argument, ScopeRange, is not used. It is an outdated argument.
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper image-center-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128409219/129354615.png" data-linked-resource-container-id="128409219" data-linked-resource-container-version="58" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-7-26_12-15-37.png" data-linked-resource-id="129354615" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="8af0612a-92f0-44ee-a25e-590485bfe4a0" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128409219/129354615.png"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 7:
+   </strong>
+   Now that you understand how to define a Pair, you have many more to create. The target report has several filters that make use easier when employed separately and in drilling to the report. You need to add a few more values to pass to the new report and clear the remaining filters that are not used in this drill. This is a key concept for INTERJECT drills. A report can be used by itself for its own purpose, but it can also be used as a drill from other reports.
+  </p>
+  <p>
+   Now let's use the Function Wizard to edit the PairGroup() function by clicking on it in the Formula Bar as seen below. This will make it easier to create more Pairs() that will clear out the other filters in the target report.
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper image-center-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128409219/129354915.png" data-linked-resource-container-id="128409219" data-linked-resource-container-version="58" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-7-26_12-37-13.png" data-linked-resource-id="129354915" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="d79eec02-5134-48b2-8c39-7f399ccbd146" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128409219/129354915.png"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 8:
+   </strong>
+   You have two more values to pass, the Location and the Account. Type
+   <strong>
+    Pair(M21,"Segment2",TRUE)
+   </strong>
+   into Pair2, which will pass the Location into the next report, and type
+   <strong>
+    Pair(F26:F125,"Segment1",TRUE)
+   </strong>
+   into Pair3, which will pass the Account or Account Group into the next report.
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper image-center-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128409219/129355415.png" data-linked-resource-container-id="128409219" data-linked-resource-container-version="58" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-7-26_13-16-34.png" data-linked-resource-id="129355415" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="6e6de710-6e54-4fd7-bfdb-4be912cef191" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128409219/129355415.png"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 9:
+   </strong>
+   You need to make sure the other filters in the target report do not interfere with the drill, so you will set this next group of Pair() functions to bring over blank values. In the Pair() functions you are going to set the From arguments to blank (""), and you will make the RequireValue argument
+   <strong>
+    FALSE
+   </strong>
+   . Both steps 9 and 10 are adding Pair functions that clear out the unused filters. This is best practice, but steps 9 and 10 can be skipped since it will not impact the limited scope of this exercise.
+  </p>
+  <p>
+   Enter the following pairs as shown below:
+   <br/>
+   <strong>
+    Pair("","DateEnd",FALSE)
+   </strong>
+   into Pair4
+  </p>
+  <p>
+   <strong>
+    Pair("","Segment3",FALSE)
+   </strong>
+   into Pair5
+  </p>
+  <p>
+   <strong>
+    Pair("","Segment4",FALSE)
+   </strong>
+   into Pair 6
+  </p>
+  <p>
+   <strong>
+    Pair("","AccountDesc",FALSE)
+   </strong>
+   Into Pair7
+  </p>
+  <p>
+   <strong>
+    Pair("","TypeDesc",FALSE)
+   </strong>
+   Into Pair8
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper image-center-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128409219/129356073.png" data-linked-resource-container-id="128409219" data-linked-resource-container-version="58" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-7-26_13-52-24.png" data-linked-resource-id="129356073" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="7ea7ab4c-5934-4d43-9f50-ca18bfa3ed3e" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128409219/129356073.png"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 10:
+   </strong>
+   There are still more filters to blank out for the target report. Continuing typing the following.
+  </p>
+  <p>
+   <strong>
+    Pair("All","Posting",FALSE)
+   </strong>
+   into Pair9
+  </p>
+  <p>
+   <strong>
+    Pair("","VendorCode",FALSE)
+   </strong>
+   into Pair10
+  </p>
+  <p>
+   <strong>
+    Pair("","AmountFrom",FALSE)
+   </strong>
+   into Pair11
+  </p>
+  <p>
+   <strong>
+    Pair("","AmountTo",FALSE)
+   </strong>
+   into Pair12
+  </p>
+  <p>
+   <strong>
+    Pair("","Organization",FALSE)
+   </strong>
+   into Pair13
+   <strong>
+    <br/>
+    <span class="confluence-embedded-file-wrapper image-center-wrapper">
+     <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128409219/129356730.png" data-linked-resource-container-id="128409219" data-linked-resource-container-version="58" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-7-26_14-17-21.png" data-linked-resource-id="129356730" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="4c20e3a2-01b5-4074-a75e-0233b5b79bcc" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128409219/129356730.png"/>
+    </span>
+   </strong>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   There are two more pairs to enter. Scroll down and type:
+  </p>
+  <p>
+   <strong>
+    Pair("","Company",FALSE)
+   </strong>
+   into Pair 14
+  </p>
+  <p>
+   <strong>
+    Pair("","FullAccount",FALSE))
+   </strong>
+   into Pair 15.
+  </p>
+  <p>
+   After these, you are through adding the Pair() functions.
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper image-center-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128409219/129356814.png" data-linked-resource-container-id="128409219" data-linked-resource-container-version="58" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-7-26_14-23-9.png" data-linked-resource-id="129356814" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="ec11b0f1-e805-4c85-8d5a-632bc0f24ec5" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128409219/129356814.png"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 11:
+   </strong>
+   You need to name the drill so it is clear for the users. Click on G17 and select the
+   <strong>
+    fx
+   </strong>
+   to bring up the Function Wizard. Input
+   <strong>
+    Drill To JEQuery - Account
+   </strong>
+   into the DrillName and select OK to finish creating the drill.
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper image-center-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128409219/129356913.png" data-linked-resource-container-id="128409219" data-linked-resource-container-version="58" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-7-26_14-31-45.png" data-linked-resource-id="129356913" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="54b35b92-1164-4b6f-be73-52b7a9a7270b" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128409219/129356913.png"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   When you click away from TransferPairs, it shows a red
+   <strong>
+    #NAME
+   </strong>
+   ? to the right of the input area. That looks like an error, but it is simply a small bug in Microsoft Excel, which will hopefully be addressed.
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper image-center-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128409219/129357549.png" data-linked-resource-container-id="128409219" data-linked-resource-container-version="58" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-7-26_15-25-3.png" data-linked-resource-id="129357549" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="7676f4e7-ea7e-41fc-94f9-0038c61de579" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128409219/129357549.png"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 12:
+   </strong>
+   You successfully created a Drill to the Journal Entry Query report from the financial report. Test it out.
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper image-center-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128409219/129356993.png" data-linked-resource-container-id="128409219" data-linked-resource-container-version="58" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-7-26_14-37-39.png" data-linked-resource-id="129356993" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="3d2efa8a-68bf-486e-9372-8831aa898d59" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128409219/129356993.png"/>
+   </span>
+  </p>
+  <p>
+   <span class="confluence-anchor-link" id="L4.3Drill:FinancialReport-ExecutingTheDrill">
+   </span>
+  </p>
+  <h3 id="L4.3Drill:FinancialReport-ExecutingtheDrill">
+   Executing the Drill
+  </h3>
+  <p>
+   <strong>
+    Step 1:
+   </strong>
+   Use
+   <strong>
+    <a href="https://interject.atlassian.net/wiki/content-only/viewpage.action?pageId=83689479&amp;iframeId=fallback-mode&amp;user_key=ff8080814d41a454014d440734dd0001&amp;user_id=MariaH&amp;xdm_e=https://interject.atlassian.net/&amp;xsm_c=fallback-mode-fake-key__322604369852205&amp;cp=/wiki&amp;cv=0.0.0-fallback-mode&amp;lic=none#InterjectRibbonMenuItems-PullData" rel="nofollow">
+     Pull Data
+    </a>
+   </strong>
+   to pull the report. You can leave the panes open for the moment. They will not affect the drill feature.
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper image-center-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128409219/129434635.png" data-linked-resource-container-id="128409219" data-linked-resource-container-version="58" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-7-31_14-8-6.png" data-linked-resource-id="129434635" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="cdcab4b6-f111-4a50-b0f6-3ca8664cb8d3" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128409219/129434635.png"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 2:
+   </strong>
+   Scroll down to the
+   <strong>
+    Revenue - Sales
+   </strong>
+   row on line 32 and click the plus sign so it expands to show the accounts. There should be several accounts listed as shown below.
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper image-center-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128409219/129367046.png" data-linked-resource-container-id="128409219" data-linked-resource-container-version="58" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-7-27_10-28-14.png" data-linked-resource-id="129367046" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="8f93d2ab-7cac-4850-852c-275a4aff4b4e" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128409219/129367046.png"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 3:
+   </strong>
+   Click the amount $20,900 which is for account 32000 in May 2005. You can then use the keystroke
+   <strong>
+    Ctrl Shift K
+   </strong>
+   or use the
+   <strong>
+    Drill on Data
+   </strong>
+   menu item to bring up the drill options.
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper image-center-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128409219/129434695.png" data-linked-resource-container-id="128409219" data-linked-resource-container-version="58" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-7-31_14-13-59.png" data-linked-resource-id="129434695" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="92d86eec-80ba-407c-9284-78882d0182f5" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128409219/129434695.png"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   Notice that if you close the drill window and try to drill on column O, there will not be any drill options. The work you did above helped set the scope so the drill only works on the appropriate cells.
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper image-center-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128409219/129434726.png" data-linked-resource-container-id="128409219" data-linked-resource-container-version="58" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-7-31_14-16-11.png" data-linked-resource-id="129434726" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="15628675-830e-42f0-9658-43016b19196f" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128409219/129434726.png"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 3:
+   </strong>
+   The animated GIF below shows the drill completed. The panes are frozen again. The drill selects the amount for account 33000 for March 2002, then does the drill on amount 44,474. The JE Query report provides the detail to support the same amount.
+   <br/>
+   <span class="confluence-embedded-file-wrapper image-center-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128409219/129357088.gif" data-linked-resource-container-id="128409219" data-linked-resource-container-version="58" data-linked-resource-content-type="image/gif" data-linked-resource-default-alias="2.11SettingUpTheDrill-Results.gif" data-linked-resource-id="129357088" data-linked-resource-type="attachment" data-linked-resource-version="2" data-media-id="6c180d30-ad90-43cb-910e-34243e26c661" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128409219/129357088.gif"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <h2 id="L4.3Drill:FinancialReport-RelatedLinks:">
+   <span style="color: rgb(0,0,0);">
+    Related Links:
+   </span>
+  </h2>
+  <p>
+   <a href="https://interject.atlassian.net/wiki/spaces/ID/pages/128429053/L1.3+Modify+Financial+Report" rel="nofollow">
+    L1.3 Modify: Financial Report
+   </a>
+  </p>
+  <p>
+   <a href="https://interject.atlassian.net/wiki/spaces/ID/pages/128421724/L3.3+Financial+Variable" rel="nofollow">
+    L3.3 Financial Variable
+   </a>
+  </p>
+  <p>
+   <span style="color: rgb(0,0,0);">
+    <a href="https://interject.atlassian.net/wiki/spaces/ID/pages/128409138/L4.2+Drill+Inventory+Report" rel="nofollow">
+     L4.2 Drill: Inventory Report
+    </a>
+   </span>
+  </p>
+  <p>
+   <a data-linked-resource-id="83689479" data-linked-resource-type="page" data-linked-resource-version="130" href="INTERJECT-Ribbon-Menu-Items_83689479.html">
+    INTERJECT Ribbon Menu Items
+   </a>
+  </p>
+ </div>
+</div>

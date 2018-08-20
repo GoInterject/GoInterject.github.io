@@ -1,0 +1,435 @@
+---
+title: Interject Documentation > ReportDrill()
+layout: custom
+---
+<div class="wiki-content group" id="main-content">
+ <hr/>
+ <p style="text-align: center;">
+  <br/>
+ </p>
+ <h2 id="ReportDrill()-WhatisaReportDrill" style="text-align: left;">
+  <span style="color: rgb(0,0,0);">
+   What is a ReportDrill
+   <br/>
+  </span>
+ </h2>
+ <p style="text-align: left;">
+  <span style="color: rgb(0,0,0);">
+   ReportDrill is widely used throughout INTERJECT as a way to connect and pass information between workbooks. Drilling takes a defined input and passes it in as a parameter to another workbook, similar to hyperlinks on a web page: Depending on the types of input behind the hyperlink, more detailed and specific information can be viewed. While there are few codes crucial to the process, they can be structured in ways that make them very powerful. Find examples of Drilling in
+   <a href="https://interject.atlassian.net/wiki/display/ID/Creating+Your+Own+Drills" rel="nofollow">
+    Creating Your Own Drills
+   </a>
+   .
+   <br/>
+  </span>
+ </p>
+ <h3 id="ReportDrill()-Beforestarting,you'llneed">
+  Before starting, you'll need
+ </h3>
+ <p style="text-align: left;">
+  <span style="color: rgb(0,0,0);">
+   Intermediate knowledge of Excel
+   <br/>
+  </span>
+ </p>
+ <p style="text-align: left;">
+  <span style="color: rgb(0,0,0);">
+   Advanced knowledge of INTERJECT reports
+  </span>
+ </p>
+ <h3 id="ReportDrill()-FunctionArguments">
+  Function Arguments
+ </h3>
+ <div class="table-wrap">
+  <table class="wrapped confluenceTable">
+   <colgroup>
+    <col/>
+    <col/>
+    <col/>
+    <col/>
+   </colgroup>
+   <tbody>
+    <tr>
+     <td class="confluenceTd">
+      <p style="text-align: left;">
+       <strong>
+        Parameter Name
+       </strong>
+      </p>
+     </td>
+     <td class="confluenceTd">
+      <p>
+       <strong>
+        Description
+       </strong>
+      </p>
+     </td>
+     <td class="confluenceTd">
+      <p>
+       <strong>
+        Default
+       </strong>
+      </p>
+     </td>
+     <td class="confluenceTd">
+      <p>
+       <strong>
+        Optional
+       </strong>
+      </p>
+     </td>
+    </tr>
+    <tr>
+     <td class="confluenceTd">
+      <p>
+       <span>
+        ReportCellToRun
+       </span>
+      </p>
+     </td>
+     <td class="confluenceTd">
+      <p>
+       <span>
+        Input the sheet name and a cell for the function to populate.
+       </span>
+      </p>
+      <p>
+       <span>
+        Functions
+       </span>
+       <span>
+        inside
+       </span>
+       <span>
+        workbook.
+       </span>
+      </p>
+     </td>
+     <td class="confluenceTd">
+      <p>
+       <br/>
+      </p>
+     </td>
+     <td class="confluenceTd">
+      <p>
+       <span>
+        YES*
+       </span>
+      </p>
+     </td>
+    </tr>
+    <tr>
+     <td class="confluenceTd">
+      <p>
+       <span>
+        ReportCodeToRun
+       </span>
+      </p>
+     </td>
+     <td class="confluenceTd">
+      <p>
+       <span>
+        Enter a registered Drill Code to open a file and run a report
+       </span>
+       <span>
+        outside
+       </span>
+       <span>
+        the current workbook.
+       </span>
+      </p>
+      <p>
+       <span>
+        Drill codes can be set up in the
+       </span>
+       <a href="https://interject.atlassian.net/wiki/display/ID/Updating+Report+Library" rel="nofollow">
+        <span style="color: rgb(51,51,51);">
+        </span>
+        <span style="color: rgb(17,85,204);">
+         report library
+        </span>
+       </a>
+       <span>
+        and are used to connect sheets in different workbooks.
+       </span>
+      </p>
+     </td>
+     <td class="confluenceTd">
+      <p>
+       <br/>
+      </p>
+     </td>
+     <td class="confluenceTd">
+      <p>
+       <span>
+        YES*
+       </span>
+      </p>
+     </td>
+    </tr>
+    <tr>
+     <td class="confluenceTd">
+      <p>
+       <span style="color: rgb(0,0,0);">
+        TransferPairs**
+       </span>
+      </p>
+     </td>
+     <td class="confluenceTd">
+      <p>
+       <span style="color: rgb(0,0,0);">
+        Enter
+       </span>
+       <a href="https://interject.atlassian.net/wiki/pages/viewpage.action?pageId=81756188" rel="nofollow">
+        <span style="color: rgb(17,85,204);">
+         Pairs
+        </span>
+       </a>
+       <span style="color: rgb(17,85,204);">
+       </span>
+       <span style="color: rgb(0,0,0);">
+        within a
+       </span>
+       <a href="https://interject.atlassian.net/wiki/pages/viewpage.action?pageId=81756186" rel="nofollow">
+        <span style="color: rgb(0,0,0);">
+        </span>
+        <span style="color: rgb(17,85,204);">
+         PairGroup
+        </span>
+       </a>
+       <span style="color: rgb(17,85,204);">
+       </span>
+       <span style="color: rgb(0,0,0);">
+        function to copy data and restrict when the drill is used.
+       </span>
+      </p>
+      <p>
+       <span style="color: rgb(0,0,0);">
+        See
+        <a href="https://interject.atlassian.net/wiki/spaces/ID/pages/128421015/Drill+Customer+Aging" rel="nofollow">
+         Drill: Customer Aging Report
+        </a>
+        for more information on usage.
+       </span>
+      </p>
+     </td>
+     <td class="confluenceTd">
+      <p>
+       <br/>
+      </p>
+     </td>
+     <td class="confluenceTd">
+      <p>
+       <span>
+        YES
+       </span>
+      </p>
+     </td>
+    </tr>
+    <tr>
+     <td class="confluenceTd">
+      <p>
+       <span style="color: rgb(0,0,0);">
+        DrillName
+       </span>
+      </p>
+     </td>
+     <td class="confluenceTd">
+      <p>
+       <span style="color: rgb(0,0,0);">
+        The drill name shown to users when the drill button or keystroke is applied.
+       </span>
+      </p>
+     </td>
+     <td class="confluenceTd">
+      <p>
+       <br/>
+      </p>
+     </td>
+     <td class="confluenceTd">
+      <p>
+       <span>
+        YES
+       </span>
+      </p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <p>
+  <span style="color: rgb(0,0,0);">
+   *
+  </span>
+  <span style="color: rgb(0,0,0);">
+   Either ReportCellToRun or ReportCodeToRun must be entered.
+  </span>
+ </p>
+ <p>
+  <span style="color: rgb(0,0,0);">
+   ** Only one argument is needed but adding the TransferPairs argument will allow for data transfer.
+  </span>
+ </p>
+ <p>
+  <span style="color: rgb(0,0,0);">
+   <br/>
+  </span>
+ </p>
+ <p>
+  <span style="color: rgb(0,0,0);">
+   <br/>
+  </span>
+ </p>
+ <p>
+  <br/>
+ </p>
+ <h3 id="ReportDrill()-FunctionComposition">
+  Function Composition
+ </h3>
+ <p>
+  <br/>
+ </p>
+ <div class="table-wrap">
+  <table class="wrapped relative-table confluenceTable" style="width: 46.6301%;">
+   <colgroup>
+    <col style="width: 27.1765%;"/>
+    <col style="width: 32.3529%;"/>
+    <col style="width: 40.4706%;"/>
+   </colgroup>
+   <tbody>
+    <tr>
+     <th class="confluenceTh">
+      Formula
+     </th>
+     <th class="confluenceTh">
+      Example
+     </th>
+     <th class="confluenceTh">
+      Explanation
+     </th>
+    </tr>
+    <tr>
+     <td class="confluenceTd">
+      <p>
+       =ReportDrill(
+      </p>
+      <p style="margin-left: 90.0px;">
+       ReportCellToRun
+      </p>
+      <p style="margin-left: 90.0px;">
+       ,TransferPairs
+      </p>
+      <p style="margin-left: 90.0px;">
+       ,DrillName
+      </p>
+      <p>
+       )
+      </p>
+     </td>
+     <td class="confluenceTd">
+      <p>
+       =ReportDrill(
+      </p>
+      <p style="margin-left: 90.0px;">
+       <strong>
+        <span style="color: rgb(51,51,153);">
+         Drill_Order!B2
+        </span>
+       </strong>
+      </p>
+      <p style="margin-left: 90.0px;">
+       ,PairGroup(
+      </p>
+      <p style="margin-left: 90.0px;">
+       Pair(
+      </p>
+      <p style="margin-left: 90.0px;">
+       <span style="color: rgb(51,153,102);">
+        <strong>
+         F13
+        </strong>
+       </span>
+       :
+       <span style="color: rgb(51,153,102);">
+        <strong>
+         F14
+        </strong>
+       </span>
+      </p>
+      <p style="margin-left: 90.0px;">
+       ,
+       <span style="color: rgb(51,51,153);">
+        <strong>
+         Drill_Order!H7
+        </strong>
+       </span>
+      </p>
+      <p style="margin-left: 90.0px;">
+       ,
+       <span style="color: rgb(128,0,128);">
+        <strong>
+         TRUE
+        </strong>
+       </span>
+      </p>
+      <p style="margin-left: 90.0px;">
+       )
+      </p>
+      <p style="margin-left: 60.0px;">
+       )
+      </p>
+      <p style="margin-left: 30.0px;">
+       ,
+       <span style="color: rgb(51,51,153);">
+        <strong>
+         "Open Order Page"
+        </strong>
+       </span>
+      </p>
+      <p>
+       <span style="color: rgb(51,51,153);">
+       </span>
+       )
+      </p>
+     </td>
+     <td class="confluenceTd">
+      <p>
+       <br/>
+      </p>
+      <p>
+       <span>
+        ←Cell is being drilled
+       </span>
+      </p>
+      <p>
+       ← A PairGroup (Needed to indicated more pair)
+      </p>
+      <p>
+       <br/>
+      </p>
+      <p>
+       ←Source cell to get data
+      </p>
+      <p>
+       ← Target cell to put data
+      </p>
+      <p>
+       ← This TRUE flag indicates the values are required.
+      </p>
+      <p>
+      </p>
+      <p>
+       <br/>
+      </p>
+      <p>
+       ← Title of drill
+      </p>
+      <p>
+       <br/>
+      </p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+</div>
