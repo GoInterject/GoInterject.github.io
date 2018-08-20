@@ -1,0 +1,209 @@
+---
+title: Interject Documentation > Troubleshooting App Errors
+layout: custom
+---
+<div class="wiki-content group" id="main-content">
+ <p>
+  <br/>
+ </p>
+ <div id="#main-content">
+  <h2 id="TroubleshootingAppErrors-Overview">
+   <strong>
+    Overview
+   </strong>
+  </h2>
+  <p>
+   <span>
+    Errors can occur for many reasons. Sometimes they are related to the environment or computer running Interject. It is important you have tools to capture everything that is interacting with Excel so, it is easier diagnose the cause of errors. This leads to faster troubleshooting and repair. To help diagnose any errors, Interject uses a Verbose Logging feature. The ideal goal of Verbose Logging  is to help recreate an error and send logs to INTERJECT's support team, where it can be fixed.
+   </span>
+  </p>
+  <h3 id="TroubleshootingAppErrors-TurningOnVerbose">
+   <span class="confluence-anchor-link" id="TroubleshootingAppErrors-TurningOnVerbose">
+   </span>
+  </h3>
+  <h3 id="TroubleshootingAppErrors-TurningOnVerboseLogging">
+   Turning On Verbose Logging
+  </h3>
+  <p>
+   <span>
+    Verbose Logging will do four things:
+   </span>
+  </p>
+  <ul>
+   <li>
+    <h4 id="TroubleshootingAppErrors-Capturetimedpointssothatslowdownissuescanbeisolated">
+     <span>
+      Capture timed points so that slowdown issues can be isolated
+     </span>
+    </h4>
+   </li>
+   <li>
+    <strong>
+     Log errors in real time
+    </strong>
+   </li>
+   <li>
+    <strong>
+     Track activity so that, if Excel crashes, the exact events leading up to the crash are known
+    </strong>
+   </li>
+   <li>
+    <strong>
+     Record general information about the system environment so that the context of the problem can be reproduced
+    </strong>
+   </li>
+  </ul>
+  <p>
+   <strong>
+    Step 1:
+   </strong>
+   You will need to go to the diagnostic wizard. Select the
+   <strong>
+    Advanced Menu
+   </strong>
+   and click
+   <strong>
+    Diagnostics
+   </strong>
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/359530497/359792647.jpg" data-linked-resource-container-id="359530497" data-linked-resource-container-version="8" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="01.jpg" data-linked-resource-id="359792647" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="9ca6631e-5a8c-4e7b-a500-cfc2b1cf1f04" data-media-type="file" data-unresolved-comment-count="0" src="attachments/359530497/359792647.jpg"/>
+   </span>
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/359530497/359792652.jpg" data-linked-resource-container-id="359530497" data-linked-resource-container-version="8" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="02.jpg" data-linked-resource-id="359792652" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="81f7842e-129f-479b-97fb-91a3e940696c" data-media-type="file" data-unresolved-comment-count="0" src="attachments/359530497/359792652.jpg"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 2:
+   </strong>
+   You need to
+   <strong>
+    Turn On
+   </strong>
+   <strong>
+    Verbose Logging
+   </strong>
+   , because it is
+   <strong>
+    Off
+   </strong>
+   by default.
+  </p>
+  <p>
+   To turn it on, select the
+   <strong>
+    Toggle Verbose Logging
+   </strong>
+   option in the menu, then click
+   <strong>
+    Execute Selected Action.
+   </strong>
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/359530497/359792657.jpg" data-linked-resource-container-id="359530497" data-linked-resource-container-version="8" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="03.jpg" data-linked-resource-id="359792657" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="14b99517-5dc3-46fa-b7e7-c4beafa09876" data-media-type="file" data-unresolved-comment-count="0" src="attachments/359530497/359792657.jpg"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 3:
+   </strong>
+   Confirm that the logging is
+   <strong>
+    Turned On
+   </strong>
+   .
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/359530497/359792662.jpg" data-linked-resource-container-id="359530497" data-linked-resource-container-version="8" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="04.jpg" data-linked-resource-id="359792662" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="53b1894f-930f-4570-bd38-776f4e815cc5" data-media-type="file" data-unresolved-comment-count="0" src="attachments/359530497/359792662.jpg"/>
+   </span>
+  </p>
+  <p>
+   <strong>
+    Note: All activity will be logged until 12am the day of activation
+   </strong>
+   , but you can turn them off at any time with the same steps used to turn them on. While logging is on, the system will perform slower then usual. Multiple log files may be created, and they will be available for ten days. If Excel is closed, the logging process automatically begins once Excel is restarted. All logs are saved to the following file locaton:
+  </p>
+  <p>
+   C:\Users\
+   <strong>
+    MyUserName
+   </strong>
+   \Appdata\Local\Interject\Settings\ErrorContextTrace_
+   <strong>
+    20180611091456602
+   </strong>
+   .txt
+  </p>
+  <h3 id="TroubleshootingAppErrors-SendingVerboseLogs">
+   <span class="confluence-anchor-link" id="TroubleshootingAppErrors-SendingVerboseLogs">
+   </span>
+  </h3>
+  <h3 id="TroubleshootingAppErrors-SendingVerboseLogs.1">
+   Sending Verbose Logs
+  </h3>
+  <p>
+   <strong>
+    Step 1:
+   </strong>
+   To send logs to INTERJECT support, select the
+   <strong>
+    User Support
+   </strong>
+   button, then select
+   <strong>
+    Report a Problem
+   </strong>
+   .
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/359530497/359694379.jpg" data-linked-resource-container-id="359530497" data-linked-resource-container-version="8" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="Redo1.jpg" data-linked-resource-id="359694379" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="8fd8558b-f190-4036-b75d-d0a5e7539397" data-media-type="file" data-unresolved-comment-count="0" src="attachments/359530497/359694379.jpg"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 2:
+   </strong>
+   Enter your information and a detailed note about what happened
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/359530497/359759892.jpg" data-linked-resource-container-id="359530497" data-linked-resource-container-version="8" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="06.jpg" data-linked-resource-id="359759892" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="ebccd8b7-03d7-4e71-b9db-7628dd0f69c7" data-media-type="file" data-unresolved-comment-count="0" src="attachments/359530497/359759892.jpg"/>
+   </span>
+  </p>
+  <p>
+   <strong>
+    Step 3:
+   </strong>
+   Click
+   <strong>
+    Send Report
+   </strong>
+   to send logs to the INTERJECT support team.
+  </p>
+  <p>
+   <strong>
+    Note:
+   </strong>
+   If Verbose Logging is still on, INTERJECT will ask if you would like to turn it off.
+  </p>
+  <p>
+   <br/>
+  </p>
+ </div>
+</div>

@@ -1,0 +1,325 @@
+---
+title: Interject Documentation > Pair()
+layout: custom
+---
+<div class="wiki-content group" id="main-content">
+ <h2 id="Pair()-FunctionSummary">
+  Function Summary
+ </h2>
+ <p>
+  Used to specify a
+  <strong>
+   from
+  </strong>
+  value that will be passed to a
+  <strong>
+   target
+  </strong>
+  area in a new sheet. Used with
+  <a data-linked-resource-id="81756186" data-linked-resource-type="page" data-linked-resource-version="19" href="81756186.html">
+   PairGroup()
+  </a>
+  () for sheets that are in the same workbook.
+ </p>
+ <h3 id="Pair()-FunctionArguments">
+  Function Arguments
+ </h3>
+ <div class="table-wrap">
+  <table class="wrapped confluenceTable">
+   <colgroup>
+    <col/>
+    <col/>
+    <col/>
+    <col/>
+   </colgroup>
+   <tbody>
+    <tr>
+     <th class="confluenceTh">
+      Parameter Name
+     </th>
+     <th class="confluenceTh">
+      Description
+     </th>
+     <th class="confluenceTh">
+      Default
+     </th>
+     <th class="confluenceTh">
+      Optional
+     </th>
+    </tr>
+    <tr>
+     <td class="confluenceTd">
+      <p>
+       From
+      </p>
+     </td>
+     <td class="confluenceTd">
+      Enter a range or string that describes what will be copied from into the specified target
+     </td>
+     <td class="confluenceTd">
+      <br/>
+     </td>
+     <td class="confluenceTd">
+      <p>
+       NO
+      </p>
+     </td>
+    </tr>
+    <tr>
+     <td class="confluenceTd" colspan="1">
+      Target
+     </td>
+     <td class="confluenceTd" colspan="1">
+      Enter a range or string related to a target cell that will recieve the values specified in the From parameter.
+     </td>
+     <td class="confluenceTd" colspan="1">
+      <br/>
+     </td>
+     <td class="confluenceTd" colspan="1">
+      NO
+     </td>
+    </tr>
+    <tr>
+     <td class="confluenceTd" colspan="1">
+      <span style="color: rgb(0,0,0);">
+       RequireValue
+      </span>
+     </td>
+     <td class="confluenceTd" colspan="1">
+      Enter a True or False to indicate if the From value is required to exist in the data.
+     </td>
+     <td class="confluenceTd" colspan="1">
+      TRUE
+     </td>
+     <td class="confluenceTd" colspan="1">
+      YES
+     </td>
+    </tr>
+    <tr>
+     <td class="confluenceTd" colspan="1">
+      ScopeRange
+     </td>
+     <td class="confluenceTd" colspan="1">
+      This will limit the pair to only be used when the user is selected in the entered range.
+     </td>
+     <td class="confluenceTd" colspan="1">
+      <br/>
+     </td>
+     <td class="confluenceTd" colspan="1">
+      YES
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <p>
+  <br/>
+ </p>
+ <h3 id="Pair()-FunctionComposition">
+  Function Composition
+ </h3>
+ <div class="table-wrap">
+  <table class="wrapped confluenceTable">
+   <colgroup>
+    <col/>
+    <col/>
+    <col/>
+   </colgroup>
+   <thead>
+    <tr>
+     <th class="confluenceTh">
+      <div class="tablesorter-header-inner">
+       <div class="tablesorter-header-inner">
+        Formula
+       </div>
+      </div>
+     </th>
+     <th class="confluenceTh">
+      <div class="tablesorter-header-inner">
+       <div class="tablesorter-header-inner">
+        Example
+       </div>
+      </div>
+     </th>
+     <th class="confluenceTh">
+      <div class="tablesorter-header-inner">
+       <div class="tablesorter-header-inner">
+        Explanation
+       </div>
+      </div>
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td class="confluenceTd">
+      <p>
+       =Pair(
+      </p>
+      <p style="margin-left: 30.0px;">
+       From
+      </p>
+      <p style="margin-left: 30.0px;">
+       ,Target
+      </p>
+      <p style="margin-left: 30.0px;">
+       ,RequireValue
+      </p>
+      <p style="margin-left: 30.0px;">
+       ,ScopeRange
+      </p>
+      <p>
+       )
+      </p>
+     </td>
+     <td class="confluenceTd">
+      <p>
+       =
+       <span style="color: rgb(0,0,0);">
+        ReportDrill
+       </span>
+       (
+      </p>
+      <p style="margin-left: 90.0px;">
+       <span style="color: rgb(51,153,102);">
+        <strong>
+         Drill_Order!B2
+        </strong>
+       </span>
+      </p>
+      <p style="margin-left: 90.0px;">
+       <span style="color: rgb(0,0,0);">
+       </span>
+       ,
+      </p>
+      <p style="margin-left: 90.0px;">
+       ,PairGroup
+       <span style="color: rgb(0,0,0);">
+        (
+       </span>
+      </p>
+      <p style="margin-left: 150.0px;">
+       <span style="color: rgb(0,0,0);">
+        <strong>
+         Pair
+        </strong>
+        (
+       </span>
+      </p>
+      <p style="margin-left: 180.0px;">
+       <span style="color: rgb(51,153,102);">
+        <strong>
+         F13:F14
+        </strong>
+       </span>
+      </p>
+      <p style="margin-left: 180.0px;">
+       <span style="color: rgb(0,0,0);">
+        ,
+        <span style="color: rgb(51,153,102);">
+         <strong>
+          Drill_Order!H7
+         </strong>
+        </span>
+       </span>
+      </p>
+      <p style="margin-left: 180.0px;">
+       <span style="color: rgb(0,0,0);">
+        ,
+        <span style="color: rgb(128,0,128);">
+         <strong>
+          TRUE
+         </strong>
+        </span>
+       </span>
+      </p>
+      <p style="margin-left: 150.0px;">
+       <span style="color: rgb(0,0,0);">
+        )
+       </span>
+      </p>
+      <p style="margin-left: 90.0px;">
+       <span style="color: rgb(0,0,0);">
+        )
+       </span>
+      </p>
+      <p style="margin-left: 90.0px;">
+       <span style="color: rgb(0,0,0);">
+        ,
+        <span style="color: rgb(51,51,153);">
+         <strong>
+          "Open Order Page"
+         </strong>
+        </span>
+       </span>
+      </p>
+      <p>
+       <span style="color: rgb(51,51,153);">
+       </span>
+       )
+      </p>
+     </td>
+     <td class="confluenceTd">
+      <p>
+       <br/>
+      </p>
+      <p>
+       <br/>
+      </p>
+      <p>
+       <br/>
+      </p>
+      <p>
+       <br/>
+      </p>
+      <p>
+       ← Pair function embedded in ReportDrill and
+       <a data-linked-resource-id="81756186" data-linked-resource-type="page" data-linked-resource-version="19" href="81756186.html">
+        PairGroup
+       </a>
+       formula. This example accepts a single pair.
+      </p>
+      <p>
+       ← From Range. This is range is context that will be brought into the target cell.
+      </p>
+      <p>
+       ← Target sheet and cell
+      </p>
+      <p>
+       ← The Required Value parameter is set to True, which requires the From value to exist.
+      </p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <h3 id="Pair()-">
+  <strong>
+  </strong>
+ </h3>
+ <h3 id="Pair()-FunctionExample">
+  Function Example
+ </h3>
+ <div class="table-wrap">
+  <table class="wrapped confluenceTable">
+   <tbody>
+    <tr>
+     <th class="confluenceTh">
+      From File
+     </th>
+     <th class="confluenceTh">
+      Worksheet
+     </th>
+    </tr>
+    <tr>
+     <td class="confluenceTd">
+      InterjectBasic
+     </td>
+     <td class="confluenceTd">
+      Drill_Orders
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+</div>

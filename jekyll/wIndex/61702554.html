@@ -1,0 +1,212 @@
+---
+title: Interject Documentation > ReportSave()
+layout: custom
+---
+<div class="wiki-content group" id="main-content">
+ <hr/>
+ <p>
+ </p>
+ <h2 id="ReportSave()-FunctionSummary">
+  Function Summary
+ </h2>
+ <p>
+  Used to save data back to data portal with Ctrl + Shift + U keystroke.
+ </p>
+ <h3 id="ReportSave()-FunctionArguments">
+  Function Arguments
+ </h3>
+ <div class="table-wrap">
+  <table class="wrapped confluenceTable">
+   <colgroup>
+    <col/>
+    <col/>
+    <col/>
+    <col/>
+   </colgroup>
+   <tbody>
+    <tr>
+     <th class="confluenceTh">
+      Parameter Name
+     </th>
+     <th class="confluenceTh">
+      Description
+     </th>
+     <th class="confluenceTh">
+      Default
+     </th>
+     <th class="confluenceTh">
+      Optional
+     </th>
+    </tr>
+    <tr>
+     <td class="confluenceTd">
+      <p>
+       DataPortal
+      </p>
+     </td>
+     <td class="confluenceTd">
+      The name of the INTERJECT Data Portal set up to save data to the Stored Procedure or Web API.
+     </td>
+     <td class="confluenceTd">
+     </td>
+     <td class="confluenceTd">
+      <p>
+       NO
+      </p>
+     </td>
+    </tr>
+    <tr>
+     <td class="confluenceTd" colspan="1">
+      RowDefRange
+     </td>
+     <td class="confluenceTd" colspan="1">
+      Specify a range with values for each row to be saved back. If no value is specified, the row will not be sent to the Data Portal. See the exception below for CaptureAllRows..
+     </td>
+     <td class="confluenceTd" colspan="1">
+     </td>
+     <td class="confluenceTd" colspan="1">
+      NO
+     </td>
+    </tr>
+    <tr>
+     <td class="confluenceTd" colspan="1">
+      <span style="color: rgb(0,0,0);">
+       ColDefRange
+      </span>
+     </td>
+     <td class="confluenceTd" colspan="1">
+      Input field names above the columns used in the XML to send to the data portal for saving. *It is recommended special characters are not used when specifying column names to return.
+     </td>
+     <td class="confluenceTd" colspan="1">
+     </td>
+     <td class="confluenceTd" colspan="1">
+      <p>
+       YES
+      </p>
+     </td>
+    </tr>
+    <tr>
+     <td class="confluenceTd" colspan="1">
+      ResultsRange
+     </td>
+     <td class="confluenceTd" colspan="1">
+      Specify a row with column headers that will be used to pull data in response to the save action. ResultsRange is similar to ColDefRange in the ReportRange function.
+     </td>
+     <td class="confluenceTd" colspan="1">
+     </td>
+     <td class="confluenceTd" colspan="1">
+      YES
+     </td>
+    </tr>
+    <tr>
+     <td class="confluenceTd" colspan="1">
+      Parameters
+     </td>
+     <td class="confluenceTd" colspan="1">
+      Select cells used as Parameters for the Data Portal. The cells must use INTERJECT's
+      <a data-linked-resource-id="81756199" data-linked-resource-type="page" data-linked-resource-version="13" href="81756199.html">
+       Param
+      </a>
+      () function.
+     </td>
+     <td class="confluenceTd" colspan="1">
+     </td>
+     <td class="confluenceTd" colspan="1">
+      YES
+     </td>
+    </tr>
+    <tr>
+     <td class="confluenceTd" colspan="1">
+      AutoSaveFile
+     </td>
+     <td class="confluenceTd" colspan="1">
+      If True, the file will save on each Save Data action if the action returns error-free.
+     </td>
+     <td class="confluenceTd" colspan="1">
+      FALSE
+     </td>
+     <td class="confluenceTd" colspan="1">
+      YES
+     </td>
+    </tr>
+    <tr>
+     <td class="confluenceTd" colspan="1">
+      CaptureAllRows
+     </td>
+     <td class="confluenceTd" colspan="1">
+      If True, the save action will not require a value in the RowDefRange to include in the XML package that will be assessed for the save. All rows noted by the RowDefRange will be returned.
+     </td>
+     <td class="confluenceTd" colspan="1">
+      FALSE
+     </td>
+     <td class="confluenceTd" colspan="1">
+      YES
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <ul>
+  <li>
+   Note: the save process works by: ____________
+  </li>
+ </ul>
+ <h3 id="ReportSave()-FunctionComposition">
+  Function Composition
+ </h3>
+ <div class="code panel pdl" style="border-width: 1px;">
+  <div class="codeContent panelContent pdl">
+   <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: xml; gutter: false; theme: Confluence" data-theme="Confluence">=PairGroup(
+			DataPortal
+			,RowDefRange
+			,ColDefRange
+			,ResultsRange
+			,Parameters
+			,AutoSaveFile
+			,CaptureAllRows
+)</pre>
+  </div>
+ </div>
+ <p>
+  <span style="font-size: 16.0px;font-weight: bold;">
+  </span>
+ </p>
+ <h3 id="ReportSave()-FunctionExample">
+  Function Example
+ </h3>
+ <div class="table-wrap">
+  <table class="wrapped confluenceTable">
+   <colgroup>
+    <col/>
+    <col/>
+   </colgroup>
+   <tbody>
+    <tr>
+     <th class="confluenceTh">
+      From File
+     </th>
+     <th class="confluenceTh">
+      Worksheet
+     </th>
+    </tr>
+    <tr>
+     <td class="confluenceTd">
+      INTERJECTBasic
+     </td>
+     <td class="confluenceTd">
+      ReportSave
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <div>
+  <div class="panel" style="border-width: 1px;">
+   <div class="panelContent">
+    <p>
+     =ReportSave("NorthwindCustomersSaveCRMandNotes",B15:B17,B2:K2,H3:K3)
+    </p>
+   </div>
+  </div>
+ </div>
+</div>

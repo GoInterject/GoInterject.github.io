@@ -1,0 +1,148 @@
+---
+title: Interject Documentation > Developing with INTERJECT
+layout: custom
+---
+<div class="wiki-content group" id="main-content">
+ <hr/>
+ <div id="#main-content">
+  <h2 id="DevelopingwithINTERJECT-Overview">
+   <strong>
+    Overview
+   </strong>
+  </h2>
+  <p>
+   <span>
+    This section is for professional developers who create the data pathways for reports and applications that can edit data. To facilitate this section, you provide a sample database to assist in training.  Please contact us for the files at
+    <a class="external-link" href="mailto:info@gointerject.com" rel="nofollow">
+     info@gointerject.com
+    </a>
+    .
+   </span>
+  </p>
+  <p>
+   <span>
+    The sample database is called
+    <strong>
+     Interject_Example_v1
+    </strong>
+    . This database is available for SQL Server versions 2008 to 2017 and works easily with the free express version. Download SQL Server Express
+    <strong>
+     here
+    </strong>
+    .
+   </span>
+  </p>
+  <p>
+   <span>
+    To complete the developer training, you must have Client Admin permissions within an existing INTERJECT account. Verify the correct role at the INTERJECT Website Portal at
+   </span>
+   <a class="external-link" href="https://portal.gointerject.com" rel="nofollow">
+    <span>
+     https://portal.gointerject.com
+    </span>
+   </a>
+   <span>
+    For help with logging in, see
+    <a href="https://interject.atlassian.net/wiki/spaces/ID/pages/142278762/Logging+In+to+Website+Portal" rel="nofollow">
+     Logging In to the Website Portal
+    </a>
+    .
+   </span>
+  </p>
+  <p>
+   <span>
+    Navigate by using the following links to continue with the training objectives:
+   </span>
+  </p>
+  <h3 id="DevelopingwithINTERJECT-INTERJECTWebsitePortalOverview">
+   <a href="https://interject.atlassian.net/wiki/spaces/ID/pages/324534275/Interject+Website+Portal" rel="nofollow">
+    INTERJECT Website Portal Overview
+   </a>
+  </h3>
+  <p>
+   <span style="color: rgb(51,51,51);">
+    The INTERJECT website portal is a central place to manage INTERJECT client settings and user profiles. For an INTERJECT developer, the most used areas of the INTERJECT website portal are managing connections and data portals.
+    <span>
+    </span>
+   </span>
+  </p>
+  <h3 id="DevelopingwithINTERJECT-DefiningINTERJECTforDevelopers">
+   <a href="https://interject.atlassian.net/wiki/spaces/ID/pages/324665345/Defining+INTERJECT+for+Developers" rel="nofollow">
+    Defining INTERJECT for Developers
+   </a>
+  </h3>
+  <p>
+   <span style="color: rgb(51,51,51);">
+    Developers often assume that INTERJECT is useful only in building simple reports, not extending to workflow creation or collecting user inputs. However, INTERJECT is truly an application platform that can extend reports into two-way interfaces, which have the impact and scalability of a website application.
+   </span>
+  </p>
+  <h3 id="DevelopingwithINTERJECT-SimpleDataPull">
+   <a href="https://interject.atlassian.net/wiki/spaces/ID/pages/139526259/Simple+Data+Pull" rel="nofollow">
+    Simple Data Pull
+   </a>
+  </h3>
+  <p>
+   <span style="color: rgb(51,51,51);">
+    To clearly illustrate the end-to-end workflow of developing a report, you can begin with several simple data pull examples showing different report configurations. You will be reusing INTERJECT reports used in previous sections, because these should be familiar to you if you read this documentation from the beginning. By the end of these sections, you will understand the process of creating spreadsheet friendly reports that can drill to other reports.
+   </span>
+  </p>
+  <h3 id="DevelopingwithINTERJECT-AdvancedDataPull">
+   <a href="https://interject.atlassian.net/wiki/spaces/ID/pages/327516216/Advanced+Data+Pull" rel="nofollow">
+    Advanced Data Pull
+   </a>
+  </h3>
+  <p>
+   <span style="color: rgb(51,51,51);">
+    INTERJECT reports can handle a wide variety of complex reports. Up to this point you have seen simple reports where a single recordset is returned to single area of the spreadsheet. This topic will share advanced reporting configurations that use multiple recordsets and multiple INTERJECT report formulas and supporting functions to construct advanced presentations.
+   </span>
+  </p>
+  <h3 id="DevelopingwithINTERJECT-SimpleDataSave">
+   <a href="https://interject.atlassian.net/wiki/spaces/ID/pages/139231307/Simple+Data+Save" rel="nofollow">
+    Simple Data Save
+   </a>
+  </h3>
+  <p>
+   <span style="color: rgb(51,51,51);">
+    Interject allows for the editing of data and uploading those changes directly into the database it is connected to. This requires a different Data Portal.
+   </span>
+  </p>
+  <h3 id="DevelopingwithINTERJECT-SecurityBestPractices">
+   <a href="https://interject.atlassian.net/wiki/spaces/ID/pages/324403209/Security+Best+Practices" rel="nofollow">
+    Security Best Practices
+   </a>
+  </h3>
+  <p>
+   <span style="color: rgb(51,51,51);">
+    Managing security is a key component of the Interject platform, and there are several areas to understand. Security involves both the row level security that can exist in reports and apps and how the middle tier objects are secured. Security also includes which spreadsheet report template can be seen by which users. The paragraphs here discuss each of these areas, best practices in building, and methods to test user access.
+    <span>
+    </span>
+   </span>
+  </p>
+  <h3 id="DevelopingwithINTERJECT-ManagingSettingsCache">
+   <a href="https://interject.atlassian.net/wiki/spaces/ID/pages/324632601/Managing+Settings+Cache" rel="nofollow">
+    Managing Settings Cache
+   </a>
+  </h3>
+  <p>
+   <span style="color: rgb(51,51,51);">
+    INTERJECT optimizes speed by caching company settings, such as Data Portals, Connections, and Report Library templates. This information is received on login and is stored in memory for as long as the Excel session is open.  This is an important topic for new deployments where these settings may need to change often.
+   </span>
+   <span style="color: rgb(51,51,51);">
+    If there are any changes to these company settings, the INTERJECT Excel add-in will check for changes at various actions.
+    <span>
+    </span>
+   </span>
+  </p>
+  <h3 id="DevelopingwithINTERJECT-CommonTroubleshooting">
+   <a href="https://interject.atlassian.net/wiki/spaces/ID/pages/324567049/Common+Troubleshooting" rel="nofollow">
+    Common Troubleshooting
+   </a>
+  </h3>
+  <p>
+   There are times when a report does not work. INTERJECT has several tools to quickly and accurately diagnose the problem, whether it is in the Excel Report itself, or if it's an application error. This helps to reduce downtime which saves money. The following section gives a detailed look at some of the tools available.
+  </p>
+  <p>
+   <br/>
+  </p>
+ </div>
+</div>

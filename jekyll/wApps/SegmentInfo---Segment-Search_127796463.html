@@ -1,0 +1,191 @@
+---
+title: Interject Documentation > SegmentInfo - Segment Search
+layout: custom
+---
+<div class="wiki-content group" id="main-content">
+ <h2 id="SegmentInfo-SegmentSearch-">
+  <strong>
+   <br/>
+  </strong>
+ </h2>
+ <h2 id="SegmentInfo-SegmentSearch-Overview">
+  <strong>
+   Overview
+   <br/>
+  </strong>
+ </h2>
+ <p>
+  <span style="color: rgb(67,67,67);">
+   Segments is a dataportal which allows you to filter for every segment within your chart of accounts and allows you to use your groupings within your filter choices. For example, if you are looking for accounts in
+   <strong>
+    Revenue
+   </strong>
+   , simply search for Revenue. If there is a segment that represents your business unit (such as Location or District) and security is enabled, it can be used to create dynamic reports that list the business units you or your team have rights to.
+  </span>
+ </p>
+ <p>
+  To search segment groups, there is a related dataportal
+  <strong>
+   GroupInfo
+  </strong>
+  that provides all the groups an individual segment code may be a part of.
+ </p>
+ <h3 id="SegmentInfo-SegmentSearch-SegmentsParameters:">
+  Segments Parameters:
+ </h3>
+ <div class="table-wrap">
+  <table class="relative-table wrapped confluenceTable" style="width: 99.9206%;">
+   <colgroup>
+    <col style="width: 12.4821%;"/>
+    <col style="width: 44.7918%;"/>
+    <col style="width: 23.1875%;"/>
+    <col style="width: 19.5386%;"/>
+   </colgroup>
+   <tbody>
+    <tr>
+     <th class="confluenceTh">
+      Parameter Name
+     </th>
+     <th class="confluenceTh">
+      Description
+     </th>
+     <th class="confluenceTh">
+      Default
+     </th>
+     <th class="confluenceTh">
+      Optional
+     </th>
+    </tr>
+    <tr>
+     <td class="confluenceTd">
+      <p>
+       SegmentNum
+      </p>
+     </td>
+     <td class="confluenceTd">
+      The segment number to be searched. This can be from 1 to 8. 1 is typically account, but it depends on your implementation.
+     </td>
+     <td class="confluenceTd">
+      <br/>
+     </td>
+     <td class="confluenceTd">
+      <p>
+       False
+      </p>
+     </td>
+    </tr>
+    <tr>
+     <td class="confluenceTd" colspan="1">
+      SegmentCode
+     </td>
+     <td class="confluenceTd" colspan="1">
+      <p>
+       Use a filter to search for the segment. Groups may be used as well as advanced filters such as
+       <strong>
+        Revenue,!38000,52*
+       </strong>
+      </p>
+      <p>
+       Leave blank to search all segments within your security rights.
+      </p>
+     </td>
+     <td class="confluenceTd" colspan="1">
+      <br/>
+     </td>
+     <td class="confluenceTd" colspan="1">
+      True
+     </td>
+    </tr>
+    <tr>
+     <td class="confluenceTd" colspan="1">
+      SegmentName
+     </td>
+     <td class="confluenceTd" colspan="1">
+      Filter on the name of the segment. This filter assumes a
+      <strong>
+       contains
+      </strong>
+      search. As a result, searching on
+      <strong>
+       cash
+      </strong>
+      will return
+      <strong>
+       Restricted Cash
+      </strong>
+      ,
+      <strong>
+       Petty Cash
+      </strong>
+      , and so on.
+     </td>
+     <td class="confluenceTd" colspan="1">
+      <br/>
+     </td>
+     <td class="confluenceTd" colspan="1">
+      True
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <h3 id="SegmentInfo-SegmentSearch-AvailableColumns:">
+  Available Columns:
+ </h3>
+ <div class="table-wrap">
+  <table class="relative-table wrapped confluenceTable" style="width: 99.9206%;">
+   <colgroup>
+    <col style="width: 36.1708%;"/>
+    <col style="width: 63.8292%;"/>
+   </colgroup>
+   <tbody>
+    <tr>
+     <th class="confluenceTh">
+      Column Name
+     </th>
+     <th class="confluenceTh">
+      Description
+     </th>
+    </tr>
+    <tr>
+     <td class="confluenceTd" colspan="1">
+      SegmentCode
+     </td>
+     <td class="confluenceTd" colspan="1">
+      <p>
+       The segment code such as 52120 for Account or 2000 with a business unit.
+      </p>
+     </td>
+    </tr>
+    <tr>
+     <td class="confluenceTd" colspan="1">
+      SegmentName
+     </td>
+     <td class="confluenceTd" colspan="1">
+      The name for the segment, such as
+      <strong>
+       Wages and Salaries
+      </strong>
+      .
+     </td>
+    </tr>
+    <tr>
+     <td class="confluenceTd" colspan="1">
+      IsCredit
+     </td>
+     <td class="confluenceTd" colspan="1">
+      If the segment relates to Accounts, this field notes whether the account is a credit account, which is stored as a credit by default.
+     </td>
+    </tr>
+    <tr>
+     <td class="confluenceTd" colspan="1">
+      Inactive
+     </td>
+     <td class="confluenceTd" colspan="1">
+      Specifies if the segment is considered inactive
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+</div>

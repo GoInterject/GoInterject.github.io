@@ -1,0 +1,933 @@
+---
+title: Interject Documentation > L5 Hiding Rows &amp; Columns
+layout: custom
+---
+<div class="wiki-content group" id="main-content">
+ <div id="Main Content">
+  <h2 id="L5HidingRows&amp;Columns-Overview">
+   <strong>
+    Overview
+   </strong>
+  </h2>
+  <p>
+   <strong>
+    ReportHideRowsOrColumns()
+   </strong>
+   <span>
+    is a function that allows you to hide both rows and columns when they are not needed. In this example, you will begin with hiding columns M, N, and O. In this lab, you will change the report to only reveal the 90 days column when there are invoices that are 90 days overdue. This will prepare you to create a report that could show any of the hidden columns if there were values in the column. This will remove the data clutter that can occur in reports.
+   </span>
+  </p>
+  <p>
+   <span>
+    This lab also details how to show or hide rows based on whether or not the rows contain an expected date value. There are multiple ways to accomplish this, however this lab only indicates explores one of the possibilities. This lab walks through how in a pinch situation where you are unable to contact the IT department and need to get a solution quickly. This approach is not part of the Best Practices, however will be a good bandaid. To totally solve the issue, the IT department will need to create a SQL parameter to link to the filter on the report. The SQL parameter in this instance has already been created, however, to have a SQL filter created contact your IT department.
+   </span>
+  </p>
+  <p>
+   <span>
+    In this example you will be using the
+   </span>
+   <a href="https://interject.atlassian.net/wiki/spaces/ID/pages/128429387/L3.4+Customer+Aging+Detail" rel="nofollow">
+    <span>
+     Customer Aging Detail
+    </span>
+   </a>
+   <span>
+    Report you created earlier or use the steps below to navigate to the provided one in the report library.
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <span class="confluence-anchor-link" id="L5HidingRows&amp;Columns-HidingRows">
+  </span>
+  <h3 id="L5HidingRows&amp;Columns-HidingRows">
+   <strong>
+    Hiding Rows
+   </strong>
+  </h3>
+  <p>
+   <strong>
+    Step 1:
+   </strong>
+   To begin, open the
+   <strong>
+    Customer Collections
+   </strong>
+   report in the
+   <a href="https://interject.atlassian.net/wiki/spaces/ID/pages/61702517/Report+Library+Basics" rel="nofollow">
+    Report Library
+   </a>
+   .
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper image-center-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/137363494/333643777.png" data-linked-resource-container-id="137363494" data-linked-resource-container-version="52" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2018-5-16_14-59-25.png" data-linked-resource-id="333643777" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="ef20140a-e351-43fc-9aab-3caa97044928" data-media-type="file" data-unresolved-comment-count="0" src="attachments/137363494/333643777.png"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   Now that you have the report, you can decide which rows you want to hide temporarily. Make sure you are in the tab labelled
+   <strong>
+    CustomerAgingDetail
+   </strong>
+   .
+  </p>
+  <p>
+   <strong>
+    Step 2:
+   </strong>
+   Next you will unfreeze panes by going into
+   <a href="https://interject.atlassian.net/wiki/content-only/viewpage.action?pageId=83689479&amp;iframeId=fallback-mode&amp;user_key=ff8080814d41a454014d440734dd0001&amp;user_id=MariaH&amp;xdm_e=https://interject.atlassian.net/&amp;xsm_c=fallback-mode-fake-key__9918117884339235&amp;cp=/wiki&amp;cv=0.0.0-fallback-mode&amp;lic=none#InterjectRibbonMenuItems-QuickTools" rel="nofollow">
+    Quick Tools
+   </a>
+   and select
+   <strong>
+    Freeze/Unfreeze Panes
+   </strong>
+   .
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/137363494/354746414.jpg" data-linked-resource-container-id="137363494" data-linked-resource-container-version="52" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="01.jpg" data-linked-resource-id="354746414" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="738b7414-4a8d-48df-8e30-a0fff8f4ecfb" data-media-type="file" data-unresolved-comment-count="0" src="attachments/137363494/354746414.jpg"/>
+   </span>
+  </p>
+  <p>
+   <strong>
+    Step 3:
+   </strong>
+   First, you need a filter that acts as a flag for an Excel formula. On
+   <strong>
+    row 39
+   </strong>
+   insert a new row above it.
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/137363494/354746376.jpg" data-linked-resource-container-id="137363494" data-linked-resource-container-version="52" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="02.jpg" data-linked-resource-id="354746376" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="28dea41f-0bec-4189-8658-1ffc6915ec4e" data-media-type="file" data-unresolved-comment-count="0" src="attachments/137363494/354746376.jpg"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 4:
+   </strong>
+   In cell
+   <strong>
+    G39
+   </strong>
+   input
+   <strong>
+    Show Expected Date:
+   </strong>
+   to label the filter for later use.
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/137363494/354713609.jpg" data-linked-resource-container-id="137363494" data-linked-resource-container-version="52" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="03.jpg" data-linked-resource-id="354713609" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="3151ebd7-c68e-4d7c-b65d-2d44f6a666d9" data-media-type="file" data-unresolved-comment-count="0" src="attachments/137363494/354713609.jpg"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 3:
+   </strong>
+   Now restrict the cell
+   <strong>
+    H39
+   </strong>
+   to only toggle between Yes, No, or leave it as an empty string.
+  </p>
+  <p>
+   To do this, select the parameter cell, navigate to the
+   <strong>
+    Data
+   </strong>
+   Excel Ribbon, then select
+   <strong>
+    Data Validation
+   </strong>
+   .
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/137363494/354713614.jpg" data-linked-resource-container-id="137363494" data-linked-resource-container-version="52" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="04.jpg" data-linked-resource-id="354713614" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="f36bb129-ddef-4212-a0cd-0a46894c6971" data-media-type="file" data-unresolved-comment-count="0" src="attachments/137363494/354713614.jpg"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 4:
+   </strong>
+   Click the
+   <strong>
+    Allow
+   </strong>
+   dropdown and select
+   <strong>
+    List.
+   </strong>
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/137363494/354746381.jpg" data-linked-resource-container-id="137363494" data-linked-resource-container-version="52" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="05.jpg" data-linked-resource-id="354746381" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="71260b06-2699-491f-a5c0-b8160006ac22" data-media-type="file" data-unresolved-comment-count="0" src="attachments/137363494/354746381.jpg"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 5:
+   </strong>
+   Now change the allowed
+   <strong>
+    Source
+   </strong>
+   input to be
+   <strong>
+    Yes, No
+   </strong>
+   .
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/137363494/354615305.jpg" data-linked-resource-container-id="137363494" data-linked-resource-container-version="52" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="06.jpg" data-linked-resource-id="354615305" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="8076f879-a8b6-4063-977f-eddf5235f63d" data-media-type="file" data-unresolved-comment-count="0" src="attachments/137363494/354615305.jpg"/>
+   </span>
+  </p>
+  <p>
+   <strong>
+    Note:
+   </strong>
+   This will make a drop down list consisting of two options,
+   <strong>
+    Yes
+   </strong>
+   and
+   <strong>
+    No
+   </strong>
+   .
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 6:
+   </strong>
+   Now select
+   <strong>
+    row 30
+   </strong>
+   and insert two rows above it.
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/137363494/354779145.jpg" data-linked-resource-container-id="137363494" data-linked-resource-container-version="52" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="07.jpg" data-linked-resource-id="354779145" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="464d9334-6ae7-4e92-99f4-12f6bd6c4071" data-media-type="file" data-unresolved-comment-count="0" src="attachments/137363494/354779145.jpg"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 7:
+   </strong>
+   In cell
+   <strong>
+    G30
+   </strong>
+   input
+   <strong>
+    Formula Refresh
+   </strong>
+   and in cell
+   <strong>
+    G31
+   </strong>
+   insert
+   <strong>
+    Hide Rows:
+   </strong>
+   to label what each INTERJECT Report Formula is used for.
+  </p>
+  <p>
+   <strong>
+    <span class="confluence-embedded-file-wrapper">
+     <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/137363494/354680845.jpg" data-linked-resource-container-id="137363494" data-linked-resource-container-version="52" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="08.jpg" data-linked-resource-id="354680845" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="6b665c0a-3791-4300-8884-f9d3743bb448" data-media-type="file" data-unresolved-comment-count="0" src="attachments/137363494/354680845.jpg"/>
+    </span>
+   </strong>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 8:
+   </strong>
+   In cell
+   <strong>
+    H30
+   </strong>
+   insert
+   <strong>
+    =ReportCalc()
+   </strong>
+   and then select the
+   <strong>
+    fx
+   </strong>
+   button to bring up the function wizard.
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/137363494/354582548.jpg" data-linked-resource-container-id="137363494" data-linked-resource-container-version="52" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="09.jpg" data-linked-resource-id="354582548" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="ed00ca73-a072-40c3-bb7d-b0b7385489b4" data-media-type="file" data-unresolved-comment-count="0" src="attachments/137363494/354582548.jpg"/>
+   </span>
+  </p>
+  <p>
+   <strong>
+    Note:
+   </strong>
+   When hiding rows and columns it is important that a
+   <strong>
+    ReportCalc
+   </strong>
+   <strong>
+    ()
+   </strong>
+   is used along with a
+   <strong>
+    ReportHideRowOrColumn()
+   </strong>
+   . Since the ReportHideRowOrColumn() leverages cell values as flags, it requires the outputs of Excel formulas to be updated after an INTERJECT Pull event. The order of the INTERJECT events matters in this example so the order of Report Formulas matters. INTERJECT reads Report Formulas from Left to Right, Top to Bottom, thus the ReportCalc() is created before the ReportHideRowOrColumn() so that it is executed by INTERJECT first.
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 9:
+   </strong>
+   In the fields
+   <strong>
+    OnPullSaveOrBoth
+   </strong>
+   ,
+   <strong>
+    OnClearRunOrBoth
+   </strong>
+   ,
+   <strong>
+    SheetOrWorkbook
+   </strong>
+   input
+   <strong>
+    Both
+   </strong>
+   ,
+   <strong>
+    Both
+   </strong>
+   ,
+   <strong>
+    Sheet
+   </strong>
+   respectively
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/137363494/354615310.jpg" data-linked-resource-container-id="137363494" data-linked-resource-container-version="52" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="10.jpg" data-linked-resource-id="354615310" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="eb7e9750-2f98-48ba-a170-ce1b4f8e8cab" data-media-type="file" data-unresolved-comment-count="0" src="attachments/137363494/354615310.jpg"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 10:
+   </strong>
+   In the variable formatting range, in this case cell
+   <strong>
+    C16
+   </strong>
+   , input this formula
+   <strong>
+    =IF($H$42="Yes","Show",IF(R16="","Show","Hide"))
+   </strong>
+   . Be sure that it is in the
+   <strong>
+    Report Variable
+   </strong>
+   formatting range or the formula will not be copied down as intended. By selecting the cell in the formatting range, the formula will copy down to the rest of the report.
+  </p>
+  <p>
+   Once the report is ready you can view how to the left of the data there is a column filled with
+   <strong>
+    Show
+   </strong>
+   and
+   <strong>
+    Hide
+   </strong>
+   . Once you finish this example only the
+   <strong>
+    Show
+   </strong>
+   will be visible.
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/137363494/354713619.jpg" data-linked-resource-container-id="137363494" data-linked-resource-container-version="52" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="11.jpg" data-linked-resource-id="354713619" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="19086c8b-a981-4a03-9d02-50b4769db909" data-media-type="file" data-unresolved-comment-count="0" src="attachments/137363494/354713619.jpg"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 11:
+   </strong>
+   To check if the excel formula is functioning pull the report using the Company Parameter,
+   <strong>
+    Market
+   </strong>
+   .
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/137363494/354779150.jpg" data-linked-resource-container-id="137363494" data-linked-resource-container-version="52" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="13.jpg" data-linked-resource-id="354779150" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="5b8bde8d-3856-4516-b443-f9a0f94af145" data-media-type="file" data-unresolved-comment-count="0" src="attachments/137363494/354779150.jpg"/>
+   </span>
+  </p>
+  <p style="text-align: left;">
+   <br/>
+  </p>
+  <p style="text-align: left;">
+   <strong>
+    Step 12:
+   </strong>
+   In cell
+   <strong>
+    H31
+   </strong>
+   , type in
+   <strong>
+    =ReportHideRoworColumn
+   </strong>
+   and select
+   <strong>
+    fx
+   </strong>
+   .
+  </p>
+  <p style="text-align: left;">
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/137363494/354779155.jpg" data-linked-resource-container-id="137363494" data-linked-resource-container-version="52" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="14.jpg" data-linked-resource-id="354779155" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="530c1995-f2db-49d1-b550-a61e1bfdc891" data-media-type="file" data-unresolved-comment-count="0" src="attachments/137363494/354779155.jpg"/>
+   </span>
+  </p>
+  <p style="text-align: left;">
+   <br/>
+  </p>
+  <p style="text-align: left;">
+   <strong>
+    Step 13:
+   </strong>
+   The Function Argument window will appear and in
+   <strong>
+    OnPullsSavesOrBoth
+   </strong>
+   you will input
+   <strong>
+    Pull
+   </strong>
+  </p>
+  <p style="text-align: left;">
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/137363494/354615315.jpg" data-linked-resource-container-id="137363494" data-linked-resource-container-version="52" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="15.jpg" data-linked-resource-id="354615315" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="8c1a0c0c-d901-4bac-a6d9-d2da27b1ffb9" data-media-type="file" data-unresolved-comment-count="0" src="attachments/137363494/354615315.jpg"/>
+   </span>
+  </p>
+  <p style="text-align: left;">
+   <br/>
+  </p>
+  <p style="text-align: left;">
+   <strong>
+    Step 14:
+   </strong>
+   <strong>
+   </strong>
+   In the box labeled
+   <strong>
+    OnClearRunOrBoth
+   </strong>
+   you will input
+   <strong>
+    Both
+   </strong>
+   .
+  </p>
+  <p style="text-align: left;">
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/137363494/354648079.jpg" data-linked-resource-container-id="137363494" data-linked-resource-container-version="52" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="16.jpg" data-linked-resource-id="354648079" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="079ccb8d-c92e-4b9d-9d9f-ecf731e14719" data-media-type="file" data-unresolved-comment-count="0" src="attachments/137363494/354648079.jpg"/>
+   </span>
+  </p>
+  <p style="text-align: left;">
+   <br/>
+  </p>
+  <p style="text-align: left;">
+   <strong>
+    Step 15:
+   </strong>
+   For the third box labeled
+   <strong>
+    RoworColumnRange
+   </strong>
+   input
+   <strong>
+    C47:C48
+   </strong>
+   . Do this by selecting the cells, not by typing in the values.
+  </p>
+  <p style="text-align: left;">
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/137363494/354582553.jpg" data-linked-resource-container-id="137363494" data-linked-resource-container-version="52" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="17.jpg" data-linked-resource-id="354582553" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="00d30387-e42d-4e63-9880-d235966209d4" data-media-type="file" data-unresolved-comment-count="0" src="attachments/137363494/354582553.jpg"/>
+   </span>
+  </p>
+  <p style="text-align: left;">
+   <br/>
+  </p>
+  <p style="text-align: left;">
+   <strong>
+    Step 16:
+   </strong>
+   Set cell
+   <strong>
+    H42
+   </strong>
+   to
+   <strong>
+    No
+   </strong>
+   then use the
+   <strong>
+    <a href="https://interject.atlassian.net/wiki/content-only/viewpage.action?pageId=83689479&amp;iframeId=fallback-mode&amp;user_key=ff8080814d41a454014d440734dd0001&amp;user_id=MariaH&amp;xdm_e=https://interject.atlassian.net/&amp;xsm_c=fallback-mode-fake-key__38187188987993936&amp;cp=/wiki&amp;cv=0.0.0-fallback-mode&amp;lic=none#InterjectRibbonMenuItems-PullData" rel="nofollow">
+     Pull Data
+    </a>
+   </strong>
+   menu item to check your work.
+   <br/>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/137363494/354582558.jpg" data-linked-resource-container-id="137363494" data-linked-resource-container-version="52" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="18.jpg" data-linked-resource-id="354582558" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="17b5aec5-1bc4-4e90-9656-df4f92e3faed" data-media-type="file" data-unresolved-comment-count="0" src="attachments/137363494/354582558.jpg"/>
+   </span>
+  </p>
+  <p style="text-align: left;">
+   <br/>
+  </p>
+  <p style="text-align: left;">
+   You will now only be able to view the invoices without expected dates.
+  </p>
+  <p style="text-align: left;">
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/137363494/354582563.jpg" data-linked-resource-container-id="137363494" data-linked-resource-container-version="52" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="19.jpg" data-linked-resource-id="354582563" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="7140d82f-80e2-43de-90fc-9e7167b79a90" data-media-type="file" data-unresolved-comment-count="0" src="attachments/137363494/354582563.jpg"/>
+   </span>
+  </p>
+  <p style="text-align: left;">
+   <br/>
+  </p>
+  <p style="text-align: left;">
+   <strong>
+    Step 17:
+   </strong>
+   Now that the formula is complete, you can reformat the page using
+   <a href="https://interject.atlassian.net/wiki/content-only/viewpage.action?pageId=83689479&amp;iframeId=fallback-mode&amp;user_key=ff8080814d41a454014d440734dd0001&amp;user_id=MariaH&amp;xdm_e=https://interject.atlassian.net/&amp;xsm_c=fallback-mode-fake-key__9918117884339235&amp;cp=/wiki&amp;cv=0.0.0-fallback-mode&amp;lic=none#InterjectRibbonMenuItems-QuickTools" rel="nofollow">
+    Quick Tools
+   </a>
+   and Freeze the panes.
+  </p>
+  <p style="text-align: left;">
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/137363494/354713624.jpg" data-linked-resource-container-id="137363494" data-linked-resource-container-version="52" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="20.jpg" data-linked-resource-id="354713624" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="8da9c096-36fe-430a-807d-14637ebda7a4" data-media-type="file" data-unresolved-comment-count="0" src="attachments/137363494/354713624.jpg"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <span class="confluence-anchor-link" id="L5HidingRows&amp;Columns-HidingColumns">
+   </span>
+  </p>
+  <h3 id="L5HidingRows&amp;Columns-HidingColumns">
+   Hiding Columns
+  </h3>
+  <p>
+   In this next example our goal is too hide the rows that have a payment expected date and show the rows without one.
+  </p>
+  <p>
+   <strong>
+    Step 1:
+   </strong>
+   To begin you will unfreeze the report using
+   <a href="https://interject.atlassian.net/wiki/content-only/viewpage.action?pageId=83689479&amp;iframeId=fallback-mode&amp;user_key=ff8080814d41a454014d440734dd0001&amp;user_id=MariaH&amp;xdm_e=https://interject.atlassian.net/&amp;xsm_c=fallback-mode-fake-key__9918117884339235&amp;cp=/wiki&amp;cv=0.0.0-fallback-mode&amp;lic=none#InterjectRibbonMenuItems-QuickTools" rel="nofollow">
+    Quick Tools
+   </a>
+   .
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper image-center-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/137363494/334135297.png" data-linked-resource-container-id="137363494" data-linked-resource-container-version="52" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2018-5-17_10-19-58.png" data-linked-resource-id="334135297" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="d585bb41-7fdd-4e66-b7d9-40d9c18a43a2" data-media-type="file" data-unresolved-comment-count="0" src="attachments/137363494/334135297.png"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   You are now ready to begin editing the excel sheet.
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/137363494/354582580.jpg" data-linked-resource-container-id="137363494" data-linked-resource-container-version="52" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="21.jpg" data-linked-resource-id="354582580" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="de03dd46-8539-4b6a-8665-d8fbb0b0f130" data-media-type="file" data-unresolved-comment-count="0" src="attachments/137363494/354582580.jpg"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 2:
+   </strong>
+   Select cell
+   <strong>
+    M34
+   </strong>
+   and
+   <strong>
+    N34
+   </strong>
+   and insert
+   <strong>
+    Hide
+   </strong>
+   . This is to hide the columns where the overdue charges are under 90 days since this data is not needed often.
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/137363494/354615323.jpg" data-linked-resource-container-id="137363494" data-linked-resource-container-version="52" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="22.jpg" data-linked-resource-id="354615323" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="b5d162d8-6950-49f0-8e01-9bd60c23a7f4" data-media-type="file" data-unresolved-comment-count="0" src="attachments/137363494/354615323.jpg"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 3:
+   </strong>
+   In cell
+   <strong>
+    G30
+   </strong>
+   input
+   <strong>
+    Refresh Functions:
+   </strong>
+   , in cell
+   <strong>
+    G31
+   </strong>
+   input
+   <strong>
+    Hide Columns:
+   </strong>
+   , and in cell
+   <strong>
+    G32
+   </strong>
+   input
+   <strong>
+    Hide Rows:
+   </strong>
+   , then right align all 3 cells to create labels for report formulas so they don't get mixed up.
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/137363494/354779160.jpg" data-linked-resource-container-id="137363494" data-linked-resource-container-version="52" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="24.jpg" data-linked-resource-id="354779160" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="ce3e5f4d-d2e9-409a-9ba5-0e83ec30cebb" data-media-type="file" data-unresolved-comment-count="0" src="attachments/137363494/354779160.jpg"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 4:
+   </strong>
+   Select cell
+   <strong>
+    O34
+   </strong>
+   and insert
+   <strong>
+    =IF(SUMIF(C47:C48,"Show",O47:O48) &gt; 0, "Show", "Hide")
+   </strong>
+   .
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/137363494/354680856.jpg" data-linked-resource-container-id="137363494" data-linked-resource-container-version="52" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="23.jpg" data-linked-resource-id="354680856" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="02ebd9d3-d0e5-4609-b467-9953562efc84" data-media-type="file" data-unresolved-comment-count="0" src="attachments/137363494/354680856.jpg"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 5:
+   </strong>
+   In cell
+   <strong>
+    G31
+   </strong>
+   insert
+   <strong>
+    Hide Columns:
+   </strong>
+   and in cell
+   <strong>
+    H31
+   </strong>
+   input
+   <strong>
+    =ReportHideRoworColumn()
+   </strong>
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/137363494/354779160.jpg" data-linked-resource-container-id="137363494" data-linked-resource-container-version="52" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="24.jpg" data-linked-resource-id="354779160" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="ce3e5f4d-d2e9-409a-9ba5-0e83ec30cebb" data-media-type="file" data-unresolved-comment-count="0" src="attachments/137363494/354779160.jpg"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 6:
+   </strong>
+   Select cell
+   <strong>
+    H31
+   </strong>
+   and click the
+   <strong>
+    fx
+   </strong>
+   button to open the function wizard
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/137363494/354811922.jpg" data-linked-resource-container-id="137363494" data-linked-resource-container-version="52" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="25.jpg" data-linked-resource-id="354811922" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="3f333725-8b80-42e9-b39e-5ce4ca53549c" data-media-type="file" data-unresolved-comment-count="0" src="attachments/137363494/354811922.jpg"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 7:
+   </strong>
+   In the function wizard input
+   <strong>
+    Pull
+   </strong>
+   in the field labeled
+   <strong>
+    OnPullSaveOrBoth
+   </strong>
+   , input
+   <strong>
+    Both
+   </strong>
+   in the field
+   <strong>
+    OnClearRunOrBoth
+   </strong>
+   .
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/137363494/354811927.jpg" data-linked-resource-container-id="137363494" data-linked-resource-container-version="52" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="26.jpg" data-linked-resource-id="354811927" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="c498c693-92fe-44d7-9962-af6ef5490ff6" data-media-type="file" data-unresolved-comment-count="0" src="attachments/137363494/354811927.jpg"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 8:
+   </strong>
+   Select the filed
+   <strong>
+    RowOrColumnRange
+   </strong>
+   then select the three cells containing
+   <strong>
+    Hide
+   </strong>
+   . In this case it will be
+   <strong>
+    M39:O39
+   </strong>
+   .
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/137363494/354582585.jpg" data-linked-resource-container-id="137363494" data-linked-resource-container-version="52" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="27.jpg" data-linked-resource-id="354582585" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="66bf3d66-cec8-4a21-942c-0d4f8072023d" data-media-type="file" data-unresolved-comment-count="0" src="attachments/137363494/354582585.jpg"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 9:
+   </strong>
+   Select cells
+   <strong>
+    M
+   </strong>
+   <strong>
+    5
+   </strong>
+   and
+   <strong>
+    O
+   </strong>
+   <strong>
+    5
+   </strong>
+   and shift them left 3 cells by cutting the cells and pasting them into
+   <strong>
+    J
+   </strong>
+   <strong>
+    5
+   </strong>
+   and
+   <strong>
+    M
+   </strong>
+   <strong>
+    5
+   </strong>
+   respectively.
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/137363494/354582590.jpg" data-linked-resource-container-id="137363494" data-linked-resource-container-version="52" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="28.jpg" data-linked-resource-id="354582590" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="03f9598b-e5c4-4b13-88a9-f842e6b2ff5d" data-media-type="file" data-unresolved-comment-count="0" src="attachments/137363494/354582590.jpg"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 10:
+   </strong>
+   Select cells
+   <strong>
+    L19
+   </strong>
+   and
+   <strong>
+    N19
+   </strong>
+   and shift them left 3 cells by cutting the cells and pasting them into
+   <strong>
+    I19
+   </strong>
+   and
+   <strong>
+    K19
+   </strong>
+   respectively.
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/137363494/354582595.jpg" data-linked-resource-container-id="137363494" data-linked-resource-container-version="52" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="29.jpg" data-linked-resource-id="354582595" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="d2b3c199-78d5-42ed-9411-7a7667a2ad1b" data-media-type="file" data-unresolved-comment-count="0" src="attachments/137363494/354582595.jpg"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step
+   </strong>
+   <strong>
+    11:
+   </strong>
+   Re-freeze the report
+  </p>
+  <p>
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/137363494/354615328.jpg" data-linked-resource-container-id="137363494" data-linked-resource-container-version="52" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="30.jpg" data-linked-resource-id="354615328" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="160bf6c4-36dd-4909-82ae-66254a8c7ecb" data-media-type="file" data-unresolved-comment-count="0" src="attachments/137363494/354615328.jpg"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 12:
+   </strong>
+   In cell
+   <strong>
+    H39
+   </strong>
+   input
+   <strong>
+    Market
+   </strong>
+   and set cell
+   <strong>
+    H42
+   </strong>
+   to
+   <strong>
+    No
+   </strong>
+   and Pull the report
+  </p>
+  <p style="text-align: left;">
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/137363494/354811932.jpg" data-linked-resource-container-id="137363494" data-linked-resource-container-version="52" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="31.jpg" data-linked-resource-id="354811932" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="df1284a7-2aba-45a3-a3c5-cbada9b441f4" data-media-type="file" data-unresolved-comment-count="0" src="attachments/137363494/354811932.jpg"/>
+   </span>
+  </p>
+  <p style="text-align: left;">
+   <br/>
+  </p>
+  <p style="text-align: left;">
+   Your report is now finished and can hide rows and columns where the invoices have an expected date and there is no invoice that is 90 days past due.
+  </p>
+  <p style="text-align: left;">
+   <span class="confluence-embedded-file-wrapper">
+    <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/137363494/354582600.jpg" data-linked-resource-container-id="137363494" data-linked-resource-container-version="52" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="32.jpg" data-linked-resource-id="354582600" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="435cb2a0-5b89-4b03-85ea-e543667aa966" data-media-type="file" data-unresolved-comment-count="0" src="attachments/137363494/354582600.jpg"/>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p style="text-align: center;">
+   <br/>
+  </p>
+ </div>
+</div>

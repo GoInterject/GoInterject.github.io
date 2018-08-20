@@ -1,0 +1,548 @@
+---
+title: Interject Documentation > L1.3 Modify> Financial Report
+layout: custom
+---
+<div class="wiki-content group" id="main-content">
+ <hr/>
+ <p class="auto-cursor-target">
+  <span class="confluence-anchor-link" id="L1.3Modify:FinancialReport-BacktoTop">
+  </span>
+ </p>
+ <h2 id="L1.3Modify:FinancialReport-Overview">
+  <strong>
+   Overview
+  </strong>
+ </h2>
+ <p>
+  Financial reports can sometimes share the same row or column configurations. Rather than creating a new report, it is often easier to modify an existing one. For example, you might be using a monthly trend report which could easily be modified to accommodate a budget-to-actual comparison report, showing monthly and year-to-date differences. This Walk-through will illustrate how to make these changes.
+ </p>
+ <p>
+  To skip to any section of this Walk-through, click the links below.
+ </p>
+ <ul>
+  <ul>
+   <li>
+    <h4 id="L1.3Modify:FinancialReport-UsingColumnDefinitions">
+     <a href="#L1.3Modify:FinancialReport-ColDef">
+      Using Column Definitions
+     </a>
+    </h4>
+   </li>
+   <li>
+    <h4 id="L1.3Modify:FinancialReport-PreparationCleanup">
+     <a href="#L1.3Modify:FinancialReport-PrepClean">
+      Preparation Cleanup
+     </a>
+    </h4>
+   </li>
+   <li>
+    <h4 id="L1.3Modify:FinancialReport-SettingUpBudgettoActualComparisonReport">
+     <a href="#L1.3Modify:FinancialReport-VarRep">
+      Setting Up Budget to Actual Comparison Report
+     </a>
+    </h4>
+   </li>
+   <li>
+    <h4 id="L1.3Modify:FinancialReport-CreatingaYeartoDateBudgettoActualComparisonReport">
+     <a href="#L1.3Modify:FinancialReport-Yr2Dt">
+      Creating a Year to Date Budget to Actual Comparison Report
+     </a>
+    </h4>
+   </li>
+  </ul>
+ </ul>
+ <p>
+  <span class="confluence-anchor-link" id="L1.3Modify:FinancialReport-ColDef">
+  </span>
+ </p>
+ <h3 id="L1.3Modify:FinancialReport-UsingColumnDefinitions.1">
+  Using Column Definitions
+ </h3>
+ <p>
+  <strong>
+   Step 1:
+  </strong>
+  Open the PL Trend report from the Interject Financials folder of the
+  <a href="https://interject.atlassian.net/wiki/spaces/ID/pages/61702517/Report+Library+Basics" rel="nofollow">
+   Report Library
+  </a>
+  .
+ </p>
+ <p>
+  <span class="confluence-embedded-file-wrapper image-center-wrapper">
+   <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128429053/129353261.png" data-linked-resource-container-id="128429053" data-linked-resource-container-version="81" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-7-26_10-36-5.png" data-linked-resource-id="129353261" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="fe41fee2-ac49-48ae-ac8d-e1701bc20b6c" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128429053/129353261.png"/>
+  </span>
+ </p>
+ <p>
+  <br/>
+ </p>
+ <p>
+  <strong>
+   Step 2:
+  </strong>
+  Once the report is open, select the
+  <a href="https://interject.atlassian.net/wiki/content-only/viewpage.action?pageId=83689479&amp;iframeId=fallback-mode&amp;user_key=ff8080814d41a454014d440734dd0001&amp;user_id=MariaH&amp;xdm_e=https://interject.atlassian.net/&amp;xsm_c=fallback-mode-fake-key__2715317480449224&amp;cp=/wiki&amp;cv=0.0.0-fallback-mode&amp;lic=none#InterjectRibbonMenuItems-QuickTools" rel="nofollow">
+   Freeze Panes
+  </a>
+  menu in the View tab, and choose Unfreeze Panes.
+ </p>
+ <p>
+  <span class="confluence-embedded-file-wrapper image-center-wrapper">
+   <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128429053/128430435.png" data-linked-resource-container-id="128429053" data-linked-resource-container-version="81" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-6-2_15-37-32.png" data-linked-resource-id="128430435" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="f27268ef-deb8-4942-a6a4-c502fbf05f3a" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128429053/128430435.png"/>
+  </span>
+ </p>
+ <p>
+  <br/>
+ </p>
+ <p>
+  <span style="color: rgb(0,0,0);">
+   Enter
+   <strong>
+    7002
+   </strong>
+   in the Location filter in cell M22 and month
+   <strong>
+    2002-05
+   </strong>
+   in cell M23. In the current report, values in L4 through N5 will populate based on the month entered. These cells were configured with spreadsheet formulas to automatically change based on the month entered.
+  </span>
+ </p>
+ <p>
+  <span style="color: rgb(0,0,0);">
+   The jColumnDef() formulas in cells L2 to N2 are important to understand. They exist in the Column Definition row 2, so INTERJECT understands what financial values to present for that column.
+  </span>
+ </p>
+ <p>
+  <span class="confluence-embedded-file-wrapper image-center-wrapper">
+   <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128429053/129212629.png" data-linked-resource-container-id="128429053" data-linked-resource-container-version="81" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-7-19_14-41-44.png" data-linked-resource-id="129212629" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="6df8d2fc-3e41-4a8c-ad42-d8405f217127" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128429053/129212629.png"/>
+  </span>
+ </p>
+ <p>
+  <br/>
+ </p>
+ <p>
+  Notice that
+  <a data-linked-resource-id="127965411" data-linked-resource-type="page" data-linked-resource-version="8" href="127965411.html">
+   jColumnDef()
+  </a>
+  draws its parameters from the cells that it has been designated to take values from. In this case those cells are right underneath the formula. Here, jColumnDef() is only referencing a Source (Actual or Budget), a month period, and a year. However, it is designed to handle currency and other reporting dimensions as well.
+  <br/>
+  <span class="confluence-embedded-file-wrapper image-center-wrapper">
+   <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128429053/129212692.png" data-linked-resource-container-id="128429053" data-linked-resource-container-version="81" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-7-19_14-47-45.png" data-linked-resource-id="129212692" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="0231fccb-21a5-44ab-9599-f36e18bacc33" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128429053/129212692.png"/>
+  </span>
+ </p>
+ <p>
+  <br/>
+ </p>
+ <p>
+  <strong>
+   Step 3:
+  </strong>
+  Expand the trend 3 more months as illustrated in the following animated GIF. Select column N and drag its anchor 3 columns to the right. Note that the Column definitions carry through the new columns you made just by dragging the previous one. This way, you add more columns to to the report without manually typing formulas.
+ </p>
+ <p>
+  <span class="confluence-embedded-file-wrapper image-center-wrapper">
+   <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128429053/129139828.gif" data-linked-resource-container-id="128429053" data-linked-resource-container-version="81" data-linked-resource-content-type="image/gif" data-linked-resource-default-alias="1.03FinancialReport-ColumnDuplication.gif" data-linked-resource-id="129139828" data-linked-resource-type="attachment" data-linked-resource-version="2" data-media-id="6ccece1f-801e-4c9a-bafa-4ef3aeaab1a5" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128429053/129139828.gif"/>
+  </span>
+ </p>
+ <p>
+  <br/>
+ </p>
+ <p>
+  <strong>
+   Step 4:
+  </strong>
+  With the new columns added, use the
+  <a href="https://interject.atlassian.net/wiki/content-only/viewpage.action?pageId=83689479&amp;iframeId=fallback-mode&amp;user_key=ff8080814d41a454014d440734dd0001&amp;user_id=MariaH&amp;xdm_e=https://interject.atlassian.net/&amp;xsm_c=fallback-mode-fake-key__2715317480449224&amp;cp=/wiki&amp;cv=0.0.0-fallback-mode&amp;lic=none#InterjectRibbonMenuItems-PullData" rel="nofollow">
+   <strong>
+    Pull Data
+   </strong>
+  </a>
+  menu item.
+ </p>
+ <p>
+  <span class="confluence-embedded-file-wrapper image-center-wrapper">
+   <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128429053/129353298.png" data-linked-resource-container-id="128429053" data-linked-resource-container-version="81" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-7-26_10-37-22.png" data-linked-resource-id="129353298" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="4c469879-d623-4a74-976e-2ed927b013bc" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128429053/129353298.png"/>
+  </span>
+ </p>
+ <p>
+  <br/>
+ </p>
+ <p>
+  You can see that even with the expanded sheet, the data populates in the desired areas just as it should.
+ </p>
+ <p>
+  <span class="confluence-embedded-file-wrapper image-center-wrapper">
+   <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128429053/129343291.png" data-linked-resource-container-id="128429053" data-linked-resource-container-version="81" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-7-25_15-35-42.png" data-linked-resource-id="129343291" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="673e350b-4485-4dc7-8bed-388044006fb2" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128429053/129343291.png"/>
+  </span>
+ </p>
+ <h3 id="L1.3Modify:FinancialReport-PrepClean">
+  <span class="confluence-anchor-link" id="L1.3Modify:FinancialReport-PrepClean">
+  </span>
+ </h3>
+ <h3 id="L1.3Modify:FinancialReport-PreparationCleanup.1">
+  Preparation Cleanup
+ </h3>
+ <p>
+  Now that you understand Column definitions a bit better, modify the report to create a budget to actual comparison report. Before doing this, cleanup the report to prepare it for the modifications you will make.
+ </p>
+ <p>
+  <strong>
+   Step 1:
+  </strong>
+  Now, use the
+  <a href="https://interject.atlassian.net/wiki/content-only/viewpage.action?pageId=83689479&amp;iframeId=fallback-mode&amp;user_key=ff8080814d41a454014d440734dd0001&amp;user_id=MariaH&amp;xdm_e=https://interject.atlassian.net/&amp;xsm_c=fallback-mode-fake-key__2715317480449224&amp;cp=/wiki&amp;cv=0.0.0-fallback-mode&amp;lic=none#InterjectRibbonMenuItems-PullData" rel="nofollow">
+   <strong>
+    Clear
+   </strong>
+  </a>
+  button to remove the data on the report.
+ </p>
+ <p>
+  <span class="confluence-embedded-file-wrapper image-center-wrapper">
+   <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128429053/129353457.png" data-linked-resource-container-id="128429053" data-linked-resource-container-version="81" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-7-26_10-40-15.png" data-linked-resource-id="129353457" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="0be77297-19bc-4eb4-87d5-227517729528" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128429053/129353457.png"/>
+  </span>
+ </p>
+ <p>
+  <br/>
+ </p>
+ <p>
+  <strong>
+   Step 2:
+  </strong>
+  Next, you will select the columns you do not need and right click to delete them. In this case delete Columns O through Q.
+ </p>
+ <p>
+  <span class="confluence-embedded-file-wrapper image-center-wrapper">
+   <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128429053/129141156.png" data-linked-resource-container-id="128429053" data-linked-resource-container-version="81" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-7-17_12-29-16.png" data-linked-resource-id="129141156" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="a2f321d3-a595-4544-ac26-a1ae36898562" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128429053/129141156.png"/>
+  </span>
+ </p>
+ <p>
+  <br/>
+ </p>
+ <p>
+  <strong>
+   Step 3:
+  </strong>
+  Clean up the Column Definition area so the changes are easier to make. First, delete the
+  <strong>
+   For Drill
+  </strong>
+  row to simplify the changes as illustrated below. Delete the column definition area for the third column since column N will contain a formula for difference and thus will not need a column definition. Do this by selecting and deleting cells I12, L12, M12, and N2, N3, N4 and N5.
+ </p>
+ <p>
+  <span class="confluence-embedded-file-wrapper image-center-wrapper">
+   <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128429053/129535604.png" data-linked-resource-container-id="128429053" data-linked-resource-container-version="81" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-8-4_9-7-19.png" data-linked-resource-id="129535604" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="8b4aa473-3123-470f-9963-058ba365580f" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128429053/129535604.png"/>
+  </span>
+ </p>
+ <p>
+  <span class="confluence-anchor-link" id="L1.3Modify:FinancialReport-VarRep">
+  </span>
+ </p>
+ <h3 id="L1.3Modify:FinancialReport-SettingUpBudgettoActualComparisonReport.1">
+  Setting Up Budget to Actual Comparison Report
+ </h3>
+ <p>
+  Now that you have cleared those cells, begin by modifying the report to create a Monthly Comparison Report.
+ </p>
+ <p>
+  <strong>
+   Step 1:
+  </strong>
+  To begin, change the Source of column M to
+  <strong>
+   Budget
+  </strong>
+  so it can be compared to Actuals. Enter
+  <strong>
+   Budget
+  </strong>
+  in M3.
+ </p>
+ <p>
+  <span class="confluence-embedded-file-wrapper image-center-wrapper">
+   <img class="confluence-embedded-image confluence-content-image-border image-center" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128429053/129208650.png" data-linked-resource-container-id="128429053" data-linked-resource-container-version="81" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="image2017-7-19_10-54-53.png" data-linked-resource-id="129208650" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="18077279-56a0-40ea-a610-e9adee331935" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128429053/129208650.png"/>
+  </span>
+ </p>
+ <p>
+  <br/>
+ </p>
+ <p>
+  <strong>
+   Step 2:
+  </strong>
+  Next, you will need to define the Period. Type
+  <strong>
+   =RIGHT($M$23, 2)
+  </strong>
+  into the function field for cells L4 and M4. This way, if a user changes the month in the report, it will change in the Column Definition as well. Add the
+  <strong>
+   $
+  </strong>
+  symbol in the formula so that it will lock in place if the formula is copied later.
+ </p>
+ <p>
+  <span class="confluence-embedded-file-wrapper">
+   <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128429053/326926432.png" data-linked-resource-container-id="128429053" data-linked-resource-container-version="81" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="1.3SettingUpBudgettoActualComparison=Right.png" data-linked-resource-id="326926432" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="62e3ed89-8024-40ce-a6bf-e4f9eb0c2e50" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128429053/326926432.png"/>
+  </span>
+ </p>
+ <p>
+  <br/>
+ </p>
+ <p>
+  <strong>
+   Step 3:
+  </strong>
+  Now, define the Year. Type
+  <strong>
+   =LEFT($M$23, 4)
+  </strong>
+  as the function for L5 and M5, so if a user changes the year in the report, it will change in that Column Definition as well.
+ </p>
+ <p>
+  <span class="confluence-embedded-file-wrapper">
+   <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128429053/327123064.png" data-linked-resource-container-id="128429053" data-linked-resource-container-version="81" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="1.3SettingUpBudgetToActualComparison=Left.png" data-linked-resource-id="327123064" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="cb388653-b821-4898-8e56-75f7ed782af7" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128429053/327123064.png"/>
+  </span>
+ </p>
+ <p>
+  <br/>
+ </p>
+ <p>
+  <strong>
+   Step 4:
+  </strong>
+  Now , rename the column labels in rows 24 to 27 so they will more accurately describe what they represent. First clear the range L25:N27.
+ </p>
+ <p>
+  <span class="confluence-embedded-file-wrapper">
+   <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128429053/327123015.jpg" data-linked-resource-container-id="128429053" data-linked-resource-container-version="81" data-linked-resource-content-type="image/jpeg" data-linked-resource-default-alias="3.04VarianceReport-ClearContent.jpg" data-linked-resource-id="327123015" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="06373c10-a0b6-48a6-a286-04d1aee8684b" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128429053/327123015.jpg"/>
+  </span>
+ </p>
+ <p>
+  <br/>
+ </p>
+ <p>
+  After the old content is deleted, add the new descriptions for the column labels. Type
+  <strong>
+   Actual
+  </strong>
+  in cell L27,
+  <strong>
+   Budget
+  </strong>
+  in M27 and
+  <strong>
+   Difference
+  </strong>
+  in N27. Type
+  <strong>
+   Month to Date
+  </strong>
+  in M26.
+ </p>
+ <p>
+  <span class="confluence-embedded-file-wrapper">
+   <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128429053/327123074.png" data-linked-resource-container-id="128429053" data-linked-resource-container-version="81" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="1.3SettingUpBudgetToActualComparisonMonthToDate1.png" data-linked-resource-id="327123074" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="e7f6a71f-468a-4c81-ab41-4f60058f0750" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128429053/327123074.png"/>
+  </span>
+ </p>
+ <p>
+  <br/>
+ </p>
+ <p>
+  <strong>
+   Step 5:
+  </strong>
+  Now, set up the difference formula for column N. First, expand the grouped row in the Formatting Range section in row 14. Type
+  <strong>
+   =L14-M14
+  </strong>
+  into cell N14. This will populate the difference Column with the difference between column L and M.
+ </p>
+ <p>
+  <span class="confluence-embedded-file-wrapper">
+   <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128429053/327090220.png" data-linked-resource-container-id="128429053" data-linked-resource-container-version="81" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="1.3SettingUpBudgetToActualComparisonFormulaSetup.png" data-linked-resource-id="327090220" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="4d74af8a-0985-407c-88a1-892c82abba95" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128429053/327090220.png"/>
+  </span>
+ </p>
+ <p>
+  <br/>
+ </p>
+ <p>
+  After that, select the
+  <strong>
+   1
+  </strong>
+  icon to close all the groups. See the red arrow in the screenshot below. This report was specifically built to be pulled with the groups closed, so it should be collapsed before the report is pulled again.
+ </p>
+ <p>
+  <span class="confluence-embedded-file-wrapper">
+   <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128429053/326926437.png" data-linked-resource-container-id="128429053" data-linked-resource-container-version="81" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="1.3SettingUpBudgetToActualComparisonGroupingClick.png" data-linked-resource-id="326926437" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="fc5099d5-ce69-419d-9437-fdac310b35d9" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128429053/326926437.png"/>
+  </span>
+ </p>
+ <p>
+  <br/>
+ </p>
+ <p>
+  <strong>
+   Step 6:
+  </strong>
+  Now that you have all of the columns set up for the Budget to Actual Comparison Report, you can pull the data. Just click
+  <strong>
+   <a href="https://interject.atlassian.net/wiki/content-only/viewpage.action?pageId=83689479&amp;iframeId=fallback-mode&amp;user_key=ff8080814d41a454014d440734dd0001&amp;user_id=MariaH&amp;xdm_e=https://interject.atlassian.net/&amp;xsm_c=fallback-mode-fake-key__2715317480449224&amp;cp=/wiki&amp;cv=0.0.0-fallback-mode&amp;lic=none#InterjectRibbonMenuItems-PullData" rel="nofollow">
+    Pull Data
+   </a>
+  </strong>
+  in the ribbon menu.
+ </p>
+ <p>
+  <span class="confluence-embedded-file-wrapper">
+   <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128429053/327024741.png" data-linked-resource-container-id="128429053" data-linked-resource-container-version="81" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="1.3CreatingYearToDateVariableStep4.png" data-linked-resource-id="327024741" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="ab4020bc-d751-4eb7-806d-c48c2bfbc6ab" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128429053/327024741.png"/>
+  </span>
+ </p>
+ <p>
+  <br/>
+ </p>
+ <p>
+  The new month-to-date difference report columns should populate as expected. Refreeze the pane on cell L28 and the report will look like the image below.
+ </p>
+ <p>
+  <span class="confluence-embedded-file-wrapper">
+   <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128429053/327123069.png" data-linked-resource-container-id="128429053" data-linked-resource-container-version="81" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="1.3SettingUpBudgetToActualComparisonFinal.png" data-linked-resource-id="327123069" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="42f9363c-4dc6-4a5d-a4d1-b81d6df4b8a0" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128429053/327123069.png"/>
+  </span>
+ </p>
+ <p>
+  <span class="confluence-anchor-link" id="L1.3Modify:FinancialReport-Yr2Dt">
+  </span>
+ </p>
+ <p>
+  <br/>
+ </p>
+ <h3 id="L1.3Modify:FinancialReport-CreatingaYeartoDateBudgettoActualComparisonReport.1">
+  Creating a Year to Date Budget to Actual Comparison Report
+ </h3>
+ <p>
+  <strong>
+   Step 1:
+  </strong>
+  Now change your Budget to Actual Comparison Report to show the monthly difference as well as the year to date difference. You can do this by first selecting columns L through N, then copying and pasting them in Column Q. This will give you a broader view of the data. Once completed, you can view not only the month you are asking for but also the year.
+ </p>
+ <p>
+  <span class="confluence-embedded-file-wrapper">
+   <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128429053/326991945.png" data-linked-resource-container-id="128429053" data-linked-resource-container-version="81" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="1.3CreatingYearToDateVariableStart.png" data-linked-resource-id="326991945" data-linked-resource-type="attachment" data-linked-resource-version="2" data-media-id="fb61208b-5f45-419c-b12d-accce9f79923" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128429053/326991945.png"/>
+  </span>
+ </p>
+ <p>
+  <br/>
+ </p>
+ <p>
+  <strong>
+   Step 2:
+  </strong>
+  Now delete the unnecessary data just added by copying a blank cell and pasting it over what you do not need.
+ </p>
+ <p>
+  <span class="confluence-embedded-file-wrapper">
+   <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128429053/326926427.png" data-linked-resource-container-id="128429053" data-linked-resource-container-version="81" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="1.3CreatingYearToDateVariableStep2.1.png" data-linked-resource-id="326926427" data-linked-resource-type="attachment" data-linked-resource-version="2" data-media-id="4f186130-5ceb-4a36-9237-db61ced03d49" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128429053/326926427.png"/>
+  </span>
+ </p>
+ <p>
+  <br/>
+ </p>
+ <p>
+  Change the name of the table to a more accurate name, like
+  <strong>
+   Year To Date
+  </strong>
+  .
+ </p>
+ <p>
+  <span class="confluence-embedded-file-wrapper">
+   <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128429053/327155819.png" data-linked-resource-container-id="128429053" data-linked-resource-container-version="81" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="1.3CreatingYearToDateVariableStep2.2.png" data-linked-resource-id="327155819" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="12720f96-221f-4b89-b435-674d40b86aef" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128429053/327155819.png"/>
+  </span>
+ </p>
+ <p>
+  <br/>
+ </p>
+ <p>
+  <strong>
+   Step 3:
+  </strong>
+  Now, change the Period for th e
+  <strong>
+   Year To Date
+  </strong>
+  so it will show the actual Year to Date. You can do this by typing
+  <strong>
+   ="YTD" &amp; RIGHT($M$23, 2)
+  </strong>
+  into the function dialogue for cells P4 and Q4.
+ </p>
+ <p>
+  <span class="confluence-embedded-file-wrapper">
+   <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128429053/327057504.png" data-linked-resource-container-id="128429053" data-linked-resource-container-version="81" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="1.3CreatingYearToDateVariableStep3.png" data-linked-resource-id="327057504" data-linked-resource-type="attachment" data-linked-resource-version="2" data-media-id="86223810-35d2-4b3c-a464-41e61b21e638" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128429053/327057504.png"/>
+  </span>
+ </p>
+ <p>
+  <br/>
+ </p>
+ <p>
+  <strong>
+   Step 4:
+  </strong>
+  With this done, re-pull the data.
+ </p>
+ <p>
+  <span class="confluence-embedded-file-wrapper">
+   <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128429053/327090225.png" data-linked-resource-container-id="128429053" data-linked-resource-container-version="81" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="1.3SettingUpBudgetToActualPull1.png" data-linked-resource-id="327090225" data-linked-resource-type="attachment" data-linked-resource-version="2" data-media-id="fa47b9a7-f1f8-4f74-a551-6933f8b0e36a" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128429053/327090225.png"/>
+  </span>
+ </p>
+ <p>
+  <br/>
+ </p>
+ <p>
+  After the pull, refreeze your panes. The new Year to Date Budget to Actual Comparison Report will look like this.
+ </p>
+ <p>
+  <span class="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+   <img class="confluence-embedded-image confluence-content-image-border" data-base-url="https://interject.atlassian.net/wiki" data-image-src="attachments/128429053/327155814.png" data-linked-resource-container-id="128429053" data-linked-resource-container-version="81" data-linked-resource-content-type="image/png" data-linked-resource-default-alias="1.3CreatingYearToDateVariableFinal.png" data-linked-resource-id="327155814" data-linked-resource-type="attachment" data-linked-resource-version="1" data-media-id="84fb9368-6b05-4307-b72e-7579ea353b17" data-media-type="file" data-unresolved-comment-count="0" src="attachments/128429053/327155814.png?width=1250" width="1250"/>
+  </span>
+ </p>
+ <p>
+  <br/>
+ </p>
+ <p>
+  <br/>
+ </p>
+ <h2 id="L1.3Modify:FinancialReport-RelatedLinks:">
+  <span style="color: rgb(0,0,0);">
+   Related Links:
+  </span>
+ </h2>
+ <p>
+  <a href="https://interject.atlassian.net/wiki/spaces/ID/pages/128091499/Inventory+Reports" rel="nofollow">
+   Inventory Reports
+  </a>
+ </p>
+ <p>
+  <a href="https://interject.atlassian.net/wiki/spaces/ID/pages/128429456/L3.1+Inventory+Fixed" rel="nofollow">
+   Inventory Fixed Example
+  </a>
+ </p>
+ <p>
+  <a href="https://interject.atlassian.net/wiki/spaces/ID/pages/61702189/Basics+of+Report+Formulas" rel="nofollow">
+   Basics of Report Formulas
+  </a>
+ </p>
+ <p>
+  <a href="https://interject.atlassian.net/wiki/spaces/ID/pages/62849583/L10+Updating+the+Report+Library" rel="nofollow">
+   Updating the Report Library
+  </a>
+ </p>
+ <p>
+  <a href="https://interject.atlassian.net/wiki/spaces/ID/pages/83689479/Interject+Ribbon+Menu+Items" rel="nofollow">
+   INTERJECT Ribbon Menu Items
+  </a>
+ </p>
+ <p>
+  <br/>
+ </p>
+</div>

@@ -1,0 +1,786 @@
+---
+title: Interject Documentation > Troubleshooting Reports
+layout: custom
+---
+<div class="wiki-content group" id="main-content">
+ <hr/>
+ <div id="#main-content">
+  <h2 id="TroubleshootingReports-Overview">
+   <strong>
+    Overview
+   </strong>
+  </h2>
+  <p>
+   Report errors occur for many reasons, some of which relate to how the server handles data and moves it to the report. Other reasons may include the report's direct configuration within Excel. INTERJECT provides various tools and features to help quickly and accurately diagnose report errors.
+   <span style="color: rgb(51,51,51);">
+    Click one of the topics below to read more.
+   </span>
+  </p>
+  <ul>
+   <li>
+    <h4 id="TroubleshootingReports-InvestigatingErrorsInReportswiththeProgressWindow">
+     <a href="#TroubleshootingReports-investigatingErrors">
+      Investigating Errors In Reports with the Progress Window
+     </a>
+    </h4>
+   </li>
+   <li>
+    <h4 id="TroubleshootingReports-ValidationReportforINTERJECTEvents">
+     <a href="#TroubleshootingReports-ValidationReport">
+      Validation Report for INTERJECT Events
+     </a>
+    </h4>
+   </li>
+   <li>
+    <h4 id="TroubleshootingReports-ReportingaProblemtoINTERJECT">
+     <a href="#TroubleshootingReports-ReportingProblem">
+      Reporting a Problem to INTERJECT
+     </a>
+    </h4>
+   </li>
+   <li>
+    <h4 id="TroubleshootingReports-VerifyingParametersInaReport">
+     <a href="#TroubleshootingReports-VerifyingParameters">
+      Verifying Parameters In a Report
+     </a>
+    </h4>
+   </li>
+   <li>
+    <h4 id="TroubleshootingReports-InvestigatingErrorsusingActivityLogs">
+     <span>
+      <a href="#TroubleshootingReports-InvestigatingErrors">
+       Investigating Errors using Activity Logs
+      </a>
+     </span>
+    </h4>
+   </li>
+   <li>
+    <h4 id="TroubleshootingReports-RAMMonitoring#TroubleshootingReports-RAMMonitoring">
+     <span>
+      <a href="#TroubleshootingReports-RAMMonitoring">
+       RAM Monitoring
+      </a>
+     </span>
+    </h4>
+   </li>
+   <li>
+    <h4 id="TroubleshootingReports-TestingDataConnections#TroubleshootingReports-TestingDataConnections">
+     <span>
+      <a href="#TroubleshootingReports-TestingDataConnections">
+       Testing Data Connections
+      </a>
+     </span>
+    </h4>
+   </li>
+   <li>
+    <h4 id="TroubleshootingReports-ViewSQLTestforActiveCell">
+     <span>
+      <a href="#TroubleshootingReports-ViewSQLTest">
+       View SQL Test for ActiveCell
+      </a>
+     </span>
+    </h4>
+   </li>
+  </ul>
+  <h3 id="TroubleshootingReports-investigatingErrorsInvestigatingErrorsInReportswithProgressWindow">
+   <span>
+    <span class="confluence-anchor-link" id="TroubleshootingReports-investigatingErrors">
+    </span>
+    Investigating Errors In Reports with Progress Window
+   </span>
+  </h3>
+  <p>
+   <span>
+    <span>
+     There are two types of errors that INTERJECT can display: unhandled and handled. Unhandled errors are system generated, whereas handled errors are written by developers.
+    </span>
+    <span>
+     <br/>
+    </span>
+    <span>
+     For example, on a pull or save, an error may occur on the server which the report is trying to access. This error could be handled by the developer, or it could be an unhandled error. Developers can handle errors quickly by using “UserNotice": [link to more info about how to use it]. When the error is handled by the developer, a popup message will display a friendly error text set by the developer.
+    </span>
+   </span>
+  </p>
+  <p>
+   <span>
+    <span>
+     [screenshot of popup error].
+    </span>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <span>
+    <span>
+     If an unhandled error occurs, INTERJECT will still report the error, but no popup message will be displayed to the user. Instead, the Progress Window will stay open, showing a red X next to the failed dataportal call.
+    </span>
+   </span>
+  </p>
+  <p>
+   <span>
+    <span>
+     [screenshot of red X]
+    </span>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <span>
+    <span>
+     When that happens, users can double click the failed dataportal to see the exact error the server returned.
+    </span>
+   </span>
+  </p>
+  <p>
+   <span>
+    <span>
+     [screenshot of window showing error message].
+    </span>
+   </span>
+  </p>
+  <h3 id="TroubleshootingReports-ValidationReportValidationReportforPull/SaveEvents">
+   <span>
+    <span class="confluence-anchor-link" id="TroubleshootingReports-ValidationReport">
+    </span>
+    Validation Report for Pull/Save Events
+   </span>
+  </h3>
+  <p>
+   When developing report templates, there are often many report formulas on a single template. The Validation Report is a tool to help report writers see how specific report formulas behave by interpreting the report formula inputs. It assists writers when there are multiple formulas on a report, since it displays the order of execution for those report formulas. This ensures that INTERJECT events occur in the intended order. The Validation Report also shows report writers how to check if a formula is included in the INTERJECT execution plan. Finally, the Validation Report tool displays to writers which parameters are being included in every report formula on the report template.
+  </p>
+  <p>
+   <span>
+    If evaluating ReportRange, ReportFixed, or ReportVariable then click
+   </span>
+   <strong>
+    Pull Data Event
+   </strong>
+  </p>
+  <p>
+   <span>
+    If evaluating ReportSave then click
+   </span>
+   <strong>
+    Save Data Event
+   </strong>
+  </p>
+  <p>
+   <span>
+    If evaluating ReportDrill then click
+   </span>
+   <strong>
+    Drill Data Event
+   </strong>
+  </p>
+  <p>
+   <span>
+    [paste the validation report here and annotate it with what each thing means]
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 1:
+   </strong>
+   <span>
+    In the
+    <a href="https://interject.atlassian.net/wiki/spaces/ID/pages/83689479/Interject+Ribbon+Menu+Items" rel="nofollow">
+     INTERJECT Ribbon
+    </a>
+    click the
+   </span>
+   <strong>
+    Validation Report
+   </strong>
+   <span>
+    drop down (Click
+   </span>
+   <strong>
+    Advanced Menu
+   </strong>
+   <span>
+    if you do not see the
+   </span>
+   <strong>
+    Formulas
+   </strong>
+   <span>
+    section in the Interject Ribbon)
+   </span>
+  </p>
+  <p>
+   <span>
+    (screenshot)
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 2:
+   </strong>
+   <span>
+    From the drop down menu, choose the item that best fits the type of report formulas in your report (i.e. Pull Data Event, Save Data Event, or Drill Data Event):
+   </span>
+  </p>
+  <p>
+   <span>
+    <span>
+     (screenshot)
+    </span>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <span>
+    The Formula Validation for Event window will open. From here you can analyze what INTERJECT will execute if you were to do a real pull/save/drill. Below is an example of a validation report for the pull event on the Customer Aging:
+   </span>
+  </p>
+  <p>
+   <span>
+    (screenshot)
+   </span>
+  </p>
+  <h3 id="TroubleshootingReports-ReportingProblemReportingaProblemtoINTERJECT">
+   <span class="confluence-anchor-link" id="TroubleshootingReports-ReportingProblem">
+   </span>
+   Reporting a Problem to INTERJECT
+  </h3>
+  <p>
+   Use the Report a Problem feature to report a problem to the INTERJECT support team. Additionally, the problem can be described to an INTERJECT employee by directly contacting INTERJECT support.
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   As long as verbose logging is turned on, Report a Problem can send user data and execution diagnostics to the INTERJECT support team. To use Report a Problem:
+  </p>
+  <p>
+   <strong>
+    Step 1:
+   </strong>
+   Click
+   <strong>
+    User Support Help
+   </strong>
+   from the INTERJECT Ribbon
+  </p>
+  <p>
+   (screenshot)
+  </p>
+  <p>
+   <strong>
+    Step 2:
+   </strong>
+   Click the
+   <strong>
+    Report a Problem
+   </strong>
+   tab in the
+   <strong>
+    INTERJECT - Support
+   </strong>
+   popup window
+  </p>
+  <p>
+   (screenshot)
+  </p>
+  <p>
+   <strong>
+    Step 3:
+   </strong>
+   Fill out the form with an Email and optional Name, Phone, and Description
+  </p>
+  <p>
+   (screenshot)
+  </p>
+  <p>
+   <strong>
+    Step 4:
+   </strong>
+   Click
+   <strong>
+    Send Report
+   </strong>
+  </p>
+  <p>
+   (screenshot)
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   To contact INTERJECT support:
+  </p>
+  <p>
+   <strong>
+    Step 1:
+   </strong>
+   Click
+   <strong>
+    User Support Help
+   </strong>
+   from the INTERJECT Ribbon
+  </p>
+  <p>
+   (screenshot)
+  </p>
+  <p>
+   <strong>
+    Step 2:
+   </strong>
+   Click the
+   <strong>
+    Contact Interject
+   </strong>
+   tab in the
+   <strong>
+    INTERJECT - Support
+   </strong>
+   popup window
+  </p>
+  <p>
+   (screenshot)
+  </p>
+  <p>
+   <strong>
+    Step 3:
+   </strong>
+   Contact INTERJECT support via phone or email
+  </p>
+  <p>
+   (screenshot)
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   Some problems may occasionally require more extensive logging to identify and solve. For more information on
+   <strong>
+    Reporting a Problem
+   </strong>
+   using
+   <strong>
+    Verbose Logging
+   </strong>
+   see
+   <strong>
+    Troubleshooting App Errors
+   </strong>
+   .
+  </p>
+  <h3 id="TroubleshootingReports-VerifyingParametersVerifyingthatParametersinReportFormulasareCorrectlyOrdered">
+   <span>
+    <span class="confluence-anchor-link" id="TroubleshootingReports-VerifyingParameters">
+    </span>
+    Verifying that Parameters in Report Formulas are Correctly Ordered
+    <br/>
+   </span>
+  </h3>
+  <p>
+   <span>
+    <strong>
+     Cell Formula Review
+    </strong>
+    is a feature used for analyzing
+    <span>
+     report
+    </span>
+    formulas and their parameters to check that values are correct. This feature has four different options to help analyze specific report formulas:
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <span>
+    Show Formula References: Displays the cell address for each formula parameter.
+   </span>
+  </p>
+  <p>
+   <span>
+    [screenshot]
+   </span>
+  </p>
+  <p>
+   <span>
+    Show Param Names: Displays text to the right of the formula describing what each formula parameter maps to in the data portal. This is very useful when troubleshooting parameters not being passed in correctly.
+   </span>
+  </p>
+  <p>
+   <span>
+    [screenshot]
+   </span>
+  </p>
+  <p>
+   <span>
+    Indent Data Cell Functions: Indents the formula parameters so they'll be more readable in the text-box. This is checked by default.
+   </span>
+  </p>
+  <p>
+   <span>
+    [screenshot]
+   </span>
+  </p>
+  <p>
+   <span>
+    Indent All Others: Indents the entire formula for readability. This is checked by default.
+   </span>
+  </p>
+  <p>
+   <span>
+    [screenshot]
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <span>
+    When writing a report formula that requires data portal parameters, such as ReportRange(), Excel’s formula wizard does not show the mapping of the Param() formula to the data portal parameter. The formula wizard is limited to showing Value1, Value2, Value3, etc..
+   </span>
+  </p>
+  <p>
+   <strong>
+    [
+   </strong>
+   <span>
+    Screenshot of Param() opened in formula wizard
+   </span>
+   <strong>
+    ]
+   </strong>
+   <span>
+    .
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <span>
+    It is possible to mis-order parameters within a formula. To verify that the correct cell values are being passed to the correct corresponding data portal parameter, use the Cell Formula Review.
+   </span>
+  </p>
+  <p>
+   <strong>
+    Step 1:
+   </strong>
+   <span>
+    Select the cell that has the Report Formula to review.
+   </span>
+  </p>
+  <p>
+   <span>
+    [Screenshot]
+   </span>
+  </p>
+  <p>
+   <strong>
+    Step 2:
+   </strong>
+   <span>
+    In the INTERJECT Ribbon, click the
+   </span>
+   <strong>
+    Validation Report
+   </strong>
+   <span>
+    drop down (Click
+   </span>
+   <strong>
+    Advanced Menu
+   </strong>
+   <span>
+    if you do not see the
+   </span>
+   <strong>
+    Formulas
+   </strong>
+   <span>
+    section in the INTERJECT Ribbon)
+   </span>
+  </p>
+  <p>
+   <span>
+    (Screenshot)
+   </span>
+  </p>
+  <p>
+   <strong>
+    Step 3:
+   </strong>
+   <span>
+    From the drop down menu, click
+   </span>
+   <strong>
+    Cell Formula Review
+   </strong>
+  </p>
+  <p>
+   (Screenshot)
+  </p>
+  <h3 id="TroubleshootingReports-InvestigatingErrorsInvestigatingErrorsusingActivityLogs">
+   <span>
+    <span class="confluence-anchor-link" id="TroubleshootingReports-InvestigatingErrors">
+    </span>
+    Investigating Errors using Activity Logs
+   </span>
+  </h3>
+  <p>
+   <span>
+    You can use the Client Activity Dashboard to view user activity logs, and more specifically users' error logs.
+   </span>
+  </p>
+  <p>
+   <strong>
+    Step 1:
+   </strong>
+   <span>
+    Open the Client Activity Dashboard from the Interject report library.
+   </span>
+  </p>
+  <p>
+   <span>
+    (Screenshot)
+   </span>
+  </p>
+  <p>
+   <strong>
+    Step 2:
+   </strong>
+   <span>
+    Navigate to the Error Detail tab and pull the report (the report will populate with information about the most recent user activity logs that contain errors).
+   </span>
+  </p>
+  <p>
+   <span>
+    (Screenshot)
+   </span>
+  </p>
+  <p>
+   <span>
+    <strong>
+     Step 3:
+    </strong>
+    <span>
+     You can use the various filters and parameters on the report to refine the result set. This will help locate information for troubleshooting specific errors.
+    </span>
+   </span>
+  </p>
+  <p>
+   <span>
+    <span>
+     (Screenshot)
+    </span>
+   </span>
+  </p>
+  <h3 id="TroubleshootingReports-RAMMonitoringRAMMonitoring">
+   <span>
+    <span class="confluence-anchor-link" id="TroubleshootingReports-RAMMonitoring">
+    </span>
+    RAM Monitoring
+   </span>
+  </h3>
+  <p>
+   RAM monitoring is a toggled tool in an Excel report. When it is turned on, the memory use of the current workbook is recorded. When coupling this with
+   <strong>
+    Report a Problem
+   </strong>
+   , the RAM monitor is sent, along with the report, to INTERJECT support. To use RAM Monitoring:
+  </p>
+  <p>
+   <strong>
+    Step 1:
+   </strong>
+   Click Diagnostics on the INTERJECT Ribbon
+  </p>
+  <p>
+   (Screenshot)
+  </p>
+  <p>
+   <strong>
+    Step 2:
+   </strong>
+   Select
+   <strong>
+    Toggle Memory Logging
+   </strong>
+   and click
+   <strong>
+    Execute Selected Action
+   </strong>
+  </p>
+  <p>
+   (Screenshot)
+  </p>
+  <p>
+   <br/>
+  </p>
+  <h3 id="TroubleshootingReports-TestingDataConnectionsTestingDataConnections">
+   <span>
+    <span class="confluence-anchor-link" id="TroubleshootingReports-TestingDataConnections">
+    </span>
+    Testing Data Connections
+   </span>
+  </h3>
+  <p>
+   Before setting up a Data Connection to a Database, you can verify that the connection can be established within Excel.
+  </p>
+  <p>
+   <strong>
+    Step 1:
+   </strong>
+   <span>
+   </span>
+   With Excel open, go to the
+   <span>
+   </span>
+   INTERJECT Ribbon
+   <span>
+   </span>
+   menu and click
+   <span>
+   </span>
+   <strong>
+    Advanced Menu
+   </strong>
+   (Skip this step if already in Advanced menu)
+  </p>
+  <p>
+   (Screenshot)
+  </p>
+  <p>
+   <strong>
+    Step 2:
+   </strong>
+   <span style="color: rgb(51,51,51);">
+    <span>
+    </span>
+    Click
+    <span>
+    </span>
+   </span>
+   <strong>
+    System
+   </strong>
+   <span style="color: rgb(51,51,51);">
+    drop-down, and select
+    <span>
+    </span>
+   </span>
+   <strong>
+    Check Connection
+   </strong>
+  </p>
+  <p>
+   (Screenshot)
+  </p>
+  <p>
+   <strong>
+    <strong>
+     Step 3:
+    </strong>
+   </strong>
+   <span style="color: rgb(51,51,51);">
+    In the text-box, paste the database connection string you will be using to configure the Data Connection.
+   </span>
+  </p>
+  <p>
+   <span style="color: rgb(51,51,51);">
+    (Screenshot)
+   </span>
+  </p>
+  <p>
+   <span style="color: rgb(51,51,51);">
+    <span style="color: rgb(51,51,51);">
+     When the connection functions properly, a message will be displayed, such as the one below.
+    </span>
+   </span>
+  </p>
+  <p>
+   <span style="color: rgb(51,51,51);">
+    <span style="color: rgb(51,51,51);">
+     (Screenshot)
+    </span>
+   </span>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <h3 id="TroubleshootingReports-ViewSQLTestViewSQLTestforActiveCell">
+   <span>
+    <span class="confluence-anchor-link" id="TroubleshootingReports-ViewSQLTest">
+    </span>
+    View SQL Test for ActiveCell
+   </span>
+  </h3>
+  <p>
+   The
+   <strong>
+    View SQL Test for ActiveCell
+   </strong>
+   tool can be used to track down issues with the SQL stored procedures being called by an INTERJECT report function. Only ReportRange(), ReportVariable(), ReportFixed(), and ReportSave() report functions are supported by
+   <strong>
+    View SQL Test for ActiveCell
+   </strong>
+   .
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <strong>
+    Step 1:
+   </strong>
+   Select a cell containing a supported INTERJECT report function.
+  </p>
+  <p>
+   (screenshot)
+  </p>
+  <p>
+   <strong>
+    Step 2:
+   </strong>
+   On the
+   <strong>
+    Administration
+   </strong>
+   tab in the INTERJECT Ribbon, click
+   <strong>
+    View SQL Test for ActiveCell
+   </strong>
+   under the
+   <strong>
+    System
+   </strong>
+   drop-down menu. A popup window will appear with a test SQL query.
+  </p>
+  <p>
+   (screenshot)
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   This SQL query can be run using any T-SQL environment (i.e.
+   <em>
+    Microsoft SQL Server Management Studio
+   </em>
+   ). Running the query in non-T-SQL environments may require modification of the query. The result will be a list of tables in SQL Server or an error message which can be used to see exactly what data is being pulled/saved to/from a report.
+  </p>
+  <p>
+   <br/>
+  </p>
+ </div>
+</div>

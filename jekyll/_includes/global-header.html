@@ -1,0 +1,59 @@
+<div class="header">
+    <div class="fan"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="nav-primary">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <img class="logo" src="../images/site-logo.png" alt="Interject Docs" title="Interject Docs">
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="primary nav navbar-nav">
+                            <li><a href="http://www.gointerject.com/">What is Interject?</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Get Interject <span class="caret"></span></a>
+                                <ul class="dropdown-menu nav-main">
+                                    <h6 class="dropdown-header">For Desktops</h6>
+                                    <li><a href="https://portal.gointerject.com/download-interject.html">Excel</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="http://www.gointerject.com/never-stand-still-blog/">Our Blog</a></li>
+                            <li><a href="https://community.gointerject.com">Community</a></li>
+                            <li><a href="https://portal.gointerject.com/invite.html?mode=create">Create Account</a></li>
+                            <li><a href="https://portal.gointerject.com/login.html">Sign In</a></li>
+                        </ul>
+                        </div>
+                    <!--/.nav-collapse -->
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- DockerCon banner -->
+    <div class="banner">
+      <a target="_blank" href="http://www.gointerject.com/meet-us/"><img src="/images/stick-figure-family.png" alt="Interject banner name"></a>
+    </div>
+    <!-- hero banner text -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="hero-text">
+                <div class="hero-text-centered">
+                    <h1>{{ site.name }}</h1>
+                    <p>Turn your grid into an UI.</p>
+                    <ul class="buttons">
+                        <li><a class="button transparent-btn" href="https://portal.gointerject.com/login.html" target="_blank">Data Portal</a></li>
+                        <li> <a class="button secondary-btn" href="http://www.gointerject.com/" target="_blank">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- nav-secondary -->
+    <!-- data-offset-top should calculated as follows: (height of <header> - header of <nav>) -->
+    <nav class="nav-secondary-tabs" data-spy="affix" data-offset-top="385">
+        <div class="container-fluid">
+            <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+                {% include navigation.html %}
+            </div>
+        </div>
+    </nav>
+</div>

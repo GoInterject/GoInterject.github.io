@@ -1,0 +1,295 @@
+---
+title: Interject Documentation > Param()
+layout: custom
+---
+<div class="wiki-content group" id="main-content">
+ <h2 id="Param()-FunctionSummary">
+  Function Summary
+ </h2>
+ <p>
+  Param is used to help select one or multiple parameters for each of your report formulas
+ </p>
+ <p>
+ </p>
+ <p>
+  NOTE - One value to one cell. But can go one to many.  In second case will return XML of entire thing.
+ </p>
+ <h3 id="Param()-FunctionArguments">
+  Function Arguments
+ </h3>
+ <div class="table-wrap">
+  <table class="wrapped confluenceTable">
+   <colgroup>
+    <col/>
+    <col/>
+    <col/>
+    <col/>
+   </colgroup>
+   <thead>
+    <tr>
+     <th class="confluenceTh">
+      <div class="tablesorter-header-inner">
+       Parameter Name
+      </div>
+     </th>
+     <th class="confluenceTh">
+      <div class="tablesorter-header-inner">
+       Description
+      </div>
+     </th>
+     <th class="confluenceTh">
+      <div class="tablesorter-header-inner">
+       Default
+      </div>
+     </th>
+     <th class="confluenceTh">
+      <div class="tablesorter-header-inner">
+       Optional
+      </div>
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td class="confluenceTd">
+      <p>
+       Value1
+      </p>
+     </td>
+     <td class="confluenceTd">
+      Enter parameter value or link.
+     </td>
+     <td class="confluenceTd">
+     </td>
+     <td class="confluenceTd">
+      <p>
+       YES
+      </p>
+     </td>
+    </tr>
+    <tr>
+     <td class="confluenceTd" colspan="1">
+      ...
+     </td>
+     <td class="confluenceTd" colspan="1">
+      ...
+     </td>
+     <td class="confluenceTd" colspan="1">
+     </td>
+     <td class="confluenceTd" colspan="1">
+      ...
+     </td>
+    </tr>
+    <tr>
+     <td class="confluenceTd" colspan="1">
+      <span style="color: rgb(0,0,0);">
+       Val40
+      </span>
+     </td>
+     <td class="confluenceTd" colspan="1">
+      Enter parameter value or link.
+     </td>
+     <td class="confluenceTd" colspan="1">
+     </td>
+     <td class="confluenceTd" colspan="1">
+      YES
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <h3 id="Param()-FunctionComposition">
+  Function Composition
+ </h3>
+ <div class="table-wrap">
+  <table class="wrapped confluenceTable">
+   <colgroup>
+    <col/>
+    <col/>
+    <col/>
+   </colgroup>
+   <tbody>
+    <tr>
+     <th class="confluenceTh">
+      Formula
+     </th>
+     <th class="confluenceTh">
+      Example
+     </th>
+     <th class="confluenceTh">
+      Explanation
+     </th>
+    </tr>
+    <tr>
+     <td class="confluenceTd">
+      <p>
+       =Param(
+      </p>
+      <p style="margin-left: 90.0px;">
+       Value1
+      </p>
+      <p style="margin-left: 90.0px;">
+       ,...
+      </p>
+      <p style="margin-left: 90.0px;">
+       ,
+       <span>
+        Value40
+       </span>
+      </p>
+      <p>
+       )
+      </p>
+     </td>
+     <td class="confluenceTd">
+      <p>
+       =
+       <span style="color: rgb(0,0,0);">
+        ReportRange
+       </span>
+       (
+      </p>
+      <p style="margin-left: 90.0px;">
+       <span style="color: rgb(51,51,153);">
+        <strong>
+         <span style="line-height: 1.42857;">
+          "NorthwindCustomers"
+         </span>
+        </strong>
+       </span>
+      </p>
+      <p style="margin-left: 90.0px;">
+       <span style="line-height: 1.42857;">
+        <span style="color: rgb(0,0,0);">
+        </span>
+        ,
+        <span style="color: rgb(51,153,102);">
+         <strong>
+          12
+         </strong>
+        </span>
+        <span>
+         :
+        </span>
+        <span style="color: rgb(51,153,102);">
+         <strong>
+          13
+         </strong>
+        </span>
+       </span>
+      </p>
+      <p style="margin-left: 90.0px;">
+       <span style="line-height: 1.42857;">
+        <span style="color: rgb(51,153,102);">
+        </span>
+       </span>
+       <span>
+        ,
+       </span>
+       <span style="color: rgb(51,153,102);">
+        <strong>
+         1
+        </strong>
+       </span>
+       <span>
+        :
+       </span>
+       <span style="color: rgb(51,153,102);">
+        <strong>
+         1
+        </strong>
+       </span>
+      </p>
+      <p style="margin-left: 90.0px;">
+       <span style="color: rgb(51,153,102);">
+       </span>
+       ,
+      </p>
+      <p style="margin-left: 90.0px;">
+       ,
+       <strong>
+        Param
+       </strong>
+       <span style="color: rgb(0,0,0);">
+        (
+       </span>
+       <span style="color: rgb(0,0,0);">
+        <span style="color: rgb(51,153,102);">
+         <strong>
+          C6,C7,C8
+         </strong>
+        </span>
+        )
+       </span>
+      </p>
+      <p style="margin-left: 90.0px;">
+       <span style="color: rgb(0,0,0);">
+        ,
+        <span style="color: rgb(128,0,128);">
+         <strong>
+          TRUE
+         </strong>
+        </span>
+       </span>
+      </p>
+      <p style="margin-left: 90.0px;">
+       <span style="color: rgb(0,0,0);">
+        ,
+        <span style="color: rgb(128,0,128);">
+         <strong>
+          FALSE
+         </strong>
+        </span>
+       </span>
+      </p>
+      <p>
+       <span style="color: rgb(51,51,153);">
+       </span>
+       )
+      </p>
+     </td>
+     <td class="confluenceTd">
+      <p>
+      </p>
+      <p>
+      </p>
+      <p>
+      </p>
+      <p>
+      </p>
+      <p>
+      </p>
+      <p>
+       ← Param function embedded in ReportRange formula. This example accepts three cells to pass to the data portal.
+      </p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <h3 id="Param()-FunctionExample">
+  Function Example
+ </h3>
+ <div class="table-wrap">
+  <table class="wrapped confluenceTable">
+   <tbody>
+    <tr>
+     <th class="confluenceTh">
+      From File
+     </th>
+     <th class="confluenceTh">
+      Worksheet
+     </th>
+    </tr>
+    <tr>
+     <td class="confluenceTd">
+      InterjectBasic
+     </td>
+     <td class="confluenceTd">
+      ReportRange
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+</div>
