@@ -76,18 +76,34 @@ function walkTree(tree)
     totalTopics++;
     if (tree[j].section)
     {
-      var sectionHasPath = findMyTopic(tree[j].section);
-     // Add hyperlink to subtitle
-     // outputLetNav.push('<li><a href="' + tree[j].path + '" onclick="navClicked(' + totalTopics +')" data-target="#item' + totalTopics +'" data-toggle="collapse" data-parent="#stacked-menu"')
-     outputLetNav.push('<li><a onclick="navClicked(' + totalTopics +')" data-target="#item' + totalTopics +'" data-toggle="collapse" data-parent="#stacked-menu"')
+        // Added parallel statements to build separate anchors for caret vs title for each section before appending them to output
+        // One thing I noticed is that the "collapsed" class is set on build, but not altered during the navclick() operation
+        // -TWS
+
+        var sectionHasPath = findMyTopic(tree[j].section);
+        var tempTitleNav = new Array();
+        var tempCaretNav = new Array();
+
+        outputLetNav.push('<li>');
+
+        tempCaretNav.push('<a onclick="navClicked(' + totalTopics + ')" data-target="#item' + totalTopics + '" data-toggle="collapse" data-parent="#stacked-menu" style="float:left;"');
        
+        tempTitleNav.push('<a href="' + tree[j].path + '" onclick="navClicked(' + totalTopics + ')" data-target="#item' + totalTopics + '" data-toggle="collapse" data-parent="#stacked-menu" style="float:left;"');
+
       if (sectionHasPath)
       {
-        outputLetNav.push('aria-expanded="true"')
+          tempCaretNav.push('aria-expanded="true"');
+          tempTitleNav.push('aria-expanded="true"');
       } else {
-        outputLetNav.push('class="collapsed" aria-expanded="false"')
+          tempCaretNav.push('class="collapsed" aria-expanded="false"');
+          tempTitleNav.push('class="collapsed" aria-expanded="false"');
       }
-      outputLetNav.push('>' + tree[j].sectiontitle + '<span class="caret arrow"></span></a>');
+      tempCaretNav.push('><span class="caret arrow"></span></a>');
+      tempTitleNav.push('>' + tree[j].sectiontitle + '</a><br style="clear:both;">');
+
+      outputLetNav.push(tempCaretNav.join(''));
+      outputLetNav.push(tempTitleNav.join(''));
+
       outputLetNav.push('<ul class="nav collapse');
       if (sectionHasPath) outputLetNav.push(' in');
       outputLetNav.push('" id="#item' + totalTopics + '" aria-expanded="');
