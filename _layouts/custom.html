@@ -17,7 +17,7 @@
 {% endif %}
 
 <!-- Logic for 'edit this button' -->
-{% assign edit_url = "https://github.com/lyubar/docEugene/edit/master/" | append: page.path %}
+{% assign edit_url = "https://github.com/gointerject/gointerject.github.io/edit/master/" | append: page.path %}
 {% for entry in site.data.not_edited_here.overrides %}
 	{% if page.path contains entry.path %}
 		{% if entry.source %}
@@ -196,7 +196,7 @@
 										"id": "8453675",
 										"unique_id": "{{ page.path }}",
 										"title": "{{ page.title }}",
-										"permalink": "https://github.com/lyubar/docEugene/blob/master/{{ page.path }}"
+										"permalink": "https://github.com/gointerject/gointerject.github.io/blob/master/{{ page.path }}"
 									};
 									(function(d, c, j) {
 										if (!document.getElementById(j)) {
@@ -230,7 +230,7 @@
                                                 </a>
                                             </li>
                                         {% endif %}
-										<li><a href="https://github.com/lyubar/docEugene/issues/new?body=File: [{{ page.path }}](https://docs.gointerject.com{{ page.url }})"
+										<li><a href="https://github.com/gointerject/gointerject.github.io/issues/new?body=File: [{{ page.path }}](https://docs.gointerject.com{{ page.url }})"
 															class="nomunge"><i class="fa fa-check" aria-hidden="true"></i> Request docs changes</a></li>
 										<li><a href="http://www.gointerject.com/call-us/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
 										<!-- toggle mode -->
@@ -267,7 +267,7 @@
 	{% if page.path == "404.md" %}
 		<script type="text/javascript">
 			var path = window.location.pathname.replace("#","");
-			var ghIssueQueryString = "https://github.com/docker/docker.github.io/issues/new?" + "title=404%20at%20" + path + "&body=URL%3A%20" + path;
+			var ghIssueQueryString = "https://github.com/gointerject/gointerject.github.io/issues/new?" + "title=404%20at%20" + path + "&body=URL%3A%20" + path;
 			document.getElementsByClassName("nomunge")[1].onclick = function() {
 				 document.getElementsByClassName("nomunge")[1].href = ghIssueQueryString;
 				 return true;
