@@ -1,5 +1,5 @@
 ---
-layout: docs
+layout: custom
 title:  example new layout  
 date:   2018-07-24 9:03:02 -0700
 categories: documentation
