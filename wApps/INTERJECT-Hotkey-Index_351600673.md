@@ -3,10 +3,6 @@ title: Interject Documentation > INTERJECT Hotkey Index
 layout: custom
 ---
 
-<div class="wiki-content group" id="main-content">
-
-<div id="#main-content">
-
 ## **Overview**
 
 INTERJECT provides ways to increase productivity and work flow by utilizing hotkeys to quickly perform INTERJECT actions. These hotkeys are adaptable and customize-able and are a staple to being efficient when using INTERJECT functions. Any hotkey listed here can be changed and set to different keystrokes. However, there is a limitation on available keystrokes to change the hotkeys to.
@@ -732,7 +728,3 @@ DoLogin
 **Step 6:** Now save your text editor and open excel and the hotkey will now work.
 
 **Note:** To edit hotkeys on an enterprise level, administrative rights for the environment are required.
-
-</div>
-
-</div>
