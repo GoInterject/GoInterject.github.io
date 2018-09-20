@@ -10,7 +10,7 @@ horizontalnav:
   node: api
 - title: Design
   path: /wApps/FinCube---The-Financial-Cube_127796359.html
-  node: apps
+  node: design
 - title: Function Index
   path: /wIndex/Excel-Function-Index_61702197.html
   node: index
@@ -21,11 +21,16 @@ horizontalnav:
   path: /wPortal/The-INTERJECT-Website-Portal_324665355.html
   node: portal
 
-about:
+design:
 - title: INTERJECT Data Systems 
+  path: /wAbout/x.html
+
+
+about:
+- sectiontitle: INTERJECT Data Systems 
   path: /wAbout/INTERJECT-Data-Systems_61702176.html
   section:
-  - title: What Does INTERJECT Do?
+  - sectiontitle: What Does INTERJECT Do?
     path: /wAbout/61702415.html
     section:
     - title: Real World Use Cases
@@ -38,7 +43,7 @@ about:
       path: /wAbout/Why-CIO%27s-Like-INTERJECT_61702419.html
     - title: What You Need to Know
       path: /wAbout/What-You-Need-to-Know_61702914.html
-  - title: Using INTERJECT
+  - sectiontitle: Using INTERJECT
     path: /wAbout/Using-INTERJECT_61702183.html
     section:
     - title: Installing INTERJECT
@@ -49,7 +54,7 @@ about:
       path: /wAbout/Adding-a-User_61702191.html
     - title: Report Library Basics
       path: /wAbout/Report-Library-Basics_61702517.html
-    - title: Real-World Walkthroughs
+    - sectiontitle: Real-World Walkthroughs
       path: /wAbout/Real-World-Walkthroughs_128091006.html
       section:
       - title: Customer Aging
@@ -59,218 +64,223 @@ about:
       - title: Financial Report
         path: /wAbout/Financial-Report_128091561.html
     - title: Updating INTERJECT
-      path: /wAcbout/Updating-INTERJECT_128493904.html
-  - title: Working with INTERJECT
+      path: /wAbout/Updating-INTERJECT_128493904.html
+  - sectiontitle: Working with INTERJECT
     path: /wAbout/Working-with-INTERJECT_61702912.html
     section:
     - title: Basics of Report Formulas
       path: /wAbout/Basics-of-Report-Formulas_61702189.html
     - title: Tabular vs Data Cells
       path: /wAbout/Tabular-vs-Data-Cells_61702447.html
-      
+
+  
+
 apps:
-- title: Common Dataportal Index
-  path: /wApps/Common-Dataportal-Index_127795984.html
-  section:
-  - title: FinCube - The Financial Cube
-    path: /wApps/FinCube---The-Financial-Cube_127796359.html
-  - title: SegmentInfo - Segment Search
-    path: /wApps/SegmentInfo---Segment-Search_127796463.html
-- title: INTERJECT Hotkey Index
-  path: /wApps/INTERJECT-Hotkey-Index_351600673.html
-- title: How-to articles
-  path: /wApps/How-to-articles_129245729.html
+  - sectiontitle: Common Dataportal Index
+    path: /wApps/Common-Dataportal-Index_127795984.html
+    section:
+    - title: FinCube - The Financial Cube
+      path: /wApps/FinCube---The-Financial-Cube_127796359.html
+    - title: SegmentInfo - Segment Search
+      path: /wApps/SegmentInfo---Segment-Search_127796463.html
+  - title: INTERJECT Hotkey Index
+    path: /wApps/INTERJECT-Hotkey-Index_351600673.html
+  - title: How-to articles
+    path: /wApps/How-to-articles_129245729.html
+
 
 getstarted:
-- title: Creating with INTERJECT
-  path: /wGetStarted/Creating-with-INTERJECT_61702187.html
-  section:
-  - title: Modifying an Existing Report
-    path: /wGetStarted/Modifying-an-Existing-Report_62849215.html
+  - sectiontitle: Creating with INTERJECT
+    path: /wGetStarted/Creating-with-INTERJECT_61702187.html
     section:
-    - title: L1.1 Modify> Customer Aging
-      path: /wGetStarted/128428927.html
-    - title: L1.2 Modify> Inventory Report
-      path: /wGetStarted/128429185.html
-    - title: L1.3 Modify> Financial Report
-      path: /wGetStarted/128429053.html
-  - title: Creating a Simple Report
-    path: /wGetStarted/Creating-a-Simple-Report_128408585.html
+    - sectiontitle: Modifying an Existing Report
+      path: /wGetStarted/Modifying-an-Existing-Report_62849215.html
+      section:
+      - title: L1.1 Modify> Customer Aging
+        path: /wGetStarted/128428927.html
+      - title: L1.2 Modify> Inventory Report
+        path: /wGetStarted/128429185.html
+      - title: L1.3 Modify> Financial Report
+        path: /wGetStarted/128429053.html
+    - sectiontitle: Creating a Simple Report
+      path: /wGetStarted/Creating-a-Simple-Report_128408585.html
+      section:
+      - title: L2.1 Create> Customer Aging
+        path: /wGetStarted/128429314.html
+      - title: L2.2 Create> Customer Orders
+        path: /wGetStarted/128421638.html
+    - sectiontitle: Fixed and Variable Reports
+      path: /wGetStarted/Fixed-and-Variable-Reports_61702195.html
+      section:
+      - title: L3.1 Inventory Fixed
+        path: /wGetStarted/L3.1-Inventory-Fixed_128429456.html
+      - title: L3.2 Inventory Variable Report
+        path: /wGetStarted/L3.2-Inventory-Variable-Report_127872532.html
+      - title: L3.3 Financial Variable
+        path: /wGetStarted/L3.3-Financial-Variable_128421724.html
+      - title: L3.4 Customer Aging Detail
+        path: /wGetStarted/L3.4-Customer-Aging-Detail_128429387.html
+    - sectiontitle: Drilling Between Reports
+      path: /wGetStarted/Drilling-Between-Reports_61702193.html
+      section:
+      - title: L4.1 Drill> Customer Aging
+        path: /wGetStarted/128421015.html
+      - title: L4.2 Drill> Inventory Report
+        path: /wGetStarted/128409138.html
+      - title: L4.3 Drill> Financial Report
+        path: /wGetStarted/128409219.html
+      - title: L4.4 The Three Ways to Drill
+        path: /wGetStarted/L4.4-The-Three-Ways-to-Drill_128510906.html
+    - title: L5 Hiding Rows & Columns
+      path: /wGetStarted/137363494.html
+    - title: L6 Working with Pivot Tables
+      path: /wGetStarted/L6-Working-with-Pivot-Tables_128202725.html
+    - title: L7 Special Column Definitions
+      path: /wGetStarted/L7-Special-Column-Definitions_335183945.html
+    - title: L8 Protecting Sheets
+      path: /wGetStarted/L8-Protecting-Sheets_335151182.html
+    - title: L9 Using the Retain Feature
+      path: /wGetStarted/L9-Using-the-Retain-Feature_361332831.html
+    - title: L10 Updating the Report Library
+      path: /wGetStarted/L10-Updating-the-Report-Library_62849583.html
+    - sectiontitle: Exporting Reports
+      path: /wGetStarted/Exporting-Reports_93618178.html
+      section:
+      - title: L11.1 Quick Export and PDF
+        path: /wGetStarted/L11.1-Quick-Export-and-PDF_128718475.html
+      - title: L11.2 Basic Distribution
+        path: /wGetStarted/L11.2-Basic-Distribution_128719024.html
+      - title: L11.3 Advanced Distribution
+        path: /wGetStarted/L11.3-Advanced-Distribution_128719191.html
+  - title: Excel Best and Worst Practices
+    path: /wGetStarted/Excel-Best-and-Worst-Practices_324567041.html
+  - sectiontitle: Developing with INTERJECT
+    path: /wGetStarted/Developing-with-INTERJECT_136151097.html
     section:
-    - title: L2.1 Create> Customer Aging
-      path: /wGetStarted/128429314.html
-    - title: L2.2 Create> Customer Orders
-      path: /wGetStarted/128421638.html
-  - title: Fixed and Variable Reports
-    path: /wGetStarted/Fixed-and-Variable-Reports_61702195.html
-    section:
-    - title: L3.1 Inventory Fixed
-      path: /wGetStarted/L3.1-Inventory-Fixed_128429456.html
-    - title: L3.2 Inventory Variable Report
-      path: /wGetStarted/L3.2-Inventory-Variable-Report_127872532.html
-    - title: L3.3 Financial Variable
-      path: /wGetStarted/L3.3-Financial-Variable_128421724.html
-    - title: L3.4 Customer Aging Detail
-      path: /wGetStarted/L3.4-Customer-Aging-Detail_128429387.html
-  - title: Drilling Between Reports
-    path: /wGetStarted/Drilling-Between-Reports_61702193.html
-    section:
-    - title: L4.1 Drill> Customer Aging
-      path: /wGetStarted/128421015.html
-    - title: L4.2 Drill> Inventory Report
-      path: /wGetStarted/128409138.html
-    - title: L4.3 Drill> Financial Report
-      path: /wGetStarted/128409219.html
-    - title: L4.4 The Three Ways to Drill
-      path: /wGetStarted/L4.4-The-Three-Ways-to-Drill_128510906.html
-  - title: L5 Hiding Rows & Columns
-    path: /wGetStarted/137363494.html
-  - title: L6 Working with Pivot Tables
-    path: /wGetStarted/L6-Working-with-Pivot-Tables_128202725.html
-  - title: L7 Special Column Definitions
-    path: /wGetStarted/L7-Special-Column-Definitions_335183945.html
-  - title: L8 Protecting Sheets
-    path: /wGetStarted/L8-Protecting-Sheets_335151182.html
-  - title: L9 Using the Retain Feature
-    path: /wGetStarted/L9-Using-the-Retain-Feature_361332831.html
-  - title: L10 Updating the Report Library
-    path: /wGetStarted/L10-Updating-the-Report-Library_62849583.html
-  - title: Exporting Reports
-    path: /wGetStarted/Exporting-Reports_93618178.html
-    section:
-    - title: L11.1 Quick Export and PDF
-      path: /wGetStarted/L11.1-Quick-Export-and-PDF_128718475.html
-    - title: L11.2 Basic Distribution
-      path: /wGetStarted/L11.2-Basic-Distribution_128719024.html
-    - title: L11.3 Advanced Distribution
-      path: /wGetStarted/L11.3-Advanced-Distribution_128719191.html
-- title: Excel Best and Worst Practices
-  path: /wGetStarted/Excel-Best-and-Worst-Practices_324567041.html
-- title: Developing with INTERJECT
-  path: /wGetStarted/Developing-with-INTERJECT_136151097.html
-  section:
-  - title: INTERJECT Website Portal
-    path: /wGetStarted/INTERJECT-Website-Portal_324534275.html
-  - title: Defining INTERJECT for Developers
-    path: /wGetStarted/Defining-INTERJECT-for-Developers_324665345.html
-  - title: Simple Data Pull
-    path: /wGetStarted/Simple-Data-Pull_139526259.html
-    section:
-    - title: L12.1 Dev> Customer Aging
-      path: /wGetStarted/324567045.html
-    - title: L12.2 Dev> Customer Orders
-      path: /wGetStarted/324403205.html
-  - title: Advanced Data Pull
-    path: /wGetStarted/Advanced-Data-Pull_327516216.html
-    section:
-    - title: L13.1 Dev> Customer Aging Detail
-      path: /wGetStarted/324435969.html
-  - title: Simple Data Save
-    path: /wGetStarted/Simple-Data-Save_139231307.html
-    section:
-    - title: L14.1 Dev> Customer Credit Save
-      path: /wGetStarted/324665351.html
-  - title: Security Best Practices
-    path: /wGetStarted/Security-Best-Practices_324403209.html
-  - title: Managing Settings Cache
-    path: /wGetStarted/Managing-Settings-Cache_324632601.html
-  - title: Common Troubleshooting
-    path: /wGetStarted/Common-Troubleshooting_324567049.html
-  - title: Troubleshooting App Errors
-    path: /wGetStarted/Troubleshooting-App-Errors_359530497.html
-  - title: Troubleshooting Installations
-    path: /wGetStarted/Troubleshooting-Installations_359661603.html
-  - title: Troubleshooting Reports
-    path: /wGetStarted/Troubleshooting-Reports_359563279.html
+    - title: INTERJECT Website Portal
+      path: /wGetStarted/INTERJECT-Website-Portal_324534275.html
+    - title: Defining INTERJECT for Developers
+      path: /wGetStarted/Defining-INTERJECT-for-Developers_324665345.html
+    - sectiontitle: Simple Data Pull
+      path: /wGetStarted/Simple-Data-Pull_139526259.html
+      section:
+      - title: L12.1 Dev> Customer Aging
+        path: /wGetStarted/324567045.html
+      - title: L12.2 Dev> Customer Orders
+        path: /wGetStarted/324403205.html
+    - sectiontitle: Advanced Data Pull
+      path: /wGetStarted/Advanced-Data-Pull_327516216.html
+      section:
+      - title: L13.1 Dev> Customer Aging Detail
+        path: /wGetStarted/324435969.html
+    - sectiontitle: Simple Data Save
+      path: /wGetStarted/Simple-Data-Save_139231307.html
+      section:
+      - title: L14.1 Dev> Customer Credit Save
+        path: /wGetStarted/324665351.html
+    - title: Security Best Practices
+      path: /wGetStarted/Security-Best-Practices_324403209.html
+    - title: Managing Settings Cache
+      path: /wGetStarted/Managing-Settings-Cache_324632601.html
+    - title: Common Troubleshooting
+      path: /wGetStarted/Common-Troubleshooting_324567049.html
+    - title: Troubleshooting App Errors
+      path: /wGetStarted/Troubleshooting-App-Errors_359530497.html
+    - title: Troubleshooting Installations
+      path: /wGetStarted/Troubleshooting-Installations_359661603.html
+    - title: Troubleshooting Reports
+      path: /wGetStarted/Troubleshooting-Reports_359563279.html
+
 
 index:
-- title: Excel Function Index
-  path: /wIndex/Excel-Function-Index_61702197.html
-  section:
-  - title: ReportRange()
-    path: /wIndex/61702199.html
-  - title: Param()
-    path: /wIndex/81756199.html
-  - title: ReportFixed()
-    path: /wIndex/61702203.html
-  - title: ReportVariable()
-    path: /wIndex/61702201.html
-  - title: ReportLookup()
-    path: /wIndex/127973727.html
-  - title: ReportDrill()
-    path: /wIndex/61702556.html
-  - title: PairGroup()
-    path: /wIndex/81756186.html
-  - title: Pair()
-    path: /wIndex/81756188.html
-  - title: ReportSave()
-    path: /wIndex/61702554.html
-  - title: ReportRun()
-    path: /wIndex/61702558.html
-  - title: ReportCalc()
-    path: /wIndex/137265163.html
-  - title: ReportDefaults()
-    path: /wIndex/61702546.html
-  - title: ReportHideRowOrColumn()
-    path: /wIndex/341147669.html
-  - title: ReportMerge()
-    path: /wIndex/110723133.html
-  - title: jMergePoint()
-    path: /wIndex/110723143.html
-  - title: Data Cell Functions
-    path: /wIndex/Data-Cell-Functions_61702530.html
-  - title: jAcct()
-    path: /wIndex/61702534.html
-  - title: jCell/jCellN()
-    path: /wIndex/61702532.html
-  - title: jDesc()
-    path: /wIndex/61702536.html
-  - title: Helper Functions
-    path: /wIndex/Helper-Functions_61702538.html
-  - title: jBinder()
-    path: /wIndex/61702552.html
-  - title: jColumnDef()
-    path: /wIndex/127965411.html
-  - title: jCombine()
-    path: /wIndex/61702542.html
-  - title: jDataPortal()
-    path: /wIndex/61702544.html
-  - title: jWorkbookProperty()
-    path: /wIndex/61702550.html
-  - title: ReportMacro()
-    path: /wIndex/61702548.html
-  - title: jFreezePanes()
-    path: /wIndex/128552956.html
-  - title: jRangeTag()
-    path: /wIndex/138772490.html
-  - title: Report Formula Reviews
-    path: /wIndex/Report-Formula-Reviews_127870833.html
+  - sectiontitle: Excel Function Index
+    path: /wIndex/Excel-Function-Index_61702197.html
+    section:
+    - title: ReportRange()
+      path: /wIndex/61702199.html
+    - title: Param()
+      path: /wIndex/81756199.html
+    - title: ReportFixed()
+      path: /wIndex/61702203.html
+    - title: ReportVariable()
+      path: /wIndex/61702201.html
+    - title: ReportLookup()
+      path: /wIndex/127973727.html
+    - title: ReportDrill()
+      path: /wIndex/61702556.html
+    - title: PairGroup()
+      path: /wIndex/81756186.html
+    - title: Pair()
+      path: /wIndex/81756188.html
+    - title: ReportSave()
+      path: /wIndex/61702554.html
+    - title: ReportRun()
+      path: /wIndex/61702558.html
+    - title: ReportCalc()
+      path: /wIndex/137265163.html
+    - title: ReportDefaults()
+      path: /wIndex/61702546.html
+    - title: ReportHideRowOrColumn()
+      path: /wIndex/341147669.html
+    - title: ReportMerge()
+      path: /wIndex/110723133.html
+    - title: jMergePoint()
+      path: /wIndex/110723143.html
+    - title: Data Cell Functions
+      path: /wIndex/Data-Cell-Functions_61702530.html
+    - title: jAcct()
+      path: /wIndex/61702534.html
+    - title: jCell/jCellN()
+      path: /wIndex/61702532.html
+    - title: jDesc()
+      path: /wIndex/61702536.html
+    - title: Helper Functions
+      path: /wIndex/Helper-Functions_61702538.html
+    - title: jBinder()
+      path: /wIndex/61702552.html
+    - title: jColumnDef()
+      path: /wIndex/127965411.html
+    - title: jCombine()
+      path: /wIndex/61702542.html
+    - title: jDataPortal()
+      path: /wIndex/61702544.html
+    - title: jWorkbookProperty()
+      path: /wIndex/61702550.html
+    - title: ReportMacro()
+      path: /wIndex/61702548.html
+    - title: jFreezePanes()
+      path: /wIndex/128552956.html
+    - title: jRangeTag()
+      path: /wIndex/138772490.html
+    - title: Report Formula Reviews
+      path: /wIndex/Report-Formula-Reviews_127870833.html
+
 
 
 portal:
-- title: The INTERJECT Website Portal
-  path: /wPortal/The-INTERJECT-Website-Portal_324665355.html
-  section:
-  - title: Logging In to Website Portal
-    path: /wPortal/Logging-In-to-Website-Portal_142278762.html
-  - title: Data Connections
-    path: /wPortal/Data-Connections_324403237.html
+  - sectiontitle: The INTERJECT Website Portal
+    path: /wPortal/The-INTERJECT-Website-Portal_324665355.html
     section:
-    - title: Lab 15.1 API Connections
-      path: /wPortal/Lab-15.1-API-Connections_324665359.html
-    - title: Lab 15.2 Database Connection
-      path: /wPortal/Lab-15.2-Database-Connection_136249415.html
-  - title: Data Portals
-    path: /wPortal/Data-Portals_324665363.html
-  - title: User Profile
-    path: /wPortal/User-Profile_324763687.html
-    section:
-    - title: INTERJECT Roles
-      path: /wPortal/INTERJECT-Roles_324468787.html
-    - title: Altering User Passwords
-      path: /wPortal/Altering-User-Passwords_323452989.html
-- title: INTERJECT Ribbon Menu Items
-  path: /wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html
+    - title: Logging In to Website Portal
+      path: /wPortal/Logging-In-to-Website-Portal_142278762.html
+    - sectiontitle: Data Connections
+      path: /wPortal/Data-Connections_324403237.html
+      section:
+      - title: Lab 15.1 API Connections
+        path: /wPortal/Lab-15.1-API-Connections_324665359.html
+      - title: Lab 15.2 Database Connection
+        path: /wPortal/Lab-15.2-Database-Connection_136249415.html
+    - title: Data Portals
+      path: /wPortal/Data-Portals_324665363.html
+    - sectiontitle: User Profile
+      path: /wPortal/User-Profile_324763687.html
+      section:
+      - title: INTERJECT Roles
+        path: /wPortal/INTERJECT-Roles_324468787.html
+      - title: Altering User Passwords
+        path: /wPortal/Altering-User-Passwords_323452989.html
+  - title: INTERJECT Ribbon Menu Items
+    path: /wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html
 
 
 custom2:
