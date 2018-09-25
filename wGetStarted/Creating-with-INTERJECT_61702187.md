@@ -15,8 +15,7 @@ in these sections.
 
   
 
-###  [ Modifying an Existing Report ](/wGetStarted/Modifying-an-Existing-
-Report_62849215.html)
+###  [ Modifying an Existing Report ](/wGetStarted/Modifying-an-Existing-Report_62849215.html)
 
 Reporting needs change often. Account details, specific formatting, even
 spreadsheet formulas require modification, that is why INTERJECT's reports are
@@ -27,8 +26,7 @@ and [ Financial ](/wGetStarted/128429053.html) reports as an example.
 
   
 
-###  [ Creating a Simple Report ](/wGetStarted/Creating-a-Simple-
-Report_128408585.html)
+###  [ Creating a Simple Report ](/wGetStarted/Creating-a-Simple-Report_128408585.html)
 
 This section details how to create reports from scratch. Here, you will walk
 through making a [ Customer Aging ](/wGetStarted/128429314.html) and [
@@ -37,8 +35,7 @@ focus is on using simple single range tabular reports.
 
   
 
-###  [ Fixed and Variable Reports
-](https://interject.atlassian.net/wiki/display/ID/Fixed+and+Variable+Reports)
+###  [ Fixed and Variable Reports](https://interject.atlassian.net/wiki/display/ID/Fixed+and+Variable+Reports)
 
 Reports often require various formats and subtotal sections, and this is
 especially true for financial reports. This section goes through several, more
@@ -50,8 +47,7 @@ of options for your reporting needs.
 
   
 
-###  [ Drilling Between Reports ](/wGetStarted/Drilling-Between-
-Reports_61702193.html)
+###  [ Drilling Between Reports ](/wGetStarted/Drilling-Between-Reports_61702193.html)
 
 Creating drills, it is possible to generate a simple suite of reports that
 enable you and your end-users to navigate anywhere from within the spreadsheet
@@ -71,21 +67,18 @@ prepared for this formula.
 
   
 
-###  [ Lab 6 Working with Pivot Tables ](/wGetStarted/L6-Working-with-Pivot-
-Tables_128202725.html)
+###  [ Lab 6 Working with Pivot Tables ](/wGetStarted/L6-Working-with-Pivot-Tables_128202725.html)
 
 Pivot tables are excellent tools to help us find answers quickly. INTERJECT
 can help simplify pivot table presentation and distribution.
 
-###  [ Lab 7 Special Column Definitions ](/wGetStarted/L7-Special-Column-
-Definitions_335183945.html)
+###  [ Lab 7 Special Column Definitions ](/wGetStarted/L7-Special-Column-Definitions_335183945.html)
 
 Special Column Definitions are optional tags that bring out additional
 features to your standard column definition rows  . They are great for space
 savers or to allow for faster formatting of the Pulled data.
 
-###  [ Lab 8 Protecting Sheets ](/wGetStarted/L8-Protecting-
-Sheets_335151182.html)
+###  [ Lab 8 Protecting Sheets ](/wGetStarted/L8-Protecting-Sheets_335151182.html)
 
 Sheet Protection expands upon the already existing protection functions in
 excel but brings with it the INTERJECT UI and security rights.
@@ -97,8 +90,7 @@ Protector ** button in the  **Tools ** section.
 
 Coming soon
 
-###  [ Lab 10 Updating the Report Library ](/wGetStarted/L10-Updating-the-
-Report-Library_62849583.html)
+###  [ Lab 10 Updating the Report Library ](/wGetStarted/L10-Updating-the-Report-Library_62849583.html)
 
 The Report Library is how you share reports with other users while tracking
 versions for internal audit controls. Report Library is a simple and easy-
