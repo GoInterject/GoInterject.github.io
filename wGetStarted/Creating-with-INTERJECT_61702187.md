@@ -49,11 +49,9 @@ Special Column Definitions are optional tags that bring out additional features 
 
 ###  [ Lab 8 Protecting Sheets ](/wGetStarted/L8-Protecting-Sheets_335151182.html)
 
-Sheet Protection expands upon the already existing protection functions in
-excel but brings with it the INTERJECT UI and security rights.
+Sheet Protection expands upon the already existing protection functions in excel but brings with it the INTERJECT UI and security rights.
 
-To use it, navigate to the INTERJECT ribbon and click on the  **Sheet
-Protector ** button in the  **Tools ** section.
+To use it, navigate to the INTERJECT ribbon and click on the  **Sheet Protector ** button in the  **Tools ** section.
 
 ###  Lab 9 Using the Retained Feature
 
