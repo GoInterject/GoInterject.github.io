@@ -16,8 +16,7 @@ site. Adding a new user can be accomplished only by Client Admins.
 
 ###  Adding a New User
 
-**Step 1:** Navigate to  [ https://portal.gointerject.com
-](https://portal.gointerject.com/login.html)
+**Step 1:** Navigate to  [ https://portal.gointerject.com](https://portal.gointerject.com/login.html)
 
 **Step 2:** Log in to INTERJECT. This example will be using the Test Portal
 site.
@@ -79,7 +78,6 @@ section.
 
 ** ![](attachments/61702191/129635240.png) **
 
-###  ** **
 
 ###  **Adding an Interject Role:**
 

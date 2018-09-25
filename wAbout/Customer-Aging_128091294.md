@@ -29,8 +29,7 @@ links below.
 ###  Navigating to the Aging Summary
 
 **Step 1:** Open the report **INTERJECT Customer Collections** under the
-INTERJECT Demos  in the [ Report Library
-](https://interject.atlassian.net/wiki/display/ID/Report+Library+Basics) .
+INTERJECT Demos  in the [Report Library](https://interject.atlassian.net/wiki/display/ID/Report+Library+Basics) .
 
 ![](attachments/128091294/129568273.png)
 
@@ -43,8 +42,7 @@ This will bring up the Customer Aging Summary.
 
   
 
-**Step 2:** You can retrieve the data by clicking  **[ Pull Data
-](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html) ** in the INTERJECT menu
+**Step 2:** You can retrieve the data by clicking  **[ Pull Data](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html) ** in the INTERJECT menu
 and clicking **Pull Data** in the subsequent popup.
 
 ![](attachments/128091294/128369916.png)
@@ -83,17 +81,11 @@ Back to Top
 
 ###  Drilling into the Aging Detail
 
-**Step 1** : Now, use the  **[ Drill
-](https://interject.atlassian.net/wiki/display/ID/Interject+Ribbon+Menu+Items#InterjectRibbonMenuItems-
-DrillData) ** operation  on the Customer Aging Detail report for a closer look
+**Step 1** : Now, use the  **[ Drill](https://interject.atlassian.net/wiki/display/ID/Interject+Ribbon+Menu+Items#InterjectRibbonMenuItems-DrillData) ** 
+operation  on the Customer Aging Detail report for a closer look
 at the overdue invoices. Here you can select any cell on the row below because
-as long as you select a cell on the row with the overdue invoices the **[
-Drill ](https://interject.atlassian.net/wiki/content-
-only/viewpage.action?pageId=83689479&iframeId=fallback-
-mode&user_key=ff8080814d41a454014d440734dd0001&user_id=MariaH&xdm_e=https://interject.atlassian.net/&xsm_c=fallback-
-mode-fake-key__7710171127443668&cp=/wiki&cv=0.0.0-fallback-
-mode&lic=none#InterjectRibbonMenuItems-DrillData) ** will take us to the
-details of that client's invoices.  ![](attachments/128091294/128363066.png)  
+as long as you select a cell on the row with the overdue invoices the **[Drill](https://interject.atlassian.net/wiki/content-only/viewpage.action?pageId=83689479&iframeId=fallback-modeuser_key=ff8080814d41a454014d440734dd0001&user_id=MariaH&xdm_e=https://interject.atlassian.net/&xsm_c=fallback-mode-fake-key__7710171127443668&cp=/wiki&cv=0.0.0-fallback-mode&lic=none#InterjectRibbonMenuItems-DrillData)** 
+will take us to the details of that client's invoices.  ![](attachments/128091294/128363066.png)  
 
   
 
@@ -138,20 +130,16 @@ Back to Top
 
 ###  Saving the Data
 
-**Step 1:** Now that the notes are written down, you need click the [ **Save
-Data**
-](https://interject.atlassian.net/wiki/display/ID/Interject+Ribbon+Menu+Items#InterjectRibbonMenuItems-
-SaveData) operation to save the notes back to the database.
+**Step 1:** Now that the notes are written down, you need click the [ **SaveData**](https://interject.atlassian.net/wiki/display/ID/Interject+Ribbon+Menu+Items#InterjectRibbonMenuItems-SaveData) 
+operation to save the notes back to the database.
 
 ![](attachments/128091294/129568557.png)
 
 **  
 **
 
-**Step 2:** To do this, click the **[ Save Data
-](https://interject.atlassian.net/wiki/display/ID/Interject+Ribbon+Menu+Items#InterjectRibbonMenuItems-
-SaveData) ** menu in the INTERJECT Ribbon menu and the **Save Data** in the
-popup.
+**Step 2:** To do this, click the **[ Save Data](https://interject.atlassian.net/wiki/display/ID/Interject+Ribbon+Menu+Items#InterjectRibbonMenuItems-SaveData) ** 
+menu in the INTERJECT Ribbon menu and the **Save Data** in the popup.
 
 ![](attachments/128091294/128370470.png)
 
@@ -165,8 +153,7 @@ there were no errors  .
 **  
 **
 
-**Step 3:** Once this is complete, use **[ Clear
-](https://interject.atlassian.net/wiki/content-
+**Step 3:** Once this is complete, use **[ Clear](https://interject.atlassian.net/wiki/content-
 only/viewpage.action?pageId=83689479&iframeId=fallback-
 mode&user_key=ff8080814d41a454014d440734dd0001&user_id=MariaH&xdm_e=https://interject.atlassian.net/&xsm_c=fallback-
 mode-fake-key__7710171127443668&cp=/wiki&cv=0.0.0-fallback-

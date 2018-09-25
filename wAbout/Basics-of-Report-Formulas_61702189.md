@@ -7,9 +7,8 @@ layout: custom
 ##  **Overview**
 
 Inside INTERJECT tabular reports there is a hidden configuration section at
-the top of the worksheet. Notice in the following screenshot how the [
-Customer Aging ](/wAbout/Customer-Aging_128091294.html) report from the Walk-
-through begins at row 14? Above row 14 is a section devoted to the report
+the top of the worksheet. Notice in the following screenshot how the [Customer Aging ](/wAbout/Customer-Aging_128091294.html) 
+report from the Walk-through begins at row 14? Above row 14 is a section devoted to the report
 configuration. The **Report Formulas** section is a common place where
 INTERJECT Report Formulas are added to direct the behavior of the report. Most
 users of reports will not have any need to view this area. For advanced users,
@@ -32,8 +31,7 @@ there are various reasons to access these formulas.
 ###  Accessing the Report Formulas
 
 **Step 1:** For this walk-through, you will use the Customer Collections
-report **** located in the INTERJECT Demos folder of the [ Report Library
-](/wAbout/Report-Library-Basics_61702517.html) .
+report **** located in the INTERJECT Demos folder of the [ Report Library](/wAbout/Report-Library-Basics_61702517.html) .
 
 ![](attachments/61702189/129931697.png)
 
@@ -46,8 +44,7 @@ pulling data.
 
   
 
-**Step 2:** To see the formulas working behind INTERJECT, you need to [
-Unfreeze ](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html) the panes
+**Step 2:** To see the formulas working behind INTERJECT, you need to [Unfreeze ](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html) the panes
 hiding them. Select the View ribbon and select  the **Freeze Panes** drop-
 down. Then choose the first operation, **Unfreeze Panes** .
 
@@ -86,13 +83,8 @@ move the column label in row 21.
 
   
 
-**Step 2:** Now use **[ Pull Data
-](https://interject.atlassian.net/wiki/content-
-only/viewpage.action?pageId=83689479&iframeId=fallback-
-mode&user_key=ff8080814d41a454014d440734dd0001&user_id=MariaH&xdm_e=https://interject.atlassian.net/&xsm_c=fallback-
-mode-fake-key__8257960802079898&cp=/wiki&cv=0.0.0-fallback-
-mode&lic=none#InterjectRibbonMenuItems-PullData) ** **** to see where the
-**CustomerID** data is populated.
+**Step 2:** Now use **[ Pull Data](https://interject.atlassian.net/wiki/content-only/viewpage.action?pageId=83689479&iframeId=fallback-mode&user_key=ff8080814d41a454014d440734dd0001&user_id=MariaHxdm_e=https://interject.atlassian.net/&xsm_c=fallback-mode-fake-key__8257960802079898&cp=/wiki&cv=0.0.0-fallback-mode&lic=none#InterjectRibbonMenuItems-PullData) 
+** to see where the **CustomerID** data is populated.
 
 ![](attachments/61702189/128619257.png)
 
@@ -146,24 +138,18 @@ contains 4 formulas, a pull and 3 drills.
 
 The first formula is a **Report Range** formula and will pull the data from a
 data source to the spreadsheet. There are other, similar, Report Formulas to
-pull data, such as [ ReportFixed() ](/wIndex/61702203.html) , [
-ReportVariable() ](/wIndex/61702201.html) and ReportLookup(). You will look at
+pull data, such as [ ReportFixed() ](/wIndex/61702203.html) , [ReportVariable() ](/wIndex/61702201.html) and ReportLookup(). You will look at
 these later. The screenshot above also shows three ReportDrill() formulas that
-enable [ drill
-](https://interject.atlassian.net/wiki/display/ID/Interject+Ribbon+Menu+Items#InterjectRibbonMenuItems-
-DrillData) functionality. A drill lets us navigate to another spreadsheet
-report based on the context selected.
+enable [drill](https://interject.atlassian.net/wiki/display/ID/Interject+Ribbon+Menu+Items#InterjectRibbonMenuItems-DrillData) 
+functionality. A drill lets us navigate to another spreadsheet report based on the context selected.
 
-Another type of Report Formula is the [ Save
-](https://interject.atlassian.net/wiki/display/ID/Interject+Ribbon+Menu+Items#InterjectRibbonMenuItems-
-SaveData) formula which is not shown here. This type of Report Formula enables
+Another type of Report Formula is the [ Save](https://interject.atlassian.net/wiki/display/ID/Interject+Ribbon+Menu+Items#InterjectRibbonMenuItems-SaveData) 
+formula which is not shown here. This type of Report Formula enables
 an application developer to build save back features into our reports, such as
 saving back comments on financial variances to a central database so they can
 be presented in other reports.
 
-Each of these formulas is activated by its corresponding button in the [
-INTERJECT Ribbon menu
-](https://interject.atlassian.net/wiki/spaces/ID/pages/83689479/Interject+Ribbon+Menu+Items)
+Each of these formulas is activated by its corresponding button in the [INTERJECT Ribbon menu](https://interject.atlassian.net/wiki/spaces/ID/pages/83689479/Interject+Ribbon+Menu+Items)
 .
 
 ![](attachments/61702189/128842903.png)
@@ -177,9 +163,6 @@ popup to select one specifically. INTERJECT orders that list based on the
 order of the drills in the report from left to right and top to bottom.
 
 ![](attachments/61702189/128619310.png)
-
-**  
-**
 
 ###  Hidden Parameters and Notes
 
@@ -204,11 +187,9 @@ Back to Top
 
 [ Customer Aging ](Customer-Aging_128091294.html)
 
-[ Modifying an Existing Report ](/wGetStarted/Modifying-an-Existing-
-Report_62849215.html)
+[ Modifying an Existing Report ](/wGetStarted/Modifying-an-Existing-Report_62849215.html)
 
 [ INTERJECT Ribbon Menu Items ](INTERJECT-Ribbon-Menu-Items_83689479.html)
 
-[ Creating a Simple Report ](/wGetStarted/Creating-a-Simple-
-Report_128408585.html)
+[ Creating a Simple Report ](/wGetStarted/Creating-a-Simple-Report_128408585.html)
 

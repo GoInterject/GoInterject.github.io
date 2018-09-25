@@ -13,8 +13,7 @@ different and may have it's own documentation in the Report Library. See the [
 Report Library Basics ](/wAbout/Report-Library-Basics_61702517.html) page for
 further details.
 
-###  [ Installing Interject
-](https://interject.atlassian.net/wiki/display/ID/Installing+Interject)
+###  [Installing Interject](https://interject.atlassian.net/wiki/display/ID/Installing+Interject)
 
 When installing Interject, there are two methods we can follow.
 
@@ -27,14 +26,12 @@ Windows™.
 ](https://interject.atlassian.net/wiki/display/ID/Installing+Interject#InstallingInterject-O2)
 Installing with an Enterprise level MSI installer.
 
-###  [ Logging In
-](https://interject.atlassian.net/wiki/display/ID/Logging+In)
+###  [Logging In ](/wAbout/Logging-In_63275074.html)
 
 Logging in is simple and fast! Once logged in we can begin exploring the
 Report Library detailed in the following pages.
 
-###  [ Report Library Basics
-](https://interject.atlassian.net/wiki/display/ID/Report+Library+Basics)
+###  [Report Library Basics](/wAbout/Report-Library-Basics_61702517.html)
 
 The Report Library is a way to share reports with other users on your team.
 Reports are uploaded to the library and can be accessed from any computer
@@ -42,8 +39,7 @@ using the INTERJECT app in Excel. The features in INTERJECT go beyond a
 Sharepoint or Shared Network Folder. Files can also be versioned, so reverting
 to a working report is simple.
 
-###  [ Real-World Walkthroughs
-](https://interject.atlassian.net/wiki/display/ID/Real-World+Walkthroughs)
+###  [Real-World Walkthroughs](/wAbout/Real-World-Walkthroughs_128091006)
 
 From simple PL charts for accountants to trend reports for CEO's and CFO's,
 there are a variety of processes we may encounter. In these labs, you will
@@ -65,12 +61,11 @@ Before Using INTERJECT, Here's How to Login
 
 #####  [ Adding a User ](/wAbout/Adding-a-User_61702191.html)
 
-#####  [ Report Library Basics ](/wAbout/Report-Library-Basics_61702517.html)
+#####  [Report Library Basics](/wAbout/Report-Library-Basics_61702517.html)
 
 How to open report files and related documentation
 
-#####  [ Real-World Walkthroughs ](/wAbout/Real-World-
-Walkthroughs_128091006.html)
+#####  [ Real-World Walkthroughs ](/wAbout/Real-World-Walkthroughs_128091006.html)
 
   * [ Customer Aging ](Customer-Aging_128091294.html)
   * [ Inventory Reports ](Inventory-Reports_128091499.html)
