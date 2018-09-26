@@ -8,15 +8,13 @@ layout: custom
 
   
 
-INTERJECT provides features by leveraging spreadsheet formulas that are
-familiar to many users. These formulas can be used to direct data into a
-spreadsheet, creating practical and adaptable reports. By adding report drills
-and navigation through additional spreadsheet formulas, these reports become a
-comprehensive reporting solution.
 
-Below present demonstrations of how each spreadsheet formula can be used:
+INTERJECT provides features by leveraging spreadsheet formulas that are familiar to many users. These formulas can be used to direct data into a spreadsheet, creating practical and adaptable reports. By adding report drills and navigation through additional spreadsheet formulas, these reports become a comprehensive reporting solution. 
+
+Below present demonstrations of how each spreadsheet formula can be used: 
 
   
+
 
   * [ ReportRange() ](/wIndex/61702199.html)
     * [ Param() ](/wIndex/81756199.html)
@@ -46,9 +44,13 @@ Below present demonstrations of how each spreadsheet formula can be used:
   * [ Report Formula Reviews ](/wIndex/Report-Formula-Reviews_127870833.html)
   * [ jFreeze() ](/wIndex/128552956.html)
 
-  
+
 
   
+
+
+  
+
 
   
 
