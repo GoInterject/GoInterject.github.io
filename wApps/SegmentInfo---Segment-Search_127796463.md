@@ -2,11 +2,8 @@
 title: Interject Documentation > SegmentInfo - Segment Search
 layout: custom
 ---
-##  **  
-**
 
-##  **Overview  
-**
+##  **Overview**
 
 Segments is a dataportal which allows you to filter for every segment within your chart of accounts and allows you to use your groupings within your filter choices. For example, if you are looking for accounts in **Revenue** , simply search for Revenue. If there is a segment that represents your business unit (such as Location or District) and security is enabled, it can be used to create dynamic reports that list the business units you or your team have rights to. 
 
