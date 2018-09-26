@@ -4,14 +4,9 @@ layout: custom
 ---
 ##  **Overview**
 
-INTERJECT provides ways to increase productivity and work flow by utilizing
-hotkeys to quickly perform INTERJECT actions. These hotkeys are adaptable and
-customize-able and are a staple to being efficient when using INTERJECT
-functions. Any hotkey listed here can be changed and set to different
-keystrokes. However, there is a limitation on available keystrokes to change
-the hotkeys to.
+INTERJECT provides ways to increase productivity and work flow by utilizing hotkeys to quickly perform INTERJECT actions. These hotkeys are adaptable and customize-able and are a staple to being efficient when using INTERJECT functions. Any hotkey listed here can be changed and set to different keystrokes. However, there is a limitation on available keystrokes to change the hotkeys to. 
 
-Go directly to any section of this page by following one of the links below.
+Go directly to any section of this page by following one of the links below. 
 
   * ####  Default Hotkey Index 
 
@@ -21,16 +16,18 @@ Go directly to any section of this page by following one of the links below.
 
   * ####  Overriding Hotkeys for Shared Enterprise Environments 
 
-###
 
-###  Default Hotkey Index  
+
+
+### 
+
+###  Default Hotkey Index   
   
 <table>  
 <tr>  
 <th>
 
-Login
-
+Login 
 </th>  
 <th>
 
@@ -40,21 +37,18 @@ Login
 <tr>  
 <td>
 
-Ctrl-L
-
+Ctrl-L 
 </td>  
 <td>
 
-Login to INTERJECT
-
+Login to INTERJECT 
 </td> </tr> </table>  
   
 <table>  
 <tr>  
 <th>
 
-Report Library
-
+Report Library 
 </th>  
 <th>
 
@@ -64,21 +58,18 @@ Report Library
 <tr>  
 <td>
 
-Ctrl+Shift-L
-
+Ctrl+Shift-L 
 </td>  
 <td>
 
-Open the **Report Library**
-
+Open the **Report Library** 
 </td> </tr> </table>  
   
 <table>  
 <tr>  
 <th>
 
-Pull
-
+Pull 
 </th>  
 <th>
 
@@ -88,65 +79,54 @@ Pull
 <tr>  
 <td>
 
-Ctrl-Shift-J
-
+Ctrl-Shift-J 
 </td>  
 <td>
 
-Open the **pull data** form
-
+Open the **pull data** form 
 </td> </tr>  
 <tr>  
 <td>
 
-Ctrl-Shift-J, S
-
+Ctrl-Shift-J, S 
 </td>  
 <td>
 
-Open the **pull data** form and pull data based on current form only
-
+Open the **pull data** form and pull data based on current form only 
 </td> </tr>  
 <tr>  
 <td>
 
-Ctrl-Shift-J, T
-
+Ctrl-Shift-J, T 
 </td>  
 <td>
 
-Open the **pull data** form and pull the entire sheet
-
+Open the **pull data** form and pull the entire sheet 
 </td> </tr>  
 <tr>  
 <td>
 
-Ctrl-Shift-J, W
-
+Ctrl-Shift-J, W 
 </td>  
 <td>
 
-Open the **pull data** form and pull the entire workbook
-
+Open the **pull data** form and pull the entire workbook 
 </td> </tr>  
 <tr>  
 <td>
 
-Ctrl-Shift-J, C
-
+Ctrl-Shift-J, C 
 </td>  
 <td>
 
-Open the **pull data** form and clear the data
-
+Open the **pull data** form and clear the data 
 </td> </tr> </table>  
   
 <table>  
 <tr>  
 <th>
 
-Save
-
+Save 
 </th>  
 <th>
 
@@ -156,65 +136,54 @@ Save
 <tr>  
 <td>
 
-Ctrl-Shift-U
-
+Ctrl-Shift-U 
 </td>  
 <td>
 
-Open the **save data** form
-
+Open the **save data** form 
 </td> </tr>  
 <tr>  
 <td>
 
-Ctrl-Shift-U, S
-
+Ctrl-Shift-U, S 
 </td>  
 <td>
 
-Open the **save data** form and save data based on current form only
-
+Open the **save data** form and save data based on current form only 
 </td> </tr>  
 <tr>  
 <td>
 
-Ctrl-Shift-U, T
-
+Ctrl-Shift-U, T 
 </td>  
 <td>
 
-Open the **save data** form and save the entire sheet
-
+Open the **save data** form and save the entire sheet 
 </td> </tr>  
 <tr>  
 <td>
 
-Ctrl-Shift-U, W
-
+Ctrl-Shift-U, W 
 </td>  
 <td>
 
-Open the **save data** form and save the entire workbook
-
+Open the **save data** form and save the entire workbook 
 </td> </tr>  
 <tr>  
 <td>
 
-Ctrl-Shift-U, C
-
+Ctrl-Shift-U, C 
 </td>  
 <td>
 
-Open the **save data** form and clear the save data notes
-
+Open the **save data** form and clear the save data notes 
 </td> </tr> </table>  
   
 <table>  
 <tr>  
 <th>
 
-Drill
-
+Drill 
 </th>  
 <th>
 
@@ -224,32 +193,27 @@ Drill
 <tr>  
 <td>
 
-Ctrl-Shift-K
-
+Ctrl-Shift-K 
 </td>  
 <td>
 
-Drill on selected data row
-
+Drill on selected data row 
 </td> </tr>  
 <tr>  
 <td>
 
-Ctrl-Shift-B
-
+Ctrl-Shift-B 
 </td>  
 <td>
 
-Navigate back from a drill
-
+Navigate back from a drill 
 </td> </tr> </table>  
   
 <table>  
 <tr>  
 <th>
 
-Report Builder
-
+Report Builder 
 </th>  
 <th>
 
@@ -259,21 +223,18 @@ Report Builder
 <tr>  
 <td>
 
-Ctrl-Shift-H
-
+Ctrl-Shift-H 
 </td>  
 <td>
 
-Open the **Interject Report** Builder Form
-
+Open the **Interject Report** Builder Form 
 </td> </tr> </table>  
   
 <table>  
 <tr>  
 <th>
 
-Quick Tools
-
+Quick Tools 
 </th>  
 <th>
 
@@ -283,21 +244,18 @@ Quick Tools
 <tr>  
 <td>
 
-Ctrl-Shift-T
-
+Ctrl-Shift-T 
 </td>  
 <td>
 
-Open the **Interject Quick Tools**
-
+Open the **Interject Quick Tools** 
 </td> </tr> </table>  
   
 <table>  
 <tr>  
 <th>
 
-Diagnostics
-
+Diagnostics 
 </th>  
 <th>
 
@@ -307,21 +265,18 @@ Diagnostics
 <tr>  
 <td>
 
-Ctrl-Shift-D
-
+Ctrl-Shift-D 
 </td>  
 <td>
 
-Open the **Interject Diagnostic tool**
-
+Open the **Interject Diagnostic tool** 
 </td> </tr> </table>  
   
 <table>  
 <tr>  
 <th>
 
-Exports
-
+Exports 
 </th>  
 <th>
 
@@ -331,30 +286,26 @@ Exports
 <tr>  
 <td>
 
-Ctrl-Shift-E
-
+Ctrl-Shift-E 
 </td>  
 <td>
 
-Open the **Quick Export Tool** for the distribution center
-
+Open the **Quick Export Tool** for the distribution center 
 </td> </tr> </table>
 
-###
+### 
 
-###  Hotkey Commands and Keystrokes List  
+###  Hotkey Commands and Keystrokes List   
   
 <table>  
 <tr>  
 <th>
 
-**Commands Available**
-
+**Commands Available** 
 </th>  
 <th>
 
-**Keystrokes Available**
-
+**Keystrokes Available** 
 </th> </tr>  
 <tr>  
 <td>
@@ -364,8 +315,7 @@ Open the **Quick Export Tool** for the distribution center
 </td>  
 <td>
 
-Ctrl+Shift+C
-
+Ctrl+Shift+C 
 </td> </tr>  
 <tr>  
 <td>
@@ -375,8 +325,7 @@ Ctrl+Shift+C
 </td>  
 <td>
 
-Ctrl+Shift+V
-
+Ctrl+Shift+V 
 </td> </tr>  
 <tr>  
 <td>
@@ -386,8 +335,7 @@ Ctrl+Shift+V
 </td>  
 <td>
 
-Ctrl+Shift+R
-
+Ctrl+Shift+R 
 </td> </tr>  
 <tr>  
 <td>
@@ -397,8 +345,7 @@ Ctrl+Shift+R
 </td>  
 <td>
 
-Ctrl+Shift+Y
-
+Ctrl+Shift+Y 
 </td> </tr>  
 <tr>  
 <td>
@@ -408,8 +355,7 @@ Ctrl+Shift+Y
 </td>  
 <td>
 
-Ctrl+Shift+A
-
+Ctrl+Shift+A 
 </td> </tr>  
 <tr>  
 <td>
@@ -419,8 +365,7 @@ Ctrl+Shift+A
 </td>  
 <td>
 
-Ctrl+Shift+Z
-
+Ctrl+Shift+Z 
 </td> </tr>  
 <tr>  
 <td>
@@ -430,8 +375,7 @@ Ctrl+Shift+Z
 </td>  
 <td>
 
-Ctrl+Shift+Q
-
+Ctrl+Shift+Q 
 </td> </tr>  
 <tr>  
 <td>
@@ -441,8 +385,7 @@ Ctrl+Shift+Q
 </td>  
 <td>
 
-Ctrl+Shift+W
-
+Ctrl+Shift+W 
 </td> </tr>  
 <tr>  
 <td>
@@ -452,8 +395,7 @@ Ctrl+Shift+W
 </td>  
 <td>
 
-Ctrl+Shift+M
-
+Ctrl+Shift+M 
 </td> </tr>  
 <tr>  
 <td>
@@ -463,8 +405,7 @@ Ctrl+Shift+M
 </td>  
 <td>
 
-Ctrl+Shift+N
-
+Ctrl+Shift+N 
 </td> </tr>  
 <tr>  
 <td>
@@ -474,8 +415,7 @@ Ctrl+Shift+N
 </td>  
 <td>
 
-Ctrl+Shift+I
-
+Ctrl+Shift+I 
 </td> </tr>  
 <tr>  
 <td>
@@ -485,124 +425,106 @@ Ctrl+Shift+I
 </td>  
 <td>
 
-Ctrl+T
-
+Ctrl+T 
 </td> </tr>  
 <tr>  
 <td>
 
-DoLogin
+
+
+DoLogin 
+
 
 </td>  
 <td>
 
-Ctrl+L
-
+Ctrl+L 
 </td> </tr>  
 <tr>  
 <td>
 
-PullData
-
+PullData 
 </td>  
 <td>
 
-Ctrl+Shift+J
-
+Ctrl+Shift+J 
 </td> </tr>  
 <tr>  
 <td>
 
-SaveData
-
+SaveData 
 </td>  
 <td>
 
-Ctrl+Shift+U
-
+Ctrl+Shift+U 
 </td> </tr>  
 <tr>  
 <td>
 
-DrillOnData
-
+DrillOnData 
 </td>  
 <td>
 
-Ctrl+Shift+K
-
+Ctrl+Shift+K 
 </td> </tr>  
 <tr>  
 <td>
 
-ReportLibrary
-
+ReportLibrary 
 </td>  
 <td>
 
-Ctrl+Shift+L
-
+Ctrl+Shift+L 
 </td> </tr>  
 <tr>  
 <td>
 
-ReportHelper
-
+ReportHelper 
 </td>  
 <td>
 
-Ctrl+Shift+H
-
+Ctrl+Shift+H 
 </td> </tr>  
 <tr>  
 <td>
 
-QuickTools
-
+QuickTools 
 </td>  
 <td>
 
-Ctrl+Shift+T
-
+Ctrl+Shift+T 
 </td> </tr>  
 <tr>  
 <td>
 
-NavigateBack
-
+NavigateBack 
 </td>  
 <td>
 
-Ctrl+Shift+B
-
+Ctrl+Shift+B 
 </td> </tr>  
 <tr>  
 <td>
 
-Diagnostics
-
+Diagnostics 
 </td>  
 <td>
 
-Ctrl+Shift+D
-
+Ctrl+Shift+D 
 </td> </tr>  
 <tr>  
 <td>
 
-Distribution
-
+Distribution 
 </td>  
 <td>
 
-Ctrl+Shift+E
-
+Ctrl+Shift+E 
 </td> </tr>  
 <tr>  
 <td>
 
-CloseFileWithoutSave
-
+CloseFileWithoutSave 
 </td>  
 <td>
 
@@ -612,8 +534,7 @@ CloseFileWithoutSave
 <tr>  
 <td>
 
-AdvancedMenu
-
+AdvancedMenu 
 </td>  
 <td>
 
@@ -623,8 +544,7 @@ AdvancedMenu
 <tr>  
 <td>
 
-ChooseCompany
-
+ChooseCompany 
 </td>  
 <td>
 
@@ -634,8 +554,7 @@ ChooseCompany
 <tr>  
 <td>
 
-ExecuteJAction
-
+ExecuteJAction 
 </td>  
 <td>
 
@@ -645,8 +564,7 @@ ExecuteJAction
 <tr>  
 <td>
 
-ValidationReportPullEvent
-
+ValidationReportPullEvent 
 </td>  
 <td>
 
@@ -654,21 +572,13 @@ ValidationReportPullEvent
 
 </td> </tr> </table>
 
-**Note:** The keystrokes and commands here are in a list format, they are not
-necessarily linked to each other by default unless they are aligned side by
-side. This is to be used to choose which command you want and choose which
-keystroke you want. The keystrokes in the keystrokes available section
-includes those that are already tied to default commands. Some of the
-keystrokes are not assigned to anything, and some of the commands are not
-assigned to anything.
+**Note:** The keystrokes and commands here are in a list format, they are not necessarily linked to each other by default unless they are aligned side by side. This is to be used to choose which command you want and choose which keystroke you want. The keystrokes in the keystrokes available section includes those that are already tied to default commands. Some of the keystrokes are not assigned to anything, and some of the commands are not assigned to anything. 
 
-###
+### 
 
-###  Overriding Hotkeys for Individual Installs
+###  Overriding Hotkeys for Individual Installs 
 
-**Step 1:** Open a new Excel Workbook, login to INTERJECT and select the
-**Advanced Menu** menu to expand the Interject Ribbon to show the **Advanced
-Menu.** Then navigate to the **INTERJECT Diagnostic Tool** .
+**Step 1:** Open a new Excel Workbook, login to INTERJECT and select the **Advanced Menu** menu to expand the Interject Ribbon to show the **Advanced Menu.** Then navigate to the **INTERJECT Diagnostic Tool** . 
 
 ![](attachments/351600673/358973441.jpg)
 
@@ -676,32 +586,31 @@ Menu.** Then navigate to the **INTERJECT Diagnostic Tool** .
 
   
 
-**Step 2:** Select the **Open User Folders** option. Select **Execute Selected
-Action** .
+
+**Step 2:** Select the **Open User Folders** option. Select **Execute Selected Action** . 
 
 ![](attachments/351600673/358907909.jpg)
 
   
 
-**Step 3:** Two file folders will be opened, look in the folder named
-"Settings".
+
+**Step 3:** Two file folders will be opened, look in the folder named "Settings". 
 
 ![](attachments/351600673/359038977.jpg)
 
   
 
-**Step 4:** Select the file **IdsSettings.xml** right click the file then open
-it with a text editor of your choice.
+
+**Step 4:** Select the file **IdsSettings.xml** right click the file then open it with a text editor of your choice. 
 
 ![](attachments/351600673/358875164.jpg)
 
   
 
-**Step 5:** Paste this code into the ** <Global> ** ** </ ** **Global > ** xml
-container.
 
-**** Expand source
+**Step 5:** Paste this code into the ** <Global> ** ** </ ** **Global > ** xml container. 
 
+**** Expand source 
     
     
     <shortkeychanges>true</shortkeychanges>
@@ -710,12 +619,10 @@ container.
 
   
 
-**Step 6:** Choose a **Command** from the available list of commands and an
-available **Keystroke** from the list of available keystrokes and paste the
-code below into the ** <Global> ** ** </ ** **Global > ** xml container.
 
-**** Expand source
+**Step 6:** Choose a **Command** from the available list of commands and an available **Keystroke** from the list of available keystrokes and paste the code below into the ** <Global> ** ** </ ** **Global > ** xml container. 
 
+**** Expand source 
     
     
     <Command>Keystroke</Command>
@@ -724,15 +631,14 @@ code below into the ** <Global> ** ** </ ** **Global > ** xml container.
 
   
 
-**Step 7:** In your text editor replace **Keystroke** with your chosen
-keystroke from the list and replace **Command** with your chosen command.
+
+**Step 7:** In your text editor replace **Keystroke** with your chosen keystroke from the list and replace **Command** with your chosen command. 
 
 ![](attachments/351600673/359071750.jpg)
 
-**Step 8:** Save the text editor and close it, then restart Excel and your new
-hotkey setting will be functional.
+**Step 8:** Save the text editor and close it, then restart Excel and your new hotkey setting will be functional. 
 
-###  Overriding Hotkeys In a Shared Enterprise Environment
+###  Overriding Hotkeys In a Shared Enterprise Environment 
 
 **Step 1:** Go to the folder located at **C:\Program Files (x86)\Interject**
 
@@ -740,17 +646,17 @@ hotkey setting will be functional.
 
   
 
-**Step 2:** Open **App.Config** with a text editor.
+
+**Step 2:** Open **App.Config** with a text editor. 
 
 ![](attachments/351600673/359071759.jpg)
 
   
 
-**Step 3:** If it is not already there, paste this code into the **
-<appSettings></appSettings> ** xml container.
 
-**** Expand source
+**Step 3:** If it is not already there, paste this code into the ** <appSettings></appSettings> ** xml container. 
 
+**** Expand source 
     
     
     <add key="shortkeychanges" value="True" />
@@ -759,11 +665,10 @@ hotkey setting will be functional.
 
   
 
-**Step 4:** Now paste in this code into the ** <appSettings></appSettings> **
-xml container.
 
-**** Expand source
+**Step 4:** Now paste in this code into the ** <appSettings></appSettings> ** xml container. 
 
+**** Expand source 
     
     
     <add key="Command" value="Keystroke" />
@@ -772,16 +677,14 @@ xml container.
 
   
 
-**Step 5:** Then, with your chosen **Keystroke** and **Command** replace it in
-the code within the editor
+
+**Step 5:** Then, with your chosen **Keystroke** and **Command** replace it in the code within the editor 
 
 ![](attachments/351600673/359071769.jpg)
 
-**Step 6:** Now save your text editor and open excel and the hotkey will now
-work.
+**Step 6:** Now save your text editor and open excel and the hotkey will now work. 
 
-**Note:** To edit hotkeys on an enterprise level, administrative rights for
-the environment are required.
+**Note:** To edit hotkeys on an enterprise level, administrative rights for the environment are required. 
 
   
 

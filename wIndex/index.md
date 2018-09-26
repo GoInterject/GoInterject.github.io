@@ -6,45 +6,36 @@ layout: custom
 <tr>  
 <th>
 
-Key
-
+Key 
 </th>  
 <td>
 
-ID
-
+ID 
 </td> </tr>  
 <tr>  
 <th>
 
-Name
-
+Name 
 </th>  
 <td>
 
-Interject Documentation
-
+Interject Documentation 
 </td> </tr>  
 <tr>  
 <th>
 
-Description
-
+Description 
 </th>  
 <td>
 
-Save time and grow your career by learning how to align data to how you work.
-
+Save time and grow your career by learning how to align data to how you work. 
 </td> </tr>  
 <tr>  
 <th>
 
-Created by
-
+Created by 
 </th>  
 <td>
 
-jeffh (Jun 01, 2015)
-
+jeffh (Jun 01, 2015) 
 </td> </tr> </table>
-
