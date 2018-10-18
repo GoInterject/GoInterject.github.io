@@ -81,3 +81,7 @@ defaults:
 sass:
   sass_dir:          _scss
   style:            :compressed
+
+repository:
+  GoInterject/gointerject
+  
