@@ -111,3 +111,5 @@ This is opensource software with many sites that will host and maintain it
 [zapier]: https://zapier.com
 [pages.github]: https://help.github.com/articles/what-is-github-pages/
 [Discourse]: https://www.discourse.org/
+
+https://flarum.org/ appears to  be another easy to use forum
