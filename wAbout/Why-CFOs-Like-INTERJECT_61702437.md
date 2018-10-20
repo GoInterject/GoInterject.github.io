@@ -1,5 +1,5 @@
 ---
-title: Interject Documentation > Why CFO&#39;s Like INTERJECT
+title: Interject Documentation > Why CFOs Like INTERJECT
 layout: custom
 ---
 * * *

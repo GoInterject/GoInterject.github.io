@@ -1,4 +1,6 @@
+
 // Right nav highlighting
+
 var sidebarObj = (document.getElementsByClassName("sidebar")[0]) ? document.getElementsByClassName("sidebar")[0] : document.getElementsByClassName("sidebar-home")[0]
 var sidebarBottom = sidebarObj.getBoundingClientRect().bottom;
 var footerTop = document.getElementsByClassName("footer")[0].getBoundingClientRect().top;
@@ -133,6 +135,7 @@ function walkTree(tree)
   }
 }
 function renderNav(docstoc) {
+  // console.log('docstoc', docstoc)
   for (i=0;i<docstoc.horizontalnav.length;i++)
   {
     if (docstoc.horizontalnav[i].node != "glossary")
@@ -140,11 +143,14 @@ function renderNav(docstoc) {
       currentSection = docstoc.horizontalnav[i].node;
       // build vertical nav
       var itsHere = findMyTopic(docstoc[docstoc.horizontalnav[i].node]);
-      if (itsHere || docstoc.horizontalnav[i].path == pageURL)
-      {
+      // if (itsHere || docstoc.horizontalnav[i].path == pageURL)
+      // {
+        // console.log('docstoc1112', docstoc[docstoc.horizontalnav[i].node])
         walkTree(docstoc[docstoc.horizontalnav[i].node]);
-      }
+      // }
     }
+
+    console.log(outputLetNav)
     // build horizontal nav
     outputHorzTabs.push('<li id="' + docstoc.horizontalnav[i].node + '"');
     if (docstoc.horizontalnav[i].path==pageURL || docstoc.horizontalnav[i].node==sectionToHighlight)
@@ -310,8 +316,8 @@ $(".navbar-toggle").click(function(){
 var navHeight = $('.navbar').outerHeight(true) + 80;
 
 $(document.body).scrollspy({
-	target: '#leftCol',
-	offset: navHeight
+  target: '#leftCol',
+  offset: navHeight
 });
 
 function loadHash(hashObj)
@@ -476,3 +482,6 @@ window.onload = function() {
     //console.log("Keeping non-applicable elements hidden.");
   }
 };
+// console.log(window.docsNav)
+
+renderNav(window.docsNav)

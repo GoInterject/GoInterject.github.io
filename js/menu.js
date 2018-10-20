@@ -1,3 +1,4 @@
+
 var metadata, glossary;
 var autoCompleteShowing = false;
 var displayingAutcompleteResults = new Array();
@@ -268,3 +269,4 @@ function renderTagsPage()
     renderTopicsByTagTable(tagToLookup,"topicMatch",true);
   }
 }
+console.log('menu.js')
