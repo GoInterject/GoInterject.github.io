@@ -107,9 +107,15 @@ This is opensource software with many sites that will host and maintain it
 
 ![images11](/images/Image11.png){:class="img-responsive"}
 
+https://flarum.org/ appears to  be another easy to use forum
+
+
+Discussing the different type of forums - 
+https://www.a2hosting.com/blog/5-outstanding-forum-platforms-set-online-community/
+
 
 [zapier]: https://zapier.com
 [pages.github]: https://help.github.com/articles/what-is-github-pages/
 [Discourse]: https://www.discourse.org/
 
-https://flarum.org/ appears to  be another easy to use forum
+
