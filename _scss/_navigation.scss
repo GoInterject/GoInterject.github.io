@@ -1,3 +1,22 @@
+
+
+
+
+/*
+*   Left nav bar
+*/
+.nav-row{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+
+.nav-col{
+    display:flex;
+    flex-direction:column;
+}
+
+
 /*
 *
 * Primary navigation - top header **********************************************************
@@ -140,7 +159,7 @@
     font-weight: 600;
 }
 
-.nav-sidebar ul li li a {
+.nav-sidebar ul li li a.nocaret {
     border-left: 1px solid #077CBC;
     font-size: 12px;
     margin-left: 15px;
@@ -193,7 +212,7 @@
 
 .toc-nav i.fa {
     font-size: 14px;
-    margin: 0px 8px 0 0;
+    margin: 0px 0px 0 0;
     color: #4fa1d0;
 }
 

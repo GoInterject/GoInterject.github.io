@@ -86,19 +86,19 @@ function walkTree(tree)
         var tempTitleNav = new Array();
         var tempCaretNav = new Array();
 
-        outputLetNav.push('<li>');
+        outputLetNav.push('<li style="overflow-wrap: break-word; overflow:hidden;">');
 
-        tempCaretNav.push('<a onclick="navClicked(' + totalTopics + ')" data-target="#item' + totalTopics + '" data-toggle="collapse" data-parent="#stacked-menu" style="float:left;"');
+        tempCaretNav.push('<a onclick="navClicked(' + totalTopics + ')" data-target="#item' + totalTopics + '" data-toggle="collapse" data-parent="#stacked-menu" style="float:right;"');
        
-        tempTitleNav.push('<a href="' + tree[j].path + '" onclick="navClicked(' + totalTopics + ')" data-target="#item' + totalTopics + '" data-toggle="collapse" data-parent="#stacked-menu" style="float:left;"');
+        tempTitleNav.push('<a href="' + tree[j].path + '" onclick="navClicked(' + totalTopics + ')" data-target="#item' + totalTopics + '" data-toggle="collapse" data-parent="#stacked-menu" style="float:left;width:60%;word-wrap: break-word;"');
 
       if (sectionHasPath)
       {
-          tempCaretNav.push('aria-expanded="true"');
-          tempTitleNav.push('aria-expanded="true"');
+          tempCaretNav.push('aria-expanded="false"');
+          tempTitleNav.push('class="nocaret" aria-expanded="false"');
       } else {
-          tempCaretNav.push('class="collapsed" aria-expanded="false"');
-          tempTitleNav.push('class="collapsed" aria-expanded="false"');
+          tempCaretNav.push('class="collapsed" aria-expanded="true"');
+          tempTitleNav.push('class="collapsed nocaret" aria-expanded="true"');
       }
       tempCaretNav.push('><span class="caret arrow"></span></a>');
       tempTitleNav.push('>' + tree[j].sectiontitle + '</a><br style="clear:both;">');
@@ -128,7 +128,9 @@ function walkTree(tree)
       if (tree[j].path == pageURL && !tree[j].nosync)
       {
         sectionToHighlight = currentSection;
-        outputLetNav.push('class="active currentPage"')
+        outputLetNav.push('class="active currentPage nocaret"')
+      } else {
+        outputLetNav.push('class="nocaret"')
       }
       outputLetNav.push('>'+tree[j].title+'</a></li>')
     }
@@ -281,6 +283,7 @@ function eraseCookie(name) {
     createCookie(name,"",-1);
 }
 
+
 if (readCookie("night") == "true") {
   applyNight();
   $('#switch-style').prop('checked', true);
@@ -288,6 +291,7 @@ if (readCookie("night") == "true") {
   applyDay();
   $('#switch-style').prop('checked', false);
 }
+
 
 
 

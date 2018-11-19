@@ -5,9 +5,9 @@ horizontalnav:
 - title: Get Started
   path: /wGetStarted/Creating-with-INTERJECT_61702187.html
   node: getstarted
-- title: Api
+- title: Developer
   path: /wApi/SampleApiProject.html
-  node: api
+  node: Developer
 - title: Design
   path: /wDesign/How-formate-excel.html
   node: design
@@ -28,15 +28,13 @@ design:
 
 about:
 - sectiontitle: INTERJECT Data Systems 
-  path: /wAbout/INTERJECT-Data-Systems_61702176.html
+  path: /
   section:
   - sectiontitle: What Does INTERJECT Do?
     path: /wAbout/61702415.html
     section:
     - title: Real World Use Cases
       path: /wAbout/Real-World-Use-Cases_61702417.html
-    - title: Index
-      path: /
     - title: Why CFO's Like INTERJECT
       path: /wAbout/Why-CFOs-Like-INTERJECT_61702437.html
     - title: Why CIO's Like INTERJECT
@@ -284,6 +282,6 @@ portal:
 
 
    
-api:
-- title: Api
+Developer:
+- title: Developer
   path: /wApi/SampleApiProject.html
