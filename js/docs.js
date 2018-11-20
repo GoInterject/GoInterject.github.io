@@ -58,8 +58,6 @@ function findMyTopic(tree){
       // first check branch itself <NOTE> we need to do this because our header sections are links
       if (branch[k].path == pageURL && !branch[k].nosync){
         thisIsIt = true;
-        console.log(">>-->> (", thisIsIt, ")  ", branch[k].path + ' was == ' + pageURL)
-        thisIsIt = true;
         break;
       }
   
@@ -79,10 +77,8 @@ function findMyTopic(tree){
 
   var thisIsIt = false;
 
-  console.log(">>TREE>> ", tree, "   pageurl = ", pageURL);
   processBranch(tree);
 
-  console.log("result = ", thisIsIt);
   return thisIsIt;
 }
 
@@ -97,9 +93,12 @@ function walkTree(tree)
         // One thing I noticed is that the "collapsed" class is set on build, but not altered during the navclick() operation
         // -TWS
 
-        console.log("1 >>PATH> ", tree[j].path, "  found ");
         var sectionHasPath = findMyTopic(tree[j].section);
-        console.log("2 >>PATH> ", tree[j].path, "  found ", sectionHasPath);
+
+        if (tree[j].path && tree[j].path == pageURL){
+          sectionHasPath = true;
+        }
+
         var tempTitleNav = new Array();
         var tempCaretNav = new Array();
 
@@ -499,5 +498,3 @@ window.onload = function() {
   }
 };
 
-// console.log("WINDOW DOCNAV >> ", window.docsNav);
-//renderNav(window.docsNav);
