@@ -5,3 +5,6 @@ _site/
 docs.html
 postx.html
 attachments/
+Gemfile.lock
+
+.vscode/
