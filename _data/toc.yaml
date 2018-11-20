@@ -5,9 +5,9 @@ horizontalnav:
 - title: Get Started
   path: /wGetStarted/Creating-with-INTERJECT_61702187.html
   node: getstarted
-- title: Api
+- title: Developer
   path: /wApi/SampleApiProject.html
-  node: api
+  node: developer
 - title: Design
   path: /wDesign/How-formate-excel.html
   node: design
@@ -284,6 +284,6 @@ portal:
 
 
    
-api:
-- title: Api
+developer:
+- title: Developer
   path: /wApi/SampleApiProject.html
