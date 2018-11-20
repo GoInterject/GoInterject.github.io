@@ -25,7 +25,7 @@ design:
 - sectiontitle: Designing Reports
   path: /wDesign/Reporting-Design-Standards.html
   section:  
-    title: Designing Excel Reports
+  - title: Designing Excel Reports
     path: /wDesign/Designing-Excel-Reports.html
 
 
