@@ -7,13 +7,9 @@ horizontalnav:
   node: getstarted
 - title: Developer
   path: /wApi/SampleApiProject.html
-<<<<<<< HEAD
-  node: developer
-=======
   node: Developer
->>>>>>> e78d4c6a75589b4fed6a3fff5e57ffb1ba4fbaca
 - title: Design
-  path: /wDesign/How-formate-excel.html
+  path: /wDesign/Reporting-Design-Standards.html
   node: design
 - title: Function Index
   path: /wIndex/Excel-Function-Index_61702197.html
@@ -26,8 +22,11 @@ horizontalnav:
   node: portal
 
 design:
-- title: How Formate Excel
-  path: /wDesign/How-formate-excel.html
+- sectiontitle: Designing Reports
+  path: /wDesign/Reporting-Design-Standards.html
+  section:  
+    title: Designing Excel Reports
+    path: /wDesign/Designing-Excel-Reports.html
 
 
 about:
@@ -286,10 +285,6 @@ portal:
 
 
    
-<<<<<<< HEAD
-developer:
-=======
 Developer:
->>>>>>> e78d4c6a75589b4fed6a3fff5e57ffb1ba4fbaca
 - title: Developer
   path: /wApi/SampleApiProject.html
