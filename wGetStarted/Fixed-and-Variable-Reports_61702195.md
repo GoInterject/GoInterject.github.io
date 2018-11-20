@@ -14,7 +14,7 @@ This page illustrates the process of building a fixed inventory report from scra
 
 ###  [ Lab 3.2 Inventory Variable Report ](/wGetStarted/L3.2-Inventory-Variable-Report_127872532.html)
 
-Using the report seen in the [ Inventory Walk-through ](https://interject.atlassian.net/wiki/spaces/ID/pages/128091499/L2+Inventory+Reports) , this illustrates how ReportVariable() can provide all the data for each section in the report I **nventory By Category with Detail** . 
+Using the report seen in the [ Inventory Walk-through ](https://interject.atlassian.net/wiki/spaces/ID/pages/128091499/L2+Inventory+Reports) , this illustrates how ReportVariable() can provide all the data for each section in the report **Inventory By Category with Detail** . 
 
 ###  [ Lab 3.3 Financial Variable ](/wGetStarted/L3.3-Financial-Variable_128421724.html)
 

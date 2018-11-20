@@ -4,7 +4,7 @@ layout: custom
 ---
 * * *
 
-##  ** Overview  **
+##  **Overview**
 
 This lab is for controllers or accountants who work with financial data and spreadsheets. In this walk-through, you will open a Profit and Loss (PL) Trend report and drill into the supporting detail from the general ledger detail. The Journal Entry (JE) Query report will provide you account level detail and will allow for drills further into each journal entry. 
 

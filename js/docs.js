@@ -47,30 +47,47 @@ var outputLetNav = new Array();
 var totalTopics = 0;
 var currentSection;
 var sectionToHighlight;
-function findMyTopic(tree)
-{
-  function processBranch(branch)
-  {
-    for (var k=0;k<branch.length;k++)
-    {
-      if (branch[k].section) {
-        processBranch(branch[k].section);
-      } else {
-        if (branch[k].path == pageURL && !branch[k].nosync)
-        {
-          // console.log(branch[k].path + ' was == ' + pageURL)
-          thisIsIt = true;
-          break;
-        } else {
-          // console.log(branch[k].path + ' was != ' + pageURL)
-        }
+
+
+
+function findMyTopic(tree){
+
+  function processBranch(branch){
+
+    // check sub pages in section
+    for (var k=0;k<branch.length;k++){
+  
+      // first check branch itself <NOTE> we need to do this because our header sections are links
+      if (branch[k].path == pageURL && !branch[k].nosync){
+        thisIsIt = true;
+        console.log(">>-->> (", thisIsIt, ")  ", branch[k].path + ' was == ' + pageURL)
+        thisIsIt = true;
+        break;
       }
+  
+      if (branch[k].path == pageURL && !branch[k].nosync){
+        // console.log(branch[k].path + ' was == ' + pageURL)
+        thisIsIt = true;
+        break;
+      }  else {
+        // else recurse through branch
+        if (branch[k].section) {
+          processBranch(branch[k].section);
+        } 
+      }
+      
     }
   }
+
   var thisIsIt = false;
-  processBranch(tree)
+
+  console.log(">>TREE>> ", tree, "   pageurl = ", pageURL);
+  processBranch(tree);
+
+  console.log("result = ", thisIsIt);
   return thisIsIt;
 }
+
 function walkTree(tree)
 {
   for (var j=0;j<tree.length;j++)
@@ -82,23 +99,22 @@ function walkTree(tree)
         // One thing I noticed is that the "collapsed" class is set on build, but not altered during the navclick() operation
         // -TWS
 
+        console.log("1 >>PATH> ", tree[j].path, "  found ");
         var sectionHasPath = findMyTopic(tree[j].section);
+        console.log("2 >>PATH> ", tree[j].path, "  found ", sectionHasPath);
         var tempTitleNav = new Array();
         var tempCaretNav = new Array();
 
         outputLetNav.push('<li style="overflow-wrap: break-word; overflow:hidden;">');
-
         tempCaretNav.push('<a onclick="navClicked(' + totalTopics + ')" data-target="#item' + totalTopics + '" data-toggle="collapse" data-parent="#stacked-menu" style="float:right;"');
-       
-        tempTitleNav.push('<a href="' + tree[j].path + '" onclick="navClicked(' + totalTopics + ')" data-target="#item' + totalTopics + '" data-toggle="collapse" data-parent="#stacked-menu" style="float:left;width:60%;word-wrap: break-word;"');
+        tempTitleNav.push('<a href="' + tree[j].path + '" style="float:left;width:60%;word-wrap: break-word;"');
 
-      if (sectionHasPath)
-      {
-          tempCaretNav.push('aria-expanded="false"');
-          tempTitleNav.push('class="nocaret" aria-expanded="false"');
+      if (sectionHasPath){
+          tempCaretNav.push('aria-expanded="true"');
+          tempTitleNav.push('class="nocaret active currentPage" aria-expanded="true"');
       } else {
-          tempCaretNav.push('class="collapsed" aria-expanded="true"');
-          tempTitleNav.push('class="collapsed nocaret" aria-expanded="true"');
+          tempCaretNav.push('class="collapsed" aria-expanded="false"');
+          tempTitleNav.push('class="nocaret" aria-expanded="false"');
       }
       tempCaretNav.push('><span class="caret arrow"></span></a>');
       tempTitleNav.push('>' + tree[j].sectiontitle + '</a><br style="clear:both;">');
@@ -107,10 +123,11 @@ function walkTree(tree)
       outputLetNav.push(tempTitleNav.join(''));
 
       outputLetNav.push('<ul class="nav collapse');
-      if (sectionHasPath) outputLetNav.push(' in');
+      if (sectionHasPath) {
+        outputLetNav.push(' in');
+      }
       outputLetNav.push('" id="#item' + totalTopics + '" aria-expanded="');
-      if (sectionHasPath)
-      {
+      if (sectionHasPath){
         outputLetNav.push('true');
       } else {
         outputLetNav.push('false');
@@ -121,23 +138,24 @@ function walkTree(tree)
       outputLetNav.push('</ul></li>');
     } else if (tree[j].generateTOC) {
       // auto-generate a TOC from a collection
-      walkTree(collectionsTOC[tree[j].generateTOC])
+      walkTree(collectionsTOC[tree[j].generateTOC]);
     } else {
+      
       // just a regular old topic; this is a leaf, not a branch; render a link!
-      outputLetNav.push('<li><a href="' + tree[j].path + '"')
+      outputLetNav.push('<li><a href="' + tree[j].path + '"');
       if (tree[j].path == pageURL && !tree[j].nosync)
       {
         sectionToHighlight = currentSection;
-        outputLetNav.push('class="active currentPage nocaret"')
+        outputLetNav.push('class="active currentPage nocaret" aria-expanded="true"');
       } else {
-        outputLetNav.push('class="nocaret"')
+        outputLetNav.push('class="nocaret"');
       }
-      outputLetNav.push('>'+tree[j].title+'</a></li>')
+      outputLetNav.push('>'+tree[j].title+'</a></li>');
     }
   }
 }
+
 function renderNav(docstoc) {
-  // console.log('docstoc', docstoc)
   for (i=0;i<docstoc.horizontalnav.length;i++)
   {
     if (docstoc.horizontalnav[i].node != "glossary")
@@ -152,7 +170,7 @@ function renderNav(docstoc) {
       // }
     }
 
-    console.log(outputLetNav)
+    // console.log(outputLetNav)
     // build horizontal nav
     outputHorzTabs.push('<li id="' + docstoc.horizontalnav[i].node + '"');
     if (docstoc.horizontalnav[i].path==pageURL || docstoc.horizontalnav[i].node==sectionToHighlight)
@@ -174,9 +192,8 @@ function renderNav(docstoc) {
     }
     // either glossary was true or no left nav has been built; default to glossary
     // show pages tagged with term and highlight term in left nav if applicable
-    renderTagsPage()
-    for (var i=0;i<glossary.length;i++)
-    {
+    renderTagsPage();
+    for (var i=0;i<glossary.length;i++){
       var highlightGloss = '';
       if (tagToLookup) highlightGloss = (glossary[i].term.toLowerCase()==tagToLookup.toLowerCase()) ? ' class="active currentPage"' : '';
       outputLetNav.push('<li><a'+highlightGloss+' href="/glossary/?term=' + glossary[i].term + '">'+glossary[i].term+'</a></li>');
@@ -488,4 +505,5 @@ window.onload = function() {
 };
 // console.log(window.docsNav)
 
-renderNav(window.docsNav)
+console.log("WINDOW DOCNAV >> ", window.docsNav);
+renderNav(window.docsNav);
