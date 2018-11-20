@@ -7,7 +7,11 @@ horizontalnav:
   node: getstarted
 - title: Developer
   path: /wApi/SampleApiProject.html
+<<<<<<< HEAD
   node: developer
+=======
+  node: Developer
+>>>>>>> e78d4c6a75589b4fed6a3fff5e57ffb1ba4fbaca
 - title: Design
   path: /wDesign/How-formate-excel.html
   node: design
@@ -22,21 +26,19 @@ horizontalnav:
   node: portal
 
 design:
-- title: How Formate E xcel
+- title: How Formate Excel
   path: /wDesign/How-formate-excel.html
 
 
 about:
 - sectiontitle: INTERJECT Data Systems 
-  path: /wAbout/INTERJECT-Data-Systems_61702176.html
+  path: /
   section:
   - sectiontitle: What Does INTERJECT Do?
     path: /wAbout/61702415.html
     section:
     - title: Real World Use Cases
       path: /wAbout/Real-World-Use-Cases_61702417.html
-    - title: Index
-      path: /
     - title: Why CFO's Like INTERJECT
       path: /wAbout/Why-CFOs-Like-INTERJECT_61702437.html
     - title: Why CIO's Like INTERJECT
@@ -284,6 +286,10 @@ portal:
 
 
    
+<<<<<<< HEAD
 developer:
+=======
+Developer:
+>>>>>>> e78d4c6a75589b4fed6a3fff5e57ffb1ba4fbaca
 - title: Developer
   path: /wApi/SampleApiProject.html
