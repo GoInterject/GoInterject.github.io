@@ -1,0 +1,472 @@
+
+<!-- Page generated 2018-11-21 14:32:27 -0800 -->
+<!-- relative link basehrefs -->
+
+	
+	
+	
+		
+			
+		
+	
+		
+			
+			
+
+
+<!-- Logic for 'edit this button' -->
+
+
+
+<!-- End of logic for 'edit this button' -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<base href="/wGetStarted/" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<style id="page_style" type="text/css">
+		@charset "UTF-8";
+		[ng\:cloak],
+		[ng-cloak],
+		[data-ng-cloak],
+		[x-ng-cloak],
+		.ng-cloak,
+		.x-ng-cloak,
+		.ng-hide:not(.ng-hide-animate) {
+			display: none !important;
+		}
+
+		ng\:form {
+			display: block;
+		}
+	</style>
+
+	<!--
+	<script type="text/javascript">
+	  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
+	  analytics.load("IWj9D0UpZHZdZUZX9jl98PcpBFWBnBMy");
+	  analytics.page();
+	  }}();
+	</script>
+	-->
+	
+	<!-- favicon -->
+	<link rel="icon" type="image/x-icon" href="/favicons/docs@2x.ico" sizes="129x128">
+	<meta name="msapplication-TileImage" content="/favicons/docs@2x.ico">
+	<link rel="apple-touch-icon" type="image/x-icon" href="/favicons/docs@2x.ico" sizes="129x128">
+	<meta property="og:image" content="/favicons/docs@2x.ico"/>
+	<!-- metadata -->
+	
+
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css">
+	<link id="pagestyle" rel="stylesheet" href="/css/style.css">
+
+	<!-- Go get "Open Sans" font from Google -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	
+	
+	
+
+</head>	
+
+<body id="main_body" class="colums">
+	
+
+	<header>
+		 <nav class="nav-secondary navbar navbar-fixed-top">
+    <!-- <div class="fan"></div> -->
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="/"><img class="logo" src="/images/site-logo.png" alt="Interject Docs" title="Interject Docs"></a>
+        </div>
+        <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+            <div class="search-form" id="search-div" >
+    <form class="search-form form-inline ng-pristine ng-valid" id="searchForm" action="/search/">
+        <input class="search-field form-control ds-input" id="st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;">
+        <div id="autocompleteContainer">
+            <div id="autocompleteResults"></div>
+        </div>
+        <!-- <button type="submit" class="search-submit btn btn-default">Search</button> -->
+    </form>
+</div>
+<div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <div id="tabs">
+        <ul class="tabs" id="jsTOCHorizontal">
+
+        </ul>
+    </div>
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div class="btn-group" style="visibility: hidden">
+  <button type="button" class="btn btn-default dropdown-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    
+  </ul>
+</div>
+
+    </div>
+</div>
+
+        </div>
+    </div>
+</nav>
+	</header>
+
+	
+
+	<!-- nav bar -->
+	<div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							
+								
+							<h1>Interject Documentation > Excel Best and Worst Practices</h1> 
+									 
+									
+									<span class="reading-time" title="Estimated reading time">
+  <span class="reading-time-label">Estimated reading time: </span>
+  
+  
+    5 minutes
+  
+</span>
+
+									
+							
+							
+							<hr />
+
+<h2 id="overview"><strong>Overview</strong></h2>
+
+<p>INTERJECT is an add-in that greatly extends the feature set of Microsoft Excel. However, there are still limits within Excel. This section covers considerations related to creating complex or large reports. If uncareful, there could be long wait times, overly large files, or other issues that may disrupt the workflow.</p>
+
+<p>Since each worksheet has 1,048,576 rows and 16,384 available columns, there are 17,179,869,184 (17 billion) cells. Add in formatting, complex formulas and conditional formatting, and it is easy to see how such an open design can overtax desktop performance and cause problems.</p>
+
+<p>Excel performance can be affected, depending on the complexity of a report and the Excel features you use. For example, the grouping feature can significantly reduce the amount of data that can be handled practically in Excel. The same is true if there are many complex conditional formats. Even regular formulas can degrade performance. Nested If() functions or using the Ifs() function impact processing if there are many conditions to evaluate.</p>
+
+<h3 id="think-of-excel-as-a-better-browser">Think of Excel as a Better Browser</h3>
+
+<p>Excel is a terrific and flexible tool, and to make the best use of it in your daily work, think of it less as a database and more as an interface. Instead of importing 500,000 rows into a spreadsheet to support a pivot table or other type of summary report, the INTERJECT platform makes it easier for you to access only the top level of the data you need. When designing a report, it is best to curate the user experience as if you are building a website application. For example, a summary view of 50 records that can drill to additional detail would be more manageable than a long scroll of 100,000 detail records. The example below illustrates this point further.</p>
+
+<p>Example:  In the screenshot below, you have a list of 20,000 records. You can filter the data, but there is an easier way.</p>
+
+<p><img src="attachments/324567041/326467650.jpg" alt="" /></p>
+
+<p>The user can filter the data like in the screenshot below, but there could be an easier way.</p>
+
+<p><img src="attachments/324567041/326565994.jpg" alt="" /></p>
+
+<p>The next screenshot shows an alternative, a drill action to a summary report, created by an INTERJECT developer to give users easier access to viewing the details of the 20,000 records.</p>
+
+<p><img src="attachments/324567041/326303792.jpg" alt="" /></p>
+
+<p>This screenshot shows the summary report, which is a simpler way to find the data meanwhile having a more complex presentation.</p>
+
+<p><img src="attachments/324567041/326402214.jpg" alt="" /></p>
+
+<h3 id="record-counts">Record Counts</h3>
+
+<p>Depending on the desktop memory and CPU, it is feasible to import 400,000+ records with INTERJECT if the report is not complex. However, the INTERJECT design is focused on a high degree of flexibility, where the report can be tailored to the user experience. In some reports, displaying 20,000 records is not practical to work with. You may appreciate the smaller row counts when you can drill to the underlying detail when needed. This also speeds up your user experience.</p>
+
+<p>Similar to most website applications, you typically process only a few hundred rows before drilling to additional detail. Consider leveraging the same workflow design experience as you would when designing a website application. This helps create an interface where your users have the ideal size of data to work with.</p>
+
+<h3 id="conditional-formatting">Conditional Formatting</h3>
+
+<p>Conditional formatting can not only be difficult to manage because the formulas are not as visible, but it also adds processing for Excel. To reduce the complexity of conditional formatting configure the formula logic in the spreadsheet with a True/False result. Then you can use <strong>A5 = True</strong> as a simple formula in the conditional formatting to define the required formats. This best practice helps performance by applying conditional formatting to an organized structure of ranges instead of disparate ranges that may duplicate calculations. It is beneficial to keep the conditional formulas organized. It is also helpful to use them in moderation. Conditional formats are not initially visible, so using them can quickly get out of control.</p>
+
+<h3 id="limiting-the-ranges-used-in-interject-report-formulas">Limiting the Ranges used in Interject Report Formulas</h3>
+
+<p>In most reports, selecting the entire row for Column Definitions in <a href="/wIndex/61702199.html"> ReportRange() </a> is fast and easy. However, when using larger, more complex reports, it is better only to include the columns needed for the report.</p>
+
+<p>In the below example, ReportRange() selects column definitions and a target range that selects the entire row.</p>
+
+<p><img src="attachments/324567041/326533182.jpg?width=720" alt="" /></p>
+
+<p>The next example shows the same report, but only the impacted columns are included in the column definitions and target range. This is more efficient. However, keep in mind the argument for <a href="/wIndex/61702199.html"> ReportRange() </a> , UseEntireRow is set to False. By setting to True, it converts the ranges to entire rows.</p>
+
+<p><img src="attachments/324567041/326533187.jpg?width=720" alt="" /></p>
+
+<p>Here you will use the scroll bar in the function wizard to alter the UseEntireRow parameter.</p>
+
+<p><img src="attachments/324567041/326369340.jpg?width=720" alt="" /></p>
+
+<h3 id="watch-for-the-last-row-and-last-column">Watch for the Last Row and Last Column</h3>
+
+<p>Sometimes developers accidently use the last cell of the 1,048,576 rows that Excel provides or write a value in the last of the 16,384 columns that is also available. When this happens, the range in use expands to a large range of cells that uses more memory and expands the work area, which can hinder performance. To improve performance, delete all rows and columns beyond the reporting area.</p>
+
+<h3 id="vba-macros">VBA Macros</h3>
+
+<p>Using VBA (Visual Basic for Applications) can bridge a special feature or process gap in a report, but it is important to use VBA sparingly and to avoid adding to the resources needed for processing spreadsheet reports and using applications . VBA can add to maintenance requirements over time, and it can be hard to control versions when users copy reports to their local drives. It is possible to leverage VBA with INTERJECT. These are special use cases that hopefully will become obsolete as more features are added to INTERJECT. We welcome any questions in this area so that we can add more functionality to limit the need for VBA.</p>
+
+							<!-- tags -->
+							
+							
+							
+							
+							
+							<!-- link corrections -->
+              <script language="JavaScript">
+							var x = document.links.length;
+							var baseHref = document.getElementsByTagName('base')[0].href
+							for (i = 0; i < x; i++) {
+							  var munged = false;
+							  var thisHREF = document.links[i].href;
+							  var originalURL = "/wGetStarted/Excel-Best-and-Worst-Practices_324567041.html";
+							  if (thisHREF.indexOf(baseHref + "#") > -1) {
+							    // hash fix
+							    //console.log('BEFORE: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							    thisHREF = originalURL + thisHREF.replace(baseHref, "");
+							    //console.log('AFTER: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							  }
+							  if ((thisHREF.indexOf(window.location.hostname) > -1 || thisHREF.indexOf('http') == -1) && document.links[i].className.indexOf("nomunge") < 0) {
+							    munged = true;
+							    thisHREF = thisHREF.replace(".md", "/").replace("/index/", "/");
+							    document.links[i].setAttribute('href', thisHREF);
+							  }
+							}
+							</script>
+							
+						  <div id="ratings-div" style="color:#b9c2cc; text-align: center; margin-top: 150px; visibility: hidden">
+								<div id="pd_rating_holder_8453675"></div>
+								<script type="text/javascript">
+									PDRTJS_settings_8453675 = {
+										"id": "8453675",
+										"unique_id": "wGetStarted/Excel-Best-and-Worst-Practices_324567041.md",
+										"title": "Interject Documentation > Excel Best and Worst Practices",
+										"permalink": "https://github.com/gointerject/gointerject.github.io/blob/master/wGetStarted/Excel-Best-and-Worst-Practices_324567041.md"
+									};
+									(function(d, c, j) {
+										if (!document.getElementById(j)) {
+											var pd = d.createElement(c),
+												s;
+											pd.id = j;
+											pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
+											s = document.getElementsByTagName(c)[0];
+											s.parentNode.insertBefore(pd, s);
+										}
+									}(document, 'script', 'pd-rating-js'));
+								</script>
+							</div>
+							
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						<div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+    </ul>
+</div>
+
+						</div>
+					</nav>
+					<div class="col-toc">
+							<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										
+                                            <li style="visibility: show">
+                                                <a href="https://github.com/gointerject/gointerject.github.io/edit/master/wGetStarted/Excel-Best-and-Worst-Practices_324567041.md">
+                                                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit this page
+                                                </a>
+                                            </li>
+                                        
+										<li><a href="https://github.com/gointerject/gointerject.github.io/issues/new?body=File: [wGetStarted/Excel-Best-and-Worst-Practices_324567041.md](https://docs.gointerject.com/wGetStarted/Excel-Best-and-Worst-Practices_324567041.html)"
+															class="nomunge"><i class="fa fa-check" aria-hidden="true"></i> Request docs changes</a></li>
+										<li><a href="http://www.gointerject.com/call-us/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<!-- toggle mode -->
+										<!-- Turn night mode on and off
+										<li>
+											<div class="toggle-mode">
+												<div class="icon">
+													<i class="fa fa-sun-o" aria-hidden="true"></i>
+												</div>
+												<div class="toggle-switch">
+													<label class="switch">
+														<input type="checkbox" id="switch-style">
+														<div class="slider round"></div>
+												</label>
+												</div>
+												<div class="icon">
+													<i class="fa fa-moon-o" aria-hidden="true"></i>
+												</div>
+											</div>
+										</li>
+										-->
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="/wGetStarted/Excel-Best-and-Worst-Practices_324567041.html#overview" class="nomunge">Overview</a>
+    <ul>
+      <li><a href="/wGetStarted/Excel-Best-and-Worst-Practices_324567041.html#think-of-excel-as-a-better-browser" class="nomunge">Think of Excel as a Better Browser</a></li>
+      <li><a href="/wGetStarted/Excel-Best-and-Worst-Practices_324567041.html#record-counts" class="nomunge">Record Counts</a></li>
+      <li><a href="/wGetStarted/Excel-Best-and-Worst-Practices_324567041.html#conditional-formatting" class="nomunge">Conditional Formatting</a></li>
+      <li><a href="/wGetStarted/Excel-Best-and-Worst-Practices_324567041.html#limiting-the-ranges-used-in-interject-report-formulas" class="nomunge">Limiting the Ranges used in Interject Report Formulas</a></li>
+      <li><a href="/wGetStarted/Excel-Best-and-Worst-Practices_324567041.html#watch-for-the-last-row-and-last-column" class="nomunge">Watch for the Last Row and Last Column</a></li>
+      <li><a href="/wGetStarted/Excel-Best-and-Worst-Practices_324567041.html#vba-macros" class="nomunge">VBA Macros</a></li>
+    </ul>
+  </li>
+</ul>
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- The Modal for viewing images -->
+	<div id="modal-main" class="modal" >
+		<img class="modal-content nohover" id="modal-img" style="padding-top: 3%;"/>
+		<span class="close-modal" style="padding-top: 3%;">
+			<i class="fa fa-times-circle fa-1x"></i>
+		</span>
+	</div>
+
+	
+	<footer class="footer">
+		  
+    <div class="container">
+        <div id="footerdiv" class="top_footer">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><h4>GENERAL</h4></li>
+                        <li><a href="http://www.gointerject.com">INTERJECT HOME</a></li>
+                        <li><a href="http://www.gointerject.com/#whatwedobest">WHAT WE DO BEST</a></li>
+                        <li><a href="https://gointerject.com/#benefitsyoucanbankon">BENFITS</a></li>
+                        <li><a href="https://gointerject.com/#whatourclientssay">WHAT OUR CLIENTS SAY</a></li>
+                        <li><a href="https://gointerject.com/#upcomingevents">UPCOMING EVENTS</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://gointerject.com/#whatmatterstous"><h4>WHAT MATTERS TO US</h4> </a></li>
+                        <li><a href="https://gointerject.com/helping-you-master-technology/">Mastering Technology</a></li>
+                        <!--<li><a href="https://gointerject.com/helping-you-master-technology/">Attend Next Event</a></li>-->
+                        <li><a href="https://gointerject.com/helping-you-master-technology/learn-on-your-own/">Learn On Your Own</a></li>
+                        <li><a href="http://www.gointerject.com/kids-coding-clubs/">Kids Coding Club</a></li>
+                        <li><a href="http://www.gointerject.com/helping-you-master-technology/">Tech Talks</a></li> 
+                        <!-- <li><a href="http://www.gointerject.com/#whatwedobest">Reserve Your Spot</a></li> -->
+                        <li><a href="https://gointerject.com/kids-coding-clubs/start-your-own-club/">Start Your Own Club</a></li>
+                        <!-- <li><a href="https://gointerject.com/#whatmatterstous">Never Standing Still</a></li>  -->
+                        <li><a href="https://gointerject.com/never-stand-still-blog/">Our Blog</a></li> 
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><h4>YOUR TEAM</h4></li>
+                        <li><a href="https://gointerject.com/meet-us/">Meet Us</a></li>
+                        <li><a href="https://gointerject.com/join-us/">Join Us</a></li>
+                        <li><a href="https://gointerject.com/call-us/">Call Us</a></li>
+                        <li><h4>SUPPORT</h4></li>
+                        <li><a href="">Wiki / FAQ</a><span style="font-size:10px;padding-left: 7px;">(Coming Soon)</span></li>
+                        <li><a href="">For Developers</a><span style="font-size:10px;padding-left: 7px;">(Coming Soon)</span></li>
+                        <!-- <li class="break"></li> -->
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><h4>CONTACT INFO</h4></li>
+                        <li><strong>Office:</strong> (855) 546-0036</li>
+                        <li><strong>Fax:</strong>  (360) 838-9459</li>
+                        <li><strong>Address:</strong> 1404 NE 134th St. Suite 200, </li>
+                        <li>Vancouver, WA 98685</li> 
+                        <li><strong>E-mail:</strong> info@gointerject.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- ****** This Section is setup for 'the fine text' links ****** -->
+            <!--
+            <div class="footer-nav">
+                <nav class="footer_sub_nav">
+                    <ul class="menu">
+                        <li><a href="">Status</a></li>
+                        <li><a href="">Security</a></li>
+                        <li><a href="">Legal</a></li>
+                    </ul>
+                </nav>
+            </div>
+            -->
+        </div>
+        <div class="bottom_footer">
+            <div class="footer-copyright col-xs-12 col-md-8">
+                <p class="copyright">
+                    Copyright © 2018 INTERJECT Inc. All Rights Reserved.
+                </p>
+            </div>
+            <div class="footer_social_nav">
+                <ul class="nav-social">
+                    <li class="fa fa-twitter"><a href="http://twitter.com/gointerject">Twitter</a></li>
+                    <li class="fa fa-youtube"><a href="http://www.youtube.com/user/gointerject">Youtube</a></li> 
+                    <li class="fa fa-github"><a href="https://github.com/gointerject">Github</a></li>
+                    <li class="fa fa-linkedin"><a href="https://www.linkedin.com/company/gointerject">Linkedin</a></li>
+                    <li class="fa fa-facebook"><a href="https://www.facebook.com/gointerject">Facebook</a></li>  
+                </ul>
+            </div>
+        </div>
+    </div>
+
+	</footer>
+	<link rel="stylesheet" href="/css/github.css">
+	
+	<!-- <script src="/js/anchorlinks.js"></script> -->
+	<script defer src="/js/menu.js"></script>
+	<script src="/js/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<!-- Always include the archive.js, but it doesn't do much unless we are an archive -->
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var interjectVersion = 'v';
+	// In archives, we need to know the page root and we get it from JEKYLL_ENV in the jekyll build command
+	var jekyllEnv = 'development';
+	// If unset (in non-archive branches), defaults to "development". In that case, reset it to empty
+	if (jekyllEnv == 'development') {
+		jekyllEnv = '';
+	}
+	var pageURL = jekyllEnv + '/wGetStarted/Excel-Best-and-Worst-Practices_324567041.html';
+	</script>
+	<script src="/js/archive.js"></script>
+	<script src="/js/stickyfill.min.js"></script>
+	<script defer src="/js/metadata.js"></script>
+	<script src="/js/glossary.js"></script>
+	<script src="/js/collections_tocs.js"></script>
+	<script defer src="/js/docs.js"></script>
+	<script defer src="/js/toc.js"></script>
+	<script defer src="/js/stylemod.js"></script>
+	<script language="javascript">
+	jQuery(document).ready(function(){
+				hookupTOCEvents();
+			});
+	</script>
+</body>
+
+</html>

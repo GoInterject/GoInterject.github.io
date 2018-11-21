@@ -1,0 +1,593 @@
+
+<!-- Page generated 2018-11-21 14:32:27 -0800 -->
+<!-- relative link basehrefs -->
+
+	
+	
+	
+		
+			
+		
+	
+		
+			
+			
+
+
+<!-- Logic for 'edit this button' -->
+
+
+
+<!-- End of logic for 'edit this button' -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<base href="/wGetStarted/" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<style id="page_style" type="text/css">
+		@charset "UTF-8";
+		[ng\:cloak],
+		[ng-cloak],
+		[data-ng-cloak],
+		[x-ng-cloak],
+		.ng-cloak,
+		.x-ng-cloak,
+		.ng-hide:not(.ng-hide-animate) {
+			display: none !important;
+		}
+
+		ng\:form {
+			display: block;
+		}
+	</style>
+
+	<!--
+	<script type="text/javascript">
+	  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
+	  analytics.load("IWj9D0UpZHZdZUZX9jl98PcpBFWBnBMy");
+	  analytics.page();
+	  }}();
+	</script>
+	-->
+	
+	<!-- favicon -->
+	<link rel="icon" type="image/x-icon" href="/favicons/docs@2x.ico" sizes="129x128">
+	<meta name="msapplication-TileImage" content="/favicons/docs@2x.ico">
+	<link rel="apple-touch-icon" type="image/x-icon" href="/favicons/docs@2x.ico" sizes="129x128">
+	<meta property="og:image" content="/favicons/docs@2x.ico"/>
+	<!-- metadata -->
+	
+
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css">
+	<link id="pagestyle" rel="stylesheet" href="/css/style.css">
+
+	<!-- Go get "Open Sans" font from Google -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	
+	
+	
+
+</head>	
+
+<body id="main_body" class="colums">
+	
+
+	<header>
+		 <nav class="nav-secondary navbar navbar-fixed-top">
+    <!-- <div class="fan"></div> -->
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="/"><img class="logo" src="/images/site-logo.png" alt="Interject Docs" title="Interject Docs"></a>
+        </div>
+        <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+            <div class="search-form" id="search-div" >
+    <form class="search-form form-inline ng-pristine ng-valid" id="searchForm" action="/search/">
+        <input class="search-field form-control ds-input" id="st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;">
+        <div id="autocompleteContainer">
+            <div id="autocompleteResults"></div>
+        </div>
+        <!-- <button type="submit" class="search-submit btn btn-default">Search</button> -->
+    </form>
+</div>
+<div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <div id="tabs">
+        <ul class="tabs" id="jsTOCHorizontal">
+
+        </ul>
+    </div>
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div class="btn-group" style="visibility: hidden">
+  <button type="button" class="btn btn-default dropdown-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    
+  </ul>
+</div>
+
+    </div>
+</div>
+
+        </div>
+    </div>
+</nav>
+	</header>
+
+	
+
+	<!-- nav bar -->
+	<div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							
+								
+							<h1>Interject Documentation > L3.4 Customer Aging Detail</h1> 
+									 
+									
+									<span class="reading-time" title="Estimated reading time">
+  <span class="reading-time-label">Estimated reading time: </span>
+  
+  
+    8 minutes
+  
+</span>
+
+									
+							
+							
+							<hr />
+
+<h2 id="overview"><strong>Overview</strong></h2>
+
+<p>This example uses the <a href="/wAbout/Customer-Aging_128091294.html"> Customer Aging </a> demo to show the creation of a Customer Aging Detail report that will have variable customer subtotaled sections, each having their respective invoice detail. You will use both the <a href="/wIndex/61702199.html"> ReportRange() </a> and <a href="/wIndex/61702201.html"> ReportVariable() </a> formulas to create the output.</p>
+
+<p>Jump to any section of this walk-through by clicking the links below.</p>
+
+<ul>
+  <li>
+    <h4 id="building-the-report">Building the Report</h4>
+  </li>
+  <li>
+    <h4 id="reportrange">ReportRange()</h4>
+  </li>
+  <li>
+    <h4 id="reportvariable">ReportVariable()</h4>
+  </li>
+</ul>
+
+<p>###</p>
+
+<h3 id="building-the-report-1">Building the Report</h3>
+
+<p><strong>Step 1:</strong> You will begin by using INTERJECT’s **<a href="/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html"> Report Builder </a> ** to make a template for the report. Select NorthwindCustomers Data Portal and choose **<a href="https://interject.atlassian.net/wiki/content-only/viewpage.action?pageId=83689479&amp;iframeId=fallback-mode&amp;user_key=ff8080814d41a454014d440734dd0001&amp;user_id=MariaH&amp;xdm_e=https://interject.atlassian.net/&amp;xsm_c=fallback-mode-fake-key__322604369852205&amp;cp=/wiki&amp;cv=0.0.0-fallback-mode&amp;lic=none#InterjectRibbonMenuItems-ReportBuilder"> Build Report Formula </a> ** to build the report.</p>
+
+<p><img src="attachments/128429387/129273217.png" alt="" /></p>
+
+<p>When the template is complete, it should look like the one below.</p>
+
+<p><img src="attachments/128429387/129178799.png" alt="" /></p>
+
+<p><strong>Step 2:</strong> Now that you have the template, clear row 19, <strong>IsMissingCRMID</strong> , because it is not needed it for this report.</p>
+
+<p><img src="attachments/128429387/129476273.png" alt="" /></p>
+
+<p><strong>Step 3:</strong> Since you deleted one of the formula’s parameters, you have to make sure you also delete it from the ReportRange function in C6. Select cell C6 and delete <strong>C19</strong> from the formula. Also, type <strong>Market</strong> in C16 so you can limit the data presented to only a few records as you are constructing the report.</p>
+
+<p><img src="attachments/128429387/129178955.png" alt="" /></p>
+
+<p>Now the parameters are set and should only reference cells C16, C17, and C18 as shown below.</p>
+
+<p><img src="attachments/128429387/129178907.png" alt="" /></p>
+
+<h3 id="reportrange-1">ReportRange()</h3>
+
+<p><strong>Step 1:</strong> You can select **<a href="https://interject.atlassian.net/wiki/content-only/viewpage.action?pageId=83689479&amp;iframeId=fallback-mode&amp;user_key=ff8080815cbf6513015cc72457760000&amp;user_id=jonathonc@gointerject.com&amp;xdm_e=https://interject.atlassian.net/&amp;xsm_c=fallback-mode-fake-key__667129287809856&amp;cp=/wiki&amp;cv=0.0.0-fallback-mode&amp;lic=none#InterjectRibbonMenuItems-PullData"> Pull Data </a> ** to see which columns are available. Since the ReportRange() function does not have a Column Definition defined, it should show all the columns with their column names.</p>
+
+<p><img src="attachments/128429387/129273246.png" alt="" /></p>
+
+<p>After you pull the report it will look like the one below.</p>
+
+<p><img src="attachments/128429387/129342531.png" alt="" /></p>
+
+<p><strong>Step 2:</strong> Now that you have pulled the data, you can copy the headers you want into the column definitions row. Do this by holding Ctrl and clicking <strong>CustomerID, CompanyName, ContactName,</strong> and <strong>Phone</strong> . Then copy them and paste the values into cell A2. The below animated GIF illustrates the copy process.</p>
+
+<p><img src="attachments/128429387/129272845.gif" alt="" /></p>
+
+<p><strong>Step 3:</strong> For this report, you need to use the multi-row feature illustrated in a previous example. This will be the complete subtotal section that will be repeated for every customer shown. You will insert 6 rows under the <strong>Column Definitions</strong> row 2 and insert 6 rows under the <strong>Formatting Range</strong> row 10. This will give you room to format the report. Each section should have 7 rows beneath it, as shown below.</p>
+
+<p><img src="attachments/128429387/129351723.png" alt="" /></p>
+
+<p><strong>Step 4:</strong> Now you will move the Column Definition values into the correct positions. Move <strong>CustomerID</strong> to cell A5, another copy of <strong>CustomerID</strong> to cell G3, <strong>CompanyName</strong> to cell H3, <strong>ContactName</strong> to L3, and <strong>Phone</strong> to O3. You can also format the width of the columns to best fit the report. Match the following screenshot with the column widths.</p>
+
+<p><img src="attachments/128429387/129272940.png" alt="" /></p>
+
+<p><strong>Step 5:</strong> Before you setup the Column Definitions in the ReportRange() function, it is best to clear the report so the previously pulled data is erased. Use the Pull Data menu item to select the <strong>Clear</strong> button as illustrated below.</p>
+
+<p><img src="attachments/128429387/129273291.png" alt="" /></p>
+
+<p><strong>Step 6:</strong> Next, edit the ReportRange() formula. To access the formula you will select the cell C18 and click <strong>fx</strong> to bring up the Function Wizard.</p>
+
+<p><img src="attachments/128429387/129273319.png" alt="" /></p>
+
+<p>Now add the ColDefRange and the FormatRange. Type <strong>2:8</strong> for the ColDefRange and <strong>10:16</strong> for the FormatRange as shown below. Notice these are encompassing all 7 rows you have for each section.</p>
+
+<p>** <img src="attachments/128429387/129342645.png" alt="" /> <br />
+**</p>
+
+<p><strong>Step 7:</strong> If you re-pull the data, the multi-row format will be repeated for every customer.</p>
+
+<p><img src="attachments/128429387/129273353.png" alt="" /></p>
+
+<p>As seen in the following screenshot, you have 7 rows for each customer. It is not formatted yet, so it will not be clear which this is used for. But you can keep moving on.</p>
+
+<p><img src="attachments/128429387/129273488.png" alt="" /></p>
+
+<p><strong>Step 8:</strong> You can begin setting up the Formatting Range.</p>
+
+<p><img src="attachments/128429387/129344727.png" alt="" /></p>
+
+<p>Give row 10,12,14, and 16 heights of 6.75. The error below illustrates how to drag the row height to get close to 6.75. You can also type in example data in G11, H11. In K11 you can type in a label <strong>Contact</strong> : and <strong>Phone:</strong> in N11. Format both of these to be right-aligned.</p>
+
+<p><img src="attachments/128429387/129408117.png" alt="" /></p>
+
+<p><strong>Step 9:</strong> Now you need to create a formula that will total all of the detail that will later be populated between row 13 and 14. To create a total, type <strong>=SUBTOTAL(9,L13:L14)</strong> in L15. In cell H15 you will type **=”Total Open Invoices For “ &amp; H11”. ** H11 represents the name of the customer, and by linking it to H11, the subtotal line will note the customer name again.</p>
+
+<p><img src="attachments/128429387/129430741.png" alt="" /></p>
+
+<p>After that, you will copy the formula put in cell L15 to cell M15, N15, O15, and P15. These subtotals will be used for the aging buckets that will be setup later in this page. See the example below and adjust the formatting to match.</p>
+
+<p><img src="attachments/128429387/129343885.png" alt="" /></p>
+
+<p><strong>Step 10:</strong> Re-pull the data to make sure it is formatted correctly.</p>
+
+<p><img src="attachments/128429387/129274602.png" alt="" /></p>
+
+<p>The formatting has been copied down to the rest of the report and there are subtotal sections. Now you need to populate the section detail with the customer invoice detail.</p>
+
+<p><img src="attachments/128429387/129274672.png" alt="" /></p>
+
+<p>###</p>
+
+<h3 id="reportvariable-1">ReportVariable()</h3>
+
+<p><strong>Step 1:</strong> In the Report Formula Section, add a new row under row 18.</p>
+
+<p><img src="attachments/128429387/129732460.png" alt="" /></p>
+
+<p><strong>Step 2:</strong> Rename the first pull to <strong>Pull 1 - Customer Sections</strong> (in cell B18) in order to keep track of the report formulas. In cell B19 type in <strong>Pull 2 - Invoices for each section</strong> . The new ReportVariable() will be added to C19 shortly.</p>
+
+<p><img src="attachments/128429387/129283125.png" alt="" /></p>
+
+<p><strong>Step 3:</strong> Because you are adding a new Report Formula, you need a new Column Definition and Formatting Range. The illustration below shows two additional sections added. Please update to match.</p>
+
+<p><img src="attachments/128429387/129404974.png" alt="" /></p>
+
+<p><strong>Step 4:</strong> Since you have ranges and definitions for both of the formulas, you will rename them so you know which formulas they specify. Please update cells A1, A3, A11, and A13 to match the following text.</p>
+
+<p><img src="attachments/128429387/129279308.png" alt="" /></p>
+
+<p><strong>Step 5:</strong> Now you will clear the data to prepare for creating the new formula.</p>
+
+<p><img src="attachments/128429387/129433913.png" alt="" /></p>
+
+<p><strong>Step 6:</strong> To define the second formula, add <strong>=ReportVariable()</strong> to cell C23 and click the fx button. The placement of this formula matters, since you want it to run after the ReportRange(). The <a href="/wIndex/61702199.html"> ReportRange() </a> will be pulled first to provide the list of customer sections, and then the <a href="/wIndex/61702201.html"> ReportVariable() </a> will populate the invoices for each section.</p>
+
+<p><img src="attachments/128429387/129280106.png" alt="" /></p>
+
+<p><strong>Step 7:</strong> Using the Function Wizard, add <strong>NorthwindCustomerInvoices</strong> as the DataPortal.</p>
+
+<p><img src="attachments/128429387/129280436.png" alt="" /></p>
+
+<p><strong>Step 8:</strong> Next, you will specify the new Column Definition and Formatting Range. Type <strong>2:2</strong> into ColDefRange and <strong>12:12</strong> into FormatRange.</p>
+
+<p><img src="attachments/128429387/129345659.png" alt="" /></p>
+
+<p><strong>Step 9:</strong> With a ReportVariable, a RowDefRange is required, since it marks what data is to be included in each section. Type <strong>A43:A44</strong> into the RowDefRange. You will be placing the CustomerID in column A shortly.</p>
+
+<p><img src="attachments/128429387/129282839.png" alt="" /></p>
+
+<p><strong>Step 10:</strong> Now type <strong>Param(C33,C34,C35,””)”</strong> to establish the parameters for the formula that match the previous ReportRange(). Both Report Formulas are setup to use the same filters. Click OK to finish.</p>
+
+<p><img src="attachments/128429387/129282812.png" alt="" /></p>
+
+<p><strong>Step 11:</strong> Before the pull, you need to specify the columns for the invoices that will be included in the detail section. Type <strong>CustomerID</strong> in cell A2, <strong>InvoiceID</strong> in cell B2, <strong>InvoiceNum</strong> in cell I2, <strong>OrderID</strong> in cell J2, <strong>InvoiceDate</strong> in cell K2, <strong>Current</strong> in cell L2, <strong>30Days</strong> in cell M2, <strong>60Days</strong> in cell N2, <strong>90Days</strong> in O2, <strong>ExpectedDate</strong> in R2, and <strong>Note</strong> in T2. Please note that the screenshot below may not show all the characters that need to be typed. Please double check with the last sentence.</p>
+
+<p><img src="attachments/128429387/129344247.png" alt="" /></p>
+
+<p><strong>Step 12:</strong> Once completed, re-pull the data.</p>
+
+<p>** <img src="attachments/128429387/129433946.png" alt="" /> **</p>
+
+<p>After pulling the report you now have invoice detail in each section.</p>
+
+<p><img src="attachments/128429387/129344506.png" alt="" /></p>
+
+<p><strong>Step 13:</strong> You can go a step further and setup the formatting for the invoice detail and add a subtotal formula in row 12.</p>
+
+<p><img src="attachments/128429387/129345215.png" alt="" /></p>
+
+<p>Type <strong>=SUM(L12:O12)</strong> into cell P12 to add the formula for total. You will also change the color on cell R12 and T12.</p>
+
+<p><img src="attachments/128429387/129430786.png" alt="" /></p>
+
+<p><strong>Step 14:</strong> After you add some headers–and move some cells, freeze panes, and formatting–the final product will look like this.</p>
+
+<p><img src="attachments/128429387/129307864.png" alt="" /></p>
+
+<h2 id="related-links">Related Links:</h2>
+
+<p><a href="/wGetStarted/Creating-a-Simple-Report_128408585.html"> Creating a Simple Report </a></p>
+
+<p><a href="https://interject.atlassian.net/wiki/pages/viewpage.action?pageId=61702201"> ReportVariable() </a></p>
+
+<p><a href="/wIndex/61702203.html"> ReportFixed </a></p>
+
+							<!-- tags -->
+							
+							
+							
+							
+							
+							<!-- link corrections -->
+              <script language="JavaScript">
+							var x = document.links.length;
+							var baseHref = document.getElementsByTagName('base')[0].href
+							for (i = 0; i < x; i++) {
+							  var munged = false;
+							  var thisHREF = document.links[i].href;
+							  var originalURL = "/wGetStarted/L3.html";
+							  if (thisHREF.indexOf(baseHref + "#") > -1) {
+							    // hash fix
+							    //console.log('BEFORE: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							    thisHREF = originalURL + thisHREF.replace(baseHref, "");
+							    //console.log('AFTER: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							  }
+							  if ((thisHREF.indexOf(window.location.hostname) > -1 || thisHREF.indexOf('http') == -1) && document.links[i].className.indexOf("nomunge") < 0) {
+							    munged = true;
+							    thisHREF = thisHREF.replace(".md", "/").replace("/index/", "/");
+							    document.links[i].setAttribute('href', thisHREF);
+							  }
+							}
+							</script>
+							
+						  <div id="ratings-div" style="color:#b9c2cc; text-align: center; margin-top: 150px; visibility: hidden">
+								<div id="pd_rating_holder_8453675"></div>
+								<script type="text/javascript">
+									PDRTJS_settings_8453675 = {
+										"id": "8453675",
+										"unique_id": "wGetStarted/L3.md",
+										"title": "Interject Documentation > L3.4 Customer Aging Detail",
+										"permalink": "https://github.com/gointerject/gointerject.github.io/blob/master/wGetStarted/L3.md"
+									};
+									(function(d, c, j) {
+										if (!document.getElementById(j)) {
+											var pd = d.createElement(c),
+												s;
+											pd.id = j;
+											pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
+											s = document.getElementsByTagName(c)[0];
+											s.parentNode.insertBefore(pd, s);
+										}
+									}(document, 'script', 'pd-rating-js'));
+								</script>
+							</div>
+							
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						<div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+    </ul>
+</div>
+
+						</div>
+					</nav>
+					<div class="col-toc">
+							<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										
+                                            <li style="visibility: show">
+                                                <a href="https://github.com/gointerject/gointerject.github.io/edit/master/wGetStarted/L3.md">
+                                                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit this page
+                                                </a>
+                                            </li>
+                                        
+										<li><a href="https://github.com/gointerject/gointerject.github.io/issues/new?body=File: [wGetStarted/L3.md](https://docs.gointerject.com/wGetStarted/L3.html)"
+															class="nomunge"><i class="fa fa-check" aria-hidden="true"></i> Request docs changes</a></li>
+										<li><a href="http://www.gointerject.com/call-us/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<!-- toggle mode -->
+										<!-- Turn night mode on and off
+										<li>
+											<div class="toggle-mode">
+												<div class="icon">
+													<i class="fa fa-sun-o" aria-hidden="true"></i>
+												</div>
+												<div class="toggle-switch">
+													<label class="switch">
+														<input type="checkbox" id="switch-style">
+														<div class="slider round"></div>
+												</label>
+												</div>
+												<div class="icon">
+													<i class="fa fa-moon-o" aria-hidden="true"></i>
+												</div>
+											</div>
+										</li>
+										-->
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="/wGetStarted/L3.html#overview" class="nomunge">Overview</a>
+    <ul>
+      <li><a href="/wGetStarted/L3.html#building-the-report-1" class="nomunge">Building the Report</a></li>
+      <li><a href="/wGetStarted/L3.html#reportrange-1" class="nomunge">ReportRange()</a></li>
+      <li><a href="/wGetStarted/L3.html#reportvariable-1" class="nomunge">ReportVariable()</a></li>
+    </ul>
+  </li>
+  <li><a href="/wGetStarted/L3.html#related-links" class="nomunge">Related Links:</a></li>
+</ul>
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- The Modal for viewing images -->
+	<div id="modal-main" class="modal" >
+		<img class="modal-content nohover" id="modal-img" style="padding-top: 3%;"/>
+		<span class="close-modal" style="padding-top: 3%;">
+			<i class="fa fa-times-circle fa-1x"></i>
+		</span>
+	</div>
+
+	
+	<footer class="footer">
+		  
+    <div class="container">
+        <div id="footerdiv" class="top_footer">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><h4>GENERAL</h4></li>
+                        <li><a href="http://www.gointerject.com">INTERJECT HOME</a></li>
+                        <li><a href="http://www.gointerject.com/#whatwedobest">WHAT WE DO BEST</a></li>
+                        <li><a href="https://gointerject.com/#benefitsyoucanbankon">BENFITS</a></li>
+                        <li><a href="https://gointerject.com/#whatourclientssay">WHAT OUR CLIENTS SAY</a></li>
+                        <li><a href="https://gointerject.com/#upcomingevents">UPCOMING EVENTS</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://gointerject.com/#whatmatterstous"><h4>WHAT MATTERS TO US</h4> </a></li>
+                        <li><a href="https://gointerject.com/helping-you-master-technology/">Mastering Technology</a></li>
+                        <!--<li><a href="https://gointerject.com/helping-you-master-technology/">Attend Next Event</a></li>-->
+                        <li><a href="https://gointerject.com/helping-you-master-technology/learn-on-your-own/">Learn On Your Own</a></li>
+                        <li><a href="http://www.gointerject.com/kids-coding-clubs/">Kids Coding Club</a></li>
+                        <li><a href="http://www.gointerject.com/helping-you-master-technology/">Tech Talks</a></li> 
+                        <!-- <li><a href="http://www.gointerject.com/#whatwedobest">Reserve Your Spot</a></li> -->
+                        <li><a href="https://gointerject.com/kids-coding-clubs/start-your-own-club/">Start Your Own Club</a></li>
+                        <!-- <li><a href="https://gointerject.com/#whatmatterstous">Never Standing Still</a></li>  -->
+                        <li><a href="https://gointerject.com/never-stand-still-blog/">Our Blog</a></li> 
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><h4>YOUR TEAM</h4></li>
+                        <li><a href="https://gointerject.com/meet-us/">Meet Us</a></li>
+                        <li><a href="https://gointerject.com/join-us/">Join Us</a></li>
+                        <li><a href="https://gointerject.com/call-us/">Call Us</a></li>
+                        <li><h4>SUPPORT</h4></li>
+                        <li><a href="">Wiki / FAQ</a><span style="font-size:10px;padding-left: 7px;">(Coming Soon)</span></li>
+                        <li><a href="">For Developers</a><span style="font-size:10px;padding-left: 7px;">(Coming Soon)</span></li>
+                        <!-- <li class="break"></li> -->
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><h4>CONTACT INFO</h4></li>
+                        <li><strong>Office:</strong> (855) 546-0036</li>
+                        <li><strong>Fax:</strong>  (360) 838-9459</li>
+                        <li><strong>Address:</strong> 1404 NE 134th St. Suite 200, </li>
+                        <li>Vancouver, WA 98685</li> 
+                        <li><strong>E-mail:</strong> info@gointerject.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- ****** This Section is setup for 'the fine text' links ****** -->
+            <!--
+            <div class="footer-nav">
+                <nav class="footer_sub_nav">
+                    <ul class="menu">
+                        <li><a href="">Status</a></li>
+                        <li><a href="">Security</a></li>
+                        <li><a href="">Legal</a></li>
+                    </ul>
+                </nav>
+            </div>
+            -->
+        </div>
+        <div class="bottom_footer">
+            <div class="footer-copyright col-xs-12 col-md-8">
+                <p class="copyright">
+                    Copyright © 2018 INTERJECT Inc. All Rights Reserved.
+                </p>
+            </div>
+            <div class="footer_social_nav">
+                <ul class="nav-social">
+                    <li class="fa fa-twitter"><a href="http://twitter.com/gointerject">Twitter</a></li>
+                    <li class="fa fa-youtube"><a href="http://www.youtube.com/user/gointerject">Youtube</a></li> 
+                    <li class="fa fa-github"><a href="https://github.com/gointerject">Github</a></li>
+                    <li class="fa fa-linkedin"><a href="https://www.linkedin.com/company/gointerject">Linkedin</a></li>
+                    <li class="fa fa-facebook"><a href="https://www.facebook.com/gointerject">Facebook</a></li>  
+                </ul>
+            </div>
+        </div>
+    </div>
+
+	</footer>
+	<link rel="stylesheet" href="/css/github.css">
+	
+	<!-- <script src="/js/anchorlinks.js"></script> -->
+	<script defer src="/js/menu.js"></script>
+	<script src="/js/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<!-- Always include the archive.js, but it doesn't do much unless we are an archive -->
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var interjectVersion = 'v';
+	// In archives, we need to know the page root and we get it from JEKYLL_ENV in the jekyll build command
+	var jekyllEnv = 'development';
+	// If unset (in non-archive branches), defaults to "development". In that case, reset it to empty
+	if (jekyllEnv == 'development') {
+		jekyllEnv = '';
+	}
+	var pageURL = jekyllEnv + '/wGetStarted/L3.html';
+	</script>
+	<script src="/js/archive.js"></script>
+	<script src="/js/stickyfill.min.js"></script>
+	<script defer src="/js/metadata.js"></script>
+	<script src="/js/glossary.js"></script>
+	<script src="/js/collections_tocs.js"></script>
+	<script defer src="/js/docs.js"></script>
+	<script defer src="/js/toc.js"></script>
+	<script defer src="/js/stylemod.js"></script>
+	<script language="javascript">
+	jQuery(document).ready(function(){
+				hookupTOCEvents();
+			});
+	</script>
+</body>
+
+</html>

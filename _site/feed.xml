@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-11-21T14:32:27-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Interject Documentation Site</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">example new layout</title><link href="http://localhost:4000/documentation/2018/07/24/example-new-layout.html" rel="alternate" type="text/html" title="example new layout" /><published>2018-07-24T09:03:02-07:00</published><updated>2018-07-24T09:03:02-07:00</updated><id>http://localhost:4000/documentation/2018/07/24/example-new-layout</id><content type="html" xml:base="http://localhost:4000/documentation/2018/07/24/example-new-layout.html">&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/engine/installation/&quot;&gt;Install Docker version 1.13 or higher&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Read the orientation in &lt;a href=&quot;index.md&quot;&gt;Part 1&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Give your environment a quick test run to make sure you’re all set up:&lt;/p&gt;
+
+    &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker run hello-world
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;It’s time to begin building an app the Docker way. We start at the bottom of
+the hierarchy of such an app, which is a container, which we cover on this page.
+Above this level is a service, which defines how containers behave in
+production, covered in &lt;a href=&quot;part3.md&quot;&gt;Part 3&lt;/a&gt;. Finally, at the top level is the
+stack, defining the interactions of all the services, covered in
+&lt;a href=&quot;part5.md&quot;&gt;Part 5&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Stack&lt;/li&gt;
+  &lt;li&gt;Services&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Container&lt;/strong&gt; (you are here)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;your-new-development-environment&quot;&gt;Your new development environment&lt;/h2&gt;
+
+&lt;p&gt;In the past, if you were to start writing a Python app, your first
+order of business was to install a Python runtime onto your machine. But,
+that creates a situation where the environment on your machine needs to be
+perfect for your app to run as expected, and also needs to match your production
+environment.&lt;/p&gt;
+
+&lt;p&gt;With Docker, you can just grab a portable Python runtime as an image, no
+installation necessary. Then, your build can include the base Python image
+right alongside your app code, ensuring that your app, its dependencies, and the
+runtime, all travel together.&lt;/p&gt;
+
+&lt;p&gt;These portable images are defined by something called a &lt;code class=&quot;highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;define-a-container-with-dockerfile&quot;&gt;Define a container with &lt;code class=&quot;highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt; defines what goes on in the environment inside your
+container. Access to resources like networking interfaces and disk drives is
+virtualized inside this environment, which is isolated from the rest of your
+system, so you need to map ports to the outside world, and
+be specific about what files you want to “copy in” to that environment. However,
+after doing that, you can expect that the build of your app defined in this
+&lt;code class=&quot;highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt; behaves exactly the same wherever it runs.&lt;/p&gt;
+
+&lt;h3 id=&quot;dockerfile&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;Create an empty directory. Change directories (&lt;code class=&quot;highlighter-rouge&quot;&gt;cd&lt;/code&gt;) into the new directory,
+create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt;, copy-and-paste the following content into
+that file, and save it. Take note of the comments that explain each statement in
+your new Dockerfile.&lt;/p&gt;
+
+&lt;div class=&quot;language-dockerfile highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Use an official Python runtime as a parent image&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; python:2.7-slim&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Set the working directory to /app&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WORKDIR&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; /app&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Copy the current directory contents into the container at /app&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ADD&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; . /app&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Install any needed packages specified in requirements.txt&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;RUN &lt;/span&gt;pip install &lt;span class=&quot;nt&quot;&gt;--trusted-host&lt;/span&gt; pypi.python.org &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; requirements.txt
+
+&lt;span class=&quot;c&quot;&gt;# Make port 80 available to the world outside this container&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;EXPOSE&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; 80&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Define environment variable&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ENV&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; NAME World&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Run app.py when the container launches&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;CMD&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; [&quot;python&quot;, &quot;app.py&quot;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This &lt;code class=&quot;highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt; refers to a couple of files we haven’t created yet, namely
+&lt;code class=&quot;highlighter-rouge&quot;&gt;app.py&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;requirements.txt&lt;/code&gt;. Let’s create those next.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-app-itself&quot;&gt;The app itself&lt;/h2&gt;
+
+&lt;p&gt;Create two more files, &lt;code class=&quot;highlighter-rouge&quot;&gt;requirements.txt&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;app.py&lt;/code&gt;, and put them in the same
+folder with the &lt;code class=&quot;highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt;. This completes our app, which as you can see is
+quite simple. When the above &lt;code class=&quot;highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt; is built into an image, &lt;code class=&quot;highlighter-rouge&quot;&gt;app.py&lt;/code&gt; and
+&lt;code class=&quot;highlighter-rouge&quot;&gt;requirements.txt&lt;/code&gt; is present because of that &lt;code class=&quot;highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt;’s &lt;code class=&quot;highlighter-rouge&quot;&gt;ADD&lt;/code&gt; command,
+and the output from &lt;code class=&quot;highlighter-rouge&quot;&gt;app.py&lt;/code&gt; is accessible over HTTP thanks to the &lt;code class=&quot;highlighter-rouge&quot;&gt;EXPOSE&lt;/code&gt;
+command.&lt;/p&gt;
+
+&lt;h3 id=&quot;requirementstxt&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;requirements.txt&lt;/code&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Flask
+Redis
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;apppy&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;app.py&lt;/code&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;flask&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Flask&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;redis&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Redis&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RedisError&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;os&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;socket&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Connect to Redis&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;redis&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Redis&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;host&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;redis&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;db&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;socket_connect_timeout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;socket_timeout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Flask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;nd&quot;&gt;@app.route&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;visits&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;redis&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;incr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;counter&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;except&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RedisError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;visits&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&amp;lt;i&amp;gt;cannot connect to Redis, counter disabled&amp;lt;/i&amp;gt;&quot;&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&amp;lt;h3&amp;gt;Hello {name}!&amp;lt;/h3&amp;gt;&quot;&lt;/span&gt; \
+           &lt;span class=&quot;s&quot;&gt;&quot;&amp;lt;b&amp;gt;Hostname:&amp;lt;/b&amp;gt; {hostname}&amp;lt;br/&amp;gt;&quot;&lt;/span&gt; \
+           &lt;span class=&quot;s&quot;&gt;&quot;&amp;lt;b&amp;gt;Visits:&amp;lt;/b&amp;gt; {visits}&quot;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getenv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;NAME&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;world&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hostname&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;socket&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gethostname&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;visits&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;visits&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;__main__&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;host&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'0.0.0.0'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;port&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;80&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now we see that &lt;code class=&quot;highlighter-rouge&quot;&gt;pip install -r requirements.txt&lt;/code&gt; installs the Flask and Redis
+libraries for Python, and the app prints the environment variable &lt;code class=&quot;highlighter-rouge&quot;&gt;NAME&lt;/code&gt;, as
+well as the output of a call to &lt;code class=&quot;highlighter-rouge&quot;&gt;socket.gethostname()&lt;/code&gt;. Finally, because Redis
+isn’t running (as we’ve only installed the Python library, and not Redis
+itself), we should expect that the attempt to use it here fails and produces
+the error message.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Accessing the name of the host when inside a container retrieves the
+container ID, which is like the process ID for a running executable.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;That’s it! You don’t need Python or anything in &lt;code class=&quot;highlighter-rouge&quot;&gt;requirements.txt&lt;/code&gt; on your
+system, nor does building or running this image install them on your system. It
+doesn’t seem like you’ve really set up an environment with Python and Flask, but
+you have.&lt;/p&gt;
+
+&lt;h2 id=&quot;build-the-app&quot;&gt;Build the app&lt;/h2&gt;
+
+&lt;p&gt;We are ready to build the app. Make sure you are still at the top level of your new directory. Here’s what &lt;code class=&quot;highlighter-rouge&quot;&gt;ls&lt;/code&gt; should show:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;ls
+&lt;/span&gt;Dockerfile		app.py			requirements.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now run the build command. This creates a Docker image, which we’re going to
+tag using &lt;code class=&quot;highlighter-rouge&quot;&gt;-t&lt;/code&gt; so it has a friendly name.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker build &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; friendlyhello &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Where is your built image? It’s in your machine’s local Docker image registry:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker image &lt;span class=&quot;nb&quot;&gt;ls
+
+&lt;/span&gt;REPOSITORY            TAG                 IMAGE ID
+friendlyhello         latest              326387cea398
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Troubleshooting for Linux users&lt;/p&gt;
+
+  &lt;p&gt;&lt;em&gt;Proxy server settings&lt;/em&gt;&lt;/p&gt;
+
+  &lt;p&gt;Proxy servers can block connections to your web app once it’s up and running.
+If you are behind a proxy server, add the following lines to your
+Dockerfile, using the &lt;code class=&quot;highlighter-rouge&quot;&gt;ENV&lt;/code&gt; command to specify the host and port for your
+proxy servers:&lt;/p&gt;
+
+  &lt;div class=&quot;language-conf highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Set proxy server, replace host:port with values for your servers
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ENV&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;http_proxy&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;host&lt;/span&gt;:&lt;span class=&quot;n&quot;&gt;port&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;ENV&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;https_proxy&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;host&lt;/span&gt;:&lt;span class=&quot;n&quot;&gt;port&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+
+  &lt;p&gt;&lt;em&gt;DNS settings&lt;/em&gt;&lt;/p&gt;
+
+  &lt;p&gt;DNS misconfigurations can generate problems with &lt;code class=&quot;highlighter-rouge&quot;&gt;pip&lt;/code&gt;. You need to set your
+own DNS server address to make &lt;code class=&quot;highlighter-rouge&quot;&gt;pip&lt;/code&gt; work properly. You might want
+to change the DNS settings of the Docker daemon. You can edit (or create) the
+configuration file at &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/docker/daemon.json&lt;/code&gt; with the &lt;code class=&quot;highlighter-rouge&quot;&gt;dns&lt;/code&gt; key, as following:&lt;/p&gt;
+
+  &lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;dns&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;your_dns_address&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;8.8.8.8&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+
+  &lt;p&gt;In the example above, the first element of the list is the address of your DNS
+server. The second item is the Google’s DNS which can be used when the first one is
+not available.&lt;/p&gt;
+
+  &lt;p&gt;Before proceeding, save &lt;code class=&quot;highlighter-rouge&quot;&gt;daemon.json&lt;/code&gt; and restart the docker service.&lt;/p&gt;
+
+  &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo service docker restart&lt;/code&gt;&lt;/p&gt;
+
+  &lt;p&gt;Once fixed, retry to run the &lt;code class=&quot;highlighter-rouge&quot;&gt;build&lt;/code&gt; command.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;run-the-app&quot;&gt;Run the app&lt;/h2&gt;
+
+&lt;p&gt;Run the app, mapping your machine’s port 4000 to the container’s published port
+80 using &lt;code class=&quot;highlighter-rouge&quot;&gt;-p&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker run &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 4000:80 friendlyhello
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You should see a message that Python is serving your app at &lt;code class=&quot;highlighter-rouge&quot;&gt;http://0.0.0.0:80&lt;/code&gt;.
+But that message is coming from inside the container, which doesn’t know you
+mapped port 80 of that container to 4000, making the correct URL
+&lt;code class=&quot;highlighter-rouge&quot;&gt;http://localhost:4000&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Go to that URL in a web browser to see the display content served up on a
+web page.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/app-in-browser.png&quot; alt=&quot;Hello World in browser&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: If you are using Docker Toolbox on Windows 7, use the Docker Machine IP
+instead of &lt;code class=&quot;highlighter-rouge&quot;&gt;localhost&lt;/code&gt;. For example, http://192.168.99.100:4000/. To find the IP
+address, use the command &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-machine ip&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;You can also use the &lt;code class=&quot;highlighter-rouge&quot;&gt;curl&lt;/code&gt; command in a shell to view the same content.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;curl http://localhost:4000
+
+&amp;lt;h3&amp;gt;Hello World!&amp;lt;/h3&amp;gt;&amp;lt;b&amp;gt;Hostname:&amp;lt;/b&amp;gt; 8fc990912a14&amp;lt;br/&amp;gt;&amp;lt;b&amp;gt;Visits:&amp;lt;/b&amp;gt; &amp;lt;i&amp;gt;cannot connect to Redis, counter disabled&amp;lt;/i&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This port remapping of &lt;code class=&quot;highlighter-rouge&quot;&gt;4000:80&lt;/code&gt; is to demonstrate the difference
+between what you &lt;code class=&quot;highlighter-rouge&quot;&gt;EXPOSE&lt;/code&gt; within the &lt;code class=&quot;highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt;, and what you &lt;code class=&quot;highlighter-rouge&quot;&gt;publish&lt;/code&gt; using
+&lt;code class=&quot;highlighter-rouge&quot;&gt;docker run -p&lt;/code&gt;. In later steps, we just map port 80 on the host to port 80
+in the container and use &lt;code class=&quot;highlighter-rouge&quot;&gt;http://localhost&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Hit &lt;code class=&quot;highlighter-rouge&quot;&gt;CTRL+C&lt;/code&gt; in your terminal to quit.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;On Windows, explicitly stop the container&lt;/p&gt;
+
+  &lt;p&gt;On Windows systems, &lt;code class=&quot;highlighter-rouge&quot;&gt;CTRL+C&lt;/code&gt; does not stop the container. So, first
+ type &lt;code class=&quot;highlighter-rouge&quot;&gt;CTRL+C&lt;/code&gt; to get the prompt back (or open another shell), then type
+ &lt;code class=&quot;highlighter-rouge&quot;&gt;docker container ls&lt;/code&gt; to list the running containers, followed by
+ &lt;code class=&quot;highlighter-rouge&quot;&gt;docker container stop &amp;lt;Container NAME or ID&amp;gt;&lt;/code&gt; to stop the
+ container. Otherwise, you get an error response from the daemon
+ when you try to re-run the container in the next step.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Now let’s run the app in the background, in detached mode:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker run &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 4000:80 friendlyhello
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You get the long container ID for your app and then are kicked back to your
+terminal. Your container is running in the background. You can also see the
+abbreviated container ID with &lt;code class=&quot;highlighter-rouge&quot;&gt;docker container ls&lt;/code&gt; (and both work interchangeably when
+running commands):&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker container &lt;span class=&quot;nb&quot;&gt;ls
+&lt;/span&gt;CONTAINER ID        IMAGE               COMMAND             CREATED
+1fa4ab2cf395        friendlyhello       &lt;span class=&quot;s2&quot;&gt;&quot;python app.py&quot;&lt;/span&gt;     28 seconds ago
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Notice that &lt;code class=&quot;highlighter-rouge&quot;&gt;CONTAINER ID&lt;/code&gt; matches what’s on &lt;code class=&quot;highlighter-rouge&quot;&gt;http://localhost:4000&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now use &lt;code class=&quot;highlighter-rouge&quot;&gt;docker container stop&lt;/code&gt; to end the process, using the &lt;code class=&quot;highlighter-rouge&quot;&gt;CONTAINER ID&lt;/code&gt;, like so:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker container stop 1fa4ab2cf395
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;share-your-image&quot;&gt;Share your image&lt;/h2&gt;
+
+&lt;p&gt;To demonstrate the portability of what we just created, let’s upload our built
+image and run it somewhere else. After all, you need to know how to push to
+registries when you want to deploy containers to production.&lt;/p&gt;
+
+&lt;p&gt;A registry is a collection of repositories, and a repository is a collection of
+images—sort of like a GitHub repository, except the code is already built.
+An account on a registry can create many repositories. The &lt;code class=&quot;highlighter-rouge&quot;&gt;docker&lt;/code&gt; CLI uses
+Docker’s public registry by default.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: We use Docker’s public registry here just because it’s free
+and pre-configured, but there are many public ones to choose from, and you can
+even set up your own private registry using &lt;a href=&quot;/datacenter/dtr/2.2/guides/&quot;&gt;Docker Trusted
+Registry&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;log-in-with-your-docker-id&quot;&gt;Log in with your Docker ID&lt;/h3&gt;
+
+&lt;p&gt;If you don’t have a Docker account, sign up for one at
+&lt;a href=&quot;https://hub.docker.com&quot; target=&quot;_blank&quot; class=&quot;_&quot;&gt;hub.docker.com&lt;/a&gt;.
+Make note of your username.&lt;/p&gt;
+
+&lt;p&gt;Log in to the Docker public registry on your local machine.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker login
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;tag-the-image&quot;&gt;Tag the image&lt;/h3&gt;
+
+&lt;p&gt;The notation for associating a local image with a repository on a registry is
+&lt;code class=&quot;highlighter-rouge&quot;&gt;username/repository:tag&lt;/code&gt;. The tag is optional, but recommended, since it is
+the mechanism that registries use to give Docker images a version. Give the
+repository and tag meaningful names for the context, such as
+&lt;code class=&quot;highlighter-rouge&quot;&gt;get-started:part2&lt;/code&gt;. This puts the image in the &lt;code class=&quot;highlighter-rouge&quot;&gt;get-started&lt;/code&gt; repository and
+tag it as &lt;code class=&quot;highlighter-rouge&quot;&gt;part2&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now, put it all together to tag the image. Run &lt;code class=&quot;highlighter-rouge&quot;&gt;docker tag image&lt;/code&gt; with your
+username, repository, and tag names so that the image uploads to your
+desired destination. The syntax of the command is:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker tag image username/repository:tag
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;For example:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker tag friendlyhello gordon/get-started:part2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Run &lt;a href=&quot;/engine/reference/commandline/image_ls/&quot;&gt;docker image ls&lt;/a&gt; to see your newly
+tagged image.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker image &lt;span class=&quot;nb&quot;&gt;ls
+
+&lt;/span&gt;REPOSITORY               TAG                 IMAGE ID            CREATED             SIZE
+friendlyhello            latest              d9e555c53008        3 minutes ago       195MB
+gordon/get-started         part2               d9e555c53008        3 minutes ago       195MB
+python                   2.7-slim            1c7128a655f6        5 days ago          183MB
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;publish-the-image&quot;&gt;Publish the image&lt;/h3&gt;
+
+&lt;p&gt;Upload your tagged image to the repository:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker push username/repository:tag
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Once complete, the results of this upload are publicly available. If you log in
+to &lt;a href=&quot;https://hub.docker.com/&quot;&gt;Docker Hub&lt;/a&gt;, you see the new image there, with
+its pull command.&lt;/p&gt;
+
+&lt;h3 id=&quot;pull-and-run-the-image-from-the-remote-repository&quot;&gt;Pull and run the image from the remote repository&lt;/h3&gt;
+
+&lt;p&gt;From now on, you can use &lt;code class=&quot;highlighter-rouge&quot;&gt;docker run&lt;/code&gt; and run your app on any machine with this
+command:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker run &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 4000:80 username/repository:tag
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If the image isn’t available locally on the machine, Docker pulls it from
+the repository.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker run &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 4000:80 gordon/get-started:part2
+Unable to find image &lt;span class=&quot;s1&quot;&gt;'gordon/get-started:part2'&lt;/span&gt; locally
+part2: Pulling from gordon/get-started
+10a267c67f42: Already exists
+f68a39a6a5e4: Already exists
+9beaffc0cf19: Already exists
+3c1fe835fb6b: Already exists
+4c9f1fa8fcb8: Already exists
+ee7d8f576a14: Already exists
+fbccdcced46e: Already exists
+Digest: sha256:0601c866aab2adcc6498200efd0f754037e909e5fd42069adeff72d1e2439068
+Status: Downloaded newer image &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;gordon/get-started:part2
+ &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; Running on http://0.0.0.0:80/ &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Press CTRL+C to quit&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;No matter where &lt;code class=&quot;highlighter-rouge&quot;&gt;docker run&lt;/code&gt; executes, it pulls your image, along with Python
+and all the dependencies from &lt;code class=&quot;highlighter-rouge&quot;&gt;requirements.txt&lt;/code&gt;, and runs your code. It all
+travels together in a neat little package, and you don’t need to install
+anything on the host machine for Docker to run it.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion-of-part-two&quot;&gt;Conclusion of part two&lt;/h2&gt;
+
+&lt;p&gt;That’s all for this page. In the next section, we learn how to scale our
+application by running this container in a &lt;strong&gt;service&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;part3.md&quot; class=&quot;button outline-btn&quot;&gt;Continue to Part 3 »&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;recap-and-cheat-sheet-optional&quot;&gt;Recap and cheat sheet (optional)&lt;/h2&gt;
+
+&lt;p&gt;Here’s &lt;a href=&quot;https://asciinema.org/a/blkah0l4ds33tbe06y4vkme6g&quot;&gt;a terminal recording of what was covered on this
+page&lt;/a&gt;:&lt;/p&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://asciinema.org/a/blkah0l4ds33tbe06y4vkme6g.js&quot; id=&quot;asciicast-blkah0l4ds33tbe06y4vkme6g&quot; speed=&quot;2&quot; async=&quot;&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Here is a list of the basic Docker commands from this page, and some related
+ones if you’d like to explore a bit before moving on.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker build &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; friendlyhello &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;# Create image using this directory's Dockerfile&lt;/span&gt;
+docker run &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 4000:80 friendlyhello  &lt;span class=&quot;c&quot;&gt;# Run &quot;friendlyname&quot; mapping port 4000 to 80&lt;/span&gt;
+docker run &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 4000:80 friendlyhello         &lt;span class=&quot;c&quot;&gt;# Same thing, but in detached mode&lt;/span&gt;
+docker container &lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt;                                &lt;span class=&quot;c&quot;&gt;# List all running containers&lt;/span&gt;
+docker container &lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt;             &lt;span class=&quot;c&quot;&gt;# List all containers, even those not running&lt;/span&gt;
+docker container stop &amp;lt;&lt;span class=&quot;nb&quot;&gt;hash&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;           &lt;span class=&quot;c&quot;&gt;# Gracefully stop the specified container&lt;/span&gt;
+docker container &lt;span class=&quot;nb&quot;&gt;kill&lt;/span&gt; &amp;lt;&lt;span class=&quot;nb&quot;&gt;hash&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;         &lt;span class=&quot;c&quot;&gt;# Force shutdown of the specified container&lt;/span&gt;
+docker container rm &amp;lt;&lt;span class=&quot;nb&quot;&gt;hash&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;        &lt;span class=&quot;c&quot;&gt;# Remove specified container from this machine&lt;/span&gt;
+docker container rm &lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;docker container &lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-q&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;         &lt;span class=&quot;c&quot;&gt;# Remove all containers&lt;/span&gt;
+docker image &lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt;                             &lt;span class=&quot;c&quot;&gt;# List all images on this machine&lt;/span&gt;
+docker image rm &amp;lt;image id&amp;gt;            &lt;span class=&quot;c&quot;&gt;# Remove specified image from this machine&lt;/span&gt;
+docker image rm &lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;docker image &lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-q&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;   &lt;span class=&quot;c&quot;&gt;# Remove all images from this machine&lt;/span&gt;
+docker login             &lt;span class=&quot;c&quot;&gt;# Log in this CLI session using your Docker credentials&lt;/span&gt;
+docker tag &amp;lt;image&amp;gt; username/repository:tag  &lt;span class=&quot;c&quot;&gt;# Tag &amp;lt;image&amp;gt; for upload to registry&lt;/span&gt;
+docker push username/repository:tag            &lt;span class=&quot;c&quot;&gt;# Upload tagged image to registry&lt;/span&gt;
+docker run username/repository:tag                   &lt;span class=&quot;c&quot;&gt;# Run image from a registry&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">Prerequisites</summary></entry><entry><title type="html">Document new website</title><link href="http://localhost:4000/documentation/2018/03/03/document-new-website.html" rel="alternate" type="text/html" title="Document new website" /><published>2018-03-03T08:03:02-08:00</published><updated>2018-03-03T08:03:02-08:00</updated><id>http://localhost:4000/documentation/2018/03/03/document-new-website</id><content type="html" xml:base="http://localhost:4000/documentation/2018/03/03/document-new-website.html">&lt;p&gt;Portal site should be the go to area. Whether it is downloads or documentation or forms. However to make it more easy to follow we need to reduce the options we have in the site for most users.&lt;/p&gt;
+
+&lt;h2 id=&quot;on-bording-new-developers-from-start-to-finish&quot;&gt;On bording new developers from start to finish.&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;Email invitation new clients (simplify)&lt;/li&gt;
+  &lt;li&gt;Download turorial package&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;portal&quot;&gt;Portal&lt;/h2&gt;
+&lt;p&gt;Minimize what standard user sees in the portals site. Remove/Move:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;My Offerings - should be part of myApps&lt;/li&gt;
+  &lt;li&gt;My Data - should not be available to standard users (only Client Admin, Editor, Developer)&lt;/li&gt;
+  &lt;li&gt;Settings - The only setting that should be available for stander user is to update his/er profile. Currently standard user can modify company profile. The user should be managed from.
+    &lt;ol&gt;
+      &lt;li&gt;Setting should be managed from the&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Instead of having a vertical main menu we should have a horizontal menu.&lt;/li&gt;
+  &lt;li&gt;Top bar should include links back to portal site. (screenshot 11)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;rebuilding-portal-site&quot;&gt;Rebuilding Portal site&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;Example site - &lt;a href=&quot;https://zapier.com&quot;&gt;zapier&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/Image12.png&quot; alt=&quot;images12&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;workflow-for-app-development&quot;&gt;Workflow for app development.&lt;/h3&gt;
+&lt;p&gt;Example site: https://zapier.com/ - Connecting application and automate workflow&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Steps to create an application
+    &lt;ol&gt;
+      &lt;li&gt;Individual steps before and app can be packaged
+        &lt;ol&gt;
+          &lt;li&gt;Create connections
+            &lt;ol&gt;
+              &lt;li&gt;Should have a way to test connection string inside website. This should be done with java-script since it has to tested form client end not server&lt;/li&gt;
+            &lt;/ol&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Create Portal&lt;/li&gt;
+          &lt;li&gt;Create Excel Template - in excel
+            &lt;ol&gt;
+              &lt;li&gt;(we will need to create a way to view and manage reports templates in the website)&lt;/li&gt;
+            &lt;/ol&gt;
+          &lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Package an application
+        &lt;ol&gt;
+          &lt;li&gt;Create Name/description specify public private
+            &lt;ol&gt;
+              &lt;li&gt;(optional) Need a way to link to  app documentation/ or add documentation&lt;/li&gt;
+            &lt;/ol&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Select excel templates
+            &lt;ol&gt;
+              &lt;li&gt;need access to report library from web&lt;/li&gt;
+              &lt;li&gt;select the templates that we what to include.&lt;/li&gt;
+              &lt;li&gt;At this point we should be able to figure out the portals and connections needed. This should be defaulted but allow users to change and modify.&lt;/li&gt;
+            &lt;/ol&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Select portals&lt;/li&gt;
+          &lt;li&gt;Select connection
+            &lt;ol&gt;
+              &lt;li&gt;will default based on the portals that are selected&lt;/li&gt;
+              &lt;li&gt;specify the connection that can be overwrite&lt;/li&gt;
+            &lt;/ol&gt;
+          &lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/Image10.png&quot; alt=&quot;images10&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;documentation&quot;&gt;Documentation&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;Native GitHub static website &lt;a href=&quot;https://help.github.com/articles/what-is-github-pages/&quot;&gt;pages.github&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Having 2 documentation location may cause issues with having to duplicate documentation. An alliterative is to display different documentation based on roles that a users has in Interject
+    &lt;ol&gt;
+      &lt;li&gt;Basic documentation
+        &lt;ol&gt;
+          &lt;li&gt;Mostly graphical&lt;/li&gt;
+          &lt;li&gt;Walk through&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Best practice&lt;/li&gt;
+      &lt;li&gt;Advance (Developer)&lt;/li&gt;
+      &lt;li&gt;Creating data portal&lt;/li&gt;
+      &lt;li&gt;Api - documenting parameter&lt;/li&gt;
+      &lt;li&gt;Store procedure -&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Documentation site is separate from portals side but the link should be found on the portal side&lt;/li&gt;
+  &lt;li&gt;Apple Design is something that we should incorporate into our documentation (screenshot 4) [image4]&lt;/li&gt;
+  &lt;li&gt;include video here. How to make excel into an app video (screenshot 5)&lt;/li&gt;
+  &lt;li&gt;For the documentation site we will use Jekyll as the patform. This will allow static pages to be edited and maintained in github with source control as the back end.
+    &lt;ol&gt;
+      &lt;li&gt;This is what docker is using. Below are key areas we should include&lt;/li&gt;
+      &lt;li&gt;All issues to documentation can change requests can be done through github (screenshot 1)&lt;/li&gt;
+      &lt;li&gt;On the left they have a table of contains and on the right they have a page outline (screenshot 2,3)&lt;/li&gt;
+      &lt;li&gt;Top menu should be links to other websites such as Portal ,main and form sites.&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;One downside is that we will not be able setup multi level security for a statistic website. We can provide basic security to allow users access to the site but in my opinion we should hide link for standard user but if someone has a direct link to the documentation site they should have full access.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/Image4.png&quot; alt=&quot;images4&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/Image5.png&quot; alt=&quot;images5&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/Image1.png&quot; alt=&quot;images1&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/Image2.png&quot; alt=&quot;images2&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/Image3.png&quot; alt=&quot;images3&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;forums&quot;&gt;Forums&lt;/h2&gt;
+&lt;p&gt;Apple defiantly has the best organization for forums (screenshot 5,6). Microsoft and salesforse have some good elements.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Section
+    &lt;ol&gt;
+      &lt;li&gt;Ideas&lt;/li&gt;
+      &lt;li&gt;Excel&lt;/li&gt;
+      &lt;li&gt;Data&lt;/li&gt;
+      &lt;li&gt;Interject portal&lt;/li&gt;
+      &lt;li&gt;add-in&lt;/li&gt;
+      &lt;li&gt;ides visual studio and SSMS&lt;/li&gt;
+      &lt;li&gt;others&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;However simple maybe betters&lt;/li&gt;
+  &lt;li&gt;Other elements -&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/Image5.png&quot; alt=&quot;images5&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/Image6.png&quot; alt=&quot;images6&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;discourse-platform&quot;&gt;Discourse Platform&lt;/h3&gt;
+&lt;p&gt;The best platform for a forum is &lt;a href=&quot;https://www.discourse.org/&quot;&gt;Discourse&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This is opensource software with many sites that will host and maintain it&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/Image11.png&quot; alt=&quot;images11&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;https://flarum.org/ appears to  be another easy to use forum&lt;/p&gt;
+
+&lt;p&gt;Discussing the different type of forums - 
+https://www.a2hosting.com/blog/5-outstanding-forum-platforms-set-online-community/&lt;/p&gt;</content><author><name></name></author><summary type="html">Portal site should be the go to area. Whether it is downloads or documentation or forms. However to make it more easy to follow we need to reduce the options we have in the site for most users.</summary></entry></feed>

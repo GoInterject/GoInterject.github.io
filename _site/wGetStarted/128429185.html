@@ -1,0 +1,569 @@
+
+<!-- Page generated 2018-11-21 14:32:27 -0800 -->
+<!-- relative link basehrefs -->
+
+	
+	
+	
+		
+			
+		
+	
+		
+			
+			
+
+
+<!-- Logic for 'edit this button' -->
+
+
+
+<!-- End of logic for 'edit this button' -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<base href="/wGetStarted/" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<style id="page_style" type="text/css">
+		@charset "UTF-8";
+		[ng\:cloak],
+		[ng-cloak],
+		[data-ng-cloak],
+		[x-ng-cloak],
+		.ng-cloak,
+		.x-ng-cloak,
+		.ng-hide:not(.ng-hide-animate) {
+			display: none !important;
+		}
+
+		ng\:form {
+			display: block;
+		}
+	</style>
+
+	<!--
+	<script type="text/javascript">
+	  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
+	  analytics.load("IWj9D0UpZHZdZUZX9jl98PcpBFWBnBMy");
+	  analytics.page();
+	  }}();
+	</script>
+	-->
+	
+	<!-- favicon -->
+	<link rel="icon" type="image/x-icon" href="/favicons/docs@2x.ico" sizes="129x128">
+	<meta name="msapplication-TileImage" content="/favicons/docs@2x.ico">
+	<link rel="apple-touch-icon" type="image/x-icon" href="/favicons/docs@2x.ico" sizes="129x128">
+	<meta property="og:image" content="/favicons/docs@2x.ico"/>
+	<!-- metadata -->
+	
+
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css">
+	<link id="pagestyle" rel="stylesheet" href="/css/style.css">
+
+	<!-- Go get "Open Sans" font from Google -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	
+	
+	
+
+</head>	
+
+<body id="main_body" class="colums">
+	
+
+	<header>
+		 <nav class="nav-secondary navbar navbar-fixed-top">
+    <!-- <div class="fan"></div> -->
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="/"><img class="logo" src="/images/site-logo.png" alt="Interject Docs" title="Interject Docs"></a>
+        </div>
+        <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+            <div class="search-form" id="search-div" >
+    <form class="search-form form-inline ng-pristine ng-valid" id="searchForm" action="/search/">
+        <input class="search-field form-control ds-input" id="st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;">
+        <div id="autocompleteContainer">
+            <div id="autocompleteResults"></div>
+        </div>
+        <!-- <button type="submit" class="search-submit btn btn-default">Search</button> -->
+    </form>
+</div>
+<div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <div id="tabs">
+        <ul class="tabs" id="jsTOCHorizontal">
+
+        </ul>
+    </div>
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div class="btn-group" style="visibility: hidden">
+  <button type="button" class="btn btn-default dropdown-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    
+  </ul>
+</div>
+
+    </div>
+</div>
+
+        </div>
+    </div>
+</nav>
+	</header>
+
+	
+
+	<!-- nav bar -->
+	<div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							
+								
+							<h1>Interject Documentation > L1.2 Modify> Inventory Report</h1> 
+									 
+									
+									<span class="reading-time" title="Estimated reading time">
+  <span class="reading-time-label">Estimated reading time: </span>
+  
+  
+    5 minutes
+  
+</span>
+
+									
+							
+							
+							<hr />
+
+<h2 id="overview"><strong>Overview</strong></h2>
+
+<p>In this example you ill be modifying a fixed report, going over how to add a row to the report as well as add an extra column.</p>
+
+<ul>
+  <li>
+    <ul>
+      <li>
+        <h4 id="setting-up-the-report">Setting up the Report</h4>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* ####  Adding a Row 
+
+* ####  Adding a Definition Column 
+
+* ####  Closing up the Report 
+</code></pre></div></div>
+
+<h3 id="setting-up-the-report-1">Setting up the Report</h3>
+
+<p><strong>Step 1:</strong> First, go to the <a href="/wAbout/Report-Library-Basics_61702517.html"> Report Library </a> and select the Interject Inventory Demo report.</p>
+
+<p><img src="attachments/128429185/129012106.png" alt="" /></p>
+
+<p>It should look like this when opened.</p>
+
+<p><img src="attachments/128429185/128487782.png" alt="" /></p>
+
+<p>**<br />
+**</p>
+
+<p>Because the report is already complete, it is necessary for the example to delete a row before starting. This will simulate a fixed report that has a missing row.</p>
+
+<p><strong>Step 2:</strong> Right click row 18, <strong>Dairy Products</strong> , and choose delete.</p>
+
+<p><img src="attachments/128429185/128494299.png" alt="" /></p>
+
+<p>With the row deleted, the report should now be structured as shown.</p>
+
+<p><img src="attachments/128429185/128463111.png" alt="" /></p>
+
+<p>You can now begin modifying the report for this lesson.</p>
+
+<p>Back to Top</p>
+
+<h3 id="adding-a-row-to-the-report">Adding a Row to the Report</h3>
+
+<p><strong>Step 1:</strong> First, use <a href="https://interject.atlassian.net/wiki/display/ID/Interject+Ribbon+Menu+Items#InterjectRibbonMenuItems-PullData"> <strong>Pull Data</strong> </a> menu item so you can see how this report has been configured and to show that a row is missing from the main section.</p>
+
+<p><img src="attachments/128429185/128509994.png" alt="" /></p>
+
+<p>Here you can see that the category <strong>Dairy Products</strong> is below the main body of the report. This is considered a <strong>Leftovers</strong> section and will present rows that were not included in the fixed report area above between rows 15 and 22.</p>
+
+<p><img src="attachments/128429185/128463268.png" alt="" /></p>
+
+<p>Add <strong>Dairy Products</strong> back to the main body of the report.</p>
+
+<p>** Step 2:  ** To add another category, unfreeze the panes. Open the View Ribbon in Excel and select the <strong>Freeze Panes</strong> drop-down. Then choose <strong>Unfreeze Panes</strong> .</p>
+
+<p><img src="attachments/128429185/128463293.png" alt="" /></p>
+
+<p>By unfreezing the report, the formulas and parameters that were hidden before can now be viewed. If this is the first time seeing these, go to <a href="https://interject.atlassian.net/wiki/display/ID/Basics+of+Report+Formulas"> Basics of Report Formula’s </a> to learn more.</p>
+
+<p>You can see this by opening these sections that <strong>Dairy Products</strong> is being pulled in the <strong>Leftovers</strong> section configured in cell B25. Since you want Dairy Products with the other categories in the main report, you will need to add it.</p>
+
+<p><img src="attachments/128429185/128463332.png?width=880" alt="" /></p>
+
+<p><strong>Step 3:</strong> To move <strong>Dairy Products</strong> into the main section, insert a row. Right click a row anywhere between 15 and 23 and copy it.  By copying a row, it will ensure that the new row inserted keeps the same formatting as the other rows.</p>
+
+<p><img src="attachments/128429185/128494351.png" alt="" /></p>
+
+<p><strong>Step 4:</strong> Now, right click again anywhere in the same range and insert the copied row.</p>
+
+<p><img src="attachments/128429185/128494398.png" alt="" /></p>
+
+<p>This will temporarily create two <strong>Grains/Cereals</strong> sections and you will edit the new one.</p>
+
+<p><img src="attachments/128429185/128487333.png" alt="" /></p>
+
+<p>**<br />
+**</p>
+
+<p><strong>Step 5:</strong> Once you have the new row inserted, you will need to change the category name in the new row to <strong>Dairy Products</strong> in column B. This is called the <strong>Row Definition</strong> and is how INTERJECT knows what data to place in that row. In this example, the column E formula references column B, but this does not have to be the case. You can control what the user sees in column E.</p>
+
+<p>Below, you changed the definition for row 18 to <strong>Dairy Products</strong> and are ready to pull data again so that the row has correct data.</p>
+
+<p><img src="attachments/128429185/128487378.png" alt="" /></p>
+
+<p>**<br />
+**</p>
+
+<p><strong>Step 6:</strong> Because you copied an existing row, the data for Row 18 is still duplicated from Grains/Cereals, <a href="https://interject.atlassian.net/wiki/display/ID/INTERJECT+Add-In+Menu+Items#INTERJECTAdd-InMenuItems-PullData"> Pull </a> the Report to refresh the data and check your work. Data should update for row 18, and <strong>Dairy Products</strong> should disappear from leftovers area.</p>
+
+<p><img src="attachments/128429185/128487447.png" alt="" /></p>
+
+<p>Back to Top</p>
+
+<h3 id="adding-a-new-definition-column">Adding a New Definition Column</h3>
+
+<p>As it is, the report does not describe what each of the categories contains, so add a description column to the report so you know exactly what is in each category.</p>
+
+<p><strong>Step 1:</strong> First, add the column to the report. Call it <strong>Description.</strong> Be sure to make it wide enough to contain the longer description text as shown below.</p>
+
+<p><img src="attachments/128429185/128593093.png" alt="" /></p>
+
+<p><strong>Step 2:</strong> Now add the Column Definition value in the top part of the report so that INTERJECT knows to bring in data to that column.</p>
+
+<p><img src="attachments/128429185/128593158.png" alt="" /></p>
+
+<p><strong>Step 3:</strong> Pull the data to make sure everything works as expected.</p>
+
+<p>** <img src="attachments/128429185/128781487.png" alt="" /> **</p>
+
+<p>This will refresh the data and pull in the new description data, placing it in the specified column.</p>
+
+<p><img src="attachments/128429185/128594005.png" alt="" /></p>
+
+<p>Back to Top</p>
+
+<h3 id="preparing-the-report-to-share">Preparing the Report To Share</h3>
+
+<p>Before saving back changes to the Report Library, clear the data so the next user does not see data that may not be relevant to their cost center.</p>
+
+<p><strong>Step 1:</strong> Here clear the report of all of the data.</p>
+
+<p><img src="attachments/128429185/129012288.png" alt="" /></p>
+
+<p>Now that the data is cleared, use the <a href="/wIndex/128552956.html"> jFreezePanes </a> function to re-freeze the panes on the report so that only the main report area is visible. This report has the jFreezePanes formula in cell G4.</p>
+
+<p>jFreezePanes is not configured for all the example reports, but it is easy to setup when needed.</p>
+
+<p><img src="attachments/128429185/128552501.png" alt="" /></p>
+
+<p><strong>Step 2:</strong> To use the <a href="/wIndex/128552956.html"> jFreezePanes </a> , click the Quick Tools button in the INTERJECT Ribbon and select <strong>Freeze/UnFreeze Panes</strong> .</p>
+
+<p><img src="attachments/128429185/129012329.png" alt="" /></p>
+
+<p>This will automatically freeze the panes to the pre-configured position.</p>
+
+<p><img src="attachments/128429185/128552850.png" alt="" /></p>
+
+<p>And that is all there is to it. You have now modified the Inventory Report with an additional column and row. To know how to save report changes to the Report Library, <a href="https://interject.atlassian.net/wiki/display/ID/Updating+the+Report+Library"> click here </a> .</p>
+
+<p>Back to Top</p>
+
+<h2 id="related-links">Related Links:</h2>
+
+<p><a href="/wAbout/Inventory-Reports_128091499.html"> Inventory Reports </a></p>
+
+<p><a href="/wGetStarted/L3.1-Inventory-Fixed_128429456.html"> L3.1 Inventory Fixed </a></p>
+
+<p><a href="/wAbout/Basics-of-Report-Formulas_61702189.html"> Basics of Report Formulas </a></p>
+
+<p><a href="/wGetStarted/L10-Updating-the-Report-Library_62849583.html"> L10 Updating the Report Library </a></p>
+
+<p><a href="/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html"> INTERJECT Ribbon Menu Items </a></p>
+
+							<!-- tags -->
+							
+							
+							
+							
+							
+							<!-- link corrections -->
+              <script language="JavaScript">
+							var x = document.links.length;
+							var baseHref = document.getElementsByTagName('base')[0].href
+							for (i = 0; i < x; i++) {
+							  var munged = false;
+							  var thisHREF = document.links[i].href;
+							  var originalURL = "/wGetStarted/128429185.html";
+							  if (thisHREF.indexOf(baseHref + "#") > -1) {
+							    // hash fix
+							    //console.log('BEFORE: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							    thisHREF = originalURL + thisHREF.replace(baseHref, "");
+							    //console.log('AFTER: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							  }
+							  if ((thisHREF.indexOf(window.location.hostname) > -1 || thisHREF.indexOf('http') == -1) && document.links[i].className.indexOf("nomunge") < 0) {
+							    munged = true;
+							    thisHREF = thisHREF.replace(".md", "/").replace("/index/", "/");
+							    document.links[i].setAttribute('href', thisHREF);
+							  }
+							}
+							</script>
+							
+						  <div id="ratings-div" style="color:#b9c2cc; text-align: center; margin-top: 150px; visibility: hidden">
+								<div id="pd_rating_holder_8453675"></div>
+								<script type="text/javascript">
+									PDRTJS_settings_8453675 = {
+										"id": "8453675",
+										"unique_id": "wGetStarted/128429185.md",
+										"title": "Interject Documentation > L1.2 Modify> Inventory Report",
+										"permalink": "https://github.com/gointerject/gointerject.github.io/blob/master/wGetStarted/128429185.md"
+									};
+									(function(d, c, j) {
+										if (!document.getElementById(j)) {
+											var pd = d.createElement(c),
+												s;
+											pd.id = j;
+											pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
+											s = document.getElementsByTagName(c)[0];
+											s.parentNode.insertBefore(pd, s);
+										}
+									}(document, 'script', 'pd-rating-js'));
+								</script>
+							</div>
+							
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						<div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+    </ul>
+</div>
+
+						</div>
+					</nav>
+					<div class="col-toc">
+							<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										
+                                            <li style="visibility: show">
+                                                <a href="https://github.com/gointerject/gointerject.github.io/edit/master/wGetStarted/128429185.md">
+                                                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit this page
+                                                </a>
+                                            </li>
+                                        
+										<li><a href="https://github.com/gointerject/gointerject.github.io/issues/new?body=File: [wGetStarted/128429185.md](https://docs.gointerject.com/wGetStarted/128429185.html)"
+															class="nomunge"><i class="fa fa-check" aria-hidden="true"></i> Request docs changes</a></li>
+										<li><a href="http://www.gointerject.com/call-us/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<!-- toggle mode -->
+										<!-- Turn night mode on and off
+										<li>
+											<div class="toggle-mode">
+												<div class="icon">
+													<i class="fa fa-sun-o" aria-hidden="true"></i>
+												</div>
+												<div class="toggle-switch">
+													<label class="switch">
+														<input type="checkbox" id="switch-style">
+														<div class="slider round"></div>
+												</label>
+												</div>
+												<div class="icon">
+													<i class="fa fa-moon-o" aria-hidden="true"></i>
+												</div>
+											</div>
+										</li>
+										-->
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="/wGetStarted/128429185.html#overview" class="nomunge">Overview</a>
+    <ul>
+      <li><a href="/wGetStarted/128429185.html#setting-up-the-report-1" class="nomunge">Setting up the Report</a></li>
+      <li><a href="/wGetStarted/128429185.html#adding-a-row-to-the-report" class="nomunge">Adding a Row to the Report</a></li>
+      <li><a href="/wGetStarted/128429185.html#adding-a-new-definition-column" class="nomunge">Adding a New Definition Column</a></li>
+      <li><a href="/wGetStarted/128429185.html#preparing-the-report-to-share" class="nomunge">Preparing the Report To Share</a></li>
+    </ul>
+  </li>
+  <li><a href="/wGetStarted/128429185.html#related-links" class="nomunge">Related Links:</a></li>
+</ul>
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- The Modal for viewing images -->
+	<div id="modal-main" class="modal" >
+		<img class="modal-content nohover" id="modal-img" style="padding-top: 3%;"/>
+		<span class="close-modal" style="padding-top: 3%;">
+			<i class="fa fa-times-circle fa-1x"></i>
+		</span>
+	</div>
+
+	
+	<footer class="footer">
+		  
+    <div class="container">
+        <div id="footerdiv" class="top_footer">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><h4>GENERAL</h4></li>
+                        <li><a href="http://www.gointerject.com">INTERJECT HOME</a></li>
+                        <li><a href="http://www.gointerject.com/#whatwedobest">WHAT WE DO BEST</a></li>
+                        <li><a href="https://gointerject.com/#benefitsyoucanbankon">BENFITS</a></li>
+                        <li><a href="https://gointerject.com/#whatourclientssay">WHAT OUR CLIENTS SAY</a></li>
+                        <li><a href="https://gointerject.com/#upcomingevents">UPCOMING EVENTS</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://gointerject.com/#whatmatterstous"><h4>WHAT MATTERS TO US</h4> </a></li>
+                        <li><a href="https://gointerject.com/helping-you-master-technology/">Mastering Technology</a></li>
+                        <!--<li><a href="https://gointerject.com/helping-you-master-technology/">Attend Next Event</a></li>-->
+                        <li><a href="https://gointerject.com/helping-you-master-technology/learn-on-your-own/">Learn On Your Own</a></li>
+                        <li><a href="http://www.gointerject.com/kids-coding-clubs/">Kids Coding Club</a></li>
+                        <li><a href="http://www.gointerject.com/helping-you-master-technology/">Tech Talks</a></li> 
+                        <!-- <li><a href="http://www.gointerject.com/#whatwedobest">Reserve Your Spot</a></li> -->
+                        <li><a href="https://gointerject.com/kids-coding-clubs/start-your-own-club/">Start Your Own Club</a></li>
+                        <!-- <li><a href="https://gointerject.com/#whatmatterstous">Never Standing Still</a></li>  -->
+                        <li><a href="https://gointerject.com/never-stand-still-blog/">Our Blog</a></li> 
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><h4>YOUR TEAM</h4></li>
+                        <li><a href="https://gointerject.com/meet-us/">Meet Us</a></li>
+                        <li><a href="https://gointerject.com/join-us/">Join Us</a></li>
+                        <li><a href="https://gointerject.com/call-us/">Call Us</a></li>
+                        <li><h4>SUPPORT</h4></li>
+                        <li><a href="">Wiki / FAQ</a><span style="font-size:10px;padding-left: 7px;">(Coming Soon)</span></li>
+                        <li><a href="">For Developers</a><span style="font-size:10px;padding-left: 7px;">(Coming Soon)</span></li>
+                        <!-- <li class="break"></li> -->
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><h4>CONTACT INFO</h4></li>
+                        <li><strong>Office:</strong> (855) 546-0036</li>
+                        <li><strong>Fax:</strong>  (360) 838-9459</li>
+                        <li><strong>Address:</strong> 1404 NE 134th St. Suite 200, </li>
+                        <li>Vancouver, WA 98685</li> 
+                        <li><strong>E-mail:</strong> info@gointerject.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- ****** This Section is setup for 'the fine text' links ****** -->
+            <!--
+            <div class="footer-nav">
+                <nav class="footer_sub_nav">
+                    <ul class="menu">
+                        <li><a href="">Status</a></li>
+                        <li><a href="">Security</a></li>
+                        <li><a href="">Legal</a></li>
+                    </ul>
+                </nav>
+            </div>
+            -->
+        </div>
+        <div class="bottom_footer">
+            <div class="footer-copyright col-xs-12 col-md-8">
+                <p class="copyright">
+                    Copyright © 2018 INTERJECT Inc. All Rights Reserved.
+                </p>
+            </div>
+            <div class="footer_social_nav">
+                <ul class="nav-social">
+                    <li class="fa fa-twitter"><a href="http://twitter.com/gointerject">Twitter</a></li>
+                    <li class="fa fa-youtube"><a href="http://www.youtube.com/user/gointerject">Youtube</a></li> 
+                    <li class="fa fa-github"><a href="https://github.com/gointerject">Github</a></li>
+                    <li class="fa fa-linkedin"><a href="https://www.linkedin.com/company/gointerject">Linkedin</a></li>
+                    <li class="fa fa-facebook"><a href="https://www.facebook.com/gointerject">Facebook</a></li>  
+                </ul>
+            </div>
+        </div>
+    </div>
+
+	</footer>
+	<link rel="stylesheet" href="/css/github.css">
+	
+	<!-- <script src="/js/anchorlinks.js"></script> -->
+	<script defer src="/js/menu.js"></script>
+	<script src="/js/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<!-- Always include the archive.js, but it doesn't do much unless we are an archive -->
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var interjectVersion = 'v';
+	// In archives, we need to know the page root and we get it from JEKYLL_ENV in the jekyll build command
+	var jekyllEnv = 'development';
+	// If unset (in non-archive branches), defaults to "development". In that case, reset it to empty
+	if (jekyllEnv == 'development') {
+		jekyllEnv = '';
+	}
+	var pageURL = jekyllEnv + '/wGetStarted/128429185.html';
+	</script>
+	<script src="/js/archive.js"></script>
+	<script src="/js/stickyfill.min.js"></script>
+	<script defer src="/js/metadata.js"></script>
+	<script src="/js/glossary.js"></script>
+	<script src="/js/collections_tocs.js"></script>
+	<script defer src="/js/docs.js"></script>
+	<script defer src="/js/toc.js"></script>
+	<script defer src="/js/stylemod.js"></script>
+	<script language="javascript">
+	jQuery(document).ready(function(){
+				hookupTOCEvents();
+			});
+	</script>
+</body>
+
+</html>
