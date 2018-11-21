@@ -56,12 +56,14 @@
 		}
 	</style>
 
+	<!--
 	<script type="text/javascript">
 	  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
 	  analytics.load("IWj9D0UpZHZdZUZX9jl98PcpBFWBnBMy");
 	  analytics.page();
 	  }}();
 	</script>
+	-->
 	{% if site.GH_ENV == "gh_pages" %}
 	<meta name="robots" content="noindex">{% endif %}
 	<!-- favicon -->
@@ -85,7 +87,7 @@
 
 </head>	
 
-<body id="main_body" class="colums" ng-app="Docker" ng-controller="DockerController">
+<body id="main_body" class="colums">
 	
 
 	<header>
@@ -242,6 +244,7 @@
 															class="nomunge"><i class="fa fa-check" aria-hidden="true"></i> Request docs changes</a></li>
 										<li><a href="http://www.gointerject.com/call-us/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
 										<!-- toggle mode -->
+										<!--
 										<li>
 											<div class="toggle-mode">
 												<div class="icon">
@@ -258,6 +261,7 @@
 												</div>
 											</div>
 										</li>
+										-->
 									</ul>
 								</div>
 								{% unless page.notoc %} {% assign my_min = page.toc_min | default: site.toc_min | default: 2 %} {% assign my_max = page.toc_max | default: site.toc_max | default: 3 %} {% assign my_name = page.url | default: "unnamed" %}
@@ -309,7 +313,7 @@
 	// Default to assuming this is an archive and hiding some stuff
 	// See js/archive.js and js/docs.js for logic relating to this
 	var isArchive = true;
-	var dockerVersion = 'v{{ site.docker_ce_stable_version }}';
+	var interjectVersion = 'v{{ site.docker_ce_stable_version }}';
 	// In archives, we need to know the page root and we get it from JEKYLL_ENV in the jekyll build command
 	var jekyllEnv = '{{ jekyll.environment }}';
 	// If unset (in non-archive branches), defaults to "development". In that case, reset it to empty

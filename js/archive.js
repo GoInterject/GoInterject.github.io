@@ -2,12 +2,16 @@
 layout: null
 ---
 
+// should the webpage show the archived documentation bar
+var showArchives = false;
+
+
 /* Only run this if we are online*/
-if (window.navigator.onLine) {
+if (window.navigator.onLine && showArchives) {
   var suppressButterBar = false;
-  /* This JSON file contains a current list of all docs versions of Docker */
+  /* This JSON file contains a current list of all docs versions of Interject */
   $.getJSON("/js/archives.json", function(result){
-    var outerDivStart = '<div id="archive-butterbar"><div class="container"><div style="text-align: center"><span id="archive-list">This is <b><a href="https://docs.gointerject.com/docsarchive/" style="color: #254356; text-decoration: underline !important">archived documentation</a></b> for Docker&nbsp;' + dockerVersion + '. Go to the <a style="color: #254356; text-decoration: underline !important" href="https://docs.gointerject.com/">latest docs</a> or a different version:&nbsp;&nbsp;</span>' +
+    var outerDivStart = '<div id="archive-butterbar"><div class="container"><div style="text-align: center"><span id="archive-list">This is <b><a href="https://docs.gointerject.com/docsarchive/" style="color: #254356; text-decoration: underline !important">archived documentation</a></b> for Interject&nbsp;' + interjectVersion + '. Go to the <a style="color: #254356; text-decoration: underline !important" href="https://docs.gointerject.com/">latest docs</a> or a different version:&nbsp;&nbsp;</span>' +
                                '<span style="z-index: 1001" class="dropdown">';
     var listStart = '<ul class="dropdown-menu" role="menu" aria-labelledby="archive-menu">';
     var listEnd = '</ul>';
@@ -15,11 +19,11 @@ if (window.navigator.onLine) {
     var buttonCode = null;
     var listItems = new Array();
     $.each(result, function(i, field){
-      if ( field.name == dockerVersion && field.current ) {
+      if ( field.name == interjectVersion && field.current ) {
         // We are the current version so we don't need a butterbar
         suppressButterBar = true;
       } else {
-        var prettyName = 'Docker ' + field.name.replace("v", "");
+        var prettyName = 'Interject ' + field.name.replace("v", "");
         // If this archive has current = true, and we don't already have a button
         if ( field.current && buttonCode == null ) {
           // Get the button code
