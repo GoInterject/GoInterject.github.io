@@ -25,8 +25,21 @@ twitter_username: dukog
 github_username:  lyubar
 
 # Build settings
+name: Interject Documentation
 markdown: kramdown
+kramdown:
+  input: GFM
+  gfm_quirks: [paragraph_end, no_auto_typographic]
+  html_to_native: true
+  hard_wrap: false
+  syntax_highlighter: rouge
+  toc_levels: 2..3
+incremental: true
+permalink: pretty
+safe: false
+lsi: false
 theme: minima
+
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
