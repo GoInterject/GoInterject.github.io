@@ -16,7 +16,7 @@ INTERJECT User Documentation provides both quick and detailed guidance for a gro
 This is a knowledge base that captures our best practices, how-to documentation, and answers to most common questions. As always, we are here to help if you can't find what you need in this site. Just email us at help@gointerject.com. We are also happy to connect with you directly!
 
 <!--
-<img src="/images/image.png" width="70%" onclick="zoom_img(this)" />
+<img src="/images/image.png" width="30%" onclick="zoom_img(this)" />
 -->
 
 ### Next, you might want to:
