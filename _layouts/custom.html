@@ -86,11 +86,15 @@
 </head>	
 
 <body id="main_body" class="colums" ng-app="Docker" ng-controller="DockerController">
+	
 
 	<header>
 		{% if page.landing == true %}{% include global-header.html %}{% endif %} {% if page.landing != true %}{% include header.html %}{% endif %}
 	</header>
 
+	
+
+	<!-- nav bar -->
 	<div class="{% if page.landing == true %}wrapper{%else%}wrapper right-open{% endif %}">
 		<div class="container-fluid">
 			<div class="row">
@@ -268,6 +272,14 @@
 		</div>
 	</div>
 
+	<!-- The Modal for viewing images -->
+	<div id="modal-main" class="modal" >
+		<img class="modal-content nohover" id="modal-img" style="padding-top: 3%;"/>
+		<span class="close-modal" style="padding-top: 3%;">
+			<i class="fa fa-times-circle fa-1x"></i>
+		</span>
+	</div>
+
 	{% if page.path == "404.md" %}
 		<script type="text/javascript">
 			var path = window.location.pathname.replace("#","");
@@ -313,6 +325,7 @@
 	<script src="/js/collections_tocs.js"></script>
 	<script defer src="/js/docs.js"></script>
 	<script defer src="/js/toc.js"></script>
+	<script defer src="/js/stylemod.js"></script>
 	<script language="javascript">
 	jQuery(document).ready(function(){
 				hookupTOCEvents();
