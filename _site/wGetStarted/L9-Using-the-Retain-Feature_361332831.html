@@ -1,0 +1,489 @@
+
+<!-- Page generated 2018-11-21 14:32:27 -0800 -->
+<!-- relative link basehrefs -->
+
+	
+	
+	
+		
+			
+		
+	
+		
+			
+			
+
+
+<!-- Logic for 'edit this button' -->
+
+
+
+<!-- End of logic for 'edit this button' -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<base href="/wGetStarted/" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<style id="page_style" type="text/css">
+		@charset "UTF-8";
+		[ng\:cloak],
+		[ng-cloak],
+		[data-ng-cloak],
+		[x-ng-cloak],
+		.ng-cloak,
+		.x-ng-cloak,
+		.ng-hide:not(.ng-hide-animate) {
+			display: none !important;
+		}
+
+		ng\:form {
+			display: block;
+		}
+	</style>
+
+	<!--
+	<script type="text/javascript">
+	  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
+	  analytics.load("IWj9D0UpZHZdZUZX9jl98PcpBFWBnBMy");
+	  analytics.page();
+	  }}();
+	</script>
+	-->
+	
+	<!-- favicon -->
+	<link rel="icon" type="image/x-icon" href="/favicons/docs@2x.ico" sizes="129x128">
+	<meta name="msapplication-TileImage" content="/favicons/docs@2x.ico">
+	<link rel="apple-touch-icon" type="image/x-icon" href="/favicons/docs@2x.ico" sizes="129x128">
+	<meta property="og:image" content="/favicons/docs@2x.ico"/>
+	<!-- metadata -->
+	
+
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css">
+	<link id="pagestyle" rel="stylesheet" href="/css/style.css">
+
+	<!-- Go get "Open Sans" font from Google -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	
+	
+	
+
+</head>	
+
+<body id="main_body" class="colums">
+	
+
+	<header>
+		 <nav class="nav-secondary navbar navbar-fixed-top">
+    <!-- <div class="fan"></div> -->
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="/"><img class="logo" src="/images/site-logo.png" alt="Interject Docs" title="Interject Docs"></a>
+        </div>
+        <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+            <div class="search-form" id="search-div" >
+    <form class="search-form form-inline ng-pristine ng-valid" id="searchForm" action="/search/">
+        <input class="search-field form-control ds-input" id="st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;">
+        <div id="autocompleteContainer">
+            <div id="autocompleteResults"></div>
+        </div>
+        <!-- <button type="submit" class="search-submit btn btn-default">Search</button> -->
+    </form>
+</div>
+<div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <div id="tabs">
+        <ul class="tabs" id="jsTOCHorizontal">
+
+        </ul>
+    </div>
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div class="btn-group" style="visibility: hidden">
+  <button type="button" class="btn btn-default dropdown-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    
+  </ul>
+</div>
+
+    </div>
+</div>
+
+        </div>
+    </div>
+</nav>
+	</header>
+
+	
+
+	<!-- nav bar -->
+	<div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							
+								
+							<h1>Interject Documentation > L9 Using the Retain Feature</h1> 
+									 
+									
+									<span class="reading-time" title="Estimated reading time">
+  <span class="reading-time-label">Estimated reading time: </span>
+  
+  
+    3 minutes
+  
+</span>
+
+									
+							
+							
+							<hr />
+
+<h2 id="overview"><strong>Overview:</strong></h2>
+
+<p>When using INTERJECT to pull data into your spreadsheet, the report area will be cleared before new data is inserted. In some situations, you may want to bypass the clear action and retain some formulas, since pulling could remove formulas you have on other columns related to certain data rows. This is especially true when you are budgeting or forecasting with historical numbers. The report may have history on the left and your forecasting formulas and numbers will be input on the right. This lab will show you how to update the data in a report without deleting rows that must be retained.</p>
+
+<p>The Retain feature relates to reports using the <a href="/wIndex/61702201.html"> ReportVariable() </a> or <a href="/wIndex/61702199.html"> ReportRange() </a> functions. Since INTERJECT must still update your data, it must determine which columns act as the key values, so it can place the correct data in the correct row.</p>
+
+<p>When INTERJECT finds new data, it will add a new row and populate the data. Using the retain feature, INTERJECT will never delete a row, it will simply zero the amounts.</p>
+
+<p>When a new row is added, there are two options: 1) to insert the new row at the bottom of the section or 2) to insert the row based on the sorting of the key values columns. The former is the default, since adding to the bottom of the section helps avoid adding new rows between your formulas. The lab below will walk through these and other steps on how to use the retain feature operates in your reports.</p>
+
+<p>Use the PL Trend report for this lab.</p>
+
+<h3 id="create-simple-formulas">Create Simple Formulas:</h3>
+
+<p>To start, copy the columns  <strong>L-N</strong> in the  <strong>PLTrend</strong> tab and paste them into Column  <strong>P-R.</strong></p>
+
+<p><img src="attachments/361332831/363331616.jpg" alt="" /></p>
+
+<p>Then, unfreeze the sheet.</p>
+
+<p><img src="attachments/361332831/363659320.jpg" alt="" /></p>
+
+<p>Clear out the cell range  <strong>P2:R5</strong> from the new columns so new data does not populate on the right side. This is also a good time to clear out the extra input spaces in the  <strong>P20:R26</strong> cell range.</p>
+
+<p><img src="attachments/361332831/363429948.jpg" alt="" /></p>
+
+<p>Now input  <strong>7002</strong> into  <strong>Location</strong> and  <strong>2002-05</strong> into  <strong>Month.</strong> Then <strong>Pull</strong> the report.</p>
+
+<p><img src="attachments/361332831/363626536.jpg" alt="" /></p>
+
+<p>Now, with the blank section to the right, we will create a projection based on the previous 3 months.</p>
+
+<p>First, in cell  <strong>Q26</strong> , input  <strong>Forecasting Formulas.</strong> Then, edit the formula in  <strong>P27</strong> to be  **=IFERROR(EOMONTH(DATEVALUE(M23 &amp;”-01”),1),”-“) ** . The following month formulas are set to use this formula and will update accordingly.</p>
+
+<p><img src="attachments/361332831/363593824.jpg" alt="" /></p>
+
+<p>Project a 10% increase to every value by inputting  <strong>=L33*1.10</strong> into cell  <strong>P29.</strong> Then copy this formula into the range of the cells from <strong>P29:R152</strong> .</p>
+
+<p><img src="attachments/361332831/363397149.jpg" alt="" /></p>
+
+<p>###</p>
+
+<h3 id="without-retainedrowcolumns">Without RetainedRowColumns:</h3>
+
+<p>If the accounts numbers were to change, the 10% increase would no longer be accurate since the data is old. Re-pull the data to update your numbers.</p>
+
+<p><img src="attachments/361332831/363626541.jpg" alt="" /></p>
+
+<p>Without using the RetainedRowColumns feature, if your formulas are on the same rows as the data detail rows, the formulas get deleted when pulling updated data.</p>
+
+<p><img src="attachments/361332831/363495479.jpg" alt="" /></p>
+
+<p><strong>Note:</strong> The reason that some of the rows do not lose their formulas is because they are what are considered summary rows. A ReportVariable() also contains detail rows which are rows that get deleted on a pull or clear.</p>
+
+<p>###</p>
+
+<h3 id="with-retainedrowcolumns">With RetainedRowColumns:</h3>
+
+<p>To fix this, use the RetainedRowsColumns to retain the rows and your formulas.</p>
+
+<p>To do this, input  <strong>=L33*1.10</strong> into cell  <strong>P29.</strong> Then copy this formula into all of the blue cells.</p>
+
+<p><img src="attachments/361332831/363331621.jpg" alt="" /></p>
+
+<p>Now, click on the cell  <strong>G16,</strong> which contains the ReportVariable() formula. Now click the  <strong>fx</strong> button to pull up the function wizard.</p>
+
+<p><img src="attachments/361332831/363364422.jpg" alt="" /></p>
+
+<p>When selecting a range of cells, RetainedRowColumns uses a single string delimiting character separated list as its input. This means that the  <strong>jcombine()</strong> [link] helper function is required.</p>
+
+<p>Now scroll down to the  <strong>RetainRowColumns.</strong> In that box, input  <strong>jcombine((F2:G2))</strong> . This will retain all inputs in columns  <strong>P-R</strong> in the report.</p>
+
+<p><img src="attachments/361332831/363659325.jpg" alt="" /></p>
+
+<p>Now, if the data changes again, you need to <strong>Pull</strong> the report again.</p>
+
+<p><img src="attachments/361332831/363331626.jpg" alt="" /></p>
+
+<p>Notice that the formulas are still intact and accurate to the new data.</p>
+
+<p><img src="attachments/361332831/363495484.jpg" alt="" /></p>
+
+							<!-- tags -->
+							
+							
+							
+							
+							
+							<!-- link corrections -->
+              <script language="JavaScript">
+							var x = document.links.length;
+							var baseHref = document.getElementsByTagName('base')[0].href
+							for (i = 0; i < x; i++) {
+							  var munged = false;
+							  var thisHREF = document.links[i].href;
+							  var originalURL = "/wGetStarted/L9-Using-the-Retain-Feature_361332831.html";
+							  if (thisHREF.indexOf(baseHref + "#") > -1) {
+							    // hash fix
+							    //console.log('BEFORE: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							    thisHREF = originalURL + thisHREF.replace(baseHref, "");
+							    //console.log('AFTER: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							  }
+							  if ((thisHREF.indexOf(window.location.hostname) > -1 || thisHREF.indexOf('http') == -1) && document.links[i].className.indexOf("nomunge") < 0) {
+							    munged = true;
+							    thisHREF = thisHREF.replace(".md", "/").replace("/index/", "/");
+							    document.links[i].setAttribute('href', thisHREF);
+							  }
+							}
+							</script>
+							
+						  <div id="ratings-div" style="color:#b9c2cc; text-align: center; margin-top: 150px; visibility: hidden">
+								<div id="pd_rating_holder_8453675"></div>
+								<script type="text/javascript">
+									PDRTJS_settings_8453675 = {
+										"id": "8453675",
+										"unique_id": "wGetStarted/L9-Using-the-Retain-Feature_361332831.md",
+										"title": "Interject Documentation > L9 Using the Retain Feature",
+										"permalink": "https://github.com/gointerject/gointerject.github.io/blob/master/wGetStarted/L9-Using-the-Retain-Feature_361332831.md"
+									};
+									(function(d, c, j) {
+										if (!document.getElementById(j)) {
+											var pd = d.createElement(c),
+												s;
+											pd.id = j;
+											pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
+											s = document.getElementsByTagName(c)[0];
+											s.parentNode.insertBefore(pd, s);
+										}
+									}(document, 'script', 'pd-rating-js'));
+								</script>
+							</div>
+							
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						<div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+    </ul>
+</div>
+
+						</div>
+					</nav>
+					<div class="col-toc">
+							<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										
+                                            <li style="visibility: show">
+                                                <a href="https://github.com/gointerject/gointerject.github.io/edit/master/wGetStarted/L9-Using-the-Retain-Feature_361332831.md">
+                                                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit this page
+                                                </a>
+                                            </li>
+                                        
+										<li><a href="https://github.com/gointerject/gointerject.github.io/issues/new?body=File: [wGetStarted/L9-Using-the-Retain-Feature_361332831.md](https://docs.gointerject.com/wGetStarted/L9-Using-the-Retain-Feature_361332831.html)"
+															class="nomunge"><i class="fa fa-check" aria-hidden="true"></i> Request docs changes</a></li>
+										<li><a href="http://www.gointerject.com/call-us/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<!-- toggle mode -->
+										<!-- Turn night mode on and off
+										<li>
+											<div class="toggle-mode">
+												<div class="icon">
+													<i class="fa fa-sun-o" aria-hidden="true"></i>
+												</div>
+												<div class="toggle-switch">
+													<label class="switch">
+														<input type="checkbox" id="switch-style">
+														<div class="slider round"></div>
+												</label>
+												</div>
+												<div class="icon">
+													<i class="fa fa-moon-o" aria-hidden="true"></i>
+												</div>
+											</div>
+										</li>
+										-->
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="/wGetStarted/L9-Using-the-Retain-Feature_361332831.html#overview" class="nomunge">Overview:</a>
+    <ul>
+      <li><a href="/wGetStarted/L9-Using-the-Retain-Feature_361332831.html#create-simple-formulas" class="nomunge">Create Simple Formulas:</a></li>
+      <li><a href="/wGetStarted/L9-Using-the-Retain-Feature_361332831.html#without-retainedrowcolumns" class="nomunge">Without RetainedRowColumns:</a></li>
+      <li><a href="/wGetStarted/L9-Using-the-Retain-Feature_361332831.html#with-retainedrowcolumns" class="nomunge">With RetainedRowColumns:</a></li>
+    </ul>
+  </li>
+</ul>
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- The Modal for viewing images -->
+	<div id="modal-main" class="modal" >
+		<img class="modal-content nohover" id="modal-img" style="padding-top: 3%;"/>
+		<span class="close-modal" style="padding-top: 3%;">
+			<i class="fa fa-times-circle fa-1x"></i>
+		</span>
+	</div>
+
+	
+	<footer class="footer">
+		  
+    <div class="container">
+        <div id="footerdiv" class="top_footer">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><h4>GENERAL</h4></li>
+                        <li><a href="http://www.gointerject.com">INTERJECT HOME</a></li>
+                        <li><a href="http://www.gointerject.com/#whatwedobest">WHAT WE DO BEST</a></li>
+                        <li><a href="https://gointerject.com/#benefitsyoucanbankon">BENFITS</a></li>
+                        <li><a href="https://gointerject.com/#whatourclientssay">WHAT OUR CLIENTS SAY</a></li>
+                        <li><a href="https://gointerject.com/#upcomingevents">UPCOMING EVENTS</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://gointerject.com/#whatmatterstous"><h4>WHAT MATTERS TO US</h4> </a></li>
+                        <li><a href="https://gointerject.com/helping-you-master-technology/">Mastering Technology</a></li>
+                        <!--<li><a href="https://gointerject.com/helping-you-master-technology/">Attend Next Event</a></li>-->
+                        <li><a href="https://gointerject.com/helping-you-master-technology/learn-on-your-own/">Learn On Your Own</a></li>
+                        <li><a href="http://www.gointerject.com/kids-coding-clubs/">Kids Coding Club</a></li>
+                        <li><a href="http://www.gointerject.com/helping-you-master-technology/">Tech Talks</a></li> 
+                        <!-- <li><a href="http://www.gointerject.com/#whatwedobest">Reserve Your Spot</a></li> -->
+                        <li><a href="https://gointerject.com/kids-coding-clubs/start-your-own-club/">Start Your Own Club</a></li>
+                        <!-- <li><a href="https://gointerject.com/#whatmatterstous">Never Standing Still</a></li>  -->
+                        <li><a href="https://gointerject.com/never-stand-still-blog/">Our Blog</a></li> 
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><h4>YOUR TEAM</h4></li>
+                        <li><a href="https://gointerject.com/meet-us/">Meet Us</a></li>
+                        <li><a href="https://gointerject.com/join-us/">Join Us</a></li>
+                        <li><a href="https://gointerject.com/call-us/">Call Us</a></li>
+                        <li><h4>SUPPORT</h4></li>
+                        <li><a href="">Wiki / FAQ</a><span style="font-size:10px;padding-left: 7px;">(Coming Soon)</span></li>
+                        <li><a href="">For Developers</a><span style="font-size:10px;padding-left: 7px;">(Coming Soon)</span></li>
+                        <!-- <li class="break"></li> -->
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><h4>CONTACT INFO</h4></li>
+                        <li><strong>Office:</strong> (855) 546-0036</li>
+                        <li><strong>Fax:</strong>  (360) 838-9459</li>
+                        <li><strong>Address:</strong> 1404 NE 134th St. Suite 200, </li>
+                        <li>Vancouver, WA 98685</li> 
+                        <li><strong>E-mail:</strong> info@gointerject.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- ****** This Section is setup for 'the fine text' links ****** -->
+            <!--
+            <div class="footer-nav">
+                <nav class="footer_sub_nav">
+                    <ul class="menu">
+                        <li><a href="">Status</a></li>
+                        <li><a href="">Security</a></li>
+                        <li><a href="">Legal</a></li>
+                    </ul>
+                </nav>
+            </div>
+            -->
+        </div>
+        <div class="bottom_footer">
+            <div class="footer-copyright col-xs-12 col-md-8">
+                <p class="copyright">
+                    Copyright © 2018 INTERJECT Inc. All Rights Reserved.
+                </p>
+            </div>
+            <div class="footer_social_nav">
+                <ul class="nav-social">
+                    <li class="fa fa-twitter"><a href="http://twitter.com/gointerject">Twitter</a></li>
+                    <li class="fa fa-youtube"><a href="http://www.youtube.com/user/gointerject">Youtube</a></li> 
+                    <li class="fa fa-github"><a href="https://github.com/gointerject">Github</a></li>
+                    <li class="fa fa-linkedin"><a href="https://www.linkedin.com/company/gointerject">Linkedin</a></li>
+                    <li class="fa fa-facebook"><a href="https://www.facebook.com/gointerject">Facebook</a></li>  
+                </ul>
+            </div>
+        </div>
+    </div>
+
+	</footer>
+	<link rel="stylesheet" href="/css/github.css">
+	
+	<!-- <script src="/js/anchorlinks.js"></script> -->
+	<script defer src="/js/menu.js"></script>
+	<script src="/js/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<!-- Always include the archive.js, but it doesn't do much unless we are an archive -->
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var interjectVersion = 'v';
+	// In archives, we need to know the page root and we get it from JEKYLL_ENV in the jekyll build command
+	var jekyllEnv = 'development';
+	// If unset (in non-archive branches), defaults to "development". In that case, reset it to empty
+	if (jekyllEnv == 'development') {
+		jekyllEnv = '';
+	}
+	var pageURL = jekyllEnv + '/wGetStarted/L9-Using-the-Retain-Feature_361332831.html';
+	</script>
+	<script src="/js/archive.js"></script>
+	<script src="/js/stickyfill.min.js"></script>
+	<script defer src="/js/metadata.js"></script>
+	<script src="/js/glossary.js"></script>
+	<script src="/js/collections_tocs.js"></script>
+	<script defer src="/js/docs.js"></script>
+	<script defer src="/js/toc.js"></script>
+	<script defer src="/js/stylemod.js"></script>
+	<script language="javascript">
+	jQuery(document).ready(function(){
+				hookupTOCEvents();
+			});
+	</script>
+</body>
+
+</html>

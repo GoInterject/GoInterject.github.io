@@ -1,0 +1,1005 @@
+
+<!-- Page generated 2018-11-21 14:32:27 -0800 -->
+<!-- relative link basehrefs -->
+
+	
+	
+	
+		
+			
+		
+	
+		
+			
+			
+
+
+<!-- Logic for 'edit this button' -->
+
+
+
+<!-- End of logic for 'edit this button' -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<base href="/wGetStarted/" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<style id="page_style" type="text/css">
+		@charset "UTF-8";
+		[ng\:cloak],
+		[ng-cloak],
+		[data-ng-cloak],
+		[x-ng-cloak],
+		.ng-cloak,
+		.x-ng-cloak,
+		.ng-hide:not(.ng-hide-animate) {
+			display: none !important;
+		}
+
+		ng\:form {
+			display: block;
+		}
+	</style>
+
+	<!--
+	<script type="text/javascript">
+	  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
+	  analytics.load("IWj9D0UpZHZdZUZX9jl98PcpBFWBnBMy");
+	  analytics.page();
+	  }}();
+	</script>
+	-->
+	
+	<!-- favicon -->
+	<link rel="icon" type="image/x-icon" href="/favicons/docs@2x.ico" sizes="129x128">
+	<meta name="msapplication-TileImage" content="/favicons/docs@2x.ico">
+	<link rel="apple-touch-icon" type="image/x-icon" href="/favicons/docs@2x.ico" sizes="129x128">
+	<meta property="og:image" content="/favicons/docs@2x.ico"/>
+	<!-- metadata -->
+	
+
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css">
+	<link id="pagestyle" rel="stylesheet" href="/css/style.css">
+
+	<!-- Go get "Open Sans" font from Google -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	
+	
+	
+
+</head>	
+
+<body id="main_body" class="colums">
+	
+
+	<header>
+		 <nav class="nav-secondary navbar navbar-fixed-top">
+    <!-- <div class="fan"></div> -->
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="/"><img class="logo" src="/images/site-logo.png" alt="Interject Docs" title="Interject Docs"></a>
+        </div>
+        <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+            <div class="search-form" id="search-div" >
+    <form class="search-form form-inline ng-pristine ng-valid" id="searchForm" action="/search/">
+        <input class="search-field form-control ds-input" id="st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;">
+        <div id="autocompleteContainer">
+            <div id="autocompleteResults"></div>
+        </div>
+        <!-- <button type="submit" class="search-submit btn btn-default">Search</button> -->
+    </form>
+</div>
+<div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <div id="tabs">
+        <ul class="tabs" id="jsTOCHorizontal">
+
+        </ul>
+    </div>
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div class="btn-group" style="visibility: hidden">
+  <button type="button" class="btn btn-default dropdown-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    
+  </ul>
+</div>
+
+    </div>
+</div>
+
+        </div>
+    </div>
+</nav>
+	</header>
+
+	
+
+	<!-- nav bar -->
+	<div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							
+								
+							<h1>Interject Documentation > L13.1 Dev> Customer Aging Detail</h1> 
+									 
+									
+									<span class="reading-time" title="Estimated reading time">
+  <span class="reading-time-label">Estimated reading time: </span>
+  
+  
+    16 minutes
+  
+</span>
+
+									
+							
+							
+							<hr />
+
+<h2 id="overview"><strong>Overview</strong></h2>
+
+<p>In this example, you will learn to create a third report, Customer Aging Detail, that will be drilled to from the Customer Aging Report. This report shows a customer’s outstanding balance by individual invoice. The Aging Detail is a more complex report than shown in the earlier lab <a href="/wGetStarted/324403205.html"> Lab 12.2 Dev: Customer Orders </a> , because it leverages two report formulas to create a report with subtotals. You should have already seen the Customer Aging Detail report while reviewing the business use case in the <a href="/wAbout/Customer-Aging_128091294.html"> <strong>Customer Aging in Real-World Walkthroughs</strong> </a> .</p>
+
+<p>You can go directly to any topic of this walk-through by clicking one of the links below.</p>
+
+<ul>
+  <li>
+    <h4 id="verifying-the-data-connection">Verifying the Data Connection</h4>
+  </li>
+  <li>
+    <h4 id="copying-and-modifying-the-data-portal">Copying and Modifying the Data Portal</h4>
+  </li>
+  <li>
+    <h4 id="creating-the-stored-procedure">Creating the Stored Procedure</h4>
+  </li>
+  <li>
+    <h4 id="creating-the-report">Creating the Report</h4>
+  </li>
+  <li>
+    <h4 id="creating-a-new-data-portal-for-2-recordsets">Creating a New Data Portal for 2 Recordsets</h4>
+  </li>
+  <li>
+    <h4 id="updating-the-stored-procedure-for-2-recordsets">Updating the Stored Procedure for 2 Recordsets</h4>
+  </li>
+  <li>
+    <h4 id="updating-the-report-for-2-recordsets">Updating the Report for 2 Recordsets</h4>
+  </li>
+</ul>
+
+<p>###</p>
+
+<h3 id="verifying-the-data-connection-1">Verifying the Data Connection</h3>
+
+<p>Because this report uses the same database as <a href="/wGetStarted/324567045.html"> Dev: Customer Aging Detail </a> , you do not need to create another data connection. The same connection can be used for this report. The connection created in the previous example was named <strong>NorthwindExampleDB_MyName</strong> and your own data connection likely had your name in the suffix.</p>
+
+<h3 id="copying-and-modifying-the-data-portals">Copying and Modifying the Data Portals</h3>
+
+<p>For this report you are going to use two data portals. The first will be the same data portal used in a previous example called <strong>NorthwindCustomers_MyName</strong> . You created your own with your name in the suffix. The below steps will create a copy of this data portal for the customer invoice detail since it saves a little time.</p>
+
+<p><strong>Step 1:</strong> Navigate to the data portal, <strong>NorthwindCustomers_MyName</strong> , and click the green clone button on the top right of the page.</p>
+
+<p><img src="attachments/324435969/328303186.png" alt="" /></p>
+
+<p><strong>Step 2:</strong> A new data portal named, <strong>NorthwindCustomers_MyName_copy</strong> , generates. Change this data portal name to <strong>NorthwindCustomerInvoices_MyName</strong> . Since each Data Portal Code must be unique, you should add your name to the suffix.</p>
+
+<p><img src="attachments/324435969/328269910.jpg" alt="" /></p>
+
+<p><strong>Step 3:</strong> Change the procedure name to run <strong>[demo].[Northwind_Invoices_Pull_MyName]</strong> , which you will create shortly. As in the last step, replace <strong>_MyName</strong> with your own name.</p>
+
+<p><img src="attachments/324435969/328433982.jpg" alt="" /></p>
+
+<p><strong>Step 4:</strong> You will use the existing Formula Parameters but for this example you need to add more more. Select <strong>Click here to add a Formula Parameter</strong> . Enter <strong>IncludePaid</strong> for Name, <strong>varchar</strong> for Type, and <strong>input</strong> for direction. Click the <strong>More</strong> button.</p>
+
+<p><img src="attachments/324435969/328401105.jpg" alt="" /></p>
+
+<p>Enter <strong>Include Paid</strong> for Helper Name and enter <strong>Include Invoices that have already been paid for by the customer</strong> for Comments. Click the Save icon.</p>
+
+<p><img src="attachments/324435969/328532161.jpg" alt="" /></p>
+
+<p><strong>Step 5:</strong> Click the trash can icon on the far right of the Interject_LocalTimeZoneOffset to delete it. You are going to a use a different System Parameter for this data portal to illustrate a new System Parameter that has not been presented in previous examples.</p>
+
+<p><img src="attachments/324435969/328269915.jpg" alt="" /></p>
+
+<p><strong>Step 6:</strong> Click the drop-down on the <strong>Interject_NTLogin</strong> and change it <strong>Interject_RequestContext</strong> . This System Parameter provides all request and user context that is available in a single XML string. It is best practices to use <strong>Interject_RequestContext</strong> as the only System Parameter since it reduces work over the long run. Since this parameter includes all system parameter information, the data portal configuration does not need to be changed if the stored procedure needs to reference additional context. Click Save.</p>
+
+<p><img src="attachments/324435969/328564893.jpg" alt="" /></p>
+
+<p>###</p>
+
+<h3 id="creating-the-stored-procedure-1">Creating the Stored Procedure</h3>
+
+<p>Stored procedures or data APIs serve as a middle tier for an INTERJECT report. In this example, you are using a stored procedure. INTERJECT can retrieve one or more result sets from the stored procedure into the spreadsheet report.</p>
+
+<p>The INTERJECT Website Portal allows you to create and manage the data portals and reference stored procedures you create. Data portals are stored locally in your Excel session when you log into INTERJECT. When requesting data, INTERJECT creates a point-to-point connection with the intended data source.</p>
+
+<p>The steps below assume you are proficient with SQL Management Studio for Microsoft SQL Server and in creating stored procedures. If you need additional training in this area, please contact us at <a href="mailto:info@gointerject.com"> info@gointerject.com </a> .</p>
+
+<p><strong>Step 1:</strong> Create a stored procedure called [demo].[Northwind_Invoices_Pull_MyName] using the following example code. Please use your name in the suffix of the stored procedure name.</p>
+
+<p><strong>Customer Invoices</strong> Expand source</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CREATE PROC [demo].[Northwind_Invoices_Pull_MyName]
+
+	 @CompanyName VARCHAR(100)
+	,@ContactName NVARCHAR(100)
+	,@CustomerID VARCHAR(500) = ''
+	,@IncludePaid VARCHAR(5) = 0
+	,@Interject_RequestContext NVARCHAR(MAX)
+
+AS
+BEGIN
+
+SET NOCOUNT ON  -- helps reduce conflicts with ADO
+
+DECLARE @Interject_LoginName VARCHAR(200)
+DECLARE @UtcOffset	DECIMAL(6,4)
+
+-- Dataset has very old dates
+-- To give a static date to compare to we hard coded the date.
+DECLARE @DateCompare VARCHAR(20) = '1997-09-15'
+DECLARE @ErrorMessage VARCHAR(100)
+
+IF LEN(@CompanyName)&gt;40
+BEGIN
+	SET @ErrorMessage = 'Usernotice:The company search text must not be more than 40 characters.'
+	RAISERROR (@ErrorMessage, 18, 1)
+	RETURN		
+END
+
+-- This is another SP that parses the xml in request context to get the needed system data
+EXEC [demo].[RequestContext_Parse]
+	@Interject_RequestContext		= @Interject_RequestContext	
+	,@Interject_LoginName			= @Interject_LoginName	OUTPUT
+	,@UtcOffset = @UtcOffset OUTPUT
+
+-- @IncludePaid is default 0.
+-- if set to Yes, change it to 1
+IF @IncludePaid = 'Yes'
+	SET @IncludePaid = 1
+
+-----------------------------------------------
+--	REMAINDER OF DATA QUERY
+-----------------------------------------------
+--Create CTE that sorts data by InvoiceDate's difference from the hardcoded DateCompare
+;WITH Invoice_CTE
+AS
+(
+    SELECT 
+		 [CustomerID]
+		,[InvoiceID]
+		,[InvoiceNum]
+		,[InvoiceTotal]
+		,[Current]
+		,[30Days]
+		,[60Days]
+		,[90Days]
+		,[IsPaid]
+	FROM 
+	(
+		SELECT 
+			 i.[CustomerID]
+			,i.[InvoiceID]
+			,i.[InvoiceNum]
+			,i.[InvoiceDate]
+			,i.[InvoiceTotal]
+			,CASE WHEN DATEDIFF(dd,InvoiceDate,@DateCompare) &lt; 30 THEN (i.[InvoiceTotal]) ELSE 0 END AS [Current]
+			,CASE WHEN DATEDIFF(dd,InvoiceDate,@DateCompare) BETWEEN 30 AND 59 THEN (i.[InvoiceTotal]) ELSE 0 END AS [30Days]
+			,CASE WHEN DATEDIFF(dd,InvoiceDate,@DateCompare) BETWEEN 60 AND 89 THEN (i.[InvoiceTotal]) ELSE 0 END AS [60Days]
+			,CASE WHEN DATEDIFF(dd,InvoiceDate,@DateCompare) &gt; 90 THEN (i.[InvoiceTotal]) ELSE 0 END AS [90Days]
+			,@IncludePaid AS IsPaid
+		FROM [demo].[Northwind_Invoices] i
+	) t
+	WHERE [IsPaid] = @IncludePaid
+	GROUP BY [CustomerID]
+			,[InvoiceID] 
+			,[InvoiceNum]
+			,[InvoiceTotal]
+			,[Current]
+			,[30Days]
+			,[60Days]
+			,[90Days]
+			,[IsPaid]
+)
+-- Final Select statement
+SELECT
+	 c.[CustomerID]
+	,c.[CompanyName]
+	,c.[ContactName]
+	,c.[ContactTitle]
+	,c.[Country]
+	,i.[InvoiceID]
+	,i.[InvoiceNum]
+	,i.[InvoiceDate]
+	,i.[OrderTotal]
+    ,i.[Freight]
+    ,i.[InvoiceTotal]
+	,i.[BillName]
+    ,i.[BillAddress]
+    ,i.[BillCity]
+    ,i.[BillCountry]
+	,i.[IsPaid]
+	,o.[OrderID]
+	,cte.[IsPaid]
+	,cte.[Current]
+	,cte.[30Days]
+	,cte.[60Days]
+	,cte.[90Days]
+	,p.[PaidAmount]
+	,n.[KeyValue] AS Note
+	,d.[KeyValue] AS ExpectedDate
+FROM [demo].[Northwind_Invoices] i
+LEFT JOIN [demo].[Northwind_Customers] c
+	ON i.[CustomerID] = c.[CustomerID]
+LEFT JOIN Invoice_CTE cte
+	ON cte.[InvoiceID] = i.[InvoiceID]
+LEFT JOIN demo.Northwind_Payments p
+	ON i.[InvoiceID] = p.[InvoiceID]
+LEFT JOIN demo.Northwind_Orders o
+	ON o.[CustomerID] = i.[CustomerID]
+	AND o.[Freight] = i.[Freight]
+LEFT JOIN demo.Northwind_InvoiceExternal n
+	ON n.[InvoiceID] = i.[InvoiceID]
+	AND n.[KeyName] = 'NOTE'
+LEFT JOIN demo.Northwind_InvoiceExternal d
+	ON d.[InvoiceID] = i.[InvoiceID]
+	AND d.[KeyName] = 'ExpectedDate'
+WHERE 
+	i.IsPaid = @IncludePaid
+	AND
+	(@CompanyName='' OR c.[CompanyName] LIKE '%' + @CompanyName + '%')
+	AND
+	(@ContactName='' OR c.[ContactName] LIKE '%' + @ContactName + '%')
+	AND
+	(@CustomerID='' OR c.[CustomerID] = @CustomerID)
+ORDER BY c.[CompanyName]
+		,i.[InvoiceDate]
+		,i.[InvoiceID]
+
+END
+</code></pre></div></div>
+
+<p>It is important to test the stored procedure in the database before testing it through the INTERJECT platform. Using Interject_RequestContext requires the test scripts to be much longer than in the previous steps. To help with this extra text INTERJECT will create the test code for you using the current users context.</p>
+
+<p><strong>Step 2:</strong> First you must select a report formula that uses the data portal that is mapped to the stored procedure you want to test. You can quickly make a report formula and delete it since you are not creating the spreadsheet report yet. In a spreadsheet tab, in any cell, type <strong>=ReportVariable(“NorthwindCustomerInvoices”,A42:A304,2:2,16:16,Param(H36,H37,H38,””))</strong> but replace the data portal name with the name you created for your own example. Make sure the the cell with the ReportRange() formula is selected.</p>
+
+<p><img src="attachments/324435969/328598112.png" alt="" /></p>
+
+<p><strong>Step 3:</strong> Next, click <strong>Advanced Menu</strong> in the INTERJECT Ribbon.</p>
+
+<p><img src="attachments/83689479/128892592.png" alt="" /></p>
+
+<p>This button is a toggle, so if it is currently showing <strong>Simple Menu</strong> the advanced menu is already showing.</p>
+
+<p><img src="attachments/83689479/128336775.png" alt="" /></p>
+
+<p><strong>Step 4:</strong> Click the <strong>System</strong> dropdown and select <strong>View SQL Test for ActiveCell</strong> . A window will pop up providing the developer with the SQL template used to create the stored procedure.</p>
+
+<p><img src="attachments/324435969/328565047.png" alt="" /></p>
+
+<p><strong>Step 5:</strong> Copy and paste the template code into the development environment, SQL Server Management Studio. <br />
+The full text code is shown below.</p>
+
+<p><strong>Customer Invoices Test Script</strong> Expand source</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Execute [demo].[Northwind_Invoices_Pull_MyName]
+	@CompanyName = 'market'
+	,@ContactName = ''
+	,@CustomerID = ''
+	,@IncludePaid = ''
+	,@Interject_RequestContext = '&lt;?xml version="1.0" encoding="utf-16" standalone="yes"?&gt;
+&lt;RequestContext&gt;
+    &lt;ExcelVersion&gt;16.0&lt;/ExcelVersion&gt;
+    &lt;IdsVersion&gt;2.3.0.11&lt;/IdsVersion&gt;
+    &lt;FileName&gt;Interject_CustomerDemo_v1.xlsx&lt;/FileName&gt;
+    &lt;FilePath&gt;C:\Users\MaryM\AppData\Local\Interject\FileCache&lt;/FilePath&gt;
+    &lt;TabName&gt;CustomerAgingDetail&lt;/TabName&gt;
+    &lt;CellRange&gt;H27&lt;/CellRange&gt;
+    &lt;SourceFunction&gt;Ranges&lt;/SourceFunction&gt;
+    &lt;UtcOffset&gt;-7&lt;/UtcOffset&gt;
+    &lt;ColDefItems&gt;
+        &lt;Value Row="2" Column="1"&gt;
+            &lt;Name&gt;CustomerId&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="2" Column="2"&gt;
+            &lt;Name&gt;InvoiceID&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="2" Column="9"&gt;
+            &lt;Name&gt;InvoiceNum&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="2" Column="10"&gt;
+            &lt;Name&gt;OrderID&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="2" Column="11"&gt;
+            &lt;Name&gt;InvoiceDate&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="2" Column="12"&gt;
+            &lt;Name&gt;Current&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="2" Column="13"&gt;
+            &lt;Name&gt;30Days&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="2" Column="14"&gt;
+            &lt;Name&gt;60Days&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="2" Column="15"&gt;
+            &lt;Name&gt;90Days&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="2" Column="18"&gt;
+            &lt;Name&gt;ExpectedDate&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="2" Column="20"&gt;
+            &lt;Name&gt;Note&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="2" Column="21"&gt;
+            &lt;Name&gt;[Clear]&lt;/Name&gt;
+        &lt;/Value&gt;
+    &lt;/ColDefItems&gt;
+    &lt;ResultDefItems /&gt;
+    &lt;RowDefItems&gt;
+        &lt;Value Row="46" Column="1" ColumnName="CustomerId"&gt;
+            &lt;Name&gt;BOTTM&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="53" Column="1" ColumnName="CustomerId"&gt;
+            &lt;Name&gt;BOTTM&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="60" Column="1" ColumnName="CustomerId"&gt;
+            &lt;Name&gt;BOTTM&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="67" Column="1" ColumnName="CustomerId"&gt;
+            &lt;Name&gt;BOTTM&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="74" Column="1" ColumnName="CustomerId"&gt;
+            &lt;Name&gt;GREAL&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="81" Column="1" ColumnName="CustomerId"&gt;
+            &lt;Name&gt;GREAL&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="88" Column="1" ColumnName="CustomerId"&gt;
+            &lt;Name&gt;GREAL&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="95" Column="1" ColumnName="CustomerId"&gt;
+            &lt;Name&gt;GREAL&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="102" Column="1" ColumnName="CustomerId"&gt;
+            &lt;Name&gt;SAVEA&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="109" Column="1" ColumnName="CustomerId"&gt;
+            &lt;Name&gt;SAVEA&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="116" Column="1" ColumnName="CustomerId"&gt;
+            &lt;Name&gt;SAVEA&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="123" Column="1" ColumnName="CustomerId"&gt;
+            &lt;Name&gt;SAVEA&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="130" Column="1" ColumnName="CustomerId"&gt;
+            &lt;Name&gt;WHITC&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="137" Column="1" ColumnName="CustomerId"&gt;
+            &lt;Name&gt;WHITC&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="144" Column="1" ColumnName="CustomerId"&gt;
+            &lt;Name&gt;WHITC&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="151" Column="1" ColumnName="CustomerId"&gt;
+            &lt;Name&gt;WHITC&lt;/Name&gt;
+        &lt;/Value&gt;
+    &lt;/RowDefItems&gt;
+    &lt;UserContext&gt;
+    &lt;MachineLoginName&gt;MaryM&lt;/MachineLoginName&gt;
+    &lt;MachineName&gt;.&lt;/MachineName&gt;
+    &lt;FullName&gt; &lt;/FullName&gt;
+    &lt;UserId&gt;UUvP4HYoeu&lt;/UserId&gt;
+    &lt;ClientId&gt;CgCfW9qi&lt;/ClientId&gt;
+    &lt;LoginName&gt;MaryM@mycompany.com&lt;/LoginName&gt;
+    &lt;LoginAuthTypeId&gt;10&lt;/LoginAuthTypeId&gt;
+    &lt;LoginDateUtc&gt;05/03/2018 5:39:48&lt;/LoginDateUtc&gt;
+    &lt;UserRoles&gt;
+        &lt;Role&gt;ClientAdmin&lt;/Role&gt;
+    &lt;/UserRoles&gt;
+&lt;/UserContext&gt;
+    &lt;UserContextEncrypted&gt;Encrypted only through interject api protocol, not direct connection&lt;/UserContextEncrypted&gt;
+    &lt;XMLDataToSave&gt;&lt;/XMLDataToSave&gt;
+&lt;/RequestContext&gt;'
+</code></pre></div></div>
+
+<p><strong>Step 7:</strong> When this code is executed, it returns the following result set.</p>
+
+<p><img src="attachments/324435969/328532284.png" alt="" /></p>
+
+<p>###</p>
+
+<h3 id="create-the-report">Create The Report</h3>
+
+<p>At this point you, have a tested a new stored procedure that uses parameters to filter the results. You set up an INTERJECT data connection to go to your example database and you added another INTERJECT data portal to use that connection, which is mapped to the stored procedure that you just created. So now you are ready to build the spreadsheet report using two data portals.</p>
+
+<p>The steps for building the spreadsheet report are in the lab <a href="/wGetStarted/L3.4-Customer-Aging-Detail_128429387.html"> Customer Aging Detail </a> . You have likely completed this in earlier training sessions. Repeat the instructions with your newly created data portals discussed in this topic. When you are done, your report should resemble the screenshot below.</p>
+
+<p><img src="attachments/324435969/328597883.png" alt="" /></p>
+
+<p>###</p>
+
+<h3 id="creating-a-new-data-portal-with-multiple-recordsets">Creating a New Data Portal With Multiple Recordsets</h3>
+
+<p>You just created a report that used ReportRange() to list all the customers with subtotaled regions. Then ReportVariable() was used to populate the invoices for each customer region. Two separate data portals were used and two connections were made to the database.</p>
+
+<p>To illustrate the multiple recordset feature of INTERJECT, you can take this one step further. You can copy the second data portal and stored procedure and modify it so that it returns both recordsets. In this approach, you make only one connection to the database, which is more efficient. And this process requires one less data portal and stored procedure to create.</p>
+
+<p>Multiple recordsets are a very efficient report approach when your data is not a simple list. In this example the feature will work as follows. On the first data request two recordsets are retrieved by INTERJECT. ReportRange() uses the customer summary list recordset but both recordsets temporarily remain in memory until all report formulas are completed. This allows the ReportVariable() to access the second recordset for populating the details in the same report run. The following steps will help you create this change yourself.</p>
+
+<p><strong>Step 1:</strong> Navigate to the data portal that you just created , similar to <strong>NorthwindCustomerInvoices_MyName</strong> , and click the green clone button on the top right of the page.</p>
+
+<p><img src="attachments/324435969/328532225.jpg" alt="" /></p>
+
+<p><strong>Step 2:</strong> A new data portal named, <strong>NorthwindCustomerInvoices_MyName_copy</strong> , generates. Change this data portal name to <strong>NorthwindMultiRecord_MyName</strong> . You can add your name to the suffix, because each data portal code must be unique.</p>
+
+<p><img src="attachments/324435969/328335666.jpg" alt="" /></p>
+
+<p><strong>Step 3:</strong> Change the procedure name to run <strong>[demo].[Northwind_CustomerInvoices_Pull_MyName]</strong> but use your own name as the suffice. You will create this stored procedure shortly. Everything else in the cloned data portal remains the same.</p>
+
+<p><img src="attachments/324435969/328597786.jpg" alt="" /></p>
+
+<p>###</p>
+
+<h3 id="updating-the-stored-procedure-for-2-recordsets-1">Updating the Stored Procedure for 2 Recordsets</h3>
+
+<p><strong>Step 1:</strong> In SQL Server Management Studio, open the stored procedure used in the report that pulled the invoice detail. The stored procedure name should be similar to [demo].[Northwind_Invoices_Pull_MyName].</p>
+
+<p><img src="attachments/324435969/328597796.png" alt="" /></p>
+
+<p><strong>Step 2:</strong> Change the name of the stored procedure to [demo].[Northwind_CustomerInvoices_MyName], using your own name as the suffix. By using ‘Create procedure’ as shown below, the stored procedure will be copied to the new name when executed.</p>
+
+<p><img src="attachments/324435969/328597801.png" alt="" /></p>
+
+<p><strong>Step 3:</strong> Change the <strong>Create procedure</strong> back to <strong>Alter procedure</strong> and continue with editing the new procedure.</p>
+
+<p><strong>Step 4:</strong> You have to make a few changes to the stored procedure so the summary record set showing a list of customers can be provided. First add <strong>into #InvoiceDetail</strong> as shown below. It will put the invoice detail in a temporary table to be used later in the stored procedure.</p>
+
+<p><img src="attachments/324435969/328335685.png" alt="" /></p>
+
+<p><strong>Step 5:</strong> After the SQL statement, add <strong>Select * from #InvoiceDetail</strong> . Then order by the CustomerID. This step returns the invoice detail as the first recordset from the stored procedure.</p>
+
+<p><strong>Step 6:</strong> Next you must use the detail to generate a customer summary list. The below code should be copied into the bottom of the stored procedure. This code simply creates a distinct list of all the customers include in the invoice detail and orders by the customer name.</p>
+
+<p>Steps 5 and 6 should look like below:</p>
+
+<p><strong>Summary From Detail</strong> Expand source</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-- Select all detail from the dataset created above
+SELECT * FROM #InvoiceDetail
+ORDER BY [CustomerID]
+
+-- Select unique customers to form a summary list of all of the customers.
+SELECT DISTINCT 
+	 [CustomerID]
+	,[CompanyName]
+	,[ContactName]
+	,[ContactTitle]
+	,[Country] 
+FROM #InvoiceDetail
+ORDER BY CustomerID
+</code></pre></div></div>
+
+<p><strong>Step 7:</strong> The changes to the stored procedure are complet. It is important to test the stored procedure in the database before testing it through the INTERJECT platform. You can use the same test script used earlier in this topic. Your test code should look similar to the SQL below.</p>
+
+<p><strong>MultiRecord Test Script</strong> Expand source</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Execute [demo].[Northwind_CustomerInvoices_Pull_MyName]
+	@CompanyName = 'market'
+	,@ContactName = ''
+	,@CustomerID = ''
+	,@IncludePaid = ''
+	,@Interject_RequestContext = '&lt;?xml version="1.0" encoding="utf-16" standalone="yes"?&gt;
+&lt;RequestContext&gt;
+    &lt;ExcelVersion&gt;16.0&lt;/ExcelVersion&gt;
+    &lt;IdsVersion&gt;2.3.0.11&lt;/IdsVersion&gt;
+    &lt;FileName&gt;Interject_CustomerDemo_v1.xlsx&lt;/FileName&gt;
+    &lt;FilePath&gt;C:\Users\Marym\AppData\Local\Interject\FileCache&lt;/FilePath&gt;
+    &lt;TabName&gt;CustomerAgingDetail&lt;/TabName&gt;
+    &lt;CellRange&gt;H27&lt;/CellRange&gt;
+    &lt;SourceFunction&gt;Ranges&lt;/SourceFunction&gt;
+    &lt;UtcOffset&gt;-7&lt;/UtcOffset&gt;
+    &lt;ColDefItems&gt;
+        &lt;Value Row="2" Column="1"&gt;
+            &lt;Name&gt;CustomerId&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="2" Column="2"&gt;
+            &lt;Name&gt;InvoiceID&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="2" Column="9"&gt;
+            &lt;Name&gt;InvoiceNum&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="2" Column="10"&gt;
+            &lt;Name&gt;OrderID&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="2" Column="11"&gt;
+            &lt;Name&gt;InvoiceDate&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="2" Column="12"&gt;
+            &lt;Name&gt;Current&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="2" Column="13"&gt;
+            &lt;Name&gt;30Days&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="2" Column="14"&gt;
+            &lt;Name&gt;60Days&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="2" Column="15"&gt;
+            &lt;Name&gt;90Days&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="2" Column="18"&gt;
+            &lt;Name&gt;ExpectedDate&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="2" Column="20"&gt;
+            &lt;Name&gt;Note&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="2" Column="21"&gt;
+            &lt;Name&gt;[Clear]&lt;/Name&gt;
+        &lt;/Value&gt;
+    &lt;/ColDefItems&gt;
+    &lt;ResultDefItems /&gt;
+    &lt;RowDefItems&gt;
+        &lt;Value Row="46" Column="1" ColumnName="CustomerId"&gt;
+            &lt;Name&gt;BOTTM&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="61" Column="1" ColumnName="CustomerId"&gt;
+            &lt;Name&gt;BOTTM&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="76" Column="1" ColumnName="CustomerId"&gt;
+            &lt;Name&gt;BOTTM&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="91" Column="1" ColumnName="CustomerId"&gt;
+            &lt;Name&gt;BOTTM&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="106" Column="1" ColumnName="CustomerId"&gt;
+            &lt;Name&gt;GREAL&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="117" Column="1" ColumnName="CustomerId"&gt;
+            &lt;Name&gt;GREAL&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="128" Column="1" ColumnName="CustomerId"&gt;
+            &lt;Name&gt;GREAL&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="139" Column="1" ColumnName="CustomerId"&gt;
+            &lt;Name&gt;GREAL&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="150" Column="1" ColumnName="CustomerId"&gt;
+            &lt;Name&gt;SAVEA&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="173" Column="1" ColumnName="CustomerId"&gt;
+            &lt;Name&gt;SAVEA&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="196" Column="1" ColumnName="CustomerId"&gt;
+            &lt;Name&gt;SAVEA&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="219" Column="1" ColumnName="CustomerId"&gt;
+            &lt;Name&gt;SAVEA&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="242" Column="1" ColumnName="CustomerId"&gt;
+            &lt;Name&gt;WHITC&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="258" Column="1" ColumnName="CustomerId"&gt;
+            &lt;Name&gt;WHITC&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="274" Column="1" ColumnName="CustomerId"&gt;
+            &lt;Name&gt;WHITC&lt;/Name&gt;
+        &lt;/Value&gt;
+        &lt;Value Row="290" Column="1" ColumnName="CustomerId"&gt;
+            &lt;Name&gt;WHITC&lt;/Name&gt;
+        &lt;/Value&gt;
+    &lt;/RowDefItems&gt;
+    &lt;UserContext&gt;
+    &lt;MachineLoginName&gt;MaryM&lt;/MachineLoginName&gt;
+    &lt;MachineName&gt;.&lt;/MachineName&gt;
+    &lt;FullName&gt; &lt;/FullName&gt;
+    &lt;UserId&gt;UUvP4HYoeu&lt;/UserId&gt;
+    &lt;ClientId&gt;CgCfW9qi&lt;/ClientId&gt;
+    &lt;LoginName&gt;Mary@mycompany.com&lt;/LoginName&gt;
+    &lt;LoginAuthTypeId&gt;10&lt;/LoginAuthTypeId&gt;
+    &lt;LoginDateUtc&gt;05/03/2018 5:39:48&lt;/LoginDateUtc&gt;
+    &lt;UserRoles&gt;
+        &lt;Role&gt;ClientAdmin&lt;/Role&gt;
+    &lt;/UserRoles&gt;
+&lt;/UserContext&gt;
+    &lt;UserContextEncrypted&gt;Encrypted only through interject api protocol, not direct connection&lt;/UserContextEncrypted&gt;
+    &lt;XMLDataToSave&gt;&lt;/XMLDataToSave&gt;
+&lt;/RequestContext&gt;'
+</code></pre></div></div>
+
+<p>When this code is executed, it should return two recordsets as shown below.</p>
+
+<p><img src="attachments/324435969/328532260.png" alt="" /></p>
+
+<p>###</p>
+
+<h3 id="updating-the-report-for-2-recordsets-1">Updating the Report for 2 Recordsets</h3>
+
+<p>You are ready to modify the report to use your new data portal. The changes are simple since you only need to use a new function, jDataPortal(), to specify the data portal recordset number for each report function.</p>
+
+<p><strong>Step 1:</strong> In the <strong>Customer Aging Detail</strong> report that you just completed, change the <strong>=ReportRange()</strong> function by replacing the previous data portal with the new one. However, you will be encasing the new data portal inside a jDataPortal() function. So <strong>=ReportRange(“oldDataPortalCode”,..</strong> becomes <strong>=ReportRange(jDataPortal(“NorthwindMultiRecord_MyName”,2),…</strong> The end result should look like the below screenshot for ReportRange().</p>
+
+<p><img src="attachments/324435969/328401287.png" alt="" /></p>
+
+<p>The second parameter, DataResultNumber, indicates which recordset this report function will use. Using <strong>2</strong> causes the ReportRange() function to grab the second recordset that is a simple list of customers.</p>
+
+<p><strong>Step 4:</strong> Now change the <strong>=ReportVariable()</strong> function by replacing the previous data portal with the new one. Again you must encase the new data portal inside a jDataPortal() function. So <strong>=ReportVariable(“oldDataPortalCode”,..</strong> becomes <strong>=ReportVariable(jDataPortal(“NorthwindMultiRecord_MyName”,1),…</strong> In this step you are using <strong>1</strong> so the first record set is used in this report function. The end result should look like the below screenshot for ReportVariable().</p>
+
+<p><img src="attachments/324435969/328401292.png" alt="" /></p>
+
+<p><strong>Step 5:</strong> Once the report formulas are edited, you can re-pull the data in the report and the results should be the same as when it used two data portals.</p>
+
+<p><img src="attachments/324435969/328532252.png" alt="" /></p>
+
+							<!-- tags -->
+							
+							
+							
+							
+							
+							<!-- link corrections -->
+              <script language="JavaScript">
+							var x = document.links.length;
+							var baseHref = document.getElementsByTagName('base')[0].href
+							for (i = 0; i < x; i++) {
+							  var munged = false;
+							  var thisHREF = document.links[i].href;
+							  var originalURL = "/wGetStarted/324435969.html";
+							  if (thisHREF.indexOf(baseHref + "#") > -1) {
+							    // hash fix
+							    //console.log('BEFORE: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							    thisHREF = originalURL + thisHREF.replace(baseHref, "");
+							    //console.log('AFTER: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							  }
+							  if ((thisHREF.indexOf(window.location.hostname) > -1 || thisHREF.indexOf('http') == -1) && document.links[i].className.indexOf("nomunge") < 0) {
+							    munged = true;
+							    thisHREF = thisHREF.replace(".md", "/").replace("/index/", "/");
+							    document.links[i].setAttribute('href', thisHREF);
+							  }
+							}
+							</script>
+							
+						  <div id="ratings-div" style="color:#b9c2cc; text-align: center; margin-top: 150px; visibility: hidden">
+								<div id="pd_rating_holder_8453675"></div>
+								<script type="text/javascript">
+									PDRTJS_settings_8453675 = {
+										"id": "8453675",
+										"unique_id": "wGetStarted/324435969.md",
+										"title": "Interject Documentation > L13.1 Dev> Customer Aging Detail",
+										"permalink": "https://github.com/gointerject/gointerject.github.io/blob/master/wGetStarted/324435969.md"
+									};
+									(function(d, c, j) {
+										if (!document.getElementById(j)) {
+											var pd = d.createElement(c),
+												s;
+											pd.id = j;
+											pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
+											s = document.getElementsByTagName(c)[0];
+											s.parentNode.insertBefore(pd, s);
+										}
+									}(document, 'script', 'pd-rating-js'));
+								</script>
+							</div>
+							
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						<div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+    </ul>
+</div>
+
+						</div>
+					</nav>
+					<div class="col-toc">
+							<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										
+                                            <li style="visibility: show">
+                                                <a href="https://github.com/gointerject/gointerject.github.io/edit/master/wGetStarted/324435969.md">
+                                                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit this page
+                                                </a>
+                                            </li>
+                                        
+										<li><a href="https://github.com/gointerject/gointerject.github.io/issues/new?body=File: [wGetStarted/324435969.md](https://docs.gointerject.com/wGetStarted/324435969.html)"
+															class="nomunge"><i class="fa fa-check" aria-hidden="true"></i> Request docs changes</a></li>
+										<li><a href="http://www.gointerject.com/call-us/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<!-- toggle mode -->
+										<!-- Turn night mode on and off
+										<li>
+											<div class="toggle-mode">
+												<div class="icon">
+													<i class="fa fa-sun-o" aria-hidden="true"></i>
+												</div>
+												<div class="toggle-switch">
+													<label class="switch">
+														<input type="checkbox" id="switch-style">
+														<div class="slider round"></div>
+												</label>
+												</div>
+												<div class="icon">
+													<i class="fa fa-moon-o" aria-hidden="true"></i>
+												</div>
+											</div>
+										</li>
+										-->
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="/wGetStarted/324435969.html#overview" class="nomunge">Overview</a>
+    <ul>
+      <li><a href="/wGetStarted/324435969.html#verifying-the-data-connection-1" class="nomunge">Verifying the Data Connection</a></li>
+      <li><a href="/wGetStarted/324435969.html#copying-and-modifying-the-data-portals" class="nomunge">Copying and Modifying the Data Portals</a></li>
+      <li><a href="/wGetStarted/324435969.html#creating-the-stored-procedure-1" class="nomunge">Creating the Stored Procedure</a></li>
+      <li><a href="/wGetStarted/324435969.html#create-the-report" class="nomunge">Create The Report</a></li>
+      <li><a href="/wGetStarted/324435969.html#creating-a-new-data-portal-with-multiple-recordsets" class="nomunge">Creating a New Data Portal With Multiple Recordsets</a></li>
+      <li><a href="/wGetStarted/324435969.html#updating-the-stored-procedure-for-2-recordsets-1" class="nomunge">Updating the Stored Procedure for 2 Recordsets</a></li>
+      <li><a href="/wGetStarted/324435969.html#updating-the-report-for-2-recordsets-1" class="nomunge">Updating the Report for 2 Recordsets</a></li>
+    </ul>
+  </li>
+</ul>
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- The Modal for viewing images -->
+	<div id="modal-main" class="modal" >
+		<img class="modal-content nohover" id="modal-img" style="padding-top: 3%;"/>
+		<span class="close-modal" style="padding-top: 3%;">
+			<i class="fa fa-times-circle fa-1x"></i>
+		</span>
+	</div>
+
+	
+	<footer class="footer">
+		  
+    <div class="container">
+        <div id="footerdiv" class="top_footer">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><h4>GENERAL</h4></li>
+                        <li><a href="http://www.gointerject.com">INTERJECT HOME</a></li>
+                        <li><a href="http://www.gointerject.com/#whatwedobest">WHAT WE DO BEST</a></li>
+                        <li><a href="https://gointerject.com/#benefitsyoucanbankon">BENFITS</a></li>
+                        <li><a href="https://gointerject.com/#whatourclientssay">WHAT OUR CLIENTS SAY</a></li>
+                        <li><a href="https://gointerject.com/#upcomingevents">UPCOMING EVENTS</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://gointerject.com/#whatmatterstous"><h4>WHAT MATTERS TO US</h4> </a></li>
+                        <li><a href="https://gointerject.com/helping-you-master-technology/">Mastering Technology</a></li>
+                        <!--<li><a href="https://gointerject.com/helping-you-master-technology/">Attend Next Event</a></li>-->
+                        <li><a href="https://gointerject.com/helping-you-master-technology/learn-on-your-own/">Learn On Your Own</a></li>
+                        <li><a href="http://www.gointerject.com/kids-coding-clubs/">Kids Coding Club</a></li>
+                        <li><a href="http://www.gointerject.com/helping-you-master-technology/">Tech Talks</a></li> 
+                        <!-- <li><a href="http://www.gointerject.com/#whatwedobest">Reserve Your Spot</a></li> -->
+                        <li><a href="https://gointerject.com/kids-coding-clubs/start-your-own-club/">Start Your Own Club</a></li>
+                        <!-- <li><a href="https://gointerject.com/#whatmatterstous">Never Standing Still</a></li>  -->
+                        <li><a href="https://gointerject.com/never-stand-still-blog/">Our Blog</a></li> 
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><h4>YOUR TEAM</h4></li>
+                        <li><a href="https://gointerject.com/meet-us/">Meet Us</a></li>
+                        <li><a href="https://gointerject.com/join-us/">Join Us</a></li>
+                        <li><a href="https://gointerject.com/call-us/">Call Us</a></li>
+                        <li><h4>SUPPORT</h4></li>
+                        <li><a href="">Wiki / FAQ</a><span style="font-size:10px;padding-left: 7px;">(Coming Soon)</span></li>
+                        <li><a href="">For Developers</a><span style="font-size:10px;padding-left: 7px;">(Coming Soon)</span></li>
+                        <!-- <li class="break"></li> -->
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><h4>CONTACT INFO</h4></li>
+                        <li><strong>Office:</strong> (855) 546-0036</li>
+                        <li><strong>Fax:</strong>  (360) 838-9459</li>
+                        <li><strong>Address:</strong> 1404 NE 134th St. Suite 200, </li>
+                        <li>Vancouver, WA 98685</li> 
+                        <li><strong>E-mail:</strong> info@gointerject.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- ****** This Section is setup for 'the fine text' links ****** -->
+            <!--
+            <div class="footer-nav">
+                <nav class="footer_sub_nav">
+                    <ul class="menu">
+                        <li><a href="">Status</a></li>
+                        <li><a href="">Security</a></li>
+                        <li><a href="">Legal</a></li>
+                    </ul>
+                </nav>
+            </div>
+            -->
+        </div>
+        <div class="bottom_footer">
+            <div class="footer-copyright col-xs-12 col-md-8">
+                <p class="copyright">
+                    Copyright © 2018 INTERJECT Inc. All Rights Reserved.
+                </p>
+            </div>
+            <div class="footer_social_nav">
+                <ul class="nav-social">
+                    <li class="fa fa-twitter"><a href="http://twitter.com/gointerject">Twitter</a></li>
+                    <li class="fa fa-youtube"><a href="http://www.youtube.com/user/gointerject">Youtube</a></li> 
+                    <li class="fa fa-github"><a href="https://github.com/gointerject">Github</a></li>
+                    <li class="fa fa-linkedin"><a href="https://www.linkedin.com/company/gointerject">Linkedin</a></li>
+                    <li class="fa fa-facebook"><a href="https://www.facebook.com/gointerject">Facebook</a></li>  
+                </ul>
+            </div>
+        </div>
+    </div>
+
+	</footer>
+	<link rel="stylesheet" href="/css/github.css">
+	
+	<!-- <script src="/js/anchorlinks.js"></script> -->
+	<script defer src="/js/menu.js"></script>
+	<script src="/js/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<!-- Always include the archive.js, but it doesn't do much unless we are an archive -->
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var interjectVersion = 'v';
+	// In archives, we need to know the page root and we get it from JEKYLL_ENV in the jekyll build command
+	var jekyllEnv = 'development';
+	// If unset (in non-archive branches), defaults to "development". In that case, reset it to empty
+	if (jekyllEnv == 'development') {
+		jekyllEnv = '';
+	}
+	var pageURL = jekyllEnv + '/wGetStarted/324435969.html';
+	</script>
+	<script src="/js/archive.js"></script>
+	<script src="/js/stickyfill.min.js"></script>
+	<script defer src="/js/metadata.js"></script>
+	<script src="/js/glossary.js"></script>
+	<script src="/js/collections_tocs.js"></script>
+	<script defer src="/js/docs.js"></script>
+	<script defer src="/js/toc.js"></script>
+	<script defer src="/js/stylemod.js"></script>
+	<script language="javascript">
+	jQuery(document).ready(function(){
+				hookupTOCEvents();
+			});
+	</script>
+</body>
+
+</html>

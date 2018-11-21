@@ -1,0 +1,551 @@
+
+<!-- Page generated 2018-11-21 14:32:27 -0800 -->
+<!-- relative link basehrefs -->
+
+	
+	
+	
+		
+			
+		
+	
+		
+			
+			
+
+
+<!-- Logic for 'edit this button' -->
+
+
+
+<!-- End of logic for 'edit this button' -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<base href="/wGetStarted/" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<style id="page_style" type="text/css">
+		@charset "UTF-8";
+		[ng\:cloak],
+		[ng-cloak],
+		[data-ng-cloak],
+		[x-ng-cloak],
+		.ng-cloak,
+		.x-ng-cloak,
+		.ng-hide:not(.ng-hide-animate) {
+			display: none !important;
+		}
+
+		ng\:form {
+			display: block;
+		}
+	</style>
+
+	<!--
+	<script type="text/javascript">
+	  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
+	  analytics.load("IWj9D0UpZHZdZUZX9jl98PcpBFWBnBMy");
+	  analytics.page();
+	  }}();
+	</script>
+	-->
+	
+	<!-- favicon -->
+	<link rel="icon" type="image/x-icon" href="/favicons/docs@2x.ico" sizes="129x128">
+	<meta name="msapplication-TileImage" content="/favicons/docs@2x.ico">
+	<link rel="apple-touch-icon" type="image/x-icon" href="/favicons/docs@2x.ico" sizes="129x128">
+	<meta property="og:image" content="/favicons/docs@2x.ico"/>
+	<!-- metadata -->
+	
+
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css">
+	<link id="pagestyle" rel="stylesheet" href="/css/style.css">
+
+	<!-- Go get "Open Sans" font from Google -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	
+	
+	
+
+</head>	
+
+<body id="main_body" class="colums">
+	
+
+	<header>
+		 <nav class="nav-secondary navbar navbar-fixed-top">
+    <!-- <div class="fan"></div> -->
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="/"><img class="logo" src="/images/site-logo.png" alt="Interject Docs" title="Interject Docs"></a>
+        </div>
+        <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+            <div class="search-form" id="search-div" >
+    <form class="search-form form-inline ng-pristine ng-valid" id="searchForm" action="/search/">
+        <input class="search-field form-control ds-input" id="st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;">
+        <div id="autocompleteContainer">
+            <div id="autocompleteResults"></div>
+        </div>
+        <!-- <button type="submit" class="search-submit btn btn-default">Search</button> -->
+    </form>
+</div>
+<div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <div id="tabs">
+        <ul class="tabs" id="jsTOCHorizontal">
+
+        </ul>
+    </div>
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div class="btn-group" style="visibility: hidden">
+  <button type="button" class="btn btn-default dropdown-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    
+  </ul>
+</div>
+
+    </div>
+</div>
+
+        </div>
+    </div>
+</nav>
+	</header>
+
+	
+
+	<!-- nav bar -->
+	<div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							
+								
+							<h1>Interject Documentation > L8 Protecting Sheets</h1> 
+									 
+									
+									<span class="reading-time" title="Estimated reading time">
+  <span class="reading-time-label">Estimated reading time: </span>
+  
+  
+    4 minutes
+  
+</span>
+
+									
+							
+							
+							<hr />
+
+<h2 id="overview">Overview:</h2>
+
+<p>INTERJECT provides an improved method to handle protecting sheets. The Sheet Protector window allows INTERJECT users with the Client Admin role to quickly protect or unprotect the sheet without any need to know the password. The password is default to a very long text string and is managed centrally by the INTERJECT client profile. By doing this, users no longer have to remember passwords and they can be more complex to improve security.</p>
+
+<p>When a sheet is protected using the Sheet Protector window, it will first attempt to use the current password. If that attempt fails it will try any previous passwords that are on file. If those do not work, it will also attempt to use a blank password.</p>
+
+<p>In the following lab, you will protect a sheet and use the INTERJECT pull to illustrate how protected sheets continues to function properly. In this lab you use the Customer Aging report</p>
+
+<ul>
+  <li>** Unprotecting Cells for User Input  **</li>
+  <li>** Protecting the Sheet and Pulling Data  **</li>
+  <li>** Multiple Sheets  **</li>
+  <li>** Special Consideration for Column Groupings  **</li>
+</ul>
+
+<p>###</p>
+
+<h3 id="unprotecting-cells-for-user-input">Unprotecting Cells for User Input:</h3>
+
+<p>INTERJECT requires the user to have one of the following roles for your company. This removes the need to set a password.</p>
+
+<ul>
+  <li>Client Admin</li>
+  <li>Protector</li>
+  <li>Editor</li>
+</ul>
+
+<p>Protecting the sheet still allows for pulls, drills, and many other types of INTERJECT formulas and features. A crucial part of INTERJECT is to still allow users to utilize the input fields built into reports. Protecting the sheet with INTERJECT allows for user inputs to remain unlocked regardless of the user’s role.</p>
+
+<p>One way of doing this is to first select cells  <strong>C17, C18, C19</strong> .</p>
+
+<p><img src="attachments/335151182/353140737.jpg" alt="" /></p>
+
+<p>Right click and select  <strong>Format Cells</strong> .</p>
+
+<p><img src="attachments/335151182/353042452.jpg" alt="" /></p>
+
+<p>A new window will pop up. Select  <strong>Protection</strong> and u  ncheck  <strong>Locked</strong> then click <strong>OK.</strong></p>
+
+<p><img src="attachments/335151182/353042457.jpg" alt="" /></p>
+
+<p>Another way to leave filter cells unprotected is to use the  <strong>Allow Users to Edit Range</strong> tool in the <strong>Review</strong> ribbon in Excel.</p>
+
+<p><img src="attachments/335151182/354582628.jpg" alt="" /></p>
+
+<p>A window will appear, select  <strong>New</strong></p>
+
+<p><img src="attachments/335151182/354713671.jpg" alt="" /></p>
+
+<p>In the title field, type  <strong>Filters</strong> then in the <strong>Refers to cells</strong> field, select cells <strong>C17, C18, C19</strong> then click <strong>Ok</strong> then <strong>Apply</strong> .</p>
+
+<p><img src="attachments/335151182/354680872.jpg" alt="" /></p>
+
+<p><strong>Note:</strong> If the password field is left empty for the named range then anyone can use the filters for the report but they cannot change the data outside of the filter range.</p>
+
+<p>###</p>
+
+<h3 id="protecting-the-sheet-and-pulling-data">Protecting the Sheet and Pulling Data</h3>
+
+<p>INTERJECT’s Sheet Protection tool has three options,  <strong>Unprotect, Protect</strong> , and  <strong>Cancel</strong> .</p>
+
+<ul>
+  <li><strong>Protect</strong> has additional options, which includes choosing to protect the current sheet or the whole workbook.</li>
+  <li><strong>Unprotect</strong> will unprotect the current spreadsheet if the user has the correct role within our company.</li>
+  <li><strong>Cancel</strong> will close INTERJECT’s Sheet Protection tool.</li>
+</ul>
+
+<p>Navigate to the Interject Ribbon and select  <strong>Sheet Protector</strong> then select  <strong>Protect.</strong></p>
+
+<p><img src="attachments/335151182/354713676.jpg" alt="" /></p>
+
+<p>To verify that the filter cells are not locked, input Market into the Company Name parameter t  hen pull the report.</p>
+
+<p><img src="attachments/335151182/353140789.jpg" alt="" /></p>
+
+<p>The speadsheet should look like this after.</p>
+
+<p><img src="attachments/335151182/353402903.jpg" alt="" /></p>
+
+<p>Now if someone were to try and alter your data, for instance, changing the CustomerID of one of your records, they cannot since they do not have your user role.</p>
+
+<p><img src="attachments/335151182/354844717.jpg" alt="" /></p>
+
+<p>Now in cell  <strong>C19</strong> input  <strong>SAVEA</strong> to verify that the input filters are not protected and pull the report.</p>
+
+<p><img src="attachments/335151182/354779186.jpg" alt="" /></p>
+
+<p>###</p>
+
+<h3 id="multiple-sheets">Multiple Sheets:</h3>
+
+<p>Setup a grouping for columns I:L by selecting the columns, then navigating to the  <strong>Data Ribbon</strong> and select  <strong>Group</strong> .</p>
+
+<p><img src="attachments/335151182/354844722.jpg" alt="" /></p>
+
+<p>Now, hold down the  <strong>shift</strong> key and select  <strong>CustomerAccountDetail</strong> to select five different sheets.</p>
+
+<p><img src="attachments/335151182/354648106.jpg" alt="" /></p>
+
+<p>With these selected, navigate back to the INTERJECT ribbon and protect the sheet</p>
+
+<p><img src="attachments/335151182/354811977.jpg" alt="" /></p>
+
+<p>This will protect all five of the sheets but leave sheets that were not selected alone.</p>
+
+<p>###</p>
+
+<h3 id="special-consideration-for-column-groupings">Special Consideration for Column Groupings</h3>
+
+<p>The INTERJECT Sheet Protector also allows for groupings to be expanded and contracted</p>
+
+<p><img src="attachments/335151182/354680877.jpg" alt="" /></p>
+
+<p><strong>Note:</strong> INTERJECT leverages the existing sheet protector in native excel. For this reason, most of the restrictions and rights are the same.</p>
+
+<p>Directly after protecting a sheet, groupings are still operational.</p>
+
+<p><img src="attachments/335151182/354779191.jpg" alt="" /></p>
+
+<p>However, closing and reopening a protected sheet with groupings in it will render the groupings locked. If you select the grouping toggle then it will be protected.</p>
+
+<p><img src="attachments/335151182/354615363.jpg" alt="" /></p>
+
+<p>There are two ways to fix this.</p>
+
+<p><strong>Option 1:</strong></p>
+
+<p>Pulling the report will refresh the protection settings. One of the settings that are refreshed is the protection of groupings. After a pull, groupings are unlocked while the rest of the report is still locked.</p>
+
+<p><img src="attachments/335151182/354779205.jpg" alt="" /></p>
+
+<p><strong>Option 2:</strong></p>
+
+<p>The other way is to navigate to the INTERJECT Ribbon and click on the <strong>Advanced</strong> <strong>Menu</strong> to enter the advanced menu.</p>
+
+<p><img src="attachments/335151182/354615363.jpg" alt="" /></p>
+
+<p>Select the  <strong>system</strong> dropdown and click  <strong>Re-enable Protecting Groupings</strong></p>
+
+<p><img src="attachments/335151182/353861636.jpg" alt="" /></p>
+
+<p>Now, the sheet is still protected but groupings can function as normal.</p>
+
+							<!-- tags -->
+							
+							
+							
+							
+							
+							<!-- link corrections -->
+              <script language="JavaScript">
+							var x = document.links.length;
+							var baseHref = document.getElementsByTagName('base')[0].href
+							for (i = 0; i < x; i++) {
+							  var munged = false;
+							  var thisHREF = document.links[i].href;
+							  var originalURL = "/wGetStarted/L8-Protecting-Sheets_335151182.html";
+							  if (thisHREF.indexOf(baseHref + "#") > -1) {
+							    // hash fix
+							    //console.log('BEFORE: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							    thisHREF = originalURL + thisHREF.replace(baseHref, "");
+							    //console.log('AFTER: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							  }
+							  if ((thisHREF.indexOf(window.location.hostname) > -1 || thisHREF.indexOf('http') == -1) && document.links[i].className.indexOf("nomunge") < 0) {
+							    munged = true;
+							    thisHREF = thisHREF.replace(".md", "/").replace("/index/", "/");
+							    document.links[i].setAttribute('href', thisHREF);
+							  }
+							}
+							</script>
+							
+						  <div id="ratings-div" style="color:#b9c2cc; text-align: center; margin-top: 150px; visibility: hidden">
+								<div id="pd_rating_holder_8453675"></div>
+								<script type="text/javascript">
+									PDRTJS_settings_8453675 = {
+										"id": "8453675",
+										"unique_id": "wGetStarted/L8-Protecting-Sheets_335151182.md",
+										"title": "Interject Documentation > L8 Protecting Sheets",
+										"permalink": "https://github.com/gointerject/gointerject.github.io/blob/master/wGetStarted/L8-Protecting-Sheets_335151182.md"
+									};
+									(function(d, c, j) {
+										if (!document.getElementById(j)) {
+											var pd = d.createElement(c),
+												s;
+											pd.id = j;
+											pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
+											s = document.getElementsByTagName(c)[0];
+											s.parentNode.insertBefore(pd, s);
+										}
+									}(document, 'script', 'pd-rating-js'));
+								</script>
+							</div>
+							
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						<div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+    </ul>
+</div>
+
+						</div>
+					</nav>
+					<div class="col-toc">
+							<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										
+                                            <li style="visibility: show">
+                                                <a href="https://github.com/gointerject/gointerject.github.io/edit/master/wGetStarted/L8-Protecting-Sheets_335151182.md">
+                                                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit this page
+                                                </a>
+                                            </li>
+                                        
+										<li><a href="https://github.com/gointerject/gointerject.github.io/issues/new?body=File: [wGetStarted/L8-Protecting-Sheets_335151182.md](https://docs.gointerject.com/wGetStarted/L8-Protecting-Sheets_335151182.html)"
+															class="nomunge"><i class="fa fa-check" aria-hidden="true"></i> Request docs changes</a></li>
+										<li><a href="http://www.gointerject.com/call-us/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<!-- toggle mode -->
+										<!-- Turn night mode on and off
+										<li>
+											<div class="toggle-mode">
+												<div class="icon">
+													<i class="fa fa-sun-o" aria-hidden="true"></i>
+												</div>
+												<div class="toggle-switch">
+													<label class="switch">
+														<input type="checkbox" id="switch-style">
+														<div class="slider round"></div>
+												</label>
+												</div>
+												<div class="icon">
+													<i class="fa fa-moon-o" aria-hidden="true"></i>
+												</div>
+											</div>
+										</li>
+										-->
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="/wGetStarted/L8-Protecting-Sheets_335151182.html#overview" class="nomunge">Overview:</a>
+    <ul>
+      <li><a href="/wGetStarted/L8-Protecting-Sheets_335151182.html#unprotecting-cells-for-user-input" class="nomunge">Unprotecting Cells for User Input:</a></li>
+      <li><a href="/wGetStarted/L8-Protecting-Sheets_335151182.html#protecting-the-sheet-and-pulling-data" class="nomunge">Protecting the Sheet and Pulling Data</a></li>
+      <li><a href="/wGetStarted/L8-Protecting-Sheets_335151182.html#multiple-sheets" class="nomunge">Multiple Sheets:</a></li>
+      <li><a href="/wGetStarted/L8-Protecting-Sheets_335151182.html#special-consideration-for-column-groupings" class="nomunge">Special Consideration for Column Groupings</a></li>
+    </ul>
+  </li>
+</ul>
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- The Modal for viewing images -->
+	<div id="modal-main" class="modal" >
+		<img class="modal-content nohover" id="modal-img" style="padding-top: 3%;"/>
+		<span class="close-modal" style="padding-top: 3%;">
+			<i class="fa fa-times-circle fa-1x"></i>
+		</span>
+	</div>
+
+	
+	<footer class="footer">
+		  
+    <div class="container">
+        <div id="footerdiv" class="top_footer">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><h4>GENERAL</h4></li>
+                        <li><a href="http://www.gointerject.com">INTERJECT HOME</a></li>
+                        <li><a href="http://www.gointerject.com/#whatwedobest">WHAT WE DO BEST</a></li>
+                        <li><a href="https://gointerject.com/#benefitsyoucanbankon">BENFITS</a></li>
+                        <li><a href="https://gointerject.com/#whatourclientssay">WHAT OUR CLIENTS SAY</a></li>
+                        <li><a href="https://gointerject.com/#upcomingevents">UPCOMING EVENTS</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://gointerject.com/#whatmatterstous"><h4>WHAT MATTERS TO US</h4> </a></li>
+                        <li><a href="https://gointerject.com/helping-you-master-technology/">Mastering Technology</a></li>
+                        <!--<li><a href="https://gointerject.com/helping-you-master-technology/">Attend Next Event</a></li>-->
+                        <li><a href="https://gointerject.com/helping-you-master-technology/learn-on-your-own/">Learn On Your Own</a></li>
+                        <li><a href="http://www.gointerject.com/kids-coding-clubs/">Kids Coding Club</a></li>
+                        <li><a href="http://www.gointerject.com/helping-you-master-technology/">Tech Talks</a></li> 
+                        <!-- <li><a href="http://www.gointerject.com/#whatwedobest">Reserve Your Spot</a></li> -->
+                        <li><a href="https://gointerject.com/kids-coding-clubs/start-your-own-club/">Start Your Own Club</a></li>
+                        <!-- <li><a href="https://gointerject.com/#whatmatterstous">Never Standing Still</a></li>  -->
+                        <li><a href="https://gointerject.com/never-stand-still-blog/">Our Blog</a></li> 
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><h4>YOUR TEAM</h4></li>
+                        <li><a href="https://gointerject.com/meet-us/">Meet Us</a></li>
+                        <li><a href="https://gointerject.com/join-us/">Join Us</a></li>
+                        <li><a href="https://gointerject.com/call-us/">Call Us</a></li>
+                        <li><h4>SUPPORT</h4></li>
+                        <li><a href="">Wiki / FAQ</a><span style="font-size:10px;padding-left: 7px;">(Coming Soon)</span></li>
+                        <li><a href="">For Developers</a><span style="font-size:10px;padding-left: 7px;">(Coming Soon)</span></li>
+                        <!-- <li class="break"></li> -->
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><h4>CONTACT INFO</h4></li>
+                        <li><strong>Office:</strong> (855) 546-0036</li>
+                        <li><strong>Fax:</strong>  (360) 838-9459</li>
+                        <li><strong>Address:</strong> 1404 NE 134th St. Suite 200, </li>
+                        <li>Vancouver, WA 98685</li> 
+                        <li><strong>E-mail:</strong> info@gointerject.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- ****** This Section is setup for 'the fine text' links ****** -->
+            <!--
+            <div class="footer-nav">
+                <nav class="footer_sub_nav">
+                    <ul class="menu">
+                        <li><a href="">Status</a></li>
+                        <li><a href="">Security</a></li>
+                        <li><a href="">Legal</a></li>
+                    </ul>
+                </nav>
+            </div>
+            -->
+        </div>
+        <div class="bottom_footer">
+            <div class="footer-copyright col-xs-12 col-md-8">
+                <p class="copyright">
+                    Copyright © 2018 INTERJECT Inc. All Rights Reserved.
+                </p>
+            </div>
+            <div class="footer_social_nav">
+                <ul class="nav-social">
+                    <li class="fa fa-twitter"><a href="http://twitter.com/gointerject">Twitter</a></li>
+                    <li class="fa fa-youtube"><a href="http://www.youtube.com/user/gointerject">Youtube</a></li> 
+                    <li class="fa fa-github"><a href="https://github.com/gointerject">Github</a></li>
+                    <li class="fa fa-linkedin"><a href="https://www.linkedin.com/company/gointerject">Linkedin</a></li>
+                    <li class="fa fa-facebook"><a href="https://www.facebook.com/gointerject">Facebook</a></li>  
+                </ul>
+            </div>
+        </div>
+    </div>
+
+	</footer>
+	<link rel="stylesheet" href="/css/github.css">
+	
+	<!-- <script src="/js/anchorlinks.js"></script> -->
+	<script defer src="/js/menu.js"></script>
+	<script src="/js/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<!-- Always include the archive.js, but it doesn't do much unless we are an archive -->
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var interjectVersion = 'v';
+	// In archives, we need to know the page root and we get it from JEKYLL_ENV in the jekyll build command
+	var jekyllEnv = 'development';
+	// If unset (in non-archive branches), defaults to "development". In that case, reset it to empty
+	if (jekyllEnv == 'development') {
+		jekyllEnv = '';
+	}
+	var pageURL = jekyllEnv + '/wGetStarted/L8-Protecting-Sheets_335151182.html';
+	</script>
+	<script src="/js/archive.js"></script>
+	<script src="/js/stickyfill.min.js"></script>
+	<script defer src="/js/metadata.js"></script>
+	<script src="/js/glossary.js"></script>
+	<script src="/js/collections_tocs.js"></script>
+	<script defer src="/js/docs.js"></script>
+	<script defer src="/js/toc.js"></script>
+	<script defer src="/js/stylemod.js"></script>
+	<script language="javascript">
+	jQuery(document).ready(function(){
+				hookupTOCEvents();
+			});
+	</script>
+</body>
+
+</html>

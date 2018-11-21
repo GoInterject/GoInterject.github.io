@@ -1,0 +1,1161 @@
+
+<!-- Page generated 2018-11-21 14:32:27 -0800 -->
+<!-- relative link basehrefs -->
+
+	
+	
+	
+		
+			
+		
+	
+		
+			
+			
+
+
+<!-- Logic for 'edit this button' -->
+
+
+
+<!-- End of logic for 'edit this button' -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<base href="/wApps/" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<style id="page_style" type="text/css">
+		@charset "UTF-8";
+		[ng\:cloak],
+		[ng-cloak],
+		[data-ng-cloak],
+		[x-ng-cloak],
+		.ng-cloak,
+		.x-ng-cloak,
+		.ng-hide:not(.ng-hide-animate) {
+			display: none !important;
+		}
+
+		ng\:form {
+			display: block;
+		}
+	</style>
+
+	<!--
+	<script type="text/javascript">
+	  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
+	  analytics.load("IWj9D0UpZHZdZUZX9jl98PcpBFWBnBMy");
+	  analytics.page();
+	  }}();
+	</script>
+	-->
+	
+	<!-- favicon -->
+	<link rel="icon" type="image/x-icon" href="/favicons/docs@2x.ico" sizes="129x128">
+	<meta name="msapplication-TileImage" content="/favicons/docs@2x.ico">
+	<link rel="apple-touch-icon" type="image/x-icon" href="/favicons/docs@2x.ico" sizes="129x128">
+	<meta property="og:image" content="/favicons/docs@2x.ico"/>
+	<!-- metadata -->
+	
+
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css">
+	<link id="pagestyle" rel="stylesheet" href="/css/style.css">
+
+	<!-- Go get "Open Sans" font from Google -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	
+	
+	
+
+</head>	
+
+<body id="main_body" class="colums">
+	
+
+	<header>
+		 <nav class="nav-secondary navbar navbar-fixed-top">
+    <!-- <div class="fan"></div> -->
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="/"><img class="logo" src="/images/site-logo.png" alt="Interject Docs" title="Interject Docs"></a>
+        </div>
+        <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+            <div class="search-form" id="search-div" >
+    <form class="search-form form-inline ng-pristine ng-valid" id="searchForm" action="/search/">
+        <input class="search-field form-control ds-input" id="st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;">
+        <div id="autocompleteContainer">
+            <div id="autocompleteResults"></div>
+        </div>
+        <!-- <button type="submit" class="search-submit btn btn-default">Search</button> -->
+    </form>
+</div>
+<div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <div id="tabs">
+        <ul class="tabs" id="jsTOCHorizontal">
+
+        </ul>
+    </div>
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div class="btn-group" style="visibility: hidden">
+  <button type="button" class="btn btn-default dropdown-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    
+  </ul>
+</div>
+
+    </div>
+</div>
+
+        </div>
+    </div>
+</nav>
+	</header>
+
+	
+
+	<!-- nav bar -->
+	<div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							
+								
+							<h1>Interject Documentation > FinCube - The Financial Cube</h1> 
+									 
+									
+									<span class="reading-time" title="Estimated reading time">
+  <span class="reading-time-label">Estimated reading time: </span>
+  
+  
+    20 minutes
+  
+</span>
+
+									
+							
+							
+							<h2 id="overview"><strong>Overview</strong></h2>
+
+<p>The FinCube is a single Dataportal that supports a wide variety of reporting needs. It is included as part of the INTERJECT Financials for Spreadsheets application, and many of the segments can be customized for specific needs. In some ways, when combined with INTERJECT, this Dataportal report feature works like a pivot table with increased format and structure control. It is more manageable when scaling to hundreds of users.</p>
+
+<p>Typically, FinCube is used for consolidated financial reports, including monthly trends, YTD comparisons, budgeting templates, and simple balance inquiries. Because of its scalability, FinCube may support up to 70% of a company’s financial reporting formats.</p>
+
+<p>There are a number of components discussed on this page, and you can go directly to any part by clicking one of the links below.</p>
+
+<ul>
+  <li>
+    <h3 id="segment-filter-options">Segment Filter Options</h3>
+  </li>
+  <li>
+    <h3 id="dataportal-parameters">Dataportal Parameters</h3>
+  </li>
+  <li>
+    <h3 id="segment-columns">Segment Columns</h3>
+  </li>
+  <li>
+    <h3 id="group-columns">Group Columns</h3>
+  </li>
+  <li>
+    <h3 id="amount-columns">Amount Columns</h3>
+
+    <ol>
+      <li>
+        <h4 id="cya-column-notation">CYA Column Notation</h4>
+      </li>
+      <li>
+        <h4 id="act-column-notation">ACT Column Notation</h4>
+      </li>
+      <li>
+        <h4 id="jcolumndef-column-notation">jColumnDef() Column Notation</h4>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+<h3 id="segment-filter-options-1">Segment Filter Options</h3>
+
+<p>Before each parameter is described that can be used in a spreadsheet report, it is important to discuss the common filters that can be used. The first 12 segments share a similar data filtering syntax. The following options are explained using an Account and Period segment.</p>
+
+<p><strong>Filter for multiple items:</strong> For account, use <strong>21200,21300</strong> to filter for both accounts 21200 and 21300. For Period, use <strong>1,2,3</strong> to represent quarter 1. There are groupings already set up for quarters, so Qtr1 also works (more detail follows). Using the comma, each addition is considered an <strong>OR</strong> , which means each element is not mutually exclusive. Every new element added with a comma will add more data to the filter.</p>
+
+<p><strong>Filter for a range of items:</strong> For account, use <strong>21000..22000</strong> to filter for all accounts in that range. The same is true for periods, such as <strong>1..3</strong> .</p>
+
+<p><strong>Filter for multiple ranges:</strong> Combine both #1 and #2 above and expand the filters, such as <strong>21000..22000,30000..32000</strong> . This will filter for both ranges noted.</p>
+
+<p><strong>Filter by excluding items:</strong> In some cases, it may be easier to use a range and exclude a few items. With account, use <strong>21000..22000</strong> , then exclude account 21500 using the notation <strong>21000..22000,!21500</strong> . The exclamation excludes that element. A range may also be excluded using <strong>21000..22000,!21050..21060</strong> .</p>
+
+<p><strong>Filter using wildcards:</strong> Use wildcards, such as <strong>*** or **?</strong> , to find matches for filters. For example, noting <strong>21</strong>* will retrieve all accounts beginning with 21, such as 21000 to 21999. Using <strong>21?00</strong> as the filter will retrieve accounts like 21000, 21100, 21200, and 21300. These wildcards can be used together with the methods noted in #1, #3, and #4 above. For example <strong>2<em>,</em>09,!*08</strong> would return all accounts starting with 2 and any accounts ending with 09 but exclude accounts that end with 08.</p>
+
+<p><strong>Filter with Groups:</strong> Groups are an important feature that make filtering easier and more manageable. The management of groups will be covered in a different page, but they are defined as a text string representing a filter. For example, instead of using a filter for <strong>21000..22000</strong> , set up a group called <strong>Accounts Payable</strong> to represent that filter. And if you set up a group for the filter <strong>30000..32000</strong> , and call it <strong>Long Term Liabilities</strong> , you can use a filter like <strong>Accounts Payable, Long Term Liabilities</strong> to get the defined accounts. There are preset groups for the <strong>Segment 9–Period</strong> parameter for Qtr1, and more can be added for monthly periods. The exclude option in #4 above can also be used, such as when you want to see Revenue accounts but exclude Intercompany clearing accounts. This could be noted as <strong>Revenue,!Intercompany</strong> .</p>
+
+<h3 id="dataportal-parameters-1">DataPortal Parameters</h3>
+
+<p>The table below summarizes parameters available for the FinCube DataPortal. Parameters can either be filters set up by spreadsheet users, or they can place data in the spreadsheet. Each parameter links to a spreadsheet cell, or they can be manually specified in the reporting formula if not used in the report. The first 8 parameters of FinCube represent customizable segments. They are typically set up to match a company’s chart of account segments and may include other reporting dimensions like companies or currencies.</p>
+
+<p>The table below explains each of the available parameters of the FinCube DataPortal. The example column shows what the typical segment signification, but note that these can be configured differently for every INTERJECT installation.</p>
+
+<table>  
+<tr>  
+<th>
+
+Parameter Name 
+</th>  
+<th>
+
+
+
+Example 
+
+
+</th>  
+<th>
+
+Description 
+</th> </tr>  
+<tr>  
+<td>
+
+
+
+Segment 1 
+
+
+</td>  
+<td>
+
+Account 
+</td>  
+<td>
+
+This parameter can be used for filtering as noted in the above section. 
+</td> </tr>  
+<tr>  
+<td>
+
+Segment 2 
+</td>  
+<td>
+
+District 
+</td>  
+<td>
+
+
+
+This parameter can be used for filtering as noted in the above section. 
+
+
+</td> </tr>  
+<tr>  
+<td>
+
+Segment 3 
+</td>  
+<td>
+
+System 
+</td>  
+<td>
+
+This parameter can be used for filtering as noted in the above section.  
+</td> </tr>  
+<tr>  
+<td>
+
+Segment 4  
+</td>  
+<td>
+
+SubSystem 
+</td>  
+<td>
+
+This parameter can be used for filtering as noted in the above section.  
+</td> </tr>  
+<tr>  
+<td>
+
+Segment 5 
+</td>  
+<td>
+
+Adjustments 
+</td>  
+<td>
+
+This parameter can be used for filtering as noted in the above section.  
+</td> </tr>  
+<tr>  
+<td>
+
+Segment 6  
+</td>  
+<td>
+
+  
+
+</td>  
+<td>
+
+This parameter can be used for filtering as noted in the above section.  
+</td> </tr>  
+<tr>  
+<td>
+
+Segment 7  
+</td>  
+<td>
+
+Company 
+</td>  
+<td>
+
+
+
+This parameter can be used for filtering as noted in the above section. 
+
+
+</td> </tr>  
+<tr>  
+<td>
+
+Segment 8  
+</td>  
+<td>
+
+Currency 
+</td>  
+<td>
+
+
+
+This parameter can be used for filtering as noted in the above section. 
+
+
+</td> </tr>  
+<tr>  
+<td>
+
+Segment 9 - Period  
+</td>  
+<td>
+
+  
+
+</td>  
+<td>
+
+This segment is locked to represent a period (a month). It can be 1 through 12 or YTD1 through YTD12. Groups can be used to define Quarters. 
+</td> </tr>  
+<tr>  
+<td>
+
+Segment 10 - Year 
+</td>  
+<td>
+
+  
+
+</td>  
+<td>
+
+This segment is locked to represent a year 
+</td> </tr>  
+<tr>  
+<td>
+
+Segment 11 - Version 
+</td>  
+<td>
+
+  
+
+</td>  
+<td>
+
+This segment is locked to a version. Versions are used to track changes that may occur to a budget or projection source over time. If configured, filters such as **BOD..V7** could be used to filter the data for changes that occurred from the version that was approved by the Board of Directors to Version 7. 
+</td> </tr>  
+<tr>  
+<td>
+
+
+
+Segment 12 - Source 
+
+
+</td>  
+<td>
+
+  
+
+</td>  
+<td>
+
+Segment 12 is locked to a source, which represents Actual, Budget, Projection, and other comparable financial sources. As data is imported into INTERJECT, sources can be setup for segmenting data. Segment 12 can also be used to separate out Actuals, which may be posted account balances and other types of entries unposted or considered proforma. 
+</td> </tr>  
+<tr>  
+<td>
+
+SegmentNumForRowDefs 
+</td>  
+<td>
+
+  
+
+</td>  
+<td>
+
+
+
+This parameter is used only when the INTERJECT report function using the FinCube DataPortal has Row Definitions in a report. Row Definitions creates separate subtotal sections, such as Labor and Benefits in a spreadsheet report. Each of these sections could be collapsed to show the totals and then expanded to show all the account details. Financial reports normally have 20 to 50 subtotal sections. 
+
+If using groupings to define what a subtotal section will include, like **Labor** = **50000..52999** and **Benefits** = **53000..53200** , you can setup the Row Definitions using these groups. However, without the parameter  SegmentNumForRowDefs being setup, the FinCube DataPortal will not know which segment our groupings relate to. So if our Accounts are set to Segment1,  SegmentNumForRowDefs must be set to 1. 
+
+In most cases subtotals are based on Accounts, but that is not necessary.  If our subtotal sections are going to use groups related to a line of business, and our segment for line of business is Segment3,  SegmentNumForRowDefs must be 3. 
+
+
+</td> </tr>  
+<tr>  
+<td>
+
+ShowCredit 
+</td>  
+<td>
+
+  
+
+</td>  
+<td>
+
+This parameter can be used with the ReverseSigns parameter to show the required sign for an account segment. It will change the sign (+/-) displayed on accounts. For example, Revenue naturally shows as a credit in the general ledger data since it is a credit account. However, Revenue should show as a positive in a profit and lost report. See the example chart below. 
+</td> </tr>  
+<tr>  
+<td>
+
+
+
+SkipLive 
+
+
+</td>  
+<td>
+
+  
+
+</td>  
+<td>
+
+
+
+This is a special INTERJECT feature allowing reports to access live data for the current open month being closed. If set to False, the amounts provided are based on the last scheduled or manually triggered import. 
+
+If this is configured in your INTERJECT installation and SkipLive is set to True, the FinCube DataPortal will directly access the current open month balances in real time. This features gives users up-to-the-second data while limiting the server resources needed to present live data during a financial close. It is a significant productivity improvement compared to data warehouses or data-marts that can only provide data updated on a set schedule. 
+
+
+</td> </tr>  
+<tr>  
+<td>
+
+
+
+ReverseSigns 
+
+
+</td>  
+<td>
+
+  
+
+</td>  
+<td>
+
+This parameter can be used in conjunction with the ShowCredit parameter to show the required sign for an account segment. By setting to True it will reverse the signs of the amounts returned.  See the example chart below.  
+</td> </tr>  
+<tr>  
+<td>
+
+Last Run 
+</td>  
+<td>
+
+  
+
+</td>  
+<td>
+
+This is an output parameter places in the spreadsheet the report's last run date and time. This will use the timezone settings of the windows session. 
+</td> </tr>  
+<tr>  
+<td>
+
+TimeLineFrom 
+</td>  
+<td>
+
+  
+
+</td>  
+<td>
+
+If configured, this will allows users run reports showing changes over time based on imported intervals. Using this feature shows the report as it would have been run the previous week. Alternately, it will show changes occuring in the last 12 hours. If this from date and time parameter is omitted, it defaults to 1/1/1900. 
+</td> </tr>  
+<tr>  
+<td>
+
+TimeLineTo 
+</td>  
+<td>
+
+  
+
+</td>  
+<td>
+
+This parameter works with TimeLineFrom. If omitted it is defaulted to through the current week. 
+</td> </tr> </table>
+
+<h4 id="examples-using-show-credits-and-reverse-signs-parameters">Examples using “Show Credits” and “Reverse Signs” Parameters</h4>
+
+<p>The <strong>Show Credits</strong> and <strong>Reverse Signs</strong> parameters work together to provide the output required in presenting positive or negative numbers for financial statements. The chart below shows + or - to signify output. The yellow row shows how Assets, Liability, Equity, Revenue, and Expense are naturally recorded in a general ledger. For example, Revenue is always negative by default, but is normally presented as a positive number in a profit and loss report. For certain reconciliations reports, these credit accounts may be specifically set up to show as a negative.</p>
+
+<p>** <img src="attachments/127796359/127963443.png?height=250" alt="" /> **</p>
+
+<h3 id="available-columns-for-the-dataportal-">Available Columns for the DataPortal **</h3>
+<p>**</p>
+
+<p>The FinCube DataPortal is unique because of its wide array of column options included in the column definitions of INTERJECT report formulas. There are three types of columns: Segment, Group, and Amounts.</p>
+
+<h3 id="segment-columns-1">Segment Columns</h3>
+
+<p>Segment columns relate to Segments 1 through 8 and any other groupings setup for the segments. In the configuration of INTERJECT segments, assigned names can be used as columns. For example, Acct (short for account) may be assigned to Segment 1 and Dist (short for district) can be assigned to Segment 2. In this case both Acct and Dist can be used in columns to show the level of detail required. If only Acct is included in the column, the amounts will be summarized by Acct. If both Acct and Dist are included as columns, then both are shown, and the amounts are summarized by Acct and Dist. This will work for a combination of the first 8 segments.</p>
+
+<p>In addition, the name of the segment may also be noted by adding <strong>Name</strong> as a suffix. For example, AcctName will show the account name.</p>
+
+<h3 id="group-columns-1">Group Columns</h3>
+
+<p>When Groups are set up for a segment, like Acct, they can also be used as columns. It is important to understand what a Segment Group is and which ones can be used. Groups are simply a text phrase assigned to a filter, the same filters explained above. A simple Group for Acct may be <strong>Product Sales</strong> (defined as accounts <strong>32000…34000</strong> ) and <strong>Consulting Sales</strong> (defined as accounts <strong>34001…35000</strong> ). Groups can also contain other Groups. For example, a Group called <strong>Revenue</strong> could contain different Group, like <strong>Product Sales</strong> and <strong>Consulting Sales</strong> .</p>
+
+<p>When Group names are used as columns, the column will summarize the amounts by the Groups it contains. So, in the above example, if <strong>Revenue</strong> is used as column, then groups <strong>Product Sales</strong> and <strong>Consulting Sales</strong> would each show on a row, and the amounts would be summarized at that level.</p>
+
+<p>In a coming release, there are two new features coming to Groups. A sort order will be assigned to a group so users can control the order. In the above example, <strong>Product Sales</strong> will be listed before <strong>Consulting Sales</strong> , since they would normally show in alphabetical order. A future release will also support a group name to add more descriptive names to groups. Currently, Groups are a single text string and may not be text desired in a report. In the above example, you could set up <strong>Sales_Prod</strong> and <strong>Sales_Cons</strong> as the Groups, and then make <strong>Product Sales</strong> and <strong>Consulting Sales</strong> the Group names. In using the parent group <strong>Revenue</strong> as the column, if you added <strong>Name</strong> to the end of the Group, like <strong>RevenueName</strong> , you would get the more descriptive names <strong>Product Sales</strong> and <strong>Consulting Sales</strong> in the report,</p>
+
+<p>instead of <strong>Sales_Prod</strong> and <strong>Sales_Cons</strong> .</p>
+
+<h3 id="amount-columns-1">Amount Columns</h3>
+
+<p>There are three methods to specify amount columns in the column definition of a report formula. These include CYA, ACT, and jColumnDef.</p>
+
+<h3 id="cya-column-notation-1">CYA Column Notation</h3>
+
+<p>This notation is deprecated but is still supported. Since these notations are relative to a year, it is important to specify the year in the above noted parameter  <strong>Segment 10 - Year</strong> . By noting a year, CYA defines what the current year is. CY is for current year, LY is for last year, and so on.</p>
+
+<table>  
+<tr>  
+<th>
+
+CYA Notation 
+</th> </tr>  
+<tr>  
+<td>
+
+CYA1 through CYA12 
+</td>  
+<td>
+
+
+
+Current year actuals for a specific month. The number in the suffix specifies the month. 
+
+
+</td> </tr>  
+<tr>  
+<td>
+
+CYAYTD1 through CYAYTD12 
+</td>  
+<td>
+
+Current year actuals for year to date. The number in the suffix specifies the month.  
+</td> </tr>  
+<tr>  
+<td>
+
+CYA_TOT 
+</td>  
+<td>
+
+This is another to total a year. It is same as using CYAYTD12, which returns a total from January to December. 
+</td> </tr>  
+<tr>  
+<td>
+
+
+
+Other prefixes can be used in place of CYA: 
+
+LYA = Last year actual 
+
+L2A = 2 years ago actual 
+
+L3A = 3 years ago actual 
+
+L4A = 4 years ago actual 
+
+NYB = Next year budget 
+
+CYB = Current year budget 
+
+LYB = Last year budget 
+
+
+</td> </tr>  
+<tr>  
+<td>
+
+
+
+####  Options for Forecast 
+
+This notation is more complex, because forecasts may need to retain not only the month forecast but also store when the forecast was completed. For example, you might forecast March twice in a year, first in January and again in February, then compare how that forecast changed over time. 
+
+Forecast notation can be set up to handle these changes over time. For example, above, CYFJan3 would represent the first time March was forecast. **CYF** means current year forecast, **Jan** signifies the projection was made in January, and the **3** notes the month from when the projection was completed, such as in a rolling forecast. 
+
+Forecasting March again in February, the notation would be CYFFeb2. Forecasting March again during the month of March, the notation would be CYFMar1. 
+
+The examples below may help clarify. 
+
+
+</td> </tr>  
+<tr>  
+<td>
+
+CYFJan1 
+</td>  
+<td>
+
+
+
+Forecast for January: Current year forecast completed in January for the first month of the projection period (January) 
+
+  
+
+
+
+</td> </tr>  
+<tr>  
+<td>
+
+CYFJan2 
+</td>  
+<td>
+
+Forecast for February: Current year forecast completed in January for the second month in the projection period (February.) 
+</td> </tr>  
+<tr>  
+<td>
+
+LYFSep3 
+</td>  
+<td>
+
+Forecast for November: Last year forecast completed in September for the 3rd month of the period (November). 
+</td> </tr>  
+<tr>  
+<td>
+
+
+
+*Special Suffixes for Unposted Amounts: If configured, you may be able to use the _Unposted or _WithUnposted suffix to notations like CYA5 to see the amounts in our journal entries that are not yet posted.* 
+
+
+</td> </tr>  
+<tr>  
+<td>
+
+CYA3_Unposted 
+</td>  
+<td>
+
+Shows only totals for unposted amounts in March of the current year. 
+</td> </tr>  
+<tr>  
+<td>
+
+CYA_WithUnposted 
+</td>  
+<td>
+
+Shows the total of posted and unposted amounts for March of the current year. 
+</td> </tr>  
+<tr>  
+<td>
+
+*Special consideration for Staged journal entry Amounts: If configured, you may be able to show staged journal amounts not yet uploaded to the ERP. Examples below.*  
+</td> </tr>  
+<tr>  
+<td>
+
+CYA3_Staged 
+</td>  
+<td>
+
+Shows only the totals for the staged amounts for March of the current year. 
+</td> </tr>  
+<tr>  
+<td>
+
+CYA3_WithUnpostedAndStaged 
+</td>  
+<td>
+
+Shows the total of posted, unposted and staged amounts for March of the current year. 
+</td> </tr> </table>
+
+<h3 id="act-column-notation-1">ACT Column Notation</h3>
+
+<p>This notation is one step beyond CYA, since it can also be relative to a month and not just a year. ACT can make it easier to build and maintain monthly review reports because the columns specified are all relative to the month and year filter.</p>
+
+<p>Since these notations are relative to a year and a period, it is important to specify the year and period in the parameters <strong>Segment 9–Period</strong> and <strong>Segment 10–Year</strong> and link them to a cell in the spreadsheet report. For the table below you can consider Mar 2017 the specified period.</p>
+
+<table>  
+<tr>  
+<th>
+
+ACT Notation (assuming Mar 2017 is the specified period) 
+</th> </tr>  
+<tr>  
+<td>
+
+Act 
+</td>  
+<td>
+
+
+
+The current-month actual for Mar 2017. 
+
+
+</td> </tr>  
+<tr>  
+<td>
+
+Bud 
+</td>  
+<td>
+
+
+
+The current-month budget for Mar 2017. 
+
+
+</td> </tr>  
+<tr>  
+<td>
+
+Proj3 
+</td>  
+<td>
+
+The suffix for projection can be difficult to understand. Proj3 notes the projection for Mar 2017, when Mar was the third month of the projection period. This means the projection for Mar that was done in January. 
+</td> </tr>  
+<tr>  
+<td>
+
+Proj2 
+</td>  
+<td>
+
+The projection for Mar 2017 done in Feb 2017. 
+</td> </tr>  
+<tr>  
+<td>
+
+Proj1 
+</td>  
+<td>
+
+The projection for Mar 2017 done mid-month, Mar 2017. 
+</td> </tr>  
+<tr>  
+<td>
+
+*Projections may have several versions (sometimes called editions). Projections for Mar 2017 in the second week of Mar are the initial projection. Additional projection revisions may be in the 3rd and 4th week of Mar before the month closes. The notation below adds a suffix of Edition, which can be used in the report to specify a particular week's changes.* 
+</td> </tr>  
+<tr>  
+<td>
+
+Proj1Edition1 
+</td>  
+<td>
+
+Same as Proj1, the initial projection. 
+</td> </tr>  
+<tr>  
+<td>
+
+Proj1Edition2 
+</td>  
+<td>
+
+Shows the changes made in the 3rd week projections. 
+</td> </tr>  
+<tr>  
+<td>
+
+Proj1Edition3 
+</td>  
+<td>
+
+Shows the changes made in the 4th week projections. 
+</td> </tr>  
+<tr>  
+<td>
+
+Proj1All 
+</td>  
+<td>
+
+The summation of Proj1Edition1, Proj1Edition2 and Proj1Edition3. 
+</td> </tr>  
+<tr>  
+<td>
+
+*Special Suffixes for Unposted Amounts: If configured, you may be able to use the _Unposted or _WithUnposted suffix to notations like ACT to see the unposted amounts in our journal entries.*  
+</td> </tr>  
+<tr>  
+<td>
+
+Act_Unposted 
+</td>  
+<td>
+
+Shows only the totals for the unposted amounts. 
+</td> </tr>  
+<tr>  
+<td>
+
+Act_WithUnposted 
+</td>  
+<td>
+
+Shows the total of posted and unposted amounts. 
+</td> </tr>  
+<tr>  
+<td>
+
+*Special consideration for Staged journal entry Amounts: If configured, you may be able to show staged journal amounts that are not uploaded to the ERP yet. Below are examples.*  
+</td> </tr>  
+<tr>  
+<td>
+
+Act_Staged 
+</td>  
+<td>
+
+Shows only the totals for the staged amounts. 
+</td> </tr>  
+<tr>  
+<td>
+
+Act_WithUnpostedAndStaged 
+</td>  
+<td>
+
+Shows the total of posted, unposted, and staged amounts. 
+</td> </tr> </table>
+
+<h3 id="jcolumndef-column-notation-1">jColumnDef() Column Notation</h3>
+
+<p>The <a href="/wIndex/127965411.html"> jColumnDef() </a> notation is the most recent addition to the column options and is the most flexible and intuitive in use. Instead of using a single text string to represent an amount, like CYA1 or Act, you can use the jColumnDef() function containing arguments for each of the 12 segments noted in the above DataPortal parameters. In this way, you can specify each component separately and more clearly. jColumnDef() arguments are essentially an additional filter level for each column you want to show.</p>
+
+<p>It is important to emphasize that jColumnDef() goes beyond a source (Actual, Budget, fcast1 to fcast12), a year, and a period alone. These are the same segments (9, 10 and 12) that earlier notations (CTA and ACT) can only specify. jColumnDef also supports the remaining 12 segments and each can support the same filter options and groups noted above for DataPortal parameters explained in the <a href="/wApps/FinCube---The-Financial-Cube_127796359.html"> FinCube </a> DataPortal page. The result is a highly flexible method to create columns.</p>
+
+<p>The illustration below shows an example. In cells H2 and I2, the jColumnDef() function is entered into the column definition row instead of CYA1 or Act. The jColumnDef() function argument references the cells below it (rows 4 through 15) that notes all the segment options. In this example, the columns will return the Jan and Feb of 2017 actuals, since Period, Year and Source are the only segments used.</p>
+
+<p><img src="attachments/127796359/127965319.png?height=250" alt="" /></p>
+
+<p>In the following example, you are using more of the segments. The columns were changed so both are for Jan 2017, but the first column is now specified to all revenue for district 2050. the second column is specified to show EBITDA for the same district. Using segment groups provides multiple ways to define a column.</p>
+
+<p><img src="attachments/127796359/127965946.png?height=250" alt="" /></p>
+
+
+							<!-- tags -->
+							
+							
+							
+							
+							
+							<!-- link corrections -->
+              <script language="JavaScript">
+							var x = document.links.length;
+							var baseHref = document.getElementsByTagName('base')[0].href
+							for (i = 0; i < x; i++) {
+							  var munged = false;
+							  var thisHREF = document.links[i].href;
+							  var originalURL = "/wApps/FinCube---The-Financial-Cube_127796359.html";
+							  if (thisHREF.indexOf(baseHref + "#") > -1) {
+							    // hash fix
+							    //console.log('BEFORE: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							    thisHREF = originalURL + thisHREF.replace(baseHref, "");
+							    //console.log('AFTER: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							  }
+							  if ((thisHREF.indexOf(window.location.hostname) > -1 || thisHREF.indexOf('http') == -1) && document.links[i].className.indexOf("nomunge") < 0) {
+							    munged = true;
+							    thisHREF = thisHREF.replace(".md", "/").replace("/index/", "/");
+							    document.links[i].setAttribute('href', thisHREF);
+							  }
+							}
+							</script>
+							
+						  <div id="ratings-div" style="color:#b9c2cc; text-align: center; margin-top: 150px; visibility: hidden">
+								<div id="pd_rating_holder_8453675"></div>
+								<script type="text/javascript">
+									PDRTJS_settings_8453675 = {
+										"id": "8453675",
+										"unique_id": "wApps/FinCube---The-Financial-Cube_127796359.md",
+										"title": "Interject Documentation > FinCube - The Financial Cube",
+										"permalink": "https://github.com/gointerject/gointerject.github.io/blob/master/wApps/FinCube---The-Financial-Cube_127796359.md"
+									};
+									(function(d, c, j) {
+										if (!document.getElementById(j)) {
+											var pd = d.createElement(c),
+												s;
+											pd.id = j;
+											pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
+											s = document.getElementsByTagName(c)[0];
+											s.parentNode.insertBefore(pd, s);
+										}
+									}(document, 'script', 'pd-rating-js'));
+								</script>
+							</div>
+							
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						<div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+    </ul>
+</div>
+
+						</div>
+					</nav>
+					<div class="col-toc">
+							<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										
+                                            <li style="visibility: show">
+                                                <a href="https://github.com/gointerject/gointerject.github.io/edit/master/wApps/FinCube---The-Financial-Cube_127796359.md">
+                                                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit this page
+                                                </a>
+                                            </li>
+                                        
+										<li><a href="https://github.com/gointerject/gointerject.github.io/issues/new?body=File: [wApps/FinCube---The-Financial-Cube_127796359.md](https://docs.gointerject.com/wApps/FinCube---The-Financial-Cube_127796359.html)"
+															class="nomunge"><i class="fa fa-check" aria-hidden="true"></i> Request docs changes</a></li>
+										<li><a href="http://www.gointerject.com/call-us/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<!-- toggle mode -->
+										<!-- Turn night mode on and off
+										<li>
+											<div class="toggle-mode">
+												<div class="icon">
+													<i class="fa fa-sun-o" aria-hidden="true"></i>
+												</div>
+												<div class="toggle-switch">
+													<label class="switch">
+														<input type="checkbox" id="switch-style">
+														<div class="slider round"></div>
+												</label>
+												</div>
+												<div class="icon">
+													<i class="fa fa-moon-o" aria-hidden="true"></i>
+												</div>
+											</div>
+										</li>
+										-->
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="/wApps/FinCube---The-Financial-Cube_127796359.html#overview" class="nomunge">Overview</a>
+    <ul>
+      <li><a href="/wApps/FinCube---The-Financial-Cube_127796359.html#segment-filter-options" class="nomunge">Segment Filter Options</a></li>
+      <li><a href="/wApps/FinCube---The-Financial-Cube_127796359.html#dataportal-parameters" class="nomunge">Dataportal Parameters</a></li>
+      <li><a href="/wApps/FinCube---The-Financial-Cube_127796359.html#segment-columns" class="nomunge">Segment Columns</a></li>
+      <li><a href="/wApps/FinCube---The-Financial-Cube_127796359.html#group-columns" class="nomunge">Group Columns</a></li>
+      <li><a href="/wApps/FinCube---The-Financial-Cube_127796359.html#amount-columns" class="nomunge">Amount Columns</a></li>
+      <li><a href="/wApps/FinCube---The-Financial-Cube_127796359.html#segment-filter-options-1" class="nomunge">Segment Filter Options</a></li>
+      <li><a href="/wApps/FinCube---The-Financial-Cube_127796359.html#dataportal-parameters-1" class="nomunge">DataPortal Parameters</a></li>
+      <li><a href="/wApps/FinCube---The-Financial-Cube_127796359.html#available-columns-for-the-dataportal-" class="nomunge">Available Columns for the DataPortal **</a></li>
+      <li><a href="/wApps/FinCube---The-Financial-Cube_127796359.html#segment-columns-1" class="nomunge">Segment Columns</a></li>
+      <li><a href="/wApps/FinCube---The-Financial-Cube_127796359.html#group-columns-1" class="nomunge">Group Columns</a></li>
+      <li><a href="/wApps/FinCube---The-Financial-Cube_127796359.html#amount-columns-1" class="nomunge">Amount Columns</a></li>
+      <li><a href="/wApps/FinCube---The-Financial-Cube_127796359.html#cya-column-notation-1" class="nomunge">CYA Column Notation</a></li>
+      <li><a href="/wApps/FinCube---The-Financial-Cube_127796359.html#act-column-notation-1" class="nomunge">ACT Column Notation</a></li>
+      <li><a href="/wApps/FinCube---The-Financial-Cube_127796359.html#jcolumndef-column-notation-1" class="nomunge">jColumnDef() Column Notation</a></li>
+    </ul>
+  </li>
+</ul>
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- The Modal for viewing images -->
+	<div id="modal-main" class="modal" >
+		<img class="modal-content nohover" id="modal-img" style="padding-top: 3%;"/>
+		<span class="close-modal" style="padding-top: 3%;">
+			<i class="fa fa-times-circle fa-1x"></i>
+		</span>
+	</div>
+
+	
+	<footer class="footer">
+		  
+    <div class="container">
+        <div id="footerdiv" class="top_footer">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><h4>GENERAL</h4></li>
+                        <li><a href="http://www.gointerject.com">INTERJECT HOME</a></li>
+                        <li><a href="http://www.gointerject.com/#whatwedobest">WHAT WE DO BEST</a></li>
+                        <li><a href="https://gointerject.com/#benefitsyoucanbankon">BENFITS</a></li>
+                        <li><a href="https://gointerject.com/#whatourclientssay">WHAT OUR CLIENTS SAY</a></li>
+                        <li><a href="https://gointerject.com/#upcomingevents">UPCOMING EVENTS</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://gointerject.com/#whatmatterstous"><h4>WHAT MATTERS TO US</h4> </a></li>
+                        <li><a href="https://gointerject.com/helping-you-master-technology/">Mastering Technology</a></li>
+                        <!--<li><a href="https://gointerject.com/helping-you-master-technology/">Attend Next Event</a></li>-->
+                        <li><a href="https://gointerject.com/helping-you-master-technology/learn-on-your-own/">Learn On Your Own</a></li>
+                        <li><a href="http://www.gointerject.com/kids-coding-clubs/">Kids Coding Club</a></li>
+                        <li><a href="http://www.gointerject.com/helping-you-master-technology/">Tech Talks</a></li> 
+                        <!-- <li><a href="http://www.gointerject.com/#whatwedobest">Reserve Your Spot</a></li> -->
+                        <li><a href="https://gointerject.com/kids-coding-clubs/start-your-own-club/">Start Your Own Club</a></li>
+                        <!-- <li><a href="https://gointerject.com/#whatmatterstous">Never Standing Still</a></li>  -->
+                        <li><a href="https://gointerject.com/never-stand-still-blog/">Our Blog</a></li> 
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><h4>YOUR TEAM</h4></li>
+                        <li><a href="https://gointerject.com/meet-us/">Meet Us</a></li>
+                        <li><a href="https://gointerject.com/join-us/">Join Us</a></li>
+                        <li><a href="https://gointerject.com/call-us/">Call Us</a></li>
+                        <li><h4>SUPPORT</h4></li>
+                        <li><a href="">Wiki / FAQ</a><span style="font-size:10px;padding-left: 7px;">(Coming Soon)</span></li>
+                        <li><a href="">For Developers</a><span style="font-size:10px;padding-left: 7px;">(Coming Soon)</span></li>
+                        <!-- <li class="break"></li> -->
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><h4>CONTACT INFO</h4></li>
+                        <li><strong>Office:</strong> (855) 546-0036</li>
+                        <li><strong>Fax:</strong>  (360) 838-9459</li>
+                        <li><strong>Address:</strong> 1404 NE 134th St. Suite 200, </li>
+                        <li>Vancouver, WA 98685</li> 
+                        <li><strong>E-mail:</strong> info@gointerject.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- ****** This Section is setup for 'the fine text' links ****** -->
+            <!--
+            <div class="footer-nav">
+                <nav class="footer_sub_nav">
+                    <ul class="menu">
+                        <li><a href="">Status</a></li>
+                        <li><a href="">Security</a></li>
+                        <li><a href="">Legal</a></li>
+                    </ul>
+                </nav>
+            </div>
+            -->
+        </div>
+        <div class="bottom_footer">
+            <div class="footer-copyright col-xs-12 col-md-8">
+                <p class="copyright">
+                    Copyright © 2018 INTERJECT Inc. All Rights Reserved.
+                </p>
+            </div>
+            <div class="footer_social_nav">
+                <ul class="nav-social">
+                    <li class="fa fa-twitter"><a href="http://twitter.com/gointerject">Twitter</a></li>
+                    <li class="fa fa-youtube"><a href="http://www.youtube.com/user/gointerject">Youtube</a></li> 
+                    <li class="fa fa-github"><a href="https://github.com/gointerject">Github</a></li>
+                    <li class="fa fa-linkedin"><a href="https://www.linkedin.com/company/gointerject">Linkedin</a></li>
+                    <li class="fa fa-facebook"><a href="https://www.facebook.com/gointerject">Facebook</a></li>  
+                </ul>
+            </div>
+        </div>
+    </div>
+
+	</footer>
+	<link rel="stylesheet" href="/css/github.css">
+	
+	<!-- <script src="/js/anchorlinks.js"></script> -->
+	<script defer src="/js/menu.js"></script>
+	<script src="/js/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<!-- Always include the archive.js, but it doesn't do much unless we are an archive -->
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var interjectVersion = 'v';
+	// In archives, we need to know the page root and we get it from JEKYLL_ENV in the jekyll build command
+	var jekyllEnv = 'development';
+	// If unset (in non-archive branches), defaults to "development". In that case, reset it to empty
+	if (jekyllEnv == 'development') {
+		jekyllEnv = '';
+	}
+	var pageURL = jekyllEnv + '/wApps/FinCube---The-Financial-Cube_127796359.html';
+	</script>
+	<script src="/js/archive.js"></script>
+	<script src="/js/stickyfill.min.js"></script>
+	<script defer src="/js/metadata.js"></script>
+	<script src="/js/glossary.js"></script>
+	<script src="/js/collections_tocs.js"></script>
+	<script defer src="/js/docs.js"></script>
+	<script defer src="/js/toc.js"></script>
+	<script defer src="/js/stylemod.js"></script>
+	<script language="javascript">
+	jQuery(document).ready(function(){
+				hookupTOCEvents();
+			});
+	</script>
+</body>
+
+</html>

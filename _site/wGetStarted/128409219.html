@@ -1,0 +1,564 @@
+
+<!-- Page generated 2018-11-21 14:32:27 -0800 -->
+<!-- relative link basehrefs -->
+
+	
+	
+	
+		
+			
+		
+	
+		
+			
+			
+
+
+<!-- Logic for 'edit this button' -->
+
+
+
+<!-- End of logic for 'edit this button' -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<base href="/wGetStarted/" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<style id="page_style" type="text/css">
+		@charset "UTF-8";
+		[ng\:cloak],
+		[ng-cloak],
+		[data-ng-cloak],
+		[x-ng-cloak],
+		.ng-cloak,
+		.x-ng-cloak,
+		.ng-hide:not(.ng-hide-animate) {
+			display: none !important;
+		}
+
+		ng\:form {
+			display: block;
+		}
+	</style>
+
+	<!--
+	<script type="text/javascript">
+	  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
+	  analytics.load("IWj9D0UpZHZdZUZX9jl98PcpBFWBnBMy");
+	  analytics.page();
+	  }}();
+	</script>
+	-->
+	
+	<!-- favicon -->
+	<link rel="icon" type="image/x-icon" href="/favicons/docs@2x.ico" sizes="129x128">
+	<meta name="msapplication-TileImage" content="/favicons/docs@2x.ico">
+	<link rel="apple-touch-icon" type="image/x-icon" href="/favicons/docs@2x.ico" sizes="129x128">
+	<meta property="og:image" content="/favicons/docs@2x.ico"/>
+	<!-- metadata -->
+	
+
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css">
+	<link id="pagestyle" rel="stylesheet" href="/css/style.css">
+
+	<!-- Go get "Open Sans" font from Google -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	
+	
+	
+
+</head>	
+
+<body id="main_body" class="colums">
+	
+
+	<header>
+		 <nav class="nav-secondary navbar navbar-fixed-top">
+    <!-- <div class="fan"></div> -->
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="/"><img class="logo" src="/images/site-logo.png" alt="Interject Docs" title="Interject Docs"></a>
+        </div>
+        <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+            <div class="search-form" id="search-div" >
+    <form class="search-form form-inline ng-pristine ng-valid" id="searchForm" action="/search/">
+        <input class="search-field form-control ds-input" id="st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;">
+        <div id="autocompleteContainer">
+            <div id="autocompleteResults"></div>
+        </div>
+        <!-- <button type="submit" class="search-submit btn btn-default">Search</button> -->
+    </form>
+</div>
+<div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <div id="tabs">
+        <ul class="tabs" id="jsTOCHorizontal">
+
+        </ul>
+    </div>
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div class="btn-group" style="visibility: hidden">
+  <button type="button" class="btn btn-default dropdown-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    
+  </ul>
+</div>
+
+    </div>
+</div>
+
+        </div>
+    </div>
+</nav>
+	</header>
+
+	
+
+	<!-- nav bar -->
+	<div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							
+								
+							<h1>Interject Documentation > L4.3 Drill> Financial Report</h1> 
+									 
+									
+									<span class="reading-time" title="Estimated reading time">
+  <span class="reading-time-label">Estimated reading time: </span>
+  
+  
+    8 minutes
+  
+</span>
+
+									
+							
+							
+							<hr />
+
+<h2 id="overview"><strong>Overview</strong></h2>
+
+<p>For this drill example you will use the <strong>PL Trend</strong> that was previously reviewed in the <a href="/wAbout/Financial-Report_128091561.html"> Financial Report - Walkthrough </a> . This time you will be drilling to a separate workbook instead of drilling to another worksheet in the same workbook. This can be very useful when there is a common report, such as one that shows general ledger detail, that can be used as a drill from several different reports and workbooks. You will be viewing that same example with the JE  (Journal Entry)  Query drill report.</p>
+
+<p>Click one of the links below to  go directly to any section of this walk-through.</p>
+
+<ul>
+  <li>
+    <ul>
+      <li>
+        <h4 id="unfreezing-the-tab">Unfreezing the Tab</h4>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* ####  Building the Drill 
+
+* ** Executing the Drill  **
+</code></pre></div></div>
+
+<h3 id="unfreezing-the-report">Unfreezing the Report</h3>
+
+<p><strong>Step 1</strong> : For this example you will be using a modified <a href="https://interject.atlassian.net/wiki/spaces/ID/pages/128091561/Financial+Report"> PL trend report </a> , which can be download here <a href="/wGetStarted/128409219.html"> Demo_Interject_PLTrend.xlsx </a> . This report has been prepared specifically for this exercise.</p>
+
+<p><img src="attachments/128409219/129338926.png" alt="" /></p>
+
+<p>** Step 2:  ** To unfreeze the panels, go to the <strong>View</strong> tab, find the <strong>Freeze Pane</strong> option, and select <strong>Unfreeze Panes</strong> .</p>
+
+<p><img src="attachments/128409219/129339008.png" alt="" /></p>
+
+<p>** Step 3:  ** For this example, type in <strong>7002</strong> for the location in M21. And type <strong>2002-05</strong> for the month in cell M22.</p>
+
+<p><img src="attachments/128409219/129734953.png" alt="" /></p>
+
+<h3 id="building-the-drill">Building The Drill</h3>
+
+<p>Continue setting up the drill formula.</p>
+
+<p><strong>Step 1:</strong> In cell G17, type <strong>=<a href="/wIndex/61702556.html"> ReportDrill() </a> ** . Column G is fairly narrow, but it will simply overlap the cells to the right. Then click the **fx</strong> button as illustrated below to bring up the Function Wizard.</p>
+
+<p><img src="attachments/128409219/129340426.png" alt="" /></p>
+
+<p><strong>Step 2:</strong> In previous drill exercises you have used the ReportCellToRun argument. That is only for drilling within the same workbook. In this example you are drilling to a separate workbook. Type <strong>Interject_JEQuery</strong> into the ReportCodeToRun argument as seen below. The Drill Code <strong>Interject_JEQuery</strong> was setup previously by adding the code to a Report Library report. You will learn how to setup a Drill Code in the page <a href="/wGetStarted/L10-Updating-the-Report-Library_62849583.html"> L10 Updating the Report Library </a> later.</p>
+
+<p><img src="attachments/128409219/129367151.png" alt="" /></p>
+
+<p><strong>Step 3:</strong> Next you will use the  TransferPairs argument to note which cell values in the source worksheet will be transferred to the target worksheet during the drill operation. To do this, use special functions to pair the source cells to the target cells. Type  **<a href="/wIndex/81756186.html"> PairGroup(Pair()) </a> ** in the TransferPairs argument to get it started. You will return to add more to this argument.</p>
+
+<p><img src="attachments/128409219/129734523.png" alt="" /></p>
+
+<p><strong>Step 4:</strong> In the Formula Bar, click within the word <strong>Pair()</strong> inside the text <strong>PairGroup(Pair())</strong> . See the illustration below. Once this is done, the Function Wizard will automatically change to help with the Pair() function. Type <strong>L12:N12</strong> in the From argument. This is the row that will indicate which month the user was on when the drill was activated and it will pass it to the target worksheet  .</p>
+
+<p><img src="attachments/128409219/129734553.png" alt="" /></p>
+
+<p><strong>Step 5:</strong> Now, type <strong>DateBegin</strong> in the Target argument to establish the target cell that will receive the month. <strong>DateBegin</strong> is a Named Range in the target sheet. Named Ranges are used in MS Excel to assign a name to a specific cell, such as G15. You use Named Ranges in your drill in case rows or columns are changed in the target worksheet where the address of the target cell changes. By using Named Ranges, the drill will continue to find the correct cell to place the month into.</p>
+
+<p><img src="attachments/128409219/129354351.png" alt="" /></p>
+
+<p><strong>Step 6:</strong> Now, type <strong>True</strong> in the RequireValue argument because the From value must exist to trigger the drill. There would be no point in drilling to the target report without filtering for a specific month. The <strong>True</strong> value is not required since, if left blank, <strong>True</strong> is assumed. Since this drill exercise will have other Pairs() that are not required, it is good practice to specify it explicitly in this case.</p>
+
+<p>Note the next argument, ScopeRange, is not used. It is an outdated argument.</p>
+
+<p><img src="attachments/128409219/129354615.png" alt="" /></p>
+
+<p><strong>Step 7:</strong> Now that you understand how to define a Pair, you have many more to create. The target report has several filters that make use easier when employed separately and in drilling to the report. You need to add a few more values to pass to the new report and clear the remaining filters that are not used in this drill. This is a key concept for INTERJECT drills. A report can be used by itself for its own purpose, but it can also be used as a drill from other reports.</p>
+
+<p>Now let’s use the Function Wizard to edit the PairGroup() function by clicking on it in the Formula Bar as seen below. This will make it easier to create more Pairs() that will clear out the other filters in the target report.</p>
+
+<p><img src="attachments/128409219/129354915.png" alt="" /></p>
+
+<p><strong>Step 8:</strong> You have two more values to pass, the Location and the Account. Type <strong>Pair(M21,”Segment2”,TRUE)</strong> into Pair2, which will pass the Location into the next report, and type <strong>Pair(F26:F125,”Segment1”,TRUE)</strong> into Pair3, which will pass the Account or Account Group into the next report.</p>
+
+<p><img src="attachments/128409219/129355415.png" alt="" /></p>
+
+<p><strong>Step 9:</strong> You need to make sure the other filters in the target report do not interfere with the drill, so you will set this next group of Pair() functions to bring over blank values. In the Pair() functions you are going to set the From arguments to blank (“”), and you will make the RequireValue argument <strong>FALSE</strong> . Both steps 9 and 10 are adding Pair functions that clear out the unused filters. This is best practice, but steps 9 and 10 can be skipped since it will not impact the limited scope of this exercise.</p>
+
+<p>Enter the following pairs as shown below: <br />
+<strong>Pair(“”,”DateEnd”,FALSE)</strong> into Pair4</p>
+
+<p><strong>Pair(“”,”Segment3”,FALSE)</strong> into Pair5</p>
+
+<p><strong>Pair(“”,”Segment4”,FALSE)</strong> into Pair 6</p>
+
+<p><strong>Pair(“”,”AccountDesc”,FALSE)</strong> Into Pair7</p>
+
+<p><strong>Pair(“”,”TypeDesc”,FALSE)</strong> Into Pair8</p>
+
+<p><img src="attachments/128409219/129356073.png" alt="" /></p>
+
+<p><strong>Step 10:</strong> There are still more filters to blank out for the target report. Continuing typing the following.</p>
+
+<p><strong>Pair(“All”,”Posting”,FALSE)</strong> into Pair9</p>
+
+<p><strong>Pair(“”,”VendorCode”,FALSE)</strong> into Pair10</p>
+
+<p><strong>Pair(“”,”AmountFrom”,FALSE)</strong> into Pair11</p>
+
+<p><strong>Pair(“”,”AmountTo”,FALSE)</strong> into Pair12</p>
+
+<p><strong>Pair(“”,”Organization”,FALSE)</strong> into Pair13 **<br />
+<img src="attachments/128409219/129356730.png" alt="" /> **</p>
+
+<p>There are two more pairs to enter. Scroll down and type:</p>
+
+<p><strong>Pair(“”,”Company”,FALSE)</strong> into Pair 14</p>
+
+<p><strong>Pair(“”,”FullAccount”,FALSE))</strong> into Pair 15.</p>
+
+<p>After these, you are through adding the Pair() functions.</p>
+
+<p><img src="attachments/128409219/129356814.png" alt="" /></p>
+
+<p><strong>Step 11:</strong> You need to name the drill so it is clear for the users. Click on G17 and select the <strong>fx</strong> to bring up the Function Wizard. Input <strong>Drill To JEQuery - Account</strong> into the DrillName and select OK to finish creating the drill.</p>
+
+<p><img src="attachments/128409219/129356913.png" alt="" /></p>
+
+<p>When you click away from TransferPairs, it shows a red <strong>#NAME</strong> ? to the right of the input area. That looks like an error, but it is simply a small bug in Microsoft Excel, which will hopefully be addressed.</p>
+
+<p><img src="attachments/128409219/129357549.png" alt="" /></p>
+
+<p><strong>Step 12:</strong> You successfully created a Drill to the Journal Entry Query report from the financial report. Test it out.</p>
+
+<p><img src="attachments/128409219/129356993.png" alt="" /></p>
+
+<h3 id="executing-the-drill">Executing the Drill</h3>
+
+<p><strong>Step 1:</strong> Use **<a href="/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html"> Pull Data </a> ** to pull the report. You can leave the panes open for the moment. They will not affect the drill feature.</p>
+
+<p><img src="attachments/128409219/129434635.png" alt="" /></p>
+
+<p><strong>Step 2:</strong> Scroll down to the <strong>Revenue - Sales</strong> row on line 32 and click the plus sign so it expands to show the accounts. There should be several accounts listed as shown below.</p>
+
+<p><img src="attachments/128409219/129367046.png" alt="" /></p>
+
+<p><strong>Step 3:</strong> Click the amount $20,900 which is for account 32000 in May 2005. You can then use the keystroke <strong>Ctrl Shift K</strong> or use the <strong>Drill on Data</strong> menu item to bring up the drill options.</p>
+
+<p><img src="attachments/128409219/129434695.png" alt="" /></p>
+
+<p>Notice that if you close the drill window and try to drill on column O, there will not be any drill options. The work you did above helped set the scope so the drill only works on the appropriate cells.</p>
+
+<p><img src="attachments/128409219/129434726.png" alt="" /></p>
+
+<p><strong>Step 3:</strong> The animated GIF below shows the drill completed. The panes are frozen again. The drill selects the amount for account 33000 for March 2002, then does the drill on amount 44,474. The JE Query report provides the detail to support the same amount. <br />
+<img src="attachments/128409219/129357088.gif" alt="" /></p>
+
+<h2 id="related-links">Related Links:</h2>
+
+<p><a href="/wGetStarted/128429053.html"> L1.3 Modify: Financial Report </a></p>
+
+<p><a href="/wGetStarted/L3.3-Financial-Variable_128421724.html"> L3.3 Financial Variable </a></p>
+
+<p><a href="/wGetStarted/128409138.html"> L4.2 Drill: Inventory Report </a></p>
+
+<p><a href="INTERJECT-Ribbon-Menu-Items_83689479.html"> INTERJECT Ribbon Menu Items </a></p>
+
+							<!-- tags -->
+							
+							
+							
+							
+							
+							<!-- link corrections -->
+              <script language="JavaScript">
+							var x = document.links.length;
+							var baseHref = document.getElementsByTagName('base')[0].href
+							for (i = 0; i < x; i++) {
+							  var munged = false;
+							  var thisHREF = document.links[i].href;
+							  var originalURL = "/wGetStarted/128409219.html";
+							  if (thisHREF.indexOf(baseHref + "#") > -1) {
+							    // hash fix
+							    //console.log('BEFORE: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							    thisHREF = originalURL + thisHREF.replace(baseHref, "");
+							    //console.log('AFTER: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							  }
+							  if ((thisHREF.indexOf(window.location.hostname) > -1 || thisHREF.indexOf('http') == -1) && document.links[i].className.indexOf("nomunge") < 0) {
+							    munged = true;
+							    thisHREF = thisHREF.replace(".md", "/").replace("/index/", "/");
+							    document.links[i].setAttribute('href', thisHREF);
+							  }
+							}
+							</script>
+							
+						  <div id="ratings-div" style="color:#b9c2cc; text-align: center; margin-top: 150px; visibility: hidden">
+								<div id="pd_rating_holder_8453675"></div>
+								<script type="text/javascript">
+									PDRTJS_settings_8453675 = {
+										"id": "8453675",
+										"unique_id": "wGetStarted/128409219.md",
+										"title": "Interject Documentation > L4.3 Drill> Financial Report",
+										"permalink": "https://github.com/gointerject/gointerject.github.io/blob/master/wGetStarted/128409219.md"
+									};
+									(function(d, c, j) {
+										if (!document.getElementById(j)) {
+											var pd = d.createElement(c),
+												s;
+											pd.id = j;
+											pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
+											s = document.getElementsByTagName(c)[0];
+											s.parentNode.insertBefore(pd, s);
+										}
+									}(document, 'script', 'pd-rating-js'));
+								</script>
+							</div>
+							
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						<div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+    </ul>
+</div>
+
+						</div>
+					</nav>
+					<div class="col-toc">
+							<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										
+                                            <li style="visibility: show">
+                                                <a href="https://github.com/gointerject/gointerject.github.io/edit/master/wGetStarted/128409219.md">
+                                                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit this page
+                                                </a>
+                                            </li>
+                                        
+										<li><a href="https://github.com/gointerject/gointerject.github.io/issues/new?body=File: [wGetStarted/128409219.md](https://docs.gointerject.com/wGetStarted/128409219.html)"
+															class="nomunge"><i class="fa fa-check" aria-hidden="true"></i> Request docs changes</a></li>
+										<li><a href="http://www.gointerject.com/call-us/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<!-- toggle mode -->
+										<!-- Turn night mode on and off
+										<li>
+											<div class="toggle-mode">
+												<div class="icon">
+													<i class="fa fa-sun-o" aria-hidden="true"></i>
+												</div>
+												<div class="toggle-switch">
+													<label class="switch">
+														<input type="checkbox" id="switch-style">
+														<div class="slider round"></div>
+												</label>
+												</div>
+												<div class="icon">
+													<i class="fa fa-moon-o" aria-hidden="true"></i>
+												</div>
+											</div>
+										</li>
+										-->
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="/wGetStarted/128409219.html#overview" class="nomunge">Overview</a>
+    <ul>
+      <li><a href="/wGetStarted/128409219.html#unfreezing-the-report" class="nomunge">Unfreezing the Report</a></li>
+      <li><a href="/wGetStarted/128409219.html#building-the-drill" class="nomunge">Building The Drill</a></li>
+      <li><a href="/wGetStarted/128409219.html#executing-the-drill" class="nomunge">Executing the Drill</a></li>
+    </ul>
+  </li>
+  <li><a href="/wGetStarted/128409219.html#related-links" class="nomunge">Related Links:</a></li>
+</ul>
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- The Modal for viewing images -->
+	<div id="modal-main" class="modal" >
+		<img class="modal-content nohover" id="modal-img" style="padding-top: 3%;"/>
+		<span class="close-modal" style="padding-top: 3%;">
+			<i class="fa fa-times-circle fa-1x"></i>
+		</span>
+	</div>
+
+	
+	<footer class="footer">
+		  
+    <div class="container">
+        <div id="footerdiv" class="top_footer">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><h4>GENERAL</h4></li>
+                        <li><a href="http://www.gointerject.com">INTERJECT HOME</a></li>
+                        <li><a href="http://www.gointerject.com/#whatwedobest">WHAT WE DO BEST</a></li>
+                        <li><a href="https://gointerject.com/#benefitsyoucanbankon">BENFITS</a></li>
+                        <li><a href="https://gointerject.com/#whatourclientssay">WHAT OUR CLIENTS SAY</a></li>
+                        <li><a href="https://gointerject.com/#upcomingevents">UPCOMING EVENTS</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://gointerject.com/#whatmatterstous"><h4>WHAT MATTERS TO US</h4> </a></li>
+                        <li><a href="https://gointerject.com/helping-you-master-technology/">Mastering Technology</a></li>
+                        <!--<li><a href="https://gointerject.com/helping-you-master-technology/">Attend Next Event</a></li>-->
+                        <li><a href="https://gointerject.com/helping-you-master-technology/learn-on-your-own/">Learn On Your Own</a></li>
+                        <li><a href="http://www.gointerject.com/kids-coding-clubs/">Kids Coding Club</a></li>
+                        <li><a href="http://www.gointerject.com/helping-you-master-technology/">Tech Talks</a></li> 
+                        <!-- <li><a href="http://www.gointerject.com/#whatwedobest">Reserve Your Spot</a></li> -->
+                        <li><a href="https://gointerject.com/kids-coding-clubs/start-your-own-club/">Start Your Own Club</a></li>
+                        <!-- <li><a href="https://gointerject.com/#whatmatterstous">Never Standing Still</a></li>  -->
+                        <li><a href="https://gointerject.com/never-stand-still-blog/">Our Blog</a></li> 
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><h4>YOUR TEAM</h4></li>
+                        <li><a href="https://gointerject.com/meet-us/">Meet Us</a></li>
+                        <li><a href="https://gointerject.com/join-us/">Join Us</a></li>
+                        <li><a href="https://gointerject.com/call-us/">Call Us</a></li>
+                        <li><h4>SUPPORT</h4></li>
+                        <li><a href="">Wiki / FAQ</a><span style="font-size:10px;padding-left: 7px;">(Coming Soon)</span></li>
+                        <li><a href="">For Developers</a><span style="font-size:10px;padding-left: 7px;">(Coming Soon)</span></li>
+                        <!-- <li class="break"></li> -->
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><h4>CONTACT INFO</h4></li>
+                        <li><strong>Office:</strong> (855) 546-0036</li>
+                        <li><strong>Fax:</strong>  (360) 838-9459</li>
+                        <li><strong>Address:</strong> 1404 NE 134th St. Suite 200, </li>
+                        <li>Vancouver, WA 98685</li> 
+                        <li><strong>E-mail:</strong> info@gointerject.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- ****** This Section is setup for 'the fine text' links ****** -->
+            <!--
+            <div class="footer-nav">
+                <nav class="footer_sub_nav">
+                    <ul class="menu">
+                        <li><a href="">Status</a></li>
+                        <li><a href="">Security</a></li>
+                        <li><a href="">Legal</a></li>
+                    </ul>
+                </nav>
+            </div>
+            -->
+        </div>
+        <div class="bottom_footer">
+            <div class="footer-copyright col-xs-12 col-md-8">
+                <p class="copyright">
+                    Copyright © 2018 INTERJECT Inc. All Rights Reserved.
+                </p>
+            </div>
+            <div class="footer_social_nav">
+                <ul class="nav-social">
+                    <li class="fa fa-twitter"><a href="http://twitter.com/gointerject">Twitter</a></li>
+                    <li class="fa fa-youtube"><a href="http://www.youtube.com/user/gointerject">Youtube</a></li> 
+                    <li class="fa fa-github"><a href="https://github.com/gointerject">Github</a></li>
+                    <li class="fa fa-linkedin"><a href="https://www.linkedin.com/company/gointerject">Linkedin</a></li>
+                    <li class="fa fa-facebook"><a href="https://www.facebook.com/gointerject">Facebook</a></li>  
+                </ul>
+            </div>
+        </div>
+    </div>
+
+	</footer>
+	<link rel="stylesheet" href="/css/github.css">
+	
+	<!-- <script src="/js/anchorlinks.js"></script> -->
+	<script defer src="/js/menu.js"></script>
+	<script src="/js/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<!-- Always include the archive.js, but it doesn't do much unless we are an archive -->
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var interjectVersion = 'v';
+	// In archives, we need to know the page root and we get it from JEKYLL_ENV in the jekyll build command
+	var jekyllEnv = 'development';
+	// If unset (in non-archive branches), defaults to "development". In that case, reset it to empty
+	if (jekyllEnv == 'development') {
+		jekyllEnv = '';
+	}
+	var pageURL = jekyllEnv + '/wGetStarted/128409219.html';
+	</script>
+	<script src="/js/archive.js"></script>
+	<script src="/js/stickyfill.min.js"></script>
+	<script defer src="/js/metadata.js"></script>
+	<script src="/js/glossary.js"></script>
+	<script src="/js/collections_tocs.js"></script>
+	<script defer src="/js/docs.js"></script>
+	<script defer src="/js/toc.js"></script>
+	<script defer src="/js/stylemod.js"></script>
+	<script language="javascript">
+	jQuery(document).ready(function(){
+				hookupTOCEvents();
+			});
+	</script>
+</body>
+
+</html>

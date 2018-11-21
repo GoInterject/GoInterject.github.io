@@ -1,0 +1,530 @@
+
+<!-- Page generated 2018-11-21 14:32:27 -0800 -->
+<!-- relative link basehrefs -->
+
+	
+	
+	
+		
+			
+		
+	
+		
+			
+			
+
+
+<!-- Logic for 'edit this button' -->
+
+
+
+<!-- End of logic for 'edit this button' -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<base href="/wAbout/" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<style id="page_style" type="text/css">
+		@charset "UTF-8";
+		[ng\:cloak],
+		[ng-cloak],
+		[data-ng-cloak],
+		[x-ng-cloak],
+		.ng-cloak,
+		.x-ng-cloak,
+		.ng-hide:not(.ng-hide-animate) {
+			display: none !important;
+		}
+
+		ng\:form {
+			display: block;
+		}
+	</style>
+
+	<!--
+	<script type="text/javascript">
+	  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
+	  analytics.load("IWj9D0UpZHZdZUZX9jl98PcpBFWBnBMy");
+	  analytics.page();
+	  }}();
+	</script>
+	-->
+	
+	<!-- favicon -->
+	<link rel="icon" type="image/x-icon" href="/favicons/docs@2x.ico" sizes="129x128">
+	<meta name="msapplication-TileImage" content="/favicons/docs@2x.ico">
+	<link rel="apple-touch-icon" type="image/x-icon" href="/favicons/docs@2x.ico" sizes="129x128">
+	<meta property="og:image" content="/favicons/docs@2x.ico"/>
+	<!-- metadata -->
+	
+
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css">
+	<link id="pagestyle" rel="stylesheet" href="/css/style.css">
+
+	<!-- Go get "Open Sans" font from Google -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	
+	
+	
+
+</head>	
+
+<body id="main_body" class="colums">
+	
+
+	<header>
+		 <nav class="nav-secondary navbar navbar-fixed-top">
+    <!-- <div class="fan"></div> -->
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="/"><img class="logo" src="/images/site-logo.png" alt="Interject Docs" title="Interject Docs"></a>
+        </div>
+        <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+            <div class="search-form" id="search-div" >
+    <form class="search-form form-inline ng-pristine ng-valid" id="searchForm" action="/search/">
+        <input class="search-field form-control ds-input" id="st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;">
+        <div id="autocompleteContainer">
+            <div id="autocompleteResults"></div>
+        </div>
+        <!-- <button type="submit" class="search-submit btn btn-default">Search</button> -->
+    </form>
+</div>
+<div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <div id="tabs">
+        <ul class="tabs" id="jsTOCHorizontal">
+
+        </ul>
+    </div>
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div class="btn-group" style="visibility: hidden">
+  <button type="button" class="btn btn-default dropdown-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    
+  </ul>
+</div>
+
+    </div>
+</div>
+
+        </div>
+    </div>
+</nav>
+	</header>
+
+	
+
+	<!-- nav bar -->
+	<div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							
+								
+							<h1>Interject Documentation > Basics of Report Formulas</h1> 
+									 
+									
+									<span class="reading-time" title="Estimated reading time">
+  <span class="reading-time-label">Estimated reading time: </span>
+  
+  
+    5 minutes
+  
+</span>
+
+									
+							
+							
+							<hr />
+
+<h2 id="overview"><strong>Overview</strong></h2>
+
+<p>Inside INTERJECT tabular reports there is a hidden configuration section at the top of the worksheet. Notice in the following screenshot how the <a href="/wAbout/Customer-Aging_128091294.html"> Customer Aging </a> report from the Walk-through begins at row 14? Above row 14 is a section devoted to the report configuration. The <strong>Report Formulas</strong> section is a common place where INTERJECT Report Formulas are added to direct the behavior of the report. Most users of reports will not have any need to view this area. For advanced users, there are various reasons to access these formulas.</p>
+
+<p><img src="attachments/61702189/128842822.png" alt="" /></p>
+
+<ul>
+  <li>
+    <ul>
+      <li>
+        <h4 id="accessing-the-report-formulas">Accessing the Report Formulas</h4>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* ####  Column Definitions 
+
+* ####  Report Formulas 
+
+* ####  Hidden Parameters and Notes 
+</code></pre></div></div>
+
+<h3 id="accessing-the-report-formulas-1">Accessing the Report Formulas</h3>
+
+<p><strong>Step 1:</strong> For this walk-through, you will use the Customer Collections report <em>**</em> located in the INTERJECT Demos folder of the <a href="/wAbout/Report-Library-Basics_61702517.html"> Report Library </a> .</p>
+
+<p><img src="attachments/61702189/129931697.png" alt="" /></p>
+
+<p>When the report is opened it will be blank. It is ready for any filters before pulling data.</p>
+
+<p><img src="attachments/61702189/128491979.png" alt="" /></p>
+
+<p><strong>Step 2:</strong> To see the formulas working behind INTERJECT, you need to <a href="/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html"> Unfreeze </a> the panes hiding them. Select the View ribbon and select  the <strong>Freeze Panes</strong> drop-down. Then choose the first operation, <strong>Unfreeze Panes</strong> .</p>
+
+<p><img src="attachments/61702189/128494102.png" alt="" /></p>
+
+<p><strong>Step 3:</strong> Now scroll up and see the Report Formulas section of the report. Notice that now all the rows are visible, starting at row 1.</p>
+
+<p><img src="attachments/61702189/128591077.png" alt="" /></p>
+
+<h3 id="column-definitions">Column Definitions</h3>
+
+<p>Column Definitions define which columns of a spreadsheet will be populated with data. This is how INTERJECT knows where to place data within the spreadsheet. Moving column definitions will change where data is placed the next time it is pulled.</p>
+
+<p>You have full control of what column labels that are shown in the reports. Notice that the column labels in row 21 are directly below the coinciding column definition in row 2. Since this column label row is displayed for users, you can make the text more readable by, for example, adding spaces for the column name <strong>30Days</strong> to show in the report like <strong>30 Days</strong> .</p>
+
+<p><img src="attachments/61702189/128618604.png" alt="" /></p>
+
+<p><strong>Step 1:</strong> INTERJECT uses the column definitions in row 2 to determine where data is placed in the report. The labels in row 21 are ignored. To show this, move the <strong>CustomerID</strong> label in row 2 and place it in Column N, but do not move the column label in row 21.</p>
+
+<p><img src="attachments/61702189/128593979.png" alt="" /></p>
+
+<p><strong>Step 2:</strong> Now use <strong><a href="https://interject.atlassian.net/wiki/content-only/viewpage.action?pageId=83689479&amp;iframeId=fallback-mode&amp;user_key=ff8080814d41a454014d440734dd0001&amp;user_id=MariaH&amp;xdm_e=https://interject.atlassian.net/&amp;xsm_c=fallback-mode-fake-key__8257960802079898&amp;cp=/wiki&amp;cv=0.0.0-fallback-mode&amp;lic=none#InterjectRibbonMenuItems-PullData"> Pull Data </a> ** **</strong> to see where the <strong>CustomerID</strong> data is populated.</p>
+
+<p><img src="attachments/61702189/128619257.png" alt="" /></p>
+
+<p>Notice that the <strong>CustomerID</strong> data is populating column N below the column definition.</p>
+
+<p><img src="attachments/61702189/128842866.png" alt="" /></p>
+
+<p><strong>Step 3:</strong> Put the CustomerID back where it belongs in Column B. First, clear the report so you can remove the CustomerID data already in column N.</p>
+
+<p><img src="attachments/61702189/129741882.png" alt="" /></p>
+
+<p><strong>Step 4:</strong> Move the <strong>CustomerID</strong> column definition value back to cell B2.</p>
+
+<p><img src="attachments/61702189/129741934.png" alt="" /></p>
+
+<h3 id="formatting-range-">Formatting Range **</h3>
+<p>**</p>
+
+<p>The <strong>Formatting Range</strong> is the place designated to hold the formatting and formulas that will be copied down with the data in the report. When the report is populated, the formatting range is first copied down to the new rows in the report, along with any input text or formulas. Then the data specified in the Column Definition area is placed in the respective column. It is important to note, if the reporting range has values or formulas in the same column as the Column Definitions, it will be replaced with the data.</p>
+
+<p>A Formatting Range configuration is not required. If one is not specified in a Report Formula (discussed below), then the first row in the report is considered the Reporting Range.</p>
+
+<p>** <img src="attachments/61702189/128842991.png" alt="" /> <br />
+**</p>
+
+<h3 id="report-formulas">Report Formulas</h3>
+
+<p>Report Formulas are a big part of how INTERJECT directs data in and out of the spreadsheets. For example, you can see here that the Customer Aging Report contains 4 formulas, a pull and 3 drills.</p>
+
+<p><img src="attachments/61702189/128618085.png" alt="" /></p>
+
+<p>The first formula is a <strong>Report Range</strong> formula and will pull the data from a data source to the spreadsheet. There are other, similar, Report Formulas to pull data, such as <a href="/wIndex/61702203.html"> ReportFixed() </a> , <a href="/wIndex/61702201.html"> ReportVariable() </a> and ReportLookup(). You will look at these later. The screenshot above also shows three ReportDrill() formulas that enable <a href="https://interject.atlassian.net/wiki/display/ID/Interject+Ribbon+Menu+Items#InterjectRibbonMenuItems-DrillData"> drill </a> functionality. A drill lets us navigate to another spreadsheet report based on the context selected.</p>
+
+<p>Another type of Report Formula is the <a href="https://interject.atlassian.net/wiki/display/ID/Interject+Ribbon+Menu+Items#InterjectRibbonMenuItems-SaveData"> Save </a> formula which is not shown here. This type of Report Formula enables an application developer to build save back features into our reports, such as saving back comments on financial variances to a central database so they can be presented in other reports.</p>
+
+<p>Each of these formulas is activated by its corresponding button in the <a href="https://interject.atlassian.net/wiki/spaces/ID/pages/83689479/Interject+Ribbon+Menu+Items"> INTERJECT Ribbon menu </a> .</p>
+
+<p><img src="attachments/61702189/128842903.png" alt="" /></p>
+
+<p>If a report has multiple Pulls or Saves, INTERJECT will activate them in order from left to right, for the first 1000 rows of the spreadsheet. If a report has multiple drills, then, when activating a drill, INTERJECT will show a popup to select one specifically. INTERJECT orders that list based on the order of the drills in the report from left to right and top to bottom.</p>
+
+<p><img src="attachments/61702189/128619310.png" alt="" /></p>
+
+<p>**<br />
+**</p>
+
+<h3 id="hidden-parameters-and-notes">Hidden Parameters and Notes</h3>
+
+<p>The Hidden Parameters and Notes section has two uses. First, it holds documentation on the configuration for other report writers to see. Second, it can contain hidden parameters and spreadsheet formulas that support the other areas of the spreadsheet report. In this example, the notes contain a basic overview of the report as well as what the drills do.</p>
+
+<p><img src="attachments/61702189/128619189.png" alt="" /></p>
+
+<p>This concludes the discussion of the basics of Report Formulas. Be sure to continue reading, since there are many advanced options to learn more about, which can be leveraged to create tailored reports and applications for the company’s needs.</p>
+
+<p>Back to Top</p>
+
+<h2 id="related-links">Related Links:</h2>
+
+<p><a href="Customer-Aging_128091294.html"> Customer Aging </a></p>
+
+<p><a href="/wGetStarted/Modifying-an-Existing-Report_62849215.html"> Modifying an Existing Report </a></p>
+
+<p><a href="INTERJECT-Ribbon-Menu-Items_83689479.html"> INTERJECT Ribbon Menu Items </a></p>
+
+<p><a href="/wGetStarted/Creating-a-Simple-Report_128408585.html"> Creating a Simple Report </a></p>
+
+							<!-- tags -->
+							
+							
+							
+							
+							
+							<!-- link corrections -->
+              <script language="JavaScript">
+							var x = document.links.length;
+							var baseHref = document.getElementsByTagName('base')[0].href
+							for (i = 0; i < x; i++) {
+							  var munged = false;
+							  var thisHREF = document.links[i].href;
+							  var originalURL = "/wAbout/Basics-of-Report-Formulas_61702189.html";
+							  if (thisHREF.indexOf(baseHref + "#") > -1) {
+							    // hash fix
+							    //console.log('BEFORE: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							    thisHREF = originalURL + thisHREF.replace(baseHref, "");
+							    //console.log('AFTER: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							  }
+							  if ((thisHREF.indexOf(window.location.hostname) > -1 || thisHREF.indexOf('http') == -1) && document.links[i].className.indexOf("nomunge") < 0) {
+							    munged = true;
+							    thisHREF = thisHREF.replace(".md", "/").replace("/index/", "/");
+							    document.links[i].setAttribute('href', thisHREF);
+							  }
+							}
+							</script>
+							
+						  <div id="ratings-div" style="color:#b9c2cc; text-align: center; margin-top: 150px; visibility: hidden">
+								<div id="pd_rating_holder_8453675"></div>
+								<script type="text/javascript">
+									PDRTJS_settings_8453675 = {
+										"id": "8453675",
+										"unique_id": "wAbout/Basics-of-Report-Formulas_61702189.md",
+										"title": "Interject Documentation > Basics of Report Formulas",
+										"permalink": "https://github.com/gointerject/gointerject.github.io/blob/master/wAbout/Basics-of-Report-Formulas_61702189.md"
+									};
+									(function(d, c, j) {
+										if (!document.getElementById(j)) {
+											var pd = d.createElement(c),
+												s;
+											pd.id = j;
+											pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
+											s = document.getElementsByTagName(c)[0];
+											s.parentNode.insertBefore(pd, s);
+										}
+									}(document, 'script', 'pd-rating-js'));
+								</script>
+							</div>
+							
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						<div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+    </ul>
+</div>
+
+						</div>
+					</nav>
+					<div class="col-toc">
+							<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										
+                                            <li style="visibility: show">
+                                                <a href="https://github.com/gointerject/gointerject.github.io/edit/master/wAbout/Basics-of-Report-Formulas_61702189.md">
+                                                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit this page
+                                                </a>
+                                            </li>
+                                        
+										<li><a href="https://github.com/gointerject/gointerject.github.io/issues/new?body=File: [wAbout/Basics-of-Report-Formulas_61702189.md](https://docs.gointerject.com/wAbout/Basics-of-Report-Formulas_61702189.html)"
+															class="nomunge"><i class="fa fa-check" aria-hidden="true"></i> Request docs changes</a></li>
+										<li><a href="http://www.gointerject.com/call-us/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<!-- toggle mode -->
+										<!-- Turn night mode on and off
+										<li>
+											<div class="toggle-mode">
+												<div class="icon">
+													<i class="fa fa-sun-o" aria-hidden="true"></i>
+												</div>
+												<div class="toggle-switch">
+													<label class="switch">
+														<input type="checkbox" id="switch-style">
+														<div class="slider round"></div>
+												</label>
+												</div>
+												<div class="icon">
+													<i class="fa fa-moon-o" aria-hidden="true"></i>
+												</div>
+											</div>
+										</li>
+										-->
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="/wAbout/Basics-of-Report-Formulas_61702189.html#overview" class="nomunge">Overview</a>
+    <ul>
+      <li><a href="/wAbout/Basics-of-Report-Formulas_61702189.html#accessing-the-report-formulas-1" class="nomunge">Accessing the Report Formulas</a></li>
+      <li><a href="/wAbout/Basics-of-Report-Formulas_61702189.html#column-definitions" class="nomunge">Column Definitions</a></li>
+      <li><a href="/wAbout/Basics-of-Report-Formulas_61702189.html#formatting-range-" class="nomunge">Formatting Range **</a></li>
+      <li><a href="/wAbout/Basics-of-Report-Formulas_61702189.html#report-formulas" class="nomunge">Report Formulas</a></li>
+      <li><a href="/wAbout/Basics-of-Report-Formulas_61702189.html#hidden-parameters-and-notes" class="nomunge">Hidden Parameters and Notes</a></li>
+    </ul>
+  </li>
+  <li><a href="/wAbout/Basics-of-Report-Formulas_61702189.html#related-links" class="nomunge">Related Links:</a></li>
+</ul>
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- The Modal for viewing images -->
+	<div id="modal-main" class="modal" >
+		<img class="modal-content nohover" id="modal-img" style="padding-top: 3%;"/>
+		<span class="close-modal" style="padding-top: 3%;">
+			<i class="fa fa-times-circle fa-1x"></i>
+		</span>
+	</div>
+
+	
+	<footer class="footer">
+		  
+    <div class="container">
+        <div id="footerdiv" class="top_footer">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><h4>GENERAL</h4></li>
+                        <li><a href="http://www.gointerject.com">INTERJECT HOME</a></li>
+                        <li><a href="http://www.gointerject.com/#whatwedobest">WHAT WE DO BEST</a></li>
+                        <li><a href="https://gointerject.com/#benefitsyoucanbankon">BENFITS</a></li>
+                        <li><a href="https://gointerject.com/#whatourclientssay">WHAT OUR CLIENTS SAY</a></li>
+                        <li><a href="https://gointerject.com/#upcomingevents">UPCOMING EVENTS</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://gointerject.com/#whatmatterstous"><h4>WHAT MATTERS TO US</h4> </a></li>
+                        <li><a href="https://gointerject.com/helping-you-master-technology/">Mastering Technology</a></li>
+                        <!--<li><a href="https://gointerject.com/helping-you-master-technology/">Attend Next Event</a></li>-->
+                        <li><a href="https://gointerject.com/helping-you-master-technology/learn-on-your-own/">Learn On Your Own</a></li>
+                        <li><a href="http://www.gointerject.com/kids-coding-clubs/">Kids Coding Club</a></li>
+                        <li><a href="http://www.gointerject.com/helping-you-master-technology/">Tech Talks</a></li> 
+                        <!-- <li><a href="http://www.gointerject.com/#whatwedobest">Reserve Your Spot</a></li> -->
+                        <li><a href="https://gointerject.com/kids-coding-clubs/start-your-own-club/">Start Your Own Club</a></li>
+                        <!-- <li><a href="https://gointerject.com/#whatmatterstous">Never Standing Still</a></li>  -->
+                        <li><a href="https://gointerject.com/never-stand-still-blog/">Our Blog</a></li> 
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><h4>YOUR TEAM</h4></li>
+                        <li><a href="https://gointerject.com/meet-us/">Meet Us</a></li>
+                        <li><a href="https://gointerject.com/join-us/">Join Us</a></li>
+                        <li><a href="https://gointerject.com/call-us/">Call Us</a></li>
+                        <li><h4>SUPPORT</h4></li>
+                        <li><a href="">Wiki / FAQ</a><span style="font-size:10px;padding-left: 7px;">(Coming Soon)</span></li>
+                        <li><a href="">For Developers</a><span style="font-size:10px;padding-left: 7px;">(Coming Soon)</span></li>
+                        <!-- <li class="break"></li> -->
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><h4>CONTACT INFO</h4></li>
+                        <li><strong>Office:</strong> (855) 546-0036</li>
+                        <li><strong>Fax:</strong>  (360) 838-9459</li>
+                        <li><strong>Address:</strong> 1404 NE 134th St. Suite 200, </li>
+                        <li>Vancouver, WA 98685</li> 
+                        <li><strong>E-mail:</strong> info@gointerject.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- ****** This Section is setup for 'the fine text' links ****** -->
+            <!--
+            <div class="footer-nav">
+                <nav class="footer_sub_nav">
+                    <ul class="menu">
+                        <li><a href="">Status</a></li>
+                        <li><a href="">Security</a></li>
+                        <li><a href="">Legal</a></li>
+                    </ul>
+                </nav>
+            </div>
+            -->
+        </div>
+        <div class="bottom_footer">
+            <div class="footer-copyright col-xs-12 col-md-8">
+                <p class="copyright">
+                    Copyright © 2018 INTERJECT Inc. All Rights Reserved.
+                </p>
+            </div>
+            <div class="footer_social_nav">
+                <ul class="nav-social">
+                    <li class="fa fa-twitter"><a href="http://twitter.com/gointerject">Twitter</a></li>
+                    <li class="fa fa-youtube"><a href="http://www.youtube.com/user/gointerject">Youtube</a></li> 
+                    <li class="fa fa-github"><a href="https://github.com/gointerject">Github</a></li>
+                    <li class="fa fa-linkedin"><a href="https://www.linkedin.com/company/gointerject">Linkedin</a></li>
+                    <li class="fa fa-facebook"><a href="https://www.facebook.com/gointerject">Facebook</a></li>  
+                </ul>
+            </div>
+        </div>
+    </div>
+
+	</footer>
+	<link rel="stylesheet" href="/css/github.css">
+	
+	<!-- <script src="/js/anchorlinks.js"></script> -->
+	<script defer src="/js/menu.js"></script>
+	<script src="/js/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<!-- Always include the archive.js, but it doesn't do much unless we are an archive -->
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var interjectVersion = 'v';
+	// In archives, we need to know the page root and we get it from JEKYLL_ENV in the jekyll build command
+	var jekyllEnv = 'development';
+	// If unset (in non-archive branches), defaults to "development". In that case, reset it to empty
+	if (jekyllEnv == 'development') {
+		jekyllEnv = '';
+	}
+	var pageURL = jekyllEnv + '/wAbout/Basics-of-Report-Formulas_61702189.html';
+	</script>
+	<script src="/js/archive.js"></script>
+	<script src="/js/stickyfill.min.js"></script>
+	<script defer src="/js/metadata.js"></script>
+	<script src="/js/glossary.js"></script>
+	<script src="/js/collections_tocs.js"></script>
+	<script defer src="/js/docs.js"></script>
+	<script defer src="/js/toc.js"></script>
+	<script defer src="/js/stylemod.js"></script>
+	<script language="javascript">
+	jQuery(document).ready(function(){
+				hookupTOCEvents();
+			});
+	</script>
+</body>
+
+</html>
