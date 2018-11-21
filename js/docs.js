@@ -7,6 +7,8 @@ var headerOffset = document.getElementsByClassName("container-fluid")[0].getBoun
 // ensure that the left nav visibly displays the current topic
 var current = document.getElementsByClassName("active currentPage");
 var body = document.getElementsByClassName("col-content content");
+
+console.log("sidebar is ", sidebarObj);
 if (current[0]) {
     if (sidebarObj) {
       current[0].scrollIntoView(true);

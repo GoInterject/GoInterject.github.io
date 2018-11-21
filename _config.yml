@@ -41,7 +41,7 @@ lsi: false
 theme: minima
 
 plugins:
-  - jekyll-feed
+  # - jekyll-feed
   - jekyll-redirect-from
   - jekyll-relative-links
   - jekyll-sitemap
