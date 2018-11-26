@@ -1,12 +1,12 @@
 ---
 layout: custom
-title:  "Sample Api C# Project"
+title:  "Developer Overview"
 date:   2018-10-12 9:03:02 -0700
-categories: API C# Project
+categories: API Developer
 ---
 
 
 Below is a sample api 
 
 git clone https://gitlab.com/Open-Interject/simpledataapi.git
-hi robby
+
