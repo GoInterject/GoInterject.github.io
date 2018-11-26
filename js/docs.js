@@ -8,7 +8,6 @@ var headerOffset = document.getElementsByClassName("container-fluid")[0].getBoun
 var current = document.getElementsByClassName("active currentPage");
 var body = document.getElementsByClassName("col-content content");
 
-console.log("sidebar is ", sidebarObj);
 if (current[0]) {
     if (sidebarObj) {
       current[0].scrollIntoView(true);
@@ -177,6 +176,7 @@ function renderNav(docstoc) {
   }
   if (outputLetNav.length==0)
   {
+    console.log("outputletnav is length zero");
     // didn't find the current topic in the standard TOC; maybe it's a collection;
     for (var key in collectionsTOC)
     {
@@ -196,6 +196,7 @@ function renderNav(docstoc) {
     }
   }
   document.getElementById('jsTOCHorizontal').innerHTML = outputHorzTabs.join('');
+  console.log("jsTOCLeftNav is:  ", outputLetNav.join(''));
   document.getElementById('jsTOCLeftNav').innerHTML = outputLetNav.join('');
 }
 
