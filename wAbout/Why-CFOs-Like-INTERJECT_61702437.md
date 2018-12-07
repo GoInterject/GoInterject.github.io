@@ -1,11 +1,7 @@
 ---
-title: Interject Documentation > Why CFO&#39;s Like INTERJECT
+title: Why CFO&#39;s Like INTERJECT
 layout: custom
 ---
-* * *
-
-  
-
 
 The CFO can have many objectives, but often they include the following: 
 
@@ -16,8 +12,6 @@ The CFO can have many objectives, but often they include the following:
   * Instill visibility and accountability to drive financial performance 
   * Enable staff to access data independent of outside departments 
   * Limit reliance on outside vendors by integrating and managing internal software 
-
-
 
 INTERJECT can help CFOs achieve each of these objectives. What's more, the management of future enhancements can be handled internally, between accounting staffs and internal IT departments. INTERJECT is always available to help, but we aim to equip clients with tools and knowledge to handle things internally. 
 
