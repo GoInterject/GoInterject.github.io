@@ -4,7 +4,7 @@ layout: custom
 ---
 
 ##  **Overview**
-
+---
 A Connection is used with Data Portals so INTERJECT can connect to certain stored procedures within a database or to a custom website API. A single connection can be used by many Data Portals.  The database connection can support MS SQL Server OLEDB as well as ODBC. ODBC allows connection to any other relational database. Currently, INTERJECT only supports direct connections with databases that support stored procedures. This includes Oracle, MySQL, MariaDB and many others.   
 For all other data sources, a custom website API can be created to connect the data to INTERJECT. This is very similar to how a website application accesses its data layer. Using an API you can connect to PostgreSQL and noSQL databases like MongoDB. You can also use an API to connect to other cloud data APIs such as provided by SalesForce, Intacct, Netsuite, Quicken and many other cloud software services.   
 Go directly to any topic below by clicking one of the links below. 
