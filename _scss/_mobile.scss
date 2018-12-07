@@ -121,7 +121,7 @@
     .nav-secondary-tabs,
     .nav-secondary {
         background-color: $black;
-        height: 100px;
+        height: 55px;
     }
     .nav-secondary input[type=search] {
         background: rgb(78, 77, 77) url(/images/search.png) no-repeat;
@@ -129,8 +129,17 @@
     }
     .nav-sidebar a {
         color: #a8a8a8;
-        text-align: center;
+        text-align: left;
     }
+    .nav-sidebar ul li a.nocaret.active,
+    .nav-sidebar.nav>li>a.nocaret:focus {
+        cursor: default;
+        background: rgb(105, 105, 105);
+        color: rgb(200, 215, 224);
+        border-left: 4px solid rgb(200, 215, 224);
+        font-weight: 600;
+    }
+
     .tabs {
         float: left;
         margin: 0;
@@ -238,11 +247,11 @@
     }
     .header,
     .nav-secondary-tabs {
-        height: 100px;
+        height: 55px;
     }
     .nav-secondary {
         background: $black;
-        height: 100px;
+        height: 55px;
     }
     .content {
         padding: 120px 20px;
@@ -252,6 +261,14 @@
     }
     .nav-sidebar a {
         color: #a8a8a8;
+    }
+    .nav-sidebar ul li a.nocaret.active,
+    .nav-sidebar.nav>li>a.nocaret:focus {
+        cursor: default;
+        background: rgb(105, 105, 105);
+        color: rgb(200, 215, 224);
+        border-left: 4px solid rgb(200, 215, 224);
+        font-weight: 600;
     }
     .sidebar,
     .sidebar-home {

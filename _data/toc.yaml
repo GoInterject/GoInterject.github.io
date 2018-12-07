@@ -11,11 +11,11 @@ horizontalnav:
 - title: Design
   path: /wDesign/Reporting-Design-Standards.html
   node: design
-- title: Function Index
+- title: References
   path: /wIndex/Excel-Function-Index_61702197.html
   node: index
 - title: Apps
-  path: /wApps/Common-Dataportal-Index_127795984.html
+  path: /wApps/How-to-articles_129245729.html
   node: apps
 - title: Portal Site 
   path: /wPortal/Altering-User-Passwords_323452989
@@ -77,15 +77,6 @@ about:
   
 
 apps:
-  - sectiontitle: Common Dataportal Index
-    path: /wApps/Common-Dataportal-Index_127795984.html
-    section:
-    - title: FinCube - The Financial Cube
-      path: /wApps/FinCube---The-Financial-Cube_127796359.html
-    - title: SegmentInfo - Segment Search
-      path: /wApps/SegmentInfo---Segment-Search_127796463.html
-  - title: INTERJECT Hotkey Index
-    path: /wApps/INTERJECT-Hotkey-Index_351600673.html
   - title: How-to articles
     path: /wApps/How-to-articles_129245729.html
 
@@ -191,70 +182,89 @@ getstarted:
       path: /wGetStarted/Troubleshooting-Installations_359661603.html
     - title: Troubleshooting Reports
       path: /wGetStarted/Troubleshooting-Reports_359563279.html
+  - title: INTERJECT Ribbon Menu Items
+    path: /wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html
 
 
 index:
-  - sectiontitle: Excel Function Index
+  - sectiontitle: INTERJECT Function Index
     path: /wIndex/Excel-Function-Index_61702197.html
     section:
-    - title: ReportRange()
-      path: /wIndex/61702199.html
-    - title: Param()
-      path: /wIndex/81756199.html
-    - title: ReportFixed()
-      path: /wIndex/61702203.html
-    - title: ReportVariable()
-      path: /wIndex/61702201.html
-    - title: ReportLookup()
-      path: /wIndex/127973727.html
-    - title: ReportDrill()
-      path: /wIndex/61702556.html
-    - title: PairGroup()
-      path: /wIndex/81756186.html
-    - title: Pair()
-      path: /wIndex/81756188.html
-    - title: ReportSave()
-      path: /wIndex/61702554.html
-    - title: ReportRun()
-      path: /wIndex/61702558.html
-    - title: ReportCalc()
-      path: /wIndex/137265163.html
-    - title: ReportDefaults()
-      path: /wIndex/61702546.html
-    - title: ReportHideRowOrColumn()
-      path: /wIndex/341147669.html
-    - title: ReportMerge()
-      path: /wIndex/110723133.html
-    - title: jMergePoint()
-      path: /wIndex/110723143.html
-    - title: Data Cell Functions
-      path: /wIndex/Data-Cell-Functions_61702530.html
-    - title: jAcct()
-      path: /wIndex/61702534.html
-    - title: jCell/jCellN()
-      path: /wIndex/61702532.html
-    - title: jDesc()
-      path: /wIndex/61702536.html
-    - title: Helper Functions
+    - sectiontitle: Data Functions
+      path: /wIndex/Data-Functions-Landing.html
+      section:
+        - title: ReportDrill()
+          path: /wIndex/61702556.html
+        - title: ReportFixed()
+          path: /wIndex/61702203.html
+        - title: ReportLookup()
+          path: /wIndex/127973727.html
+        - title: ReportMacro()
+          path: /wIndex/61702548.html
+        - title: ReportRange()
+          path: /wIndex/61702199.html
+        - title: ReportRun()
+          path: /wIndex/61702558.html
+        - title: ReportSave()
+          path: /wIndex/61702554.html
+        - title: ReportVariable()
+          path: /wIndex/61702201.html
+    - sectiontitle: Formatting Functions
+      path: /wIndex/Formatting-Functions-Landing.html
+      section:
+        - title: jFreezePanes()
+          path: /wIndex/128552956.html
+        - title: ReportCalc()
+          path: /wIndex/137265163.html
+        - title: ReportDefaults()
+          path: /wIndex/61702546.html
+        - title: ReportHideRowOrColumn()
+          path: /wIndex/341147669.html
+        - title: ReportMerge()
+          path: /wIndex/110723133.html
+    - sectiontitle: Helper Functions
       path: /wIndex/Helper-Functions_61702538.html
-    - title: jBinder()
-      path: /wIndex/61702552.html
-    - title: jColumnDef()
-      path: /wIndex/127965411.html
-    - title: jCombine()
-      path: /wIndex/61702542.html
-    - title: jDataPortal()
-      path: /wIndex/61702544.html
-    - title: jWorkbookProperty()
-      path: /wIndex/61702550.html
-    - title: ReportMacro()
-      path: /wIndex/61702548.html
-    - title: jFreezePanes()
-      path: /wIndex/128552956.html
-    - title: jRangeTag()
-      path: /wIndex/138772490.html
-    - title: Report Formula Reviews
+      section:
+        - title: jBinder()
+          path: /wIndex/61702552.html
+        - title: jColumnDef()
+          path: /wIndex/127965411.html
+        - title: jCombine()
+          path: /wIndex/61702542.html
+        - title: jDataPortal()
+          path: /wIndex/61702544.html
+        - title: jMergePoint()
+          path: /wIndex/110723143.html
+        - title: jRangeTag()
+          path: /wIndex/138772490.html
+        - title: jWorkbookProperty()
+          path: /wIndex/61702550.html
+        - title: Pair()
+          path: /wIndex/81756188.html
+        - title: PairGroup()
+          path: /wIndex/81756186.html
+        - title: Param()
+          path: /wIndex/81756199.html
+    - sectiontitle: Data Cell Functions
+      path: /wIndex/Data-Cell-Functions_61702530.html
+      section:
+        - title: jAcct()
+          path: /wIndex/61702534.html
+        - title: jCell/jCellN()
+          path: /wIndex/61702532.html
+        - title: jDesc()
+          path: /wIndex/61702536.html
+    - title: Reviewing Report Functions
       path: /wIndex/Report-Formula-Reviews_127870833.html
+  - sectiontitle: Common Dataportal Index
+    path: /wIndex/Common-Dataportal-Index_127795984.html
+    section:
+    - title: FinCube - The Financial Cube
+      path: /wIndex/FinCube---The-Financial-Cube_127796359.html
+    - title: SegmentInfo - Segment Search
+      path: /wIndex/SegmentInfo---Segment-Search_127796463.html
+  - title: INTERJECT Hotkey Index
+    path: /wIndex/INTERJECT-Hotkey-Index_351600673.html
 
 
 
@@ -280,8 +290,7 @@ portal:
         path: /wPortal/INTERJECT-Roles_324468787.html
       - title: Altering User Passwords
         path: /wPortal/Altering-User-Passwords_323452989.html
-  - title: INTERJECT Ribbon Menu Items
-    path: /wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html
+  
 
 
    

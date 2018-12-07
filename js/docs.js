@@ -298,13 +298,13 @@ function eraseCookie(name) {
 }
 
 
-if (readCookie("night") == "true") {
-  applyNight();
-  $('#switch-style').prop('checked', true);
-} else {
-  applyDay();
-  $('#switch-style').prop('checked', false);
-}
+// if (readCookie("night") == "true") {
+//   applyNight();
+//   $('#switch-style').prop('checked', true);
+// } else {
+//   applyDay();
+//   $('#switch-style').prop('checked', false);
+// }
 
 
 
@@ -420,26 +420,26 @@ $('ul.nav li.dropdown').hover(function() {
 //     document.getElementById('pagestyle').setAttribute('href', sheet);
 // }
 
-function applyNight()
-{
-  $( "body" ).addClass( "night" );
-}
+// function applyNight()
+// {
+//   $( "body" ).addClass( "night" );
+// }
 
-function applyDay() {
-  $( "body" ).removeClass( "night" );
-}
+// function applyDay() {
+//   $( "body" ).removeClass( "night" );
+// }
 
-$('#switch-style').change(function() {
+// $('#switch-style').change(function() {
 
-    if ($(this).is(':checked')) {
-        applyNight();
-        createCookie("night",true,999)
-    } else {
-        applyDay();
-    //     swapStyleSheet('/css/style.css');
-        eraseCookie("night")
-    }
-});
+//     if ($(this).is(':checked')) {
+//         applyNight();
+//         createCookie("night",true,999)
+//     } else {
+//         applyDay();
+//     //     swapStyleSheet('/css/style.css');
+//         eraseCookie("night")
+//     }
+// });
 
 
 /*
