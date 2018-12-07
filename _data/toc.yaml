@@ -194,66 +194,66 @@ index:
       path: /wIndex/Data-Functions-Landing.html
       section:
         - title: ReportDrill()
-          path: /wIndex/61702556.html
+          path: /wIndex/ReportDrill_61702556.html
         - title: ReportFixed()
-          path: /wIndex/61702203.html
+          path: /wIndex/ReportFixed_61702203.html
         - title: ReportLookup()
-          path: /wIndex/127973727.html
+          path: /wIndex/ReportLookup_127973727.html
         - title: ReportMacro()
-          path: /wIndex/61702548.html
+          path: /wIndex/ReportMacro_61702548.html
         - title: ReportRange()
-          path: /wIndex/61702199.html
+          path: /wIndex/ReportRange_61702199.html
         - title: ReportRun()
-          path: /wIndex/61702558.html
+          path: /wIndex/ReportRun_61702558.html
         - title: ReportSave()
-          path: /wIndex/61702554.html
+          path: /wIndex/ReportSave_61702554.html
         - title: ReportVariable()
-          path: /wIndex/61702201.html
+          path: /wIndex/ReportVariable_61702201.html
     - sectiontitle: Formatting Functions
       path: /wIndex/Formatting-Functions-Landing.html
       section:
         - title: jFreezePanes()
-          path: /wIndex/128552956.html
+          path: /wIndex/jFreezePanes_128552956.html
         - title: ReportCalc()
-          path: /wIndex/137265163.html
+          path: /wIndex/ReportCalc_137265163.html
         - title: ReportDefaults()
-          path: /wIndex/61702546.html
+          path: /wIndex/ReportDefaults_61702546.html
         - title: ReportHideRowOrColumn()
-          path: /wIndex/341147669.html
+          path: /wIndex/ReportHideRowOrColumn_341147669.html
         - title: ReportMerge()
-          path: /wIndex/110723133.html
+          path: /wIndex/ReportMerge_110723133.html
     - sectiontitle: Helper Functions
       path: /wIndex/Helper-Functions_61702538.html
       section:
         - title: jBinder()
-          path: /wIndex/61702552.html
+          path: /wIndex/jBinder_61702552.html
         - title: jColumnDef()
-          path: /wIndex/127965411.html
+          path: /wIndex/jColumnDef_127965411.html
         - title: jCombine()
-          path: /wIndex/61702542.html
+          path: /wIndex/jCombine_61702542.html
         - title: jDataPortal()
-          path: /wIndex/61702544.html
+          path: /wIndex/jDataPortal_61702544.html
         - title: jMergePoint()
-          path: /wIndex/110723143.html
+          path: /wIndex/jMergePoint_110723143.html
         - title: jRangeTag()
-          path: /wIndex/138772490.html
+          path: /wIndex/jRangeTag_138772490.html
         - title: jWorkbookProperty()
-          path: /wIndex/61702550.html
+          path: /wIndex/jWorkbookProperty_61702550.html
         - title: Pair()
-          path: /wIndex/81756188.html
+          path: /wIndex/Pair_81756188.html
         - title: PairGroup()
-          path: /wIndex/81756186.html
+          path: /wIndex/PairGroup_81756186.html
         - title: Param()
-          path: /wIndex/81756199.html
+          path: /wIndex/Param_81756199.html
     - sectiontitle: Data Cell Functions
       path: /wIndex/Data-Cell-Functions_61702530.html
       section:
         - title: jAcct()
-          path: /wIndex/61702534.html
+          path: /wIndex/jAcct_61702534.html
         - title: jCell/jCellN()
-          path: /wIndex/61702532.html
+          path: /wIndex/jCell_61702532.html
         - title: jDesc()
-          path: /wIndex/61702536.html
+          path: /wIndex/jDesc_61702536.html
     - title: Reviewing Report Functions
       path: /wIndex/Report-Formula-Reviews_127870833.html
   - sectiontitle: Common Dataportal Index
