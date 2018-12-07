@@ -1,11 +1,7 @@
 ---
-title: Interject Documentation > Logging In
+title: Logging In
 layout: custom
 ---
-* * *
-
-  
-
 
 ##  Before Using INTERJECT, Here's How to Login 
 
@@ -37,17 +33,11 @@ Whichever option is chosen, the login process that follows is the same.
 
 ![](attachments/63275074/128324245.png)
 
-**  
-**
-
 **Step 3:** Check the box marked **Auto Login next time** to skip this step in the future. 
 
-**Note:** We highly suggest using **Auto Login** , otherwise credentials are required whenever accessing the [ ReportLibrary ](https://interject.atlassian.net/wiki/display/ID/Report+Library+Basics) . 
+**Note:** We highly suggest using **Auto Login** , otherwise credentials are required whenever accessing the [ ReportLibrary ](https://interject.atlassian.net/wiki/display/ID/Report+Library+Basics). 
 
-Now you're logged in! 
-
-  
-
+Now you're logged in!
 
 ##  Related Links: 
 

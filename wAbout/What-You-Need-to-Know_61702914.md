@@ -1,8 +1,7 @@
 ---
-title: Interject Documentation > What You Need to Know
+title: What You Need to Know
 layout: custom
 ---
-* * *
 
 ###  At a Glance 
 
@@ -33,10 +32,7 @@ Purchasing key software can leave you dependent on vendors for costly customizat
 ###  When you Start Using INTERJECT Remember: 
 
 ####  Changing your spreadsheets will not alter INTERJECT's functionality   
-
-
 The heart of INTERJECT's functionality is that reports and applications are stored in a central server where they cannot be changed by spreadsheet users. The spreadsheet is simply the front-end. Should any modifications cause an error in reporting, users can revert to the prior spreadsheet file.   
-
 
 ####  The INTERJECT data functionality is attached to Excel files 
 

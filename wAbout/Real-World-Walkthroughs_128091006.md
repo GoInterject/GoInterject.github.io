@@ -1,10 +1,9 @@
 ---
-title: Interject Documentation > Real-World Walkthroughs
+title: Real-World Walkthroughs
 layout: custom
 ---
-* * *
-
 ##  **Overview**
+---
 
 From simple PL charts for accountants to trend reports for CEO's and CFO's, there are a variety of processes you may encounter. In this section, you will look at three Real-World scenarios that explain how to use INTERJECT. Keep in mind, these are simple examples of tasks that may be more complicated in different cases. 
 
