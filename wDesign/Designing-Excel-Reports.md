@@ -14,33 +14,6 @@ Based on Stock 2010 'Austin' theme.
 Theme file can be applied to Excel 2007 and 2010 Workbooks.  Not compatible with Excel 2003.
 Example Excel Workbook compares our theme to standard office theme.  Some colors will look "terrible" if the user does not have our theme present and the default theme applies.  If the worksheet/workbook you are creating will be used by the customer to copy/paste values into other workbooks, please be aware that there are some bad conversions (like the Purple in the Office standard).  Avoid using those colors if you know users will copy and paste into other workbooks.
 Please review and try to utilize on future templates.  This is still a work in process so feel free to contribute further direction.
-________________________________________
-Pre-6/6/12:
- 
-Interject Report Theme Examples
-Formula for Banded Report Rows
-Allow clients to easily add Company name and/or Logo?
-Cell Types
-•	Headers
-o	Report Titles/Subtitles
-o	Column/Row Headers
-•	Labels 
-o	Parameters
-o	Check-totals
-•	Input Cells
-o	Parameters
-o	Data to be saved
-•	Output Cells
-o	Check-totals
-o	Report Range results
-o	Variable Report results
-Color Palate
-Fonts/Font Size
-Century Gothic
-Verdana
-Trebuchet MS
-Alignment/Emphasis
-Table row shading/formatting/lines? (report ranges)
 
 08/07/2018 Update
 Updated By: Paul Calvert
@@ -50,6 +23,8 @@ Example Report: Projections Template
  
 Hidden Report Sections
 The blue section at the top of this image is hidden, and contains several sections used to help the report. The sections shown below may not be used with every report, but you can use these as a guide on how to organize your own report.
+
+
 Fincube Column Definitions: Has all of the column names used in the final SQL SELECT statement from the called stored procedure.
 Additional data ReportFixed Column Definitions: Column definitions for the second pull in the report. Like above, but seperated out here to clearly identify that these column headers come from two different sources.
 Formatting Range: Used by the Pull used in the Fincube formula. Has some straight forward formatting, but also some conditional formatting. For example, there is a hidden column saying if the Account is editable or not, and the resulting row is Yellow or Gray depending on what that column says.

@@ -8,7 +8,7 @@
     font-family: 'Geomanist Book';
     src: url("../fonts/geomanist/hinted-Geomanist-Book.eot");
     src: url("../fonts/geomanist/hinted-Geomanist-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/geomanist/hinted-Geomanist-Book.woff2") format("woff2"), url("../fonts/geomanist/hinted-Geomanist-Book.woff") format("woff"), url("../fonts/geomanist/hinted-Geomanist-Book.ttf") format("truetype"), url("../fonts/geomanist/hinted-Geomanist-Book.svg#Geomanist-Book") format("svg");
-    font-weight: normal;
+    font-weight: 200px;
     font-style: normal;
 }
 
@@ -50,6 +50,7 @@ h5 {
 h6 {
     color: #82949e;
     font-size: 14px;
+    font-weight: 150px;
 }
 
 p {

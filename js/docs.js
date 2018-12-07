@@ -7,6 +7,7 @@ var headerOffset = document.getElementsByClassName("container-fluid")[0].getBoun
 // ensure that the left nav visibly displays the current topic
 var current = document.getElementsByClassName("active currentPage");
 var body = document.getElementsByClassName("col-content content");
+
 if (current[0]) {
     if (sidebarObj) {
       current[0].scrollIntoView(true);
@@ -175,6 +176,7 @@ function renderNav(docstoc) {
   }
   if (outputLetNav.length==0)
   {
+    console.log("outputletnav is length zero");
     // didn't find the current topic in the standard TOC; maybe it's a collection;
     for (var key in collectionsTOC)
     {
@@ -194,6 +196,7 @@ function renderNav(docstoc) {
     }
   }
   document.getElementById('jsTOCHorizontal').innerHTML = outputHorzTabs.join('');
+  console.log("jsTOCLeftNav is:  ", outputLetNav.join(''));
   document.getElementById('jsTOCLeftNav').innerHTML = outputLetNav.join('');
 }
 
@@ -295,13 +298,13 @@ function eraseCookie(name) {
 }
 
 
-if (readCookie("night") == "true") {
-  applyNight();
-  $('#switch-style').prop('checked', true);
-} else {
-  applyDay();
-  $('#switch-style').prop('checked', false);
-}
+// if (readCookie("night") == "true") {
+//   applyNight();
+//   $('#switch-style').prop('checked', true);
+// } else {
+//   applyDay();
+//   $('#switch-style').prop('checked', false);
+// }
 
 
 
@@ -417,26 +420,26 @@ $('ul.nav li.dropdown').hover(function() {
 //     document.getElementById('pagestyle').setAttribute('href', sheet);
 // }
 
-function applyNight()
-{
-  $( "body" ).addClass( "night" );
-}
+// function applyNight()
+// {
+//   $( "body" ).addClass( "night" );
+// }
 
-function applyDay() {
-  $( "body" ).removeClass( "night" );
-}
+// function applyDay() {
+//   $( "body" ).removeClass( "night" );
+// }
 
-$('#switch-style').change(function() {
+// $('#switch-style').change(function() {
 
-    if ($(this).is(':checked')) {
-        applyNight();
-        createCookie("night",true,999)
-    } else {
-        applyDay();
-    //     swapStyleSheet('/css/style.css');
-        eraseCookie("night")
-    }
-});
+//     if ($(this).is(':checked')) {
+//         applyNight();
+//         createCookie("night",true,999)
+//     } else {
+//         applyDay();
+//     //     swapStyleSheet('/css/style.css');
+//         eraseCookie("night")
+//     }
+// });
 
 
 /*

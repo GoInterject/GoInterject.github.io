@@ -207,7 +207,7 @@
 .toc-nav li a.active {
     color: #2089C4;
     border-left: 4px solid #2089C4;
-    font-weight: bold;
+    font-weight: 250px;
 }
 
 .toc-nav i.fa {
@@ -333,7 +333,7 @@ input:checked+.slider:before {
             color: $white;
             padding: 17px 19px 14px 15px;
             float: left;
-            font-weight: 600;
+            font-weight: 400;
             &:hover {
                 background: rgba(0, 0, 0, 0.17) !important;
                 border-bottom: 4px solid #fff;
