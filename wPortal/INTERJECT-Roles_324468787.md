@@ -1,5 +1,5 @@
 ---
-title: Interject Documentation > INTERJECT Roles
+title: INTERJECT Roles
 layout: custom
 ---
 ##  Overview 

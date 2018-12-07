@@ -1,8 +1,7 @@
 ---
-title: Interject Documentation > Logging In to Website Portal
+title: Logging In to Website Portal
 layout: custom
 ---
-* * *
 
 ##  **Overview**
 

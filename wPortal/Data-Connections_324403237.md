@@ -1,8 +1,7 @@
 ---
-title: Interject Documentation > Data Connections
+title: Data Connections
 layout: custom
 ---
-* * *
 
 ##  **Overview**
 

@@ -1,5 +1,5 @@
 ---
-title: Interject Documentation > Altering User Passwords
+title: Altering User Passwords
 layout: custom
 ---
 ##  **Overview**
