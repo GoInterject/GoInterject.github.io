@@ -1,9 +1,9 @@
 ---
-title: Interject Documentation > INTERJECT Roles
+title: INTERJECT Roles
 layout: custom
 ---
 ##  Overview 
-
+---
 At the bottom of the User Profile page are the roles you currently have assigned to your profile. There are a number of roles to choose from. Once changed, the user will need to log in again to the INTERJECT Excel Add-in for the changes to take effect. 
 
 You can add roles by selecting the role name. Remove roles by clicking the small garbage icon for each role. 
