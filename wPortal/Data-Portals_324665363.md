@@ -1,8 +1,7 @@
 ---
-title: Interject Documentation > Data Portals
+title: Data Portals
 layout: custom
 ---
-* * *
 
   
 
@@ -13,12 +12,12 @@ A Data Portal uses a Data Connection to connect to either a stored procedure wit
 Setting up an Data Portal to connect to a website API is not covered in this documentation yet as the sections are currently under construction. Please contact us directly for assistance with Website APIs.   
 The following topics are covered in this walkthrough. To view a topic, click on the link below. 
 
-  * ** Setting up a Data Portal  **
-  * ** Overview of Parameters  **
-  * **[ Formula Parameters ](/wPortal/Data-Portals_324665363.html) **
-  * ** System Parameters  **
-  * ** Adding New Parameters  **
-  * ** System Parameters Options  **
+  * Setting up a Data Portal
+  * Overview of Parameters
+  * [ Formula Parameters ](/wPortal/Data-Portals_324665363.html)
+  * System Parameters
+  * Adding New Parameters
+  * System Parameters Options
 
 
 

@@ -1,8 +1,7 @@
 ---
-title: Interject Documentation > Lab 15.2 Database Connection
+title: Lab 15.2 Database Connection
 layout: custom
 ---
-* * *
 
 ###  Data Connection for a Database 
 
