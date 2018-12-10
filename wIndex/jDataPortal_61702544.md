@@ -1,316 +1,48 @@
 ---
-title: Interject Documentation > jDataPortal()
+title: jDataPortal()
 layout: custom
 ---
-* * *
 
-  
+---
 
+## Function Summary
 
-##  Function Summary 
+jDataPortal() function is a helper function used by developers to further leverage DataPortals. It can reduce the number of data connections used by INTERJECT in a report, speeding the report process and conserving server resources. It allows DataPortals to be re-used in the same report pull event, so multiple report functions can access the data in memory and place specific data in the tab using different methods. jDataPortal() can also be used to adjust the sort order and filter the data in memory before the it is presented. jDataportal can only be used inside of an [ INTERJECT data function ](Data-Functions-Landing.html) as a helper function.
 
-jDataPortal() function is a helpful function for developers to further leverage DataPortals. It can reduce the number of data connections used by INTERJECT in a report, speeding the report process and conserving server resources. It allows DataPortals to be re-used in the same report pull event, so multiple report functions can access the data in memory and place specific data in the tab using different methods. jDataPortal() can also be used to adjust the sort order and filter the data in memory before the it is presented. jDataportal can only be used inside of a report formula as a helper function. It can only be used in a [ ReportRange() ](/wIndex/61702199.html) , [ ReportVariable() ](/wIndex/61702201.html) , or a [ ReportFixed() ](/wIndex/61702203.html) . 
+For users with the [ ClientAdmin ](/wPortal/INTERJECT-Roles_324468787.html) user role, jDataPortal() can also be used to redirect the connection, stored procedure, or API during testing.
 
-For users with the [ ClientAdmin ](/wPortal/INTERJECT-Roles_324468787.html) user role, jDataPortal() can also be used to redirect the connection, stored procedure, or API during testing. 
+### Function Arguments
 
-###  Function Arguments   
-  
-<table>  
-<tr>  
-<th>
+| Parameter Name     | Description | Default | Optional |
+|:---|:---|:---|:---|
+| DataPortalName     | The name of the INTERJECT DataPortal set up to connect with data.                                                                                                                                                                                                                                              |         | NO       |
+| DataResultNumber   | This controls the data set from a stored procedure that is returned based on the order of the data sets in the SQL stored procedure.                                                                                                                                                                           |         | YES      |
+| Filter             | Filter using syntax that would normally follow a WHERE statement in SQL. For example, if only filtering customers that contain an s, see the below example. OR as well as AND SQL operators can be used, as well as other advanced filter syntax available in SQL. |         | YES      |
+| OrderBy            | A sort can be added using syntax that would normally follow an "Order By" statement in SQL.                                                                                                                                                                                                                    |         | YES      |
+| CommandOverride    | Directs the data call to a different Stored Procedure or API command. This is used only for testing and can only be done by ClientAdmin or Editor roles.                                                                                                                                                       |         | YES      |
+| ConnectionOverride | Changes the Data Connection name used for testing. Only available for ClientAdmin or [Editor](/wPortal/INTERJECT-Roles_324468787.html) roles.|| YES      |
 
+### Excel Formula Bar Example
 
+```Excel
+=jDataPortal("NorthwindMultiRecord_Pull",2,"[CompanyName] Like '%s%'","[CustomerID] ASC")
+```
+A simpler form of this example can be found in our [Advanced Data Pull Lab](\wGetStarted\Advanced-Data-Pull_327516216.html).
 
-Parameter Name 
+### Example Function Composition
 
+| Argument Name      | Example Mapping           | Explanation |
+|--------------------|---------------------------|----------|
+| Function Name      | =jDataPortal              | This is the excel name used to call the function. It is not meant to standalone and is meant to be embedded inside of an [ Interject Data Function ](Data-Function-Landing.html)                                                                                                                                                                                           |
+| Data Portal Name   | NorthwindMultiRecord_Pull | The DataPortalName argument is used to define the name of a created data portal that is to be called by a data function.                                                                                                                                                                                                                                                   |
+| Data Result Number | 2                         | This is the identifying number ID of a record result set from a stored procedure. In the event that a single stored procedure contains two record sets from two different select statements the first record set to be created by the stored procedure is designated with the result number 1. The second result set to be created is designated with the result number 2. |
+| Filter             | [CompanyName] Like '%s%'  | The filter argument refines the data. This has to be a valid SQL Where statement. In this example the data is filtered by selecting only records where the CompanyName column contains an "S" in any record value.                                                                                                                                                          |
+| OrderBy            | [CustomerID] Desc         | This orders the CustomerID column results in descending alphabetical order. This has to be a valid SQL statement.                                                                                                                                                                                                                                                          |
+| CommandOverride    | ""                        | This is left blank since there is no need to create a call to a different stored procedure. If you need to call a different stored procedure you would change this value from "" to the entire name of a stored procedure. For example "demo.NorthwindCustomer"                                                                                                            |
+| ConnectionOverride | ""                        | This is left blank since there is no need to call a different database connection.                                                                                                                                                                                                                                                                                         |
 
-</th>  
-<th>
+### Usable In These Data Functions
 
-
-
-Description 
-
-
-</th>  
-<th>
-
-
-
-Default 
-
-
-</th>  
-<th>
-
-
-
-Optional 
-
-
-</th> </tr>  
-<tr>  
-<td>
-
-
-
-DataPortalName 
-
-
-</td>  
-<td>
-
-The name of the INTERJECT DataPortal set up to connect with data.  
-</td>  
-<td>
-
-  
-
-</td>  
-<td>
-
-
-
-NO 
-
-
-</td> </tr>  
-<tr>  
-<td>
-
-DataResultNumber 
-</td>  
-<td>
-
-This controls the data set from a stored procedure that is returned based on the order of the data sets in the SQL stored procedure. 
-</td>  
-<td>
-
-  
-
-</td>  
-<td>
-
-YES 
-</td> </tr>  
-<tr>  
-<td>
-
-Filter  
-</td>  
-<td>
-
-
-
-Filter using syntax that would normally follow a WHERE statement in SQL. For example, if only filtering accounts that start with 5, see the below example. This assumes a column named Account is present in the DataPortal. OR and AND can be used, as well as other advanced filter syntax available in SQL. 
-    
-    
-    [Account] Like '5%'
-
-
-</td>  
-<td>
-
-  
-
-</td>  
-<td>
-
-YES 
-</td> </tr>  
-<tr>  
-<td>
-
-OrderBy  
-</td>  
-<td>
-
-
-
-A sort can be added using syntax that would normally follow an "Order By" statement in SQL. For example: 
-    
-    
-    CompanyName Desc
-
-
-</td>  
-<td>
-
-  
-
-</td>  
-<td>
-
-YES 
-</td> </tr>  
-<tr>  
-<td>
-
-CommandOverride  
-</td>  
-<td>
-
-Directs the data call to a different Stored Procedure or API command. This is used only for testing and can only be done by ClientAdmin or Editor roles. 
-</td>  
-<td>
-
-  
-
-</td>  
-<td>
-
-YES 
-</td> </tr>  
-<tr>  
-<td>
-
-ConnectionOverride  
-</td>  
-<td>
-
-Changes the Data Connection name used for testing. Only available for ClientAdmin or [ Editor ](/wPortal/INTERJECT-Roles_324468787.html) roles. 
-</td>  
-<td>
-
-  
-
-</td>  
-<td>
-
-YES 
-</td> </tr> </table>
-
-  
-
-
-###  Function Composition   
-  
-<table>  
-<tr>  
-<th>
-
-
-
-Formula 
-
-
-</th>  
-<th>
-
-
-
-Example 
-
-
-</th>  
-<th>
-
-
-
-Explanation 
-
-
-</th> </tr>  
-<tr>  
-<td>
-
-
-
-=  ReportRange  ( 
-
-DataPortalName 
-
-,DataResultNumber 
-
-,Filter 
-
-,  OrderBy 
-
-,  MethodOverride 
-
-,  ConnectionOverride 
-
-) 
-
-
-</td>  
-<td>
-
-
-
-=ReportRange( 
-
-**jDataPortal** ( 
-
-**"NorthwindCustomers"**
-
-,  **"1"**
-
-,  **"CompanyName like 'A%'"**
-
-**,"ContactName"**
-
-**,**
-
-) 
-
-
-</td>  
-<td>
-
-
-
-  
-
-
-← A DataPortal configured to connect to a Northwind demo database. 
-
-← The name of the data portal used. 
-
-← The result set to retrieve for the report. 
-
-← A custom WHERE statement that applies a filter over the final results 
-
-← A custom Order By statement that will order the results by Contact Name Ascending. 
-
-  
-
-
-
-</td> </tr> </table>
-
-###  Example from:   
-  
-<table>  
-<tr>  
-<th>
-
-
-
-From File 
-
-
-</th>  
-<th>
-
-
-
-Worksheet 
-
-
-</th> </tr>  
-<tr>  
-<td>
-
-InterjectBasic  
-</td>  
-<td>
-
-jDataPortalAndMultipleData 
-</td> </tr> </table>
-
-  
-
-
-  
-
+* [ReportRange()](ReportRange_61702199.html)
+* [ReportVariable()](ReportVariable_61702201.html)
+* [ReportFixed()](ReportFixed_61702203.html)
