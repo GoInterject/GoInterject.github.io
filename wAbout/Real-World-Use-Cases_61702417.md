@@ -1,18 +1,9 @@
 ---
-title: Interject Documentation > Real World Use Cases
+title: Real World Use Cases
 layout: custom
 ---
-* * *
-
-  
-
 
 Since its availability in 2012,  INTERJECT  has solved a wide variety of problems for small and enterprise-sized companies. Below are excerpts of use cases that can provide more detailed views of what  INTERJECT  can do. Each use case is supported by personal references, which can be provided on request. 
-
-  
-
-
-* * *
 
 ###  High-Speed General Ledger Access 
 
