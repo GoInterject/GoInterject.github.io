@@ -89,18 +89,18 @@ getstarted:
       path: /wGetStarted/Modifying-an-Existing-Report_62849215.html
       section:
       - title: L1.1 Modify> Customer Aging
-        path: /wGetStarted/128428927.html
+        path: /wGetStarted/L-Modify-CustomerAging_128428927.html
       - title: L1.2 Modify> Inventory Report
-        path: /wGetStarted/128429185.html
+        path: /wGetStarted/L-Modify-InventoryReport_128429185.html
       - title: L1.3 Modify> Financial Report
-        path: /wGetStarted/128429053.html
+        path: /wGetStarted/L-FinancialReport_128429053.html
     - sectiontitle: Creating a Simple Report
       path: /wGetStarted/Creating-a-Simple-Report_128408585.html
       section:
       - title: L2.1 Create> Customer Aging
-        path: /wGetStarted/128429314.html
+        path: /wGetStarted/L-Create-CustomerAging_128429314.html
       - title: L2.2 Create> Customer Orders
-        path: /wGetStarted/128421638.html
+        path: /wGetStarted/L-Create-CustomerOrders_128421638.html
     - sectiontitle: Fixed and Variable Reports
       path: /wGetStarted/Fixed-and-Variable-Reports_61702195.html
       section:
@@ -116,15 +116,15 @@ getstarted:
       path: /wGetStarted/Drilling-Between-Reports_61702193.html
       section:
       - title: L4.1 Drill> Customer Aging
-        path: /wGetStarted/128421015.html
+        path: /wGetStarted/L-Drill-CustomerAging_128421015.html
       - title: L4.2 Drill> Inventory Report
-        path: /wGetStarted/128409138.html
+        path: /wGetStarted/L-Drill-InventoryReport_128409138.html
       - title: L4.3 Drill> Financial Report
-        path: /wGetStarted/128409219.html
+        path: /wGetStarted/L-Drill-FinancialReport_128409219.html
       - title: L4.4 The Three Ways to Drill
         path: /wGetStarted/L4.4-The-Three-Ways-to-Drill_128510906.html
     - title: L5 Hiding Rows & Columns
-      path: /wGetStarted/137363494.html
+      path: /wGetStarted/L5-HidingRowsColumns137363494.html
     - title: L6 Working with Pivot Tables
       path: /wGetStarted/L6-Working-with-Pivot-Tables_128202725.html
     - title: L7 Special Column Definitions
@@ -157,19 +157,19 @@ getstarted:
       path: /wGetStarted/Simple-Data-Pull_139526259.html
       section:
       - title: L12.1 Dev> Customer Aging
-        path: /wGetStarted/324567045.html
+        path: /wGetStarted/L-Dev-CustomerAging_324567045.html
       - title: L12.2 Dev> Customer Orders
-        path: /wGetStarted/324403205.html
+        path: /wGetStarted/L-Dev-CustomerOrders_324403205.html
     - sectiontitle: Advanced Data Pull
       path: /wGetStarted/Advanced-Data-Pull_327516216.html
       section:
       - title: L13.1 Dev> Customer Aging Detail
-        path: /wGetStarted/324435969.html
+        path: /wGetStarted/L-Dev-CustomerAgingDetail_324435969.html
     - sectiontitle: Simple Data Save
       path: /wGetStarted/Simple-Data-Save_139231307.html
       section:
       - title: L14.1 Dev> Customer Credit Save
-        path: /wGetStarted/324665351.html
+        path: /wGetStarted/L-Dev-CustomerCreditSave_324665351.html
     - title: Security Best Practices
       path: /wGetStarted/Security-Best-Practices_324403209.html
     - title: Managing Settings Cache
