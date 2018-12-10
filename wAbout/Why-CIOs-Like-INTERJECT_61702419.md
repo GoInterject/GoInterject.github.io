@@ -1,11 +1,7 @@
 ---
-title: Interject Documentation > Why CIO&#39;s Like INTERJECT
+title: Why CIO&#39;s Like INTERJECT
 layout: custom
 ---
-* * *
-
-  
-
 
 The CIO has specific needs when a company is growing. They are typically looking for the following: 
 
