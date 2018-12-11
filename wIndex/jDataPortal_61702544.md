@@ -25,7 +25,7 @@ For users with the [ ClientAdmin ](/wPortal/INTERJECT-Roles_324468787.html) user
 ### Excel Formula Bar Example
 
 ```Excel
-=jDataPortal("NorthwindMultiRecord_Pull",2,"[CompanyName] Like '%s%'","[CustomerID] ASC")
+jDataPortal("NorthwindMultiRecord_Pull",2,"[CompanyName] Like '%s%'","[CustomerID] ASC")
 ```
 A simpler form of this example can be found in our [Advanced Data Pull Lab](\wGetStarted\Advanced-Data-Pull_327516216.html).
 

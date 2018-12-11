@@ -1,212 +1,38 @@
 ---
-title: Interject Documentation > PairGroup()
+title: PairGroup()
 layout: custom
 ---
 ##  Function Summary 
 
-Provides an easy method to add multiple [ Pair() ](/wIndex/81756188.html) functions together. 
+Provides an easy method to string multiple [ Pair() ](Pair_81756188.html) functions together in a single string argument with each Pair() delimited by a comma. This function is used as a helper function for both [Formatting]() and [Data]() functions. It is used to consolidate multiple Pair() functions so that they can all be applied by the same INTERJECT function. To see the functions that PairGroup() can be embedded in, view the **Usable In These Functions** section of this page. This function does have a Pair() limit of 34 Pairs. There can only be one PairGroup() embed so you cannot embed a PairGroup() inside another PairGroup().
 
 ###  Function Arguments   
-  
-<table>  
-<tr>  
-<th>
 
-Parameter Name 
-</th>  
-<th>
+| Parameter Name | Description                                                                                        | Default | Optional |
+|----------------|----------------------------------------------------------------------------------------------------|---------|----------|
+| Pair1          | This parameter is meant to have a [Pair()]() function embedded in it                               |         | YES      |
+| Pair2          | This parameter is meant to have another Pair() function embedded in it                             |         | YES      |
+| ...            | ...                                                                                                |         | ...      |
+| Pair34         | This is the limit to the Pair() functions that can be embedded into a single PairGroup() function. |         | YES      |
 
-Description 
-</th>  
-<th>
+### Excel Formula Bar Example
 
-Default 
-</th>  
-<th>
+```Excel
+PairGroup(Pair(L12:N12,"DateBegin",TRUE),Pair(M21,"Segment2",TRUE),Pair(F26:F125,"Segment1",TRUE))
+```
 
-Optional 
-</th> </tr>  
-<tr>  
-<td>
+If you want to gain more context as to how this PairGroup() function works, it is sourced from [Lab Drill: Financial Report](). 
 
+### Example Function Composition
 
+| Argument Name | Example Mapping                | Explanation |
+|---------------|--------------------------------|-------------|
+| Function Name | =PairGroup()                   |This is the excel function name used to call the function. It is not meant to standalone and is meant to be embedded inside of a [ Formatting ]() or [Data]() function.             |
+| Pair1         | Pair(L12:N12,"DateBegin",TRUE) |This is the first pair function that is executed in this example. To better understand a pair function click [Here]()            |
+| Pair2         | Pair(M21,"Segment2",True)      |This is the second pair function that is executed in this example.|
+| Pair3         | Pair(F26:F125,"Segment1",TRUE) |This is the third pair function that is executed in this example. |
 
-Pair1 
+###  Usable In These Functions  
 
-
-</td>  
-<td>
-
-Add a [ Pair() ](/wIndex/81756188.html) function. 
-</td>  
-<td>
-
-  
-
-</td>  
-<td>
-
-
-
-YES 
-
-
-</td> </tr>  
-<tr>  
-<td>
-
-... 
-</td>  
-<td>
-
-... 
-</td>  
-<td>
-
-  
-
-</td>  
-<td>
-
-... 
-</td> </tr>  
-<tr>  
-<td>
-
-Pair34  
-</td>  
-<td>
-
-Add a  [ Pair() ](/wIndex/81756188.html) function.  
-</td>  
-<td>
-
-  
-
-</td>  
-<td>
-
-YES  
-</td> </tr> </table>
-
-**  
-**
-
-###  Function Composition   
-  
-<table>  
-<tr>  
-<th>
-
-
-
-Formula 
-
-
-</th>  
-<th>
-
-
-
-Example 
-
-
-</th>  
-<th>
-
-
-
-Explanation 
-
-
-</th> </tr>  
-<tr>  
-<td>
-
-
-
-= PairGroup( 
-    
-    
-                Pair1
-
-,... 
-
-,Pair34 
-
-) 
-
-
-</td>  
-<td>
-
-
-
-=  ReportDrill  ( 
-
-**Drill_Order!B2**
-
-, 
-
-, **PairGroup** ( 
-
-Pair( 
-
-**F13:F14**
-
-,  **Drill_Order!H7**
-
-,  **TRUE**
-
-) 
-
-) 
-
-,  **"Open Order Page"**
-
-) 
-
-
-</td>  
-<td>
-
-
-
-  
-
-
-  
-
-
-  
-
-
-← Pair Group function embedded in ReportDrill formula. This example accepts a single [ pair ](/wIndex/81756188.html) . 
-
-
-</td> </tr> </table>
-
-  
-
-
-###  Function Example   
-  
-<table>  
-<tr>  
-<th>
-
-From File 
-</th>  
-<th>
-
-Worksheet 
-</th> </tr>  
-<tr>  
-<td>
-
-InterjectBasic 
-</td>  
-<td>
-
-Drill_Orders 
-</td> </tr> </table>
+* [ReportDrill]()
+* [ReportDefaults]()
