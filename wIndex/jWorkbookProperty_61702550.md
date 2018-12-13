@@ -17,6 +17,7 @@ The jWorkbookProperty is a standalone INTERJECT function. It's purpose is to pro
 ```Excel
  jWorkbookProperty("Interject_LinkVersion")
 ```
+An example of this function is currently in construction in our documentation labs. Check back soon for an example with more context.
 
 ### Example Function Composition
 
