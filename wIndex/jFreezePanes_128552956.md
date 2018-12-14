@@ -27,6 +27,6 @@ Even though the arguments for this function accepts range values, it is best pra
 
 | Argument Name   | Example Mapping | Explanation                                                                                                          |
 |-----------------|-----------------|----------------------------------------------------------------------------------------------------------------------|
-| Function Name   | =jFreezePanes() | This is the excel function name used to call the function. It can only be used as a standalone function in a report. |
+| Function Name   | `=jFreezePanes()` | This is the excel function name used to call the function. It can only be used as a standalone function in a report. |
 | FreezePanesCell | A22             | This means that all rows below the 22st row will have the capability to scroll in the Excel viewport. Since this is set to column A, no columns are frozen.    |
 | AnchorViewCell  | A15          | Specifies that the the rows below the 15th row and above the 21st row will be frozen in place and remain in the Excel viewport at all times even when scrolling.|
