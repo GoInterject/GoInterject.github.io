@@ -212,6 +212,8 @@ index:
     - sectiontitle: Formatting Functions
       path: /wIndex/Formatting-Functions-Landing.html
       section:
+        - title: jFocus()
+          path: /wIndex/jFocus.html
         - title: jFreezePanes()
           path: /wIndex/jFreezePanes_128552956.html
         - title: ReportCalc()
