@@ -199,7 +199,7 @@ Since these notations are relative to a year and a period, it is important to sp
 
 ###  jColumnDef() Column Notation 
 
-The [ jColumnDef() ](/wIndex/127965411.html) notation is the most recent addition to the column options and is the most flexible and intuitive in use. Instead of using a single text string to represent an amount, like CYA1 or Act, you can use the jColumnDef() function containing arguments for each of the 12 segments noted in the above DataPortal parameters. In this way, you can specify each component separately and more clearly. jColumnDef() arguments are essentially an additional filter level for each column you want to show. 
+The [ jColumnDef() ](/wIndex/jColumnDef_127965411.html) notation is the most recent addition to the column options and is the most flexible and intuitive in use. Instead of using a single text string to represent an amount, like CYA1 or Act, you can use the jColumnDef() function containing arguments for each of the 12 segments noted in the above DataPortal parameters. In this way, you can specify each component separately and more clearly. jColumnDef() arguments are essentially an additional filter level for each column you want to show. 
 
 It is important to emphasize that jColumnDef() goes beyond a source (Actual, Budget, fcast1 to fcast12), a year, and a period alone. These are the same segments (9, 10 and 12) that earlier notations (CTA and ACT) can only specify. jColumnDef also supports the remaining 12 segments and each can support the same filter options and groups noted above for DataPortal parameters explained in the [ FinCube ](/wApps/FinCube---The-Financial-Cube_127796359.html) DataPortal page. The result is a highly flexible method to create columns. 
 
