@@ -1,308 +1,40 @@
 ---
-title: Interject Documentation > ReportDrill()
+title: ReportDrill()
 layout: custom
 ---
-* * *
 
-  
+## Function Summary
 
+ReportDrill is widely used throughout INTERJECT as a way to connect and pass information between workbooks and worksheets. Drilling takes a defined input and passes it in as a parameter to another workbook or worksheet, similar to hyperlinks on a web page: Depending on the types of input behind the hyperlink, more detailed and specific information can be viewed. While there are few codes crucial to the process, they can be structured in ways that make them very powerful. In order to setup a drill that goes to another workbook it is necessary to setup drill codes which have to be registered by INTERJECT.
 
-##  What is a ReportDrill   
+### Function Arguments
 
+| Parameter Name  | Description                                                                                                      | Default | Optional |
+|-----------------|------------------------------------------------------------------------------------------------------------------|---------|----------|
+| ReportCellToRun | A cell address on a worksheet within your report that contains an INTERJECT [Data](Data-Functions-Landing.html) or [Formatting](Formatting-Functions-Landing.html) function. |         | Yes         |
+| ReportCodeToRun | A drill code that is setup in the [Report Library](/wGetStarted/L10-Updating-the-Report-Library_62849583.html#adding-a-drill-code-to-a-report) that allows you to drill between workbooks.                 |         | Yes         |
+| TransferPairs   | A [PairGroup](Pairgroup_81756186.html) and [Pair](Pair_81756188.html) function that determines which cell value you want to capture, and where you want to place it.   |       |         Yes   |
+| DrillName       | This defines the name of the drill displayed on the Excel report.|         | YES         |
 
-ReportDrill is widely used throughout INTERJECT as a way to connect and pass information between workbooks. Drilling takes a defined input and passes it in as a parameter to another workbook, similar to hyperlinks on a web page: Depending on the types of input behind the hyperlink, more detailed and specific information can be viewed. While there are few codes crucial to the process, they can be structured in ways that make them very powerful. Find examples of Drilling in [ Creating Your Own Drills ](https://interject.atlassian.net/wiki/display/ID/Creating+Your+Own+Drills) .   
 
+### Excel Formula Bar Example
 
-###  Before starting, you'll need 
+```Excel
+ReportDrill(CustomerOrderHistory!C10,,PairGroup(Pair(B22:B24, CustomerOrderHistory!C23)),"Drill to Customer Orders History")
+```
+This example is sourced from [Lab Drill: Customer Aging](/wGetStarted/L-Drill-CustomerAging_128421015.html).
 
-Intermediate knowledge of Excel   
+### Example Function Composition
 
+| Argument Name   | Example Mapping                    | Explanation                                                                                |
+|-----------------|------------------------------------|--------------------------------------------------------------------------------------------|
+| Function Name   | `=ReportDrill()`                   | This is the excel function name used to call the function. It can have embedded functions. |
+| ReportCellToRun | CustomerOrderHistory!C10           | The cell that is being run is an INTERJECT Data function on the CustomerOrderHistory Page. If this is left blank, then ReportCodeToRun cannot be blank.|
+| ReportCodeToRun | ""                                 | This is left blank since the drill does not go to a different workbook. This cannot be left blank if the ReportCellToRun argument is left blank. If you wanted to run a drill on a different workbook, place the target workbook's drill code in this argument field.|
+| TransferPairs   | PairGroup(Pair(B22:B24, CustomerOrderHistory!C23))|  This will copy a cell value from a cell within the specified range, then place that value on the CustomerOrderHistory worksheet, at cell C23.|
+| DrillName       | "Drill to Customer Orders History" |  The Drill name will appear as "Drill to Customer Orders History" inside of the drill form.|
 
-Advanced knowledge of INTERJECT reports 
+### Embeddable Helper Functions
 
-###  Function Arguments   
-  
-<table>  
-<tr>  
-<td>
-
-
-
-**Parameter Name**
-
-
-</td>  
-<td>
-
-
-
-**Description**
-
-
-</td>  
-<td>
-
-
-
-**Default**
-
-
-</td>  
-<td>
-
-
-
-**Optional**
-
-
-</td> </tr>  
-<tr>  
-<td>
-
-
-
-ReportCellToRun 
-
-
-</td>  
-<td>
-
-
-
-Input the sheet name and a cell for the function to populate. 
-
-Functions  inside  workbook. 
-
-
-</td>  
-<td>
-
-
-
-  
-
-
-
-</td>  
-<td>
-
-
-
-YES* 
-
-
-</td> </tr>  
-<tr>  
-<td>
-
-
-
-ReportCodeToRun 
-
-
-</td>  
-<td>
-
-
-
-Enter a registered Drill Code to open a file and run a report  outside  the current workbook. 
-
-Drill codes can be set up in the  [ report library  ](https://interject.atlassian.net/wiki/display/ID/Updating+Report+Library) and are used to connect sheets in different workbooks. 
-
-
-</td>  
-<td>
-
-
-
-  
-
-
-
-</td>  
-<td>
-
-
-
-YES* 
-
-
-</td> </tr>  
-<tr>  
-<td>
-
-
-
-TransferPairs** 
-
-
-</td>  
-<td>
-
-
-
-Enter  [ Pairs  ](/wIndex/81756188.html) within a  [ PairGroup  ](/wIndex/81756186.html) function to copy data and restrict when the drill is used. 
-
-See [ Drill: Customer Aging Report ](/wGetStarted/128421015.html) for more information on usage. 
-
-
-</td>  
-<td>
-
-
-
-  
-
-
-
-</td>  
-<td>
-
-
-
-YES 
-
-
-</td> </tr>  
-<tr>  
-<td>
-
-
-
-DrillName 
-
-
-</td>  
-<td>
-
-
-
-The drill name shown to users when the drill button or keystroke is applied. 
-
-
-</td>  
-<td>
-
-
-
-  
-
-
-
-</td>  
-<td>
-
-
-
-YES 
-
-
-</td> </tr> </table>
-
-*  Either ReportCellToRun or ReportCodeToRun must be entered. 
-
-** Only one argument is needed but adding the TransferPairs argument will allow for data transfer. 
-
-  
-
-
-  
-
-
-  
-
-
-###  Function Composition 
-
-  
-  
-  
-<table>  
-<tr>  
-<th>
-
-Formula 
-</th>  
-<th>
-
-Example 
-</th>  
-<th>
-
-Explanation 
-</th> </tr>  
-<tr>  
-<td>
-
-
-
-=ReportDrill( 
-
-ReportCellToRun 
-
-,TransferPairs 
-
-,DrillName 
-
-) 
-
-
-</td>  
-<td>
-
-
-
-=ReportDrill( 
-
-** Drill_Order!B2  **
-
-,PairGroup( 
-
-Pair( 
-
-**F13** :  **F14**
-
-,  **Drill_Order!H7**
-
-,  **TRUE**
-
-) 
-
-) 
-
-,  **"Open Order Page"**
-
-) 
-
-
-</td>  
-<td>
-
-
-
-  
-
-
-←Cell is being drilled 
-
-← A PairGroup (Needed to indicated more pair) 
-
-  
-
-
-←Source cell to get data 
-
-← Target cell to put data 
-
-← This TRUE flag indicates the values are required. 
-
-  
-
-
-← Title of drill 
-
-  
-
-
-
-</td> </tr> </table>
+* [PairGroup](Pairgroup_81756186.html)
+* [Pair](Pair_81756188.html)
