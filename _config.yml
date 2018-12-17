@@ -33,6 +33,7 @@ plugins:
   - jekyll-redirect-from
   - jekyll-relative-links
   - jekyll-sitemap
+  - jekyll-seo-tag
 
   # - jekyll-responsive-image
   
