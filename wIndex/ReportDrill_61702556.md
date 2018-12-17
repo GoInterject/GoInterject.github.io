@@ -5,7 +5,7 @@ layout: custom
 
 ## Function Summary
 
-ReportDrill is widely used throughout INTERJECT as a way to connect and pass information between workbooks and worksheets. Drilling takes a defined input and passes it in as a parameter to another workbook or worksheet, similar to hyperlinks on a web page: Depending on the types of input behind the hyperlink, more detailed and specific information can be viewed. While there are few codes crucial to the process, they can be structured in ways that make them very powerful. In order to setup a drill that goes to another workbook it is necessary to setup drill codes which have to be registered by INTERJECT.
+ReportDrill is widely used throughout INTERJECT as a way to connect and pass information between workbooks and worksheets. Drilling takes a defined input and passes it in as a parameter to another workbook or worksheet, similar to hyperlinks on a web page: Depending on the types of input behind the hyperlink, more detailed and specific information can be viewed. While there are few codes crucial to the process, they can be structured in ways that make them very powerful. In order to setup a drill that goes to another workbook it is necessary to setup drill codes in the [Report Library](/wGetStarted/L10-Updating-the-Report-Library_62849583.html#adding-a-drill-code-to-a-report) which have to be registered with INTERJECT.
 
 ### Function Arguments
 
