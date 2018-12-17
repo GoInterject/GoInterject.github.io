@@ -1,7 +1,10 @@
 ---
 title: Interject Documentation > How-to articles
 layout: custom
+keywords: [howto, how-to]
+description: How-to
 ---
+
 Add how-to article 
 
 * * *

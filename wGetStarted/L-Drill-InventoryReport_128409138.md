@@ -1,6 +1,7 @@
 ---
 title: Interject Documentation > L4.2 Drill> Inventory Report
 layout: custom
+keywords: [drill,unfreezing,unfreeze,report,hyperlinks]
 ---
 * * *
 
