@@ -5,7 +5,7 @@ layout: custom
 
 ## Function Summary
 
-The ReportGrouping() INTERJECT formatting function is a triggered INTERJECT function. This means that upon the execution of an INTERJECT action, a triggered function is activated. There are several trigger combinations that can be utilized by ReportGrouping() that are listed [here](/wIndex/ReportGrouing.html#trigger-combination-list). A ReportGrouping() function is often used to collapse or expand a native excel grouping upon the execution of an INTERJECT action. 
+The ReportGrouping() INTERJECT formatting function is a triggered INTERJECT function. This means that upon the execution of an INTERJECT action, a triggered function is activated. There are several trigger combinations that can be utilized by ReportGrouping() that are listed [here](/wIndex/ReportGrouping.html#trigger-combination-list). A ReportGrouping() function is often used to collapse or expand a native excel grouping upon the execution of an INTERJECT action. 
 
 ### Function Arguments
 
