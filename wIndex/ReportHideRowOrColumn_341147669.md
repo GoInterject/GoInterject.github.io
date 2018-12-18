@@ -5,7 +5,7 @@ layout: custom
 
 ## Function Summary
 
-ReportHideRowOrColumn() utilizes cell the values "Show" and "Hide" as input parameters. These parameters are set within the RowOrColumnRange argument, wherein if a cell within that range has a value of "Hide" then the function will hide that column or row depending on which type of cell range is being used. Additionally, this function is triggered on an INTERJECT Action+Event combination. There are several trigger combinations that can be utilized by ReportGrouping() that are listed [here](/wIndex/ReportHideRowOrColumn_341147669.html#trigger-combination-list).
+ReportHideRowOrColumn() utilizes cell the values "Show" and "Hide" as input parameters. These parameters are set within the RowOrColumnRange argument, wherein if a cell within that range has a value of "Hide" then the function will hide that column or row depending on which type of cell range is being used. Additionally, this function is triggered on an INTERJECT Action+Event combination. Also, this function requires a [ReportCalc()](/wIndex/ReportCalc_137265163.html) function to be executed in the INTERJECT call stack before the ReportHideRowOrColumn() is called in the stack. This is because the ReportHideRowOrColumn() function requires the most up to date cell formula outputs (if formulas are being used to create the "Show"/"Hide" cell values), which does not occur if the ReportHideRowOrColumn() function is called directly after a trigger combination is called.  There are several trigger combinations that can be utilized by ReportGrouping() that are listed [here](/wIndex/ReportHideRowOrColumn_341147669.html#trigger-combination-list).
 
 ### Function Arguments
 
@@ -67,4 +67,4 @@ The execution of the ReportDefaults() formatting function is determined by a com
 | OnClearRunOrBoth | "Both"                        |                                                                                               |
 
 ### Required Function List
-* [ReportCalc()](wIndex\ReportCalc_137265163.html)
+* [ReportCalc()](/wIndex/ReportCalc_137265163.html)
