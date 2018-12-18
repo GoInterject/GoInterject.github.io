@@ -9,7 +9,7 @@ The jFocus() formatting function is executed in conjunction with a freeze/unfree
 
 ### Function Arguments
 
-| Parameter Name | Description                                                                                      | Default | Optional |
+| Argument Name | Description                                                                                      | Default | Optional |
 |----------------|--------------------------------------------------------------------------------------------------|---------|----------|
 | Target         | This is a cell address that upon a freeze panes action will place the excel active selection to. |         | NO       |
 

@@ -5,11 +5,11 @@ layout: custom
 
 ## Function Summary
 
-A ReportDefaults() formatting function is utilized to capture and send values from one cell (or set of cells) to another. It gets executed on a specified INTERJECT action and then it captures the values from one cell (or set of cells) and sends the values to the corresponding target cell(s). To view a list of actions go to the [Trigger Combination List](). Many times, the ReportDefaults() function is used to clear out report filters after an INTERJECT clear is performed. This is because [Data Functions]() do not clear the filters after a clear action since they only clear their corresponding target data ranges. Additionally, a ReportDefaults() function can be used to set default filter parameters after an INTERJECT action has occurred.
+A ReportDefaults() formatting function is utilized to capture and send values from one cell (or set of cells) to another. It gets executed on a specified INTERJECT action and then it captures the values from one cell (or set of cells) and sends the values to the corresponding target cell(s). To view a list of actions go to the [Trigger Combination List](/wIndex/ReportDefaults_61702546.html#trigger-combination-list). Many times, the ReportDefaults() function is used to clear out report filters after an INTERJECT clear is performed. This is because [Data Functions](/wIndex/Data-Functions-Landing.html) do not clear the filters after a clear action since they only clear their corresponding target data ranges. Additionally, a ReportDefaults() function can be used to set default filter parameters after an INTERJECT action has occurred.
 
 ### Function Arguments
 
-| Parameter Name   | Description | Default | Optional |
+| Argument Name   | Description | Default | Optional |
 |------------------|-------------|---------|----------|
 | OnPullSaveOrBoth | This defines the instance in which an INTERJECT action will trigger the function to be executed.|         | NO       |
 | OnClearRunOrBoth | This defines which INTERJECT event will trigger the function to be executed.                    |         | NO       |
