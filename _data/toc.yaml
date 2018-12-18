@@ -220,6 +220,8 @@ index:
           path: /wIndex/ReportCalc_137265163.html
         - title: ReportDefaults()
           path: /wIndex/ReportDefaults_61702546.html
+        - title: ReportGrouping()
+          path: /wIndex/ReportGrouping.html  
         - title: ReportHideRowOrColumn()
           path: /wIndex/ReportHideRowOrColumn_341147669.html
         - title: ReportMerge()

@@ -5,17 +5,17 @@ layout: custom
 
 ## Function Summary
 
-
+The ReportGrouping() INTERJECT formatting function is a triggered INTERJECT function. This means that upon the execution of an INTERJECT action, a triggered function is activated. There are several trigger combinations that can be utilized by ReportGrouping() that are listed [here](/wIndex/ReportGrouing.html#trigger-combination-list). A ReportGrouping() function is often used to collapse or expand a native excel grouping upon the execution of an INTERJECT action. 
 
 ### Function Arguments
 
-|Parameter Name|Description|Default|Optional|
+|Argument Name|Description|Default|Optional|
 |:---|:---|:---|:---|
-|OnPullSaveOrBoth||||
-|OnClearRunOrBoth||||
-|RowOrColumnGroup||||
-|GroupLevel||||
-|Disabled||||
+|OnPullSaveOrBoth|This defines the instance in which an INTERJECT action will trigger the function to be executed.||NO|
+|OnClearRunOrBoth|This defines which INTERJECT event will trigger the function to be executed.                    ||NO|
+|RowOrColumnGroup| Specifies which type of grouping to be impacted by the ReportGrouping() function. Can only be "Row" or "Column".||NO|
+|GroupLevel| This accepts a value of "Expand", or "Collapse", or a level value to change an existing grouping to (1-8).||NO|
+|Disabled| This disables the function if the value is "TRUE" and is used when testing a report.|FALSE|YES|
 
 ### Excel Formula Bar Example
 
@@ -28,12 +28,12 @@ An example of this function is currently in construction in our documentation la
 
 |Argument Name|Example Mapping|Explanation|
 |:---|:---|:---|
-|Function Name|`=ReportGrouping()`||
-|OnPullSaveOrBoth|||
-|OnClearRunOrBoth|||
-|RowOrColumnGroup|||
-|GroupLevel|||
-|Disabled|||
+|Function Name|`=ReportGrouping()`|This is the excel function name used to call the function. It can only be used as a standalone function in a report.|
+|OnPullSaveOrBoth|"Both"| This function will be executed on a Pull or a Save action. |
+|OnClearRunOrBoth|"Run"| This function will be executed on a Pull-Run or a Save-Run Action+Event combination.|
+|RowOrColumnGroup|"Column"|Specifies that that the groupings to be impacted will be "Column" groupings and thus "Row" groupings are left unaltered.|
+|GroupLevel|"Collapse"|In combination with the RowOrColumnGroup argument, this will Collapse all column groupings on a Pull-Run, or Save-Run action.|
+|Disabled|FALSE| This is left false since the ReportGrouping() function is active.|
 
 ### Trigger Combination List
 
