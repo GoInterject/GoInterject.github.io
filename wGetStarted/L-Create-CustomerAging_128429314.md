@@ -10,11 +10,11 @@ In this page you will see the process of building a Customer Aging report from s
 
 There are three parts to building a simple report, click one of the links below to explore. 
 
-  *     * ####  Building the Report 
+  * ####  Building the Report 
 
-    * ####  Customizing the Report 
+  * ####  Customizing the Report 
 
-    * ####  Final Result 
+  * ####  Final Result 
 
 
 

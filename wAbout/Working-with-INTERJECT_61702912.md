@@ -1,14 +1,10 @@
 ---
-title: Interject Documentation > Working with INTERJECT
+title: Working with INTERJECT
 layout: custom
 ---
-* * *
 
 ##  **Overview**
-
-  
-
-
+---
 Since INTERJECT introduces new methods and standards for working with spreadsheets, it is helpful to understand some key concepts so you can realize its potential. The internet has proliferated the use of client/server web applications throughout the world, and it is time to apply this same way of thinking to spreadsheets. The following topics are helpful places to begin. 
 
 ###  [ Basics of Report Formulas ](https://interject.atlassian.net/wiki/display/ID/Basics+of+Report+Formulas)

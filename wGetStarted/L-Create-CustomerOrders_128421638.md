@@ -8,15 +8,15 @@ layout: custom
 
 This page illustrates the process of building a Customer Order report from scratch and uses the multi-row option to provide a more advanced presentation. Here you will get a better understating of the  [ ReportRange() ](/wIndex/61702199.html) as well as JfreezePanes() function. 
 
-  *     * ####  Building the Report 
+  * ####  Building the Report 
 
-    * ####  Customizing the Report 
+  * ####  Customizing the Report 
 
-    * ####  Editing the Function 
+  * ####  Editing the Function 
 
-    * ####  Adding a Multi-Row Range 
+  * ####  Adding a Multi-Row Range 
 
-    * ####  Closing Up the Report 
+  * ####  Closing Up the Report 
 
 
 
