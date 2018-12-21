@@ -6,7 +6,7 @@ layout: custom
 
 ##  **Overview**
 
-In this page you will see the process of building a Customer Aging report from scratch to better understand reports and also get a clearer illustration of the INTERJECT report formula [ ReportRange() ](/wIndex/61702199.html) . 
+In this page you will see the process of building a Customer Aging report from scratch to better understand reports and also get a clearer illustration of the INTERJECT report formula [ ReportRange() ](/wIndex/ReportRange_61702199.html) . 
 
 There are three parts to building a simple report, click one of the links below to explore. 
 
@@ -57,7 +57,7 @@ A new sheet should be added that looks like the screenshot below. Now the report
 **  
 **
 
-**Step 2:** Next, select **** the [ ReportRange() ](https://interject.atlassian.net/wiki/spaces/ID/pages/61702199/ReportRange) formula in order to delete its reference to **IsMissingCRMID** that you just removed above. Go to cell C6 and edit the formula. Remove the reference by removing C19 from the ReportRange formula. 
+**Step 2:** Next, select **** the [ ReportRange() ](/wIndex/ReportRange_61702199.html) formula in order to delete its reference to **IsMissingCRMID** that you just removed above. Go to cell C6 and edit the formula. Remove the reference by removing C19 from the ReportRange formula. 
 
 ** ![](attachments/128429314/128586748.png) **
 
@@ -84,7 +84,7 @@ The report should look similar to the screenshot below. Now, put the filter valu
 
 ###  Getting Started 
 
-**Step 1:** Next, use the **[ Pull Data ](https://interject.atlassian.net/wiki/display/ID/Interject+Ribbon+Menu+Items#InterjectRibbonMenuItems-PullData) ** menu item. 
+**Step 1:** Next, use the **[ Pull Data ](wGetStarted\INTERJECT-Ribbon-Menu-Items_83689479.html) ** menu item. 
 
 ** ![](attachments/128429314/129014075.png) **
 
@@ -199,7 +199,7 @@ In the FeezePanesCell argument, input A21 to mark that row as the top of the vis
   
 
 
-Use the **[ Quick Tools ](https://interject.atlassian.net/wiki/spaces/ID/pages/83689479/Interject+Ribbon+Menu+Items#InterjectRibbonMenuItems-QuickTools) ** menu item in the INTERJECT Ribbon so you can easily freeze the panes using the jFreezePanes formula you just configured. 
+Use the **[ Quick Tools ](wGetStarted\INTERJECT-Ribbon-Menu-Items_83689479.html) ** menu item in the INTERJECT Ribbon so you can easily freeze the panes using the jFreezePanes formula you just configured. 
 
 ![](attachments/128429314/129043495.png)
 
@@ -220,7 +220,7 @@ Use the **[ Quick Tools ](https://interject.atlassian.net/wiki/spaces/ID/pages/8
   
 
 
-[ Click here ](https://interject.atlassian.net/wiki/display/ID/Report+Library+Basics) to learn how to upload the new report to the Report Library. 
+[ Click here ](wAbout\Report-Library-Basics_61702517.html) to learn how to upload the new report to the Report Library. 
 
   
 
@@ -229,7 +229,7 @@ Use the **[ Quick Tools ](https://interject.atlassian.net/wiki/spaces/ID/pages/8
 
 [ Customer Aging ](/wAbout/Customer-Aging_128091294.html)
 
-[ L1.1 Modify: Customer Aging ](/wGetStarted/128428927.html)
+[ L1.1 Modify: Customer Aging ](wGetStarted\L-Modify-CustomerAging_128428927.html)
 
 [ L10 Updating the Report Library ](/wGetStarted/L10-Updating-the-Report-Library_62849583.html)
 

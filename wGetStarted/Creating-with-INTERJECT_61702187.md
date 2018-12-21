@@ -16,14 +16,14 @@ This section is for developers who need to create or modify reports. You will ru
 
 ###  [ Modifying an Existing Report ](/wGetStarted/Modifying-an-Existing-Report_62849215.html)
 
-Reporting needs change often. Account details, specific formatting, even spreadsheet formulas require modification, that is why INTERJECT's reports are so highly customizable using familiar spreadsheet knowledge. This section walks through common report modifications using [ Customer Aging ](/wGetStarted/128428927.html) , [ Inventory ](/wGetStarted/128429185.html) , and [ Financial ](/wGetStarted/128429053.html) reports as an example. 
+Reporting needs change often. Account details, specific formatting, even spreadsheet formulas require modification, that is why INTERJECT's reports are so highly customizable using familiar spreadsheet knowledge. This section walks through common report modifications using [ Customer Aging ](wGetStarted\L-Modify-CustomerAging_128428927.html) , [ Inventory ](wGetStarted\L-Modify-InventoryReport_128429185.html) , and [ Financial ](wGetStarted\L-Modify-FinancialReport_128429053.html) reports as an example. 
 
   
 
 
 ###  [ Creating a Simple Report ](/wGetStarted/Creating-a-Simple-Report_128408585.html)
 
-This section details how to create reports from scratch. Here, you will walk through making a [ Customer Aging ](/wGetStarted/128429314.html) and [ Customer Orders ](/wGetStarted/128421638.html) report from the ground up. The focus is on using simple single range tabular reports. 
+This section details how to create reports from scratch. Here, you will walk through making a [ Customer Aging ](wGetStarted\L-Create-CustomerAging_128429314.html) and [ Customer Orders ](wGetStarted\L-Create-CustomerOrders_128421638.html) report from the ground up. The focus is on using simple single range tabular reports. 
 
   
 
@@ -37,9 +37,9 @@ Reports often require various formats and subtotal sections, and this is especia
 
 ###  [ Drilling Between Reports ](/wGetStarted/Drilling-Between-Reports_61702193.html)
 
-Creating drills, it is possible to generate a simple suite of reports that enable you and your end-users to navigate anywhere from within the spreadsheet environment. Examples in this section include building drills in a [ Customer Aging ](/wGetStarted/128421015.html) , [ Inventory ](/wGetStarted/128409138.html) , and [ Financial report ](/wGetStarted/128409219.html) . There is more than one way for the user to interact with the drill feature. See the page [ Three Ways to Drill ](/wGetStarted/L4.4-The-Three-Ways-to-Drill_128510906.html) for more details. 
+Creating drills, it is possible to generate a simple suite of reports that enable you and your end-users to navigate anywhere from within the spreadsheet environment. Examples in this section include building drills in a [ Customer Aging ](wGetStarted\L-Drill-CustomerAging_128421015.html) , [ Inventory ](wGetStarted\L-Drill-InventoryReport_128409138.html) , and [ Financial report ](wGetStarted\L-Drill-FinancialReport_128409219.html) . There is more than one way for the user to interact with the drill feature. See the page [ Three Ways to Drill ](/wGetStarted/L4.4-The-Three-Ways-to-Drill_128510906.html) for more details. 
 
-###  [ Lab 5 Hiding Rows & Columns ](/wGetStarted/137363494.html)
+###  [ Lab 5 Hiding Rows & Columns ](wGetStarted\L5-HidingRowsColumns_137363494.html)
 
 ReportHideRowsOrColumns() is a function that allows you to hide both rows and columns when not needed. In this example, you will begin with hiding columns L, M, N, and O. To practice there is a file below that has been specifically prepared for this formula. 
 
@@ -60,7 +60,7 @@ Sheet Protection expands upon the already existing protection functions in excel
 
 To use it, navigate to the INTERJECT ribbon and click on the  **Sheet Protector ** button in the  **Tools ** section. 
 
-###  Lab 9 Using the Retained Feature 
+###  [ Lab 9 Using the Retained Feature ](wGetStarted\L9-Using-the-Retain-Feature_361332831.html)
 
 Coming soon 
 
