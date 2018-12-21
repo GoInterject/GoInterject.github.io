@@ -65,8 +65,6 @@
 	  }}();
 	</script>
 	-->
-	{% if site.GH_ENV == "gh_pages" %}
-	<meta name="robots" content="noindex">{% endif %}
 	<!-- favicon -->
 	<link rel="icon" type="image/x-icon" href="/favicons/docs@2x.ico" sizes="129x128">
 	<meta name="msapplication-TileImage" content="/favicons/docs@2x.ico">
@@ -74,17 +72,20 @@
 	<meta property="og:image" content="/favicons/docs@2x.ico"/>
 	<!-- metadata -->
 	
-
+	
     <link rel="stylesheet" href="/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/css/bootstrap.min.css">
 	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css">
 	<link id="pagestyle" rel="stylesheet" href="/css/style.css">
-
+	
 	<!-- Go get "Open Sans" font from Google -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	
+
+	{% if site.GH_ENV == "gh_pages" %}
+	<meta name="robots" content="noindex">
+	{% endif %}
 	{% if page.hide_from_sitemap %}<meta name="robots" content="noindex" />{% endif %}
-	
     {% seo %}
 </head>	
 

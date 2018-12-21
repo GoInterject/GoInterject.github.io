@@ -1,6 +1,8 @@
 ---
 title: Real World Use Cases
 layout: custom
+keywords: [use case]
+description: Real world use cases for the INTERJECT product.
 ---
 
 Since its availability in 2012,  INTERJECT  has solved a wide variety of problems for small and enterprise-sized companies. Below are excerpts of use cases that can provide more detailed views of what  INTERJECT  can do. Each use case is supported by personal references, which can be provided on request. 
