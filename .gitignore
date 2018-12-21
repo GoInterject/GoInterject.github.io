@@ -11,3 +11,4 @@ Gemfile.lock
 
 # python related ignores
 __pycache__/
+.pytest_cache/
