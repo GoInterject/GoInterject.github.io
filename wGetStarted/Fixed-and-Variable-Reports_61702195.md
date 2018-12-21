@@ -6,15 +6,15 @@ layout: custom
 
 ##  **Overview**
 
-This section demonstrates additional Report Formulas, [ ReportFixed() ](/wIndex/61702203.html) and [ ReportVariable() ](/wIndex/61702201.html) . Like ReportRange(), these are used for reporting but allow for special use cases. ReportFixed() provides for a report that is fixed on each row based on a Row Definition that you specify. If the returned record matches the Row Definition, the data is presented, but the report does not expand with new data records. The ReportVariable() function is a combination of ReportFixed() and ReportRange() which allow specific fixed sections to be set up. Within those sections, the data will expand or shrink based on the data result. 
+This section demonstrates additional Report Formulas, [ ReportFixed() ](wIndex\ReportFixed_61702203.html) and [ ReportVariable() ](wIndex\ReportVariable_61702201.html) . Like ReportRange(), these are used for reporting but allow for special use cases. ReportFixed() provides for a report that is fixed on each row based on a Row Definition that you specify. If the returned record matches the Row Definition, the data is presented, but the report does not expand with new data records. The ReportVariable() function is a combination of ReportFixed() and ReportRange() which allow specific fixed sections to be set up. Within those sections, the data will expand or shrink based on the data result. 
 
 ###  [ Lab 3.1 Inventory Fixed ](/wGetStarted/L3.1-Inventory-Fixed_128429456.html)
 
-This page illustrates the process of building a fixed inventory report from scratch using an example seen in the  [ Inventory Walk-through ](/wAbout/Inventory-Reports_128091499.html) . By creating this report from scratch, you can better understand how to use the [ ReportFixed() ](https://interject.atlassian.net/wiki/pages/viewpage.action?pageId=61702203) function. 
+This page illustrates the process of building a fixed inventory report from scratch using an example seen in the  [ Inventory Walk-through ](/wAbout/Inventory-Reports_128091499.html) . By creating this report from scratch, you can better understand how to use the [ ReportFixed() ](wIndex\ReportFixed_61702203.html) function. 
 
 ###  [ Lab 3.2 Inventory Variable Report ](/wGetStarted/L3.2-Inventory-Variable-Report_127872532.html)
 
-Using the report seen in the [ Inventory Walk-through ](https://interject.atlassian.net/wiki/spaces/ID/pages/128091499/L2+Inventory+Reports) , this illustrates how ReportVariable() can provide all the data for each section in the report **Inventory By Category with Detail** . 
+Using the report seen in the [ Inventory Walk-through ](wAbout\Inventory-Reports_128091499.html) , this illustrates how ReportVariable() can provide all the data for each section in the report **Inventory By Category with Detail** . 
 
 ###  [ Lab 3.3 Financial Variable ](/wGetStarted/L3.3-Financial-Variable_128421724.html)
 
