@@ -34,12 +34,6 @@ The INTERJECT Ribbon has several options designed to help customize the reportin
 
   * Sheet Protector 
 
-  
-
-
-
-
-
 ###  Advanced Menu 
 
   * Validation Report 
@@ -57,11 +51,6 @@ The INTERJECT Ribbon has several options designed to help customize the reportin
   * User Support 
 
   * About INTERJECT 
-
-
-
-
-  
 
 
 * * *
