@@ -1,6 +1,8 @@
 ---
 title: Adding a User
 layout: custom
+keywords: [user, role, login]
+description: This overview is a step by step process on how to add a new user to INTERJECT using the Portal site. Adding a new user can be accomplished only by Client Admins
 ---
 
 ##  **Overview**

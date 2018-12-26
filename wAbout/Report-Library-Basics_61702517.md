@@ -1,6 +1,8 @@
 ---
 title: Report Library Basics
 layout: custom
+keywords: [report library]
+description: The Report Library is a way for your team to share reports from a central location going beyond just a Sharepoint or a Shared Network Folder.The reports are uploaded to the library and can be accessed from any computer using Excel via INTERJECT.
 ---
 
 ##  **Overview**
@@ -14,68 +16,64 @@ Once INTERJECT is installed, an INTERJECT Ribbon will be added to Excel.
 
 **Step 1:** To begin, open the Report Library by opening the INTERJECT ribbon menu. 
 
-![](attachments/61702517/129672036.png)
+![](/images/ReportLibraryBasics/1.01GettingtoRL-InterjectTab.png)
 
 **Step 2:** The Report Library is located on the far left of the ribbon. Click the icon or use the keystroke  Ctrl+Shift+L on our keyboard. 
 
-![](attachments/61702517/129672009.png)
+![](/images/ReportLibraryBasics/1.02GettingtoRL-ClickRL.png)
 
 **Step 3:** If not logged in already, an INTERJECT login window will pop up before seeing the Report Library. 
 
-![](attachments/61702517/129672245.png)
+![](/images/ReportLibraryBasics/1.03GettingtoRL-Login-Form.png)
 
-[ See "Logging In" for more information about logins ](https://interject.atlassian.net/wiki/display/ID/Logging+In). 
+[ See "Logging In" for more information about logins ](/wAbout/Logging-In_63275074). 
 
-![](attachments/61702517/129508565.png)
+![](/images/ReportLibraryBasics/image2017-8-2_16-3-54.png)
 
 **Step 4:** The Report Library consists of folders and sub-folders, just like a typical folder hierarchy. 
 
-![](attachments/61702517/129539552.png)
+![](/images/ReportLibraryBasics/image2017-8-4_13-27-29.png)
 
 ###  Using The Report Library 
 
 Navigating the Report Library is crucial for efficient use. Each section of the Report Library is detailed below. 
 
-![](attachments/61702517/129567089.png)
+![](/images/ReportLibraryBasics/image2017-8-7_9-6-3.png)
 
 Before opening a report from the library, look through the Folders and Report Links, and check the Link Version of the desired report. 
 
 **Section 1:** Once the Library is opened, select the desired folder in the **Folders** section. 
 
-![](attachments/61702517/129670818.png)
+![](/images/ReportLibraryBasics/2.01UsingtheRL-Folders.png)
 
 **Section 2:** Select a report in the **Report Link** section. These are the links that, when clicked, will open a particular report. 
 
-![](attachments/61702517/129670832.png)
+![](/images/ReportLibraryBasics/2.02UsingtheRL-Report-Links.png)
 
 **Section 3:** Select which version you want to use. It is recommended you use the most recent (green) version, as it is likely the best and most stable. Link Version shows the details of a specific report and any of its available versions. It is important to check Link Version before selecting **Open Link** .  If the you are an administrator or report writer, all previously uploaded versions are shown.  Each version is specified in the box at the bottom right of the Report Library window, and they are color-coded to show the stage of development (see image above). 
 
-![](attachments/61702517/129671618.png)   
+![](/images/ReportLibraryBasics/2.03UsingtheRL-LinkVersion.png)   
 
-
-  
-
-
-  *   _Green_ : Currently Live 
+    * _Green_ : Currently Live 
     * _Yellow_ : In Testing 
     * _Red_ : In Development 
     * _Gray_ : Superseded, this is an older version of a previous live report 
 
 **Section 4:** If you are unsure what the report is for, clicking **View Documentation** on the upper right-hand corner is particularly useful. It should include the history of version changes and a manual explaining how to use the report. If the link is grey, the documentation is not yet ready. 
 
- ![](attachments/61702517/129671672.png)   
+ ![](/images/ReportLibraryBasics/2.05UsingtheRL-ViewDocumentation.png)   
 
 **Section 5:** Now click **Open Link** to open the report. 
 
- ![](attachments/61702517/129671639.png)   
+ ![](/images/ReportLibraryBasics/2.04UsingtheRL-OpenLink.png)   
 
 The selected link will open the following report. 
 
-![](attachments/61702517/128510816.png)
+![](/images/ReportLibraryBasics/image2017-6-16_13-50-21.png)
 
 **Note:** Reports are stored in Excel Reports, therefore the reports do not need to be  saved locally. When report updates are finished, simply press [ **Save Data** ](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html) from the INTERJECT ribbon menu, and the new changes will be saved back to the database. 
 
-![](attachments/61702517/129567827.png)
+![](/images/ReportLibraryBasics/image2017-8-7_9-53-27.png)
 
 ##  Navigating the Report Library 
 
@@ -97,13 +95,9 @@ The selected link will open the following report.
 
 **Step 3:** Double-clicking on a link opens the report and keeps the Report Library open, while single-clicking the **Open Link** button will open the selected report and close Report Library 
     
-    
-      
-    
 
 For how to add or change files in the Report Library, please check out [ L10 Updating the Report Library ](/wGetStarted/L10-Updating-the-Report-Library_62849583.html) . 
 
-  
 
 
 ##  Related Links: 
