@@ -17,7 +17,7 @@ Used in conjunction with the [ jDataPortal() ](/wIndex/jDataPortal_61702544.html
 | DataPortal      | The name of the INTERJECT Data Portal set up to connect to data. |         | NO       |
 | TargetDataRange | Select a single cell to place the data value. If the Data Portal returns a list of data, this function will return the value from the first row. The helper function [jDataPortal()](/wIndex/jDataPortal_61702544.html) can be used to further define which row to use from the Data Portal by using its Filter and OrderBy arguments.                                                                 |         | NO       |
 | ColDefRange     | The Column Definition Range determines which column from the stored procedure record will be returned.                                                                  |         | NO       |
-| Parameters      |  Select a single cell or range of cells which will be used as [Parameters]() for the Data Portal. The cells must be wrapped inside of INTERJECT's [Param]() helper function.                                                                |         | YES      |
+| Parameters      |  Select a single cell or range of cells which will be used as parameters for the Data Portal. The cells must be wrapped inside of INTERJECT's [Param](/wIndex/Param_81756199.html) helper function.                                                                |         | YES      |
 
 ### Excel Formula Bar Example
 
@@ -38,8 +38,7 @@ ReportLookup(jDataPortal("NorthwindCustomers",1,"[CustomerID] Like '%SAVE%'"),C1
 ### Embeddable Helper Functions
 
 * [jDataPortal](/wIndex/jDataPortal_61702544.html)
-* [Param]()
-* [jCombine]()
-* [jCombineIF]()
-*   
+* [Param](/wIndex/Param_81756199.html)
+* [jCombine](wIndex/jCombine_61702542.html)
+* [jCombineIF](wIndex/jCombine_IF_139526244.html)
 
