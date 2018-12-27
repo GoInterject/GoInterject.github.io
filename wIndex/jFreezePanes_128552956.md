@@ -1,9 +1,11 @@
 ---
 title: jFreezePanes()
 layout: custom
+keywords: [jfreezepanes, function]
+description: This function is designed to be used along with the QuickTools option for freeze/unfreeze panes.
 ---
-## Function Summary
 
+## Function Summary
 Setting view ports in Excel using the native freeze panes functionality becomes rather trying at times. jFreezePanes() is to be placed directly on a report. This function is designed to be used along with the [QuickTools](/wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#quick-tools) option for freeze/unfreeze panes. Additionally, in the QuickTools menu, there is another option called **Freeze All Tabs** which will iterate through every worksheet in the active workbook and run the jFreezePanes() function on every page. It will only freeze panes on tabs that have jFreezePanes() function on them; additionally, when running **Freeze All Tabs** it will not unfreeze panes.
 
 

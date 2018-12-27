@@ -1,6 +1,8 @@
 ---
-title: Why CFO&#39;s Like INTERJECT
+title: Why CFOs Like INTERJECT
 layout: custom
+keywords: [CFO, about]
+description: CFOs like INTERJECT due to data accuraccy, prompt reports, visibility among other beneficial reasons.
 ---
 
 The CFO can have many objectives, but often they include the following: 

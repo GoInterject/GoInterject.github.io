@@ -1,11 +1,12 @@
 ---
 title: Interject Documentation > ReportMacro()
 layout: custom
+keywords: [reportmacro, function]
+description: ReportMacro allows a report developer to call VBA macros on Save, Pull, Clear, or Run events. 
 ---
 * * *
 
 ##  Function Summary 
-
 ReportMacro allows a report developer to call VBA macros on Save, Pull, Clear, or Run events. The VBA macro must be a named Sub in the workbook. This function will ignore all errors during the macro's execution. 
 
 ###  Function Arguments   
@@ -108,8 +109,6 @@ The macro Sub name that will be executed. The placement of this function determi
 NO  
 </td> </tr> </table>
 
-### 
-
 ###  Function Composition   
   
 <table>  
@@ -161,11 +160,11 @@ OnPullSaveOrBoth
 
 =ReportMacro( 
 
-**"Pull"**
+<b>"Pull"</b>
 
-,  **"Both"**
+,  <b>"Both"</b>
 
-, ** "MyVBAMacro"  **
+, <b>"MyVBAMacro"</b>
 
 ) 
 

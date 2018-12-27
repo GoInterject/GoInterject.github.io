@@ -1,6 +1,8 @@
 ---
 title: Interject Documentation > ReportRange()
 layout: custom
+keywords: [reportrange, function]
+description: Directs data into a single range of a spreadsheet with options for formatting, formulas, and columns. 
 ---
 ##  Function Summary 
 

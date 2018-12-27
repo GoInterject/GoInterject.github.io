@@ -1,6 +1,8 @@
 ---
 title: Interject Documentation > ReportSave()
 layout: custom
+keywords: [reportsave, function]
+description: Used to save data back to data portal with Ctrl + Shift + U keystroke. 
 ---
 * * *
 
@@ -77,7 +79,7 @@ ColDefRange
 </td>  
 <td>
 
-Input field names above the columns used in the XML to send to the data portal for saving. *It is recommended special characters are not used when specifying column names to return. 
+Input field names above the columns used in the XML to send to the data portal for saving. It is recommended special characters are not used when specifying column names to return. 
 </td>  
 <td>
 
@@ -115,7 +117,7 @@ Parameters
 </td>  
 <td>
 
-Select cells used as Parameters for the Data Portal. The cells must use INTERJECT's [ Param ](/wIndex/81756199.html) () function. 
+Select cells used as Parameters for the Data Portal. The cells must use INTERJECT's [ Param ](/wIndex/81756199.html)() function. 
 </td>  
 <td>
 
@@ -199,4 +201,4 @@ INTERJECTBasic
 ReportSave 
 </td> </tr> </table>
 
-=ReportSave("NorthwindCustomersSaveCRMandNotes",B15:B17,B2:K2,H3:K3) 
+`=ReportSave("NorthwindCustomersSaveCRMandNotes",B15:B17,B2:K2,H3:K3)`

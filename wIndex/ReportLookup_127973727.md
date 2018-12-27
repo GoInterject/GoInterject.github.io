@@ -1,6 +1,8 @@
 ---
 title: Interject Documentation > ReportLookup()
 layout: custom
+keywords: [reportlookup, function]
+description: Allows the report creator to insert a specific data value into a cell based on certain criteria. 
 ---
 * * *
 
@@ -152,14 +154,10 @@ DataPortal
 
 =ReportLookup( 
 
-** "NorthwindFixed"  **
-
-,  **B9**
-
-,  **C1**
-
+<b>"NorthwindFixed"</b>
+,  <b>B9</b>
+,  <b>C1</b>
 , 
-
 ) 
 
 
@@ -168,6 +166,3 @@ DataPortal
 
 
 </td> </tr> </table>
-
-#####    
-
