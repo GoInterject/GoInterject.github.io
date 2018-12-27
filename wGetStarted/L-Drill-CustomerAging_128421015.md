@@ -17,7 +17,7 @@ By clicking one of the links below you  can go directly to any section of this w
 
     * ####  Building the Drill 
 
-    * ####  [ Final Result ](/wGetStarted/128421015.html)
+    * ####  Final Result
 
 
 
@@ -58,7 +58,7 @@ You are going to skip the ReportCodeToRun argument, since that is used only when
   
 
 
-**Step 3:** Next, we will use the  TransferPairs argument to note which cell values in the source worksheet will be transferred to the target worksheet during the drill operation. To do this we use special functions to pair the source cells to the target cells. Type **[ PairGroup(Pair()) ](/wIndex/81756186.html) ** in the TransferPairs argument to get it started. You will return to add more to this argument. 
+**Step 3:** Next, we will use the  TransferPairs argument to note which cell values in the source worksheet will be transferred to the target worksheet during the drill operation. To do this we use special functions to pair the source cells to the target cells. Type **[ PairGroup(Pair()) ](wIndex/PairGroup_81756186.html) ** in the TransferPairs argument to get it started. You will return to add more to this argument. 
 
 ![](attachments/128421015/129051087.png)
 
@@ -102,7 +102,7 @@ Below is when the data is pulled.
 
 ###  **Final Results**
 
-**Step 1:** To demonstrate the new drill, **right click** on one of the customer rows and select **[ Drill on Data. ](https://interject.atlassian.net/wiki/content-only/viewpage.action?pageId=83689479&iframeId=fallback-mode&user_key=ff8080814d41a454014d440734dd0001&user_id=MariaH&xdm_e=https://interject.atlassian.net/&xsm_c=fallback-mode-fake-key__9453719671111718&cp=/wiki&cv=0.0.0-fallback-mode&lic=none#InterjectRibbonMenuItems-DrillData) ** The drill option **Drill to Customers Orders History** should be shown. 
+**Step 1:** To demonstrate the new drill, **right click** on one of the customer rows and select Drill on Data. The drill option **Drill to Customers Orders History** should be shown. 
 
 ![](attachments/128421015/129733323.png)
 
@@ -125,11 +125,9 @@ You completed the drill. You can return to the source worksheet, **Customer Agin
 
 ##  Related Links: 
 
-[ L1.1 Modify: Customer Aging ](/wGetStarted/128428927.html)
+[ L1.1 Modify: Customer Aging ](wGetStarted/L-Modify-CustomerAging_128428927.html)
 
-[ L2.1 Create: Customer Aging ](/wGetStarted/128429314.html)
-
-[ L4.2 Drill: Inventory Report ](/wGetStarted/128409138.html)
+[ L2.1 Create: Customer Aging ](wGetStarted/L-Create-CustomerAging_128429314.md)
 
 [ INTERJECT Ribbon Menu Items ](INTERJECT-Ribbon-Menu-Items_83689479.html)
 

@@ -20,7 +20,7 @@ Click one of the links below to  go directly to any section of this walk-through
 
 ###  Unfreezing the Report 
 
-**Step 1** : For this example you will be using a modified [ PL trend report ](https://interject.atlassian.net/wiki/spaces/ID/pages/128091561/Financial+Report) , which can be download here [ Demo_Interject_PLTrend.xlsx ](/wGetStarted/128409219.html) . This report has been prepared specifically for this exercise. 
+**Step 1** : For this example you will be using a modified PL trend report, which can be download here Demo_Interject_PLTrend.xlsx . This report has been prepared specifically for this exercise. 
 
 ![](attachments/128409219/129338926.png)
 
@@ -45,7 +45,7 @@ Click one of the links below to  go directly to any section of this walk-through
 
 Continue setting up the drill formula. 
 
-**Step 1:** In cell G17, type **=[ ReportDrill() ](/wIndex/61702556.html) ** . Column G is fairly narrow, but it will simply overlap the cells to the right. Then click the **fx** button as illustrated below to bring up the Function Wizard. 
+**Step 1:** In cell G17, type =[ ReportDrill() ](/wIndex/61702556.html) . Column G is fairly narrow, but it will simply overlap the cells to the right. Then click the **fx** button as illustrated below to bring up the Function Wizard. 
 
 ![](attachments/128409219/129340426.png)
 

@@ -86,7 +86,7 @@ The Report Library manages Excel company report files and their various versions
   
 
 
-[ Click here to learn more about the Report Library. ](https://interject.atlassian.net/wiki/display/ID/Report+Library+Basics)
+[ Click here to learn more about the Report Library. ](wAbout/Report-Library-Basics_61702517.md)
 
 ![](attachments/83689479/128620578.png)
 
