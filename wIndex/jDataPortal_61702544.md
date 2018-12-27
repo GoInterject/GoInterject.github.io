@@ -1,6 +1,8 @@
 ---
 title: jDataPortal()
 layout: custom
+keywords: [jdataportal, function, dataportal]
+description: jDataPortal() function is a helper function used by developers to further leverage DataPortals. It can reduce the number of data connections used by INTERJECT in a report, speeding the report process and conserving server resources. 
 ---
 
 ---

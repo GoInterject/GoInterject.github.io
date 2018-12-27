@@ -1,6 +1,8 @@
 ---
 title: Interject Documentation > jColumnDef()
 layout: custom
+keywords: [jcolumndef, function]
+description: This function assists financial reports using the FinCube DataPortal to specify segment filters for each amount column. 
 ---
 * * *
 

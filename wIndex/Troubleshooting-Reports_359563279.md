@@ -1,11 +1,12 @@
 ---
 title: Interject Documentation > Troubleshooting Reports
 layout: custom
+keywords: [troubleshooting reports]
+description: Report errors occur for many reasons, some of which relate to how the server handles data and moves it to the report. 
 ---
 * * *
 
 ##  **Overview**
-
 Report errors occur for many reasons, some of which relate to how the server handles data and moves it to the report. Other reasons may include the report's direct configuration within Excel. INTERJECT provides various tools and features to help quickly and accurately diagnose report errors.  Click one of the topics below to read more. 
 
   * ####  Investigating Errors In Reports with the Progress Window 
@@ -25,10 +26,7 @@ Report errors occur for many reasons, some of which relate to how the server han
   * ####  View SQL Test for ActiveCell 
 
 
-
-
 ###  Investigating Errors In Reports with Progress Window 
-
 There are two types of errors that INTERJECT can display: unhandled and handled. Unhandled errors are system generated, whereas handled errors are written by developers.    
 For example, on a pull or save, an error may occur on the server which the report is trying to access. This error could be handled by the developer, or it could be an unhandled error. Developers can handle errors quickly by using “UserNotice": [link to more info about how to use it]. When the error is handled by the developer, a popup message will display a friendly error text set by the developer. 
 
@@ -251,4 +249,3 @@ The **View SQL Test for ActiveCell** tool can be used to track down issues with 
 This SQL query can be run using any T-SQL environment (i.e. _Microsoft SQL Server Management Studio_ ). Running the query in non-T-SQL environments may require modification of the query. The result will be a list of tables in SQL Server or an error message which can be used to see exactly what data is being pulled/saved to/from a report. 
 
   
-

@@ -1,6 +1,8 @@
 ---
 title: Logging In to Website Portal
 layout: custom
+keywords: [login, website portal]
+description: This page shows how to login to the website portal.
 ---
 
 ##  **Overview**
@@ -9,14 +11,14 @@ The INTERJECT Portal is a websites that allows you to access all the data portal
 
 **Step 1:** Navigate to [ https://portal.gointerject.com/login.html ](https://portal.gointerject.com/login.html)
 
-![](attachments/142278762/144277849.png)
+![](/images/Login/01.png)
 
 **Step 2:** Input credentials 
 
-![](attachments/142278762/144277854.png)
+![](/images/Login/02.png)
 
 **Step 3:** The window should look like this: 
 
-![](attachments/142278762/144376241.png)
+![](/images/Login/03.png)
 
 From here you are able to set up a [ Data Connection ](/wPortal/Lab-15.2-Database-Connection_136249415.html) or [ Portal ](/wPortal/Data-Portals_324665363.html) . 

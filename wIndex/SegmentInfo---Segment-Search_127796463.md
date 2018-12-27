@@ -1,6 +1,8 @@
 ---
 title: Interject Documentation > SegmentInfo - Segment Search
 layout: custom
+keywords: [segmentinfo, segment search, function]
+description: Segments is a dataportal which allows you to filter for every segment within your chart of accounts and allows you to use your groupings within your filter choices. 
 ---
 
 ##  **Overview**
@@ -64,7 +66,7 @@ SegmentCode
 
 
 
-Use a filter to search for the segment. Groups may be used as well as advanced filters such as **Revenue,!38000,52***
+Use a filter to search for the segment. Groups may be used as well as advanced filters such as <b>Revenue,!38000,52</b>
 
 Leave blank to search all segments within your security rights. 
 
@@ -86,7 +88,7 @@ SegmentName
 </td>  
 <td>
 
-Filter on the name of the segment. This filter assumes a **contains** search. As a result, searching on **cash** will return **Restricted Cash** , **Petty Cash** , and so on. 
+Filter on the name of the segment. This filter assumes a <b>contains</b> search. As a result, searching on <b>cash</b> will return <b>Restricted Cash</b> , <b>Petty Cash</b> , and so on. 
 </td>  
 <td>
 
@@ -130,7 +132,7 @@ SegmentName
 </td>  
 <td>
 
-The name for the segment, such as **Wages and Salaries** . 
+The name for the segment, such as <b>Wages and Salaries</b>. 
 </td> </tr>  
 <tr>  
 <td>

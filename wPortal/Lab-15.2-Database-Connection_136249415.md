@@ -1,21 +1,23 @@
 ---
 title: Lab 15.2 Database Connection
 layout: custom
+keywords: [database connection, lab, walkthrough]
+description: This lab shows how to connect to a database using a pre-existing dataportal.
 ---
 
 ###  Data Connection for a Database 
 
-**Step 1:** Start off by navigating to [ https://portal.gointerject.com ](https://portal.gointerject.com) . Once [ logged in ](/wPortal/Logging-In-to-Website-Portal_142278762.html) you can setup a data connection by clicking on the **Data Connections** icon. 
+**Step 1:** Start off by navigating to [ https://portal.gointerject.com ](https://portal.gointerject.com). Once [ logged in ](/wPortal/Logging-In-to-Website-Portal_142278762.html) you can setup a data connection by clicking on the **Data Connections** icon. 
 
-![](attachments/136249415/143327233.png)
+![](/images/Database/01.png)
 
 **Step 2:** In the Data Connections page select the **New Connection** button in the top right-hand corner. 
 
-![](attachments/136249415/148635661.png)
+![](/images/Database/02.png)
 
 **Step 3:** In the Connection Type field, make sure **Database** is selected. 
 
-![](attachments/136249415/143425540.png)
+![](/images/Database/03.png)
 
 **Step 4:** The Connection Details page will contain the following information for the new connection. 
 
@@ -23,11 +25,11 @@ layout: custom
   * **Description (optional):** description of what the connection string is connecting to 
   * **Connection String:** used by INTERJECT to connect to the specified server  & database 
 
-![](attachments/136249415/144474146.png)
+![](/images/Database/04.png)
 
 **Step 5:** After adding the required information, click on the Save button to create the new data connection 
 
-![](attachments/136249415/143196191.png)
+![](/images/Database/05.png)
 
 The Database Data Connection is now ready to be used in a Data Portal. 
 
@@ -37,16 +39,18 @@ Before setting up a Data Connection to a Database, you can verify that the conne
 
 **Step 1:** With Excel open, go to the [ INTERJECT Ribbon ](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html) menu and click **Advanced Menu** (Skip this step if already at Advanced menu) 
 
-![](attachments/136249415/143491100.png)
+![](/images/Database/06.png)
 
 **Step 2:** Click **System** drop-down and select **Check Connection**
 
-![](attachments/136249415/143523860.png)
+![](/images/Database/07.png)
 
 **Step 3:** Paste the database connection string you will be using to configure the Data Connection into the text-box. 
 
-![](attachments/136249415/143523879.png)
+![](/images/Database/08.png)
 
 When the connection functions it will display a message such as the one below. 
 
-![](attachments/136249415/143327323.png)
+![](/images/Database/09.png)
+
+<br>
