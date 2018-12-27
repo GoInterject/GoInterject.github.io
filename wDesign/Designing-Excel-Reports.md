@@ -3,11 +3,13 @@ layout: custom
 title:  "Interject Report Layout and Design Standards - Update"
 date:   2018-10-14 9:03:02 -0700
 categories: Excel Layout
+keywords: [reports, layouts, design, guidelines]
+description: Guidelines for designing and laying out reports.
 ---
 ---
-Theme File: HERE
+**Theme File:** [HERE]()
 
-Example Excel Workbook: HERE
+**Example Excel Workbook:** [HERE]()
 
 [comment]: <> (Directory for Theme Work (Located on TS 13589):)
 [comment]: <> (D:\Data\Interject\ThemeWork)

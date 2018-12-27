@@ -1,6 +1,8 @@
 ---
 title: ReportDrill()
 layout: custom
+keywords: [reportdrill, function]
+description: ReportDrill is widely used throughout INTERJECT as a way to connect and pass information between workbooks and worksheets. 
 ---
 
 ## Function Summary
