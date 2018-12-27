@@ -1,17 +1,12 @@
 ---
 title: Interject Documentation > ReportVariable()
 layout: custom
+keywords: [reportvariable, function]
+description: Directs a list of data into rows that include multiple ranges or sections where each can be subtotaled and formatted to make a financial statement or other report with sub groupings. 
 ---
 * * *
 
-  
-
-
-  
-
-
 ##  Function Summary 
-
 Directs a list of data into rows that include multiple ranges or sections where each can be subtotaled and formatted to make a financial statement or other report with sub groupings. 
 
 ###  Function Arguments   
@@ -127,7 +122,7 @@ Parameters
 </td>  
 <td>
 
-Select cells which will be used as parameters for the Data Portal. The parameters must be selected in the same order specified in the Data Portal setup. The order can be checked by using the validation report . A [ report builder ](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html) will also list the parameters correctly to aid new report building. The cells must use INTERJECT's [ Param ](/wIndex/81756199.html) () function .  
+Select cells which will be used as parameters for the Data Portal. The parameters must be selected in the same order specified in the Data Portal setup. The order can be checked by using the validation report . A [ report builder ](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html) will also list the parameters correctly to aid new report building. The cells must use INTERJECT's [ Param ](/wIndex/81756199.html)() function.  
 </td>  
 <td>
 

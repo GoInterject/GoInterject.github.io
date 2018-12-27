@@ -3,6 +3,8 @@ layout: custom
 title:  "Custom Functions With The Python Interject API"
 date:   2018-10-12 9:03:02 -0700
 categories: API Developer
+keywords: [api, python, dataportal]
+description: Shows how to setup a python data api to utilize custom functions.
 ---
 
 

@@ -1,6 +1,8 @@
 ---
 title: jWorkbookProperty()
 layout: custom
+keywords: [jworkbookproperty, function]
+description: The jWorkbookProperty is a standalone INTERJECT function. It's purpose is to provide context and information about a workbook in a report. 
 ---
 
 ## Function Summary

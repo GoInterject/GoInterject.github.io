@@ -1,6 +1,8 @@
 ---
 title: Interject Documentation > ReportFixed()
 layout: custom
+keywords: [reportfixed, function]
+description: Allows the report creator to insert data based on a coordinate match between a row marker and a column marker.  
 ---
 * * *
 
@@ -160,15 +162,10 @@ DataPortal
 
 
 =ReportFixed( 
-
-** "NorthwindFixed"  **
-
-,  **B9** :  **B21**
-
-,  **1** :  **1**
-
+<b>"NorthwindFixed"</b>
+,  <b>B9</b> :  <b>B21</b>
+,  <b>1</b> :  <b>1</b>
 , 
-
 ) 
 
 
@@ -200,9 +197,3 @@ InterjectBasic
 
 ReportFixed 
 </td> </tr> </table>
-
-  
-
-
-  
-

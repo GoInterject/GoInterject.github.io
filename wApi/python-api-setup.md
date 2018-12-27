@@ -3,6 +3,8 @@ layout: custom
 title:  "Python API Setup"
 date:   2018-10-12 9:03:02 -0700
 categories: API Developer
+keywords: [data api, python, setup]
+description: Shows how to setup an INTERJECT Python data api.
 ---
 
 
@@ -44,7 +46,6 @@ git clone https://gitlab.com/Interject/Interject-Python-API.git
 If you do not have git installed or prefer a different method, simply download the source code from the repository website.
 
 <img class="img-modal" src="/images/temp_gitlab_download_repo.png" width="80%" onclick="zoom_img(this)" />
-
 
 
 ## **Install The Python Package**

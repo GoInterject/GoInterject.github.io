@@ -1,14 +1,14 @@
 ---
 title: ReportGrouping()
 layout: custom
+keywords: [reportgrouping, function]
+description: The ReportGrouping() INTERJECT formatting function is a triggered INTERJECT function. 
 ---
 
 ## Function Summary
-
 The ReportGrouping() INTERJECT formatting function is a triggered INTERJECT function. This means that upon the execution of an INTERJECT action, a triggered function is activated. There are several trigger combinations that can be utilized by ReportGrouping() that are listed [here](/wIndex/ReportGrouping.html#trigger-combination-list). A ReportGrouping() function is often used to collapse or expand a native excel grouping upon the execution of an INTERJECT action. 
 
 ### Function Arguments
-
 |Argument Name|Description|Default|Optional|
 |:---|:---|:---|:---|
 |OnPullSaveOrBoth|This defines the instance in which an INTERJECT action will trigger the function to be executed.||NO|
@@ -18,14 +18,12 @@ The ReportGrouping() INTERJECT formatting function is a triggered INTERJECT func
 |Disabled| This disables the function if the value is "TRUE" and is used when testing a report.|FALSE|YES|
 
 ### Excel Formula Bar Example
-
 ```Excel
 ReportGrouping("Both","Run","Column","Collapse",FALSE)
 ```
 An example of this function is currently in construction in our documentation labs. Check back soon for an example with more context.
 
 ### Example Function Composition
-
 |Argument Name|Example Mapping|Explanation|
 |:---|:---|:---|
 |Function Name|`=ReportGrouping()`|This is the excel function name used to call the function. It can only be used as a standalone function in a report.|
@@ -36,7 +34,6 @@ An example of this function is currently in construction in our documentation la
 |Disabled|FALSE| This is left false since the ReportGrouping() function is active.|
 
 ### Trigger Combination List
-
 The execution of the ReportGrouping() formatting function is determined by a combination of an INTERJECT action and an INTERJECT event. An action is a pull or save whereas an event is a clear or a run.
 
 | Argument Name    | Function Event Trigger Options | Option Explanation                                                                            |
