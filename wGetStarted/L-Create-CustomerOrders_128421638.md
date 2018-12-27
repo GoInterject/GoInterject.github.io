@@ -23,7 +23,7 @@ This page illustrates the process of building a Customer Order report from scrat
 
 ###  Building the Report: 
 
-**Step 1:** This process begins with the INTERJECT **[ Report Builder ](https://interject.atlassian.net/wiki/display/ID/Interject+Ribbon+Menu+Items#InterjectRibbonMenuItems-ReportBuilder) ** . Open the Report Build as illustrated below. There is a drop down list of  [ Dataportals ](/wApps/Common-Dataportal-Index_127795984.html) that can be chosen  . An INTERJECT Dataportal is a pre-configured data query that is setup so spreadsheet users can easily direct data into their own spreadsheet reports. Dataportals can be setup to access databases or cloud data and are either setup by INTERJECT developers or an IT team. 
+**Step 1:** This process begins with the INTERJECT **[ Report Builder ](wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html) ** . Open the Report Build as illustrated below. There is a drop down list of  [ Dataportals ](/wApps/Common-Dataportal-Index_127795984.html) that can be chosen  . An INTERJECT Dataportal is a pre-configured data query that is setup so spreadsheet users can easily direct data into their own spreadsheet reports. Dataportals can be setup to access databases or cloud data and are either setup by INTERJECT developers or an IT team. 
 
 ![](attachments/128421638/129433048.png)
 
@@ -76,7 +76,7 @@ You can now see all the columns available in the Dataportal will be shown by def
   
 
 
-**Step 4:** Once the Column Definitions are set, clear the report using the Pull Data menu item and choose the **[ Clear Data ](https://interject.atlassian.net/wiki/content-only/viewpage.action?pageId=83689479&iframeId=fallback-mode&user_key=ff8080814d41a454014d440734dd0001&user_id=MariaH&xdm_e=https://interject.atlassian.net/&xsm_c=fallback-mode-fake-key__15033515684256504&cp=/wiki&cv=0.0.0-fallback-mode&lic=none#InterjectRibbonMenuItems-PullData) ** button. 
+**Step 4:** Once the Column Definitions are set, clear the report using the Pull Data menu item and choose the Clear Data button. 
 
 ![](attachments/128421638/129212023.png)
 
@@ -206,7 +206,7 @@ Below is an example of what a Formatting Range might look like. It is okay to le
   
 
 
-**Step 5:** Before pulling the data, you need to edit the [ ReportRange() ](https://interject.atlassian.net/wiki/spaces/ID/pages/61702199/ReportRange) Formula in C10 so that it uses the Column Definition and Formatting Range set in the previous steps. 
+**Step 5:** Before pulling the data, you need to edit the [ ReportRange() ](wIndex/ReportRange_61702199.html) Formula in C10 so that it uses the Column Definition and Formatting Range set in the previous steps. 
 
 ![](attachments/128421638/129240605.png)
 
@@ -233,7 +233,7 @@ The report should look something like this. Note that the text gets overwritten 
 
 ###  Final Steps 
 
-**Step 1:** Now setup a [ jFreezePanes ](/wIndex/128552956.html) function so you can quickly unfreeze and freeze the panes at the correct position. First, setup the jFreezePane function in cell F10 by going into the report formulas section and typing **=jFreezePanes()** , then click the **fx** button to open the Formula Wizard. 
+**Step 1:** Now setup a [ jFreezePanes ](/wIndex/jFreezePanes_128552956.html) function so you can quickly unfreeze and freeze the panes at the correct position. First, setup the jFreezePane function in cell F10 by going into the report formulas section and typing **=jFreezePanes()** , then click the **fx** button to open the Formula Wizard. 
 
 ![](attachments/128421638/129243135.png)
 
@@ -247,7 +247,7 @@ The report should look something like this. Note that the text gets overwritten 
   
 
 
-**Step 3:** Use JFreezePanes to toggle panes off and on. Go to the **[ Quick Tools ](https://interject.atlassian.net/wiki/spaces/ID/pages/83689479/Interject+Ribbon+Menu+Items#InterjectRibbonMenuItems-QuickTools) ** menu in the INTERJECT Ribbon, then click **Freeze/Unfreeze Panes.**
+**Step 3:** Use JFreezePanes to toggle panes off and on. Go to the **[ Quick Tools ](wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html) ** menu in the INTERJECT Ribbon, then click **Freeze/Unfreeze Panes.
 
 ![](attachments/128421638/129243116.png)
 
@@ -279,7 +279,7 @@ Every report will be specific to the company's needs and best practices, but a c
 
 [ Updating the Report Library ](/wGetStarted/L10-Updating-the-Report-Library_62849583.html)
 
-[ Interject Ribbon Menu Items ](https://interject.atlassian.net/wiki/spaces/ID/pages/83689479/Interject+Ribbon+Menu+Items)
+[ Interject Ribbon Menu Items ](wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html)
 
 [ Basics of Report Formulas ](/wAbout/Basics-of-Report-Formulas_61702189.html)
 
