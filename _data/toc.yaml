@@ -30,49 +30,46 @@ design:
 
 
 about:
-- sectiontitle: INTERJECT Data Systems 
-  path: /
+- sectiontitle: What Does INTERJECT Do?
+  path: /wAbout/61702415.html
   section:
-  - sectiontitle: What Does INTERJECT Do?
-    path: /wAbout/61702415.html
+  - title: Real World Use Cases
+    path: /wAbout/Real-World-Use-Cases_61702417.html
+  - title: Why CFO's Like INTERJECT
+    path: /wAbout/Why-CFOs-Like-INTERJECT_61702437.html
+  - title: Why CIO's Like INTERJECT
+    path: /wAbout/Why-CIOs-Like-INTERJECT_61702419.html
+  - title: What You Need to Know
+    path: /wAbout/What-You-Need-to-Know_61702914.html
+- sectiontitle: Using INTERJECT
+  path: /wAbout/Using-INTERJECT_61702183.html
+  section:
+  - title: Installing INTERJECT
+    path: /wAbout/Installing-INTERJECT_91881528.html
+  - title: Logging In
+    path: /wAbout/Logging-In_63275074.html
+  - title: Adding a User
+    path: /wAbout/Adding-a-User_61702191.html
+  - title: Report Library Basics
+    path: /wAbout/Report-Library-Basics_61702517.html
+  - sectiontitle: Real-World Walkthroughs
+    path: /wAbout/Real-World-Walkthroughs_128091006.html
     section:
-    - title: Real World Use Cases
-      path: /wAbout/Real-World-Use-Cases_61702417.html
-    - title: Why CFO's Like INTERJECT
-      path: /wAbout/Why-CFOs-Like-INTERJECT_61702437.html
-    - title: Why CIO's Like INTERJECT
-      path: /wAbout/Why-CIOs-Like-INTERJECT_61702419.html
-    - title: What You Need to Know
-      path: /wAbout/What-You-Need-to-Know_61702914.html
-  - sectiontitle: Using INTERJECT
-    path: /wAbout/Using-INTERJECT_61702183.html
-    section:
-    - title: Installing INTERJECT
-      path: /wAbout/Installing-INTERJECT_91881528.html
-    - title: Logging In
-      path: /wAbout/Logging-In_63275074.html
-    - title: Adding a User
-      path: /wAbout/Adding-a-User_61702191.html
-    - title: Report Library Basics
-      path: /wAbout/Report-Library-Basics_61702517.html
-    - sectiontitle: Real-World Walkthroughs
-      path: /wAbout/Real-World-Walkthroughs_128091006.html
-      section:
-      - title: Customer Aging
-        path: /wAbout/Customer-Aging_128091294.html
-      - title: Inventory Reports
-        path: /wAbout/Inventory-Reports_128091499.html
-      - title: Financial Report
-        path: /wAbout/Financial-Report_128091561.html
-    - title: Updating INTERJECT
-      path: /wAbout/Updating-INTERJECT_128493904.html
-  - sectiontitle: Working with INTERJECT
-    path: /wAbout/Working-with-INTERJECT_61702912.html
-    section:
-    - title: Basics of Report Formulas
-      path: /wAbout/Basics-of-Report-Formulas_61702189.html
-    - title: Tabular vs Data Cells
-      path: /wAbout/Tabular-vs-Data-Cells_61702447.html
+    - title: Customer Aging
+      path: /wAbout/Customer-Aging_128091294.html
+    - title: Inventory Reports
+      path: /wAbout/Inventory-Reports_128091499.html
+    - title: Financial Report
+      path: /wAbout/Financial-Report_128091561.html
+  - title: Updating INTERJECT
+    path: /wAbout/Updating-INTERJECT_128493904.html
+- sectiontitle: Working with INTERJECT
+  path: /wAbout/Working-with-INTERJECT_61702912.html
+  section:
+  - title: Basics of Report Formulas
+    path: /wAbout/Basics-of-Report-Formulas_61702189.html
+  - title: Tabular vs Data Cells
+    path: /wAbout/Tabular-vs-Data-Cells_61702447.html
 
   
 
