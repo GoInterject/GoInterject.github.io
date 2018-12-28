@@ -1,6 +1,8 @@
 ---
 title: jCombineIF()
 layout: custom
+keywords: [jcombineif, function]
+description: jCombineIF() has a similar function to jCombine(). A key difference is that jCombineIF() uses a conditional statement to determine which values should be included into a single concatenated string. 
 ---
 
 ## Function Summary

@@ -1,11 +1,10 @@
 ---
 title: Interject Documentation > ReportRun()
 layout: custom
+keywords: [reportrun, function]
+description: ReportRun executes a Report Function in another tab without changing the tab focus. 
 ---
 * * *
-
-  
-
 
 ##  Function Summary 
 
@@ -151,9 +150,3 @@ ReportRun
 </td> </tr> </table>
 
 =ReportRun(ReportRunTarget!C2,TRUE,"Pull") 
-
-  
-
-
-  
-

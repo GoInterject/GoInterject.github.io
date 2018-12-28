@@ -11,19 +11,20 @@ This lab is for controllers or accountants who work with financial data and spre
 
 You can go directly to any part of this walk-through by clicking one of the links below. 
 
-  *   ####  Navigating to the PLTrend Report 
+* ####  Navigating to the PLTrend Report 
 
-    * ####  Modifying the Report 
+* ####  Modifying the Report 
 
-    * ####  Grouped Detail in the Report 
+* ####  Grouped Detail in the Report 
 
-    * ####  Drill to JE-Transaction 
+* ####  Drill to JE-Transaction 
 
-    * ####  Drill Further into JE-Lookup   
+* ####  Drill Further into JE-Lookup   
 
-    * ####  Report Example with Data Cells 
+* ####  Report Example with Data Cells 
 
-To watch a quick walk-through video, click on the icon:  [ ![](attachments/128091561/129520867.png) ](https://www.youtube.com/watch?v=13H24zWv7is&feature=youtu.be)
+To watch a quick walk-through video, click on the icon:  
+<br><a href="https://www.youtube.com/watch?v=13H24zWv7is&feature=youtu.be"><i class="fab fa-youtube fa-3x" style="color: #ff0000"></i></a> 
 
 ###  Navigating to the PLTrend Report 
 

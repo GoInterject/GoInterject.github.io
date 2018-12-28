@@ -1,6 +1,8 @@
 ---
 title: What You Need to Know
 layout: custom
+keywords: [about, scalability, report library]
+description: INTERJECT was built for large companies with hundreds of users that run thousands of reports each day. INTERJECT commonly handles report volumes over of 300,000 per month, and we can manage much, much more.
 ---
 
 ###  At a Glance 

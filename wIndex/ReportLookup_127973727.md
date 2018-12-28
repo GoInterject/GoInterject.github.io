@@ -1,6 +1,8 @@
 ---
 title: ReportLookup()
 layout: custom
+keywords: [reportlookup, function]
+description: Allows the report creator to insert a specific data value into a cell based on certain criteria. 
 ---
 
 

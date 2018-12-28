@@ -6,7 +6,7 @@ layout: custom
 
 ##  **Overview**
 
-In this example, you will learn to create a third report, Customer Aging Detail, that will be drilled to from the Customer Aging Report. This report shows a customer's outstanding balance by individual invoice. The Aging Detail is a more complex report than shown in the earlier lab [ Lab 12.2 Dev: Customer Orders ](/wGetStarted/324403205.html) , because it leverages two report formulas to create a report with subtotals. You should have already seen the Customer Aging Detail report while reviewing the business use case in the [ **Customer Aging in Real-World Walkthroughs** ](/wAbout/Customer-Aging_128091294.html) . 
+In this example, you will learn to create a third report, Customer Aging Detail, that will be drilled to from the Customer Aging Report. This report shows a customer's outstanding balance by individual invoice. The Aging Detail is a more complex report than shown in the earlier lab [ Lab 12.2 Dev: Customer Orders ](wGetStarted/L-Dev-CustomerOrders_324403205.html) , because it leverages two report formulas to create a report with subtotals. You should have already seen the Customer Aging Detail report while reviewing the business use case in the [ **Customer Aging in Real-World Walkthroughs** ](/wAbout/Customer-Aging_128091294.html) . 
 
 You can go directly to any topic of this walk-through by clicking one of the links below. 
 
@@ -31,7 +31,7 @@ You can go directly to any topic of this walk-through by clicking one of the lin
 
 ###  Verifying the Data Connection 
 
-Because this report uses the same database as [ Dev: Customer Aging Detail ](/wGetStarted/324567045.html) , you do not need to create another data connection. The same connection can be used for this report. The connection created in the previous example was named **NorthwindExampleDB_MyName** and your own data connection likely had your name in the suffix. 
+Because this report uses the same database as [ Dev: Customer Aging Detail ](wGetStarted/L-Dev-CustomerAgingDetail_324435969.html) , you do not need to create another data connection. The same connection can be used for this report. The connection created in the previous example was named **NorthwindExampleDB_MyName** and your own data connection likely had your name in the suffix. 
 
 ###  Copying and Modifying the Data Portals 
 
