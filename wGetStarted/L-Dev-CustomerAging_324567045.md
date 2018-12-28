@@ -333,7 +333,7 @@ Back to Top
 
 At this point you have a tested stored procedure that uses parameters to filter the results. An INTERJECT Data Connection is setup to go to your example database and you added an INTERJECT Data Portal to use that connection and is mapped to the stored procedure that was just created. You are ready to build the spreadsheet report. 
 
-Fortunately, the documentation to build this report has already been presented in  **[ Create: Customer Aging ](/wGetStarted/128429314.html) ** and you likely have already completed it. The end result should look like the below screenshot. 
+Fortunately, the documentation to build this report has already been presented in  **[ Create: Customer Aging ](wGetStarted/L-Create-CustomerAging_128429314.html) ** and you likely have already completed it. The end result should look like the below screenshot. 
 
 ![](attachments/324567045/327844019.png)
 
@@ -341,4 +341,3 @@ It is recommended to go to **Create: Customer Aging** to complete those steps ag
 
 When going through the report creation steps, be sure to use your new Data Portal Code instead of the one used in the training. Please continue to the next lab after your new report is built. 
 
-Back to Top 

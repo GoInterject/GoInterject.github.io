@@ -84,7 +84,7 @@ The report should look similar to the screenshot below. Now, put the filter valu
 
 ###  Getting Started 
 
-**Step 1:** Next, use the **[ Pull Data ](wGetStarted\INTERJECT-Ribbon-Menu-Items_83689479.html) ** menu item. 
+**Step 1:** Next, use the **[ Pull Data ](wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html) ** menu item. 
 
 ** ![](attachments/128429314/129014075.png) **
 
@@ -199,7 +199,7 @@ In the FeezePanesCell argument, input A21 to mark that row as the top of the vis
   
 
 
-Use the **[ Quick Tools ](wGetStarted\INTERJECT-Ribbon-Menu-Items_83689479.html) ** menu item in the INTERJECT Ribbon so you can easily freeze the panes using the jFreezePanes formula you just configured. 
+Use the **[ Quick Tools ](wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html) ** menu item in the INTERJECT Ribbon so you can easily freeze the panes using the jFreezePanes formula you just configured. 
 
 ![](attachments/128429314/129043495.png)
 
@@ -220,7 +220,7 @@ Use the **[ Quick Tools ](wGetStarted\INTERJECT-Ribbon-Menu-Items_83689479.html)
   
 
 
-[ Click here ](wAbout\Report-Library-Basics_61702517.html) to learn how to upload the new report to the Report Library. 
+[ Click here ](wAbout/Report-Library-Basics_61702517.html) to learn how to upload the new report to the Report Library. 
 
   
 
@@ -229,7 +229,7 @@ Use the **[ Quick Tools ](wGetStarted\INTERJECT-Ribbon-Menu-Items_83689479.html)
 
 [ Customer Aging ](/wAbout/Customer-Aging_128091294.html)
 
-[ L1.1 Modify: Customer Aging ](wGetStarted\L-Modify-CustomerAging_128428927.html)
+[ L1.1 Modify: Customer Aging ](wGetStarted/L-Modify-CustomerAging_128428927.html)
 
 [ L10 Updating the Report Library ](/wGetStarted/L10-Updating-the-Report-Library_62849583.html)
 

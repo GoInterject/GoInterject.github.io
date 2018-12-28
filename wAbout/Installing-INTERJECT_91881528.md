@@ -7,7 +7,7 @@ layout: custom
 There are 2 options when installing INTERJECT: 
 
   * **Installation Option 1:** Installing from the Portal Management Website using a ClickOnce installer for Windows™. This option is intended for single users to log into our portal to install INTERJECT. This option is quick, easy, and requires the fewest steps. 
-    * **Installation Option 2:** Installing via an Enterprise level MSI installer. This option is for large user bases that have standard configurations. This option is installed with a session controller who distributes the product to all necessary computers. While more technical, user set-up is still simple. 
+  * **Installation Option 2:** Installing via an Enterprise level MSI installer. This option is for large user bases that have standard configurations. This option is installed with a session controller who distributes the product to all necessary computers. While more technical, user set-up is still simple. 
 
 ###  Option 1: From Portal Management Website 
 

@@ -53,7 +53,7 @@ Conditional formatting can not only be difficult to manage because the formulas 
 
 ###  Limiting the Ranges used in Interject Report Formulas 
 
-In most reports, selecting the entire row for Column Definitions in [ ReportRange() ](wIndex\ReportRange_61702199.html) is fast and easy. However, when using larger, more complex reports, it is better only to include the columns needed for the report. 
+In most reports, selecting the entire row for Column Definitions in [ ReportRange() ](wIndex/ReportRange_61702199.html) is fast and easy. However, when using larger, more complex reports, it is better only to include the columns needed for the report. 
 
 In the below example, ReportRange() selects column definitions and a target range that selects the entire row. 
 

@@ -24,7 +24,7 @@ Reporting needs change often. Account details, specific formatting, even spreads
 
 ###  [ Creating a Simple Report ](/wGetStarted/Creating-a-Simple-Report_128408585.html)
 
-This section details how to create reports from scratch. Here, you will walk through making a [ Customer Aging ](wGetStarted\L-Create-CustomerAging_128429314.html) and [ Customer Orders ](wGetStarted\L-Create-CustomerOrders_128421638.html) report from the ground up. The focus is on using simple single range tabular reports. 
+This section details how to create reports from scratch. Here, you will walk through making a [ Customer Aging ](wGetStarted/L-Create-CustomerAging_128429314.html) and [ Customer Orders ](wGetStarted/L-Create-CustomerOrders_128421638.html) report from the ground up. The focus is on using simple single range tabular reports. 
 
   
 

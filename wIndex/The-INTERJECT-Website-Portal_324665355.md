@@ -1,6 +1,8 @@
 ---
 title: Interject Documentation > The INTERJECT Website Portal
 layout: custom
+keywords: [website portal, account]
+description: The INTERJECT website portal is a central place to manage INTERJECT client settings and user profiles.
 ---
 * * *
 
@@ -34,7 +36,7 @@ The following lists are examples of connection strings for SQL Server:
 
 
 
-See  [ https://www.connectionstrings.com/  ](https://www.connectionstrings.com/) for additional information on connection strings. 
+See  [ https://www.connectionstrings.com/ ](https://www.connectionstrings.com/) for additional information on connection strings. 
 
 ###  [ User Profile ](/wPortal/User-Profile_324763687.html)
 

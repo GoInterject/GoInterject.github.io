@@ -1,9 +1,9 @@
 ---
 title: Interject Documentation > jMergePoint()
 layout: custom
+keywords: [jmergepoint, function]
+description: jMergePoint acts as a reference point for ReportMerge.
 ---
-##  **  
-**
 
 ##  Function Summary 
 
@@ -162,48 +162,16 @@ Explanation
 
 </td>  
 <td>
+= jMergePoint ("Trend" ,"before" , jTabName(First!E14)) 
 
-
-
-=  jMergePoint 
-
-("Trend" 
-
-,"before" 
-
-,jTabName(First!E14)) 
-
-  
-
-
-=jMergePoint 
-
-("*" 
-
-,"before" 
-
-,jTabName()) 
-
-  
-
-
+=jMergePoint ("*" ,"before" , jTabName()) 
 
 </td>  
 <td>
 
-
-
-  
-
-
-Move the **Trend** tab from the other Excel file to be in front of the tab named " **First".**
+Move the <b>Trend</b> tab from the other Excel file to be in front of the tab named "<b>First</b>".
 
   
-
-
-  
-
-
 Move all of the tabs to be in front of the current tab (the one with this formula in it) 
 
 
