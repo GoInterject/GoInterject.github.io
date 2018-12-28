@@ -47,7 +47,7 @@ about:
     path: /wAbout/SingleUser.html
   - title: Installing - Shared Computer
     path: /wAbout/SharedComputer.html
-- sectiontitle: Uninstalling INTERJECT
+- title: Uninstalling INTERJECT
   path: /wAbout/Uninstalling.html
 - sectiontitle: Using INTERJECT
   path: /wAbout/Using-INTERJECT_61702183.html
