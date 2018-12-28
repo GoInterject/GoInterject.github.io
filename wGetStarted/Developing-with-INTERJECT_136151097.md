@@ -1,5 +1,5 @@
 ---
-title: Interject Documentation > Developing with INTERJECT
+title: Developing with INTERJECT
 layout: custom
 ---
 * * *
