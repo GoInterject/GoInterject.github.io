@@ -41,11 +41,17 @@ about:
     path: /wAbout/Why-CIOs-Like-INTERJECT_61702419.html
   - title: What You Need to Know
     path: /wAbout/What-You-Need-to-Know_61702914.html
+- sectiontitle: Installing INTERJECT
+  section:
+  - title: Installing - Single User
+    path: /wAbout/SingleUser.html
+  - title: Installing - Shared Computer
+    path: /wAbout/SharedComputer.html
+- sectiontitle: Uninstalling INTERJECT
+  path: /wAbout/Uninstalling.html
 - sectiontitle: Using INTERJECT
   path: /wAbout/Using-INTERJECT_61702183.html
   section:
-  - title: Installing INTERJECT
-    path: /wAbout/Installing-INTERJECT_91881528.html
   - title: Logging In
     path: /wAbout/Logging-In_63275074.html
   - title: Adding a User
