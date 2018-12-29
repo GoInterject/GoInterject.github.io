@@ -17,14 +17,14 @@ INTERJECT aims to make the installation process as simple and painless as possib
 
 **Step 3:** Once logged in, go to the download page. 
 
-![](images/SingleUser/02.jpg)
+![](/images/SingleUser/02.jpg)
 
   
 
 
 **Step 4:** Click the **Installer** button to begin. 
 
-![](images/SingleUser/03.jpg)
+![](/images/SingleUser/03.jpg)
 
   
 
@@ -33,63 +33,63 @@ INTERJECT aims to make the installation process as simple and painless as possib
 
 **Google Chrome** : 
 
-![](images/SingleUser/04.jpg)
+![](/images/SingleUser/04.jpg)
 
   
 
 
 **Mozilla Firefox** : 
 
-![](images/SingleUser/06.jpg)
+![](/images/SingleUser/06.jpg)
 
   
 
 
 **Microsoft** **Edge** : 
 
-![](images/SingleUser/07.jpg)
+![](/images/SingleUser/07.jpg)
 
   
 
 
 **Microsoft Internet Explorer** : 
 
-![](images/SingleUser/08.jpg)
+![](/images/SingleUser/08.jpg)
 
   
 
 
 **Step 7:** Running the file will launch the INTERJECT Excel Add-In Setup Wizard, which will guide you through the Install Process. Select **Next.**
 
-![](images/SingleUser/09.jpg)
+![](/images/SingleUser/09.jpg)
 
   
 
 
 **Step 8:** Read and accept the **End-User License Agreement,** then select **Next.**
 
-![](images/SingleUser/10.jpg)
+![](/images/SingleUser/10.jpg)
 
   
 
 
 **Step 9:** Choose the **Destination Folder** for your installation, then select **Next** . 
 
-![](images/SingleUser/11.jpg)
+![](/images/SingleUser/11.jpg)
 
   
 
 
 **Step 10:** Click **Install** . 
 
-![](images/SingleUser/12.jpg)
+![](/images/SingleUser/12.jpg)
 
   
 
 
 **Step 11:** Once the installation is finished, the installer will tell you if it is complete 
 
-![](images/SingleUser/13.jpg)
+![](/images/SingleUser/13.jpg)
 
   
 
