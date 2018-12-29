@@ -1,8 +1,10 @@
 ---
 title: Interject | Uninstalling
 layout: custom
+keywords: [Unistall, Remove, Delete]
+Description: How to uninstall INTERJECT
 ---
-* * *
+
 
 ##  **Overview:**
 
