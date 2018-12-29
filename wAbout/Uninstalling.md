@@ -14,28 +14,28 @@ INTERJECT aims to make uninstalling a simple and straight forward process. This 
 
 **Step 2:** Press the **Windows Key** and type **Control** . Then select **Control Panel** . (This may look different for older versions of Windows, but the steps are the same.) 
 
-![](https://interject.atlassian.net/wiki/download/attachments/411271304/37.jpg?version=1&modificationDate=1540861625667&cacheVersion=1&api=v2)
+![](images/Uninstalling/37.jpg)
 
   
 
 
 **Step 3:** Under **Programs,** Select **Uninstall a program**
 
-![](https://interject.atlassian.net/wiki/download/attachments/411271304/38.jpg?version=1&modificationDate=1540861625952&cacheVersion=1&api=v2)
+![](images/Uninstalling/38.jpg)
 
   
 
 
 **Step 4:** Find the **INTERJECT Excel Add-In** and select it. 
 
-![](https://interject.atlassian.net/wiki/download/attachments/411271304/39.jpg?version=1&modificationDate=1540861626216&cacheVersion=1&api=v2)
+![](images/Uninstalling/39.jpg)
 
   
 
 
 **Step 5:** While the **INTERJECT Excel Add-In** is selected, click **Uninstall** at the top of the control panel page, then follow the **Uninstall Wizard** . 
 
-![](https://interject.atlassian.net/wiki/download/attachments/411271304/40.jpg?version=1&modificationDate=1540861626417&cacheVersion=1&api=v2)
+![](images/Uninstalling/40.jpg)
 
   
 
