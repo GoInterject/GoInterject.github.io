@@ -1,8 +1,9 @@
 ---
 title: Interject | Installing - Shared Computer
 layout: custom
+keywords: [Multiple Users, Server]
+description: This is the multi-user to one computer installation of INTERJECT.
 ---
-* * *
 
 ##  **Overview:**
 
@@ -10,81 +11,81 @@ The Per-Computer installation installs INTERJECT for multiple users on one compu
 
 ###  Installing INTERJECT on Multi-User Systems 
 
-** Step 1:  ** Log in to the **INTERJECT website portal** here: [ https://portal.gointerject.com ](https://portal.gointerject.com/login.html) . If you do not have an account go [ here. ](https://portal.gointerject.com/invite.html?mode=create)
+**Step 1:** Log in to the **INTERJECT website portal** here: [ https://portal.gointerject.com ](https://portal.gointerject.com/login.html) . If you do not have an account go [ here. ](https://portal.gointerject.com/invite.html?mode=create)
 
-**Step 2: ** Once logged in, go to the **download page.**
+**Step 2:** Once logged in, go to the **download page.**
 
-![](https://interject.atlassian.net/wiki/download/attachments/411533373/15.jpg?version=1&modificationDate=1540860878284&cacheVersion=1&api=v2)
+![](/images/SharedComputer/15.jpg)
 
   
 
 
-**Step 3:** Select **View other installers >> **
+**Step 3:** Select **View other installers >>**
 
-![](https://interject.atlassian.net/wiki/download/attachments/411533373/16.jpg?version=1&modificationDate=1540860878563&cacheVersion=1&api=v2)
+![](/images/SharedComputer/16.jpg)
 
   
 
 
 **Step 4:** Click the **Zip File for IT Admins Multiple-Users Windows Server** option. 
 
-![](https://interject.atlassian.net/wiki/download/attachments/411533373/17.jpg?version=1&modificationDate=1540860878878&cacheVersion=1&api=v2)
+![](/images/SharedComputer/17.jpg)
 
   
 
 
 **Step 5:** When the download is complete, **extract** the **zip file** . 
 
-![](https://interject.atlassian.net/wiki/download/attachments/411533373/22.jpg?version=1&modificationDate=1540860879072&cacheVersion=1&api=v2)
+![](/images/SharedComputer/22.jpg)
 
   
 
 
 **Step 6:** Determine your **Destination Folder** . 
 
-![](https://interject.atlassian.net/wiki/download/attachments/411533373/24.jpg?version=1&modificationDate=1540860879257&cacheVersion=1&api=v2)
+![](/images/SharedComputer/24.jpg)
 
   
 
 
 **Step 7:** Confirm your **Destination Folder** . 
 
-![](https://interject.atlassian.net/wiki/download/attachments/411533373/25.jpg?version=1&modificationDate=1540860879508&cacheVersion=1&api=v2)
+![](/images/SharedComputer/25.jpg)
 
   
 
 
 **Step 8:** Navigate back to your **Extracted Zip Folder** and run the **Setup.exe** file. 
 
-![](https://interject.atlassian.net/wiki/download/attachments/411533373/32.jpg?version=1&modificationDate=1540860879705&cacheVersion=1&api=v2)
+![](/images/SharedComputer/32.jpg)
 
   
 
 
 **Step 9:** This will launch the **INTERJECT Excel Add-In Setup Wizard** . Select **Next** . 
 
-![](https://interject.atlassian.net/wiki/download/attachments/411533373/33.jpg?version=1&modificationDate=1540860879896&cacheVersion=1&api=v2)
+![](/images/SharedComputer/33.jpg)
 
   
 
 
 **Step 10:** Read and accept the **End-User License Agreement** and select **Next** . 
 
-![](https://interject.atlassian.net/wiki/download/attachments/411533373/34.jpg?version=1&modificationDate=1540860880072&cacheVersion=1&api=v2)
+![](/images/SharedComputer/34.jpg)
 
   
 
 
 **Step 11:** Start the **Installation** . 
 
-![](https://interject.atlassian.net/wiki/download/attachments/411533373/35.jpg?version=1&modificationDate=1540860880397&cacheVersion=1&api=v2)
+![](/images/SharedComputer/35.jpg)
 
   
 
 
 **Step 12:** The setup wizard will tell you when the installation is complete. Select **Finish**
 
-![](https://interject.atlassian.net/wiki/download/attachments/411533373/36.jpg?version=1&modificationDate=1540860880573&cacheVersion=1&api=v2)
+![](/images/SharedComputer/36.jpg)
 
   
 
