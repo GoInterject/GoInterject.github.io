@@ -134,6 +134,8 @@ getstarted:
       path: /wGetStarted/L-Create-SpecColDefs.html
     - title: "Lab Create: Protecting Sheets"
       path: /wGetStarted/L-Create-Protecting.html
+    - title: "Lab Create: Using Report Macro"
+      path: /wGetStarted/L-Create-ReportMacro.html
     - title: "Lab Create: Using the Retain Feature"
       path: /wGetStarted/L-Create-RetainFeature.html
     - title: "Lab Create: Updating the Report Library"
