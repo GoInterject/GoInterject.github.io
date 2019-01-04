@@ -118,14 +118,14 @@ getstarted:
     - sectiontitle: Drilling Between Reports
       path: /wGetStarted/Drilling-Between-Reports_61702193.html
       section:
-      - title: L4.1 Drill> Customer Aging
+      - title: "Lab Drill: Customer Aging"
         path: /wGetStarted/L-Drill-CustomerAging_128421015.html
-      - title: L4.2 Drill> Inventory Report
+      - title: "L4.2 Drill: Inventory Report"
         path: /wGetStarted/L-Drill-InventoryReport_128409138.html
-      - title: L4.3 Drill> Financial Report
+      - title: "Lab Drill: Financial Report"
         path: /wGetStarted/L-Drill-FinancialReport_128409219.html
-      - title: L4.4 The Three Ways to Drill
-        path: /wGetStarted/L4.4-The-Three-Ways-to-Drill_128510906.html
+      - title: "Lab Drill: The Three Ways to Drill"
+        path: /wGetStarted/L-Drill-TheThreeWays.html
     - title: L5 Hiding Rows & Columns
       path: /wGetStarted/L5-HidingRowsColumns_137363494.html
     - title: L6 Working with Pivot Tables
