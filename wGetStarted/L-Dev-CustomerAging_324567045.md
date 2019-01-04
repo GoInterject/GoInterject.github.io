@@ -1,10 +1,10 @@
 ---
-title: Interject Documentation > L12.1 Dev> Customer Aging
+title: "Lab Dev: Customer Aging"
 layout: custom
+keywords: [developer, example, walkthrough, customer aging, SQL, dataportal, data connection]
+description: On this page, you will create a simple data pull using the Customer Aging Report. It will guide you on how to build connections and data portals as well as cover the SQL stored procedure used to pull the data.
 ---
 * * *
-
-##  ** **
 
 ##  **Overview**
 
@@ -12,114 +12,108 @@ On this page, you will create a simple data pull using the Customer Aging Report
 
 Go directly to any topic of this walk-through by clicking one of the links below: 
 
-  * ** Setting up the Data Connection  **
-  * ** Setting up the Data Portal  **
-  * ** Setting up the Formula Parameters  **
-  * ** Setting up the System Parameters  **
-  * ** Creating the Stored Procedure  **
-  * ** Creating the Report  **
-
-
-
-### 
+  * [**Setting up the Data Connection**](http://127.0.0.1:4000/wGetStarted/L-Dev-CustomerAging_324567045.html#setting-up-the-data-connection)
+  * [**Setting up the Data Portal**](http://127.0.0.1:4000/wGetStarted/L-Dev-CustomerAging_324567045.html#setting-up-the-data-portal)
+  * [**Setting up the Formula Parameters**](http://127.0.0.1:4000/wGetStarted/L-Dev-CustomerAging_324567045.html#setting-up-formula-parameters)
+  * [**Setting up the System Parameters**](http://127.0.0.1:4000/wGetStarted/L-Dev-CustomerAging_324567045.html#system-parameters)
+  * [**Creating the Stored Procedure**](http://127.0.0.1:4000/wGetStarted/L-Dev-CustomerAging_324567045.html#creating-the-stored-procedure)
+  * [**Creating the Report**](http://127.0.0.1:4000/wGetStarted/L-Dev-CustomerAging_324567045.html#create-the-report)
 
 ###  Setting Up The Data Connection 
 
 **Step 1:** Navigate to [ https://portal.gointerject.com ](https://portal.gointerject.com) and log in. Set up a data connection by clicking the **Data Connections** icon. 
 
-![](attachments/324567045/327909418.jpg)
-
+![](/images/L-Dev-CustAging/01.jpg)
+<br>
   
 
 
 **Step 2:** On the Data Connections page, click the **New Connection** button. 
 
-![](attachments/324567045/327909423.jpg)
-
-  
+![](/images/L-Dev-CustAging/02.jpg)
+<br>
 
 
 **Step 3:** In the Connection Type field, verify that **Database** is selected. 
 
-![](attachments/324567045/327843971.jpg)
-
+![](/images/L-Dev-CustAging/03.jpg)
+<br>
   
 
 
 **Step 4:** The Connection Details page needs to contain the following information for the new connection. Type **NorthwindExampleDB_MyName** in Connection Name, but include your own name in the suffix. Each connection name must be unique. For the connection string, type **Server=myServerAddress;Database=myDataBase;Trusted_Connection=True;** . You are using Windows authentication, so username and password are not required. Replace the server name and database name to match your own that you are using for this walk-through. 
 
-![](attachments/324567045/327876691.jpg)
-
+![](/images/L-Dev-CustAging/04.jpg)
+<br>
   
 
 
 **Step 5:** In the Description field include details about what the data connection will be used for. 
 
-![](attachments/324567045/328007797.jpg)
-
+![](/images/L-Dev-CustAging/05.jpg)
+<br>
   
 
 
 **Step 6:** Click the Save button to create the new data connection. 
 
-![](attachments/324567045/327811109.jpg)
+![](/images/L-Dev-CustAging/06.jpg)
+<br>
 
 The Database Data Connection is now ready to be used in a Data Portal. You should always test a new connection with your security context. Follow the steps in [ Data Connections ](/wPortal/Data-Connections_324403237.html) to test your connection string. 
-
-### 
 
 ###  Setting Up The Data Portal 
 
 **Step 1:** To add a new data portal, return to  [ https://portal.gointerject.com  ](https://portal.gointerject.com) and select Data Portals from the sidebar menu. 
 
-![](attachments/324567045/328007792.jpg?width=720)
-
+![](/images/L-Dev-CustAging/07.jpg)
+<br>
   
 
 
 **Step** **2:** Select New Data Portal 
 
-![](attachments/324567045/328106031.jpg)
-
+![](/images/L-Dev-CustAging/08.jpg)
+<br>
   
 
 
 **Step 3:** Type **NorthwindCustomers_MyName** for the Data Portal Code. Since this field must be unique, add your name to the suffix. Select the connection that was made in the previous step, **NorthwindExampleDB_MyName** . Also enter a name for the stored procedure **[demo].[Northwind_Customers_Pull_MyName]** , which will be created later. 
 
-![](attachments/324567045/328270171.png)
-
+![](/images/L-Dev-CustAging/09.png)
+<br>
   
 
 
 **Step 4** : Click **Create Data Portal** to save the new data portal. Additional options display after selecting the Create Data Portal button for adding parameters. 
 
-![](attachments/324567045/328598107.png)
+![](/images/L-Dev-CustAging/10.png)
+<br>
 
 **Note:** If this is your first time setting up a data portal, review **Data Portals** , which describes the data portal parameters in more detail, including the difference between formula and system parameters. Return to the next step to continue. 
 
 Back to Top 
 
-### 
-
 ###  Setting Up Formula Parameters 
 
 **Step 1:** To add your first formula parameter, click **Click here to add a Formula Parameter** . For this parameter, enter **CompanyName** for Name, **varchar** for Type, and **input** for Direction to input, as shown below. 
 
-![](attachments/324567045/328007802.jpg)
-
+![](/images/L-Dev-CustAging/11.jpg)
+<br>
   
 
 
 **Step 2:** Click the **More** button. 
 
-![](attachments/324567045/327811099.jpg)
-
+![](/images/L-Dev-CustAging/12.jpg)
+<br>
   
 
 
 **Step 3:** As shown in the screenshot below, enter **Market** for Helper Default and **Search is a wildcard that contains search** for Comments.  Click the Save icon. 
 
-![](attachments/324567045/327843961.jpg)
+![](/images/L-Dev-CustAging/13.jpg)
+<br>
 
 **Note:** When you set up a formula parameter, the Save icon is red until you save your changes. After your changes are saved, the Save icon turns green. 
 
@@ -128,46 +122,45 @@ Back to Top
 
 **Step 5:** Click the  **Click here to add a Formula Parameter** to add the second parameter. Enter **ContactName** for Name, **varchar** for Type, and **input** for Direction. 
 
-![](attachments/324567045/327811104.jpg)
-
+![](/images/L-Dev-CustAging/14.jpg)
+<br>
   
 
 
 **Step 6:** Click the **More** button 
 
-![](attachments/324567045/327942188.jpg)
-
+![](/images/L-Dev-CustAging/15.jpg)
+<br>
   
 
 
 Enter **Contact Name** for Helper Name and **Search is a wildcard that contains search** for Comments. Click the Save icon. 
 
-![](attachments/324567045/328138883.jpg)
-
+![](/images/L-Dev-CustAging/16.jpg)
+<br>
   
 
 
 **Step 7:** To add the final Formula Parameter click  **Click here to add a Formula Parameter** . Enter **CustomerID** for Name, **varchar** for Type, and **input** for Direction. 
 
-![](attachments/324567045/328171537.jpg)
-
+![](/images/L-Dev-CustAging/17.jpg)
+<br>
   
 
 
 **Step 8:** Click the **More** button 
 
-![](attachments/324567045/327876686.jpg)
-
+![](/images/L-Dev-CustAging/18.jpg)
+<br>
   
 
 
 Enter **Customer ID** for Helper Name and **The customer ID is an exact search that will be used by the drill** for Comments. Click the Save icon. 
 
-![](attachments/324567045/328138888.jpg)
+![](/images/L-Dev-CustAging/19.jpg)
+<br>
 
 Back to Top 
-
-### 
 
 ###  System Parameters 
 
@@ -177,18 +170,18 @@ In this example, you will use the system parameter, **Interject_NTLogin** , whic
 
 **Step 1:** To add a new system parameter, click **Click here to add a System Parameter** button. Choose **Interject_NTLogin** for the name of the first parameter. Click **Save** . 
 
-![](attachments/324567045/327811114.jpg)
-
+![](/images/L-Dev-CustAging/20.jpg)
+<br>
   
 
 
 **Step 2:** Add a second system parameter by clicking **Add a System Parameter** button. Choose **Interject_LocalTimeZoneOffset** for the name and click Save. 
 
-![](attachments/324567045/327843966.jpg)
+![](/images/L-Dev-CustAging/21.jpg)
+<br>
 
 Back to Top 
 
-### 
 
 ###  Creating the Stored Procedure 
 
@@ -200,9 +193,9 @@ The below steps assume you are proficient with SQL Management Studio for Microso
 
 **Step 1:** Create a stored procedure called [demo].[Northwind_Customers_Pull_MyName] using the following code example. 
 
-**Customer Aging** Expand source 
+**Customer Aging** 
     
-    
+```SQL   
     CREATE PROC [demo].[Northwind_Customers_Pull_MyName]
     
     	 @CompanyName					VARCHAR(100)
@@ -284,8 +277,7 @@ The below steps assume you are proficient with SQL Management Studio for Microso
     ORDER BY c.[CompanyName] 
      
     END
-
-  
+```
 
 
 **Step 2:** Stored procedure are natively supported by INTERJECT. There are a few key areas to note in the code example that help illustrate INTERJECT features. 
@@ -294,48 +286,49 @@ The below steps assume you are proficient with SQL Management Studio for Microso
 
 
 
-![](attachments/324567045/328400910.png)
+![](/images/L-Dev-CustAging/21.png)
+<br>
 
   * Validation: The example code includes an example of validating the input from Formula Parameter **@CustomerName** . It limits the search text to 40 characters and will raise an error if the length is beyond. The custom error shown has a prefix **UserNotice:** which tells INTERJECT to provide a message box with the text to the user as a response. Without the prefix, INTERJECT will interpret the error as a generic error. 
 
 
 
-![](attachments/324567045/328532005.png)
+![](/images/L-Dev-CustAging/22.png)
+<br>
 
   * Select statements: Returning data to INTERJECT simply uses a select statement as shown below. More than one can be returned at a time to reduce the connections needed to fully populate a complex report. You only have one select statement in this example. 
 
 
 
-![](attachments/324567045/328138934.png)
+![](/images/L-Dev-CustAging/23.png)
+<br>
 
 **Step 3:** It is important to test the stored procedure in the database before testing through the INTERJECT platform. The example code included a test SQL statement that can be executed in a new query as shown below. Be sure to change the procedure name to match your own. 
-
-**Customer Aging Test Script** Expand source 
-    
-    
+ 
+```SQL   
     Execute demo.[Northwind_Customers_Pull_MyName]
     	@CompanyName = 'market'
     	,@ContactName = ''
     	,@CustomerID = ''
     	,@Interject_NTLogin = 'MaryM'
     	,@Interject_LocalTimeZoneOffset = -7
-    
+```
 
 When executed you should see the following result set. 
 
-![](attachments/324567045/328171553.png)
+![](/images/L-Dev-CustAging/24.png)
+<br>
 
-Back to Top 
-
-### 
+Back to Top
 
 ###  Create The Report 
 
 At this point you have a tested stored procedure that uses parameters to filter the results. An INTERJECT Data Connection is setup to go to your example database and you added an INTERJECT Data Portal to use that connection and is mapped to the stored procedure that was just created. You are ready to build the spreadsheet report. 
 
-Fortunately, the documentation to build this report has already been presented in  **[ Create: Customer Aging ](wGetStarted/L-Create-CustomerAging_128429314.html) ** and you likely have already completed it. The end result should look like the below screenshot. 
+Fortunately, the documentation to build this report has already been presented in [ **Create: Customer Aging** ](wGetStarted/L-Create-CustomerAging_128429314.html) and you likely have already completed it. The end result should look like the below screenshot. 
 
-![](attachments/324567045/327844019.png)
+![](/images/L-Dev-CustAging/25.png)
+<br>
 
 It is recommended to go to **Create: Customer Aging** to complete those steps again to reinforce the process. However, this time you can use your own Data Portal for the report. 
 
