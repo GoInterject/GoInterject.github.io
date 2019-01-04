@@ -1,8 +1,9 @@
 ---
-title: Interject Documentation > Excel Best and Worst Practices
+title: Excel Best and Worst Practices
 layout: custom
+keywords: [ slow, excel, best practice, issue, cpu, usage, vba]
+description: Defines the best practices of using Excel with INTERJECT. 
 ---
-* * *
 
 ##  **Overview**
 
@@ -18,28 +19,28 @@ Excel is a terrific and flexible tool, and to make the best use of it in your da
 
 Example:  In the screenshot below, you have a list of 20,000 records. You can filter the data, but there is an easier way. 
 
-![](attachments/324567041/326467650.jpg)
+![](/images/ExcelBestPractices/ExcelBestAndWorstThinkOfExcel1.jpg)
 
   
 
 
 The user can filter the data like in the screenshot below, but there could be an easier way. 
 
-![](attachments/324567041/326565994.jpg)
+![](/images/ExcelBestPractices/ExcelBestAndWorstThinkOfExcel2.jpg))
 
   
 
 
 The next screenshot shows an alternative, a drill action to a summary report, created by an INTERJECT developer to give users easier access to viewing the details of the 20,000 records. 
 
-![](attachments/324567041/326303792.jpg)
+![](/images/ExcelBestPractices/ExcelBestAndWorstThinkOfExcel3.jpg))
 
   
 
 
 This screenshot shows the summary report, which is a simpler way to find the data meanwhile having a more complex presentation. 
 
-![](attachments/324567041/326402214.jpg)
+![](/images/ExcelBestPractices/ExcelBestAndWorstThinkOfExcel4.jpg))
 
 ###  Record Counts 
 
@@ -57,18 +58,18 @@ In most reports, selecting the entire row for Column Definitions in [ ReportRang
 
 In the below example, ReportRange() selects column definitions and a target range that selects the entire row. 
 
-![](attachments/324567041/326533182.jpg?width=720)
+![](/images/ExcelBestPractices/ExceBestAndWorstPractices1.jpg))
 
 The next example shows the same report, but only the impacted columns are included in the column definitions and target range. This is more efficient. However, keep in mind the argument for [ ReportRange() ](/wIndex/ReportRange_61702199.html) , UseEntireRow is set to False. By setting to True, it converts the ranges to entire rows. 
 
-![](attachments/324567041/326533187.jpg?width=720)
+![](/images/ExcelBestPractices/ExceBestAndWorstPractices2.jpg))
 
   
 
 
 Here you will use the scroll bar in the function wizard to alter the UseEntireRow parameter. 
 
-![](attachments/324567041/326369340.jpg?width=720)
+![](/images/ExcelBestPractices/ExcelBestAndWorstLimitingRange2Redo.jpg)
 
 ###  Watch for the Last Row and Last Column 
 
