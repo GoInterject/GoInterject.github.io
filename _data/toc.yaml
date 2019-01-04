@@ -124,7 +124,7 @@ getstarted:
         path: /wGetStarted/L-Drill-InventoryReport_128409138.html
       - title: "Lab Drill: Financial Report"
         path: /wGetStarted/L-Drill-FinancialReport_128409219.html
-      - title: "Lab Drill: The Three Ways to Drill"
+      - title: "The Three Ways to Drill"
         path: /wGetStarted/L-Drill-TheThreeWays.html
     - title: L5 Hiding Rows & Columns
       path: /wGetStarted/L5-HidingRowsColumns_137363494.html
