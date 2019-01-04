@@ -126,27 +126,27 @@ getstarted:
         path: /wGetStarted/L-Drill-FinancialReport_128409219.html
       - title: "The Three Ways to Drill"
         path: /wGetStarted/L-Drill-TheThreeWays.html
-    - title: L5 Hiding Rows & Columns
-      path: /wGetStarted/L5-HidingRowsColumns_137363494.html
-    - title: L6 Working with Pivot Tables
-      path: /wGetStarted/L6-Working-with-Pivot-Tables_128202725.html
-    - title: L7 Special Column Definitions
-      path: /wGetStarted/L7-Special-Column-Definitions_335183945.html
-    - title: L8 Protecting Sheets
-      path: /wGetStarted/L8-Protecting-Sheets_335151182.html
-    - title: L9 Using the Retain Feature
-      path: /wGetStarted/L9-Using-the-Retain-Feature_361332831.html
-    - title: L10 Updating the Report Library
-      path: /wGetStarted/L10-Updating-the-Report-Library_62849583.html
+    - title: "Lab Create: Hiding Rows & Columns"
+      path: /wGetStarted/L-Create-HideRowCol.html
+    - title: "Lab Create: Working with Pivot Tables"
+      path: /wGetStarted/L-Create-PivotTable.html
+    - title: "Lab Create: Special Column Definitions"
+      path: /wGetStarted/L-Create-SpecColDefs.html
+    - title: "Lab Create: Protecting Sheets"
+      path: /wGetStarted/L-Create-Protecting.html
+    - title: "Lab Create: Using the Retain Feature"
+      path: /wGetStarted/L-Create-RetainFeature.html
+    - title: "Lab Create: Updating the Report Library"
+      path: /wGetStarted/L-Create-UpdatingReportLibrary.html
     - sectiontitle: Exporting Reports
       path: /wGetStarted/Exporting-Reports_93618178.html
       section:
-      - title: L11.1 Quick Export and PDF
-        path: /wGetStarted/L11.1-Quick-Export-and-PDF_128718475.html
-      - title: L11.2 Basic Distribution
-        path: /wGetStarted/L11.2-Basic-Distribution_128719024.html
-      - title: L11.3 Advanced Distribution
-        path: /wGetStarted/L11.3-Advanced-Distribution_128719191.html
+      - title: "L11.1 Quick Export and PDF"
+        path: /wGetStarted/L-Export-QuickExportAndPDF.html
+      - title: "L11.2 Basic Distribution"
+        path: /wGetStarted/L-Export-BasicDist.html
+      - title: "L11.3 Advanced Distribution"
+        path: /wGetStarted/L-Export-AdvancedDist.html
   - title: Excel Best and Worst Practices
     path: /wGetStarted/Excel-Best-and-Worst-Practices_324567041.html
   - sectiontitle: Developing with INTERJECT
