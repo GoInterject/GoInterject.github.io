@@ -20,6 +20,9 @@ horizontalnav:
 - title: Portal Site 
   path: /wPortal/Altering-User-Passwords_323452989
   node: portal
+- title: Support
+  path: /wTroubleshoot/Troubleshooting-Landing.html
+  node: troubleshoot
 
 design:
 - sectiontitle: Designing Reports
@@ -120,7 +123,7 @@ getstarted:
       section:
       - title: "Lab Drill: Customer Aging"
         path: /wGetStarted/L-Drill-CustomerAging_128421015.html
-      - title: "L4.2 Drill: Inventory Report"
+      - title: "Lab Drill: Inventory Report"
         path: /wGetStarted/L-Drill-InventoryReport_128409138.html
       - title: "Lab Drill: Financial Report"
         path: /wGetStarted/L-Drill-FinancialReport_128409219.html
@@ -143,11 +146,11 @@ getstarted:
     - sectiontitle: Exporting Reports
       path: /wGetStarted/Exporting-Reports_93618178.html
       section:
-      - title: "L11.1 Quick Export and PDF"
+      - title: "Lab Export: Quick Export and PDF"
         path: /wGetStarted/L-Export-QuickExportAndPDF.html
-      - title: "L11.2 Basic Distribution"
+      - title: "Lab Export: Basic Distribution"
         path: /wGetStarted/L-Export-BasicDist.html
-      - title: "L11.3 Advanced Distribution"
+      - title: "Lab Export: Advanced Distribution"
         path: /wGetStarted/L-Export-AdvancedDist.html
   - title: Excel Best and Worst Practices
     path: /wGetStarted/Excel-Best-and-Worst-Practices_324567041.html
@@ -161,32 +164,24 @@ getstarted:
     - sectiontitle: Simple Data Pull
       path: /wGetStarted/Simple-Data-Pull_139526259.html
       section:
-      - title: L12.1 Dev> Customer Aging
+      - title: "Lab Dev: Customer Aging"
         path: /wGetStarted/L-Dev-CustomerAging_324567045.html
-      - title: L12.2 Dev> Customer Orders
+      - title: "Lab Dev: Customer Orders"
         path: /wGetStarted/L-Dev-CustomerOrders_324403205.html
     - sectiontitle: Advanced Data Pull
       path: /wGetStarted/Advanced-Data-Pull_327516216.html
       section:
-      - title: L13.1 Dev> Customer Aging Detail
+      - title: "Lab Dev: Customer Aging Detail"
         path: /wGetStarted/L-Dev-CustomerAgingDetail_324435969.html
     - sectiontitle: Simple Data Save
       path: /wGetStarted/Simple-Data-Save_139231307.html
       section:
-      - title: L14.1 Dev> Customer Credit Save
+      - title: "Lab Dev: Customer Credit Save"
         path: /wGetStarted/L-Dev-CustomerCreditSave_324665351.html
     - title: Security Best Practices
       path: /wGetStarted/Security-Best-Practices_324403209.html
     - title: Managing Settings Cache
       path: /wGetStarted/Managing-Settings-Cache_324632601.html
-    - title: Common Troubleshooting
-      path: /wGetStarted/Common-Troubleshooting_324567049.html
-    - title: Troubleshooting App Errors
-      path: /wGetStarted/Troubleshooting-App-Errors_359530497.html
-    - title: Troubleshooting Installations
-      path: /wGetStarted/Troubleshooting-Installations_359661603.html
-    - title: Troubleshooting Reports
-      path: /wGetStarted/Troubleshooting-Reports_359563279.html
   - title: INTERJECT Ribbon Menu Items
     path: /wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html
 
@@ -288,9 +283,9 @@ portal:
     - sectiontitle: Data Connections
       path: /wPortal/Data-Connections_324403237.html
       section:
-      - title: Lab 15.1 API Connections
+      - title: "Lab Portal: API Connections"
         path: /wPortal/Lab-15.1-API-Connections_324665359.html
-      - title: Lab 15.2 Database Connection
+      - title: "Lab Portal: Database Connection"
         path: /wPortal/Lab-15.2-Database-Connection_136249415.html
     - title: Data Portals
       path: /wPortal/Data-Portals_324665363.html
@@ -316,3 +311,14 @@ Developer:
       section:
         - title: Python Api Custom Functions
           path: /wApi/python-api-custom-functions.html
+
+troubleshoot:
+- sectiontitle: Troubleshooting
+  path: /wTroubleshoot/Troubleshooting-Landing.html
+  section:
+    - title: App Errors
+      path: /wTroubleshoot/App-Errors.html
+    - title: Report Errors
+      path: /wTroubleshoot/Reports.html
+    - title: Excel Animations
+      path: /wTroubleshoot/Drill-Animations.html
