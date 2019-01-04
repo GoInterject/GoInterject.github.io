@@ -2,7 +2,6 @@
 title: Developing with INTERJECT
 layout: custom
 ---
-* * *
 
 ##  **Overview**
 

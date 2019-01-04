@@ -1,8 +1,9 @@
 ---
-title: Interject Documentation > Fixed and Variable Reports
+title: Fixed and Variable Reports
 layout: custom
+keywords: [ variable, fixed, report, tutorial, example, walk-through ]
+description: How to use fixed and variable data functions.
 ---
-* * *
 
 ##  **Overview**
 
