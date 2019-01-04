@@ -1,201 +1,168 @@
 ---
-title: Interject | Lab Using Report Macro
+title: "Lab Create: Using Report Macro"
 layout: custom
+keywords: [report, macro, vba, hooks, sub, routine, function]
+description:  Report Macro is useful for specialized reports where a customized action needs to be taken. This action can be built into a VBA Macro based on the complex needs of the report.
 ---
 * * *
 
 ##  **Overview:**
 
-Report Macro is an excel formula provided by INTERJECT. It allows IINTERJECT to interact with publicly defined VBA functions on a report.  Report Macro is useful for specialized reports where a customized action needs to be taken. This action can be built into a VBA Macro based on the complex needs of the report. Then, ReportMacro() is used to execute the custom action at the right point within the reporting process. To visit any specific topics in this page please follow the links below. 
-
-  * ####  Using Report Macro 
-
-  * ####  Requirements for VBA use with Report Macro 
-
-  * ####  Interject VBA hooks 
-
-
-
+Report Macro is an excel formula provided by INTERJECT. It allows IINTERJECT to interact with publicly defined VBA functions on a report.  Report Macro is useful for specialized reports where a customized action needs to be taken. This action can be built into a VBA Macro based on the complex needs of the report. Then, ReportMacro() is used to execute the custom action at the right point within the reporting process.
 
 ###  Using Report Macro 
 
-The report macro formula acts in conjunction with another INTERJECT report formula such as a [ ReportRange() ](/KB/ExcelFunctions/ReportRange.html) . It is useful when a workbook requiring VBA macros must be used. ReportMacro() is an ordered formula, which means that INTERJECT will perform executions on all report formulas placed above or to the left of the ReportMacro() formula before it is executed. 
+The report macro formula acts in conjunction with another INTERJECT report formula such as a [ ReportRange() ](/KB/ExcelFunctions/ReportRange.html). It is useful when a workbook requiring VBA macros must be used. ReportMacro() is an ordered formula, which means that INTERJECT will perform executions on all report formulas placed above or to the left of the ReportMacro() formula before it is executed. 
 
 **Step 1:** Open the Customer Aging Report. (If this report is unfamiliar, click [ here ](/KB/HowToUse/Walkthroughs/CustomerAging.html) for a business use case review on the Customer Aging Report.) This time, we want to make sure a value is set to 200 every time the report is pulled. 
 
-![](https://interject.atlassian.net/wiki/download/attachments/369950723/01.jpg?version=1&modificationDate=1533674388286&cacheVersion=1&api=v2)
+![](/images/L-Create-RepMacro/01.jpg)
 
-  
+<br> 
 
 
 **Step 2:** To begin, **unfreeze** the panes. 
 
-![](https://interject.atlassian.net/wiki/download/attachments/369950723/02.jpg?version=1&modificationDate=1533674388982&cacheVersion=1&api=v2)
+![](/images/L-Create-RepMacro/02.jpg)
 
-  
+<br> 
 
 
-**Step 3:** If you see the **Developer Ribbon** , skip this step and the next one. However, if you do not see the **Developer Ribbon** select **File**
+**Step 3:** If you see the **Developer Ribbon**, skip this step and the next one. However, if you do not see the **Developer Ribbon** select **File**
 
-![](https://interject.atlassian.net/wiki/download/attachments/369950723/03.jpg?version=1&modificationDate=1533674389594&cacheVersion=1&api=v2)
+![](/images/L-Create-RepMacro/03.jpg)
 
-  
+<br> 
 
 
 **Step 4:** Now, select **Options.**
 
-![](https://interject.atlassian.net/wiki/download/attachments/369950723/04.jpg?version=1&modificationDate=1533674390334&cacheVersion=1&api=v2)
+![](/images/L-Create-RepMacro/04.jpg)
 
-  
-
-
-**Step 5:** Select the **Customize Ribbon** tab in the **Main Tabs** section, select the check box next to **Developer** , then select **OK** . 
-
-![](https://interject.atlassian.net/wiki/download/attachments/369950723/05.jpg?version=1&modificationDate=1533674391195&cacheVersion=1&api=v2)
-
-  
+<br> 
 
 
-**Step 6:** Select the **Developer Ribbon** . 
+**Step 5:** Select the **Customize Ribbon** tab in the **Main Tabs** section, select the check box next to **Developer**, then select **OK**. 
 
-![](https://interject.atlassian.net/wiki/download/attachments/369950723/06.jpg?version=1&modificationDate=1533674391999&cacheVersion=1&api=v2)
+![](/images/L-Create-RepMacro/05.jpg)
 
-  
-
-
-**Step 7:** Select **Visual Basic** . 
-
-![](https://interject.atlassian.net/wiki/download/attachments/369950723/07.jpg?version=1&modificationDate=1533674392684&cacheVersion=1&api=v2)
-
-  
+<br> 
 
 
-**Step 8:** To create a new module, right click in the **Projects** window, place your cursor over **Insert** , and select **Module** . 
+**Step 6:** Select the **Developer Ribbon**. 
 
-![](https://interject.atlassian.net/wiki/download/attachments/369950723/08.jpg?version=1&modificationDate=1533674393335&cacheVersion=1&api=v2)
+![](/images/L-Create-RepMacro/06.jpg)
 
-  
+<br> 
+
+
+**Step 7:** Select **Visual Basic**. 
+
+![](/images/L-Create-RepMacro/07.jpg)
+
+<br> 
+
+
+**Step 8:** To create a new module, right click in the **Projects** window, place your cursor over **Insert**, and select **Module**. 
+
+![](/images/L-Create-RepMacro/08.jpg)
+
+<br> 
 
 
 The example code is provided here. 
 
-**Template Procedure** Expand source 
+```VB
 
-expand source  ?   
-  
-<table>  
-<tr>  
-<td>
+Public Function MyCustomFunction()
 
+  Call Place_Value(ActiveSheet.Range("L31"))
 
+End Function  
 
-` Public ` ` Function ` ` MyCustomFunction() `
+ ' Clears the value in the cell then sets it to equal 200 
 
-` ` ` Call ` ` Place_Value(ActiveSheet.Range( ` ` "L31" ` ` )) `
+ Sub Place_Value(sTarget As Range)
 
-` `
+  sTarget.ClearContents 
 
-` End ` ` Function `
+    sTarget = 200 
 
-` ' Clears the value in the cell then sets it to equal 200 `
+End Sub
 
-` Sub ` ` Place_Value(sTarget ` ` As ` ` Range) `
-
-` `
-
-` ` ` sTarget.ClearContents `
-
-` ` ` sTarget = 200 `
-
-` End ` ` Sub `
-
-
-</td> </tr> </table>
+```
 
   
 
 
-**Step 9:** Insert your code into the editing window, then select **Debug** , then compile VBAProject and exit out of the VBA window. 
+**Step 9:** Insert your code into the editing window, then select **Debug**, then compile VBAProject and exit out of the VBA window. 
 
-![](https://interject.atlassian.net/wiki/download/attachments/369950723/09.jpg?version=1&modificationDate=1533674394043&cacheVersion=1&api=v2)
+![](/images/L-Create-RepMacro/09.jpg)
 
-  
+<br> 
 
 
 **Step 10:** In cell D8, Insert the label **Macro 1:** and align it to the right. 
 
-![](https://interject.atlassian.net/wiki/download/attachments/369950723/10.jpg?version=1&modificationDate=1533674394712&cacheVersion=1&api=v2)
+![](/images/L-Create-RepMacro/10.jpg)
 
-  
-
-
-**Step 11:** In cell E8 insert **=ReportMacro()** and select **fx** . 
-
-![](https://interject.atlassian.net/wiki/download/attachments/369950723/11.jpg?version=1&modificationDate=1533674395724&cacheVersion=1&api=v2)
-
-  
+<br> 
 
 
-**Step 12:** In the parameter OnpullSaveOrBoth, input **Pull** . In the parameter OnClearRunOrBoth, input **Both** . 
+**Step 11:** In cell E8 insert **=ReportMacro()** and select **fx**. 
 
-![](https://interject.atlassian.net/wiki/download/attachments/369950723/12.jpg?version=1&modificationDate=1533674396303&cacheVersion=1&api=v2)
+![](/images/L-Create-RepMacro/11.jpg)
 
-  
+<br> 
 
 
-**Step 13:** For the MacroNameToRun parameter, input the exact name of the public function that you created. In this case, you will use **MyCustomFunction** . 
+**Step 12:** In the parameter OnpullSaveOrBoth, input **Pull**. In the parameter OnClearRunOrBoth, input **Both**. 
 
-![](https://interject.atlassian.net/wiki/download/attachments/369950723/13.jpg?version=1&modificationDate=1533674397133&cacheVersion=1&api=v2)
+![](/images/L-Create-RepMacro/12.jpg)
 
-  
+<br> 
+
+
+**Step 13:** For the MacroNameToRun parameter, input the exact name of the public function that you created. In this case, you will use **MyCustomFunction**. 
+
+![](/images/L-Create-RepMacro/13.jpg)
+
+<br> 
 
 
 **Step 14:** Pull the data. You will notice that the report macro was ordered after the report range action. This is due to INTERJECT formula event ordering. 
 
-![](https://interject.atlassian.net/wiki/download/attachments/369950723/14.jpg?version=1&modificationDate=1533674398085&cacheVersion=1&api=v2)
+![](/images/L-Create-RepMacro/14.jpg)
+
+<br>
 
 ###  Requirements for VBA 
 
 ReportMacro() requires a public function without any parameters, as it is the initial interaction point with INTERJECT. Inside of that initial function, any function can be run, including calls to subroutines and other functions, but the initializing macro must be a public function. 
 
-![](https://interject.atlassian.net/wiki/download/attachments/369950723/15.jpg?version=1&modificationDate=1533674398682&cacheVersion=1&api=v2)
+![](/images/L-Create-RepMacro/15.jpg)
 
-  
+<br> 
 
 
 ReportMacro() also requires the VBA macro to be in written in shared module, and it will not work with a Workbook or Sheet module. 
 
-![](https://interject.atlassian.net/wiki/download/attachments/369950723/16.jpg?version=1&modificationDate=1533674399335&cacheVersion=1&api=v2)
+![](/images/L-Create-RepMacro/16.jpg)
 
-  
+<br> 
 
 
 INTERJECT will error out the report macro formula upon completion of the INTERJECT event associated with the macro formula, however the INTERJECT event will complete. 
 
-![](https://interject.atlassian.net/wiki/download/attachments/369950723/17.jpg?version=1&modificationDate=1533674401051&cacheVersion=1&api=v2)
+![](/images/L-Create-RepMacro/17.jpg)
+
+<br>
 
 ###  Enabling VBA Hooks 
 
 Due to heavy load on user sessions, four of the six VBA hooks that INTERJECT uses will be deprecated. This feature should only be enabled when a VBA macro is required for custom actions in specialized reports.   
   
-<table>  
-<tr>  
-<th>
-
-
-
-VBA Hooks To Be Deprecated 
-
-
-</th>  
-<th>
-
-
-
-When Used 
-
-
-</th> </tr>  
+<table>   
 <tr>  
 <th>
 
@@ -254,24 +221,7 @@ Interject_ClearSaveComplete
 Upon completion of an INTERJECT clear event on the save form 
 </td> </tr> </table>  
   
-<table>  
-<tr>  
-<th>
-
-
-
-VBA Hooks To Be Supported 
-
-
-</th>  
-<th>
-
-
-
-When Used 
-
-
-</th> </tr>  
+<table>    
 <tr>  
 <th>
 
@@ -319,29 +269,18 @@ When a workbook is opened from the report library.
   
 Enabling INTERJECT VBA hooks is currently done by including a VBA Module with a public subroutine (not function) that matches the name hook above without any parameters. If the subroutine is found, it will be fired at the appropriate time, based on the type of VBA hook used. Using a VBA hook does not require a ReportMacro() formula in order to function, because the VBA hook is sent by INTERJECT upon the completion of certain events. 
 
-**Template Procedure** Expand source 
+```VB
 
-expand source  ?   
-  
-<table>  
-<tr>  
-<td>
+' Simple Example of using a VBA hook
 
+Public Sub Interject_PullComplete()
 
+  If ActiveSheet.Range("L31") > 199 Then
 
-` ' Simple Example of using a VBA hook `
+    ActiveSheet.Range("L31") = 150
 
-` Public ` ` Sub ` ` Interject_PullComplete() `
+  End If 
 
-` `
+End Sub 
 
-` ` ` If ` ` ActiveSheet.Range( ` ` "L31" ` ` ) > 199 ` ` Then `
-
-` ` ` ActiveSheet.Range( ` ` "L31" ` ` ) = 150 `
-
-` ` ` End ` ` If `
-
-` End ` ` Sub `
-
-
-</td> </tr> </table>
+```
