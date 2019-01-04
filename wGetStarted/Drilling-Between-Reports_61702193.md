@@ -1,8 +1,7 @@
 ---
-title: Interject Documentation > Drilling Between Reports
+title: Drilling Between Reports
 layout: custom
 ---
-* * *
 
 ##  **Overview**
 
