@@ -91,30 +91,30 @@ getstarted:
     - sectiontitle: Modifying an Existing Report
       path: /wGetStarted/Modifying-an-Existing-Report_62849215.html
       section:
-      - title: L1.1 Modify> Customer Aging
+      - title: "Lab Modify: Customer Aging"
         path: /wGetStarted/L-Modify-CustomerAging_128428927.html
-      - title: L1.2 Modify> Inventory Report
+      - title: "Lab Modify: Inventory Report"
         path: /wGetStarted/L-Modify-InventoryReport_128429185.html
-      - title: L1.3 Modify> Financial Report
-        path: /wGetStarted/L-FinancialReport_128429053.html
+      - title: "Lab Modify: Financial Report"
+        path: /wGetStarted/L-Modify-FinancialReport_128429053.html
     - sectiontitle: Creating a Simple Report
       path: /wGetStarted/Creating-a-Simple-Report_128408585.html
       section:
-      - title: L2.1 Create> Customer Aging
+      - title: "Lab Create: Customer Aging"
         path: /wGetStarted/L-Create-CustomerAging_128429314.html
-      - title: L2.2 Create> Customer Orders
+      - title: "Lab Create: Customer Orders"
         path: /wGetStarted/L-Create-CustomerOrders_128421638.html
     - sectiontitle: Fixed and Variable Reports
       path: /wGetStarted/Fixed-and-Variable-Reports_61702195.html
       section:
-      - title: L3.1 Inventory Fixed
-        path: /wGetStarted/L3.1-Inventory-Fixed_128429456.html
-      - title: L3.2 Inventory Variable Report
-        path: /wGetStarted/L3.2-Inventory-Variable-Report_127872532.html
-      - title: L3.3 Financial Variable
-        path: /wGetStarted/L3.3-Financial-Variable_128421724.html
-      - title: L3.4 Customer Aging Detail
-        path: /wGetStarted/L3.4-Customer-Aging-Detail_128429387.html
+      - title: "Lab Create: Inventory Fixed"
+        path: /wGetStarted/L-Create-InventoryFixed.html
+      - title: "Lab Create: Inventory Variable Report"
+        path: /wGetStarted/L-Create-InventoryVariable.html
+      - title: "Lab Create: Financial Variable"
+        path: /wGetStarted/L-Create-FinancialVariable.html
+      - title: "Lab Create: Customer Aging Detail"
+        path: /wGetStarted/L-Create-CustomerAgingDetail.html
     - sectiontitle: Drilling Between Reports
       path: /wGetStarted/Drilling-Between-Reports_61702193.html
       section:
