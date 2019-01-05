@@ -1,7 +1,10 @@
 ---
 title: INTERJECT Roles
 layout: custom
+keywords: [roles, user profile]
+description: At the bottom of the User Profile page are the roles you currently have assigned to your profile. 
 ---
+
 ##  Overview 
 ---
 At the bottom of the User Profile page are the roles you currently have assigned to your profile. There are a number of roles to choose from. Once changed, the user will need to log in again to the INTERJECT Excel Add-in for the changes to take effect. 

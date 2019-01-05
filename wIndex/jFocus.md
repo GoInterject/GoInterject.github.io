@@ -1,6 +1,8 @@
 ---
 title: jFocus()
 layout: custom
+keywords: [jfocus, function]
+description: The jFocus() formatting function is executed in conjunction with a freeze/unfreeze panes action performed in the Quick Tools menu. 
 ---
 
 ## Function Summary

@@ -1,6 +1,8 @@
 ---
 title: PairGroup()
 layout: custom
+keywords: [pairgroup, function]
+description: Provides an easy method to string multiple Pair() functions together in a single string argument with each Pair() delimited by a comma.
 ---
 ##  Function Summary 
 

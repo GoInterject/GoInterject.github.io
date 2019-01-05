@@ -1,6 +1,8 @@
 ---
 title: Working with INTERJECT
 layout: custom
+keywords: [overview, report formulas, tabular cells, data cells]
+description: Since INTERJECT introduces new methods and standards for working with spreadsheets, it is helpful to understand some key concepts so you can realize its potential.
 ---
 
 ##  **Overview**
@@ -14,6 +16,3 @@ Report Formulas are used to direct data in and out of your spreadsheet reports a
 ###  [ Tabular vs Data Cells ](https://interject.atlassian.net/wiki/display/ID/Data+Lists+vs+Data+Cells)
 
 There are two distinct approaches to reporting data with INTERJECT. Most of the functionality that is presented in this knowledge base is directed at Tabular reports. Tabular reports are a common row/column approach to working with data, much like those seen in other reporting software like Microsoft Report Services and Crystal Reports. Data Cells, however, are single data points that you can place freely in reports to construct more complex presentations. Each Data Cell is a financial query to the INTERJECT financial database, which you can easily control and is capable of accommodating companies with thousands of users. 
-
-  
-

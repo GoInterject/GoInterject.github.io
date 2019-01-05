@@ -1,6 +1,8 @@
 ---
-title: Interject Documentation > INTERJECT Website Portal
+title: INTERJECT Website Portal
 layout: custom
+keywords: [ dataportal, portal, connection, data connection, server, api]
+description: [The INTERJECT website portal is a central place to manage INTERJECT client settings and user profiles. For an INTERJECT developer, the most used areas of the INTERJECT website portal are managing connections and data portals. ]
 ---
 * * *
 

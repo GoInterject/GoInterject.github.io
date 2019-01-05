@@ -88,7 +88,7 @@ Is XML that includes a UserContext node as illustrated below
   
 
 
-**UserContext XML example:**
+```XML
 
 <UserContext>
 
@@ -115,6 +115,7 @@ Is XML that includes a UserContext node as illustrated below
 </UserRoles>
 
 </UserContext>
+```
 
 When the above system parameters are used, it is important for the middle tier object to be configured to receive it. Stored procedures must have the additional parameters added or INTERJECT will show an error to the user when pulling the report. Using an API as a middle tier will not likely create an error when additional parameters are added. Since you control the code for an API, you would need to add additional code in the API before the additional parameters would be utilized. 
 

@@ -1,6 +1,8 @@
 ---
 title: Real-World Walkthroughs
 layout: custom
+keywords: [use case]
+description: Real world use cases for the INTERJECT product.
 ---
 ##  **Overview**
 ---

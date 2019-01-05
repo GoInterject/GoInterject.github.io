@@ -1,7 +1,10 @@
 ---
 title: Interject Documentation > ReportCalc()
 layout: custom
+keywords: [reportcalc, function]
+description: ReportCalc executes a calculation on a worksheet or workbook. 
 ---
+
 ##  Function Summary 
 
 ReportCalc executes a calculation on a worksheet or workbook. It will calculate any excel function, which includes INTERJECT functions, as long as they are within its target scope. ReportCalc can be triggered on specific events such as a Pull, Save, Clear, and Run. 
@@ -28,12 +31,7 @@ Optional
 </th> </tr>  
 <tr>  
 <td>
-
-
-
 OnPullSaveOrBoth 
-
-
 </td>  
 <td>
 
@@ -158,9 +156,3 @@ OnPullSaveOrBoth
 ,Disabled 
 
 ) 
-
-  
-
-
-  
-

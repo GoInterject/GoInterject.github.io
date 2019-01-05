@@ -1,6 +1,8 @@
 ---
 title: Data Connections
 layout: custom
+keywords: [data connections, data portals]
+description: A Connection is used with Data Portals so INTERJECT can connect to certain stored procedures within a database or to a custom website API. 
 ---
 
 ##  **Overview**

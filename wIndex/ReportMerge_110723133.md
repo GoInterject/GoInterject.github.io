@@ -1,9 +1,11 @@
 ---
 title: Interject Documentation > ReportMerge()
 layout: custom
+keywords: [reportmerge, function]
+description: Allows the user to merge multiple Excel reports into one based on jMergePoints. 
 ---
-##  Function Summary 
 
+##  Function Summary 
 Allows the user to merge multiple Excel reports into one based on [ jMergePoints ](/wIndex/110723143.html) . For examples and discussion, view the tutorial. 
 
 ###  Function Arguments   

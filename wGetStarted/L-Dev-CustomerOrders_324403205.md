@@ -1,53 +1,39 @@
 ---
-title: Interject Documentation > L12.2 Dev> Customer Orders
+title: "Lab Developer: Customer Orders"
 layout: custom
+keywords: [developer, example, customer orders, walkthrough, SQL]
+description: In this example, you will how to create a second report, Customer Orders, that will be drilled to from the Customer Aging Report you built in the last lab. This uses a report range.
 ---
 * * *
-
-##  ** **
 
 ##  **Overview**
 
 In this example, you will how to create a second report, Customer Orders, that will be drilled to from the Customer Aging Report you built in the last lab. You should have already seen the Customer Orders report while reviewing the business use case in the lab. Continue to build the INTERJECT configuration and database objects to support the report. 
 
-Go directly to any topic of this walk-through by clicking one of the links below. 
-
-  * ** Verifying the Data Connection  **
-  * ** Copy the Data Portal  **
-  * ** Creating the Stored Procedure  **
-  * ** Creating the Report  **
-
-
-
-### 
-
 ###  Verifying the Data Connection 
 
 Because this report uses the same database as the previous example, you do not need to create another data connection. The same connection can be used for this report. The connection created in the example text was named **NorthwindExampleDB_MyName** and  you should use the same naming conventions for your connection  . 
-
-### 
 
 ###  Copy the Data Portal 
 
 **Step 1:** Navigate to the data portal, **NorthwindCustomers_MyName** , and click the green clone button on the top right corner of the page. 
 
-![](attachments/324403205/328335967.png)
-
+![](/images/L-DevCustOrders/01.png)
+<br>
   
 
 
 **Step 2:** A new data portal named, **NorthwindCustomers_MyName_copy** , generates. Change this data portal name to **NorthwindOrders_MyName** . Since each Data Portal must have a unique code, please use your name instead of **_MyName** . Then click Save Changes 
 
-![](attachments/324403205/328466929.png)
-
+![](/images/L-DevCustOrders/02.png)
+<br>
   
 
 
-**Step 3:** Change the procedure name to run **[Demo].[Northwind_CustomerOrders_Pull_MyName]** , which you will create next. Then click **Save Changes** . 
+**Step 3:** Change the procedure name to run **[Demo].[Northwind_CustomerOrders_Pull_MyName]** , which you will create next. Then click **Save Changes**. 
 
-![](attachments/324403205/328138962.jpg)
-
-### 
+![](/images/L-DevCustOrders/03.jpg)
+<br>
 
 ###  Creating the Stored Procedure 
 
@@ -59,9 +45,8 @@ The steps below assume you are proficient with SQL Management Studio for Microso
 
 **Step 1:** Create a stored procedure called [demo].[Northwind_CustomerOrders_Pull_MyName] using the following code: 
 
-**Customer Orders** Expand source 
-    
-    
+```SQL
+
     CREATE PROC [demo].[Northwind_CustomerOrders_Pull_MyName]
     
     	 @CompanyName						VARCHAR(100)
@@ -128,44 +113,46 @@ The steps below assume you are proficient with SQL Management Studio for Microso
     
     END
 
+```
+
 **Step 2:** INTERJECT supports stored procedures natively. Here are a few key areas to note in the code above that help illustrate INTERJECT features. 
 
   * Parameters: The parameters included in the stored procedure are the same parameters added to the data portal in a previous step. For each request, INTERJECT passes the formula parameter values from the spreadsheet configuration, along with system parameters, to the stored procedure. Output parameters are supported and can populate values in the spreadsheet, but they are not included in this example. 
 
 
 
-![](attachments/324403205/328564763.png)
+![](/images/L-DevCustOrders/04.png)
+<br>
 
   * Validation: The code above includes an example of validating the input from the formula parameter, **@CustomerName** . It limits the search text to 40 characters and displays an error when the length is exceeded. This error has a prefix, **UserNotice:** which tells INTERJECT to provide a message box with the text to the user as a response. Without the prefix, INTERJECT interprets the error as a generic error. 
 
 
 
-![](attachments/324403205/328597548.png)
+![](/images/L-DevCustOrders/05.png)
+<br>
 
   * Select statements: Returning data to INTERJECT simply uses a select statement as shown below. More than one select statement can be returned at a time to reduce the connections needed to fully populate a complex report. You only have one select statement in this example. 
 
 
 
-![](attachments/324403205/328597553.png)
+![](/images/L-DevCustOrders/06.png)
+<br>
 
 **Step 3:** It is important to test the stored procedure in the database before testing through the INTERJECT platform. The code below is an example that includes a test SQL statement. 
 
-**Customer Orders Test Code** Expand source 
-    
-    
+```SQL
     Execute demo.[Northwind_CustomerOrders_Pull_MyName]
     	@CompanyName = 'market'
     	,@ContactName = ''
     	,@CustomerID = ''
     	,@Interject_NTLogin = 'MaryM'
     	,@Interject_LocalTimeZoneOffset = -7
-
-  
-
+```
 
 When this code is executed, it returns the following result set. 
 
-![](attachments/324403205/328335379.png)
+![](/images/L-DevCustOrders/07.png)
+<br>
 
 Back to Top 
 
@@ -175,11 +162,11 @@ At this point you have a tested stored procedure that uses parameters to filter 
 
 Fortunately, the documentation to build this report has already been presented in **Create: Customer Orders** and you likely have already completed it. The end result should look like the below screenshot. 
 
-![](attachments/324403205/328597528.png)
-
+![](/images/L-DevCustOrders/08.png)
+<br>
   
 
 
-It is recommended to go to **Create: Customer Orders** to complete those steps again to reinforce the process. However, this time you can use your own Data Portal for the report. 
+It is recommended to go to [Lab Create: Customer Orders](/wGetStarted/L-Create-CustomerOrders_128421638.html) to complete those steps again to reinforce the process. However, this time you can use your own Data Portal for the report. 
 
 Back to Top 

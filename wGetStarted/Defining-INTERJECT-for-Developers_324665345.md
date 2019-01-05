@@ -1,8 +1,9 @@
 ---
-title: Interject Documentation > Defining INTERJECT for Developers
+title: Defining INTERJECT for Developers
 layout: custom
+keywords: [developer, platform, how it works]
+description: Before you get into the details and hands-on examples for developers, it is important to explain how the INTERJECT platform works.
 ---
-* * *
 
 ##  **Overview**
 
@@ -25,7 +26,7 @@ The simplified diagram below illustrates the flow of data through the INTERJECT 
 
 When INTERJECT makes the connection between the user session and the middle-tier service, their authentication context is passed through so you can handle security and row-level views as needed. 
 
-![](attachments/324665345/328368494.png)
+![](/images/Defined/Interject Stuff.png)
 
 The illustration above shows the cloud model of the INTERJECT platform, but there are hybrid models that allow for full on-premise dependency. 
 

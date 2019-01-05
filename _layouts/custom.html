@@ -65,8 +65,6 @@
 	  }}();
 	</script>
 	-->
-	{% if site.GH_ENV == "gh_pages" %}
-	<meta name="robots" content="noindex">{% endif %}
 	<!-- favicon -->
 	<link rel="icon" type="image/x-icon" href="/favicons/docs@2x.ico" sizes="129x128">
 	<meta name="msapplication-TileImage" content="/favicons/docs@2x.ico">
@@ -74,17 +72,22 @@
 	<meta property="og:image" content="/favicons/docs@2x.ico"/>
 	<!-- metadata -->
 	
-
+	
     <link rel="stylesheet" href="/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/css/bootstrap.min.css">
 	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css">
 	<link id="pagestyle" rel="stylesheet" href="/css/style.css">
 
+	<!-- font awesome icons  -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<!-- Go get "Open Sans" font from Google -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	
+
+	{% if site.GH_ENV == "gh_pages" %}
+	<meta name="robots" content="noindex">
+	{% endif %}
 	{% if page.hide_from_sitemap %}<meta name="robots" content="noindex" />{% endif %}
-	
     {% seo %}
 </head>	
 
@@ -243,7 +246,7 @@
                                         {% endif %}
 										<li><a href="https://github.com/gointerject/gointerject.github.io/issues/new?body=File: [{{ page.path }}](https://docs.gointerject.com{{ page.url }})"
 															class="nomunge"><i class="fa fa-check" aria-hidden="true"></i> Request docs changes</a></li>
-										<li><a href="http://www.gointerject.com/call-us/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<li><a href="http://www.gointerject.com/call-us/"><i class="fa fa-question" aria-hidden="true"></i> Get help</a></li>
 										<!-- toggle mode -->
 										<!-- Turn night mode on and off
 										<li>
