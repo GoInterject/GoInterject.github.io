@@ -1,37 +1,18 @@
 ---
-title: Interject Documentation > L13.1 Dev> Customer Aging Detail
+title: "L13.1 Dev: Customer Aging Detail"
 layout: custom
+keywords: [Customer Aging Detail, example, walkthrough, SQL, dataportal, server connection]
+description: In this example, you will learn to create a third report, Customer Aging Detail, that will be drilled to from the Customer Aging Report. This report shows a customer's outstanding balance by individual invoice.
 ---
 * * *
 
 ##  **Overview**
 
-In this example, you will learn to create a third report, Customer Aging Detail, that will be drilled to from the Customer Aging Report. This report shows a customer's outstanding balance by individual invoice. The Aging Detail is a more complex report than shown in the earlier lab [ Lab 12.2 Dev: Customer Orders ](/wGetStarted/324403205.html) , because it leverages two report formulas to create a report with subtotals. You should have already seen the Customer Aging Detail report while reviewing the business use case in the [ **Customer Aging in Real-World Walkthroughs** ](/wAbout/Customer-Aging_128091294.html) . 
-
-You can go directly to any topic of this walk-through by clicking one of the links below. 
-
-  * ####  Verifying the Data Connection 
-
-  * ####  Copying and Modifying the Data Portal 
-
-  * ####  Creating the Stored Procedure 
-
-  * ####  Creating the Report 
-
-  * ####  Creating a New Data Portal for 2 Recordsets 
-
-  * ####  Updating the Stored Procedure for 2 Recordsets 
-
-  * ####  Updating the Report for 2 Recordsets 
-
-
-
-
-### 
+In this example, you will learn to create a third report, Customer Aging Detail, that will be drilled to from the Customer Aging Report. This report shows a customer's outstanding balance by individual invoice. The Aging Detail is a more complex report than shown in the earlier lab [ Lab Developer: Customer Orders ](wGetStarted/L-Dev-CustomerOrders_324403205.html) , because it leverages two report formulas to create a report with subtotals. You should have already seen the Customer Aging Detail report while reviewing the business use case in the [ **Customer Aging in Real-World Walkthroughs** ](/wAbout/Customer-Aging_128091294.html) . 
 
 ###  Verifying the Data Connection 
 
-Because this report uses the same database as [ Dev: Customer Aging Detail ](/wGetStarted/324567045.html) , you do not need to create another data connection. The same connection can be used for this report. The connection created in the previous example was named **NorthwindExampleDB_MyName** and your own data connection likely had your name in the suffix. 
+Because this report uses the same database as [ Lab Developer: Customer Aging Detail ](wGetStarted/L-Dev-CustomerAgingDetail_324435969.html) , you do not need to create another data connection. The same connection can be used for this report. The connection created in the previous example was named **NorthwindExampleDB_MyName** and your own data connection likely had your name in the suffix. 
 
 ###  Copying and Modifying the Data Portals 
 
@@ -39,54 +20,51 @@ For this report you are going to use two data portals. The first will be the sam
 
 **Step 1:** Navigate to the data portal, **NorthwindCustomers_MyName** , and click the green clone button on the top right of the page. 
 
-![](attachments/324435969/328303186.png)
-
+![](/images/L-Dev-CustAgingDetail/01.png)
+<br>
   
 
 
 **Step 2:** A new data portal named, **NorthwindCustomers_MyName_copy** , generates. Change this data portal name to **NorthwindCustomerInvoices_MyName** . Since each Data Portal Code must be unique, you should add your name to the suffix. 
 
-![](attachments/324435969/328269910.jpg)
-
+![](/images/L-Dev-CustAgingDetail/02.jpg)
+<br>
   
 
 
 **Step 3:** Change the procedure name to run **[demo].[Northwind_Invoices_Pull_MyName]** , which you will create shortly. As in the last step, replace **_MyName** with your own name. 
 
-![](attachments/324435969/328433982.jpg)
-
+![](/images/L-Dev-CustAgingDetail/03.jpg)
+<br>
   
 
 
 **Step 4:** You will use the existing Formula Parameters but for this example you need to add more more. Select **Click here to add a Formula Parameter** . Enter **IncludePaid** for Name, **varchar** for Type, and **input** for direction. Click the **More** button. 
 
-![](attachments/324435969/328401105.jpg)
-
+![](/images/L-Dev-CustAgingDetail/04.jpg)
+<br>
   
 
 
 Enter **Include Paid** for Helper Name and enter **Include Invoices that have already been paid for by the customer** for Comments. Click the Save icon. 
 
-![](attachments/324435969/328532161.jpg)
-
+![](/images/L-Dev-CustAgingDetail/05.jpg)
+<br>
   
 
 
 **Step 5:** Click the trash can icon on the far right of the Interject_LocalTimeZoneOffset to delete it. You are going to a use a different System Parameter for this data portal to illustrate a new System Parameter that has not been presented in previous examples. 
 
-![](attachments/324435969/328269915.jpg)
-
+![](/images/L-Dev-CustAgingDetail/06.jpg)
+<br>
   
 
 
 **Step 6:** Click the drop-down on the **Interject_NTLogin** and change it **Interject_RequestContext** . This System Parameter provides all request and user context that is available in a single XML string. It is best practices to use **Interject_RequestContext** as the only System Parameter since it reduces work over the long run. Since this parameter includes all system parameter information, the data portal configuration does not need to be changed if the stored procedure needs to reference additional context. Click Save. 
 
-![](attachments/324435969/328564893.jpg)
+![](/images/L-Dev-CustAgingDetail/07.jpg)
+<br>
 
-  
-
-
-### 
 
 ###  Creating the Stored Procedure 
 
@@ -98,7 +76,7 @@ The steps below assume you are proficient with SQL Management Studio for Microso
 
 **Step 1:** Create a stored procedure called [demo].[Northwind_Invoices_Pull_MyName] using the following example code. Please use your name in the suffix of the stored procedure name. 
 
-**Customer Invoices** Expand source 
+```SQL 
     
     
     CREATE PROC [demo].[Northwind_Invoices_Pull_MyName]
@@ -240,37 +218,38 @@ The steps below assume you are proficient with SQL Management Studio for Microso
     
     END
 
-  
+```  
 
 
 It is important to test the stored procedure in the database before testing it through the INTERJECT platform. Using Interject_RequestContext requires the test scripts to be much longer than in the previous steps. To help with this extra text INTERJECT will create the test code for you using the current users context. 
 
 **Step 2:** First you must select a report formula that uses the data portal that is mapped to the stored procedure you want to test. You can quickly make a report formula and delete it since you are not creating the spreadsheet report yet. In a spreadsheet tab, in any cell, type **=ReportVariable("NorthwindCustomerInvoices",A42:A304,2:2,16:16,Param(H36,H37,H38,""))** but replace the data portal name with the name you created for your own example. Make sure the the cell with the ReportRange() formula is selected. 
 
-![](attachments/324435969/328598112.png)
-
+![](/images/L-Dev-CustAgingDetail/08.png)
+<br>
   
 
 
 **Step 3:** Next, click **Advanced Menu** in the INTERJECT Ribbon. 
 
-![](attachments/83689479/128892592.png)
+![](/images/L-Dev-CustAgingDetail/09.png)
+<br>
 
 This button is a toggle, so if it is currently showing **Simple Menu** the advanced menu is already showing. 
 
-![](attachments/83689479/128336775.png)
-
+![](/images/L-Dev-CustAgingDetail/10.png)
+<br>
   
 **Step 4:** Click the **System** dropdown and select **View SQL Test for ActiveCell** . A window will pop up providing the developer with the SQL template used to create the stored procedure. 
 
-![](attachments/324435969/328565047.png)
+![](/images/L-Dev-CustAgingDetail/11.png)
+<br>
 
 **Step 5:** Copy and paste the template code into the development environment, SQL Server Management Studio.   
 The full text code is shown below. 
+    
+```SQL
 
-**Customer Invoices Test Script** Expand source 
-    
-    
     Execute [demo].[Northwind_Invoices_Pull_MyName]
     	@CompanyName = 'market'
     	,@ContactName = ''
@@ -391,16 +370,15 @@ The full text code is shown below.
         <UserContextEncrypted>Encrypted only through interject api protocol, not direct connection</UserContextEncrypted>
         <XMLDataToSave></XMLDataToSave>
     </RequestContext>'
-    
+``` 
 
   
 
 
 **Step 7:** When this code is executed, it returns the following result set. 
 
-![](attachments/324435969/328532284.png)
-
-### 
+![](/images/L-Dev-CustAgingDetail/12.png)
+<br>
 
 ###  Create The Report 
 
@@ -408,9 +386,8 @@ At this point you, have a tested a new stored procedure that uses parameters to 
 
 The steps for building the spreadsheet report are in the lab [ Customer Aging Detail ](/wGetStarted/L3.4-Customer-Aging-Detail_128429387.html) . You have likely completed this in earlier training sessions. Repeat the instructions with your newly created data portals discussed in this topic. When you are done, your report should resemble the screenshot below. 
 
-![](attachments/324435969/328597883.png)
-
-### 
+![](/images/L-Dev-CustAgingDetail/13.png)
+<br>
 
 ###  Creating a New Data Portal With Multiple Recordsets 
 
@@ -422,42 +399,41 @@ Multiple recordsets are a very efficient report approach when your data is not a
 
 **Step 1:** Navigate to the data portal that you just created , similar to **NorthwindCustomerInvoices_MyName** , and click the green clone button on the top right of the page. 
 
-![](attachments/324435969/328532225.jpg)
-
+![](/images/L-Dev-CustAgingDetail/14.jpg)
+<br>
   
 
 
 **Step 2:** A new data portal named, **NorthwindCustomerInvoices_MyName_copy** , generates. Change this data portal name to **NorthwindMultiRecord_MyName** . You can add your name to the suffix, because each data portal code must be unique. 
 
-![](attachments/324435969/328335666.jpg)
-
+![](/images/L-Dev-CustAgingDetail/15.jpg)
+<br>
   
 
 
 **Step 3:** Change the procedure name to run **[demo].[Northwind_CustomerInvoices_Pull_MyName]** but use your own name as the suffice. You will create this stored procedure shortly. Everything else in the cloned data portal remains the same. 
 
-![](attachments/324435969/328597786.jpg)
-
-  
-
-
-### 
+![](/images/L-Dev-CustAgingDetail/16.jpg)
+<br>
 
 ###  Updating the Stored Procedure for 2 Recordsets 
 
 **Step 1:** In SQL Server Management Studio, open the stored procedure used in the report that pulled the invoice detail. The stored procedure name should be similar to [demo].[Northwind_Invoices_Pull_MyName]. 
 
-![](attachments/324435969/328597796.png)
+![](/images/L-Dev-CustAgingDetail/17.png)
+<br>
 
 **Step 2:** Change the name of the stored procedure to [demo].[Northwind_CustomerInvoices_MyName], using your own name as the suffix. By using ‘Create procedure’ as shown below, the stored procedure will be copied to the new name when executed. 
 
-![](attachments/324435969/328597801.png)
+![](/images/L-Dev-CustAgingDetail/18.png)
+<br>
 
 **Step 3:** Change the **Create procedure** back to **Alter procedure** and continue with editing the new procedure. 
 
 **Step 4:** You have to make a few changes to the stored procedure so the summary record set showing a list of customers can be provided. First add **into #InvoiceDetail** as shown below. It will put the invoice detail in a temporary table to be used later in the stored procedure. 
 
-![](attachments/324435969/328335685.png)
+![](/images/L-Dev-CustAgingDetail/19.png)
+<br>
 
 **Step 5:** After the SQL statement, add **Select * from #InvoiceDetail** . Then order by the CustomerID. This step returns the invoice detail as the first recordset from the stored procedure. 
 
@@ -465,7 +441,7 @@ Multiple recordsets are a very efficient report approach when your data is not a
 
 Steps 5 and 6 should look like below: 
 
-**Summary From Detail** Expand source 
+```SQL
     
     
     -- Select all detail from the dataset created above
@@ -481,15 +457,10 @@ Steps 5 and 6 should look like below:
     	,[Country] 
     FROM #InvoiceDetail
     ORDER BY CustomerID
-
-  
-
-
+```
 **Step 7:** The changes to the stored procedure are complet. It is important to test the stored procedure in the database before testing it through the INTERJECT platform. You can use the same test script used earlier in this topic. Your test code should look similar to the SQL below. 
 
-**MultiRecord Test Script** Expand source 
-    
-    
+```SQL
     Execute [demo].[Northwind_CustomerInvoices_Pull_MyName]
     	@CompanyName = 'market'
     	,@ContactName = ''
@@ -610,15 +581,14 @@ Steps 5 and 6 should look like below:
         <UserContextEncrypted>Encrypted only through interject api protocol, not direct connection</UserContextEncrypted>
         <XMLDataToSave></XMLDataToSave>
     </RequestContext>'
-
+```
   
 
 
 When this code is executed, it should return two recordsets as shown below. 
 
-![](attachments/324435969/328532260.png)
-
-### 
+![](/images/L-Dev-CustAgingDetail/20.png)
+<br>
 
 ###  Updating the Report for 2 Recordsets 
 
@@ -626,17 +596,17 @@ You are ready to modify the report to use your new data portal. The changes are 
 
 **Step 1:** In the **Customer Aging Detail** report that you just completed, change the **=ReportRange()** function by replacing the previous data portal with the new one. However, you will be encasing the new data portal inside a jDataPortal() function. So **=ReportRange(“oldDataPortalCode”,..** becomes **=ReportRange(jDataPortal(“NorthwindMultiRecord_MyName”,2),...** The end result should look like the below screenshot for ReportRange(). 
 
-![](attachments/324435969/328401287.png)
+![](/images/L-Dev-CustAgingDetail/21.png)
+<br>
 
 The second parameter, DataResultNumber, indicates which recordset this report function will use. Using **2** causes the ReportRange() function to grab the second recordset that is a simple list of customers. 
 
 **Step 4:** Now change the **=ReportVariable()** function by replacing the previous data portal with the new one. Again you must encase the new data portal inside a jDataPortal() function. So **=ReportVariable(“oldDataPortalCode”,..** becomes **=ReportVariable(jDataPortal(“NorthwindMultiRecord_MyName”,1),...** In this step you are using **1** so the first record set is used in this report function. The end result should look like the below screenshot for ReportVariable(). 
 
-![](attachments/324435969/328401292.png)
-
-  
-
+![](/images/L-Dev-CustAgingDetail/22.png)
+<br>
 
 **Step 5:** Once the report formulas are edited, you can re-pull the data in the report and the results should be the same as when it used two data portals. 
 
-![](attachments/324435969/328532252.png)
+![](/images/L-Dev-CustAgingDetail/23.png)
+<br>

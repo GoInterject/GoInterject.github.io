@@ -1,6 +1,8 @@
 ---
 title: ReportDrill()
 layout: custom
+keywords: [reportdrill, function]
+description: ReportDrill is widely used throughout INTERJECT as a way to connect and pass information between workbooks and worksheets. 
 ---
 
 ## Function Summary
@@ -9,12 +11,12 @@ ReportDrill is widely used throughout INTERJECT as a way to connect and pass inf
 
 ### Function Arguments
 
-| Parameter Name  | Description                                                                                                      | Default | Optional |
-|-----------------|------------------------------------------------------------------------------------------------------------------|---------|----------|
-| ReportCellToRun | A cell address on a worksheet within your report that contains an INTERJECT [Data](Data-Functions-Landing.html) or [Formatting](Formatting-Functions-Landing.html) function. |         | Yes         |
-| ReportCodeToRun | A drill code that is setup in the [Report Library](/wGetStarted/L10-Updating-the-Report-Library_62849583.html#adding-a-drill-code-to-a-report) that allows you to drill between workbooks.                 |         | Yes         |
-| TransferPairs   | A [PairGroup](Pairgroup_81756186.html) and [Pair](Pair_81756188.html) function that determines which cell value you want to capture, and where you want to place it.   |       |         Yes   |
-| DrillName       | This defines the name of the drill displayed on the Excel report.|         | YES         |
+| Parameter Name  | Description                                                                                                                                                                                | Default | Optional |
+|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|----------|
+| ReportCellToRun | A cell address on a worksheet within your report that contains an INTERJECT [Data](Data-Functions-Landing.html) or [Formatting](Formatting-Functions-Landing.html) function.               |         | Yes      |
+| ReportCodeToRun | A drill code that is setup in the [Report Library](/wGetStarted/L10-Updating-the-Report-Library_62849583.html#adding-a-drill-code-to-a-report) that allows you to drill between workbooks. |         | Yes      |
+| TransferPairs   | A [PairGroup](Pairgroup_81756186.html) and [Pair](Pair_81756188.html) function that determines which cell value you want to capture, and where you want to place it.                       |         | Yes      |
+| DrillName       | This defines the name of the drill displayed on the Excel report.                                                                                                                          |         | YES      |
 
 
 ### Excel Formula Bar Example
@@ -26,15 +28,16 @@ This example is sourced from [Lab Drill: Customer Aging](/wGetStarted/L-Drill-Cu
 
 ### Example Function Composition
 
-| Argument Name   | Example Mapping                    | Explanation                                                                                |
-|-----------------|------------------------------------|--------------------------------------------------------------------------------------------|
-| Function Name   | `=ReportDrill()`                   | This is the excel function name used to call the function. It can have embedded functions. |
-| ReportCellToRun | CustomerOrderHistory!C10           | The cell that is being run is an INTERJECT Data function on the CustomerOrderHistory Page. If this is left blank, then ReportCodeToRun cannot be blank.|
-| ReportCodeToRun | ""                                 | This is left blank since the drill does not go to a different workbook. This cannot be left blank if the ReportCellToRun argument is left blank. If you wanted to run a drill on a different workbook, place the target workbook's drill code in this argument field.|
-| TransferPairs   | PairGroup(Pair(B22:B24, CustomerOrderHistory!C23))|  This will copy a cell value from a cell within the specified range, then place that value on the CustomerOrderHistory worksheet, at cell C23.|
-| DrillName       | "Drill to Customer Orders History" |  The Drill name will appear as "Drill to Customer Orders History" inside of the drill form.|
+| Argument Name   | Example Mapping                                    | Explanation                                                                                                                                                                                                                                                           |
+|-----------------|----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Function Name   | `=ReportDrill()`                                   | This is the excel function name used to call the function. It can have embedded functions.                                                                                                                                                                            |
+| ReportCellToRun | CustomerOrderHistory!C10                           | The cell that is being run is an INTERJECT Data function on the CustomerOrderHistory Page. If this is left blank, then ReportCodeToRun cannot be blank.                                                                                                               |
+| ReportCodeToRun | ""                                                 | This is left blank since the drill does not go to a different workbook. This cannot be left blank if the ReportCellToRun argument is left blank. If you wanted to run a drill on a different workbook, place the target workbook's drill code in this argument field. |
+| TransferPairs   | PairGroup(Pair(B22:B24, CustomerOrderHistory!C23)) | This will copy a cell value from a cell within the specified range, then place that value on the CustomerOrderHistory worksheet, at cell C23.                                                                                                                         |
+| DrillName       | "Drill to Customer Orders History"                 | The Drill name will appear as "Drill to Customer Orders History" inside of the drill form.                                                                                                                                                                            |
 
 ### Embeddable Helper Functions
 
 * [PairGroup](Pairgroup_81756186.html)
 * [Pair](Pair_81756188.html)
+

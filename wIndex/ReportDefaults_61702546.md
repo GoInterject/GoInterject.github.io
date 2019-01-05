@@ -1,6 +1,8 @@
 ---
 title: ReportDefaults()
 layout: custom
+keywords: [reportdefaults, function]
+description: A ReportDefaults() formatting function is utilized to capture and send values from one cell (or set of cells) to another. 
 ---
 
 ## Function Summary

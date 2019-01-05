@@ -1,6 +1,8 @@
 ---
 title: Tabular vs Data Cells
 layout: custom
+keywords: [cells, tabular, data, pull]
+description: The Report Library is a way for your team to share reports from a central location going beyond just a Sharepoint or a Shared Network Folder. The reports are uploaded to the library and can be accessed from any computer using Excel via INTERJECT.
 ---
 
 INTERJECT supplies two very different ways to pull data into spreadsheets: **Tabular** and **Data Cells.** These two approaches help cover the variety of today's industry needs. 
@@ -25,7 +27,7 @@ Tabular reporting and Data Cells were designed to work together for the most fle
 
   1. Both will pull data using the same [ "Pull Data" ](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html) menu action. There is nothing new to learn when changing from one method to the other. 
   2. Data Cells can be used with Tabular methods to create custom columns that aren't easily available from the data source. 
-  3. Both can be shared with users that do not have  INTERJECT  installed, however Data Cell reports must be exported with the [ "Export Book" ](https://interject.atlassian.net/wiki/content-only/viewpage.action?pageId=83689479&iframeId=fallback-mode&user_key=ff8080814d41a454014d440734dd0001&user_id=MariaH&xdm_e=https://interject.atlassian.net/&xsm_c=fallback-mode-fake-key__7191363262446606&cp=/wiki&cv=0.0.0-fallback-mode&lic=none#InterjectRibbonMenuItems-ExportBook) menu item before they can be shared. 
+  3. Both can be shared with users that do not have  INTERJECT  installed, however Data Cell reports must be exported with the [ "Export Book" ](/wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html) menu item before they can be shared. 
 
 
 
