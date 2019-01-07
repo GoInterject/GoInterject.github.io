@@ -1,6 +1,6 @@
 horizontalnav:
 - title: About
-  path: /wAbout/61702415.html
+  path: /
   node: about
 - title: Get Started
   path: /wGetStarted/Creating-with-INTERJECT_61702187.html
@@ -34,7 +34,7 @@ design:
 
 about:
 - sectiontitle: What Does INTERJECT Do?
-  path: /wAbout/61702415.html
+  path: /
   section:
   - title: Real World Use Cases
     path: /wAbout/Real-World-Use-Cases_61702417.html
