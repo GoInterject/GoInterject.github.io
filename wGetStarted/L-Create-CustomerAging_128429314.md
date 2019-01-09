@@ -18,24 +18,21 @@ There are three parts to building a simple report, click one of the links below 
 
 * [ **Final Result** ]()
 
-<br>
 
 ###  Building the Report 
-<br>
+
 **Step 1:** This process begins with the INTERJECT [ Report Builder ](https://interject.atlassian.net/wiki/display/ID/Interject+Ribbon+Menu+Items#InterjectRibbonMenuItems-ReportBuilder) . Open the Report Build as illustrated below. There is a drop down list of  [ Dataportals ](/wApps/Common-Dataportal-Index_127795984.html) that can be chosen  . An INTERJECT Dataportal is a pre-configured data query that is setup so spreadsheet users can easily direct data into their own spreadsheet reports. Dataportals can be setup to access databases or cloud data and are either setup by INTERJECT developers or the IT team. 
-<br>
+
 ![](/images/L-Create-CustAging/01.png)   
-<br>
 
 **Step 2:** For this Customer Aging report, use the NorthwindCustomers Dataportal. Once chosen, click the **Build Report Formula** button. 
-<br>
+
 ![](/images/L-Create-CustAging/02.png)
-<br>
+
 
 A new sheet should be added that looks like the screenshot below. Now the report is ready for further customization. 
-<br>
+
 ![](/images/L-Create-CustAging/03.png)
-<br>
 
 ###  Customizing the Report 
 

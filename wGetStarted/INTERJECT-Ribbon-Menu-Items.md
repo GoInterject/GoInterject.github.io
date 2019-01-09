@@ -382,129 +382,17 @@ Back to Top
 
 The operation System contains a large number of options. Documentation for this feature is under construction.   
   
-<table>  
-<tr>  
-<th>
 
-  
-
-</th>  
-<th>
-
-Description 
-</th> </tr>  
-<tr>  
-<td>
-
-
-
-Force Calc On Workbook 
-
-
-</td>  
-<td>
-
-
-
-Forces Excel to calculate all formulas in the Workbook. Similar to the **Calculate Now** button in the Formulas Ribbon 
-
-
-</td> </tr>  
-<tr>  
-<td>
-
-
-
-Force Calc On Worksheet 
-
-
-</td>  
-<td>
-
-Forces Excel to calculate all INTERJECT formulas in the Worksheet. Similar to the **Calculate Sheet** button in the Formulas Ribbon  
-</td> </tr>  
-<tr>  
-<td>
-
-
-
-View SQL Test For ActiveCell 
-
-
-</td>  
-<td>
-
-
-
-Provides the SQL code that will be executed for the ActiveCell. The ActiveCell would be any of the ReportFormulas that pull or save data. 
-
-Copy this code into your development environment and execute it to see what would be produced based on current context of the spreadsheet 
-
-
-</td> </tr>  
-<tr>  
-<td>
-
-
-
-View SQL Template For ActiveCell 
-
-
-</td>  
-<td>
-
-
-
-Will provide a starting point for creating new stored procedures. ReportSave will provide a template that can be used to save the data back. 
-
-
-</td> </tr>  
-<tr>  
-<td>
-
-Clear Remembered Logins  
-</td>  
-<td>
-
-  
-
-</td> </tr>  
-<tr>  
-<td>
-
-Re-enable Protected Grouping  
-</td>  
-<td>
-
-  
-
-</td> </tr>  
-<tr>  
-<td>
-
-Initiate Session Controller  
-</td>  
-<td>
-
-  
-
-</td> </tr>  
-<tr>  
-<td>
-
-Check Connection  
-</td>  
-<td>
-
-
-
-Allows user to test that the connection to a database can be established. To learn more, [ click here ](/wPortal/Data-Connections_324403237.html) . 
-
-
-</td> </tr> </table>
-
-  
-
+| | Description |
+|---|---|
+Force Calc On Workbook | Forces Excel to calculate all formulas in the Workbook. Similar to the **Calculate Now** button in the Formulas Ribbon |
+|Force Calc On Worksheet | Forces Excel to calculate all INTERJECT formulas in the Worksheet. Similar to the **Calculate Sheet** button in the Formulas Ribbon |
+|View SQL Test For ActiveCell| Provides the SQL code that will be executed for the ActiveCell. The ActiveCell would be any of the ReportFormulas that pull or save data. <br> Copy this code into your development environment and execute it to see what would be produced based on current context of the spreadsheet |
+| View SQL Template For ActiveCell | Will provide a starting point for creating new stored procedures. ReportSave will provide a template that can be used to save the data back.  |
+| Clear Remembered Logings | |
+| Re-enable Protected Grouping | |
+| Initiate Session Controller | |
+| Check Connection | Allows user to test that the connection to a database can be established. To learn more, [ click here. ](/wPortal/Data-Connections_324403237.html) |
 
 ReportRange() 
 

@@ -13,7 +13,7 @@ This example uses the [ Customer Aging ](/wAbout/Customer-Aging_128091294.html) 
 
 ###  Building the Report 
 
-**Step 1:** You will begin by using INTERJECT's [ **Report Builder** ](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html) to make a template for the report. Select NorthwindCustomers Data Portal and choose[ **Build Report Formula** ](https://interject.atlassian.net/wiki/content-only/viewpage.action?pageId=83689479&iframeId=fallback-mode&user_key=ff8080814d41a454014d440734dd0001&user_id=MariaH&xdm_e=https://interject.atlassian.net/&xsm_c=fallback-mode-fake-key__322604369852205&cp=/wiki&cv=0.0.0-fallback-mode&lic=none#InterjectRibbonMenuItems-ReportBuilder) to build the report. 
+**Step 1:** You will begin by using INTERJECT's [ **Report Builder** ](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html) to make a template for the report. Select NorthwindCustomers Data Portal and choose[ **Build Report Formula** ]() to build the report. 
 
 ![](/images/L-Create-CustAgingDetail/01.png)
 
