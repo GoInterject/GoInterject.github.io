@@ -6,9 +6,11 @@ description: ReportHideRowOrColumn() utilizes cell the values "Show" and "Hide" 
 ---
 
 ## Function Summary
+
 ReportHideRowOrColumn() utilizes cell the values "Show" and "Hide" as input parameters. These parameters are set within the RowOrColumnRange argument, wherein if a cell within that range has a value of "Hide" then the function will hide that column or row depending on which type of cell range is being used. Additionally, this function is triggered on an INTERJECT Action+Event combination. Also, this function requires a [ReportCalc()](/wIndex/ReportCalc_137265163.html) function to be executed in the INTERJECT call stack before the ReportHideRowOrColumn() is called in the stack. This is because the ReportHideRowOrColumn() function requires the most up to date cell formula outputs (if formulas are being used to create the "Show"/"Hide" cell values), which does not occur if the ReportHideRowOrColumn() function is called directly after a trigger combination is called.  There are several trigger combinations that can be utilized by ReportGrouping() that are listed [here](/wIndex/ReportHideRowOrColumn_341147669.html#trigger-combination-list).
 
 ### Function Arguments
+
 |Argument Name|Description|Default|Optional|
 |:---|:---|:---|:---|
 |OnPullSaveOrBoth|This defines the instance in which an INTERJECT action will trigger the function to be executed.||NO|
@@ -24,6 +26,7 @@ ReportHideRowOrColumn("Pull","Both",C47:C48,FALSE)
 To view this example with more context it is sourced from [Lab Create: HidingRowsColumns](/wGetStarted/L5-HidingRowsColumns_137363494.html).
 
 ### Example Function Composition
+
 |Argument Name|Example Mapping|Explanation|
 |:---|:---|:---|
 |Function Name|`=ReportHideRowOrColumn()`|This is the excel function name used to call the function. It can only be used as a standalone function in a report.|
