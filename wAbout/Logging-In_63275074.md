@@ -31,17 +31,10 @@ Whichever option is chosen, the login process that follows is the same.
 
 **Step 3:** Check the box marked **Auto Login next time** to skip this step in the future. 
 
-**Note:** We highly suggest using **Auto Login** , otherwise credentials are required whenever accessing the [ ReportLibrary ](/wAbout/Report-Library-Basics_61702517.html). 
+**Note:** We highly suggest using **Auto Login**, otherwise credentials are required whenever accessing the [ ReportLibrary ](/wAbout/Report-Library-Basics_61702517.html). 
 
 Now you're logged in!
 
-##  Related Links: 
-
-[ Report Library Basics ](/wAbout/Report-Library-Basics_61702517.html)
-
-[ Real-World Walkthroughs ](/wAbout/Real-World-Walkthroughs_128091006.html)
-
-[ Working with INTERJECT ](/wAbout/Working-with-INTERJECT_61702912.html)
 
   
 

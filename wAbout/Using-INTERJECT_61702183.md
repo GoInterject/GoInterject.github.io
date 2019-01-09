@@ -10,23 +10,19 @@ description: You will run through the basic navigation and control methods most 
 
 This section is for users working with reports and applications created by others. You will run through the basic navigation and control methods most helpful for working efficiently. Please note that every report may be different and may have it's own documentation in the Report Library. See the [ Report Library Basics ](/wAbout/Report-Library-Basics_61702517.html) page for further details. 
 
-###  [ Installing Interject ](https://interject.atlassian.net/wiki/display/ID/Installing+Interject)
+###  [ Installing Interject ](/wAbout/SingleUser.html)
 
-When installing Interject, there are two methods we can follow. 
+Installing Interject is a simple process. There are two install types for INTERJECT, the first is a [single user](/wAbout/SingleUser.html) install, and the other is for installing on a [shared computer](/wAbout/SharedComputer.html). If you are not sure which one to use, then you should install the single user version.
 
-[ Option 1: ](https://interject.atlassian.net/wiki/display/ID/Installing+Interject#InstallingInterject-O1) Installing from the Portal Management Website using a ClickOnce installer for Windows™. 
-
-[ Option 2: ](https://interject.atlassian.net/wiki/display/ID/Installing+Interject#InstallingInterject-O2) Installing with an Enterprise level MSI installer. 
-
-###  [ Logging In ](https://interject.atlassian.net/wiki/display/ID/Logging+In)
+###  [ Logging In ](/wAbout/Logging-In_63275074.html)
 
 Logging in is simple and fast! Once logged in we can begin exploring the Report Library detailed in the following pages. 
 
-###  [ Report Library Basics ](https://interject.atlassian.net/wiki/display/ID/Report+Library+Basics)
+###  [ Report Library Basics ](wAbout/Report-Library-Basics_61702517.html)
 
 The Report Library is a way to share reports with other users on your team. Reports are uploaded to the library and can be accessed from any computer using the INTERJECT app in Excel. The features in INTERJECT go beyond a Sharepoint or Shared Network Folder. Files can also be versioned, so reverting to a working report is simple. 
 
-###  [ Real-World Walkthroughs ](https://interject.atlassian.net/wiki/display/ID/Real-World+Walkthroughs)
+###  [ Real-World Walkthroughs ](wAbout/Real-World-Walkthroughs_128091006.html)
 
 From simple PL charts for accountants to trend reports for CEO's and CFO's, there are a variety of processes we may encounter. In these labs, you will look at three Real-World scenarios that explain how to use INTERJECT. Keep in mind, these are simple examples of tasks that may be more complicated in other situations. 
 
