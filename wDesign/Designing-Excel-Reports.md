@@ -6,13 +6,12 @@ categories: Excel Layout
 keywords: [reports, layouts, design, guidelines]
 description: Guidelines for designing and laying out reports.
 ---
----
-**Theme File:** [HERE]()
 
-**Example Excel Workbook:** [HERE]()
 
 [comment]: <> (Directory for Theme Work (Located on TS 13589):)
 [comment]: <> (D:\Data\Interject\ThemeWork)
+
+## **Overview**
 
 Based on Stock 2010 'Austin' theme.
 Theme file can be applied to Excel 2007 and 2010 Workbooks.  Not compatible with Excel 2003.
