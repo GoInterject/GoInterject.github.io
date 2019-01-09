@@ -16,15 +16,15 @@ Many organizations still need a static, non-interactive spreadsheet report to be
 
 There are two options for distributing reports to users individually or in batches: Publishing and Exporting. 
 
-###  [ Lab 11.1 Quick Export and PDF ](/wGetStarted/L11.1-Quick-Export-and-PDF_128718475.html)
+###  [ Lab 11.1 Quick Export and PDF ](wGetStarted/L-Export-QuickExportAndPDF.html)
 
 This option is best for a single open report that needs to go out immediately. 
 
-###  [ Lab 11.2 Basic Distribution ](/wGetStarted/L11.2-Basic-Distribution_128719024.html)
+###  [ Lab 11.2 Basic Distribution ](wGetStarted/L-Export-BasicDist.html)
 
 This covers the basics of Report Distribution. INTERJECT provides a special worksheet that you can configure for a customized set of reports that can be printed, emailed, or saved in preset file locations. 
 
-###  [ Lab 11.3 Advanced Distribution ](/wGetStarted/L11.3-Advanced-Distribution_128719191.html)
+###  [ Lab 11.3 Advanced Distribution ](wGetStarted/L-Export-AdvancedDist.html)
 
 The advanced exercises for Report Distribution explore more features to help you tailor reporting to your unique needs. 
 

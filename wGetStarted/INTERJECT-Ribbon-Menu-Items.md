@@ -60,7 +60,7 @@ The Report Library manages Excel company report files and their various versions
   
 
 
-[ Click here to learn more about the Report Library. ](/wAbout/Report-Library-Basics_61702517.md)
+[ Click here to learn more about the Report Library. ](/wAbout/Report-Library-Basics_61702517.html)
 
 ![](/images/InterjectRibbon/05.png)
 
@@ -129,7 +129,9 @@ The Drill process opens and runs a report containing detailed information. It pa
   
 
 
-See more about Drilling and Navigating in [ Drilling Between Reports ](/wGetStarted/Drilling-Between-Reports_61702193.html) [ . ](Drilling-Between-Reports_61702193.html) ![](/images/InterjectRibbon/13.png)
+See more about Drilling and Navigating in [ Drilling Between Reports. ](/wGetStarted/Drilling-Between-Reports_61702193.html) 
+
+ ![](/images/InterjectRibbon/13.png)
 
   
 

@@ -29,16 +29,16 @@ This section details how to create reports from scratch. Here, you will walk thr
   
 
 
-###  [ Fixed and Variable Reports ](https://interject.atlassian.net/wiki/display/ID/Fixed+and+Variable+Reports)
+###  [ Fixed and Variable Reports ](wGetStarted/Fixed-and-Variable-Reports_61702195.html)
 
-Reports often require various formats and subtotal sections, and this is especially true for financial reports. This section goes through several, more advanced report examples: [ Inventory ](/wGetStarted/128429185.html) , [ Financial ](/wGetStarted/L3.3-Financial-Variable_128421724.html) and [ Customer Aging Detail ](/wGetStarted/L3.4-Customer-Aging-Detail_128429387.html) . These will illustrate how INTERJECT provides a number of options for your reporting needs. 
+Reports often require various formats and subtotal sections, and this is especially true for financial reports. This section goes through several, more advanced report examples: [ Inventory ](wGetStarted/L-Modify-InventoryReport_128429185.html) , [ Financial ](wGetStarted/L-Modify-FinancialReport_128429053.html) and [ Customer Aging Detail ](wGetStarted/L-Drill-CustomerAging_128421015.html) . These will illustrate how INTERJECT provides a number of options for your reporting needs. 
 
   
 
 
 ###  [ Drilling Between Reports ](/wGetStarted/Drilling-Between-Reports_61702193.html)
 
-Creating drills, it is possible to generate a simple suite of reports that enable you and your end-users to navigate anywhere from within the spreadsheet environment. Examples in this section include building drills in a [ Customer Aging ](wGetStarted/L-Drill-CustomerAging_128421015.html) , [ Inventory ](wGetStarted/L-Drill-InventoryReport_128409138.html) , and [ Financial report ](wGetStarted/L-Drill-FinancialReport_128409219.html) . There is more than one way for the user to interact with the drill feature. See the page [ Three Ways to Drill ](/wGetStarted/L4.4-The-Three-Ways-to-Drill_128510906.html) for more details. 
+Creating drills, it is possible to generate a simple suite of reports that enable you and your end-users to navigate anywhere from within the spreadsheet environment. Examples in this section include building drills in a [ Customer Aging ](wGetStarted/L-Drill-CustomerAging_128421015.html) , [ Inventory ](wGetStarted/L-Drill-InventoryReport_128409138.html) , and [ Financial report ](wGetStarted/L-Drill-FinancialReport_128409219.html) . There is more than one way for the user to interact with the drill feature. See the page [ Three Ways to Drill ](wGetStarted/L-Drill-TheThreeWays.html) for more details. 
 
 ###  [ Lab Create: Hiding Rows & Columns ](wGetStarted/L5-HidingRowsColumns_137363494.html)
 
