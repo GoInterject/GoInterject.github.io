@@ -12,14 +12,6 @@ Inside INTERJECT tabular reports there is a hidden configuration section at the 
 
 ![](/images/BasicsReportFormulas/image2017-6-15_15-27-28.png)
 
-  * ####  Accessing the Report Formulas 
-
-    * ####  Column Definitions 
-
-    * ####  Report Formulas 
-
-    * ####  Hidden Parameters and Notes 
-
 ###  Accessing the Report Formulas 
 
 **Step 1:** For this walk-through, you will use the Customer Collections report **** located in the INTERJECT Demos folder of the [ Report Library ](/wAbout/Report-Library-Basics_61702517.html). 
