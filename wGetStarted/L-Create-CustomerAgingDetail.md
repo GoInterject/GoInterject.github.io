@@ -48,7 +48,7 @@ Now the parameters are set and should only reference cells C16, C17, and C18 as 
 
 ###  ReportRange() 
 
-**Step 1:** You can select [ **Pull Data** ](https://interject.atlassian.net/wiki/content-only/viewpage.action?pageId=83689479&iframeId=fallback-mode&user_key=ff8080815cbf6513015cc72457760000&user_id=jonathonc@gointerject.com&xdm_e=https://interject.atlassian.net/&xsm_c=fallback-mode-fake-key__667129287809856&cp=/wiki&cv=0.0.0-fallback-mode&lic=none#InterjectRibbonMenuItems-PullData) to see which columns are available. Since the ReportRange() function does not have a Column Definition defined, it should show all the columns with their column names. 
+**Step 1:** You can select [ **Pull Data** ](wAbout/The-INTERJECT-Website-Portal_324665355.html) to see which columns are available. Since the ReportRange() function does not have a Column Definition defined, it should show all the columns with their column names. 
 
 ![](/images/L-Create-CustAgingDetail/06.png)
 
@@ -197,7 +197,7 @@ The formatting has been copied down to the rest of the report and there are subt
 <br> 
 
 
-**Step 6:** To define the second formula, add **=ReportVariable()** to cell C23 and click the fx button. The placement of this formula matters, since you want it to run after the ReportRange(). The [ ReportRange() ](/wIndex/61702199.html) will be pulled first to provide the list of customer sections, and then the [ ReportVariable() ](/wIndex/61702201.html) will populate the invoices for each section. 
+**Step 6:** To define the second formula, add **=ReportVariable()** to cell C23 and click the fx button. The placement of this formula matters, since you want it to run after the ReportRange(). The [ ReportRange() ](/wIndex/ReportRange_61702199.html) will be pulled first to provide the list of customer sections, and then the [ ReportVariable() ](/wIndex/ReportVariable_61702201.html) will populate the invoices for each section. 
 
 ![](/images/L-Create-CustAgingDetail/27.png)
 
