@@ -8,7 +8,7 @@ description: INTERJECT is a new method for connecting users to their data. It is
 
 ##  In a Nutshell 
 
-INTERJECT is a new method for connecting users to their data. It is a lightweight, enterprise-scalable platform bringing data to spreadsheets which can be used like customizable web applications. INTERJECT  goes beyond reporting and business intelligence by empowering users to automate unique business processes and reach deeper into their data. Check out [ Real World Use Cases ](/wAbout/Real-World-Use-Cases_61702417.html) to see how accounting, finance, and IT departments benefit. 
+INTERJECT is a new method for connecting users to their data. It is a lightweight, enterprise-scalable platform bringing data to spreadsheets which can be used like customizable web applications. INTERJECT  goes beyond reporting and business intelligence by empowering users to automate unique business processes and reach deeper into their data. Check out [ Real World Use Cases ](/wAbout/Real-World-Use-Cases.html) to see how accounting, finance, and IT departments benefit. 
 
 IT departments like INTERJECT because it allows them to publish only data, helping spreadsheet users create the user-specific reports they need. The familiar spreadsheet interface drastically reduces support and report requests. And since  Interject  is client/server-based, users save fewer spreadsheets to local network drives. 
 
