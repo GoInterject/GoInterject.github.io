@@ -3,7 +3,7 @@ horizontalnav:
   path: /
   node: about
 - title: Get Started
-  path: /wGetStarted/Creating-with-INTERJECT_61702187.html
+  path: /wGetStarted/Creating-with-INTERJECT.html
   node: getstarted
 - title: Developer
   path: /wApi/DeveloperMain.html
@@ -12,10 +12,10 @@ horizontalnav:
   path: /wDesign/Reporting-Design-Standards.html
   node: design
 - title: References
-  path: /wIndex/Excel-Function-Index_61702197.html
+  path: /wIndex/Excel-Function-Index.html
   node: index
 - title: Apps
-  path: /wApps/How-to-articles_129245729.html
+  path: /wApps/How-to-articles.html
   node: apps
 - title: Portal Site 
   path: /wPortal/WebsitePortal.html
@@ -37,13 +37,13 @@ about:
   path: /
   section:
   - title: Real World Use Cases
-    path: /wAbout/Real-World-Use-Cases_61702417.html
+    path: /wAbout/Real-World-Use-Cases.html
   - title: Why CFO's Like INTERJECT
-    path: /wAbout/Why-CFOs-Like-INTERJECT_61702437.html
+    path: /wAbout/Why-CFOs-Like-INTERJECT.html
   - title: Why CIO's Like INTERJECT
-    path: /wAbout/Why-CIOs-Like-INTERJECT_61702419.html
+    path: /wAbout/Why-CIOs-Like-INTERJECT.html
   - title: What You Need to Know
-    path: /wAbout/What-You-Need-to-Know_61702914.html
+    path: /wAbout/What-You-Need-to-Know.html
 - sectiontitle: Installing INTERJECT
   section:
   - title: Installing - Single User
@@ -53,62 +53,62 @@ about:
 - title: Uninstalling INTERJECT
   path: /wAbout/Uninstalling.html
 - sectiontitle: Using INTERJECT
-  path: /wAbout/Using-INTERJECT_61702183.html
+  path: /wAbout/Using-INTERJECT.html
   section:
   - title: Logging In
-    path: /wAbout/Logging-In_63275074.html
+    path: /wAbout/Logging-In.html
   - title: Adding a User
-    path: /wAbout/Adding-a-User_61702191.html
+    path: /wAbout/Adding-a-User.html
   - title: Report Library Basics
-    path: /wAbout/Report-Library-Basics_61702517.html
+    path: /wAbout/Report-Library-Basics.html
   - sectiontitle: Real-World Walkthroughs
-    path: /wAbout/Real-World-Walkthroughs_128091006.html
+    path: /wAbout/Real-World-Walkthroughs.html
     section:
     - title: Customer Aging
-      path: /wAbout/Customer-Aging_128091294.html
+      path: /wAbout/Customer-Aging.html
     - title: Inventory Reports
-      path: /wAbout/Inventory-Reports_128091499.html
+      path: /wAbout/Inventory-Reports.html
     - title: Financial Report
-      path: /wAbout/Financial-Report_128091561.html
+      path: /wAbout/Financial-Report.html
   - title: Updating INTERJECT
-    path: /wAbout/Updating-INTERJECT_128493904.html
+    path: /wAbout/Updating-INTERJECT.html
 - sectiontitle: Working with INTERJECT
-  path: /wAbout/Working-with-INTERJECT_61702912.html
+  path: /wAbout/Working-with-INTERJECT.html
   section:
   - title: Basics of Report Formulas
-    path: /wAbout/Basics-of-Report-Formulas_61702189.html
+    path: /wAbout/Basics-of-Report-Formulas.html
   - title: Tabular vs Data Cells
-    path: /wAbout/Tabular-vs-Data-Cells_61702447.html
+    path: /wAbout/Tabular-vs-Data-Cells.html
 
   
 
 apps:
   - title: How-to articles
-    path: /wApps/How-to-articles_129245729.html
+    path: /wApps/How-to-articles.html
 
 
 getstarted:
   - sectiontitle: Creating with INTERJECT
-    path: /wGetStarted/Creating-with-INTERJECT_61702187.html
+    path: /wGetStarted/Creating-with-INTERJECT.html
     section:
     - sectiontitle: Modifying an Existing Report
-      path: /wGetStarted/Modifying-an-Existing-Report_62849215.html
+      path: /wGetStarted/Modifying-an-Existing-Report.html
       section:
       - title: "Lab Modify: Customer Aging"
-        path: /wGetStarted/L-Modify-CustomerAging_128428927.html
+        path: /wGetStarted/L-Modify-CustomerAging.html
       - title: "Lab Modify: Inventory Report"
-        path: /wGetStarted/L-Modify-InventoryReport_128429185.html
+        path: /wGetStarted/L-Modify-InventoryReport.html
       - title: "Lab Modify: Financial Report"
-        path: /wGetStarted/L-Modify-FinancialReport_128429053.html
+        path: /wGetStarted/L-Modify-FinancialReport.html
     - sectiontitle: Creating a Simple Report
-      path: /wGetStarted/Creating-a-Simple-Report_128408585.html
+      path: /wGetStarted/Creating-a-Simple-Report.html
       section:
       - title: "Lab Create: Customer Aging"
-        path: /wGetStarted/L-Create-CustomerAging_128429314.html
+        path: /wGetStarted/L-Create-CustomerAging.html
       - title: "Lab Create: Customer Orders"
-        path: /wGetStarted/L-Create-CustomerOrders_128421638.html
+        path: /wGetStarted/L-Create-CustomerOrders.html
     - sectiontitle: Fixed and Variable Reports
-      path: /wGetStarted/Fixed-and-Variable-Reports_61702195.html
+      path: /wGetStarted/Fixed-and-Variable-Reports.html
       section:
       - title: "Lab Create: Inventory Fixed"
         path: /wGetStarted/L-Create-InventoryFixed.html
@@ -119,14 +119,14 @@ getstarted:
       - title: "Lab Create: Customer Aging Detail"
         path: /wGetStarted/L-Create-CustomerAgingDetail.html
     - sectiontitle: Drilling Between Reports
-      path: /wGetStarted/Drilling-Between-Reports_61702193.html
+      path: /wGetStarted/Drilling-Between-Reports.html
       section:
       - title: "Lab Drill: Customer Aging"
-        path: /wGetStarted/L-Drill-CustomerAging_128421015.html
+        path: /wGetStarted/L-Drill-CustomerAging.html
       - title: "Lab Drill: Inventory Report"
-        path: /wGetStarted/L-Drill-InventoryReport_128409138.html
+        path: /wGetStarted/L-Drill-InventoryReport.html
       - title: "Lab Drill: Financial Report"
-        path: /wGetStarted/L-Drill-FinancialReport_128409219.html
+        path: /wGetStarted/L-Drill-FinancialReport.html
       - title: "The Three Ways to Drill"
         path: /wGetStarted/L-Drill-TheThreeWays.html
     - title: "Lab Create: Hiding Rows & Columns"
@@ -144,7 +144,7 @@ getstarted:
     - title: "Lab Create: Updating the Report Library"
       path: /wGetStarted/L-Create-UpdatingReportLibrary.html
     - sectiontitle: Exporting Reports
-      path: /wGetStarted/Exporting-Reports_93618178.html
+      path: /wGetStarted/Exporting-Reports.html
       section:
       - title: "Lab Export: Quick Export and PDF"
         path: /wGetStarted/L-Export-QuickExportAndPDF.html
@@ -153,149 +153,153 @@ getstarted:
       - title: "Lab Export: Advanced Distribution"
         path: /wGetStarted/L-Export-AdvancedDist.html
   - title: Excel Best and Worst Practices
-    path: /wGetStarted/Excel-Best-and-Worst-Practices_324567041.html
+    path: /wGetStarted/Excel-Best-and-Worst-Practices.html
   - sectiontitle: Developing with INTERJECT
-    path: /wGetStarted/Developing-with-INTERJECT_136151097.html
+    path: /wGetStarted/Developing-with-INTERJECT.html
     section:
     - title: INTERJECT Website Portal
-      path: /wGetStarted/INTERJECT-Website-Portal_324534275.html
+      path: /wGetStarted/INTERJECT-Website-Portal.html
     - title: Defining INTERJECT for Developers
-      path: /wGetStarted/Defining-INTERJECT-for-Developers_324665345.html
+      path: /wGetStarted/Defining-INTERJECT-for-Developers.html
     - sectiontitle: Simple Data Pull
-      path: /wGetStarted/Simple-Data-Pull_139526259.html
+      path: /wGetStarted/Simple-Data-Pull.html
       section:
       - title: "Lab Dev: Customer Aging"
-        path: /wGetStarted/L-Dev-CustomerAging_324567045.html
+        path: /wGetStarted/L-Dev-CustomerAging.html
       - title: "Lab Dev: Customer Orders"
-        path: /wGetStarted/L-Dev-CustomerOrders_324403205.html
+        path: /wGetStarted/L-Dev-CustomerOrders.html
     - sectiontitle: Advanced Data Pull
-      path: /wGetStarted/Advanced-Data-Pull_327516216.html
+      path: /wGetStarted/Advanced-Data-Pull.html
       section:
       - title: "Lab Dev: Customer Aging Detail"
-        path: /wGetStarted/L-Dev-CustomerAgingDetail_324435969.html
+        path: /wGetStarted/L-Dev-CustomerAgingDetail.html
     - sectiontitle: Simple Data Save
-      path: /wGetStarted/Simple-Data-Save_139231307.html
+      path: /wGetStarted/Simple-Data-Save.html
       section:
       - title: "Lab Dev: Customer Credit Save"
-        path: /wGetStarted/L-Dev-CustomerCreditSave_324665351.html
+        path: /wGetStarted/L-Dev-CustomerCreditSave.html
     - title: Security Best Practices
-      path: /wGetStarted/Security-Best-Practices_324403209.html
+      path: /wGetStarted/Security-Best-Practices.html
     - title: Managing Settings Cache
-      path: /wGetStarted/Managing-Settings-Cache_324632601.html
+      path: /wGetStarted/Managing-Settings-Cache.html
   - title: INTERJECT Ribbon Menu Items
-    path: /wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html
+    path: /wGetStarted/INTERJECT-Ribbon-Menu-Items.html
 
 
 index:
   - sectiontitle: INTERJECT Function Index
-    path: /wIndex/Excel-Function-Index_61702197.html
+    path: /wIndex/Excel-Function-Index.html
     section:
     - sectiontitle: Data Functions
       path: /wIndex/Data-Functions-Landing.html
       section:
         - title: ReportDrill()
-          path: /wIndex/ReportDrill_61702556.html
+          path: /wIndex/ReportDrill.html
         - title: ReportFixed()
-          path: /wIndex/ReportFixed_61702203.html
+          path: /wIndex/ReportFixed.html
         - title: ReportLookup()
-          path: /wIndex/ReportLookup_127973727.html
+          path: /wIndex/ReportLookup.html
         - title: ReportMacro()
-          path: /wIndex/ReportMacro_61702548.html
+          path: /wIndex/ReportMacro.html
         - title: ReportRange()
-          path: /wIndex/ReportRange_61702199.html
+          path: /wIndex/ReportRange.html
         - title: ReportRun()
-          path: /wIndex/ReportRun_61702558.html
+          path: /wIndex/ReportRun.html
         - title: ReportSave()
-          path: /wIndex/ReportSave_61702554.html
+          path: /wIndex/ReportSave.html
         - title: ReportVariable()
-          path: /wIndex/ReportVariable_61702201.html
+          path: /wIndex/ReportVariable.html
     - sectiontitle: Formatting Functions
       path: /wIndex/Formatting-Functions-Landing.html
       section:
         - title: jFocus()
           path: /wIndex/jFocus.html
         - title: jFreezePanes()
-          path: /wIndex/jFreezePanes_128552956.html
+          path: /wIndex/jFreezePanes.html
         - title: ReportCalc()
-          path: /wIndex/ReportCalc_137265163.html
+          path: /wIndex/ReportCalc.html
         - title: ReportDefaults()
-          path: /wIndex/ReportDefaults_61702546.html
+          path: /wIndex/ReportDefaults.html
         - title: ReportGrouping()
           path: /wIndex/ReportGrouping.html  
         - title: ReportHideRowOrColumn()
-          path: /wIndex/ReportHideRowOrColumn_341147669.html
+          path: /wIndex/ReportHideRowOrColumn.html
         - title: ReportMerge()
-          path: /wIndex/ReportMerge_110723133.html
+          path: /wIndex/ReportMerge.html
     - sectiontitle: Helper Functions
-      path: /wIndex/Helper-Functions_61702538.html
+      path: /wIndex/Helper-Functions.html
       section:
         - title: jBinder()
-          path: /wIndex/jBinder_61702552.html
+          path: /wIndex/jBinder.html
         - title: jColumnDef()
-          path: /wIndex/jColumnDef_127965411.html
+          path: /wIndex/jColumnDef.html
         - title: jCombineIf()
-          path: /wIndex/jCombine_IF_139526244.html
+          path: /wIndex/jCombine_IF.html
         - title: jCombine()
-          path: /wIndex/jCombine_61702542.html
+          path: /wIndex/jCombine.html
         - title: jDataPortal()
-          path: /wIndex/jDataPortal_61702544.html
+          path: /wIndex/jDataPortal.html
         - title: jMergePoint()
-          path: /wIndex/jMergePoint_110723143.html
+          path: /wIndex/jMergePoint.html
         - title: jRangeTag()
-          path: /wIndex/jRangeTag_138772490.html
+          path: /wIndex/jRangeTag.html
         - title: jWorkbookProperty()
-          path: /wIndex/jWorkbookProperty_61702550.html
+          path: /wIndex/jWorkbookProperty.html
         - title: Pair()
-          path: /wIndex/Pair_81756188.html
+          path: /wIndex/Pair.html
         - title: PairGroup()
-          path: /wIndex/PairGroup_81756186.html
+          path: /wIndex/PairGroup.html
         - title: Param()
-          path: /wIndex/Param_81756199.html
+          path: /wIndex/Param.html
     - sectiontitle: Data Cell Functions
-      path: /wIndex/Data-Cell-Functions_61702530.html
+      path: /wIndex/Data-Cell-Functions.html
       section:
         - title: jAcct()
-          path: /wIndex/jAcct_61702534.html
+          path: /wIndex/jAcct.html
         - title: jCell/jCellN()
-          path: /wIndex/jCell_61702532.html
+          path: /wIndex/jCell.html
         - title: jDesc()
-          path: /wIndex/jDesc_61702536.html
+          path: /wIndex/jDesc.html
     - title: Reviewing Report Functions
-      path: /wIndex/Report-Formula-Reviews_127870833.html
+      path: /wIndex/Report-Formula-Reviews.html
   - sectiontitle: Common Dataportal Index
-    path: /wIndex/Common-Dataportal-Index_127795984.html
+    path: /wIndex/Common-Dataportal-Index.html
     section:
     - title: FinCube - The Financial Cube
-      path: /wIndex/FinCube---The-Financial-Cube_127796359.html
+      path: /wIndex/FinCube---The-Financial-Cube.html
     - title: SegmentInfo - Segment Search
-      path: /wIndex/SegmentInfo---Segment-Search_127796463.html
+      path: /wIndex/SegmentInfo---Segment-Search.html
   - title: INTERJECT Hotkey Index
-    path: /wIndex/INTERJECT-Hotkey-Index_351600673.html
+    path: /wIndex/INTERJECT-Hotkey-Index.html
 
 
 
 portal:
   - sectiontitle: The INTERJECT Website Portal
-    path: /wPortal/The-INTERJECT-Website-Portal_324665355.html
+    path: /wPortal/The-INTERJECT-Website-Portal.html
     section:
     - title: Logging In to Website Portal
-      path: /wPortal/Logging-In-to-Website-Portal_142278762.html
+      path: /wPortal/Logging-In-to-Website-Portal.html
     - sectiontitle: Data Connections
-      path: /wPortal/Data-Connections_324403237.html
+      path: /wPortal/Data-Connections.html
       section:
       - title: "Lab Portal: API Connections"
+<<<<<<< HEAD
         path: /wPortal/L-Api-Connections.html
+=======
+        path: /wPortal/Lab-15.1-API-Connections.html
+>>>>>>> c3b5b0d21ff154431692fce656eddf9c2022f552
       - title: "Lab Portal: Database Connection"
-        path: /wPortal/L-Database-Connection_136249415.html
+        path: /wPortal/L-Database-Connection.html
     - title: Data Portals
-      path: /wPortal/Data-Portals_324665363.html
+      path: /wPortal/Data-Portals.html
     - sectiontitle: User Profile
-      path: /wPortal/User-Profile_324763687.html
+      path: /wPortal/User-Profile.html
       section:
       - title: INTERJECT Roles
-        path: /wPortal/INTERJECT-Roles_324468787.html
+        path: /wPortal/INTERJECT-Roles.html
       - title: Altering User Passwords
-        path: /wPortal/Altering-User-Passwords_323452989.html
+        path: /wPortal/Altering-User-Passwords.html
   
 
 

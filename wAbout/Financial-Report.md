@@ -28,7 +28,7 @@ To watch a quick walk-through video, click on the icon:
 
 ###  Navigating to the PLTrend Report 
 
-**Step 1:** Navigate to the PL Trend report page inside the INTERJECT Financials folder of the  [ Report Library  ](/wAbout/Report-Library-Basics_61702517.html). The Report Library is a central place for publishing reporting templates. It is versioned and easily located. 
+**Step 1:** Navigate to the PL Trend report page inside the INTERJECT Financials folder of the  [ Report Library  ](/wAbout/Report-Library-Basics.html). The Report Library is a central place for publishing reporting templates. It is versioned and easily located. 
 
 ![](/images/financial/image2017-8-8_13-36-9.png)
 
@@ -36,7 +36,7 @@ To watch a quick walk-through video, click on the icon:
 
 ![](/images/financial/image2017-6-16_16-36-39.png)   
 
-Now you are  ready to pull the data. Use the [ **Pull Data** ](https://interject.atlassian.net/wiki/display/ID/Interject+Ribbon+Menu+Items#InterjectRibbonMenuItems-PullData) button as shown below, or use the short key Ctrl-Shift-J. 
+Now you are  ready to pull the data. Use the [ **Pull Data** ](wGetStarted\INTERJECT-Ribbon-Menu-Items.html#pull-data) button as shown below, or use the short key Ctrl-Shift-J. 
 
 ![](/images/financial/image2017-8-8_14-15-34.png)   
 
@@ -48,7 +48,7 @@ It will just take a moment for our report to populate. The illustration below sh
 
 ###  Modifying the Report 
 
-**Step 1:** Now quickly add a few more columns to the report for June, July, and August. First clear the data so you have an empty template. Clear the data by selecting the [ **Pull Data** ](https://interject.atlassian.net/wiki/display/ID/Interject+Ribbon+Menu+Items#InterjectRibbonMenuItems-PullData) button again, but this time choose the [ **Clear** ](https://interject.atlassian.net/wiki/spaces/ID/pages/61702517/Report+Library+Basics) button. 
+**Step 1:** Now quickly add a few more columns to the report for June, July, and August. First clear the data so you have an empty template. Clear the data by selecting the [ **Pull Data** ](wGetStarted\INTERJECT-Ribbon-Menu-Items.html#pull-data) button again, but this time choose the [ **Clear** ](wGetStarted\INTERJECT-Ribbon-Menu-Items.html#pull-data) button. 
 
 ![](/images/financial/image2017-6-9_15-18-12.png)   
 
@@ -56,7 +56,7 @@ It will just take a moment for our report to populate. The illustration below sh
 
 ![](/images/financial/Modifying-Report-Dragging-Columns.gif)
 
-**Step 3:** Re-pull the data with the [ **Pull Data** ](https://interject.atlassian.net/wiki/display/ID/Interject+Ribbon+Menu+Items#InterjectRibbonMenuItems-PullData) menu button as you did earlier. 
+**Step 3:** Re-pull the data with the [ **Pull Data** ](wGetStarted\INTERJECT-Ribbon-Menu-Items.html#pull-data) menu button as you did earlier. 
 
 ![](/images/financial/image2017-6-9_15-22-22.png)
 
@@ -89,7 +89,7 @@ Back to Top
 
 ###  Drill to JE-Transaction 
 
-After expanding the groupings of modified the reports, you may still want more detailed information about a specific account. The [ **Drill on Data** ](https://interject.atlassian.net/wiki/display/ID/Interject+Ribbon+Menu+Items#InterjectRibbonMenuItems-DrillData) feature allows us to pass information from one report to another for additional details. 
+After expanding the groupings of modified the reports, you may still want more detailed information about a specific account. The [ **Drill on Data** ](wGetStarted\INTERJECT-Ribbon-Menu-Items.html#drill-on-data) feature allows us to pass information from one report to another for additional details. 
 
 **Step 1:**
 
@@ -130,13 +130,13 @@ Now use Data Cells to replicate some of the present data. By having both data ge
 
 **Step 2:** To see how it works, use a Data Cell equation.   
 
-The example below illustrates how the [ jCell() ](/wIndex/61702532.html) function can be used to show totals for Actual in March 2002. 
+The example below illustrates how the [ jCell() ](/wIndex/jCell.html) function can be used to show totals for Actual in March 2002. 
 
-To open the function window, select the cell, click on [ jCellN ](/wIndex/61702532.html) in the formula bar above the columns, then click the fx button to the left. 
+To open the function window, select the cell, click on [ jCellN ](/wIndex/jCellN.html) in the formula bar above the columns, then click the fx button to the left. 
 
 ![](/images/financial/image2017-6-21_12-8-30.png)
 
-Use the [ jAcct() ](/wIndex/61702534.html) function inside the Full Account box to include filters for both the Accounts and Location segments of the chart of accounts. 
+Use the [ jAcct() ](/wIndex/jAcct.html) function inside the Full Account box to include filters for both the Accounts and Location segments of the chart of accounts. 
 
 To get the Function window for jAcct(), just click inside of its function in the formula bar. 
 
@@ -146,7 +146,7 @@ Notice that these are the same accounts that makeup **Revenue - Sales** in the o
 
 ![](/images/financial/image2017-6-19_15-57-13.png)
 
-**Step 3:** Now use the [ **Pull Data** ](https://interject.atlassian.net/wiki/display/ID/Interject+Ribbon+Menu+Items#InterjectRibbonMenuItems-PullData) function. 
+**Step 3:** Now use the [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#pull-data) function. 
 
 ![](/images/financial/image2017-8-8_13-43-14.png)
 
@@ -166,7 +166,7 @@ After the switch, you can see that the values still are the same. This is becaus
 
 **Step 5:** More complex filter text can be used to request precise balances. The following example uses a combination of ranges, exclusions, wildcards, and financial groups to return specific data. Even Net Income or EBITDA can be presented in a single worksheet cell. 
 
-For more information on the Data Cell Filter options, [ click here ](https://interject.atlassian.net/wiki/display/ID/FinCube+-+The+Financial+Cube#FinCube-TheFinancialCube-SegFil). 
+For more information on the Data Cell Filter options, [ click here ](wIndex\Data-Cell-Functions.md). 
 
 In the below example, the groupings to the left of the figures represent the grouping filter in the jAcct Function to the cell beside it. This is so you can see what account groupings are being used for each of the numbers. 
 
@@ -178,7 +178,7 @@ As you can see, the numbers in the data cells tie perfectly with the numbers in 
 
 ![](/images/financial/image2017-8-8_13-57-59.png)
 
-Enter the same period and location, 2002-05 and 7002, like you did earlier in this walk-through. Use the  [ Pull Data ](https://interject.atlassian.net/wiki/display/ID/Interject+Ribbon+Menu+Items#InterjectRibbonMenuItems-PullData) operation to pull data. 
+Enter the same period and location, 2002-05 and 7002, like you did earlier in this walk-through. Use the  [ Pull Data ](/wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#pull-data) operation to pull data. 
 
 ![](/images/financial/image2017-8-8_14-1-26.png)   
 
@@ -203,12 +203,12 @@ This completes the initial walk-through detailing interactive reporting. Later i
 
 ##  Related Links: 
 
-[ Lab 1.3 Modify: Financial Report ](/wGetStarted/128429053.html)
+[ Lab Modify: Financial Report ](/wGetStarted/L-Modify-FinancialReport.html)
 
-[ Creating a Simple Report ](/wGetStarted/Creating-a-Simple-Report_128408585.html)
+[ Creating a Simple Report ](/wGetStarted/Creating-a-Simple-Report.html)
 
-[ INTERJECT Ribbon Menu Items ](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html)
+[ INTERJECT Ribbon Menu Items ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html)
 
-[ Tabular vs Data Cells ](/wAbout/Tabular-vs-Data-Cells_61702447.html)
+[ Tabular vs Data Cells ](/wAbout/Tabular-vs-Data-Cells.html)
 
-[ Data Cell Functions ](/wIndex/Data-Cell-Functions_61702530.html)
+[ Data Cell Functions ](/wIndex/Data-Cell-Functions.html)
