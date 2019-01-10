@@ -6,7 +6,7 @@ description:
 ---
 ##  **Overview:**
 
-This section will detail a full review of how the INTERJECT save feature works. Using the Customer Credits example, it will show how to design three user input fields into an existing report. The INTERJECT platform will assist in creating a stored procedure that can be used in SQL Server to help facilitate the process.  Other database engines or API methods can be used for the save process as well, but for simplicity you are focusing on SQL Server and a database stored procedure as the data source.  You will be using the Customer Credits report, as you have already become familiar with its [ business use case ](/wAbout/Customer-Aging_128091294.html) . 
+This section will detail a full review of how the INTERJECT save feature works. Using the Customer Credits example, it will show how to design three user input fields into an existing report. The INTERJECT platform will assist in creating a stored procedure that can be used in SQL Server to help facilitate the process.  Other database engines or API methods can be used for the save process as well, but for simplicity you are focusing on SQL Server and a database stored procedure as the data source.  You will be using the Customer Credits report, as you have already become familiar with its [ business use case ](/wAbout/Customer-Aging.html). 
 
 ###  Setting up the Data Portals: 
 
@@ -66,7 +66,7 @@ For this Data Portal, there are no formula parameters to be used.
 
 ###  Setting up System Parameters: 
 
-System Parameters are similar to Formula Parameters, but the names are reserved. To review the System parameters and their purposes, go to the System Parameters section of the [ Data Portal ](/wPortal/Data-Portals_324665363.html) page 
+System Parameters are similar to Formula Parameters, but the names are reserved. To review the System parameters and their purposes, go to the System Parameters section of the [ Data Portal ](/wPortal/Data-Portals.html) page 
 
 In this example you are going to use  **Interject_ReturnError** and  **Interject_RequestContext** . 
 
@@ -1682,7 +1682,7 @@ After getting the template, it is important to modify the procedure for what is 
 
 ###  Testing the Stored Procedure 
 
-For quick testing, click on the  **View SQL Test** and copy the test code to the development area. For more information, go to the [ common troubleshooting page ](/wGetStarted/Troubleshooting-Reports_359563279.html) . 
+For quick testing, click on the  **View SQL Test** and copy the test code to the development area. For more information, go to the [ common troubleshooting page ](/wGetStarted/Troubleshooting-Reports.html). 
 
 ![](/images/L-Dev-CustAgingSave/20.jpg)
 <br>

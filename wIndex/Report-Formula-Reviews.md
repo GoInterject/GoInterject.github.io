@@ -1,18 +1,11 @@
 ---
-title: Interject Documentation > Report Formula Reviews
+title: Report Formula Reviews
 layout: custom
 keywords: []
 ---
 ##  Overview 
 
 When a user is writing out the formula it can be difficult to get the parenthesis, commas and quotations correct.The Function Wizard defines how the function is used, but it will not expand upon the names of the parameters. In this page you will see how your parameters are set up for the report. To do so you need to head to the Validation Report bar to see the columns used for those parameters. 
-
-  * ####  Getting Started 
-
-  * ####  Reviewing Parameters 
-
-  * ####  Working with Function Wizard 
-
 
 ###  Getting Started 
 
@@ -30,7 +23,7 @@ Now that you have the report ready, you should unfreeze the hidden rows which wi
   
 
 
-To unfreeze the rows you simply need to go to the View Ribbon and select Freeze panes or you can use the [ Quick Tools ](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html) operation. Out of the three options given in the drop down list, you will use the first. 
+To unfreeze the rows you simply need to go to the View Ribbon and select Freeze panes or you can use the [ Quick Tools ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools) operation. Out of the three options given in the drop down list, you will use the first. 
 
 ![](/images/FormulasReviews/03.png)
 
@@ -49,7 +42,7 @@ When a user needs to see the parameters in detail, the Function Wizard does not 
 
 
 
-To see the parameters and cell formula detail simply open the [ Advanced Menu ](https://interject.atlassian.net/wiki/spaces/ID/pages/83689479/Interject+Ribbon+Menu+Items#InterjectRibbonMenuItems-Advanced-Menu) in Interject. 
+To see the parameters and cell formula detail simply open the [ Advanced Menu ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#advanced-menu) in Interject. 
 
 ![](/images/FormulasReviews/06.png)
 
@@ -70,7 +63,7 @@ A window will open and if you expand it, you will see four options to check off:
   
 
 
-**_Show Formula References_ ** allows you to see where some of the parameters are stationed 
+**_Show Formula References_** allows you to see where some of the parameters are stationed 
 
 ![](/images/FormulasReviews/09.png)
 
@@ -96,7 +89,7 @@ If you have not seen the function wizard before, you will begin at the point whe
 
 
   
-After you find report range or [ create one of your own ](https://interject.atlassian.net/wiki/display/ID/Creating+Reports) , you can give it commands by simply selecting the F() button. 
+After you find report range or create one of your own, you can give it commands by simply selecting the F() button. 
 
 In order to access the formula cells for the report range first the user must select the report range cell.   
 ![](/images/FormulasReviews/11.png)

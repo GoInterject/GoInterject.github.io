@@ -20,7 +20,7 @@ The jCombine() function is helpful for developers who want to concatenate the va
 ```Excel
 jCombine((A2,F2:G2,R2:T2))
 ```
-The simplified version of this example is sourced from [Lab Create: Using the Retain Feature](/wGetStarted/L9-Using-The-Retain-Feature_361332831.html). In that example jCombine is used as an embedded function but does not have to be. It is often used as a standard Excel function.
+The simplified version of this example is sourced from [Lab Create: Using the Retain Feature](/wGetStarted/L9-Using-The-Retain-Feature.html). In that example jCombine is used as an embedded function but does not have to be. It is often used as a standard Excel function.
 
 ### Example Function Composition
 
@@ -32,8 +32,8 @@ The simplified version of this example is sourced from [Lab Create: Using the Re
 
 ### Usable In These Functions
 
-* [Param](Param_81756186.html)
-* [ReportRange](ReportRange_61702199.html) 
-* [ReportVariable](ReportVariable_61702201.html)
-* [ReportFixed](ReportFixed_61702203.html)
-* [ReportSave](ReportSave_61702554.html)
+* [Param](Param.html)
+* [ReportRange](ReportRange.html) 
+* [ReportVariable](ReportVariable.html)
+* [ReportFixed](ReportFixed.html)
+* [ReportSave](ReportSave.html)

@@ -8,12 +8,12 @@ description: Here, you will modify the Customer Aging Demo used in the Customer 
 
 ##  **Overview**
 
-Here, you will modify the Customer Aging Demo used in the [ Customer Aging Walk-through ](/wAbout/Customer-Aging_128091294.html) to show the total of invoices due from companies. You will filter for companies with the word **Market** in their name to keep the list short. You will build a **Total** column to receive the sum of each individual company's unpaid invoices. Once complete you will use these totals to build a Report total, which allows us to see all invoices  due.   
+Here, you will modify the Customer Aging Demo used in the [ Customer Aging Walk-through ](/wAbout/Customer-Aging.html) to show the total of invoices due from companies. You will filter for companies with the word **Market** in their name to keep the list short. You will build a **Total** column to receive the sum of each individual company's unpaid invoices. Once complete you will use these totals to build a Report total, which allows us to see all invoices  due.   
 
 
 ###  Opening the Report and Pulling Data 
 
-**Step 1:** Use the [ Report Library ](/wAbout/Report-Library-Basics_61702517.html) to find the Customer Aging Summary titled **Interject Customer Collections**. 
+**Step 1:** Use the [ Report Library ](/wAbout/Report-Library-Basics.html) to find the Customer Aging Summary titled **Interject Customer Collections**. 
 
 ![](/images/L-Modify-CustAging/01.png)
 <br>
@@ -31,7 +31,7 @@ Once open, it should look like this:
   
 
 
-Now run the [ **Pull Data** ](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html), which will pull the invoice data for all companies with the word **Market** in their name. 
+Now run the [ **Pull Data** ](/wPortal/INTERJECT-Ribbon-Menu-Items.html), which will pull the invoice data for all companies with the word **Market** in their name. 
 
 ![](/images/L-Modify-CustAging/04.png)
 <br>

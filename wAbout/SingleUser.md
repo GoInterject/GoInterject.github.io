@@ -1,5 +1,5 @@
 ---
-title: Interject | Installing - Single User
+title: Installing - Single User
 layout: custom
 keywords: [ Installing, Install, Basic ]
 description: This is the base installer

@@ -1,5 +1,5 @@
 ---
-title: Interject Documentation > INTERJECT Hotkey Index
+title: INTERJECT Hotkey Index
 layout: custom
 keywords: [hotkey, keystrokes]
 description: INTERJECT provides ways to increase productivity and work flow by utilizing hotkeys to quickly perform INTERJECT actions. 
@@ -7,17 +7,6 @@ description: INTERJECT provides ways to increase productivity and work flow by u
 ##  **Overview**
 
 INTERJECT provides ways to increase productivity and work flow by utilizing hotkeys to quickly perform INTERJECT actions. These hotkeys are adaptable and customize-able and are a staple to being efficient when using INTERJECT functions. Any hotkey listed here can be changed and set to different keystrokes. However, there is a limitation on available keystrokes to change the hotkeys to. 
-
-Go directly to any section of this page by following one of the links below. 
-
-  * ####  Default Hotkey Index 
-
-  * ####  Hotkey Commands and Keystrokes List 
-
-  * ####  Overriding Hotkeys for Individual Installs 
-
-  * ####  Overriding Hotkeys for Shared Enterprise Environments 
-
 
 
 ###  Default Hotkey Index   

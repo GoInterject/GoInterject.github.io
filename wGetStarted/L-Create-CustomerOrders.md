@@ -8,21 +8,11 @@ description: This page illustrates the process of building a Customer Order repo
 
 ##  **Overview**
 
-This page illustrates the process of building a Customer Order report from scratch and uses the multi-row option to provide a more advanced presentation. Here you will get a better understating of the  [ ReportRange() ](wIndex/ReportRange.html) as well as JfreezePanes() function. 
-
-  * [**Building the Report**]()
-
-  * [**Customizing the Report**]() 
-
-  * [**Editing the Function**]() 
-
-  * [**Adding a Multi-Row Range**]() 
-
-  * [**Closing Up the Report**]()
+This page illustrates the process of building a Customer Order report from scratch and uses the multi-row option to provide a more advanced presentation. Here you will get a better understating of the  [ ReportRange() ](/wIndex/ReportRange.html) as well as JfreezePanes() function. 
 
 ###  Building the Report: 
 
-**Step 1:** This process begins with the INTERJECT [ **Report Builder** ](wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder)  . Open the Report Build as illustrated below. There is a drop down list of  [ Dataportals ](/wApps/Common-Dataportal-Index.html) that can be chosen  . An INTERJECT Dataportal is a pre-configured data query that is setup so spreadsheet users can easily direct data into their own spreadsheet reports. Dataportals can be setup to access databases or cloud data and are either setup by INTERJECT developers or an IT team. 
+**Step 1:** This process begins with the INTERJECT [ **Report Builder** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder) . Open the Report Build as illustrated below. There is a drop down list of  [ Dataportals ](/wApps/Common-Dataportal-Index.html) that can be chosen . An INTERJECT Dataportal is a pre-configured data query that is setup so spreadsheet users can easily direct data into their own spreadsheet reports. Dataportals can be setup to access databases or cloud data and are either setup by INTERJECT developers or an IT team. 
 ![](/images/L-Create-CustOrders/01.png)
 <br>
 
@@ -98,7 +88,7 @@ The cleared report should look like this.
   
 
 
-**Step 3:** Next, scroll down further in the argument list to change **UseEntireRow** from **FALSE** to **TRUE** . Also change **PutFieldNamesAtTop** from **TRUE** to **FALSE** . These are not required but are best practice.
+**Step 3:** Next, scroll down further in the argument list to change **UseEntireRow** from **FALSE** to **TRUE**. Also change **PutFieldNamesAtTop** from **TRUE** to **FALSE**. These are not required but are best practice.
 
 ![](/images/L-Create-CustOrders/12.jpg)
 <br>
@@ -224,21 +214,21 @@ The report should look something like this. Note that the text gets overwritten 
 
 ###  Final Steps 
 
-**Step 1:** Now setup a [ jFreezePanes ](/wIndex/jFreezePanes.html) function so you can quickly unfreeze and freeze the panes at the correct position. First, setup the jFreezePane function in cell F10 by going into the report formulas section and typing **=jFreezePanes()** , then click the **fx** button to open the Formula Wizard. 
+**Step 1:** Now setup a [ jFreezePanes ](/wIndex/jFreezePanes.html) function so you can quickly unfreeze and freeze the panes at the correct position. First, setup the jFreezePane function in cell F10 by going into the report formulas section and typing **=jFreezePanes()**, then click the **fx** button to open the Formula Wizard. 
 
 ![](/images/L-Create-CustOrders/28.png)
 <br>
   
 
 
-**Step 2:** In the FeezePanesCell argument, input **A22** . This will set the row that will be frozen above A22, and also where you will place the column headers. For the AnchorViewCell argument, type in A14 to mark that row as the top of the visible report. This sets the top of the report that will be visible to the user. 
+**Step 2:** In the FeezePanesCell argument, input **A22**. This will set the row that will be frozen above A22, and also where you will place the column headers. For the AnchorViewCell argument, type in A14 to mark that row as the top of the visible report. This sets the top of the report that will be visible to the user. 
 
 ![](/images/L-Create-CustOrders/29.png)
 <br>
   
 
 
-**Step 3:** Use JFreezePanes to toggle panes off and on. Go to the [ **Quick Tools** ](wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools) menu in the INTERJECT Ribbon, then click **Freeze/Unfreeze** Panes.
+**Step 3:** Use JFreezePanes to toggle panes off and on. Go to the [ **Quick Tools** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools) menu in the INTERJECT Ribbon, then click **Freeze/Unfreeze** Panes.
 
 ![](/images/L-Create-CustOrders/30.png)
 <br>
@@ -270,7 +260,7 @@ Every report will be specific to the company's needs and best practices, but a c
 
 [ Updating the Report Library ](/wGetStarted/L-Updating-the-Report-Library.html)
 
-[ Interject Ribbon Menu Items ](wGetStarted/INTERJECT-Ribbon-Menu-Items.html)
+[ Interject Ribbon Menu Items ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html)
 
 [ Basics of Report Formulas ](/wAbout/Basics-of-Report-Formulas.html)
 

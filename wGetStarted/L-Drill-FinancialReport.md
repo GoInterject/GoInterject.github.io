@@ -8,7 +8,7 @@ description: This is a drill for the PL Trend report that was created in a previ
 
 ##  **Overview**
 
-For this drill example you will use the **PL Trend** that was previously reviewed in the [ Financial Report - Walkthrough ](/wAbout/Financial-Report_128091561.html) . This time you will be drilling to a separate workbook instead of drilling to another worksheet in the same workbook. This can be very useful when there is a common report, such as one that shows general ledger detail, that can be used as a drill from several different reports and workbooks. You will be viewing that same example with the JE  (Journal Entry)  Query drill report. 
+For this drill example you will use the **PL Trend** that was previously reviewed in the [ Financial Report - Walkthrough ](/wAbout/Financial-Report.html) . This time you will be drilling to a separate workbook instead of drilling to another worksheet in the same workbook. This can be very useful when there is a common report, such as one that shows general ledger detail, that can be used as a drill from several different reports and workbooks. You will be viewing that same example with the JE  (Journal Entry)  Query drill report. 
 
 
 ###  Unfreezing the Report 
@@ -38,14 +38,14 @@ For this drill example you will use the **PL Trend** that was previously reviewe
 
 Continue setting up the drill formula. 
 
-**Step 1:** In cell G17, type [ **=ReportDrill()** ](/wIndex/61702556.html). Column G is fairly narrow, but it will simply overlap the cells to the right. Then click the **fx** button as illustrated below to bring up the Function Wizard. 
+**Step 1:** In cell G17, type [ **=ReportDrill()** ](/wIndex/ReportDrill.html). Column G is fairly narrow, but it will simply overlap the cells to the right. Then click the **fx** button as illustrated below to bring up the Function Wizard. 
 
 ![](/images/L-Drill-Financial/04.png)
 <br>
   
 
 
-**Step 2:** In previous drill exercises you have used the ReportCellToRun argument. That is only for drilling within the same workbook. In this example you are drilling to a separate workbook. Type **Interject_JEQuery** into the ReportCodeToRun argument as seen below. The Drill Code **Interject_JEQuery** was setup previously by adding the code to a Report Library report. You will learn how to setup a Drill Code in the page [ Lab Create: Updating the Report Library ](/wGetStarted/L10-Updating-the-Report-Library_62849583.html) later. 
+**Step 2:** In previous drill exercises you have used the ReportCellToRun argument. That is only for drilling within the same workbook. In this example you are drilling to a separate workbook. Type **Interject_JEQuery** into the ReportCodeToRun argument as seen below. The Drill Code **Interject_JEQuery** was setup previously by adding the code to a Report Library report. You will learn how to setup a Drill Code in the page [ Lab Create: Updating the Report Library ](/wGetStarted/L10-Updating-the-Report-Library.html) later. 
 
 ![](/images/L-Drill-Financial/05.png)
 <br>
@@ -166,7 +166,7 @@ When you click away from TransferPairs, it shows a red **#NAME** ? to the right 
 
 ###  Executing the Drill 
 
-**Step 1:** Use [ **Pull Data** ](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html) to pull the report. You can leave the panes open for the moment. They will not affect the drill feature. 
+**Step 1:** Use [ **Pull Data** ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) to pull the report. You can leave the panes open for the moment. They will not affect the drill feature. 
 
 ![](/images/L-Drill-Financial/18.png)
 <br>

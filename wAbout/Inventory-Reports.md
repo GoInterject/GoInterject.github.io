@@ -5,28 +5,14 @@ keywords: [walkthrough, inventory reports, drill]
 description: This lab is a basic inventory example for tracking product quantities. In this walk-through, you will open a summary of our product categories and total quantities. You will then drill into the Inventory Detail tab to view specific products within that category
 ---
 
-##  **Overview**   
----
+##  **Overview** 
 
 This lab is a basic inventory example for tracking product quantities. In this walk-through, you will open a summary of our product categories and total quantities. You will then drill into the Inventory Detail tab to view specific products within that category. There is also a secondary inventory option which allows us to view all of the categories, and the products within them, in a single sheet. 
-
-You can go directly to any part of this walk-through by clicking one of the links below.    
-
-
-  * ####  Navigating to the Inventory Reports 
-
-  * ####  Drilling to the Detail 
-
-  * ####  Return From Drill and Re-Drill 
-
-  * ####  Alternate Inventory Example 
-
-
 
 
 ###  Navigating to the Inventory Reports 
 
-**Step 1:** Navigate to the Inventory report page inside the INTERJECT Demos folder of the  [ Report Library ](/wAbout/Report-Library-Basics_61702517.html) . The Report Library is a central place for publishing reporting templates. It is versioned and centrally located. 
+**Step 1:** Navigate to the Inventory report page inside the INTERJECT Demos folder of the  [ Report Library ](/wAbout/Report-Library-Basics.html) . The Report Library is a central place for publishing reporting templates. It is versioned and centrally located. 
 
 ![](/images/Inventory/image2017-6-27_17-6-52.png)
 
@@ -37,7 +23,7 @@ You can go directly to any part of this walk-through by clicking one of the link
   
 
 
-To access the totals of in-stock items, just pull the data into the spreadsheet using the [ **Pull Data** ](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html) operation. 
+To access the totals of in-stock items, just pull the data into the spreadsheet using the [ **Pull Data** ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) operation. 
 
 ![](/images/Inventory/image2017-6-12_17-32-49.png)
 
@@ -53,7 +39,7 @@ Back to Top
 
 ###  Drilling to the Detail 
 
-**Step 1:** To drill, select the category you want to drill to then give it a double click. For this example, you are going to drill on **Grains/Cereals** . In this instance use the hyperlink drill which only requires the click of the mouse to be drilled on. [ Click here ](/wGetStarted/Drilling-Between-Reports_61702193.html) to read more on Drills. 
+**Step 1:** To drill, select the category you want to drill to then give it a double click. For this example, you are going to drill on **Grains/Cereals** . In this instance use the hyperlink drill which only requires the click of the mouse to be drilled on. [ Click here ](/wGetStarted/Drilling-Between-Reports.html) to read more on Drills. 
 
 ![](/images/Inventory/2.01-drilling-drill-on-grains-and-cereals.gif)   
 
@@ -101,7 +87,7 @@ When cleared, the sheet looks similar to the first category sheet.
   
 
 
-**Step 2:** Simply pull the data using the [ **Pull Data** ](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html) button to view the inventory data. 
+**Step 2:** Simply pull the data using the [ **Pull Data** ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) button to view the inventory data. 
 
 ![](/images/Inventory/image2017-6-9_14-22-56.png)
 
@@ -111,16 +97,6 @@ Now you can view every category and its detail all in one page, without any dril
 
 That is all there is to it. To learn more about modifying this report, [ click here ](/wGetStarted/128429185.html). 
 
-
-##  Related Links: 
-
-[ Lab 1.2 Modify: Inventory Report ](/wGetStarted/128429185.html)
-
-[ Lab 3.1 Inventory Fixed ](/wGetStarted/L3.1-Inventory-Fixed_128429456.html)
-
-[ INTERJECT Ribbon Menu Items ](INTERJECT-Ribbon-Menu-Items_83689479.html)
-
-[ Financial Report ](/wAbout/Financial-Report_128091561.html)
 
   
 

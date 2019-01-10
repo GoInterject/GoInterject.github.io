@@ -1,5 +1,5 @@
 ---
-title: Interject Documentation > FinCube - The Financial Cube
+title: FinCube - The Financial Cube
 layout: custom
 keywords: [fincube, overview, segment filter, dataportal, ]
 ---
@@ -8,26 +8,6 @@ keywords: [fincube, overview, segment filter, dataportal, ]
 The FinCube is a single Dataportal that supports a wide variety of reporting needs. It is included as part of the INTERJECT Financials for Spreadsheets application, and many of the segments can be customized for specific needs. In some ways, when combined with INTERJECT, this Dataportal report feature works like a pivot table with increased format and structure control. It is more manageable when scaling to hundreds of users. 
 
 Typically, FinCube is used for consolidated financial reports, including monthly trends, YTD comparisons, budgeting templates, and simple balance inquiries. Because of its scalability, FinCube may support up to 70% of a company's financial reporting formats. 
-
-There are a number of components discussed on this page, and you can go directly to any part by clicking one of the links below. 
-
-  * ###  Segment Filter Options 
-
-  * ###  Dataportal Parameters 
-
-  * ###  Segment Columns 
-
-  * ###  Group Columns 
-
-  * ###  Amount Columns 
-
-    1. ####  CYA Column Notation 
-
-    2. ####  ACT Column Notation 
-
-    3. ####  jColumnDef() Column Notation 
-
-
 
 
   
@@ -197,9 +177,9 @@ Since these notations are relative to a year and a period, it is important to sp
 
 ###  jColumnDef() Column Notation 
 
-The [ jColumnDef() ](/wIndex/jColumnDef_127965411.html) notation is the most recent addition to the column options and is the most flexible and intuitive in use. Instead of using a single text string to represent an amount, like CYA1 or Act, you can use the jColumnDef() function containing arguments for each of the 12 segments noted in the above DataPortal parameters. In this way, you can specify each component separately and more clearly. jColumnDef() arguments are essentially an additional filter level for each column you want to show. 
+The [ jColumnDef() ](/wIndex/jColumnDef.html) notation is the most recent addition to the column options and is the most flexible and intuitive in use. Instead of using a single text string to represent an amount, like CYA1 or Act, you can use the jColumnDef() function containing arguments for each of the 12 segments noted in the above DataPortal parameters. In this way, you can specify each component separately and more clearly. jColumnDef() arguments are essentially an additional filter level for each column you want to show. 
 
-It is important to emphasize that jColumnDef() goes beyond a source (Actual, Budget, fcast1 to fcast12), a year, and a period alone. These are the same segments (9, 10 and 12) that earlier notations (CTA and ACT) can only specify. jColumnDef also supports the remaining 12 segments and each can support the same filter options and groups noted above for DataPortal parameters explained in the [ FinCube ](/wApps/FinCube---The-Financial-Cube_127796359.html) DataPortal page. The result is a highly flexible method to create columns. 
+It is important to emphasize that jColumnDef() goes beyond a source (Actual, Budget, fcast1 to fcast12), a year, and a period alone. These are the same segments (9, 10 and 12) that earlier notations (CTA and ACT) can only specify. jColumnDef also supports the remaining 12 segments and each can support the same filter options and groups noted above for DataPortal parameters explained in the [ FinCube ](/wApps/FinCube---The-Financial-Cube.html) DataPortal page. The result is a highly flexible method to create columns. 
 
 The illustration below shows an example. In cells H2 and I2, the jColumnDef() function is entered into the column definition row instead of CYA1 or Act. The jColumnDef() function argument references the cells below it (rows 4 through 15) that notes all the segment options. In this example, the columns will return the Jan and Feb of 2017 actuals, since Period, Year and Source are the only segments used. 
 

@@ -118,9 +118,9 @@ Here is the example validation report for a pull data event on the customer agin
     DataType: money Length: 0 Set Value: [Blank] "" 
                   
 
-Open the report you need to troubleshoot, this example will use the [ CustomerAging ](/KB/HowToCreate/ModifyReport/CustomerAging.html) report. 
+Open the report you need to troubleshoot, this example will use the [ CustomerAging ](/wGetStarted/L-Create-CustomerAging.html) report. 
 
-**Step 1:** In the [ INTERJECT Ribbon ](/KB/InterjectRibbon.html) click the  **Validation Report** drop down (Click  **Advanced Menu** if you do not see the  **Formulas** section in the Interject Ribbon) 
+**Step 1:** In the [ INTERJECT Ribbon ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) click the  **Validation Report** drop down (Click  **Advanced Menu** if you do not see the  **Formulas** section in the Interject Ribbon) 
 
 ![](/images/error-reports/04.jpg)
 
@@ -194,7 +194,7 @@ To contact INTERJECT support:
 <br> 
 
 
-Some problems may occasionally require more extensive logging to identify and solve. For more information on **Reporting a Problem** using **Verbose Logging** see [ Troubleshooting App Errors ](/KB/HowToDevelop/Troubleshooting/AppErrors.html). 
+Some problems may occasionally require more extensive logging to identify and solve. For more information on **Reporting a Problem** using **Verbose Logging** see [ Troubleshooting App Errors ](/wTroubleshoot/App-Errors.html). 
 
 ###  Verifying that Parameters in Report Formulas are Correctly Ordered   
 

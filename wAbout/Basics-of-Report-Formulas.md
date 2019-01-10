@@ -7,14 +7,14 @@ description: At the top of INTERJECT reports is a section called report formulas
 
 ##  **Overview**
 ---
-Inside INTERJECT tabular reports there is a hidden configuration section at the top of the worksheet. Notice in the following screenshot how the [ Customer Aging ](/wAbout/Customer-Aging_128091294.html) report from the Walk-through begins at row 14? Above row 14 is a section devoted to the report configuration. The **Report Formulas** section is a common place where INTERJECT Report Formulas are added to direct the behavior of the report. Most users of reports will not have any need to view this area. For advanced users, there are various reasons to access these formulas. 
+Inside INTERJECT tabular reports there is a hidden configuration section at the top of the worksheet. Notice in the following screenshot how the [ Customer Aging ](/wAbout/Customer-Aging.html) report from the Walk-through begins at row 14? Above row 14 is a section devoted to the report configuration. The **Report Formulas** section is a common place where INTERJECT Report Formulas are added to direct the behavior of the report. Most users of reports will not have any need to view this area. For advanced users, there are various reasons to access these formulas. 
 
 
 ![](/images/BasicsReportFormulas/image2017-6-15_15-27-28.png)
 
 ###  Accessing the Report Formulas 
 
-**Step 1:** For this walk-through, you will use the Customer Collections report **** located in the INTERJECT Demos folder of the [ Report Library ](/wAbout/Report-Library-Basics.html). 
+**Step 1:** For this walk-through, you will use the Customer Collections report located in the INTERJECT Demos folder of the [ Report Library ](/wAbout/Report-Library-Basics.html). 
 
 ![](/images/BasicsReportFormulas/image2017-6-15_17-12-46.png)
 

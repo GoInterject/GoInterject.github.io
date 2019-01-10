@@ -4,21 +4,20 @@ layout: custom
 keywords: [create, financial, variable, report, financial cube, fincube]
 description: You will use the ReportRange() formula to review the financial group summaries for a location. With the financial groups retrieved, you will than expand to create a subtotaled financial statement so each subtotaled detail will expand and shrink with the data.
 ---
-* * *
 
 ##  **Overview**   
 
 
-The  [ ReportVariable() ](wIndex/ReportVariable.html) function is ideal for financial reports since it directs data into multiple specified ranges of a report that can grow and shrink with the data. In this example you are going to use the  [ Financial Cube  ](wIndex/FinCube---The-Financial-Cube.html) (FinCube) dataportal to create a financial statement from scratch. First you will use the [ ReportRange() ](wIndex/ReportRange.html)formula to review the financial group summaries for a location. With the financial groups retrieved, you will than expand to create a subtotaled financial statement so each subtotaled detail will expand and shrink with the data. 
+The  [ ReportVariable() ](/wIndex/ReportVariable.html) function is ideal for financial reports since it directs data into multiple specified ranges of a report that can grow and shrink with the data. In this example you are going to use the  [ Financial Cube  ](/wIndex/FinCube---The-Financial-Cube.html) (FinCube) dataportal to create a financial statement from scratch. First you will use the [ ReportRange() ](/wIndex/ReportRange.html)formula to review the financial group summaries for a location. With the financial groups retrieved, you will than expand to create a subtotaled financial statement so each subtotaled detail will expand and shrink with the data. 
 
 
 
 
 ###  Pulling Financial Data with FinCube Dataportal 
 
-To get started you will need to learn how to pull financial data from the INTERJECT Financials for Spreadsheets application. You will initially use [ ReportRange() ](wIndex/ReportRange.html) to pull a simple list of balances by account. 
+To get started you will need to learn how to pull financial data from the INTERJECT Financials for Spreadsheets application. You will initially use [ ReportRange() ](/wIndex/ReportRange.html) to pull a simple list of balances by account. 
 
-**Step 1:** Open a new worksheet and choose the [ **Report Builder** ](wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder) from the INTERJECT ribbon. For this example you will be using the [ **Interject_FinCube** ](wIndex/FinCube---The-Financial-Cube.html) dataportal. Select **Interject_FinCube** from the dataportal list and click the **Build Report Formula** button. 
+**Step 1:** Open a new worksheet and choose the [ **Report Builder** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder) from the INTERJECT ribbon. For this example you will be using the [ **Interject_FinCube** ](/wIndex/FinCube---The-Financial-Cube.html) dataportal. Select **Interject_FinCube** from the dataportal list and click the **Build Report Formula** button. 
 
 ![](/images/L-Create-FinancialVar/01.png)
 
@@ -58,7 +57,7 @@ Set the **ColDefRange** argument to **2:2** as shown below. This row is where yo
 <br> 
 
 
-Continue to input the Column Definitions. Enter **Segment1** in C2, **Segment1Name** in D2, **CYA1** in F2, **CYA2** in G2, and **CYA3** in H2. Segment1 in this demonstration represents a general ledger account. The notation CYA1 represents an amount, specifically for the _C_ urrent _Y_ ear _A_ ctuals for month _1_, January. The notation options for amounts are further discussed in this link [ FinCube - The Financial Cube ](wIndex/FinCube---The-Financial-Cube.html) but you can go through several examples in this exercise. 
+Continue to input the Column Definitions. Enter **Segment1** in C2, **Segment1Name** in D2, **CYA1** in F2, **CYA2** in G2, and **CYA3** in H2. Segment1 in this demonstration represents a general ledger account. The notation CYA1 represents an amount, specifically for the _C_ urrent _Y_ ear _A_ ctuals for month _1_, January. The notation options for amounts are further discussed in this link [ FinCube - The Financial Cube ](/wIndex/FinCube---The-Financial-Cube.html) but you can go through several examples in this exercise. 
 
 ![](/images/L-Create-FinancialVar/06.png)
 
@@ -93,7 +92,7 @@ Change the width of column D to **35** so you can see the full account descripti
 <br> 
 
 
-You can answer the question on how you are viewing the amounts were for the year 2002. In cell C25, it shows the filter that was used and it is set to **2002**. This will define what CYA (current year) is. There is also LYA (Last Year Actual) and others noted in the documentation l  ink [ FinCube - The Financial Cube ](wIndex/FinCube---The-Financial-Cube.html). Notice that you also defined a period 1 in cell C24. This will be the default period that you will use in the next notation example. 
+You can answer the question on how you are viewing the amounts were for the year 2002. In cell C25, it shows the filter that was used and it is set to **2002**. This will define what CYA (current year) is. There is also LYA (Last Year Actual) and others noted in the documentation l  ink [ FinCube - The Financial Cube ](/wIndex/FinCube---The-Financial-Cube.html). Notice that you also defined a period 1 in cell C24. This will be the default period that you will use in the next notation example. 
 
 ![](/images/L-Create-FinancialVar/11.png)
 
@@ -117,7 +116,7 @@ In column E (from the **Act** notation), you can see is the same as column F (fr
   
 
 
-Go further and change cell E2 to **Act(1)**. The suffix **(1)** will adjust the period by one. By adding this the amounts returned should equal column G, Feb 2002. You can use **(-1)** to go the other direction for previous months. You can review further notation options in the link  [ FinCube - The Financial Cube ](wIndex/FinCube---The-Financial-Cube.html). Re-pull the data. 
+Go further and change cell E2 to **Act(1)**. The suffix **(1)** will adjust the period by one. By adding this the amounts returned should equal column G, Feb 2002. You can use **(-1)** to go the other direction for previous months. You can review further notation options in the link  [ FinCube - The Financial Cube ](/wIndex/FinCube---The-Financial-Cube.html). Re-pull the data. 
 
 ![](/images/L-Create-FinancialVar/14.png)
 
@@ -152,7 +151,7 @@ Before moving to the next step, clear out the data. Click the **Pull Data** menu
 <br> 
 
 
-**Step 7:** Move on to the next amount notation that is much more flexible. By using a helper function  [ jColumnDef() ](/KB/ExcelFunctions/HelperFunctions/jColumnDef.html) in Column Definitions you can define the columns illustrated above and go much further in defining what each column should be. First make room to use this helper function. Insert 4 rows under row 2. Now label the new rows. In cell D3, type **Source:**. In cell D4 type **Period:**. In cell D5, type **Year:**. Format D3:D5 to be right aligned as well since that will look better. 
+**Step 7:** Move on to the next amount notation that is much more flexible. By using a helper function  [ jColumnDef() ](/wIndex/jColumnDef.html) in Column Definitions you can define the columns illustrated above and go much further in defining what each column should be. First make room to use this helper function. Insert 4 rows under row 2. Now label the new rows. In cell D3, type **Source:**. In cell D4 type **Period:**. In cell D5, type **Year:**. Format D3:D5 to be right aligned as well since that will look better. 
 
 ![](/images/L-Create-FinancialVar/19.png)
 

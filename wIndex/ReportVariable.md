@@ -1,5 +1,5 @@
 ---
-title: Interject Documentation > ReportVariable()
+title: ReportVariable()
 layout: custom
 keywords: [reportvariable, function]
 description: Directs a list of data into rows that include multiple ranges or sections where each can be subtotaled and formatted to make a financial statement or other report with sub groupings. 
@@ -86,7 +86,7 @@ ColDefRange
 </td>  
 <td>
 
-The Column Definition Range defining which columns from the database will be used by this function. Unlike the [ ReportRange ](/wIndex/61702199.html) function, ColDefRange in ReportFixed can only span a single row. 
+The Column Definition Range defining which columns from the database will be used by this function. Unlike the [ ReportRange ](/wIndex/ReportRange.html) function, ColDefRange in ReportFixed can only span a single row. 
 </td>  
 <td>
 
@@ -122,7 +122,7 @@ Parameters
 </td>  
 <td>
 
-Select cells which will be used as parameters for the Data Portal. The parameters must be selected in the same order specified in the Data Portal setup. The order can be checked by using the validation report . A [ report builder ](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html) will also list the parameters correctly to aid new report building. The cells must use INTERJECT's [ Param ](/wIndex/81756199.html)() function.  
+Select cells which will be used as parameters for the Data Portal. The parameters must be selected in the same order specified in the Data Portal setup. The order can be checked by using the validation report . A [ report builder ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) will also list the parameters correctly to aid new report building. The cells must use INTERJECT's [ Param ](/wIndex/Param.html)() function.  
 </td>  
 <td>
 
@@ -159,7 +159,7 @@ RetainRowColumns
 
 
 
-This can either be a string noting the names of the columns in the ColDefRange or a range that points to the ColDefRange items. The noted columns will be considered the key for the inserted row. When using this feature, rows are no longer cleared from the target range, but data are cleared still without deleting rows. The columns noted as **retained** are not cleared, while all other ColDef item columns are cleared. The purpose of this feature is to allow number trends to lead into forecasting calculations. On a data re-pull, it is critical the calculation formulas are not removed, but only data that is shown in the trend columns are updated.  [ See example here. ](/wGetStarted/Creating-a-Simple-Report_128408585.html)
+This can either be a string noting the names of the columns in the ColDefRange or a range that points to the ColDefRange items. The noted columns will be considered the key for the inserted row. When using this feature, rows are no longer cleared from the target range, but data are cleared still without deleting rows. The columns noted as **retained** are not cleared, while all other ColDef item columns are cleared. The purpose of this feature is to allow number trends to lead into forecasting calculations. On a data re-pull, it is critical the calculation formulas are not removed, but only data that is shown in the trend columns are updated.  [ See example here. ](/wGetStarted/Creating-a-Simple-Report.html)
 
 
 </td>  

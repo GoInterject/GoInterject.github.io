@@ -9,20 +9,6 @@ description: This lab is for controllers or accountants who work with financial 
 ---
 This lab is for controllers or accountants who work with financial data and spreadsheets. In this walk-through, you will open a Profit and Loss (PL) Trend report and drill into the supporting detail from the general ledger detail. The Journal Entry (JE) Query report will provide you account level detail and will allow for drills further into each journal entry. 
 
-You can go directly to any part of this walk-through by clicking one of the links below. 
-
-* ####  Navigating to the PLTrend Report 
-
-* ####  Modifying the Report 
-
-* ####  Grouped Detail in the Report 
-
-* ####  Drill to JE-Transaction 
-
-* ####  Drill Further into JE-Lookup   
-
-* ####  Report Example with Data Cells 
-
 To watch a quick walk-through video, click on the icon:  
 <br><a href="https://www.youtube.com/watch?v=13H24zWv7is&feature=youtu.be"><i class="fab fa-youtube fa-3x" style="color: #ff0000"></i></a> 
 
@@ -36,7 +22,7 @@ To watch a quick walk-through video, click on the icon:
 
 ![](/images/financial/image2017-6-16_16-36-39.png)   
 
-Now you are  ready to pull the data. Use the [ **Pull Data** ](wGetStarted\INTERJECT-Ribbon-Menu-Items.html#pull-data) button as shown below, or use the short key Ctrl-Shift-J. 
+Now you are  ready to pull the data. Use the [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) button as shown below, or use the short key Ctrl-Shift-J. 
 
 ![](/images/financial/image2017-8-8_14-15-34.png)   
 
@@ -48,7 +34,7 @@ It will just take a moment for our report to populate. The illustration below sh
 
 ###  Modifying the Report 
 
-**Step 1:** Now quickly add a few more columns to the report for June, July, and August. First clear the data so you have an empty template. Clear the data by selecting the [ **Pull Data** ](wGetStarted\INTERJECT-Ribbon-Menu-Items.html#pull-data) button again, but this time choose the [ **Clear** ](wGetStarted\INTERJECT-Ribbon-Menu-Items.html#pull-data) button. 
+**Step 1:** Now quickly add a few more columns to the report for June, July, and August. First clear the data so you have an empty template. Clear the data by selecting the [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) button again, but this time choose the [ **Clear** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) button. 
 
 ![](/images/financial/image2017-6-9_15-18-12.png)   
 

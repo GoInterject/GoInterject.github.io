@@ -12,7 +12,7 @@ Pivot tables are a flexible and valuable tool for analyzing data in Excel. INTER
 
 ###  Building the Support Tab 
 
-**Step 1:** In this exercise, you will use the Customer Collections Demo from a previous [ Walk-through ](/wAbout/Customer-Aging_128091294.html). This demo can be found in the Report Library under the INTERJECT Demo folder as shown below. 
+**Step 1:** In this exercise, you will use the Customer Collections Demo from a previous [ Walk-through ](/wAbout/Customer-Aging.html). This demo can be found in the Report Library under the INTERJECT Demo folder as shown below. 
 
 ![](/images/L-Create-PivotTable/01.png)
 
@@ -105,7 +105,7 @@ In the Year-Mth column in L21, type **=TEXT(I21,"yyyy-mm")**
 <br> 
 
 
-**Step 12:** Now that you have entered the fields, you can use [ **Pull Data** ](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html) on the report, filtering for companies with **Market** in their names. First type **Market** in the filter cell C1 
+**Step 12:** Now that you have entered the fields, you can use [ **Pull Data** ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) on the report, filtering for companies with **Market** in their names. First type **Market** in the filter cell C1 
 
 ![](/images/L-Create-PivotTable/14.jpg)
 
@@ -153,7 +153,7 @@ In the Year-Mth column in L21, type **=TEXT(I21,"yyyy-mm")**
 <br> 
 
 
-**Step 2:** Now set up the [ ReportRun() ](/wIndex/61702558.html) function. This will cause the target sheet to perform a [ **Pull Data** ](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html) or [ **Clear Data** ](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html) when Pull Data is triggered from the pivot table worksheet. 
+**Step 2:** Now set up the [ ReportRun() ](/wIndex/ReportRun.html) function. This will cause the target sheet to perform a [ **Pull Data** ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) or [ **Clear Data** ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) when Pull Data is triggered from the pivot table worksheet. 
 
 ![](/images/L-Create-PivotTable/19.png)
 
@@ -167,7 +167,7 @@ In the Year-Mth column in L21, type **=TEXT(I21,"yyyy-mm")**
 <br> 
 
 
-**Step 4:** Type **True** in the **RunEntireWorksheet** argument. And type **Pull** in the OnAction argument. This will trigger the second worksheet to run only when [ **Pull Data** ](https://interject.atlassian.net/wiki/content-only/viewpage.action?pageId=83689479&iframeId=fallback-mode&user_key=ff8080814d41a454014d440734dd0001&user_id=MariaH&xdm_e=https://interject.atlassian.net/&xsm_c=fallback-mode-fake-key__322604369852205&cp=/wiki&cv=0.0.0-fallback-mode&lic=none#InterjectRibbonMenuItems-PullData) is performed on the current pivot table worksheet. 
+**Step 4:** Type **True** in the **RunEntireWorksheet** argument. And type **Pull** in the OnAction argument. This will trigger the second worksheet to run only when [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) is performed on the current pivot table worksheet. 
 
 ![](/images/L-Create-PivotTable/21.png)
 
@@ -208,4 +208,4 @@ Now you can see that the table only pulled data from transactions occurring in 1
 <br> 
 
 
-For more ways to work with a pivot table, see the [ pivot table section ](/wAbout/Customer-Aging_128091294.html#CustomerAging-pivot) on the customer aging walk-through. 
+For more ways to work with a pivot table, see the [ pivot table section ](/wAbout/Customer-Aging.html#CustomerAging-pivot) on the customer aging walk-through. 

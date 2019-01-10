@@ -1,5 +1,5 @@
 ---
-title: Interject Documentation > ReportSave()
+title: ReportSave()
 layout: custom
 keywords: [reportsave, function]
 description: Used to save data back to data portal with Ctrl + Shift + U keystroke. 
@@ -117,7 +117,7 @@ Parameters
 </td>  
 <td>
 
-Select cells used as Parameters for the Data Portal. The cells must use INTERJECT's [ Param ](/wIndex/81756199.html)() function. 
+Select cells used as Parameters for the Data Portal. The cells must use INTERJECT's [ Param ](/wIndex/Param.html)() function. 
 </td>  
 <td>
 
@@ -161,8 +161,6 @@ FALSE
 
 YES 
 </td> </tr> </table>
-
-  * Note: the save process works by: ____________ 
 
 
 

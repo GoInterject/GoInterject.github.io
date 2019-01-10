@@ -1,5 +1,5 @@
 ---
-title: Interject Documentation > jRangeTag()
+title: jRangeTag()
 layout: custom
 keywords: [jrangetag, function]
 description: The jRangeTag() function is used to label or tag a range or a single cell with a custom name.

@@ -1,5 +1,5 @@
 ---
-title: Interject Documentation > jAcct()
+title: jAcct()
 layout: custom
 keywords: [jacct, function, chart of accounts]
 description: A helper function that specifies filters for up to six segments of a Chart of Accounts  

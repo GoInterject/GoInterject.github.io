@@ -10,12 +10,12 @@ description:
 
 This lab also details how to show or hide rows based on whether or not the rows contain an expected date value. There are multiple ways to accomplish this, however this lab only indicates explores one of the possibilities. This lab walks through how in a pinch situation where you are unable to contact the IT department and need to get a solution quickly. This approach is not part of the Best Practices, however will be a good bandaid. To totally solve the issue, the IT department will need to create a SQL parameter to link to the filter on the report. The SQL parameter in this instance has already been created, however, to have a SQL filter created contact your IT department. 
 
-In this example you will be using the  [ Customer Aging Detail  ](/wGetStarted/L3.4-Customer-Aging-Detail_128429387.html) Report you created earlier or use the steps below to navigate to the provided one in the report library. 
+In this example you will be using the  [ Customer Aging Detail  ](/wGetStarted/L3.4-Customer-Aging-Detail.html) Report you created earlier or use the steps below to navigate to the provided one in the report library. 
 
 
 ###  **Hiding Rows**
 
-**Step 1:** To begin, open the **Customer Collections** report in the [ Report Library ](/wAbout/Report-Library-Basics_61702517.html). 
+**Step 1:** To begin, open the **Customer Collections** report in the [ Report Library ](/wAbout/Report-Library-Basics.html). 
 
 ![](/images/L-Create-HideRowCol/01.png)
 
@@ -24,7 +24,7 @@ In this example you will be using the  [ Customer Aging Detail  ](/wGetStarted/L
 
 Now that you have the report, you can decide which rows you want to hide temporarily. Make sure you are in the tab labelled **CustomerAgingDetail**. 
 
-**Step 2:** Next you will unfreeze panes by going into [ Quick Tools ](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html) and select **Freeze/Unfreeze Panes**. 
+**Step 2:** Next you will unfreeze panes by going into [ Quick Tools ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) and select **Freeze/Unfreeze Panes**. 
 
 ![](/images/L-Create-HideRowCol/02.jpg)
 
@@ -145,7 +145,7 @@ Once the report is ready you can view how to the left of the data there is a col
 <br> 
 
 
-**Step 16:** Set cell **H42** to **No** then use the [ **Pull Data** ](https://interject.atlassian.net/wiki/content-only/viewpage.action?pageId=83689479&iframeId=fallback-mode&user_key=ff8080814d41a454014d440734dd0001&user_id=MariaH&xdm_e=https://interject.atlassian.net/&xsm_c=fallback-mode-fake-key__38187188987993936&cp=/wiki&cv=0.0.0-fallback-mode&lic=none#InterjectRibbonMenuItems-PullData) menu item to check your work.   
+**Step 16:** Set cell **H42** to **No** then use the [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) menu item to check your work.   
 
 ![](/images/L-Create-HideRowCol/18.jpg)
 
@@ -159,7 +159,7 @@ You will now only be able to view the invoices without expected dates.
 <br> 
 
 
-**Step 17:** Now that the formula is complete, you can reformat the page using [ Quick Tools ](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html) and Freeze the panes. 
+**Step 17:** Now that the formula is complete, you can reformat the page using [ Quick Tools ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) and Freeze the panes. 
 
 ![](/images/L-Create-HideRowCol/20.jpg)
 
@@ -170,7 +170,7 @@ You will now only be able to view the invoices without expected dates.
 
 In this next example our goal is too hide the rows that have a payment expected date and show the rows without one. 
 
-**Step 1:** To begin you will unfreeze the report using [ Quick Tools ](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html). 
+**Step 1:** To begin you will unfreeze the report using [ Quick Tools ](/wPortal/INTERJECT-Ribbon-Menu-Items.html). 
 
 ![](/images/L-Create-HideRowCol/21.png)
 

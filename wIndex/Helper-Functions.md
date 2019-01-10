@@ -1,5 +1,5 @@
 ---
-title: Interject Documentation > Helper Functions
+title: Helper Functions
 layout: custom
 keywords: [helper, functions]
 description: Helper Functions are functions that are often embedded into other parent functions to be leveraged into more specific and accurate functions or enhance their capabilities.

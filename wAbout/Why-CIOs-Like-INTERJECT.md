@@ -1,5 +1,5 @@
 ---
-title: Why CIO&#39;s Like INTERJECT
+title: Why CIO's Like INTERJECT
 layout: custom
 keywords: [CIO, about]
 description: The CIO has specific needs when a company is growing/

@@ -6,11 +6,11 @@ description: The walk-through shows how to update INTERJET to the newest version
 ---
 
 ##  **Overview**
----
 
 INTERJECT often comes out with new features and updates. When doing so, it is a priority to make updating INTERJECT as easy as possible, so that you can access these features. In this walk-through, you will see how to add these updates quickly. 
 
-To watch a quick walk-through video, click on the icon: [ ![](/images/Updating/youtube_icon.png) ](https://www.youtube.com/watch?v=-PVuTGZ1qz4&feature=youtu.be)
+To watch a quick walk-through video, click on the icon:  
+<br><a href="https://www.youtube.com/watch?v=-PVuTGZ1qz4&feature=youtu.be"><i class="fab fa-youtube fa-3x" style="color: #ff0000"></i></a>
 
 ###  Updating to the Newest Version of INTERJECT 
 
@@ -18,7 +18,7 @@ To watch a quick walk-through video, click on the icon: [ ![](/images/Updating/y
 
 ![](/images/Updating/image2017-6-19_8-51-50.png)
 
-**Step 2:** Once everything is saved, click the [ **Check for Updates** ](https://interject.atlassian.net/wiki/display/ID/Interject+Ribbon+Menu+Items#InterjectRibbonMenuItems-CheckUpdates) button in the INTERJECT ribbon 
+**Step 2:** Once everything is saved, click the [ **Check for Updates** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#check-for-updates) button in the INTERJECT ribbon 
 
 ![](/images/Updating/image2017-6-19_9-28-27.png)
 
@@ -52,13 +52,13 @@ And that is all there is to it, you have officially updated INTERJECT.
 
 ##  Related Links: 
 
-[ Logging In ](/wAbout/Logging-In_63275074.html)
+[ Logging In ](/wAbout/Logging-In.html)
 
-[ Report Library Basics ](/wAbout/Report-Library-Basics_61702517.html)
+[ Report Library Basics ](/wAbout/Report-Library-Basics.html)
 
-[ Working with INTERJECT ](/wAbout/Working-with-INTERJECT_61702912.html)
+[ Working with INTERJECT ](/wAbout/Working-with-INTERJECT.html)
 
-[ Real-World Walkthroughs ](/wAbout/Real-World-Walkthroughs_128091006.html)
+[ Real-World Walkthroughs ](/wAbout/Real-World-Walkthroughs.html)
 
   
 

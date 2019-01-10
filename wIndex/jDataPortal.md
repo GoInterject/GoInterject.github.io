@@ -11,7 +11,7 @@ description: jDataPortal() function is a helper function used by developers to f
 
 jDataPortal() function is a helper function used by developers to further leverage DataPortals. It can reduce the number of data connections used by INTERJECT in a report, speeding the report process and conserving server resources. It allows DataPortals to be re-used in the same report pull event, so multiple report functions can access the data in memory and place specific data in the tab using different methods. jDataPortal() can also be used to adjust the sort order and filter the data in memory before the it is presented. jDataportal can only be used inside of an [ INTERJECT data function ](Data-Functions-Landing.html) as a helper function.
 
-For users with the [ ClientAdmin ](/wPortal/INTERJECT-Roles_324468787.html) user role, jDataPortal() can also be used to redirect the connection, stored procedure, or API during testing.
+For users with the [ ClientAdmin ](/wPortal/INTERJECT-Roles.html) user role, jDataPortal() can also be used to redirect the connection, stored procedure, or API during testing.
 
 ### Function Arguments
 
@@ -22,14 +22,14 @@ For users with the [ ClientAdmin ](/wPortal/INTERJECT-Roles_324468787.html) user
 | Filter             | Filter using syntax that would normally follow a WHERE statement in SQL. For example, if only filtering customers that contain an s, see the below example. OR as well as AND SQL operators can be used. Additionally, other advanced SQL filter syntax is able to be utilized. |         | YES      |
 | OrderBy            | A sort can be added using syntax that would normally follow an "Order By" statement in SQL.                                                                                                                                                                                                                    |         | YES      |
 | CommandOverride    | Directs the data call to a different Stored Procedure or API command. This is used only for testing and can only be done by ClientAdmin or Editor roles.                                                                                                                                                       |         | YES      |
-| ConnectionOverride | Changes the Data Connection name used for testing. Only available for ClientAdmin or [Editor](/wPortal/INTERJECT-Roles_324468787.html) roles.|| YES      |
+| ConnectionOverride | Changes the Data Connection name used for testing. Only available for ClientAdmin or [Editor](/wPortal/INTERJECT-Roles.html) roles.|| YES      |
 
 ### Excel Formula Bar Example
 
 ```Excel
 jDataPortal("NorthwindMultiRecord_Pull",2,"[CompanyName] Like '%s%'","[CustomerID] ASC")
 ```
-A simpler form of this example can be found in our [Advanced Data Pull Lab](\wGetStarted\Advanced-Data-Pull_327516216.html).
+A simpler form of this example can be found in our [Advanced Data Pull Lab](/wGetStarted/Advanced-Data-Pull.html).
 
 ### Example Function Composition
 
@@ -45,6 +45,6 @@ A simpler form of this example can be found in our [Advanced Data Pull Lab](\wGe
 
 ### Usable In These Data Functions
 
-* [ReportRange()](ReportRange_61702199.html)
-* [ReportVariable()](ReportVariable_61702201.html)
-* [ReportFixed()](ReportFixed_61702203.html)
+* [ReportRange()](ReportRange.html)
+* [ReportVariable()](ReportVariable.html)
+* [ReportFixed()](ReportFixed.html)

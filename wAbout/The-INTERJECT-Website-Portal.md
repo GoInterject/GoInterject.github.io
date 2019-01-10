@@ -13,15 +13,15 @@ For all other data sources, a custom website API can be created to connect the d
   
 
 
-###  [ Logging In to the Interject Website Portal ](/wPortal/Logging-In-to-Website-Portal_142278762.html)
+###  [ Logging In to the Interject Website Portal ](/wPortal/Logging-In-to-Website-Portal.html)
 
 This section details how to log in to the INTERJECT website portal to get access to INTERJECT features. 
 
-###  [ Data Connections ](/wPortal/Data-Connections_324403237.html)
+###  [ Data Connections ](/wPortal/Data-Connections.html)
 
 A Connection is used with Data Portals so INTERJECT can connect to certain stored procedures within a database or to a custom website API. A single connection can be used by many Data Portals. 
 
-###  [ Data Portals ](/wPortal/Data-Portals_324665363.html)
+###  [ Data Portals ](/wPortal/Data-Portals.html)
 
 In this section you will quickly set up a connection to SQL Server and test it using the security context of the user from their Excel session. 
 
@@ -29,15 +29,15 @@ A Connection can be set up to connect directly to a database using a OLEDB or a 
 
 The following lists are examples of connection strings for SQL Server: 
 
-  * Example .Net Adapter connection string: `Server=myServerAddress;Database=myDataBase;Trusted_Connection=True;`
-  * Example OLEDB connection string: `Provider=SQLNCLI11;Server=myServerAddress;Database=myDataBase; Trusted_Connection=yes;` 
-  * Example of an ODBC connection string: `Driver={SQL Server Native Client 11.0};Server=myServerAddress;Database=myDataBase;Trusted_Connection=yes;` 
+  * Example .Net Adapter connection string: `Server=myServerAddress;Database=myDataBase;TrustedConnection=True;`
+  * Example OLEDB connection string: `Provider=SQLNCLI11;Server=myServerAddress;Database=myDataBase; TrustedConnection=yes;` 
+  * Example of an ODBC connection string: `Driver={SQL Server Native Client 11.0};Server=myServerAddress;Database=myDataBase;TrustedConnection=yes;` 
 
 
 
 See  [ https://www.connectionstrings.com/  ](https://www.connectionstrings.com/) for additional information on connection strings. 
 
-###  [ User Profile ](/wPortal/User-Profile_324763687.html)
+###  [ User Profile ](/wPortal/User-Profile.html)
 
 Managing Users and User Profiles is another commonly used area of the INTERJECT Website Portal. The role of Client Admin, has the ability to open the profile of a user by clicking on their name. The menu to the left includes the link **User Profile** as a shortcut to get to your own user profile.   
   

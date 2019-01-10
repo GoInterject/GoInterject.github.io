@@ -1,5 +1,5 @@
 ---
-title: "L13.1 Dev: Customer Aging Detail"
+title: "Lab Dev: Customer Aging Detail"
 layout: custom
 keywords: [Customer Aging Detail, example, walkthrough, SQL, dataportal, server connection]
 description: In this example, you will learn to create a third report, Customer Aging Detail, that will be drilled to from the Customer Aging Report. This report shows a customer's outstanding balance by individual invoice.
@@ -8,11 +8,11 @@ description: In this example, you will learn to create a third report, Customer 
 
 ##  **Overview**
 
-In this example, you will learn to create a third report, Customer Aging Detail, that will be drilled to from the Customer Aging Report. This report shows a customer's outstanding balance by individual invoice. The Aging Detail is a more complex report than shown in the earlier lab [ Lab Developer: Customer Orders ](wGetStarted/L-Dev-CustomerOrders_324403205.html) , because it leverages two report formulas to create a report with subtotals. You should have already seen the Customer Aging Detail report while reviewing the business use case in the [ **Customer Aging in Real-World Walkthroughs** ](/wAbout/Customer-Aging_128091294.html) . 
+In this example, you will learn to create a third report, Customer Aging Detail, that will be drilled to from the Customer Aging Report. This report shows a customer's outstanding balance by individual invoice. The Aging Detail is a more complex report than shown in the earlier lab [ Lab Developer: Customer Orders ](/wGetStarted/L-Dev-CustomerOrders.html) , because it leverages two report formulas to create a report with subtotals. You should have already seen the Customer Aging Detail report while reviewing the business use case in the [ **Customer Aging in Real-World Walkthroughs** ](/wAbout/Customer-Aging.html). 
 
 ###  Verifying the Data Connection 
 
-Because this report uses the same database as [ Lab Developer: Customer Aging Detail ](wGetStarted/L-Dev-CustomerAgingDetail_324435969.html) , you do not need to create another data connection. The same connection can be used for this report. The connection created in the previous example was named **NorthwindExampleDB_MyName** and your own data connection likely had your name in the suffix. 
+Because this report uses the same database as [ Lab Developer: Customer Aging Detail ](/wGetStarted/L-Dev-CustomerAgingDetail.html) , you do not need to create another data connection. The same connection can be used for this report. The connection created in the previous example was named **NorthwindExampleDB_MyName** and your own data connection likely had your name in the suffix. 
 
 ###  Copying and Modifying the Data Portals 
 
@@ -384,7 +384,7 @@ The full text code is shown below.
 
 At this point you, have a tested a new stored procedure that uses parameters to filter the results. You set up an INTERJECT data connection to go to your example database and you added another INTERJECT data portal to use that connection, which is mapped to the stored procedure that you just created. So now you are ready to build the spreadsheet report using two data portals. 
 
-The steps for building the spreadsheet report are in the lab [ Customer Aging Detail ](/wGetStarted/L3.4-Customer-Aging-Detail_128429387.html) . You have likely completed this in earlier training sessions. Repeat the instructions with your newly created data portals discussed in this topic. When you are done, your report should resemble the screenshot below. 
+The steps for building the spreadsheet report are in the lab [ Customer Aging Detail ](/wGetStarted/L3.4-Customer-Aging-Detail.html) . You have likely completed this in earlier training sessions. Repeat the instructions with your newly created data portals discussed in this topic. When you are done, your report should resemble the screenshot below. 
 
 ![](/images/L-Dev-CustAgingDetail/13.png)
 <br>

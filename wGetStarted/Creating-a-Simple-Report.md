@@ -11,11 +11,11 @@ Now that you know how to modify reports, you can take it one step further. In th
 
 Go directly to any walk-through by clicking one of the links below. 
 
-###  [ Lab 2.1 Create: Customer Aging Example ](wGetStarted/L-Create-CustomerAging_128429314.html)
+###  [ Lab Create: Customer Aging Example ](/wGetStarted/L-Create-CustomerAging.html)
 
-You will go through the process of building a Customer Aging report from scratch. It is a simple range report that will clearly illustrate how to use the  [ ReportRange() ](wIndex/ReportRange_61702199.html) formula. 
+You will go through the process of building a Customer Aging report from scratch. It is a simple range report that will clearly illustrate how to use the  [ ReportRange() ](/wIndex/ReportRange.html) formula. 
 
-###  [ Lab 2.2 Create: Customer Orders ](wGetStarted/L-Create-CustomerOrders_128421638.html)
+###  [ Lab Create: Customer Orders ](/wGetStarted/L-Create-CustomerOrders.html)
 
-This example walks through creating a Customer Orders report that is slightly different than the last. It's another good example of  the  [ ReportRange() ](wIndex/ReportRange_61702199.html) formula but uses two rows for each record to provide a more comprehensive presentation. 
+This example walks through creating a Customer Orders report that is slightly different than the last. It's another good example of  the  [ ReportRange() ](/wIndex/ReportRange.html) formula but uses two rows for each record to provide a more comprehensive presentation. 
 

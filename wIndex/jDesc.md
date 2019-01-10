@@ -1,5 +1,5 @@
 ---
-title: Interject Documentation > jDesc()
+title: jDesc()
 layout: custom
 keywords: [jdesc, function]
 description: This function is used to look up a context description based on a specific segment. 

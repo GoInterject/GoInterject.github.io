@@ -1,5 +1,5 @@
 ---
-title: Interject Documentation > ReportFixed()
+title: ReportFixed()
 layout: custom
 keywords: [reportfixed, function]
 description: Allows the report creator to insert data based on a coordinate match between a row marker and a column marker.  
@@ -89,7 +89,7 @@ ColDefRange
 </td>  
 <td>
 
-The Column Definition Range defining which columns from the database will be used by this function. Unlike the [ ReportRange ](/wIndex/61702199.html) function, ColDefRange in ReportFixed can only span a single row. 
+The Column Definition Range defining which columns from the database will be used by this function. Unlike the [ ReportRange ](/wIndex/ReportRange.html) function, ColDefRange in ReportFixed can only span a single row. 
 </td>  
 <td>
 
@@ -107,7 +107,7 @@ Parameters
 </td>  
 <td>
 
-Select cells which will be used as Parameters for the Data Portal. The cells must use Interject's [ Param ](/wIndex/81756199.html) () function. 
+Select cells which will be used as Parameters for the Data Portal. The cells must use Interject's [ Param ](/wIndex/Param.html) () function. 
 </td>  
 <td>
 

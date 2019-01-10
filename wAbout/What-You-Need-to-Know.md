@@ -38,11 +38,11 @@ The heart of INTERJECT's functionality is that reports and applications are stor
 
 ####  The INTERJECT data functionality is attached to Excel files 
 
-Save files, make new copies, open them again, and we can still update the report. Just open them in a computer with INTERJECT. Most types of reports ( [ Data Lists ](/wAbout/Tabular-vs-Data-Cells_61702447.html) ) are easily shareable to non-INTERJECT users via spreadsheet files. When a returned file is opened in INTERJECT, all data features are retained. 
+Save files, make new copies, open them again, and we can still update the report. Just open them in a computer with INTERJECT. Most types of reports ( [ Data Lists ](/wAbout/Tabular-vs-Data-Cells.html) ) are easily shareable to non-INTERJECT users via spreadsheet files. When a returned file is opened in INTERJECT, all data features are retained. 
 
 ####  The report library protects prior versions 
 
-When spreadsheet report templates are saved in the INTERJECT Report Library, they are available to others in an INTERJECT client profile. Users can open the file and use it. If a new version is uploaded to the Report Library, any user that selects that report will have the latest version. A file can always be saved in a personal folder to experiment with possible spreadsheet changes, without altering data. To help with new report development, the Report Library can handle the "Dev," "Test," and "Live" stages of a report life-cycle. Click [ here ](/wAbout/Report-Library-Basics_61702517.html) to learn more about the Report Library. 
+When spreadsheet report templates are saved in the INTERJECT Report Library, they are available to others in an INTERJECT client profile. Users can open the file and use it. If a new version is uploaded to the Report Library, any user that selects that report will have the latest version. A file can always be saved in a personal folder to experiment with possible spreadsheet changes, without altering data. To help with new report development, the Report Library can handle the "Dev," "Test," and "Live" stages of a report life-cycle. Click [ here ](/wAbout/Report-Library-Basics.html) to learn more about the Report Library. 
 
 ####  Easily work with files outside the report library 
 
@@ -50,11 +50,11 @@ Whether using file folders or systems like _SharePoint_ or [ Box.com ](http://Bo
 
 ####  Enhancing spreadsheets with Data List Report Formulas 
 
-Most INTERJECT reports and applications use INTERJECT [ Data List ](/wAbout/Tabular-vs-Data-Cells_61702447.html) report formulas. These special formulas use the rows on top of a spreadsheet to specify which columns are listed in the report and how they are presented. Columns can be moved or deleted, and new DataPortal supported columns can be added. Data Lists reports are designed for users to customize. 
+Most INTERJECT reports and applications use INTERJECT [ Data List ](/wAbout/Tabular-vs-Data-Cells.html) report formulas. These special formulas use the rows on top of a spreadsheet to specify which columns are listed in the report and how they are presented. Columns can be moved or deleted, and new DataPortal supported columns can be added. Data Lists reports are designed for users to customize. 
 
 ####  Enhancing spreadsheets with data cell formulas 
 
-[ Data Cells ](Tabular-vs-Data-Cells_61702447.html) are two specific spreadsheet formulas that bring any summarized value from a general ledger to any cell of a spreadsheet, so highly customized presentations or standard financial trends are easily created. Modifying Data Cell reports requires only fundamental spreadsheet knowledge using cell references and copy/paste. 
+[ Data Cells ](Tabular-vs-Data-Cells.html) are two specific spreadsheet formulas that bring any summarized value from a general ledger to any cell of a spreadsheet, so highly customized presentations or standard financial trends are easily created. Modifying Data Cell reports requires only fundamental spreadsheet knowledge using cell references and copy/paste. 
 
   
 

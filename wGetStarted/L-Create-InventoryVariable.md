@@ -9,11 +9,11 @@ description: In this example, you will use the report seen in the Inventory Walk
 ##  **Overview**   
 
 
-The [ ReportVariable() ](/KB/ExcelFunctions/ReportVariable.html) function directs data into multiple specified ranges of a report that can grow and shrink with the data. It is ideal for a financial report or any report that has subtotaled sections.  In this example, you will use the report seen in the [ Inventory Walk-through ](/KB/HowToUse/Walkthroughs/Inventory.html). Once completed all rows of the report **Inventory By Category with Detail** will be populated with a single ReportVariable() function. 
+The [ ReportVariable() ](/wIndex/ReportVariable.html) function directs data into multiple specified ranges of a report that can grow and shrink with the data. It is ideal for a financial report or any report that has subtotaled sections.  In this example, you will use the report seen in the [ Inventory Walk-through ](/wAbout/Inventory-Reports.html). Once completed all rows of the report **Inventory By Category with Detail** will be populated with a single ReportVariable() function. 
 
 ###  Report Variable 
 
-**Step 1:** Open the INTERJECT [ Report Library ](/KB/HowToUse/ReportLibraryBasics.html) and select the **Interject Inventory Demo** in the **Interject Demos** folder. 
+**Step 1:** Open the INTERJECT [ Report Library ](/wAbout/Report-Library-Basics.html) and select the **Interject Inventory Demo** in the **Interject Demos** folder. 
 
 ![](/images/L-Create-InventoryVar/01.png)
 
@@ -53,7 +53,7 @@ Scroll to the top, and  the full configuration area is seen  in the left of the 
 
 
 
-**Step 5:** Now create a new report formula. In cell C4 type [ **=ReportVariable()** ](/KB/ExcelFunctions/ReportVariable.html). 
+**Step 5:** Now create a new report formula. In cell C4 type [ **=ReportVariable()** ](/wIndex/ReportVariable.html). 
 
 ![](/images/L-Create-InventoryVar/06.png)
 

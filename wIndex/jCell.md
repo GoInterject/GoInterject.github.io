@@ -1,5 +1,5 @@
 ---
-title: Interject Documentation > jCell/jCellN()
+title: jCell/jCellN()
 layout: custom
 keywords: [jcell, function]
 descriptions: jCell retrieves data based on the provided parameters. 
@@ -42,7 +42,7 @@ FullAccount
 
 
 
-Filter text for up to six segments of a chart of accounts. Use the INTERJECT function [ jAcct() ](/wIndex/61702534.html) when more than a single segment is used as a filter. 
+Filter text for up to six segments of a chart of accounts. Use the INTERJECT function [ jAcct() ](/wIndex/jAcct.html) when more than a single segment is used as a filter. 
 
 
 </td>  
