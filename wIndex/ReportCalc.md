@@ -1,0 +1,158 @@
+---
+title: ReportCalc()
+layout: custom
+keywords: [reportcalc, function]
+description: ReportCalc executes a calculation on a worksheet or workbook. 
+---
+
+##  Function Summary 
+
+ReportCalc executes a calculation on a worksheet or workbook. It will calculate any excel function, which includes INTERJECT functions, as long as they are within its target scope. ReportCalc can be triggered on specific events such as a Pull, Save, Clear, and Run. 
+
+###  Function Arguments   
+  
+<table>  
+<tr>  
+<th>
+
+Parameter Name 
+</th>  
+<th>
+
+Description 
+</th>  
+<th>
+
+Default 
+</th>  
+<th>
+
+Optional 
+</th> </tr>  
+<tr>  
+<td>
+OnPullSaveOrBoth 
+</td>  
+<td>
+
+
+
+A switch that toggles which INTERJECT event ReportCalc will be executed on. There are three options: 
+
+  * "Pull" 
+  * "Save" 
+  * "Both" 
+
+
+</td>  
+<td>
+
+  
+
+</td>  
+<td>
+
+NO 
+</td> </tr>  
+<tr>  
+<td>
+
+OnClearRunOrBoth 
+</td>  
+<td>
+
+
+
+Another switch that toggles which INTERJECT event ReportCalc will be executed on. There are also three options: 
+
+  * "Clear" 
+  * "Run" 
+  * "Both" 
+
+
+</td>  
+<td>
+
+  
+
+</td>  
+<td>
+
+NO 
+</td> </tr>  
+<tr>  
+<td>
+
+SheetOrWorkbook 
+</td>  
+<td>
+
+
+
+SheetOrWorkbook determines the scope of information ReportCalc will calculate, and it only has two options: 
+
+  * "Sheet" 
+  * "Workbook" 
+
+
+</td>  
+<td>
+
+  
+
+</td>  
+<td>
+
+NO 
+</td> </tr>  
+<tr>  
+<td>
+
+SheetName 
+</td>  
+<td>
+
+This is only applicable if the chosen scope of the ReportCalc is "Sheet," as it specifies which sheet to run the calculations on. 
+</td>  
+<td>
+
+  
+
+</td>  
+<td>
+
+YES 
+</td> </tr>  
+<tr>  
+<td>
+
+Disabled 
+</td>  
+<td>
+
+This is a switch that disables the ReportCalc if the toggle is changed to "TRUE" 
+</td>  
+<td>
+
+FALSE 
+</td>  
+<td>
+
+YES 
+</td> </tr> </table>
+
+###  Function Composition 
+
+=ReportRun( 
+
+OnPullSaveOrBoth 
+
+,OnClearRunOrBoth 
+
+,SheetOrWorkbook 
+
+,SheetName 
+
+,Disabled 
+
+) 

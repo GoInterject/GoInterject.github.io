@@ -1,6 +1,8 @@
 ---
 title: ReportGrouping()
 layout: custom
+keywords: [reportgrouping, function]
+description: The ReportGrouping() INTERJECT formatting function is a triggered INTERJECT function. 
 ---
 
 ## Function Summary
@@ -18,7 +20,6 @@ The ReportGrouping() INTERJECT formatting function is a triggered INTERJECT func
 |Disabled| This disables the function if the value is "TRUE" and is used when testing a report.|FALSE|YES|
 
 ### Excel Formula Bar Example
-
 ```Excel
 ReportGrouping("Both","Run","Column","Collapse",FALSE)
 ```
@@ -36,7 +37,6 @@ An example of this function is currently in construction in our documentation la
 |Disabled|FALSE| This is left false since the ReportGrouping() function is active.|
 
 ### Trigger Combination List
-
 The execution of the ReportGrouping() formatting function is determined by a combination of an INTERJECT action and an INTERJECT event. An action is a pull or save whereas an event is a clear or a run.
 
 | Argument Name    | Function Event Trigger Options | Option Explanation                                                                            |
