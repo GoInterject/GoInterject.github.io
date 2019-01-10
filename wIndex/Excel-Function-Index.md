@@ -10,7 +10,7 @@ description: INTERJECT provides features by leveraging spreadsheet formulas that
 
 INTERJECT provides features by leveraging spreadsheet formulas that are familiar to many users. These formulas can be used to direct data into a spreadsheet, creating practical and adaptable reports. By adding report drills and navigation through additional spreadsheet formulas, these reports become a comprehensive reporting solution.
 
-## Data Funcions
+## Data Functions
 
 Data Functions are focused on getting specific data to the report in the right way and placed inside the spreadsheet. There are a variety of functions and options therein to give flexibility in what data is displayed.
 

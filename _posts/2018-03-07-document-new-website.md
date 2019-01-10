@@ -114,6 +114,12 @@ Discussing the different type of forums -
 https://www.a2hosting.com/blog/5-outstanding-forum-platforms-set-online-community/
 
 
+#### Discourse single sing on from Intjerject
+
+How to setup single sign on from Interject 
+https://meta.discourse.org/t/official-single-sign-on-for-discourse-sso/13045
+
+
 [zapier]: https://zapier.com
 [pages.github]: https://help.github.com/articles/what-is-github-pages/
 [Discourse]: https://www.discourse.org/
