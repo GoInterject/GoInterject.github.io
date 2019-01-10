@@ -15,17 +15,17 @@ The INTERJECT Ribbon has several options designed to help customize the reportin
 
 | **Simple Menu**                                                                              | **Advanced Menu**                                                                            |
 |----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| [Report Library](/wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#report-library)      | [Validation Report](wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#validation-report) |
-| [Pull Data](/wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#pull-data)                | [JSON](wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#json)                           |
-| [Save Data](/wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#save-data)                | [Diagnostics](wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#diagnostics)             |
-| [Drill on Data](wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#drill-on-data)         | [Check for Updates](wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#check-for-updates) |
-| [Return From Drill](wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#return-from-drill) | [System](wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#system)                       |
-| [Custom Commands](wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#custom-commands)     | [Online Training](wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#online-training)     |
-| [Quick Tools](wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#quick-tools)             | [User Support](wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#user-support)           |
-| [Create Binder](wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#create-binder)         | [About INTERJECT](wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#about-interject)     |
-| [Export Book](wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#export-book)             |                                                                                              |
-| [Report Builder](wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#report-builder)       |                                                                                              |
-| [Sheet Protector](wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#sheet-protector)     |                                                                                              |
+| [Report Library](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-library)      | [Validation Report](wGetStarted/INTERJECT-Ribbon-Menu-Items.html#validation-report) |
+| [Pull Data](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data)                | [JSON](wGetStarted/INTERJECT-Ribbon-Menu-Items.html#json)                           |
+| [Save Data](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data)                | [Diagnostics](wGetStarted/INTERJECT-Ribbon-Menu-Items.html#diagnostics)             |
+| [Drill on Data](wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data)         | [Check for Updates](wGetStarted/INTERJECT-Ribbon-Menu-Items.html#check-for-updates) |
+| [Return From Drill](wGetStarted/INTERJECT-Ribbon-Menu-Items.html#return-from-drill) | [System](wGetStarted/INTERJECT-Ribbon-Menu-Items.html#system)                       |
+| [Custom Commands](wGetStarted/INTERJECT-Ribbon-Menu-Items.html#custom-commands)     | [Online Training](wGetStarted/INTERJECT-Ribbon-Menu-Items.html#online-training)     |
+| [Quick Tools](wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools)             | [User Support](wGetStarted/INTERJECT-Ribbon-Menu-Items.html#user-support)           |
+| [Create Binder](wGetStarted/INTERJECT-Ribbon-Menu-Items.html#create-binder)         | [About INTERJECT](wGetStarted/INTERJECT-Ribbon-Menu-Items.html#about-interject)     |
+| [Export Book](wGetStarted/INTERJECT-Ribbon-Menu-Items.html#export-book)             |                                                                                              |
+| [Report Builder](wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder)       |                                                                                              |
+| [Sheet Protector](wGetStarted/INTERJECT-Ribbon-Menu-Items.html#sheet-protector)     |                                                                                              |
 
 * * *
 
@@ -60,7 +60,7 @@ The Report Library manages Excel company report files and their various versions
   
 
 
-[ Click here to learn more about the Report Library. ](/wAbout/Report-Library-Basics_61702517.html)
+[ Click here to learn more about the Report Library. ](/wAbout/Report-Library-Basics.html)
 
 ![](/images/InterjectRibbon/05.png)
 
@@ -77,7 +77,7 @@ The Pull Data function takes data from Data Portals and places it into an Excel 
   
 
 
-When you open the Report Library and select a report, you can either use the Pull Data button to retrieve the data or hit Ctrl-Shift-J. To view an example, please click [ here ](/wAbout/Real-World-Walkthroughs_128091006.html) . 
+When you open the Report Library and select a report, you can either use the Pull Data button to retrieve the data or hit Ctrl-Shift-J. To view an example, please click [ here ](/wAbout/Real-World-Walkthroughs.html) . 
 
   
 
@@ -129,7 +129,7 @@ The Drill process opens and runs a report containing detailed information. It pa
   
 
 
-See more about Drilling and Navigating in [ Drilling Between Reports. ](/wGetStarted/Drilling-Between-Reports_61702193.html) 
+See more about Drilling and Navigating in [ Drilling Between Reports. ](/wGetStarted/Drilling-Between-Reports.html) 
 
  ![](/images/InterjectRibbon/13.png)
 
@@ -272,7 +272,7 @@ When you select the Create Distribution button, it opens a sheet that allows you
 
 Once you have built a distribution sheet, this button runs the sheet and builds the new workbook.  ![](/images/InterjectRibbon/25.png)
 
-To read more on Exporting and Distributions please click [ here ](/wGetStarted/Exporting-Reports_93618178.html) . 
+To read more on Exporting and Distributions please click [ here ](/wGetStarted/Exporting-Reports.html) . 
 
 Back to Top 
 
@@ -287,7 +287,7 @@ The Report Builder creates a sample Excel report based on any existing Data Port
   
 
 
-Report builder offers the flexibility to build a ReportRange() and ReportFixed(). To read more [ click here ](/wGetStarted/Creating-a-Simple-Report_128408585.html) . 
+Report builder offers the flexibility to build a ReportRange() and ReportFixed(). To read more [ click here ](/wGetStarted/Creating-a-Simple-Report.html) . 
 
 ![](/images/InterjectRibbon/27.png)
 
@@ -392,7 +392,7 @@ Force Calc On Workbook | Forces Excel to calculate all formulas in the Workbook.
 | Clear Remembered Logings | |
 | Re-enable Protected Grouping | |
 | Initiate Session Controller | |
-| Check Connection | Allows user to test that the connection to a database can be established. To learn more, [ click here. ](/wPortal/Data-Connections_324403237.html) |
+| Check Connection | Allows user to test that the connection to a database can be established. To learn more, [ click here. ](/wPortal/Data-Connections.html) |
 
 ReportRange() 
 
@@ -507,13 +507,13 @@ Opening this window also shows user account credentials.
 
 ##  Related Links: 
 
-[ Report Library Basics ](/wAbout/Report-Library-Basics_61702517.html)
+[ Report Library Basics ](/wAbout/Report-Library-Basics.html)
 
-[ Real-World Walk-throughs ](/wAbout/Real-World-Walkthroughs_128091006.html)
+[ Real-World Walk-throughs ](/wAbout/Real-World-Walkthroughs.html)
 
-[ Using INTERJECT ](/wAbout/Using-INTERJECT_61702183.html)
+[ Using INTERJECT ](/wAbout/Using-INTERJECT.html)
 
-[ Working with INTERJECT ](/wAbout/Working-with-INTERJECT_61702912.html)
+[ Working with INTERJECT ](/wAbout/Working-with-INTERJECT.html)
 
 Back to Top 
 

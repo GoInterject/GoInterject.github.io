@@ -15,4 +15,4 @@ The INTERJECT website portal is a central place to manage INTERJECT client setti
 
 
 
-For a complete description of the data portal options and features, go to [ The INTERJECT Website Portal ](/wPortal/The-INTERJECT-Website-Portal_324665355.html) of this documentation. The following sections will walk through how to set up connections and data portals specific to the training examples. 
+For a complete description of the data portal options and features, go to [ The INTERJECT Website Portal ](/wPortal/The-INTERJECT-Website-Portal.html) of this documentation. The following sections will walk through how to set up connections and data portals specific to the training examples. 
