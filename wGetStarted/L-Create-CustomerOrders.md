@@ -8,7 +8,7 @@ description: This page illustrates the process of building a Customer Order repo
 
 ##  **Overview**
 
-This page illustrates the process of building a Customer Order report from scratch and uses the multi-row option to provide a more advanced presentation. Here you will get a better understating of the  [ ReportRange() ](wIndex/ReportRange_61702199.html) as well as JfreezePanes() function. 
+This page illustrates the process of building a Customer Order report from scratch and uses the multi-row option to provide a more advanced presentation. Here you will get a better understating of the  [ ReportRange() ](wIndex/ReportRange.html) as well as JfreezePanes() function. 
 
   * [**Building the Report**]()
 
@@ -22,7 +22,7 @@ This page illustrates the process of building a Customer Order report from scrat
 
 ###  Building the Report: 
 
-**Step 1:** This process begins with the INTERJECT [ **Report Builder** ](wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html)  . Open the Report Build as illustrated below. There is a drop down list of  [ Dataportals ](/wApps/Common-Dataportal-Index_127795984.html) that can be chosen  . An INTERJECT Dataportal is a pre-configured data query that is setup so spreadsheet users can easily direct data into their own spreadsheet reports. Dataportals can be setup to access databases or cloud data and are either setup by INTERJECT developers or an IT team. 
+**Step 1:** This process begins with the INTERJECT [ **Report Builder** ](wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder)  . Open the Report Build as illustrated below. There is a drop down list of  [ Dataportals ](/wApps/Common-Dataportal-Index.html) that can be chosen  . An INTERJECT Dataportal is a pre-configured data query that is setup so spreadsheet users can easily direct data into their own spreadsheet reports. Dataportals can be setup to access databases or cloud data and are either setup by INTERJECT developers or an IT team. 
 ![](/images/L-Create-CustOrders/01.png)
 <br>
 
@@ -45,7 +45,7 @@ A new sheet should be added that looks like the screenshot below. Now the report
   
 
 
-**Step 2:** Now use the [ **Pull on Data** ](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html) menu item to grab the data.   
+**Step 2:** Now use the [ **Pull on Data** ](/wPortal/INTERJECT-Ribbon-Menu-Items.html#pulldata) menu item to grab the data.   
 ![](/images/L-Create-CustOrders/05.png)
 <br>
   
@@ -196,7 +196,7 @@ Below is an example of what a Formatting Range might look like. It is okay to le
   
 
 
-**Step 5:** Before pulling the data, you need to edit the [ ReportRange() ](wIndex/ReportRange_61702199.html) Formula in C10 so that it uses the Column Definition and Formatting Range set in the previous steps. 
+**Step 5:** Before pulling the data, you need to edit the [ ReportRange() ](wIndex/ReportRange.html) Formula in C10 so that it uses the Column Definition and Formatting Range set in the previous steps. 
 
 ![](/images/L-Create-CustOrders/24.png)
 <br>
@@ -224,7 +224,7 @@ The report should look something like this. Note that the text gets overwritten 
 
 ###  Final Steps 
 
-**Step 1:** Now setup a [ jFreezePanes ](/wIndex/jFreezePanes_128552956.html) function so you can quickly unfreeze and freeze the panes at the correct position. First, setup the jFreezePane function in cell F10 by going into the report formulas section and typing **=jFreezePanes()** , then click the **fx** button to open the Formula Wizard. 
+**Step 1:** Now setup a [ jFreezePanes ](/wIndex/jFreezePanes.html) function so you can quickly unfreeze and freeze the panes at the correct position. First, setup the jFreezePane function in cell F10 by going into the report formulas section and typing **=jFreezePanes()** , then click the **fx** button to open the Formula Wizard. 
 
 ![](/images/L-Create-CustOrders/28.png)
 <br>
@@ -238,7 +238,7 @@ The report should look something like this. Note that the text gets overwritten 
   
 
 
-**Step 3:** Use JFreezePanes to toggle panes off and on. Go to the [ **Quick Tools** ](wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html) menu in the INTERJECT Ribbon, then click **Freeze/Unfreeze** Panes.
+**Step 3:** Use JFreezePanes to toggle panes off and on. Go to the [ **Quick Tools** ](wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools) menu in the INTERJECT Ribbon, then click **Freeze/Unfreeze** Panes.
 
 ![](/images/L-Create-CustOrders/30.png)
 <br>
@@ -264,15 +264,15 @@ Every report will be specific to the company's needs and best practices, but a c
 
 ##  Related Links: 
 
-[ Customer Aging ](/wAbout/Customer-Aging_128091294.html)
+[ Customer Aging ](/wAbout/Customer-Aging.html)
 
-[ Modify: Customer Aging ](/wGetStarted/128428927.html)
+[ Modify: Customer Aging ](/wGetStarted/L-Modify-CustomerAgin.html)
 
-[ Updating the Report Library ](/wGetStarted/L10-Updating-the-Report-Library_62849583.html)
+[ Updating the Report Library ](/wGetStarted/L-Updating-the-Report-Library.html)
 
-[ Interject Ribbon Menu Items ](wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html)
+[ Interject Ribbon Menu Items ](wGetStarted/INTERJECT-Ribbon-Menu-Items.html)
 
-[ Basics of Report Formulas ](/wAbout/Basics-of-Report-Formulas_61702189.html)
+[ Basics of Report Formulas ](/wAbout/Basics-of-Report-Formulas.html)
 
   
 

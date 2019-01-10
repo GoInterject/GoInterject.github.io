@@ -22,7 +22,7 @@ You can go directly to any part of this walk-through by clicking one of the link
 
 ###  Navigating to the Aging Summary 
 
-**Step 1:** Open the report **INTERJECT Customer Collections** under the INTERJECT Demos  in the [ Report Library ](https://interject.atlassian.net/wiki/display/ID/Report+Library+Basics) . 
+**Step 1:** Open the report **INTERJECT Customer Collections** under the INTERJECT Demos  in the [ Report Library ](wAbout/Report-Library-Basics.html) . 
 
 ![](attachments/128091294/129568273.png)
 
@@ -30,7 +30,7 @@ This will bring up the Customer Aging Summary.
 
 ![](attachments/128091294/128404716.png)
 
-**Step 2:** You can retrieve the data by clicking  [ **Pull Data** ](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html) in the INTERJECT menu and clicking **Pull Data** in the subsequent popup. 
+**Step 2:** You can retrieve the data by clicking  [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#pull-data) in the INTERJECT menu and clicking **Pull Data** in the subsequent popup. 
 
 ![](attachments/128091294/128369916.png)
 
@@ -42,7 +42,7 @@ This will populate the data into the spreadsheet.
 
 ![](attachments/128091294/128361857.png)
 
-Now use [ Pull Data ](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html) again to refresh the data. 
+Now use [ Pull Data ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) again to refresh the data. 
 
 ![](attachments/128091294/128369955.png)
 
@@ -54,7 +54,9 @@ Back to Top
 
 ###  Drilling into the Aging Detail 
 
-**Step 1** : Now, use the [ **Drill** ](https://interject.atlassian.net/wiki/display/ID/Interject+Ribbon+Menu+Items#InterjectRibbonMenuItems-DrillData) operation  on the Customer Aging Detail report for a closer look at the overdue invoices. Here you can select any cell on the row below because as long as you select a cell on the row with the overdue invoices the [ **Drill** ](https://interject.atlassian.net/wiki/content-only/viewpage.action?pageId=83689479&iframeId=fallback-mode&user_key=ff8080814d41a454014d440734dd0001&user_id=MariaH&xdm_e=https://interject.atlassian.net/&xsm_c=fallback-mode-fake-key__7710171127443668&cp=/wiki&cv=0.0.0-fallback-mode&lic=none#InterjectRibbonMenuItems-DrillData)will take us to the details of that client's invoices.  ![](attachments/128091294/128363066.png)   
+**Step 1** : Now, use the [ **Drill** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data) operation  on the Customer Aging Detail report for a closer look at the overdue invoices. Here you can select any cell on the row below because as long as you select a cell on the row with the overdue invoices the [ **Drill** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data)will take us to the details of that client's invoices.  
+
+![](attachments/128091294/128363066.png)   
 
 Once that cell is selected you can drill deeper into the data. Below are the descriptions for each step. 
 
@@ -81,11 +83,11 @@ Back to Top
 
 ###  Saving the Data 
 
-**Step 1:** Now that the notes are written down, you need click the [ **Save Data** ](https://interject.atlassian.net/wiki/display/ID/Interject+Ribbon+Menu+Items#InterjectRibbonMenuItems-SaveData) operation to save the notes back to the database. 
+**Step 1:** Now that the notes are written down, you need click the [ **Save Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data) operation to save the notes back to the database. 
 
 ![](attachments/128091294/129568557.png)
 
-**Step 2:** To do this, click the [ **Save Data** ](https://interject.atlassian.net/wiki/display/ID/Interject+Ribbon+Menu+Items#InterjectRibbonMenuItems-SaveData) menu in the INTERJECT Ribbon menu and the **Save Data** in the popup. 
+**Step 2:** To do this, click the [ **Save Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data) menu in the INTERJECT Ribbon menu and the **Save Data** in the popup. 
 
 ![](attachments/128091294/128370470.png)
 
@@ -93,16 +95,17 @@ Notice the Save Results column and ensure that it was updated correctly and ther
 
 ![](attachments/128091294/128370649.png)
 
-**Step 3:** Once this is complete, use [ **Clear** ](https://interject.atlassian.net/wiki/content-only/viewpage.action?pageId=83689479&iframeId=fallback-mode&user_key=ff8080814d41a454014d440734dd0001&user_id=MariaH&xdm_e=https://interject.atlassian.net/&xsm_c=fallback-mode-fake-key__7710171127443668&cp=/wiki&cv=0.0.0-fallback-mode&lic=none#InterjectRibbonMenuItems-PullData) and [ **Pull** ](https://interject.atlassian.net/wiki/content-only/viewpage.action?pageId=83689479&iframeId=fallback-mode&user_key=ff8080814d41a454014d440734dd0001&user_id=MariaH&xdm_e=https://interject.atlassian.net/&xsm_c=fallback-mode-fake-key__7710171127443668&cp=/wiki&cv=0.0.0-fallback-mode&lic=none#InterjectRibbonMenuItems-PullData) the Customer Aging Detail report to ensure the note is saved in the database.    
+**Step 3:** Once this is complete, use [ **Clear** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) and [ **Pull** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) the Customer Aging Detail report to ensure the note is saved in the database.    
+
 ![](attachments/128091294/128370922.png)
 
-Clicking the [ **Clear** ](https://interject.atlassian.net/wiki/content-only/viewpage.action?pageId=83689479&iframeId=fallback-mode&user_key=ff8080814d41a454014d440734dd0001&user_id=MariaH&xdm_e=https://interject.atlassian.net/&xsm_c=fallback-mode-fake-key__4258975169163317&cp=/wiki&cv=0.0.0-fallback-mode&lic=none#InterjectRibbonMenuItems-PullData) operation will remove any data that was pulled into the spreadsheet. 
+Clicking the [ **Clear** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) operation will remove any data that was pulled into the spreadsheet. 
 
 ![](attachments/128091294/128362550.png)   
 
 Notice that the filters are not cleared, so a re-pull is easy. 
 
-**Step 4:** Now you will use the [ **Pull Data** ](https://interject.atlassian.net/wiki/display/ID/Interject+Ribbon+Menu+Items#InterjectRibbonMenuItems-PullData) operation the data again to ensure it is completely refreshed. 
+**Step 4:** Now you will use the [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) operation the data again to ensure it is completely refreshed. 
 
 ![](attachments/128091294/128371129.png)
 
@@ -126,7 +129,7 @@ For this example,you are going to use a Company Name **Market** filter to narrow
 
 ![](attachments/128091294/128361333.png?width=880)   
 
-**Step 2:** Now lets use [ **Pull Data** ](https://interject.atlassian.net/wiki/content-only/viewpage.action?pageId=83689479&iframeId=fallback-mode&user_key=ff8080814d41a454014d440734dd0001&user_id=MariaH&xdm_e=https://interject.atlassian.net/&xsm_c=fallback-mode-fake-key__7710171127443668&cp=/wiki&cv=0.0.0-fallback-mode&lic=none#InterjectRibbonMenuItems-PullData) to retrieve the data. 
+**Step 2:** Now lets use [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) to retrieve the data. 
 
 ![](attachments/128091294/129568892.png?width=857)
 
@@ -144,21 +147,21 @@ If you want even more specific detail though, such as month-to-month information
 
 ![](attachments/128091294/128298833.gif?width=200)
 
-Notice that you do not need to use the[ **Pull Data** ](https://interject.atlassian.net/wiki/content-only/viewpage.action?pageId=83689479&iframeId=fallback-mode&user_key=ff8080814d41a454014d440734dd0001&user_id=MariaH&xdm_e=https://interject.atlassian.net/&xsm_c=fallback-mode-fake-key__7710171127443668&cp=/wiki&cv=0.0.0-fallback-mode&lic=none#InterjectRibbonMenuItems-PullData) is needed to view the new layouts. 
+Notice that you do not need to use the[ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) is needed to view the new layouts. 
 
 ![](attachments/128091294/128299178.png)
 
-From here you can see that Save-a-lot Markets had large invoices in July and August that are not payed. However, you can also see the effort to pay off those invoices in the following months by the over-payments they have made.  Take note of this activity and proceed to the next report: [ Inventory Report Walk-Through. ](https://interject.atlassian.net/wiki/display/ID/Inventory+Reports)
+From here you can see that Save-a-lot Markets had large invoices in July and August that are not payed. However, you can also see the effort to pay off those invoices in the following months by the over-payments they have made.  Take note of this activity and proceed to the next report: [ Inventory Report Walk-Through. ](wAbout/Inventory-Reports.html)
 
 ##  Related Links: 
 
-[ Lab 1.1 Modify: Customer Aging ](/wGetStarted/128428927.html)
+[ Lab 1.1 Modify: Customer Aging ](wGetStarted/L-Modify-CustomerAging.html)
 
-[ Lab 2.1 Create: Customer Aging ](/wGetStarted/128429314.html)
+[ Lab 2.1 Create: Customer Aging ](/wGetStarted/L-Create-CustomerAging.html)
 
-[ INTERJECT Ribbon Menu Items ](INTERJECT-Ribbon-Menu-Items_83689479.html)
+[ INTERJECT Ribbon Menu Items ](INTERJECT-Ribbon-Menu-Items.html)
 
-[ Inventory Reports ](/wAbout/Inventory-Reports_128091499.html)
+[ Inventory Reports ](/wAbout/Inventory-Reports.html)
 
   
 

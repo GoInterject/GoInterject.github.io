@@ -21,7 +21,7 @@ There are three parts to building a simple report, click one of the links below 
 
 ###  Building the Report 
 
-**Step 1:** This process begins with the INTERJECT [ Report Builder ](https://interject.atlassian.net/wiki/display/ID/Interject+Ribbon+Menu+Items#InterjectRibbonMenuItems-ReportBuilder) . Open the Report Build as illustrated below. There is a drop down list of  [ Dataportals ](/wApps/Common-Dataportal-Index_127795984.html) that can be chosen  . An INTERJECT Dataportal is a pre-configured data query that is setup so spreadsheet users can easily direct data into their own spreadsheet reports. Dataportals can be setup to access databases or cloud data and are either setup by INTERJECT developers or the IT team. 
+**Step 1:** This process begins with the INTERJECT [ Report Builder ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder) . Open the Report Build as illustrated below. There is a drop down list of  [ Dataportals ](/wApps/Common-Dataportal-Index.html) that can be chosen  . An INTERJECT Dataportal is a pre-configured data query that is setup so spreadsheet users can easily direct data into their own spreadsheet reports. Dataportals can be setup to access databases or cloud data and are either setup by INTERJECT developers or the IT team. 
 
 ![](/images/L-Create-CustAging/01.png)   
 
@@ -42,7 +42,7 @@ A new sheet should be added that looks like the screenshot below. Now the report
 ![](/images/L-Create-CustAging/04.png)
 <br>
 
-**Step 2:** Next, **select** the [ ReportRange() ](/wIndex/ReportRange_61702199.html) formula in order to delete its reference to **IsMissingCRMID** that you just removed above. Go to cell C6 and edit the formula. Remove the reference by removing C19 from the ReportRange formula. 
+**Step 2:** Next, **select** the [ ReportRange() ](/wIndex/ReportRange.html) formula in order to delete its reference to **IsMissingCRMID** that you just removed above. Go to cell C6 and edit the formula. Remove the reference by removing C19 from the ReportRange formula. 
 <br>
  ![](/images/L-Create-CustAging/05.png) 
 <br>  
@@ -67,7 +67,7 @@ The report should look similar to the screenshot below. Now, put the filter valu
 <br>
 ###  Getting Started 
 
-**Step 1:** Next, use the [ **Pull Data** ](wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html) menu item. 
+**Step 1:** Next, use the [ **Pull Data** ](wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) menu item. 
 <br>
  ![](/images/L-Create-CustAging/09.png)
 <br> 
@@ -159,7 +159,7 @@ The data pulled should look like below.
   
 
 
-**Step 2:** Next, you need to freeze the panes to hide the configuration area from the users. This can be done manually with the Excel menu item for freezing panes. But this is a good time to illustrate INTERJECT's jFreezePanes() feature. First, setup the [ jFreezePanes ](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html) function by entering **=jFreezePanes()** in F6 and click the **fx** button. 
+**Step 2:** Next, you need to freeze the panes to hide the configuration area from the users. This can be done manually with the Excel menu item for freezing panes. But this is a good time to illustrate INTERJECT's jFreezePanes() feature. First, setup the [ jFreezePanes ](wIndex/jFreezePanes.html) function by entering **=jFreezePanes()** in F6 and click the **fx** button. 
 <br>
 ![](/images/L-Create-CustAging/23.png)
 <br>
@@ -173,7 +173,7 @@ In the FeezePanesCell argument, input A21 to mark that row as the top of the vis
   
 
 
-Use the [ **Quick Tools** ](wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html) menu item in the INTERJECT Ribbon so you can easily freeze the panes using the jFreezePanes formula you just configured. 
+Use the [ **Quick Tools** ](wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools) menu item in the INTERJECT Ribbon so you can easily freeze the panes using the jFreezePanes formula you just configured. 
 <br>
 <img src="/images/L-Create-CustAging/25.png" height="750px" width="750px">
 <br>
@@ -194,22 +194,22 @@ Use the [ **Quick Tools** ](wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.htm
   
 
 
-[ Click here ](wAbout/Report-Library-Basics_61702517.html) to learn how to upload the new report to the Report Library. 
+[ Click here ](wAbout/Report-Library-Basics.html) to learn how to upload the new report to the Report Library. 
 
   
 
 
 ##  Related Links: 
 
-[ Customer Aging ](/wAbout/Customer-Aging_128091294.html)
+[ Customer Aging ](/wAbout/Customer-Aging.html)
 
-[ L1.1 Modify: Customer Aging ](wGetStarted/L-Modify-CustomerAging_128428927.html)
+[ L1.1 Modify: Customer Aging ](wGetStarted/L-Modify-CustomerAging.html)
 
-[ L10 Updating the Report Library ](/wGetStarted/L10-Updating-the-Report-Library_62849583.html)
+[ L10 Updating the Report Library ](/wGetStarted/L10-Updating-the-Report-Library.html)
 
-[ INTERJECT Ribbon Menu Items ](INTERJECT-Ribbon-Menu-Items_83689479.html)
+[ INTERJECT Ribbon Menu Items ](INTERJECT-Ribbon-Menu-Items.html)
 
-[ Basics of Report Formulas ](/wAbout/Basics-of-Report-Formulas_61702189.html)
+[ Basics of Report Formulas ](/wAbout/Basics-of-Report-Formulas.html)
 
   
 
