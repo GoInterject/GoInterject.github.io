@@ -1,6 +1,8 @@
 ---
 title: Formatting Functions
 layout: custom
+keywords: [formatting, functions, overview]
+description: Formatting Functions are focused on the report itself and does not impact or direct data in the report. These functions can improve the speed and presentation of which data can be understood, manipulated and seen in the report.
 ---
 
 ## **Formatting Functions Overview**

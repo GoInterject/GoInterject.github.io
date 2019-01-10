@@ -65,8 +65,6 @@
 	  }}();
 	</script>
 	-->
-	{% if site.GH_ENV == "gh_pages" %}
-	<meta name="robots" content="noindex">{% endif %}
 	<!-- favicon -->
 	<link rel="icon" type="image/x-icon" href="/favicons/docs@2x.ico" sizes="129x128">
 	<meta name="msapplication-TileImage" content="/favicons/docs@2x.ico">
@@ -74,17 +72,22 @@
 	<meta property="og:image" content="/favicons/docs@2x.ico"/>
 	<!-- metadata -->
 	
-
+	
     <link rel="stylesheet" href="/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/css/bootstrap.min.css">
 	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css">
 	<link id="pagestyle" rel="stylesheet" href="/css/style.css">
 
+	<!-- font awesome icons  -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<!-- Go get "Open Sans" font from Google -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	
+
+	{% if site.GH_ENV == "gh_pages" %}
+	<meta name="robots" content="noindex">
+	{% endif %}
 	{% if page.hide_from_sitemap %}<meta name="robots" content="noindex" />{% endif %}
-	
     {% seo %}
 </head>	
 
@@ -170,14 +173,22 @@
 								{% endcapture %}
 							{% endif %}
 							{{ content }}
-							<!-- tags -->
-							{% unless page.notags == true %}
+							<!-- keyword tags -->
+							<!-- {% unless page.notags == true %}
 							{% assign keywords = page.keywords | split:"," %}
-							{% for keyword in keywords %}{% assign strippedKeyword = keyword | strip %}
-							{% capture keywordlist %}{{ keywordlist }}<a href="/glossary/?term={{strippedKeyword}}">{{strippedKeyword}}</a>{% unless forloop.last %}, {% endunless %}{% endcapture %}
+							{% for keyword in keywords %}
+								{% assign strippedKeyword = keyword | strip %}
+								{% assign glossaryUrl = "/glossary/?term" %}
+								{% capture keywordlist %}{{ keywordlist }}
+									 Create tags
+									{{strippedKeyword}}
+									{% unless forloop.last %}, {% endunless %}
+								{% endcapture %}
 							{% endfor %}
-							{% if keywordlist.size > 0 %}<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span><span style="vertical-align: 2px">{{ keywordlist }}</span>{% endif %}
-							{% endunless %}
+							{% if keywordlist.size > 0 %}
+								<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span>
+								<span style="vertical-align: 2px">{{ keywordlist }}</span>{% endif %}
+							{% endunless %} -->
 							<!-- link corrections -->
               <script language="JavaScript">
 							var x = document.links.length;
@@ -243,7 +254,7 @@
                                         {% endif %}
 										<li><a href="https://github.com/gointerject/gointerject.github.io/issues/new?body=File: [{{ page.path }}](https://docs.gointerject.com{{ page.url }})"
 															class="nomunge"><i class="fa fa-check" aria-hidden="true"></i> Request docs changes</a></li>
-										<li><a href="http://www.gointerject.com/call-us/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<li><a href="http://www.gointerject.com/call-us/"><i class="fa fa-question" aria-hidden="true"></i> Get help</a></li>
 										<!-- toggle mode -->
 										<!-- Turn night mode on and off
 										<li>

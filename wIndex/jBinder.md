@@ -1,0 +1,71 @@
+---
+title: jBinder()
+layout: custom
+keywords: [jbinder, function]
+description: The jBinder function is designed to be used on an Excel report itself. 
+---
+
+## Function Summary
+
+The jBinder function is designed to be used on an Excel report itself. It is standalone and it cannot be embedded in other functions. It is used to generate settings automatically for the [Create Binder](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#create-binder) tool. It is meant to be used when [Data Cell](/wAbout/Tabular-vs-Data-Cells.html) activated reports are being exported and distributed. jBinder() will leverage cell values as inputs for the Create Binder tool fields. In order to default the settings when using jBinder(), you must use one jBinder() function per setting. Each OptionName argument has an associated TargetCell, more information can be found in the [Option Name List](jBinder.html#option-name-list) on this page.
+
+### Function Arguments
+
+| Argument Name | Description | Default | Optional |
+|---------------|-------------|---------|----------|
+| OptionName    | Associates a setting field in the Create Binder tool to the value of the TargetCell argument.                                                         |         | NO       |
+| TargetCell    | This is the value of the setting field in the Create Binder tool. It can utilize selected cell values, or string values depending on the option name value.|         | NO       |
+
+### Excel Formula Bar Examples
+
+```Excel
+   Ex1) jBinder("TabPrefix","PL_")
+   Ex2) jBinder("Segment1",L9)
+   Ex3) jBinder("SkipSheetMarker","TRUE")
+```
+An example of this function is currently in construction in our documentation labs. Check back soon for an example with more context.
+
+### Example Function Compositions
+
+**Example 1**
+
+| Argument Name | Example Mapping | Explanation |
+|---------------|-----------------|-------------|
+| FunctionName  | `=jBinder()`     |This is the excel function name used to call the function. It is only meant to be utilized directly on an Excel report and it is not designed to be embedded or have any embedded functions within it.|
+| OptionName    | "TabPrefix"     |This option name is used to append the TargetCell value to the beginning of the sheets created by the Create Binder tool. |
+| TargetCell    | "PL_"           |A string value that you customize.|
+
+**Example 2**
+
+| Argument Name |  Example Mapping  | Explanation |
+|---------------|-------------------|-------------|
+| Function Name | `=jBinder() `       |This is the excel function name used to call the function. It is only meant to be utilized directly on an Excel report and it is not designed to be embedded or have any embedded functions within it.|
+| OptionName    | "Segement1"      |The segment that will be iterated over by the Create Binder tool to create new tabs which will be Segment1|
+| TargetCell    | L9                |The value that will determine which items in the segment to create the binder tabs out of.|
+
+**Example 3**
+
+| Argument Name |  Example Mapping  | Explanation |
+|---------------|-------------------|-------------|
+| Function Name | `=jBinder() `       |This is the excel function name used to call the function. It is only meant to be utilized directly on an Excel report and it is not designed to be embedded or have any embedded functions within it.|
+| OptionName    | "SkipSheetMarker" |Calls the Create Binder tool to set the Skip Sheet Marker check box to either a checked state or an unchecked state.|
+| TargetCell    | "TRUE"            |Determines what the check state is in for the Skip Sheet Marker Option.|
+
+### Option Name List 
+
+| Option Name                  | TargetCell |
+|------------------------------|------------|
+| TabPrefix                    | String value that you want to append to the beginning of each tab created by the Create Binder tool.|
+| MarkerCell                   | This is left blank.|
+| TabSetting                   | This can either be "IncludeSheet" or "ExcludeSheet". It indicates to the Create Binder tool whether a sheet should be included in the new report that it will build.|
+| DefaultSaveFileName          | When using the [Export Book]() tool, this will automatically set the save name for a new file.           |
+| Default                      | This is left blank.|
+| CreateNewWorkbook            | This can only be a "TRUE" or "FALSE" value.            |
+| Segment[SegmentNumber]       | This is a cell value that can be associated to a Segment so it returns the segment that can be iterated through based upon the selected cell value.|
+| WhenNewTabAlreadyExists      | This has three options: "Replace","Do Not Add","Add with Altered Name". |
+| TabSuffix                    | String value that you want to append to the end of each tab created by the Create Binder tool.|
+| CustomItemList               | A single string encasing a comma delimited list that the Create Binder tool will iterate on.|
+| SkipSheetMarker              | This can only be a "TRUE" or "FALSE" value.           |
+| CreateDetailTabs             | This can only be a "TRUE" or "FALSE" value.           |
+| CreateSummaryTab             | This can only be a "TRUE" or "FALSE" value.           |
+| CreateDetailTabs             | This can only be a "TRUE" or "FALSE" value.           |
