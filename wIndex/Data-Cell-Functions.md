@@ -1,5 +1,5 @@
 ---
-title: Interject Documentation > Data Cell Functions
+title: Data Cell Functions
 layout: custom
 keywords: [data cell, overview]
 description: Data Cells are focused on a single formula which can be placed anywhere in the spreadsheet and can ask for any financial number or summary from it. Once this single formula approach is understood, there is no limit to the combinations that can be created.

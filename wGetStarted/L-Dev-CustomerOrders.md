@@ -167,6 +167,6 @@ Fortunately, the documentation to build this report has already been presented i
   
 
 
-It is recommended to go to [Lab Create: Customer Orders](/wGetStarted/L-Create-CustomerOrders_128421638.html) to complete those steps again to reinforce the process. However, this time you can use your own Data Portal for the report. 
+It is recommended to go to [Lab Create: Customer Orders](/wGetStarted/L-Create-CustomerOrders.html) to complete those steps again to reinforce the process. However, this time you can use your own Data Portal for the report. 
 
 Back to Top 

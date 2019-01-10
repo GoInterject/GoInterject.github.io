@@ -12,7 +12,7 @@ In this page, you will go through the process of building a fixed Inventory repo
 
 ###  Building the Report 
 
-**Step 1:** Begin like you did when creating the Customer Aging report, with the Interject [ Report Builder ](/KB/InterjectRibbon.html#InterjectRibbonMenuItems-ReportBuilder). It is where you select the  [ DataPortal ](/KB/CommonDataPortals.html) that is needed for this particular report. 
+**Step 1:** Begin like you did when creating the Customer Aging report, with the Interject [ Report Builder ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder). It is where you select the  [ DataPortal ](/wIndex/Common-Dataportal-Index.html) that is needed for this particular report. 
 
 ![](/images/L-Create-InventoryFix/01.png) 
 
@@ -38,7 +38,7 @@ Delete rows 11 through 24 since they are not needed for this lesson. The page sh
 
 <br>
 
-**Step 3:** Because [ ReportRange() ](/KB/ExcelFunctions/ReportRange.html) is the most used pull function, the report builder builds one automatically. However, in this report you will be using the [ ReportFixed() ](/KB/ExcelFunctions/ReportDrill.html) function. Clear the ReportRange function in cell C6. 
+**Step 3:** Because [ ReportRange() ](/wIndex/ReportRange.html) is the most used pull function, the report builder builds one automatically. However, in this report you will be using the [ ReportFixed() ](/wIndex/ReportFixed.html) function. Clear the ReportRange function in cell C6. 
 
 ![](/images/L-Create-InventoryFix/05.png)
 
@@ -65,7 +65,7 @@ In C6, type **=ReportFixed()**, then click the **fx** button to bring up the Fun
 <br> 
 
 
-**Step 6:** In a [ ReportFixed ](/KB/ExcelFunctions/ReportFixed.html) function you need to define the Column Definition and Row Definition ranges. Using the Function Wizard, use B14:B26 for the  RowDefRange . For Column Definitions, use row 2 by typing **2:2** in the ColDefRange argument. 
+**Step 6:** In a [ ReportFixed ](/wIndex/ReportFixed.html) function you need to define the Column Definition and Row Definition ranges. Using the Function Wizard, use B14:B26 for the  RowDefRange . For Column Definitions, use row 2 by typing **2:2** in the ColDefRange argument. 
 
 ![](/images/L-Create-InventoryFix/09.png)
 
@@ -99,7 +99,7 @@ The final product should look similar to the example below.
 <br> 
 
 
-**Step 10:** Now select [ **Pull Data** ](/KB/InterjectRibbon.html#InterjectRibbonMenuItems-PullData) to view the data in the report. 
+**Step 10:** Now select [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) to view the data in the report. 
 
 ![](/images/L-Create-InventoryFix/14.png)
 

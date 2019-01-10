@@ -1,5 +1,5 @@
 ---
-title: Interject | Installing - Shared Computer
+title: Installing - Shared Computer
 layout: custom
 keywords: [Multiple Users, Server]
 description: This is the multi-user to one computer installation of INTERJECT.
@@ -11,7 +11,7 @@ The Per-Computer installation installs INTERJECT for multiple users on one compu
 
 ###  Installing INTERJECT on Multi-User Systems 
 
-**Step 1:** Log in to the **INTERJECT website portal** here: [ https://portal.gointerject.com ](https://portal.gointerject.com/login.html) . If you do not have an account go [ here. ](https://portal.gointerject.com/invite.html?mode=create)
+**Step 1:** Log in to the **INTERJECT website portal** here: [ https://portal.gointerject.com ](https://portal.gointerject.com/login.html). If you do not have an account go [ here. ](https://portal.gointerject.com/invite.html?mode=create)
 
 **Step 2:** Once logged in, go to the **download page.**
 
@@ -34,21 +34,21 @@ The Per-Computer installation installs INTERJECT for multiple users on one compu
   
 
 
-**Step 5:** When the download is complete, **extract** the **zip file** . 
+**Step 5:** When the download is complete, **extract** the **zip file**. 
 
 ![](/images/SharedComputer/22.jpg)
 
   
 
 
-**Step 6:** Determine your **Destination Folder** . 
+**Step 6:** Determine your **Destination Folder**. 
 
 ![](/images/SharedComputer/24.jpg)
 
   
 
 
-**Step 7:** Confirm your **Destination Folder** . 
+**Step 7:** Confirm your **Destination Folder**. 
 
 ![](/images/SharedComputer/25.jpg)
 
@@ -62,21 +62,21 @@ The Per-Computer installation installs INTERJECT for multiple users on one compu
   
 
 
-**Step 9:** This will launch the **INTERJECT Excel Add-In Setup Wizard** . Select **Next** . 
+**Step 9:** This will launch the **INTERJECT Excel Add-In Setup Wizard**. Select **Next**. 
 
 ![](/images/SharedComputer/33.jpg)
 
   
 
 
-**Step 10:** Read and accept the **End-User License Agreement** and select **Next** . 
+**Step 10:** Read and accept the **End-User License Agreement** and select **Next**. 
 
 ![](/images/SharedComputer/34.jpg)
 
   
 
 
-**Step 11:** Start the **Installation** . 
+**Step 11:** Start the **Installation**. 
 
 ![](/images/SharedComputer/35.jpg)
 
@@ -90,4 +90,4 @@ The Per-Computer installation installs INTERJECT for multiple users on one compu
   
 
 
-If you run into any issues, email us at [ help@gointerject.com ](mailto:help@gointerject.com) . 
+If you run into any issues, email us at [ help@gointerject.com ](mailto:help@gointerject.com). 

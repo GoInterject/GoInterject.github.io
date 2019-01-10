@@ -12,9 +12,9 @@ Report Macro is an excel formula provided by INTERJECT. It allows IINTERJECT to 
 
 ###  Using Report Macro 
 
-The report macro formula acts in conjunction with another INTERJECT report formula such as a [ ReportRange() ](/KB/ExcelFunctions/ReportRange.html). It is useful when a workbook requiring VBA macros must be used. ReportMacro() is an ordered formula, which means that INTERJECT will perform executions on all report formulas placed above or to the left of the ReportMacro() formula before it is executed. 
+The report macro formula acts in conjunction with another INTERJECT report formula such as a [ ReportRange() ](/wIndex/ReportRange.html). It is useful when a workbook requiring VBA macros must be used. ReportMacro() is an ordered formula, which means that INTERJECT will perform executions on all report formulas placed above or to the left of the ReportMacro() formula before it is executed. 
 
-**Step 1:** Open the Customer Aging Report. (If this report is unfamiliar, click [ here ](/KB/HowToUse/Walkthroughs/CustomerAging.html) for a business use case review on the Customer Aging Report.) This time, we want to make sure a value is set to 200 every time the report is pulled. 
+**Step 1:** Open the Customer Aging Report. (If this report is unfamiliar, click [ here ](/wAbout/Customer-Aging.html) for a business use case review on the Customer Aging Report.) This time, we want to make sure a value is set to 200 every time the report is pulled. 
 
 ![](/images/L-Create-RepMacro/01.jpg)
 

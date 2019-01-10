@@ -6,7 +6,7 @@ description: This function is designed to be used along with the QuickTools opti
 ---
 
 ## Function Summary
-Setting view ports in Excel using the native freeze panes functionality becomes rather trying at times. jFreezePanes() is to be placed directly on a report. This function is designed to be used along with the [QuickTools](/wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#quick-tools) option for freeze/unfreeze panes. Additionally, in the QuickTools menu, there is another option called **Freeze All Tabs** which will iterate through every worksheet in the active workbook and run the jFreezePanes() function on every page. It will only freeze panes on tabs that have jFreezePanes() function on them; additionally, when running **Freeze All Tabs** it will not unfreeze panes.
+Setting view ports in Excel using the native freeze panes functionality becomes rather trying at times. jFreezePanes() is to be placed directly on a report. This function is designed to be used along with the [QuickTools](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools) option for freeze/unfreeze panes. Additionally, in the QuickTools menu, there is another option called **Freeze All Tabs** which will iterate through every worksheet in the active workbook and run the jFreezePanes() function on every page. It will only freeze panes on tabs that have jFreezePanes() function on them; additionally, when running **Freeze All Tabs** it will not unfreeze panes.
 
 
 ### Function Arguments
@@ -21,7 +21,7 @@ Setting view ports in Excel using the native freeze panes functionality becomes 
 ```Excel
  jFreezePanes(A21,A15)
 ```
-This example comes from [Lab Create: Customer Aging](/wGetStarted/L-Create-CustomerAging_128429314.html#final-result-1).
+This example comes from [Lab Create: Customer Aging](/wGetStarted/L-Create-CustomerAging.html#final-result-1).
 
 Even though the arguments for this function accepts range values, it is best practice to avoid using an entire row as a range, for example "14:14".
 

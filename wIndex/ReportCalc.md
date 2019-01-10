@@ -1,5 +1,5 @@
 ---
-title: Interject Documentation > ReportCalc()
+title: ReportCalc()
 layout: custom
 keywords: [reportcalc, function]
 description: ReportCalc executes a calculation on a worksheet or workbook. 

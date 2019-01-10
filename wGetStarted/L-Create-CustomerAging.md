@@ -8,16 +8,7 @@ description: In this page you will see the process of building a Customer Aging 
 
 ##  **Overview**
 
-In this page you will see the process of building a Customer Aging report from scratch to better understand reports and also get a clearer illustration of the INTERJECT [ ReportRange() ](/wIndex/ReportRange_61702199.html) data function. 
-
-There are three parts to building a simple report, click one of the links below to explore. 
-
-* [**Building the Report**]()
-
-* [**Customizing the Report**]()
-
-* [ **Final Result** ]()
-
+In this page you will see the process of building a Customer Aging report from scratch to better understand reports and also get a clearer illustration of the INTERJECT [ ReportRange() ](/wIndex/ReportRange.html) data function. 
 
 ###  Building the Report 
 
@@ -67,7 +58,7 @@ The report should look similar to the screenshot below. Now, put the filter valu
 <br>
 ###  Getting Started 
 
-**Step 1:** Next, use the [ **Pull Data** ](wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) menu item. 
+**Step 1:** Next, use the [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) menu item. 
 <br>
  ![](/images/L-Create-CustAging/09.png)
 <br> 
@@ -173,7 +164,7 @@ In the FeezePanesCell argument, input A21 to mark that row as the top of the vis
   
 
 
-Use the [ **Quick Tools** ](wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools) menu item in the INTERJECT Ribbon so you can easily freeze the panes using the jFreezePanes formula you just configured. 
+Use the [ **Quick Tools** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools) menu item in the INTERJECT Ribbon so you can easily freeze the panes using the jFreezePanes formula you just configured. 
 <br>
 <img src="/images/L-Create-CustAging/25.png" height="750px" width="750px">
 <br>
@@ -203,9 +194,9 @@ Use the [ **Quick Tools** ](wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-t
 
 [ Customer Aging ](/wAbout/Customer-Aging.html)
 
-[ L1.1 Modify: Customer Aging ](wGetStarted/L-Modify-CustomerAging.html)
+[ Lab Modify: Customer Aging ](/wGetStarted/L-Modify-CustomerAging.html)
 
-[ L10 Updating the Report Library ](/wGetStarted/L10-Updating-the-Report-Library.html)
+[ Lab Create: Updating the Report Library ](/wGetStarted/L10-Updating-the-Report-Library.html)
 
 [ INTERJECT Ribbon Menu Items ](INTERJECT-Ribbon-Menu-Items.html)
 

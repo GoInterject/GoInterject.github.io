@@ -26,7 +26,7 @@ Once INTERJECT is installed, an INTERJECT Ribbon will be added to Excel.
 
 ![](/images/ReportLibraryBasics/1.03GettingtoRL-Login-Form.png)
 
-[ See "Logging In" for more information about logins ](/wAbout/Logging-In_63275074). 
+[ See "Logging In" for more information about logins ](/wAbout/Logging-In). 
 
 ![](/images/ReportLibraryBasics/image2017-8-2_16-3-54.png)
 
@@ -71,7 +71,7 @@ The selected link will open the following report.
 
 ![](/images/ReportLibraryBasics/image2017-6-16_13-50-21.png)
 
-**Note:** Reports are stored in Excel Reports, therefore the reports do not need to be  saved locally. When report updates are finished, simply press [ **Save Data** ](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html) from the INTERJECT ribbon menu, and the new changes will be saved back to the database. 
+**Note:** Reports are stored in Excel Reports, therefore the reports do not need to be  saved locally. When report updates are finished, simply press [ **Save Data** ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) from the INTERJECT ribbon menu, and the new changes will be saved back to the database. 
 
 ![](/images/ReportLibraryBasics/image2017-8-7_9-53-27.png)
 
@@ -96,21 +96,21 @@ The selected link will open the following report.
 **Step 3:** Double-clicking on a link opens the report and keeps the Report Library open, while single-clicking the **Open Link** button will open the selected report and close Report Library 
     
 
-For how to add or change files in the Report Library, please check out [ L10 Updating the Report Library ](/wGetStarted/L10-Updating-the-Report-Library_62849583.html) . 
+For how to add or change files in the Report Library, please check out [ L10 Updating the Report Library ](/wGetStarted/L10-Updating-the-Report-Library.html) . 
 
 
 
 ##  Related Links: 
 
-[ Logging In ](/wAbout/Logging-In_63275074.html)
+[ Logging In ](/wAbout/Logging-In.html)
 
-[ Updating Interject ](/wAbout/Updating-INTERJECT_128493904.html)
+[ Updating Interject ](/wAbout/Updating-INTERJECT.html)
 
-[ INTERJECT Ribbon Menu Items ](INTERJECT-Ribbon-Menu-Items_83689479.html)
+[ INTERJECT Ribbon Menu Items ](INTERJECT-Ribbon-Menu-Items.html)
 
-[ Real-World Walkthroughs ](/wAbout/Real-World-Walkthroughs_128091006.html)
+[ Real-World Walkthroughs ](/wAbout/Real-World-Walkthroughs.html)
 
-[ Inventory Reports ](/wAbout/Inventory-Reports_128091499.html)
+[ Inventory Reports ](/wAbout/Inventory-Reports.html)
 
   
 

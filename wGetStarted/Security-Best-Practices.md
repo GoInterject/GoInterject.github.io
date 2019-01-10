@@ -1,5 +1,5 @@
 ---
-title: Interject Documentation > Security Best Practices
+title: Security Best Practices
 layout: custom
 ---
 * * *
@@ -7,13 +7,6 @@ layout: custom
 ##  **Overview**
 
 Managing security is a key component of the Interject platform, and there are several areas to understand. Security involves both the row level security that can exist in reports and apps and how the middle tier objects are secured. Security also includes which spreadsheet report template can be seen by which users. The paragraphs below discuss each of these areas, best practices in building, and methods to test user access. Click one of the links below to quickly reach each topic. 
-
-  * ** Database Connections and Windows Authentication  **
-  * ** Row Level Security for Reports and Apps  **
-  * ** Template Security  **
-  * ** Testing User Access  **
-
-
 
 ###  Database Connections and Windows Authentication 
 
@@ -133,7 +126,7 @@ The spreadsheet files themselves act as reports or application templates. These 
 
 The user may choose to save a copy of the file, such as for auditing purposes or to add personalized changes. It is by design to allow this, even though the user takes the risk of having an outdated version. To assist in management of older versions, INTERJECT does log activity, including the file path and name, so the locations of these copies are known. 
 
-The Report Library is built to provide a development cycle status to the report to help with vetting and documenting the approval of new reports. The statuses include, **In Development** , **In Test** , **Live** . See [ Report Library ](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html) for additional information on using the Report Library. The ability to see templates in each status is controlled through INTERJECT user roles. Standard users only see templates that are set to **Live** . 
+The Report Library is built to provide a development cycle status to the report to help with vetting and documenting the approval of new reports. The statuses include, **In Development**, **In Test**, **Live**. See [ Report Library ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) for additional information on using the Report Library. The ability to see templates in each status is controlled through INTERJECT user roles. Standard users only see templates that are set to **Live**. 
 
 It is best practice to consider the spreadsheet template insecure, since it can easily be shared with other users without proper credentials. Building each report or application with row level security is key to keeping security around your data. 
 
@@ -143,7 +136,7 @@ The Report Library has folders where templates are placed, and there is currentl
 
 As with all developed applications and row level reports, the testing plan should be built in based on the requirements. In many cases an end-user will want to verify the row level security code is properly implemented. 
 
-A best practice method to handle this situation is to add a dataportal parameter such as **@UserTestMode** . In the middle tier code, the existence of a value provided can trigger the following code steps: 
+A best practice method to handle this situation is to add a dataportal parameter such as **@UserTestMode**. In the middle tier code, the existence of a value provided can trigger the following code steps: 
 
 **Step 1:** Using windows authentication or verifying the user token in an API, check to be sure the user can test another user’s security context. This may be hard coded in the middle tier code, can use a lookup list in a database, or even better, verify the correct group in active directory. 
 

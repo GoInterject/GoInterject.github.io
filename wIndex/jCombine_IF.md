@@ -7,7 +7,7 @@ description: jCombineIF() has a similar function to jCombine(). A key difference
 
 ## Function Summary
 
-jCombineIF() has a similar function to [jCombine()](jCombine_61702542). A key difference is that jCombineIF() uses a conditional statement to determine which values should be included into a single concatenated string. jCombineIF() requires the cell ranges for both the CriteriaRange and the SelectedRange to be continuous as jCombineIF() does not support non-continuous data ranges.
+jCombineIF() has a similar function to [jCombine()](jCombine). A key difference is that jCombineIF() uses a conditional statement to determine which values should be included into a single concatenated string. jCombineIF() requires the cell ranges for both the CriteriaRange and the SelectedRange to be continuous as jCombineIF() does not support non-continuous data ranges.
 
 ### Function Arguments
 
@@ -37,8 +37,8 @@ An example of this function is currently in construction in our documentation la
 
 ### Usable In These Report Formulas 
 
-* [Param](Param_81756186.html)
-* [ReportRange](ReportRange_61702199.html) 
-* [ReportVariable](ReportVariable_61702201.html)
-* [ReportFixed](ReportFixed_61702203.html)
-* [ReportSave](ReportSave_61702554.html)
+* [Param](Param.html)
+* [ReportRange](ReportRange.html) 
+* [ReportVariable](ReportVariable.html)
+* [ReportFixed](ReportFixed.html)
+* [ReportSave](ReportSave.html)

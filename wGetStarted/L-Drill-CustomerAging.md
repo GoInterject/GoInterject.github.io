@@ -30,7 +30,7 @@ In this example, you will be setting up a simple drill to the customer orders hi
   
 
 
-**Step 3:** When you scroll up to rows 7 through 9, you will see where this file was set up to have 3 [ReportDrill()](/wIndex/ReportDrill_61702556.html) functions. This is where you will create your first drill formula for this example. 
+**Step 3:** When you scroll up to rows 7 through 9, you will see where this file was set up to have 3 [ReportDrill()](/wIndex/ReportDrill.html) functions. This is where you will create your first drill formula for this example. 
 
 ![](/images/L-Drill-CustAging/03.png)
 <br>
@@ -53,7 +53,7 @@ You are going to skip the ReportCodeToRun argument, since that is used only when
   
 
 
-**Step 3:** Next, we will use the  TransferPairs argument to note which cell values in the source worksheet will be transferred to the target worksheet during the drill operation. To do this we use special functions to pair the source cells to the target cells. Type [ **PairGroup(Pair())** ](wIndex/PairGroup_81756186.html) in the TransferPairs argument to get it started. You will return to add more to this argument. 
+**Step 3:** Next, we will use the  TransferPairs argument to note which cell values in the source worksheet will be transferred to the target worksheet during the drill operation. To do this we use special functions to pair the source cells to the target cells. Type [ **PairGroup(Pair())** ](wIndex/PairGroup.html) in the TransferPairs argument to get it started. You will return to add more to this argument. 
 
 ![](/images/L-Drill-CustAging/06.png)
 <br>
@@ -81,7 +81,7 @@ You are going to skip the ReportCodeToRun argument, since that is used only when
   
 
 
-**Step 7:** Now that you have created the drill, you can use [ **Pull Data** ](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html) to bring in the customers to the source worksheet. 
+**Step 7:** Now that you have created the drill, you can use [ **Pull Data** ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) to bring in the customers to the source worksheet. 
 
 ![](/images/L-Drill-CustAging/10.png)
 <br>

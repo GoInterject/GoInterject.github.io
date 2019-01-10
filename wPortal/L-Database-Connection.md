@@ -1,5 +1,5 @@
 ---
-title: Lab 15.2 Database Connection
+title: Lab Portal: Database Connection
 layout: custom
 keywords: [database connection, lab, walkthrough]
 description: This lab shows how to connect to a database using a pre-existing dataportal.
@@ -7,7 +7,7 @@ description: This lab shows how to connect to a database using a pre-existing da
 
 ###  Data Connection for a Database 
 
-**Step 1:** Start off by navigating to [ https://portal.gointerject.com ](https://portal.gointerject.com). Once [ logged in ](/wPortal/Logging-In-to-Website-Portal_142278762.html) you can setup a data connection by clicking on the **Data Connections** icon. 
+**Step 1:** Start off by navigating to [ https://portal.gointerject.com ](https://portal.gointerject.com). Once [ logged in ](/wPortal/Logging-In-to-Website-Portal.html) you can setup a data connection by clicking on the **Data Connections** icon. 
 
 ![](/images/Database/01.png)
 
@@ -37,7 +37,7 @@ The Database Data Connection is now ready to be used in a Data Portal.
 
 Before setting up a Data Connection to a Database, you can verify that the connection can be established within Excel. 
 
-**Step 1:** With Excel open, go to the [ INTERJECT Ribbon ](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html) menu and click **Advanced Menu** (Skip this step if already at Advanced menu) 
+**Step 1:** With Excel open, go to the [ INTERJECT Ribbon ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) menu and click **Advanced Menu** (Skip this step if already at Advanced menu) 
 
 ![](/images/Database/06.png)
 

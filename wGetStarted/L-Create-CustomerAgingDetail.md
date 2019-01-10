@@ -48,7 +48,7 @@ Now the parameters are set and should only reference cells C16, C17, and C18 as 
 
 ###  ReportRange() 
 
-**Step 1:** You can select [ **Pull Data** ](wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) to see which columns are available. Since the [ ReportRange() ](wIndex/ReportRange.html) function does not have a Column Definition defined, it should show all the columns with their column names. 
+**Step 1:** You can select [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) to see which columns are available. Since the [ ReportRange() ](wIndex/ReportRange.html) function does not have a Column Definition defined, it should show all the columns with their column names. 
 
 ![](/images/L-Create-CustAgingDetail/06.png)
 

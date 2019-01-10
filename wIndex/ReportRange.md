@@ -1,5 +1,5 @@
 ---
-title: Interject Documentation > ReportRange()
+title: ReportRange()
 layout: custom
 keywords: [reportrange, function]
 description: Directs data into a single range of a spreadsheet with options for formatting, formulas, and columns. 
@@ -27,7 +27,7 @@ Directs data into a single range of a spreadsheet with options for formatting, f
 ```Excel
 =ReportRange("NorthwindCustomers",B14:H15,B2:H2,B4:H4,Param(C7,C8,C9),FALSE,FALSE,,FALSE,FALSE)
 ```
-To see an example of this function in use, visit the [ Lab 2.1 Create: Customer Aging ](/wGetStarted/128429314.html)
+To see an example of this function in use, visit the [ Lab Create: Customer Aging ](/wGetStarted/L-Create-CustomerAging.html)
 
 ###  Function Composition
 

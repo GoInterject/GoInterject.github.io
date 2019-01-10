@@ -7,7 +7,7 @@ description: A ReportDefaults() formatting function is utilized to capture and s
 
 ## Function Summary
 
-A ReportDefaults() formatting function is utilized to capture and send values from one cell (or set of cells) to another. It gets executed on a specified INTERJECT action and then it captures the values from one cell (or set of cells) and sends the values to the corresponding target cell(s). To view a list of actions go to the [Trigger Combination List](/wIndex/ReportDefaults_61702546.html#trigger-combination-list). Many times, the ReportDefaults() function is used to clear out report filters after an INTERJECT clear is performed. This is because [Data Functions](/wIndex/Data-Functions-Landing.html) do not clear the filters after a clear action since they only clear their corresponding target data ranges. Additionally, a ReportDefaults() function can be used to set default filter parameters after an INTERJECT action has occurred.
+A ReportDefaults() formatting function is utilized to capture and send values from one cell (or set of cells) to another. It gets executed on a specified INTERJECT action and then it captures the values from one cell (or set of cells) and sends the values to the corresponding target cell(s). To view a list of actions go to the [Trigger Combination List](/wIndex/ReportDefaults.html#trigger-combination-list). Many times, the ReportDefaults() function is used to clear out report filters after an INTERJECT clear is performed. This is because [Data Functions](/wIndex/Data-Functions-Landing.html) do not clear the filters after a clear action since they only clear their corresponding target data ranges. Additionally, a ReportDefaults() function can be used to set default filter parameters after an INTERJECT action has occurred.
 
 ### Function Arguments
 
@@ -15,7 +15,7 @@ A ReportDefaults() formatting function is utilized to capture and send values fr
 |------------------|-------------|---------|----------|
 | OnPullSaveOrBoth | This defines the instance in which an INTERJECT action will trigger the function to be executed.|         | NO       |
 | OnClearRunOrBoth | This defines which INTERJECT event will trigger the function to be executed.                    |         | NO       |
-| TransferPairs    | Enter  [ Pairs  ](/wIndex/Pair_81756188.html) within a  [ PairGroup  ](/wIndex/PairGroup_81756186.html) function to copy data and restrict what data is captured. See [ Drill: Customer Aging Report ](/wGetStarted/128421015.html) for more information on usage. |         | YES      |
+| TransferPairs    | Enter  [ Pairs  ](/wIndex/Pair.html) within a  [ PairGroup  ](/wIndex/PairGroup.html) function to copy data and restrict what data is captured. See [ Drill: Customer Aging Report ](/wGetStarted/128421015.html) for more information on usage. |         | YES      |
 
 ### Excel Formula Bar Example
 
@@ -68,5 +68,5 @@ The execution of the ReportDefaults() formatting function is determined by a com
 
 ### Embeddable Helper Functions
 
-* [Pair](/wIndex/Pair_81756188.html)
-* [PairGroup](/wIndex/PairGroup_81756186.html)
+* [Pair](/wIndex/Pair.html)
+* [PairGroup](/wIndex/PairGroup.html)

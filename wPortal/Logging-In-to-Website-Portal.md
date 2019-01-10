@@ -21,4 +21,4 @@ The INTERJECT Portal is a websites that allows you to access all the data portal
 
 ![](/images/Login/03.png)
 
-From here you are able to set up a [ Data Connection ](/wPortal/Lab-15.2-Database-Connection_136249415.html) or [ Portal ](/wPortal/Data-Portals_324665363.html) . 
+From here you are able to set up a [ Data Connection ](/wPortal/Lab-15.2-Database-Connection.html) or [ Portal ](/wPortal/Data-Portals.html). 

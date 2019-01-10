@@ -26,7 +26,7 @@ An example of this function is currently in construction in our documentation la
 |Argument Name|Example Mapping|Explanation|
 |:---|:---|:---|
 |Function Name|`=jWorkbookProperty`|This is the excel name used to call the function. It is meant to be standalone and not embedded in other functions.|
-|PropertyName|Interject_LinkVersion| This property name is created when an Interject report is uploaded to the [Report Library](/wAbout/Report-Library-Basics_61702517.html) and it will return the version of the report. Other workbook properties that can be called in this function can be found in the list below.|
+|PropertyName|Interject_LinkVersion| This property name is created when an Interject report is uploaded to the [Report Library](/wAbout/Report-Library-Basics.html) and it will return the version of the report. Other workbook properties that can be called in this function can be found in the list below.|
 
 ### Workbook Property List
 

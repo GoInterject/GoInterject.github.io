@@ -1,10 +1,9 @@
 ---
-title: Interject Documentation > ReportRun()
+title: ReportRun()
 layout: custom
 keywords: [reportrun, function]
 description: ReportRun executes a Report Function in another tab without changing the tab focus. 
 ---
-* * *
 
 ##  Function Summary 
 

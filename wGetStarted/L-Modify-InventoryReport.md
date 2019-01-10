@@ -13,7 +13,7 @@ In this example you will be modifying a fixed report, going over how to add a ro
 
 ###  Setting up the Report 
 
-**Step 1:** First, go to the [ Report Library ](/wAbout/Report-Library-Basics_61702517.html) and select the Interject Inventory Demo report. 
+**Step 1:** First, go to the [ Report Library ](/wAbout/Report-Library-Basics.html) and select the Interject Inventory Demo report. 
 
 ![](/images/L-Modify-Inventory/01.png)
 
@@ -47,7 +47,7 @@ Back to Top
 
 ###  Adding a Row to the Report 
 
-**Step 1:** First, use [ **Pull Data** ](https://interject.atlassian.net/wiki/display/ID/Interject+Ribbon+Menu+Items#InterjectRibbonMenuItems-PullData) menu item so you can see how this report has been configured and to show that a row is missing from the main section. 
+**Step 1:** First, use [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) menu item so you can see how this report has been configured and to show that a row is missing from the main section. 
 
 ![](/images/L-Modify-Inventory/05.png)
 
@@ -70,7 +70,7 @@ Add **Dairy Products** back to the main body of the report.
 <br> 
 
 
-By unfreezing the report, the formulas and parameters that were hidden before can now be viewed. If this is the first time seeing these, go to [ Basics of Report Formula's ](https://interject.atlassian.net/wiki/display/ID/Basics+of+Report+Formulas) to learn more. 
+By unfreezing the report, the formulas and parameters that were hidden before can now be viewed. If this is the first time seeing these, go to [ Basics of Report Formula's ](/wAbout/Basics-of-Report-Formulas.html) to learn more. 
 
 You can see this by opening these sections that **Dairy Products** is being pulled in the **Leftovers** section configured in cell B25. Since you want Dairy Products with the other categories in the main report, you will need to add it. 
 
@@ -108,7 +108,7 @@ Below, you changed the definition for row 18 to **Dairy Products** and are ready
 ![](/images/L-Modify-Inventory/12.png)
 
 
-**Step 6:** Because you copied an existing row, the data for Row 18 is still duplicated from Grains/Cereals, [ Pull ](https://interject.atlassian.net/wiki/display/ID/INTERJECT+Add-In+Menu+Items#INTERJECTAdd-InMenuItems-PullData) the Report to refresh the data and check your work. Data should update for row 18, and **Dairy Products** should disappear from leftovers area. 
+**Step 6:** Because you copied an existing row, the data for Row 18 is still duplicated from Grains/Cereals, [ Pull ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) the Report to refresh the data and check your work. Data should update for row 18, and **Dairy Products** should disappear from leftovers area. 
 
 ![](/images/L-Modify-Inventory/13.png)   
 
@@ -180,6 +180,6 @@ This will automatically freeze the panes to the pre-configured position.
 <br> 
 
 
-And that is all there is to it. You have now modified the Inventory Report with an additional column and row. To know how to save report changes to the Report Library, [ click here ](https://interject.atlassian.net/wiki/display/ID/Updating+the+Report+Library). 
+And that is all there is to it. You have now modified the Inventory Report with an additional column and row. To know how to save report changes to the Report Library, [ click here ](/wAbout/Report-Library-Basics.html). 
 
 Back to Top 

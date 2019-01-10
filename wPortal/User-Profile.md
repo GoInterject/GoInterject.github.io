@@ -6,7 +6,7 @@ description: Shows the user profile area of the website portal.
 ---
 
 ##  **Overview**
----
+
 Managing Staff and Staff Profiles is another commonly used area of the INTERJECT Website Portal. 
 
 Once logged in, you can access the list of staff by clicking on Staff  from the left menu. 

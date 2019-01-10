@@ -12,14 +12,14 @@ Financial reports can sometimes share the same row or column configurations. Rat
 
 ###  Using Column Definitions 
 
-**Step 1:** Open the PL Trend report from the Interject Financials folder of the [ Report Library ](/wAbout/Report-Library-Basics_61702517.html). 
+**Step 1:** Open the PL Trend report from the Interject Financials folder of the [ Report Library ](/wAbout/Report-Library-Basics.html). 
 
 ![](/images/L-Modify-Financial/01.png)
 
 <br> 
 
 
-**Step 2:** Once the report is open, select the [ Freeze Panes ](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html) menu in the View tab, and choose Unfreeze Panes. 
+**Step 2:** Once the report is open, select the [ Freeze Panes ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#diagnostics) menu in the View tab, and choose Unfreeze Panes. 
 
 ![](/images/L-Modify-Financial/02.png)
 
@@ -35,7 +35,7 @@ The jColumnDef() formulas in cells L2 to N2 are important to understand. They ex
 <br> 
 
 
-Notice that [ jColumnDef() ](/wIndex/127965411.html) draws its parameters from the cells that it has been designated to take values from. In this case those cells are right underneath the formula. Here, jColumnDef() is only referencing a Source (Actual or Budget), a month period, and a year. However, it is designed to handle currency and other reporting dimensions as well.   
+Notice that [ jColumnDef() ](/wIndex/jColumnDef.html) draws its parameters from the cells that it has been designated to take values from. In this case those cells are right underneath the formula. Here, jColumnDef() is only referencing a Source (Actual or Budget), a month period, and a year. However, it is designed to handle currency and other reporting dimensions as well.   
 ![](/images/L-Modify-Financial/04.png)
 
 <br> 
@@ -48,7 +48,7 @@ Notice that [ jColumnDef() ](/wIndex/127965411.html) draws its parameters from t
 <br> 
 
 
-**Step 4:** With the new columns added, use the [ **Pull Data** ](https://interject.atlassian.net/wiki/content-only/viewpage.action?pageId=83689479&iframeId=fallback-mode&user_key=ff8080814d41a454014d440734dd0001&user_id=MariaH&xdm_e=https://interject.atlassian.net/&xsm_c=fallback-mode-fake-key__2715317480449224&cp=/wiki&cv=0.0.0-fallback-mode&lic=none#InterjectRibbonMenuItems-PullData) menu item. 
+**Step 4:** With the new columns added, use the [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) menu item. 
 
 ![](/images/L-Modify-Financial/06.png)
 
@@ -64,7 +64,7 @@ You can see that even with the expanded sheet, the data populates in the desired
 
 Now that you understand Column definitions a bit better, modify the report to create a budget to actual comparison report. Before doing this, cleanup the report to prepare it for the modifications you will make. 
 
-**Step 1:** Now, use the [ **Clear** ](https://interject.atlassian.net/wiki/content-only/viewpage.action?pageId=83689479&iframeId=fallback-mode&user_key=ff8080814d41a454014d440734dd0001&user_id=MariaH&xdm_e=https://interject.atlassian.net/&xsm_c=fallback-mode-fake-key__2715317480449224&cp=/wiki&cv=0.0.0-fallback-mode&lic=none#InterjectRibbonMenuItems-PullData) button to remove the data on the report. 
+**Step 1:** Now, use the [ **Clear** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) button to remove the data on the report. 
 
 ![](/images/L-Modify-Financial/08.png)
 
@@ -135,7 +135,7 @@ After that, select the **1** icon to close all the groups. See the red arrow in 
 <br> 
 
 
-**Step 6:** Now that you have all of the columns set up for the Budget to Actual Comparison Report, you can pull the data. Just click **[ Pull Data ](https://interject.atlassian.net/wiki/content-only/viewpage.action?pageId=83689479&iframeId=fallback-mode&user_key=ff8080814d41a454014d440734dd0001&user_id=MariaH&xdm_e=https://interject.atlassian.net/&xsm_c=fallback-mode-fake-key__2715317480449224&cp=/wiki&cv=0.0.0-fallback-mode&lic=none#InterjectRibbonMenuItems-PullData) ** in the ribbon menu. 
+**Step 6:** Now that you have all of the columns set up for the Budget to Actual Comparison Report, you can pull the data. Just click [ Pull Data ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) in the ribbon menu. 
 
 ![](/images/L-Modify-Financial/18.png)
 

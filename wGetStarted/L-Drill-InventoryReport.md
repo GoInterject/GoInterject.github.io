@@ -8,14 +8,14 @@ description: In this example, you will view drilling between reports using the s
 
 ##  **Overview**
 
-In this example, you will view drilling between reports using the same Inventory reports created during the [ Real World Inventory Walk-through ](/wAbout/Inventory-Reports_128091499.html) . You will setup a drill between the **Inventory by Category** and **Inventory by Detail** pages of the workbook, then you will set up a hyperlink so the drill can be more intuitive to users. 
+In this example, you will view drilling between reports using the same Inventory reports created during the [ Real World Inventory Walk-through ](/wAbout/Inventory-Reports.html) . You will setup a drill between the **Inventory by Category** and **Inventory by Detail** pages of the workbook, then you will set up a hyperlink so the drill can be more intuitive to users. 
 
 
 
 
 ###  Unfreezing the Report 
 
-**Step 1:** First, open the Inventory Report Template, [ Interject_InventoryDemo](/wGetStarted/128409138.html) . This file has been prepared specifically for this exercise. Once opened, it should look like the screenshot below. 
+**Step 1:** First, open the Inventory Report Template. This file has been prepared specifically for this exercise. Once opened, it should look like the screenshot below. 
 
 ![](/images/L-Drill-Inventory/01.png)
 <br>
@@ -29,7 +29,7 @@ In this example, you will view drilling between reports using the same Inventory
 
 ###  Setting Up The Drill 
 
-**Step 1:** Type [ **=ReportDrill()** ](/wIndex/61702556.html) into cell C5. Then, click the **fx** button to bring up the Function Wizard. 
+**Step 1:** Type [ **=ReportDrill()** ](/wIndex/ReportDrill.html) into cell C5. Then, click the **fx** button to bring up the Function Wizard. 
 
 ![](/images/L-Drill-Inventory/03.png)
 
@@ -40,7 +40,7 @@ In this example, you will view drilling between reports using the same Inventory
   
 
 
-**Step 3:** Next use the  TransferPairs argument to note which cell values in the source worksheet will be transferred to the target worksheet during the drill operation. To do this, use special functions to pair the source cells to the target cells. Type  [ **PairGroup(Pair())** ](/wIndex/81756186.html) in the TransferPairs argument to get it started. 
+**Step 3:** Next use the  TransferPairs argument to note which cell values in the source worksheet will be transferred to the target worksheet during the drill operation. To do this, use special functions to pair the source cells to the target cells. Type  [ **PairGroup(Pair())** ](/wIndex/PairGroup.html) in the TransferPairs argument to get it started. 
 
 ![](/images/L-Drill-Inventory/05.png)
 <br>
@@ -94,7 +94,7 @@ When the panes are refrozen, the report should look like the image below.
   
 
 
-**Step 3:** [ Pull Data ](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html)** to see data for each category you just linked. 
+**Step 3:** [ Pull Data ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) to see data for each category you just linked. 
 
 ![](/images/L-Drill-Inventory/13.png)
 <br>
@@ -115,7 +115,7 @@ Here, you have the report pulled and are ready to go.
   
 
 
-Hyperlinking Drills is a simple way to make INTERJECT reports faster and more user-friendly. Click [ here ](/wGetStarted/128409219.html) for the Financial Report Drill walk-through. 
+Hyperlinking Drills is a simple way to make INTERJECT reports faster and more user-friendly. Click [ here ](/wGetStarted/L-Drill-TheThreeWays.html#the-hyperlink-method) for the Financial Report Drill walk-through. 
 
   
 

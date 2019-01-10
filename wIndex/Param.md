@@ -1,5 +1,5 @@
 ---
-title: Interject Documentation > Param()
+title: Param()
 layout: custom
 keywords: [param, function]
 description: Param is used to help select one or multiple parameters for each of your report formulas. 

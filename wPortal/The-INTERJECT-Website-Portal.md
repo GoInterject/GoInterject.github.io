@@ -1,5 +1,5 @@
 ---
-title: Interject Documentation > The INTERJECT Website Portal
+title: The INTERJECT Website Portal
 layout: custom
 keywords: [website portal, account]
 description: The INTERJECT website portal is a central place to manage INTERJECT client settings and user profiles.

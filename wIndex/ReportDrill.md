@@ -7,15 +7,15 @@ description: ReportDrill is widely used throughout INTERJECT as a way to connect
 
 ## Function Summary
 
-ReportDrill is widely used throughout INTERJECT as a way to connect and pass information between workbooks and worksheets. Drilling takes a defined input and passes it in as a parameter to another workbook or worksheet, similar to hyperlinks on a web page: Depending on the types of input behind the hyperlink, more detailed and specific information can be viewed. While there are few codes crucial to the process, they can be structured in ways that make them very powerful. In order to setup a drill that goes to another workbook it is necessary to setup drill codes in the [Report Library](/wGetStarted/L10-Updating-the-Report-Library_62849583.html#adding-a-drill-code-to-a-report) which have to be registered with INTERJECT.
+ReportDrill is widely used throughout INTERJECT as a way to connect and pass information between workbooks and worksheets. Drilling takes a defined input and passes it in as a parameter to another workbook or worksheet, similar to hyperlinks on a web page: Depending on the types of input behind the hyperlink, more detailed and specific information can be viewed. While there are few codes crucial to the process, they can be structured in ways that make them very powerful. In order to setup a drill that goes to another workbook it is necessary to setup drill codes in the [Report Library](/wGetStarted/L10-Updating-the-Report-Library.html#adding-a-drill-code-to-a-report) which have to be registered with INTERJECT.
 
 ### Function Arguments
 
 | Parameter Name  | Description                                                                                                                                                                                | Default | Optional |
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|----------|
 | ReportCellToRun | A cell address on a worksheet within your report that contains an INTERJECT [Data](Data-Functions-Landing.html) or [Formatting](Formatting-Functions-Landing.html) function.               |         | Yes      |
-| ReportCodeToRun | A drill code that is setup in the [Report Library](/wGetStarted/L10-Updating-the-Report-Library_62849583.html#adding-a-drill-code-to-a-report) that allows you to drill between workbooks. |         | Yes      |
-| TransferPairs   | A [PairGroup](Pairgroup_81756186.html) and [Pair](Pair_81756188.html) function that determines which cell value you want to capture, and where you want to place it.                       |         | Yes      |
+| ReportCodeToRun | A drill code that is setup in the [Report Library](/wGetStarted/L10-Updating-the-Report-Library.html#adding-a-drill-code-to-a-report) that allows you to drill between workbooks. |         | Yes      |
+| TransferPairs   | A [PairGroup](Pairgroup.html) and [Pair](Pair.html) function that determines which cell value you want to capture, and where you want to place it.                       |         | Yes      |
 | DrillName       | This defines the name of the drill displayed on the Excel report.                                                                                                                          |         | YES      |
 
 
@@ -24,7 +24,7 @@ ReportDrill is widely used throughout INTERJECT as a way to connect and pass inf
 ```Excel
 ReportDrill(CustomerOrderHistory!C10,,PairGroup(Pair(B22:B24, CustomerOrderHistory!C23)),"Drill to Customer Orders History")
 ```
-This example is sourced from [Lab Drill: Customer Aging](/wGetStarted/L-Drill-CustomerAging_128421015.html).
+This example is sourced from [Lab Drill: Customer Aging](/wGetStarted/L-Drill-CustomerAging.html).
 
 ### Example Function Composition
 
@@ -38,6 +38,6 @@ This example is sourced from [Lab Drill: Customer Aging](/wGetStarted/L-Drill-Cu
 
 ### Embeddable Helper Functions
 
-* [PairGroup](Pairgroup_81756186.html)
-* [Pair](Pair_81756188.html)
+* [PairGroup](Pairgroup.html)
+* [Pair](Pair.html)
 

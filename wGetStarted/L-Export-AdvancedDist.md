@@ -245,7 +245,7 @@ In the distribution examples above, each location is entered on a separate row. 
 <br> 
 
 
-**Step 3:** Now you will go back to the PL Trend tab and change the jRangeTag() from **Location** to **Segment2**. Use of the Range Tab function was discussed in the [ L11.2 Basic Distribution ](/wGetStarted/L11.2-Basic-Distribution_128719024.html) lab. 
+**Step 3:** Now you will go back to the PL Trend tab and change the jRangeTag() from **Location** to **Segment2**. Use of the Range Tab function was discussed in the [ L11.2 Basic Distribution ](/wGetStarted/L11.2-Basic-Distribution.html) lab. 
 
 ![](/images/L-Export-AdvancedDist/21.png)
 

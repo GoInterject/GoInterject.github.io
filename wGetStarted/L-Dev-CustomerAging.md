@@ -8,16 +8,7 @@ description: On this page, you will create a simple data pull using the Customer
 
 ##  **Overview**
 
-On this page, you will create a simple data pull using the Customer Aging Report. To review the business use case for this report, see  [ **Real World Walkthroughs** **\- Customer Aging** ](/wAbout/Customer-Aging_128091294.html) .  This lab begins with steps for creating the INTERJECT data connection and data portals, followed by the steps on how to create the stored procedure. Finally, you will be directed to another page that shows how to use the data portal to create the spreadsheet report from scratch. 
-
-Go directly to any topic of this walk-through by clicking one of the links below: 
-
-  * [**Setting up the Data Connection**](http://127.0.0.1:4000/wGetStarted/L-Dev-CustomerAging_324567045.html#setting-up-the-data-connection)
-  * [**Setting up the Data Portal**](http://127.0.0.1:4000/wGetStarted/L-Dev-CustomerAging_324567045.html#setting-up-the-data-portal)
-  * [**Setting up the Formula Parameters**](http://127.0.0.1:4000/wGetStarted/L-Dev-CustomerAging_324567045.html#setting-up-formula-parameters)
-  * [**Setting up the System Parameters**](http://127.0.0.1:4000/wGetStarted/L-Dev-CustomerAging_324567045.html#system-parameters)
-  * [**Creating the Stored Procedure**](http://127.0.0.1:4000/wGetStarted/L-Dev-CustomerAging_324567045.html#creating-the-stored-procedure)
-  * [**Creating the Report**](http://127.0.0.1:4000/wGetStarted/L-Dev-CustomerAging_324567045.html#create-the-report)
+On this page, you will create a simple data pull using the Customer Aging Report. To review the business use case for this report, see  [ **Real World Walkthroughs** **\- Customer Aging** ](/wAbout/Customer-Aging.html) .  This lab begins with steps for creating the INTERJECT data connection and data portals, followed by the steps on how to create the stored procedure. Finally, you will be directed to another page that shows how to use the data portal to create the spreadsheet report from scratch. 
 
 ###  Setting Up The Data Connection 
 
@@ -60,7 +51,7 @@ Go directly to any topic of this walk-through by clicking one of the links below
 ![](/images/L-Dev-CustAging/06.jpg)
 <br>
 
-The Database Data Connection is now ready to be used in a Data Portal. You should always test a new connection with your security context. Follow the steps in [ Data Connections ](/wPortal/Data-Connections_324403237.html) to test your connection string. 
+The Database Data Connection is now ready to be used in a Data Portal. You should always test a new connection with your security context. Follow the steps in [ Data Connections ](/wPortal/Data-Connections.html) to test your connection string. 
 
 ###  Setting Up The Data Portal 
 
@@ -325,7 +316,7 @@ Back to Top
 
 At this point you have a tested stored procedure that uses parameters to filter the results. An INTERJECT Data Connection is setup to go to your example database and you added an INTERJECT Data Portal to use that connection and is mapped to the stored procedure that was just created. You are ready to build the spreadsheet report. 
 
-Fortunately, the documentation to build this report has already been presented in [ **Create: Customer Aging** ](wGetStarted/L-Create-CustomerAging_128429314.html) and you likely have already completed it. The end result should look like the below screenshot. 
+Fortunately, the documentation to build this report has already been presented in [ **Create: Customer Aging** ](wGetStarted/L-Create-CustomerAging.html) and you likely have already completed it. The end result should look like the below screenshot. 
 
 ![](/images/L-Dev-CustAging/25.png)
 <br>

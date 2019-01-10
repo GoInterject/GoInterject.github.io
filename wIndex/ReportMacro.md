@@ -1,5 +1,5 @@
 ---
-title: Interject Documentation > ReportMacro()
+title: ReportMacro()
 layout: custom
 keywords: [reportmacro, function]
 description: ReportMacro allows a report developer to call VBA macros on Save, Pull, Clear, or Run events. 

@@ -8,7 +8,7 @@ description: Special column definitions provide additional features to columns w
 
 ##  **Overview:**
 
-Special column definitions provide additional features to your reports. There are three options: 
+Special column definitions provide additional features to your reports. There are three distinct options: 
 
 1. **Adding a cell comment**
 2. **Adding a hyperlink to a web address**

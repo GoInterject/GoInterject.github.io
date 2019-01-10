@@ -1,5 +1,5 @@
 ---
-title: Interject Documentation > jMergePoint()
+title: jMergePoint()
 layout: custom
 keywords: [jmergepoint, function]
 description: jMergePoint acts as a reference point for ReportMerge.
@@ -7,7 +7,7 @@ description: jMergePoint acts as a reference point for ReportMerge.
 
 ##  Function Summary 
 
-Acts as a reference point for [ ReportMerge ](/wIndex/110723133.html) . For examples and discussion, view the tutorial. 
+Acts as a reference point for [ ReportMerge ](/wIndex/ReportMerge.html) . For examples and discussion, view the tutorial. 
 
 ###  Function Arguments   
   

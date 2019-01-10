@@ -13,7 +13,7 @@ INTERJECT facilitates three different ways to drill. Each method is easy to choo
 
 ###  The Menu Method: 
 
-The [ Drill on Data ](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html) menu item is available in every report containing a drill function. For this example, you will drill using the [ Customer Aging demo ](https://interject.atlassian.net/wiki/display/ID/Customer+Aging). 
+The [ Drill on Data ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) menu item is available in every report containing a drill function. For this example, you will drill using the [ Customer Aging demo ](/wAbout/Customer-Aging.html). 
 
 ![](/images/L-Drill-TheThreeWays/01.png)
 
@@ -42,7 +42,7 @@ This automatically takes you to the desired destination and usually pulls the da
 
 ###  The Hyperlink Method: 
 
-The hyperlink drill method is another option. It is one of the simplest ways for a user to drill in INTERJECT and makes it intuitive for the user to know where drills are available. For this example, you will drill using the [ Inventory Reports Demo ](https://interject.atlassian.net/wiki/display/ID/Inventory+Reports) seen below. 
+The hyperlink drill method is another option. It is one of the simplest ways for a user to drill in INTERJECT and makes it intuitive for the user to know where drills are available. For this example, you will drill using the [ Inventory Reports Demo ](/wAbout/Inventory-Reports.html) seen below. 
 
 ![](/images/L-Drill-TheThreeWays/04.png)
 
@@ -56,11 +56,11 @@ By clicking the hyperlink cell, it will automatically trigger the INTERJECT dril
 <br> 
 
 
-It is that simple. To know how to setup a hyperlink drill for one of the reports, [ click here ](https://interject.atlassian.net/wiki/display/ID/Drill%3A+Inventory+Report) to see how it was setup in the example above. 
+It is that simple. To know how to setup a hyperlink drill for one of the reports, [ click here ](/wGetStarted/L-Drill-InventoryReport.html#creating-hyperlinks-as-drills) to see how it was setup in the example above. 
 
 ###  The Double Click Method: 
 
-The double click method is similar to the hyperlink method in that it reduces the number of button clicks. But there is a configuration step to activate it for a workbook. For this example, you will be using the [ Customer Aging ](https://interject.atlassian.net/wiki/display/ID/Customer+Aging) Summary to do the drill. 
+The double click method is similar to the hyperlink method in that it reduces the number of button clicks. But there is a configuration step to activate it for a workbook. For this example, you will be using the [ Customer Aging ](/wAbout/Customer-Aging.html) Summary to do the drill. 
 
 ![](/images/L-Drill-TheThreeWays/06.png)
 

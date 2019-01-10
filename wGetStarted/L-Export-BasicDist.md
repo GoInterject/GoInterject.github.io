@@ -13,7 +13,7 @@ The distribution process provides extensive control when creating and distributi
 
 ###  Create a Distribution from an Existing Report 
 
-**Step 1:** First you are going to open a report. The example for this walk-through will use the same PL Trend Report seen in the [ Financial Walk-through ](/KB/HowToUse/Walkthroughs/Financial.html) lab. If needed, download the document here: [ Interject_PLTrendDemo.xlsx ](/wGetStarted/L11.2-Basic-Distribution_128719024.html). 
+**Step 1:** First you are going to open a report. The example for this walk-through will use the same PL Trend Report seen in the [ Financial Walk-through ](/wAbout/Financial-Report.html) lab.
 
 ![](/images/L-Export-BasicDist/01.jpg)
 

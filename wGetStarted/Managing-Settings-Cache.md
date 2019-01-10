@@ -1,5 +1,5 @@
 ---
-title: Interject Documentation > Managing Settings Cache
+title: Managing Settings Cache
 layout: custom
 ---
 * * *
