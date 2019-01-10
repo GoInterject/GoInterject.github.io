@@ -18,7 +18,7 @@ horizontalnav:
   path: /wApps/How-to-articles.html
   node: apps
 - title: Portal Site 
-  path: /wPortal/WebsitePortal.html
+  path: /wPortal/The-INTERJECT-Website-Portal.html
   node: portal
 - title: Support
   path: /wTroubleshoot/Troubleshooting-Landing.html
