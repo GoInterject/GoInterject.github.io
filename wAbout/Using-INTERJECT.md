@@ -22,7 +22,7 @@ Logging in is simple and fast! Once logged in we can begin exploring the Report 
 
 The Report Library is a way to share reports with other users on your team. Reports are uploaded to the library and can be accessed from any computer using the INTERJECT app in Excel. The features in INTERJECT go beyond a Sharepoint or Shared Network Folder. Files can also be versioned, so reverting to a working report is simple. 
 
-###  [ Real-World Walkthroughs ](wAbout/Real-World-Walkthroughs.html)
+###  [ Real-World Walkthroughs ](/wAbout/Real-World-Walkthroughs.html)
 
 From simple PL charts for accountants to trend reports for CEO's and CFO's, there are a variety of processes we may encounter. In these labs, you will look at three Real-World scenarios that explain how to use INTERJECT. Keep in mind, these are simple examples of tasks that may be more complicated in other situations. 
 
