@@ -284,11 +284,7 @@ portal:
       path: /wPortal/Data-Connections.html
       section:
       - title: "Lab Portal: API Connections"
-<<<<<<< HEAD
         path: /wPortal/L-Api-Connections.html
-=======
-        path: /wPortal/Lab-15.1-API-Connections.html
->>>>>>> c3b5b0d21ff154431692fce656eddf9c2022f552
       - title: "Lab Portal: Database Connection"
         path: /wPortal/L-Database-Connection.html
     - title: Data Portals
