@@ -14,7 +14,7 @@ Inside INTERJECT tabular reports there is a hidden configuration section at the 
 
 ###  Accessing the Report Formulas 
 
-**Step 1:** For this walk-through, you will use the Customer Collections report **** located in the INTERJECT Demos folder of the [ Report Library ](/wAbout/Report-Library-Basics_61702517.html). 
+**Step 1:** For this walk-through, you will use the Customer Collections report **** located in the INTERJECT Demos folder of the [ Report Library ](/wAbout/Report-Library-Basics.html). 
 
 ![](/images/BasicsReportFormulas/image2017-6-15_17-12-46.png)
 
@@ -22,7 +22,7 @@ When the report is opened it will be blank. It is ready for any filters before p
 
 ![](/images/BasicsReportFormulas/image2017-6-21_15-6-49.png)
 
-**Step 2:** To see the formulas working behind INTERJECT, you need to [ Unfreeze ](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html) the panes hiding them. Select the View ribbon and select  the **Freeze Panes** drop-down. Then choose the first operation, **Unfreeze Panes**. 
+**Step 2:** To see the formulas working behind INTERJECT, you need to [ Unfreeze ](/wPortal/INTERJECT-Ribbon-Menu-Items.html#unfreeze) the panes hiding them. Select the View ribbon and select  the **Freeze Panes** drop-down. Then choose the first operation, **Unfreeze Panes**. 
 
 ![](/images/BasicsReportFormulas/image2017-6-21_17-55-57.png)
 
@@ -42,7 +42,7 @@ You have full control of what column labels that are shown in the reports. Notic
 
 ![](/images/BasicsReportFormulas/image2017-6-22_11-43-17.png)
 
-**Step 2:** Now use [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#pull-data)to see where the **CustomerID** data is populated. 
+**Step 2:** Now use [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data)to see where the **CustomerID** data is populated. 
 
 ![](/images/BasicsReportFormulas/image2017-6-22_11-50-20.png)
 
@@ -72,11 +72,11 @@ Report Formulas are a big part of how INTERJECT directs data in and out of the s
 
 ![](/images/BasicsReportFormulas/image2017-7-3_8-37-34.png)
 
-The first formula is a **Report Range** formula and will pull the data from a data source to the spreadsheet. There are other, similar, Report Formulas to pull data, such as [ ReportFixed() ](/wIndex/61702203.html) , [ ReportVariable() ](/wIndex/61702201.html) and ReportLookup(). You will look at these later. The screenshot above also shows three ReportDrill() formulas that enable [ drill ](/wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#drill-on-data) functionality. A drill lets us navigate to another spreadsheet report based on the context selected. 
+The first formula is a **Report Range** formula and will pull the data from a data source to the spreadsheet. There are other, similar, Report Formulas to pull data, such as [ ReportFixed() ](/wIndex/ReportFixed.html) , [ ReportVariable() ](/wIndex/ReportVariable.html) and [ ReportLookup() ](wIndex/ReportLookup.html) . You will look at these later. The screenshot above also shows three [ ReportDrill() ](wIndex/ReportDrill.html) formulas that enable [ drill ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data) functionality. A drill lets us navigate to another spreadsheet report based on the context selected. 
 
-Another type of Report Formula is the [ Save ](/wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#save-data) formula which is not shown here. This type of Report Formula enables an application developer to build save back features into our reports, such as saving back comments on financial variances to a central database so they can be presented in other reports. 
+Another type of Report Formula is the [ Save ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data) formula which is not shown here. This type of Report Formula enables an application developer to build save back features into our reports, such as saving back comments on financial variances to a central database so they can be presented in other reports. 
 
-Each of these formulas is activated by its corresponding button in the [ INTERJECT Ribbon menu ](/wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html). 
+Each of these formulas is activated by its corresponding button in the [ INTERJECT Ribbon menu ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html). 
 
 <img class="img-modal" src="/images/BasicsReportFormulas/image2017-8-14_8-55-43.png" onclick="zoom_img(this)" />
 
@@ -94,10 +94,10 @@ This concludes the discussion of the basics of Report Formulas. Be sure to conti
 
 ##  Related Links: 
 
-[ Customer Aging ](Customer-Aging_128091294.html)
+[ Customer Aging ](Customer-Aging.html)
 
-[ Modifying an Existing Report ](/wGetStarted/Modifying-an-Existing-Report_62849215.html)
+[ Modifying an Existing Report ](/wGetStarted/Modifying-an-Existing-Report.html)
 
-[ INTERJECT Ribbon Menu Items ](INTERJECT-Ribbon-Menu-Items_83689479.html)
+[ INTERJECT Ribbon Menu Items ](INTERJECT-Ribbon-Menu-Items.html)
 
-[ Creating a Simple Report ](/wGetStarted/Creating-a-Simple-Report_128408585.html)
+[ Creating a Simple Report ](/wGetStarted/Creating-a-Simple-Report.html)

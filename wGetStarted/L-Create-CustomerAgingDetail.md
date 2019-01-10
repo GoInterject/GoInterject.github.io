@@ -8,12 +8,12 @@ description: This example uses the Customer Aging demo to show the creation of a
 
 ##  **Overview**
 
-This example uses the [ Customer Aging ](/wAbout/Customer-Aging_128091294.html) demo to show the creation of a Customer Aging Detail report that will have variable customer subtotaled sections, each having their respective invoice detail. You will use both the [ ReportRange() ](/wIndex/61702199.html) and [ ReportVariable() ](/wIndex/61702201.html) formulas to create the output. 
+This example uses the [ Customer Aging ](/wAbout/Customer-Aging.html) demo to show the creation of a Customer Aging Detail report that will have variable customer subtotaled sections, each having their respective invoice detail. You will use both the [ ReportRange() ](/wIndex/ReportRange.html) and [ ReportVariable() ](/wIndex/ReportVariable.html) formulas to create the output. 
 
 
 ###  Building the Report 
 
-**Step 1:** You will begin by using INTERJECT's [ **Report Builder** ](/wPortal/INTERJECT-Ribbon-Menu-Items_83689479.html) to make a template for the report. Select NorthwindCustomers Data Portal and choose[ **Build Report Formula** ]() to build the report. 
+**Step 1:** You will begin by using INTERJECT's [ **Report Builder** ](wGetStarted\INTERJECT-Ribbon-Menu-Items.html#report-builder) to make a template for the report. Select NorthwindCustomers Data Portal and choose **Build Report Formula** to build the report. 
 
 ![](/images/L-Create-CustAgingDetail/01.png)
 
@@ -48,7 +48,7 @@ Now the parameters are set and should only reference cells C16, C17, and C18 as 
 
 ###  ReportRange() 
 
-**Step 1:** You can select [ **Pull Data** ](wAbout/The-INTERJECT-Website-Portal_324665355.html) to see which columns are available. Since the ReportRange() function does not have a Column Definition defined, it should show all the columns with their column names. 
+**Step 1:** You can select [ **Pull Data** ](wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) to see which columns are available. Since the [ ReportRange() ](wIndex/ReportRange.html) function does not have a Column Definition defined, it should show all the columns with their column names. 
 
 ![](/images/L-Create-CustAgingDetail/06.png)
 
@@ -197,7 +197,7 @@ The formatting has been copied down to the rest of the report and there are subt
 <br> 
 
 
-**Step 6:** To define the second formula, add **=ReportVariable()** to cell C23 and click the fx button. The placement of this formula matters, since you want it to run after the ReportRange(). The [ ReportRange() ](/wIndex/ReportRange_61702199.html) will be pulled first to provide the list of customer sections, and then the [ ReportVariable() ](/wIndex/ReportVariable_61702201.html) will populate the invoices for each section. 
+**Step 6:** To define the second formula, add **=ReportVariable()** to cell C23 and click the fx button. The placement of this formula matters, since you want it to run after the ReportRange(). The [ ReportRange() ](/wIndex/ReportRange.html) will be pulled first to provide the list of customer sections, and then the [ ReportVariable() ](/wIndex/ReportVariable.html) will populate the invoices for each section. 
 
 ![](/images/L-Create-CustAgingDetail/27.png)
 
