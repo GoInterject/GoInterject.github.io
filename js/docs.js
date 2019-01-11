@@ -105,7 +105,15 @@ function walkTree(tree)
 
         outputLetNav.push('<li style="overflow-wrap: break-word; overflow:hidden;">');
         tempCaretNav.push('<a onclick="navClicked(' + totalTopics + ')" data-target="#item' + totalTopics + '" data-toggle="collapse" data-parent="#stacked-menu" style="float:right;"');
-        tempTitleNav.push('<a href="' + tree[j].path + '" style="float:left;width:60%;word-wrap: break-word;"');
+        
+        // check if the page has a defined link
+        console.log('tree path:  ' + tree[j].path);
+        if (tree[j].path != undefined){
+          tempTitleNav.push('<a href="' + tree[j].path + '" style="float:left;width:60%;word-wrap: break-word;"');
+        }
+        else {
+          tempTitleNav.push('<a style="float:left;width:60%;word-wrap: break-word;"');
+        }
 
       if (sectionHasPath){
           tempCaretNav.push('aria-expanded="true"');
@@ -196,7 +204,6 @@ function renderNav(docstoc) {
     }
   }
   document.getElementById('jsTOCHorizontal').innerHTML = outputHorzTabs.join('');
-  console.log("jsTOCLeftNav is:  ", outputLetNav.join(''));
   document.getElementById('jsTOCLeftNav').innerHTML = outputLetNav.join('');
 }
 
