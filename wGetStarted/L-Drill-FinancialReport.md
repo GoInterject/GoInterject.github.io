@@ -45,7 +45,7 @@ Continue setting up the drill formula.
   
 
 
-**Step 2:** In previous drill exercises you have used the ReportCellToRun argument. That is only for drilling within the same workbook. In this example you are drilling to a separate workbook. Type **Interject_JEQuery** into the ReportCodeToRun argument as seen below. The Drill Code **Interject_JEQuery** was setup previously by adding the code to a Report Library report. You will learn how to setup a Drill Code in the page [ Lab Create: Updating the Report Library ](/wGetStarted/L10-Updating-the-Report-Library.html) later. 
+**Step 2:** In previous drill exercises you have used the ReportCellToRun argument. That is only for drilling within the same workbook. In this example you are drilling to a separate workbook. Type **Interject_JEQuery** into the ReportCodeToRun argument as seen below. The Drill Code **Interject_JEQuery** was setup previously by adding the code to a Report Library report. You will learn how to setup a Drill Code in the page [ Lab Create: Updating the Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary) later. 
 
 ![](/images/L-Drill-Financial/05.png)
 <br>
