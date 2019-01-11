@@ -53,7 +53,7 @@ You are going to skip the ReportCodeToRun argument, since that is used only when
   
 
 
-**Step 3:** Next, we will use the  TransferPairs argument to note which cell values in the source worksheet will be transferred to the target worksheet during the drill operation. To do this we use special functions to pair the source cells to the target cells. Type [ **PairGroup(Pair())** ](wIndex/PairGroup.html) in the TransferPairs argument to get it started. You will return to add more to this argument. 
+**Step 3:** Next, we will use the  TransferPairs argument to note which cell values in the source worksheet will be transferred to the target worksheet during the drill operation. To do this we use special functions to pair the source cells to the target cells. Type [ **PairGroup(Pair())** ](/wIndex/PairGroup.html) in the TransferPairs argument to get it started. You will return to add more to this argument. 
 
 ![](/images/L-Drill-CustAging/06.png)
 <br>

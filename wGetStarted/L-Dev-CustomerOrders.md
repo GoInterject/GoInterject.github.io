@@ -154,7 +154,7 @@ When this code is executed, it returns the following result set.
 ![](/images/L-DevCustOrders/07.png)
 <br>
 
-Back to Top 
+ 
 
 ###  Create The Report: 
 
@@ -169,4 +169,4 @@ Fortunately, the documentation to build this report has already been presented i
 
 It is recommended to go to [Lab Create: Customer Orders](/wGetStarted/L-Create-CustomerOrders.html) to complete those steps again to reinforce the process. However, this time you can use your own Data Portal for the report. 
 
-Back to Top 
+ 

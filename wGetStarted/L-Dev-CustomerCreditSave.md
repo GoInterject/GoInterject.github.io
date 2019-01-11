@@ -27,7 +27,7 @@ This report uses the same database as  **Dev: Customer Aging** and other reports
   
 
 
-**Step 3:** In the  **Data Portal Code** field enter  **NorthwindCreditSave_MyName** . 
+**Step 3:** In the  **Data Portal Code** field enter  **NorthwindCreditSave_MyName**. 
 
 ![](/images/L-Dev-CustAgingSave/03.jpg)
 <br>
@@ -66,7 +66,7 @@ For this Data Portal, there are no formula parameters to be used.
 
 ###  Setting up System Parameters: 
 
-System Parameters are similar to Formula Parameters, but the names are reserved. To review the System parameters and their purposes, go to the System Parameters section of the [ Data Portal ](/wPortal/Data-Portals.html) page 
+System Parameters are similar to Formula Parameters, but the names are reserved. To review the System parameters and their purposes, go to the System Parameters section of the [ Data Portal ](/wPortal/Data-Portals.html) page. 
 
 In this example you are going to use  **Interject_ReturnError** and  **Interject_RequestContext** . 
 

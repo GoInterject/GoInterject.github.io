@@ -42,7 +42,7 @@ It will just take a moment for our report to populate. The illustration below sh
 
 ![](/images/financial/Modifying-Report-Dragging-Columns.gif)
 
-**Step 3:** Re-pull the data with the [ **Pull Data** ](wGetStarted\INTERJECT-Ribbon-Menu-Items.html#pull-data) menu button as you did earlier. 
+**Step 3:** Re-pull the data with the [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) menu button as you did earlier. 
 
 ![](/images/financial/image2017-6-9_15-22-22.png)
 
@@ -75,7 +75,7 @@ Back to Top
 
 ###  Drill to JE-Transaction 
 
-After expanding the groupings of modified the reports, you may still want more detailed information about a specific account. The [ **Drill on Data** ](wGetStarted\INTERJECT-Ribbon-Menu-Items.html#drill-on-data) feature allows us to pass information from one report to another for additional details. 
+After expanding the groupings of modified the reports, you may still want more detailed information about a specific account. The [ **Drill on Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data) feature allows us to pass information from one report to another for additional details. 
 
 **Step 1:**
 
@@ -152,7 +152,7 @@ After the switch, you can see that the values still are the same. This is becaus
 
 **Step 5:** More complex filter text can be used to request precise balances. The following example uses a combination of ranges, exclusions, wildcards, and financial groups to return specific data. Even Net Income or EBITDA can be presented in a single worksheet cell. 
 
-For more information on the Data Cell Filter options, [ click here ](wIndex\Data-Cell-Functions.md). 
+For more information on the Data Cell Filter options, [ click here ](/wIndex/Data-Cell-Functions.md). 
 
 In the below example, the groupings to the left of the figures represent the grouping filter in the jAcct Function to the cell beside it. This is so you can see what account groupings are being used for each of the numbers. 
 

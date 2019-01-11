@@ -228,7 +228,7 @@ For clarity, type in all the jColumnDef arguments like shown below. Type **Actua
 <br> 
 
 
-Before moving on, bring up the jColumnDef() Function Wizard again. Click on cell E2 and click the **Fx** button to view the arguments below Year. These are other dimensions/segments that can be used to define what each column holds and you can use advanced filter notation to handle complex arrangements. Columns could hold different cost centers, geographic regions, currencies and ect. See  [ FinCube - The Financial Cube ](wIndex/FinCube---The-Financial-Cube.html) for further details on the filter syntax that can be used. 
+Before moving on, bring up the jColumnDef() Function Wizard again. Click on cell E2 and click the **Fx** button to view the arguments below Year. These are other dimensions/segments that can be used to define what each column holds and you can use advanced filter notation to handle complex arrangements. Columns could hold different cost centers, geographic regions, currencies and ect. See  [ FinCube - The Financial Cube ](/wIndex/FinCube---The-Financial-Cube.html) for further details on the filter syntax that can be used. 
 
 ![](/images/L-Create-FinancialVar/29.png)
 
@@ -237,7 +237,7 @@ Before moving on, bring up the jColumnDef() Function Wizard again. Click on cell
 
 You should have a much clearer idea on how to use notations to bring in the balances that you need for reports. You can continue to shape the existing report into a profit and loss report. 
 
-Back to Top 
+ 
 
   
 
@@ -290,7 +290,7 @@ Lastly, please note that the Account Type names placed below in column B are the
 
 Now you are ready for the next step, changing the ReportRange() formula in C10 to a ReportVariable function. 
 
-Back to Top 
+ 
 
 ###  Converting ReportRange() to ReportVariable() 
 
@@ -359,7 +359,7 @@ The data presented should look similar to the below screenshot. The **Revenue - 
 
 <br>
 
-Back to Top 
+ 
 
 ###  Final Formatting 
 
@@ -420,7 +420,7 @@ Ta-Da! After comparing the reports you can notice that, besides some formatting 
 
 ![](/images/L-Create-FinancialVar/51.png)
 
-Back to Top 
+ 
 
 <br> 
 

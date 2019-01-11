@@ -1,7 +1,8 @@
 ---
 title: Report Formula Reviews
 layout: custom
-keywords: []
+keywords: [formula review, report formula]
+description: In this page you will see how your parameters are set up for the report. To do so you need to head to the Validation Report bar to see the columns used for those parameters.
 ---
 ##  Overview 
 

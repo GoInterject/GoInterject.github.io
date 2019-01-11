@@ -8,7 +8,7 @@ description: This function assists financial reports using the FinCube DataPorta
 
 ##  Function Summary 
 
-This function assists financial reports using the FinCube DataPortal to specify segment filters for each amount column. See the the [ FinCube ](/wApps/FinCube---The-Financial-Cube.html) page for an explanation of this function and how each argument can use filters. The following arguments represent the same segments used within the FinCube DataPortal. 
+This function assists financial reports using the FinCube DataPortal to specify segment filters for each amount column. See the the [ FinCube ](/wIndex/FinCube---The-Financial-Cube.html) page for an explanation of this function and how each argument can use filters. The following arguments represent the same segments used within the FinCube DataPortal. 
 
 ###  Function Arguments   
   

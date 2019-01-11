@@ -43,7 +43,7 @@ Once it is populated with the data, the report should look like the image below.
 ![](/images/L-Modify-CustAging/05.png)
 <br>
 
-Back to Top 
+ 
 
 ###  Creating a Total Column 
 
@@ -111,7 +111,7 @@ Notice that when you pull the data, the new formula is applied to all the new ro
 ![](/images/L-Modify-CustAging/13.png)
 <br>
 
-Back to Top 
+ 
 
 ###  Creating Totals on top of the Report 
 
@@ -172,4 +172,4 @@ The report is complete, you have added a total for each client and a summary tot
 
 You can continue learning by reading how to save these changes back to Report Library [ here ](https://interject.atlassian.net/wiki/display/ID/Updating+the+Report+Library). 
 
-Back to Top 
+ 

@@ -7,7 +7,7 @@ description: jCombineIF() has a similar function to jCombine(). A key difference
 
 ## Function Summary
 
-jCombineIF() has a similar function to [jCombine()](jCombine). A key difference is that jCombineIF() uses a conditional statement to determine which values should be included into a single concatenated string. jCombineIF() requires the cell ranges for both the CriteriaRange and the SelectedRange to be continuous as jCombineIF() does not support non-continuous data ranges.
+jCombineIF() has a similar function to [jCombine()](/wIndex/jCombine). A key difference is that jCombineIF() uses a conditional statement to determine which values should be included into a single concatenated string. jCombineIF() requires the cell ranges for both the CriteriaRange and the SelectedRange to be continuous as jCombineIF() does not support non-continuous data ranges.
 
 ### Function Arguments
 

@@ -4,7 +4,6 @@ layout: custom
 keywords: [pivot table, create, example]
 description: Pivot tables are a flexible and valuable tool for analyzing data in Excel. INTERJECT makes it easier to scale and distribute pivot tables. In this walk-through you will set up a pivot table based on an INTERJECT report.
 ---
-* * *
 
 ##  **Overview**
 

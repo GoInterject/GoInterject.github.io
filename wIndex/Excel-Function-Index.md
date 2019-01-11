@@ -16,14 +16,14 @@ Data Functions are focused on getting specific data to the report in the right w
 
 | Forumula                                                | Description                                                         |
 |---------------------------------------------------------|---------------------------------------------------------------------|
-| [ReportDrill()]/wIndex/ReportDrill.html)       | Drilling down on data and Navigating between reports                |
-| [ReportFixed()]/wIndex/ReportFixed.html)       | Pulling in data to a predetermined fixed point.                     |
-| [ReportLookup()]/wIndex/ReportLookup.html)    | Insert a specific data value into a cell based on certain criteria. |
-| [ReportMacro]/wIndex/ReportMacro.html)         | Call VBA macros on Save, Pull, Clear, or Run events.                |
-| [ReportRange()]/wIndex/ReportRange.html)       | Inserts data into a single range of a spreadsheet                   |
-| [ReportRun()]/wIndex/ReportRun.html)           | Execute Report functions in other sheets.                           |
-| [ReportSave()]/wIndex/ReportSave.html)         | Save data on the sheet back to the database.                        |
-| [ReportVariable()]/wIndex/ReportVariable.html) | Insert data into rows that include multiple ranges or sections      |
+| [ReportDrill()](/wIndex/ReportDrill.html)       | Drilling down on data and Navigating between reports                |
+| [ReportFixed()](/wIndex/ReportFixed.html)       | Pulling in data to a predetermined fixed point.                     |
+| [ReportLookup()](/wIndex/ReportLookup.html)    | Insert a specific data value into a cell based on certain criteria. |
+| [ReportMacro](/wIndex/ReportMacro.html)         | Call VBA macros on Save, Pull, Clear, or Run events.                |
+| [ReportRange()](/wIndex/ReportRange.html)       | Inserts data into a single range of a spreadsheet                   |
+| [ReportRun()](/wIndex/ReportRun.html)           | Execute Report functions in other sheets.                           |
+| [ReportSave()](/wIndex/ReportSave.html)         | Save data on the sheet back to the database.                        |
+| [ReportVariable()](/wIndex/ReportVariable.html) | Insert data into rows that include multiple ranges or sections      |
 
 
 ## Formatting Functions
@@ -46,17 +46,17 @@ Helper Functions are often embedded into other parent functions (listed above) t
 
 | Formula                                                       | Description                                                                                                  |
 |---------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| [jBinder()]/wIndex/jBinder.html)                     | Assists the Binder feature mark worksheets                                                                   |
-| [jColumnDef()]/wIndex/jColumnDef.html)              | Assists financial reports using the FinCube DataPortal to specify segment filters for each amount column.    |
-| [jCombineIf()]/wIndex/jCombine_IF.html)             | Uses a conditional statement to determine which values should be included into a single concatenated string. |
-| [jCombine()]/wIndex/jCombine.html)                   | Concatenate the values of cells while simultaneously skipping any empty cell.                                |
-| [jDataPortal()]/wIndex/jDataPortal.html)             | Helpful function for developers to further leverage DataPortals.                                             |
-| [jMergePoint()]/wIndex/jMergePoint.html)            | Acts as a reference point for [ReportMerge](/wIndex/ReportMerge.html) .                            |
-| [jRangeTag()]/wIndex/jRangeTag.html)                | Used to label or tag a range or a single cell with a custom name.                                            |
-| [jWorkbookProperty()]/wIndex/jWorkbookProperty.html) | Provides context and information about a workbook in a report.                                               |
-| [Pair()]/wIndex/Pair.html)                           | Used with a variety of report functions to specify a from value or range to a target location or range.      |
-| [PairGroup()]/wIndex/PairGroup.html)                 | Used to string multiple [Pair()](Pair.html) functions together into one comma delimited string      |
-| [Param()]/wIndex/Param.html)                         | Used to help select one or multiple parameters for each of your report formulas                              |
+| [jBinder()](/wIndex/jBinder.html)                     | Assists the Binder feature mark worksheets                                                                   |
+| [jColumnDef()](/wIndex/jColumnDef.html)              | Assists financial reports using the FinCube DataPortal to specify segment filters for each amount column.    |
+| [jCombineIf()](/wIndex/jCombine_IF.html)             | Uses a conditional statement to determine which values should be included into a single concatenated string. |
+| [jCombine()](/wIndex/jCombine.html)                   | Concatenate the values of cells while simultaneously skipping any empty cell.                                |
+| [jDataPortal()](/wIndex/jDataPortal.html)             | Helpful function for developers to further leverage DataPortals.                                             |
+| [jMergePoint()](/wIndex/jMergePoint.html)            | Acts as a reference point for [ReportMerge](/wIndex/ReportMerge.html) .                            |
+| [jRangeTag()](/wIndex/jRangeTag.html)                | Used to label or tag a range or a single cell with a custom name.                                            |
+| [jWorkbookProperty()](/wIndex/jWorkbookProperty.html) | Provides context and information about a workbook in a report.                                               |
+| [Pair()](/wIndex/Pair.html)                           | Used with a variety of report functions to specify a from value or range to a target location or range.      |
+| [PairGroup()](/wIndex/PairGroup.html)                 | Used to string multiple [Pair()](Pair.html) functions together into one comma delimited string      |
+| [Param()](/wIndex/Param.html)                         | Used to help select one or multiple parameters for each of your report formulas                              |
 
 ## Data Cell Functions
 
@@ -64,6 +64,6 @@ Data Cells are focused on a single formula which can be placed anywhere in the s
 
 | Formula                                      | Description                                                        |
 |----------------------------------------------|--------------------------------------------------------------------|
-| [jAcct()]/wIndex/jAcct.html)        | Specifies filters for up to six segments of a Chart of Accounts    |
-| [jCell/jCellN()]/wIndex/jCell.html) | Retrieves data based on the provided parameters                    |
-| [jDesc()]/wIndex/jDesc.html)        | Used to look up a context description based on a specific segment. |
+| [jAcct()](/wIndex/jAcct.html)        | Specifies filters for up to six segments of a Chart of Accounts    |
+| [jCell/jCellN()](/wIndex/jCell.html) | Retrieves data based on the provided parameters                    |
+| [jDesc()](/wIndex/jDesc.html)        | Used to look up a context description based on a specific segment. |

@@ -181,4 +181,4 @@ Now run the distribution again and the email will be sent to the destination.
 <br> 
 
 
-Continue learning about distribution in the  [ L11.3 Advanced Distribution ](/KB/HowToCreate/ExportReport/Grouping.html) page. 
+Continue learning about distribution in the  [ Lab Export: Advanced Distribution ](/L-Export-AdvancedDist.html) page. 

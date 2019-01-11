@@ -185,7 +185,7 @@ Use the [ **Quick Tools** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-
   
 
 
-[ Click here ](wAbout/Report-Library-Basics.html) to learn how to upload the new report to the Report Library. 
+[ Click here ](/wAbout/Report-Library-Basics.html) to learn how to upload the new report to the Report Library. 
 
   
 
