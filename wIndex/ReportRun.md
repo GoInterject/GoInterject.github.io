@@ -65,7 +65,7 @@ RunEntireWorksheet
 </td>  
 <td>
 
-A boolean toggle that will enable or disable an entire Worksheet’s Report Functions from running. (CLEAN UP LANGUAGE / CLARIFY HOW TO USE)  
+A boolean toggle that will enable or disable an entire Worksheet’s Report Functions from running.  
 </td>  
 <td>
 
