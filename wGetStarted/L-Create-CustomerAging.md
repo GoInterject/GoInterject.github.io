@@ -196,7 +196,7 @@ Use the [ **Quick Tools** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-
 
 [ Lab Modify: Customer Aging ](/wGetStarted/L-Modify-CustomerAging.html)
 
-[ Lab Create: Updating the Report Library ](/wGetStarted/L10-Updating-the-Report-Library.html)
+[ Lab Create: Updating the Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary)
 
 [ INTERJECT Ribbon Menu Items ](INTERJECT-Ribbon-Menu-Items.html)
 

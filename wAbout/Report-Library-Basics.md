@@ -96,7 +96,7 @@ The selected link will open the following report.
 **Step 3:** Double-clicking on a link opens the report and keeps the Report Library open, while single-clicking the **Open Link** button will open the selected report and close Report Library 
     
 
-For how to add or change files in the Report Library, please check out [ Lab Create: Updating the Report Library ](/wGetStarted/L10-Updating-the-Report-Library.html) . 
+For how to add or change files in the Report Library, please check out [ Lab Create: Updating the Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary) . 
 
 
 

@@ -23,7 +23,7 @@ ReportHideRowOrColumn() utilizes cell the values "Show" and "Hide" as input para
 ReportHideRowOrColumn("Pull","Both",C47:C48,FALSE)
 ```
 
-To view this example with more context it is sourced from [Lab Create: HidingRowsColumns](/wGetStarted/L5-HidingRowsColumns.html).
+To view this example with more context it is sourced from [Lab Create: HidingRowsColumns](/wGetStarted/L-Create-HideRowCol.html).
 
 ### Example Function Composition
 
