@@ -13,19 +13,19 @@ The INTERJECT Ribbon has several options designed to help customize the reportin
 ![](/images/InterjectRibbon/01.png)
 
 
-| **Simple Menu**                                                                              | **Advanced Menu**                                                                            |
-|----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| [Report Library](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-library)      | [Validation Report](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#validation-report) |
-| [Pull Data](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data)                | [JSON](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#json)                           |
-| [Save Data](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data)                | [Diagnostics](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#diagnostics)             |
+| **Simple Menu**                                                                      | **Advanced Menu**                                                                    |
+| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
+| [Report Library](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-library)       | [Validation Report](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#validation-report) |
+| [Pull Data](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data)                 | [JSON](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#json)                           |
+| [Save Data](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data)                 | [Diagnostics](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#diagnostics)             |
 | [Drill on Data](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data)         | [Check for Updates](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#check-for-updates) |
 | [Return From Drill](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#return-from-drill) | [System](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#system)                       |
 | [Custom Commands](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#custom-commands)     | [Online Training](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#online-training)     |
 | [Quick Tools](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools)             | [User Support](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#user-support)           |
 | [Create Binder](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#create-binder)         | [About INTERJECT](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#about-interject)     |
-| [Export Book](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#export-book)             |                                                                                              |
-| [Report Builder](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder)       |                                                                                              |
-| [Sheet Protector](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#sheet-protector)     |                                                                                              |
+| [Export Book](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#export-book)             |                                                                                      |
+| [Report Builder](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder)       |                                                                                      |
+| [Sheet Protector](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#sheet-protector)     |                                                                                      |
 
 * * *
 
@@ -383,16 +383,16 @@ This option opens a configuration menu to manage diagnostics settings and send d
 The operation System contains a large number of options. Documentation for this feature is under construction.   
   
 
-| | Description |
-|---|---|
-Force Calc On Workbook | Forces Excel to calculate all formulas in the Workbook. Similar to the **Calculate Now** button in the Formulas Ribbon |
-|Force Calc On Worksheet | Forces Excel to calculate all INTERJECT formulas in the Worksheet. Similar to the **Calculate Sheet** button in the Formulas Ribbon |
-|View SQL Test For ActiveCell| Provides the SQL code that will be executed for the ActiveCell. The ActiveCell would be any of the ReportFormulas that pull or save data. <br> Copy this code into your development environment and execute it to see what would be produced based on current context of the spreadsheet |
-| View SQL Template For ActiveCell | Will provide a starting point for creating new stored procedures. ReportSave will provide a template that can be used to save the data back.  |
-| Clear Remembered Logings | |
-| Re-enable Protected Grouping | |
-| Initiate Session Controller | |
-| Check Connection | Allows user to test that the connection to a database can be established. To learn more, [ click here. ](/wPortal/Data-Connections.html) |
+|                                  | Description                                                                                                                                                                                                                                                                              |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Force Calc On Workbook           | Forces Excel to calculate all formulas in the Workbook. Similar to the **Calculate Now** button in the Formulas Ribbon                                                                                                                                                                   |
+| Force Calc On Worksheet          | Forces Excel to calculate all INTERJECT formulas in the Worksheet. Similar to the **Calculate Sheet** button in the Formulas Ribbon                                                                                                                                                      |
+| View SQL Test For ActiveCell     | Provides the SQL code that will be executed for the ActiveCell. The ActiveCell would be any of the ReportFormulas that pull or save data. <br> Copy this code into your development environment and execute it to see what would be produced based on current context of the spreadsheet |
+| View SQL Template For ActiveCell | Will provide a starting point for creating new stored procedures. ReportSave will provide a template that can be used to save the data back.                                                                                                                                             |
+| Clear Remembered Logings         |                                                                                                                                                                                                                                                                                          |
+| Re-enable Protected Grouping     |                                                                                                                                                                                                                                                                                          |
+| Initiate Session Controller      |                                                                                                                                                                                                                                                                                          |
+| Check Connection                 | Allows user to test that the connection to a database can be established. To learn more, [ click here. ](/wPortal/Data-Connections.html)                                                                                                                                                 |
 
 ReportRange() 
 
