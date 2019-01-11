@@ -52,7 +52,7 @@ INTERJECT aims to make the installation process as simple and painless as possib
   
 
 
-**Microsoft Internet Explorer** : 
+**Microsoft Internet Explorer**: 
 
 ![](/images/SingleUser/08.jpg)
 
@@ -73,14 +73,14 @@ INTERJECT aims to make the installation process as simple and painless as possib
   
 
 
-**Step 9:** Choose the **Destination Folder** for your installation, then select **Next** . 
+**Step 9:** Choose the **Destination Folder** for your installation, then select **Next**. 
 
 ![](/images/SingleUser/11.jpg)
 
   
 
 
-**Step 10:** Click **Install** . 
+**Step 10:** Click **Install**. 
 
 ![](/images/SingleUser/12.jpg)
 
@@ -94,4 +94,4 @@ INTERJECT aims to make the installation process as simple and painless as possib
   
 
 
-If you run into any issues, email us at [ help@gointerject.com ](mailto:help@gointerject.com) . 
+If you run into any issues, email us at [ help@gointerject.com ](mailto:help@gointerject.com). 

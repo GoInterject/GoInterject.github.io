@@ -83,7 +83,7 @@ The Database Data Connection is now ready to be used in a Data Portal. You shoul
 
 **Note:** If this is your first time setting up a data portal, review **Data Portals** , which describes the data portal parameters in more detail, including the difference between formula and system parameters. Return to the next step to continue. 
 
-Back to Top 
+ 
 
 ###  Setting Up Formula Parameters 
 
@@ -151,7 +151,7 @@ Enter **Customer ID** for Helper Name and **The customer ID is an exact search t
 ![](/images/L-Dev-CustAging/19.jpg)
 <br>
 
-Back to Top 
+ 
 
 ###  System Parameters 
 
@@ -171,7 +171,7 @@ In this example, you will use the system parameter, **Interject_NTLogin** , whic
 ![](/images/L-Dev-CustAging/21.jpg)
 <br>
 
-Back to Top 
+ 
 
 
 ###  Creating the Stored Procedure 
@@ -310,7 +310,7 @@ When executed you should see the following result set.
 ![](/images/L-Dev-CustAging/24.png)
 <br>
 
-Back to Top
+
 
 ###  Create The Report 
 

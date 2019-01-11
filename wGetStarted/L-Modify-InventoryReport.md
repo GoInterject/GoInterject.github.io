@@ -43,7 +43,7 @@ With the row deleted, the report should now be structured as shown.
 
 You can now begin modifying the report for this lesson. 
 
-Back to Top 
+ 
 
 ###  Adding a Row to the Report 
 
@@ -113,7 +113,7 @@ Below, you changed the definition for row 18 to **Dairy Products** and are ready
 ![](/images/L-Modify-Inventory/13.png)   
 
 
-Back to Top 
+ 
 
 ###  Adding a New Definition Column 
 
@@ -144,7 +144,7 @@ This will refresh the data and pull in the new description data, placing it in t
 
 ![](/images/L-Modify-Inventory/17.png)
 
-Back to Top 
+ 
 
 ###  Preparing the Report To Share 
 
@@ -182,4 +182,4 @@ This will automatically freeze the panes to the pre-configured position.
 
 And that is all there is to it. You have now modified the Inventory Report with an additional column and row. To know how to save report changes to the Report Library, [ click here ](/wAbout/Report-Library-Basics.html). 
 
-Back to Top 
+ 

@@ -7,7 +7,7 @@ layout: custom
 
 This section is for professional developers who create the data pathways for reports and applications that can edit data. To facilitate this section, you provide a sample database to assist in training. Please contact us for the files at [ info@gointerject.com ](mailto:info@gointerject.com) . 
 
-The sample database is called **Interject_Example_v1** . This database is available for SQL Server versions 2008 to 2017 and works easily with the free express version. Download SQL Server Express **here** . 
+The sample database is called **Interject_Example_v1** . This database is available for SQL Server versions 2008 to 2017 and works easily with the free express version. Download SQL Server Express **here**. 
 
 To complete the developer training, you must have Client Admin permissions within an existing INTERJECT account. Verify the correct role at the INTERJECT Website Portal at  [ https://portal.gointerject.com  ](https://portal.gointerject.com) For help with logging in, see [ Logging In to the Website Portal ](/wPortal/Logging-In-to-Website-Portal.html) . 
 

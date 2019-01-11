@@ -56,7 +56,7 @@ Back to Top
 
 Ypu also need to gather a report of our beverage inventory. 
 
-**Step 1:** Select the [ **Return From Drill** ](https://interject.atlassian.net/wiki/spaces/ID/pages/83689479/INTERJECT+Ribbon+Menu+Items#ReturnFromDrill) Button to go back to the sheet you drilled from.   
+**Step 1:** Select the [ **Return From Drill** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#return-from-drill) Button to go back to the sheet you drilled from.   
 
 ![](/images/Inventory/inventory-return-from-drill.png)
 

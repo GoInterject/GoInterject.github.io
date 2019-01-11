@@ -14,7 +14,7 @@ INTERJECT aims to make uninstalling a simple and straight forward process. This 
 
 **Step 1:** Before beginning the uninstall process, make sure all instances of Excel are closed completely. 
 
-**Step 2:** Press the **Windows Key** and type **Control** . Then select **Control Panel** . (This may look different for older versions of Windows, but the steps are the same.) 
+**Step 2:** Press the **Windows Key** and type **Control** . Then select **Control Panel**. (This may look different for older versions of Windows, but the steps are the same.) 
 
 ![](/images/Uninstalling/37.jpg)
 
@@ -42,4 +42,4 @@ INTERJECT aims to make uninstalling a simple and straight forward process. This 
   
 
 
-If you run into any issues, email us at [ help@gointerject.com ](mailto:help@gointerject.com) . 
+If you run into any issues, email us at [ help@gointerject.com ](mailto:help@gointerject.com). 

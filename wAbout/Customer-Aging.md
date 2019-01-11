@@ -13,7 +13,7 @@ You can go directly to any part of this walk-through by clicking one of the link
 
 ###  Navigating to the Aging Summary 
 
-**Step 1:** Open the report **INTERJECT Customer Collections** under the INTERJECT Demos  in the [ Report Library ](wAbout/Report-Library-Basics.html). 
+**Step 1:** Open the report **INTERJECT Customer Collections** under the INTERJECT Demos  in the [ Report Library ](/wAbout/Report-Library-Basics.html). 
 
 ![](/images/Walkthrough-CustAging/01.png)
 
@@ -142,7 +142,7 @@ Notice that you do not need to use the[ **Pull Data** ](/wGetStarted/INTERJECT-R
 
 ![](/images/Walkthrough-CustAging/26.png)
 
-From here you can see that Save-a-lot Markets had large invoices in July and August that are not payed. However, you can also see the effort to pay off those invoices in the following months by the over-payments they have made.  Take note of this activity and proceed to the next report: [ Inventory Report Walk-Through. ](wAbout/Inventory-Reports.html)
+From here you can see that Save-a-lot Markets had large invoices in July and August that are not payed. However, you can also see the effort to pay off those invoices in the following months by the over-payments they have made.  Take note of this activity and proceed to the next report: [ Inventory Report Walk-Through. ](/wAbout/Inventory-Reports.html)
 
 
   

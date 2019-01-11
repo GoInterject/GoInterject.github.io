@@ -4,7 +4,6 @@ layout: custom
 keywords: [fixed, inventory, report, create]
 description: In this page, you will go through the process of building a fixed Inventory report from scratch using the ReportFixed() function.
 ---
-* * *
 
 ##  **Overview**
 

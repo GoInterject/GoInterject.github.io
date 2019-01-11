@@ -96,7 +96,7 @@ Now, click on the cell  **G16,** which contains the ReportVariable() formula. No
 <br> 
 
 
-When selecting a range of cells, RetainedRowColumns uses a single string delimiting character separated list as its input. This means that the  **jcombine()** [link] helper function is required. 
+When selecting a range of cells, RetainedRowColumns uses a single string delimiting character separated list as its input. This means that the  [**jcombine()**](/wIndex/jcombine.html) helper function is required. 
 
 Now scroll down to the  **RetainRowColumns.** In that box, input  **jcombine((F2:G2))**. This will retain all inputs in columns  **P-R** in the report. 
 

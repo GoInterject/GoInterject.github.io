@@ -64,7 +64,7 @@ The Report Library manages Excel company report files and their various versions
 
 ![](/images/InterjectRibbon/05.png)
 
-Back to Top 
+ 
 
 * * *
 
@@ -94,7 +94,7 @@ Another function of the Pull Data tool is the Clear operation. While the Pull br
   
 
 
-Back to Top 
+ 
 
 * * *
 
@@ -116,7 +116,7 @@ Below the button for Saving Data is the **Clear Save Notes** which would clear o
 
 ![](/images/InterjectRibbon/11.png)
 
-Back to Top 
+ 
 
 * * *
 
@@ -136,7 +136,7 @@ See more about Drilling and Navigating in [ Drilling Between Reports. ](/wGetSta
   
 
 
-Back to Top 
+ 
 
 * * *
 
@@ -152,7 +152,7 @@ When you want to return to a previous report after Drilling, you can go back usi
   
 
 
-Back to Top 
+ 
 
 * * *
 
@@ -175,7 +175,7 @@ These commands can be set up for individual users, and they typically run fixed 
   
 
 
-Back to Top 
+ 
 
 * * *
 
@@ -216,7 +216,7 @@ Each tool has a specific purpose.
   
 
 
-Back to Top 
+ 
 
 * * *
 
@@ -236,7 +236,7 @@ For example, you can create a binder with reports for each district number in a 
   
 
 
-Back to Top 
+ 
 
 * * *
 
@@ -274,7 +274,7 @@ Once you have built a distribution sheet, this button runs the sheet and builds 
 
 To read more on Exporting and Distributions please click [ here ](/wGetStarted/Exporting-Reports.html). 
 
-Back to Top 
+ 
 
 * * *
 
@@ -297,7 +297,7 @@ Report builder offers the flexibility to build a ReportRange() and ReportFixed()
   
 
 
-Back to Top 
+ 
 
 * * *
 
@@ -310,7 +310,7 @@ The Sheet Protector uses a list of managed passwords to protect sheets across a 
   
 
 
-Back to Top 
+ 
 
 * * *
 
@@ -327,7 +327,7 @@ Once selected, the INTERJECT Ribbon expands, changes the button for Advanced Men
 
 ![](/images/InterjectRibbon/30.png)
 
-Back to Top 
+ 
 
 * * *
 
@@ -344,7 +344,7 @@ Selected columns and row ranges, data portals, formatting codes, and more, are d
 
 ![](/images/InterjectRibbon/32.png)
 
-Back to Top 
+ 
 
 * * *
 
@@ -355,7 +355,7 @@ In the INTERJECT Ribbon you can decide whether to show JSON or not. JSON (JavaSc
   
 ![](/images/InterjectRibbon/33.png)
 
-Back to Top 
+ 
 
 * * *
 
@@ -374,7 +374,7 @@ This option opens a configuration menu to manage diagnostics settings and send d
   
 
 
-Back to Top 
+ 
 
 * * *
 
@@ -427,7 +427,7 @@ Copy this code into your development environment and execute it to create your n
   
 
 
-Back to Top 
+ 
 
 * * *
 
@@ -441,7 +441,7 @@ This option allows users to look for new versions of the INTERJECT Excel Add-in.
 
 ![](/images/InterjectRibbon/39.png)
 
-Back to Top 
+ 
 
 * * *
 
@@ -456,7 +456,7 @@ Most common issues and questions about INTERJECT's functions are answered within
   
 
 
-Back to Top 
+ 
 
 * * *
 
@@ -483,7 +483,7 @@ If needed, a report can be sent to INTERJECT from this window whenever a problem
   
 
 
-Back to Top 
+ 
 
 * * *
 
@@ -515,7 +515,7 @@ Opening this window also shows user account credentials.
 
 [ Working with INTERJECT ](/wAbout/Working-with-INTERJECT.html)
 
-Back to Top 
+ 
 
   
 
