@@ -40,32 +40,32 @@ Reports often require various formats and subtotal sections, and this is especia
 
 Creating drills, it is possible to generate a simple suite of reports that enable you and your end-users to navigate anywhere from within the spreadsheet environment. Examples in this section include building drills in a [ Customer Aging ](/wGetStarted/L-Drill-CustomerAging.html) , [ Inventory ](/wGetStarted/L-Drill-InventoryReport.html) , and [ Financial report ](/wGetStarted/L-Drill-FinancialReport.html) . There is more than one way for the user to interact with the drill feature. See the page [ Three Ways to Drill ](/wGetStarted/L-Drill-TheThreeWays.html) for more details. 
 
-###  [ Lab Create: Hiding Rows & Columns ](/wGetStarted/L5-HidingRowsColumns.html)
+###  [ Lab Create: Hiding Rows & Columns ](/wGetStarted/L-Create-HideRowCol.html)
 
 ReportHideRowsOrColumns() is a function that allows you to hide both rows and columns when not needed. In this example, you will begin with hiding columns L, M, N, and O. To practice there is a file below that has been specifically prepared for this formula. 
 
   
 
 
-###  [ Lab Create: Working with Pivot Tables ](/wGetStarted/L6-Working-with-Pivot-Tables.html)
+###  [ Lab Create: Working with Pivot Tables ](/wGetStarted/L-Create-PivotTable.html)
 
 Pivot tables are excellent tools to help us find answers quickly. INTERJECT can help simplify pivot table presentation and distribution. 
 
-###  [ Lab Create: Special Column Definitions ](/wGetStarted/L7-Special-Column-Definitions.html)
+###  [ Lab Create: Special Column Definitions ](/wGetStarted/L-Create-SpecColDefs.html)
 
 Special Column Definitions are optional tags that bring out additional features to your standard column definition rows  . They are great for space savers or to allow for faster formatting of the Pulled data. 
 
-###  [ Lab Create: Protecting Sheets ](/wGetStarted/L8-Protecting-Sheets.html)
+###  [ Lab Create: Protecting Sheets ](/wGetStarted/L-Create-Protecting.html)
 
 Sheet Protection expands upon the already existing protection functions in excel but brings with it the INTERJECT UI and security rights. 
 
 To use it, navigate to the INTERJECT ribbon and click on the  **Sheet Protector ** button in the  **Tools ** section. 
 
-###  [ Lab Create: Using the Retained Feature ](wGetStarted\L9-Using-the-Retain-Feature.html)
+###  [ Lab Create: Using the Retained Feature ](wGetStarted/L-Create-RetainFeature.html)
 
 Coming soon 
 
-###  [ Lab Create: Updating the Report Library ](/wGetStarted/L10-Updating-the-Report-Library.html)
+###  [ Lab Create: Updating the Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary)
 
 The Report Library is how you share reports with other users while tracking versions for internal audit controls. Report Library is a simple and easy-access center for sharing interactive spreadsheet reports and applications to your entire organization. 
 
