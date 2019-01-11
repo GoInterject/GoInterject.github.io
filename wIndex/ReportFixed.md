@@ -67,9 +67,11 @@ RowDefRange
 
 Select a single column range that has the values that compare to the RowDefName field of the data result. Each RowDefName defines a new target range where the records 
 
+
 that match the value found in the RowDefName will be inserted. It is not required for a returned dataset to have a column called RowDefName. RowDefRange can look for a different column name if specified in the ColDefRange cell (explained below), which is directly above the RowDefRange column. 
 
-Explain the **[leftover]** rowdefrange special tag that marks the target range will all records not matching will be presented. 
+
+Explain the **\[leftover\]** rowdefrange special tag that marks the target range will all records not matching will be presented. 
 
 
 </td>  
