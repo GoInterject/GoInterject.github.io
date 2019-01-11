@@ -29,7 +29,7 @@ tree: false
 <div id="my-cse1">
 <script>
   (function() {
-    var cx = '000587662382955647221:-zibgu3btlo';
+    var cx = '005534451279647379552:p216o8yqyva';
     var gcse = document.createElement('script');
     gcse.type = 'text/javascript';
     gcse.async = true;
@@ -38,7 +38,7 @@ tree: false
     s.parentNode.insertBefore(gcse, s);
   })();
 </script>
-<gcse:search></gcse:search>
+<gcse:searchresults-only></gcse:searchresults-only>
 </div>
 
 
