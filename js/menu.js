@@ -180,10 +180,14 @@ function hookupTOCEvents()
           resultsOutput.push("<b>Keywords</b>: <i>" + highlightMe(pages[results[i].topic].keywords,searchVal) + "</i>");
           resultsOutput.push("</li>");
           }
+          // Limit the character length of the description so that the drop down from the search
+          // does not flow to the bottom of the page
+          var descriptionCutString = pages[results[i].topic].description.substring(0, 75) + "..."
+          
           if (pages[results[i].topic].description)
           {
           resultsOutput.push("<li id='autoDescription" + i + "' class='autocompleteDescription'>")
-          resultsOutput.push("<b>Description</b>: " + highlightMe(pages[results[i].topic].description,searchVal));
+          resultsOutput.push("<b>Description</b>: " + highlightMe(descriptionCutString,searchVal));
           resultsOutput.push("</li>");
           }
           resultsOutput.push("</ul>");
