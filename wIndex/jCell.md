@@ -7,163 +7,22 @@ descriptions: jCell retrieves data based on the provided parameters.
 
 ##  Function Summary 
 
-jCell retrieves data based on the provided parameters. The first argument is typically a [ jAcct() ](/wIndex/61702534.html) lookup when a company has more than one segment to filter. The retrieved data is always summarized into a single value. 
-
-###  Function Arguments   
-  
-<table>  
-<tr>  
-<th>
-
-Parameter Name 
-</th>  
-<th>
-
-Description 
-</th>  
-<th>
-
-Default 
-</th>  
-<th>
-
-Optional 
-</th> </tr>  
-<tr>  
-<td>
-
-
-
-FullAccount 
-
-
-</td>  
-<td>
-
+jCell retrieves data based on the provided parameters. The first argument is typically a [ jAcct() ](/wIndex/jAcct.html) lookup when a company has more than one segment to filter. The retrieved data is always summarized into a single value. 
 
 
 Filter text for up to six segments of a chart of accounts. Use the INTERJECT function [ jAcct() ](/wIndex/jAcct.html) when more than a single segment is used as a filter. 
 
+###  Function Arguments   
 
-</td>  
-<td>
-
-
-</td>  
-<td>
-
-
-
-NO 
-
-
-</td> </tr>  
-<tr>  
-<td>
-
-Period  
-</td>  
-<td>
-
-The month or quarter to filter the retrieved data.  
-</td>  
-<td>
-
-
-</td>  
-<td>
-
-
-
-YES 
-
-
-</td> </tr>  
-<tr>  
-<td>
-
-Year 
-</td>  
-<td>
-
-The year or range of years to  filter the retrieved  data. 
-</td>  
-<td>
-
-
-</td>  
-<td>
-
-YES 
-</td> </tr>  
-<tr>  
-<td>
-
-Source 
-</td>  
-<td>
-
-A source filter that may include budget, actual, or forecast, depending on user's system. 
-</td>  
-<td>
-
-
-</td>  
-<td>
-
-YES 
-</td> </tr>  
-<tr>  
-<td>
-
-Version 
-</td>  
-<td>
-
-Filters the retrieved data. 
-</td>  
-<td>
-
-
-</td>  
-<td>
-
-YES 
-</td> </tr>  
-<tr>  
-<td>
-
-Company 
-</td>  
-<td>
-
-Sub-grouping to retrieve data only from a specific company or district. 
-</td>  
-<td>
-
-
-</td>  
-<td>
-
-YES 
-</td> </tr>  
-<tr>  
-<td>
-
-Currency 
-</td>  
-<td>
-
-
-</td>  
-<td>
-
-
-</td>  
-<td>
-
-YES 
-</td> </tr> </table>
+| Parameter Name | Description                                                                               | Default | Optional |
+| -------------- | ----------------------------------------------------------------------------------------- | ------- | -------- |
+| FullAccount    | Filter text for up to six segments of a chart of accounts. Use the INTERJECT function [ jAcct() ](/wIndex/jAcct.html) when more than a single segment is used as a filter. |         | NO       |
+| Period         | The month or quarter to filter the retrieved data.                                        |         | YES      |
+| Year           | The year or range of years to filter the retrieved data.                                  |         | YES      |
+| Source         | A source filter that may include budget, actual, or forecast, depending on user's system. |         | YES      |
+| Version        | Filters the retrieved data.                                                               |         | YES      |
+| Company        | Sub-grouping to retrieve data only from a specific company or district.                   |         | YES      |
+| Currency       |                                                                                           |         | YES      |
 
 ###  Function Composition   
   
