@@ -1,5 +1,5 @@
 ---
-title: Lab Portal: Database Connection
+title: "Lab Portal: Database Connection"
 layout: custom
 keywords: [database connection, lab, walkthrough]
 description: This lab shows how to connect to a database using a pre-existing dataportal.

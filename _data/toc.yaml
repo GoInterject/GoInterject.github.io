@@ -6,17 +6,17 @@ horizontalnav:
   path: /wGetStarted/Creating-with-INTERJECT.html
   node: getstarted
 - title: Developer
-  path: /wApi/DeveloperMain.html
+  path: /wApi/dot-net-api-setup.html
   node: Developer
-- title: Design
-  path: /wDesign/Reporting-Design-Standards.html
-  node: design
+# - title: Design
+#   path: /wDesign/Reporting-Design-Standards.html
+#   node: design
 - title: References
   path: /wIndex/Excel-Function-Index.html
   node: index
-- title: Apps
-  path: /wApps/How-to-articles.html
-  node: apps
+# - title: Apps
+#   path: /wApps/How-to-articles.html
+#   node: apps
 - title: Portal Site 
   path: /wPortal/The-INTERJECT-Website-Portal.html
   node: portal
@@ -301,8 +301,8 @@ portal:
 
    
 Developer:
-- sectiontitle: Developer
-  path: /wApi/DeveloperMain.html
+- sectiontitle: Api Developer
+  path: 
   section:
     - title: .Net Api Setup
       path: /wApi/dot-net-api-setup.html
