@@ -16,19 +16,19 @@ To watch a quick walk-through video, click on the icon:
 
 **Step 1:** Navigate to the PL Trend report page inside the INTERJECT Financials folder of the  [ Report Library  ](/wAbout/Report-Library-Basics.html). The Report Library is a central place for publishing reporting templates. It is versioned and easily located. 
 
-![](/images/financial/image2017-8-8_13-36-9.png)
+![](/images/Walkthrough-Financial/01.png)
 
 **Step 2:** With the report template open, type the location number, year, and the month of the report to view. Use 7002 for Location and 2002-05 (May 2002) for the year and month. 
 
-![](/images/financial/image2017-6-16_16-36-39.png)   
+![](/images/Walkthrough-Financial/02.png)   
 
 Now you are  ready to pull the data. Use the [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) button as shown below, or use the short key Ctrl-Shift-J. 
 
-![](/images/financial/image2017-8-8_14-15-34.png)   
+![](/images/Walkthrough-Financial/03.png)   
 
 It will just take a moment for our report to populate. The illustration below shows the amounts for March, April, and May of 2002. 
 
-![](/images/financial/image2017-6-2_14-53-55.png)
+![](/images/Walkthrough-Financial/04.png)
 
  
 
@@ -36,40 +36,40 @@ It will just take a moment for our report to populate. The illustration below sh
 
 **Step 1:** Now quickly add a few more columns to the report for June, July, and August. First clear the data so you have an empty template. Clear the data by selecting the [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) button again, but this time choose the [ **Clear** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) button. 
 
-![](/images/financial/image2017-6-9_15-18-12.png)   
+![](/images/Walkthrough-Financial/05.png)   
 
 **Step 2:** Extend the trend out a few more months by selecting column N, clicking and holding the small square anchored on the bottom right of the header, and dragging it three columns to the right.  Once released, the columns automatically expand. The below animated GIF illustrates this series of steps. 
 
-![](/images/financial/Modifying-Report-Dragging-Columns.gif)
+![](/images/Walkthrough-Financial/06.gif)
 
 **Step 3:** Re-pull the data with the [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) menu button as you did earlier. 
 
-![](/images/financial/image2017-6-9_15-22-22.png)
+![](/images/Walkthrough-Financial/07.png)
 
 Once the update is completed, all six months of data will be shown and populated. 
 
-![](/images/financial/image2017-6-12_12-33-57.png)
+![](/images/Walkthrough-Financial/08.png)
 
 
 ###  Grouped Detail in the Report 
 
 INTERJECT allows for spreadsheet groupings within financial reports, so additional detail can be included and expanded when needed. The steps below will demonstrate how to expand grouped areas to view the account level detail included in this report. 
 
-![](/images/financial/3.00GroupedDetail-Groups.png)
+![](/images/Walkthrough-Financial/09.png)
 
 **Step 1:** Groupings are managed from the top and left margins of the spreadsheet. In this report, you are only using grouped rows so there are only +/- buttons on the left. Click the plus sign to expand a group and see the account detail. 
 
-![](/images/financial/image2017-6-19_8-26-30.png)   
+![](/images/Walkthrough-Financial/10.png)   
 
 The previous example shows two groups expanded individually, but you can also expand all groups at one time.  On the top left there is a sidebar with the numbers 1 and 2 on the top of the left margin. 
 
 Clicking 2 will expand all the groups at that level. 
 
-![](/images/financial/3.01GroupedDetail-Ungroup-All.png)
+![](/images/Walkthrough-Financial/11.png)
 
 Clicking 1 will collapse all the groupings. 
 
-![](/images/financial/image2017-6-19_8-22-57.png)
+![](/images/Walkthrough-Financial/12.png)
 
 Back to Top 
 
@@ -81,11 +81,11 @@ After expanding the groupings of modified the reports, you may still want more d
 
 For example, drilling on any **Trend Data** value in account **32000** will take us to the **JE Query** report template which is a brand new workbook rather than another tab and will provide the line item detail. Try drilling on **account 32000 for March 2003**.
 
-![](/images/financial/image2017-6-9_16-29-19.png)
+![](/images/Walkthrough-Financial/13.png)
 
 **Step 2:** A new report will open and automatically pull the underlying detail for the drill. The total will agree with the amount that was drilled on in L34 from the previous report. Notice the filters for the report were automatically populated from the report that you drilled from. The date range, account, and location all match. 
 
-![](/images/financial/image2017-6-2_11-52-19.png)
+![](/images/Walkthrough-Financial/14.png)
 
 
 ###  Drill Further into JE-Lookup 
@@ -94,11 +94,11 @@ Lets go one step further. Now that you see the journal entry detail summing the 
 
 **Step 1:** Click on the first line that has a negative 20,900 value, on row 23. This line is from the journal entry JRNLWA00032760 . 
 
-![](/images/financial/image2017-6-9_16-33-19.png)
+![](/images/Walkthrough-Financial/15.png)
 
 This drill goes directly to a second tab in the report called JE Lookup, and it will show the complete detail for journal entry JRNLWA00032760. As expected, it sums to zero like all journal entries must. 
 
-![](/images/financial/image2017-6-12_13-57-8.png)
+![](/images/Walkthrough-Financial/16.png)
 
 
 ###  Report Example with Data Cells 
@@ -107,10 +107,10 @@ The above examples illustrate the INTERJECT Data List reports. These reports are
 
 **Step 1** : The first thing to do is delete the rows below 44 and completely clear them out. 
 
-![](/images/financial/image2017-6-19_15-17-41.png)
+![](/images/Walkthrough-Financial/17.png)
 
 The report now looks like this.    
-![](/images/financial/image2017-6-19_15-18-10.png)
+![](/images/Walkthrough-Financial/18.png)
 
 Now use Data Cells to replicate some of the present data. By having both data generated by tabular reports and data cells next to each other, you can confirm that they are yielding the same results. 
 
@@ -120,7 +120,7 @@ The example below illustrates how the [ jCell() ](/wIndex/jCell.html) function c
 
 To open the function window, select the cell, click on [ jCellN ](/wIndex/jCellN.html) in the formula bar above the columns, then click the fx button to the left. 
 
-![](/images/financial/image2017-6-21_12-8-30.png)
+![](/images/Walkthrough-Financial/19.png)
 
 Use the [ jAcct() ](/wIndex/jAcct.html) function inside the Full Account box to include filters for both the Accounts and Location segments of the chart of accounts. 
 
@@ -130,25 +130,25 @@ In this function you are using accounts 31000, 32000, and 33000 in Segment 1, an
 
 Notice that these are the same accounts that makeup **Revenue - Sales** in the original PL Trend and the same location you filtered on earlier. 
 
-![](/images/financial/image2017-6-19_15-57-13.png)
+![](/images/Walkthrough-Financial/20.png)
 
 **Step 3:** Now use the [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#pull-data) function. 
 
-![](/images/financial/image2017-8-8_13-43-14.png)
+![](/images/Walkthrough-Financial/21.png)
 
 As you can see, the totals for **Revenue - Sales** match for both the data cell and data list. 
 
-![](/images/financial/image2017-6-19_16-51-31.png)
+![](/images/Walkthrough-Financial/22.png)
 
 **Step 4:** Listing out each account for a financial group can take time if the account is large enough. Next, try to use data cells again, but this time use groupings to make the function easier. 
 
 Go back to the jAcct() function window and change the accounts to be **Revenue - Sales** instead of the numbered list. Be sure to keep everything else the same. 
 
-![](/images/financial/image2017-6-19_16-9-30.png)
+![](/images/Walkthrough-Financial/23.png)
 
 After the switch, you can see that the values still are the same. This is because the accounts 31000, 32000, and 33000 are all under the preset grouping **Revenue - Sales**. 
 
-![](/images/financial/image2017-6-19_16-0-55.png)
+![](/images/Walkthrough-Financial/24.png)
 
 **Step 5:** More complex filter text can be used to request precise balances. The following example uses a combination of ranges, exclusions, wildcards, and financial groups to return specific data. Even Net Income or EBITDA can be presented in a single worksheet cell. 
 
@@ -156,21 +156,21 @@ For more information on the Data Cell Filter options, [ click here ](/wIndex/Dat
 
 In the below example, the groupings to the left of the figures represent the grouping filter in the jAcct Function to the cell beside it. This is so you can see what account groupings are being used for each of the numbers. 
 
-![](/images/financial/image2017-6-21_9-8-10.png)
+![](/images/Walkthrough-Financial/25.png)
 
 As you can see, the numbers in the data cells tie perfectly with the numbers in the data list above. 
 
 **Step 6:** To compare to the earlier PL Trend report, open up the report **PL Trend - w/ DataCells**. 
 
-![](/images/financial/image2017-8-8_13-57-59.png)
+![](/images/Walkthrough-Financial/26.png)
 
 Enter the same period and location, 2002-05 and 7002, like you did earlier in this walk-through. Use the  [ Pull Data ](/wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#pull-data) operation to pull data. 
 
-![](/images/financial/image2017-8-8_14-1-26.png)   
+![](/images/Walkthrough-Financial/27.png)   
 
 As you can see, the results will be the same as the earlier PL Trend above, but there are no groups to show account level detail. 
 
-![](/images/financial/image2017-6-21_13-5-32.png)
+![](/images/Walkthrough-Financial/28.png)
 
 **A Quick Summary of the Disadvantages of Data Cells vs Tabular Reports**
 
