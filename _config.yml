@@ -46,7 +46,8 @@ plugins:
 
 # gem:
 #   - jekyll-srcset
-  
+google:
+  search_engine_id: 005534451279647379552:p216o8yqyva
   
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
