@@ -38,7 +38,7 @@ tree: false
     s.parentNode.insertBefore(gcse, s);
   })();
 </script>
-<gcse:searchresults-only></gcse:searchresults-only>
+<div markdown="0"><gcse:searchresults-only></gcse:searchresults-only></div>
 </div>
 
 
