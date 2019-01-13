@@ -8,7 +8,7 @@ title: "Docs search"
 tree: false
 ---
 
-<style type='text/css'>
+<!-- <style type='text/css'>
 #my-cse1 { all: initial !important; all: default !important; }
 #my-cse1 table, #my-cse1 table tr, #my-cse1 table tr th, #my-cse1 table tr td, .gs-bidi-start-align { border: 0px !important; padding: 0px !important; line-height: initial !important; margin: 0px !important; }
 .gs-snippet { margin-top: 0px !important; margin-bottom: 0px !important; padding: 0px !important; color: #999}
@@ -22,9 +22,9 @@ tree: false
 .gsc-control-cse, .gsc-control-cse-en { padding: 0px !important; }
 .gsc-result-info { padding-bottom: 0px !important; }
 .gsc-adBlock { display: none; }
-</style>
+</style> -->
 
-<div id="glossaryMatch"></div>
+<!-- <div id="glossaryMatch"></div> -->
 
 <div id="my-cse1">
 <script>
@@ -42,7 +42,7 @@ tree: false
 </div>
 
 
-<script defer>
+<!-- <script defer>
 setTimeout(function(){
   $(document).ready(function() {
     let searchTerm = decodeURI(queryString().q);
@@ -55,4 +55,4 @@ setTimeout(function(){
     }
   });
 }, 1);
-</script>
+</script> -->
