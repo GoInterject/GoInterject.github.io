@@ -1,11 +1,7 @@
 ---
 description: Interject documentation search results
 keywords: Search, Interject, documentation, manual, guide, reference, api
-noratings: false
-notoc: false
-notags: false
 title: "Docs search"
-tree: false
 ---
 
 <style type='text/css'>
