@@ -203,7 +203,7 @@
 							    thisHREF = originalURL + thisHREF.replace(baseHref, "");
 							    //console.log('AFTER: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
 							  }
-							  if ((thisHREF.indexOf(window.location.hostname) > -1 || thisHREF.indexOf('http') == -1) && document.links[i].className.indexOf("nomunge") < 0) {
+							  if ((thisHREF.indexOf(window.location.hostname) > -1 || thisHREF.indexOf('https') == -1) && document.links[i].className.indexOf("nomunge") < 0) {
 							    munged = true;
 							    thisHREF = thisHREF.replace(".md", "/").replace("/index/", "/");
 							    document.links[i].setAttribute('href', thisHREF);
@@ -225,7 +225,7 @@
 											var pd = d.createElement(c),
 												s;
 											pd.id = j;
-											pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
+											pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'https://i0.poll.fm/js/rating/rating.js';
 											s = document.getElementsByTagName(c)[0];
 											s.parentNode.insertBefore(pd, s);
 										}
@@ -254,7 +254,7 @@
                                         {% endif %}
 										<li><a href="https://github.com/gointerject/gointerject.github.io/issues/new?body=File: [{{ page.path }}](https://docs.gointerject.com{{ page.url }})"
 															class="nomunge"><i class="fa fa-check" aria-hidden="true"></i> Request docs changes</a></li>
-										<li><a href="http://www.gointerject.com/call-us/"><i class="fa fa-question" aria-hidden="true"></i> Get help</a></li>
+										<li><a href="https://www.gointerject.com/call-us/"><i class="fa fa-question" aria-hidden="true"></i> Get help</a></li>
 										<!-- toggle mode -->
 										<!-- Turn night mode on and off
 										<li>
