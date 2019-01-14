@@ -33,6 +33,7 @@ title: "Docs search"
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(gcse, s);
   })();
+  console.log("googlecustomsearch completed");
 </script>
 <div markdown="0"><gcse:searchresults-only></gcse:searchresults-only></div>
 </div>
