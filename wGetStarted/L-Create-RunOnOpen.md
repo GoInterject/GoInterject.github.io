@@ -16,25 +16,28 @@ For this walkthrough, we will be using the [ Customer Aging Report ](/wGetStarte
 **Step 1:** To begin, open the **Customer Collections** report in the [ Report Library ](/wAbout/Report-Library-Basics.html). 
 
 ![](/images/L-Create-RunOnOpen/01.png)
-
 <br> 
 
 **Step 2** In the excel Ribbon, click on "File" to bring up the file screen.
 
 ![](/images/L-Create-RunOnOpen/02.png)
 <br>
+
 **Step 3** In the Info section, select "Advanced properties" in the properties dropdown to bring up the properties window.
 
 ![](/images/L-Create-RunOnOpen/03.png)
 <br>
+
 **Step 4** Navigate to the "Custom" page and in the "Name" textbox, input "Interject_RunOnOpen" and the type field should be "Text"
 
 ![](/images/L-Create-RunOnOpen/04.png)
 <br>
+
 **Step 5** In the "Value" box, there are two options: Run on the first tab that is seen on open, or run on a specific tab.
 **Option 1** If you would like to run on the first tab seen, set value to "True" and click "Add".
 ![](/images/L-Create-RunOnOpen/05.png)
 <br>
+
 **Option 2** If you would like to run on a specific tab, set the value to "T:*TabName*" and click "Add".
 
 In this case, type, "T:CustomerAging" to specify the tab CustomerAging to be pulled on open. 
