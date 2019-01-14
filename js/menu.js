@@ -103,6 +103,7 @@ function hookupTOCEvents()
         if (autoCompleteShowingID==autoCompleteResultLimit || autoCompleteShowingID == -1 || autoCompleteShowing == false)
         {
           // "see all" is selected or they don't have an autocomplete result selected
+          //?q=
           loadPage("/schemas/search/?q=" + $("#st-search-input").val());
         } else {
           // an autocomplete result is selected
