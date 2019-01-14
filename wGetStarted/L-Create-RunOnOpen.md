@@ -34,6 +34,7 @@ For this walkthrough, we will be using the [ Customer Aging Report ](/wGetStarte
 <br>
 
 **Step 5** In the "Value" box, there are two options: Run on the first tab that is seen on open, or run on a specific tab.
+
 **Option 1** If you would like to run on the first tab seen, set value to "True" and click "Add".
 ![](/images/L-Create-RunOnOpen/05.png)
 <br>
