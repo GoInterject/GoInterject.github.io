@@ -39,7 +39,7 @@ title: "Docs search"
 </div>
 
 
-<script src="" defer>
+<script defer>
   console.log("Begin setTimeout Function");
 setTimeout(function(){
   $(document).ready(function() {
