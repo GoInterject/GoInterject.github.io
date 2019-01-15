@@ -71,8 +71,8 @@
 	<link rel="apple-touch-icon" type="image/x-icon" href="/favicons/docs@2x.ico" sizes="129x128">
 	<meta property="og:image" content="/favicons/docs@2x.ico"/>
 	<!-- metadata -->
-	
-	{% if page.path == "search.md" %}
+	<!--This if statement is required to load jquery on the search.md page before the setTimeout function-->
+	{% if page.path == "/schemas/search.md" %}
 		<script src="/js/jquery.js"></script>
 	{% endif %}
     <link rel="stylesheet" href="/css/font-awesome.min.css">
@@ -321,7 +321,7 @@
 	<!-- <script src="/js/anchorlinks.js"></script> -->
 	<script defer src="/js/menu.js"></script>
 	<!-- required for the search page to have jQuery loaded in the header-->
-	{% if page.path != "search.md" %}
+	{% if page.path != "/schemas/search.md" %}
 		<script src="/js/jquery.js"></script>
 	{% endif %}
 	<script src="/js/bootstrap.min.js"></script>
