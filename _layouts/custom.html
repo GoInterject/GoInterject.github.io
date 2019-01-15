@@ -72,7 +72,9 @@
 	<meta property="og:image" content="/favicons/docs@2x.ico"/>
 	<!-- metadata -->
 	
-	
+	{% if page.path == "search.md" %}
+		<script src="/js/jquery.js"></script>
+	{% endif %}
     <link rel="stylesheet" href="/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/css/bootstrap.min.css">
 	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css">
@@ -318,7 +320,10 @@
 	{% endif %}
 	<!-- <script src="/js/anchorlinks.js"></script> -->
 	<script defer src="/js/menu.js"></script>
-	<script src="/js/jquery.js"></script>
+	<!-- required for the search page to have jQuery loaded in the header-->
+	{% if page.path != "search.md" %}
+		<script src="/js/jquery.js"></script>
+	{% endif %}
 	<script src="/js/bootstrap.min.js"></script>
 	<!-- Always include the archive.js, but it doesn't do much unless we are an archive -->
 	<script language="javascript">
