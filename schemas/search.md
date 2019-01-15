@@ -39,10 +39,10 @@ title: "Docs search"
 </div>
 
 
-<script defer>
+<script src="js/jquery.js" defer>
   console.log("Begin setTimeout Function");
 setTimeout(function(){
-  jQuery(document).ready(function() {
+  $(document).ready(function() {
     let searchTerm = decodeURI(queryString().q);
     if(searchTerm != 'undefined' && searchTerm != "") {
       console.log("begin undefined searchTerm");
