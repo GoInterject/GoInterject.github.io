@@ -39,7 +39,8 @@ title: "Docs search"
 </div>
 
 
-<script>
+<script src="" defer>
+  console.log("Begin setTimeout Function");
 setTimeout(function(){
   $(document).ready(function() {
     let searchTerm = decodeURI(queryString().q);
