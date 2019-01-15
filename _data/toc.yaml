@@ -143,6 +143,8 @@ getstarted:
       path: /wGetStarted/L-Create-RetainFeature.html
     - title: "Lab Create: Updating the Report Library"
       path: /wGetStarted/L-Create-UpdatingReportLibrary.html
+    - title: "Lab Create: INTERJECT Run On Open"
+      path: /wGetStarted/L-Create-RunOnOpen.html
     - sectiontitle: Exporting Reports
       path: /wGetStarted/Exporting-Reports.html
       section:
