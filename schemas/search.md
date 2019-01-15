@@ -42,7 +42,7 @@ title: "Docs search"
 <script defer>
   console.log("Begin setTimeout Function");
 setTimeout(function(){
-  $(document).ready(function() {
+  jQuery(document).ready(function() {
     let searchTerm = decodeURI(queryString().q);
     if(searchTerm != 'undefined' && searchTerm != "") {
       console.log("begin undefined searchTerm");
