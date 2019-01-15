@@ -103,7 +103,8 @@ function hookupTOCEvents()
         if (autoCompleteShowingID==autoCompleteResultLimit || autoCompleteShowingID == -1 || autoCompleteShowing == false)
         {
           // "see all" is selected or they don't have an autocomplete result selected
-          loadPage("/schemas/search/?q=" + $("#st-search-input").val());
+          //?q=
+          loadPage("/schemas/search?q=" + $("#st-search-input").val());
         } else {
           // an autocomplete result is selected
           loadPage(pages[displayingAutcompleteResults[autoCompleteShowingID]].url);
@@ -195,7 +196,7 @@ function hookupTOCEvents()
           resultsShown++;
         }
         var resultsShownText = (resultsShown > 1) ? resultsShown + " of " + results.length + " docs" : "doc";
-        resultsOutput.push("<div id='autocompleteShowAll'><ul class='autocompleteList'><li class='autocompleteTitle' id='autoSeeAll'><a href='/schemas/search/?q=" + searchVal + "'><b>Showing top " + resultsShownText + ". See all results...</b></a></li></ul></div>")
+        resultsOutput.push("<div id='autocompleteShowAll'><ul class='autocompleteList'><li class='autocompleteTitle' id='autoSeeAll'><a href='/schemas/search?q=" + searchVal + "'><b>Showing top " + resultsShownText + ". See all results...</b></a></li></ul></div>")
         resultsOutput.push("</div>");
         $("#autocompleteResults").css("display","block");
         $("#autocompleteResults").html(resultsOutput.join(""));
@@ -258,7 +259,7 @@ function renderTopicsByTagTable(tagToLookup,divID)
 var tagToLookup;
 function renderTagsPage()
 {
-  if(window.location.pathname.indexOf("/glossary/")>-1 || window.location.pathname.indexOf("/schemas/search/")>-1)
+  if(window.location.pathname.indexOf("/glossary/")>-1 || window.location.pathname.indexOf("/schemas/search")>-1)
   {
     if (window.location.pathname.indexOf("/glossary/")>-1)
     {
