@@ -28,7 +28,7 @@ github_username:  lyubar
 name: Interject Documentation
 markdown: kramdown
 theme: minima
-url: "http://docs.gointerject.com/" # the base hostname & protocol for your site
+url: "https://docs.gointerject.com/" # the base hostname & protocol for your site
 plugins:
   - jekyll-feed
   - jekyll-redirect-from

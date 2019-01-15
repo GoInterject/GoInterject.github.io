@@ -37,22 +37,29 @@ tree: false
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(gcse, s);
   })();
+  //console.log("googlecustomsearch completed");
 </script>
 <div markdown="0"><gcse:searchresults-only></gcse:searchresults-only></div>
 </div>
 
 
 <script defer>
+  //console.log("Begin setTimeout Function");
 setTimeout(function(){
   $(document).ready(function() {
     let searchTerm = decodeURI(queryString().q);
     if(searchTerm != 'undefined' && searchTerm != "") {
+      //console.log("begin undefined searchTerm");
+      //console.log(searchTerm)
       $("#st-search-input").val(searchTerm);
       $("#st-search-input").focus();
       // Update heading with term user searched for
+      //console.log("middle undefined searchTerm");
       let currHeading = $("h1").text();
       $("h1").text(currHeading + " results for: " + searchTerm);
+      //console.log(currHeading);
     }
+  //console.log("document load");
   });
 }, 1);
 </script>
