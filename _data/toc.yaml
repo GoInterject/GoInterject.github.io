@@ -85,7 +85,63 @@ about:
 apps:
   - title: How-to articles
     path: /wApps/How-to-articles.html
-
+  - sectiontitle: INTERJECT Financials
+    path: /wApps/Interject-Financials.html
+    section:
+      - title: "Segments and Segment Naming"
+        path: /wApps/Interject-Segments.html
+      - title: "Grouping Tool"
+        path: /wApps/Interject-GroupingTool.html
+      - title: "Scheduling Tool"
+        path: /wApps/Interject-SchedulingTool.html
+      - title: "Report Distribution"
+        path: /wApps/Interject-ReportDist.html
+  - sectiontitle: "INTERJECT Financials for Epicor"
+    path: /wApps/Epicor-Financials.html
+    section:
+      - title: "Segments and Segment Naming"
+        path: /wApps/Epicor-Segments.html
+      - title: "Dealing with Multiple Companies"
+        path: /wApps/Epicor-MultiComp.html
+      - title: "Dealing with Multiple Organizations in a Company"
+        path: /wApps/Epicor-MultiOrg.html
+      - title: "Live Data vs. Scheduled Refreshes"
+        path: /wApps/Epicor-Live-Scheduled.html
+      - sectiontitle: "Special Considerations"
+        path: /wApps/Epicor-Special.html
+        section:
+          - title: "Fiscal vs. Current Period"
+            path: /wApps/Epicor-Fiscal-Current.html
+          - title: "Chart of Accounts"
+            path: /wApps/Epicor-ChartAccounts.html
+      - title: "Budget Data"
+        path: /wApps/Epicor-Budget.html
+      - title: "Building New Reports in FinCube"
+        path: /wApps/Epicor-NewReports.html
+  - sectiontitle: "SQL Server Implementation"
+    path: /wApps/SQLImplement.html
+    section:
+      - title: "SQL Database Installation"
+        path: /wApps/SQL-Install.html
+      - title: "SQL Security"
+        path: /wApps/SQL-Security.html
+      - title: "SQL Agent"
+        path: /wApps/SQL-Agent.html
+      - title: "SQL Mail"
+        path: /wApps/SQL-Mail.html
+  - sectiontitle: "FRx Migration"
+    path: /wApps/FRx-Migration.html
+    section:
+      - title: "Access DB & Report Specs"
+        path: /wApps/FRx-Access-Report.html
+      - title: "Initial Migration"
+        path: /wApps/FRx-Initial.html
+      - title: "Cleanup of Migrated Reports"
+        path: /wApps/FRx-Cleanup.html
+      - title: "Enhancing Migrated Reports"
+        path: /wApps/FRx-Enhance.html
+      - title: "Financial Report Design Best Practices"
+        path: /wApps/FRx-Design-Best-Practices.html
 
 getstarted:
   - sectiontitle: Creating with INTERJECT
