@@ -7,7 +7,7 @@ description: Use this property to auto-pull the report when opening for the firs
 
 ##  **Overview:**
 
-Some reports require defaults <!---default what? Settings or formulas or something?---> or have summary pages that must be pulled before others in order for the report to function properly. Using the Run on Open INTERJECT property will auto-run the first tab that appears. This can save time and helps streamline INTERJECT processes. 
+Some reports require default values, settings or have summary pages that must be pulled before others in order for the report to function properly. Using the Run on Open INTERJECT property will auto-run the first tab that appears. This can save time and helps streamline INTERJECT processes. 
 
 We will walk through Run on Open using the [ Customer Aging Report ](/wGetStarted/L-Create-CustomerAging.html).
 
@@ -18,30 +18,30 @@ We will walk through Run on Open using the [ Customer Aging Report ](/wGetStarte
 ![](/images/L-Create-RunOnOpen/01.png)
 <br> 
 
-**Step 2** Click on "File" in the Excel Ribbon to bring up the file screen.
+**Step 2** Click on **File** in the Excel Ribbon to bring up the file screen.
 
 ![](/images/L-Create-RunOnOpen/02.png)
 <br>
 
-**Step 3** Under Info, select "Advanced Properties" in the Properties dropdown. The Properties window will open.
+**Step 3** Under Info, select **Advanced Properties** in the Properties dropdown. The Properties window will open.
 
 ![](/images/L-Create-RunOnOpen/03.png)
 <br>
 
-**Step 4** Under the "Custom" tab find the "Name" textbox and select "Interject_RunOnOpen." The "Type" field should be "Text."
+**Step 4** Under the "Custom" tab find the **Name** textbox and select "Interject_RunOnOpen." The "Type" field should be "Text."
 
 ![](/images/L-Create-RunOnOpen/04.png)
 <br>
 
-**Step 5** The "Value" box below takes two options: "True" or "T:*TabName*" <!---is that right--->"True" will will cause Excel to run on the first tab seen on open. "False" will cause it to run on a specific tab.
+**Step 5** The **Value** box below takes two options: **True** or T:*TabName* **True** will will cause Excel to run on the first tab seen on open. Specify the tab name to default to that tab.
 
-**Option 1** If you would like to run on the first tab seen, set value to "True" and click "Add".
+**Option 1** If you would like to run on the first tab seen, set value to **True** and click **Add**.
 ![](/images/L-Create-RunOnOpen/05.png)
 <br>
 
-**Option 2** If you would like to run on a specific tab, set the value to "T:*TabName*" and click "Add".
+**Option 2** If you would like to run on a specific tab, set the value to "T:*TabName*" and click **Add**.
 
-In this case, we want to pull CustomerAging on open, so type "T:CustomerAging" and that tab will be pulled. 
+In this case, we want to pull CustomerAging on open, so type **T:CustomerAging** and that tab will be pulled. 
 ![](/images/L-Create-RunOnOpen/06.png)
 <br> 
 
