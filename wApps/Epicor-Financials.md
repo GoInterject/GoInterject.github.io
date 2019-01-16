@@ -5,6 +5,7 @@ keywords: [Account, Epicor, Companies]
 description: INTERJECT™ Financials for Epicor Enterprise (This would cover topics that are specific to integration with Epicor Enterprise, and would potentially be different for each ERP) 
 ---
 
+## Overview
 
 ## My Apps
 **Interject Financials:** Includes 44 data portals related to *Financials for Spreadsheets.* Data connection is redirected through ""

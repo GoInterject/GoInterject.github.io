@@ -2,8 +2,9 @@
 title: INTERJECT Financials
 layout: custom
 keywords: []
-description: 
+description: INTERJECT™ Financials specifics (Topics that are unique/specific to the Financials Application) 
 ---
+## Overview
 
 ## My Apps
 **Interject Financials:** Includes 44 data portals related to *Financials for Spreadsheets.* Data connection is redirected through ""
