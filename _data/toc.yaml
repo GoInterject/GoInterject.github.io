@@ -83,8 +83,8 @@ about:
   
 
 apps:
-  - title: How-to articles
-    path: /wApps/How-to-articles.html
+  - title: Reference
+    path: /wApps/Reference.html
   - sectiontitle: INTERJECT Financials
     path: /wApps/Interject-Financials.html
     section:
