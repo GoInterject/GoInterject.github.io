@@ -14,15 +14,15 @@ Filter text for up to six segments of a chart of accounts. Use the INTERJECT fun
 
 ###  Function Arguments   
 
-| Parameter Name | Description                                                                               | Default | Optional |
-| -------------- | ----------------------------------------------------------------------------------------- | ------- | -------- |
+| Parameter Name | Description                                                                                                                                                                | Default | Optional |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | -------- |
 | FullAccount    | Filter text for up to six segments of a chart of accounts. Use the INTERJECT function [ jAcct() ](/wIndex/jAcct.html) when more than a single segment is used as a filter. |         | NO       |
-| Period         | The month or quarter to filter the retrieved data.                                        |         | YES      |
-| Year           | The year or range of years to filter the retrieved data.                                  |         | YES      |
-| Source         | A source filter that may include budget, actual, or forecast, depending on user's system. |         | YES      |
-| Version        | Filters the retrieved data.                                                               |         | YES      |
-| Company        | Sub-grouping to retrieve data only from a specific company or district.                   |         | YES      |
-| Currency       |                                                                                           |         | YES      |
+| Period         | The month or quarter to filter the retrieved data.                                                                                                                         |         | YES      |
+| Year           | The year or range of years to filter the retrieved data.                                                                                                                   |         | YES      |
+| Source         | A source filter that may include budget, actual, or forecast, depending on user's system.                                                                                  |         | YES      |
+| Version        | Filters the retrieved data.                                                                                                                                                |         | YES      |
+| Company        | Sub-grouping to retrieve data only from a specific company or district.                                                                                                    |         | YES      |
+| Currency       |                                                                                                                                                                            |         | YES      |
 
 ###  Function Composition   
   
@@ -43,8 +43,6 @@ Explanation
 <tr>  
 <td>
 
-
-
 =jCell( 
 
 FullAccount 
@@ -63,43 +61,21 @@ FullAccount
 
 ) 
 
-
 </td>  
 <td>
-
-
 
 =jCell( 
 
 ) 
 
-
 </td>  
 <td>
-
-
-
 
 </td> </tr> </table>
 
 ###  Function Example   
-  
-<table>  
-<tr>  
-<th>
 
-From File 
-</th>  
-<th>
+| From File      | Worksheet    |
+| -------------- | ------------ |
+| InterjectBasic | Drill_Orders |
 
-Worksheet 
-</th> </tr>  
-<tr>  
-<td>
-
-InterjectBasic 
-</td>  
-<td>
-
-Drill_Orders 
-</td> </tr> </table>
