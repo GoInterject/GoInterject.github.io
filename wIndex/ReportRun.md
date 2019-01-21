@@ -9,143 +9,27 @@ description: ReportRun executes a Report Function in another tab without changin
 
 ReportRun executes a Report Function in another tab without changing the tab focus. It can handle both run and clear events. 
 
-**  
-**
 
 ###  Function Arguments   
-  
-<table>  
-<tr>  
-<th>
-
-Parameter Name 
-</th>  
-<th>
-
-Description 
-</th>  
-<th>
-
-Default 
-</th>  
-<th>
-
-Optional 
-</th> </tr>  
-<tr>  
-<td>
-
-
-
-ReportCellToRun 
-
-
-</td>  
-<td>
-
-A range within the target worksheet to run a report function.  
-</td>  
-<td>
+| Parameter Name | Description | Default | Optional |
+| -------------- | ----------- | ------- | -------- |
+|ReportCellToRun | A range within the target worksheet to run a report function. | | NO |
+| RunEntireWorksheet | A boolean toggle that will enable or disable an entire worksheet's report functions from running | TRUE | YES |
+| OnAction | A control for which type of report function to run. Options include: <br> * Pull <br> * Save <br> * PullAndSave <br> * PullClear <br> * SaveClear <br> * PullAndSaveClear <br> * Back | PULL | YES |
 
   
+### Excel Formula Bar Example
+```Excel
+=ReportRun(ReportRunTargetForPivot!C4,TRUE,"PullClear")
+```
 
-</td>  
-<td>
-
-
-
-NO 
-
-
-</td> </tr>  
-<tr>  
-<td>
-
-RunEntireWorksheet  
-</td>  
-<td>
-
-A boolean toggle that will enable or disable an entire Worksheet’s Report Functions from running.  
-</td>  
-<td>
-
-TRUE 
-</td>  
-<td>
-
-YES 
-</td> </tr>  
-<tr>  
-<td>
-
-OnAction  
-</td>  
-<td>
-
-
-
-A control for which type of Report Function to run. Options include: 
-
-  * ‘Pull’ 
-  * ‘Save’ 
-  * 'PullAndSave’ 
-  * ‘PullClear’ 
-  * ‘SaveClear’ 
-  * ‘PullAndSaveClear’ 
-  * 'Back’ 
-
-
-</td>  
-<td>
-
-PULL 
-</td>  
-<td>
-
-YES 
-</td> </tr> </table>
-
-  
+To see an example of this function in use, visit the [Pivot table lab.](/wGetStarted/L-Create-PivotTable.html)
 
 
 ###  Function Composition 
-
-=ReportRun( 
-
-ReportCellToRun 
-
-,RunEntireWorksheet 
-
-,OnAction 
-
-) 
-
-  
-
-
-  
-
-
-###  Function Example   
-  
-<table>  
-<tr>  
-<th>
-
-From File 
-</th>  
-<th>
-
-Worksheet 
-</th> </tr>  
-<tr>  
-<td>
-
-InterjectBasic  
-</td>  
-<td>
-
-ReportRun  
-</td> </tr> </table>
-
-=ReportRun(ReportRunTarget!C2,TRUE,"Pull") 
+| Argument Name      | Example Mapping            | Explanation                                                                                                                  |
+| ------------------ | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Function Name      | =ReportRun()               | The name of the report formula                                                                                               |
+| ReportCellToRun    | ReportRunTargetForPivot!C4 | Specify what range in the worksheet to run the action. In this case, run the report range in the target sheet located in C4. |
+| RunEntireWorksheet | TRUE                       | Run all the pulls in the target worksheet not just the one specificed above.                                                 |
+| OnAction           | PullClear                  | This will happen on the "PullClear" Event only                                                                               |
