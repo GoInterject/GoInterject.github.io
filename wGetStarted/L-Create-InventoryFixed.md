@@ -113,22 +113,22 @@ Your final data pull should look like this. You may need to do additional format
 
 ### Setting up Run on Open
 
-**Step 2** Click on **File** in the Excel Ribbon to bring up the file screen.
+**Step 1** Click on **File** in the Excel Ribbon to bring up the file screen.
 
 ![](/images/L-Create-InventoryFix/16.png)
 <br>
 
-**Step 3** Under Info, select **Advanced Properties** in the Properties dropdown. The Properties window will open.
+**Step 2** Under Info, select **Advanced Properties** in the Properties dropdown. The Properties window will open.
 
 ![](/images/L-Create-InventoryFix/17.png)
 <br>
 
-**Step 4** Under the **Custom** tab find the **Name** textbox and type **Interject_RunOnOpen.** The **Type** field should be **Text.**
+**Step 3** Under the **Custom** tab find the **Name** textbox and type **Interject_RunOnOpen.** The **Type** field should be **Text.**
 
 ![](/images/L-Create-InventoryFix/18.png)
 <br>
 
-**Step 5** The **Value** box below takes two options: **True** or T:*TabName* **True** will will cause Excel to run on the first tab seen on open. Specify the tab name to default to that tab.
+**Step 4** The **Value** box below takes two options: **True** or T:*TabName* **True** will will cause Excel to run on the first tab seen on open. Specify the tab name to default to that tab.
 
 **Option 1** If you would like to run on the first tab seen, set value to **True** and click **Add**.
 ![](/images/L-Create-InventoryFix/19.png)
@@ -140,12 +140,14 @@ In this case, we want to pull CustomerAging on open, so type **T:InventoryByCate
 ![](/images/L-Create-InventoryFix/20.png)
 <br> 
 
-**Step 6** Save the file, and [ Update the report library ](/wGetStarted/L-Create-UpdatingReportLibrary.html) with the new file
+**Step 5** Save the file, and [ Update the report library ](/wGetStarted/L-Create-UpdatingReportLibrary.html) with the new file
 
 ![](/images/L-Create-InventoryFix/21.png)
 <br>
 
-**Step 8** Close and reopen the file through the Report Library, and Excel will auto-pull the report
+**Step 6** Close and reopen the file through the Report Library, and Excel will auto-pull the report
 
 ![](/images/L-Create-InventoryFix/15.png)
 <br>
+
+For a full guide using a different report, refer to the [ Run on Open Lab ](/wGetStarted/L-Create-RunOnOpen.html)
