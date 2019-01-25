@@ -13,6 +13,7 @@ Even though this initial deployment focuses on the replacement of FRx and financ
 This deployment guide assumes the migration of the FRx Sysdata has already taken place in a development environment. Databases and tools used during the FRx Sysdata migration is not needed on BETA and PROD servers and therefore excluded from this guide. 
 
 ## Media/Source Files
+
 | Setting                    | Value                                                                                                                                                                    |
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Interject Release          | Version 2.2.8.68 \| Release: Production\4.0 32x86 \| Method: Cloud\Platform                                                                                              |
