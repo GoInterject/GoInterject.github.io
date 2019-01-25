@@ -18,4 +18,4 @@ This deployment guide assumes the migration of the FRx Sysdata has already taken
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Interject Release          | Version 2.2.8.68 \| Release: Production\4.0 32x86 \| Method: Cloud\Platform                                                                                              |
 | Interject Client           | Download and Install from: <br> https://install.gointerject.com/installs/Interject_Version_Installer.exe <br> https://portal.gointerject.com/kb/HowToUse/Installing.html |
-| Interject Database Scripts | \\\JAXM-FILES.intuition.com\laminin\interject\software\                                                                                                                   |
+| Interject Database Scripts |                                                         |
