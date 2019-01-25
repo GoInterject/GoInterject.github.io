@@ -33,7 +33,7 @@ We will walk through Run on Open using the [ Customer Aging Report ](/wGetStarte
 ![](/images/L-Create-RunOnOpen/04.png)
 <br>
 
-**Step 5** The **Value** box below takes two options: **True** or T:*TabName* **True** will will cause Excel to run on the first tab seen on open. Specify the tab name to default to that tab.
+**Step 5** The **Value** box below takes two options: **True** or **T:*TabName***. **True** will will cause Excel to run on the first tab seen on open. Specify the tab name to default to that tab.
 
 **Option 1** If you would like to run on the first tab seen, set value to **True** and click **Add**.
 ![](/images/L-Create-RunOnOpen/05.png)
