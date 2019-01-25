@@ -27,10 +27,11 @@ Allows the report creator to insert data based on a coordinate match between a r
 To see an example of this function in use, visit the [Create Inventory Fixed Lab.](/wGetStarted/L-Create-InventoryFixed.html)
 
 ###  Function Composition   
-  | Argument Name | Example Mapping  | Explanation                                                                                                 |
-  | ------------- | ---------------- | ----------------------------------------------------------------------------------------------------------- |
-  | Function Name | =ReportFixed()   | The name of the report formula                                                                              |
-  | DataPortal    | "NorthwindFixed" | The name of a DataPortal that is configured to connect to a Northwind demo database                         |
-  | RowDefRange   | B14:B27          | Data will be inserted on the specified rows under the ColDefRange (Explained below)                |
-  | ColDefRange   | 2:2              | The column names specified in this range will determine which data fields are returned from the data source |
-  | Parameters    | N/A              | Used to specify what information to pass to or from the DataPortal.                               |
+
+  | Argument Name | Example Mapping  | Explanation                                                                                  |
+  | ------------- | ---------------- | -------------------------------------------------------------------------------------------- |
+  | Function Name | =ReportFixed()   | The name of the report formula                                                               |
+  | DataPortal    | "NorthwindFixed" | The name of a DataPortal that is configured to connect to a Northwind demo database          |
+  | RowDefRange   | B14:B27          | Data will be inserted on the specified rows under the ColDefRange (Explained below)          |
+  | ColDefRange   | 2:2              | The column names specified in this range will determine which data fields are returned       |
+  | Parameters    | N/A              | Used to specify what information to pass to or from the DataPortal.                          |

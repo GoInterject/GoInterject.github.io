@@ -15,9 +15,10 @@ MSSQL Server 2008 and newer is supported.
 ### SQL Database Mail Profile
 To check the Mail profile, run ```SELECT name FROM msdb.dbo.sysmail_profile```.
 
-In this case, the result should be **PROD | BETA | DEV:Mail**
+In this case, the result should be **PROD \| BETA \| DEV:Mail**
 
 ### Authentication Type
+
 **If SQL-AUTH:** Name: N/A Password:
 
 **IF WIN_AUTH:** Name:
@@ -36,11 +37,12 @@ In this case, the result should be **PROD | BETA | DEV:Mail**
 - ""
 
 ### INTERJECT Database and User Certificate
+
 **Certificate Name:** ""
 
 **Certificate User:** ""
 
-**Certificate Password:** "**********"
+**Certificate Password:** "\*\*\*\*\*\*\*\*\*\*"
 
 ## Deployment via SSMS
 
@@ -131,4 +133,3 @@ Edit and Execute each of the following scripts to install the SQL Server Agent J
 -	10.SQLAgentJob_Interject_Reporting_ImportEpicor_DeleteRecords.sql
 
 The scripts include default schedules and assumes to be executed on same server as the **[Interject_Reporting]** and Epicor company databases.
-
