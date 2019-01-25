@@ -19,9 +19,9 @@ In this case, the result should be **PROD \| BETA \| DEV:Mail**
 
 ### Authentication Type
 
-**If SQL-AUTH:** Name: N/A Password:
+**If SQL-AUTH:** Name: Username Password: SecureP@ssw0rd
 
-**IF WIN_AUTH:** Name:
+**IF WIN_AUTH:** Name: Username
 
 ### Interject Database Role
 
@@ -32,15 +32,17 @@ In this case, the result should be **PROD \| BETA \| DEV:Mail**
 - IF WIN_AUTH: ""
 
 **Databases:**
-- ""
-- ""
-- ""
+- "Database01"
+- "Database02"
+- "Database03"
 
 ### INTERJECT Database and User Certificate
 
-**Certificate Name:** ""
+These can be added to stored procs with dynamic SQL.
 
-**Certificate User:** ""
+**Certificate Name:** "InterjectName"
+
+**Certificate User:** "InterjectUserName"
 
 **Certificate Password:** "\*\*\*\*\*\*\*\*\*\*"
 
@@ -48,13 +50,12 @@ In this case, the result should be **PROD \| BETA \| DEV:Mail**
 
 The following activies are to be completed while conected to the SQL Server via SSMS using a user account belonging to the SysAdmin Server Role. Scripts should be executed in order to work correctly.
 
-SQL Script Reference: 
-```
-\\jaxm-files.intuition.com\laminin\Interject\Software\Release.201711\
-```
+
 **Step 1**
 
 Execute **\01.PrepareServer_MasterDB.sql** in **[master]** db to implement the following on the SQL Server. Estimated run time is a minute.
+
+What it will do:
 
 - CREATE [Interject_Reporting] database, if not already exist 
 
@@ -62,11 +63,16 @@ Execute **\01.PrepareServer_MasterDB.sql** in **[master]** db to implement the f
 
 Execute **\02.ReportingDB_FullDeployScript.sql** in **[Interject_Reporting]** db to implement the following on the SQL Server:
 
+What it will do:
+
 -	Interject Financials for Spreadsheets w/Epicor Enterprise integration database objects
 
 **Step 3**
 
 Execute **\03.ReportingDB_ExecuteScripts.sql** in **[Interject_Reporting]** db to initialize Epicor Enterprise data for Interject Financials for Spreadsheets.
+
+What it will do:
+
 ```SQL
 EXECUTE [Custom].[EPR_InstallScript1_DatabaseConfig]
 
@@ -89,6 +95,8 @@ EXECUTE [Custom].[EPR_InstallScript7_CostCenterGrouping]
 
 Execute **\04.ReportingDB_Permissions.sql** in **[Interject_Reporting]** db to implement the following on the SQL Server:
 
+What it will do:
+
 -	CREATE **[db_Interject]** database role
 -	IF SQL-AUTH: CREATE **[InterjectAppUser]** database user and add to database role
 -	IF WIN-AUTH:  CREATE **[INTERJECT\InterjectUsers]** database user and add to database role
@@ -102,6 +110,8 @@ Execute **\04.ReportingDB_Permissions.sql** in **[Interject_Reporting]** db to i
 Execute **\04.ReportingDB_AddSignaturePermissions.sql** in **[Interject_Reporting]** db to implement the following on the SQL Server:
 
 *** Edit the script to set an alternative password for the certificate ***
+
+What it will do:
 
 -	CREATE CERTIFICATE **[InterjectCertificate]**
 -	CREATE CERTIFICATE USER **[InterjectCertificateUser]**
