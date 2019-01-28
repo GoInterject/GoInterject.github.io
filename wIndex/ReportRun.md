@@ -11,6 +11,7 @@ ReportRun executes a Report Function in another tab without changing the tab foc
 
 
 ###  Function Arguments   
+
 | Parameter Name | Description | Default | Optional |
 | -------------- | ----------- | ------- | -------- |
 |ReportCellToRun | A range within the target worksheet to run a report function. | | NO |
@@ -27,6 +28,7 @@ To see an example of this function in use, visit the [Pivot table lab.](/wGetSta
 
 
 ###  Function Composition 
+
 | Argument Name      | Example Mapping            | Explanation                                                                                                                  |
 | ------------------ | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | Function Name      | =ReportRun()               | The name of the report formula                                                                                               |
