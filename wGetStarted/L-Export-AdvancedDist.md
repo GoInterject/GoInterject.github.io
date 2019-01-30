@@ -109,84 +109,20 @@ The distribution process allows a wide range of export options. The screenshots 
 
 <br> 
 
-
-<table>  
-<tr>  
-<th>
-
-Output 
-</th>  
-<th>
-
-
-
-Purpose 
-
-
-</th> </tr>  
-<tr>  
-<td>
-
-Excel 
-</td>  
-<td>
-
-Saves the Excel file and has the option to rename it. 
-</td> </tr>  
-<tr>  
-<td>
-
-Values Only 
-</td>  
-<td>
-
-Removes DataCell formulas from the report, saves the Excel file, and has the options to rename it, open it, and email it. 
-</td> </tr>  
-<tr>  
-<td>
-
-PDF 
-</td>  
-<td>
-
-Saves the Excel file as a PDF and has the option to open it immediately, give it a custom name, or email to designated recipients 
-</td> </tr>  
-<tr>  
-<td>
-
-Email 
-</td>  
-<td>
-
-Emails the Excel file to designated recipients and has the option to rename it 
-</td> </tr>  
-<tr>  
-<td>
-
-Print 
-</td>  
-<td>
-
-Prints the Excel file to a designated printer or the default printer. 
-</td> </tr>  
-<tr>  
-<td>
-
-Open 
-</td>  
-<td>
-
-Opens the Excel file 
-</td> </tr> </table>
-
-  
-
+| Output      | Purpose                                                                                                                            |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Excel       | Saves the Excel file and has the option to rename it.                                                                              |
+| Values Only | Removes DataCell formulas from the report, saves the Excel file, and has options to rename it, open it, and email it.              |
+| PDF         | Saves the Excel file as a PDF and has the option to open it immediately, give it a custom name, or email to designated recipients. |
+| Email       | Emails the Excel file to designated recipients and has the option to rename it                                                     |
+| Print       | Prints the Excel file to a designated printer or the default printer.                                                              |
+| Open        | Opens the Excel file.                                                                                                              |
 
 ###  Distributing Multiple Sheets 
 
 Sometimes you may want include more than one worksheet in each line of the distribution, and it can be easily done by separating additional tab names with a comma. 
 
-**Step 1:** To do this, navigate back to the distribution and type **,BalanceSheet** after **ProfitAndLoss**, as shown below. 
+**Step 1:** To do this, navigate back to the distribution and type **BalanceSheet** after **ProfitAndLoss**, as shown below. 
 
 ![](/images/L-Export-AdvancedDist/14.png)
 
@@ -198,8 +134,6 @@ The resulting distribution looks like this.
 
 <br> 
 
-
-  
 
 
 ###  Specializing Reports using Multiple Builds 
@@ -245,7 +179,7 @@ In the distribution examples above, each location is entered on a separate row. 
 <br> 
 
 
-**Step 3:** Now you will go back to the PL Trend tab and change the jRangeTag() from **Location** to **Segment2**. Use of the Range Tab function was discussed in the [ L11.2 Basic Distribution ](/wGetStarted/L11.2-Basic-Distribution.html) lab. 
+**Step 3:** Now you will go back to the PL Trend tab and change the jRangeTag() from **Location** to **Segment2**. Use of the Range Tab function was discussed in the [Basic Distribution ](/wGetStarted/L-Export-BasicDist.html) lab. 
 
 ![](/images/L-Export-AdvancedDist/21.png)
 
