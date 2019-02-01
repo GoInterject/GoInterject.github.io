@@ -60,7 +60,6 @@ INTERJECT will create the Distribution worksheet in the existing workbook and wi
 2. A filter is created for each jRangeTag found in the workbook in the Report Filters columns. 
 3. The Book column should default to 1, noting the first workbook build to be created. More can be added if needed to the same distribution sheet. 
 
-
 ![](/images/L-Export-BasicDist/08.png)
 
 <br>
