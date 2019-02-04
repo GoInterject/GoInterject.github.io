@@ -50,8 +50,8 @@ about:
     path: /wAbout/SingleUser.html
   - title: Installing - Shared Computer
     path: /wAbout/SharedComputer.html
-- title: Uninstalling INTERJECT
-  path: /wAbout/Uninstalling.html
+  - title: Uninstalling INTERJECT
+    path: /wAbout/Uninstalling.html
 - sectiontitle: Using INTERJECT
   path: /wAbout/Using-INTERJECT.html
   section:
