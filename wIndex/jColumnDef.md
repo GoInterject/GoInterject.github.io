@@ -37,17 +37,17 @@ To see an example of this function in use, visit the [Lab Create: Financial Vari
 
 ###  Function Composition   
 
-| Formula  | Example  | Explanation |
-| -------- | -------- | ----------- |
+| Formula  | Example  | Explanation                                                                                   |
+| -------- | -------- | --------------------------------------------------------------------------------------------- |
 | Source   | "Actual" | Where the data comes from. In this case it is actuals but it could be budgets or projections. |
-| Period   | 11       | The period of which the data is from. |
-| Year     | 2001     | The year of which the data is from. |  
-| Version  |          |             |
-| Segment1 |          |             |
-| Segment2 |          |             |
-| Segment3 |          |             |
-| Segment4 |          |             |
-| Segment5 |          |             |
-| Segment6 |          |             |
-| Segment7 |          |             |
-| Segment8 |          |             |
+| Period   | 11       | The period of which the data is from.                                                         |
+| Year     | 2001     | The year of which the data is from.                                                           |
+| Version  |          |                                                                                               |
+| Segment1 |          |                                                                                               |
+| Segment2 |          |                                                                                               |
+| Segment3 |          |                                                                                               |
+| Segment4 |          |                                                                                               |
+| Segment5 |          |                                                                                               |
+| Segment6 |          |                                                                                               |
+| Segment7 |          |                                                                                               |
+| Segment8 |          |                                                                                               |

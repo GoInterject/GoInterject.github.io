@@ -12,177 +12,25 @@ Param is used to help select one or multiple parameters for each of your report 
 NOTE - One value to one cell. But can go one to many. In second case will return XML of entire thing. 
 
 ###  Function Arguments   
-  
-<table>  
-<tr>  
-<th>
+
+| Parameter Name | Description                    | Default | Optional |
+| -------------- | ------------------------------ | ------- | -------- |
+| Value1         | Enter parameter value or link. |         | YES      |
+| ...            | ...                            |         | ...      |
+| Value40        | Enter parameter value or link. |         | YES      |
 
 
-
-Parameter Name 
-
-
-</th>  
-<th>
-
-
-
-Description 
-
-
-</th>  
-<th>
-
-
-
-Default 
-
-
-</th>  
-<th>
-
-
-
-Optional 
-
-
-</th> </tr>  
-<tr>  
-<td>
-
-
-
-Value1 
-
-
-</td>  
-<td>
-
-Enter parameter value or link. 
-</td>  
-<td>
-
-
-</td>  
-<td>
-
-
-
-YES 
-
-
-</td> </tr>  
-<tr>  
-<td>
-
-... 
-</td>  
-<td>
-
-... 
-</td>  
-<td>
-
-
-</td>  
-<td>
-
-... 
-</td> </tr>  
-<tr>  
-<td>
-
-Val40  
-</td>  
-<td>
-
-Enter parameter value or link. 
-</td>  
-<td>
-
-
-</td>  
-<td>
-
-YES 
-</td> </tr> </table>
+### Excel Formula Bar Example
+```Excel
+=ReportRange("NorthwindCustomers",B14:H15,B2:H2,B4:H4,Param(C7,C8,C9),FALSE,FALSE,,FALSE,FALSE)
+```
+To see an example of this function in use, visit the [Lab Create: Customer Aging](/wGetStarted/L-Create-CustomerAging.html)
 
 ###  Function Composition   
-  
-<table>  
-<tr>  
-<th>
 
-Formula 
-</th>  
-<th>
-
-Example 
-</th>  
-<th>
-
-Explanation 
-</th> </tr>  
-<tr>  
-<td>
-
-
-
-=Param(
-Value1 
-,... 
-,  Value40 
-) 
-
-
-</td>  
-<td>
-=  ReportRange  ( 
-<b>"NorthwindCustomers"</b>
-
-,  <b>12</b> :  <b>13</b>
-
-,  <b>1</b> :  <b>1</b>
-
-, 
-
-, <b>Param</b> (  <b>C6,C7,C8</b> ) 
-
-,  <b>TRUE</b>
-
-,  <b>FALSE</b>
-
-) 
-
-
-</td>  
-<td>
-
-
-
-← Param function embedded in ReportRange formula. This example accepts three cells to pass to the data portal. 
-
-
-</td> </tr> </table>
-
-###  Function Example   
-  
-<table>  
-<tr>  
-<th>
-
-From File 
-</th>  
-<th>
-
-Worksheet 
-</th> </tr>  
-<tr>  
-<td>
-
-InterjectBasic 
-</td>  
-<td>
-
-ReportRange 
-</td> </tr> </table>
+| Argument Name | Example Mapping | Explanation                                                             |
+| ------------- | --------------- | ----------------------------------------------------------------------- |
+| Function Name | Param()         | Inside the ReportRange, call the param function to call multiple cells  |
+| Value1        | C7              | the value in C7 will be passed through as a parameter to the dataportal |
+| Value2        | C8              | the value in C8 will be passed through as a parameter to the dataportal |
+| Value3        | C9              | the value in C9 will be passed through as a parameter to the dataportal |
