@@ -28,7 +28,7 @@ An example of this function is currently in construction in our documentation la
 
 | Argument Name    | Example Mapping               | Explanation                                                                                                          |
 |------------------|-------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| Function Name    | `=ReportDefaults()`           | This is the excel function name used to call the function. It can only be used as a standalone function in a report. |
+| Function Name    | =ReportDefaults()           | This is the excel function name used to call the function. It can only be used as a standalone function in a report. |
 | OnPullSaveOrBoth | "Pull"                        | The report default will be triggered to run on a pull action                                                         |
 | OnClearRunOrBoth | "Clear"                       | The clear event means that the function will be triggered on a combination of "Pull-Clear".                          |
 | TransferPairs    | PairGroup(Pair("",C12,FALSE)) | This will copy a blank value and place it as the new value for C12.                                                  |
