@@ -24,29 +24,33 @@ To watch a quick walk-through video, click on the icon:
 
 **Step 3:** A popup will appear with information about the computer's current version as well as the latest available INTERJECT Version. If INTERJECT has a critical update, there may also be an **Install By** date. If that is the case you must install the update as soon as possible. **New Version Notes** is where you can see any notes about the new versions and what they may entail. Click **Get Update** to get the new version. It should only take a moment. 
 
-![](/images/Updating/image2017-8-23_16-28-54.png)
+![](/images/Updating/03.png)
 
 **Note:** If this popup appears at any point without having clicked the **Check for Updates** button, it means that INTERJECT has released an important update. INTERJECT will not lock up into updating at any time, so its okay to wait briefly. It is recommended, however, that you update at the earliest convenience. 
 
-**Step 4:** After clicking **Get Update**, a popup will explain that Excel will need to reopen after the update is complete. Click **OK.**
+**Step 4:** After clicking **Get Update**, the Interject Excel Add-in Setup will pop up. Interject requires Excel to be closed to update. Click the exit button to close excel.
 
-![](/images/Updating/image2017-8-1_17-7-44.png)
+![](/images/Updating/04.png)
 
-Once that popup closes another popup will appear asking to download the update now, click **OK** to begin the update. 
+Once Excel has been closed click **Next** to continue the update.
 
-![](/images/Updating/image2017-8-7_8-40-52.png)
+![](/images/Updating/05.png)
 
-**Step 5:** Next, close out of Excel so that INTERJECT can complete the update. 
+**Step 5:** Next, you will need to read and accept the License Agreement and click **Next** to continue. 
 
-![](/images/Updating/image2017-8-1_17-10-19.png)   
+![](/images/Updating/06.png)   
 
-**Step 6:** When the update is complete, a popup will appear saying the Add-In succeeded. Click **OK** , and Excel will reopen. 
+**Step 6:** Now click **Install** to begin the installation. 
 
-![](/images/Updating/image2017-8-7_9-2-1.png)
+![](/images/Updating/07.png)
+
+**Step 7:** Click **Finish** to close the installer and your done.
+
+![](/images/Updating/08.png)
 
 To confirm you have the latest version, click **Check for Updates** again and compare the two boxes. 
 
-![](/images/Updating/image2017-8-23_16-30-9.png)
+![](/images/Updating/09.png)
 
 And that is all there is to it, you have officially updated INTERJECT. 
 
