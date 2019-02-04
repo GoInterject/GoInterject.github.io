@@ -15,8 +15,8 @@ horizontalnav:
   path: /wIndex/Excel-Function-Index.html
   node: index
 # - title: Apps
-#   path: /wApps/How-to-articles.html
-#   node: apps
+#  path: /wApps/Reference.html
+#  node: apps
 - title: Portal Site 
   path: /wPortal/The-INTERJECT-Website-Portal.html
   node: portal
@@ -50,8 +50,8 @@ about:
     path: /wAbout/SingleUser.html
   - title: Installing - Shared Computer
     path: /wAbout/SharedComputer.html
-- title: Uninstalling INTERJECT
-  path: /wAbout/Uninstalling.html
+  - title: Uninstalling INTERJECT
+    path: /wAbout/Uninstalling.html
 - sectiontitle: Using INTERJECT
   path: /wAbout/Using-INTERJECT.html
   section:
@@ -83,10 +83,17 @@ about:
   
 
 apps:
-  - title: How-to articles
-    path: /wApps/How-to-articles.html
-
-
+  - title: Reference
+    path: /wApps/Reference.html
+  - title: INTERJECT Financials
+    path: /wApps/Interject-Financials.html
+  - title: "INTERJECT Financials for Epicor"
+    path: /wApps/Epicor-Financials.html
+  - title: "SQL Server Implementation"
+    path: /wApps/SQL-Install.html
+  - title: "FRx Migration"
+    path: /wApps/FRx-Migration.html
+    
 getstarted:
   - sectiontitle: Creating with INTERJECT
     path: /wGetStarted/Creating-with-INTERJECT.html
