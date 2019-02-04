@@ -13,9 +13,9 @@ ReportDrill is widely used throughout INTERJECT as a way to connect and pass inf
 
 | Parameter Name  | Description                                                                                                                                                                                | Default | Optional |
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|----------|
-| ReportCellToRun | A cell address on a worksheet within your report that contains an INTERJECT [Data](Data-Functions-Landing.html) or [Formatting](Formatting-Functions-Landing.html) function.               |         | Yes      |
-| ReportCodeToRun | A drill code that is setup in the [Report Library](/wGetStarted/L-Create-UpdatingReportLibrary#adding-a-drill-code-to-a-report) that allows you to drill between workbooks. |         | Yes      |
-| TransferPairs   | A [PairGroup](Pairgroup.html) and [Pair](Pair.html) function that determines which cell value you want to capture, and where you want to place it.                       |         | Yes      |
+| ReportCellToRun | A cell address on a worksheet within your report that contains an INTERJECT [Data](Data-Functions-Landing.html) or [Formatting](Formatting-Functions-Landing.html) function.               |         | YES      |
+| ReportCodeToRun | A drill code that is setup in the [Report Library](/wGetStarted/L-Create-UpdatingReportLibrary#adding-a-drill-code-to-a-report) that allows you to drill between workbooks. |         | YES      |
+| TransferPairs   | A [PairGroup](Pairgroup.html) and [Pair](Pair.html) function that determines which cell value you want to capture, and where you want to place it.                       |         | YES      |
 | DrillName       | This defines the name of the drill displayed on the Excel report.                                                                                                                          |         | YES      |
 
 
