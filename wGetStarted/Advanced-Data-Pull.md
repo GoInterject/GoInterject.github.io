@@ -17,7 +17,7 @@ You will learn the user story for the Customer Aging Report and why users would 
 
 Be sure to complete the simple data pull lab that preceded this topic before moving forward. 
 
-###  [ Lab 13.1 Dev: Customer Aging Detail ](/wGetStarted/L-Dev-CustomerAgingDetail.html)
+###  [ Lab Dev: Customer Aging Detail ](/wGetStarted/L-Dev-CustomerAgingDetail.html)
 
 In Dev: Customer Aging Detail , you will create a third report, Customer Aging Detail, that will be drilled to from the Customer Aging Report. This report shows a customer's outstanding balance by individual invoice. 
 

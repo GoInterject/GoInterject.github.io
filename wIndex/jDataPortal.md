@@ -29,7 +29,7 @@ For users with the [ ClientAdmin ](/wPortal/INTERJECT-Roles.html) user role, jDa
 ```Excel
 jDataPortal("NorthwindMultiRecord_Pull",2,"[CompanyName] Like '%s%'","[CustomerID] ASC")
 ```
-A simpler form of this example can be found in our [Advanced Data Pull Lab](/wGetStarted/Advanced-Data-Pull.html).
+A simpler form of this example can be found in our [ Lab Dev: Customer Aging Detail ](/wGetStarted/L-Dev-CustomerAgingDetail.html).
 
 ### Example Function Composition
 
