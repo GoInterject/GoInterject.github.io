@@ -200,5 +200,5 @@ After the save, there will be a return message telling what was changed based on
 ![](/images/L-Dev-CustAgingSave/22.jpg)
 <br>
 
-[1]:{{ site.url }}/images/L-Dev-CustAgingSave/S1.sql
-[2]:{{ site.url }}/images/L-Dev-CustAgingSave/S2.sql
+[1]:/images/L-Dev-CustAgingSave/S1.sql
+[2]:/images/L-Dev-CustAgingSave/S2.sql
