@@ -210,22 +210,26 @@ The below steps assume you are proficient with SQL Management Studio for Microso
 <br>
 
 **Step 3:** It is important to test the stored procedure in the database before testing through the INTERJECT platform. The example code included a test SQL statement that can be executed in a new query as shown below. Be sure to change the procedure name to match your own. 
- 
-```SQL   
-    Execute demo.[Northwind_Customers_Pull_MyName]
-    	 @CompanyName = 'market'
-    	,@ContactName = ''
-    	,@CustomerID = ''
-    	,@Interject_NTLogin = 'MaryM'
-    	,@Interject_LocalTimeZoneOffset = -7
+
+```sql
+Execute demo.[Northwind_Customers_Pull_MyName]
+	@CompanyName = 'market'
+	,@ContactName = ''
+	,@CustomerID = ''
+	,@Interject_NTLogin = 'MaryM'
+	,@Interject_LocalTimeZoneOffset = -7
 ```
+<button class="collapsible">SQL Script</button>
+<div class="panel">
+	<p>
+		Hello there
+	</p>
+</div>
 
 When executed you should see the following result set. 
 
 ![](/images/L-Dev-CustAging/24.png)
 <br>
-
-
 
 ###  Create The Report 
 

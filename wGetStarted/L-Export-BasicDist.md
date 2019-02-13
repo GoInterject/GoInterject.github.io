@@ -66,7 +66,7 @@ INTERJECT will create the Distribution worksheet in the existing workbook and wi
 
 **Note:** The **Enabled?** column contains a drop down list of options that can be applied to the tabs, on an individual basis, which are being created. 
 
-* **Blank** \- **** When the enabled column is set to blank, INTERJECT interprets this as a **Yes** value and automatically pulls the data after the report is created. 
+* **Blank -** When the enabled column is set to blank, INTERJECT interprets this as a **Yes** value and automatically pulls the data after the report is created. 
 * **Yes -** When this column value is set to **Yes** then distribution report builder will automatically create the reports **And** pull the data. 
 * **No -** In the instance that the value is set to **No,** INTERJECT will not build that report tab. 
 * **Prep -** When set to **Prep** the report tabs will be built out, however, the data will not be pulled automatically. 
@@ -82,6 +82,17 @@ INTERJECT will create the Distribution worksheet in the existing workbook and wi
 ![](/images/L-Export-BasicDist/10.png)
 
 <br> 
+
+Each output has it's own purpose and use. Each is detailed below.
+
+| Output      | Purpose                                                                                                                            |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Excel       | Saves the Excel file and has the option to rename it.                                                                              |
+| Values Only | Removes DataCell formulas from the report, saves the Excel file, and has options to rename it, open it, and email it.              |
+| PDF         | Saves the Excel file as a PDF and has the option to open it immediately, give it a custom name, or email to designated recipients. |
+| Email       | Emails the Excel file to designated recipients and has the option to rename it                                                     |
+| Print       | Prints the Excel file to a designated printer or the default printer.                                                              |
+| Open        | Opens the Excel file.                                                                                                              |
 
 **Step 9:** To run the distribution, from the Distribution worksheet click the **Export Book** menu item in the INTERJECT ribbon. Click the **Run Distribution** button that appears in the next window. 
 
