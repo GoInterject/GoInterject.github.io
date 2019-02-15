@@ -14,7 +14,7 @@ The distribution process provides extensive control when creating and distributi
 
 **Step 1:** First you are going to open a report. The example for this walk-through will use the same PL Trend Report seen in the [ Financial Walk-through ](/wAbout/Financial-Report.html) lab.
 
-![](/images/L-Export-BasicDist/01.jpg)
+![](/images/L-Export-BasicDist/01.png)
 
 <br> 
 
