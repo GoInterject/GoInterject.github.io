@@ -16,29 +16,22 @@ On this page, you will create a simple data pull using the Customer Aging Report
 
 ![](/images/L-Dev-CustAging/01.jpg)
 <br>
-  
-
 
 **Step 2:** On the Data Connections page, click the **New Connection** button. 
 
 ![](/images/L-Dev-CustAging/02.jpg)
 <br>
 
-
 **Step 3:** In the Connection Type field, verify that **Database** is selected. 
 
 ![](/images/L-Dev-CustAging/03.jpg)
 <br>
-  
-
 
 **Step 4:** The Connection Details page needs to contain the following information for the new connection. Type **NorthwindExampleDB_MyName** in Connection Name, but include your own name in the suffix. Each connection name must be unique. For the connection string, type **Server=myServerAddress;Database=myDataBase;Trusted_Connection=True;** . You are using Windows authentication, so username and password are not required. Replace the server name and database name to match your own that you are using for this walk-through. 
 
 ![](/images/L-Dev-CustAging/04.jpg)
 <br>
   
-
-
 **Step 5:** In the Description field include details about what the data connection will be used for. 
 
 ![](/images/L-Dev-CustAging/05.jpg)
@@ -211,6 +204,10 @@ The below steps assume you are proficient with SQL Management Studio for Microso
 
 **Step 3:** It is important to test the stored procedure in the database before testing through the INTERJECT platform. The example code included a test SQL statement that can be executed in a new query as shown below. Be sure to change the procedure name to match your own. 
 
+
+<button class="collapsible">SQL Script</button>
+<div markdown="1" class="panel">
+
 ```sql
 Execute demo.[Northwind_Customers_Pull_MyName]
 	@CompanyName = 'market'
@@ -219,11 +216,7 @@ Execute demo.[Northwind_Customers_Pull_MyName]
 	,@Interject_NTLogin = 'MaryM'
 	,@Interject_LocalTimeZoneOffset = -7
 ```
-<button class="collapsible">SQL Script</button>
-<div class="panel">
-	<p>
-		Hello there
-	</p>
+
 </div>
 
 When executed you should see the following result set. 
