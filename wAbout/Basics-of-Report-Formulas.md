@@ -72,7 +72,7 @@ Report Formulas are a big part of how INTERJECT directs data in and out of the s
 
 ![](/images/BasicsReportFormulas/image2017-7-3_8-37-34.png)
 
-The first formula is a **Report Range** formula and will pull the data from a data source to the spreadsheet. There are other, similar, Report Formulas to pull data, such as [ ReportFixed() ](/wIndex/ReportFixed.html) , [ ReportVariable() ](/wIndex/ReportVariable.html) and [ ReportLookup() ](wIndex/ReportLookup.html) . You will look at these later. The screenshot above also shows three [ ReportDrill() ](wIndex/ReportDrill.html) formulas that enable [ drill ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data) functionality. A drill lets us navigate to another spreadsheet report based on the context selected. 
+The first formula is a **Report Range** formula and will pull the data from a data source to the spreadsheet. There are other, similar, Report Formulas to pull data, such as [ ReportFixed() ](/wIndex/ReportFixed.html) , [ ReportVariable() ](/wIndex/ReportVariable.html) and [ ReportLookup() ](wIndex/ReportLookup.html) . You will look at these later. The screenshot above also shows three [ ReportDrill() ](/wIndex/ReportDrill.html) formulas that enable [ drill ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data) functionality. A drill lets us navigate to another spreadsheet report based on the context selected. 
 
 Another type of Report Formula is the [ Save ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data) formula which is not shown here. This type of Report Formula enables an application developer to build save back features into our reports, such as saving back comments on financial variances to a central database so they can be presented in other reports. 
 
