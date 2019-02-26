@@ -91,13 +91,3 @@ The Hidden Parameters and Notes section has two uses. First, it holds documentat
 <img class="img-modal" src="/images/BasicsReportFormulas/image2017-8-23_17-18-50.png" onclick="zoom_img(this)" />
 
 This concludes the discussion of the basics of Report Formulas. Be sure to continue reading, since there are many advanced options to learn more about, which can be leveraged to create tailored reports and applications for the company's needs. 
-
-##  Related Links: 
-
-[ Customer Aging ](Customer-Aging.html)
-
-[ Modifying an Existing Report ](/wGetStarted/Modifying-an-Existing-Report.html)
-
-[ INTERJECT Ribbon Menu Items ](INTERJECT-Ribbon-Menu-Items.html)
-
-[ Creating a Simple Report ](/wGetStarted/Creating-a-Simple-Report.html)
