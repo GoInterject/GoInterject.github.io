@@ -11,133 +11,15 @@ description: This function is used to look up a context description based on a s
 This function is used to look up a context description based on a specific segment. 
 
 ###  Function Arguments   
+
+| Parameter Name | Description                                    | Default | Optional |
+| -------------- | ---------------------------------------------- | ------- | -------- |
+| Value          | A cell that contains a value to lookup         |         | NO       |
+| Segment Number | The Segment number to check the value against. |         | NO       |
+
+### Excel Formula Bar Example
+
   
-<table>  
-<tr>  
-<th>
-
-Parameter Name 
-</th>  
-<th>
-
-Description 
-</th>  
-<th>
-
-Default 
-</th>  
-<th>
-
-Optional 
-</th> </tr>  
-<tr>  
-<td>
-
-
-
-Value 
-
-
-</td>  
-<td>
-
-
-
-A cell that contains a value to lookup. 
-
-
-</td>  
-<td>
-
-
-</td>  
-<td>
-
-
-
-NO 
-
-
-</td> </tr>  
-<tr>  
-<td>
-
-SegmentNumber 
-</td>  
-<td>
-
-The Segment number to check the value against. 
-</td>  
-<td>
-
-
-</td>  
-<td>
-
-NO 
-</td> </tr> </table>
 
 ###  Function Composition   
   
-<table>  
-<tr>  
-<th>
-
-Formula 
-</th>  
-<th>
-
-Example 
-</th>  
-<th>
-
-Explanation 
-</th> </tr>  
-<tr>  
-<td>
-
-
-
-=jDesc( 
-
-Value 
-
-,SegmentNumber 
-
-) 
-
-
-</td>  
-<td>
-= jDesc ( <b>B32</b>, 2 ) 
-</td>  
-<td>
-
-← A cell with a value to retrieve the description. 
-
-← The second segment of the Account number 
-
-
-</td> </tr> </table>
-
-###  Function Example   
-  
-<table>  
-<tr>  
-<th>
-
-From File 
-</th>  
-<th>
-
-Worksheet 
-</th> </tr>  
-<tr>  
-<td>
-
-
-</td>  
-<td>
-
-
-</td> </tr> </table>

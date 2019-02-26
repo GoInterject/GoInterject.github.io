@@ -18,15 +18,13 @@ Prefixes and suffixes can use the values in Report Filter columns so they do not
 
 ![](/images/L-Export-AdvancedDist/01.png)
 
-<br> 
-
+<br>
 
 **Step 2:** You can also type prefixes or suffixes manually, which is shown below. Enter **Loc_7120_** in cell G17. 
 
 ![](/images/L-Export-AdvancedDist/02.png)
 
 <br> 
-
 
 When the distribution is executed, the tabs should look like the image below. 
 
@@ -40,47 +38,41 @@ When the distribution is executed, the tabs should look like the image below.
 
 <br> 
 
-
 Once you clear the Tab Names columns, it should look like the image below. 
 
 ![](/images/L-Export-AdvancedDist/05.png)
 
 <br> 
 
-
 **Step 4:** Add more practical tab names using a prefix of location that uses a hyphen as a spacer. Type **[Location]-** in cells G15, G16 and G17. 
 
 ![](/images/L-Export-AdvancedDist/06.png)
 
-<br> 
-
+<br>
 
 To rename the original tab name, you need to go to the Worksheet Tabs column. At the end of the name in each of the rows 15 through 17, **[Rename:PL]**. This will tell the distribution process to rename the original tab name to PL. 
 
 ![](/images/L-Export-AdvancedDist/07.png)
 
-<br> 
+<br>
 
 The resulting distribution looks like this: 
 
 ![](/images/L-Export-AdvancedDist/08.png)
 
-<br> 
-
+<br>
 
 **Step 5:** If you want to add the month to the tab names, you can use the **Add Suffix** column. Type **-[Month]** in cells H15, H16 and H17 as shown below. 
 
 ![](/images/L-Export-AdvancedDist/09.png)
 
-<br> 
-
+<br>
 
 When you are finished, the distribution should appear like this: 
 
 ![](/images/L-Export-AdvancedDist/10.png)
 
-<br> 
-
+<br>
 
 ###  Replacing Keywords Dynamically 
 
@@ -88,105 +80,36 @@ The distribution process allows for global variables that can be used in definin
 
 ![](/images/L-Export-AdvancedDist/11.png)
 
-<br> 
-
+<br>
 
 The resulting distribution looks the same, but now it requires less maintenance. 
 
 ![](/images/L-Export-AdvancedDist/12.png)
 
-<br> 
-
+<br>
 
 ###  Export Target Options 
 
 The distribution process allows a wide range of export options. The screenshots below show the drop-down that lists all current options. These are described in the following table. 
 
-  
-
-
 ![](/images/L-Export-AdvancedDist/13.png)
 
 <br> 
 
-
-<table>  
-<tr>  
-<th>
-
-Output 
-</th>  
-<th>
-
-
-
-Purpose 
-
-
-</th> </tr>  
-<tr>  
-<td>
-
-Excel 
-</td>  
-<td>
-
-Saves the Excel file and has the option to rename it. 
-</td> </tr>  
-<tr>  
-<td>
-
-Values Only 
-</td>  
-<td>
-
-Removes DataCell formulas from the report, saves the Excel file, and has the options to rename it, open it, and email it. 
-</td> </tr>  
-<tr>  
-<td>
-
-PDF 
-</td>  
-<td>
-
-Saves the Excel file as a PDF and has the option to open it immediately, give it a custom name, or email to designated recipients 
-</td> </tr>  
-<tr>  
-<td>
-
-Email 
-</td>  
-<td>
-
-Emails the Excel file to designated recipients and has the option to rename it 
-</td> </tr>  
-<tr>  
-<td>
-
-Print 
-</td>  
-<td>
-
-Prints the Excel file to a designated printer or the default printer. 
-</td> </tr>  
-<tr>  
-<td>
-
-Open 
-</td>  
-<td>
-
-Opens the Excel file 
-</td> </tr> </table>
-
-  
-
+| Output      | Purpose                                                                                                                            |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Excel       | Saves the Excel file and has the option to rename it.                                                                              |
+| Values Only | Removes DataCell formulas from the report, saves the Excel file, and has options to rename it, open it, and email it.              |
+| PDF         | Saves the Excel file as a PDF and has the option to open it immediately, give it a custom name, or email to designated recipients. |
+| Email       | Emails the Excel file to designated recipients and has the option to rename it                                                     |
+| Print       | Prints the Excel file to a designated printer or the default printer.                                                              |
+| Open        | Opens the Excel file.                                                                                                              |
 
 ###  Distributing Multiple Sheets 
 
 Sometimes you may want include more than one worksheet in each line of the distribution, and it can be easily done by separating additional tab names with a comma. 
 
-**Step 1:** To do this, navigate back to the distribution and type **,BalanceSheet** after **ProfitAndLoss**, as shown below. 
+**Step 1:** To do this, navigate back to the distribution and type **BalanceSheet** after **ProfitAndLoss**, as shown below. 
 
 ![](/images/L-Export-AdvancedDist/14.png)
 
@@ -198,10 +121,6 @@ The resulting distribution looks like this.
 
 <br> 
 
-
-  
-
-
 ###  Specializing Reports using Multiple Builds 
 
 Each workbook **Build** of the distribution process results in a separate workbook. For example, you can create one report for a business director, one for a regional manager, and another for a location manager. The director needs to see all districts, the regional manager needs specific districts, and the location manager needs just one location. This is easily accomplished by creating a different **Build** with slightly different parameters for each scenario. 
@@ -212,20 +131,17 @@ In the example below, you are creating a simple workbook for the Profit and Loss
 
 <br> 
 
-
 The first workbook looks like this: 
 
 ![](/images/L-Export-AdvancedDist/17.png)
 
 <br> 
 
-
 And the second workbook looks like this: 
 
 ![](/images/L-Export-AdvancedDist/18.png)
 
 <br> 
-
 
 ###  Grouping Segments 
 
@@ -237,20 +153,17 @@ In the distribution examples above, each location is entered on a separate row. 
 
 <br> 
 
-
 **Step 2:** In order to iterate through each location of the group **Consol**, you need to change the filter name to the name of the segment. In the demo setup, this was named **Segment**, but it would normally be named **Location**. Due to the demo setup, you must change the filter name to **Segment2** as shown below. 
 
 ![](/images/L-Export-AdvancedDist/20.png)
 
 <br> 
 
-
-**Step 3:** Now you will go back to the PL Trend tab and change the jRangeTag() from **Location** to **Segment2**. Use of the Range Tab function was discussed in the [ L11.2 Basic Distribution ](/wGetStarted/L11.2-Basic-Distribution.html) lab. 
+**Step 3:** Now you will go back to the PL Trend tab and change the jRangeTag() from **Location** to **Segment2**. Use of the Range Tab function was discussed in the [Basic Distribution ](/wGetStarted/L-Export-BasicDist.html) lab. 
 
 ![](/images/L-Export-AdvancedDist/21.png)
 
 <br> 
-
 
 **Step 4:** You can also put **Segment2** in the prefix or suffix columns to dynamically create the tab names for more organization. 
 
@@ -258,13 +171,11 @@ In the distribution examples above, each location is entered on a separate row. 
 
 <br> 
 
-
 **Step 5:** All settings are now contained in one line. When this distribution is run, the values for the group **Consol** are retrieved and used in generating new tabs. Run the distribution to see how it looks. 
 
 ![](/images/L-Export-AdvancedDist/23.png)
 
 <br> 
-
 
 As you can see, with only one distribution row, you created a tab for each Location in the grouping, and each tab was named with the location so that you can quickly see which tab has which information. 
 

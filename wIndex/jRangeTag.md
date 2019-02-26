@@ -9,121 +9,24 @@ description: The jRangeTag() function is used to label or tag a range or a singl
 The jRangeTag() function is used to label or tag a range or a single cell with a custom name. It is possible to use jRangeTag() to insert specific data into the specified region. It is also possible to use jRangeTag() to locate setting on a worksheet 
 
 ###  Function Arguments   
-  
-<table>  
-<tr>  
-<th>
 
-Parameter Name 
-</th>  
-<th>
+| Parameter Name | Description                                                                 | Default | Optional |
+| -------------- | --------------------------------------------------------------------------- | ------- | -------- |  
+| Tag            | The user defined name for a cell range or address                           |         | NO       |
+| Range          | This is the cell area or address that is selected from within the worksheet |         | NO       |
 
-Description 
-</th>  
-<th>
+### Excel Formula Bar Example
 
-Default 
-</th>  
-<th>
+```Excel
+jRangeTag("Location",M22)
+```
 
-Optional 
-</th> </tr>  
-<tr>  
-<td>
-
-
-
-Tag 
-
-
-</td>  
-<td>
-
-The user defined name for a cell range or address 
-</td>  
-<td>
-
-  
-
-</td>  
-<td>
-
-NO 
-</td> </tr>  
-<tr>  
-<td>
-
-Range 
-</td>  
-<td>
-
-This is the cell area or address that is selected within the worksheet 
-</td>  
-<td>
-
-  
-
-</td>  
-<td>
-
-NO 
-</td> </tr> </table>
+To see an example of this function in use, visit the [Lab Create: Basic Distribution](/wGetStarted/L-Export-BasicDist.html)
 
 ###  Function Composition   
-  
-<table>  
-<tr>  
-<th>
 
-Formula 
-</th>  
-<th>
-
-Example 
-</th>  
-<th>
-
-Explanation 
-</th> </tr>  
-<tr>  
-<td>
-
-
-
-=jRangeTag( 
-
-Tag 
-
-,Range 
-
-) 
-
-
-</td>  
-<td>
-
-
-
-=jRangeTag( 
-
-"Settings" 
-
-,"F3:J12" 
-
-) 
-
-
-</td>  
-<td>
-
-
-
-  
-
-
-← This is the custom name for the range 
-
-← The set of cells in the worksheet that will be identified by the tag 
-
-
-</td> </tr> </table>
+| Formula       | Example      | Explanation                                                          |
+| ------------- | ------------ | -------------------------------------------------------------------- |
+| Function Name | =jRangeTag() | The name of the report formula                                       |
+| Tag           | "Location"   | The custom name for the range (see below).                           |
+| Range         | M22          | The set of cells in the worksheet that will be identified by the tag |

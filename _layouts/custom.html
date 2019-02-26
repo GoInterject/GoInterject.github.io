@@ -39,7 +39,6 @@
 	<base href="{{ basehref }}" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="google-site-verification" content="scai6Ane0-sfu6jJ1H4MMUz1A3IubE1Ht0ewonfL3zQ" />
-
 	<style id="page_style" type="text/css">
 		@charset "UTF-8";
 		[ng\:cloak],
@@ -75,14 +74,15 @@
 	{% if page.title == "Docs search" %}
 		<script src="/js/jquery.js"></script>
 	{% endif %}
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="/css/font-awesome.min.css"> -->
 	<link rel="stylesheet" href="/css/bootstrap.min.css">
 	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css">
 	<link id="pagestyle" rel="stylesheet" href="/css/style.css">
 
 	<!-- font awesome icons  -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> -->
 	<!-- Go get "Open Sans" font from Google -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	
 
@@ -247,6 +247,7 @@
 							<div class="toc-nav">
 								<div class="feedback-links">
 									<ul>
+										{% if page.title != "Docs search" %}
 										{% if edit_url != "" %}
                                             <li style="visibility: show">
                                                 <a href="{{ edit_url }}">
@@ -276,6 +277,7 @@
 											</div>
 										</li>
 										-->
+										{% endif %}
 									</ul>
 								</div>
 								{% unless page.notoc %} {% assign my_min = page.toc_min | default: site.toc_min | default: 2 %} {% assign my_max = page.toc_max | default: site.toc_max | default: 3 %} {% assign my_name = page.url | default: "unnamed" %}
@@ -347,6 +349,8 @@
 	<script defer src="/js/docs.js"></script>
 	<script defer src="/js/toc.js"></script>
 	<script defer src="/js/stylemod.js"></script>
+	<script defer src="/js/collapsible.js"></script>
+
 	<script language="javascript">
 	jQuery(document).ready(function(){
 				hookupTOCEvents();

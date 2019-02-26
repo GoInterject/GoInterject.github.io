@@ -26,7 +26,7 @@ The simplified version of this example is sourced from [Lab Create: Using the Re
 
 | Argument Name | Example Mapping | Explanation |
 |---------------|-----------------|-------------|
-|Function Name  |`=jCombine()  `    |This is the excel function name used to call the function. It can be used standalone in a report and can be embedded inside of [Data](Data-Functions-Landing.html) or [Formatting](Formatting-Function-Landing.html) functions  |
+|Function Name  |=jCombine()    |This is the excel function name used to call the function. It can be used standalone in a report and can be embedded inside of [Data](Data-Functions-Landing.html) or [Formatting](Formatting-Function-Landing.html) functions  |
 |Selected Range |(A2,F2:G2,R2:T2)    |In this example, jCombine is concatenating the values of the ranges to look like this: "ValueOfA2,ValueOfF2,ValueOfG2,ValueOfR2,ValueOfS2,ValueOfT2"|
 |Delimeter      |" "              |The reason for leaving the delimiting value as blank means that jCombine will use its default comma delimiter. To change the delimiter all you need to do is set a delimiting character value. For example ";".|
 
