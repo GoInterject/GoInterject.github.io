@@ -45,8 +45,10 @@ The steps below assume you are proficient with SQL Management Studio for Microso
 
 **Step 1:** Create a stored procedure called [demo].[Northwind_CustomerOrders_Pull_MyName] using the following code: 
 
-```SQL
+<button class="collapsible">\[demo\].\[Northwind_CustomerOrders_Pull_MyName\]</button>
+<div markdown="1" class="panel">
 
+```sql
     CREATE PROC [demo].[Northwind_CustomerOrders_Pull_MyName]
     
     	 @CompanyName						VARCHAR(100)
@@ -112,8 +114,9 @@ The steps below assume you are proficient with SQL Management Studio for Microso
     ORDER BY c.[CompanyName], o.[OrderID]  DESC
     
     END
-
 ```
+
+</div>
 
 **Step 2:** INTERJECT supports stored procedures natively. Here are a few key areas to note in the code above that help illustrate INTERJECT features. 
 
@@ -140,8 +143,11 @@ The steps below assume you are proficient with SQL Management Studio for Microso
 
 **Step 3:** It is important to test the stored procedure in the database before testing through the INTERJECT platform. The code below is an example that includes a test SQL statement. 
 
-```SQL
-    Execute demo.[Northwind_CustomerOrders_Pull_MyName]
+<button class="collapsible">Example Test Script</button>
+<div markdown="1" class="panel">
+
+```sql 
+    Execute [demo].[Northwind_CustomerOrders_Pull_MyName]
     	@CompanyName = 'market'
     	,@ContactName = ''
     	,@CustomerID = ''
@@ -149,6 +155,7 @@ The steps below assume you are proficient with SQL Management Studio for Microso
     	,@Interject_LocalTimeZoneOffset = -7
 ```
 
+</div>
 When this code is executed, it returns the following result set. 
 
 ![](/images/L-DevCustOrders/07.png)

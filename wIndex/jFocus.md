@@ -18,7 +18,7 @@ The jFocus() formatting function is executed in conjunction with a freeze/unfree
 ### Excel Formula Bar Example
 
 ```Excel
-    =jFocus(C17)
+=jFocus(C17)
 ```
 An example of this function is currently in construction in our documentation labs. Check back soon for an example with more context.
 
@@ -26,5 +26,5 @@ An example of this function is currently in construction in our documentation la
 
 | Argument Name | Example Mapping | Explanation                                                                                                          |
 |---------------|-----------------|----------------------------------------------------------------------------------------------------------------------|
-| Function Name | `=jFocus`       | This is the excel function name used to call the function. It can only be used as a standalone function in a report. |
+| Function Name | =jFocus       | This is the excel function name used to call the function. It can only be used as a standalone function in a report. |
 | Target        | C17             | Cell C17 is the cell that will be selected upon a freeze panes action.                                               |

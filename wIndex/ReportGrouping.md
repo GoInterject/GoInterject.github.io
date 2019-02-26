@@ -29,7 +29,7 @@ An example of this function is currently in construction in our documentation la
 
 |Argument Name|Example Mapping|Explanation|
 |:---|:---|:---|
-|Function Name|`=ReportGrouping()`|This is the excel function name used to call the function. It can only be used as a standalone function in a report.|
+|Function Name|=ReportGrouping()|This is the excel function name used to call the function. It can only be used as a standalone function in a report.|
 |OnPullSaveOrBoth|"Both"| This function will be executed on a Pull or a Save action. |
 |OnClearRunOrBoth|"Run"| This function will be executed on a Pull-Run or a Save-Run Action+Event combination.|
 |RowOrColumnGroup|"Column"|Specifies that that the groupings to be impacted will be "Column" groupings and thus "Row" groupings are left unaltered.|
