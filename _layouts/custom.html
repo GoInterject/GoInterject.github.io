@@ -118,7 +118,7 @@
 									{% endif %}
 									{% endif %} 
 									{% unless page.tree == false %}
-									{% if page.title != 'Error' %}
+									{% if page.path != '404.html' %}
 										{% include read_time.html %}
 									{% endif %}
 									{% endunless %}
@@ -282,8 +282,8 @@
 		<script type="text/javascript">
 			var path = window.location.pathname.replace("#","");
 			var ghIssueQueryString = "https://github.com/gointerject/gointerject.github.io/issues/new?" + "title=404%20at%20" + path + "&body=URL%3A%20" + path;
-			document.getElementsByClassName("nomunge")[1].onclick = function() {
-				 document.getElementsByClassName("nomunge")[1].href = ghIssueQueryString;
+			document.getElementsByClassName("nomunge")[0].onclick = function() {
+				 document.getElementsByClassName("nomunge")[0].href = ghIssueQueryString;
 				 return true;
 			};
 		</script>
