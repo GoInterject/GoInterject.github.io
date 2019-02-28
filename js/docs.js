@@ -107,7 +107,7 @@ function walkTree(tree)
         tempCaretNav.push('<a onclick="navClicked(' + totalTopics + ')" data-target="#item' + totalTopics + '" data-toggle="collapse" data-parent="#stacked-menu" style="float:right;"');
         
         // check if the page has a defined link
-        console.log('tree path:  ' + tree[j].path);
+        //console.log('tree path:  ' + tree[j].path);
         if (tree[j].path != undefined){
           tempTitleNav.push('<a href="' + tree[j].path + '" style="float:left;width:60%;word-wrap: break-word;"');
         }
@@ -184,7 +184,7 @@ function renderNav(docstoc) {
   }
   if (outputLetNav.length==0)
   {
-    console.log("outputletnav is length zero");
+    //console.log("outputletnav is length zero");
     // didn't find the current topic in the standard TOC; maybe it's a collection;
     for (var key in collectionsTOC)
     {
