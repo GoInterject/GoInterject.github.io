@@ -64,11 +64,8 @@
 	  }}();
 	</script>
 	-->
-	<!-- favicon -->
-	<link rel="icon" type="image/x-icon" href="/favicons/docs@2x.ico" sizes="129x128">
-	<meta name="msapplication-TileImage" content="/favicons/docs@2x.ico">
-	<link rel="apple-touch-icon" type="image/x-icon" href="/favicons/docs@2x.ico" sizes="129x128">
-	<meta property="og:image" content="/favicons/docs@2x.ico"/>
+	
+	
 	<!-- metadata -->
 	<!--This if statement is required to load jquery on the search.md page before the setTimeout function-->
 	{% if page.title == "Docs search" %}
@@ -81,8 +78,6 @@
   <!-- Add Interject logo to favicon to header tab -->
 	<link rel="shortcut icon" type="image/x-icon" href="https://gointerject.com/wp-content/uploads/2015/09/Interject_32x32.png">
 
-	<!-- font awesome icons  -->
-	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> -->
 	<!-- Go get "Open Sans" font from Google -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -111,7 +106,7 @@
 				<div class="col-body">
 					<main class="col-content {% if page.landing == true %}main-content{%else%}content{% endif %}">
 						<section class="section">
-							{% if page.url == '/' %}
+							{% if page.url == '/' and page.path != '404.html' %}
 							<h1>{{ site.name }}</h1>
 							{% else %}
 								{% if page.title %}
@@ -125,7 +120,9 @@
 									{% endif %}
 									{% endif %} 
 									{% unless page.tree == false %}
-									{% include read_time.html %}
+									{% if page.path != '404.html' %}
+										{% include read_time.html %}
+									{% endif %}
 									{% endunless %}
 							{% if page.enterprise %}
 							{% include ee_dropdown.html %}
@@ -260,25 +257,6 @@
 										<li><a href="https://github.com/gointerject/gointerject.github.io/issues/new?body=File: [{{ page.path }}](https://docs.gointerject.com{{ page.url }})"
 															class="nomunge"><i class="fa fa-check" aria-hidden="true"></i> Request docs changes</a></li>
 										<li><a href="https://www.gointerject.com/call-us/"><i class="fa fa-question" aria-hidden="true"></i> Get help</a></li>
-										<!-- toggle mode -->
-										<!-- Turn night mode on and off
-										<li>
-											<div class="toggle-mode">
-												<div class="icon">
-													<i class="fa fa-sun-o" aria-hidden="true"></i>
-												</div>
-												<div class="toggle-switch">
-													<label class="switch">
-														<input type="checkbox" id="switch-style">
-														<div class="slider round"></div>
-												</label>
-												</div>
-												<div class="icon">
-													<i class="fa fa-moon-o" aria-hidden="true"></i>
-												</div>
-											</div>
-										</li>
-										-->
 										{% endif %}
 									</ul>
 								</div>
@@ -302,12 +280,12 @@
 		</span>
 	</div>
 
-	{% if page.path == "404.md" %}
+	{% if page.path == "404.html" %}
 		<script type="text/javascript">
 			var path = window.location.pathname.replace("#","");
 			var ghIssueQueryString = "https://github.com/gointerject/gointerject.github.io/issues/new?" + "title=404%20at%20" + path + "&body=URL%3A%20" + path;
-			document.getElementsByClassName("nomunge")[1].onclick = function() {
-				 document.getElementsByClassName("nomunge")[1].href = ghIssueQueryString;
+			document.getElementsByClassName("nomunge")[0].onclick = function() {
+				 document.getElementsByClassName("nomunge")[0].href = ghIssueQueryString;
 				 return true;
 			};
 		</script>
