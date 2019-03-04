@@ -24,7 +24,7 @@ ReportMacro allows a report developer to call VBA macros on Save, Pull, Clear, o
 
 To see an example of this function in use, visit the [Lab Create: Using Report Macro](/wGetStarted/L-Create-ReportMacro.html)
 
-###  Function Composition   
+###  Function Composition
 
 | Argument Name    | Example Mapping    | Explanation                                           |
 | ---------------- | ------------------ | ----------------------------------------------------- |
@@ -32,4 +32,38 @@ To see an example of this function in use, visit the [Lab Create: Using Report M
 | OnPullSaveOrBoth | "Pull"             | The Macro will only run on a pull event.              |
 | OnClearRunOrBoth | "Both"             | It will be run on the clear or run event of the pull. |
 | MacroNameToRun   | "MyCustomFunction" | Only the function specified will be ran.              |
+
+
+### Trigger Combination List
+
+The execution of the ReportDefaults() formatting function is determined by a combination of an INTERJECT action and an INTERJECT event. An action is a pull or save whereas an event is a clear or a run.
+
+| Argument Name    | Function Event Trigger Options | Option Explanation                                                                            |
+|------------------|--------------------------------|-----------------------------------------------------------------------------------------------|
+| **Trigger 1**    |                                |                                                                                               |
+| OnPullSaveOrBoth | "Pull"                         | This will trigger the default to execute when the user performs a Pull-Run INTERJECT event.   |
+| OnClearRunOrBoth | "Run"                          |                                                                                               |
+| **Trigger 2**    |                                |                                                                                               |
+| OnPullSaveOrBoth | "Pull"                         | This will trigger the default to execute when the user performs a Pull-Clear INTERJECT event. |
+| OnClearRunOrBoth | "Clear"                        |                                                                                               |
+| **Trigger 3**    |                                |                                                                                               |
+| OnPullSaveOrBoth | "Save"                         | This will trigger the default to execute when the user performs a Save-Run INTERJECT event.   |
+| OnClearRunOrBoth | "Run"                          |                                                                                               |
+| **Trigger 4**    |                                |                                                                                               |
+| OnPullSaveOrBoth | "Save"                         | This will trigger the default to execute when the user performs a Save-Clear INTERJECT event. |
+| OnClearRunOrBoth | "Clear"                        |                                                                                               |
+| **Trigger 5**    |                                |                                                                                               |
+| OnPullSaveOrBoth | "Both"                         | This will trigger the default to execute when the user performs a Save-Run, Save-Clear, Pull-Run, Pull-Clear INTERJECT event. |
+| OnClearRunOrBoth | "Both"                         |                                                                                               |
+| **Trigger 6**    |                                |                                                                                               |
+| OnPullSaveOrBoth | "Both"                         | This will trigger the default to execute when the user performs a Save-Clear or a Pull-Clear INTERJECT event. |
+| OnClearRunOrBoth | "Clear"                        |                                                                                               |
+| **Trigger 7**    |                                |                                                                                               |
+| OnPullSaveOrBoth | "Save"                         | This will trigger the default to execute when the user performs a Save-Clear or a Save-Run INTERJECT event. |
+| OnClearRunOrBoth | "Both"                        |                                                                                               |
+| **Trigger 8**    |                                |                                                                                               |
+| OnPullSaveOrBoth | "Pull"                         | This will trigger the default to execute when the user performs a Pull-Clear or a Pull-Run INTERJECT event. |
+| OnClearRunOrBoth | "Both"                        |                                                                                               |
+
+
 
