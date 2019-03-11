@@ -1,0 +1,5 @@
+---
+layout: null
+---
+// Extract data from _data/siteversion.yaml file and transform it into json
+{{ site.data.siteversion | jsonify }}
