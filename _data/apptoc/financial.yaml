@@ -1,0 +1,137 @@
+# Handles the navigation bars for the financial app section of the website
+# When creating a new nav dont forget to add it to the TOC.js file (just copy the format of the one above.)
+horizontalnav:
+  - title: About
+    path: /bApps/bFinancials/Epicor-Financials.html
+    node: about
+  - title: Reporting Capabilities
+    path: /bApps/bFinancials/FRx-Migration.html
+    node: reportingcapabilities
+  - title: Install
+    path: /bApps/bFinancials/Data-Tier.html
+    node: install
+  - title: Configure
+    path: /bApps/bFinancials/Monthly-Import.html
+    node: configure
+  - title: Test
+    path: /bApps/bFinancials/Test.html
+    node: test
+  - title: Train
+    path: /bApps/bFinancials/The-Basics.html
+    node: train
+  - title: Portal
+    path: /bApps/bFinancials/Portal-Overview.html
+    node: portal
+  - title: Support
+    path: /bApps/bFinancials/Support-Overview.html
+    node: support
+
+about:
+  - title:  What is Interject Financials for Epicor
+    path: /bApps/bFinancials/Epicor-Financials.html
+  - title: Product Sheet
+    path:
+  - sectiontitle: Core Features
+    path:
+    section:
+      - title: Data Governance
+        path:
+      - title: Flexibility
+        path:
+  - title: Prerequisites
+    path:
+
+reportingcapabilities:
+  - sectiontitle: Build Financial Statements
+    path: 
+    section:
+      - title: Profit and Loss
+        path:
+      - title: Balance Sheet
+        path:
+      - title: Other/Custom
+        path:
+  - sectiontitle: Trx Reports
+    path:
+    section:
+      - title: Trial Balance
+        path:
+      - title: JE Query
+        path:
+      - title: JE Lookup
+        path:
+
+install:
+  - title: Data Tier Install
+    path:
+  - title: Initial Data Load
+    path:
+  - title: Application Install
+    path:
+  - title: Security & Updates
+
+configure:
+  - title: Monthly Import Schedule & Test
+    path:
+  - sectiontitle: Using the Initial configuration tool for Financial Reporting
+    path:
+    section:
+      - title: Setup Year Names
+        path:
+  - sectiontitle: Account Rollup Management
+    path:
+    section:
+      - title: Goverened Account Rollups
+        path:
+      - title: Ad Hoc Account Rollups
+        path:
+      - title: Other Rollups
+        path:
+  - title: Converting FRX Row Definitions
+    path:
+
+test:
+  - sectiontitle: Interject Certifications
+    path:
+    section:
+      - title: Unit Testing
+        path:
+      - title: Post Install Support
+        path:
+  - title: Test Checklist / Scripts for Implementation
+    path:
+
+train:
+  - title: The Basics
+    path:
+  - title: Using the Report Library
+    path:
+  - title: Pull/Save Data
+    path:
+  - title: Drilling Between Reports
+    path:
+    section:
+      - title: Working with Rows and Columns
+        path:
+  - sectiontitle: Exporting Reports
+    path:
+
+portal: 
+  - title: Overview
+    path:
+  - title: Logging In to the Interject Website Portal
+    path:
+  - title: Data Connections
+    path:
+  - title: Data Portals
+    path:
+  - title: User Profile
+
+support:
+  - title: Overview
+    path:
+  - title: Troubleshooting App Errors
+    path:
+  - title: Troubleshooting Excel Animations
+    path:
+  - title: Troubleshooting Report Errors
