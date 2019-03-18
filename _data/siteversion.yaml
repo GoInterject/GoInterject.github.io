@@ -7,7 +7,7 @@
 - archive:
   name: Main
   current: true
-  path: /
+  path: 
 
 - archive:
   name: Financials
