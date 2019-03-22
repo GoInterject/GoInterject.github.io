@@ -22,21 +22,21 @@ The Per-Computer installation installs INTERJECT for multiple users on one compu
 
 **Step 3:** Select **View other installers >>**
 
-![](/images/SharedComputer/16.jpg)
+![](/images/SharedComputer/16.png)
 
   
 
 
-**Step 4:** Click the **Zip File for IT Admins Multiple-Users Windows Server** option. 
+**Step 4:** Click the **Zip File for IT Admins Multiple-Users** option. This installer is only available on **Windows Server** machines.
 
-![](/images/SharedComputer/17.jpg)
+![](/images/SharedComputer/17.png)
 
   
 
 
 **Step 5:** When the download is complete, **extract** the **zip file**. 
 
-![](/images/SharedComputer/22.jpg)
+![](/images/SharedComputer/22.png)
 
   
 
@@ -57,7 +57,7 @@ The Per-Computer installation installs INTERJECT for multiple users on one compu
 
 **Step 8:** Navigate back to your **Extracted Zip Folder** and run the **Setup.exe** file. 
 
-![](/images/SharedComputer/32.jpg)
+![](/images/SharedComputer/32.png)
 
   
 

@@ -24,7 +24,7 @@ INTERJECT aims to make the installation process as simple and painless as possib
 
 **Step 4:** Click the **Installer** button to begin. 
 
-![](/images/SingleUser/03.jpg)
+![](/images/SingleUser/03.png)
 
   
 
