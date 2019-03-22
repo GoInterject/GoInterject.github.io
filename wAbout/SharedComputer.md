@@ -57,7 +57,7 @@ The Per-Computer installation installs INTERJECT for multiple users on one compu
 
 **Step 8:** Navigate back to your **Extracted Zip Folder** and run the **Setup.exe** file. 
 
-![](/images/SharedComputer/32.png)
+![](/images/SharedComputer/31.png)
 
   
 
