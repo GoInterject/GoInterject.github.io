@@ -133,7 +133,7 @@ Once the location is selected, hit **Next**
 
 **Step 14:** The setup wizard will tell you when the installation is complete. Select **Finish**
 
-![](/images/SharedComputer/36.jpg)
+![](/images/SingleUser/13.png)
 <br>
   
 
