@@ -9,6 +9,8 @@ description: This is the base installer
 
 INTERJECT aims to make the installation process as simple and painless as possible. This installation is intended for single user computers. 
 
+**Note:** If you are installing on a Windows Server machine, [click here](/wAbout/SharedComputer.html) for installing on a shared computer.
+
 ###  Installing INTERJECT 
 
 **Step 1:** Navigate to  [ https://portal.gointerject.com ](https://portal.gointerject.com/login.html)
@@ -55,15 +57,6 @@ INTERJECT aims to make the installation process as simple and painless as possib
 **Step 8:** Read and accept the **End-User License Agreement,** then select **Next.**
 
 ![](/images/SingleUser/10.png)
-<br>
-
-**Step 11:** Two options will be available when installing on Windows Server.
-1. Install as 'per-user' (current user)
-2. Install as 'per-machine' (everybody) 
-
-To install for single user, make sure the **Only for me** button is selected then click **Next**
-
-![](/images/SingleUser/06.png)
 <br>
 
 **Step 9:** Choose the **Destination Folder** for your installation, then select **Next**. 
