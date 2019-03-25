@@ -39,7 +39,7 @@ INTERJECT aims to make the installation process as simple and painless as possib
 
 **Microsoft** **Edge** : 
 
-![](/images/SingleUser/07.jpg)
+![](/images/SingleUser/07.PNG)
 <br>
   
 **Microsoft Internet Explorer**: 
