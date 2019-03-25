@@ -53,7 +53,7 @@ The Per-Computer installation installs INTERJECT for multiple users on one compu
   
 
 
-**Step 8:** Navigate back to your **Extracted Zip Folder** and run the **InterjectSetup_Production_40_Standard_\[version\].exe** file **As**.
+**Step 8:** Navigate back to your **Extracted Zip Folder** and run the **InterjectSetup_Production_40_Standard_\[version\].exe** file **As Administrator**.
 
 
 ![](/images/SharedComputer/31.png)
