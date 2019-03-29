@@ -8,7 +8,7 @@ description:  Report Macro is useful for specialized reports where a customized 
 
 ##  **Overview:**
 
-Report Macro is an excel formula provided by INTERJECT. It allows IINTERJECT to interact with publicly defined VBA functions on a report.  Report Macro is useful for specialized reports where a customized action needs to be taken. This action can be built into a VBA Macro based on the complex needs of the report. Then, ReportMacro() is used to execute the custom action at the right point within the reporting process.
+Report Macro is an excel formula provided by INTERJECT. It allows INTERJECT to interact with publicly defined VBA functions on a report.  Report Macro is useful for specialized reports where a customized action needs to be taken. This action can be built into a VBA Macro based on the complex needs of the report. Then, ReportMacro() is used to execute the custom action at the right point within the reporting process.
 
 ###  Using Report Macro 
 
