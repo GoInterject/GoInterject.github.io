@@ -5,13 +5,13 @@ horizontalnav:
     path: /bApps/bFinancials/Epicor-Financials.html
     node: about
   - title: Reporting Capabilities
-    path: /bApps/bFinancials/FRx-Migration.html
+    path: /bApps/bFinancials/Reporting-Capabilities.html
     node: reportingcapabilities
   - title: Install
-    path: /bApps/bFinancials/Data-Tier.html
+    path: /bApps/bFinancials/Technical-Install.html
     node: install
   - title: Configure
-    path: /bApps/bFinancials/Monthly-Import.html
+    path: /bApps/bFinancials/Configure.html
     node: configure
   - title: Test
     path: /bApps/bFinancials/Test.html
@@ -29,109 +29,115 @@ horizontalnav:
 about:
   - title:  What is Interject Financials for Epicor
     path: /bApps/bFinancials/Epicor-Financials.html
-  - title: Product Sheet
-    path:
-  - sectiontitle: Core Features
-    path:
-    section:
-      - title: Data Governance
-        path:
-      - title: Flexibility
-        path:
-  - title: Prerequisites
-    path:
+  #- title: Core Features
+    #path: /bApps/bFinancials/Core-Features.html
+  #- sectiontitle: 
+   # path:
+    #section:
+     # - title: Data Governance
+      #  path:
+      #- title: Flexibility
+       # path:
+ # - title: Prerequisites
+  #  path:
 
 reportingcapabilities:
-  - sectiontitle: Build Financial Statements
-    path: 
-    section:
-      - title: Profit and Loss
-        path:
-      - title: Balance Sheet
-        path:
-      - title: Other/Custom
-        path:
-  - sectiontitle: Trx Reports
-    path:
-    section:
-      - title: Trial Balance
-        path:
-      - title: JE Query
-        path:
-      - title: JE Lookup
-        path:
+  - title:  Reporting Capabilities
+    path: /bApps/bFinancials/Reporting_Capabilities.html
+   # section:
+    #  - title: Profit and Loss
+    #    path:
+    #  - title: Balance Sheet
+    #    path:
+    #  - title: Other/Custom
+    #    path:
+ # - sectiontitle: Trx Reports
+  #  path:
+  #  section:
+   #   - title: Trial Balance
+     #   path:
+    #  - title: JE Query
+    #    path:
+   #   - title: JE Lookup
+     #   path:
 
 install:
+  - title: Company Setup
+    path: /bApps/bFinancials/Company-Setup.html
   - title: Data Tier Install
-    path:
+    path: /bApps/bFinancials/Technical-Install.html
   - title: Initial Data Load
-    path:
-  - title: Application Install
-    path:
-  - title: Security & Updates
+    path: /bApps/bFinancials/InitialDataLoad.html
+  - title: FRx Migration
+    path: /bApps/bFinancials/FRxMigration.html
+  #- title: Security & Updates
 
 configure:
-  - title: Monthly Import Schedule & Test
-    path:
-  - sectiontitle: Using the Initial configuration tool for Financial Reporting
-    path:
-    section:
-      - title: Setup Year Names
-        path:
-  - sectiontitle: Account Rollup Management
-    path:
-    section:
-      - title: Goverened Account Rollups
-        path:
-      - title: Ad Hoc Account Rollups
-        path:
-      - title: Other Rollups
-        path:
-  - title: Converting FRX Row Definitions
-    path:
+  - title: Configuring Interject for Financials
+    path: /bApps/bFinancials/Configure.html
+  - title: Localizing Transactional Reports
+    path: /bApps/bFinancials/Localize.html
+   # section:
+  #    - title: Setup Year Names
+   #     path:
+  #- sectiontitle: Account Rollup Management
+  #  path:
+  #  section:
+   #   - title: Goverened Account Rollups
+   #     path:
+    #  - title: Ad Hoc Account Rollups
+    #    path:
+    #  - title: Other Rollups
+    #    path:
+ # - title: Converting FRX Row Definitions
+   # path:
 
 test:
-  - sectiontitle: Interject Certifications
-    path:
-    section:
-      - title: Unit Testing
-        path:
-      - title: Post Install Support
-        path:
-  - title: Test Checklist / Scripts for Implementation
-    path:
+  - title: Validating Interject for Financials Setup
+    path: /bApps/bFinancials/Test.html
+   # section:
+     # - title: Unit Testing
+     #   path:
+     # - title: Post Install Support
+    #    path:
+ # - title: Test Checklist / Scripts for Implementation
+  #  path:
 
 train:
-  - title: The Basics
-    path:
+  - title: The Basics of Using Interject for Financials
+    path: /bApps/bFinancials/The-Basics.html
   - title: Using the Report Library
-    path:
-  - title: Pull/Save Data
-    path:
-  - title: Drilling Between Reports
-    path:
-    section:
-      - title: Working with Rows and Columns
-        path:
-  - sectiontitle: Exporting Reports
-    path:
+    path: /bApps/bFinancials/Library.html
+ # - title: Pull/Save Data
+   # path: /bApps/bFinancials/PullSave.html
+ # - title: Drilling Between Reports
+  #  path: /bApps/bFinancials/Drill.html
+  - title: Transaction Reports
+    path: /bApps/bFinancials/TransactionReports
+  - title: Building Financial Report Templates
+    path: /bApps/bFinancials/ReportTemplates
+ #   section:
+   #   - title: Working with Rows and Columns
+  #      path:
+ # - sectiontitle: Exporting Reports
+  #  path:
 
 portal: 
-  - title: Overview
-    path:
-  - title: Logging In to the Interject Website Portal
-    path:
-  - title: Data Connections
-    path:
-  - title: Data Portals
-    path:
-  - title: User Profile
+  - title: Portal Site Overview
+    path: /bApps/bFinancials/Portal-Overview.html
+ # - title: Logging In to the Interject Website Portal
+  #  path:
+ # - title: Data Connections
+  #  path:
+ # - title: Data Portals
+  #  path:
+ # - title: User Profile
 
 support:
-  - title: Overview
-    path:
-  - title: Troubleshooting App Errors
-    path:
-  - title: Troubleshooting Excel Animations
-    path:
-  - title: Troubleshooting Report Errors
+  - title: Troubleshooting and Support
+    path: /bApps/bFinancials/Support-Overview.html
+  #- title: Troubleshooting App Errors
+   # path:
+  #- title: Troubleshooting Excel Animations
+  #  path:
+ # - title: Troubleshooting Report Errors
