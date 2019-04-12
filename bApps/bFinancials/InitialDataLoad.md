@@ -10,7 +10,8 @@ description:
 > To Do
 >
 > **Step 1:** Execute the following Script DB to initialize Epicor Enterprise Data
-> 
+>
+>
 > - 1a
 > ```SQL
 > --Import configuration setup from Epicor and initial setup of Interject
