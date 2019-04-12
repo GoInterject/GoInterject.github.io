@@ -55,17 +55,14 @@
 			display: block;
 		}
 	</style>
-
-	<!--
-	<script type="text/javascript">
-	  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
-	  analytics.load("IWj9D0UpZHZdZUZX9jl98PcpBFWBnBMy");
-	  analytics.page();
-	  }}();
+	
+	<!-- This is used to pass a global variable to switch the nav bar yml file. See toc.js for the logic -->
+	{% capture sitePath %}
+		{{page.url}} 
+	{%endcapture%}
+	<script language="JavaScript">
+		var sitePath = '{{page.url}}'
 	</script>
-	-->
-	
-	
 	<!-- metadata -->
 	<!--This if statement is required to load jquery on the search.md page before the setTimeout function-->
 	{% if page.title == "Docs search" %}
@@ -309,19 +306,17 @@
 	<script src="/js/bootstrap.min.js"></script>
 	<!-- Always include the archive.js, but it doesn't do much unless we are an archive -->
 	<script language="javascript">
-	// Default to assuming this is an archive and hiding some stuff
-	// See js/archive.js and js/docs.js for logic relating to this
-	var isArchive = true;
-	var interjectVersion = 'v{{ site.docker_ce_stable_version }}';
+	var interjectVersion = 'Main';
+	console.log(interjectVersion);
 	// In archives, we need to know the page root and we get it from JEKYLL_ENV in the jekyll build command
 	var jekyllEnv = '{{ jekyll.environment }}';
 	// If unset (in non-archive branches), defaults to "development". In that case, reset it to empty
-	if (jekyllEnv == 'development') {
-		jekyllEnv = '';
-	}
+	// if (jekyllEnv == 'development') {
+	// 	jekyllEnv = '';
+	// }
 	var pageURL = '{{ page.url }}';
 	</script>
-	<script src="/js/archive.js"></script>
+	<script src="/js/siteversions.js"></script>
 	<script src="/js/stickyfill.min.js"></script>
 	<script defer src="/js/metadata.js"></script>
 	<script src="/js/glossary.js"></script>
