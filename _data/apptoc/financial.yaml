@@ -75,7 +75,7 @@ install:
 configure:
   - title: Configuring Interject for Financials
     path: /bApps/bFinancials/Configure.html
-  - title: Localizing Transactional Reports
+  - title: Localizing Reports
     path: /bApps/bFinancials/Localize.html
    # section:
   #    - title: Setup Year Names
