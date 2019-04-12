@@ -8,7 +8,7 @@ horizontalnav:
     path: /bApps/bFinancials/Reporting-Capabilities.html
     node: reportingcapabilities
   - title: Install
-    path: /bApps/bFinancials/Technical-Install.html
+    path: /bApps/bFinancials/Company-Setup.html
     node: install
   - title: Configure
     path: /bApps/bFinancials/Configure.html
