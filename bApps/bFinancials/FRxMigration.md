@@ -103,10 +103,10 @@ description: Step by step guide on data tier, initial data load, FRx Migration, 
 
 >To Do
 > 
-> **Step 1:** Go to "My Apps" on the left menu of the Interject Portal page
-> ![DB Destination](/images/A-InitialDataLoad/image3.png){: .center-image }
+> **Step 1:** Go to "My Apps" on the left menu of the Interject Portal page select "Interject Financials - Epicor" offering
+> ![DB Destination](/images/A-InitialDataLoad/image3.png){: .center-image }commit
 >
-> **Step 2:** In the "Connection Redirect" section choose to replace "FRx_Setup" with "FRxReplacement"
+> **Step 2:** At the bottom of the page in the "Connection Redirect" section choose to replace "EpicorERP_FRx_Transfer" with "FRxReplacement"
 >
 > **Step 3:** Click "Save"
 >
