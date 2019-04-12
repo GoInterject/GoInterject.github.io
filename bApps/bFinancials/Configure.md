@@ -51,7 +51,7 @@ Account Rollups are important part to ensuring the “Control” and “Validity
 > To Do
 >
 > **Step 1:** Select the "Setup/Review Rollups" link
-> ![reportlib config](/images/Config/RollupRev.png){: .center-image }
+> ![reportlib config](/images/Config/RollUpRev.png){: .center-image }
 >
 > **Step 2:** In the Account Rollup Manager tab, select the BS_DEMO link
 > ![reportlib config](/images/Config/RollupMg.png){: .center-image }
@@ -66,7 +66,7 @@ Account Rollups are important part to ensuring the “Control” and “Validity
 >
 
 
-<!-->
+<!--
 **PL1:** In the PL1 Rollup tab, change the account configurations as needed and hit Ctrl-Shift-U to save back the configuration. \(Note: Names used for detail code, rollup and summary section must all be unique as a group.\)
 
 **BS1:** Configure BS1 using the same method described for PL1, then save back the configuration using Ctrl-Shift-U.
