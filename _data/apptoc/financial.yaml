@@ -113,9 +113,9 @@ train:
  # - title: Drilling Between Reports
   #  path: /bApps/bFinancials/Drill.html
   - title: Transaction Reports
-    path: /bApps/bFinancials/TransactionReports
+    path: /bApps/bFinancials/TransactionReports.html
   - title: Building Financial Report Templates
-    path: /bApps/bFinancials/ReportTemplates
+    path: /bApps/bFinancials/ReportTemplates.html
  #   section:
    #   - title: Working with Rows and Columns
   #      path:
