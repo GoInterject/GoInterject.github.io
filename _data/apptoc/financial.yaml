@@ -14,7 +14,7 @@ horizontalnav:
     path: /bApps/bFinancials/Configure.html
     node: configure
   - title: Test
-    path: /bApps/bFinancials/Localize.html
+    path: /bApps/bFinancials/Test.html
     node: test
   - title: Train
     path: /bApps/bFinancials/The-Basics.html
