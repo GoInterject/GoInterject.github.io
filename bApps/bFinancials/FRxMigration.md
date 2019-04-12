@@ -111,6 +111,6 @@ description: Step by step guide on data tier, initial data load, FRx Migration, 
 > **Step 3:** Click "Save"
 >
 >
-> ![DB Destination](/images/A-InitialDataLoad/image2.png){: .center-image }
+> ![DB Destination](/images/A-InitialDataLoad/image2.png){: .center-image } 
 >
 >
