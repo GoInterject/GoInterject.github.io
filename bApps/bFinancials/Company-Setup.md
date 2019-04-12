@@ -9,7 +9,7 @@ Shortly after a signed contract with Client, please submit specific client infor
 
 Please provide the following information:
 
-<table style="max-width: 50%; margin:0 auto;">
+<table style="max-width: 60%;">
   <tr>
     <th>Field</th>
     <th>Description</th>
