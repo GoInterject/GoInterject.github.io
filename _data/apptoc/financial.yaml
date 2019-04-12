@@ -92,7 +92,7 @@ configure:
  # - title: Converting FRX Row Definitions
    # path:
 
-localize:
+test:
   - title: Set Up Client Reports
     path: /bApps/bFinancials/Localize.html
    # section:
