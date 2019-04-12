@@ -14,7 +14,7 @@ description:
 > - 1a
 > ```SQL
 > --Import configuration setup from Epicor and initial setup of Interject
-> EXEC [Custom].[EPR_InstallScript1_DatabaseConfig]
+> EXEC [Custom].[ERP_InstallScript1_DatabaseConfig]
 > 	  @MasterEpicorDatabase          = '[INSERT>MasterDatbase]'
 > 	 ,@DefaultDatabaseNameSource     = '[INSERT>DefaultDatabase]'
 > ```
@@ -22,13 +22,13 @@ description:
 > - 1b
 > ```SQL
 > --Import data 
-> EXEC [Custom].[EPR_InstallScript2_EpicorImport]
+> EXEC [Custom].[ERP_InstallScript2_EpicorImport]
 > ```
 >
 > - 1c
 > ```SQL
 > --Specify historical periods in which to seed Interject Data Store
-> EXEC [Custom].[EPR_InstallScript3_ReportingImport]
+> EXEC [Custom].[ERP_InstallScript3_ReportingImport]
 > 	  @ReportingImport_YearBegin     = 'INSERT>YYYY'
 >	 ,@ReportingImport_YearEnd       = 'INSERT>YYYY'
 > ```
@@ -36,7 +36,7 @@ description:
 > - 1d
 > ```SQL
 > --Specify historical periods in which to seed Interject Data Store
-> EXEC [Custom].[EPR_InstallScript4_GroupingImport]
+> EXEC [Custom].[ERP_InstallScript4_GroupingImport]
 > ```
 > 
 > **Step 2:** Execute the following Script for SQL Agent Jobs
@@ -44,7 +44,7 @@ description:
 > - 2a
 > ```SQL
 > --Import configuration setup from Epicor and initial setup of Interject
-> EXEC [Custom].[EPR_InstallScript5_SetupJobs]
+> EXEC [Custom].[ERP_InstallScript5_SetupJobs]
 > ```
 > 
 > The following 4 jobs will be created: 
