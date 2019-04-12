@@ -104,12 +104,13 @@ description: Step by step guide on data tier, initial data load, FRx Migration, 
 >To Do
 > 
 > **Step 1:** Go to "My Apps" on the left menu of the Interject Portal page
+> ![DB Destination](/images/A-InitialDataLoad/image3.png){: .center-image }
 >
 > **Step 2:** In the "Connection Redirect" section choose to replace "FRx_Setup" with "FRxReplacement"
 >
 > **Step 3:** Click "Save"
 >
 >
-> ![DB Destination](/images/A-InitialDataLoad/RedirectDB.png){: .center-image }
+> ![DB Destination](/images/A-InitialDataLoad/image2.png){: .center-image }
 >
 >
