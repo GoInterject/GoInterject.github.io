@@ -25,11 +25,7 @@ After you get access to Interject, there are three parts to installing Interject
 <table>
    <tr>
     <th><span style="font-weight:bold">Script</span></th>
-   </tr>
-   <tr>
     <th><span style="font-weight:bold">Version</span></th>
-   </tr>
-   <tr>
     <th><span style="font-weight:bold">Link</span></th>
    </tr>
             <tr>
@@ -56,17 +52,6 @@ After you get access to Interject, there are three parts to installing Interject
             </tr>
 </table>
 
-<!--
-> To Do
->
-> **Step 1** Use MSSMS to connect to your Epicor server as sysadmin user. 
->
-> **Step 2** Type "Interject_Reporting" into the Database Name field (if it doesn't already exist)
-<!-- ![Initial DB Creation](/images/A-SQL-Installation/01.png){: .center-image }
->
-> **Step 3** Execute the [Initial.Interject_Reporting.sql](https://drive.google.com/a/gointerject.com/uc?authuser=0&id=1fdddeCsvwNwF5VqICLoAZU4KSkcZKSyx&export=download) script in the new database. This will create all DB objects. 
->
-> **Step 4** Create security objects and grant read-only access to Epicor tables by passing the following parameteres (see examples below):-->
 
 ### Steps Required for Technical Install
 
@@ -77,9 +62,9 @@ After you get access to Interject, there are three parts to installing Interject
 >
 >**Step 2:** Create Interject Reporting Database
 > - Right Click New Database in the Object Explorer
->  ![New database](images/A-SQL-Installation/newDB.png){: .center-image }
+> ![New database](/images/A-SQL-Installation/newDB.png){: .center-image }
 > - Type “Interject_Reporting” into the Database Name field
-> ![New database](images/A-SQL-Installation/01.png){: .center-image }
+> ![New database](/images/A-SQL-Installation/01.png){: .center-image }
 > - Press OK
 >
 > **Step 3:** Point the script window to the new database
