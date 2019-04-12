@@ -24,26 +24,32 @@ A subscription to Interject Financial - Epicor will provide a "Subscriptions" fo
 >
 > **Step 4:**  Review the report and determine if there are filter name labels. If there are then match the segment configurations by typing over the current filter name. If a filter is not used, it can be deleted. The segment configuration can be found by opening the Interject Financials Configuration Manager report and clicking on step 2 to Review Segments.
 >
-> 
+> ![Open Library](/images/Localize/05.png){: .center-image }
+>
+> ![Open Library](/images/Localize/06.png){: .center-image }
+>
 > ![Open Library](/images/Localize/04.png){: .center-image }
 >
 >  **Step 5:** Once the filters have been re-named, make sure to clear any data from the Excel sheet and save the Excel file to your local computer. 
 >
->  ![Open Library](/images/Localize/05.png){: .center-image }
+>  
 >
 >  **Step 6:** With the Excel file still open, open the Interject ribbon and open the Report Library.
 Select the company folder, right click, and select “Add Subfolder”. Name the subfolder accordingly. For example, “Trial Balance Reports” and press Enter to Save New Folder.
 >
->  
-> ![Open Library](/images/Localize/06.png){: .center-image }
+> ![Open Library](/images/Localize/07.png){: .center-image }
+> 
 >
 >  **Step 7:** Select the new folder and right click in the “Report Links” area white space. Click on Save Current Workbook then select the Create New Link (Save Required) option.
 >
-> ![Open Library](/images/Localize/07.png){: .center-image }
+> ![Open Library](/images/Localize/08.png){: .center-image }
 >
 >  **Step 8:** Create a report link by filling in the two required fields: Link Name and Status and selecting save. The Link Description and other information fields are optional. Fill in the Data Drills for Link section to be the same as the original report link. 
 >
-> ![Open Library](/images/Localize/08.png){: .center-image }
+> ![Open Library](/images/Localize/09.png){: .center-image }
 >
 > **Step 9:** Review the form and click Save. Then click the login button in the Interject Ribbon Menu. Congratulations you just created a localized report. 
+>
+
+
 
