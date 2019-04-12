@@ -28,9 +28,10 @@ description: Step by step guide on data tier, initial data load, FRx Migration, 
 > **Step 1:** In **SQL Management Studio** to connect to server where FRx database can reside in
 >
 > **Step 2:** Right Click New Database in the Object Explorer
+> ![Epicor Tools Connection Page](/images/A-InitialDataLoad/ObjectEx.png){: .center-image }
 >
 > **Step 3:** Type “FRxReplacement” into the Database Name field press OK
->
+> ![Epicor Tools Connection Page](/images/A-InitialDataLoad/DataBasename.png){: .center-image }
 >
 
 ### Import MDB File To the New Database
@@ -67,16 +68,20 @@ description: Step by step guide on data tier, initial data load, FRx Migration, 
 > To Do
 >
 > **Step 1:** In **SQL Management Studio**, point to the new database 
+> ```SQL
+> Use FRX_Transfer
+> Go
+>```
 >
 > **Step 2:** Execute the FRx Migration Script. This will create all DB Objects
 >
 
 
-### Set Up the Database Connection in Interject Portal
+### Interject Application Setup- DB Connection
 
 > To Do
 >
-> **Step 1:** Log in to [portal.gointerject.com](https://portal.gointerject.com) and select Data Connections on left side menu
+> **Step 1:** Now log in to [portal.gointerject.com](https://portal.gointerject.com) and select Data Connections on left side menu. Change company to “Epicor Test III”.
 >
 > **Step 2:** Change Company to newly setup “Epicor Test III”  
 >
