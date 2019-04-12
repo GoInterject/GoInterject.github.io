@@ -37,7 +37,6 @@ description:
 > ```SQL
 > --Specify historical periods in which to seed Interject Data Store
 > EXEC [Custom].[EPR_InstallScript4_GroupingImport]
-> 
 > ```
 > 
 > **Step 2:** Execute the following Script for SQL Agent Jobs
@@ -78,7 +77,7 @@ description:
 > * **Name:** A unique friendly name used when connecting a Data Portal to the Data Connection
 > * **Description** (optional): description of what the connection string is connecting to
 > * **Connection String:** used by INTERJECT to connect to the specified server & database
-> - "Server=SQL02.lsusa.local\D12INTUITION;Database=Interject_Reporting@Epicor3; Integrated Security = SSPI;"
+> "Server=SQL02.lsusa.local\D12INTUITION;Database=Interject_Reporting@Epicor3; Integrated Security = SSPI;"
 >
 
 ## Redirect the DB Connection to the new DB in Interject portal
