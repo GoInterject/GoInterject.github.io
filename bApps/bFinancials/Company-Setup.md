@@ -9,7 +9,7 @@ Shortly after a signed contract with Client, please submit specific client infor
 
 Please provide the following information:
 
-<table>
+<table style="max-width: 50%; margin:0 auto;">
   <tr>
     <th>Field</th>
     <th>Description</th>
@@ -60,7 +60,7 @@ Please provide the following information:
   </tr>
   <tr>
     <td># of Employees</td>
-    <td>&lt;50, 50-500, &gt; 500</td>
+    <td>-50, 50-500, 500+</td>
   </tr>
   <tr>
     <td>Yearly Revenue</td>
