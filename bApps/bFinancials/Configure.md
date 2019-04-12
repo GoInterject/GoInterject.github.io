@@ -7,30 +7,66 @@ description: Step by step guide on setting up new and pre-packaged reports in th
 
 Interject Financials - Epicor offers a simple, step-by-step configuration tool to set up and test the monthly import schedule as well as the configuration of financial reports.
 
-### Using Initial Config Tool for Financial Reporting
+### Use Initial Config Tool to Perform the Initial Setup
 
-##### Setup Year Name
+While logged into Interject, open the configuration tool from the report library. 
+> ![reportlib config](/images/Config/ConfigReport.png){: .center-image }
+
+Navigate from the Welcome Screen through the initial steps
+> ![reportlib config](/images/Config/ConfigWelcome.png){: .center-image }
+
+##### Setup/Review Year Name
 > To-do
 >
-> **Step 1:** While logged into Interject, open the configuration tool from the report library. 
+> **Step 1:** Select "Review Year Names Link". 
+> ![reportlib config](/images/Config/YearNames.png){: .center-image }
 >
-> **Step 2:** In the configuration tool, change all year names where needed in the table.
->
-> **Step 4:** Hit Ctrl-Shift-U, or the Save button in the Interject ribbon, to save back the configuration.
+> **Step 2:** Review and approve year names.
+> **Note:** This is a one time setup and must be done before using the reporting. Once approved it cannot be changed.
+> ![reportlib config](/images/Config/ConfirmYears.png){: .center-image }
+> - Verify all years expected to be part of initial data load  have a “yes”, if not contact Interject
+> - Optional: Change the “Year Name” to be more specific to client requirements. This will impact user filters and parameters used in reporting
+> - Select “yes” from approved dropdown 
+> - Hit Ctrl-Shift-U, or the Save button in the Interject ribbon, to save and approve configuration.
 
-##### Setup Segments
+
+##### Setup/Review Segments
 > To-do
 >
-> **Step 1:** In the Segment tab of the configuration tool, you can change:
-> - Segment Names
-> - Enabled/Disabled status
-> - Natural Acct Status
+> **Step 1:** Select the "Review Segments" link
+> ![reportlib config](/images/Config/ConfigReport.png){: .center-image }
 >
-> **Step 2:** Hit Ctrl-Shift-U to save configuration, or hit Save on the Interject ribbon.
+> **Step 2:** Review and approve Segment setup.
+> **Note:** This is a one time setup and must be done before using the reporting. Once approved it cannot be changed.
+>
+> ![reportlib config](/images/Config/SegmentSetup.png){: .center-image }
+> - Verify all segments part of client epicor setup, if incorrect  contact Interject. This will be referenced in other setups describing how to Localize reports.
+> - Optional: Change the “Segment Display Name” to be more specific to client requirements. This will impact user filters and parameters used in reporting.
+> - Select “yes” from approved dropdown
+> - Hit Ctrl-Shift-U, or the Save button in the Interject ribbon, to save & approve 
 
-### Account Rollup Management
-There are a number of Account Rollup tabs to manage account aggregation in Interject Financials - Epicor. Governed Rollups are cesure, tested, and published with validated field definitions by system admins ro implementers.
+### Account Rollup - Activate Seeded DEMO Config
+Account Rollups are important part to ensuring the “Control” and “Validity” of the mappings required in Financial reporting sections. Interject for Financials - Epicor provides two Seeded Rollups as samples of a configuration that can be used in initial client demos or other functions to illustrate the recommended use. They can be leveraged as a “reporting” control while building reports and can additionally support client demos or other preliminary reporting requirements. These seeded rollups are automatically generated using the Account Type mappings in the Epicor client GL.
 
+> To Do
+>
+> **Step 1:** Select the "Setup/Review Rollups" link
+> ![reportlib config](/images/Config/RollupRev.png){: .center-image }
+>
+> **Step 2:** In the Account Rollup Manager tab, select the BS_DEMO link
+> ![reportlib config](/images/Config/RollupMg.png){: .center-image }
+>
+> **Step 3:** In the next screen, hit Ctrl-Shift-U, or the Save button in the Interject ribbon after verifying Summary Message is "Rollup Validated - No Warnings"
+> ![reportlib config](/images/Config/RollupVal.png){: .center-image }
+>
+> **Step 4:** Go back to the "Rollup Manager" tab and select the "PL_Demo" link
+>
+> **Step 5:** Hit Ctrl-Shift-U, or the Save button in the Interject ribbon after verifying Summary Message is "Rollup Validated - No Warnings"
+>  ![reportlib config](/images/Config/PLVal.png){: .center-image }
+>
+
+
+<!-->
 **PL1:** In the PL1 Rollup tab, change the account configurations as needed and hit Ctrl-Shift-U to save back the configuration. \(Note: Names used for detail code, rollup and summary section must all be unique as a group.\)
 
 **BS1:** Configure BS1 using the same method described for PL1, then save back the configuration using Ctrl-Shift-U.
@@ -58,3 +94,4 @@ Interject provides a custom template according to the Epicor Segment Assessment.
 In the Row Template Detail tab, you can configure the row template detail. Note that natural acct segments are required. Once configured, hit Ctrl-Shift-U to save. (For easy reference, select an FRx row catalog and hit Ctrl-Shift-J to pull. Be sure to save your work beforehand.)
 
 After configuring and saving your row templates, click the button “Click for report Template” and a report template will be generated. You can adjust this template further as needed, and save it back using Ctrl-Shift-U. Then follow the localization steps to publish the report in the Report Library.
+ -->
