@@ -54,10 +54,10 @@ description: Step by step guide on data tier, initial data load, FRx Migration, 
 > **Step 4:** Specify in the next window that you're copying data from a table, then hit "Next" 
 >
 > **Step 5:** In the "Select Source Tables and Views" screen, confirm that all tables are selected and hit "Next"
-> ![DB Destination](/images/A-InitialDataLoad/Selectall.png){: .center-image }
+> ![DB Destination](/images/A-InitialDataLoad/SelectAll.png){: .center-image }
 >
 > **Step 6:** In the "Save and Run Package" screen, select "Run immediately"  
-> ![DB Destination](/images/A-InitialDataLoad/RunImediately.png){: .center-image }
+> ![DB Destination](/images/A-InitialDataLoad/RunImmediately.png){: .center-image }
 >
 > **Step 7:** Review that the import occured and hit "Finish"
 >
