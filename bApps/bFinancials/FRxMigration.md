@@ -19,7 +19,7 @@ description: Step by step guide on data tier, initial data load, FRx Migration, 
             </tr>
 </table>
 
-![Epicor Tools Connection Page](/images/A-InitialDataLoad/FRxAccess.png){: .center-image }
+![Epicor Tools Connection Page](/images/A-InitialDataLoad/FRXAccess.png){: .center-image }
 
 ### Open SQL Server and Create a New Database
 
@@ -38,11 +38,11 @@ description: Step by step guide on data tier, initial data load, FRx Migration, 
 > To Do
 >
 > **Step 1:** In **SQL Management Studio**, select and right-click your database, then choose "Import Data"
-> ![Epicor Tools Connection Page](/images/A-InitialDataLoad/FRxAccess.png){: .center-image }
+> ![Epicor Tools Connection Page](/images/A-InitialDataLoad/SelectDB.png){: .center-image }
 > **Note:** If Access database is protected you will need to remove the database password before going through with the import
 >
 > **Step 2:** Select Microsoft Access (Microsoft Jet Database Engine) in the Data Source field and specify the location of the access file in the File name, then hit "Next"
-> ![Epicor Tools Connection Page](/images/A-InitialDataLoad/SelectDB.png){: .center-image }
+> ![Epicor Tools Connection Page](/images/A-InitialDataLoad/DBSource.png){: .center-image }
 >
 > **Step 3:** Destination should be the new database created. Check that the following information is correct, then hit "Next" 
  - Destination: “SQL Server Native Client” corresponding to the version of sql server 
@@ -54,10 +54,10 @@ description: Step by step guide on data tier, initial data load, FRx Migration, 
 > **Step 4:** Specify in the next window that you're copying data from a table, then hit "Next" 
 >
 > **Step 5:** In the "Select Source Tables and Views" screen, confirm that all tables are selected and hit "Next"
-> ![DB Destination](/images/A-InitialDataLoad/Selectall.png){: .center-image }
+> ![DB Destination](/images/A-InitialDataLoad/SelectAll.png){: .center-image }
 >
 > **Step 6:** In the "Save and Run Package" screen, select "Run immediately"  
-> ![DB Destination](/images/A-InitialDataLoad/RunImediately.png){: .center-image }
+> ![DB Destination](/images/A-InitialDataLoad/RunImmediately.png){: .center-image }
 >
 > **Step 7:** Review that the import occured and hit "Finish"
 >
