@@ -13,7 +13,7 @@ horizontalnav:
   - title: Configure
     path: /bApps/bFinancials/Configure.html
     node: configure
-  - title: Client Report Setup
+  - title: Test
     path: /bApps/bFinancials/Localize.html
     node: test
   - title: Train
