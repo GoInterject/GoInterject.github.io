@@ -30,7 +30,6 @@ A subscription to Interject Financial - Epicor will provide a "Subscriptions" fo
 >
 >  **Step 6:** With the Excel file still open, open the Interject ribbon and open the Report Library.
 Select the company folder, right click, and select “Add Subfolder”. Name the subfolder accordingly. For example, “Trial Balance Reports” and press Enter to Save New Folder.
-
 >
 >  
 >
@@ -45,15 +44,3 @@ Select the company folder, right click, and select “Add Subfolder”. Name the
 >
 > **Step 9:** Review the form and click Save. Then click the login button in the Interject Ribbon Menu. Congratulations you just created a localized report. 
 
-
-### Copying Data Drill Codes
-
-> To Do
->
->
->
->
->
-> ![Report Library](/images/localize/CopyDrillCodes.png){: .center-image }
->
-> 
