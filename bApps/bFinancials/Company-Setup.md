@@ -85,7 +85,6 @@ Please provide the following information:
 (run "SELECT @@VERSION" in a query window to check version)
 >
 > **Step 2:** Prepare for using Windows Authentication by creating the active directory user group “Interject Users” on Default SQL Server Domain. Please let Interject account manager know if Client cannot enable Windows Authentication with the recommended settings as illustrated below.
-
 >
 > ![Active User](/images/A-SQL-Installation/ActiveUser.png){: .center-image }
 >
