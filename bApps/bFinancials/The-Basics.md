@@ -20,6 +20,15 @@ description: A quick guide to get users started navigating Interject for Financi
 > <span class="hotkey">Ctrl+Shift+L:</span> Opens the report library, where you can access your organization's published reports.
 >
 
+### Important Formulas
+
+> To Know
+>
+> **=JCombineSmart\(\):** Concatenates, orders, and removes duplicates of selected range to enter validation definitions or detail row definitions when building financials reports.
+>
+> **=EDate\(\):** Use to set the period of interest as an absolute reference to the fiscal period filter when building financial reports. Pass ",-\[chosen cell\]" when building subsequent columns from the period of interest.
+>
+>
 
 ### Important Actions on the Interject Ribbon Menu 
 
