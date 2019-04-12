@@ -26,17 +26,17 @@ description:
 > ```
 >
 > - 1c
-> ```SQL
-> --Specify historical periods in which to seed Interject Data Store
-> EXEC [Custom].[EPR_InstallScript3_ReportingImport]
-> 	  @ReportingImport_YearBegin     = 'INSERT>YYYY'
->	 ,@ReportingImport_YearEnd       = 'INSERT>YYYY'
+> ```SQL 
+> -- Import segment and defualt groupings
+> EXEC [Custom].[ERP_InstallScript3_GroupingImport]
 > ```
 >
 > - 1d
 > ```SQL
 > --Specify historical periods in which to seed Interject Data Store
-> EXEC [Custom].[EPR_InstallScript4_GroupingImport]
+> EXEC [Custom].[ERP_InstallScript4_ReportingImport]
+> 	  @ReportingImport_YearBegin     = 'INSERT>YYYY'
+>	 ,@ReportingImport_YearEnd       = 'INSERT>YYYY'
 > ```
 > 
 > **Step 2:** Execute the following Script for SQL Agent Jobs
