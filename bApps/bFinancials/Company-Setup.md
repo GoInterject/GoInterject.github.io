@@ -5,7 +5,9 @@ keywords: [Report, Epicor, Accounts]
 description: Step by step guide on data tier, initial data load, FRx Migration, and other key processes of installing of Interject for Financials Epicor.
 ---
 
-As a prerequisite to installing Interject Financials - Epicor, you will need to submit an invite request form on Interject's [Portal site](https://portal.gointerject.com). You will be asked to fill out the following information:
+Shortly after a signed contract with Client, please submit specific client information to your assigned account manager at Interject. You will receive communication on each individual project  basis who your account manager is.
+
+Please provide the following information:
 
 <table>
   <tr>
@@ -74,15 +76,16 @@ As a prerequisite to installing Interject Financials - Epicor, you will need to 
   </tr>
 </table>
 
-After filling out and submitting the form, you will need to complete the following steps before the actual installation:
+
 
 > To Do
 >
 > **Step 1:** Verify SQL Server in Client is Compatible Version
-> SQL Server 2008 or greater is required.  
+> SQL Server 2008 or greater is required. It is recommended that a client provides at minimum a test and production environment in which they will seek to deploy Interject Financials - Epicor.  
 (run "SELECT @@VERSION" in a query window to check version)
 >
-> **Step 2:** Prepare for using Windows Authentication by creating the active directory user group “Interject Users” on Default SQL Server Domain
+> **Step 2:** Prepare for using Windows Authentication by creating the active directory user group “Interject Users” on Default SQL Server Domain. Please let Interject account manager know if Client cannot enable Windows Authentication with the recommended settings as illustrated below.
+
 >
 > ![Active User](/images/A-SQL-Installation/ActiveUser.png){: .center-image }
 >
@@ -90,4 +93,4 @@ After filling out and submitting the form, you will need to complete the followi
 >
 >
 
-Within a week you will receive verification from Interject that your company set up and subscription is complete.
+Within a week you will receive verification from Interject that your company setup and subscription is complete.
