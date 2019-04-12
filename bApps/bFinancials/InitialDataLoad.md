@@ -10,28 +10,41 @@ description:
 > To Do
 >
 > **Step 1:** Execute the following Script DB to initialize Epicor Enterprise Data
->
+> 
+> - 1a
 > ```SQL
 > --Import configuration setup from Epicor and initial setup of Interject
 > EXEC [Custom].[EPR_InstallScript1_DatabaseConfig]
-> 	  @MasterEpicorDatabase          = '[MasterDatbase]'
-> 	 ,@DefaultDatabaseNameSource     = '[DefaultDatabase]'
+> 	  @MasterEpicorDatabase          = '[INSERT>MasterDatbase]'
+> 	 ,@DefaultDatabaseNameSource     = '[INSERT>DefaultDatabase]'
 > ```
+>
+> - 1b
 > ```SQL
 > --Import data 
 > EXEC [Custom].[EPR_InstallScript2_EpicorImport]
-> 
+> ```
+>
+> - 1c
+> ```SQL
+> --Specify historical periods in which to seed Interject Data Store
 > EXEC [Custom].[EPR_InstallScript3_ReportingImport]
-> 	  @ReportingImport_YearBegin     = '2000'
->	 ,@ReportingImport_YearEnd       = '2016'
-> 
+> 	  @ReportingImport_YearBegin     = 'INSERT>YYYY'
+>	 ,@ReportingImport_YearEnd       = 'INSERT>YYYY'
+> ```
+>
+> - 1d
+> ```SQL
+> --Specify historical periods in which to seed Interject Data Store
 > EXEC [Custom].[EPR_InstallScript4_GroupingImport]
 > 
 > ```
 > 
 > **Step 2:** Execute the following Script for SQL Agent Jobs
 > 
+> - 2a
 > ```SQL
+> --Import configuration setup from Epicor and initial setup of Interject
 > EXEC [Custom].[EPR_InstallScript5_SetupJobs]
 > ```
 > 
@@ -39,32 +52,32 @@ description:
 > * \[Interject_Reporting_CheckSchedule_ImportActual\] - Syncs Actual data between Epicor tables to Interject table
 > * \[Interject_Reporting_CheckSchedule_ImportBudget\] - Syncs Budget data between Epicor tables to Interject table
 > * \[Interject_Reporting_AddJobsFromScheduler\] - Process data and distribute it to interject tables 
-> * \[Interject_Reporting_ImporEpicor_DeletesRecords\] - Validates data and remove records nightly if data was removed form epicor tables 
+> * \[Interject_Reporting_ImporEpicor_DeletesRecords\] - Validates data and remove records nightly if data was removed from Epicor tables 
 
-### Steps Required for Interject Application Setup
+### Steps Required for Interject Application Setup - Data Connection
 
 > To Do
 >
 > **Step 1:** Now log into [portal.gointerject.com](https://portal.gointerject.com) and select Data Connections on left side menu and change company to "Epicor Test III"
 > ![New connection Button](/images/A-InitialDataLoad/Login1.png){: .center-image }
-> - Change Client \(Company\) to new setup “Epicor Test” 
+> 
+> **Step 2:** Change Client \(Company\) to new setup “Epicor Test” 
 > ![New connection Button](/images/A-InitialDataLoad/changeco.png){: .center-image }
 >
-> **Step 2:** Click "My Data in the left-hand menu and select "New Connection" button on the top right of the page.
+> **Step 3:** Click “My Data>Data Connections in the left-hand menu 
 > ![New connection Button](/images/A-InitialDataLoad/NewConnection0.png){: .center-image }
+>
+> **Step 4:** Select “New Connection” button on the top right of Page
 > ![New connection Button](/images/A-SQL-Installation/NewConnections.png){: .center-image }
 >
 > **Step 5:** Select "Database" in the **Connection Type** field.
 >
-> **Step 6:** Fill in the Connection Details page contains the following inputs for new connections:
+> **Step 6:** Fill in the Connection Details pag, which contains the following inputs for new connections:
+> ![Connection Details Page](/images/Database/04.png){: .center-image }
 > 
 > * **Name:** A unique friendly name used when connecting a Data Portal to the Data Connection
 > * **Description** (optional): description of what the connection string is connecting to
 > * **Connection String:** used by INTERJECT to connect to the specified server & database
->
-> ![Connection Details Page](/images/Database/04.png){: .center-image }
->
-> Use the following connection string:
 > - "Server=SQL02.lsusa.local\D12INTUITION;Database=Interject_Reporting@Epicor3; Integrated Security = SSPI;"
 >
 
@@ -77,8 +90,7 @@ description:
 >
 > **Step 2:** Select "Interject Financials - Epicor" 
 >
-> **Step 3:** Under the Connection Redirect section, select the connection you wish to overide in the left side, then the new data connection on the right
-> 
-> **Step 4:** Save your changes
+> **Step 3:** Under the Connection Redirect section -scroll to bottom of screen - select the connection you wish to overide in the left side, then the new data connection on the right
 > ![Epicor Tools Connection Page](/images/A-InitialDataLoad/ConnectionRedirect.png){: .center-image }
 >
+> **Step 4:** Save your changes
