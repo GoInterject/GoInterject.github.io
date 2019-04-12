@@ -116,6 +116,6 @@ After hitting "Click to Add", a new sheet will open with the FRx row template re
 >
 > **Step 3:** Next, open the Report Library, highlight your company's folder, right click inside the Report Links" area, and click "Save Current Workbook" > "Create New Link (Save Required)
 >
->  **Step 4:** Fill in the Link Name and set the Status to Live. Your report it now published.
+>  **Step 4:** Fill in the Link Name and set the Status to Live. Your report is now published.
 >
 
