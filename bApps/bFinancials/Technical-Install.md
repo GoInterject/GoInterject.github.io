@@ -72,12 +72,16 @@ After you get access to Interject, there are three parts to installing Interject
 > 
 > **Step 4:** Execute the Initial.Interject_Reporting.sql script
 >
-> **Step 4:** Create security objects and grant read-only access to Epicor tables by passing the following parameters using the following script as an example:
+> **Step 5:** Create security objects and grant read-only access to Epicor tables by passing the following parameters using the following script as an example:
 >
-> ![Mgt Studio CreateObjects](/images/A-SQL-Installation/CreateObjects.png){: .center-image }
+> ```SQL
+> EXEC [Custom].[Interject_SetupScript1_Security]
+>	@MasterEpicorDatabase = 'samplemasterdb'
+>	@CertificatePassword =  'myPassword1234'
+>```
 >
-> - 4a: MasterEpicorDatabase \(specify master Epicor DB\)
-> - 4b: CertificatePassword \(create a certificate with a custom password\)
+> - 5a: MasterEpicorDatabase \(specify master Epicor DB\)
+> - 5b: CertificatePassword \(create a certificate with a custom password\)
 >
 
 **Technical Note:** This will create  \[LocalDomain\]/InterjectUser group and provide it with a new db_Interject role. This role will have execute rights to 3 schemas \[Client\], \[Custom\], and \[Report\]. This script also creates a certificate and signs store procedures that have dynamic code. The certificate provides read only access to the sign store procedures on the already-used tables of your Epicor databases. If at any point these store procedures are changed, the certificate will be invalidated and will need to be reapplied.
