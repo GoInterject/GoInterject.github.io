@@ -46,7 +46,7 @@ A subscription to Interject Financial - Epicor will provide a "Subscriptions" fo
 >
 > **Step 10:** Now fill in the "Drill Code" and "Target Tab Name" using the information your wrote down in step # 2. Click "Save
 > 
-> ![Open Library](/images/Localize/CopyDrillCodes.png.png){: .center-image }
+> ![Open Library](/images/Localize/CopyDrillCodes.png){: .center-image }
 >
 > **Step 11:** From the Interject Ribbon, click "Login" and enter your credentials if they are not saved. **It is important that you "reset" your login after each report localization**
 >
