@@ -48,7 +48,7 @@ description:
 > **Step 1:** Now log into [portal.gointerject.com](https://portal.gointerject.com) and select Data Connections on left side menu and change company to "Epicor Test III"
 > ![New connection Button](/images/A-InitialDataLoad/Login1.png){: .center-image }
 > - Change Client \(Company\) to new setup “Epicor Test” 
-> ![New connection Button](/images/A-InitialDataLoad/Changeco.png){: .center-image }
+> ![New connection Button](/images/A-InitialDataLoad/changeco.png){: .center-image }
 >
 > **Step 2:** Click "My Data in the left-hand menu and select "New Connection" button on the top right of the page.
 > ![New connection Button](/images/A-InitialDataLoad/NewConnection0.png){: .center-image }
