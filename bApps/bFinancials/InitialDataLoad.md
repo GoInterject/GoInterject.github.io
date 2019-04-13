@@ -44,7 +44,7 @@ description:
 > 
 > - 2a
 > ```SQL
-> --Import configuration setup from Epicor and initial setup of Interject
+> --Setup SQL Agent Jobs to seed "nightly" sync of Interject data store
 > EXEC [Custom].[ERP_InstallScript5_SetupJobs]
 > ```
 > 
