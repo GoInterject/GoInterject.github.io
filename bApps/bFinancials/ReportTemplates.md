@@ -106,6 +106,27 @@ After hitting "Click to Add", a new sheet will open with the FRx row template re
 > **Step 5:** Now hit Ctrl+Shift+J or the Pull Data button on the Interject Ribbon
 >
 
+### Adding Columns
+
+> To Do
+>
+> **Step 1:** Expand the "Column Definition" row by clicking on the "+" sign at the top left of the report
+> ![Account Rollup](/images/Train/DropRow.png){: .center-image }
+> 
+> 
+> 
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+
+
 ### Publishing the Report Template
 
 > To Do
