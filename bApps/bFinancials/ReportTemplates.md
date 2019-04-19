@@ -106,24 +106,28 @@ After hitting "Click to Add", a new sheet will open with the FRx row template re
 > **Step 5:** Now hit Ctrl+Shift+J or the Pull Data button on the Interject Ribbon
 >
 
-### Adding Columns
+### Adding Company Columns
 
 > To Do
 >
 > **Step 1:** Expand the "Column Definition" row by clicking on the "+" sign at the top left of the report
 > ![Account Rollup](/images/Train/DropRow.png){: .center-image }
 > 
+> **Step 2:** Right click a column and choose "Insert Columns". 
 > 
-> 
+> **Step 3:** In row 2 of the column you added, type in "Company", and in the row to its right, type "CompanyName." This will bring in the company code and the friendly company name next time you pull.
+> ![Account Rollup](/images/Train/TypeName.png){: .center-image }
 >
+> **Step 4:** Add headings in the report area above where the data will come in.
 >
+> **Step 5:** Choose your parameters.
 >
+> ![Account Rollup](/images/Train/HeaderNames.png){: .center-image }
 >
+> **Step 6:** Pull the report, then expand any of the collapsed rows to see the company code and name in the detail rows.
+> ![Account Rollup](/images/Train/ShowDetail.png){: .center-image }
 >
->
->
->
->
+> ![Account Rollup](/images/Train/DetailShot.png){: .center-image }
 >
 
 
