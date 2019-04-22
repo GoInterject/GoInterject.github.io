@@ -1,0 +1,14 @@
+# This is the list of different site versions (primarily used for apps)
+# It is used to create the list of drop down links, the logic is located in /js/siteversions.js
+# If you want to add an app use this template
+# - archive:
+#    name:
+#    path:
+- archive:
+  name: Main
+  current: true
+  path: 
+
+- archive:
+  name: Financials
+  path: /bApps/bFinancials/Epicor-Financials

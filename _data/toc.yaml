@@ -14,9 +14,9 @@ horizontalnav:
 - title: References
   path: /wIndex/Excel-Function-Index.html
   node: index
-# - title: Apps
-#  path: /wApps/Reference.html
-#  node: apps
+- title: Apps
+  path: /wApps/Reference.html
+  node: apps
 - title: Portal Site 
   path: /wPortal/The-INTERJECT-Website-Portal.html
   node: portal
