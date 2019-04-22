@@ -1,8 +1,13 @@
+<!-- Logic to create drop down list of different site versions for each app type. Sourced from siteversion.yaml should probably be titled site-version-list -->
 <div class="btn-group" style="visibility: hidden">
   <button type="button" class="btn btn-default dropdown-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    {% for item in site.data.docsarchive.archives %}{% if item.current == true %}Docker {{ item.name }} (current) {% endif %} {% endfor %}<span class="caret"></span>
+    {% for item in site.data.siteversion %}
+      {% if item.current == true %}Interject {{ item.name }} (home)
+      {% endif %}
+    {% endfor %}<span class="caret"></span>
   </button>
   <ul class="dropdown-menu">
-    {% for item in site.data.docsarchive.archives %}{% if item.current != true %}<li><a href="/{{ item.name }}/">Docker {{ item.name }}</a></li>{% endif %}{% endfor %}
+    {% for item in site.data.siteversion %}<li><a href="https://docs.gointerject.com{{ item.path }}">Interject {{ item.name }}</a></li>{% endfor %}
   </ul>
 </div>
+

@@ -4,6 +4,7 @@ var sidebarBottom = sidebarObj.getBoundingClientRect().bottom;
 var footerTop = document.getElementsByClassName("footer")[0].getBoundingClientRect().top;
 var headerOffset = document.getElementsByClassName("container-fluid")[0].getBoundingClientRect().bottom;
 
+
 // ensure that the left nav visibly displays the current topic
 var current = document.getElementsByClassName("active currentPage");
 var body = document.getElementsByClassName("col-content content");
@@ -486,25 +487,27 @@ window.onload = function() {
     var group = $(this).attr('data-group');
     $('.nav-tabs > li > a[data-group="'+ group +'"]').tab('show');
   })
+  $('.ctrl-right .btn-group').css("visibility","visible");
+};
 
   // isArchive is set by logic in archive.js
-  if ( isArchive == false ) {
+  // if ( isArchive == true ) {
     //console.log("Showing content that should only be in the current version.");
     // Hide elements that are not appropriate for archives
     // PollDaddy
-    $('#ratings-div').css("visibility","visible");
+    // $('#ratings-div').css("visibility","visible");
     //console.log("Ratings widget shown.");
     // Archive drop-down
-    $('.ctrl-right .btn-group').css("visibility","visible");
+
     //console.log("Archive widget shown.");
     // Swarch
-    $('.search-form').css("visibility","visible");
+    // $('.search-form').css("visibility","visible");
     //console.log("Search widget shown.");
     // Page edit link
-    $('.feedback-links li').first().css("visibility","visible");
-    //console.log("Page edit link shown.");
-  } else {
-    //console.log("Keeping non-applicable elements hidden.");
-  }
-};
+//     // $('.feedback-links li').first().css("visibility","visible");
+//     //console.log("Page edit link shown.");
+//   } else {
+//     //console.log("Keeping non-applicable elements hidden.");
+//   }
+// };
 
