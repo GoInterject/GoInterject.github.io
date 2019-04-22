@@ -36,8 +36,6 @@ On this page, you will create a simple data pull using the Customer Aging Report
 
 ![](/images/L-Dev-CustAging/05.jpg)
 <br>
-  
-
 
 **Step 6:** Click the Save button to create the new data connection. 
 
@@ -52,8 +50,6 @@ The Database Data Connection is now ready to be used in a Data Portal. You shoul
 
 ![](/images/L-Dev-CustAging/07.jpg)
 <br>
-  
-
 
 **Step** **2:** Select New Data Portal 
 
@@ -66,17 +62,13 @@ The Database Data Connection is now ready to be used in a Data Portal. You shoul
 
 ![](/images/L-Dev-CustAging/09.png)
 <br>
-  
 
-
-**Step 4** : Click **Create Data Portal** to save the new data portal. Additional options display after selecting the Create Data Portal button for adding parameters. 
+**Step 4:** Click **Create Data Portal** to save the new data portal. Additional options display after selecting the Create Data Portal button for adding parameters. 
 
 ![](/images/L-Dev-CustAging/10.png)
 <br>
 
 **Note:** If this is your first time setting up a data portal, review **Data Portals** , which describes the data portal parameters in more detail, including the difference between formula and system parameters. Return to the next step to continue. 
-
- 
 
 ###  Setting Up Formula Parameters 
 
