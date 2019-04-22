@@ -7,8 +7,7 @@ description: The jDropdown formula is used for filtering on multiple parameters 
 
 ### Overview
 
-
-
+The jDropdown formula is a helper function that developers use to simplify the use of parameters in a data pull or save. It can reduce the rows of data in a report, speeding the report process and conserving server resources and getting only the data you need. 
 
 ### Creating the Stored Procedure
 
