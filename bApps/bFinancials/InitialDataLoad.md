@@ -20,6 +20,25 @@ description:
 > 	 ,@DefaultDatabaseNameSource     = '[INSERT>DefaultDatabase]'
 > ```
 >
+> **Note:** You may choose to limit the import to a specific database or databases. Follow the substeps below to complete a selective import.
+>
+>  - Run the script below to see a list of all databases Interject will import
+>  ```SQL
+> --List all imported DBs
+> SELECT * FROM [ImportERP].[SourceDatabaseList]
+>  ```
+>
+>  - You must mark as inactive the DBs you wish to exclude using the following script
+> ```SQL
+>  --Deactivate selected DB
+> UPDATE [ImportERP].[SourceDatabaseList]
+> SET [Inactive] = 1 
+> WHERE [DatabaseName] = '[DeactivateDatabase2]'
+>```
+> If a database is made inactive after the initial load, data that was initially imported will still be in Interject and can be used to report from. However new data will stop flowing into interject.
+>
+> Continue following these steps to complete the upload
+>
 > - 1b
 > ```SQL
 > --Import data 
