@@ -116,6 +116,8 @@ train:
     path: /bApps/bFinancials/TransactionReports.html
   - title: Building Financial Report Templates
     path: /bApps/bFinancials/ReportTemplates.html
+  - title: Distributions
+    path: /bApps/bFinancials/Distributions.html
  #   section:
    #   - title: Working with Rows and Columns
   #      path:
