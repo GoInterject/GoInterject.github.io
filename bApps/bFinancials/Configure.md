@@ -9,10 +9,10 @@ Interject Financials - Epicor offers a simple, step-by-step configuration tool t
 
 ### Use Initial Config Tool to Perform the Initial Setup
 
-While logged into Interject, open the configuration tool from the report library. 
+#### While logged into Interject, open the configuration tool from the report library. 
 > ![reportlib config](/images/Config/ConfigReport.png){: .center-image }
 
-Navigate from the Welcome Screen through the initial steps
+#### Navigate from the Welcome Screen through the initial steps
 > ![reportlib config](/images/Config/ConfigWelcome.png){: .center-image }
 
 ##### Setup/Review Year Name
