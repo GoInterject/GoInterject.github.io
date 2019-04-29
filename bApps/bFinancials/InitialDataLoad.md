@@ -51,6 +51,7 @@ description:
 > EXEC [Custom].[ERP_InstallScript3_ReportingImport]
 > 	  @ReportingImport_YearBegin     = 'INSERT>YYYY'
 >	 ,@ReportingImport_YearEnd       = 'INSERT>YYYY'
+>    ,@ImportBudget = 'yes'
 > ```
 >
 > - 1d
