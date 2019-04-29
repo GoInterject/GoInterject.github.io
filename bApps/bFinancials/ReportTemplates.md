@@ -72,19 +72,25 @@ After hitting "Click to Add", a new sheet will open with the FRx row template re
 >
 > **Step 3:** In the new sheet that opens, give the row template a name, a description, and choose the "Rollup Definition" that you created in the previous step.
 >
-> **Step 4:** In the FRx Row Template Reference section, choose the appropriate FRx Row Template and click "Pull FRx"
-> ![Account Rollup](/images/Train/rowtemp2b.png){: .center-image }
-> ![Account Rollup](/images/Train/rowtemp2a.png){: .center-image }
+> **Step 4:** Choose whether or not to enable distribution, pick a rollup segment and code, then choose the fiscal period to seed into the report template. 
+> ![Account Rollup](/images/Train/rowtemp4.png){: .center-image }
 >
-> **Step 5:** Now, usinge the rollup code prefix, enter in the section on the right the detail codes corresponding to each of the subtotal sections on the left. Click on "Row Type" to toggle between "Detail", "Subtotal", or choose both
+> **Step 5:** From the Report library, open the FRx Catalog Report and go to the FRx Row Template tab.
 >
-> **Note:** When there is a calculation, as noted by a "+" rather than "TO", you will need to build those claculation using the following syntax: ".." for ranges, "," for discreet additions, and ",-" for subtractions
+> **Step 6:** Choose the FRx Row Format you need from the dropdown.
 >
-> **Step 6:** Add rows where necessary, and choose "detail", "subtotal", or "blank" to skip a row
+> **Step 7:** Click the "Pull FRx" button.
+> ![Account Rollup](/images/Train/FRxCatalogRowTemp.png){: .center-image }
 >
-> **Step 7:** Enter your subtotal calculations in the "Subtotal Calc" column based on the row numbers you define for each entry
+> **Step 8:** Now, using the rollup code prefix, enter into the Row Template configuration the detail codes corresponding to each of the subtotal sections in the FRx Row Template Report. You can click on "Row Type" to toggle between "Detail," "Subtotal," or both.
 >
-> **Step 8:** Hit Ctrl+Shift+U or the Save button to save your work, then hit "Click to Create Report"
+> **Note:** When there is a calculation, as noted by a "+" rather than "TO," you will need to build those claculation using the following syntax: ".." for ranges, "," for discreet additions, and ",-" for subtractions.
+>
+> **Step 9:** Add rows where necessary, and choose "detail," "subtotal," or "blank" to skip a row.
+>
+> **Step 10:** Enter your subtotal calculations in the "Subtotal Calc" column based on the row numbers you define for each entry.
+>
+> **Step 11:** Hit Ctrl+Shift+U or the Save button to save your work, then hit "Click to Create Report."
 >
 > ![Account Rollup](/images/Train/rowtemp2c.png){: .center-image }
 >
