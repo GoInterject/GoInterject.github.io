@@ -7,7 +7,7 @@ description: Step by step guide on using Interject Financials - Epicor financial
 
 Aside from your seeded Transactional Reports, Interject Financials - Epicor allows you to build flexible financial statements from scratch using existing FRx row templates as a guide. **Note that you must complete the initial review and confirmation steps in the Configuration Manager before you can begin creating Rollups and Row Templates for financial reports**. Those steps are described in detail on the [Configure](docs.gointerject.com/bApps/bFinancials/Configure.html) page.
 
-The following steps will walk through a single Balance Sheet creation, but the process will be the same for other sheets, such as a P and L.
+The following steps will walk through a single Balance Sheet creation, but the process will be the same for other sheets, such as P & Ls.
 
 > To Do
 >
