@@ -13,7 +13,7 @@ The FRx Catalog includes everything you'll need to replace you FRx reporting pro
         <th><h5>Description</h5></th>
     </tr>
         <tr>
-            <td>
+            <td width="30%">
                 <span style="font-weight:bold">FRx Catalog</span>  
             </td>
             <td>
@@ -21,7 +21,7 @@ The FRx Catalog includes everything you'll need to replace you FRx reporting pro
             </td>
         </tr>
         <tr>
-            <td>
+            <td width="30%">
                 <span style="font-weight:bold">FRx Row Format</span>
             </td>
             <td>
@@ -29,7 +29,7 @@ The FRx Catalog includes everything you'll need to replace you FRx reporting pro
             </td>
         </tr>
         <tr>
-            <td>
+            <td width="30%">
                 <span style="font-weight:bold">FRx Column Layout</span>
             </td>
             <td>
@@ -37,7 +37,7 @@ The FRx Catalog includes everything you'll need to replace you FRx reporting pro
             </td>
         </tr>
         <tr>
-            <td>
+            <td width="30%">
                 <span style="font-weight:bold">FRx Reporting Tree</span>
             </td>
             <td>
