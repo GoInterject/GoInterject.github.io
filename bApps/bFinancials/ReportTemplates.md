@@ -104,7 +104,7 @@ After hitting "Click to Add", a new sheet will open with the FRx row template re
 >
 > **Step 2:** Next, change the Actual columns from PTD to YTD
 >
-> **Step 3:** In the right Actual column, click into the date and enter **=EDate\(**, then click the "Fiscal Period" you chose previously, and close the argument with ",0". This will make that column an absolute reference to your period of interest
+> **Step 3:** In the right Actual column, click into the date and enter **=EDate\(** then click the "Fiscal Period" you chose previously, and close the argument with ",0". This will make that column an absolute reference to your period of interest
 >
 > **Step 4:** In the date cell of left column, enter **=EDate\(\133,-1\). This will reference the period of interest and subtract one month. You can add further columns to the right, using this notation, to build out your report completely.
 > ![Account Rollup](/images/Train/ReportTemp.png){: .center-image }
