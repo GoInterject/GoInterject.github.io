@@ -73,7 +73,7 @@ After hitting "Click to Add", a new sheet will open with the FRx row template re
 > **Step 3:** In the new sheet that opens, give the row template a name, a description, and choose the "Rollup Definition" that you created in the previous step.
 >
 > **Step 4:** Choose whether or not to enable distribution, pick a rollup segment and code, then choose the fiscal period to seed into the report template. 
-> ![Account Rollup](/images/Train/rowtemp4.png){: .center-image }
+> ![Account Rollup](/images/Train/RowTemp4.png){: .center-image }
 >
 > **Step 5:** From the Report library, open the FRx Catalog Report and go to the FRx Row Template tab.
 >
