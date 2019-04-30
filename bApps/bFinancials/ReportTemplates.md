@@ -43,8 +43,8 @@ After hitting "Click to Add", a new sheet will open with the FRx row template re
 >
 >  - **Step 5b:** Now select the the cell containing all the "Validation Definitions," copy the cell, and paste it back into the same cell as **Values** using the "Special Paste" option in Excel
 >
-> ![Account Rollup](/images/Train/AcctRollup1.png){: .center-image }
-> 
+> ![Account Rollup](/images/Train/AcctRollupNew.png){: .center-image }
+> ![Account Rollup](/images/Train/AcctRollupNew2.png){: .center-image }
 >
 
 ### Building Your Rollups
