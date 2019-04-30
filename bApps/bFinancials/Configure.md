@@ -7,6 +7,14 @@ description: Step by step guide on setting up new and pre-packaged reports in th
 
 Interject Financials - Epicor offers a simple, step-by-step configuration tool to set up and test the monthly import schedule as well as the configuration of financial reports.
 
+#### Schedule Manager
+Set up and manage active Scheduler jobs
+> ![reportlib config](/images/Config/Scheduler.png){: .center-image }
+
+#### Data Upload Tool
+Use to upload budget data if required
+> ![reportlib config](/images/Config/UploadTool.png){: .center-image }
+
 ### Use Initial Config Tool to Perform the Initial Setup
 
 #### While logged into Interject, open the configuration tool from the report library. 
