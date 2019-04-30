@@ -75,8 +75,8 @@ install:
 configure:
   - title: Configuring Interject for Financials
     path: /bApps/bFinancials/Configure.html
-  #- title: Localizing Reports
-    #path: /bApps/bFinancials/Localize.html
+  - title: FRx Catalog
+    path: /bApps/bFinancials/FRxCatalog.html
    # section:
   #    - title: Setup Year Names
    #     path:
