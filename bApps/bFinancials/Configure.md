@@ -34,7 +34,7 @@ Interject Financials - Epicor offers a simple, step-by-step configuration tool t
 > To-do
 >
 > **Step 1:** Select the "Review Segments" link
-> ![reportlib config](/images/Config/ConfigReport.png){: .center-image }
+> ![reportlib config](/images/Config/YearNames.png){: .center-image }
 >
 > **Step 2:** Review and approve Segment setup.
 > **Note:** This is a one time setup and must be done before using the reporting. Once approved it cannot be changed.
