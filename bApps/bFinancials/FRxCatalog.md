@@ -9,8 +9,8 @@ The FRx Catalog includes everything you'll need to replace you FRx reporting pro
 
 <table>
     <tr>
-        <th><h3>Report Tab</h3></th>
-        <th><h3>Description</h3></th>
+        <th><h5>Report Tab</h5></th>
+        <th><h5>Description</h5></th>
     </tr>
         <tr>
             <td>
