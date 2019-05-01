@@ -118,6 +118,8 @@ train:
     path: /bApps/bFinancials/ReportTemplates.html
   - title: Distributions
     path: /bApps/bFinancials/Distributions.html
+  - title: Budget Reports
+    path: /bApps/bFinancials/BudgetReports.html
  #   section:
    #   - title: Working with Rows and Columns
   #      path:
