@@ -77,7 +77,7 @@ After you get access to Interject, there are three parts to installing Interject
 > ```SQL
 > EXEC [Custom].[Interject_SetupScript1_Security]
 >	@MasterEpicorDatabase = 'samplemasterdb'
->	@CertificatePassword =  'myPassword1234'
+>	,@CertificatePassword =  'myPassword1234'
 >```
 >
 > - 5a: MasterEpicorDatabase \(specify master Epicor DB\)

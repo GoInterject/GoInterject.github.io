@@ -16,8 +16,8 @@ description:
 > ```SQL
 > --Import configuration setup from Epicor and initial setup of Interject
 > EXEC [Custom].[ERP_InstallScript1_DatabaseConfig]
-> 	  @MasterEpicorDatabase          = '[INSERT>MasterDatbase]'
-> 	 ,@DefaultDatabaseNameSource     = '[INSERT>DefaultDatabase]'
+> 	  @MasterEpicorDatabase          = '[DemoControl]'
+> 	 ,@DefaultDatabaseNameSource     = '[DemoDist]'
 > ```
 >
 > **Note:** You may choose to limit the import to a specific database or databases. Follow the substeps below to complete a selective import.
@@ -47,18 +47,16 @@ description:
 >
 > - 1c
 > ```SQL
+> EXEC [Custom].[ERP_InstallScript4_GroupingImport]
+> ```
+>
+> - 1d
+>```SQL
 > --Specify historical periods in which to seed Interject Data Store
 > EXEC [Custom].[ERP_InstallScript3_ReportingImport]
 > 	  @ReportingImport_YearBegin     = 'INSERT>YYYY'
 >	 ,@ReportingImport_YearEnd       = 'INSERT>YYYY'
 >    ,@ImportBudget = 'yes'
-> ```
->
-> - 1d
-> ```SQL
-> --Specify historical periods in which to seed Interject Data Store
-> EXEC [Custom].[ERP_InstallScript4_GroupingImport]
-> ```
 > 
 > **Step 2:** Execute the following Script for SQL Agent Jobs
 > 
