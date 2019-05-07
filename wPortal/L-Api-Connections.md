@@ -20,21 +20,21 @@ In this lab, you will set up a simple connection to an example API. Detailed doc
   
 **Step 1:** Navigate to [ https://portal.gointerject.com ](https://portal.gointerject.com) and [ login ](/wPortal/Logging-In-to-Website-Portal.html) to INTERJECT.  To set up a data connection click on **Data Connections** in the menu on the left.
 
-![](/images/ApiConnection/01.png)
+![](/images/L-Portal-API/01.png)
 
 <br> 
 
 
 **Step 2:** In the Data Connections page, select the **New Connection** button in the top right corner. 
 
-![](/images/ApiConnection/02.png)
+![](/images/L-Portal-API/02.png)
 
 <br> 
 
 
 **Step 3:** In the Connection Type field, make sure **Web Api** is selected. 
 
-![](/images/ApiConnection/03.png)
+![](/images/L-Portal-API/03.png)
 
 <br> 
 
@@ -51,13 +51,13 @@ In this lab, you will set up a simple connection to an example API. Detailed doc
 
 
 
-![](/images/ApiConnections/05.png)
+![](/images/L-Portal-API/04.png)
 
 <br> 
 
 **Step 5:** After adding the required information, click on the Save button to create the new data connection. 
 
-![](/images/ApiConnections/06.png)
+![](/images/L-Portal-API/05.png)
 
 <br>
 
