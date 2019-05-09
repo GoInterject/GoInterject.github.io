@@ -30,7 +30,7 @@ description: Step by step guide on data tier, initial data load, FRx Migration, 
 > **Step 2:** Right Click New Database in the Object Explorer
 > ![Epicor Tools Connection Page](/images/A-InitialDataLoad/ObjectEx.png){: .center-image }
 >
-> **Step 3:** Type “FRxReplacement” into the Database Name field press OK
+> **Step 3:** Choose a name of database to be used to store the legacy FRX reporting definitions” into the Database Name field press OK
 > ![Epicor Tools Connection Page](/images/A-InitialDataLoad/DataBasename.png){: .center-image }
 >
 
@@ -47,8 +47,8 @@ description: Step by step guide on data tier, initial data load, FRx Migration, 
 >
 > **Step 3:** Destination should be the new database created. Check that the following information is correct, then hit "Next" 
  - Destination: “SQL Server Native Client” corresponding to the version of sql server 
- - Server Name: where the new  FRxReplacement database currently resides
- - Database: New database created for importing FRx data
+ - Server Name: where the new Legacy Reporting Definitions database resides
+ - Database: New database created for importing FRx Legacy Reporting Definitions from prior step
 > 
 > ![DB Destination](/images/A-InitialDataLoad/DBDestination.png){: .center-image }
 >
@@ -69,7 +69,7 @@ description: Step by step guide on data tier, initial data load, FRx Migration, 
 >
 > **Step 1:** In **SQL Management Studio**, point to the new database 
 > ```SQL
-> Use FRX_Transfer
+> Use Client_FRX_Definition
 > Go
 >```
 >
@@ -95,7 +95,7 @@ description: Step by step guide on data tier, initial data load, FRx Migration, 
 > - Connection String: This is used by INTERJECT to connect to the specified server & database
 >
 >  ![DB Destination](/images/A-InitialDataLoad/ConnectionDetails.png){: .center-image }
-> **Example connection string:** Data Source=server-04; Initial Catalog=FRxReplacement; Integrated Security=SSPI;
+> **Example connection string:** Data Source=server-04; Initial Catalog=Client_FRX_Definition; Integrated Security=SSPI;
 >
 >
 
@@ -103,10 +103,10 @@ description: Step by step guide on data tier, initial data load, FRx Migration, 
 
 >To Do
 > 
-> **Step 1:** Go to "My Apps" on the left menu of the Interject Portal page select "Interject Financials - Epicor" offering
+> **Step 1:** Go to “My Apps” on the left menu of the Interject Portal page select by clicking on link “Interject Financials - Epicor” offering  - Versions may change
 > ![DB Destination](/images/A-InitialDataLoad/image3.png){: .center-image }
 >
-> **Step 2:** At the bottom of the page in the "Connection Redirect" section choose to replace "EpicorERP_FRx_Transfer" with "FRxReplacement"
+> **Step 2:** At the bottom of the page in the “Connection Redirect” section choose to replace any existing FRX Connection with “new connection”
 >
 > **Step 3:** Click "Save"
 >

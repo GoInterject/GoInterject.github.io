@@ -84,12 +84,26 @@ Please provide the following information:
 > SQL Server 2008 or greater is required. It is recommended that a client provides at minimum a test and production environment in which they will seek to deploy Interject Financials - Epicor.  
 (run "SELECT @@VERSION" in a query window to check version)
 >
-> **Step 2:** Prepare for using Windows Authentication by creating the active directory user group “Interject Users” on Default SQL Server Domain. Please let Interject account manager know if Client cannot enable Windows Authentication with the recommended settings as illustrated below.
+> **Step 2:** Prepare for using Windows Authentication by creating the active directory user group “Interject Users” on Default SQL Server Domain. Interject User group should include any and all users of Interject Financials for Epicor, separate groups may need to be setup if client has other uses of interject and requires separate optional but recommended security and authorization.
+>
+> **2a:** You can find the value of the SELECT DEFAULT_DOMAIN() in SQL Management Studio
+>
+> ![Active User](/images/A-SQL-Installation/DDomain.png){: .center-image }
+>
+> **2b:** On your AD server Match find the name from step 2a by right clicking the values in the domain controller > Properties. Note this only is required if  more than 1 Domains exist
+> ![Active User](/images/A-SQL-Installation/ADServer.png){: .center-image }
+> ![Active User](/images/A-SQL-Installation/DDomain2.png){: .center-image }
+>
+>
+> **2c:** Setup the relating the active directory user group “Interject Users” on Default SQL Server Domain
+>
 >
 > ![Active User](/images/A-SQL-Installation/ActiveUser.png){: .center-image }
+> ![Active User](/images/A-SQL-Installation/ActiveUser2.png){: .center-image }
+>
 >
 > **NOTE:** If you do not have it, download [SQL Management Studion here](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017)
->
+> Please let an Interject account manager know if your client cannot enable Windows Authentication with the recommended settings as illustrated below.
 >
 
 Within a week you will receive verification from Interject that your company setup and subscription is complete.
