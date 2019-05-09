@@ -20,7 +20,7 @@ description:
 >      ,@DefaultDatabaseNameSource     = '[<INSERT Default DB name>]'
 > ```
 > SAMPLE
-> ![Epicor Tools Connection Page](/images/train/sample.png){: .center-image }
+> ![Epicor Tools Connection Page](/images/Train/sample.png){: .center-image }
 >
 > **Note:** You may choose to limit the import to a specific database or databases. Follow the substeps below to complete a selective import.
 >
