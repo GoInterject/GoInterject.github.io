@@ -8,6 +8,23 @@ description: Step by step guide on publishing custom-made reports to your compan
 
 A subscription to Interject Financial - Epicor will provide a "Subscriptions" folder in the **Report Library** within the “Interject Financial Epicor” folder. The folder contains the latest versions of your transactional reports. A company or implementer may also choose to customize the parameters of these reports to better reflect company naming conventions. Following are the localization steps required to localize all transactional reports.
 
+Some of the reports, including report templates created by the implementor, may have a report key that shows you the msot common Interject functions within the report. While it is recommended to leave these report key images in place, you may want to keep them from being printed. The following steps can be completed in MS Excel to ensure the report keys stay in your reports for use but are removed before printing.
+
+> To Do
+>
+> **Step 1:** In any report with a key, right click the key image
+> ![remove report key for print](/images/Localize/PrintImage1.png){: .center-image }
+>
+> **Step 2:** In the Excel pop-up menu, select the "Size and Properties" option
+> ![remove report key for print](/images/Localize/PrintImage2.png){: .center-image }
+>
+> **Step 3:** In the "Properties" drop-down **uncheck** the "Print Object" box
+> ![remove report key for print](/images/Localize/PrintImage3.png){: .center-image }
+>
+> Continue on to the remaining localization steps
+
+
+
 > To-do
 >
 > **Step 1:** Open the Interject Report Library and find the report to be localized. Right-click the Report Link and "View Details" of the report.
