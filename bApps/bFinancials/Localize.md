@@ -22,8 +22,8 @@ A subscription to Interject Financial - Epicor will provide a "Subscriptions" fo
 > ![remove report key for print](/images/Localize/PrintImage3.png){: .center-image }
 >
 
-#### Continue on to the remaining localization steps
--->
+#### Continue on to the remaining localization steps-->
+
 
 
 > To-do
