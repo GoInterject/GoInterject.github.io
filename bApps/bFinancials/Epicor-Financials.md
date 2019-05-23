@@ -83,3 +83,4 @@ In addition to these reports, Interject Financials for Epicor includes
                 </td>
             </tr>
 </table>
+**Note:** All reports are printable using the greyscale or black and white setting on your local printer.
