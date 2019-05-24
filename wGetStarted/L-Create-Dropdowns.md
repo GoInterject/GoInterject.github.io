@@ -7,11 +7,11 @@ description: The jDropdown formula is used for filtering on multiple parameters 
 
 ### Overview
 
-The jDropdown formula is a helper function that developers use to simplify the use of parameters in a data pull or save. It can reduce the rows of data in a report, speeding the report process and conserving server resources and getting only the data you need. 
+The jDropdown formula helps developers simplify the use of parameters in a data pull or save. It can reduce the rows of data in a report, speeding the report process, sparing server resources, and pulling data more efficiently. 
 
 ### Creating the Stored Procedure
 
-A dropdown formula often requires a seperate stored procedure than the one used in the pull or save. This is specially made to filter down on the specifc options for a parameter.
+A dropdown formula often requires a seperate stored procedure from the one used in the pull or save. This stored procedure is dsigned to filter down on the specific options for a parameter.
 
 
 **Step 1:** Create a stored procedure called [demo].[Northwind_CustomerDropdown] using the following code example. 
@@ -43,19 +43,19 @@ ORDER BY [DisplayText]
 
 </div>
 
-**Step 2:** Stored procedure are natively supported by INTERJECT. There are a few key areas to note in the code example that help illustrate INTERJECT features. 
+**Step 2:** Stored procedures are natively supported by INTERJECT. There are a few key areas to note in the code example that help illustrate INTERJECT features. 
 
-  * Parameters: The parameters included in the stored procedure are the same added to the Data Portal in a previous step. On each request, INTERJECT passes the Formula Parameters values from the spreadsheet configuration along with System Parameters to the stored procedure. Output parameters are supported which can populate values in the spreadsheet but they are not included in this example. In this case, there is only one formula parameter.
+  * Parameters: The parameters included in the stored procedure are the same as those added to the Data Portal in a previous walkthrough. On each request, INTERJECT passes the Formula Parameters values from the spreadsheet configuration to the stored procedure along with System Parameters. Output parameters that can populate values in the spreadsheet are supported, but they are not included in this example. In this case, there is only one formula parameter.
 
 ![](/images/L-Create-Dropdowns/01.png)
 <br>
 
-  * Select statements: Returning data to INTERJECT simply uses a select statement as shown below. More than one can be returned at a time to reduce the connections needed to fully populate a complex report. There are two select statements in this example. 
+  * Select statements: Returning data to INTERJECT uses a select statement, as shown below. More than one can be returned at a time to reduce the connections needed to fully populate a complex report. There are two select statements in this example. 
 
 ![](/images/L-Create-Dropdowns/02.png)
 <br>
 
-**Step 3:** It is important to test the stored procedure in the database before testing through the INTERJECT platform. The example code included a test SQL statement that can be executed in a new query as shown below. Be sure to change the procedure name to match your own. 
+**Step 3:** It is important to test the stored procedure in the database before testing through the INTERJECT platform. The example code includes a test SQL statement that can be executed in a new query, as shown below. Be sure to change the procedure name to match your own. 
 
 
 <button class="collapsible">Example Test Script</button>
@@ -68,7 +68,7 @@ ORDER BY [DisplayText]
 
 </div>
 
-When executed you should see the following result sets. Notice there are two different result sets. Both returned only values that contained the word **Market**
+When executed, you should see the following result sets. Notice there are two different result sets. Each of them returns only values that contained the word **Market**
 
 ![](/images/L-Create-Dropdowns/03.png)
 <br>
@@ -90,12 +90,12 @@ When executed you should see the following result sets. Notice there are two dif
 ![](/images/L-Dev-CustAging/03.jpg)
 <br>
 
-**Step 4:** The Connection Details page needs to contain the following information for the new connection. Type **NorthwindExampleDB_MyName** in Connection Name, but include your own name in the suffix. Each connection name must be unique. For the connection string, type **Server=myServerAddress;Database=myDataBase;Trusted_Connection=True;** . You are using Windows authentication, so username and password are not required. Replace the server name and database name to match your own that you are using for this walk-through. 
+**Step 4:** The Connection Details page needs to contain the following information for the new connection: Type **NorthwindExampleDB_MyName** in Connection Name, but include your own name in the suffix. Each connection name must be unique. For the connection string, type **Server=myServerAddress;Database=myDataBase;Trusted_Connection=True;**. You are using Windows authentication, so username and password are not required. Replace the server name and database name to match the one you are using for this walkthrough. 
 
 ![](/images/L-Dev-CustAging/04.jpg)
 <br>
   
-**Step 5:** In the Description field include details about what the data connection will be used for. 
+**Step 5:** In the Description field, include details about how the data connection will be used. 
 
 ![](/images/L-Dev-CustAging/05.jpg)
 <br>
@@ -109,7 +109,7 @@ The Database Data Connection is now ready to be used in a Data Portal. You shoul
 
 ### Setting up the Data Portal
 
-**Step 1:** To add a new data portal, return to  [ https://portal.gointerject.com  ](https://portal.gointerject.com) and select Data Portals from the sidebar menu. 
+**Step 1:** To add a new data portal, return to [ https://portal.gointerject.com  ](https://portal.gointerject.com) and select Data Portals from the sidebar menu. 
 
 ![](/images/L-Dev-CustAging/07.jpg)
 <br>
@@ -119,12 +119,12 @@ The Database Data Connection is now ready to be used in a Data Portal. You shoul
 ![](/images/L-Dev-CustAging/08.jpg)
 <br>
 
-**Step 3:** Type **NorthwindCustomersDropdown_MyName** for the Data Portal Code. Since this field must be unique, add your name to the suffix. Select the connection that was made in the previous step, **NorthwindExampleDB_MyName** . Also enter a name for the stored procedure **\[demo\].\[Northwind_CustomerDropdown\]** , which will be created later. 
+**Step 3:** Type **NorthwindCustomersDropdown_MyName** for the Data Portal Code. Since this field must be unique, add your name to the suffix. Select the connection that was made in the previous step, **NorthwindExampleDB_MyName**. Also enter a name for the stored procedure **\[demo\].\[Northwind_CustomerDropdown\]**, which will be created later. 
 
 ![](/images/L-Create-Dropdowns/04.png)
 <br>
 
-**Step 4:** Click **Create Data Portal** to save the new data portal. Additional options display after selecting the Create Data Portal button for adding parameters. 
+**Step 4:** Click **Create Data Portal** to save the new data portal. Additional options will show after selecting the Create Data Portal button for adding parameters. 
 
 ![](/images/L-Create-Dropdowns/05.png)
 <br>
@@ -137,7 +137,7 @@ The Database Data Connection is now ready to be used in a Data Portal. You shoul
 
 ### Creating the Formula
 
-**Step 1:** Open the report **INTERJECT Customer Collections** under the INTERJECT Demos  in the [ Report Library ](/wAbout/Report-Library-Basics.html). 
+**Step 1:** Open the report **INTERJECT Customer Collections** under the INTERJECT Demos in the [ Report Library ](/wAbout/Report-Library-Basics.html). 
 
 ![](/images/Walkthrough-CustAging/01.png)
 
@@ -145,7 +145,7 @@ This will bring up the Customer Aging Summary.
 
 ![](/images/Walkthrough-CustAging/02.png)
 
-**Step 2:** Next you will unfreeze panes by going into [ Quick Tools ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) and select **Freeze/Unfreeze Panes**.
+**Step 2:** Next, unfreeze panes by going into [ Quick Tools ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) and select **Freeze/Unfreeze Panes**.
 
 ![](/images/L-Create-Dropdowns/07.png)
 <br>
@@ -165,7 +165,7 @@ This will bring up the Customer Aging Summary.
 ![](/images/L-Create-Dropdowns/10.png)
 <br>
 
-**Step 6:** Scroll down to **Value Column Name** and **Display Column Name** and input **CompanyName** and **DisplayText** respectfully.
+**Step 6:** Scroll down to **Value Column Name** and **Display Column Name** and input **CompanyName** and **DisplayText** respectively.
 
 ![](/images/L-Create-Dropdowns/11.png)
 <br>
@@ -180,17 +180,17 @@ This will bring up the Customer Aging Summary.
 ![](/images/L-Create-Dropdowns/13.png)
 <br>
 
-**Step 9:** Click on **Place in This Document** and point the **Cell Reference** to where the [jDropdown()](/wIndex/jDropdown.html) formula is. In this case, it is in cell **F7**.
+**Step 9:** Click on **Place in This Document** and point the **Cell Reference** to the [jDropdown()](/wIndex/jDropdown.html). In this case, it is in cell **F7**.
 
 ![](/images/L-Create-Dropdowns/14.png)
 <br>
 
-**Step 10:** Select **ScreenTip** then in the textbox type **Interject Dropdown**. Then select **OK** in both open windows to save the hyperlink.
+**Step 10:** Select **ScreenTip**. Then, in the textbox, type **Interject Dropdown**. Select **OK** in both open windows to save the hyperlink.
 
 ![](/images/L-Create-Dropdowns/15.png)
 <br>
 
-**Step 11:** Now select the hyperlink we just made and type **Market** into the search options. Notice that there are 4 options present. Select **BOTTM - Bottom-Dollar Markets**.
+**Step 11:** Now select the hyperlink you just made and type **Market** into the search options. Notice that there are 4 options. Select **BOTTM - Bottom-Dollar Markets**.
 
 ![](/images/L-Create-Dropdowns/16.png)
 <br>

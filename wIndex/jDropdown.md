@@ -7,20 +7,20 @@ description: The jDropdown formula is used for filtering on multiple parameters 
 
 ## Function Summary
 
-The jDropdown formula is a helper function that developers use to simplify the use of parameters in a data pull or save. It can reduce the rows of data in a report, speeding the report process and conserving server resources and getting only the data you need. 
+The jDropdown formula helps developers simplify the use of parameters in a data pull or save. It can reduce the rows of data in a report, speeding the report process, sparing server resources, and pulling data more efficiently. 
 
 ### Function Arguments
 
 | Argument Name       | Description                                                                                                                                           | Default           | Optional |
 | ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | -------- |
 | DataPortal          | This is the name of the Interject Data Portal which has been set up to connect to the data                                                            |                   | NO       |
-| Parameters          | Select cells which will be used as parameters for the Data Portal. Use Interject's [Param()](/wIndex/Param.html) function to specificy the cells used |                   | NO       |
+| Parameters          | Select cells to be used as parameters for the Data Portal. Use Interject's [Param()](/wIndex/Param.html) function to specificy the cells used |                   | NO       |
 | MultiSelect         | Specify if the dropdown allows for multiple options to be selected                                                                                    | FALSE             | NO       |
 | Target Cell         | Specify the Cell location of where the selected options will be set                                                                                   |                   | NO       |
 | Value Column Name   | Specify which column to use as the value. The value will be copied to the Target Cell                                                                 |                   | NO       |
 | Display Column Name | Specify which column to use as the display text for the options in the dropdown window.                                                               | Value Column Name | YES      |
 | Delimiter           | Specify the delimiter to use when MultiSelect is TRUE                                                                                                 | ", "              | YES      |
-| Instruction Text    | Specifcy the help text to display to a user in the dropdown window                                                                                    |                   | YES      |
+| Instruction Text    | Specify the help text to display to a user in the dropdown window                                                                                    |                   | YES      |
 
 
 ### Excel Formula Bar Example
