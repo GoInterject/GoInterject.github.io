@@ -424,6 +424,7 @@ Ta-Da! After comparing the reports you can notice that, besides some formatting 
 
 <br> 
 
+Finally, clear the report, refreeze the panes, and upload it to the ![ Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary.html).
 
   
 

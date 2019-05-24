@@ -249,20 +249,7 @@ Every report will be specific to the company's needs and best practices, but a c
   
 
 
-  
-
-
-##  Related Links: 
-
-[ Customer Aging ](/wAbout/Customer-Aging.html)
-
-[ Modify: Customer Aging ](/wGetStarted/L-Modify-CustomerAgin.html)
-
-[ Updating the Report Library ](/wGetStarted/L-Updating-the-Report-Library.html)
-
-[ Interject Ribbon Menu Items ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html)
-
-[ Basics of Report Formulas ](/wAbout/Basics-of-Report-Formulas.html)
+Finally, clear the report, refreeze the panes, and upload it to the ![ Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary.html).
 
   
 

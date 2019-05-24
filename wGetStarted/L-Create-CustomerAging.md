@@ -150,7 +150,7 @@ The data pulled should look like below.
   
 
 
-**Step 2:** Next, you need to freeze the panes to hide the configuration area from the users. This can be done manually with the Excel menu item for freezing panes. But this is a good time to illustrate INTERJECT's jFreezePanes() feature. First, setup the [ jFreezePanes ](wIndex/jFreezePanes.html) function by entering **=jFreezePanes()** in F6 and click the **fx** button. 
+**Step 2:** Next, you need to freeze the panes to hide the configuration area from the users. This can be done manually with the Excel menu item for freezing panes. But this is a good time to illustrate INTERJECT's jFreezePanes() feature. First, setup the [ jFreezePanes ](/wIndex/jFreezePanes.html) function by entering **=jFreezePanes()** in F6 and click the **fx** button. 
 <br>
 ![](/images/L-Create-CustAging/23.png)
 <br>
@@ -185,22 +185,7 @@ Use the [ **Quick Tools** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-
   
 
 
-[ Click here ](/wAbout/Report-Library-Basics.html) to learn how to upload the new report to the Report Library. 
-
-  
-
-
-##  Related Links: 
-
-[ Customer Aging ](/wAbout/Customer-Aging.html)
-
-[ Lab Modify: Customer Aging ](/wGetStarted/L-Modify-CustomerAging.html)
-
-[ Lab Create: Updating the Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary)
-
-[ INTERJECT Ribbon Menu Items ](INTERJECT-Ribbon-Menu-Items.html)
-
-[ Basics of Report Formulas ](/wAbout/Basics-of-Report-Formulas.html)
+Finally, clear the report, refreeze the panes, and upload it to the ![ Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary.html).
 
   
 

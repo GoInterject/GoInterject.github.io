@@ -158,8 +158,10 @@ The data should be presented as shown below.
 
 ###  Final Result 
 
-One the pins are frozen the final result should look similar to the image below.   
+Once the panes are frozen the final result should look similar to the image below.   
 
 ![](/images/L-Create-InventoryVar/21.png)
 
 <br>
+
+Finally, clear the report, refreeze the panes, and upload it to the ![ Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary.html).
