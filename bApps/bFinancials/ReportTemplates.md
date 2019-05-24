@@ -15,9 +15,9 @@ The following steps will walk through a single Balance Sheet creation, but the p
 >
 > **Step 2:** On the Rollup Manager screen, click on "Segment" in the "Add New Rollup" section and select a segment from the list. We will choose "Accounts" for this example.
 >
-> **Step 3:** Click the "FRx Row Template" link and choose an FRx Row Template from the list. We'll choose "BALSHT04" for this example.
+> **Step 3:**  Hit the "Click to Add" button.
 >
-> **Step 4:** Hit the "Click to Add" button
+> **Note:** If you're choosing to reference FRx row templates, it is best to have the FRx Catalog open in a separate window.
 >
 > ![Transaction Report 1](/images/Train/BuildReport1.png){: .center-image }
 >
@@ -25,7 +25,7 @@ The following steps will walk through a single Balance Sheet creation, but the p
 
 ### Account Rollup Screen
 
-After hitting "Click to Add", a new sheet will open with the FRx row template reference on the left and an empty template on the right. This is where you'll set up the account rollup definitions and validation 
+After hitting "Click to Add", a new sheet will open with an empty template. This is where you'll set up the account rollup definitions and validation 
 
 > To Do
 >
@@ -35,25 +35,22 @@ After hitting "Click to Add", a new sheet will open with the FRx row template re
 >
 > **Step 3:** Click the "Apply Validation" link and choose "Yes"
 >
-> **Step 4:** Click "Row Type" on the left sheet, and choose both "Detail" and "Subtotal", then click **Pull FRx**. This will help give you the "Detail Account Definitions" that define the rows of your report.
+> **Step 4:** In the "Validation Definition" field, begin typing the formula **=JCombineSmart\(\)**, then double-click that formula from the menu
 >
-> **Step 5:** In the "Validation Definition" field, begin typing the formula **=JCombineSmart\(\)**, then double-click that formula from the menu
->
->  - **Step 5a:** With the formula open, select all of the "Row Definitions" under the FRx Template Reference and hit enter. This will populate the "Validation Definition" with every FRx Definition needed.
+>  - **Step 5a:** With the formula open, select all of the "Row Definitions" in the FRx Row Format tab of the catalog, then hit enter. This will populate the "Validation Definition" with every FRx Definition needed.
 >
 >  - **Step 5b:** Now select the the cell containing all the "Validation Definitions," copy the cell, and paste it back into the same cell as **Values** using the "Special Paste" option in Excel
 >
 > ![Account Rollup](/images/Train/AcctRollupNew.png){: .center-image }
-> ![Account Rollup](/images/Train/AcctRollupNew2.png){: .center-image }
 >
 
 ### Building Your Rollups
 
 > To Do
 >
-> **Step 1:** Now write the codes for each Rollup in the "Rollup Section" column of your template using the FRx Template References. These will correspond to the subtotals in the FRx Template Reference section. The necessary prefixes will be attached automatically.
+> **Step 1:** Now write the codes for each Rollup in the "Rollup Section" of your template using the FRx Row Format screen. These will correspond to the subtotals in the FRx Row Template catalog report. The necessary prefixes will be attached automatically.
 >
-> **Step 2:** In each row with a code, designate the "Order" in maganitudes of at least ten, then in the "Detail Account Definiton" column, use **=JCombineSmart\(\)** again, selecting all necessary rows for each subtotaled section from FRx Template Reference
+> **Step 2:** In each row with a code, designate the "Order" in maganitudes of at least ten, then in the "Detail Account Definiton" column, use **=JCombineSmart\(\)** again, selecting all necessary rows for each subtotaled section from FRx Row Template report.
 >
 > **Step 3:** Hit Ctrl+Shift+U or the "Save" Button to save
 >
@@ -66,7 +63,7 @@ After hitting "Click to Add", a new sheet will open with the FRx row template re
 >
 > **Step 1:** Go back to the Configuration Manager Welcome screen and then click the link to "Setup/Review Report Templates"
 >
-> **Step 2:** In the "Row Template Manager", click "Acct Rollup" to choose an account, and click "FRx Row Template" to choose the legacy row template as a reference. Then hit "Click to Add".
+> **Step 2:** In the "Row Template Manager", click "Acct Rollup" to choose an account. Then hit "Click to Add."
 >
 > ![Account Rollup](/images/Train/BuildRow.png){: .center-image }
 >

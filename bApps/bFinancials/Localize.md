@@ -8,6 +8,7 @@ description: Step by step guide on publishing custom-made reports to your compan
 
 A subscription to Interject Financial - Epicor will provide a "Subscriptions" folder in the **Report Library** within the “Interject Financial Epicor” folder. The folder contains the latest versions of your transactional reports. A company or implementer may also choose to customize the parameters of these reports to better reflect company naming conventions. Following are the localization steps required to localize all transactional reports.
 
+
 > To-do
 >
 > **Step 1:** Open the Interject Report Library and find the report to be localized. Right-click the Report Link and "View Details" of the report.

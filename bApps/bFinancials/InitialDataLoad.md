@@ -16,28 +16,13 @@ description:
 > ```SQL
 > --Import configuration setup from Epicor and initial setup of Interject
 > EXEC [Custom].[ERP_InstallScript1_DatabaseConfig]
-> 	  @MasterEpicorDatabase          = '[DemoControl]'
-> 	 ,@DefaultDatabaseNameSource     = '[DemoDist]'
+>       @MasterEpicorDatabase          = '[<INSERT Master DB NAME>]'
+>      ,@DefaultDatabaseNameSource     = '[<INSERT Default DB name>]'
 > ```
+> SAMPLE
+> ![Epicor Tools Connection Page](/images/Train/sample.png){: .center-image }
 >
-> **Note:** You may choose to limit the import to a specific database or databases. Follow the substeps below to complete a selective import.
->
->  - Run the script below to see a list of all databases Interject will import
->  ```SQL
-> --List all imported DBs
-> SELECT * FROM [ImportERP].[SourceDatabaseList]
->  ```
->
->  - You must mark as inactive the DBs you wish to exclude using the following script
-> ```SQL
->  --Deactivate selected DB
-> UPDATE [ImportERP].[SourceDatabaseList]
-> SET [Inactive] = 1 
-> WHERE [DatabaseName] = '[DeactivateDatabase2]'
->```
-> If a database is made inactive after the initial load, data that was initially imported will still be in Interject and can be used to report from. However new data will stop flowing into interject.
->
-> Continue following these steps to complete the upload
+> **Note:** You may choose to limit the import to a specific database or databases. Please see the [Deactivate Databases](https://docs.gointerject.com/bApps/bFinancials/DeactiveDB.html) page to do so.
 >
 > - 1b
 > ```SQL
@@ -47,17 +32,26 @@ description:
 >
 > - 1c
 > ```SQL
-> EXEC [Custom].[ERP_InstallScript4_GroupingImport]
+> --Enable Rollups
+> EXEC [Custom].[ERP_InstallScript3_GroupingImport]
 > ```
 >
 > - 1d
 >```SQL
 > --Specify historical periods in which to seed Interject Data Store
-> EXEC [Custom].[ERP_InstallScript3_ReportingImport]
-> 	  @ReportingImport_YearBegin     = 'INSERT>YYYY'
->	 ,@ReportingImport_YearEnd       = 'INSERT>YYYY'
->    ,@ImportBudget = 'yes'
-> 
+> EXEC [Custom].[ERP_InstallScript4_ReportingImport]
+> 	  @ReportingImport_YearBegin     = 'YYYY'
+>	 ,@ReportingImport_YearEnd       = 'YYYY'
+>    ,@ImportBudget = 'INSERT value Yes or No'
+> ```
+> SAMPLE
+> ```SQL
+> EXEC [Custom].[ERP_InstallScript4_ReportingImport]
+> @ReportingImport_YearBegin	= '2000'
+> ,@ReportingImport_YearEnd	    = '2016'
+> ,@ImportBudget				= 'Yes'
+>```
+>
 > **Step 2:** Execute the following Script for SQL Agent Jobs
 > 
 > - 2a
@@ -90,25 +84,25 @@ description:
 >
 > **Step 5:** Select "Database" in the **Connection Type** field.
 >
-> **Step 6:** Fill in the Connection Details pag, which contains the following inputs for new connections:
+> **Step 6:** Fill in the Connection Details page, which contains the following inputs for new connections:
 > ![Connection Details Page](/images/Database/04.png){: .center-image }
 > 
 > * **Name:** A unique friendly name used when connecting a Data Portal to the Data Connection
 > * **Description** (optional): description of what the connection string is connecting to
 > * **Connection String:** used by INTERJECT to connect to the specified server & database
-> "Server=SQL02.lsusa.local\D12INTUITION;Database=Interject_Reporting@Epicor3; Integrated Security = SSPI;"
+> "Server=Scotty-Test;Database=Northwind Integrated Security = SSPI;”
 >
 
 ## Redirect the DB Connection to the new DB in Interject portal
 
 > To Do
 >
-> **Step 1:** Go to **My Apps** on the left menu of the [portal.gointerject.com](https://portal.gointerject.com) page
+> **Step 1:** Go to **My Apps** on the left menu of the [Interject Portal](https://portal.gointerject.com) page and select the "Interject Financials - Epicor offering. Versions may change
 >![Epicor Tools Connection Page](/images/A-InitialDataLoad/MyApps.png){: .center-image }
 >
-> **Step 2:** Select "Interject Financials - Epicor" 
+> **Step 2:** At the bottom of the page in the “Connection Redirect” section choose to replace any existing Data Connection  Connection with “new connection” 
 >
-> **Step 3:** Under the Connection Redirect section -scroll to bottom of screen - select the connection you wish to overide in the left side, then the new data connection on the right
+> **Step 3:** Click save
 > ![Epicor Tools Connection Page](/images/A-InitialDataLoad/ConnectionRedirect.png){: .center-image }
 >
-> **Step 4:** Save your changes
+>
