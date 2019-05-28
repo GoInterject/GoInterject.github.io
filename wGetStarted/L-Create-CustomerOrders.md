@@ -249,7 +249,7 @@ Every report will be specific to the company's needs and best practices, but a c
   
 
 
-Finally, clear the report, refreeze the panes, and upload it to the ![ Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary.html).
+Finally, clear the report, refreeze the panes, and upload it to the [ Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary.html).
 
   
 

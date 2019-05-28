@@ -390,7 +390,7 @@ Execute [demo].[Northwind_Invoices_Pull_MyName]
 
 At this point you, have a tested a new stored procedure that uses parameters to filter the results. You set up an INTERJECT data connection to go to your example database and you added another INTERJECT data portal to use that connection, which is mapped to the stored procedure that you just created. So now you are ready to build the spreadsheet report using two data portals. 
 
-The steps for building the spreadsheet report are in the lab [ Customer Aging Detail ](/wGetStarted/L3.4-Customer-Aging-Detail.html) . You have likely completed this in earlier training sessions. Repeat the instructions with your newly created data portals discussed in this topic. When you are done, your report should resemble the screenshot below. 
+The steps for building the spreadsheet report are in the lab [ Customer Aging Detail ](https://docs.gointerject.com/wGetStarted/L-Create-CustomerAgingDetail.html) . You have likely completed this in earlier training sessions. Repeat the instructions with your newly created data portals discussed in this topic. When you are done, your report should resemble the screenshot below. 
 
 ![](/images/L-Dev-CustAgingDetail/13.png)
 <br>
@@ -620,7 +620,7 @@ The second parameter, DataResultNumber, indicates which recordset this report fu
 ![](/images/L-Dev-CustAgingDetail/22.png)
 <br>
 
-**Step 5:** Once the report formulas are edited, you can re-pull the data in the report and the results should be the same as when it used two data portals. 
+**Step 5:** Once the report formulas are edited, you can re-pull the data in the report and the results should be the same as when it used two data portals. Notice that **(1)** the customer account detail is presented as well as **(2)** the customer information. 
 
 ![](/images/L-Dev-CustAgingDetail/23.png)
 <br>
