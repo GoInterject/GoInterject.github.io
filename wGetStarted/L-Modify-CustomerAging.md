@@ -96,7 +96,7 @@ Now that the report is formatted for the new data, you need to add formulas for 
   
 
 
-Remember to include the **=** in our formula, otherwise Excel will simply read this as plain text. **I23** tells Excel where the first column value is, and **L23** designates the last value. The colon represents all the cells in between. When we have this written out, our Excel sheet shows where we will be summing values. 
+Remember to include the **=** in our formula, otherwise Excel will simply read this as plain text. **I20** tells Excel where the first column value is, and **L20** designates the last value. The colon represents all the cells in between. When we have this written out, our Excel sheet shows where we will be summing values. 
 
 
 **Step 4:** Instead of copying this formula to each row once step 3 is completed, pull the entire report again. 
@@ -115,7 +115,7 @@ Notice that when you pull the data, the new formula is applied to all the new ro
 
 ###  Creating Totals on top of the Report 
 
-**Step 1:** For this example, you need more than just the individual totals; you need a Report Total of these invoices. To build this, you have to add more SUM Formulas. You will format the cells above the table, making it clearly visible. To do this, select cell H19 and label it **Report Total:**. 
+**Step 1:** For this example, you need more than just the individual totals; you need a Report Total of these invoices. To build this, you have to add more SUM Formulas. You will format the cells above the table, making it clearly visible. To do this, select cell H16 and label it **Report Total:**. 
 
 ![](/images/L-Modify-CustAging/14.png) 
 <br>
@@ -169,7 +169,7 @@ The report is complete, you have added a total for each client and a summary tot
 ![](/images/L-Modify-CustAging/22.png)
 <br> 
 
-
-You can continue learning by reading how to save these changes back to Report Library [ here ](https://interject.atlassian.net/wiki/display/ID/Updating+the+Report+Library). 
+Once complete, save the report to your Report Library as "Modified Customer Aging_YourName"
+If you do not know how to do this, you can continue learning by reading how to save these changes back to Report Library [ here ](L-Create-UpdatingReportLibrary.html). 
 
  

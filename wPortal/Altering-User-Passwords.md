@@ -13,11 +13,11 @@ This is a section that displays how to reset an INTERJECT user’s password unde
 
 **Step 1:** To change a password while logged in you will first have to navigate to User Profile under Settings 
 
-![](/images/Passwords/01.jpg)
+![](/images/Passwords/01_fix.jpg)
 
 **Step 2:** Next you will input the old password into the **Old Password** field then we will input the new password into the **New Password** field and click Change Password 
 
-![](/images/Passwords/02.jpg)
+![](/images/Passwords/02_fix.jpg)
 
 **Step 3:** The following message will appear to confirm that the password has changed 
 

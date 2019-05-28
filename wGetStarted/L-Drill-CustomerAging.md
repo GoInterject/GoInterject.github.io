@@ -119,6 +119,7 @@ You completed the drill. You can return to the source worksheet, **Customer Agin
 ![](/images/L-Drill-CustAging/14.png)
 <br>
 
+Finally, clear the reports, refreeze the panes, and upload it to the ![ Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary.html).
 
   
 
