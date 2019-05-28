@@ -92,7 +92,7 @@ Now you can view every category and its detail all in one page, without any dril
 
 ![](/images/Inventory/14.png)
 
-That is all there is to it. To learn more about modifying this report, [ click here ](/wGetStarted/128429185.html). 
+That is all there is to it. To learn more about modifying this report, [ click here ](/wGetStarted/L-Modify-InventoryReport.html). 
 
 
   
