@@ -11,7 +11,7 @@ The jDropdown formula helps developers simplify the use of parameters in a data 
 
 ### Creating the Stored Procedure
 
-A dropdown formula often requires a seperate stored procedure from the one used in the pull or save. This stored procedure is dsigned to filter down on the specific options for a parameter.
+A dropdown formula often requires a separate stored procedure from the one used in the pull or save. This stored procedure is dsigned to filter down on the specific options for a parameter.
 
 
 **Step 1:** Create a stored procedure called [demo].[Northwind_CustomerDropdown] using the following code example. 
