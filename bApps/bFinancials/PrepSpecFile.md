@@ -5,6 +5,7 @@ keywords: [Report, Epicor, Accounts]
 description: Step by step guide on data tier, initial data load, FRx Migration, and other key processes of installing of Interject for Financials Epicor.
 ---
 
+## Preparing the FRx Report Specification File for Migration
 Before completing the FRx migration, you will likely need to find your FRx Report Specification file, convert it to an MS Access file type, and release any database password permissions. 
 
 
