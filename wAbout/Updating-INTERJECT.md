@@ -10,7 +10,7 @@ description: The walk-through shows how to update INTERJET to the newest version
 INTERJECT often comes out with new features and updates. When doing so, it is a priority to make updating INTERJECT as easy as possible, so that you can access these features. In this walk-through, you will see how to add these updates quickly. 
 
 To watch a quick walk-through video, click on the icon:  
-<br><a href="https://www.youtube.com/watch?v=-PVuTGZ1qz4&feature=youtu.be"><i class="fab fa-youtube-square"> <i>" style="color: #ff0000"></i></a>
+<br><a href="https://www.youtube.com/watch?v=-PVuTGZ1qz4&feature=youtu.be"><i class="fab fa-youtube-square"> <i> style="color: #ff0000"></i></a>
 
 ###  Updating to the Newest Version of INTERJECT 
 
