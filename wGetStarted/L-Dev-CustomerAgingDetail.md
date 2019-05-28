@@ -615,12 +615,12 @@ You are ready to modify the report to use your new data portal. The changes are 
 
 The second parameter, DataResultNumber, indicates which recordset this report function will use. Using **2** causes the ReportRange() function to grab the second recordset that is a simple list of customers. 
 
-**Step 4:** Now change the **=ReportVariable()** function by replacing the previous data portal with the new one. Again you must encase the new data portal inside a jDataPortal() function. So **=ReportVariable(“oldDataPortalCode”,..** becomes **=ReportVariable(jDataPortal(“NorthwindMultiRecord_MyName”,1),...** In this step you are using **1** so the first record set is used in this report function. The end result should look like the below screenshot for ReportVariable(). 
+**Step 2:** Now change the **=ReportVariable()** function by replacing the previous data portal with the new one. Again you must encase the new data portal inside a jDataPortal() function. So **=ReportVariable(“oldDataPortalCode”,..** becomes **=ReportVariable(jDataPortal(“NorthwindMultiRecord_MyName”,1),...** In this step you are using **1** so the first record set is used in this report function. The end result should look like the below screenshot for ReportVariable(). 
 
 ![](/images/L-Dev-CustAgingDetail/22.png)
 <br>
 
-**Step 5:** Once the report formulas are edited, you can re-pull the data in the report and the results should be the same as when it used two data portals. Notice that **(1)** the customer account detail is presented as well as **(2)** the customer information. 
+**Step 3:** Once the report formulas are edited, you can re-pull the data in the report and the results should be the same as when it used two data portals. Notice that **(1)** the customer account detail is presented as well as **(2)** the customer information. 
 
 ![](/images/L-Dev-CustAgingDetail/23.png)
 <br>
