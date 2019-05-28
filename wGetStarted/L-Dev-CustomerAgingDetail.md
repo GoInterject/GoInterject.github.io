@@ -620,7 +620,7 @@ The second parameter, DataResultNumber, indicates which recordset this report fu
 ![](/images/L-Dev-CustAgingDetail/22.png)
 <br>
 
-**Step 5:** Once the report formulas are edited, you can re-pull the data in the report and the results should be the same as when it used two data portals. 
+**Step 5:** Once the report formulas are edited, you can re-pull the data in the report and the results should be the same as when it used two data portals. Notice that **(1)** the customer account detail is presented as well as **(2)** the customer information. 
 
 ![](/images/L-Dev-CustAgingDetail/23.png)
 <br>
