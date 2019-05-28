@@ -55,7 +55,7 @@ This report uses the same database as  **Dev: Customer Aging** and other reports
   
 
 
-**Step 7:** For the  **Command Type** you will use the stored procedure option, and in  **Stored Procedure / Command** input a name for the stored procedure you will create later. In this case you use  **[demo].[Northwind_Credit_Save_MyName]** .  Then click  **create data portal.**
+**Step 7:** For the  **Command Type** you will use the stored procedure option, and in  **Stored Procedure / Command** input a name for the stored procedure you will create later. In this case you use  **[demo].[Northwind_Credit_Save_MyName]**. Then click  **create data portal.**
 
 ![](/images/L-Dev-CustAgingSave/07.jpg)
 <br>
