@@ -50,6 +50,8 @@ about:
     path: /wAbout/SingleUser.html
   - title: Installing - Shared Computer
     path: /wAbout/SharedComputer.html
+  - title: Updating INTERJECT
+    path: /wAbout/Updating-INTERJECT.html
   - title: Uninstalling INTERJECT
     path: /wAbout/Uninstalling.html
 - sectiontitle: Using INTERJECT
@@ -70,8 +72,6 @@ about:
       path: /wAbout/Inventory-Reports.html
     - title: Financial Report
       path: /wAbout/Financial-Report.html
-  - title: Updating INTERJECT
-    path: /wAbout/Updating-INTERJECT.html
 - sectiontitle: Working with INTERJECT
   path: /wAbout/Working-with-INTERJECT.html
   section:
