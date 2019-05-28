@@ -309,7 +309,7 @@ When executed you should see the following result set.
 
 At this point you have a tested stored procedure that uses parameters to filter the results. An INTERJECT Data Connection is setup to go to your example database and you added an INTERJECT Data Portal to use that connection and is mapped to the stored procedure that was just created. You are ready to build the spreadsheet report. 
 
-Fortunately, the documentation to build this report has already been presented in [ **Create: Customer Aging** ](wGetStarted/L-Create-CustomerAging.html) and you likely have already completed it. The end result should look like the below screenshot. 
+Fortunately, the documentation to build this report has already been presented in [ **Create: Customer Aging** ](https://docs.gointerject.com/wGetStarted/L-Create-CustomerAging.html) and you likely have already completed it. The end result should look like the below screenshot. 
 
 ![](/images/L-Dev-CustAging/25.png)
 <br>
