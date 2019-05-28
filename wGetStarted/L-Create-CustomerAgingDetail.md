@@ -273,4 +273,4 @@ Type **=SUM(L12:O12)** into cell P12 to add the formula for total. You will also
 
 <br>
 
-Finally, clear the report, refreeze the panes, and upload it to the ![ Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary.html).
+Finally, clear the report, refreeze the panes, and upload it to the [ Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary.html).
