@@ -185,7 +185,7 @@ Use the [ **Quick Tools** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-
   
 
 
-Finally, clear the report, refreeze the panes, and upload it to the ![ Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary.html).
+Finally, clear the report, refreeze the panes, and upload it to the [ Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary.html).
 
   
 
