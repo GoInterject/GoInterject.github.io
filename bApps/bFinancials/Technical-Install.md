@@ -44,7 +44,7 @@ After you get access to Interject, there are three parts to installing Interject
                    FRX Migration
                 </td>
                 <td>
-                1.0.5
+                1.0.6
                 </td>
                 <td>
                 <a href="https://drive.google.com/file/d/1UcSwEf_oKjr3eVSSUJKyzZyB60YGJsaM/view?usp=sharing">Migration Script</a>
