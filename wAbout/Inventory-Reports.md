@@ -18,7 +18,7 @@ This lab is a basic inventory example for tracking product quantities. In this w
 
 **Step 2:** Check inventory by opening the workbook to see the different categories available. 
 
-![](/images/Inventory/image2017-6-12_17-27-19.png)
+![](/images/Inventory/02.png)
 
   
 
@@ -29,13 +29,12 @@ To access the totals of in-stock items, just pull the data into the spreadsheet 
 
 Now you have an overview of totals for all inventoried categories, as seen below. 
 
-![](/images/Inventory/image2017-6-12_17-42-51.png)   
+![](/images/Inventory/04.png)   
 
 In this example, though, you need to find out more than the total; you need to see how much grain you have, which means you need more a detailed view of current inventory. 
 
 To find the data, use the Drill function for inventory by detail. 
 
-Back to Top 
 
 ###  Drilling to the Detail 
 
@@ -46,11 +45,9 @@ Back to Top
 
 Drilling will take us to InventoryByDetail, which will automatically pull all the items in stock within that category. 
 
-![](/images/Inventory/image2017-6-9_14-33-15.png)
+![](/images/Inventory/06.png)
 
 From here, you can see exactly what is logged in-stock at the time of the pull: **Grains/Cereals** in this example. 
-
-Back to Top 
 
 ###  Return From Drill and Re-Drill 
 
@@ -58,11 +55,11 @@ Ypu also need to gather a report of our beverage inventory.
 
 **Step 1:** Select the [ **Return From Drill** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#return-from-drill) Button to go back to the sheet you drilled from.   
 
-![](/images/Inventory/inventory-return-from-drill.png)
+![](/images/Inventory/07.png)
 
 This will bring us back to the previous tab. 
 
-![](/images/Inventory/image2017-6-12_17-42-29.png)
+![](/images/Inventory/08.png)
 
 **Step 2:** Now repeat the steps from the first drill by clicking the Beverages category. Since this is a hyperlink drill the report will automatically take us deeper. 
 
@@ -78,7 +75,7 @@ Now a report that shows all the categories and their details in one sheet, witho
 
 **Step 1:** You need to open the WithDetails tab. 
 
-![](/images/Inventory/image2017-6-9_16-20-18.png)   
+![](/images/Inventory/11.png)   
 
 When cleared, the sheet looks similar to the first category sheet. 
 
@@ -93,7 +90,7 @@ When cleared, the sheet looks similar to the first category sheet.
 
 Now you can view every category and its detail all in one page, without any drills. 
 
-![](/images/Inventory/image2017-6-9_14-26-47.png)
+![](/images/Inventory/14.png)
 
 That is all there is to it. To learn more about modifying this report, [ click here ](/wGetStarted/128429185.html). 
 

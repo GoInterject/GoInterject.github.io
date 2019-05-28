@@ -14,9 +14,9 @@ horizontalnav:
 - title: References
   path: /wIndex/Excel-Function-Index.html
   node: index
-- title: Apps
-  path: /wApps/Reference.html
-  node: apps
+# - title: Apps
+#   path: /wApps/Reference.html
+#   node: apps
 - title: Portal Site 
   path: /wPortal/The-INTERJECT-Website-Portal.html
   node: portal
@@ -82,17 +82,17 @@ about:
 
   
 
-apps:
-  - title: Reference
-    path: /wApps/Reference.html
-  - title: INTERJECT Financials
-    path: /wApps/Interject-Financials.html
-  - title: "INTERJECT Financials for Epicor"
-    path: /wApps/Epicor-Financials.html
-  - title: "SQL Server Implementation"
-    path: /wApps/SQL-Install.html
-  - title: "FRx Migration"
-    path: /wApps/FRx-Migration.html
+# apps:
+#   - title: Reference
+#     path: /wApps/Reference.html
+#   - title: INTERJECT Financials
+#     path: /wApps/Interject-Financials.html
+#   - title: "INTERJECT Financials for Epicor"
+#     path: /wApps/Epicor-Financials.html
+#   - title: "SQL Server Implementation"
+#     path: /wApps/SQL-Install.html
+#   - title: "FRx Migration"
+#     path: /wApps/FRx-Migration.html
     
 getstarted:
   - sectiontitle: Creating with INTERJECT
