@@ -81,62 +81,70 @@ This will bring up the Customer Aging Summary.
 
 ![](/images/Walkthrough-CustAging/02.png)
 
-**Step 2:** Next, unfreeze panes by going into [ Quick Tools ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) and select **Freeze/Unfreeze Panes**.
+**Step 2:** First, right click each hyperlinked paramter in the report, and then choose "Remove Hyperlink."
+
+![](/images/L-Create_Dropdowns/RemoveHyperlinks.png)
+
+**Step 3:** Next, unfreeze panes by going into [ Quick Tools ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) and select **Freeze/Unfreeze Panes**.
 
 ![](/images/L-Create-Dropdowns/07.png)
 <br>
 
-**Step 3:** Now create a new report formula. In cell C4 type [ **=jDropdown()** ](/wIndex/jDropdown.html). 
+**Step 4:** Delete the existing jDropDown formulas from cells C7, C8, and C9. You will be rebuilding these formulas form scratch, so we have to remove them from this report.
+
+![](/images/L-Create_Dropdowns/RemovejDropDown.png)
+
+**Step 5:** Now create a new report formula. In cell C4 type [ **=jDropdown()** ](/wIndex/jDropdown.html). 
 
 ![](/images/L-Create-Dropdowns/08.png)
 <br>
 
-**Step 4:** Now select the **DataPortal** argument section and type **"NorthwindCustomersDropdown_MyName"**.
+**Step 6:** Now select the **DataPortal** argument section and type **"NorthwindCustomersDropdown_MyName"**.
 
 ![](/images/L-Create-Dropdowns/09.png)
 <br>
 
-**Step 5:** For this example, there are no parameters. Select **MultiSelect** and type **FALSE**. Then, in **Target Cell**, type **C17**. 
+**Step 7:** For this example, there are no parameters. Select **MultiSelect** and type **FALSE**. Then, in **Target Cell**, type **C17**. 
 
 ![](/images/L-Create-Dropdowns/10.png)
 <br>
 
-**Step 6:** Scroll down to **Value Column Name** and **Display Column Name** and input **CompanyName** and **DisplayText** respectively.
+**Step 8:** Scroll down to **Value Column Name** and **Display Column Name** and input **CompanyName** and **DisplayText** respectively.
 
 ![](/images/L-Create-Dropdowns/11.png)
 <br>
 
-**Step 7:** Scroll to the bottom of the function wizard and select the **Instruction Text** argument. Type **Select a Customer**. Then click **OK** to confirm the changes.
+**Step 9:** Scroll to the bottom of the function wizard and select the **Instruction Text** argument. Type **Select a Customer**. Then click **OK** to confirm the changes.
 
 ![](/images/L-Create-Dropdowns/12.png)
 <br>
 
-**Step 8:** Right click cell B17 where the text **Company Name** is located. Then select **Hyperlink** to create a hyperlink.
+**Step 10:** Right click cell B17 where the text **Company Name** is located. Then select **Hyperlink** to create a hyperlink.
 
 ![](/images/L-Create-Dropdowns/13.png)
 <br>
 
-**Step 9:** Click on **Place in This Document** and point the **Cell Reference** to the [jDropdown()](/wIndex/jDropdown.html). In this case, it is in cell **F7**.
+**Step 11:** Click on **Place in This Document** and point the **Cell Reference** to the [jDropdown()](/wIndex/jDropdown.html). In this case, it is in cell **F7**.
 
 ![](/images/L-Create-Dropdowns/14.png)
 <br>
 
-**Step 10:** Select **ScreenTip**. Then, in the textbox, type **Interject Dropdown**. Select **OK** in both open windows to save the hyperlink.
+**Step 12:** Select **ScreenTip**. Then, in the textbox, type **Interject Dropdown**. Select **OK** in both open windows to save the hyperlink.
 
 ![](/images/L-Create-Dropdowns/15.png)
 <br>
 
-**Step 11:** Now select the hyperlink you just made and type **Market** into the search options. Notice that there are 4 options. Select **BOTTM - Bottom-Dollar Markets**.
+**Step 13:** Now select the hyperlink you just made and type **Market** into the search options. Notice that there are 4 options. Select **BOTTM - Bottom-Dollar Markets**.
 
 ![](/images/L-Create-Dropdowns/16.png)
 <br>
 
-**Step 12:** Now that a Company has been selected, **Pull** the report.
+**Step 14:** Now that a Company has been selected, **Pull** the report.
 
 ![](/images/L-Create-Dropdowns/17.png)
 <br>
 
-**Step 13:** The pull will only return the **Bottom-Dollar Markets** data.
+**Step 15:** The pull will only return the **Bottom-Dollar Markets** data.
 
 ![](/images/L-Create-Dropdowns/18.png)
 <br>
