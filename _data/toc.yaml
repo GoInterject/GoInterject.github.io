@@ -138,7 +138,7 @@ getstarted:
         path: /wGetStarted/L-Drill-TheThreeWays.html
     - title: "Lab Create: Hiding Rows & Columns"
       path: /wGetStarted/L-Create-HideRowCol.html
-    - title: "Lab Create: jDropdowns"
+    - title: "Lab Create: Building jDropdowns"
       path: /wGetStarted/L-Create-Dropdowns.html
     - title: "Lab Create: Working with Pivot Tables"
       path: /wGetStarted/L-Create-PivotTable.html
