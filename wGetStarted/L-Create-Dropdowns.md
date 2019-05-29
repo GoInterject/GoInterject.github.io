@@ -91,24 +91,24 @@ This will bring up the Customer Aging Summary.
 ![](/images/L-Create-Dropdowns/08.png)
 <br>
 
-**Step 4:** Now select the **DataPortal** argument section and type **"NorthwindCustomersDropdown_MyName"**.
+**Step 4:** Now select the **DataPortal** argument section and using a [jDataPortal](/wIndex/jDataPortal.html) insert **"jDataPortal(NorthwindCustomersDropdown_MyName,1)"**.
 
-![](/images/L-Create-Dropdowns/09.png)
+![](/images/L-Create-Dropdowns/09.jpg)
 <br>
 
 **Step 5:** For this example, there are no parameters. Select **MultiSelect** and type **FALSE**. Then, in **Target Cell**, type **C17**. 
 
-![](/images/L-Create-Dropdowns/10.png)
+![](/images/L-Create-Dropdowns/10.jpg)
 <br>
 
 **Step 6:** Scroll down to **Value Column Name** and **Display Column Name** and input **CompanyName** and **DisplayText** respectively.
 
-![](/images/L-Create-Dropdowns/11.png)
+![](/images/L-Create-Dropdowns/11.jpg)
 <br>
 
 **Step 7:** Scroll to the bottom of the function wizard and select the **Instruction Text** argument. Type **Select a Customer**. Then click **OK** to confirm the changes.
 
-![](/images/L-Create-Dropdowns/12.png)
+![](/images/L-Create-Dropdowns/12.jpg)
 <br>
 
 **Step 8:** Right click cell B17 where the text **Company Name** is located. Then select **Hyperlink** to create a hyperlink.
