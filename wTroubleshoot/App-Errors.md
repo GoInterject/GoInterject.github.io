@@ -10,8 +10,7 @@ description: Errors can occur for many reasons. Sometimes they are related to th
 ##  **Overview**
 
 Errors can occur for many reasons. Sometimes they are related to the environment or computer running Interject. It is important you have tools to capture everything that is interacting with Excel so, it is easier diagnose the cause of errors. This leads to faster troubleshooting and repair. To help diagnose any errors, Interject uses a Verbose Logging feature. The ideal goal of Verbose Logging is to help recreate an error and send logs to INTERJECT's support team, where it can be fixed. 
-
-### 
+ 
 
 ###  Turning On Verbose Logging 
 
