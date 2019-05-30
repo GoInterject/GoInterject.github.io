@@ -7,7 +7,7 @@ description: The jDropdown formula is used for filtering on multiple parameters 
 
 ### Overview
 
-The jDropdown formula helps report writers simplify the use of parameters in a data pull or save. It can reduce the rows of data in a report, speeding the report process, sparing server resources, and pulling data more efficiently. It is required that a developer [create the stored procedure](/wGetStarted/L-Dev-jDropdowns.html) to support this formula.
+The jDropdown formula helps report writers simplify the use of parameters in a data pull or save. It can reduce the number of data-populated in a report, speed up the reporting process, spare server resources, and help pull data more efficiently. It is required that a developer [create the stored procedure](/wGetStarted/L-Dev-jDropdowns.html) to support this formula.
 
 ###  Setting Up The Data Connection
 
@@ -26,7 +26,7 @@ The jDropdown formula helps report writers simplify the use of parameters in a d
 ![](/images/L-Dev-CustAging/03.jpg)
 <br>
 
-**Step 4:** The Connection Details page needs to contain the following information for the new connection: Type **NorthwindExampleDB_MyName** in Connection Name, but include your own name in the suffix. Each connection name must be unique. For the connection string, type **Server=myServerAddress;Database=myDataBase;Trusted_Connection=True;**. You are using Windows authentication, so username and password are not required. Replace the server name and database name to match the one you are using for this walkthrough. 
+**Step 4:** The Connection Details page needs to contain the following information for the new connection: Type **NorthwindExampleDB_MyName** in Connection Name, but include your own name in the suffix. Each connection name must be unique. For the connection string, type **Server=myServerAddress;Database=myDataBase;Trusted_Connection=True;**. You are using Windows authentication, so username and password are not required. Make sure the server name and database name match the ones you are using for this walkthrough. 
 
 ![](/images/L-Dev-CustAging/04.jpg)
 <br>
@@ -41,7 +41,7 @@ The jDropdown formula helps report writers simplify the use of parameters in a d
 ![](/images/L-Dev-CustAging/06.jpg)
 <br>
 
-The Database Data Connection is now ready to be used in a Data Portal. You should always test a new connection with your security context. Follow the steps in [ Data Connections ](/wPortal/Data-Connections.html) to test your connection string. 
+The Database Data Connection is now ready to be used in a Data Portal. You should always test a new connection with your security context. Follow the steps in the [ Data Connections ](/wPortal/Data-Connections.html) walkthrough to test your connection string. 
 
 ### Setting up the Data Portal
 
@@ -50,7 +50,7 @@ The Database Data Connection is now ready to be used in a Data Portal. You shoul
 ![](/images/L-Dev-CustAging/07.jpg)
 <br>
 
-**Step 2:** Select New Data Portal 
+**Step 2:** Select New Data Portal. 
 
 ![](/images/L-Dev-CustAging/08.jpg)
 <br>
@@ -60,7 +60,7 @@ The Database Data Connection is now ready to be used in a Data Portal. You shoul
 ![](/images/L-Create-Dropdowns/04.png)
 <br>
 
-**Step 4:** Click **Create Data Portal** to save the new data portal. Additional options will show after selecting the Create Data Portal button for adding parameters. 
+**Step 4:** Click **Create Data Portal** to save the new data portal. Additional options for adding parameters will show after selecting the Create Data Portal button. 
 
 ![](/images/L-Create-Dropdowns/05.png)
 <br>
@@ -85,12 +85,12 @@ This will bring up the Customer Aging Summary.
 
 ![](/images/L-Create_Dropdowns/RemoveHyperlinks.png)
 
-**Step 3:** Next, unfreeze panes by going into [ Quick Tools ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) and select **Freeze/Unfreeze Panes**.
+**Step 3:** Next, unfreeze panes by going into [ Quick Tools ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) and selecting **Freeze/Unfreeze Panes**.
 
 ![](/images/L-Create-Dropdowns/07.png)
 <br>
 
-**Step 4:** Delete the existing jDropDown formulas from cells C7, C8, and C9. You will be rebuilding these formulas form scratch, so we have to remove them from this report.
+**Step 4:** Delete the existing jDropDown formulas from cells C7, C8, and C9. You will be rebuilding these formulas from scratch, so we have to remove them from this report.
 
 ![](/images/L-Create_Dropdowns/RemovejDropDown.png)
 
@@ -99,7 +99,7 @@ This will bring up the Customer Aging Summary.
 ![](/images/L-Create-Dropdowns/08.png)
 <br>
 
-**Step 4:** Now select the **DataPortal** argument section and using a [jDataPortal](/wIndex/jDataPortal.html) insert **"jDataPortal(NorthwindCustomersDropdown_MyName,1)"**.
+**Step 4:** Next, select the **DataPortal** argument section, and using a [jDataPortal](/wIndex/jDataPortal.html) insert **"jDataPortal(NorthwindCustomersDropdown_MyName,1)"**.
 
 ![](/images/L-Create-Dropdowns/09.jpg)
 <br>
@@ -149,4 +149,4 @@ This will bring up the Customer Aging Summary.
 ![](/images/L-Create-Dropdowns/18.png)
 <br>
 
-To build the stored procedure that allows this formula work, continue onto the [developer section of this lab](/wGetStarted/L-Dev-jDropdowns.html).
+To build the stored procedure that allows this formula to work, continue to the [developer section of this lab](/wGetStarted/L-Dev-jDropdowns.html).
