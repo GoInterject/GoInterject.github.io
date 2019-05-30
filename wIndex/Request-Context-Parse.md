@@ -17,11 +17,27 @@ The Request Context Parse stored procedure is used as a callable helper procedur
 
 SET ANSI_NULLS ON
 GO
-
 SET QUOTED_IDENTIFIER ON
 GO
-
-CREATE proc [dbo].[RequestContext_Parse]
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[RequestContext_Parse]') AND type in (N'P', N'PC'))
+BEGIN
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE [dbo].[RequestContext_Parse] AS' 
+END
+GO
+/*************************************************************************
+ * INTERJECT DATA SYSTEMS, INC CONFIDENTIAL
+ *
+ *  © 2016 Interject Data Systems, Inc.
+ *  All Rights Reserved.
+ * 
+ * NOTICE:  All information contained herein is, and remains the property of Interject Data Systems, Incorporated. 
+ * The intellectual and technical concepts contained herein are proprietary to Interject Data Systems, Incorporated
+ * and may be covered by U.S. and Foreign Patents, patents in process, and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material is strictly forbidden unless prior written permission is obtained
+ * from Interject Data Systems, Incorporated.
+ */
+ 
+ALTER proc [dbo].[RequestContext_Parse]
 
 	@Interject_RequestContext		nvarchar(max)
 	,@ExcelVersion					nvarchar(100)	 = '' output
@@ -51,6 +67,7 @@ as
 /*
 This SP is a helper to pull all data from the RequestContext that is passed from Interject. Below
 are examples to pull all the data or just a couple values that you need (which is much less typing)
+
 */
 
 	set nocount on 
@@ -75,7 +92,6 @@ are examples to pull all the data or just a couple values that you need (which i
 		,@Interject_LoginAuthTypeID				= T.c.value('./UserContext[1]/LoginAuthTypeId[1]',		'int') 
 		,@Interject_LoginDateUTC				= T.c.value('./UserContext[1]/LoginDateUtc[1]',			'datetime') 
 		,@UserContextEncrypted					= T.c.value('./UserContextEncrypted[1]',				'nvarchar(100)') 
-		,@Interject_XMLDataToSave				= T.c.value('./XMLDataToSave[1]',						'nvarchar(max)') 
 	from @Interject_RequestContextXML.nodes('/RequestContext') T(c)
 
 	set @Interject_XMLDataToSave = cast(@Interject_RequestContextXML.query('/RequestContext/XMLDataToSave') as nvarchar(max))
@@ -141,7 +157,6 @@ are examples to pull all the data or just a couple values that you need (which i
 			,1
 			,''
 		)
-GO
 
 ```
 </div>
