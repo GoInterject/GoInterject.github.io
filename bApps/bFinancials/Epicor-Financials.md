@@ -52,11 +52,7 @@ description: INTERJECT™ Financials for Epicor Enterprise (This would cover top
                 </td>
             </tr>
 </table>
-{::comment}
-In addition to these reports, Interject Financials for Epicor includes 
-- **44 data Data Portals for Financials for Spreadsheets**
-- **3 Data Portals to migrate FRx Reports**
-{:/comment}
+**Note:** All reports are printable using the greyscale or black and white setting on your local printer.
 
 ### Prerequisites
 
@@ -83,4 +79,3 @@ In addition to these reports, Interject Financials for Epicor includes
                 </td>
             </tr>
 </table>
-**Note:** All reports are printable using the greyscale or black and white setting on your local printer.

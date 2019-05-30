@@ -70,6 +70,8 @@ install:
     path: /bApps/bFinancials/InitialDataLoad.html
   - title: Deactivate Databases
     path: /bApps/bFinancials/DeactiveDB.html
+  - title: Prepare FRx Report Spec File
+    path: /bApps/bFinancials/PrepSpecFile.html
   - title: FRx Migration
     path: /bApps/bFinancials/FRxMigration.html
   #- title: Security & Updates
