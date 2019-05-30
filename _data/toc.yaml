@@ -284,6 +284,11 @@ index:
       path: /wIndex/FinCube---The-Financial-Cube.html
     - title: SegmentInfo - Segment Search
       path: /wIndex/SegmentInfo---Segment-Search.html
+  - sectiontitle: Common Stored Procedures
+    path:
+    section:
+      - title: Request Context Parse
+        path: /wIndex/Request-Context-Parse.html
   - title: INTERJECT Hotkey Index
     path: /wIndex/INTERJECT-Hotkey-Index.html
 
