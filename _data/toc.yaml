@@ -138,8 +138,8 @@ getstarted:
         path: /wGetStarted/L-Drill-TheThreeWays.html
     - title: "Lab Create: Hiding Rows & Columns"
       path: /wGetStarted/L-Create-HideRowCol.html
-    #- title: "Lab Create: Parameter Dropdowns"
-    #  path: /wGetStarted/L-Create-Dropdowns.html
+    - title: "Lab Create: Building jDropdowns"
+      path: /wGetStarted/L-Create-Dropdowns.html
     - title: "Lab Create: Working with Pivot Tables"
       path: /wGetStarted/L-Create-PivotTable.html
     - title: "Lab Create: Special Column Definitions"
@@ -179,6 +179,8 @@ getstarted:
         path: /wGetStarted/L-Dev-CustomerAging.html
       - title: "Lab Dev: Customer Orders"
         path: /wGetStarted/L-Dev-CustomerOrders.html
+      - title: "Lab Dev: jDropdowns"
+        path: /wGetStarted/L-Dev-jDropdowns.html
     - sectiontitle: Advanced Data Pull
       path: /wGetStarted/Advanced-Data-Pull.html
       section:
@@ -220,8 +222,8 @@ index:
           path: /wIndex/ReportSave.html
         - title: ReportVariable()
           path: /wIndex/ReportVariable.html
-        #- title: jDropdown()
-        #  path: /wIndex/jDropdown.html
+        - title: jDropdown()
+          path: /wIndex/jDropdown.html
     - sectiontitle: Formatting Functions
       path: /wIndex/Formatting-Functions-Landing.html
       section:
