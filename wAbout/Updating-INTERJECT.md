@@ -32,7 +32,7 @@ To watch a quick walk-through video, click on the icon:
 
 ![](/images/Updating/05.png)
 
-**Step 5:** Next, you will need to read and accept the License Agreement and click **Next** to continue. 
+**Step 5:** Next, you will need to read and accept the License Agreement. Then click **Next** to continue. 
 
 ![](/images/Updating/06.png)   
 
