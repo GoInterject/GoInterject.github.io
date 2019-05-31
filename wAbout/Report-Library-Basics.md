@@ -59,7 +59,7 @@ Before opening a report from the library, look through the Folders and Report Li
     * _Red_ : In Development 
     * _Gray_ : Superseded, this is an older version of a previous live report 
 
-**Section 4:** If you are unsure what the report is for, clicking **View Documentation** on the upper right-hand corner is particularly useful. It should include the history of version changes and a manual explaining how to use the report. If the link is grey, the documentation is not yet ready. 
+**Section 4:** If you are unsure what the report is for, clicking **View Documentation** on the upper right-hand corner is particularly useful. It should include the history of version changes and a manual that explains how to use the report. If the link is grey, the documentation is not yet ready. 
 
  ![](/images/ReportLibraryBasics/2.05UsingtheRL-ViewDocumentation.png)   
 
