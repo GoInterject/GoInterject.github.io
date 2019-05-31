@@ -50,7 +50,7 @@ Before opening a report from the library, look through the Folders and Report Li
 
 ![](/images/ReportLibraryBasics/2.02UsingtheRL-Report-Links.png)
 
-**Section 3:** Select which version you want to use. It is recommended you use the most recent (green) version, as it is likely the best and most stable. Link Version shows the details of a specific report and any of its available versions. It is important to check Link Version before selecting **Open Link** .  If the you are an administrator or report writer, all previously uploaded versions are shown.  Each version is specified in the box at the bottom right of the Report Library window, and they are color-coded to show the stage of development (see image above). 
+**Section 3:** Select which version you want to use. It is recommended you use the most recent (green) version, as it is likely the best and most stable. Link Version shows the details of a specific report and any of its available versions. It is important to check Link Version before selecting **Open Link** . Each version is specified in the box at the bottom right of the Report Library window, and they are color-coded to show the stage of development (see image above). 
 
 ![](/images/ReportLibraryBasics/2.03UsingtheRL-LinkVersion.png)   
 
