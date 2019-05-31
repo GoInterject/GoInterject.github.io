@@ -40,7 +40,7 @@ To watch a quick walk-through video, click on the icon:
 
 ![](/images/Updating/07.png)
 
-**Step 7:** Click **Finish** to close the installer and your done.
+**Step 7:** Click **Finish** to close the installer and you're done.
 
 ![](/images/Updating/08.png)
 
