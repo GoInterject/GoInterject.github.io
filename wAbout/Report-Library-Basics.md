@@ -54,6 +54,8 @@ Before opening a report from the library, look through the Folders and Report Li
 
 ![](/images/ReportLibraryBasics/2.03UsingtheRL-LinkVersion.png)   
 
+**Note:** If the you are an administrator or report writer, all previously uploaded versions are shown.
+
     * _Green_ : Currently Live 
     * _Yellow_ : In Testing 
     * _Red_ : In Development 
