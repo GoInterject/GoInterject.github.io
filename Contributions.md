@@ -14,7 +14,7 @@ Step 4: The changes will be reviewed in the patch branch
 
 Step 5: Once all changes are reviewed and approved, that patch branch will be merged into the master branch on a deployment schedule.
 
-![](/images/Documentation Processes.png)
+![](/images/Documentation processes.png)
 ### Screenshot Requirements
 
 Screenshots for this website are made consistent by using a window capture program called [Snagit](https://www.techsmith.com/screen-capture.html).
