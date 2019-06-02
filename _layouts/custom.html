@@ -80,9 +80,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	
 
-	{% if site.GH_ENV == "gh_pages" %}
+	<!-- {% if site.GH_ENV == "gh_pages" %}
 	<meta name="robots" content="noindex">
-	{% endif %}
+	{% endif %} -->
 	{% if page.hide_from_sitemap %}<meta name="robots" content="noindex" />{% endif %}
     {% seo %}
 </head>	
@@ -218,16 +218,6 @@
 										"title": "{{ page.title }}",
 										"permalink": "https://github.com/gointerject/gointerject.github.io/blob/master/{{ page.path }}"
 									};
-									(function(d, c, j) {
-										if (!document.getElementById(j)) {
-											var pd = d.createElement(c),
-												s;
-											pd.id = j;
-											pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'https://i0.poll.fm/js/rating/rating.js';
-											s = document.getElementsByTagName(c)[0];
-											s.parentNode.insertBefore(pd, s);
-										}
-									}(document, 'script', 'pd-rating-js'));
 								</script>
 							</div>
 							{% endif %}
@@ -272,9 +262,9 @@
 	<!-- The Modal for viewing images -->
 	<div id="modal-main" class="modal" >
 		<img class="modal-content nohover" id="modal-img" style="padding-top: 3%;"/>
-		<span class="close-modal" style="padding-top: 3%;">
+		<!-- <span class="close-modal" style="padding-top: 3%;">
 			<i class="fa fa-times-circle fa-1x"></i>
-		</span>
+		</span> -->
 	</div>
 
 	{% if page.path == "404.html" %}
