@@ -1,3 +1,9 @@
+---
+title: Contributions
+layout: custom
+sitemap: false
+---
+
 ## Overview
 
 Hello and thank you for wanting to make a contribution to the INTERJECT. These are the guidelines that we use to make sure our documentation is the highest quality, and consistent. Included in this document is the documentation cycle from creation to approval.
@@ -14,7 +20,8 @@ Step 4: The changes will be reviewed in the patch branch
 
 Step 5: Once all changes are reviewed and approved, that patch branch will be merged into the master branch on a deployment schedule.
 
-![](/images/Documentation Processes.png)
+![](/images/Documentation process.png)
+
 ### Screenshot Requirements
 
 Screenshots for this website are made consistent by using a window capture program called [Snagit](https://www.techsmith.com/screen-capture.html).
