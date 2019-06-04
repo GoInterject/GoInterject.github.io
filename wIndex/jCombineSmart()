@@ -1,12 +1,15 @@
 ---
-title: jCombine()
+title: jCombineSmart()
 layout: custom
-keywords: [jcombine, function]
-description: The jCombine() function is helpful for developers who want to concatenate the values of cells while simultaneously skipping any empty cell. 
+keywords: [jcombine, function, jcombinesmart]
+description: The jCombineSmart() function is helpful for developers who want to concatenate the values of cells while simultaneously removing duplicates and skipping any empty cells. 
 ---
 ## Function Summary
 
-The jCombine() function is helpful for developers who want to concatenate the values of cells while simultaneously skipping any empty cell. jCombine() can use both a cell range and a list of cell addresses. A list of cell addresses will require a delimiting character between each cell address in the list. The delimiter character can be custom, but it is a comma by default. When using jCombine() in a list of ranges that are not continuous it needs to have a second pair of parentheses around the first set.
+The jCombineSmart() function is helpful for developers who want to concatenate the values of cells while simultaneously skipping any empty cell. jCombineSmart()can use both a cell range and a list of cell addresses. A list of cell addresses will require a delimiting character between each cell address in the list. The delimiter character can be custom, but it is a comma by default. When using jCombineSmart() in a list of ranges that are not continuous it needs to have a second pair of parentheses around the first set.
+
+
+#####################################  STOPPED HERE ##########################################
 
 ### Function Arguments
 
