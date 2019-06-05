@@ -15,14 +15,19 @@ $(document).ready(function(){
             // Get the image and insert it inside the modal 
             modal.style.display = "block";
             modalImg.src = thisImg.attr('src');
-
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close-modal")[0];
             
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() { 
+            // When the user clicks on the modal then close the modal
+            modal.onclick = function() {
                 modal.style.display = "none";
             }
+
+            // Get the <span> element that closes the modal
+            // var span = document.getElementsByClassName("close-modal")[0];
+            
+            // When the user clicks on <span> (x), close the modal
+            // span.onclick = function() { 
+            //     modal.style.display = "none";
+            // }
         };
     });
 });

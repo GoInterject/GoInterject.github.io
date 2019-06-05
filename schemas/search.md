@@ -6,6 +6,7 @@ notoc: false
 notags: false
 title: "Docs search"
 tree: false
+sitemaps: false
 ---
 
 <style type='text/css'>
