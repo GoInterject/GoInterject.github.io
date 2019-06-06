@@ -61,7 +61,6 @@
     .sidebar {
         position: fixed;
         width: 100%;
-        z-index: 100;
     }
     .main-content {
         padding: 22px 35px 25px 30px;
@@ -116,12 +115,12 @@
         font-size: 16px;
     }
     .header {
-        height: 100px;
+        height: 115px;
     }
     .nav-secondary-tabs,
     .nav-secondary {
         background-color: $black;
-        height: 55px;
+        height: 115px;
     }
     .nav-secondary input[type=search] {
         background: rgb(78, 77, 77) url(/images/search.png) no-repeat;
@@ -165,11 +164,11 @@
         top: 51px;
         left: 0;
         display: block;
-        padding: 0;
         overflow-x: hidden;
         overflow-y: auto;
         position: fixed;
         width: 100%;
+        margin-top: 40px;
     }
     .sidebar-home,
     .sidebar-home .affix {
@@ -245,9 +244,11 @@
     h4 {
         font-size: 16px;
     }
-    .header,
+    .header {
+        height: 115px;
+    }
     .nav-secondary-tabs {
-        height: 55px;
+        height: 115px;
     }
     .nav-secondary {
         background: $black;
@@ -277,11 +278,11 @@
         top: 51px;
         left: 0;
         display: block;
-        padding: 0;
         overflow-x: hidden;
         overflow-y: auto;
         position: fixed;
         width: 100%;
+        margin-top: 40px;
     }
     .component-full {
         text-align: center;
