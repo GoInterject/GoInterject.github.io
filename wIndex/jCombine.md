@@ -13,7 +13,7 @@ The jCombine() function is helpful for developers who want to concatenate the va
 | Argument Name | Description | Default | Optional |
 |----------------|-------------|---------|----------|
 |Selected Range |This designates a range of cells from a worksheet that will be concatenated. This can also be used with a delimited list of cells.||NO|
-|Delimeter|This defines a character value that will designate a separation between cell values. The default delimiter is a comma.|","|NO|
+|Delimeter|This defines a character value that will designate a separation between cell values. The default delimiter is a comma.|","|YES|
 
 ### Excel Formula Bar Example
 
