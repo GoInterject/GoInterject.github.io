@@ -60,9 +60,8 @@ When saving screenshots place them in the /images/[DirectoryToYourPageFolder] fo
 
 All pages must have Jekyll headers added to the top of the page in order for our search function to show it correctly. The way to denote the jekyll is by three hyphens "---" at the top and bottom of the text. We currently use three parameters within the header
 
-``` python
+``` markdown
 
-print(x)
 ---
 title: Contributions
 layout: custom
