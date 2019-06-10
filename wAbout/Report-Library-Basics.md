@@ -50,16 +50,18 @@ Before opening a report from the library, look through the Folders and Report Li
 
 ![](/images/ReportLibraryBasics/2.02UsingtheRL-Report-Links.png)
 
-**Section 3:** Select which version you want to use. It is recommended you use the most recent (green) version, as it is likely the best and most stable. Link Version shows the details of a specific report and any of its available versions. It is important to check Link Version before selecting **Open Link** .  If the you are an administrator or report writer, all previously uploaded versions are shown.  Each version is specified in the box at the bottom right of the Report Library window, and they are color-coded to show the stage of development (see image above). 
+**Section 3:** Select which version you want to use. It is recommended you use the most recent (green) version, as it is likely the best and most stable. Link Version shows the details of a specific report and any of its available versions. It is important to check Link Version before selecting **Open Link** . Each version is specified in the box at the bottom right of the Report Library window, and they are color-coded to show the stage of development (see image above). 
 
 ![](/images/ReportLibraryBasics/2.03UsingtheRL-LinkVersion.png)   
+
+**Note:** If the you are an administrator or report writer, all previously uploaded versions are shown.
 
     * _Green_ : Currently Live 
     * _Yellow_ : In Testing 
     * _Red_ : In Development 
     * _Gray_ : Superseded, this is an older version of a previous live report 
 
-**Section 4:** If you are unsure what the report is for, clicking **View Documentation** on the upper right-hand corner is particularly useful. It should include the history of version changes and a manual explaining how to use the report. If the link is grey, the documentation is not yet ready. 
+**Section 4:** If you are unsure what the report is for, clicking **View Documentation** on the upper right-hand corner is particularly useful. It should include the history of version changes and a manual that explains how to use the report. If the link is grey, the documentation is not yet ready. 
 
  ![](/images/ReportLibraryBasics/2.05UsingtheRL-ViewDocumentation.png)   
 
