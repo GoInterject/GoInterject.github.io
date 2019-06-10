@@ -6,20 +6,32 @@
 
 @media only screen 
     and (min-width : 376px)
-    and (max-width : 1150px) {  
+    and (max-width : 1174px) {  
     .nav-primary,
     .hero-text,
-    .banner,
+    .banner-main {
+        position: fixed;
+        width: 100%;
+    }
+    .modal {
+        padding-top: 170px;
+    }
     ul.primary.nav.navbar-nav,
     .nav-secondary .logo {
         display: none;
     }
+    .nav-secondary-tabs.affix-top {
+        display: none;
+    }
+    .nav-secondary-tabs.affix {
+        display: none;
+    }
     .header{
-        height: 140px;
+        height: 130px;
     }
 
     .nav-secondary-tabs {
-        height: 55px;
+        height: inherit;
     }
     .tabs li a {
         font-size: 13px;
@@ -85,13 +97,18 @@
   and (max-device-width: 670px)  {
     .logo,
     .hero-text,
-    .banner,
+    .banner {
+        display: none;
+    }
     .ctrl-right {
         display: none;///// CHECK THIS /////
     }
     .nav-container {
         overflow: visible;
         height: auto;
+    }
+    .container-fluid {
+        overflow: hidden;
     }
 }
 
@@ -120,7 +137,14 @@
         font-size: 16px;
     }
     .header {
-        height: 140px;
+        height: 130px;
+    }
+    .banner-main {
+        position: fixed;
+        width: 100%;
+    }
+    .modal {
+        padding-top: 170px;
     }
     .nav-secondary-tabs .search-form input[type=search] {
         min-width: auto;
@@ -131,6 +155,7 @@
     .nav-secondary {
         background-color: $black;
         height: inherit;
+        overflow: hidden;
     }
     .nav-secondary input[type=search] {
         background: rgba(255, 255, 255, 0.17) url(/images/search.png) no-repeat;
@@ -157,7 +182,7 @@
 
     .tabs li a {
         color: #fff;
-        padding: 17px 6px 10px 4px;
+        padding: 8px 6px 10px 4px;
         float: left;
         opacity: 0.7;
         font-size: 12px;
@@ -166,7 +191,7 @@
         padding: 120px 25px;
     }
     .main-content {
-        padding: 10px 25px;
+        padding: 130px 25px;
     }
     .sidebar,
     .sidebar-home {
@@ -258,10 +283,17 @@
         font-size: 16px;
     }
     .header {
-        height: 140px;
+        height: 130px;
+    }
+    .banner-main {
+        position: fixed;
+        width: 100%;
+    }
+    .modal {
+        padding-top: 170px;
     }
     .nav-secondary-tabs {
-        height: 115px;
+        height: 130px;
     }
     #tabs ul {
         display: inline-flex;
@@ -289,6 +321,7 @@
     .nav-secondary {
         background: $black;
         height: inherit;
+        overflow: hidden
     }
     .content {
         padding: 120px 20px;
@@ -343,7 +376,7 @@
   and (max-device-width: 1110px) {
     .logo {
         margin: 12px 10px 0 10px;
-        width: 130px;
+        width: 120px;
     }
     h1,
     h2,
