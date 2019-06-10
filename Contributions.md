@@ -58,13 +58,15 @@ When saving screenshots place them in the /images/[DirectoryToYourPageFolder] fo
 
 ### Adding Jekyll Headers to Page
 
-All pages must have Jekyll headers added to the top of the page in order for our search function to show it correctly. The way to denote the jekyll is by three hyphens "---" at the top and bottom of the text. We currently use three parameters within the header
+All pages must have Jekyll headers added to the top of the page in order for our search function to show it correctly. The way to denote the jekyll is by three hyphens "---" at the top and bottom of the text.
 
 ``` markdown
 Example of Jekyll Header
 ---
 title: Contributions #Name of Page
 layout: custom #Keep as custom
+keyword: #Whatever the document is about
+description: #A short description
 sitemap: True #Lets google know this needs to be indexed 
 ---
 ```
