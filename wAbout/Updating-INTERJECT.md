@@ -26,17 +26,13 @@ To watch a quick walk-through video, click on the icon:
 
 ![](/images/Updating/03.png)
 
-**Note:** If this popup appears at any point without having clicked the **Check for Updates** button, it means that INTERJECT has released an important update. INTERJECT will not lock up into updating at any time, so its okay to wait briefly. It is recommended, however, that you update at the earliest convenience. 
+**Note:** If this popup appears at any point without having clicked the **Check for Updates** button, it means that INTERJECT has released an important update. INTERJECT will not lock up into updating at any time, so its okay to postpone it momentarily, but its recommended, however, that you update at the earliest convenience. 
 
-**Step 4:** After clicking **Get Update**, the Interject Excel Add-in Setup will pop up. Interject requires Excel to be closed to update. Click the exit button to close excel.
-
-![](/images/Updating/04.png)
-
-Once Excel has been closed click **Next** to continue the update.
+**Step 4:** After clicking **Get Update**, the Interject Excel Add-in Setup will pop up. Click the exit button to close excel. Once Excel has been closed, click **Next** to continue the update.
 
 ![](/images/Updating/05.png)
 
-**Step 5:** Next, you will need to read and accept the License Agreement and click **Next** to continue. 
+**Step 5:** Next, you will need to read and accept the License Agreement. Then click **Next** to continue. 
 
 ![](/images/Updating/06.png)   
 
@@ -44,7 +40,7 @@ Once Excel has been closed click **Next** to continue the update.
 
 ![](/images/Updating/07.png)
 
-**Step 7:** Click **Finish** to close the installer and your done.
+**Step 7:** Click **Finish** to close the installer and you're done.
 
 ![](/images/Updating/08.png)
 
