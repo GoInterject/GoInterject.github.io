@@ -56,6 +56,20 @@ When reviewing for publication, check that no assumptions are made regarding ste
 
 When saving screenshots place them in the /images/[DirectoryToYourPageFolder] folder of the website. If a folder for your page does not exist, please add one and place all images in that folder. This ensures the most simple naming conventions of 01, 02, 03 as the images are displayed on the website. 
 
+### Adding Jekyll Headers to Page
+
+All pages must have Jekyll headers added to the top of the page in order for our search function to show it correctly. The way to denote the jekyll is by three hyphens "---" at the top and bottom of the text. We currently use three parameters within the header
+
+``` python
+
+print(x)
+---
+title: Contributions
+layout: custom
+sitemap: false
+---
+```
+
 ### Commit Message Standards
 
 All commit messages should follow this general layout. This is to ensure consistency in determining what has been changed.
