@@ -88,7 +88,7 @@
 /* Portrait and Landscape */
 @media only screen 
   and (min-device-width: 320px) 
-  and (max-device-width: 670px)  {
+  and (max-device-width: 767px)  {
     .logo,
     .hero-text,
     .banner {
@@ -128,7 +128,7 @@
 /* Portrait */
 @media only screen 
   and (min-device-width: 320px) 
-  and (max-device-width: 667px)
+  and (max-device-width: 767px)
   and (orientation: portrait) {
     h1,
     h2,
@@ -275,7 +275,7 @@
 /* Landscape */
 @media only screen 
   and (min-device-width: 320px) 
-  and (max-device-width: 667px) 
+  and (max-device-width: 767px) 
   and (orientation: landscape) {
     h1,
     h2,
