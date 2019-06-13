@@ -121,7 +121,7 @@ This will bring up the Customer Aging Summary.
 
 **Step 10:** While still selected on cell F7. Click on **Name Box** and change the name to **compDLL**
 
-![](/images/L-Create-Dropdowns/12.5.jpg)
+![](/images/L-Create-Dropdowns/12.5.png)
 <br>
 
 **Step 11:** Right click cell B17 where the text **Company Name** is located. Then select **Hyperlink** to create a hyperlink.
