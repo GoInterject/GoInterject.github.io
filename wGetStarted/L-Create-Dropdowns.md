@@ -94,7 +94,7 @@ This will bring up the Customer Aging Summary.
 
 ![](/images/L-Create_Dropdowns/RemovejDropDown.png)
 
-**Step 5:** Now create a new report formula. In cell C4 type [ **=jDropdown()** ](/wIndex/jDropdown.html). 
+**Step 5:** Now create a new report formula. In cell F7 type [ **=jDropdown()** ](/wIndex/jDropdown.html). 
 
 ![](/images/L-Create-Dropdowns/08.png)
 <br>
@@ -119,32 +119,37 @@ This will bring up the Customer Aging Summary.
 ![](/images/L-Create-Dropdowns/12.jpg)
 <br>
 
-**Step 10:** Right click cell B17 where the text **Company Name** is located. Then select **Hyperlink** to create a hyperlink.
+**Step 10:** While still selected on cell F7. Click on **Name Box** and change the name to **compDLL**
+
+![](/images/L-Create-Dropdowns/12.5.jpg)
+<br>
+
+**Step 11:** Right click cell B17 where the text **Company Name** is located. Then select **Hyperlink** to create a hyperlink.
 
 ![](/images/L-Create-Dropdowns/13.png)
 <br>
 
-**Step 11:** Click on **Place in This Document** and point the **Cell Reference** to the [jDropdown()](/wIndex/jDropdown.html). In this case, it is in cell **F7**.
+**Step 12:** Click on **Place in This Document** and point the **Defined Names** to the [jDropdown()](/wIndex/jDropdown.html). In this case, it is in cell **compdll**.
 
 ![](/images/L-Create-Dropdowns/14.png)
 <br>
 
-**Step 12:** Select **ScreenTip**. Then, in the textbox, type **Interject Dropdown**. Select **OK** in both open windows to save the hyperlink.
+**Step 13:** Select **ScreenTip**. Then, in the textbox, type **Interject Dropdown**. Select **OK** in both open windows to save the hyperlink.
 
 ![](/images/L-Create-Dropdowns/15.png)
 <br>
 
-**Step 13:** Now select the hyperlink you just made and type **Market** into the search options. Notice that there are 4 options. Select **BOTTM - Bottom-Dollar Markets**.
+**Step 14:** Now select the hyperlink you just made and type **Market** into the search options. Notice that there are 4 options. Select **BOTTM - Bottom-Dollar Markets**.
 
 ![](/images/L-Create-Dropdowns/16.png)
 <br>
 
-**Step 14:** Now that a Company has been selected, **Pull** the report.
+**Step 15:** Now that a Company has been selected, **Pull** the report.
 
 ![](/images/L-Create-Dropdowns/17.png)
 <br>
 
-**Step 15:** The pull will only return the **Bottom-Dollar Markets** data.
+**Step 16:** The pull will only return the **Bottom-Dollar Markets** data.
 
 ![](/images/L-Create-Dropdowns/18.png)
 <br>
