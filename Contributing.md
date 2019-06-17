@@ -41,19 +41,19 @@ In order to keep screenshots consistent, make sure they are captured in the most
 If the instructions call for a click action, use a **solid, red arrow** pointing to the click location.
 
 **Arrows** should be:
-red,
-7px in thickness,
-below the item if possible,
-have a middle-centered shadow behind them
+* red,
+* 7px in thickness,
+* below the item if possible,
+* have a middle-centered shadow behind them.
 
 No arrow is needed for "Next" or "Finish" actions, or when only a single button is used in a screenshot.
 
 Arrows are not typically needed for buttons that are easy to see and emphasized on the screen. For these, go to “Highlighting Buttons...” For not very well defined buttons, add an arrow indicating to the user where to click.
 
 Use an arrow in a screenshot:
-for click actions that are not buttons,
-to point to inconspicuous or not well-defined buttons,
-to point to tab navigation steps.
+* for click actions that are not buttons,
+* to point to inconspicuous or not well-defined buttons,
+* to point to tab navigation steps.
 
 It is important to **place arrows where they are easily seen**, such as *below* the dark green menu of Excel 2016. 
 
@@ -63,21 +63,21 @@ When discussing a specific portion of a window, a window inside of the screensho
 
 "Next" and "Close" button press actions should also be emphasized by enclosing them in a red rectangle.
 
-Such **outlines/rectangles** should be:
-red,
-2px in thickness,
-surrounding the button,
-have a middle-centered shadow behind them.
+Such **outlines/rectangles** should:
+* be red,
+* be 2px in thickness,
+* be surrounding the button,
+* have a middle-centered shadow behind them.
 
 Limit these outlines to 3 per screenshot for clarity.
 
 Use a red outline/rectangle to
-highlight buttons for button-press actions (use an arrow additionally, if the button is hard to see or not well-defined) (?),
-emphasize a portion of a window,
-emphasize a particular window within a screenshot,
-highlight “Next” and “Close” buttons (do not use an arrow for this),
-highlight clickable data-entry (capture) fields (use after a click action indicated by an arrow, if a data entry field comes up) (do not use both an arrow and a red border for this), (ADD SCREENSHOT)
-highlight checkboxes.
+* highlight buttons for button-press actions (use an arrow additionally, if the button is hard to see or not well-defined) (?),
+* emphasize a portion of a window,
+* emphasize a particular window within a screenshot,
+* highlight “Next” and “Close” buttons (do not use an arrow for this),
+* highlight clickable data-entry (capture) fields (use after a click action indicated by an arrow, if a data entry field comes up) (do not use both an arrow and a red border for this), (ADD SCREENSHOT)
+* highlight checkboxes.
 
 #### Multi-Step Actions in a Single Screenshot (Numbered Steps)
 
@@ -86,11 +86,11 @@ If multiple steps are contained in one image, **label the steps 1, 2, 3,** etc. 
 When using arrows and numbers together, always connect the arrow to a number and ensure that the arrow is projecting from the center of the number circle.
 
 **Number-labeled steps** should be:
-red,
-made using the numbering feature of Snagit,
-have a middle-centered shadow behind them, (?)
-large enough to read, (use Snagit’s default size)
-connected to any red arrows also used in the step.
+* red,
+* made using the numbering feature of Snagit,
+* have a middle-centered shadow behind them, (?)
+* large enough to read, (use Snagit’s default size)
+* connected to any red arrows also used in the step.
 
 For images containing multiple steps, **place steps in an ordered list below the image**, numbered correspondingly and tabbed in once. (Add screenshot)
 
