@@ -24,19 +24,19 @@ Step 5: Once all changes are reviewed and approved, that patch branch will be me
 
 ### Screenshot Requirements
 
-##### When to Include a Screenshot
+#### When to Include a Screenshot
 
 Every step in a documentation page should be represented in a screenshot. Screenshots can contain multiple steps, but every step in the process of a lab or walkthrough should be shown somewhere in a screenshot. The user should be able to look at only the screenshots on a page and know exactly what to do.
 
 Below, we will go through the screenshot creation conventions used for each type of action/step a user must take.
 
-##### Screenshot Software Requirements
+#### Screenshot Software Requirements
 
 Screenshots for our website are made consistent by using a screen capture program called [Snagit](https://www.techsmith.com/screen-capture.html).
 
 In order to keep screenshots consistent, make sure they are captured in the most current software (see above).
 
-##### Click Action (Arrow)
+#### Click Action (Arrow)
 
 If the instructions call for a click action, use a **solid, red arrow** pointing to the click location.
 
@@ -57,7 +57,7 @@ to point to tab navigation steps.
 
 It is important to **place arrows where they are easily seen**, such as *below* the dark green menu of Excel 2016. 
 
-##### Highlighting Buttons, Emphasizing a Portion of a Window, and Next and Close Button Press Steps (Outlining with a Rectangle)
+#### Highlighting Buttons, Emphasizing a Portion of a Window, and Next and Close Button Press Steps (Outlining with a Rectangle)
 
 When discussing a specific portion of a window, a window inside of the screenshot, or button press actions, use a **red outline/rectangle** that is 2px wide around the area/button to highlight it.
 
@@ -79,7 +79,7 @@ highlight “Next” and “Close” buttons (do not use an arrow for this),
 highlight clickable data-entry (capture) fields (use after a click action indicated by an arrow, if a data entry field comes up) (do not use both an arrow and a red border for this), (ADD SCREENSHOT)
 highlight checkboxes.
 
-##### Multi-Step Actions in a Single Screenshot (Numbered Steps)
+#### Multi-Step Actions in a Single Screenshot (Numbered Steps)
 
 If multiple steps are contained in one image, **label the steps 1, 2, 3,** etc. in Snagit. This gives readers more direction when steps are complex.
 
@@ -94,11 +94,11 @@ connected to any red arrows also used in the step.
 
 For images containing multiple steps, **place steps in an ordered list below the image**, numbered correspondingly and tabbed in once. (Add screenshot)
 
-##### Emphasizing Text or a Point in a Screenshot
+#### Emphasizing Text or a Point in a Screenshot
 
 When emphasizing a point, **underline** the particular point with a **2px red line**. Do not use this to highlight buttons within screenshots (instead use the red outline described above).
 
-##### Note on Complex Screenshots
+#### Note on Complex Screenshots
 
 For complex screenshots, include more thorough text narration in the documentation..
 
@@ -106,11 +106,11 @@ If a procedure is extremely involved, use a GIF.
 
 If a screenshot has multiple images, be sure to use an ordered list of steps within it.
 
-##### Note on Popups in Screenshots
+#### Note on Popups in Screenshots
 
 When screen capturing windows that contain popups, make sure the popup appears distinct from the page containing it. To do this, allow the popup to slightly overlap other content in the image. Do not line it up with any other lines on the page. Unless a screenshot of just the pop up is needed (for a special circumstance), make sure to take screenshots of popups with the windows in which they appear; it is important to show all images with as much context as possible. 
 
-##### Screenshots of Excel Content
+#### Screenshots of Excel Content
 
 For screenshots of Excel content:
 
@@ -121,7 +121,7 @@ With the exception of login boxes, **highlight all boxes from clicks to data ent
 Remove the cursor from the page when the screen is being captured, unless the cursor is needed.
 If an image is to appear truncated, manually **add a "ripped" black border**.
 
-##### Tab Navigation in Screenshots
+#### Tab Navigation in Screenshots
 
 When directing tab navigation (and sheet navigation in Excel), point to it with an arrow. This is especially helpful for larger screenshots.
 
