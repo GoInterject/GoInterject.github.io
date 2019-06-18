@@ -9,6 +9,8 @@ description: Step by step guide on using Interject Financials - Publishing Epico
 
 Once you have finished creating a report template using the Interject Financials for Epicor configuration manager, you can publish the report template to your Interject Report Library. Each report template you publish will be versioned, so that you can track changes. You can also set the status of report templates to **Dev**, **Test**, **Live**, or **Superseded**. Once set to live, all users in your organization with access to the report library will see and can use the report template through their Report Library.
 
+In this example, we'll use a template created internally by Interject developers. However, the same process will be applied once you've finished making your own report template following the steps in previous pages of this training section.
+
 
 > To Do:
 >
