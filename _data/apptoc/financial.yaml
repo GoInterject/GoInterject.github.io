@@ -124,6 +124,8 @@ train:
     path: /bApps/bFinancials/Distributions.html
   - title: Budget Reports
     path: /bApps/bFinancials/BudgetReports.html
+  - title: Publishing and Updating in the Report Library
+    path: /bApps/bFinancials/PubReports.html
  #   section:
    #   - title: Working with Rows and Columns
   #      path:
