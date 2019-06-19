@@ -18,7 +18,7 @@ Both of these examples use the [ Customer Aging Detail  ](/wGetStarted/L3.4-Cust
 
 ###  **Hiding Rows**
  
-**Step 1:** With the report opened to the **CustomerAgingDetail** tab, type "Market" into the company name filter and pull the data using Ctrl+Shift+J rot he pull button. Notice on row 61 that Great Lakes Market has an entry with zero value. Rows like this are what we'll hide using the ReportHideRowOrColumn function.
+**Step 1:** With the report opened to the **CustomerAgingDetail** tab, type "Market" into the company name filter and pull the data using Ctrl+Shift+J or the pull button. Notice on row 61 that Great Lakes Market has an entry with zero value. Rows like this are what we'll hide using the ReportHideRowOrColumn function.
 
 ![](/images/L-Create-HideRowCol/PullMarket.png)
 
