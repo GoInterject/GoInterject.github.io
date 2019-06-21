@@ -19,12 +19,16 @@ horizontalnav:
   - title: Train
     path: /bApps/bFinancials/The-Basics.html
     node: train
+  - title: Train by Example
+    path: /bApps/bFinancials/ExampleCases.html
+    node: examples
   - title: Portal
     path: /bApps/bFinancials/Portal-Overview.html
     node: portal
   - title: Support
     path: /bApps/bFinancials/Support-Overview.html
     node: support
+  
 
 about:
   - title:  What is Interject Financials for Epicor
@@ -130,6 +134,11 @@ train:
  # - sectiontitle: Exporting Reports
   #  path:
 
+examples:
+  - title: Train by Example
+    path: /bApps/bFinancials/ExampleCases.html
+  - title: Hiding Rows with Zero Values
+    path: /bApps/bFinancials/HidingZeros.html
 portal: 
   - title: Portal Site Overview
     path: /bApps/bFinancials/Portal-Overview.html
