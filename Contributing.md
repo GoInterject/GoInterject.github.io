@@ -55,7 +55,10 @@ Use an arrow in a screenshot:
 * to point to inconspicuous or not well-defined buttons,
 * to point to tab navigation steps.
 
-It is important to **place arrows where they are easily seen**, such as *below* the dark green menu of Excel 2016. 
+It is important to **place arrows where they are easily seen**, such as *below* the dark green menu of Excel 2016.
+
+Examples:
+
 
 #### Highlighting Buttons, Emphasizing a Portion of a Window, and Next and Close Button Press Steps (Outlining with a Rectangle)
 
