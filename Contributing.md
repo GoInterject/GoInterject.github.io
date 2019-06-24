@@ -15,6 +15,7 @@ Step 1: Navigate to our Github repository at GoInterject/GoInterject.github.io:
 ![](/images/Contributing/01.png)
 
 Step 2:
+
 **For editors:** Fork your own branch of the main master branch repository.
 
 ![](/images/Contributing/02.png)
