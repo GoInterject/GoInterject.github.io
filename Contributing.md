@@ -22,6 +22,7 @@ Step 2:
 **For content reviewers**: Clone the patch branch named “patch-x.x” (“x.x” in place of the current version number) on the main repository and host locally and make all your changes there before pushing to the origin (master) repository.
 
 Switch to “patch-x.x” branch:
+
 ![](/images/Contributing/03.png)
 
 ![](/images/Contributing/04.png)
