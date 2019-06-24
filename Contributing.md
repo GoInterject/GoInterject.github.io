@@ -146,7 +146,7 @@ If a screenshot has multiple images, be sure to use an ordered list of steps wit
 When screen capturing windows that contain popups, make sure the popup appears distinct from the page containing it. To do this, allow the popup to slightly overlap other content in the image. Do not line it up with any other lines on the page. Unless a screenshot of just the pop up is needed (for a special circumstance), make sure to take screenshots of popups with the windows in which they appear; it is important to show all images with as much context as possible.
 
 Example:
-![](/images/Contributing/16.png
+![](/images/Contributing/16.png)
 
 ### Screenshots of Excel Content
 
@@ -162,7 +162,7 @@ For screenshots of Excel content:
 Dummy credentials example:
 ![](/images/Contributing/17.png)
 
-Ripped border example:
+Ripped border example (see left hand side):
 ![](/images/Contributing/18.png)
 
 ### Tab Navigation in Screenshots
