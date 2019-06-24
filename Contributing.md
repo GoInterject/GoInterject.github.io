@@ -40,7 +40,7 @@ Step 5: The changes will be reviewed in the patch branch.
 
 Step 6: Once all changes are reviewed and approved, that patch branch will be merged into the master branch on a deployment schedule.
 
-![](/images/Documentation_process.png)
+![](/images/Contributing/Documentation_process.png)
 
 ## Screenshot Requirements
 
