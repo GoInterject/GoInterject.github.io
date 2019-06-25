@@ -4,39 +4,63 @@ layout: custom
 sitemap: false
 ---
 
-### Overview
+## Overview
 
 Hello and thank you for wanting to make a contribution to INTERJECT. These are the guidelines that we use to make sure our documentation is the highest quality, and consistent. Included in this document is the documentation cycle from creation to approval.
 
-### Contributing Process Flow
+## Contributing Process Flow
 
-Step 1: Fork your own branch of the main master branch repo unless you are a content reviewer, in which case, use a clone of the patch branch on the main repository and host locally and make all your changes there before pushing to the origin repository.
+Step 1: Navigate to our Github repository at GoInterject/GoInterject.github.io:
 
-Step 2: Make your changes on your forked branch
+![](/images/Contributing/01.png)
 
-Step 3: Make a pull request to a branch that is titled "patch-x.x"
+Step 2:
 
-Step 4: The changes will be reviewed in the patch branch
+**For editors:** Fork your own branch of the main master branch repository.
 
-Step 5: Once all changes are reviewed and approved, that patch branch will be merged into the master branch on a deployment schedule.
+![](/images/Contributing/02.png)
 
-![](/images/Documentation process.png)
+**For content reviewers**: Clone the patch branch named “patch-x.x” (“x.x” in place of the current version number) on the main repository and host locally and make all your changes there before pushing to the origin (master) repository.
 
-### Screenshot Requirements
+Switch to “patch-x.x” branch:
 
-#### When to Include a Screenshot
+![](/images/Contributing/03.png)
 
-Every step in a documentation page should be represented in a screenshot. Screenshots can contain multiple steps, but every step in the process of a lab or walkthrough should be shown somewhere in a screenshot. The user should be able to look at only the screenshots on a page and know exactly what to do.
+![](/images/Contributing/04.png)
 
-Below, we will go through the screenshot creation conventions used for each type of action/step a user must take.
+Clone the branch:
+![](/images/Contributing/05.png)
 
-#### Screenshot Software Requirements
+![](/images/Contributing/06.png)
+
+Step 3: Make your changes on your forked branch.
+
+Step 4: Make a pull request to a branch that is titled "patch-x.x":
+![](/images/Contributing/07.png)
+
+Step 5: The changes will be reviewed in the patch branch.
+
+Step 6: Once all changes are reviewed and approved, that patch branch will be merged into the master branch on a deployment schedule.
+
+![](/images/Contributing/Documentation_process.png)
+
+## Screenshot Requirements
+
+Screenshots are used heavily in our documentation. Below are our conventions and our process of including screenshots in the documentation.
+
+### Screenshot Software Requirements
 
 Screenshots for our website are made consistent by using a screen capture program called [Snagit](https://www.techsmith.com/screen-capture.html).
 
 In order to keep screenshots consistent, make sure they are captured in the most current software (see above).
 
-#### Click Action (Arrow)
+### When to Include a Screenshot
+
+Every step in a documentation page should be represented in a screenshot. Screenshots can contain multiple steps, but every step in the process of a lab or walkthrough should be shown somewhere in a screenshot. The user should be able to look at only the screenshots on a page and know exactly what to do.
+
+The following is a simple walkthrough of the recommended screenshot procedure. It is organized by the type of action/step the user is being instructed to take in a given screenshot. There will also be example use cases for some of the screenshot techniques in each section.
+
+### Click Action (Arrow)
 
 If the instructions call for a click action, use a **solid, red arrow** pointing to the click location.
 
@@ -46,18 +70,19 @@ If the instructions call for a click action, use a **solid, red arrow** pointing
 * below the item if possible,
 * have a middle-centered shadow behind them.
 
-No arrow is needed for "Next" or "Finish" actions, or when only a single button is used in a screenshot.
+No arrow is needed for "Next", "Finish" or "Ok" actions, or when only a single button is used in a screenshot.
 
-Arrows are not typically needed for buttons that are easy to see and emphasized on the screen. For these, go to “Highlighting Buttons...” For not very well defined buttons, add an arrow indicating to the user where to click.
+When to use an arrow in a screenshot:
 
-Use an arrow in a screenshot:
-* for click actions that are not buttons,
-* to point to inconspicuous or not well-defined buttons,
-* to point to tab navigation steps.
+1. For click actions:
+![](/images/Contributing/08.png)
 
-It is important to **place arrows where they are easily seen**, such as *below* the dark green menu of Excel 2016. 
+2. To point to tab navigation steps:
+![](/images/Contributing/09.png)
 
-#### Highlighting Buttons, Emphasizing a Portion of a Window, and Next and Close Button Press Steps (Outlining with a Rectangle)
+It is important to **place arrows where they are easily seen**, such as *below* the dark green menu of Excel 2016.
+
+### Highlighting Buttons, Emphasizing a Portion of a Window, and Next and Close Button Press Steps (Outlining with a Rectangle)
 
 When discussing a specific portion of a window, a window inside of the screenshot, or button press actions, use a **red outline/rectangle** that is 2px wide around the area/button to highlight it.
 
@@ -71,15 +96,23 @@ Such **outlines/rectangles** should:
 
 Limit these outlines to 3 per screenshot for clarity.
 
-Use a red outline/rectangle to
-* highlight buttons for button-press actions (use an arrow additionally, if the button is hard to see or not well-defined) (?),
-* emphasize a portion of a window,
-* emphasize a particular window within a screenshot,
-* highlight “Next” and “Close” buttons (do not use an arrow for this),
-* highlight clickable data-entry (capture) fields (use after a click action indicated by an arrow, if a data entry field comes up) (do not use both an arrow and a red border for this), (ADD SCREENSHOT)
-* highlight checkboxes.
+When to use outline/rectangle:
 
-#### Multi-Step Actions in a Single Screenshot (Numbered Steps)
+1. To highlight click action areas on the screen if they are hard to see (you can use both an arrow and an outline):
+![](/images/Contributing/10.png)
+
+2. To emphasize a portion of a window:
+![](/images/Contributing/11.png)
+
+3. To emphasize a particular window within a screenshot,
+4. To highlight “Next”, “Close” and “Ok” buttons (do not use an arrow for this),
+![](/images/Contributing/12.png)
+5. To highlight clickable data-entry (capture) fields (use after a click action indicated by an arrow, if a data entry field comes up) (do not use both an arrow and a red border for this):
+![](/images/Contributing/13.png)
+
+6. To highlight checkboxes.
+
+### Multi-Step Actions in a Single Screenshot (Numbered Steps)
 
 If multiple steps are contained in one image, **label the steps 1, 2, 3,** etc. in Snagit. This gives readers more direction when steps are complex.
 
@@ -88,17 +121,21 @@ When using arrows and numbers together, always connect the arrow to a number and
 **Number-labeled steps** should be:
 * red,
 * made using the numbering feature of Snagit,
-* have a middle-centered shadow behind them, (?)
-* large enough to read, (use Snagit’s default size)
+* have a middle-centered shadow behind them,
+* large enough to read (use Snagit’s default size),
 * connected to any red arrows also used in the step.
 
-For images containing multiple steps, **place steps in an ordered list below the image**, numbered correspondingly and tabbed in once. (Add screenshot)
+For more complex screenshots containing multiple steps, **place steps in an ordered list above the image**, numbered correspondingly and tabbed in once. Example:
+![](/images/Contributing/14.png)
 
-#### Emphasizing Text or a Point in a Screenshot
+### Emphasizing Text or a Point in a Screenshot
 
 When emphasizing a point, **underline** the particular point with a **2px red line**. Do not use this to highlight buttons within screenshots (instead use the red outline described above).
 
-#### Note on Complex Screenshots
+Example:
+![](/images/Contributing/15.png)
+
+### Note on Complex Screenshots
 
 For complex screenshots, include more thorough text narration in the documentation..
 
@@ -106,30 +143,41 @@ If a procedure is extremely involved, use a GIF.
 
 If a screenshot has multiple images, be sure to use an ordered list of steps within it.
 
-#### Note on Popups in Screenshots
+### Note on Popups in Screenshots
 
-When screen capturing windows that contain popups, make sure the popup appears distinct from the page containing it. To do this, allow the popup to slightly overlap other content in the image. Do not line it up with any other lines on the page. Unless a screenshot of just the pop up is needed (for a special circumstance), make sure to take screenshots of popups with the windows in which they appear; it is important to show all images with as much context as possible. 
+When screen capturing windows that contain popups, make sure the popup appears distinct from the page containing it. To do this, allow the popup to slightly overlap other content in the image. Do not line it up with any other lines on the page. Unless a screenshot of just the pop up is needed (for a special circumstance), make sure to take screenshots of popups with the windows in which they appear; it is important to show all images with as much context as possible.
 
-#### Screenshots of Excel Content
+Example:
+![](/images/Contributing/16.png)
+
+### Screenshots of Excel Content
 
 For screenshots of Excel content:
 
-Include the Row and Column definitions in the spreadsheet to provide context, when appropriate.
-Include the INTERJECT menu ribbon when it is being used. If the step depicted in the screenshot does not use the INTERJECT menu ribbon, do not include it in the screenshot (to save space).
-Make sure that **no personal or confidential data is visible on the screen** when taking screenshots. Use mary@mycompany.com or joe@mycompany.com for masking report library and email data or remove all personal information using snagit to cover it. For login examples, use "dummy" login credentials. Use the dummy names consistently. If mary@mycompany.com is used once on a page, use it throughout that page.
-With the exception of login boxes, **highlight all boxes from clicks to data entry** (use 2px red border). 
-Remove the cursor from the page when the screen is being captured, unless the cursor is needed.
-If an image is to appear truncated, manually **add a "ripped" black border**.
+* Include the Row and Column definitions in the spreadsheet to provide context, when appropriate.
+* Include the INTERJECT menu ribbon when it is being used. If the step depicted in the screenshot does not use the INTERJECT menu ribbon, do not include it in the screenshot (to save space).
+* Make sure that **no personal or confidential data is visible on the screen** when taking screenshots. Use mary@mycompany.com or joe@mycompany.com for masking report library and email data or remove all personal information using snagit to cover it. For login examples, use "dummy" login credentials. Use the dummy names consistently. If mary@mycompany.com is used once on a page, use it throughout that page.
+* With the exception of login boxes, **highlight all boxes from clicks to data entry** (use 2px red border). 
+* Remove the cursor from the page when the screen is being captured, unless the cursor is needed.
+* If an image is to appear truncated, manually **add a "ripped" black border**.
 
-#### Tab Navigation in Screenshots
+Dummy credentials example:
+![](/images/Contributing/17.png)
+
+Ripped border example (see left hand side):
+![](/images/Contributing/18.png)
+
+### Tab Navigation in Screenshots
 
 When directing tab navigation (and sheet navigation in Excel), point to it with an arrow. This is especially helpful for larger screenshots.
 
-### Note for Content Reviewers
+![](/images/Contributing/19.png)
+
+## Note for Content Reviewers
 
 When reviewing for publication, check that no assumptions are made regarding steps–major or minor–required in any process.
 
-### Uploading and Saving Screenshots to the Documentation Site
+## Uploading and Saving Screenshots to the Documentation Site
 
 Generally, upload your screenshot images to be the exact size as the original you had taken. Smaller images, such as in-window popups, should be 360px wide, unless an otherwise more appropriate size is needed.
 
@@ -142,7 +190,7 @@ When saving screenshots, place them in the
 folder of the website. If a folder for your page does not exist, please add one and place all images in that folder. This ensures the most simple naming conventions of 01, 02, 03 as the images are displayed on the website. 
 
 
-### Adding Jekyll Headers to Page
+## Adding Jekyll Headers to Page
 
 All pages must have Jekyll headers added to the top of the page in order for our search function to show it correctly. The way to denote the jekyll is by three hyphens "---" at the top and bottom of the text. “#” denotes comments below.
 
@@ -157,7 +205,7 @@ sitemap: True #Lets google know this needs to be indexed
 ---
 ```
 
-### Commit Message Standards
+## Commit Message Standards
 
 All commit messages should follow this general layout. This is to ensure consistency in determining what has been changed.
 
@@ -180,7 +228,7 @@ Example:
 update(screenshots): replaced old SS's with new ones to match UI changes
 ```
 
-### Adding to the Navigation
+## Adding to the Navigation
 
 When adding a new file to the navigation of the website, edit the TOC.yaml file, unless it is for an app branch of the website. When editing the TOC.yaml file, follow the current convention for all the other navigation links. ALL yaml files are located inside the _data folder of the website.
 
