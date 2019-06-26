@@ -4,7 +4,7 @@ horizontalnav:
   - title: WCN Training
     path: /bApps/WCNTraining/Capital/CapitalInput.html
     node: WCNTraining
-  - title: Get Started
+  # - title: Get Started
   
 WCNTraining:
 - sectiontitle: Capital Input
