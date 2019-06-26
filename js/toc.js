@@ -14,7 +14,7 @@ if (sitePath.startsWith("/w") == true){
 else if (sitePath.startsWith("/bApps/bFinancials") == true){
     docstoc = {{ site.data.apptoc.financial | jsonify }};
 } 
-else if (sitePath.startsWith("/bApps/WCN") == true){
+else if (sitePath.startsWith("/bApps/WCNTraining") == true){
     docstoc = {{ site.data.apptoc.WCNTraining | jsonify }};
 } 
 // if it is not an app nor a default page, then load the default nav
@@ -23,3 +23,5 @@ else if (sitePath.startsWith("/bApps/WCN") == true){
 }
 
 renderNav(docstoc);
+
+
