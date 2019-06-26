@@ -12,3 +12,7 @@
 - archive:
   name: Financials
   path: /bApps/bFinancials/Epicor-Financials
+
+- archive:
+  name: WCN Training
+  path: /bApps/WCNTraining/Capital/CapitalInput

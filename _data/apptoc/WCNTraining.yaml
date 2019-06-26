@@ -1,0 +1,14 @@
+# Handles the navigation bars for the financial app section of the website
+# When creating a new nav dont forget to add it to the TOC.js file (just copy the format of the one above.)
+horizontalnav:
+  - title: WCN Training
+    path: /bApps/WCNTraining/Capital/CapitalInput.html
+    node: WCNTraining
+  # - title: Get Started
+  
+WCNTraining:
+- sectiontitle: Capital Input
+  section:
+  - title: Capital Input
+    path: /bApps/WCNTraining/Capital/CapitalInput.html
+
