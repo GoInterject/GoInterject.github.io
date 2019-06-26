@@ -134,17 +134,3 @@ You may easily add columns to your generated report templates
 > ![Account Rollup](/images/Train/DetailShot.png){: .center-image }
 >
 
-
-### Publishing the Report Template
-
-> To Do
->
-> **Step 1:** Once you confirm the report is built correctly, press Ctrl+Shift+J or the Pull Data button, and hit "Clear" 
->
-> **Step 2:** With the data cleared, Hit Ctrl+Shift+T, and select "Freeze/Unfeeze Panes." Now save the report as a local file
->
-> **Step 3:** Next, open the Report Library, highlight your company's folder, right click inside the Report Links" area, and click "Save Current Workbook" > "Create New Link (Save Required)
->
->  **Step 4:** Fill in the Link Name and set the Status to Live. Your report is now published.
->
-

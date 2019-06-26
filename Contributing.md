@@ -228,6 +228,7 @@ Example:
 update(screenshots): replaced old SS's with new ones to match UI changes
 ```
 
+
 ## Adding to the Navigation
 
 When adding a new file to the navigation of the website, edit the TOC.yaml file, unless it is for an app branch of the website. When editing the TOC.yaml file, follow the current convention for all the other navigation links. ALL yaml files are located inside the _data folder of the website.
