@@ -2,7 +2,7 @@
 layout: custom  
 title:  "Capital Report - Capital Summary by PO Type Tab"
 date:   2019-06-25 15:43:02 -0700
-categories: Training, Capital
+keywords: Training, Capital
 ---
 
 ## Overview
