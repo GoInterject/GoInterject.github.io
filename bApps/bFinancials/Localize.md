@@ -43,7 +43,7 @@ A subscription to Interject Financial - Epicor will provide a "Subscriptions" fo
 > - Status determines whether the report will be live or not
 >
 >
-> **Step 10:** Now fill in the "Drill Code" and "Target Tab Name" using the information your wrote down in step # 2. Click "Save".
+> **Step 11:** Now fill in the "Drill Code" and "Target Tab Name" using the information your wrote down in step # 2. Click "Save".
 > ![Open Library](/images/Localize/CopyDrillCodes.png){: .center-image }
 >
 > **Step 12:** Open the report library and check for the report under your company name folder.

@@ -138,6 +138,8 @@ getstarted:
         path: /wGetStarted/L-Drill-TheThreeWays.html
     - title: "Lab Create: Hiding Rows & Columns"
       path: /wGetStarted/L-Create-HideRowCol.html
+    - title: "Lab Create: Advanced Row and Section Hiding"
+      path: /wGetStarted/L-Create-AdvancedHideRowsSections.html
     - title: "Lab Create: Building jDropdowns"
       path: /wGetStarted/L-Create-Dropdowns.html
     - title: "Lab Create: Working with Pivot Tables"
@@ -295,7 +297,7 @@ index:
 
 
 portal:
-  - sectiontitle: The INTERJECT Website Portal
+  - sectiontitle: INTERJECT Website Portal
     path: /wPortal/The-INTERJECT-Website-Portal.html
     section:
     - title: Logging In to Website Portal

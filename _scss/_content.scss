@@ -185,10 +185,15 @@ img.nohover:hover {opacity: 1.0;}
 
 img.no-border{
     border: none;
+    cursor: default;
 }
+
 
 img{
     border: 1px solid rgb(0,0,0);
+}
+p img:hover {
+    cursor: zoom-in;
 }
 
 /* The Modal (background) */
@@ -204,6 +209,7 @@ img{
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    cursor: zoom-out; /* Set cursor to zoom out to indicate it can be clicked */
 }
 
 /* Modal Content (image) */
@@ -212,6 +218,7 @@ img{
     display: block;
     width: 100%;
     max-width: 1000px;
+    cursor: zoom-out; /* Set cursor to zoom out to indicate it can be clicked */
 }
 
 /* Add Animation */
@@ -220,6 +227,7 @@ img{
   -webkit-animation-duration: 0.4s;
   animation-name: zoom;
   animation-duration: 0.4s;
+  cursor: zoom-out;
 }
 
 @-webkit-keyframes zoom {

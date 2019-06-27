@@ -25,7 +25,7 @@ Whichever option is chosen, the login process that follows is the same.
 
 **Step 1:** Select the type of account to log in with. In this example, the **INTERJECT** account type is used. 
 
-**Step 2:** Type in a user name and password. 
+**Step 2:** Type in your user name and password. 
 
 ![](/images/LogginIn/image2017-6-6_11-49-48.png)
 
