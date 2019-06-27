@@ -14,5 +14,5 @@
   path: /bApps/bFinancials/Epicor-Financials
 
 - archive:
-  name: Training
-  path: /bApps/InterjectTraining/InterjectTrainingMain
+  name: WCN Training
+  path: /bApps/WCNTraining/Capital/CapitalInput
