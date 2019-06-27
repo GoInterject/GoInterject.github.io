@@ -3,7 +3,7 @@
 layout: custom  
 title:  "Budget Template - Budget Upload Tab"
 date:   2019-06-25 15:43:02 -0700
-categories: Training, Budget, Budget Upload
+keywords: Training, Budget, Budget Upload
 ---
 
 ## Overview
