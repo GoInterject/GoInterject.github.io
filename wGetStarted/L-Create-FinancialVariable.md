@@ -256,7 +256,7 @@ To setup the financial report you need to first get the financial groups that wi
 <br> 
 
 
-As seen in column D, you get text the groups the account in column C. These are the groups you need, but you want a unique list. Clear the data again. 
+As seen in column D, you get the AccountType text and the account group in column C. These are the groups you need, but you want a unique list. Clear the data again. 
 
 ![](/images/L-Create-FinancialVar/31.png)
 
