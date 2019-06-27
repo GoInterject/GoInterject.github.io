@@ -16,37 +16,49 @@ To watch a quick walk-through video, click on the icon:
 
 **Step 1:** In order to update INTERJECT, you will need to close Excel. So save anything open in Excel now. 
 
-![](/images/Updating/image2017-6-19_8-51-50.png)
+![](/images/Updating/01.png)
 
 **Step 2:** Once everything is saved, click the [ **Check for Updates** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#check-for-updates) button in the INTERJECT ribbon 
 
-![](/images/Updating/image2017-6-19_9-28-27.png)
+![](/images/Updating/02.png)
 
-**Step 3:** A popup will appear with information about the computer's current version as well as the latest available INTERJECT Version. If INTERJECT has a critical update, there may also be an **Install By** date. If that is the case you must install the update as soon as possible. **New Version Notes** is where you can see any notes about the new versions and what they may entail. Click **Get Update** to get the new version. It should only take a moment. 
+**Step 3:** A popup will appear with information about the computer's current, as well as the latest available INTERJECT Version. If INTERJECT has a critical update, there may also be an **Install By** date. If that is the case you must install the update as soon as possible. Click **Get Update** to get the new version. It should only take a moment. 
 
 ![](/images/Updating/03.png)
 
 **Note:** If this popup appears at any point without having clicked the **Check for Updates** button, it means that INTERJECT has released an important update. INTERJECT will not lock up into updating at any time, so its okay to postpone it momentarily, but its recommended, however, that you update at the earliest convenience. 
 
-**Step 4:** After clicking **Get Update**, the Interject Excel Add-in Setup will pop up. Click the exit button to close excel. Once Excel has been closed, click **Next** to continue the update.
+**Step 4:** After clicking **Get Update**, the Interject Excel Add-in Setup will pop up. Interject requires Excel to be closed to update. Click the exit button to close excel.
+
+![](/images/Updating/04.png)
+
+Once Excel has been closed click **Update** to continue to the update.
 
 ![](/images/Updating/05.png)
 
-**Step 5:** Next, you will need to read and accept the License Agreement. Then click **Next** to continue. 
+Click **Next** to continue in the Install wizard.
 
-![](/images/Updating/06.png)   
+![](/images/Updating/06.png)
 
-**Step 6:** Now click **Install** to begin the installation. 
+**Step 5:** Next, you will need to read and accept the License Agreement and click **Next** to continue. 
 
-![](/images/Updating/07.png)
+ ![](/images/Updating/07.png)  
 
-**Step 7:** Click **Finish** to close the installer and you're done.
+**Step 6:** Choose where to install INTERJECT. 
 
 ![](/images/Updating/08.png)
 
-To confirm you have the latest version, click **Check for Updates** again and compare the two boxes. 
+**Step 7:** Now click **Install** to begin the installation.
 
 ![](/images/Updating/09.png)
+
+**Step 8:** Click **Finish** to close the installer, and you're done!
+
+![](/images/Updating/10.png)
+
+To confirm you have the latest version, click **Check for Updates** again and compare the two boxes. 
+
+![](/images/Updating/11.png)
 
 And that is all there is to it, you have officially updated INTERJECT. 
 
