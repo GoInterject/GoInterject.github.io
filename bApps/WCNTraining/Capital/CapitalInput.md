@@ -1,13 +1,13 @@
 ---
 layout: custom  
-title:  "Capital Input User Training - Bud Capital Input"
+title:  "Capital Report - Bud Capital Input Tab"
 date:   2019-06-25 15:43:02 -0700
 categories: Training, Capital
 ---
 
 ## Overview
 
-**Purpose**:  Save new Capital PO Items for a specific District. Also pulls in Capital PO information to update existing POs
+**Purpose**:  Save new Capital PO Items for a specific District, and pulls in existiung Capital PO information.
 
 **Filter Options**:
 
@@ -16,54 +16,29 @@ categories: Training, Capital
 
 ![](/images/WCNTraining/Capital/CapitalInput_FullView.png)
 
-## PO Information
+## To Delete PO Items
 
-This first section of the report holds all of the key PO Information. Here you will see the PO Number, the PO Item, and the Descriptions/Explanations of the PO/Item.
+To delete a PO Item, toggle the **Delete on Save** drop-down in the furthest left column to *Delete!*. The PO Item will be deleted on the Save.
 
-![](/images/WCNTraining/Capital/CapitalInput_POInfo.png)
-
-**On Save**
-* Change the Delete on Save column drop-down to Delete! to remove an existing PO Item
-* The PO Items cannot equal one another in the same PO. These will be marked as Duplicates on the Save and be rejected
+![](/images/WCNTraining/Capital/CapitalInput_Delete.png)
 
 ## Asset Information
 
-This section displays the Asset Type/Subtype information for the PO Item. Depending on the Asset Type/SubType selected, the other drop-down options will automatically update to the available choices.
-
-**A/R** = *Add* or *Replace*
-
-**N/U** = *New* or *Used*
+All PO items require the following attributes: Asset Type, SubType, Life, A/R, N/U, and in some cases a Truck #. The drop-downs for the various columns are dependent on one another. For example, when you select an Asset Type, the Subtype dropdown will regenerate to the available options.
 
 ![](/images/WCNTraining/Capital/CapitalInput_AssetInfo.png)
 
-**On Save**
-* If you change the Asset Type of an existing PO Item. be sure to change the SubType and other information correctly. Otherwise on the Save the validation may stop you and tell you to update your PO Item options
-* If the Asset Type is connected with a Truck, you need to link the PO Item to the Truck in the Truck Ctr. # column. On the pull the drop-down options will automatically provide all available Truck numbers
+The **A/R** column stands for *Add* or *Replace*, and **N/U** stands for *New* or *Used*.
 
-## Period Amounts
-
-This section is for the periodic Capital amounts.
-
-![](/images/WCNTraining/Capital/CapitalInput_PeriodAmounts.png)
+>**Things to Remember**
+>* If you change the Asset Type of an existing PO Item, be sure to change the SubType and other information correctly. Otherwise on the Save the validation will stop you and tell you to update your PO Item options.
+>* If the Asset Type is a Truck, you need to include a Truck Ctr. # with the PO Item. On the pull the drop-down options will automatically provide all available Truck numbers.
 
 ## Replacement Info
 
-This hidden grouped section is for the Replace Information. You will need to unhide this section if you selected R in the A/R column earlier.
+This hidden grouped section is for the Replacement Information. You will need to unhide this section if you selected *R* in the **A/R** column earlier. Specifically, the **FAS #** and **Replacements Notes** are required.
 
 ![](/images/WCNTraining/Capital/CapitalInput_ReplacementInfo.png)
-
-**On Save**
-* If PO Item is marked R in the A/R column, then it will require a FAS # and Replacement Notes
-* The Model Year is NOT uploaded to DMS
-
-## Folder/File Link & Save Messages
-
-Save the file/location of the PO Item documentation you want recorded. On Save, the Successful Save/Updates will show up here. If there are any validation errors, they will be presented here on the Save.
-
-![](/images/WCNTraining/Capital/CapitalInput_FilePathMessage.png)
-
-**On Save**
-* The Folder/File Link is NOT uploaded to DMS
 
 ## Do I have security rights to Save from this Input File?
 
@@ -73,13 +48,31 @@ Only people in the District Position Assignment (DPA) for the District in Toolbo
 
 ![](/images/WCNTraining/Capital/CapitalInput_DPAWindow.png)
 
-## Common Save Errors
+## Capital Input and the Control Center
+
+Based on your position in the DPA for the district, you will have a certain level of access to this report. The types of levels you may be on are: **A/C**, **Dist**, **Div**, **Reg**, or **Corp**.
+
+Capital is locked at these levels in the **Control Center**, hidden in the AH column. In the example below, District 2050 is locked at the Corp Level.
+
+![](/images/WCNTraining/Capital/CapitalInput_ControlCenterLockLevel.png)
+
+If an A/C level user tried saving to 2050 Capital, they would be stopped with the following message.
 
 ![](/images/WCNTraining/Capital/CapitalInput_Error_LockLevel.png)
 
-*Your highest level in the District Position Assignment window of the District is lower than what the District is locked at in the Control Center. If you need to make Capital Changes while it is locked above your level, coordinate with your Division Controller to make the needed changes.*
+You are able to save Capital as long as the Capital lock level is your level or below. Otherwise you will not be able to save Capital.
 
-___
+## Drills
+
+You can drill on any row to bring up more detailed information for the Capital amounts belonging to the PO Item in the Capital Change Query.
+
+![](/images/WCNTraining/Capital/CapitalInput_DrillWindow.png)
+
+**Drill to CC Query for Change History** opens the *Capital Change Query report*.
+![](/images/WCNTraining/Capital/CapitalInput_CapitalChangeDrill.png)
+
+## Common Save Errors
+
 ![](/images/WCNTraining/Capital/CapitalInput_Error_TypeSubType.png)
 
 *The chosen SubType does not belong to the Asset Type selected. Please select a valid Subtype from the available drop-down list.*
@@ -169,7 +162,7 @@ ___
 ___
 ![](/images/WCNTraining/Capital/CapitalInput_Error_NewUsed.png)
 
-*The selected Truck # New/Used status does not match the N/U column. Either updated the N/U column accordingly, or select a different valid Truck #.*
+*The selected Truck # New/Used status does not match the N/U column. Either update the N/U column accordingly, or select a different valid Truck #.*
 
 ___
 ![](/images/WCNTraining/Capital/CapitalInput_Error_DuplicateTruck.png)
@@ -179,7 +172,7 @@ ___
 ___
 ![](/images/WCNTraining/Capital/CapitalInput_Error_TruckForBody.png)
 
-*A Truck # should not be assigned to a Chassis Asset Type.*
+*A Truck # should not be assigned to a Chassis SubType.*
 
 ___
 ![](/images/WCNTraining/Capital/CapitalInput_Error_TruckNumReq.png)
