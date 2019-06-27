@@ -1,0 +1,67 @@
+# Handles the navigation bars for the financial app section of the website
+# When creating a new nav dont forget to add it to the TOC.js file (just copy the format of the one above.)
+horizontalnav:
+- title: Main
+  path: /bApps/InterjectTraining/InterjectTrainingMain.html
+  node: main
+- title: Capital Module
+  path: /bApps/InterjectTraining/Capital/CapitalModule.html
+  node: capital
+- title: Budget Module
+  path: /bApps/InterjectTraining/Budget/BudgetModule.html
+  node: budget
+- title: Projections Module
+  path: /bApps/InterjectTraining/Projections/ProjectionsModule.html
+  node: projection
+  
+main:
+- title: Main
+  path: /bApps/InterjectTraining/InterjectTrainingMain.html
+
+capital:
+- title: Capital Module Summary
+  path: /bApps/InterjectTraining/Capital/CapitalModule.html
+- sectiontitle: Capital Input Tool
+  section:
+  - title: Capital Input Tool Summary
+    path: /bApps/InterjectTraining/Capital/CapitalInputReport.html
+  - title: Summary Tab
+    path: /bApps/InterjectTraining/Capital/CapitalSummary.html
+  - title: Bud Capital Input Tab
+    path: /bApps/InterjectTraining/Capital/CapitalInput.html
+  - title: Summary by PO Type Tab
+    path: /bApps/InterjectTraining/Capital/CapitalSummaryPOType.html
+- sectiontitle: Capital Change History Tool
+  section:
+  - title: CC Query Tab
+    path: /bApps/InterjectTraining/Capital/CCQuery.html
+  - title: ReviewDateSummary Tab
+    path: /bApps/InterjectTraining/Capital/ReviewDateSummary.html
+- title: Capital Export Tool
+  path: /bApps/InterjectTraining/Capital/CapitalExport.html
+
+budget:
+- title: Budget Module Summary
+  path: /bApps/InterjectTraining/Budget/BudgetModule.html
+- title: Control Center
+  path: /bApps/InterjectTraining/Budget/ControlCenter.html
+- sectiontitle: Budget Template
+  section:
+  - title: Main Tab
+    path: /bApps/InterjectTraining/Budget/BudgetTemplate.html
+  - title: Budget Upload Tab
+    path: /bApps/InterjectTraining/Budget/BudgetUpload.html
+- title: Budget Change Query
+  path: /bApps/InterjectTraining/Budget/BudgetChangeQuery.html
+
+projection:
+- title: Projection Module Summary
+  path: /bApps/InterjectTraining/Projections/ProjectionsModule.html
+- title: Projection Template
+  path: /bApps/InterjectTraining/Projections/ProjectionTemplate.html
+- title: Projection Upload Tool
+  path: /bApps/InterjectTraining/Projections/ProjectionUpload.html
+- title: Projection Change Query
+  path: /bApps/InterjectTraining/Projections/ProjectionChangeQuery.html
+
+  
