@@ -1,37 +1,33 @@
 ---
 layout: custom  
-title:  "Capital Input User Training - Summary Tab"
+title:  "Capital Report - Summary Tab"
 date:   2019-06-25 15:43:02 -0700
 categories: Training, Capital
 ---
 
 ## Overview
 
-**Purpose**:  This tab pulls in District Capital Summary totals by Period/Qtr
+**Purpose**:  This tab pulls in District Capital Summary totals by Period/Quarter. This is used to recon the Capital amounts saved from the Bud Capital Input tab.
 
 **Filter Options**:
 
-* **District** - *Optional*. Blank defaults to all you have rights too. Works with individual districts and groupings
+* **District** - *Optional*. Blank defaults to all you have rights too. Filter works with individual districts, district ranges, and groupings
 * **Budget Year** - *Required*. Needs to be in YYYY format
 * **Currency** - *Optional*. Blank defaults to your home currency
 
 ![](/images/WCNTraining/Capital/CapitalSummary_FullView.png)
 
-## District Information
+The information presented in this tab is broken up by District and includes the amount of Capital POs, their Capital amounts summed by month and quarterly, and the last user who updated Capital.
 
-This first section of the report displays the Districts pulled in along with their number of Capital POs.
+## Drills
 
-![](/images/WCNTraining/Capital/CapitalSummary_DistrictInfo.png)
+You can drill on any row to edit the Capital amounts belonging to that Districts or view the detail in another report.
 
-## Monthly Capital Amounts
+![](/images/WCNTraining/Capital/CapitalSummary_DrillWindow.png)
 
-This section shows the summed Capital amounts by monthly for each of the Districts.
+**Drill to Detail** opens up the *Bud Capital Input* tab in the same report.
+![](/images/WCNTraining/Capital/CapitalSummary_DetailDrill.png)
 
-![](/images/WCNTraining/Capital/CapitalSummary_MonthlyCapAmounts.png)
+**Drill to CC Query for Change History** opens the *Capital Change Query report*.
+![](/images/WCNTraining/Capital/CapitalSummary_CapitalChangeDrill.png)
 
-
-## Quarterly Amounts, Total, and Last Saved User
-
-The last portion of the Summary tab shows the Capital Amounts for the Districts summed up quarterly. Along with the District Totals, the last user who saved Capital amounts to the District is shown.
-
-![](/images/WCNTraining/Capital/CapitalSummary_QtrlyAmountsTotal.png)
