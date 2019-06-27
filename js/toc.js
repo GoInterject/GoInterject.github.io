@@ -21,7 +21,6 @@ else if (sitePath.startsWith("/bApps/InterjectTraining") == true){
  else {
     docstoc = {{ site.data.toc | jsonify }};
 }
-
 renderNav(docstoc);
 
 
