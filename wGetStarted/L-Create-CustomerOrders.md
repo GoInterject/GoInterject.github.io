@@ -109,7 +109,7 @@ It should pull only the data for the columns you requested in the column definit
   
 
 
-**Step 4:** Now that you have the data, remove any access text and formatting not needed for the final report. Use the before and after screenshots to note what should be cleared. 
+**Step 4:** Now that you have the data, remove any excess text and formatting not needed for the final report. Use the before and after screenshots to note what should be cleared. 
 
 **Before:**
 
