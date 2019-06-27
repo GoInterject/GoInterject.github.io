@@ -24,4 +24,3 @@ else if (sitePath.startsWith("/bApps/InterjectTraining") == true){
 
 renderNav(docstoc);
 
-
