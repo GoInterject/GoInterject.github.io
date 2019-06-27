@@ -63,7 +63,7 @@ After you get access to Interject, there are three parts to installing Interject
 >**Step 2:** Create Interject Reporting Database
 > - Right Click New Database in the Object Explorer
 > ![New database](/images/A-SQL-Installation/newDB.png){: .center-image }
-> - Type “Interject_Reporting” into the Database Name field
+> - Enter the desired DB name into the Database Name field. The default is "Interject_Reporting", but you can name it as needed
 > ![New database](/images/A-SQL-Installation/01.png){: .center-image }
 > - Press OK
 >
