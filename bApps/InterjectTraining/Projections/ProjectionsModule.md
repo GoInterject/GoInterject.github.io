@@ -19,4 +19,4 @@ The Projections Upload Tool allows controllers to upload projections for multipl
 
 ### [ Projections Change Query ](/bApps/InterjectTraining/Projections/ProjectionChangeQuery.html)
 
- The Projections Change Query Tool provides insight into how Projections have been changed while open, with views on the summary and detailed levels.
+The Projections Change Query Tool provides insight into how Projections have been changed while open, with views on the summary and detailed levels.
