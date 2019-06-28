@@ -59,6 +59,7 @@ description: INTERJECT™ Financials for Epicor Enterprise (This would cover top
 Whenever an update of Interject for Financials is released, an update script must be run on your server. With each new update, the initial install script located on the [Technical Install](https://docs.gointerject.com/bApps/bFinancials/Technical-Install.html) page will be updated. If you initally installed the most current version listed above, you will not need to run the Update Script. If you orginally installed a version older than the most current, take the following steps to update your implementation. 
 
 > To Upgrade
+> 
 > In SQL Management Studio, run the script labeled **Update for Previous Install** at the top of this page.
 >
 > Run \[Interject_SetupScript1_Security\], as shown below, to re-enable security.
