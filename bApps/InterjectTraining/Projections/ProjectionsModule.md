@@ -7,4 +7,16 @@ description:
 
 ## Overview
 
-The Projections Module gives controllers the tools needed to forecast the amounts they think will be need in upcoming months. The [ Local Projections Template ](/bApps/InterjectTraining/Projections/ProjectionTemplate.html) is used to save initial projection forecasts, and it closely matches the [ Local Budget Template ](/bApps/InterjectTraining/Budget/BudgetTemplate.html) in design and function. Other Projections tools include the [ Projections Change Query Tool ](/bApps/InterjectTraining/Projections/ProjectionChangeQuery.html) which gives insight into how Projections have changed while open, and the [ Projections Upload Tool](/bApps/InterjectTraining/Projections/ProjectionUpload.html), which is identical to the [ Budget Upload Tool ](/bApps/InterjectTraining/Budget/BudgetUpload.html) but used for Projections.
+The Projections Module gives controllers the tools needed to forecast the amounts they think they will need in the upcoming months.
+
+### [ Projection Template ](/bApps/InterjectTraining/Projections/ProjectionTemplate.html)
+
+The Local Projections Template is used to save to a district's Projections for a given month. This template closely matches the Local Budget Template in design and function.
+
+### [ Projection Upload Tool ](/bApps/InterjectTraining/Projections/ProjectionUpload.html)
+
+The Projections Upload Tool allows controllers to upload projections for multiple accounts in a district all at the same time. This upload tool closely matches the Budget Upload Tool in design and function.
+
+### [ Projections Change Query ](/bApps/InterjectTraining/Projections/ProjectionChangeQuery.html)
+
+The Projections Change Query Tool provides insight into how Projections have been changed while open, with views on the summary and detailed levels.
