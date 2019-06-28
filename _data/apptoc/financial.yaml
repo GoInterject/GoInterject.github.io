@@ -82,6 +82,9 @@ install:
   - title: FRx Migration
     path: /bApps/bFinancials/FRxMigration.html
   #- title: Security & Updates
+update:
+  - title: Update Manager
+    path: /bApps/bFinancials/Updates.html
 
 configure:
   - title: Configuring Interject for Financials
