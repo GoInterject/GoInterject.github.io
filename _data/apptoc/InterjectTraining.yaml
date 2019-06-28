@@ -17,6 +17,12 @@ horizontalnav:
 main:
 - title: Main
   path: /bApps/InterjectTraining/InterjectTrainingMain.html
+- title: Capital Module
+  path: /bApps/InterjectTraining/Capital/CapitalModule.html
+- title: Budget Module
+  path: /bApps/InterjectTraining/Budget/BudgetModule.html
+- title: Projections Module
+  path: /bApps/InterjectTraining/Projections/ProjectionsModule.html
 
 capital:
 - title: Capital Module Summary
