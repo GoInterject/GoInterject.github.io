@@ -51,8 +51,6 @@ capital:
 budget:
 - title: Budget Module Summary
   path: /bApps/InterjectTraining/Budget/BudgetModule.html
-- title: Control Center
-  path: /bApps/InterjectTraining/Budget/ControlCenter.html
 - sectiontitle: Budget Template
   path: /bApps/InterjectTraining/Budget/BudgetTemplate.html
   section:
@@ -60,6 +58,8 @@ budget:
     path: /bApps/InterjectTraining/Budget/BudgetTemplate.html
   - title: Budget Upload Tab
     path: /bApps/InterjectTraining/Budget/BudgetUpload.html
+- title: Control Center
+  path: /bApps/InterjectTraining/Budget/ControlCenter.html
 - title: Budget Change Query
   path: /bApps/InterjectTraining/Budget/BudgetChangeQuery.html
 
@@ -72,5 +72,3 @@ projection:
   path: /bApps/InterjectTraining/Projections/ProjectionUpload.html
 - title: Projection Change Query
   path: /bApps/InterjectTraining/Projections/ProjectionChangeQuery.html
-
-  
