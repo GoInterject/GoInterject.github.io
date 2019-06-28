@@ -20,12 +20,13 @@ description: INTERJECT™ Financials for Epicor Enterprise (This would cover top
 ### Current Version Notes
 <table>
     <tr>
-        <th><span style="font-weight:bold">Interject for Financials - Current Verion</span></th>
-        <th><span style="font-weight:bold"><a href="https://drive.google.com/file/d/1rDImgOqW1-4J5xfzDkga_ahV79EWkdqL/view">Initial.Interject_Reporting_1.1.0.SQL</a></span></th>
+        <th><span style="font-weight:bold">Interject for Financials - Current Verion: </span><a href="https://drive.google.com/file/d/1rDImgOqW1-4J5xfzDkga_ahV79EWkdqL/view">Initial.Interject_Reporting_1.1.0.SQL</a></th>
     </tr>
         <tr>
         <th><span style="font-weight:bold">Features</span></th>
         <th><span style="font-weight:bold">Bugs Fixed</span></th>
+        </tr>
+        <tr>
             <td>
                 <ul>
                     <li>Generate report templates on segments other than natural account</li>
