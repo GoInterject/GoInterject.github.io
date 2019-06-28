@@ -94,4 +94,5 @@ After the inital instal, applying an update, or performing a rollback, you can c
 - Going to the **Report Library**
 - Opening the **Configuration Manager**
 - Checking the **Database Version** in the upper right of the report
+<br>
 ![Database Version](/images/A-InitialDataLoad/VersionConfirm.png){: .center-image }
