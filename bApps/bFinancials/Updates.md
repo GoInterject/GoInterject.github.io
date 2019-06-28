@@ -86,3 +86,11 @@ The following steps must be taken to roll back one version. Note that this will 
 >	,@CertificatePassword =  'myPassword1234'
 >  ```
 >
+
+### To Check for the Most Current Version
+
+After the inital instal, applying an update, or performing a rollback, you can confirm that your version is correct by:
+- Going to the **Report Library**
+- Opening the **Configuration Manager**
+- Checking the **Database Version** in the upper right of the report
+![Database Version](/images/A-InitialDataLoad/VersionConfirm.png){: .center-image }
