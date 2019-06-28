@@ -10,9 +10,9 @@ horizontalnav:
   - title: Install
     path: /bApps/bFinancials/Company-Setup.html
     node: install
-  - title: Update Manager
-    path: /bApps/bFinancials/Updates.html
-    node: update
+  #- title: Update Manager
+   #path: /bApps/bFinancials/Updates.html
+    #node: update
   - title: Configure
     path: /bApps/bFinancials/Configure.html
     node: configure
