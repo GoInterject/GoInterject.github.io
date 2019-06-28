@@ -7,7 +7,7 @@ description:
 
 ## Overview
 
-**Purpose**:  Pulls in Summarized Capital info broken out by Asset Type (Period/QTR). Same as the Capital tab in the Budget Book. This is the report region and corporate use to review capital.
+**Purpose**:  Pulls in Summarized Capital info broken out by Asset Type (Period/QTR). It is the same as the Capital tab in the Budget Book. This is the report Region and Corporate use to review capital.
 
 **Filter Options**:
 

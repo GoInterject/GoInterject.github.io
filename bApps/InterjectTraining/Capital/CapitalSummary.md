@@ -11,7 +11,7 @@ description:
 
 **Filter Options**:
 
-* **District** - *Optional*. Blank defaults to all you have rights too. Filter works with individual districts, district ranges, and groupings
+* **District** - *Optional*. Blank defaults to all the districts you have rights too. Filter works with individual districts, district ranges, and groupings
 * **Budget Year** - *Required*. Needs to be in YYYY format
 * **Currency** - *Optional*. Blank defaults to your home currency
 
@@ -21,7 +21,7 @@ The information presented in this tab is broken up by District and includes the 
 
 ## Drills
 
-You can drill on any row to edit the Capital amounts belonging to that Districts or view the detail in another report.
+You can drill on any row to edit the Capital amounts belonging to that District or to view the detail in another report.
 
 ![](/images/WCNTraining/Capital/CapitalSummary_DrillWindow.png)
 
