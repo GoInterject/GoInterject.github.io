@@ -19,3 +19,16 @@ The closure tabs are only used for sites with landfill closure. You will be noti
 
 **Update POs with new numbers**:
 If you update an existing PO with a new number, it will renumber the existing PO instead of creating a new one.
+
+___
+### Summary Tab
+
+This tab is used to recon the Capital amounts saved from the Bud Capital Input tab and provides summarized Capital amounts by period and quarter.
+
+### Bud Capital Input Tab
+
+This tab is used to save new Capital PO Items for a specific District, and pulls in existing Capital PO information.
+
+### Summary by PO Type Tab
+
+This is the tab region and corporate use to review capital, and can be found in the Budget Book as well.
