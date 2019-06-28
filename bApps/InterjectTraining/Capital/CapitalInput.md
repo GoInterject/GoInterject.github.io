@@ -7,7 +7,7 @@ description:
 
 ## Overview
 
-**Purpose**:  Save new Capital PO Items for a specific District, and pulls in existing Capital PO information.
+**Purpose**:  Save new Capital PO Items for a specific District, and pull in existing Capital PO information.
 
 **Filter Options**:
 
@@ -18,7 +18,7 @@ description:
 
 ## To Delete PO Items
 
-To delete a PO Item, toggle the **Delete on Save** drop-down in the furthest left column to *Delete!*. The PO Item will be deleted on the Save.
+To delete a PO Item, select *Delete!* from the **Delete on Save** drop-down in the column farthest to the left. The PO Item will be deleted on the Save.
 
 ![](/images/WCNTraining/Capital/CapitalInput_Delete.png)
 
@@ -31,8 +31,8 @@ All PO items require the following attributes: Asset Type, SubType, Life, A/R, N
 The **A/R** column stands for *Add* or *Replace*, and **N/U** stands for *New* or *Used*.
 
 >**Things to Remember**
->* If you change the Asset Type of an existing PO Item, be sure to change the SubType and other information correctly. Otherwise on the Save the validation will stop you and tell you to update your PO Item options.
->* If the Asset Type is a Truck, you need to include a Truck Ctr. # with the PO Item. On the pull the drop-down options will automatically provide all available Truck numbers.
+>* If you change the Asset Type of an existing PO Item, be sure to change the SubType and other information correctly. Otherwise, validation on the Save will stop you and give a warning to update your PO Item options.
+>* If the Asset Type is a Truck, you need to include a Truck Ctr. # with the PO Item. On the pull, the drop-down options will automatically provide all available Truck numbers.
 
 ## Replacement Info
 
@@ -50,13 +50,13 @@ Only people in the District Position Assignment (DPA) for the District in Toolbo
 
 ## Capital Input and the Control Center
 
-Based on your position in the DPA for the district, you will have a certain level of access to this report. The types of levels you may be on are: **A/C**, **Dist**, **Div**, **Reg**, or **Corp**.
+Based on your position in the DPA for the district, you will have a certain level of access to this report. You may be on one of the following levels: **A/C**, **Dist**, **Div**, **Reg**, or **Corp**.
 
 Capital is locked at these levels in the [ Control Center ](/bApps/InterjectTraining/Budget/ControlCenter.html), hidden in the AH column. In the example below, District 2050 is locked at the Corp Level.
 
 ![](/images/WCNTraining/Capital/CapitalInput_ControlCenterLockLevel.png)
 
-If an A/C level user tried saving to 2050 Capital, they would be stopped with the following message.
+If an A/C level user tries saving to 2050 Capital, they will be stopped with the following message.
 
 ![](/images/WCNTraining/Capital/CapitalInput_Error_LockLevel.png)
 
@@ -80,7 +80,7 @@ You can drill on any row to bring up more detailed information for the Capital a
 ___
 ![](/images/WCNTraining/Capital/CapitalInput_Error_ReplacementReqs.png)
 
-*If the PO Item is a Replacement (R in A/R), both a FAS # and Replacement Note are required (in the hidden Replacement Info section)*
+*If the PO Item is a Replacement (R in A/R), both an FAS # and Replacement Note are required (in the hidden Replacement Info section)*
 
 ___
 <button class="collapsible">Other Possible Save Errors</button>
@@ -107,7 +107,7 @@ ___
 ___
  ![](/images/WCNTraining/Capital/CapitalInput_Error_MissingColumns.png)
 
-*The local version of the report has been been changed and will not longer save correctly. Get the newest version of the report from the library.*
+*The local version of the report has been been changed and will no longer save correctly. Get the newest version of the report from the library.*
 
 ___
 ![](/images/WCNTraining/Capital/CapitalInput_Error_MissingFields.png)
