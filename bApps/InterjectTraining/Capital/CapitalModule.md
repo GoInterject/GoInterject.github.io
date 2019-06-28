@@ -7,4 +7,16 @@ description:
 
 ## Overview
 
-The Capital Module is designed to handle Capital POs, and provides tools for controllers to review Capital allocations across sites and available assets. The [ Capital Input Tool ](/bApps/InterjectTraining/Capital/CapitalInputReport.html) is the most prevalent report in this set, and is used to save new and update existing Capital POs. Other tools available here are the [ Capital Change History Tool ](/bApps/InterjectTraining/Capital/CCQuery.html) which gives a historical view to all of the Capital Changes made, and the [ Capital Export Tool ](/bApps/InterjectTraining/Capital/CapitalExport.html) which exports the POs from Capital into DMS, where they can be further managed.
+The Capital Module is designed to handle Capital POs, and provides tools for controllers to review Capital allocations across sites and available assets.
+
+### [ Capital Input Tool ](/bApps/InterjectTraining/Capital/CapitalInputReport.html)
+
+Use this tool to save new and update existing Capital POs. The other tabs in this tool are used to provide sumary views on the Capital POs for better analysis and control.
+
+### [ Capital Change History Tool ](/bApps/InterjectTraining/Capital/CCQuery.html)
+
+This tool provides an in-depth view into the historical data for the Capital PO changes.
+
+### [ Capital Export Tool ](/bApps/InterjectTraining/Capital/CapitalExport.html)
+
+The Capital Export Tool exports the Capital POs from the Capital module into the DMS module. Once in DMS, you can edit the Capital POs with Toolbox.
