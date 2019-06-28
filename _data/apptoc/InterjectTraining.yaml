@@ -17,17 +17,18 @@ horizontalnav:
 main:
 - title: Main
   path: /bApps/InterjectTraining/InterjectTrainingMain.html
-- title: Capital Module
-  path: /bApps/InterjectTraining/Capital/CapitalModule.html
-- title: Budget Module
-  path: /bApps/InterjectTraining/Budget/BudgetModule.html
-- title: Projections Module
-  path: /bApps/InterjectTraining/Projections/ProjectionsModule.html
+#- title: Capital Module
+#  path: /bApps/InterjectTraining/Capital/CapitalModule.html
+#- title: Budget Module
+#  path: /bApps/InterjectTraining/Budget/BudgetModule.html
+#- title: Projections Module
+#  path: /bApps/InterjectTraining/Projections/ProjectionsModule.html
 
 capital:
 - title: Capital Module Summary
   path: /bApps/InterjectTraining/Capital/CapitalModule.html
 - sectiontitle: Capital Input Tool
+  path: /bApps/InterjectTraining/Capital/CapitalInputReport.html
   section:
   - title: Capital Input Tool Summary
     path: /bApps/InterjectTraining/Capital/CapitalInputReport.html
@@ -38,6 +39,7 @@ capital:
   - title: Summary by PO Type Tab
     path: /bApps/InterjectTraining/Capital/CapitalSummaryPOType.html
 - sectiontitle: Capital Change History Tool
+  path: /bApps/InterjectTraining/Capital/CCQuery.html
   section:
   - title: CC Query Tab
     path: /bApps/InterjectTraining/Capital/CCQuery.html
@@ -52,6 +54,7 @@ budget:
 - title: Control Center
   path: /bApps/InterjectTraining/Budget/ControlCenter.html
 - sectiontitle: Budget Template
+  path: /bApps/InterjectTraining/Budget/BudgetTemplate.html
   section:
   - title: Main Tab
     path: /bApps/InterjectTraining/Budget/BudgetTemplate.html
