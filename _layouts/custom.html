@@ -63,6 +63,8 @@
 	{%endcapture%}
 	<script language="JavaScript">
 		var sitePath = '{{page.url}}'
+		// save URI of the referring page (for search page nav loading... see toc.js)
+		var referringPage = document.referrer;
 	</script>
 	<!-- metadata -->
 	<!--This if statement is required to load jquery on the search.md page before the setTimeout function-->
