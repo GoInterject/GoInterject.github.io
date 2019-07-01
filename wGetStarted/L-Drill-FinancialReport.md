@@ -13,7 +13,7 @@ For this drill example you will use the **PL Trend** that was previously reviewe
 
 ###  Unfreezing the Report 
 
-**Step 1** : For this example you will be using a modified PL trend report, which can be download here Demo_Interject_PLTrend.xlsx . This report has been prepared specifically for this exercise. 
+**Step 1** : For this example you will be using a modified PL trend report. This report has been prepared specifically for this exercise. 
 
 ![](/images/L-Drill-Financial/01.png)
 <br>
