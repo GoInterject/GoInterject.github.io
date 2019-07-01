@@ -15,7 +15,7 @@ After you get access to Interject, there are three parts to installing Interject
             <tr>
                 <td>
                     <ul>
-                        <li>VPN Connectivity (if install is from Remote)</li>
+                        <li>VPN Connectivity \(if install is from Remote\)</li>
                         <li>Verify and Download Interject Install Scripts</li>
                     </ul>    
                 </td>
@@ -33,10 +33,10 @@ After you get access to Interject, there are three parts to installing Interject
                   Base Install and data transfer
                 </td>
                 <td>
-                1.1.0
+                1.0.11
                 </td>
                 <td>
-                <a href="https://drive.google.com/file/d/16E2th5xN__y7gyBiJ4HHbxAD1kjcuufi/view">Initial.Interject_Reporting.sql.</a>
+                <a href="https://drive.google.com/file/d/1p15ePKbjMR1v2dBRH1HKc24oAOdtJppP/view?usp=sharing">Initial.Interject_Reporting.sql.</a>
                 </td>
             </tr>
             <tr>

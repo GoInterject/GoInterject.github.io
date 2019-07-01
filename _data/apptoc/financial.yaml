@@ -10,9 +10,6 @@ horizontalnav:
   - title: Install
     path: /bApps/bFinancials/Company-Setup.html
     node: install
-  - title: Update Manager
-    path: /bApps/bFinancials/Updates.html
-    node: update
   - title: Configure
     path: /bApps/bFinancials/Configure.html
     node: configure
@@ -81,10 +78,7 @@ install:
     path: /bApps/bFinancials/PrepSpecFile.html
   - title: FRx Migration
     path: /bApps/bFinancials/FRxMigration.html
-  - title: Security & Updates
-update:
-  - title: Update Manager
-    path: /bApps/bFinancials/Updates.html
+  #- title: Security & Updates
 
 configure:
   - title: Configuring Interject for Financials
