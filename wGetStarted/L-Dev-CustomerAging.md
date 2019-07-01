@@ -161,7 +161,7 @@ In this example, you will use the system parameter, **Interject_NTLogin** , whic
 
 ###  Creating the Stored Procedure 
 
-A stored procedure or data API servers as a middle tier for an INTERJECT report. In t  his example you will be using a stored procedure. INTERJECT can retrieve one more result sets from the stored procedure into the spreadsheet report. 
+A stored procedure or data API serves as a middle tier for an INTERJECT report. In this example you will be using a stored procedure. INTERJECT can retrieve one or more result sets from a stored procedure into the spreadsheet report. 
 
 The INTERJECT Website Portal allows you to create and manage Data Portals and reference stored procedures you create. Data Portals are stored locally in your Excel session when you log into INTERJECT. When requesting data INTERJECT creates a point-to-point connection with the intended data source. 
 

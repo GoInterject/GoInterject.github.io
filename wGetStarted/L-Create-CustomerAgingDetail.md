@@ -126,7 +126,7 @@ As seen in the following screenshot, you have 7 rows for each customer. It is no
 <br> 
 
 
-Give row 10,12,14, and 16 heights of 6.75. The error below illustrates how to drag the row height to get close to 6.75. You can also type in example data in G11, H11. In K11 you can type in a label **Contact** : and **Phone:** in N11. Format both of these to be right-aligned. 
+Give row 10,12,14, and 16 heights of 6.75. The image below illustrates how to drag the row height to get close to 6.75. You can also type in example data in G11, H11. In K11 you can type in a label **Contact** : and **Phone:** in N11. Format both of these to be right-aligned. 
 
 ![](/images/L-Create-CustAgingDetail/17.png)
 
@@ -225,7 +225,7 @@ The formatting has been copied down to the rest of the report and there are subt
 <br> 
 
 
-**Step 10:** Now type **Param(C33,C34,C35,"")"** to establish the parameters for the formula that match the previous ReportRange(). Both Report Formulas are setup to use the same filters. Click OK to finish. 
+**Step 10:** Now type **Param(C33,C34,C35,"")** to establish the parameters for the formula that match the previous ReportRange(). Both Report Formulas are setup to use the same filters. Click OK to finish. 
 
 ![](/images/L-Create-CustAgingDetail/31.png)
 
