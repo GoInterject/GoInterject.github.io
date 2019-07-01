@@ -9,8 +9,8 @@ description: The walk-through shows how to update INTERJET to the newest version
 
 INTERJECT often comes out with new features and updates. When doing so, it is a priority to make updating INTERJECT as easy as possible, so that you can access these features. In this walk-through, you will see how to add these updates quickly. 
 
-To watch a quick walk-through video, click on the icon:  
-   <br><a href="https://www.youtube.com/watch?v=-PVuTGZ1qz4&feature=youtu.be"><i class="fa fa-youtube-play" style="color: #ff0000; font-size: 3em;"></i></a>
+Here is a quick walk-through video:  
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/-PVuTGZ1qz4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>{: .center-image }
 
 ###  Updating to the Newest Version of INTERJECT 
 
@@ -56,21 +56,4 @@ Click **Next** to continue in the Install wizard.
 
 ![](/images/Updating/10.png)
 
-To confirm you have the latest version, click **Check for Updates** again and compare the two boxes. 
-
-![](/images/Updating/11.png)
-
-And that is all there is to it, you have officially updated INTERJECT. 
-
-##  Related Links: 
-
-[ Logging In ](/wAbout/Logging-In.html)
-
-[ Report Library Basics ](/wAbout/Report-Library-Basics.html)
-
-[ Working with INTERJECT ](/wAbout/Working-with-INTERJECT.html)
-
-[ Real-World Walkthroughs ](/wAbout/Real-World-Walkthroughs.html)
-
-  
-
+And that is all there is to it, you have officially updated INTERJECT.
