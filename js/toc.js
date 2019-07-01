@@ -39,6 +39,4 @@ else if (sitePath.startsWith("/schemas/search") == true){
 
 // if (sitePath.startsWith("/schemas/search") == true){
     
-
 renderNav(docstoc);
-
