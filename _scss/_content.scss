@@ -216,8 +216,8 @@ p img:hover {
 .modal-content {
     margin: auto;
     display: block;
-    width: 100%;
-    max-width: 1000px;
+    width: auto;
+    max-width: 2500px;
     cursor: zoom-out; /* Set cursor to zoom out to indicate it can be clicked */
 }
 
