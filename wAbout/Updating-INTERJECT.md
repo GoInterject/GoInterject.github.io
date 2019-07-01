@@ -18,7 +18,7 @@ To watch a quick walk-through video, click on the icon:
 
 ![](/images/Updating/01.png)
 
-**Step 2:** Once everything is saved, click the [ **Check for Updates** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#check-for-updates) button in the INTERJECT ribbon 
+**Step 2:** Once everything is saved, and you are logged in, click the [ **Check for Updates** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#check-for-updates) button in the INTERJECT ribbon. You cannot check for updates until you are logged in. 
 
 ![](/images/Updating/02.png)
 
