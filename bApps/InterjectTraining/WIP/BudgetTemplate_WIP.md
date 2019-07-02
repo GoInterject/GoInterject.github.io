@@ -25,7 +25,7 @@ description:
 
 ![](/images/WCNTraining/Budget/BudgetTemplate_FullView.png)
 
-## Base Year option and Fincube
+## Base Year and Fincube
 
 The **Base Year** drop-down filter changes how Actuals and Projections for the current year are pulled in from Fincube. For example, the screenshot below shows the *Aug Proj* option, which pulled in Actuals from January -> July, and Projections from August -> December.
 
@@ -37,9 +37,9 @@ If we change the **Base Year** to *Aug Act*, August will pull in as Actual inste
 
 ## Retain Rows and how it works
 
-With **Retain Rows** on *Yes*, any inputs in the Input columns will remain when the template is refreshed, or even if the report is cleared.
+With **Retain Rows** on *Yes*, any inputs in the Input columns will remain when the template is refreshed, or even if the report is cleared. If it is *No*, the Input columns will copu either the Budgets saved to the current Budget Year or last Year' (depending on the alternative option).
 
-For example, the screenshot below shows a formula used on the *50020-600-00* account.
+For and example with **Retain Rows** *Yes*, the screenshot below shows a formula used on the *50020-600-00* account.
 
 ![](/images/WCNTraining/Budget/BudgetTemplate_RetainRowsBeforeClear.png)
 
@@ -72,18 +72,26 @@ Let's go through the following example. In the screenshot below, we see four acc
 
 With **Retain Rows** set to *Yes* and **Insert By Full Acct** set to *No*, we delete the 36009-000-00 and 36009-600-00 rows.
 
-![](/images/WCNTraining/Budget/BudgetTemplate_SummaryDetailPullStart.png)
+![](/images/WCNTraining/Budget/BudgetTemplate_SummaryDetail_SummaryPrep.png)
 
 When we pull on the tool now, the two detail rows 36009-000-00 and 36009-600-00 are summarized into one row, with the account header of 36009 alone. 36009-000-00 had $1,000 amounts for all months, and 36009-600-00 had $2,000 for all months. Together they have $3,000 for all months.
 
-![](/images/WCNTraining/Budget/BudgetTemplate_SummaryDetailPullStart.png)
+![](/images/WCNTraining/Budget/BudgetTemplate_SummaryDetail_SummaryPull.png)
 
 >**Things to Remember**<br>
 >For this to work, **Retain Rows** MUST be set to *Yes*. Otherwise, if **Retain Rows** is set to *No* and you pull, it will wipe out all rows and pull in all accounts either on the Summary or Detail level (depending on how you set **Insert By Full Acct**).
 
 ### Saving Summary and Detail levels together
 
-Here Paul is going to write Save notes.
+When saving with Summary and Detail level accounts on the same template, the Summary level accounts are saved to the *000-00* version of the summarized account. Depending on the **Zero Out Missing Accts** setting, the Detail level accounts already in the database will either be zeroed out or remain unaltered.
+
+Let's use the example accounts we used from earlier. Let's update the summarized account for 36009 to $3,500 for all months.
+
+![](/images/WCNTraining/Budget/BudgetTemplate_SummaryDetailSaveStart.png)
+
+First we save with **Zero Out Missing Accts** set to *No*, and pull in all detail rows by setting **Retain Rows** to *No* and **Insert By Full Acct** to *Yes*.
+
+![](/images/WCNTraining/Budget/BudgetTemplate_SummaryDetail_ZeroOutNo.png)
 
 ## Do I have security rights to Save from the Budget Template?
 
