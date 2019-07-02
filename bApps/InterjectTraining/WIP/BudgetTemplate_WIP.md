@@ -14,7 +14,7 @@ description:
 * **District** - *Required*. Individual district. Cannot use district ranges or groupings
 * **YYYY-MM** - *Required*. Needs to be in YYYY-MM format
 * **Currency** - *Optional*. Blank defaults to your home district currency. Other options are USD and CAD.
-* [ **Base Year** ](#base-year-option-and-fincube) - *Required*. Used in the pull. Drop-down filter ranges from *Aug Proj -> Dec Act*<br><br>
+* [ **Base Year** ](#base-year-and-fincube) - *Required*. Used in the pull. Drop-down filter ranges from *Aug Proj -> Dec Act*<br><br>
 [ *Retain Rows - Related Parameters (used in the pull)* ](#retain-rows-and-how-it-works)
 * **Retain Rows** - *Required*. Drop-down filter includes *Yes*, *No-Show Last Saved*, *No-Show Prior Bud*. If *Yes*, the Input columns will not wipe out on the pull.
 * **Retain Comments** - *Required*. Drop-down filter includes *Yes* and *No*. If *Yes*, pulling in on the report will not wipe out comments not yet saved to the database.
