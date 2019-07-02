@@ -156,7 +156,7 @@ ___
 *System is not an accepted System. Please update to a valid System.*
         
 ___
-![](/images/WCNTraining/Budget/BudgetUpload_InvalidSubSytem.png)
+![](/images/WCNTraining/Budget/BudgetUpload_InvalidSubSystem.png)
 
 *SubSystem is not an accepted SubSystem. Please update to a valid SubSystem.*
 
