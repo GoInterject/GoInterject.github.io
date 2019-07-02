@@ -25,7 +25,9 @@ description:
 
 ![](/images/WCNTraining/Budget/BudgetTemplate_FullView.png)
 
-## Base Year and Fincube
+## Input Field Explanations
+
+### Base Year and Fincube
 
 The **Base Year** drop-down filter changes how Actuals and Projections for the current year are pulled in from Fincube. For example, the screenshot below shows the *Aug Proj* option, which pulled in Actuals from January -> July, and Projections from August -> December.
 
@@ -35,7 +37,7 @@ If we change the **Base Year** to *Aug Act*, August will pull in as Actual inste
 
 ![](/images/WCNTraining/Budget/BudgetTemplate_BaseYear02.png)
 
-## Retain Rows and how it works
+### Retain Rows and how it works
 
 With **Retain Rows** on *Yes*, any inputs in the Input columns will remain when the template is refreshed, or even if the report is cleared. If it is *No*, the Input columns will copu either the Budgets saved to the current Budget Year or last Year' (depending on the alternative option).
 
@@ -62,11 +64,11 @@ Otherwise if **Insert at End** is set to *Yes*, the added account is added at th
 >**Things to Remember**
 >* After the first pull, the **Retain Rows** will automatically be set to *Yes*, to preserve your file changes.
 
-## Summary and Detail level accounts
+### Summary and Detail level accounts
 
 A new feature to the Budget Template is the ability to pull/save to Detail and Summary level accounts at the same time.
 
-### Pulling Summary and Detail levels together
+#### Pulling Summary and Detail levels together
 On the pull, the **Insert By Full Acct** drop-down option dictates if the missing accounts are added on the Summary or Detail level. When **Retain Rows** is set to *Yes*, this permits you to pull in accounts on a different level than the ones you already have in your template.
 
 Let's go through the following example. In the screenshot below, we see four account combinations for the 36009 account.
@@ -82,9 +84,9 @@ When we pull on the tool now, the two detail rows 36009-000-00 and 36009-600-00 
 ![](/images/WCNTraining/Budget/BudgetTemplate_SummaryDetail_SummaryPull.png)
 
 >**Things to Remember**<br>
->For this to work, **Retain Rows** MUST be set to *Yes*. Otherwise, if **Retain Rows** is set to *No* and you pull, it will wipe out all rows and pull in all accounts either on the Summary or Detail level (depending on how you set **Insert By Full Acct**).
+>For this to work, **Retain Rows** MUST be set to *Yes*. Otherwise, if **Retain Rows** is set to *No* and you pull, it will pull in ALL accounts on the Detail Level.
 
-### Saving Summary and Detail levels together
+#### Saving Summary and Detail levels together
 
 When saving with Summary and Detail level accounts on the same template, the Summary level accounts are saved to the *000-00* version of the summarized account. Depending on the **Zero Out Missing Accts** setting, the Detail level accounts already in the database will either be zeroed out or remain unaltered.
 
@@ -165,30 +167,74 @@ Once Corporate has versioned your change, the Budget amount will be sycned throu
 
 ## Common Save Errors
 
-![](/images/WCNTraining/Budget/BudgetUpload_LockLevelError.png)
+![](/images/WCNTraining/Budget/BudgetTemplate_Error_TemplateOutofDate.png)
 
-*Budget is locked above your level in the Control Center. If you need to make changes, work with your supervisor to unlock Budget back to your level.*
-
-___
-![](/images/WCNTraining/Budget/BudgetUpload_DPAError.png)
-
-*You need to be in the District Position Assignment at an approved position to use this tool for any saves. Your Division Controllers can add you to the DPA in Toolbox.*
+*The template you are using is not current. You need to grab a new template from the Report Library.*
 
 ___
+![](/images/WCNTraining/Budget/BudgetTemplate_Error_LockLevel.png)
+
+*The district is locked at a level higher than what you have access for. Work with your supervisor to unlock the file to your level.*
+
+
 <button class="collapsible">Other Possible Save Errors</button>
 <div markdown="1" class="panel">
-![](/images/WCNTraining/Budget/BudgetUpload_NotinDPAforDistrict.png)
+![](/images/WCNTraining/Budget/BudgetTemplate_Error_LastPullFor.png)
 
-*You need to be in the DPA for the district you are trying to save to. Your Division Controller can add you to the District Position Assignment in Toolbox.*
-
-___
-![](/images/WCNTraining/Budget/BudgetUpload_CannotUpdateAutocalcs.png)
-
-*You cannot update Autocalc with this tool. Please remove the Account from your save.*
+*You last pulled for a district different from the one you are trying to save to. You need to repull for the district you want to save for with Retain Rows set to No. Be sure to make a copy to copy your notes/amounts over.*
         
 ___
-![](/images/WCNTraining/Budget/BudgetUpload_AfterCorpCutoffMessage.png)
-![](/images/WCNTraining/Budget/BudgetUpload_AfterCorpCutoffRowMessageSingle.png)
+![](/images/WCNTraining/Budget/BudgetTemplate_Error_DistrictRequired.png)
 
-*The save succeeded, but it is After Corp Cutoff for this District. The number will not be updated in Interject until Corp Cutoff is updated or BOD.*
+*You need to use a valid District in the District parameter.*
+       
+___
+![](/images/WCNTraining/Budget/BudgetTemplate_Error_YearMonthRequired.png)
+
+*The YearMonth is required, and needs to be in the YYYY-MM format.*
+
+___
+![](/images/WCNTraining/Budget/BudgetTemplate_Error_AfterCorpCutoff.png)
+
+*Your save updated Target Center 2.0, but is not synced to Interject yet. Once Corp Cutoff is updated to after your change or BOD is created, it will then be synced to Interject.*
+        
+___
+![](/images/WCNTraining/Budget/BudgetTemplate_Error_MissingColumns.png)
+
+*Your local template is missing some of the required columns. Get a fresh copy of the template for the library, or reach out to support to fix your template.*
+
+___
+![](/images/WCNTraining/Budget/BudgetTemplate_Error_InvalidAccount.png)
+
+*The Account on the specified row is not a valid Account.*
+
+___
+![](/images/WCNTraining/Budget/BudgetTemplate_Error_InvalidSyst.png)
+
+*The Syst on the specified row is not a valid Syst.*
+        
+___
+![](/images/WCNTraining/Budget/BudgetTemplate_Error_InvalidSbst.png)
+
+*The Sbst on the specified row is not a valid Sbst.*
+
+___
+![](/images/WCNTraining/Budget/BudgetTemplate_Error_NonumericAmount.png)
+
+*The amount in the provided column for the given row is non-numeric, and needs to be fixed (Proj12 = Bud12)*
+        
+___
+![](/images/WCNTraining/Budget/BudgetTemplate_Error_ExponentialAmount.png)
+
+*There is a rounding error in the provided column for the given row, and needs to be fixed (Proj12 = Bud12)*
+
+___
+![](/images/WCNTraining/Budget/BudgetTemplate_Error_Duplicates.png)
+
+*Two of your rows have the same Account combination listed. It could be that one row is on the summarized level and you have the detail version 000-00 as well.*
+        
+___
+![](/images/WCNTraining/Budget/BudgetTemplate_Error_BrokenFormula.png)
+
+*There is a broken formula in the provided column for the given row, and needs to be fixed (Period 1 = Bud1)*
 </div>
