@@ -15,13 +15,15 @@ There are two types of errors that INTERJECT can display: unhandled and handled.
 
 ### Error Handling with RaiseError and UserNotice
 
-##### RAISERROR
+#### RAISERROR
 
 INTERJECT uses the T-SQL statement RAISERROR in its Data Portals to process errors.
 
 RAISERROR is designed to generate error messages and initiate error processing in the session (Source: [Microsoft RAISERROR Documentation][microsoft doc]). It is used as follows:
 
+
 ![](/images/Error-Handling/01.png)
+
 
 **@ErrorMessageToUser** - a string containing a description of the error, with or without a prefix of ‘UserNotice:’.
 
@@ -31,13 +33,16 @@ RAISERROR is designed to generate error messages and initiate error processing i
 
 *See [Microsoft RAISERROR Documentation][microsoft doc] from more detailed information on using RAISERROR and its parameters.
 
-##### UserNotice:
+#### UserNotice
 
 **‘UserNotice:’** is an INTERJECT-defined identifying string that we append to the beginning of the @ErrorMessageToUser argument at the time of passing to RAISERROR to indicate that we would like a popup to appear to the user in Excel when the error occurs. It is used as follows:
 
+
 ![](/images/Error-Handling/02.png)
 
+
 When ‘UserNotice:’ is added to your @ErrorMessageToUser before being passed to RAISERROR, it** enables the option of having a popup window appear**, alerting the user of the error in Excel.
+
 ![](/images/Error-Handling/03.png)
 
 Errors can quickly be *handled* (as opposed to leaving unhandled) by developers simply by using the UserNotice string.
@@ -47,3 +52,4 @@ Errors can quickly be *handled* (as opposed to leaving unhandled) by developers 
 If you opt not to use UserNotice, you error will still be reported by the INTERJECT addin, but no popup window will appear for the user:
 
 ![](/images/Error-Handling/04.png)
+
