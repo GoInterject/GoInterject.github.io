@@ -52,4 +52,3 @@ Errors can quickly be *handled* (as opposed to leaving unhandled) by developers 
 If you opt not to use UserNotice, you error will still be reported by the INTERJECT addin, but no popup window will appear for the user:
 
 ![](/images/Error-Handling/04.png)
-
