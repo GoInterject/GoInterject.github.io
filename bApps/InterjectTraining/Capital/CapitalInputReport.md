@@ -23,12 +23,12 @@ If you update an existing PO with a new number, it will renumber the existing PO
 ___
 ### [ Summary Tab ](/bApps/InterjectTraining/Capital/CapitalSummary.html)
 
-This tab is used to recon the Capital amounts saved from the Bud Capital Input tab and provides summarized Capital amounts by period and quarter.
+This tab is used to recon the Capital amounts saved from the Bud Capital Input tab, and it provides summarized Capital amounts by period and quarter.
 
 ### [ Bud Capital Input Tab ](/bApps/InterjectTraining/Capital/CapitalInput.html)
 
-This tab is used to save new Capital PO Items for a specific District, and pulls in existing Capital PO information.
+This tab is used to save new Capital PO Items for a specific District, and it pulls in existing Capital PO information.
 
 ### [ Summary by PO Type Tab ](/bApps/InterjectTraining/Capital/CapitalSummaryPOType.html)
 
-This is the tab region and corporate use to review capital, and can be found in the Budget Book as well.
+This is the tab Region and Corporate use to review capital, and can be found in the Budget Book as well.
