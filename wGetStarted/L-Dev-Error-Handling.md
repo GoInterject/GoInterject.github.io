@@ -21,10 +21,12 @@ INTERJECT uses the T-SQL statement RAISERROR in its Data Portals to process erro
 
 RAISERROR is designed to generate error messages and initiate error processing in the session (Source: [Microsoft RAISERROR Documentation][microsoft doc]). It is used as follows:
 
-![](/images/Error-Handling/01.png) 
+![](/images/Error-Handling/01.png)
 
 **@ErrorMessageToUser** - a string containing a description of the error, with or without a prefix of ‘UserNotice:’.
+
 **severity** - generally a number from 0-18 ranking the severity of the error.
+
 **state** - number, 0-255, used to locate where errors occur in your code.
 
 *See [Microsoft RAISERROR Documentation][microsoft doc] from more detailed information on using RAISERROR and its parameters.
