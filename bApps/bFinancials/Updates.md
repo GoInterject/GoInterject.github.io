@@ -10,10 +10,10 @@ description: INTERJECT™ Financials for Epicor Enterprise (This would cover top
         <th><span style="font-weight:bold">Current for Inital Install:</span> <a href="https://drive.google.com/file/d/16E2th5xN__y7gyBiJ4HHbxAD1kjcuufi/view">Initial.Interject_Reporting_1.1.0.SQL</a></th>
     </tr>
     <tr>
-        <th><span style="font-weight:bold">Update for Previous Install:</span> <a href="https://drive.google.com/file/d/1rDImgOqW1-4J5xfzDkga_ahV79EWkdqL/view">1.0.10._Update.Interject_Reporting_1.1.0.SQL</a></th>
+        <th><span style="font-weight:bold">Update for Previous Install:</span> <a href="https://drive.google.com/file/d/1rDImgOqW1-4J5xfzDkga_ahV79EWkdqL/view">from1.0.11to1.1.0_Update.Interject_Reporting.SQL</a></th>
     </tr>
     <tr>
-        <th><span style="font-weight:bold">Rollback to 1.0.10:</span> <a href="hhttps://drive.google.com/file/d/1ZaDnrP-v40aTh7NBH8mbvO3oDIY230G3/view">1.0.10_Rollback.Interject_Reporting_1.1.0.SQL</a></th>
+        <th><span style="font-weight:bold">Rollback to 1.0.10:</span> <a href="hhttps://drive.google.com/file/d/1ZaDnrP-v40aTh7NBH8mbvO3oDIY230G3/view">from1.1.0to1.0.11_Rollback.Interject_Reporting.SQL</a></th>
     </tr>
 </table>
 
