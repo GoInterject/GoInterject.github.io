@@ -108,6 +108,14 @@ Now 36009-000-00 has the full $3,500 for each month, and 36009-600-00 has been z
 >* If there are other accounts you delete from your template, they will be zeroed out as well if **Zero Out Missing Accts** is set to *Yes* (even if they do not have summary level account present in the template).
 >* When saving with a Summary level account (only Acct is present), you cannot also save to the same account with *000-00* included. The save thinks the two accounts are the same, and will be marked as duplicates.
 
+## The Autocalcs
+
+The majority of accounts in your template will be marked **Manual Input** in the *Bud Method* column (column J). Some of the other accounts will have something different in this column, and are considered **Autocalcs**.
+
+![](/images/WCNTraining/Budget/BudgetTemplate_Autocalcs.png)
+
+There are many different types of Autocalcs, but the main thing to know is that you cannot edit them with the **Budget Template**. These accounts are managed by Corporate. Notice also that any Manual Input account is highlighted yellow, and the Autocalcs are grayed out.
+
 ## Do I have security rights to Save from the Budget Template?
 
 Only people in the District Position Assignment (DPA) for the District in Toolbox can save to this file. Your Division Controller can add you if you are not already in the DPA.
@@ -126,32 +134,34 @@ Budget is locked at these levels in the **Control Center**, in the N column. In 
 
 If an A/C level user tried saving to 2050 Budget, they would be stopped with the following message.
 
-![](/images/WCNTraining/Budget/BudgetUpload_LockLevel1District.png)
+![](/images/WCNTraining/Budget/BudgetTemplate_LockLevelError.png)
 
 You are able to save Budget as long as the Budget lock level is your level or below. Otherwise you will not be able to save Budget.
 
 ## After Corp Cutoff and after BOD
 
+### After Corp Cutoff
 If you save to Budget **After Corp Cutoff**, the numbers will still be updated in Target Center 2.0. However, they will not be synced through to Interject.
 
 In this example, the *Corp Cutoff* date in Control Center is set to 11/3/2018.
 
 ![](/images/WCNTraining/Budget/BudgetUpload_CCAfterCorpCutoff.png)
 
-We then try and upload a change to Budget using the **Budget Upload** tool (after this date), and get the following popup and in-row messages.
+We then try and upload a change to Budget using the **Budget Template** tool (after this date), and get the following popup message.
 
-<!--
-![](/images/WCNTraining/Budget/BudgetUpload_AfterCorpCutoffMessage.png)
-![](/images/WCNTraining/Budget/BudgetUpload_AfterCorpCutoffRowMessage.png)
--->
+![](/images/WCNTraining/Budget/BudgetTemplate_AfterCorpCutoffSave.png)
+![](/images/WCNTraining/Budget/BudgetTemplate_AfterCorpCutoff.png)
 
 So our changes here have been saved to Target Center 2.0, but they are not yet synced to Interject. Once the *Corp Cutoff* date is set to a Date/Time after our change or BOD, this change will then be synced to Interject.
 
-We can use the [ Budget Change Query Tool ](/bApps/InterjectTraining/Budget/BudgetChangeQueryToolSummary.html) to confirm that our save has been registered in Target Center 2.0. the new tab [ UnsyncedChanges ](/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html) is designed to pull in all amounts not yet synced to Interject, which neatly matches our inquiry. The screenshot below shows that our Budget save did indeed succeed and is in the database.
+We can use the the new tab [ UnsyncedChanges ](/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html) in the [ Budget Change Query Tool ](/bApps/InterjectTraining/Budget/BudgetChangeQueryToolSummary.html) to see our changes in Target Center 2.0.
 
-<!-- ![](/images/WCNTraining/Budget/BudgetUpload_UnsyncedChangesBCQuery.png) -->
+![](/images/WCNTraining/Budget/BudgetTemplate_AfterCorpCutoffBudChangeQuery.png)
 
-Once **BOD** for a Budget Year has been created, then any save from the **Budget Upload Tool** will not automatically sync to Interject again. This is just like with *After Corp Cutoff*, and while it is not in Interject it is in Target Center 2.0 and be checked using the [ UnsyncedChanges ](/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html) tab in the [ Budget Change Query Tool ](/bApps/InterjectTraining/Budget/BudgetChangeQueryToolSummary.html). Once Corporate has versioned your change, the Budget amount will be sycned through to Interject.
+### After BOD
+Once **BOD** for a Budget Year has been created, then any save from the **Budget Template** will not automatically sync to Interject again. This is just like with *After Corp Cutoff*, and while it is not in Interject it is in Target Center 2.0, and can be checked using the [ UnsyncedChanges ](/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html) tab in the [ Budget Change Query Tool ](/bApps/InterjectTraining/Budget/BudgetChangeQueryToolSummary.html). 
+
+Once Corporate has versioned your change, the Budget amount will be sycned through to Interject.
 
 ## Common Save Errors
 
