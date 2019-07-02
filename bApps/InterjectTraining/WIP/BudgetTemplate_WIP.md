@@ -20,8 +20,8 @@ description:
 * **Retain Comments** - *Required*. Drop-down filter includes *Yes* and *No*. If *Yes*, pulling in on the report will not wipe out comments not yet saved to the database.
 * **Insert at End** - *Required*. Drop-down filter includes *Yes* and *No*. If *Yes* and **Retain Rows** is also *Yes*, then new accounts get added at the bottom of their grouping.<br><br>
 [ *Summary and Detail Accounts - Related Parameters* ](#summary-and-detail-level-accounts)
-* **Insert By Full Acct** - *Required*. Used in the pull. Drop-down filter includes *Yes* and *No*. For *Yes*, Accounts not yet in the template get pulled in on the detail level. For *No*, they are summarized in at the summary level and dropped in.
-* **Zero Out Missing Accts** - *Required*. Used in the save. Drop-down filter includes *Yes* and *No*. For *Yes*, if an account has an amount in the database but is not in the template, the account in the database will be zeroed out. For *No*, the amount in the database will remain unaffected, and any Summary level accounts are offsetted to include the missing accounts automatically.
+* **Insert By Full Acct** - *Required*. Used in the pull. Drop-down filter includes *Yes* and *No*. For *No*, new accounts are aggregated at the summary level and dropped in.
+* **Zero Out Missing Accts** - *Required*. Used in the save. Drop-down filter includes *Yes* and *No*. For *Yes*, accounts missing from the template are zeroed out. For *No*, missing accounts will keep their amounts, and any Summary level accounts are offsetted to include the missing accounts automatically.
 
 ![](/images/WCNTraining/Budget/BudgetTemplate_FullView.png)
 
@@ -59,6 +59,9 @@ Otherwise if **Insert at End** is set to *Yes*, the added account is added at th
 
 ![](/images/WCNTraining/Budget/BudgetTemplate_InsertAtEndYes.png)
 
+>**Things to Remember**
+>* After the first pull, the **Retain Rows** will automatically be set to *Yes*, to preserve your file changes.
+
 ## Summary and Detail level accounts
 
 A new feature to the Budget Template is the ability to pull/save to Detail and Summary level accounts at the same time.
@@ -92,6 +95,18 @@ Let's use the example accounts we used from earlier. Let's update the summarized
 First we save with **Zero Out Missing Accts** set to *No*, and pull in all detail rows by setting **Retain Rows** to *No* and **Insert By Full Acct** to *Yes*.
 
 ![](/images/WCNTraining/Budget/BudgetTemplate_SummaryDetail_ZeroOutNo.png)
+
+The Budget saved to 36009-000-00 is the *offset* of $3,500 per month (summarized amount) and $2,000 per month for 36009-600-00 (amounts in database). This updated the $1,000 in the database 36009-000-00 to $1,500, so that the summarize amount matches what was saved AND preserves the amount already assigned to 36009-600-00.
+
+If we had set **Zero Out Missing Accts** set to *Yes* instead, the pull on detail would have looked like this instead.
+
+![](/images/WCNTraining/Budget/BudgetTemplate_SummaryDetail_ZeroOutYes.png)
+
+Now 36009-000-00 has the full $3,500 for each month, and 36009-600-00 has been zeroed out because it was not in the template.
+
+>**Things to Remember**
+>* If there are other accounts you delete from your template, they will be zeroed out as well if **Zero Out Missing Accts** is set to *Yes* (even if they do not have summary level account present in the template).
+>* When saving with a Summary level account (only Acct is present), you cannot also save to the same account with *000-00* included. The save thinks the two accounts are the same, and will be marked as duplicates.
 
 ## Do I have security rights to Save from the Budget Template?
 
