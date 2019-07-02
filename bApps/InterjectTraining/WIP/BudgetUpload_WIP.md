@@ -21,9 +21,9 @@ description:
 
 ## Uploading to more than one district at a time
 
-Region Controllers can upload Budget amounts to more than one district at a time. To do so, a Regional Controller can pull on the Region and make changes to the Budget amounts across multiple districts.
+Region Controllers can upload Budget amounts to more than one district at a time. To do so, a Regional Controller can pull on the Region and make Budget amount changes across multiple districts.
 
-If do not have Region Controller access, you will not be able to pull or or save on multiple Districts. You will get the following validation errors:
+If you do not have Region Controller access, you will not be able to pull or save on multiple Districts. You will get the following validation errors:
 
 **Pull**
 
@@ -35,15 +35,15 @@ If do not have Region Controller access, you will not be able to pull or or save
 
 ## Drop Budget numbers in without pulling first
 
-When you first open the Budget Upload tab, there will be a range of blank rows available for you to drop Budget values immediately. 
+On opening the Budget Upload tab, there will be a range of blank rows available for you to immediately drop Budget values. 
 
 ![](/images/WCNTraining/Budget/BudgetUpload_BlankRowsDefault.png)
 
-If you need to add more blank rows, insert new rows in the middle of the blank rows. This will automatically copy the formatting, and include the new rows in the Save formula range.
+If you need to add more blank rows, insert new rows in the middle of the blank rows. This will automatically copy the formatting and include the new rows in the Save formula range.
 
 ![](/images/WCNTraining/Budget/BudgetUpload_InsertNewRowsMiddle.png)
 
-If you are starting with an empty sheet, you can insert new rows like before. You will need to check the Save formula to make sure the save range includes all of the new rows.
+If you're starting with an empty sheet, you can insert new rows like before. You will need to check the Save formula to make sure the save range includes all of the new rows.
 
 ![](/images/WCNTraining/Budget/BudgetUpload_InsertNewRowsFromEmpty.png)
 
@@ -55,12 +55,12 @@ Navigate up to the hidden formulas section and click on the Save formula in cell
 
 ![](/images/WCNTraining/Budget/BudgetUpload_SaveFormula.png)
 
-Click within the formula bar the top, and it will bring up all of the cell references. The blue range of cells under the District column will need to be extended to include all of the rows above it.
+Click within the formula bar the top to bring up the cell references. Extend the blue range of cells under the District column to include all of the rows above it.
 
 ![](/images/WCNTraining/Budget/BudgetUpload_SmallSaveRange.png)
 ![](/images/WCNTraining/Budget/BudgetUpload_BigSaveRange.png)
 
-Now you will be able to drop in whatever Budget values you want into this tab, and save them up!
+Now you will be able to drop in the desired Budget values and save them!
 
 ## Do I have security rights to Save from the Budget Upload tab?
 
@@ -72,45 +72,45 @@ Only people in the District Position Assignment (DPA) for the District in Toolbo
 
 ## Budget Upload and the Control Center
 
-Based on your position in the DPA for the district, you will have a certain level of access to this report. The types of levels you may be on are: **A/C**, **Dist**, **Div**, **Reg**, or **Corp**.
+Based on your position in the DPA for the district, you will have a certain level of access to this report. You may eb one of the following levels: **A/C**, **Dist**, **Div**, **Reg**, or **Corp**.
 
-Budget is locked at these levels in the **Control Center**, in the N column. In the example below, District 2050 is locked at the Reg Level.
+Budget is locked at these levels in the **Control Center**, which is the N column. In the example below, District 2050 is locked at the Reg Level.
 
 ![](/images/WCNTraining/Budget/BudgetUpload_ControlCenter1District.png)
 
-If an A/C level user tried saving to 2050 Budget, they would be stopped with the following message.
+If an A/C level user tried saving to 2050 Budget, they would be unable to do so and would receive following message.
 
 ![](/images/WCNTraining/Budget/BudgetUpload_LockLevel1District.png)
 
 You are able to save Budget as long as the Budget lock level is your level or below. Otherwise you will not be able to save Budget.
 
 >**Region Controllers - Multiple Lock Levels**<br>
->As a Region Controller, you are able to save to multiple districts at once. It is possible though to have one of the districts locked at Corp above you.
+>As a Region Controller, you are able to save to multiple districts at once. However, it is possible to have one of the districts locked at Corp above you.
 >![](/images/WCNTraining/Budget/BudgetUpload_ControlCenter2Districts.png)
->If a Region Controller tried saving to these two districts at the same time, the save would be stopped and they would get the following error message:
+>If a Region Controller tries saving to these two districts at the same time, the save will stop and they will see the following error:
 >![](/images/WCNTraining/Budget/BudgetUpload_LockLevel2Districts.png)
->2041 would need to be unlocked to Reg for the Region Controller to edit. Otherwise if they wanted to edit 2050 still, they would need to remove the 2041 row(s).
+>For the Region Controller to edit, 2041 would need to be unlocked to Reg. Otherwise, to edit 2050 they would need to remove the 2041 row(s).
 
 ## After Corp Cutoff and after BOD
 
-If you save to Budget **After Corp Cutoff**, the numbers will still be updated in Target Center 2.0. However, they will not be synced through to Interject.
+If you save to Budget **After Corp Cutoff**, the numbers will still be updated in Target Center 2.0. However, they will not sync to Interject.
 
 In this example, the *Corp Cutoff* date in Control Center is set to 11/3/2018.
 
 ![](/images/WCNTraining/Budget/BudgetUpload_CCAfterCorpCutoff.png)
 
-We then try and upload a change to Budget using the **Budget Upload** tool (after this date), and get the following popup and in-row messages.
+Then try uploading a change to Budget using the **Budget Upload** tool (after this date), and get the following popup and in-row messages.
 
 ![](/images/WCNTraining/Budget/BudgetUpload_AfterCorpCutoffMessage.png)
 ![](/images/WCNTraining/Budget/BudgetUpload_AfterCorpCutoffRowMessage.png)
 
-So our changes here have been saved to Target Center 2.0, but they are not yet synced to Interject. Once the *Corp Cutoff* date is set to a Date/Time after our change or BOD, this change will then be synced to Interject.
+Notice the changes have been saved to Target Center 2.0, but they are not yet synced to Interject. Once the *Corp Cutoff* date is set to a Date/Time after our change or BOD, this change will then be synced to Interject.
 
-We can use the [ Budget Change Query Tool ](/bApps/InterjectTraining/Budget/BudgetChangeQueryToolSummary.html) to confirm that our save has been registered in Target Center 2.0. the new tab [ UnsyncedChanges ](/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html) is designed to pull in all amounts not yet synced to Interject, which neatly matches our inquiry. The screenshot below shows that our Budget save did indeed succeed and is in the database.
+We can use the [ Budget Change Query Tool ](/bApps/InterjectTraining/Budget/BudgetChangeQueryToolSummary.html) to confirm that our save has been registered in Target Center 2.0. the new tab [ UnsyncedChanges ](/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html) is designed to pull in all amounts not yet synced to Interject, which neatly matches our inquiry. The screenshot below shows that our Budget save succeeded and is in the database.
 
 ![](/images/WCNTraining/Budget/BudgetUpload_UnsyncedChangesBCQuery.png)
 
-Once **BOD** for a Budget Year has been created, then any save from the **Budget Upload Tool** will not automatically sync to Interject again. This is just like with *After Corp Cutoff*, and while it is not in Interject it is in Target Center 2.0 and be checked using the [ UnsyncedChanges ](/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html) tab in the [ Budget Change Query Tool ](/bApps/InterjectTraining/Budget/BudgetChangeQueryToolSummary.html). Once Corporate has versioned your change, the Budget amount will be sycned through to Interject.
+Once **BOD** for a Budget Year has been created, any save from the **Budget Upload Tool** will not automatically sync to Interject again, just like *After Corp Cutoff*. However, while it is not in Interject, it is in Target Center 2.0 and can be checked using the [ UnsyncedChanges ](/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html) tab in the [ Budget Change Query Tool ](/bApps/InterjectTraining/Budget/BudgetChangeQueryToolSummary.html). Once Corporate has versioned your change, the Budget amount will be sycned to Interject.
 
 ## Common Save Errors
 
@@ -128,12 +128,12 @@ ___
 <div markdown="1" class="panel">
 ![](/images/WCNTraining/Budget/BudgetUpload_InvalidSource.png)
 
-*Please select Bud in the drop-down filter option, and make sure your Source column says Budget.*
+*Please select Bud in the drop-down filter option and make sure your Source column says Budget.*
 
 ___
 ![](/images/WCNTraining/Budget/BudgetUpload_InvalidYear.png)
 
-*Year is required, and needs to be in the YYYY format.*
+*Year is required and needs to be in the YYYY format.*
         
 ___
 ![](/images/WCNTraining/Budget/BudgetUpload_IncompleteGLString.png)
@@ -143,7 +143,7 @@ ___
 ___
 ![](/images/WCNTraining/Budget/BudgetUpload_InvalidAccount.png)
 
-*Account is not an accepted Account. Please update to a valid Account.*
+*Account is not an valid Account. Please update to a valid Account.*
         
 ___
 ![](/images/WCNTraining/Budget/BudgetUpload_InvalidDistrict.png)
@@ -153,12 +153,12 @@ ___
 ___
 ![](/images/WCNTraining/Budget/BudgetUpload_InvalidSystem.png)
 
-*System is not an accepted System. Please update to a valid System.*
+*System is not an valid System. Please update to a valid System.*
         
 ___
 ![](/images/WCNTraining/Budget/BudgetUpload_InvalidSubSystem.png)
 
-*SubSystem is not an accepted SubSystem. Please update to a valid SubSystem.*
+*SubSystem is not an valid SubSystem. Please update to a valid SubSystem.*
 
 ___
 ![](/images/WCNTraining/Budget/BudgetUpload_DuplicateAccount.png)
