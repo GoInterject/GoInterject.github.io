@@ -41,7 +41,7 @@ RAISERROR is designed to generate error messages and initiate error processing i
 ![](/images/Error-Handling/02.png)
 
 
-When ‘UserNotice:’ is added to your @ErrorMessageToUser before being passed to RAISERROR, it** enables the option of having a popup window appear**, alerting the user of the error in Excel.
+When ‘UserNotice:’ is added to your @ErrorMessageToUser before being passed to RAISERROR, it **enables the option of having a popup window appear**, alerting the user of the error in Excel.
 
 ![](/images/Error-Handling/03.png)
 
