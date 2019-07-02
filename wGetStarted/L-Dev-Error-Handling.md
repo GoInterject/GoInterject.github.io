@@ -52,3 +52,5 @@ Errors can quickly be *handled* (as opposed to leaving unhandled) by developers 
 If you opt not to use UserNotice, you error will still be reported by the INTERJECT addin, but no popup window will appear for the user:
 
 ![](/images/Error-Handling/04.png)
+
+[microsoft doc]: https://docs.microsoft.com/en-us/sql/t-sql/language-elements/raiserror-transact-sql?view=sql-server-2017
