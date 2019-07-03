@@ -5,26 +5,38 @@ keywords: [Account, Epicor, Companies]
 description: INTERJECT™ Financials for Epicor Enterprise (This would cover topics that are specific to integration with Epicor Enterprise, and would potentially be different for each ERP) 
 ---
 
+Depending on which version of Interject Financials you're running, there are different update and rollback scripts. Before updating or rolling back a version, follow the procedure below. Once you know the version you're currently running, click on the appropriate dropdown below for the update release notes, the correct scripts for updating and rolling back versions, as well as procedures for running those scripts.
+
+### To Check for Your Current Version
+
+After the inital instal, applying an update, or performing a rollback, you can confirm that your version is correct by:
+- Going to the **Report Library**
+- Opening the **Configuration Manager**
+- Checking the **Database Version** in the upper right of the report
+<br>
+![Database Version](/images/A-InitialDataLoad/VersionConfirm.png){: .center-image } 
+
+### Click Your Version Below for Release Notes and Update Scripts
 
 <button class="collapsible"><strong>For Users With Version 1.0.10</strong></button>
 <div markdown="1" class="panel">
 
 <table>
     <tr>
-        <th><span style="font-weight:bold">Current for Initial Install:</span> <a href="https://drive.google.com/file/d/16E2th5xN__y7gyBiJ4HHbxAD1kjcuufi/view">Initial.Interject_Reporting_1.1.0.SQL</a></th>
+        <th><span style="font-weight:bold">Current for Initial Install:</span> <a href="https://drive.google.com/file/d/1rDImgOqW1-4J5xfzDkga_ahV79EWkdqL/view?usp=sharing">Initial.Interject_Reporting_1.1.0.SQL</a></th>
     </tr>
     <tr>
-        <th><span style="font-weight:bold">Update for Previous Install:</span> <a href="https://drive.google.com/file/d/1rDImgOqW1-4J5xfzDkga_ahV79EWkdqL/view">from1.0.11to1.1.0_Update.Interject_Reporting.SQL</a></th>
+        <th><span style="font-weight:bold">Update for Previous Install:</span> <a href="https://drive.google.com/file/d/16E2th5xN__y7gyBiJ4HHbxAD1kjcuufi/view?usp=sharing">from1.0.10to1.1.0_Update.Interject_Reporting.SQL</a></th>
     </tr>
     <tr>
-        <th><span style="font-weight:bold">Rollback to 1.0.10:</span> <a href="hhttps://drive.google.com/file/d/1ZaDnrP-v40aTh7NBH8mbvO3oDIY230G3/view">from1.1.0to1.0.11_Rollback.Interject_Reporting.SQL</a></th>
+        <th><span style="font-weight:bold">Rollback to 1.0.10:</span> <a href="https://drive.google.com/file/d/1ZaDnrP-v40aTh7NBH8mbvO3oDIY230G3/view?usp=sharing">from1.1.0to1.0.11_Rollback.Interject_Reporting.SQL</a></th>
     </tr>
 </table>
 
 ### Current Version Notes
 <table>
     <tr>
-        <th><span style="font-weight:bold">Interject for Financials - Current Verion: </span><a href="https://drive.google.com/file/d/1rDImgOqW1-4J5xfzDkga_ahV79EWkdqL/view">Initial.Interject_Reporting_1.1.0.SQL</a></th>
+        <th><span style="font-weight:bold">Interject for Financials - Current Verion: </span><a href="https://drive.google.com/file/d/1rDImgOqW1-4J5xfzDkga_ahV79EWkdqL/view?usp=sharing">Initial.Interject_Reporting_1.1.0.SQL</a></th>
     </tr>
         <tr>
         <th><span style="font-weight:bold">Features</span></th>
@@ -35,11 +47,12 @@ description: INTERJECT™ Financials for Epicor Enterprise (This would cover top
                 <ul>
                     <li>Generate report templates on segments other than natural account</li>
                     <li>Simplified Distribution tab</li>
-                    <li>Added Binder feature to report templates</li>
                     <li>Separate Validated Rollup add non-account option in the Config Mgr</li>
                     <li>Add Posted and Unposted options in the Trial Balance</li>
                     <li>Add Reference Code to JEQuery tool</li>
                     <li>Add sign reversal to templates and fincube</li>
+                    <li>Added Last Run indication in generated templates</li>
+                    <li>Added 3 drills to the Trial Balance from generated templates</li>
                 </ul>    
             </td>
             <td>
@@ -48,10 +61,12 @@ description: INTERJECT™ Financials for Epicor Enterprise (This would cover top
                     <li>Formatted columns in Distribution as Text</li>
                     <li>Reduced column definitions in Report Templates to not use all columns</li>
                     <li>Drill to Rollups tab clears out filters to start with blank template</li>
-                    <li>Reduced column definitions in Report Templates to not use all columns</li>
                     <li>Various formatting changes in the subscription</li>
                     <li>Add prefix in summary rollup 2 to include rollup name</li>
                     <li>Remove FRx parameter from Template</li>
+                    <li>Added 10 char. limit to Row Template Code name and validation</li>
+                    <li>Remove double line subtotals in generated templates</li>
+                    <li>Added Data Pull on Distribution filter to Distribution tab (prep or run), unhide some columns</li>
                 </ul>
             </td>
         </tr>
@@ -92,14 +107,6 @@ The following steps must be taken to roll back one version. Note that this will 
 >  ```
 >
 
-### To Check for the Most Current Version
-
-After the inital instal, applying an update, or performing a rollback, you can confirm that your version is correct by:
-- Going to the **Report Library**
-- Opening the **Configuration Manager**
-- Checking the **Database Version** in the upper right of the report
-<br>
-![Database Version](/images/A-InitialDataLoad/VersionConfirm.png){: .center-image }
 </div>
 
 <button class="collapsible"><strong>For Users With Version 1.0.11</strong></button>
@@ -107,20 +114,20 @@ After the inital instal, applying an update, or performing a rollback, you can c
 
 <table>
     <tr>
-        <th><span style="font-weight:bold">Current for Initial Install:</span> <a href="https://drive.google.com/file/d/16E2th5xN__y7gyBiJ4HHbxAD1kjcuufi/view">Initial.Interject_Reporting_1.1.0.SQL</a></th>
+        <th><span style="font-weight:bold">Current for Initial Install:</span> <a href="https://drive.google.com/file/d/1rDImgOqW1-4J5xfzDkga_ahV79EWkdqL/view?usp=sharing">Initial.Interject_Reporting_1.1.0.SQL</a></th>
     </tr>
     <tr>
-        <th><span style="font-weight:bold">Update for Previous Install:</span> <a href="https://drive.google.com/file/d/1rDImgOqW1-4J5xfzDkga_ahV79EWkdqL/view">from1.0.11to1.1.0_Update.Interject_Reporting.SQL</a></th>
+        <th><span style="font-weight:bold">Update for Previous Install:</span> <a href="https://drive.google.com/file/d/1Dq5lMgoDbV5LlviI4RxhLqY6z3Ptd3tY/view?usp=sharing">from1.0.11to1.1.0_Update.Interject_Reporting.SQL</a></th>
     </tr>
     <tr>
-        <th><span style="font-weight:bold">Rollback to 1.0.10:</span> <a href="hhttps://drive.google.com/file/d/1ZaDnrP-v40aTh7NBH8mbvO3oDIY230G3/view">from1.1.0to1.0.11_Rollback.Interject_Reporting.SQL</a></th>
+        <th><span style="font-weight:bold">Rollback to 1.0.10:</span> <a href="https://drive.google.com/file/d/17xmsrzussLdzXtyTaWZy9IWnbr28SBUM/view?usp=sharing">from1.1.0to1.0.11_Rollback.Interject_Reporting.SQL</a></th>
     </tr>
 </table>
 
 ### Current Version Notes
 <table>
     <tr>
-        <th><span style="font-weight:bold">Interject for Financials - Current Verion: </span><a href="https://drive.google.com/file/d/1rDImgOqW1-4J5xfzDkga_ahV79EWkdqL/view">Initial.Interject_Reporting_1.1.0.SQL</a></th>
+        <th><span style="font-weight:bold">Interject for Financials - Current Verion: </span><a href="https://drive.google.com/file/d/1rDImgOqW1-4J5xfzDkga_ahV79EWkdqL/view?usp=sharing">Initial.Interject_Reporting_1.1.0.SQL</a></th>
     </tr>
         <tr>
         <th><span style="font-weight:bold">Features</span></th>
@@ -131,12 +138,13 @@ After the inital instal, applying an update, or performing a rollback, you can c
                 <ul>
                     <li>Generate report templates on segments other than natural account</li>
                     <li>Simplified Distribution tab</li>
-                    <li>Added Binder feature to report templates</li>
                     <li>Separate Validated Rollup add non-account option in the Config Mgr</li>
                     <li>Add Posted and Unposted options in the Trial Balance</li>
                     <li>Add Reference Code to JEQuery tool</li>
                     <li>Add sign reversal to templates and fincube</li>
-                </ul>    
+                    <li>Added Last Run indication in generated templates</li>
+                    <li>Added 3 drills to the Trial Balance from generated templates</li>
+                </ul>     
             </td>
             <td>
                 <ul>
@@ -144,10 +152,12 @@ After the inital instal, applying an update, or performing a rollback, you can c
                     <li>Formatted columns in Distribution as Text</li>
                     <li>Reduced column definitions in Report Templates to not use all columns</li>
                     <li>Drill to Rollups tab clears out filters to start with blank template</li>
-                    <li>Reduced column definitions in Report Templates to not use all columns</li>
                     <li>Various formatting changes in the subscription</li>
                     <li>Add prefix in summary rollup 2 to include rollup name</li>
                     <li>Remove FRx parameter from Template</li>
+                    <li>Added 10 char. limit to Row Template Code name and validation</li>
+                    <li>Remove double line subtotals in generated templates</li>
+                    <li>Added Data Pull on Distribution filter to Distribution tab (prep or run), unhide some columns</li>
                 </ul>
             </td>
         </tr>
@@ -188,12 +198,4 @@ The following steps must be taken to roll back one version. Note that this will 
 >  ```
 >
 
-### To Check for the Most Current Version
-
-After the inital instal, applying an update, or performing a rollback, you can confirm that your version is correct by:
-- Going to the **Report Library**
-- Opening the **Configuration Manager**
-- Checking the **Database Version** in the upper right of the report
-<br>
-![Database Version](/images/A-InitialDataLoad/VersionConfirm.png){: .center-image }
 </div>
