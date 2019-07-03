@@ -63,6 +63,8 @@
 	{%endcapture%}
 	<script language="JavaScript">
 		var sitePath = '{{page.url}}'
+		// save URI of the referring page (for search page nav loading... see toc.js)
+		var referringPage = document.referrer;
 	</script>
 	<!-- metadata -->
 	<!--This if statement is required to load jquery on the search.md page before the setTimeout function-->
@@ -92,7 +94,6 @@
 		{% if page.landing == true %}{% include global-header.html %}{% endif %} {% if page.landing != true %}{% include header.html %}{% endif %}
 	</header>
 
-	
 
 	<!-- nav bar -->
 	<div class="{% if page.landing == true %}wrapper{%else%}wrapper right-open{% endif %}">
