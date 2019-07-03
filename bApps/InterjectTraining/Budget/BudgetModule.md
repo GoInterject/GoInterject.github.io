@@ -19,4 +19,6 @@ Controls who has access to save to Budgets and when the data will flow from the 
 
 ### [ Budget Change Query ](/bApps/InterjectTraining/Budget/BudgetChangeQuery.html)
 
+
 The Budget Change Query Tool provides different views to how Budgets have changed over the budget season!
+
