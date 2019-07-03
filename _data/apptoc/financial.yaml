@@ -25,12 +25,12 @@ horizontalnav:
   - title: Train by Example
     path: /bApps/bFinancials/ExampleCases.html
     node: examples
-  - title: Portal
-    path: /bApps/bFinancials/Portal-Overview.html
-    node: portal
-  - title: Support
-    path: /bApps/bFinancials/Support-Overview.html
-    node: support
+  #- title: Portal
+    #path: /bApps/bFinancials/Portal-Overview.html
+    #node: portal
+  #- title: Support
+    #path: /bApps/bFinancials/Support-Overview.html
+    #node: support
   
 
 about:
@@ -134,6 +134,8 @@ train:
     path: /bApps/bFinancials/Distributions.html
   - title: Budget Reports
     path: /bApps/bFinancials/BudgetReports.html
+  - title: Portal Site Overview
+    path: /bApps/bFinancials/Portal-Overview.html
  #   section:
    #   - title: Working with Rows and Columns
   #      path:

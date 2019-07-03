@@ -38,15 +38,17 @@ capital:
     path: /bApps/InterjectTraining/Capital/CapitalInput.html
   - title: Summary by PO Type Tab
     path: /bApps/InterjectTraining/Capital/CapitalSummaryPOType.html
-- sectiontitle: Capital Change History Tool
-  path: /bApps/InterjectTraining/Capital/CCQuery.html
+- sectiontitle: Capital Change Query Tool
+  path: /bApps/InterjectTraining/Capital/CapitalChangeQueryTool.html
   section:
+  - title: Capital Change Query Tool Summary
+    path: /bApps/InterjectTraining/Capital/CapitalChangeQueryTool.html
   - title: CC Query Tab
     path: /bApps/InterjectTraining/Capital/CCQuery.html
   - title: ReviewDateSummary Tab
     path: /bApps/InterjectTraining/Capital/ReviewDateSummary.html
-- title: Capital Export Tool
-  path: /bApps/InterjectTraining/Capital/CapitalExport.html
+#- title: Capital Export Tool
+#  path: /bApps/InterjectTraining/Capital/CapitalExport.html
 
 budget:
 - title: Budget Module Summary
@@ -54,13 +56,13 @@ budget:
 - sectiontitle: Budget Template
   path: /bApps/InterjectTraining/Budget/BudgetTemplate.html
   section:
-  - title: Main Tab
+  - title: Budget Template
     path: /bApps/InterjectTraining/Budget/BudgetTemplate.html
   - title: Budget Upload Tab
     path: /bApps/InterjectTraining/Budget/BudgetUpload.html
 - title: Control Center
   path: /bApps/InterjectTraining/Budget/ControlCenter.html
-- title: Budget Change Query
+- title: Budget Change Query Tool
   path: /bApps/InterjectTraining/Budget/BudgetChangeQuery.html
 
 projection:
