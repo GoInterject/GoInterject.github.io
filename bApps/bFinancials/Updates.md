@@ -5,7 +5,8 @@ keywords: [Account, Epicor, Companies]
 description: INTERJECT™ Financials for Epicor Enterprise (This would cover topics that are specific to integration with Epicor Enterprise, and would potentially be different for each ERP) 
 ---
 
-<h2>Interject Financials - Epicor Latest <a href="https://drive.google.com/file/d/1rDImgOqW1-4J5xfzDkga_ahV79EWkdqL/view?usp=sharing">Version 1.1.0</a></h2>
+<h2>Interject Financials - Epicor <br>
+<a href="https://drive.google.com/file/d/1rDImgOqW1-4J5xfzDkga_ahV79EWkdqL/view?usp=sharing">Latest Version 1.1.0</a></h2>
 
 Depending on which version of Interject Financials you're running, there are different update and rollback scripts. Before updating or rolling back a version, follow the procedure below. Once you know the version you're currently running, click on the appropriate dropdown below for the update release notes, the correct scripts for updating and rolling back versions, as well as procedures for running those scripts.
 
