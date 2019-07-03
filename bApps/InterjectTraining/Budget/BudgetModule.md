@@ -19,4 +19,4 @@ The Control Center which controls who has access to save to Budgets and when the
 
 ### [ Budget Change Query ](/bApps/InterjectTraining/Budget/BudgetChangeQuery.html)
 
-The Budget Change Query Tool which provides different views to how Budgets have changed over the budget season.
+The Budget Change Query Tool which provides different views to how Budgets have changed over the budget season?
