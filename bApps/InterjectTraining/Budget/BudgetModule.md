@@ -17,6 +17,6 @@ The Local Budget Template is a report that sites can download and manage indepen
 
 Controls who has access to save to Budgets and when the data will flow from the Budget Module into Interject.
 
-### [ Budget Change Query ](/bApps/InterjectTraining/Budget/BudgetChangeQuery.html)
+### [ Budget Change Query ](/bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html)
 
 The Budget Change Query Tool provides different views to how Budgets have changed over the budget season.
