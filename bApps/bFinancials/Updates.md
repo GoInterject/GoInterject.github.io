@@ -5,6 +5,8 @@ keywords: [Account, Epicor, Companies]
 description: INTERJECT™ Financials for Epicor Enterprise (This would cover topics that are specific to integration with Epicor Enterprise, and would potentially be different for each ERP) 
 ---
 
+<h2>Interject Financials - Epicor Latest <a href="https://drive.google.com/file/d/1rDImgOqW1-4J5xfzDkga_ahV79EWkdqL/view?usp=sharing">Version 1.1.0</a></h2>
+
 Depending on which version of Interject Financials you're running, there are different update and rollback scripts. Before updating or rolling back a version, follow the procedure below. Once you know the version you're currently running, click on the appropriate dropdown below for the update release notes, the correct scripts for updating and rolling back versions, as well as procedures for running those scripts.
 
 ### To Check for Your Current Version
@@ -23,9 +25,6 @@ After the inital instal, applying an update, or performing a rollback, you can c
 
 <table>
     <tr>
-        <th><span style="font-weight:bold">Current for Initial Install:</span> <a href="https://drive.google.com/file/d/1rDImgOqW1-4J5xfzDkga_ahV79EWkdqL/view?usp=sharing">Initial.Interject_Reporting_1.1.0.SQL</a></th>
-    </tr>
-    <tr>
         <th><span style="font-weight:bold">Update for Previous Install:</span> <a href="https://drive.google.com/file/d/16E2th5xN__y7gyBiJ4HHbxAD1kjcuufi/view?usp=sharing">from1.0.10to1.1.0_Update.Interject_Reporting.SQL</a></th>
     </tr>
     <tr>
@@ -36,7 +35,7 @@ After the inital instal, applying an update, or performing a rollback, you can c
 ### Current Version Notes
 <table>
     <tr>
-        <th><span style="font-weight:bold">Interject for Financials - Current Verion: </span><a href="https://drive.google.com/file/d/1rDImgOqW1-4J5xfzDkga_ahV79EWkdqL/view?usp=sharing">Initial.Interject_Reporting_1.1.0.SQL</a></th>
+        <th><span style="font-weight:bold">Interject for Financials - Current Version 1.1.0: </span></th>
     </tr>
         <tr>
         <th><span style="font-weight:bold">Features</span></th>
@@ -114,9 +113,6 @@ The following steps must be taken to roll back one version. Note that this will 
 
 <table>
     <tr>
-        <th><span style="font-weight:bold">Current for Initial Install:</span> <a href="https://drive.google.com/file/d/1rDImgOqW1-4J5xfzDkga_ahV79EWkdqL/view?usp=sharing">Initial.Interject_Reporting_1.1.0.SQL</a></th>
-    </tr>
-    <tr>
         <th><span style="font-weight:bold">Update for Previous Install:</span> <a href="https://drive.google.com/file/d/1Dq5lMgoDbV5LlviI4RxhLqY6z3Ptd3tY/view?usp=sharing">from1.0.11to1.1.0_Update.Interject_Reporting.SQL</a></th>
     </tr>
     <tr>
@@ -127,7 +123,7 @@ The following steps must be taken to roll back one version. Note that this will 
 ### Current Version Notes
 <table>
     <tr>
-        <th><span style="font-weight:bold">Interject for Financials - Current Verion: </span><a href="https://drive.google.com/file/d/1rDImgOqW1-4J5xfzDkga_ahV79EWkdqL/view?usp=sharing">Initial.Interject_Reporting_1.1.0.SQL</a></th>
+        <th><span style="font-weight:bold">Interject for Financials - Current Version 1.1.0 </span></th>
     </tr>
         <tr>
         <th><span style="font-weight:bold">Features</span></th>
