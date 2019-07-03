@@ -7,7 +7,7 @@ description:
 
 ## Overview
 
-**Purpose**:  Pull in Capital amounts grouped by Asset type into the Review Date buckets.
+**Purpose**:  Pull in Capital amounts grouped by Asset group into the Review Date buckets.
 
 **Filter Options**:
 
