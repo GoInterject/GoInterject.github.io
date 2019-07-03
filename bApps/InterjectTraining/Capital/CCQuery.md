@@ -15,9 +15,9 @@ description:
 * **District** - *Optional*. Blank gives the default view of all districts you have rights to. Works with individual districts, district ranges, and groupings
 * **PO #** - *Optional*. Blank pulls all POs. The format must be XXXX-X
 * **Summary Level** - *Required*. Drop-down filter is restricted to show changes *By Day* or *By Change*
-**From Date of Change** - *Optional* - Blank defaults to beginning of time. Format needs to be *MM/DD/YYYY HH:MM*
-**To Date of Change** - *Optional* - Blank defaults to today. Format needs to be *MM/DD/YYYY HH:MM*
-**Sort By** - *Required*. Drop-down filter is restricted to order results by *Change Date* or *PO #*
+* **From Date of Change** - *Optional* - Blank defaults to beginning of time. Format needs to be *MM/DD/YYYY HH:MM*
+* **To Date of Change** - *Optional* - Blank defaults to today. Format needs to be *MM/DD/YYYY HH:MM*
+* **Sort By** - *Required*. Drop-down filter is restricted to order results by *Change Date* or *PO #*
 
 ![](/images/WCNTraining/Capital/CCQuery_FullView.png)
 
