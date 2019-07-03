@@ -1,13 +1,11 @@
 // This file is used to determine the objects being loaded by the archive-list file
 const rootUrl = window.location.origin
-console.log(rootUrl);
 
 if (window.navigator.onLine ) {
   /* Get the json object, then extract the information. Once extracted, add html element tags to it */
   $.getJSON("/js/siteversions.json", function(result){
     var buttonCode = null;
     var listItems = new Array();
-    console.log(fullUrl);
     $.each(result, function(i, field){ 
         var prettyName = 'Interject ' + field.name;
         var fullUrl = rootUrl + field.path;
