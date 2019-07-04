@@ -7,11 +7,12 @@
 - archive:
   name: Main
   current: true
-  path: 
-
+  path: /
+  
 - archive:
   name: Financials
   path: /bApps/bFinancials/Epicor-Financials
+
 
 - archive:
   name: Training
