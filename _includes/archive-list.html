@@ -7,7 +7,11 @@
     {% endfor %}<span class="caret"></span>
   </button>
   <ul class="dropdown-menu">
-    {% for item in site.data.siteversion %}<li><a href="{{ window.location.origin }} {{ item.path }}">Interject {{ item.name }}</a></li>{% endfor %}
+    {% for item in site.data.siteversion %}<li><a href="
+      {{item.path}}
+      ">Interject {{ item.name }}</a></li>{% endfor %}
   </ul>
 </div>
 
+<!-- {{ item.path }} -->
+<!-- {{item.dev}} -->

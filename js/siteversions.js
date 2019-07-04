@@ -1,5 +1,5 @@
 // This file is used to determine the objects being loaded by the archive-list file
-const rootUrl = window.location.origin
+const rootUrl = window.location.href.split("/")[0]
 
 if (window.navigator.onLine ) {
   /* Get the json object, then extract the information. Once extracted, add html element tags to it */
@@ -24,3 +24,4 @@ if (window.navigator.onLine ) {
 
 
 
+// location.href.split("")[0]
