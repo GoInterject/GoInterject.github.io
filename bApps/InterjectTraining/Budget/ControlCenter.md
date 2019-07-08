@@ -7,7 +7,7 @@ description:
 
 ## Overview
 
-**Purpose**: This tool controls who has ability to save to Budgets and when the data will flow from the Budget Module into Interject. I also controls lock levels of Projections and Capital.
+**Purpose**: This tool controls who has ability to save to Budgets and when the data will flow from the Budget Module into Interject. It also controls lock levels of Projections and Capital.
 
 **Report Location**<br>
 (Attach Report Location Image here)
