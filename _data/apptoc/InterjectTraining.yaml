@@ -54,8 +54,10 @@ budget:
 - title: Budget Module Summary
   path: /bApps/InterjectTraining/Budget/BudgetModule.html
 - sectiontitle: Budget Template
-  path: /bApps/InterjectTraining/Budget/BudgetTemplate.html
+  path: /bApps/InterjectTraining/Budget/BudgetTemplateSummary.html
   section:
+  - title: Budget Template Summary
+    path: /bApps/InterjectTraining/Budget/BudgetTemplateSummary.html
   - title: Budget Template
     path: /bApps/InterjectTraining/Budget/BudgetTemplate.html
   - title: Budget Upload Tab
