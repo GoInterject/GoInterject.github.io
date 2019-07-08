@@ -13,7 +13,7 @@ Report errors occur for many reasons, some of which relate to how the server han
 
 ###  Investigating Errors In Reports with Progress Window 
 
-There are two types of errors that INTERJECT can display: unhandled and handled. Unhandled errors are system generated, whereas handled errors are written by developers.  For example, on a pull or save, an error may occur on the server which the report is trying to access. This error could be handled by the developer, or it could be an unhandled error. Developers can handle errors quickly by using “UserNotice": [link to more info about how to use it]. When the error is handled by the developer, a popup message will display a friendly error text set by the developer. For example a common error is the misspelling of a dataportal, which displays a handled error when pulling a report with a misspelled dataportal. 
+There are two types of errors that INTERJECT can display: unhandled and handled. Unhandled errors are system generated, whereas handled errors are written by developers.  For example, on a pull or save, an error may occur on the server which the report is trying to access. This error could be handled by the developer, or it could be an unhandled error. Developers can handle errors quickly by using “UserNotice": [Read about UserNotice here](https://docs.gointerject.com/wGetStarted/L-Dev-Error-Handling.html). When the error is handled by the developer, a popup message will display a friendly error text set by the developer. For example a common error is the misspelling of a dataportal, which displays a handled error when pulling a report with a misspelled dataportal. 
 
 ![](/images/error-reports/01.jpg)
 
@@ -40,10 +40,6 @@ If evaluating ReportRange, ReportFixed, or ReportVariable then click  **Pull Dat
 If evaluating ReportSave then click  **Save Data Event**
 
 If evaluating ReportDrill then click  **Drill Data Event**
-
-Here is the example validation report for a pull data event on the customer aging report: 
-    
-[Download file here.][1]{:target=:"_blank"}
 
 Open the report you need to troubleshoot, this example will use the [ CustomerAging ](/wGetStarted/L-Create-CustomerAging.html) report. 
 
