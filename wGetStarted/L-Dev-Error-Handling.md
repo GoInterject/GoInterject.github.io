@@ -7,7 +7,7 @@ description: Explains how INTERJECT handles errors in Data Portals using T-SQL R
 
 ### Introduction
 
-In this documentation, we will discuss error handling in Interject development using T-SQL’s RAISERROR and INTERJECT’s UnderNotice flag.
+This page will cover error handling in INTERJECT development using T-SQL’s RAISERROR and INTERJECT’s UnderNotice flag.
 
 ### Understanding Error Handling
 
@@ -17,7 +17,7 @@ There are two types of errors that INTERJECT can display: unhandled and handled.
 
 #### RAISERROR
 
-INTERJECT uses the T-SQL statement RAISERROR in its Data Portals to process errors.
+INTERJECT leverages the T-SQL statement RAISERROR in its Data Portals to process errors.
 
 RAISERROR is designed to generate error messages and initiate error processing in the session (Source: [Microsoft RAISERROR Documentation][microsoft doc]). It is used as follows:
 
@@ -27,7 +27,7 @@ RAISERROR is designed to generate error messages and initiate error processing i
 
 **@ErrorMessageToUser** - a string containing a description of the error, with or without a prefix of ‘UserNotice:’.
 
-**severity** - generally a number from 0-18 ranking the severity of the error.
+**severity** - generally a number from 0-18 ranking the severity of the error, typically 18 if you want to stop the execution of a stored procedure.
 
 **state** - number, 0-255, used to locate where errors occur in your code.
 
