@@ -193,20 +193,4 @@ You can drill on any row to bring up more detailed information for the Capital a
 
 ## Common Save Errors
 
-![](/images/WCNTraining/Capital/CapitalInput_Error_TypeSubType.png)
-
-*The chosen SubType does not belong to the Asset Type selected. Please select a valid Subtype from the available drop-down list.*
-
-___
-![](/images/WCNTraining/Capital/CapitalInput_Error_ReplacementReqs.png)
-
-*If the PO Item is a Replacement (R in A/R), both an FAS # and Replacement Note are required (in the hidden Replacement Info section)*
-
-___
-<button class="collapsible">Other Possible Save Errors</button>
-<div markdown="1" class="panel">
-![](/images/WCNTraining/Capital/CapitalInput_Error_RePull.png)
-
-*If you pull for a District and Budget Year, you can only save Capital PO changes for that District/Budget Year. If you want to save to a new District/Budget Year, you need to pull for that combination first.*
-
-</div>
+To be finished later.
