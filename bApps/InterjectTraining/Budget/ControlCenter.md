@@ -182,15 +182,4 @@ Drilling on the Capital columns gives the following drill options:
 
 ## Common Save Errors
 
-## Drills
-
-You can drill on any row to bring up more detailed information for the Capital amounts belonging to the PO Item in the Capital Change Query.
-
-![](/images/WCNTraining/Capital/CapitalInput_DrillWindow.png)
-
-**Drill to CC Query for Change History** opens the [ Capital Change Query report ](/bApps/InterjectTraining/Capital/CCQuery.html).
-![](/images/WCNTraining/Capital/CapitalInput_CapitalChangeDrill.png)
-
-## Common Save Errors
-
 To be finished later...
