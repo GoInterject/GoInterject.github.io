@@ -30,10 +30,10 @@ After the inital instal, applying an update, or performing a rollback, you can c
         <th>No database changes, update script increments version in  database to track</th>
     </tr>
     <tr>
-        <th><span style="font-weight:bold">Update for Previous Install:</span> <a href="https://drive.google.com/file/d/1-CCCQUt_TBsTMtv64Z2Vg5SBFQSk8Zkq/view?usp=sharing">from1.2.0to1.2.1_Update.Interject_Reporting.SQL</a></th>
+        <th><span style="font-weight:bold">Update for Previous Install:</span> <a href="https://drive.google.com/file/d/1yqfod_Ggds7PjZPPf_UdnrIOh9_zfJlU/view?usp=sharing">from1.2.0to1.2.1_Update.Interject_Reporting.SQL</a></th>
     </tr>
     <tr>
-        <th><span style="font-weight:bold">Rollback to 1.2.0:</span> <a href="https://drive.google.com/file/d/1yqfod_Ggds7PjZPPf_UdnrIOh9_zfJlU/view?usp=sharing">from1.2.1to1.2.0_Rollback.Interject_Reporting.SQL</a></th>
+        <th><span style="font-weight:bold">Rollback to 1.2.0:</span> <a href="https://drive.google.com/file/d/16Sy5BFKh-egNY_D1cuJgkJAjFeSjTpAI/view?usp=sharing">from1.2.1to1.2.0_Rollback.Interject_Reporting.SQL</a></th>
     </tr>
 </table>
 
@@ -101,10 +101,10 @@ The following steps must be taken to roll back one version. Note that this will 
         <th>No database changes, update script increments version in  database to track</th>
     </tr>
     <tr>
-        <th><span style="font-weight:bold">Update for Previous Install:</span> <a href="https://drive.google.com/file/d/1-CCCQUt_TBsTMtv64Z2Vg5SBFQSk8Zkq/view?usp=sharing">from1.1.0to1.2.1_Update.Interject_Reporting.SQL</a></th>
+        <th><span style="font-weight:bold">Update for Previous Install:</span> <a href="https://drive.google.com/file/d/1yqfod_Ggds7PjZPPf_UdnrIOh9_zfJlU/view?usp=sharing">from1.1.0to1.2.1_Update.Interject_Reporting.SQL</a></th>
     </tr>
     <tr>
-        <th><span style="font-weight:bold">Rollback to 1.1.0:</span> <a href="https://drive.google.com/file/d/1yqfod_Ggds7PjZPPf_UdnrIOh9_zfJlU/view?usp=sharing">from1.2.1to1.1.0_Rollback.Interject_Reporting.SQL</a></th>
+        <th><span style="font-weight:bold">Rollback to 1.1.0:</span> <a href="https://drive.google.com/file/d/16Sy5BFKh-egNY_D1cuJgkJAjFeSjTpAI/view?usp=sharing">from1.2.1to1.1.0_Rollback.Interject_Reporting.SQL</a></th>
     </tr>
 </table>
 
