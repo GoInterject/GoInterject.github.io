@@ -201,7 +201,7 @@ ___
 ___
 ![](/images/WCNTraining/Budget/ControlCenter_Errors_InvalidDistricts.png)
 
-*The district(s) you have manually added to the Control Center are either inactive or non-financial. You cannot save to them, and should not be handled in Control Center*
+*The district(s) you have manually added to the Control Center are either inactive or non-financial. You cannot save them, or they should not be handled in Control Center*
 
 ___
 ![](/images/WCNTraining/Budget/ControlCenter_Errors_InvalidLockLevel.png)
