@@ -182,4 +182,40 @@ Drilling on the Capital columns gives the following drill options:
 
 ## Common Save Errors
 
-To be finished later...
+![](/images/WCNTraining/Budget/ControlCenter_LockLevelTooHigh.png)
+
+*You are either trying to lock a district to a level you do not have permissions for, or the district itself is already locked above your level*
+
+___
+![](/images/WCNTraining/Budget/OneSecondOffsetReviewDates.png)
+
+*The Review Dates cannot equal each other. The later of the review dates has been automatically offset by 1 second from the former by just one second to not create any sync conflicts.*
+
+___
+<button class="collapsible">Other Possible Save Errors</button>
+<div markdown="1" class="panel">
+![](/images/WCNTraining/Budget/ControlCenter_Errors_YearMonth.png)
+
+*You need a valid Year Month, format YYYY-MM*
+
+___
+![](/images/WCNTraining/Budget/ControlCenter_Errors_InvalidDistricts.png)
+
+*The district(s) you have manually added to the Control Center are either inactive or non-financial. You cannot save to them, and should not be handled in Control Center*
+
+___
+![](/images/WCNTraining/Budget/ControlCenter_Errors_InvalidLockLevel.png)
+
+*The Lock Level you tried saving up is not valid. Please use one of the drop-down options pulled into the tool*
+           
+___
+![](/images/WCNTraining/Budget/ControlCenter_Errors_InvalidReviewDate.png)
+
+*The timestamp you tried saving to the Review Date is not a valid format. It needs to be MM/DD/YY HH:MM (AM/PM)*
+
+___
+ ![](/images/WCNTraining/Budget/ControlCenter_Errors_LowLevelReviewDates.png)
+
+*You are below the level required to change the associated Review Dates*
+
+</div>
