@@ -7,6 +7,7 @@ postx.html
 attachments/
 Gemfile.lock
 .vscode/
+Gemfile
 
 
 # python related ignores

@@ -21,7 +21,7 @@ description:
 
 ## Uploading to more than one district at a time
 
-Region Controllers can upload Budget amounts to more than one district at a time. To do so, a Regional Controller can pull on the Region and make Budget amount changes across multiple districts.
+Regional Controller can pull on the Region, making Budget amount changes across multiple districts and uploading them all at once.
 
 If you do not have Region Controller access, you will not be able to pull or save on multiple Districts. You will get the following validation errors:
 
@@ -43,11 +43,11 @@ If you need to add more blank rows, insert new rows in the middle of the blank r
 
 ![](/images/WCNTraining/Budget/BudgetUpload_InsertNewRowsMiddle.png)
 
-If you're starting with an empty sheet, you can insert new rows like before. You will need to check the Save formula to make sure the save range includes all of the new rows.
+If you're starting with an empty sheet, you can insert new rows like before. You will need to check the Save formula to make sure the save range includes all new rows.
 
 ![](/images/WCNTraining/Budget/BudgetUpload_InsertNewRowsFromEmpty.png)
 
-After you add the rows, access the *Quick Tools* by hitting **CTRL + T**, and select *Freeze/UnFreeze Panes (current tab)*.
+After you add the rows, access the *Quick Tools* by hitting **CTRL + T**, then select *Freeze/UnFreeze Panes (current tab)*.
 
 ![](/images/WCNTraining/Budget/BudgetUpload_QuickTools.png)
 
@@ -55,7 +55,7 @@ Navigate up to the hidden formulas section and click on the Save formula in cell
 
 ![](/images/WCNTraining/Budget/BudgetUpload_SaveFormula.png)
 
-Click within the formula bar the top to bring up the cell references. Extend the blue range of cells under the District column to include all of the rows above it.
+Click within the formula to bring up the cell references. Extend the blue range of cells under the District column to include all rows above it.
 
 ![](/images/WCNTraining/Budget/BudgetUpload_SmallSaveRange.png)
 ![](/images/WCNTraining/Budget/BudgetUpload_BigSaveRange.png)
@@ -72,9 +72,9 @@ Only people in the District Position Assignment (DPA) for the District in Toolbo
 
 ## Budget Upload and the Control Center
 
-Based on your position in the DPA for the district, you will have a certain level of access to this report. You may eb one of the following levels: **A/C**, **Dist**, **Div**, **Reg**, or **Corp**.
+Based on your position in the DPA for the district, you will have a certain level of access to this report. You may be one of the following levels: **A/C**, **Dist**, **Div**, **Reg**, or **Corp**.
 
-Budget is locked at these levels in the **Control Center**, which is the N column. In the example below, District 2050 is locked at the Reg Level.
+Budget is locked at these levels in the **Control Center**, which column N. In the example below, District 2050 is locked at the Reg Level.
 
 ![](/images/WCNTraining/Budget/BudgetUpload_ControlCenter1District.png)
 
@@ -104,9 +104,9 @@ Then try uploading a change to Budget using the **Budget Upload** tool (after th
 ![](/images/WCNTraining/Budget/BudgetUpload_AfterCorpCutoffMessage.png)
 ![](/images/WCNTraining/Budget/BudgetUpload_AfterCorpCutoffRowMessage.png)
 
-Notice the changes have been saved to Target Center 2.0, but they are not yet synced to Interject. Once the *Corp Cutoff* date is set to a Date/Time after our change or BOD, this change will then be synced to Interject.
+Notice the changes have been saved to Target Center 2.0, but they are not yet synced to Interject. This change will be synced to Interject once the *Corp Cutoff* date is set to a Date/Time after our change or BOD.
 
-We can use the [ Budget Change Query Tool ](/bApps/InterjectTraining/Budget/BudgetChangeQueryToolSummary.html) to confirm that our save has been registered in Target Center 2.0. the new tab [ UnsyncedChanges ](/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html) is designed to pull in all amounts not yet synced to Interject, which neatly matches our inquiry. The screenshot below shows that our Budget save succeeded and is in the database.
+We can use the [Budget Change Query Tool](/bApps/InterjectTraining/Budget/BudgetChangeQueryToolSummary.html) to confirm that our save has been registered in Target Center 2.0. The new [UnsyncedChanges](/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html) tab is designed to pull in all amounts not yet synced to Interject, which neatly matches our inquiry. The screenshot below shows that our Budget save succeeded and is in the database.
 
 ![](/images/WCNTraining/Budget/BudgetUpload_UnsyncedChangesBCQuery.png)
 

@@ -197,6 +197,8 @@ getstarted:
       path: /wGetStarted/Security-Best-Practices.html
     - title: Managing Settings Cache
       path: /wGetStarted/Managing-Settings-Cache.html
+    - title: "Error Handling (RAISERROR and UserNotice)"
+      path: /wGetStarted/L-Dev-Error-Handling.html
   - title: INTERJECT Ribbon Menu Items
     path: /wGetStarted/INTERJECT-Ribbon-Menu-Items.html
 
