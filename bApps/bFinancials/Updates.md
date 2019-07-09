@@ -6,7 +6,7 @@ description: INTERJECT™ Financials for Epicor Enterprise (This would cover top
 ---
 
 <h2>Interject Financials - Epicor <br>
-<a href="https://drive.google.com/file/d/1KW0iw7OTpVWN0SHFIxXjHs5-mGj5T4pI/view?usp=sharing">Latest Version 1.2.0</a></h2>
+<a href="https://drive.google.com/file/d/1LcWA2kEjOglb8U52reS5api4D9XzG0Xx/view?usp=sharing">Latest Version 1.2.1</a></h2>
 
 Depending on which version of Interject Financials you're running, there are different update and rollback scripts. Before updating or rolling back a version, follow the procedure below. Once you know the version you're currently running, click on the appropriate dropdown below for the update release notes, the correct scripts for updating and rolling back versions, as well as procedures for running those scripts.
 
@@ -21,6 +21,78 @@ After the inital instal, applying an update, or performing a rollback, you can c
 
 ### Click Your Version Below for Release Notes and Update Scripts
 
+
+<button class="collapsible"><strong>For Users With Version 1.2.0</strong></button>
+<div markdown="1" class="panel">
+
+<table>
+    <tr>
+        <th>No database changes, update script increments version in  database to track</th>
+    </tr>
+    <tr>
+        <th><span style="font-weight:bold">Update for Previous Install:</span> <a href="https://drive.google.com/file/d/1-CCCQUt_TBsTMtv64Z2Vg5SBFQSk8Zkq/view?usp=sharing">from1.2.0to1.2.1_Update.Interject_Reporting.SQL</a></th>
+    </tr>
+    <tr>
+        <th><span style="font-weight:bold">Rollback to 1.2.0:</span> <a href="https://drive.google.com/file/d/1yqfod_Ggds7PjZPPf_UdnrIOh9_zfJlU/view?usp=sharing">from1.2.1to1.2.0_Rollback.Interject_Reporting.SQL</a></th>
+    </tr>
+</table>
+
+### Current Version Notes
+<table>
+    <tr>
+        <th><span style="font-weight:bold">Interject for Financials - Current Version 1.2.1 </span></th>
+    </tr>
+        <tr> 
+        <th><span style="font-weight:bold">Bugs Fixed</span></th>
+        </tr>
+        <tr> 
+            <td>
+                <ul>
+                    <li>Fix security certificate.</li> 
+                </ul>
+            </td>
+        </tr>
+</table>
+
+
+### Updating
+
+Whenever an update of Interject for Financials is released, an update script must be run on your server. With each new update, the initial install script located on the [Technical Install](https://docs.gointerject.com/bApps/bFinancials/Technical-Install.html) page will be updated. If you initally installed the most current version listed above, you will not need to run the Update Script. If you orginally installed a version older than the most current, take the following steps to update your implementation. 
+
+> To Upgrade
+> 
+> In SQL Management Studio, run the script labeled **Update for Previous Install** at the top of this page.
+>
+> Run \[Interject_SetupScript1_Security\], as shown below, to re-enable security.
+>
+>  ```SQL
+> EXEC [Custom].[Interject_SetupScript1_Security]
+>	@MasterEpicorDatabase = 'samplemasterdb'
+>	,@CertificatePassword =  'myPassword1234'
+>  ```
+>
+
+### Rolling Back One Version
+
+The following steps must be taken to roll back one version. Note that this will only roll to the previous version.
+
+> To Roll Back
+>
+> In SQL Management Studio, run the script labeled **Rollback to 1.2.0** at the top of this page.
+>
+> Run \[Interject_SetupScript1_Security\], as shown below, to re-enable security.
+>
+>  ```SQL
+> EXEC [Custom].[Interject_SetupScript1_Security]
+>	@MasterEpicorDatabase = 'samplemasterdb'
+>	,@CertificatePassword =  'myPassword1234'
+>  ```
+>
+
+</div>
+
+
+
 <button class="collapsible"><strong>For Users With Version 1.1.0</strong></button>
 <div markdown="1" class="panel">
 
@@ -29,17 +101,17 @@ After the inital instal, applying an update, or performing a rollback, you can c
         <th>No database changes, update script increments version in  database to track</th>
     </tr>
     <tr>
-        <th><span style="font-weight:bold">Update for Previous Install:</span> <a href="https://drive.google.com/file/d/1-CCCQUt_TBsTMtv64Z2Vg5SBFQSk8Zkq/view?usp=sharing">from1.1.0to1.2.0_Update.Interject_Reporting.SQL</a></th>
+        <th><span style="font-weight:bold">Update for Previous Install:</span> <a href="https://drive.google.com/file/d/1-CCCQUt_TBsTMtv64Z2Vg5SBFQSk8Zkq/view?usp=sharing">from1.1.0to1.2.1_Update.Interject_Reporting.SQL</a></th>
     </tr>
     <tr>
-        <th><span style="font-weight:bold">Rollback to 1.1.0:</span> <a href="https://drive.google.com/file/d/1bgSg2a-IqPFe5HQWTbbB8QXZiYUFaWGA/view?usp=sharing">from1.2.0to1.1.0_Rollback.Interject_Reporting.SQL</a></th>
+        <th><span style="font-weight:bold">Rollback to 1.1.0:</span> <a href="https://drive.google.com/file/d/1yqfod_Ggds7PjZPPf_UdnrIOh9_zfJlU/view?usp=sharing">from1.2.1to1.1.0_Rollback.Interject_Reporting.SQL</a></th>
     </tr>
 </table>
 
 ### Current Version Notes
 <table>
     <tr>
-        <th><span style="font-weight:bold">Interject for Financials - Current Version 1.2.0 </span></th>
+        <th><span style="font-weight:bold">Interject for Financials - Current Version 1.2.1 </span></th>
     </tr>
         <tr>
         <th><span style="font-weight:bold">Features</span></th>
@@ -67,14 +139,31 @@ Whenever an update of Interject for Financials is released, an update script mus
 > To Upgrade
 > 
 > In SQL Management Studio, run the script labeled **Update for Previous Install** at the top of this page.
-> 
+>
+> Run \[Interject_SetupScript1_Security\], as shown below, to re-enable security.
+>
+>  ```SQL
+> EXEC [Custom].[Interject_SetupScript1_Security]
+>	@MasterEpicorDatabase = 'samplemasterdb'
+>	,@CertificatePassword =  'myPassword1234'
+>  ```
+>
+
 ### Rolling Back One Version
 
-The following step must be taken to roll back one version. Note that this will only roll to the previous version.
+The following steps must be taken to roll back one version. Note that this will only roll to the previous version.
 
 > To Roll Back
 >
 > In SQL Management Studio, run the script labeled **Rollback to 1.1.0** at the top of this page.
+>
+> Run \[Interject_SetupScript1_Security\], as shown below, to re-enable security.
+>
+>  ```SQL
+> EXEC [Custom].[Interject_SetupScript1_Security]
+>	@MasterEpicorDatabase = 'samplemasterdb'
+>	,@CertificatePassword =  'myPassword1234'
+>  ```
 >
 
 </div>
