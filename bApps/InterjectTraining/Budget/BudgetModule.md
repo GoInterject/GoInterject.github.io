@@ -13,7 +13,7 @@ The Budget Module is used by controllers to save and review their budgets for th
 
 The Local Budget Template is a report that sites can download and manage independantly, providing additional control to how money is budgeted to accounts. Included with this tool is the Budget Upload Tool, where controllers can dump budgeted accounts all together.
 
-### [ Control Center ](/bApps/InterjectTraining/Budget/ControlCenter.html)
+### [ Control Center ](/bApps/InterjectTraining/Budget/ControlCenterSummary.html)
 
 Controls who has access to save to Budgets and when the data will flow from the Budget Module into Interject.
 

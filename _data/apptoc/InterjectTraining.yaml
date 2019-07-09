@@ -62,8 +62,15 @@ budget:
     path: /bApps/InterjectTraining/Budget/BudgetTemplate.html
   - title: Budget Upload Tab
     path: /bApps/InterjectTraining/Budget/BudgetUpload.html
-- title: Control Center
-  path: /bApps/InterjectTraining/Budget/ControlCenter.html
+- sectiontitle: Control Center
+  path: /bApps/InterjectTraining/Budget/ControlCenterSummary.html
+  section:
+  - title: Control Center Summary
+    path: /bApps/InterjectTraining/Budget/ControlCenterSummary.html
+  - title: Control Center Tool
+    path: /bApps/InterjectTraining/Budget/ControlCenter.html
+  - title: Tools Controlled by the Control Center
+    path: /bApps/InterjectTraining/Budget/ControlCenterSecurity.html
 - sectiontitle: Budget Change Query Tool
   path: /bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html
   section:

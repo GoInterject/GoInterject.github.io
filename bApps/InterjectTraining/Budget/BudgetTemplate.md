@@ -120,25 +120,7 @@ There are many different types of Autocalcs, but the main thing to know is that 
 
 ## Do I have security rights to Save from the Budget Template?
 
-Only people in the District Position Assignment (DPA) for the District in Toolbox can save to this file. Your Division Controller can add you if you are not already in the DPA.
-
-![](/images/WCNTraining/Capital/CapitalInput_DPANavigation.png)
-
-![](/images/WCNTraining/Capital/CapitalInput_DPAWindow.png)
-
-## Budget Template and the Control Center
-
-Based on your position in the DPA for the district, you will have a certain level of access to this report. The access levels you may have are: **A/C**, **Dist**, **Div**, **Reg**, or **Corp**.
-
-Budget is locked at these levels in the **Control Center**, in the N column. In the example below, District 2050 is locked at the Reg Level.
-
-![](/images/WCNTraining/Budget/BudgetUpload_ControlCenter1District.png)
-
-If an A/C level user tried saving to 2050 Budget, they would be stopped with the following message.
-
-![](/images/WCNTraining/Budget/BudgetTemplate_LockLevelError.png)
-
-You are able to save Budget as long as the Budget lock level is your level or below. Otherwise you will not be able to save Budget.
+To find if you can save to the Budget Template, please check out the [ Tools Controlled by the Control Center ](/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#the-budget-template) page.
 
 ## After Corp Cutoff and after BOD
 
