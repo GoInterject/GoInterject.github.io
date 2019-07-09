@@ -25,10 +25,7 @@ After the inital instal, applying an update, or performing a rollback, you can c
 <button class="collapsible"><strong>For Users With Version 1.2.0</strong></button>
 <div markdown="1" class="panel">
 
-<table>
-    <tr>
-        <th>No database changes, update script increments version in  database to track</th>
-    </tr>
+<table> 
     <tr>
         <th><span style="font-weight:bold">Update for Previous Install:</span> <a href="https://drive.google.com/file/d/1yqfod_Ggds7PjZPPf_UdnrIOh9_zfJlU/view?usp=sharing">from1.2.0to1.2.1_Update.Interject_Reporting.SQL</a></th>
     </tr>
@@ -96,10 +93,7 @@ The following steps must be taken to roll back one version. Note that this will 
 <button class="collapsible"><strong>For Users With Version 1.1.0</strong></button>
 <div markdown="1" class="panel">
 
-<table>
-    <tr>
-        <th>No database changes, update script increments version in  database to track</th>
-    </tr>
+<table> 
     <tr>
         <th><span style="font-weight:bold">Update for Previous Install:</span> <a href="https://drive.google.com/file/d/1yqfod_Ggds7PjZPPf_UdnrIOh9_zfJlU/view?usp=sharing">from1.1.0to1.2.1_Update.Interject_Reporting.SQL</a></th>
     </tr>
