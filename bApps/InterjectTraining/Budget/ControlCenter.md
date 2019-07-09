@@ -182,12 +182,12 @@ Drilling on the Capital columns gives the following drill options:
 
 ## Common Save Errors
 
-![](/images/WCNTraining/Budget/ControlCenter_LockLevelTooHigh.png)
+![](/images/WCNTraining/Budget/ControlCenter_Errors_LockLevelTooHigh.png)
 
 *You are either trying to lock a district to a level you do not have permissions for, or the district itself is already locked above your level*
 
 ___
-![](/images/WCNTraining/Budget/OneSecondOffsetReviewDates.png)
+![](/images/WCNTraining/Budget/ControlCenter_Errors_OneSecondOffsetReviewDates.png)
 
 *The Review Dates cannot equal each other. The later of the review dates has been automatically offset by 1 second from the former by just one second to not create any sync conflicts.*
 
