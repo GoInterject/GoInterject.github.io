@@ -80,13 +80,6 @@ The following step must be taken to roll back one version. Note that this will o
 </div>
 
 
-<!-- break point eugene -->
-
-
-
-
-
-
 <button class="collapsible"><strong>For Users With Version 1.0.12</strong></button>
 <div markdown="1" class="panel">
 
