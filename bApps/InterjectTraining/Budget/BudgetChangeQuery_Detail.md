@@ -20,4 +20,4 @@ description:
 * **Begin Date** - *Optional*. Blank defaults to the start of the budget season. If used, no data will pull in before the datetime stamp
 * **End Date** - *Optional*. Blank defaults to the end of the budget season. If used, no data will pull in after the datetime stamp
 
-![](/images/WCNTraining/Budget/BudChangeQuery_Detail_Fullview.png)
+![](/images/WCNTraining/Budget/BudChangeQuery_Detail_FullView.png)

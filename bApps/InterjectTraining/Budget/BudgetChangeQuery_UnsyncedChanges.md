@@ -16,7 +16,7 @@ description:
 * **Currency** - *Optional*. Blank defaults to your home district currency. Other options are USD or CAD
 * **Exclude IC** - *Required*. Drop-down options are FALSE or TRUE. If set to TRUE, then InterCompany accounts are removed from the pull
 
-![](/images/WCNTraining/Budget/BudChangeQuery_Unsynced_Fullview.png)
+![](/images/WCNTraining/Budget/BudChangeQuery_Unsynced_FullView.png)
 
 Pulled budget numbers are grouped into three sections. On the far left are all numbers synced to Interject, the middle are amounts not yet in Interject, and the far right is the delta in between.
 

@@ -18,7 +18,7 @@ description:
 * **Currency** - *Required*. Options are USD or CAD
 * **Exclude IC** - *Required*. Drop-down options are FALSE or TRUE. If set to TRUE, then InterCompany accounts are removed from the pull
 
-![](/images/WCNTraining/Budget/BudChangeQuery_ReviewDateDetail_Fullview.png)
+![](/images/WCNTraining/Budget/BudChangeQuery_ReviewDateDetail_FullView.png)
 
 ## Review Type Options
 
