@@ -16,6 +16,6 @@ description:
 * **Currency** - *Optional*. Blank defaults to your home district currency. Other options are USD or CAD
 * **Exclude IC** - *Required*. Drop-down options are FALSE or TRUE. If set to TRUE, then In-terCompany accounts are removed from the pull
 
-![](/images/WCNTraining/Budget/BudChangeQuery_EBITDARevenueBuckets_Fullview.png)
+![](/images/WCNTraining/Budget/BudChangeQuery_EBITDARevenueBuckets_FullView.png)
 
 The left side of the tab pulls in the Revenue amounts for the districts by Review Date Bucket, and the right side shows the EBITDA amounts. The section headers are simlar to the ones in the [ Review Date Summary ](/bApps/InterjectTraining/Budget/BudgetChangeQuery_ReviewDateSummary.html) tab.

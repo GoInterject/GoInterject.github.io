@@ -20,4 +20,4 @@ description:
 * **End Date** - *Optional*. Blank defaults to the end of the budget season. If used, no data will pull in after the date time stamp
 * **ChangeID** - *Optional*. Blank defaults to all. Can be used to restrict to one ChangeID
 
-![](/images/WCNTraining/Budget/BudChangeQuery_Summary_Fullview.png)
+![](/images/WCNTraining/Budget/BudChangeQuery_Summary_FullView.png)

@@ -16,7 +16,7 @@ description:
 * **Currency** - *Required*. Options are USD or CAD
 * **Exclude IC** - *Required*. Drop-down options are FALSE or TRUE. If set to TRUE, then In-terCompany accounts are removed from the pull
 
-![](/images/WCNTraining/Budget/BudChangeQuery_ReviewDateSummary_Fullview.png)
+![](/images/WCNTraining/Budget/BudChangeQuery_ReviewDateSummary_FullView.png)
 
 ## District List
 
