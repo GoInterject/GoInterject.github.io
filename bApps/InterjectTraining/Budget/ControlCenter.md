@@ -7,7 +7,7 @@ description:
 
 ## Overview
 
-**Purpose**: This tool controls who has ability to save to Budgets and when the data will flow from the Budget Module into Interject. It also controls lock levels of Projections and Capital.
+**Purpose**: This tool controls who has ability to save to Budgets and when the data will flow from the Budget Module into Interject. It also controls the Projections and Capital lock levels.
 
 **Report Location**<br>
 (Attach Report Location Image here)
@@ -21,13 +21,13 @@ description:
 
 ## Accessing Templates from Control Center
 
-Control Center pulls in data on who last saved to the Budget and Projections Templates, when they saved, and where they saved from. The file location is clickable, and if you have access to the folder location you can open it up.
+Control Center pulls in data showing who last saved to the Budget and Projections Templates, when they saved, and where they saved from. The file location is clickable, and if you have access to the folder location you can open it up.
 
 ![](/images/WCNTraining/Budget/ControlCenter_BudgetFileLink.png)
 
 ![](/images/WCNTraining/Budget/ControlCenter_BudgetFileOpened.png)
 
-If a file has not been saved to the given Budget or Projections Template, or you want to make a fresh one, you can drill on either section to create a new Template.
+If a file has not been saved to a given Budget or Projections Template, or you want to make a fresh one, you can drill on either section to create a new Template.
 
 ![](/images/WCNTraining/Budget/ControlCenter_DrillNewTemplates.png)
 
@@ -45,13 +45,13 @@ In the screenshot below, notice the lock level for Budget is **Dist Level**.
 
 ![](/images/WCNTraining/Budget/ControlCenter_CurrentLockLevel.png)
 
-T**IF** your permissions are high enough, you can change the Lock Level for Budgets. In this case, since it is locked at **Dist Level**, you need to be at *Dist* or higher level in the DPA.
+**IF** your permissions are high enough, you can change the Lock Level for Budgets. In this case, since it is locked at **Dist Level**, you need to be at *Dist* level or higher in the DPA.
 
-If you have a high enough level, the Lock Level drop-down will show all levels up to your yours, plus one more to send it up once you are done. The screenshot below is for a Dist level user, who can lock the Budget up to **Div Level**.
+If you have a high enough level, the Lock Level drop-down will show all levels up to your yours, plus one more to send it up once you are done. The screenshot below is for a Dist level user who can lock the Budget up to the **Div Level**.
 
 ![](/images/WCNTraining/Budget/ControlCenter_LockLevelOptions.png)
 
-If a Dist level user locks the Budget up to **Div Level** (usually done once Budget is ready for review), they will be locked out. If you need to make changes again, you will need to work with your supervisor to unlock it back down to your level.
+If a Dist level user locks the Budget up to **Div level** (usually done once Budget is ready for review), they will be locked out. If more changes are needed, they will need to work with a supervisor to unlock it back down to Dist level.
 
 ![](/images/WCNTraining/Budget/ControlCenter_LockedOut.png)
 
@@ -71,7 +71,7 @@ The **Budget Review Dates** are used to version the budget amounts from Target C
 When a budget amount is synced to Interject, it will fall into one of these four *Review Date Buckets*. If an amount is saved *before or at 7/1/2019 5:00 PM*, that amount will be placed in the *Corp Review Thru Bucket*. If a budget amount is saved after that time but *before or at 7/31/2019 5:00 PM*, it will be placed in the *Corp Cutoff Bucket*. This organization is repeated for the two remaining buckets.
 
 >**AFTER CORP CUTOFF**
->If a budget amount is saved **AFTER** *Corp Cutoff*, then it will **NOT** be synced to Interject. It will remain only in Target Center 2.0.
+>If a budget amount is saved **AFTER** *Corp Cutoff*, it will **NOT** be synced to Interject. It will remain only in Target Center 2.0.
 
 >**Do I have rights to change the Review Dates?**
 >If you have **Reg Level** access to a district, you can update the **Reg Review Thru** and **Reg Cutoff** dates. If you have **Corp Level** access to a district, you can update all of the Review Dates.
@@ -108,17 +108,17 @@ Back on the *4_BudSumByMonth* tab, pull and notice that the $100 is gone. This i
 
 ![](/images/WCNTraining/Budget/ControlCenter_BudgetBookRegCutoffAmount02.png)
 
-Now, Review Dates will change throughout the Budget Season as Region/Corporate complete their reviews. For example, here Region has gone through a series of reviews and updated **Reg Review Thru** and **Reg Cutoff** to the values below.
+Now, review dates will change throughout the budget season as Region/Corporate complete their reviews. For example, here Region has gone through a series of reviews and updated **Reg Review Thru** and **Reg Cutoff** to the values below.
 
 ![](/images/WCNTraining/Budget/ControlCenter_ReviewDates02.png)
 
-The save we completed at *10/1/2019 3:30 PM* now falls into the **Reg Cutoff Bucket**. When this review date is updated, the amounts in Interject will be updated to move this amount automatically. Let's check the two tools we used before to confirm.
+The save we completed at *10/1/2019 3:30 PM* now falls into the **Reg Cutoff Bucket**. When this review date is updated, the amounts in Interject will be updated to move this amount automatically. We'll confirm using the same tools we did in previous steps.
 
 ![](/images/WCNTraining/Budget/ControlCenter_BudChangeQueryReviewDates02.png)
 
-In the [ **Budget Change Query Tool** ](/bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html) we see the $100 has moved to the **Reg Cutoff** column. You will also notice that the $100 is still in the **Corp Cutoff** column, because **Corp Cutoff** shows **ALL** the amounts leading up to the **Corp Cutoff** date, which is *11/1/2019 5:00 PM* in this case.
+In the [ **Budget Change Query Tool** ](/bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html) we see the $100 has moved to the **Reg Cutoff** column. Also notice that the $100 is still in the **Corp Cutoff** column, because **Corp Cutoff** shows **ALL** the amounts leading up to the **Corp Cutoff** date, which is *11/1/2019 5:00 PM* in this case.
 
-With this in mind, we check the **Budget Book** for both **Reg Cutoff** and **Corp Cutoff** versions. We should see the $100 in both, because it fits in the **Reg Cutoff Bucket** and happens before **Corp Cutoff**.
+With this in mind, check the **Budget Book** for both **Reg Cutoff** and **Corp Cutoff** versions. We should see the $100 in both, because it fits in the **Reg Cutoff Bucket** and happens before **Corp Cutoff**.
 
 ![](/images/WCNTraining/Budget/ControlCenter_BudgetBookRegAndCorpCutoffAmounts.png)
 

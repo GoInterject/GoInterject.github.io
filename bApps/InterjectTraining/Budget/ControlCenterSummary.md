@@ -15,4 +15,4 @@ Controls who has access to save to Budgets and when the data will flow from the 
 
 ### [ Tools Controlled by the Control Center ](/bApps/InterjectTraining/Budget/ControlCenterSecurity.html)
 
-This page shows all the tools controlled by the Control Center, and how they are done so.
+This page shows all the tools controlled by the Control Center, and how they are controlled.
