@@ -42,25 +42,7 @@ This hidden grouped section is for the Replacement Information. You will need to
 
 ## Do I have security rights to Save from this Input File?
 
-Only people in the District Position Assignment (DPA) for the District in Toolbox can save to this file. Your Division Controller can add you if you are not already in the DPA.
-
-![](/images/WCNTraining/Capital/CapitalInput_DPANavigation.png)
-
-![](/images/WCNTraining/Capital/CapitalInput_DPAWindow.png)
-
-## Capital Input and the Control Center
-
-Based on your position in the DPA for the district, you will have a certain level of access to this report. You may be on one of the following levels: **A/C**, **Dist**, **Div**, **Reg**, or **Corp**.
-
-Capital is locked at these levels in the [ Control Center ](/bApps/InterjectTraining/Budget/ControlCenter.html), hidden in the AH column. In the example below, District 2050 is locked at the Corp Level.
-
-![](/images/WCNTraining/Capital/CapitalInput_ControlCenterLockLevel.png)
-
-If an A/C level user tries saving to 2050 Capital, they will be stopped with the following message.
-
-![](/images/WCNTraining/Capital/CapitalInput_Error_LockLevel.png)
-
-You are able to save Capital as long as the Capital lock level is your level or below. Otherwise you will not be able to save Capital.
+To find if you can save to the Capital Input Tool, please check out the [ Tools Controlled by the Control Center ](/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#the-capital-input-tool) page.
 
 ## Drills
 
