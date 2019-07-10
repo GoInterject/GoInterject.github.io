@@ -7,14 +7,14 @@ description:
 
 ## Overview
 
-**Purpose**: This tab of the tool provides a summarized view of the budget amounts across account groupings, up to their own Review Date timestamps.
+**Purpose**: This tab of the Budget Change Query tool provides a summarized view of the budget amounts across account groupings up to their own Review Date timestamps.
 
 **Filter Options**:
 
 * **Year** - *Optional*. Blank defaults to next Budget Year. Needs to be in YYYY format
-* **District/Grouping** - *Optional*. Blank defaults to all districts you have rights to. Allows individual district, district ranges, or groupings
+* **District/Grouping** - *Optional*. Blank defaults to all districts in your rights. Allows individual district, district ranges, or groupings
 * **Currency** - *Required*. Options are USD or CAD
-* **Exclude IC** - *Required*. Drop-down options are FALSE or TRUE. If set to TRUE, then In-terCompany accounts are removed from the pull
+* **Exclude IC** - *Required*. Drop-down options are FALSE or TRUE. If set to TRUE, then InterCompany accounts are removed from the pull
 
 ![](/images/WCNTraining/Budget/BudChangeQuery_ReviewDateSummary_Fullview.png)
 
@@ -32,7 +32,7 @@ The Review Date columns (*Corp Review Thru*, *Reg Review Thru*, *Reg Cutoff*, *C
 
 ![](/images/WCNTraining/Budget/BudChangeQuery_ReviewDateSummary_ReviewDateBuckets.png)
 
-The *Change From* columns (*Changes from Reg Review Thru*, *Changes from Reg Cutoff*, *Changes from Corp Cutoff*, *Changes from After Corp Cutoff*) show *ONLY* the aggregated amounts to their specific Review Date Bucket timestamps.
+The *Change From* columns (*Changes from Reg Review Thru*, *Changes from Reg Cutoff*, *Changes from Corp Cutoff*, *Changes from After Corp Cutoff*) show ONLY the aggregated amounts to their specific Review Date Bucket timestamps.
 
 ![](/images/WCNTraining/Budget/BudChangeQuery_ReviewDateSummary_ChangesFrom.png)
 
@@ -42,7 +42,7 @@ Since the summed amounts include multiple districts, it is important to remember
 
 ![](/images/WCNTraining/Budget/BudChangeQuery_ReviewDateSummary_ControlCenterReviewDates.png)
 
-On the *Review Date Summary Tab* the summed amounts for **Reg Cutoff** show changes for both districts up to their respective **Reg Cutoff** dates in Control Center. For 2041 that would be all saves up to *8/30/19 7:00 PM* and for 2050 it would be all changes up to *8/20/19 3:00 PM*.
+On the *Review Date Summary Tab* the summed amounts for **Reg Cutoff** show changes for both districts up to their respective **Reg Cutoff** dates in Control Center. For 2041, that would be all saves up to *8/30/19 7:00 PM* and for 2050 it would be all changes up to *8/20/19 3:00 PM*.
 
 ![](/images/WCNTraining/Budget/BudChangeQuery_ReviewDateSummary_RegCutoffAmounts.png)
 
