@@ -19,5 +19,5 @@ description:
 * **End Date** - *Optional*. Blank defaults to the end of the budget season. If used, no data will pull in after the date time stamp
 * **User** - *Optional*. Blank defaults to all. If used, results are restricted to that specific user
 
-![](/images/WCNTraining/Budget/BudChangeQuery_EBITDAChangeHistory_Fullview.png)
+![](/images/WCNTraining/Budget/BudChangeQuery_EBITDAChangeHistory_FullView.png)
 
