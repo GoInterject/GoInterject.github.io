@@ -1,5 +1,5 @@
 ---
-title: Capital Change Query Tool Summary
+title: Budget Template Summary
 layout: custom
 keywords: [Training, Capital, Budget Template]
 description: 
