@@ -15,7 +15,7 @@ description:
 **Filter Options**:
 
 * **District** - *Required*. Individual district. Cannot use district ranges or groupings
-* **YYYY-MM** - *Required*. Needs to be in YYYY-MM format
+* **YYYY-MM** - *Required*. Must be in YYYY-MM format
 * **Currency** - *Optional*. Blank defaults to your home district currency. Other options are USD and CAD.<br><br>
 [ *Retain Rows - Related Parameters (used in the pull)* ](#retain-rows-and-how-it-works)
 * **Retain Rows** - *Required*. Drop-down filter includes *Yes*, *No-Show Last Saved*, *No-Show Prior Bud*. If *Yes*, the Input columns will not clear on the pull.
@@ -31,25 +31,25 @@ description:
 
 ### Retain Rows and how it works
 
-With **Retain Rows** on *Yes*, any inputs in the Input columns will remain when the template is refreshed, or even if the report is cleared. If it is *No*, the Input columns will copy either the Projections saved to the current year month or last month (depending on the alternative option).
+With **Retain Rows** on *Yes*, any inputs in the Input columns will remain when the template is refreshed, or even if the report is cleared. If it is *No*, the Input columns will copy the Projections saved to either the current year month or the last month (depending on the alternative option).
 
 For an example with **Retain Rows** *Yes*, the screenshot below shows a formula used on the *36000-600-00* account.
 
 ![](/images/WCNTraining/Projections/ProjectionTemplate_RetainRowsBeforeClear.png)
 
-We clear the report, and afterwards we see that not only have all of the rows remain, but the formula is still there.
+Clear the report, and afterwards notice that not only have all of the rows remained, but the formula is still there as well.
 
 ![](/images/WCNTraining/Projections/ProjectionTemplate_RetainRowsAfterClear.png)
 
-The **Retain Comments** on *Yes* will keep any comments saved in the template, even if there are different comments saved in the database.
+Setting **Retain Comments** to *Yes* will keep any comments saved in the template, even if there are different comments saved in the database.
 
 If a new account is added to the Template with **Retain Rows** set to *Yes*, the setting for **Insert at End** dictates whether the account gets placed normally, in order, or gets inserted at the end.
 
-For example, if *36002-000-00* is added to the Template while **Insert at End** is set to *No*, it is placed between the 36000 and 36009 accounts.
+For example, if *36002-000-00* is added to the Template while **Insert at End** is set to *No*, the added account is placed between the 36000 and 36009 accounts.
 
 ![](/images/WCNTraining/Projections/ProjectionTemplate_InsertAtEndNo.png)
 
-Otherwise if **Insert at End** is set to *Yes*, the added account is at the bottom. Use this if you use formulas, so that newly added accounts do not interfere with them.
+Otherwise, if **Insert at End** is set to *Yes*, the added account is at the bottom. Use this if you use formulas, so that newly added accounts do not interfere with them.
 
 ![](/images/WCNTraining/Projections/ProjectionTemplate_InsertAtEndYes.png)
 
@@ -67,7 +67,7 @@ In the screenshot below, we see five account combinations for the 36009 account.
 
 ![](/images/WCNTraining/Projections/ProjectionTemplate_SummaryDetail_PullStart.png)
 
-With **Retain Rows** set to *Yes* and **Insert By Full Acct** set to *No*, we delete the 36009-000-00 and 36009-600-00 rows.
+With **Retain Rows** set to *Yes* and **Insert By Full Acct** set to *No*, delete the 36009-000-00 and 36009-600-00 rows.
 
 ![](/images/WCNTraining/Projections/ProjectionTemplate_SummaryDetail_SummaryPrep.png)
 
@@ -76,7 +76,7 @@ Now when we pull, the two detail rows 36009-000-00 and 36009-600-00 are summariz
 ![](/images/WCNTraining/Projections/ProjectionTemplate_SummaryDetail_SummaryPull.png)
 
 >**Things to Remember**<br>
->For this to work, **Retain Rows** MUST be set to *Yes*. Otherwise, if **Retain Rows** is set to *No* and you pull, it will pull in ALL accounts on the Detail Level.
+>For this to work, **Retain Rows** MUST be set to *Yes*. Otherwise, if **Retain Rows** is set to *No* and you pull, ALL accounts will be pulled on the Detail Level.
 
 #### Saving Summary and Detail levels together
 
@@ -90,23 +90,23 @@ First we save with **Zero Out Missing Accts** set to *No*, and pull in all detai
 
 ![](/images/WCNTraining/Projections/ProjectionTemplate_SummaryDetail_ZeroOutNo.png)
 
-The Projections saved to 36009-000-00 is the *offset* of $3,500 per month (summarized amount) and $2,000 per month for 36009-600-00 (amounts in database). This updated the $1,000 in the database 36009-000-00 to $1,500, so that the summarize amount matches what was saved AND preserves the amount already assigned to 36009-600-00.
+The Projection saved to 36009-000-00 is the *offset* of $3,500 per month (summarized amount) and $2,000 per month for 36009-600-00 (amounts in database). This updated the $1,000 in the database 36009-000-00 to $1,500, so that the summarize amount matches what was saved AND preserves the amount already assigned to 36009-600-00.
 
-If we had set **Zero Out Missing Accts** to *Yes* instead, the pull on detail would have looked like this instead.
+If we had set **Zero Out Missing Accts** to *Yes* instead, the pull on detail would have looked like example below.
 
 ![](/images/WCNTraining/Projections/ProjectionTemplate_SummaryDetail_ZeroOutYes.png)
 
 Now 36009-000-00 has the full $3,500 for each month, and 36009-600-00 has been zeroed out because it was not in the template.
 
 >**Things to Remember**
->* If you delete other accounts from the template, they will be zeroed out as well if **Zero Out Missing Accts** is set to *Yes* (even if they do not have a summary level account present in the template).
+>* If you delete other accounts from the template, they will be zeroed out as well, if **Zero Out Missing Accts** is set to *Yes* (even if they do not have a summary level account present in the template).
 >* When saving with a Summary level account (only Acct is present), you cannot also save to the same account with *000-00* included. The save thinks the two accounts are the same, and they will be marked as duplicates.
 
 ## Dynamic Projection Columns
 
 Depending on the Projection fiscal period, the number of months you project to can change. For the majority of the fiscal period, it will be three months. For August you project out to five months, and for September it is four months.
 
-The template will update automatically based on the Year Month when you pull on the tool. Check the screenshots below which show the last saved data changing the columns dynamically (this applies to the other sections of the tool as well).
+The template will update automatically based on the Year Month when you pull on the tool. Notice the screenshots below, which show the last saved data changing the columns dynamically (this applies to the other sections of the tool as well).
 
 ![](/images/WCNTraining/Projections/ProjectionTemplate_3Months.png)
 ![](/images/WCNTraining/Projections/ProjectionTemplate_4Months.png)
@@ -118,14 +118,14 @@ The majority of accounts in your template will be marked **Manual Input** in the
 
 ![](/images/WCNTraining/Projections/ProjectionTemplate_Autocalcs.png)
 
-There are many different types of Autocalcs, but the main thing to know is that you cannot edit them with the **Projections Template**. These accounts are managed by Corporate. Notice also that any Manual Input account is highlighted yellow, and the Autocalcs are grayed out.
+There are many different types of Autocalcs, but it's important to know that you cannot edit them with the **Projections Template**. These accounts are managed by Corporate. Notice also that any Manual Input account is highlighted yellow, and the Autocalcs are grayed out.
 
 >**Autocalc Handling**<br>
 >It is best practice to set your Autocalc input columns to equal the last saved columns from Interject. That way your your inputs will automatically update when assumptions are changed, and your EBITDA will tie out.
 
 ## Do I have security rights to Save from the Projections Template?
 
-To find if you can save to the Projections Template, please check out the [ Tools Controlled by the Control Center ](/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#projections-tools-and-the-control-center) page.
+To check whether you can save to the Projections Template, please see the [ Tools Controlled by the Control Center ](/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#projections-tools-and-the-control-center) page.
 
 ## Common Save Errors
 
@@ -148,7 +148,7 @@ ___
 ___
 ![](/images/WCNTraining/Projections/ProjectionTemplate_Error_YearMonthRequired.png)
 
-*The YearMonth is required and needs to be in the YYYY-MM format.*
+*The YearMonth is required and must be in the YYYY-MM format.*
 
 ___
 ![](/images/WCNTraining/Projections/ProjectionTemplate_Error_MissingColumns.png)

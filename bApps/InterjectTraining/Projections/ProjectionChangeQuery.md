@@ -7,7 +7,7 @@ description:
 
 ## Overview
 
-**Purpose**: The Projections Change Query Tool provides insight into how Projections have been changed while open, with views on the summary and detailed levels.
+**Purpose**: The Projections Change Query Tool provides insight to how Projections have been changed while open, with views on the summary and detailed levels.
 
 **Report Location**<br>
 (Attach Report Location Image here)
