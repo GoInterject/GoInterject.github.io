@@ -64,7 +64,7 @@ Now you will be able to drop in the desired Budget values and save them!
 
 ## Do I have security rights to Save from the Budget Upload tab?
 
-To find if you can save to the Budget Upload Tool, please check out the [ Tools Controlled by the Control Center ](/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#the-budget-upload-tool) page.
+To find if you can save to the Budget Upload Tool, please check out the [ Tools Controlled by the Control Center ](/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#budget-tools-and-the-control-center) page.
 
 ## After Corp Cutoff and after BOD
 
