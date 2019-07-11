@@ -7,21 +7,21 @@ description:
 
 ## Overview
 
-**Purpose**: The Projections Upload Tool allows controllers to upload projections for multiple accounts in a district all at the same time. This upload tool closely matches the Budget Upload Tool in design and function.
+**Purpose**: The Projections Upload Tool allows controllers to upload projections for multiple accounts in a district at the same time. This upload tool closely matches the Budget Upload Tool in design and function.
 
 **Filter Options**:
 
-* **Year-Month** - *Required*. Needs to be in YYYY-MM format
+* **Year-Month** - *Required*. Must be in YYYY-MM format
 * **District** - *Optional*. Individual district, district ranges, or groupings allowed. *Required* if **Account** is *blank*
 * **Account** - *Optional*. Individual account, account ranges, or groupings allowed. *Required* if **District** is *blank*
-* **System** - *Optional*. Needs to be numeric, 3 digits long
-* **SubSystem** - *Optional*. Needs to be numeric, 2 digits long
+* **System** - *Optional*. Must be numeric, 3 digits long
+* **SubSystem** - *Optional*. Must be numeric, 2 digits long
 
 ![](/images/WCNTraining/Projections/ProjectionUpload_FullView.png)
 
 ## Uploading to more than one district at a time
 
-Regional Controller can pull on the Region, making Projections amount changes across multiple districts and uploading them all at once.
+Regional Controllers can pull on the Region, making Projections amount changes across multiple districts and uploading them all at once.
 
 If you do not have Region Controller access, you will not be able to pull or save on multiple Districts. You will get the following validation errors:
 
@@ -35,11 +35,11 @@ If you do not have Region Controller access, you will not be able to pull or sav
 
 ## Drop Projections numbers in without pulling first
 
-On opening the Projection Upload Tool, there will be a range of blank rows available for you to immediately drop Projection values. 
+On opening the Projection Upload Tool, there will be a range of blank rows available into which you can immediately drop Projection values. 
 
 ![](/images/WCNTraining/Projections/ProjectionUpload_BlankRowsDefault.png)
 
-If you need to add more blank rows, insert new rows in the middle of the blank rows. This will automatically copy the formatting and include the new rows in the Save formula range.
+If you need to add more blank rows, insert new rows in the middle of the blank ones. Formatting will be copied automatically, and the new rows will be included in the Save formula range.
 
 ![](/images/WCNTraining/Projections/ProjectionUpload_InsertNewRowsMiddle.png)
 
@@ -55,16 +55,16 @@ Navigate up to the hidden formulas section and click on the Save formula in cell
 
 ![](/images/WCNTraining/Projections/ProjectionUpload_SaveFormula.png)
 
-Click within the formula to bring up the cell references. Extend the blue range of cells under the District column to include all rows above it.
+Click within the formula to bring up the cell references. Extend the **blue** range of cells under the District column to include all rows above it.
 
 ![](/images/WCNTraining/Projections/ProjectionUpload_SmallSaveRange.png)
 ![](/images/WCNTraining/Projections/ProjectionUpload_BigSaveRange.png)
 
-Now you will be able to drop in the desired Projections values and save them!
+Now you will be able to drop in the desired Projections values and save them.
 
 ## Do I have security rights to Save from the Projections Upload tab?
 
-To find if you can save to the Projections Upload Tool, please check out the [ Tools Controlled by the Control Center ](/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#projections-tools-and-the-control-center) page.
+To learn whether you can save to the Projections Upload Tool, please check the [ Tools Controlled by the Control Center ](/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#projections-tools-and-the-control-center) page.
 
 ## Common Save Errors
 
@@ -82,7 +82,7 @@ ___
 <div markdown="1" class="panel">
 ![](/images/WCNTraining/Projections/ProjectionUpload_InvalidYearMonth.png)
 
-*Year-Month is required and needs to be in the YYYY-MM format.*
+*Year-Month is required and must be in the YYYY-MM format.*
         
 ___
 ![](/images/WCNTraining/Projections/ProjectionUpload_IncompleteGLString.png)
