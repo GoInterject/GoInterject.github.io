@@ -1,0 +1,358 @@
+/////////////////////////////////////////////////////*
+// List of media queries defined in _scalingbreakpoints.scss:
+// @include for-phone-only {
+//  FROM width: 0px -> 599px
+// }
+// @include for-tablet-portrait-up {
+//  FROM width: 600px -> 899px
+// }
+// @include for-tablet-landscape-up {
+//  FROM width: 900px -> 1199px
+// }
+// @include for-desktop-up {
+//  FROM width: 1200px -> 1800px
+// }
+// @include for-big-desktop-up {
+//  FROM width: 1800px -> inf
+// }
+//////////////////////////////////////////////////////*
+// Clean copy of queries:
+// @include for-phone-only {
+        
+// }
+// @include for-tablet-portrait-up {
+
+// }
+// @include for-tablet-landscape-up {
+
+// }
+// @include for-desktop-up {
+
+// }
+// @include for-big-desktop-up {
+
+// }
+//////////////////////////////////////////////////////*
+.header {
+    @include for-phone-only {
+        height: 130px;
+    }
+    @include for-tablet-portrait-up {
+        height: 90px;
+    }
+}
+.banner-main {
+    width: 100%;
+    @include for-phone-only {
+        position: fixed;
+    }
+    @include for-tablet-portrait-up {
+        position: fixed;
+    }
+    @include for-tablet-landscape-up {
+        height: 20%;
+    }
+    @include for-big-desktop-up {
+        height: 30%;
+    }
+}
+.container-fluid {
+    @include for-phone-only {
+        overflow-x: hidden;
+    }
+    @include for-tablet-portrait-up {
+        overflow-x: hidden;
+    }
+}
+.logo {
+    @include for-phone-only {
+        display: none;
+    }
+    @include for-tablet-portrait-up {
+        display: none;
+    }
+}
+.hero-text {
+    display: flex;
+    @include for-phone-only {
+        display: none;
+    }
+    @include for-tablet-portrait-up {
+        display: none;
+    }
+    @include for-tablet-landscape-up {
+        align-items: flex-end;
+    }
+}
+.hero-text-centered {
+    @include for-tablet-landscape-up {
+        height: 230px;
+    }
+    @include for-desktop-up {
+        height: 230px;
+    }
+    p {
+        margin: 0px 0px 10px 0px;
+    }
+}
+.nav-primary {
+    @include for-phone-only {
+        display: none;
+    }
+    @include for-tablet-portrait-up {
+        display: none;
+    }
+}
+.nav-secondary {
+    @include for-phone-only {
+        height: 130px;
+        position: fixed;
+        top: 0;
+    }
+    @include for-tablet-portrait-up {
+        height: 90px;
+        position: fixed;
+        top: 0;
+    }
+    .logo {
+        @include for-tablet-landscape-up {
+            display: none;
+        }
+    }
+    .navbar-toggle {
+        @include for-tablet-portrait-up {
+            display: block !important;
+        }
+    }
+
+    > .container-fluid {
+        @include for-phone-only {
+            padding-left: 5px;
+            padding-right: 5px;
+            overflow-x: hidden;
+        }
+        @include for-tablet-portrait-up {
+            padding-left: 5px;
+            padding-right: 5px;
+            overflow-x: hidden;
+            height: 200px;
+        }
+    }
+    .search-form {
+        @include for-phone-only {
+            display: block !important;
+            margin: 5px 27px 0px -10px;
+            width: 240px;
+        }
+        @include for-tablet-portrait-up {
+            display: block !important;
+            margin: 5px 27px 0px -10px;
+            width: 300px;
+        }
+            [type=search] {
+            @include for-phone-only {
+                    min-width: auto;
+                    background: rgba(255, 255, 255, 0.17) url(/images/search.png) no-repeat !important;
+                    background-position: 10px 9px !important;
+                    margin-left: 25px;
+            }
+            @include for-tablet-portrait-up {
+                    min-width: auto;
+                    background: rgba(255, 255, 255, 0.17) url(/images/search.png) no-repeat !important;
+                    background-position: 10px 9px !important;
+                    margin-left: 25px;
+            }
+        }
+    }
+}
+.nav-secondary-tabs {
+    
+    .navbar-toggle {
+        @include for-tablet-portrait-up {
+            display: block !important;
+        }
+    }
+
+    &.affix-top {
+        @include for-phone-only {
+            position: fixed;
+            top: 0;
+        }
+        @include for-tablet-portrait-up {
+            position: fixed;
+            top: 0;
+        }
+    }
+    
+    > .container-fluid {
+        @include for-phone-only {
+            padding-left: 5px;
+            padding-right: 5px;
+            overflow-x: hidden;
+        }
+        @include for-tablet-portrait-up {
+            padding-left: 5px;
+            padding-right: 5px;
+            overflow-x: hidden;
+            height: 200px;
+        }
+    }
+    
+    .search-form {
+        @include for-phone-only {
+            display: block !important;
+        }
+        @include for-tablet-landscape-up {
+            margin: 5px 5px 0px -10px;
+        }
+            [type=search] {
+            @include for-phone-only {
+                min-width: auto;
+                background: rgba(255, 255, 255, 0.17) url(/images/search.png) no-repeat !important;
+                background-position: 10px 9px !important;
+                margin-left: 25px;
+            }
+            @include for-tablet-portrait-up {
+                min-width: auto;
+                background: rgba(255, 255, 255, 0.17) url(/images/search.png) no-repeat !important;
+                background-position: 10px 9px !important;
+                margin-left: 25px;
+            }
+        }
+    }
+}
+.nav-container {
+    div#tabs {
+        @include for-phone-only {
+            min-width: 340px;
+        }
+        @include for-tablet-portrait-up {
+            min-width: 400px;
+        }
+        ul.tabs {
+            @include for-phone-only {
+                display: inline-flex;
+                flex-wrap: wrap;
+                margin: 0;
+                float: left;
+                width: 100%
+            }
+            li {
+                a {
+                    @include for-phone-only{
+                        padding: 10px 6px 10px 4px;
+                        float: left;
+                        opacity: 0.7;
+                        font-size: 0.93em;
+                        margin-left: 0;
+                        font-weight: normal;
+                    }
+                    @include for-tablet-portrait-up{
+                        padding: 17px 10px 5px 10px;
+                        float: left;
+                        font-size: 1em;
+                        margin-left: 0;
+                        font-weight: normal;
+                    }
+                    @include for-tablet-landscape-up{
+                        padding: 17px 10px 14px 10px;
+                        float: left;
+                        font-size: 1em;
+                        margin-left: 0;
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+    }
+    .ctrl-right {
+        @include for-phone-only {
+            display: none !important;
+        }
+    }
+}
+.wrapper {
+    main.main-content {
+        @include for-phone-only {
+            padding: 130px 25px;
+        }
+        @include for-tablet-portrait-up {
+            padding: 90px 25px;
+        }
+    }
+
+    main.content {
+        @include for-phone-only {
+            padding: 130px 25px;
+        }
+        @include for-tablet-portrait-up {
+            padding: 90px 25px;
+        }
+    }
+
+    .sidebar {
+        @include for-phone-only {
+            display: block;
+            background-color: #15212e;
+            border-right: 1px solid rgba(204, 204, 204, 0.29);
+            top: 110px;
+            left: 0;
+            overflow-x: hidden;
+            overflow-y: auto;
+            position: fixed;
+            width: 100%
+        }
+        @include for-tablet-portrait-up {
+            display: block;
+            background-color: #15212e;
+            border-right: 1px solid rgba(204, 204, 204, 0.29);
+            top: 71px;
+            left: 0;
+            overflow-x: hidden;
+            overflow-y: auto;
+            position: fixed;
+            width: 100%
+        }
+
+        a {
+            @include for-phone-only {
+                color: #a8a8a8;
+                text-align: left;
+            }
+            @include for-tablet-portrait-up {
+                color: #a8a8a8;
+                text-align: left;
+            }
+        }
+        a.nocaret.active {
+            @include for-phone-only {
+                cursor: default;
+                background: dimgray;
+                color: #c8d7e0;
+                border-left: 4px solid #c8d7e0;
+                font-weight: 600;
+            }
+            @include for-tablet-portrait-up {
+                cursor: default;
+                background: dimgray;
+                color: #c8d7e0;
+                border-left: 4px solid #c8d7e0;
+                font-weight: 600;
+            }
+        }
+
+    }
+}
+.modal {
+    @include for-phone-only {
+        padding-top: 170px;
+    }
+}
+.footer{
+    .top_footer {
+        @include for-phone-only {
+            padding: 50px 0 35px;
+            text-align: center;
+        }
+    }
+}
