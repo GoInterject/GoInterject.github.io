@@ -7,10 +7,10 @@ description:
 
 ## Overview
 
-**Purpose**: The Budget Template tools is used by controllers to update their Budgetson the District level.
+**Purpose**: The Budget Template tools are used by controllers to update their Budgets on the District level.
 
 **Report Location**<br>
-(Attach Report Location Image here)
+![](/images/WCNTraining/Budget/BudgetTemplate_ReportLibrary.png)
 
 ___
 ### [ Budget Template ](/bApps/InterjectTraining/Budget/BudgetTemplate.html)
