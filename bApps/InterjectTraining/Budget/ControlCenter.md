@@ -10,7 +10,7 @@ description:
 **Purpose**: This tool controls who has ability to save to Budgets and when the data will flow from the Budget Module into Interject. It also controls the Projections and Capital lock levels.
 
 **Report Location**<br>
-(Attach Report Location Image here)
+![](/images/WCNTraining/Budget/ControlCenter_ReportLibrary.png)
 
 **Filter Options**:
 
