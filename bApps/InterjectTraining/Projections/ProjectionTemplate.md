@@ -9,9 +9,6 @@ description:
 
 **Purpose**: The Local Projections Template is used to save to a district's Projections for a given month. This template closely matches the Local Budget Template in design and function.
 
-**Report Location**<br>
-(Attach Report Location Image here)
-
 **Filter Options**:
 
 * **District** - *Required*. Individual district. Cannot use district ranges or groupings

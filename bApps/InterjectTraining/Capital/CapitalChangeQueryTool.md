@@ -10,7 +10,7 @@ description:
 **Purpose**:  This tool provides an in-depth view into the historical data for the Capital PO changes.
 
 **Report Location**<br>
-(Attach Report Location Image here)
+![](/images/WCNTraining/Capital/CapitalChangeQuery_ReportLibrary.png)
 
 ___
 ### [ CCQuery ](/bApps/InterjectTraining/Capital/CCQuery.html)

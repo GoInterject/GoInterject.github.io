@@ -94,9 +94,14 @@ budget:
 projection:
 - title: Projection Module Summary
   path: /bApps/InterjectTraining/Projections/ProjectionsModule.html
-- title: Projection Template
-  path: /bApps/InterjectTraining/Projections/ProjectionTemplate.html
-- title: Projection Upload Tool
-  path: /bApps/InterjectTraining/Projections/ProjectionUpload.html
+- sectiontitle: Projection Template
+  path: /bApps/InterjectTraining/Projections/ProjectionTemplateSummary.html
+  section:
+  - title: Projection Template Summary
+    path: /bApps/InterjectTraining/Projections/ProjectionTemplateSummary.html
+  - title: Projection Template
+    path: /bApps/InterjectTraining/Projections/ProjectionTemplate.html
+  - title: Projection Upload Tool
+    path: /bApps/InterjectTraining/Projections/ProjectionUpload.html
 - title: Projection Change Query
   path: /bApps/InterjectTraining/Projections/ProjectionChangeQuery.html
