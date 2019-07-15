@@ -10,7 +10,7 @@ description:
 **Purpose**:  This report is used to upload new Capital amounts and recon the saved Capital amounts for the given Budget Year.
 
 **Report Location**<br>
-(Attach Report Location Image here)
+![](/images/WCNTraining/Capital/CapitalBudgetInput_ReportLibrary.png)
 
 ## What is new?
 

@@ -9,6 +9,9 @@ description:
 
 The Budget Change Query Tool provides different views of how budgets have changed over the budget season. The following are brief descriptions of each tab in the tool.
 
+**Report Location**<br>
+![](/images/WCNTraining/Budget/BudgetChangeQuery_ReportLibrary.png)
+
 ### [ Review Date Summary Tab ](/bApps/InterjectTraining/Budget/BudgetChangeQuery_ReviewDateSummary.html)
 
 This tab provides a summarized view of the budget amounts across account groupings, each in their own Review Bucket timestamps.
