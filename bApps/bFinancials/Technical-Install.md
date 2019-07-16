@@ -33,10 +33,10 @@ After you get access to Interject, there are three parts to installing Interject
                   Base Install and data transfer
                 </td>
                 <td>
-                1.1.0
+                1.2.3
                 </td>
                 <td>
-                <a href="https://drive.google.com/file/d/16E2th5xN__y7gyBiJ4HHbxAD1kjcuufi/view">Initial.Interject_Reporting.sql.</a>
+                <a href="https://drive.google.com/file/d/1uNCX3lv0AjI4K23gRG2sL3VfCH6B971y/view?usp=sharing">Initial.Interject_Reporting.sql.</a>
                 </td>
             </tr>
             <tr>
@@ -76,7 +76,7 @@ After you get access to Interject, there are three parts to installing Interject
 >
 > ```SQL
 > EXEC [Custom].[Interject_SetupScript1_Security]
->	@MasterEpicorDatabase = 'samplemasterdb'
+>	@MasterEpicorDatabase = '<Epicor Controlling Database Name>'
 >	,@CertificatePassword =  'myPassword1234'
 >```
 >
