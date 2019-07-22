@@ -3,7 +3,10 @@
 ---
 
 @import "variables";
+<<<<<<< HEAD
 // @import "night-mode"; -- no longer used
+=======
+>>>>>>> ab08e03f810ace9a20ff4023b63a8d204bc4eee0
 @import "base";
 @import "typography";
 @import "layout";
@@ -14,6 +17,7 @@
 @import "utilities";
 @import "github";
 @import "overrides";
-@import "mobile";
+@import "scalingbreakpoints";
+@import "scalingstyleoverrides";
 @import "notes";
 @import "collapsible";

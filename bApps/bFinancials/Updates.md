@@ -6,7 +6,11 @@ description: INTERJECT™ Financials for Epicor Enterprise (This would cover top
 ---
 
 <h2>Interject Financials - Epicor <br>
+<<<<<<< HEAD
 <a href="https://drive.google.com/file/d/1LcWA2kEjOglb8U52reS5api4D9XzG0Xx/view?usp=sharing">Latest Version 1.2.1</a></h2>
+=======
+<a href="https://drive.google.com/file/d/1uNCX3lv0AjI4K23gRG2sL3VfCH6B971y/view?usp=sharing">Latest Version 1.2.3</a></h2>
+>>>>>>> ab08e03f810ace9a20ff4023b63a8d204bc4eee0
 
 Depending on which version of Interject Financials you're running, there are different update and rollback scripts. Before updating or rolling back a version, follow the procedure below. Once you know the version you're currently running, click on the appropriate dropdown below for the update release notes, the correct scripts for updating and rolling back versions, as well as procedures for running those scripts.
 
@@ -22,21 +26,33 @@ After the inital instal, applying an update, or performing a rollback, you can c
 ### Click Your Version Below for Release Notes and Update Scripts
 
 
+<<<<<<< HEAD
 <button class="collapsible"><strong>For Users With Version 1.2.0</strong></button>
+=======
+<button class="collapsible"><strong>For Users With Version 1.2.2</strong></button>
+>>>>>>> ab08e03f810ace9a20ff4023b63a8d204bc4eee0
 <div markdown="1" class="panel">
 
 <table> 
     <tr>
+<<<<<<< HEAD
         <th><span style="font-weight:bold">Update for Previous Install:</span> <a href="https://drive.google.com/file/d/1yqfod_Ggds7PjZPPf_UdnrIOh9_zfJlU/view?usp=sharing">from1.2.0to1.2.1_Update.Interject_Reporting.SQL</a></th>
     </tr>
     <tr>
         <th><span style="font-weight:bold">Rollback to 1.2.0:</span> <a href="https://drive.google.com/file/d/16Sy5BFKh-egNY_D1cuJgkJAjFeSjTpAI/view?usp=sharing">from1.2.1to1.2.0_Rollback.Interject_Reporting.SQL</a></th>
+=======
+        <th><span style="font-weight:bold">Update for Previous Install:</span> <a href="https://drive.google.com/file/d/1HRY_AnEd--GAvGsQOOwk39rSR9flZz3N/view?usp=sharing">from1.2.2to1.2.3_Update.Interject_Reporting.SQL</a></th>
+    </tr>
+    <tr>
+        <th><span style="font-weight:bold">Rollback to 1.2.2:</span> <a href="https://drive.google.com/file/d/1nx6lc3oI3frgSGgz7o1Zm8eRxWLUTi9f/view?usp=sharing">from1.2.3to1.2.2_Rollback.Interject_Reporting.SQL</a></th>
+>>>>>>> ab08e03f810ace9a20ff4023b63a8d204bc4eee0
     </tr>
 </table>
 
 ### Current Version Notes
 <table>
     <tr>
+<<<<<<< HEAD
         <th><span style="font-weight:bold">Interject for Financials - Current Version 1.2.1 </span></th>
     </tr>
         <tr> 
@@ -106,6 +122,9 @@ The following steps must be taken to roll back one version. Note that this will 
 <table>
     <tr>
         <th><span style="font-weight:bold">Interject for Financials - Current Version 1.2.1 </span></th>
+=======
+        <th><span style="font-weight:bold">Interject for Financials - Current Version 1.2.3 </span></th>
+>>>>>>> ab08e03f810ace9a20ff4023b63a8d204bc4eee0
     </tr>
         <tr>
         <th><span style="font-weight:bold">Features</span></th>
@@ -114,12 +133,33 @@ The following steps must be taken to roll back one version. Note that this will 
         <tr>
             <td>
                 <ul>
+<<<<<<< HEAD
                     <li>Distributions will allow users to combinate full account with another segment.</li> 
                 </ul>     
             </td>
             <td>
                 <ul>
                     <li>Drill-down from Fincube reports to Trial Balance reports will work with full account groupings.</li> 
+=======
+                   <li>Added Parallel/Serial filter in Distribution - Parallel create #1 build and serial creates builds for each row. Defaults to Parallel.</li>
+                    <li>Added ability to reference columns to create dynamic file names and folder path using [] syntax</li>
+                    <li>Added Global Variable Definitions and seeded with YYMM and MMYY</li>
+                </ul>     
+            </td>
+            <td>
+                <ul> 
+                    <li>Re-named Seed Open Fiscal Period to Fiscal Period</li>
+                    <li>Removed Open Period option in Fiscal Period dropdown</li>
+                    <li>Updated Fiscal Period column to reference the Fiscal Period filter</li>
+                    <li>Updated Expand/Collapse column to reference the Expand/Collapse filter</li>
+                    <li>Removed Data Pull on Distribution Run filter</li>
+                    <li>Re-named Tab Enabled label to Data Pull?</li>
+                    <li>Re-named Settings Enabled lable to Publish?</li>
+                    <li>Re-named Refresh Rollup Data to Refresh Data and modified formatting</li>
+                    <li>Moved Run Distiribution button</li>
+                    <li>Fix Run buttons when creating multiple Distribution tabs.</li>
+                    <li>Add Trim to FullAccounts in Rollup Definition</li> 
+>>>>>>> ab08e03f810ace9a20ff4023b63a8d204bc4eee0
                 </ul>
             </td>
         </tr>
@@ -138,7 +178,11 @@ Whenever an update of Interject for Financials is released, an update script mus
 >
 >  ```SQL
 > EXEC [Custom].[Interject_SetupScript1_Security]
+<<<<<<< HEAD
 >	@MasterEpicorDatabase = 'samplemasterdb'
+=======
+>	@MasterEpicorDatabase = '<Epicor Controlling Database Name>'
+>>>>>>> ab08e03f810ace9a20ff4023b63a8d204bc4eee0
 >	,@CertificatePassword =  'myPassword1234'
 >  ```
 >
@@ -149,13 +193,21 @@ The following steps must be taken to roll back one version. Note that this will 
 
 > To Roll Back
 >
+<<<<<<< HEAD
 > In SQL Management Studio, run the script labeled **Rollback to 1.1.0** at the top of this page.
+=======
+> In SQL Management Studio, run the script labeled **Rollback to 1.2.3** at the top of this page.
+>>>>>>> ab08e03f810ace9a20ff4023b63a8d204bc4eee0
 >
 > Run \[Interject_SetupScript1_Security\], as shown below, to re-enable security.
 >
 >  ```SQL
 > EXEC [Custom].[Interject_SetupScript1_Security]
+<<<<<<< HEAD
 >	@MasterEpicorDatabase = 'samplemasterdb'
+=======
+>	@MasterEpicorDatabase = '<Epicor Controlling Database Name>'
+>>>>>>> ab08e03f810ace9a20ff4023b63a8d204bc4eee0
 >	,@CertificatePassword =  'myPassword1234'
 >  ```
 >
@@ -163,6 +215,7 @@ The following steps must be taken to roll back one version. Note that this will 
 </div>
 
 
+<<<<<<< HEAD
 <button class="collapsible"><strong>For Users With Version 1.0.12</strong></button>
 <div markdown="1" class="panel">
 
@@ -261,13 +314,29 @@ The following steps must be taken to roll back one version. Note that this will 
     </tr>
     <tr>
         <th><span style="font-weight:bold">Rollback to 1.0.11:</span> <a href="https://drive.google.com/file/d/17xmsrzussLdzXtyTaWZy9IWnbr28SBUM/view?usp=sharing">from1.1.0to1.0.11_Rollback.Interject_Reporting.SQL</a></th>
+=======
+
+<button class="collapsible"><strong>For Users With Version 1.2.1</strong></button>
+<div markdown="1" class="panel">
+
+<table> 
+    <tr>
+        <th><span style="font-weight:bold">Update for Previous Install:</span> <a href="https://drive.google.com/file/d/1PFeGtZrb4g1VBxslKK99RCoQLUgmNvZV/view?usp=sharing">from1.2.1to1.2.3_Update.Interject_Reporting.SQL</a></th>
+    </tr>
+    <tr>
+        <th><span style="font-weight:bold">Rollback to 1.2.1:</span> <a href="https://drive.google.com/file/d/1ST6DTqqeaVakFJWz5B96fVbzS6cB1eH0/view?usp=sharing">from1.2.3to1.2.1_Rollback.Interject_Reporting.SQL</a></th>
+>>>>>>> ab08e03f810ace9a20ff4023b63a8d204bc4eee0
     </tr>
 </table>
 
 ### Current Version Notes
 <table>
     <tr>
+<<<<<<< HEAD
         <th><span style="font-weight:bold">Interject for Financials - Current Version 1.1.0 </span></th>
+=======
+        <th><span style="font-weight:bold">Interject for Financials - Current Version 1.2.3 </span></th>
+>>>>>>> ab08e03f810ace9a20ff4023b63a8d204bc4eee0
     </tr>
         <tr>
         <th><span style="font-weight:bold">Features</span></th>
@@ -276,6 +345,7 @@ The following steps must be taken to roll back one version. Note that this will 
         <tr>
             <td>
                 <ul>
+<<<<<<< HEAD
                     <li>Generate report templates on segments other than natural account</li>
                     <li>Simplified Distribution tab</li>
                     <li>Separate Validated Rollup add non-account option in the Config Mgr</li>
@@ -298,6 +368,27 @@ The following steps must be taken to roll back one version. Note that this will 
                     <li>Added 10 char. limit to Row Template Code name and validation</li>
                     <li>Remove double line subtotals in generated templates</li>
                     <li>Added Data Pull on Distribution filter to Distribution tab (prep or run), unhide some columns</li>
+=======
+                   <li>Added Parallel/Serial filter in Distribution - Parallel create #1 build and serial creates builds for each row. Defaults to Parallel.</li>
+                    <li>Added ability to reference columns to create dynamic file names and folder path using [] syntax</li>
+                    <li>Added Global Variable Definitions and seeded with YYMM and MMYY</li>
+                </ul>     
+            </td>
+            <td>
+                <ul> 
+                    <li>Re-named Seed Open Fiscal Period to Fiscal Period</li>
+                    <li>Removed Open Period option in Fiscal Period dropdown</li>
+                    <li>Updated Fiscal Period column to reference the Fiscal Period filter</li>
+                    <li>Updated Expand/Collapse column to reference the Expand/Collapse filter</li>
+                    <li>Removed Data Pull on Distribution Run filter</li>
+                    <li>Re-named Tab Enabled label to Data Pull?</li>
+                    <li>Re-named Settings Enabled lable to Publish?</li>
+                    <li>Re-named Refresh Rollup Data to Refresh Data and modified formatting</li>
+                    <li>Moved Run Distiribution button</li>
+                    <li>Fix Run buttons when creating multiple Distribution tabs.</li>
+                    <li>Add Trim to FullAccounts in Rollup Definition</li>
+                    <li>Fix Validation Definition for FullAccount (not allow invalid text) </li>
+>>>>>>> ab08e03f810ace9a20ff4023b63a8d204bc4eee0
                 </ul>
             </td>
         </tr>
@@ -316,7 +407,11 @@ Whenever an update of Interject for Financials is released, an update script mus
 >
 >  ```SQL
 > EXEC [Custom].[Interject_SetupScript1_Security]
+<<<<<<< HEAD
 >	@MasterEpicorDatabase = 'samplemasterdb'
+=======
+>	@MasterEpicorDatabase = '<Epicor Controlling Database Name>'
+>>>>>>> ab08e03f810ace9a20ff4023b63a8d204bc4eee0
 >	,@CertificatePassword =  'myPassword1234'
 >  ```
 >
@@ -327,19 +422,28 @@ The following steps must be taken to roll back one version. Note that this will 
 
 > To Roll Back
 >
+<<<<<<< HEAD
 > In SQL Management Studio, run the script labeled **Rollback to 1.0.11** at the top of this page.
+=======
+> In SQL Management Studio, run the script labeled **Rollback to 1.2.1** at the top of this page.
+>>>>>>> ab08e03f810ace9a20ff4023b63a8d204bc4eee0
 >
 > Run \[Interject_SetupScript1_Security\], as shown below, to re-enable security.
 >
 >  ```SQL
 > EXEC [Custom].[Interject_SetupScript1_Security]
+<<<<<<< HEAD
 >	@MasterEpicorDatabase = 'samplemasterdb'
+=======
+>	@MasterEpicorDatabase = '<Epicor Controlling Database Name>'
+>>>>>>> ab08e03f810ace9a20ff4023b63a8d204bc4eee0
 >	,@CertificatePassword =  'myPassword1234'
 >  ```
 >
 
 </div>
 
+<<<<<<< HEAD
 
 <button class="collapsible"><strong>For Users With Version 1.0.10</strong></button>
 <div markdown="1" class="panel">
@@ -516,3 +620,5 @@ The following steps must be taken to roll back one version. Note that this will 
 >
 
 </div>
+=======
+>>>>>>> ab08e03f810ace9a20ff4023b63a8d204bc4eee0
