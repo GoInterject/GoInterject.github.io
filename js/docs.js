@@ -305,18 +305,6 @@ function eraseCookie(name) {
     createCookie(name,"",-1);
 }
 
-
-// if (readCookie("night") == "true") {
-//   applyNight();
-//   $('#switch-style').prop('checked', true);
-// } else {
-//   applyDay();
-//   $('#switch-style').prop('checked', false);
-// }
-
-
-
-
 /*
  *
  * toggle menu *********************************************************************
@@ -418,36 +406,6 @@ $('ul.nav li.dropdown').hover(function() {
   $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
 });
 
-/*
- *
- * swapStyleSheet*********************************************************************
- *
- */
-
-// function swapStyleSheet(sheet) {
-//     document.getElementById('pagestyle').setAttribute('href', sheet);
-// }
-
-// function applyNight()
-// {
-//   $( "body" ).addClass( "night" );
-// }
-
-// function applyDay() {
-//   $( "body" ).removeClass( "night" );
-// }
-
-// $('#switch-style').change(function() {
-
-//     if ($(this).is(':checked')) {
-//         applyNight();
-//         createCookie("night",true,999)
-//     } else {
-//         applyDay();
-//     //     swapStyleSheet('/css/style.css');
-//         eraseCookie("night")
-//     }
-// });
 
 
 /*
@@ -490,24 +448,4 @@ window.onload = function() {
   $('.ctrl-right .btn-group').css("visibility","visible");
 };
 
-  // isArchive is set by logic in archive.js
-  // if ( isArchive == true ) {
-    //console.log("Showing content that should only be in the current version.");
-    // Hide elements that are not appropriate for archives
-    // PollDaddy
-    // $('#ratings-div').css("visibility","visible");
-    //console.log("Ratings widget shown.");
-    // Archive drop-down
-
-    //console.log("Archive widget shown.");
-    // Swarch
-    // $('.search-form').css("visibility","visible");
-    //console.log("Search widget shown.");
-    // Page edit link
-//     // $('.feedback-links li').first().css("visibility","visible");
-//     //console.log("Page edit link shown.");
-//   } else {
-//     //console.log("Keeping non-applicable elements hidden.");
-//   }
-// };
 
