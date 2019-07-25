@@ -89,7 +89,6 @@ sass:
 repository:
   GoInterject/gointerject
 
-exclude:
-  - prodDeploy
-  - pytest_suite
-  - .cache
+encoding:
+  UTF-8
+
