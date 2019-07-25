@@ -157,7 +157,7 @@ Before saving back changes to the Report Library, clear the data so the next use
 <br> 
 
 
-Now that the data is cleared, use the [ jFreezePanes ](/wIndex/128552956.html) function to re-freeze the panes on the report so that only the main report area is visible. This report has the jFreezePanes formula in cell G4. 
+Now that the data is cleared, use the [ jFreezePanes ](/wIndex/jFreezePanes.html) function to re-freeze the panes on the report so that only the main report area is visible. This report has the jFreezePanes formula in cell G4. 
 
 jFreezePanes is not configured for all the example reports, but it is easy to setup when needed. 
 
@@ -166,7 +166,7 @@ jFreezePanes is not configured for all the example reports, but it is easy to se
 <br> 
 
 
-**Step 2:** To use the [ jFreezePanes ](/wIndex/128552956.html), click the Quick Tools button in the INTERJECT Ribbon and select **Freeze/UnFreeze Panes**. 
+**Step 2:** To use the [ jFreezePanes ](/wIndex/jFreezePanes.html), click the Quick Tools button in the INTERJECT Ribbon and select **Freeze/UnFreeze Panes**. 
 
 ![](/images/L-Modify-Inventory/12.png)
 

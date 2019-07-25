@@ -156,12 +156,12 @@ We then try and upload a change to Budget using the **Budget Template** tool (af
 
 So our changes here have been saved to Target Center 2.0, but they are not yet synced to Interject. Once the *Corp Cutoff* date is set to a Date/Time after our change or BOD, this change will then be synced to Interject.
 
-We can use the the new tab [ UnsyncedChanges ](/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html) in the [ Budget Change Query Tool ](/bApps/InterjectTraining/Budget/BudgetChangeQueryToolSummary.html) to see our changes in Target Center 2.0.
+We can use the the new tab [ UnsyncedChanges ](/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html) in the [ Budget Change Query Tool ](/bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html) to see our changes in Target Center 2.0.
 
 ![](/images/WCNTraining/Budget/BudgetTemplate_AfterCorpCutoffBudChangeQuery.png)
 
 ### After BOD
-Once **BOD** for a Budget Year has been created, then any save from the **Budget Template** will not automatically sync to Interject again. This is just like with *After Corp Cutoff*, and while it is not in Interject it is in Target Center 2.0, and can be checked using the [ UnsyncedChanges ](/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html) tab in the [ Budget Change Query Tool ](/bApps/InterjectTraining/Budget/BudgetChangeQueryToolSummary.html). 
+Once **BOD** for a Budget Year has been created, then any save from the **Budget Template** will not automatically sync to Interject again. This is just like with *After Corp Cutoff*, and while it is not in Interject it is in Target Center 2.0, and can be checked using the [ UnsyncedChanges ](/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html) tab in the [ Budget Change Query Tool ](/bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html). 
 
 Once Corporate has versioned your change, the Budget amount will be sycned through to Interject.
 

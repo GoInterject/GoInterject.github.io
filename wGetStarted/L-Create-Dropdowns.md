@@ -83,16 +83,16 @@ This will bring up the Customer Aging Summary.
 
 **Step 2:** First, right click each hyperlinked paramter in the report, and then choose "Remove Hyperlink."
 
-![](/images/L-Create_Dropdowns/RemoveHyperlinks.png)
+![](/images/L-Create-Dropdowns/RemoveHyperlinks.png)
 
-**Step 3:** Next, unfreeze panes by going into [ Quick Tools ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) and selecting **Freeze/Unfreeze Panes**.
+**Step 3:** Next, unfreeze panes by going into [ Quick Tools ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) and selecting **Freeze/Unfreeze Panes**.
 
 ![](/images/L-Create-Dropdowns/07.png)
 <br>
 
 **Step 4:** Delete the existing jDropDown formulas from cells C7, C8, and C9. You will be rebuilding these formulas from scratch, so we have to remove them from this report.
 
-![](/images/L-Create_Dropdowns/RemovejDropDown.png)
+![](/images/L-Create-Dropdowns/RemovejDropDown.png)
 
 **Step 5:** Now create a new report formula. In cell F7 type [ **=jDropdown()** ](/wIndex/jDropdown.html). 
 

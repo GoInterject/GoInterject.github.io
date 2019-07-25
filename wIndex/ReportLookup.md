@@ -41,6 +41,6 @@ ReportLookup(jDataPortal("NorthwindCustomers",1,"[CustomerID] Like '%SAVE%'"),C1
 
 * [jDataPortal](/wIndex/jDataPortal.html)
 * [Param](/wIndex/Param.html)
-* [jCombine](wIndex/jCombine.html)
-* [jCombineIF](wIndex/jCombine_IF.html)
+* [jCombine](/wIndex/jCombine.html)
+* [jCombineIF](/wIndex/jCombine_IF.html)
 

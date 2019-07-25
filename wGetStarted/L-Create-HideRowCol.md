@@ -22,7 +22,7 @@ Both of these examples use the [ Customer Aging Detail  ](/wGetStarted/L3.4-Cust
 
 ![](/images/L-Create-HideRowCol/PullMarket.png)
 
-**Step 2:**  Unfreeze the report formula panes by clicking the [ Quick Tools ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) icon in the ribbon menu and selecting **Freeze/Unfreeze Panes**. 
+**Step 2:**  Unfreeze the report formula panes by clicking the [ Quick Tools ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) icon in the ribbon menu and selecting **Freeze/Unfreeze Panes**. 
 
 ![](/images/L-Create-HideRowCol/02.jpg)
 
@@ -68,165 +68,12 @@ Both of these examples use the [ Customer Aging Detail  ](/wGetStarted/L3.4-Cust
 
 <br> 
 
-<!--
-###  **Hiding Rows**
-
-**Step 1:** To begin, open the **Customer Collections** report in the [ Report Library ](/wAbout/Report-Library-Basics.html). 
-
-![](/images/L-Create-HideRowCol/01.png)
-
-<br> 
-
-
-Now that you have the report, you can decide which rows you want to hide temporarily. Make sure you are in the tab labelled **CustomerAgingDetail**. 
-
-**Step 2:** Next you will unfreeze panes by going into [ Quick Tools ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) and select **Freeze/Unfreeze Panes**. 
-
-![](/images/L-Create-HideRowCol/02.jpg)
-
-<br>
-
-**Step 3:** First, you need a filter that acts as a flag for an Excel formula. On **row 39** insert a new row above it. 
-
-![](/images/L-Create-HideRowCol/03.jpg)
-
-<br> 
-
-
-**Step 4:** In cell **G39** input **Show Expected Date:** to label the filter for later use. 
-
-![](/images/L-Create-HideRowCol/04.jpg)
-
-<br> 
-
-
-**Step 3:** Now restrict the cell **H39** to only toggle between Yes, No, or leave it as an empty string. 
-
-To do this, select the parameter cell, navigate to the **Data** Excel Ribbon, then select **Data Validation**. 
-
-![](/images/L-Create-HideRowCol/05.jpg)
-
-<br> 
-
-
-**Step 4:** Click the **Allow** dropdown and select **List.**
-
-![](/images/L-Create-HideRowCol/06.jpg)
-
-<br> 
-
-
-**Step 5:** Now change the allowed **Source** input to be **Yes, No**. 
-
-![](/images/L-Create-HideRowCol/07.jpg)
-
-**Note:** This will make a drop down list consisting of two options, **Yes** and **No**. 
-
-<br> 
-
-
-**Step 6:** Now select **row 30** and insert two rows above it. 
-
-![](/images/L-Create-HideRowCol/08.jpg)
-
-<br> 
-
-
-**Step 7:** In cell **G30** input **Formula Refresh** and in cell **G31** insert **Hide Rows:** to label what each INTERJECT Report Formula is used for. 
-
-![](/images/L-Create-HideRowCol/09.jpg)
-
-<br> 
-
-
-**Step 8:** In cell **H30** insert **=ReportCalc()** and then select the **fx** button to bring up the function wizard. 
-
-![](/images/L-Create-HideRowCol/10.jpg)
-
-<br>
-
-**Note:** When hiding rows and columns it is important that a **ReportCalc** **()** is used along with a **ReportHideRowOrColumn()**. Since the ReportHideRowOrColumn() leverages cell values as flags, it requires the outputs of Excel formulas to be updated after an INTERJECT Pull event. The order of the INTERJECT events matters in this example so the order of Report Formulas matters. INTERJECT reads Report Formulas from Left to Right, Top to Bottom, thus the ReportCalc() is created before the ReportHideRowOrColumn() so that it is executed by INTERJECT first. 
-
-<br> 
-
-
-**Step 9:** In the fields **OnPullSaveOrBoth**, **OnClearRunOrBoth**, **SheetOrWorkbook** input **Both**, **Both**, **Sheet** respectively 
-
-![](/images/L-Create-HideRowCol/11.jpg)
-
-<br> 
-
-
-**Step 10:** In the variable formatting range, in this case cell **C16**, input this formula **=IF($H$42="Yes","Show",IF(R16="","Show","Hide"))**. Be sure that it is in the **Report Variable** formatting range or the formula will not be copied down as intended. By selecting the cell in the formatting range, the formula will copy down to the rest of the report. 
-
-Once the report is ready you can view how to the left of the data there is a column filled with **Show** and **Hide**. Once you finish this example only the **Show** will be visible. 
-
-![](/images/L-Create-HideRowCol/12.jpg)
-
-<br> 
-
-
-**Step 11:** To check if the excel formula is functioning pull the report using the Company Parameter, **Market**. 
-
-![](/images/L-Create-HideRowCol/13.jpg)
-
-<br> 
-
-
-**Step 12:** In cell **H31**, type in **=ReportHideRoworColumn** and select **fx**. 
-
-![](/images/L-Create-HideRowCol/14.jpg)
-
-<br> 
-
-
-**Step 13:** The Function Argument window will appear and in **OnPullsSavesOrBoth** you will input **Pull**
-
-![](/images/L-Create-HideRowCol/15.jpg)
-
-<br> 
-
-
-**Step 14:** **** In the box labeled **OnClearRunOrBoth** you will input **Both**. 
-
-![](/images/L-Create-HideRowCol/16.jpg)
-
-<br> 
-
-
-**Step 15:** For the third box labeled **RoworColumnRange** input **C47:C48**. Do this by selecting the cells, not by typing in the values. 
-
-![](/images/L-Create-HideRowCol/17.jpg)
-
-<br> 
-
-
-**Step 16:** Set cell **H42** to **No** then use the [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) menu item to check your work.   
-
-![](/images/L-Create-HideRowCol/18.jpg)
-
-<br> 
-
-
-You will now only be able to view the invoices without expected dates. 
-
-![](/images/L-Create-HideRowCol/19.jpg)
-
-<br> 
-
-
-**Step 17:** Now that the formula is complete, you can reformat the page using [ Quick Tools ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) and Freeze the panes. 
-
-![](/images/L-Create-HideRowCol/20.jpg)
-
-<br> 
--->
 
 ###  Hiding Columns 
 
 In this next example our goal is too hide the rows that have a payment expected date and show the rows without one. 
 
-**Step 1:** To begin you will unfreeze the report using [ Quick Tools ](/wPortal/INTERJECT-Ribbon-Menu-Items.html). 
+**Step 1:** To begin you will unfreeze the report using [ Quick Tools ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html). 
 
 ![](/images/L-Create-HideRowCol/21.png)
 

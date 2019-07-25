@@ -584,7 +584,7 @@ FinalResponseToUser:
 
 ###  Testing the Stored Procedure 
 
-For quick testing, click on the  **View SQL Test** and copy the test code to the development area. For more information, go to the [ common troubleshooting page ](/wGetStarted/Troubleshooting-Reports.html). 
+For quick testing, click on the  **View SQL Test** and copy the test code to the development area. For more information, go to the [ common troubleshooting page ](/wTroubleshoot/Reports.html). 
 
 ![](/images/L-Dev-CustAgingSave/20.jpg)
 <br>

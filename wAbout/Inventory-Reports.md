@@ -23,7 +23,7 @@ This lab is a basic inventory example for tracking product quantities. In this w
   
 
 
-To access the totals of in-stock items, just pull the data into the spreadsheet using the [ **Pull Data** ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) operation. 
+To access the totals of in-stock items, just pull the data into the spreadsheet using the [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) operation. 
 
 ![](/images/Inventory/image2017-6-12_17-32-49.png)
 
@@ -84,7 +84,7 @@ When cleared, the sheet looks similar to the first category sheet.
   
 
 
-**Step 2:** Simply pull the data using the [ **Pull Data** ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) button to view the inventory data. 
+**Step 2:** Simply pull the data using the [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) button to view the inventory data. 
 
 ![](/images/Inventory/image2017-6-9_14-22-56.png)
 

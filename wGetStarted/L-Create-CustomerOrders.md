@@ -186,7 +186,7 @@ Below is an example of what a Formatting Range might look like. It is okay to le
   
 
 
-**Step 5:** Before pulling the data, you need to edit the [ ReportRange() ](wIndex/ReportRange.html) Formula in C10 so that it uses the Column Definition and Formatting Range set in the previous steps. 
+**Step 5:** Before pulling the data, you need to edit the [ ReportRange() ](/wIndex/ReportRange.html) Formula in C10 so that it uses the Column Definition and Formatting Range set in the previous steps. 
 
 ![](/images/L-Create-CustOrders/24.png)
 <br>

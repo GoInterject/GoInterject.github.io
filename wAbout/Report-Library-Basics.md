@@ -73,7 +73,7 @@ The selected link will open the following report.
 
 ![](/images/ReportLibraryBasics/image2017-6-16_13-50-21.png)
 
-**Note:** Reports are stored in Excel Reports, therefore the reports do not need to be  saved locally. When report updates are finished, simply press [ **Save Data** ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) from the INTERJECT ribbon menu, and the new changes will be saved back to the database. 
+**Note:** Reports are stored in Excel Reports, therefore the reports do not need to be  saved locally. When report updates are finished, simply press [ **Save Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) from the INTERJECT ribbon menu, and the new changes will be saved back to the database. 
 
 ![](/images/ReportLibraryBasics/image2017-8-7_9-53-27.png)
 
@@ -108,7 +108,7 @@ For how to add or change files in the Report Library, please check out [ Lab Cre
 
 [ Updating Interject ](/wAbout/Updating-INTERJECT.html)
 
-[ INTERJECT Ribbon Menu Items ](INTERJECT-Ribbon-Menu-Items.html)
+[ INTERJECT Ribbon Menu Items ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html)
 
 [ Real-World Walkthroughs ](/wAbout/Real-World-Walkthroughs.html)
 

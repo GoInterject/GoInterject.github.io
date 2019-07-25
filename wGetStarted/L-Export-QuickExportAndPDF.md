@@ -14,7 +14,7 @@ This method of distribution is the simplest. The purpose of Quick Export is to b
 
 Quick Export removes [ Data Cell ](/wAbout/Tabular-vs-Data-Cells.html) formulas and external links from a workbook so users without INTERJECT can view them.
 
-Take the report **PL Trend Report with Data Cells** from the [ Financial Walk-through ](/wAbout/Financial-Reports.html) as an example. It is shown below.
+Take the report **PL Trend Report with Data Cells** from the [ Financial Walk-through ](/wAbout/Financial-Report.html) as an example. It is shown below.
 
 ![](/images/L-Export-QuickExPDF/01.png)
 

@@ -38,7 +38,7 @@ You will start by setting up the titles of the sections that hold the different 
 
 For this report, you will need 5 different titled sections. Now that you have the color selected in your paint bucket click on every other row and then click on the paint bucket until you have 5 dark blue rows:
 
-![]/images/L-Dev-Report_from_Scratch/06.png
+![](/images/L-Dev-Report_from_Scratch/06.png)
 
 Now, name the title sections. You will need names: “Column Definitions,” “Formatting Range,” “Report Formulas,” “Hidden Parameters and Notes,” and “Report Area Below.”  You will enter “Column Definitions” and make it **white** and **bold** as follows:
 
