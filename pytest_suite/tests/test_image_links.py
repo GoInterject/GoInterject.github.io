@@ -33,9 +33,6 @@ def get_root_dir():
 def check_image_links_in_dir(root_folder):
     """ """
     passing = True
-    
-    # for directory in PageDirs:
-    #     print("Testing this directory: {}".format(directory))
 
     for folder in PageDirs:
         dir_path = os.path.join(root_folder, folder.value)
