@@ -13,3 +13,4 @@ Gemfile
 # python related ignores
 __pycache__/
 .pytest_cache/
+.cache/
