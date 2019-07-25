@@ -3,7 +3,7 @@ This test suite utilizes pytest to verify that the website meets criteria for a 
 
 
 # Setup
-Ensure pytest is install:
+Ensure pytest is installed:
 
 ```bash
 > pip install pytest
@@ -14,12 +14,12 @@ Ensure pytest is install:
 In the root directory of the website (i.e. gointerject.github.io) run the following command to verify tests for the site are passing
 
 ```bash
-> pytest -v
+> pytest
 ```
 
 
 To view tests with print statments for debugging run:
 
 ```bash
-> pytest -v --capture=no
+> pytest -v --capture=sys
 ```
