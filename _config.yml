@@ -88,4 +88,8 @@ sass:
 
 repository:
   GoInterject/gointerject
-  
+
+exclude:
+  - prodDeploy
+  - pytest_suite
+  - .cache
