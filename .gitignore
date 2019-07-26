@@ -9,6 +9,7 @@ Gemfile.lock
 .vscode/
 Gemfile
 _prodDeploy/
+_prodDeploy
 
 # python related ignores
 __pycache__/
