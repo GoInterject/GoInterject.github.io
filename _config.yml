@@ -88,4 +88,7 @@ sass:
 
 repository:
   GoInterject/gointerject
-  
+
+encoding:
+  UTF-8
+

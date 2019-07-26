@@ -36,6 +36,15 @@
 <html lang="en">
 
 <head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144663227-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-144663227-1');
+	</script>
+
 	<base href="{{ basehref }}" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -56,7 +65,7 @@
 			display: block;
 		}
 	</style>
-	
+	<script src="/js/polyfills.js"></script>
 	<!-- This is used to pass a global variable to switch the nav bar yml file. See toc.js for the logic -->
 	{% capture sitePath %}
 		{{page.url}} 

@@ -118,7 +118,7 @@ Now use Data Cells to replicate some of the present data. By having both data ge
 
 The example below illustrates how the [ jCell() ](/wIndex/jCell.html) function can be used to show totals for Actual in March 2002. 
 
-To open the function window, select the cell, click on [ jCellN ](/wIndex/jCellN.html) in the formula bar above the columns, then click the fx button to the left. 
+To open the function window, select the cell, click on jCellN in the formula bar above the columns, then click the fx button to the left. 
 
 ![](/images/Walkthrough-Financial/19.png)
 

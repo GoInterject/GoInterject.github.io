@@ -31,7 +31,7 @@ Once open, it should look like this:
   
 
 
-Now run the [ **Pull Data** ](/wPortal/INTERJECT-Ribbon-Menu-Items.html), which will pull the invoice data for all companies with the word **Market** in their name. 
+Now run the [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html), which will pull the invoice data for all companies with the word **Market** in their name. 
 
 ![](/images/L-Modify-CustAging/04.png)
 <br>

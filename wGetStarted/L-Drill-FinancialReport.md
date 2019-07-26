@@ -45,14 +45,14 @@ Continue setting up the drill formula.
   
 
 
-**Step 2:** In previous drill exercises you have used the ReportCellToRun argument. That is only for drilling within the same workbook. In this example you are drilling to a separate workbook. Type **Interject_JEQuery** into the ReportCodeToRun argument as seen below. The Drill Code **Interject_JEQuery** was setup previously by adding the code to a Report Library report. You will learn how to setup a Drill Code in the page [ Lab Create: Updating the Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary) later. 
+**Step 2:** In previous drill exercises you have used the ReportCellToRun argument. That is only for drilling within the same workbook. In this example you are drilling to a separate workbook. Type **Interject_JEQuery** into the ReportCodeToRun argument as seen below. The Drill Code **Interject_JEQuery** was setup previously by adding the code to a Report Library report. You will learn how to setup a Drill Code in the page [ Lab Create: Updating the Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary.html) later. 
 
 ![](/images/L-Drill-Financial/05.png)
 <br>
   
 
 
-**Step 3:** Next you will use the  TransferPairs argument to note which cell values in the source worksheet will be transferred to the target worksheet during the drill operation. To do this, use special functions to pair the source cells to the target cells. Type  [ **PairGroup(Pair())** ](/wIndex/81756186.html) in the TransferPairs argument to get it started. You will return to add more to this argument. 
+**Step 3:** Next you will use the  TransferPairs argument to note which cell values in the source worksheet will be transferred to the target worksheet during the drill operation. To do this, use special functions to pair the source cells to the target cells. Type  [ **PairGroup(Pair())** ](/wIndex/PairGroup.html) in the TransferPairs argument to get it started. You will return to add more to this argument. 
 
 ![](/images/L-Drill-Financial/06.png)
 <br>
@@ -166,7 +166,7 @@ When you click away from TransferPairs, it shows a red **#NAME** ? to the right 
 
 ###  Executing the Drill 
 
-**Step 1:** Use [ **Pull Data** ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) to pull the report. You can leave the panes open for the moment. They will not affect the drill feature. 
+**Step 1:** Use [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) to pull the report. You can leave the panes open for the moment. They will not affect the drill feature. 
 
 ![](/images/L-Drill-Financial/18.png)
 <br>
