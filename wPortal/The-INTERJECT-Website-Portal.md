@@ -31,16 +31,23 @@ The following lists are examples of connection strings for SQL Server:
 
   * Example .Net Adapter connection string: 
   
-  > Server=myServerAddress;Database=myDataBase;Trusted_Connection=True; 
+  > Server=myServerAddress;
+  > Database=myDataBase;
+  > Trusted_Connection=True; 
   
   * Example OLEDB connection string: 
   
-  > Provider=SQLNCLI11;Server=myServerAddress;Database=myDataBase; Trusted_Connection=yes; 
+  > Provider=SQLNCLI11;
+  > Server=myServerAddress;
+  > Database=myDataBase; 
+  > Trusted_Connection=yes; 
   
   * Example of an ODBC connection string: 
   
-  > Driver={SQL Server Native Client 11.0};Server=myServerAddress; 
-  > Database=myDataBase;Trusted_Connection=yes; 
+  > Driver={SQL Server Native Client 11.0};
+  > Server=myServerAddress; 
+  > Database=myDataBase;
+  > Trusted_Connection=yes; 
 
 
 
