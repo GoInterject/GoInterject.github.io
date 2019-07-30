@@ -82,6 +82,8 @@ install:
   - title: FRx Migration
     path: /bApps/bFinancials/FRxMigration.html
   - title: Security & Updates
+  - title: Moving From Test to Live
+    path: /bApps/bFinancials/Test2Live.html
 update:
   - title: Update Manager
     path: /bApps/bFinancials/Updates.html
@@ -91,8 +93,6 @@ configure:
     path: /bApps/bFinancials/Configure.html
   - title: FRx Catalog
     path: /bApps/bFinancials/FRxCatalog.html
-  - title: Moving From Test to Live
-    path: /bApps/bFinancials/Test2Live.html
    # section:
   #    - title: Setup Year Names
    #     path:
