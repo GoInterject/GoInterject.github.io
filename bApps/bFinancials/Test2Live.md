@@ -27,7 +27,7 @@ There are two options available when moving your Interject Financials report tem
 >
 > **Step 5:** After following the Data Connection Setup, do an initial smoke test on all the stock reports, checking for drill, pull, and save functionality.
 >
-> **Step 6:** Contact Interject Support to request that your custom reports be migrated from "Test" comapany **Report Library** to your new "Live" company.
+> **Step 6:** Contact Interject Support to request that your custom reports be migrated from "Test" company **Report Library** to your new "Live" company.
 >
 > **Step 7:** Review your Schedule to confirm Sync Jobs
 > ![](/images/Config/SchedulerReportLib.png){: .center-image }
