@@ -29,10 +29,25 @@ A Connection can be set up to connect directly to a database using a OLEDB or a 
 
 The following lists are examples of connection strings for SQL Server: 
 
-  * Example .Net Adapter connection string: Server=myServerAddress;Database=myDataBase;Trusted_Connection=True; 
-  * Example OLEDB connection string: Provider=SQLNCLI11;Server=myServerAddress;Database=myDataBase; Trusted_Connection=yes; 
-  * Example of an ODBC connection string: Driver={SQL Server Native Client 11.0};Server=myServerAddress; 
-  * Database=myDataBase;Trusted_Connection=yes; 
+  * Example .Net Adapter connection string: 
+  
+  > Server=myServerAddress;
+  > Database=myDataBase;
+  > Trusted_Connection=True; 
+  
+  * Example OLEDB connection string: 
+  
+  > Provider=SQLNCLI11;
+  > Server=myServerAddress;
+  > Database=myDataBase; 
+  > Trusted_Connection=yes; 
+  
+  * Example of an ODBC connection string: 
+  
+  > Driver={SQL Server Native Client 11.0};
+  > Server=myServerAddress; 
+  > Database=myDataBase;
+  > Trusted_Connection=yes; 
 
 
 
