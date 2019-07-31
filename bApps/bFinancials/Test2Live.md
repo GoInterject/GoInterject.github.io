@@ -50,7 +50,7 @@ This option involves installing an entirely new instance of Interject, as well a
 
 
 #### Re-Deploy From Scratch
-These steps repeats the Initial Install and Initial Data Load covered in the Install menu.  
+These steps repeat the Initial Install and Initial Data Load covered in the Install menu.  
 
 > To Do
 >
