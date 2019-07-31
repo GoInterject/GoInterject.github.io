@@ -4,9 +4,20 @@ layout: custom
 keywords: [Report, Epicor, Accounts]
 description: Step by step guide on converting reports in test environments to reports in live environments.
 ---
-There are two options available when moving your Interject Financials report templates and roll ups from a test environment to the live environment, where your users can interact with them.
+There are two options available when moving your Interject Financials report templates and rollups from a test environment to the live environment, where your users can interact with them.
+
+**Option 1:** [Moving the Entire Database](/bApps/bFinancials/Test2Live.html#option-1-moving-the-entire-database) – This option should only be used when "Live" and "Test" environment are the simler. Following criteria must be met:
+
+- [ ] Epicor test database(s) need to be snapshots of "Live". (Data in "Test" server can be older then what is on "Live") 
+- [ ] Epicor data on "Test" was not changed since the snapshot from "Live" 
+- [ ] All Epicor database(s) on “Live” should also be in “Test” 
+- [ ] SQL Server version and setup of “Test” should match “Live”
+
+**Option 2:** [Deploying A New Implementation from Scratch](/bApps/bFinancials/Test2Live.html#option-2-deploying-a-new-implementation-from-scratch) – This option will take more time, but it will be from scratch installation. The installation steps will mirror the initial deploy for “Test” server.  Additional steps will include transferring over rollups, templates and report from “Test” Company to “Live”.   
 
 ### Option 1: Moving the Entire Database
+
+This option goes through steps to restoring a backup of Interject_Reporting from "Test" to "Live" environment and connect the database so that imports and reporting work. Before using this option review requirement listed above. 
 
 > To Do
 >
@@ -39,6 +50,7 @@ This option involves installing an entirely new instance of Interject, as well a
 
 
 #### Re-Deploy From Scratch
+These steps repeats the Initial Install and Initial Data Load covered in the Install menu.  
 
 > To Do
 >
@@ -51,6 +63,8 @@ This option involves installing an entirely new instance of Interject, as well a
 > 
 
 #### Transfer Custom Rollups and Report Templates
+
+Will cover how to move Rollups, Templetes and Reports form "Test" company to "Live" company. 
 
 ##### Custom Rollups
 
