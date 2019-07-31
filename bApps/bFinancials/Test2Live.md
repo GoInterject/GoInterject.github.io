@@ -6,18 +6,18 @@ description: Step by step guide on converting reports in test environments to re
 ---
 There are two options available when moving your Interject Financials report templates and rollups from a test environment to the live environment, where your users can interact with them.
 
-**Option 1:** [Moving the Entire Database](/bApps/bFinancials/Test2Live.html#option-1-moving-the-entire-database) – This option should only be used when "Live" and "Test" environment are the simler. Following criteria must be met:
+**Option 1:** [Moving the Entire Database](/bApps/bFinancials/Test2Live.html#option-1-moving-the-entire-database) – This option should only be used when "Live" and "Test" environment are the similar. The following criteria must be met:
 
-- [ ] Epicor test database(s) need to be snapshots of "Live". (Data in "Test" server can be older then what is on "Live") 
+- [ ] Epicor test database(s) need to be snapshots of "Live". (Data in "Test" server can be older than what is on "Live") 
 - [ ] Epicor data on "Test" was not changed since the snapshot from "Live" 
 - [ ] All Epicor database(s) on “Live” should also be in “Test” 
 - [ ] SQL Server version and setup of “Test” should match “Live”
 
-**Option 2:** [Deploying A New Implementation from Scratch](/bApps/bFinancials/Test2Live.html#option-2-deploying-a-new-implementation-from-scratch) – This option will take more time, but it will be from scratch installation. The installation steps will mirror the initial deploy for “Test” server.  Additional steps will include transferring over rollups, templates and report from “Test” Company to “Live”.   
+**Option 2:** [Deploying A New Implementation from Scratch](/bApps/bFinancials/Test2Live.html#option-2-deploying-a-new-implementation-from-scratch) – This option will take more time, but it will be a from-scratch installation. The installation steps will mirror the initial deploy for a “Test” server.  Additional steps will include transferring rollups, templates, and reports from “Test” company to “Live”.   
 
 ### Option 1: Moving the Entire Database
 
-This option goes through steps to restoring a backup of Interject_Reporting from "Test" to "Live" environment and connect the database so that imports and reporting work. Before using this option review requirement listed above. 
+This option details the steps in restoring a backup of Interject_Reporting from a "Test" to a "Live" environment and connecting the database so it imports and reporting work. Before using this option review the requirement listed above. 
 
 > To Do
 >
@@ -46,7 +46,7 @@ This option goes through steps to restoring a backup of Interject_Reporting from
 >
 
 ### Option 2: Deploying A New Implementation From Scratch
-This option involves installing an entirely new instance of Interject, as well as completing a new Initial Data Load. Once those are complete, you will have to manually "transfer" your Custom Rollups and Custom Reports from test to live environments.
+This option involves installing an entirely new instance of Interject, as well as completing a new Initial Data Load. Once those are complete, you will have to manually "transfer" your Custom Rollups and Custom Reports from "Test" to "Live" environments.
 
 
 #### Re-Deploy From Scratch
@@ -64,7 +64,7 @@ These steps repeat the Initial Install and Initial Data Load covered in the Inst
 
 #### Transfer Custom Rollups and Report Templates
 
-Will cover how to move Rollups, Templetes and Reports form "Test" company to "Live" company. 
+This details the transfer of Rollups, Templetes, and Reports from the "Test" company to the "Live" company. 
 
 ##### Custom Rollups
 
