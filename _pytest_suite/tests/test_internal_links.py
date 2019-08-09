@@ -47,6 +47,7 @@ def check_internal_links_in_dir(root_folder):
             with open(file_path, "r", encoding="utf-8") as file_handle:
                 file_str = file_handle.read()
 
+                #excludes anchor links
                 locUrls = [link.split(")")[0] 
                     for link in file_str.split("](")
                         if ".png" not in link
@@ -60,16 +61,16 @@ def check_internal_links_in_dir(root_folder):
                 locUrlsMD = [locUrl.replace('.html', '.md') for locUrl in locUrls]
                 
                 
-                locAnchorUrls = [link.split(")")[0]
-                    for link in file_str.split("](")
-                        if ".png" not in link
-                        if ".jpg" not in link
-                        if ".gif" not in link
-                        if "https" not in link
-                        if ".com" not in link
-                        if "images" not in link
-                    ][1:]
-                filteredLocAnchorUrls = filter(lambda x: '#' in x, locAnchorUrls)
+                # locAnchorUrls = [link.split(")")[0]
+                #     for link in file_str.split("](")
+                #         if ".png" not in link
+                #         if ".jpg" not in link
+                #         if ".gif" not in link
+                #         if "https" not in link
+                #         if ".com" not in link
+                #         if "images" not in link
+                #     ][1:]
+                # filteredLocAnchorUrls = filter(lambda x: '#' in x, locAnchorUrls)
 
                 for locUrlMD in locUrlsMD:
 
@@ -79,10 +80,6 @@ def check_internal_links_in_dir(root_folder):
 
                     else:
                         locUrlMD = "\\".join(locUrlMDList)
-                        
-                        # dir_path_par = dir_path.split('\\')
-                        # del dir_path_par [-1]
-                        # dir_path_new = "\\".join(dir_path_par)
                         
                         currentDirectory = root_folder + locUrlMD
                         print("Checking... >>>" + currentDirectory)
@@ -97,8 +94,6 @@ def check_internal_links_in_dir(root_folder):
                         prRed("\n>>> END ERROR MSG")
                         return passing
                 
-                # for filteredLocAnchorUrl in filteredLocAnchorUrls:
-                #     print (">>local Anchor URL: {}".format(filteredLocAnchorUrl)) 
     return passing
 
 
