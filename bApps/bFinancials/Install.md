@@ -5,11 +5,11 @@ keywords: [Report, Epicor, Accounts]
 description: Step by step guide on data tier, initial data load, FRx Migration, and other key processes of installing of Interject for Financials Epicor.
 ---
 
-Before installing Interject Financials - Epicor, you will need to request an invite at the [Interject Portal Site](http:https://https://portal.gointerject.com). Fill out every field fo the invite request form and click "Create and Account". The Interject team will review and grant access to the Interject Platform.
+Before installing Interject Financials - Epicor, you will need to request an invite at the [Interject Portal Site](https://portal.gointerject.com). Fill out every field fo the invite request form and click "Create and Account". The Interject team will review and grant access to the Interject Platform.
 
 After gaining access as a new company, there are three parts to installing Interject Financials - Epicor. First is the initial data tier install, then the data load from Epicor and FRx, then the actual report configurations in the Interject application. 
 
-\(Before installing Interject for Financials, check that your system meets all requirements noted in the [Product Sheet](http:https://docs.gointerject.com/bApps/bFinancials/Epicor-Financials.html).
+\(Before installing Interject for Financials, check that your system meets all requirements noted in the [Product Sheet](https://docs.gointerject.com/bApps/bFinancials/Epicor-Financials.html).
 
 ### Data Tier Install
 
