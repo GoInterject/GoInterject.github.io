@@ -7,9 +7,9 @@ description: The jDropdown formula is used for filtering on multiple parameters.
 
 ### Overview
 
-The jDropdown formula simplifies the use of filters in a report by building a list of all the inputs that can be used with an individual filter. This method refines the options that a user can input into the filters and gives them options to choose from rather than leaving the filter inputs open ended. It is important to utilize this formula in large reports to assist in determining what data is most relevant to return when pulling the report. In this lab you will modify the [Customer Aging report](/wGetStarted/L-Create-CustomerAging.html) by adding the jDropdown functionality to one of the filters, while using an existing data portal. 
+The jDropdown formula simplifies filtering in a report by building a list of all the inputs that can be used with an individual filter. This method limits the user's filter options to a pre-defined list rather than leaving the filter inputs open ended. It also allows you to turn the parameter labels into hyperlinks, which when clicked open a searchable list of filter option designated by the report writer. The jDropdown formula becomes useful in large reports to help pull in only that that is relevant. In this lab you will modify the [Customer Aging report](/wGetStarted/L-Create-CustomerAging.html) by adding the jDropdown functionality to one of the filters, while using an existing data portal. 
 
-> **IMPORTANT:** The jDropdown feature requires a stored procedure to operate. In the event that you cannot create a stored procedure, you can reuse a data portal from the report formula that populates the data of the report you are trying to implement this feature on. To learn how to build the database connection, dataportal as well as the stored procedure used in this example, follow the instructions in the [developer lab](/wGetStarted/L-Dev-jDropdowns.html). Otherwise contact your IT department to help implement this functionality to your reports.
+> **IMPORTANT:** The jDropdown feature requires a stored procedure to operate. In the event that you cannot create a stored procedure, you can reuse a data portal from the report formula that populates the report in which you want to use this feature. To learn how to build the database connection, dataportal, and stored procedure used in this example, follow the instructions in the [developer lab](/wGetStarted/L-Dev-jDropdowns.html). Otherwise contact your IT department to help implement this functionality.
 
 ### Preparing the Report
 
@@ -17,7 +17,6 @@ The jDropdown formula simplifies the use of filters in a report by building a li
 
 ![](/images/L-Create-Dropdowns/01.png)
 
-This will open the Customer Aging Summary Report. 
 
 **Step 2:** Next, unfreeze panes by going into [ **Quick Tools** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) and selecting **Freeze/Unfreeze Panes**.
 
@@ -40,7 +39,7 @@ This will open the Customer Aging Summary Report.
 
 ![](/images/L-Create-Dropdowns/05.png)
 
-**Note:** A named range is used here so that upon the movement of formula, the hyperlink that is created later on will always reference the cell with the jDropdown() formula in it.
+**Note:** A named range is used here so that upon the movement of the formula, the hyperlink that is created later will still reference the cell with the jDropdown() formula.
 <br>
 
 ### Creating the Formula
@@ -66,17 +65,17 @@ This will open the Customer Aging Summary Report.
 <br>
 
 
-**Step 5:** Scroll down in the function arguments, then in the **Display Column Name** argument field insert **DisplayText**.
+**Step 5:** Scroll down in the function arguments untill you see the **Display Column Name** argument field and insert **DisplayText**.
 
 ![](/images/L-Create-Dropdowns/10.png)
 <br>
 
-**Step 6:** Next, scroll down in the function arguments, then in the **Instruction Text** argument field input **Select A Customer**.
+**Step 6:** Next, scroll down in the function arguments to find the **Instruction Text** argument field and input **Select A Customer**.
 
 ![](/images/L-Create-Dropdowns/11.png)
 <br>
 
-> **IMPORTANT:** The Value Column Name and the Display Column Name arguments must be an exact match to the name of a column that is returned by the stored procedure. A good place to look for valid columns is in the Column Definitions section of the report. To learn more about the jDropdown() function and what each of its arguments do, review its [index page](/wIndex/jDropdown.html).
+> **IMPORTANT:** The Value Column Name and the Display Column Name arguments must exactly match the name of a column that is returned by the stored procedure. A good place to look for valid columns is in the Column Definitions section of the report. To learn more about the jDropdown() function and what each of its arguments do, review its [index page](/wIndex/jDropdown.html).
 
 ### Adding a Special Hyperlink
 
