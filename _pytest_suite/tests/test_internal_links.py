@@ -2,7 +2,6 @@ from enum import Enum
 import os
 import logging
 
-
 class PageDirectories(Enum):
     WABOUT = "wAbout"
     WGETSTARTED = "wGetStarted"
