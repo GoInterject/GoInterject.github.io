@@ -75,6 +75,8 @@ The Database Data Connection is now ready to be used in a Data Portal. You shoul
 
 ### Creating the Stored Procedure
 
+Open up a text editor of your choice. This lab will use [SSMS](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017) to execute the code, but again, you can use whichever you prefer. You will be creating this stored procedure on the database you created the [data connection](/wGetStarted/L-Dev-jDropdowns.html#setting-up-the-data-connection) for.
+
 **Step 1:** Create a stored procedure called [demo].[Northwind_CustomerDropdown] using the following code example. 
 
 <button class = "collapsible"> \[demo\].\[Northwind_CustomerDropdown\] </button>
