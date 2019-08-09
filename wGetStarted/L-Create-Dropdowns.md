@@ -1,157 +1,115 @@
 ---
-title: "Lab Create Parameter Dropdowns"
+title: "Lab Create: jDropdown"
 layout: custom
 keywords: [jDropdown, function]
-description: The jDropdown formula is used for filtering on multiple parameters at once.
+description: The jDropdown formula is used for filtering on multiple parameters.
 ---
 
 ### Overview
 
-The jDropdown formula helps developers simplify the use of parameters in a data pull or save. It can reduce the rows of data in a report, speeding the report process, sparing server resources, and pulling data more efficiently. 
+The jDropdown formula simplifies the use of filters in a report by building a list of all the inputs that can be used with an individual filter. This method refines the options that a user can input into the filters and gives them options to choose from rather than leaving the filter inputs open ended. It is important to utilize this formula in large reports to assist in determining what data is most relevant to return when pulling the report. In this lab you will modify the [Customer Aging report](/wGetStarted/L-Create-CustomerAging.html) by adding the jDropdown functionality to one of the filters, while using an existing data portal. 
 
-###  Setting Up The Data Connection
+> **IMPORTANT:** The jDropdown feature requires a stored procedure to operate. In the event that you cannot create a stored procedure, you can reuse a data portal from the report formula that populates the data of the report you are trying to implement this feature on. To learn how to build the database connection, dataportal as well as the stored procedure used in this example, follow the instructions in the [developer lab](/wGetStarted/L-Dev-jDropdowns.html). Otherwise contact your IT department to help implement this functionality to your reports.
 
-**Step 1:** Navigate to [ https://portal.gointerject.com ](https://portal.gointerject.com) and log in. Set up a data connection by clicking the **Data Connections** icon. 
+### Preparing the Report
 
-![](/images/L-Dev-CustAging/01.jpg)
+**Step 1:** Open the report **INTERJECT Customer Collections** under the INTERJECT Demos in the [ Report Library ](/wAbout/Report-Library-Basics.html). 
+
+![](/images/L-Create-Dropdowns/01.png)
+
+This will open the Customer Aging Summary Report. 
+
+**Step 2:** Next, unfreeze panes by going into [ **Quick Tools** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) and selecting **Freeze/Unfreeze Panes**.
+
+![](/images/L-Create-Dropdowns/02.png)
 <br>
 
-**Step 2:** On the Data Connections page, click the **New Connection** button. 
+### Adding a Named Range
 
-![](/images/L-Dev-CustAging/02.jpg)
+**Step 1:** Now select the **Formulas** ribbon tab and select **Name Manager**. 
+
+![](/images/L-Create-Dropdowns/03.png)
 <br>
 
-**Step 3:** In the Connection Type field, verify that **Database** is selected. 
-
-![](/images/L-Dev-CustAging/03.jpg)
-<br>
-
-**Step 4:** The Connection Details page needs to contain the following information for the new connection: Type **NorthwindExampleDB_MyName** in Connection Name, but include your own name in the suffix. Each connection name must be unique. For the connection string, type **Server=myServerAddress;Database=myDataBase;Trusted_Connection=True;**. You are using Windows authentication, so username and password are not required. Make sure the server name and database name match the ones you are using for this walkthrough. 
-
-![](/images/L-Dev-CustAging/04.jpg)
-<br>
-  
-**Step 5:** In the Description field, include details about how the data connection will be used. 
-
-![](/images/L-Dev-CustAging/05.jpg)
-<br>
-
-**Step 6:** Click the Save button to create the new data connection. 
-
-![](/images/L-Dev-CustAging/06.jpg)
-<br>
-
-The Database Data Connection is now ready to be used in a Data Portal. You should always test a new connection with your security context. Follow the steps in the [ Data Connections ](/wPortal/Data-Connections.html) walkthrough to test your connection string. 
-
-### Setting up the Data Portal
-
-**Step 1:** To add a new data portal, return to [ https://portal.gointerject.com  ](https://portal.gointerject.com) and select Data Portals from the sidebar menu. 
-
-![](/images/L-Dev-CustAging/07.jpg)
-<br>
-
-**Step 2:** Select New Data Portal. 
-
-![](/images/L-Dev-CustAging/08.jpg)
-<br>
-
-**Step 3:** Type **NorthwindCustomersDropdown_MyName** for the Data Portal Code. Since this field must be unique, add your name to the suffix. Select the connection that was made in the previous step, **NorthwindExampleDB_MyName**. Also enter a name for the stored procedure **\[demo\].\[Northwind_CustomerDropdown\]**, which will be created later. 
+**Step 2:** Next, select **New...**.
 
 ![](/images/L-Create-Dropdowns/04.png)
 <br>
 
-**Step 4:** Click **Create Data Portal** to save the new data portal. Additional options for adding parameters will show after selecting the Create Data Portal button. 
+**Step 3:** For the **Name:** field input **CompanyNameDDL**, and in the **Refers to:** field input **=CustomerAging!$H$7** 
 
 ![](/images/L-Create-Dropdowns/05.png)
-<br>
 
-**Step 5:** To add your first formula parameter, click **Click here to add a Formula Parameter**. For this parameter, enter **Filter** for Name, **varchar** for Type, and **input** for Direction to input, as shown below. 
-
-![](/images/L-Create-Dropdowns/06.png)
-
+**Note:** A named range is used here so that upon the movement of formula, the hyperlink that is created later on will always reference the cell with the jDropdown() formula in it.
 <br>
 
 ### Creating the Formula
 
-**Step 1:** Open the report **INTERJECT Customer Collections** under the INTERJECT Demos in the [ Report Library ](/wAbout/Report-Library-Basics.html). 
+**Step 1:** Next, in cell H7 insert **=jDropdown()** then select **fx**
 
-![](/images/Walkthrough-CustAging/01.png)
+![](/images/L-Create-Dropdowns/06.png)
+<br>
 
-This will bring up the Customer Aging Summary. 
-
-![](/images/Walkthrough-CustAging/02.png)
-
-**Step 2:** First, right click each hyperlinked paramter in the report, and then choose "Remove Hyperlink."
-
-![](/images/L-Create-Dropdowns/RemoveHyperlinks.png)
-
-**Step 3:** Next, unfreeze panes by going into [ Quick Tools ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) and selecting **Freeze/Unfreeze Panes**.
+**Step 2:** For the DataPortal argument field, input **NorthwindCustomersDropdown**.
 
 ![](/images/L-Create-Dropdowns/07.png)
 <br>
 
-**Step 4:** Delete the existing jDropDown formulas from cells C7, C8, and C9. You will be rebuilding these formulas from scratch, so we have to remove them from this report.
-
-![](/images/L-Create-Dropdowns/RemovejDropDown.png)
-
-**Step 5:** Now create a new report formula. In cell F7 type [ **=jDropdown()** ](/wIndex/jDropdown.html). 
+**Step 3:** For the **MultiSelect** argument field, input **False**. Then for the **Target Cell** Argument field, input **C17**.
 
 ![](/images/L-Create-Dropdowns/08.png)
 <br>
 
-**Step 4:** Next, select the **DataPortal** argument section, and using a [jDataPortal](/wIndex/jDataPortal.html) insert **"jDataPortal(NorthwindCustomersDropdown_MyName,1)"**.
+**Step 4:** In the **Value Column Name** argument field, insert **CompanyName**.
 
-![](/images/L-Create-Dropdowns/09.jpg)
+![](/images/L-Create-Dropdowns/09.png)
 <br>
 
-**Step 7:** For this example, there are no parameters. Select **MultiSelect** and type **FALSE**. Then, in **Target Cell**, type **C17**. 
 
-![](/images/L-Create-Dropdowns/10.jpg)
+**Step 5:** Scroll down in the function arguments, then in the **Display Column Name** argument field insert **DisplayText**.
+
+![](/images/L-Create-Dropdowns/10.png)
 <br>
 
-**Step 8:** Scroll down to **Value Column Name** and **Display Column Name** and input **CompanyName** and **DisplayText** respectively.
+**Step 6:** Next, scroll down in the function arguments, then in the **Instruction Text** argument field input **Select A Customer**.
 
-![](/images/L-Create-Dropdowns/11.jpg)
+![](/images/L-Create-Dropdowns/11.png)
 <br>
 
-**Step 9:** Scroll to the bottom of the function wizard and select the **Instruction Text** argument. Type **Select a Customer**. Then click **OK** to confirm the changes.
+> **IMPORTANT:** The Value Column Name and the Display Column Name arguments must be an exact match to the name of a column that is returned by the stored procedure. A good place to look for valid columns is in the Column Definitions section of the report. To learn more about the jDropdown() function and what each of its arguments do, review its [index page](/wIndex/jDropdown.html).
 
-![](/images/L-Create-Dropdowns/12.jpg)
+### Adding a Special Hyperlink
+
+**Step 1:** Now select cell **B17** and right click. Then select the **Link** option in the menu.
+
+![](/images/L-Create-Dropdowns/12.png)
 <br>
 
-**Step 10:** While still selected on cell F7. Click on **Name Box** and change the name to **compDLL**
-
-![](/images/L-Create-Dropdowns/12.5.png)
-<br>
-
-**Step 11:** Right click cell B17 where the text **Company Name** is located. Then select **Hyperlink** to create a hyperlink.
+**Step 2:** Click on **Place in This Document** then select the **CompanyNameDDL** defined name in the list of options. Then select the **ScreenTip...** button.
 
 ![](/images/L-Create-Dropdowns/13.png)
 <br>
 
-**Step 12:** Click on **Place in This Document** and point the **Defined Names** to the [jDropdown()](/wIndex/jDropdown.html). In this case, it is in cell **compdll**.
+**Step 3:** In the **ScreenTip text:** field input **Interject Dropdown**. 
 
 ![](/images/L-Create-Dropdowns/14.png)
 <br>
 
-**Step 13:** Select **ScreenTip**. Then, in the textbox, type **Interject Dropdown**. Select **OK** in both open windows to save the hyperlink.
+
+### Reviewing the Report Changes
+
+**Step 1:** Now select the hyperlink you just made and type **Market** into the search options. Notice that there are 4 options. Select **BOTTM - Bottom-Dollar Markets**.
 
 ![](/images/L-Create-Dropdowns/15.png)
 <br>
 
-**Step 14:** Now select the hyperlink you just made and type **Market** into the search options. Notice that there are 4 options. Select **BOTTM - Bottom-Dollar Markets**.
+**Step 2:** **Pull** the report.
 
 ![](/images/L-Create-Dropdowns/16.png)
 <br>
-
-**Step 15:** Now that a Company has been selected, **Pull** the report.
+**Step 3:** The pull will only return the **Bottom-Dollar Markets** data.
 
 ![](/images/L-Create-Dropdowns/17.png)
 <br>
 
-**Step 16:** The pull will only return the **Bottom-Dollar Markets** data.
-
-![](/images/L-Create-Dropdowns/18.png)
-<br>
-
-To build the stored procedure that allows this formula to work, continue to the [developer section of this lab](/wGetStarted/L-Dev-jDropdowns.html).
+To build the stored procedure and dataportal, and database connection that allows this formula to work, continue to the [developer section of this lab](/wGetStarted/L-Dev-jDropdowns.html).
