@@ -9,11 +9,22 @@ description: This is a walkthrough on how to make the Interject pop-up windows t
 
 At some screen resolutions, INTERJECT'S form window poo-ups can be small and sometimes difficult to read. Luckily, there is a way to quickly resize form windows, helping make them easier to read. You'll have the option to apply resizing to all sizable windows, or just the individual window you currently have open.
 
+### Reference
+
 The button to resize windows can be found in the same location in every window and looks like this:
 
-It will open a menu of defaults sizes that you can choose from.
+![](/images/Resizing-Form-Windows/0.7.png)
+<br>
+
+It will open a menu of default sizes that you can choose from when you click on it.
+
+![](/images/Resizing-Form-Windows/0.8.png)
+<br>
 
 You can also choose a custom sizing within a range of 75%-200% magnification.
+
+![](/images/Resizing-Form-Windows/0.9.png)
+<br>
 
 ### Tutorials
 
