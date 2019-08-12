@@ -1,5 +1,5 @@
 ---
-title: Resizing form text
+title: Resizing Form Text
 layout: custom
 keywords: [resize, forms, text resize, make text bigger]
 description: This is a walkthrough on how to make the Interject pop-up windows text larger
