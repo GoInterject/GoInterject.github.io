@@ -9,9 +9,18 @@ description: This is a walkthrough on how to make the Interject pop-up windows t
 
 At some screen resolutions, INTERJECT'S form window po-ups can be small and sometimes difficult to read. Luckily, there is a way to quickly resize form windows, helping make them easier to read. You'll have the option to apply resizing to all sizable windows, or just the individual window you currently have open.
 
-### Resizing Individual Windows
+The button to resize windows can be found in the same location in every window and looks like this:
 
-IFirst, we'll resize just the window that opens when you click on the PULL Data button in the INTERJECT ribbon. The process is the same for all other INTERJECT windows that can be resized. 
+It will open a menu of defaults sizes that you can choose from.
+
+You can also choose a custom sizing within a range of 75%-200% magnification.
+
+### Tutorials
+
+<button class="collapsible">Resizing Individual Windows Walk-through</button>
+<div markdown="1" class="panel">
+
+First, we'll resize just the window that opens when you click on the PULL Data button in the INTERJECT ribbon. The process is the same for all other INTERJECT windows that can be resized. 
 
 **Step 1:** Open Excel to a blank workbook.
 
@@ -58,9 +67,10 @@ Your window will now be between the small size and the medium size, as shown bel
 
 ![](/images/Resizing-Form-Windows/08.png)
 <br>
+</div>
 
-
-### Resizing All Windows
+<button class="collapsible">Resizing All Windows Walk-through</button>
+<div markdown="1" class="panel">
 
 In addition to sizing individual windows, INTERJECT allows you to use the current window view size to set all the other INTERJECT window sizes. This will allows you to apply the size you like to all pop-up windows.
 
@@ -98,3 +108,4 @@ You will notice that your window opened with the medium size, as shown below:
 
 ![](/images/Resizing-Form-Windows/11.png)
 <br>
+</div>
