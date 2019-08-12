@@ -44,8 +44,9 @@ Creating drills, it is possible to generate a simple suite of reports that enabl
 
 ReportHideRowsOrColumns() is a function that allows you to hide both rows and columns when not needed. In this example, you will begin with hiding columns L, M, N, and O. To practice there is a file below that has been specifically prepared for this formula. 
 
-  
+### [ Lab Create: Building jDropdowns ](/wGetStarted/L-Create-Dropdowns.html)
 
+When manually entering different filter values, it can be difficult to remember what the exact filter names are and which are even available. This is especially true in large reports with many filtering options. However, you can use Interject’s jDropdown formula to automatically create hyperlinked lists of available filters, which makes filtering in large reports a much simpler task. 
 
 ###  [ Lab Create: Working with Pivot Tables ](/wGetStarted/L-Create-PivotTable.html)
 
@@ -63,11 +64,15 @@ To use it, navigate to the INTERJECT ribbon and click on the  **Sheet Protector*
 
 ###  [ Lab Create: Using the Retained Feature ](/wGetStarted/L-Create-RetainFeature.html)
 
-Coming soon 
+When using INTERJECT to pull data into your spreadsheet, the report area will be cleared before new data is inserted. In some situations, you may want to bypass the clear action and retain some formulas, since pulling could remove formulas you have on other columns related to certain data rows.
 
-###  [ Lab Create: Updating the Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary)
+###  [ Lab Create: Updating the Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary.html)
 
 The Report Library is how you share reports with other users while tracking versions for internal audit controls. Report Library is a simple and easy-access center for sharing interactive spreadsheet reports and applications to your entire organization. 
+
+### [ Lab Create: INTERJECT Run On Open](/wGetStarted/L-Create-RunOnOpen.html)
+
+Some reports require default values, settings, or have summary pages that must be pulled before others in order for the report to function properly. Using the Run on Open INTERJECT property will auto-run the first tab that appears. 
 
 ###  [ Exporting Reports ](/wGetStarted/Exporting-Reports.html)
 
