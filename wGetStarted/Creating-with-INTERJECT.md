@@ -4,9 +4,7 @@ layout: custom
 keywords: [create, reports, basic, publishing]
 description: This section is for report writers who need to create or modify reports. You will run through basic modification, creation, and publishing of reports.
 ---
-
-  
-
+***
 
 ##  **Creating with INTERJECT**
 
