@@ -9,21 +9,49 @@ description:
 
 **Purpose**: This is the primary tool used for managing Budgets. This tool can be downloaded and customized in your local environment.
 
-**Filter Options**:
+## Filters
+### Template Setup
+The following filters are used to setup the template.  These filters will be hidden after the first time data is pulled for this report.  They will determine from where intial data is pulled and at what level the district will be budgeted at.
+
+![](/images/WCNTraining/Budget/FilterOptions1.png)
+
+
+#### Build Based On 
+*Required*. Drop-down filter includes *Retain User Input*, *Last Saved/Upload*, *Base Year* and "Reset(Clear All Data)". This parameter control the data is pull and what is cleared on a pull in the **YYYY Budget Input** seciton.
+
+![](/images/WCNTraining/Budget/FilterOptions_BuildBaseOn.png)
+
+* **Retain User Input** - After the intial run/pull **Build Based On** parameter will automatically be set to *Retain User Input*, to preserve your file changes.  Will not override user formulas and values in the  **YYYY Budget Input** section.  This is the default parameter after intial run/pull.    
+* **Last Saved/Upload** - Will bring the last saved amounts into the  **YYYY Budget Input** section. It will replace and/or clear values and formulas not saved. 
+* **Base Year** - Will bring the "Base Year" amounts same as in the **YYYY Actuals & Projections** section into the  **YYYY Budget Input** section. It will replace and/or clear any values and formulas not saved. 
+* **Reset (Clear All Data)** - Will clear all data related to the distict including budget user input section. When running this option select the "Clear" option in the "Pull Datal Control" window. 
+ 
+#### Account Level 
+
+*Required*. Used in the pull. Drop-down filter includes *Summary (xxxxx)* and *Full GL Account (xxxxx-xxx-xx)*.  This filter determines the default account level that the detail is summarized at. 
+
+![](/images/WCNTraining/Budget/FilterOptions_AccountLevel.png)
+
+* **Summary (xxxxx)** will summarize detail at the natural account level. 
+* **Full GL Account (xxxxx-xxx-xx)** will show Account, System and Sub-System. 
+
+#### Required
+
+All other filter can be left as defaulted however user must indicate **District** and the **Budget Year**.  
+
+![](/images/WCNTraining/Budget/FilterOptions2.png)
 
 * **District** - *Required*. Individual district. Cannot use district ranges or groupings
-* **YYYY-MM** - *Required*. Needs to be in YYYY-MM format
-* **Currency** - *Optional*. Blank defaults to your home district currency. Other options are USD and CAD.
+* **Budget Year** - *Required*. Year that is currently being budgeted for.
 * [ **Base Year** ](#base-year-and-fincube) - *Required*. Used in the pull. Drop-down filter ranges from *Aug Proj -> Dec Act*<br><br>
-[ *Retain Rows - Related Parameters (used in the pull)* ](#retain-rows-and-how-it-works)
-* **Retain Rows** - *Required*. Drop-down filter includes *Yes*, *No-Show Last Saved*, *No-Show Prior Bud*. If *Yes*, the Input columns will not clear on the pull.
-* **Retain Comments** - *Required*. Drop-down filter includes *Yes* and *No*. If *Yes*, pulling on the report will not clear comments not yet saved to the database.
-* **Insert at End** - *Required*. Drop-down filter includes *Yes* and *No*. If *Yes* and **Retain Rows** is also *Yes*, then new accounts get added at the bottom of their grouping.<br><br>
-[ *Summary and Detail Accounts - Related Parameters* ](#summary-and-detail-level-accounts)
-* **Insert By Full Acct** - *Required*. Used in the pull. Drop-down filter includes *Yes* and *No*. For *No*, new accounts are aggregated at the summary level and dropped in.
-* **Zero Out Missing Accts** - *Required*. Used in the save. Drop-down filter includes *Yes* and *No*. For *Yes*, accounts missing from the template are zeroed out. For *No*, missing accounts will keep their amounts, and any Summary level accounts are offset to include the missing accounts automatically.
 
-![](/images/WCNTraining/Budget/BudgetTemplate_FullView.png)
+#### Additional:
+
+![](/images/WCNTraining/Budget/FilterOptions3.png)
+
+* **Retain Comments** - *Required*. Drop-down filter includes *Yes* and *No*. If *Yes*, pulling on the report will not clear comments not yet saved to the database.
+* **Currency** - *Optional*. Blank defaults to your home district currency. Other options are USD and CAD.
+* **Insert at End** - *Required*. Drop-down filter includes *Yes* and *No*. If *Yes* and **Retain Rows** is also *Yes*, then new accounts get added at the bottom of their grouping.<br><br>
 
 ## Input Field Explanations
 
@@ -37,19 +65,10 @@ If we change the **Base Year** to *Aug Act*, August will pull in as Actual inste
 
 ![](/images/WCNTraining/Budget/BudgetTemplate_BaseYear02.png)
 
-### Retain Rows and how it works
 
-With **Retain Rows** on *Yes*, any inputs in the Input columns will remain when the template is refreshed, or even if the report is cleared. If it is *No*, the Input columns will copy either the Budgets saved to the current Budget Year or last Year' (depending on the alternative option).
+## How Templates Work
 
-For an example with **Retain Rows** *Yes*, the screenshot below shows a formula used on the *50020-600-00* account.
-
-![](/images/WCNTraining/Budget/BudgetTemplate_RetainRowsBeforeClear.png)
-
-We clear the report, and afterwards we see that not only have all of the rows remain, but the formula is still there.
-
-![](/images/WCNTraining/Budget/BudgetTemplate_RetainRowsAfterClear.png)
-
-The **Retain Comments** on *Yes* will keep any comments saved in the template, even if there are different comments saved in the database.
+When coming into the template users will have the option to set the starting point by selecting how data is popuated into **YYYY Budget Inputs** and the Account Level at which the detail is populated. Once the report is pulled these filter options will no longer be avalible. 
 
 If a new account is added to the Template with **Retain Rows** set to *Yes*, the setting for **Insert at End** dictates whether the account gets placed normally, in order, or gets inserted at the end.
 
@@ -57,12 +76,7 @@ For example, if *50045-600-00* is added to the Template while **Insert at End** 
 
 ![](/images/WCNTraining/Budget/BudgetTemplate_InsertAtEndNo.png)
 
-Otherwise if **Insert at End** is set to *Yes*, the added account is at the bottom. Use this if you use formulas, so that newly added accounts do not interfere with them.
 
-![](/images/WCNTraining/Budget/BudgetTemplate_InsertAtEndYes.png)
-
->**Things to Remember**
->* After the first pull, **Retain Rows** will automatically be set to *Yes*, to preserve your file changes.
 
 ### Summary and Detail level accounts
 
