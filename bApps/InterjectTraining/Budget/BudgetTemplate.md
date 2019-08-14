@@ -11,7 +11,7 @@ description:
 
 ## Filters
 ### Template Setup
-The **Build Based On** and **Account Level** filters are used to set up the template. They determine where intial data is pulled from and at what level the district will be budgeted. Once data is pulled, filters will be hidden from the report. 
+The **Build Based On** and **Account Level** filters are used to set up the template. They determine where initial data is pulled from and at what level the district will be budgeted. Once data is pulled, filters will be hidden from the report. 
 
 ![](/images/WCNTraining/Budget/FilterOptions1.png)
 
@@ -21,21 +21,21 @@ The **Build Based On** and **Account Level** filters are used to set up the temp
 
 ![](/images/WCNTraining/Budget/FilterOptions_BuildBaseOn.png)
 
-* **Retain User Input** - After the intial run/pull, the **Build Based On** parameter will automatically be set to *Retain User Input*, preserving any file changes. Values in the  **YYYY Budget Input** section and formulas entered by the user will not be overridden. This is the default parameter after an intial run/pull.    
+* **Retain User Input** - After the initial run/pull, the **Build Based On** parameter will automatically be set to *Retain User Input*, preserving any file changes. Values in the  **YYYY Budget Input** section and formulas entered by the user will not be overridden. This is the default parameter after an initial run/pull.    
 * **Last Saved/Upload** - This will bring the last saved amounts into the  **YYYY Budget Input** section. It will replace and/or clear values and formulas that haven't been saved. 
 * **Base Year** - This will bring in the "Base Year" amounts just as the **YYYY Actuals & Projections** section does into the  **YYYY Budget Input** section. It will replace and/or clear any values and formulas that haven't been saved. 
 * **Reset (Clear All Data)** - This will clear all data related to the distict, including from the budget user input section. When running this option, select "Clear" in the "Pull Datal Control" window. 
  
 #### Account Level 
 
-*Required*. Used in pulling data ti determine the default account level at which the detail is summarized. The drop-down filter includes the choice of *Summary (xxxxx)* or *Full GL Account (xxxxx-xxx-xx)*. 
+*Required*. Used in pulling data to determine the default account level at which the detail is summarized. The drop-down filter includes the choice of *Summary (xxxxx)* or *Full GL Account (xxxxx-xxx-xx)*. 
 
 ![](/images/WCNTraining/Budget/FilterOptions_AccountLevel.png)
 
 * **Summary (xxxxx)** will summarize detail at the natural account level. 
 * **Full GL Account (xxxxx-xxx-xx)** will show Account, System, and Sub-System. 
 
-#### Other Required Filters 
+### Other Required Filters 
 
 The following additional *required* and *optional* filters are described below:  
 
@@ -45,7 +45,7 @@ The following additional *required* and *optional* filters are described below:
 * **Budget Year** - *Required*. The year currently being budgeted for.
 * [ **Base Year** ](#base-year-and-fincube) - *Required*. Used in the pull. The drop-down filter ranges from *Aug Proj -> Dec Act*<br><br>
 
-#### Additional:
+### Additional Filters
 
 ![](/images/WCNTraining/Budget/FilterOptions3.png)
 
@@ -83,7 +83,7 @@ For example, if *50045-600-00* is added to the Template while **Insert at End** 
 A new feature to the Budget Template is the ability to pull/save to Detail and Summary level accounts at the same time.
 
 #### Pulling Summary and Detail levels together
-Since rows are retained by default, even after you've chosen the *Summary* template you can still add detail rows. Simple insert additional rows beneath the account and enter the system and subsystem values in thier respective columns. The data will populate when the report is pulled again.
+Since rows are retained by default, even after you've chosen the *Summary* template you can still add detail rows. Simple insert additional rows beneath the account, copy the row to include the formulas and enter the system and subsystem values in thier respective columns. The data will populate when the report is pulled again.
 
 In the screenshot below, we see four account combinations for the 36009 account. And after the data is pulled, we see those rows populated
 
