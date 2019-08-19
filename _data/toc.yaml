@@ -63,6 +63,8 @@ about:
     path: /wAbout/Adding-a-User.html
   - title: Report Library Basics
     path: /wAbout/Report-Library-Basics.html
+  - title: Resizing Windows
+    path: /wAbout/Resizing-Form-Windows.html
   - sectiontitle: Real-World Walkthroughs
     path: /wAbout/Real-World-Walkthroughs.html
     section:
@@ -95,6 +97,8 @@ about:
 #     path: /wApps/FRx-Migration.html
     
 getstarted:
+  - title: INTERJECT Ribbon Menu Items
+    path: /wGetStarted/INTERJECT-Ribbon-Menu-Items.html
   - sectiontitle: Creating with INTERJECT
     path: /wGetStarted/Creating-with-INTERJECT.html
     section:
@@ -136,10 +140,13 @@ getstarted:
         path: /wGetStarted/L-Drill-FinancialReport.html
       - title: "The Three Ways to Drill"
         path: /wGetStarted/L-Drill-TheThreeWays.html
-    - title: "Lab Create: Hiding Rows & Columns"
+    - sectiontitle: Hiding Rows and Columns
       path: /wGetStarted/L-Create-HideRowCol.html
-    - title: "Lab Create: Advanced Row and Section Hiding"
-      path: /wGetStarted/L-Create-AdvancedHideRowsSections.html
+      section:
+        - title: "Lab Create: Hiding Rows & Columns"
+          path: /wGetStarted/L-Create-HideRowCol.html
+        - title: "Lab Create: Advanced Row and Section Hiding"
+          path: /wGetStarted/L-Create-AdvancedHideRowsSections.html
     - title: "Lab Create: Building jDropdowns"
       path: /wGetStarted/L-Create-Dropdowns.html
     - title: "Lab Create: Working with Pivot Tables"
@@ -199,8 +206,7 @@ getstarted:
       path: /wGetStarted/Managing-Settings-Cache.html
     - title: "Error Handling (RAISERROR and UserNotice)"
       path: /wGetStarted/L-Dev-Error-Handling.html
-  - title: INTERJECT Ribbon Menu Items
-    path: /wGetStarted/INTERJECT-Ribbon-Menu-Items.html
+
 
 
 index:

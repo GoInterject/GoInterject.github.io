@@ -130,6 +130,6 @@ This details the transfer of Rollups, Templetes, and Reports from the "Test" com
 >
 > **Step 5:** Now, clicking on **Company** again from the Interject Ribbon, switch back to \<Your Live Company\>.
 >
-> **Step 6:** With the report still open, follow from **Step 8 through the end** of the [Report Localization Instructions](http://127.0.0.1:4000/bApps/bFinancials/Localize.html)
+> **Step 6:** With the report still open, follow from **Step 8 through the end** of the [Report Localization Instructions](https://docs.gointerject.com/bApps/bFinancials/Localize.html)
 >
 >

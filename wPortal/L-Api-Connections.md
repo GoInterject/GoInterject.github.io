@@ -43,7 +43,7 @@ In this lab, you will set up a simple connection to an example API. Detailed doc
 
   * **Name:** A unique friendly name used when connecting a Data Portal to the Data Connection. 
   * **Description:** Description of the API connection 
-  * **Api Root Url:** The root URL of the API you are connecting to, for example [ https://api.myDataApi.com ](https://api.myDataApi.com)
+  * **Api Root Url:** The root URL of the API you are connecting to, for example [ https://api.myDataApi.com ]
   * **Api Connection String Name (optional):** The name of the connection string within the configuration of your custom API. In many cases, an API may be hard-coded to use a specific database, so this setting is not needed. But you can build an API to use a different connection string, as indicated by this setting. If the developer uses this attribute, an API's use can be more flexible. Two options can be used here other than leaving it blank: 
     * In a web config, you can have a connection string with a name which will be used as the connection string name 
     * It is also possible to put the integrated security connection string here. This would be used to connect to data sources with extra security. 

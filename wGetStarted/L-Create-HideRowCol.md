@@ -170,4 +170,4 @@ Your report is now finished and can hide rows and columns where the invoices hav
 ![](/images/L-Create-HideRowCol/34.jpg)
 
 
-Finally, clear the report and upload it to the ![ Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary.html).
+Finally, clear the report and upload it to the [ Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary.html).

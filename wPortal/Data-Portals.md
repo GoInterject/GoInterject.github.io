@@ -33,7 +33,7 @@ The new page will look like below
 
 ![](/images/DataPortals/03.jpg)
 
-- **Api Relative Url** : This setting indicates the rest of the API URL that will be concatenated with the root URL of an API Data Connection when a request is sent. For example, the root URL for the connection may be **https:\\\[ api.myapi.com ](http://api.myapi.com) ** . If your API controller name is CustomerData, then you would type **\CustomerData** in API Relative URL. The API request would be sent to **https:\\\[ api.myapi.com ](http://api.myapi.com) \CustomerData ** . This field is ignored when a Data Portal uses a database connection.
+- **Api Relative Url** : This setting indicates the rest of the API URL that will be concatenated with the root URL of an API Data Connection when a request is sent. For example, the root URL for the connection may be **https:[ api.myapi.com ]** . If your API controller name is CustomerData, then you would type **\CustomerData** in API Relative URL. The API request would be sent to **https:[ api.myapi.com ]\CustomerData**. This field is ignored when a Data Portal uses a database connection.
 - **Helper Default Columns (optional)** : You can use a comma delimited list to set default columns that will appear when a new report is created using the Report Builder.
 - **Is Custom Command** : When set to yes, allows background jobs to run from the Custom Commands Window. Custom Commands require specific parameters to work with the Custom Commands window. See the [ INTERJECT Ribbon ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) on how to use Custom Commands
 
