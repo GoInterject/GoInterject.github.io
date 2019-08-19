@@ -72,7 +72,7 @@ When coming into the template, users will have the option to set the starting po
 
 If a new account is added to the Template, how **Insert at End** is set dictates whether the account gets placed normally, in order, or gets inserted at the end.
 
-For example, if *50045-600-00* is added to the Template while **Insert at End** is set to *No*, it is placed between the 50035 and 50050 accounts.
+For example, if *50045-600-00* is added to the Template while **Insert at End** is set to *No*, it is placed between the 50036 and 50050 accounts.
 
 ![](/images/WCNTraining/Budget/BudgetTemplate_InsertAtEndNo.png)
 
@@ -83,7 +83,7 @@ For example, if *50045-600-00* is added to the Template while **Insert at End** 
 A new feature to the Budget Template is the ability to pull/save to Detail and Summary level accounts at the same time.
 
 #### Pulling Summary and Detail levels together
-Since rows are retained by default, even after you've chosen the *Summary* template you can still add detail rows. Simple insert additional rows beneath the account, copy the row to include the formulas and enter the system and subsystem values in thier respective columns. The data will populate when the report is pulled again.
+Since rows are retained by default, even after you've chosen the *Summary* template you can still add detail rows. Simply insert additional rows beneath the account, copy the row to include the formulas and enter the system and subsystem values in thier respective columns. The data will populate when the report is pulled again.
 
 In the screenshot below, we see four account combinations for the 36009 account. And after the data is pulled, we see those rows populated
 
@@ -115,7 +115,7 @@ If we had set **Zero Out Missing Accts** to *Yes*, the pull on detail would have
 Now 36009-000-00 has the full $3,500 for each month, and 36009-600-00 has been zeroed out because it was not in the template. -->
 
 >**Things to Remember**
->* If you delete other accounts from the template, they will be zeroed out as well if (even if they do not have a summary level account present in the template).
+>* If you delete other accounts from the template, they will be zeroed out as well (even if they do not have a summary level account present in the template).
 >* When saving with a Summary level account (only Acct is present), you cannot also save to the same account with *000-00* included. The save thinks the two accounts are the same, and they will be marked as duplicates.
 
 ## The Autocalcs
