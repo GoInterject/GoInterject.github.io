@@ -192,5 +192,5 @@ After the pull, refreeze your panes. The new Year to Date Budget to Actual Compa
 
 <br> 
 
-Finally, clear the report, refreeze the panes, and upload it to the ![ Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary.html)
+Finally, clear the report, refreeze the panes, and upload it to the [ Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary.html)
 
