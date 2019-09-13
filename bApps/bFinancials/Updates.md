@@ -6,7 +6,7 @@ description: INTERJECT™ Financials for Epicor Enterprise (This would cover top
 ---
 
 <h2>Interject Financials - Epicor <br>
-<a href="https://drive.google.com/file/d/1uNCX3lv0AjI4K23gRG2sL3VfCH6B971y/view?usp=sharing">Latest Version 1.2.3</a></h2>
+<a href="https://drive.google.com/file/d/1OaVEIOeZu05wwl6Lh4mJdFE0W9_ah90p/view?usp=sharing">Latest Version 1.3.1</a></h2>
 
 Depending on which version of Interject Financials you're running, there are different update and rollback scripts. Before updating or rolling back a version, follow the procedure below. Once you know the version you're currently running, click on the appropriate dropdown below for the update release notes, the correct scripts for updating and rolling back versions, as well as procedures for running those scripts.
 
@@ -22,22 +22,22 @@ After the inital instal, applying an update, or performing a rollback, you can c
 ### Click Your Version Below for Release Notes and Update Scripts
 
 
-<button class="collapsible"><strong>For Users With Version 1.2.2</strong></button>
+<button class="collapsible"><strong>For Users With Version 1.2.3</strong></button>
 <div markdown="1" class="panel">
 
 <table> 
     <tr>
-        <th><span style="font-weight:bold">Update for Previous Install:</span> <a href="https://drive.google.com/file/d/1HRY_AnEd--GAvGsQOOwk39rSR9flZz3N/view?usp=sharing">from1.2.2to1.2.3_Update.Interject_Reporting.SQL</a></th>
+        <th><span style="font-weight:bold">Update for Previous Install:</span> <a href="https://drive.google.com/file/d/1jMi31pLmykz2UyxDY8MURUPmnyCrXsqI/view?usp=sharing">from1.2.3to1.3.1_Update.Interject_Reporting.SQL</a></th>
     </tr>
     <tr>
-        <th><span style="font-weight:bold">Rollback to 1.2.2:</span> <a href="https://drive.google.com/file/d/1nx6lc3oI3frgSGgz7o1Zm8eRxWLUTi9f/view?usp=sharing">from1.2.3to1.2.2_Rollback.Interject_Reporting.SQL</a></th>
+        <th><span style="font-weight:bold">Rollback to 1.2.3:</span> <a href="https://drive.google.com/file/d/1eZm7Oj2PEtA-HaOBsOvi7zNLzsYaap-2/view?usp=sharing">from1.3.1to1.2.3_Rollback.Interject_Reporting.SQL</a></th>
     </tr>
 </table>
 
 ### Current Version Notes
 <table>
     <tr>
-        <th><span style="font-weight:bold">Interject for Financials - Current Version 1.2.3 </span></th>
+        <th><span style="font-weight:bold">Interject for Financials - Current Version 1.3.1 </span></th>
     </tr>
         <tr>
         <th><span style="font-weight:bold">Features</span></th>
@@ -46,24 +46,21 @@ After the inital instal, applying an update, or performing a rollback, you can c
         <tr>
             <td>
                 <ul>
-                   <li>Added Parallel/Serial filter in Distribution - Parallel create #1 build and serial creates builds for each row. Defaults to Parallel.</li>
-                    <li>Added ability to reference columns to create dynamic file names and folder path using [] syntax</li>
-                    <li>Added Global Variable Definitions and seeded with YYMM and MMYY</li>
+                    <li>Added <strong>Rollup View</strong> tab and drills from Rollup in <strong>Configuration Manager</strong></li> 
                 </ul>     
             </td>
             <td>
                 <ul> 
-                    <li>Re-named Seed Open Fiscal Period to Fiscal Period</li>
-                    <li>Removed Open Period option in Fiscal Period dropdown</li>
-                    <li>Updated Fiscal Period column to reference the Fiscal Period filter</li>
-                    <li>Updated Expand/Collapse column to reference the Expand/Collapse filter</li>
-                    <li>Removed Data Pull on Distribution Run filter</li>
-                    <li>Re-named Tab Enabled label to Data Pull?</li>
-                    <li>Re-named Settings Enabled lable to Publish?</li>
-                    <li>Re-named Refresh Rollup Data to Refresh Data and modified formatting</li>
-                    <li>Moved Run Distiribution button</li>
-                    <li>Fix Run buttons when creating multiple Distribution tabs.</li>
-                    <li>Add Trim to FullAccounts in Rollup Definition</li> 
+                    <li>Fixed open month <strong>FinCube Epicor</strong> live pull for companies with more then 3 segments</li>  
+                    <li>Fixed <strong>FinCube</strong> column definition syntax for Unposted</li> 
+                    <li>Removed SPs related to client-specific custom reports</li> 
+                    <li>Fixed <strong>Exclusion</strong> issue in summary columns in <strong>Configuration Manager Validated Rollup</strong> tab</li> 
+                    <li>Fixed <strong>COA Segment Report</strong> and settings when account doesn't exist in Default company</li> 
+                    <li>Centralized segment settings in Account_Add SP</li> 
+                    <li>Fixed <strong>Configuration Manager Year</strong> tab</li> 
+                    <li>Added validation message when <strong>Rollup Name</strong> over 50 characters in <strong>Validate Rollup</strong> tab</li> 
+                    <li><strong>COA Segment Report</strong> allow FullAccount listing in InterjectSegment tab</li> 
+                    <li><strong>COA Segment Report</strong> allow to filter by Company in EpicorToInterject tab</li> 
                 </ul>
             </td>
         </tr>
@@ -93,7 +90,7 @@ The following steps must be taken to roll back one version. Note that this will 
 
 > To Roll Back
 >
-> In SQL Management Studio, run the script labeled **Rollback to 1.2.3** at the top of this page.
+> In SQL Management Studio, run the script labeled **Rollback to 1.3.1** at the top of this page.
 >
 > Run \[Interject_SetupScript1_Security\], as shown below, to re-enable security.
 >
@@ -106,90 +103,4 @@ The following steps must be taken to roll back one version. Note that this will 
 
 </div>
 
-
-
-<button class="collapsible"><strong>For Users With Version 1.2.1</strong></button>
-<div markdown="1" class="panel">
-
-<table> 
-    <tr>
-        <th><span style="font-weight:bold">Update for Previous Install:</span> <a href="https://drive.google.com/file/d/1PFeGtZrb4g1VBxslKK99RCoQLUgmNvZV/view?usp=sharing">from1.2.1to1.2.3_Update.Interject_Reporting.SQL</a></th>
-    </tr>
-    <tr>
-        <th><span style="font-weight:bold">Rollback to 1.2.1:</span> <a href="https://drive.google.com/file/d/1ST6DTqqeaVakFJWz5B96fVbzS6cB1eH0/view?usp=sharing">from1.2.3to1.2.1_Rollback.Interject_Reporting.SQL</a></th>
-    </tr>
-</table>
-
-### Current Version Notes
-<table>
-    <tr>
-        <th><span style="font-weight:bold">Interject for Financials - Current Version 1.2.3 </span></th>
-    </tr>
-        <tr>
-        <th><span style="font-weight:bold">Features</span></th>
-        <th><span style="font-weight:bold">Bugs Fixed</span></th>
-        </tr>
-        <tr>
-            <td>
-                <ul>
-                   <li>Added Parallel/Serial filter in Distribution - Parallel create #1 build and serial creates builds for each row. Defaults to Parallel.</li>
-                    <li>Added ability to reference columns to create dynamic file names and folder path using [] syntax</li>
-                    <li>Added Global Variable Definitions and seeded with YYMM and MMYY</li>
-                </ul>     
-            </td>
-            <td>
-                <ul> 
-                    <li>Re-named Seed Open Fiscal Period to Fiscal Period</li>
-                    <li>Removed Open Period option in Fiscal Period dropdown</li>
-                    <li>Updated Fiscal Period column to reference the Fiscal Period filter</li>
-                    <li>Updated Expand/Collapse column to reference the Expand/Collapse filter</li>
-                    <li>Removed Data Pull on Distribution Run filter</li>
-                    <li>Re-named Tab Enabled label to Data Pull?</li>
-                    <li>Re-named Settings Enabled lable to Publish?</li>
-                    <li>Re-named Refresh Rollup Data to Refresh Data and modified formatting</li>
-                    <li>Moved Run Distiribution button</li>
-                    <li>Fix Run buttons when creating multiple Distribution tabs.</li>
-                    <li>Add Trim to FullAccounts in Rollup Definition</li>
-                    <li>Fix Validation Definition for FullAccount (not allow invalid text) </li>
-                </ul>
-            </td>
-        </tr>
-</table>
-
-
-### Updating
-
-Whenever an update of Interject for Financials is released, an update script must be run on your server. With each new update, the initial install script located on the [Technical Install](https://docs.gointerject.com/bApps/bFinancials/Technical-Install.html) page will be updated. If you initally installed the most current version listed above, you will not need to run the Update Script. If you orginally installed a version older than the most current, take the following steps to update your implementation. 
-
-> To Upgrade
-> 
-> In SQL Management Studio, run the script labeled **Update for Previous Install** at the top of this page.
->
-> Run \[Interject_SetupScript1_Security\], as shown below, to re-enable security.
->
->  ```SQL
-> EXEC [Custom].[Interject_SetupScript1_Security]
->	@MasterEpicorDatabase = '<Epicor Controlling Database Name>'
->	,@CertificatePassword =  'myPassword1234'
->  ```
->
-
-### Rolling Back One Version
-
-The following steps must be taken to roll back one version. Note that this will only roll to the previous version.
-
-> To Roll Back
->
-> In SQL Management Studio, run the script labeled **Rollback to 1.2.1** at the top of this page.
->
-> Run \[Interject_SetupScript1_Security\], as shown below, to re-enable security.
->
->  ```SQL
-> EXEC [Custom].[Interject_SetupScript1_Security]
->	@MasterEpicorDatabase = '<Epicor Controlling Database Name>'
->	,@CertificatePassword =  'myPassword1234'
->  ```
->
-
-</div>
 
