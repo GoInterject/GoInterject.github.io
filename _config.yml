@@ -92,3 +92,5 @@ repository:
 encoding:
   UTF-8
 
+exclude: [vendor]
+
