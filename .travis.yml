@@ -12,7 +12,7 @@ script:
 
 branches:
   only:
-    - /Patch-*.*_I*
+    - Patch-*.*_I*
 
 env:
   global:
