@@ -10,9 +10,9 @@ script:
   # - ./script/cibuild
   - bundle exec jekyll build --destination _site
 
-# branches:
-#   only:
-#     - /Patch-*.*_I*/
+branches:
+  only:
+    - /Patch-*.*_I*
 
 env:
   global:
