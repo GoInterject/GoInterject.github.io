@@ -4,11 +4,11 @@ rvm:
   - 2.5.3
 
 before_script:
-  - Is script
   - chmod +x ./script/cibuild
 
 script:
-  - bundle exec jekyll build --destination site
+  - ./script/cibuild
+  - bundle exec jekyll build --destination _site
 
 env:
   global:
