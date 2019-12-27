@@ -172,40 +172,6 @@ getstarted:
         path: /wGetStarted/L-Export-BasicDist.html
       - title: "Lab Export: Advanced Distribution"
         path: /wGetStarted/L-Export-AdvancedDist.html
-  - title: Excel Best and Worst Practices
-    path: /wGetStarted/Excel-Best-and-Worst-Practices.html
-  - sectiontitle: Developing with INTERJECT
-    path: /wGetStarted/Developing-with-INTERJECT.html
-    section:
-    - title: INTERJECT Website Portal
-      path: /wGetStarted/INTERJECT-Website-Portal.html
-    - title: Defining INTERJECT for Developers
-      path: /wGetStarted/Defining-INTERJECT-for-Developers.html
-    - sectiontitle: Simple Data Pull
-      path: /wGetStarted/Simple-Data-Pull.html
-      section:
-      - title: "Lab Dev: Customer Aging"
-        path: /wGetStarted/L-Dev-CustomerAging.html
-      - title: "Lab Dev: Customer Orders"
-        path: /wGetStarted/L-Dev-CustomerOrders.html
-      - title: "Lab Dev: jDropdowns"
-        path: /wGetStarted/L-Dev-jDropdowns.html
-    - sectiontitle: Advanced Data Pull
-      path: /wGetStarted/Advanced-Data-Pull.html
-      section:
-      - title: "Lab Dev: Customer Aging Detail"
-        path: /wGetStarted/L-Dev-CustomerAgingDetail.html
-    - sectiontitle: Simple Data Save
-      path: /wGetStarted/Simple-Data-Save.html
-      section:
-      - title: "Lab Dev: Customer Credit Save"
-        path: /wGetStarted/L-Dev-CustomerCreditSave.html
-    - title: Security Best Practices
-      path: /wGetStarted/Security-Best-Practices.html
-    - title: Managing Settings Cache
-      path: /wGetStarted/Managing-Settings-Cache.html
-    - title: "Error Handling (RAISERROR and UserNotice)"
-      path: /wGetStarted/L-Dev-Error-Handling.html
 
 
 
@@ -341,6 +307,40 @@ Developer:
       section:
         - title: Python Api Custom Functions
           path: /wApi/python-api-custom-functions.html
+- title: Excel Best and Worst Practices
+  path: /wGetStarted/Excel-Best-and-Worst-Practices.html
+- sectiontitle: Developing SQL with INTERJECT
+  path: /wGetStarted/Developing-with-INTERJECT.html
+  section:
+  - title: INTERJECT Website Portal
+    path: /wGetStarted/INTERJECT-Website-Portal.html
+  - title: Defining INTERJECT for Developers
+    path: /wGetStarted/Defining-INTERJECT-for-Developers.html
+  - sectiontitle: Simple Data Pull
+    path: /wGetStarted/Simple-Data-Pull.html
+    section:
+    - title: "Lab Dev: Customer Aging"
+      path: /wGetStarted/L-Dev-CustomerAging.html
+    - title: "Lab Dev: Customer Orders"
+      path: /wGetStarted/L-Dev-CustomerOrders.html
+    - title: "Lab Dev: jDropdowns"
+      path: /wGetStarted/L-Dev-jDropdowns.html
+  - sectiontitle: Advanced Data Pull
+    path: /wGetStarted/Advanced-Data-Pull.html
+    section:
+    - title: "Lab Dev: Customer Aging Detail"
+      path: /wGetStarted/L-Dev-CustomerAgingDetail.html
+  - sectiontitle: Simple Data Save
+    path: /wGetStarted/Simple-Data-Save.html
+    section:
+    - title: "Lab Dev: Customer Credit Save"
+      path: /wGetStarted/L-Dev-CustomerCreditSave.html
+  - title: Security Best Practices
+    path: /wGetStarted/Security-Best-Practices.html
+  - title: Managing Settings Cache
+    path: /wGetStarted/Managing-Settings-Cache.html
+  - title: "Error Handling (RAISERROR and UserNotice)"
+    path: /wGetStarted/L-Dev-Error-Handling.html
 
 troubleshoot:
 - sectiontitle: Troubleshooting
