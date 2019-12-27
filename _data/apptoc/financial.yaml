@@ -148,12 +148,14 @@ examples:
     path: /bApps/bFinancials/ExampleCases.html
   - title: Hiding Rows with Zero Values
     path: /bApps/bFinancials/HidingZeros.html
+  - title: Adding Notes
+    path: /bApps/bFinancials/AddingNotes.html
 portal: 
   - title: Portal Site Overview
     path: /bApps/bFinancials/Portal-Overview.html
  # - title: Logging In to the Interject Website Portal
   #  path:
- # - title: Data Connections
+ # - title: Data Connection
   #  path:
  # - title: Data Portals
   #  path:
