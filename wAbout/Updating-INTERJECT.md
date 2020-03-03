@@ -11,7 +11,7 @@ INTERJECT often comes out with new features and updates. When doing so, it is a 
 
 Here is a brief video on Updating Interject, followed by a more detailed walkthrough.
 
-<iframe src="https://youtu.be/uxZB1OYQE0k" height="315" width="560"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uxZB1OYQE0k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ###  Updating to the Newest Version of INTERJECT 
 
