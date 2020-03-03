@@ -13,6 +13,8 @@ Here is a brief video on Updating Interject, followed by a more detailed walkthr
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uxZB1OYQE0k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+[Click here](https://youtu.be/uxZB1OYQE0k) if the above video does not load.
+
 ###  Updating to the Newest Version of INTERJECT 
 
 **Step 1:** In order to update INTERJECT, you will need to close Excel. So save anything open in Excel now. 
