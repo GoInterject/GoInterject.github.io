@@ -9,9 +9,6 @@ description: The walk-through shows how to update INTERJET to the newest version
 
 INTERJECT often comes out with new features and updates. When doing so, it is a priority to make updating INTERJECT as easy as possible, so that you can access these features. In this walk-through, you will see how to add these updates quickly. 
 
-Here is a quick walk-through video:  
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/-PVuTGZ1qz4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>{: .center-image }
-
 ###  Updating to the Newest Version of INTERJECT 
 
 **Step 1:** In order to update INTERJECT, you will need to close Excel. So save anything open in Excel now. 
