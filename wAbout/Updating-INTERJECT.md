@@ -9,8 +9,9 @@ description: The walk-through shows how to update INTERJET to the newest version
 
 INTERJECT often comes out with new features and updates. When doing so, it is a priority to make updating INTERJECT as easy as possible, so that you can access these features. In this walk-through, you will see how to add these updates quickly. 
 
-Here is a quick walk-through video:  
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/-PVuTGZ1qz4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>{: .center-image }
+Here is a brief video on Updating Interject, followed by a more detailed walkthrough.
+
+<iframe src="https://youtu.be/uxZB1OYQE0k" height="315" width="560"></iframe>
 
 ###  Updating to the Newest Version of INTERJECT 
 
@@ -26,7 +27,7 @@ Here is a quick walk-through video:
 
 ![](/images/Updating/03.png)
 
-**Note:** If this popup appears at any point without having clicked the **Check for Updates** button, it means that INTERJECT has released an important update. INTERJECT will not lock up into updating at any time, so its okay to postpone it momentarily, but its recommended, however, that you update at the earliest convenience. 
+**Note:** If this popup appears at any point without having clicked the **Check for Updates** button, it means that INTERJECT has released an important update. INTERJECT will not lock up into updating at any time, so its okay to postpone it momentarily, but its recommended that you update at the earliest convenience. 
 
 **Step 4:** After clicking **Get Update**, the Interject Excel Add-in Setup will pop up. Interject requires Excel to be closed to update. Click the exit button to close excel.
 
@@ -36,7 +37,11 @@ Once Excel has been closed click **Update** to continue to the update.
 
 ![](/images/Updating/05.png)
 
-Click **Next** to continue in the Install wizard.
+If you have any active or hidden Excel files open, the Add-in Manager will tell you which files are open and whether they've been saved. To avoid losing your work, please save the files and close Excel before continuing
+
+![](/images/Updating/CloseExcel.png)
+
+Once your files are saved and closed, click **Next** to continue in the Install wizard.
 
 ![](/images/Updating/06.png)
 
