@@ -213,7 +213,7 @@ ALTER proc [dbo].[RequestContext_Parse]
 as
 /*
 This SP is a helper to pull all data from the RequestContext that is passed from Interject. Below
-are examples to pull all the data or just a couple values that you need (which is much less typing)
+are examples to pull all the data or just a couple values that you need (which is much less typing).
 
 */
 
