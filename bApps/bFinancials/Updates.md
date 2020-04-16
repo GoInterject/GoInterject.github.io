@@ -6,7 +6,7 @@ description: INTERJECT™ Financials for Epicor Enterprise (This would cover top
 ---
 
 <h2>Interject Financials - Epicor <br>
-<a href="https://drive.google.com/file/d/1OaVEIOeZu05wwl6Lh4mJdFE0W9_ah90p/view?usp=sharing">Latest Version 1.3.1</a></h2>
+<a href="https://drive.google.com/file/d/1PHvvuwF4MgOOc7I8_-SXbWokLclHvuJU/view?usp=sharing">Latest Version 1.4.0</a></h2>
 
 Depending on which version of Interject Financials you're running, there are different update and rollback scripts. Before updating or rolling back a version, follow the procedure below. Once you know the version you're currently running, click on the appropriate dropdown below for the update release notes, the correct scripts for updating and rolling back versions, as well as procedures for running those scripts.
 
@@ -22,22 +22,22 @@ After the inital instal, applying an update, or performing a rollback, you can c
 ### Click Your Version Below for Release Notes and Update Scripts
 
 
-<button class="collapsible"><strong>For Users With Version 1.2.3</strong></button>
+<button class="collapsible"><strong>For Users With Version 1.3.1</strong></button>
 <div markdown="1" class="panel">
 
 <table> 
     <tr>
-        <th><span style="font-weight:bold">Update for Previous Install:</span> <a href="https://drive.google.com/file/d/1jMi31pLmykz2UyxDY8MURUPmnyCrXsqI/view?usp=sharing">from1.2.3to1.3.1_Update.Interject_Reporting.SQL</a></th>
+        <th><span style="font-weight:bold">Update for Previous Install:</span> <a href="https://drive.google.com/file/d/1BMaSaCvxPDSlb9A2XfeXAIZI_xI92oar/view?usp=sharing">from1.3.1to1.4.0_Update.Interject_Reporting.SQL</a></th>
     </tr>
     <tr>
-        <th><span style="font-weight:bold">Rollback to 1.2.3:</span> <a href="https://drive.google.com/file/d/1eZm7Oj2PEtA-HaOBsOvi7zNLzsYaap-2/view?usp=sharing">from1.3.1to1.2.3_Rollback.Interject_Reporting.SQL</a></th>
+        <th><span style="font-weight:bold">Rollback to 1.3.1:</span> <a href="https://drive.google.com/file/d/1PlsZoo2JLLQvBe9pj5s1Ekt6Wnvv0We9/view?usp=sharing">from1.4.0to1.3.1_Rollback.Interject_Reporting.SQL</a></th>
     </tr>
 </table>
 
 ### Current Version Notes
 <table>
     <tr>
-        <th><span style="font-weight:bold">Interject for Financials - Current Version 1.3.1 </span></th>
+        <th><span style="font-weight:bold">Interject for Financials - Current Version 1.4.0 </span></th>
     </tr>
         <tr>
         <th><span style="font-weight:bold">Features</span></th>
@@ -45,22 +45,28 @@ After the inital instal, applying an update, or performing a rollback, you can c
         </tr>
         <tr>
             <td>
-                <ul>
-                    <li>Added <strong>Rollup View</strong> tab and drills from Rollup in <strong>Configuration Manager</strong></li> 
+                <ul> 
+                    <li>Add Journal Entry Upload Tool </li>
+                    <li>Change in the config manager FullAccount dropdown to include rollup only</li>
+                    <li>Add FullAccount to COA Segment Lookup</li>
                 </ul>     
             </td>
             <td>
                 <ul> 
-                    <li>Fixed open month <strong>FinCube Epicor</strong> live pull for companies with more then 3 segments</li>  
-                    <li>Fixed <strong>FinCube</strong> column definition syntax for Unposted</li> 
-                    <li>Removed SPs related to client-specific custom reports</li> 
-                    <li>Fixed <strong>Exclusion</strong> issue in summary columns in <strong>Configuration Manager Validated Rollup</strong> tab</li> 
-                    <li>Fixed <strong>COA Segment Report</strong> and settings when account doesn't exist in Default company</li> 
-                    <li>Centralized segment settings in Account_Add SP</li> 
-                    <li>Fixed <strong>Configuration Manager Year</strong> tab</li> 
-                    <li>Added validation message when <strong>Rollup Name</strong> over 50 characters in <strong>Validate Rollup</strong> tab</li> 
-                    <li><strong>COA Segment Report</strong> allow FullAccount listing in InterjectSegment tab</li> 
-                    <li><strong>COA Segment Report</strong> allow to filter by Company in EpicorToInterject tab</li> 
+                    <li>Extend MemberDefinition_Delta table to allow greater range</li>
+                    <li>Fix rollup detail grouping not calculated correctly due to ranges function</li>
+                    <li>Fix rollup top definition when ranges is not numberic. Was not updating with new accounts</li>
+                    <li>Use the CalcNet column in Segment table for YTD Calculation instead of BS_DEMO which is not alway accurate </li>
+                    <li>Set correct defualt when blank YearMonth and error when using future YearMonth with YTD</li>
+                    <li>Remove custom tables and clean up database </li>
+                    <li>Config Manager - Remove Merged Columns in Validated Rollup</li>
+                    <li>Adding Non-Validated Rollups back into dropdown list. Need the child definition to define the main rollup code.</li>
+                    <li>Fix primary key volition in when Build_Lookup_Import Loops Change_Detail insert</li>
+                    <li>Remove application role seucrity in TB and JEs add segment security instead Fincube</li>
+                    <li>Extend security for configureation tool</li>
+                    <li>Validate RollUp code in Row Template (VBA fails on invalid characters)</li>
+                    <li>Remove Seed Current Open Period / Reference column formula to Fiscal Period</li>
+                    <li>Fiscal year month dropdown</li>
                 </ul>
             </td>
         </tr>
@@ -90,7 +96,7 @@ The following steps must be taken to roll back one version. Note that this will 
 
 > To Roll Back
 >
-> In SQL Management Studio, run the script labeled **Rollback to 1.3.1** at the top of this page.
+> In SQL Management Studio, run the script labeled **Rollback to 1.4.0** at the top of this page.
 >
 > Run \[Interject_SetupScript1_Security\], as shown below, to re-enable security.
 >
