@@ -55,16 +55,16 @@ After the inital instal, applying an update, or performing a rollback, you can c
                 <ul> 
                     <li>Extend MemberDefinition_Delta table to allow greater range</li>
                     <li>Fix rollup detail grouping not calculated correctly due to ranges function</li>
-                    <li>Fix rollup top definition when ranges is not numberic. Was not updating with new accounts</li>
-                    <li>Use the CalcNet column in Segment table for YTD Calculation instead of BS_DEMO which is not alway accurate </li>
+                    <li>Fix rollup top definition when ranges are not numeric. Was not updating with new accounts</li>
+                    <li>Use the CalcNet column in Segment table for YTD Calculation instead of BS_DEMO which is not always accurate </li>
                     <li>Set correct defualt when blank YearMonth and error when using future YearMonth with YTD</li>
                     <li>Remove custom tables and clean up database </li>
                     <li>Config Manager - Remove Merged Columns in Validated Rollup</li>
-                    <li>Adding Non-Validated Rollups back into dropdown list. Need the child definition to define the main rollup code.</li>
-                    <li>Fix primary key volition in when Build_Lookup_Import Loops Change_Detail insert</li>
+                    <li>Adding Non-Validated Rollups back into dropdown list. Need the child definition to define the main rollup code. </li>
+                    <li>Fix primary key violation in when Build_Lookup_Import when looping through Change_Detail insert</li>
                     <li>Remove application role seucrity in TB and JEs add segment security instead Fincube</li>
-                    <li>Extend security for configureation tool</li>
-                    <li>Validate RollUp code in Row Template (VBA fails on invalid characters)</li>
+                    <li>Extend security for configuration tool</li>
+                    <li>Validate RollUp code in Row Template (VBA fails on invalid characters) </li>
                     <li>Remove Seed Current Open Period / Reference column formula to Fiscal Period</li>
                     <li>Fiscal year month dropdown</li>
                 </ul>
@@ -96,7 +96,7 @@ The following steps must be taken to roll back one version. Note that this will 
 
 > To Roll Back
 >
-> In SQL Management Studio, run the script labeled **Rollback to 1.4.0** at the top of this page.
+> In SQL Management Studio, run the script labeled **Rollback to 1.3.1** at the top of this page.
 >
 > Run \[Interject_SetupScript1_Security\], as shown below, to re-enable security.
 >
