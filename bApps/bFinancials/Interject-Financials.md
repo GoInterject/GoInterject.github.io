@@ -11,7 +11,7 @@ description: INTERJECT™ Financials for Epicor Enterprise (This would cover top
 
 **Interject Financials:** Includes 44 data portals related to *Financials for Spreadsheets.* Data connection is redirected through ""
 
-**Interject Demos:**  Includes 46 data portals related to demonstrating various interject capabilities using a demo database connection point to INTERJECT's cloud enviroment.
+**Interject Demos:**  Includes 46 data portals related to demonstrating various Interject capabilities using a demo database connection pointing to Interject's cloud enviroment.
 
 To learn more about DataPortals, and how to set them up, visit the [DataPortals](/wPortal/Data-Portals.html) page.
 
@@ -42,7 +42,7 @@ For information about connecting to other sources, visit [Connectionstrings.com/
 - Connection: "Connection01"
 
 "DataPortal02"
-- import yearly budget numbers into the Interject Reporting DB from a list of Epicor DBs
+- Import yearly budget numbers into the Interject Reporting DB from a list of Epicor DBs
 - Connection: "Connection01"
 
 "DataPortal03"
