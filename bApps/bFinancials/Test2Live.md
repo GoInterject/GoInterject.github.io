@@ -6,7 +6,7 @@ description: Step by step guide on converting reports in test environments to re
 ---
 There are two options available when moving your Interject Financials report templates and rollups from a test environment to the live environment, where your users can interact with them.
 
-**Option 1:** [Moving the Entire Database](/bApps/bFinancials/Test2Live.html#option-1-moving-the-entire-database) – This option should only be used when "Live" and "Test" environment are the similar. The following criteria must be met:
+**Option 1:** [Moving the Entire Database](/bApps/bFinancials/Test2Live.html#option-1-moving-the-entire-database) – This option should only be used when "Live" and "Test" environment are similar. The following criteria must be met:
 
 - [ ] Epicor test database(s) need to be snapshots of "Live". (Data in "Test" server can be older than what is on "Live") 
 - [ ] Epicor data on "Test" was not changed since the snapshot from "Live" 
