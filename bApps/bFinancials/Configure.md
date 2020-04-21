@@ -2,7 +2,7 @@
 title: Configure
 layout: custom
 keywords: [Report, Epicor, Accounts]
-description: Step by step guide on setting up new and pre-packaged reports in the Interject for Financials App for Epicor.
+description: Step by step guide on setting up new and pre-packaged reports in the Interject for Financials App for Epicor Enterprise.
 ---
 
 Interject Financials - Epicor Enterprise offers a simple, step-by-step configuration tool to set up and test the monthly import schedule as well as the configuration of financial reports.
