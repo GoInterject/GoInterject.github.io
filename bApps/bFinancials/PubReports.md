@@ -2,14 +2,14 @@
 title: Publishing and Updating in the Report Library
 layout: custom
 keywords: [Report, Epicor, Accounts]
-description: Step by step guide on using Interject Financials - Publishing Epicor financial report templates.
+description: Step by step guide on using Interject Financials - Publishing Epicor Enterprise financial report templates.
 ---
 
 ### Publishing and Updating Report Templates in the Report Library
 
-Once you have finished creating a report template using the Interject Financials for Epicor configuration manager, you can publish the report template to your Interject Report Library. Each report template you publish will be versioned, so that you can track changes. You can also set the status of report templates to **Dev**, **Test**, **Live**, or **Superseded**. Once set to live, all users in your organization with access to the report library will see and can use the report template through their Report Library.
+Once you have finished creating a report template using the Interject Financials for Epicor Enterprise configuration manager, you can publish the report template to your Interject Report Library. Each report template you publish will be versioned, so that you can track changes. You can also set the status of report templates to **Dev**, **Test**, **Live**, or **Superseded**. Once set to live, all users in your organization with access to the Report Library will see and can use the report template through their Report Library.
 
-In this example, we'll use a template created internally by Interject developers. However, the same process will be applied once you've finished making your own report template following the steps in previous pages of this training section.
+In this example, we'll use a template created internally by Interject developers. However, the same process will be applied once you've finished making your own report template following the steps in other pages of this training section.
 
 
 > To Do:
@@ -25,11 +25,11 @@ In this example, we'll use a template created internally by Interject developers
 > **Step 4:** In the "Create New Link" window, type in "Link Name" the name you want for the report template in the library. You should also add a description at this point, especially if your report template is an updated version.
 > ![Save Report Temp](/images/Financials-TemplateSave/ReportSave3.png){: .center-image }
 >
-> **Step 5:** Set the version to **Dev**, **Test**, **Live**, or **Superseded**. We use live in this example. You can also give the template a version name and version notes to document what changes were made. 
+> **Step 5:** Set the version to **Dev**, **Test**, **Live**, or **Superseded**. We use live in this example. You can also give the template a version name and version notes to document what changed. 
 > - **Live:** Standard users can only see live reports, so only use this when the report is ready to be published.
 > - **Test:** Test means that development is complete, but the report is still in testing.
 > - **Dev:** In development by the report writer.
-> - **Superseded:** A report that is no longer used but is still available by admin users for review.
+> - **Superseded:** A report that is no longer used but is still available to admin users for review.
 > ![Save Report Temp](/images/Financials-TemplateSave/ReportSave4.png){: .center-image }
 >
 > **Step 6:** Choose the link path by clicking **Browse** and locating the Excel file you just saved.
@@ -43,7 +43,7 @@ In this example, we'll use a template created internally by Interject developers
 
 ### Updating Existing Report Templates
 
-The process for updating existing report teplates is largely similar to saving entirely new template. We'll begin with the BALCONSOL report open.
+The process for updating existing report teplates is largely similar to saving entirely new templates. We'll begin with the BALCONSOL report open.
 
 > To Do:
 >
@@ -54,7 +54,7 @@ The process for updating existing report teplates is largely similar to saving e
 > **Step 3:** Right click on the version of the report you have updated, choose **Save Current Workbook", and then choose "Create New Version of "\[name of your report\]"".
 > ![Save Report Temp](/images/Financials-TemplateUpdate/UpdateReport1.png){: .center-image }
 >
-> **Step 4:** In the "Create New Version" window, you will complete the same information as the steps above for saving a new report. The difference here is that you will want to include an updated **Version Name" and description to identify the updated report as separate from previous versions.
+> **Step 4:** In the "Create New Version" window, you will complete the same information as the steps above for saving a new report. The difference is that you will want to include an updated **Version Name" and description** to identify the updated report as separate from previous versions.
 > ![Save Report Temp](/images/Financials-TemplateUpdate/UpdateReport2.png){: .center-image }
 >
 > **Step 5:** You will be prompted to convert any other **Live** versions of the report to **Superseded**. Click **Yes**.

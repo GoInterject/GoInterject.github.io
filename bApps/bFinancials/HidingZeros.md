@@ -46,6 +46,6 @@ In some cases you may want to hide from your financial reports the rows containi
 > **Step 14:** Now, in cell **B34** enter the formula **=IF(AND(H34=0,I34-0,J34=0),"Hide","Show")**
 > ![](/images/bFinancialsHideZeros/FormatDetailRange.png){: .center-image }
 >
-> **Step 15:** Close up all the expanded sections, and pull the report again. Notice now that the row and section which previously had a zero value is now hidden. Note that the section is not gone or deleted; rather, it is hidden from your view.
+> **Step 15:** Close up all the expanded sections, and pull the report again. Notice that the row and section which previously had a zero value is now hidden. Note that the section is not gone or deleted; rather, it is hidden from your view.
 > ![](/images/bFinancialsHideZeros/NoZeroResult.png){: .center-image }
 >

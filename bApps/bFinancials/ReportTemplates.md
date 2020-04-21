@@ -2,22 +2,22 @@
 title: Report Templates
 layout: custom
 keywords: [Report, Epicor, Accounts]
-description: Step by step guide on using Interject Financials - Epicor financial report templates.
+description: Step by step guide on using Interject Financials - Epicor Enterprise financial report templates.
 ---
 
-Aside from your seeded Transactional Reports, Interject Financials - Epicor allows you to build flexible financial statements from scratch using existing FRx row templates as a guide. **Note that you must complete the initial review and confirmation steps in the Configuration Manager before you can begin creating Rollups and Row Templates for financial reports**. Those steps are described in detail on the [Configure](/bApps/bFinancials/Configure.html) page.
+Aside from your seeded Transactional Reports, Interject Financials - Epicor Enterprise allows you to build flexible financial statements from scratch using existing FRx row templates as a guide. **Note that you must complete the initial review and confirmation steps in the Configuration Manager before you can begin creating Rollups and Row Templates for financial reports**. Those steps are described in detail on the [Configure](/bApps/bFinancials/Configure.html) page.
 
-The following steps will walk through a single Balance Sheet creation, but the process will be the same for other sheets, such as P & Ls.
+The following steps walk through a single Balance Sheet creation, but the process will be the same for other sheets, such as P & Ls.
 
 > To Do
 >
-> **Step 1:** From the Configuration Manager screen, click on the "Setup/Review Rollups" link to go the Rollup Manager
+> **Step 1:** From the Configuration Manager screen, click on the "Setup/Review Rollups" link to go to the Rollup Manager
 >
-> **Step 2:** On the Rollup Manager screen, click on "Segment" in the "Add New Rollup" section and select a segment from the list. We will choose "Accounts" for this example.
+> **Step 2:** On the Rollup Manager screen, click on "Segment" in the "Add New Rollup" section and select a segment from the list. We'll choose "Accounts" for this example.
 >
-> **Step 3:**  Hit the "Click to Add" button.
+> **Step 3:**  Hit "Click to Add".
 >
-> **Note:** If you're choosing to reference FRx row templates, it is best to have the FRx Catalog open in a separate window.
+> **Note:** If you're choosing to reference FRx row templates, it's best to have the FRx Catalog open in a separate window.
 >
 > ![Transaction Report 1](/images/Train/BuildReport1.png){: .center-image }
 >
@@ -50,7 +50,7 @@ After hitting "Click to Add", a new sheet will open with an empty template. This
 >
 > **Step 1:** Now write the codes for each Rollup in the "Rollup Section" of your template using the FRx Row Format screen. These will correspond to the subtotals in the FRx Row Template catalog report. The necessary prefixes will be attached automatically.
 >
-> **Step 2:** In each row with a code, designate the "Order" in maganitudes of at least ten, then in the "Detail Account Definiton" column, use **=JCombineSmart\(\)** again, selecting all necessary rows for each subtotaled section from FRx Row Template report.
+> **Step 2:** In each row with a code, designate the "Order" in magnitudes of at least ten, then in the "Detail Account Definiton" column, use **=JCombineSmart\(\)** again, selecting all necessary rows for each subtotaled section from the FRx Row Template report.
 >
 > **Step 3:** Hit Ctrl+Shift+U or the "Save" Button to save
 >
@@ -61,7 +61,7 @@ After hitting "Click to Add", a new sheet will open with an empty template. This
 
 > To Do
 >
-> **Step 1:** Go back to the Configuration Manager Welcome screen and then click the link to "Setup/Review Report Templates"
+> **Step 1:** Go back to the Configuration Manager Welcome screen and click the link to "Setup/Review Report Templates"
 >
 > **Step 2:** In the "Row Template Manager", click "Acct Rollup" to choose an account. Then hit "Click to Add."
 >
@@ -103,7 +103,7 @@ After hitting "Click to Add", a new sheet will open with an empty template. This
 >
 > **Step 3:** In the right Actual column, click into the date and enter **=EDate\(** then click the "Fiscal Period" you chose previously, and close the argument with ",0". This will make that column an absolute reference to your period of interest
 >
-> **Step 4:** In the date cell of left column, enter **=EDate\(\133,-1\). This will reference the period of interest and subtract one month. You can add further columns to the right, using this notation, to build out your report completely.
+> **Step 4:** In the date cell of the left column, enter **=EDate\(\133,-1\).** This will reference the period of interest and subtract one month. You can add further columns to the right, using this notation, to build out your report completely
 > ![Account Rollup](/images/Train/ReportTemp.png){: .center-image }
 >
 > **Step 5:** Now hit Ctrl+Shift+J or the Pull Data button on the Interject Ribbon

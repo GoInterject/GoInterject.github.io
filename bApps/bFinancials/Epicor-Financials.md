@@ -7,9 +7,9 @@ description: INTERJECT™ Financials for Epicor Enterprise (This would cover top
 
 ## About
 
-### What is Interject Financials - Epicor
+### What is Interject Financials - Epicor Enterprise
 
-**Interject Financials** is a spreadsheet-based financial reporting application for Epicor Enterprise users. It brings improved reporting accuracy, flexibility, and simple accounting control to your Epicor investment. Interject leverages Excel as a connection to source data, so you’ll never need to save another file. No uncontrolled spreadsheets sprawl. More replicability to your process. And Interject reports are versioned, created by Admin supported definitions, and validated during development, so you can trust your reporting is always accurate
+**Interject Financials** is a spreadsheet-based financial reporting application for Epicor Enterprise users. It brings improved reporting accuracy, flexibility, and simple accounting control to your Epicor Enterprise investment. Interject leverages Excel as a connection to source data, so you’ll never need to save another file. No uncontrolled spreadsheets sprawl. More replicability to your process. And Interject reports are versioned, created by Admin supported definitions, and validated during development, so you can trust your reporting is always accurate
 
 ### Product Sheet
 

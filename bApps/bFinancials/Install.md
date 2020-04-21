@@ -2,12 +2,12 @@
 title: Install
 layout: custom
 keywords: [Report, Epicor, Accounts]
-description: Step by step guide on data tier, initial data load, FRx Migration, and other key processes of installing of Interject for Financials Epicor.
+description: Step by step guide on data tier, initial data load, FRx Migration, and other key processes of installing of Interject for Financials Epicor Enterprise.
 ---
 
-Before installing Interject Financials - Epicor, you will need to request an invite at the [Interject Portal Site](https://portal.gointerject.com). Fill out every field fo the invite request form and click "Create and Account". The Interject team will review and grant access to the Interject Platform.
+Before installing Interject Financials - Epicor Enterprise, you will need to request an invite at the [Interject Portal Site](https://portal.gointerject.com). Fill out every field of the invite request form, and click "Create an Account". The Interject team will review and grant access to the Interject Platform.
 
-After gaining access as a new company, there are three parts to installing Interject Financials - Epicor. First is the initial data tier install, then the data load from Epicor and FRx, then the actual report configurations in the Interject application. 
+After gaining access as a new company, there are three parts to installing Interject Financials - Epicor Enterprise. First is the initial data tier install, then the data load from Epicor and FRx, then the actual report configurations in the Interject application. 
 
 \(Before installing Interject for Financials, check that your system meets all requirements noted in the [Product Sheet](https://docs.gointerject.com/bApps/bFinancials/Epicor-Financials.html).
 
@@ -34,13 +34,13 @@ After gaining access as a new company, there are three parts to installing Inter
 >
 > **Step 1:** Connect to your Epicor server as SysAdmin in **SQL MGT Studio**
 >
->**Step 2:** Create a new data base and name it "Interject_Reporting@epicor3", then press OK
+>**Step 2:** Create a new database and name it "Interject_Reporting@epicor3", then press OK
 >
 > **Step 3:** Make sure that the script is pointed to the database you just created, and execute the script
 >
 > ![Mgt Studio Point](/images/A-SQL-InitialDataLoad/MgtStudioPointTo.png)
 >
-> **Step 4:** Execute initial deploy script on New Interject Reporting Database
+> **Step 4:** Execute initial deploy script on the new Interject Reporting Database
 >
 > - 4a: DB Object Creation
 > - 4b: DB Permissions and roles
@@ -81,7 +81,7 @@ After gaining access as a new company, there are three parts to installing Inter
 
 > To-do
 >
-> **Step 1:** OPen SQL Server and create a new DB
+> **Step 1:** Open SQL Server and create a new DB
 >
 >**Step 2:** Import MDB file to the new DB
 >
@@ -96,9 +96,9 @@ After gaining access as a new company, there are three parts to installing Inter
 ## Epicor Segment Assessment
 > To-do
 >
-> **Step 1:**Review use of Group Sets in FRX
+> **Step 1:** Review use of Group Sets in FRx
 >
-> **Step 2:** Design Grouping Strategy for interject groupings
+> **Step 2:** Design Grouping Strategy for Interject groupings
 >
 > **Step 3:** Define use of Segments such as natural account, locations, etc…
 >
@@ -106,9 +106,9 @@ After gaining access as a new company, there are three parts to installing Inter
 >
 > **Step 5:** Verify any Epicor Databases excluded from Migration
 >
-> **Step 6:** Verify Periods are CALENDAR month
+> **Step 6:** Verify Periods are Calendar month
 >
-> **Step 7:** Verify  use is single  currency only
+> **Step 7:** Verify  use is single currency only
 
 
 
@@ -119,8 +119,8 @@ With the Interject Add-in installed and an Admin user logged in:
 >
 > **Step 1:** Monthly import schedule setup and test
 >
-> **Step 2:** Financials Grouping configuration and 
+> **Step 2:** Financials Grouping configuration
 
 
 ### Security and Updates
-Install scripting will be versioned with GIT and we will provide update scripts (and revert) scripts that have been fully QA tested on an on-going basis. We can even easily track customizations in a similar way and the database will have a version table for tracking.
+Install scripting will be versioned with GIT, and we will provide update (and revert) scripts that have been fully QA tested on an on-going basis. We can even easily track customizations in a similar way, and the database will have a version table for tracking.

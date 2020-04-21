@@ -2,7 +2,7 @@
 title: FRx Migration
 layout: custom
 keywords: [Report, Epicor, Accounts]
-description: Step by step guide on data tier, initial data load, FRx Migration, and other key processes of installing of Interject for Financials Epicor.
+description: Step by step guide on data tier, initial data load, FRx Migration, and other key processes of installing of Interject for Financials Epicor Enterprise.
 ---
 
 <table>
@@ -30,7 +30,7 @@ description: Step by step guide on data tier, initial data load, FRx Migration, 
 > **Step 2:** Right Click New Database in the Object Explorer
 > ![Epicor Tools Connection Page](/images/A-InitialDataLoad/ObjectEx.png){: .center-image }
 >
-> **Step 3:** Choose a name of database to be used to store the legacy FRX reporting definitions” into the Database Name field press OK
+> **Step 3:** Choose a name of database to be used to store the legacy FRx reporting definitions in the Database Name field, then press OK
 > ![Epicor Tools Connection Page](/images/A-InitialDataLoad/DataBasename.png){: .center-image }
 >
 
@@ -40,13 +40,13 @@ description: Step by step guide on data tier, initial data load, FRx Migration, 
 >
 > **Step 1:** In **SQL Management Studio**, select and right-click your database, then choose "Import Data"
 > ![Epicor Tools Connection Page](/images/A-InitialDataLoad/SelectDB.png){: .center-image }
-> **Note:** If Access database is protected you will need to remove the database password before going through with the import
+> **Note:** If Access database is protected, you will need to remove the database password before going through with the import
 >
 > **Step 2:** Select Microsoft Access (Microsoft Jet Database Engine) in the Data Source field and specify the location of the access file in the File name, then hit "Next"
 > ![Epicor Tools Connection Page](/images/A-InitialDataLoad/DBSource.png){: .center-image }
 >
 > **Step 3:** Destination should be the new database created. Check that the following information is correct, then hit "Next" 
- - Destination: “SQL Server Native Client” corresponding to the version of sql server 
+ - Destination: “SQL Server Native Client” corresponding to the version of SQL Server 
  - Server Name: where the new Legacy Reporting Definitions database resides
  - Database: New database created for importing FRx Legacy Reporting Definitions from prior step
 > 
@@ -81,7 +81,7 @@ description: Step by step guide on data tier, initial data load, FRx Migration, 
 
 > To Do
 >
-> **Step 1:** Now log in to [portal.gointerject.com](https://portal.gointerject.com) and select Data Connections on left side menu. Change company to “Epicor Test III”.
+> **Step 1:** Now log in to [portal.gointerject.com](https://portal.gointerject.com) and select Data Connections on the left side menu. Change company to “Epicor Test III”.
 >
 > **Step 2:** Change Company to newly setup “Epicor Test III”  
 >

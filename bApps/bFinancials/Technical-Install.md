@@ -5,7 +5,7 @@ keywords: []
 description: 
 ---
 
-After you get access to Interject, there are three parts to installing Interject Financials - Epicor. First is the initial data tier install, then the data load from Epicor and FRx, then the actual report configurations in the Interject application. 
+After you get access to Interject, there are three parts to installing Interject Financials - Epicor Enterprise. First is the initial data tier install, then the data load from Epicor Enterprise and FRx, then the actual report configurations in the Interject application. 
 
 
 <table>
@@ -15,7 +15,7 @@ After you get access to Interject, there are three parts to installing Interject
             <tr>
                 <td>
                     <ul>
-                        <li>VPN Connectivity (if install is from Remote)</li>
+                        <li>VPN Connectivity (if install is Remote)</li>
                         <li>Verify and Download Interject Install Scripts</li>
                     </ul>    
                 </td>
@@ -33,10 +33,10 @@ After you get access to Interject, there are three parts to installing Interject
                   Base Install and data transfer
                 </td>
                 <td>
-                1.3.1
+                1.4.0
                 </td>
                 <td>
-                <a href="https://drive.google.com/file/d/1OaVEIOeZu05wwl6Lh4mJdFE0W9_ah90p/view?usp=sharing">Initial.Interject_Reporting.sql.</a>
+                <a href="https://drive.google.com/file/d/1PHvvuwF4MgOOc7I8_-SXbWokLclHvuJU/view?usp=sharing">Initial.Interject_Reporting.sql.</a> 
                 </td>
             </tr>
             <tr>
@@ -84,7 +84,7 @@ After you get access to Interject, there are three parts to installing Interject
 > - 5b: CertificatePassword \(create a certificate with a custom password\)
 >
 
-**Technical Note:** This will create  \[LocalDomain\]/InterjectUser group and provide it with a new db_Interject role. This role will have execute rights to 3 schemas \[Client\], \[Custom\], and \[Report\]. This script also creates a certificate and signs store procedures that have dynamic code. The certificate provides read only access to the sign store procedures on the already-used tables of your Epicor databases. If at any point these store procedures are changed, the certificate will be invalidated and will need to be reapplied.
+**Technical Note:** This will create \[LocalDomain\]/InterjectUser group and provide it with a new db_Interject role. This role will have execute rights to 3 schemas \[Client\], \[Custom\], and \[Report\]. This script also creates a certificate and signs store procedures that have dynamic code. The certificate provides read only access to the sign store procedures on the already-used tables of your Epicor databases. If at any point these store procedures are changed, the certificate will be invalidated and will need to be reapplied.
 
 
    

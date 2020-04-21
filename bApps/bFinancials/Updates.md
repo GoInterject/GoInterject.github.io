@@ -5,14 +5,14 @@ keywords: [Account, Epicor, Companies]
 description: INTERJECT™ Financials for Epicor Enterprise (This would cover topics that are specific to integration with Epicor Enterprise, and would potentially be different for each ERP) 
 ---
 
-<h2>Interject Financials - Epicor <br>
+<h2>Interject Financials - Epicor Enterprise<br>
 <a href="https://drive.google.com/file/d/1PHvvuwF4MgOOc7I8_-SXbWokLclHvuJU/view?usp=sharing">Latest Version 1.4.0</a></h2>
 
 Depending on which version of Interject Financials you're running, there are different update and rollback scripts. Before updating or rolling back a version, follow the procedure below. Once you know the version you're currently running, click on the appropriate dropdown below for the update release notes, the correct scripts for updating and rolling back versions, as well as procedures for running those scripts.
 
 ### To Check for Your Current Version
 
-After the inital instal, applying an update, or performing a rollback, you can confirm that your version is correct by:
+After the inital install, applying an update, or performing a rollback, you can confirm that your version is correct by:
 - Going to the **Report Library**
 - Opening the **Configuration Manager**
 - Checking the **Database Version** in the upper right of the report
@@ -47,7 +47,7 @@ After the inital instal, applying an update, or performing a rollback, you can c
             <td>
                 <ul> 
                     <li>Add Journal Entry Upload Tool </li>
-                    <li>Change in the config manager FullAccount dropdown to include rollup only</li>
+                    <li>Change the config manager FullAccount dropdown to include rollup only</li>
                     <li>Add FullAccount to COA Segment Lookup</li>
                 </ul>     
             </td>
@@ -55,16 +55,16 @@ After the inital instal, applying an update, or performing a rollback, you can c
                 <ul> 
                     <li>Extend MemberDefinition_Delta table to allow greater range</li>
                     <li>Fix rollup detail grouping not calculated correctly due to ranges function</li>
-                    <li>Fix rollup top definition when ranges is not numberic. Was not updating with new accounts</li>
-                    <li>Use the CalcNet column in Segment table for YTD Calculation instead of BS_DEMO which is not alway accurate </li>
-                    <li>Set correct defualt when blank YearMonth and error when using future YearMonth with YTD</li>
+                    <li>Fix rollup top definition when ranges are not numeric. Was not updating with new accounts</li>
+                    <li>Use the CalcNet column in Segment table for YTD Calculation instead of BS_DEMO, which is not always accurate </li>
+                    <li>Set correct default when YearMonth is blank and error when using future YearMonth with YTD</li>
                     <li>Remove custom tables and clean up database </li>
                     <li>Config Manager - Remove Merged Columns in Validated Rollup</li>
-                    <li>Adding Non-Validated Rollups back into dropdown list. Need the child definition to define the main rollup code.</li>
-                    <li>Fix primary key volition in when Build_Lookup_Import Loops Change_Detail insert</li>
-                    <li>Remove application role seucrity in TB and JEs add segment security instead Fincube</li>
-                    <li>Extend security for configureation tool</li>
-                    <li>Validate RollUp code in Row Template (VBA fails on invalid characters)</li>
+                    <li>Add Non-Validated Rollups back into dropdown list. Need the child definition to define the main rollup code. </li>
+                    <li>Fix primary key violation in Build_Lookup_Import when looping through Change_Detail insert</li>
+                    <li>Remove application role seucrity in TB and JEs and add segment security instead Fincube</li>
+                    <li>Extend security for configuration tool</li>
+                    <li>Validate RollUp code in Row Template (VBA fails on invalid characters) </li>
                     <li>Remove Seed Current Open Period / Reference column formula to Fiscal Period</li>
                     <li>Fiscal year month dropdown</li>
                 </ul>
@@ -96,7 +96,7 @@ The following steps must be taken to roll back one version. Note that this will 
 
 > To Roll Back
 >
-> In SQL Management Studio, run the script labeled **Rollback to 1.4.0** at the top of this page.
+> In SQL Management Studio, run the script labeled **Rollback to 1.3.1** at the top of this page.
 >
 > Run \[Interject_SetupScript1_Security\], as shown below, to re-enable security.
 >

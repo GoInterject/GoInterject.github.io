@@ -2,7 +2,7 @@
 title: Distributions
 layout: custom
 keywords: [Report, Epicor, Accounts]
-description: Step by step guide on using Interject Financials - Epicor financial report distribution.
+description: Step by step guide on using Interject Financials - Epicor Enterprise financial report distribution.
 ---
 
 After building your report templates, you can run automated distributions of those templates directly from the reports you build. This allows you to create the same report templates for each segment or company you import and select. Following are the steps to do distributions on your templates.
