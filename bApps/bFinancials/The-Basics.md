@@ -2,7 +2,7 @@
 title: Train
 layout: custom
 keywords: [Report, Epicor, Accounts]
-description: A quick guide to get users started navigating Interject for Financials Epicor.
+description: A quick guide to get users started navigating Interject for Financials Epicor Enterprise.
 ---
 
 ## Interject for Financials Quick Reference
