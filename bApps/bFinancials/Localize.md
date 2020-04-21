@@ -2,11 +2,11 @@
 title: Setup Client Reporting Library
 layout: custom
 keywords: [Report, Epicor, Accounts]
-description: Step by step guide on publishing custom-made reports to your company's report library in the Interject for Financials App for Epicor.
+description: Step by step guide on publishing custom-made reports to your company's report library in the Interject for Financials App for Epicor Enterprise.
 ---
 
 
-A subscription to Interject Financial - Epicor will provide a "Subscriptions" folder in the **Report Library** within the “Interject Financial Epicor” folder. The folder contains the latest versions of your transactional reports. A company or implementer may also choose to customize the parameters of these reports to better reflect company naming conventions. Following are the localization steps required to localize all transactional reports.
+A subscription to Interject Financial - Epicor Enterprise will provide a "Subscriptions" folder in the **Report Library** within the “Interject Financials Epicor” folder. The folder contains the latest versions of your transactional reports. A company or implementer may also choose to customize the parameters of these reports to better reflect company naming conventions. Following are the localization steps required to localize all transactional reports.
 
 
 > To-do
@@ -43,10 +43,10 @@ A subscription to Interject Financial - Epicor will provide a "Subscriptions" fo
 > - Status determines whether the report will be live or not
 >
 >
-> **Step 11:** Now fill in the "Drill Code" and "Target Tab Name" using the information your wrote down in step # 2. Click "Save".
+> **Step 11:** Now fill in the "Drill Code" and "Target Tab Name" using the information your wrote down in step #2. Click "Save".
 > ![Open Library](/images/Localize/CopyDrillCodes.png){: .center-image }
 >
-> **Step 12:** Open the report library and check for the report under your company name folder.
+> **Step 12:** Open the Report Library and check for the report under your company name folder.
 >
 >
 
