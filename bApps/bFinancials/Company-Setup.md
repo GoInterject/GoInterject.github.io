@@ -2,7 +2,7 @@
 title: Install
 layout: custom
 keywords: [Report, Epicor, Accounts]
-description: Step by step guide on data tier, initial data load, FRx Migration, and other key processes of installing of Interject for Financials Epicor.
+description: Step by step guide on data tier, initial data load, FRx Migration, and other key processes of installing of Interject for Financials Epicor Enterprise.
 ---
 
 Shortly after signing a Client contract, please submit specific client information to your assigned account manager at Interject. You will receive communication on each individual project based who your account manager is.
@@ -81,7 +81,7 @@ Please provide the following information:
 > To Do
 >
 > **Step 1:** Verify Client's SQL Server is a Compatible Version
-> SQL Server 2008 or greater is required. It is recommended that a Client provide at least a test and production environment in which they will to deploy Interject Financials - Epicor.  
+> SQL Server 2008 or greater is required. It is recommended that a Client provide at least a test and production environment in which they will to deploy Interject Financials - Epicor Enterprise.  
 (run "SELECT @@VERSION" in a query window to check version)
 >
 > **Step 2:** Prepare for using Windows Authentication by creating the active directory user group “Interject Users” on Default SQL Server Domain. The Interject User group should include any and all users of Interject Financials for Epicor. Separate groups may need to be set up if client has other uses of interject and requires separate optional but recommended security and authorization.
