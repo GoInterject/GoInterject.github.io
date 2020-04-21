@@ -2,10 +2,10 @@
 title: Transaction Reports
 layout: custom
 keywords: [Report, Epicor, Accounts]
-description: Step by step guide on using Interject Financials - Epicor Transaction reports.
+description: Step by step guide on using Interject Financials - Epicor Enterprise Transaction reports.
 ---
 
-Interject Financials - Epicor offers near-real time trial balance activity reports by Full Account, Natural Account, and GL Detail. In the following overview, you will learn to fill out the report parameters, pull and save data, and drill through detail in each report \(where available\). For a quick reference of hotkeys, refer to the [Train Home Page](https://docs.gointerject.com/bApps/bFinancials/The-Basics.html).
+Interject Financials - Epicor Enterprise offers near-real time trial balance activity reports by Full Account, Natural Account, and GL Detail. In the following overview, you will learn to fill out the report parameters, pull and save data, and drill through detail in each report \(where available\). For a quick reference of hotkeys, refer to the [Train Home Page](https://docs.gointerject.com/bApps/bFinancials/The-Basics.html).
 
 
 ### Fill Out Report Parameters and Pull Data
