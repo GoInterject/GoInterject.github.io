@@ -5,7 +5,7 @@ keywords: [Report, Epicor, Accounts]
 description: Step by step guide on setting up new and pre-packaged reports in the Interject for Financials App for Epicor.
 ---
 
-Interject Financials - Epicor offers a simple, step-by-step configuration tool to set up and test the monthly import schedule as well as the configuration of financial reports.
+Interject Financials - Epicor Enterprise offers a simple, step-by-step configuration tool to set up and test the monthly import schedule as well as the configuration of financial reports.
 
 #### Schedule Manager
 Set up and manage active Scheduler jobs
@@ -48,13 +48,13 @@ Use to upload budget data if required
 > **Note:** This is a one time setup and must be done before using the reporting. Once approved it cannot be changed.
 >
 > ![reportlib config](/images/Config/SegmentSetup.png){: .center-image }
-> - Verify all segments part of client epicor setup, if incorrect  contact Interject. This will be referenced in other setups describing how to Localize reports.
+> - Verify all segments are part of client Epicor Enterprise setup; if incorrect, contact Interject. This will be referenced in other setups describing how to Localize reports.
 > - Optional: Change the “Segment Display Name” to be more specific to client requirements. This will impact user filters and parameters used in reporting.
 > - Select “yes” from approved dropdown
-> - Hit Ctrl-Shift-U, or the Save button in the Interject ribbon, to save & approve 
+> - Hit Ctrl-Shift-U, or the Save button in the Interject ribbon, to save & approve.
 
 ### Account Rollup - Activate Seeded DEMO Config
-Account Rollups are important part to ensuring the “Control” and “Validity” of the mappings required in Financial reporting sections. Interject for Financials - Epicor provides two Seeded Rollups as samples of a configuration that can be used in initial client demos or other functions to illustrate the recommended use. They can be leveraged as a “reporting” control while building reports and can additionally support client demos or other preliminary reporting requirements. These seeded rollups are automatically generated using the Account Type mappings in the Epicor client GL.
+Account Rollups are important to ensuring the “Control” and “Validity” of the mappings required in Financial reporting sections. Interject for Financials - Epicor Enterprise provides two Seeded Rollups as samples of a configuration that can be used in initial client demos or other functions to illustrate the recommended use. They can be leveraged as a “reporting” control while building reports and can additionally support client demos or other preliminary reporting requirements. These seeded rollups are automatically generated using the Account Type mappings in the Epicor Enterprise client GL.
 
 > To Do
 >
@@ -64,12 +64,12 @@ Account Rollups are important part to ensuring the “Control” and “Validity
 > **Step 2:** In the Account Rollup Manager tab, select the BS_DEMO link
 > ![reportlib config](/images/Config/RollupMg.png){: .center-image }
 >
-> **Step 3:** In the next screen, hit Ctrl-Shift-U, or the Save button in the Interject ribbon after verifying Summary Message is "Rollup Validated - No Warnings"
+> **Step 3:** In the next screen, hit Ctrl-Shift-U, or the Save button in the Interject ribbon, after verifying Summary Message is "Rollup Validated - No Warnings"
 > ![reportlib config](/images/Config/RollupVal.png){: .center-image }
 >
 > **Step 4:** Go back to the "Rollup Manager" tab and select the "PL_Demo" link
 >
-> **Step 5:** Hit Ctrl-Shift-U, or the Save button in the Interject ribbon after verifying Summary Message is "Rollup Validated - No Warnings"
+> **Step 5:** Hit Ctrl-Shift-U, or the Save button in the Interject ribbon, after verifying Summary Message is "Rollup Validated - No Warnings"
 >  ![reportlib config](/images/Config/PLVal.png){: .center-image }
 >
 
@@ -90,7 +90,7 @@ Other rollups can be easily created using the same process in the Other Rollups 
 
 
 ### Converting FRx Row Definitions
-Interject provides a custom template according to the Epicor Segment Assessment. This is called the Report Conversion Template. To convert your FRx Row definitions follow the steps below:
+Interject provides a custom template according to the Epicor Enterprise Segment Assessment. This is called the Report Conversion Template. To convert your FRx Row definitions follow the steps below:
 > To-do
 >
 > **Step 1:** In the Initial Row Template Mgr tab, use Ctrl-Shift-K or the Drill button to add or edit new templates.
