@@ -5,7 +5,7 @@ keywords: [Report, Epicor, Accounts]
 description: Step by step guide on using Interject Financials - Epicor financial report templates.
 ---
 
-The FRx Catalog includes everything you'll need to replace you FRx reporting process with Interject for  Financials without recreating it from scratch. It offers an easy reference when configuring Interject for Financials, and it includes the following tabs:
+The FRx Catalog includes everything you'll need to replace your FRx reporting process with Interject Financials without recreating it from scratch. It offers an easy reference when configuring Interject Financials, and it includes the following tabs:
 
 <table>
     <tr>
@@ -25,7 +25,7 @@ The FRx Catalog includes everything you'll need to replace you FRx reporting pro
                 <span style="font-weight:bold">FRx Row Format</span>
             </td>
             <td>
-                Details the row format of a specific report for replicating in a new Interject for Financials Report template  
+                Details the row format of a specific report for replication in a new Interject Financials Report template  
             </td>
         </tr>
         <tr>
