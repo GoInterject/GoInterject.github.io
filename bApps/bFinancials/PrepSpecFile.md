@@ -2,7 +2,7 @@
 title: Install
 layout: custom
 keywords: [Report, Epicor, Accounts]
-description: Step by step guide on data tier, initial data load, FRx Migration, and other key processes of installing of Interject for Financials Epicor.
+description: Step by step guide on data tier, initial data load, FRx Migration, and other key processes of installing of Interject for Financials Epicor Enterprise.
 ---
 
 ## Preparing the FRx Report Specification File for Migration
@@ -25,7 +25,7 @@ Before completing the FRx migration, you will likely need to find your FRx Repor
 
 > To Do
 >
-> **Step 1:** Copy the .F32 file to a temporary work directory on your local machine. Rename the file extension to .MDB, then open the file in MD Access.
+> **Step 1:** Copy the .F32 file to a temporary work directory on your local machine. Rename the file extension to .MDB, then open the file in MS Access.
 >
 > **Step 2:** Enter the database password \(contact your implementor for the password\). Click "Save As," then click OK on "Invalid Password" message. Re-enter password.
 > ![](/images/A-InitialDataLoad/SaveLocalFRX.png){: .center-image }
@@ -33,7 +33,7 @@ Before completing the FRx migration, you will likely need to find your FRx Repor
 > **Step 3:** Click through all "missing or broken references" messages.
 > ![](/images/A-InitialDataLoad/ClickThroughErrors.png){: .center-image }
 >
-> **Step 4:** Select a path and provide new file name, for example "FRxDemo_Interject.mdb." Click save.
+> **Step 4:** Select a path and provide a new file name, for example "FRxDemo_Interject.mdb." Click save.
 > ![](/images/A-InitialDataLoad/SaveNewFile.png){: .center-image }
 >
 > **Step 5:** Click OK on the “Not a valid password” error and re-enter password. **Note:** You will be prompted to do this twice. Then enable content.
