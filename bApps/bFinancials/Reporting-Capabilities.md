@@ -9,7 +9,7 @@ description: INTERJECT™ Financials for Epicor Enterprise comes with a robust i
 
 ### Build Financial Statements
 
-Interject financials - Epicor provides a simple template configuration tool to build out flexible, robust FRx-like report templates. Report templates can be governed by admin configured definitions and published to the central report library, allowing reliable, trustworthy reporting. Ad hoc or ungoverned reports and templates can also be built when more reporting flexibility is required.
+Interject Financials - Epicor Enterprise provides a simple template configuration tool to build out flexible, robust FRx-like report templates. Report templates can be governed by admin configured definitions and published to the central report library, allowing reliable, trustworthy reporting. Ad hoc or ungoverned reports and templates can also be built when more reporting flexibility is required.
 
 
 >Included Types
@@ -26,7 +26,7 @@ Interject financials - Epicor provides a simple template configuration tool to b
 >
 >**Other/Custom**
 >
->The configuration tool lets you build and publish reports governed by account definitions, with custom parameter, row, and column definitions as well. All custom configured governed reports are validated in a test process, versioned, and controlled by their governing definition so that users can trust each governed report is verified accurate and up-to-date.
+>The configuration tool lets you build and publish reports governed by account definitions, with custom parameters, row, and column definitions. All custom configured governed reports are validated in a test process, versioned, and controlled by their governing definition so that users can trust each governed report is verified accurate and up-to-date.
 
 
 ### Transaction Reports
@@ -43,7 +43,7 @@ Interject Financials - Epicor transaction reports are governed by admin-configur
 >
 >**JE Detail**
 >
->Aenean a tristique augue. Morbi vel dapibus libero, sed accumsan risus. Mauris eu nibh non augue vulputate porta sed in ipsum. Nam finibus neque et mauris fermentum, eget facilisis nulla rhoncus.
+>JE Details gives a detailed view of each journal entry when drilled into.
 >
 >
 >
