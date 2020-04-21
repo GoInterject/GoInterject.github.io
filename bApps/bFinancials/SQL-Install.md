@@ -38,7 +38,7 @@ In this case, the result should be **PROD \| BETA \| DEV:Mail**
 
 ### INTERJECT Database and User Certificate
 
-These can be added to stored procs with dynamic SQL.
+These can be added to stored procedures with dynamic SQL.
 
 **Certificate Name:** "InterjectName"
 
@@ -48,16 +48,16 @@ These can be added to stored procs with dynamic SQL.
 
 ## Deployment via SSMS
 
-The following activies are to be completed while conected to the SQL Server via SSMS using a user account belonging to the SysAdmin Server Role. Scripts should be executed in order to work correctly.
+The following activies are to be completed while connected to the SQL Server via SSMS using a user account belonging to the SysAdmin Server Role. Scripts should be executed in order to work correctly.
 
 
 **Step 1**
 
-Execute **\01.PrepareServer_MasterDB.sql** in **[master]** db to implement the following on the SQL Server. Estimated run time is a minute.
+Execute **\01.PrepareServer_MasterDB.sql** in **[master]** db to implement the following on the SQL Server. Estimated run time is 1 minute.
 
 What it will do:
 
-- CREATE [Interject_Reporting] database, if not already exist 
+- CREATE [Interject_Reporting] database, if not already created 
 
 **Step 2**
 
@@ -135,11 +135,11 @@ What it will do:
 
 **Step 6**
 
-Edit and Execute each of the following scripts to install the SQL Server Agent Jobs that accompany the Interject Solution. 
+Edit and Execute each of the following scripts to install the SQL Server Agent Jobs that accompany the Interject solution. 
 
 -	10.SQLAgentJob_Interject_Reporting_AddJobsFromScheduler.sql
 -	10.SQLAgentJob_Interject_Reporting_CheckSchedule_ImportActual.sql
 -	10.SQLAgentJob_Interject_Reporting_CheckSchedule_ImportBudget.sql
 -	10.SQLAgentJob_Interject_Reporting_ImportEpicor_DeleteRecords.sql
 
-The scripts include default schedules and assumes to be executed on same server as the **[Interject_Reporting]** and Epicor company databases.
+The scripts include default schedules and assume being executed on same server as the **[Interject_Reporting]** and Epicor company databases.
