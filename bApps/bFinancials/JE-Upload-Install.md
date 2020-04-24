@@ -38,7 +38,7 @@ The following setup instructions will walk you through installation of the JE Up
 >       ,@CertificatePassword       =  'myPassword1234'
 >```
 >
->**Step 6:** Execute the following Script DB to initialize date from Epicor for Journal Entry Upload
+>**Step 6:** Execute the following Script DB to initialize data from Epicor for Journal Entry Upload
 > 
 >* 6a
 > ```SQL
