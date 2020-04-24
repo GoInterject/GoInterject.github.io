@@ -38,14 +38,16 @@ The following setup instructions will walk you through installation of the JE Up
 >       ,@CertificatePassword       =  'myPassword1234'
 >```
 >
-> - 5a: Execute the following Script DB to initialize Epicor Enterprise Data
+>**Step 6:** Execute the following Script DB to initialize date from Epicor for Journal Entry Upload
+> 
+>* 6a
 > ```SQL
 > --Import configuration setup from Epicor and initial setup of Interject
 > EXEC [Setup].[ERP_InstallScript1_DatabaseConfig]
 >        @MasterEpicorDatabase          = '[<INSERT Master DB NAME>]'
 >       ,@DefaultDatabaseNameSource     = '[<INSERT Default DB name>]'
 > ```
->
+>* 6b
 > ```SQL
 > --Import data
 > EXEC [Setup].[ERP_InstallScript2_EpicorImport]
