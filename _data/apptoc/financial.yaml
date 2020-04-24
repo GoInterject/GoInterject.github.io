@@ -83,6 +83,8 @@ install:
     path: /bApps/bFinancials/FRxMigration.html
   - title: Moving From Test to Live
     path: /bApps/bFinancials/Test2Live.html
+  - title: JE Upload Install
+    path: /bApps/bFinancials/JE-Upload-Install.html
 update:
   - title: Update Manager
     path: /bApps/bFinancials/Updates.html
