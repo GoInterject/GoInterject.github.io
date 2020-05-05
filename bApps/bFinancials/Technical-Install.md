@@ -33,10 +33,10 @@ After you get access to Interject, there are three parts to installing Interject
                   Base Install and data transfer
                 </td>
                 <td>
-                1.4.0
+                1.4.1
                 </td>
                 <td>
-                <a href="https://drive.google.com/file/d/1PHvvuwF4MgOOc7I8_-SXbWokLclHvuJU/view?usp=sharing">Initial.Interject_Reporting.sql.</a> 
+                <a href="https://drive.google.com/file/d/1GnOSqp0mQvvg-6AE1LxFaIQ6MFolrJl5/view?usp=sharing">Initial.Interject_Reporting.sql.</a> 
                 </td>
             </tr>
             <tr>

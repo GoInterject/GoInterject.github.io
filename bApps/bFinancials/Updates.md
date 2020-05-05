@@ -6,7 +6,7 @@ description: INTERJECT™ Financials for Epicor Enterprise (This would cover top
 ---
 
 <h2>Interject Financials - Epicor Enterprise<br>
-<a href="https://drive.google.com/file/d/1PHvvuwF4MgOOc7I8_-SXbWokLclHvuJU/view?usp=sharing">Latest Version 1.4.0</a></h2>
+<a href="https://drive.google.com/file/d/1GnOSqp0mQvvg-6AE1LxFaIQ6MFolrJl5/view?usp=sharing">Latest Version 1.4.1</a></h2>
 
 Depending on which version of Interject Financials you're running, there are different update and rollback scripts. Before updating or rolling back a version, follow the procedure below. Once you know the version you're currently running, click on the appropriate dropdown below for the update release notes, the correct scripts for updating and rolling back versions, as well as procedures for running those scripts.
 
@@ -22,22 +22,25 @@ After the inital install, applying an update, or performing a rollback, you can 
 ### Click Your Version Below for Release Notes and Update Scripts
 
 
-<button class="collapsible"><strong>For Users With Version 1.3.1</strong></button>
+<button class="collapsible"><strong>For Users With Version 1.3.1 or 1.4.0</strong></button>
 <div markdown="1" class="panel">
 
 <table> 
     <tr>
-        <th><span style="font-weight:bold">Update for Previous Install:</span> <a href="https://drive.google.com/file/d/1BMaSaCvxPDSlb9A2XfeXAIZI_xI92oar/view?usp=sharing">from1.3.1to1.4.0_Update.Interject_Reporting.SQL</a></th>
+        <th><span style="font-weight:bold">Update for Previous Install:</span> <a href="https://drive.google.com/file/d/1vJXsTUWdDOK7S4Shk5RJsFWk68PcP8qb/view?usp=sharing">from1.3.1or1.4.0to1.4.1_Update.Interject_Reporting.SQL</a></th>
     </tr>
     <tr>
-        <th><span style="font-weight:bold">Rollback to 1.3.1:</span> <a href="https://drive.google.com/file/d/1PlsZoo2JLLQvBe9pj5s1Ekt6Wnvv0We9/view?usp=sharing">from1.4.0to1.3.1_Rollback.Interject_Reporting.SQL</a></th>
+        <th><span style="font-weight:bold">Rollback to 1.4.0:</span> <a href="https://drive.google.com/file/d/1yLtQVLOYuQwLV3Ifquq4ZyYdus6LSnny/view?usp=sharing">from1.4.1to1.4.0_Rollback.Interject_Reporting.SQL</a></th>
+    </tr>
+    <tr>
+        <th><span style="font-weight:bold">Rollback to 1.3.1:</span> <a href="https://drive.google.com/file/d/1BWfzw7ZZ4X-oExmEz_KxGu-ANdz1lGXc/view?usp=sharing">from1.4.1to1.3.1_Rollback.Interject_Reporting.SQL</a></th>
     </tr>
 </table>
 
 ### Current Version Notes
 <table>
     <tr>
-        <th><span style="font-weight:bold">Interject for Financials - Current Version 1.4.0 </span></th>
+        <th><span style="font-weight:bold">Interject for Financials - Current Version 1.4 </span></th>
     </tr>
         <tr>
         <th><span style="font-weight:bold">Features</span></th>
@@ -96,7 +99,7 @@ The following steps must be taken to roll back one version. Note that this will 
 
 > To Roll Back
 >
-> In SQL Management Studio, run the script labeled **Rollback to 1.3.1** at the top of this page.
+> In SQL Management Studio, run the script labeled **Rollback to ** previous install at the top of this page.
 >
 > Run \[Interject_SetupScript1_Security\], as shown below, to re-enable security.
 >
