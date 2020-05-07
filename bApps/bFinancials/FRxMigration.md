@@ -4,6 +4,25 @@ layout: custom
 keywords: [Report, Epicor, Accounts]
 description: Step by step guide on data tier, initial data load, FRx Migration, and other key processes of installing of Interject for Financials Epicor Enterprise.
 ---
+You will need the following script to complete this installation:
+<table>
+   <tr>
+    <th><span style="font-weight:bold">Script</span></th>
+    <th><span style="font-weight:bold">Version</span></th>
+    <th><span style="font-weight:bold">Link</span></th>
+   </tr>
+            <tr>
+                <td> 
+                   FRX Migration
+                </td>
+                <td>
+                1.0.6
+                </td>
+                <td>
+                <a href="https://drive.google.com/file/d/1UcSwEf_oKjr3eVSSUJKyzZyB60YGJsaM/view?usp=sharing">Migration Script</a>
+                </td>
+            </tr>
+</table>
 
 <table>
    <tr>
