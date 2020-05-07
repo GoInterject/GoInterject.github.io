@@ -47,23 +47,233 @@ description: INTERJECT™ Financials for Epicor Enterprise (This would cover top
 
 <table>
     <tr>
+        <th style="font-weight:bold; background-color: #0D2338; color: #fff"><span>Feature</span></th>
         <th><span style="font-weight:bold">Standard</span></th>
+        <th><span style="font-weight:bold">Professional</span></th>
         <th><span style="font-weight:bold">Enterprise</span></th>
     </tr>
         <tr>
-            <td>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>    
+            <td style="font-weight: bold;">
+                Journal Entry - Upload   
             </td>
-            <td>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+            <td style="font-size: 1.5em; color: green; ">
+                &#x2611;
+            </td>
+            <td style="font-size: 1.5em; color: green; ">
+                &#x2611;
+            </td>
+            <td style="font-size: 1.5em; color: green; ">
+                &#x2611;
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold;">
+                Journal Entry - Multi-Currency   
+            </td>
+            <td style="font-size: 1.5em; color: green; ">
+                &#x2611;
+            </td>
+            <td style="font-size: 1.5em; color: green; ">
+                &#x2611;
+            </td>
+            <td style="font-size: 1.5em; color: green; ">
+                &#x2611;
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold;">
+                Journal Entry - Sign-Off  
+            </td>
+            <td style="font-size: 1.5em; color: red; ">
+                &#x2612;
+            </td>
+            <td style="font-size: 1.5em; color: green; ">
+                &#x2611;
+            </td>
+            <td style="font-size: 1.5em; color: green; ">
+                &#x2611;
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold;">
+                Journal Entry - Custom-Validation  
+            </td>
+            <td style="font-size: 1.5em; color: red; ">
+                &#x2612;
+            </td>
+            <td style="font-size: 1.5em; color: green; ">
+                &#x2611;
+            </td>
+            <td style="font-size: 1.5em; color: green; ">
+                &#x2611;
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold;">
+                Journal Entry - Workflow
+            </td>
+            <td style="font-size: 1.5em; color: red; ">
+                &#x2612;
+            </td>
+            <td style="font-size: 1.5em; color: red; ">
+                &#x2612;
+            </td>
+            <td style="font-size: 1.5em; color: green; ">
+                &#x2611;
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold;">
+                Manual Reversal of Existing Journal Entry
+            </td>
+            <td style="font-size: 1.5em; color: red; ">
+                &#x2612;
+            </td>
+            <td style="font-size: 1.5em; color: green; ">
+                &#x2611;
+            </td>
+            <td style="font-size: 1.5em; color: green; ">
+                &#x2611;
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold;">
+                Journal Entry Export
+            </td>
+            <td style="font-size: 1.5em; color: red; ">
+                &#x2612;
+            </td>
+            <td style="font-size: 1.5em; color: green; ">
+                &#x2611;
+            </td>
+            <td style="font-size: 1.5em; color: green; ">
+                &#x2611;
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold;">
+                Staging Entries
+            </td>
+            <td style="font-size: 1.5em; color: red; ">
+                &#x2612;
+            </td>
+            <td style="font-size: 1.5em; color: green; ">
+                &#x2611;
+            </td>
+            <td style="font-size: 1.5em; color: green; ">
+                &#x2611;
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold;">
+                Financial Reporting - Basic
+            </td>
+            <td style="font-size: 1.5em; color: green; ">
+                &#x2611;
+            </td>
+            <td style="font-size: 1.5em; color: green; ">
+                &#x2611;
+            </td>
+            <td style="font-size: 1.5em; color: green; ">
+                &#x2611;
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold;">
+                Financial Reporting - Staging
+            </td>
+            <td style="font-size: 1.5em; color: red; ">
+                &#x2612;
+            </td>
+            <td style="font-size: 1.5em; color: green; ">
+                &#x2611;
+            </td>
+            <td style="font-size: 1.5em; color: green; ">
+                &#x2611;
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold;">
+                Close Management
+            </td>
+            <td style="font-size: 1.5em; color: red; ">
+                &#x2612;
+            </td>
+            <td style="font-size: 1.5em; color: red; ">
+                &#x2612;
+            </td>
+            <td style="font-size: 1.5em; color: green; ">
+                &#x2611;
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold;">
+                Reconciliation Assistant
+            </td>
+            <td style="font-size: 1.5em; color: red; ">
+                &#x2612;
+            </td>
+            <td style="font-size: 1.5em; color: red; ">
+                &#x2612;
+            </td>
+            <td style="font-size: 1.5em; color: green; ">
+                &#x2611;
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold;">
+                Tasks Planned
+            </td>
+            <td style="font-size: 1.5em; color: red; ">
+                &#x2612;
+            </td>
+            <td style="font-size: 1.5em; color: red; ">
+                &#x2612;
+            </td>
+            <td style="font-size: 1.5em; color: green; ">
+                &#x2611;
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold;">
+                Budgeting - Upload Basic
+            </td>
+            <td style="font-size: 1.5em; color: green; ">
+                &#x2611;
+            </td>
+            <td style="font-size: 1.5em; color: green; ">
+                &#x2611;
+            </td>
+            <td style="font-size: 1.5em; color: green; ">
+                &#x2611;
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold;">
+                Budgeting - Versioning and Workflow
+            </td>
+            <td style="font-size: 1.5em; color: red; ">
+                &#x2612;
+            </td>
+            <td style="font-size: 1.5em; color: red; ">
+                &#x2612;
+            </td>
+            <td style="font-size: 1.5em; color: green; ">
+                &#x2611;
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold;">
+                Budgeting - Audit
+            </td>
+            <td style="font-size: 1.5em; color: red; ">
+                &#x2612;
+            </td>
+            <td style="font-size: 1.5em; color: red; ">
+                &#x2612;
+            </td>
+            <td style="font-size: 1.5em; color: green; ">
+                &#x2611;
             </td>
         </tr>
 </table> 
