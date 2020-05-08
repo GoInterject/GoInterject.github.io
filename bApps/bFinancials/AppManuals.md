@@ -11,7 +11,7 @@ While Interect's Financils Platform for Epicor Enterprise is a comprehesive fina
 
 ## [Transaction Reports](/bApps/bFinancials/TransactionReports.html) 
 
-## [General Ledger Reports](/bApps/bFinancials/GLReport.html)
+## [General Ledger Reports](/bApps/bFinancials/GLReports.html)
 
 ## [FRx Catalog](/bApps/bFinancials/FRxCatalog.html)
 
