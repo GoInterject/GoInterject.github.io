@@ -6,7 +6,7 @@ description: INTERJECT™ Financials for Epicor Enterprise (This would cover top
 ---
 
 <h2>Interject Financials - Epicor Enterprise<br>
-<a href="https://drive.google.com/file/d/1PHvvuwF4MgOOc7I8_-SXbWokLclHvuJU/view?usp=sharing">Latest Version 1.4.0</a></h2>
+<a href="https://drive.google.com/file/d/1xkTZZHYmvh5nBX63d23d3kSt074Z6Xqt/view?usp=sharing">Latest Version 1.4.3</a></h2>
 
 Depending on which version of Interject Financials you're running, there are different update and rollback scripts. Before updating or rolling back a version, follow the procedure below. Once you know the version you're currently running, click on the appropriate dropdown below for the update release notes, the correct scripts for updating and rolling back versions, as well as procedures for running those scripts.
 
@@ -22,22 +22,22 @@ After the inital install, applying an update, or performing a rollback, you can 
 ### Click Your Version Below for Release Notes and Update Scripts
 
 
-<button class="collapsible"><strong>For Users With Version 1.3.1</strong></button>
+<button class="collapsible"><strong>For Users With Version 1.3.1-1.4.2</strong></button>
 <div markdown="1" class="panel">
 
 <table> 
     <tr>
-        <th><span style="font-weight:bold">Update for Previous Install:</span> <a href="https://drive.google.com/file/d/1BMaSaCvxPDSlb9A2XfeXAIZI_xI92oar/view?usp=sharing">from1.3.1to1.4.0_Update.Interject_Reporting.SQL</a></th>
-    </tr>
-    <tr>
-        <th><span style="font-weight:bold">Rollback to 1.3.1:</span> <a href="https://drive.google.com/file/d/1PlsZoo2JLLQvBe9pj5s1Ekt6Wnvv0We9/view?usp=sharing">from1.4.0to1.3.1_Rollback.Interject_Reporting.SQL</a></th>
-    </tr>
+        <th><span style="font-weight:bold">Update for Previous Install:</span> <a href="https://drive.google.com/file/d/1vTB65BgOOnIcuNexA7IhmFk7xD29RB_B/view?usp=sharing">from1.3.1-1.4.2to1.4.3_Update.Interject_Reporting.SQL</a></th>
+    </tr> 
+     <tr>
+        <th><span style="font-weight:bold">Rollback to 1.3.1:</span> <a href="https://drive.google.com/file/d/12P9D04fzdyf6stZzaq3WnExVT8cPZtSw/view?usp=sharing">from1.4.3to1.3.1_Rollback.Interject_Reporting.SQL</a></th>
+    </tr> 
 </table>
 
 ### Current Version Notes
 <table>
     <tr>
-        <th><span style="font-weight:bold">Interject for Financials - Current Version 1.4.0 </span></th>
+        <th><span style="font-weight:bold">Interject for Financials - Current Version 1.4.3 </span></th>
     </tr>
         <tr>
         <th><span style="font-weight:bold">Features</span></th>
@@ -54,6 +54,7 @@ After the inital install, applying an update, or performing a rollback, you can 
             <td>
                 <ul> 
                     <li>Extend MemberDefinition_Delta table to allow greater range</li>
+                    <li>Extend segments to use INT from SMALLINT</li>
                     <li>Fix rollup detail grouping not calculated correctly due to ranges function</li>
                     <li>Fix rollup top definition when ranges are not numeric. Was not updating with new accounts</li>
                     <li>Use the CalcNet column in Segment table for YTD Calculation instead of BS_DEMO, which is not always accurate </li>
