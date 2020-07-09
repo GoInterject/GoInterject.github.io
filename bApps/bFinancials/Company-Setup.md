@@ -84,7 +84,7 @@ Please provide the following information:
 > SQL Server 2008 or greater is required. It is recommended that a Client provide at least a test and production environment in which they will to deploy Interject Financials - Epicor Enterprise.  
 (run "SELECT @@VERSION" in a query window to check version)
 >
-> **Step 2:** Prepare for using Windows Authentication by creating the active directory user group “Interject Users” on Default SQL Server Domain. The Interject User group should include any and all users of Interject Financials for Epicor. Separate groups may need to be set up if client has other uses of interject and requires separate optional but recommended security and authorization.
+> **Step 2:** Prepare for using Windows Authentication by creating the active directory user group “Interject Users” on Default SQL Server Domain. The Interject Usergroup should include any and all users of Interject Financials for Epicor. Separate groups may need to be set up if client has other uses of interject and requires separate optional but recommended security and authorization.
 >
 > **2a:** You can find the value of the SELECT DEFAULT_DOMAIN() in SQL Management Studio
 >
