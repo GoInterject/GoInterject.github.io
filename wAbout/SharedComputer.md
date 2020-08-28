@@ -88,6 +88,7 @@ The Per-Computer installation installs INTERJECT for multiple users on one compu
 ![](/images/SharedComputer/36.jpg)
 
   
+  <a href="https://docs.gointerject.com/wAbout/Logging-In.html"><h2>Continue Here for Login Information</h2></a>
 
 
 If you run into any issues, email us at [ help@gointerject.com ](mailto:help@gointerject.com). 
