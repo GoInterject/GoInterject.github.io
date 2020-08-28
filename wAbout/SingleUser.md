@@ -11,7 +11,7 @@ INTERJECT aims to make the installation process as simple and painless as possib
 
 ###  Installing INTERJECT 
 
-**Step 1:** Navigate to  [ https://portal.gointerject.com ](https://portal.gointerject.com/login.html)
+**Step 1:** Navigate to  <a target="blank" href="https://portal.gointerject.com/login.html">https://portal.gointerject.com</a>
 
 **Step 2:** If you have an existing account, log in to the portal website with the same credentials used for the INTERJECT Excel Add-in. If you do not have an account, go [ here. ](https://portal.gointerject.com/invite.html?mode=create)
 
