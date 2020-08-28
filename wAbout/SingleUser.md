@@ -91,7 +91,9 @@ INTERJECT aims to make the installation process as simple and painless as possib
 
 ![](/images/SingleUser/13.jpg)
 
-  
+
+
+<a href="https://docs.gointerject.com/wAbout/Logging-In.html#before-using-interject-heres-how-to-login"><h2>Continue Here For Login Information</h2></a>
 
 
 If you run into any issues, email us at [ help@gointerject.com ](mailto:help@gointerject.com). 
