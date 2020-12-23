@@ -28,7 +28,7 @@ The following setup instructions will walk you through installation of the JE Up
 > **Step 3:** Point the script window to the new database
 > ![Mgt Studio Point](/images/A-SQL-Installation/MgtStudioPointTo.png){: .center-image }
 > 
-> **Step 4:** Execute the  [1.0.0_Initial.Interject_JournalEntryUpload](https://drive.google.com/file/d/1epkgbVQyiboiCXCjYYjt9OE64NKcddK6/view?usp=sharing) script
+> **Step 4:** Execute the  [1.1.0_Initial.Interject_JournalEntryUpload](https://drive.google.com/file/d/10Gxxb4mjKxWpl0v49x1IWK97w6xm-EKV/view?usp=sharing) script
 >
 > **Step 5:** Create security objects and grant read-only access to Epicor tables by passing the following parameters using the following script as an example:
 >

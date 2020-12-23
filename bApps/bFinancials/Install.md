@@ -20,7 +20,7 @@ After gaining access as a new company, there are three parts to installing Inter
             <tr>
                 <td>
                     <ul>
-                        <li>SQL Server 2008</li>
+                        <li>SQL Server 2014</li>
                         <li>SQL Management Studio</li>
                         <li>Initial Deploy Scripts</li>
                         <li>User Admin on SQL Server</li>
