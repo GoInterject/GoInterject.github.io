@@ -86,8 +86,11 @@ install:
   - title: JE Upload Install
     path: /bApps/bFinancials/JE-Upload-Install.html
 update:
-  - title: Update Manager
+  - title: Financial Package
     path: /bApps/bFinancials/Updates.html
+  - title: Journal Entry Upload
+    path: /bApps/bFinancials/Update-JE-Upload.html
+
 
 configure:
   - title: Configuring Interject for Financials
