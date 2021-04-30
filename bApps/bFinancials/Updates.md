@@ -6,7 +6,7 @@ description: INTERJECT™ Financials for Epicor Enterprise (This would cover top
 ---
 
 <h2>Interject Financials - Epicor Enterprise<br>
-<a href="https://drive.google.com/file/d/1nj0aTfVWNTPPtUuxKRhVK_2VI8grAehd/view?usp=sharing">Latest Version 1.5.0</a></h2>
+<a href="https://drive.google.com/file/d/1yi0Q13NY9HQb0HujLXfAoxT8Y9F8o0eK/view?usp=sharing">Latest Version 1.5.3</a></h2>
 
 Depending on which version of Interject Financials you're running, there are different update and rollback scripts. Before updating or rolling back a version, follow the procedure below. Once you know the version you're currently running, click on the appropriate dropdown below for the update release notes, the correct scripts for updating and rolling back versions, as well as procedures for running those scripts.
 
@@ -22,23 +22,25 @@ After the inital install, applying an update, or performing a rollback, you can 
 ### Click Your Version Below for Release Notes and Update Scripts
 
 
-
-<button class="collapsible"><strong>For Users With Version 1.4.3</strong></button>
+<button class="collapsible"><strong>For Users With Version 1.4.3-1.5.2</strong></button>
 <div markdown="1" class="panel">
 
 <table> 
     <tr>
-        <th><span style="font-weight:bold">Update for Previous Install:</span> <a href="https://drive.google.com/file/d/1nHf3uFf2oPTJmYVdTMQeX8yJkeUMjzPg/view?usp=sharing">from1.4.3to1.5.0_Update.Interject_Reporting.SQL</a></th>
-    </tr> 
+        <th><span style="font-weight:bold">Update for Previous Install:</span> <a href="https://drive.google.com/file/d/1-dtC5-y6oJ2chxrA0OYA26R8Xjoz7KXp/view?usp=sharing">from1.4.3-1.5.2to1.5.3_Update.Interject_Reporting.SQL</a></th>
+    </tr>  
      <tr>
-        <th><span style="font-weight:bold">Rollback to 1.4.3:</span> <a href="https://drive.google.com/file/d/1rLLxdcLIIz7S-PvBrHdWtqh7Ih9kCbe_/view?usp=sharing">from1.50to1.4.3_Rollback.Interject_Reporting.SQL</a></th>
+        <th><span style="font-weight:bold">Rollback to 1.5.0:</span> <a href="https://drive.google.com/file/d/1iReLXvAmaKwsBG56HWuIMBhk2DJInTca/view?usp=sharing">from1.5..3to1.5.0_Rollback.Interject_Reporting.SQL</a></th>
+    </tr>
+     <tr>
+        <th><span style="font-weight:bold">Rollback to 1.4.3:</span> <a href="https://drive.google.com/file/d/1QaJciYDC-IN-VbJDHcZU45XOUI9DYCbV/view?usp=sharing">from1.5..3to1.4.3_Rollback.Interject_Reporting.SQL</a></th>
     </tr> 
 </table>
 
 ### Current Version Notes
 <table>
     <tr>
-        <th><span style="font-weight:bold">Interject for Financials - Current Version 1.5.0 </span></th>
+        <th><span style="font-weight:bold">Interject for Financials - Current Version 1.5.3 </span></th>
     </tr>
         <tr>
         <th><span style="font-weight:bold">Features</span></th>
@@ -47,13 +49,17 @@ After the inital install, applying an update, or performing a rollback, you can 
         <tr>
             <td>
                 <ul>   
-                    <li>Add better dropdown options in the journal entry upload tool limit full account options to originating company. </li>
+                    <li>Add better dropdown options in the journal entry upload tool limit full account options to originating company.</li>
                 </ul>     
             </td>
             <td>
                 <ul> 
                     <li>In Journal entry tool fix multi-currency balancing validation when entry are in mix currencies.</li>
-                    <li>In fincube fix range for numeric ranges.</li> 
+                    <li>In fincube fix range for numeric ranges.</li>  
+                    <li>Fix multi-currency balancing when entries are in multiple currencies.</li> 
+                    <li>Fix range for numeric ranges.</li> 
+                    <li>Fix security.</li> 
+                    <li>Remove old objects.</li> 
                 </ul>
             </td>
         </tr>
@@ -95,95 +101,5 @@ The following steps must be taken to roll back one version. Note that this will 
 >
 
 </div>
-
-
-
-<button class="collapsible"><strong>For Users With Version 1.3.1-1.4.2</strong></button>
-<div markdown="1" class="panel">
-
-<table> 
-    <tr>
-        <th><span style="font-weight:bold">Update for Previous Install:</span> <a href="https://drive.google.com/file/d/1vTB65BgOOnIcuNexA7IhmFk7xD29RB_B/view?usp=sharing">from1.3.1-1.4.2to1.4.3_Update.Interject_Reporting.SQL</a></th>
-    </tr> 
-     <tr>
-        <th><span style="font-weight:bold">Rollback to 1.3.1:</span> <a href="https://drive.google.com/file/d/12P9D04fzdyf6stZzaq3WnExVT8cPZtSw/view?usp=sharing">from1.4.3to1.3.1_Rollback.Interject_Reporting.SQL</a></th>
-    </tr> 
-</table>
-
-### Current Version Notes
-<table>
-    <tr>
-        <th><span style="font-weight:bold">Interject for Financials - Current Version 1.4.3 </span></th>
-    </tr>
-        <tr>
-        <th><span style="font-weight:bold">Features</span></th>
-        <th><span style="font-weight:bold">Bugs Fixed</span></th>
-        </tr>
-        <tr>
-            <td>
-                <ul> 
-                    <li>Add Journal Entry Upload Tool </li>
-                    <li>Change the config manager FullAccount dropdown to include rollup only</li>
-                    <li>Add FullAccount to COA Segment Lookup</li>
-                </ul>     
-            </td>
-            <td>
-                <ul> 
-                    <li>Extend MemberDefinition_Delta table to allow greater range</li>
-                    <li>Extend segments to use INT from SMALLINT</li>
-                    <li>Fix rollup detail grouping not calculated correctly due to ranges function</li>
-                    <li>Fix rollup top definition when ranges are not numeric. Was not updating with new accounts</li>
-                    <li>Use the CalcNet column in Segment table for YTD Calculation instead of BS_DEMO, which is not always accurate </li>
-                    <li>Set correct default when YearMonth is blank and error when using future YearMonth with YTD</li>
-                    <li>Remove custom tables and clean up database </li>
-                    <li>Config Manager - Remove Merged Columns in Validated Rollup</li>
-                    <li>Add Non-Validated Rollups back into dropdown list. Need the child definition to define the main rollup code. </li>
-                    <li>Fix primary key violation in Build_Lookup_Import when looping through Change_Detail insert</li>
-                    <li>Remove application role seucrity in TB and JEs and add segment security instead Fincube</li>
-                    <li>Extend security for configuration tool</li>
-                    <li>Validate RollUp code in Row Template (VBA fails on invalid characters) </li>
-                    <li>Remove Seed Current Open Period / Reference column formula to Fiscal Period</li>
-                    <li>Fiscal year month dropdown</li>
-                </ul>
-            </td>
-        </tr>
-</table>
-
-
-### Updating
-
-Whenever an update of Interject for Financials is released, an update script must be run on your server. With each new update, the initial install script located on the [Technical Install](https://docs.gointerject.com/bApps/bFinancials/Technical-Install.html) page will be updated. If you initally installed the most current version listed above, you will not need to run the Update Script. If you orginally installed a version older than the most current, take the following steps to update your implementation. 
-
-> To Upgrade
-> 
-> In SQL Management Studio, run the script labeled **Update for Previous Install** at the top of this page.
->
-> Run \[Interject_SetupScript1_Security\], as shown below, to re-enable security.
->
->  ```SQL
-> EXEC [Custom].[Interject_SetupScript1_Security]
->	@MasterEpicorDatabase = '<Epicor Controlling Database Name>'
->	,@CertificatePassword =  'myPassword1234'
->  ```
->
-
-### Rolling Back One Version
-
-The following steps must be taken to roll back one version. Note that this will only roll to the previous version.
-
-> To Roll Back
->
-> In SQL Management Studio, run the script labeled **Rollback to 1.3.1** at the top of this page.
->
-> Run \[Interject_SetupScript1_Security\], as shown below, to re-enable security.
->
->  ```SQL
-> EXEC [Custom].[Interject_SetupScript1_Security]
->	@MasterEpicorDatabase = '<Epicor Controlling Database Name>'
->	,@CertificatePassword =  'myPassword1234'
->  ```
->
-
-</div>
-
+ 
 
