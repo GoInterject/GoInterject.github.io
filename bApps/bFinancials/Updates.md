@@ -56,7 +56,7 @@ After the inital install, applying an update, or performing a rollback, you can 
                 <ul> 
                     <li>In Journal entry tool fix multi-currency balancing validation when entry are in mix currencies.</li>
                     <li>In fincube fix range for numeric ranges.</li>  
-                    <li>Fix multi-currency balancing when entry are in multiple currencies.</li> 
+                    <li>Fix multi-currency balancing when entries are in multiple currencies.</li> 
                     <li>Fix range for numeric ranges.</li> 
                     <li>Fix security.</li> 
                     <li>Remove old objects.</li> 
