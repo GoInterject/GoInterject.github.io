@@ -10,7 +10,7 @@ description:
 ### SQL Server Version
 To check your MSSQL version, run ```SELECT @@VERSION``` in a query window. 
 
-MSSQL Server 2008 and newer is supported.
+MSSQL Server 2014 and newer is supported.
 
 ### SQL Database Mail Profile
 To check the Mail profile, run ```SELECT name FROM msdb.dbo.sysmail_profile```.
