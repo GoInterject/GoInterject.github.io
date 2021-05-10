@@ -6,7 +6,7 @@ description: INTERJECT™ Financials for Epicor Enterprise (This would cover top
 ---
 
 <h2>Interject Financials - Epicor Enterprise<br>
-<a href="https://drive.google.com/file/d/1yi0Q13NY9HQb0HujLXfAoxT8Y9F8o0eK/view?usp=sharing">Latest Version 1.5.3</a></h2>
+<a href="https://drive.google.com/file/d/10l98VIbU0QgeBzRk6wzCQENTcgVzM8qi/view?usp=sharing">Latest Version 1.5.4</a></h2>
 
 Depending on which version of Interject Financials you're running, there are different update and rollback scripts. Before updating or rolling back a version, follow the procedure below. Once you know the version you're currently running, click on the appropriate dropdown below for the update release notes, the correct scripts for updating and rolling back versions, as well as procedures for running those scripts.
 
@@ -22,18 +22,21 @@ After the inital install, applying an update, or performing a rollback, you can 
 ### Click Your Version Below for Release Notes and Update Scripts
 
 
-<button class="collapsible"><strong>For Users With Version 1.4.3-1.5.2</strong></button>
+<button class="collapsible"><strong>For Users With Version 1.4.3-1.5.3</strong></button>
 <div markdown="1" class="panel">
 
 <table> 
     <tr>
-        <th><span style="font-weight:bold">Update for Previous Install:</span> <a href="https://drive.google.com/file/d/1-dtC5-y6oJ2chxrA0OYA26R8Xjoz7KXp/view?usp=sharing">from1.4.3-1.5.2to1.5.3_Update.Interject_Reporting.SQL</a></th>
+        <th><span style="font-weight:bold">Update for Previous Install:</span> <a href="https://drive.google.com/file/d/1jcotjzfZnS9Pn7lR2BguVpzhfoSYzBGa/view?usp=sharing">from1.4.3-1.5.3to1.5.4_Update.Interject_Reporting.SQL</a></th>
     </tr>  
      <tr>
-        <th><span style="font-weight:bold">Rollback to 1.5.0:</span> <a href="https://drive.google.com/file/d/1iReLXvAmaKwsBG56HWuIMBhk2DJInTca/view?usp=sharing">from1.5..3to1.5.0_Rollback.Interject_Reporting.SQL</a></th>
+        <th><span style="font-weight:bold">Rollback to 1.5.3:</span> <a href="https://drive.google.com/file/d/1Ol_mK9cseyhOwuzZ45FQiIuJAA75ETNt/view?usp=sharing">from1.5..4to1.5.0_Rollback.Interject_Reporting.SQL</a></th>
+    </tr>  
+     <tr>
+        <th><span style="font-weight:bold">Rollback to 1.5.2:</span> <a href="https://drive.google.com/file/d/1QE_3izgZQwMjCFgWubGv0C5wKAgiTAUV/view?usp=sharing">from1.5..4to1.5.0_Rollback.Interject_Reporting.SQL</a></th>
     </tr>
      <tr>
-        <th><span style="font-weight:bold">Rollback to 1.4.3:</span> <a href="https://drive.google.com/file/d/1QaJciYDC-IN-VbJDHcZU45XOUI9DYCbV/view?usp=sharing">from1.5..3to1.4.3_Rollback.Interject_Reporting.SQL</a></th>
+        <th><span style="font-weight:bold">Rollback to 1.4.3:</span> <a href="https://drive.google.com/file/d/18nGnIljPN9mgxxUaQRGMj5G7t1MBiUtH/view?usp=sharing">from1.5..4to1.4.3_Rollback.Interject_Reporting.SQL</a></th>
     </tr> 
 </table>
 
@@ -60,6 +63,7 @@ After the inital install, applying an update, or performing a rollback, you can 
                     <li>Fix range for numeric ranges.</li> 
                     <li>Fix security.</li> 
                     <li>Remove old objects.</li> 
+                    <li>Clear budget amounts for deleted accounts in epicor.</li> 
                 </ul>
             </td>
         </tr>
