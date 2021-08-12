@@ -7,7 +7,7 @@ description: This is a walkthrough on how to make the Interject pop-up windows t
 
 ## Overview
 
-At some screen resolutions, INTERJECT'S form window poo-ups can be small and sometimes difficult to read. Luckily, there is a way to quickly resize form windows, helping make them easier to read. You'll have the option to apply resizing to all sizable windows, or just the individual window you currently have open.
+At some screen resolutions, INTERJECT'S form window pop-ups can be small and sometimes difficult to read. Luckily, there is a way to quickly resize form windows, helping make them easier to read. You'll have the option to apply resizing to all sizable windows, or just the individual window you currently have open.
 
 ### Quick Guide
 
