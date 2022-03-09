@@ -17,15 +17,15 @@ For the purposes of this lab and learning how to work with an integer column, pl
 
 ## General Requirements
 
-**1** 
+**Step 1** 
 A data connection and at least two data portals (one for pulling and the other for saving)
     https://portal.gointerject.com/
 ![](/images/L-Dev-NorthwindPullSave/2.png){: .center-image }
 
-**2**
+**Step 2**
 A simple table in the connected database
 
-**3**
+**Step 3**
 A simple datasheet that
 1. Should be formatted with column definitions, formatting ranges, formulas, etc. at the top
     
@@ -42,17 +42,17 @@ A simple datasheet that
         [TotalStock]
         [Description]
 
-        ![](/images/L-Dev-NorthwindPullSave/5.png){: .center-image }
+    ![](/images/L-Dev-NorthwindPullSave/5.png){: .center-image }
     
 5. Should have a field for getting output results from the save procedure (e.g. [MessageToUser])
 6. Data should be populated using one or more Report() functions
 
-**4**
+**Step 4**
 A stored procedure for pulling data from the table
 1. Should at least have RequestContext as an input parameter
 2. Returns table column required for testing in data sheet (e.g. name, stock, description)
 
-**5**
+**Step 5**
 
 A stored procedure for saving data to the table
 1. Parameters
