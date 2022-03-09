@@ -13,14 +13,14 @@ The lab will focus on how to create an Excel tool to be able to pull the data ou
 This lab focuses on the Northwind Categories table so please be sure you have access to a Northwind database to complete the lab.
 For the purposes of this lab and learning how to work with an integer column, please add the TotalStock int column to the NorthwindCategories table.
 
-![](/images/L-Dev-NorthwindPullSave/1.png){: .center-image }
+![](/images/L-Dev-NorthwindPullSave/1.png)
 
 ## General Requirements
 
 **Step 1** 
 A data connection and at least two data portals (one for pulling and the other for saving)
     https://portal.gointerject.com/
-![](/images/L-Dev-NorthwindPullSave/2.png){: .center-image }
+![](/images/L-Dev-NorthwindPullSave/2.png)
 
 **Step 2**
 A simple table in the connected database
@@ -29,12 +29,12 @@ A simple table in the connected database
 A simple datasheet that
 1. Should be formatted with column definitions, formatting ranges, formulas, etc. at the top
     
-    ![](/images/L-Dev-NorthwindPullSave/3.png){: .center-image }
+    ![](/images/L-Dev-NorthwindPullSave/3.png)
 
 2. Should have a title
 3. Can have a field or fields for entering filters for your pulls
 
-    ![](/images/L-Dev-NorthwindPullSave/4.png){: .center-image }
+    ![](/images/L-Dev-NorthwindPullSave/4.png)
 
 4. Should have table header names for each field pulled from the database, e.g.
         [CategoryID]
@@ -42,7 +42,7 @@ A simple datasheet that
         [TotalStock]
         [Description]
 
-    ![](/images/L-Dev-NorthwindPullSave/5.png){: .center-image }
+    ![](/images/L-Dev-NorthwindPullSave/5.png)
     
 5. Should have a field for getting output results from the save procedure (e.g. [MessageToUser])
 6. Data should be populated using one or more Report() functions
@@ -76,7 +76,7 @@ A stored procedure for saving data to the table
 **Step 1**
 Adding general comments in unused cells is very helpful at telling the user what can and cannot be done in the sheet without the having them do guesswork
 
-![](/images/L-Dev-NorthwindPullSave/6.png){: .center-image }
+![](/images/L-Dev-NorthwindPullSave/6.png)
 
 **Step 2**
 Configure jFreezePanes() such that the Interject header rows and the primary key columns are hidden away from the user’s view
@@ -84,19 +84,19 @@ Configure jFreezePanes() such that the Interject header rows and the primary key
 **Step 3**
 Use GETUTCDATE() and @UtcOffset (obtained from RequestContext) to return error/debug messages that are relative to the user’s time
 
-![](/images/L-Dev-NorthwindPullSave/7.png){: .center-image }
+![](/images/L-Dev-NorthwindPullSave/7.png)
 
 **Step 4**
 In the sheet, the last row of RowDefRange (for ReportSave()) and TargetRange (for ReportRange()) should be the same. It should have a line that has “End of list” or something similar. This will be important for when parsing through the request context in the code.
 
-![](/images/L-Dev-NorthwindPullSave/8.png){: .center-image }
-![](/images/L-Dev-NorthwindPullSave/9.png){: .center-image }
+![](/images/L-Dev-NorthwindPullSave/8.png)
+![](/images/L-Dev-NorthwindPullSave/9.png)
 
 **Step 5**
 There should be thorough validation done on each input received by the save stored procedure. Any validation issue found should have the code short-circuit to code that returns all the errors/updates for each row and if errors exist, an error using “UserNotice” should be returned
 
-![](/images/L-Dev-NorthwindPullSave/10.png){: .center-image }
-![](/images/L-Dev-NorthwindPullSave/11.png){: .center-image }
+![](/images/L-Dev-NorthwindPullSave/10.png)
+![](/images/L-Dev-NorthwindPullSave/11.png)
 
 1. [CategoryID]
     1. Must be unique
@@ -118,11 +118,11 @@ There should be thorough validation done on each input received by the save stor
 Important; for delete capabilities in the save procedure to happen, make it so that any Category from the table that is not listed in the context will be deleted from the table.
 1. This deletion should happen when a row in @DataToProcess is not matched
 
-![](/images/L-Dev-NorthwindPullSave/12.png){: .center-image }
+![](/images/L-Dev-NorthwindPullSave/12.png)
 2. When a deletion occurs, make sure it is accounted for in the return message back to the user
 
-![](/images/L-Dev-NorthwindPullSave/13.png){: .center-image } 
-![](/images/L-Dev-NorthwindPullSave/14.png){: .center-image }
+![](/images/L-Dev-NorthwindPullSave/13.png)
+![](/images/L-Dev-NorthwindPullSave/14.png)
 
 **Step 7**
 Alternatively, you can add another column called [Delete?] which holds a flag that determines whether the matched row should be removed from the table
@@ -133,15 +133,15 @@ Important; for adding capabilities, it is important that you run several checks 
 **Step 9**
 If a user accidentally tries to add a duplicate Category while in a filtered view, make sure to return an error. Not doing this could result in overwriting pre-existing rows.
 
-![](/images/L-Dev-NorthwindPullSave/15.png){: .center-image }
-![](/images/L-Dev-NorthwindPullSave/16.png){: .center-image }
+![](/images/L-Dev-NorthwindPullSave/15.png)
+![](/images/L-Dev-NorthwindPullSave/16.png)
 
 **Step 10**
 When adding/updating/deleting items in the datasheet, make sure that CategoryName is used as RowDefRange when calling the save stored procedure
 
 
 
-![](/images/L-Dev-NorthwindPullSave/17.png){: .center-image }
+![](/images/L-Dev-NorthwindPullSave/17.png)
 
 
 
