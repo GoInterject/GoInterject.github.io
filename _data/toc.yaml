@@ -335,8 +335,8 @@ Developer:
     section:
     - title: "Lab Dev: Customer Credit Save"
       path: /wGetStarted/L-Dev-CustomerCreditSave.html
-      - title: "Lab Dev: Northwind Pull and Save"
-      path: /wGetStarted/L-Dev-NorthwindPullSave.html
+    - title: "Lab Dev: Northwind Pull and Save"
+    path: /wGetStarted/L-Dev-NorthwindPullSave.html
   - title: Security Best Practices
     path: /wGetStarted/Security-Best-Practices.html
   - title: Managing Settings Cache
