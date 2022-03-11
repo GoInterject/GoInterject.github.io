@@ -24,7 +24,7 @@ The following setup instructions will walk you through installation of the 'lite
 > **Step 3:** Point the script window to the new database
 > ![Mgt Studio Point](/images/A-SQL-Installation/MgtStudioPointTo.png){: .center-image }
 >
-> **Step 4:** Execute the [Custom.Interject_SetupScript1_Security](https://gitlab.com/Interject/Interject_Reporting/-/blob/Epicor-Slim/Custom/StoredProcedure/Custom.Interject_SetupScript1_Security.SQL) deploy script which creates the procedure for creating security objects.
+> **Step 4:** Execute the [Custom.Interject_SetupScript1_Security.SQL](https://gitlab.com/Interject/Interject_Reporting/uploads/a2290ad55a6042ccc1f0bb7561ffa953/Custom.Interject_SetupScript1_Security.sql) script which creates the procedure for creating security objects.
 >
 > **Step 5:** Create security objects and grant read-only access to Epicor tables by passing the following parameters using the following script as an example:
 >
@@ -34,7 +34,9 @@ The following setup instructions will walk you through installation of the 'lite
 >       ,@CertificatePassword       =  'myPassword1234'
 > ```
 >
-> **Step 6:** Execute the following script DB to initialize data from Epicor for the Transactions "Slim" Package
+> **Step 6:** Then, execute the [Interject_EpicorSlim.SQL](https://gitlab.com/Interject/Interject_Reporting/uploads/933084edcde33eedbc7e4b6dcf6c8b88/Interject_EpicorSlim.sql) script to deploy the tables, functions, and procedures used in the Transactions Package.
+>
+> **Step 7:** Execute the following script DB to initialize data from Epicor for the Transactions "Slim" Package
 >
 > ```SQL
 > -- Import configuration setup from Epicor and initial setup of Interject
