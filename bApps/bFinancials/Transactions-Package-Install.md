@@ -5,7 +5,7 @@ keywords: []
 description:
 ---
 
-The following setup instructions will walk you through installation of the 'lite' package of the Financials - Epicor Enterprise package which contains only transactions tools by Interject. For installation of the full package, please go <a href src="https://docs.gointerject.com/bApps/bFinancials/Technical-Install.html"> here</a>.
+The following setup instructions will walk you through installation of the 'lite' package of the Financials - Epicor Enterprise package which contains only transactions tools by Interject. For installation of the full package, please go <a href src="/bApps/bFinancials/Technical-Install.md"> here</a>.
 
 ### Steps Required for Transactions Package
 
@@ -24,7 +24,7 @@ The following setup instructions will walk you through installation of the 'lite
 > **Step 3:** Point the script window to the new database
 > ![Mgt Studio Point](/images/A-SQL-Installation/MgtStudioPointTo.png){: .center-image }
 >
-> **Step 4:** Execute the _Custom.Interject_SetupScript1_Security_ deploy script which creates the procedure for creating security objects.
+> **Step 4:** Execute the [Custom.Interject_SetupScript1_Security](https://gitlab.com/Interject/Interject_Reporting/-/blob/Epicor-Slim/Custom/StoredProcedure/Custom.Interject_SetupScript1_Security.SQL) deploy script which creates the procedure for creating security objects.
 >
 > **Step 5:** Create security objects and grant read-only access to Epicor tables by passing the following parameters using the following script as an example:
 >
