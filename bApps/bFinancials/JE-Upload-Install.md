@@ -5,7 +5,7 @@ keywords: []
 description:
 ---
 
-The following setup instructions will walk you through installation of the JE Upload tool by Interject. If you need to install the full Interject for Financials package, please go <a href src="/bApps/bFinancials/Technical-Install.md">here</a>.
+The following setup instructions will walk you through installation of the JE Upload tool by Interject. If you need to install the full Interject for Financials package, please go [here](/bApps/bFinancials/Technical-Install.html).
 
 ### Steps Required for JE Upload Install
 
@@ -30,7 +30,7 @@ The following setup instructions will walk you through installation of the JE Up
 >
 > ```SQL
 > EXEC [Setup].[Interject_SetupScript1_Security]
-> 	     @MasterEpicorDatabase      = '<Epicor Controlling Database Name>'
+>        @MasterEpicorDatabase      = '<Epicor Controlling Database Name>'
 >       ,@CertificatePassword       =  'myPassword1234'
 > ```
 >

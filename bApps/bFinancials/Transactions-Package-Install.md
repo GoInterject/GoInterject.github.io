@@ -5,7 +5,8 @@ keywords: []
 description:
 ---
 
-The following setup instructions will walk you through installation of the 'lite' package of the Financials - Epicor Enterprise package which contains only transactions tools by Interject. For installation of the full package, please go <a href src="/bApps/bFinancials/Technical-Install.md"> here</a>.
+The following setup instructions will walk you through installation of the slim package of the Financials - Epicor Enterprise package which contains only transactions tools by Interject. For installation of the full package, please go [here](/bApps/bFinancials/Technical-Install.html).
+
 
 ### Steps Required for Transactions Package
 
@@ -24,23 +25,23 @@ The following setup instructions will walk you through installation of the 'lite
 > **Step 3:** Point the script window to the new database
 > ![Mgt Studio Point](/images/A-SQL-Installation/MgtStudioPointTo.png){: .center-image }
 >
-> **Step 4:** Execute the [Custom.Interject_SetupScript1_Security.SQL](https://gitlab.com/Interject/Interject_Reporting/uploads/a2290ad55a6042ccc1f0bb7561ffa953/Custom.Interject_SetupScript1_Security.sql) script which creates the procedure for creating security objects.
+> **Step 4:** Execute initial deploy script on the new Database 
+[1.1.0_Initial.Interject_Reporting.sql](https://gitlab.com/Interject/Interject_Reporting/uploads/0fd499f4f69404086ade31e4c864cf8c/1.1.0_Initial.Interject_Reporting.sql)
 >
 > **Step 5:** Create security objects and grant read-only access to Epicor tables by passing the following parameters using the following script as an example:
 >
 > ```SQL
 > EXEC [Custom].[Interject_SetupScript1_Security]
->       @MasterEpicorDatabase       = '<Epicor Controlling Database Name>'
->       ,@CertificatePassword       =  'myPassword1234'
+>        @MasterEpicorDatabase      = '<Epicor Controlling Database Name>'
+>       ,@CertificatePassword       = 'myPassword1234'
 > ```
 >
-> **Step 6:** Then, execute the [Interject_EpicorSlim.SQL](https://gitlab.com/Interject/Interject_Reporting/uploads/933084edcde33eedbc7e4b6dcf6c8b88/Interject_EpicorSlim.sql) script to deploy the tables, functions, and procedures used in the Transactions Package.
 >
-> **Step 7:** Execute the following script DB to initialize data from Epicor for the Transactions "Slim" Package
+> **Step 6:** Execute the following script DB to initialize data from Epicor for the Transactions "Slim" Package
 >
 > ```SQL
 > -- Import configuration setup from Epicor and initial setup of Interject
-> EXEC [Setup].[ERP_InstallScript1_DatabaseConfig_Slim]
+> EXEC [Custom].[ERP_InstallScript1_DatabaseConfig_Slim]
 >        @MasterEpicorDatabase          = '[<INSERT Master DB NAME>]'
 >       ,@DefaultDatabaseNameSource     = '[<INSERT Default DB name>]'
 > ```
