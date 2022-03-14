@@ -1,13 +1,14 @@
 ---
-title: JE Upload Install
+title: Transactions Package Install
 layout: custom
 keywords: []
 description:
 ---
 
-The following setup instructions will walk you through installation of the JE Upload tool by Interject. If you need to install the full Interject for Financials package, please go [here](/bApps/bFinancials/Technical-Install.html).
+The following setup instructions will walk you through installation of the slim package of the Financials - Epicor Enterprise package which contains only transactions tools by Interject. For installation of the full package, please go [here](/bApps/bFinancials/Technical-Install.html).
 
-### Steps Required for JE Upload Install
+
+### Steps Required for Transactions Package
 
 > To-do
 >
@@ -24,30 +25,23 @@ The following setup instructions will walk you through installation of the JE Up
 > **Step 3:** Point the script window to the new database
 > ![Mgt Studio Point](/images/A-SQL-Installation/MgtStudioPointTo.png){: .center-image }
 >
-> **Step 4:** Execute the [1.1.0_Initial.Interject_JournalEntryUpload](https://drive.google.com/file/d/10Gxxb4mjKxWpl0v49x1IWK97w6xm-EKV/view?usp=sharing) script
+> **Step 4:** Execute initial deploy script on the new Database 
+[1.1.0_Initial.Interject_Reporting.sql](https://gitlab.com/Interject/Interject_Reporting/uploads/0fd499f4f69404086ade31e4c864cf8c/1.1.0_Initial.Interject_Reporting.sql)
 >
 > **Step 5:** Create security objects and grant read-only access to Epicor tables by passing the following parameters using the following script as an example:
 >
 > ```SQL
-> EXEC [Setup].[Interject_SetupScript1_Security]
+> EXEC [Custom].[Interject_SetupScript1_Security]
 >        @MasterEpicorDatabase      = '<Epicor Controlling Database Name>'
->       ,@CertificatePassword       =  'myPassword1234'
+>       ,@CertificatePassword       = 'myPassword1234'
 > ```
 >
-> **Step 6:** Execute the following Script DB to initialize data from Epicor for Journal Entry Upload
 >
-> - 6a
+> **Step 6:** Execute the following script DB to initialize data from Epicor for the Transactions "Slim" Package
 >
 > ```SQL
-> --Import configuration setup from Epicor and initial setup of Interject
-> EXEC [Setup].[ERP_InstallScript1_DatabaseConfig]
+> -- Import configuration setup from Epicor and initial setup of Interject
+> EXEC [Custom].[ERP_InstallScript1_DatabaseConfig_Slim]
 >        @MasterEpicorDatabase          = '[<INSERT Master DB NAME>]'
 >       ,@DefaultDatabaseNameSource     = '[<INSERT Default DB name>]'
-> ```
->
-> - 6b
->
-> ```SQL
-> --Import data
-> EXEC [Setup].[ERP_InstallScript2_EpicorImport]
 > ```
