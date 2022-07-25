@@ -81,6 +81,15 @@ about:
     path: /wAbout/Basics-of-Report-Formulas.html
   - title: Tabular vs Data Cells
     path: /wAbout/Tabular-vs-Data-Cells.html
+sectiontitle: Interject Security and Privacy
+  path: 
+  section:
+  - title: Security Policy
+    path: /wAbout/security-policy.html
+  - title: Privacy Policy
+    path: /wAbout/privacy-policy.html
+  - title: TLS for HTTPS
+    path: /wAbout/TLS.html
 
   
 
