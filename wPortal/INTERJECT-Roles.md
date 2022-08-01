@@ -38,17 +38,61 @@ A Standard user is granted base permissions to open and execute reports
 ClientAdmin 
 </td>  
 <td>
-
-A ClientAdmin has full control of all settings for your company. This is the only role that can edit Connections.  
+<ul>
+<li>Create, Update, Delete, and Activate/Deactivate DataPortal and DataPortal parameters.</li>
+<li>Create, Update, Delete DataPortal Connections and DataPortal Configuration Redirects.</li>
+<li>Update settings.</li>
+<li>Force refresh of cache data for all users.</li>
+<li>Create password reset emails with password reset link.</li>
+<li>View UserProfiles and enable/disable users.</li>
+<li>Create and Delete User and External user roles.</li>
+<li>Create, Update, and Delete user's Subscription Roles.</li>
+<li>Override connection, stored procedure, and api for dataportal.</li>
+<li>Edit restricted link version status.</li>
+<li>Execute and cancel custom commands.</li>
+<li>Execute scheduled items.</li>
+<li>Set application data source.</li>
+<li>View license management form.</li>
+<li>Force cache reset for all users in their company.</li>
+<li>View and modify settings values in diagnostics.</li>
+<li>View test area of link categories.</li>
+<li>View file download that failed checksum.</li>
+<li>Use sheet protector.</li>
+<li>Edit their own company link version without having report library edit rights.</li>
+</ul>
 </td> </tr>  
+
+<tr>  
+<td>
+
+SysAdmin 
+</td>  
+<td>
+<ul>
+<li>Override connection, stored procedure, and api for dataportal.</li>
+<li>Edit restricted link version status.</li>
+<li>Set application data source.</li>
+<li>Force cache reset for all users in their company.</li>
+<li>View and modify settings values in diagnostics.</li>
+<li>View test area of link categories.</li>
+<li>Use sheet protector.</li>
+<li>Edit their own company link version without having report library edit rights.</li>
+</ul>
+</td> </tr>  
+
 <tr>  
 <td>
 
 Editor 
 </td>  
 <td>
-
-An Editor may Create/Edit/Delete most report library items, and edit DataPortals  
+<ul>
+<li>Create, Update, Delete, and Activate/Deactivate DataPortal and DataPortal parameters.</li>
+<li>Create default system and scheduler system parameters for a DataPortal.</li>
+<li>Override connection, stored procedure, and api for dataportal.</li>
+<li>View test area of link categories.</li>
+<li>Edit their own company link version without having report library edit rights.</li>
+</ul>  
 </td> </tr>  
 <tr>  
 <td>
