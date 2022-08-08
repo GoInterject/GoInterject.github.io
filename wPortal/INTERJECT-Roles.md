@@ -137,5 +137,5 @@ CustomItems
 </td>  
 <td>
 
-Allows execution of custom items in Custom Commands  
+Allows execution of custom items in Custom Commands   
 </td> </tr> </table>

@@ -68,7 +68,7 @@ about:
   - sectiontitle: Real-World Walkthroughs
     path: /wAbout/Real-World-Walkthroughs.html
     section:
-    - title: Customer Aging
+    - title: Customer Aging 
       path: /wAbout/Customer-Aging.html
     - title: Inventory Reports
       path: /wAbout/Inventory-Reports.html
