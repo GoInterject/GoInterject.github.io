@@ -143,180 +143,180 @@ table(4)  CacheCategoryID 4   ReportLinkVersions
 <details>
 <summary>Click to expand</summary>
 
-1. https://platform-api.gointerject.com/api/AddinManagerLog
+1. https://platform-api.gointerject.com/api/AddinManagerLog <br>
 
-2. https://platform-api.gointerject.com/api/Admin/Client/Secret
+2. https://platform-api.gointerject.com/api/Admin/Client/Secret <br>
 
-3. https://platform-api.gointerject.com/api/Admin/DiagnosticsCode
+3. https://platform-api.gointerject.com/api/Admin/DiagnosticsCode <br>
 
-4. https://platform-api.gointerject.com/api/Admin/ValidateDiagnosticsToken
+4. https://platform-api.gointerject.com/api/Admin/ValidateDiagnosticsToken <br>
 
-5. https://platform-api.gointerject.com/api/ApplicationCache
+5. https://platform-api.gointerject.com/api/ApplicationCache <br>
 
-6. https://platform-api.gointerject.com/api/AuthType
+6. https://platform-api.gointerject.com/api/AuthType <br>
 
-7. https://platform-api.gointerject.com/api/AuthType/Anonymous
+7. https://platform-api.gointerject.com/api/AuthType/Anonymous <br>
 
-8. https://platform-api.gointerject.com/api/CachedSettings
+8. https://platform-api.gointerject.com/api/CachedSettings <br>
 
-9. https://platform-api.gointerject.com/api/CachedSettings/Date
+9. https://platform-api.gointerject.com/api/CachedSettings/Date <br>
 
-10. https://platform-api.gointerject.com/api/CachedSettings/Offering/Refresh
+10. https://platform-api.gointerject.com/api/CachedSettings/Offering/Refresh <br>
 
-11. https://platform-api.gointerject.com/api/CachedSettings/Client/Refresh
+11. https://platform-api.gointerject.com/api/CachedSettings/Client/Refresh <br>
 
-12. https://platform-api.gointerject.com/api/Client
+12. https://platform-api.gointerject.com/api/Client <br>
 
-13. https://platform-api.gointerject.com/api/Client/Users
+13. https://platform-api.gointerject.com/api/Client/Users <br>
 
-14. https://platform-api.gointerject.com/api/Client/Invite/Accept
+14. https://platform-api.gointerject.com/api/Client/Invite/Accept <br>
 
-15. https://platform-api.gointerject.com/api/Client/StatusChange
+15. https://platform-api.gointerject.com/api/Client/StatusChange <br>
 
-16. https://platform-api.gointerject.com/api/Clients
+16. https://platform-api.gointerject.com/api/Clients <br>
 
-17. https://platform-api.gointerject.com/api/Credentials/IsValid
+17. https://platform-api.gointerject.com/api/Credentials/IsValid <br>
 
-18. https://platform-api.gointerject.com/api/DataPortalConnection
+18. https://platform-api.gointerject.com/api/DataPortalConnection <br>
 
-19. https://platform-api.gointerject.com/api/DataPortalConnection/SelectOptions
+19. https://platform-api.gointerject.com/api/DataPortalConnection/SelectOptions <br>
 
-20. https://platform-api.gointerject.com/api/DataPortalConnection/Active
+20. https://platform-api.gointerject.com/api/DataPortalConnection/Active <br>
 
-21. https://platform-api.gointerject.com/api/DataPortalConnection/Redirect
+21. https://platform-api.gointerject.com/api/DataPortalConnection/Redirect <br>
 
-22. https://platform-api.gointerject.com/api/DataPortal
+22. https://platform-api.gointerject.com/api/DataPortal <br>
 
-23. https://platform-api.gointerject.com/api/DataPortal/Clone
+23. https://platform-api.gointerject.com/api/DataPortal/Clone <br>
 
-24. https://platform-api.gointerject.com/api/DataPortal/Active
+24. https://platform-api.gointerject.com/api/DataPortal/Active <br>
 
-25. https://platform-api.gointerject.com/api/DataPortalParameter
+25. https://platform-api.gointerject.com/api/DataPortalParameter <br>
 
-26. https://platform-api.gointerject.com/api/DataPortalParameter/SortOrders
+26. https://platform-api.gointerject.com/api/DataPortalParameter/SortOrders <br>
 
-27. https://platform-api.gointerject.com/api/DataPortalParameter/CustomCommandDefaultSystemParameters
+27. https://platform-api.gointerject.com/api/DataPortalParameter/CustomCommandDefaultSystemParameters <br>
 
-28. https://platform-api.gointerject.com/api/DataPortalParameter/SchedulerDefaultSystemParameters
+28. https://platform-api.gointerject.com/api/DataPortalParameter/SchedulerDefaultSystemParameters <br>
 
-29. https://platform-api.gointerject.com/api/Download
+29. https://platform-api.gointerject.com/api/Download <br>
 
-30. https://platform-api.gointerject.com/api/Download/Links
+30. https://platform-api.gointerject.com/api/Download/Links <br>
 
-31. https://platform-api.gointerject.com/api/Download/PreviousVersion
+31. https://platform-api.gointerject.com/api/Download/PreviousVersion <br>
 
-32. https://platform-api.gointerject.com/api/Download/Update
+32. https://platform-api.gointerject.com/api/Download/Update <br>
 
-33. https://platform-api.gointerject.com/api/Download/InstallerFile
+33. https://platform-api.gointerject.com/api/Download/InstallerFile <br>
 
-34. https://platform-api.gointerject.com/api/Download/Installer/Anonymous
+34. https://platform-api.gointerject.com/api/Download/Installer/Anonymous <br>
 
-35. https://platform-api.gointerject.com/api/Download/Installer
+35. https://platform-api.gointerject.com/api/Download/Installer <br>
 
-36. https://platform-api.gointerject.com/api/EffectiveClient
+36. https://platform-api.gointerject.com/api/EffectiveClient <br>
 
-37. https://platform-api.gointerject.com/api/Email/Send
+37. https://platform-api.gointerject.com/api/Email/Send <br>
 
-38. https://platform-api.gointerject.com/api/Email/Queue
+38. https://platform-api.gointerject.com/api/Email/Queue <br>
 
-39. https://platform-api.gointerject.com/api/ErrorLog
+39. https://platform-api.gointerject.com/api/ErrorLog <br>
 
-40. https://platform-api.gointerject.com/api/Eula
+40. https://platform-api.gointerject.com/api/Eula <br>
 
-41. https://platform-api.gointerject.com/api/ExternalAdmin
+41. https://platform-api.gointerject.com/api/ExternalAdmin <br>
 
-42. https://platform-api.gointerject.com/api/IdsToken
+42. https://platform-api.gointerject.com/api/IdsToken <br>
 
-43. https://platform-api.gointerject.com/api/IdsTokenAndClients
+43. https://platform-api.gointerject.com/api/IdsTokenAndClients <br>
 
-44. https://platform-api.gointerject.com/api/IdsToken/PlainText
+44. https://platform-api.gointerject.com/api/IdsToken/PlainText <br>
 
-45. https://platform-api.gointerject.com/api/Installer/Updates
+45. https://platform-api.gointerject.com/api/Installer/Updates <br>
 
-46. https://platform-api.gointerject.com/api/InterjectRequest/Anonymous
+46. https://platform-api.gointerject.com/api/InterjectRequest/Anonymous <br>
+ 
+47. https://platform-api.gointerject.com/api/Invite <br>
 
-47. https://platform-api.gointerject.com/api/Invite
+48. https://platform-api.gointerject.com/api/Invite/Request <br>
 
-48. https://platform-api.gointerject.com/api/Invite/Request
+49. https://platform-api.gointerject.com/api/License <br>
 
-49. https://platform-api.gointerject.com/api/License
+50. https://platform-api.gointerject.com/api/License/Token <br>
 
-50. https://platform-api.gointerject.com/api/License/Token
+51. https://platform-api.gointerject.com/api/Logging <br>
 
-51. https://platform-api.gointerject.com/api/Logging
+52. https://platform-api.gointerject.com/api/Logging/DllErrors <br>
 
-52. https://platform-api.gointerject.com/api/Logging/DllErrors
+53. https://platform-api.gointerject.com/api/Logging/DataCallLogs <br>
 
-53. https://platform-api.gointerject.com/api/Logging/DataCallLogs
+54. https://platform-api.gointerject.com/api/Logging/BatchLogs <br>
 
-54. https://platform-api.gointerject.com/api/Logging/BatchLogs
+55. https://platform-api.gointerject.com/api/Logging/RAMReadingLogs <br>
 
-55. https://platform-api.gointerject.com/api/Logging/RAMReadingLogs
+56. https://platform-api.gointerject.com/api/Logging/TimerLogs <br>
 
-56. https://platform-api.gointerject.com/api/Logging/TimerLogs
+57. https://platform-api.gointerject.com/api/Logging/ReportLibraryDataPortal <br>
 
-57. https://platform-api.gointerject.com/api/Logging/ReportLibraryDataPortal
+58. https://platform-api.gointerject.com/api/NLog <br>
 
-58. https://platform-api.gointerject.com/api/NLog
+59. https://platform-api.gointerject.com/api/NLog/IsConnected <br>
 
-59. https://platform-api.gointerject.com/api/NLog/IsConnected
+60. https://platform-api.gointerject.com/api/OAuthToken <br>
 
-60. https://platform-api.gointerject.com/api/OAuthToken
+61. https://platform-api.gointerject.com/api/Offering <br>
 
-61. https://platform-api.gointerject.com/api/Offering
+62. https://platform-api.gointerject.com/api/Password <br>
 
-62. https://platform-api.gointerject.com/api/Password
+63. https://platform-api.gointerject.com/api/Password/Admin <br>
 
-63. https://platform-api.gointerject.com/api/Password/Admin
+64. https://platform-api.gointerject.com/api/PasswordReset <br>
 
-64. https://platform-api.gointerject.com/api/PasswordReset
+65. https://platform-api.gointerject.com/api/PasswordReset/Admin <br>
 
-65. https://platform-api.gointerject.com/api/PasswordReset/Admin
+66. https://platform-api.gointerject.com/api/PasswordReset/Welcome <br>
 
-66. https://platform-api.gointerject.com/api/PasswordReset/Welcome
+67. https://platform-api.gointerject.com/api/Online <br>
 
-67. https://platform-api.gointerject.com/api/Online
+68. https://platform-api.gointerject.com/api/ReportCategory <br>
 
-68. https://platform-api.gointerject.com/api/ReportCategory
+69. https://platform-api.gointerject.com/api/ReportCategory/Link <br>
 
-69. https://platform-api.gointerject.com/api/ReportCategory/Link
+70. https://platform-api.gointerject.com/api/ReportLink <br>
 
-70. https://platform-api.gointerject.com/api/ReportLink
+71. https://platform-api.gointerject.com/api/ReportLink/File <br>
 
-71. https://platform-api.gointerject.com/api/ReportLink/File
+72. https://platform-api.gointerject.com/api/ReportLink/Disable <br>
 
-72. https://platform-api.gointerject.com/api/ReportLink/Disable
+73. https://platform-api.gointerject.com/api/ReportLinkVersion <br>
 
-73. https://platform-api.gointerject.com/api/ReportLinkVersion
+74. https://platform-api.gointerject.com/api/ReportLinkVersion/File <br>
 
-74. https://platform-api.gointerject.com/api/ReportLinkVersion/File
+75. https://platform-api.gointerject.com/api/Role <br>
 
-75. https://platform-api.gointerject.com/api/Role
+76. https://platform-api.gointerject.com/api/Role/IsClientAdmin <br>
 
-76. https://platform-api.gointerject.com/api/Role/IsClientAdmin
+77. https://platform-api.gointerject.com/api/ScheduledJob <br>
 
-77. https://platform-api.gointerject.com/api/ScheduledJob
+78. https://platform-api.gointerject.com/api/ScheduledJob/Instructions <br>
 
-78. https://platform-api.gointerject.com/api/ScheduledJob/Instructions
+79. https://platform-api.gointerject.com/api/ScheduledJob/NextExecutionDates <br>
 
-79. https://platform-api.gointerject.com/api/ScheduledJob/NextExecutionDates
+80. https://platform-api.gointerject.com/api/Settings <br>
 
-80. https://platform-api.gointerject.com/api/Settings
+81. https://platform-api.gointerject.com/api/Subscription <br>
 
-81. https://platform-api.gointerject.com/api/Subscription
+82. https://platform-api.gointerject.com/api/Subscription/DataPortal <br>
 
-82. https://platform-api.gointerject.com/api/Subscription/DataPortal
+83. https://platform-api.gointerject.com/api/ClientLinkOfferingUpdate <br>
 
-83. https://platform-api.gointerject.com/api/ClientLinkOfferingUpdate
+84. https://platform-api.gointerject.com/api/Subscriber <br>
 
-84. https://platform-api.gointerject.com/api/Subscriber
+85. https://platform-api.gointerject.com/api/User <br>
 
-85. https://platform-api.gointerject.com/api/User
+86. https://platform-api.gointerject.com/api/User/Generic <br>
 
-86. https://platform-api.gointerject.com/api/User/Generic
+87. https://platform-api.gointerject.com/api/User/IsLockedOut <br>
 
-87. https://platform-api.gointerject.com/api/User/IsLockedOut
+88. https://platform-api.gointerject.com/api/User/IsValid <br>
 
-88. https://platform-api.gointerject.com/api/User/IsValid
-
-89. https://platform-api.gointerject.com/api/User/Enabled
+89. https://platform-api.gointerject.com/api/User/Enabled <br>
