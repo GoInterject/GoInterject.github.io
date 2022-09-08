@@ -115,7 +115,7 @@ Notice that when you pull the data, the new formula is applied to all the new ro
 
 ###  Creating Totals on top of the Report 
 
-**Step 1:** For this example, you need more than just the individual totals; you need a Report Total of these invoices. To build this, you have to add more SUM Formulas. You will format the cells above the table, making it clearly visible. To do this, select cell H16 and label it **Report Total:**. 
+**Step 1:** For this example, you need more than just the individual totals; you need a Report Total of these invoices. To build this, you have to add more SUM Formulas. You will format the cells above the table, making it clearly visible. To do this, select cell H19 and label it **Report Total:**. 
 
 ![](/images/L-Modify-CustAging/14.png) 
 <br>
