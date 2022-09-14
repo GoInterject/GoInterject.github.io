@@ -27,7 +27,7 @@ A new sheet should be added that looks like the screenshot below. Now the report
 
 ###  Customizing the Report 
 
-**Step 1:** Remove the parameter **IsMissingCRMID** that is noted below in cell B19. It is not necessary for this report example. 
+**Step 1:** Some versions of this report will display the parameter **IsMissingCRMID**. If so, follow these steps to delete it. It is not necessary for this report example. 
 
 <br>
 ![](/images/L-Create-CustAging/04.png)
@@ -76,7 +76,7 @@ You can see below, that all the columns available in the Dataportal will be show
   
 
 
-**Step 3:** Now that you have the columns, move the **Phone** column title to column F instead of H. Simply select the entire column H, then hold the Shift key while you move the column after column E. 
+**Step 3:** Now that you have the columns, move the **Phone** column title to column F instead of H. First select the entire column H. Then hold the Shift key and hover your cursor over the left border of Column H. Left-drag the column left until the pop-up says "F:F" and then let go. 
 <br>
 ![](/images/L-Create-CustAging/12.png)     
 <br>
