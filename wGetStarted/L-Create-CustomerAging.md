@@ -75,8 +75,7 @@ You can see below, that all the columns available in the Dataportal will be show
   
 
 
-**Step 3:** Now that you have the columns, move the **Phone** column title to column F instead of H. First select the entire column H. Then hold the Shift key and hover your cursor over the left border of Column H. Left-drag the column left until the pop-up says "F:F" and then let go. 
-
+**Step 3:** Now that you have the columns, move the **Phone** column title to column F instead of H. First select the entire column H. Then hold the Shift key and hover your cursor over the left border of Column H. Left-drag the column left until the pop-up says "F:F" and then let go.
 <br>
 ![](/images/L-Create-CustAging/12.png)     
 <br>
