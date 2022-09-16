@@ -78,6 +78,7 @@ The cleared report should look like the screenshot below.
 
 **Step 6:** Click the **fx** button as noted below to open the Function Wizard and add a ColDefRange. The ColDefRange argument should be empty at first. 
 
+
 <br>
 ![](/images/L-Create-CustAging/16.png)
 <br>
