@@ -25,39 +25,16 @@ A new sheet should be added that looks like the screenshot below. Now the report
 
 ![](/images/L-Create-CustAging/03.png)
 
-###  Customizing the Report 
 
-**Step 1:** Some versions of this report will display the parameter **IsMissingCRMID**. If so, follow these steps to delete it. It is not necessary for this report example. 
+###  Getting Started 
 
-![](/images/L-Create-CustAging/04.png)
-
-
-**Step 2:** Next, **select** the [ ReportRange() ](/wIndex/ReportRange.html) formula in order to delete its reference to **IsMissingCRMID** that you just removed above. Go to cell C6 and edit the formula. Remove the reference by removing C19 from the ReportRange formula. 
-<br>
- ![](/images/L-Create-CustAging/05.png) 
-<br>  
-
-This will remove the filter reference from the ReportRange(), and you can see the updated reference shown below. 
-<br>
-![](/images/L-Create-CustAging/06.png)
-<br>
-  
-
-
-**Step 3:** Now clear the rest of the text you do not need for this report. Using the screenshot below as a guide, clear ranges encircled in red. 
-<br>
-![](/images/L-Create-CustAging/07.png)
-<br>
-  
-
-
-The report should look similar to the screenshot below. Now, put the filter value **Market** in C16 so you can limit the data pulled to just a few records that have a Company Name that contains the word **Market** . 
+**Step 1:** Begin by putting the filter value **Market** in C16 so you can limit the data pulled to just a few records that have a Company Name that contains the word **Market** . 
 <br>
 ![](/images/L-Create-CustAging/08.png)
 <br>
-###  Getting Started 
 
-**Step 1:** Next, use the [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) menu item. 
+
+Next, use the [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) menu item. 
 <br>
  ![](/images/L-Create-CustAging/09.png)
 <br> 
