@@ -119,9 +119,9 @@ The data pulled should look like below.
   
 
 
-**Step 1:** Do some quick formatting to clean up the report. Delete rows 21 through 25. 
+**Step 1:** Do some quick formatting to clean up the report. Delete rows 21 through 22. 
 <br>
-![](/images/L-Create-CustAging/22.gif)
+![](/images/L-Create-CustAging/22.png)
 <br>
   
 
