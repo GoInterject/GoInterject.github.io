@@ -168,14 +168,14 @@ jFreezePanes is not configured for all the example reports, but it is easy to se
 
 **Step 2:** To use the [ jFreezePanes ](/wIndex/jFreezePanes.html), click the Quick Tools button in the INTERJECT Ribbon and select **Freeze/UnFreeze Panes**. 
 
-![](/images/L-Modify-Inventory/12.png)
+![](/images/L-Modify-Inventory/20.png)
 
 <br> 
 
 
 This will automatically freeze the panes to the pre-configured position. 
 
-![](/images/L-Modify-Inventory/13.png)
+![](/images/L-Modify-Inventory/21.png)
 
 <br> 
 
