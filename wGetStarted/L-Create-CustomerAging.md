@@ -112,7 +112,7 @@ For this report, you will set the ColDefRange to the entire second row, 2:2.
 
 The data pulled should look like below. 
 
-**Note** : Although not illustrated in the below steps, you can save typing in the column labels for later. Copy the Column Definition values in B2:L2 and **Paste Values** in B26:L26. These are the labels you can customize for users to view. 
+**Note** : Although not illustrated in the below steps, you can save typing in the column labels for later. Copy the Column Definition values in B2:L2 and **Paste Values** in B22:L22. These are the labels you can customize for users to view. 
 <br>
 ![](/images/L-Create-CustAging/21.png)
 <br>
