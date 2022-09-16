@@ -45,7 +45,7 @@ You can see below, that all the columns available in the Dataportal will be show
 ![](/images/L-Create-CustAging/10.png)   
 <br>
 
-**Step 2:** Select a few columns for our report by copying a few of the column names to the Column Definition area on row 2. Follow the animated GIF below to multi-select CustomerID, CompanyName, ContactName, ContactTitle, City, Country, Phone, 30Days, 60Days, and 90Days. You can select them all individually while holding the Ctrl key. Then you can copy and paste them all at once in cell B2. 
+**Step 2:** Select a few columns for our report by copying a few of the column names to the Column Definition area on row 2. Follow the animated GIF below to multi-select CustomerID, CompanyName, ContactName, ContactTitle, City, Country, Phone, 30Days, 60Days, and 90Days. You can select them all individually while holding the Ctrl key. Then you can copy and paste the values all at once in cell B2. 
 
 ![](/images/L-Create-CustAging/11.gif)
 
