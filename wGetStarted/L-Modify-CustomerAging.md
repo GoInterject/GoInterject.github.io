@@ -8,7 +8,7 @@ description: Here, you will modify the Customer Aging Demo used in the Customer 
 
 ##  **Overview**
 
-Here, you will modify the Customer Aging Demo used in the [ Customer Aging Walk-through ](/wAbout/Customer-Aging.html) to show the total of invoices due from companies. You will filter for companies with the word **Market** in their name to keep the list short. You will build a **Total** column to receive the sum of each individual company's unpaid invoices. Once complete you will use these totals to build a Report total, which allows us to see all invoices  due.   
+Here, you will modify a report to show the total of invoices due from companies. You will filter for companies with the word **Market** in their name to keep the list short. You will build a **Total** column to receive the sum of each individual company's unpaid invoices. Once complete you will use these totals to build a Report total, which allows us to see all invoices  due.   
 
 
 ###  Opening the Report and Pulling Data 
