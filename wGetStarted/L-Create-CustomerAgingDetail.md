@@ -120,7 +120,7 @@ Give row 10,12,14, and 16 heights of 6.75. The image below illustrates how to dr
 <br> 
 
 
-**Step 9:** Now you need to create a formula that will total all of the detail that will later be populated between row 13 and 14. To create a total, type **=SUBTOTAL(9,L13:L14)** in L15. In cell H15 you will type **="Total Open Invoices For " & H11". ** H11 represents the name of the customer, and by linking it to H11, the subtotal line will note the customer name again. 
+**Step 9:** Now you need to create a formula that will total all of the detail that will later be populated between row 13 and 14. To create a total, type **=SUBTOTAL(9,L13:L14)** in L15. In cell H15 you will type **="Total Open Invoices For " & H11.** H11 represents the name of the customer, and by linking it to H11, the subtotal line will note the customer name again. 
 
 ![](/images/L-Create-CustAgingDetail/18.png)
 
