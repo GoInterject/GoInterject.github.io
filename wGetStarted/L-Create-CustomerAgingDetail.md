@@ -27,25 +27,6 @@ When the template is complete, it should look like the one below.
 <br> 
 
 
-**Step 2:** Now that you have the template, clear row 19, **IsMissingCRMID**, because it is not needed it for this report. 
-
-![](/images/L-Create-CustAgingDetail/03.png)
-
-<br> 
-
-
-**Step 3:** Since you deleted one of the formula's parameters, you have to make sure you also delete it from the ReportRange function in C6. Select cell C6 and delete **C19** from the formula. Also, type **Market** in C16 so you can limit the data presented to only a few records as you are constructing the report. 
-
-![](/images/L-Create-CustAgingDetail/04.png)
-
-<br> 
-
-
-Now the parameters are set and should only reference cells C16, C17, and C18 as shown below. 
-
-![](/images/L-Create-CustAgingDetail/05.png)
-<br>
-
 ###  ReportRange() 
 
 **Step 1:** You can select [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) to see which columns are available. Since the [ ReportRange() ](/wIndex/ReportRange.html) function does not have a Column Definition defined, it should show all the columns with their column names. 
