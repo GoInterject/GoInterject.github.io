@@ -44,14 +44,14 @@ Delete rows 11 through 24 since they are not needed for this lesson. The page sh
 <br> 
 
 
-**Step 4:** A fixed report requires specific values to be entered in a row definition column. In the below example, the Dataportal is expecting the inventory categories typed in B14 to B21. In cell B25, you also added a **Leftovers** section that is a special INTERJECT feature, a Row Definition marking the start of a section that will include any data not matching the earlier fixed rows. This is helpful in ensuring all data is presented. 
+**Step 4:** A fixed report requires specific values to be entered in a row definition column. Enter the following categories as seen below. In cell B25, you also added a **Leftovers** section that is a special INTERJECT feature, a Row Definition marking the start of a section that will include any data not matching the earlier fixed rows. This is helpful in ensuring all data is presented. 
 
 ![](/images/L-Create-InventoryFix/08.png)
 
 <br> 
 
 
-**Step 4:** In C6, type **=ReportFixed()**, then click the **fx** button to bring up the Function Wizard as shown below. 
+**Step 5:** In C6, type **=ReportFixed()**, then click the **fx** button to bring up the Function Wizard as shown below. 
 
 ![](/images/L-Create-InventoryFix/06.png)
 
