@@ -65,7 +65,7 @@ In order to bring in the correct data you will need to designate a Dataportal. T
 <br>
 
 
-**Step 6:** In a [ ReportFixed ](/wIndex/ReportFixed.html) function you need to define the Column Definition and Row Definition ranges. Using the Function Wizard, use B14:B26 for the  RowDefRange . For Column Definitions, use row 2 by typing **2:2** in the ColDefRange argument. 
+**Step 6:** In a [ ReportFixed ](/wIndex/ReportFixed.html) function you need to define the Column Definition and Row Definition ranges. Using the Function Wizard, use B16:B28 for the  RowDefRange . For Column Definitions, use row 2 by typing **2:2** in the ColDefRange argument. 
 
 ![](/images/L-Create-InventoryFix/09.png)
 
@@ -85,7 +85,7 @@ In order to bring in the correct data you will need to designate a Dataportal. T
 <br> 
 
 
-**Step 9:** Freeze the report panes so that just the report area is shown for users. In previous examples jFreezePanes() functions were used, but in this page use the standard Freeze Panes feature in Excel. Adjust the worksheet's vertical and horizontal scroll bars until the report is positioned like below. Select cell D13 and use the View menu to set Freeze Panes as seen below. 
+**Step 9:** Freeze the report panes so that just the report area is shown for users. In previous examples jFreezePanes() functions were used, but in this page use the standard Freeze Panes feature in Excel. Adjust the worksheet's vertical and horizontal scroll bars until the report is positioned like below. Select cell D15 and use the View menu to set Freeze Panes as seen below. 
 
 ![](/images/L-Create-InventoryFix/12.png)
 
