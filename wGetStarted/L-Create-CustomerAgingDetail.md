@@ -42,7 +42,7 @@ When the template is complete, it should look like the one below.
 <br> 
 
 
-After you pull the report it will look like the one below. 
+After you pull the report it will look similiar to the one below. 
 
 ![](/images/L-Create-CustAgingDetail/07.png)
 
