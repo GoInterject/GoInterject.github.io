@@ -60,7 +60,7 @@ You are going to skip the ReportCodeToRun argument, since that is used only when
   
 
 
-**Step 4:** Then you will specify the name for the drill. In this case you will type **Drill to Customer Order History**. 
+**Step 4:** Then you will specify the name for the drill. In this case you will type **"Drill to Customer Order History"**. 
 
 ![](/images/L-Drill-CustAging/07.png)
 <br>
@@ -97,14 +97,7 @@ Below is when the data is pulled.
 
 ###  **Final Results**
 
-**Step 1:** To demonstrate the new drill, **right click** on one of the customer rows and select Drill on Data. The drill option **Drill to Customers Orders History** should be shown. 
-
-![](/images/L-Drill-CustAging/12.png)
-<br>
-  
-
-
-**Step 2:** Click on the button **Do Drill** and INTERJECT will navigate to the target worksheet, bring in the CustomerID selected by the filter, then run the report. The screenshot below should resemble the result. 
+**Step 1:** To demonstrate the new drill, click on one of the customer rows and select Drill on Data. Click on the button **Do Drill** and INTERJECT will navigate to the target worksheet, bring in the CustomerID selected by the filter, then run the report. The screenshot below should resemble the result. 
 
 ![](/images/L-Drill-CustAging/13.png)
 <br>
