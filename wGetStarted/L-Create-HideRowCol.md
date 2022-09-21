@@ -53,7 +53,7 @@ Both of these examples use the [ Customer Aging Detail  ](/wGetStarted/L3.4-Cust
 
 <br> 
 
-**Step 6:** Insert a row above row **31**, and in cell **G30** type "For Backward Compatibility". Then in cell **H30** enter the formula **=ReportCalc()** and click **fx**. Enter the following into the Function Wizard:
+**Step 6:** Insert a row above row **30**, and in cell **G30** type "For Backward Compatibility". Then in cell **H30** enter the formula **=ReportCalc()** and click **fx**. Enter the following into the Function Wizard:
 - For **OnPullSaveOrBoth**, type **Pull**
 - For **OnClearRunOrBoth**, type **Both**
 - For **SheetOrWorkbook**, type **Sheet**
