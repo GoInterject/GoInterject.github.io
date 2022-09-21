@@ -59,7 +59,7 @@ Both of these examples use the [ Customer Aging Detail  ](/wGetStarted/L3.4-Cust
 - For **SheetOrWorkbook**, type **Sheet**
 - For **SheetName**, type **CustomerAgingDetail**
 
-[](/images/L-Create-HideRowCol/ReportCalc1.png)
+![](/images/L-Create-HideRowCol/ReportCalc1.png)
 
 
 **Step 7:** Type **Market** into the customer name parameter again, then pull the report. Notice this time that the row containing no subtotal is now hidden. The data is not gone, it just isn't displayed in the report any longer.
