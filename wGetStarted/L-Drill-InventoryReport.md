@@ -115,7 +115,7 @@ Here, you have the report pulled and are ready to go.
   
 
 
-Hyperlinking Drills is a simple way to make INTERJECT reports faster and more user-friendly. Click [ here ](/wGetStarted/L-Drill-TheThreeWays.html#the-hyperlink-method) for the Financial Report Drill walk-through. 
+Hyperlinking Drills is a simple way to make INTERJECT reports faster and more user-friendly. Click [ here ]([/wGetStarted/L-Drill-TheThreeWays.html#the-hyperlink-method](wGetStarted/L-Drill-FinancialReport.html)) for the Financial Report Drill walk-through. 
 
   
 
