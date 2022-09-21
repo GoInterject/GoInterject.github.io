@@ -33,7 +33,7 @@ In this example, you will view drilling between reports using the same Inventory
 
 ![](/images/L-Drill-Inventory/03.png)
 
-**Step 2:** Now type **InventoryByDetail!C4** into the ReportCellToRun argument to specify the range you want to navigate to. You will skipping the ReportCodeToRun argument since that is only used for drilling to other workbooks in the Report Library. 
+**Step 2:** Now type **InventoryByDetail!C4** into the ReportCellToRun argument to specify the range you want to navigate to. You will be skipping the ReportCodeToRun argument since that is only used for drilling to other workbooks in the Report Library. 
 
 ![](/images/L-Drill-Inventory/04.png)
 <br>
@@ -47,7 +47,7 @@ In this example, you will view drilling between reports using the same Inventory
   
 
 
-**Step 4:** In the Formula Bar, click within the word **Pair()** inside the text **PairGroup(Pair())** while the Function Wizard is open. See the illustration below. Once this is done, the Function Wizard will automatically change to help with the Pair() function. Type **B15:B23** in the From argument as shown below. Column B is where the CustomerID will be shown in the source report. By noting a range from row 22 to 24 in column B, INTERJECT will expand that range to the data that is presented in this source report. 
+**Step 4:** In the Formula Bar, click within the word **Pair()** inside the text **PairGroup(Pair())** while the Function Wizard is open. See the illustration below. Once this is done, the Function Wizard will automatically change to help with the Pair() function. Type **B15:B23** in the From argument as shown below. Column B is where the CustomerID will be shown in the source report. By noting a range from row 15 to 23 in column B, INTERJECT will expand that range to the data that is presented in this source report. 
 
 ![](/images/L-Drill-Inventory/06.png)
 <br>
@@ -80,7 +80,7 @@ After pressing OK, the report formula should look as it does in the image below.
   
 
 
-Once you select **OK**, the cells will be linked to the drill, as shown below. 
+After you select **OK**, select on each of the remaining cells one by one and press **CTL-Y** to apply the last used action (in this case applying the link). Then the cells will be linked to the drill, as shown below. 
 
 ![](/images/L-Drill-Inventory/11.png)
 <br>
