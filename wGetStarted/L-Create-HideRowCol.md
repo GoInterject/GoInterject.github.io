@@ -28,25 +28,17 @@ Both of these examples use the [ Customer Aging Detail  ](/wGetStarted/L3.4-Cust
 
 <br>
 
-**Step 3:** Insert a row above row **31**, and in cell **G30** type "For Backward Compatibility". Then in cell **H30** enter the formula **=ReportCalc()** and click **fx**. Enter the following into the Function Wizard:
-- For **OnPullSaveOrBoth**, type **Pull**
-- For **OnClearRunOrBoth**, type **Both**
-- For **SheetOrWorkbook**, type **Sheet**
-- For **SheetName**, type **CustomerAgingDetail**
-
-[](/images/L-Create-HideRowCol/ReportCalc1.png)
-
-**Step 4:** Type **Hide/Show Inv w/0 Subs** in cell **K27**. Then type **=ReportHideRowOrColumn()** in cell **L27**.
+**Step 3:** Type **Hide/Show Inv w/0 Subs** in cell **K27**. Then type **=ReportHideRowOrColumn()** in cell **L27**.
 
 ![](/images/L-Create-HideRowCol/TypeFormulas.png)
 
 <br> 
 
 
-**Step 5:** With cell **L27** still selected, click on the **fx** button to open the formula wizard.
+**Step 4:** With cell **L27** still selected, click on the **fx** button to open the formula wizard.
 - For **OnPullSaveOrBoth**, type **Pull**
 - For **OnClearRunOrBoth**, type **Both**
-- For **RowOrColumnRange**, enter **C43:C44** \(this will copy the formula through all rows of the report\)
+- For **RowOrColumnRange**, enter **C:C** \(this will copy the formula through all rows of the report\)
 - For **Disabled**, do not enter anything
 - Hit OK
 
@@ -55,11 +47,19 @@ Both of these examples use the [ Customer Aging Detail  ](/wGetStarted/L3.4-Cust
 <br> 
 
 
-**Step 6:** Now, in cell **C16**, type **=IF(P16=0,"Hide","Show")**. This specifies how to handle 0 values based on the formula entered for the subtotal column.  
+**Step 5:** Now, in cell **C16**, type **=IF(P16=0,"Hide","Show")**. This specifies how to handle 0 values based on the formula entered for the subtotal column.  
 
 ![](/images/L-Create-HideRowCol/EnterForm.png)
 
 <br> 
+
+**Step 6:** Insert a row above row **31**, and in cell **G30** type "For Backward Compatibility". Then in cell **H30** enter the formula **=ReportCalc()** and click **fx**. Enter the following into the Function Wizard:
+- For **OnPullSaveOrBoth**, type **Pull**
+- For **OnClearRunOrBoth**, type **Both**
+- For **SheetOrWorkbook**, type **Sheet**
+- For **SheetName**, type **CustomerAgingDetail**
+
+[](/images/L-Create-HideRowCol/ReportCalc1.png)
 
 
 **Step 7:** Type **Market** into the customer name parameter again, then pull the report. Notice this time that the row containing no subtotal is now hidden. The data is not gone, it just isn't displayed in the report any longer.
