@@ -136,7 +136,7 @@ There are two more pairs to enter. Scroll down and type:
 
 **Pair("","Company",FALSE)** into Pair 14 
 
-**Pair("","FullAccount",FALSE))** into Pair 15. 
+**Pair("","FullAccount",FALSE)** into Pair 15. 
 
 After these, you are through adding the Pair() functions. 
 
@@ -159,7 +159,7 @@ When you click away from TransferPairs, it shows a red **#NAME** ? to the right 
   
 
 
-**Step 12:** You successfully created a Drill to the Journal Entry Query report from the financial report. Test it out. 
+**Step 12:** You successfully created a Drill to the Journal Entry Query report from the financial report. 
 
 ![](/images/L-Drill-Financial/17.png)
 <br>
