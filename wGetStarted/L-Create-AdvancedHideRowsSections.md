@@ -56,6 +56,7 @@ For this lab, find the Interject Inventory Demo in the Interject Demo folder wit
 <br>
 
 **Step 7:** In cell **C8**, enter **=C7**, to reference the cell above.
+
 ![](/images/L-Create-AdvancedHideRow/AdvanceRowHide7.png)
 
 <br>
@@ -64,7 +65,7 @@ For this lab, find the Interject Inventory Demo in the Interject Demo folder wit
 
 ![](/images/L-Create-AdvancedHideRow/AdvanceRowHide8.png)
 
-**Step 9:** Select cells **C19:C21** and copy to the clipboard by pressing **CTL-C***. Navigate to cell **C23** and paste the formulas by pressing **CTL-V***.
+**Step 9:** Select cells **C19:C21** and copy to the clipboard by pressing **CTL-C**. Navigate to cell **C23** and paste the formulas by pressing **CTL-V**.
 
 ![](/images/L-Create-AdvancedHideRow/AdvanceRowHide9.png)
 
