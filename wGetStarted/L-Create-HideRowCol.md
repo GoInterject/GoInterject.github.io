@@ -130,7 +130,7 @@ You are now ready to begin editing the excel sheet.
 <br> 
 
 
-**Step 8:** Select cells **L5** and **O5** and shift them left 3 cells by cutting the cells and pasting them into **J** **5** and **M** **5** respectively. 
+**Step 8:** Select cells **L5** and **O5** and shift them left 3 cells by cutting the cells and pasting them into **J5** and **M5** respectively. 
 
 ![](/images/L-Create-HideRowCol/30.jpg)
 
