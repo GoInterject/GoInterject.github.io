@@ -35,6 +35,7 @@ For this lab, find the Interject Inventory Demo in the Interject Demo folder wit
 - **OnClearRunOrBoth:** Both
 - **SheetOrWorkbook:** Sheet
 - **Disabled:** Leave blank
+- **SheetName:** InvByCategory_WithDetail
 
 ![](/images/L-Create-AdvancedHideRow/AdvanceRowHide4.png)
 
