@@ -35,7 +35,7 @@ When manually entering different filter values, it can be difficult to remember 
 ![](/images/L-Create-Dropdowns/04.png)
 <br>
 
-**Step 3:** For the **Name:** field input **CompanyNameDDL**, and in the **Refers to:** field input **=CustomerAging!$H$7** 
+**Step 3:** For the **Name:** field input **CompanyNameDDL**, and in the **Refers to:** field input **=CustomerAging!$H$7**. Click **OK** and **Close** the Name Manager window. 
 
 ![](/images/L-Create-Dropdowns/05.png)
 
@@ -70,7 +70,7 @@ When manually entering different filter values, it can be difficult to remember 
 ![](/images/L-Create-Dropdowns/10.png)
 <br>
 
-**Step 6:** Next, scroll down in the function arguments to find the **Instruction Text** argument field and input **Select A Customer**.
+**Step 6:** Next, scroll down in the function arguments to find the **Instruction Text** argument field and input **Select A Customer**. Click **OK**.
 
 ![](/images/L-Create-Dropdowns/11.png)
 <br>
