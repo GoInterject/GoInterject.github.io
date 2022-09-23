@@ -187,7 +187,7 @@ Pulling the report will refresh the protection settings. One of the settings tha
 
 The other way is to navigate to the INTERJECT Ribbon and click on the **Advanced** **Menu** to enter the advanced menu. 
 
-![](/images/L-Create-Protecting/19.jpg)   
+![](/images/L-Create-Protecting/19.png)   
 
 
 <br> 
