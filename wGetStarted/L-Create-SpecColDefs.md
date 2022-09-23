@@ -151,5 +151,5 @@ Click on the hyperlink in cell  **C27** and  notice that the functionality of th
 
 <br>
 
-If there are any additional special column features that are not listed here or you have any questions, please contact INTERJECT at mailto:info@gointerject.com 
+If there are any additional special column features that are not listed here or you have any questions, please contact INTERJECT at  [ info@gointerject.com ](mailto:info@gointerject.com). 
 
