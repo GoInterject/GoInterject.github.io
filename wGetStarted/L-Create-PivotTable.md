@@ -192,14 +192,22 @@ On a second line under row 4 (insert new row if needed), you will do the same fo
 <br> 
 
 
-**Step 6:** In C14, for the Company Name, type **=if(Pivot!B11="","",Pivot!B11)**. This formula will make the filters equal between pages and if the Pivot worksheet filter is blank, it will be blank as well. Normally, Excel will make the result **0** if not handled with this formula. Copy down the formula in C14 through C19 so the other filters are linked as well. 
+**Step 6:** Navigate to cell C14 of the "CustomerAccountDetail" tab. Ensure the type is General.
+
+
+![](/images/L-Create-PivotTable/23b.jpg)
+
+<br> 
+
+
+**Step 7:** For the Company Name, type **=if(Pivot!B12="","",Pivot!B12)**. This formula will make the filters equal between pages and if the Pivot worksheet filter is blank, it will be blank as well. Normally, Excel will make the result **0** if not handled with this formula. Copy cell C14 and paste it through C19 so the other filters are linked as well. 
 
 ![](/images/L-Create-PivotTable/24.jpg)
 
 <br> 
 
 
-**Step 7:** Now go back to the pivot table and make sure it is working properly. Enter the following filters to check the pull. 
+**Step 8:** Now go back to the pivot table and make sure it is working properly. Enter the following filters to check the pull. 
 
 ![](/images/L-Create-PivotTable/25.jpg)
 
