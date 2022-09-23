@@ -49,7 +49,7 @@ Now rename the tab something that represents the data, such as **TargetForPivotT
 
 In the Month column in cell J21, type **=TEXT(I21,"mm")**
 
-In the Year column in K21, type **=YEAR($I21)**
+In the Year column in K21, type **=TEXT($I21,"yyyy")**
 
 In the Year-Mth column in L21, type **=TEXT(I21,"yyyy-mm")**
 
@@ -57,7 +57,7 @@ In the Year-Mth column in L21, type **=TEXT(I21,"yyyy-mm")**
 
 <br>
 
-**Step 6:** Next, you are going to add two parameters to the report by inserting two rows below **Show Unapplied Only** and labeling them **Begin Date** and **End Date**.  
+**Step 6:** Next, you are going to add two parameters to the report by inserting two rows below **Show Unapplied Only** and labeling them **Begin Date:** and **End Date:**.  
 ![](/images/L-Create-PivotTable/07.jpg)
 
 <br> 
@@ -104,7 +104,7 @@ In the Year-Mth column in L21, type **=TEXT(I21,"yyyy-mm")**
 <br> 
 
 
-**Step 12:** Now that you have entered the fields, you can use [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) on the report, filtering for companies with **Market** in their names. First type **Market** in the filter cell C1 
+**Step 12:** Now that you have entered the fields, you can use [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) on the report, filtering for companies with **Market** in their names. First type **Market** in the filter cell C1 and then **Pull Data**. 
 
 ![](/images/L-Create-PivotTable/14.jpg)
 
@@ -136,6 +136,12 @@ In the Year-Mth column in L21, type **=TEXT(I21,"yyyy-mm")**
 **Step 2:** Use the PivotTable pane on the right to place Year in the columns. Company Name and Type go to rows, Country goes in Filters. Then, choose the Amount to be summed. Your pivot table should match the screenshot below. 
 
 ![](/images/L-Create-PivotTable/17.png)
+
+<br> 
+
+**Step 3:** Rename the tab "Pivot" and you can customize the look by clicking **Design** and then expand the table previews and select a color theme.
+
+![](/images/L-Create-PivotTable/17b.png)
 
 <br> 
 
