@@ -119,7 +119,7 @@ Now in cell  **C19** input  **SAVEA** to verify that the input filters are not p
 
 ###  Multiple Sheets: 
 
-Setup a grouping for columns I:L by selecting the columns, then navigating to the  **Data Ribbon** and select  **Group**. 
+First ensure the sheet is unprotected. Then setup a grouping for columns I:L by selecting the columns, then navigating to the  **Data Ribbon** and select  **Group**. 
 
 ![](/images/L-Create-Protecting/12.jpg)   
 
