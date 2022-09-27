@@ -20,7 +20,7 @@ Before you begin your labs, you should familiarize yourself with some basic conc
 
 [ Customer Aging Detail  ](/wGetStarted/L-Create-CustomerAgingDetail.html)
 
-[ Installing Interject ] (/wAbout/SingleUser.html) 
+[ Installing Interject ](/wAbout/SingleUser.html) 
 
 [ Logging In ] (/wAbout/Logging-In.html)
 
