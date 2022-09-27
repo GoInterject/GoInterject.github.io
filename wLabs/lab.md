@@ -26,7 +26,7 @@ Before you begin your labs, you should familiarize yourself with some basic conc
 
 ### Labs
 
-	#### Lab 1 : Modifying Reports
+#### Lab 1 : Modifying Reports
 
 ##### [ 1.1 Lab Modify: Customer Aging](/wGetStarted/L-Modify-CustomerAging.html)
 
@@ -44,7 +44,7 @@ Before you begin your labs, you should familiarize yourself with some basic conc
 
 0
 <br>
-	#### Lab 2 : Creating Reports
+#### Lab 2 : Creating Reports
 
 ##### [ 2.1 Lab Create: Customer Aging](/wGetStarted/L-Create-CustomerAging.html)
 
@@ -85,7 +85,7 @@ Before you begin your labs, you should familiarize yourself with some basic conc
 • Adding Multiple Rows of Formatting
 • Editing the ReportVariable Function
 <br>
-	#### Lab 3 : Real World Examples
+#### Lab 3 : Real World Examples
 
 ##### [ 3.1 Basics of Report Formulas](/wAbout/Basics-of-Report-Formulas.html)
 
@@ -115,7 +115,7 @@ Before you begin your labs, you should familiarize yourself with some basic conc
 • Returning From Drilling
 <br>
 
-	#### Lab 4 : Drilling Data
+#### Lab 4 : Drilling Data
 
 ##### [ 4.1 Lab Drill: Customer Aging](/wGetStarted/L-Drill-CustomerAging.html)
 
@@ -130,7 +130,7 @@ Before you begin your labs, you should familiarize yourself with some basic conc
 
 • Building a Drill on Data
 <br>
-	#### Lab 5 : Special Features
+#### Lab 5 : Special Features
 
 ##### [ 5.1 Lab Create: Hiding Rows & Columns](/wGetStarted/L-Create-HideRowCol.html)
 
@@ -177,7 +177,7 @@ Before you begin your labs, you should familiarize yourself with some basic conc
 
 • How to Enable Interject to Pull Data Upon Opening a Report
 <br>
-	#### Lab 6 : Exporting Data
+#### Lab 6 : Exporting Data
 
 ##### [ 6.1 Lab Export: Quick Export and PDF](/wGetStarted/L-Export-QuickExportAndPDF.html)
 
