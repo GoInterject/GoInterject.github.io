@@ -10,7 +10,7 @@ The **ReportHideRowOrColumn()** function allows you to hide rows columns when th
 
 Once completed, these two features can be combined to hide, without eliminating, certain unneeded values and generally clean up the presentation of your financial reports. 
 
-Both of these examples use the [ Customer Aging Detail  ](/wGetStarted/L3.4-Customer-Aging-Detail.html) report created in a previous walk through. You can navigate to the report by opening the **Customer Collections** report in the **Interject Demo** folder of the [ Report Library ](/wAbout/Report-Library-Basics.html). 
+Both of these examples use the [ Customer Aging Detail  ](/wGetStarted/L-Create-CustomerAgingDetail.html) report created in a previous walk through. You can navigate to the report by opening the **Customer Collections** report in the **Interject Demo** folder of the [ Report Library ](/wAbout/Report-Library-Basics.html). 
 
 ![](/images/L-Create-HideRowCol/01.png)
 
