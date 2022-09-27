@@ -1,9 +1,11 @@
+Lab SectionLab Walkthrough Title
 ---
-title: "Lab Walkthrough"
+title: Lab Walkthrough
 layout: custom
 keywords: []
-description:
+description: 
 ---
+
 ## **Lab Walkthrough**
 
 ### Overview
@@ -15,11 +17,12 @@ These labs are offered as an introductory course on the Interject® add-in for M
 
 Before you begin your labs, you should familiarize yourself with some basic concepts that you will use throughout the labs:
 
-[ Installing Interject ](/wAbout/SingleUser.html) 
 
-[ Logging In ](/wAbout/Logging-In.html)
+[ Installing Interject ] (/wAbout/SingleUser.html) 
 
-[ Report Library Basics ](/wAbout/Report-Library-Basics.html)
+[ Logging In ] (/wAbout/Logging-In.html)
+
+[ Report Library Basics ] (/wAbout/Report-Library-Basics.html)
 
 <br>
 
