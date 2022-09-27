@@ -1,4 +1,3 @@
-Lab SectionLab Walkthrough Title
 ---
 title: Lab Walkthrough
 layout: custom
