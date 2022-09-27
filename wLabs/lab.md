@@ -18,7 +18,7 @@ These labs are offered as an introductory course on the Interject® add-in for M
 
 Before you begin your labs, you should familiarize yourself with some basic concepts that you will use throughout the labs:
 
-[ Customer Aging Detail  ](/wGetStarted/L3.4-Customer-Aging-Detail.html)
+[ Customer Aging Detail  ](/wGetStarted/L-Create-CustomerAgingDetail.html)
 
 [ Installing Interject ] (/wAbout/SingleUser.html) 
 
