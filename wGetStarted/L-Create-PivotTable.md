@@ -185,14 +185,14 @@ On a second line under row 4 (insert new row if needed), you will do the same fo
 
 <br>
 
-**Step 5:** Now that the ReportRange() fields are prepared, you can add filters for the searches. Here you will add Company Name, Contact ID, CustomerID, Show Unapplied Only, Begin Date, End Date. Both parameter fields for the pivot table sheet and the target sheet should be identical. These are the same filters as seen in the worksheet **TargetForPivotTable**. 
+**Step 5:** Now that the ReportRange() fields are prepared, you can add filters for the searches. Rename the title to "Pivot Table For Customer Transactions" as seen below. Also, add the filters Company Name, CustomerID, Begin Date, and End Date. The filters in the **Pivot** tab should match the filters in the **TargetForPivotTable** tab.
 
 ![](/images/L-Create-PivotTable/23.jpg)
 
 <br> 
 
 
-**Step 6:** Navigate to cell C14 of the "CustomerAccountDetail" tab. Ensure the type is General.
+**Step 6:** Navigate to cell C14 of the **TargetForPivotTable** tab. Ensure the type is General.
 
 
 ![](/images/L-Create-PivotTable/23b.jpg)
