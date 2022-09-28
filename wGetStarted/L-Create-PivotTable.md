@@ -190,7 +190,7 @@ On a second line under row 4 (insert new row if needed), you will do the same fo
 
 <br>
 
-**Step 5:** Now that the ReportRange() fields are prepared, you can add filters for the searches. Rename the title to "Pivot Table For Customer Transactions" as seen below. Also, add the filters Company Name, CustomerID, Begin Date, and End Date. The filters in the **Pivot** tab should match the filters in the **TargetForPivotTable** tab.
+**Step 5:** Now that the ReportRange() fields are prepared, you can add filters for the searches. Rename the title to "Pivot Table For Customer Transactions" as seen below. Also, add the filters Company Name, Contact Name, CustomerID, Show Unapplied Only, Begin Date, and End Date. The filters in the **Pivot** tab should match the filters in the **TargetForPivotTable** tab.  **Note** Remember there are 2 hidded rows that you have to match.
 
 ![](/images/L-Create-PivotTable/23.png)
 
