@@ -209,7 +209,7 @@ On a second line under row 4 (insert new row if needed), you will do the same fo
 
 **Step 7:** For the Company Name, type **=if(Pivot!B12="","",Pivot!B12)**. This formula will make the filters equal between pages and if the Pivot worksheet filter is blank, it will be blank as well. Normally, Excel will make the result **0** if not handled with this formula. Copy cell C14 and paste it through C19 so the other filters are linked as well. 
 
-![](/images/L-Create-PivotTable/24.jpg)
+![](/images/L-Create-PivotTable/24.png)
 
 <br> 
 
