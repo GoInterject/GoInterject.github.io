@@ -110,16 +110,21 @@ In the Year-Mth column in L21, type **=TEXT(I21,"yyyy-mm")**
 
 <br>
 
-**Step 13:** In the screenshot below, you can see there are four steps to preparing the contents of the pivot table. 
+**Step 13:** Highlight the cells B21 to M122. **Important:** Be sure to include row 21, the column labels on the top of the range, and include the bottom anchor row, which is one row past the last customer record. The anchor row is important since it will grow and shrink as the data is pulled and cleared. Exclude the Paid? column from the table range. 
+
+![](/images/L-Create-PivotTable/14b.png)
+
+<br>
+
+**Step 14:** In the screenshot below, you can see there are four steps to preparing the contents of the pivot table. 
 
 1. Select the Insert ribbon as noted below. 
 2. Within the Insert ribbon, click the PivotTable menu item so the Create PivotTable window appears. 
-3. Using the **Select a table or range** box, select all the columns and rows containing the data as noted below. **Important:** Be sure to include row 21, the column labels on the top of the range, and include the bottom anchor row, which is one row past the last customer record. The anchor row is important since it will grow and shrink as the data is pulled and cleared. Exclude the Paid? column from the table range. 
+3. Ensure the range **TargetForPivotTable!$B$21:$M$122** is selected in the **Select a table or range** box. 
 4. Click the OK button, and a new tab will be created with the new pivot table. 
 
 
-
-![](/images/L-Create-PivotTable/15.jpg)
+![](/images/L-Create-PivotTable/15.png)
 
 <br> 
 
