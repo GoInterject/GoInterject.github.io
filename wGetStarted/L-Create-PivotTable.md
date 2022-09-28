@@ -187,7 +187,7 @@ On a second line under row 4 (insert new row if needed), you will do the same fo
 
 **Step 5:** Now that the ReportRange() fields are prepared, you can add filters for the searches. Rename the title to "Pivot Table For Customer Transactions" as seen below. Also, add the filters Company Name, CustomerID, Begin Date, and End Date. The filters in the **Pivot** tab should match the filters in the **TargetForPivotTable** tab.
 
-![](/images/L-Create-PivotTable/23.jpg)
+![](/images/L-Create-PivotTable/23.png)
 
 <br> 
 
@@ -195,7 +195,7 @@ On a second line under row 4 (insert new row if needed), you will do the same fo
 **Step 6:** Navigate to cell C14 of the **TargetForPivotTable** tab. Ensure the type is General.
 
 
-![](/images/L-Create-PivotTable/23b.jpg)
+![](/images/L-Create-PivotTable/23b.png)
 
 <br> 
 
@@ -209,14 +209,14 @@ On a second line under row 4 (insert new row if needed), you will do the same fo
 
 **Step 8:** Now go back to the pivot table and make sure it is working properly. Enter the following filters to check the pull. 
 
-![](/images/L-Create-PivotTable/25.jpg)
+![](/images/L-Create-PivotTable/25.png)
 
 <br> 
 
 
 Now you can see that the table only pulled data from transactions occurring in 1997, so the filters, ReportRun(), and pivot table are working as they should. 
 
-![](/images/L-Create-PivotTable/26.jpg)
+![](/images/L-Create-PivotTable/26.png)
 
 <br> 
 
