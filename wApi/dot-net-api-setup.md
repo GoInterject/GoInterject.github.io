@@ -186,7 +186,7 @@ If this API offers public access, then connection strings should not be shared i
 <!--Sql Server Authentication to MSSqlServer-->
 <add name="DataApi_UsrPwd" connectionString="Server=MyServerName; Database=MyDbName; User ID=MyUserName; Password=MySecret;" providerName="System.Data.SqlClient" />
 
-<!--Using the MySQL connector plugin   (note providerName="MySql.Data.MySqlClient") see http://dev.mysql.com/downloads/connector/net/-->
+<!--Using the MySQL connector plugin   (note providerName="MySql.Data.MySqlClient") see http://dev.mysql.com/downloads/connector/net/--> 
 <add name="DataApi_MySql"  connectionString="server=MyServerName; database=MyDbName; User Id=MyUserName; password=MySecret;" providerName="MySql.Data.MySqlClient" />
     
 <!--ODBC driver to Oracle or MySQL-->

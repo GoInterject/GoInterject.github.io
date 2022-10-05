@@ -85,7 +85,7 @@ Acquires the base contents of the settings file and initiates defaults prior to 
         }
 ``` 
 
-**Example of returned output**
+**Example of returned output** 
 
 ```xml
         <?xml version="1.0" encoding="utf-8"?>
