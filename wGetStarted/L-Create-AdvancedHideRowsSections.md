@@ -16,16 +16,19 @@ For this lab, find the Interject Inventory Demo in the Interject Demo folder wit
 ###  **Hiding Rows**
 
 **Step 1:** Start by using the [ Quick Tools ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) button in the ribbon menu and selecting **Freeze/Unfreeze Panes**.
+
 ![](/images/L-Create-AdvancedHideRow/AdvanceRowHide1.png)
 
 <br> 
 
 **Step 2:** Insert a row above row above row **6**, so that there are 2 blank rows, and then expand the collapsed columns by clicking the plus sign in the upper left.
+
 ![](/images/L-Create-AdvancedHideRow/AdvanceRowHide2.png)
 
 <br>
 
 **Step 3:** Click into cell **C4** and open the Function Wizard by clicking **fx**. Then scroll down in the Report Variable section of the wizard until you see **UseTopSpacerRow**, and type **True** into the empty field. Click **OK**.
+
 ![](/images/L-Create-AdvancedHideRow/AdvanceRowHide3.png)
 
 <br>
@@ -36,6 +39,7 @@ For this lab, find the Interject Inventory Demo in the Interject Demo folder wit
 - **SheetOrWorkbook:** Sheet
 - **Disabled:** Leave blank
 - **SheetName:** InvByCategory_WithDetail
+
 ![](/images/L-Create-AdvancedHideRow/AdvanceRowHide4.png)
 
 <br>
@@ -45,21 +49,25 @@ For this lab, find the Interject Inventory Demo in the Interject Demo folder wit
 - **OnClearRunOrBoth:** Both
 - **RowOrColumnRange:** C19:C56
 - **Disabled:** Leave blank
+
 ![](/images/L-Create-AdvancedHideRow/AdvanceRowHide5.png)
 
 <br>
 
 **Step 6:** In cell **A20** enter **=Rows(A19:A56)**.
+
 ![](/images/L-Create-AdvancedHideRow/AdvanceRowHide6.png)
 
 <br>
 
 **Step 7:** In cell **C8**, enter **=C7**, to reference the cell above.
+
 ![](/images/L-Create-AdvancedHideRow/AdvanceRowHide7.png)
 
 <br>
 
 **Step 8:** Now, in cell **C19** of the report area, write the formula **=IF(AND(I22=0,$A$20<>38),"Hide","Show")**. Write the formula **=C19** in both **C20** and **C21**.
+
 ![](/images/L-Create-AdvancedHideRow/AdvanceRowHide8.png)
 
 <br>
@@ -76,9 +84,11 @@ Continue to navigate to each category and paste the formulas in cells in **C27**
 <br>
 
 **Step 10:** To test that the function and formulas are working correctly, click into cell **B20**, which contains the category name "Beverages" and add and "X". Now freeze the panes using the Quick Tools menu, hide the leftmost columns, and pull the report.
+
 ![](/images/L-Create-AdvancedHideRow/AdvanceRowHide13.png)
 
 <br>
 
 You should see that the empty category comes in collapsed, the other category detail is expanded, and the original "Beverages" category comes in at the bottom as "Items Not Included."
+
 ![](/images/L-Create-AdvancedHideRow/AdvanceRowHide14.png)
