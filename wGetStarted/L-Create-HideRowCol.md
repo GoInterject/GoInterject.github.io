@@ -10,7 +10,7 @@ The **ReportHideRowOrColumn()** function allows you to hide rows columns when th
 
 Once completed, these two features can be combined to hide, without eliminating, certain unneeded values and generally clean up the presentation of your financial reports. 
 
-Both of these examples use the [ Customer Aging Detail  ](/wGetStarted/L3.4-Customer-Aging-Detail.html) report created in a previous walk through. You can navigate to the report by opening the **Customer Collections** report in the **Interject Demo** folder of the [ Report Library ](/wAbout/Report-Library-Basics.html). 
+Both of these examples use the [ Customer Aging Detail  ](/wGetStarted/L-Create-CustomerAgingDetail.html) report created in a previous walk through. You can navigate to the report by opening the **Customer Collections** report in the **Interject Demo** folder of the [ Report Library ](/wAbout/Report-Library-Basics.html). 
 
 ![](/images/L-Create-HideRowCol/01.png)
 
@@ -28,25 +28,17 @@ Both of these examples use the [ Customer Aging Detail  ](/wGetStarted/L3.4-Cust
 
 <br>
 
-**Step 3:** Insert a row above row **31**, and in cell **G30** type "For Backward Compatibility". Then in cell **H30** enter the formula **=ReportCalc()** and click **fx**. Enter the following into the Function Wizard:
-- For **OnPullSaveOrBoth**, type **Pull**
-- For **OnClearRunOrBoth**, type **Both**
-- For **SheetOrWorkbook**, type **Sheet**
-- For **SheetName**, type **CustomerAgingDetail**
-
-[](/images/L-Create-HideRowCol/ReportCalc1.png)
-
-**Step 4:** Type **Hide/Show Inv w/0 Subs** in cell **K27**. Then type **=ReportHideRowOrColumn()** in cell **L27**.
+**Step 3:** Type **Hide/Show Inv w/0 Subs** in cell **K27**. Then type **=ReportHideRowOrColumn()** in cell **L27**.
 
 ![](/images/L-Create-HideRowCol/TypeFormulas.png)
 
 <br> 
 
 
-**Step 5:** With cell **L27** still selected, click on the **fx** button to open the formula wizard.
+**Step 4:** With cell **L27** still selected, click on the **fx** button to open the formula wizard.
 - For **OnPullSaveOrBoth**, type **Pull**
 - For **OnClearRunOrBoth**, type **Both**
-- For **RowOrColumnRange**, enter **C43:C44** \(this will copy the formula through all rows of the report\)
+- For **RowOrColumnRange**, enter **C:C** \(this will copy the formula through all rows of the report\)
 - For **Disabled**, do not enter anything
 - Hit OK
 
@@ -55,11 +47,19 @@ Both of these examples use the [ Customer Aging Detail  ](/wGetStarted/L3.4-Cust
 <br> 
 
 
-**Step 6:** Now, in cell **C16**, type **=IF(P16=0,"Hide","Show")**. This specifies how to handle 0 values based on the formula entered for the subtotal column.  
+**Step 5:** Now, in cell **C16**, type **=IF(P16=0,"Hide","Show")**. This specifies how to handle 0 values based on the formula entered for the subtotal column.  
 
 ![](/images/L-Create-HideRowCol/EnterForm.png)
 
 <br> 
+
+**Step 6:** Insert a row above row **30**, and in cell **G30** type "For Backward Compatibility". Then in cell **H30** enter the formula **=ReportCalc()** and click **fx**. Enter the following into the Function Wizard:
+- For **OnPullSaveOrBoth**, type **Pull**
+- For **OnClearRunOrBoth**, type **Both**
+- For **SheetOrWorkbook**, type **Sheet**
+- For **SheetName**, type **CustomerAgingDetail**
+
+![](/images/L-Create-HideRowCol/ReportCalc1.png)
 
 
 **Step 7:** Type **Market** into the customer name parameter again, then pull the report. Notice this time that the row containing no subtotal is now hidden. The data is not gone, it just isn't displayed in the report any longer.
@@ -95,70 +95,63 @@ You are now ready to begin editing the excel sheet.
 <br> 
 
 
-**Step 3:** In cell **G30** input **Refresh Functions:**, in cell **G31** input **Hide Columns:**, and in cell **G32** input **Hide Rows:**, then right align all 3 cells to create labels for report formulas so they don't get mixed up. 
-
-![](/images/L-Create-HideRowCol/24.jpg)
-
-<br> 
-
-
-**Step 4:** Select cell **O34** and insert **=IF(SUMIF(C47:C48,"Show",O47:O48) > 0, "Show", "Hide")**. 
+**Step 3:** Select cell **O34** and insert **=IF(SUMIF(C47:C48,"Show",O47:O48) > 0, "Show", "Hide")**. 
 
 ![](/images/L-Create-HideRowCol/25.jpg)
 
 <br> 
 
 
-**Step 5:** In cell **G31** insert **Hide Columns:** and in cell **H31** input **=ReportHideRoworColumn()**
+**Step 4:** In cell **G32** insert **Hide Columns:** and in cell **H32** input **=ReportHideRoworColumn()**
 
 ![](/images/L-Create-HideRowCol/26.jpg)
 
 <br> 
 
 
-**Step 6:** Select cell **H31** and click the **fx** button to open the function wizard 
+**Step 5:** Select cell **H32** and click the **fx** button to open the function wizard 
 
 ![](/images/L-Create-HideRowCol/27.jpg)
 
 <br> 
 
 
-**Step 7:** In the function wizard input **Pull** in the field labeled **OnPullSaveOrBoth**, input **Both** in the field **OnClearRunOrBoth**. 
+**Step 6:** In the function wizard input **Pull** in the field labeled **OnPullSaveOrBoth**, input **Both** in the field **OnClearRunOrBoth**. 
 
 ![](/images/L-Create-HideRowCol/28.jpg)
 
 <br> 
 
 
-**Step 8:** Select the filed **RowOrColumnRange** then select the three cells containing **Hide**. In this case it will be **M39:O39**. 
+**Step 7:** Select the filed **RowOrColumnRange** then select the three cells containing **Hide**. In this case it will be **M34:O34**. Click **OK**.
 
 ![](/images/L-Create-HideRowCol/29.jpg)
 
 <br> 
 
 
-**Step 9:** Select cells **M** **5** and **O** **5** and shift them left 3 cells by cutting the cells and pasting them into **J** **5** and **M** **5** respectively. 
+**Step 8:** Select cells **L5** and **O5** and shift them left 3 cells by cutting the cells and pasting them into **J5** and **M5** respectively. 
 
 ![](/images/L-Create-HideRowCol/30.jpg)
 
 <br> 
 
 
-**Step 10:** Select cells **L19** and **N19** and shift them left 3 cells by cutting the cells and pasting them into **I19** and **K19** respectively. 
+**Step 9:** Select cells **K19** and **N19** and shift them left 3 cells by cutting the cells and pasting them into **I19** and **L19** respectively. 
 
 ![](/images/L-Create-HideRowCol/31.jpg)
 
 <br> 
 
 
-**Step** **11:** Re-freeze the report 
+**Step 10:** Re-freeze the report 
 
 ![](/images/L-Create-HideRowCol/32.jpg)
 
 <br> 
 
 
-**Step 12:** In cell **H39** input **Market** and set cell **H42** to **No** and Pull the report 
+**Step 11:** In cell **H39** input **Market** and set cell **H42** to **No** and Pull the report 
 
 ![](/images/L-Create-HideRowCol/33.jpg)
 

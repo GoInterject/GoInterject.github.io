@@ -103,7 +103,7 @@ Inserting data validation dropdown lists are similar to the other special column
 
 For this example, use  **AccountFreeze** in cell  **K2** . 
 
-Select the cell, then input  **AccountFreeze valuelist:FreezeOptions**
+Select the cell, then input  **AccountFreeze valuelist:FreezeOptions**. Pull the Data again.
 
 ![](/images/L-Create-SpecColDefs/11.jpg)
 
@@ -151,5 +151,5 @@ Click on the hyperlink in cell  **C27** and  notice that the functionality of th
 
 <br>
 
-If there are any additional special column features that are not listed here or you have any questions, please contact INTERJECT at info@gointerject.com 
+If there are any additional special column features that are not listed here or you have any questions, please contact INTERJECT at info@gointerject.com. 
 

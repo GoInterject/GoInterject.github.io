@@ -26,25 +26,12 @@ When the template is complete, it should look like the one below.
 
 <br> 
 
+**Step 2:** Add 3 rows above row 25. Highlight rows 19-21 and rick-click on row 19 and click "Insert."
 
-**Step 2:** Now that you have the template, clear row 19, **IsMissingCRMID**, because it is not needed it for this report. 
-
-![](/images/L-Create-CustAgingDetail/03.png)
-
-<br> 
-
-
-**Step 3:** Since you deleted one of the formula's parameters, you have to make sure you also delete it from the ReportRange function in C6. Select cell C6 and delete **C19** from the formula. Also, type **Market** in C16 so you can limit the data presented to only a few records as you are constructing the report. 
-
-![](/images/L-Create-CustAgingDetail/04.png)
+![](/images/L-Create-CustAgingDetail/05b.png)
 
 <br> 
 
-
-Now the parameters are set and should only reference cells C16, C17, and C18 as shown below. 
-
-![](/images/L-Create-CustAgingDetail/05.png)
-<br>
 
 ###  ReportRange() 
 
@@ -55,7 +42,7 @@ Now the parameters are set and should only reference cells C16, C17, and C18 as 
 <br> 
 
 
-After you pull the report it will look like the one below. 
+After you pull the report it will look similiar to the one below. 
 
 ![](/images/L-Create-CustAgingDetail/07.png)
 
@@ -133,7 +120,7 @@ Give row 10,12,14, and 16 heights of 6.75. The image below illustrates how to dr
 <br> 
 
 
-**Step 9:** Now you need to create a formula that will total all of the detail that will later be populated between row 13 and 14. To create a total, type **=SUBTOTAL(9,L13:L14)** in L15. In cell H15 you will type **="Total Open Invoices For " & H11". ** H11 represents the name of the customer, and by linking it to H11, the subtotal line will note the customer name again. 
+**Step 9:** Now you need to create a formula that will total all of the detail that will later be populated between row 13 and 14. To create a total, type **=SUBTOTAL(9,L13:L14)** in L15. In cell H15 you will type **="Total Open Invoices For " & H11.** H11 represents the name of the customer, and by linking it to H11, the subtotal line will note the customer name again. 
 
 ![](/images/L-Create-CustAgingDetail/18.png)
 

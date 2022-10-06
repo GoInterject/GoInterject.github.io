@@ -8,7 +8,7 @@ description: Here, you will modify the Customer Aging Demo used in the Customer 
 
 ##  **Overview**
 
-Here, you will modify the Customer Aging Demo used in the [ Customer Aging Walk-through ](/wAbout/Customer-Aging.html) to show the total of invoices due from companies. You will filter for companies with the word **Market** in their name to keep the list short. You will build a **Total** column to receive the sum of each individual company's unpaid invoices. Once complete you will use these totals to build a Report total, which allows us to see all invoices  due.   
+Here, you will modify a report to show the total of invoices due from companies. You will filter for companies with the word **Market** in their name to keep the list short. You will build a **Total** column to receive the sum of each individual company's unpaid invoices. Once complete you will use these totals to build a Report total, which allows us to see all invoices  due.   
 
 
 ###  Opening the Report and Pulling Data 
@@ -115,7 +115,7 @@ Notice that when you pull the data, the new formula is applied to all the new ro
 
 ###  Creating Totals on top of the Report 
 
-**Step 1:** For this example, you need more than just the individual totals; you need a Report Total of these invoices. To build this, you have to add more SUM Formulas. You will format the cells above the table, making it clearly visible. To do this, select cell H16 and label it **Report Total:**. 
+**Step 1:** For this example, you need more than just the individual totals; you need a Report Total of these invoices. To build this, you have to add more SUM Formulas. You will format the cells above the table, making it clearly visible. To do this, select cell H19 and label it **Report Total:**. 
 
 ![](/images/L-Modify-CustAging/14.png) 
 <br>

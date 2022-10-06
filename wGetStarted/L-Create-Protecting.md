@@ -119,7 +119,7 @@ Now in cell  **C19** input  **SAVEA** to verify that the input filters are not p
 
 ###  Multiple Sheets: 
 
-Setup a grouping for columns I:L by selecting the columns, then navigating to the  **Data Ribbon** and select  **Group**. 
+First ensure the sheet is unprotected. Then setup a grouping for columns I:L by selecting the columns, then navigating to the  **Data Ribbon** and select  **Group**. 
 
 ![](/images/L-Create-Protecting/12.jpg)   
 
@@ -187,7 +187,7 @@ Pulling the report will refresh the protection settings. One of the settings tha
 
 The other way is to navigate to the INTERJECT Ribbon and click on the **Advanced** **Menu** to enter the advanced menu. 
 
-![](/images/L-Create-Protecting/19.jpg)   
+![](/images/L-Create-Protecting/19.png)   
 
 
 <br> 
