@@ -107,7 +107,7 @@ Now that you have cleared those cells, begin by modifying the report to create a
 <br> 
 
 
-**Step 4:** Now, rename the column labels in rows 24 to 27 so they will more accurately describe what they represent. First clear the range L25:N27. 
+**Step 4:** Now, rename the column labels in rows 25 to 27 so they will more accurately describe what they represent. First clear the range L25:N27. 
 
 ![](/images/L-Modify-Financial/14.jpg)
 
