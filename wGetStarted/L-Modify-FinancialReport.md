@@ -158,21 +158,21 @@ The new month-to-date difference report columns should populate as expected. Ref
 <br> 
 
 
-**Step 2:** Now delete the unnecessary data just added by copying a blank cell and pasting it over what you do not need. 
+**Step 2:** Now delete the unnecessary data. Select cells Q21:S26. Right-Click on the area and select "Clear Contents." 
 
 ![](/images/L-Modify-Financial/21.png)
 
 <br> 
 
 
-Change the name of the table to a more accurate name, like **Year To Date**. 
+Now copy a blank cell and past it over what you do not need. Change the name of the table to a more accurate name, like **Year To Date**. 
 
 ![](/images/L-Modify-Financial/22.png)
 
 <br> 
 
 
-**Step 3:** Now, change the Period for th e **Year To Date** so it will show the actual Year to Date. You can do this by typing **="YTD" & RIGHT($M$23, 2) ** into the function dialogue for cells P4 and Q4. 
+**Step 3:** Now, change the Period for the **Year To Date** so it will show the actual Year to Date. You can do this by typing **="YTD" & RIGHT($M$23, 2)** into the function dialogue for cells Q4 and R4. 
 
 ![](/images/L-Modify-Financial/23.png)
 
