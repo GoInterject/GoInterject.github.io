@@ -143,6 +143,40 @@ And the second workbook looks like this:
 
 <br> 
 
+### Building Distribution Reports Without Pulling Data
+
+In the previous examples of building a distribution report, the data was systematically pulled for each report after the creation of the report. This section covers how to turn off the automatic pulling of data.
+
+**Step 1:**  Select Cell  **D15**, **D16**  and **D17**  then open the dropdown menu for each and select the  Prep  option for each cell
+
+![](/images/L-Export-AdvancedDist/25.jpg)
+
+<br>
+
+**Step 2:** Input **ProfitAndLoss** into cells **E16** and  **E17**.
+
+![](/images/L-Export-AdvancedDist/26.jpg)
+
+<br>
+
+**Step 3**: In Cells **J15**, **J16**, and **J17** insert **7001**, **7002**, **7120** respectively.
+
+![](/images/L-Export-AdvancedDist/27.jpg)
+
+<br>
+
+**Step 4:** Open the **Export Book** form in the INTERJECT Ribbon then Select  Run Distribution
+
+![](/images/L-Export-AdvancedDist/28.jpg)
+
+<br>
+
+Now you can see that the reports were built, but no data was pulled automatically for the specified reports.
+
+![](/images/L-Export-AdvancedDist/29.jpg)
+
+<br>
+
 ###  Grouping Segments 
 
 In the distribution examples above, each location is entered on a separate row. Using the Grouping Segments feature, the distribution process will automatically add new tabs in the new workbook for every item in a group. To use this feature, the groups must be configured first. In the following example, you are using the group **Consol** which is setup to include locations 7001, 7002, and 7120. 
@@ -182,37 +216,3 @@ As you can see, with only one distribution row, you created a tab for each Locat
 ![](/images/L-Export-AdvancedDist/24.png)
 
 <br> 
-
-### Building Distribution Reports Without Pulling Data
-
-In the previous examples of building a distribution report, the data was systematically pulled for each report after the creation of the report. This section covers how to turn off the automatic pulling of data.
-
-**Step 1:**  Select Cell  **D15**, **D16**  and **D17**  then open the dropdown menu for each and select the  Prep  option for each cell
-
-![](/images/L-Export-AdvancedDist/25.jpg)
-
-<br>
-
-**Step 2:** Input **ProfitAndLoss** into cells **E16** and  **E17**.
-
-![](/images/L-Export-AdvancedDist/26.jpg)
-
-<br>
-
-**Step 3**: In Cells **J15**, **J16**, and **J17** insert **7001**, **7002**, **7120** respectively.
-
-![](/images/L-Export-AdvancedDist/27.jpg)
-
-<br>
-
-**Step 4:** Open the **Export Book** form in the INTERJECT Ribbon then Select  Run Distribution
-
-![](/images/L-Export-AdvancedDist/28.jpg)
-
-<br>
-
-Now you can see that the reports were built, but no data was pulled automatically for the specified reports.
-
-![](/images/L-Export-AdvancedDist/29.jpg)
-
-<br>
