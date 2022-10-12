@@ -18,7 +18,7 @@ The distribution process provides extensive control when creating and distributi
 
 <br> 
 
-**Step 2:** When creating a distribution, you are normally taking a worksheet and making a copy for different cost centers. To accomplish this, you need to mark which filter will change for each copy. Do this by adding a Range Tag formula. Type **=jRangeTag()** into cell 26 and hit the **Fx** button. It does not matter where you place this formula since it will be removed automatically as the worksheet is used to create the distribution. 
+**Step 2:** When creating a distribution, you are normally taking a worksheet and making a copy for different cost centers. To accomplish this, you need to mark which filter will change for each copy. Do this by adding a Range Tag formula. Type **=jRangeTag()** into cell **O22** and hit the **Fx** button. It does not matter where you place this formula since it will be removed automatically as the worksheet is used to create the distribution. 
 
 ![](/images/L-Export-BasicDist/02.jpg)
 
@@ -56,9 +56,9 @@ Once this is completed, the Range Tag formulas should summarize what was setup a
 
 INTERJECT will create the Distribution worksheet in the existing workbook and will search for existing Range Tag formulas in the workbook. The screenshot below illustrates the typical defaults that will be used when initially created. 
 
-1. The worksheet names for those that have Range Tag formulas should be added to the Tab Selection columns by default. 
-2. A filter is created for each jRangeTag found in the workbook in the Report Filters columns. 
-3. The Book column should default to 1, noting the first workbook build to be created. More can be added if needed to the same distribution sheet. 
+1. The Book column should default to 1, noting the first workbook build to be created. More can be added if needed to the same distribution sheet. 
+2. The worksheet names for those that have Range Tag formulas should be added to the Tab Selection columns by default. 
+3. A filter is created for each jRangeTag found in the workbook in the Report Filters columns. 
 
 ![](/images/L-Export-BasicDist/08.png)
 

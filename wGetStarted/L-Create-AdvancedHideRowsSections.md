@@ -15,17 +15,20 @@ For this lab, find the Interject Inventory Demo in the Interject Demo folder wit
 
 ###  **Hiding Rows**
 
-**Step 1:** Start by using the [ Quick Tools ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) button in the ribbon menu and selecting **Freeze/Unfreeze Panes.
+**Step 1:** Start by using the [ Quick Tools ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) button in the ribbon menu and selecting **Freeze/Unfreeze Panes**.
+
 ![](/images/L-Create-AdvancedHideRow/AdvanceRowHide1.png)
 
 <br> 
 
 **Step 2:** Insert a row above row above row **6**, so that there are 2 blank rows, and then expand the collapsed columns by clicking the plus sign in the upper left.
+
 ![](/images/L-Create-AdvancedHideRow/AdvanceRowHide2.png)
 
 <br>
 
 **Step 3:** Click into cell **C4** and open the Function Wizard by clicking **fx**. Then scroll down in the Report Variable section of the wizard until you see **UseTopSpacerRow**, and type **True** into the empty field. Click **OK**.
+
 ![](/images/L-Create-AdvancedHideRow/AdvanceRowHide3.png)
 
 <br>
@@ -52,6 +55,7 @@ For this lab, find the Interject Inventory Demo in the Interject Demo folder wit
 <br>
 
 **Step 6:** In cell **A20** enter **=Rows(A19:A56)**.
+
 ![](/images/L-Create-AdvancedHideRow/AdvanceRowHide6.png)
 
 <br>
@@ -66,6 +70,8 @@ For this lab, find the Interject Inventory Demo in the Interject Demo folder wit
 
 ![](/images/L-Create-AdvancedHideRow/AdvanceRowHide8.png)
 
+<br>
+
 **Step 9:** Select cells **C19:C21** and copy to the clipboard by pressing **CTL-C**. Navigate to cell **C23** and paste the formulas by pressing **CTL-V**.
 
 ![](/images/L-Create-AdvancedHideRow/AdvanceRowHide9.png)
@@ -73,7 +79,6 @@ For this lab, find the Interject Inventory Demo in the Interject Demo folder wit
 <br>
 
 Continue to navigate to each category and paste the formulas in cells in **C27**, **C31**, **C35**, **C39**, **C43**, **C47**. The final result should look like the screenshot below.
-
 ![](/images/L-Create-AdvancedHideRow/AdvanceRowHide10.png)
 
 <br>
