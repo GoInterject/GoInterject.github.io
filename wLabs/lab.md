@@ -20,10 +20,16 @@ These labs are offered as an introductory course on the Interject® add-in for M
 `This is highlighted`
 
 
-```python
-This is again highlighted : 
-```
 
+```python
+
+
+    'MySQL' : True,
+    'OtherSQL' : False,
+    'MongoDB' : False,
+    'Pandas' : False
+
+```
 
     * <p><span style="color: red">Testing highlighting </span></p>
     
