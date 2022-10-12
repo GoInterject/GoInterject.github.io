@@ -17,6 +17,12 @@ These labs are offered as an introductory course on the Interject® add-in for M
 
 <p><span style="color: red">Testing highlighting </span></p>
 
+`This is highlighted`
+
+
+```git
+This is again highlighted
+```
 
 
     * <p><span style="color: red">Testing highlighting </span></p>
