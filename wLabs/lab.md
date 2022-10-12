@@ -9,7 +9,8 @@ description:
 
 ### Overview
 
-  * These labs are offered as an introductory course on the Interject® add-in for Microsoft Excel®.
+    * _Green_ : Currently Live 
+    * These labs are offered as an introductory course on the Interject® add-in for Microsoft Excel®.
 
 
 ### Before You Begin
