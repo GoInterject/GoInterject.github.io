@@ -15,7 +15,8 @@ These labs are offered as an introductory course on the Interject® add-in for M
     * Testing highlighting 
     
 
-<mark>This is highlighted text</mark>
+<body><p><mark>This is highlighted text</mark> </p>
+</body>
 
 ### Before You Begin
 
