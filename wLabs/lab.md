@@ -9,7 +9,7 @@ description:
 
 ### Overview
 
-These labs are offered as an introductory course on the Interject® add-in for Microsoft Excel®.
+  * These labs are offered as an introductory course on the Interject® add-in for Microsoft Excel®.
 
 
 ### Before You Begin
