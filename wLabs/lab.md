@@ -70,7 +70,7 @@ Before you begin your labs, you should familiarize yourself with some basic conc
 <br>
 
 
-`#### Lab 2 : Modifying Reports`
+#### `Lab 2 : Modifying Reports`
 
 
 ##### [ 2.1 Lab Modify: Customer Aging](/wGetStarted/L-Modify-CustomerAging.html)
@@ -97,7 +97,7 @@ Before you begin your labs, you should familiarize yourself with some basic conc
 <br>
 
 
-`#### Lab 3 : Creating Reports`
+#### `Lab 3 : Creating Reports`
 
 
 ##### [ 3.1 Lab Create: Customer Aging](/wGetStarted/L-Create-CustomerAging.html)
@@ -155,7 +155,7 @@ Before you begin your labs, you should familiarize yourself with some basic conc
 
 
 
-`#### Lab 4 : Drilling Data`
+#### `Lab 4 : Drilling Data`
 
 
 ##### [ 4.1 Lab Drill: Customer Aging](/wGetStarted/L-Drill-CustomerAging.html)
@@ -178,7 +178,7 @@ Before you begin your labs, you should familiarize yourself with some basic conc
 <br>
 
 
-`#### Lab 5 : Special Features`
+#### `Lab 5 : Special Features`
 
 
 ##### [ 5.1 Lab Create: Hiding Rows & Columns](/wGetStarted/L-Create-HideRowCol.html)
@@ -243,7 +243,7 @@ Before you begin your labs, you should familiarize yourself with some basic conc
 <br>
 
 
-`#### Lab 6 : Exporting Data`
+#### `Lab 6 : Exporting Data`
 
 
 ##### [ 6.1 Lab Export: Quick Export and PDF](/wGetStarted/L-Export-QuickExportAndPDF.html)
