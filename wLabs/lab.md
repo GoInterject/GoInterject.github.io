@@ -12,6 +12,13 @@ description:
 These labs are offered as an introductory course on the Interject® add-in for Microsoft Excel®.
 
 
+<pre><code>Continued here.</code></pre>
+
+
+<p><span style="color: red">Testing highlighting </span></p>
+
+
+
     * <p><span style="color: red">Testing highlighting </span></p>
     
 
