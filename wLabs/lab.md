@@ -9,9 +9,10 @@ description:
 
 ### Overview
 
-<blockquote class="lab_info">
+<blockquote class=lab_info>
   <p><pre><code>These labs are offered as an introductory course on the Interject® add-in for Microsoft Excel®.</code></pre></p>
 </blockquote>
+
 
 ### Before You Begin
 
@@ -27,8 +28,7 @@ Before you begin your labs, you should familiarize yourself with some basic conc
 
 ### Labs
 
-
-#### Lab 1 : Real World Examples
+#### _Lab 1 : Real World Examples_
 
 
 ##### [ 1.1 Basics of Report Formulas](/wAbout/Basics-of-Report-Formulas.html)
@@ -58,8 +58,6 @@ Before you begin your labs, you should familiarize yourself with some basic conc
 • Drilling Data via Hyperlink
 • Returning From Drilling
 <br>
-#### Lab 2 : Modifying Reports
-
 
 ##### [ 1.4 Financial Report](/wAbout/Financial-Report.html)
 
@@ -68,7 +66,7 @@ Before you begin your labs, you should familiarize yourself with some basic conc
 • Drill Data
 • Drill on a Journal Entry
 <br>
-#### Lab 2 : Creating Reports
+#### _Lab 2 : Modifying Reports_
 
 
 ##### [ 2.1 Lab Modify: Customer Aging](/wGetStarted/L-Modify-CustomerAging.html)
@@ -93,7 +91,7 @@ Before you begin your labs, you should familiarize yourself with some basic conc
 • Adding Columns to Expand Report
 • Modifying a Report
 <br>
-#### Lab 3 : Creating Reports
+#### _Lab 3 : Creating Reports_
 
 
 ##### [ 3.1 Lab Create: Customer Aging](/wGetStarted/L-Create-CustomerAging.html)
@@ -149,7 +147,7 @@ Before you begin your labs, you should familiarize yourself with some basic conc
 <br>
 
 
-#### Lab 4 : Drilling Data
+#### _Lab 4 : Drilling Data_
 
 
 ##### [ 4.1 Lab Drill: Customer Aging](/wGetStarted/L-Drill-CustomerAging.html)
@@ -170,7 +168,7 @@ Before you begin your labs, you should familiarize yourself with some basic conc
 **Concepts** : 
 • Building a Drill on Data
 <br>
-#### Lab 5 : Special Features
+#### _Lab 5 : Special Features_
 
 
 ##### [ 5.1 Lab Create: Hiding Rows & Columns](/wGetStarted/L-Create-HideRowCol.html)
@@ -233,7 +231,7 @@ Before you begin your labs, you should familiarize yourself with some basic conc
 **Concepts** : 
 • How to Enable Interject to Pull Data Upon Opening a Report
 <br>
-#### Lab 6 : Exporting Data
+#### _Lab 6 : Exporting Data_
 
 
 ##### [ 6.1 Lab Export: Quick Export and PDF](/wGetStarted/L-Export-QuickExportAndPDF.html)
