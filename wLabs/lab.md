@@ -35,11 +35,11 @@ These labs are offered as an introductory course on the Interject® add-in for M
     
 
 
-<blockquote class="markdown-difference">
-  <p>The original Markdown syntax specifies that an HTML block must start at the left margin, i.e. no
+<blockquote class="lab_info">
+  <p><pre><code>The original Markdown syntax specifies that an HTML block must start at the left margin, i.e. no
 indentation is allowed. Also, the HTML block has to be surrounded by blank lines. Both
 restrictions are lifted for kramdown documents. Additionally, the original syntax does not allow
-you to use Markdown syntax in HTML blocks which is allowed with kramdown.</p>
+you to use Markdown syntax in HTML blocks which is allowed with kramdown.</code></pre></p>
 </blockquote>
 
 
