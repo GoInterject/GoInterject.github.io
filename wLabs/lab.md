@@ -28,7 +28,7 @@ Before you begin your labs, you should familiarize yourself with some basic conc
 
 ### Labs
 
-#### _Lab 1 : Real World Examples_
+`#### _Lab 1 : Real World Examples_`
 
 
 ##### [ 1.1 Basics of Report Formulas](/wAbout/Basics-of-Report-Formulas.html)
