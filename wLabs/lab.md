@@ -12,29 +12,6 @@ description:
 These labs are offered as an introductory course on the Interject® add-in for Microsoft Excel®.
 
 
-<pre><code>Continued here.</code></pre>
-
-
-<p><span style="color: red">Testing highlighting </span></p>
-
-`This is highlighted`
-
-
-
-```python
-
-
-    'MySQL' : True,
-    'OtherSQL' : False,
-    'MongoDB' : False,
-    'Pandas' : False
-
-```
-
-    * <p><span style="color: red">Testing highlighting </span></p>
-    
-
-
 <blockquote class="lab_info">
   <p><pre><code>The original Markdown syntax specifies that an HTML block must start at the left margin, i.e. no
 indentation is allowed. Also, the HTML block has to be surrounded by blank lines. Both
