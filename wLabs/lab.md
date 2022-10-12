@@ -28,6 +28,8 @@ Before you begin your labs, you should familiarize yourself with some basic conc
 
 ### Labs
 
+
+
 `#### Lab 1 : Real World Examples`
 
 
@@ -66,6 +68,8 @@ Before you begin your labs, you should familiarize yourself with some basic conc
 • Drill Data
 • Drill on a Journal Entry
 <br>
+
+
 `#### Lab 2 : Modifying Reports`
 
 
@@ -91,6 +95,8 @@ Before you begin your labs, you should familiarize yourself with some basic conc
 • Adding Columns to Expand Report
 • Modifying a Report
 <br>
+
+
 `#### Lab 3 : Creating Reports`
 
 
@@ -147,6 +153,8 @@ Before you begin your labs, you should familiarize yourself with some basic conc
 <br>
 
 
+
+
 `#### Lab 4 : Drilling Data`
 
 
@@ -168,6 +176,8 @@ Before you begin your labs, you should familiarize yourself with some basic conc
 **Concepts** : 
 • Building a Drill on Data
 <br>
+
+
 `#### Lab 5 : Special Features`
 
 
@@ -231,6 +241,8 @@ Before you begin your labs, you should familiarize yourself with some basic conc
 **Concepts** : 
 • How to Enable Interject to Pull Data Upon Opening a Report
 <br>
+
+
 `#### Lab 6 : Exporting Data`
 
 
