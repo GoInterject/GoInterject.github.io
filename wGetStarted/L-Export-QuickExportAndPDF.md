@@ -20,7 +20,7 @@ Take the report **PL Trend Report with Data Cells** from the [ Financial Walk-th
 
 <br> 
 
-**Step 1:** First, use the [**Pull Data**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) operation to pull the report for Location 7002 and month 2002-05.
+**Step 1:** First, use the [**Pull Data**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) operation to pull the report for Location 7002 and month 2002-05. Note: Ensure that the **"Calculate Data Cells"** is checked.
 
 ![](/images/L-Export-QuickExPDF/02.png)
 
