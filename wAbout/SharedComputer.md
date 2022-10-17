@@ -136,6 +136,7 @@ Hit **Next** once the location is selected.
 ![](/images/SingleUser/13.png)
 <br>
   
+  <a href="https://docs.gointerject.com/wAbout/Logging-In.html"><h2>Continue Here for Login Information</h2></a>
 
 
 If you run into any issues, email us at [ help@gointerject.com ](mailto:help@gointerject.com). 
