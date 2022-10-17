@@ -71,7 +71,7 @@ INTERJECT will create the Distribution worksheet in the existing workbook and wi
 * **No -** In the instance that the value is set to **No,** INTERJECT will not build that report tab. 
 * **Prep -** When set to **Prep** the report tabs will be built out, however, the data will not be pulled automatically. 
 
-**Step 7:** Edit the distribution defaults further. In this example, you want to create three copies of the **ProfitAndLoss** worksheet, one for each location **7001**, **7002**, and **7120**. And you want to use the month **2002-05**. Use the screenshot below as a guide, and type in the values for columns **Worksheet Tabs**, **Location**, and **Month**. 
+**Step 7:** Edit the distribution defaults further. In this example, you want to create three copies of the **ProfitAndLoss** worksheet, one for each location **7001**, **7002**, and **7120**. And you want to use the month **2002-05**. Use the screenshot below as a guide, and type in the values for columns **Book**, **Worksheet Tabs**, **Location**, and **Month**. 
 
 ![](/images/L-Export-BasicDist/09.png)
 

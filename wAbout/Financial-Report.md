@@ -131,7 +131,7 @@ Notice that these are the same accounts that makeup **Revenue - Sales** in the o
 
 ![](/images/Walkthrough-Financial/20.png)
 
-**Step 3:** Now use the [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#pull-data) function. 
+**Step 3:** Now use the [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#pull-data) function. Note: Ensure that the **"Calculate Data Cells"** is checked.
 
 ![](/images/Walkthrough-Financial/21.png)
 
@@ -145,7 +145,7 @@ Go back to the jAcct() function window and change the accounts to be **Revenue -
 
 ![](/images/Walkthrough-Financial/23.png)
 
-After the switch, you can see that the values still are the same. This is because the accounts 31000, 32000, and 33000 are all under the preset grouping **Revenue - Sales**. 
+After the switch, you can see that the values still are the same (Note: You may have to re-pull the data). This is because the accounts 31000, 32000, and 33000 are all under the preset grouping **Revenue - Sales**. 
 
 ![](/images/Walkthrough-Financial/24.png)
 
