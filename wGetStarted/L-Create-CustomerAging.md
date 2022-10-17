@@ -25,40 +25,16 @@ A new sheet should be added that looks like the screenshot below. Now the report
 
 ![](/images/L-Create-CustAging/03.png)
 
-###  Customizing the Report 
 
-**Step 1:** Remove the parameter **IsMissingCRMID** that is noted below in cell B19. It is not necessary for this report example. 
+###  Getting Started 
 
-<br>
-![](/images/L-Create-CustAging/04.png)
-<br>
-
-**Step 2:** Next, **select** the [ ReportRange() ](/wIndex/ReportRange.html) formula in order to delete its reference to **IsMissingCRMID** that you just removed above. Go to cell C6 and edit the formula. Remove the reference by removing C19 from the ReportRange formula. 
-<br>
- ![](/images/L-Create-CustAging/05.png) 
-<br>  
-
-This will remove the filter reference from the ReportRange(), and you can see the updated reference shown below. 
-<br>
-![](/images/L-Create-CustAging/06.png)
-<br>
-  
-
-
-**Step 3:** Now clear the rest of the text you do not need for this report. Using the screenshot below as a guide, clear ranges encircled in red. 
-<br>
-![](/images/L-Create-CustAging/07.png)
-<br>
-  
-
-
-The report should look similar to the screenshot below. Now, put the filter value **Market** in C16 so you can limit the data pulled to just a few records that have a Company Name that contains the word **Market** . 
+**Step 1:** Begin by putting the filter value **Market** in C16 so you can limit the data pulled to just a few records that have a Company Name that contains the word **Market** . 
 <br>
 ![](/images/L-Create-CustAging/08.png)
 <br>
-###  Getting Started 
 
-**Step 1:** Next, use the [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) menu item. 
+
+Next, use the [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) menu item. 
 <br>
  ![](/images/L-Create-CustAging/09.png)
 <br> 
@@ -69,14 +45,14 @@ You can see below, that all the columns available in the Dataportal will be show
 ![](/images/L-Create-CustAging/10.png)   
 <br>
 
-**Step 2:** Select a few columns for our report by copying a few of the column names to the Column Definition area on row 2. Follow the animated GIF below to multi-select CustomerID, CompanyName, ContactName, ContactTitle, City, Country, Phone, 30Days, 60Days, and 90Days. You can select them all individually while holding the Ctrl key. Then you can copy and paste them all at once in cell B2. 
+**Step 2:** Select a few columns for our report by copying a few of the column names to the Column Definition area on row 2. Follow the animated GIF below to multi-select CustomerID, CompanyName, ContactName, ContactTitle, City, Country, Phone, 30Days, 60Days, and 90Days. You can select them all individually while holding the Ctrl key. Then you can copy and paste the values all at once in cell B2. 
 
 ![](/images/L-Create-CustAging/11.gif)
 
   
 
 
-**Step 3:** Now that you have the columns, move the **Phone** column title to column F instead of H. Simply select the entire column H, then hold the Shift key while you move the column after column E. 
+**Step 3:** Now that you have the columns, move the **Phone** column title to column F instead of H. First select the entire column H. Then hold the Shift key and hover your cursor over the left border of Column H. Left-drag the column left until the pop-up says "F:F" and then let go.
 <br>
 ![](/images/L-Create-CustAging/12.png)     
 <br>
@@ -101,6 +77,7 @@ The cleared report should look like the screenshot below.
 <br>
 
 **Step 6:** Click the **fx** button as noted below to open the Function Wizard and add a ColDefRange. The ColDefRange argument should be empty at first. 
+
 
 <br>
 ![](/images/L-Create-CustAging/16.png)
@@ -136,21 +113,21 @@ For this report, you will set the ColDefRange to the entire second row, 2:2.
 
 The data pulled should look like below. 
 
-**Note** : Although not illustrated in the below steps, you can save typing in the column labels for later. Copy the Column Definition values in B2:L2 and **Paste Values** in B26:L26. These are the labels you can customize for users to view. 
+**Note** : Although not illustrated in the below steps, you can save typing in the column labels for later. Copy the Column Definition values in B2:L2 and **Paste Values** in B22:L22. These are the labels you can customize for users to view. 
 <br>
 ![](/images/L-Create-CustAging/21.png)
 <br>
   
 
 
-**Step 1:** Do some quick formatting to clean up the report. Delete rows 21 through 25. 
+**Step 1:** Do some quick formatting to clean up the report. Delete rows 21 through 22. 
 <br>
-![](/images/L-Create-CustAging/22.gif)
+![](/images/L-Create-CustAging/22.png)
 <br>
   
 
 
-**Step 2:** Next, you need to freeze the panes to hide the configuration area from the users. This can be done manually with the Excel menu item for freezing panes. But this is a good time to illustrate INTERJECT's jFreezePanes() feature. First, setup the [ jFreezePanes ](wIndex/jFreezePanes.html) function by entering **=jFreezePanes()** in F6 and click the **fx** button. 
+**Step 2:** Next, you need to freeze the panes to hide the configuration area from the users. This can be done manually with the Excel menu item for freezing panes. But this is a good time to illustrate INTERJECT's jFreezePanes() feature. First, setup the [ jFreezePanes ](/wIndex/jFreezePanes.html) function by entering **=jFreezePanes()** in F6 and click the **fx** button. 
 <br>
 ![](/images/L-Create-CustAging/23.png)
 <br>
@@ -185,22 +162,7 @@ Use the [ **Quick Tools** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-
   
 
 
-[ Click here ](/wAbout/Report-Library-Basics.html) to learn how to upload the new report to the Report Library. 
-
-  
-
-
-##  Related Links: 
-
-[ Customer Aging ](/wAbout/Customer-Aging.html)
-
-[ Lab Modify: Customer Aging ](/wGetStarted/L-Modify-CustomerAging.html)
-
-[ Lab Create: Updating the Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary)
-
-[ INTERJECT Ribbon Menu Items ](INTERJECT-Ribbon-Menu-Items.html)
-
-[ Basics of Report Formulas ](/wAbout/Basics-of-Report-Formulas.html)
+Finally, clear the report, refreeze the panes, and upload it to the [ Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary.html).
 
   
 

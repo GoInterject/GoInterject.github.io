@@ -29,7 +29,7 @@ If you want to gain more context as to how this PairGroup() function works, it i
 
 | Argument Name | Example Mapping                | Explanation |
 |---------------|--------------------------------|-------------|
-| Function Name | `=PairGroup()`                   |This is the excel function name used to call the function. It is not meant to standalone and is meant to be embedded inside of a [ Formatting ](Formatting-Functions-Landing.html) or [Data](Data-Functions-Landing.html) function.             |
+| Function Name | =PairGroup()                   |This is the excel function name used to call the function. It is not meant to standalone and is meant to be embedded inside of a [ Formatting ](Formatting-Functions-Landing.html) or [Data](Data-Functions-Landing.html) function.             |
 | Pair1         | Pair(L12:N12,"DateBegin",TRUE) |This is the first pair function that is executed in this example. To better understand a pair function click [Here](/wIndex/Pair.html)            |
 | Pair2         | Pair(M21,"Segment2",True)      |This is the second pair function that is executed in this example.|
 | Pair3         | Pair(F26:F125,"Segment1",TRUE) |This is the third pair function that is executed in this example. |

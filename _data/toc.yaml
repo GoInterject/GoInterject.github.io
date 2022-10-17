@@ -15,7 +15,7 @@ horizontalnav:
   path: /wIndex/Excel-Function-Index.html
   node: index
 # - title: Apps
-#   path: /wApps/How-to-articles.html
+#   path: /wApps/Reference.html
 #   node: apps
 - title: Portal Site 
   path: /wPortal/The-INTERJECT-Website-Portal.html
@@ -50,8 +50,10 @@ about:
     path: /wAbout/SingleUser.html
   - title: Installing - Shared Computer
     path: /wAbout/SharedComputer.html
-- title: Uninstalling INTERJECT
-  path: /wAbout/Uninstalling.html
+  - title: Updating INTERJECT
+    path: /wAbout/Updating-INTERJECT.html
+  - title: Uninstalling INTERJECT
+    path: /wAbout/Uninstalling.html
 - sectiontitle: Using INTERJECT
   path: /wAbout/Using-INTERJECT.html
   section:
@@ -61,17 +63,17 @@ about:
     path: /wAbout/Adding-a-User.html
   - title: Report Library Basics
     path: /wAbout/Report-Library-Basics.html
+  - title: Resizing Windows
+    path: /wAbout/Resizing-Form-Windows.html
   - sectiontitle: Real-World Walkthroughs
     path: /wAbout/Real-World-Walkthroughs.html
     section:
-    - title: Customer Aging
+    - title: Customer Aging 
       path: /wAbout/Customer-Aging.html
     - title: Inventory Reports
       path: /wAbout/Inventory-Reports.html
     - title: Financial Report
       path: /wAbout/Financial-Report.html
-  - title: Updating INTERJECT
-    path: /wAbout/Updating-INTERJECT.html
 - sectiontitle: Working with INTERJECT
   path: /wAbout/Working-with-INTERJECT.html
   section:
@@ -79,15 +81,32 @@ about:
     path: /wAbout/Basics-of-Report-Formulas.html
   - title: Tabular vs Data Cells
     path: /wAbout/Tabular-vs-Data-Cells.html
+- sectiontitle: Interject Security and Privacy
+  section:
+  - title: Security Policy
+    path: /wAbout/security-policy.html
+  - title: Privacy Policy
+    path: /wAbout/privacy-policy.html
+  - title: TLS for HTTPS
+    path: /wAbout/TLS.html
 
   
 
-apps:
-  - title: How-to articles
-    path: /wApps/How-to-articles.html
-
-
+# apps:
+#   - title: Reference
+#     path: /wApps/Reference.html
+#   - title: INTERJECT Financials
+#     path: /wApps/Interject-Financials.html
+#   - title: "INTERJECT Financials for Epicor"
+#     path: /wApps/Epicor-Financials.html
+#   - title: "SQL Server Implementation"
+#     path: /wApps/SQL-Install.html
+#   - title: "FRx Migration"
+#     path: /wApps/FRx-Migration.html
+    
 getstarted:
+  - title: INTERJECT Ribbon Menu Items
+    path: /wGetStarted/INTERJECT-Ribbon-Menu-Items.html
   - sectiontitle: Creating with INTERJECT
     path: /wGetStarted/Creating-with-INTERJECT.html
     section:
@@ -129,8 +148,15 @@ getstarted:
         path: /wGetStarted/L-Drill-FinancialReport.html
       - title: "The Three Ways to Drill"
         path: /wGetStarted/L-Drill-TheThreeWays.html
-    - title: "Lab Create: Hiding Rows & Columns"
+    - sectiontitle: Hiding Rows and Columns
       path: /wGetStarted/L-Create-HideRowCol.html
+      section:
+        - title: "Lab Create: Hiding Rows & Columns"
+          path: /wGetStarted/L-Create-HideRowCol.html
+        - title: "Lab Create: Advanced Row and Section Hiding"
+          path: /wGetStarted/L-Create-AdvancedHideRowsSections.html
+    - title: "Lab Create: Building jDropdowns"
+      path: /wGetStarted/L-Create-Dropdowns.html
     - title: "Lab Create: Working with Pivot Tables"
       path: /wGetStarted/L-Create-PivotTable.html
     - title: "Lab Create: Special Column Definitions"
@@ -154,38 +180,7 @@ getstarted:
         path: /wGetStarted/L-Export-BasicDist.html
       - title: "Lab Export: Advanced Distribution"
         path: /wGetStarted/L-Export-AdvancedDist.html
-  - title: Excel Best and Worst Practices
-    path: /wGetStarted/Excel-Best-and-Worst-Practices.html
-  - sectiontitle: Developing with INTERJECT
-    path: /wGetStarted/Developing-with-INTERJECT.html
-    section:
-    - title: INTERJECT Website Portal
-      path: /wGetStarted/INTERJECT-Website-Portal.html
-    - title: Defining INTERJECT for Developers
-      path: /wGetStarted/Defining-INTERJECT-for-Developers.html
-    - sectiontitle: Simple Data Pull
-      path: /wGetStarted/Simple-Data-Pull.html
-      section:
-      - title: "Lab Dev: Customer Aging"
-        path: /wGetStarted/L-Dev-CustomerAging.html
-      - title: "Lab Dev: Customer Orders"
-        path: /wGetStarted/L-Dev-CustomerOrders.html
-    - sectiontitle: Advanced Data Pull
-      path: /wGetStarted/Advanced-Data-Pull.html
-      section:
-      - title: "Lab Dev: Customer Aging Detail"
-        path: /wGetStarted/L-Dev-CustomerAgingDetail.html
-    - sectiontitle: Simple Data Save
-      path: /wGetStarted/Simple-Data-Save.html
-      section:
-      - title: "Lab Dev: Customer Credit Save"
-        path: /wGetStarted/L-Dev-CustomerCreditSave.html
-    - title: Security Best Practices
-      path: /wGetStarted/Security-Best-Practices.html
-    - title: Managing Settings Cache
-      path: /wGetStarted/Managing-Settings-Cache.html
-  - title: INTERJECT Ribbon Menu Items
-    path: /wGetStarted/INTERJECT-Ribbon-Menu-Items.html
+
 
 
 index:
@@ -211,6 +206,8 @@ index:
           path: /wIndex/ReportSave.html
         - title: ReportVariable()
           path: /wIndex/ReportVariable.html
+        - title: jDropdown()
+          path: /wIndex/jDropdown.html
     - sectiontitle: Formatting Functions
       path: /wIndex/Formatting-Functions-Landing.html
       section:
@@ -271,13 +268,18 @@ index:
       path: /wIndex/FinCube---The-Financial-Cube.html
     - title: SegmentInfo - Segment Search
       path: /wIndex/SegmentInfo---Segment-Search.html
+  - sectiontitle: Common Stored Procedures
+    path:
+    section:
+      - title: Request Context Parse
+        path: /wIndex/Request-Context-Parse.html
   - title: INTERJECT Hotkey Index
     path: /wIndex/INTERJECT-Hotkey-Index.html
 
 
 
 portal:
-  - sectiontitle: The INTERJECT Website Portal
+  - sectiontitle: INTERJECT Website Portal
     path: /wPortal/The-INTERJECT-Website-Portal.html
     section:
     - title: Logging In to Website Portal
@@ -313,6 +315,42 @@ Developer:
       section:
         - title: Python Api Custom Functions
           path: /wApi/python-api-custom-functions.html
+- title: Excel Best and Worst Practices
+  path: /wGetStarted/Excel-Best-and-Worst-Practices.html
+- sectiontitle: Developing SQL with INTERJECT
+  path: /wGetStarted/Developing-with-INTERJECT.html
+  section:
+  - title: INTERJECT Website Portal
+    path: /wGetStarted/INTERJECT-Website-Portal.html
+  - title: Defining INTERJECT for Developers
+    path: /wGetStarted/Defining-INTERJECT-for-Developers.html
+  - sectiontitle: Simple Data Pull
+    path: /wGetStarted/Simple-Data-Pull.html
+    section:
+    - title: "Lab Dev: Customer Aging"
+      path: /wGetStarted/L-Dev-CustomerAging.html
+    - title: "Lab Dev: Customer Orders"
+      path: /wGetStarted/L-Dev-CustomerOrders.html
+    - title: "Lab Dev: jDropdowns"
+      path: /wGetStarted/L-Dev-jDropdowns.html
+  - sectiontitle: Advanced Data Pull
+    path: /wGetStarted/Advanced-Data-Pull.html
+    section:
+    - title: "Lab Dev: Customer Aging Detail"
+      path: /wGetStarted/L-Dev-CustomerAgingDetail.html
+  - sectiontitle: Simple Data Save
+    path: /wGetStarted/Simple-Data-Save.html
+    section:
+    - title: "Lab Dev: Customer Credit Save"
+      path: /wGetStarted/L-Dev-CustomerCreditSave.html
+    - title: "Lab Dev: Northwind Pull and Save"
+      path: /wGetStarted/L-Dev-NorthwindPullSave.html
+  - title: Security Best Practices
+    path: /wGetStarted/Security-Best-Practices.html
+  - title: Managing Settings Cache
+    path: /wGetStarted/Managing-Settings-Cache.html
+  - title: "Error Handling (RAISERROR and UserNotice)"
+    path: /wGetStarted/L-Dev-Error-Handling.html
 
 troubleshoot:
 - sectiontitle: Troubleshooting

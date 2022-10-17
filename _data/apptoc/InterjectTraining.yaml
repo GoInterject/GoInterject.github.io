@@ -1,0 +1,107 @@
+# Handles the navigation bars for the financial app section of the website
+# When creating a new nav dont forget to add it to the TOC.js file (just copy the format of the one above.)
+horizontalnav:
+- title: Main
+  path: /bApps/InterjectTraining/InterjectTrainingMain.html
+  node: main
+- title: Capital Module
+  path: /bApps/InterjectTraining/Capital/CapitalModule.html
+  node: capital
+- title: Budget Module
+  path: /bApps/InterjectTraining/Budget/BudgetModule.html
+  node: budget
+- title: Projections Module
+  path: /bApps/InterjectTraining/Projections/ProjectionsModule.html
+  node: projection
+  
+main:
+- title: Main
+  path: /bApps/InterjectTraining/InterjectTrainingMain.html
+- title: Capital Module
+  path: /bApps/InterjectTraining/Capital/CapitalModule
+- title: Budget Module
+  path: /bApps/InterjectTraining/Budget/BudgetModule
+- title: Projections Module
+  path: /bApps/InterjectTraining/Projections/ProjectionsModule
+
+capital:
+- title: Capital Module Summary
+  path: /bApps/InterjectTraining/Capital/CapitalModule.html
+- sectiontitle: Capital Input Tool
+  path: /bApps/InterjectTraining/Capital/CapitalInputReport.html
+  section:
+  - title: Capital Input Tool Summary
+    path: /bApps/InterjectTraining/Capital/CapitalInputReport.html
+  - title: Summary Tab
+    path: /bApps/InterjectTraining/Capital/CapitalSummary.html
+  - title: Bud Capital Input Tab
+    path: /bApps/InterjectTraining/Capital/CapitalInput.html
+  - title: Summary by PO Type Tab
+    path: /bApps/InterjectTraining/Capital/CapitalSummaryPOType.html
+- sectiontitle: Capital Change Query Tool
+  path: /bApps/InterjectTraining/Capital/CapitalChangeQueryTool.html
+  section:
+  - title: Capital Change Query Tool Summary
+    path: /bApps/InterjectTraining/Capital/CapitalChangeQueryTool.html
+  - title: CC Query Tab
+    path: /bApps/InterjectTraining/Capital/CCQuery.html
+  - title: ReviewDateSummary Tab
+    path: /bApps/InterjectTraining/Capital/ReviewDateSummary.html
+#- title: Capital Export Tool
+#  path: /bApps/InterjectTraining/Capital/CapitalExport.html
+
+budget:
+- title: Budget Module Summary
+  path: /bApps/InterjectTraining/Budget/BudgetModule.html
+- sectiontitle: Budget Template
+  path: /bApps/InterjectTraining/Budget/BudgetTemplateSummary.html
+  section:
+  - title: Budget Template Summary
+    path: /bApps/InterjectTraining/Budget/BudgetTemplateSummary.html
+  - title: Budget Template
+    path: /bApps/InterjectTraining/Budget/BudgetTemplate.html
+  - title: Budget Upload Tab
+    path: /bApps/InterjectTraining/Budget/BudgetUpload.html
+- sectiontitle: Control Center
+  path: /bApps/InterjectTraining/Budget/ControlCenterSummary.html
+  section:
+  - title: Control Center Summary
+    path: /bApps/InterjectTraining/Budget/ControlCenterSummary.html
+  - title: Control Center Tool
+    path: /bApps/InterjectTraining/Budget/ControlCenter.html
+  - title: Tools Controlled by the Control Center
+    path: /bApps/InterjectTraining/Budget/ControlCenterSecurity.html
+- sectiontitle: Budget Change Query Tool
+  path: /bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html
+  section:
+  - title: Budget Change Query Tool Summary
+    path: /bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html
+  - title: Review Date Summary Tab
+    path: /bApps/InterjectTraining/Budget/BudgetChangeQuery_ReviewDateSummary.html
+  - title: Review Date Detail Tab
+    path: /bApps/InterjectTraining/Budget/BudgetChangeQuery_ReviewDateDetail.html
+  - title: EBITDA Change History Tab
+    path: /bApps/InterjectTraining/Budget/BudgetChangeQuery_EBITDAChangeHistory.html
+  - title: Summary Tab
+    path: /bApps/InterjectTraining/Budget/BudgetChangeQuery_Summary.html
+  - title: Detail Tab
+    path: /bApps/InterjectTraining/Budget/BudgetChangeQuery_Detail.html
+  - title: Unsynced Changes Tab
+    path: /bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html
+  - title: EBITDA Revenue Buckets Tab
+    path: /bApps/InterjectTraining/Budget/BudgetChangeQuery_EBITDARevenueBuckets.html
+
+projection:
+- title: Projection Module Summary
+  path: /bApps/InterjectTraining/Projections/ProjectionsModule.html
+- sectiontitle: Projection Template
+  path: /bApps/InterjectTraining/Projections/ProjectionTemplateSummary.html
+  section:
+  - title: Projection Template Summary
+    path: /bApps/InterjectTraining/Projections/ProjectionTemplateSummary.html
+  - title: Projection Template
+    path: /bApps/InterjectTraining/Projections/ProjectionTemplate.html
+  - title: Projection Upload Tool
+    path: /bApps/InterjectTraining/Projections/ProjectionUpload.html
+- title: Projection Change Query
+  path: /bApps/InterjectTraining/Projections/ProjectionChangeQuery.html

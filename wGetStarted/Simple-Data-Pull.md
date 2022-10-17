@@ -14,7 +14,7 @@ To understand the business use case for the reports and drills used in this sect
 
 Go directly to the following examples to begin each objective. It is ideal to complete the following examples in order. 
 
-###  [ Lab Dev: Customer Aging ](/wGetStarted/L-dev-CustomerAging.html)
+###  [ Lab Dev: Customer Aging ](/wGetStarted/L-Dev-CustomerAging.html)
 
 On Dev: Customer Aging, you will learn how to create a simple data pull using the Customer Aging Report. To review the business use case for this report, see the [ Real World Walkthroughs - Customer Aging ](/wAbout/Customer-Aging.html).  This section begins with the steps for creating the INTERJECT data connection and data portals, followed by the steps on how to create the stored procedure. Finally, you will be directed to another page that shows how to use the data portal to create the spreadsheet report from scratch. 
 

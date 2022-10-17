@@ -29,7 +29,7 @@ An example of this function is currently in construction in our documentation la
 
 | Argument Name | Example Mapping | Explanation |
 |---------------|-----------------|-------------|
-|Function Name  | `=jCombineIF()`   |This is the excel function name used to call the function. It can be used standalone in a report and can be embedded inside of [Data](Data-Functions-Landing.html) or [Formatting](Formatting-Functions-Landing.html) functions.   |
+|Function Name  | =jCombineIF()   |This is the excel function name used to call the function. It can be used standalone in a report and can be embedded inside of [Data](Data-Functions-Landing.html) or [Formatting](Formatting-Functions-Landing.html) functions.   |
 |CriteriaRange  | J16:O16        |The criteria range is a range of cells with values. When a cell in this range contains the value "TRUE" it is therefore matched to the criteria value of "TRUE". In this instance, the values of the cells in the selected range are concatenated into a single string value. |
 |SelectedRange  | J15:O15        |This is the range of cells that will be concatenated upon a match between the criteria range and the criteria value.|
 |CriteriaValue  | TRUE           | This is the value that is used to match to the Criteria range. When matched to the Criteria Range, jCombineIF will concatenate the associated selected range values. |

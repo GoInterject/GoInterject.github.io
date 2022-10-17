@@ -7,8 +7,10 @@ postx.html
 attachments/
 Gemfile.lock
 .vscode/
-
+_prodDeploy/
+_prodDeploy
 
 # python related ignores
 __pycache__/
 .pytest_cache/
+.cache/

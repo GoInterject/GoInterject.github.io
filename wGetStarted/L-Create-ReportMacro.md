@@ -8,9 +8,9 @@ description:  Report Macro is useful for specialized reports where a customized 
 
 ##  **Overview:**
 
-Report Macro is an excel formula provided by INTERJECT. It allows IINTERJECT to interact with publicly defined VBA functions on a report.  Report Macro is useful for specialized reports where a customized action needs to be taken. This action can be built into a VBA Macro based on the complex needs of the report. Then, ReportMacro() is used to execute the custom action at the right point within the reporting process.
+Report Macro is an excel formula provided by INTERJECT. It allows INTERJECT to interact with publicly defined VBA functions on a report.  Report Macro is useful for specialized reports where a customized action needs to be taken. This action can be built into a VBA Macro based on the complex needs of the report. Then, ReportMacro() is used to execute the custom action at the right point within the reporting process.
 
-###  Using Report Macro 
+###  Setting up the Worksheet
 
 The report macro formula acts in conjunction with another INTERJECT report formula such as a [ ReportRange() ](/wIndex/ReportRange.html). It is useful when a workbook requiring VBA macros must be used. ReportMacro() is an ordered formula, which means that INTERJECT will perform executions on all report formulas placed above or to the left of the ReportMacro() formula before it is executed. 
 
@@ -28,7 +28,7 @@ The report macro formula acts in conjunction with another INTERJECT report formu
 <br> 
 
 
-**Step 3:** If you see the **Developer Ribbon**, skip this step and the next one. However, if you do not see the **Developer Ribbon** select **File**
+**Step 3:** If you see the **Developer Ribbon**, skip forward to the next section. However, if you do not see the **Developer Ribbon** select **File**
 
 ![](/images/L-Create-RepMacro/03.jpg)
 
@@ -55,15 +55,16 @@ The report macro formula acts in conjunction with another INTERJECT report formu
 
 <br> 
 
+###  Using Report Macro 
 
-**Step 7:** Select **Visual Basic**. 
+**Step 1:** Select **Visual Basic**. 
 
 ![](/images/L-Create-RepMacro/07.jpg)
 
 <br> 
 
 
-**Step 8:** To create a new module, right click in the **Projects** window, place your cursor over **Insert**, and select **Module**. 
+**Step 2:** To create a new module, right click in the **Projects** window, place your cursor over **Insert**, and select **Module**. 
 
 ![](/images/L-Create-RepMacro/08.jpg)
 
@@ -95,42 +96,42 @@ End Sub
   
 
 
-**Step 9:** Insert your code into the editing window, then select **Debug**, then compile VBAProject and exit out of the VBA window. 
+**Step 3:** Insert your code into the editing window, then select **Debug**, then compile VBAProject and exit out of the VBA window. 
 
 ![](/images/L-Create-RepMacro/09.jpg)
 
 <br> 
 
 
-**Step 10:** In cell D8, Insert the label **Macro 1:** and align it to the right. 
+**Step 4:** In cell D8, Insert the label **Macro 1:** and align it to the right. 
 
 ![](/images/L-Create-RepMacro/10.jpg)
 
 <br> 
 
 
-**Step 11:** In cell E8 insert **=ReportMacro()** and select **fx**. 
+**Step 5:** In cell E8 insert **=ReportMacro()** and select **fx**. 
 
 ![](/images/L-Create-RepMacro/11.jpg)
 
 <br> 
 
 
-**Step 12:** In the parameter OnpullSaveOrBoth, input **Pull**. In the parameter OnClearRunOrBoth, input **Both**. 
+**Step 6:** In the parameter OnpullSaveOrBoth, input **Pull**. In the parameter OnClearRunOrBoth, input **Both**. 
 
 ![](/images/L-Create-RepMacro/12.jpg)
 
 <br> 
 
 
-**Step 13:** For the MacroNameToRun parameter, input the exact name of the public function that you created. In this case, you will use **MyCustomFunction**. 
+**Step 7:** For the MacroNameToRun parameter, input the exact name of the public function that you created. In this case, you will use **MyCustomFunction**. 
 
 ![](/images/L-Create-RepMacro/13.jpg)
 
 <br> 
 
 
-**Step 14:** Pull the data. You will notice that the report macro was ordered after the report range action. This is due to INTERJECT formula event ordering. 
+**Step 8:** Pull the data. You will notice that the report macro was ordered after the report range action. This is due to INTERJECT formula event ordering. 
 
 ![](/images/L-Create-RepMacro/14.jpg)
 

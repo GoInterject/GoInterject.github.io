@@ -8,7 +8,7 @@ description: Here, you will modify the Customer Aging Demo used in the Customer 
 
 ##  **Overview**
 
-Here, you will modify the Customer Aging Demo used in the [ Customer Aging Walk-through ](/wAbout/Customer-Aging.html) to show the total of invoices due from companies. You will filter for companies with the word **Market** in their name to keep the list short. You will build a **Total** column to receive the sum of each individual company's unpaid invoices. Once complete you will use these totals to build a Report total, which allows us to see all invoices  due.   
+Here, you will modify a report to show the total of invoices due from companies. You will filter for companies with the word **Market** in their name to keep the list short. You will build a **Total** column to receive the sum of each individual company's unpaid invoices. Once complete you will use these totals to build a Report total, which allows us to see all invoices  due.   
 
 
 ###  Opening the Report and Pulling Data 
@@ -31,7 +31,7 @@ Once open, it should look like this:
   
 
 
-Now run the [ **Pull Data** ](/wPortal/INTERJECT-Ribbon-Menu-Items.html), which will pull the invoice data for all companies with the word **Market** in their name. 
+Now run the [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html), which will pull the invoice data for all companies with the word **Market** in their name. 
 
 ![](/images/L-Modify-CustAging/04.png)
 <br>
@@ -96,7 +96,7 @@ Now that the report is formatted for the new data, you need to add formulas for 
   
 
 
-Remember to include the **=** in our formula, otherwise Excel will simply read this as plain text. **I23** tells Excel where the first column value is, and **L23** designates the last value. The colon represents all the cells in between. When we have this written out, our Excel sheet shows where we will be summing values. 
+Remember to include the **=** in our formula, otherwise Excel will simply read this as plain text. **I20** tells Excel where the first column value is, and **L20** designates the last value. The colon represents all the cells in between. When we have this written out, our Excel sheet shows where we will be summing values. 
 
 
 **Step 4:** Instead of copying this formula to each row once step 3 is completed, pull the entire report again. 
@@ -169,7 +169,7 @@ The report is complete, you have added a total for each client and a summary tot
 ![](/images/L-Modify-CustAging/22.png)
 <br> 
 
-
-You can continue learning by reading how to save these changes back to Report Library [ here ](https://interject.atlassian.net/wiki/display/ID/Updating+the+Report+Library). 
+Once complete, save the report to your Report Library as "Modified Customer Aging_YourName"
+If you do not know how to do this, you can continue learning by reading how to save these changes back to Report Library [ here ](L-Create-UpdatingReportLibrary.html). 
 
  

@@ -29,18 +29,18 @@ ReportLookup(jDataPortal("NorthwindCustomers",1,"[CustomerID] Like '%SAVE%'"),C1
 
 ### Example Function Composition
 
-| Argument Name  | Example Mapping   | Explanation                                                                                |
-|----------------|-------------------|--------------------------------------------------------------------------------------------|
-| Function Name  | `=ReportLookup()` | This is the excel function name used to call the function. It can have embedded functions. |
-| DataPortal     | "jDataPortal("NorthwindCustomers",1,"[CustomerID] Like '%SAVE%')"|                                                                                            |
-| TargetDataRange|                   |                                                                                            |
-| ColDefRange    |                   |                                                                                            |
-| Parameters     |                   |                                                                                            |
+| Argument Name  | Example Mapping   | Explanation                                                                                  |
+|----------------|-------------------|--------------------------------------------------------------------------------------------  |
+| Function Name  | =ReportLookup() | This is the excel function name used to call the function. It can have embedded functions.   |
+| DataPortal     | "jDataPortal("NorthwindCustomers",1,"[CustomerID] Like '%SAVE%')"| Uses the [jDataPortal()](/wIndex/jDataPortal.html) to further filter down on the "NorthwindCustomers" DataPortal |
+| TargetDataRange| C14   | Will return values to the cell C14                                                                       |
+| ColDefRange    | H1    | Points to a value which specifies what column to return.                                                 |
+| Parameters     | N/A   | No parameters used.                                                                                      |
 
 ### Embeddable Helper Functions
 
 * [jDataPortal](/wIndex/jDataPortal.html)
 * [Param](/wIndex/Param.html)
-* [jCombine](wIndex/jCombine.html)
-* [jCombineIF](wIndex/jCombine_IF.html)
+* [jCombine](/wIndex/jCombine.html)
+* [jCombineIF](/wIndex/jCombine_IF.html)
 

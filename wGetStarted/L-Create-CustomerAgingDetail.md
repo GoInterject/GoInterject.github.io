@@ -26,36 +26,23 @@ When the template is complete, it should look like the one below.
 
 <br> 
 
+**Step 2:** Add 3 rows above row 25. Highlight rows 19-21 and rick-click on row 19 and click "Insert."
 
-**Step 2:** Now that you have the template, clear row 19, **IsMissingCRMID**, because it is not needed it for this report. 
-
-![](/images/L-Create-CustAgingDetail/03.png)
-
-<br> 
-
-
-**Step 3:** Since you deleted one of the formula's parameters, you have to make sure you also delete it from the ReportRange function in C6. Select cell C6 and delete **C19** from the formula. Also, type **Market** in C16 so you can limit the data presented to only a few records as you are constructing the report. 
-
-![](/images/L-Create-CustAgingDetail/04.png)
+![](/images/L-Create-CustAgingDetail/05b.png)
 
 <br> 
 
-
-Now the parameters are set and should only reference cells C16, C17, and C18 as shown below. 
-
-![](/images/L-Create-CustAgingDetail/05.png)
-<br>
 
 ###  ReportRange() 
 
-**Step 1:** You can select [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) to see which columns are available. Since the [ ReportRange() ](wIndex/ReportRange.html) function does not have a Column Definition defined, it should show all the columns with their column names. 
+**Step 1:** You can select [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) to see which columns are available. Since the [ ReportRange() ](/wIndex/ReportRange.html) function does not have a Column Definition defined, it should show all the columns with their column names. 
 
 ![](/images/L-Create-CustAgingDetail/06.png)
 
 <br> 
 
 
-After you pull the report it will look like the one below. 
+After you pull the report it will look similiar to the one below. 
 
 ![](/images/L-Create-CustAgingDetail/07.png)
 
@@ -126,14 +113,14 @@ As seen in the following screenshot, you have 7 rows for each customer. It is no
 <br> 
 
 
-Give row 10,12,14, and 16 heights of 6.75. The error below illustrates how to drag the row height to get close to 6.75. You can also type in example data in G11, H11. In K11 you can type in a label **Contact** : and **Phone:** in N11. Format both of these to be right-aligned. 
+Give row 10,12,14, and 16 heights of 6.75. The image below illustrates how to drag the row height to get close to 6.75. You can also type in example data in G11, H11. In K11 you can type in a label **Contact** : and **Phone:** in N11. Format both of these to be right-aligned. 
 
 ![](/images/L-Create-CustAgingDetail/17.png)
 
 <br> 
 
 
-**Step 9:** Now you need to create a formula that will total all of the detail that will later be populated between row 13 and 14. To create a total, type **=SUBTOTAL(9,L13:L14)** in L15. In cell H15 you will type **="Total Open Invoices For " & H11". ** H11 represents the name of the customer, and by linking it to H11, the subtotal line will note the customer name again. 
+**Step 9:** Now you need to create a formula that will total all of the detail that will later be populated between row 13 and 14. To create a total, type **=SUBTOTAL(9,L13:L14)** in L15. In cell H15 you will type **="Total Open Invoices For " & H11.** H11 represents the name of the customer, and by linking it to H11, the subtotal line will note the customer name again. 
 
 ![](/images/L-Create-CustAgingDetail/18.png)
 
@@ -225,7 +212,7 @@ The formatting has been copied down to the rest of the report and there are subt
 <br> 
 
 
-**Step 10:** Now type **Param(C33,C34,C35,"")"** to establish the parameters for the formula that match the previous ReportRange(). Both Report Formulas are setup to use the same filters. Click OK to finish. 
+**Step 10:** Now type **Param(C33,C34,C35,"")** to establish the parameters for the formula that match the previous ReportRange(). Both Report Formulas are setup to use the same filters. Click OK to finish. 
 
 ![](/images/L-Create-CustAgingDetail/31.png)
 
@@ -272,3 +259,5 @@ Type **=SUM(L12:O12)** into cell P12 to add the formula for total. You will also
 ![](/images/L-Create-CustAgingDetail/37.png)
 
 <br>
+
+Finally, clear the report, refreeze the panes, and upload it to the [ Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary.html).

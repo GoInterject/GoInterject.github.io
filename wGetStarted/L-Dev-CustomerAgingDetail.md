@@ -76,154 +76,157 @@ The steps below assume you are proficient with SQL Management Studio for Microso
 
 **Step 1:** Create a stored procedure called [demo].[Northwind_Invoices_Pull_MyName] using the following example code. Please use your name in the suffix of the stored procedure name. 
 
-```SQL 
-    
-    
-    CREATE PROC [demo].[Northwind_Invoices_Pull_MyName]
-    
-    	 @CompanyName VARCHAR(100)
-    	,@ContactName NVARCHAR(100)
-    	,@CustomerID VARCHAR(500) = ''
-    	,@IncludePaid VARCHAR(5) = 0
-    	,@Interject_RequestContext NVARCHAR(MAX)
-    
-    AS
-    BEGIN
-    
-    SET NOCOUNT ON  -- helps reduce conflicts with ADO
-    
-    DECLARE @Interject_LoginName VARCHAR(200)
-    DECLARE @UtcOffset	DECIMAL(6,4)
-    
-    -- Dataset has very old dates
-    -- To give a static date to compare to we hard coded the date.
-    DECLARE @DateCompare VARCHAR(20) = '1997-09-15'
-    DECLARE @ErrorMessage VARCHAR(100)
-    
-    IF LEN(@CompanyName)>40
-    BEGIN
-    	SET @ErrorMessage = 'Usernotice:The company search text must not be more than 40 characters.'
-    	RAISERROR (@ErrorMessage, 18, 1)
-    	RETURN		
-    END
-    
-    -- This is another SP that parses the xml in request context to get the needed system data
-    EXEC [demo].[RequestContext_Parse]
-    	@Interject_RequestContext		= @Interject_RequestContext	
-    	,@Interject_LoginName			= @Interject_LoginName	OUTPUT
-    	,@UtcOffset = @UtcOffset OUTPUT
-    
-    -- @IncludePaid is default 0.
-    -- if set to Yes, change it to 1
-    IF @IncludePaid = 'Yes'
-    	SET @IncludePaid = 1
-    
-    -----------------------------------------------
-    --	REMAINDER OF DATA QUERY
-    -----------------------------------------------
-    --Create CTE that sorts data by InvoiceDate's difference from the hardcoded DateCompare
-    ;WITH Invoice_CTE
-    AS
+
+<button class="collapsible">\[demo\].\[Northwind_Invoices_Pull_MyName\]</button>
+<div markdown="1" class="panel">
+
+```sql
+CREATE PROC [demo].[Northwind_Invoices_Pull_MyName]
+
+     @CompanyName VARCHAR(100)
+    ,@ContactName NVARCHAR(100)
+    ,@CustomerID VARCHAR(500) = ''
+    ,@IncludePaid VARCHAR(5) = 0
+    ,@Interject_RequestContext NVARCHAR(MAX)
+
+AS
+BEGIN
+
+SET NOCOUNT ON  -- helps reduce conflicts with ADO
+
+DECLARE @Interject_LoginName VARCHAR(200)
+DECLARE @UtcOffset	DECIMAL(6,4)
+
+-- Dataset has very old dates
+-- To give a static date to compare to we hard coded the date.
+DECLARE @DateCompare VARCHAR(20) = '1997-09-15'
+DECLARE @ErrorMessage VARCHAR(100)
+
+IF LEN(@CompanyName)>40
+BEGIN
+    SET @ErrorMessage = 'Usernotice:The company search text must not be more than 40 characters.'
+    RAISERROR (@ErrorMessage, 18, 1)
+    RETURN		
+END
+
+-- This is another SP that parses the xml in request context to get the needed system data
+EXEC [demo].[RequestContext_Parse]
+    @Interject_RequestContext		= @Interject_RequestContext	
+    ,@Interject_LoginName			= @Interject_LoginName	OUTPUT
+    ,@UtcOffset = @UtcOffset OUTPUT
+
+-- @IncludePaid is default 0.
+-- if set to Yes, change it to 1
+IF @IncludePaid = 'Yes'
+    SET @IncludePaid = 1
+
+-----------------------------------------------
+--	REMAINDER OF DATA QUERY
+-----------------------------------------------
+--Create CTE that sorts data by InvoiceDate's difference from the hardcoded DateCompare
+;WITH Invoice_CTE
+AS
+(
+    SELECT 
+            [CustomerID]
+        ,[InvoiceID]
+        ,[InvoiceNum]
+        ,[InvoiceTotal]
+        ,[Current]
+        ,[30Days]
+        ,[60Days]
+        ,[90Days]
+        ,[IsPaid]
+    FROM 
     (
         SELECT 
-    		 [CustomerID]
-    		,[InvoiceID]
-    		,[InvoiceNum]
-    		,[InvoiceTotal]
-    		,[Current]
-    		,[30Days]
-    		,[60Days]
-    		,[90Days]
-    		,[IsPaid]
-    	FROM 
-    	(
-    		SELECT 
-    			 i.[CustomerID]
-    			,i.[InvoiceID]
-    			,i.[InvoiceNum]
-    			,i.[InvoiceDate]
-    			,i.[InvoiceTotal]
-    			,CASE WHEN DATEDIFF(dd,InvoiceDate,@DateCompare) < 30 THEN (i.[InvoiceTotal]) ELSE 0 END AS [Current]
-    			,CASE WHEN DATEDIFF(dd,InvoiceDate,@DateCompare) BETWEEN 30 AND 59 THEN (i.[InvoiceTotal]) ELSE 0 END AS [30Days]
-    			,CASE WHEN DATEDIFF(dd,InvoiceDate,@DateCompare) BETWEEN 60 AND 89 THEN (i.[InvoiceTotal]) ELSE 0 END AS [60Days]
-    			,CASE WHEN DATEDIFF(dd,InvoiceDate,@DateCompare) > 90 THEN (i.[InvoiceTotal]) ELSE 0 END AS [90Days]
-    			,@IncludePaid AS IsPaid
-    		FROM [demo].[Northwind_Invoices] i
-    	) t
-    	WHERE [IsPaid] = @IncludePaid
-    	GROUP BY [CustomerID]
-    			,[InvoiceID] 
-    			,[InvoiceNum]
-    			,[InvoiceTotal]
-    			,[Current]
-    			,[30Days]
-    			,[60Days]
-    			,[90Days]
-    			,[IsPaid]
-    )
-    -- Final Select statement
-    SELECT
-    	 c.[CustomerID]
-    	,c.[CompanyName]
-    	,c.[ContactName]
-    	,c.[ContactTitle]
-    	,c.[Country]
-    	,i.[InvoiceID]
-    	,i.[InvoiceNum]
-    	,i.[InvoiceDate]
-    	,i.[OrderTotal]
-        ,i.[Freight]
-        ,i.[InvoiceTotal]
-    	,i.[BillName]
-        ,i.[BillAddress]
-        ,i.[BillCity]
-        ,i.[BillCountry]
-    	,i.[IsPaid]
-    	,o.[OrderID]
-    	,cte.[IsPaid]
-    	,cte.[Current]
-    	,cte.[30Days]
-    	,cte.[60Days]
-    	,cte.[90Days]
-    	,p.[PaidAmount]
-    	,n.[KeyValue] AS Note
-    	,d.[KeyValue] AS ExpectedDate
-    FROM [demo].[Northwind_Invoices] i
-    LEFT JOIN [demo].[Northwind_Customers] c
-    	ON i.[CustomerID] = c.[CustomerID]
-    LEFT JOIN Invoice_CTE cte
-    	ON cte.[InvoiceID] = i.[InvoiceID]
-    LEFT JOIN demo.Northwind_Payments p
-    	ON i.[InvoiceID] = p.[InvoiceID]
-    LEFT JOIN demo.Northwind_Orders o
-    	ON o.[CustomerID] = i.[CustomerID]
-    	AND o.[Freight] = i.[Freight]
-    LEFT JOIN demo.Northwind_InvoiceExternal n
-    	ON n.[InvoiceID] = i.[InvoiceID]
-    	AND n.[KeyName] = 'NOTE'
-    LEFT JOIN demo.Northwind_InvoiceExternal d
-    	ON d.[InvoiceID] = i.[InvoiceID]
-    	AND d.[KeyName] = 'ExpectedDate'
-    WHERE 
-    	i.IsPaid = @IncludePaid
-    	AND
-    	(@CompanyName='' OR c.[CompanyName] LIKE '%' + @CompanyName + '%')
-    	AND
-    	(@ContactName='' OR c.[ContactName] LIKE '%' + @ContactName + '%')
-    	AND
-    	(@CustomerID='' OR c.[CustomerID] = @CustomerID)
-    ORDER BY c.[CompanyName]
-    		,i.[InvoiceDate]
-    		,i.[InvoiceID]
-    
-    END
+                i.[CustomerID]
+            ,i.[InvoiceID]
+            ,i.[InvoiceNum]
+            ,i.[InvoiceDate]
+            ,i.[InvoiceTotal]
+            ,CASE WHEN DATEDIFF(dd,InvoiceDate,@DateCompare) < 30 THEN (i.[InvoiceTotal]) ELSE 0 END AS [Current]
+            ,CASE WHEN DATEDIFF(dd,InvoiceDate,@DateCompare) BETWEEN 30 AND 59 THEN (i.[InvoiceTotal]) ELSE 0 END AS [30Days]
+            ,CASE WHEN DATEDIFF(dd,InvoiceDate,@DateCompare) BETWEEN 60 AND 89 THEN (i.[InvoiceTotal]) ELSE 0 END AS [60Days]
+            ,CASE WHEN DATEDIFF(dd,InvoiceDate,@DateCompare) > 90 THEN (i.[InvoiceTotal]) ELSE 0 END AS [90Days]
+            ,@IncludePaid AS IsPaid
+        FROM [demo].[Northwind_Invoices] i
+    ) t
+    WHERE [IsPaid] = @IncludePaid
+    GROUP BY [CustomerID]
+            ,[InvoiceID] 
+            ,[InvoiceNum]
+            ,[InvoiceTotal]
+            ,[Current]
+            ,[30Days]
+            ,[60Days]
+            ,[90Days]
+            ,[IsPaid]
+)
+-- Final Select statement
+SELECT
+        c.[CustomerID]
+    ,c.[CompanyName]
+    ,c.[ContactName]
+    ,c.[ContactTitle]
+    ,c.[Country]
+    ,i.[InvoiceID]
+    ,i.[InvoiceNum]
+    ,i.[InvoiceDate]
+    ,i.[OrderTotal]
+    ,i.[Freight]
+    ,i.[InvoiceTotal]
+    ,i.[BillName]
+    ,i.[BillAddress]
+    ,i.[BillCity]
+    ,i.[BillCountry]
+    ,i.[IsPaid]
+    ,o.[OrderID]
+    ,cte.[IsPaid]
+    ,cte.[Current]
+    ,cte.[30Days]
+    ,cte.[60Days]
+    ,cte.[90Days]
+    ,p.[PaidAmount]
+    ,n.[KeyValue] AS Note
+    ,d.[KeyValue] AS ExpectedDate
+FROM [demo].[Northwind_Invoices] i
+LEFT JOIN [demo].[Northwind_Customers] c
+    ON i.[CustomerID] = c.[CustomerID]
+LEFT JOIN Invoice_CTE cte
+    ON cte.[InvoiceID] = i.[InvoiceID]
+LEFT JOIN demo.Northwind_Payments p
+    ON i.[InvoiceID] = p.[InvoiceID]
+LEFT JOIN demo.Northwind_Orders o
+    ON o.[CustomerID] = i.[CustomerID]
+    AND o.[Freight] = i.[Freight]
+LEFT JOIN demo.Northwind_InvoiceExternal n
+    ON n.[InvoiceID] = i.[InvoiceID]
+    AND n.[KeyName] = 'NOTE'
+LEFT JOIN demo.Northwind_InvoiceExternal d
+    ON d.[InvoiceID] = i.[InvoiceID]
+    AND d.[KeyName] = 'ExpectedDate'
+WHERE 
+    i.IsPaid = @IncludePaid
+    AND
+    (@CompanyName='' OR c.[CompanyName] LIKE '%' + @CompanyName + '%')
+    AND
+    (@ContactName='' OR c.[ContactName] LIKE '%' + @ContactName + '%')
+    AND
+    (@CustomerID='' OR c.[CustomerID] = @CustomerID)
+ORDER BY c.[CompanyName]
+        ,i.[InvoiceDate]
+        ,i.[InvoiceID]
 
-```  
+END
+```
 
+</div>
 
 It is important to test the stored procedure in the database before testing it through the INTERJECT platform. Using Interject_RequestContext requires the test scripts to be much longer than in the previous steps. To help with this extra text INTERJECT will create the test code for you using the current users context. 
 
-**Step 2:** First you must select a report formula that uses the data portal that is mapped to the stored procedure you want to test. You can quickly make a report formula and delete it since you are not creating the spreadsheet report yet. In a spreadsheet tab, in any cell, type **=ReportVariable("NorthwindCustomerInvoices",A42:A304,2:2,16:16,Param(H36,H37,H38,""))** but replace the data portal name with the name you created for your own example. Make sure the the cell with the ReportRange() formula is selected. 
+**Step 2:** First you must select a report formula that uses the data portal that is mapped to the stored procedure you want to test. You can quickly make a report formula and delete it since you are not creating the spreadsheet report yet. In a spreadsheet tab, in any cell, type 
+```=ReportVariable("NorthwindCustomerInvoices",A42:A304,2:2,16:16,Param(H36,H37,H38,""))``` but replace the data portal name with the name you created for your own example. Make sure the the cell with the ReportRange() formula is selected. 
 
 ![](/images/L-Dev-CustAgingDetail/08.png)
 <br>
@@ -247,133 +250,136 @@ This button is a toggle, so if it is currently showing **Simple Menu** the advan
 
 **Step 5:** Copy and paste the template code into the development environment, SQL Server Management Studio.   
 The full text code is shown below. 
-    
-```SQL
 
-    Execute [demo].[Northwind_Invoices_Pull_MyName]
-    	@CompanyName = 'market'
-    	,@ContactName = ''
-    	,@CustomerID = ''
-    	,@IncludePaid = ''
-    	,@Interject_RequestContext = '<?xml version="1.0" encoding="utf-16" standalone="yes"?>
-    <RequestContext>
-        <ExcelVersion>16.0</ExcelVersion>
-        <IdsVersion>2.3.0.11</IdsVersion>
-        <FileName>Interject_CustomerDemo_v1.xlsx</FileName>
-        <FilePath>C:\Users\MaryM\AppData\Local\Interject\FileCache</FilePath>
-        <TabName>CustomerAgingDetail</TabName>
-        <CellRange>H27</CellRange>
-        <SourceFunction>Ranges</SourceFunction>
-        <UtcOffset>-7</UtcOffset>
-        <ColDefItems>
-            <Value Row="2" Column="1">
-                <Name>CustomerId</Name>
-            </Value>
-            <Value Row="2" Column="2">
-                <Name>InvoiceID</Name>
-            </Value>
-            <Value Row="2" Column="9">
-                <Name>InvoiceNum</Name>
-            </Value>
-            <Value Row="2" Column="10">
-                <Name>OrderID</Name>
-            </Value>
-            <Value Row="2" Column="11">
-                <Name>InvoiceDate</Name>
-            </Value>
-            <Value Row="2" Column="12">
-                <Name>Current</Name>
-            </Value>
-            <Value Row="2" Column="13">
-                <Name>30Days</Name>
-            </Value>
-            <Value Row="2" Column="14">
-                <Name>60Days</Name>
-            </Value>
-            <Value Row="2" Column="15">
-                <Name>90Days</Name>
-            </Value>
-            <Value Row="2" Column="18">
-                <Name>ExpectedDate</Name>
-            </Value>
-            <Value Row="2" Column="20">
-                <Name>Note</Name>
-            </Value>
-            <Value Row="2" Column="21">
-                <Name>[Clear]</Name>
-            </Value>
-        </ColDefItems>
-        <ResultDefItems />
-        <RowDefItems>
-            <Value Row="46" Column="1" ColumnName="CustomerId">
-                <Name>BOTTM</Name>
-            </Value>
-            <Value Row="53" Column="1" ColumnName="CustomerId">
-                <Name>BOTTM</Name>
-            </Value>
-            <Value Row="60" Column="1" ColumnName="CustomerId">
-                <Name>BOTTM</Name>
-            </Value>
-            <Value Row="67" Column="1" ColumnName="CustomerId">
-                <Name>BOTTM</Name>
-            </Value>
-            <Value Row="74" Column="1" ColumnName="CustomerId">
-                <Name>GREAL</Name>
-            </Value>
-            <Value Row="81" Column="1" ColumnName="CustomerId">
-                <Name>GREAL</Name>
-            </Value>
-            <Value Row="88" Column="1" ColumnName="CustomerId">
-                <Name>GREAL</Name>
-            </Value>
-            <Value Row="95" Column="1" ColumnName="CustomerId">
-                <Name>GREAL</Name>
-            </Value>
-            <Value Row="102" Column="1" ColumnName="CustomerId">
-                <Name>SAVEA</Name>
-            </Value>
-            <Value Row="109" Column="1" ColumnName="CustomerId">
-                <Name>SAVEA</Name>
-            </Value>
-            <Value Row="116" Column="1" ColumnName="CustomerId">
-                <Name>SAVEA</Name>
-            </Value>
-            <Value Row="123" Column="1" ColumnName="CustomerId">
-                <Name>SAVEA</Name>
-            </Value>
-            <Value Row="130" Column="1" ColumnName="CustomerId">
-                <Name>WHITC</Name>
-            </Value>
-            <Value Row="137" Column="1" ColumnName="CustomerId">
-                <Name>WHITC</Name>
-            </Value>
-            <Value Row="144" Column="1" ColumnName="CustomerId">
-                <Name>WHITC</Name>
-            </Value>
-            <Value Row="151" Column="1" ColumnName="CustomerId">
-                <Name>WHITC</Name>
-            </Value>
-        </RowDefItems>
-        <UserContext>
-        <MachineLoginName>MaryM</MachineLoginName>
-        <MachineName>.</MachineName>
-        <FullName> </FullName>
-        <UserId>UUvP4HYoeu</UserId>
-        <ClientId>CgCfW9qi</ClientId>
-        <LoginName>MaryM@mycompany.com</LoginName>
-        <LoginAuthTypeId>10</LoginAuthTypeId>
-        <LoginDateUtc>05/03/2018 5:39:48</LoginDateUtc>
-        <UserRoles>
-            <Role>ClientAdmin</Role>
-        </UserRoles>
-    </UserContext>
-        <UserContextEncrypted>Encrypted only through interject api protocol, not direct connection</UserContextEncrypted>
-        <XMLDataToSave></XMLDataToSave>
-    </RequestContext>'
-``` 
 
-  
+<button class="collapsible">Test Script</button>
+<div markdown="1" class="panel">
 
+```sql
+Execute [demo].[Northwind_Invoices_Pull_MyName]
+     @CompanyName = 'market'
+    ,@ContactName = ''
+    ,@CustomerID = ''
+    ,@IncludePaid = ''
+    ,@Interject_RequestContext = '<?xml version="1.0" encoding="utf-16" standalone="yes"?>
+<RequestContext>
+    <ExcelVersion>16.0</ExcelVersion>
+    <IdsVersion>2.3.0.11</IdsVersion>
+    <FileName>Interject_CustomerDemo_v1.xlsx</FileName>
+    <FilePath>C:\Users\MaryM\AppData\Local\Interject\FileCache</FilePath>
+    <TabName>CustomerAgingDetail</TabName>
+    <CellRange>H27</CellRange>
+    <SourceFunction>Ranges</SourceFunction>
+    <UtcOffset>-7</UtcOffset>
+    <ColDefItems>
+        <Value Row="2" Column="1">
+            <Name>CustomerId</Name>
+        </Value>
+        <Value Row="2" Column="2">
+            <Name>InvoiceID</Name>
+        </Value>
+        <Value Row="2" Column="9">
+            <Name>InvoiceNum</Name>
+        </Value>
+        <Value Row="2" Column="10">
+            <Name>OrderID</Name>
+        </Value>
+        <Value Row="2" Column="11">
+            <Name>InvoiceDate</Name>
+        </Value>
+        <Value Row="2" Column="12">
+            <Name>Current</Name>
+        </Value>
+        <Value Row="2" Column="13">
+            <Name>30Days</Name>
+        </Value>
+        <Value Row="2" Column="14">
+            <Name>60Days</Name>
+        </Value>
+        <Value Row="2" Column="15">
+            <Name>90Days</Name>
+        </Value>
+        <Value Row="2" Column="18">
+            <Name>ExpectedDate</Name>
+        </Value>
+        <Value Row="2" Column="20">
+            <Name>Note</Name>
+        </Value>
+        <Value Row="2" Column="21">
+            <Name>[Clear]</Name>
+        </Value>
+    </ColDefItems>
+    <ResultDefItems />
+    <RowDefItems>
+        <Value Row="46" Column="1" ColumnName="CustomerId">
+            <Name>BOTTM</Name>
+        </Value>
+        <Value Row="53" Column="1" ColumnName="CustomerId">
+            <Name>BOTTM</Name>
+        </Value>
+        <Value Row="60" Column="1" ColumnName="CustomerId">
+            <Name>BOTTM</Name>
+        </Value>
+        <Value Row="67" Column="1" ColumnName="CustomerId">
+            <Name>BOTTM</Name>
+        </Value>
+        <Value Row="74" Column="1" ColumnName="CustomerId">
+            <Name>GREAL</Name>
+        </Value>
+        <Value Row="81" Column="1" ColumnName="CustomerId">
+            <Name>GREAL</Name>
+        </Value>
+        <Value Row="88" Column="1" ColumnName="CustomerId">
+            <Name>GREAL</Name>
+        </Value>
+        <Value Row="95" Column="1" ColumnName="CustomerId">
+            <Name>GREAL</Name>
+        </Value>
+        <Value Row="102" Column="1" ColumnName="CustomerId">
+            <Name>SAVEA</Name>
+        </Value>
+        <Value Row="109" Column="1" ColumnName="CustomerId">
+            <Name>SAVEA</Name>
+        </Value>
+        <Value Row="116" Column="1" ColumnName="CustomerId">
+            <Name>SAVEA</Name>
+        </Value>
+        <Value Row="123" Column="1" ColumnName="CustomerId">
+            <Name>SAVEA</Name>
+        </Value>
+        <Value Row="130" Column="1" ColumnName="CustomerId">
+            <Name>WHITC</Name>
+        </Value>
+        <Value Row="137" Column="1" ColumnName="CustomerId">
+            <Name>WHITC</Name>
+        </Value>
+        <Value Row="144" Column="1" ColumnName="CustomerId">
+            <Name>WHITC</Name>
+        </Value>
+        <Value Row="151" Column="1" ColumnName="CustomerId">
+            <Name>WHITC</Name>
+        </Value>
+    </RowDefItems>
+    <UserContext>
+    <MachineLoginName>MaryM</MachineLoginName>
+    <MachineName>.</MachineName>
+    <FullName> </FullName>
+    <UserId>UUvP4HYoeu</UserId>
+    <ClientId>CgCfW9qi</ClientId>
+    <LoginName>MaryM@mycompany.com</LoginName>
+    <LoginAuthTypeId>10</LoginAuthTypeId>
+    <LoginDateUtc>05/03/2018 5:39:48</LoginDateUtc>
+    <UserRoles>
+        <Role>ClientAdmin</Role>
+    </UserRoles>
+</UserContext>
+    <UserContextEncrypted>Encrypted only through interject api protocol, not direct connection</UserContextEncrypted>
+    <XMLDataToSave></XMLDataToSave>
+</RequestContext>'
+
+```
+
+</div>
 
 **Step 7:** When this code is executed, it returns the following result set. 
 
@@ -384,7 +390,7 @@ The full text code is shown below.
 
 At this point you, have a tested a new stored procedure that uses parameters to filter the results. You set up an INTERJECT data connection to go to your example database and you added another INTERJECT data portal to use that connection, which is mapped to the stored procedure that you just created. So now you are ready to build the spreadsheet report using two data portals. 
 
-The steps for building the spreadsheet report are in the lab [ Customer Aging Detail ](/wGetStarted/L3.4-Customer-Aging-Detail.html) . You have likely completed this in earlier training sessions. Repeat the instructions with your newly created data portals discussed in this topic. When you are done, your report should resemble the screenshot below. 
+The steps for building the spreadsheet report are in the lab [ Customer Aging Detail ](https://docs.gointerject.com/wGetStarted/L-Create-CustomerAgingDetail.html) . You have likely completed this in earlier training sessions. Repeat the instructions with your newly created data portals discussed in this topic. When you are done, your report should resemble the screenshot below. 
 
 ![](/images/L-Dev-CustAgingDetail/13.png)
 <br>
@@ -441,9 +447,11 @@ Multiple recordsets are a very efficient report approach when your data is not a
 
 Steps 5 and 6 should look like below: 
 
-```SQL
-    
-    
+<button class="collapsible">Simple Select Statements</button>
+<div markdown="1" class="panel">
+
+```sql
+
     -- Select all detail from the dataset created above
     SELECT * FROM #InvoiceDetail
     ORDER BY [CustomerID]
@@ -457,134 +465,140 @@ Steps 5 and 6 should look like below:
     	,[Country] 
     FROM #InvoiceDetail
     ORDER BY CustomerID
+    
 ```
+
+</div>
+
 **Step 7:** The changes to the stored procedure are complet. It is important to test the stored procedure in the database before testing it through the INTERJECT platform. You can use the same test script used earlier in this topic. Your test code should look similar to the SQL below. 
 
-```SQL
-    Execute [demo].[Northwind_CustomerInvoices_Pull_MyName]
-    	@CompanyName = 'market'
-    	,@ContactName = ''
-    	,@CustomerID = ''
-    	,@IncludePaid = ''
-    	,@Interject_RequestContext = '<?xml version="1.0" encoding="utf-16" standalone="yes"?>
-    <RequestContext>
-        <ExcelVersion>16.0</ExcelVersion>
-        <IdsVersion>2.3.0.11</IdsVersion>
-        <FileName>Interject_CustomerDemo_v1.xlsx</FileName>
-        <FilePath>C:\Users\Marym\AppData\Local\Interject\FileCache</FilePath>
-        <TabName>CustomerAgingDetail</TabName>
-        <CellRange>H27</CellRange>
-        <SourceFunction>Ranges</SourceFunction>
-        <UtcOffset>-7</UtcOffset>
-        <ColDefItems>
-            <Value Row="2" Column="1">
-                <Name>CustomerId</Name>
-            </Value>
-            <Value Row="2" Column="2">
-                <Name>InvoiceID</Name>
-            </Value>
-            <Value Row="2" Column="9">
-                <Name>InvoiceNum</Name>
-            </Value>
-            <Value Row="2" Column="10">
-                <Name>OrderID</Name>
-            </Value>
-            <Value Row="2" Column="11">
-                <Name>InvoiceDate</Name>
-            </Value>
-            <Value Row="2" Column="12">
-                <Name>Current</Name>
-            </Value>
-            <Value Row="2" Column="13">
-                <Name>30Days</Name>
-            </Value>
-            <Value Row="2" Column="14">
-                <Name>60Days</Name>
-            </Value>
-            <Value Row="2" Column="15">
-                <Name>90Days</Name>
-            </Value>
-            <Value Row="2" Column="18">
-                <Name>ExpectedDate</Name>
-            </Value>
-            <Value Row="2" Column="20">
-                <Name>Note</Name>
-            </Value>
-            <Value Row="2" Column="21">
-                <Name>[Clear]</Name>
-            </Value>
-        </ColDefItems>
-        <ResultDefItems />
-        <RowDefItems>
-            <Value Row="46" Column="1" ColumnName="CustomerId">
-                <Name>BOTTM</Name>
-            </Value>
-            <Value Row="61" Column="1" ColumnName="CustomerId">
-                <Name>BOTTM</Name>
-            </Value>
-            <Value Row="76" Column="1" ColumnName="CustomerId">
-                <Name>BOTTM</Name>
-            </Value>
-            <Value Row="91" Column="1" ColumnName="CustomerId">
-                <Name>BOTTM</Name>
-            </Value>
-            <Value Row="106" Column="1" ColumnName="CustomerId">
-                <Name>GREAL</Name>
-            </Value>
-            <Value Row="117" Column="1" ColumnName="CustomerId">
-                <Name>GREAL</Name>
-            </Value>
-            <Value Row="128" Column="1" ColumnName="CustomerId">
-                <Name>GREAL</Name>
-            </Value>
-            <Value Row="139" Column="1" ColumnName="CustomerId">
-                <Name>GREAL</Name>
-            </Value>
-            <Value Row="150" Column="1" ColumnName="CustomerId">
-                <Name>SAVEA</Name>
-            </Value>
-            <Value Row="173" Column="1" ColumnName="CustomerId">
-                <Name>SAVEA</Name>
-            </Value>
-            <Value Row="196" Column="1" ColumnName="CustomerId">
-                <Name>SAVEA</Name>
-            </Value>
-            <Value Row="219" Column="1" ColumnName="CustomerId">
-                <Name>SAVEA</Name>
-            </Value>
-            <Value Row="242" Column="1" ColumnName="CustomerId">
-                <Name>WHITC</Name>
-            </Value>
-            <Value Row="258" Column="1" ColumnName="CustomerId">
-                <Name>WHITC</Name>
-            </Value>
-            <Value Row="274" Column="1" ColumnName="CustomerId">
-                <Name>WHITC</Name>
-            </Value>
-            <Value Row="290" Column="1" ColumnName="CustomerId">
-                <Name>WHITC</Name>
-            </Value>
-        </RowDefItems>
-        <UserContext>
-        <MachineLoginName>MaryM</MachineLoginName>
-        <MachineName>.</MachineName>
-        <FullName> </FullName>
-        <UserId>UUvP4HYoeu</UserId>
-        <ClientId>CgCfW9qi</ClientId>
-        <LoginName>Mary@mycompany.com</LoginName>
-        <LoginAuthTypeId>10</LoginAuthTypeId>
-        <LoginDateUtc>05/03/2018 5:39:48</LoginDateUtc>
-        <UserRoles>
-            <Role>ClientAdmin</Role>
-        </UserRoles>
-    </UserContext>
-        <UserContextEncrypted>Encrypted only through interject api protocol, not direct connection</UserContextEncrypted>
-        <XMLDataToSave></XMLDataToSave>
-    </RequestContext>'
+<button class="collapsible">Test Script</button>
+<div markdown="1" class="panel">
+
+```sql
+Execute [demo].[Northwind_CustomerInvoices_Pull_MyName]
+    @CompanyName = 'market'
+    ,@ContactName = ''
+    ,@CustomerID = ''
+    ,@IncludePaid = ''
+    ,@Interject_RequestContext = '<?xml version="1.0" encoding="utf-16" standalone="yes"?>
+<RequestContext>
+    <ExcelVersion>16.0</ExcelVersion>
+    <IdsVersion>2.3.0.11</IdsVersion>
+    <FileName>Interject_CustomerDemo_v1.xlsx</FileName>
+    <FilePath>C:\Users\Marym\AppData\Local\Interject\FileCache</FilePath>
+    <TabName>CustomerAgingDetail</TabName>
+    <CellRange>H27</CellRange>
+    <SourceFunction>Ranges</SourceFunction>
+    <UtcOffset>-7</UtcOffset>
+    <ColDefItems>
+        <Value Row="2" Column="1">
+            <Name>CustomerId</Name>
+        </Value>
+        <Value Row="2" Column="2">
+            <Name>InvoiceID</Name>
+        </Value>
+        <Value Row="2" Column="9">
+            <Name>InvoiceNum</Name>
+        </Value>
+        <Value Row="2" Column="10">
+            <Name>OrderID</Name>
+        </Value>
+        <Value Row="2" Column="11">
+            <Name>InvoiceDate</Name>
+        </Value>
+        <Value Row="2" Column="12">
+            <Name>Current</Name>
+        </Value>
+        <Value Row="2" Column="13">
+            <Name>30Days</Name>
+        </Value>
+        <Value Row="2" Column="14">
+            <Name>60Days</Name>
+        </Value>
+        <Value Row="2" Column="15">
+            <Name>90Days</Name>
+        </Value>
+        <Value Row="2" Column="18">
+            <Name>ExpectedDate</Name>
+        </Value>
+        <Value Row="2" Column="20">
+            <Name>Note</Name>
+        </Value>
+        <Value Row="2" Column="21">
+            <Name>[Clear]</Name>
+        </Value>
+    </ColDefItems>
+    <ResultDefItems />
+    <RowDefItems>
+        <Value Row="46" Column="1" ColumnName="CustomerId">
+            <Name>BOTTM</Name>
+        </Value>
+        <Value Row="61" Column="1" ColumnName="CustomerId">
+            <Name>BOTTM</Name>
+        </Value>
+        <Value Row="76" Column="1" ColumnName="CustomerId">
+            <Name>BOTTM</Name>
+        </Value>
+        <Value Row="91" Column="1" ColumnName="CustomerId">
+            <Name>BOTTM</Name>
+        </Value>
+        <Value Row="106" Column="1" ColumnName="CustomerId">
+            <Name>GREAL</Name>
+        </Value>
+        <Value Row="117" Column="1" ColumnName="CustomerId">
+            <Name>GREAL</Name>
+        </Value>
+        <Value Row="128" Column="1" ColumnName="CustomerId">
+            <Name>GREAL</Name>
+        </Value>
+        <Value Row="139" Column="1" ColumnName="CustomerId">
+            <Name>GREAL</Name>
+        </Value>
+        <Value Row="150" Column="1" ColumnName="CustomerId">
+            <Name>SAVEA</Name>
+        </Value>
+        <Value Row="173" Column="1" ColumnName="CustomerId">
+            <Name>SAVEA</Name>
+        </Value>
+        <Value Row="196" Column="1" ColumnName="CustomerId">
+            <Name>SAVEA</Name>
+        </Value>
+        <Value Row="219" Column="1" ColumnName="CustomerId">
+            <Name>SAVEA</Name>
+        </Value>
+        <Value Row="242" Column="1" ColumnName="CustomerId">
+            <Name>WHITC</Name>
+        </Value>
+        <Value Row="258" Column="1" ColumnName="CustomerId">
+            <Name>WHITC</Name>
+        </Value>
+        <Value Row="274" Column="1" ColumnName="CustomerId">
+            <Name>WHITC</Name>
+        </Value>
+        <Value Row="290" Column="1" ColumnName="CustomerId">
+            <Name>WHITC</Name>
+        </Value>
+    </RowDefItems>
+    <UserContext>
+    <MachineLoginName>MaryM</MachineLoginName>
+    <MachineName>.</MachineName>
+    <FullName> </FullName>
+    <UserId>UUvP4HYoeu</UserId>
+    <ClientId>CgCfW9qi</ClientId>
+    <LoginName>Mary@mycompany.com</LoginName>
+    <LoginAuthTypeId>10</LoginAuthTypeId>
+    <LoginDateUtc>05/03/2018 5:39:48</LoginDateUtc>
+    <UserRoles>
+        <Role>ClientAdmin</Role>
+    </UserRoles>
+</UserContext>
+    <UserContextEncrypted>Encrypted only through interject api protocol, not direct connection</UserContextEncrypted>
+    <XMLDataToSave></XMLDataToSave>
+</RequestContext>'
 ```
-  
 
-
+</div>
 When this code is executed, it should return two recordsets as shown below. 
 
 ![](/images/L-Dev-CustAgingDetail/20.png)
@@ -601,12 +615,12 @@ You are ready to modify the report to use your new data portal. The changes are 
 
 The second parameter, DataResultNumber, indicates which recordset this report function will use. Using **2** causes the ReportRange() function to grab the second recordset that is a simple list of customers. 
 
-**Step 4:** Now change the **=ReportVariable()** function by replacing the previous data portal with the new one. Again you must encase the new data portal inside a jDataPortal() function. So **=ReportVariable(“oldDataPortalCode”,..** becomes **=ReportVariable(jDataPortal(“NorthwindMultiRecord_MyName”,1),...** In this step you are using **1** so the first record set is used in this report function. The end result should look like the below screenshot for ReportVariable(). 
+**Step 2:** Now change the **=ReportVariable()** function by replacing the previous data portal with the new one. Again you must encase the new data portal inside a jDataPortal() function. So **=ReportVariable(“oldDataPortalCode”,..** becomes **=ReportVariable(jDataPortal(“NorthwindMultiRecord_MyName”,1),...** In this step you are using **1** so the first record set is used in this report function. The end result should look like the below screenshot for ReportVariable(). 
 
 ![](/images/L-Dev-CustAgingDetail/22.png)
 <br>
 
-**Step 5:** Once the report formulas are edited, you can re-pull the data in the report and the results should be the same as when it used two data portals. 
+**Step 3:** Once the report formulas are edited, you can re-pull the data in the report and the results should be the same as when it used two data portals. Notice that **(1)** the customer account detail is presented as well as **(2)** the customer information. 
 
 ![](/images/L-Dev-CustAgingDetail/23.png)
 <br>

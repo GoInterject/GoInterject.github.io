@@ -36,10 +36,19 @@
 <html lang="en">
 
 <head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144663227-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-144663227-1');
+	</script>
+
 	<base href="{{ basehref }}" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="google-site-verification" content="scai6Ane0-sfu6jJ1H4MMUz1A3IubE1Ht0ewonfL3zQ" />
-
 	<style id="page_style" type="text/css">
 		@charset "UTF-8";
 		[ng\:cloak],
@@ -56,39 +65,33 @@
 			display: block;
 		}
 	</style>
-
-	<!--
-	<script type="text/javascript">
-	  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
-	  analytics.load("IWj9D0UpZHZdZUZX9jl98PcpBFWBnBMy");
-	  analytics.page();
-	  }}();
+	<script src="/js/polyfills.js"></script>
+	<!-- This is used to pass a global variable to switch the nav bar yml file. See toc.js for the logic -->
+	{% capture sitePath %}
+		{{page.url}} 
+	{%endcapture%}
+	<script language="JavaScript">
+		var sitePath = '{{page.url}}'
+		// save URI of the referring page (for search page nav loading... see toc.js)
+		var referringPage = document.referrer;
 	</script>
-	-->
-	<!-- favicon -->
-	<link rel="icon" type="image/x-icon" href="/favicons/docs@2x.ico" sizes="129x128">
-	<meta name="msapplication-TileImage" content="/favicons/docs@2x.ico">
-	<link rel="apple-touch-icon" type="image/x-icon" href="/favicons/docs@2x.ico" sizes="129x128">
-	<meta property="og:image" content="/favicons/docs@2x.ico"/>
 	<!-- metadata -->
 	<!--This if statement is required to load jquery on the search.md page before the setTimeout function-->
 	{% if page.title == "Docs search" %}
 		<script src="/js/jquery.js"></script>
 	{% endif %}
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="/css/font-awesome.min.css"> -->
 	<link rel="stylesheet" href="/css/bootstrap.min.css">
 	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css">
 	<link id="pagestyle" rel="stylesheet" href="/css/style.css">
+  <!-- Add Interject logo to favicon to header tab -->
+	<link rel="shortcut icon" type="image/x-icon" href="https://gointerject.com/wp-content/uploads/2015/09/Interject_32x32.png">
 
-	<!-- font awesome icons  -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<!-- Go get "Open Sans" font from Google -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	
 
-	{% if site.GH_ENV == "gh_pages" %}
-	<meta name="robots" content="noindex">
-	{% endif %}
+	
 	{% if page.hide_from_sitemap %}<meta name="robots" content="noindex" />{% endif %}
     {% seo %}
 </head>	
@@ -100,7 +103,6 @@
 		{% if page.landing == true %}{% include global-header.html %}{% endif %} {% if page.landing != true %}{% include header.html %}{% endif %}
 	</header>
 
-	
 
 	<!-- nav bar -->
 	<div class="{% if page.landing == true %}wrapper{%else%}wrapper right-open{% endif %}">
@@ -109,7 +111,7 @@
 				<div class="col-body">
 					<main class="col-content {% if page.landing == true %}main-content{%else%}content{% endif %}">
 						<section class="section">
-							{% if page.url == '/' %}
+							{% if page.url == '/' and page.path != '404.html' %}
 							<h1>{{ site.name }}</h1>
 							{% else %}
 								{% if page.title %}
@@ -123,7 +125,9 @@
 									{% endif %}
 									{% endif %} 
 									{% unless page.tree == false %}
-									{% include read_time.html %}
+									{% if page.path != '404.html' %}
+										{% include read_time.html %}
+									{% endif %}
 									{% endunless %}
 							{% if page.enterprise %}
 							{% include ee_dropdown.html %}
@@ -175,23 +179,6 @@
 								{% endcapture %}
 							{% endif %}
 							{{ content }}
-							<!-- keyword tags -->
-							<!-- {% unless page.notags == true %}
-							{% assign keywords = page.keywords | split:"," %}
-							{% for keyword in keywords %}
-								{% assign strippedKeyword = keyword | strip %}
-								{% assign glossaryUrl = "/glossary/?term" %}
-								{% capture keywordlist %}{{ keywordlist }}
-									 Create tags
-									{{strippedKeyword}}
-									{% unless forloop.last %}, {% endunless %}
-								{% endcapture %}
-							{% endfor %}
-							{% if keywordlist.size > 0 %}
-								<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span>
-								<span style="vertical-align: 2px">{{ keywordlist }}</span>{% endif %}
-							{% endunless %} -->
-							<!-- link corrections -->
               <script language="JavaScript">
 							var x = document.links.length;
 							var baseHref = document.getElementsByTagName('base')[0].href
@@ -212,29 +199,6 @@
 							  }
 							}
 							</script>
-							{% if page.noratings != true %}
-						  <div id="ratings-div" style="color:#b9c2cc; text-align: center; margin-top: 150px; visibility: hidden">
-								<div id="pd_rating_holder_8453675"></div>
-								<script type="text/javascript">
-									PDRTJS_settings_8453675 = {
-										"id": "8453675",
-										"unique_id": "{{ page.path }}",
-										"title": "{{ page.title }}",
-										"permalink": "https://github.com/gointerject/gointerject.github.io/blob/master/{{ page.path }}"
-									};
-									(function(d, c, j) {
-										if (!document.getElementById(j)) {
-											var pd = d.createElement(c),
-												s;
-											pd.id = j;
-											pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'https://i0.poll.fm/js/rating/rating.js';
-											s = document.getElementsByTagName(c)[0];
-											s.parentNode.insertBefore(pd, s);
-										}
-									}(document, 'script', 'pd-rating-js'));
-								</script>
-							</div>
-							{% endif %}
 						</section>
 					</main>
 					<nav class="col-nav">
@@ -247,6 +211,7 @@
 							<div class="toc-nav">
 								<div class="feedback-links">
 									<ul>
+										{% if page.title != "Docs search" %}
 										{% if edit_url != "" %}
                                             <li style="visibility: show">
                                                 <a href="{{ edit_url }}">
@@ -257,25 +222,7 @@
 										<li><a href="https://github.com/gointerject/gointerject.github.io/issues/new?body=File: [{{ page.path }}](https://docs.gointerject.com{{ page.url }})"
 															class="nomunge"><i class="fa fa-check" aria-hidden="true"></i> Request docs changes</a></li>
 										<li><a href="https://www.gointerject.com/call-us/"><i class="fa fa-question" aria-hidden="true"></i> Get help</a></li>
-										<!-- toggle mode -->
-										<!-- Turn night mode on and off
-										<li>
-											<div class="toggle-mode">
-												<div class="icon">
-													<i class="fa fa-sun-o" aria-hidden="true"></i>
-												</div>
-												<div class="toggle-switch">
-													<label class="switch">
-														<input type="checkbox" id="switch-style">
-														<div class="slider round"></div>
-												</label>
-												</div>
-												<div class="icon">
-													<i class="fa fa-moon-o" aria-hidden="true"></i>
-												</div>
-											</div>
-										</li>
-										-->
+										{% endif %}
 									</ul>
 								</div>
 								{% unless page.notoc %} {% assign my_min = page.toc_min | default: site.toc_min | default: 2 %} {% assign my_max = page.toc_max | default: site.toc_max | default: 3 %} {% assign my_name = page.url | default: "unnamed" %}
@@ -293,17 +240,17 @@
 	<!-- The Modal for viewing images -->
 	<div id="modal-main" class="modal" >
 		<img class="modal-content nohover" id="modal-img" style="padding-top: 3%;"/>
-		<span class="close-modal" style="padding-top: 3%;">
+		<!-- <span class="close-modal" style="padding-top: 3%;">
 			<i class="fa fa-times-circle fa-1x"></i>
-		</span>
+		</span> -->
 	</div>
 
-	{% if page.path == "404.md" %}
+	{% if page.path == "404.html" %}
 		<script type="text/javascript">
 			var path = window.location.pathname.replace("#","");
 			var ghIssueQueryString = "https://github.com/gointerject/gointerject.github.io/issues/new?" + "title=404%20at%20" + path + "&body=URL%3A%20" + path;
-			document.getElementsByClassName("nomunge")[1].onclick = function() {
-				 document.getElementsByClassName("nomunge")[1].href = ghIssueQueryString;
+			document.getElementsByClassName("nomunge")[0].onclick = function() {
+				 document.getElementsByClassName("nomunge")[0].href = ghIssueQueryString;
 				 return true;
 			};
 		</script>
@@ -327,19 +274,17 @@
 	<script src="/js/bootstrap.min.js"></script>
 	<!-- Always include the archive.js, but it doesn't do much unless we are an archive -->
 	<script language="javascript">
-	// Default to assuming this is an archive and hiding some stuff
-	// See js/archive.js and js/docs.js for logic relating to this
-	var isArchive = true;
-	var interjectVersion = 'v{{ site.docker_ce_stable_version }}';
+	var interjectVersion = 'Main';
+	// console.log(interjectVersion);
 	// In archives, we need to know the page root and we get it from JEKYLL_ENV in the jekyll build command
 	var jekyllEnv = '{{ jekyll.environment }}';
 	// If unset (in non-archive branches), defaults to "development". In that case, reset it to empty
-	if (jekyllEnv == 'development') {
-		jekyllEnv = '';
-	}
+	// if (jekyllEnv == 'development') {
+	// 	jekyllEnv = '';
+	// }
 	var pageURL = '{{ page.url }}';
 	</script>
-	<script src="/js/archive.js"></script>
+	<script src="/js/siteversions.js"></script>
 	<script src="/js/stickyfill.min.js"></script>
 	<script defer src="/js/metadata.js"></script>
 	<script src="/js/glossary.js"></script>
@@ -347,6 +292,8 @@
 	<script defer src="/js/docs.js"></script>
 	<script defer src="/js/toc.js"></script>
 	<script defer src="/js/stylemod.js"></script>
+	<script defer src="/js/collapsible.js"></script>
+
 	<script language="javascript">
 	jQuery(document).ready(function(){
 				hookupTOCEvents();

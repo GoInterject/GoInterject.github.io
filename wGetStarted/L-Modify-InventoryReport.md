@@ -157,7 +157,7 @@ Before saving back changes to the Report Library, clear the data so the next use
 <br> 
 
 
-Now that the data is cleared, use the [ jFreezePanes ](/wIndex/128552956.html) function to re-freeze the panes on the report so that only the main report area is visible. This report has the jFreezePanes formula in cell G4. 
+Now that the data is cleared, use the [ jFreezePanes ](/wIndex/jFreezePanes.html) function to re-freeze the panes on the report so that only the main report area is visible. This report has the jFreezePanes formula in cell G4. 
 
 jFreezePanes is not configured for all the example reports, but it is easy to setup when needed. 
 
@@ -166,20 +166,20 @@ jFreezePanes is not configured for all the example reports, but it is easy to se
 <br> 
 
 
-**Step 2:** To use the [ jFreezePanes ](/wIndex/128552956.html), click the Quick Tools button in the INTERJECT Ribbon and select **Freeze/UnFreeze Panes**. 
+**Step 2:** To use the [ jFreezePanes ](/wIndex/jFreezePanes.html), click the Quick Tools button in the INTERJECT Ribbon and select **Freeze/UnFreeze Panes**. 
 
-![](/images/L-Modify-Inventory/12.png)
+![](/images/L-Modify-Inventory/20.png)
 
 <br> 
 
 
 This will automatically freeze the panes to the pre-configured position. 
 
-![](/images/L-Modify-Inventory/13.png)
+![](/images/L-Modify-Inventory/21.png)
 
 <br> 
 
 
-And that is all there is to it. You have now modified the Inventory Report with an additional column and row. To know how to save report changes to the Report Library, [ click here ](/wAbout/Report-Library-Basics.html). 
+And that is all there is to it. You have now modified the Inventory Report with an additional column and row. Save your new report to the report library as "Modified Inventory_YourName" To know how to save report changes to the Report Library, [ click here ](/wAbout/Report-Library-Basics.html). 
 
  

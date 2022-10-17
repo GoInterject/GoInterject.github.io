@@ -10,41 +10,36 @@ description: On this page, you will create a simple data pull using the Customer
 
 On this page, you will create a simple data pull using the Customer Aging Report. To review the business use case for this report, see  [ **Real World Walkthroughs** **\- Customer Aging** ](/wAbout/Customer-Aging.html) .  This lab begins with steps for creating the INTERJECT data connection and data portals, followed by the steps on how to create the stored procedure. Finally, you will be directed to another page that shows how to use the data portal to create the spreadsheet report from scratch. 
 
+**Developer Note**
+To work through this example, locate Lab 1.2 Customer Collections in the Interjet Report Library
+{: .component }
+
 ###  Setting Up The Data Connection 
 
 **Step 1:** Navigate to [ https://portal.gointerject.com ](https://portal.gointerject.com) and log in. Set up a data connection by clicking the **Data Connections** icon. 
 
 ![](/images/L-Dev-CustAging/01.jpg)
 <br>
-  
-
 
 **Step 2:** On the Data Connections page, click the **New Connection** button. 
 
 ![](/images/L-Dev-CustAging/02.jpg)
 <br>
 
-
 **Step 3:** In the Connection Type field, verify that **Database** is selected. 
 
 ![](/images/L-Dev-CustAging/03.jpg)
 <br>
-  
-
 
 **Step 4:** The Connection Details page needs to contain the following information for the new connection. Type **NorthwindExampleDB_MyName** in Connection Name, but include your own name in the suffix. Each connection name must be unique. For the connection string, type **Server=myServerAddress;Database=myDataBase;Trusted_Connection=True;** . You are using Windows authentication, so username and password are not required. Replace the server name and database name to match your own that you are using for this walk-through. 
 
 ![](/images/L-Dev-CustAging/04.jpg)
 <br>
   
-
-
 **Step 5:** In the Description field include details about what the data connection will be used for. 
 
 ![](/images/L-Dev-CustAging/05.jpg)
 <br>
-  
-
 
 **Step 6:** Click the Save button to create the new data connection. 
 
@@ -59,8 +54,6 @@ The Database Data Connection is now ready to be used in a Data Portal. You shoul
 
 ![](/images/L-Dev-CustAging/07.jpg)
 <br>
-  
-
 
 **Step** **2:** Select New Data Portal 
 
@@ -73,17 +66,13 @@ The Database Data Connection is now ready to be used in a Data Portal. You shoul
 
 ![](/images/L-Dev-CustAging/09.png)
 <br>
-  
 
-
-**Step 4** : Click **Create Data Portal** to save the new data portal. Additional options display after selecting the Create Data Portal button for adding parameters. 
+**Step 4:** Click **Create Data Portal** to save the new data portal. Additional options display after selecting the Create Data Portal button for adding parameters. 
 
 ![](/images/L-Dev-CustAging/10.png)
 <br>
 
 **Note:** If this is your first time setting up a data portal, review **Data Portals** , which describes the data portal parameters in more detail, including the difference between formula and system parameters. Return to the next step to continue. 
-
- 
 
 ###  Setting Up Formula Parameters 
 
@@ -176,7 +165,7 @@ In this example, you will use the system parameter, **Interject_NTLogin** , whic
 
 ###  Creating the Stored Procedure 
 
-A stored procedure or data API servers as a middle tier for an INTERJECT report. In t  his example you will be using a stored procedure. INTERJECT can retrieve one more result sets from the stored procedure into the spreadsheet report. 
+A stored procedure or data API serves as a middle tier for an INTERJECT report. In this example you will be using a stored procedure. INTERJECT can retrieve one or more result sets from a stored procedure into the spreadsheet report. 
 
 The INTERJECT Website Portal allows you to create and manage Data Portals and reference stored procedures you create. Data Portals are stored locally in your Excel session when you log into INTERJECT. When requesting data INTERJECT creates a point-to-point connection with the intended data source. 
 
@@ -184,91 +173,95 @@ The below steps assume you are proficient with SQL Management Studio for Microso
 
 **Step 1:** Create a stored procedure called [demo].[Northwind_Customers_Pull_MyName] using the following code example. 
 
-**Customer Aging** 
-    
-```SQL   
-    CREATE PROC [demo].[Northwind_Customers_Pull_MyName]
-    
-    	 @CompanyName					VARCHAR(100)
-    	,@ContactName					VARCHAR(100)
-    	,@CustomerID					VARCHAR(500) = ''
-    	,@Interject_NTLogin				VARCHAR(50) 
-    	,@Interject_LocalTimeZoneOffset MONEY
-    
-    AS
-    BEGIN
-    
-    SET NOCOUNT ON  -- helps reduce conflicts with ADO
-    
-    DECLARE @DateCompare VARCHAR(20) = '1997-09-15'
-    DECLARE @ErrorMessage VARCHAR(100)
-    
-    IF LEN(@CompanyName)>40
-    BEGIN
-    	SET @ErrorMessage = 'Usernotice:The company search text must not be more than 40 characters.'
-    	RAISERROR (@ErrorMessage, 18, 1)
-    	RETURN		
-    END
-    
-    --CREATE CTE to consolidate the invoice data into seperate categories based on date
-    ;WITH Invoice_CTE
-    AS
-    (
-        SELECT 
-    		 CustomerID
-    		,SUM(InvoiceTotal)	AS InvoiceTotal
-    		,SUM([Current])		AS [Current]
-    		,SUM([30Days])		AS [30Days]
-    		,SUM([60Days])		AS [60Days]
-    		,SUM([90Days])		AS [90Days]
-    		,IsPaid
-    	FROM 
-    	(
-    	SELECT 
-    		 i.CustomerID
-    		,i.InvoiceDate
-    		,i.InvoiceTotal
-    		,CASE WHEN DATEDIFF(dd,i.InvoiceDate,@DateCompare) < 30	THEN (i.InvoiceTotal) ELSE 0 END AS [Current]
-    		,CASE WHEN DATEDIFF(dd,i.InvoiceDate,@DateCompare) between 30 and 59 THEN (i.InvoiceTotal) ELSE 0 END AS [30Days]
-    		,CASE WHEN DATEDIFF(dd,i.InvoiceDate,@DateCompare) between 60 and 89 THEN (i.InvoiceTotal) ELSE 0 END AS [60Days]
-    		,CASE WHEN DATEDIFF(dd,i.InvoiceDate,@DateCompare) > 90	THEN (i.InvoiceTotal) ELSE 0 END AS [90Days]
-    		,IsPaid
-        FROM [demo].[Northwind_Invoices] i
-    	WHERE IsPaid = 0 --This line selects the invoices that have not been paid 
-    	) t
-    	GROUP BY CustomerID, IsPaid
-    )
-    
+<button class = "collapsible"> \[demo\].\[Northwind_Customers_Pull_MyName\] </button>
+
+<div markdown="1" class="panel">
+
+```sql
+CREATE PROC [demo].[Northwind_Customers_Pull_MyName]
+
+     @CompanyName					VARCHAR(100)
+    ,@ContactName					VARCHAR(100)
+    ,@CustomerID					VARCHAR(500) = ''
+    ,@Interject_NTLogin				VARCHAR(50) 
+    ,@Interject_LocalTimeZoneOffset MONEY
+
+AS
+BEGIN
+
+SET NOCOUNT ON  -- helps reduce conflicts with ADO
+
+DECLARE @DateCompare VARCHAR(20) = '1997-09-15'
+DECLARE @ErrorMessage VARCHAR(100)
+
+IF LEN(@CompanyName)>40
+BEGIN
+    SET @ErrorMessage = 'Usernotice:The company search text must not be more than 40 characters.'
+    RAISERROR (@ErrorMessage, 18, 1)
+    RETURN		
+END
+
+--CREATE CTE to consolidate the invoice data into seperate categories based on date
+;WITH Invoice_CTE
+AS
+(
     SELECT 
-    	 c.[CustomerID]
-    	,c.[CompanyName]
-    	,c.[ContactName]
-    	,c.[ContactTitle]
-    	,ISNULL(c.[Address],'') AS [Address]
-    	,c.[City]
-    	,c.[Region]
-    	,c.[PostalCode]
-    	,c.[Country]
-    	,c.[Phone]
-    	,cte.[Current]
-    	,cte.[30Days]
-    	,cte.[60Days]
-    	,cte.[90Days]
-    	,cte.IsPaid
-    	,ISNULL(c.PostalCode,'') + ',' + ISNULL(c.Country,'') AS TestValueList
-    FROM [demo].[Northwind_Customers] c
-    	LEFT JOIN Invoice_CTE cte
-    		ON c.CustomerID = cte.CustomerID
-    WHERE 
-    	(@CompanyName='' OR c.CompanyName LIKE '%' + @CompanyName + '%')
-    	AND
-    	(@ContactName='' OR c.ContactName LIKE '%' + @ContactName + '%')
-    	AND
-    	(@CustomerID='' OR c.CustomerID = @CustomerID)
-    ORDER BY c.[CompanyName] 
-     
-    END
+         CustomerID
+        ,SUM(InvoiceTotal)	AS InvoiceTotal
+        ,SUM([Current])		AS [Current]
+        ,SUM([30Days])		AS [30Days]
+        ,SUM([60Days])		AS [60Days]
+        ,SUM([90Days])		AS [90Days]
+        ,IsPaid
+    FROM 
+    (
+    SELECT 
+         i.CustomerID
+        ,i.InvoiceDate
+        ,i.InvoiceTotal
+        ,CASE WHEN DATEDIFF(dd,i.InvoiceDate,@DateCompare) < 30	THEN (i.InvoiceTotal) ELSE 0 END AS [Current]
+        ,CASE WHEN DATEDIFF(dd,i.InvoiceDate,@DateCompare) between 30 and 59 THEN (i.InvoiceTotal) ELSE 0 END AS [30Days]
+        ,CASE WHEN DATEDIFF(dd,i.InvoiceDate,@DateCompare) between 60 and 89 THEN (i.InvoiceTotal) ELSE 0 END AS [60Days]
+        ,CASE WHEN DATEDIFF(dd,i.InvoiceDate,@DateCompare) > 90	THEN (i.InvoiceTotal) ELSE 0 END AS [90Days]
+        ,IsPaid
+    FROM [demo].[Northwind_Invoices] i
+    WHERE IsPaid = 0 --This line selects the invoices that have not been paid 
+    ) t
+    GROUP BY CustomerID, IsPaid
+)
+
+SELECT 
+     c.[CustomerID]
+    ,c.[CompanyName]
+    ,c.[ContactName]
+    ,c.[ContactTitle]
+    ,ISNULL(c.[Address],'') AS [Address]
+    ,c.[City]
+    ,c.[Region]
+    ,c.[PostalCode]
+    ,c.[Country]
+    ,c.[Phone]
+    ,cte.[Current]
+    ,cte.[30Days]
+    ,cte.[60Days]
+    ,cte.[90Days]
+    ,cte.IsPaid
+    ,ISNULL(c.PostalCode,'') + ',' + ISNULL(c.Country,'') AS TestValueList
+FROM [demo].[Northwind_Customers] c
+    LEFT JOIN Invoice_CTE cte
+        ON c.CustomerID = cte.CustomerID
+WHERE 
+    (@CompanyName='' OR c.CompanyName LIKE '%' + @CompanyName + '%')
+    AND
+    (@ContactName='' OR c.ContactName LIKE '%' + @ContactName + '%')
+    AND
+    (@CustomerID='' OR c.CustomerID = @CustomerID)
+ORDER BY c.[CompanyName] 
+    
+END
 ```
+
+</div>
 
 
 **Step 2:** Stored procedure are natively supported by INTERJECT. There are a few key areas to note in the code example that help illustrate INTERJECT features. 
@@ -295,28 +288,32 @@ The below steps assume you are proficient with SQL Management Studio for Microso
 <br>
 
 **Step 3:** It is important to test the stored procedure in the database before testing through the INTERJECT platform. The example code included a test SQL statement that can be executed in a new query as shown below. Be sure to change the procedure name to match your own. 
- 
-```SQL   
-    Execute demo.[Northwind_Customers_Pull_MyName]
-    	@CompanyName = 'market'
-    	,@ContactName = ''
-    	,@CustomerID = ''
-    	,@Interject_NTLogin = 'MaryM'
-    	,@Interject_LocalTimeZoneOffset = -7
+
+
+<button class="collapsible">Example Test Script</button>
+<div markdown="1" class="panel">
+
+```sql
+Execute demo.[Northwind_Customers_Pull_MyName]
+	@CompanyName = 'market'
+	,@ContactName = ''
+	,@CustomerID = ''
+	,@Interject_NTLogin = 'MaryM'
+	,@Interject_LocalTimeZoneOffset = -7
 ```
+
+</div>
 
 When executed you should see the following result set. 
 
 ![](/images/L-Dev-CustAging/24.png)
 <br>
 
-
-
 ###  Create The Report 
 
 At this point you have a tested stored procedure that uses parameters to filter the results. An INTERJECT Data Connection is setup to go to your example database and you added an INTERJECT Data Portal to use that connection and is mapped to the stored procedure that was just created. You are ready to build the spreadsheet report. 
 
-Fortunately, the documentation to build this report has already been presented in [ **Create: Customer Aging** ](wGetStarted/L-Create-CustomerAging.html) and you likely have already completed it. The end result should look like the below screenshot. 
+Fortunately, the documentation to build this report has already been presented in [ **Create: Customer Aging** ](https://docs.gointerject.com/wGetStarted/L-Create-CustomerAging.html) and you likely have already completed it. The end result should look like the below screenshot. 
 
 ![](/images/L-Dev-CustAging/25.png)
 <br>
@@ -324,4 +321,3 @@ Fortunately, the documentation to build this report has already been presented i
 It is recommended to go to **Create: Customer Aging** to complete those steps again to reinforce the process. However, this time you can use your own Data Portal for the report. 
 
 When going through the report creation steps, be sure to use your new Data Portal Code instead of the one used in the training. Please continue to the next lab after your new report is built. 
-

@@ -26,13 +26,11 @@ To start, copy the columns  **L-N** in the  **PLTrend** tab and paste them into 
 
 <br> 
 
-
 Then, unfreeze the sheet. 
 
 ![](/images/L-Create-Retain/02.jpg)
 
 <br> 
-
 
 Clear out the cell range  **P2:R5** from the new columns so new data does not populate on the right side. This is also a good time to clear out the extra input spaces in the  **P20:R26** cell range. 
 
@@ -40,13 +38,11 @@ Clear out the cell range  **P2:R5** from the new columns so new data does not po
 
 <br> 
 
-
 Now input  **7002** into  **Location** and  **2002-05** into  **Month.** Then **Pull** the report. 
 
 ![](/images/L-Create-Retain/04.jpg)
 
 <br> 
-
 
 Now, with the blank section to the right, we will create a projection based on the previous 3 months. 
 
@@ -56,9 +52,9 @@ First, in cell  **Q26**, input  **Forecasting Formulas.** Then, edit the formula
 
 <br> 
 
-Project a 10% increase to every value by inputting  **=L33*1.10** into cell  **P29.** Then copy this formula into the range of the cells from **P29:R152**. 
+Project a 10% increase to every value. First select cell **P29** and input the formula **=L29 * 1.10**. Copy cell **P29** to the clipboard. Next highlight cells **P29:R152**. Finally, right-click on the area and copy the formulas.
 
-![](/images/L-Create-Retain/06.jpg)
+![](/images/L-Create-Retain/06.png)
 
 <br>
 
@@ -82,12 +78,11 @@ Without using the RetainedRowColumns feature, if your formulas are on the same r
 
 To fix this, use the RetainedRowsColumns to retain the rows and your formulas. 
 
-To do this, input  **=L33*1.10** into cell  **P29.** Then copy this formula into all of the blue cells. 
+To do this, start by inputing **=L29 * 1.1** into cell **P29** again and then copy the formula into cells **P29:R152** like before.
 
-![](/images/L-Create-Retain/09.jpg)
+![](/images/L-Create-Retain/09.png)
 
 <br> 
-
 
 Now, click on the cell  **G16,** which contains the ReportVariable() formula. Now click the  **fx** button to pull up the function wizard. 
 
@@ -95,22 +90,19 @@ Now, click on the cell  **G16,** which contains the ReportVariable() formula. No
 
 <br> 
 
+Now scroll down to the **RetainRowColumns.** The RetainRowColumns argument expects a single string of comma delimited names of columns that will be retained after a data pull. Instead of entering the string, the [**jCombine()**](/wIndex/jCombine.html) helper function is helpful as it will concatenate the column names for us.
 
-When selecting a range of cells, RetainedRowColumns uses a single string delimiting character separated list as its input. This means that the  [**jcombine()**](/wIndex/jcombine.html) helper function is required. 
-
-Now scroll down to the  **RetainRowColumns.** In that box, input  **jcombine((F2:G2))**. This will retain all inputs in columns  **P-R** in the report. 
+Enter **jCombine((F2:G2))** in the field. This will retain all inputs in columns **P-R** in the report. 
 
 ![](/images/L-Create-Retain/11.jpg)
 
 <br> 
-
 
 Now, if the data changes again, you need to **Pull** the report again. 
 
 ![](/images/L-Create-Retain/12.jpg)
 
 <br> 
-
 
 Notice that the formulas are still intact and accurate to the new data. 
 

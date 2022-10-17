@@ -60,7 +60,7 @@ You are going to skip the ReportCodeToRun argument, since that is used only when
   
 
 
-**Step 4:** Then you will specify the name for the drill. In this case you will type **Drill to Customer Order History**. 
+**Step 4:** Then you will specify the name for the drill. In this case you will type **"Drill to Customer Order History"**. 
 
 ![](/images/L-Drill-CustAging/07.png)
 <br>
@@ -81,7 +81,7 @@ You are going to skip the ReportCodeToRun argument, since that is used only when
   
 
 
-**Step 7:** Now that you have created the drill, you can use [ **Pull Data** ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) to bring in the customers to the source worksheet. 
+**Step 7:** Now that you have created the drill, you can use [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) to bring in the customers to the source worksheet. 
 
 ![](/images/L-Drill-CustAging/10.png)
 <br>
@@ -97,14 +97,7 @@ Below is when the data is pulled.
 
 ###  **Final Results**
 
-**Step 1:** To demonstrate the new drill, **right click** on one of the customer rows and select Drill on Data. The drill option **Drill to Customers Orders History** should be shown. 
-
-![](/images/L-Drill-CustAging/12.png)
-<br>
-  
-
-
-**Step 2:** Click on the button **Do Drill** and INTERJECT will navigate to the target worksheet, bring in the CustomerID selected by the filter, then run the report. The screenshot below should resemble the result. 
+**Step 1:** To demonstrate the new drill, click on one of the customer rows and select **Drill on Data**. Click on the button **Do Drill** and INTERJECT will navigate to the target worksheet, bring in the CustomerID selected by the filter, then run the report. The screenshot below should resemble the result. 
 
 ![](/images/L-Drill-CustAging/13.png)
 <br>
@@ -119,6 +112,7 @@ You completed the drill. You can return to the source worksheet, **Customer Agin
 ![](/images/L-Drill-CustAging/14.png)
 <br>
 
+Finally, clear the reports, refreeze the panes, and upload it to the [ Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary.html).
 
   
 

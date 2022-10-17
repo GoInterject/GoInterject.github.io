@@ -20,21 +20,21 @@ In this lab, you will set up a simple connection to an example API. Detailed doc
   
 **Step 1:** Navigate to [ https://portal.gointerject.com ](https://portal.gointerject.com) and [ login ](/wPortal/Logging-In-to-Website-Portal.html) to INTERJECT.  To set up a data connection click on **Data Connections** in the menu on the left.
 
-![](/images/ApiConnection/01.png)
+![](/images/L-Portal-API/01.png)
 
 <br> 
 
 
 **Step 2:** In the Data Connections page, select the **New Connection** button in the top right corner. 
 
-![](/images/ApiConnection/02.png)
+![](/images/L-Portal-API/02.png)
 
 <br> 
 
 
 **Step 3:** In the Connection Type field, make sure **Web Api** is selected. 
 
-![](/images/ApiConnection/03.png)
+![](/images/L-Portal-API/03.png)
 
 <br> 
 
@@ -43,7 +43,7 @@ In this lab, you will set up a simple connection to an example API. Detailed doc
 
   * **Name:** A unique friendly name used when connecting a Data Portal to the Data Connection. 
   * **Description:** Description of the API connection 
-  * **Api Root Url:** The root URL of the API you are connecting to, for example [ https://api.myDataApi.com ](https://api.myDataApi.com)
+  * **Api Root Url:** The root URL of the API you are connecting to, for example [ https://api.myDataApi.com ]
   * **Api Connection String Name (optional):** The name of the connection string within the configuration of your custom API. In many cases, an API may be hard-coded to use a specific database, so this setting is not needed. But you can build an API to use a different connection string, as indicated by this setting. If the developer uses this attribute, an API's use can be more flexible. Two options can be used here other than leaving it blank: 
     * In a web config, you can have a connection string with a name which will be used as the connection string name 
     * It is also possible to put the integrated security connection string here. This would be used to connect to data sources with extra security. 
@@ -51,13 +51,13 @@ In this lab, you will set up a simple connection to an example API. Detailed doc
 
 
 
-![](/images/ApiConnections/05.png)
+![](/images/L-Portal-API/04.png)
 
 <br> 
 
 **Step 5:** After adding the required information, click on the Save button to create the new data connection. 
 
-![](/images/ApiConnections/06.png)
+![](/images/L-Portal-API/05.png)
 
 <br>
 

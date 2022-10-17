@@ -109,7 +109,7 @@ It should pull only the data for the columns you requested in the column definit
   
 
 
-**Step 4:** Now that you have the data, remove any access text and formatting not needed for the final report. Use the before and after screenshots to note what should be cleared. 
+**Step 4:** Now that you have the data, remove any excess text and formatting not needed for the final report. Use the before and after screenshots to note what should be cleared. 
 
 **Before:**
 
@@ -125,7 +125,7 @@ It should pull only the data for the columns you requested in the column definit
   
 
 
-**Step 5:** With all the extra text gone, you can now remove the unneeded rows, 11:15 and 19:20. 
+**Step 5:** With all the extra text gone, you can now remove the unneeded rows, 10:12 and 19:20. 
 
 **Before:**
 
@@ -179,14 +179,14 @@ Now add column definitions on row 3. You are going to add shipping information t
 ![](/images/L-Create-CustOrders/22.jpg)   
 <br>
 
-Below is an example of what a Formatting Range might look like. It is okay to leave values there to visualize the formatting as long as it is understood the columns noted in the Column Definition will override the cells with data. 
+Below is an example of what a Formatting Range might look like (Note the column addition after Col C). It is okay to leave values there to visualize the formatting as long as it is understood the columns noted in the Column Definition will override the cells with data. 
 
 ![](/images/L-Create-CustOrders/23.jpg)
 <br>
   
 
 
-**Step 5:** Before pulling the data, you need to edit the [ ReportRange() ](wIndex/ReportRange.html) Formula in C10 so that it uses the Column Definition and Formatting Range set in the previous steps. 
+**Step 5:** Before pulling the data, you need to edit the [ ReportRange() ](/wIndex/ReportRange.html) Formula in C10 so that it uses the Column Definition and Formatting Range set in the previous steps. 
 
 ![](/images/L-Create-CustOrders/24.png)
 <br>
@@ -249,20 +249,7 @@ Every report will be specific to the company's needs and best practices, but a c
   
 
 
-  
-
-
-##  Related Links: 
-
-[ Customer Aging ](/wAbout/Customer-Aging.html)
-
-[ Modify: Customer Aging ](/wGetStarted/L-Modify-CustomerAgin.html)
-
-[ Updating the Report Library ](/wGetStarted/L-Updating-the-Report-Library.html)
-
-[ Interject Ribbon Menu Items ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html)
-
-[ Basics of Report Formulas ](/wAbout/Basics-of-Report-Formulas.html)
+Finally, clear the report, refreeze the panes, and upload it to the [ Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary.html).
 
   
 

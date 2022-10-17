@@ -13,7 +13,7 @@ Report errors occur for many reasons, some of which relate to how the server han
 
 ###  Investigating Errors In Reports with Progress Window 
 
-There are two types of errors that INTERJECT can display: unhandled and handled. Unhandled errors are system generated, whereas handled errors are written by developers.  For example, on a pull or save, an error may occur on the server which the report is trying to access. This error could be handled by the developer, or it could be an unhandled error. Developers can handle errors quickly by using “UserNotice": [link to more info about how to use it]. When the error is handled by the developer, a popup message will display a friendly error text set by the developer. For example a common error is the misspelling of a dataportal, which displays a handled error when pulling a report with a misspelled dataportal. 
+There are two types of errors that INTERJECT can display: unhandled and handled. Unhandled errors are system generated, whereas handled errors are written by developers.  For example, on a pull or save, an error may occur on the server which the report is trying to access. This error could be handled by the developer, or it could be an unhandled error. Developers can handle errors quickly by using “UserNotice": [Read about UserNotice here](https://docs.gointerject.com/wGetStarted/L-Dev-Error-Handling.html). When the error is handled by the developer, a popup message will display a friendly error text set by the developer. For example a common error is the misspelling of a dataportal, which displays a handled error when pulling a report with a misspelled dataportal. 
 
 ![](/images/error-reports/01.jpg)
 
@@ -40,83 +40,6 @@ If evaluating ReportRange, ReportFixed, or ReportVariable then click  **Pull Dat
 If evaluating ReportSave then click  **Save Data Event**
 
 If evaluating ReportDrill then click  **Drill Data Event**
-
-Here is the example validation report for a pull data event on the customer aging report: 
-    
-    
-                    Validation Report on event 'PULL' for tab 'CustomerAging' and selected cell 'E14'
-    =========================================================================================
-    ACTION ITEM:
-    Action #1: [Cell C6] "ReportRange"
-    On Actions: Pull,ClearPull
-    Formula: =ReportRange("NorthwindCustomers",23:24,2:2,,Param(C17,C18,C19),TRUE,FALSE)
-    Instruction Range: [Not entered]
-    ErrorText: [No Errors] >>>>>>>>>> Data Range Instruction 
-    
-    <====== This section is the exact Instructions sent to Interject from the Report =======> 
-    
-    DataPortal: NorthwindCustomers <---Argument Setting in the Report Range Formula that defines the procedure that you are using to pull data from the database 
-    
-    Connection: <---The name of the database that you are connecting to 
-    
-    ColDefRange: 2:2 <---Argument Setting in the Report Range Formula that sets the location for the placement of columns from the database to Excel 
-    
-    TargetRange: 23:24 <---Argument Setting in the Report Range Formula that sets the location that Interject will populate data in 
-    
-    FormatRange: 23:23 <---Argument Setting in the Report Range Formula that sets the location of the Formatting Range for the report 
-    
-    Parameter String: Market^C17|^C18|^C19 <---Argument Setting in the Report Range Formula that sets where the Parameter Values on the Report are located 
-    
-    UseEntireRow: True <---Argument Setting in the Report Range Formula that defaults to "True" 
-    
-    PutFieldNamesAtTop: False <---Argument Setting in the Report Range Formula that defaults to "False" 
-    
-    RetainRowColumns: [Blank] <---Argument Setting in the Report Range Formula that defaults to "Blank" 
-    
-    InsertNewRowsWithin: False <---Argument Setting in the Report Range Formula that defaults to "False" 
-    
-    UseTopSpacerRow: False <---Argument Setting in the Report Range Formula that defaults to "False" 
-    
-    Parameter Break Out: <---This section defines the parameters 
-    
-    Formula Param Name [#1]: @CompanyName	<---This is the value of the first parameter defined in the parameter string 
-    
-    Input/Output: input <---Determines whether the parameter is an input or an output 
-    
-    DataType: nvarchar <---Determines the data type of the parameter 
-    
-    Input Errors: None <---Checks to see if there are errors on the input values for the parameter 
-    
-    Set Value: [Blank] <---Determines if the parameter has a default value "" 
-    
-    Formula Param Name [#2]: @ContactName	<---This is the value of the second parameter defined in the parameter string 
-    
-    Input/Output: input <---Determines the direction of the parameter 
-    
-    DataType: varchar <---Determines the data type of the parameter 
-    
-    Input Errors: None <---Checks to see if there are errors on the input values for the parameter 
-    
-    Set Value: [Blank] <---Determines if the parameter has a default value "" 
-    
-    Formula Param Name [#3]: @CustomerID	<---This is the value of the third parameter defined in the parameter string 
-    
-    Input/Ouput: input <---Determines the data type of the parameter 
-    
-    DataType: varchar <---Determines the data type of the parameter 
-    
-    Input Errors: None <---Checks to see if there are errors on the input values for the parameter 
-    
-    Set Value: [Blank] <---Determines if the parameter has a default value "" 
-    >>>> System Params Not in Formula 
-    <=====This section details the system parameters set in the dataportal=====> 
-    System Param Name: @Interject_NTLogin 
-    Input/Ouput: input 
-    DataType: varchar Length: 0 Set Value: [Blank] "" 
-    System Param Name: @Interject_LocalTimeZoneOffset 
-    Input/Output: input 
-    DataType: money Length: 0 Set Value: [Blank] "" 
-                  
 
 Open the report you need to troubleshoot, this example will use the [ CustomerAging ](/wGetStarted/L-Create-CustomerAging.html) report. 
 
@@ -346,3 +269,4 @@ This SQL query can be run using any T-SQL environment (i.e. _Microsoft SQL Serve
 
   
 
+[1]:/images/error-reports/S1.txt

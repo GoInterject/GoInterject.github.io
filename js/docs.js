@@ -4,6 +4,7 @@ var sidebarBottom = sidebarObj.getBoundingClientRect().bottom;
 var footerTop = document.getElementsByClassName("footer")[0].getBoundingClientRect().top;
 var headerOffset = document.getElementsByClassName("container-fluid")[0].getBoundingClientRect().bottom;
 
+
 // ensure that the left nav visibly displays the current topic
 var current = document.getElementsByClassName("active currentPage");
 var body = document.getElementsByClassName("col-content content");
@@ -107,7 +108,7 @@ function walkTree(tree)
         tempCaretNav.push('<a onclick="navClicked(' + totalTopics + ')" data-target="#item' + totalTopics + '" data-toggle="collapse" data-parent="#stacked-menu" style="float:right;"');
         
         // check if the page has a defined link
-        console.log('tree path:  ' + tree[j].path);
+        //console.log('tree path:  ' + tree[j].path);
         if (tree[j].path != undefined){
           tempTitleNav.push('<a href="' + tree[j].path + '" style="float:left;width:60%;word-wrap: break-word;"');
         }
@@ -184,7 +185,7 @@ function renderNav(docstoc) {
   }
   if (outputLetNav.length==0)
   {
-    console.log("outputletnav is length zero");
+    //console.log("outputletnav is length zero");
     // didn't find the current topic in the standard TOC; maybe it's a collection;
     for (var key in collectionsTOC)
     {
@@ -304,18 +305,6 @@ function eraseCookie(name) {
     createCookie(name,"",-1);
 }
 
-
-// if (readCookie("night") == "true") {
-//   applyNight();
-//   $('#switch-style').prop('checked', true);
-// } else {
-//   applyDay();
-//   $('#switch-style').prop('checked', false);
-// }
-
-
-
-
 /*
  *
  * toggle menu *********************************************************************
@@ -417,36 +406,6 @@ $('ul.nav li.dropdown').hover(function() {
   $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
 });
 
-/*
- *
- * swapStyleSheet*********************************************************************
- *
- */
-
-// function swapStyleSheet(sheet) {
-//     document.getElementById('pagestyle').setAttribute('href', sheet);
-// }
-
-// function applyNight()
-// {
-//   $( "body" ).addClass( "night" );
-// }
-
-// function applyDay() {
-//   $( "body" ).removeClass( "night" );
-// }
-
-// $('#switch-style').change(function() {
-
-//     if ($(this).is(':checked')) {
-//         applyNight();
-//         createCookie("night",true,999)
-//     } else {
-//         applyDay();
-//     //     swapStyleSheet('/css/style.css');
-//         eraseCookie("night")
-//     }
-// });
 
 
 /*
@@ -486,25 +445,7 @@ window.onload = function() {
     var group = $(this).attr('data-group');
     $('.nav-tabs > li > a[data-group="'+ group +'"]').tab('show');
   })
-
-  // isArchive is set by logic in archive.js
-  if ( isArchive == false ) {
-    //console.log("Showing content that should only be in the current version.");
-    // Hide elements that are not appropriate for archives
-    // PollDaddy
-    $('#ratings-div').css("visibility","visible");
-    //console.log("Ratings widget shown.");
-    // Archive drop-down
-    $('.ctrl-right .btn-group').css("visibility","visible");
-    //console.log("Archive widget shown.");
-    // Swarch
-    $('.search-form').css("visibility","visible");
-    //console.log("Search widget shown.");
-    // Page edit link
-    $('.feedback-links li').first().css("visibility","visible");
-    //console.log("Page edit link shown.");
-  } else {
-    //console.log("Keeping non-applicable elements hidden.");
-  }
+  $('.ctrl-right .btn-group').css("visibility","visible");
 };
+
 

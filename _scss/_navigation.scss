@@ -77,7 +77,6 @@
 
 .nav-secondary {
     background: $bg-secondary;
-    box-shadow: 0 1px 13px rgba(0, 0, 0, 0.24);
     height: 55px;
 }
 
@@ -89,14 +88,12 @@
 */
 
 .nav-secondary-tabs {
-    background-color: $bg-secondary-tabs;
     bottom: 0;
     height: 55px;
     position: absolute;
     width: 100%;
     &.affix {
         background: $bg-secondary;
-        box-shadow: 0 1px 13px rgba(0, 0, 0, 0.24);
         top: 0;
         position: fixed;
         z-index: 100;

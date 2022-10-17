@@ -49,7 +49,7 @@ Now rename the tab something that represents the data, such as **TargetForPivotT
 
 In the Month column in cell J21, type **=TEXT(I21,"mm")**
 
-In the Year column in K21, type **=YEAR($I21)**
+In the Year column in K21, type **=TEXT($I21,"yyyy")**
 
 In the Year-Mth column in L21, type **=TEXT(I21,"yyyy-mm")**
 
@@ -57,7 +57,7 @@ In the Year-Mth column in L21, type **=TEXT(I21,"yyyy-mm")**
 
 <br>
 
-**Step 6:** Next, you are going to add two parameters to the report by inserting two rows below **Show Unapplied Only** and labeling them **Begin Date** and **End Date**.  
+**Step 6:** Next, you are going to add two parameters to the report by inserting two rows below **Show Unapplied Only** and labeling them **Begin Date:** and **End Date:**.  
 ![](/images/L-Create-PivotTable/07.jpg)
 
 <br> 
@@ -104,22 +104,27 @@ In the Year-Mth column in L21, type **=TEXT(I21,"yyyy-mm")**
 <br> 
 
 
-**Step 12:** Now that you have entered the fields, you can use [ **Pull Data** ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) on the report, filtering for companies with **Market** in their names. First type **Market** in the filter cell C1 
+**Step 12:** Now that you have entered the fields, you can use [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) on the report, filtering for companies with **Market** in their names. First type **Market** in the filter cell C1 and then **Pull Data**. 
 
 ![](/images/L-Create-PivotTable/14.jpg)
 
 <br>
 
-**Step 13:** In the screenshot below, you can see there are four steps to preparing the contents of the pivot table. 
+**Step 13:** Highlight the cells B21 to M122. **Important:** Be sure to include row 21, the column labels on the top of the range, and include the bottom anchor row, which is one row past the last customer record. The anchor row is important since it will grow and shrink as the data is pulled and cleared. Exclude the Paid? column from the table range. 
+
+![](/images/L-Create-PivotTable/14b.png)
+
+<br>
+
+**Step 14:** In the screenshot below, you can see there are four steps to preparing the contents of the pivot table. 
 
 1. Select the Insert ribbon as noted below. 
 2. Within the Insert ribbon, click the PivotTable menu item so the Create PivotTable window appears. 
-3. Using the **Select a table or range** box, select all the columns and rows containing the data as noted below. **Important:** Be sure to include row 21, the column labels on the top of the range, and include the bottom anchor row, which is one row past the last customer record. The anchor row is important since it will grow and shrink as the data is pulled and cleared. Exclude the Paid? column from the table range. 
+3. Ensure the range **TargetForPivotTable!$B$21:$M$122** is selected in the **Select a table or range** box. 
 4. Click the OK button, and a new tab will be created with the new pivot table. 
 
 
-
-![](/images/L-Create-PivotTable/15.jpg)
+![](/images/L-Create-PivotTable/15.png)
 
 <br> 
 
@@ -139,6 +144,12 @@ In the Year-Mth column in L21, type **=TEXT(I21,"yyyy-mm")**
 
 <br> 
 
+**Step 3:** Rename the tab "Pivot" and you can customize the look by clicking **Design** and then expand the table previews and select a color theme.
+
+![](/images/L-Create-PivotTable/17b.png)
+
+<br> 
+
 
 ###  Customizing the Pivot Table 
 
@@ -152,7 +163,7 @@ In the Year-Mth column in L21, type **=TEXT(I21,"yyyy-mm")**
 <br> 
 
 
-**Step 2:** Now set up the [ ReportRun() ](/wIndex/ReportRun.html) function. This will cause the target sheet to perform a [ **Pull Data** ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) or [ **Clear Data** ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) when Pull Data is triggered from the pivot table worksheet. 
+**Step 2:** Now set up the [ ReportRun() ](/wIndex/ReportRun.html) function. This will cause the target sheet to perform a [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) or [ **Clear Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) when Pull Data is triggered from the pivot table worksheet. 
 
 ![](/images/L-Create-PivotTable/19.png)
 
@@ -179,30 +190,40 @@ On a second line under row 4 (insert new row if needed), you will do the same fo
 
 <br>
 
-**Step 5:** Now that the ReportRange() fields are prepared, you can add filters for the searches. Here you will add Company Name, Contact ID, CustomerID, Show Unapplied Only, Begin Date, End Date. Both parameter fields for the pivot table sheet and the target sheet should be identical. These are the same filters as seen in the worksheet **TargetForPivotTable**. 
+**Step 5:** Now that the ReportRange() fields are prepared, you can add filters for the searches. Rename the title to "Pivot Table For Customer Transactions" as seen below. Also, add the filters Company Name, Contact Name, CustomerID, Show Unapplied Only, Begin Date, and End Date. The filters in the **Pivot** tab should match the filters in the **TargetForPivotTable** tab. 
 
-![](/images/L-Create-PivotTable/23.jpg)
+**Note**: Remember there are 2 hidded rows that you have to match.
 
-<br> 
-
-
-**Step 6:** In C14, for the Company Name, type **=if(Pivot!B11="","",Pivot!B11)**. This formula will make the filters equal between pages and if the Pivot worksheet filter is blank, it will be blank as well. Normally, Excel will make the result **0** if not handled with this formula. Copy down the formula in C14 through C19 so the other filters are linked as well. 
-
-![](/images/L-Create-PivotTable/24.jpg)
+![](/images/L-Create-PivotTable/23.png)
 
 <br> 
 
 
-**Step 7:** Now go back to the pivot table and make sure it is working properly. Enter the following filters to check the pull. 
+**Step 6:** Navigate to cell C14 of the **TargetForPivotTable** tab. Ensure the type is General.
 
-![](/images/L-Create-PivotTable/25.jpg)
+
+![](/images/L-Create-PivotTable/23b.png)
+
+<br> 
+
+
+**Step 7:** For the Company Name, type **=if(Pivot!B12="","",Pivot!B12)**. This formula will make the filters equal between pages and if the Pivot worksheet filter is blank, it will be blank as well. Normally, Excel will make the result **0** if not handled with this formula. Copy cell C14 and paste it through C19 so the other filters are linked as well. 
+
+![](/images/L-Create-PivotTable/24.png)
+
+<br> 
+
+
+**Step 8:** Now go back to the pivot table and make sure it is working properly. Enter the following filters to check the pull. 
+
+![](/images/L-Create-PivotTable/25.png)
 
 <br> 
 
 
 Now you can see that the table only pulled data from transactions occurring in 1997, so the filters, ReportRun(), and pivot table are working as they should. 
 
-![](/images/L-Create-PivotTable/26.jpg)
+![](/images/L-Create-PivotTable/26.png)
 
 <br> 
 

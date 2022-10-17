@@ -9,6 +9,8 @@ description: This is the base installer
 
 INTERJECT aims to make the installation process as simple and painless as possible. This installation is intended for single user computers. 
 
+**Note:** If you are installing on a Windows Server machine, [click here](/wAbout/SharedComputer.html) for installing on a shared computer.
+
 ###  Installing INTERJECT 
 
 **Step 1:** Navigate to  <a target="blank" href="https://portal.gointerject.com/login.html">https://portal.gointerject.com</a>
@@ -18,82 +20,59 @@ INTERJECT aims to make the installation process as simple and painless as possib
 **Step 3:** Once logged in, go to the download page. 
 
 ![](/images/SingleUser/02.jpg)
-
-  
-
+<br>
 
 **Step 4:** Click the **Installer** button to begin. 
 
-![](/images/SingleUser/03.jpg)
-
-  
-
+![](/images/SingleUser/03.png)
+<br>
 
 **Step 6:** Once the download is complete, run the install file. This will look different in every browser. We've given examples of the most common browsers below. 
 
 **Google Chrome** : 
 
-![](/images/SingleUser/04.jpg)
-
-  
-
+![](/images/SingleUser/04.png)
+<br>
 
 **Mozilla Firefox** : 
 
-![](/images/SingleUser/06.jpg)
-
-  
-
+![](/images/SingleUser/05.png)
+<br>
 
 **Microsoft** **Edge** : 
 
-![](/images/SingleUser/07.jpg)
-
+![](/images/SingleUser/07.PNG)
+<br>
   
-
-
 **Microsoft Internet Explorer**: 
 
-![](/images/SingleUser/08.jpg)
-
-  
-
+![](/images/SingleUser/08.png)
+<br>
 
 **Step 7:** Running the file will launch the INTERJECT Excel Add-In Setup Wizard, which will guide you through the Install Process. Select **Next.**
 
-![](/images/SingleUser/09.jpg)
-
-  
-
+![](/images/SingleUser/09.png)
+<br>
 
 **Step 8:** Read and accept the **End-User License Agreement,** then select **Next.**
 
-![](/images/SingleUser/10.jpg)
-
-  
-
+![](/images/SingleUser/10.png)
+<br>
 
 **Step 9:** Choose the **Destination Folder** for your installation, then select **Next**. 
 
-![](/images/SingleUser/11.jpg)
-
-  
-
+![](/images/SingleUser/11.png)
+<br>
 
 **Step 10:** Click **Install**. 
 
-![](/images/SingleUser/12.jpg)
-
-  
-
+![](/images/SingleUser/12.png)
+<br>
 
 **Step 11:** Once the installation is finished, the installer will tell you if it is complete 
 
 ![](/images/SingleUser/13.jpg)
 
-
-
 <a href="https://docs.gointerject.com/wAbout/Logging-In.html#before-using-interject-heres-how-to-login"><h2>Continue Here For Login Information</h2></a>
-
 
 If you run into any issues, email us at [ help@gointerject.com ](mailto:help@gointerject.com). 

@@ -35,6 +35,7 @@ plugins:
   - jekyll-relative-links
   - jekyll-sitemap
   - jekyll-seo-tag
+  - parse_block_html
 
   # - jekyll-responsive-image
 
@@ -82,9 +83,15 @@ defaults:
 #
 # We specify the directory for Jekyll so we can use @imports.
 sass:
-  sass_dir:          _scss
+  sass_dir:          ./_scss
   style:            :compressed
 
 repository:
   GoInterject/gointerject
-  
+
+encoding:
+  UTF-8
+
+exclude: [vendor]
+
+github: [metadata]

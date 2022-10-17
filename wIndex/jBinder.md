@@ -31,7 +31,7 @@ An example of this function is currently in construction in our documentation la
 
 | Argument Name | Example Mapping | Explanation |
 |---------------|-----------------|-------------|
-| FunctionName  | `=jBinder()`     |This is the excel function name used to call the function. It is only meant to be utilized directly on an Excel report and it is not designed to be embedded or have any embedded functions within it.|
+| FunctionName  | =jBinder()     |This is the excel function name used to call the function. It is only meant to be utilized directly on an Excel report and it is not designed to be embedded or have any embedded functions within it.|
 | OptionName    | "TabPrefix"     |This option name is used to append the TargetCell value to the beginning of the sheets created by the Create Binder tool. |
 | TargetCell    | "PL_"           |A string value that you customize.|
 
@@ -39,7 +39,7 @@ An example of this function is currently in construction in our documentation la
 
 | Argument Name |  Example Mapping  | Explanation |
 |---------------|-------------------|-------------|
-| Function Name | `=jBinder() `       |This is the excel function name used to call the function. It is only meant to be utilized directly on an Excel report and it is not designed to be embedded or have any embedded functions within it.|
+| Function Name | =jBinder()       |This is the excel function name used to call the function. It is only meant to be utilized directly on an Excel report and it is not designed to be embedded or have any embedded functions within it.|
 | OptionName    | "Segement1"      |The segment that will be iterated over by the Create Binder tool to create new tabs which will be Segment1|
 | TargetCell    | L9                |The value that will determine which items in the segment to create the binder tabs out of.|
 
@@ -47,7 +47,7 @@ An example of this function is currently in construction in our documentation la
 
 | Argument Name |  Example Mapping  | Explanation |
 |---------------|-------------------|-------------|
-| Function Name | `=jBinder() `       |This is the excel function name used to call the function. It is only meant to be utilized directly on an Excel report and it is not designed to be embedded or have any embedded functions within it.|
+| Function Name | =jBinder()       |This is the excel function name used to call the function. It is only meant to be utilized directly on an Excel report and it is not designed to be embedded or have any embedded functions within it.|
 | OptionName    | "SkipSheetMarker" |Calls the Create Binder tool to set the Skip Sheet Marker check box to either a checked state or an unchecked state.|
 | TargetCell    | "TRUE"            |Determines what the check state is in for the Skip Sheet Marker Option.|
 

@@ -40,6 +40,7 @@ table>tbody>tr:nth-of-type(even) {
 td,
 th {
     padding: 10px;
+    vertical-align: top;
 }
 
 th,
@@ -47,6 +48,7 @@ td.th {
     font-weight: bold;
     padding: 7px 10px 7px 10px;
     text-align: left;
+
 }
 
 thead {
@@ -136,7 +138,7 @@ input[type=text],
 input[type=text] {
     background: rgba(0, 0, 0, 0.17) url(/images/search.png) no-repeat;
     background-position: 10px 9px;
-    border: 1px solid transparent;
+    border: 0;
     box-shadow: none;
     transition: all 0.2s ease;
 }
@@ -217,7 +219,7 @@ div#autocompleteResults {
     padding: 20px 0 15px 0px;
     margin: 10px 0 0 0;
     position: absolute;
-    width: 600px!important;
+    width: 600px;
     z-index: 9999;
 }
 
