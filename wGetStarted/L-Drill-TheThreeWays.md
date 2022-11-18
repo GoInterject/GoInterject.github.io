@@ -2,18 +2,18 @@
 title: The Three Ways to Drill
 layout: custom
 keywords: [hyperlink, drill, list, using, double click drill]
-description: INTERJECT facilitates three different ways to drill. Each method is easy to choose the best one different situations.
+description: Interject facilitates three different ways to drill. Each method is easy to choose the best one different situations.
 ---
 * * *
 
 ##  **Overview**
 
-INTERJECT facilitates three different ways to drill. Each method is easy to choose the best one different situations. 
+Interject facilitates three different ways to drill. Each method is easy to choose the best one different situations. 
 
 
 ###  The Menu Method: 
 
-The [ Drill on Data ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) menu item is available in every report containing a drill function. For this example, you will drill using the [ Customer Aging demo ](/wAbout/Customer-Aging.html). 
+The [ Drill on Data ](/wPortal/Interject-Ribbon-Menu-Items.html) menu item is available in every report containing a drill function. For this example, you will drill using the [ Customer Aging demo ](/wAbout/Customer-Aging.html). 
 
 ![](/images/L-Drill-TheThreeWays/01.png)
 
@@ -23,7 +23,7 @@ The [ Drill on Data ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) menu item is av
 There are four steps to using the menu. 
 
 1. First, select the cell to drill on. In this example you will chose theSave-a-lot Markets customer's 90 days balance. 
-2. Select the **Drill on Data** menu in the INTERJECT ribbon.   
+2. Select the **Drill on Data** menu in the Interject ribbon.   
 3. Select the drill option in the Data Drill window.  In this example, chose **Drill to Aging Detail**.    
 4. Complete the drill by clicking **Do Drill**. 
 
@@ -42,14 +42,14 @@ This automatically takes you to the desired destination and usually pulls the da
 
 ###  The Hyperlink Method: 
 
-The hyperlink drill method is another option. It is one of the simplest ways for a user to drill in INTERJECT and makes it intuitive for the user to know where drills are available. For this example, you will drill using the [ Inventory Reports Demo ](/wAbout/Inventory-Reports.html) seen below. 
+The hyperlink drill method is another option. It is one of the simplest ways for a user to drill in Interject and makes it intuitive for the user to know where drills are available. For this example, you will drill using the [ Inventory Reports Demo ](/wAbout/Inventory-Reports.html) seen below. 
 
 ![](/images/L-Drill-TheThreeWays/04.png)
 
 <br> 
 
 
-By clicking the hyperlink cell, it will automatically trigger the INTERJECT drill. Since there is only one drill option, the Data Drill window will not appear as in previously shown examples. If multiple drill options are present, the Data Drill window will appear so the user can select which drill option to use. The animated GIF below illustrates how the hyperlink drill works in INTERJECT. 
+By clicking the hyperlink cell, it will automatically trigger the Interject drill. Since there is only one drill option, the Data Drill window will not appear as in previously shown examples. If multiple drill options are present, the Data Drill window will appear so the user can select which drill option to use. The animated GIF below illustrates how the hyperlink drill works in Interject. 
 
 ![](/images/L-Drill-TheThreeWays/05.gif)
 
@@ -67,7 +67,7 @@ The double click method is similar to the hyperlink method in that it reduces th
 <br> 
 
 
-The animated GIF below illustrates how the double click method works. The user simply double clicks on the cell to drill on and the Data Drill window appears. In this example, there are multiple drill options so the Data Drill window appears to let the user choose which to use. If only one drill option was available, INTERJECT would have went directly to the target. 
+The animated GIF below illustrates how the double click method works. The user simply double clicks on the cell to drill on and the Data Drill window appears. In this example, there are multiple drill options so the Data Drill window appears to let the user choose which to use. If only one drill option was available, Interject would have went directly to the target. 
 
 ![](/images/L-Drill-TheThreeWays/07.gif)
 

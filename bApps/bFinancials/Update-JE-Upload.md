@@ -1,8 +1,8 @@
 ---
-title: INTERJECT JE Upload - Update Manager
+title: Interject JE Upload - Update Manager
 layout: custom
 keywords: [Account, Epicor, Companies, JEUpload]
-description: INTERJECT™ Journal Entry Upload for Epicor Enterprise (This would cover topics that are specific to integration with Epicor Enterprise, and would potentially be different for each ERP) 
+description: Interject™ Journal Entry Upload for Epicor Enterprise (This would cover topics that are specific to integration with Epicor Enterprise, and would potentially be different for each ERP) 
 ---
 
 <h2>Interject Journal Upload - Epicor Enterprise<br>

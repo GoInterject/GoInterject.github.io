@@ -1,5 +1,5 @@
 ---
-title: INTERJECT Data Exchanges
+title: Interject Data Exchanges
 layout: custom
 keywords: [API Communicationa, Security, Privacy]
 description: Interject's data exchanges and active API endpoints. 

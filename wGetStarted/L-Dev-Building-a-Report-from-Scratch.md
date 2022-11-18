@@ -22,13 +22,13 @@ Set **FreezePanesCell = A26**  and **AnchorViewCell = A18**:
 
 Now that you have our freeze panes set up, you can start with formatting the spreadsheet.
 
-INTERJECT uses the hidden area of the frozen pane to define INTERJECT report functions and to set up the formatting of the report.
+Interject uses the hidden area of the frozen pane to define Interject report functions and to set up the formatting of the report.
 
 ### Formatting the Behind the Scenes Section
 
-You will start by setting up the titles of the sections that hold the different report formulas. This formatting is standard across all INTERJECT reports.
+You will start by setting up the titles of the sections that hold the different report formulas. This formatting is standard across all Interject reports.
 
-**Step 1:** Start by selecting row 1 and coloring it dark blue (#1F4E78). This is the color that INTERJECT uses for titles of report definition sections.
+**Step 1:** Start by selecting row 1 and coloring it dark blue (#1F4E78). This is the color that Interject uses for titles of report definition sections.
 
 	1. First, click on the “1” that denotes row 1 to highlight the entire row.
 	2. Click the paint bucket to fill the color.
@@ -113,7 +113,7 @@ Name the current worksheet **“CustomerOrderHistory”** and delete any other w
 
 ### Adding ReportRange() to the Report
 
-**Step 1:** Add our first INTERJECT report formula to the report. You will start with **ReportRange()**. ReportRange() is a report formula used to PULL data into a defined *range* of a report from the Data Portal. ReportRange() can be used with formatting to format the data returned from the Data Portal into the spreadsheet. Read more about ReportRange() [here](https://docs.gointerject.com/wIndex/ReportRange.html#function-summary).
+**Step 1:** Add our first Interject report formula to the report. You will start with **ReportRange()**. ReportRange() is a report formula used to PULL data into a defined *range* of a report from the Data Portal. ReportRange() can be used with formatting to format the data returned from the Data Portal into the spreadsheet. Read more about ReportRange() [here](https://docs.gointerject.com/wIndex/ReportRange.html#function-summary).
 
 Type **“=ReportRange()”** in cell **C10** then click on the function builder icon.
 
@@ -122,15 +122,15 @@ Type **“=ReportRange()”** in cell **C10** then click on the function builder
 As you can see, DataPortal is the first parameter that will must provide ReportRange() so that it knows where to pull in the data from. Type **“NorthwindCustomerOrders_MyName”** into the DataPortal parameter box for now.
 
 ![](/images/L-Dev-Report_from_Scratch/28.png)
-You will now switch to configuring an INTERJECT Data Connection, and a Data Portal that you can pull from using ReportRange().
+You will now switch to configuring an Interject Data Connection, and a Data Portal that you can pull from using ReportRange().
 
 ### Setting Up the First Data Connection
 
 In order to continue our work from here, you need to set up the back-end Data Portal that ReportRange() will be using. For now, you will pause working on the front-end Excel report to configure the Data Portal and Data Connection that ReportRange() will use in our report.
 
-You will start with the Data Connection. INTERJECT Data Connections enable users to connect to a database in order to pull data out of that database based on criteria specified in stored procedures which are set up with Data Portals. An overview of Data Connections and Data Portals can be found [here](https://docs.gointerject.com/wPortal/The-INTERJECT-Website-Portal.html#overview).
+You will start with the Data Connection. Interject Data Connections enable users to connect to a database in order to pull data out of that database based on criteria specified in stored procedures which are set up with Data Portals. An overview of Data Connections and Data Portals can be found [here](https://docs.gointerject.com/wPortal/The-Interject-Website-Portal.html#overview).
 
-**Step 1: Logging in** Start by navigating to the INTERJECT portal site ([here](https://portal.gointerject.com/)) and logging in.
+**Step 1: Logging in** Start by navigating to the Interject portal site ([here](https://portal.gointerject.com/)) and logging in.
 
 ![](/images/L-Dev-Report_from_Scratch/29.png)
 **Step 2: Create the connection:** Create a new data connection by clicking the New Connection button.
@@ -151,7 +151,7 @@ Substitute in your server and database name in italicized parts of the following
 
 **Step 1: Create the Data Portal** Now, you will create the Data Portal that allows us to actually pull data from the Data Connection that you made above.
 
-Data Portals are provided as a way to connect to specific stored procedures within the Data Connection to an existing database. It is a finer-grain level of control, and connects to a single stored procedure on the database you connect to through the provided Data Connection. You can have multiple Data Portals connected to one Data Connection, but not vice-versa. For more, see [the website portal documentation](https://docs.gointerject.com/wPortal/The-INTERJECT-Website-Portal.html#-data-connections-).
+Data Portals are provided as a way to connect to specific stored procedures within the Data Connection to an existing database. It is a finer-grain level of control, and connects to a single stored procedure on the database you connect to through the provided Data Connection. You can have multiple Data Portals connected to one Data Connection, but not vice-versa. For more, see [the website portal documentation](https://docs.gointerject.com/wPortal/The-Interject-Website-Portal.html#-data-connections-).
 
 Navigate again to [the portal site](https://portal.gointerject.com/) and choose Data Portals.
 

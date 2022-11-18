@@ -89,7 +89,7 @@ description:
 > 
 > * **Name:** A unique friendly name used when connecting a Data Portal to the Data Connection
 > * **Description** (optional): description of what the connection string is connecting to
-> * **Connection String:** used by INTERJECT to connect to the specified server & database
+> * **Connection String:** used by Interject to connect to the specified server & database
 > "Server=Scotty-Test;Database=Northwind Integrated Security = SSPI;”
 >
 

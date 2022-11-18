@@ -6,7 +6,7 @@ description: Provides an easy method to string multiple Pair() functions togethe
 ---
 ##  Function Summary 
 
-Provides an easy method to string multiple [ Pair() ](Pair.html) functions together in a single string argument with each Pair() delimited by a comma. This function is used as a helper function for both [Formatting](Formatting-Functions-Landing.html) and [Data](Data-Functions-Landing.html) functions. It is used to consolidate multiple Pair() functions so that they can all be applied by the same INTERJECT function. To see the functions that PairGroup() can be embedded in, view the **Usable In These Functions** section of this page. This function does have a Pair() limit of 34 Pairs. There can only be one PairGroup() embed so you cannot embed a PairGroup() inside another PairGroup().
+Provides an easy method to string multiple [ Pair() ](Pair.html) functions together in a single string argument with each Pair() delimited by a comma. This function is used as a helper function for both [Formatting](Formatting-Functions-Landing.html) and [Data](Data-Functions-Landing.html) functions. It is used to consolidate multiple Pair() functions so that they can all be applied by the same Interject function. To see the functions that PairGroup() can be embedded in, view the **Usable In These Functions** section of this page. This function does have a Pair() limit of 34 Pairs. There can only be one PairGroup() embed so you cannot embed a PairGroup() inside another PairGroup().
 
 ###  Function Arguments   
 

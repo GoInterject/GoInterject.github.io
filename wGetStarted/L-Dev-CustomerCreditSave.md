@@ -2,17 +2,17 @@
 title: "Lab Developer: Customer Credit Save"
 layout: custom
 keywords: [save, example, walkthrough, customer aging,]
-description: "This section will detail a full review of how the INTERJECT save feature works"
+description: "This section will detail a full review of how the Interject save feature works"
 ---
 ##  **Overview:**
 
-This section will detail a full review of how the INTERJECT save feature works. Start by using the Customer Aging example. This lab will show how to design three user input fields into an existing report. The INTERJECT platform will assist in creating a stored procedure that can be used in SQL Server to help facilitate the process. Other database engines or API methods can be used for the save process as well, but for simplicity you are focusing on SQL Server and a database stored procedure as the data source. You will be using the Customer Aging report, as you have already become familiar with its [ business use case ](/wAbout/Customer-Aging.html). 
+This section will detail a full review of how the Interject save feature works. Start by using the Customer Aging example. This lab will show how to design three user input fields into an existing report. The Interject platform will assist in creating a stored procedure that can be used in SQL Server to help facilitate the process. Other database engines or API methods can be used for the save process as well, but for simplicity you are focusing on SQL Server and a database stored procedure as the data source. You will be using the Customer Aging report, as you have already become familiar with its [ business use case ](/wAbout/Customer-Aging.html). 
 
 ###  Setting up the Data Portals: 
 
 This report uses the same database as  [**Dev: Customer Aging**](/wGetStarted/L-Dev-CustomerAging.html) and other reports, you do not need to create another data connection. Use the same connection as in the previous lab. The Data Portals for saving data are very similar to their Pull counterparts. 
 
-**Step 1:** Navigate to the [INTERJECT Portal](https://portal.gointerject.com/) Website, then select  **Data Portals** in the sidebar menu. 
+**Step 1:** Navigate to the [Interject Portal](https://portal.gointerject.com/) Website, then select  **Data Portals** in the sidebar menu. 
 
 ![](/images/L-Dev-CustAgingSave/01.jpg)
 <br>
@@ -61,7 +61,7 @@ This report uses the same database as  [**Dev: Customer Aging**](/wGetStarted/L-
 
 ###  Setting up System Parameters: 
 
-System Parameters are similar to Formula Parameters, but the names are reserved for INTERJECT. To review the System parameters and their purposes, go to the System Parameters section of the [ Data Portal ](/wPortal/Data-Portals.html) page. 
+System Parameters are similar to Formula Parameters, but the names are reserved for Interject. To review the System parameters and their purposes, go to the System Parameters section of the [ Data Portal ](/wPortal/Data-Portals.html) page. 
 
 In this example you are going to use  **Interject_ReturnError** and  **Interject_RequestContext**. 
 
@@ -196,7 +196,7 @@ In this example you are going to use  **Interject_ReturnError** and  **Interject
 **Step 1:** First, select the  **Pull** button and pull the data into the spreadsheet. 
 
 
-**Step 2:** In the excel sheet, click the cell with the ReportSave formula. Then  click  **Advanced Menu** in the INTERJECT Ribbon. This button is a toggle, so if it is currently showing  **Simple Menu** do not click it. 
+**Step 2:** In the excel sheet, click the cell with the ReportSave formula. Then  click  **Advanced Menu** in the Interject Ribbon. This button is a toggle, so if it is currently showing  **Simple Menu** do not click it. 
 
 
 **Step 3:** Then, click the  **System** dropdown and select  **View SQL Template for ActiveCell** . Make sure you have the ReportSave cell selected. 

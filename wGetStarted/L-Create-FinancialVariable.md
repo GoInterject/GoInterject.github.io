@@ -15,9 +15,9 @@ The  [ ReportVariable() ](/wIndex/ReportVariable.html) function is ideal for fin
 
 ###  Pulling Financial Data with FinCube Dataportal 
 
-To get started you will need to learn how to pull financial data from the INTERJECT Financials for Spreadsheets application. You will initially use [ ReportRange() ](/wIndex/ReportRange.html) to pull a simple list of balances by account. 
+To get started you will need to learn how to pull financial data from the Interject Financials for Spreadsheets application. You will initially use [ ReportRange() ](/wIndex/ReportRange.html) to pull a simple list of balances by account. 
 
-**Step 1:** Open a new worksheet and choose the [ **Report Builder** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder) from the INTERJECT ribbon. For this example you will be using the [ **Interject_FinCube** ](/wIndex/FinCube---The-Financial-Cube.html) dataportal. Select **Demo_Interject_FinCube** from the dataportal list and click the **Build Report Formula** button. 
+**Step 1:** Open a new worksheet and choose the [ **Report Builder** ](/wGetStarted/Interject-Ribbon-Menu-Items.html#report-builder) from the Interject ribbon. For this example you will be using the [ **Interject_FinCube** ](/wIndex/FinCube---The-Financial-Cube.html) dataportal. Select **Demo_Interject_FinCube** from the dataportal list and click the **Build Report Formula** button. 
 
 ![](/images/L-Create-FinancialVar/01.png)
 
@@ -294,7 +294,7 @@ Now you will convert ReportRange() to ReportVariable() to populate each financia
 <br> 
 
 
-Next, you must type **AccountType** in cell B2. This is purposefully above the RowDefRange you defined a moment ago. By placing this column name in that column, INTERJECT will expect that column value to define how data rows are included in each of the subtotal sections. 
+Next, you must type **AccountType** in cell B2. This is purposefully above the RowDefRange you defined a moment ago. By placing this column name in that column, Interject will expect that column value to define how data rows are included in each of the subtotal sections. 
 
 ![](/images/L-Create-FinancialVar/41.png)
 
@@ -336,7 +336,7 @@ Once the report is functioning and each subtotal section is expanding with data 
 
 <br> 
 
-**Point 4:** The Leftovers section: An important element for financial reports is a means to check the totals. INTERJECT provides a method to ensure all data is presented. Including a **Leftovers** section at the bottom of the report will help provide assurance if all data did not get assigned to any subtotal section in the report created. 
+**Point 4:** The Leftovers section: An important element for financial reports is a means to check the totals. Interject provides a method to ensure all data is presented. Including a **Leftovers** section at the bottom of the report will help provide assurance if all data did not get assigned to any subtotal section in the report created. 
 
 ![](/images/L-Create-FinancialVar/47.png)   
 

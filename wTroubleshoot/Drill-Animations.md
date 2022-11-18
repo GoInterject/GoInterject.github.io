@@ -2,13 +2,13 @@
 title: Troubleshooting Excel Animations
 layout: custom
 keywords: [drill, slow, slow drill, freeze, crash, disable, animations]
-description: Running animations while working with data may slow performance and interfere with INTERJECT events, such as Drill on Data events. 
+description: Running animations while working with data may slow performance and interfere with Interject events, such as Drill on Data events. 
 ---
 * * *
 
 ##  **Overview**
 
-It is important to disable the animations feature of Excel. Running animations while working with data may slow performance and interfere with INTERJECT events, such as Drill on Data events. Depending on the version of Excel you have installed, and the Windows operating system on your computer, there are several ways to disable Excel animation. Choose the Excel and Windows versions that best match your system for the steps needed to disable animations. 
+It is important to disable the animations feature of Excel. Running animations while working with data may slow performance and interfere with Interject events, such as Drill on Data events. Depending on the version of Excel you have installed, and the Windows operating system on your computer, there are several ways to disable Excel animation. Choose the Excel and Windows versions that best match your system for the steps needed to disable animations. 
 
 ###  Turning Off Animations in Excel 2010 or 2016 on Windows 7 or 8 
 

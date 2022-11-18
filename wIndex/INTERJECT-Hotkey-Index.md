@@ -1,26 +1,26 @@
 ---
-title: INTERJECT Hotkey Index
+title: Interject Hotkey Index
 layout: custom
 keywords: [hotkey, keystrokes]
-description: INTERJECT provides ways to increase productivity and work flow by utilizing hotkeys to quickly perform INTERJECT actions. 
+description: Interject provides ways to increase productivity and work flow by utilizing hotkeys to quickly perform Interject actions. 
 ---
 ##  **Overview**
 
-INTERJECT provides ways to increase productivity and work flow by utilizing hotkeys to quickly perform INTERJECT actions. These hotkeys are adaptable and customize-able and are a staple to being efficient when using INTERJECT functions. Any hotkey listed here can be changed and set to different keystrokes. However, there is a limitation on available keystrokes to change the hotkeys to. 
+Interject provides ways to increase productivity and work flow by utilizing hotkeys to quickly perform Interject actions. These hotkeys are adaptable and customize-able and are a staple to being efficient when using Interject functions. Any hotkey listed here can be changed and set to different keystrokes. However, there is a limitation on available keystrokes to change the hotkeys to. 
 
 
 ###  Default Hotkey Index   
  
 | [**Login**](/wAbout/Logging-In.html) |                    |
 | :--------- | :------------------ |
-| Ctrl-L  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| Login to INTERJECT |
+| Ctrl-L  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| Login to Interject |
 |**Note:**  |This is used to help initialize the login before any automation is done with VBA (rarely used)|
 
 | [**Report Library**](/wAbout/Report-Library-Basics.html) |                         |
 | :----------------- | :------------------------------------------------------------------------------- |
 | Ctrl-Shift-L       | Open the Report Library &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;|
 
-| [**Pull** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data)       |                                                                       |
+| [**Pull** ](/wGetStarted/Interject-Ribbon-Menu-Items.html#pull-data)       |                                                                       |
 | --------------- | --------------------------------------------------------------------- |
 | Ctrl-Shift-J    | Open the **pull data** form                                           |
 | Ctrl-Shift-J, S | Open the **pull data** form and pull data based on current form only. |
@@ -28,7 +28,7 @@ INTERJECT provides ways to increase productivity and work flow by utilizing hotk
 | Ctrl-Shift-J, W | Open the **pull data** form and pull the entire workbook              |
 | Ctrl-Shift-J, C | Open the pull data form and clear the data                            |
 
-| [**Save**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data)         |                                                                      |
+| [**Save**](/wGetStarted/Interject-Ribbon-Menu-Items.html#save-data)         |                                                                      |
 | --------------- | -------------------------------------------------------------------- |
 | Ctrl-Shift-U    | Open the **save data** form                                          |
 | Ctrl-Shift-U, S | Open the **save data** form and save data based on current form only. &nbsp;  &nbsp; |
@@ -36,24 +36,24 @@ INTERJECT provides ways to increase productivity and work flow by utilizing hotk
 | Ctrl-Shift-U, W | Open the **save data** form and save the entire workbook             |
 | Ctrl-Shift-U, C | Open the **save data** form and clear the save data notes            |
 
-| [**Drill**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data)     |                            |
+| [**Drill**](/wGetStarted/Interject-Ribbon-Menu-Items.html#drill-on-data)     |                            |
 | ------------ | -------------------------- |
 | Ctrl-Shift-K | Drill on selected data row &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  |
 | Ctrl-Shift-B | Navigate back from a drill  |
 
-| [**Report Builder**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder)  |                                            |
+| [**Report Builder**](/wGetStarted/Interject-Ribbon-Menu-Items.html#report-builder)  |                                            |
 | ------------------ | ------------------------------------------ |
 | Ctrl-Shift-H       | Open the **Interject Report** Builder Form. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
 
-| [**Quick Tools**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools)  |                                    |
+| [**Quick Tools**](/wGetStarted/Interject-Ribbon-Menu-Items.html#quick-tools)  |                                    |
 | --------------- | ---------------------------------- |
 | Ctrl-Shift-T    | Open the **Interject Quick Tools**. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
 
-| [**Diagnostics**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#diagnostics)  |                                        |
+| [**Diagnostics**](/wGetStarted/Interject-Ribbon-Menu-Items.html#diagnostics)  |                                        |
 | --------------- | -------------------------------------- |
 | Ctrl-Shift-D    | Open the **Interject Diagnostic tool**. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
 
-| [**Exports**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#export-book)   |                                                            |
+| [**Exports**](/wGetStarted/Interject-Ribbon-Menu-Items.html#export-book)   |                                                            |
 | ------------ | ---------------------------------------------------------- |
 | Ctrl-Shift-E | Open the **Quick Export Tool** for the distribution center. |
 
@@ -94,7 +94,7 @@ INTERJECT provides ways to increase productivity and work flow by utilizing hotk
 
 ###  Overriding Hotkeys for Individual Installs 
 
-**Step 1:** Open a new Excel Workbook, login to INTERJECT and select the **Advanced Menu** menu to expand the Interject Ribbon to show the **Advanced Menu.** Then navigate to the **INTERJECT Diagnostic Tool** . 
+**Step 1:** Open a new Excel Workbook, login to Interject and select the **Advanced Menu** menu to expand the Interject Ribbon to show the **Advanced Menu.** Then navigate to the **Interject Diagnostic Tool** . 
 
 ![](/images/Hotkeys/01.jpg)
 <br>

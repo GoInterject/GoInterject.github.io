@@ -7,7 +7,7 @@ description: The jBinder function is designed to be used on an Excel report itse
 
 ## Function Summary
 
-The jBinder function is designed to be used on an Excel report itself. It is standalone and it cannot be embedded in other functions. It is used to generate settings automatically for the [Create Binder](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#create-binder) tool. It is meant to be used when [Data Cell](/wAbout/Tabular-vs-Data-Cells.html) activated reports are being exported and distributed. jBinder() will leverage cell values as inputs for the Create Binder tool fields. In order to default the settings when using jBinder(), you must use one jBinder() function per setting. Each OptionName argument has an associated TargetCell, more information can be found in the [Option Name List](jBinder.html#option-name-list) on this page.
+The jBinder function is designed to be used on an Excel report itself. It is standalone and it cannot be embedded in other functions. It is used to generate settings automatically for the [Create Binder](/wGetStarted/Interject-Ribbon-Menu-Items.html#create-binder) tool. It is meant to be used when [Data Cell](/wAbout/Tabular-vs-Data-Cells.html) activated reports are being exported and distributed. jBinder() will leverage cell values as inputs for the Create Binder tool fields. In order to default the settings when using jBinder(), you must use one jBinder() function per setting. Each OptionName argument has an associated TargetCell, more information can be found in the [Option Name List](jBinder.html#option-name-list) on this page.
 
 ### Function Arguments
 

@@ -1,5 +1,5 @@
 ---
-title: Updating INTERJECT
+title: Updating Interject
 layout: custom
 keywords: [updating, walkthrough]
 description: The walk-through shows how to update INTERJET to the newest version
@@ -7,7 +7,7 @@ description: The walk-through shows how to update INTERJET to the newest version
 
 ##  **Overview**
 
-INTERJECT often comes out with new features and updates. When doing so, it is a priority to make updating INTERJECT as easy as possible, so that you can access these features. In this walk-through, you will see how to add these updates quickly. 
+Interject often comes out with new features and updates. When doing so, it is a priority to make updating Interject as easy as possible, so that you can access these features. In this walk-through, you will see how to add these updates quickly. 
 
 Here is a brief video on Updating Interject, followed by a more detailed walkthrough.
 
@@ -15,21 +15,21 @@ Here is a brief video on Updating Interject, followed by a more detailed walkthr
 
 [Click here](https://youtu.be/uxZB1OYQE0k) if the above video does not load.
 
-###  Updating to the Newest Version of INTERJECT 
+###  Updating to the Newest Version of Interject 
 
-**Step 1:** In order to update INTERJECT, you will need to close Excel. So save anything open in Excel now. 
+**Step 1:** In order to update Interject, you will need to close Excel. So save anything open in Excel now. 
 
 ![](/images/Updating/01.png)
 
-**Step 2:** Once everything is saved, and you are logged in, click the [ **Check for Updates** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#check-for-updates) button in the INTERJECT ribbon. You cannot check for updates until you are logged in. 
+**Step 2:** Once everything is saved, and you are logged in, click the [ **Check for Updates** ](/wGetStarted/Interject-Ribbon-Menu-Items.html#check-for-updates) button in the Interject ribbon. You cannot check for updates until you are logged in. 
 
 ![](/images/Updating/02.png)
 
-**Step 3:** A popup will appear with information about the computer's current, as well as the latest available INTERJECT Version. If INTERJECT has a critical update, there may also be an **Install By** date. If that is the case you must install the update as soon as possible. Click **Get Update** to get the new version. It should only take a moment. 
+**Step 3:** A popup will appear with information about the computer's current, as well as the latest available Interject Version. If Interject has a critical update, there may also be an **Install By** date. If that is the case you must install the update as soon as possible. Click **Get Update** to get the new version. It should only take a moment. 
 
 ![](/images/Updating/03.png)
 
-**Note:** If this popup appears at any point without having clicked the **Check for Updates** button, it means that INTERJECT has released an important update. INTERJECT will not lock up into updating at any time, so its okay to postpone it momentarily, but its recommended that you update at the earliest convenience. 
+**Note:** If this popup appears at any point without having clicked the **Check for Updates** button, it means that Interject has released an important update. Interject will not lock up into updating at any time, so its okay to postpone it momentarily, but its recommended that you update at the earliest convenience. 
 
 **Step 4:** After clicking **Get Update**, the Interject Excel Add-in Setup will pop up. Interject requires Excel to be closed to update. Click the exit button to close excel.
 
@@ -51,7 +51,7 @@ Once your files are saved and closed, click **Next** to continue in the Install 
 
  ![](/images/Updating/07.png)  
 
-**Step 6:** Choose where to install INTERJECT. 
+**Step 6:** Choose where to install Interject. 
 
 ![](/images/Updating/08.png)
 
@@ -63,4 +63,4 @@ Once your files are saved and closed, click **Next** to continue in the Install 
 
 ![](/images/Updating/10.png)
 
-And that is all there is to it, you have officially updated INTERJECT.
+And that is all there is to it, you have officially updated Interject.

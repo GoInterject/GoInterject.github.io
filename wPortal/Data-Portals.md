@@ -21,7 +21,7 @@ The new page will look like below
 
 **Step 3** : The Data Portal Details page will contain the following information for the new data portal:
 
-- **Data Portal Code** : A unique name used when setting up report formulas. At this time this is a unique name across the INTERJECT community.
+- **Data Portal Code** : A unique name used when setting up report formulas. At this time this is a unique name across the Interject community.
 - **Description (optional)** : Description of what the Data Portal is doing
 - **Category (optional)** : Text that can be used to group Data Portals for easy searches later.
 
@@ -35,7 +35,7 @@ The new page will look like below
 
 - **Api Relative Url** : This setting indicates the rest of the API URL that will be concatenated with the root URL of an API Data Connection when a request is sent. For example, the root URL for the connection may be **https:[ api.myapi.com ]** . If your API controller name is CustomerData, then you would type **\CustomerData** in API Relative URL. The API request would be sent to **https:[ api.myapi.com ]\CustomerData**. This field is ignored when a Data Portal uses a database connection.
 - **Helper Default Columns (optional)** : You can use a comma delimited list to set default columns that will appear when a new report is created using the Report Builder.
-- **Is Custom Command** : When set to yes, allows background jobs to run from the Custom Commands Window. Custom Commands require specific parameters to work with the Custom Commands window. See the [ INTERJECT Ribbon ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) on how to use Custom Commands
+- **Is Custom Command** : When set to yes, allows background jobs to run from the Custom Commands Window. Custom Commands require specific parameters to work with the Custom Commands window. See the [ Interject Ribbon ](/wGetStarted/Interject-Ribbon-Menu-Items.html) on how to use Custom Commands
 
 ![](/images/DataPortals/04.jpg)
 
@@ -49,7 +49,7 @@ Formula Parameters are passed into the Data Portal from the user inputs in the s
 
 ### System Parameters
 
-System Parameters are automatically passed into the Data Portal from the INTERJECT Add-In. They are not considered in the Report Formulas since they are only passing user content data. Choose from a list of pre-configured system parameter types but note the data type that is shown. When adding the System Parameters to a stored procedure or website API, matching the data type is important.
+System Parameters are automatically passed into the Data Portal from the Interject Add-In. They are not considered in the Report Formulas since they are only passing user content data. Choose from a list of pre-configured system parameter types but note the data type that is shown. When adding the System Parameters to a stored procedure or website API, matching the data type is important.
 
 ### Adding New Parameters
 
@@ -85,7 +85,7 @@ Now that the Data Portal is created, you can set up our parameters for the Data 
 **Step 6** : Repeat the previous steps to add additional parameters as needed. Note: The order in which you add the Formula Parameters must match the order in the Param() formula used in the spreadsheet Report Formula.  
 ![](/images/DataPortals/09.jpg)
 
-The Data Portal is now ready to be used with Report Builder and within INTERJECT Report formulas.
+The Data Portal is now ready to be used with Report Builder and within Interject Report formulas.
 
 ### System Parameters Options
 
@@ -207,7 +207,7 @@ varchar(50)
 </td>  
 <td>
 
-Provides the INTERJECT User ID for their current session.
+Provides the Interject User ID for their current session.
 
 </td> </tr>  
 <tr>  
@@ -223,7 +223,7 @@ varchar(50)
 </td>  
 <td>
 
-Provides the INTERJECT Client ID for their current session.
+Provides the Interject Client ID for their current session.
 
 </td> </tr>  
 <tr>  
@@ -239,7 +239,7 @@ varchar(50)
 </td>  
 <td>
 
-Provides the INTERJECT username for their current session.
+Provides the Interject username for their current session.
 
 </td> </tr>  
 <tr>  
@@ -271,7 +271,7 @@ varchar(1000)
 </td>  
 <td>
 
-Provides the INTERJECT roles assigned to the user.
+Provides the Interject roles assigned to the user.
 
 </td> </tr>  
 <tr>  

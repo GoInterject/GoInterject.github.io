@@ -8,7 +8,7 @@ description: On this page, you will create a simple data pull using the Customer
 
 ##  **Overview**
 
-On this page, you will create a simple data pull using the Customer Aging Report. To review the business use case for this report, see  [ **Real World Walkthroughs** **\- Customer Aging** ](/wAbout/Customer-Aging.html) .  This lab begins with steps for creating the INTERJECT data connection and data portals, followed by the steps on how to create the stored procedure. Finally, you will be directed to another page that shows how to use the data portal to create the spreadsheet report from scratch. 
+On this page, you will create a simple data pull using the Customer Aging Report. To review the business use case for this report, see  [ **Real World Walkthroughs** **\- Customer Aging** ](/wAbout/Customer-Aging.html) .  This lab begins with steps for creating the Interject data connection and data portals, followed by the steps on how to create the stored procedure. Finally, you will be directed to another page that shows how to use the data portal to create the spreadsheet report from scratch. 
 
 **Developer Note**
 To work through this example, locate Lab 1.2 Customer Collections in the Interjet Report Library
@@ -165,9 +165,9 @@ In this example, you will use the system parameter, **Interject_NTLogin** , whic
 
 ###  Creating the Stored Procedure 
 
-A stored procedure or data API serves as a middle tier for an INTERJECT report. In this example you will be using a stored procedure. INTERJECT can retrieve one or more result sets from a stored procedure into the spreadsheet report. 
+A stored procedure or data API serves as a middle tier for an Interject report. In this example you will be using a stored procedure. Interject can retrieve one or more result sets from a stored procedure into the spreadsheet report. 
 
-The INTERJECT Website Portal allows you to create and manage Data Portals and reference stored procedures you create. Data Portals are stored locally in your Excel session when you log into INTERJECT. When requesting data INTERJECT creates a point-to-point connection with the intended data source. 
+The Interject Website Portal allows you to create and manage Data Portals and reference stored procedures you create. Data Portals are stored locally in your Excel session when you log into Interject. When requesting data Interject creates a point-to-point connection with the intended data source. 
 
 The below steps assume you are proficient with SQL Management Studio for Microsoft SQL Server and in creating stored procedures. If you need additional training in this area, please contact us at [ info@gointerject.com ](mailto:info@gointerject.com) . 
 
@@ -264,30 +264,30 @@ END
 </div>
 
 
-**Step 2:** Stored procedure are natively supported by INTERJECT. There are a few key areas to note in the code example that help illustrate INTERJECT features. 
+**Step 2:** Stored procedure are natively supported by Interject. There are a few key areas to note in the code example that help illustrate Interject features. 
 
-  * Parameters: The parameters included in the stored procedure are the same added to the Data Portal in a previous step. On each request, INTERJECT passes the Formula Parameters values from the spreadsheet configuration along with System Parameters to the stored procedure. Output parameters are supported which can populate values in the spreadsheet but they are not included in this example. 
+  * Parameters: The parameters included in the stored procedure are the same added to the Data Portal in a previous step. On each request, Interject passes the Formula Parameters values from the spreadsheet configuration along with System Parameters to the stored procedure. Output parameters are supported which can populate values in the spreadsheet but they are not included in this example. 
 
 
 
 ![](/images/L-Dev-CustAging/21.png)
 <br>
 
-  * Validation: The example code includes an example of validating the input from Formula Parameter **@CustomerName** . It limits the search text to 40 characters and will raise an error if the length is beyond. The custom error shown has a prefix **UserNotice:** which tells INTERJECT to provide a message box with the text to the user as a response. Without the prefix, INTERJECT will interpret the error as a generic error. 
+  * Validation: The example code includes an example of validating the input from Formula Parameter **@CustomerName** . It limits the search text to 40 characters and will raise an error if the length is beyond. The custom error shown has a prefix **UserNotice:** which tells Interject to provide a message box with the text to the user as a response. Without the prefix, Interject will interpret the error as a generic error. 
 
 
 
 ![](/images/L-Dev-CustAging/22.png)
 <br>
 
-  * Select statements: Returning data to INTERJECT simply uses a select statement as shown below. More than one can be returned at a time to reduce the connections needed to fully populate a complex report. You only have one select statement in this example. 
+  * Select statements: Returning data to Interject simply uses a select statement as shown below. More than one can be returned at a time to reduce the connections needed to fully populate a complex report. You only have one select statement in this example. 
 
 
 
 ![](/images/L-Dev-CustAging/23.png)
 <br>
 
-**Step 3:** It is important to test the stored procedure in the database before testing through the INTERJECT platform. The example code included a test SQL statement that can be executed in a new query as shown below. Be sure to change the procedure name to match your own. 
+**Step 3:** It is important to test the stored procedure in the database before testing through the Interject platform. The example code included a test SQL statement that can be executed in a new query as shown below. Be sure to change the procedure name to match your own. 
 
 
 <button class="collapsible">Example Test Script</button>
@@ -311,7 +311,7 @@ When executed you should see the following result set.
 
 ###  Create The Report 
 
-At this point you have a tested stored procedure that uses parameters to filter the results. An INTERJECT Data Connection is setup to go to your example database and you added an INTERJECT Data Portal to use that connection and is mapped to the stored procedure that was just created. You are ready to build the spreadsheet report. 
+At this point you have a tested stored procedure that uses parameters to filter the results. An Interject Data Connection is setup to go to your example database and you added an Interject Data Portal to use that connection and is mapped to the stored procedure that was just created. You are ready to build the spreadsheet report. 
 
 Fortunately, the documentation to build this report has already been presented in [ **Create: Customer Aging** ](https://docs.gointerject.com/wGetStarted/L-Create-CustomerAging.html) and you likely have already completed it. The end result should look like the below screenshot. 
 

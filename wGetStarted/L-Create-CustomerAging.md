@@ -2,17 +2,17 @@
 title: "Lab Create: Customer Aging"
 layout: custom
 keywords: [ range, report, build, example]
-description: In this page you will see the process of building a Customer Aging report from scratch to better understand reports and also get a clearer illustration of the INTERJECT Report Range data function
+description: In this page you will see the process of building a Customer Aging report from scratch to better understand reports and also get a clearer illustration of the Interject Report Range data function
 ---
 * * *
 
 ##  **Overview**
 
-In this page you will see the process of building a Customer Aging report from scratch to better understand reports and also get a clearer illustration of the INTERJECT [ ReportRange() ](/wIndex/ReportRange.html) data function. 
+In this page you will see the process of building a Customer Aging report from scratch to better understand reports and also get a clearer illustration of the Interject [ ReportRange() ](/wIndex/ReportRange.html) data function. 
 
 ###  Building the Report 
 
-**Step 1:** This process begins with the INTERJECT [ Report Builder ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder) . Open the Report Build as illustrated below. There is a drop down list of  [ Dataportals ](/wApps/Common-Dataportal-Index.html) that can be chosen  . An INTERJECT Dataportal is a pre-configured data query that is setup so spreadsheet users can easily direct data into their own spreadsheet reports. Dataportals can be setup to access databases or cloud data and are either setup by INTERJECT developers or the IT team. 
+**Step 1:** This process begins with the Interject [ Report Builder ](/wGetStarted/Interject-Ribbon-Menu-Items.html#report-builder) . Open the Report Build as illustrated below. There is a drop down list of  [ Dataportals ](/wApps/Common-Dataportal-Index.html) that can be chosen  . An Interject Dataportal is a pre-configured data query that is setup so spreadsheet users can easily direct data into their own spreadsheet reports. Dataportals can be setup to access databases or cloud data and are either setup by Interject developers or the IT team. 
 
 ![](/images/L-Create-CustAging/01.png)   
 
@@ -34,7 +34,7 @@ A new sheet should be added that looks like the screenshot below. Now the report
 <br>
 
 
-Next, use the [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) menu item. 
+Next, use the [ **Pull Data** ](/wGetStarted/Interject-Ribbon-Menu-Items.html#pull-data) menu item. 
 <br>
  ![](/images/L-Create-CustAging/09.png)
 <br> 
@@ -127,7 +127,7 @@ The data pulled should look like below.
   
 
 
-**Step 2:** Next, you need to freeze the panes to hide the configuration area from the users. This can be done manually with the Excel menu item for freezing panes. But this is a good time to illustrate INTERJECT's jFreezePanes() feature. First, setup the [ jFreezePanes ](/wIndex/jFreezePanes.html) function by entering **=jFreezePanes()** in F6 and click the **fx** button. 
+**Step 2:** Next, you need to freeze the panes to hide the configuration area from the users. This can be done manually with the Excel menu item for freezing panes. But this is a good time to illustrate Interject's jFreezePanes() feature. First, setup the [ jFreezePanes ](/wIndex/jFreezePanes.html) function by entering **=jFreezePanes()** in F6 and click the **fx** button. 
 <br>
 ![](/images/L-Create-CustAging/23.png)
 <br>
@@ -141,7 +141,7 @@ In the FeezePanesCell argument, input A21 to mark that row as the top of the vis
   
 
 
-Use the [ **Quick Tools** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools) menu item in the INTERJECT Ribbon so you can easily freeze the panes using the jFreezePanes formula you just configured. 
+Use the [ **Quick Tools** ](/wGetStarted/Interject-Ribbon-Menu-Items.html#quick-tools) menu item in the Interject Ribbon so you can easily freeze the panes using the jFreezePanes formula you just configured. 
 <br>
 <img src="/images/L-Create-CustAging/25.png" height="750px" width="750px">
 <br>

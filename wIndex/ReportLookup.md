@@ -8,7 +8,7 @@ description: Allows the report creator to insert a specific data value into a ce
 
 ##  Function Summary 
 
-Allows the report creator to insert a specific data value into a cell based on certain criteria. Most INTERJECT report functions import a list of data, but this function allows users to choose a specific data column and row and place that data point in a cell. 
+Allows the report creator to insert a specific data value into a cell based on certain criteria. Most Interject report functions import a list of data, but this function allows users to choose a specific data column and row and place that data point in a cell. 
 
 Used in conjunction with the [ jDataPortal() ](/wIndex/jDataPortal.html) helper function, ReportLookup() can access DataPortal data still in the memory from report functions that have already returned data, so there are no additional connections to the data source. 
 
@@ -16,10 +16,10 @@ Used in conjunction with the [ jDataPortal() ](/wIndex/jDataPortal.html) helper 
 
 | Argument Name   | Description                                                      | Default | Optional |
 |-----------------|------------------------------------------------------------------|---------|----------|
-| DataPortal      | The name of the INTERJECT Data Portal set up to connect to data. |         | NO       |
+| DataPortal      | The name of the Interject Data Portal set up to connect to data. |         | NO       |
 | TargetDataRange | Select a single cell to place the data value. If the Data Portal returns a list of data, this function will return the value from the first row. The helper function [jDataPortal()](/wIndex/jDataPortal.html) can be used to further define which row to use from the Data Portal by using its Filter and OrderBy arguments.                                                                 |         | NO       |
 | ColDefRange     | The Column Definition Range determines which column from the stored procedure record will be returned.                                                                  |         | NO       |
-| Parameters      |  Select a single cell or range of cells which will be used as parameters for the Data Portal. The cells must be wrapped inside of INTERJECT's [Param](/wIndex/Param.html) helper function.                                                                |         | YES      |
+| Parameters      |  Select a single cell or range of cells which will be used as parameters for the Data Portal. The cells must be wrapped inside of Interject's [Param](/wIndex/Param.html) helper function.                                                                |         | YES      |
 
 ### Excel Formula Bar Example
 
