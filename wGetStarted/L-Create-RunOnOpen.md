@@ -11,6 +11,10 @@ Some reports require default values, settings, or have summary pages that must b
 
 We will walk through Run on Open using the [ Customer Aging Report ](/wGetStarted/L-Create-CustomerAging.html).
 
+<blockquote class=lab_info>
+  If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 6 Special Features > Lab 6.4 Interject Run On Open.
+</blockquote>
+
 ## Setting up Run on Open
 
 **Step 1:** To begin, open the **Customer Collections** report in the [ Report Library ](/wAbout/Report-Library-Basics.html). 

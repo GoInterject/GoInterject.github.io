@@ -10,6 +10,9 @@ description: This example uses the Customer Aging demo to show the creation of a
 
 This example uses the [ Customer Aging ](/wAbout/Customer-Aging.html) demo to show the creation of a Customer Aging Detail report that will have variable customer subtotaled sections, each having their respective invoice detail. You will use both the [ ReportRange() ](/wIndex/ReportRange.html) and [ ReportVariable() ](/wIndex/ReportVariable.html) formulas to create the output. 
 
+<blockquote class=lab_info>
+  If you are following the Training Labs, this is Lab 3.6. Note: The Report Library at Training Labs for this lab will be blank as you are creating a report from a new blank Excel sheet.
+</blockquote>
 
 ###  Building the Report 
 

@@ -10,7 +10,9 @@ description: You will use the ReportRange() formula to review the financial grou
 
 The  [ ReportVariable() ](/wIndex/ReportVariable.html) function is ideal for financial reports since it directs data into multiple specified ranges of a report that can grow and shrink with the data. In this example you are going to use the  [ Financial Cube  ](/wIndex/FinCube---The-Financial-Cube.html) (FinCube) dataportal to create a financial statement from scratch. First you will use the [ ReportRange() ](/wIndex/ReportRange.html)formula to review the financial group summaries for a location. With the financial groups retrieved, you will than expand to create a subtotaled financial statement so each subtotaled detail will expand and shrink with the data. 
 
-
+<blockquote class=lab_info>
+  If you are following the Training Labs, this is Lab 3.5. Note: The Report Library at Training Labs for this lab will be blank as you are creating a report from a new blank Excel sheet.
+</blockquote>
 
 
 ###  Pulling Financial Data with FinCube Dataportal 

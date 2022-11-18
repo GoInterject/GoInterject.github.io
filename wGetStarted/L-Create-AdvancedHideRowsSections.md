@@ -10,8 +10,11 @@ sitemap: True
 
 In this example of the **ReportHideRowsOrColumns()** function, we will hide an entire section of a report based on the condition that the section is empty. You would typically use this in a report when data is pulled in with zero values. By hiding the zero value rows, and the entire section when all the rows within it are zero vale, the reporting area will be more usable. 
 
-For this lab, find the Interject Inventory Demo in the Interject Demo folder within the [ Report Library ](/wAbout/Report-Library-Basics.html). Once open, you'll use the **InvByCategory_WithDetail** tab.
+For this demo, find the Interject Inventory Demo in the Interject Demo folder within the [ Report Library ](/wAbout/Report-Library-Basics.html). Once open, you'll use the **InvByCategory_WithDetail** tab.
 
+<blockquote class=lab_info>
+  If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 5 Advanced Features > Lab 5.2 Advance Row and Section Hiding.
+</blockquote>
 
 ###  **Hiding Rows**
 

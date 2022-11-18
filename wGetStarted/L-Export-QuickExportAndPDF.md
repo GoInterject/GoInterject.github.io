@@ -10,6 +10,10 @@ description: This method of distribution is the simplest. The purpose of Quick E
 
 The Quick Export and PDF method of distribution is the simplest. The purpose of Quick Export is to build a new workbook from the current workbook and remove all the external links and [ Data Cell ](/wAbout/Tabular-vs-Data-Cells.html) formulas so users without INTERJECT can view the report. It's important to note that [ Tabular ](/wAbout/Tabular-vs-Data-Cells.html) INTERJECT reports can be viewed immediately by users without INTERJECT and do not need to be exported to be shared. Although Tabular reports use special report formulas, the formulas remain out of view for users without INTERJECT, and any data pulled into the report are simply values. Outside users can view them without any modification. 
 
+<blockquote class=lab_info>
+  If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 7 Exporting Data > Lab 7.1 Quick Export and PDF.
+</blockquote>
+
 ###  Quick Export 
 
 Quick Export removes [ Data Cell ](/wAbout/Tabular-vs-Data-Cells.html) formulas and external links from a workbook so users without INTERJECT can view them.

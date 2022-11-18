@@ -17,6 +17,11 @@ Special column definitions provide additional features to your reports. There ar
 
 These additional features are added by editing the Column Definition Row. The Column Definition Row is a row that designates, and filters, the placement of information. For example, if your report is presenting the field “Company Name”, your Column Definition would have a cell with the value “Company Name”. To add one of these features to the cells in a column where the report is populated you use an identifier such as  **AddComm** for comments,  **hLink** for hyperlinks, and  **Valuelist** for a drop down list. This lab uses the **Customer Credits** report. 
 
+<blockquote class=lab_info>
+  If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 5 Advanced Features > Lab 5.4 Special Column Definitions.
+</blockquote>
+
+
 ###  Special Cell Value Comment 
 
 A comment is often used to note more detailed information about the data in a cell. Comments are useful when the information contained within them are not required but need to be referenced when you put your mouse over the cell. In this example you will add comments to the credit limit column to note who last changed the credit. 

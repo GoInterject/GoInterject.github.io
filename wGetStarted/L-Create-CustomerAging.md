@@ -10,6 +10,10 @@ description: In this page you will see the process of building a Customer Aging 
 
 In this page you will see the process of building a Customer Aging report from scratch to better understand reports and also get a clearer illustration of the INTERJECT [ ReportRange() ](/wIndex/ReportRange.html) data function. 
 
+<blockquote class=lab_info>
+  If you are following the Training Labs, this is Lab 3.1. Note: The Report Library at Training Labs for this lab will be blank as you are creating a report from a new blank Excel sheet.
+</blockquote>
+
 ###  Building the Report 
 
 **Step 1:** This process begins with the INTERJECT [ Report Builder ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder) . Open the Report Build as illustrated below. There is a drop down list of  [ Dataportals ](/wApps/Common-Dataportal-Index.html) that can be chosen  . An INTERJECT Dataportal is a pre-configured data query that is setup so spreadsheet users can easily direct data into their own spreadsheet reports. Dataportals can be setup to access databases or cloud data and are either setup by INTERJECT developers or the IT team. 

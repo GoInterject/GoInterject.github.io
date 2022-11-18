@@ -11,6 +11,10 @@ This lab is a basic Customer Aging demonstration for tracking invoices for multi
 
 You can go directly to any part of this walk-through by clicking one of the links below.   
 
+<blockquote class=lab_info>
+  If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 1 Real World Walkthoughs > Lab 1.1 Customer Aging.
+</blockquote>
+
 ###  Navigating to the Aging Summary 
 
 **Step 1:** Open the report **INTERJECT Customer Collections** under the INTERJECT Demos  in the [ Report Library ](/wAbout/Report-Library-Basics.html). 

@@ -10,6 +10,11 @@ description: There are a number of different options available for distributing 
 
 There are a number of different options available for distributing reports as well as naming workbooks and individual sheets. In this lab, you are going to explore some of the more advanced methods. 
 
+<blockquote class=lab_info>
+  If you are following the Training Labs, this report file is continued from the previous lab: Training Labs > Lab 7 Exporting Data > Lab 7.2 Basic Distribution.
+</blockquote>
+
+
 ###  Custom Tab Renaming 
 
 **Step 1:** You will add **[Location]** as a prefix and suffix for the worksheet **("tab")** names. Type **[Location]\_** in cell G15 and **[Location]\_** in H16. The underscore **\_** was added to the text to allow a spacer between the original tab name and the location value. The end result is that the tab names will be modified as they are created so they match the location they represent. 

@@ -14,6 +14,10 @@ Both of these examples use the [ Customer Aging Detail  ](/wGetStarted/L-Create-
 
 ![](/images/L-Create-HideRowCol/01.png)
 
+<blockquote class=lab_info>
+  If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 5 Advanced Features > Lab 5.1 Hiding Rows & Columns.
+</blockquote>
+
 <br> 
 
 ###  **Hiding Rows**
@@ -53,7 +57,7 @@ Both of these examples use the [ Customer Aging Detail  ](/wGetStarted/L-Create-
 
 <br> 
 
-**Step 6:** Insert a row above row **30**, and in cell **G30** type "For Backward Compatibility". Then in cell **H30** enter the formula **=ReportCalc()** and click **fx**. Enter the following into the Function Wizard:
+**Step 6:** Next we will insert the Interject function ReportCalc. This will force a recalculation of the current sheet upon an event such as a pull action or clear event. (This function is for previous versions of the Interject Add-in because the latest version will automatically perform a recalculation whenever the Pull, Save, or Drill window is displayed.) Insert a row above row **30**, and in cell **G30** type "For Backward Compatibility". Then in cell **H30** enter the formula **=ReportCalc()** and click **fx**. Enter the following into the Function Wizard:
 - For **OnPullSaveOrBoth**, type **Pull**
 - For **OnClearRunOrBoth**, type **Both**
 - For **SheetOrWorkbook**, type **Sheet**
@@ -71,7 +75,7 @@ Both of these examples use the [ Customer Aging Detail  ](/wGetStarted/L-Create-
 
 ###  Hiding Columns 
 
-In this next example our goal is too hide the rows that have a payment expected date and show the rows without one. 
+In this next example our goal is to hide the rows that have a payment expected date and show the rows without one. 
 
 **Step 1:** To begin you will unfreeze the report using [ Quick Tools ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html). 
 

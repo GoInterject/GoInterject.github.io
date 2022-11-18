@@ -12,6 +12,10 @@ This lab is for controllers or accountants who work with financial data and spre
 To watch a quick walk-through video, click on the icon:  
 <br><a href="https://www.youtube.com/watch?v=13H24zWv7is&feature=youtu.be"><i class="fa fa-youtube-play" style="color: #ff0000; font-size: 3em;"></i></a> 
 
+<blockquote class=lab_info>
+  If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 1 Real World Walkthroughs > Lab 1.3 Financial Report.
+</blockquote>
+
 ###  Navigating to the PLTrend Report 
 
 **Step 1:** Navigate to the PL Trend report page inside the INTERJECT Financials folder of the [ Report Library  ](/wAbout/Report-Library-Basics.html). The Report Library is a central place for publishing reporting templates. It is versioned and easily located. 

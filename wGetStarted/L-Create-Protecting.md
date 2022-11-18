@@ -14,6 +14,10 @@ When a sheet is protected using the Sheet Protector window, it will first attemp
 
 In the following lab, you will protect a sheet and use the INTERJECT pull to illustrate how protected sheets continues to function properly. In this lab you use the Customer Aging report 
 
+<blockquote class=lab_info>
+  If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 6 Special Features > Lab 6.2 Protecting Sheets.
+</blockquote>
+
 ###  Unprotecting Cells for User Input: 
 
 INTERJECT requires the user to have one of the following roles for your company. This removes the need to set a password. 

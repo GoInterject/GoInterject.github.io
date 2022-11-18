@@ -10,6 +10,10 @@ description: In this example you will be modifying a fixed report, going over ho
 
 In this example you will be modifying a fixed report, going over how to add a row to the report as well as add an extra column. 
 
+<blockquote class=lab_info>
+  If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 2 Modifying Reports > Lab 2.3 Inventory Report.
+</blockquote>
+
 
 ###  Setting up the Report 
 

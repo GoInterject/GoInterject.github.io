@@ -10,6 +10,10 @@ description:  Report Macro is useful for specialized reports where a customized 
 
 Report Macro is an excel formula provided by INTERJECT. It allows INTERJECT to interact with publicly defined VBA functions on a report.  Report Macro is useful for specialized reports where a customized action needs to be taken. This action can be built into a VBA Macro based on the complex needs of the report. Then, ReportMacro() is used to execute the custom action at the right point within the reporting process.
 
+<blockquote class=lab_info>
+  If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 6 Special Features > Lab 6.3 Using Report Macro.
+</blockquote>
+
 ###  Setting up the Worksheet
 
 The report macro formula acts in conjunction with another INTERJECT report formula such as a [ ReportRange() ](/wIndex/ReportRange.html). It is useful when a workbook requiring VBA macros must be used. ReportMacro() is an ordered formula, which means that INTERJECT will perform executions on all report formulas placed above or to the left of the ReportMacro() formula before it is executed. 
