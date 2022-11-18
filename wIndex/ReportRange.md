@@ -39,7 +39,7 @@ To see an example of this function in use, visit the [ Lab Create: Customer Agin
 | ColDefRange         | B2:H2                | The column names specified in this range will determine which data fields are returned from the data source                    |
 | FormatRange         | B4:H4                | The formatting specified in this range is copied down to the inserted rows in the target data range                            |
 | Parameters          | Param(C7,C8,C9)      | Cells C7, C8, C9 are specified to pass information to or from the DataPortal.                                                  |
-| UseEntireRow        | FALSE                | INTERJECT will insert a range into the sheet and will not insert full rows |
+| UseEntireRow        | FALSE                | Interject will insert a range into the sheet and will not insert full rows |
 | PutFieldNamesAtTop  | FALSE                | Since this is false, the names of the data fields are not returned as the top row of the target data range by the data portal   |
 | RetainRowColumns    | ""                   | Optional Function argument left blank meaning no rows are retained upon a report clear                                         |
 | InsertNewRowsWithin | FALSE                | Since there are no retained columns this is set to FALSE                                                                       |

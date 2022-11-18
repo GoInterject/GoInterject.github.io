@@ -10,53 +10,64 @@ description: INTERJECT provides features by leveraging spreadsheet formulas that
 
 INTERJECT provides features by leveraging spreadsheet formulas that are familiar to many users. These formulas can be used to direct data into a spreadsheet, creating practical and adaptable reports. By adding report drills and navigation through additional spreadsheet formulas, these reports become a comprehensive reporting solution.
 
-## Data Functions
+## Data Pull Functions
 
-Data Functions are focused on getting specific data to the report in the right way and placed inside the spreadsheet. There are a variety of functions and options therein to give flexibility in what data is displayed.
+Data Pull Functions are focused on getting specific data to the report in the right way and placed inside the spreadsheet. There are a variety of functions and options therein to give flexibility in what data is displayed.
+
+| Forumula                                                | Description                                                         |
+|---------------------------------------------------------|---------------------------------------------------------------------|
+| [ReportRange()](/wIndex/ReportRange.html)       | Inserts data into a single range of a spreadsheet                   |
+| [ReportFixed()](/wIndex/ReportFixed.html)       | Pulling in data to a predetermined fixed point.                     |
+| [ReportVariable()](/wIndex/ReportVariable.html) | Insert data into rows that include multiple ranges or sections      |
+| [ReportLookup()](/wIndex/ReportLookup.html)    | Insert a specific data value into a cell based on certain criteria. |
+
+## Data Save Functions
+
+The Data Save Function ReportSave is designed to save data within the sheet back to the data source, making it easy to manipulate the data without having to edit the database directly.
+
+| Forumula                                                | Description                                                         |
+|---------------------------------------------------------|---------------------------------------------------------------------|
+| [ReportSave()](/wIndex/ReportSave.html)         | Save data on the sheet back to the database.                        |
+
+## Data Drill Functions
+
+The Data Drill Function ReportDrill provides a convenient way to run another targeted function while at the same time, transferring contextual data for filtering to that function. It is widely used as a way to connect and pass information between workbooks and worksheets.
 
 | Forumula                                                | Description                                                         |
 |---------------------------------------------------------|---------------------------------------------------------------------|
 | [ReportDrill()](/wIndex/ReportDrill.html)       | Drilling down on data and Navigating between reports                |
-| [ReportFixed()](/wIndex/ReportFixed.html)       | Pulling in data to a predetermined fixed point.                     |
-| [ReportLookup()](/wIndex/ReportLookup.html)    | Insert a specific data value into a cell based on certain criteria. |
-| [ReportMacro](/wIndex/ReportMacro.html)         | Call VBA macros on Save, Pull, Clear, or Run events.                |
-| [ReportRange()](/wIndex/ReportRange.html)       | Inserts data into a single range of a spreadsheet                   |
-| [ReportRun()](/wIndex/ReportRun.html)           | Execute Report functions in other sheets.                           |
-| [ReportSave()](/wIndex/ReportSave.html)         | Save data on the sheet back to the database.                        |
-| [ReportVariable()](/wIndex/ReportVariable.html) | Insert data into rows that include multiple ranges or sections      |
 
+## Event Functions
 
-## Formatting Functions
-
-Formatting Functions are focused on the report itself and does not impact or direct data in the report. These functions can improve the speed and presentation of which data can be understood, manipulated and seen in the report. Once formatting functions are fully understood, reports can be dissected, analysed, and assessed at a much more rapid pace with a very low amount of impact on report run times.
+Event Functions are functions designed to run when a designated event triggers them. An Interject event is a Clear Data or Run event. A Run event can be a [Pull Data](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) action or a [Save](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data) action. The values defined within the event trigger function will determine when it is executed. These functions allow synchronization and data precision witin the report.
 
 | Formula                                                                | Description                                                                                        |
 |------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| [JFocus()](/wIndex/jFocus.html)                                | Sets the excel focus (active cell selection) upon a freeze panes action            |
-| [JFreezePanes()](/wIndex/jFreezePanes.html)                    | Used with the QuickTools option for freeze/unfreeze panes.                         |
+| [ReportMacro](/wIndex/ReportMacro.html)         | Call VBA macros.                |
+| [ReportRun()](/wIndex/ReportRun.html)           | Execute Report functions in other sheets.                           |
 | [ReportCalc()](/wIndex/ReportCalc.html)                        | Executes a calculation on a worksheet or workbook.                                 |
-| [ReportDefaults()](/wIndex/ReportDefaults.html)                | Utilized to capture and send values from one cell(s) to another.                   |
-| [ReportHideRowOrColumn()](/wIndex/ReportHideRowOrColumn.html)  | Hides rows and columns on report events                                            |
-| [ReportMerge()](/wIndex/ReportMerge.html)                      | Merge multiple Excel reports into one based on [jMergePoints()](/wIndex/jMergePoint.html) |
-
+| [ReportDefaults()](/wIndex/ReportDefaults.html)                | Captures and send values from one cell(s) to another.                   |
+| [ReportGrouping()](/wIndex/ReportGrouping.html)  | Expands or collapses groups.                                         |
+| [ReportHideRowOrColumn()](/wIndex/ReportHideRowOrColumn.html)  | Hides rows or columns.                                            |
 
 ## Helper Functions
 
-Helper Functions are often embedded into other parent functions (listed above) to be leveraged into more specific and accurate functions or enhance their capabilities. Some can also be used in stand-alone fashion to add functionality to the page.
+Helper Functions are functions that help streamline the report generation process and offer additional customization. They are often embedded into other parent functions to be leveraged into more specific and accurate functions or enhance their capabilities. Some can also be used as stand-alone functions to add functionality to the page. Other Helper Functions are focused on the report itself and does not impact or direct data in the report. These functions can improve the speed and presentation of which data can be understood, manipulated and viewed in the report.
 
 | Formula                                                       | Description                                                                                                  |
 |---------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| [jBinder()](/wIndex/jBinder.html)                     | Assists the Binder feature mark worksheets                                                |
-| [jColumnDef()](/wIndex/jColumnDef.html)              | Assists financial reports using the FinCube DataPortal to specify segment filters for each amount column.    |
-| [jCombineIf()](/wIndex/jCombine_IF.html)             | Uses a conditional statement to determine which values should be included into a single concatenated string. |
+| [jDropdown()](/wIndex/jDropdown.html)                         | Returns a set of data in a dropdown list for easy insertion into the sheet.            |
+| [jFocus()](/wIndex/jFocus.html)                                | Sets the Excel focus (active cell selection) upon a freeze panes action.            |
+| [jFreezePanes()](/wIndex/jFreezePanes.html)                    | Used with the QuickTools option for freeze/unfreeze panes.                         |
 | [jCombine()](/wIndex/jCombine.html)                   | Concatenate the values of cells while simultaneously skipping any empty cell.              |
+| [jCombineIf()](/wIndex/jCombine_IF.html)             | Uses a conditional statement to determine which values should be included into a single concatenated string. |
 | [jDataPortal()](/wIndex/jDataPortal.html)             | Helpful function for developers to further leverage DataPortals.                           |
-| [jMergePoint()](/wIndex/jMergePoint.html)            | Acts as a reference point for [ReportMerge](/wIndex/ReportMerge.html) .                     |
+| [jColumnDef()](/wIndex/jColumnDef.html)              | Assists financial reports using the FinCube DataPortal to specify segment filters for each amount column.    |
 | [jRangeTag()](/wIndex/jRangeTag.html)                | Used to label or tag a range or a single cell with a custom name.                           |
 | [jWorkbookProperty()](/wIndex/jWorkbookProperty.html) | Provides context and information about a workbook in a report.                             |
 | [Pair()](/wIndex/Pair.html)                           | Used with a variety of report functions to specify a from value or range to a target location or range.      |
 | [PairGroup()](/wIndex/PairGroup.html)                 | Used to string multiple [Pair()](Pair.html) functions together into one comma delimited string      |
-| [Param()](/wIndex/Param.html)                         | Used to help select one or multiple parameters for each of your report formulas            |
+| [Param()](/wIndex/Param.html)                         | Used to help select one or multiple parameters for each of your report formulas.            |
 
 ## Data Cell Functions
 

@@ -1,20 +1,16 @@
 ---
-title: Lab Walkthrough
+title: Lab Guide
 layout: custom
 keywords: []
 description: 
 ---
 
-## **Lab Walkthrough**
+## Overview
 
-### Overview
-
-<blockquote class=lab_info>
-  These labs are offered as an introductory course on the Interject® add-in for Microsoft Excel®.
-</blockquote>
-
-
-### Before You Begin
+These labs are offered as an introductory course on the Interject® Add-in for Microsoft Excel®. By following this guide, you will be learn how to use the Interject Add-in to create and modify reports in Excel. You will also learn features to customize your reports further and ways to interact between Interject and Excel to make your reports useful in a variety of situations. Finally, you will learn how to export these reports and distrubute them.
+<br>
+<hr>
+## Before You Begin
 
 Before you begin your labs, you should familiarize yourself with some basic _Concepts_ that you will use throughout the labs:
 
@@ -24,24 +20,14 @@ Before you begin your labs, you should familiarize yourself with some basic _Con
 [ Logging In ](/wAbout/Logging-In.html)
 
 [ Report Library Basics ](/wAbout/Report-Library-Basics.html)
-<br>
+
+<hr>
+## Lab 1 : Real World Walkthroughs
+
+This lab will give you an understanding of how the Interject Add-in can be used with Excel in real world scenerios. It will give you a meaning and purpose for the labs. For more overview, see [ Real-World Examples ](/wAbout/Real-World-Walkthroughs.html).
 
 
-
-### `Lab 1 : Real World Examples`
-
-
-#### [ 1.1 Basics of Report Formulas](/wAbout/Basics-of-Report-Formulas.html)
-
-**_Concepts_** : 
-• Viewing the Hidden Interject Configuration Section
-• The Column Definitions Section
-• The Formatting Range Section
-• The Report Formulas Section
-• The Hidden Parameters and Notes Section
-<br>
-
-#### [ 1.2 Customer Aging](/wAbout/Customer-Aging.html)
+### [ 1.1 Customer Aging](/wAbout/Customer-Aging.html)
 
 **_Concepts_** : 
 • Pulling Data
@@ -52,33 +38,43 @@ Before you begin your labs, you should familiarize yourself with some basic _Con
 • Adding a Field to a Table
 <br>
 
-#### [ 1.3 Inventory Reports](/wAbout/Inventory-Reports.html)
+### [ 1.2 Inventory Reports](/wAbout/Inventory-Reports.html)
 
 **_Concepts_** : 
 • Drilling Data via Hyperlink
 • Returning From Drilling
 <br>
 
-#### [ 1.4 Financial Report](/wAbout/Financial-Report.html)
+### [ 1.3 Financial Report](/wAbout/Financial-Report.html)
 
 **_Concepts_** : 
 • Collapsing and Expanding Groupings
 • Drill Data
 • Drill on a Journal Entry
 <br>
+<hr>
+## Lab 2 : Modifying Reports
 
+Sometimes it is easier to modify an existing report rather than creating a whole report from scratch. This lab will guide you through how to modify an existing report to accommodate your desired report. For more overview, see [ Modifying an Existing Report ](/wGetStarted/Modifying-an-Existing-Report.html).
 
-### `Lab 2 : Modifying Reports`
+### [ 2.1 Basics of Report Formulas](/wAbout/Basics-of-Report-Formulas.html)
 
+**_Concepts_** : 
+• Viewing the Hidden Interject Configuration Section
+• The Column Definitions Section
+• The Formatting Range Section
+• The Report Formulas Section
+• The Hidden Parameters and Notes Section
+<br>
 
-#### [ 2.1 Lab Modify: Customer Aging](/wGetStarted/L-Modify-CustomerAging.html)
+### [ 2.2 Lab Modify: Customer Aging](/wGetStarted/L-Modify-CustomerAging.html)
 
 **_Concepts_** : 
 • Entering Formulas
 • Understanding of How Interject Copies Formulas by Pulling Data
 <br>
 
-#### [ 2.2 Lab Modify: Inventory Report](/wGetStarted/L-Modify-InventoryReport.html)
+### [ 2.3 Lab Modify: Inventory Report](/wGetStarted/L-Modify-InventoryReport.html)
 
 **_Concepts_** : 
 • Entering Formulas
@@ -87,18 +83,18 @@ Before you begin your labs, you should familiarize yourself with some basic _Con
 • Freeze Panes via Interject Quick Tools
 <br>
 
-#### [ 2.3 Lab Modify: Financial Report](/wGetStarted/L-Modify-FinancialReport.html)
+### [ 2.4 Lab Modify: Financial Report](/wGetStarted/L-Modify-FinancialReport.html)
 
 **_Concepts_** : 
 • Adding Columns to Expand Report
 • Modifying a Report
 <br>
+<hr>
+## Lab 3 : Creating Reports
 
+Interject can help build a report from scratch by using the Report Builder feature. This feature opens a template that you can further modify. For more overview, see [ Creating a Simple Report ](/wGetStarted/Creating-a-Simple-Report.html).
 
-### `Lab 3 : Creating Reports`
-
-
-#### [ 3.1 Lab Create: Customer Aging](/wGetStarted/L-Create-CustomerAging.html)
+### [ 3.1 Lab Create: Customer Aging](/wGetStarted/L-Create-CustomerAging.html)
 
 **_Concepts_** : 
 • Building a Report via Interject Report Builder
@@ -108,7 +104,7 @@ Before you begin your labs, you should familiarize yourself with some basic _Con
 • Setting up the jFreezePanes Function
 <br>
 
-#### [ 3.2 Lab Create: Customer Orders](/wGetStarted/L-Create-CustomerOrders.html)
+### [ 3.2 Lab Create: Customer Orders](/wGetStarted/L-Create-CustomerOrders.html)
 
 **_Concepts_** : 
 • Building a Report via Interject Report Builder
@@ -117,7 +113,7 @@ Before you begin your labs, you should familiarize yourself with some basic _Con
 • Adding Multiple Rows of Column Definitions
 <br>
 
-#### [ 3.3 Lab Create: Inventory Fixed](/wGetStarted/L-Create-InventoryFixed.html)
+### [ 3.3 Lab Create: Inventory Fixed](/wGetStarted/L-Create-InventoryFixed.html)
 
 **_Concepts_** : 
 • Building a Report via Interject Report Builder
@@ -125,7 +121,7 @@ Before you begin your labs, you should familiarize yourself with some basic _Con
 • Setting up a Run on Open
 <br>
 
-#### [ 3.4 Lab Create: Inventory Variable Report](/wGetStarted/L-Create-InventoryVariable.html)
+### [ 3.4 Lab Create: Inventory Variable Report](/wGetStarted/L-Create-InventoryVariable.html)
 
 **_Concepts_** : 
 • Editing the ReportVariable Function
@@ -133,14 +129,14 @@ Before you begin your labs, you should familiarize yourself with some basic _Con
 • How to Format the Appearance of Data
 <br>
 
-#### [ 3.5 Lab Create: Financial Variable](/wGetStarted/L-Create-FinancialVariable.html)
+### [ 3.5 Lab Create: Financial Variable](/wGetStarted/L-Create-FinancialVariable.html)
 
 **_Concepts_** : 
 • Understanding Profit and Loss Report Notation
 • Building a Profit and Loss Report
 <br>
 
-#### [ 3.6 Lab Create: Customer Aging Detail](/wGetStarted/L-Create-CustomerAgingDetail.html)
+### [ 3.6 Lab Create: Customer Aging Detail](/wGetStarted/L-Create-CustomerAgingDetail.html)
 
 **_Concepts_** : 
 • Building a Report via Interject Report Builder
@@ -149,61 +145,53 @@ Before you begin your labs, you should familiarize yourself with some basic _Con
 • Adding Multiple Rows of Formatting
 • Editing the ReportVariable Function
 <br>
+<hr>
+## Lab 4 : Drilling To Data
 
+Interject contains a feature called Drill on Data. This feature allows the user to open up a detailed report on a targeted set of data. For more overview, see [ Drill Between Reports ](/wGetStarted/Drilling-Between-Reports.html). 
 
-
-
-### `Lab 4 : Drilling Data`
-
-
-#### [ 4.1 Lab Drill: Customer Aging](/wGetStarted/L-Drill-CustomerAging.html)
+### [ 4.1 Lab Drill: Customer Aging](/wGetStarted/L-Drill-CustomerAging.html)
 
 **_Concepts_** : 
 • Building a Drill on Data
 <br>
 
-#### [ 4.2 Lab Drill: Inventory Report](/wGetStarted/L-Drill-InventoryReport.html)
+### [ 4.2 Lab Drill: Inventory Report](/wGetStarted/L-Drill-InventoryReport.html)
 
 **_Concepts_** : 
 • Building a Drill on Data
 • Creating Hyperlinks to Drill on Data
 <br>
 
-#### [ 4.3 Lab Drill: Financial Report](/wGetStarted/L-Drill-InventoryReport.html)
+### [ 4.3 Lab Drill: Financial Report](/wGetStarted/L-Drill-InventoryReport.html)
 
 **_Concepts_** : 
 • Building a Drill on Data
 <br>
+<hr>
+## Lab 5 : Advanced Features
 
+In this lab you will learn certain features that provide more flexibility to design user-friendly reports.
 
-### `Lab 5 : Special Features`
-
-
-#### [ 5.1 Lab Create: Hiding Rows & Columns](/wGetStarted/L-Create-HideRowCol.html)
+### [ 5.1 Lab Create: Hiding Rows & Columns](/wGetStarted/L-Create-HideRowCol.html)
 
 **_Concepts_** : 
 • Hiding Certain Rows After Pulling Data
 <br>
 
-#### [ 5.2 Lab Create: Advanced Row and Section Hiding](/wGetStarted/L-Create-AdvancedHideRowsSections.html)
+### [ 5.2 Lab Create: Advanced Row and Section Hiding](/wGetStarted/L-Create-AdvancedHideRowsSections.html)
 
 **_Concepts_** : 
 • Hiding Certain Rows After Pulling Data (Advanced)
 <br>
 
-#### [ 5.3 Lab Create: Building jDropdowns](/wGetStarted/L-Create-Dropdowns.html)
+### [ 5.3 Lab Create: Building jDropdowns](/wGetStarted/L-Create-Dropdowns.html)
 
 **_Concepts_** : 
 • Building a jDropdown Menu to Expedite Filtering Report Data
 <br>
 
-#### [ 5.4 Lab Create: Working with Pivot Tables](/wGetStarted/L-Create-PivotTable.html)
-
-**_Concepts_** : 
-• Building a Pivot Table to Customize a Report
-<br>
-
-#### [ 5.5 Lab Create: Special Column Definitions](/wGetStarted/L-Create-SpecColDefs.html)
+### [ 5.4 Lab Create: Special Column Definitions](/wGetStarted/L-Create-SpecColDefs.html)
 
 **_Concepts_** : 
 • Adding a Pop-up Comment to a Cell
@@ -212,7 +200,23 @@ Before you begin your labs, you should familiarize yourself with some basic _Con
 • Stacking Multiple Attributes to a Cell
 <br>
 
-#### [ 5.6 Lab Create: Protecting Sheets](/wGetStarted/L-Create-Protecting.html)
+### [ 5.5 Lab Create: Using the Retain Feature](/wGetStarted/L-Create-RetainFeature.html)
+
+**_Concepts_** : 
+• How to Retain Formulas After Pulling Data
+<br>
+<hr>
+## Lab 6 : Special Features
+
+In this lab you will learn certain features that highlight key areas that can help in special situations.
+
+### [ 6.1 Lab Create: Working with Pivot Tables](/wGetStarted/L-Create-PivotTable.html)
+
+**_Concepts_** : 
+• Building a Pivot Table to Customize a Report
+<br>
+
+### [ 6.2 Lab Create: Protecting Sheets](/wGetStarted/L-Create-Protecting.html)
 
 **_Concepts_** : 
 • Adding Protection to a Sheets
@@ -220,38 +224,30 @@ Before you begin your labs, you should familiarize yourself with some basic _Con
 • Grouping and Ungrouping Columns
 <br>
 
-#### [ 5.7 Lab Create: Using Report Macro](/wGetStarted/L-Create-ReportMacro.html)
+### [ 6.3 Lab Create: Using Report Macro](/wGetStarted/L-Create-ReportMacro.html)
 
 **_Concepts_** : 
 • Creating a Report Macro
 <br>
 
-#### [ 5.8 Lab Create: Using the Retain Feature](/wGetStarted/L-Create-RetainFeature.html)
-
-**_Concepts_** : 
-• How to Retain Formulas After Pulling Data
-<br>
-
-
-
-#### [ 5.9 Lab Create: Interject Run On Open](/wGetStarted/L-Create-RunOnOpen.html)
+### [ 6.4 Lab Create: Interject Run On Open](/wGetStarted/L-Create-RunOnOpen.html)
 
 **_Concepts_** : 
 • How to Enable Interject to Pull Data Upon Opening a Report
 <br>
+<hr>
+## Lab 7 : Exporting Data
 
+This lab will focus on how to export a report once it is completed and utilizing Interject's distribution feature.
 
-### `Lab 6 : Exporting Data`
-
-
-#### [ 6.1 Lab Export: Quick Export and PDF](/wGetStarted/L-Export-QuickExportAndPDF.html)
+### [ 7.1 Lab Export: Quick Export and PDF](/wGetStarted/L-Export-QuickExportAndPDF.html)
 
 **_Concepts_** : 
 • How to Export a Report to a New Workbook
 • How to Export a Report to a New PDF
 <br>
 
-#### [ 6.2 Lab Export: Basic Distribution](/wGetStarted/L-Export-BasicDist.html)
+### [ 7.2 Lab Export: Basic Distribution](/wGetStarted/L-Export-BasicDist.html)
 
 **_Concepts_** : 
 • Setting up a Distribution Report
@@ -260,7 +256,7 @@ Before you begin your labs, you should familiarize yourself with some basic _Con
 • Distributing a Report via Email
 <br>
 
-#### [ 6.3 Lab Export: Advanced Distribution](/wGetStarted/L-Export-AdvancedDist.html)
+### [ 7.3 Lab Export: Advanced Distribution](/wGetStarted/L-Export-AdvancedDist.html)
 
 **_Concepts_** : 
 • Adding Prefixes and Suffixes to the Distributed Report

@@ -187,34 +187,34 @@ index:
   - sectiontitle: INTERJECT Function Index
     path: /wIndex/Excel-Function-Index.html
     section:
-    - sectiontitle: Data Functions
+    - sectiontitle: Data Pull Functions
       path: /wIndex/Data-Functions-Landing.html
+      section:
+        - title: ReportRange()
+          path: /wIndex/ReportRange.html
+        - title: ReportFixed()
+          path: /wIndex/ReportFixed.html
+        - title: ReportVariable()
+          path: /wIndex/ReportVariable.html
+        - title: ReportLookup()
+          path: /wIndex/ReportLookup.html
+    - sectiontitle: Data Save Functions
+      path: /wIndex/ReportSave.html
+      section:
+        - title: ReportSave()
+          path: /wIndex/ReportSave.html
+    - sectiontitle: Data Drill Functions
+      path: /wIndex/ReportDrill.html
       section:
         - title: ReportDrill()
           path: /wIndex/ReportDrill.html
-        - title: ReportFixed()
-          path: /wIndex/ReportFixed.html
-        - title: ReportLookup()
-          path: /wIndex/ReportLookup.html
+    - sectiontitle: Event Functions
+      path: /wIndex/Event-Functions-Landing.html
+      section:
         - title: ReportMacro()
           path: /wIndex/ReportMacro.html
-        - title: ReportRange()
-          path: /wIndex/ReportRange.html
         - title: ReportRun()
           path: /wIndex/ReportRun.html
-        - title: ReportSave()
-          path: /wIndex/ReportSave.html
-        - title: ReportVariable()
-          path: /wIndex/ReportVariable.html
-        - title: jDropdown()
-          path: /wIndex/jDropdown.html
-    - sectiontitle: Formatting Functions
-      path: /wIndex/Formatting-Functions-Landing.html
-      section:
-        - title: jFocus()
-          path: /wIndex/jFocus.html
-        - title: jFreezePanes()
-          path: /wIndex/jFreezePanes.html
         - title: ReportCalc()
           path: /wIndex/ReportCalc.html
         - title: ReportDefaults()
@@ -223,23 +223,23 @@ index:
           path: /wIndex/ReportGrouping.html  
         - title: ReportHideRowOrColumn()
           path: /wIndex/ReportHideRowOrColumn.html
-        - title: ReportMerge()
-          path: /wIndex/ReportMerge.html
     - sectiontitle: Helper Functions
       path: /wIndex/Helper-Functions.html
       section:
-        - title: jBinder()
-          path: /wIndex/jBinder.html
-        - title: jColumnDef()
-          path: /wIndex/jColumnDef.html
-        - title: jCombineIf()
-          path: /wIndex/jCombine_IF.html
+        - title: jDropdown()
+          path: /wIndex/jDropdown.html
+        - title: jFocus()
+          path: /wIndex/jFocus.html
+        - title: jFreezePanes()
+          path: /wIndex/jFreezePanes.html
         - title: jCombine()
           path: /wIndex/jCombine.html
+        - title: jCombineIf()
+          path: /wIndex/jCombine_IF.html
         - title: jDataPortal()
           path: /wIndex/jDataPortal.html
-        - title: jMergePoint()
-          path: /wIndex/jMergePoint.html
+        - title: jColumnDef()
+          path: /wIndex/jColumnDef.html
         - title: jRangeTag()
           path: /wIndex/jRangeTag.html
         - title: jWorkbookProperty()
