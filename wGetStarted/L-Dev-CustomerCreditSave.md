@@ -6,11 +6,13 @@ description: "This section will detail a full review of how the Interject save f
 ---
 ##  **Overview:**
 
-This section will detail a full review of how the Interject save feature works. Start by using the Customer Aging example. This lab will show how to design three user input fields into an existing report. The Interject platform will assist in creating a stored procedure that can be used in SQL Server to help facilitate the process. Other database engines or API methods can be used for the save process as well, but for simplicity you are focusing on SQL Server and a database stored procedure as the data source. You will be using the Customer Aging report, as you have already become familiar with its [ business use case ](/wAbout/Customer-Aging.html). 
+
+This section will detail a full review of how the Interject save feature works. Start by using the Customer Aging example. This lab will show how to design three user input fields into an existing report. The Interject platform will assist in creating a stored procedure that can be used in SQL Server to help facilitate the process. Other database engines or API methods can be used for the save process as well, but for simplicity you are focusing on SQL Server and a database stored procedure as the data source. You will be using the Customer Aging report, as you have already become familiar with its [business use case](/wAbout/Customer-Aging.html). 
+
 
 ###  Setting up the Data Portals: 
 
-This report uses the same database as  [**Dev: Customer Aging**](/wGetStarted/L-Dev-CustomerAging.html) and other reports, you do not need to create another data connection. Use the same connection as in the previous lab. The Data Portals for saving data are very similar to their Pull counterparts. 
+This report uses the same database as  [**Dev: Customer Aging**](/wGetStarted/L-Dev-CustomerAging.html) and other reports, you do not need to create another data connection. Use the same connection as in this previous lab. The Data Portals for saving data are very similar to their Pull counterparts. 
 
 **Step 1:** Navigate to the [Interject Portal](https://portal.gointerject.com/) Website, then select  **Data Portals** in the sidebar menu. 
 
@@ -196,7 +198,8 @@ In this example you are going to use  **Interject_ReturnError** and  **Interject
 **Step 1:** First, select the  **Pull** button and pull the data into the spreadsheet. 
 
 
-**Step 2:** In the excel sheet, click the cell with the ReportSave formula. Then  click  **Advanced Menu** in the Interject Ribbon. This button is a toggle, so if it is currently showing  **Simple Menu** do not click it. 
+
+**Step 2:** In the excel sheet, click the cell with the ReportSave formula. Then display the Advanced Menu in the Interject: If **Simple Menu** is displayed, click it to view the Advanced Menu.
 
 
 **Step 3:** Then, click the  **System** dropdown and select  **View SQL Template for ActiveCell** . Make sure you have the ReportSave cell selected. 
@@ -210,7 +213,7 @@ A window will pop up providing the developer with the SQL template used to creat
 Copy and paste the template code into the MSSQL Server from your Excel sheet. This template is a helpful starting point that includes the Data Portal parameters and pre-formatted test code, but more work is needed to construct the required data save. Here is an example test code to compare with, but yours will be different. Do not copy this code and use it for your report as it will not work. 
 
 
-<button class="collapsible">\[demo\].\[Northwind_Invoices_Pull_MyName\]</button>
+<button class="collapsible">\[demo\].\[Northwind_Credit_Save_MyName\]</button>
 <div markdown="1" class="panel">
 
 ```sql
@@ -306,7 +309,7 @@ Select 	@Interject_ReturnError as '@Interject_ReturnError'
 After getting the template, it is important to modify the procedure for what is needed. For example, the parameters are automatically set to max, so an easy change would be to set them to more realistic character lengths. 
 
 
-<button class="collapsible">\[demo\].\[Northwind_Invoices_Pull_MyName\]</button>
+<button class="collapsible">\[demo\].\[Northwind_Credit_Save_MyName\]</button>
 <div markdown="1" class="panel">
 
 ```sql

@@ -8,7 +8,9 @@ description: In this example, you will how to create a second report, Customer O
 
 ##  **Overview**
 
-In this example, you will how to create a second report, Customer Orders, that will be drilled to from the Customer Aging Report you built in the last lab. You should have already seen the Customer Orders report while reviewing the business use case in the lab. Continue to build the Interject configuration and database objects to support the report. 
+
+In this example, you will how to create a second report, Customer Orders, that will be drilled to from the Customer Aging Report you built in the [last lab](/wGetStarted/L-Dev-CustomerAging.html). You should have already seen the Customer Orders report while reviewing the business use case in the lab. Continue to build the INTERJECT configuration and database objects to support the report. 
+
 
 ###  Verifying the Data Connection 
 

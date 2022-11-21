@@ -19,6 +19,4 @@ Be sure to complete the simple data pull lab that preceded this topic before mov
 
 ###  [ Lab Dev: Customer Aging Detail ](/wGetStarted/L-Dev-CustomerAgingDetail.html)
 
-In Dev: Customer Aging Detail , you will create a third report, Customer Aging Detail, that will be drilled to from the Customer Aging Report. This report shows a customer's outstanding balance by individual invoice. 
-
-If the opportunity comes please update the description above. 
+In this example, you will learn to create a third report, Customer Aging Detail, that will be drilled to from the Customer Aging Report. This report shows a customer's outstanding balance by individual invoice. The Aging Detail is a more complex report than shown in the earlier lab [ Lab Developer: Customer Orders ](/wGetStarted/L-Dev-CustomerOrders.html), because it leverages two report formulas to create a report with subtotals. You should have already seen the Customer Aging Detail report while reviewing the business use case in the [ **Customer Aging in Real-World Walkthroughs** ](/wAbout/Customer-Aging.html). 

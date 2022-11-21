@@ -60,6 +60,10 @@ Sheet Protection expands upon the already existing protection functions in excel
 
 To use it, navigate to the Interject ribbon and click on the  **Sheet Protector** button in the  **Tools** section. 
 
+###  [ Lab Create: Using Report Macro ](/wGetStarted/L-Create-ReportMacro.html)
+
+The Report Macro function allows Interject to interact with public macros in Excel. These macros can be automatically run after pulling or clearning data.
+
 ###  [ Lab Create: Using the Retained Feature ](/wGetStarted/L-Create-RetainFeature.html)
 
 When using Interject to pull data into your spreadsheet, the report area will be cleared before new data is inserted. In some situations, you may want to bypass the clear action and retain some formulas, since pulling could remove formulas you have on other columns related to certain data rows.

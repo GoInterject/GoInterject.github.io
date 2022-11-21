@@ -7,13 +7,17 @@ description: A Connection is used with Data Portals so Interject can connect to 
 
 ##  **Overview**
 ---
-A Connection is used with Data Portals so Interject can connect to certain stored procedures within a database or to a custom website API. A single connection can be used by many Data Portals.  The database connection can support MS SQL Server OLEDB as well as ODBC. ODBC allows connection to any other relational database. Currently, Interject only supports direct connections with databases that support stored procedures. This includes Oracle, MySQL, MariaDB and many others.   
-For all other data sources, a custom website API can be created to connect the data to Interject. This is very similar to how a website application accesses its data layer. Using an API you can connect to PostgreSQL and noSQL databases like MongoDB. You can also use an API to connect to other cloud data APIs such as provided by SalesForce, Intacct, Netsuite, Quicken and many other cloud software services.   
+
+A Connection is used with Data Portals so INTERJECT can connect to certain stored procedures within a database or to a custom website API. A single connection can be used by many Data Portals.  The database connection can support MS SQL Server OLEDB as well as ODBC. ODBC allows connection to any other relational database. Currently, INTERJECT only supports direct connections with databases that support stored procedures. This includes Oracle, MySQL, MariaDB and many others.  
+ 
+For all other data sources, a custom website API can be created to connect the data to INTERJECT. This is very similar to how a website application accesses its data layer. Using an API you can connect to PostgreSQL and noSQL databases like MongoDB. You can also use an API to connect to other cloud data APIs such as provided by SalesForce, Intacct, Netsuite, Quicken and many other cloud software services. 
+  
 Go directly to any topic below by clicking one of the links below. 
 
 ###  [ Lab Portal: API Connections ](/wPortal/L-Api-Connection.html)
 
-An API can be used with a Data Connection to connect to any database, including noSQL databases, using standard development practices that are used to develop website applications. You can also connect to other website APIs such as those from Salesforce, Netsuite, Intacct and many others.   
+An API can be used with a Data Connection to connect to any database, including noSQL databases, using standard development practices that are used to develop website applications. You can also connect to other website APIs such as those from Salesforce, Netsuite, Intacct and many others.
+   
 In this lab, you will set up a simple connection to an example API. Detailed documentation on using a custom data API’s are currently under development. Please contact us for more information if needed 
 
 ###  [ Lab Portal: Database Connection ](/wPortal/L-Database-Connection.html)

@@ -10,8 +10,9 @@ description: In this example, you will be setting up a simple drill to the custo
 
 In this example, you will be setting up a simple drill to the customer orders history. It is a great use case for creating your first drill. 
 
-
-
+<blockquote class=lab_info>
+  If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 4 Drilling To Data > Lab 4.1 Customer Aging.
+</blockquote>
 
 ###  Unfreezing the Excel Sheet 
 
