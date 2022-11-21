@@ -7,15 +7,15 @@ description: This is the base installer
 
 ##  **Overview:**
 
-INTERJECT aims to make the installation process as simple and painless as possible. This installation is intended for single user computers. 
+Interject aims to make the installation process as simple and painless as possible. This installation is intended for single user computers. 
 
 **Note:** If you are installing on a Windows Server machine, [click here](/wAbout/SharedComputer.html) for installing on a shared computer.
 
-###  Installing INTERJECT 
+###  Installing Interject 
 
 **Step 1:** Navigate to  <a target="blank" href="https://portal.gointerject.com/login.html">https://portal.gointerject.com</a>
 
-**Step 2:** If you have an existing account, log in to the portal website with the same credentials used for the INTERJECT Excel Add-in. If you do not have an account, go [ here. ](https://portal.gointerject.com/invite.html?mode=create)
+**Step 2:** If you have an existing account, log in to the portal website with the same credentials used for the Interject Excel Add-in. If you do not have an account, go [ here. ](https://portal.gointerject.com/invite.html?mode=create)
 
 **Step 3:** Once logged in, go to the download page. 
 
@@ -49,7 +49,7 @@ INTERJECT aims to make the installation process as simple and painless as possib
 ![](/images/SingleUser/08.png)
 <br>
 
-**Step 7:** Running the file will launch the INTERJECT Excel Add-In Setup Wizard, which will guide you through the Install Process. Select **Next.**
+**Step 7:** Running the file will launch the Interject Excel Add-In Setup Wizard, which will guide you through the Install Process. Select **Next.**
 
 ![](/images/SingleUser/09.png)
 <br>

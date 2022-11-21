@@ -11,10 +11,10 @@ class PageDirs(Enum):
     WPORTAL = "wPortal"
     WTROUBLESHOOT = "wTroubleshoot"
     BFINANCIALS = "bApps\\bFinancials"
-    INTERJECTTRAININGBUDGET = "bApps\\InterjectTraining\\Budget"
-    INTERJECTTRAININGCAPITAL = "bApps\\InterjectTraining\\Capital"
-    INTERJECTTRAININGPROJECTIONS = "bApps\\InterjectTraining\\Projections"
-    INTERJECTTRAININGWIP = "bApps\\InterjectTraining\\WIP"
+    InterjectTRAININGBUDGET = "bApps\\InterjectTraining\\Budget"
+    InterjectTRAININGCAPITAL = "bApps\\InterjectTraining\\Capital"
+    InterjectTRAININGPROJECTIONS = "bApps\\InterjectTraining\\Projections"
+    InterjectTRAININGWIP = "bApps\\InterjectTraining\\WIP"
 
 
 def get_par_dir(n, file):

@@ -48,13 +48,13 @@ Once this is completed, the Range Tag formulas should summarize what was setup a
 
 <br> 
 
-**Step 6:** Now it is time to create the Distribution worksheet that generates the distribution. You can create this by using the **Export Book** menu item in the INTERJECT ribbon. The Export and Distribution window will appear and click **Create Distribution Sheet**. 
+**Step 6:** Now it is time to create the Distribution worksheet that generates the distribution. You can create this by using the **Export Book** menu item in the Interject ribbon. The Export and Distribution window will appear and click **Create Distribution Sheet**. 
 
 ![](/images/L-Export-BasicDist/07.png)
 
 <br> 
 
-INTERJECT will create the Distribution worksheet in the existing workbook and will search for existing Range Tag formulas in the workbook. The screenshot below illustrates the typical defaults that will be used when initially created. 
+Interject will create the Distribution worksheet in the existing workbook and will search for existing Range Tag formulas in the workbook. The screenshot below illustrates the typical defaults that will be used when initially created. 
 
 1. The Book column should default to 1, noting the first workbook build to be created. More can be added if needed to the same distribution sheet. 
 2. The worksheet names for those that have Range Tag formulas should be added to the Tab Selection columns by default. 
@@ -66,9 +66,9 @@ INTERJECT will create the Distribution worksheet in the existing workbook and wi
 
 **Note:** The **Enabled?** column contains a drop down list of options that can be applied to the tabs, on an individual basis, which are being created. 
 
-* **Blank -** When the enabled column is set to blank, INTERJECT interprets this as a **Yes** value and automatically pulls the data after the report is created. 
+* **Blank -** When the enabled column is set to blank, Interject interprets this as a **Yes** value and automatically pulls the data after the report is created. 
 * **Yes -** When this column value is set to **Yes** then distribution report builder will automatically create the reports **And** pull the data. 
-* **No -** In the instance that the value is set to **No,** INTERJECT will not build that report tab. 
+* **No -** In the instance that the value is set to **No,** Interject will not build that report tab. 
 * **Prep -** When set to **Prep** the report tabs will be built out, however, the data will not be pulled automatically. 
 
 **Step 7:** Edit the distribution defaults further. In this example, you want to create three copies of the **ProfitAndLoss** worksheet, one for each location **7001**, **7002**, and **7120**. And you want to use the month **2002-05**. Use the screenshot below as a guide, and type in the values for columns **Book**, **Worksheet Tabs**, **Location**, and **Month**. 
@@ -94,7 +94,7 @@ Each output has it's own purpose and use. Each is detailed below.
 | Print       | Prints the Excel file to a designated printer or the default printer.                                                              |
 | Open        | Opens the Excel file.                                                                                                              |
 
-**Step 9:** To run the distribution, from the Distribution worksheet click the **Export Book** menu item in the INTERJECT ribbon. Click the **Run Distribution** button that appears in the next window. 
+**Step 9:** To run the distribution, from the Distribution worksheet click the **Export Book** menu item in the Interject ribbon. Click the **Run Distribution** button that appears in the next window. 
 
 ![](/images/L-Export-BasicDist/11.png)
 
@@ -144,7 +144,7 @@ Now you are going to do the same distribution, but this time you will save to a 
 
 Navigate back to the page to distribute the workbook via email. 
 
-**Step 1:** First, you need to make sure the email is set up properly. The email distribution requires an SMTP server set up in the [ INTERJECT Portal Website. ](https://portal.gointerject.com/profile.html) The Organizational Profile settings area contains the SMTP information that must be completed beforehand. 
+**Step 1:** First, you need to make sure the email is set up properly. The email distribution requires an SMTP server set up in the [ Interject Portal Website. ](https://portal.gointerject.com/profile.html) The Organizational Profile settings area contains the SMTP information that must be completed beforehand. 
 
 ![](/images/L-Export-BasicDist/18.png)
 

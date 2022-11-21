@@ -7,14 +7,14 @@ description: ReportHideRowOrColumn() utilizes cell the values "Show" and "Hide" 
 
 ## Function Summary
 
-ReportHideRowOrColumn() utilizes cell the values "Show" and "Hide" as input parameters. These parameters are set within the RowOrColumnRange argument, wherein if a cell within that range has a value of "Hide" then the function will hide that column or row depending on which type of cell range is being used. Additionally, this function is triggered on an INTERJECT Action+Event combination. Also, this function requires a [ReportCalc()](/wIndex/ReportCalc.html) function to be executed in the INTERJECT call stack before the ReportHideRowOrColumn() is called in the stack. This is because the ReportHideRowOrColumn() function requires the most up to date cell formula outputs (if formulas are being used to create the "Show"/"Hide" cell values), which does not occur if the ReportHideRowOrColumn() function is called directly after a trigger combination is called.  There are several trigger combinations that can be utilized by ReportGrouping() that are listed [here](/wIndex/ReportHideRowOrColumn.html#trigger-combination-list).
+ReportHideRowOrColumn() utilizes cell the values "Show" and "Hide" as input parameters. These parameters are set within the RowOrColumnRange argument, wherein if a cell within that range has a value of "Hide" then the function will hide that column or row depending on which type of cell range is being used. Additionally, this function is triggered on an Interject Action+Event combination. Also, this function requires a [ReportCalc()](/wIndex/ReportCalc.html) function to be executed in the Interject call stack before the ReportHideRowOrColumn() is called in the stack. This is because the ReportHideRowOrColumn() function requires the most up to date cell formula outputs (if formulas are being used to create the "Show"/"Hide" cell values), which does not occur if the ReportHideRowOrColumn() function is called directly after a trigger combination is called.  There are several trigger combinations that can be utilized by ReportGrouping() that are listed [here](/wIndex/ReportHideRowOrColumn.html#trigger-combination-list).
 
 ### Function Arguments
 
 |Argument Name|Description|Default|Optional|
 |:---|:---|:---|:---|
-|OnPullSaveOrBoth|This defines the instance in which an INTERJECT action will trigger the function to be executed.||NO|
-|OnClearRunOrBoth|This defines which INTERJECT event will trigger the function to be executed.                    ||NO|
+|OnPullSaveOrBoth|This defines the instance in which an Interject action will trigger the function to be executed.||NO|
+|OnClearRunOrBoth|This defines which Interject event will trigger the function to be executed.                    ||NO|
 |RowOrColumnRange| Specifies a cell range that is either a single column or a single row but **NOT** both.||NO|
 |Disabled| This disables the function if the value is "TRUE" and is used when testing a report.|FALSE|YES|
 
@@ -37,33 +37,33 @@ To view this example with more context it is sourced from [Lab Create: HidingRow
 
 
 ### Trigger Combination List
-The execution of the ReportDefaults() formatting function is determined by a combination of an INTERJECT action and an INTERJECT event. An action is a pull or save whereas an event is a clear or a run.
+The execution of the ReportDefaults() formatting function is determined by a combination of an Interject action and an Interject event. An action is a pull or save whereas an event is a clear or a run.
 
 | Argument Name    | Function Event Trigger Options | Option Explanation                                                                            |
 |------------------|--------------------------------|-----------------------------------------------------------------------------------------------|
 | **Trigger 1**    |                                |                                                                                               |
-| OnPullSaveOrBoth | "Pull"                         | This will trigger the default to execute when the user performs a Pull-Run INTERJECT event.   |
+| OnPullSaveOrBoth | "Pull"                         | This will trigger the default to execute when the user performs a Pull-Run Interject event.   |
 | OnClearRunOrBoth | "Run"                          |                                                                                               |
 | **Trigger 2**    |                                |                                                                                               |
-| OnPullSaveOrBoth | "Pull"                         | This will trigger the default to execute when the user performs a Pull-Clear INTERJECT event. |
+| OnPullSaveOrBoth | "Pull"                         | This will trigger the default to execute when the user performs a Pull-Clear Interject event. |
 | OnClearRunOrBoth | "Clear"                        |                                                                                               |
 | **Trigger 3**    |                                |                                                                                               |
-| OnPullSaveOrBoth | "Save"                         | This will trigger the default to execute when the user performs a Save-Run INTERJECT event.   |
+| OnPullSaveOrBoth | "Save"                         | This will trigger the default to execute when the user performs a Save-Run Interject event.   |
 | OnClearRunOrBoth | "Run"                          |                                                                                               |
 | **Trigger 4**    |                                |                                                                                               |
-| OnPullSaveOrBoth | "Save"                         | This will trigger the default to execute when the user performs a Save-Clear INTERJECT event. |
+| OnPullSaveOrBoth | "Save"                         | This will trigger the default to execute when the user performs a Save-Clear Interject event. |
 | OnClearRunOrBoth | "Clear"                        |                                                                                               |
 | **Trigger 5**    |                                |                                                                                               |
-| OnPullSaveOrBoth | "Both"                         | This will trigger the default to execute when the user performs a Save-Run, Save-Clear, Pull-Run, Pull-Clear INTERJECT event. |
+| OnPullSaveOrBoth | "Both"                         | This will trigger the default to execute when the user performs a Save-Run, Save-Clear, Pull-Run, Pull-Clear Interject event. |
 | OnClearRunOrBoth | "Both"                         |                                                                                               |
 | **Trigger 6**    |                                |                                                                                               |
-| OnPullSaveOrBoth | "Both"                         | This will trigger the default to execute when the user performs a Save-Clear or a Pull-Clear INTERJECT event. |
+| OnPullSaveOrBoth | "Both"                         | This will trigger the default to execute when the user performs a Save-Clear or a Pull-Clear Interject event. |
 | OnClearRunOrBoth | "Clear"                        |                                                                                               |
 | **Trigger 7**    |                                |                                                                                               |
-| OnPullSaveOrBoth | "Save"                         | This will trigger the default to execute when the user performs a Save-Clear or a Save-Run INTERJECT event. |
+| OnPullSaveOrBoth | "Save"                         | This will trigger the default to execute when the user performs a Save-Clear or a Save-Run Interject event. |
 | OnClearRunOrBoth | "Both"                        |                                                                                               |
 | **Trigger 8**    |                                |                                                                                               |
-| OnPullSaveOrBoth | "Pull"                         | This will trigger the default to execute when the user performs a Pull-Clear or a Pull-Run INTERJECT event. |
+| OnPullSaveOrBoth | "Pull"                         | This will trigger the default to execute when the user performs a Pull-Clear or a Pull-Run Interject event. |
 | OnClearRunOrBoth | "Both"                        |                                                                                               |
 
 ### Required Function List

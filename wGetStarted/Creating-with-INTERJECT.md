@@ -1,12 +1,12 @@
 ---
-title: Creating with INTERJECT
+title: Creating with Interject
 layout: custom
 keywords: [create, reports, basic, publishing]
 description: This section is for report writers who need to create or modify reports. You will run through basic modification, creation, and publishing of reports.
 ---
 ***
 
-##  **Creating with INTERJECT**
+##  **Creating with Interject**
 
 This section is for report writers who need to create or modify reports. You will run through basic modification, creation, and publishing of reports. Feel free to [ contact ](mailto:help@gointerject.com) us if you cannot find your answer in these sections. 
 
@@ -15,7 +15,7 @@ This section is for report writers who need to create or modify reports. You wil
 
 ###  [ Modifying an Existing Report ](/wGetStarted/Modifying-an-Existing-Report.html)
 
-Reporting needs change often. Account details, specific formatting, even spreadsheet formulas require modification, that is why INTERJECT's reports are so highly customizable using familiar spreadsheet knowledge. This section walks through common report modifications using [ Customer Aging ](/wGetStarted/L-Modify-CustomerAging.html), [ Inventory ](/wGetStarted/L-Modify-InventoryReport.html), and [ Financial ](/wGetStarted/L-Modify-FinancialReport.html) reports as an example. 
+Reporting needs change often. Account details, specific formatting, even spreadsheet formulas require modification, that is why Interject's reports are so highly customizable using familiar spreadsheet knowledge. This section walks through common report modifications using [ Customer Aging ](/wGetStarted/L-Modify-CustomerAging.html), [ Inventory ](/wGetStarted/L-Modify-InventoryReport.html), and [ Financial ](/wGetStarted/L-Modify-FinancialReport.html) reports as an example. 
 
   
 
@@ -29,7 +29,7 @@ This section details how to create reports from scratch. Here, you will walk thr
 
 ###  [ Fixed and Variable Reports ](/wGetStarted/Fixed-and-Variable-Reports.html)
 
-Reports often require various formats and subtotal sections, and this is especially true for financial reports. This section goes through several, more advanced report examples: [ Inventory ](/wGetStarted/L-Modify-InventoryReport.html), [ Financial ](/wGetStarted/L-Modify-FinancialReport.html) and [ Customer Aging Detail ](/wGetStarted/L-Drill-CustomerAging.html). These will illustrate how INTERJECT provides a number of options for your reporting needs. 
+Reports often require various formats and subtotal sections, and this is especially true for financial reports. This section goes through several, more advanced report examples: [ Inventory ](/wGetStarted/L-Modify-InventoryReport.html), [ Financial ](/wGetStarted/L-Modify-FinancialReport.html) and [ Customer Aging Detail ](/wGetStarted/L-Drill-CustomerAging.html). These will illustrate how Interject provides a number of options for your reporting needs. 
 
   
 
@@ -48,7 +48,7 @@ When manually entering different filter values, it can be difficult to remember 
 
 ###  [ Lab Create: Working with Pivot Tables ](/wGetStarted/L-Create-PivotTable.html)
 
-Pivot tables are excellent tools to help us find answers quickly. INTERJECT can help simplify pivot table presentation and distribution. 
+Pivot tables are excellent tools to help us find answers quickly. Interject can help simplify pivot table presentation and distribution. 
 
 ###  [ Lab Create: Special Column Definitions ](/wGetStarted/L-Create-SpecColDefs.html)
 
@@ -56,9 +56,9 @@ Special Column Definitions are optional tags that bring out additional features 
 
 ###  [ Lab Create: Protecting Sheets ](/wGetStarted/L-Create-Protecting.html)
 
-Sheet Protection expands upon the already existing protection functions in excel but brings with it the INTERJECT UI and security rights. 
+Sheet Protection expands upon the already existing protection functions in excel but brings with it the Interject UI and security rights. 
 
-To use it, navigate to the INTERJECT ribbon and click on the  **Sheet Protector** button in the  **Tools** section. 
+To use it, navigate to the Interject ribbon and click on the  **Sheet Protector** button in the  **Tools** section. 
 
 ###  [ Lab Create: Using Report Macro ](/wGetStarted/L-Create-ReportMacro.html)
 
@@ -66,19 +66,19 @@ The Report Macro function allows Interject to interact with public macros in Exc
 
 ###  [ Lab Create: Using the Retained Feature ](/wGetStarted/L-Create-RetainFeature.html)
 
-When using INTERJECT to pull data into your spreadsheet, the report area will be cleared before new data is inserted. In some situations, you may want to bypass the clear action and retain some formulas, since pulling could remove formulas you have on other columns related to certain data rows.
+When using Interject to pull data into your spreadsheet, the report area will be cleared before new data is inserted. In some situations, you may want to bypass the clear action and retain some formulas, since pulling could remove formulas you have on other columns related to certain data rows.
 
 ###  [ Lab Create: Updating the Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary.html)
 
 The Report Library is how you share reports with other users while tracking versions for internal audit controls. Report Library is a simple and easy-access center for sharing interactive spreadsheet reports and applications to your entire organization. 
 
-### [ Lab Create: INTERJECT Run On Open](/wGetStarted/L-Create-RunOnOpen.html)
+### [ Lab Create: Interject Run On Open](/wGetStarted/L-Create-RunOnOpen.html)
 
-Some reports require default values, settings, or have summary pages that must be pulled before others in order for the report to function properly. Using the Run on Open INTERJECT property will auto-run the first tab that appears. 
+Some reports require default values, settings, or have summary pages that must be pulled before others in order for the report to function properly. Using the Run on Open Interject property will auto-run the first tab that appears. 
 
 ###  [ Exporting Reports ](/wGetStarted/Exporting-Reports.html)
 
-INTERJECT reports can be published or exported when needed. In most situations, INTERJECT reports are shared like a web page, where all end users have access but can only see cost centers they have rights to. Still, there are times when reports must be saved to file folders or emailed, and this section walks through the specifics of distribution and all the available methods. 
+Interject reports can be published or exported when needed. In most situations, Interject reports are shared like a web page, where all end users have access but can only see cost centers they have rights to. Still, there are times when reports must be saved to file folders or emailed, and this section walks through the specifics of distribution and all the available methods. 
 
   
 

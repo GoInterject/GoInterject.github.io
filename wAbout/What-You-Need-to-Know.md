@@ -2,47 +2,47 @@
 title: What You Need to Know
 layout: custom
 keywords: [about, scalability, report library]
-description: INTERJECT was built for large companies with hundreds of users that run thousands of reports each day. INTERJECT commonly handles report volumes over of 300,000 per month, and we can manage much, much more.
+description: Interject was built for large companies with hundreds of users that run thousands of reports each day. Interject commonly handles report volumes over of 300,000 per month, and we can manage much, much more.
 ---
 
 ###  At a Glance 
 
-Finding integrated reporting solutions to fit your needs is difficult enough, let alone finding one that can scale with your company's growth. INTERJECT was built for large companies with hundreds of users that run thousands of reports each day.  INTERJECT commonly handles report volumes over  of 300,000 per month, and  we  can manage much, much more. 
+Finding integrated reporting solutions to fit your needs is difficult enough, let alone finding one that can scale with your company's growth. Interject was built for large companies with hundreds of users that run thousands of reports each day.  Interject commonly handles report volumes over  of 300,000 per month, and  we  can manage much, much more. 
 
-INTERJECT  also fits within the specific needs of smaller organizations and is a particular benefit since it can scale with the company as it grows. In business today, data is exploding all around us, and the reporting needs of an organization never slow down. 
+Interject  also fits within the specific needs of smaller organizations and is a particular benefit since it can scale with the company as it grows. In business today, data is exploding all around us, and the reporting needs of an organization never slow down. 
 
-INTERJECT gives you total control of your Excel spreadsheets. We go to great lengths to provide rich data functionality while "letting Excel be Excel." 
+Interject gives you total control of your Excel spreadsheets. We go to great lengths to provide rich data functionality while "letting Excel be Excel." 
 
 ###  Key Points On Scalability: 
 
 ####  Spans small and large organizations 
 
-INTERJECT is an affordable starting place for growing small and mid-sized companies. But it's built with large enterprises in mind, so we help ensure all future needs are met. 
+Interject is an affordable starting place for growing small and mid-sized companies. But it's built with large enterprises in mind, so we help ensure all future needs are met. 
 
 ####  Internally manageable 
 
-Any scalable solution must be manageable to be effective. INTERJECT leverages common technologies to accomplish tasks your IT department will appreciate. Overall, they will love INTERJECT's low cost of ownership. 
+Any scalable solution must be manageable to be effective. Interject leverages common technologies to accomplish tasks your IT department will appreciate. Overall, they will love Interject's low cost of ownership. 
 
 ####  Automating hard-to-reach places in your organization 
 
-INTERJECT helps seal the cracks in existing software and provides bridges connecting disparate systems. We help everything work together so existing software investments can scale even further, and so costly software replacements are delayed. 
+Interject helps seal the cracks in existing software and provides bridges connecting disparate systems. We help everything work together so existing software investments can scale even further, and so costly software replacements are delayed. 
 
 ####  Scalable solutions are in your control 
 
-Purchasing key software can leave you dependent on vendors for costly customizations. This prohibits it's practical use over time. INTERJECT hands the control of any and all reporting solutions to your IT department or business analysts. Since INTERJECT leverages common database and cloud API technologies, it lets organizations grow their systems internally. 
+Purchasing key software can leave you dependent on vendors for costly customizations. This prohibits it's practical use over time. Interject hands the control of any and all reporting solutions to your IT department or business analysts. Since Interject leverages common database and cloud API technologies, it lets organizations grow their systems internally. 
 
-###  When you Start Using INTERJECT Remember: 
+###  When you Start Using Interject Remember: 
 
-####  Changing your spreadsheets will not alter INTERJECT's functionality   
-The heart of INTERJECT's functionality is that reports and applications are stored in a central server where they cannot be changed by spreadsheet users. The spreadsheet is simply the front-end. Should any modifications cause an error in reporting, users can revert to the prior spreadsheet file.   
+####  Changing your spreadsheets will not alter Interject's functionality   
+The heart of Interject's functionality is that reports and applications are stored in a central server where they cannot be changed by spreadsheet users. The spreadsheet is simply the front-end. Should any modifications cause an error in reporting, users can revert to the prior spreadsheet file.   
 
-####  The INTERJECT data functionality is attached to Excel files 
+####  The Interject data functionality is attached to Excel files 
 
-Save files, make new copies, open them again, and we can still update the report. Just open them in a computer with INTERJECT. Most types of reports ( [ Data Lists ](/wAbout/Tabular-vs-Data-Cells.html) ) are easily shareable to non-INTERJECT users via spreadsheet files. When a returned file is opened in INTERJECT, all data features are retained. 
+Save files, make new copies, open them again, and we can still update the report. Just open them in a computer with Interject. Most types of reports ( [ Data Lists ](/wAbout/Tabular-vs-Data-Cells.html) ) are easily shareable to non-Interject users via spreadsheet files. When a returned file is opened in Interject, all data features are retained. 
 
 ####  The report library protects prior versions 
 
-When spreadsheet report templates are saved in the INTERJECT Report Library, they are available to others in an INTERJECT client profile. Users can open the file and use it. If a new version is uploaded to the Report Library, any user that selects that report will have the latest version. A file can always be saved in a personal folder to experiment with possible spreadsheet changes, without altering data. To help with new report development, the Report Library can handle the "Dev," "Test," and "Live" stages of a report life-cycle. Click [ here ](/wAbout/Report-Library-Basics.html) to learn more about the Report Library. 
+When spreadsheet report templates are saved in the Interject Report Library, they are available to others in an Interject client profile. Users can open the file and use it. If a new version is uploaded to the Report Library, any user that selects that report will have the latest version. A file can always be saved in a personal folder to experiment with possible spreadsheet changes, without altering data. To help with new report development, the Report Library can handle the "Dev," "Test," and "Live" stages of a report life-cycle. Click [ here ](/wAbout/Report-Library-Basics.html) to learn more about the Report Library. 
 
 ####  Easily work with files outside the report library 
 
@@ -50,7 +50,7 @@ Whether using file folders or systems like _SharePoint_ or [ Box.com ](http://Bo
 
 ####  Enhancing spreadsheets with Data List Report Formulas 
 
-Most INTERJECT reports and applications use INTERJECT [ Data List ](/wAbout/Tabular-vs-Data-Cells.html) report formulas. These special formulas use the rows on top of a spreadsheet to specify which columns are listed in the report and how they are presented. Columns can be moved or deleted, and new DataPortal supported columns can be added. Data Lists reports are designed for users to customize. 
+Most Interject reports and applications use Interject [ Data List ](/wAbout/Tabular-vs-Data-Cells.html) report formulas. These special formulas use the rows on top of a spreadsheet to specify which columns are listed in the report and how they are presented. Columns can be moved or deleted, and new DataPortal supported columns can be added. Data Lists reports are designed for users to customize. 
 
 ####  Enhancing spreadsheets with data cell formulas 
 

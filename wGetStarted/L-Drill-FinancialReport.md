@@ -63,7 +63,7 @@ Note the next argument, ScopeRange, is not used. It is an outdated argument.
 ![](/images/L-Drill-Financial/09.png)
 <br>
   
-**Step 7:** Now that you understand how to define a Pair, you have many more to create. The target report has several filters that make use easier when employed separately and in drilling to the report. You need to add a few more values to pass to the new report and clear the remaining filters that are not used in this drill. This is a key concept for INTERJECT drills. A report can be used by itself for its own purpose, but it can also be used as a drill from other reports. 
+**Step 7:** Now that you understand how to define a Pair, you have many more to create. The target report has several filters that make use easier when employed separately and in drilling to the report. You need to add a few more values to pass to the new report and clear the remaining filters that are not used in this drill. This is a key concept for Interject drills. A report can be used by itself for its own purpose, but it can also be used as a drill from other reports. 
 
 Now let's use the Function Wizard to edit the PairGroup() function by clicking on it in the Formula Bar as seen below. This will make it easier to create more Pairs() that will clear out the other filters in the target report. 
 
@@ -136,7 +136,7 @@ When you click away from TransferPairs, it shows a red **#NAME** ? to the right 
 
 ###  Executing the Drill 
 
-**Step 1:** Use [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) to pull the report. You can leave the panes open for the moment. They will not affect the drill feature. 
+**Step 1:** Use [ **Pull Data** ](/wGetStarted/Interject-Ribbon-Menu-Items.html) to pull the report. You can leave the panes open for the moment. They will not affect the drill feature. 
 
 ![](/images/L-Drill-Financial/18.png)
 <br>

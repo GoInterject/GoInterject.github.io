@@ -2,16 +2,16 @@
 title: Installing - Shared Computer
 layout: custom
 keywords: [Multiple Users, Server]
-description: This is the multi-user to one computer installation of INTERJECT.
+description: This is the multi-user to one computer installation of Interject.
 ---
 
 ##  **Overview:**
 
-Shared Computer installation installs a multi-user instance of INTERJECT on one computer, such as a shared server. Since INTERJECT's Addin Manager is used to manage independent settings for multiple users, this installation is dependant on the Add-in Manager. In order to run Per-Computer installation, you must have administrative-elevated rights. 
+Shared Computer installation installs a multi-user instance of Interject on one computer, such as a shared server. Since Interject's Addin Manager is used to manage independent settings for multiple users, this installation is dependant on the Add-in Manager. In order to run Per-Computer installation, you must have administrative-elevated rights. 
 
-###  Installing INTERJECT on Multi-User Systems 
+###  Installing Interject on Multi-User Systems 
 
-**Step 1:** Log in to the [**INTERJECT website portal**](https://portal.gointerject.com/login.html). If you do not have an account go [ here. ](https://portal.gointerject.com/invite.html?mode=create) <!--best practices for documentation say to avoid pointing users to a url using a "click here" type of method. Instead, link directly to descriptive text within a sentence, as I've done above. (http://www.writethedocs.org/guide/writing/docs-principles/ > under Skimmable) -->
+**Step 1:** Log in to the [**Interject website portal**](https://portal.gointerject.com/login.html). If you do not have an account go [ here. ](https://portal.gointerject.com/invite.html?mode=create) <!--best practices for documentation say to avoid pointing users to a url using a "click here" type of method. Instead, link directly to descriptive text within a sentence, as I've done above. (http://www.writethedocs.org/guide/writing/docs-principles/ > under Skimmable) -->
 
 **Step 2:** Once logged in, go to the **download page.**
 
@@ -61,7 +61,7 @@ Shared Computer installation installs a multi-user instance of INTERJECT on one 
 
 
 
-**Step 9:** Step 9: Select "Next" when the **INTERJECT Excel Add-In Setup Wizard** launches.
+**Step 9:** Step 9: Select "Next" when the **Interject Excel Add-In Setup Wizard** launches.
 
 ![](/images/SharedComputer/33.png)
 <br>

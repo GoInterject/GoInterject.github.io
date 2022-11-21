@@ -13,7 +13,7 @@ The [ ReportVariable() ](/wIndex/ReportVariable.html) function directs data into
 
 ###  Report Variable 
 
-**Step 1:** Open the INTERJECT [ Report Library ](/wAbout/Report-Library-Basics.html) and select the **Interject Inventory Demo** in the **Interject Demos** folder. 
+**Step 1:** Open the Interject [ Report Library ](/wAbout/Report-Library-Basics.html) and select the **Interject Inventory Demo** in the **Interject Demos** folder. 
 
 ![](/images/L-Create-InventoryVar/01.png)
 
@@ -134,7 +134,7 @@ You can see that all the rows below **Chai** in the Product Name column are bold
 
 <br>
 
-**Step 12:** Now, add the filters.  In this Dataportal and report there are two filter options, **Min Qty In Stock** and **Product** **Name**. Open the Function Wizard again on cell C4 and enter  **Param( I14,  I15  )** into the  **Parameter** argument. This configures INTERJECT to look for the filters in cells I14 and I15. The order of cell references appearing in the Param() function must coincide with the order that was originally setup for the Dataportal. 
+**Step 12:** Now, add the filters.  In this Dataportal and report there are two filter options, **Min Qty In Stock** and **Product** **Name**. Open the Function Wizard again on cell C4 and enter  **Param( I14,  I15  )** into the  **Parameter** argument. This configures Interject to look for the filters in cells I14 and I15. The order of cell references appearing in the Param() function must coincide with the order that was originally setup for the Dataportal. 
 
 ![](/images/L-Create-InventoryVar/18.png)
 

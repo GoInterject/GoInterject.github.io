@@ -2,19 +2,19 @@
 title: Report Library Basics
 layout: custom
 keywords: [report library]
-description: The Report Library is a way for your team to share reports from a central location going beyond just a Sharepoint or a Shared Network Folder.The reports are uploaded to the library and can be accessed from any computer using Excel via INTERJECT.
+description: The Report Library is a way for your team to share reports from a central location going beyond just a Sharepoint or a Shared Network Folder.The reports are uploaded to the library and can be accessed from any computer using Excel via Interject.
 ---
 
 ##  **Overview**
 ---
 
-The Report Library is a way for your team to share reports from a central location going beyond just a Sharepoint or a Shared Network Folder.The reports are uploaded to the library and can be accessed from any computer using Excel via INTERJECT. The reports can also be versioned, so reverting to a previous report is simple. 
+The Report Library is a way for your team to share reports from a central location going beyond just a Sharepoint or a Shared Network Folder.The reports are uploaded to the library and can be accessed from any computer using Excel via Interject. The reports can also be versioned, so reverting to a previous report is simple. 
 
 ###  Getting to The Report Library 
 
-Once INTERJECT is installed, an INTERJECT Ribbon will be added to Excel. 
+Once Interject is installed, an Interject Ribbon will be added to Excel. 
 
-**Step 1:** To begin, open the Report Library by opening the INTERJECT ribbon menu. 
+**Step 1:** To begin, open the Report Library by opening the Interject ribbon menu. 
 
 ![](/images/ReportLibraryBasics/1.01GettingtoRL-InterjectTab.png)
 
@@ -22,7 +22,7 @@ Once INTERJECT is installed, an INTERJECT Ribbon will be added to Excel.
 
 ![](/images/ReportLibraryBasics/1.02GettingtoRL-ClickRL.png)
 
-**Step 3:** If not logged in already, an INTERJECT login window will pop up before seeing the Report Library. 
+**Step 3:** If not logged in already, an Interject login window will pop up before seeing the Report Library. 
 
 ![](/images/ReportLibraryBasics/1.03GettingtoRL-Login-Form.png)
 
@@ -73,7 +73,7 @@ The selected link will open the following report.
 
 ![](/images/ReportLibraryBasics/image2017-6-16_13-50-21.png)
 
-**Note:** Reports are stored in Excel Reports, therefore the reports do not need to be  saved locally. When report updates are finished, simply press [ **Save Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) from the INTERJECT ribbon menu, and the new changes will be saved back to the database. 
+**Note:** Reports are stored in Excel Reports, therefore the reports do not need to be  saved locally. When report updates are finished, simply press [ **Save Data** ](/wGetStarted/Interject-Ribbon-Menu-Items.html) from the Interject ribbon menu, and the new changes will be saved back to the database. 
 
 ![](/images/ReportLibraryBasics/image2017-8-7_9-53-27.png)
 
@@ -106,9 +106,9 @@ For how to add or change files in the Report Library, please check out [ Lab Cre
 
 [ Logging In ](/wAbout/Logging-In.html)
 
-[ Updating Interject ](/wAbout/Updating-INTERJECT.html)
+[ Updating Interject ](/wAbout/Updating-Interject.html)
 
-[ INTERJECT Ribbon Menu Items ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html)
+[ Interject Ribbon Menu Items ](/wGetStarted/Interject-Ribbon-Menu-Items.html)
 
 [ Real-World Walkthroughs ](/wAbout/Real-World-Walkthroughs.html)
 

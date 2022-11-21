@@ -7,7 +7,7 @@ description: This is a walkthrough on how to make the Interject pop-up windows t
 
 ## Overview
 
-At some screen resolutions, INTERJECT'S form window pop-ups can be small and sometimes difficult to read. Luckily, there is a way to quickly resize form windows, helping make them easier to read. You'll have the option to apply resizing to all sizable windows, or just the individual window you currently have open.
+At some screen resolutions, Interject'S form window pop-ups can be small and sometimes difficult to read. Luckily, there is a way to quickly resize form windows, helping make them easier to read. You'll have the option to apply resizing to all sizable windows, or just the individual window you currently have open.
 
 ### Quick Guide
 
@@ -31,7 +31,7 @@ You can also choose a custom sizing within a range of 75%-200% magnification.
 <button class="collapsible">Resizing Individual Windows Walk-through</button>
 <div markdown="1" class="panel">
 
-First, we'll resize just the window that opens when you click on the PULL Data button in the INTERJECT ribbon. The process is the same for all other INTERJECT windows that can be resized. 
+First, we'll resize just the window that opens when you click on the PULL Data button in the Interject ribbon. The process is the same for all other Interject windows that can be resized. 
 
 **Step 1:** Open Excel to a blank workbook.
 
@@ -48,7 +48,7 @@ First, we'll resize just the window that opens when you click on the PULL Data b
 ![](/images/Resizing-Form-Windows/03.png)
 <br>
 
-> There are 3 predefined sizes for INTERJECT windows:
+> There are 3 predefined sizes for Interject windows:
 >
 > * Small, which is the default 100% view size
 > * Medium, which is 125% view size
@@ -83,7 +83,7 @@ Your window will now be between the small size and the medium size, as shown bel
 <button class="collapsible">Resizing All Windows Walk-through</button>
 <div markdown="1" class="panel">
 
-In addition to sizing individual windows, INTERJECT allows you to use the current window view size to set all the other INTERJECT window sizes. This will allows you to apply the size you like to all pop-up windows.
+In addition to sizing individual windows, Interject allows you to use the current window view size to set all the other Interject window sizes. This will allows you to apply the size you like to all pop-up windows.
 
 **Step 1:** Open Excel to a blank workbook.
 

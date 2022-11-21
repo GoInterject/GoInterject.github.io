@@ -68,7 +68,7 @@ You are going to skip the ReportCodeToRun argument, since that is used only when
   
 
 
-**Step 5:** Complete the TransferPairs argument. In the Formula Bar, click inside the word **Pair()** within the text **PairGroup(Pair())**. See the illustration below. Once this is done, the Function Wizard will automatically change to help with the Pair() function. Type **B22:B24** in the **From** argument. This is the column where the CustomerID is going to be presented in the source report. By noting a range from row 22 to 24 in column B, INTERJECT will expand that range to the data presented in this source report. 
+**Step 5:** Complete the TransferPairs argument. In the Formula Bar, click inside the word **Pair()** within the text **PairGroup(Pair())**. See the illustration below. Once this is done, the Function Wizard will automatically change to help with the Pair() function. Type **B22:B24** in the **From** argument. This is the column where the CustomerID is going to be presented in the source report. By noting a range from row 22 to 24 in column B, Interject will expand that range to the data presented in this source report. 
 
 ![](/images/L-Drill-CustAging/08.png)
 <br>
@@ -82,7 +82,7 @@ You are going to skip the ReportCodeToRun argument, since that is used only when
   
 
 
-**Step 7:** Now that you have created the drill, you can use [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) to bring in the customers to the source worksheet. 
+**Step 7:** Now that you have created the drill, you can use [ **Pull Data** ](/wGetStarted/Interject-Ribbon-Menu-Items.html) to bring in the customers to the source worksheet. 
 
 ![](/images/L-Drill-CustAging/10.png)
 <br>
@@ -98,7 +98,7 @@ Below is when the data is pulled.
 
 ###  **Final Results**
 
-**Step 1:** To demonstrate the new drill, click on one of the customer rows and select **Drill on Data**. Click on the button **Do Drill** and INTERJECT will navigate to the target worksheet, bring in the CustomerID selected by the filter, then run the report. The screenshot below should resemble the result. 
+**Step 1:** To demonstrate the new drill, click on one of the customer rows and select **Drill on Data**. Click on the button **Do Drill** and Interject will navigate to the target worksheet, bring in the CustomerID selected by the filter, then run the report. The screenshot below should resemble the result. 
 
 ![](/images/L-Drill-CustAging/13.png)
 <br>

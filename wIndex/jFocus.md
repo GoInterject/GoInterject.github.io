@@ -7,7 +7,7 @@ description: The jFocus() formatting function is executed in conjunction with a 
 
 ## Function Summary
 
-The jFocus() formatting function is executed in conjunction with a freeze/unfreeze panes action performed in the [Quick Tools](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools) menu. It sets the excel focus (active cell selection) upon a freeze panes action. This is often conducted before uploading a report to the INTERJECT [Report Library](/wAbout/Report-Library-Basics.html) and is often paired with a [jFreezePanes](/wIndex/jFreezePanes.html) formatting function.
+The jFocus() formatting function is executed in conjunction with a freeze/unfreeze panes action performed in the [Quick Tools](/wGetStarted/Interject-Ribbon-Menu-Items.html#quick-tools) menu. It sets the excel focus (active cell selection) upon a freeze panes action. This is often conducted before uploading a report to the Interject [Report Library](/wAbout/Report-Library-Basics.html) and is often paired with a [jFreezePanes](/wIndex/jFreezePanes.html) formatting function.
 
 ### Function Arguments
 

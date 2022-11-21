@@ -6,7 +6,7 @@ sitemap: false
 
 ## Overview
 
-Hello and thank you for wanting to make a contribution to INTERJECT. These are the guidelines that we use to make sure our documentation is the highest quality, and consistent. Included in this document is the documentation cycle from creation to approval.
+Hello and thank you for wanting to make a contribution to Interject. These are the guidelines that we use to make sure our documentation is the highest quality, and consistent. Included in this document is the documentation cycle from creation to approval.
 
 ## Contributing Process Flow
 
@@ -192,7 +192,7 @@ Example:
 For screenshots of Excel content:
 
 * Include the Row and Column definitions in the spreadsheet to provide context, when appropriate.
-* Include the INTERJECT menu ribbon when it is being used. If the step depicted in the screenshot does not use the INTERJECT menu ribbon, do not include it in the screenshot (to save space).
+* Include the Interject menu ribbon when it is being used. If the step depicted in the screenshot does not use the Interject menu ribbon, do not include it in the screenshot (to save space).
 * Make sure that **no personal or confidential data is visible on the screen** when taking screenshots. Use mary@mycompany.com or joe@mycompany.com for masking report library and email data or remove all personal information using snagit to cover it. For login examples, use "dummy" login credentials. Use the dummy names consistently. If mary@mycompany.com is used once on a page, use it throughout that page.
 * With the exception of login boxes, **highlight all boxes from clicks to data entry** (use 2px red border). 
 * Remove the cursor from the page when the screen is being captured, unless the cursor is needed.

@@ -19,7 +19,7 @@ Financial reports can sometimes share the same row or column configurations. Rat
 <br> 
 
 
-**Step 2:** Once the report is open, select the [ Freeze Panes ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#diagnostics) menu in the View tab, and choose Unfreeze Panes. 
+**Step 2:** Once the report is open, select the [ Freeze Panes ](/wGetStarted/Interject-Ribbon-Menu-Items.html#diagnostics) menu in the View tab, and choose Unfreeze Panes. 
 
 ![](/images/L-Modify-Financial/02.png)
 
@@ -28,7 +28,7 @@ Financial reports can sometimes share the same row or column configurations. Rat
 
 Enter **7002** in the Location filter in cell M22 and month **2002-05** in cell M23. In the current report, values in L4 through N5 will populate based on the month entered. These cells were configured with spreadsheet formulas to automatically change based on the month entered. 
 
-The jColumnDef() formulas in cells L2 to N2 are important to understand. They exist in the Column Definition row 2, so INTERJECT understands what financial values to present for that column. 
+The jColumnDef() formulas in cells L2 to N2 are important to understand. They exist in the Column Definition row 2, so Interject understands what financial values to present for that column. 
 
 ![](/images/L-Modify-Financial/03.png)
 
@@ -48,7 +48,7 @@ Notice that [ jColumnDef() ](/wIndex/jColumnDef.html) draws its parameters from 
 <br> 
 
 
-**Step 4:** With the new columns added, use the [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) menu item. 
+**Step 4:** With the new columns added, use the [ **Pull Data** ](/wGetStarted/Interject-Ribbon-Menu-Items.html#pull-data) menu item. 
 
 ![](/images/L-Modify-Financial/06.png)
 
@@ -64,7 +64,7 @@ You can see that even with the expanded sheet, the data populates in the desired
 
 Now that you understand Column definitions a bit better, modify the report to create a budget to actual comparison report. Before doing this, cleanup the report to prepare it for the modifications you will make. 
 
-**Step 1:** Now, use the [ **Clear** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) button to remove the data on the report. 
+**Step 1:** Now, use the [ **Clear** ](/wGetStarted/Interject-Ribbon-Menu-Items.html#pull-data) button to remove the data on the report. 
 
 ![](/images/L-Modify-Financial/08.png)
 
@@ -135,7 +135,7 @@ After that, select the **1** icon to close all the groups. See the red arrow in 
 <br> 
 
 
-**Step 6:** Now that you have all of the columns set up for the Budget to Actual Comparison Report, you can pull the data. Just click [ Pull Data ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) in the ribbon menu. 
+**Step 6:** Now that you have all of the columns set up for the Budget to Actual Comparison Report, you can pull the data. Just click [ Pull Data ](/wGetStarted/Interject-Ribbon-Menu-Items.html#pull-data) in the ribbon menu. 
 
 ![](/images/L-Modify-Financial/18.png)
 

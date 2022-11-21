@@ -13,7 +13,7 @@ This example uses the [ Customer Aging ](/wAbout/Customer-Aging.html) demo to sh
 
 ###  Building the Report 
 
-**Step 1:** You will begin by using INTERJECT's [ **Report Builder** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder) to make a template for the report. Select NorthwindCustomers Data Portal and choose **Build Report Formula** to build the report. 
+**Step 1:** You will begin by using Interject's [ **Report Builder** ](/wGetStarted/Interject-Ribbon-Menu-Items.html#report-builder) to make a template for the report. Select NorthwindCustomers Data Portal and choose **Build Report Formula** to build the report. 
 
 ![](/images/L-Create-CustAgingDetail/01.png)
 
@@ -35,7 +35,7 @@ When the template is complete, it should look like the one below.
 
 ###  ReportRange() 
 
-**Step 1:** You can select [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) to see which columns are available. Since the [ ReportRange() ](/wIndex/ReportRange.html) function does not have a Column Definition defined, it should show all the columns with their column names. 
+**Step 1:** You can select [ **Pull Data** ](/wGetStarted/Interject-Ribbon-Menu-Items.html#pull-data) to see which columns are available. Since the [ ReportRange() ](/wIndex/ReportRange.html) function does not have a Column Definition defined, it should show all the columns with their column names. 
 
 ![](/images/L-Create-CustAgingDetail/06.png)
 

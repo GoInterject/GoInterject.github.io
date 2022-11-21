@@ -23,7 +23,7 @@ description: This lab shows how to connect to a database using a pre-existing da
 
   * **Name:** A unique friendly name used when connecting a Data Portal to the Data Connection 
   * **Description (optional):** description of what the connection string is connecting to 
-  * **Connection String:** used by INTERJECT to connect to the specified server  & database 
+  * **Connection String:** used by Interject to connect to the specified server  & database 
 
 ![](/images/Database/04.png)
 
@@ -37,7 +37,7 @@ The Database Data Connection is now ready to be used in a Data Portal.
 
 Before setting up a Data Connection to a Database, you can verify that the connection can be established within Excel. 
 
-**Step 1:** With Excel open, go to the [ INTERJECT Ribbon ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) menu and click **Advanced Menu** (Skip this step if already at Advanced menu) 
+**Step 1:** With Excel open, go to the [ Interject Ribbon ](/wGetStarted/Interject-Ribbon-Menu-Items.html) menu and click **Advanced Menu** (Skip this step if already at Advanced menu) 
 
 ![](/images/Database/06.png)
 

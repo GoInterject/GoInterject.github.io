@@ -36,7 +36,7 @@ In this case, the result should be **PROD \| BETA \| DEV:Mail**
 - "Database02"
 - "Database03"
 
-### INTERJECT Database and User Certificate
+### Interject Database and User Certificate
 
 These can be added to stored procedures with dynamic SQL.
 
@@ -99,7 +99,7 @@ What it will do:
 
 -	CREATE **[db_Interject]** database role
 -	IF SQL-AUTH: CREATE **[InterjectAppUser]** database user and add to database role
--	IF WIN-AUTH:  CREATE **[INTERJECT\InterjectUsers]** database user and add to database role
+-	IF WIN-AUTH:  CREATE **[Interject\InterjectUsers]** database user and add to database role
 -	APPLY PERMISSIONS TO SCHEMAS for database role
     - **[Client]** – EXECUTE
     - **[Custom]** – EXECUTE

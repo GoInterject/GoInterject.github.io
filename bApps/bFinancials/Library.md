@@ -2,7 +2,7 @@
 title: Report Library
 layout: custom
 keywords: [Account, Epicor, Companies]
-description: INTERJECT™ Financials for Epicor Enterprise Using the Interject report library.
+description: Interject™ Financials for Epicor Enterprise Using the Interject report library.
 ---
 
 ### Using the Report Library
@@ -11,7 +11,7 @@ Use the Report Library to access and share reports. Any computer on your network
 
 > To-do
 >
-> **Step 1:** Use Ctrl-Shift-L or click the Report Library button on the INTERJECT ribbon.
+> **Step 1:** Use Ctrl-Shift-L or click the Report Library button on the Interject ribbon.
 > Note: If not logged in already, you will be prompted to do so.
 >
 > **Step 2:** Select your desired folder on the left. 

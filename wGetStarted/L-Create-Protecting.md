@@ -2,21 +2,21 @@
 title: "Lab Create: Protecting Sheets"
 layout: custom
 keywords: [password, protecting, unprotecting, lock, locking, protect]
-description: INTERJECT provides an improved method to handle protecting sheets. The Sheet Protector window allows INTERJECT users with the Client Admin role to quickly protect or unprotect the sheet without any need to know the password.
+description: Interject provides an improved method to handle protecting sheets. The Sheet Protector window allows Interject users with the Client Admin role to quickly protect or unprotect the sheet without any need to know the password.
 ---
 * * *
 
 ##  Overview: 
 
-INTERJECT provides an improved method to handle protecting sheets. The Sheet Protector window allows INTERJECT users with the Client Admin role to quickly protect or unprotect the sheet without any need to know the password. The password is default to a very long text string and is managed centrally by the INTERJECT client profile. By doing this, users no longer have to remember passwords and they can be more complex to improve security. 
+Interject provides an improved method to handle protecting sheets. The Sheet Protector window allows Interject users with the Client Admin role to quickly protect or unprotect the sheet without any need to know the password. The password is default to a very long text string and is managed centrally by the Interject client profile. By doing this, users no longer have to remember passwords and they can be more complex to improve security. 
 
 When a sheet is protected using the Sheet Protector window, it will first attempt to use the current password. If that attempt fails it will try any previous passwords that are on file. If those do not work, it will also attempt to use a blank password. 
 
-In the following lab, you will protect a sheet and use the INTERJECT pull to illustrate how protected sheets continues to function properly. In this lab you use the Customer Aging report 
+In the following lab, you will protect a sheet and use the Interject pull to illustrate how protected sheets continues to function properly. In this lab you use the Customer Aging report 
 
 ###  Unprotecting Cells for User Input: 
 
-INTERJECT requires the user to have one of the following roles for your company. This removes the need to set a password. 
+Interject requires the user to have one of the following roles for your company. This removes the need to set a password. 
 
 * Client Admin 
 * Protector 
@@ -24,7 +24,7 @@ INTERJECT requires the user to have one of the following roles for your company.
 
 
 
-Protecting the sheet still allows for pulls, drills, and many other types of INTERJECT formulas and features. A crucial part of INTERJECT is to still allow users to utilize the input fields built into reports. Protecting the sheet with INTERJECT allows for user inputs to remain unlocked regardless of the user’s role. 
+Protecting the sheet still allows for pulls, drills, and many other types of Interject formulas and features. A crucial part of Interject is to still allow users to utilize the input fields built into reports. Protecting the sheet with Interject allows for user inputs to remain unlocked regardless of the user’s role. 
 
 
 One way of doing this is to first select cells  **C17, C18, C19**. 
@@ -77,11 +77,11 @@ In the title field, type  **Filters** then in the **Refers to cells** field, sel
 
 ###  Protecting the Sheet and Pulling Data 
 
-INTERJECT’s Sheet Protection tool has three options,  **Unprotect, Protect**, and  **Cancel**. 
+Interject’s Sheet Protection tool has three options,  **Unprotect, Protect**, and  **Cancel**. 
 
 * **Protect** has additional options, which includes choosing to protect the current sheet or the whole workbook. 
 * **Unprotect** will unprotect the current spreadsheet if the user has the correct role within our company. 
-* **Cancel** will close INTERJECT’s Sheet Protection tool. 
+* **Cancel** will close Interject’s Sheet Protection tool. 
 
 Navigate to the Interject Ribbon and select  **Sheet Protector** then select  **Protect.**
 
@@ -135,7 +135,7 @@ Now, hold down the  **shift** key and select  **CustomerAccountDetail** to selec
 <br> 
 
 
-With these selected, navigate back to the INTERJECT ribbon and protect the sheet 
+With these selected, navigate back to the Interject ribbon and protect the sheet 
 
 ![](/images/L-Create-Protecting/14.jpg)   
 
@@ -147,7 +147,7 @@ This will protect all five of the sheets but leave sheets that were not selected
 
 ###  Special Consideration for Column Groupings 
 
-The INTERJECT Sheet Protector also allows for groupings to be expanded and contracted 
+The Interject Sheet Protector also allows for groupings to be expanded and contracted 
 
 ![](/images/L-Create-Protecting/15.jpg)   
 
@@ -155,7 +155,7 @@ The INTERJECT Sheet Protector also allows for groupings to be expanded and contr
 <br> 
 
 
-**Note:** INTERJECT leverages the existing sheet protector in native excel. For this reason, most of the restrictions and rights are the same. 
+**Note:** Interject leverages the existing sheet protector in native excel. For this reason, most of the restrictions and rights are the same. 
 
 Directly after protecting a sheet, groupings are still operational. 
 
@@ -185,7 +185,7 @@ Pulling the report will refresh the protection settings. One of the settings tha
 
 **Option 2:**
 
-The other way is to navigate to the INTERJECT Ribbon and click on the **Advanced** **Menu** to enter the advanced menu. 
+The other way is to navigate to the Interject Ribbon and click on the **Advanced** **Menu** to enter the advanced menu. 
 
 ![](/images/L-Create-Protecting/19.png)   
 

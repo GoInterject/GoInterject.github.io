@@ -2,7 +2,7 @@
 title: Reporting Capabilities
 layout: custom
 keywords: [Report, Epicor, Accounts]
-description: INTERJECT™ Financials for Epicor Enterprise comes with a robust inventory of pre-built reports, as well as extended capabilities to builf out custom reports.
+description: Interject™ Financials for Epicor Enterprise comes with a robust inventory of pre-built reports, as well as extended capabilities to builf out custom reports.
 ---
 
 ## Reporting Capabilities

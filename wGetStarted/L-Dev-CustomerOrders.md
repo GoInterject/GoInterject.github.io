@@ -8,7 +8,9 @@ description: In this example, you will how to create a second report, Customer O
 
 ##  **Overview**
 
+
 In this example, you will how to create a second report, Customer Orders, that will be drilled to from the Customer Aging Report you built in the [last lab](/wGetStarted/L-Dev-CustomerAging.html). You should have already seen the Customer Orders report while reviewing the business use case in the lab. Continue to build the INTERJECT configuration and database objects to support the report. 
+
 
 ###  Verifying the Data Connection 
 
@@ -37,9 +39,9 @@ Because this report uses the same database as the previous example, you do not n
 
 ###  Creating the Stored Procedure 
 
-A stored procedure or data API servers as a middle tier for an INTERJECT report. In this example, you are using a stored procedure. INTERJECT can retrieve one or more result sets from the stored procedure into the spreadsheet report. 
+A stored procedure or data API servers as a middle tier for an Interject report. In this example, you are using a stored procedure. Interject can retrieve one or more result sets from the stored procedure into the spreadsheet report. 
 
-The INTERJECT Website Portal allows you to create and manage data portals and reference stored procedures you create. Data portals are stored locally in your Excel session when you log into INTERJECT. When requesting data, INTERJECT creates a point-to-point connection with the intended data source. 
+The Interject Website Portal allows you to create and manage data portals and reference stored procedures you create. Data portals are stored locally in your Excel session when you log into Interject. When requesting data, Interject creates a point-to-point connection with the intended data source. 
 
 The steps below assume you are proficient with SQL Management Studio for Microsoft SQL Server and in creating stored procedures. If you need additional training in this area, please contact us at [ info@gointerject.com ](mailto:info@gointerject.com) . 
 
@@ -118,30 +120,30 @@ The steps below assume you are proficient with SQL Management Studio for Microso
 
 </div>
 
-**Step 2:** INTERJECT supports stored procedures natively. Here are a few key areas to note in the code above that help illustrate INTERJECT features. 
+**Step 2:** Interject supports stored procedures natively. Here are a few key areas to note in the code above that help illustrate Interject features. 
 
-  * Parameters: The parameters included in the stored procedure are the same parameters added to the data portal in a previous step. For each request, INTERJECT passes the formula parameter values from the spreadsheet configuration, along with system parameters, to the stored procedure. Output parameters are supported and can populate values in the spreadsheet, but they are not included in this example. 
+  * Parameters: The parameters included in the stored procedure are the same parameters added to the data portal in a previous step. For each request, Interject passes the formula parameter values from the spreadsheet configuration, along with system parameters, to the stored procedure. Output parameters are supported and can populate values in the spreadsheet, but they are not included in this example. 
 
 
 
 ![](/images/L-DevCustOrders/04.png)
 <br>
 
-  * Validation: The code above includes an example of validating the input from the formula parameter, **@CustomerName** . It limits the search text to 40 characters and displays an error when the length is exceeded. This error has a prefix, **UserNotice:** which tells INTERJECT to provide a message box with the text to the user as a response. Without the prefix, INTERJECT interprets the error as a generic error. 
+  * Validation: The code above includes an example of validating the input from the formula parameter, **@CustomerName** . It limits the search text to 40 characters and displays an error when the length is exceeded. This error has a prefix, **UserNotice:** which tells Interject to provide a message box with the text to the user as a response. Without the prefix, Interject interprets the error as a generic error. 
 
 
 
 ![](/images/L-DevCustOrders/05.png)
 <br>
 
-  * Select statements: Returning data to INTERJECT simply uses a select statement as shown below. More than one select statement can be returned at a time to reduce the connections needed to fully populate a complex report. You only have one select statement in this example. 
+  * Select statements: Returning data to Interject simply uses a select statement as shown below. More than one select statement can be returned at a time to reduce the connections needed to fully populate a complex report. You only have one select statement in this example. 
 
 
 
 ![](/images/L-DevCustOrders/06.png)
 <br>
 
-**Step 3:** It is important to test the stored procedure in the database before testing through the INTERJECT platform. The code below is an example that includes a test SQL statement. 
+**Step 3:** It is important to test the stored procedure in the database before testing through the Interject platform. The code below is an example that includes a test SQL statement. 
 
 <button class="collapsible">Example Test Script</button>
 <div markdown="1" class="panel">
@@ -165,7 +167,7 @@ When this code is executed, it returns the following result set.
 
 ###  Create The Report: 
 
-At this point you have a tested stored procedure that uses parameters to filter the results. An INTERJECT Data Connection is setup to go to your example database and you added an INTERJECT Data Portal to use that connection and is mapped to the stored procedure that was just created. You are ready to build the spreadsheet report. 
+At this point you have a tested stored procedure that uses parameters to filter the results. An Interject Data Connection is setup to go to your example database and you added an Interject Data Portal to use that connection and is mapped to the stored procedure that was just created. You are ready to build the spreadsheet report. 
 
 Fortunately, the documentation to build this report has already been presented in **Create: Customer Orders** and you likely have already completed it. The end result should look like the below screenshot. 
 

@@ -2,16 +2,16 @@
 title: "Lab Create: Working with Pivot Tables"
 layout: custom
 keywords: [pivot table, create, example]
-description: Pivot tables are a flexible and valuable tool for analyzing data in Excel. INTERJECT makes it easier to scale and distribute pivot tables. In this walk-through you will set up a pivot table based on an INTERJECT report.
+description: Pivot tables are a flexible and valuable tool for analyzing data in Excel. Interject makes it easier to scale and distribute pivot tables. In this walk-through you will set up a pivot table based on an Interject report.
 ---
 
 ##  **Overview**
 
-Pivot tables are a flexible and valuable tool for analyzing data in Excel. INTERJECT makes it easier to scale and distribute pivot tables. In this walk-through you will set up a pivot table based on an INTERJECT report. There are a couple advantages to combining INTERJECT with pivot tables. It provides the ability to build security into pivot table reports, users only see data relative to their credentials. Also, by allowing filters that are used at the database level, the amount of data in a user's pivot table is limited to data that is needed only for the analysis. 
+Pivot tables are a flexible and valuable tool for analyzing data in Excel. Interject makes it easier to scale and distribute pivot tables. In this walk-through you will set up a pivot table based on an Interject report. There are a couple advantages to combining Interject with pivot tables. It provides the ability to build security into pivot table reports, users only see data relative to their credentials. Also, by allowing filters that are used at the database level, the amount of data in a user's pivot table is limited to data that is needed only for the analysis. 
 
 ###  Building the Support Tab 
 
-**Step 1:** In this exercise, you will use the Customer Collections Demo from a previous [ Walk-through ](/wAbout/Customer-Aging.html). This demo can be found in the Report Library under the INTERJECT Demo folder as shown below. 
+**Step 1:** In this exercise, you will use the Customer Collections Demo from a previous [ Walk-through ](/wAbout/Customer-Aging.html). This demo can be found in the Report Library under the Interject Demo folder as shown below. 
 
 ![](/images/L-Create-PivotTable/01.png)
 
@@ -104,7 +104,7 @@ In the Year-Mth column in L21, type **=TEXT(I21,"yyyy-mm")**
 <br> 
 
 
-**Step 12:** Now that you have entered the fields, you can use [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) on the report, filtering for companies with **Market** in their names. First type **Market** in the filter cell C1 and then **Pull Data**. 
+**Step 12:** Now that you have entered the fields, you can use [ **Pull Data** ](/wGetStarted/Interject-Ribbon-Menu-Items.html) on the report, filtering for companies with **Market** in their names. First type **Market** in the filter cell C1 and then **Pull Data**. 
 
 ![](/images/L-Create-PivotTable/14.jpg)
 
@@ -153,7 +153,7 @@ In the Year-Mth column in L21, type **=TEXT(I21,"yyyy-mm")**
 
 ###  Customizing the Pivot Table 
 
-**Step 1:** Prepare the pivot table worksheet to interact with the INTERJECT worksheet. That way the data can be updated based on select filters, and security can be considered. You will insert the configuration rows at the top as you normally do with INTERJECT reports, but Report Formulas is the only section being used. You will also add a Title and hide the grids. 
+**Step 1:** Prepare the pivot table worksheet to interact with the Interject worksheet. That way the data can be updated based on select filters, and security can be considered. You will insert the configuration rows at the top as you normally do with Interject reports, but Report Formulas is the only section being used. You will also add a Title and hide the grids. 
 
   
 
@@ -163,7 +163,7 @@ In the Year-Mth column in L21, type **=TEXT(I21,"yyyy-mm")**
 <br> 
 
 
-**Step 2:** Now set up the [ ReportRun() ](/wIndex/ReportRun.html) function. This will cause the target sheet to perform a [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) or [ **Clear Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) when Pull Data is triggered from the pivot table worksheet. 
+**Step 2:** Now set up the [ ReportRun() ](/wIndex/ReportRun.html) function. This will cause the target sheet to perform a [ **Pull Data** ](/wGetStarted/Interject-Ribbon-Menu-Items.html) or [ **Clear Data** ](/wGetStarted/Interject-Ribbon-Menu-Items.html) when Pull Data is triggered from the pivot table worksheet. 
 
 ![](/images/L-Create-PivotTable/19.png)
 
@@ -177,7 +177,7 @@ In the Year-Mth column in L21, type **=TEXT(I21,"yyyy-mm")**
 <br> 
 
 
-**Step 4:** Type **True** in the **RunEntireWorksheet** argument. And type **Pull** in the OnAction argument. This will trigger the second worksheet to run only when [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) is performed on the current pivot table worksheet. 
+**Step 4:** Type **True** in the **RunEntireWorksheet** argument. And type **Pull** in the OnAction argument. This will trigger the second worksheet to run only when [ **Pull Data** ](/wGetStarted/Interject-Ribbon-Menu-Items.html#pull-data) is performed on the current pivot table worksheet. 
 
 ![](/images/L-Create-PivotTable/21.png)
 

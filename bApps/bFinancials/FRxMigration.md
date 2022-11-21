@@ -92,7 +92,7 @@ description: Step by step guide on data tier, initial data load, FRx Migration, 
 > **Step 5:** Fill in the Connection Details page with the following inputs for new connections:
 > - Name: A unique friendly name used when connecting a Data Portal to the Data Connection
 > - Description (optional): A description of what the connection string is connecting to
-> - Connection String: This is used by INTERJECT to connect to the specified server & database
+> - Connection String: This is used by Interject to connect to the specified server & database
 >
 >  ![DB Destination](/images/A-InitialDataLoad/ConnectionDetails.png){: .center-image }
 > **Example connection string:** Data Source=server-04; Initial Catalog=Client_FRX_Definition; Integrated Security=SSPI;

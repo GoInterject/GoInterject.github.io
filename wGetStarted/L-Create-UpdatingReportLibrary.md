@@ -2,13 +2,13 @@
 title: "Lab Create: Updating the Report Library"
 layout: custom
 keywords: [upload, report library, template, report]
-description: The report library is a way to share reports with other users on the team. The reports are uploaded to the library and can be accessed from any other computer using Excel and INTERJECT. 
+description: The report library is a way to share reports with other users on the team. The reports are uploaded to the library and can be accessed from any other computer using Excel and Interject. 
 ---
 * * *
 
 ##  **Overview**
 
-The report library is a way to share reports with other users on the team. The reports are uploaded to the library and can be accessed from any other computer using Excel and INTERJECT. INTERJECT spreadsheets can still be organized within Sharepoint or network folders, but INTERJECT provides an easy versioning and release system to help ensure adequate controls. And it is available directly from within Excel. 
+The report library is a way to share reports with other users on the team. The reports are uploaded to the library and can be accessed from any other computer using Excel and Interject. Interject spreadsheets can still be organized within Sharepoint or network folders, but Interject provides an easy versioning and release system to help ensure adequate controls. And it is available directly from within Excel. 
 
 **Note:** Before beginning this walk-through, it is important to review the [ Report Library Basics ](/wAbout/Report-Library-Basics.html). 
 
@@ -28,7 +28,7 @@ Click **Save As**, and  choose a location where the file will be saved. If this 
 <br> 
 
 
-**Step 2:** Next, choose the Report Library menu item in the INTERJECT ribbon. In this example, you will be updating the **Interject Customer Collections** report with a new version. 
+**Step 2:** Next, choose the Report Library menu item in the Interject ribbon. In this example, you will be updating the **Interject Customer Collections** report with a new version. 
 
 ![](/images/L-Create-RepLib/03.png) 
 
@@ -79,7 +79,7 @@ Click **Save As**, and  choose a location where the file will be saved. If you h
 <br> 
 
 
-**Step 2:** Next, click the Report Library menu item in the INTERJECT ribbon. In this example, you will be saving **Interject Customer Collections** as the new file. 
+**Step 2:** Next, click the Report Library menu item in the Interject ribbon. In this example, you will be saving **Interject Customer Collections** as the new file. 
 
 ![](/images/L-Create-RepLib/09.png)
 
@@ -127,8 +127,8 @@ Click **Save As**, and  choose a location where the file will be saved. If you h
 
 ###  Adding a Drill Code to a Report 
 
-Drill Codes are important when using the INTERJECT report drill feature discussed in the section [ Drilling Between Reports ](/wGetStarted/Drilling-Between-Reports.html). Drill Codes are needed when a drill needs to go to a separate workbook, and that workbook is saved in the Report Library. 
+Drill Codes are important when using the Interject report drill feature discussed in the section [ Drilling Between Reports ](/wGetStarted/Drilling-Between-Reports.html). Drill Codes are needed when a drill needs to go to a separate workbook, and that workbook is saved in the Report Library. 
 
-**Step 1:** To add Drill Codes to a report, you can amend the above steps and add drill codes to the Report Link Details window, as seen below. The Drill Codes must be unique to others that were saved prior. A report can have up to three drill codes, each pointing to different worksheet tabs. More are allowed, but you must contact INTERJECT for assistance. 
+**Step 1:** To add Drill Codes to a report, you can amend the above steps and add drill codes to the Report Link Details window, as seen below. The Drill Codes must be unique to others that were saved prior. A report can have up to three drill codes, each pointing to different worksheet tabs. More are allowed, but you must contact Interject for assistance. 
 
 ![](/images/L-Create-RepLib/13.png)

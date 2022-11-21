@@ -2,19 +2,19 @@
 title: Adding a User
 layout: custom
 keywords: [user, role, login]
-description: This overview is a step by step process on how to add a new user to INTERJECT using the Portal site. Adding a new user can be accomplished only by Client Admins
+description: This overview is a step by step process on how to add a new user to Interject using the Portal site. Adding a new user can be accomplished only by Client Admins
 ---
 
 ##  **Overview**
 ---
 
-Occasionally, new users will need to be added to Interject. This overview is a step by step process on how to add a new user to INTERJECT using the Portal site. Adding a new user can be accomplished only by Client Admins. 
+Occasionally, new users will need to be added to Interject. This overview is a step by step process on how to add a new user to Interject using the Portal site. Adding a new user can be accomplished only by Client Admins. 
 
 ###  Adding a New User 
 
 **Step 1:** Navigate to  [ https://portal.gointerject.com ](https://portal.gointerject.com/login.html)
 
-**Step 2:** Log in to INTERJECT. This example will be using the Test Portal site. 
+**Step 2:** Log in to Interject. This example will be using the Test Portal site. 
 
 ![](/images/AddingAUser/01.png)
 
@@ -90,7 +90,7 @@ For this scenario, David will be assigned to the Client Admin role.
 
 ###  **Additional Info:**
 
-Before finishing up, below the list of the Organization Staff is a section labeled **External Admins**. This section is for any INTERJECT Employees who are consulting on the project. To add an external admin, enter an INTERJECT email address and click **Add External Admin**. 
+Before finishing up, below the list of the Organization Staff is a section labeled **External Admins**. This section is for any Interject Employees who are consulting on the project. To add an external admin, enter an Interject email address and click **Add External Admin**. 
 
 
 

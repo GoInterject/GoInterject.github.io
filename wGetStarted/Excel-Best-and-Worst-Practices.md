@@ -2,12 +2,12 @@
 title: Excel Best and Worst Practices
 layout: custom
 keywords: [ slow, excel, best practice, issue, cpu, usage, vba]
-description: Defines the best practices of using Excel with INTERJECT. 
+description: Defines the best practices of using Excel with Interject. 
 ---
 
 ##  **Overview**
 
-INTERJECT is an add-in that greatly extends the feature set of Microsoft Excel. However, there are still limits within Excel. This section covers considerations related to creating complex or large reports. If uncareful, there could be long wait times, overly large files, or other issues that may disrupt the workflow. 
+Interject is an add-in that greatly extends the feature set of Microsoft Excel. However, there are still limits within Excel. This section covers considerations related to creating complex or large reports. If uncareful, there could be long wait times, overly large files, or other issues that may disrupt the workflow. 
 
 Since each worksheet has 1,048,576 rows and 16,384 available columns, there are 17,179,869,184 (17 billion) cells. Add in formatting, complex formulas and conditional formatting, and it is easy to see how such an open design can overtax desktop performance and cause problems. 
 
@@ -15,7 +15,7 @@ Excel performance can be affected, depending on the complexity of a report and t
 
 ###  Think of Excel as a Better Browser 
 
-Excel is a terrific and flexible tool, and to make the best use of it in your daily work, think of it less as a database and more as an interface. Instead of importing 500,000 rows into a spreadsheet to support a pivot table or other type of summary report, the INTERJECT platform makes it easier for you to access only the top level of the data you need. When designing a report, it is best to curate the user experience as if you are building a website application. For example, a summary view of 50 records that can drill to additional detail would be more manageable than a long scroll of 100,000 detail records. The example below illustrates this point further. 
+Excel is a terrific and flexible tool, and to make the best use of it in your daily work, think of it less as a database and more as an interface. Instead of importing 500,000 rows into a spreadsheet to support a pivot table or other type of summary report, the Interject platform makes it easier for you to access only the top level of the data you need. When designing a report, it is best to curate the user experience as if you are building a website application. For example, a summary view of 50 records that can drill to additional detail would be more manageable than a long scroll of 100,000 detail records. The example below illustrates this point further. 
 
 Example:  In the screenshot below, you have a list of 20,000 records. You can filter the data, but there is an easier way. 
 
@@ -31,7 +31,7 @@ The user can filter the data like in the screenshot below, but there could be an
   
 
 
-The next screenshot shows an alternative, a drill action to a summary report, created by an INTERJECT developer to give users easier access to viewing the details of the 20,000 records. 
+The next screenshot shows an alternative, a drill action to a summary report, created by an Interject developer to give users easier access to viewing the details of the 20,000 records. 
 
 ![](/images/ExcelBestPractices/ExcelBestAndWorstThinkOfExcel3.jpg))
 
@@ -44,7 +44,7 @@ This screenshot shows the summary report, which is a simpler way to find the dat
 
 ###  Record Counts 
 
-Depending on the desktop memory and CPU, it is feasible to import 400,000+ records with INTERJECT if the report is not complex. However, the INTERJECT design is focused on a high degree of flexibility, where the report can be tailored to the user experience. In some reports, displaying 20,000 records is not practical to work with. You may appreciate the smaller row counts when you can drill to the underlying detail when needed. This also speeds up your user experience. 
+Depending on the desktop memory and CPU, it is feasible to import 400,000+ records with Interject if the report is not complex. However, the Interject design is focused on a high degree of flexibility, where the report can be tailored to the user experience. In some reports, displaying 20,000 records is not practical to work with. You may appreciate the smaller row counts when you can drill to the underlying detail when needed. This also speeds up your user experience. 
 
 Similar to most website applications, you typically process only a few hundred rows before drilling to additional detail. Consider leveraging the same workflow design experience as you would when designing a website application. This helps create an interface where your users have the ideal size of data to work with. 
 
@@ -77,4 +77,4 @@ Sometimes developers accidently use the last cell of the 1,048,576 rows that Exc
 
 ###  VBA Macros 
 
-Using VBA (Visual Basic for Applications) can bridge a special feature or process gap in a report, but it is important to use VBA sparingly and to avoid adding to the resources needed for processing spreadsheet reports and using applications . VBA can add to maintenance requirements over time, and it can be hard to control versions when users copy reports to their local drives. It is possible to leverage VBA with INTERJECT. These are special use cases that hopefully will become obsolete as more features are added to INTERJECT. We welcome any questions in this area so that we can add more functionality to limit the need for VBA. 
+Using VBA (Visual Basic for Applications) can bridge a special feature or process gap in a report, but it is important to use VBA sparingly and to avoid adding to the resources needed for processing spreadsheet reports and using applications . VBA can add to maintenance requirements over time, and it can be hard to control versions when users copy reports to their local drives. It is possible to leverage VBA with Interject. These are special use cases that hopefully will become obsolete as more features are added to Interject. We welcome any questions in this area so that we can add more functionality to limit the need for VBA. 
