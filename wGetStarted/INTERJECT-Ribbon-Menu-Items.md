@@ -8,7 +8,7 @@ description: Overviews of each button in the Interject Excel Ribbon.
 
 ##  **Overview**
 
-The Interject Ribbon has several options designed to help customize the reporting experience. In addition to the Report Library, Data Pull, Data Save, and Data Drill buttons, the following items are available: 
+The Interject Ribbon has several options designed to help customize the reporting experience. In addition to the Report Library, Data Pull, Data Save, and Data Drill buttons, the following items will be usefull: 
 
 ![](/images/InterjectRibbon/01.png)
 
