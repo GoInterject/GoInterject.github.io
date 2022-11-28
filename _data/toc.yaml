@@ -33,28 +33,28 @@ design:
 
 
 about:
-- sectiontitle: What Does INTERJECT Do?
+- sectiontitle: What Does Interject Do?
   path: /
   section:
   - title: Real World Use Cases
     path: /wAbout/Real-World-Use-Cases.html
-  - title: Why CFO's Like INTERJECT
+  - title: Why CFO's Like Interject
     path: /wAbout/Why-CFOs-Like-INTERJECT.html
-  - title: Why CIO's Like INTERJECT
+  - title: Why CIO's Like Interject
     path: /wAbout/Why-CIOs-Like-INTERJECT.html
   - title: What You Need to Know
     path: /wAbout/What-You-Need-to-Know.html
-- sectiontitle: Installing INTERJECT
+- sectiontitle: Installing Interject
   section:
   - title: Installing - Single User
     path: /wAbout/SingleUser.html
   - title: Installing - Shared Computer
     path: /wAbout/SharedComputer.html
-  - title: Updating INTERJECT
+  - title: Updating Interject
     path: /wAbout/Updating-INTERJECT.html
-  - title: Uninstalling INTERJECT
+  - title: Uninstalling Interject
     path: /wAbout/Uninstalling.html
-- sectiontitle: Using INTERJECT
+- sectiontitle: Using Interject
   path: /wAbout/Using-INTERJECT.html
   section:
   - title: Logging In
@@ -74,7 +74,7 @@ about:
       path: /wAbout/Inventory-Reports.html
     - title: Financial Report
       path: /wAbout/Financial-Report.html
-- sectiontitle: Working with INTERJECT
+- sectiontitle: Working with Interject
   path: /wAbout/Working-with-INTERJECT.html
   section:
   - title: Basics of Report Formulas
