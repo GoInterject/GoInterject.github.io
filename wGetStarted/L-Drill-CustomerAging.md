@@ -82,7 +82,7 @@ You are going to skip the ReportCodeToRun argument, since that is used only when
   
 
 
-**Step 7:** Now that you have created the drill, you can use [ **Pull Data** ](/wGetStarted/Interject-Ribbon-Menu-Items.html) to bring in the customers to the source worksheet. 
+**Step 7:** Now that you have created the drill, you can use [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) to bring in the customers to the source worksheet. 
 
 ![](/images/L-Drill-CustAging/10.png)
 <br>

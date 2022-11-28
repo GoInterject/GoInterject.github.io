@@ -21,7 +21,7 @@ Here is a brief video on Updating Interject, followed by a more detailed walkthr
 
 ![](/images/Updating/01.png)
 
-**Step 2:** Once everything is saved, and you are logged in, click the [ **Check for Updates** ](/wGetStarted/Interject-Ribbon-Menu-Items.html#check-for-updates) button in the Interject ribbon. You cannot check for updates until you are logged in. 
+**Step 2:** Once everything is saved, and you are logged in, click the [ **Check for Updates** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#check-for-updates) button in the Interject ribbon. You cannot check for updates until you are logged in. 
 
 ![](/images/Updating/02.png)
 

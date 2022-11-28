@@ -136,7 +136,7 @@ When you click away from TransferPairs, it shows a red **#NAME** ? to the right 
 
 ###  Executing the Drill 
 
-**Step 1:** Use [ **Pull Data** ](/wGetStarted/Interject-Ribbon-Menu-Items.html) to pull the report. You can leave the panes open for the moment. They will not affect the drill feature. 
+**Step 1:** Use [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) to pull the report. You can leave the panes open for the moment. They will not affect the drill feature. 
 
 ![](/images/L-Drill-Financial/18.png)
 <br>

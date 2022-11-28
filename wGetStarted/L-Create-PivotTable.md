@@ -104,7 +104,7 @@ In the Year-Mth column in L21, type **=TEXT(I21,"yyyy-mm")**
 <br> 
 
 
-**Step 12:** Now that you have entered the fields, you can use [ **Pull Data** ](/wGetStarted/Interject-Ribbon-Menu-Items.html) on the report, filtering for companies with **Market** in their names. First type **Market** in the filter cell C1 and then **Pull Data**. 
+**Step 12:** Now that you have entered the fields, you can use [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) on the report, filtering for companies with **Market** in their names. First type **Market** in the filter cell C1 and then **Pull Data**. 
 
 ![](/images/L-Create-PivotTable/14.jpg)
 
@@ -163,7 +163,7 @@ In the Year-Mth column in L21, type **=TEXT(I21,"yyyy-mm")**
 <br> 
 
 
-**Step 2:** Now set up the [ ReportRun() ](/wIndex/ReportRun.html) function. This will cause the target sheet to perform a [ **Pull Data** ](/wGetStarted/Interject-Ribbon-Menu-Items.html) or [ **Clear Data** ](/wGetStarted/Interject-Ribbon-Menu-Items.html) when Pull Data is triggered from the pivot table worksheet. 
+**Step 2:** Now set up the [ ReportRun() ](/wIndex/ReportRun.html) function. This will cause the target sheet to perform a [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) or [ **Clear Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) when Pull Data is triggered from the pivot table worksheet. 
 
 ![](/images/L-Create-PivotTable/19.png)
 
@@ -177,7 +177,7 @@ In the Year-Mth column in L21, type **=TEXT(I21,"yyyy-mm")**
 <br> 
 
 
-**Step 4:** Type **True** in the **RunEntireWorksheet** argument. And type **Pull** in the OnAction argument. This will trigger the second worksheet to run only when [ **Pull Data** ](/wGetStarted/Interject-Ribbon-Menu-Items.html#pull-data) is performed on the current pivot table worksheet. 
+**Step 4:** Type **True** in the **RunEntireWorksheet** argument. And type **Pull** in the OnAction argument. This will trigger the second worksheet to run only when [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) is performed on the current pivot table worksheet. 
 
 ![](/images/L-Create-PivotTable/21.png)
 

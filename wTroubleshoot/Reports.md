@@ -43,7 +43,7 @@ If evaluating ReportDrill then click  **Drill Data Event**
 
 Open the report you need to troubleshoot, this example will use the [ CustomerAging ](/wGetStarted/L-Create-CustomerAging.html) report. 
 
-**Step 1:** In the [ Interject Ribbon ](/wGetStarted/Interject-Ribbon-Menu-Items.html) click the  **Validation Report** drop down (Click  **Advanced Menu** if you do not see the  **Formulas** section in the Interject Ribbon) 
+**Step 1:** In the [ Interject Ribbon ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) click the  **Validation Report** drop down (Click  **Advanced Menu** if you do not see the  **Formulas** section in the Interject Ribbon) 
 
 ![](/images/error-reports/04.jpg)
 

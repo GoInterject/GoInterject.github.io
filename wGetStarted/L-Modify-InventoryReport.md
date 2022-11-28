@@ -47,7 +47,7 @@ You can now begin modifying the report for this lesson.
 
 ###  Adding a Row to the Report 
 
-**Step 1:** First, use [ **Pull Data** ](/wGetStarted/Interject-Ribbon-Menu-Items.html#pull-data) menu item so you can see how this report has been configured and to show that a row is missing from the main section. 
+**Step 1:** First, use [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) menu item so you can see how this report has been configured and to show that a row is missing from the main section. 
 
 ![](/images/L-Modify-Inventory/05.png)
 
@@ -108,7 +108,7 @@ Below, you changed the definition for row 18 to **Dairy Products** and are ready
 ![](/images/L-Modify-Inventory/12.png)
 
 
-**Step 6:** Because you copied an existing row, the data for Row 18 is still duplicated from Grains/Cereals, [ Pull ](/wGetStarted/Interject-Ribbon-Menu-Items.html#pull-data) the Report to refresh the data and check your work. Data should update for row 18, and **Dairy Products** should disappear from leftovers area. 
+**Step 6:** Because you copied an existing row, the data for Row 18 is still duplicated from Grains/Cereals, [ Pull ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) the Report to refresh the data and check your work. Data should update for row 18, and **Dairy Products** should disappear from leftovers area. 
 
 ![](/images/L-Modify-Inventory/13.png)   
 

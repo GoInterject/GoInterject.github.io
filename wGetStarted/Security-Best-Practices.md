@@ -126,7 +126,7 @@ The spreadsheet files themselves act as reports or application templates. These 
 
 The user may choose to save a copy of the file, such as for auditing purposes or to add personalized changes. It is by design to allow this, even though the user takes the risk of having an outdated version. To assist in management of older versions, Interject does log activity, including the file path and name, so the locations of these copies are known. 
 
-The Report Library is built to provide a development cycle status to the report to help with vetting and documenting the approval of new reports. The statuses include, **In Development**, **In Test**, **Live**. See [ Report Library ](/wPortal/Interject-Ribbon-Menu-Items.html) for additional information on using the Report Library. The ability to see templates in each status is controlled through Interject user roles. Standard users only see templates that are set to **Live**. 
+The Report Library is built to provide a development cycle status to the report to help with vetting and documenting the approval of new reports. The statuses include, **In Development**, **In Test**, **Live**. See [ Report Library ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) for additional information on using the Report Library. The ability to see templates in each status is controlled through Interject user roles. Standard users only see templates that are set to **Live**. 
 
 It is best practice to consider the spreadsheet template insecure, since it can easily be shared with other users without proper credentials. Building each report or application with row level security is key to keeping security around your data. 
 

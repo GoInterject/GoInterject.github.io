@@ -20,7 +20,7 @@ Take the report **PL Trend Report with Data Cells** from the [ Financial Walk-th
 
 <br> 
 
-**Step 1:** First, use the [**Pull Data**](/wGetStarted/Interject-Ribbon-Menu-Items.html#pull-data) operation to pull the report for Location 7002 and month 2002-05. Note: Ensure that the **"Calculate Data Cells"** is checked.
+**Step 1:** First, use the [**Pull Data**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) operation to pull the report for Location 7002 and month 2002-05. Note: Ensure that the **"Calculate Data Cells"** is checked.
 
 ![](/images/L-Export-QuickExPDF/02.png)
 
@@ -32,7 +32,7 @@ Now you have the report to distribute. However, if you send this report with dat
 
 <br> 
 
-**Step 2:** To prevent this issue, you can use [ Export Book ](/wGetStarted/Interject-Ribbon-Menu-Items.html#export-book) to create a new book and convert the data cell functions into regular values.
+**Step 2:** To prevent this issue, you can use [ Export Book ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#export-book) to create a new book and convert the data cell functions into regular values.
 
 ![](/images/L-Export-QuickExPDF/04.png)
 
@@ -48,7 +48,7 @@ Once complete, the report will upload into a brand new workbook with fixed value
 
 Exporting to PDFs from Excel has been available since Excel 2010 (and even with Excel 2007 accompanied by the download available [ here ](http://www.microsoft.com/downloads/details.aspx?familyid=4d951911-3e7e-4ae6-b059-a2e79ed87041)). You will select this option and choose a folder in which to save the PDF. After saving, the PDF will open for review.
 
-**Step 1:** Go back to the PL Trend with Data Cells from the previous section. You can again select [ **Export Book**](/wGetStarted/Interject-Ribbon-Menu-Items.html#export-book), but this time follow up with the **Quick PDF** button.
+**Step 1:** Go back to the PL Trend with Data Cells from the previous section. You can again select [ **Export Book**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#export-book), but this time follow up with the **Quick PDF** button.
 
 ![](/images/L-Export-QuickExPDF/06.png)   
 

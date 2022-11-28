@@ -22,7 +22,7 @@ To watch a quick walk-through video, click on the icon:
 
 ![](/images/Walkthrough-Financial/02.png)   
 
-Now you are  ready to pull the data. Use the [ **Pull Data** ](/wGetStarted/Interject-Ribbon-Menu-Items.html#pull-data) button as shown below, or use the short key Ctrl-Shift-J. 
+Now you are  ready to pull the data. Use the [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) button as shown below, or use the short key Ctrl-Shift-J. 
 
 ![](/images/Walkthrough-Financial/03.png)
 
@@ -34,7 +34,7 @@ It will just take a moment for our report to populate. The illustration below sh
 
 ###  Modifying the Report 
 
-**Step 1:** Now quickly add a few more columns to the report for June, July, and August. First clear the data so you have an empty template. Clear the data by selecting the [ **Pull Data** ](/wGetStarted/Interject-Ribbon-Menu-Items.html#pull-data) button again, but this time choose the [ **Clear** ](/wGetStarted/Interject-Ribbon-Menu-Items.html#pull-data) button. 
+**Step 1:** Now quickly add a few more columns to the report for June, July, and August. First clear the data so you have an empty template. Clear the data by selecting the [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) button again, but this time choose the [ **Clear** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) button. 
 
 ![](/images/Walkthrough-Financial/05.png)   
 
@@ -42,7 +42,7 @@ It will just take a moment for our report to populate. The illustration below sh
 
 ![](/images/Walkthrough-Financial/06.gif)
 
-**Step 3:** Re-pull the data with the [ **Pull Data** ](/wGetStarted/Interject-Ribbon-Menu-Items.html#pull-data) menu button as you did earlier. 
+**Step 3:** Re-pull the data with the [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) menu button as you did earlier. 
 
 ![](/images/Walkthrough-Financial/07.png)
 
@@ -73,7 +73,7 @@ Clicking 1 will collapse all the groupings.
 
 ###  Drill to JE-Transaction 
 
-After expanding the groupings of modified the reports, you may still want more detailed information about a specific account. The [ **Drill on Data** ](/wGetStarted/Interject-Ribbon-Menu-Items.html#drill-on-data) feature allows us to pass information from one report to another for additional details. 
+After expanding the groupings of modified the reports, you may still want more detailed information about a specific account. The [ **Drill on Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data) feature allows us to pass information from one report to another for additional details. 
 
 **Step 1:**
 
@@ -131,7 +131,7 @@ Notice that these are the same accounts that makeup **Revenue - Sales** in the o
 
 ![](/images/Walkthrough-Financial/20.png)
 
-**Step 3:** Now use the [ **Pull Data** ](/wGetStarted/Interject-Ribbon-Menu-Items_83689479.html#pull-data) function. Note: Ensure that the **"Calculate Data Cells"** is checked.
+**Step 3:** Now use the [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#pull-data) function. Note: Ensure that the **"Calculate Data Cells"** is checked.
 
 ![](/images/Walkthrough-Financial/21.png)
 
@@ -180,7 +180,7 @@ This completes the initial walk-through detailing interactive reporting. Later i
 
 [ Creating a Simple Report ](/wGetStarted/Creating-a-Simple-Report.html)
 
-[ Interject Ribbon Menu Items ](/wGetStarted/Interject-Ribbon-Menu-Items.html)
+[ Interject Ribbon Menu Items ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html)
 
 [ Tabular vs Data Cells ](/wAbout/Tabular-vs-Data-Cells.html)
 

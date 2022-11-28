@@ -21,7 +21,7 @@ This will bring up the Customer Aging Summary.
 
 ![](/images/Walkthrough-CustAging/02.png)
 
-**Step 2:** You can retrieve the data by clicking  [ **Pull Data** ](/wGetStarted/Interject-Ribbon-Menu-Items_83689479.html#pull-data) in the Interject menu and clicking **Pull Data** in the subsequent popup. 
+**Step 2:** You can retrieve the data by clicking  [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#pull-data) in the Interject menu and clicking **Pull Data** in the subsequent popup. 
 
 ![](/images/Walkthrough-CustAging/03.png)
 
@@ -33,7 +33,7 @@ This will populate the data into the spreadsheet.
 
 ![](/images/Walkthrough-CustAging/05.png)
 
-Now use [ Pull Data ](/wGetStarted/Interject-Ribbon-Menu-Items.html#pull-data) again to refresh the data. 
+Now use [ Pull Data ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) again to refresh the data. 
 
 ![](/images/Walkthrough-CustAging/06.png)
 
@@ -45,7 +45,7 @@ Back to Top
 
 ###  Drilling into the Aging Detail 
 
-**Step 1** : Now, use the [ **Drill** ](/wGetStarted/Interject-Ribbon-Menu-Items.html#drill-on-data) operation  on the Customer Aging Detail report for a closer look at the overdue invoices. Here you can select any cell on the row below because as long as you select a cell on the row with the overdue invoices the [ **Drill** ](/wGetStarted/Interject-Ribbon-Menu-Items.html#drill-on-data)will take us to the details of that client's invoices.  
+**Step 1** : Now, use the [ **Drill** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data) operation  on the Customer Aging Detail report for a closer look at the overdue invoices. Here you can select any cell on the row below because as long as you select a cell on the row with the overdue invoices the [ **Drill** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data)will take us to the details of that client's invoices.  
 
 ![](/images/Walkthrough-CustAging/08.png)   
 
@@ -74,11 +74,11 @@ Back to Top
 
 ###  Saving the Data 
 
-**Step 1:** Now that the notes are written down, you need click the [ **Save Data** ](/wGetStarted/Interject-Ribbon-Menu-Items.html#save-data) operation to save the notes back to the database. 
+**Step 1:** Now that the notes are written down, you need click the [ **Save Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data) operation to save the notes back to the database. 
 
 ![](/images/Walkthrough-CustAging/13.png)
 
-**Step 2:** To do this, click the [ **Save Data** ](/wGetStarted/Interject-Ribbon-Menu-Items.html#save-data) menu in the Interject Ribbon menu and the **Save Data** in the popup. 
+**Step 2:** To do this, click the [ **Save Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data) menu in the Interject Ribbon menu and the **Save Data** in the popup. 
 
 ![](/images/Walkthrough-CustAging/14.png)
 
@@ -86,17 +86,17 @@ Notice the Save Results column and ensure that it was updated correctly and ther
 
 ![](/images/Walkthrough-CustAging/15.png)
 
-**Step 3:** Once this is complete, use [ **Clear** ](/wGetStarted/Interject-Ribbon-Menu-Items.html#pull-data) and [ **Pull** ](/wGetStarted/Interject-Ribbon-Menu-Items.html#pull-data) the Customer Aging Detail report to ensure the note is saved in the database.    
+**Step 3:** Once this is complete, use [ **Clear** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) and [ **Pull** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) the Customer Aging Detail report to ensure the note is saved in the database.    
 
 ![](/images/Walkthrough-CustAging/16.png)
 
-Clicking the [ **Clear** ](/wGetStarted/Interject-Ribbon-Menu-Items.html#pull-data) operation will remove any data that was pulled into the spreadsheet. 
+Clicking the [ **Clear** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) operation will remove any data that was pulled into the spreadsheet. 
 
 ![](/images/Walkthrough-CustAging/17.png)   
 
 Notice that the filters are not cleared, so a re-pull is easy. 
 
-**Step 4:** Now you will use the [ **Pull Data** ](/wGetStarted/Interject-Ribbon-Menu-Items.html#pull-data) operation the data again to ensure it is completely refreshed. 
+**Step 4:** Now you will use the [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) operation the data again to ensure it is completely refreshed. 
 
 ![](/images/Walkthrough-CustAging/18.png)
 
@@ -120,7 +120,7 @@ For this example,you are going to use a Company Name **Market** filter to narrow
 
 ![](/images/Walkthrough-CustAging/21.png)   
 
-**Step 2:** Now lets use [ **Pull Data** ](/wGetStarted/Interject-Ribbon-Menu-Items.html#pull-data) to retrieve the data. 
+**Step 2:** Now lets use [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) to retrieve the data. 
 
 ![](/images/Walkthrough-CustAging/22.png)
 
@@ -138,7 +138,7 @@ If you want even more specific detail though, such as month-to-month information
 
 ![](/images/Walkthrough-CustAging/25.gif)
 
-Notice that you do not need to use the[ **Pull Data** ](/wGetStarted/Interject-Ribbon-Menu-Items.html#pull-data) is needed to view the new layouts. 
+Notice that you do not need to use the[ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) is needed to view the new layouts. 
 
 ![](/images/Walkthrough-CustAging/26.png)
 

@@ -18,7 +18,7 @@ When manually entering different filter values, it can be difficult to remember 
 ![](/images/L-Create-Dropdowns/01.png)
 
 
-**Step 2:** Next, unfreeze panes by going into [ **Quick Tools** ](/wGetStarted/Interject-Ribbon-Menu-Items.html) and selecting **Freeze/Unfreeze Panes**.
+**Step 2:** Next, unfreeze panes by going into [ **Quick Tools** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) and selecting **Freeze/Unfreeze Panes**.
 
 ![](/images/L-Create-Dropdowns/02.png)
 <br>

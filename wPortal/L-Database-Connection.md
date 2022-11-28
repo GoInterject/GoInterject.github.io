@@ -37,7 +37,7 @@ The Database Data Connection is now ready to be used in a Data Portal.
 
 Before setting up a Data Connection to a Database, you can verify that the connection can be established within Excel. 
 
-**Step 1:** With Excel open, go to the [ Interject Ribbon ](/wGetStarted/Interject-Ribbon-Menu-Items.html) menu and click **Advanced Menu** (Skip this step if already at Advanced menu) 
+**Step 1:** With Excel open, go to the [ Interject Ribbon ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) menu and click **Advanced Menu** (Skip this step if already at Advanced menu) 
 
 ![](/images/Database/06.png)
 

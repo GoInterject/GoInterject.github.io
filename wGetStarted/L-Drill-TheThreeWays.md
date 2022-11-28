@@ -13,7 +13,7 @@ Interject facilitates three different ways to drill. Each method is easy to choo
 
 ###  The Menu Method: 
 
-The [ Drill on Data ](/wPortal/Interject-Ribbon-Menu-Items.html) menu item is available in every report containing a drill function. For this example, you will drill using the [ Customer Aging demo ](/wAbout/Customer-Aging.html). 
+The [ Drill on Data ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) menu item is available in every report containing a drill function. For this example, you will drill using the [ Customer Aging demo ](/wAbout/Customer-Aging.html). 
 
 ![](/images/L-Drill-TheThreeWays/01.png)
 

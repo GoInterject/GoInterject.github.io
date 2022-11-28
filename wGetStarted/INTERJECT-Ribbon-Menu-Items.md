@@ -15,17 +15,17 @@ The Interject Ribbon has several options designed to help customize the reportin
 
 | **Simple Menu**                                                                      | **Advanced Menu**                                                                    |
 | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
-| [Report Library](/wGetStarted/Interject-Ribbon-Menu-Items.html#report-library)       | [Validation Report](/wGetStarted/Interject-Ribbon-Menu-Items.html#validation-report) |
-| [Pull Data](/wGetStarted/Interject-Ribbon-Menu-Items.html#pull-data)                 | [JSON](/wGetStarted/Interject-Ribbon-Menu-Items.html#json)                           |
-| [Save Data](/wGetStarted/Interject-Ribbon-Menu-Items.html#save-data)                 | [Diagnostics](/wGetStarted/Interject-Ribbon-Menu-Items.html#diagnostics)             |
-| [Drill on Data](/wGetStarted/Interject-Ribbon-Menu-Items.html#drill-on-data)         | [Check for Updates](/wGetStarted/Interject-Ribbon-Menu-Items.html#check-for-updates) |
-| [Return From Drill](/wGetStarted/Interject-Ribbon-Menu-Items.html#return-from-drill) | [System](/wGetStarted/Interject-Ribbon-Menu-Items.html#system)                       |
-| [Custom Commands](/wGetStarted/Interject-Ribbon-Menu-Items.html#custom-commands)     | [Online Training](/wGetStarted/Interject-Ribbon-Menu-Items.html#online-training)     |
-| [Quick Tools](/wGetStarted/Interject-Ribbon-Menu-Items.html#quick-tools)             | [User Support](/wGetStarted/Interject-Ribbon-Menu-Items.html#user-support)           |
-| [Create Binder](/wGetStarted/Interject-Ribbon-Menu-Items.html#create-binder)         | [About Interject](/wGetStarted/Interject-Ribbon-Menu-Items.html#about-interject)     |
-| [Export Book](/wGetStarted/Interject-Ribbon-Menu-Items.html#export-book)             |                                                                                      |
-| [Report Builder](/wGetStarted/Interject-Ribbon-Menu-Items.html#report-builder)       |                                                                                      |
-| [Sheet Protector](/wGetStarted/Interject-Ribbon-Menu-Items.html#sheet-protector)     |                                                                                      |
+| [Report Library](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-library)       | [Validation Report](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#validation-report) |
+| [Pull Data](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data)                 | [JSON](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#json)                           |
+| [Save Data](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data)                 | [Diagnostics](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#diagnostics)             |
+| [Drill on Data](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data)         | [Check for Updates](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#check-for-updates) |
+| [Return From Drill](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#return-from-drill) | [System](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#system)                       |
+| [Custom Commands](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#custom-commands)     | [Online Training](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#online-training)     |
+| [Quick Tools](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools)             | [User Support](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#user-support)           |
+| [Create Binder](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#create-binder)         | [About Interject](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#about-interject)     |
+| [Export Book](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#export-book)             |                                                                                      |
+| [Report Builder](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder)       |                                                                                      |
+| [Sheet Protector](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#sheet-protector)     |                                                                                      |
 
 * * *
 

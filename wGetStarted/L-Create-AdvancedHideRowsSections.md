@@ -15,7 +15,7 @@ For this lab, find the Interject Inventory Demo in the Interject Demo folder wit
 
 ###  **Hiding Rows**
 
-**Step 1:** Start by using the [ Quick Tools ](/wPortal/Interject-Ribbon-Menu-Items.html) button in the ribbon menu and selecting **Freeze/Unfreeze Panes**.
+**Step 1:** Start by using the [ Quick Tools ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) button in the ribbon menu and selecting **Freeze/Unfreeze Panes**.
 
 ![](/images/L-Create-AdvancedHideRow/AdvanceRowHide1.png)
 

@@ -17,7 +17,7 @@ The  [ ReportVariable() ](/wIndex/ReportVariable.html) function is ideal for fin
 
 To get started you will need to learn how to pull financial data from the Interject Financials for Spreadsheets application. You will initially use [ ReportRange() ](/wIndex/ReportRange.html) to pull a simple list of balances by account. 
 
-**Step 1:** Open a new worksheet and choose the [ **Report Builder** ](/wGetStarted/Interject-Ribbon-Menu-Items.html#report-builder) from the Interject ribbon. For this example you will be using the [ **Interject_FinCube** ](/wIndex/FinCube---The-Financial-Cube.html) dataportal. Select **Demo_Interject_FinCube** from the dataportal list and click the **Build Report Formula** button. 
+**Step 1:** Open a new worksheet and choose the [ **Report Builder** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder) from the Interject ribbon. For this example you will be using the [ **Interject_FinCube** ](/wIndex/FinCube---The-Financial-Cube.html) dataportal. Select **Demo_Interject_FinCube** from the dataportal list and click the **Build Report Formula** button. 
 
 ![](/images/L-Create-FinancialVar/01.png)
 

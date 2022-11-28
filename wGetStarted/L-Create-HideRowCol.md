@@ -22,7 +22,7 @@ Both of these examples use the [ Customer Aging Detail  ](/wGetStarted/L-Create-
 
 ![](/images/L-Create-HideRowCol/PullMarket.png)
 
-**Step 2:**  Unfreeze the report formula panes by clicking the [ Quick Tools ](/wGetStarted/Interject-Ribbon-Menu-Items.html) icon in the ribbon menu and selecting **Freeze/Unfreeze Panes**. 
+**Step 2:**  Unfreeze the report formula panes by clicking the [ Quick Tools ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) icon in the ribbon menu and selecting **Freeze/Unfreeze Panes**. 
 
 ![](/images/L-Create-HideRowCol/02.jpg)
 
@@ -73,7 +73,7 @@ Both of these examples use the [ Customer Aging Detail  ](/wGetStarted/L-Create-
 
 In this next example our goal is too hide the rows that have a payment expected date and show the rows without one. 
 
-**Step 1:** To begin you will unfreeze the report using [ Quick Tools ](/wGetStarted/Interject-Ribbon-Menu-Items.html). 
+**Step 1:** To begin you will unfreeze the report using [ Quick Tools ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html). 
 
 ![](/images/L-Create-HideRowCol/21.png)
 

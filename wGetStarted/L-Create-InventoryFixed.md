@@ -11,7 +11,7 @@ In this page, you will go through the process of building a fixed Inventory repo
 
 ###  Building the Report 
 
-**Step 1:** Begin like you did when creating the Customer Aging report, with the Interject [ Report Builder ](/wGetStarted/Interject-Ribbon-Menu-Items.html#report-builder). It is where you select the  [ DataPortal ](/wIndex/Common-Dataportal-Index.html) that is needed for this particular report. 
+**Step 1:** Begin like you did when creating the Customer Aging report, with the Interject [ Report Builder ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder). It is where you select the  [ DataPortal ](/wIndex/Common-Dataportal-Index.html) that is needed for this particular report. 
 
 ![](/images/L-Create-InventoryFix/01.png) 
 
@@ -99,7 +99,7 @@ The final product should look similar to the example below.
 <br> 
 
 
-**Step 10:** Now select [ **Pull Data** ](/wGetStarted/Interject-Ribbon-Menu-Items.html#pull-data) to view the data in the report. 
+**Step 10:** Now select [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) to view the data in the report. 
 
 ![](/images/L-Create-InventoryFix/14.png)
 

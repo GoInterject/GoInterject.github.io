@@ -20,7 +20,7 @@ When the report is opened it will be blank. It is ready for any filters before p
 
 ![](/images/BasicsReportFormulas/02.png)
 
-**Step 2:** To see the formulas working behind Interject, you need to [ Unfreeze ](/wPortal/Interject-Ribbon-Menu-Items.html#unfreeze) the panes hiding them. Select the View ribbon and select  the **Freeze Panes** drop-down. Then choose the first operation, **Unfreeze Panes**. 
+**Step 2:** To see the formulas working behind Interject, you need to [ Unfreeze ](/wPortal/INTERJECT-Ribbon-Menu-Items.html#unfreeze) the panes hiding them. Select the View ribbon and select  the **Freeze Panes** drop-down. Then choose the first operation, **Unfreeze Panes**. 
 
 ![](/images/BasicsReportFormulas/03.png)
 
@@ -40,7 +40,7 @@ You have full control of what column labels that are shown in the reports. Notic
 
 ![](/images/BasicsReportFormulas/06.png)
 
-**Step 2:** Now use [ **Pull Data** ](/wGetStarted/Interject-Ribbon-Menu-Items.html#pull-data)to see where the **CustomerID** data is populated. 
+**Step 2:** Now use [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data)to see where the **CustomerID** data is populated. 
 
 ![](/images/BasicsReportFormulas/07.png)
 
@@ -70,11 +70,11 @@ Report Formulas are a big part of how Interject directs data in and out of the s
 
 ![](/images/BasicsReportFormulas/12.png)
 
-The first formula is a **Report Range** formula and will pull the data from a data source to the spreadsheet. There are other, similar, Report Formulas to pull data, such as [ ReportFixed() ](/wIndex/ReportFixed.html) , [ ReportVariable() ](/wIndex/ReportVariable.html) and [ ReportLookup() ](/wIndex/ReportLookup.html) . You will look at these later. The screenshot above also shows three [ ReportDrill() ](/wIndex/ReportDrill.html) formulas that enable [ drill ](/wGetStarted/Interject-Ribbon-Menu-Items.html#drill-on-data) functionality. A drill lets us navigate to another spreadsheet report based on the context selected. 
+The first formula is a **Report Range** formula and will pull the data from a data source to the spreadsheet. There are other, similar, Report Formulas to pull data, such as [ ReportFixed() ](/wIndex/ReportFixed.html) , [ ReportVariable() ](/wIndex/ReportVariable.html) and [ ReportLookup() ](/wIndex/ReportLookup.html) . You will look at these later. The screenshot above also shows three [ ReportDrill() ](/wIndex/ReportDrill.html) formulas that enable [ drill ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data) functionality. A drill lets us navigate to another spreadsheet report based on the context selected. 
 
-Another type of Report Formula is the [ Save ](/wGetStarted/Interject-Ribbon-Menu-Items.html#save-data) formula which is not shown here. This type of Report Formula enables an application developer to build save back features into our reports, such as saving back comments on financial variances to a central database so they can be presented in other reports. 
+Another type of Report Formula is the [ Save ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data) formula which is not shown here. This type of Report Formula enables an application developer to build save back features into our reports, such as saving back comments on financial variances to a central database so they can be presented in other reports. 
 
-Each of these formulas is activated by its corresponding button in the [ Interject Ribbon menu ](/wGetStarted/Interject-Ribbon-Menu-Items.html). 
+Each of these formulas is activated by its corresponding button in the [ Interject Ribbon menu ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html). 
 
 <img class="img-modal" src="/images/BasicsReportFormulas/13.png" onclick="zoom_img(this)" />
 

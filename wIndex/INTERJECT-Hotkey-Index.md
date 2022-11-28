@@ -20,7 +20,7 @@ Interject provides ways to increase productivity and work flow by utilizing hotk
 | :----------------- | :------------------------------------------------------------------------------- |
 | Ctrl-Shift-L       | Open the Report Library &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;|
 
-| [**Pull** ](/wGetStarted/Interject-Ribbon-Menu-Items.html#pull-data)       |                                                                       |
+| [**Pull** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data)       |                                                                       |
 | --------------- | --------------------------------------------------------------------- |
 | Ctrl-Shift-J    | Open the **pull data** form                                           |
 | Ctrl-Shift-J, S | Open the **pull data** form and pull data based on current form only. |
@@ -28,7 +28,7 @@ Interject provides ways to increase productivity and work flow by utilizing hotk
 | Ctrl-Shift-J, W | Open the **pull data** form and pull the entire workbook              |
 | Ctrl-Shift-J, C | Open the pull data form and clear the data                            |
 
-| [**Save**](/wGetStarted/Interject-Ribbon-Menu-Items.html#save-data)         |                                                                      |
+| [**Save**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data)         |                                                                      |
 | --------------- | -------------------------------------------------------------------- |
 | Ctrl-Shift-U    | Open the **save data** form                                          |
 | Ctrl-Shift-U, S | Open the **save data** form and save data based on current form only. &nbsp;  &nbsp; |
@@ -36,24 +36,24 @@ Interject provides ways to increase productivity and work flow by utilizing hotk
 | Ctrl-Shift-U, W | Open the **save data** form and save the entire workbook             |
 | Ctrl-Shift-U, C | Open the **save data** form and clear the save data notes            |
 
-| [**Drill**](/wGetStarted/Interject-Ribbon-Menu-Items.html#drill-on-data)     |                            |
+| [**Drill**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data)     |                            |
 | ------------ | -------------------------- |
 | Ctrl-Shift-K | Drill on selected data row &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  |
 | Ctrl-Shift-B | Navigate back from a drill  |
 
-| [**Report Builder**](/wGetStarted/Interject-Ribbon-Menu-Items.html#report-builder)  |                                            |
+| [**Report Builder**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder)  |                                            |
 | ------------------ | ------------------------------------------ |
 | Ctrl-Shift-H       | Open the **Interject Report** Builder Form. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
 
-| [**Quick Tools**](/wGetStarted/Interject-Ribbon-Menu-Items.html#quick-tools)  |                                    |
+| [**Quick Tools**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools)  |                                    |
 | --------------- | ---------------------------------- |
 | Ctrl-Shift-T    | Open the **Interject Quick Tools**. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
 
-| [**Diagnostics**](/wGetStarted/Interject-Ribbon-Menu-Items.html#diagnostics)  |                                        |
+| [**Diagnostics**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#diagnostics)  |                                        |
 | --------------- | -------------------------------------- |
 | Ctrl-Shift-D    | Open the **Interject Diagnostic tool**. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
 
-| [**Exports**](/wGetStarted/Interject-Ribbon-Menu-Items.html#export-book)   |                                                            |
+| [**Exports**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#export-book)   |                                                            |
 | ------------ | ---------------------------------------------------------- |
 | Ctrl-Shift-E | Open the **Quick Export Tool** for the distribution center. |
 

@@ -24,7 +24,7 @@ Now that you have the report ready, you should unfreeze the hidden rows which wi
 <br>
 
 
-To unfreeze the rows you simply need to go to the View Ribbon and select Freeze panes or you can use the [ Quick Tools ](/wGetStarted/Interject-Ribbon-Menu-Items.html#quick-tools) operation. Out of the three options given in the drop down list, you will use the first. 
+To unfreeze the rows you simply need to go to the View Ribbon and select Freeze panes or you can use the [ Quick Tools ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools) operation. Out of the three options given in the drop down list, you will use the first. 
 
 ![](/images/FormulasReviews/03.png)
 
@@ -45,7 +45,7 @@ When a user needs to see the parameters in detail, the Function Wizard does not 
 
 <br>
 
-To see the parameters and cell formula detail simply open the [ Advanced Menu ](/wGetStarted/Interject-Ribbon-Menu-Items.html#advanced-menu) in Interject. 
+To see the parameters and cell formula detail simply open the [ Advanced Menu ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#advanced-menu) in Interject. 
 
 ![](/images/FormulasReviews/06.png)
 

@@ -94,7 +94,7 @@ When the panes are refrozen, the report should look like the image below.
   
 
 
-**Step 3:** [ Pull Data ](/wGetStarted/Interject-Ribbon-Menu-Items.html) to see data for each category you just linked. 
+**Step 3:** [ Pull Data ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) to see data for each category you just linked. 
 
 ![](/images/L-Drill-Inventory/13.png)
 <br>
