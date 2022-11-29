@@ -93,7 +93,7 @@ When manually entering different filter values, it can be difficult to remember 
 ![](/images/L-Create-Dropdowns/13.png)
 <br>
 
-**Step 3:** In the **ScreenTip text:** field input **Interject Dropdown**. 
+**Step 3:** In the **ScreenTip text:** field input **Interject Dropdown** (Note: The jDropdown function will not work without this). 
 
 ![](/images/L-Create-Dropdowns/14.png)
 <br>
