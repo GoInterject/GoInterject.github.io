@@ -10,6 +10,9 @@ description: Here, you will modify the Customer Aging Demo used in the Customer 
 
 Here, you will modify a report to show the total of invoices due from companies. You will filter for companies with the word **Market** in their name to keep the list short. You will build a **Total** column to receive the sum of each individual company's unpaid invoices. Once complete you will use these totals to build a Report total, which allows us to see all invoices  due.   
 
+<blockquote class=lab_info>
+  If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 2 Modifying Reports > Lab 2.2 Customer Aging.
+</blockquote>
 
 ###  Opening the Report and Pulling Data 
 

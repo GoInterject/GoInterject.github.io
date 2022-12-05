@@ -2,7 +2,10 @@
 title: The Three Ways to Drill
 layout: custom
 keywords: [hyperlink, drill, list, using, double click drill]
+
+
 description: Interject facilitates three different ways to drill. Each method is easy to choose the best one different situations.
+
 ---
 * * *
 
@@ -13,7 +16,7 @@ Interject facilitates three different ways to drill. Each method is easy to choo
 
 ###  The Menu Method: 
 
-The [ Drill on Data ](/wPortal/INTERJECT-Ribbon-Menu-Items.html) menu item is available in every report containing a drill function. For this example, you will drill using the [ Customer Aging demo ](/wAbout/Customer-Aging.html). 
+The [ Drill on Data ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data) menu item is available in every report containing a drill function. For this example, you will drill using the [ Customer Aging demo ](/wAbout/Customer-Aging.html). 
 
 ![](/images/L-Drill-TheThreeWays/01.png)
 

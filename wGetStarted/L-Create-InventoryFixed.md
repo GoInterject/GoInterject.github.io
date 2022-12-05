@@ -9,6 +9,10 @@ description: In this page, you will go through the process of building a fixed I
 
 In this page, you will go through the process of building a fixed Inventory report from scratch using the ReportFixed() function. 
 
+<blockquote class=lab_info>
+  If you are following the Training Labs, this is Lab 3.3. Note: The Report Library at Training Labs for this lab will be blank as you are creating a report from a new blank Excel sheet.
+</blockquote>
+
 ###  Building the Report 
 
 **Step 1:** Begin like you did when creating the Customer Aging report, with the Interject [ Report Builder ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder). It is where you select the  [ DataPortal ](/wIndex/Common-Dataportal-Index.html) that is needed for this particular report. 

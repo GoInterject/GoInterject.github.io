@@ -11,6 +11,10 @@ description: In this example, you will use the report seen in the Inventory Walk
 
 The [ ReportVariable() ](/wIndex/ReportVariable.html) function directs data into multiple specified ranges of a report that can grow and shrink with the data. It is ideal for a financial report or any report that has subtotaled sections.  In this example, you will use the report seen in the [ Inventory Walk-through ](/wAbout/Inventory-Reports.html). Once completed all rows of the report **Inventory By Category with Detail** will be populated with a single ReportVariable() function. 
 
+<blockquote class=lab_info>
+  If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 3 Creating Reports > Lab 3.4 Inventory Variable Report.
+</blockquote>
+
 ###  Report Variable 
 
 **Step 1:** Open the Interject [ Report Library ](/wAbout/Report-Library-Basics.html) and select the **Interject Inventory Demo** in the **Interject Demos** folder. 
@@ -47,7 +51,7 @@ The [ ReportVariable() ](/wIndex/ReportVariable.html) function directs data into
 <br> 
 
 
-Scroll to the top, and  the full configuration area is seen  in the left of the report.Clear the formula in cell C4 so you can build the ReportVariable() function from the beginning. 
+Scroll to the top, and  the full configuration area is seen  in the left of the report. Clear the formula in cell C4 so you can build the ReportVariable() function from the beginning. 
 
 ![](/images/L-Create-InventoryVar/05.png)
 

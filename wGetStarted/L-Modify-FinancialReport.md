@@ -10,6 +10,10 @@ description: Modify a monthly trend report which could easily be modified to acc
 
 Financial reports can sometimes share the same row or column configurations. Rather than creating a new report, it is often easier to modify an existing one. For example, you might be using a monthly trend report which could easily be modified to accommodate a budget-to-actual comparison report, showing monthly and year-to-date differences. This Walk-through will illustrate how to make these changes. 
 
+<blockquote class=lab_info>
+  If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 2 Modifying Reports > Lab 2.3 Financial Report.
+</blockquote>
+
 ###  Using Column Definitions 
 
 **Step 1:** Open the PL Trend report from the Interject Financials folder of the [ Report Library ](/wAbout/Report-Library-Basics.html). 

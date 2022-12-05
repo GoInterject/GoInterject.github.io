@@ -9,6 +9,10 @@ description: Pivot tables are a flexible and valuable tool for analyzing data in
 
 Pivot tables are a flexible and valuable tool for analyzing data in Excel. Interject makes it easier to scale and distribute pivot tables. In this walk-through you will set up a pivot table based on an Interject report. There are a couple advantages to combining Interject with pivot tables. It provides the ability to build security into pivot table reports, users only see data relative to their credentials. Also, by allowing filters that are used at the database level, the amount of data in a user's pivot table is limited to data that is needed only for the analysis. 
 
+<blockquote class=lab_info>
+  If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 6 Special Features > Lab 6.1 Working with Pivot Tables.
+</blockquote>
+
 ###  Building the Support Tab 
 
 **Step 1:** In this exercise, you will use the Customer Collections Demo from a previous [ Walk-through ](/wAbout/Customer-Aging.html). This demo can be found in the Report Library under the Interject Demo folder as shown below. 

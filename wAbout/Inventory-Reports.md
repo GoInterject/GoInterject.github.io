@@ -9,6 +9,9 @@ description: This lab is a basic inventory example for tracking product quantiti
 
 This lab is a basic inventory example for tracking product quantities. In this walk-through, you will open a summary of our product categories and total quantities. You will then drill into the Inventory Detail tab to view specific products within that category. There is also a secondary inventory option which allows us to view all of the categories, and the products within them, in a single sheet. 
 
+<blockquote class=lab_info>
+  If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 1 Real World Walkthroughs > Lab 1.2 Basics of Report Formulas.
+</blockquote>
 
 ###  Navigating to the Inventory Reports 
 

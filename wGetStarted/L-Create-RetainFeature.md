@@ -18,6 +18,10 @@ When a new row is added, there are two options: 1) to insert the new row at the 
 
 Use the PL Trend report for this lab. 
 
+<blockquote class=lab_info>
+  If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 5 Advanced Features > Lab 5.5 Using the Retain Feature.
+</blockquote>
+
 ###  Create Simple Formulas: 
 
 To start, copy the columns  **L-N** in the  **PLTrend** tab and paste them into Column  **P-R.**
@@ -92,7 +96,7 @@ Now, click on the cell  **G16,** which contains the ReportVariable() formula. No
 
 Now scroll down to the **RetainRowColumns.** The RetainRowColumns argument expects a single string of comma delimited names of columns that will be retained after a data pull. Instead of entering the string, the [**jCombine()**](/wIndex/jCombine.html) helper function is helpful as it will concatenate the column names for us.
 
-Enter **jCombine((F2:G2))** in the field. This will retain all inputs in columns **P-R** in the report. 
+Enter **jCombine((F2:G2))** in the field. This will retain all rows that have a value in the Segment1 or Segment1Name columns.
 
 ![](/images/L-Create-Retain/11.jpg)
 

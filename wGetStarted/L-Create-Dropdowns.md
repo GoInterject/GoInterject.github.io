@@ -11,6 +11,10 @@ When manually entering different filter values, it can be difficult to remember 
 
 > **IMPORTANT:** The jDropdown feature requires a stored procedure to operate. In the event that you cannot create a stored procedure, you can reuse a data portal from the report formula that populates the report in which you want to use this feature. To learn how to build the database connection, dataportal, and stored procedure used in this example, follow the instructions in the [developer lab](/wGetStarted/L-Dev-jDropdowns.html). Otherwise contact your IT department to help implement this functionality.
 
+<blockquote class=lab_info>
+  If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 5 Advanced Features > Lab 5.3 Building jDropdowns.
+</blockquote>
+
 ### Preparing the Report
 
 **Step 1:** Open the report **Interject Customer Collections** under the Interject Demos in the [ Report Library ](/wAbout/Report-Library-Basics.html). 
@@ -89,7 +93,7 @@ When manually entering different filter values, it can be difficult to remember 
 ![](/images/L-Create-Dropdowns/13.png)
 <br>
 
-**Step 3:** In the **ScreenTip text:** field input **Interject Dropdown**. 
+**Step 3:** In the **ScreenTip text:** field input **Interject Dropdown** (Note: The jDropdown function will not work without this). 
 
 ![](/images/L-Create-Dropdowns/14.png)
 <br>

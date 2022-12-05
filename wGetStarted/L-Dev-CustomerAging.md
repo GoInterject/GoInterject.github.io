@@ -12,7 +12,7 @@ On this page, you will create a simple data pull using the Customer Aging Report
 
 **Developer Note**
 To work through this example, locate Lab 1.2 Customer Collections in the Interjet Report Library
-{: .component }
+
 
 ###  Setting Up The Data Connection 
 
@@ -72,7 +72,7 @@ The Database Data Connection is now ready to be used in a Data Portal. You shoul
 ![](/images/L-Dev-CustAging/10.png)
 <br>
 
-**Note:** If this is your first time setting up a data portal, review **Data Portals** , which describes the data portal parameters in more detail, including the difference between formula and system parameters. Return to the next step to continue. 
+**Note:** If this is your first time setting up a data portal, review [**Data Portals**](/wPortal/Data-Portals.html) , which describes the data portal parameters in more detail, including the difference between formula and system parameters. Return to the next step to continue. 
 
 ###  Setting Up Formula Parameters 
 
@@ -144,7 +144,7 @@ Enter **Customer ID** for Helper Name and **The customer ID is an exact search t
 
 ###  System Parameters 
 
-System parameters are similar to formula parameters, except the system parameter values are provided by the system instead of cells that are in the spreadsheet report. There are several system parameters that aid in communication with the middle-tier service. In this case, a stored procedure is used. See **Data Portals** in **Interject Website Portal** for more information. 
+System parameters are similar to formula parameters, except the system parameter values are provided by the system instead of cells that are in the spreadsheet report. There are several system parameters that aid in communication with the middle-tier service. In this case, a stored procedure is used. See [**Data Portals**](/wPortal/Data-Portals.html) in [**Interject Website Portal**](/wPortal/The-INTERJECT-Website-Portal.html) for more information. 
 
 In this example, you will use the system parameter, **Interject_NTLogin** , which passes the user’s Windows login. This is helpful for implementing row-level security; however, the best practice is to use SQL Server built-in functions like sysname() when available. You are also using **Interject_LocalTimeZoneOffset** , which provides the numeric offset in hours between the user’s profile time zone setting and universal time. The **Interject_LocalTimeZoneOffset** parameter is used to convert date and time values to the user’s time zone. 
 
@@ -167,7 +167,9 @@ In this example, you will use the system parameter, **Interject_NTLogin** , whic
 
 A stored procedure or data API serves as a middle tier for an Interject report. In this example you will be using a stored procedure. Interject can retrieve one or more result sets from a stored procedure into the spreadsheet report. 
 
+ 
 The Interject Website Portal allows you to create and manage Data Portals and reference stored procedures you create. Data Portals are stored locally in your Excel session when you log into Interject. When requesting data Interject creates a point-to-point connection with the intended data source. 
+
 
 The below steps assume you are proficient with SQL Management Studio for Microsoft SQL Server and in creating stored procedures. If you need additional training in this area, please contact us at [ info@gointerject.com ](mailto:info@gointerject.com) . 
 
@@ -318,6 +320,6 @@ Fortunately, the documentation to build this report has already been presented i
 ![](/images/L-Dev-CustAging/25.png)
 <br>
 
-It is recommended to go to **Create: Customer Aging** to complete those steps again to reinforce the process. However, this time you can use your own Data Portal for the report. 
+It is recommended to go to [ **Create: Customer Aging** ](https://docs.gointerject.com/wGetStarted/L-Create-CustomerAging.html) to complete those steps again to reinforce the process. However, this time you can use your own Data Portal for the report. 
 
 When going through the report creation steps, be sure to use your new Data Portal Code instead of the one used in the training. Please continue to the next lab after your new report is built. 

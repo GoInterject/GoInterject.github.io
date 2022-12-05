@@ -10,6 +10,10 @@ description: This page illustrates the process of building a Customer Order repo
 
 This page illustrates the process of building a Customer Order report from scratch and uses the multi-row option to provide a more advanced presentation. Here you will get a better understating of the  [ ReportRange() ](/wIndex/ReportRange.html) as well as JfreezePanes() function. 
 
+<blockquote class=lab_info>
+  If you are following the Training Labs, this is Lab 3.2. Note: The Report Library at Training Labs for this lab will be blank as you are creating a report from a new blank Excel sheet.
+</blockquote>
+
 ###  Building the Report: 
 
 **Step 1:** This process begins with the Interject [ **Report Builder** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder) . Open the Report Build as illustrated below. There is a drop down list of  [ Dataportals ](/wIndex/Common-Dataportal-Index.html) that can be chosen . An Interject Dataportal is a pre-configured data query that is setup so spreadsheet users can easily direct data into their own spreadsheet reports. Dataportals can be setup to access databases or cloud data and are either setup by Interject developers or an IT team. 
