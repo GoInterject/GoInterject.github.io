@@ -170,7 +170,7 @@ In the previous examples of building a distribution report, the data was systema
 
 <br>
 
-**Step 4:** Open the **Export Book** form in the INTERJECT Ribbon then Select  Run Distribution
+**Step 4:** Open the **Export Book** form in the Interject Ribbon then Select  Run Distribution
 
 ![](/images/L-Export-AdvancedDist/28.jpg)
 

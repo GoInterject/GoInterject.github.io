@@ -5,13 +5,13 @@ keywords: [login, ribbon]
 description: Logging in is simple and fast! After logging in once, you can set up auto-login, which saves you from entering credentials each time. You can also log into multiple accounts. 
 ---
 
-##  Before Using INTERJECT, Here's How to Login 
+##  Before Using Interject, Here's How to Login 
 
 Logging in is simple and fast! After logging in once, you can set up auto-login, which saves you from entering credentials each time. You can also log into multiple accounts. 
 
 ###  Locating the Login Form 
 
-**Step 1:** Select the Login button on the INTERJECT Ribbon.  ![](/images/LogginIn/interject-ribbon-advanced-menu-login-revised.png)
+**Step 1:** Select the Login button on the Interject Ribbon.  ![](/images/LogginIn/interject-ribbon-advanced-menu-login-revised.png)
 
 **Step 2:** Select the company you will be logging with. In this case it will be Interject. 
 
@@ -23,7 +23,7 @@ Logging in is simple and fast! After logging in once, you can set up auto-login,
 
 Whichever option is chosen, the login process that follows is the same. 
 
-**Step 1:** Select the type of account to log in with. In this example, the **INTERJECT** account type is used. 
+**Step 1:** Select the type of account to log in with. In this example, the **Interject** account type is used. 
 
 **Step 2:** Type in your user name and password. 
 

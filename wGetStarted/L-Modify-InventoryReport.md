@@ -105,7 +105,7 @@ This will temporarily create two **Grains/Cereals** sections and you will edit t
 
 
 
-**Step 5:** Once you have the new row inserted, you will need to change the category name in the new row to **Dairy Products** in column B. This is called the **Row Definition** and is how INTERJECT knows what data to place in that row. In this example, the column E formula references column B, but this does not have to be the case. You can control what the user sees in column E. 
+**Step 5:** Once you have the new row inserted, you will need to change the category name in the new row to **Dairy Products** in column B. This is called the **Row Definition** and is how Interject knows what data to place in that row. In this example, the column E formula references column B, but this does not have to be the case. You can control what the user sees in column E. 
 
 Below, you changed the definition for row 18 to **Dairy Products** and are ready to pull data again so that the row has correct data. 
 
@@ -130,7 +130,7 @@ As it is, the report does not describe what each of the categories contains, so 
 <br> 
 
 
-**Step 2:** Now add the Column Definition value in the top part of the report so that INTERJECT knows to bring in data to that column. 
+**Step 2:** Now add the Column Definition value in the top part of the report so that Interject knows to bring in data to that column. 
 
 ![](/images/L-Modify-Inventory/15.png)
 
@@ -170,7 +170,7 @@ jFreezePanes is not configured for all the example reports, but it is easy to se
 <br> 
 
 
-**Step 2:** To use the [ jFreezePanes ](/wIndex/jFreezePanes.html), click the Quick Tools button in the INTERJECT Ribbon and select **Freeze/UnFreeze Panes**. 
+**Step 2:** To use the [ jFreezePanes ](/wIndex/jFreezePanes.html), click the Quick Tools button in the Interject Ribbon and select **Freeze/UnFreeze Panes**. 
 
 ![](/images/L-Modify-Inventory/20.png)
 

@@ -6,7 +6,7 @@ description: The Pair() function is used to specify a, "From" value or range to 
 ---
 ##  Function Summary 
 
-The Pair() function is used to specify a **From** value or range to a **Target** location or range. It is not meant to be standalone function, rather, it is meant to be used with a [PairGroup()](PairGroup.md) function. It is best practice to always embed the Pair() function inside a PairGroup() function even when you only need to use one Pair() action. The Pair() and PairGroup() functions are meant to be embedded inside of [Data functions](Data-Functions-Landing.html). This is because the action of copying the value of a cell and having a target cell receive the value requires a trigger produced by an INTERJECT Event. To check which functions Pair() can be used with, see the list at  the bottom of this page.
+The Pair() function is used to specify a **From** value or range to a **Target** location or range. It is not meant to be standalone function, rather, it is meant to be used with a [PairGroup()](PairGroup.md) function. It is best practice to always embed the Pair() function inside a PairGroup() function even when you only need to use one Pair() action. The Pair() and PairGroup() functions are meant to be embedded inside of [Data functions](Data-Functions-Landing.html). This is because the action of copying the value of a cell and having a target cell receive the value requires a trigger produced by an Interject Event. To check which functions Pair() can be used with, see the list at  the bottom of this page.
 
 ###  Function Arguments   
 

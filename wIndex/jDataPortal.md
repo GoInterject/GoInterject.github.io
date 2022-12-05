@@ -2,27 +2,27 @@
 title: jDataPortal()
 layout: custom
 keywords: [jdataportal, function, dataportal]
-description: jDataPortal() function is a helper function used by developers to further leverage DataPortals. It can reduce the number of data connections used by INTERJECT in a report, speeding the report process and conserving server resources. 
+description: jDataPortal() function is a helper function used by developers to further leverage DataPortals. It can reduce the number of data connections used by Interject in a report, speeding the report process and conserving server resources. 
 ---
 
 ---
 
 ## Function Summary
 
-jDataPortal() function is a helper function used by developers to further leverage DataPortals. It can reduce the number of data connections used by INTERJECT in a report, speeding the report process and conserving server resources. It allows DataPortals to be re-used in the same report pull event, so multiple report functions can access the data in memory and place specific data in the tab using different methods. jDataPortal() can also be used to adjust the sort order and filter the data in memory before the it is presented. jDataportal can only be used inside of an [ INTERJECT data function ](Data-Functions-Landing.html) as a helper function.
+jDataPortal() function is a helper function used by developers to further leverage DataPortals. It can reduce the number of data connections used by Interject in a report, speeding the report process and conserving server resources. It allows DataPortals to be re-used in the same report pull event, so multiple report functions can access the data in memory and place specific data in the tab using different methods. jDataPortal() can also be used to adjust the sort order and filter the data in memory before the it is presented. jDataportal can only be used inside of an [ Interject data function ](Data-Functions-Landing.html) as a helper function.
 
-For users with the [ ClientAdmin ](/wPortal/INTERJECT-Roles.html) user role, jDataPortal() can also be used to redirect the connection, stored procedure, or API during testing.
+For users with the [ ClientAdmin ](/wPortal/Interject-Roles.html) user role, jDataPortal() can also be used to redirect the connection, stored procedure, or API during testing.
 
 ### Function Arguments
 
 | Parameter Name     | Description | Default | Optional |
 |:---|:---|:---|:---|
-| DataPortalName     | The name of the INTERJECT DataPortal set up to connect with data.                                                                                                                                                                                                                                              |         | NO       |
+| DataPortalName     | The name of the Interject DataPortal set up to connect with data.                                                                                                                                                                                                                                              |         | NO       |
 | DataResultNumber   | This controls the data set from a stored procedure that is returned based on the order of the data sets in the SQL stored procedure.                                                                                                                                                                           |         | YES      |
 | Filter             | Filter using syntax that would normally follow a WHERE statement in SQL. For example, if only filtering customers that contain an s, see the below example. OR as well as AND SQL operators can be used. Additionally, other advanced SQL filter syntax is able to be utilized. |         | YES      |
 | OrderBy            | A sort can be added using syntax that would normally follow an "Order By" statement in SQL.                                                                                                                                                                                                                    |         | YES      |
 | CommandOverride    | Directs the data call to a different Stored Procedure or API command. This is used only for testing and can only be done by ClientAdmin or Editor roles.                                                                                                                                                       |         | YES      |
-| ConnectionOverride | Changes the Data Connection name used for testing. Only available for ClientAdmin or [Editor](/wPortal/INTERJECT-Roles.html) roles.|| YES      |
+| ConnectionOverride | Changes the Data Connection name used for testing. Only available for ClientAdmin or [Editor](/wPortal/Interject-Roles.html) roles.|| YES      |
 
 ### Excel Formula Bar Example
 

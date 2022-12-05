@@ -2,12 +2,12 @@
 title: Altering User Passwords
 layout: custom
 keywords: [user passwords, altering, changing]
-description: This is a section that displays how to reset an INTERJECT user’s password under the conditions that they are not logged in or they are logged in. 
+description: This is a section that displays how to reset an Interject user’s password under the conditions that they are not logged in or they are logged in. 
 ---
 
 ##  **Overview**
 ---
-This is a section that displays how to reset an INTERJECT user’s password under the conditions that they are not logged in or they are logged in. 
+This is a section that displays how to reset an Interject user’s password under the conditions that they are not logged in or they are logged in. 
 
 ###  Changing Passwords While Logged In 
 
@@ -33,7 +33,7 @@ This is a section that displays how to reset an INTERJECT user’s password unde
 
 ![](/images/Passwords/02.jpg)
 
-**Step 3:** Next navigate to the email from INTERJECT regarding the password change and click the **Reset Password** button. This will take us to the INTERJECT password reset screen. 
+**Step 3:** Next navigate to the email from Interject regarding the password change and click the **Reset Password** button. This will take us to the Interject password reset screen. 
 
 **Step 4:** Finally input the new password then click the **Change My Password** button. 
 

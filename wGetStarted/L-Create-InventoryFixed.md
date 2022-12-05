@@ -48,7 +48,7 @@ Delete rows 11 through 24 since they are not needed for this lesson. The page sh
 <br> 
 
 
-**Step 4:** A fixed report requires specific values to be entered in a row definition column. Enter the following categories as seen below. In cell B27, you also added a **Leftovers** section that is a special INTERJECT feature, a Row Definition marking the start of a section that will include any data not matching the earlier fixed rows. This is helpful in ensuring all data is presented. 
+**Step 4:** A fixed report requires specific values to be entered in a row definition column. Enter the following categories as seen below. In cell B27, you also added a **Leftovers** section that is a special Interject feature, a Row Definition marking the start of a section that will include any data not matching the earlier fixed rows. This is helpful in ensuring all data is presented. 
 
 ![](/images/L-Create-InventoryFix/08.png)
 

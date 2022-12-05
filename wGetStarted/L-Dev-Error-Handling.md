@@ -2,22 +2,22 @@
 title: "Lab Developer: Error Handling with RAISERROR and UserNotice"
 layout: custom
 keywords: [error, handling, RAISERROR, UserNotice]
-description: Explains how INTERJECT handles errors in Data Portals using T-SQL RAISERROR and UserNotice
+description: Explains how Interject handles errors in Data Portals using T-SQL RAISERROR and UserNotice
 ---
 
 ### Introduction
 
-This page will cover error handling in INTERJECT development using T-SQL’s RAISERROR and INTERJECT’s UnderNotice flag.
+This page will cover error handling in Interject development using T-SQL’s RAISERROR and Interject’s UnderNotice flag.
 
 ### Understanding Error Handling
 
-There are two types of errors that INTERJECT can display: unhandled and handled. Unhandled errors are system generated, whereas handled errors are anticipated and written by developers. For example, on a pull or save, an error may occur on the server which the report is trying to access. This error could be handled by the developer if the developer anticipates it, or it could be left as an unhandled error. 
+There are two types of errors that Interject can display: unhandled and handled. Unhandled errors are system generated, whereas handled errors are anticipated and written by developers. For example, on a pull or save, an error may occur on the server which the report is trying to access. This error could be handled by the developer if the developer anticipates it, or it could be left as an unhandled error. 
 
 ### Error Handling with RaiseError and UserNotice
 
 #### RAISERROR
 
-INTERJECT leverages the T-SQL statement RAISERROR in its Data Portals to process errors.
+Interject leverages the T-SQL statement RAISERROR in its Data Portals to process errors.
 
 RAISERROR is designed to generate error messages and initiate error processing in the session (Source: [Microsoft RAISERROR Documentation][microsoft doc]). It is used as follows:
 
@@ -35,7 +35,7 @@ RAISERROR is designed to generate error messages and initiate error processing i
 
 #### UserNotice
 
-**‘UserNotice:’** is an INTERJECT-defined identifying string that we append to the beginning of the @ErrorMessageToUser argument at the time of passing to RAISERROR to indicate that we would like a popup to appear to the user in Excel when the error occurs. It is used as follows:
+**‘UserNotice:’** is an Interject-defined identifying string that we append to the beginning of the @ErrorMessageToUser argument at the time of passing to RAISERROR to indicate that we would like a popup to appear to the user in Excel when the error occurs. It is used as follows:
 
 
 ![](/images/Error-Handling/02.png)
@@ -49,7 +49,7 @@ Errors can quickly be *handled* (as opposed to leaving unhandled) by developers 
 
 ### Unhandled Error Behavior with RAISERROR
 
-If you opt not to use UserNotice, you error will still be reported by the INTERJECT addin, but no popup window will appear for the user:
+If you opt not to use UserNotice, you error will still be reported by the Interject addin, but no popup window will appear for the user:
 
 ![](/images/Error-Handling/04.png)
 

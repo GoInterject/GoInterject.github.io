@@ -1,5 +1,5 @@
 ---
-title: "Lab Create: INTERJECT Run On Open"
+title: "Lab Create: Interject Run On Open"
 layout: custom
 keywords: [auto-run, run-on-open, run, pull, property ]
 description: Use this property to auto-pull the report when opening for the first tab that appears. No VBA required.
@@ -7,7 +7,7 @@ description: Use this property to auto-pull the report when opening for the firs
 
 ##  **Overview:**
 
-Some reports require default values, settings, or have summary pages that must be pulled before others in order for the report to function properly. Using the Run on Open INTERJECT property will auto-run the first tab that appears. This can save time and helps streamline INTERJECT processes. 
+Some reports require default values, settings, or have summary pages that must be pulled before others in order for the report to function properly. Using the Run on Open Interject property will auto-run the first tab that appears. This can save time and helps streamline Interject processes. 
 
 We will walk through Run on Open using the [ Customer Aging Report ](/wGetStarted/L-Create-CustomerAging.html).
 

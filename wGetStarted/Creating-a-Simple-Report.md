@@ -2,12 +2,12 @@
 title: Creating a Simple Report
 layout: custom
 keywords: [create, example, report, simple, walkthrough]
-description: Now that you know how to modify reports, you can take it one step further. In this section, you will create an INTERJECT report completely from scratch. To make things easy, recreate a sheet from our previous examples that you are already familiar with. 
+description: Now that you know how to modify reports, you can take it one step further. In this section, you will create an Interject report completely from scratch. To make things easy, recreate a sheet from our previous examples that you are already familiar with. 
 ---
 
 ##  **Overview**
 
-Now that you know how to modify reports, you can take it one step further. In this section, you will create an INTERJECT report completely from scratch. To make things easy, recreate a sheet from our previous examples that you are already familiar with. 
+Now that you know how to modify reports, you can take it one step further. In this section, you will create an Interject report completely from scratch. To make things easy, recreate a sheet from our previous examples that you are already familiar with. 
 
 Go directly to any walk-through by clicking one of the links below. 
 

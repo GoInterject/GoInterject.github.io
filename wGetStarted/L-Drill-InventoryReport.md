@@ -48,7 +48,7 @@ In this example, you will view drilling between reports using the same Inventory
   
 
 
-**Step 4:** In the Formula Bar, click within the word **Pair()** inside the text **PairGroup(Pair())** while the Function Wizard is open. See the illustration below. Once this is done, the Function Wizard will automatically change to help with the Pair() function. Type **B15:B23** in the From argument as shown below. Column B is where the CustomerID will be shown in the source report. By noting a range from row 15 to 23 in column B, INTERJECT will expand that range to the data that is presented in this source report. 
+**Step 4:** In the Formula Bar, click within the word **Pair()** inside the text **PairGroup(Pair())** while the Function Wizard is open. See the illustration below. Once this is done, the Function Wizard will automatically change to help with the Pair() function. Type **B15:B23** in the From argument as shown below. Column B is where the CustomerID will be shown in the source report. By noting a range from row 15 to 23 in column B, Interject will expand that range to the data that is presented in this source report. 
 
 ![](/images/L-Drill-Inventory/06.png)
 <br>
@@ -74,7 +74,7 @@ After pressing OK, the report formula should look as it does in the image below.
 
 **Note:** Each drill will need to be linked individually, not all at once. If they are linked all at once then the drills will not work as it will drill everything at once, rather than one at a time. 
 
-**Step 2:** In the Hyperlink pop-up window, you will select **Place in This Document**. Then select **ScreenTip**, type **Interject Drill**, and press OK. Although this technically sets up a hyperlink to cell A1 in the same tab, INTERJECT will override the event so the INTERJECT drill will activate. 
+**Step 2:** In the Hyperlink pop-up window, you will select **Place in This Document**. Then select **ScreenTip**, type **Interject Drill**, and press OK. Although this technically sets up a hyperlink to cell A1 in the same tab, Interject will override the event so the Interject drill will activate. 
 
 ![](/images/L-Drill-Inventory/10.png)
 <br>
@@ -109,14 +109,14 @@ Here, you have the report pulled and are ready to go.
   
 
 
-**Step 4:** Now that you have the data, and can click the hyperlink. As shown in the animated GIF below, click on **Totals for Grains/Cereals** and INTERJECT will drill to the detail of that category in the target worksheet. Hyperlinks only show the Drill window when there is more than one drill option setup. In this case, you only setup one drill and it goes there automatically. 
+**Step 4:** Now that you have the data, and can click the hyperlink. As shown in the animated GIF below, click on **Totals for Grains/Cereals** and Interject will drill to the detail of that category in the target worksheet. Hyperlinks only show the Drill window when there is more than one drill option setup. In this case, you only setup one drill and it goes there automatically. 
 
 ![](/images/L-Drill-Inventory/15.gif)
 <br>
   
 
 
-Hyperlinking Drills is a simple way to make INTERJECT reports faster and more user-friendly. Click [ here ]([/wGetStarted/L-Drill-TheThreeWays.html#the-hyperlink-method](wGetStarted/L-Drill-FinancialReport.html)) for the Financial Report Drill walk-through. 
+Hyperlinking Drills is a simple way to make Interject reports faster and more user-friendly. Click [ here ]([/wGetStarted/L-Drill-TheThreeWays.html#the-hyperlink-method](wGetStarted/L-Drill-FinancialReport.html)) for the Financial Report Drill walk-through. 
 
   
 

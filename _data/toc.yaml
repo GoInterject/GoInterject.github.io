@@ -33,28 +33,28 @@ design:
 
 
 about:
-- sectiontitle: What Does INTERJECT Do?
+- sectiontitle: What Does Interject Do?
   path: /
   section:
   - title: Real World Use Cases
     path: /wAbout/Real-World-Use-Cases.html
-  - title: Why CFO's Like INTERJECT
+  - title: Why CFO's Like Interject
     path: /wAbout/Why-CFOs-Like-INTERJECT.html
-  - title: Why CIO's Like INTERJECT
+  - title: Why CIO's Like Interject
     path: /wAbout/Why-CIOs-Like-INTERJECT.html
   - title: What You Need to Know
     path: /wAbout/What-You-Need-to-Know.html
-- sectiontitle: Installing INTERJECT
+- sectiontitle: Installing Interject
   section:
   - title: Installing - Single User
     path: /wAbout/SingleUser.html
   - title: Installing - Shared Computer
     path: /wAbout/SharedComputer.html
-  - title: Updating INTERJECT
+  - title: Updating Interject
     path: /wAbout/Updating-INTERJECT.html
-  - title: Uninstalling INTERJECT
+  - title: Uninstalling Interject
     path: /wAbout/Uninstalling.html
-- sectiontitle: Using INTERJECT
+- sectiontitle: Using Interject
   path: /wAbout/Using-INTERJECT.html
   section:
   - title: Logging In
@@ -74,7 +74,7 @@ about:
       path: /wAbout/Inventory-Reports.html
     - title: Financial Report
       path: /wAbout/Financial-Report.html
-- sectiontitle: Working with INTERJECT
+- sectiontitle: Working with Interject
   path: /wAbout/Working-with-INTERJECT.html
   section:
   - title: Basics of Report Formulas
@@ -105,9 +105,9 @@ about:
 #     path: /wApps/FRx-Migration.html
     
 getstarted:
-  - title: INTERJECT Ribbon Menu Items
+  - title: Interject Ribbon Menu Items
     path: /wGetStarted/INTERJECT-Ribbon-Menu-Items.html
-  - sectiontitle: Creating with INTERJECT
+  - sectiontitle: Creating with Interject
     path: /wGetStarted/Creating-with-INTERJECT.html
     section:
     - sectiontitle: Modifying an Existing Report
@@ -169,7 +169,7 @@ getstarted:
       path: /wGetStarted/L-Create-RetainFeature.html
     - title: "Lab Create: Updating the Report Library"
       path: /wGetStarted/L-Create-UpdatingReportLibrary.html
-    - title: "Lab Create: INTERJECT Run On Open"
+    - title: "Lab Create: Interject Run On Open"
       path: /wGetStarted/L-Create-RunOnOpen.html
     - sectiontitle: Exporting Reports
       path: /wGetStarted/Exporting-Reports.html
@@ -184,7 +184,7 @@ getstarted:
 
 
 index:
-  - sectiontitle: INTERJECT Function Index
+  - sectiontitle: Interject Function Index
     path: /wIndex/Excel-Function-Index.html
     section:
     - sectiontitle: Data Pull Functions
@@ -273,13 +273,13 @@ index:
     section:
       - title: Request Context Parse
         path: /wIndex/Request-Context-Parse.html
-  - title: INTERJECT Hotkey Index
+  - title: Interject Hotkey Index
     path: /wIndex/INTERJECT-Hotkey-Index.html
 
 
 
 portal:
-  - sectiontitle: INTERJECT Website Portal
+  - sectiontitle: Interject Website Portal
     path: /wPortal/The-INTERJECT-Website-Portal.html
     section:
     - title: Logging In to Website Portal
@@ -296,7 +296,7 @@ portal:
     - sectiontitle: User Profile
       path: /wPortal/User-Profile.html
       section:
-      - title: INTERJECT Roles
+      - title: Interject Roles
         path: /wPortal/INTERJECT-Roles.html
       - title: Altering User Passwords
         path: /wPortal/Altering-User-Passwords.html
@@ -317,12 +317,12 @@ Developer:
           path: /wApi/python-api-custom-functions.html
 - title: Excel Best and Worst Practices
   path: /wGetStarted/Excel-Best-and-Worst-Practices.html
-- sectiontitle: Developing SQL with INTERJECT
+- sectiontitle: Developing SQL with Interject
   path: /wGetStarted/Developing-with-INTERJECT.html
   section:
-  - title: INTERJECT Website Portal
+  - title: Interject Website Portal
     path: /wGetStarted/INTERJECT-Website-Portal.html
-  - title: Defining INTERJECT for Developers
+  - title: Defining Interject for Developers
     path: /wGetStarted/Defining-INTERJECT-for-Developers.html
   - sectiontitle: Simple Data Pull
     path: /wGetStarted/Simple-Data-Pull.html

@@ -16,7 +16,7 @@ This page illustrates the process of building a Customer Order report from scrat
 
 ###  Building the Report: 
 
-**Step 1:** This process begins with the INTERJECT [ **Report Builder** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder) . Open the Report Build as illustrated below. There is a drop down list of  [ Dataportals ](/wIndex/Common-Dataportal-Index.html) that can be chosen . An INTERJECT Dataportal is a pre-configured data query that is setup so spreadsheet users can easily direct data into their own spreadsheet reports. Dataportals can be setup to access databases or cloud data and are either setup by INTERJECT developers or an IT team. 
+**Step 1:** This process begins with the Interject [ **Report Builder** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder) . Open the Report Build as illustrated below. There is a drop down list of  [ Dataportals ](/wIndex/Common-Dataportal-Index.html) that can be chosen . An Interject Dataportal is a pre-configured data query that is setup so spreadsheet users can easily direct data into their own spreadsheet reports. Dataportals can be setup to access databases or cloud data and are either setup by Interject developers or an IT team. 
 ![](/images/L-Create-CustOrders/01.png)
 <br>
 
@@ -85,7 +85,7 @@ The cleared report should look like this.
   
 
 
-**Step 2:** First, set the ColDefRange to the second row (2:2) so that INTERJECT knows which row is the Column Definition. 
+**Step 2:** First, set the ColDefRange to the second row (2:2) so that Interject knows which row is the Column Definition. 
 
 ![](/images/L-Create-CustOrders/11.jpg)
 <br>
@@ -211,7 +211,7 @@ Set the ColDefRange to **2:4** and FormatRange to **6:8** as illustrated below.
   
 
 
-The report should look something like this. Note that the text gets overwritten with the data pulled by INTERJECT. However, the formatting, row size, text type, and text that does not coincide with the column definitions stay the same. 
+The report should look something like this. Note that the text gets overwritten with the data pulled by Interject. However, the formatting, row size, text type, and text that does not coincide with the column definitions stay the same. 
 
 ![](/images/L-Create-CustOrders/27.png)
 <br>
@@ -232,7 +232,7 @@ The report should look something like this. Note that the text gets overwritten 
   
 
 
-**Step 3:** Use JFreezePanes to toggle panes off and on. Go to the [ **Quick Tools** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools) menu in the INTERJECT Ribbon, then click **Freeze/Unfreeze** Panes.
+**Step 3:** Use JFreezePanes to toggle panes off and on. Go to the [ **Quick Tools** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools) menu in the Interject Ribbon, then click **Freeze/Unfreeze** Panes.
 
 ![](/images/L-Create-CustOrders/30.png)
 <br>

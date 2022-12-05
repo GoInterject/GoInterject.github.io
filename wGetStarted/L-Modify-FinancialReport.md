@@ -32,7 +32,7 @@ Financial reports can sometimes share the same row or column configurations. Rat
 
 Enter **7002** in the Location filter in cell M22 and month **2002-05** in cell M23. In the current report, values in L4 through N5 will populate based on the month entered. These cells were configured with spreadsheet formulas to automatically change based on the month entered. 
 
-The jColumnDef() formulas in cells L2 to N2 are important to understand. They exist in the Column Definition row 2, so INTERJECT understands what financial values to present for that column. 
+The jColumnDef() formulas in cells L2 to N2 are important to understand. They exist in the Column Definition row 2, so Interject understands what financial values to present for that column. 
 
 ![](/images/L-Modify-Financial/03.png)
 

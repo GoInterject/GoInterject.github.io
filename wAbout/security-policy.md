@@ -20,7 +20,7 @@ Interject leverages this ISP to support business objectives within their informa
 
 ##  Information Security Policy
 
-Report Formulas are used to direct data in and out of your spreadsheet reports and applications. This section will illustrate what is behind the scenes of interactive INTERJECT worksheets so you can better understand how they adapt to your needs. 
+Report Formulas are used to direct data in and out of your spreadsheet reports and applications. This section will illustrate what is behind the scenes of interactive Interject worksheets so you can better understand how they adapt to your needs. 
 
 ###  Staff
 
