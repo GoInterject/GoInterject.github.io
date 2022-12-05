@@ -184,6 +184,8 @@ This will automatically freeze the panes to the pre-configured position.
 <br> 
 
 
-And that is all there is to it. You have now modified the Inventory Report with an additional column and row. Save your new report to the report library as "Modified Inventory_YourName" To know how to save report changes to the Report Library, [ click here ](/wAbout/Report-Library-Basics.html). 
+And that is all there is to it. You have now modified the Inventory Report with an additional column and row. Save your new report to the report library as "Modified Inventory_YourName". You can learn how to save files to the Report Library [ here ](L-Create-UpdatingReportLibrary.html).
 
- 
+<blockquote class=lab_info>
+  Do not upload this file to the Report Library if you are following the Training Labs.
+</blockquote>

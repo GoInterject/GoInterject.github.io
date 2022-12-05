@@ -115,8 +115,6 @@ You completed the drill. You can return to the source worksheet, **Customer Agin
 
 Finally, clear the reports, refreeze the panes, and upload it to the [ Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary.html).
 
-  
-
-
-  
-
+<blockquote class=lab_info>
+  Do not upload this file to the Report Library if you are following the Training Labs.
+</blockquote>

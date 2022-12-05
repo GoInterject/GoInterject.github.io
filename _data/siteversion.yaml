@@ -17,3 +17,8 @@
 - archive:
   name: Training
   path: /bApps/InterjectTraining/InterjectTrainingMain
+
+
+- archive:
+  name: Testing
+  path: /wTesting/InterjectFeaturesTesting

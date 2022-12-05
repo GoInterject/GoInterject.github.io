@@ -161,6 +161,7 @@ Notice that if you close the drill window and try to drill on column O, there wi
 ![](/images/L-Drill-Financial/21.png)
 <br>
   
-**Step 3:** The animated GIF below shows the drill completed. The panes are frozen again. The drill selects the amount for account 33000 for March 2002, then does the drill on amount 44,474. The JE Query report provides the detail to support the same amount.   
+**Step 3:** The animated GIF below shows the drill completed. The panes are frozen again. The drill selects the amount for account 33000 for March 2002, then does the drill on amount $44,474. The JE Query report provides the detail to support the same amount. 
+  
 ![](/images/L-Drill-Financial/22.gif)
 <br>

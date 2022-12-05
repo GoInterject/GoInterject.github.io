@@ -168,3 +168,7 @@ Your report is now finished and can hide rows and columns where the invoices hav
 
 
 Finally, clear the report and upload it to the [ Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary.html).
+
+<blockquote class=lab_info>
+  Do not upload this file to the Report Library if you are following the Training Labs.
+</blockquote>

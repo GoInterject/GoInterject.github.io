@@ -7,7 +7,10 @@ layout: null
 var docstoc
 
 // check to see if this is part of the default nav
-if (sitePath.startsWith("/w") == true){
+if (sitePath.startsWith("/wTesting") == true){
+   docstoc = {{ site.data.testingtoc.testingtoc | jsonify }};
+}
+else if (sitePath.startsWith("/w") == true){
    docstoc = {{ site.data.toc | jsonify }};
 }
 // if not part of the default nav check if it's an app
@@ -25,7 +28,10 @@ else {
 // search page case and subcases
 if (sitePath.startsWith("/schemas/search") == true){
     // now determine the referring (origination?) page to determine which docstoc to assign
-    if (referringPage.includes("/w") == true){
+    if (referringPage.includes("/wTesting") == true){
+        docstoc = {{ site.data.testingtoc.testingtoc | jsonify }};
+    }
+    else if (referringPage.includes("/w") == true){
         docstoc = {{ site.data.toc | jsonify }};
     }
     else if (referringPage.includes("/bApps/bFinancials") == true){
