@@ -196,5 +196,8 @@ After the pull, refreeze your panes. The new Year to Date Budget to Actual Compa
 
 <br> 
 
-Finally, clear the report, refreeze the panes, and upload it to the [ Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary.html)
+Finally, clear the report, refreeze the panes, and upload it to the [ Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary.html). You can learn how to save files to the Report Library [ here ](L-Create-UpdatingReportLibrary.html).
 
+<blockquote class=lab_info>
+  Do not upload this file to the Report Library if you are following the Training Labs.
+</blockquote>

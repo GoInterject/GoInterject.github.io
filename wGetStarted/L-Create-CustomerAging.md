@@ -168,5 +168,8 @@ Use the [ **Quick Tools** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-
 
 Finally, clear the report, refreeze the panes, and upload it to the [ Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary.html).
 
+<blockquote class=lab_info>
+  Do not upload this file to the Report Library if you are following the Training Labs.
+</blockquote>
   
 

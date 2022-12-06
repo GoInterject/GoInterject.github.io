@@ -12,6 +12,10 @@ The report library is a way to share reports with other users on the team. The r
 
 **Note:** Before beginning this walk-through, it is important to review the [ Report Library Basics ](/wAbout/Report-Library-Basics.html). 
 
+<blockquote class=lab_info>
+  If you are following the Training Labs, do not upload files to the Report Library.
+</blockquote>
+
 ###  Saving a New Version 
 
 **Step 1:** To save a new version, you will first make sure the report is saved. Be sure the workbook is cleared of its data, since the Report Library is only designed to share blank report templates and not reports that have user data. Select the File menu shown below. 

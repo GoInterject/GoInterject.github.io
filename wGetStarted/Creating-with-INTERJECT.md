@@ -10,8 +10,10 @@ description: This section is for report writers who need to create or modify rep
 
 This section is for report writers who need to create or modify reports. You will run through basic modification, creation, and publishing of reports. Feel free to [ contact ](mailto:help@gointerject.com) us if you cannot find your answer in these sections. 
 
-  
+<blockquote class=lab_info>
 
+A <a href="https://docs.gointerject.com/wLabs/lab.html">Lab Guide</a> is offered to guide you through learning about the Interject features step-by-step. As you work through the labs, you will see this blue banner on documentation pages that lead you to the correct file for that particular page. If you are new to the Interject Add-In, these labs are a great place to start!
+</blockquote>
 
 ###  [ Modifying an Existing Report ](/wGetStarted/Modifying-an-Existing-Report.html)
 

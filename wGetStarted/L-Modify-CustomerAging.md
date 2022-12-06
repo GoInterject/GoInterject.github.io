@@ -172,7 +172,8 @@ The report is complete, you have added a total for each client and a summary tot
 ![](/images/L-Modify-CustAging/22.png)
 <br> 
 
-Once complete, save the report to your Report Library as "Modified Customer Aging_YourName"
-If you do not know how to do this, you can continue learning by reading how to save these changes back to Report Library [ here ](L-Create-UpdatingReportLibrary.html). 
+Once complete, save the report to your Report Library as "Modified Customer Aging_YourName". You can learn how to save files to the Report Library [ here ](L-Create-UpdatingReportLibrary.html).
 
- 
+<blockquote class=lab_info>
+  Do not upload this file to the Report Library if you are following the Training Labs.
+</blockquote> 

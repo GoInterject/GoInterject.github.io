@@ -49,12 +49,16 @@ In this case, we want to pull CustomerAging on open, so type **T:CustomerAging**
 ![](/images/L-Create-RunOnOpen/06.png)
 <br> 
 
-**Step 6** Save the file, and [ Update the report library ](/wGetStarted/L-Create-UpdatingReportLibrary.html) with the new file
+**Step 6** Save the file, and [ Update the report library ](/wGetStarted/L-Create-UpdatingReportLibrary.html) with the new file.
+
+<blockquote class=lab_info>
+  Do not upload this file to the Report Library if you are following the Training Labs.
+</blockquote>
 
 ![](/images/L-Create-RunOnOpen/07.png)
 <br>
 
-**Step 7** Close and reopen the file through the Report Library, and Excel will auto-pull the report
+**Step 7** Close and reopen the file through the Report Library, and Excel will auto-pull the report.
 
 ![](/images/L-Create-RunOnOpen/08.png)
 <br>

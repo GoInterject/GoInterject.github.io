@@ -7,7 +7,7 @@ description:
 
 ## Overview
 
-These labs are offered as an introductory course on the Interject® Add-in for Microsoft Excel®. By following this guide, you will be learn how to use the Interject Add-in to create and modify reports in Excel. You will also learn features to customize your reports further and ways to interact between Interject and Excel to make your reports useful in a variety of situations. Finally, you will learn how to export these reports and distrubute them.
+These labs are offered as an introductory course on the Interject® Add-In for Microsoft Excel®. By following this guide, you will be learn how to use the Interject Add-in to create and modify reports in Excel. You will also learn features to customize your reports further and ways to interact between Interject and Excel to make your reports useful in a variety of situations. Finally, you will learn how to export these reports and distrubute them.
 <br>
 <hr>
 ## Before You Begin
