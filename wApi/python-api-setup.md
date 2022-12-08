@@ -40,8 +40,11 @@ Once Python is installed the dependancies for the Interject Api include:
 Start by cloning the repository to your system.
 
 ```git
-git clone https://gitlab.com/Interject/Interject-Python-API.git
+git clone https://github.com/GoInterject/ids-python-api
 ```
+
+Note: If this repo is private and you need access, please [contact us](mailto:help@gointerject.com). It will be public soon.
+
 
 If you do not have git installed or prefer a different method, simply download the source code from the repository website.
 
@@ -113,4 +116,4 @@ Once settings have been configured, the server can be launched using the built-i
 ``` 
 
 ## **More Information**
-For more information visit the source code and readme for the [project on gitlab](https://gitlab.com/Interject/Interject-Python-API).
+For more information visit the source code and readme for the [project on GitHub](https://github.com/GoInterject/ids-python-api).
