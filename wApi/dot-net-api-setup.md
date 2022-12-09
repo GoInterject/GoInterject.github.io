@@ -25,12 +25,13 @@ The first step is to install the .NET SDK that best fits your system. These down
 
 
 ##  **Get The Code**
-Once .NET is installed then clone or download the `SimpleDataApi` repository
+Once .NET is installed then clone or download the `SimpleDataApi` repository:
 
 ```git
-git clone https://gitlab.com/Open-Interject/simpledataapi.git
+git clone https://github.com/GoInterject/ids-dotnet-api
 ```
 
+Note: If this repo is private and you need access, please [contact us](mailto:help@gointerject.com). It will be public soon.
 
 ## **Setup API**
 

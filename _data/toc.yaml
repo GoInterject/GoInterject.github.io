@@ -315,6 +315,8 @@ Developer:
       section:
         - title: Python Api Custom Functions
           path: /wApi/python-api-custom-functions.html
+    - title: Java Api Setup
+      path: /wApi/java-api-setup.html
 - title: Excel Best and Worst Practices
   path: /wGetStarted/Excel-Best-and-Worst-Practices.html
 - sectiontitle: Developing SQL with Interject
