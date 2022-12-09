@@ -12,7 +12,7 @@ In this example, you will how to create a second report, Customer Orders, that w
 
 ###  Verifying the Data Connection 
 
-Because this report uses the same database as the previous example, you do not need to create another data connection. The same connection can be used for this report. The connection created in the example text was named **NorthwindExampleDB_MyName** and  you should use the same naming conventions for your connection  . 
+Because this report uses the same database as the [previous example](/wGetStarted/L-Dev-CustomerAging.html), you do not need to create another data connection. The same connection can be used for this report. The connection created there was named **NorthwindExampleDB_MyName** and  you should use the same naming conventions for your connection. 
 
 ###  Copy the Data Portal 
 

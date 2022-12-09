@@ -11,7 +11,7 @@ description: On this page, you will create a simple data pull using the Customer
 On this page, you will create a simple data pull using the Customer Aging Report. To review the business use case for this report, see  [ **Real World Walkthroughs** **\- Customer Aging** ](/wAbout/Customer-Aging.html) .  This lab begins with steps for creating the INTERJECT data connection and data portals, followed by the steps on how to create the stored procedure. Finally, you will be directed to another page that shows how to use the data portal to create the spreadsheet report from scratch. 
 
 **Developer Note**
-To work through this example, locate Lab 1.2 Customer Collections in the Interjet Report Library
+To work through this example, locate the Customer Collections link in the Interjet Report Library.
 
 
 ###  Setting Up The Data Connection 
