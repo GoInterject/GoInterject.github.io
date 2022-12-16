@@ -14,11 +14,11 @@
   path: /bApps/bFinancials/Epicor-Financials
 
 
-- archive:
-  name: Training
-  path: /bApps/InterjectTraining/InterjectTrainingMain
+#- archive:
+#  name: Training
+#  path: /bApps/InterjectTraining/InterjectTrainingMain
 
 
-- archive:
-  name: Testing
-  path: /wTesting/InterjectFeaturesTesting
+#- archive:
+#  name: Testing
+#  path: /wTesting/InterjectFeaturesTesting
