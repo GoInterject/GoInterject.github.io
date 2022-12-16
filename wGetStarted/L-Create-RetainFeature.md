@@ -27,39 +27,33 @@ Use the PL Trend report for this lab.
 To start, copy the columns  **L-N** in the  **PLTrend** tab and paste them into Column  **P-R.**
 
 ![](/images/L-Create-Retain/01.jpg)
-
-<br> 
+<br>
 
 Then, unfreeze the sheet. 
 
 ![](/images/L-Create-Retain/02.jpg)
-
-<br> 
+<br>
 
 Clear out the cell range  **P2:R5** from the new columns so new data does not populate on the right side. This is also a good time to clear out the extra input spaces in the  **P20:R26** cell range. 
 
 ![](/images/L-Create-Retain/03.jpg)
-
-<br> 
+<br>
 
 Now input  **7002** into  **Location** and  **2002-05** into  **Month.** Then **Pull** the report. 
 
 ![](/images/L-Create-Retain/04.jpg)
-
-<br> 
+<br>
 
 Now, with the blank section to the right, we will create a projection based on the previous 3 months. 
 
 First, in cell  **Q26**, input  **Forecasting Formulas.** Then, edit the formula in  **P27** to be  **=IFERROR(EOMONTH(DATEVALUE(M23 &"-01"),1),"-")**. The following month formulas are set to use this formula and will update accordingly. 
 
 ![](/images/L-Create-Retain/05.jpg)
-
-<br> 
+<br>
 
 Project a 10% increase to every value. First select cell **P29** and input the formula **=L29 * 1.10**. Copy cell **P29** to the clipboard. Next highlight cells **P29:R152**. Finally, right-click on the area and copy the formulas.
 
 ![](/images/L-Create-Retain/06.png)
-
 <br>
 
 ###  Without RetainedRowColumns: 
@@ -67,14 +61,11 @@ Project a 10% increase to every value. First select cell **P29** and input the f
 If the accounts numbers were to change, the 10% increase would no longer be accurate since the data is old. Re-pull the data to update your numbers. 
 
 ![](/images/L-Create-Retain/07.jpg)
-
-<br> 
+<br>
 
 Without using the RetainedRowColumns feature, if your formulas are on the same rows as the data detail rows, the formulas get deleted when pulling updated data. 
 
-![](/images/L-Create-Retain/08.jpg)
-
-<br>
+![](/images/L-Create-Retain/08.jpg)<br>
 
 **Note:** The reason that some of the rows do not lose their formulas is because they are what are considered summary rows. A ReportVariable() also contains detail rows which are rows that get deleted on a pull or clear. 
 
@@ -85,29 +76,58 @@ To fix this, use the RetainedRowsColumns to retain the rows and your formulas.
 To do this, start by inputing **=L29 * 1.1** into cell **P29** again and then copy the formula into cells **P29:R152** like before.
 
 ![](/images/L-Create-Retain/09.png)
-
-<br> 
+<br>
 
 Now, click on the cell  **G16,** which contains the ReportVariable() formula. Now click the  **fx** button to pull up the function wizard. 
 
 ![](/images/L-Create-Retain/10.jpg)
-
-<br> 
+<br>
 
 Now scroll down to the **RetainRowColumns.** The RetainRowColumns argument expects a single string of comma delimited names of columns that will be retained after a data pull. Instead of entering the string, the [**jCombine()**](/wIndex/jCombine.html) helper function is helpful as it will concatenate the column names for us.
 
 Enter **jCombine((F2:G2))** in the field. This will retain all rows that have a value in the Segment1 or Segment1Name columns.
 
 ![](/images/L-Create-Retain/11.jpg)
-
-<br> 
+<br>
 
 Now, if the data changes again, you need to **Pull** the report again. 
 
 ![](/images/L-Create-Retain/12.jpg)
-
-<br> 
+<br>
 
 Notice that the formulas are still intact and accurate to the new data. 
 
-![](/images/L-Create-Retain/13.jpg)
+![](/images/L-Create-Retain/13.png)
+
+### jCombineIf()
+
+Now we will setup a [jCombineIf()](/wIndex/jCombine_IF.html) function in place of the jCombine. The jCombineIf function concatenates strings just like jCombine, but only does so if a certain critiea is met. In this case, we want to only retain the columns if a certain field is marked "Yes". To do so, we will replace the jCombine with a jCombineIf and include this critiea.
+
+**Step 1:** Enter "Retain: in cell **D20** and "Yes" in **F20**.
+
+![](/images/L-Create-Retain/jCombineIfSetup.png)
+<br> 
+
+**Step 2:** Next, click on cell **G16** and change the "jCombine" to "jCombineIf". Click on the Function Wizard button while the cursor is in the jCombineIf.
+
+![](/images/L-Create-Retain/jCombineIfEntry.png)
+<br> 
+
+**Step 3:** Enter "F20:G20" for **CriteriaRange**, "F2:G2" for **SelectedRange**, and "Yes" for **CriteriaValue**. This will only concatenate the strings in **F2:G2** if there is a "Yes" in the corresponding cells **F20:G20**.
+
+![](/images/L-Create-Retain/jCombineIfEntered.png)
+<br> 
+
+**Step 4:** Pull the data again.
+
+![](/images/L-Create-Retain/jCombineIfPull.png)
+<br> 
+
+Notice the values are still retained.
+
+![](/images/L-Create-Retain/13.png)
+<br> 
+
+**Step 5:** Finally, delete the "Yes" in cell **F20** and pull the data again. Notice the formulas get deleted.
+
+![](/images/L-Create-Retain/08.jpg)<br>
