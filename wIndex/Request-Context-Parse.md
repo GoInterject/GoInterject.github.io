@@ -7,7 +7,7 @@ description: This page that lists the interject request context parse stored pro
 
 ### Stored Procedure Summary
 
-The Request Context Parse stored procedure is used as a callable helper procedure when utilizing the Interject_RequestContext system parameter. It converts the XML nodes that are brought in by the system parameter into variable values. These variable values correspond to all the other system parameters that INTERJECT offers.
+The Request Context Parse stored procedure is used as a callable helper procedure when utilizing the Interject_RequestContext system parameter. It converts the XML nodes that are brought in by the system parameter into variable values. These variable values correspond to all the other system parameters that Interject offers.
 
 
 <button class="collapsible">Get The Stored Procedure</button>
@@ -25,7 +25,7 @@ EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE [dbo].[RequestContext_Par
 END
 GO
 /*************************************************************************
- * INTERJECT DATA SYSTEMS, INC CONFIDENTIAL
+ * Interject DATA SYSTEMS, INC CONFIDENTIAL
  *
  *  © 2016 Interject Data Systems, Inc.
  *  All Rights Reserved.

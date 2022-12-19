@@ -14,7 +14,7 @@ This function assists financial reports using the FinCube DataPortal to specify 
 
 | Parameter Name | Segment Reference | Description                                                           | Default | Optional |
 | -------------- | ----------------- | --------------------------------------------------------------------- | ------- | -------- |
-| Source         | Segment12         | Input is typically "Actual," "Budget," or forecast codes like "Fcast1" through "Fcast12." In some configurations, codes can be combined to include unposted and staged monthly numbers (actuals will only include posted entries). <br> <br> To see unposted in addition to posted entries, combine the two: "Actual,Unposted". If staged entries are configured in the INTERJECT installation, use "Actual,Unposted,Staged". |         | YES      |
+| Source         | Segment12         | Input is typically "Actual," "Budget," or forecast codes like "Fcast1" through "Fcast12." In some configurations, codes can be combined to include unposted and staged monthly numbers (actuals will only include posted entries). <br> <br> To see unposted in addition to posted entries, combine the two: "Actual,Unposted". If staged entries are configured in the Interject installation, use "Actual,Unposted,Staged". |         | YES      |
 | Period         | Segment9          | Month 1 through 12. For year to date amounts, use YTD1 through YTD12. |         | YES      |
 | Year           | Segment10         | Year                                                                  |         | YES      |
 | Version        | Segment11         | If configured, this can filter data to specific versions.             |         | YES      |

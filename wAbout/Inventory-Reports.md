@@ -15,7 +15,7 @@ This lab is a basic inventory example for tracking product quantities. In this w
 
 ###  Navigating to the Inventory Reports 
 
-**Step 1:** Navigate to the Inventory report page inside the INTERJECT Demos folder of the  [ Report Library ](/wAbout/Report-Library-Basics.html) . The Report Library is a central place for publishing reporting templates. It is versioned and centrally located. 
+**Step 1:** Navigate to the Inventory report page inside the Interject Demos folder of the  [ Report Library ](/wAbout/Report-Library-Basics.html) . The Report Library is a central place for publishing reporting templates. It is versioned and centrally located. 
 
 ![](/images/Inventory/image2017-6-27_17-6-52.png)
 

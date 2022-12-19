@@ -8,7 +8,7 @@ description:  Report Macro is useful for specialized reports where a customized 
 
 ##  **Overview:**
 
-Report Macro is an excel formula provided by INTERJECT. It allows INTERJECT to interact with publicly defined VBA functions on a report.  Report Macro is useful for specialized reports where a customized action needs to be taken. This action can be built into a VBA Macro based on the complex needs of the report. Then, ReportMacro() is used to execute the custom action at the right point within the reporting process.
+Report Macro is an excel formula provided by Interject. It allows Interject to interact with publicly defined VBA functions on a report.  Report Macro is useful for specialized reports where a customized action needs to be taken. This action can be built into a VBA Macro based on the complex needs of the report. Then, ReportMacro() is used to execute the custom action at the right point within the reporting process.
 
 <blockquote class=lab_info>
   If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 6 Special Features > Lab 6.3 Using Report Macro.
@@ -16,7 +16,7 @@ Report Macro is an excel formula provided by INTERJECT. It allows INTERJECT to i
 
 ###  Setting up the Worksheet
 
-The report macro formula acts in conjunction with another INTERJECT report formula such as a [ ReportRange() ](/wIndex/ReportRange.html). It is useful when a workbook requiring VBA macros must be used. ReportMacro() is an ordered formula, which means that INTERJECT will perform executions on all report formulas placed above or to the left of the ReportMacro() formula before it is executed. 
+The report macro formula acts in conjunction with another Interject report formula such as a [ ReportRange() ](/wIndex/ReportRange.html). It is useful when a workbook requiring VBA macros must be used. ReportMacro() is an ordered formula, which means that Interject will perform executions on all report formulas placed above or to the left of the ReportMacro() formula before it is executed. 
 
 **Step 1:** Open the Customer Aging Report. (If this report is unfamiliar, click [ here ](/wAbout/Customer-Aging.html) for a business use case review on the Customer Aging Report.) This time, we want to make sure a value is set to 200 every time the report is pulled. 
 
@@ -135,7 +135,7 @@ End Sub
 <br> 
 
 
-**Step 8:** Pull the data. You will notice that the report macro was ordered after the report range action. This is due to INTERJECT formula event ordering. 
+**Step 8:** Pull the data. You will notice that the report macro was ordered after the report range action. This is due to Interject formula event ordering. 
 
 ![](/images/L-Create-RepMacro/14.jpg)
 
@@ -143,7 +143,7 @@ End Sub
 
 ###  Requirements for VBA 
 
-ReportMacro() requires a public function without any parameters, as it is the initial interaction point with INTERJECT. Inside of that initial function, any function can be run, including calls to subroutines and other functions, but the initializing macro must be a public function. 
+ReportMacro() requires a public function without any parameters, as it is the initial interaction point with Interject. Inside of that initial function, any function can be run, including calls to subroutines and other functions, but the initializing macro must be a public function. 
 
 ![](/images/L-Create-RepMacro/15.jpg)
 
@@ -157,7 +157,7 @@ ReportMacro() also requires the VBA macro to be in written in shared module, and
 <br> 
 
 
-INTERJECT will error out the report macro formula upon completion of the INTERJECT event associated with the macro formula, however the INTERJECT event will complete. 
+Interject will error out the report macro formula upon completion of the Interject event associated with the macro formula, however the Interject event will complete. 
 
 ![](/images/L-Create-RepMacro/17.jpg)
 
@@ -165,7 +165,7 @@ INTERJECT will error out the report macro formula upon completion of the INTERJE
 
 ###  Enabling VBA Hooks 
 
-Due to heavy load on user sessions, four of the six VBA hooks that INTERJECT uses will be deprecated. This feature should only be enabled when a VBA macro is required for custom actions in specialized reports.   
+Due to heavy load on user sessions, four of the six VBA hooks that Interject uses will be deprecated. This feature should only be enabled when a VBA macro is required for custom actions in specialized reports.   
   
 <table>   
 <tr>  
@@ -196,7 +196,7 @@ Interject_SaveComplete
 </td>  
 <td>
 
-Upon completion of an INTERJECT save event 
+Upon completion of an Interject save event 
 </td> </tr>  
 <tr>  
 <td>
@@ -205,7 +205,7 @@ Interject_PullComplete
 </td>  
 <td>
 
-Upon completion of an INTERJECT pull event 
+Upon completion of an Interject pull event 
 </td> </tr>  
 <tr>  
 <td>
@@ -214,7 +214,7 @@ Interject_ClearPullComplete
 </td>  
 <td>
 
-Upon completion of an INTERJECT clear event 
+Upon completion of an Interject clear event 
 </td> </tr>  
 <tr>  
 <td>
@@ -223,7 +223,7 @@ Interject_ClearSaveComplete
 </td>  
 <td>
 
-Upon completion of an INTERJECT clear event on the save form 
+Upon completion of an Interject clear event on the save form 
 </td> </tr> </table>  
   
 <table>    
@@ -272,7 +272,7 @@ When a workbook is opened from the report library.
 </td> </tr> </table>
 
   
-Enabling INTERJECT VBA hooks is currently done by including a VBA Module with a public subroutine (not function) that matches the name hook above without any parameters. If the subroutine is found, it will be fired at the appropriate time, based on the type of VBA hook used. Using a VBA hook does not require a ReportMacro() formula in order to function, because the VBA hook is sent by INTERJECT upon the completion of certain events. 
+Enabling Interject VBA hooks is currently done by including a VBA Module with a public subroutine (not function) that matches the name hook above without any parameters. If the subroutine is found, it will be fired at the appropriate time, based on the type of VBA hook used. Using a VBA hook does not require a ReportMacro() formula in order to function, because the VBA hook is sent by Interject upon the completion of certain events. 
 
 ```VB
 

@@ -58,7 +58,7 @@ Use the Report Library to access and share reports. Any computer on your network
 
 > To-do
 >
-> **Step 1:** Use Ctrl-Shift-L or click the Report Library button on the INTERJECT ribbon.
+> **Step 1:** Use Ctrl-Shift-L or click the Report Library button on the Interject ribbon.
 > Note: If not logged in already, you will be prompted to do so.
 >
 > **Step 2:** Select your desired folder on the left. 
@@ -115,7 +115,7 @@ When you need to distribute a report or save it in a folder, Interject’s Quick
 
 **Click the Export Book button** in the center of the Interject ribbon. Exporting reports simply makes copies of a report after it has been populated with selected data. The output can be handled in a number of ways. It can be done on the fly with a single open workbook, or it can be set up to distribute a comprehensive reporting book with multiple tabs curated for each user or department. If there are any special Interject formulas in the spreadsheet, like Data Cells, these can be removed when distributed so non-Interject users can view the report. Reports can also be sent as PDFs when MS Excel is not practical.The following options are available for exporting reports.
 
-**Quick Export** copies a workbook while removing unwanted INTERJECT formulas.
+**Quick Export** copies a workbook while removing unwanted Interject formulas.
 
 **Quick PDF** saves and opens a PDF document of the existing workbook.
 

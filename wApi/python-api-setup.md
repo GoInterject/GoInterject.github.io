@@ -4,7 +4,7 @@ title:  "Python API Setup"
 date:   2018-10-12 9:03:02 -0700
 categories: API Developer
 keywords: [data api, python, setup]
-description: Shows how to setup an INTERJECT Python data api.
+description: Shows how to setup an Interject Python data api.
 ---
 
 

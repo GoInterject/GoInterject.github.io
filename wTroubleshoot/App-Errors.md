@@ -9,7 +9,7 @@ description: Errors can occur for many reasons. Sometimes they are related to th
 
 ##  **Overview**
 
-Errors can occur for many reasons. Sometimes they are related to the environment or computer running Interject. It is important you have tools to capture everything that is interacting with Excel so, it is easier diagnose the cause of errors. This leads to faster troubleshooting and repair. To help diagnose any errors, Interject uses a Verbose Logging feature. The ideal goal of Verbose Logging is to help recreate an error and send logs to INTERJECT's support team, where it can be fixed. 
+Errors can occur for many reasons. Sometimes they are related to the environment or computer running Interject. It is important you have tools to capture everything that is interacting with Excel so, it is easier diagnose the cause of errors. This leads to faster troubleshooting and repair. To help diagnose any errors, Interject uses a Verbose Logging feature. The ideal goal of Verbose Logging is to help recreate an error and send logs to Interject's support team, where it can be fixed. 
  
 
 ###  Turning On Verbose Logging 
@@ -55,7 +55,7 @@ C:\Users\ **MyUserName** \Appdata\Local\Interject\Settings\ErrorContextTrace_ **
 
 ###  Sending Verbose Logs 
 
-**Step 1:** To send logs to INTERJECT support, select the **User Support** button, then select **Report a Problem**. 
+**Step 1:** To send logs to Interject support, select the **User Support** button, then select **Report a Problem**. 
 
 ![](/images/App-Errors/05.jpg)
 
@@ -68,8 +68,8 @@ C:\Users\ **MyUserName** \Appdata\Local\Interject\Settings\ErrorContextTrace_ **
 
 <br>
 
-**Step 3:** Click **Send Report** to send logs to the INTERJECT support team. 
+**Step 3:** Click **Send Report** to send logs to the Interject support team. 
 
-**Note:** If Verbose Logging is still on, INTERJECT will ask if you would like to turn it off. 
+**Note:** If Verbose Logging is still on, Interject will ask if you would like to turn it off. 
 
 

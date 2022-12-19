@@ -2,15 +2,15 @@
 title: Uninstalling
 layout: custom
 keywords: [Unistall, Remove, Delete]
-Description: How to uninstall INTERJECT
+Description: How to uninstall Interject
 ---
 
 
 ##  **Overview:**
 
-INTERJECT aims to make uninstalling a simple and straight forward process. This process fully removes current versions of INTERJECT as well as legacy versions (version 2.3.7.0) and before. 
+Interject aims to make uninstalling a simple and straight forward process. This process fully removes current versions of Interject as well as legacy versions (version 2.3.7.0) and before. 
 
-###  Uninstalling INTERJECT 
+###  Uninstalling Interject 
 
 **Step 1:** Before beginning the uninstall process, make sure all instances of Excel are closed completely. 
 
@@ -28,14 +28,14 @@ INTERJECT aims to make uninstalling a simple and straight forward process. This 
   
 
 
-**Step 4:** Find the **INTERJECT Excel Add-In** and select it. 
+**Step 4:** Find the **Interject Excel Add-In** and select it. 
 
 ![](/images/Uninstalling/39.jpg)
 
   
 
 
-**Step 5:** While the **INTERJECT Excel Add-In** is selected, click **Uninstall** at the top of the control panel page, then follow the **Uninstall Wizard** . 
+**Step 5:** While the **Interject Excel Add-In** is selected, click **Uninstall** at the top of the control panel page, then follow the **Uninstall Wizard** . 
 
 ![](/images/Uninstalling/40.jpg)
 

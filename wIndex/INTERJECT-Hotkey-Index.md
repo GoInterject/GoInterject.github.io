@@ -1,19 +1,19 @@
 ---
-title: INTERJECT Hotkey Index
+title: Interject Hotkey Index
 layout: custom
 keywords: [hotkey, keystrokes]
-description: INTERJECT provides ways to increase productivity and work flow by utilizing hotkeys to quickly perform INTERJECT actions. 
+description: Interject provides ways to increase productivity and work flow by utilizing hotkeys to quickly perform Interject actions. 
 ---
 ##  **Overview**
 
-INTERJECT provides ways to increase productivity and work flow by utilizing hotkeys to quickly perform INTERJECT actions. These hotkeys are adaptable and customize-able and are a staple to being efficient when using INTERJECT functions. Any hotkey listed here can be changed and set to different keystrokes. However, there is a limitation on available keystrokes to change the hotkeys to. 
+Interject provides ways to increase productivity and work flow by utilizing hotkeys to quickly perform Interject actions. These hotkeys are adaptable and customize-able and are a staple to being efficient when using Interject functions. Any hotkey listed here can be changed and set to different keystrokes. However, there is a limitation on available keystrokes to change the hotkeys to. 
 
 
 ###  Default Hotkey Index   
  
 | [**Login**](/wAbout/Logging-In.html) |                    |
 | :--------- | :------------------ |
-| Ctrl-L  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| Login to INTERJECT |
+| Ctrl-L  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| Login to Interject |
 |**Note:**  |This is used to help initialize the login before any automation is done with VBA (rarely used)|
 
 | [**Report Library**](/wAbout/Report-Library-Basics.html) |                         |
@@ -94,7 +94,7 @@ INTERJECT provides ways to increase productivity and work flow by utilizing hotk
 
 ###  Overriding Hotkeys for Individual Installs 
 
-**Step 1:** Open a new Excel Workbook, login to INTERJECT and select the **Advanced Menu** menu to expand the Interject Ribbon to show the **Advanced Menu.** Then navigate to the **INTERJECT Diagnostic Tool** . 
+**Step 1:** Open a new Excel Workbook, login to Interject and select the **Advanced Menu** menu to expand the Interject Ribbon to show the **Advanced Menu.** Then navigate to the **Interject Diagnostic Tool** . 
 
 ![](/images/Hotkeys/01.jpg)
 <br>

@@ -17,7 +17,7 @@ You can go directly to any part of this walk-through by clicking one of the link
 
 ###  Navigating to the Aging Summary 
 
-**Step 1:** Open the report **INTERJECT Customer Collections** under the INTERJECT Demos  in the [ Report Library ](/wAbout/Report-Library-Basics.html). 
+**Step 1:** Open the report **Interject Customer Collections** under the Interject Demos  in the [ Report Library ](/wAbout/Report-Library-Basics.html). 
 
 ![](/images/Walkthrough-CustAging/01.png)
 
@@ -25,7 +25,7 @@ This will bring up the Customer Aging Summary.
 
 ![](/images/Walkthrough-CustAging/02.png)
 
-**Step 2:** You can retrieve the data by clicking  [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#pull-data) in the INTERJECT menu and clicking **Pull Data** in the subsequent popup. 
+**Step 2:** You can retrieve the data by clicking  [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#pull-data) in the Interject menu and clicking **Pull Data** in the subsequent popup. 
 
 ![](/images/Walkthrough-CustAging/03.png)
 
@@ -56,7 +56,7 @@ Back to Top
 Once that cell is selected you can drill deeper into the data. Below are the descriptions for each step. 
 
   1. First, select cell or row to drill. 
-  2. Select the Drill operation in the INTERJECT Ribbon.  
+  2. Select the Drill operation in the Interject Ribbon.  
   3. Select the desired drill you would like to perform , in this case you are selecting **Drill to Aging Detail**.
   4. Complete the drill be selecting **Do Drill**.
 
@@ -82,7 +82,7 @@ Back to Top
 
 ![](/images/Walkthrough-CustAging/13.png)
 
-**Step 2:** To do this, click the [ **Save Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data) menu in the INTERJECT Ribbon menu and the **Save Data** in the popup. 
+**Step 2:** To do this, click the [ **Save Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data) menu in the Interject Ribbon menu and the **Save Data** in the popup. 
 
 ![](/images/Walkthrough-CustAging/14.png)
 

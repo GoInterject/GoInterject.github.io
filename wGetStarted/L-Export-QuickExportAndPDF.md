@@ -2,13 +2,13 @@
 title: "Lab Export: Quick Export and PDF"
 layout: custom
 keywords: [ quick, export, pdf, data cells]
-description: This method of distribution is the simplest. The purpose of Quick Export is to build a new workbook from the current workbook and remove all the external links and Data Cell formulas so users without INTERJECT can view the report.
+description: This method of distribution is the simplest. The purpose of Quick Export is to build a new workbook from the current workbook and remove all the external links and Data Cell formulas so users without Interject can view the report.
 ---
 * * *
 
 ##  **Overview**
 
-The Quick Export and PDF method of distribution is the simplest. The purpose of Quick Export is to build a new workbook from the current workbook and remove all the external links and [ Data Cell ](/wAbout/Tabular-vs-Data-Cells.html) formulas so users without INTERJECT can view the report. It's important to note that [ Tabular ](/wAbout/Tabular-vs-Data-Cells.html) INTERJECT reports can be viewed immediately by users without INTERJECT and do not need to be exported to be shared. Although Tabular reports use special report formulas, the formulas remain out of view for users without INTERJECT, and any data pulled into the report are simply values. Outside users can view them without any modification. 
+The Quick Export and PDF method of distribution is the simplest. The purpose of Quick Export is to build a new workbook from the current workbook and remove all the external links and [ Data Cell ](/wAbout/Tabular-vs-Data-Cells.html) formulas so users without Interject can view the report. It's important to note that [ Tabular ](/wAbout/Tabular-vs-Data-Cells.html) Interject reports can be viewed immediately by users without Interject and do not need to be exported to be shared. Although Tabular reports use special report formulas, the formulas remain out of view for users without Interject, and any data pulled into the report are simply values. Outside users can view them without any modification. 
 
 <blockquote class=lab_info>
   If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 7 Exporting Data > Lab 7.1 Quick Export and PDF.
@@ -16,7 +16,7 @@ The Quick Export and PDF method of distribution is the simplest. The purpose of 
 
 ###  Quick Export 
 
-Quick Export removes [ Data Cell ](/wAbout/Tabular-vs-Data-Cells.html) formulas and external links from a workbook so users without INTERJECT can view them.
+Quick Export removes [ Data Cell ](/wAbout/Tabular-vs-Data-Cells.html) formulas and external links from a workbook so users without Interject can view them.
 
 Take the report **PL Trend Report with Data Cells** from the [ Financial Walk-through ](/wAbout/Financial-Report.html) as an example. It is shown below.
 
@@ -30,7 +30,7 @@ Take the report **PL Trend Report with Data Cells** from the [ Financial Walk-th
 
 <br> 
 
-Now you have the report to distribute. However, if you send this report with data cells, people without INTERJECT will not be able to view all the Data Cell formulas like in cell K16 below. Without INTERJECT installed that formula will show as **#NAME**. 
+Now you have the report to distribute. However, if you send this report with data cells, people without Interject will not be able to view all the Data Cell formulas like in cell K16 below. Without Interject installed that formula will show as **#NAME**. 
 
 ![](/images/L-Export-QuickExPDF/03.png)
 
@@ -42,7 +42,7 @@ Now you have the report to distribute. However, if you send this report with dat
 
 <br> 
 
-Once complete, the report will upload into a brand new workbook with fixed values instead of data cell formulas. This allows users without INTERJECT to view the report.
+Once complete, the report will upload into a brand new workbook with fixed values instead of data cell formulas. This allows users without Interject to view the report.
 
 ![](/images/L-Export-QuickExPDF/05.png)
 

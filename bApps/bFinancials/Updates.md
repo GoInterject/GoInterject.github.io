@@ -1,8 +1,8 @@
 ---
-title: INTERJECT Financials - Epicor - Update Manager
+title: Interject Financials - Epicor - Update Manager
 layout: custom
 keywords: [Account, Epicor, Companies]
-description: INTERJECT™ Financials for Epicor Enterprise (This would cover topics that are specific to integration with Epicor Enterprise, and would potentially be different for each ERP)
+description: Interject™ Financials for Epicor Enterprise (This would cover topics that are specific to integration with Epicor Enterprise, and would potentially be different for each ERP)
 ---
 
 <h2>Interject Financials - Epicor Enterprise<br>

@@ -2,12 +2,12 @@
 title: Common Dataportal Index
 layout: custom
 keywords: [dataportal, fincube, segmentinfo]
-description: These are a few common dataportals used in INTERJECT for specific, supported applications. The exact dataportal code may vary depending on the INTERJECT implementation.
+description: These are a few common dataportals used in Interject for specific, supported applications. The exact dataportal code may vary depending on the Interject implementation.
 ---
 
 ##  **Dataportal Overview**
 
-These are a few common dataportals used in INTERJECT for specific, supported applications. The exact dataportal code may vary depending on the INTERJECT implementation. 
+These are a few common dataportals used in Interject for specific, supported applications. The exact dataportal code may vary depending on the Interject implementation. 
 
 ###  [ FinCube - The Financial Cube ](/wIndex/FinCube---The-Financial-Cube.html)
 

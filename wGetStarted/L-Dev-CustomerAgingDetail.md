@@ -68,9 +68,9 @@ Enter **Include Paid** for Helper Name and enter **Include Invoices that have al
 
 ###  Creating the Stored Procedure 
 
-Stored procedures or data APIs serve as a middle tier for an INTERJECT report. In this example, you are using a stored procedure. INTERJECT can retrieve one or more result sets from the stored procedure into the spreadsheet report. 
+Stored procedures or data APIs serve as a middle tier for an Interject report. In this example, you are using a stored procedure. Interject can retrieve one or more result sets from the stored procedure into the spreadsheet report. 
 
-The INTERJECT Website Portal allows you to create and manage the data portals and reference stored procedures you create. Data portals are stored locally in your Excel session when you log into INTERJECT. When requesting data, INTERJECT creates a point-to-point connection with the intended data source. 
+The Interject Website Portal allows you to create and manage the data portals and reference stored procedures you create. Data portals are stored locally in your Excel session when you log into Interject. When requesting data, Interject creates a point-to-point connection with the intended data source. 
 
 The steps below assume you are proficient with SQL Management Studio for Microsoft SQL Server and in creating stored procedures. If you need additional training in this area, please contact us at [ info@gointerject.com ](mailto:info@gointerject.com) . 
 
@@ -223,7 +223,7 @@ END
 
 </div>
 
-It is important to test the stored procedure in the database before testing it through the INTERJECT platform. Using Interject_RequestContext requires the test scripts to be much longer than in the previous steps. To help with this extra text INTERJECT will create the test code for you using the current users context. 
+It is important to test the stored procedure in the database before testing it through the Interject platform. Using Interject_RequestContext requires the test scripts to be much longer than in the previous steps. To help with this extra text Interject will create the test code for you using the current users context. 
 
 **Step 2:** First you must select a report formula that uses the data portal that is mapped to the stored procedure you want to test. You can quickly make a report formula and delete it since you are not creating the spreadsheet report yet. In a spreadsheet tab, in any cell, type 
 ```=ReportVariable("NorthwindCustomerInvoices",A42:A304,2:2,16:16,Param(H36,H37,H38,""))``` but replace the data portal name with the name you created for your own example. Make sure the the cell with the ReportRange() formula is selected. 
@@ -233,7 +233,7 @@ It is important to test the stored procedure in the database before testing it t
   
 
 
-**Step 3:** Next, click **Advanced Menu** in the INTERJECT Ribbon. 
+**Step 3:** Next, click **Advanced Menu** in the Interject Ribbon. 
 
 ![](/images/L-Dev-CustAgingDetail/09.png)
 <br>
@@ -388,7 +388,7 @@ Execute [demo].[Northwind_Invoices_Pull_MyName]
 
 ###  Create The Report 
 
-At this point you, have a tested a new stored procedure that uses parameters to filter the results. You set up an INTERJECT data connection to go to your example database and you added another INTERJECT data portal to use that connection, which is mapped to the stored procedure that you just created. So now you are ready to build the spreadsheet report using two data portals. 
+At this point you, have a tested a new stored procedure that uses parameters to filter the results. You set up an Interject data connection to go to your example database and you added another Interject data portal to use that connection, which is mapped to the stored procedure that you just created. So now you are ready to build the spreadsheet report using two data portals. 
 
 The steps for building the spreadsheet report are in the lab [ Customer Aging Detail ](https://docs.gointerject.com/wGetStarted/L-Create-CustomerAgingDetail.html) . You have likely completed this in earlier training sessions. Repeat the instructions with your newly created data portals discussed in this topic. When you are done, your report should resemble the screenshot below. 
 
@@ -399,9 +399,9 @@ The steps for building the spreadsheet report are in the lab [ Customer Aging De
 
 You just created a report that used ReportRange() to list all the customers with subtotaled regions. Then ReportVariable() was used to populate the invoices for each customer region. Two separate data portals were used and two connections were made to the database. 
 
-To illustrate the multiple recordset feature of INTERJECT, you can take this one step further. You can copy the second data portal and stored procedure and modify it so that it returns both recordsets. In this approach, you make only one connection to the database, which is more efficient. And this process requires one less data portal and stored procedure to create. 
+To illustrate the multiple recordset feature of Interject, you can take this one step further. You can copy the second data portal and stored procedure and modify it so that it returns both recordsets. In this approach, you make only one connection to the database, which is more efficient. And this process requires one less data portal and stored procedure to create. 
 
-Multiple recordsets are a very efficient report approach when your data is not a simple list. In this example the feature will work as follows. On the first data request two recordsets are retrieved by INTERJECT. ReportRange() uses the customer summary list recordset but both recordsets temporarily remain in memory until all report formulas are completed. This allows the ReportVariable() to access the second recordset for populating the details in the same report run. The following steps will help you create this change yourself. 
+Multiple recordsets are a very efficient report approach when your data is not a simple list. In this example the feature will work as follows. On the first data request two recordsets are retrieved by Interject. ReportRange() uses the customer summary list recordset but both recordsets temporarily remain in memory until all report formulas are completed. This allows the ReportVariable() to access the second recordset for populating the details in the same report run. The following steps will help you create this change yourself. 
 
 **Step 1:** Navigate to the data portal that you just created , similar to **NorthwindCustomerInvoices_MyName** , and click the green clone button on the top right of the page. 
 
@@ -470,7 +470,7 @@ Steps 5 and 6 should look like below:
 
 </div>
 
-**Step 7:** The changes to the stored procedure are complet. It is important to test the stored procedure in the database before testing it through the INTERJECT platform. You can use the same test script used earlier in this topic. Your test code should look similar to the SQL below. 
+**Step 7:** The changes to the stored procedure are complet. It is important to test the stored procedure in the database before testing it through the Interject platform. You can use the same test script used earlier in this topic. Your test code should look similar to the SQL below. 
 
 <button class="collapsible">Test Script</button>
 <div markdown="1" class="panel">
