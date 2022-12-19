@@ -7,7 +7,7 @@ description: This page shows how to login to the website portal.
 
 ##  **Overview**
 ---
-The INTERJECT Portal is a websites that allows you to access all the data portals and data connections. Once logged in you can create, customize and remove them as needed. 
+The Interject Portal is a websites that allows you to access all the data portals and data connections. Once logged in you can create, customize and remove them as needed. 
 
 **Step 1:** Navigate to [ https://portal.gointerject.com/login.html ](https://portal.gointerject.com/login.html)
 

@@ -18,7 +18,7 @@ To watch a quick walk-through video, click on the icon:
 
 ###  Navigating to the PLTrend Report 
 
-**Step 1:** Navigate to the PL Trend report page inside the INTERJECT Financials folder of the [ Report Library  ](/wAbout/Report-Library-Basics.html). The Report Library is a central place for publishing reporting templates. It is versioned and easily located. 
+**Step 1:** Navigate to the PL Trend report page inside the Interject Financials folder of the [ Report Library  ](/wAbout/Report-Library-Basics.html). The Report Library is a central place for publishing reporting templates. It is versioned and easily located. 
 
 ![](/images/Walkthrough-Financial/01.png)
 
@@ -57,7 +57,7 @@ Once the update is completed, all six months of data will be shown and populated
 
 ###  Grouped Detail in the Report 
 
-INTERJECT allows for spreadsheet groupings within financial reports, so additional detail can be included and expanded when needed. The steps below will demonstrate how to expand grouped areas to view the account level detail included in this report. 
+Interject allows for spreadsheet groupings within financial reports, so additional detail can be included and expanded when needed. The steps below will demonstrate how to expand grouped areas to view the account level detail included in this report. 
 
 ![](/images/Walkthrough-Financial/09.png)
 
@@ -105,7 +105,7 @@ This drill goes directly to a second tab in the report called JE Lookup, and it 
 
 ###  Report Example with Data Cells 
 
-The above examples illustrate the INTERJECT Data List reports. These reports are structured by specifying what financial data goes into which column and row subtotals setup to show a specific group of accounts. INTERJECT provides an alternate method to setting up reports so each worksheet cell can contain any value you need. 
+The above examples illustrate the Interject Data List reports. These reports are structured by specifying what financial data goes into which column and row subtotals setup to show a specific group of accounts. Interject provides an alternate method to setting up reports so each worksheet cell can contain any value you need. 
 
 **Step 1** : The first thing to do is delete the rows below 44 and completely clear them out. 
 
@@ -171,11 +171,11 @@ The main disadvantages of Data Cells are:
 
   1. The report will typically run slower, but especially for larger reports. Tabular Reports reports, in comparison, are much faster and more efficient for reporting servers. 
   2. The report will not allow detail lines to be added or removed automatically based on what data exists for the filters. Data Cells create fixed reports that require more maintenance. 
-  3. Data Cells are not portable to non-INTERJECT users unless using the export feature to remove the special formulas like jCell(). 
+  3. Data Cells are not portable to non-Interject users unless using the export feature to remove the special formulas like jCell(). 
 
 You find that 90% of a company's needs are handled efficiently by Data List reports as first illustrated in this walk-through, and in many cases Data Cells are not needed at all. But for certain reporting requirements, Data Cells can be very handy. 
 
-This completes the initial walk-through detailing interactive reporting. Later in this wiki, you will learn how to create reports and drills once INTERJECT has been integrated with ERP software. 
+This completes the initial walk-through detailing interactive reporting. Later in this wiki, you will learn how to create reports and drills once Interject has been integrated with ERP software. 
 
 
 ##  Related Links: 
@@ -184,7 +184,7 @@ This completes the initial walk-through detailing interactive reporting. Later i
 
 [ Creating a Simple Report ](/wGetStarted/Creating-a-Simple-Report.html)
 
-[ INTERJECT Ribbon Menu Items ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html)
+[ Interject Ribbon Menu Items ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html)
 
 [ Tabular vs Data Cells ](/wAbout/Tabular-vs-Data-Cells.html)
 

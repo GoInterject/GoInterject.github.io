@@ -106,19 +106,19 @@ ORDER BY [DisplayText]
 
 </div>
 
-**Step 2:** Stored procedures are natively supported by INTERJECT. There are a few key areas to note in the code example that help illustrate INTERJECT features. 
+**Step 2:** Stored procedures are natively supported by Interject. There are a few key areas to note in the code example that help illustrate Interject features. 
 
-  * Parameters: The parameters included in the stored procedure are the same as those added to the Data Portal in a previous walkthrough. On each request, INTERJECT passes the Formula Parameters values from the spreadsheet configuration to the stored procedure along with System Parameters. Output parameters that can populate values in the spreadsheet are supported, but they are not included in this example. In this case, there is only one formula parameter.
+  * Parameters: The parameters included in the stored procedure are the same as those added to the Data Portal in a previous walkthrough. On each request, Interject passes the Formula Parameters values from the spreadsheet configuration to the stored procedure along with System Parameters. Output parameters that can populate values in the spreadsheet are supported, but they are not included in this example. In this case, there is only one formula parameter.
 
 ![](/images/L-Create-Dropdowns/01.png)
 <br>
 
-  * Select statements: Returning data to INTERJECT uses a select statement, as shown below. More than one can be returned at a time to reduce the connections needed to fully populate a complex report. There are two select statements in this example. 
+  * Select statements: Returning data to Interject uses a select statement, as shown below. More than one can be returned at a time to reduce the connections needed to fully populate a complex report. There are two select statements in this example. 
 
 ![](/images/L-Create-Dropdowns/02.png)
 <br>
 
-**Step 3:** It is important to test the stored procedure in the database before testing through the INTERJECT platform. The example code includes a test SQL statement that can be executed in a new query, as shown below. Be sure to change the procedure name to match your own. 
+**Step 3:** It is important to test the stored procedure in the database before testing through the Interject platform. The example code includes a test SQL statement that can be executed in a new query, as shown below. Be sure to change the procedure name to match your own. 
 
 
 <button class="collapsible">Example Test Script</button>

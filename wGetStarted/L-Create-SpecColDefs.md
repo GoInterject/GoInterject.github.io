@@ -71,7 +71,7 @@ Place your cursor over cell  **H27** and review the comment that is placed in th
 
 ###  Special Cell Value Hyperlink 
 
-Excel has two types of hyperlinks, the hyperlink property and the Hyperlink() spreadsheet function. This feature uses the spreadsheet function in the report so users can click to open specific web pages. In this example you will use INTERJECT to add hyperlinks to the address column of the report that links the address to a google map search. 
+Excel has two types of hyperlinks, the hyperlink property and the Hyperlink() spreadsheet function. This feature uses the spreadsheet function in the report so users can click to open specific web pages. In this example you will use Interject to add hyperlinks to the address column of the report that links the address to a google map search. 
 
 Select cell  **C2** and input  **CompanyName hlink:MapsURL**
 
@@ -121,11 +121,11 @@ Select the cell, then input  **AccountFreeze valuelist:FreezeOptions**. Pull the
 
 <br>
 
-Through using this feature with INTERJECT, you can have a different validation list for every row in your report. Even though this is not shown in this example, if you wanted to select a city name inside of a state, it is possible to have the validation list only show the cities available within the state which would have to change based on the row the data is on.
+Through using this feature with Interject, you can have a different validation list for every row in your report. Even though this is not shown in this example, if you wanted to select a city name inside of a state, it is possible to have the validation list only show the cities available within the state which would have to change based on the row the data is on.
 
 ###  Stacking Special Cell Types 
 
-Excel allows users to have multiple special cell values attributed to a single cell. This is also the case when using INTERJECT integration. You can add multiple cell value types in the column definitions of the report. 
+Excel allows users to have multiple special cell values attributed to a single cell. This is also the case when using Interject integration. You can add multiple cell value types in the column definitions of the report. 
 
 For this example, use  **Company Name** cell  **C2**
 
@@ -156,5 +156,5 @@ Click on the hyperlink in cell  **C27** and  notice that the functionality of th
 
 <br>
 
-If there are any additional special column features that are not listed here or you have any questions, please contact INTERJECT at info@gointerject.com. 
+If there are any additional special column features that are not listed here or you have any questions, please contact Interject at info@gointerject.com. 
 

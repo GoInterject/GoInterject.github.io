@@ -6,7 +6,7 @@ layout: custom
 ##  **Overview**
 
 
-The INTERJECT drill feature allows you to connect individual reports together to make a simple, fast, and intuitive experience for users to get to the data they use everyday. In this walk-through you will view drilling between reports with the same reports used in the previously viewed [ Real-World Walkthroughs ](/wAbout/Real-World-Walkthroughs.html) . 
+The Interject drill feature allows you to connect individual reports together to make a simple, fast, and intuitive experience for users to get to the data they use everyday. In this walk-through you will view drilling between reports with the same reports used in the previously viewed [ Real-World Walkthroughs ](/wAbout/Real-World-Walkthroughs.html) . 
 
 ###  [ Lab Drill: Customer Aging Report ](/wGetStarted/L-Drill-CustomerAging.html)
 

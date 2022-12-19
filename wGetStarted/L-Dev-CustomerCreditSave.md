@@ -6,7 +6,9 @@ description: "This section will detail a full review of how the Interject save f
 ---
 ##  **Overview:**
 
+
 This section will detail a full review of how the Interject save feature works. Start by using the Customer Aging example. This lab will show how to design three user input fields into an existing report. The Interject platform will assist in creating a stored procedure that can be used in SQL Server to help facilitate the process. Other database engines or API methods can be used for the save process as well, but for simplicity you are focusing on SQL Server and a database stored procedure as the data source. You will be using the Customer Aging report, as you have already become familiar with its [business use case](/wAbout/Customer-Aging.html). 
+
 
 ###  Setting up the Data Portals: 
 
@@ -194,6 +196,7 @@ In this example you are going to use  **Interject_ReturnError** and  **Interject
 ###  Creating the Stored Procedure 
 
 **Step 1:** First, select the  **Pull** button and pull the data into the spreadsheet. 
+
 
 
 **Step 2:** In the excel sheet, click the cell with the ReportSave formula. Then display the Advanced Menu in the Interject: If **Simple Menu** is displayed, click it to view the Advanced Menu.

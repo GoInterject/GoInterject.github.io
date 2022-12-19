@@ -14,11 +14,11 @@ Used to save data back to data portal with Ctrl + Shift + U keystroke.
 
 | Parameter Name | Description                                                                                                                                                                                | Default | Optional |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------- | -------- |
-| DataPortal     | The name of the INTERJECT Data Portal set up to save data to the Stored Procedure or Web API.                                                                                              |         | NO       |
+| DataPortal     | The name of the Interject Data Portal set up to save data to the Stored Procedure or Web API.                                                                                              |         | NO       |
 | RowDefRange    | Specify a range with values for each row to be saved back. If no value is specified, the row will not be sent to the Data Portal. See the exception below for CaptureAllRows.              |         | NO       |
 | ColDefRange    | Input field names above the columns used in the XML to send to the data portal for saving. It is recommended special characters are not used when specifying column names to return.       |         | YES      |
 | ResultsRange   | Specify a row with column headers that will be used to pull data in response to the save action. ResultsRange is similar to ColDefRange in the ReportRange function.                       |         | YES      |
-| Parameters     | Select cells used as Parameters for the Data Portal. The cells must use INTERJECT's [ Param() ](/wIndex/Param.html) function.                                                              |         | YES      |
+| Parameters     | Select cells used as Parameters for the Data Portal. The cells must use Interject's [ Param() ](/wIndex/Param.html) function.                                                              |         | YES      |
 | AutoSaveFile   | If True, the file will save on each save data action if the action returns error free.                                                                                                     | FALSE   | YES      |
 | CaptureAllRows | If True, the save action will not require a value in the RowDefRange to include in the XML package that will be assessed for the save. All rows noted by the RowDefRange will be returned. | FALSE   | YES      |
 

@@ -10,10 +10,10 @@ class PageDirectories(Enum):
     WPORTAL = "wPortal"
     WTROUBLESHOOT = "wTroubleshoot"
     BFINANCIALS = "bApps\\bFinancials"
-    INTERJECTTRAININGBUDGET = "bApps\\InterjectTraining\\Budget"
-    INTERJECTTRAININGCAPITAL = "bApps\\InterjectTraining\\Capital"
-    INTERJECTTRAININGPROJECTIONS = "bApps\\InterjectTraining\\Projections"
-    INTERJECTTRAININGWIP = "bApps\\InterjectTraining\\WIP"
+    InterjectTRAININGBUDGET = "bApps\\InterjectTraining\\Budget"
+    InterjectTRAININGCAPITAL = "bApps\\InterjectTraining\\Capital"
+    InterjectTRAININGPROJECTIONS = "bApps\\InterjectTraining\\Projections"
+    InterjectTRAININGWIP = "bApps\\InterjectTraining\\WIP"
 
 def prRed(skk): 
     print("\033[91m {}\033[00m" .format(skk)) 

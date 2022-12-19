@@ -17,7 +17,7 @@ When manually entering different filter values, it can be difficult to remember 
 
 ### Preparing the Report
 
-**Step 1:** Open the report **INTERJECT Customer Collections** under the INTERJECT Demos in the [ Report Library ](/wAbout/Report-Library-Basics.html). 
+**Step 1:** Open the report **Interject Customer Collections** under the Interject Demos in the [ Report Library ](/wAbout/Report-Library-Basics.html). 
 
 ![](/images/L-Create-Dropdowns/01.png)
 
