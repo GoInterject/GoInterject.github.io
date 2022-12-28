@@ -18,11 +18,11 @@ For an example of this function, see [jDropdown](/wGetStarted/L-Create-Dropdowns
   <tbody>
     <tr>
 		<td class="pph"><b>Type</b></td>
-		<td></td>
+		<td>String/<a href="https://docs.gointerject.com/wIndex/jDataPortal.html">jDataPortal()</a></td>
     </tr>
     <tr>
 		<td class="pph"><b>Constraints</b></td>
-		<td></td>
+		<td>Max 255 char</td>
     </tr>
     <tr>
 		<td class="pph"><b>If Blank</b></td>
