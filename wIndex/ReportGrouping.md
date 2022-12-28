@@ -1,67 +1,150 @@
 ---
 title: ReportGrouping()
 layout: custom
-keywords: [reportgrouping, function]
-description: The ReportGrouping() Interject formatting function is a triggered Interject function. 
+keywords: [ReportGrouping, function]
+description: The ReportGrouping function will collapse or expand groups within the sheet when triggered upon a designated [event](wIndex/Event-Functions-Landing.html).
 ---
 
-## Function Summary
+##  Function Summary
+The ReportGrouping function will collapse or expand groups within the sheet when triggered upon a designated [event](wIndex/Event-Functions-Landing.html). This function is helpful in grouping or ungrouping sections in a [ReportVariable](/wIndex/ReportVariable.html) after it is generated.
 
-The ReportGrouping() Interject formatting function is a triggered Interject function. This means that upon the execution of an Interject action, a triggered function is activated. There are several trigger combinations that can be utilized by ReportGrouping() that are listed [here](/wIndex/ReportGrouping.html#trigger-combination-list). A ReportGrouping() function is often used to collapse or expand a native excel grouping upon the execution of an Interject action. 
+For an example of this function, see [Lab Create: Inventory Variable Report](/wGetStarted/L-Create-InventoryVariable.html#reportgrouping).
 
-### Function Arguments
+###  Function Arguments
 
-|Argument Name|Description|Default|Optional|
-|:---|:---|:---|:---|
-|OnPullSaveOrBoth|This defines the instance in which an Interject action will trigger the function to be executed.||NO|
-|OnClearRunOrBoth|This defines which Interject event will trigger the function to be executed.                    ||NO|
-|RowOrColumnGroup| Specifies which type of grouping to be impacted by the ReportGrouping() function. Can only be "Row" or "Column".||NO|
-|GroupLevel| This accepts a value of "Expand", or "Collapse", or a level value to change an existing grouping to (1-8).||NO|
-|Disabled| This disables the function if the value is "TRUE" and is used when testing a report.|FALSE|YES|
+<button class="collapsible-parameter">**OnPullSaveOrBoth**<br>A string that defines what type of action(s) the event in OnClearRunOrBoth refer to: **Pull** action, **Save** action, or **Both** actions.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>String</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>"pull", "save", "both"</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Function Error</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
-### Excel Formula Bar Example
+<button class="collapsible-parameter">**OnClearRunOrBoth**<br>A string indicating which event(s) will trigger this function: **Clear** event, **Run** event, or **Both** events.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>String</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>"clear", "run", "both"</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Function Error</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**RowOrColumnGroup**<br>A string indicating if row groupings will be acted upon or column groupings.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>String</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>"row", "column"</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Function Error</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**GroupLevel**<br>A string indicating to expand or collapse all groupings or an integer from 1 to 8 indicating what level the groups will be set to.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>String</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>"expand", "collapse", or 1 through 8</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Function Error</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**Disabled**<br>True: This function will be disabled.<br><br>False: This function will be enabled.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>Boolean</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td></td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>False</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+###  Excel Formula Bar Example
+
 ```Excel
-ReportGrouping("Both","Run","Column","Collapse",FALSE)
+=ReportGrouping("Both","Run","Column","Collapse",FALSE)
 ```
-An example of this function is currently in construction in our documentation labs. Check back soon for an example with more context.
 
-### Example Function Composition
 
-|Argument Name|Example Mapping|Explanation|
-|:---|:---|:---|
-|Function Name|=ReportGrouping()|This is the excel function name used to call the function. It can only be used as a standalone function in a report.|
-|OnPullSaveOrBoth|"Both"| This function will be executed on a Pull or a Save action. |
-|OnClearRunOrBoth|"Run"| This function will be executed on a Pull-Run or a Save-Run Action+Event combination.|
-|RowOrColumnGroup|"Column"|Specifies that that the groupings to be impacted will be "Column" groupings and thus "Row" groupings are left unaltered.|
-|GroupLevel|"Collapse"|In combination with the RowOrColumnGroup argument, this will Collapse all column groupings on a Pull-Run, or Save-Run action.|
-|Disabled|FALSE| This is left false since the ReportGrouping() function is active.|
 
-### Trigger Combination List
-The execution of the ReportGrouping() formatting function is determined by a combination of an Interject action and an Interject event. An action is a pull or save whereas an event is a clear or a run.
+###  Function Composition
 
-| Argument Name    | Function Event Trigger Options | Option Explanation                                                                            |
-|------------------|--------------------------------|-----------------------------------------------------------------------------------------------|
-| **Trigger 1**    |                                |                                                                                               |
-| OnPullSaveOrBoth | "Pull"                         | This will trigger the default to execute when the user performs a Pull-Run Interject event.   |
-| OnClearRunOrBoth | "Run"                          |                                                                                               |
-| **Trigger 2**    |                                |                                                                                               |
-| OnPullSaveOrBoth | "Pull"                         | This will trigger the default to execute when the user performs a Pull-Clear Interject event. |
-| OnClearRunOrBoth | "Clear"                        |                                                                                               |
-| **Trigger 3**    |                                |                                                                                               |
-| OnPullSaveOrBoth | "Save"                         | This will trigger the default to execute when the user performs a Save-Run Interject event.   |
-| OnClearRunOrBoth | "Run"                          |                                                                                               |
-| **Trigger 4**    |                                |                                                                                               |
-| OnPullSaveOrBoth | "Save"                         | This will trigger the default to execute when the user performs a Save-Clear Interject event. |
-| OnClearRunOrBoth | "Clear"                        |                                                                                               |
-| **Trigger 5**    |                                |                                                                                               |
-| OnPullSaveOrBoth | "Both"                         | This will trigger the default to execute when the user performs a Save-Run, Save-Clear, Pull-Run, Pull-Clear Interject event. |
-| OnClearRunOrBoth | "Both"                         |                                                                                               |
-| **Trigger 6**    |                                |                                                                                               |
-| OnPullSaveOrBoth | "Both"                         | This will trigger the default to execute when the user performs a Save-Clear or a Pull-Clear Interject event. |
-| OnClearRunOrBoth | "Clear"                        |                                                                                               |
-| **Trigger 7**    |                                |                                                                                               |
-| OnPullSaveOrBoth | "Save"                         | This will trigger the default to execute when the user performs a Save-Clear or a Save-Run Interject event. |
-| OnClearRunOrBoth | "Both"                        |                                                                                               |
-| **Trigger 8**    |                                |                                                                                               |
-| OnPullSaveOrBoth | "Pull"                         | This will trigger the default to execute when the user performs a Pull-Clear or a Pull-Run Interject event. |
-| OnClearRunOrBoth | "Both"                        |                                                                                               |
+| Argument Name  |  Example Mapping  |  Explanation   |  
+|------|------|------|
+|  Function Name  |  =ReportGrouping()  |  The name of this function.  |  
+|  OnPullSaveOrBoth  |  "Both"  |  A pull or save action are designated as the run event.  |  
+|  OnClearRunOrBoth  |  "Run"  |  A run event (defined in OnPullSaveOrBoth) will trigger this function being ran.  |  
+|  RowOrColumnGroup  |  "Column"  |  Only column groupings will be acted upon when this function is triggered.  |  
+|  GroupLevel  |  "Collapse"  |  The column groupings will collapse upon being triggered.  |  
+|  Disabled  |  FALSE  |  This function will run.  |  
+
+###  Trigger Combination List
+
+
+The execution of this function is determined by a combination of an Interject action and an Interject event. An action is a pull or save action whereas an event is a clear or run event. The values in the OnPullSaveOrBoth and OnClearRunOrBoth arguments will determine what actions/events trigger the function's execution.
+
+| Trigger Combo  |  OnPullSaveOrBoth  |  OnClearRunOrBoth   |  Event Function Executes On  |
+|------|------|------|------|
+| 1  |  Pull  |  Clear   |  Pull-Clear  |
+| 2  |  Save  |  Clear   |  Save-Clear  |
+| 3  |  Both  |  Clear   |  Pull-Clear, Save-Clear  |
+| 4  |  Pull  |  Run   |  Pull-Run  |
+| 5  |  Save  |  Run   |  Save-Run  |
+| 6  |  Both  |  Run   |  Pull-Run, Save-Run  |
+| 7  |  Pull  |  Both   |  Pull-Run, Pull-Clear  |
+| 8  |  Save  |  Both   |  Save-Run, Save-Clear  |
+| 9  |  Both  |  Both   |  Pull-Run, Pull-Clear, Save-Run, Save-Clear  |

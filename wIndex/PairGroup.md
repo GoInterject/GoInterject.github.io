@@ -1,40 +1,57 @@
 ---
 title: PairGroup()
 layout: custom
-keywords: [pairgroup, function]
-description: Provides an easy method to string multiple Pair() functions together in a single string argument with each Pair() delimited by a comma.
+keywords: [PairGroup, function]
+description: The PairGroup function will active all [Pair()](Pair.html) functions defined within.
 ---
-##  Function Summary 
 
-Provides an easy method to string multiple [ Pair() ](Pair.html) functions together in a single string argument with each Pair() delimited by a comma. This function is used as a helper function for both [Formatting](Formatting-Functions-Landing.html) and [Data](Data-Functions-Landing.html) functions. It is used to consolidate multiple Pair() functions so that they can all be applied by the same Interject function. To see the functions that PairGroup() can be embedded in, view the **Usable In These Functions** section of this page. This function does have a Pair() limit of 34 Pairs. There can only be one PairGroup() embed so you cannot embed a PairGroup() inside another PairGroup().
+##  Function Summary
+The PairGroup function will active all [Pair()](Pair.html) functions defined within. It is best practice to use the PairGroup function even when only entering one Pair.
 
-###  Function Arguments   
+For an example of this function, see [Lab Drill: Customer Aging](/wGetStarted/L-Drill-CustomerAging.html).
 
-| Parameter Name | Description                                                                                        | Default | Optional |
-|----------------|----------------------------------------------------------------------------------------------------|---------|----------|
-| Pair1          | This parameter is meant to have a [Pair()](Pair.html) function embedded in it             |         | YES      |
-| Pair2          | This parameter is meant to have another Pair() function embedded in it                             |         | YES      |
-| ...            | ...                                                                                                |         | ...      |
-| Pair34         | This is the limit to the Pair() functions that can be embedded into a single PairGroup() function. |         | YES      |
+###  Function Arguments
 
-### Excel Formula Bar Example
+<button class="collapsible-parameter">**Pair**<br>The Pair function transfers values from one cell to another upon a designated action or event (e.g. a drill or as defined in the function it is embedded in). Multiple Pairs can be added separated by a comma.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td><a href="https://docs.gointerject.com/wIndex/Pair.html">Pair()</a></td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>Max 34 Pairs</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>No Pair function will be activated</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+###  Excel Formula Bar Example
 
 ```Excel
-PairGroup(Pair(L12:N12,"DateBegin",TRUE),Pair(M21,"Segment2",TRUE),Pair(F26:F125,"Segment1",TRUE))
+=PairGroup(Pair("2002-05",M22),Pair(M21,"Segment2"),Pair(F26:F125,"Segment1"))
 ```
 
-If you want to gain more context as to how this PairGroup() function works, it is sourced from [Lab Drill: Financial Report](/wGetStarted/L-Drill-FinancialReport.html). 
 
-### Example Function Composition
 
-| Argument Name | Example Mapping                | Explanation |
-|---------------|--------------------------------|-------------|
-| Function Name | =PairGroup()                   |This is the excel function name used to call the function. It is not meant to standalone and is meant to be embedded inside of a [ Formatting ](Formatting-Functions-Landing.html) or [Data](Data-Functions-Landing.html) function.             |
-| Pair1         | Pair(L12:N12,"DateBegin",TRUE) |This is the first pair function that is executed in this example. To better understand a pair function click [Here](/wIndex/Pair.html)            |
-| Pair2         | Pair(M21,"Segment2",True)      |This is the second pair function that is executed in this example.|
-| Pair3         | Pair(F26:F125,"Segment1",TRUE) |This is the third pair function that is executed in this example. |
+###  Function Composition
 
-###  Usable In These Functions  
+| Argument Name  |  Example Mapping  |  Explanation   |  
+|------|------|------|
+|  Function Name  |  =PairGroup()  |  The name of this function.  |  
+|  Pair1  |  Pair("2002-05",M22)  |  Will transfer the value "2002-05" into cell M22 upon action or event.  |  
+|  Pair2  |  Pair(M21,"Segment2")  |  Will transfer the value in cell M21 to the cell labeled as "Segment2" upon action or event.  |  
+|  Pair3  |  Pair(F26:F125,"Segment1")  |  Will transfer a single cell value from F26:F125 into the cell labeled as "Segment1" upon action or event.  |  
 
-* [ReportDrill](ReportDrill.html)
+###  Usable In These Functions
+
+* [PairGroup](PairGroup.html)
 * [ReportDefaults](ReportDefaults.html)
+* [ReportDrill](ReportDrill.html)

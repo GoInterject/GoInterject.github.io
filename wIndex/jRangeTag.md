@@ -1,32 +1,70 @@
 ---
 title: jRangeTag()
 layout: custom
-keywords: [jrangetag, function]
-description: The jRangeTag() function is used to label or tag a range or a single cell with a custom name.
+keywords: [jRangeTag, function]
+description: The jRangeTag function simply tags a designated range with a name.
 ---
-##  Function Summary 
 
-The jRangeTag() function is used to label or tag a range or a single cell with a custom name. It is possible to use jRangeTag() to insert specific data into the specified region. It is also possible to use jRangeTag() to locate setting on a worksheet 
+##  Function Summary
+The jRangeTag function simply tags a designated range with a name. This is used to support certain automated processes unique to Interject functions, for example report distribution.
 
-###  Function Arguments   
+For an example of this function, see [Lab Create: Basic Distribution](/wGetStarted/L-Export-BasicDist.html).
 
-| Parameter Name | Description                                                                 | Default | Optional |
-| -------------- | --------------------------------------------------------------------------- | ------- | -------- |  
-| Tag            | The user defined name for a cell range or address                           |         | NO       |
-| Range          | This is the cell area or address that is selected from within the worksheet |         | NO       |
+###  Function Arguments
 
-### Excel Formula Bar Example
+<button class="collapsible-parameter">**Tag**<br>The name to tag the range</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>String</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>Max 255 char</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Will fail</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**Range**<br>The range to be associated with the Tag</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>Range</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td></td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Will fail</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+###  Excel Formula Bar Example
 
 ```Excel
-jRangeTag("Location",M22)
+=jRangeTag("Location",M22)
 ```
 
-To see an example of this function in use, visit the [Lab Create: Basic Distribution](/wGetStarted/L-Export-BasicDist.html)
 
-###  Function Composition   
 
-| Formula       | Example      | Explanation                                                          |
-| ------------- | ------------ | -------------------------------------------------------------------- |
-| Function Name | =jRangeTag() | The name of the report formula                                       |
-| Tag           | "Location"   | The custom name for the range (see below).                           |
-| Range         | M22          | The set of cells in the worksheet that will be identified by the tag |
+###  Function Composition
+
+| Argument Name  |  Example Mapping  |  Explanation   |  
+|------|------|------|
+|  Function Name  |  =jRangeTag()  |  The name of this function.  |  
+|  Tag  |  "Location"  |  This range is tagged as "Location".  |  
+|  Range  |  M22  |  The range to be tagged is M22.  |  

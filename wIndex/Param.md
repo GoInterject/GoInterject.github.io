@@ -1,36 +1,80 @@
 ---
 title: Param()
 layout: custom
-keywords: [param, function]
-description: Param is used to help select one or multiple parameters for each of your report formulas. 
- 
+keywords: [Param, function]
+description: The Param function transfers values as parameters to the DataPortal.
 ---
-##  Function Summary 
 
-Param is used to help select one or multiple parameters for each of your report formulas 
+##  Function Summary
+The Param function transfers values as parameters to the DataPortal. The values must match the order of the parameters in the data source (The order can be verified using the [Validation Report](/wTroubleshoot/Reports.html#validation-report-for-pullsave-events) ).
 
-NOTE - One value to one cell. But can go one to many. In second case will return XML of entire thing. 
+For an example of this function, see [Lab Drill: Customer Aging](/wGetStarted/L-Drill-CustomerAging.html).
 
-###  Function Arguments   
+###  Function Arguments
 
-| Parameter Name | Description                    | Default | Optional |
-| -------------- | ------------------------------ | ------- | -------- |
-| Value1         | Enter parameter value or link. |         | YES      |
-| ...            | ...                            |         | ...      |
-| Value40        | Enter parameter value or link. |         | YES      |
+<button class="collapsible-parameter">**Value1**<br>A string or single cell indicating the value to be transferred as a parameter to the DataPortal. Multiple values can be entered separated by a comma.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>String/Single Cell</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>Max 255 char or must be a single cell</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Will not transfer value</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**Val2 - Val40**<br>A string or single cell indicating the value to be transferred as a parameter to the DataPortal. Multiple values can be entered separated by a comma.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>String/Single Cell</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>Max 255 char or must be a single cell</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Will not transfer value</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
-### Excel Formula Bar Example
+###  Excel Formula Bar Example
+
 ```Excel
 =ReportRange("NorthwindCustomers",B14:H15,B2:H2,B4:H4,Param(C7,C8,C9),FALSE,FALSE,,FALSE,FALSE)
 ```
-To see an example of this function in use, visit the [Lab Create: Customer Aging](/wGetStarted/L-Create-CustomerAging.html)
 
-###  Function Composition   
 
-| Argument Name | Example Mapping | Explanation                                                             |
-| ------------- | --------------- | ----------------------------------------------------------------------- |
-| Function Name | Param()         | Inside the ReportRange, call the param function to call multiple cells  |
-| Value1        | C7              | the value in C7 will be passed through as a parameter to the dataportal |
-| Value2        | C8              | the value in C8 will be passed through as a parameter to the dataportal |
-| Value3        | C9              | the value in C9 will be passed through as a parameter to the dataportal |
+
+###  Function Composition
+
+| Argument Name  |  Example Mapping  |  Explanation   |  
+|------|------|------|
+|  Function Name  |  Param()  |  The name of this function.  |  
+|  Value1  |  C7  |  The value in C7 will be passed as a parameter to the DataPortal  |  
+|  Val2  |  C8  |  The value in C8 will be passed as a parameter to the DataPortal  |  
+|  Val3  |  C9  |  The value in C9 will be passed as a parameter to the DataPortal  |  
+
+###  Usable In These Functions
+
+* [ReportFixed](ReportFixed.html)
+* [ReportLookup](ReportLookup.html)
+* [ReportRange](ReportRange.html)
+* [ReportSave](ReportSave.html)
+* [ReportVariable](ReportVariable.html)
+* [jDropdown](jDropdown.html)

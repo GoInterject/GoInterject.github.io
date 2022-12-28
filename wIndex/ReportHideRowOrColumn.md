@@ -1,70 +1,131 @@
 ---
 title: ReportHideRowOrColumn()
 layout: custom
-keywords: [reporthideroworcolumn, function]
-description: ReportHideRowOrColumn() utilizes cell the values "Show" and "Hide" as input parameters. 
+keywords: [ReportHideRowOrColumn, function]
+description: The ReportHideRowOrColumn function will hide a designated row or column when triggered upon a designated [event](wIndex/Event-Functions-Landing.html).
 ---
 
-## Function Summary
+##  Function Summary
+The ReportHideRowOrColumn function will hide a designated row or column when triggered upon a designated [event](wIndex/Event-Functions-Landing.html). If a cell within the defined range = "hide", the function will hide that row or column when triggered. If the defined range is a single row, the function will hide the column. If this range is a single column, the function will hide the row.
 
-ReportHideRowOrColumn() utilizes cell the values "Show" and "Hide" as input parameters. These parameters are set within the RowOrColumnRange argument, wherein if a cell within that range has a value of "Hide" then the function will hide that column or row depending on which type of cell range is being used. Additionally, this function is triggered on an Interject Action+Event combination. Also, this function requires a [ReportCalc()](/wIndex/ReportCalc.html) function to be executed in the Interject call stack before the ReportHideRowOrColumn() is called in the stack. This is because the ReportHideRowOrColumn() function requires the most up to date cell formula outputs (if formulas are being used to create the "Show"/"Hide" cell values), which does not occur if the ReportHideRowOrColumn() function is called directly after a trigger combination is called.  There are several trigger combinations that can be utilized by ReportGrouping() that are listed [here](/wIndex/ReportHideRowOrColumn.html#trigger-combination-list).
+Typically this function is used to hide data that is impertinent to the current purpose of the report and/or filters being used. For example, a user can set up a report to hide invoices with zero balances or to show only accounts with a delinquent status, etc. (Note: the rows/columns are not actually hidden in the sense that Excel hides them. They are hidden from view by setting their width/height to 0. A user can simply expand the hidden rows by expanding the width.)
 
-### Function Arguments
+For an example of this function, see [Lab Create: Hiding Rows & Columns](/wGetStarted/L-Create-HideRowCol.html).
 
-|Argument Name|Description|Default|Optional|
-|:---|:---|:---|:---|
-|OnPullSaveOrBoth|This defines the instance in which an Interject action will trigger the function to be executed.||NO|
-|OnClearRunOrBoth|This defines which Interject event will trigger the function to be executed.                    ||NO|
-|RowOrColumnRange| Specifies a cell range that is either a single column or a single row but **NOT** both.||NO|
-|Disabled| This disables the function if the value is "TRUE" and is used when testing a report.|FALSE|YES|
+###  Function Arguments
 
-### Excel Formula Bar Example
+<button class="collapsible-parameter">**OnPullSaveOrBoth**<br>A string that defines what type of action(s) the event in OnClearRunOrBoth refer to: **Pull** action, **Save** action, or **Both** actions.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>String</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>"pull", "save", "both"</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Function Error</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**OnClearRunOrBoth**<br>A string indicating which event(s) will trigger this function: **Clear** event, **Run** event, or **Both** events.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>String</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>"clear", "run", "both"</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Function Error</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**RowOrColumnGroup**<br>A single row or column where the function will look for the value of "hide". If a cell in this range = "hide", the function will hide that row or column. If this range is a single row, the function will hide the column. If this range is a single column, the function will hide the row.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>Range</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>Must be a single row or single column</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Function Error</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**Disabled**<br>True: This function will be disabled.<br><br>False: This function will be enabled.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>Boolean</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td></td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>False</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+###  Excel Formula Bar Example
+
 ```Excel
-ReportHideRowOrColumn("Pull","Both",C47:C48,FALSE)
+=ReportHideRowOrColumn("Pull","Both",C47:C48,FALSE)
 ```
 
-To view this example with more context it is sourced from [Lab Create: HidingRowsColumns](/wGetStarted/L-Create-HideRowCol.html).
-
-### Example Function Composition
-
-|Argument Name|Example Mapping|Explanation|
-|:---|:---|:---|
-|Function Name|`=ReportHideRowOrColumn()`|This is the excel function name used to call the function. It can only be used as a standalone function in a report.|
-|OnPullSaveOrBoth|"Pull"| Determines that the function will be triggered on a Pull action.|
-|OnClearRunOrBoth|"Both"| This specifies that the function will  be triggered on a Clear or Run event. The trigger combination created is a Pull-Clear or a Pull-Run. These triggers are created by combining this argument with the value for OnPullSaveOrBoth.|
-|RowOrColumnRange|C47:C48| Specifies the single column range from cell C47 to C48. This is often placed on a target data range of a [Data](Data-Functions-Landing.html) function.|
-|Disabled|FALSE| This is left false since the ReportHideRowOrColumn() function is active.|
 
 
-### Trigger Combination List
-The execution of the ReportDefaults() formatting function is determined by a combination of an Interject action and an Interject event. An action is a pull or save whereas an event is a clear or a run.
+###  Function Composition
 
-| Argument Name    | Function Event Trigger Options | Option Explanation                                                                            |
-|------------------|--------------------------------|-----------------------------------------------------------------------------------------------|
-| **Trigger 1**    |                                |                                                                                               |
-| OnPullSaveOrBoth | "Pull"                         | This will trigger the default to execute when the user performs a Pull-Run Interject event.   |
-| OnClearRunOrBoth | "Run"                          |                                                                                               |
-| **Trigger 2**    |                                |                                                                                               |
-| OnPullSaveOrBoth | "Pull"                         | This will trigger the default to execute when the user performs a Pull-Clear Interject event. |
-| OnClearRunOrBoth | "Clear"                        |                                                                                               |
-| **Trigger 3**    |                                |                                                                                               |
-| OnPullSaveOrBoth | "Save"                         | This will trigger the default to execute when the user performs a Save-Run Interject event.   |
-| OnClearRunOrBoth | "Run"                          |                                                                                               |
-| **Trigger 4**    |                                |                                                                                               |
-| OnPullSaveOrBoth | "Save"                         | This will trigger the default to execute when the user performs a Save-Clear Interject event. |
-| OnClearRunOrBoth | "Clear"                        |                                                                                               |
-| **Trigger 5**    |                                |                                                                                               |
-| OnPullSaveOrBoth | "Both"                         | This will trigger the default to execute when the user performs a Save-Run, Save-Clear, Pull-Run, Pull-Clear Interject event. |
-| OnClearRunOrBoth | "Both"                         |                                                                                               |
-| **Trigger 6**    |                                |                                                                                               |
-| OnPullSaveOrBoth | "Both"                         | This will trigger the default to execute when the user performs a Save-Clear or a Pull-Clear Interject event. |
-| OnClearRunOrBoth | "Clear"                        |                                                                                               |
-| **Trigger 7**    |                                |                                                                                               |
-| OnPullSaveOrBoth | "Save"                         | This will trigger the default to execute when the user performs a Save-Clear or a Save-Run Interject event. |
-| OnClearRunOrBoth | "Both"                        |                                                                                               |
-| **Trigger 8**    |                                |                                                                                               |
-| OnPullSaveOrBoth | "Pull"                         | This will trigger the default to execute when the user performs a Pull-Clear or a Pull-Run Interject event. |
-| OnClearRunOrBoth | "Both"                        |                                                                                               |
+| Argument Name  |  Example Mapping  |  Explanation   |  
+|------|------|------|
+|  Function Name  |  =ReportGrouping()  |  The name of this function.  |  
+|  OnPullSaveOrBoth  |  "Both"  |  A pull or save action are designated as the run event.  |  
+|  OnClearRunOrBoth  |  "Run"  |  A run event (defined in OnPullSaveOrBoth) will trigger this function being ran.  |  
+|  RowOrColumnGroup  |  C47:C48  |  A cell value of "hide" in the range C47:48 will hide that row when triggered.  |  
+|  Disabled  |  FALSE  |  This function will run.  |  
 
-### Required Function List
-* [ReportCalc()](/wIndex/ReportCalc.html)
+###  Trigger Combination List
+
+
+The execution of this function is determined by a combination of an Interject action and an Interject event. An action is a pull or save action whereas an event is a clear or run event. The values in the OnPullSaveOrBoth and OnClearRunOrBoth arguments will determine what actions/events trigger the function's execution.
+
+| Trigger Combo  |  OnPullSaveOrBoth  |  OnClearRunOrBoth   |  Event Function Executes On  |
+|------|------|------|------|
+| 1  |  Pull  |  Clear   |  Pull-Clear  |
+| 2  |  Save  |  Clear   |  Save-Clear  |
+| 3  |  Both  |  Clear   |  Pull-Clear, Save-Clear  |
+| 4  |  Pull  |  Run   |  Pull-Run  |
+| 5  |  Save  |  Run   |  Save-Run  |
+| 6  |  Both  |  Run   |  Pull-Run, Save-Run  |
+| 7  |  Pull  |  Both   |  Pull-Run, Pull-Clear  |
+| 8  |  Save  |  Both   |  Save-Run, Save-Clear  |
+| 9  |  Both  |  Both   |  Pull-Run, Pull-Clear, Save-Run, Save-Clear  |
