@@ -1,44 +1,119 @@
 ---
 title: jCombineIF()
 layout: custom
-keywords: [jcombineif, function]
-description: jCombineIF() has a similar function to jCombine(). A key difference is that jCombineIF() uses a conditional statement to determine which values should be included into a single concatenated string. 
+keywords: [jCombineIF, function]
+description: The jCombineIF function concatenates a range or multiple ranges of cells into a single string using a designated delimiter if a certain condition is met.
 ---
 
-## Function Summary
+##  Function Summary
+The jCombineIF function concatenates a range or multiple ranges of cells into a single string using a designated delimiter if a certain condition is met. Blank cells are skipped.
 
-jCombineIF() has a similar function to [jCombine()](/wIndex/jCombine). A key difference is that jCombineIF() uses a conditional statement to determine which values should be included into a single concatenated string. jCombineIF() requires the cell ranges for both the CriteriaRange and the SelectedRange to be continuous as jCombineIF() does not support non-continuous data ranges.
+This function can be used as a standalone function and does not need to be embedded in another function.
 
-### Function Arguments
+For an example of this function, see [Lab Create: Using the Retain Feature](/wGetStarted/L-Create-RetainFeature.html#jcombineif).
 
-| Parameter Name | Description                                                                                                              | Default | Optional |
-|----------------|--------------------------------------------------------------------------------------------------------------------------|---------|----------|
-| CriteriaRange  | The criteria range is a range of cells that contain values. These values are used to compare against the criteria value. |         | NO       |
-| SelectedRange  | This is the range of cells that are selected to be concatenated into a single string upon the criteria range matching the criteria value.|         | NO       |
-| CriteriaValue  | This is a cell value that is used to compare to the values of cells in the criteria range. It is compared using a 'Like' operator. When the criteria value matches a cell value within the criteria range, the selected range value equivalent is concatenated.                         |         | NO       |
-| Delimiter      | This defines a character value that will designate a separation between cell values. The default delimiter is a comma.   |         | YES      |
+###  Function Arguments
 
-### Excel Formula Bar Example
+<button class="collapsible-parameter">**CriteriaRange**<br>A range designated to be the criteria range. Each cell in this range will be compared to the value in the CriteriaValue argument. If the cell matches, the corresponding cell in the SelectedRange will be concatenated.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>Range</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>Must match the dimensions of SelectedRange</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Function Error</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**SelectedRange**<br>A range that will be concatenated. Concatenation happens row by row (i.e. each column in the row concatenates before moving to the next row).</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>Range</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>Must match the dimensions of CriteriaRange</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Function Error</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**CriteriaValue**<br>A value designated to be the criteria (the first cell is used if a range is entered). If the value here matches a cell in the CriteriaRange argument, the corresponding cell in the SelectedRange will be concatenated.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>Range/String/Boolean</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>Max 255 char</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Does not concatenate any cells</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**Delimiter**<br>The string that will be used as the delimiter when selecting multiple cells.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>String</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>Max 255 char</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>","</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+###  Excel Formula Bar Example
 
 ```Excel
-    jCombineIF(J16:O16,J15:O15,TRUE,";")
+=jCombineIF(J16:O16,J15:O15,TRUE,";")
 ```
-An example of this function is currently in construction in our documentation labs. Check back soon for an example with more context.
 
-### Example Function Composition
 
-| Argument Name | Example Mapping | Explanation |
-|---------------|-----------------|-------------|
-|Function Name  | =jCombineIF()   |This is the excel function name used to call the function. It can be used standalone in a report and can be embedded inside of [Data](Data-Functions-Landing.html) or [Formatting](Formatting-Functions-Landing.html) functions.   |
-|CriteriaRange  | J16:O16        |The criteria range is a range of cells with values. When a cell in this range contains the value "TRUE" it is therefore matched to the criteria value of "TRUE". In this instance, the values of the cells in the selected range are concatenated into a single string value. |
-|SelectedRange  | J15:O15        |This is the range of cells that will be concatenated upon a match between the criteria range and the criteria value.|
-|CriteriaValue  | TRUE           | This is the value that is used to match to the Criteria range. When matched to the Criteria Range, jCombineIF will concatenate the associated selected range values. |
-|Delimeter      | ";"            |This uses ";" as a delimiter between values in the concatenated string value. In this case it would look like this "ValueJ15;ValueK15;ValueL15;ValueM15;ValueN15;ValueO15".|
 
-### Usable In These Report Formulas 
+###  Function Composition
 
-* [Param](Param.html)
+| Argument Name  |  Example Mapping  |  Explanation   |  
+|------|------|------|
+|  Function Name  |  =jCombineIF()  |  The name of this function.  |  
+|  CriteriaRange  |  J16:O16  |  The range J16:O16 will be used to compare values. If a cell in this range matches the CriteriaValue, the corresponding cell in SelectedRange will concatenated. For example, in this case, if J16 = True, then J15 will be concatenated. If J17 = True, then J16 will be concatenated, etc.  |  
+|  SelectedRange  |  J15:O15  |  The range J15:O15 will be the values concatenated if the criteria is met.  |  
+|  CriteriaValue  |  TRUE  |  The boolean value of True is used as the criteria.  |  
+|  Delimiter  |  ";"  |  The semicolon ";" will be used as the delimiter for the concatenation.  |  
+
+###  Usable In These Functions
+
 * [ReportRange](ReportRange.html) 
 * [ReportVariable](ReportVariable.html)
-* [ReportFixed](ReportFixed.html)
-* [ReportSave](ReportSave.html)

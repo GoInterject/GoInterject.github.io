@@ -1,39 +1,77 @@
 ---
 title: jCombine()
 layout: custom
-keywords: [jcombine, function]
-description: The jCombine() function is helpful for developers who want to concatenate the values of cells while simultaneously skipping any empty cell. 
+keywords: [jCombine, function]
+description: The jCombine function concatenates a range or multiple ranges of cells into a single string using a designated delimiter.
 ---
-## Function Summary
 
-The jCombine() function is helpful for developers who want to concatenate the values of cells while simultaneously skipping any empty cell. jCombine() can use both a cell range and a list of cell addresses. A list of cell addresses will require a delimiting character between each cell address in the list. The delimiter character can be custom, but it is a comma by default. When using jCombine() in a list of ranges that are not continuous it needs to have a second pair of parentheses around the first set.
+##  Function Summary
+The jCombine function concatenates a range or multiple ranges of cells into a single string using a designated delimiter. Blank cells are skipped.
 
-### Function Arguments
+This function can be used as a standalone function and does not need to be embedded in another function.
 
-| Argument Name | Description | Default | Optional |
-|----------------|-------------|---------|----------|
-|Selected Range |This designates a range of cells from a worksheet that will be concatenated. This can also be used with a delimited list of cells.||NO|
-|Delimeter|This defines a character value that will designate a separation between cell values. The default delimiter is a comma.|","|YES|
+For an example of this function, see [Lab Create: Using the Retain Feature](/wGetStarted/L-Create-RetainFeature.html).
 
-### Excel Formula Bar Example
+###  Function Arguments
+
+<button class="collapsible-parameter">**Selected Range**<br>A range or mulitple ranges that will be concatenated. If multiple ranges are selected, they need to be enclosed in parenthesis and seperated by a comma (e.g. "(a2,a14:b15,c6)"). Concatenation happens row by row (i.e. each column in the row concatenates before moving to the next row).</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>Range/(Range, Range, …)</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>Max 7 ranges</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Function Error</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**Delimiter**<br>The string that will be used as the delimiter when selecting multiple cells.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>String</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>Max 255 char</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>","</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+###  Excel Formula Bar Example
 
 ```Excel
-jCombine((A2,F2:G2,R2:T2))
+=jCombine((A2,F2:G2,R2:T2))
 ```
-The simplified version of this example is sourced from [Lab Create: Using the Retain Feature](/wGetStarted/L9-Using-The-Retain-Feature.html). In that example jCombine is used as an embedded function but does not have to be. It is often used as a standard Excel function.
 
-### Example Function Composition
 
-| Argument Name | Example Mapping | Explanation |
-|---------------|-----------------|-------------|
-|Function Name  |=jCombine()    |This is the excel function name used to call the function. It can be used standalone in a report and can be embedded inside of [Data](Data-Functions-Landing.html) or [Formatting](Formatting-Function-Landing.html) functions  |
-|Selected Range |(A2,F2:G2,R2:T2)    |In this example, jCombine is concatenating the values of the ranges to look like this: "ValueOfA2,ValueOfF2,ValueOfG2,ValueOfR2,ValueOfS2,ValueOfT2"|
-|Delimeter      |" "              |The reason for leaving the delimiting value as blank means that jCombine will use its default comma delimiter. To change the delimiter all you need to do is set a delimiting character value. For example ";".|
 
-### Usable In These Functions
+###  Function Composition
 
-* [Param](Param.html)
+| Argument Name  |  Example Mapping  |  Explanation   |  
+|------|------|------|
+|  Function Name  |  =jCombine()  |  The name of this function.  |  
+|  Selected Range  |  (A2,F2:G2,R2:T2)  |  The ranges selected for concatenation are: A2, F2:G2, and R2:T2.  |  
+|  Delimiter  |    |  Blank to indicate a comma is to be used as the delimiter.  |  
+
+###  Usable In These Functions
+
 * [ReportRange](ReportRange.html) 
 * [ReportVariable](ReportVariable.html)
-* [ReportFixed](ReportFixed.html)
-* [ReportSave](ReportSave.html)

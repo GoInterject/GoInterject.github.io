@@ -1,43 +1,119 @@
 ---
 title: ReportDrill()
 layout: custom
-keywords: [reportdrill, function]
-description: ReportDrill is widely used throughout Interject as a way to connect and pass information between workbooks and worksheets. 
+keywords: [ReportDrill, function]
+description: The ReportDrill function provides a convenient way to run another targeted function while at the same time, transferring contextual data for filtering to that function.
 ---
 
-## Function Summary
+##  Function Summary
+The ReportDrill function provides a convenient way to run another targeted function while at the same time, transferring contextual data for filtering to that function. It is widely used as a way to connect and pass information between workbooks and worksheets. Drilling takes a defined input and passes it in as a parameter to another workbook or worksheet, similar to hyperlinks on a web page. Depending on the types of input behind the hyperlink, more detailed and specific information can be viewed. The ReportDrill function can be structured in ways that make drilling data very powerful.
 
-ReportDrill is widely used throughout Interject as a way to connect and pass information between workbooks and worksheets. Drilling takes a defined input and passes it in as a parameter to another workbook or worksheet, similar to hyperlinks on a web page: Depending on the types of input behind the hyperlink, more detailed and specific information can be viewed. While there are few codes crucial to the process, they can be structured in ways that make them very powerful. In order to setup a drill that goes to another workbook it is necessary to setup drill codes in the [Report Library](/wGetStarted/L-Create-UpdatingReportLibrary#adding-a-drill-code-to-a-report) which have to be registered with Interject.
+In order to set up a drill that targets a function in another workbook, it is necessary to set up a drill code in the [Report Library](/wGetStarted/L-Create-UpdatingReportLibrary#adding-a-drill-code-to-a-report).
 
-### Function Arguments
+For an example of this function, see [Lab Drill: Customer Aging](/wGetStarted/L-Drill-CustomerAging.html).
 
-| Parameter Name  | Description                                                                                                                                                                                | Default | Optional |
-|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|----------|
-| ReportCellToRun | A cell address on a worksheet within your report that contains an Interject [Data](Data-Functions-Landing.html) or [Formatting](Formatting-Functions-Landing.html) function.               |         | YES      |
-| ReportCodeToRun | A drill code that is setup in the [Report Library](/wGetStarted/L-Create-UpdatingReportLibrary#adding-a-drill-code-to-a-report) that allows you to drill between workbooks. |         | YES      |
-| TransferPairs   | A [PairGroup](Pairgroup.html) and [Pair](Pair.html) function that determines which cell value you want to capture, and where you want to place it.                       |         | YES      |
-| DrillName       | This defines the name of the drill displayed on the Excel report.                                                                                                                          |         | YES      |
+###  Function Arguments
+
+<button class="collapsible-parameter">**ReportCellToRun**<br>A cell address in a worksheet within your report that contains an Interject [Data Pull Function](/wIndex/Data-Functions-Landing.html). The Data Pull Functions of the sheet of this range will be ran upon a Drill action.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>Range</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td></td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Uses cell reference in ReportCodeToRun</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**ReportCodeToRun**<br>The name of the drill code that has been set up in the [Report Library](/wGetStarted/L-Create-UpdatingReportLibrary#adding-a-drill-code-to-a-report) that allows you to drill between workbooks.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>String</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>Max 255 char</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Uses cell reference in ReportCellToRun</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**TransferPairs**<br>A Pair or a PairGroup that contains a list of [Pairs](/wIndex/Pair.html). The Pair function transfers values from one cell to another. This is typically used to filter the data you are drilling. This function will transfer the value in the Pair range (determined by the active cell you are drilling) to the target cell.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td><a href="https://docs.gointerject.com/wIndex/Pair.html">Pair()</a>/<a href="https://docs.gointerject.com/wIndex/PairGroup.html">PairGroup()</a></td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>Max 34 Pairs</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Does not transfer anything</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**DrillName**<br>The name of this drill as will be displayed in the list of data drills.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>String</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>Max 255 char</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Uses the ReportCellToRun/ReportCodeToRun as the name</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
-### Excel Formula Bar Example
+###  Excel Formula Bar Example
 
 ```Excel
-ReportDrill(CustomerOrderHistory!C10,,PairGroup(Pair(B22:B24, CustomerOrderHistory!C23)),"Drill to Customer Orders History")
+=ReportDrill(CustomerOrderHistory!C10,,PairGroup(Pair(B22:B24, CustomerOrderHistory!C23)),"Drill to Customer Orders History")
 ```
-This example is sourced from [Lab Drill: Customer Aging](/wGetStarted/L-Drill-CustomerAging.html).
 
-### Example Function Composition
 
-| Argument Name   | Example Mapping                                    | Explanation                                                                                                                                                                                                                                                           |
-|-----------------|----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Function Name   | =ReportDrill()                                   | This is the excel function name used to call the function. It can have embedded functions.                                                                                                                                                                            |
-| ReportCellToRun | CustomerOrderHistory!C10                           | The cell that is being run is an Interject Data function on the CustomerOrderHistory Page. If this is left blank, then ReportCodeToRun cannot be blank.                                                                                                               |
-| ReportCodeToRun | ""                                                 | This is left blank since the drill does not go to a different workbook. This cannot be left blank if the ReportCellToRun argument is left blank. If you wanted to run a drill on a different workbook, place the target workbook's drill code in this argument field. |
-| TransferPairs   | PairGroup(Pair(B22:B24, CustomerOrderHistory!C23)) | This will copy a cell value from a cell within the specified range, then place that value on the CustomerOrderHistory worksheet, at cell C23.                                                                                                                         |
-| DrillName       | "Drill to Customer Orders History"                 | The Drill name will appear as "Drill to Customer Orders History" inside of the drill form.                                                                                                                                                                            |
 
-### Embeddable Helper Functions
+###  Function Composition
 
-* [PairGroup](Pairgroup.html)
+| Argument Name  |  Example Mapping  |  Explanation   |  
+|------|------|------|
+|  Function Name  |  =ReportDrill()  |  The name of this function.  |  
+|  ReportCellToRun  |  CustomerOrderHistory!C10  |  The Data Pull Functions within sheet "CustomerOrderHistory" will be ran upon a Drill action.  |  
+|  ReportCodeToRun  |  ""  |  Left blank because targeted function is found in ReportCellToRun argument.  |  
+|  TransferPairs  |  PairGroup(Pair(B22:B24, CustomerOrderHistory!C23))  |  When this drill is ran, will copy the value in B22:B24 (whatever row the active cell is on when the drill is ran) to the CustomerOrderHistory worksheet cell C23.  |  
+|  DrillName  |  "Drill to Customer Orders History"  |  The drill name will appear as "Drill to Customer Orders History" inside the Data Drill window.  |  
+
+###  Embeddable Helper Functions
+
+* [PairGroup](PairGroup.html)
 * [Pair](Pair.html)
-

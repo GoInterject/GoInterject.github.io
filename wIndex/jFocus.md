@@ -1,30 +1,49 @@
 ---
 title: jFocus()
 layout: custom
-keywords: [jfocus, function]
-description: The jFocus() formatting function is executed in conjunction with a freeze/unfreeze panes action performed in the Quick Tools menu. 
+keywords: [jFocus, function]
+description: The jFocus function will move the curser and select a targeted range after a freeze panes action using Interject's Freeze/UnFreeze Panes action.
 ---
 
-## Function Summary
+##  Function Summary
+The jFocus function will move the curser and select a targeted range after a freeze panes action using Interject's Freeze/UnFreeze Panes action. The [jFreezePanes](/wIndex/jFreezePanes.html) function must be set up for this to trigger. The Freeze/UnFreeze Panes action can be found in [Quick Tools](/wGetStarted/Interject-Ribbon-Menu-Items.html#quick-tools) on the Interject Ribbon Menu.
 
-The jFocus() formatting function is executed in conjunction with a freeze/unfreeze panes action performed in the [Quick Tools](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools) menu. It sets the excel focus (active cell selection) upon a freeze panes action. This is often conducted before uploading a report to the Interject [Report Library](/wAbout/Report-Library-Basics.html) and is often paired with a [jFreezePanes](/wIndex/jFreezePanes.html) formatting function.
+For an example of this function, see [Lab Create: Customer Aging](/wGetStarted/L-Create-CustomerAging.html).
 
-### Function Arguments
+###  Function Arguments
 
-| Argument Name | Description                                                                                      | Default | Optional |
-|----------------|--------------------------------------------------------------------------------------------------|---------|----------|
-| Target         | This is a cell address that upon a freeze panes action will place the excel active selection to. |         | NO       |
+<button class="collapsible-parameter">**Target**<br>This is the range that will be selected after a freeze panes action.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>Range</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td></td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Will select the cell defined in jFreezePanes FreezePanesCell argument</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
-### Excel Formula Bar Example
+
+###  Excel Formula Bar Example
 
 ```Excel
 =jFocus(C17)
 ```
-An example of this function is currently in construction in our documentation labs. Check back soon for an example with more context.
 
-### Example Function Composition
 
-| Argument Name | Example Mapping | Explanation                                                                                                          |
-|---------------|-----------------|----------------------------------------------------------------------------------------------------------------------|
-| Function Name | =jFocus       | This is the excel function name used to call the function. It can only be used as a standalone function in a report. |
-| Target        | C17             | Cell C17 is the cell that will be selected upon a freeze panes action.                                               |
+
+###  Function Composition
+
+| Argument Name  |  Example Mapping  |  Explanation   |  
+|------|------|------|
+|  Function Name  |  =jFocus  |  The name of this function.  |  
+|  Target  |  C17  |  Cell C17 will be selected after a freeze panes action.  |  

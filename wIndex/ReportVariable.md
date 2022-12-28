@@ -1,46 +1,225 @@
 ---
 title: ReportVariable()
 layout: custom
-keywords: [reportvariable, function, variable]
-description: Directs a list of data into rows that include multiple ranges or sections where each can be subtotaled and formatted to make a financial statement or other report with sub groupings. 
+keywords: [ReportVariable, function]
+description: The ReportVariable function pulls data from a data source and inserts it into a spreadsheet.
 ---
-* * *
 
-##  Function Summary 
-Directs a list of data into rows that include multiple ranges or sections where each can be subtotaled and formatted to make a financial statement or other report with sub groupings. 
+##  Function Summary
+The ReportVariable function pulls data from a data source and inserts it into a spreadsheet. It is similar to the [ ReportFixed ](/wIndex/ReportFixed.html) function because it takes row names as input in addition to column names. Only data that is mapped to both these row and column names from the data source will be inserted. Consequently, the range where data is inserted is defined by the boundaries of the RowDefRange and the ColDefRange. Data returned by this function can be filtered, formatted, and customized for a specific desired report.
 
-###  Function Arguments   
+This function differs from the ReportFixed function in that it will group the data based on the values defined in the RowDefRange argument. The grouping feature allows the data to be collapsed and expanded by category.
 
-| Parameter Name      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Default | Optional |
-| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | -------- |
-| DataPortal          | This is the name of the Interject Data Portal which has been set up to connect to data.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |         | YES      |
-| RowDefRange         | Select a single column range that has the values referencing the RowDefName field of the data result. Each RowDefName defines a new target range where records matching the value found in the RowDefName will be inserted. It is required for a returned data set to have a column called **RowDefName** . RowDefRange can look for a different column name if specified in the ColDefRange cell (explained below), which is directly above the RowDefRange column. <br> Explain the **[leftover]** rowdefrange special tag that marks the target range will all records not matching will be presented.                                                                                                                                 |         | NO       |
-| ColDefRange         | The Column Definition Range defines which columns from the database will be used by this function.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |         | YES      |
-| FormatRange         | This Range defines the format (eg. font / color) or formula to be copied down to the TargetDataRange. If left blank, the first row of the TargetDataRange format is applied. When a ColDefRange spans multiple rows, a FormatRange must be used and must match the number of rows selected in the ColDefRange.                                                                                                                                                                                                                                                                                                                                                                                                                                |         | YES      |
-| Parameters          | Select cells which will be used as parameters for the Data Portal. The parameters must be selected in the same order specified in the Data Portal setup. The order can be checked by using the validation report . A [ report builder ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) will also list the parameters correctly to aid new report building. The cells must use Interject's [ Param ](/wIndex/Param.html)() function.                                                                                                                                                                                                                                                                                                               |         | YES      |
-| UseEntireRow        | If True, Interject will insert a row instead of a range in order to control displace of cells.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | FALSE   | YES      |
-| RetainRowColumns    | This can either be a string noting the names of the columns in the ColDefRange or a range that points to the ColDefRange items. The noted columns will be considered the key for the inserted row. When using this feature, rows are no longer cleared from the target range, but data are cleared still without deleting rows. The columns noted as **retained** are not cleared, while all other ColDef item columns are cleared. The purpose of this feature is to allow number trends to lead into forecasting calculations. On a data re-pull, it is critical the calculation formulas are not removed, but only data that is shown in the trend columns are updated.  [ See example here. ](/wGetStarted/L-Create-RetainFeature.html) |         | YES      |
-| InsertNewRowsWithin | If RetainRowColumns are specified, the system will automatically add new rows when the key (represented by the noted columns in RetainRowColumns) is not present in the target data range. These new rows will be added to the bottom of the data range to ensure users' calculated formulas are minimally affected. If InsertNewRowsWithin is true, the new rows will be inserted within the target range based on the alphabetical order of the key. At this time, the ability to further refine the order is not allowed.                                                                                                                                                                                                                  | FALSE   | YES      |
-| UseTopSpacerRow     | For the TargetDataRange, adding a top spacer row inserts the data on the second row of the range and allows the first row to retain it's formatting. This is used in cases where rows are inserted into the range and the user needs to place the row at the top of the target range.                                                                                                                                                                                                                                                                                                                                                                                                                                                         |         | YES      |
+For an example of this function, see [Lab Create: Inventory Variable](/wGetStarted/L-Create-InventoryVariable.html).
 
-### Excel Formula Bar Example
+###  Function Arguments
+
+<button class="collapsible-parameter">**DataPortal**<br>The name of the Interject DataPortal that will be used as the data source for this function.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>String/<a href="https://docs.gointerject.com/wIndex/jDataPortal.html">jDataPortal()</a></td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>Max 255 char</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Function Error</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**RowDefRange**<br>A single column range that contains the values that map to the RowDefName field of the data source. Each value in this range will be matched to the same value in the RowDefName of the data source. Only these values will be populated with data after a pull action.<br><br>If the data source does not have a column "RowDefName", this function will look for a column name defined in the column in the ColDefRange and the row defined here in RowDefRange. For example, if row 2 is defined here and column B is defined in ColDefRange, this function will look at the value in B2 to map the data to.<br><br>If there are records in the data source that are excluded in this range, the data from those columns will be included in a [leftover] section after a pull action.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>Range</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>A single column range (not whole)</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Function Error</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**ColDefRange**<br>Column definition range: A single row designating the names of the columns of the data source. Only data from these columns will be inserted. Range cannot span multiple rows. Best practice is to use a range instead of whole rows.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>Range</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>Max 500 columns. Must be a single row.</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Will Error</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**FormatRange**<br>The range designating the formatting style (e.g. font, color) for the inserted data. Inserted data will be formated using this range as a template. Formulas can also be included, which will be used for the inserted data.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>Range</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>Must match the range dimensions defined in ColDefRange</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Uses the formatting in the first row defined in RowDefRange</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**Parameters**<br>The cells designating the parameters for the DataPortal. The values in these cells will filter the data that is inserted from the data source.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td><a href="https://docs.gointerject.com/wIndex/Param.html">Param()</a></td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>The values must match the order of the parameters in the data source (The order can be verified using the [ Validation Report ](/wTroubleshoot/Reports.html#validation-report-for-pullsave-events) )</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Data is not filtered</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**UseEntireRow**<br>True: New rows will be added for the inserted data. Every row besides the bottom row defined in TargetDataRange will be deleted first.<br><br>False: Data will be inserted into the range defined in TargetDataRange. All other cells outside this range will be unaffected.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>Boolean</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td></td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>False</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**RetainRowColumns**<br>The list of column names that will be used as a key for retaining information within the inserted data range. This can be a comma delimited string or a cell reference of a single column name defined in ColDefRange. <br><br>All data in the column(s) matching the names in this argument will be retained after a clear or pull action. Consequently, such rows are also retained and not deleted. However, all data in columns that are not defined in this argument are blanked out after a clear action or overridden after a pull action.<br><br>This feature makes forecasting calculations to remain in the report instead of being cleared. For an example of this feature, see [Using the Retain Feature ](/wGetStarted/L-Create-RetainFeature.html).</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>String/<a href="https://docs.gointerject.com/wIndex/jCombine.html">jCombine()</a>/<a href="https://docs.gointerject.com/wIndex/jCombine_If.html">jCombine_If()</a></td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>Max 255 char</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>All data within the TargetDataRange is cleared on a clear action</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**InsertNewRowsWithin**<br>True: If RetainRowsColumns is used, will insert new data in the TargetDataRange on a pull action by alphabetical order of the first key listed in RetainRowColumns. <br><br>False: Will insert new data below the already present data in the TargetDataRange on a pull action if valid columns are defined in RetainRowColumns.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>Boolean</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td></td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>False</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**UseTopSpacerRow**<br>True: Inserts data starting on the second row defined in TargetDataRange. (Retains top row on a pull or clear action.)<br><br>False: Inserts data starting on the first row defined in TargetDataRange.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>Boolean</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td></td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>False</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+###  Excel Formula Bar Example
+
 ```Excel
 =ReportVariable("NorthwindVariable",B18:B54,2:2,Param(I14,I15))
 ```
-To see an example of this function in use, visit the [Lab Create: Inventory Variable](/wGetStarted/L-Create-InventoryVariable.html)
 
-###  Function Composition 
 
-| Argument Name | Example Mapping     | Explanation                                                                                                            |
-| ------------- | ------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| Function Name | =ReportVariable()   | The name of the report formula.                                                                                         |
-| DataPortal    | "NorthwindVariable" | The name of a dataportal that is configured to connect to a northwind demo database.                                    |
-| RowDefRange   | B18:B54             | Data will be inserted on the specified rows under the ColDefRange (explained below).                                    |
-| ColDefRange   | 2:2                 | The column names specified in this range will determine which data fields are populated into the spreadsheet and where. |
-| Format Range | | The formatting specified in this range is copied down to the inserted rows in the target data range. If left blank, it will default to copy the first row in the RowDefRange |
-| Parameters | Param(I14,I15) |Cells I14 and I15 are specified to pass information to or from the DataPortal. Grouped by the [Param()](/wIndex/Param.html) function |
-| PutFieldNamesAtTop | FALSE | Since this is false, the names of the data fields are not returned as the top row of the target data range by the data portal |
-|RetainRowColumns | "" | This is left blank meaning that no rows will be retained upon a report clear |
-| InsertNewRowsWithin | FALSE | Since there are no retained columns this is set to false |
-| UseTopSpacerRow | FALSE | Data is not inserted on the second row. |
-  
+
+###  Function Composition
+
+| Argument Name  |  Example Mapping  |  Explanation   |  
+|------|------|------|
+|  Function Name  |  =ReportVariable()  |  The name of this function.  |  
+|  DataPortal  |  "NorthwindVariable"  |  This function will use the "NorthwindVariable" DataPortal for the data source.  |  
+|  RowDefRange  |  B18:B54  |  The names found in B18:B54 will be used to map to the column names found in row 2 (ColDefRange). Only data that intersects these names will be inserted on these rows. Data will be grouped by the names found in this range.  |  
+|  ColDefRange  |  2:2  |  The names found in row 2 will be used to map to the row names found in row B14:B27 (RowDefRange). Only data that intersects these names will be inserted on these columns.  |  
+|  Format Range  |    |  The formatting used in this range will be used as a template for the inserted data.  |  
+|  Parameters  |  Param(I14,I15)  |  Cells I14 and I15 will correspond to the parameters in the data source to filter the inserted data.  |  
+|  RetainRowColumns  |  ""  |  Left blank to indicate not to retain any data in the TargetDataRange (B14:H15).  |  
+|  InsertNewRowsWithin  |  FALSE  |  This value is automatically set to false since RetainRowColumns is blank.  |  
+|  UseTopSpacerRow  |  FALSE  |  Data will be inserted on the first row (18) defined in RowDataRange.  |  
+
+###  Embeddable Helper Functions
+
+* [jDataPortal](/wIndex/jDataPortal.html)
+* [ Param ](Param.html)
+* [jCombine](/wIndex/jCombine.html)
+* [jCombineIF](/wIndex/jCombine_IF.html)

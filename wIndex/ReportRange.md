@@ -12,18 +12,206 @@ For an example of this function, see [ Lab Create: Customer Aging ](/wGetStarte
 
 ###  Function Arguments
 
-| Parameter Name  |  Description  |  Type   |  Constraints  |  If Blank  |
-|------|------|------|------|------|
-|  DataPortal  |  The name of the Interject DataPortal that will be used as the data source for this function.  |  String/[jDataPortal()](/wIndex/jDataPortal.html)  |  Max 255 char  |  Function Error  |
-|  TargetDataRange  |  The range where the data will be inserted. Data is inserted starting at the first row. The last row defined here will be the bottom row below the data.  |  Range  |  Min 2 rows. Must match the width of the range defined in ColDefRange  |  No data inserted  |
-|  ColDefRange  |  The range designating the names of the columns of the data source. Only data from these columns will be inserted. Range can span multiple rows. Best practice is to use a range instead of whole rows.  |  Range  |  Max 500 columns. Must match the width of the range defined in TargetDataRange  |  Uses all columns from the data source  |
-|  FormatRange  |  The range designating the formatting style (e.g. font, color) for the inserted data. Inserted data will be formated using this range as a template. Formulas can also be included, which will be used for the inserted data.  |  Range  |  Must match the range dimensions defined in ColDefRange  |  Uses the formatting in the first row defined in TargetDataRange  |
-|  Parameters  |  The cells designating the parameters for the DataPortal. The values in these cells will filter the data that is inserted from the data source.  |  [ Param() ](Param.html)  |  The values must match the order of the parameters in the data source (The order can be verified using the [ Validation Report ](/wTroubleshoot/Reports.html#validation-report-for-pullsave-events) )  |  Data is not filtered  |
-|  UseEntireRow  |  True: New rows will be added for the inserted data. Every row besides the bottom row defined in TargetDataRange will be deleted first.<br/><br/>False: Data will be inserted into the range defined in TargetDataRange. All other cells outside this range will be unaffected.  |  Boolean  |    |  False  |
-|  PutFieldNamesAtTop  |  True: Will insert the column names on a row above the inserted data if ColDefRange is blank.<br/><br/>False: Will not insert column names.  |  Boolean  |    |  False  |
-|  RetainRowColumns  |  The list of column names that will be used as a key for retaining information within the inserted data range. This can be a comma delimited string or a cell reference of a single column name defined in ColDefRange. <br/><br/>All data in the column(s) matching the names in this argument will be retained after a clear or pull action. Consequently, such rows are also retained and not deleted. However, all data in columns that are not defined in this argument are blanked out after a clear action or overridden after a pull action.<br/><br/>This feature makes forecasting calculations to remain in the report instead of being cleared. For an example of this feature, see [Using the Retain Feature ](/wGetStarted/L-Create-RetainFeature.html).  |  String/[ jCombine() ](jCombine.html)/[ jCombineIF() ](jCombine_IF.html)  |  Max 255 char  |  All data within the TargetDataRange is cleared on a clear action  |
-|  InsertNewRowsWithin  |  True: If RetainRowsColumns is used, will insert new data in the TargetDataRange on a pull action by alphabetical order of the first key listed in RetainRowColumns. <br/><br/>False: Will insert new data below the already present data in the TargetDataRange on a pull action if valid columns are defined in RetainRowColumns.  |  Boolean  |    |  False  |
-|  UseTopSpacerRow  |  True: Inserts data starting on the second row defined in TargetDataRange. (Retains top row on a pull or clear action.)<br/><br/>False: Inserts data starting on the first row defined in TargetDataRange.  |  Boolean  |    |  False  |
+<button class="collapsible-parameter">**DataPortal**<br>The name of the Interject DataPortal that will be used as the data source for this function.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>String/<a href="https://docs.gointerject.com/wIndex/jDataPortal.html">jDataPortal()</a></td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>Max 255 char</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Function Error</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**TargetDataRange**<br>The multi-row range where the data will be inserted. Data is inserted starting at the first row. The last row defined here will be the bottom row below the data.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>Range</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>Min 2 rows. Must match the width of the range defined in ColDefRange</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>No data inserted</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**ColDefRange**<br>Column definition range: A range designating the names of the columns of the data source. Only data from these columns will be inserted. Range can span multiple rows. Best practice is to use a range instead of whole rows.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>Range</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>Max 500 columns. Must match the width of the range defined in TargetDataRange</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Uses all columns from the data source</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**FormatRange**<br>The range designating the formatting style (e.g. font, color) for the inserted data. Data will be formatted using this range as a template. Formulas can also be included, which will be used for the inserted data.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>Range</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>Must match the range dimensions defined in ColDefRange</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Uses the formatting in the first row defined in TargetDataRange</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**Parameters**<br>The cells designating the parameters for the DataPortal. The values in these cells will filter the data that is inserted from the data source.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td><a href="https://docs.gointerject.com/wIndex/Param.html">Param()</a></td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>The values must match the order of the parameters in the data source (The order can be verified using the [ Validation Report ](/wTroubleshoot/Reports.html#validation-report-for-pullsave-events) )</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Data is not filtered</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**UseEntireRow**<br>True: New rows will be added for the inserted data. Rows in TargetDataRange (besides bottom row) will be deleted first.<br><br>False: Data will be inserted into the range defined in TargetDataRange. Cells outside this range will be unaffected.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>Boolean</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td></td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>False</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**PutFieldNamesAtTop**<br>True: Will insert the column names on a row above the inserted data if ColDefRange is blank.<br><br>False: Will not insert column names.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>Boolean</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td></td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>False</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**RetainRowColumns**<br>The list of column names that will be used as a key for retaining information within the inserted data range. This can be a comma delimited string or a cell reference of a single column name defined in ColDefRange. <br><br>All data in the column(s) matching the names in this argument will be retained after a a Pull-Run or Pull-Clear event. Consequently, such rows are also retained and not deleted. However, all data in columns that are not defined in this argument are blanked out after a clear action or overridden after a pull action.<br><br>This feature makes forecasting calculations to remain in the report instead of being cleared. For an example of this feature, see [Using the Retain Feature ](/wGetStarted/L-Create-RetainFeature.html).</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>String/<a href="https://docs.gointerject.com/wIndex/jCombine.html">jCombine()</a>/<a href="https://docs.gointerject.com/wIndex/jCombine_If.html">jCombine_If()</a></td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>Max 255 char</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>All data within the TargetDataRange is cleared on a clear action</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**InsertNewRowsWithin**<br>True: If RetainRowsColumns is used, will insert new data in the TargetDataRange on a pull action by alphabetical order of the first key listed in RetainRowColumns. <br><br>False: Will insert new data below the already present data in the TargetDataRange on a pull action if valid columns are defined in RetainRowColumns.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>Boolean</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td></td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>False</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**UseTopSpacerRow**<br>True: Inserts data starting on the second row defined in TargetDataRange. (Retains top row on a Pull-Run or Pull-Clear event.)<br><br>False: Inserts data starting on the first row defined in TargetDataRange.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>Boolean</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td></td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>False</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 
 ###  Excel Formula Bar Example
 

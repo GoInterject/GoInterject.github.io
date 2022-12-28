@@ -1,36 +1,60 @@
 ---
 title: jWorkbookProperty()
 layout: custom
-keywords: [jworkbookproperty, function]
-description: The jWorkbookProperty is a standalone Interject function. It's purpose is to provide context and information about a workbook in a report. 
+keywords: [jWorkbookProperty, function]
+description: The jWorkbookProperty function extracts information from the properties of the workbook.
 ---
 
-## Function Summary
-The jWorkbookProperty is a standalone Interject function. It's purpose is to provide context and information about a workbook in a report. It leverages native Excel workbook properties as well as Interject workbook properties such as the version of the report set in the report library. 
+##  Function Summary
+The jWorkbookProperty function extracts information from the properties of the workbook.
 
-### Function Arguments
+This function can be used as a standalone function and does not need to be embedded in another function.
 
-| Argument Name | Description                                                                                                         | Default | Optional |
-| :------------ | :------------------------------------------------------------------------------------------------------------------ | :------ | :------- |
-| PropertyName  | This is a string value that matches a workbook property. It can be a custom property or a native workbook property. | NO      |
+For an example of this function, see [Lab Create: Inventory Fixed](/wGetStarted/L-Create-InventoryFixed.html#jworkbookproperty).
 
-### Excel Formula Bar Example
+###  Function Arguments
+
+<button class="collapsible-parameter">**PropertyName**<br>A string value indicating which property to extract.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>String</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>Max 255 char</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Nothing is extracted</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+###  Excel Formula Bar Example
 
 ```Excel
- jWorkbookProperty("Interject_LinkVersion")
+=jWorkbookProperty("Interject_LinkVersion")
 ```
-An example of this function is currently in construction in our documentation labs. Check back soon for an example with more context.
 
-### Example Function Composition
 
-| Argument Name | Example Mapping       | Explanation                                                                                                                                                                                                                                                                |
-| :------------ | :-------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Function Name | =jWorkbookProperty  | This is the excel name used to call the function. It is meant to be standalone and not embedded in other functions.                                                                                                                                                        |
-| PropertyName  | Interject_LinkVersion | This property name is created when an Interject report is uploaded to the [Report Library](/wAbout/Report-Library-Basics.html) and it will return the version of the report. Other workbook properties that can be called in this function can be found in the list below. |
 
-### Workbook Property List
+###  Function Composition
+
+| Argument Name  |  Example Mapping  |  Explanation   |  
+|------|------|------|
+|  Function Name  |  =jWorkbookProperty  |  The name of this function.  |  
+|  PropertyName  |  Interject_LinkVersion  |  This function will return the value of the custom property "Interject_LinkVersion".  |  
+
+###  Workbook Property List
 
 **Native Excel Properties**
+
+These are properties that can be extracted using this function. They are native to every Excel workbook and can be edited on the workbook's info page in settings. They can be extracted with the following values (case-insensitive):
 
 * Title
 * Comments
@@ -42,4 +66,4 @@ An example of this function is currently in construction in our documentation la
  
 **Custom Workbook Properties**
 
-This function supports custom workbook properties, so any properties that you set in **Advanced Properties** for your workbook can be used by this function. This section is also where Interject will define its own properties.
+In addition to the native Excel properties, this function can also extract custom workbook properties. You can add or edit these properties in the Advanced Properties on the workbook's info page in settings. Interject utilizes these custom properties to store information about the workbook. These custom properties are displayed in the [Report Library](/wAbout/Report-Library-Basics.html#using-the-report-library) and can be extracted with this function (case-sensitive).

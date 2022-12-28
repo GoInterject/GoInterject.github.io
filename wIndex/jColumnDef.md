@@ -1,53 +1,155 @@
 ---
 title: jColumnDef()
 layout: custom
-keywords: [jcolumndef, function]
-description: This function assists financial reports using the FinCube DataPortal to specify segment filters for each amount column. 
+keywords: [jColumnDef, function]
+description: The jColumnDef function defines a column based on one or more parameters.
 ---
-* * *
 
-##  Function Summary 
+##  Function Summary
+The jColumnDef function defines a column based on one or more parameters. Each parameter represents a segment. The segments can be set to filter the data that this column represents. Typically this function is used with a Data Pull function for a financial report.
 
-This function assists financial reports using the FinCube DataPortal to specify segment filters for each amount column. See the the [ FinCube ](/wIndex/FinCube---The-Financial-Cube.html) page for an explanation of this function and how each argument can use filters. The following arguments represent the same segments used within the FinCube DataPortal. 
+The jColumnDef function utilizes a DataPortal to interact with the segments. This DataPortal is specifically setup for the particular needs of the company using Interject. The segments are thus customizable. For most companies, the Interject [FinCube](/wIndex/FinCube---The-Financial-Cube.html) DataPortal will suffice for their reporting needs.
 
-###  Function Arguments   
+For an example of this function, see [Lab Create: Financial Variable ](/wGetStarted/L-Create-FinancialVariable.html).
 
-| Parameter Name | Segment Reference | Description                                                           | Default | Optional |
-| -------------- | ----------------- | --------------------------------------------------------------------- | ------- | -------- |
-| Source         | Segment12         | Input is typically "Actual," "Budget," or forecast codes like "Fcast1" through "Fcast12." In some configurations, codes can be combined to include unposted and staged monthly numbers (actuals will only include posted entries). <br> <br> To see unposted in addition to posted entries, combine the two: "Actual,Unposted". If staged entries are configured in the Interject installation, use "Actual,Unposted,Staged". |         | YES      |
-| Period         | Segment9          | Month 1 through 12. For year to date amounts, use YTD1 through YTD12. |         | YES      |
-| Year           | Segment10         | Year                                                                  |         | YES      |
-| Version        | Segment11         | If configured, this can filter data to specific versions.             |         | YES      |
-| Segment1       | Same              | Configurable segment. Account may be a common example.                |         | YES      |
-| Segment2       | Same              | Configurable segment. District may be a common example.               |         | YES      |
-| Segment3       | Same              | Configurable segment. Line of Business may be a common example.       |         | YES      |
-| Segment4       | Same              | Configurable segment.                                                 |         | YES      |
-| Segment5       | Same              | Configurable segment.                                                 |         | YES      |
-| Segment6       | Same              | Configurable segment.                                                 |         | YES      |
-| Segment7       | Same              | Configurable segment. Currency may be a common example.               |         | YES      |
-| Segment8       | Same              | Configurable segment. Company may be a common example.                |         | YES      |
+###  Function Arguments
 
-### Excel Formula Bar Example
+The parameters and segments listed below are some examples of the FinCube DataPortal. Actual parameters will vary depending on what DataPortal is being used. For more information about these parameters, see [FinCube](/wIndex/FinCube---The-Financial-Cube.html).
+
+<button class="collapsible-parameter">**Source (Segment12)**<br>The source of the data (e.g. "Actual", "Budget", "Projection", ect.).</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>String/Range</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>Max 255 char or single cell</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Does not filter data</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**Period (Segment9)**<br>The period of the data (e.g. 1-12).</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>String/Range</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>Max 255 char or single cell</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Does not filter data</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**Year (Segment10)**<br>The year of the data.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>String/Range</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>Max 255 char or single cell</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Does not filter data</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**Version (Segment11)**<br>The version of the data.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>String/Range</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>Max 255 char or single cell</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Does not filter data</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**Customizable (Segment1-8)**<br>Configurable segment.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>Custom</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>Custom</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Custom</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**Balance Type**<br>A string indicating the balance type.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>String</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>"MTD", "QTD", "YTD", "QTR"</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>"MTD"</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+###  Excel Formula Bar Example
 
 ```Excel
-jColumnDef(Actual,11,2001,,,,,)
+=jColumnDef(Actual,11,2001)
 ```
 
-To see an example of this function in use, visit the [Lab Create: Financial Variable ](/wGetStarted/L-Create-FinancialVariable.html)
 
-###  Function Composition   
 
-| Formula  | Example  | Explanation                                                                                   |
-| -------- | -------- | --------------------------------------------------------------------------------------------- |
-| Source   | "Actual" | Where the data comes from. In this case it is actuals but it could be budgets or projections. |
-| Period   | 11       | The period of which the data is from.                                                         |
-| Year     | 2001     | The year of which the data is from.                                                           |
-| Version  |          |                                                                                               |
-| Segment1 |          |                                                                                               |
-| Segment2 |          |                                                                                               |
-| Segment3 |          |                                                                                               |
-| Segment4 |          |                                                                                               |
-| Segment5 |          |                                                                                               |
-| Segment6 |          |                                                                                               |
-| Segment7 |          |                                                                                               |
-| Segment8 |          |                                                                                               |
+###  Function Composition
+
+| Argument Name  |  Example Mapping  |  Explanation   |  
+|------|------|------|
+|  Function Name  |  jColumnDef  |  The name of this function.  |  
+|  Source  |  "Actual"  |  The data for this column will be from "Actual".  |  
+|  Period  |  11  |  The data for this column will be from period 11.  |  
+|  Year  |  2001  |  The data for this column will be from year 2001.  |  

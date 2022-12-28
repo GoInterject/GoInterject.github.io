@@ -1,72 +1,115 @@
 ---
 title: ReportDefaults()
 layout: custom
-keywords: [reportdefaults, function]
-description: A ReportDefaults() formatting function is utilized to capture and send values from one cell (or set of cells) to another. 
+keywords: [ReportDefaults, function]
+description: The ReportDefaults function will copy a value from a range to another range when triggered upon a designated [event](wIndex/Event-Functions-Landing.html).
 ---
 
-## Function Summary
+##  Function Summary
+The ReportDefaults function will copy a value from a range to another range when triggered upon a designated [event](wIndex/Event-Functions-Landing.html).
 
-A ReportDefaults() formatting function is utilized to capture and send values from one cell (or set of cells) to another. It gets executed on a specified Interject action and then it captures the values from one cell (or set of cells) and sends the values to the corresponding target cell(s). To view a list of actions go to the [Trigger Combination List](/wIndex/ReportDefaults.html#trigger-combination-list). Many times, the ReportDefaults() function is used to clear out report filters after an Interject clear is performed. This is because [Data Functions](/wIndex/Data-Functions-Landing.html) do not clear the filters after a clear action since they only clear their corresponding target data ranges. Additionally, a ReportDefaults() function can be used to set default filter parameters after an Interject action has occurred.
+This function can be used to restore default values to a report after a desired action. For example, the values in the parameters section can be cleared after a clear event or set to a particular value. It can also be used to set initial parameters before a report is ran.
 
-### Function Arguments
+For an example of this function, see [Lab Create: Customer Aging Detail](/wGetStarted/L-Create-CustomerAgingDetail.html#reportdefaults).
 
-| Argument Name   | Description | Default | Optional |
-|------------------|-------------|---------|----------|
-| OnPullSaveOrBoth | This defines the instance in which an Interject action will trigger the function to be executed.|         | NO       |
-| OnClearRunOrBoth | This defines which Interject event will trigger the function to be executed.                    |         | NO       |
-| TransferPairs    | Enter  [ Pairs  ](/wIndex/Pair.html) within a  [ PairGroup  ](/wIndex/PairGroup.html) function to copy data and restrict what data is captured. See [ Drill: Customer Aging Report ](/wGetStarted/128421015.html) for more information on usage. |         | YES      |
+###  Function Arguments
 
-### Excel Formula Bar Example
+<button class="collapsible-parameter">**OnPullSaveOrBoth**<br>A string that defines what type of action(s) the event in OnClearRunOrBoth refer to: **Pull** action, **Save** action, or **Both** actions.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>String</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>"pull", "save", "both"</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Function Error</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**OnClearRunOrBoth**<br>A string indicating which event(s) will trigger this function: **Clear** event, **Run** event, or **Both** events.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>String</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>"clear", "run", "both"</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Function Error</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**TransferPairs**<br>A single Pair or PairGroup that contains a list of Pairs. The Pair function transfers values from one cell to another.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td><a href="https://docs.gointerject.com/wIndex/Pair.html">Pair()</a>/<a href="https://docs.gointerject.com/wIndex/PairGroup.html">PairGroup()</a></td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>Max 34 Pairs</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Does not transfer any values</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+###  Excel Formula Bar Example
 
 ```Excel
-ReportDefaults("Save","Clear",PairGroup(Pair("",C12,FALSE)))
+=ReportDefaults("Save","Clear",PairGroup(Pair("",C12,FALSE)))
 ```
-An example of this function is currently in construction in our documentation labs. Check back soon for an example with more context.
-
-### Example Function Composition
-
-| Argument Name    | Example Mapping               | Explanation                                                                                                          |
-|------------------|-------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| Function Name    | =ReportDefaults()           | This is the excel function name used to call the function. It can only be used as a standalone function in a report. |
-| OnPullSaveOrBoth | "Pull"                        | The report default will be triggered to run on a pull action                                                         |
-| OnClearRunOrBoth | "Clear"                       | The clear event means that the function will be triggered on a combination of "Pull-Clear".                          |
-| TransferPairs    | PairGroup(Pair("",C12,FALSE)) | This will copy a blank value and place it as the new value for C12.                                                  |
 
 
-### Trigger Combination List
 
-The execution of the ReportDefaults() formatting function is determined by a combination of an Interject action and an Interject event. An action is a pull or save whereas an event is a clear or a run.
+###  Function Composition
 
-| Argument Name    | Function Event Trigger Options | Option Explanation                                                                            |
-|------------------|--------------------------------|-----------------------------------------------------------------------------------------------|
-| **Trigger 1**    |                                |                                                                                               |
-| OnPullSaveOrBoth | "Pull"                         | This will trigger the default to execute when the user performs a Pull-Run Interject event.   |
-| OnClearRunOrBoth | "Run"                          |                                                                                               |
-| **Trigger 2**    |                                |                                                                                               |
-| OnPullSaveOrBoth | "Pull"                         | This will trigger the default to execute when the user performs a Pull-Clear Interject event. |
-| OnClearRunOrBoth | "Clear"                        |                                                                                               |
-| **Trigger 3**    |                                |                                                                                               |
-| OnPullSaveOrBoth | "Save"                         | This will trigger the default to execute when the user performs a Save-Run Interject event.   |
-| OnClearRunOrBoth | "Run"                          |                                                                                               |
-| **Trigger 4**    |                                |                                                                                               |
-| OnPullSaveOrBoth | "Save"                         | This will trigger the default to execute when the user performs a Save-Clear Interject event. |
-| OnClearRunOrBoth | "Clear"                        |                                                                                               |
-| **Trigger 5**    |                                |                                                                                               |
-| OnPullSaveOrBoth | "Both"                         | This will trigger the default to execute when the user performs a Save-Run, Save-Clear, Pull-Run, Pull-Clear Interject event. |
-| OnClearRunOrBoth | "Both"                         |                                                                                               |
-| **Trigger 6**    |                                |                                                                                               |
-| OnPullSaveOrBoth | "Both"                         | This will trigger the default to execute when the user performs a Save-Clear or a Pull-Clear Interject event. |
-| OnClearRunOrBoth | "Clear"                        |                                                                                               |
-| **Trigger 7**    |                                |                                                                                               |
-| OnPullSaveOrBoth | "Save"                         | This will trigger the default to execute when the user performs a Save-Clear or a Save-Run Interject event. |
-| OnClearRunOrBoth | "Both"                        |                                                                                               |
-| **Trigger 8**    |                                |                                                                                               |
-| OnPullSaveOrBoth | "Pull"                         | This will trigger the default to execute when the user performs a Pull-Clear or a Pull-Run Interject event. |
-| OnClearRunOrBoth | "Both"                        |                                                                                               |
+| Argument Name  |  Example Mapping  |  Explanation   |  
+|------|------|------|
+|  Function Name  |  =ReportDefaults()  |  The name of this function.  |  
+|  OnPullSaveOrBoth  |  "Pull"  |  A pull action is designated as the run event.  |  
+|  OnClearRunOrBoth  |  "Clear"  |  A clear event or run event (defined in OnPullSaveOrBoth) will trigger this function being ran.  |  
+|  TransferPairs  |  PairGroup(Pair("",C12,FALSE))  |  Will copy a blank value to C12.  |  
+
+###  Trigger Combination List
 
 
-### Embeddable Helper Functions
+The execution of this function is determined by a combination of an Interject action and an Interject event. An action is a pull or save action whereas an event is a clear or run event. The values in the OnPullSaveOrBoth and OnClearRunOrBoth arguments will determine what actions/events trigger the function's execution.
 
-* [Pair](/wIndex/Pair.html)
-* [PairGroup](/wIndex/PairGroup.html)
+| Trigger Combo  |  OnPullSaveOrBoth  |  OnClearRunOrBoth   |  Event Function Executes On  |
+|------|------|------|------|
+| 1  |  Pull  |  Clear   |  Pull-Clear  |
+| 2  |  Save  |  Clear   |  Save-Clear  |
+| 3  |  Both  |  Clear   |  Pull-Clear, Save-Clear  |
+| 4  |  Pull  |  Run   |  Pull-Run  |
+| 5  |  Save  |  Run   |  Save-Run  |
+| 6  |  Both  |  Run   |  Pull-Run, Save-Run  |
+| 7  |  Pull  |  Both   |  Pull-Run, Pull-Clear  |
+| 8  |  Save  |  Both   |  Save-Run, Save-Clear  |
+| 9  |  Both  |  Both   |  Pull-Run, Pull-Clear, Save-Run, Save-Clear  |
+
+###  Embeddable Helper Functions
+
+* [PairGroup](PairGroup.html)
+* [Pair](Pair.html)
