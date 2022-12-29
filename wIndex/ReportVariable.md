@@ -114,26 +114,6 @@ For an example of this function, see [Lab Create: Inventory Variable](/wGetStart
 </table>
 </div>
 
-<button class="collapsible-parameter">**UseEntireRow**<br>True: New rows will be added for the inserted data. Every row besides the bottom row defined in TargetDataRange will be deleted first.<br><br>False: Data will be inserted into the range defined in TargetDataRange. All other cells outside this range will be unaffected.</button>
-<div markdown="1" class="panel-parameter">
-<table>
-  <tbody>
-    <tr>
-		<td class="pph"><b>Type</b></td>
-		<td>Boolean</td>
-    </tr>
-    <tr>
-		<td class="pph"><b>Constraints</b></td>
-		<td></td>
-    </tr>
-    <tr>
-		<td class="pph"><b>If Blank</b></td>
-		<td>False</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
 <button class="collapsible-parameter">**RetainRowColumns**<br>The list of column names that will be used as a key for retaining information within the inserted data range. This can be a comma delimited string or a cell reference of a single column name defined in ColDefRange. <br><br>All data in the column(s) matching the names in this argument will be retained after a clear or pull action. Consequently, such rows are also retained and not deleted. However, all data in columns that are not defined in this argument are blanked out after a clear action or overridden after a pull action.<br><br>This feature makes forecasting calculations to remain in the report instead of being cleared. For an example of this feature, see [Using the Retain Feature ](/wGetStarted/L-Create-RetainFeature.html).</button>
 <div markdown="1" class="panel-parameter">
 <table>

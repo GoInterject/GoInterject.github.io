@@ -32,7 +32,7 @@ For an example of this function, see [ Lab Dev: Customer Aging Detail ](/wGetSta
 </table>
 </div>
 
-<button class="collapsible-parameter">**RowDefRange**<br>A single column range that contains the unique row IDs that will be used to save the rows in this range via the data source. A corresponding column name for the uniques ID must be included in this column in the row defined in ColDefRange.</button>
+<button class="collapsible-parameter">**RowDefRange**<br>A single column range that contains the unique row IDs that will be used to save the rows in this range via the data source. A corresponding column name for the unique ID must be included in this column in the row defined in ColDefRange.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
