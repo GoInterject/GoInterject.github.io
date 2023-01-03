@@ -16,7 +16,7 @@ For an example of this function, see [Lab Create: Financial Variable ](/wGetStar
 
 The parameters and segments listed below are some examples of the FinCube DataPortal. Actual parameters will vary depending on what DataPortal is being used. For more information about these parameters, see [FinCube](/wIndex/FinCube---The-Financial-Cube.html).
 
-<button class="collapsible-parameter">**Source (Segment12)**<br>The source of the data (e.g. "Actual", "Budget", "Projection", ect.).</button>
+<button class="collapsible-parameter">**Source (Segment12)**<br>The source of the data (e.g. "Actual", "Budget", "Projection", etc.).</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
@@ -36,7 +36,7 @@ The parameters and segments listed below are some examples of the FinCube DataPo
 </table>
 </div>
 
-<button class="collapsible-parameter">**Period (Segment9)**<br>The period of the data (e.g. 1-12).</button>
+<button class="collapsible-parameter">**Period (Segment9)**<br>The period of the data (e.g. 1-12 for a month of the year, 1-4 for a quarter). Also accepts YYYY-MM format.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
@@ -56,7 +56,7 @@ The parameters and segments listed below are some examples of the FinCube DataPo
 </table>
 </div>
 
-<button class="collapsible-parameter">**Year (Segment10)**<br>The year of the data.</button>
+<button class="collapsible-parameter">**Year (Segment10)**<br>The year of the data. Also accepts YYYY-MM format.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
@@ -116,7 +116,7 @@ The parameters and segments listed below are some examples of the FinCube DataPo
 </table>
 </div>
 
-<button class="collapsible-parameter">**Balance Type**<br>A string indicating the balance type.</button>
+<button class="collapsible-parameter">**BalanceType**<br>A string indicating the balance type.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>

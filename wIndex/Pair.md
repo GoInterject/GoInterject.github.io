@@ -32,7 +32,7 @@ For an example of this function, see [Lab Drill: Customer Aging](/wGetStarted/L-
 </table>
 </div>
 
-<button class="collapsible-parameter">**Target**<br>A range indicating where the value in From will be transfered to.</button>
+<button class="collapsible-parameter">**Target**<br>A range indicating where the value in From will be transferred to.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
