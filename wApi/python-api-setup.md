@@ -112,7 +112,7 @@ If the `MongoDB` or `Pandas` controllers are being utilized, then it is possible
 Once settings have been configured, the server can be launched using the built-in flask server (`main.py`) or via the Twisted Web production ready server (`server.py`) using the following command:
 
 ```
-> python server.py
+python server.py
 ``` 
 
 ## **More Information**

@@ -55,7 +55,7 @@ setup requires the following conditions be met:
 - server must be running for interject to pull data from. call using 
 
     ```
-    > python main.py
+    python main.py
     ```
 
     NOTE: the following files are required to exist in the local directory of the server
@@ -67,46 +67,14 @@ setup requires the following conditions be met:
 Custom functions have the ability to utilize input and output parameters as well as return user messages to Interject.
 
 Interject request information is passed to a custom function through the kwargs function argument.
-<table>
-<th>Parameters</th><th>Type</th><th>Description</th>
-<tr>
-    <td><code>kwargs['dataframe']</code></td>
-    <td>pandas.DataFrame()</td>
-    <td>Pandas dataframe</td>
-</tr>
-<tr>
-    <td><code>kwargs['user_message']</code></td>
-    <td>string</td>
-    <td>Interject User message (notices should contain "usernotice:", and errors should contain "usererror:")</td>
-</tr>
-<tr>
-    <td><code>kwargs['param_list'][ParamName]['name']</code></td>
-    <td>string</td>
-    <td> The name of the formula parameter in the dataportal</td>
-</tr>
-<tr>
-    <td><code>kwargs['param_list'][ParamName]['expects_output']</code></td>
-    <td>bool</td>
-    <td>Defines if the output_value should replace the value in the report</td>
-</tr>
-<tr>
-    <td><code>kwargs['param_list'][ParamName]['in_formula']</code></td>
-    <td>bool</td>
-    <td>determines whether the parameter is in the report formula or not (system params will be false)</td>
-</tr>
-<tr>
-    <td><code>kwargs['param_list'][ParamName]['input_value']</code></td>
-    <td>any</td>
-    <td>Input parameter value from the user</td>
-</tr>
-<tr>
-    <td><code>kwargs['param_list'][ParamName]['output_value']</code></td>
-    <td>any</td>
-    <td>Output parameter defined by the dataportal</td>
-</tr>
-<tr>
-    <td><code>kwargs['param_list'][ParamName]['user_validation_msg']</code></td>
-    <td>string</td>
-    <td>Not Currently Available</td>
-</tr>
-</table>
+
+| Parameters | Type | Description |
+|-----|-----|-----|
+| kwargs['dataframe'] | pandas.DataFrame() | Pandas dataframe | 
+| kwargs['user_message'] | string | Interject User message (notices should contain "usernotice:", and errors should contain "usererror:") |
+| kwargs['param_list'][ParamName]['name'] | string | The name of the formula parameter in the dataportal |
+| kwargs['param_list'][ParamName]['expects_output'] | bool | Defines if the output_value should replace the value in the report |
+| kwargs['param_list'][ParamName]['in_formula'] | bool | determines whether the parameter is in the report formula or not (system params will be false) |
+| kwargs['param_list'][ParamName]['input_value'] | any | Input parameter value from the user |
+| kwargs['param_list'][ParamName]['output_value'] | any | Output parameter defined by the dataportal |
+| kwargs['param_list'][ParamName]['user_validation_msg'] | string | Not Currently Available |

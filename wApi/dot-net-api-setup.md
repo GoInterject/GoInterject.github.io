@@ -27,6 +27,17 @@ The first step is to install the .NET SDK that best fits your system. These down
 ##  **Get The Code**
 Once .NET is installed then clone or download the `SimpleDataApi` repository:
 
+<!---
+{% include codeHeader.html %}
+
+
+<div class="code-header">
+  <button class="copy-code-button">
+    Copy
+  </button>
+</div>
+--->
+
 ```git
 git clone https://github.com/GoInterject/ids-dotnet-api
 ```
