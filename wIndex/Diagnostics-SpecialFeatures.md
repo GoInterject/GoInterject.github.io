@@ -15,7 +15,7 @@ The "Apply Special Features" in the Interject Diagnostics Pane allows users to a
 
 ### BugFix1: Microsoft Animations
 
-The Microsoft Animations Bug was a bug that caused certain screen issues due to Microsoft's Animation settings. This bug has been fixed in recent Interject versions but the setting remains here for users to be able to turn on/off animations.
+The Microsoft Animations Bug caused certain screen issues due to Microsoft's Animation settings. This bug has been fixed in recent Interject versions but the setting remains here for users to be able to turn on/off animations.
 
 **Input:**
 
@@ -25,7 +25,7 @@ The Microsoft Animations Bug was a bug that caused certain screen issues due to 
 
 ### BugFix2: Microsoft Repaint
 
-The Microsoft Repaint Bug is a bug that causes screen issues when an Excel Add-In programatically switches focus to another tab. This bug is present for some users starting with Excel versions 2210. If you are experiencing issues with slow-down and screen issues when drilling data, this bug fix may help.
+The Microsoft Repaint Bug causes screen issues when an Excel Add-In programatically switches focus to another tab. This bug is present for some users starting with Excel versions 2210. If you are experiencing issues with slow-down and screen issues when drilling data, this bug fix may help.
 
 **Input:**
 
