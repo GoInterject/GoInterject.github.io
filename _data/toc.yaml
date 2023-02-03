@@ -275,9 +275,30 @@ index:
         path: /wIndex/Request-Context-Parse.html
   - title: Interject Hotkey Index
     path: /wIndex/INTERJECT-Hotkey-Index.html
-  - title: Interject Screen Tip Link Index
+  - title: Interject Hyperlinks
     path: /wIndex/INTERJECT-Link-Index.html
-
+  - sectiontitle: Diagnostics
+    path: /wIndex/Diagnostics-Landing.html
+    section:
+      - title: Special Features
+        path: /wIndex/Diagnostics-SpecialFeatures.html
+      - title: Change ShortKeys
+        path: /wIndex/Diagnostics-ShortKey.html
+  - sectiontitle: Quick Tools
+    path: /wIndex/Quick-Tools-Landing.html
+    section:
+    - title: Panes Tools
+      path: /wIndex/QuickTools-Panes.html
+    - title: Formatting Tools
+      path: /wIndex/QuickTools-Format.html
+    - title: Formula Tools
+      path: /wIndex/QuickTools-Formula.html
+    - title: Editing Tools
+      path: /wIndex/QuickTools-Edit.html
+    - title: Hyperlink Tools
+      path: /wIndex/QuickTools-Hyperlink.html
+    - title: Other Tools
+      path: /wIndex/QuickTools-Other.html
 
 
 portal:

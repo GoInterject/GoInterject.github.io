@@ -1,5 +1,5 @@
 ---
-title: Interject Screen Tip Link Index
+title: Interject Hyperlinks
 layout: custom
 keywords: [link, hyperlink]
 description: Interject provides a way to perform some of the basic Interject functions by clicking on a link within the report.
@@ -10,18 +10,18 @@ description: Interject provides a way to perform some of the basic Interject fun
 Interject provides a way to perform some of the basic Interject functions and commands by clicking on a link within the report. This makes it convenient to customize your report to preform commonly used functions and commands by the click of a button. 
 
 
-### **Screen Tip List**
+### **Hyperlink List**
 
 This feature only works if the correct Screen Tip is entered for the link. The following lists the types of operations this feature supports:
 
 | Screen Tip | Function to Reference | Details |
 |------|------|------|
-| "Interject Report Library" | n/a | Opens up the [Report Library](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-library) window |
-| "Interject Pull" | [Data Pull Function](/wIndex/Data-Functions-Landing.html) | Opens up the [Pull Data](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) window |
-| "Interject Save" | [Data Save Function](/wIndex/ReportSave.html) | Opens up the [Data Save](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data) window |
+| "Interject Dropdown" | [jDropdown Function](/wIndex/jDropdown.html) | Executes a jDropdown Function (see [here](/wGetStarted/L-Create-Dropdowns.html) for an example)|
 | "Interject Drill" | [Data Drill Function](/wIndex/ReportDrill.html) | Opens up the [Data Drill](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data) window |
 | "Interject Return From Drill" | n/a | [Returns From Drill](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#return-from-drill) |
-| "Interject Dropdown" | [jDropdown Function](/wIndex/jDropdown.html) | Executes a jDropdown Function (see [here](/wGetStarted/L-Create-Dropdowns.html) for an example)|
+| "Interject Pull" | [Data Pull Function](/wIndex/Data-Functions-Landing.html) | Opens up the [Pull Data](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) window |
+| "Interject Save" | [Data Save Function](/wIndex/ReportSave.html) | Opens up the [Data Save](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data) window |
+| "Interject Report Library" | n/a | Opens up the [Report Library](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-library) window |
 
 <!---
 | "Interject Execute jAction" | jAction Function | Executes jAction Function |
