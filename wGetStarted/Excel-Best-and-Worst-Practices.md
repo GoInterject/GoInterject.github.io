@@ -20,27 +20,22 @@ Excel is a terrific and flexible tool, and to make the best use of it in your da
 Example:  In the screenshot below, you have a list of 20,000 records. You can filter the data, but there is an easier way. 
 
 ![](/images/ExcelBestPractices/ExcelBestAndWorstThinkOfExcel1.jpg)
-
-  
-
+<br>
 
 The user can filter the data like in the screenshot below, but there could be an easier way. 
 
-![](/images/ExcelBestPractices/ExcelBestAndWorstThinkOfExcel2.jpg))
-
-  
-
+![](/images/ExcelBestPractices/ExcelBestAndWorstThinkOfExcel2.jpg)
+<br>
 
 The next screenshot shows an alternative, a drill action to a summary report, created by an Interject developer to give users easier access to viewing the details of the 20,000 records. 
 
-![](/images/ExcelBestPractices/ExcelBestAndWorstThinkOfExcel3.jpg))
-
-  
-
+![](/images/ExcelBestPractices/ExcelBestAndWorstThinkOfExcel3.jpg)
+<br>
 
 This screenshot shows the summary report, which is a simpler way to find the data meanwhile having a more complex presentation. 
 
-![](/images/ExcelBestPractices/ExcelBestAndWorstThinkOfExcel4.jpg))
+![](/images/ExcelBestPractices/ExcelBestAndWorstThinkOfExcel4.jpg)
+<br>
 
 ###  Record Counts 
 
@@ -58,23 +53,23 @@ In most reports, selecting the entire row for Column Definitions in [ ReportRang
 
 In the below example, ReportRange() selects column definitions and a target range that selects the entire row. 
 
-![](/images/ExcelBestPractices/ExceBestAndWorstPractices1.jpg))
+![](/images/ExcelBestPractices/ExceBestAndWorstPractices1.jpg)
+<br>
 
-The next example shows the same report, but only the impacted columns are included in the column definitions and target range. This is more efficient. However, keep in mind the argument for [ ReportRange() ](/wIndex/ReportRange.html) , UseEntireRow is set to False. By setting to True, it converts the ranges to entire rows. 
+The next example shows the same report, but only the impacted columns are included in the column definitions and target range. This is more efficient. However, keep in mind the argument for [ ReportRange() ](/wIndex/ReportRange.html), UseEntireRow is set to False. By setting to True, it converts the ranges to entire rows. 
 
 ![](/images/ExcelBestPractices/ExceBestAndWorstPractices2.jpg))
-
-  
-
+<br>
 
 Here you will use the scroll bar in the function wizard to alter the UseEntireRow parameter. 
 
 ![](/images/ExcelBestPractices/ExcelBestAndWorstLimitingRange2Redo.jpg)
+<br>
 
 ###  Watch for the Last Row and Last Column 
 
-Sometimes developers accidently use the last cell of the 1,048,576 rows that Excel provides or write a value in the last of the 16,384 columns that is also available. When this happens, the range in use expands to a large range of cells that uses more memory and expands the work area, which can hinder performance. To improve performance, delete all rows and columns beyond the reporting area. 
+Sometimes developers accidentally use the last cell of the 1,048,576 rows that Excel provides or write a value in the last of the 16,384 columns that is also available. When this happens, the range in use expands to a large range of cells that uses more memory and expands the work area, which can hinder performance. To improve performance, delete all rows and columns beyond the reporting area. 
 
 ###  VBA Macros 
 
-Using VBA (Visual Basic for Applications) can bridge a special feature or process gap in a report, but it is important to use VBA sparingly and to avoid adding to the resources needed for processing spreadsheet reports and using applications . VBA can add to maintenance requirements over time, and it can be hard to control versions when users copy reports to their local drives. It is possible to leverage VBA with Interject. These are special use cases that hopefully will become obsolete as more features are added to Interject. We welcome any questions in this area so that we can add more functionality to limit the need for VBA. 
+Using VBA (Visual Basic for Applications) can bridge a special feature or process gap in a report, but it is important to use VBA sparingly and to avoid adding to the resources needed for processing spreadsheet reports and using applications. VBA can add to maintenance requirements over time, and it can be hard to control versions when users copy reports to their local drives. It is possible to leverage VBA with Interject. These are special use cases that hopefully will become obsolete as more features are added to Interject. We welcome any questions in this area so that we can add more functionality to limit the need for VBA. 

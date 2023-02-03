@@ -8,46 +8,69 @@ description: Overviews of each button in the Interject Excel Ribbon.
 
 ##  **Overview**
 
-The Interject Ribbon has several options designed to help customize the reporting experience. In addition to the Report Library, Data Pull, Data Save, and Data Drill buttons, the following items will be usefull: 
+The Interject Ribbon has several options designed to help customize the reporting experience. There are both Simple and Advanced menus in the Interject ribbon. 
 
-![](/images/InterjectRibbon/01.png)
+To display the Advanced Menu, click the "Advanced Menu" button:
+
+![](/images/InterjectRibbon/RibbonAdvancedMenuButton.png)
+
+To display the Advanced Menu, click the "Simple Menu" button:
+
+![](/images/InterjectRibbon/RibbonSimpleMenuButton.png)
 
 
-| **Simple Menu**                                                                      | **Advanced Menu**                                                                    |
-| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
-| [Report Library](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-library)       | [Validation Report](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#validation-report) |
-| [Pull Data](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data)                 | [JSON](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#json)                           |
-| [Save Data](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data)                 | [Diagnostics](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#diagnostics)             |
-| [Drill on Data](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data)         | [Check for Updates](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#check-for-updates) |
-| [Return From Drill](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#return-from-drill) | [System](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#system)                       |
-| [Custom Commands](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#custom-commands)     | [Online Training](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#online-training)     |
-| [Quick Tools](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools)             | [User Support](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#user-support)           |
-| [Create Binder](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#create-binder)         | [About Interject](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#about-interject)     |
-| [Export Book](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#export-book)             |                                                                                      |
-| [Report Builder](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder)       |                                                                                      |
-| [Sheet Protector](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#sheet-protector)     |                                                                                      |
+### Simple Menu Items
+
+![](/images/InterjectRibbon/RibbonSimpleMenu.png)
+
+**Common Actions** : 
+[Report Library](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-library), 
+[Pull Data](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data), 
+[Save Data](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data), 
+[Drill on Data](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data), 
+[Return From Drill](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#return-from-drill), 
+[Custom Commands](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#custom-commands)
+
+
+**Tools** : 
+[Quick Tools](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools), 
+[Create Binder](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#create-binder), 
+[Export Book](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#export-book), 
+[Report Builder](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder), 
+[Sheet Protector](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#sheet-protector)
+
+
+**Updates** : 
+[Check for Updates](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#check-for-updates)
+
+
+**Help** : 
+[Online Training](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#online-training), 
+[User Support](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#user-support), 
+[About Interject](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#about-interject)
 
 * * *
 
-###  Simple Menu 
+### Advanced Menu Items
 
-There are both Simple and Advanced menus in the Interject ribbon. 
+The Advanced Menu adds the sections: User, Formulas, and Administration.
 
-Notice the Advanced Menu button displayed in the example ribbon below. If this button is present, then the Simple Menu is active. 
+![](/images/InterjectRibbon/RibbonAdvancedMenu.png)
 
-![](/images/InterjectRibbon/02.png)
+**User** :
+[Login/Logout](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#loginlogout), 
+[Authentications](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#authentications), 
+[Company](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#company)
 
-  
+
+**Formulas** : 
+[Validation Report](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#validation-report), 
+[JSON](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#json)
 
 
-In the Advanced Menu, the Simple Menu button is shown, and two more sections are available. This lengthens the ribbon considerably. 
-
-![](/images/InterjectRibbon/03.png)
-
-You can begin with the Simple Menu before you detail Advanced Menu features. 
-
-  
-
+**Administration** : 
+[Diagnostics](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#diagnostics), 
+[System](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#system)
 
 * * *
 
@@ -57,14 +80,9 @@ The Report Library manages Excel company report files and their various versions
 
 ![](/images/InterjectRibbon/04.png)
 
-  
-
-
 [ Click here to learn more about the Report Library. ](/wAbout/Report-Library-Basics.html)
 
 ![](/images/InterjectRibbon/05.png)
-
- 
 
 * * *
 
@@ -74,27 +92,13 @@ The Pull Data function takes data from Data Portals and places it into an Excel 
 
 ![](/images/InterjectRibbon/06.png)
 
-  
-
-
 When you open the Report Library and select a report, you can either use the Pull Data button to retrieve the data or hit Ctrl-Shift-J. To view an example, please click [ here ](/wAbout/Real-World-Walkthroughs.html). 
 
-  
-
-
 ![](/images/InterjectRibbon/07.png)
-
-  
-
 
 Another function of the Pull Data tool is the Clear operation. While the Pull brings data into the spreadsheet, this function within Pull can remove it. 
 
 ![](/images/InterjectRibbon/08.png)
-
-  
-
-
- 
 
 * * *
 
@@ -104,19 +108,11 @@ Saving Data is an important part of report editing. This operation allows you to
 
 ![](/images/InterjectRibbon/09.png)
 
-  
-
-
 ![](/images/InterjectRibbon/10.png)
-
-  
-
 
 Below the button for Saving Data is the **Clear Save Notes** which would clear out any of the saved noted in the report. 
 
 ![](/images/InterjectRibbon/11.png)
-
- 
 
 * * *
 
@@ -126,33 +122,17 @@ The Drill process opens and runs a report containing detailed information. It pa
 
 ![](/images/InterjectRibbon/12.png)
 
-  
-
-
 See more about Drilling and Navigating in [ Drilling Between Reports. ](/wGetStarted/Drilling-Between-Reports.html) 
 
  ![](/images/InterjectRibbon/13.png)
-
-  
-
-
- 
 
 * * *
 
 ###  Return From Drill 
 
-When you want to return to a previous report after Drilling, you can go back using **Return From Drill**. It works just like a browser's back button. 
+When you want to return to a previous report after Drilling you can go back using **Return From Drill**. It works just like a browser's back button. 
 
 ![](/images/InterjectRibbon/14.png)
-
-  
-
-
-  
-
-
- 
 
 * * *
 
@@ -162,61 +142,22 @@ The Custom Commands operation allows users to manage and run three kinds of repo
 
 ![](/images/InterjectRibbon/15.png)
 
-  
-
-
-These commands can be set up for individual users, and they typically run fixed data operations. 
+These commands can be set up for individual users and they typically run fixed data operations. 
 
 ![](/images/InterjectRibbon/16.png)
-
-  
-
-
-  
-
-
- 
 
 * * *
 
 ###  Quick Tools 
 
-The Quick Tools window provides a convenient set of macro tools suggested by our users. Either click the button or hit Crtl-Shift-T. 
+The Quick Tools window provides a convenient set of features to help with convenience and efficiency. Each tool has a specific purpose. For more information about the features, see [Quick Tools](/wIndex/Quick-Tools-Landing.html).
 
 ![](/images/InterjectRibbon/17.png)
-
-  
-
 
 These tools are efficient ways to complete the most common actions in Interject. 
 
 ![](/images/InterjectRibbon/18.png)
 
-Each tool has a specific purpose. 
-
-  * Freeze/Unfreeze: When a jFreeze() is added to a report, you can use this tool to freeze and unfreeze the panes of the current tab. this can be accomplished with a simple action of Ctrl-Shift-T and Enter. 
-  * Freeze all Tabs: This action not only freezes the panes of the current tab but all the tabs of the workbook in use, as long as the jFreeze() formula has been added to each tab 
-  * Center Across Columns: 
-  * Remove Wrap: 
-  * Inverse Sign: 
-  * Zeroes to Blanks: 
-  * Blanks to Zeros: 
-  * Create Unique List: 
-  * To Lower Case: 
-  * To Proper Case: 
-  * To Upper Case 
-  * Trim Values 
-  * Remove Sheet Options 
-  * Spell Check Protected Sheet 
-  * Unhide All Sheets: Once selected this tool will reveal any sheets hidden in the workbook. 
-  * Remove External References: 
-
-
-
-  
-
-
- 
 
 * * *
 
@@ -226,17 +167,9 @@ The Binder feature turns a workbook of reports into a binder of reports. Binders
 
 ![](/images/InterjectRibbon/19.png)
 
-  
-
-
 For example, you can create a binder with reports for each district number in a company's list. 
 
 ![](/images/InterjectRibbon/20.png)
-
-  
-
-
- 
 
 * * *
 
@@ -246,35 +179,21 @@ This option will make a copy of the current workbook and remove the Data Cell fo
 
 ![](/images/InterjectRibbon/21.png)
 
-  
-
-
 The Quick Export operation allows you to export any report into a new workbook, which gives you the opportunity to edit the report without compromising the original. 
 
 ![](/images/InterjectRibbon/22.png)
-
-  
-
 
 Quick PDF allows you to download the tab as a PDF in case you need to send it without the formatting. 
 
 ![](/images/InterjectRibbon/23.png)
 
-  
-
-
 When you select the Create Distribution button, it opens a sheet that allows you to build a new workbook with the information you want distributed across multiple tabs. 
 
 ![](/images/InterjectRibbon/24.png)
 
-  
-
-
 Once you have built a distribution sheet, this button runs the sheet and builds the new workbook.  ![](/images/InterjectRibbon/25.png)
 
 To read more on Exporting and Distributions please click [ here ](/wGetStarted/Exporting-Reports.html). 
-
- 
 
 * * *
 
@@ -284,20 +203,9 @@ The Report Builder creates a sample Excel report based on any existing Data Port
 
 ![](/images/InterjectRibbon/26.png)
 
-  
-
-
 Report builder offers the flexibility to build a ReportRange() and ReportFixed(). To read more [ click here ](/wGetStarted/Creating-a-Simple-Report.html). 
 
 ![](/images/InterjectRibbon/27.png)
-
-  
-
-
-  
-
-
- 
 
 * * *
 
@@ -307,27 +215,29 @@ The Sheet Protector uses a list of managed passwords to protect sheets across a 
 
 ![](/images/InterjectRibbon/28.png)
 
-  
+* * *
 
+### Login/Logout
 
- 
+The Login and Logout buttons enable users to login to Interject using their Interject credentials. For more information, see [here](/wAbout/Logging-In.html).
+
+![](/images/InterjectRibbon/Login-Logout.png)
 
 * * *
 
-##  Advanced Menu 
+### Authentications
 
-The Advanced menu allows you to move deeper into Interject Reports. 
+The Authentication button allows users to authenticate their login (not currently in use).
 
-![](/images/InterjectRibbon/29.png)
+![](/images/InterjectRibbon/Authentications.png)
 
-Once selected, the Interject Ribbon expands, changes the button for Advanced Menu to Simple Menu, and adds the following sections: Validation Report, JSON, Diagnostcs, and Systems. Because these features are used less commonly than the previous ones, we have given users the option hide them from the toolbar. 
+* * *
 
-  
+### Company
 
+The Company button allows user to switch companies they currently want to work in. Each company a user is enrolled in will allow them access to different sets of documents via the [Report Library](/wAbout/Report-Library-Basics.html) and [Data Portals](/wPortal/Data-Connections.html).
 
-![](/images/InterjectRibbon/30.png)
-
- 
+![](/images/InterjectRibbon/Company.png)
 
 * * *
 
@@ -337,14 +247,9 @@ The Validation Report operation allows you to check the code for Saves, Pulls, D
 
 ![](/images/InterjectRibbon/31.png)
 
-  
-
-
 Selected columns and row ranges, data portals, formatting codes, and more, are detailed. This helps users learn as well as diagnose code problems. 
 
 ![](/images/InterjectRibbon/32.png)
-
- 
 
 * * *
 
@@ -352,10 +257,7 @@ Selected columns and row ranges, data portals, formatting codes, and more, are d
 
 In the Interject Ribbon you can decide whether to show JSON or not. JSON (JavaScript Object Notation) is the readable code Interject uses to structure the data moving between a server and a web application. 
 
-  
 ![](/images/InterjectRibbon/33.png)
-
- 
 
 * * *
 
@@ -363,28 +265,23 @@ In the Interject Ribbon you can decide whether to show JSON or not. JSON (JavaSc
 
 This option opens a configuration menu to manage diagnostics settings and send data to the Interject Support Team. 
 
-  
 ![](/images/InterjectRibbon/34.png)
 
-  
-
-
 ![](/images/InterjectRibbon/35.png)
-
-  
-
-
- 
 
 * * *
 
 ###  System 
 
-The operation System contains a large number of options. Documentation for this feature is under construction.   
-  
+The operation System contains a large number of options.
 
-|                                  | Description                                                                                                                                                                                                                                                                              |
+![](/images/InterjectRibbon/36.png)
+
+![](/images/InterjectRibbon/37.png)
+
+| System Item                      | Description                                                                                                                                                                                                                                                                              |
 | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Disconnect F9 Formulas           |  |
 | Force Calc On Workbook           | Forces Excel to calculate all formulas in the Workbook. Similar to the **Calculate Now** button in the Formulas Ribbon                                                                                                                                                                   |
 | Force Calc On Worksheet          | Forces Excel to calculate all Interject formulas in the Worksheet. Similar to the **Calculate Sheet** button in the Formulas Ribbon                                                                                                                                                      |
 | View SQL Test For ActiveCell     | Provides the SQL code that will be executed for the ActiveCell. The ActiveCell would be any of the ReportFormulas that pull or save data. <br> Copy this code into your development environment and execute it to see what would be produced based on current context of the spreadsheet |
@@ -393,41 +290,7 @@ The operation System contains a large number of options. Documentation for this 
 | Re-enable Protected Grouping     |                                                                                                                                                                                                                                                                                          |
 | Initiate Session Controller      |                                                                                                                                                                                                                                                                                          |
 | Check Connection                 | Allows user to test that the connection to a database can be established. To learn more, [ click here. ](/wPortal/Data-Connections.html)                                                                                                                                                 |
-
-ReportRange() 
-
-ReportVariable() 
-
-ReportFixed()  Will provide a template that can be used to pull data. 
-
-  
-
-
-Copy this code into your development environment and execute it to create your new stored procedure. 
-
-**Note** : Check Connection does not work with Data Connections to APIs 
-
-  * Configure Install 
-
-
-
-  
-
-
-![](/images/InterjectRibbon/36.png)
-
-  
-
-
-  
-
-
-![](/images/InterjectRibbon/37.png)
-
-  
-
-
- 
+| Configure Install                |  |
 
 * * *
 
@@ -441,8 +304,6 @@ This option allows users to look for new versions of the Interject Excel Add-in.
 
 ![](/images/InterjectRibbon/39.png)
 
- 
-
 * * *
 
 ###  Online Training 
@@ -453,11 +314,6 @@ The online training button links back to these wiki pages for training whenever 
 
 Most common issues and questions about Interject's functions are answered within these pages. For more complex problems, please see below. 
 
-  
-
-
- 
-
 * * *
 
 ###  User Support 
@@ -466,24 +322,13 @@ The User Support form provides contact information for support issues. It also a
 
 ![](/images/InterjectRibbon/41.png)
 
-  
-
-
 This window provides several ways to contact Interject. 
 
 ![](/images/InterjectRibbon/42.png)
 
-  
-
-
 If needed, a report can be sent to Interject from this window whenever a problem is encountered. 
 
 ![](/images/InterjectRibbon/43.png)
-
-  
-
-
- 
 
 * * *
 
@@ -491,19 +336,11 @@ If needed, a report can be sent to Interject from this window whenever a problem
 
 About Interject allows users to see what version of Interject was downloaded along with a quick summary of what Interject does. 
 
-  
-
-
 ![](/images/InterjectRibbon/44.png)
-
-  
-
 
 Opening this window also shows user account credentials. 
 
 ![](/images/InterjectRibbon/45.png)
-
-
 
 ##  Related Links: 
 
@@ -514,8 +351,3 @@ Opening this window also shows user account credentials.
 [ Using Interject ](/wAbout/Using-Interject.html)
 
 [ Working with Interject ](/wAbout/Working-with-Interject.html)
-
- 
-
-  
-

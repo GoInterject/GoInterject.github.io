@@ -6,7 +6,7 @@ layout: custom
 
 ##  **Overview**
 
-Managing security is a key component of the Interject platform, and there are several areas to understand. Security involves both the row level security that can exist in reports and apps and how the middle tier objects are secured. Security also includes which spreadsheet report template can be seen by which users. The paragraphs below discuss each of these areas, best practices in building, and methods to test user access. Click one of the links below to quickly reach each topic. 
+Managing security is a key component of the Interject platform, and there are several areas to understand. Security involves both the row level security that can exist in reports and apps and how the middle tier objects are secured. Security also includes which spreadsheet report template can be seen by which users. The paragraphs below discuss each of these areas, best practices in building, and methods to test user access.
 
 ###  Database Connections and Windows Authentication 
 
