@@ -7,7 +7,7 @@ description: Explains how Interject handles errors in Data Portals using T-SQL R
 
 ### Introduction
 
-This page will cover error handling in Interject development using T-SQL’s RAISERROR and Interject’s UnderNotice flag.
+This page will cover error handling in Interject development using T-SQL’s RAISERROR and Interject’s UserrNotice flag.
 
 ### Understanding Error Handling
 

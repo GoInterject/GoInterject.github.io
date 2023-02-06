@@ -39,7 +39,7 @@ Because this report uses the same database as the [previous example](/wGetStarte
 
 ###  Creating the Stored Procedure 
 
-A stored procedure or data API servers as a middle tier for an Interject report. In this example, you are using a stored procedure. Interject can retrieve one or more result sets from the stored procedure into the spreadsheet report. 
+A stored procedure or data API serves as a middle tier for an Interject report. In this example, you are using a stored procedure. Interject can retrieve one or more result sets from the stored procedure into the spreadsheet report. 
 
 The Interject Website Portal allows you to create and manage data portals and reference stored procedures you create. Data portals are stored locally in your Excel session when you log into Interject. When requesting data, Interject creates a point-to-point connection with the intended data source. 
 

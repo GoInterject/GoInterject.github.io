@@ -98,7 +98,7 @@ For this report, you will set the ColDefRange to the entire second row, 2:2.
 ![](/images/L-Create-CustAging/19.png)
 <br>
 
-###  Final Result  
+###  Final Formatting  
 
 The data pulled should look like below. 
 
@@ -107,28 +107,26 @@ The data pulled should look like below.
 ![](/images/L-Create-CustAging/21.png)
 <br>
 
-**Step 1:** Do some quick formatting to clean up the report. Delete rows 21 through 22. 
+Do some quick formatting to clean up the report. Delete rows 21 through 22. 
 
 ![](/images/L-Create-CustAging/22.png)
 <br>
 
+### Setting Up jFreezePanes
 
-**Step 2:** Next, you need to freeze the panes to hide the configuration area from the users. This can be done manually with the Excel menu item for freezing panes. But this is a good time to illustrate INTERJECT's jFreezePanes() feature. First, setup the [ jFreezePanes ](/wIndex/jFreezePanes.html) function by entering **=jFreezePanes()** in F6 and click the **fx** button. 
-
+Next, you need to freeze the panes to hide the configuration area from the users. This can be done manually with the Excel menu item for freezing panes. But this is a good time to illustrate INTERJECT's jFreezePanes() feature. First, setup the [ jFreezePanes ](/wIndex/jFreezePanes.html) function by entering **=jFreezePanes()** in F6 and click the **fx** button. 
 
 ![](/images/L-Create-CustAging/23.png)
 <br>
 
-In the FeezePanesCell argument, input A21 to mark that row as the top of the visible report. This sets the top of the report that will be visible to the user. For the AnchorViewCell argument, type in A15. This will set the row that will be frozen above A21, where you will place the column headers. Press **OK**.
+**Step 1:** In the FeezePanesCell argument, input A21 to mark that row as the top of the visible report. This sets the top of the report that will be visible to the user. For the AnchorViewCell argument, type in A15. This will set the row that will be frozen above A21, where you will place the column headers. Press **OK**.
 
 ![](/images/L-Create-CustAging/24.png)
 <br>
 
 Now we will setup a [jFocus()](/wIndex/jFocus.html) formula so that the cursor will be set to a particular cell after the panes are frozen. In this case, we want the active cell to be C16 after the freeze. Click on cell H6 and enter the formula **=jFocus(C16)**.
 
-
 ![](/images/L-Create-CustAging/jFocusEntry.png)
-
 <br>
 
 Use the [ **Quick Tools** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools) menu item in the INTERJECT Ribbon so you can easily freeze the panes using the jFreezePanes formula you just configured. 
@@ -136,13 +134,13 @@ Use the [ **Quick Tools** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-
 ![](/images/L-Create-CustAging/25.png)
 <br>
 
-**Step 3:** The following should be the result after the panes are frozen. 
+**Step 2:** The following should be the result after the panes are frozen. 
 <br>
 
 ![](/images/L-Create-CustAging/26.png)
 <br>
 
-**Step 4:** This last view shows what the final report can look like when the report is complete. Add the column labels in row 20, the filter helper text in column D, and match the formatting. The data can be cleared and shared with other users as a search tool for customers.
+**Step 3:** This last view shows what the final report can look like when the report is complete. Add the column labels in row 20, the filter helper text in column D, and match the formatting. The data can be cleared and shared with other users as a search tool for customers.
 
 ![](/images/L-Create-CustAging/27.png)
 <br>
