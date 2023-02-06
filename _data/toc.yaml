@@ -295,6 +295,8 @@ index:
       path: /wIndex/QuickTools-Formula.html
     - title: Editing Tools
       path: /wIndex/QuickTools-Edit.html
+    - title: Naming Tools
+      path: /wIndex/QuickTools-Names.html
     - title: Hyperlink Tools
       path: /wIndex/QuickTools-Hyperlink.html
     - title: Other Tools
