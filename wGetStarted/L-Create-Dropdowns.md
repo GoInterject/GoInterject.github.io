@@ -116,3 +116,61 @@ When manually entering different filter values, it can be difficult to remember 
 <br>
 
 To build the stored procedure and dataportal, and database connection that allows this formula to work, continue to the [developer section of this lab](/wGetStarted/L-Dev-jDropdowns.html).
+
+### Creating a Custom jDropdown List
+
+The jDropdown feature can be used to create a custom list of items in a dropdown list. Instead of a DataPortal, you can enter a list. For example, to create a dropdown list of 3 items: Yes, No, Maybe, use the following syntax:
+
+```
+list:Yes,No,Maybe
+```
+
+To display the list options in the dropdown window something different then the entry, use the following format:
+
+```
+list:Yes^This is Yes,No^This is No,Maybe^This is Maybe
+```
+
+**Step 1:** Find an empty cell and enter a heading:
+
+![](/images/L-Create-Dropdowns/EnterYourResponse.png)
+<br>
+
+**Step 2:** On the cell above the heading, enter "=jDropdown(" and press the "**fx**" button to bring up the Function Wizard:
+
+![](/images/L-Create-Dropdowns/EnterjDropdown.png)
+<br>
+
+**Step 3:** Enter the following for the jDropdown parameters and click **OK**:
+
+*  DataPortal: "list:Yes^This is Yes,No^This is No,Maybe^This is Maybe"
+*  Target Cell: &lt;Enter cell ref here&gt;
+*  Value Column Name: &lt;Enter anything here&gt;
+
+![](/images/L-Create-Dropdowns/EnterFX.png)
+<br>
+
+**Step 4:** Right click the cell you wish to create a link and click **Link**:
+
+![](/images/L-Create-Dropdowns/ClickLink.png)
+<br>
+
+Enter the cell reference of the jDropdown function and click **ScreenTip**:
+
+![](/images/L-Create-Dropdowns/TypeTheCellReference.png)
+<br>
+
+Enter "Interject Dropdown" for the ScreenTip and click **OK** and then **OK** again to create the link:
+
+![](/images/L-Create-Dropdowns/EnterScreenTipText.png)
+<br>
+
+**Step 5:** Click on the link to see the dropdown list:
+
+![](/images/L-Create-Dropdowns/DropdownList.png)
+<br>
+
+Click on an entry to see it populated:
+
+![](/images/L-Create-Dropdowns/EntryEntered.png)
+<br>

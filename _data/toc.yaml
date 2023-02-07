@@ -273,7 +273,7 @@ index:
     section:
       - title: Request Context Parse
         path: /wIndex/Request-Context-Parse.html
-  - title: Interject Hotkey Index
+  - title: Interject Shortkey Index
     path: /wIndex/INTERJECT-Hotkey-Index.html
   - title: Interject Hyperlinks
     path: /wIndex/INTERJECT-Link-Index.html

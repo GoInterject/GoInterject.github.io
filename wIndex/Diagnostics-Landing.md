@@ -15,20 +15,20 @@ The Diagnostics feature of Interject allows users to set and change numerous con
 
 Depending on your company's settings, you will have access to a number of tools.
 
+
+### Diagnostic Pane Fields
+
 There are 5 fields within the Diagnostic pane:
 
-<**Execute Selected Action**>: Execute the selected tool
+1.  <**Execute Selected Action**>: Execute the selected tool (some tools require an input first)
+1.  Navigation: Shows a hierarchy list of tools
+1.  Instructions: Displays information about the currently selected tool
+1.  Input: Put your input code here. Some tools require an input for execution.
+1.  Results: The results of the execution are displayed here
 
-**Navigation:** Shows a hierarchy list of tools
+![](/images/Diagnostics/DiagnosticsPaneFields.png)
+<br>
 
-**Instructions:** Displays information about the currently selected tool
-
-**Input:** Put your input code here. Some tools require an input for execution.
-
-**Results:** The results of the execution are displayed here
-
-Most tools can be executed by simply clicking the <**Execute Selected Action**> button. Others require an input
- 
 ### Public
 
 Includes Logging, Cache, and Bug Fixes.

@@ -27,7 +27,10 @@ This feature only works if the correct Screen Tip is entered for the link. The f
 | "Interject Execute jAction" | jAction Function | Executes jAction Function |
 --->
 
-### **An Example Pull Link**
+
+For a convenient way to create an Interject Hyperlink via the Quick Tools menu, see [QuickTools - Hyperlink](/wIndex/QuickTools-Hyperlink.html).
+
+### **Creating An Example Pull Link**
 
 To see how this feature works, open up a report and type "Pull Data" into an empty cell.
 
