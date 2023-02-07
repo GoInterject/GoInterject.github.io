@@ -12,7 +12,7 @@ For an example of this function, see [jDropdown](/wGetStarted/L-Create-Dropdowns
 
 ###  Function Arguments
 
-<button class="collapsible-parameter">**DataPortal**<br>The name of the Interject DataPortal that will be used as the data source for this function.</button>
+<button class="collapsible-parameter">**DataPortal**<br>The name of the Interject DataPortal that will be used as the data source for this function. A <a href="https://docs.gointerject.com/wGetStarted/L-Create-Dropdowns.html#creating-a-custom-jdropdown-list">Custom List</a> may be entered instead of a DataPortal.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
