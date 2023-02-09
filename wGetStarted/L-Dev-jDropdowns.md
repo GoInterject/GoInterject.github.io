@@ -70,17 +70,15 @@ The Database Data Connection is now ready to be used in a Data Portal. You shoul
 **Step 5:** To add your first formula parameter, click **Click here to add a Formula Parameter**. For this parameter, enter **Filter** for Name, **varchar** for Type, and **input** for Direction to input, as shown below. 
 
 ![](/images/L-Dev-Dropdowns/03.png)
-
 <br>
 
 ### Creating the Stored Procedure
 
 Open up a text editor of your choice. This lab will use [SSMS](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017) to execute the code, but again, you can use whichever you prefer. You will be creating this stored procedure on the database you created the [data connection](/wGetStarted/L-Dev-jDropdowns.html#setting-up-the-data-connection) for.
 
-**Step 1:** Create a stored procedure called [demo].[Northwind_CustomerDropdown] using the following code example. 
+Create a stored procedure called [demo].[Northwind_CustomerDropdown] using the following code example. 
 
-<button class = "collapsible"> \[demo\].\[Northwind_CustomerDropdown\] </button>
-
+<button class = "collapsible"> Northwind_CustomerDropdown </button>
 <div markdown="1" class="panel">
 
 ```sql
@@ -102,24 +100,45 @@ WHERE
 	(@Filter = '' OR CustomerID LIKE '%' + @Filter + '%')
 ORDER BY [DisplayText]
 
+-- Contact Search
+SELECT
+	 [ContactName]	
+	,[ContactTitle]
+	,([ContactName]+' - '+[ContactTitle]) AS [DisplayText]
+FROM [Demo].[Northwind_Customers]
+WHERE
+	(@Filter = '' OR ContactName LIKE '%' + @Filter + '%')
+	OR
+	(@Filter = '' OR ContactTitle LIKE '%' + @Filter + '%')
+ORDER BY [DisplayText]
+
+-- Customer ID
+SELECT
+	 [CustomerID]	
+	,[CompanyName]
+	,([CustomerID]+' - '+[CompanyName]) AS [DisplayText]
+FROM [Demo].[Northwind_Customers]
+WHERE
+	(@Filter = '' OR ContactName LIKE '%' + @Filter + '%')
+	OR
+	(@Filter = '' OR CustomerID LIKE '%' + @Filter + '%')
+ORDER BY [DisplayText]
+GO
+
 ```
 
 </div>
 
-**Step 2:** Stored procedures are natively supported by Interject. There are a few key areas to note in the code example that help illustrate Interject features. 
+Stored procedures are natively supported by Interject. There are a few key areas to note in the code example that help illustrate Interject features:
 
-  * Parameters: The parameters included in the stored procedure are the same as those added to the Data Portal in a previous walkthrough. On each request, Interject passes the Formula Parameters values from the spreadsheet configuration to the stored procedure along with System Parameters. Output parameters that can populate values in the spreadsheet are supported, but they are not included in this example. In this case, there is only one formula parameter.
+  *  Parameters: The parameters included in the stored procedure are the same as those added to the Data Portal in a previous walkthrough. On each request, Interject passes the Formula Parameters values from the spreadsheet configuration to the stored procedure along with System Parameters. Output parameters that can populate values in the spreadsheet are supported, but they are not included in this example. In this case, there is only one formula parameter.
+  
+  *  Select statements: Returning data to Interject uses a select statement. More than one can be returned at a time to reduce the connections needed to fully populate a complex report.
+  
 
-![](/images/L-Create-Dropdowns/01.png)
-<br>
+### Testing the Stored Procedure
 
-  * Select statements: Returning data to Interject uses a select statement, as shown below. More than one can be returned at a time to reduce the connections needed to fully populate a complex report. There are two select statements in this example. 
-
-![](/images/L-Create-Dropdowns/02.png)
-<br>
-
-**Step 3:** It is important to test the stored procedure in the database before testing through the Interject platform. The example code includes a test SQL statement that can be executed in a new query, as shown below. Be sure to change the procedure name to match your own. 
-
+It is important to test the stored procedure in the database before testing through the Interject platform. The example code includes a test SQL statement that can be executed in a new query, as shown below. Be sure to change the procedure name to match your own. 
 
 <button class="collapsible">Example Test Script</button>
 <div markdown="1" class="panel">
@@ -131,7 +150,9 @@ ORDER BY [DisplayText]
 
 </div>
 
-When executed, you should see the following result sets. Notice there are two different result sets. Each of them returns only values that contained the word **Market**
+When executed, you should see the following result sets. Notice there are three different result sets. Each of them returns only values that contained the word **Market**.
 
-![](/images/L-Create-Dropdowns/03.png)
+![](/images/L-Dev-Dropdowns/TestStoreProcedureResult.png)
 <br>
+
+To see an example of how to set up a jDropdown within Excel, see [Lab Create: Building jDropdowns](/wGetStarted/L-Create-Dropdowns.html).
