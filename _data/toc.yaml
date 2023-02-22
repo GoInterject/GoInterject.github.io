@@ -276,12 +276,11 @@ index:
   - title: Interject Shortkey Index
     path: /wIndex/INTERJECT-Hotkey-Index.html
   - title: Interject Hyperlinks
-    path: /wIndex/INTERJECT-Link-Index.html 
-   # section:
-   #   - title: Special Features
-   #     path: /wIndex/Diagnostics-SpecialFeatures.html
-   #   - title: Change ShortKeys
-   #     path: /wIndex/Diagnostics-ShortKey.html
+    path: /wIndex/INTERJECT-Link-Index.html
+  - title: Diagnostics - Special Features
+    path: /wIndex/Diagnostics-SpecialFeatures.html
+  - title: Diagnostics - Change ShortKeys
+    path: /wIndex/Diagnostics-ShortKey.html
   - sectiontitle: Quick Tools
     path: /wIndex/Quick-Tools-Landing.html
     section:
@@ -387,3 +386,4 @@ troubleshoot:
       path: /wTroubleshoot/Reports.html
     - title: Excel Animations
       path: /wTroubleshoot/Drill-Animations.html
+
