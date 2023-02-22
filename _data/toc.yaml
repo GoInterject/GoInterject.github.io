@@ -277,13 +277,10 @@ index:
     path: /wIndex/INTERJECT-Hotkey-Index.html
   - title: Interject Hyperlinks
     path: /wIndex/INTERJECT-Link-Index.html
-  - sectiontitle: Diagnostics
-    path: /wIndex/Diagnostics-Landing.html
-    section:
-      - title: Special Features
-        path: /wIndex/Diagnostics-SpecialFeatures.html
-      - title: Change ShortKeys
-        path: /wIndex/Diagnostics-ShortKey.html
+  - title: Diagnostics - Special Features
+    path: /wIndex/Diagnostics-SpecialFeatures.html
+  - title: Diagnostics - Change ShortKeys
+    path: /wIndex/Diagnostics-ShortKey.html
   - sectiontitle: Quick Tools
     path: /wIndex/Quick-Tools-Landing.html
     section:
