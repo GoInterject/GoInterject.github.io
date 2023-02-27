@@ -16,48 +16,44 @@ The Edit Tools within Quick Tools deal with the editing of numeric values and ob
 
 ### Blanks to Zeros
 
-Inserts a zero for current cell or all selected cells if they are blank.
+Inserts a zero for the current cell or all selected cells if they are blank.
 
-Before:
+<b style='color:red;'><strong>Before:</strong></b>
 
 ![](/images/QuickTools/BlanksBefore.png)
 <br>
 
-After:
+<b style='color:green;'><strong>After:</strong></b>
 
 ![](/images/QuickTools/BlanksAfter.png)
 <br>
 
 ### Zeros to Blanks
 
-Clears out current cell or all selected cells that contain only a zero.
+Clears out the current or cell or all selected cells that contain only a zero.
 
-Before:
+<b style='color:red;'><strong>Before:</strong></b>
 
-![](/images/QuickTools/ZerosBefore.png)
+![](/images/QuickTools/BlanksAfter.png)
 <br>
 
-After:
+<b style='color:green;'><strong>After:</strong></b>
 
-![](/images/QuickTools/ZerosAfter.png)
+![](/images/QuickTools/BlanksBefore.png)
 <br>
 
 ### Remove Sheet Objects
 
-Removes objects from the current sheet. Objects can be inserted via the <**Object**> button:
+Removes objects (shapes, pictures, etc.) from the current sheet. 
 
-![](/images/QuickTools/ObjectsRibbon.png)
-<br>
+Sometimes when importing data from another source, objects such as pictures or diagrams are inserted. It becomes hard to find and delete all of these manually. This Quick Tool provides an easy way to remove these objects.
 
-![](/images/QuickTools/ObjectsList.png)
-<br>
-
-Before:
+<b style='color:red;'><strong>Before:</strong></b>
 
 ![](/images/QuickTools/ObjectsBefore.png)
 <br>
 
-After:
+<b style='color:green;'><strong>After:</strong></b>
 
 ![](/images/QuickTools/ObjectsAfter.png)
 <br>

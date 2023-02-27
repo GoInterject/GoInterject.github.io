@@ -15,6 +15,8 @@ The Quick Tools window provides a convenient set of macro tools suggested by our
 
 These tools are efficient ways to complete the most common actions in Interject. 
 
+<b style='color:red;'><strong>Note: The Quick Tools are actions and cannot be undone with the Excel Undo feature (Ctrl-Z). Be sure to save your work beforehand.</strong></b>
+
 ![](/images/QuickTools/QuickTools.png)
 <br>
 
