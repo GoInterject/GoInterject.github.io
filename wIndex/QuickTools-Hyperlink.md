@@ -15,7 +15,9 @@ The Hyperlink Tools within Quick Tools deal with [Interject Hyperlinks](/wIndex/
 
 ### Reset Hyperlink Targets for Selection
 
-Sets the scope to the current sheet for hyperlinks in the current cell or all selected cells.
+Sets the scope for hyperlinks to the sheet they are contained in for all hyperlinks in the current cell or all selected cells.
+
+When you paste a hyperlink into another sheet, Excel retains the scope for that hyperlink so it is not set to the sheet you are pasting it into. To demonstrate this, follow these steps:
 
 **Step 1:** First select a hyperlink in the current sheet:
 
@@ -27,49 +29,48 @@ Sets the scope to the current sheet for hyperlinks in the current cell or all se
 ![](/images/QuickTools/HyperlinkScopeBefore2.png)
 <br>
 
-**Step 3:** Right click the cell and select Link>Edit Link:
+**Step 3:** Right click the cell and select "Edit Link":
 
 ![](/images/QuickTools/HyperlinkScopeEditLink.png)
 <br>
 
-Notice the scope of this Hyperlink is still set to the original sheet:
+Notice the scope of this Hyperlink is still set to the original sheet "Customer Aging":
 
 ![](/images/QuickTools/HyperlinkScopeBadScope.png)
 <br>
 
-**Step 4:** Click on Quick Tools > "Reset Hyperlink Targets for Selection":
+**Step 4:** Click on "Reset Hyperlink Targets for Selection" in Quick Tools and "Run and Close":
 
 ![](/images/QuickTools/HyperlinkScopeClick.png)
 <br>
 
-Notice the scope has been set correctly to the current sheet:
+Notice the scope has been set correctly to the current sheet "Example":
 
 ![](/images/QuickTools/HyperlinkScopeAfter.png)
 <br>
 
 ### Create/Edit Interject Hyperlink
 
-Opens a window to create an Interject Hyperlink.
+Opens a window to create or edit an Interject Hyperlink.
 
-**Step 1:** First setup a [jDropdown](/wIndex/jDropdown.html) function and select the cell you want to create a Hyperlink (see [here](/wGetStarted/L-Create-Dropdowns.html#adding-a-named-range) for an example of how to set up a jDropdown):
+To demonstrate this, you will setup an Interject hyperlink that opens the Report Library.
+
+**Step 1:** First select an empty cell and enter a name for the hyperlink:
 
 ![](/images/QuickTools/CreateHyperlinkBefore.png)
 <br>
 
-**Step 2:** Click on Quick Tools "Create/Edit Interject Hyperlink":
+**Step 2:** Click on Quick Tools "Create/Edit Interject Hyperlink" and then "Run and Close":
 
 ![](/images/QuickTools/CreateHyperlinkClick.png)
 <br>
 
-You can select the type of Hyperlink you want to add. In this case select Dropdown:
+You can select the type of Hyperlink you want to add. In this case select "Interject Report Library" from the dropdown:
 
 ![](/images/QuickTools/CreateHyperlinkType.png)
 <br>
 
-**Step 3:** Next either enter a defined name for the jDropdown function or the cell it is found in:
-
-![](/images/QuickTools/CreateHyperlinkByName.png)
-<br>
+**Step 3:** Next you need to enter a reference for the hyperlink. You can either select a "Target Cell Name" or a "Cell Address". The "Target Cell Name" option will display a dropdown list of all the range names in the sheet. In this case, use the "Cell Address" option and enter the cell reference of your hyperlink name and "Set Hyperlink":
 
 ![](/images/QuickTools/CreateHyperlinkByCell.png)
 <br>
@@ -79,12 +80,21 @@ The Hyperlink is created!:
 ![](/images/QuickTools/CreateHyperlinkAfter.png)
 <br>
 
-**Step 4:** You can set up a predetermined styling for the Hyperlinks by using a defined name. Select a cell that matches the formatting you wish the Hyperlinks to have and define the cell with the name "InterjectStyle_Hyperlink":
+### Create/Edit Interject Hyperlink : Preserving Styles
+
+You can set up a predetermined styling for the Hyperlinks by using a defined name. When a cell has the defined name of "InterjectConfig_HyperlinkStyle", Interject will use the styling of that cell to apply to a hyperlink that is created.
+
+**Step 1:** Select a cell that matches the formatting you wish the Hyperlinks to have and define the cell with the name "InterjectConfig_HyperlinkStyle":
 
 ![](/images/QuickTools/HyperlinkStyle.png)
 <br>
 
-Now after you create a Hyperlink, the styling will automatically be set:
+**Step 2:** Now create another hyperlink using the method in the previous section:
+
+![](/images/QuickTools/HyperlinkStyleMiddle.png)
+<br>
+
+Notice the new hyperlink has the same style as the cell with the defined name "InterjectConfig_HyperlinkStyle":
 
 ![](/images/QuickTools/HyperlinkStyleAfter.png)
 <br>

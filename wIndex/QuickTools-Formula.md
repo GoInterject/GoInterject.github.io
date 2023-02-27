@@ -15,14 +15,21 @@ The Formula Tools within Quick Tools deal with formulas.
 
 ### Remove External References
 
-Removes all references in the Workbook to external files/objects and converts the formula in the cells to text/numeric values.
+Removes all references in the Workbook to external files/objects and converts the formula in the cells to a text/numeric value.
 
-Before (Note the cell refers to a file called "sum.xls"):
+Note: When there are references in the Workbook to external files, the "Edit Links" button will be visible on the Data tab:
+
+![](/images/QuickTools/EditLinks.png)
+<br>
+
+<b style='color:red;'><strong>Before:</strong></b>
+
+Note the cell C3 refers to a cell in the external file "D:\Users\jimd\Documents\Sales\Projections.xlsx".
 
 ![](/images/QuickTools/ExternalRefBefore.png)
 <br>
 
-After:
+<b style='color:green;'><strong>After:</strong></b>
 
 ![](/images/QuickTools/ExternalRefAfter.png)
 <br>

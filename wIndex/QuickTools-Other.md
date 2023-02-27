@@ -15,28 +15,32 @@ The Other Tools within Quick Tools are a collection of miscellaneous tools.
 
 ### Unique List from Selection
 
-Makes a text list of all selected cell items and drops them into a new tab.
+Makes a text list of all selected cell items and drops them into a new tab in sorted ascending order.
 
-Before:
+<b style='color:red;'><strong>Before:</strong></b>
+
+Select the list:
 
 ![](/images/QuickTools/ListBefore.png)
 <br>
 
-After:
+<b style='color:green;'><strong>After:</strong></b>
+
+Note the list is inserted into a new sheet called "UniqueList":
 
 ![](/images/QuickTools/ListAfter.png)
 <br>
 
 ### Unhide All Sheets
 
-Unhides all hidden sheets.
+Unhides all hidden sheets in the Workbook.
 
-Before:
+<b style='color:red;'><strong>Before:</strong></b>
 
 ![](/images/QuickTools/HiddenBefore.png)
 <br>
 
-After:
+<b style='color:green;'><strong>After:</strong></b>
 
 ![](/images/QuickTools/HiddenAfter.png)
 <br>
