@@ -1,5 +1,5 @@
 ---
-title: "Lab Dev: Customer Aging"
+title: "Develop: Customer Aging"
 layout: custom
 keywords: [developer, example, walkthrough, customer aging, SQL, dataportal, data connection]
 description: On this page, you will create a simple data pull using the Customer Aging Report. It will guide you on how to build connections and data portals as well as cover the SQL stored procedure used to pull the data.
@@ -8,7 +8,7 @@ description: On this page, you will create a simple data pull using the Customer
 
 ##  **Overview**
 
-On this page, you will create a simple data pull using the Customer Aging Report. To review the business use case for this report, see  [ **Real World Walkthroughs** **\- Customer Aging** ](/wAbout/Customer-Aging.html) .  This lab begins with steps for creating the Interject data connection and data portals, followed by the steps on how to create the stored procedure. Finally, you will be directed to another page that shows how to use the data portal to create the spreadsheet report from scratch. 
+On this page, you will create a simple data pull using the Customer Aging Report. To review the business use case for this report, see  [ **Real World Walkthroughs** **\- Customer Aging** ](/wAbout/Customer-Aging.html).  This example begins with steps for creating the Interject data connection and data portals, followed by the steps on how to create the stored procedure. Finally, you will be directed to another page that shows how to use the data portal to create the spreadsheet report from scratch. 
 
 **Developer Note**
 To work through this example, locate the Customer Collections link in the Interjet Report Library.
@@ -322,4 +322,4 @@ Fortunately, the documentation to build this report has already been presented i
 
 It is recommended to go to [ **Create: Customer Aging** ](https://docs.gointerject.com/wGetStarted/L-Create-CustomerAging.html) to complete those steps again to reinforce the process. However, this time you can use your own Data Portal for the report. 
 
-When going through the report creation steps, be sure to use your new Data Portal Code instead of the one used in the training. Please continue to the next lab after your new report is built. 
+When going through the report creation steps, be sure to use your new Data Portal Code instead of the one used in the training. Please continue to the next example after your new report is built. 

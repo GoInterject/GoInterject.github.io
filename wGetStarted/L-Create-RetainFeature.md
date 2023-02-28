@@ -1,5 +1,5 @@
 ---
-title: "Lab Create: Using the Retain Feature"
+title: "Create: Using the Retain Feature"
 layout: custom
 keywords: [retain, formulas, keep, dont-clear]
 description: When using Interject to pull data into your spreadsheet, the report area will be cleared before new data is inserted. In some situations, you may want to bypass the clear action and retain some formulas, since pulling could remove formulas you have on other columns related to certain data rows. 
@@ -8,15 +8,15 @@ description: When using Interject to pull data into your spreadsheet, the report
 
 ##  **Overview:**
 
-When using Interject to pull data into your spreadsheet, the report area will be cleared before new data is inserted. In some situations, you may want to bypass the clear action and retain some formulas, since pulling could remove formulas you have on other columns related to certain data rows. This is especially true when you are budgeting or forecasting with historical numbers. The report may have history on the left and your forecasting formulas and numbers will be input on the right. This lab will show you how to update the data in a report without deleting rows that must be retained. 
+When using Interject to pull data into your spreadsheet, the report area will be cleared before new data is inserted. In some situations, you may want to bypass the clear action and retain some formulas, since pulling could remove formulas you have on other columns related to certain data rows. This is especially true when you are budgeting or forecasting with historical numbers. The report may have history on the left and your forecasting formulas and numbers will be input on the right. This example will show you how to update the data in a report without deleting rows that must be retained. 
 
 The Retain feature relates to reports using the [ ReportVariable() ](/wIndex/ReportVariable.html) or [ ReportRange() ](/wIndex/ReportRange.html) functions. Since Interject must still update your data, it must determine which columns act as the key values, so it can place the correct data in the correct row. 
 
 When Interject finds new data, it will add a new row and populate the data. Using the retain feature, Interject will never delete a row, it will simply zero the amounts. 
 
-When a new row is added, there are two options: 1) to insert the new row at the bottom of the section or 2) to insert the row based on the sorting of the key values columns. The former is the default, since adding to the bottom of the section helps avoid adding new rows between your formulas. The lab below will walk through these and other steps on how to use the retain feature operates in your reports. 
+When a new row is added, there are two options: 1) to insert the new row at the bottom of the section or 2) to insert the row based on the sorting of the key values columns. The former is the default, since adding to the bottom of the section helps avoid adding new rows between your formulas. The example below will walk through these and other steps on how to use the retain feature operates in your reports. 
 
-Use the PL Trend report for this lab. 
+Use the PL Trend report for this example. 
 
 <blockquote class=lab_info>
   If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 5 Advanced Features > Lab 5.5 Using the Retain Feature.

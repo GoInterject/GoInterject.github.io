@@ -1,5 +1,5 @@
 ---
-title: "Lab Portal: API Connection"
+title: "Portal: API Connection"
 layout: custom
 keywords: [api, connection, setting up, create, example]
 description: The Interject add-in is a client application that can send a request to a POST HTTP(s) REST API. As long as the response is properly structured, Interject will display the data in Excel. Interject is not a tool that communicates with all APIs, but by allowing users to build custom APIs, it can be connected to any data-source including other APIs that are not natively supported. We provide a customizable API, which can serve as the starting point for this translational API. 
@@ -15,7 +15,7 @@ The Interject add-in is a client application that can send a request to a POST H
 
 Another reason to use an API, instead of connecting directly to a data source, is to provide another layer of security. Since most data-sources are protected by a firewall, users outside a network, and/or without the correct credentials, are not able to access the data. An API can be that gatekeeper. Interject users can be validated in the pass-through API whether or not they are valid Interject users, and custom validation can be added to including row level security. 
 
-In this lab, you will set up a simple connection to an example API. Detailed documentation on using a custom data API’s is currently under development. Please contact us for more information if needed. 
+In this example, you will set up a simple connection to an example API. Detailed documentation on using a custom data API’s is currently under development. Please contact us for more information if needed. 
 
   
 **Step 1:** Navigate to [ https://portal.gointerject.com ](https://portal.gointerject.com) and [ login ](/wPortal/Logging-In-to-Website-Portal.html) to Interject.  To set up a data connection click on **Data Connections** in the menu on the left.

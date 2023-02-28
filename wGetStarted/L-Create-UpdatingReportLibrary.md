@@ -1,5 +1,5 @@
 ---
-title: "Lab Create: Updating the Report Library"
+title: "Create: Updating the Report Library"
 layout: custom
 keywords: [upload, report library, template, report]
 description: The report library is a way to share reports with other users on the team. The reports are uploaded to the library and can be accessed from any other computer using Excel and Interject. 

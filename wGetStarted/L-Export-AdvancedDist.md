@@ -1,14 +1,14 @@
 ---
-title: "Lab Export: Advanced Distribution"
+title: "Export: Advanced Distribution"
 layout: custom
 keywords: [distribution, grouping, advanced]
-description: There are a number of different options available for distributing reports as well as naming workbooks and individual sheets. In this lab, you are going to explore some of the more advanced methods. 
+description: There are a number of different options available for distributing reports as well as naming workbooks and individual sheets. In this example, you are going to explore some of the more advanced methods. 
 ---
 * * *
 
 ##  **Overview**
 
-There are a number of different options available for distributing reports as well as naming workbooks and individual sheets. In this lab, you are going to explore some of the more advanced methods. 
+There are a number of different options available for distributing reports as well as naming workbooks and individual sheets. In this example, you are going to explore some of the more advanced methods. 
 
 <blockquote class=lab_info>
   If you are following the Training Labs, this report file is continued from the previous lab: Training Labs > Lab 7 Exporting Data > Lab 7.2 Basic Distribution.
@@ -198,7 +198,7 @@ In the distribution examples above, each location is entered on a separate row. 
 
 <br> 
 
-**Step 3:** Now you will go back to the PL Trend tab and change the Location to **Consol**. Next select **O26** and change the jRangeTag() from **Location** to **Segment2**. Use of the Range Tab function was discussed in the [Basic Distribution ](/wGetStarted/L-Export-BasicDist.html) lab. 
+**Step 3:** Now you will go back to the PL Trend tab and change the Location to **Consol**. Next select **O26** and change the jRangeTag() from **Location** to **Segment2**. Use of the Range Tab function was discussed in the [Basic Distribution ](/wGetStarted/L-Export-BasicDist.html) example. 
 
 ![](/images/L-Export-AdvancedDist/21.png)
 

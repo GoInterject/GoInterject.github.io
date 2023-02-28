@@ -1,5 +1,5 @@
 ---
-title: "Lab Developer: jDropdown Stored Procedures"
+title: "Develop: jDropdown Stored Procedures"
 layout: custom
 keywords: [jDropdown, function]
 description: Walks through how to create the stored procedures for the jDropdowns built in the customer aging create report
@@ -7,9 +7,9 @@ description: Walks through how to create the stored procedures for the jDropdown
 
 ## Overview
 
- If you are looking to build custom jDropdown stored procedures for your reports then this lab will walk you through just that. But first, remember that a jDropdown formula often requires a seperate stored procedure from the one used by the pull or save. You will walk through how to build the data connection, dataportal, and stored procedure for the [jDropdown example](/wGetStarted/L-Create-Dropdowns.html) built on the Customer Aging report. This stored procedure is designed to filter down on the specific options for a parameter. include all the columns that can be used as filter values in the report.
+ If you are looking to build custom jDropdown stored procedures for your reports then this example will walk you through just that. But first, remember that a jDropdown formula often requires a seperate stored procedure from the one used by the pull or save. You will walk through how to build the data connection, dataportal, and stored procedure for the [jDropdown example](/wGetStarted/L-Create-Dropdowns.html) built on the Customer Aging report. This stored procedure is designed to filter down on the specific options for a parameter. include all the columns that can be used as filter values in the report.
 
-> **IMPORTANT:**  It is required that you have access to build stored procedures in your database to complete this lab. 
+> **IMPORTANT:**  It is required that you have access to build stored procedures in your database to complete this example. 
 
 ###  Setting Up The Data Connection
 
@@ -74,7 +74,7 @@ The Database Data Connection is now ready to be used in a Data Portal. You shoul
 
 ### Creating the Stored Procedure
 
-Open up a text editor of your choice. This lab will use [SSMS](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017) to execute the code, but again, you can use whichever you prefer. You will be creating this stored procedure on the database you created the [data connection](/wGetStarted/L-Dev-jDropdowns.html#setting-up-the-data-connection) for.
+Open up a text editor of your choice. This example will use [SSMS](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017) to execute the code, but again, you can use whichever you prefer. You will be creating this stored procedure on the database you created the [data connection](/wGetStarted/L-Dev-jDropdowns.html#setting-up-the-data-connection) for.
 
 Create a stored procedure called [demo].[Northwind_CustomerDropdown] using the following code example. 
 
@@ -155,4 +155,4 @@ When executed, you should see the following result sets. Notice there are three 
 ![](/images/L-Dev-Dropdowns/TestStoreProcedureResult.png)
 <br>
 
-To see an example of how to set up a jDropdown within Excel, see [Lab Create: Building jDropdowns](/wGetStarted/L-Create-Dropdowns.html).
+To see an example of how to set up a jDropdown within Excel, see [Create: Building jDropdowns](/wGetStarted/L-Create-Dropdowns.html).

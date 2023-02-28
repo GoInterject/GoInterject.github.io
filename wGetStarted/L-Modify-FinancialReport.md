@@ -1,5 +1,5 @@
 ---
-title: "Lab Modify: Financial Report"
+title: "Modify: Financial Report"
 layout: custom
 keywords: [modify, alter, change, year to date, budget, comparison]
 description: Modify a monthly trend report which could easily be modified to accommodate a budget-to-actual comparison report, showing monthly and year-to-date differences.

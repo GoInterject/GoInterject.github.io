@@ -1,5 +1,5 @@
 ---
-title: "Lab Drill: Inventory Report"
+title: "Drill: Inventory Report"
 layout: custom
 keywords: [drill,unfreezing,unfreeze,report,hyperlinks]
 description: In this example, you will view drilling between reports using the same Inventory reports created during the Real World Inventory Walk-through.

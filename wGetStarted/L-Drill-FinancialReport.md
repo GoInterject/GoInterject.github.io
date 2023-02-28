@@ -1,5 +1,5 @@
 ---
-title: "Lab Drill: Financial Report"
+title: "Drill: Financial Report"
 layout: custom
 keywords: [drill, financials, pair, pairgroup, example]
 description: This is a drill for the PL Trend report that was created in a previous walkthrough. This time you will be drilling to a separate workbook instead of to another worksheet.
@@ -41,7 +41,7 @@ Continue setting up the drill formula.
 ![](/images/L-Drill-Financial/04.png)
 <br>
   
-**Step 2:** In previous drill exercises you have used the ReportCellToRun argument. That is only for drilling within the same workbook. In this example you are drilling to a separate workbook. Type **Interject_JEQuery** into the ReportCodeToRun argument as seen below. The Drill Code **Interject_JEQuery** was setup previously by adding the code to a Report Library report. You will learn how to setup a Drill Code in the page [ Lab Create: Updating the Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary.html) later. 
+**Step 2:** In previous drill exercises you have used the ReportCellToRun argument. That is only for drilling within the same workbook. In this example you are drilling to a separate workbook. Type **Interject_JEQuery** into the ReportCodeToRun argument as seen below. The Drill Code **Interject_JEQuery** was setup previously by adding the code to a Report Library report. You will learn how to setup a Drill Code in the page [ Create: Updating the Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary.html) later. 
 
 ![](/images/L-Drill-Financial/05.png)
 <br>

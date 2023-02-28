@@ -1,5 +1,5 @@
 ---
-title: "Lab Create: Customer Orders"
+title: "Create: Customer Orders Report"
 layout: custom
 keywords: [report, create, multi-row, customer orders, walkthrough, range]
 description: This page illustrates the process of building a Customer Order report from scratch and uses the multi-row option to provide a more advanced presentation.

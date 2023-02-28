@@ -113,72 +113,72 @@ getstarted:
     - sectiontitle: Modifying an Existing Report
       path: /wGetStarted/Modifying-an-Existing-Report.html
       section:
-      - title: "Lab Modify: Customer Aging"
+      - title: "Modify: Customer Aging Report"
         path: /wGetStarted/L-Modify-CustomerAging.html
-      - title: "Lab Modify: Inventory Report"
+      - title: "Modify: Inventory Report"
         path: /wGetStarted/L-Modify-InventoryReport.html
-      - title: "Lab Modify: Financial Report"
+      - title: "Modify: Financial Report"
         path: /wGetStarted/L-Modify-FinancialReport.html
     - sectiontitle: Creating a Simple Report
       path: /wGetStarted/Creating-a-Simple-Report.html
       section:
-      - title: "Lab Create: Customer Aging"
+      - title: "Create: Customer Aging Report"
         path: /wGetStarted/L-Create-CustomerAging.html
-      - title: "Lab Create: Customer Orders"
+      - title: "Create: Customer Orders Report"
         path: /wGetStarted/L-Create-CustomerOrders.html
     - sectiontitle: Fixed and Variable Reports
       path: /wGetStarted/Fixed-and-Variable-Reports.html
       section:
-      - title: "Lab Create: Inventory Fixed"
+      - title: "Create: Inventory Fixed Report"
         path: /wGetStarted/L-Create-InventoryFixed.html
-      - title: "Lab Create: Inventory Variable Report"
+      - title: "Create: Inventory Variable Report"
         path: /wGetStarted/L-Create-InventoryVariable.html
-      - title: "Lab Create: Financial Variable"
+      - title: "Create: Financial Variable Report"
         path: /wGetStarted/L-Create-FinancialVariable.html
-      - title: "Lab Create: Customer Aging Detail"
+      - title: "Create: Customer Aging Detail Report"
         path: /wGetStarted/L-Create-CustomerAgingDetail.html
     - sectiontitle: Drilling Between Reports
       path: /wGetStarted/Drilling-Between-Reports.html
       section:
-      - title: "Lab Drill: Customer Aging"
+      - title: "Drill: Customer Aging Report"
         path: /wGetStarted/L-Drill-CustomerAging.html
-      - title: "Lab Drill: Inventory Report"
+      - title: "Drill: Inventory Report"
         path: /wGetStarted/L-Drill-InventoryReport.html
-      - title: "Lab Drill: Financial Report"
+      - title: "Drill: Financial Report"
         path: /wGetStarted/L-Drill-FinancialReport.html
       - title: "The Three Ways to Drill"
         path: /wGetStarted/L-Drill-TheThreeWays.html
     - sectiontitle: Hiding Rows and Columns
       path: /wGetStarted/L-Create-HideRowCol.html
       section:
-        - title: "Lab Create: Hiding Rows & Columns"
+        - title: "Create: Hiding Rows and Columns"
           path: /wGetStarted/L-Create-HideRowCol.html
-        - title: "Lab Create: Advanced Row and Section Hiding"
+        - title: "Create: Advanced Row and Section Hiding"
           path: /wGetStarted/L-Create-AdvancedHideRowsSections.html
-    - title: "Lab Create: Building jDropdowns"
+    - title: "Create: Building jDropdowns"
       path: /wGetStarted/L-Create-Dropdowns.html
-    - title: "Lab Create: Working with Pivot Tables"
+    - title: "Create: Working with Pivot Tables"
       path: /wGetStarted/L-Create-PivotTable.html
-    - title: "Lab Create: Special Column Definitions"
+    - title: "Create: Special Column Definitions"
       path: /wGetStarted/L-Create-SpecColDefs.html
-    - title: "Lab Create: Protecting Sheets"
+    - title: "Create: Protecting Sheets"
       path: /wGetStarted/L-Create-Protecting.html
-    - title: "Lab Create: Using Report Macro"
+    - title: "Create: Using Report Macro"
       path: /wGetStarted/L-Create-ReportMacro.html
-    - title: "Lab Create: Using the Retain Feature"
+    - title: "Create: Using the Retain Feature"
       path: /wGetStarted/L-Create-RetainFeature.html
-    - title: "Lab Create: Updating the Report Library"
+    - title: "Create: Updating the Report Library"
       path: /wGetStarted/L-Create-UpdatingReportLibrary.html
-    - title: "Lab Create: Interject Run On Open"
+    - title: "Create: Interject Run On Open"
       path: /wGetStarted/L-Create-RunOnOpen.html
     - sectiontitle: Exporting Reports
       path: /wGetStarted/Exporting-Reports.html
       section:
-      - title: "Lab Export: Quick Export and PDF"
+      - title: "Export: Quick Export and PDF"
         path: /wGetStarted/L-Export-QuickExportAndPDF.html
-      - title: "Lab Export: Basic Distribution"
+      - title: "Export: Basic Distribution"
         path: /wGetStarted/L-Export-BasicDist.html
-      - title: "Lab Export: Advanced Distribution"
+      - title: "Export: Advanced Distribution"
         path: /wGetStarted/L-Export-AdvancedDist.html
 
 
@@ -309,9 +309,9 @@ portal:
     - sectiontitle: Data Connections
       path: /wPortal/Data-Connections.html
       section:
-      - title: "Lab Portal: API Connections"
+      - title: "Portal: API Connections"
         path: /wPortal/L-Api-Connections.html
-      - title: "Lab Portal: Database Connection"
+      - title: "Portal: Database Connection"
         path: /wPortal/L-Database-Connection.html
     - title: Data Portals
       path: /wPortal/Data-Portals.html
@@ -351,23 +351,23 @@ Developer:
   - sectiontitle: Simple Data Pull
     path: /wGetStarted/Simple-Data-Pull.html
     section:
-    - title: "Lab Dev: Customer Aging"
+    - title: "Develop: Customer Aging"
       path: /wGetStarted/L-Dev-CustomerAging.html
-    - title: "Lab Dev: Customer Orders"
+    - title: "Develop: Customer Orders"
       path: /wGetStarted/L-Dev-CustomerOrders.html
-    - title: "Lab Dev: jDropdowns"
+    - title: "Develop: jDropdowns"
       path: /wGetStarted/L-Dev-jDropdowns.html
   - sectiontitle: Advanced Data Pull
     path: /wGetStarted/Advanced-Data-Pull.html
     section:
-    - title: "Lab Dev: Customer Aging Detail"
+    - title: "Develop: Customer Aging Detail"
       path: /wGetStarted/L-Dev-CustomerAgingDetail.html
   - sectiontitle: Simple Data Save
     path: /wGetStarted/Simple-Data-Save.html
     section:
-    - title: "Lab Dev: Customer Credit Save"
+    - title: "Develop: Customer Credit Save"
       path: /wGetStarted/L-Dev-CustomerCreditSave.html
-    - title: "Lab Dev: Northwind Pull and Save"
+    - title: "Develop: Northwind Pull and Save"
       path: /wGetStarted/L-Dev-NorthwindPullSave.html
   - title: Security Best Practices
     path: /wGetStarted/Security-Best-Practices.html

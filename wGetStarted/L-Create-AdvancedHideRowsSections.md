@@ -1,5 +1,5 @@
 ---
-title: Advanced Hide Row/Section Lab
+title: Advanced Row and Section Hiding
 layout: custom 
 keyword: hide rows, sections, report formulas, conditional formula
 description: Full instructions for hiding sections based on conditional values

@@ -1,5 +1,5 @@
 ---
-title: "Lab Create: Customer Aging Detail"
+title: "Create: Customer Aging Detail Report"
 layout: custom
 keywords: [ create, example, detail, report]
 description: This example uses the Customer Aging demo to show the creation of a Customer Aging Detail report that will have variable customer subtotaled sections, each having their respective invoice detail.

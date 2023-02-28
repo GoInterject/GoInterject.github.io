@@ -1,5 +1,5 @@
 ---
-title: "Lab Create: Hiding Rows and Columns"
+title: "Create: Hiding Rows and Columns"
 layout: custom
 keywords: []
 description:

@@ -1,8 +1,8 @@
 ---
-title: "Lab Portal: Database Connection"
+title: "Portal: Database Connection"
 layout: custom
-keywords: [database connection, lab, walkthrough]
-description: This lab shows how to connect to a database using a pre-existing dataportal.
+keywords: [database connection, example, walkthrough]
+description: This example shows how to connect to a database using a pre-existing dataportal.
 ---
 
 ###  Data Connection for a Database 

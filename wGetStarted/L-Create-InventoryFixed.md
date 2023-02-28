@@ -1,5 +1,5 @@
 ---
-title: "Lab Create: Inventory Fixed"
+title: "Create: Inventory Fixed Report"
 layout: custom
 keywords: [fixed, inventory, report, create]
 description: In this page, you will go through the process of building a fixed Inventory report from scratch using the ReportFixed() function.
@@ -136,7 +136,7 @@ In this case, we want to pull CustomerAging on open, so type **T:InventoryByCate
 ![](/images/L-Create-InventoryFix/15.png)
 <br>
 
-For a full guide using a different report, refer to the [ Run on Open Lab ](/wGetStarted/L-Create-RunOnOpen.html)
+For a full guide using a different report, refer to the [ Run on Open Example ](/wGetStarted/L-Create-RunOnOpen.html)
 
 ### jWorkbookProperty()
 

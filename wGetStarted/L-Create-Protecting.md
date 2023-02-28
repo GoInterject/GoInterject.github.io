@@ -1,5 +1,5 @@
 ---
-title: "Lab Create: Protecting Sheets"
+title: "Create: Protecting Sheets"
 layout: custom
 keywords: [password, protecting, unprotecting, lock, locking, protect]
 description: Interject provides an improved method to handle protecting sheets. The Sheet Protector window allows Interject users with the Client Admin role to quickly protect or unprotect the sheet without any need to know the password.
@@ -12,7 +12,7 @@ Interject provides an improved method to handle protecting sheets. The Sheet Pro
 
 When a sheet is protected using the Sheet Protector window, it will first attempt to use the current password. If that attempt fails it will try any previous passwords that are on file. If those do not work, it will also attempt to use a blank password. 
 
-In the following lab, you will protect a sheet and use the Interject pull to illustrate how protected sheets continues to function properly. In this lab you use the Customer Aging report 
+In the following example, you will protect a sheet and use the Interject pull to illustrate how protected sheets continues to function properly. In this example you use the Customer Aging report 
 
 <blockquote class=lab_info>
   If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 6 Special Features > Lab 6.2 Protecting Sheets.

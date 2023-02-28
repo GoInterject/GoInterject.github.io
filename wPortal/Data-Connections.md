@@ -14,12 +14,12 @@ For all other data sources, a custom website API can be created to connect the d
   
 Go directly to any topic below by clicking one of the links below. 
 
-###  [ Lab Portal: API Connections ](/wPortal/L-Api-Connection.html)
+###  [ API Connections ](/wPortal/L-Api-Connection.html)
 
 An API can be used with a Data Connection to connect to any database, including noSQL databases, using standard development practices that are used to develop website applications. You can also connect to other website APIs such as those from Salesforce, Netsuite, Intacct and many others.
    
-In this lab, you will set up a simple connection to an example API. Detailed documentation on using a custom data API’s are currently under development. Please contact us for more information if needed 
+In this example, you will set up a simple connection to an example API. Detailed documentation on using a custom data API’s are currently under development. Please contact us for more information if needed 
 
-###  [ Lab Portal: Database Connection ](/wPortal/L-Database-Connection.html)
+###  [ Database Connection ](/wPortal/L-Database-Connection.html)
 
 A Connection can be set up to connect directly to a database using a OLEDB or a .Net Adapter connection string for MS SQL Server or using a ODBC connection string to connect to Oracle, MySQL, or others that support stored procedures. For other databases, including noSQL databases, a customer website API can be used to connect the datasource to Interject, which is covered in a later section. 
