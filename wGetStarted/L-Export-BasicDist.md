@@ -1,5 +1,5 @@
 ---
-title: "Lab Export: Basic Distribution"
+title: "Export: Basic Distribution"
 layout: custom
 keywords: [ basic, distribution, email, report, export, file, pdf]
 description: The distribution process provides extensive control when creating and distributing reports. You can create one or more report workbooks and choose which worksheet tabs to include, create copies by iterating through different filters, and choose export targets like File Location, Email, Print, PDF.
@@ -16,7 +16,7 @@ The distribution process provides extensive control when creating and distributi
 
 ### Create a Distribution from an Existing Report 
 
-**Step 1:** First you are going to open a report. The example for this walk-through will use the same PL Trend Report seen in the [ Financial Walk-through ](/wAbout/Financial-Report.html) lab.
+**Step 1:** First you are going to open a report. The example for this walk-through will use the same PL Trend Report seen in the [ Financial Walk-through ](/wAbout/Financial-Report.html) example.
 
 ![](/images/L-Export-BasicDist/01.png)
 
@@ -174,4 +174,4 @@ Now run the distribution again and the email will be sent to the destination.
 
 <br> 
 
-You have completed the basic distribution section. Continue learning about distribution in the [ Lab Export: Advanced Distribution ](/wGetStarted/L-Export-AdvancedDist.html) page. 
+You have completed the basic distribution section. Continue learning about distribution in the [ Export: Advanced Distribution ](/wGetStarted/L-Export-AdvancedDist.html) page. 

@@ -1,5 +1,5 @@
 ---
-title: "Lab Modify: Inventory Report"
+title: "Modify: Inventory Report"
 layout: custom
 keywords: [alter, change, modify, fixed, inventory, add column, add row]
 description: In this example you will be modifying a fixed report, going over how to add a row to the report as well as add a description column.

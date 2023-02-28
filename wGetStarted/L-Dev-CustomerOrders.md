@@ -1,15 +1,15 @@
 ---
-title: "Lab Developer: Customer Orders"
+title: "Develop: Customer Orders"
 layout: custom
 keywords: [developer, example, customer orders, walkthrough, SQL]
-description: In this example, you will how to create a second report, Customer Orders, that will be drilled to from the Customer Aging Report you built in the last lab. This uses a report range.
+description: In this example, you will how to create a second report, Customer Orders, that will be drilled to from the Customer Aging Report you built in the last example. This uses a report range.
 ---
 * * *
 
 ##  **Overview**
 
 
-In this example, you will how to create a second report, Customer Orders, that will be drilled to from the Customer Aging Report you built in the [last lab](/wGetStarted/L-Dev-CustomerAging.html). You should have already seen the Customer Orders report while reviewing the business use case in the lab. Continue to build the Interject configuration and database objects to support the report. 
+In this example, you will how to create a second report, Customer Orders, that will be drilled to from the Customer Aging Report you built in the [last example](/wGetStarted/L-Dev-CustomerAging.html). You should have already seen the Customer Orders report while reviewing the business use case in the example. Continue to build the Interject configuration and database objects to support the report. 
 
 
 ###  Verifying the Data Connection 
@@ -176,6 +176,6 @@ Fortunately, the documentation to build this report has already been presented i
   
 
 
-It is recommended to go to [Lab Create: Customer Orders](/wGetStarted/L-Create-CustomerOrders.html) to complete those steps again to reinforce the process. However, this time you can use your own Data Portal for the report. 
+It is recommended to go to [Create: Customer Orders](/wGetStarted/L-Create-CustomerOrders.html) to complete those steps again to reinforce the process. However, this time you can use your own Data Portal for the report. 
 
  

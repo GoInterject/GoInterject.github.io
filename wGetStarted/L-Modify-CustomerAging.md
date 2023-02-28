@@ -1,5 +1,5 @@
 ---
-title: "Lab Modify: Customer Aging"
+title: "Modify: Customer Aging Report"
 layout: custom
 keywords: [alter, change, modify, customer aging]
 description: Here, you will modify the Customer Aging Demo used in the Customer Aging Walk-through to show the total of invoices due from companies.

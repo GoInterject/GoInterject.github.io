@@ -1,5 +1,5 @@
 ---
-title: "Lab Drill: Customer Aging"
+title: "Drill: Customer Aging Report"
 layout: custom
 keywords: [drill, create, build, example]
 description: In this example, you will be setting up a simple drill to the customer orders history. It is a great use case for creating your first drill.

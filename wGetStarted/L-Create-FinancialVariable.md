@@ -1,5 +1,5 @@
 ---
-title: "Lab Create: Financial Variable"
+title: "Create: Financial Variable Report"
 layout: custom
 keywords: [create, financial, variable, report, financial cube, fincube]
 description: You will use the ReportRange() formula to review the financial group summaries for a location. With the financial groups retrieved, you will than expand to create a subtotaled financial statement so each subtotaled detail will expand and shrink with the data.

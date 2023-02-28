@@ -1,5 +1,5 @@
 ---
-title: "Lab Create: Interject Run On Open"
+title: "Create: Interject Run On Open"
 layout: custom
 keywords: [auto-run, run-on-open, run, pull, property ]
 description: Use this property to auto-pull the report when opening for the first tab that appears. No VBA required.

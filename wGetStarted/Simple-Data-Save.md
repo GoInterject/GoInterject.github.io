@@ -12,13 +12,13 @@ An important part of the Interject platform is the ability to collect data from 
 
 To understand the use of these reports and how the user should edit or add notes, as well as specific invoices and payment dates, review [ Real World Walkthroughs - Customer Aging ](/wAbout/Customer-Aging.html), which covers the sheet  **Customer Credits**
 
-###  [ Lab Dev: Customer Aging Save ](/wGetStarted/L-Dev-CustomerCreditSave.html)
+###  [ Customer Aging Save ](/wGetStarted/L-Dev-CustomerCreditSave.html)
 
 
-This lab details a full review of how the Interject save feature works. Using the Customer Credits example, it will show how to design three user input fields into an existing report. The Interject platform will assist in creating a stored procedure that can be used in SQL Server to help facilitate the process. 
+This example details a full review of how the Interject save feature works. Using the Customer Credits example, it will show how to design three user input fields into an existing report. The Interject platform will assist in creating a stored procedure that can be used in SQL Server to help facilitate the process. 
 
 
-###  [ Lab Dev: Northwind Pull and Save ](/wGetStarted/L-Dev-NorthwindPullSave.html)
+###  [ Northwind Pull and Save ](/wGetStarted/L-Dev-NorthwindPullSave.html)
 
-The lab focuses on how to create an Excel tool to be able to pull the data out of a Northwind Categories table into an Excel tab as well as to be able to add, edit, or delete categories to this table.
+The example focuses on how to create an Excel tool to be able to pull the data out of a Northwind Categories table into an Excel tab as well as to be able to add, edit, or delete categories to this table.
 

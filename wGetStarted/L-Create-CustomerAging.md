@@ -1,5 +1,5 @@
 ---
-title: "Lab Create: Customer Aging"
+title: "Create: Customer Aging Report"
 layout: custom
 keywords: [ range, report, build, example]
 description: In this page you will see the process of building a Customer Aging report from scratch to better understand reports and also get a clearer illustration of the Interject Report Range data function

@@ -40,41 +40,41 @@ Reports often require various formats and subtotal sections, and this is especia
 
 Creating drills, it is possible to generate a simple suite of reports that enable you and your end-users to navigate anywhere from within the spreadsheet environment. Examples in this section include building drills in a [ Customer Aging ](/wGetStarted/L-Drill-CustomerAging.html), [ Inventory ](/wGetStarted/L-Drill-InventoryReport.html), and [ Financial report ](/wGetStarted/L-Drill-FinancialReport.html). There is more than one way for the user to interact with the drill feature. See the page [ Three Ways to Drill ](/wGetStarted/L-Drill-TheThreeWays.html) for more details. 
 
-###  [ Lab Create: Hiding Rows & Columns ](/wGetStarted/L-Create-HideRowCol.html)
+###  [ Hiding Rows & Columns ](/wGetStarted/L-Create-HideRowCol.html)
 
 ReportHideRowsOrColumns() is a function that allows you to hide both rows and columns when not needed. In this example, you will begin with hiding columns L, M, N, and O. To practice there is a file below that has been specifically prepared for this formula. 
 
-### [ Lab Create: Building jDropdowns ](/wGetStarted/L-Create-Dropdowns.html)
+### [ Building jDropdowns ](/wGetStarted/L-Create-Dropdowns.html)
 
 When manually entering different filter values, it can be difficult to remember what the exact filter names are and which are even available. This is especially true in large reports with many filtering options. However, you can use Interject’s jDropdown formula to automatically create hyperlinked lists of available filters, which makes filtering in large reports a much simpler task. 
 
-###  [ Lab Create: Working with Pivot Tables ](/wGetStarted/L-Create-PivotTable.html)
+###  [ Working with Pivot Tables ](/wGetStarted/L-Create-PivotTable.html)
 
 Pivot tables are excellent tools to help us find answers quickly. Interject can help simplify pivot table presentation and distribution. 
 
-###  [ Lab Create: Special Column Definitions ](/wGetStarted/L-Create-SpecColDefs.html)
+###  [ Special Column Definitions ](/wGetStarted/L-Create-SpecColDefs.html)
 
 Special Column Definitions are optional tags that bring out additional features to your standard column definition rows. They are great for space savers or to allow for faster formatting of the Pulled data. 
 
-###  [ Lab Create: Protecting Sheets ](/wGetStarted/L-Create-Protecting.html)
+###  [ Protecting Sheets ](/wGetStarted/L-Create-Protecting.html)
 
 Sheet Protection expands upon the already existing protection functions in excel but brings with it the Interject UI and security rights. 
 
 To use it, navigate to the Interject ribbon and click on the  **Sheet Protector** button in the  **Tools** section. 
 
-###  [ Lab Create: Using Report Macro ](/wGetStarted/L-Create-ReportMacro.html)
+###  [ Using Report Macro ](/wGetStarted/L-Create-ReportMacro.html)
 
 The Report Macro function allows Interject to interact with public macros in Excel. These macros can be automatically run after pulling or clearning data.
 
-###  [ Lab Create: Using the Retained Feature ](/wGetStarted/L-Create-RetainFeature.html)
+###  [ Using the Retained Feature ](/wGetStarted/L-Create-RetainFeature.html)
 
 When using Interject to pull data into your spreadsheet, the report area will be cleared before new data is inserted. In some situations, you may want to bypass the clear action and retain some formulas, since pulling could remove formulas you have on other columns related to certain data rows.
 
-###  [ Lab Create: Updating the Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary.html)
+###  [ Updating the Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary.html)
 
 The Report Library is how you share reports with other users while tracking versions for internal audit controls. Report Library is a simple and easy-access center for sharing interactive spreadsheet reports and applications to your entire organization. 
 
-### [ Lab Create: Interject Run On Open](/wGetStarted/L-Create-RunOnOpen.html)
+### [ Interject Run On Open](/wGetStarted/L-Create-RunOnOpen.html)
 
 Some reports require default values, settings, or have summary pages that must be pulled before others in order for the report to function properly. Using the Run on Open Interject property will auto-run the first tab that appears. 
 

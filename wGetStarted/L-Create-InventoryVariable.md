@@ -1,5 +1,5 @@
 ---
-title: "Lab Create: Inventory Variable"
+title: "Create: Inventory Variable"
 layout: custom
 keywords: [variable, report, inventory, example]
 description: In this example, you will use the report seen in the Inventory Walk-through. Once completed all rows of the report Inventory By Category with Detail will be populated with a single ReportVariable() function. 

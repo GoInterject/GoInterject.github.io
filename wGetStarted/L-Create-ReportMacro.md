@@ -1,5 +1,5 @@
 ---
-title: "Lab Create: Using Report Macro"
+title: "Create: Using Report Macro"
 layout: custom
 keywords: [report, macro, vba, hooks, sub, routine, function]
 description:  Report Macro is useful for specialized reports where a customized action needs to be taken. This action can be built into a VBA Macro based on the complex needs of the report.

@@ -14,10 +14,10 @@ To understand the business use case for the reports and drills used in this sect
 
 Go directly to the following examples to begin each objective. It is ideal to complete the following examples in order. 
 
-###  [ Lab Dev: Customer Aging ](/wGetStarted/L-Dev-CustomerAging.html)
+###  [ Customer Aging ](/wGetStarted/L-Dev-CustomerAging.html)
 
 On Dev: Customer Aging, you will learn how to create a simple data pull using the Customer Aging Report. To review the business use case for this report, see the [ Real World Walkthroughs - Customer Aging ](/wAbout/Customer-Aging.html).  This section begins with the steps for creating the Interject data connection and data portals, followed by the steps on how to create the stored procedure. Finally, you will be directed to another page that shows how to use the data portal to create the spreadsheet report from scratch. 
 
-###  [ Lab Dev: Customer Orders ](/wGetStarted/L-Dev-CustomerOrders.html)
+###  [ Customer Orders ](/wGetStarted/L-Dev-CustomerOrders.html)
 
 In Dev: Customer Orders, you show you how to create a second report, Customer Orders, that will be drilled to from the Customer Aging Report. You should have already seen the Customer Orders report while reviewing the business use case in [ Create: Customer Orders ](/wGetStarted/L-Create-CustomerOrders.html). Continue to build the Interject configuration and database objects to support the report. 

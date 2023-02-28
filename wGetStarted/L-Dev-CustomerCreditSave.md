@@ -1,5 +1,5 @@
 ---
-title: "Lab Developer: Customer Credit Save"
+title: "Develop: Customer Credit Save"
 layout: custom
 keywords: [save, example, walkthrough, customer aging,]
 description: "This section will detail a full review of how the Interject save feature works"
@@ -7,12 +7,12 @@ description: "This section will detail a full review of how the Interject save f
 ##  **Overview:**
 
 
-This section will detail a full review of how the Interject save feature works. Start by using the Customer Aging example. This lab will show how to design three user input fields into an existing report. The Interject platform will assist in creating a stored procedure that can be used in SQL Server to help facilitate the process. Other database engines or API methods can be used for the save process as well, but for simplicity you are focusing on SQL Server and a database stored procedure as the data source. You will be using the Customer Aging report, as you have already become familiar with its [business use case](/wAbout/Customer-Aging.html). 
+This section will detail a full review of how the Interject save feature works. Start by using the Customer Aging example. This example will show how to design three user input fields into an existing report. The Interject platform will assist in creating a stored procedure that can be used in SQL Server to help facilitate the process. Other database engines or API methods can be used for the save process as well, but for simplicity you are focusing on SQL Server and a database stored procedure as the data source. You will be using the Customer Aging report, as you have already become familiar with its [business use case](/wAbout/Customer-Aging.html). 
 
 
 ###  Setting up the Data Portals: 
 
-This report uses the same database as  [**Dev: Customer Aging**](/wGetStarted/L-Dev-CustomerAging.html) and other reports, you do not need to create another data connection. Use the same connection as in this previous lab. The Data Portals for saving data are very similar to their Pull counterparts. 
+This report uses the same database as  [**Develop: Customer Aging**](/wGetStarted/L-Dev-CustomerAging.html) and other reports, you do not need to create another data connection. Use the same connection as in this previous example. The Data Portals for saving data are very similar to their Pull counterparts. 
 
 **Step 1:** Navigate to the [Interject Portal](https://portal.gointerject.com/) Website, then select  **Data Portals** in the sidebar menu. 
 
@@ -49,7 +49,7 @@ This report uses the same database as  [**Dev: Customer Aging**](/wGetStarted/L-
   
 
 
-**Step 6:** In the connection drop down menu you will choose the data connection **NorthwindExampleDB_MyName** that you have already created in the [Customer Aging developer lab](/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection). 
+**Step 6:** In the connection drop down menu you will choose the data connection **NorthwindExampleDB_MyName** that you have already created in the [Develop: Customer Aging](/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection). 
 
 ![](/images/L-Dev-CustAgingSave/06.jpg)
 <br>
@@ -173,7 +173,7 @@ In this example you are going to use  **Interject_ReturnError** and  **Interject
 ![](/images/L-Dev-CustAgingSave/27_fix.jpg)
 <br>
 
-**Step 19:** Select the **Fx** button and for the dataportal insert the [save dataportal](/wGetStarted/L-Dev-CustomerCreditSave.html#setting-up-the-data-portals) that you created earlier in this lab.
+**Step 19:** Select the **Fx** button and for the dataportal insert the [save dataportal](/wGetStarted/L-Dev-CustomerCreditSave.html#setting-up-the-data-portals) that you created earlier in this example.
 
 ![](/images/L-Dev-CustAgingSave/28_fix.jpg)
 <br>

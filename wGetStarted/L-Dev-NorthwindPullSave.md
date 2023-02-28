@@ -1,17 +1,18 @@
 ---
-title: "Lab Developer: Categories Pull and Save"
+title: "Develop: Categories Pull and Save"
 layout: custom
 keywords: [save, example, walkthrough, customer aging,]
 description:
 ---
 ##  **Overview:**
 
-The lab will focus on how to create an Excel tool to be able to pull the data out of a Northwind Categories table into an Excel tab as well as to be able to add, edit, or delete categories to this table. Below you will find the list of requirements you will need to fulfill to have a minimal, fully-functioning data sheet using the Interject Add-in. 
+The example will focus on how to create an Excel tool to be able to pull the data out of a Northwind Categories table into an Excel tab as well as to be able to add, edit, or delete categories to this table. Below you will find the list of requirements you will need to fulfill to have a minimal, fully-functioning data sheet using the Interject Add-in. 
 
 ###  NorthwindCategories SQL Table 
 
-This lab focuses on the Northwind Categories table so please be sure you have access to a Northwind database to complete the lab.
-For the purposes of this lab and learning how to work with an integer column, please add the TotalStock int column to the NorthwindCategories table.
+This example focuses on the Northwind Categories table so please be sure you have access to a Northwind database to complete the example.
+
+For the purposes of this example and learning how to work with an integer column, please add the TotalStock int column to the NorthwindCategories table.
 
 ![](/images/L-Dev-NorthwindPullSave/1.png)
 
