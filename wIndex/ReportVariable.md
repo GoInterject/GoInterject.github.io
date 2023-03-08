@@ -34,7 +34,7 @@ For an example of this function, see [Lab Create: Inventory Variable](/wGetStart
 </table>
 </div>
 
-<button class="collapsible-parameter">**RowDefRange**<br>A single column range that contains the values that map to the RowDefName field of the data source. Each value in this range will be matched to the same value in the RowDefName of the data source. Only these values will be populated with data after a pull action.<br><br>If the data source does not have a column "RowDefName", this function will look for a column name defined in the column in the ColDefRange and the row defined here in RowDefRange. For example, if row 2 is defined here and column B is defined in ColDefRange, this function will look at the value in B2 to map the data to.<br><br>If there are records in the data source that are excluded in this range, the data from those columns will be included in a [leftover] section after a pull action.</button>
+<button class="collapsible-parameter">**RowDefRange**<br>A single column range that contains the values that map to the RowDefName field of the data source. Each value in this range will be matched to the same value in the RowDefName of the data source. Only these values will be populated with data after a pull action.<br><br>If the data source does not have a column "RowDefName", this function will look for a column name defined in the column in the ColDefRange and the row defined here in RowDefRange. For example, if row 2 is defined in ColDefRange and column B is defined in RowDefRange, this function will look at the value in B2 to map the data to.<br><br>If there are records in the data source that are excluded in this range, the data from those columns will be included in a [leftover] section after a pull action.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
@@ -104,7 +104,7 @@ For an example of this function, see [Lab Create: Inventory Variable](/wGetStart
     </tr>
     <tr>
 		<td class="pph"><b>Constraints</b></td>
-		<td>The values must match the order of the parameters in the data source (The order can be verified using the [ Validation Report ](/wTroubleshoot/Reports.html#validation-report-for-pullsave-events) )</td>
+		<td>The values must match the order of the parameters in the data source (The order can be verified using the <a href="https://docs.gointerject.com/wTroubleshoot/Reports.html#validation-report-for-pullsave-events">Validation Report</a>)</td>
     </tr>
     <tr>
 		<td class="pph"><b>If Blank</b></td>
