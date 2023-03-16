@@ -8,7 +8,7 @@ description: The ReportVariable function pulls data from a data source and inser
 ##  Function Summary
 The ReportVariable function pulls data from a data source and inserts it into a spreadsheet. It is similar to the [ ReportFixed ](/wIndex/ReportFixed.html) function because it takes row names as input in addition to column names. Only data that is mapped to both these row and column names from the data source will be inserted. Consequently, the range where data is inserted is defined by the boundaries of the RowDefRange and the ColDefRange. Data returned by this function can be filtered, formatted, and customized for a specific desired report.
 
-This function differs from the ReportFixed function in that it will group the data based on the values defined in the RowDefRange argument. The grouping feature allows the data to be collapsed and expanded by category.
+This function differs from the ReportFixed function in that it will group the data based on the values defined in the RowDefRange argument. The grouping feature allows the data to be collapsed and expanded by category. Note: Entries for each group must contain an empty row above in order to populated with data correctly.
 
 For an example of this function, see [Lab Create: Inventory Variable](/wGetStarted/L-Create-InventoryVariable.html).
 
