@@ -63,7 +63,7 @@ Scroll to the top, and  the full configuration area is seen  in the left of the 
 
 **Step 8:** Next, setup the Column and Row Definitions for this report. 
 
-For the **RowDefRange** argument, type **B18:B54**. This not only covers the Row Definitions for the main body of the report but includes the **Leftover** section as well. This leftover section is special, since it will show any records that did not populate in one of the sections above. This helps ensure you are not missing any data in the report.  
+For the **RowDefRange** argument, type **B18:B54**. This covers the Row Definitions for the main body of the report. Notice each group is separated by at least one row. This is required for the categories to be populated separately. This section also includes the **Leftover** section as well. This leftover section is special, since it will show any records that did not populate in one of the sections above. This helps ensure you are not missing any data in the report.  
 
 ![](/images/L-Create-InventoryVar/09.png)
 <br> 
