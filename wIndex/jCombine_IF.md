@@ -10,7 +10,9 @@ The jCombineIF function concatenates a range or multiple ranges of cells into a 
 
 This function can be used as a standalone function and does not need to be embedded in another function.
 
+<!---
 For an example of this function, see [Lab Create: Using the Retain Feature](/wGetStarted/L-Create-RetainFeature.html#jcombineif).
+--->
 
 ###  Function Arguments
 

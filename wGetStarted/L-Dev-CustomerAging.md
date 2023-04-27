@@ -10,9 +10,15 @@ description: On this page, you will create a simple data pull using the Customer
 
 On this page, you will create a simple data pull using the Customer Aging Report. To review the business use case for this report, see  [ **Real World Walkthroughs** **\- Customer Aging** ](/wAbout/Customer-Aging.html).  This example begins with steps for creating the Interject data connection and data portals, followed by the steps on how to create the stored procedure. Finally, you will be directed to another page that shows how to use the data portal to create the spreadsheet report from scratch. 
 
-**Developer Note**
-To work through this example, locate the Customer Collections link in the Interjet Report Library.
+<blockquote class=highlight_note>
+<b>Note:</b> This example uses Microsoft's Northwind Database. You can download this database <a href="https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases">here</a> or you can use this example as a guide for your own data source.
+</blockquote>
 
+**Developer Note**
+To work through this example, locate the Customer Collections link in the Interject Report Library.
+
+![](/images/L-Dev-CustAging/ReportLibraryCustomerCollections.png)
+<br>
 
 ###  Setting Up The Data Connection 
 
@@ -60,8 +66,6 @@ The Database Data Connection is now ready to be used in a Data Portal. You shoul
 ![](/images/L-Dev-CustAging/08.jpg)
 <br>
   
-
-
 **Step 3:** Type **NorthwindCustomers_MyName** for the Data Portal Code. Since this field must be unique, add your name to the suffix. Select the connection that was made in the previous step, **NorthwindExampleDB_MyName** . Also enter a name for the stored procedure **[demo].[Northwind_Customers_Pull_MyName]** , which will be created later. 
 
 ![](/images/L-Dev-CustAging/09.png)
@@ -81,66 +85,47 @@ The Database Data Connection is now ready to be used in a Data Portal. You shoul
 ![](/images/L-Dev-CustAging/11.jpg)
 <br>
   
-
-
 **Step 2:** Click the **More** button. 
 
 ![](/images/L-Dev-CustAging/12.jpg)
 <br>
   
-
-
 **Step 3:** As shown in the screenshot below, enter **Market** for Helper Default and **Search is a wildcard that contains search** for Comments.  Click the Save icon. 
 
 ![](/images/L-Dev-CustAging/13.jpg)
 <br>
 
 **Note:** When you set up a formula parameter, the Save icon is red until you save your changes. After your changes are saved, the Save icon turns green. 
-
   
-
-
 **Step 5:** Click the  **Click here to add a Formula Parameter** to add the second parameter. Enter **ContactName** for Name, **varchar** for Type, and **input** for Direction. 
 
 ![](/images/L-Dev-CustAging/14.jpg)
 <br>
   
-
-
 **Step 6:** Click the **More** button 
 
 ![](/images/L-Dev-CustAging/15.jpg)
 <br>
   
-
-
 Enter **Contact Name** for Helper Name and **Search is a wildcard that contains search** for Comments. Click the Save icon. 
 
 ![](/images/L-Dev-CustAging/16.jpg)
 <br>
   
-
-
 **Step 7:** To add the final Formula Parameter click  **Click here to add a Formula Parameter** . Enter **CustomerID** for Name, **varchar** for Type, and **input** for Direction. 
 
 ![](/images/L-Dev-CustAging/17.jpg)
 <br>
   
-
-
 **Step 8:** Click the **More** button 
 
 ![](/images/L-Dev-CustAging/18.jpg)
 <br>
   
-
-
 Enter **Customer ID** for Helper Name and **The customer ID is an exact search that will be used by the drill** for Comments. Click the Save icon. 
 
 ![](/images/L-Dev-CustAging/19.jpg)
 <br>
-
- 
 
 ###  System Parameters 
 
@@ -152,24 +137,17 @@ In this example, you will use the system parameter, **Interject_NTLogin** , whic
 
 ![](/images/L-Dev-CustAging/20.jpg)
 <br>
-  
-
-
+ 
 **Step 2:** Add a second system parameter by clicking **Add a System Parameter** button. Choose **Interject_LocalTimeZoneOffset** for the name and click Save. 
 
 ![](/images/L-Dev-CustAging/21.jpg)
 <br>
-
  
-
-
 ###  Creating the Stored Procedure 
 
 A stored procedure or data API serves as a middle tier for an Interject report. In this example you will be using a stored procedure. Interject can retrieve one or more result sets from a stored procedure into the spreadsheet report. 
-
  
 The Interject Website Portal allows you to create and manage Data Portals and reference stored procedures you create. Data Portals are stored locally in your Excel session when you log into Interject. When requesting data Interject creates a point-to-point connection with the intended data source. 
-
 
 The below steps assume you are proficient with SQL Management Studio for Microsoft SQL Server and in creating stored procedures. If you need additional training in this area, please contact us at [ info@gointerject.com ](mailto:info@gointerject.com) . 
 
@@ -265,32 +243,24 @@ END
 
 </div>
 
-
 **Step 2:** Stored procedure are natively supported by Interject. There are a few key areas to note in the code example that help illustrate Interject features. 
 
   * Parameters: The parameters included in the stored procedure are the same added to the Data Portal in a previous step. On each request, Interject passes the Formula Parameters values from the spreadsheet configuration along with System Parameters to the stored procedure. Output parameters are supported which can populate values in the spreadsheet but they are not included in this example. 
-
-
 
 ![](/images/L-Dev-CustAging/21.png)
 <br>
 
   * Validation: The example code includes an example of validating the input from Formula Parameter **@CustomerName** . It limits the search text to 40 characters and will raise an error if the length is beyond. The custom error shown has a prefix **UserNotice:** which tells Interject to provide a message box with the text to the user as a response. Without the prefix, Interject will interpret the error as a generic error. 
 
-
-
 ![](/images/L-Dev-CustAging/22.png)
 <br>
 
   * Select statements: Returning data to Interject simply uses a select statement as shown below. More than one can be returned at a time to reduce the connections needed to fully populate a complex report. You only have one select statement in this example. 
 
-
-
 ![](/images/L-Dev-CustAging/23.png)
 <br>
 
 **Step 3:** It is important to test the stored procedure in the database before testing through the Interject platform. The example code included a test SQL statement that can be executed in a new query as shown below. Be sure to change the procedure name to match your own. 
-
 
 <button class="collapsible">Example Test Script</button>
 <div markdown="1" class="panel">
