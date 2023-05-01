@@ -8,13 +8,13 @@ description: When using Interject to pull data into your spreadsheet, the report
 
 ##  **Overview:**
 
-When using Interject to pull data into your spreadsheet, the report area will be cleared before new data is inserted. This is typically done by the deletion of rows. In some situations, you may want to avoid this clear action in order to retain some formulas or other information, since pulling could remove formulas you have on other columns related to certain data rows. This is especially true when you are budgeting or forecasting with historical numbers. The report may have history on the left and your forecasting formulas and numbers will be input on the right. Interject provides a retain feature so that you can update the data in a report without deleting rows so that your formulas and other information can be retained. 
+Interject provides a retain feature so that you can update the data in a report without deleting rows, keeping your formulas and other information intact. Typically, when using Interject to pull data into your spreadsheet, the report area will be cleared before new data is inserted. This is typically done by the deletion of rows. In some situations, you may want to avoid this clear action in order to retain some formulas or other information, since pulling could remove formulas you have on other columns related to certain data rows. This is especially true when you are budgeting or forecasting with historical numbers. The report may have history on the left and your forecasting formulas and numbers will be input on the right.  
 
 Interject's retain feature is available for the [ ReportRange() ](/wIndex/ReportRange.html) and the [ ReportVariable() ](/wIndex/ReportVariable.html) functions. 
 
-Since Interject must still update your data, it must determine which columns act as the key values, so it can place the correct data in the correct row. By specifying these key columns in the RetainRowColumns parameter, Interject will retain any row of data where there is a value in these columns. Consequently, on a Pull-Clear action, Interject will never delete these rows but rather simply zero the amounts. 
+Since Interject must still update your data, it must determine which columns act as the key values, so it can place the correct data in the correct row. By specifying these key columns in the RetainRowColumns parameter, Interject will retain any row of data where there is a value in these columns. Consequently, on a Pull-Clear action, Interject will not delete these rows but instead zero the amounts. 
 
-This example showcases how to use the retain feature operates in your reports. It uses the PL Trend report found in the Report Library in the Interject Financials folder. 
+This example shows how to use the retain feature in your reports. It uses the PL Trend report found in the Report Library under the Interject Financials folder. 
 
 <blockquote class=lab_info>
   If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 5 Advanced Features > Lab 5.5 Using the Retain Feature.
@@ -56,7 +56,7 @@ Project a 10% increase to every value. First select cell **P29** and input the f
 
 ###  Without RetainedRowColumns: 
 
-If the accounts numbers were to change, the 10% increase would no longer be accurate since the data is old. Re-pull the data to update your numbers. 
+If the account numbers were to change, the 10% increase would no longer be accurate since the data is old. Re-pull the data to update your numbers. 
 
 ![](/images/L-Create-Retain/07.png)
 <br>
