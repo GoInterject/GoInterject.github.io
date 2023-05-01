@@ -20,7 +20,7 @@ horizontalnav:
 - title: Portal Site 
   path: /wPortal/The-INTERJECT-Website-Portal.html
   node: portal
-- title: Support
+- title: Troubleshooting
   path: /wTroubleshoot/Troubleshooting-Landing.html
   node: troubleshoot
 
@@ -377,13 +377,32 @@ Developer:
     path: /wGetStarted/L-Dev-Error-Handling.html
 
 troubleshoot:
-- sectiontitle: Troubleshooting
-  path: /wTroubleshoot/Troubleshooting-Landing.html
+- sectiontitle: Interject Support
+  path: /wTroubleshoot/Interject-Support.html
   section:
-    - title: App Errors
-      path: /wTroubleshoot/App-Errors.html
-    - title: Report Errors
-      path: /wTroubleshoot/Reports.html
-    - title: Excel Animations
+    - title: User Support
+      path: /wTroubleshoot/Reporting-A-Problem.html
+    - title: Verbose Logging
+      path: /wTroubleshoot/Verbose-Logging.html
+    - title: Memory Logging
+      path: /wTroubleshoot/RAM-Monitoring.html
+- sectiontitle: Addin Errors
+  path: /wTroubleshoot/App-Errors.html
+  section:
+    - title: Excel Drill Animations
       path: /wTroubleshoot/Drill-Animations.html
+    - title: Addin Missing
+      path: /wTroubleshoot/Addin-Missing.html
+- sectiontitle: Report Errors
+  path: /wTroubleshoot/Reports.html
+  section:
+    - title: Investigating Report Errors
+      path: /wTroubleshoot/Investigating-Errors.html
+    - title: Validation Report for Interject Events
+      path: /wTroubleshoot/Validation-Report.html
+    - title: Testing Data Connections
+      path: /wTroubleshoot/Testing-Data-Connections.html
+    - title: View SQL for ActiveCell
+      path: /wTroubleshoot/View-SQL.html
+=======
 

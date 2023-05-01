@@ -1,130 +1,91 @@
 ---
-title: Troubleshooting Excel Animations
+title: Excel Drill Animations
 layout: custom
 keywords: [drill, slow, slow drill, freeze, crash, disable, animations]
 description: Running animations while working with data may slow performance and interfere with Interject events, such as Drill on Data events. 
 ---
 * * *
 
-##  **Overview**
+## **Overview**
 
-It is important to disable the animations feature of Excel. Running animations while working with data may slow performance and interfere with Interject events, such as Drill on Data events. Depending on the version of Excel you have installed, and the Windows operating system on your computer, there are several ways to disable Excel animation. Choose the Excel and Windows versions that best match your system for the steps needed to disable animations. 
+It is important to disable the animations feature of Excel. Running animations while working with data may slow performance and interfere with Interject events, such as Drill on Data events. Depending on the version of Excel you have installed, and the Windows operating system on your computer, there are several ways to disable Excel animation. You can choose all that apply.
 
-###  Turning Off Animations in Excel 2010 or 2016 on Windows 7 or 8 
+### Turning Off Animations (Windows 7 or 8)
 
-First, open your **Control Panel** to find the **Ease of Access Center**
+**Step 1:** First, open your **Control Panel** and click **Ease of Access**:
 
-Select **Ease of Access**
-
-![](/images/Excel-Animation/01.jpg)
-
+![](/images/Excel-Animation/EaseOfAccessWin8.png)
 <br> 
 
+**Step 2:** Select **Ease of Access Center**
 
-Click on **Ease of Access Center**
-
-![](/images/Excel-Animation/02.jpg)
-
+![](/images/Excel-Animation/EaseOfAccessCenterWin8.png)
 <br> 
 
+**Step 3:** Under **Explore all settings,** click on **Make the computer easier to see**
 
-Under  **Explore all settings,** click on  **Use the computer without a display**
-
-![](/images/Excel-Animation/03.jpg)
-
+![](/images/Excel-Animation/MakeComputerEasierWin8.png)
 <br> 
 
+**Step 4:** Ensure **Turn off all unnecessary animations (when possible)** is checked. Then click **Apply** and then **OK**:
 
-Under  **Adjust time limits and flashing visuals**, click  **Turn off all unnecessary animations (when possible)** then select apply 
-
-![](/images/Excel-Animation/04.jpg)
-
+![](/images/Excel-Animation/TurnOffAnimationsWin8.png)
 <br> 
 
+### Turning Off Animations (Windows 10 Settings)
 
-Click **OK.**
-
-Navigate back to Excel and inside the **File** menu choose **Options**
-
-Select **Advanced** or **Ease of Access**, and then uncheck **Provide feedback with animation.**
+Open your settings menu by pressing the **Windows Key + U**. Switch **Show animations in Windows** to **Off**:
 
 ![](/images/Excel-Animation/05.png)
-
-<br>
-
-###  Turning Off Animations in Excel 2010 or 2016 on Windows 10 
-
-Begin by opening your settings menu by pressing the **Windows Key + U**
-
-Switch **Show animations in Windows** to **Off**
-
-![](/images/Excel-Animation/06.jpg)
-
 <br> 
 
-
-If your screen does not look like the picture above then follow the next step; otherwise skip it. 
-
-Select **Other Options** then turn off **Play Animations in Windows**
+Your settings screen may look like the one below. If so, click **Other Options** then turn off **Play Animations in Windows**:
 
 ![](/images/Excel-Animation/07.jpg)
-
 <br> 
 
+### Turning Off Animations (Windows 10 Control Panel)
 
-Navigate back to Excel and inside the **File** menu choose **Options**
+**Step 1:** First, open your **Control Panel** to find the **Ease of Access Center** and select **Ease of Access**:
 
-Select **Advanced** or **Ease of Access**, and then uncheck **Provide feedback with animation.**
-
-![](/images/Excel-Animation/08.jpg)
-
+![](/images/Excel-Animation/01.jpg)
 <br> 
 
+**Step 2:** Click on **Ease of Access Center**:
 
-###  Turning Off Animations in Excel 2013 on Windows 10 
-
-First, open your **Control Panel** to find the **Ease of Access Center**
-
-Select **Ease of Access**
-
-![](/images/Excel-Animation/09.jpg)
-
+![](/images/Excel-Animation/02.jpg)
 <br> 
 
+**Step 3:** Under **Explore all settings,** click on **Use the computer without a display**:
 
-Select **Ease of Access Center**
-
-![](/images/Excel-Animation/10.jpg)
-
+![](/images/Excel-Animation/03.jpg)
 <br> 
 
+**Step 4:** Under **Adjust time limits and flashing visuals**, check **Turn off all unnecessary animations (when possible)**. Click **Apply** and then **OK**:
 
-Under  **Explore all settings,** click on  **Use the computer without a display**
-
-![](/images/Excel-Animation/11.jpg)
-
+![](/images/Excel-Animation/04.jpg)
 <br> 
 
+### Turning Off Animations (Excel 2010-2016)
 
-Under  **Adjust time limits and flashing visuals**, click  **Turn off all unnecessary animations (when possible)** then select apply 
+In Excel, pull up the Options menu by clicking **File** and then **Options**:
 
-![](/images/Excel-Animation/12.jpg)
+![](/images/Excel-Animation/FileOptionsExcel2010.png)
+<br>
 
-Click **OK.**
+Next select **Advanced** or **Ease of Access**, and then uncheck **Provide feedback with animation**:
 
+![](/images/Excel-Animation/06.jpg)
 <br> 
 
-###  Turning Off Animations in Office 365 Excel on any Windows version 
+### Turning Off Animations (Excel 365)
 
-In the Excel **File** menu, choose **Options**
+In Excel, pull up the Options menu by clicking **File** and then **Options**:
 
-Select **Ease of Access**
+![](/images/Excel-Animation/FileOptionsExcel365.png)
+<br>
 
-Under the **Feedback Options** tab, uncheck **Provide feedback with animation**
+Select **Ease of Access** on the left panel. Under the **Feedback Options** tab, uncheck **Provide feedback with animation** and click **OK**:
 
 ![](/images/Excel-Animation/13.jpg)
-
 <br> 
-
-
-Click **OK.**
