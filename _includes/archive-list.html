@@ -1,10 +1,22 @@
 <!-- Logic to create drop down list of different site versions for each app type. Sourced from siteversion.yaml should probably be titled site-version-list -->
 <div class="btn-group" style="visibility: hidden">
   <button type="button" class="btn btn-default dropdown-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<!-- This is Liquid Syntax code to display the site version -->
+
+	{% if page.url contains "bApps/bFinancials/" %}
+		Interject Financials
+	{% else %}
+		Interject Main (Home)
+	{% endif %}
+
+<!--
     {% for item in site.data.siteversion %}
       {% if item.current == true %}Interject {{ item.name }} (home)
+      {% else %} Interject Financials
       {% endif %}
-    {% endfor %}<span class="caret"></span>
+    {% endfor %}
+-->
+<span class="caret"></span>
   </button>
   <ul class="dropdown-menu">
     {% for item in site.data.siteversion %}<li><a href="
