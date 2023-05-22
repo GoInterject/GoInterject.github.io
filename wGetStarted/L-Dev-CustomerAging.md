@@ -44,12 +44,12 @@ To work through this example, locate the Customer Collections link in the Interj
   
 **Step 5:** In the Description field include details about what the data connection will be used for. 
 
-![](/images/L-Dev-CustAging/05.jpg)
+![](/images/L-Dev-CustAging/05.png)
 <br>
 
 **Step 6:** Click the Save button to create the new data connection. 
 
-![](/images/L-Dev-CustAging/06.jpg)
+![](/images/L-Dev-CustAging/06.png)
 <br>
 
 The Database Data Connection is now ready to be used in a Data Portal. You should always test a new connection with your security context. Follow the steps in [ Data Connections ](/wPortal/Data-Connections.html) to test your connection string. 

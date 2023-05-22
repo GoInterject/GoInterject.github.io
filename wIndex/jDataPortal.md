@@ -92,7 +92,7 @@ For an example of this function, see [Lab Dev: Customer Aging Detail](/wGetStart
 </table>
 </div>
 
-<button class="collapsible-parameter">**CommandOverride**<br>A string indicating a different Stored Procedure or API to run. This feature can only be done by ClientAdmin, SysAdmin, or Editor [roles](/wPortal/INTERJECT-Roles.html).</button>
+<button class="collapsible-parameter">**CommandOverride**<br>A string indicating a different Stored Procedure or API to run. This feature can only be done by ClientAdmin or a SysAdmin [roles](/wPortal/INTERJECT-Roles.html).</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
@@ -112,7 +112,7 @@ For an example of this function, see [Lab Dev: Customer Aging Detail](/wGetStart
 </table>
 </div>
 
-<button class="collapsible-parameter">**ConnectionOverride**<br>A string indicating a different data connection to run. This feature can only be done by ClientAdmin, SysAdmin, or Editor [roles](/wPortal/INTERJECT-Roles.html).</button>
+<button class="collapsible-parameter">**ConnectionOverride**<br>A string indicating a different data connection to run.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>

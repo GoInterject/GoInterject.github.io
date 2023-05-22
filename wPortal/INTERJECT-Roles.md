@@ -89,7 +89,7 @@ Editor
 <ul>
 <li>Create, Update, Delete, and Activate/Deactivate DataPortal and DataPortal parameters.</li>
 <li>Create default system and scheduler system parameters for a DataPortal.</li>
-<li>Override connection, stored procedure, and api for dataportal.</li>
+<li>Override connection and api for dataportal.</li>
 <li>View test area of link categories.</li>
 <li>Edit their own company link version without having report library edit rights.</li>
 </ul>  
