@@ -6,7 +6,7 @@ description: When using Interject to pull data into your spreadsheet, the report
 ---
 * * *
 
-##  **Overview:**
+##  **Overview**
 
 Interject provides a retain feature so that you can update the data in a report without deleting rows, keeping your formulas and other information intact. Typically, when using Interject to pull data into your spreadsheet, the report area will be cleared before new data is inserted. This is typically done by the deletion of rows. In some situations, you may want to avoid this clear action in order to retain some formulas or other information, since pulling could remove formulas you have on other columns related to certain data rows. This is especially true when you are budgeting or forecasting with historical numbers. The report may have history on the left and your forecasting formulas and numbers will be input on the right.  
 
@@ -20,7 +20,7 @@ This example shows how to use the retain feature in your reports. It uses the PL
   If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 5 Advanced Features > Lab 5.5 Using the Retain Feature.
 </blockquote>
 
-###  Create Simple Formulas: 
+###  Create Simple Formulas 
 
 **Step 1:** To start, copy the columns  **L-N** in the  **PLTrend** tab and paste them into Column  **P-R.**
 
@@ -54,7 +54,7 @@ Project a 10% increase to every value. First select cell **P29** and input the f
 ![](/images/L-Create-Retain/06.png)
 <br>
 
-###  Without RetainedRowColumns: 
+###  Without RetainedRowColumns 
 
 If the account numbers were to change, the 10% increase would no longer be accurate since the data is old. Re-pull the data to update your numbers. 
 
@@ -68,7 +68,7 @@ Without using the RetainedRowColumns feature, if your formulas are on the same r
 
 **Note:** The reason that some of the rows do not lose their formulas is because they are what are considered summary rows. A ReportVariable() also contains detail rows which are rows that get deleted on a pull or clear. 
 
-###  With RetainedRowColumns: 
+###  With RetainedRowColumns 
 
 To fix this, use the RetainedRowColumns to retain the rows and your formulas. 
 
