@@ -5,84 +5,103 @@ keywords: [report library]
 description: The Report Library is a way for your team to share reports from a central location going beyond just a Sharepoint or a Shared Network Folder.The reports are uploaded to the library and can be accessed from any computer using Excel via Interject.
 ---
 
-##  **Overview**
----
+##  Overview
 
-The Report Library is a way for your team to share reports from a central location going beyond just a Sharepoint or a Shared Network Folder.The reports are uploaded to the library and can be accessed from any computer using Excel via Interject. The reports can also be versioned, so reverting to a previous report is simple.
+The Report Library is a way for your team to share reports from a central location going beyond just a Sharepoint or a Shared Network Folder. The reports are uploaded to the library and can be accessed from any computer using Excel via Interject. The reports can also be versioned, so reverting to a previous report is simple.
 
-###  Getting to The Report Library
+##  Opening The Report Library
 
 Once Interject is installed, an Interject Ribbon will be added to Excel.
 
-**Step 1:** To begin, open the Report Library by opening the Interject ribbon menu.
+**Step 1:** To start, open the Interject ribbon menu.
 
 ![](/images/ReportLibraryBasics/1.01GettingtoRL-InterjectTab.png)
 <br>
 
-**Step 2:** The Report Library is located on the far left of the ribbon. Click the icon or use the keystroke Ctrl+Shift+L on our keyboard.
+**Step 2:** The Report Library is located on the far left of the ribbon. Click the icon or use the keystroke Ctrl+Shift+L on the keyboard.
 
 ![](/images/ReportLibraryBasics/1.02GettingtoRL-ClickRL.png)
 <br>
 
-**Step 3:** If not logged in already, an Interject login window will pop up before seeing the Report Library. (See ["Logging In"](/wAbout/Logging-In) for more information about logins).
+**Step 3:** The Report Library consists of folders and sub-folders, just like a typical folder hierarchy.
 
-![](/images/ReportLibraryBasics/1.03GettingtoRL-Login-Form.png)
+![](/images/ReportLibraryBasics/ReportLibrary.png)
 <br>
 
-![](/images/ReportLibraryBasics/image2017-8-2_16-3-54.png)
+## Resizing the Report Library
+
+By clicking on the Resize button in the top right corner, you can resize the Report Library. Available preset sizes are Small, Medium, and Large or you may scale it to a custom value. For more info about resizing forms, see [Resizing Interject Windows](/wAbout/Resizing-Form-Windows.html).
+
+![](/images/ReportLibraryBasics/Resize.png)
 <br>
 
-**Step 4:** The Report Library consists of folders and sub-folders, just like a typical folder hierarchy.
+##  The Report Library
 
-![](/images/ReportLibraryBasics/image2017-8-4_13-27-29.png)
+Each section of the Report Library is detailed below. Before opening a report from the library, look through the Folders and Report Links, and check the Link Version of the desired report. There are 3 main sections of the Report Library: Folders Section, Report Link Section, and the Link Version Section.
+
+### Folders Section
+
+The Folders section of the Report Library contains a hierarchy of folders. You can expand or collapse any folder.
+
+![](/images/ReportLibraryBasics/ReportLibraryFoldersSection.png)
 <br>
 
-###  Using The Report Library
+### Report Link Section
 
-Navigating the Report Library is crucial for efficient use. Each section of the Report Library is detailed below. Before opening a report from the library, look through the Folders and Report Links, and check the Link Version of the desired report.
+The reports of the selected folder will be displayed here in the Report Link section.
 
-![](/images/ReportLibraryBasics/image2017-8-7_9-6-3.png)
+![](/images/ReportLibraryBasics/ReportLibraryLinksSection.png)
 <br>
 
-**Section 1:** Once the Library is opened, select the desired folder in the **Folders** section.
+### Link Version Section 
 
-![](/images/ReportLibraryBasics/2.01UsingtheRL-Folders.png)
+This section contains details of the selected report. 
+
+![](/images/ReportLibraryBasics/ReportLibraryVersionSection.png)
 <br>
 
-**Section 2:** Select a report in the **Report Link** section. These are the links that, when clicked, will open a particular report.
+There are 4 areas within this section:
 
-![](/images/ReportLibraryBasics/2.02UsingtheRL-Report-Links.png)
+1. View Details (Brings up the Link Details window where you can view additional information about this report)
+1. View Documentation (Opens the documentation for this report. If grayed out then documentation has not been set up)
+1. Link Name & Description
+1. Versions (Displays the Version note and lists all the versions)
+
+![](/images/ReportLibraryBasics/LinkVersionSection.png)
 <br>
 
-**Section 3:** Select which version you want to use. It is recommended you use the most recent (green) version, as it is likely the best and most stable. Link Version shows the details of a specific report and any of its available versions. It is important to check Link Version before selecting **Open Link** . Each version is specified in the box at the bottom right of the Report Library window, and they are color-coded to show the stage of development (see image above).
+### Status
 
-**Note:** Depending on your user rights, all previously uploaded versions are shown:
+There are 4 statuses of a link version, each with their own distinctive color:
 
 *  _Green_ : Currently Live
+*  _Gray_ : Superseded, this is an older version of a previous live report
 *  _Yellow_ : In Testing
 *  _Red_ : In Development
-*  _Gray_ : Superseded, this is an older version of a previous live report
 
-![](/images/ReportLibraryBasics/2.03UsingtheRL-LinkVersion.png)
+![](/images/ReportLibraryBasics/Statuses.png)
 <br>
 
-**Section 4:** If you are unsure what the report is for, clicking **View Documentation** on the upper right-hand corner is particularly useful. It should include the history of version changes and a manual that explains how to use the report. If the link is gray, the documentation is not yet ready.
+## Opening a Report
 
- ![](/images/ReportLibraryBasics/2.05UsingtheRL-ViewDocumentation.png)
+To open a report:
+
+1. Select the folder
+1. Select the report
+1. Select the version
+1. Click **Open Link**
+
+![](/images/ReportLibraryBasics/OpenReport.png)
 <br>
 
-**Section 5:** Now click **Open Link** to open the report.
+The report link is opened:
 
- ![](/images/ReportLibraryBasics/2.04UsingtheRL-OpenLink.png)
+![](/images/ReportLibraryBasics/ReportOpened.png)
 <br>
-
-The selected link will open the following report.
-
-![](/images/ReportLibraryBasics/image2017-6-16_13-50-21.png)
-<br>
-
 
 ##  Navigating the Report Library
+
+Navigating the Report Library is crucial for efficient use. There are 3 main ways to navigate the Library and find the report you are looking for.
 
 ### Using the Search Feature
 
