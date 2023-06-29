@@ -1,42 +1,88 @@
 ---
 title: Logging In
 layout: custom
-keywords: [login, ribbon]
-description: Logging in is simple and fast! After logging in once, you can set up auto-login, which saves you from entering credentials each time. You can also log into multiple accounts. 
+keywords: [login, ribbon, logout, new login, credentials]
+description: Logging in is simple and fast! Interject will remember your login and sign you in automatically subsequent visits.You can also add multiple logins and switch accounts easily.
 ---
 
-##  Before Using Interject, Here's How to Login 
+## Overview 
 
-Logging in is simple and fast! After logging in once, you can set up auto-login, which saves you from entering credentials each time. You can also log into multiple accounts. 
+Logging in is simple and fast! Interject will remember your login and sign you in automatically subsequent visits.You can also add multiple logins and switch accounts easily.
 
-###  Locating the Login Form 
+## Initial Interject Login
 
-**Step 1:** Select the Login button on the Interject Ribbon.  ![](/images/LogginIn/interject-ribbon-advanced-menu-login-revised.png)
+**Step 1:** Click the Login button on the Interject Ribbon to bring up the Login Manager.
 
-**Step 2:** Select the company you will be logging with. In this case it will be Interject. 
+![](/images/LogginIn/interject-ribbon-advanced-menu-login-revised.png)
+<br>
 
-**Note:** You can skip this form in the future by checking the box in the bottom left. 
+**Step 2:** Click "Sign into Interject".
 
-![](/images/LogginIn/image2017-6-9_13-25-26.png)
+![](/images/LogginIn/SignIntoInterjectClick.png)
+<br>
 
-###  Process to Log In 
+**Step 3:** Enter your credentials in the Interject Account form and click Login.
 
-Whichever option is chosen, the login process that follows is the same. 
+![](/images/LogginIn/InterjectAccountCredentials.png)
+<br>
 
-**Step 1:** Select the type of account to log in with. In this example, the **Interject** account type is used. 
+**Step 4:** If you click on Login again the Login Manager window appears where you can view the current logins.
 
-**Step 2:** Type in your user name and password. 
+![](/images/LogginIn/LoginManager.png)
+<br>
 
-![](/images/LogginIn/image2017-6-6_11-49-48.png)
+## New Login
 
-**Step 3:** Check the box marked **Auto Login next time** to skip this step in the future. 
+**Step 1:** To add a new login, first click the Login button on the Interject Ribbon.
 
-**Note:** We highly suggest using **Auto Login**, otherwise credentials are required whenever accessing the [ ReportLibrary ](/wAbout/Report-Library-Basics.html). 
+![](/images/LogginIn/interject-ribbon-advanced-menu-login-revised.png)
+<br>
 
-Now you're logged in!
+**Step 2:** Click the New Login button and proceed to enter your credentials the same as in [Initial Interject Login](#initial-interject-login).
 
+![](/images/LogginIn/NewLoginClick.png)
+<br>
 
-  
+## Logging Out
+
+Logging out means Interject will not automatically log you in the next time you return.
+
+To log out, you can click the ellipses on the account you wish to log out and click Log Out.
+
+![](/images/LogginIn/EllipsesLogout.png)
+<br>
+
+You may alternatively click the Logout button on the Interject ribbon.
+
+![](/images/LogginIn/RibbonLogout.png)
+<br>
+
+![](/images/LogginIn/LogoutPrompt.png)
+<br>
+
+## Log Back In
+
+To log back in after you have been logged out, simply click the ellipses on the account you wish to log in and click Log In.
+
+![](/images/LogginIn/LogBackIn.png)
+<br>
+
+## Switch Accounts
+
+To switch between accounts, simply click the link of the account you wish to switch to.
+
+![](/images/LogginIn/SwitchAccounts.png)
+<br>
+
+## Forgetting Login Credentials
+
+Forgetting credentials means you will have to reenter your credentials the next time you wish to log in.
+
+To log out and forget your credentials, click the ellipses on the account you wish to log out and forget and click "Log Out & Forget".
+
+![](/images/LogginIn/LogoutForget.png)
+<br>
+
 
 
   
