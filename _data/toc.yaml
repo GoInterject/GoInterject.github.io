@@ -23,6 +23,9 @@ horizontalnav:
 - title: Troubleshooting
   path: /wTroubleshoot/Troubleshooting-Landing.html
   node: troubleshoot
+- title: Release Notes
+  path: /wReleaseNotes/ReleaseNotesLanding.html
+  node: releaseNotes
 
 design:
 - sectiontitle: Designing Reports
@@ -64,7 +67,9 @@ about:
     path: /wAbout/Adding-a-User.html
   - title: Report Library Basics
     path: /wAbout/Report-Library-Basics.html
-  - title: Resizing Windows
+  - title: Report Library Links
+    path: /wAbout/ReportLibraryLinks.html
+  - title: Resizing Interject Windows
     path: /wAbout/Resizing-Form-Windows.html
   - sectiontitle: Real-World Walkthroughs
     path: /wAbout/Real-World-Walkthroughs.html
@@ -82,15 +87,12 @@ about:
     path: /wAbout/Basics-of-Report-Formulas.html
   - title: Tabular vs Data Cells
     path: /wAbout/Tabular-vs-Data-Cells.html
-- sectiontitle: Interject Security and Privacy
+- sectiontitle: Policies &amp; Procedures
   section:
   - title: Security Policy
     path: /wAbout/security-policy.html
   - title: Privacy Policy
     path: /wAbout/privacy-policy.html
-  - title: TLS for HTTPS
-    path: /wAbout/TLS.html
-
   
 
 # apps:
@@ -327,13 +329,11 @@ portal:
         path: /wPortal/INTERJECT-Roles.html
       - title: Altering User Passwords
         path: /wPortal/Altering-User-Passwords.html
-  
 
 
-   
 Developer:
 - sectiontitle: Api Developer
-  path: 
+  path: /wApi/dot-net-api-setup.html
   section:
     - title: .Net Api Setup
       path: /wApi/dot-net-api-setup.html
@@ -380,6 +380,15 @@ Developer:
     path: /wGetStarted/Managing-Settings-Cache.html
   - title: "Error Handling (RAISERROR and UserNotice)"
     path: /wGetStarted/L-Dev-Error-Handling.html
+- sectiontitle: Security &amp; Authentication
+  path: /wAbout/TLS.html
+  section:
+  - title: TLS for HTTPS
+    path: /wAbout/TLS.html
+  - title: Macro Security
+    path: /wIndex/MacroSecurity.html
+
+
 
 troubleshoot:
 - sectiontitle: Interject Support
@@ -412,4 +421,9 @@ troubleshoot:
     - title: View SQL for ActiveCell
       path: /wTroubleshoot/View-SQL.html
 
-
+releaseNotes:
+- sectiontitle: Stable Versions
+  path: /wReleaseNotes/Ver2_5_0.html
+  section:
+    - title: Ver 2.5.0.14
+      path: /wReleaseNotes/Ver2_5_0.html
