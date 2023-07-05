@@ -63,9 +63,9 @@ This section contains details of the selected report.
 There are 4 areas within this section:
 
 1. View Details (Brings up the Link Details window where you can view additional information about this report)
-1. View Documentation (Opens the documentation for this report. If grayed out then documentation has not been set up)
-1. Link Name & Description
-1. Versions (Displays the Version note and lists all the versions)
+2. View Documentation (Opens the documentation for this report. If grayed out then documentation has not been set up)
+3. Link Name & Description
+4. Versions (Displays the Version note and lists all the versions)
 
 ![](/images/ReportLibraryBasics/LinkVersionSection.png)
 <br>
@@ -87,9 +87,9 @@ There are 4 statuses of a link version, each with their own distinctive color:
 To open a report:
 
 1. Select the folder
-1. Select the report
-1. Select the version
-1. Click **Open Link**
+2. Select the report
+3. Select the version
+4. Click **Open Link**
 
 ![](/images/ReportLibraryBasics/OpenReport.png)
 <br>
@@ -101,11 +101,11 @@ The report link is opened:
 
 ##  Navigating the Report Library
 
-Navigating the Report Library is crucial for efficient use. There are 3 main ways to navigate the Library and find the report you are looking for.
+Navigating the Report Library efficiently is important when there are numerous reports. Interject makes this easy by providing 3 ways to navigate the Library and find the report you are looking for.
 
 ### Using the Search Feature
 
-You can search the Report Library for reports by clicking on the &lt;**Search**&gt; button:
+You can search the Report Library for reports by clicking on the **Search** button:
 
 ![](/images/ReportLibraryBasics/ReportLibrarySearch.png)
 <br>
@@ -120,7 +120,7 @@ As you begin typing in the search field, the most relevant hits will appear on t
 ![](/images/ReportLibraryBasics/SearchReportLinksWindowSearch.png)
 <br>
 
-Clicking on &lt;**Goto**&gt; will highlight that report in the Report Library:
+Clicking on **Goto** will highlight that report in the Report Library:
 
 ![](/images/ReportLibraryBasics/SearchReportLinksWindowGoto.png)
 <br>

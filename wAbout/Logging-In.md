@@ -7,7 +7,12 @@ description: Logging in is simple and fast! Interject will remember your login a
 
 ## Overview 
 
-Logging in is simple and fast! Interject will remember your login and sign you in automatically subsequent visits.You can also add multiple logins and switch accounts easily.
+Logging in is simple and fast! Interject will remember your login for 30 days. You can also add multiple logins and switch accounts easily.
+
+<blockquote class=highlight_note>
+<b>Note:</b> This page uses Interject version 2.5.0.19 for the content and screenshots.
+</blockquote>
+<br>
 
 ## Initial Interject Login
 
@@ -76,7 +81,7 @@ To switch between accounts, simply click the link of the account you wish to swi
 
 ## Forgetting Login Credentials
 
-Forgetting credentials means you will have to reenter your credentials the next time you wish to log in.
+Forgetting credentials means the login entry is deleted from the cache and removed from the Login Manger. You will have to reenter your credentials the next time you wish to log in.
 
 To log out and forget your credentials, click the ellipses on the account you wish to log out and forget and click "Log Out & Forget".
 

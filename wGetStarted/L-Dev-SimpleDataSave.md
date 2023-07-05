@@ -14,14 +14,14 @@ For this simple Data Save, you will set up a ReportSave and modify the report to
 There are 9 major steps to this example:
 
 1. [Setting up the Data Connection](#setting-up-the-data-connection)
-1. [Setting up the Data Portal](#setting-up-the-data-portal)
-1. [Setting up the Report](#setting-up-the-report)
-1. [Setting up the ReportSave Function](#setting-up-the-reportsave-function)
-1. [Setting up the Stored Procedure](#setting-up-the-stored-procedure)
-1. [Add the RequestContext_Parse Stored Procedure](#add-the-requestcontext_parse-stored-procedure)
-1. [Modifying the Stored Procedure](#modifying-the-stored-procedure)
-1. [Testing the Stored Procedure](#testing-the-stored-procedure)
-1. [Testing the ReportSave](#testing-the-reportsave)
+2. [Setting up the Data Portal](#setting-up-the-data-portal)
+3. [Setting up the Report](#setting-up-the-report)
+4. [Setting up the ReportSave Function](#setting-up-the-reportsave-function)
+5. [Setting up the Stored Procedure](#setting-up-the-stored-procedure)
+6. [Add the RequestContext_Parse Stored Procedure](#add-the-requestcontext_parse-stored-procedure)
+7. [Modifying the Stored Procedure](#modifying-the-stored-procedure)
+8. [Testing the Stored Procedure](#testing-the-stored-procedure)
+9. [Testing the ReportSave](#testing-the-reportsave)
 
 <br>
 
@@ -85,8 +85,8 @@ To access the Interject configuration area, unfreeze the panes (if they are froz
 At the top of the report, you will notice the row titled "Column Definitions". This row defines the columns used to pull the data. You will need another set of column definitions for Interject to know what columns you want to save. Finally, you will need a third set for defining the columns Interject will send back to you (e.g. MessageToUser):
 
 1. Column Definitions - Pull
-1. Column Definitions - Save
-1. Column Definitions - Save Results
+2. Column Definitions - Save
+3. Column Definitions - Save Results
 
 To copy the definitions, first highlight the first two rows, right click within the selection and click **Copy**:
 
@@ -106,9 +106,9 @@ Again, copy & paste the same 2 rows, this time by right clicking row 5 and **Ins
 **Step 4:** Set up the configuration section:
 
 1. Enter "MessageToUser" in the last column on row 6 (The save will return a message in this column if there were changes saved in corresponding row)
-1. Enter "\[clear]" in the last column so that the save messages are cleared when pulling data
-1. Clear all values in row 4 except the "CustomerID", "ContactName" and "ContactTitle" (The CustomerID is the key for the database and the other 2 are the column names to be saved)
-1. Add a row below the row containing the **ReportRange** function (You will add the ReportSave function on this new row)
+2. Enter "\[clear]" in the last column so that the save messages are cleared when pulling data
+3. Clear all values in row 4 except the "CustomerID", "ContactName" and "ContactTitle" (The CustomerID is the key for the database and the other 2 are the column names to be saved)
+4. Add a row below the row containing the **ReportRange** function (You will add the ReportSave function on this new row)
 
 ![](/images/L-Dev-SimpleDataSave/SetupConfigSection.png)
 <br>
@@ -125,9 +125,9 @@ The only thing left to set up in this report is the actual ReportSave function.
 **Step 2:** Enter the following details in the Function Wizard:
 
 1. **DataPortal:** Enter the Data Portal you set up in the [beginning](#setting-up-the-data-portal).
-1. **RowDefRange:** This range defines the unique keys in the data source for each row. In this case it is the CustomerID. Enter the single column range for the CustomerIDs and be sure to select one row beyond the last ID (to allow expansion).
-1. **ColDefRange:** Enter "4:4". This range contains the columns that will be saved.
-1. **ResultsRange:** Enter "6:6". This range represents the columns returned by the Stored Procedure.
+2. **RowDefRange:** This range defines the unique keys in the data source for each row. In this case it is the CustomerID. Enter the single column range for the CustomerIDs and be sure to select one row beyond the last ID (to allow expansion).
+3. **ColDefRange:** Enter "4:4". This range contains the columns that will be saved.
+4. **ResultsRange:** Enter "6:6". This range represents the columns returned by the Stored Procedure.
 
 ![](/images/L-Dev-SimpleDataSave/FunctionWizardFilled.png)
 <br>
@@ -466,7 +466,7 @@ The SQL auto generated template by Interject is formatted based on the ReportSav
 
 There are 2 parameters in the SP. The first one "Interject_RequestContext" was the System Parameter you set up in the Data Portal. Again, this XML contextual information will be passed by Interject to the SP upon execution.
 
-The second parameter is a "TestMode" bit. If you want to test the SP, set this parameter to 1 and it will print out detailed information upon execution that you can use to diagnosis. In addition, setting the TestMode bit will also keep your database unchanged as it will rollback any changes.
+The second parameter is a "TestMode" bit. If you want to test the SP, set this parameter to 1 and it will print out detailed information upon execution useful for troubleshooting. In addition, setting the TestMode bit will also keep your database unchanged as it will rollback any changes.
 
 ![](/images/L-Dev-SimpleDataSave/SPParams.png)
 <br>
@@ -513,9 +513,9 @@ This section will take the XML data sent by Interject from your report and put i
 Now that you have all the data from your report into a table, you can do some validations on it before your target data source is updated. This section will run through certain validations and marks the \_MessageToUser parameter upon a check. This is example code. You can use and modify it to match your report and data or you can delete it. There are 4 validation checks in the example code:
 
 1. Validating a parameter is a certain value (not used in this example)
-1. Validating the data to save does not contain duplicate keys (change data type and size to match your data)
-1. Validating a required column is not blank (not used in this example)
-1. Validating a column has certain text (not used in this example)
+2. Validating the data to save does not contain duplicate keys (change data type and size to match your data)
+3. Validating a required column is not blank (not used in this example)
+4. Validating a column has certain text (not used in this example)
 
 If any validation checks recorded a message, this SP will GOTO the end and not update any records. It will also record the message on the same row where the validation check encountered an error. Thus it can display this message back to the user on the same Excel row.
 
@@ -538,7 +538,7 @@ Next, another table variable is declared. The "@ChangeLog" table will be filled 
 
 ### Merge
 
-The Merge statement essentially merges two tables together based on certain criteria. In this example, you are merging the @DataToProcess table which comes from your Excel report with the target table in the database. The Merge statement can add data that is present in one table into the other table. It can also update data that has been changed by comparing the two.
+The Merge statement essentially synchronizes two tables by inserting, updating, or deleting rows in one table based on differences found in the other table. In this example, you are merging the @DataToProcess table which comes from your Excel report with the target table in the database. The Merge statement can add data that is present in one table into the other table. It can also update data that has been changed by comparing the two.
 
 The "BEGIN TRAN t1" statement starts a transaction. Everything that follows will be included in this transaction. A transaction is a series of executions that are either executed entirely or not at all. Thus they can be rolled back if their are errors in the execution or if the [TestMode](#Parameters) bit was set.
 

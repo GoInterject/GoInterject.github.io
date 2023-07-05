@@ -29,9 +29,9 @@ The Report Library provides an easy interface where new reports can be uploaded,
 **Step 4:** The Link Details Window appears where you can enter details about the report:
 
 1. Enter a name for the report
-1. Enter an optional description
-1. Set the status of the report to live (see [here](/wAbout/Report-Library-Basics.html#status) for more info on statuses)
-1. Click save to save the report
+2. Enter an optional description
+3. Set the status of the report to live (see [here](/wAbout/Report-Library-Basics.html#status) for more info on statuses)
+4. Click save to save the report
 
 ![](/images/ReportLibraryLinks/CreateNewLinkSave.png)
 <br>
@@ -56,8 +56,8 @@ Note: If the file is not saved locally you will be prompted to save the file fir
 **Step 2:** The Link Details Window appears where you can enter details about the report:
 
 1. Enter a name for the report
-1. Enter an optional description
-1. Set the status of the report to live
+2. Enter an optional description
+3. Set the status of the report to live
 
 ![](/images/ReportLibraryLinks/CreateNewLinkFileClosedSave.png)
 <br>
