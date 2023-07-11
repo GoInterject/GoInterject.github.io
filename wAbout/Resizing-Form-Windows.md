@@ -1,17 +1,17 @@
 ---
-title: Resizing Form Text
+title: Resizing Interject Windows
 layout: custom
-keywords: [resize, forms, text resize, make text bigger]
-description: This is a walkthrough on how to make the Interject pop-up windows text larger
+keywords: [resize, windows, forms, text resize, make text bigger]
+description: This is a walkthrough on how to make the Interject pop-up windows larger
 ---
 
 ## Overview
 
-At some screen resolutions, Interject'S form window pop-ups can be small and sometimes difficult to read. Luckily, there is a way to quickly resize form windows, helping make them easier to read. You'll have the option to apply resizing to all sizable windows, or just the individual window you currently have open.
+At some screen resolutions, Interject's form window pop-ups can be small and sometimes difficult to read. Fortunately, there is a convenient way to resize the windows and make them easier to read. You have the option to apply resizing to all sizable windows or just the individual window you currently have open.
 
-### Quick Guide
+## Resizing Windows
 
-The button to resize windows can be found in the same location in every window and looks like this:
+The button to resize windows can be found in the same location in every window and looks like this.
 
 ![](/images/Resizing-Form-Windows/0.7.png)
 <br>
@@ -26,10 +26,7 @@ You can also choose a custom sizing within a range of 75%-200% magnification.
 ![](/images/Resizing-Form-Windows/0.9.png)
 <br>
 
-### Tutorials
-
-<button class="collapsible">Resizing Individual Windows Walk-through</button>
-<div markdown="1" class="panel">
+## Resize the Current Window
 
 First, we'll resize just the window that opens when you click on the PULL Data button in the Interject ribbon. The process is the same for all other Interject windows that can be resized. 
 
@@ -43,45 +40,43 @@ First, we'll resize just the window that opens when you click on the PULL Data b
 ![](/images/Resizing-Form-Windows/02.png)
 <br>
 
-**Step 3:** Click the resize button, and a new menu will open:
+**Step 3:** Click the resize button, and a new menu will open.
 
 ![](/images/Resizing-Form-Windows/03.png)
 <br>
 
-> There are 3 predefined sizes for Interject windows:
->
-> * Small, which is the default 100% view size
-> * Medium, which is 125% view size
-> * Large, which is 150% view size
->
-> ![](/images/Resizing-Form-Windows/04.png)
-> <br>
+There are 3 predefined sizes for Interject windows.
+
+* Small, which is the default 100% view size
+* Medium, which is 125% view size
+* Large, which is 150% view size
+
+![](/images/Resizing-Form-Windows/04.png)
+<br>
 
 **Step 4:** Select the **M** button to choose the medium size.
 
-![](/images/Resizing-Form-Windows/05.png)
+![](/images/Resizing-Form-Windows/05a.png)
 <br>
 
-Your window will now enlarge, as shown below:
+Your window will now enlarge, as shown below.
 
-![](/images/Resizing-Form-Windows/06.png)
+![](/images/Resizing-Form-Windows/06a.png)
 <br>
 
-You also have the ability to choose a custom view size within a range of 75% - 200%
+You also have the ability to choose a custom view size within a range of 75% - 200%.
 
-**Step 5:** For example, enter 115 into the size field to set your window size to 115%
+**Step 5:** For example, enter 115 into the size field to set your window size to 115%.
 
 ![](/images/Resizing-Form-Windows/07.png)
 <br>
 
-Your window will now be between the small size and the medium size, as shown below:
+Your window will now be between the small size and the medium size, as shown below.
 
 ![](/images/Resizing-Form-Windows/08.png)
 <br>
-</div>
 
-<button class="collapsible">Resizing All Windows Walk-through</button>
-<div markdown="1" class="panel">
+## Resize All Windows
 
 In addition to sizing individual windows, Interject allows you to use the current window view size to set all the other Interject window sizes. This will allows you to apply the size you like to all pop-up windows.
 
@@ -95,28 +90,27 @@ In addition to sizing individual windows, Interject allows you to use the curren
 ![](/images/Resizing-Form-Windows/02.png)
 <br>
 
-**Step 3:** Click the resize button, and a new menu will open:
+**Step 3:** Click the resize button, and a new menu will open.
 
 ![](/images/Resizing-Form-Windows/03.png)
 <br>
 
-**Step 4:** Select the **M** button to choose the medium size.
+**Step 5:** First click the **Apply to all** check box.
 
 ![](/images/Resizing-Form-Windows/05.png)
 <br>
 
-**Step 5:** Then click the **Apply to all** check box
+**Step 4:** Then select the **M** button to choose the medium size.
 
-![](/images/Resizing-Form-Windows/09.png)
+![](/images/Resizing-Form-Windows/06.png)
 <br>
 
-**Step 6:** Now close that window and select the **SAVE Data** button
+**Step 6:** To see your changes, select the **SAVE Data** button.
 
 ![](/images/Resizing-Form-Windows/10.png)
 <br>
 
-You will notice that your window opened with the medium size, as shown below:
+You will notice that your window opened with the medium size, as shown below.
 
 ![](/images/Resizing-Form-Windows/11.png)
 <br>
-</div>

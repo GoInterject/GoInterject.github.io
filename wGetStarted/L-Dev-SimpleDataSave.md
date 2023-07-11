@@ -9,7 +9,21 @@ description: In this example you will create a simple data save using the Custom
 
 In this example you will build from the previous report where you built a [Data Pull](/wGetStarted/L-Dev-CustomerAging.html). Here, you will create a data portal to save the data using the Interject function [ReportSave](/wIndex/ReportSave.html). This function makes it convenient to modify the data source right inside of your Excel report without having to edit the data source directly.
 
-For this simple Data Save, you will set up a save and modify the report to save a customer's contact name and title.
+For this simple Data Save, you will set up a ReportSave and modify the report to save a customer's contact name and title. After completing this example, you will be able to make changes within the report and save those changes to the database by executing the [Interject Save](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data). Interject will send these changes along with the rest of the data from the report to the Data Portal, which will call the Stored Procedure. The Stored Procedure will save the changes and send back a message (MessageToUser) for each line that contained changes.
+
+There are 9 major steps to this example:
+
+1. [Setting up the Data Connection](#setting-up-the-data-connection)
+2. [Setting up the Data Portal](#setting-up-the-data-portal)
+3. [Setting up the Report](#setting-up-the-report)
+4. [Setting up the ReportSave Function](#setting-up-the-reportsave-function)
+5. [Setting up the Stored Procedure](#setting-up-the-stored-procedure)
+6. [Add the RequestContext_Parse Stored Procedure](#add-the-requestcontext_parse-stored-procedure)
+7. [Modifying the Stored Procedure](#modifying-the-stored-procedure)
+8. [Testing the Stored Procedure](#testing-the-stored-procedure)
+9. [Testing the ReportSave](#testing-the-reportsave)
+
+<br>
 
 <blockquote class=highlight_note>
 <b>Note:</b> This example uses Microsoft's Northwind Database. You can download this database <a href="https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases">here</a> or you can use this example as a guide for your own data source.
@@ -28,14 +42,14 @@ For the Data Connection for this example, you will use the connection previously
 
 **Step 2:** Enter the following details on setting up the new data portal and click "**CREATE DATA PORTAL**".
 
-* **Data Portal Code:** NorthWindSimpleDataSave
+* **Data Portal Code:** Demo_NorthwindSimpleData_Save
 * **Description:** Data portal for simple data save
 * **Category:** Demo
-* **Connection:** NorthWindExampleDB_MyName
+* **Connection:** NorthwindExampleDB_MyName
 * **Command Type:** Stored Procedure
-* **Stored Procedure/Command:** NorthWindSimpleDataSaveSP
+* **Stored Procedure/Command:** demo.NorthwindSimpleDataSave
 
-Note: You will create the "NorthWindSimpleDataSaveSP" Stored Procedure later.
+Note: You will create the "NorthwindSimpleDataSave" Stored Procedure later.
 <br>
 
 ![](/images/L-Dev-SimpleDataSave/DataPortalDetails.png)
@@ -50,39 +64,51 @@ The System Parameter "Interject_RequestContext" will transfer contextual data to
 
 ## Setting up the Report
 
-Begin by opening up the report that was completed in the [Data Pull](/wGetStarted/L-Dev-CustomerAging.html#create-the-report). You will modify this report to set up the ReportSave.
+This example begins by setting up the Excel report. Open up the report that was completed in the [Data Pull](/wGetStarted/L-Dev-CustomerAging.html#create-the-report). You will modify this report to set up the ReportSave.
 
-**Step 1:** Ensure "Market" is entered as a Company Name filter and pull the data:
+**Step 1:** Filter and Pull: 
+
+To start, you will pull the data. In order to work with just a small subset of data, ensure "Market" is entered as a Company Name filter and pull the data:
 
 ![](/images/L-Dev-SimpleDataSave/PullData.png)
 <br>
 
-**Step 2:** Unfreeze the panes (if they are frozen):
+**Step 2:** Unfreeze Panes: 
+
+To access the Interject configuration area, unfreeze the panes (if they are frozen):
 
 ![](/images/L-Dev-SimpleDataSave/UnfreezePanes.png)
 <br>
 
-**Step 3:** Highlight the first two rows, right click within the selection and click **Copy**:
+**Step 3:** Setup Three Column Definition Sections: 
+
+At the top of the report, you will notice the row titled "Column Definitions". This row defines the columns used to pull the data. You will need another set of column definitions for Interject to know what columns you want to save. Finally, you will need a third set for defining the columns Interject will send back to you (e.g. MessageToUser):
+
+1. Column Definitions - Pull
+2. Column Definitions - Save
+3. Column Definitions - Save Results
+
+To copy the definitions, first highlight the first two rows, right click within the selection and click **Copy**:
 
 ![](/images/L-Dev-SimpleDataSave/HighlightFirstTwoRows.png)
 <br>
 
-**Step 4:** Right click row 3 and click **Insert Copied Cells**:
+Right click row 3 and click **Insert Copied Cells**:
 
 ![](/images/L-Dev-SimpleDataSave/InsertCopiedRows.png)
 <br>
 
-**Step 5:** Copy & paste the same 2 rows again this time by right clicking row 5 and  **Insert Copied Cells**:
+Again, copy & paste the same 2 rows, this time by right clicking row 5 and **Insert Copied Cells**:
 
 ![](/images/L-Dev-SimpleDataSave/InsertCopiedRowsAgain.png)
 <br>
 
-**Step 6:** Set up the configuration section:
+**Step 4:** Set up the configuration section:
 
-1. Entering "\[clear]" in the last column (This will clear the messages when pulling)
-1. Clear all values in row 4 except the "CustomerID", "ContactName" and "ContactTitle" (These are the column names that will be used to save to the data source)
-1. Enter "MessageToUser" in the last column on row 6 (The save will return a message in this column if necessary)
-1. Add a row below the row containing the **ReportRange** function (You will add the ReportSave function on this new row)
+1. Enter "MessageToUser" in the last column on row 6 (The save will return a message in this column if there were changes saved in corresponding row)
+2. Enter "\[clear]" in the last column so that the save messages are cleared when pulling data
+3. Clear all values in row 4 except the "CustomerID", "ContactName" and "ContactTitle" (The CustomerID is the key for the database and the other 2 are the column names to be saved)
+4. Add a row below the row containing the **ReportRange** function (You will add the ReportSave function on this new row)
 
 ![](/images/L-Dev-SimpleDataSave/SetupConfigSection.png)
 <br>
@@ -98,10 +124,10 @@ The only thing left to set up in this report is the actual ReportSave function.
 
 **Step 2:** Enter the following details in the Function Wizard:
 
-1. **DataPortal:** Enter the Data Portal you set up in the [beginning](/wGetStarted/L-Dev-SimpleDataSave.html#setting-up-the-data-portal).
-1. **RowDefRange:** This range defines the unique keys in the data source for each row. In this case it is the CustomerID. Enter the single column range for the CustomerIDs and be sure to select one row beyond the last ID (to allow expansion).
-1. **ColDefRange:** Enter "4:4". This range contains the columns that will be saved.
-1. **ResultsRange:** Enter "6:6". This range represents the return message to the user.
+1. **DataPortal:** Enter the Data Portal you set up in the [beginning](#setting-up-the-data-portal).
+2. **RowDefRange:** This range defines the unique keys in the data source for each row. In this case it is the CustomerID. Enter the single column range for the CustomerIDs and be sure to select one row beyond the last ID (to allow expansion).
+3. **ColDefRange:** Enter "4:4". This range contains the columns that will be saved.
+4. **ResultsRange:** Enter "6:6". This range represents the columns returned by the Stored Procedure.
 
 ![](/images/L-Dev-SimpleDataSave/FunctionWizardFilled.png)
 <br>
@@ -440,7 +466,7 @@ The SQL auto generated template by Interject is formatted based on the ReportSav
 
 There are 2 parameters in the SP. The first one "Interject_RequestContext" was the System Parameter you set up in the Data Portal. Again, this XML contextual information will be passed by Interject to the SP upon execution.
 
-The second parameter is a "TestMode" bit. If you are testing, you can set the value to 1 to print out detailed information upon execution. This will also rollback any changes so your database remains unchanged.
+The second parameter is a "TestMode" bit. If you want to test the SP, set this parameter to 1 and it will print out detailed information upon execution useful for troubleshooting. In addition, setting the TestMode bit will also keep your database unchanged as it will rollback any changes.
 
 ![](/images/L-Dev-SimpleDataSave/SPParams.png)
 <br>
@@ -461,7 +487,7 @@ This section declares and sets variables with the RequestContext_Parse SP. This 
 
 ### Error Message
 
-The ErrorMessageToUser is declared as blank to begin with. If the execution of the SP encounters any errors, it will set this variable with a message.
+The ErrorMessageToUser parameter is used to collect error messages. It is set to blank at the beginning and will collect messages as the SP encounters errors. You can use this parameter to display these messages back to the user.
 
 ![](/images/L-Dev-SimpleDataSave/SPErrorMessage.png)
 <br>
@@ -484,20 +510,26 @@ This section will take the XML data sent by Interject from your report and put i
 
 ### Validations
 
-Now that you have all the data from your report into a table, you can do some validations on it before your target data source is updated. This section will run through certain validations and marks the \_MessageToUser upon a check. This is example code. You can use and modify it to match your report and data or you can delete it. There are 5 parts:
+Now that you have all the data from your report into a table, you can do some validations on it before your target data source is updated. This section will run through certain validations and marks the \_MessageToUser parameter upon a check. This is example code. You can use and modify it to match your report and data or you can delete it. There are 4 validation checks in the example code:
 
 1. Validating a parameter is a certain value (not used in this example)
-1. Validating the data to save does not contain duplicate keys (change data type and size to match your data)
-1. Validating a required column is not blank (not used in this example)
-1. Validating a column has certain text (not used in this example)
-1. If any validation checks recorded a message, this SP will GOTO the end and not update any records (it will show the user the message on the corresponding row)
+2. Validating the data to save does not contain duplicate keys (change data type and size to match your data)
+3. Validating a required column is not blank (not used in this example)
+4. Validating a column has certain text (not used in this example)
+
+If any validation checks recorded a message, this SP will GOTO the end and not update any records. It will also record the message on the same row where the validation check encountered an error. Thus it can display this message back to the user on the same Excel row.
 
 ![](/images/L-Dev-SimpleDataSave/SPValidation.png)
 <br>
 
-### ChangeLog
+### Example Table To Update
 
 You can delete the "CREATE TABLE #ExampleTableToUpdate" part, it is not used in this example. 
+
+![](/images/L-Dev-SimpleDataSave/ExampleTableToUpdate.png)
+<br>
+
+### Change Log
 
 Next, another table variable is declared. The "@ChangeLog" table will be filled with information regarding the changes to the data, such as the row in the Excel report, the type of change that was done, and the corresponding key.
 
@@ -506,18 +538,18 @@ Next, another table variable is declared. The "@ChangeLog" table will be filled 
 
 ### Merge
 
-This section is where the data from your report (located in the "@DataToProcess" table), is merged with the target table in your database. It first declares a transaction. This is so the following changes can either be committed if no errors or rolled back if there is an error. 
+The Merge statement essentially synchronizes two tables by inserting, updating, or deleting rows in one table based on differences found in the other table. In this example, you are merging the @DataToProcess table which comes from your Excel report with the target table in the database. The Merge statement can add data that is present in one table into the other table. It can also update data that has been changed by comparing the two.
 
-Next it merges by joining the tables on your key and updating the desired columns when there is a change detected. 
+The "BEGIN TRAN t1" statement starts a transaction. Everything that follows will be included in this transaction. A transaction is a series of executions that are either executed entirely or not at all. Thus they can be rolled back if their are errors in the execution or if the [TestMode](#Parameters) bit was set.
 
-Finally, it outputs the change information to the "@ChangeLog" table.
+The first section in the Merge statement selects the columns from your @DataToProcess table and joins them to your target table on the column key. Following, it updates your target table when the column key matches but the data columns are not the same (i.e. a change has been made in the report). Finally, the Merge statement outputs information that was changed to the separate @ChangeLog table.
 
 ![](/images/L-Dev-SimpleDataSave/SPMerge.png)
 <br>
 
 ### Set Message To User
 
-This section sets the message that will be displayed to the user by comparing the action values in the "@ChangeLog" table. You can change the message to anything you like.
+This section joins the two tables @DataToProcess and @ChangeLog and updates the message to the user based on the type of change that was done in the Merge. This message will be displayed in the Excel report on the row that contains the change.
 
 ![](/images/L-Dev-SimpleDataSave/SPSetMessageToUser.png)
 <br>
@@ -539,7 +571,7 @@ The following is the finished SP:
 <div markdown="1" class="panel">
 
 ```sql
-CREATE OR ALTER PROC NorthWindSimpleDataSaveSP
+CREATE OR ALTER PROC [dbo].[NorthWindSimpleDataSaveSP]
 
 	-- System Params not in formula
 	@Interject_RequestContext nvarchar(max)
@@ -983,7 +1015,7 @@ FinalResponseToUser:
 
 ## Testing the Stored Procedure
 
-Now you can test the SP by using the [test code](/wGetStarted/L-Dev-SimpleDataSave.html#testing). For example, make a change to the data in the test code and execute the test. Because the "@TestMode" bit is set to 1, it will display all kinds of information about the SP process. Notice the changes and message to user that would be displayed.
+Now you can test the SP by using the [test code](/wGetStarted/L-Dev-SimpleDataSave.html#testing). For example, make a change to the data in the test code and execute the test. In this example, Jose's middle name is changed to "Smith." Because the "@TestMode" bit is set to 1, it will display all kinds of information about the SP process. Notice the changes and message to user that would be displayed.
 
 ![](/images/L-Dev-SimpleDataSave/TestingSP.png)
 <br>
@@ -997,12 +1029,14 @@ Note that when using the test script, no actually changes are being made to the 
 
 The only thing left to do is test the SP by running the ReportSave function within the Excel report.
 
-First pull the data:
+Start by first pulling the data:
 
 ![](/images/L-Dev-SimpleDataSave/TestingPullData.png)
 <br>
 
 Next make a change to a Contact Name or Contact Title and run the Report Save:
+
+![](/images/L-Dev-SimpleDataSave/ReportSaveButton.png)
 
 ![](/images/L-Dev-SimpleDataSave/TestingSave.png)
 <br>
