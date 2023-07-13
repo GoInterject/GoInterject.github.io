@@ -6,7 +6,7 @@ description: Sometimes uploading a report from a cloud drive results in errors. 
 ---
 ##  Overview
 
-The [Report Library](/wAbout/Report-Library-Basics.html) provides a central hub where you can upload and download reports to and from. Sometimes uploading a report from a cloud drive (e.g. OneDrive, SharePoint) results in errors. This guide helps you identify cloud files, reveals possible errors that may occur, and a few work-arounds.
+The [Report Library](/wAbout/Report-Library-Basics.html) provides a central hub where you can upload and download reports. Sometimes uploading a report from a cloud drive (e.g. OneDrive, SharePoint) results in errors. This guide helps you identify cloud files, reveals possible errors that may occur, and covers a few work-arounds.
 
 ## Identifying Cloud Files
 
