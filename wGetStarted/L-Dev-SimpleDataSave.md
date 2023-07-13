@@ -103,7 +103,7 @@ The only thing left to set up in this report is the actual ReportSave function.
 1. **ColDefRange:** Enter "4:4". This range contains the columns that will be saved.
 1. **ResultsRange:** Enter "6:6". This range represents the return message to the user.
 
-![](/images/L-Dev-SimpleDataSave/FunctionWizardFilled.png)
+![](/images/L-Dev-SimpleDataSave/FunctionWizardFilled2.png)
 <br>
 
 Everything is now ready for the ReportSave. You can further customize your report with styling and colors if you like:
