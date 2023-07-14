@@ -122,10 +122,10 @@ In this case, we want to pull CustomerAging on open, so type **T:InventoryByCate
 ![](/images/L-Create-InventoryFix/20.png)
 <br> 
 
-**Step 5** Save the file, and [ Update the report library ](/wGetStarted/L-Create-UpdatingReportLibrary.html) with the new file
+**Step 5** Save the file and [ Update the report library ](/wGetStarted/L-Create-UpdatingReportLibrary.html) with the new file.
 
 <blockquote class=lab_info>
-  Do not upload this file to the Report Library if you are following the Training Labs.
+  Do not upload this file to the Report Library if you are following the Training Labs. You may save the file locally, however, if you want to keep a local copy.
 </blockquote>
 
 ![](/images/L-Create-InventoryFix/21.png)

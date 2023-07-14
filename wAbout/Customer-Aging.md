@@ -58,20 +58,20 @@ Once that cell is selected you can drill deeper into the data. Below are the des
   1. First, select cell or row to drill. 
   2. Select the Drill operation in the Interject Ribbon.  
   3. Select the desired drill you would like to perform , in this case you are selecting **Drill to Aging Detail**.
-  4. Complete the drill be selecting **Do Drill**.
+  4. Complete the drill by selecting **Do Drill**.
 
 ![](/images/Walkthrough-CustAging/09.png)   
 
-This allows us to see which invoices have not been paid. As looking deeper into the report, notice that more recent invoices are paid, but the customer is struggling to pay past-dated invoices. 
+This allows us to see which invoices have not been paid. Looking deeper into the report, notice that more recent invoices are paid, but the customer is struggling to pay past-dated invoices. 
 
 ![](/images/Walkthrough-CustAging/10.png)
 
-**Step 2:** Notice that Jose mailed a check for the first invoice and it should arrive on the 18th. However, you would still need to call about the other invoice and note what is discussed. 
+**Step 2:** Notice that Jose mailed a check for the first invoice and it should arrive on the 18th. However, you would still need to call about the other invoice and add a comment on what was discussed. 
 
 ![](/images/Walkthrough-CustAging/11.png)
 
-**Step 3:** Now that you have talked with Jose, you find out that he will be mailing the check with the overdue funds tomorrow. To keep from forgetting, you can add a note to your report. 
-
+**Step 3:** Now that you have talked with Jose, you find out that he will be mailing the check with the overdue funds tomorrow. To keep from forgetting, you can add a comment to your report. 
+s
 ![](/images/Walkthrough-CustAging/12.png)
 
 Back to Top 
