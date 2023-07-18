@@ -1,7 +1,7 @@
 ---
 title: "Create: Inventory Fixed Report"
 layout: custom
-keywords: [fixed, inventory, report, create]
+keywords: [fixed, inventory, report, create, jWorkbookProperty, run on open]
 description: In this page, you will go through the process of building a fixed Inventory report from scratch using the ReportFixed() function.
 ---
 
@@ -26,7 +26,6 @@ In this page, you will go through the process of building a fixed Inventory repo
 <br>
 
 After the report is built, it will look like the one below. There are no parameters involved with this report, so none are listed after row 14. 
-
 ![](/images/L-Create-InventoryFix/03.png)
 <br>
 
@@ -53,7 +52,6 @@ Delete rows 11 through 24 since they are not needed for this lesson. The page sh
 In order to bring in the correct data you will need to designate a Dataportal. The Dataportal for this example is **NorthwindFixed**. 
 
 ![](/images/L-Create-InventoryFix/07.png)
-
 <br>
 
 **Step 6:** In a [ ReportFixed ](/wIndex/ReportFixed.html) function you need to define the Column Definition and Row Definition ranges. Using the Function Wizard, use B16:B28 for the  RowDefRange . For Column Definitions, use row 2 by typing **2:2** in the ColDefRange argument. 
@@ -61,10 +59,9 @@ In order to bring in the correct data you will need to designate a Dataportal. T
 ![](/images/L-Create-InventoryFix/09.png)
 <br>
 
-**Step 7:** Now define the Column Definitions that are available in the Dataportal. Type **ProductTypeCount** in G2 and **UnitsInStock** in H2. 
+**Step 7:** Now define the Column Definitions that are available in the Dataportal. Type **ProductTypeCount** in G2 and **UnitsInStock** in H2.
 
 ![](/images/L-Create-InventoryFix/10.png)   
-
 <br>
 
 **Step 8:** In this step, add column labels, report titles, borders, and subtotals. Change the report to match. 
