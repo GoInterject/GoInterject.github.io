@@ -37,14 +37,13 @@ The [ ReportVariable() ](/wIndex/ReportVariable.html) function directs data into
 2. Second, pull down the Freeze Panes menu and select Unfreeze. 
 3. Last, click the plus sign, as shown below, to can expand the column groupings. 
 
-
 ![](/images/L-Create-InventoryVar/04.png)
 <br> 
 
 Scroll to the top, and  the full configuration area is seen  in the left of the report. Clear the formula in cell C4 so you can build the ReportVariable() function from the beginning. 
 
 ![](/images/L-Create-InventoryVar/05.png)
-
+<br>
 
 **Step 5:** Now create a new report formula. In cell C4 type [ **=ReportVariable()** ](/wIndex/ReportVariable.html). 
 
@@ -125,7 +124,7 @@ The data should be presented as shown below.
 ![](/images/L-Create-InventoryVar/20.png)
 <br> 
 
-Once the panes are frozen the final result should look similar to the image below.   
+Once the panes are frozen using Interject's [Freeze Panes](/wIndex/QuickTools-Panes.html), the final result should look similar to the image below.   
 
 ![](/images/L-Create-InventoryVar/21.png)
 <br>
@@ -157,5 +156,5 @@ Notice all the groups are collapsed.
 Finally, clear the report, refreeze the panes, and upload it to the [ Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary.html).
 
 <blockquote class=lab_info>
-  Do not upload this file to the Report Library if you are following the Training Labs.
+  Do not upload this file to the Report Library if you are following the Training Labs. You may save the file locally, however, if you want to keep a local copy.
 </blockquote>
