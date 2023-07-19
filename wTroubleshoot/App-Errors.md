@@ -15,3 +15,11 @@ It is important to disable the animations feature of Excel. Running animations w
 ### [Addins Missing](/wTroubleshoot/Addin-Missing.html)
 
 If your Excel Addins go missing, you can follow these steps to reset them.
+
+### [Web Proxy Configuration](/wTroubleshoot/WebProxy.html)
+
+The Interject Addin allows users to authenticate using Windows authentication. For this Interject uses System.Net.CredentialCache.DefaultCredential library to set up a proxy. Interject's default Windows proxy at the application level can prevent a client's machine level proxy. This will prevent a user from being able to log in. To get around this, there is an Interject setting where users and clients can disable the Windows proxy.
+
+### [Cloud File Uploads Incorrectly](/wTroubleshoot/Cloud-File.html)
+
+The Report Library provides a central hub where you can upload and download reports. Sometimes uploading a report from a cloud drive (e.g. OneDrive, SharePoint) results in errors. This guide helps you identify cloud files, reveals possible errors that may occur, and covers a few work-arounds.
