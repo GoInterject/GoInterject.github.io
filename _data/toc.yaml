@@ -406,6 +406,8 @@ troubleshoot:
       path: /wTroubleshoot/Addin-Missing.html
     - title: Web Proxy Configuration
       path: /wTroubleshoot/WebProxy.html
+    - title: Cloud File Uploads Incorrectly
+      path: /wTroubleshoot/Cloud-File.html
 - sectiontitle: Report Errors
   path: /wTroubleshoot/Reports.html
   section:
