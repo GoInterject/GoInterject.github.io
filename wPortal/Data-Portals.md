@@ -309,7 +309,7 @@ Is an output parameter that can be used to return an error back to the user. Pas
 <tr>  
 <td>
 
-Interject_RequestContext
+<a href="https://docs.gointerject.com/wIndex/Request-Context-Parse.html">Interject_RequestContext</a>
 
 </td>  
 <td>
