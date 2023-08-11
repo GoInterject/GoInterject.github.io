@@ -1,0 +1,22 @@
+/* Classes for Google search engine cursor */
+/* The page number container */
+.gsc-cursor {
+    padding: 0px;
+}
+
+/* The page number */
+.gsc-cursor-page {
+    padding: 5px;
+	font-size: 15px;
+}
+
+/* The current page number */
+.gsc-cursor-current-page {
+    padding: 5px;
+}
+
+/* The "Search for.." and "Enhanced by Google" container */
+.gcsc-more-maybe-branding-root {
+    padding-top: 20px;
+}
+
