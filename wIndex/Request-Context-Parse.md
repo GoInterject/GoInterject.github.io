@@ -1,14 +1,46 @@
 ---
 title: Request Context Parse
 layout: custom
-keywords: [request context, parse, system parameter, stored procedure]
+keywords: [request context, parse, system parameter, stored procedure, XML]
 description: This page that lists the interject request context parse stored procedure
 ---
+* * *
 
-### Stored Procedure Summary
+## Overview
 
-The Request Context Parse stored procedure is used as a callable helper procedure when utilizing the Interject_RequestContext system parameter. It converts the XML nodes that are brought in by the system parameter into variable values. These variable values correspond to all the other system parameters that Interject offers.
+The RequestContext_Parse stored procedure is used as a callable helper procedure when utilizing the Interject_RequestContext system parameter. It converts the XML nodes that are brought in by the system parameter into variable values. These variable values correspond to all the other system parameters that Interject offers.
 
+### Procedure Variables
+
+When a Data Portal is setup with the System Parameter "Interject_RequestContext", Interject will send context information which can be accessed and parsed to local variables in the the Stored Procedure or command:
+
+| Variable | Data Type | Description |
+|-----|-----|-----|
+| ExcelVersion | nvarchar(100) | The version of Excel being used |
+| IdsVersion | nvarchar(100) | The version of Interject being used |
+| FileName | nvarchar(1000) | The name of the file |
+| FilePath | nvarchar(1000) | The path of the file |
+| TabName | nvarchar(1000) | The name of the Excel tab of the report formula |
+| CellRange | nvarchar(100) | The cell reference of the report formula |
+| SourceFunction | nvarchar(100) | The type of report formula |
+| UtcOffset | decimal(6,4) | The number of hours UTC needs to offset to get to the current local time |
+| ColDefItems | nvarchar(max) | A list of Column Definition items |
+| ResultDefItems | nvarchar(max) | A list of Result Definition items |
+| RowDefItems | nvarchar(max) | A list of Row Definition items |
+| RowDefItems2 | nvarchar(max) | A list of Row Definition items that include a unique RowDefName |
+| MachineLoginName | nvarchar(100) | The login name of the user |
+| MachineName | nvarchar(100) | The name of the machine being used |
+| FullName | nvarchar(100) | The full name of the user |
+| UserId | nvarchar(100) | The User ID of the user |
+| ClientId | nvarchar(100) | The Client ID of the user |
+| LoginName | nvarchar(100) | The login name or email of the user |
+| LoginAuthTypeID | int | &lt;Not used&gt; |
+| LoginDateUTC | datetime | The UTC date and time of the user's login |
+| UserRoles | nvarchar(max) | A list of roles of the user |
+| UserContextEncrypted | nvarchar(4000) | &lt;Not used&gt; |
+| XMLDataToSave | nvarchar(max) | The data from the report to be processed/saved |
+
+### The RequestContext_Parse Code
 
 <button class="collapsible">Get The Stored Procedure</button>
 <div markdown="1" class="panel">
@@ -319,7 +351,9 @@ GO
 ```
 </div>
 
-This stored procedure is auxillary in nature and is intended to be used to split out each system parameter encapsulated by the RequestContext System parameter provided by an Interject data portal. The following is the standalone test code for the stored procedure:
+### Testing the Procedure
+
+This stored procedure is auxiliary in nature and is intended to be used to split out each system parameter encapsulated by the RequestContext System parameter provided by an Interject data portal. The following is the standalone test code for the stored procedure:
 
 <button class="collapsible">Get The Test Code</button>
 <div markdown="1" class="panel">
@@ -473,6 +507,8 @@ Select
 
 ```
 </div>
+
+### An Example Using the Procedure
 
 Additionally, the following code is a sample stored procedure that calls the request context parse helper stored procedure. It is an example for how to individually select the different variables returned by the request context parse stored procedure.
 

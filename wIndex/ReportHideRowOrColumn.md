@@ -1,11 +1,13 @@
 ---
 title: ReportHideRowOrColumn()
 layout: custom
-keywords: [ReportHideRowOrColumn, function]
-description: The ReportHideRowOrColumn function will hide a designated row or column when triggered upon a designated [event](wIndex/Event-Functions-Landing.html).
+keywords: [ReportHideRowOrColumn, hide, event, trigger, function, formula]
+description: The ReportHideRowOrColumn function will hide a designated row or column when triggered upon a designated event.
 ---
+* * *
 
 ##  Function Summary
+
 The ReportHideRowOrColumn function will hide a designated row or column when triggered upon a designated [event](wIndex/Event-Functions-Landing.html). If a cell within the defined range = "hide", the function will hide that row or column when triggered. If the defined range is a single row, the function will hide the column. If this range is a single column, the function will hide the row.
 
 Typically this function is used to hide data that is impertinent to the current purpose of the report and/or filters being used. For example, a user can set up a report to hide invoices with zero balances or to show only accounts with a delinquent status, etc. (Note: the rows/columns are not actually hidden in the sense that Excel hides them. They are hidden from view by setting their width/height to 0. A user can simply expand the hidden rows by expanding the width.)
@@ -94,14 +96,11 @@ For an example of this function, see [Lab Create: Hiding Rows & Columns](/wGetSt
 </table>
 </div>
 
-
 ###  Excel Formula Bar Example
 
 ```Excel
 =ReportHideRowOrColumn("Pull","Both",C47:C48,FALSE)
 ```
-
-
 
 ###  Function Composition
 
@@ -114,7 +113,6 @@ For an example of this function, see [Lab Create: Hiding Rows & Columns](/wGetSt
 |  Disabled  |  FALSE  |  This function will run.  |  
 
 ###  Trigger Combination List
-
 
 The execution of this function is determined by a combination of an Interject action and an Interject event. An action is a pull or save action whereas an event is a clear or run event. The values in the OnPullSaveOrBoth and OnClearRunOrBoth arguments will determine what actions/events trigger the function's execution.
 

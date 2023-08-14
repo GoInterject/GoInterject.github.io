@@ -1,11 +1,13 @@
 ---
 title: jDataPortal()
 layout: custom
-keywords: [jDataPortal, function]
+keywords: [jDataPortal, helper, function, formula]
 description: The jDataPortal function establishes a connection to an Interject DataPortal that will be used as the data source for the function it is embedded in.
 ---
+* * *
 
 ##  Function Summary
+
 The jDataPortal function establishes a connection to an Interject DataPortal that will be used as the data source for the function it is embedded in. Data sets accessed utilizing the jDataPortal are stored in memory. This allows the data set to be accessed later without having to query the data again via the DataPortal.
 
 For an example of this function, see [Lab Dev: Customer Aging Detail](/wGetStarted/L-Dev-CustomerAgingDetail.html).
@@ -132,14 +134,11 @@ For an example of this function, see [Lab Dev: Customer Aging Detail](/wGetStart
 </table>
 </div>
 
-
 ###  Excel Formula Bar Example
 
 ```Excel
 =jDataPortal("NorthwindMultiRecord_Pull",2,"[CompanyName] Like '%s%'","[CustomerID] ASC")
 ```
-
-
 
 ###  Function Composition
 

@@ -1,11 +1,13 @@
 ---
 title: ReportDefaults()
 layout: custom
-keywords: [ReportDefaults, function]
-description: The ReportDefaults function will copy a value from a range to another range when triggered upon a designated [event](wIndex/Event-Functions-Landing.html).
+keywords: [ReportDefaults, defaults, event, trigger, function, formula]
+description: The ReportDefaults function will copy a value from a range to another range when triggered upon a designated event.
 ---
+* * *
 
 ##  Function Summary
+
 The ReportDefaults function will copy a value from a range to another range when triggered upon a designated [event](wIndex/Event-Functions-Landing.html).
 
 This function can be used to restore default values to a report after a desired action. For example, the values in the parameters section can be cleared after a clear event or set to a particular value. It can also be used to set initial parameters before a report is ran.
@@ -74,14 +76,11 @@ For an example of this function, see [Lab Create: Customer Aging Detail](/wGetSt
 </table>
 </div>
 
-
 ###  Excel Formula Bar Example
 
 ```Excel
 =ReportDefaults("Save","Clear",PairGroup(Pair("",C12,FALSE)))
 ```
-
-
 
 ###  Function Composition
 
@@ -93,7 +92,6 @@ For an example of this function, see [Lab Create: Customer Aging Detail](/wGetSt
 |  TransferPairs  |  PairGroup(Pair("",C12,FALSE))  |  Will copy a blank value to C12.  |  
 
 ###  Trigger Combination List
-
 
 The execution of this function is determined by a combination of an Interject action and an Interject event. An action is a pull or save action whereas an event is a clear or run event. The values in the OnPullSaveOrBoth and OnClearRunOrBoth arguments will determine what actions/events trigger the function's execution.
 

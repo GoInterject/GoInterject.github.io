@@ -1,14 +1,16 @@
 ---
 title: ReportCalc()
 layout: custom
-keywords: [ReportCalc, function]
-description: The ReportCalc function executes a calculation of formulas in a worksheet or workbook when triggered upon a designated [event](wIndex/Event-Functions-Landing.html).
+keywords: [ReportCalc, calculation, event, trigger, function, formula]
+description: The ReportCalc function executes a calculation of formulas in a worksheet or workbook when triggered upon a designated event.
 ---
+* * *
 
 ##  Function Summary
+
 The ReportCalc function executes a calculation of formulas in a worksheet or workbook when triggered upon a designated [event](wIndex/Event-Functions-Landing.html).
 
-Note: The latest version of the Interject Add-In will automatically perform a  recalculation on the workbook whenever the pull, save, or drill window is displayed.
+Note: The latest version of the Interject Add-In will automatically perform a recalculation on the workbook whenever the pull, save, or drill window is displayed.
 
 For an example of this function, see [Lab Create: Hiding Rows & Columns](/wGetStarted/L-Create-HideRowCol.html).
 
@@ -114,14 +116,11 @@ For an example of this function, see [Lab Create: Hiding Rows & Columns](/wGetSt
 </table>
 </div>
 
-
 ###  Excel Formula Bar Example
 
 ```Excel
 =ReportCalc("Both","Both","Sheet")
 ```
-
-
 
 ###  Function Composition
 
@@ -135,7 +134,6 @@ For an example of this function, see [Lab Create: Hiding Rows & Columns](/wGetSt
 |  Disable  |    |  Blank to indicate to enable this function.  |  
 
 ###  Trigger Combination List
-
 
 The execution of this function is determined by a combination of an Interject action and an Interject event. An action is a pull or save action whereas an event is a clear or run event. The values in the OnPullSaveOrBoth and OnClearRunOrBoth arguments will determine what actions/events trigger the function's execution.
 

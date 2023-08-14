@@ -1,21 +1,22 @@
 ---
 title: "Create: Interject Run On Open"
 layout: custom
-keywords: [auto-run, run-on-open, run, pull, property ]
+keywords: [autorun, RunOnOpen, run, pull, property]
 description: Use this property to auto-pull the report when opening for the first tab that appears. No VBA required.
 ---
+* * *
 
-##  **Overview:**
+## Overview
 
-Some reports require default values, settings, or have summary pages that must be pulled before others in order for the report to function properly. Using the Run on Open Interject property will auto-run the first tab that appears. This can save time and helps streamline Interject processes. 
+Some reports require default values, settings, or have summary pages that must be pulled before others in order for the report to function properly. Using the Run on Open Interject property will auto-run the first tab that appears. This can save time and helps streamline Interject processes.
 
-We will walk through Run on Open using the [ Customer Aging Report ](/wGetStarted/L-Create-CustomerAging.html).
+We will walk through Run on Open using the [Customer Aging Report](/wGetStarted/L-Create-CustomerAging.html).
 
 <blockquote class=lab_info>
-  If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 6 Special Features > Lab 6.4 Interject Run On Open.
+ If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 6 Special Features > Lab 6.4 Interject Run On Open.
 </blockquote>
 
-## Setting Up Run on Open Via Diagnostics
+### Setting up Run on Open via Diagnostics
 
 The [Diagnostics](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#diagnostics) window provides an easy way to set up the run on open feature. It also provides many more ways to customize this feature. To setup the feature you need to input the correct code in the Input field and click **Execute Selected Action**.
 
@@ -51,30 +52,29 @@ The [Diagnostics](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#diagnostics) win
 | Test= true | Displays information in Results as if RunOnOpen was actually executed |
 | Test= F:A5 | Displays information in Results as if the formula in A5 was executed as RunOnOpen |
 
-
 ### RunOnOpen Example
 
-**Step 1:** To begin, open the **Customer Collections** report in the [ Report Library ](/wAbout/Report-Library-Basics.html): 
+**Step 1:** To begin, open the **Customer Collections** report in the [Report Library](/wAbout/Report-Library-Basics.html).
 
 ![](/images/L-Create-RunOnOpen/CustomCollectionsReportLibrary.png)
 <br>
 
-**Step 2:** Click on the Advanced Menu if it is not already displayed:
+**Step 2:** Click on the Advanced Menu if it is not already displayed.
 
 ![](/images/L-Create-RunOnOpen/AdvancedMenu.png)
 <br>
 
-**Step 3:** Click on Diagnostics:
+**Step 3:** Click on **Diagnostics**.
 
 ![](/images/L-Create-RunOnOpen/Diagnostics.png)
 <br>
 
-**Step 4:** The RunOnOpen feature is located on the System Tools folder of the Diagnostics. Input "F:C6" in the Input field and click **Execute Selected Action**:
+**Step 4:** The RunOnOpen feature is located on the System Tools folder of the Diagnostics. Input **F:C6** in the Input field and click **Execute Selected Action**.
 
 ![](/images/L-Create-RunOnOpen/EnterCode.png)
 <br>
 
-**Step 5:** Save the file and reopen it to find the report automatically runs the report formula found in cell C6:
+**Step 5:** Save the file and reopen it to find the report automatically runs the report formula found in cell C6.
 
 ![](/images/L-Create-RunOnOpen/08.png)
 <br>

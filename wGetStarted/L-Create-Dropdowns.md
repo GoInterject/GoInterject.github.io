@@ -1,35 +1,35 @@
 ---
 title: "Create: Building jDropdowns"
 layout: custom
-keywords: [jDropdown, function]
+keywords: [jDropdown, function, hyperlink, custom list, walkthrough]
 description: The jDropdown formula is used for filtering on multiple parameters.
 ---
+* * *
 
-### Overview
+## Overview
 
-When manually entering different filter values, it can be difficult to remember what the exact filter names are and which are even available. This is especially true in large reports with many filtering options. However, you can use Interject's jDropdown formula to automatically create hyperlinked lists of available filters, which makes filtering in large reports a much simpler task. In this example you will modify the [Customer Aging report](/wGetStarted/L-Create-CustomerAging.html) by adding the jDropdown functionality to one of the filters, while using an existing data portal. 
+When manually entering different filter values, it can be difficult to remember what the exact filter names are and which are even available. This is especially true in large reports with many filtering options. However, you can use Interject's jDropdown formula to automatically create hyperlinked lists of available filters, which makes filtering in large reports a much simpler task. In this example you will modify the [Customer Aging report](/wGetStarted/L-Create-CustomerAging.html) by adding the jDropdown functionality to one of the filters, while using an existing Data Portal.
 
-> **IMPORTANT:** The jDropdown feature requires a stored procedure to operate. In the event that you cannot create a stored procedure, you can reuse a data portal from the report formula that populates the report in which you want to use this feature. To learn how to build the database connection, dataportal, and stored procedure used in this example, follow the instructions in the [developer example](/wGetStarted/L-Dev-jDropdowns.html). Otherwise contact your IT department to help implement this functionality.
+> **IMPORTANT:** The jDropdown feature requires a stored procedure to operate. In the event that you cannot create a stored procedure, you can reuse a Data Portal from the report formula that populates the report in which you want to use this feature. To learn how to build the database connection, Data Portal, and stored procedure used in this example, follow the instructions in the [developer example](/wGetStarted/L-Dev-jDropdowns.html). Otherwise contact your IT department to help implement this functionality.
 
 <blockquote class=lab_info>
-  If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 5 Advanced Features > Lab 5.3 Building jDropdowns.
+ If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 5 Advanced Features > Lab 5.3 Building jDropdowns.
 </blockquote>
 
 ### Preparing the Report
 
-**Step 1:** Open the report **Interject Customer Collections** under the Interject Demos in the [ Report Library ](/wAbout/Report-Library-Basics.html). 
+**Step 1:** Open the report **Interject Customer Collections** under the Interject Demos in the [Report Library](/wAbout/Report-Library-Basics.html).
 
 ![](/images/L-Create-Dropdowns/01.png)
 
-
-**Step 2:** Next, unfreeze panes by going into [ **Quick Tools** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) and selecting **Freeze/Unfreeze Panes**.
+**Step 2:** Next, unfreeze panes by going into [**Quick Tools**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) and selecting **Freeze/Unfreeze Panes**.
 
 ![](/images/L-Create-Dropdowns/02.png)
 <br>
 
 ### Adding a Named Range
 
-**Step 1:** Now select the **Formulas** ribbon tab and select **Name Manager**. 
+**Step 1:** Now select the **Formulas** ribbon tab and select **Name Manager**.
 
 ![](/images/L-Create-Dropdowns/03.png)
 <br>
@@ -39,7 +39,7 @@ When manually entering different filter values, it can be difficult to remember 
 ![](/images/L-Create-Dropdowns/04.png)
 <br>
 
-**Step 3:** For the **Name:** field input **CompanyNameDDL**, and in the **Refers to:** field input **=CustomerAging!$H$7**. Click **OK** and **Close** the Name Manager window. 
+**Step 3:** For the **Name:** field input **CompanyNameDDL**, and in the **Refers to:** field input **=CustomerAging!$H$7**. Click **OK** and **Close** the Name Manager window.
 
 ![](/images/L-Create-Dropdowns/05.png)
 
@@ -48,12 +48,12 @@ When manually entering different filter values, it can be difficult to remember 
 
 ### Creating the Formula
 
-**Step 1:** Next, in cell H7 insert **=jDropdown()** then select **fx**
+**Step 1:** Next, in cell H7 insert **=jDropdown()** then select **fx**.
 
 ![](/images/L-Create-Dropdowns/06.png)
 <br>
 
-**Step 2:** For the DataPortal argument field, input **NorthwindCustomersDropdown**.
+**Step 2:** For the Data Portal argument field, input **NorthwindCustomersDropdown**.
 
 ![](/images/L-Create-Dropdowns/07.png)
 <br>
@@ -68,8 +68,7 @@ When manually entering different filter values, it can be difficult to remember 
 ![](/images/L-Create-Dropdowns/09.png)
 <br>
 
-
-**Step 5:** Scroll down in the function arguments untill you see the **Display Column Name** argument field and insert **DisplayText**.
+**Step 5:** Scroll down in the function arguments until you see the **Display Column Name** argument field and insert **DisplayText**.
 
 ![](/images/L-Create-Dropdowns/10.png)
 <br>
@@ -93,11 +92,10 @@ When manually entering different filter values, it can be difficult to remember 
 ![](/images/L-Create-Dropdowns/13.png)
 <br>
 
-**Step 3:** In the **ScreenTip text:** field input **Interject Dropdown** (Note: The jDropdown function will not work without this). 
+**Step 3:** In the **ScreenTip text:** field input **Interject Dropdown** (Note: The jDropdown function will not work without this).
 
 ![](/images/L-Create-Dropdowns/14.png)
 <br>
-
 
 ### Reviewing the Report Changes
 
@@ -115,11 +113,11 @@ When manually entering different filter values, it can be difficult to remember 
 ![](/images/L-Create-Dropdowns/17.png)
 <br>
 
-To build the stored procedure and dataportal, and database connection that allows this formula to work, continue to the [developer section of this example](/wGetStarted/L-Dev-jDropdowns.html).
+To build the stored procedure and Data Portal, and database connection that allows this formula to work, continue to the [developer section of this example](/wGetStarted/L-Dev-jDropdowns.html).
 
 ### Creating a Custom jDropdown List
 
-The jDropdown feature can be used to create a custom list of items in a dropdown list. Instead of a DataPortal, you can enter a list. For example, to create a dropdown list of 3 items: Yes, No, Maybe, use the following syntax:
+The jDropdown feature can be used to create a custom list of items in a dropdown list. Instead of a Data Portal, you can enter a list. For example, to create a dropdown list of 3 items: Yes, No, Maybe, use the following syntax:
 
 ```
 list:Yes,No,Maybe
@@ -136,16 +134,16 @@ list:Yes^This is Yes,No^This is No,Maybe^This is Maybe
 ![](/images/L-Create-Dropdowns/EnterYourResponse.png)
 <br>
 
-**Step 2:** On the cell above the heading, enter "=jDropdown(" and press the "**fx**" button to bring up the Function Wizard:
+**Step 2:** On the cell above the heading, enter **=jDropdown(** and press the "**fx**" button to bring up the Function Wizard:
 
 ![](/images/L-Create-Dropdowns/EnterjDropdown.png)
 <br>
 
 **Step 3:** Enter the following for the jDropdown parameters and click **OK**:
 
-*  DataPortal: "list:Yes^This is Yes,No^This is No,Maybe^This is Maybe"
-*  Target Cell: &lt;Enter cell ref here&gt;
-*  Value Column Name: &lt;Enter anything here&gt;
+* Data Portal: "list:Yes^This is Yes,No^This is No,Maybe^This is Maybe"
+* Target Cell: &lt;Enter cell ref here&gt;
+* Value Column Name: &lt;Enter anything here&gt;
 
 ![](/images/L-Create-Dropdowns/EnterFX.png)
 <br>

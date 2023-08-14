@@ -6,7 +6,9 @@ description: Errors can occur for many reasons. Sometimes they are related to th
 ---
 * * *
 
-Errors with Excel Addins or the Interject Addin can occur for many reasons. Sometimes they are related to the environment or computer running Interject. It is important you have tools to capture everything that is interacting with Excel so it is easier diagnose the cause of the errors. This leads to faster troubleshooting and repair. 
+## Overview
+
+Errors with Excel Addins or the Interject Addin can occur for many reasons. Sometimes they are related to the environment or computer running Interject. It is important you have tools to capture everything that is interacting with Excel so it is easier diagnose the cause of the errors. This leads to faster troubleshooting and repair.
 
 ### [Excel Drill Animations](/wTroubleshoot/Drill-Animations.html)
 

@@ -85,6 +85,7 @@ about:
   - title: Tabular vs Data Cells
     path: /wAbout/Tabular-vs-Data-Cells.html
 - sectiontitle: Policies &amp; Procedures
+  path: /wAbout/security-policy.html
   section:
   - title: Security Policy
     path: /wAbout/security-policy.html
@@ -157,7 +158,7 @@ getstarted:
           path: /wGetStarted/L-Create-HideRowCol.html
         - title: "Create: Advanced Row and Section Hiding"
           path: /wGetStarted/L-Create-AdvancedHideRowsSections.html
-    - title: "Create: Building jDropdowns"
+    - title: "Create: Building jDropdown"
       path: /wGetStarted/L-Create-Dropdowns.html
     - title: "Create: Working with Pivot Tables"
       path: /wGetStarted/L-Create-PivotTable.html
@@ -273,7 +274,7 @@ index:
     - title: SegmentInfo - Segment Search
       path: /wIndex/SegmentInfo---Segment-Search.html
   - sectiontitle: Common Stored Procedures
-    path:
+    path: /wIndex/Request-Context-Parse.html
     section:
       - title: Request Context Parse
         path: /wIndex/Request-Context-Parse.html

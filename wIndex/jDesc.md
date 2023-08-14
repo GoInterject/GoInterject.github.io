@@ -1,7 +1,7 @@
 ---
 title: jDesc()
 layout: custom
-keywords: [jdesc, function]
+keywords: [jDesc, segment, function, formula]
 description: This function is used to look up a context description based on a specific segment. 
 ---
 * * *
@@ -19,7 +19,8 @@ This function is used to look up a context description based on a specific segme
 
 ### Excel Formula Bar Example
 
-  
+&lt;Coming Soon&gt;
 
 ###  Function Composition   
-  
+
+&lt;Coming Soon&gt;

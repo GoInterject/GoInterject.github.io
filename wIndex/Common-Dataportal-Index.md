@@ -4,8 +4,9 @@ layout: custom
 keywords: [dataportal, fincube, segmentinfo]
 description: These are a few common dataportals used in Interject for specific, supported applications. The exact dataportal code may vary depending on the Interject implementation.
 ---
+* * *
 
-##  **Dataportal Overview**
+##  Overview
 
 These are a few common dataportals used in Interject for specific, supported applications. The exact dataportal code may vary depending on the Interject implementation. 
 

@@ -1,9 +1,10 @@
 ---
 title: Param()
 layout: custom
-keywords: [Param, function]
+keywords: [Param, helper, function, formula]
 description: The Param function transfers values as parameters to the DataPortal.
 ---
+* * *
 
 ##  Function Summary
 The Param function transfers values as parameters to the DataPortal. The values must match the order of the parameters in the data source (The order can be verified using the [Validation Report](/wTroubleshoot/Reports.html#validation-report-for-pullsave-events) ).
@@ -52,14 +53,11 @@ For an example of this function, see [Lab Drill: Customer Aging](/wGetStarted/L-
 </table>
 </div>
 
-
 ###  Excel Formula Bar Example
 
 ```Excel
 =ReportRange("NorthwindCustomers",B14:H15,B2:H2,B4:H4,Param(C7,C8,C9),FALSE,FALSE,,FALSE,FALSE)
 ```
-
-
 
 ###  Function Composition
 

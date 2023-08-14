@@ -1,11 +1,13 @@
 ---
 title: PairGroup()
 layout: custom
-keywords: [PairGroup, function]
+keywords: [PairGroup, helper, function, formula]
 description: The PairGroup function will active all [Pair()](Pair.html) functions defined within.
 ---
+* * *
 
 ##  Function Summary
+
 The PairGroup function will active all [Pair()](Pair.html) functions defined within. It is best practice to use the PairGroup function even when only entering one Pair.
 
 For an example of this function, see [Lab Drill: Customer Aging](/wGetStarted/L-Drill-CustomerAging.html).
@@ -32,14 +34,11 @@ For an example of this function, see [Lab Drill: Customer Aging](/wGetStarted/L-
 </table>
 </div>
 
-
 ###  Excel Formula Bar Example
 
 ```Excel
 =PairGroup(Pair("2002-05",M22),Pair(M21,"Segment2"),Pair(F26:F125,"Segment1"))
 ```
-
-
 
 ###  Function Composition
 

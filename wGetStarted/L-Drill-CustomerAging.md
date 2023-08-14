@@ -1,20 +1,20 @@
 ---
 title: "Drill: Customer Aging Report"
 layout: custom
-keywords: [drill, create, build, example]
+keywords: [drill, create, build, customer aging, walkthrough]
 description: In this example, you will be setting up a simple drill to the customer orders history. It is a great use case for creating your first drill.
 ---
 * * *
 
-##  **Overview**
+## Overview
 
 In this example, you will be setting up a simple drill to the customer orders history. It is a great use case for creating your first drill.
 
 <blockquote class=lab_info>
-  If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 4 Drilling To Data > Lab 4.1 Customer Aging.
+ If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 4 Drilling To Data > Lab 4.1 Customer Aging.
 </blockquote>
 
-###  Unfreezing the Excel Sheet
+### Unfreezing the Excel Sheet
 
 **Step 1:** You begin with a special version of the Customer Collections Report that has the drill removed.
 
@@ -31,21 +31,21 @@ In this example, you will be setting up a simple drill to the customer orders hi
 ![](/images/L-Drill-CustAging/03.png)
 <br>
 
-###  Build the Drill
+### Build the Drill
 
 **Step 1:** To begin, select cell C7 and type **=ReportDrill()**. Then click the _**fx** _ button to bring up the Function Wizard.
 
 ![](/images/L-Drill-CustAging/04.png)
 <br>
 
-**Step 2:** Now select the ReportCellToRun argument and type in **CustomerOrderHistory!C10** . This is the cell location of the Report Formula in the target report that you will be drilling to.  In the screenshot below, you can see the specific cell you are drilling to in the CustomerOrderHistory tab.
+**Step 2:** Now select the ReportCellToRun argument and type in **CustomerOrderHistory!C10** . This is the cell location of the Report Formula in the target report that you will be drilling to. In the screenshot below, you can see the specific cell you are drilling to in the CustomerOrderHistory tab.
 
 You are going to skip the ReportCodeToRun argument, since that is used only when drilling to a separate workbook from the Report Library.
 
 ![](/images/L-Drill-CustAging/05.png)
 <br>
 
-**Step 3:** Next, we will use the  TransferPairs argument to note which cell values in the source worksheet will be transferred to the target worksheet during the drill operation. To do this we use special functions to pair the source cells to the target cells. Type [ **PairGroup(Pair())** ](/wIndex/PairGroup.html) in the TransferPairs argument to get it started. You will return to add more to this argument.
+**Step 3:** Next, we will use the TransferPairs argument to note which cell values in the source worksheet will be transferred to the target worksheet during the drill operation. To do this we use special functions to pair the source cells to the target cells. Type [**PairGroup(Pair())**](/wIndex/PairGroup.html) in the TransferPairs argument to get it started. You will return to add more to this argument.
 
 ![](/images/L-Drill-CustAging/06.png)
 <br>
@@ -65,7 +65,7 @@ You are going to skip the ReportCodeToRun argument, since that is used only when
 ![](/images/L-Drill-CustAging/09.png)
 <br>
 
-**Step 7:** Now that you have created the drill, you can use [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) to bring in the customers to the source worksheet.
+**Step 7:** Now that you have created the drill, you can use [**Pull Data**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) to bring in the customers to the source worksheet.
 
 ![](/images/L-Drill-CustAging/10.png)
 <br>
@@ -75,7 +75,7 @@ Below is when the data is pulled.
 ![](/images/L-Drill-CustAging/11.png)
 <br>
 
-###  **Final Results**
+### Final Results
 
 **Step 1:** To demonstrate the new drill, click on one of the customer rows and select **Drill on Data**. Click on the button **Do Drill** and Interject will navigate to the target worksheet, bring in the CustomerID selected by the filter, then run the report. The screenshot below should resemble the result.
 
@@ -87,8 +87,8 @@ You completed the drill. You can return to the source worksheet, **Customer Agin
 ![](/images/L-Drill-CustAging/14.png)
 <br>
 
-Finally, clear the reports, refreeze the panes, and upload it to the [ Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary.html).
+Finally, clear the reports, refreeze the panes, and upload it to the [Report Library](/wAbout/ReportLibraryLinks.html).
 
 <blockquote class=lab_info>
-  Do not upload this file to the Report Library if you are following the Training Labs. You may save the file locally, however, if you want to keep a local copy.
+ Do not upload this file to the Report Library if you are following the Training Labs. You may save the file locally, however, if you want to keep a local copy.
 </blockquote>

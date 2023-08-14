@@ -1,18 +1,17 @@
 ---
 title: Addins Missing
 layout: custom
-keywords: [app, addin, missing]
-description: 
+keywords: [app, addin, missing, reset]
+description: Every once in a while, Excel Add-ins may end up missing or fail to load in Excel. If your Interject addin is missing, you can follow these steps to reset it.
 ---
 * * *
 
-## Overview 
+## Overview
 
 Every once in a while, Excel Add-ins may end up missing or fail to load in Excel. If your Interject addin is missing, you can follow these steps to reset it.
 
 ![](/images/Addin-Missing/Interject-Missing-From-Ribbon.png)
 <br>
-
 
 ### Reset via System Tray
 
@@ -20,7 +19,6 @@ Click on the ^ icon in the Windows System Tray, right-click the Interject icon a
 
 ![](/images/Addin-Missing/System-Tray.png)
 <br>
-
 
 ### Reset via Interject Addin Manager
 
@@ -46,7 +44,7 @@ On the Developer tab in Excel, click "Excel Add-ins" and ensure "Interject" is c
 ![](/images/Addin-Missing/Addin-Interject.png)
 <br>
 
-Click "COM Add-ins" and esure "Interject" is checked:
+Click "COM Add-ins" and ensure "Interject" is checked:
 
 ![](/images/Addin-Missing/Com-Interject.png)
 <br>
