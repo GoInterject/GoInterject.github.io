@@ -1,14 +1,14 @@
 ---
 title: Diagnostics - Change ShortKey
 layout: custom
-keywords: [Diagnostics, Shortkey Changes, Configuration, Config]
-description: 
+keywords: [Diagnostics, Shortkey Changes, Configuration, Config, hotkey, keystrokes, shortcut, keyboard]
+description: The "Change ShortKey" feature allows users to change the shortcut key for certain Interject actions.
 ---
-* * *   
+* * *
 
 ## Overview
 
-The "Change ShortKey" feature allows users to change the shortcut key for certain Interject actions. 
+The "Change ShortKey" feature allows users to change the shortcut key for certain Interject actions.
 
 ![](/images/Diagnostics/ChangeShortKey.png)
 <br>
@@ -21,7 +21,7 @@ These settings are found in the IdsSettings.xml file. For example, an entry in t
 
 **Note:** You cannot change a shortkey that is currently in use. You must first reassign the action that is set to that shortkey. Also, shortkey changes here will override Excel's shortkey assignments.
 
-## Input Examples
+### Input Examples
 
 | Input | Description |
 |----|----|
@@ -30,11 +30,11 @@ These settings are found in the IdsSettings.xml file. For example, an entry in t
 | ReportLibrary=Ctrl+Shift+A | Changes the shortkey of the Report Library to Ctrl-Shift+A |
 | Diagnostics=Ctrl+Shift+A<br>DrillOnData=Ctrl+Shift+D<br>Diagnostics=Ctrl+Shift+K | First changes Dianostics, then DrillOnData, and then Diagnostics again |
 
-## Defaults
+### Defaults
 
 For a list of ShortKey defaults, see [here](/wIndex/INTERJECT-Hotkey-Index.html#default-hotkey-index).
 
-## Multiple Input Example
+### Multiple Input Example
 
 Multiple inputs are allowed. For example, you can reassign multiple actions by listing them in the input field and they will be executed in order.
 

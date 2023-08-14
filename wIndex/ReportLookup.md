@@ -1,14 +1,14 @@
 ---
 title: ReportLookup()
 layout: custom
-keywords: [ReportLookup, function]
+keywords: [ReportLookup, lookup, function, formula, data, pull]
 description: The ReportLookup function pulls a single piece of data from a data source and inserts it into a single cell within a spreadsheet.
 ---
+* * *
 
 ##  Function Summary
+
 The ReportLookup function pulls a single piece of data from a data source and inserts it into a single cell within a spreadsheet. 
-
-
 
 ###  Function Arguments
 
@@ -92,14 +92,11 @@ The ReportLookup function pulls a single piece of data from a data source and in
 </table>
 </div>
 
-
 ###  Excel Formula Bar Example
 
 ```Excel
 =ReportLookup(jDataPortal("NorthwindCustomers",1,"[CustomerID] Like '%SAVE%'"),C14,H1)
 ```
-
-
 
 ###  Function Composition
 

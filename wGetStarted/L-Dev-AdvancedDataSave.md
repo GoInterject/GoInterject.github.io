@@ -1,11 +1,12 @@
 ---
 title: "Develop: Advanced Data Save"
 layout: custom
-keywords: [developer, example, walkthrough, SQL, SSMS, dataportal, data connection, data save]
+keywords: [developer, example, walkthrough, SQL, SSMS, Data Portal, data connection, data save]
 description: In this example you will modify the simple data save using the Customer Aging Detail report and the Northwind Customers data source to add or delete a customer.
 ---
+* * *
 
-##  **Overview**
+## Overview
 
 In this example you will modify the previous [save](/wGetStarted/L-Dev-SimpleDataSave.html), which was set up to change a customer's contact name and title. In this Advanced Data Save, you will modify the Stored Procedure report to save all the columns. You will also include the ability to insert or delete a customer from within the Excel report.
 
@@ -75,14 +76,14 @@ For the Validation criteria, click on "List" for the Allow field and enter "Yes"
 ![](/images/L-Dev-AdvancedDataSave/DataValidationWindow.png)
 <br>
 
-**Step 4:** Finally, enter "\[clear]" into cell N2 in order for the entries in the Delete column to be cleared out on a pull. 
+**Step 4:** Finally, enter "\[clear]" into cell N2 in order for the entries in the Delete column to be cleared out on a pull.
 
 ![](/images/L-Dev-AdvancedDataSave/EnterClear.png)
 <br>
 
 That's it. The report is now ready to add, delete, or update a customer.
 
-## Setting Up the Soft Delete
+## Setting up the Soft Delete
 
 There are two main ways to delete a record from a database: a hard delete and a soft delete. A hard delete simply removes the record altogether. A soft delete simply flags the record as deleted. This approach is preferable over a hard delete because you can recover the data easily by switching the flag. The example in this data save uses a soft delete. In order to implement this, you will need to do some setup.
 
@@ -102,7 +103,7 @@ UPDATE dbo.Northwind_Customers SET IsDeleted = 0
 **Step 3:** Next, since you don't want to allow nulls for this flag, set the "IsDeleted" column to Not Null by executing the following SQL:
 
 ```sql
-ALTER TABLE dbo.Northwind_Customers 
+ALTER TABLE dbo.Northwind_Customers
 ALTER COLUMN IsDeleted bit NOT NULL
 ```
 
@@ -123,7 +124,7 @@ CREATE OR ALTER PROC NorthWindAdvancedDataSaveSP
 
 	-- System Params not in formula
 	@Interject_RequestContext nvarchar(max)
-	,@TestMode bit = 0 -- used only for testing the stored procedure directly.  It will show more results when set to 1.
+	,@TestMode bit = 0 -- used only for testing the stored procedure directly. It will show more results when set to 1.
 
 AS
 
@@ -138,7 +139,7 @@ AS
 	---------------------------------------------------------------------------
 	
 	This section has been removed. To get sample code for testing this stored procedure,
-	select the cell in Excel containing the ReportSave function. Then click on the Interject 
+	select the cell in Excel containing the ReportSave function. Then click on the Interject
 	ribbon, click System > View SQL Test For ActiveCell.
 
 	---------------------------------------------------------------------------
@@ -163,7 +164,7 @@ AS
 	dataportal parameter list, Interject will pass the related value automatically.
 	
 	@Interject_XMLDataToSave varchar(max) - Required for saving data. It contains XML for the designated cells values.
-	@Interject_ColDefItems  varchar(max) - Provides the Column Definitions in XML designated within the report formula.
+	@Interject_ColDefItems varchar(max) - Provides the Column Definitions in XML designated within the report formula.
 	@Interject_RowDefItems varchar(max) - Provides the Row Definitions in XML designated within the report formula.
 	@Interject_SourceFileAndPath varchar(500) - Provides the path and file name delimited by '|' of the current file.
 	@Interject_SourceFilePathAndTab varchar(1000) - Provides the path, file name and active tab name delimited by '|' of the current file.
@@ -182,7 +183,7 @@ AS
 
 	--
 	-- Use helper to extract data from Interject_RequestContext. Remove items that are not needed
-	-- The helper stored procedure [dbo].[RequestContext_Parse] is required for this section to function 
+	-- The helper stored procedure [dbo].[RequestContext_Parse] is required for this section to function
 	--
 	
 	DECLARE
@@ -206,7 +207,7 @@ AS
 		,@Interject_LoginDateUTC		DATETIME
 		,@Interject_UserRolesDelimited	NVARCHAR(max)
 		,@UserContextEncrypted			NVARCHAR(4000)
-		,@Interject_XMLDataToSave	    xml	
+		,@Interject_XMLDataToSave		xml	
 	
 	EXEC [dbo].[RequestContext_Parse]
 		@Interject_RequestContext		= @Interject_RequestContext
@@ -262,31 +263,31 @@ AS
 	
 	--
 	-- PROCESS THE XML DATA INTO TABLE VARIABLE
-	-- varchar(max) is used for the data type by default.  Please change for the specific requirement.
+	-- varchar(max) is used for the data type by default. Please change for the specific requirement.
 	--
 
 	DECLARE @DataToProcess TABLE
 	(
 		-- the below are system values used internally in this stored procedures
-		 [_ExcelRow] INT 
+		 [_ExcelRow] INT
 		,[_MessageToUser] VARCHAR(500) DEFAULT('')
 		-- Below are your columns expected from the spreadsheet that is calling this save stored procedure
-		-- Please change the (max) to the expected length of the text input.  If limiting length, be sure to make the size larger than allowed so you can add validation to notify the user
+		-- Please change the (max) to the expected length of the text input. If limiting length, be sure to make the size larger than allowed so you can add validation to notify the user
 	
 		,[CustomerID] NCHAR(5)
 		,[ContactName] NVARCHAR(30)
 		,[ContactTitle] NVARCHAR(30)
 	)
 
-	IF DATALENGTH(@Interject_XMLDataToSave) > 0 
+	IF DATALENGTH(@Interject_XMLDataToSave) > 0
 	BEGIN
 		declare @DataToProcessXML as XML
-		-- Handle conversion of XML text into an XML variable.  
+		-- Handle conversion of XML text into an XML variable.
 		BEGIN TRY
 			SET @DataToProcessXML = CAST(@Interject_XMLDataToSave as XML)
 		END TRY
 		BEGIN CATCH
-			SET @ErrorMessageToUser = 'Error in Parsing XML from Interject.  Error: ' + ERROR_MESSAGE()
+			SET @ErrorMessageToUser = 'Error in Parsing XML from Interject. Error: ' + ERROR_MESSAGE()
 			GOTO FinalResponseToUser
 		END CATCH
 		
@@ -309,9 +310,9 @@ AS
 		FROM @DataToProcessXML.nodes('/XMLDataToSave/r') T(c)
 	END
 	
-	-- TestMode is provided so a test save can be executed and all related data can be 
+	-- TestMode is provided so a test save can be executed and all related data can be
 	-- easily viewed for testing while not effecting any data in the database
-	IF @TestMode =1 
+	IF @TestMode =1
 	BEGIN
 		SELECT '@DataToProcess - After XML Processing' as ResultName
 		SELECT * FROM @DataToProcess
@@ -327,7 +328,7 @@ AS
 	FROM @DataToProcess m
 	INNER JOIN
 		(
-			SELECT [CustomerID] 
+			SELECT [CustomerID]
 			FROM @DataToProcess
 			WHERE [CustomerID] <> ''
 			GROUP BY [CustomerID]
@@ -339,7 +340,7 @@ AS
 	-- Now check if there were any validation issues in the detail and stop processing if true
 	IF EXISTS(SELECT 1 FROM @DataToProcess WHERE [_MessageToUser] <> '')
 	BEGIN
-		SET @ErrorMessageToUser = 'There were errors in the details of your input.  Please review the errors noted in each row.'
+		SET @ErrorMessageToUser = 'There were errors in the details of your input. Please review the errors noted in each row.'
 		GOTO FinalResponseToUser
 	END
 
@@ -354,29 +355,29 @@ AS
 		DECLARE @ChangeLog as TABLE
 		(
 			[_ExcelRow] INT	-- will capture the source row that affected the target table
-			,[UpdateTypeCode] VARCHAR(10)  -- Will show UPDATE, INSERT, or DELETE
+			,[UpdateTypeCode] VARCHAR(10) -- Will show UPDATE, INSERT, or DELETE
 			,[CustomerID] NCHAR(5)
 		)
 		
 		BEGIN TRAN t1
 			--
-			--  use MERGE statement that UPDATES, INSERTS, and DELETES in one action
+			-- use MERGE statement that UPDATES, INSERTS, and DELETES in one action
 			--
 			MERGE dbo.Northwind_Customers t -- t = the target table or view to update
 			USING (
 				SELECT
-				    [_ExcelRow]
-				    ,[CustomerID]
-				    ,[ContactName]
-				    ,[ContactTitle]
-				FROM @DataToProcess 
+					[_ExcelRow]
+					,[CustomerID]
+					,[ContactName]
+					,[ContactTitle]
+				FROM @DataToProcess
 			) s -- s = the source data to be used to update the target table
 			-- the join on the column keys is specified below
-			ON 
+			ON
 				s.[CustomerID] = t.[CustomerID]
 				
 			WHEN MATCHED -- Handles the update based on INNER JOIN
-				AND NOT 
+				AND NOT
 				(
 					s.[ContactName] = t.[ContactName] -- To ensure only changes are captured
 					AND
@@ -392,32 +393,32 @@ AS
 			
 			--WHEN NOT MATCHED BY SOURCE -- Handles the delete based on the RIGHT JOIN -- NOT USED IN THIS SIMPLE EXAMPLE
 			-- AND... add restrictions so delete doesn't remove too much. Filter params are normally considered here.
-			-- THEN 
+			-- THEN
 			-- DELETE
 				
 			-- the output captures the changes to the table and logs to a table variable
-			OUTPUT 
-				isnull(inserted.[CustomerID],deleted.[CustomerID])  -- include deleted in case delete is added later. Inserted is used for both Update an Insert
-				,s.[_ExcelRow] 
-				,$action as UpdateTypeCode  -- this logs into an a change log table variable
+			OUTPUT
+				isnull(inserted.[CustomerID],deleted.[CustomerID]) -- include deleted in case delete is added later. Inserted is used for both Update an Insert
+				,s.[_ExcelRow]
+				,$action as UpdateTypeCode -- this logs into an a change log table variable
 			INTO @ChangeLog
 			(
 				[CustomerID]
 				,[_ExcelRow]
 				,[UpdateTypeCode]
-			); 
+			);
 			
 			--now we have enough information to update the message to user for each row
 			UPDATE dtp
-			SET [_MessageToUser] = 
+			SET [_MessageToUser] =
 				CASE cl.UpdateTypeCode
-					--WHEN 'INSERT' THEN ', Added!'  -- not used in this example
+					--WHEN 'INSERT' THEN ', Added!' -- not used in this example
 					--WHEN 'DELETE' THEN ', Deleted' -- this will never match the excel side but can be used for other types of logging
 					WHEN 'UPDATE' THEN ', Updated!'
-					--ELSE ', No change'  -- not used in this example
-				END 
+					--ELSE ', No change' -- not used in this example
+				END
 			FROM @DataToProcess dtp
-				INNER JOIN @ChangeLog cl  -- use Left Join if 'No Change' is to be identified
+				INNER JOIN @ChangeLog cl -- use Left Join if 'No Change' is to be identified
 					 ON dtp.[_ExcelRow] = cl.[_ExcelRow]
 				
 		IF @TestMode = 1
@@ -437,7 +438,7 @@ AS
 		IF @@TRANCOUNT > 0
 			ROLLBACK TRAN t1
 		
-		SET @ErrorMessageToUser =  ERROR_MESSAGE()
+		SET @ErrorMessageToUser = ERROR_MESSAGE()
 		GOTO FinalResponseToUser
 	END CATCH
 	
@@ -446,8 +447,8 @@ FinalResponseToUser:
 -- PROVIDE RESPONSE TO THE SAVE ACTION
 --
 	
-	-- if test mode, show the final table 
-	IF @TestMode = 1 
+	-- if test mode, show the final table
+	IF @TestMode = 1
 	BEGIN
 		SELECT '@DataToProcess - After Validation' as ResultName
 		SELECT * FROM @DataToProcess
@@ -456,15 +457,15 @@ FinalResponseToUser:
 	-- return the recordset results back to the spreadsheet, if needed.
 	SELECT
 		[_ExcelRow] as [Row] -- this relates to the original row of the spreadsheet the data came from
-		,SUBSTRING([_MessageToUser],3,1000) as [MessageToUser]  -- This is a field that, if it matches a column in the Results Range, will be placed in that column for the specified row
+		,SUBSTRING([_MessageToUser],3,1000) as [MessageToUser] -- This is a field that, if it matches a column in the Results Range, will be placed in that column for the specified row
 	FROM @DataToProcess
 	
 	-- if there is an error, raise error and Interject will catch and present to the user.
 	-- Note that this is specifically done after the above resultset is returned, since initiating an error before
-	-- will not allow a result set to be returned to provide feedback on each row 
+	-- will not allow a result set to be returned to provide feedback on each row
 	IF @ErrorMessageToUser <> ''
 	BEGIN
-		-- by adding 'UserNotice:' as a prefix to the message, Interject will not consider it a unhandled error 
+		-- by adding 'UserNotice:' as a prefix to the message, Interject will not consider it a unhandled error
 		-- and will present the error to the user in a message box.
 		SET @ErrorMessageToUser = 'UserNotice:' + @ErrorMessageToUser
 		
@@ -476,13 +477,13 @@ FinalResponseToUser:
 ```
 </div>
 
-Execute the above code to save the Store Procedure. 
+Execute the above code to save the Store Procedure.
 
 ## Modifying the Stored Procedure
 
 The following walks you through the major sections of the code with instructions on the changes. Additions are marked in yellow.
 
-### Data To Process
+### Data to Process
 
 Since you are going to be saving more columns of data back to the data source, you simply need to add these columns to the @DataToProcess table. Be sure to match the Data Type of the table you will be saving the data to:
 
@@ -552,7 +553,7 @@ CREATE OR ALTER PROC [dbo].[NorthWindAdvancedDataSaveSP]
 
 	-- System Params not in formula
 	@Interject_RequestContext nvarchar(max)
-	,@TestMode bit = 0 -- used only for testing the stored procedure directly.  It will show more results when set to 1.
+	,@TestMode bit = 0 -- used only for testing the stored procedure directly. It will show more results when set to 1.
 
 AS
 
@@ -567,7 +568,7 @@ AS
 	---------------------------------------------------------------------------
 	
 	This section has been removed. To get sample code for testing this stored procedure,
-	select the cell in Excel containing the ReportSave function. Then click on the Interject 
+	select the cell in Excel containing the ReportSave function. Then click on the Interject
 	ribbon, click System > View SQL Test For ActiveCell.
 
 	---------------------------------------------------------------------------
@@ -592,7 +593,7 @@ AS
 	dataportal parameter list, Interject will pass the related value automatically.
 	
 	@Interject_XMLDataToSave varchar(max) - Required for saving data. It contains XML for the designated cells values.
-	@Interject_ColDefItems  varchar(max) - Provides the Column Definitions in XML designated within the report formula.
+	@Interject_ColDefItems varchar(max) - Provides the Column Definitions in XML designated within the report formula.
 	@Interject_RowDefItems varchar(max) - Provides the Row Definitions in XML designated within the report formula.
 	@Interject_SourceFileAndPath varchar(500) - Provides the path and file name delimited by '|' of the current file.
 	@Interject_SourceFilePathAndTab varchar(1000) - Provides the path, file name and active tab name delimited by '|' of the current file.
@@ -611,7 +612,7 @@ AS
 
 	--
 	-- Use helper to extract data from Interject_RequestContext. Remove items that are not needed
-	-- The helper stored procedure [dbo].[RequestContext_Parse] is required for this section to function 
+	-- The helper stored procedure [dbo].[RequestContext_Parse] is required for this section to function
 	--
 	
 	DECLARE
@@ -635,7 +636,7 @@ AS
 		,@Interject_LoginDateUTC		DATETIME
 		,@Interject_UserRolesDelimited	NVARCHAR(max)
 		,@UserContextEncrypted			NVARCHAR(4000)
-		,@Interject_XMLDataToSave	    xml	
+		,@Interject_XMLDataToSave		xml	
 	
 	EXEC [dbo].[RequestContext_Parse]
 		@Interject_RequestContext		= @Interject_RequestContext
@@ -691,16 +692,16 @@ AS
 	
 	--
 	-- PROCESS THE XML DATA INTO TABLE VARIABLE
-	-- varchar(max) is used for the data type by default.  Please change for the specific requirement.
+	-- varchar(max) is used for the data type by default. Please change for the specific requirement.
 	--
 
 	DECLARE @DataToProcess TABLE
 	(
 		-- the below are system values used internally in this stored procedures
-		 [_ExcelRow] INT 
+		 [_ExcelRow] INT
 		,[_MessageToUser] VARCHAR(500) DEFAULT('')
 		-- Below are your columns expected from the spreadsheet that is calling this save stored procedure
-		-- Please change the (max) to the expected length of the text input.  If limiting length, be sure to make the size larger than allowed so you can add validation to notify the user
+		-- Please change the (max) to the expected length of the text input. If limiting length, be sure to make the size larger than allowed so you can add validation to notify the user
 	
 		,[CustomerID] NCHAR(5)
 		,[CompanyName] NVARCHAR(30)
@@ -713,29 +714,29 @@ AS
 		,[ToBeDeleted] NVARCHAR(10)
 	)
 
-	IF DATALENGTH(@Interject_XMLDataToSave) > 0 
+	IF DATALENGTH(@Interject_XMLDataToSave) > 0
 	BEGIN
 		declare @DataToProcessXML as XML
-		-- Handle conversion of XML text into an XML variable.  
+		-- Handle conversion of XML text into an XML variable.
 		BEGIN TRY
 			SET @DataToProcessXML = CAST(@Interject_XMLDataToSave as XML)
 		END TRY
 		BEGIN CATCH
-			SET @ErrorMessageToUser = 'Error in Parsing XML from Interject.  Error: ' + ERROR_MESSAGE()
+			SET @ErrorMessageToUser = 'Error in Parsing XML from Interject. Error: ' + ERROR_MESSAGE()
 			GOTO FinalResponseToUser
 		END CATCH
 		
 		-- Insert the XML into the table variable for further processing
 		INSERT into @DataToProcess(
-		    [_ExcelRow]
-		    ,[CustomerID]
-		    ,[CompanyName]
-		    ,[ContactName]
-		    ,[ContactTitle]
-		    ,[Phone]
-		    ,[City]
-		    ,[Country]
-		    ,[ToBeDeleted]
+			[_ExcelRow]
+			,[CustomerID]
+			,[CompanyName]
+			,[ContactName]
+			,[ContactTitle]
+			,[Phone]
+			,[City]
+			,[Country]
+			,[ToBeDeleted]
 
 		)
 		SELECT
@@ -753,9 +754,9 @@ AS
 		FROM @DataToProcessXML.nodes('/XMLDataToSave/r') T(c)
 	END
 	
-	-- TestMode is provided so a test save can be executed and all related data can be 
+	-- TestMode is provided so a test save can be executed and all related data can be
 	-- easily viewed for testing while not effecting any data in the database
-	IF @TestMode =1 
+	IF @TestMode =1
 	BEGIN
 		SELECT '@DataToProcess - After XML Processing' as ResultName
 		SELECT * FROM @DataToProcess
@@ -771,7 +772,7 @@ AS
 	FROM @DataToProcess m
 	INNER JOIN
 		(
-			SELECT [CustomerID] 
+			SELECT [CustomerID]
 			FROM @DataToProcess
 			WHERE [CustomerID] <> ''
 			GROUP BY [CustomerID]
@@ -783,7 +784,7 @@ AS
 	-- Now check if there were any validation issues in the detail and stop processing if true
 	IF EXISTS(SELECT 1 FROM @DataToProcess WHERE [_MessageToUser] <> '')
 	BEGIN
-		SET @ErrorMessageToUser = 'There were errors in the details of your input.  Please review the errors noted in each row.'
+		SET @ErrorMessageToUser = 'There were errors in the details of your input. Please review the errors noted in each row.'
 		GOTO FinalResponseToUser
 	END
 
@@ -798,16 +799,16 @@ AS
 		DECLARE @ChangeLog as TABLE
 		(
 			[_ExcelRow] INT	-- will capture the source row that affected the target table
-			,[UpdateTypeCode] VARCHAR(10)  -- Will show UPDATE, INSERT, or DELETE
+			,[UpdateTypeCode] VARCHAR(10) -- Will show UPDATE, INSERT, or DELETE
 			,[CustomerID] NCHAR(5)
 		)
 		
 		BEGIN TRAN t1
-		  
-		  --
-		  --  set IsDeleted = true for deletions
-		  --
-		  UPDATE t
+		
+		 --
+		 -- set IsDeleted = true for deletions
+		 --
+		 UPDATE t
 			 SET
 				t.IsDeleted = 1
 			 OUTPUT
@@ -828,10 +829,10 @@ AS
 				AND
 				t.IsDeleted = 0
 
-		  --
-		  --  set IsDeleted = false for records added back
-		  --
-		  UPDATE t
+		 --
+		 -- set IsDeleted = false for records added back
+		 --
+		 UPDATE t
 			 SET
 				t.IsDeleted = 0
 			 OUTPUT
@@ -853,28 +854,28 @@ AS
 				t.IsDeleted = 1
 
 			--
-			--  use MERGE statement that UPDATES and INSERTS in one action
+			-- use MERGE statement that UPDATES and INSERTS in one action
 			--
 			MERGE dbo.Northwind_Customers t -- t = the target table or view to update
 			USING (
 				SELECT
-				    [_ExcelRow]
-				    ,[CustomerID]
-				    ,[CompanyName]
-				    ,[ContactName]
-				    ,[ContactTitle]
-				    ,[Phone]
-				    ,[City]
-				    ,[Country]
-				    ,[ToBeDeleted]
-				FROM @DataToProcess 
+					[_ExcelRow]
+					,[CustomerID]
+					,[CompanyName]
+					,[ContactName]
+					,[ContactTitle]
+					,[Phone]
+					,[City]
+					,[Country]
+					,[ToBeDeleted]
+				FROM @DataToProcess
 			) s -- s = the source data to be used to update the target table
 			-- the join on the column keys is specified below
-			ON 
+			ON
 				s.[CustomerID] = t.[CustomerID]
 				
 			WHEN MATCHED -- Handles the update based on INNER JOIN
-				AND NOT 
+				AND NOT
 				(
 				 -- To ensure only changes are captured
 					s.[CompanyName] = t.[CompanyName]
@@ -891,7 +892,7 @@ AS
 				)
 				THEN
 				UPDATE SET
-				      t.[CompanyName] = s.[CompanyName]
+					 t.[CompanyName] = s.[CompanyName]
 					,t.[ContactName] = s.[ContactName]
 					,t.[ContactTitle] = s.[ContactTitle]
 					,t.[Phone] = s.[Phone]
@@ -902,37 +903,37 @@ AS
 				AND
 				LOWER(s.[ToBeDeleted]) <> 'yes'
 				THEN INSERT (
-				    [CustomerID]
-				    ,[CompanyName]
-				    ,[ContactName]
-				    ,[ContactTitle]
-				    ,[Phone]
-				    ,[City]
-				    ,[Country]
-				    ,[IsDeleted]
+					[CustomerID]
+					,[CompanyName]
+					,[ContactName]
+					,[ContactTitle]
+					,[Phone]
+					,[City]
+					,[Country]
+					,[IsDeleted]
 
 				)
 				VALUES (
-				    [CustomerID]
-				    ,[CompanyName]
-				    ,[ContactName]
-				    ,[ContactTitle]
-				    ,[Phone]
-				    ,[City]
-				    ,[Country]
-				    ,0
+					[CustomerID]
+					,[CompanyName]
+					,[ContactName]
+					,[ContactTitle]
+					,[Phone]
+					,[City]
+					,[Country]
+					,0
 				)
 			-- the output captures the changes to the table and logs to a table variable
-			OUTPUT 
-				isnull(inserted.[CustomerID],deleted.[CustomerID])  -- include deleted in case delete is added later. Inserted is used for both Update an Insert
-				,s.[_ExcelRow] 
-				,$action as UpdateTypeCode  -- this logs into an a change log table variable
+			OUTPUT
+				isnull(inserted.[CustomerID],deleted.[CustomerID]) -- include deleted in case delete is added later. Inserted is used for both Update an Insert
+				,s.[_ExcelRow]
+				,$action as UpdateTypeCode -- this logs into an a change log table variable
 			INTO @ChangeLog
 			(
 				[CustomerID]
 				,[_ExcelRow]
 				,[UpdateTypeCode]
-			); 
+			);
 
 		IF @TestMode = 1
 			BEGIN
@@ -940,16 +941,16 @@ AS
 			END
 			--now we have enough information to update the message to user for each row
 			UPDATE dtp
-			SET [_MessageToUser] = 
+			SET [_MessageToUser] =
 				CASE cl.UpdateTypeCode
 					WHEN 'ADDED_BACK' THEN ', Added!'
 					WHEN 'DELETE' THEN ', Deleted!'
 					WHEN 'UPDATE' THEN ', Updated!'
 					WHEN 'INSERT' THEN ', Inserted!'
-					--ELSE ', No change'  -- not used in this example
-				END 
+					--ELSE ', No change' -- not used in this example
+				END
 			FROM @DataToProcess dtp
-				INNER JOIN @ChangeLog cl  -- use Left Join if 'No Change' is to be identified
+				INNER JOIN @ChangeLog cl -- use Left Join if 'No Change' is to be identified
 					 ON dtp.[_ExcelRow] = cl.[_ExcelRow]
 				
 		IF @TestMode = 1
@@ -969,7 +970,7 @@ AS
 		IF @@TRANCOUNT > 0
 			ROLLBACK TRAN t1
 		
-		SET @ErrorMessageToUser =  ERROR_MESSAGE()
+		SET @ErrorMessageToUser = ERROR_MESSAGE()
 		GOTO FinalResponseToUser
 	END CATCH
 	
@@ -978,8 +979,8 @@ FinalResponseToUser:
 -- PROVIDE RESPONSE TO THE SAVE ACTION
 --
 	
-	-- if test mode, show the final table 
-	IF @TestMode = 1 
+	-- if test mode, show the final table
+	IF @TestMode = 1
 	BEGIN
 		SELECT '@DataToProcess - After Validation' as ResultName
 		SELECT * FROM @DataToProcess
@@ -988,15 +989,15 @@ FinalResponseToUser:
 	-- return the recordset results back to the spreadsheet, if needed.
 	SELECT
 		[_ExcelRow] as [Row] -- this relates to the original row of the spreadsheet the data came from
-		,SUBSTRING([_MessageToUser],3,1000) as [MessageToUser]  -- This is a field that, if it matches a column in the Results Range, will be placed in that column for the specified row
+		,SUBSTRING([_MessageToUser],3,1000) as [MessageToUser] -- This is a field that, if it matches a column in the Results Range, will be placed in that column for the specified row
 	FROM @DataToProcess
 	
 	-- if there is an error, raise error and Interject will catch and present to the user.
 	-- Note that this is specifically done after the above resultset is returned, since initiating an error before
-	-- will not allow a result set to be returned to provide feedback on each row 
+	-- will not allow a result set to be returned to provide feedback on each row
 	IF @ErrorMessageToUser <> ''
 	BEGIN
-		-- by adding 'UserNotice:' as a prefix to the message, Interject will not consider it a unhandled error 
+		-- by adding 'UserNotice:' as a prefix to the message, Interject will not consider it a unhandled error
 		-- and will present the error to the user in a message box.
 		SET @ErrorMessageToUser = 'UserNotice:' + @ErrorMessageToUser
 		
@@ -1008,7 +1009,6 @@ FinalResponseToUser:
 
 ```
 </div>
-
 
 ## Testing the Stored Procedure
 
@@ -1050,4 +1050,3 @@ Notice the results!:
 
 ![](/images/L-Dev-AdvancedDataSave/TestingTheReportResults.png)
 <br>
-

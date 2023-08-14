@@ -1,15 +1,16 @@
 ---
 title: Resizing Interject Windows
 layout: custom
-keywords: [resize, windows, forms, text resize, make text bigger]
+keywords: [resize, size, windows, forms, frame, text resize, make text bigger]
 description: This is a walkthrough on how to make the Interject pop-up windows larger
 ---
+* * *
 
 ## Overview
 
 At some screen resolutions, Interject's form window pop-ups can be small and sometimes difficult to read. Fortunately, there is a convenient way to resize the windows and make them easier to read. You have the option to apply resizing to all sizable windows or just the individual window you currently have open.
 
-## Resizing Windows
+### Resizing Windows
 
 The button to resize windows can be found in the same location in every window and looks like this.
 
@@ -26,9 +27,9 @@ You can also choose a custom sizing within a range of 75%-200% magnification.
 ![](/images/Resizing-Form-Windows/0.9.png)
 <br>
 
-## Resize the Current Window
+### Resize the Current Window
 
-First, we'll resize just the window that opens when you click on the PULL Data button in the Interject ribbon. The process is the same for all other Interject windows that can be resized. 
+First, we'll resize just the window that opens when you click on the PULL Data button in the Interject ribbon. The process is the same for all other Interject windows that can be resized.
 
 **Step 1:** Open Excel to a blank workbook.
 
@@ -76,7 +77,7 @@ Your window will now be between the small size and the medium size, as shown bel
 ![](/images/Resizing-Form-Windows/08.png)
 <br>
 
-## Resize All Windows
+### Resize All Windows
 
 In addition to sizing individual windows, Interject allows you to use the current window view size to set all the other Interject window sizes. This will allows you to apply the size you like to all pop-up windows.
 

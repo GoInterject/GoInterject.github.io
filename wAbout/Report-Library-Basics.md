@@ -1,15 +1,16 @@
 ---
 title: Report Library Basics
 layout: custom
-keywords: [report library]
+keywords: [report library, folder, link, version, resize, file, status, navigate, search]
 description: The Report Library is a way for your team to share reports from a central location going beyond just a Sharepoint or a Shared Network Folder.The reports are uploaded to the library and can be accessed from any computer using Excel via Interject.
 ---
+* * *
 
-##  Overview
+## Overview
 
 The Report Library is a way for your team to share reports from a central location going beyond just a Sharepoint or a Shared Network Folder. The reports are uploaded to the library and can be accessed from any computer using Excel via Interject. The reports can also be versioned, so reverting to a previous report is simple.
 
-##  Opening The Report Library
+### Opening The Report Library
 
 Once Interject is installed, an Interject Ribbon will be added to Excel.
 
@@ -28,14 +29,14 @@ Once Interject is installed, an Interject Ribbon will be added to Excel.
 ![](/images/ReportLibraryBasics/ReportLibrary.png)
 <br>
 
-## Resizing the Report Library
+### Resizing the Report Library
 
 By clicking on the Resize button in the top right corner, you can resize the Report Library. Available preset sizes are Small, Medium, and Large or you may scale it to a custom value. For more info about resizing forms, see [Resizing Interject Windows](/wAbout/Resizing-Form-Windows.html).
 
 ![](/images/ReportLibraryBasics/Resize.png)
 <br>
 
-##  The Report Library
+### The Report Library
 
 Each section of the Report Library is detailed below. Before opening a report from the library, look through the Folders and Report Links, and check the Link Version of the desired report. There are 3 main sections of the Report Library: Folders Section, Report Link Section, and the Link Version Section.
 
@@ -53,9 +54,9 @@ The reports of the selected folder will be displayed here in the Report Link sec
 ![](/images/ReportLibraryBasics/ReportLibraryLinksSection.png)
 <br>
 
-### Link Version Section 
+### Link Version Section
 
-This section contains details of the selected report. 
+This section contains details of the selected report.
 
 ![](/images/ReportLibraryBasics/ReportLibraryVersionSection.png)
 <br>
@@ -74,10 +75,10 @@ There are 4 areas within this section:
 
 There are 4 statuses of a link version, each with their own distinctive color:
 
-*  _Green_ : Currently Live
-*  _Gray_ : Superseded, this is an older version of a previous live report
-*  _Yellow_ : In Testing
-*  _Red_ : In Development
+* _Green_ : Currently Live
+* _Gray_ : Superseded, this is an older version of a previous live report
+* _Yellow_ : In Testing
+* _Red_ : In Development
 
 ![](/images/ReportLibraryBasics/Statuses.png)
 <br>
@@ -99,7 +100,7 @@ The report link is opened:
 ![](/images/ReportLibraryBasics/ReportOpened.png)
 <br>
 
-##  Navigating the Report Library
+## Navigating the Report Library
 
 Navigating the Report Library efficiently is important when there are numerous reports. Interject makes this easy by providing 3 ways to navigate the Library and find the report you are looking for.
 
@@ -130,7 +131,7 @@ You may also download a .CSV file, which lists the ID, Report Path, Report Name,
 ![](/images/ReportLibraryBasics/SearchReportLinksWindowDownload.png)
 <br>
 
-###  Using the keyboard
+### Using the keyboard
 
 **Step 1:** Use the up and down arrow keys to navigate the folders. Use the right and left keys to move in and out of sub-folders.
 
@@ -140,7 +141,7 @@ You may also download a .CSV file, which lists the ID, Report Path, Report Name,
 
 **Step 4:** Hitting enter on a report link will open the report and close the Report Library.
 
-###  Using the mouse
+### Using the mouse
 
 **Step 1:** Click on a folder to see the Report Link(s) in the folder
 
@@ -148,19 +149,17 @@ You may also download a .CSV file, which lists the ID, Report Path, Report Name,
 
 **Step 3:** Double-clicking on a link opens the report and keeps the Report Library open, while single-clicking the **Open Link** button will open the selected report and close Report Library
 
-For how to add or change files in the Report Library, please check out [ Lab Create: Updating the Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary) .
+For how to add or change files in the Report Library, please check out [Lab Create: Updating the Report Library](/wGetStarted/L-Create-UpdatingReportLibrary) .
 
-##  Related Links:
+## Related Links
 
-[ Logging In ](/wAbout/Logging-In.html)
+[Logging In](/wAbout/Logging-In.html)
 
-[ Updating Interject ](/wAbout/Updating-Interject.html)
+[Updating Interject](/wAbout/Updating-Interject.html)
 
-[ Interject Ribbon Menu Items ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html)
+[Interject Ribbon Menu Items](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html)
 
-[ Real-World Walkthroughs ](/wAbout/Real-World-Walkthroughs.html)
+[Real-World Walkthroughs](/wAbout/Real-World-Walkthroughs.html)
 
-[ Inventory Reports ](/wAbout/Inventory-Reports.html)
-
-
+[Inventory Reports](/wAbout/Inventory-Reports.html)
 

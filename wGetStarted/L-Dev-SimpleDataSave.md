@@ -1,11 +1,12 @@
 ---
 title: "Develop: Simple Data Save"
 layout: custom
-keywords: [developer, example, walkthrough, SQL, SSMS, dataportal, data connection, data save]
+keywords: [developer, example, walkthrough, SQL, SSMS, Data Portal, data connection, data save]
 description: In this example you will create a simple data save using the Customer Aging Detail report and the Northwind Customers data source.
 ---
+* * *
 
-##  **Overview**
+## Overview
 
 In this example you will build from the previous report where you built a [Data Pull](/wGetStarted/L-Dev-CustomerAging.html). Here, you will create a data portal to save the data using the Interject function [ReportSave](/wIndex/ReportSave.html). This function makes it convenient to modify the data source right inside of your Excel report without having to edit the data source directly.
 
@@ -21,7 +22,7 @@ For the Data Connection for this example, you will use the connection previously
 
 ## Setting up the Data Portal
 
-**Step 1:** Navigate to [ https://portal.gointerject.com ](https://portal.gointerject.com) and [ log in ](/wPortal/Logging-In-to-Website-Portal.html). Click on **Data Portals** on the left side bar and then the **NEW DATA PORTAL** button.
+**Step 1:** Navigate to [https://portal.gointerject.com](https://portal.gointerject.com) and [log in](/wPortal/Logging-In-to-Website-Portal.html). Click on **Data Portals** on the left side bar and then the **NEW DATA PORTAL** button.
 
 ![](/images/L-Dev-SimpleDataSave/NewDataPortal.png)
 <br>
@@ -72,7 +73,7 @@ Begin by opening up the report that was completed in the [Data Pull](/wGetStarte
 ![](/images/L-Dev-SimpleDataSave/InsertCopiedRows.png)
 <br>
 
-**Step 5:** Copy & paste the same 2 rows again this time by right clicking row 5 and  **Insert Copied Cells**:
+**Step 5:** Copy & paste the same 2 rows again this time by right clicking row 5 and **Insert Copied Cells**:
 
 ![](/images/L-Dev-SimpleDataSave/InsertCopiedRowsAgain.png)
 <br>
@@ -80,9 +81,9 @@ Begin by opening up the report that was completed in the [Data Pull](/wGetStarte
 **Step 6:** Set up the configuration section:
 
 1. Entering "\[clear]" in the last column (This will clear the messages when pulling)
-1. Clear all values in row 4 except the "CustomerID", "ContactName" and "ContactTitle" (These are the column names that will be used to save to the data source)
-1. Enter "MessageToUser" in the last column on row 6 (The save will return a message in this column if necessary)
-1. Add a row below the row containing the **ReportRange** function (You will add the ReportSave function on this new row)
+2. Clear all values in row 4 except the "CustomerID", "ContactName" and "ContactTitle" (These are the column names that will be used to save to the data source)
+3. Enter "MessageToUser" in the last column on row 6 (The save will return a message in this column if necessary)
+4. Add a row below the row containing the **ReportRange** function (You will add the ReportSave function on this new row)
 
 ![](/images/L-Dev-SimpleDataSave/SetupConfigSection.png)
 <br>
@@ -99,9 +100,9 @@ The only thing left to set up in this report is the actual ReportSave function.
 **Step 2:** Enter the following details in the Function Wizard:
 
 1. **DataPortal:** Enter the Data Portal you set up in the [beginning](/wGetStarted/L-Dev-SimpleDataSave.html#setting-up-the-data-portal).
-1. **RowDefRange:** This range defines the unique keys in the data source for each row. In this case it is the CustomerID. Enter the single column range for the CustomerIDs and be sure to select one row beyond the last ID (to allow expansion).
-1. **ColDefRange:** Enter "4:4". This range contains the columns that will be saved.
-1. **ResultsRange:** Enter "6:6". This range represents the return message to the user.
+2. **RowDefRange:** This range defines the unique keys in the data source for each row. In this case it is the CustomerID. Enter the single column range for the CustomerIDs and be sure to select one row beyond the last ID (to allow expansion).
+3. **ColDefRange:** Enter "4:4". This range contains the columns that will be saved.
+4. **ResultsRange:** Enter "6:6". This range represents the return message to the user.
 
 ![](/images/L-Dev-SimpleDataSave/FunctionWizardFilled2.png)
 <br>
@@ -134,12 +135,11 @@ Now that the ReportSave function is completed, Interject can use it to generate 
 
 The template that is created by Interject references a Stored Procedure called "RequestContext_Parse". This SP will process the XML data that is passed to your SP via the "Interject_RequestContext" parameter. After processing this data, you will have SP variables you can use within your SP (e.g. "@Interject_UserID", "@Interject_LoginDateUTC"). In order for the Data save Stored Procedure to work, you need to create the "RequestContext_Parse" Stored Procedure. In your database, open up a new query and execute the following code:
 
-
 <button class = "collapsible"> RequestContext_Parse </button>
 <div markdown="1" class="panel">
 
 ```sql
-/****** Object:  StoredProcedure [dbo].[RequestContext_Parse]    Script Date: 12/20/2022 11:23:26 AM ******/
+/****** Object: StoredProcedure [dbo].[RequestContext_Parse]	Script Date: 12/20/2022 11:23:26 AM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -177,7 +177,6 @@ as
 This SP is a helper to pull all data from the RequestContext that is passed from Interject. Below
 are examples to pull all the data or just a couple values that you need (which is much less typing)
 
-
 declare 
 	@Interject_RequestContext		nvarchar(max)
 	,@ExcelVersion					nvarchar(100)	 
@@ -205,76 +204,76 @@ declare
 set @Interject_RequestContext = 
 '<?xml version="1.0" encoding="utf-16" standalone="yes"?>
 <RequestContext>
-    <ExcelVersion>14.0</ExcelVersion>
-    <IdsVersion>2.2.5.13</IdsVersion>
-    <FileName>Interject_TestFile (version 1).xlsb</FileName>
-    <FilePath>C:\Users\jeffh-high\AppData\Roaming\Microsoft\Excel</FilePath>
-    <TabName>DB_ReportRangeShort</TabName>
-    <CellRange>C6</CellRange>
-    <SourceFunction>Range</SourceFunction>
-    <UtcOffset>7</UtcOffset>
-    <ColDefItems>
-        <Value>customerid</Value>
-        <Value>companyname</Value>
-        <Value>contactname</Value>
-        <Value>contacttitle</Value>
-        <Value>address</Value>
-        <Value>city</Value>
-        <Value>region</Value>
-        <Value>phone</Value>
-        <Value>fax</Value>
-    </ColDefItems>
-    <ResultDefItems>
-        <Value>customerid</Value>
-        <Value>companyname</Value>
+	<ExcelVersion>14.0</ExcelVersion>
+	<IdsVersion>2.2.5.13</IdsVersion>
+	<FileName>Interject_TestFile (version 1).xlsb</FileName>
+	<FilePath>C:\Users\jeffh-high\AppData\Roaming\Microsoft\Excel</FilePath>
+	<TabName>DB_ReportRangeShort</TabName>
+	<CellRange>C6</CellRange>
+	<SourceFunction>Range</SourceFunction>
+	<UtcOffset>7</UtcOffset>
+	<ColDefItems>
+		<Value>customerid</Value>
+		<Value>companyname</Value>
+		<Value>contactname</Value>
+		<Value>contacttitle</Value>
+		<Value>address</Value>
+		<Value>city</Value>
+		<Value>region</Value>
+		<Value>phone</Value>
+		<Value>fax</Value>
+	</ColDefItems>
+	<ResultDefItems>
+		<Value>customerid</Value>
+		<Value>companyname</Value>
 	</ResultDefItems>
-    <RowDefItems>
-        <Value Row="1">customerid</Value>
-        <Value Row="2">companyname</Value>
+	<RowDefItems>
+		<Value Row="1">customerid</Value>
+		<Value Row="2">companyname</Value>
 	</RowDefItems>
-    <UserContext>
-        <MachineLoginName>jeffh-high</MachineLoginName>
-        <MachineName>IJECT-VMWARE7</MachineName>
-        <UserId>UoSnjxR2bD</UserId>	
-        <ClientId>CKuWBCtT</ClientId>
-        <LoginName>jeffh@gointerject.com</LoginName>
-        <LoginAuthTypeId>10</LoginAuthTypeId>
-        <LoginDateUtc>06/16/2014 11:04:08</LoginDateUtc>
-        <UserRoles>
-            <Role>SysAdmin</Role>
-            <Role>SchedulerAdmin</Role>
-            <Role>CustomItems</Role>
-        </UserRoles>
-    </UserContext>
-    <UserContextEncrypted>KAJeycwLWiy0t4Xe4GxPiI0sskc=</UserContextEncrypted>
-    <XMLDataToSave>
-  <c Column="Row" OrigValue="Row" />
-  <c Column="Start" OrigValue="Start" />
-  <c Column="CodeInputs" OrigValue="CodeInputs" />
-  <c Column="Description" OrigValue="Description" />
-  <c Column="End" OrigValue="End" />
-  <c Column="Duration" OrigValue="Duration" />
-  <c Column="Client" OrigValue="Client" />
-  <c Column="Code1" OrigValue="Code1" />
-  <c Column="Code2" OrigValue="Code2" />
-  <c Column="Code3" OrigValue="Code3" />
-  <c Column="Code4" OrigValue="Code4" />
-  <c Column="ChargeCategory" OrigValue="ChargeCategory" />
-  <r>
-    <Row>18</Row>
-    <Start>0.291666666666667</Start>
-    <CodeInputs>.ids.dev..</CodeInputs>
-    <Description>upgrade timelook</Description>
-    <End />
-    <Duration>15.4</Duration>
-    <Client>ids</Client>
-    <Code1>dev</Code1>
-    <Code2 />
-    <Code3 />
-    <Code4 />
-    <ChargeCategory>NB</ChargeCategory>
-  </r>
-    </XMLDataToSave>
+	<UserContext>
+		<MachineLoginName>jeffh-high</MachineLoginName>
+		<MachineName>IJECT-VMWARE7</MachineName>
+		<UserId>UoSnjxR2bD</UserId>	
+		<ClientId>CKuWBCtT</ClientId>
+		<LoginName>jeffh@gointerject.com</LoginName>
+		<LoginAuthTypeId>10</LoginAuthTypeId>
+		<LoginDateUtc>06/16/2014 11:04:08</LoginDateUtc>
+		<UserRoles>
+			<Role>SysAdmin</Role>
+			<Role>SchedulerAdmin</Role>
+			<Role>CustomItems</Role>
+		</UserRoles>
+	</UserContext>
+	<UserContextEncrypted>KAJeycwLWiy0t4Xe4GxPiI0sskc=</UserContextEncrypted>
+	<XMLDataToSave>
+ <c Column="Row" OrigValue="Row" />
+ <c Column="Start" OrigValue="Start" />
+ <c Column="CodeInputs" OrigValue="CodeInputs" />
+ <c Column="Description" OrigValue="Description" />
+ <c Column="End" OrigValue="End" />
+ <c Column="Duration" OrigValue="Duration" />
+ <c Column="Client" OrigValue="Client" />
+ <c Column="Code1" OrigValue="Code1" />
+ <c Column="Code2" OrigValue="Code2" />
+ <c Column="Code3" OrigValue="Code3" />
+ <c Column="Code4" OrigValue="Code4" />
+ <c Column="ChargeCategory" OrigValue="ChargeCategory" />
+ <r>
+	<Row>18</Row>
+	<Start>0.291666666666667</Start>
+	<CodeInputs>.ids.dev..</CodeInputs>
+	<Description>upgrade timelook</Description>
+	<End />
+	<Duration>15.4</Duration>
+	<Client>ids</Client>
+	<Code1>dev</Code1>
+	<Code2 />
+	<Code3 />
+	<Code4 />
+	<ChargeCategory>NB</ChargeCategory>
+ </r>
+	</XMLDataToSave>
 </RequestContext>
 '
 exec [dbo].[RequestContext_Parse]
@@ -324,7 +323,6 @@ Select
 	,@UserContextEncrypted			as '@UserContextEncrypted'
 	,@Interject_XMLDataToSave		as '@Interject_XMLDataToSave'
 
-
 -- since all paramters are optional, you can also just ask for the values you need like below
 
 exec [dbo].[RequestContext_Parse]
@@ -335,7 +333,6 @@ exec [dbo].[RequestContext_Parse]
 Select
 	@Interject_UserID							as '@Interject_UserID'
 	,@Interject_LoginName						as '@Interject_LoginName'
-
 
 */
 
@@ -380,7 +377,6 @@ Select
 			,1
 			,''
 		)
-
 
 	-- ColDefItemsDelimited
 	Select @ColDefItemsDelimited =
@@ -543,7 +539,7 @@ CREATE OR ALTER PROC NorthWindSimpleDataSaveSP
 
 	-- System Params not in formula
 	@Interject_RequestContext nvarchar(max)
-	,@TestMode bit = 0 -- used only for testing the stored procedure directly.  It will show more results when set to 1.
+	,@TestMode bit = 0 -- used only for testing the stored procedure directly. It will show more results when set to 1.
 
 AS
 
@@ -562,88 +558,88 @@ AS
 		@TestMode = 1
 		,@Interject_RequestContext = '<?xml version="1.0" encoding="utf-16" standalone="yes"?>
 <RequestContext>
-    <ExcelVersion>16.0</ExcelVersion>
-    <IdsVersion>2.4.1.25</IdsVersion>
-    <FileName>DevelopSimpleDataSave.xlsx</FileName>
-    <FilePath>D:\Users\test\Documents\Documentation\DevReportSave</FilePath>
-    <TabName>NewReport_1</TabName>
-    <CellRange>C11</CellRange>
-    <SourceFunction>Save</SourceFunction>
-    <UtcOffset>-8</UtcOffset>
-    <ColDefItems>
-        <Value Row="4" Column="2">
-            <Name>CustomerID</Name>
-        </Value>
-        <Value Row="4" Column="4">
-            <Name>ContactName</Name>
-        </Value>
-        <Value Row="4" Column="5">
-            <Name>ContactTitle</Name>
-        </Value>
-    </ColDefItems>
-    <ResultDefItems>
-        <Value Row="6" Column="13">
-            <Name>MessageToUser</Name>
-        </Value>
-    </ResultDefItems>
-    <RowDefItems>
-        <Value Row="24" Column="2" ColumnName="CustomerID">
-            <Name>BOTTM</Name>
-        </Value>
-        <Value Row="25" Column="2" ColumnName="CustomerID">
-            <Name>GREAL</Name>
-        </Value>
-        <Value Row="26" Column="2" ColumnName="CustomerID">
-            <Name>SAVEA</Name>
-        </Value>
-        <Value Row="27" Column="2" ColumnName="CustomerID">
-            <Name>WHITC</Name>
-        </Value>
-    </RowDefItems>
-    <UserContext>
-    <MachineLoginName>test</MachineLoginName>
-    <MachineName>1234</MachineName>
-    <FullName> </FullName>
-    <UserId>1234</UserId>
-    <ClientId>1234</ClientId>
-    <LoginName>test@email.com</LoginName>
-    <LoginAuthTypeId>10</LoginAuthTypeId>
-    <LoginDateUtc>03/06/2023 3:52:17</LoginDateUtc>
-    <UserRoles>
-        <Role></Role>
-    </UserRoles>
+	<ExcelVersion>16.0</ExcelVersion>
+	<IdsVersion>2.4.1.25</IdsVersion>
+	<FileName>DevelopSimpleDataSave.xlsx</FileName>
+	<FilePath>D:\Users\test\Documents\Documentation\DevReportSave</FilePath>
+	<TabName>NewReport_1</TabName>
+	<CellRange>C11</CellRange>
+	<SourceFunction>Save</SourceFunction>
+	<UtcOffset>-8</UtcOffset>
+	<ColDefItems>
+		<Value Row="4" Column="2">
+			<Name>CustomerID</Name>
+		</Value>
+		<Value Row="4" Column="4">
+			<Name>ContactName</Name>
+		</Value>
+		<Value Row="4" Column="5">
+			<Name>ContactTitle</Name>
+		</Value>
+	</ColDefItems>
+	<ResultDefItems>
+		<Value Row="6" Column="13">
+			<Name>MessageToUser</Name>
+		</Value>
+	</ResultDefItems>
+	<RowDefItems>
+		<Value Row="24" Column="2" ColumnName="CustomerID">
+			<Name>BOTTM</Name>
+		</Value>
+		<Value Row="25" Column="2" ColumnName="CustomerID">
+			<Name>GREAL</Name>
+		</Value>
+		<Value Row="26" Column="2" ColumnName="CustomerID">
+			<Name>SAVEA</Name>
+		</Value>
+		<Value Row="27" Column="2" ColumnName="CustomerID">
+			<Name>WHITC</Name>
+		</Value>
+	</RowDefItems>
+	<UserContext>
+	<MachineLoginName>test</MachineLoginName>
+	<MachineName>1234</MachineName>
+	<FullName> </FullName>
+	<UserId>1234</UserId>
+	<ClientId>1234</ClientId>
+	<LoginName>test@email.com</LoginName>
+	<LoginAuthTypeId>10</LoginAuthTypeId>
+	<LoginDateUtc>03/06/2023 3:52:17</LoginDateUtc>
+	<UserRoles>
+		<Role></Role>
+	</UserRoles>
 </UserContext>
-    <UserContextEncrypted>Encrypted only through interject api protocol, not direct connection</UserContextEncrypted>
-    <XMLDataToSave>
-  <c Column="Row" OrigValue="Row" />
-  <c Column="CustomerID" OrigValue="CustomerID" />
-  <c Column="ContactName" OrigValue="ContactName" />
-  <c Column="ContactTitle" OrigValue="ContactTitle" />
-  <r>
-    <Row>24</Row>
-    <CustomerID>BOTTM</CustomerID>
-    <ContactName>Elizabeth Lincoln</ContactName>
-    <ContactTitle>Accounting Manager</ContactTitle>
-  </r>
-  <r>
-    <Row>25</Row>
-    <CustomerID>GREAL</CustomerID>
-    <ContactName>Howard Snyder</ContactName>
-    <ContactTitle>Marketing Manager</ContactTitle>
-  </r>
-  <r>
-    <Row>26</Row>
-    <CustomerID>SAVEA</CustomerID>
-    <ContactName>Jose Pavarotti</ContactName>
-    <ContactTitle>Sales Representative</ContactTitle>
-  </r>
-  <r>
-    <Row>27</Row>
-    <CustomerID>WHITC</CustomerID>
-    <ContactName>Karl Jablonski</ContactName>
-    <ContactTitle>Owner</ContactTitle>
-  </r>
-    </XMLDataToSave>
+	<UserContextEncrypted>Encrypted only through interject api protocol, not direct connection</UserContextEncrypted>
+	<XMLDataToSave>
+ <c Column="Row" OrigValue="Row" />
+ <c Column="CustomerID" OrigValue="CustomerID" />
+ <c Column="ContactName" OrigValue="ContactName" />
+ <c Column="ContactTitle" OrigValue="ContactTitle" />
+ <r>
+	<Row>24</Row>
+	<CustomerID>BOTTM</CustomerID>
+	<ContactName>Elizabeth Lincoln</ContactName>
+	<ContactTitle>Accounting Manager</ContactTitle>
+ </r>
+ <r>
+	<Row>25</Row>
+	<CustomerID>GREAL</CustomerID>
+	<ContactName>Howard Snyder</ContactName>
+	<ContactTitle>Marketing Manager</ContactTitle>
+ </r>
+ <r>
+	<Row>26</Row>
+	<CustomerID>SAVEA</CustomerID>
+	<ContactName>Jose Pavarotti</ContactName>
+	<ContactTitle>Sales Representative</ContactTitle>
+ </r>
+ <r>
+	<Row>27</Row>
+	<CustomerID>WHITC</CustomerID>
+	<ContactName>Karl Jablonski</ContactName>
+	<ContactTitle>Owner</ContactTitle>
+ </r>
+	</XMLDataToSave>
 </RequestContext>'
 
 	---------------------------------------------------------------------------
@@ -668,7 +664,7 @@ AS
 	dataportal parameter list, Interject will pass the related value automatically.
 	
 	@Interject_XMLDataToSave varchar(max) - Required for saving data. It contains XML for the designated cells values.
-	@Interject_ColDefItems  varchar(max) - Provides the Column Definitions in XML designated within the report formula.
+	@Interject_ColDefItems varchar(max) - Provides the Column Definitions in XML designated within the report formula.
 	@Interject_RowDefItems varchar(max) - Provides the Row Definitions in XML designated within the report formula.
 	@Interject_SourceFileAndPath varchar(500) - Provides the path and file name delimited by '|' of the current file.
 	@Interject_SourceFilePathAndTab varchar(1000) - Provides the path, file name and active tab name delimited by '|' of the current file.
@@ -711,7 +707,7 @@ AS
 		,@Interject_LoginDateUTC		DATETIME
 		,@Interject_UserRolesDelimited	NVARCHAR(max)
 		,@UserContextEncrypted			NVARCHAR(4000)
-		,@Interject_XMLDataToSave	    xml	
+		,@Interject_XMLDataToSave		xml	
 	
 	EXEC [dbo].[RequestContext_Parse]
 		@Interject_RequestContext		= @Interject_RequestContext
@@ -767,7 +763,7 @@ AS
 	
 	--
 	-- PROCESS THE XML DATA INTO TABLE VARIABLE
-	-- varchar(max) is used for the data type by default.  Please change for the specific requirement.
+	-- varchar(max) is used for the data type by default. Please change for the specific requirement.
 	--
 
 	DECLARE @DataToProcess TABLE
@@ -776,7 +772,7 @@ AS
 		 [_ExcelRow] INT 
 		,[_MessageToUser] VARCHAR(500) DEFAULT('')
 		-- Below are your columns expected from the spreadsheet that is calling this save stored procedure
-		-- Please change the (max) to the expected length of the text input.  If limiting length, be sure to make the size larger than allowed so you can add validation to notify the user
+		-- Please change the (max) to the expected length of the text input. If limiting length, be sure to make the size larger than allowed so you can add validation to notify the user
 	
 		,[CustomerID] NCHAR(5)
 		,[ContactName] NVARCHAR(30)
@@ -786,12 +782,12 @@ AS
 	IF DATALENGTH(@Interject_XMLDataToSave) > 0 
 	BEGIN
 		declare @DataToProcessXML as XML
-		-- Handle conversion of XML text into an XML variable.  
+		-- Handle conversion of XML text into an XML variable. 
 		BEGIN TRY
 			SET @DataToProcessXML = CAST(@Interject_XMLDataToSave as XML)
 		END TRY
 		BEGIN CATCH
-			SET @ErrorMessageToUser = 'Error in Parsing XML from Interject.  Error: ' + ERROR_MESSAGE()
+			SET @ErrorMessageToUser = 'Error in Parsing XML from Interject. Error: ' + ERROR_MESSAGE()
 			GOTO FinalResponseToUser
 		END CATCH
 		
@@ -844,7 +840,7 @@ AS
 	-- Now check if there were any validation issues in the detail and stop processing if true
 	IF EXISTS(SELECT 1 FROM @DataToProcess WHERE [_MessageToUser] <> '')
 	BEGIN
-		SET @ErrorMessageToUser = 'There were errors in the details of your input.  Please review the errors noted in each row.'
+		SET @ErrorMessageToUser = 'There were errors in the details of your input. Please review the errors noted in each row.'
 		GOTO FinalResponseToUser
 	END
 
@@ -859,21 +855,21 @@ AS
 		DECLARE @ChangeLog as TABLE
 		(
 			[_ExcelRow] INT	-- will capture the source row that affected the target table
-			,[UpdateTypeCode] VARCHAR(10)  -- Will show UPDATE, INSERT, or DELETE
+			,[UpdateTypeCode] VARCHAR(10) -- Will show UPDATE, INSERT, or DELETE
 			,[CustomerID] NCHAR(5)
 		)
 		
 		BEGIN TRAN t1
 			--
-			--  use MERGE statement that UPDATES, INSERTS, and DELETES in one action
+			-- use MERGE statement that UPDATES, INSERTS, and DELETES in one action
 			--
 			MERGE dbo.Northwind_Customers t -- t = the target table or view to update
 			USING (
 				SELECT
-				    [_ExcelRow]
-				    ,[CustomerID]
-				    ,[ContactName]
-				    ,[ContactTitle]
+					[_ExcelRow]
+					,[CustomerID]
+					,[ContactName]
+					,[ContactTitle]
 				FROM @DataToProcess 
 			) s -- s = the source data to be used to update the target table
 			-- the join on the column keys is specified below
@@ -902,9 +898,9 @@ AS
 				
 			-- the output captures the changes to the table and logs to a table variable
 			OUTPUT 
-				isnull(inserted.[CustomerID],deleted.[CustomerID])  -- include deleted in case delete is added later. Inserted is used for both Update an Insert
+				isnull(inserted.[CustomerID],deleted.[CustomerID]) -- include deleted in case delete is added later. Inserted is used for both Update an Insert
 				,s.[_ExcelRow] 
-				,$action as UpdateTypeCode  -- this logs into an a change log table variable
+				,$action as UpdateTypeCode -- this logs into an a change log table variable
 			INTO @ChangeLog
 			(
 				[CustomerID]
@@ -916,13 +912,13 @@ AS
 			UPDATE dtp
 			SET [_MessageToUser] = 
 				CASE cl.UpdateTypeCode
-					--WHEN 'INSERT' THEN ', Added!'  -- not used in this example
+					--WHEN 'INSERT' THEN ', Added!' -- not used in this example
 					--WHEN 'DELETE' THEN ', Deleted' -- this will never match the excel side but can be used for other types of logging
 					WHEN 'UPDATE' THEN ', Updated!'
-					--ELSE ', No change'  -- not used in this example
+					--ELSE ', No change' -- not used in this example
 				END 
 			FROM @DataToProcess dtp
-				INNER JOIN @ChangeLog cl  -- use Left Join if 'No Change' is to be identified
+				INNER JOIN @ChangeLog cl -- use Left Join if 'No Change' is to be identified
 					 ON dtp.[_ExcelRow] = cl.[_ExcelRow]
 				
 		IF @TestMode = 1
@@ -942,7 +938,7 @@ AS
 		IF @@TRANCOUNT > 0
 			ROLLBACK TRAN t1
 		
-		SET @ErrorMessageToUser =  ERROR_MESSAGE()
+		SET @ErrorMessageToUser = ERROR_MESSAGE()
 		GOTO FinalResponseToUser
 	END CATCH
 	
@@ -961,7 +957,7 @@ FinalResponseToUser:
 	-- return the recordset results back to the spreadsheet, if needed.
 	SELECT
 		[_ExcelRow] as [Row] -- this relates to the original row of the spreadsheet the data came from
-		,SUBSTRING([_MessageToUser],3,1000) as [MessageToUser]  -- This is a field that, if it matches a column in the Results Range, will be placed in that column for the specified row
+		,SUBSTRING([_MessageToUser],3,1000) as [MessageToUser] -- This is a field that, if it matches a column in the Results Range, will be placed in that column for the specified row
 	FROM @DataToProcess
 	
 	-- if there is an error, raise error and Interject will catch and present to the user.

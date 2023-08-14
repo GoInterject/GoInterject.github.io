@@ -2,15 +2,17 @@
 title: Interject Data Exchanges
 layout: custom
 keywords: [API Communicationa, Security, Privacy]
-description: Interject's data exchanges and active API endpoints. 
+description: Interject's data exchanges and active API endpoints.
 ---
+* * *
+
+## Overview
 
 The following document is intended to communicate and overview of what data is handled by the Interject Addin, what data passes through the Interject Platform API, and what data passes through any other API within Interject's ecosystem. Interject provides this information for internal and external audit guidance, and for clients or prospective clients to check against their own data security and privacy protocols.
 
+### API Communication Domain: platform.api.gointerject.com
 
-#### API Communication Domain: platform.api.gointerject.com
-
-## API Communication Summary for On-Prem Application
+### API Communication Summary for On-Prem Application
 
 ### \[POST\] /api/errorlog
 
@@ -30,17 +32,17 @@ Authentication Package:
 - Authentication Object (Encryption)
 - Authentication Type ID
 
-    User Context:
-    - NT Login
-    - Machine Name
-    - Full Name
-    - Domain Name:
-    - User ID
-    - Client ID
-    - User Roles
-    - IDS (Interject Data Systems) Login Name
-    - IDS Login Auth Type ID
-    - IDS Login Date UTC
+ User Context:
+ - NT Login
+ - Machine Name
+ - Full Name
+ - Domain Name:
+ - User ID
+ - Client ID
+ - User Roles
+ - IDS (Interject Data Systems) Login Name
+ - IDS Login Auth Type ID
+ - IDS Login Date UTC
 - User Name
 - UTC Expiration Date
 
@@ -66,49 +68,48 @@ Acquires the base contents of the settings file and initiates defaults prior to 
 **Following is an example of post:**
 
 ```xml
-        InterjectRequestDTO {
-            DataPortalName: null,
-            RequestParameterList: [
-                { Name: "@ClientPublicID", InputValue: "" },
-                { Name: "@SettingNames", InputValue: "AppConfig,SessionConfig" },
-                { Name: "@InstallCode", InputValue: "Interject Cloud" },
-                { Name: "@ReturnValuesXML", InputValue: "" },
-            ],
-            PassThroughCommand: {
-                ConnectionStringName: "",
-                CommandType: IdsDataModel.CommandType.StoredProcedure,
-                CommandText: "[app].[Client.Setting.Get]",
-                CommandTimeout: 20,
-                OnConnectionStringLookup: <func>,
-            },
-            SupplementalData: <dict<string,string>>, <- count 0
-        }
-``` 
+ InterjectRequestDTO {
+ DataPortalName: null,
+ RequestParameterList: [
+ { Name: "@ClientPublicID", InputValue: "" },
+ { Name: "@SettingNames", InputValue: "AppConfig,SessionConfig" },
+ { Name: "@InstallCode", InputValue: "Interject Cloud" },
+ { Name: "@ReturnValuesXML", InputValue: "" },
+],
+ PassThroughCommand: {
+ ConnectionStringName: "",
+ CommandType: IdsDataModel.CommandType.StoredProcedure,
+ CommandText: "[app].[Client.Setting.Get]",
+ CommandTimeout: 20,
+ OnConnectionStringLookup: <func>,
+ },
+ SupplementalData: <dict<string,string>>, <- count 0
+ }
+```
 
-**Example of returned output** 
+**Example of returned output**
 
 ```xml
-        <?xml version="1.0" encoding="utf-8"?>
-        <root>
-        <Global>
-            <AppDataSource>InterjectPlatform</AppDataSource>
-            <DataCellTimeOutSeconds>600</DataCellTimeOutSeconds>
-            <DefaultAuthTypeId>10</DefaultAuthTypeId>
-            <Initiated>True</Initiated>
-            <InstallCode></InstallCode>
-            <InstallCodeOption>InterjectCloud</InstallCodeOption>
-            <LastSaved>4/15/2022 11:05:20 AM</LastSaved>
-            <RetainPriorDataCellValuesInMemory>True</RetainPriorDataCellValuesInMemory>
-            <ShowAdvancedMenu>false</ShowAdvancedMenu>
-            <TurnOnDiagnosticsLogging>False</TurnOnDiagnosticsLogging>
-            <WebProxyBehavior>3</WebProxyBehavior>
-        </Global>
-        <Clients></Clients>
-        <Users></Users>
-        <Other></Other>
-        </root>
-``` 
-
+ <?xml version="1.0" encoding="utf-8"?>
+ <root>
+ <Global>
+ <AppDataSource>InterjectPlatform</AppDataSource>
+ <DataCellTimeOutSeconds>600</DataCellTimeOutSeconds>
+ <DefaultAuthTypeId>10</DefaultAuthTypeId>
+ <Initiated>True</Initiated>
+ <InstallCode></InstallCode>
+ <InstallCodeOption>InterjectCloud</InstallCodeOption>
+ <LastSaved>4/15/2022 11:05:20 AM</LastSaved>
+ <RetainPriorDataCellValuesInMemory>True</RetainPriorDataCellValuesInMemory>
+ <ShowAdvancedMenu>false</ShowAdvancedMenu>
+ <TurnOnDiagnosticsLogging>False</TurnOnDiagnosticsLogging>
+ <WebProxyBehavior>3</WebProxyBehavior>
+ </Global>
+ <Clients></Clients>
+ <Users></Users>
+ <Other></Other>
+ </root>
+```
 ### \[GET\] /api/download/update
 
 Supports the update checking process
@@ -123,25 +124,27 @@ Retrieves user configuration settings for logged-in user.
 **Info Passed:**
 
 - Header
-    - ID Session Token
+ - ID Session Token
 - Query String
-    - Public Client ID
-    - Local Cached Data
+ - Public Client ID
+ - Local Cached Data
 
 Example of returned data:
 
 ```
-table(0)  Last Update Time
-table(1)  CacheCategoryID 1   ReportLibraryRoot
-table(2)  CacheCategoryID 2   ReporLibraryFolders
-table(3)  CacheCategoryID 3   ReportLinks
-table(4)  CacheCategoryID 4   ReportLinkVersions
+table(0) Last Update Time
+table(1) CacheCategoryID 1 ReportLibraryRoot
+table(2) CacheCategoryID 2 ReporLibraryFolders
+table(3) CacheCategoryID 3 ReportLinks
+table(4) CacheCategoryID 4 ReportLinkVersions
 ```
 
-## Platform API Endpoints
+### Platform API Endpoints
 
 <details>
-<summary>Click to expand</summary>
+<summary><b>Click to Expand</b></summary>
+
+<br>
 
 1. https://platform-api.gointerject.com/api/AddinManagerLog <br>
 
@@ -234,7 +237,7 @@ table(4)  CacheCategoryID 4   ReportLinkVersions
 45. https://platform-api.gointerject.com/api/Installer/Updates <br>
 
 46. https://platform-api.gointerject.com/api/InterjectRequest/Anonymous <br>
- 
+
 47. https://platform-api.gointerject.com/api/Invite <br>
 
 48. https://platform-api.gointerject.com/api/Invite/Request <br>
@@ -320,3 +323,5 @@ table(4)  CacheCategoryID 4   ReportLinkVersions
 88. https://platform-api.gointerject.com/api/User/IsValid <br>
 
 89. https://platform-api.gointerject.com/api/User/Enabled <br>
+
+</details>

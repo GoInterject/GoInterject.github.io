@@ -1,14 +1,14 @@
 ---
 title: Interject Hyperlinks
 layout: custom
-keywords: [link, hyperlink]
+keywords: [links, hyperlinks]
 description: Interject provides a way to perform some of the basic Interject functions by clicking on a link within the report.
 ---
+* * *
 
 ##  **Overview**
 
 Interject provides a way to perform some of the basic Interject functions and commands by clicking on a link within the report. This makes it convenient to customize your report to preform commonly used functions and commands by the click of a button. 
-
 
 ### **Hyperlink List**
 
@@ -26,7 +26,6 @@ This feature only works if the correct Screen Tip is entered for the link. The f
 <!---
 | "Interject Execute jAction" | jAction Function | Executes jAction Function |
 --->
-
 
 For a convenient way to create an Interject Hyperlink via the Quick Tools menu, see [QuickTools - Hyperlink](/wIndex/QuickTools-Hyperlink.html).
 

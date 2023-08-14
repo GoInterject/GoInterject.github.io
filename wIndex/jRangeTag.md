@@ -1,9 +1,10 @@
 ---
 title: jRangeTag()
 layout: custom
-keywords: [jRangeTag, function]
+keywords: [jRangeTag, helper, function, formula]
 description: The jRangeTag function simply tags a designated range with a name.
 ---
+* * *
 
 ##  Function Summary
 The jRangeTag function simply tags a designated range with a name. This is used to support certain automated processes unique to Interject functions, for example report distribution.
@@ -52,14 +53,11 @@ For an example of this function, see [Lab Create: Basic Distribution](/wGetStart
 </table>
 </div>
 
-
 ###  Excel Formula Bar Example
 
 ```Excel
 =jRangeTag("Location",M22)
 ```
-
-
 
 ###  Function Composition
 

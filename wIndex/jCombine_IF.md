@@ -1,11 +1,13 @@
 ---
 title: jCombineIF()
 layout: custom
-keywords: [jCombineIF, function]
+keywords: [jCombineIF, helper, function, formula]
 description: The jCombineIF function concatenates a range or multiple ranges of cells into a single string using a designated delimiter if a certain condition is met.
 ---
+* * *
 
 ##  Function Summary
+
 The jCombineIF function concatenates a range or multiple ranges of cells into a single string using a designated delimiter if a certain condition is met. Blank cells are skipped.
 
 This function can be used as a standalone function and does not need to be embedded in another function.
@@ -96,14 +98,11 @@ For an example of this function, see [Lab Create: Using the Retain Feature](/wGe
 </table>
 </div>
 
-
 ###  Excel Formula Bar Example
 
 ```Excel
 =jCombineIF(J16:O16,J15:O15,TRUE,";")
 ```
-
-
 
 ###  Function Composition
 

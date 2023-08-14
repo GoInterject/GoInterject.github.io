@@ -5,6 +5,7 @@ landing: True
 keywords: [ real world, use case, report library]
 description: Interject is a new method for connecting users to their data. It is a lightweight, enterprise-scalable platform bringing data to spreadsheets which can be used like customizable web applications 
 ---
+* * *
 
 ##  In a Nutshell 
 
@@ -24,21 +25,4 @@ Interject provides a central report library capable of managing version control 
   * A collaborative, interactive budgeting and projection tool 
   * A comprehensive financial close management solution 
 
-
-
 A variety of Excel based data reporting products exist, but none change the landscape of opportunity like Interject. 
-
-  
-
-
-  
-
-
-  
-
-
-  
-
-
-  
-

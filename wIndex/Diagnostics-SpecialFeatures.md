@@ -1,14 +1,14 @@
 ---
 title: Diagnostics - Apply Special Features
 layout: custom
-keywords: [Diagnostics, Apply Special Features, Configuration, Config]
-description: 
+keywords: [Diagnostics, Apply Special Features, Configuration, Config, animations, bug fix]
+description: The "Apply Special Features" in the Interject Diagnostics Pane allows users to apply certain bux fixes.
 ---
 * * *   
 
 ## Overview
 
-The "Apply Special Features" in the Interject Diagnostics Pane allows users to apply certain bux fixes:
+The "Apply Special Features" in the Interject Diagnostics Pane allows users to apply certain bux fixes.
 
 ![](/images/Diagnostics/ApplySpecialFeatures.png)
 <br>

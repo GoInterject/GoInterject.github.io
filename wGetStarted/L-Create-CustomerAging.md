@@ -1,64 +1,64 @@
 ---
 title: "Create: Customer Aging Report"
 layout: custom
-keywords: [ range, report, build, example]
+keywords: [range, report, build, example, customer aging, northwind customers, walkthrough]
 description: In this page you will see the process of building a Customer Aging report from scratch to better understand reports and also get a clearer illustration of the Interject Report Range data function
 ---
 * * *
 
-##  **Overview**
+##  Overview
 
-In this page you will see the process of building a Customer Aging report from scratch to better understand reports and also get a clearer illustration of the Interject [ ReportRange() ](/wIndex/ReportRange.html) data function. 
+In this page you will see the process of building a Customer Aging report from scratch to better understand reports and also get a clearer illustration of the Interject [ReportRange()](/wIndex/ReportRange.html) data function.
 
 <blockquote class=lab_info>
  If you are following the Training Labs, this is Lab 3.1. Note: The Report Library at Training Labs for this lab will be blank as you are creating a report from a new blank Excel sheet.
 </blockquote>
 
-###  Building the Report 
+###  Building the Report
 
-**Step 1:** This process begins with the Interject [ Report Builder ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder) . Open the Report Build as illustrated below. There is a drop down list of  [ Dataportals ](/wApps/Common-Dataportal-Index.html) that can be chosen  . An Interject Dataportal is a pre-configured data query that is setup so spreadsheet users can easily direct data into their own spreadsheet reports. Dataportals can be setup to access databases or cloud data and are either setup by Interject developers or the IT team. 
+**Step 1:** This process begins with the Interject [Report Builder](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder) . Open the Report Build as illustrated below. There is a drop down list of  [Dataportals](/wApps/Common-Dataportal-Index.html) that can be chosen  . An Interject Data Portal is a pre-configured data query that is setup so spreadsheet users can easily direct data into their own spreadsheet reports. Data Portals can be setup to access databases or cloud data and are either setup by Interject developers or the IT team.
 
-![](/images/L-Create-CustAging/01.png)   
+![](/images/L-Create-CustAging/01.png)
 <br>
 
-**Step 2:** For this Customer Aging report, use the NorthwindCustomers Dataportal. Once chosen, click the **Build Report Formula** button. 
+**Step 2:** For this Customer Aging report, use the NorthwindCustomers Data Portal. Once chosen, click the **Build Report Formula** button.
 
 ![](/images/L-Create-CustAging/02.png)
 <br>
 
-A new sheet should be added that looks like the screenshot below. Now the report is ready for further customization. 
+A new sheet should be added that looks like the screenshot below. Now the report is ready for further customization.
 
 ![](/images/L-Create-CustAging/03.png)
 <br>
 
-###  Getting Started 
+###  Getting Started
 
-**Step 1:** Begin by putting the filter value **Market** in C16 so you can limit the data pulled to just a few records that have a Company Name that contains the word **Market**. 
+**Step 1:** Begin by putting the filter value **Market** in C16 so you can limit the data pulled to just a few records that have a Company Name that contains the word **Market**.
 
 ![](/images/L-Create-CustAging/08.png)
 <br>
 
-Next, use the [ **Pull Data** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) menu item. 
+Next, use the [**Pull Data**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) menu item.
 
 ![](/images/L-Create-CustAging/09.png)
-<br> 
-
-You can see below, that all the columns available in the Dataportal will be shown by default with the column names on the first row.
-
-![](/images/L-Create-CustAging/10.png)   
 <br>
 
-**Step 2:** Select a few columns for our report by copying a few of the column names to the Column Definition area on row 2. Follow the animated GIF below to multi-select CustomerID, CompanyName, ContactName, ContactTitle, City, Country, Phone, 30Days, 60Days, and 90Days. You can select them all individually while holding the Ctrl key. Then you can copy and paste the values all at once in cell B2. 
+You can see below, that all the columns available in the Data Portal will be shown by default with the column names on the first row.
+
+![](/images/L-Create-CustAging/10.png)
+<br>
+
+**Step 2:** Select a few columns for our report by copying a few of the column names to the Column Definition area on row 2. Follow the animated GIF below to multi-select CustomerID, CompanyName, ContactName, ContactTitle, City, Country, Phone, 30Days, 60Days, and 90Days. You can select them all individually while holding the Ctrl key. Then you can copy and paste the values all at once in cell B2.
 
 ![](/images/L-Create-CustAging/11.gif)
 <br>
 
 **Step 3:** Now that you have the columns, move the **Phone** column title to column F instead of H. First select the entire column H. Then hold the Shift key and hover your cursor over the left border of Column H. Left-drag the column left until the pop-up says "F:F" and then let go.
 
-![](/images/L-Create-CustAging/12.png)     
+![](/images/L-Create-CustAging/12.png)
 <br>
 
-**Step 4:** Now that the Column Definitions are set, clear the report for the next step. 
+**Step 4:** Now that the Column Definitions are set, clear the report for the next step.
 
 ![](/images/L-Create-CustAging/13.png)
 <br>
@@ -68,53 +68,53 @@ The cleared report should look like the screenshot below.
 ![](/images/L-Create-CustAging/14.png)
 <br>
 
-**Step 5:** Now set up the ReportRange() formula to look to the Column Definition area that was just set. Select cell C6.  
+**Step 5:** Now set up the ReportRange() formula to look to the Column Definition area that was just set. Select cell C6.
 
-![](/images/L-Create-CustAging/15.png) 
+![](/images/L-Create-CustAging/15.png)
 <br>
 
-**Step 6:** Click the **fx** button as noted below to open the Function Wizard and add a ColDefRange. The ColDefRange argument should be empty at first. 
+**Step 6:** Click the **fx** button as noted below to open the Function Wizard and add a ColDefRange. The ColDefRange argument should be empty at first.
 
 ![](/images/L-Create-CustAging/16.png)
 <br>
 
-For this report, you will set the ColDefRange to the entire second row, 2:2.  
+For this report, you will set the ColDefRange to the entire second row, 2:2.
 
 ![](/images/L-Create-CustAging/17.png)
 <br>
 
-**Step 7:** Next, scroll down in the Function Wizard to view the **UseEntireRow** argument. Change from FALSE to TRUE. This is an optional step but is certainly a best practice. 
+**Step 7:** Next, scroll down in the Function Wizard to view the **UseEntireRow** argument. Change from FALSE to TRUE. This is an optional step but is certainly a best practice.
 
-![](/images/L-Create-CustAging/18.png) 
+![](/images/L-Create-CustAging/18.png)
 <br>
 
-**Step 8:** Before closing the Function Arguments, continue to scroll down so you can change the **PutFieldNamesAtTop** argument from True to False. This is not required but is a good practice. 
+**Step 8:** Before closing the Function Arguments, continue to scroll down so you can change the **PutFieldNamesAtTop** argument from True to False. This is not required but is a good practice.
 
 ![](/images/L-Create-CustAging/19.png)
 <br>
 
-**Step 9:** When you re-pull the report, the selected 11 columns in the Column Definition should be the only columns showing. 
+**Step 9:** When you re-pull the report, the selected 11 columns in the Column Definition should be the only columns showing.
 
 ![](/images/L-Create-CustAging/19.png)
 <br>
 
-###  Final Formatting  
+###  Final Formatting
 
-The data pulled should look like below. 
+The data pulled should look like below.
 
-**Note** : Although not illustrated in the below steps, you can save typing in the column labels for later. Copy the Column Definition values in B2:L2 and **Paste Values** in B22:L22. These are the labels you can customize for users to view. 
+**Note** : Although not illustrated in the below steps, you can save typing in the column labels for later. Copy the Column Definition values in B2:L2 and **Paste Values** in B22:L22. These are the labels you can customize for users to view.
 
 ![](/images/L-Create-CustAging/21.png)
 <br>
 
-Do some quick formatting to clean up the report. Delete rows 21 through 22. 
+Do some quick formatting to clean up the report. Delete rows 21 through 22.
 
 ![](/images/L-Create-CustAging/22.png)
 <br>
 
-### Setting Up jFreezePanes
+### Setting up jFreezePanes
 
-Next, you need to freeze the panes to hide the configuration area from the users. This can be done manually with the Excel menu item for freezing panes. But this is a good time to illustrate INTERJECT's jFreezePanes() feature. First, setup the [ jFreezePanes ](/wIndex/jFreezePanes.html) function by entering **=jFreezePanes()** in F6 and click the **fx** button. 
+Next, you need to freeze the panes to hide the configuration area from the users. This can be done manually with the Excel menu item for freezing panes. But this is a good time to illustrate INTERJECT's jFreezePanes() feature. First, setup the [jFreezePanes](/wIndex/jFreezePanes.html) function by entering **=jFreezePanes()** in F6 and click the **fx** button.
 
 ![](/images/L-Create-CustAging/23.png)
 <br>
@@ -129,12 +129,12 @@ Now we will setup a [jFocus()](/wIndex/jFocus.html) formula so that the cursor w
 ![](/images/L-Create-CustAging/jFocusEntry.png)
 <br>
 
-Use the [ **Quick Tools** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools) menu item in the INTERJECT Ribbon so you can easily freeze the panes using the jFreezePanes formula you just configured. 
+Use the [**Quick Tools**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools) menu item in the INTERJECT Ribbon so you can easily freeze the panes using the jFreezePanes formula you just configured.
 
 ![](/images/L-Create-CustAging/25.png)
 <br>
 
-**Step 2:** The following should be the result after the panes are frozen. 
+**Step 2:** The following should be the result after the panes are frozen.
 <br>
 
 ![](/images/L-Create-CustAging/26.png)
@@ -145,7 +145,7 @@ Use the [ **Quick Tools** ](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-
 ![](/images/L-Create-CustAging/27.png)
 <br>
 
-Finally, clear the report, refreeze the panes, and upload it to the [ Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary.html).
+Finally, clear the report, refreeze the panes, and upload it to the [Report Library](/wAbout/ReportLibraryLinks.html).
 
 <blockquote class=lab_info>
  Do not upload this file to the Report Library if you are following the Training Labs. You may save the file locally, however, if you want to keep a local copy.

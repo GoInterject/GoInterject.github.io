@@ -1,15 +1,16 @@
 ---
 title: Report Library Links
 layout: custom
-keywords: [report library, link, file, version, report, update, details, documentation]
+keywords: [report library, link, file, version, report, update, upload, details, documentation]
 description: The Report Library provides an easy interface where new reports can be uploaded, existing reports can be updated, and details and documentation about the report can be added.
 ---
+* * *
 
-##  Overview
+## Overview
 
 The Report Library provides an easy interface where new reports can be uploaded, existing reports can be updated, and details and documentation about the report can be added. Reports are called links in the Library. These links can be a link to a file you have saved locally or one uploaded to the Report Library.
 
-## Creating a New Link (File Open)
+### Creating a New Link (File Open)
 
 **Step 1:** To create a new link, begin by opening the Excel file you wish to upload and open the Report Library.
 
@@ -46,7 +47,7 @@ Note: If the file is not saved locally you will be prompted to save the file fir
 ![](/images/ReportLibraryLinks/SaveFileExplorer.png)
 <br>
 
-## Creating a New Link (File Not Open)
+### Creating a New Link (File Not Open)
 
 **Step 1:** To save a file that is not currently open, begin by right clicking on the Report Links Section and select **Create New Link**:
 
@@ -77,7 +78,7 @@ Browse to the file you wish to upload and click **Open**:
 ![](/images/ReportLibraryLinks/ClickSave.png)
 <br>
 
-## Creating a New Version to an Existing Link
+### Creating a New Version to an Existing Link
 
 The Report Library provides an interface where reports can be versioned. Each successive upload will automatically increment the version number:
 
@@ -114,7 +115,7 @@ Notice the new report is added and automatically incremented the version number:
 ![](/images/ReportLibraryLinks/LinkVersionWindow.png)
 <br>
 
-## Updating a Report Link
+### Updating a Report Link
 
 **Step 1:** Begin by opening the Report Library and right click on the report you wish to edit. Hover the cursor over **Selected Link** and you can view the sub menu:
 

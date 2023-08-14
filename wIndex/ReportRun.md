@@ -1,11 +1,13 @@
 ---
 title: ReportRun()
 layout: custom
-keywords: [ReportRun, function]
-description: The ReportRun function will run a designated report function(s) within a Workbook when triggered upon a designated [event](wIndex/Event-Functions-Landing.html).
+keywords: [ReportRun, run, event, trigger, function, formula]
+description: The ReportRun function will run a designated report function(s) within a Workbook when triggered upon a designated event.
 ---
+* * *
 
 ##  Function Summary
+
 The ReportRun function will run a designated report function(s) within a Workbook when triggered upon a designated [event](wIndex/Event-Functions-Landing.html). This is typically used to synchronize the running of functions in other sheets within the Workbook. 
 
 For an example of this function, see [Working with Pivot Tables](/wGetStarted/L-Create-PivotTable.html).
