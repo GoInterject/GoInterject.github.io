@@ -14,7 +14,7 @@ For all other data sources, a custom website API can be created to connect the d
 
 Go directly to any topic below by clicking one of the links below.
 
-### [API Connections](/wPortal/L-Api-Connection.html)
+### [API Connections](/wPortal/L-Api-Connections.html)
 
 An API can be used with a Data Connection to connect to any database, including noSQL databases, using standard development practices that are used to develop website applications. You can also connect to other website APIs such as those from Salesforce, Netsuite, Intacct and many others.
 
