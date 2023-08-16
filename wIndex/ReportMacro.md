@@ -1,11 +1,13 @@
 ---
 title: ReportMacro()
 layout: custom
-keywords: [ReportMacro, function]
-description: The ReportMacro function executes a designated VBA macro when triggered upon a designated [event](wIndex/Event-Functions-Landing.html).
+keywords: [ReportMacro, macro, vba, event, trigger, function, formula]
+description: The ReportMacro function executes a designated VBA macro when triggered upon a designated event.
 ---
+* * *
 
 ##  Function Summary
+
 The ReportMacro function executes a designated VBA macro when triggered upon a designated [event](wIndex/Event-Functions-Landing.html). 
 
 For an example of this function, see [Lab Create: Using Report Macro](/wGetStarted/L-Create-ReportMacro.html)
@@ -72,14 +74,11 @@ For an example of this function, see [Lab Create: Using Report Macro](/wGetStart
 </table>
 </div>
 
-
 ###  Excel Formula Bar Example
 
 ```Excel
 =ReportMacro("Pull","Both","MyCustomFunction")
 ```
-
-
 
 ###  Function Composition
 
@@ -91,7 +90,6 @@ For an example of this function, see [Lab Create: Using Report Macro](/wGetStart
 |  MacroNameToRun  |  "MyCustomFunction"  |  The macro "MyCustomFunction" will be ran.  |  
 
 ###  Trigger Combination List
-
 
 The execution of this function is determined by a combination of an Interject action and an Interject event. An action is a pull or save action whereas an event is a clear or run event. The values in the OnPullSaveOrBoth and OnClearRunOrBoth arguments will determine what actions/events trigger the function's execution.
 

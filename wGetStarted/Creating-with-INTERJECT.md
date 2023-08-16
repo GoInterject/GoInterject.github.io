@@ -1,12 +1,12 @@
 ---
 title: Creating with Interject
 layout: custom
-keywords: [create, reports, basic, publishing]
+keywords: [create, modify, reports, walkthroughs]
 description: This section is for report writers who need to create or modify reports. You will run through basic modification, creation, and publishing of reports.
 ---
-***
+* * *
 
-##  **Creating with Interject**
+##  Overview
 
 This section is for report writers who need to create or modify reports. You will run through basic modification, creation, and publishing of reports. Feel free to [ contact ](mailto:help@gointerject.com) us if you cannot find your answer in these sections. 
 
@@ -19,22 +19,13 @@ A <a href="https://docs.gointerject.com/wLabs/lab.html">Lab Guide</a> is offered
 
 Reporting needs change often. Account details, specific formatting, even spreadsheet formulas require modification, that is why Interject's reports are so highly customizable using familiar spreadsheet knowledge. This section walks through common report modifications using [ Customer Aging ](/wGetStarted/L-Modify-CustomerAging.html), [ Inventory ](/wGetStarted/L-Modify-InventoryReport.html), and [ Financial ](/wGetStarted/L-Modify-FinancialReport.html) reports as an example. 
 
-  
-
-
 ###  [ Creating a Simple Report ](/wGetStarted/Creating-a-Simple-Report.html)
 
 This section details how to create reports from scratch. Here, you will walk through making a [ Customer Aging ](/wGetStarted/L-Create-CustomerAging.html) and [ Customer Orders ](/wGetStarted/L-Create-CustomerOrders.html) report from the ground up. The focus is on using simple single range tabular reports. 
 
-  
-
-
 ###  [ Fixed and Variable Reports ](/wGetStarted/Fixed-and-Variable-Reports.html)
 
 Reports often require various formats and subtotal sections, and this is especially true for financial reports. This section goes through several, more advanced report examples: [ Inventory ](/wGetStarted/L-Modify-InventoryReport.html), [ Financial ](/wGetStarted/L-Modify-FinancialReport.html) and [ Customer Aging Detail ](/wGetStarted/L-Drill-CustomerAging.html). These will illustrate how Interject provides a number of options for your reporting needs. 
-
-  
-
 
 ###  [ Drilling Between Reports ](/wGetStarted/Drilling-Between-Reports.html)
 
@@ -81,6 +72,3 @@ Some reports require default values, settings, or have summary pages that must b
 ###  [ Exporting Reports ](/wGetStarted/Exporting-Reports.html)
 
 Interject reports can be published or exported when needed. In most situations, Interject reports are shared like a web page, where all end users have access but can only see cost centers they have rights to. Still, there are times when reports must be saved to file folders or emailed, and this section walks through the specifics of distribution and all the available methods. 
-
-  
-

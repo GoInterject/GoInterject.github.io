@@ -1,11 +1,13 @@
 ---
 title: jWorkbookProperty()
 layout: custom
-keywords: [jWorkbookProperty, function]
+keywords: [jWorkbookProperty, helper, function, formula]
 description: The jWorkbookProperty function extracts information from the properties of the workbook.
 ---
+* * *
 
 ##  Function Summary
+
 The jWorkbookProperty function extracts information from the properties of the workbook.
 
 This function can be used as a standalone function and does not need to be embedded in another function.
@@ -34,14 +36,11 @@ For an example of this function, see [Lab Create: Inventory Fixed](/wGetStarted/
 </table>
 </div>
 
-
 ###  Excel Formula Bar Example
 
 ```Excel
 =jWorkbookProperty("Interject_LinkVersion")
 ```
-
-
 
 ###  Function Composition
 

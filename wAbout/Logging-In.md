@@ -1,20 +1,20 @@
 ---
 title: Logging In
 layout: custom
-keywords: [login, ribbon, logout, new login, credentials]
+keywords: [login, ribbon, logout, new login, credentials, accounts]
 description: Logging in is simple and fast! Interject will remember your login and sign you in automatically subsequent visits.You can also add multiple logins and switch accounts easily.
 ---
+* * *
 
-## Overview 
+## Overview
 
 Logging in is simple and fast! Interject will remember your login for 30 days. You can also add multiple logins and switch accounts easily.
 
 <blockquote class=highlight_note>
 <b>Note:</b> This page uses Interject version 2.5.0.19 for the content and screenshots.
 </blockquote>
-<br>
 
-## Initial Interject Login
+### Initial Interject Login
 
 **Step 1:** Click the Login button on the Interject Ribbon to bring up the Login Manager.
 
@@ -36,7 +36,7 @@ Logging in is simple and fast! Interject will remember your login for 30 days. Y
 ![](/images/LogginIn/LoginManager.png)
 <br>
 
-## New Login
+### New Login
 
 **Step 1:** To add a new login, first click the Login button on the Interject Ribbon.
 
@@ -48,7 +48,7 @@ Logging in is simple and fast! Interject will remember your login for 30 days. Y
 ![](/images/LogginIn/NewLoginClick.png)
 <br>
 
-## Logging Out
+### Logging Out
 
 Logging out means Interject will not automatically log you in the next time you return.
 
@@ -65,21 +65,21 @@ You may alternatively click the Logout button on the Interject ribbon.
 ![](/images/LogginIn/LogoutPrompt.png)
 <br>
 
-## Log Back In
+### Log Back In
 
 To log back in after you have been logged out, simply click the ellipses on the account you wish to log in and click Log In.
 
 ![](/images/LogginIn/LogBackIn.png)
 <br>
 
-## Switch Accounts
+### Switch Accounts
 
 To switch between accounts, simply click the link of the account you wish to switch to.
 
 ![](/images/LogginIn/SwitchAccounts.png)
 <br>
 
-## Forgetting Login Credentials
+### Forgetting Login Credentials
 
 Forgetting credentials means the login entry is deleted from the cache and removed from the Login Manger. You will have to reenter your credentials the next time you wish to log in.
 
@@ -87,8 +87,4 @@ To log out and forget your credentials, click the ellipses on the account you wi
 
 ![](/images/LogginIn/LogoutForget.png)
 <br>
-
-
-
-  
 

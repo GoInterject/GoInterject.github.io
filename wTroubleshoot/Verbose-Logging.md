@@ -6,20 +6,20 @@ description: To help diagnose any errors, Interject uses a Verbose Logging featu
 ---
 * * *
 
-## **Overview**
+## Overview
 
-Errors can occur for many reasons. Sometimes they are related to the environment or computer running Interject. It is important you have tools to capture everything that is interacting with Excel so, it is easier diagnose the cause of errors. This leads to faster troubleshooting and repair. To help diagnose any errors, Interject uses a Verbose Logging feature. The ideal goal of Verbose Logging is to help recreate an error and send logs to Interject's support team, where it can be fixed. 
+Errors can occur for many reasons. Sometimes they are related to the environment or computer running Interject. It is important you have tools to capture everything that is interacting with Excel so, it is easier diagnose the cause of errors. This leads to faster troubleshooting and repair. To help diagnose any errors, Interject uses a Verbose Logging feature. The ideal goal of Verbose Logging is to help recreate an error and send logs to Interject's support team, where it can be fixed.
 
-Verbose Logging will do four things: 
+Verbose Logging will do four things:
 
-* Capture timed points so that slowdown issues can be isolated 
+* Capture timed points so that slowdown issues can be isolated
 * Log errors in real time
 * Track activity so that, if Excel crashes, the exact events leading up to the crash are known
 * Record general information about the system environment so that the context of the problem can be reproduced
 
 To send the Verbose Logs to Interject, see [Send Report To Interject](/wTroubleshoot/Reporting-A-Problem.html#send-report-to-interject).
- 
-### Turn On Verbose Logging 
+
+### Turn on Verbose Logging
 
 **Step 1:** You will need to go to the diagnostic wizard. Click the **Advanced Menu** button on the Interject ribbon.
 
@@ -29,16 +29,16 @@ To send the Verbose Logs to Interject, see [Send Report To Interject](/wTroubles
 Next click **Diagnostics**.
 
 ![](/images/Verbose-Logging/02.jpg)
-<br> 
+<br>
 
-**Step 2:** You need to **Turn On** **Verbose Logging**, because it is **Off** by default. 
+**Step 2:** You need to **Turn On** **Verbose Logging**, because it is **Off** by default.
 
 To turn it on, select the **Toggle Verbose Logging** option in the menu, then click **Execute Selected Action**.
 
 ![](/images/Verbose-Logging/ToggleVerboseLogging.png)
-<br> 
+<br>
 
-**Step 3:** Confirm that the logging is **Turned On**. 
+**Step 3:** Confirm that the logging is **Turned On**.
 
 ![](/images/Verbose-Logging/ConfirmVerboseLogging.png)
 <br>

@@ -27,10 +27,16 @@ sitemaps: false
 
 <div id="glossaryMatch"></div>
 
+{% comment %}
+This block of code retrieves the search hits via the Google Programmable Search Engine API
+To make changes in the way the Search engine performs or looks, log in to the control panel at:
+https://programmablesearchengine.google.com/controlpanel/all
+{% endcomment %}
+
 <div id="my-cse1">
 <script>
   (function() {
-    var cx = '005534451279647379552:p216o8yqyva';
+    var cx = '009083416940869700725:jddtu1heaf0';
     var gcse = document.createElement('script');
     gcse.type = 'text/javascript';
     gcse.async = true;
@@ -40,9 +46,23 @@ sitemaps: false
   })();
   //console.log("googlecustomsearch completed");
 </script>
-<div markdown="0"><gcse:searchresults-only></gcse:searchresults-only></div>
-</div>
 
+
+{% comment %}
+This block of code displays a search box on the page
+{% endcomment %}
+
+<div class="gcse-searchbox"></div>
+
+{% comment %}
+This block of code displays the search hits
+{% endcomment %}
+
+<div class="gcse-searchresults"></div>
+
+{% comment %}
+This block of code seems to change the title of the search page
+{% endcomment %}
 
 <script defer>
   //console.log("Begin setTimeout Function");

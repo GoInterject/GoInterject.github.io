@@ -1,11 +1,13 @@
 ---
 title: jColumnDef()
 layout: custom
-keywords: [jColumnDef, function]
+keywords: [jColumnDef, helper, function, formula]
 description: The jColumnDef function defines a column based on one or more parameters.
 ---
+* * *
 
 ##  Function Summary
+
 The jColumnDef function defines a column based on one or more parameters. Each parameter represents a segment. The segments can be set to filter the data that this column represents. Typically this function is used with a Data Pull function for a financial report.
 
 The jColumnDef function utilizes a DataPortal to interact with the segments. This DataPortal is specifically setup for the particular needs of the company using Interject. The segments are thus customizable. For most companies, the Interject [FinCube](/wIndex/FinCube---The-Financial-Cube.html) DataPortal will suffice for their reporting needs.
@@ -136,14 +138,11 @@ The parameters and segments listed below are some examples of the FinCube DataPo
 </table>
 </div>
 
-
 ###  Excel Formula Bar Example
 
 ```Excel
 =jColumnDef(Actual,11,2001)
 ```
-
-
 
 ###  Function Composition
 

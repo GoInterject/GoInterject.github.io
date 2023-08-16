@@ -1,29 +1,27 @@
 ---
 title: "Develop: Error Handling with RAISERROR and UserNotice"
 layout: custom
-keywords: [error, handling, RAISERROR, UserNotice]
-description: Explains how Interject handles errors in Data Portals using T-SQL RAISERROR and UserNotice
+keywords: [error, handling, RAISERROR, UserNotice, return message]
+description: Explains how Interject handles errors in Data Portals using T-SQL RAISERROR and UserNotice.
 ---
+* * *
 
-### Introduction
+## Overview
 
 This page will cover error handling in Interject development using T-SQL’s RAISERROR and Interject’s UserrNotice flag.
 
 ### Understanding Error Handling
 
-There are two types of errors that Interject can display: unhandled and handled. Unhandled errors are system generated, whereas handled errors are anticipated and written by developers. For example, on a pull or save, an error may occur on the server which the report is trying to access. This error could be handled by the developer if the developer anticipates it, or it could be left as an unhandled error. 
+There are two types of errors that Interject can display: unhandled and handled. Unhandled errors are system generated, whereas handled errors are anticipated and written by developers. For example, on a pull or save, an error may occur on the server which the report is trying to access. This error could be handled by the developer if the developer anticipates it, or it could be left as an unhandled error.
 
-### Error Handling with RaiseError and UserNotice
-
-#### RAISERROR
+### Error Handling With RAISERROR
 
 Interject leverages the T-SQL statement RAISERROR in its Data Portals to process errors.
 
-RAISERROR is designed to generate error messages and initiate error processing in the session (Source: [Microsoft RAISERROR Documentation][microsoft doc]). It is used as follows:
-
+RAISERROR is designed to generate error messages and initiate error processing in the session (Source: [Microsoft RAISERROR Documentation][microsoft doc]{:target="_blank"}{:rel="noopener noreferrer"}). It is used as follows:
 
 ![](/images/Error-Handling/01.png)
-
+<br>
 
 **@ErrorMessageToUser** - a string containing a description of the error, with or without a prefix of ‘UserNotice:’.
 
@@ -31,26 +29,27 @@ RAISERROR is designed to generate error messages and initiate error processing i
 
 **state** - number, 0-255, used to locate where errors occur in your code.
 
-*See [Microsoft RAISERROR Documentation][microsoft doc] from more detailed information on using RAISERROR and its parameters.
+* See [Microsoft RAISERROR Documentation][microsoft doc]{:target="_blank"}{:rel="noopener noreferrer"} from more detailed information on using RAISERROR and its parameters.
 
-#### UserNotice
+### Error Handling With UserNotice
 
-**‘UserNotice:’** is an Interject-defined identifying string that we append to the beginning of the @ErrorMessageToUser argument at the time of passing to RAISERROR to indicate that we would like a popup to appear to the user in Excel when the error occurs. It is used as follows:
-
+**UserNotice:** is an Interject-defined identifying string that we append to the beginning of the @ErrorMessageToUser argument at the time of passing to RAISERROR to indicate that we would like a popup to appear to the user in Excel when the error occurs. It is used as follows:
 
 ![](/images/Error-Handling/02.png)
+<br>
 
-
-When ‘UserNotice:’ is added to your @ErrorMessageToUser before being passed to RAISERROR, it **enables the option of having a popup window appear**, alerting the user of the error in Excel.
+When **UserNotice:** is added to your @ErrorMessageToUser before being passed to RAISERROR, it enables the option of having a popup window appear, alerting the user of the error in Excel.
 
 ![](/images/Error-Handling/03.png)
+<br>
 
-Errors can quickly be *handled* (as opposed to leaving unhandled) by developers simply by using the UserNotice string.
+Errors can quickly be handled (as opposed to leaving them unhandled) by developers simply by using the UserNotice string.
 
-### Unhandled Error Behavior with RAISERROR
+### Unhandled Error Behavior
 
-If you opt not to use UserNotice, you error will still be reported by the Interject addin, but no popup window will appear for the user:
+If you opt not to use UserNotice, your error will still be reported by the Interject Addin, but no popup window will appear for the user:
 
 ![](/images/Error-Handling/04.png)
+<br>
 
 [microsoft doc]: https://docs.microsoft.com/en-us/sql/t-sql/language-elements/raiserror-transact-sql?view=sql-server-2017

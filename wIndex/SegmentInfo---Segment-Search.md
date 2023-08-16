@@ -1,15 +1,15 @@
 ---
 title: SegmentInfo - Segment Search
 layout: custom
-keywords: [segmentinfo, segment search, function]
-description: Segments is a dataportal which allows you to filter for every segment within your chart of accounts and allows you to use your groupings within your filter choices. 
+keywords: [segmentinfo, segment search, code, function, columns]
+description: Segments is a Data Portal which allows you to filter for every segment within your chart of accounts and allows you to use your groupings within your filter choices. 
 ---
+* * *
 
-##  **Overview**
+##  Overview
 
-Segments is a dataportal which allows you to filter for every segment within your chart of accounts and allows you to use your groupings within your filter choices. For example, if you are looking for accounts in **Revenue** , simply search for Revenue. If there is a segment that represents your business unit (such as Location or District) and security is enabled, it can be used to create dynamic reports that list the business units you or your team have rights to. 
-
-To search segment groups, there is a related dataportal **GroupInfo** that provides all the groups an individual segment code may be a part of. 
+Segments is a Data Portal which allows you to filter for every segment within your chart of accounts and allows you to use your groupings within your filter choices. For example, if you are looking for accounts in **Revenue** , simply search for Revenue. If there is a segment that represents your business unit (such as Location or District) and security is enabled, it can be used to create dynamic reports that list the business units you or your team have rights to. 
+To search segment groups, there is a related Data Portal **GroupInfo** that provides all the groups an individual segment code may be a part of. 
 
 ###  Segments Parameters
 
@@ -22,6 +22,7 @@ To search segment groups, there is a related dataportal **GroupInfo** that provi
 ### Available Columns
 
 | Column Name | Description |
+|-----|-----|
 | SegmentCode | The segment code such as **52120** for Account or **2000** with a business unit. |
 | SegmentName | The name for the segment, such as **Wages and Salaries**. |
 | IsCredit | If the segment relates to Accounts, this field notes whether the account is a credit account, which is stored as a credit by default. |

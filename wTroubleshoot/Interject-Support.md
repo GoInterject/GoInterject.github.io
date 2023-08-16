@@ -1,12 +1,12 @@
 ---
 title: Interject Support
 layout: custom
-keywords: [ support, user, interject, contact, logging ]
-description:  Interject Support in built into Excel via the Interject Addin. You can easily report a problem to Interject or find Interject contact information. You also have the option of turning on certain logs in order to send more key details to Interject.
+keywords: [support, user, interject, contact, logging]
+description: Interject Support in built into Excel via the Interject Addin. You can easily report a problem to Interject or find Interject contact information. You also have the option of turning on certain logs in order to send more key details to Interject.
 ---
 * * *
 
-##  **Overview**
+## Overview
 
 Interject Support in built into Excel via the Interject Addin. You can easily report a problem to Interject or find Interject contact information. You also have the option of turning on certain logs in order to send more key details to Interject.
 
@@ -16,7 +16,7 @@ Interject User Support provides an easy interface within Excel to send a report 
 
 ### [Verbose Logging](/wTroubleshoot/Verbose-Logging.html)
 
-To help diagnose any errors, Interject uses a Verbose Logging feature. The ideal goal of Verbose Logging is to help recreate an error and send logs to Interject's support team, where it can be fixed. 
+To help diagnose any errors, Interject uses a Verbose Logging feature. The ideal goal of Verbose Logging is to help recreate an error and send logs to Interject's support team, where it can be fixed.
 
 ### [Memory Logging](/wTroubleshoot/RAM-Monitoring.html)
 

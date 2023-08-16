@@ -1,9 +1,11 @@
 ---
 title: jAcct()
 layout: custom
-keywords: [jacct, function, chart of accounts]
+keywords: [jacct, account, segment, function, formula, chart of accounts]
 description: A helper function that specifies filters for up to six segments of a Chart of Accounts  
 ---
+* * *
+
 ##  Function Summary 
 
 A helper function that specifies filters for up to six segments of a Chart of Accounts. 
@@ -16,7 +18,7 @@ A helper function that specifies filters for up to six segments of a Chart of Ac
 | ...            | ...                                      |         | YES*     |
 | Segment6       | The last segment of a chart of accounts  |         | YES*     |
 
-* Note that segments are optional and defined by each organization's needs. 
+\* Note that segments are optional and defined by each organization's needs. 
 
 ###  Excel Formula Bar Example   
 

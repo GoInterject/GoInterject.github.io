@@ -1,11 +1,13 @@
 ---
 title: ReportDrill()
 layout: custom
-keywords: [ReportDrill, function]
+keywords: [ReportDrill, drill, function, formula, data]
 description: The ReportDrill function provides a convenient way to run another targeted function while at the same time, transferring contextual data for filtering to that function.
 ---
+* * *
 
 ##  Function Summary
+
 The ReportDrill function provides a convenient way to run another targeted function while at the same time, transferring contextual data for filtering to that function. It is widely used as a way to connect and pass information between workbooks and worksheets. Drilling takes a defined input and passes it in as a parameter to another workbook or worksheet, similar to hyperlinks on a web page. Depending on the types of input behind the hyperlink, more detailed and specific information can be viewed. The ReportDrill function can be structured in ways that make drilling data very powerful.
 
 In order to set up a drill that targets a function in another workbook, it is necessary to set up a drill code in the [Report Library](/wGetStarted/L-Create-UpdatingReportLibrary#adding-a-drill-code-to-a-report).
@@ -94,14 +96,11 @@ For an example of this function, see [Lab Drill: Customer Aging](/wGetStarted/L-
 </table>
 </div>
 
-
 ###  Excel Formula Bar Example
 
 ```Excel
 =ReportDrill(CustomerOrderHistory!C10,,PairGroup(Pair(B22:B24, CustomerOrderHistory!C23)),"Drill to Customer Orders History")
 ```
-
-
 
 ###  Function Composition
 

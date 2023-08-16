@@ -1,11 +1,13 @@
 ---
 title: jDropdown()
 layout: custom
-keywords: [jDropdown, function]
+keywords: [jDropdown, helper, function, formula]
 description: The jDropdown function returns data from a DataPortal that can be displayed in a dropdown window for the user to select and insert into a designated cell within the spreadsheet.
 ---
+* * *
 
 ##  Function Summary
+
 The jDropdown function returns data from a DataPortal that can be displayed in a dropdown window for the user to select and insert into a designated cell within the spreadsheet. It is typically used to easily insert a valid parameter into the spreadsheet to filter the data returned by a report function after a pull action. When this function is linked to a hyperlink, the user can simply click on the hyperlink to display a list of valid parameters and insert one or more into the spreadsheet.
 
 For an example of this function, see [jDropdown](/wGetStarted/L-Create-Dropdowns.html).
@@ -172,14 +174,11 @@ For an example of this function, see [jDropdown](/wGetStarted/L-Create-Dropdowns
 </table>
 </div>
 
-
 ###  Excel Formula Bar Example
 
 ```Excel
 =jDropdown(jDataPortal("NorthwindCustomersDropdown",1),,FALSE,C17,"CompanyName","DisplayText",,"Select a Customer")
 ```
-
-
 
 ###  Function Composition
 

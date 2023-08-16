@@ -1,11 +1,13 @@
 ---
 title: Pair()
 layout: custom
-keywords: [Pair, function]
+keywords: [Pair, helper, function, formula]
 description: The Pair function transfers values from one cell to another.
 ---
+* * *
 
 ##  Function Summary
+
 The Pair function transfers values from one cell to another. It is typically used in conjunction with the [PairGroup](/wIndex/PairGroup.html) function. Values are transferred upon a designated Interject event (e.g. a drill or as defined in the function it is embedded in). It is best practice to use the PairGroup function even when only entering one Pair.
 
 For an example of this function, see [Lab Drill: Customer Aging](/wGetStarted/L-Drill-CustomerAging.html).
@@ -92,14 +94,11 @@ For an example of this function, see [Lab Drill: Customer Aging](/wGetStarted/L-
 </table>
 </div>
 
-
 ###  Excel Formula Bar Example
 
 ```Excel
 =Pair(B22:B24,CustomerOrderHistory!C23)
 ```
-
-
 
 ###  Function Composition
 

@@ -1,11 +1,13 @@
 ---
 title: jCombine()
 layout: custom
-keywords: [jCombine, function]
+keywords: [jCombine, helper, function, formula]
 description: The jCombine function concatenates a range or multiple ranges of cells into a single string using a designated delimiter.
 ---
+* * *
 
 ##  Function Summary
+
 The jCombine function concatenates a range or multiple ranges of cells into a single string using a designated delimiter. Blank cells are skipped.
 
 This function can be used as a standalone function and does not need to be embedded in another function.
@@ -54,14 +56,11 @@ For an example of this function, see [Lab Create: Using the Retain Feature](/wGe
 </table>
 </div>
 
-
 ###  Excel Formula Bar Example
 
 ```Excel
 =jCombine((A2,F2:G2,R2:T2))
 ```
-
-
 
 ###  Function Composition
 

@@ -1,9 +1,10 @@
 ---
 title: ReportRange()
 layout: custom
-keywords: [ReportRange, function]
+keywords: [ReportRange, range, function, formula, data, pull]
 description: The ReportRange function pulls data from a data source and inserts it into a single range within a spreadsheet.
 ---
+* * *
 
 ##  Function Summary
 The ReportRange function pulls data from a data source and inserts it into a single range within a spreadsheet. Receives a list of columns for input that will be pulled from the data source. Only data that is mapped to these column names will be inserted. Data returned by this function can be filtered, formatted, and customized for a specific desired data set.
@@ -212,14 +213,11 @@ For an example of this function, see [ Lab Create: Customer Aging ](/wGetStarte
 </table>
 </div>
 
-
 ###  Excel Formula Bar Example
 
 ```Excel
 =ReportRange("NorthwindCustomers",B14:H15,B2:H2,B4:H4,Param(C7,C8,C9),FALSE,FALSE,,FALSE,FALSE)
 ```
-
-
 
 ###  Function Composition
 

@@ -18,7 +18,6 @@ Since the Report Library trusts all macro files inherently and sidesteps macro w
 
 Interject macro security involves enabling/disabling macro file transactions to/from the Report Library. If enabled, when the file is uploaded, a checksum is created on the file. Next, the client's signing key from the Interject Cloud Platform is used on the checksum to create a signed hash. This hash is a unique identifier that is stored in the Interject Cloud Platform for the uploaded file.
 
-<br>
 ![](/images/MacroSecurity/UploadMacroFile.png)
 <br>
 
@@ -26,7 +25,6 @@ Interject macro security involves enabling/disabling macro file transactions to/
 
 When a user attempts to open a file from the Report Library, the file is downloaded to the cache so a signed hash can be created. The two signed hashes are then compared. If they do not match, the file is deleted and the file open is denied. If they do match, the file is opened. This feature prevents unauthorized altercation of uploaded files from being opened. If the hashes do not match then an admin user can download the file for inspection. The file then can be reviewed and re-uploaded to create a new signed hash.
 
-<br>
 ![](/images/MacroSecurity/OpenMacroFile.png)
 <br>
 

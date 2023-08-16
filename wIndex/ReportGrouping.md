@@ -1,11 +1,13 @@
 ---
 title: ReportGrouping()
 layout: custom
-keywords: [ReportGrouping, function]
-description: The ReportGrouping function will collapse or expand groups within the sheet when triggered upon a designated [event](wIndex/Event-Functions-Landing.html).
+keywords: [ReportGrouping, grouping, event, trigger, function, formula]
+description: The ReportGrouping function will collapse or expand groups within the sheet when triggered upon a designated event.
 ---
+* * *
 
 ##  Function Summary
+
 The ReportGrouping function will collapse or expand groups within the sheet when triggered upon a designated [event](wIndex/Event-Functions-Landing.html). This function is helpful in grouping or ungrouping sections in a [ReportVariable](/wIndex/ReportVariable.html) after it is generated.
 
 For an example of this function, see [Lab Create: Inventory Variable Report](/wGetStarted/L-Create-InventoryVariable.html#reportgrouping).
@@ -112,14 +114,11 @@ For an example of this function, see [Lab Create: Inventory Variable Report](/wG
 </table>
 </div>
 
-
 ###  Excel Formula Bar Example
 
 ```Excel
 =ReportGrouping("Both","Run","Column","Collapse",FALSE)
 ```
-
-
 
 ###  Function Composition
 
@@ -133,7 +132,6 @@ For an example of this function, see [Lab Create: Inventory Variable Report](/wG
 |  Disabled  |  FALSE  |  This function will run.  |  
 
 ###  Trigger Combination List
-
 
 The execution of this function is determined by a combination of an Interject action and an Interject event. An action is a pull or save action whereas an event is a clear or run event. The values in the OnPullSaveOrBoth and OnClearRunOrBoth arguments will determine what actions/events trigger the function's execution.
 
