@@ -15,6 +15,7 @@ To watch a quick walkthrough video, click on the icon:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/13H24zWv7is" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <br>
+
 <blockquote class=lab_info>
  If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 1 Real World Walkthroughs > Lab 1.3 Financial Report.
 </blockquote>
@@ -200,7 +201,7 @@ You find that 90% of a company's needs are handled efficiently by Data List repo
 
 This completes the initial walkthrough detailing interactive reporting. Later in this wiki, you will learn how to create reports and drills once Interject has been integrated with ERP software.
 
-## Related Links
+### Related Links
 
 [Lab Modify: Financial Report](/wGetStarted/L-Modify-FinancialReport.html)
 

@@ -1,7 +1,7 @@
 ---
 title: Setting up the Lab Environment
 layout: custom
-keywords: [lab, guide, setup, start]
+keywords: [lab, guide, setup, start, FinCube, data cells]
 description: This page details the necessary requirements and steps to set up a local environment that can accommodate a user following the Lab Guide.
 ---
 * * *
@@ -37,15 +37,18 @@ To request a subscription, contact us at [info@gointerject.com](mailto:info@goin
 
 Setting up a Lab environment manually gives greater control and flexibility in making modifications. However, there are a number of steps necessary:
 
-1. Download the database and install locally
-2. Set up the Data Connections on the Interject Portal site
-3. Set up the Data Portals on the Interject Portal site
-4. Download the lab files
-5. Change the Data Portal names in the files to match the ones manually set up
+* **[Step 1:](#step-1-setting-up-the-database)** Download the database and install locally
+* **[Step 2:](#step-2-setting-up-the-data-connection)** Set up the Data Connections on the Interject Portal site
+* **[Step 3:](#step-3-setting-up-the-data-portals)** Set up the Data Portals on the Interject Portal site
+* **[Step 4:](#step-4-setting-up-fincube)** Set up the FinCube Portals
+* **[Step 5:](#step-5-the-report-files)** Download the lab files
+* **[Step 6:](#step-6-renaming-the-data-portals)** Change the Data Portal names in the files to match the ones manually set up
 
-### Setting up the Database
+The following walks through the steps to set up a Lab environment locally.
 
-The first step in manually setting up a Lab Environment is to establish a database on a local system where the Lab Guide will be used. Interject's choice of database is [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads){:target="_blank"}{:rel="noopener noreferrer"} as the Lab Guide relies on Microsoft's [Northwind Database](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases){:target="_blank"}{:rel="noopener noreferrer"}.
+### Step 1: Setting up the Database
+
+The first step in manually setting up a Lab environment is to establish a database on a local system where the Lab Guide will be used. Interject's choice of database is [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads){:target="_blank"}{:rel="noopener noreferrer"} as the Lab Guide relies on Microsoft's [Northwind Database](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases){:target="_blank"}{:rel="noopener noreferrer"}.
 
 The following is a minimalist script to recreate the database using SQL Server 2014 or greater:
 
@@ -55,165 +58,464 @@ The following is a minimalist script to recreate the database using SQL Server 2
 
 This script will have all the necessary tables, functions, procedures, schemas, and roles. You will need to first create the database of your choosing and then run this script inside that database. You may use [SSMS](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017){:target="_blank"}{:rel="noopener noreferrer"} or another editor of your choice.
 
-### Setting up the Data Connection
+### Step 2: Setting up the Data Connection
 
-Navigate to the [Interject Portal site](https://portal.gointerject.com/) and log in. For a guide about the Interject Portal site, see [here](/wPortal/The-INTERJECT-Website-Portal.html).
+Navigate to the [Interject Portal site](https://portal.gointerject.com/) and log in. For a guide about how to use the Interject Portal site, see [here](/wPortal/The-INTERJECT-Website-Portal.html).
 
-Set up a Data Connection that points to the database you set up. The examples used on this page will use the following:
+Set up a Data Connection that points to the database you set up. The following example uses a database called "Interject_Lab_DB":
 
-* **Name: ** Local_Lab_DataSource
-* **Description: ** This is the Data Connection to a local database set up for the Lab Guide
-* **Connection Type: ** Database
-* **Connection String: ** Data Source=(local);Initial Catalog=Interject_Lab_DB;Integrated Security=SSPI;
+* **Name:** Local_Lab_DataSource
+* **Description:** This is the Data Connection to a local database set up for the Lab Guide
+* **Connection Type:** Database
+* **Connection String:** Data Source=(local);Initial Catalog=Interject_Lab_DB;Integrated Security=SSPI;
 
 ![](/images/LabSetup/DataConnection.png)
 <br>
 
 For detailed instructions on how to set up a Data Connection, see [Portal: Database Connection](/wPortal/L-Database-Connection.html).
 
-### Setting up the Data Portals
+### Step 3: Setting up the Data Portals
 
-Now that you have a database and set up a Data Connection to it, you need to start adding Data Portals. For instructions on how to set up Data Portals, see [Data Portals](/wPortal/Data-Portals.html).
+Now that you have a database and set up a Data Connection to it, you need to start adding Data Portals. For instructions on how to set up Data Portals, see [Data Portals](/wPortal/Data-Portals.html). Following is a list of the Data Portals and their Stored Procedures used in the Labs.
 
-The following is a list of the Data Portal used in the Lab Guide:
+>**Note:** The Data Type and Direction are automatically set when selecting a System Parameter.
 
-<hr>
+<button class="collapsible-parameter">**NorthwindCreditSave**<br>Stored Procedure: [demo].[Northwind_Credit_Save]</button>
+<div markdown="1" class="panel-parameter">
+<table>
+<tbody>
 
-#### Data Portal: NorthwindCreditSave
+<td class="pph"><b>Parameter</b></td>
+<td class="pph"><b>Parameter Type</b></td>
+<td class="pph"><b>Data Type</b></td>
+<td class="pph"><b>Direction</b></td>
 
-Stored Procedure: **[demo].[Northwind_Credit_Save]**
+<tr>
+<td>Interject_RequestContext</td>
+<td>System Parameter</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Interject_ReturnError</td>
+<td>System Parameter</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
 
-| Parameter | Parameter Type | Data Type | Direction |
-| ----- | ----- | ----- | ----- |
-| Interject_RequestContext | System Parameter\* | | |
-| Interject_ReturnError | System Parameter | | |
+<button class="collapsible-parameter">**NorthwindCustomerAccountDetail**<br>Stored Procedure: [demo].[Northwind_CustomerAccountDetail_Pull]</button>
+<div markdown="1" class="panel-parameter">
+<table>
+<tbody>
 
-\* **Note:** The Data Type and Direction are automatically set when selecting a System Parameter
+<td class="pph"><b>Parameter</b></td>
+<td class="pph"><b>Parameter Type</b></td>
+<td class="pph"><b>Data Type</b></td>
+<td class="pph"><b>Direction</b></td>
 
-<hr>
+<tr>
+<td>CompanyName</td>
+<td>Formula Parameter</td>
+<td>nvarchar</td>
+<td>input</td>
+</tr>
+<tr>
+<td>ContactName</td>
+<td>Formula Parameter</td>
+<td>varchar</td>
+<td>input</td>
+</tr>
+<tr>
+<td>CustomerID</td>
+<td>Formula Parameter</td>
+<td>varchar</td>
+<td>input</td>
+</tr>
+<tr>
+<td>UnappliedOnly</td>
+<td>Formula Parameter</td>
+<td>varchar</td>
+<td>input</td>
+</tr>
+<tr>
+<td>BeginDate</td>
+<td>Formula Parameter</td>
+<td>varchar</td>
+<td>input</td>
+</tr>
+<tr>
+<td>EndDate</td>
+<td>Formula Parameter</td>
+<td>varchar</td>
+<td>input</td>
+</tr>
+<tr>
+<td>Interject_ReturnError</td>
+<td>System Parameter</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Interject_RequestContext</td>
+<td>System Parameter</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
 
-#### Data Portal: NorthwindCustomerAccountDetail
 
-Stored Procedure: **[demo].[Northwind_CustomerAccountDetail_Pull]**
+<button class="collapsible-parameter">**NorthwindCustomerInvoices**<br>Stored Procedure: [demo].[Northwind_Invoices_Pull]</button>
+<div markdown="1" class="panel-parameter">
+<table>
+<tbody>
 
-| Parameter | Parameter Type | Data Type | Direction |
-| ----- | ----- | ----- | ----- |
-| CompanyName | Formula Parameter | nvarchar | input |
-| ContactName | Formula Parameter | varchar | input |
-| CustomerID | Formula Parameter | varchar | input |
-| UnappliedOnly | Formula Parameter | varchar | input |
-| BeginDate | Formula Parameter | varchar | input |
-| EndDate | Formula Parameter | varchar | input |
-| Interject_ReturnError | System Parameter | | |
-| Interject_RequestContext | System Parameter | | |
+<td class="pph"><b>Parameter</b></td>
+<td class="pph"><b>Parameter Type</b></td>
+<td class="pph"><b>Data Type</b></td>
+<td class="pph"><b>Direction</b></td>
 
-<hr>
+<tr>
+<td>CompanyName</td>
+<td>Formula Parameter</td>
+<td>nvarchar</td>
+<td>input</td>
+</tr>
+<tr>
+<td>ContactName</td>
+<td>Formula Parameter</td>
+<td>varchar</td>
+<td>input</td>
+</tr>
+<tr>
+<td>CustomerID</td>
+<td>Formula Parameter</td>
+<td>varchar</td>
+<td>input</td>
+</tr>
+<tr>
+<td>ShowExpectedDate</td>
+<td>Formula Parameter</td>
+<td>varchar</td>
+<td>input</td>
+</tr>
+<tr>
+<td>IncludePaid</td>
+<td>Formula Parameter</td>
+<td>varchar</td>
+<td>input</td>
+</tr>
+<tr>
+<td>Interject_RequestContext</td>
+<td>System Parameter</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
 
-#### Data Portal: NorthwindCustomerInvoices
+<button class="collapsible-parameter">**NorthwindCustomerOrder**<br>Stored Procedure: [demo].[Northwind_CustomerOrder_Pull]</button>
+<div markdown="1" class="panel-parameter">
+<table>
+<tbody>
 
-Stored Procedure: **[demo].[Northwind_Invoices_Pull]**
+<td class="pph"><b>Parameter</b></td>
+<td class="pph"><b>Parameter Type</b></td>
+<td class="pph"><b>Data Type</b></td>
+<td class="pph"><b>Direction</b></td>
 
-| Parameter | Parameter Type | Data Type | Direction |
-| ----- | ----- | ----- | ----- |
-| CompanyName | Formula Parameter | nvarchar | input |
-| ContactName | Formula Parameter | varchar | input |
-| CustomerID | Formula Parameter | varchar | input |
-| ShowExpectedDate | Formula Parameter | varchar | input |
-| IncludePaid | Formula Parameter | varchar | input |
-| Interject_RequestContext | System Parameter | | |
+<tr>
+<td>OrderID</td>
+<td>Formula Parameter</td>
+<td>int</td>
+<td>input</td>
+</tr>
+<tr>
+<td>CustomerID</td>
+<td>Formula Parameter</td>
+<td>nvarchar</td>
+<td>output</td>
+</tr>
+<tr>
+<td>ContactName</td>
+<td>Formula Parameter</td>
+<td>nvarchar</td>
+<td>output</td>
+</tr>
+<tr>
+<td>CompanyName</td>
+<td>Formula Parameter</td>
+<td>nvarchar</td>
+<td>output</td>
+</tr>
+<tr>
+<td>ShipAddress</td>
+<td>Formula Parameter</td>
+<td>nvarchar</td>
+<td>output</td>
+</tr>
+<tr>
+<td>ShipCity</td>
+<td>Formula Parameter</td>
+<td>nvarchar</td>
+<td>output</td>
+</tr>
+<tr>
+<td>ShipPostalCode</td>
+<td>Formula Parameter</td>
+<td>nvarchar</td>
+<td>output</td>
+</tr>
+<tr>
+<td>ShipCountry</td>
+<td>Formula Parameter</td>
+<td>nvarchar</td>
+<td>output</td>
+</tr>
+<tr>
+<td>Phone</td>
+<td>Formula Parameter</td>
+<td>nvarchar</td>
+<td>output</td>
+</tr>
+<tr>
+<td>Fax</td>
+<td>Formula Parameter</td>
+<td>nvarchar</td>
+<td>output</td>
+</tr>
+<tr>
+<td>OrderDate</td>
+<td>Formula Parameter</td>
+<td>date</td>
+<td>output</td>
+</tr>
+<tr>
+<td>RequiredDate</td>
+<td>Formula Parameter</td>
+<td>date</td>
+<td>output</td>
+</tr>
+<tr>
+<td>ShippedDate</td>
+<td>Formula Parameter</td>
+<td>date</td>
+<td>output</td>
+</tr>
+<tr>
+<td>ShipVia</td>
+<td>Formula Parameter</td>
+<td>nvarchar</td>
+<td>output</td>
+</tr>
+<tr>
+<td>Freight</td>
+<td>Formula Parameter</td>
+<td>money</td>
+<td>output</td>
+</tr>
+<tr>
+<td>Interject_RequestContext</td>
+<td>System Parameter</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Interject_ReturnError</td>
+<td>System Parameter</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
 
-<hr>
+<button class="collapsible-parameter">**NorthwindCustomerOrders**<br>Stored Procedure: [demo].[Northwind_CustomerOrders_Pull]</button>
+<div markdown="1" class="panel-parameter">
+<table>
+<tbody>
 
-#### Data Portal: NorthwindCustomerOrder
+<td class="pph"><b>Parameter</b></td>
+<td class="pph"><b>Parameter Type</b></td>
+<td class="pph"><b>Data Type</b></td>
+<td class="pph"><b>Direction</b></td>
 
-Stored Procedure: **[demo].[Northwind_CustomerOrder_Pull]**
+<tr>
+<td>CompanyName</td>
+<td>Formula Parameter</td>
+<td>nvarchar</td>
+<td>input</td>
+</tr>
+<tr>
+<td>ContactName</td>
+<td>Formula Parameter</td>
+<td>varchar</td>
+<td>input</td>
+</tr>
+<tr>
+<td>CustomerID</td>
+<td>Formula Parameter</td>
+<td>varchar</td>
+<td>input</td>
+</tr>
+<tr>
+<td>Interject_NTLogin</td>
+<td>System Parameter</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Interject_LocalTimeZoneOffset</td>
+<td>System Parameter</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
 
-| Parameter | Parameter Type | Data Type | Direction |
-| ----- | ----- | ----- | ----- |
-| OrderID | Formula Parameter | int | input |
-| CustomerID | Formula Parameter | nvarchar | output |
-| ContactName | Formula Parameter | nvarchar | output |
-| CompanyName | Formula Parameter | nvarchar | output |
-| ShipAddress | Formula Parameter | nvarchar | output |
-| ShipCity | Formula Parameter | nvarchar | output |
-| ShipPostalCode | Formula Parameter | nvarchar | output |
-| ShipCountry | Formula Parameter | nvarchar | output |
-| Phone | Formula Parameter | nvarchar | output |
-| Fax | Formula Parameter | nvarchar | output |
-| OrderDate | Formula Parameter | date | output |
-| RequiredDate | Formula Parameter | date | output |
-| ShippedDate | Formula Parameter | date | output |
-| ShipVia | Formula Parameter | nvarchar | output |
-| Freight | Formula Parameter | money | output |
-| Interject_RequestContext | System Parameter | | |
-| Interject_ReturnError | System Parameter | | |
+<button class="collapsible-parameter">**NorthwindCustomers**<br>Stored Procedure: [demo].[Northwind_Customers_Pull]</button>
+<div markdown="1" class="panel-parameter">
+<table>
+<tbody>
 
-<hr>
+<td class="pph"><b>Parameter</b></td>
+<td class="pph"><b>Parameter Type</b></td>
+<td class="pph"><b>Data Type</b></td>
+<td class="pph"><b>Direction</b></td>
 
-#### Data Portal: NorthwindCustomerOrders
+<tr>
+<td>CompanyName</td>
+<td>Formula Parameter</td>
+<td>nvarchar</td>
+<td>input</td>
+</tr>
+<tr>
+<td>ContactName</td>
+<td>Formula Parameter</td>
+<td>varchar</td>
+<td>input</td>
+</tr>
+<tr>
+<td>CustomerID</td>
+<td>Formula Parameter</td>
+<td>varchar</td>
+<td>input</td>
+</tr>
+<tr>
+<td>Interject_NTLogin</td>
+<td>System Parameter</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Interject_LocalTimeZoneOffset</td>
+<td>System Parameter</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
 
-Stored Procedure: **[demo].[Northwind_CustomerOrders_Pull]**
+<button class="collapsible-parameter">**NorthwindFixed**<br>Stored Procedure: [demo].[Northwind_Customers_FixedPull]</button>
+<div markdown="1" class="panel-parameter">
+<table>
+<tbody>
 
-| Parameter | Parameter Type | Data Type | Direction |
-| ----- | ----- | ----- | ----- |
-| CompanyName | Formula Parameter | nvarchar | input |
-| ContactName | Formula Parameter | varchar | input |
-| CustomerID | Formula Parameter | varchar | input |
-| Interject_NTLogin | System Parameter | | |
-| Interject_LocalTimeZoneOffset | System Parameter | | |
+<td class="pph"><b>Parameter</b></td>
+<td class="pph"><b>Parameter Type</b></td>
+<td class="pph"><b>Data Type</b></td>
+<td class="pph"><b>Direction</b></td>
 
-<hr>
+<tr>
+<td>Interject_NTLogin</td>
+<td>System Parameter</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Interject_ReturnError</td>
+<td>System Parameter</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
 
-#### Data Portal: NorthwindCustomers
+<button class="collapsible-parameter">**NorthwindInvoiceSave**<br>Stored Procedure: [demo].[Northwind_Invoices_Save]</button>
+<div markdown="1" class="panel-parameter">
+<table>
+<tbody>
 
-Stored Procedure: **[demo].[Northwind_Customers_Pull]**
+<td class="pph"><b>Parameter</b></td>
+<td class="pph"><b>Parameter Type</b></td>
+<td class="pph"><b>Data Type</b></td>
+<td class="pph"><b>Direction</b></td>
 
-| Parameter | Parameter Type | Data Type | Direction |
-| ----- | ----- | ----- | ----- |
-| CompanyName | Formula Parameter | nvarchar | input |
-| ContactName | Formula Parameter | varchar | input |
-| CustomerID | Formula Parameter | varchar | input |
-| Interject_NTLogin | System Parameter | | |
-| Interject_LocalTimeZoneOffset | System Parameter | | |
+<tr>
+<td>Interject_ReturnError</td>
+<td>System Parameter</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Interject_RequestContext</td>
+<td>System Parameter</td>
+<td></td>
+<td></td>
+</tr>
 
-<hr>
+</tbody>
+</table>
+</div>
+<button class="collapsible-parameter">**NorthwindSalesPull**<br>Stored Procedure: [demo].[Northwind_Customers_RangeDetailPull]</button>
+<div markdown="1" class="panel-parameter">
+<table>
+<tbody>
 
-#### Data Portal: NorthwindFixed
+<td class="pph"><b>Parameter</b></td>
+<td class="pph"><b>Parameter Type</b></td>
+<td class="pph"><b>Data Type</b></td>
+<td class="pph"><b>Direction</b></td>
 
-Stored Procedure: **[demo].[Northwind_Customers_FixedPull]**
+<tr>
+<td>UnitsInStockMin</td>
+<td>Formula Parameter</td>
+<td>varchar</td>
+<td>input</td>
+</tr>
+<tr>
+<td>Category</td>
+<td>Formula Parameter</td>
+<td>varchar</td>
+<td>input</td>
+</tr>
+<tr>
+<td>Interject_NTLogin</td>
+<td>System Parameter</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Interject_ReturnError</td>
+<td>System Parameter</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
 
-| Parameter | Parameter Type | Data Type | Direction |
-| ----- | ----- | ----- | ----- |
-| Interject_NTLogin | System Parameter | | |
-| Interject_ReturnError | System Parameter | | |
+### Step 4: Setting up FinCube
 
-<hr>
-
-#### Data Portal: NorthwindInvoiceSave
-
-Stored Procedure: **[demo].[Northwind_Invoices_Save]**
-
-| Parameter | Parameter Type | Data Type | Direction |
-| ----- | ----- | ----- | ----- |
-| Interject_ReturnError | System Parameter | | |
-| Interject_RequestContext | System Parameter | | |
-
-<hr>
-
-#### Data Portal: NorthwindSalesPull
-
-Stored Procedure: **[demo].[Northwind_Customers_RangeDetailPull]**
-
-| Parameter | Parameter Type | Data Type | Direction |
-| ----- | ----- | ----- | ----- |
-| UnitsInStockMin | Formula Parameter | varchar | input |
-| Category | Formula Parameter | varchar | output |
-| Interject_NTLogin | System Parameter | | |
-| Interject_ReturnError | System Parameter | | |
-
-### Demo_Interject_FinCube
-
-The "Demo_Interject_FinCube" is a Data Portal that is used in 6 labs:
+[FinCube](/wIndex/FinCube---The-Financial-Cube.html) is a special Data Portal that is used for financial reporting. This Portal is called "Demo_Interject_FinCube" in the Lab files and is used in 6 labs:
 
 * Lab 1.3 Financial Report
 * Lab 2.4 Financial Report
@@ -222,14 +524,14 @@ The "Demo_Interject_FinCube" is a Data Portal that is used in 6 labs:
 * Lab 7.2 Basic Distribution
 * Lab 7.3 Advanced Distribution
 
-The [FinCube](/wIndex/FinCube---The-Financial-Cube.html) is a special Data Portal used for Financial reporting. Due to the complexities of this Data Portal, it is advised to use the API connection for this Data Portal instead of setting it up locally.
+Due to the complexities of this Data Portal, it is advised to use the API connection for this Data Portal. The following steps through how to set up this Portal.
 
-#### FinCube Data Connection
+#### Setting up the FinCube Data Connection
 
-You can use the following settings for the FinCube Data Connection:
+The FinCube Portal can use an API connection. You can use the following settings to set up the Data Connection:
 
-* **Name:** <Your own custom Name>
-* **Description:** <Your own custom Description>
+* **Name:** \<Your own custom Name>
+* **Description:** \<Your own custom Description>
 * **Connection Type:** Web Api
 * **Api Root Url:** https://data-api.gointerject.com/api
 * **Api Connection String Name:** FinancialDemo-Database
@@ -237,13 +539,13 @@ You can use the following settings for the FinCube Data Connection:
 ![](/images/LabSetup/FinCubeDataConnection.png)
 <br>
 
-#### FinCube Data Portal
+#### Setting up the FinCube Data Portal
 
 You can use the following settings for the FinCube Data Portal:
 
-* **Name:** <Your own custom Name>
-* **Description:** <Your own custom Description>
-* **Connection:** <Use the name of the Data Connection you set up>
+* **Name:** \<Your own custom Name>
+* **Description:** \<Your own custom Description>
+* **Connection:** \<Use the name of the Data Connection you set up in the last section>
 * **Command Type:** Stored Procedure Name
 * **Stored Procedure/Command:** Client.[FinCube]
 * **Api Relative Url:** InterjectDefaultRequest
@@ -251,7 +553,29 @@ You can use the following settings for the FinCube Data Portal:
 ![](/images/LabSetup/FinCubeDataPortal.png)
 <br>
 
-### The Report Files
+#### Setting up the FinCube Data Cells Data Portals
+
+[Data Cells](/wAbout/Tabular-vs-Data-Cells.html) are a special type of cell that can directly pull data into the cell using the [Data Cell Functions](/wIndex/Data-Cell-Functions.html). Data Cells are used in Lab 7.1 Quick Export and PDF. In order for the Data Cells to work, there must be some Data Portals set up. All these Data Portals will use the FinCube Data Connection set up previously.
+
+The FinCube Data Portals must be set up for your particular Client profile. Therefore you will need your ClientID. This can be found by clicking **About Interject** on the Interject ribbon:
+
+![](/images/LabSetup/ClientID.png)
+<br>
+
+Following are the Data Portals that must be set up.
+
+>**Note:** There are no parameters in the FinCube Portals.
+
+| Data Portal | Description | Connection | Command Type | Stored Procedure/Command | Api Relative Url |
+|-----|-----|-----|-----|-----|-----|
+| UpdateCellDataStatus_\<ClientID>\* | For Data Cells Update | \<FinCube Data Connection> | Stored Procedure Name | [Client].[RequestStatus] | InterjectDefaultRequest |
+| UpdateCellData_\<ClientID> | For Data Cells | \<FinCube Data Connection> | Stored Procedure Name | [Client].[Request] | InterjectDefaultRequest |
+| ImportScheduler_\<ClientID> | For Scheduler | \<FinCube Data Connection> | Stored Procedure Name | [Client].[ImportScheduler] | InterjectDefaultRequest |
+| SegmentData_\<ClientID> | For Data Cells | \<FinCube Data Connection> | Stored Procedure Name | [Client].\[Segment} | InterjectDefaultRequest |
+
+\* Use your ClientID here
+
+### Step 5: The Report Files
 
 The following zip file contains all the necessary files for the Lab Guide:
 
@@ -259,14 +583,13 @@ The following zip file contains all the necessary files for the Lab Guide:
 
 [2]:{{ site.url }}/download/LabFiles.zip
 
-<br>
+>**Note:** Some labs do not have a lab file as they either start with a blank Excel file or are continued from a previous lab. The following do not have a file: 3.1, 3.2, 3.3, 3.6, and 7.3.
 
-> Note: Some labs do not have a lab file as they either start with a blank Excel file or are continued from a previous lab. The following do not have a file: 3.1, 3.2, 3.3, 3.6, and 7.3.
-
-### Renaming the Data Portals
+### Step 6: Renaming the Data Portals
 
 Once you have created the Data Portals with your own custom names, you will have to change the name of the Data Portals in the Report formulas found in the Lab files. To help with this, the following is a list of all the labs along with their associated file and every Data Portal used in those files:
 
 [LabDataPortals.xlsx][3]
 
 [3]:{{ site.url }}/download/LabDataPortals.xlsx
+
