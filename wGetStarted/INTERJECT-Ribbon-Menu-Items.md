@@ -26,27 +26,31 @@ To display the Advanced Menu, click the **Simple Menu** button:
 <br>
 
 **Common Actions** :
-[Report Library](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-library),
-[Pull Data](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data),
-[Save Data](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data),
-[Drill on Data](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data),
-[Return From Drill](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#return-from-drill),
-[Custom Commands](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#custom-commands)
+[Report Library](#report-library),
+[Pull Data](#pull-data),
+[Save Data](#save-data),
+[Drill on Data](#drill-on-data),
+[Return From Drill](#return-from-drill),
+[Custom Commands](#custom-commands)
 
 **Tools** :
-[Quick Tools](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools),
-[Create Binder](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#create-binder),
-[Export Book](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#export-book),
-[Report Builder](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder),
-[Sheet Protector](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#sheet-protector)
+[Quick Tools](#quick-tools),
+[Export Book](#export-book),
+[Report Builder](#report-builder),
+[Sheet Protector](#sheet-protector)
+
+**User** :
+[Login/Logout](#loginlogout),
+[Company](#company)
+[Connections](#connections),
 
 **Updates** :
-[Check for Updates](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#check-for-updates)
+[Check for Updates](#check-for-updates)
 
 **Help** :
-[Online Training](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#online-training),
-[User Support](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#user-support),
-[About Interject](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#about-interject)
+[Online Training](#online-training),
+[User Support](#user-support),
+[About Interject](#about-interject)
 
 * * *
 
@@ -57,18 +61,13 @@ The Advanced Menu adds the sections: User, Formulas, and Administration.
 ![](/images/InterjectRibbon/RibbonAdvancedMenu.png)
 <br>
 
-**User** :
-[Login/Logout](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#loginlogout),
-[Authentications](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#authentications),
-[Company](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#company)
-
 **Formulas** :
-[Validation Report](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#validation-report),
-[JSON](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#json)
+[Validation Report](#validation-report),
+[JSON](#json)
 
 **Administration** :
-[Diagnostics](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#diagnostics),
-[System](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#system)
+[Diagnostics](#diagnostics),
+[System](#system)
 
 * * *
 
@@ -79,7 +78,7 @@ The Report Library manages Excel company report files and their various versions
 ![](/images/InterjectRibbon/04.png)
 <br>
 
-[Click here to learn more about the Report Library.](/wAbout/Report-Library-Basics.html)
+For more about the Report Library, see [Report Library Basics](/wAbout/Report-Library-Basics.html).
 
 ![](/images/InterjectRibbon/05.png)
 <br>
@@ -93,31 +92,30 @@ The Pull Data function takes data from Data Portals and places it into an Excel 
 ![](/images/InterjectRibbon/06.png)
 <br>
 
-When you open the Report Library and select a report, you can either use the **Pull Data** button to retrieve the data or hit Ctrl-Shift-J. To view an example, please click [here](/wAbout/Customer-Aging.html).
+When you open the Report Library and select a report, you can either use the **Pull Data** button to retrieve the data or hit CTL-SHIFT-J. To view an example, please see [Customer Aging](/wAbout/Customer-Aging.html).
+
+Another function of the Pull Data tool is the **Clear** operation. While the Pull brings data into the spreadsheet, this function within Pull can remove it.
 
 ![](/images/InterjectRibbon/07.png)
 <br>
 
-Another function of the Pull Data tool is the Clear operation. While the Pull brings data into the spreadsheet, this function within Pull can remove it.
-
-![](/images/InterjectRibbon/08.png)
-<br>
 
 * * *
 
 ### Save Data
 
-Saving Data is an important part of report editing. This operation allows you to save Excel spreadsheet data back through a Data Portal and into a database or web API. Use the Save-Data button or hit Crtl-Shift-U.
+Saving Data is an important part of report editing. This operation allows you to save Excel spreadsheet data back through a Data Portal and into a database or web API.
 
 ![](/images/InterjectRibbon/09.png)
 <br>
 
-![](/images/InterjectRibbon/10.png)
-<br>
+The **Save Data** button will run any [ReportSave()](/wIndex/ReportSave.html) function. You can choose whether to perform this action on (S) selected cells, (T) selected tabs, or (W) the entire workbook. 
 
-Below the button for Saving Data is the **Clear Save Notes** which would clear out any of the saved noted in the report.
+The **Show Additional Options** will give the user even greater flexibility between saving Data Cells and Data List Formulas. For more information about the difference, see [here](/wAbout/Tabular-vs-Data-Cells.html).
 
-![](/images/InterjectRibbon/11.png)
+Below the button for **Save Data** is the **Clear Save Notes** which would clear out any of the saved notes in the report.
+
+![](/images/InterjectRibbon/SaveAdditionalOptions.png)
 <br>
 
 * * *
@@ -129,7 +127,7 @@ The Drill process opens and runs a report containing detailed information. It pa
 ![](/images/InterjectRibbon/12.png)
 <br>
 
-See more about Drilling and Navigating in [Drilling Between Reports.](/wGetStarted/Drilling-Between-Reports.html)
+For more information about Drilling and Navigating, see [Drilling Between Reports.](/wGetStarted/Drilling-Between-Reports.html)
 
  ![](/images/InterjectRibbon/13.png)
 <br>
@@ -138,7 +136,7 @@ See more about Drilling and Navigating in [Drilling Between Reports.](/wGetStart
 
 ### Return From Drill
 
-When you want to return to a previous report after Drilling you can go back using **Return From Drill**. It works just like a browser's back button.
+When Drilling, the focus will change to the sheet that you are drilling to. If you want to return to the previous report, you can go back using **Return From Drill**. It works similar to a browser's back button. For an example, see [Inventory Reports](/wAbout/Inventory-Reports.html#return-from-drill-and-re-drill).
 
 ![](/images/InterjectRibbon/14.png)
 <br>
@@ -152,7 +150,7 @@ The Custom Commands operation allows users to manage and run three kinds of repo
 ![](/images/InterjectRibbon/15.png)
 <br>
 
-These commands can be set up for individual users and they typically run fixed data operations.
+These commands are set up by Interject for individual users and they typically run fixed data operations.
 
 ![](/images/InterjectRibbon/16.png)
 <br>
@@ -161,35 +159,21 @@ These commands can be set up for individual users and they typically run fixed d
 
 ### Quick Tools
 
-The Quick Tools window provides a convenient set of features to help with convenience and efficiency. Each tool has a specific purpose. For more information about the features, see [Quick Tools](/wIndex/Quick-Tools-Landing.html).
+The Quick Tools window provides a convenient set of features to help with convenience and efficiency.
 
 ![](/images/InterjectRibbon/17.png)
 <br>
 
-These tools are efficient ways to complete the most common actions in Interject.
+These tools are efficient ways to complete the most common actions in Interject. Each tool has a specific purpose. For more information about the features, see [Quick Tools](/wIndex/Quick-Tools-Landing.html).
 
 ![](/images/InterjectRibbon/18.png)
 <br>
 
 * * *
 
-### Create Binder
-
-The Binder feature turns a workbook of reports into a binder of reports. Binders are populated with list data from Grouping Segments.
-
-![](/images/InterjectRibbon/19.png)
-<br>
-
-For example, you can create a binder with reports for each district number in a company's list.
-
-![](/images/InterjectRibbon/20.png)
-<br>
-
-* * *
-
 ### Export Book
 
-This option will make a copy of the current workbook and remove the Data Cell formulas and external links.
+This option will make a copy of the current workbook and convert the Data Cell formulas to values and remove external links. To read more on Exporting and Distributions, please see [Exporting Reports](/wGetStarted/Exporting-Reports.html).
 
 ![](/images/InterjectRibbon/21.png)
 <br>
@@ -209,21 +193,21 @@ When you select the Create Distribution button, it opens a sheet that allows you
 ![](/images/InterjectRibbon/24.png)
 <br>
 
-Once you have built a distribution sheet, this button runs the sheet and builds the new workbook. ![](/images/InterjectRibbon/25.png)
-<br>
+Once you have built a distribution sheet, this button runs the sheet and builds the new workbook. 
 
-To read more on Exporting and Distributions please click [here](/wGetStarted/Exporting-Reports.html).
+![](/images/InterjectRibbon/25.png)
+<br>
 
 * * *
 
 ### Report Builder
 
-The Report Builder creates a sample Excel report based on any existing Data Portal.
+The Report Builder creates a sample Excel report in the current sheet based on an existing Data Portal.
 
 ![](/images/InterjectRibbon/26.png)
 <br>
 
-Report builder offers the flexibility to build a ReportRange() and ReportFixed(). To read more [click here](/wGetStarted/Creating-a-Simple-Report.html).
+The Report Builder offers the flexibility to build a [ReportRange](/wIndex/ReportRange.html). For example of using the Report Builder, see [Create: Customer Aging Report](/wGetStarted/L-Create-CustomerAging.html).
 
 ![](/images/InterjectRibbon/27.png)
 <br>
@@ -232,7 +216,7 @@ Report builder offers the flexibility to build a ReportRange() and ReportFixed()
 
 ### Sheet Protector
 
-The Sheet Protector uses a list of managed passwords to protect sheets across a company. Only approved users may protect and unprotect the worksheets.
+The Sheet Protector uses a list of managed passwords to protect sheets across a company. Only approved users may protect and unprotect the worksheets. For an example using the Sheet Protector, see [Create: Protecting Sheets](/wGetStarted/L-Create-Protecting.html).
 
 ![](/images/InterjectRibbon/28.png)
 <br>
@@ -241,18 +225,23 @@ The Sheet Protector uses a list of managed passwords to protect sheets across a 
 
 ### Login/Logout
 
-The Login and Logout buttons enable users to login to Interject using their Interject credentials. For more information, see [here](/wAbout/Logging-In.html).
+The Login and Logout buttons enable users to login to Interject using their Interject credentials. For more information, see [Logging In](/wAbout/Logging-In.html).
 
 ![](/images/InterjectRibbon/Login-Logout.png)
 <br>
 
 * * *
 
-### Authentications
+### Connections
 
-The Authentication button allows users to authenticate their login (not currently in use).
+The Connections button allows users to see a list of the connections that the report is using.
 
-![](/images/InterjectRibbon/Authentications.png)
+![](/images/InterjectRibbon/Connections.png)
+<br>
+
+From the list, you can see all the connections for the entire workbook and their status.
+
+![](/images/InterjectRibbon/ConnectionsWindow.png)
 <br>
 
 * * *
@@ -268,12 +257,12 @@ The Company button allows user to switch companies they currently want to work i
 
 ### Validation Report
 
-The Validation Report operation allows you to check the code for Saves, Pulls, Drills, and other actions. By selecting any of the validation options, you can view the code behind each action.
+The Validation Report operation allows you to check the code for Saves, Pulls, Drills, and other actions.
 
 ![](/images/InterjectRibbon/31.png)
 <br>
 
-Selected columns and row ranges, data portals, formatting codes, and more, are detailed. This helps users learn as well as diagnose code problems.
+By selecting any of the validation options, you can view the code behind each action. Detail information is given for selected ranges, data portals, formatting codes, and more. This helps users learn as well as diagnose code problems. For more information about the options here, see [Reviewing Report Functions](/wIndex/Report-Formula-Reviews.html).
 
 ![](/images/InterjectRibbon/32.png)
 <br>
@@ -314,9 +303,9 @@ The operation System contains a large number of options.
 | System Item | Description |
 | ----------- | ----------- |
 | Disconnect F9 Formulas | |
-| Force Calc On Workbook | Forces Excel to calculate all formulas in the Workbook. Similar to the **Calculate Now** button in the Formulas Ribbon |
-| Force Calc On Worksheet | Forces Excel to calculate all Interject formulas in the Worksheet. Similar to the **Calculate Sheet** button in the Formulas Ribbon |
-| View SQL Test For ActiveCell | Provides the SQL code that will be executed for the ActiveCell. The ActiveCell would be any of the ReportFormulas that pull or save data. <br> Copy this code into your development environment and execute it to see what would be produced based on current context of the spreadsheet |
+| Force Calc On Workbook | Forces Excel to calculate all formulas in the Workbook. Similar to Excel's **Calculate Now** button in the Formulas tab on the Ribbon |
+| Force Calc On Worksheet | Forces Excel to calculate all Interject formulas in the Worksheet. Similar to Excel's **Calculate Sheet** button in the Formulas tab on the Ribbon |
+| View SQL Test For ActiveCell | Provides the SQL code that will be executed for the ActiveCell. The ActiveCell would be any of the [Data Pull](/wIndex/Data-Functions-Landing.html) or [Data Save](/wIndex/ReportSave.html) Formulas. <br> Copy this code into your development environment and execute it to see what would be produced based on current context of the spreadsheet. |
 | View SQL Template For ActiveCell | Will provide a starting point for creating new stored procedures. ReportSave will provide a template that can be used to save the data back. |
 | Clear Remembered Logings | |
 | Re-enable Protected Grouping | |
@@ -328,7 +317,7 @@ The operation System contains a large number of options.
 
 ### Check For Updates
 
-This applies to installations downloaded from the website. If an IT department installed Interject on a network, there is no need to check for updates.
+Checks for updates to the Interject Addin. This applies to installations downloaded from the website. If an IT department installed Interject on a network, there is no need to check for updates. For more information, see [Updating Interject](/wAbout/Updating-INTERJECT.html).
 
 ![](/images/InterjectRibbon/38.png)
 <br>
@@ -342,18 +331,16 @@ This option allows users to look for new versions of the Interject Excel Add-in.
 
 ### Online Training
 
-The online training button links back to these wiki pages for training whenever needed.
+The Online Training button links to [Interject Official Documentation](https://docs.gointerject.com/). Most common issues and questions about Interject's functions are answered within these pages.
 
 ![](/images/InterjectRibbon/40.png)
 <br>
-
-Most common issues and questions about Interject's functions are answered within these pages. For more complex problems, please see below.
 
 * * *
 
 ### User Support
 
-The User Support form provides contact information for support issues. It also allows problem reporting and diagnostics.
+The User Support form provides contact information for support issues. It also allows problem reporting and diagnostics. For more information, see [User Support](/wTroubleshoot/Reporting-A-Problem.html).
 
 ![](/images/InterjectRibbon/41.png)
 <br>
@@ -377,17 +364,7 @@ About Interject allows users to see what version of Interject was downloaded alo
 ![](/images/InterjectRibbon/44.png)
 <br>
 
-Opening this window also shows user account credentials.
+Opening this window also shows the user's account credentials and clientID.
 
 ![](/images/InterjectRibbon/45.png)
 <br>
-
-## Related Links
-
-[Report Library Basics](/wAbout/Report-Library-Basics.html)
-
-[Real-World Walkthroughs](/wAbout/Real-World-Walkthroughs.html)
-
-[Using Interject](/wAbout/Using-Interject.html)
-
-[Working with Interject](/wAbout/Working-with-Interject.html)
