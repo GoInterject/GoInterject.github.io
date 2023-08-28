@@ -1,7 +1,7 @@
 ---
-title: Logging In
+title: "Logging In/Out: Individual User"
 layout: custom
-keywords: [login, ribbon, logout, new login, credentials, accounts]
+keywords: [login, ribbon, logout, new login, credentials, accounts, user]
 description: Logging in is simple and fast! Interject will remember your login and sign you in automatically subsequent visits.You can also add multiple logins and switch accounts easily.
 ---
 * * *
@@ -21,7 +21,7 @@ Logging in is simple and fast! Interject will remember your login for 30 days. Y
 ![](/images/LogginIn/interject-ribbon-advanced-menu-login-revised.png)
 <br>
 
-**Step 2:** Click "Sign into Interject".
+**Step 2:** Click **ign into Interject**.
 
 ![](/images/LogginIn/SignIntoInterjectClick.png)
 <br>
@@ -38,19 +38,19 @@ Logging in is simple and fast! Interject will remember your login for 30 days. Y
 
 ### New Login
 
-**Step 1:** To add a new login, first click the Login button on the Interject Ribbon.
+**Step 1:** To add a new login, first click the **Login** button on the Interject Ribbon.
 
 ![](/images/LogginIn/interject-ribbon-advanced-menu-login-revised.png)
 <br>
 
-**Step 2:** Click the New Login button and proceed to enter your credentials the same as in [Initial Interject Login](#initial-interject-login).
+**Step 2:** Click the **New Login** button and proceed to enter your credentials the same as in [Initial Interject Login](#initial-interject-login).
 
 ![](/images/LogginIn/NewLoginClick.png)
 <br>
 
 ### Logging Out
 
-Logging out means Interject will not automatically log you in the next time you return.
+Logging out means Interject will delete the login tokens and not automatically log you in the next time you return.
 
 To log out, you can click the ellipses on the account you wish to log out and click Log Out.
 
@@ -67,7 +67,7 @@ You may alternatively click the Logout button on the Interject ribbon.
 
 ### Log Back In
 
-To log back in after you have been logged out, simply click the ellipses on the account you wish to log in and click Log In.
+To log back in after you have been logged out, simply click the ellipses on the account you wish to log in and click **Log In**.
 
 ![](/images/LogginIn/LogBackIn.png)
 <br>
@@ -81,9 +81,9 @@ To switch between accounts, simply click the link of the account you wish to swi
 
 ### Forgetting Login Credentials
 
-Forgetting credentials means the login entry is deleted from the cache and removed from the Login Manger. You will have to reenter your credentials the next time you wish to log in.
+Forgetting credentials means the login token is deleted from the cache and the profile manager removed from the Login Manger. You will have to reenter your credentials the next time you wish to log in.
 
-To log out and forget your credentials, click the ellipses on the account you wish to log out and forget and click "Log Out & Forget".
+To log out and forget your credentials, click the ellipses on the account you wish to log out and forget and click **Log Out & Forget**.
 
 ![](/images/LogginIn/LogoutForget.png)
 <br>
