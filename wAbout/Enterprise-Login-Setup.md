@@ -1,16 +1,16 @@
 ---
 title: Enterprise Login Setup
 layout: custom
-keywords: [login, ribbon, credentials, accounts, Enterprise, setup]
+keywords: [login, ribbon, credentials, accounts, Enterprise, setup, oidc, auth, code]
 description: 
 ---
 * * *
 
 ## Overview
 
-Interject supports federated logins for enterprise allowing a single sign on (SSO) experience for Interject users within an organization. Currently [Open ID Connect](https://openid.net/developers/how-connect-works/){:target="_blank"}{:rel="noopener noreferrer"} (OIDC) is the primary protocol Interject supports but more federated authentication systems are planned to be supported, including [Security Assertion Markup Language](https://www.oasis-open.org/standard/saml/){:target="_blank"}{:rel="noopener noreferrer"} (SAML).
+Interject supports federated logins for enterprise allowing a single sign on (SSO) experience for Interject users within an organization. Currently, [Open ID Connect](https://openid.net/developers/how-connect-works/){:target="_blank"}{:rel="noopener noreferrer"} (OIDC) is the primary protocol Interject supports but more federated authentication systems are planned to be supported, including [Security Assertion Markup Language](https://www.oasis-open.org/standard/saml/){:target="_blank"}{:rel="noopener noreferrer"} (SAML).
 
-There are other identity provider services on the cloud that support OIDC. The following are especially easy for Interject to work with, but any system supporting OIDC work:
+There are other identity provider services on the cloud that support OIDC. The following are especially easy for Interject to work with, but any system supporting OIDC will work:
 
 * [Azure AD](https://learn.microsoft.com/en-us/azure/active-directory/develop/v2-protocols-oidc){:target="_blank"}{:rel="noopener noreferrer"}
 * [Okta](https://developer.okta.com/docs/concepts/auth-servers/){:target="_blank"}{:rel="noopener noreferrer"}
@@ -40,7 +40,7 @@ If a discovery endpoint is not available we will need the following URLs:
 * User Info URL - e.g. https://graph.microsoft.com/oidc/userinfo  
 
 <blockquote class=highlight_note>
-<b>Note:</b> For AzureAD, we are aware of a possible extra step to get federation working. Its possible your Azure AD service may need ID Tokens enabled. Learn more [here](https://learn.microsoft.com/en-us/azure/active-directory/develop/v2-protocols-oidc#enable-id-tokens){:target="_blank"}{:rel="noopener noreferrer"} to see if this applies to your setup.
+<b>Note:</b> For AzureAD, we are aware of a possible extra step to get federation working. Its possible your Azure AD service may need ID Tokens enabled. Learn more <a href="https://learn.microsoft.com/en-us/azure/active-directory/develop/v2-protocols-oidc#enable-id-tokens" target="_blank" rel="noopener noreferrer">here</a> to see if this applies to your setup.
 </blockquote>
 
 ### Enterprise Login Code
