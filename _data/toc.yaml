@@ -149,6 +149,8 @@ getstarted:
         path: /wGetStarted/L-Drill-InventoryReport.html
       - title: "Drill: Financial Report"
         path: /wGetStarted/L-Drill-FinancialReport.html
+      - title: "Drill: Drilling to a Separate Workbook"
+        path: /wGetStarted/L-Drill-DrillCodes.html
       - title: "The Three Ways to Drill"
         path: /wGetStarted/L-Drill-TheThreeWays.html
     - sectiontitle: Hiding Rows and Columns
@@ -170,8 +172,6 @@ getstarted:
       path: /wGetStarted/L-Create-ReportMacro.html
     - title: "Create: Using the Retain Feature"
       path: /wGetStarted/L-Create-RetainFeature.html
-    - title: "Create: Updating the Report Library"
-      path: /wGetStarted/L-Create-UpdatingReportLibrary.html
     - title: "Create: Interject Run On Open"
       path: /wGetStarted/L-Create-RunOnOpen.html
     - sectiontitle: Exporting Reports
