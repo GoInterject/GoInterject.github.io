@@ -30,7 +30,7 @@ To learn more about Webview2, refer to this [documentation](https://learn.micros
 
 ### Tokens and Refresh Cycle
 
-[Open ID Connect](https://openid.net/developers/how-connect-works/){:target="_blank"}{:rel="noopener noreferrer"} (OIDC) is built on top of [OAuth2](https://auth0.com/intro-to-iam/what-is-oauth-2){:target="_blank"}{:rel="noopener noreferrer"} which uses a access token for authorized requests and a refresh token to get new access tokens when they expire. Both of these tokens expire after the following durations:
+[Open ID Connect](https://openid.net/developers/how-connect-works/){:target="_blank"}{:rel="noopener noreferrer"} (OIDC) is built on top of [OAuth2](https://auth0.com/intro-to-iam/what-is-oauth-2){:target="_blank"}{:rel="noopener noreferrer"} which uses an access token for authorized requests and a refresh token to get new access tokens when they expire. Both of these tokens expire after the following durations:
 
 * Refresh token - expires every 30 days (this requires the user to login again)
 * Access token - expires every hour 

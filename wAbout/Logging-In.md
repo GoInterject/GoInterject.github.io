@@ -21,7 +21,7 @@ Logging in is simple and fast! Interject will remember your login for 30 days. Y
 ![](/images/LogginIn/interject-ribbon-advanced-menu-login-revised.png)
 <br>
 
-**Step 2:** Click **ign into Interject**.
+**Step 2:** Click **Sign into Interject**.
 
 ![](/images/LogginIn/SignIntoInterjectClick.png)
 <br>
