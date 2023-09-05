@@ -15,6 +15,10 @@ Drill Codes are needed when a drill needs to go to a separate workbook, and that
 ![](/images/L-Drill-DrillCodes/DrillCodes.png)
 <br>
 
+<blockquote class=lab_info>
+If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 4 Drilling To Data > Lab 4.4 Drilling to a Separate Workbook.
+</blockquote>
+
 ### Opening the Report and Drilling
 
 For this walkthrough, you will be using the same report you setup the original drill for in [Drill: Customer Aging Report](/wGetStarted/L-Drill-CustomerAging.html). To get a sense of the original drill again, you will perform a drill to a different sheet within the same report.

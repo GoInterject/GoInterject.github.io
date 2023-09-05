@@ -171,6 +171,14 @@ Interject contains a feature called Drill on Data. This feature allows the user 
 **_Concepts_** :
 • Building a Drill on Data
 <br>
+
+#### [4.4 Lab Drill: Drilling to a Separate Workbook](/wGetStarted/L-Drill-DrillCodes.html)
+
+**_Concepts_** :
+• Drilling to a Separate Workbook
+• Uploading a Report to the Report Library
+• Adding a Drill Code
+<br>
 <hr>
 
 ### Lab 5 : Advanced Features
