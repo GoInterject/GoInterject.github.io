@@ -114,7 +114,7 @@ For an example of this function, see [ Lab Dev: Customer Aging Detail ](/wGetSta
 </table>
 </div>
 
-<button class="collapsible-parameter">**AutoSaveFile**<br>True: Will save the workbook after a save action.<br><br>False: Will not save the workbook after a save action.</button>
+<button class="collapsible-parameter">**AutoSaveFile**<br>True: Will save the workbook after a save action. (Saves at current save location without prompt. If file is not saved already, will save in the last used folder.)<br><br>False: Will not save the workbook after a save action.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
