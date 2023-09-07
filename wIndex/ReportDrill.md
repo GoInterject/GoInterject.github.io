@@ -16,7 +16,7 @@ For an example of this function, see [Lab Drill: Customer Aging](/wGetStarted/L-
 
 ###  Function Arguments
 
-<button class="collapsible-parameter">**ReportCellToRun**<br>A cell address in a worksheet within your report that contains an Interject [Data Pull Function](/wIndex/Data-Functions-Landing.html). The Data Pull Functions of the sheet of this range will be ran upon a Drill action.</button>
+<button class="collapsible-parameter">**ReportCellToRun**<br>A cell address in a worksheet within your report that contains an Interject [Data Pull Function](/wIndex/Data-Functions-Landing.html). The Data Pull Functions of the sheet of this range will be ran upon a Drill action. (This parameter will be ignored if <b>ReportCodeToRun</b> is not blank)</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
