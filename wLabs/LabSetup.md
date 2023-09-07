@@ -8,7 +8,7 @@ description: This page details the necessary requirements and steps to set up a 
 
 ## Overview
 
-The [Lab Guide](/wLabs/lab.html) provides a convenient way for users to become familiar with Interject. The Guide walks through several individual walkthroughs on how to modify and create reports, drilling to data, and exporting reports. In order for a user to follow along, it is necessary to first set up a local environment that can accommodate this Lab Guide. This page details the necessary requirements and steps to do this.
+The [Lab Guide](/wLabs/lab.html) provides a convenient way for users to become familiar with Interject. The Guide has several individual walkthroughs on how to create reports, modify reports, drill to data, and export reports. In order for a user to follow along, it is necessary to first set up a local environment that can accommodate this Lab Guide. This page details the necessary requirements and steps to do this.
 
 ### Interject Data Report Flow
 
@@ -19,7 +19,7 @@ The reports in the Lab Guide contain [Interject report formulas](/wIndex/Excel-F
 
 ### Subscription Setup
 
-In order to have the necessary requirements to go through the Lab Guide, a user just needs to be subscribed to the "Publisher - Interject App". Once subscribed, a user can select this company from the Interject ribbon:
+In order to have the necessary requirements to go through the Lab Guide, a user just needs to be subscribed to the "Publisher - Interject App". To request a subscription, contact us at [info@gointerject.com](mailto:info@gointerject.com). Once subscribed, a user can select this company from the Interject ribbon:
 
 ![](/images/LabSetup/Companies.png)
 <br>
@@ -30,8 +30,6 @@ The Publisher - Interject App company gives a user access to all the lab files v
 <br>
 
 In addition, the Publisher - Interject App company grants a user access to all the Data Portals referenced in the labs. All the Data Portals in the Lab Guide use an API Data Connection. Therefore, no local database is necessary.
-
-To request a subscription, contact us at [info@gointerject.com](mailto:info@gointerject.com).
 
 ### Manual Setup
 
