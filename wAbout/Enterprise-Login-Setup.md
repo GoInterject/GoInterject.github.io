@@ -17,7 +17,7 @@ There are other identity provider services on the cloud that support OIDC. The f
 * [Auth0](https://auth0.com/docs/get-started/authentication-and-authorization-flow){:target="_blank"}{:rel="noopener noreferrer"}
 
 <blockquote class=highlight_note>
-<b>Note:</b> Users will need Interject version 2.5.0.14 or above to use federated logins. Interject can set it up where federated users and users on the existing system exist together, so we can migrate/update users individually if that makes it smoother to upgrade.
+<b>Note:</b> Users will need Interject version 2.5.0.14 or above to use federated logins. Interject can be set up to accommodate federated and non-federated users existing on the same system, so we can migrate/update users individually if that makes it smoother to upgrade.
 </blockquote>
 
 The steps for setting up your Interject organization with federated logins include:
