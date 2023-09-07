@@ -54,7 +54,7 @@ Once set up, the Enterprise Login Codes will be shown for all identity providers
 
 ### IP Whitelisting
 
-If your Network uses a firewall, it might be necessary that you will need to whitelist Interject domains when users attempt to use federated logins with Interject. If this is the case, then it is important that key domains used by Interject are whitelisted on your network.
+If your network uses a firewall, it might be necessary that you will need to whitelist Interject domains when users attempt to use federated logins with Interject. If this is the case, then it is important that key domains used by Interject are whitelisted on your network.
 
 The following are the IPs to whitelist that are used by the Interject product:
 
