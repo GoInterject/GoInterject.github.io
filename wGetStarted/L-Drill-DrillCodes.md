@@ -104,7 +104,7 @@ In this section you will open up the original report and edit it so that it can 
 
 All there is left to do is run the drill!
 
-Select the **Bottom-Dollar Markets** and click **Drill on Data**.
+Select the **Bottom-Dollar Markets** and click **Drill on Data**. Click **OK**.
 
 ![](/images/L-Drill-DrillCodes/DrillData.png)
 <br>
