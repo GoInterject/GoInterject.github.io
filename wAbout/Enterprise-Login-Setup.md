@@ -67,7 +67,7 @@ You will need to ascertain the proper steps in whitelisting these domains on you
 
 ### Setup Data Connections
 
-Some data connections need to use a federated login for data access (e.g. often an API authenticating requests against the same federated identity provider). These data connections should be configured in the Interject portal site by selecting the desired Enterprise login code from the drop down on the data connection page. All identity providers configured for the selected company will show up in this drop down.
+Some data connections need to use a federated login for data access (e.g. often an API authenticating requests against the same federated identity provider). These data connections should be configured in the Interject portal site by selecting the desired Enterprise Login Code from the drop down on the data connection page. All identity providers configured for the selected company will show up in this drop down.
 
 ![](/images/Enterprise-Login-Setup/DataConnection.png)
 <br>
