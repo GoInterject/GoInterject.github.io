@@ -106,7 +106,7 @@ To log out and forget your credentials, click the ellipses on the account you wi
 
 ### Clearing Login Cookies
 
-The Login cookies store the federated credentials so that the Enterprise user can log back in without having to reenter their federated credentials. To clear these cookies, select **Diagnostics** from the Interject ribbon, click on **Clear External Login Cookies** and then select **Execute Selected Action**. On the next login, you will have to reenter your federated credentials.
+The Login cookies store the federated credentials so that the enterprise user can log back in without having to reenter their federated credentials. To clear these cookies, select **Diagnostics** from the Interject ribbon, click on **Clear External Login Cookies** and then select **Execute Selected Action**. On the next login, you will have to reenter your federated credentials.
 
 ![](/images/Login-Enterprise/ClearLoginCookies.png)
 <br>
