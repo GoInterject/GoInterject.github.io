@@ -58,12 +58,9 @@ Various security technologies are deployed within the infrastructures and includ
 
 Adequate back-up procedures and testing exist to ensure that all essential information and software can be recovered following a disaster or media failure. Backup information is stored at a remote secure location, at a sufficient distance to escape any damage from a disaster at the primary site. Backup media is protected against unauthorized access, misuse or corruption during transportation beyond the data center boundaries. Combinations of preventive and recovery controls are implemented to help protect from harm due to loss of data or processing capabilities. These controls are designed based on an assessment of risk and are meant to keep the harmful effects of any outages to a minimum. The processes making up these control measures are tested on a regular basis.
 
-### Contact Information
+### Contacting Us
 
-- Interject
-- 1404 NE 134th ST #200
-- Vancouver, WA 98685 USA
-- security@gointerject.com
+We have designated a Data Protection Officer who is responsible for monitoring Interject’s ongoing compliance of this Security Policy. If you have any questions about this Security Policy, the practices or concerns of this site, please contact our Data Protection Officer at: security@gointerject.com.
 
 For more details on how we handle and protect your personal data, please visit our [Privacy Policy](/wAbout/privacy-policy.html)
 
