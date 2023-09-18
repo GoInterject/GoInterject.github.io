@@ -120,11 +120,6 @@ Interject may amend this Privacy Policy at any time by posting a new version. It
 
 We have designated a Data Protection Officer who is responsible for monitoring Interject’s ongoing compliance of this Privacy Policy. If you have any questions about this Privacy Policy, the practices or concerns of this site, please contact our Data Protection Officer at: privacy@gointerject.com.
 
-- Interject
-- 1404 NE 134th ST #200
-- Vancouver, WA 98685 USA
-- privacy@gointerject.com
-
 #### Amendments
 
 This Privacy Statement may be amended from time to time consistent with the requirements of the Shield Frameworks. We will post any revised policy on this website.
