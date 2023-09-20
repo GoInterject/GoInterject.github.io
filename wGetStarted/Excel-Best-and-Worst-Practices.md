@@ -71,6 +71,22 @@ Here you will use the scroll bar in the function wizard to alter the UseEntireRo
 
 Sometimes developers accidentally use the last cell of the 1,048,576 rows that Excel provides or write a value in the last of the 16,384 columns that is also available. When this happens, the range in use expands to a large range of cells that uses more memory and expands the work area, which can hinder performance. To improve performance, delete all rows and columns beyond the reporting area.
 
+### Images
+
+Images can quickly increase the size of an Excel report. If images must be included in a report, you can compress them to 96ppi by selecting the image, click the "Picture Format" tab on the Ribbon, and then "Compress Pictures." From here, you can select the compression rating and whether to apply the compression to the selected image or all images.
+
+Alternatively, you can set the default compression rating for all newly inserted images as explained on the [Microsoft Support Site](https://support.microsoft.com/en-us/office/change-the-default-resolution-for-inserting-pictures-in-office-f4aca5b4-6332-48c6-9488-bf5e0094a7d2#ID0EBF=Windows){:target="_blank"}{:rel="noopener noreferrer"}.
+
+### File Type
+
+The old Microsoft Excel type .xls does not compress the data in the report using saving so this type of file will be much larger than it could. Always use the xlsl or xlsm file type for your reports.
+
+The Microsoft binary file (xlsb) type will further reduce the file size of your report. However, there are some limitations: 1) The file may be a security risk as you will not know if it contains macros or not. 2) You cannot make changes to the Excel Ribbon while a binary file is open. 3) The binary file type may be inoperable by third-party tools.
+
+### Pivot Tables
+
+Pivot tables will save the source data with the file in addition to the file contents, making the file much larger then necessary. You can reduce the file size by selecting not to save the source data and instead, simply choose to refresh the data when opening the file. Both these options are available by right clicking the pivot table, click "PivotTable Options", and then select the "Data" tab.
+
 ### VBA Macros
 
 Using VBA (Visual Basic for Applications) can bridge a special feature or process gap in a report, but it is important to use VBA sparingly and to avoid adding to the resources needed for processing spreadsheet reports and using applications. VBA can add to maintenance requirements over time, and it can be hard to control versions when users copy reports to their local drives. It is possible to leverage VBA with Interject. These are special use cases that hopefully will become obsolete as more features are added to Interject. We welcome any questions in this area so that we can add more functionality to limit the need for VBA.
