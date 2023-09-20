@@ -257,14 +257,9 @@ The Company button allows user to switch companies they currently want to work i
 
 ### Validation Report
 
-The Validation Report operation allows you to check the code for Saves, Pulls, Drills, and other actions.
+The Validation Report operation allows you to check the code for Saves, Pulls, Drills, and other actions. For more information about the options here, see [Validation Report](/wIndex/ValidationReport.html).
 
 ![](/images/InterjectRibbon/31.png)
-<br>
-
-By selecting any of the validation options, you can view the code behind each action. Detail information is given for selected ranges, data portals, formatting codes, and more. This helps users learn as well as diagnose code problems. For more information about the options here, see [Reviewing Report Functions](/wIndex/Report-Formula-Reviews.html).
-
-![](/images/InterjectRibbon/32.png)
 <br>
 
 * * *

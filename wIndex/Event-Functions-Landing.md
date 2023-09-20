@@ -22,6 +22,8 @@ There are four Interject events:
 
 The placement of the Event Function is important to synchronize their execution in relation to other functions. For example, if the function is placed in a cell before a [Data Pull Function](wIndex/Data-Functions-Landing.html) and is set to execute upon a Pull-Run event, then selecting a ""Pull Data"" will cause the Event Function to run first and then the data is pulled via the Data Pull Function. The order of functions is determined row by row. For example, a function in C10 will be ran before a function in B11 because row 10 comes before row 11.
 
+To view detailed information about the functions in your report that are triggered by these events, see [Validation Report](/wIndex/ValidationReport.html).
+
 There are 6 Interject Event Functions: ReportMacro, ReportRun, ReportCalc, ReportDefaults, ReportGrouping, ReportHideRowOrColumn.
 
 ### [ReportMacro](/wIndex/ReportMacro.html)
