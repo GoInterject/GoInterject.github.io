@@ -58,8 +58,10 @@ about:
 - sectiontitle: Using Interject
   path: /wAbout/Using-INTERJECT.html
   section:
-  - title: Logging In
+  - title: Logging In/Out - Individual User
     path: /wAbout/Logging-In.html
+  - title: Logging In/Out - Enterprise User
+    path: /wAbout/Logging-In-Enterprise.html
   - title: Adding a User
     path: /wAbout/Adding-a-User.html
   - title: Report Library Basics
@@ -273,11 +275,8 @@ index:
       path: /wIndex/FinCube---The-Financial-Cube.html
     - title: SegmentInfo - Segment Search
       path: /wIndex/SegmentInfo---Segment-Search.html
-  - sectiontitle: Common Stored Procedures
-    path: /wIndex/Request-Context-Parse.html
-    section:
-      - title: Request Context Parse
-        path: /wIndex/Request-Context-Parse.html
+  - title: Excel Best and Worst Practices
+    path: /wGetStarted/Excel-Best-and-Worst-Practices.html
   - sectiontitle: Quick Tools
     path: /wIndex/Quick-Tools-Landing.html
     section:
@@ -342,8 +341,8 @@ Developer:
           path: /wApi/python-api-custom-functions.html
     - title: Java Api Setup
       path: /wApi/java-api-setup.html
-- title: Excel Best and Worst Practices
-  path: /wGetStarted/Excel-Best-and-Worst-Practices.html
+- title: Request Context Parse
+  path: /wIndex/Request-Context-Parse.html
 - sectiontitle: Developing SQL with Interject
   path: /wGetStarted/Developing-with-INTERJECT.html
   section:
@@ -385,6 +384,10 @@ Developer:
     path: /wAbout/TLS.html
   - title: Macro Security
     path: /wIndex/MacroSecurity.html
+  - title: Enterprise Login Setup
+    path: /wAbout/Enterprise-Login-Setup.html
+  - title: Federated Login Design
+    path: /wAbout/Federated-Login-Design.html
 
 
 
