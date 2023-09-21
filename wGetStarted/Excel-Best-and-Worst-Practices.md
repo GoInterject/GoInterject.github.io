@@ -73,15 +73,15 @@ Sometimes developers accidentally use the last cell of the 1,048,576 rows that E
 
 ### Images
 
-Images can quickly increase the size of an Excel report. If images must be included in a report, you can compress them to 96ppi by selecting the image, click the "Picture Format" tab on the Ribbon, and then "Compress Pictures." From here, you can select the compression rating and whether to apply the compression to the selected image or all images.
+Images can quickly increase the size of an Excel report. If images must be included in a report, you can compress them to 96ppi by selecting the image, clicking the "Picture Format" tab on the Ribbon, and selecting "Compress Pictures." From here, you can select the compression rating and whether to apply the compression to the selected image or all images.
 
 Alternatively, you can set the default compression rating for all newly inserted images as explained on the [Microsoft Support Site](https://support.microsoft.com/en-us/office/change-the-default-resolution-for-inserting-pictures-in-office-f4aca5b4-6332-48c6-9488-bf5e0094a7d2#ID0EBF=Windows){:target="_blank"}{:rel="noopener noreferrer"}.
 
 ### File Type
 
-The old Microsoft Excel type .xls does not compress the data in the report using saving so this type of file will be much larger than it could. Always use the xlsl or xlsm file type for your reports.
+The old Microsoft Excel type .xls does not compress the data in the report using saving so this type of file will be much larger. Always use the xlsl or xlsm file type for your reports.
 
-The Microsoft binary file (xlsb) type will further reduce the file size of your report. However, there are some limitations: 1) The file may be a security risk as you will not know if it contains macros or not. 2) You cannot make changes to the Excel Ribbon while a binary file is open. 3) The binary file type may be inoperable by third-party tools.
+The Microsoft binary file (xlsb) type will further reduce the file size of your report. However, there are some limitations: 1) The file may be a security risk as you will not know if it contains macros. 2) You cannot make changes to the Excel Ribbon while a binary file is open. 3) The binary file type may be inoperable by third-party tools.
 
 ### Pivot Tables
 
