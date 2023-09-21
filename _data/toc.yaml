@@ -58,8 +58,10 @@ about:
 - sectiontitle: Using Interject
   path: /wAbout/Using-INTERJECT.html
   section:
-  - title: Logging In
+  - title: Logging In/Out - Individual User
     path: /wAbout/Logging-In.html
+  - title: Logging In/Out - Enterprise User
+    path: /wAbout/Logging-In-Enterprise.html
   - title: Adding a User
     path: /wAbout/Adding-a-User.html
   - title: Report Library Basics
@@ -108,8 +110,13 @@ about:
 getstarted:
   - title: Interject Ribbon Menu Items
     path: /wGetStarted/INTERJECT-Ribbon-Menu-Items.html
-  - title: Lab Guide
+  - sectiontitle: Interject Labs
     path: /wLabs/lab.html
+    section:
+    - title: Lab Guide
+      path: /wLabs/lab.html
+    - title: Manual Setup for the Lab Guide
+      path: /wLabs/LabSetup.html
   - sectiontitle: Creating with Interject
     path: /wGetStarted/Creating-with-INTERJECT.html
     section:
@@ -273,11 +280,8 @@ index:
       path: /wIndex/FinCube---The-Financial-Cube.html
     - title: SegmentInfo - Segment Search
       path: /wIndex/SegmentInfo---Segment-Search.html
-  - sectiontitle: Common Stored Procedures
-    path: /wIndex/Request-Context-Parse.html
-    section:
-      - title: Request Context Parse
-        path: /wIndex/Request-Context-Parse.html
+  - title: Excel Best and Worst Practices
+    path: /wGetStarted/Excel-Best-and-Worst-Practices.html
   - sectiontitle: Quick Tools
     path: /wIndex/Quick-Tools-Landing.html
     section:
@@ -299,10 +303,13 @@ index:
     path: /wIndex/INTERJECT-Hotkey-Index.html
   - title: Interject Hyperlinks
     path: /wIndex/INTERJECT-Link-Index.html
-  - title: Diagnostics - Special Features
-    path: /wIndex/Diagnostics-SpecialFeatures.html
-  - title: Diagnostics - Change ShortKeys
-    path: /wIndex/Diagnostics-ShortKey.html
+  - sectiontitle: Diagnostics
+    path: /wIndex/Diagnostics.html
+    section:
+    - title: Diagnostics - Special Features
+      path: /wIndex/Diagnostics-SpecialFeatures.html
+    - title: Diagnostics - Change ShortKeys
+      path: /wIndex/Diagnostics-ShortKey.html
 
 
 portal:
@@ -342,8 +349,8 @@ Developer:
           path: /wApi/python-api-custom-functions.html
     - title: Java Api Setup
       path: /wApi/java-api-setup.html
-- title: Excel Best and Worst Practices
-  path: /wGetStarted/Excel-Best-and-Worst-Practices.html
+- title: Request Context Parse
+  path: /wIndex/Request-Context-Parse.html
 - sectiontitle: Developing SQL with Interject
   path: /wGetStarted/Developing-with-INTERJECT.html
   section:
@@ -385,6 +392,10 @@ Developer:
     path: /wAbout/TLS.html
   - title: Macro Security
     path: /wIndex/MacroSecurity.html
+  - title: Enterprise Login Setup
+    path: /wAbout/Enterprise-Login-Setup.html
+  - title: Federated Login Design
+    path: /wAbout/Federated-Login-Design.html
 
 
 

@@ -1,14 +1,14 @@
 ---
-title: Setting up the Lab Environment
+title: Manual Setup for the Lab Guide
 layout: custom
-keywords: [lab, guide, setup, start, FinCube, data cells]
+keywords: [lab, guide, manual setup, start, Northwind, database, FinCube, data cells]
 description: This page details the necessary requirements and steps to set up a local environment that can accommodate a user following the Lab Guide.
 ---
 * * *
 
 ## Overview
 
-The [Lab Guide](/wLabs/lab.html) provides a convenient way for users to become familiar with Interject. The Guide has several individual walkthroughs on how to create reports, modify reports, drill to data, and export reports. In order for a user to follow along, it is necessary to first set up a local environment that can accommodate this Lab Guide. This page details the necessary requirements and steps to do this.
+The [Lab Guide](/wLabs/lab.html) provides a convenient way for users to become familiar with Interject. The Guide has several individual walkthroughs on how to create reports, modify reports, drill to data, and export reports. For those who want greater control and flexibility in making modifications to the Lab Guide, this page details how to setup the environment manually.
 
 ### Interject Data Report Flow
 
@@ -17,23 +17,9 @@ The reports in the Lab Guide contain [Interject report formulas](/wIndex/Excel-F
 ![](/images/LabSetup/FlowChart.png)
 <br>
 
-### Subscription Setup
-
-In order to have the necessary requirements to go through the Lab Guide, a user just needs to be subscribed to the "Publisher - Interject App". To request a subscription, contact us at [info@gointerject.com](mailto:info@gointerject.com). Once subscribed, a user can select this company from the Interject ribbon:
-
-![](/images/LabSetup/Companies.png)
-<br>
-
-The Publisher - Interject App company gives a user access to all the lab files via the Report Library:
-
-![](/images/LabSetup/ReportLibraryLabFiles.png)
-<br>
-
-In addition, the Publisher - Interject App company grants a user access to all the Data Portals referenced in the labs. All the Data Portals in the Lab Guide use an API Data Connection. Therefore, no local database is necessary.
-
 ### Manual Setup
 
-Setting up a Lab environment manually gives greater control and flexibility in making modifications. However, there are a number of steps necessary:
+There are a number of steps necessary for manual setup:
 
 * **[Step 1:](#step-1-setting-up-the-database)** Download the database and install locally
 * **[Step 2:](#step-2-setting-up-the-data-connection)** Set up the Data Connections on the Interject Portal site
@@ -581,7 +567,7 @@ The following zip file contains all the necessary files for the Lab Guide:
 
 [2]:{{ site.url }}/download/LabFiles.zip
 
->**Note:** Some labs do not have a lab file as they either start with a blank Excel file or are continued from a previous lab. The following do not have a file: 3.1, 3.2, 3.3, 3.6, and 7.3.
+>**Note:** Some labs do not have a lab file as they either start with a blank Excel file or are continued from a previous lab. The following labs do not have a file: 3.1, 3.2, 3.3, 3.6, and 7.3.
 
 ### Step 6: Renaming the Data Portals
 
