@@ -110,8 +110,13 @@ about:
 getstarted:
   - title: Interject Ribbon Menu Items
     path: /wGetStarted/INTERJECT-Ribbon-Menu-Items.html
-  - title: Lab Guide
+  - sectiontitle: Interject Labs
     path: /wLabs/lab.html
+    section:
+    - title: Lab Guide
+      path: /wLabs/lab.html
+    - title: Manual Setup for the Lab Guide
+      path: /wLabs/LabSetup.html
   - sectiontitle: Creating with Interject
     path: /wGetStarted/Creating-with-INTERJECT.html
     section:

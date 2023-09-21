@@ -8,8 +8,24 @@ description: These labs are offered as an introductory course on the Interject®
 
 ## Overview
 
-These labs are offered as an introductory course on the Interject® Add-In for Microsoft Excel®. By following this guide, you will be learn how to use the Interject Add-in to create and modify reports in Excel. You will also learn features to customize your reports further and ways to interact between Interject and Excel to make your reports useful in a variety of situations. Finally, you will learn how to export these reports and distrubute them.
+These labs are offered as an introductory course on the Interject® Add-In for Microsoft Excel®. By following this guide, you will be learn how to use the Interject Add-in to create and modify reports in Excel. You will also learn features to customize your reports further and ways to interact between Interject and Excel to make your reports useful in a variety of situations. Finally, you will learn how to export these reports and distribute them.
 <br>
+
+### Subscription Setup
+
+In order to have the necessary requirements to go through the Lab Guide, a user just needs to be subscribed to the "Publisher - Interject App". To request a subscription, contact us at [info@gointerject.com](mailto:info@gointerject.com). Once subscribed, a user can select this company from the Interject ribbon:
+
+![](/images/LabSetup/Companies.png)
+<br>
+
+The Publisher - Interject App company gives a user access to all the lab files via the Report Library:
+
+![](/images/LabSetup/ReportLibraryLabFiles.png)
+<br>
+
+In addition, the Publisher - Interject App company grants a user access to all the Data Portals referenced in the labs. All the Data Portals in the Lab Guide use an API Data Connection. Therefore, no local database is necessary.
+
+To setup the lab environment manually, see [here](/wLabs/LabSetup.html).
 
 ### Before You Begin
 
