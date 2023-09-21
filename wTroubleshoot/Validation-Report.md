@@ -17,15 +17,17 @@ The Validation Report is a tool to help report writers see how specific report f
 
 The Validation Report can assist in analyzing Interject functions and events. For an overview on Interject events, see [here](/wIndex/Event-Functions-Landing.html).
 
-* **Pull Data Event**: Analyzes all [Data Pull Functions](/wIndex/Data-Functions-Landing.html).
-* **Save Data Event**: Analyzes the [ReportSave](/wIndex/ReportSave.html) function.
-* **Drill Data Event**: Analyzes the [ReportDrill](/wIndex/ReportDrill.html) function.
-* **Clear Pull Data Event**: Analyzes the [Clear](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) from the Pull Data window.
-* **Clear Save Data Event**: Analyzes the [Clear Save Notes](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data) from the Save Data Control window.
-* **Go Back Event**: Analyzes the [Return From Drill](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#return-from-drill) event.
+* **Pull Data Event**: Analyzes all functions triggered by a Pull-Run event.
+* **Save Data Event**: Analyzes all functions triggered by a Save-Run event.
+* **Drill Data Event**: Analyzes all functions triggered by a Data-Drill event.
+* **Clear Pull Data Event**: Analyzes all functions triggered by a Pull-Clear event.
+* **Clear Save Data Event**: Analyzes all functions triggered by a Save-Clear event.
+* **Go Back Event**: Analyzes all functions triggered by a [Go-Back](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#return-from-drill) event.
 * **Data Cell Function**: Analyzes all [Data Cell](/wIndex/Data-Cell-Functions.html) functions.
 * **Data Cell Last Change Report**: Analyzes the changes and updates in the [Data Cell](/wIndex/Data-Cell-Functions.html) functions.
-* **Cell Formula Review**: Analyzes a Report Formula (see [Verify Formula Parameters](/wTroubleshoot/validation-report#verify-formula-parameters)).
+* **Cell Formula Review**: [Analyzes a Report Formula](/wIndex/Report-Formula-Reviews.html).
+
+
 
 ### Pull Data Event Example
 

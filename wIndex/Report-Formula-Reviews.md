@@ -1,16 +1,18 @@
 ---
-title: Report Formula Reviews
+title: Reviewing Report Formulas
 layout: custom
 keywords: [formula review, report formula]
-description: In this page you will see how your parameters are set up for the report. To do so you need to head to the Validation Report bar to see the columns used for those parameters.
+description: Reviewing the Interject report formulas for accuracy is a vital step in eliminating report errors. This page details two tools to help get with these formulas: Interject's Cell Formula Review and Excel's Function Wizard.
 ---
 * * *
 
 ## Overview
 
-When a user is writing out the formula it can be difficult to get the parenthesis, commas and quotations correct.The Function Wizard defines how the function is used, but it will not expand upon the names of the parameters. In this page you will see how your parameters are set up for the report. To do so you need to head to the Validation Report bar to see the columns used for those parameters.
+Reviewing the Interject report formulas for accuracy is a vital step in eliminating report errors. Sometimes when setting up a report formula, it can be difficult to enter everything correctly as there can be nested formulas each with their own set of parameters. Many times there are a number of parenthesis, commas, and quotation marks that must be entered correctly. This page details two tools to help get with these formulas: Interject's Cell Formula Review and Excel's Function Wizard.
 
 ### Getting Started
+
+This page will use the the Customer Collections report previously used in the Real World Walkthrough.
 
 Before anything you must begin by unfreezing the report you will be using for this exercise. For this wiki you will use the Customer Collections report previously used in the Real World Walkthrough.
 
