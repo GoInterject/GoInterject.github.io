@@ -1,97 +1,81 @@
 ---
 title: Reviewing Report Formulas
 layout: custom
-keywords: [formula review, report formula]
-description: Reviewing the Interject report formulas for accuracy is a vital step in eliminating report errors. This page details two tools to help get with these formulas: Interject's Cell Formula Review and Excel's Function Wizard.
+keywords: [cell formula review, report formulas, function wizard]
+description: Reviewing the Interject report formulas for accuracy is a vital step in eliminating report errors. This page shows two tools that help with these formulas&#58; Excel's Function Wizard and Interject's Cell Formula Review.
 ---
 * * *
 
 ## Overview
 
-Reviewing the Interject report formulas for accuracy is a vital step in eliminating report errors. Sometimes when setting up a report formula, it can be difficult to enter everything correctly as there can be nested formulas each with their own set of parameters. Many times there are a number of parenthesis, commas, and quotation marks that must be entered correctly. This page details two tools to help get with these formulas: Interject's Cell Formula Review and Excel's Function Wizard.
+Reviewing the Interject report formulas for accuracy is a vital step in eliminating report errors. Sometimes when setting up a report formula, it can be difficult to enter everything correctly as there can be nested formulas each with their own set of parameters. Many times there are a number of parenthesis, commas, and quotation marks that must be entered correctly. This page shows two tools that help with these formulas: Excel's Function Wizard and Interject's Cell Formula Review.
 
 ### Getting Started
 
-This page will use the the Customer Collections report previously used in the Real World Walkthrough.
+This page will use the the Customer Collections report [previously](/wAbout/Customer-Aging.html) used in the Real World Walkthrough.
 
-Before anything you must begin by unfreezing the report you will be using for this exercise. For this wiki you will use the Customer Collections report previously used in the Real World Walkthrough.
-
-![](/images/FormulasReviews/01.png)
+![](/images/FormulasReviews/InterjectCustomerCollections.png)
 <br>
 
-Now that you have the report ready, you should unfreeze the hidden rows which will allows you to access all of the formulas.
+In order to access the report formulas, you need to first unfreeze the panes. From the Quick Tools, select **PANES: Freeze/UnFreeze Panes** and click **Run and Close**.
 
-![](/images/FormulasReviews/02.png)
+![](/images/FormulasReviews/Unfreeze.png)
 <br>
 
-To unfreeze the rows you simply need to go to the View Ribbon and select Freeze panes or you can use the [Quick Tools](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools) operation. Out of the three options given in the drop down list, you will use the first.
+### The Function Wizard
 
-![](/images/FormulasReviews/03.png)
+Excel's Function Wizard makes it easy to enter formulas inside the report and enter or modify parameters. First select the formula you want to edit and press the **fx** button to bring up the Function Wizard.
+
+![](/images/FormulasReviews/SelectFX.png)
 <br>
 
-Now you can begin reviewing the parameters.
+The Function Wizard window displays the currently selected formula and all its parameters. It also conveniently display descriptions for the formula and all the parameters. In addition, the result of the formula is displayed (if there are errors in the formula, it will show the error).
 
-![](/images/FormulasReviews/04.png)
+![](/images/FormulasReviews/FunctionWizard.png)
 <br>
 
-### Reviewing Parameters
+For more about Excel's Function Wizard and entering formulas, see [Microsoft's documentation](https://support.microsoft.com/en-au/office/using-functions-and-nested-functions-in-excel-formulas-3f4cf298-ded7-4f91-bc80-607533b65f02){:target="_blank"}{:rel="noopener noreferrer"}.
 
-When a user needs to see the parameters in detail, the Function Wizard does not give them that opportunity. Before diving into the Interject Ribbon, you must select the cell containing the ReportRange().
+### Cell Formula Review
 
-![](/images/FormulasReviews/05.png)
+The Function Wizard is good for entering and modifying formulas but it does not show detailed information concerning the Interject parameters. For this you can use Interject's Cell Formula Review. (This is found on the Interject [advanced](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#advanced-menu-items) menu).
+
+First select the cell containing the formula you want to review. Then click **Validation Report** and then select **Cell Formula Review**.
+
+![](/images/FormulasReviews/SelectCellFormulaReview.png)
 <br>
 
-To see the parameters and cell formula detail simply open the [Advanced Menu](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#advanced-menu) in Interject.
+This **Formula Review** window appears showing a convenient display of the formula and its parameters and values.
 
-![](/images/FormulasReviews/06.png)
+![](/images/FormulasReviews/FormulaReviewWindow.png)
 <br>
 
-Now that the Advanced Menu has been expanded, you can explore Validation Report. Open the _Validation report_ and select the <b>Cell Formula Review</b> near the bottom of the list.
+This window has four different options to further customize the display:
 
-![](/images/FormulasReviews/07.png)
+* Show Formula References
+* Show Param Names
+* Indent Data Cell Functions
+* Indent All Others
+
+![](/images/FormulasReviews/FormulaReviewOptions.png)
 <br>
 
-A window will open and if you expand it, you will see four options to check off:
+The **Show Formula References** will display the references used in the parameters.
 
-<b>_Indent Data Cell Function_</b> and <b>_Indent All Others_</b> should already be checked off, you will have to check off <b>Show Param Names</b> ourselves. This will bring to light the names of the parameters.
-
-![](/images/FormulasReviews/08.png)
+![](/images/FormulasReviews/ShowReferences.png)
 <br>
 
-**_Show Formula References_** allows you to see where some of the parameters are stationed
+**Show Param Names** displays the names of the parameters.
 
-![](/images/FormulasReviews/09.png)
+![](/images/FormulasReviews/ShowParamNames.png)
 <br>
 
-The Source Code for the Report range is on the left while the parameters are on the right which allows you to connect the values to the parameters.
+The **Indent Data Cell Functions** will include indentation before each entry.
 
-* _NorthwindCustomer_ is the Portal used for the Parameter ( _DataPortal_ )
-* _Market_ is used for (@ _CompanyName_ )
-
-Now that this has been completed you can move on to the Function Wizard.
-
-### Working with Function Wizard
-
-If you have not seen the function wizard before, you will begin at the point where you have the Customer Collections Report Unfrozen and ReportRange() selected.
-
-![](/images/FormulasReviews/10.png)
+![](/images/FormulasReviews/IndentDataCellFunctions.png)
 <br>
 
-After you find report range or create one of your own, you can give it commands by simply selecting the F() button.
+Finally, the **Indent All Others** will provide newlines for each entry.
 
-In order to access the formula cells for the report range first the user must select the report range cell.
-
-![](/images/FormulasReviews/11.png)
+![](/images/FormulasReviews/IndentAllOthers.png)
 <br>
-
-Once the cell is selected then the user can push the Fx button
-
-![](/images/FormulasReviews/12.png)
-<br>
-
-When they select Fx It will bring up the box with the Cell formulas. Cell formulas are the boxes that hold the ranges you wish to add:
-
-![](/images/FormulasReviews/13.png)
-<br>
-
-Add the values you need for the formula and it will format it correctly for you.
