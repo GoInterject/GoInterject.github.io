@@ -23,14 +23,9 @@ horizontalnav:
 - title: Troubleshooting
   path: /wTroubleshoot/Troubleshooting-Landing.html
   node: troubleshoot
-
-design:
-- sectiontitle: Designing Reports
-  path: /wDesign/Reporting-Design-Standards.html
-  section:  
-  - title: Designing Excel Reports
-    path: /wDesign/Designing-Excel-Reports.html
-
+- title: Release Notes
+  path: /wReleaseNotes/2023-09_ReleaseNotes.html
+  node: releaseNotes
 
 about:
 - sectiontitle: What Does Interject Do?
@@ -93,20 +88,7 @@ about:
     path: /wAbout/security-policy.html
   - title: Privacy Policy
     path: /wAbout/privacy-policy.html
-  
 
-# apps:
-#   - title: Reference
-#     path: /wApps/Reference.html
-#   - title: INTERJECT Financials
-#     path: /wApps/Interject-Financials.html
-#   - title: "INTERJECT Financials for Epicor"
-#     path: /wApps/Epicor-Financials.html
-#   - title: "SQL Server Implementation"
-#     path: /wApps/SQL-Install.html
-#   - title: "FRx Migration"
-#     path: /wApps/FRx-Migration.html
-    
 getstarted:
   - title: Interject Ribbon Menu Items
     path: /wGetStarted/INTERJECT-Ribbon-Menu-Items.html
@@ -190,8 +172,6 @@ getstarted:
         path: /wGetStarted/L-Export-BasicDist.html
       - title: "Export: Advanced Distribution"
         path: /wGetStarted/L-Export-AdvancedDist.html
-
-
 
 index:
   - sectiontitle: Interject Function Index
@@ -311,7 +291,6 @@ index:
     - title: Diagnostics - Change ShortKeys
       path: /wIndex/Diagnostics-ShortKey.html
 
-
 portal:
   - sectiontitle: Interject Website Portal
     path: /wPortal/The-INTERJECT-Website-Portal.html
@@ -334,7 +313,6 @@ portal:
         path: /wPortal/INTERJECT-Roles.html
       - title: Altering User Passwords
         path: /wPortal/Altering-User-Passwords.html
-
 
 Developer:
 - sectiontitle: Api Developer
@@ -397,8 +375,6 @@ Developer:
   - title: Federated Login Design
     path: /wAbout/Federated-Login-Design.html
 
-
-
 troubleshoot:
 - sectiontitle: Interject Support
   path: /wTroubleshoot/Interject-Support.html
@@ -431,3 +407,10 @@ troubleshoot:
       path: /wTroubleshoot/Testing-Data-Connections.html
     - title: View SQL for ActiveCell
       path: /wTroubleshoot/View-SQL.html
+
+releaseNotes:
+- sectiontitle: 2023
+  path: /wReleaseNotes/2023-09_ReleaseNotes.html
+  section:
+    - title: September
+      path: /wReleaseNotes/2023-09_ReleaseNotes.html
