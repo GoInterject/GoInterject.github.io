@@ -81,7 +81,7 @@ Alternatively, you can set the default compression rating for all newly inserted
 
 The old Microsoft Excel type .xls does not compress the data in the report using saving so this type of file will be much larger. Always use the xlsl or xlsm file type for your reports.
 
-The Microsoft binary file (xlsb) type will further reduce the file size of your report. However, there are some limitations: 1) The file may be a security risk as you will not know if it contains macros. 2) You cannot make changes to the Excel Ribbon while a binary file is open. 3) Other spreadsheet programs other than Excel may not be able to open the binary file.
+The Microsoft binary file (xlsb) type will further reduce the file size of your report. However, there are some limitations: 1) The file may be a security risk as you will not know if it contains macros. 2) You cannot make changes to the Excel Ribbon while a binary file is open. 3) Spreadsheet programs other than Excel may not be able to open the binary file.
 
 ### Pivot Tables
 
