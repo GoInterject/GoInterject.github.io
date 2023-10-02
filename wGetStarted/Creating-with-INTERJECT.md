@@ -29,7 +29,7 @@ Reports often require various formats and subtotal sections, and this is especia
 
 ###  [ Drilling Between Reports ](/wGetStarted/Drilling-Between-Reports.html)
 
-Creating drills, it is possible to generate a simple suite of reports that enable you and your end-users to navigate anywhere from within the spreadsheet environment. Examples in this section include building drills in a [ Customer Aging ](/wGetStarted/L-Drill-CustomerAging.html), [ Inventory ](/wGetStarted/L-Drill-InventoryReport.html), and [ Financial report ](/wGetStarted/L-Drill-FinancialReport.html). There is more than one way for the user to interact with the drill feature. See the page [ Three Ways to Drill ](/wGetStarted/L-Drill-TheThreeWays.html) for more details. 
+Creating drills, it is possible to generate a simple suite of reports that enable you and your end-users to navigate anywhere from within the spreadsheet environment. Examples in this section include building drills in a [ Customer Aging ](/wGetStarted/L-Drill-CustomerAging.html), [ Inventory ](/wGetStarted/L-Drill-InventoryReport.html), and [ Financial report ](/wGetStarted/L-Drill-FinancialReport.html). Also included is [drilling to a separate workbook](/wGetStarted/L-Drill-DrillCodes.html). There is more than one way for the user to interact with the drill feature. See the page [ Three Ways to Drill ](/wGetStarted/L-Drill-TheThreeWays.html) for more details. 
 
 ###  [ Hiding Rows & Columns ](/wGetStarted/L-Create-HideRowCol.html)
 
@@ -61,9 +61,6 @@ The Report Macro function allows Interject to interact with public macros in Exc
 
 When using Interject to pull data into your spreadsheet, the report area will be cleared before new data is inserted. In some situations, you may want to bypass the clear action and retain some formulas, since pulling could remove formulas you have on other columns related to certain data rows.
 
-###  [ Updating the Report Library ](/wGetStarted/L-Create-UpdatingReportLibrary.html)
-
-The Report Library is how you share reports with other users while tracking versions for internal audit controls. Report Library is a simple and easy-access center for sharing interactive spreadsheet reports and applications to your entire organization. 
 
 ### [ Interject Run On Open](/wGetStarted/L-Create-RunOnOpen.html)
 

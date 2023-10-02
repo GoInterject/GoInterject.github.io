@@ -42,7 +42,7 @@ Each section of the Report Library is detailed below. Before opening a report fr
 
 ### Folders Section
 
-The Folders section of the Report Library contains a hierarchy of folders. You can expand or collapse any folder.
+The Folders section of the Report Library contains a hierarchy of folders (max two folders deep). You can expand or collapse any folder.
 
 ![](/images/ReportLibraryBasics/ReportLibraryFoldersSection.png)
 <br>
