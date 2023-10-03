@@ -24,7 +24,7 @@ Once Interject is installed, an Interject Ribbon will be added to Excel.
 ![](/images/ReportLibraryBasics/1.02GettingtoRL-ClickRL.png)
 <br>
 
-**Step 3:** The Report Library consists of folders and sub-folders, just like a typical folder hierarchy.
+**Step 3:** The Report Library consists of folders and sub-folders, just like a typical folder hierarchy (max two levels deep).
 
 ![](/images/ReportLibraryBasics/ReportLibrary.png)
 <br>

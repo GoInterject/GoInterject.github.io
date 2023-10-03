@@ -29,7 +29,7 @@ Reports often require various formats and subtotal sections, and this is especia
 
 ###  [ Drilling Between Reports ](/wGetStarted/Drilling-Between-Reports.html)
 
-Creating drills, it is possible to generate a simple suite of reports that enable you and your end-users to navigate anywhere from within the spreadsheet environment. Examples in this section include building drills in a [ Customer Aging ](/wGetStarted/L-Drill-CustomerAging.html), [ Inventory ](/wGetStarted/L-Drill-InventoryReport.html), and [ Financial report ](/wGetStarted/L-Drill-FinancialReport.html). Also included is [drilling to a separate workbook](/wGetStarted/L-Drill-DrillCodes.html). There is more than one way for the user to interact with the drill feature. See the page [ Three Ways to Drill ](/wGetStarted/L-Drill-TheThreeWays.html) for more details. 
+Creating drills, it is possible to generate a simple suite of reports that enable you and your end-users to navigate anywhere from within the spreadsheet environment. Examples in this section include building drills in a [ Customer Aging ](/wGetStarted/L-Drill-CustomerAging.html), [ Inventory ](/wGetStarted/L-Drill-InventoryReport.html), and [ Financial report ](/wGetStarted/L-Drill-FinancialReport.html). Also included is [drilling to a separate workbook](/wGetStarted/L-Drill-DrillCodes.html). There is more than one way for the user to interact with the drill feature. See the page [ Three Ways to Drill ](/wGetStarted/L-Drill-TheThreeWays.html) for more details.
 
 ###  [ Hiding Rows & Columns ](/wGetStarted/L-Create-HideRowCol.html)
 
