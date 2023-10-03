@@ -10,17 +10,14 @@ description: Overviews of each button in the Interject Excel Ribbon.
 
 The Interject Ribbon has several options designed to help customize the reporting experience. There are both Simple and Advanced menus in the Interject ribbon.
 
+### Simple Menu Items
+
 To display the Simple Menu, click the **Advanced Menu** button:
 
 ![](/images/InterjectRibbon/RibbonAdvancedMenuButton.png)
 <br>
 
-To display the Advanced Menu, click the **Simple Menu** button:
-
-![](/images/InterjectRibbon/RibbonSimpleMenuButton.png)
-<br>
-
-### Simple Menu Items
+The Simple Menu contains the following items:
 
 ![](/images/InterjectRibbon/RibbonSimpleMenu.png)
 <br>
@@ -55,6 +52,11 @@ To display the Advanced Menu, click the **Simple Menu** button:
 * * *
 
 ### Advanced Menu Items
+
+To display the Advanced Menu, click the **Simple Menu** button:
+
+![](/images/InterjectRibbon/RibbonSimpleMenuButton.png)
+<br>
 
 The Advanced Menu adds the sections: User, Formulas, and Administration.
 
@@ -257,14 +259,9 @@ The Company button allows user to switch companies they currently want to work i
 
 ### Validation Report
 
-The Validation Report operation allows you to check the code for Saves, Pulls, Drills, and other actions.
+The Validation Report operation allows you to check the code for Saves, Pulls, Drills, and other actions. For more information about the options here, see [Validation Report](/wTroubleshoot/Validation-Report.html).
 
 ![](/images/InterjectRibbon/31.png)
-<br>
-
-By selecting any of the validation options, you can view the code behind each action. Detail information is given for selected ranges, data portals, formatting codes, and more. This helps users learn as well as diagnose code problems. For more information about the options here, see [Reviewing Report Functions](/wIndex/Report-Formula-Reviews.html).
-
-![](/images/InterjectRibbon/32.png)
 <br>
 
 * * *
