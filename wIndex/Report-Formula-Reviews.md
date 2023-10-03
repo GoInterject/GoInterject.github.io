@@ -8,7 +8,7 @@ description: Reviewing the Interject report formulas for accuracy is a vital ste
 
 ## Overview
 
-Reviewing the Interject report formulas for accuracy is a vital step in eliminating report errors. Sometimes when setting up a report formula, it can be difficult to enter everything correctly as there can be nested formulas each with their own set of parameters. Many times there are a number of parenthesis, commas, and quotation marks that must be entered correctly. This page shows two tools that help with these formulas: Excel's Function Wizard and Interject's Cell Formula Review.
+Reviewing the Interject report formulas for accuracy is a vital step in eliminating report errors. Sometimes when setting up a report formula, it can be difficult to enter everything correctly as there can be nested formulas each with their own set of parameters. Many times there are a number of parentheses, commas, and quotation marks that must be entered correctly. This page shows two tools that help with these formulas: Excel's Function Wizard and Interject's Cell Formula Review.
 
 ### Getting Started
 
