@@ -10,7 +10,7 @@ description: Event Functions are functions designed to run when a designated eve
 
 Event Functions are functions designed to run when a designated event triggers them. The values defined within the Event Function parameters will determine what event will _enable_ these functions to run. The placement of these functions within the report will determine _when_ these functions will be executed. This allows for synchronization and data precision within the report.
 
-There are four Interject events:
+There are five Interject _events_:
 
 • Pull-Run: This occurs when selecting [**Pull Data**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) from the Pull Data window.
 
@@ -20,7 +20,11 @@ There are four Interject events:
 
 • Save-Clear: This occurs when selecting [**Clear Save Notes**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data) from the Save Data window.
 
-The placement of the Event Function is important to synchronize their execution in relation to other functions. For example, if the function is placed in a cell before a [Data Pull Function](wIndex/Data-Functions-Landing.html) and is set to execute upon a Pull-Run event, then selecting a ""Pull Data"" will cause the Event Function to run first and then the data is pulled via the Data Pull Function. The order of functions is determined row by row. For example, a function in C10 will be ran before a function in B11 because row 10 comes before row 11.
+• Data-Drill: This occurs when selecting a [**Drill on Data**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data) from the Data Drill window.
+
+The placement of the Event Function is important to synchronize their execution in relation to other functions. For example, if the function is placed in a cell before a [Data Pull Function](/wIndex/Data-Functions-Landing.html) and is set to execute upon a Pull-Run event, then selecting a "Pull Data" will cause the Event Function to run first and then the data is pulled via the Data Pull Function. The order of functions is determined row by row. For example, a function in C10 will be ran before a function in B11 because row 10 comes before row 11.
+
+To view detailed information about the functions in your report that are triggered by these events, see [Validation Report](/wTroubleshooting/Validation-Report.html).
 
 There are 6 Interject Event Functions: ReportMacro, ReportRun, ReportCalc, ReportDefaults, ReportGrouping, ReportHideRowOrColumn.
 

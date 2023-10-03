@@ -54,7 +54,7 @@ For an example of this function, see [Working with Pivot Tables](/wGetStarted/L-
 </table>
 </div>
 
-<button class="collapsible-parameter">**OnAction**<br>A string indicating which event(s) will trigger this function (see table [below](/ReportRun.html#function-composition) for events).</button>
+<button class="collapsible-parameter">**OnAction**<br>A string indicating which event(s) will trigger this function (see table [below](#function-composition) for events).</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
