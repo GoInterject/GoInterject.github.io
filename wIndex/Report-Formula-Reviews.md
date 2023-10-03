@@ -29,7 +29,7 @@ Excel's Function Wizard makes it easy to enter formulas inside the report and en
 ![](/images/FormulasReviews/SelectFX.png)
 <br>
 
-The Function Wizard window displays the currently selected formula and all its parameters. It also conveniently display descriptions for the formula and all the parameters. In addition, the result of the formula is displayed (if there are errors in the formula, it will show the error).
+The Function Wizard window displays the currently selected formula and all its parameters. It also conveniently displays descriptions for the formula and all the parameters. In addition, the result of the formula is displayed (if there are errors in the formula, it will show the error).
 
 ![](/images/FormulasReviews/FunctionWizard.png)
 <br>
