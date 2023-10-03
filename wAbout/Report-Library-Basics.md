@@ -24,7 +24,7 @@ Once Interject is installed, an Interject Ribbon will be added to Excel.
 ![](/images/ReportLibraryBasics/1.02GettingtoRL-ClickRL.png)
 <br>
 
-**Step 3:** The Report Library consists of folders and sub-folders, just like a typical folder hierarchy (max two levels deep).
+**Step 3:** The Report Library consists of folders and sub-folders, just like a typical folder hierarchy (max three levels deep).
 
 ![](/images/ReportLibraryBasics/ReportLibrary.png)
 <br>
@@ -42,7 +42,7 @@ Each section of the Report Library is detailed below. Before opening a report fr
 
 ### Folders Section
 
-The Folders section of the Report Library contains a hierarchy of folders (max two folders deep). You can expand or collapse any folder.
+The Folders section of the Report Library contains a hierarchy of folders (max three folders deep). You can expand or collapse any folder.
 
 ![](/images/ReportLibraryBasics/ReportLibraryFoldersSection.png)
 <br>
