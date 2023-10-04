@@ -8,7 +8,7 @@ description: The data integrity of Interject installation files can be verified 
 
 ## Overview
 
-The data integrity of Interject installation files can be verified by comparing its checksum. Interject creates csv files containing the official checksum of the installation file. To verify an installer, you can generate a checksum for the file and compared it with the official checksum.
+The data integrity of Interject installation files can be verified by comparing its checksum. Interject creates csv files containing the official checksum of the installation file. To verify an installer, you can generate a checksum for the file and compare it with the official checksum.
 
 To obtain the official checksum for our installation files, please contact us at [security@gointerject.com](mailto:info@gointerject.com).
 
@@ -35,5 +35,5 @@ If the checksums do not match or you cannot obtain an official checksum for your
 <br>
 
 <blockquote class=highlight_note>
-<b>Note:</b> This checksum verification does not validate if files have been tampered with post-installation. It only verifies if the installer itself has been tampered with. Phishing with fake installers is more a concern then a virus that modifies interject files post-installation. Thus this method is just the first step towards security optimization.
+<b>Note:</b> This checksum verification does not validate if files have been tampered with post-installation. It only verifies if the installer itself has been tampered with. Phishing with fake installers is a bigger concern than a virus that modifies interject files post-installation. Thus this method is just the first step towards security optimization.
 </blockquote>
