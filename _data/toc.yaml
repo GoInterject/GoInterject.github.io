@@ -390,7 +390,7 @@ Developer:
   section:
   - title: TLS for HTTPS
     path: /wAbout/TLS.html
-  - title: Installer Validation
+  - title: Checksums for Installers
     path: /wDeveloper/InstallerValidation.html
   - title: Macro Security
     path: /wIndex/MacroSecurity.html

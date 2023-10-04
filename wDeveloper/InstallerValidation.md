@@ -1,7 +1,7 @@
 ---
-title: Installer Validation
+title: Checksums for Installers
 layout: custom
-keywords: [checksum, Get-FileHash, hash, algorithm, value]
+keywords: [checksum, validation, file integrity, Get-FileHash, hash, algorithm, value]
 description: The data integrity of Interject installation files can be verified by comparing its checksum. Interject creates csv files containing the official checksum of the installation file. To verify an installer, you can generate a checksum for the file and compared it with the official checksum.
 ---
 * * *
