@@ -392,6 +392,8 @@ Developer:
     path: /wAbout/TLS.html
   - title: Checksums for Installers
     path: /wDeveloper/InstallerValidation.html
+  - title: Conditional Access
+    path: /wDeveloper/ConditionalAccess.html
   - title: Macro Security
     path: /wIndex/MacroSecurity.html
   - title: Enterprise Login Setup
