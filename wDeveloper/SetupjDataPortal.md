@@ -47,6 +47,15 @@ Enter "Market" for the Company Name filter and Pull the data.
 
 The **DataResultNumber** is the second parameter for the jDataPortal. This parameter specifies the particular data set you want returned. For instance, if the stored procedure for the data portal returns three queries, entering 2 for this parameter will return the second query to your report.
 
+You can also enter negative numbers to specify the query in relation to the last query. For example, -1 will return the last query listed in your stored procedure. To illustrate, the following chart shows an example for a stored procedure returning four data sets:
+
+| Query<br>Position | Postive<br>Reference | Negative<br>Reference |
+|---|---|---|
+| Query 1 | 1 | -4 |
+| Query 2 | 2 | -3 |
+| Query 3 | 3 | -2 |
+| Query 4 | 4 | -1 |
+
 ### Order By
 
 The **OrderBy** parameter accepts a valid SQL statement that will be applied to the data result. In this section you will add a value for this parameter in order to order the results.
@@ -59,7 +68,7 @@ First select the jDataPortal function by putting the cursor inside the name and 
 In the **OrderBy** field, enter:
 
 ```
-"\[CustomerName] DESC"
+"[CustomerName] DESC"
 ```
 
 ![](/images/SetupjDataPortal/AddOrderBy.png)
@@ -77,7 +86,7 @@ Like the **OrderBy** parameter, the **Filter** parameter also accepts a valid SQ
 Bring up the Function Wizard again and for the **Filter** parameter, enter
 
 ```
-\"[ContactTitle] LIKE '%Manager%'"
+"[ContactTitle] LIKE '%Manager%'"
 ```
 
 ![](/images/SetupjDataPortal/AddFilter.png)
@@ -90,7 +99,7 @@ Pull the data again and notice the results are filtered to only included entries
 
 ### Overriding a Connection
 
-With the **ConnectionOverride** parameter, a jDataPortal function can use a different Interject [Data Connection](/wPortal/Data-Connections.html) when accessing the Data Portal. Making the same Data Portal for different connections is redundant. This parameter makes it possible to feature one Data Portal with many different possible connections and thus accommodate your unique reporting needs.
+With the **ConnectionOverride** parameter, a jDataPortal function can use a different Interject [Data Connection](/wPortal/Data-Connections.html) when accessing the Data Portal. Making the same Data Portal for different connections is redundant. This parameter makes it possible to host one Data Portal with many different possible connections and thus accommodate your unique reporting needs.
 
 To use, simply enter the name of the connection from the Portal site that you want to use:
 
