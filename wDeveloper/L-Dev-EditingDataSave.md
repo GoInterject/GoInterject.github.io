@@ -1,5 +1,5 @@
 ---
-title: "Develop: Customer Aging Simple Save"
+title: "Develop: Editing Data Save"
 layout: custom
 keywords: [developer, example, walkthrough, SQL, SSMS, Data Portal, data connection, data save]
 description: In this example you will create a simple data save using the Customer Aging Detail report and the Northwind Customers data source.
@@ -8,9 +8,23 @@ description: In this example you will create a simple data save using the Custom
 
 ## Overview
 
-In this example you will build from the previous report where you built a [Data Pull](/wGetStarted/L-Dev-CustomerAging.html). Here, you will create a data portal to save the data using the Interject function [ReportSave](/wIndex/ReportSave.html). This function makes it convenient to modify the data source right inside of your Excel report without having to edit the data source directly.
+In this example you will build from the previous report where you built a [Data Pull](/wGetStarted/L-Dev-CustomerAging.html). Here, you will walkthrough the steps in order to [Save Data](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data) using the Interject function [ReportSave](/wIndex/ReportSave.html). This function makes it convenient to modify the data source right inside of your Excel report without having to edit the data source directly.
 
-For this simple Data Save, you will set up a save and modify the report to save a customer's contact name and title and add a Stored Procedure (SP) to handle the save.
+In this Editing Data Save example, you will set up a data save that will allow you to edit a customer's contact name and title right from within the Excel report. 
+
+
+**Note:** The Customer Aging Report used in this example is a report that displays a customer's outstanding balances. It is not normally used to edit a customer directly. However, for this walkthrough demonstration purpose, you will modify the report in order to do so.
+
+This walkthrough involves 6 main steps:
+
+1. [Set up a Data Connection](#setting-up-the-data-connection) ([completed already](/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection))
+2. [Set up a Data Portal](#setting-up-the-data-portal)
+3. [Modify the report to handle the save](#setting-up-the-report)
+4. [Set up the ReportSave function](#setting-up-the-reportsave-function)
+5. [Set up the Stored Procedures (SP) to handle the save](#setting-up-the-stored-procedure)
+6. [Test the Stored Procedure &amp; ReportSave](#testing-the-stored-procedure)
+
+<br>
 
 <blockquote class=highlight_note>
 <b>Note:</b> This example uses Microsoft's Northwind Database. You can download this database <a href="https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases">here</a> or you can use this example as a guide for your own data source.

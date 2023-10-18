@@ -1,5 +1,5 @@
 ---
-title: "Develop: Customer Aging Advanced Data Save"
+title: "Develop: Insert &amp; Delete Data Save"
 layout: custom
 keywords: [developer, example, walkthrough, SQL, SSMS, Data Portal, data connection, data save, insertions, deletions]
 description: In this example you will modify the simple data save using the Customer Aging Detail report and the Northwind Customers data source to add or delete a customer.
@@ -8,7 +8,20 @@ description: In this example you will modify the simple data save using the Cust
 
 ## Overview
 
-In this example you will modify the previous [save](/wDeveloper/L-Dev-SimpleDataSave.html), which was set up to change a customer's contact name and title. In this Advanced Data Save, you will modify the Stored Procedure (SP) to save all the columns. You will also include the ability to insert or delete a customer from within the Excel report.
+In this example you will modify the previous [Editing Data Save](/wDeveloper/L-Dev-SimpleDataSave.html), which was set up to edit a customer's contact name and title. In this Insert &amp; Delete Data Save, you will walkthrough the steps to edit all the columns. In addition, you will also include the ability to insert or delete a customer from within the Excel report.
+
+**Note:** The Customer Aging Report used in this example is a report that displays a customer's outstanding balances. It is not normally used to edit, insert, or delete a customer directly. However, for this walkthrough demonstration purpose, you will modify the report in order to do so.
+
+This walkthrough involves 6 main steps:
+
+1. [Set up a Data Connection](#setting-up-the-data-connection) ([completed already](/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection))
+2. [Set up a Data Portal](#setting-up-the-data-portal)
+3. [Modify the report to handle the save](#setting-up-the-report)
+4. [Setting up the soft delete](#setting-up-the-soft-delete)
+5. [Set up the Stored Procedure (SP) to handle the save](#setting-up-the-stored-procedure)
+6. [Test the Stored Procedure &amp; ReportSave](#testing-the-stored-procedure)
+
+<br>
 
 <blockquote class=highlight_note>
 <b>Note:</b> This example uses Microsoft's Northwind Database. You can download this database <a href="https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases">here</a> or you can use this example as a guide for your own data source.
