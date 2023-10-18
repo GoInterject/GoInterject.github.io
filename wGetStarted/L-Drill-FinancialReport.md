@@ -1,46 +1,65 @@
 ---
 title: "Drill: Financial Report"
 layout: custom
-keywords: [drill, financials, pair, pairgroup, Interject_JEQuery, segments, PL Trend, walkthrough]
+keywords: [drill, financials, pair, pairgroup, Interject_JEQuery, segments, PL Trend, walkthrough, data drill codes]
 description: This is a drill for the PL Trend report that was created in a previous walkthrough. This time you will be drilling to a separate workbook instead of to another worksheet.
 ---
 * * *
 
 ## Overview
 
-For this drill example you will use the **PL Trend** that was previously reviewed in the [Financial Report - Walkthrough](/wAbout/Financial-Report.html) . This time you will be drilling to a separate workbook instead of drilling to another worksheet in the same workbook. This can be very useful when there is a common report, such as one that shows general ledger detail, that can be used as a drill from several different reports and workbooks. You will be viewing that same example with the JE (Journal Entry) Query drill report.
+For this drill example you will use the **PL Trend** report that was previously featured in the [Financial Report - Walkthrough](/wAbout/Financial-Report.html). For this example, you will set up a [ReportDrill](/wIndex/ReportDrill.html) function to drill to a _separate_ workbook. This can be very useful when there is a common report, such as one that shows general ledger detail, that can be used as a drill from several different reports and workbooks. You will be viewing that same example with the JE (Journal Entry) Query drill report.
 
 <blockquote class=lab_info>
  If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 4 Drilling To Data > Lab 4.3 Financial Report.
 </blockquote>
 
-### Unfreezing the Report
+### Opening the Report
 
-**Step 1:** For this example you will be using a modified PL trend report. This report has been prepared specifically for this exercise.
+For this example you will be using the PL trend report found in the Interject Financials subscriptions.
+
+![](/images/L-Drill-Financial/PLTrendReport.png)
+<br>
 
 ![](/images/L-Drill-Financial/01.png)
 <br>
 
-**Step 2:** To unfreeze the panels, go to the **View** tab, find the **Freeze Pane** option, and select **Unfreeze Panes**.
+### Unfreezing the Report
 
-![](/images/L-Drill-Financial/02.png)
+To unfreeze the panels, click on **Quick Tools** from the Interject tab. Then select **PANES: Freeze/Unfreeze Panes** and click **Run and Close**.
+
+![](/images/L-Drill-Financial/UnfreezePanes.png)
 <br>
 
-**Step 3:** For this example, type in **7002** for the location in M21. And type **2002-05** for the month in cell M22.
+### Set Up the Report
+
+If you scroll up, you will find that there are already drills set up in this report.
+
+![](/images/L-Drill-Financial/DrillsPresent.png)
+<br>
+
+You will delete these drills in order to gain the experience of setting this drill up manually.
+
+Clear the drills and delete row 18.
+
+![](/images/L-Drill-Financial/ClearDrills.png)
+<br>
+
+Next, type in **7002** for the location in M21. And type **2002-05** for the month in cell M22.
 
 ![](/images/L-Drill-Financial/03.png)
 <br>
 
 ### Building the Drill
 
-Continue setting up the drill formula.
+Now you will begin to set up the drill.
 
 **Step 1:** In cell G17, type [**=ReportDrill()**](/wIndex/ReportDrill.html). Column G is fairly narrow, but it will simply overlap the cells to the right. Then click the **fx** button as illustrated below to bring up the Function Wizard.
 
 ![](/images/L-Drill-Financial/04.png)
 <br>
 
-**Step 2:** In previous drill exercises you have used the ReportCellToRun argument. That is only for drilling within the same workbook. In this example you are drilling to a separate workbook. Type **Interject_JEQuery** into the ReportCodeToRun argument as seen below. The Drill Code **Interject_JEQuery** was setup previously by adding the code to a Report Library report. You will learn how to setup a Drill Code in the page [Create: Updating the Report Library](/wAbout/ReportLibraryLinks.html) later.
+**Step 2:** In previous drill exercises you have used the **ReportCellToRun** argument. That is only for drilling within the same workbook. In this example you are drilling to a separate workbook. Type **Interject_JEQuery** into the **ReportCodeToRun** argument as seen below. Interject uses drill codes to run drills in a separate workbook. For convenience, this drill code has already been set up in the Report Library report. You will learn how to setup a Drill Code in the next [drill exercise](/wGetStarted/L-Drill-DrillCodes.html).
 
 ![](/images/L-Drill-Financial/05.png)
 <br>

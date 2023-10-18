@@ -16,7 +16,7 @@ In this example, you will be setting up a simple drill to the customer orders hi
 
 ### [Inventory Report](/wGetStarted/L-Drill-InventoryReport.html)
 
-In this example, you will setup a drill between the **Inventory by Category** and **Inventory by Detail** pages of the workbook. Then you will set up a hyperlink for the drill so it's more intuitive for the user.
+In this example, you will set up a drill from the **Inventory by Category** tab to the **Inventory by Detail** tab of the workbook. You will also set up a hyperlink so the drill can be more intuitive to users.
 
 ### [Financial Report](/wGetStarted/L-Drill-FinancialReport.html)
 

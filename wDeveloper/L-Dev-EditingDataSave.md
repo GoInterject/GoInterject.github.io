@@ -1,5 +1,5 @@
 ---
-title: "Develop: Simple Data Save"
+title: "Develop: Editing Data Save"
 layout: custom
 keywords: [developer, example, walkthrough, SQL, SSMS, Data Portal, data connection, data save]
 description: In this example you will create a simple data save using the Customer Aging Detail report and the Northwind Customers data source.
@@ -8,9 +8,23 @@ description: In this example you will create a simple data save using the Custom
 
 ## Overview
 
-In this example you will build from the previous report where you built a [Data Pull](/wGetStarted/L-Dev-CustomerAging.html). Here, you will create a data portal to save the data using the Interject function [ReportSave](/wIndex/ReportSave.html). This function makes it convenient to modify the data source right inside of your Excel report without having to edit the data source directly.
+In this example you will build from the previous report where you built a [Data Pull](/wGetStarted/L-Dev-CustomerAging.html). Here, you will walkthrough the steps in order to [Save Data](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data) using the Interject function [ReportSave](/wIndex/ReportSave.html). This function makes it convenient to modify the data source right inside of your Excel report without having to edit the data source directly.
 
-For this simple Data Save, you will set up a save and modify the report to save a customer's contact name and title.
+In this Editing Data Save example, you will set up a data save that will allow you to edit a customer's contact name and title right from within the Excel report. 
+
+
+**Note:** The Customer Aging Report used in this example is a report that displays a customer's outstanding balances. It is not normally used to edit a customer directly. However, for this walkthrough demonstration purpose, you will modify the report in order to do so.
+
+This walkthrough involves 6 main steps:
+
+1. [Set up a Data Connection](#setting-up-the-data-connection) ([completed already](/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection))
+2. [Set up a Data Portal](#setting-up-the-data-portal)
+3. [Modify the report to handle the save](#setting-up-the-report)
+4. [Set up the ReportSave function](#setting-up-the-reportsave-function)
+5. [Set up the Stored Procedures (SP) to handle the save](#setting-up-the-stored-procedure)
+6. [Test the Stored Procedure &amp; ReportSave](#testing-the-stored-procedure)
+
+<br>
 
 <blockquote class=highlight_note>
 <b>Note:</b> This example uses Microsoft's Northwind Database. You can download this database <a href="https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases">here</a> or you can use this example as a guide for your own data source.
@@ -29,31 +43,31 @@ For the Data Connection for this example, you will use the connection previously
 
 **Step 2:** Enter the following details on setting up the new data portal and click "**CREATE DATA PORTAL**".
 
-* **Data Portal Code:** NorthWindSimpleDataSave
+* **Data Portal Code:** NorthWindSimpleData_Save
 * **Description:** Data portal for simple data save
 * **Category:** Demo
-* **Connection:** NorthWindExampleDB_MyName
+* **Connection:** NorthWindExampleDB_MyName (replace "MyName" with your name)
 * **Command Type:** Stored Procedure
 * **Stored Procedure/Command:** NorthWindSimpleDataSaveSP
 
-Note: You will create the "NorthWindSimpleDataSaveSP" Stored Procedure later.
+**Note:** You will create the "NorthWindSimpleDataSaveSP" Stored Procedure later.
 <br>
 
 ![](/images/L-Dev-SimpleDataSave/DataPortalDetails.png)
 <br>
 
-**Step 3:** After creating the data portal, scroll down and click "**Click here to add a System Parameter**" and ensure the **Interject_RequestContext** parameter is set.
+**Step 3:** After creating the data portal, scroll down and click **Click here to add a System Parameter** and ensure the **Interject_RequestContext** parameter is set.
 
 ![](/images/L-Dev-SimpleDataSave/AddSystemParameter.png)
 <br>
 
-The System Parameter "Interject_RequestContext" will transfer contextual data to the Stored Procedure you will set up later. In this example you will not need this info but it is a good practice to set this parameter for all your Stored Procedures. In addition, the auto generated template that will be used in this example uses this parameter.
+The System Parameter [Interject_RequestContext](/wIndex/Request-Context-Parse.html) will transfer contextual data to the Stored Procedure you will set up later. In this example you will not need this info but it is a good practice to set this parameter for all your Stored Procedures.
 
 ## Setting up the Report
 
 Begin by opening up the report that was completed in the [Data Pull](/wGetStarted/L-Dev-CustomerAging.html#create-the-report). You will modify this report to set up the ReportSave.
 
-**Step 1:** Ensure "Market" is entered as a Company Name filter and pull the data:
+**Step 1:** Ensure **Market** is entered as a Company Name filter and pull the data:
 
 ![](/images/L-Dev-SimpleDataSave/PullData.png)
 <br>
@@ -80,9 +94,9 @@ Begin by opening up the report that was completed in the [Data Pull](/wGetStarte
 
 **Step 6:** Set up the configuration section:
 
-1. Entering "\[clear]" in the last column (This will clear the messages when pulling)
-2. Clear all values in row 4 except the "CustomerID", "ContactName" and "ContactTitle" (These are the column names that will be used to save to the data source)
-3. Enter "MessageToUser" in the last column on row 6 (The save will return a message in this column if necessary)
+1. Enter **\[clear]** in the last column (This will clear the messages when pulling)
+2. Clear all values in row 4 except the **CustomerID**, **ContactName** and **ContactTitle** (These are the column names that will be used to save to the data source)
+3. Enter **MessageToUser** in the last column on row 6 (The save will return a message in this column if necessary)
 4. Add a row below the row containing the **ReportRange** function (You will add the ReportSave function on this new row)
 
 ![](/images/L-Dev-SimpleDataSave/SetupConfigSection.png)
@@ -92,17 +106,17 @@ Begin by opening up the report that was completed in the [Data Pull](/wGetStarte
 
 The only thing left to set up in this report is the actual ReportSave function.
 
-**Step 1:** Click on the cell below the "ReportRange" function and enter "=ReportSave()" and click the "fx" button to bring up the Function Wizard:
+**Step 1:** Click on the cell below the "ReportRange" function and enter **=ReportSave()** and click the **fx** button to bring up the Function Wizard:
 
 ![](/images/L-Dev-SimpleDataSave/FunctionWizard.png)
 <br>
 
 **Step 2:** Enter the following details in the Function Wizard:
 
-1. **DataPortal:** Enter the Data Portal you set up in the [beginning](/wGetStarted/L-Dev-SimpleDataSave.html#setting-up-the-data-portal).
+1. **DataPortal:** Enter the Data Portal you set up in the [beginning](#setting-up-the-data-portal).
 2. **RowDefRange:** This range defines the unique keys in the data source for each row. In this case it is the CustomerID. Enter the single column range for the CustomerIDs and be sure to select one row beyond the last ID (to allow expansion).
-3. **ColDefRange:** Enter "4:4". This range contains the columns that will be saved.
-4. **ResultsRange:** Enter "6:6". This range represents the return message to the user.
+3. **ColDefRange:** Enter **4:4**. This range contains the columns that will be saved.
+4. **ResultsRange:** Enter **6:6**. This range represents the return message to the user.
 
 ![](/images/L-Dev-SimpleDataSave/FunctionWizardFilled2.png)
 <br>
@@ -430,13 +444,13 @@ GO
 
 ## Modifying the Stored Procedure
 
-The SQL auto generated template by Interject is formatted based on the ReportSave function within your report. It includes the definitions you set in that function to build the Stored Procedure (SP). It also includes some example code. Some of this code you may choose to use depending on your purposes but other code you will not need and can delete. The following walks you through the major sections of the code with instructions on the changes. Deletions are marked with red highlight, changes are marked in yellow.
+The SQL auto generated template by Interject is formatted based on the ReportSave function within your report. It includes the definitions you set in that function to build the Stored Procedure. It also includes some example code. Some of this code you may choose to use depending on your purposes but other code you will not need and can delete. The following walks you through the major sections of the code with instructions on the changes. Deletions are marked with red highlight, changes are marked in yellow.
 
 ### Parameters
 
-There are 2 parameters in the SP. The first one "Interject_RequestContext" was the System Parameter you set up in the Data Portal. Again, this XML contextual information will be passed by Interject to the SP upon execution.
+There are 2 parameters in the SP. The first one, "Interject_RequestContext", was the System Parameter you set up [previously](#add-the-requestcontext_parse-stored-procedure) in the Data Portal. Again, this XML contextual information will be passed by Interject to the SP upon execution.
 
-The second parameter is a "TestMode" bit. If you are testing, you can set the value to 1 to print out detailed information upon execution. This will also rollback any changes so your database remains unchanged.
+The second parameter is a "TestMode" bit. If you are testing, you can set the value to 1 to print out detailed information upon execution. This will also rollback any changes so your database remains unchanged during testing.
 
 ![](/images/L-Dev-SimpleDataSave/SPParams.png)
 <br>
@@ -979,7 +993,7 @@ FinalResponseToUser:
 
 ## Testing the Stored Procedure
 
-Now you can test the SP by using the [test code](/wGetStarted/L-Dev-SimpleDataSave.html#testing). For example, make a change to the data in the test code and execute the test. Because the "@TestMode" bit is set to 1, it will display all kinds of information about the SP process. Notice the changes and message to user that would be displayed.
+Now you can test the SP by using the [test code](#testing). For example, make a change to the data in the test code and execute the test. Because the "@TestMode" bit is set to 1, it will display all kinds of information about the SP process. Notice the changes and message to user that would be displayed.
 
 ![](/images/L-Dev-SimpleDataSave/TestingSP.png)
 <br>

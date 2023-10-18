@@ -372,13 +372,13 @@ Developer:
     section:
     - title: "Develop: Customer Aging Detail"
       path: /wGetStarted/L-Dev-CustomerAgingDetail.html
-  - sectiontitle: Simple Data Save
-    path: /wGetStarted/Simple-Data-Save.html
+  - sectiontitle: Data Save
+    path: /wDeveloper/L-Dev-EditingDataSave.html
     section:
-    - title: "Develop: Customer Credit Save"
-      path: /wGetStarted/L-Dev-CustomerCreditSave.html
-    - title: "Develop: Northwind Pull and Save"
-      path: /wGetStarted/L-Dev-NorthwindPullSave.html
+    - title: "Develop: Editing Data Save"
+      path: /wDeveloper/L-Dev-EditingDataSave.html
+    - title: "Develop: Insert & Delete Data Save"
+      path: /wDeveloper/L-Dev-InsertDeleteDataSave.html
   - title: Security Best Practices
     path: /wGetStarted/Security-Best-Practices.html
   - title: Managing Settings Cache

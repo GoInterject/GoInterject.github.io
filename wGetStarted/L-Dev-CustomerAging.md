@@ -51,11 +51,11 @@ On this page, you will create a simple data pull using the Customer Aging Report
 ![](/images/L-Dev-CustAging/06.png)
 <br>
 
-The Database Data Connection is now ready to be used in a Data Portal. You should always test a new connection with your security context. Follow the steps in [Data Connections](/wPortal/Data-Connections.html) to test your connection string.
+The Database Data Connection is now ready to be used in a Data Portal. You should always test a new connection with your security context. Follow the steps in [Database Connection](/wPortal/L-Database-Connection.html#testing-the-connection-string-from-within-excel) to test your connection string.
 
 ### Setting up the Data Portal
 
-**Step 1:** To add a new data portal, return to [https://portal.gointerject.com](https://portal.gointerject.com) and select Data Portals from the sidebar menu.
+**Step 1:** To add a new data portal, return to [https://portal.gointerject.com](https://portal.gointerject.com) and select **Data Portals** from the sidebar menu.
 
 ![](/images/L-Dev-CustAging/07.jpg)
 <br>
@@ -65,7 +65,7 @@ The Database Data Connection is now ready to be used in a Data Portal. You shoul
 ![](/images/L-Dev-CustAging/08.jpg)
 <br>
 
-**Step 3:** Type **NorthwindCustomers_MyName** for the Data Portal Code. Since this field must be unique, add your name to the suffix. Select the connection that was made in the previous step, **NorthwindExampleDB_MyName**. Also enter a name for the stored procedure **[demo].[Northwind_Customers_Pull_MyName]**, which will be created later.
+**Step 3:** Type **NorthwindCustomers_MyName** for the Data Portal Code. Since this field must be unique, replace "MyName" with your name. Select the connection that was made in the [previous step](#setting-up-the-data-connection). Also enter a name for the stored procedure **[demo].[Northwind_Customers_Pull_MyName]**, which will be created later. Again, replace "MyName" with your name.
 
 ![](/images/L-Dev-CustAging/09.png)
 <br>
@@ -75,7 +75,7 @@ The Database Data Connection is now ready to be used in a Data Portal. You shoul
 ![](/images/L-Dev-CustAging/10.png)
 <br>
 
-**Note:** If this is your first time setting up a data portal, review [**Data Portals**](/wPortal/Data-Portals.html), which describes the data portal parameters in more detail, including the difference between formula and system parameters. Return to the next step to continue.
+**Note:** If this is your first time setting up a data portal, review [**Data Portals**](/wPortal/Data-Portals.html), which describes the data portal parameters in more detail, including the difference between formula and system parameters. Proceed to the next step to continue.
 
 ### Setting up Formula Parameters
 
@@ -89,12 +89,12 @@ The Database Data Connection is now ready to be used in a Data Portal. You shoul
 ![](/images/L-Dev-CustAging/12.jpg)
 <br>
 
-**Step 3:** As shown in the screenshot below, enter **Market** for Helper Default and **Search is a wildcard that contains search** for Comments. Click the Save icon.
+**Step 3:** As shown in the screenshot below, enter **Market** for Helper Default and **Search is a wildcard that contains search** for Comments. Click the **Save** icon.
 
 ![](/images/L-Dev-CustAging/13.jpg)
 <br>
 
-**Note:** When you set up a formula parameter, the Save icon is red until you save your changes. After your changes are saved, the Save icon turns green.
+**Note:** When you set up a formula parameter, the **Save** icon is red until you save your changes. After your changes are saved, the **Save** icon turns green.
 
 **Step 5:** Click the **Click here to add a Formula Parameter** to add the second parameter. Enter **ContactName** for Name, **varchar** for Type, and **input** for Direction.
 
@@ -106,7 +106,7 @@ The Database Data Connection is now ready to be used in a Data Portal. You shoul
 ![](/images/L-Dev-CustAging/15.jpg)
 <br>
 
-Enter **Contact Name** for Helper Name and **Search is a wildcard that contains search** for Comments. Click the Save icon.
+Enter **Contact Name** for Helper Name and **Search is a wildcard that contains search** for Comments. Click the **Save** icon.
 
 ![](/images/L-Dev-CustAging/16.jpg)
 <br>
@@ -121,7 +121,7 @@ Enter **Contact Name** for Helper Name and **Search is a wildcard that contains 
 ![](/images/L-Dev-CustAging/18.jpg)
 <br>
 
-Enter **Customer ID** for Helper Name and **The customer ID is an exact search that will be used by the drill** for Comments. Click the Save icon.
+Enter **Customer ID** for Helper Name and **The customer ID is an exact search that will be used by the drill** for Comments. Click the **Save** icon.
 
 ![](/images/L-Dev-CustAging/19.jpg)
 <br>
@@ -150,7 +150,7 @@ The Interject Website Portal allows you to create and manage Data Portals and re
 
 The below steps assume you are proficient with SQL Management Studio for Microsoft SQL Server and in creating stored procedures. If you need additional training in this area, please contact us at [info@gointerject.com](mailto:info@gointerject.com).
 
-**Step 1:** Create a stored procedure called [demo].[Northwind_Customers_Pull_MyName] using the following code example.
+**Step 1:** Create a stored procedure called [demo].[Northwind_Customers_Pull_MyName] using the following code example (replace "MyName" with your name):
 
 <button class = "collapsible"> \[demo\].\[Northwind_Customers_Pull_MyName\] </button>
 
@@ -180,7 +180,7 @@ BEGIN
  RETURN		
 END
 
---CREATE CTE to consolidate the invoice data into seperate categories based on date
+--CREATE CTE to consolidate the invoice data into separate categories based on date
 ;WITH Invoice_CTE
 AS
 (
@@ -242,24 +242,24 @@ END
 
 </div>
 
-**Step 2:** Stored procedure are natively supported by Interject. There are a few key areas to note in the code example that help illustrate Interject features.
+**Step 2:** Stored procedures are natively supported by Interject. There are a few key areas to note in the code example that help illustrate Interject features.
 
-* Parameters: The parameters included in the stored procedure are the same added to the Data Portal in a previous step. On each request, Interject passes the Formula Parameters values from the spreadsheet configuration along with System Parameters to the stored procedure. Output parameters are supported which can populate values in the spreadsheet but they are not included in this example.
+* **Parameters:** The parameters included in the stored procedure are the same that were added to the Data Portal in the previous steps. On each request, Interject passes the Formula Parameters values from the spreadsheet configuration along with System Parameters to the stored procedure. Output parameters are supported which can populate values in the spreadsheet but they are not included in this example.
 
 ![](/images/L-Dev-CustAging/21.png)
 <br>
 
-* Validation: The example code includes an example of validating the input from Formula Parameter **@CustomerName**. It limits the search text to 40 characters and will raise an error if the length is beyond. The custom error shown has a prefix **UserNotice:** which tells Interject to provide a message box with the text to the user as a response. Without the prefix, Interject will interpret the error as a generic error.
+* **Validation:** The example code includes an example of validating the input for the **@CompanyName** parameter. It limits the search text to 40 characters and will raise an error if the length is beyond. The custom error shown has a prefix **Usernotice:**,which is a keyword that tells Interject to provide a message box with the text to the user as a response. Without this prefix, Interject will interpret the error as a generic error.
 
 ![](/images/L-Dev-CustAging/22.png)
 <br>
 
-* Select statements: Returning data to Interject simply uses a select statement as shown below. More than one can be returned at a time to reduce the connections needed to fully populate a complex report. You only have one select statement in this example.
+* **Select Statements:** Returning data to Interject simply uses a select statement as shown below. More than one can be returned at a time to reduce the connections needed to fully populate a complex report. You only have one select statement in this example.
 
 ![](/images/L-Dev-CustAging/23.png)
 <br>
 
-**Step 3:** It is important to test the stored procedure in the database before testing through the Interject platform. The example code included a test SQL statement that can be executed in a new query as shown below. Be sure to change the procedure name to match your own.
+**Step 3:** It is important to test the stored procedure in the database before testing through the Interject platform. The following example code is a SQL statement that can be executed in a new query. Be sure to change the procedure name to match your own.
 
 <button class="collapsible">Example Test Script</button>
 <div markdown="1" class="panel">
@@ -282,13 +282,13 @@ When executed you should see the following result set.
 
 ### Create the Report
 
-At this point you have a tested stored procedure that uses parameters to filter the results. An Interject Data Connection is setup to go to your example database and you added an Interject Data Portal to use that connection and is mapped to the stored procedure that was just created. You are ready to build the spreadsheet report.
+At this point you have a tested stored procedure that uses parameters to filter the results. An Interject Data Connection has been set up to go to your example database and you added an Interject Data Portal to use that connection. In addition, this Portal is mapped to the stored procedure that was just created. Now you are ready to build the spreadsheet report.
 
-Fortunately, the documentation to build this report has already been presented in [Create: Customer Aging](https://docs.gointerject.com/wGetStarted/L-Create-CustomerAging.html) and you likely have already completed it. The end result should look like the below screenshot.
+Fortunately, the documentation to build this report has already been presented in [Create: Customer Aging](/wGetStarted/L-Create-CustomerAging.html) and you likely have already completed it. However, it is recommended to refamiliarize yourself with setting up this report again to reinforce the process. Just be sure to use your own Data Portal that you just set up for the report.
+
+The end result should look like the screenshot below.
 
 ![](/images/L-Dev-CustAging/25.png)
 <br>
 
-It is recommended to go to [Create: Customer Aging](https://docs.gointerject.com/wGetStarted/L-Create-CustomerAging.html) to complete those steps again to reinforce the process. However, this time you can use your own Data Portal for the report.
-
-When going through the report creation steps, be sure to use your new Data Portal Code instead of the one used in the training. Please continue to the next example after your new report is built.
+Now that this Data Pull has been completed, please continue to the [next example](/wGetStarted/L-Dev-CustomerOrders.html).
