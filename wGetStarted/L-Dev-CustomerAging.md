@@ -259,7 +259,7 @@ END
 ![](/images/L-Dev-CustAging/23.png)
 <br>
 
-**Step 3:** It is important to test the stored procedure in the database before testing through the Interject platform. The following example code is an SQL statement that can be executed in a new query. Be sure to change the procedure name to match your own.
+**Step 3:** It is important to test the stored procedure in the database before testing through the Interject platform. The following example code is a SQL statement that can be executed in a new query. Be sure to change the procedure name to match your own.
 
 <button class="collapsible">Example Test Script</button>
 <div markdown="1" class="panel">
