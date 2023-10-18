@@ -2,13 +2,13 @@
 title: "Drill: Inventory Report"
 layout: custom
 keywords: [drill, report, hyperlinks, walkthrough]
-description: In this example, you will view drilling between reports using the same Inventory reports created during the Real World Inventory Walkthrough.
+description: In this example, you will view drilling between reports using the same Inventory reports created during the Real World Inventory Walkthrough. You will set up a drill from the Inventory by Category tab to the Inventory by Detail tab of the workbook. You will also set up a hyperlink so the drill can be more intuitive to users.
 ---
 * * *
 
 ## Overview
 
-In this example, you will view drilling between reports using the same Inventory reports created during the [Real World Inventory Walkthrough](/wAbout/Inventory-Reports.html). You will setup a drill between the **Inventory by Category** and **Inventory by Detail** pages of the workbook, then you will set up a hyperlink so the drill can be more intuitive to users.
+In this example, you will view drilling between reports using the same Inventory reports created during the [Real World Inventory Walkthrough](/wAbout/Inventory-Reports.html). You will set up a drill from the **Inventory by Category** tab to the **Inventory by Detail** tab of the workbook. You will also set up a hyperlink so the drill can be more intuitive to users.
 
 <blockquote class=lab_info>
  If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 4 Drilling To Data > Lab 4.2 Inventory Report.
