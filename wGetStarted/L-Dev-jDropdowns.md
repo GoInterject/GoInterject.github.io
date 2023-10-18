@@ -8,9 +8,11 @@ description: Walks through how to create the stored procedures for the jDropdown
 
 ## Overview
 
- If you are looking to build custom jDropdown stored procedures for your reports then this example will walk you through just that. But first, remember that a jDropdown formula often requires a separate stored procedure from the one used by the pull or save. You will walk through how to build the data connection, Data Portal, and stored procedure for the [jDropdown example](/wGetStarted/L-Create-Dropdowns.html) built on the Customer Aging report. This stored procedure is designed to filter down on the specific options for a parameter. include all the columns that can be used as filter values in the report.
+ If you are looking to build custom jDropdown stored procedures for your reports, then this example will walk you through just that. But first, remember that a jDropdown formula often requires a separate stored procedure from the one used by a data pull or save. You will walk through how to build the Data Connection, Data Portal, and stored procedure for the [jDropdown example](/wGetStarted/L-Create-Dropdowns.html) built on the Customer Aging report. This stored procedure is designed to filter down on the specific options for a parameter. Include all the columns that can be used as filter values in the report.
 
-> **IMPORTANT:** It is required that you have access to build stored procedures in your database to complete this example.
+<blockquote class=highlight_note>
+<b>Note:</b> It is required that you have access to build stored procedures in your database to complete this example.
+</blockquote>
 
 ### Setting up the Data Connection
 

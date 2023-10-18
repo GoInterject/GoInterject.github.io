@@ -8,9 +8,15 @@ description: The jDropdown formula is used for filtering on multiple parameters.
 
 ## Overview
 
-When manually entering different filter values, it can be difficult to remember what the exact filter names are and which are even available. This is especially true in large reports with many filtering options. However, you can use Interject's jDropdown formula to automatically create hyperlinked lists of available filters, which makes filtering in large reports a much simpler task. In this example you will modify the [Customer Aging report](/wGetStarted/L-Create-CustomerAging.html) by adding the jDropdown functionality to one of the filters, while using an existing Data Portal.
+Interject reports typically have parameters that can be passed to a stored procedure that can filter the data. It can be difficult to remember what the exact filter names are and which are even available for the stored procedure. This is especially true in large reports with many filtering options. However, you can use Interject's [jDropdown](/wIndex/jDropdown.html) formula to automatically create hyperlinked lists of available filters. This makes filtering in large reports a much simpler task! 
 
-> **IMPORTANT:** The jDropdown feature requires a stored procedure to operate. In the event that you cannot create a stored procedure, you can reuse a Data Portal from the report formula that populates the report in which you want to use this feature. To learn how to build the database connection, Data Portal, and stored procedure used in this example, follow the instructions in the [developer example](/wGetStarted/L-Dev-jDropdowns.html). Otherwise contact your IT department to help implement this functionality.
+In this example you will modify the [Customer Aging report](/wGetStarted/L-Create-CustomerAging.html) by adding the jDropdown functionality to one of the filters, while using an existing Data Portal.
+
+<blockquote class=highlight_note>
+<b>Note:</b> The jDropdown feature requires a Data Portal with a stored procedure to operate. In the event that you cannot create a stored procedure, you can reuse a Data Portal from the report formula that populates the report in which you want to use this feature. To learn how to build the Database Connection, Data Portal, and stored procedure used in this example, follow the instructions in the <a href="https://docs.gointerject.com/wGetStarted/L-Dev-jDropdowns.html">developer example</a>. Otherwise contact your IT department to help implement this functionality.
+</blockquote>
+
+<br>
 
 <blockquote class=lab_info>
  If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 5 Advanced Features > Lab 5.3 Building jDropdowns.
