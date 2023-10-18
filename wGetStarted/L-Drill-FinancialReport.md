@@ -8,7 +8,7 @@ description: This is a drill for the PL Trend report that was created in a previ
 
 ## Overview
 
-For this drill example you will use the **PL Trend** that was previously reviewed in the [Financial Report - Walkthrough](/wAbout/Financial-Report.html) . This time you will be drilling to a separate workbook instead of drilling to another worksheet in the same workbook. This can be very useful when there is a common report, such as one that shows general ledger detail, that can be used as a drill from several different reports and workbooks. You will be viewing that same example with the JE (Journal Entry) Query drill report.
+For this drill example you will use the **PL Trend** that was previously reviewed in the [Financial Report - Walkthrough](/wAbout/Financial-Report.html). This time you will be drilling to a separate workbook instead of drilling to another worksheet in the same workbook. This can be very useful when there is a common report, such as one that shows general ledger detail, that can be used as a drill from several different reports and workbooks. You will be viewing that same example with the JE (Journal Entry) Query drill report.
 
 <blockquote class=lab_info>
  If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 4 Drilling To Data > Lab 4.3 Financial Report.

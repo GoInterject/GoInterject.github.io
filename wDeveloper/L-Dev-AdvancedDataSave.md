@@ -1,14 +1,14 @@
 ---
-title: "Develop: Advanced Data Save"
+title: "Develop: Customer Aging Advanced Data Save"
 layout: custom
-keywords: [developer, example, walkthrough, SQL, SSMS, Data Portal, data connection, data save]
+keywords: [developer, example, walkthrough, SQL, SSMS, Data Portal, data connection, data save, insertions, deletions]
 description: In this example you will modify the simple data save using the Customer Aging Detail report and the Northwind Customers data source to add or delete a customer.
 ---
 * * *
 
 ## Overview
 
-In this example you will modify the previous [save](/wGetStarted/L-Dev-SimpleDataSave.html), which was set up to change a customer's contact name and title. In this Advanced Data Save, you will modify the Stored Procedure report to save all the columns. You will also include the ability to insert or delete a customer from within the Excel report.
+In this example you will modify the previous [save](/wDeveloper/L-Dev-SimpleDataSave.html), which was set up to change a customer's contact name and title. In this Advanced Data Save, you will modify the Stored Procedure (SP) to save all the columns. You will also include the ability to insert or delete a customer from within the Excel report.
 
 <blockquote class=highlight_note>
 <b>Note:</b> This example uses Microsoft's Northwind Database. You can download this database <a href="https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases">here</a> or you can use this example as a guide for your own data source.
@@ -30,53 +30,53 @@ For the Data Connection for this example, you will use the connection previously
 * **Data Portal Code:** NorthWindAdvancedDataSave
 * **Description:** Data portal for advanced data save
 * **Category:** Demo
-* **Connection:** NorthWindExampleDB_MyName
+* **Connection:** NorthWindExampleDB_MyName (replace "MyName" with your name)
 * **Command Type:** Stored Procedure
 * **Stored Procedure/Command:** NorthWindAdvancedDataSaveSP
 
-Note: You will create the "NorthWindAdvancedDataSaveSP" Stored Procedure later.
+**Note:** You will create the "NorthWindAdvancedDataSaveSP" Stored Procedure later.
 <br>
 
 ![](/images/L-Dev-AdvancedDataSave/DataPortalDetails.png)
 <br>
 
-**Step 3:** After creating the data portal, scroll down and click "**Click here to add a System Parameter**" and ensure the **Interject_RequestContext** parameter is set.
+**Step 3:** After creating the data portal, scroll down and click **Click here to add a System Parameter** and ensure the **Interject_RequestContext** parameter is set.
 
 ![](/images/L-Dev-AdvancedDataSave/AddSystemParameter.png)
 <br>
 
-The System Parameter "Interject_RequestContext" will transfer contextual data to the Stored Procedure you will set up later. In this example you will not need this info but it is a good practice to set this parameter for all your Stored Procedures. In addition, the auto generated template that will be used in this example uses this parameter.
+The System Parameter [Interject_RequestContext](/wIndex/Request-Context-Parse.html) will transfer contextual data to the Stored Procedure you will set up later. In this example you will not need this info but it is a good practice to set this parameter for all your Stored Procedures.
 
 ## Setting up the Report
 
-Begin by opening up the report that was completed in the [previous data save](/wGetStarted/L-Dev-SimpleDataSave.html#setting-up-the-report). You will modify this report to set up the Advanced Data Save.
+Begin by opening up the report that was completed in the [previous data save](/wDeveloper/L-Dev-SimpleDataSave.html#setting-up-the-report). You will modify this report to set up the Advanced Data Save.
 
 **Step 1:** First click on the cell containing the ReportSave function and change it to match the Data Portal you just set up:
 
 ![](/images/L-Dev-AdvancedDataSave/ChangeReportSaveFunction.png)
 <br>
 
-**Step 2:** Next add the "CompanyName", "Phone", "City", "Country" and "Delete" to the "Column Definition - Save" configuration row so that this data will be saved to the data source:
+**Step 2:** Next add the **CompanyName**, **Phone**, **City**, **Country** and **Delete** to the "Column Definition - Save" configuration row so that this data will be saved to the data source:
 
 ![](/images/L-Dev-AdvancedDataSave/AddColumnDefNames.png)
 <br>
 
-**Step 3:** Next you will add a "Delete?" column to the report. This way if there is a "Yes" marked in this column, the record for that row will be deleted. This prevents the accidental deletion of records if they are missing from the report:
+**Step 3:** Next you will add a **Delete?** column to the report. This way if there is a "Yes" marked in this column, the record for that row will be deleted. This prevents the accidental deletion of records if they are missing from the report:
 
 ![](/images/L-Dev-AdvancedDataSave/AddDeleteColumn.png)
 <br>
 
-Highlight the cells on the new Delete? column and click "Data Validation" to bring up the Data Validation window:
+Highlight the cells on the new **Delete?** column and click **Data Validation** to bring up the Data Validation window:
 
 ![](/images/L-Dev-AdvancedDataSave/ClickDataValidation.png)
 <br>
 
-For the Validation criteria, click on "List" for the Allow field and enter "Yes" for the Source:
+For the Validation criteria, click on **List** for the Allow field and enter **Yes** for the Source:
 
 ![](/images/L-Dev-AdvancedDataSave/DataValidationWindow.png)
 <br>
 
-**Step 4:** Finally, enter "\[clear]" into cell N2 in order for the entries in the Delete column to be cleared out on a pull.
+**Step 4:** Finally, enter **\[clear]** into cell N2 in order for the entries in the Delete column to be cleared out on a pull.
 
 ![](/images/L-Dev-AdvancedDataSave/EnterClear.png)
 <br>
@@ -85,9 +85,9 @@ That's it. The report is now ready to add, delete, or update a customer.
 
 ## Setting up the Soft Delete
 
-There are two main ways to delete a record from a database: a hard delete and a soft delete. A hard delete simply removes the record altogether. A soft delete simply flags the record as deleted. This approach is preferable over a hard delete because you can recover the data easily by switching the flag. The example in this data save uses a soft delete. In order to implement this, you will need to do some setup.
+There are two main ways to delete a record from a database: a hard delete and a soft delete. A hard delete simply removes the record altogether. A soft delete simply flags the record as deleted. This approach is preferable over a hard delete because you can recover the data easily by switching the flag. The example in this data save uses a soft delete. In order to implement this, you will need to set up a column in the targeted data table that will store a boolean "IsDeleted" value to distinguish which records have been soft deleted.
 
-**Step 1:** Execute the following SQL to add a "IsDeleted" column to the table that you are saving to:
+**Step 1:** Execute the following SQL to add a **IsDeleted** column to the table that you are saving to:
 
 ```sql
 ALTER TABLE dbo.Northwind_Customers
@@ -100,21 +100,23 @@ ADD IsDeleted BIT
 UPDATE dbo.Northwind_Customers SET IsDeleted = 0
 ```
 
-**Step 3:** Next, since you don't want to allow nulls for this flag, set the "IsDeleted" column to Not Null by executing the following SQL:
+**Step 3:** Next, since you don't want to allow nulls for this flag, set the **IsDeleted** column to "Not Null" by executing the following SQL:
 
 ```sql
 ALTER TABLE dbo.Northwind_Customers
 ALTER COLUMN IsDeleted bit NOT NULL
 ```
 
-**Step 4:** Lastly, in order to only pull records that are not deleted, you will need to add the following line to the Stored Procedure that pulls the data for this report:
+**Step 4:** Lastly, in order to only pull records that are not deleted, you will need to add the following line to the Stored Procedure [previously set up](/wGetStarted/L-Dev-CustomerAging.html#creating-the-stored-procedure) that pulls the data for this report:
 
 ![](/images/L-Dev-AdvancedDataSave/AddIsDeletedToPullSP.png)
 <br>
 
 ## Setting up the Stored Procedure
 
-Next you will created a new Stored Procedure that builds from the [previous save](/wGetStarted/L-Dev-SimpleDataSave.html#modifying-the-stored-procedure). Open up your data source and open up a new query and paste the previous Stored Procedure. (Note the code for testing the SP has been removed. It will be handled [later](/wGetStarted/L-Dev-AdvancedDataSave.html#testing-the-stored-procedure)):
+Next you will created a new Stored Procedure that builds from the [previous save](/wDeveloper/L-Dev-SimpleDataSave.html#modifying-the-stored-procedure). To make this easier, simply copy the SP into a new query, change the command to "CREATE OR ALTER PROC NorthWindAdvancedDataSaveSP" and execute it to save it. Then you can begin making modifications to it. For your convenience, the SP is posted here.
+
+**Note:** The code for testing the SP has been removed. It will be handled [later](#testing-the-stored-procedure):
 
 <button class = "collapsible"> NorthWindSimpleDataSaveSP </button>
 <div markdown="1" class="panel">
@@ -485,7 +487,7 @@ The following walks you through the major sections of the code with instructions
 
 ### Data to Process
 
-Since you are going to be saving more columns of data back to the data source, you simply need to add these columns to the @DataToProcess table. Be sure to match the Data Type of the table you will be saving the data to:
+Since you are going to be saving more columns of data back to the data source, you simply need to add these columns to the @DataToProcess table. Be sure to match the data type of the table you will be saving the data to:
 
 ![](/images/L-Dev-AdvancedDataSave/SPDataToProcess.png)
 <br>
@@ -497,16 +499,16 @@ Again, these additions are simply adding the additional columns so that they wil
 ![](/images/L-Dev-AdvancedDataSave/SPInsertToDataToProcess.png)
 <br>
 
-### Set Deleted
+### Set IsDeleted Flag
 
-After the "BEGIN TRAN t1" line, you are going to add a section that handles marking which records are deleted. Technically, the deletions can be handled in the Merge statement. However, since you are doing a soft delete and want the output of 'DELETE' along with the Excel_Row, it must be done outside the Merge statement. The following code sets the "IsDeleted" flag in the target table wherever the @DataToProcess column is marked "yes" for deletion. It also outputs information to the @ChangeLog table:
+After the "BEGIN TRAN t1" line, you are going to add a section that handles marking which records are deleted. Technically, the deletions can be handled in the Merge statement. However, since you are doing a [soft delete](#setting-up-the-soft-delete) and want the output of 'DELETE' along with the Excel_Row, it must be done outside the Merge statement. The following code sets the "IsDeleted" flag in the target table wherever the @DataToProcess column is marked "yes" for deletion. It also outputs information to the @ChangeLog table:
 
 ![](/images/L-Dev-AdvancedDataSave/SPSetDeleted.png)
 <br>
 
 ### Set Added Back
 
-Just after the previous section, you will add a section that handles the case where a previously deleted record is added back again. If this section is missing and handled by the Merge statement, it will see it as a typical 'UPDATE'. By handling it here, you can distinguish it as an 'ADDED_BACK'. If the record is not marked for deletion and is currently deleted, this will switch the "IsDeleted" flag to 0 (false):
+After the addition in the previous section, you will add a section that handles the case where a previously deleted record is added back again. If this section is missing and handled by the Merge statement, it will see it as a typical 'UPDATE'. By handling it here, you can distinguish it as an 'ADDED_BACK'. If the record is not marked for deletion and is currently deleted, this will switch the "IsDeleted" flag to 0 (false):
 
 ![](/images/L-Dev-AdvancedDataSave/SPSetAdded.png)
 <br>
@@ -527,7 +529,7 @@ The "WHEN MATCHED" section handles updates to the data. It needs to be updated t
 
 ### Merge Insert
 
-Just after the previous section, you will add a "WHEN NOT MATCHED BY TARGET" section to handle new insertions:
+Just after the previous section, you will add another section "WHEN NOT MATCHED BY TARGET". This will handle new insertions:
 
 ![](/images/L-Dev-AdvancedDataSave/SPMergeInsert.png)
 <br>
@@ -1012,7 +1014,7 @@ FinalResponseToUser:
 
 ## Testing the Stored Procedure
 
-To get a fresh SQL code to test this SP, select the cell in the Excel report containing the ReportSave function. Then click on "View SQL Test For ActiveCell" on the "System" dropdown:
+Interject provides a convenient way to get SQL code that will test your SP right from within the Excel report. First select the cell in the Excel report containing the ReportSave function. Then on the [Advanced Menu](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#overview), click on "View SQL Test For ActiveCell" on the "System" dropdown:
 
 ![](/images/L-Dev-AdvancedDataSave/ViewSQLTestClick.png)
 <br>
@@ -1022,7 +1024,7 @@ Copy the test code to the clipboard:
 ![](/images/L-Dev-AdvancedDataSave/CopyTestCode.png)
 <br>
 
-Paste the code into a new query and be sure to add the "@TestCode = 1" parameter:
+Paste the code into a new query and be sure to add the "@TestMode = 1" parameter to print out additional information about the SP process:
 
 ![](/images/L-Dev-AdvancedDataSave/PasteTestCode.png)
 <br>
