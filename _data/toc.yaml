@@ -378,7 +378,7 @@ Developer:
     - title: "Develop: Editing Data Save"
       path: /wDeveloper/L-Dev-EditingDataSave.html
     - title: "Develop: Insert & Delete Data Save"
-      path: /Developer/L-Dev-InsertDeleteDataSave.html
+      path: /wDeveloper/L-Dev-InsertDeleteDataSave.html
   - title: Security Best Practices
     path: /wGetStarted/Security-Best-Practices.html
   - title: Managing Settings Cache
