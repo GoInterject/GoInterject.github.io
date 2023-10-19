@@ -19,7 +19,7 @@ Begin by opening up the Customer Collections report.
 ![](/images/SetupjDataPortal/CustomerCollectionsReport.png)
 <br>
 
-In order to access the Interject configuration area,unfreeze the panes via the Quick Tools menu.
+In order to access the Interject configuration area, unfreeze the panes via the Quick Tools menu.
 
 ![](/images/SetupjDataPortal/UnFreezePanes.png)
 <br>
@@ -45,9 +45,9 @@ Enter "Market" for the Company Name filter and Pull the data.
 
 ### Result Sets
 
-The **DataResultNumber** is the second parameter for the jDataPortal. This parameter specifies the particular data set you want returned. For instance, if the stored procedure for the data portal returns three queries, entering 2 for this parameter will return the second query to your report.
+The **DataResultNumber** is the second parameter for the jDataPortal. This parameter specifies the particular data set you want returned. For instance, if the stored procedure for the data portal returns 4 queries, entering 2 for this parameter will return the 2nd query to your report.
 
-You can also enter negative numbers to specify the query in relation to the last query. For example, -1 will return the last query listed in your stored procedure. To illustrate, the following chart shows an example for a stored procedure returning four data sets:
+You can also enter negative numbers to specify the query in relation to the last query. For example, -1 will return the last query listed in your stored procedure. To illustrate, the following chart shows an example for a stored procedure returning 4 data sets:
 
 | Query<br>Position | Postive<br>Reference | Negative<br>Reference |
 |---|---|---|
