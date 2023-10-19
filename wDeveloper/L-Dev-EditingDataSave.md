@@ -2,7 +2,7 @@
 title: "Develop: Editing Data Save"
 layout: custom
 keywords: [developer, example, walkthrough, SQL, SSMS, Data Portal, data connection, data save]
-description: In this example you will create a simple data save using the Customer Aging Detail report and the Northwind Customers data source.
+description: In this example you will walkthrough the steps in order to Save Data using the Interject Function ReportSave. In this Editing Data Save example, you will set up a data save that will allow you to edit a customer's contact name and title right from within the Excel report.
 ---
 * * *
 
@@ -19,7 +19,7 @@ This walkthrough involves 6 main steps:
 
 1. [Set up a Data Connection](#setting-up-the-data-connection) ([completed already](/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection))
 2. [Set up a Data Portal](#setting-up-the-data-portal)
-3. [Modify the report to handle the save](#setting-up-the-report)
+3. [Setting up the report to handle the save](#setting-up-the-report)
 4. [Set up the ReportSave function](#setting-up-the-reportsave-function)
 5. [Set up the Stored Procedures (SP) to handle the save](#setting-up-the-stored-procedure)
 6. [Test the Stored Procedure &amp; ReportSave](#testing-the-stored-procedure)
@@ -38,27 +38,27 @@ For the Data Connection for this example, you will use the connection previously
 
 **Step 1:** Navigate to [https://portal.gointerject.com](https://portal.gointerject.com) and [log in](/wPortal/Logging-In-to-Website-Portal.html). Click on **Data Portals** on the left side bar and then the **NEW DATA PORTAL** button.
 
-![](/images/L-Dev-SimpleDataSave/NewDataPortal.png)
+![](/images/L-Dev-EditingDataSave/NewDataPortal.png)
 <br>
 
 **Step 2:** Enter the following details on setting up the new data portal and click "**CREATE DATA PORTAL**".
 
-* **Data Portal Code:** NorthWindSimpleData_Save
-* **Description:** Data portal for simple data save
+* **Data Portal Code:** NorthwindEditingData_Save
+* **Description:** Data portal for editing data save
 * **Category:** Demo
-* **Connection:** NorthWindExampleDB_MyName (replace "MyName" with your name)
+* **Connection:** NorthwindExampleDB_MyName (replace "MyName" with your name)
 * **Command Type:** Stored Procedure
-* **Stored Procedure/Command:** NorthWindSimpleDataSaveSP
+* **Stored Procedure/Command:** NorthwindEditingDataSaveSP
 
-**Note:** You will create the "NorthWindSimpleDataSaveSP" Stored Procedure later.
+**Note:** You will create the "NorthwindEditingDataSaveSP" Stored Procedure [later](#setting-up-the-stored-procedure).
 <br>
 
-![](/images/L-Dev-SimpleDataSave/DataPortalDetails.png)
+![](/images/L-Dev-EditingDataSave/DataPortalDetails.png)
 <br>
 
 **Step 3:** After creating the data portal, scroll down and click **Click here to add a System Parameter** and ensure the **Interject_RequestContext** parameter is set.
 
-![](/images/L-Dev-SimpleDataSave/AddSystemParameter.png)
+![](/images/L-Dev-EditingDataSave/AddSystemParameter.png)
 <br>
 
 The System Parameter [Interject_RequestContext](/wIndex/Request-Context-Parse.html) will transfer contextual data to the Stored Procedure you will set up later. In this example you will not need this info but it is a good practice to set this parameter for all your Stored Procedures.
@@ -69,27 +69,27 @@ Begin by opening up the report that was completed in the [Data Pull](/wGetStarte
 
 **Step 1:** Ensure **Market** is entered as a Company Name filter and pull the data:
 
-![](/images/L-Dev-SimpleDataSave/PullData.png)
+![](/images/L-Dev-EditingDataSave/PullData.png)
 <br>
 
 **Step 2:** Unfreeze the panes (if they are frozen):
 
-![](/images/L-Dev-SimpleDataSave/UnfreezePanes.png)
+![](/images/L-Dev-EditingDataSave/UnfreezePanes.png)
 <br>
 
 **Step 3:** Highlight the first two rows, right click within the selection and click **Copy**:
 
-![](/images/L-Dev-SimpleDataSave/HighlightFirstTwoRows.png)
+![](/images/L-Dev-EditingDataSave/HighlightFirstTwoRows.png)
 <br>
 
 **Step 4:** Right click row 3 and click **Insert Copied Cells**:
 
-![](/images/L-Dev-SimpleDataSave/InsertCopiedRows.png)
+![](/images/L-Dev-EditingDataSave/InsertCopiedRows.png)
 <br>
 
 **Step 5:** Copy & paste the same 2 rows again this time by right clicking row 5 and **Insert Copied Cells**:
 
-![](/images/L-Dev-SimpleDataSave/InsertCopiedRowsAgain.png)
+![](/images/L-Dev-EditingDataSave/InsertCopiedRowsAgain.png)
 <br>
 
 **Step 6:** Set up the configuration section:
@@ -99,7 +99,7 @@ Begin by opening up the report that was completed in the [Data Pull](/wGetStarte
 3. Enter **MessageToUser** in the last column on row 6 (The save will return a message in this column if necessary)
 4. Add a row below the row containing the **ReportRange** function (You will add the ReportSave function on this new row)
 
-![](/images/L-Dev-SimpleDataSave/SetupConfigSection.png)
+![](/images/L-Dev-EditingDataSave/SetupConfigSection.png)
 <br>
 
 ## Setting up the ReportSave Function
@@ -108,7 +108,7 @@ The only thing left to set up in this report is the actual ReportSave function.
 
 **Step 1:** Click on the cell below the "ReportRange" function and enter **=ReportSave()** and click the **fx** button to bring up the Function Wizard:
 
-![](/images/L-Dev-SimpleDataSave/FunctionWizard.png)
+![](/images/L-Dev-EditingDataSave/FunctionWizard.png)
 <br>
 
 **Step 2:** Enter the following details in the Function Wizard:
@@ -118,12 +118,12 @@ The only thing left to set up in this report is the actual ReportSave function.
 3. **ColDefRange:** Enter **4:4**. This range contains the columns that will be saved.
 4. **ResultsRange:** Enter **6:6**. This range represents the return message to the user.
 
-![](/images/L-Dev-SimpleDataSave/FunctionWizardFilled2.png)
+![](/images/L-Dev-EditingDataSave/FunctionWizardFilled2.png)
 <br>
 
 Everything is now ready for the ReportSave. You can further customize your report with styling and colors if you like:
 
-![](/images/L-Dev-SimpleDataSave/ReportSetUp.png)
+![](/images/L-Dev-EditingDataSave/ReportSetUp.png)
 <br>
 
 ## Setting up the Stored Procedure
@@ -132,17 +132,17 @@ Now that the ReportSave function is completed, Interject can use it to generate 
 
 **Step 1:** First click on the cell that contains the ReportSave. Ensure the [Advanced Menu](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#overview) is displayed. Click on **System** and then **View SQL Template For ActiveCell**:
 
-![](/images/L-Dev-SimpleDataSave/SQLTemplate.png)
+![](/images/L-Dev-EditingDataSave/SQLTemplate.png)
 <br>
 
 **Step 2:** Highlight the SQL code in the new window and copy the contents to the clipboard:
 
-![](/images/L-Dev-SimpleDataSave/SQLTemplateCode.png)
+![](/images/L-Dev-EditingDataSave/SQLTemplateCode.png)
 <br>
 
 **Step 3:** Open up the database you want to use and paste the copied SQL code into a new query:
 
-![](/images/L-Dev-SimpleDataSave/ExecuteStoredProcedure.png)
+![](/images/L-Dev-EditingDataSave/ExecuteStoredProcedure.png)
 <br>
 
 ## Add the RequestContext_Parse Stored Procedure
@@ -452,28 +452,28 @@ There are 2 parameters in the SP. The first one, "Interject_RequestContext", was
 
 The second parameter is a "TestMode" bit. If you are testing, you can set the value to 1 to print out detailed information upon execution. This will also rollback any changes so your database remains unchanged during testing.
 
-![](/images/L-Dev-SimpleDataSave/SPParams.png)
+![](/images/L-Dev-EditingDataSave/SPParams.png)
 <br>
 
 ### Testing
 
 The next section is a commented out code used for testing. If you want to test your SP, you can simply highlight the text within and execute it. Notice at the end the ContactName and ContactTitle data are sent for each row in your report. You can change this data if you desire for testing purposes.
 
-![](/images/L-Dev-SimpleDataSave/SPTesting.png)
+![](/images/L-Dev-EditingDataSave/SPTesting.png)
 <br>
 
 ### Context Parameters
 
 This section declares and sets variables with the RequestContext_Parse SP. This SP takes in the XML data sent by Interject and parses it into variables that you can use within your SP.
 
-![](/images/L-Dev-SimpleDataSave/SPContextParams.png)
+![](/images/L-Dev-EditingDataSave/SPContextParams.png)
 <br>
 
 ### Error Message
 
 The ErrorMessageToUser is declared as blank to begin with. If the execution of the SP encounters any errors, it will set this variable with a message.
 
-![](/images/L-Dev-SimpleDataSave/SPErrorMessage.png)
+![](/images/L-Dev-EditingDataSave/SPErrorMessage.png)
 <br>
 
 ### Data To Process
@@ -482,14 +482,14 @@ This section declares a table variable ("@DataToProcess") that will be used to s
 
 The last two columns ("ExampleColumnKey" and "ExampleColumnValue") are just examples used to validate the data coming in. They are not used in this example so delete them. You also need to change the data types and size to match your data.
 
-![](/images/L-Dev-SimpleDataSave/SPDataToProcess.png)
+![](/images/L-Dev-EditingDataSave/SPDataToProcess.png)
 <br>
 
 ### Inserting the Data to Process
 
 This section will take the XML data sent by Interject from your report and put it into the "@DataToProcess" table. Again, you can delete the "ExampleColumnKey" and "ExampleColumnValue" columns and change the data types and size to match your data.
 
-![](/images/L-Dev-SimpleDataSave/SPInsertToDataToProcess.png)
+![](/images/L-Dev-EditingDataSave/SPInsertToDataToProcess.png)
 <br>
 
 ### Validations
@@ -502,7 +502,7 @@ Now that you have all the data from your report into a table, you can do some va
 1. Validating a column has certain text (not used in this example)
 1. If any validation checks recorded a message, this SP will GOTO the end and not update any records (it will show the user the message on the corresponding row)
 
-![](/images/L-Dev-SimpleDataSave/SPValidation.png)
+![](/images/L-Dev-EditingDataSave/SPValidation.png)
 <br>
 
 ### ChangeLog
@@ -511,7 +511,7 @@ You can delete the "CREATE TABLE #ExampleTableToUpdate" part, it is not used in 
 
 Next, another table variable is declared. The "@ChangeLog" table will be filled with information regarding the changes to the data, such as the row in the Excel report, the type of change that was done, and the corresponding key.
 
-![](/images/L-Dev-SimpleDataSave/SPDeclareChangeLog.png)
+![](/images/L-Dev-EditingDataSave/SPDeclareChangeLog.png)
 <br>
 
 ### Merge
@@ -522,14 +522,14 @@ Next it merges by joining the tables on your key and updating the desired column
 
 Finally, it outputs the change information to the "@ChangeLog" table.
 
-![](/images/L-Dev-SimpleDataSave/SPMerge.png)
+![](/images/L-Dev-EditingDataSave/SPMerge.png)
 <br>
 
 ### Set Message To User
 
 This section sets the message that will be displayed to the user by comparing the action values in the "@ChangeLog" table. You can change the message to anything you like.
 
-![](/images/L-Dev-SimpleDataSave/SPSetMessageToUser.png)
+![](/images/L-Dev-EditingDataSave/SPSetMessageToUser.png)
 <br>
 
 ### Final Response To User
@@ -538,18 +538,18 @@ This last section simply returns the message on each row back to the user. This 
 
 It also raises an error message if the parameter "@ErrorMessageToUser" was set.
 
-![](/images/L-Dev-SimpleDataSave/SPFinalResponseToUser.png)
+![](/images/L-Dev-EditingDataSave/SPFinalResponseToUser.png)
 <br>
 
 Now that the Stored Procedure is finished, execute it to save it.
 
 The following is the finished SP:
 
-<button class = "collapsible"> NorthWindSimpleDataSaveSP </button>
+<button class = "collapsible"> NorthwindEditingDataSaveSP </button>
 <div markdown="1" class="panel">
 
 ```sql
-CREATE OR ALTER PROC NorthWindSimpleDataSaveSP
+CREATE OR ALTER PROC NorthwindEditingDataSaveSP
 
 	-- System Params not in formula
 	@Interject_RequestContext nvarchar(max)
@@ -568,13 +568,13 @@ AS
 	---------------------------------------------------------------------------
 	
 
-	EXEC NorthWindSimpleDataSaveSP
+	EXEC NorthwindEditingDataSaveSP
 		@TestMode = 1
 		,@Interject_RequestContext = '<?xml version="1.0" encoding="utf-16" standalone="yes"?>
 <RequestContext>
 	<ExcelVersion>16.0</ExcelVersion>
 	<IdsVersion>2.4.1.25</IdsVersion>
-	<FileName>DevelopSimpleDataSave.xlsx</FileName>
+	<FileName>DevelopEditingDataSave.xlsx</FileName>
 	<FilePath>D:\Users\test\Documents\Documentation\DevReportSave</FilePath>
 	<TabName>NewReport_1</TabName>
 	<CellRange>C11</CellRange>
@@ -901,11 +901,11 @@ AS
 				UPDATE SET
 					t.[ContactName] = s.[ContactName]
 					,t.[ContactTitle] = s.[ContactTitle]
-			--WHEN NOT MATCHED BY TARGET THEN -- Handles the insert based on LEFT JOIN -- NOT USED IN THIS SIMPLE EXAMPLE
+			--WHEN NOT MATCHED BY TARGET THEN -- Handles the insert based on LEFT JOIN -- NOT USED IN THIS EXAMPLE
 			-- INSERT([ExampleColumnKey],[ExampleColumnValue])
 			-- VALUES(s.ExampleColumnKey],s.[ExampleColumnValue])
 			
-			--WHEN NOT MATCHED BY SOURCE -- Handles the delete based on the RIGHT JOIN -- NOT USED IN THIS SIMPLE EXAMPLE
+			--WHEN NOT MATCHED BY SOURCE -- Handles the delete based on the RIGHT JOIN -- NOT USED IN THIS EXAMPLE
 			-- AND... add restrictions so delete doesn't remove too much. Filter params are normally considered here.
 			-- THEN 
 			-- DELETE
@@ -995,12 +995,12 @@ FinalResponseToUser:
 
 Now you can test the SP by using the [test code](#testing). For example, make a change to the data in the test code and execute the test. Because the "@TestMode" bit is set to 1, it will display all kinds of information about the SP process. Notice the changes and message to user that would be displayed.
 
-![](/images/L-Dev-SimpleDataSave/TestingSP.png)
+![](/images/L-Dev-EditingDataSave/TestingSP.png)
 <br>
 
 Note that when using the test script, no actually changes are being made to the database since the transaction of the merge is rolled back:
 
-![](/images/L-Dev-SimpleDataSave/TestingRollback.png)
+![](/images/L-Dev-EditingDataSave/TestingRollback.png)
 <br>
 
 ## Testing the ReportSave
@@ -1009,15 +1009,15 @@ The only thing left to do is test the SP by running the ReportSave function with
 
 First pull the data:
 
-![](/images/L-Dev-SimpleDataSave/TestingPullData.png)
+![](/images/L-Dev-EditingDataSave/TestingPullData.png)
 <br>
 
 Next make a change to a Contact Name or Contact Title and run the Report Save:
 
-![](/images/L-Dev-SimpleDataSave/TestingSave.png)
+![](/images/L-Dev-EditingDataSave/TestingSave.png)
 <br>
 
 Notice the results!:
 
-![](/images/L-Dev-SimpleDataSave/TestingResults.png)
+![](/images/L-Dev-EditingDataSave/TestingResults.png)
 <br>
