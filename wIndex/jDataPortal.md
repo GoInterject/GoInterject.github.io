@@ -34,7 +34,7 @@ For an example of this function, see [Lab Dev: Customer Aging Detail](/wGetStart
 </table>
 </div>
 
-<button class="collapsible-parameter">**DataResultNumber**<br>The number of the particular data set held in memory from previous queries. Each time the jDataPortal is accessed, it will return a data set held in memory. By specifying a number here, that particular data set can be returned.</button>
+<button class="collapsible-parameter">**DataResultNumber**<br>The index number of the data set requested. When multiple sets are returned from the data source, this parameter can specify the particular result set.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
@@ -48,7 +48,7 @@ For an example of this function, see [Lab Dev: Customer Aging Detail](/wGetStart
     </tr>
     <tr>
 		<td class="pph"><b>If Blank</b></td>
-		<td>Will query data via the DataPortal</td>
+		<td>Will return the first data set</td>
     </tr>
   </tbody>
 </table>
