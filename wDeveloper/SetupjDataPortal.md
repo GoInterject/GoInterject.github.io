@@ -84,7 +84,7 @@ The **OrderBy** parameter excepts multiple column names (e.g. "CompanyName, Cont
 * This parameter is case insensitive
 * Brackets may or may not surround column names
 * Result sets are sorted in the order of the columns listed
-* Sorts in ascending order (ASC) unless (DESC) is specified
+* Sorts in ascending order (ASC) unless descending order (DESC) is specified
 
 For more information, see Microsoft's [DataView.Sort](https://learn.microsoft.com/en-us/dotnet/api/system.data.dataview.sort){:target="_blank"}{:rel="noopener noreferrer"}.
 
