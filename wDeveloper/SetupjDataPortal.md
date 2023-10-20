@@ -58,7 +58,7 @@ You can also enter negative numbers to specify the query in relation to the last
 
 ### Order By
 
-The **OrderBy** parameter accepts a valid SQL statement that will be applied to the data result. In this section you will add a value for this parameter in order to order the results.
+The **OrderBy** parameter accepts comma separated values of column names that will be used to sort the data result set. In this section you will add a value for this parameter to order the results.
 
 First select the jDataPortal function by putting the cursor inside the name and click the **fx** button to bring up Excel's Function Wizard.
 
@@ -79,11 +79,20 @@ Now Pull the data again and notice the results are ordered by Company Name in de
 ![](/images/SetupjDataPortal/ResultsOrdered.png)
 <br>
 
+The **OrderBy** parameter excepts multiple column names (e.g. "CompanyName, ContactTitle). Some key points:
+
+* This parameter is case insensitive
+* Brackets may or may not surround column names
+* Result sets are sorted in the order of the columns listed
+* Sorts in ascending order (ASC) unless (DESC) is specified
+
+For more information, see Microsoft's [DataView.Sort](https://learn.microsoft.com/en-us/dotnet/api/system.data.dataview.sort){:target="_blank"}{:rel="noopener noreferrer"}.
+
 ### Filter
 
-Like the **OrderBy** parameter, the **Filter** parameter also accepts a valid SQL statement that will be applied to the results. 
+The **Filter** parameter accepts valid expressions that will be applied to the results. 
 
-Bring up the Function Wizard again and for the **Filter** parameter, enter
+Bring up the Function Wizard again and for the **Filter** parameter, enter:
 
 ```
 "[ContactTitle] LIKE '%Manager%'"
@@ -97,11 +106,20 @@ Pull the data again and notice the results are filtered to only included entries
 ![](/images/SetupjDataPortal/ResultsFiltered.png)
 <br>
 
+The **Filter** parameter excepts multiple expressions. Some key points:
+
+* This parameter is case insensitive
+* Brackets may or may not surround column names
+* Multiple expressions can be added using the keywords 'AND' or 'OR'
+* Terms can be compared using '<', '>', '<=', '>=', '<>' or '='
+
+For more information, see Microsoft's [DataView.RowFilter](https://learn.microsoft.com/en-us/dotnet/api/system.data.dataview.rowfilter){:target="_blank"}{:rel="noopener noreferrer"}. For more information about syntax and keywords, see [Expressions](https://learn.microsoft.com/en-us/dotnet/api/system.data.datacolumn.expression){:target="_blank"}{:rel="noopener noreferrer"}.
+
 ### Overriding a Connection
 
 With the **ConnectionOverride** parameter, a jDataPortal function can use a different Interject [Data Connection](/wPortal/Data-Connections.html) when accessing the Data Portal. Making the same Data Portal for different connections is redundant. This parameter makes it possible to host one Data Portal with many different possible connections and thus accommodate your unique reporting needs.
 
-To use, simply enter the name of the connection from the Portal site that you want to use:
+To use, simply enter the name of the connection from the [Portal site](https://portal.gointerject.com/DataPortals.html) that you want to use:
 
 ![](/images/SetupjDataPortal/ConnectionOverride.png)
 <br>
@@ -110,7 +128,7 @@ To use, simply enter the name of the connection from the Portal site that you wa
 
 Similar to the **ConnectionOverride**, the **CommandOverride** can override the command (stored procedure) stored in the Data Portal. Again, you only need one Data Portal to access different stored procedures and thus cut down on the required maintenance of having to manage many different portals. 
 
-Command overrides are can only be performed by a ClientAdmin or SysAdmin [role](/wPortal/INTERJECT-Roles.html).
+Command overrides can only be performed by a ClientAdmin [role](/wPortal/INTERJECT-Roles.html).
 
 ![](/images/SetupjDataPortal/CommandOverride.png)
 <br>
