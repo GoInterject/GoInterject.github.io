@@ -72,11 +72,11 @@ Next you will created a new Stored Procedure that builds from the [previous save
 
 **Note:** The code for testing the SP has been removed. It will be handled [later](#testing-the-stored-procedure):
 
-<button class = "collapsible"> NorthwindInsertDeleteDataSaveSP </button>
+<button class = "collapsible"> NorthwindChangelogDataSaveSP </button>
 <div markdown="1" class="panel">
 
 ```sql
-
+code of sp
 ```
 </div>
 
@@ -112,11 +112,11 @@ Now that the Stored Procedure is finished, execute it to save it.
 
 The following is the finished SP:
 
-<button class = "collapsible"> NorthwindInsertDeleteDataSaveSP </button>
+<button class = "collapsible"> NorthwindChangelogDataSaveSP </button>
 <div markdown="1" class="panel">
 
 ```sql
-
+Final modified sp
 ```
 </div>
 
