@@ -8,7 +8,7 @@ description: The jDataPortal is a powerful Interject function that not only allo
 
 ## Overview
 
-The [jDataPortal](/wIndex/jDataPortal.html) is a powerful Interject function that not only allows users to customize the connection to an Interject Data Portal. In addition to establishing a connection to a Portal, users can also override certain parameters of the Portal to customize their reporting needs.
+The [jDataPortal](/wIndex/jDataPortal.html) is a powerful Interject function that not only allows users to establish and customize the connection to an Interject Data Portal, but also override certain parameters of the Portal to customize reporting needs.
 
 ### Setup jDataPortal
 
@@ -74,14 +74,14 @@ In the **OrderBy** field, enter:
 ![](/images/SetupjDataPortal/AddOrderBy.png)
 <br>
 
-Now Pull the data again and notice the results are ordered by Company Name in descending order.
+Now Pull the data again and notice the results are in descending order by Company Name.
 
 ![](/images/SetupjDataPortal/ResultsOrdered.png)
 <br>
 
 The **OrderBy** parameter excepts multiple column names (e.g. "CompanyName, ContactTitle). Some key points:
 
-* This parameter is case insensitive
+* This parameter is not case sensitive
 * Brackets may or may not surround column names
 * Result sets are sorted in the order of the columns listed
 * Sorts in ascending order (ASC) unless descending order (DESC) is specified
@@ -108,7 +108,7 @@ Pull the data again and notice the results are filtered to only included entries
 
 The **Filter** parameter excepts multiple expressions. Some key points:
 
-* This parameter is case insensitive
+* This parameter is not case sensitive
 * Brackets may or may not surround column names
 * Multiple expressions can be added using the keywords 'AND' or 'OR'
 * Terms can be compared using '<', '>', '<=', '>=', '<>' or '='
