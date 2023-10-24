@@ -24,7 +24,7 @@ horizontalnav:
   path: /wTroubleshoot/Troubleshooting-Landing.html
   node: troubleshoot
 - title: Release Notes
-  path: /wReleaseNotes/2023-09_ReleaseNotes.html
+  path: /wReleaseNotes/2023-10_ReleaseNotes.html
   node: releaseNotes
 
 about:
@@ -410,7 +410,7 @@ troubleshoot:
 
 releaseNotes:
 - sectiontitle: 2023
-  path: /wReleaseNotes/2023-09_ReleaseNotes.html
+  path: /wReleaseNotes/2023-10_ReleaseNotes.html
   section:
-    - title: September
-      path: /wReleaseNotes/2023-09_ReleaseNotes.html
+    - title: October
+      path: /wReleaseNotes/2023-10_ReleaseNotes.html
