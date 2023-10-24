@@ -26,7 +26,7 @@ description: Release notes for the previous month's updates
 
 ### Portal Site
 
-* ✅ Added MFA config model to staff page in portal - [[URL to MFA in Interject]]
+* ✅ Added MFA config model to staff page in portal
 
 * ✅ Added Checksum added next to the installer download button on portal site - [See docs](/wDeveloper/InstallerValidation.html)
 
