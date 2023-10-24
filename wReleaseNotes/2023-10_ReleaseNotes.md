@@ -8,42 +8,40 @@ description: Release notes for the previous month's updates
 
 ## October 2023
 
-### Addin Updates
+### Excel Addin v2.5.0.22
 
-#### Version 2.5.0.22
-
-* ✅ jDataPortal DataResultNumber now supports Indexing from the end of the results
-
-* ♻️ Legacy auth token is refreshed every 2 days instead of 19
-
-#### Version 2.5.0.21
+* ✅ `jDataPortal` DataResultNumber now supports Indexing from the end of the results - [See docs](/wDeveloper/SetupjDataPortal.html)
 
 * ✅ Update source of identity providers displayed in the connection manager to all id providers in current client (includes overrides)
 
-* ✅ Inactive clients no longer show up in the company ddl
-
 * ✅ Refresh user company list on activate/deactivate client
 
-* ✅ Update for descriptions in connection and data portal form
+* ♻️ Legacy auth token is refreshed every 2 days instead of 19
 
-* ✅ Add MFA config model to staff page in portal
-
-* ✅ Removed Unsubscribe button from portal site until functionality for it exists
-
-* ✅ Fixed header bleeding through company dropdown
-
-* ✅ Fixed size of subscription page
+* ♻️ Inactive clients no longer show up in the company ddl
 
 * 🐞 Opening report library now checks for legacy idsSession token refresh
 
-### Portal Site Updates
+<br>
 
-* ✅ Checksum added next to the installer download button on portal site
+### Portal Site
 
-* ✅ Endpoint to get checksum from server for download
+* ✅ Added MFA config model to staff page in portal - [[URL to MFA in Interject]]
 
-* &nbsp;&nbsp;ℹ️ &nbsp;&nbsp;New clients are no longer automatically subscribed to Interject Tools app
+* ✅ Added Checksum added next to the installer download button on portal site - [See docs](/wDeveloper/InstallerValidation.html)
 
-* ✅ Create user profile no longer populates logged in users information
+* ♻️ Improved default description box size for data connections
 
-* ✅ Added Parent/child connection to clients
+* ♻️ Removed Unsubscribe button from portal site until functionality for it exists
+
+* ♻️ New Interject companies are no longer automatically subscribed to the "Interject Tools" published app
+
+* 🐞 Create user profile no longer populates logged in users information
+
+* 🐞 Fixed header bleeding through company dropdown
+
+<br>
+
+### Interject Platform
+
+* ✅ Added conditional access for user logins to allow control federated user logins to Interject - [See docs](/wDeveloper/ConditionalAccess.html)
