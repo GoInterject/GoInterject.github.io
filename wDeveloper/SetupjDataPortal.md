@@ -8,7 +8,7 @@ description: The jDataPortal is a powerful Interject function that not only allo
 
 ## Overview
 
-The [jDataPortal](/wIndex/jDataPortal.html) is a powerful Interject function that not only allows users to establish and customize the connection to an Interject Data Portal, but also override certain parameters of the Portal to customize reporting needs.
+The [jDataPortal](/wIndex/jDataPortal.html) is a powerful Interject function that not only allows users to not only establish and customize the connection to an Interject Data Portal, but also override certain parameters of the Portal to customize reporting needs.
 
 ### Setup jDataPortal
 
