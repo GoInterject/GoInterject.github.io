@@ -27,7 +27,7 @@ The Report Library provides an easy interface where new reports can be uploaded,
 ![](/images/ReportLibraryLinks/CreateNewLink.png)
 <br>
 
-**Step 4:** The Link Details Window appears where you can enter details about the report:
+**Step 4:** The [Report Link Details Form](#report-link-details-form) appears where you can enter details about the report:
 
 1. Enter a name for the report
 2. Enter an optional description
@@ -135,4 +135,49 @@ Notice the new report is added and automatically incremented the version number:
 Notice the details of the version have been updated:
 
 ![](/images/ReportLibraryLinks/EditVersionCompleted.png)
+<br>
+
+### The Report Link Details Form
+
+The Report Link Details form displays information about the selected report. This form is specific to the selected report link [version](/wAbout/Report-Library-Basics.html#link-version-section).
+
+![](/images/ReportLibraryLinks/ReportLinkDetails.png)
+<br>
+
+* **Link Name:** The name of the report link
+* **Sort:** The sorting order of the report link (see [here](/wAbout/ReportLibrarySorting.html) for more info)
+* **Link Description:** A description for the report
+* **Link Folder:** The folder in which the report resides
+* **Status:** The current status of the report (see [here](/wAbout/Report-Library-Basics.html#status) for more info)
+* **Version Name:** The name of the version for this report
+* **Version Note:** A note explaining the version of this report
+* **Link Type:** The type of this link (see [here](#types-of-links) for more info)
+* **Link Path:** The path to the source for this report link
+* **Documentation Type:** The type of documentation for this report link (see [here](#link-documentation) for more info)
+* **Documentation Path:** The path to the source for this report's documentation
+* **Drill Codes:** Drill codes enable drilling to this report link (see [here](/wGetStarted/L-Drill-DrillCodes.html) for more info)
+
+### Types of Links
+
+The reports in the Report Library are called links because the link to a source. As such there are different types of links for a report:
+
+![](/images/ReportLibraryLinks/ReportLinkTypes.png)
+<br>
+
+* **Local/Network File:** The report source is a file that resides on the user's local or network system
+* **Folder Link:** A link to a local or network folder (e.g. D:\Users\test\Documents)
+* **Website Link:** The report source is a website link (i.e. http or https address)
+* **Report Library File:** The report source is a file that resides inside the Report Library itself
+
+<br>
+
+<blockquote class=highlight_note>
+<b>Note:</b> Files that reside in the cloud (e.g. OneDrive, SharePoint, etc.) cannot be saved as a local file or a Report Library file (see <a href="https://docs.gointerject.com/wTroubleshoot/Cloud-File.html">here</a> for more info).
+</blockquote>
+
+### Link Documentation
+
+You have the option to include documentation for the selected report link. This could be a local file, a link to a specific folder, or a website link:
+
+![](/images/ReportLibraryLinks/DocumentationTypes.png)
 <br>
