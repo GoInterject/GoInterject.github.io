@@ -73,7 +73,7 @@ server:
 
 ### Development Docs
 
-There are docs in the repo pertaining to development. They are found in the `ids-java-api/docs/src/asciidoc/` directory:
+There are docs in the repo pertaining to development. They are found in the `asciidoc` directory:
 
 | File | Description |
 |---|---|
@@ -85,7 +85,7 @@ There are docs in the repo pertaining to development. They are found in the `ids
 
 ### Interject Docs
 
-There are docs in the repo pertaining to setting up Interject reports and functions. They are found in the `ids-java-api/examples/` directory:
+There are docs in the repo pertaining to setting up Interject reports and functions. They are found in the `examples` directory:
 
 | File | Description |
 |---|---|
@@ -98,4 +98,3 @@ There are docs in the repo pertaining to setting up Interject reports and functi
 | report_variable | How to set up an Interject [ReportVariable](/wIndex/ReportVariable.html) |
 | sql_data_connection | How to work with the `SqlDataConnection` interface to set up a SQL data connection and controller |
 | user_message | How to send [messages](/wGetStarted/L-Dev-Error-Handling.html) back to the Interject from the API |
-
