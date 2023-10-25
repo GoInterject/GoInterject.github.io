@@ -10,9 +10,9 @@ description: The Report Library is designed to be a central hub for all your rep
 
 The Report Library is designed to be a central hub for all your report sharing and organizational needs. It contains its own folder hierarchy (3 levels deep for simplicity) for basic organization. You can sort reports within a folder and also the nested folders themselves. Standard operations such as editing, moving, and deleting are available as well.
 
-### Sorting Reports
+### Sorting Reports Links
 
-Reports in a Report Library folder appear in the **Report Links** section:
+Report links in a Report Library folder appear in the **Report Links** section:
 
 ![](/images/ReportLibrarySorting/ReportLibraryLinks.png)
 <br>
@@ -22,7 +22,10 @@ The order is determined by the report's **Sort** property:
 ![](/images/ReportLibrarySorting/LinkDetailsSort.png)
 <br>
 
-The **Sort** property is a numerical value that will sort the report in relation to the other report's **Sort** property. In other words, the reports will be sorted based on their **Sort** value (ascending). If two reports have identical values, the report's creation date will determine which report appears first.
+The **Sort** property is a numerical value that will sort the report in relation to the other report's **Sort** property. In other words, the reports will be sorted based on their **Sort** value (ascending). If two reports have identical values, they will be sorted in order of their Link ID:
+
+![](/images/ReportLibrarySorting/ReportLibraryLinkID.png)
+<br>
 
 You can view and edit the report's **Sort** value and its details by right clicking on the report, click **Selected Link**, and then **Edit**
 
