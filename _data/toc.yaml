@@ -6,7 +6,7 @@ horizontalnav:
   path: /wGetStarted/Creating-with-INTERJECT.html
   node: getstarted
 - title: Developer
-  path: /wApi/dot-net-api-setup.html
+  path: /wApi/DeveloperMain.html
   node: Developer
 # - title: Design
 #   path: /wDesign/Reporting-Design-Standards.html
@@ -338,7 +338,7 @@ portal:
 
 Developer:
 - sectiontitle: Api Developer
-  path: /wApi/dot-net-api-setup.html
+  path: /wApi/DeveloperMain.html
   section:
     - title: .Net Api Setup
       path: /wApi/dot-net-api-setup.html
