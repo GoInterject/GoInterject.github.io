@@ -7,8 +7,7 @@ description: Shows how to setup an INTERJECT .Net data api.
 
 ##  **Overview**
 
-In this walkthrough we will setup an Interject Data API in C# which can be used to manage dataflow to and from Interject Reports. 
-
+Interject allows data flow from custom sources through a web API. The Interject Java API is built upon C# and the [.Net Framework](https://learn.microsoft.com/en-us/dotnet/framework/){:target="_blank"}{:rel="noopener noreferrer"}.
 
 ##  **Requirements**
 
@@ -20,28 +19,22 @@ In this walkthrough we will setup an Interject Data API in C# which can be used 
 The first step is to install the .NET SDK that best fits your system. These downloads can be found on [Microsoft's .NET Downloads](https://dotnet.microsoft.com/download) page.
 
 
-> **NOTE:** if you intend to use the data api on linux or macOS, it is necessary to [download mono](https://www.mono-project.com/), the cross platform open-source development platform based on the .NET Framework.
+> **Note:** if you intend to use the data api on linux or macOS, it is necessary to [download mono](https://www.mono-project.com/), the cross platform open-source development platform based on the .NET Framework.
 
 
 ##  **Get The Code**
 Once .NET is installed then clone or download the `SimpleDataApi` repository:
 
-<!---
-{% include codeHeader.html %}
-
-
-<div class="code-header">
-  <button class="copy-code-button">
-    Copy
-  </button>
-</div>
---->
-
 ```git
 git clone https://github.com/GoInterject/ids-dotnet-api
 ```
 
-Note: If this repo is private and you need access, please [contact us](mailto:help@gointerject.com). It will be public soon.
+**Note:** If this repo is private and you need access, please [contact us](mailto:help@gointerject.com). It will be public soon.
+
+Alternatively you can download the zip file and unpack manually:
+
+![](/images/API/DotNetDownloadZip.png)
+<br>
 
 ## **Setup API**
 
