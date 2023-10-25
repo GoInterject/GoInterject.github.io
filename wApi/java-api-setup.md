@@ -11,11 +11,10 @@ Interject allows data flow from custom sources through a web API. The Interject 
 
 ### Requirements
 
-
 * [Java](https://www.oracle.com/java/technologies/downloads/){:target="_blank"}{:rel="noopener noreferrer"}
 * [Maven](https://maven.apache.org/download.cgi){:target="_blank"}{:rel="noopener noreferrer"}
 
-###  **Get the Code**
+###  Get the Code
 
 With Git, you can clone the repository directly to your system:
 
@@ -61,3 +60,42 @@ java -jar "./target/interject-webbapp-1.0.0-SNAPSHOT.jar"
 ```
 
 **Note:** For more information, view the Readme in the parent directory or the doc files in the docs folder of the repo.
+
+### Change Host and Port
+
+To change the host and port number, simply change the values in the `application.yaml` file:
+
+```yaml
+server:
+      port: 8080
+      address: 127.0.0.1
+```
+
+### Development Docs
+
+There are docs in the repo pertaining to development. They are found in the `ids-java-api/docs/src/asciidoc/` directory:
+
+| File | Description |
+|---|---|
+| add-new-endpoint | How to add a new endpoint |
+|local-development | Setting up a local development environment |
+|local-test | How to run and create new test cases |
+| sql-request-example | An example body of a SQL request |
+| swagger-ui| Information about the Swagger UI |
+
+### Interject Docs
+
+There are docs in the repo pertaining to setting up Interject reports and functions. They are found in the `ids-java-api/examples/` directory:
+
+| File | Description |
+|---|---|
+| example.xlsx | An example Excel workbook that interacts with the API endpoints |
+| formula_jcolumndef | How to set up the [jColumnDef](/wIndex/jColumnDef.html) formula |
+| portal_parameters | How to set up Interject [parameters](/wPortal/Data-Portals.html#overview-of-parameters) |
+| report_fixed | How to set up an Interject [ReportFixed](/wIndex/ReportFixed.html) |
+| report_range | How to set up an Interject [ReportRange](/wIndex/ReportRange.html) |
+| report_save | How to set up an Interject [ReportSave](/wIndex/ReportSave.html) |
+| report_variable | How to set up an Interject [ReportVariable](/wIndex/ReportVariable.html) |
+| sql_data_connection | How to work with the `SqlDataConnection` interface to set up a SQL data connection and controller |
+| user_message | How to send [messages](/wGetStarted/L-Dev-Error-Handling.html) back to the Interject from the API |
+
