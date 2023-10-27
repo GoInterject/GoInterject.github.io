@@ -1,12 +1,12 @@
 ---
 title: Interject Roles
 layout: custom
-keywords: [roles, user profile, admin]
-description: At the bottom of the User Profile page are the roles you currently have assigned to your profile.
+keywords: [roles, user profile, admin, permissions]
+description: At the bottom of the User Profile page are the roles you currently have assigned to your profile. There are a number of roles to choose from. Once changed, the user will need to log in again to the Interject Excel Add-in for the changes to take effect.
 ---
 * * *
 
-At the bottom of the User Profile page are the roles you currently have assigned to your profile. There are a number of roles to choose from. Once changed, the user will need to log in again to the Interject Excel Add-in for the changes to take effect.
+At the bottom of the [User Profile](https://docs.gointerject.com/wPortal/User-Profile.html) page are the roles you currently have assigned to your profile. There are a number of roles to choose from. Once changed, the user will need to log in again to the Interject Excel Add-in for the changes to take effect.
 
 You can add roles by selecting the role name. Remove roles by clicking the small garbage icon for each role.
 
