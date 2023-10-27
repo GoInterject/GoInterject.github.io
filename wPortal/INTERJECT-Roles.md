@@ -8,7 +8,7 @@ description: At the bottom of the User Profile page are the roles you currently 
 
 At the bottom of the [User Profile](https://docs.gointerject.com/wPortal/User-Profile.html) page are the roles you currently have assigned to your profile. There are a number of roles to choose from. Roles can stack, meaning each role adds the associated permissions to the user.
 
-You can add roles by selecting the role name from the drop down list. Then click **Add New Role** to add the role to the user's profile. Remove roles by clicking the small garbage <font size="+1">&#x1F5D1;</font> icon for each role.
+You can add roles by selecting the role name from the drop down list. Then click **Add New Role** to add the role to the user's profile. Remove roles by clicking the small garbage **<font size="+1">&#x1F5D1;</font>** icon for each role.
 
 ![](/images/InterjectRoles/SelectRole.png)
 <br>

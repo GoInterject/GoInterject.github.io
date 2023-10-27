@@ -43,7 +43,7 @@ Enter **Include Paid** for Helper Name and enter **Include Invoices that have al
 ![](/images/L-Dev-CustAgingDetail/05.jpg)
 <br>
 
-**Step 5:** Click the trash can icon on the far right of the Interject_LocalTimeZoneOffset to delete it. You are going to a use a different System Parameter for this data portal to illustrate a new System Parameter that has not been presented in previous examples.
+**Step 5:** Click the trash **<font size="+1">&#x1F5D1;</font>** can icon on the far right of the Interject_LocalTimeZoneOffset to delete it. You are going to a use a different System Parameter for this data portal to illustrate a new System Parameter that has not been presented in previous examples.
 
 ![](/images/L-Dev-CustAgingDetail/06.jpg)
 <br>
