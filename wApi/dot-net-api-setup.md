@@ -1,40 +1,139 @@
 ---
 layout: custom
 title:  .NET API Setup
-keywords: [data api, c#, setup, spring framework]
+keywords: [data api, web api, c#, setup, .NET framework, IIS, server]
 description: Shows how to setup an INTERJECT .Net data api.
 ---
 
-##  **Overview**
+##  Overview
 
 Interject allows data flow from custom sources through a web API. The Interject Java API is built upon C# and the [.Net Framework](https://learn.microsoft.com/en-us/dotnet/framework/){:target="_blank"}{:rel="noopener noreferrer"}.
 
-##  **Requirements**
+### Requirements
 
-**Minimum Requirements:**
-- The machine should be running IIS as a web server
-- The machine needs at least .Net framework 4.5.2
+-  Internet Information Services (IIS)
+- [.Net framework 4.5.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework) or greater
 
-**Getting .Net**<br>
-The first step is to install the .NET SDK that best fits your system. These downloads can be found on [Microsoft's .NET Downloads](https://dotnet.microsoft.com/download) page.
+### Get The Code
 
-
-> **Note:** if you intend to use the data api on linux or macOS, it is necessary to [download mono](https://www.mono-project.com/), the cross platform open-source development platform based on the .NET Framework.
-
-
-##  **Get The Code**
-Once .NET is installed then clone or download the `SimpleDataApi` repository:
+With Git, you can clone the repository directly to your system. Navigate to the desired directory and run the following command:
 
 ```git
-git clone https://github.com/GoInterject/ids-dotnet-api
+git clone https://github.com/GoInterject/ids-dotnet-api.git
 ```
 
 **Note:** If this repo is private and you need access, please [contact us](mailto:help@gointerject.com). It will be public soon.
 
-Alternatively you can download the zip file and unpack manually:
+Alternatively you can download the [zip file](https://github.com/GoInterject/ids-dotnet-api/archive/refs/heads/main.zip){:target="_blank"}{:rel="noopener noreferrer"} and unpack manually:
 
 ![](/images/API/DotNetDownloadZip.png)
 <br>
+
+### Getting .NET
+
+.NET framework or .NET, which are supported ?
+
+
+
+The first step is to install the .NET SDK that best fits your system. These downloads can be found on [Microsoft's .NET Downloads](https://dotnet.microsoft.com/download) page.
+
+<blockquote class=highlight_note>
+<b>Note:</b> If you intend to use this API on Linux or macOS, it is necessary to download <a href="https://www.mono-project.com/" target="_blank" rel="noopener noreferrer">Mono</a>, the cross platform open-source development platform based on the .NET Framework.
+</blockquote>
+
+### Getting IIS
+
+Internet Information Services ([IIS](https://learn.microsoft.com/en-us/iis/get-started/introduction-to-iis/iis-web-server-overview){:target="_blank"}{:rel="noopener noreferrer"}) for Windows Server is a flexible, secure and manageable Web server for hosting anything on the Web.
+
+For detailed information on IIS installation, see [here](https://learn.microsoft.com/en-us/iis/application-frameworks/scenario-build-an-aspnet-website-on-iis/configuring-step-1-install-iis-and-asp-net-modules){:target="_blank"}{:rel="noopener noreferrer"}.
+
+#### Windows
+
+Open the Control Panel and click on **Turn Windows features on or off**:
+
+![](/images/dot-net-api/TurnWindowsFeaturesOn.png)
+<br>
+
+Under IIS, select the components you which to install:
+
+![](/images/dot-net-api/IISFeaturesOnOrOff.png)
+<br>
+
+#### Windows Server Manager
+
+Click **Manage** and then **Add Roles and Features**:
+
+![](/images/dot-net-api/AddRolesAndFeatures.png)
+<br>
+
+Follow the wizard that appears and under "Server Roles", select the Web Server (IIS) components you which to install:
+
+![](/images/dot-net-api/ServerRoles.png)
+<br>
+
+### Publishing the API
+
+#### Some other method?
+
+#### Using Visual Studio
+
+Open Visual Studio
+Open project/solution
+Select the InterjectDotnetApi.csproj project
+Right click on the InterjectDotnetApi project in Solution Explorer
+Click Publish...
+Click Folder
+Accept the default location within the project or select a new location
+Click Finish
+Click Publish
+
+### Copy Published Files to Website Folder
+
+Navigate to the directory you published the API
+Select all files and copy to clipboard
+Navigate to C:\inetpub\ and create a new directory called "InterjectDataApi"
+Copy all files to this folder
+Alternately you can copy these files to a folder anywhere
+
+### Setup Website in IIS
+
+Open IIS
+Right click Sites and click Add Website...
+
+IIS Settings:
+
+| Property | Description | This Example |
+|---|---|---|
+| Site name | Identifies this site in IIS (only visible to the admin) | InterjectDataApi |
+| Application Pool | Set of configuration settings | Keep the default* |
+| Physical path | Location where the website folder is (contains "web.config") | C:\inetpub\InterjectDataApi |
+| Pass-through authentication | Authentication used for protected resources | Keep the default setting "Application user" |
+| Binding Type | Internet Security Protocol | HTTP or HTTPS* |
+| IP Address | | Keep the default setting "All Unassigned" |
+| Port | Select a port for your website to run on | 8081 |
+| Host name | (Optional) Enter a name for the website | |
+
+**\*** _Upon creation of the website, the default behavior is a custom Application Pool is created matching the name of the website. This App Pool is preferred instead of the default App Pool._
+
+**\*** _If HTTPS is selected you will need to set up an SSL Certificate (not covered in this documentation)_
+
+For more info about setting up a website in IIS, see [Add a Web Site](https://learn.microsoft.com/en-us/iis/get-started/getting-started-with-iis/create-a-web-site){:target="_blank"}{:rel="noopener noreferrer"}.
+
+
+app pool
+https://learn.microsoft.com/en-us/iis/configuration/system.applicationhost/applicationpools/
+
+binding
+https://learn.microsoft.com/en-us/iis/configuration/system.applicationhost/sites/site/bindings/binding
+
+
+
+### Setting Security Permissions
+
+
+### Firewall
+
+
 
 ## **Setup API**
 
