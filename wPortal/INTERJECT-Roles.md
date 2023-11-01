@@ -19,7 +19,9 @@ You can add roles by selecting the role name from the drop down list. Then click
 <br><b>Note:</b> Changes will take place on the next successful login from the user.<br><br>
 </blockquote>
 
-### Standard
+### Standard Role
+
+_Grants standard permissions to use Interject core features and open live reports._
 
 | Permission | Location | Docs |
 |---|---|---|
@@ -27,13 +29,17 @@ You can add roles by selecting the role name from the drop down list. Then click
 | Upload reports to the MyFavorites folder in the Report Library (Test and Dev status only) | Report Library | [Learn more](/wAbout/ReportLibraryLinks.html) |
 | Override data connection in jDataPortal | Report Formulas | [Learn more](/wDeveloper/SetupjDataPortal.html#overriding-a-connection) |
 
-### Approver
+### Approver Role
+
+_Grants a user permission to approve reports by changing their status in the Report Library._
 
 | Permission | Location | Docs |
 |---|---|---|
 | Change report status| Report Library | [Learn more](/wAbout/Report-Library-Basics.html#status) |
 
-### Editor
+### Editor Role
+
+_Grants a user permission to edit and upload reports to the Report Library and Data Portals._
 
 | Permission | Location | Docs |
 |---|---|---|
@@ -43,31 +49,41 @@ You can add roles by selecting the role name from the drop down list. Then click
 | Create, Update, Delete, Clone, and Enabled/Disable Data Portals | Portal Site | [Learn more](/wPortal/Data-Portals.html) |
 | Create, Update, and Delete Data Portal parameters | Portal Site | [Learn more](/wPortal/Data-Portals.html#overview-of-parameters) |
 
-### Corporate
+### Corporate Role
+
+_Grants permission to view and access restricted Corporate folders in the Report Library._
 
 | Permission | Location | Docs |
 |---|---|---|
-| For Corporate abilities and access to any restricted Corporate folders | Report Library | Coming soon |
+| Corporate abilities and access to any restricted Corporate folders | Report Library | Coming soon |
 
-### Protector
+### Protector Role
+
+_Grants permission to use the Interject Sheet Protector._
 
 | Permission | Location | Docs |
 |---|---|---|
 | Use the Interject Sheet Protector to protect and unprotect sheets or workbooks | Sheet Protector | [Learn more](/wGetStarted/L-Create-Protecting.html) |
 
-### CustomerItems
+### CustomerItems Role
+
+_Grants permissions to execute Custom Commands._
 
 | Permission | Location | Docs |
 |---|---|---|
-| Execute items (non-scheduled) in Customer Commands | Custom Commands | [Learn more](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#custom-commands) |
+| Execute items (non-scheduled) in Custom Commands | Custom Commands | [Learn more](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#custom-commands) |
 
-### SchedulerAdmin
+### SchedulerAdmin Role
+
+_Grants permission of schedule items in Custom Commands._
 
 | Permission | Location | Docs |
 |---|---|---|
 | Full control of the scheduled items in Custom Commands | Custom Commands | [Learn more](/bApps/bFinancials/Configure.html) |
 
-### ClientAdmin
+### ClientAdmin Role
+
+_Grants all Interject permissions with the exception of the Corporate role._
 
 | Permission | Location | Docs |
 |---|---|---|
@@ -88,5 +104,3 @@ You can add roles by selecting the role name from the drop down list. Then click
 | Set application data source | Diagnostics | [Learn more](/wIndex/Diagnostics.html#support) |
 | Set Enterprise Connection | Diagnostics | [Learn more](/wIndex/Diagnostics.html#system-tools) |
 | Launch the License Management Form | Diagnostics | [Learn more](/wIndex/Diagnostics.html#support) |
-|  |  | [Learn more]() |
-|  |  | [Learn more]() |
