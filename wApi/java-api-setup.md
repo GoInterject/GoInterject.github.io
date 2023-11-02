@@ -1,7 +1,7 @@
 ---
 layout: custom
 title:  Java API Setup
-keywords: [data api, java, setup, spring framework]
+keywords: [data api, web api, java, setup, spring framework]
 description: Shows how to setup an INTERJECT Java data api.
 ---
 
@@ -16,7 +16,7 @@ Interject allows data flow from custom sources through a web API. The Interject 
 
 ###  Get the Code
 
-With Git, you can clone the repository directly to your system:
+With Git, you can clone the repository directly to your system. Navigate to the desired directory and run the following command:
 
 ```git
 git clone https://github.com/GoInterject/ids-java-api.git
@@ -24,7 +24,7 @@ git clone https://github.com/GoInterject/ids-java-api.git
 
 **Note:** If this repo is private and you need access, please [contact us](mailto:help@gointerject.com). It will be public soon.
 
-Alternatively you can download the zip file and unpack manually:
+Alternatively you can download the [zip file](https://github.com/GoInterject/ids-java-api/archive/refs/heads/main.zip){:target="_blank"}{:rel="noopener noreferrer"} and unpack manually:
 
 ![](/images/API/JavaDownloadZip.png)
 <br>
