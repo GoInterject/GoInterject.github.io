@@ -402,6 +402,8 @@ troubleshoot:
       path: /wTroubleshoot/WebProxy.html
     - title: Cloud File Uploads Incorrectly
       path: /wTroubleshoot/Cloud-File.html
+    - title: AdxLoader Don't Match
+      path: /wTroubleshoot/AdxLoader.html
 - sectiontitle: Report Errors
   path: /wTroubleshoot/Reports.html
   section:
