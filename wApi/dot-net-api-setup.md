@@ -11,9 +11,9 @@ Interject allows data flow from custom sources through a web API. The Interject 
 
 ### Requirements
 
--  [Internet Information Services (IIS)](https://www.iis.net/){:target="_blank"}{:rel="noopener noreferrer"}
-- [.NET Framework >= 4.5.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework){:target="_blank"}{:rel="noopener noreferrer"}
-- [.NET SDK](https://dotnet.microsoft.com/download){:target="_blank"}{:rel="noopener noreferrer"}
+-  [Internet Information Services (IIS)](https://www.iis.net/){:target="_blank"}{:rel="noopener noreferrer"} (if hosting with IIS)
+- [.NET >= 7.0](https://dotnet.microsoft.com/en-us/download/dotnet){:target="_blank"}{:rel="noopener noreferrer"}
+- [.NET SDK](https://dotnet.microsoft.com/download){:target="_blank"}{:rel="noopener noreferrer"} (for developing)
 
 <blockquote class=highlight_note>
 <b>Note:</b> If you intend to use this API on Linux or macOS, it is necessary to download <a href="https://www.mono-project.com/" target="_blank" rel="noopener noreferrer">Mono</a>, the cross platform open-source development platform based on the .NET Framework.
@@ -230,8 +230,9 @@ If this API offers public access, then connection strings should not be shared i
 
 * Determine a meaningful name for the connection string (preferably without spaces) This name will be used by an Interject DataPortal Connection, and it will reference the connection string within the `appsettings.json`. Names must be unique.
 * Open the `appsettings.json` file (in the `interject-dotnet-api` directory) in any text editor or code IDE.
-* The contents are formatted as XML. Locate the section <ConnectionStrings>.
-* Add a new line which uses the Name of the Connection String and its value.
+* Add a new entry in the list of ConnectionStrings collection.
+
+Example of a connection string entry:
 
 ```xml
 "Connections": {
