@@ -329,9 +329,7 @@ Developer:
           path: /wApi/python-api-custom-functions.html
     - title: Java Api Setup
       path: /wApi/java-api-setup.html
-- title: Request Context Parse
-  path: /wIndex/Request-Context-Parse.html
-- sectiontitle: Developing SQL with Interject
+- sectiontitle: Developing With Interject
   path: /wGetStarted/Developing-with-INTERJECT.html
   section:
   - title: Interject Website Portal
@@ -359,12 +357,16 @@ Developer:
       path: /wDeveloper/L-Dev-EditingDataSave.html
     - title: "Develop: Insert & Delete Data Save"
       path: /wDeveloper/L-Dev-InsertDeleteDataSave.html
+  - title: Request Context Parse
+    path: /wIndex/Request-Context-Parse.html
   - title: Security Best Practices
     path: /wGetStarted/Security-Best-Practices.html
   - title: Managing Settings Cache
     path: /wGetStarted/Managing-Settings-Cache.html
   - title: "Error Handling (RAISERROR and UserNotice)"
     path: /wGetStarted/L-Dev-Error-Handling.html
+  - title: Setting Up the jDataPortal
+    path: /wDeveloper/SetupjDataPortal.html
 - sectiontitle: Security &amp; Authentication
   path: /wAbout/TLS.html
   section:

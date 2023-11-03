@@ -12,6 +12,8 @@ The jDataPortal function establishes a connection to an Interject DataPortal tha
 
 For an example of this function, see [Lab Dev: Customer Aging Detail](/wGetStarted/L-Dev-CustomerAgingDetail.html).
 
+For instructions on how to set up this function, see [Setting Up the jDataPortal](/wDeveloper/SetupjDataPortal.html).
+
 ###  Function Arguments
 
 <button class="collapsible-parameter">**DataPortalName**<br>The name of the Interject DataPortal that will be used as the data source for this function.</button>

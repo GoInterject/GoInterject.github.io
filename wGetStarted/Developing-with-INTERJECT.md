@@ -1,5 +1,5 @@
 ---
-title: Developing with Interject
+title: Developing With Interject
 layout: custom
 keywords: [develop, database, build, create, SQL]
 description: This section is for professional developers who create the data pathways for reports and applications that can edit data. To facilitate this section, we provide a sample database to assist in training.

@@ -1,5 +1,5 @@
 ---
-title: Setting up the jDataPortal
+title: Setting Up the jDataPortal
 layout: custom
 keywords: [portal, connection, override, command]
 description: The jDataPortal is a powerful Interject function that not only allows users to customize the connection to an Interject Data Portal. In addition to establishing a connection to a Portal, users can also override certain parameters of the Portal to customize their reporting needs.
@@ -79,7 +79,7 @@ Now Pull the data again and notice the results are in descending order by Compan
 ![](/images/SetupjDataPortal/ResultsOrdered.png)
 <br>
 
-The **OrderBy** parameter excepts multiple column names (e.g. "CompanyName, ContactTitle). Some key points:
+The **OrderBy** parameter accepts multiple column names (e.g. "CompanyName, ContactTitle"). Some key points:
 
 * This parameter is not case sensitive
 * Brackets may or may not surround column names
