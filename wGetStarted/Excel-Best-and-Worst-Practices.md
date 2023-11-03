@@ -44,6 +44,10 @@ Depending on the desktop memory and CPU, it is feasible to import 400,000+ recor
 
 Similar to most website applications, you typically process only a few hundred rows before drilling to additional detail. Consider leveraging the same workflow design experience as you would when designing a website application. This helps create an interface where your users have the ideal size of data to work with.
 
+### Empty Cell Formatting
+
+Sometimes in the course of report building, your report may collect empty cells that still carry formatting. Over time this issue can grow and cause performance issues. Excel has a feature that can optimize your report by removing the formatting of these unused cells. The "Check Performance" feature is found on the "Performance" tab of the Excel Ribbon. For more information on this feature, see [Cleanup Cells](https://support.microsoft.com/en-us/office/cleanup-cells-in-your-workbook-edcc579f-b82f-495b-8d31-e786cd11717b){:target="_blank"}{:rel="noopener noreferrer"}.
+
 ### Conditional Formatting
 
 Conditional formatting can not only be difficult to manage because the formulas are not as visible, but it also adds processing for Excel. To reduce the complexity of conditional formatting configure the formula logic in the spreadsheet with a True/False result. Then you can use **A5 = True** as a simple formula in the conditional formatting to define the required formats. This best practice helps performance by applying conditional formatting to an organized structure of ranges instead of disparate ranges that may duplicate calculations. It is beneficial to keep the conditional formulas organized. It is also helpful to use them in moderation. Conditional formats are not initially visible, so using them can quickly get out of control.
