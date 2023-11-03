@@ -16,7 +16,7 @@ This issue results in an error message upon opening Excel:
 <br>
 
 <blockquote class=highlight_note>
-<b>Note:</b> This file is a binary file so clicking to open this file will display gibberish characters. Simply click "No" and then perform the following steps to fix.
+<b>Note:</b> This file is a binary file so clicking to open this file will display unreadable characters. Simply click "No" and then perform the following steps to fix.
 </blockquote>
 
 ### Cause of Error
