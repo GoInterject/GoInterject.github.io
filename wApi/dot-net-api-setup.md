@@ -1,221 +1,268 @@
 ---
 layout: custom
-title:  ".NET API Setup"
-date:   2018-10-12 9:03:02 -0700
-categories: API Developer
+title:  .NET API Setup
+keywords: [data api, web api, c#, setup, .NET framework, IIS, server]
+description: Shows how to setup an INTERJECT .Net data api.
 ---
 
+##  Overview
 
-##  **Overview**
+Interject allows data flow from custom sources through a web API. The Interject Java API is built upon C# and the [.Net Framework](https://learn.microsoft.com/en-us/dotnet/framework/){:target="_blank"}{:rel="noopener noreferrer"}.
 
-In this walkthrough we will setup an Interject Data API in C# which can be used to manage dataflow to and from Interject Reports. 
+### Requirements
 
+-  [Internet Information Services (IIS)](https://www.iis.net/){:target="_blank"}{:rel="noopener noreferrer"} (if hosting with IIS)
+- [.NET >= 7.0](https://dotnet.microsoft.com/en-us/download/dotnet){:target="_blank"}{:rel="noopener noreferrer"}
+- [.NET SDK](https://dotnet.microsoft.com/download){:target="_blank"}{:rel="noopener noreferrer"} (for developing)
 
-##  **Requirements**
+<blockquote class=highlight_note>
+<b>Note:</b> If you intend to use this API on Linux or macOS, it is necessary to download <a href="https://www.mono-project.com/" target="_blank" rel="noopener noreferrer">Mono</a>, the cross platform open-source development platform based on the .NET Framework.
+</blockquote>
 
-**Minimum Requirements:**
-- The machine should be running IIS as a web server
-- The machine needs at least .Net framework 4.5.2
+### Get The Code
 
-**Getting .Net**<br>
-The first step is to install the .NET SDK that best fits your system. These downloads can be found on [Microsoft's .NET Downloads](https://dotnet.microsoft.com/download) page.
-
-
-> **NOTE:** if you intend to use the data api on linux or macOS, it is necessary to [download mono](https://www.mono-project.com/), the cross platform open-source development platform based on the .NET Framework.
-
-
-##  **Get The Code**
-Once .NET is installed then clone or download the `SimpleDataApi` repository:
-
-<!---
-{% include codeHeader.html %}
-
-
-<div class="code-header">
-  <button class="copy-code-button">
-    Copy
-  </button>
-</div>
---->
+With Git, you can clone the repository directly to your system. Navigate to the desired directory and run the following command:
 
 ```git
-git clone https://github.com/GoInterject/ids-dotnet-api
+git clone https://github.com/GoInterject/ids-dotnet-api.git
 ```
 
-Note: If this repo is private and you need access, please [contact us](mailto:help@gointerject.com). It will be public soon.
+**Note:** If this repo is private and you need access, please [contact us](mailto:help@gointerject.com). It will be public soon.
 
-## **Setup API**
+Alternatively you can download the [zip file](https://github.com/GoInterject/ids-dotnet-api/archive/refs/heads/main.zip){:target="_blank"}{:rel="noopener noreferrer"} and unpack manually:
 
-### **1. Verify Available DNS**
+![](/images/dot-net-api/DotNetDownloadZip.png)
+<br>
 
-Be sure there is a DNS name available for this API's website. Any standard DNS setting will work, so long as it resolves to the web server that you are using. 
+### The Repo
 
-### **2. Define Project Folder**
+The repo contains two code bases: the `interject.api` code and the `interject.data.api` code. The Interject.Api contains the code relating to the handling of Interject requests, formatting data, and returning responses to the Interject Addin. This package is available on Nuget, the central package repository. The code base is included in the repo for preview.
 
-Choose a folder to hold the API.
-The default for Windows is to use a subfolder in "inetpub" but any folder is OK. The API website files should be kept in their own folder, named accordingly.
+The Interject.Data.Api contains the code relating to controllers and endpoints. The Interject.Api package is imported from Nuget into the Interject.Data.Api with the using statement:
 
-<img class="img-modal" src="/images/dot-net-api/choose-folder.png" width="50%" onclick="zoom_img(this)" />
+```c#
+using Interject.Api
+```
 
+### Getting IIS
 
-### **3. Copy API files**
+Internet Information Services ([IIS](https://learn.microsoft.com/en-us/iis/get-started/introduction-to-iis/iis-web-server-overview){:target="_blank"}{:rel="noopener noreferrer"}) for Windows Server is a flexible, secure and manageable Web server for hosting anything on the Web. For most cases, the default roles and features of IIS will suffice. For more information, see [Roles, Role Services, and Features](https://learn.microsoft.com/en-us/windows-server/administration/server-core/server-core-roles-and-services){:target="_blank"}{:rel="noopener noreferrer"}.
 
-Copy the API files into this folder. The root of the API file tree has the crucial "web.config" file.
+For detailed information on IIS installation, see [here](https://learn.microsoft.com/en-us/iis/application-frameworks/scenario-build-an-aspnet-website-on-iis/configuring-step-1-install-iis-and-asp-net-modules){:target="_blank"}{:rel="noopener noreferrer"}.
 
-<img class="img-modal" src="/images/dot-net-api/project-api-structure.png" width="45%" onclick="zoom_img(this)" />
+#### Windows
 
-- **a )**  It is possible to copy the source code files along with compiled code files. This is optional. 
-- **b )**  For public facing sites, it is safer to use the Visual Studio "Deploy" process to package up a site so that peripheral files are removed. Certain files can be distributed by IIS if they exist in the website folder
-- **c )**  The files you received may contain a parent folder of "development" files for Visual Studio. However, only the API files should be deployed on the webserver.
-- **d )**  The root of the website can be identified by some of the core files that compose the site: 
-    - App_Start 
-    - Global.asax 
-    - Web.config
-- **e )** The Web.config file will be updated later.
+Open the Control Panel and click on **Turn Windows features on or off**:
 
+![](/images/dot-net-api/TurnWindowsFeaturesOn.png)
+<br>
 
-### **4. Open IIS Manager on the web server.**
+Under IIS, select the components you which to install:
 
-IIS (Internet Information Services) is the software which exposes a website to the rest of the network (or internet) 
+![](/images/dot-net-api/IISFeaturesOnOrOff.png)
+<br>
 
-> **NOTE:** If IIS has never been configured, it may require specific instructions based on the web server's specific operating system<br>
-> External links:<br>
-> [Windows server 2016](https://www.rootusers.com/how-to-install-iis-in-windows-server-2016/)<br>
-> [Windows 10](https://www.betterhostreview.com/turn-on-iis-windows-10.html)
+#### Windows Server Manager
 
-<img class="img-modal" src="/images/dot-net-api/iis-manager.png" width="40%" onclick="zoom_img(this)" />
+Click **Manage** and then **Add Roles and Features**:
 
-### **6.  IIS Manager looks like this**
+![](/images/dot-net-api/AddRolesAndFeatures.png)
+<br>
 
-<img class="img-modal" src="/images/dot-net-api/iis-manager-view.png" width="45%" onclick="zoom_img(this)" />
+Follow the wizard that appears and under "Server Roles", select the Web Server (IIS) components you which to install:
 
+![](/images/dot-net-api/ServerRoles.png)
+<br>
 
-### **7.  Create a new website by Right-Clicking on the "Site" node**
+### Publishing
 
-<img class="img-modal" src="/images/dot-net-api/site-add-website.png" width="40%" onclick="zoom_img(this)" />
+Publishing the web API varies depending on your development environment:
 
+* [Visual Studio](https://learn.microsoft.com/en-us/dotnet/core/tutorials/publishing-with-visual-studio){:target="_blank"}{:rel="noopener noreferrer"}
+* [VS Code](https://learn.microsoft.com/en-us/dotnet/core/tutorials/publishing-with-visual-studio-code){:target="_blank"}{:rel="noopener noreferrer"}
+* [.NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-publish){:target="_blank"}{:rel="noopener noreferrer"}
 
-- **a )**	<u>Site name</u>: seen only by the admin of the web server. Choose a meaningful name to identify this API. Eg. "Interject Data API"
+### Deployment
 
-- **b )**  Notice that when Choosing a Site Name, the <u>"Application Pool"</u> will use the new name by default. This is preferred. It is not the best practice to use the "DefaultAppPool" which is seen at first. Instead, each site should have its own app pool with a matching name. The App Pool basically acts like the Windows User for that particular site. Permissions assigned to the AppPool are the applicable permissions for the web site 
+Determine where you want your Web API files to reside. The default directory for Windows is "inetpub" located on the C drive but any folder will do. It is recommended to use a separate directory for the source rather than the published directory. 
 
-- **c )**  <u>Physical path</u>: Navigate to the root folder where the web.config file exists (see step #3) at the start of these instructions.
+For more information, see [Host ASP.NET](https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/iis/){:target="_blank"}{:rel="noopener noreferrer"}.
 
-- **d )**  <u>Connect as</u>...: keep the default setting which is to use the "Application user" which is the same as the AppPool. 
+### Set Up Website in IIS
 
-<img class="img-modal" src="/images/dot-net-api/connect-as.png" width="50%" onclick="zoom_img(this)" />
+Begin by opening up IIS. With Windows, click the **Start** button and type in "IIS":
 
-- **e )** <u>Binding Type</u>: The binding can use either HTTP or HTTPS. This document does not describe how to set up an SSL certificate for HTTPS bindings. Any public facing site must use HTTPS. 
+![](/images/dot-net-api/StartIIS.png)
+<br>
 
-- **f )** <u>IP address</u>: This setting can be left as the default for "All Unassigned" a Specific IP address can be used if this web server responds to multiple IP addresses. It is more common to use a specific IP address when dealing with multiple SSL certificates on the same web server. 
+With Windows Server Manager, click on **Tools** and then **IIS**:
 
-- **g )** <u>Port</u> will normally follow the default 80 for Http and 443 for Https, unless a network administrator requires an override.
+![](/images/dot-net-api/ServerManagerIIS.png)
+<br>
 
-- **h )** <u>Host name</u>: The Host Name (aka Host Header) Is used to differentiate multiple websites that are hosted on the same web server. This should match the DNS setting that is configured for this API. (see step #1 at the start of this document)
+In the left explorer pane, right click "Sites" and then select "Add Website..."
 
-An example of an API used within a company's intranet is here:
-<img class="img-modal" src="/images/dot-net-api/api-intranet.png" width="60%" onclick="zoom_img(this)" />
+![](/images/dot-net-api/AddWebsite.png)
+<br>
 
+The following IIS Settings will need to be setup for the website:
 
-### **8. If these settings need to be changed later. Select the site with IIS manager, and choose the "Bindings" or "Basic Settings" in the right margin**
+| Property | Description | Value |
+|---|---|---|
+| Site name | Identifies this site in IIS (only visible to the admin) | Enter a descriptive value |
+| Application Pool | Set of configuration settings | Keep the default<sup>1</sup> |
+| Physical path | Source folder for the website | Enter the directory you set up in [deployment](#deployment) |
+| Pass-through authentication | Authentication used for protected resources | Keep the default setting "Application user" |
+| Binding Type | Internet Security Protocol | HTTP or HTTPS<sup>2</sup> |
+| IP Address | Addresses the server will listen to | Keep the default setting "All Unassigned"<sup>3</sup> |
+| Port | Select a port for your website to run on | Unused port<sup>4</sup> |
+| Host name | (Optional) Enter a name for the website | Enter the name of the host |
 
-<img class="img-modal" src="/images/dot-net-api/basic-and-bindings.png" width="70%" onclick="zoom_img(this)" />
+---
+**<sup>1</sup>** _Upon creation of the website, the default IIS behavior is a custom Application Pool is created matching the name of the website. This App Pool is preferred instead of the default App Pool._
 
+**<sup>2</sup>** _If HTTPS is selected you will need to set up an SSL Certificate (not covered in this documentation - see [here](https://learn.microsoft.com/en-us/iis/manage/configuring-security/how-to-set-up-ssl-on-iis){:target="_blank"}{:rel="noopener noreferrer"})_
 
-### **9. Confirm settings for the App Pool**
-The App Pool should have been created when the site was created.
-You can see the specific information in the "Application Pools" area of the IIS Manager.
+**<sup>3</sup>** _This setting can be left as the default or a specific IP address can be used if this web server responds to multiple IP addresses. It is more common to use a specific IP address when dealing with multiple SSL certificates on the same web server._
 
-- **a )**	Make sure the AppPool is using .NET v4.0 and an "Integrated" pipeline (these are the defaults)
-- **b )**	Make a note of the specific name of the App Pool (in this screenshot its "Interject Data API")
+**<sup>4</sup>** _Normally follows the default 80 for HTTP and 443 for HTTPS, unless a network administrator requires an override. If a used port is entered, you will need to enter a host name._
 
-<img class="img-modal" src="/images/dot-net-api/app-pools.png" width="30%" onclick="zoom_img(this)" />
+An example of an API set up within a company's intranet is here:
 
-- **c )**	If the site gets frozen, you can restart it by "recycling" the App Pool (Right Click it), which clears out all memory and restarts the site
+![](/images/dot-net-api/IISSettingsExample.png)
+<br>
 
-<img class="img-modal" src="/images/dot-net-api/app-pools-view.png" width="40%" onclick="zoom_img(this)" />
+For more info about setting up a website in IIS, see [Add a Web Site](https://learn.microsoft.com/en-us/iis/get-started/getting-started-with-iis/create-a-web-site){:target="_blank"}{:rel="noopener noreferrer"}.
 
+### Windows Host File
 
-### **10. Set up website permissions using the App Pool. In IIS Manager, Right-Click the API website and choose "Edit Permissions" (this is the same as editing security permissions on the folder itself, within Windows)**
+The Windows hosts file is typically used to manually map host names to IP addresses when DNS resolution is not available or when you want to test a website before making it publicly accessible. If you are testing locally (127.0.0.1) or want to use custom domains, you will need to edit this file.
 
-<img class="img-modal" src="/images/dot-net-api/edit-permissions.png" width="40%" onclick="zoom_img(this)" />
+The host file is located in the "System32" folder of your Windows installation:
 
-- **a )**	Choose the "Security" tab and then the "Edit" button, and then the "Add" button.
-- **b )**	This is the process to "find" The App Pool
-- **c )**	Make sure the "From this location" is the local computer (It may default to a company domain, if it in place)
-- **d )**	Enter this into the text-box "IIS AppPool \ ..." where the actual App Pool name is used after the slash "IIS AppPool\Interject Data API" for example
-- **e )**	Use the "Check Names" button. 
+C:\Windows\System32\drivers\etc\host
 
+Open this file as an Administrator in order to save changes.
 
-<img class="img-modal" src="/images/dot-net-api/edit-permissions-check-names.png" width="70%" onclick="zoom_img(this)" />
+![](/images/dot-net-api/HostFile.png)
+<br>
 
-- **f )**	If the App Pool was identified successfully, then you should see the App Pool name as underlined
+### App Pool
 
-<img class="img-modal" src="/images/dot-net-api/app-pools-underline.png" width="40%" onclick="zoom_img(this)" />
+The Application Pools can be viewed by selecting it in the left hand explorer. Verify the pool being used is v4.0 for the .NET CLR Version and is using an integrated pipeline.
 
-- **g )**	Press OK and the App Pool will appear in the "Group or user names" box.
+![](/images/dot-net-api/AppPool.png)
+<br>
 
-- **h )**	While it is selected, check the "Modify" setting of the permissions. This will allow the App Pool to have enough permissions over the API Website to behave normally.
+### Setting Security Permissions
 
-<img class="img-modal" src="/images/dot-net-api/permissions-modify.png" width="40%" onclick="zoom_img(this)" />
+Depending on your use case, you may need to give the App Pool "modify" permissions.
 
-- **i )**	Use the "Apply" button. And "OK" to close the windows.
+**Step 1:** Right click the website and select "Edit Permissions..."
 
+![](/images/dot-net-api/EditPermissions.png)
+<br>
 
-### **11.	At this point, the website should be responding to browser requests. But it still needs a little more configuration in order to process Interject reports. First, confirm that the site is behaving by visiting it in a browser.**
+**Step 2:** On the **Security** tab, click **Edit**.
 
-- **a )**	Use the DNS setting from #1 at the start of these instructions, and paste them in a browser. (this was also added to the "Binding" of the site in IIS manager)
-- **b )**	The default page of the API should appear. If it appears at all, then the entire API should be functioning normally.
-- **c )**	The default page should look like the following image. This web page is normally not seen by users. It contains some notes for developers who may wish to customize the Data API. This web page is normally not seen by users. It contains some notes for developers who may wish to customize the Data API.
+![](/images/dot-net-api/EditSecurity.png)
+<br>
 
-<img class="img-modal" src="/images/dot-net-api/default-page.png" width="60%" onclick="zoom_img(this)" />
+**Step 3:** You will need to first add the App Pool to the list of groups. Click on **Add**.
 
-- **d )**	If there is an error it may look something like this:
+![](/images/dot-net-api/AddPermission.png)
+<br>
 
+**Step 4:** To expand the search for the App Pool, you will need to select the root system. Click on **Location**.
 
-<img class="img-modal" src="/images/dot-net-api/server-error.png" width="40%" onclick="zoom_img(this)" />
+![](/images/dot-net-api/Locations.png)
+<br>
 
+**Step 5:** Select the root system name and click **OK**.
 
+![](/images/dot-net-api/SelectSystemName.png)
+<br>
 
+**Step 6:** For the object names to select, enter the following and click **Check Names**:
 
-### **12.  Set up Data Connection Strings for "Pass-Through" Interject requests**
-The most common use of a Data API is for Intranet use. In this scenario a connection string can be shared by all users, while also protected within the web.config of the Data API.
+```
+IIS AppPool\<Site Name>
+```
 
-Interject supports DataPortal connections for both: A)Direct DB access and B)API access
-When using an API, you can tell the API code to perform certain DB actions by using "PassThrough" settings. These are configured in the DataPortal and DataPortal Connection. For these to work, they need to be able to find a connection string in the API.
+![](/images/dot-net-api/CheckNames.png)
+<br>
 
-If this API offers public access, then connection strings should not be shared in the web.config. Instead a custom validation lookup process should be implemented, which also requires some custom coding.
+The App Pool name should appear underlined. Click **OK** to add the App Pool to the list of groups.
 
-- **a )**	Determine a meaningful name for the connection string (preferably without spaces) This name will be used by an Interject DataPortal Connection, and it will reference the connection string within the web.config. Names must be unique.
-- **b )**	Open the web.config file in any text editor or code IDE(you can find it in step #3 at the start of this document)
-- **c )**	The contents are formatted as XML. Locate the section `<connectionStrings>`
-- **d )**	Add a new line which uses the Name of the Connection String and its value.
+![](/images/dot-net-api/AppPoolNameUnderlined.png)
+<br>
+
+**Step 7:** Now that the App Pool has been added to the group entities, ensure the **Modify** permission is checked for it.
+
+![](/images/dot-net-api/Modify.png)
+<br>
+
+Finally click **Apply** and then **OK** twice to save the changes.
+
+### Firewall
+
+When setting up a website in Internet Information Services (IIS), you may need to edit your firewall permissions to allow incoming traffic to the web server. This is an important step in making your website accessible to users over the network. 
+
+### Testing
+
+At this point, the server in IIS should be running.
+
+![](/images/dot-net-api/IISServerRunning.png)
+<br>
+
+To confirm the API is working, navigate to the host name or port you set up [previously](#setup-website-in-iis) and access the status endpoint ("api/v1/status"). You should see "true" if the API is working.
+
+![](/images/dot-net-api/ApiRunning.png)
+<br>
+
+### Connection Strings
+
+The most common use of a Data API is for Intranet use. In this scenario a connection string can be shared by all users, while also protected within the Data API.
+
+Interject supports DataPortal connections for both direct DB access and API access. When using an API, you can code the API to perform certain DB actions by using "PassThrough" settings. These are configured in the DataPortal and DataPortal Connection. For these to work, they need to be able to find a connection string in the API.
+
+If this API offers public access, then connection strings should not be shared in the `web.config` file. Instead a custom validation lookup process should be implemented, which also requires some custom coding. This Data API uses a `appsettings.json` file for this purpose.
+
+* Determine a meaningful name for the connection string (preferably without spaces) This name will be used by an Interject DataPortal Connection, and it will reference the connection string within the `appsettings.json`. Names must be unique.
+* Open the `appsettings.json` file (in the `interject-dotnet-api` directory) in any text editor or code IDE.
+* Add a new entry in the list of ConnectionStrings collection.
+
+Example of a connection string entry:
 
 ```xml
-<!--Windows Authentication to MSSqlServer Express-->
-<add name="DataApi_NTAuth" connectionString="Server=.\sqlexpress; Database=MyDbName; integrated security=true"               providerName="System.Data.SqlClient" />
-
-<!--Sql Server Authentication to MSSqlServer-->
-<add name="DataApi_UsrPwd" connectionString="Server=MyServerName; Database=MyDbName; User ID=MyUserName; Password=MySecret;" providerName="System.Data.SqlClient" />
-
-<!--Using the MySQL connector plugin   (note providerName="MySql.Data.MySqlClient") see http://dev.mysql.com/downloads/connector/net/--> 
-<add name="DataApi_MySql"  connectionString="server=MyServerName; database=MyDbName; User Id=MyUserName; password=MySecret;" providerName="MySql.Data.MySqlClient" />
-    
-<!--ODBC driver to Oracle or MySQL-->
-<add name="DataApi_ODBC"   connectionString="Driver={Oracle in Ora_32bit}; dbq=MyDbName; Uid=MyUserName; Pwd=MySecret;"      providerName="System.Data.SqlClient" />
+"Connections": {
+    "ConnectionStrings": [
+        {
+        "Name": "localhost",
+        "ConnectionString": "Data Source=(local);Initial Catalog=interject_demos;Encrypt=False;Integrated Security=True"
+        }
+    ]
+}
 ```
 
+### Connecting to Interject
 
-### **13.  Additional settings in the web.config**
-In the web.config file there are app.settings which affect the behavior of the API.
-Double check that the web.config file has settings which match the ones below:
+With the API running and connection strings stored in the `appsettings.json` file, you can connect the Interject Addin by setting up a Data Connection and Data Portal on the [Portal Site](https://portal.gointerject.com/).
 
-```xml
-  <appSettings>
-    <add key="IdsPlatformApi" value="https://platform-api.GoInterject.com" />
-    <add key="Environment" value="Live" />
-  </appSettings>
-```
+For how to set up an API Data Connection, see [Portal: API Connection](/wPortal/L-Api-Connections.html). For Data Portals, see [Data Portals](/wPortal/Data-Portals.html).
 
-### **14.  Configure Data portals and Connections on the Portal Management site. The API is ready to test.**
+### Interject Docs
 
+For more information on the Data API, you can refer to the docs in the repo. These docs pertain to setting up Interject reports and functions. They are found in the `examples` directory:
+
+| File | Description |
+|---|---|
+| example.xlsx | An example Excel workbook that interacts with the API endpoints |
+| formula_jcolumndef | How to set up the [jColumnDef](/wIndex/jColumnDef.html) formula |
+| portal_parameters | How to set up Interject [parameters](/wPortal/Data-Portals.html#overview-of-parameters) |
+| report_fixed | How to set up an Interject [ReportFixed](/wIndex/ReportFixed.html) |
+| report_range | How to set up an Interject [ReportRange](/wIndex/ReportRange.html) |
+| report_save | How to set up an Interject [ReportSave](/wIndex/ReportSave.html) |
+| report_variable | How to set up an Interject [ReportVariable](/wIndex/ReportVariable.html) |
+| handler_pipeline | How to work with the `RequestHandler` pipeline to set up a SQL data connection and controller |
+| user_message | How to send [messages](/wGetStarted/L-Dev-Error-Handling.html) back to the Interject from the API |
