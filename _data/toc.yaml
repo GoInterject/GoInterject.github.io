@@ -404,6 +404,8 @@ troubleshoot:
       path: /wTroubleshoot/Cloud-File.html
     - title: AdxLoader Don't Match
       path: /wTroubleshoot/AdxLoader.html
+    - title: WebView2 Installation
+      path: /wTroubleshoot/WebView2.html
 - sectiontitle: Report Errors
   path: /wTroubleshoot/Reports.html
   section:
