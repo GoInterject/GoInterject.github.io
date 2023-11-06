@@ -275,7 +275,7 @@ You can add roles by selecting the role name from the drop down list. Then click
 <tr>
 <td> Create, Update, Delete, and Enable/Disable users </td>
 <td> Portal Site </td>
-<td> Coming soon </td>
+<td> <a href="https://docs.gointerject.com/wPortal/StaffPage.html">Learn more</a> </td>
 </tr>
 <tr>
 <td> Force refresh of cache data for all users </td>

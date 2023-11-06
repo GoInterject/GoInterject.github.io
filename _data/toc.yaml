@@ -311,10 +311,14 @@ portal:
     - sectiontitle: User Profile
       path: /wPortal/User-Profile.html
       section:
+      - title: Staff Page
+        path: /wPortal/StaffPage.html
       - title: Interject Roles
         path: /wPortal/INTERJECT-Roles.html
-      - title: Altering User Passwords
+      - title: Changing &amp; Resetting User Passwords
         path: /wPortal/Altering-User-Passwords.html
+      - title: Multi-Factor Authentication
+        path: /wPortal/MFA.html
 
 Developer:
 - sectiontitle: Api Developer
