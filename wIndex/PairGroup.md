@@ -51,6 +51,5 @@ For an example of this function, see [Lab Drill: Customer Aging](/wGetStarted/L-
 
 ###  Usable In These Functions
 
-* [PairGroup](PairGroup.html)
 * [ReportDefaults](ReportDefaults.html)
 * [ReportDrill](ReportDrill.html)
