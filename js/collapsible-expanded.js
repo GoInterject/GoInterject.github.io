@@ -8,10 +8,11 @@ $(document).ready(function(){
 	var i;
 
 	for (i = 0; i < collapse.length; i++) {
-		
 		collapse[i].addEventListener("click", function() {
 			// toggle between adding and removing active so color changes when hovering over button.
 			this.classList.toggle("clicked-expanded");
+			
+            // Toggle between hiding and showing text in the panel div
 			var panel = this.parentNode;
 			while (panel) {
 				if (panel.classList.contains('panel-expanded') ) {
