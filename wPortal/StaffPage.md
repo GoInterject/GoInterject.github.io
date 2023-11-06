@@ -14,24 +14,24 @@ The [Interject Portal](https://portal.gointerject.com/) site allows you to add, 
 
 The staff page includes a list of all users that have access to Interject within your company. To get there, first navigate to your company in the top right corner of the Portal site.
 
-![](/images/Users/SelectCompany.png)
+![](/images/StaffPage/SelectCompany.png)
 <br>
 
 On the left navigation pane, click **Staff**.
 
-![](/images/Users/ClickStaff.png)
+![](/images/StaffPage/ClickStaff.png)
 <br>
 
 You should see a list of staff under your company. You can view various information pertaining to the users here in list format.
 
-![](/images/Users/Staff.png)
+![](/images/StaffPage/Staff.png)
 <br>
 
-You can also set up multi factor authentication fromm here. For more information, see [MFA](/wPortal/MFA.html).
+You can also set up multi factor authentication from here. For more information, see [MFA](/wPortal/MFA.html).
 
 You will also see a list of External Admins. These are Interject staff members who have been set up for your company to help manage your data.
 
-![](/images/Users/ExternalAdmins.png)
+![](/images/StaffPage/ExternalAdmins.png)
 <br>
 
 ### View, Edit, Activate/Deactivate, Delete User
@@ -42,19 +42,19 @@ From the Staff page, you can do the following by hovering the cursor over the us
 * **Mark as Active/Inactive:** Enable or disable a user's access to Interject
 * **<font size="+1">&#x1F5D1;</font>:** Delete a user
 
-![](/images/Users/ProfileActiveDelete.png)
+![](/images/StaffPage/ProfileActiveDelete.png)
 <br>
 
 ### Add User
 
 To add a user, click the **Add User** button.
 
-![](/images/Users/AddUser.png)
+![](/images/StaffPage/AddUser.png)
 <br>
 
 The User Profile page appears.
 
-![](/images/Users/UserProfile.png)
+![](/images/StaffPage/UserProfile.png)
 <br>
 
 <blockquote class=highlight_note>
@@ -64,9 +64,14 @@ The User Profile page appears.
 
 #### Adding Details
 
-Click **More Options** to view more optional fields you can add. The first four fields (First Name, Last Name, Email Address, and Phone Number) are required, but the rest are optional. Add the information for the new user.
+Click **More Options** to view more optional fields you can add. 
 
-![](/images/Users/FillInNewUser.png)
+![](/images/StaffPage/MoreOptions.png)
+<br>
+
+The first four fields (First Name, Last Name, Email Address, and Phone Number) are required, but the rest are optional. Add the information for the new user.
+
+![](/images/StaffPage/FillInNewUser.png)
 <br>
 
 <blockquote class=highlight_note>
@@ -78,7 +83,7 @@ Click **More Options** to view more optional fields you can add. The first four 
 
 You have the option of setting an initial password for the user. (Be sure to fill in both the **New Password** and **Confirm Password** fields).
 
-![](/images/Users/SetPassword.png)
+![](/images/StaffPage/SetPassword.png)
 <br>
 
 For more about changing passwords, see [Altering User Passwords](/wPortal/Altering-User-Passwords.html).
@@ -87,19 +92,19 @@ For more about changing passwords, see [Altering User Passwords](/wPortal/Alteri
 
 When you are ready to save the user, click **Create**. 
 
-![](/images/Users/Create.png)
+![](/images/StaffPage/Create.png)
 <br>
 
 #### Welcome Email
 
 After creating the new user, you can send them a welcome email with the option of resetting their password.
 
-![](/images/Users/SendEmail.png)
+![](/images/StaffPage/SendEmail.png)
 <br>
 
 #### Roles
 
 You will see an option to add specific roles for the user. For more information about the different roles, see [Interject Roles](/wPortal/INTERJECT-Roles.html).
 
-![](/images/Users/Roles.png)
+![](/images/StaffPage/Roles.png)
 <br>
