@@ -57,8 +57,6 @@ about:
     path: /wAbout/Logging-In.html
   - title: Logging In/Out - Enterprise User
     path: /wAbout/Logging-In-Enterprise.html
-  - title: Adding a User
-    path: /wAbout/Adding-a-User.html
   - title: Report Library Basics
     path: /wAbout/Report-Library-Basics.html
   - title: Report Library Links
@@ -311,10 +309,14 @@ portal:
     - sectiontitle: User Profile
       path: /wPortal/User-Profile.html
       section:
+      - title: Staff Page
+        path: /wPortal/StaffPage.html
       - title: Interject Roles
         path: /wPortal/INTERJECT-Roles.html
-      - title: Altering User Passwords
+      - title: Changing &amp; Resetting User Passwords
         path: /wPortal/Altering-User-Passwords.html
+      - title: Multi-Factor Authentication
+        path: /wPortal/MFA.html
 
 Developer:
 - sectiontitle: Api Developer

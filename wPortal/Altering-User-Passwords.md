@@ -1,7 +1,7 @@
 ---
-title: Altering User Passwords
+title: Changing &amp; Resetting User Passwords
 layout: custom
-keywords: [user passwords, altering, changing, credentials]
+keywords: [user passwords, reset, altering, changing, credentials]
 description: This is a section that displays how to reset an Interject user’s password under the conditions that they are not logged in or they are logged in.
 ---
 * * *
@@ -27,7 +27,7 @@ This is a section that displays how to reset an Interject user’s password unde
 ![](/images/Passwords/03.jpg)
 <br>
 
-### Changing Password Without Logging In
+### Reset Password Without Logging In
 
 **Step 1** : To change a password without logging in you will first Navigate to the Interject Portal Site and click the forgot password button.
 
