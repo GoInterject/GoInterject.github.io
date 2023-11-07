@@ -14,21 +14,21 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Interject Documentation Site
-email: EugeneL@gointerject.com
+email: info@gointerject.com
 # description: >- # this means to ignore newlines until "baseurl:"
 #   Write an awesome description for your new site here. You can edit this
 #   line in _config.yml. It will appear in your document head meta (for
 #   Google search results) and in your feed.xml site description.
 # baseurl: / # the subpath of your site, e.g. /blog
 # url: https://gointerject.github.io # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: dukog
-github_username:  lyubar
+twitter_username: @gointerject
+github_username:  bille-interject
 
 # Build settings
 name: Interject Documentation
 markdown: kramdown
 theme: minima
-url: "https://docs.gointerject.com/" # the base hostname & protocol for your site
+url: "https://docs.gointerject.com" # the base hostname & protocol for your site
 plugins:
   - jekyll-feed
   - jekyll-redirect-from

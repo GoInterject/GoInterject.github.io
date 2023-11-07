@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /bApps/
+Disallow: /fonts/
+Disallow: /schemas/
+
+
+Sitemap: https://docs.gointerject.com/sitemap.xml
