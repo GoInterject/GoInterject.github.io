@@ -70,6 +70,15 @@ The only thing that needs to be changed in this report is the name of the Data P
 
 An additional table will be created to store the history of changes made to the targeted table, in this case `dbo.Northwind_Customers`. This history table will contain the current and previous column values. It also includes `EditedBy`, `ActionType`, and `DateEdited` columns to keep track of who did the change, what type of change occurred, and when the change took place.
 
+<blockquote class=highlight_note>
+<b>Note:</b> There are two types of tables to use for a history table: wide and tall. A wide table uses all the columns, both current and old, making it "wide". Thus multiple changes to a single record would only take up one record space in a wide history table.
+<br><br>
+A tall table would typically contain an attribute column to represent what column was changed. It also contains two columns representing the current value and the old value. A record in a tall table represents one single change to a column value.
+<br><br>
+This example uses a wide table for simplicity. In practice, a tall table is more efficient in storage for history tables.
+</blockquote>
+<br>
+
 Execute the following SQL code to create this history table:
 
 ```sql
