@@ -10,6 +10,8 @@ description: Release notes for the previous month's updates
 
 ### Excel Addin v2.5.0.22
 
+_Released 10/13/23_
+
 * ✅ `jDataPortal` DataResultNumber now supports Indexing from the end of the results - [See docs](/wDeveloper/SetupjDataPortal.html)
 
 * ✅ Update source of identity providers displayed in the connection manager to all id providers in current client (includes overrides)
@@ -25,6 +27,8 @@ description: Release notes for the previous month's updates
 <br>
 
 ### Portal Site
+
+_Released 10/18/23_
 
 * ✅ Added MFA config model to staff page in portal
 
@@ -44,4 +48,18 @@ description: Release notes for the previous month's updates
 
 ### Interject Platform
 
+_Released 10/13/23_
+
 * ✅ Added conditional access for user logins to allow control federated user logins to Interject - [See docs](/wDeveloper/ConditionalAccess.html)
+
+### Documentation Updates
+
+| Date | Type | Page | Changes |
+|---|---|---|---|
+| 10/3 | Update | [Validation Report](/wTroubleshoot/Validation-Report.html) | New sections |
+| 10/4 | New | [Checksums for Installers](/wDeveloper/InstallerValidation.html) | New page |
+| 10/6 | New | [Conditional Access](/wDeveloper/ConditionalAccess.html) | New page |
+| 10/18 | Update | [Drill: Financial Report](/wGetStarted/L-Drill-FinancialReport.html) | Updated content, screenshots |
+| 10/18 | Replace | [Develop: Editing Data Save](/wDeveloper/L-Dev-EditingDataSave.html) | Redesign of page |
+| 10/18 | Replace | [Develop: Insert & Delete Data Save](/wDeveloper/L-Dev-InsertDeleteDataSave.html) | Redesign of page |
+| 10/24 | New | [Setting Up the jDataPortal](/wDeveloper/SetupjDataPortal.html) | New page |

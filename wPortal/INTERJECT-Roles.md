@@ -156,7 +156,7 @@ You can add roles by selecting the role name from the drop down list. Then click
 </table>
 </div>
 
-### CustomerItems Role
+### CustomItems Role
 
 <button class="collapsible-expanded">Grants permissions to execute Custom Commands.
 </button>
@@ -248,7 +248,7 @@ You can add roles by selecting the role name from the drop down list. Then click
 <td> <a href="https://docs.gointerject.com/wGetStarted/L-Create-Protecting.html">Learn more</a> </td>
 </tr>
 <tr>
-<td> Execute items in Customer Commands </td>
+<td> Execute items in Custom Commands </td>
 <td> Custom Commands </td>
 <td> <a href="https://docs.gointerject.com/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#custom-commands">Learn more</a> </td>
 </tr>
