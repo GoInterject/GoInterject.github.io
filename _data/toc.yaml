@@ -149,20 +149,23 @@ getstarted:
           path: /wGetStarted/L-Create-HideRowCol.html
         - title: "Create: Advanced Row and Section Hiding"
           path: /wGetStarted/L-Create-AdvancedHideRowsSections.html
-    - title: "Create: Building jDropdown"
+    - sectiontitle: Creating Special Features
       path: /wGetStarted/L-Create-Dropdowns.html
-    - title: "Create: Working with Pivot Tables"
-      path: /wGetStarted/L-Create-PivotTable.html
-    - title: "Create: Special Column Definitions"
-      path: /wGetStarted/L-Create-SpecColDefs.html
-    - title: "Create: Protecting Sheets"
-      path: /wGetStarted/L-Create-Protecting.html
-    - title: "Create: Using Report Macro"
-      path: /wGetStarted/L-Create-ReportMacro.html
-    - title: "Create: Using the Retain Feature"
-      path: /wGetStarted/L-Create-RetainFeature.html
-    - title: "Create: Interject Run On Open"
-      path: /wGetStarted/L-Create-RunOnOpen.html
+      section:
+        - title: "Create: Building jDropdown"
+          path: /wGetStarted/L-Create-Dropdowns.html
+        - title: "Create: Working with Pivot Tables"
+          path: /wGetStarted/L-Create-PivotTable.html
+        - title: "Create: Special Column Definitions"
+          path: /wGetStarted/L-Create-SpecColDefs.html
+        - title: "Create: Protecting Sheets"
+          path: /wGetStarted/L-Create-Protecting.html
+        - title: "Create: Using Report Macro"
+          path: /wGetStarted/L-Create-ReportMacro.html
+        - title: "Create: Using the Retain Feature"
+          path: /wGetStarted/L-Create-RetainFeature.html
+        - title: "Create: Interject Run On Open"
+          path: /wGetStarted/L-Create-RunOnOpen.html
     - sectiontitle: Exporting Reports
       path: /wGetStarted/Exporting-Reports.html
       section:
