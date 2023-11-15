@@ -52,6 +52,8 @@ _Released 10/13/23_
 
 * ✅ Added conditional access for user logins to allow control federated user logins to Interject - [See docs](/wDeveloper/ConditionalAccess.html)
 
+<br>
+
 ### Documentation Updates
 
 | Date | Type | Page | Changes |
