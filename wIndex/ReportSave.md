@@ -165,7 +165,7 @@ For an example of this function, see [ Lab Dev: Customer Aging Detail ](/wGetSta
 | Argument Name  |  Example Mapping  |  Explanation   |  
 |------|------|------|
 |  Function Name  |  =ReportSave()  |  The name of this function.  |  
-|  DataPortal  |  "NorthwindInvoiceSave  |  This function will use the "NorthwindInvoiceSave" DataPortal for the data source.  |  
+|  DataPortal  |  "NorthwindInvoiceSave"  |  This function will use the "NorthwindInvoiceSave" DataPortal for the data source.  |  
 |  RowDefRange  |  B42:B58  |  The unique row IDs are designated to be in column B and the rows 42:58 will be saved.  |  
 |  Col Def Range  |  12:12  |  Row 12 is designated to contain the column names that will be saved via the data source.  |  
 |  ResultRange  |  14:14  |  Row 14 is designated to contain the column names that will be displayed when returning from the save.  |  
