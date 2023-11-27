@@ -36,6 +36,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - parse_block_html
+  - build_index
 
   # - jekyll-responsive-image
 
