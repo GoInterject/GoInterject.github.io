@@ -1,13 +1,16 @@
 # _plugins/build_index.rb
 
-puts "Running build_index.rb..."
+puts "Setting build index for hook post_write"
 
 Jekyll::Hooks.register :site, :post_write do |site|
-    # Build your index here
+  puts "Building index search_index.json"
+
+  # Build your index here
     index_content = build_index(site)
   
     # Specify the path and filename for the index file
-    index_file_path = File.join(site.dest, 'search_index.json')
+    parent_folder = File.expand_path("..", site.dest)
+    index_file_path = File.join(parent_folder, 'search_index.json')
   
     # Write the index content to the file
     File.write(index_file_path, index_content)
