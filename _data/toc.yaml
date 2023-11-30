@@ -387,6 +387,8 @@ Developer:
     path: /wAbout/Enterprise-Login-Setup.html
   - title: Federated Login Design
     path: /wAbout/Federated-Login-Design.html
+  - title: Connection Manager
+    path: /wDeveloper/ConnectionManager.html
 
 troubleshoot:
 - sectiontitle: Interject Support

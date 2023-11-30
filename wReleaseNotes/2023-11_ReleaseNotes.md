@@ -25,3 +25,4 @@ description: Release notes for the previous month's updates
 | 11/7 | Update | Added Interject icon to browser tabs | New icon |
 | 11/7 | Update | [Excel Best and Worst Practices](/wGetStarted/Excel-Best-and-Worst-Practices.html) | New section |
 | 11/7 | New | [Staff Page](/wPortal/StaffPage.html) | New page |
+| 11/30 | New | [Connection Manager](/wDeveloper/ConnectionManager.html) | New page |
