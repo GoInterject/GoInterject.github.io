@@ -179,7 +179,7 @@ For an example of this function, see [Lab Create: Inventory Variable](/wGetStart
 ###  Excel Formula Bar Example
 
 ```Excel
-=ReportVariable("NorthwindVariable",B18:B54,2:2,Param(I14,I15))
+=ReportVariable("NorthwindVariable",B18:B54,2:2,4:4,Param(I14,I15),,FALSE,FALSE)
 ```
 
 ###  Function Composition
@@ -190,7 +190,7 @@ For an example of this function, see [Lab Create: Inventory Variable](/wGetStart
 |  DataPortal  |  "NorthwindVariable"  |  This function will use the "NorthwindVariable" DataPortal for the data source.  |  
 |  RowDefRange  |  B18:B54  |  The names found in B18:B54 will be used to map to the column names found in row 2 (ColDefRange). Only data that intersects these names will be inserted on these rows. Data will be grouped by the names found in this range.  |  
 |  ColDefRange  |  2:2  |  The names found in row 2 will be used to map to the row names found in row B14:B27 (RowDefRange). Only data that intersects these names will be inserted on these columns.  |  
-|  Format Range  |    |  The formatting used in this range will be used as a template for the inserted data.  |  
+|  Format Range  | 4:4 |  The formatting used in row 4 will be used as a template for the inserted data.  |  
 |  Parameters  |  Param(I14,I15)  |  Cells I14 and I15 will correspond to the parameters in the data source to filter the inserted data.  |  
 |  RetainRowColumns  |  ""  |  Left blank to indicate not to retain any data in the TargetDataRange (B14:H15).  |  
 |  InsertNewRowsWithin  |  FALSE  |  This value is automatically set to false since RetainRowColumns is blank.  |  
