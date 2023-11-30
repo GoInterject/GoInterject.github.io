@@ -241,7 +241,7 @@ The Connections button allows users to see a list of the connections that the re
 ![](/images/InterjectRibbon/Connections.png)
 <br>
 
-From the list, you can see all the connections for the entire workbook and their status.
+From the list, you can see all the connections associated with a company and their connection status. For more information, see [Connection Manager](/wDeveloper/ConnectionManager.html).
 
 ![](/images/InterjectRibbon/ConnectionsWindow.png)
 <br>
