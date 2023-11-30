@@ -40,12 +40,12 @@ If a discovery endpoint is not available we will need the following URLs:
 * User Info URL - e.g. https://graph.microsoft.com/oidc/userinfo  
 
 <blockquote class=highlight_note>
-<b>Note:</b> For AzureAD, we are aware of a possible extra step to get federation working. Its possible your Azure AD service may need ID Tokens enabled. Learn more <a href="https://learn.microsoft.com/en-us/azure/active-directory/develop/v2-protocols-oidc#enable-id-tokens" target="_blank" rel="noopener noreferrer">here</a> to see if this applies to your setup.
+<b>Note:</b> For AzureAD, we are aware of a possible extra step to get federation working. It is possible your Azure AD service may need ID Tokens enabled. Learn more <a href="https://learn.microsoft.com/en-us/azure/active-directory/develop/v2-protocols-oidc#enable-id-tokens" target="_blank" rel="noopener noreferrer">here</a> to see if this applies to your setup.
 </blockquote>
 
 ### Enterprise Login Code
 
-After the Interject team configures the identity provider for your Interject company, you will be sent an "Enterprise Login Code" that users will need to use in the Interject login page to navigate to their federated login page. See [Logging In/Out - Enterprise User](/wAbout/Logging-In-Enterprise.html) for a walkthrough on how to log in with your enterprise token and federated login.
+After the Interject team configures the identity provider for your Interject company, you will be sent an Enterprise Login Code that users will need to use in the Interject login page to navigate to their federated login page. See [Logging In/Out - Enterprise User](/wAbout/Logging-In-Enterprise.html) for a walkthrough on how to log in with your enterprise token and federated login.
 
 Once set up, the Enterprise Login Codes will be shown for all identity providers associated with a company in the "Organization Profile" on the [Interject portal site](https://portal.gointerject.com/).
 
