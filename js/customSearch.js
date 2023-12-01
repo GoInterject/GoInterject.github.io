@@ -1,39 +1,51 @@
-// search.js
-
 // Get the query parameter from the URL
 const queriedString = window.location.search;
-
-// Extract the 'q' parameter from the query string
 const urlParams = new URLSearchParams(queriedString);
+
+// Extract the parameters from the query string
 const searchTermEncoded = urlParams.get('q');
+const useRegex = urlParams.get('r');
 
 // Decode the search term
 const searchTermDecoded = decodeURIComponent(searchTermEncoded);
 
-//let searchTerm = decodeURI(queryString().q);
-console.log(searchTermDecoded);
-
 if(searchTermDecoded != 'undefined' && searchTermDecoded != "") {
   document.getElementById('custom-search-input').value = searchTermDecoded;
-  document.getElementById('custom-search-input').focus();
   }
+
+document.getElementById('custom-search-input').focus(); // focus on search input
 
 const query = searchTermDecoded.toLowerCase();
 const resultsContainer = document.getElementById('custom-search-results');
 
+if(useRegex === 'true') {
+  document.getElementById('custom-regex').checked = true;
+}
+
 fetchAndDisplayResults();
 
+// Search listener
 document.getElementById('custom-search-form').addEventListener('submit', function (e) {
   e.preventDefault();
-  loadPage("/schemas/custom_search?q=" + document.getElementById('custom-search-input').value);
+  loadPage("/schemas/custom_search?q=" + document.getElementById('custom-search-input').value + "&r=" + document.getElementById('custom-regex').checked);
 });
 
+// FUNCTIONS --------------------------------------------------------------
+function fetchAndDisplayResultsRegex() {
+  alert("regex")
+}
+
 function fetchAndDisplayResults() {
-  // Fetch the search index from the parent folder
   fetch('../search_index.json')
     .then(response => response.json())
     .then(searchIndex => {
-      const results = search(query, searchIndex);
+      var results;
+      if(useRegex === 'true') {
+        results = searchRegex(query, searchIndex);
+      }
+      else {
+        results = search(query, searchIndex);
+      }
       displayResults(results, resultsContainer, query);
     })
     .catch(error => {
@@ -42,15 +54,16 @@ function fetchAndDisplayResults() {
 }
 
 function search(query, index) {
-  // Perform search logic on the index and return matching results
-  // This example searches through the content for the query
+  // This searches through the content for the query
   return index.filter(page => page.content.toLowerCase().includes(query));
 }
 
-function displayResults(results, container, query) {
-  // Display the search results on the page
-  // You can customize how the results are presented, e.g., as links to the matched pages
+function searchRegex(query, searchIndex) {
+  const regex = new RegExp(query, 'i'); // 'i' for case-insensitive, adjust flags as needed
+  return searchIndex.filter(item => regex.test(item.content));
+}
 
+function displayResults(results, container, query) {
   container.innerHTML = '';
 
   if (results.length === 0) {
@@ -58,12 +71,41 @@ function displayResults(results, container, query) {
   } else {
     results.forEach(result => {
       const resultItem = document.createElement('div');
+      if(useRegex === 'true') {
+        resultItem.innerHTML = `
+        <h5><a href="${result.url}" target="_blank">${result.title}</a></h5>
+        <p>&emsp;${getSnippetRegex(result.content, query)}</p>
+      `;
+      }
+      else {
       resultItem.innerHTML = `
         <h5><a href="${result.url}" target="_blank">${result.title}</a></h5>
         <p>&emsp;${getSnippet(result.content, query)}</p>
       `;
+      }
       container.appendChild(resultItem);
     });
+  }
+}
+
+function getSnippetRegex(content, query) {
+  const snippetBefore = 50;
+  const snippetAfter = 50;
+
+  const regex = new RegExp(`.{0,${snippetBefore}}(${query}).{0,${snippetAfter}}`, 'ig');
+  const match = regex.exec(content);
+
+  if (match) {
+    const start = match.index - snippetBefore;
+    const end = match.index + match[0].length + snippetAfter;
+    const snippet = content.substring(Math.max(0, start), end);
+
+    // Highlight the matched part with a yellow background
+    const highlightedSnippet = snippet.replace(new RegExp(query, 'ig'), match => `<span style="background-color: yellow;">${match}</span>`);
+
+    return `...${highlightedSnippet}...`;
+  } else {
+    return content.substring(0, snippetBefore + snippetAfter) + '...';
   }
 }
 
