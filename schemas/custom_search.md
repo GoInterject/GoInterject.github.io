@@ -11,20 +11,24 @@ description: Interject documentation search results
         margin-bottom: 10px;
         background-color: white;
         display: flex; /* Use flexbox */
-  }
+    }
     #custom-search-input {
         flex: 1; /* Let the input grow to fill available space */
-  }
+    }
     #custom-search-button {
         margin-left: 10px;
         margin-right: 10px;
-  }
+    }
     #custom-search-results {
   }
     #custom-regex {
         margin-right: 5px;
         margin-bottom: 10px;
-  }
+    }
+    #custom-all-hits {
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
 
 </style>
 
@@ -36,6 +40,8 @@ description: Interject documentation search results
 <div>
   <input type="checkbox" id="custom-regex">
   <label for="custom-regex">Use Regex</label>
+  <input type="checkbox" id="custom-all-hits">
+  <label for="custom-all-hits">Show all hits</label>
 </div>
 
 <div id="custom-search-results"></div>
