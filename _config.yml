@@ -35,8 +35,8 @@ plugins:
   - jekyll-relative-links
   - jekyll-sitemap
   - jekyll-seo-tag
-  - parse_block_html
-
+  #- parse_block_html
+  
   # - jekyll-responsive-image
 
   # - jekyll-paginate
@@ -44,6 +44,10 @@ plugins:
   # - jekyll-gist
   # - jemoji
   # - jekyll-archives
+
+hook_plugins:
+  - event: :after_jekyll_build
+    script: ./build_index.rb
 
 # gem:
 #   - jekyll-srcset
