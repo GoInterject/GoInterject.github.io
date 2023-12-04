@@ -29,8 +29,6 @@ Jekyll::Hooks.register :site, :post_write do |site|
     # Iterate over all pages on the website
     site.pages.each do |page|
 
-      #puts "\"" + page.data['title'].to_s + "\" : " + page.url
-
       # Exclude pages from specific folders
       next if excluded_folder?(page) || !page.url.end_with?('.html') || page.data['title'] == 404
 
@@ -42,6 +40,9 @@ Jekyll::Hooks.register :site, :post_write do |site|
       
       # Replace '\n' and '\t' characters with spaces
       cleaned_content = stripped_content.gsub(/[\n\t]/, ' ')
+
+      # Remove the U+00a0 character
+      cleaned_content = cleaned_content.gsub(/\u00a0/, '')
 
       # Replace multiple consecutive spaces with a single space
       cleaned_content = cleaned_content.gsub(/\s+/, ' ')

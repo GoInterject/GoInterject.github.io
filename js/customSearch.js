@@ -6,11 +6,12 @@ const queriedString = window.location.search;
 const urlParams = new URLSearchParams(queriedString);
 
 // Extract the parameters from the query string
-const searchTermEncoded = urlParams.get('q');
+const searchTerm = urlParams.get('q');
 const useRegex = urlParams.get('r');
 const allHits = urlParams.get('a');
 
-// Decode the search term
+// Encode and Decode the search term
+const searchTermEncoded = encodeURIComponent(searchTerm);
 const searchTermDecoded = decodeURIComponent(searchTermEncoded);
 
 if(searchTermDecoded != 'undefined' && searchTermDecoded != "") {
@@ -29,22 +30,25 @@ if(allHits === 'true') {
   document.getElementById('custom-all-hits').checked = true;
 }
 
-fetchAndDisplayResults();
+if (useRegex === 'true' && !isValidRegex(query)) {
+  resultsContainer.innerHTML = '<p>Not a valid Regex expression</p>';
+}
+else if (query.length < 2) {
+  resultsContainer.innerHTML = '<p>Minimum 2 characters</p>';
+}
+else {
+  fetchAndDisplayResults();
+}
 
 // Search listener
 document.getElementById('custom-search-form').addEventListener('submit', function (e) {
   e.preventDefault();
-  loadPage("/schemas/custom_search?q=" + document.getElementById('custom-search-input').value + "&r=" + document.getElementById('custom-regex').checked + "&a=" + document.getElementById('custom-all-hits').checked);
+  loadPage("/schemas/custom_search?q=" + encodeURIComponent(document.getElementById('custom-search-input').value) + "&r=" + document.getElementById('custom-regex').checked + "&a=" + document.getElementById('custom-all-hits').checked);
 });
 
 // --------------------------------------------------------------
 // FUNCTIONS
 // --------------------------------------------------------------
-function fetchAndDisplayResultsRegex() {
-  alert("regex")
-}
-// --------------------------------------------------------------
-
 function fetchAndDisplayResults() {
   fetch('../search_index.json')
     .then(response => response.json())
@@ -62,62 +66,79 @@ function fetchAndDisplayResults() {
       console.error('Error fetching search index:', error);
     });
 }
-// --------------------------------------------------------------
 
+// --------------------------------------------------------------
 function search(query, index) {
-  // This searches through the content for the query
-  return index.filter(page => page.content.toLowerCase().includes(query));
-}
-// --------------------------------------------------------------
+  return index.map(page => {
+    const lowercaseContent = page.content.toLowerCase();
+    const occurrences = countOccurrences(lowercaseContent, query);
 
+    return {
+      ...page,
+      occurrences: occurrences
+    };
+  }).filter(page => page.occurrences > 0);
+}
+
+// --------------------------------------------------------------
+function countOccurrences(content, query) {
+  const lowercaseContent = content.toLowerCase();
+  const occurrences = lowercaseContent.split(query.toLowerCase()).length - 1;
+  return occurrences;
+}
+
+// --------------------------------------------------------------
 function searchRegex(query, searchIndex) {
-  const regex = new RegExp(query, 'i'); // 'i' for case-insensitive, adjust flags as needed
-  return searchIndex.filter(item => regex.test(item.content));
-}
-// --------------------------------------------------------------
+  const regex = new RegExp(query, 'ig'); // 'i' for case-insensitive, adjust flags as needed
 
+  return searchIndex.map(item => {
+    const matches = item.content.match(regex);
+    const occurrences = matches ? matches.length : 0;
+
+    return {
+      ...item,
+      occurrences: occurrences
+    };
+  }).filter(item => item.occurrences > 0);
+}
+
+// --------------------------------------------------------------
 function displayResults(results, container, query) {
   container.innerHTML = '';
 
   if (results.length === 0) {
-    container.innerHTML = '<p>No results found.</p>';
-  } else {
+    container.innerHTML = '<p>No results found</p>';
+  } 
+  else {
+
     results.forEach(result => {
       const resultItem = document.createElement('div');
-      if(useRegex === 'true') {
-        if(allHits === 'true') {
-          resultItem.innerHTML = `
-          <h5><a href="${result.url}" target="_blank">${result.title}</a></h5>
-          <p>${getSnippetRegexAll(result.content, query)}</p>
-        `;
-        }
-        else {
-          resultItem.innerHTML = `
-          <h5><a href="${result.url}" target="_blank">${result.title}</a></h5>
-          <p>${getSnippetRegex(result.content, query)}</p>
-        `;
-        }
+      const titleLink = `<h5 style="margin-bottom: 0px;"><a href="${result.url}" target="_blank">${result.title}</a></h5>`;
+      const occurrencesContent = `<p style="margin-bottom: 0px; margin-top: 0px; font-size: 12px;">Occurrences: ${result.occurrences}</p>`;
+
+      let snippetContent;
+      if (useRegex === 'true') {
+        snippetContent = allHits === 'true'
+          ? getSnippetRegexAll(result.content, query)
+          : getSnippetRegex(result.content, query);
+      } else {
+        snippetContent = allHits === 'true'
+          ? getSnippetAll(result.content, query)
+          : getSnippet(result.content, query);
       }
-      else {
-        if(allHits === 'true') {
-          resultItem.innerHTML = `
-            <h5><a href="${result.url}" target="_blank">${result.title}</a></h5>
-            <p>&emsp;${getSnippetAll(result.content, query)}</p>
-          `;
-        }
-        else {
-          resultItem.innerHTML = `
-            <h5><a href="${result.url}" target="_blank">${result.title}</a></h5>
-            <p>&emsp;${getSnippet(result.content, query)}</p>
-          `;
-        }
-      }
+
+      resultItem.innerHTML = `
+        ${titleLink}
+        ${occurrencesContent}
+        <p>&emsp;${snippetContent}</p>
+      `;
+
       container.appendChild(resultItem);
     });
   }
 }
-// --------------------------------------------------------------
 
+// --------------------------------------------------------------
 function getSnippetRegex(content, query) {
   const regex = new RegExp(`(${query})`, 'ig');
   const match = regex.exec(content);
@@ -145,13 +166,10 @@ function getSnippetRegexAll(content, query) {
   while ((match = regex.exec(content)) !== null) {
     const start = Math.max(0, match.index - snippetBefore);
     const end = Math.min(content.length, match.index + match[0].length + snippetAfter);
-    const matchLength = match[0].length
     const currentSnippet = content.substring(start, end);
-    const matchStartInSnippet = match.index - start;
 
     // Highlight the matched part with a yellow background
-    //const highlightedSnippet = currentSnippet.replace(new RegExp(query, 'ig'), m => `<span style="background-color: yellow;">${m}</span>`);
-    const highlightedSnippet = insertHighlight(currentSnippet, snippetBefore, matchLength);
+    const highlightedSnippet = insertHighlight(currentSnippet, match.index - start, match[0].length);
 
     snippets.push(`&emsp;...${highlightedSnippet}...`);
   }
@@ -160,9 +178,6 @@ function getSnippetRegexAll(content, query) {
   if (snippets.length === 0) {
     return content.substring(0, snippetBefore + snippetAfter) + '...';
   }
-
-  // Append the remaining content after the last match
-  //snippets.push(content.substring(lastIndex, lastIndex + snippetAfter));
 
   // Join the snippets with newline characters
   return snippets.join('<br>');
@@ -175,12 +190,10 @@ function getSnippet(content, query) {
   if (index !== -1) {
     const start = Math.max(0, index - snippetBefore); // index of the start of the snippet
     const end = Math.min(content.length, index + snippetAfter); // index of the end of the snippet
-    
-//    const snippet = content.substring(start, index) + content.substring(index, end);
     const snippet = content.substring(start, end);
 
     // Wrap the matched query in a span with a yellow background
-    const highlightedSnippet = snippet.replace(new RegExp(query, 'ig'), match => `<span style="background-color: yellow;">${match}</span>`);
+    const highlightedSnippet = snippet.replace(new RegExp(escapeString(query), 'ig'), match => `<span style="background-color: yellow;">${match}</span>`);
 
     return `&emsp;...${highlightedSnippet}...`;
   } else {
@@ -191,10 +204,9 @@ function getSnippet(content, query) {
 
 // --------------------------------------------------------------
 function getSnippetAll(content, query) {
-  const regex = new RegExp(query, 'ig');
+  const regex = new RegExp(escapeString(query), 'ig');
   let match;
   let snippets = [];
-  let lastIndex = 0;
 
   while ((match = regex.exec(content)) !== null) {
     const start = Math.max(0, match.index - snippetBefore);
@@ -202,13 +214,9 @@ function getSnippetAll(content, query) {
     const snippet = content.substring(start, end);
 
     // Wrap the matched query in a span with a yellow background
-    //const highlightedSnippet = snippet.replace(new RegExp(query, 'ig'), m => `<span style="background-color: yellow;">${m}</span>`);
-    const highlightedSnippet = insertHighlight(snippet, match.index, match.index + match[0].length);
+    const highlightedSnippet = insertHighlight(snippet, match.index - start, match[0].length);
 
     snippets.push(`&emsp;...${highlightedSnippet}...`);
-
-    // Set lastIndex to the end of the current match
-    lastIndex = regex.lastIndex;
   }
 
   // If there are no matches, return the beginning of the content
@@ -218,9 +226,6 @@ function getSnippetAll(content, query) {
 
   // Remove the leading whitespace from the first snippet
   snippets[0] = snippets[0].replace(/^&emsp;/, '');
-
-  // Append the remaining content after the last match
-  snippets.push(content.substring(lastIndex, lastIndex + snippetAfter));
 
   return snippets.join('<br>');
 }
@@ -233,6 +238,27 @@ function insertHighlight(originalString, indexStart, matchLength) {
     originalString.substring(indexStart, indexStart + matchLength) + 
     `</span>` +
     originalString.substring(indexStart + matchLength, originalString.length);
-    console.log("indexStart = " + indexStart + "; indexEnd =" + matchLength + ",s = " + s);
+
     return s;
+}
+
+// --------------------------------------------------------------
+// Highlights all matched strings with yellow
+function insertHighlightAll(originalString, stringToHighlight) {
+  return originalString.replace(new RegExp(escapeString(stringToHighlight), 'ig'), m => `<span style="background-color: yellow;">${m}</span>`);
+}
+
+// --------------------------------------------------------------
+function escapeString(s) {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+// --------------------------------------------------------------
+function isValidRegex(str) {
+  try {
+    new RegExp(str);
+    return true;
+  } catch (e) {
+    return false;
+  }
 }
