@@ -18,8 +18,8 @@ source "https://rubygems.org"
 #       Because of the build_index.rb script, this will create a file and trigger the
 #       auto-build continuously in a loop. Be sure to only serve while building for Github pages.
 
-gem "jekyll", "~> 3.9.2" # To build locally
-#gem "github-pages", group: :jekyll_plugins # To build for Github pages (To upgrade this build, run `bundle update github-pages`)
+#gem "jekyll", "~> 3.9.2" # To build locally
+gem "github-pages", group: :jekyll_plugins # To build for Github pages (To upgrade this build, run `bundle update github-pages`)
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.0"
