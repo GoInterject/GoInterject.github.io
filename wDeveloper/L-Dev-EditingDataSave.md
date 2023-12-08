@@ -30,11 +30,11 @@ This walkthrough involves 6 main steps:
 <b>Note:</b> This example uses Microsoft's Northwind Database. You can download this database <a href="https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases">here</a> or you can use this example as a guide for your own data source.
 </blockquote>
 
-## Setting up the Data Connection
+## Setting Up the Data Connection
 
 For the Data Connection for this example, you will use the connection previously set up [here](/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection).
 
-## Setting up the Data Portal
+## Setting Up the Data Portal
 
 **Step 1:** Navigate to [https://portal.gointerject.com](https://portal.gointerject.com) and [log in](/wPortal/Logging-In-to-Website-Portal.html). Click on **Data Portals** on the left side bar and then the **NEW DATA PORTAL** button.
 
@@ -63,7 +63,7 @@ For the Data Connection for this example, you will use the connection previously
 
 The System Parameter [Interject_RequestContext](/wIndex/Request-Context-Parse.html) will transfer contextual data to the Stored Procedure you will set up later. In this example you will not need this info but it is a good practice to set this parameter for all your Stored Procedures.
 
-## Setting up the Report
+## Setting Up the Report
 
 Begin by opening up the report that was completed in the [Data Pull](/wGetStarted/L-Dev-CustomerAging.html#create-the-report). You will modify this report to set up the ReportSave.
 
@@ -102,7 +102,7 @@ Begin by opening up the report that was completed in the [Data Pull](/wGetStarte
 ![](/images/L-Dev-EditingDataSave/SetupConfigSection.png)
 <br>
 
-## Setting up the ReportSave Function
+## Setting Up the ReportSave Function
 
 The only thing left to set up in this report is the actual ReportSave function.
 
@@ -126,7 +126,7 @@ Everything is now ready for the ReportSave. You can further customize your repor
 ![](/images/L-Dev-EditingDataSave/ReportSetUp.png)
 <br>
 
-## Setting up the Stored Procedure
+## Setting Up the Stored Procedure
 
 Now that the ReportSave function is completed, Interject can use it to generate an example Stored Procedure for your save.
 
@@ -448,9 +448,9 @@ The SQL auto generated template by Interject is formatted based on the ReportSav
 
 ### Parameters
 
-There are 2 parameters in the SP. The first one, "Interject_RequestContext", was the System Parameter you set up [previously](#add-the-requestcontext_parse-stored-procedure) in the Data Portal. Again, this XML contextual information will be passed by Interject to the SP upon execution.
+There are 2 parameters in the SP. The first one, `Interject_RequestContext`, was the System Parameter you set up [previously](#add-the-requestcontext_parse-stored-procedure) in the Data Portal. Again, this XML contextual information will be passed by Interject to the SP upon execution.
 
-The second parameter is a "TestMode" bit. If you are testing, you can set the value to 1 to print out detailed information upon execution. This will also rollback any changes so your database remains unchanged during testing.
+The second parameter is a `TestMode` bit. If you are testing, you can set the value to 1 to print out detailed information upon execution. This will also rollback any changes so your database remains unchanged during testing.
 
 ![](/images/L-Dev-EditingDataSave/SPParams.png)
 <br>
@@ -478,23 +478,23 @@ The ErrorMessageToUser is declared as blank to begin with. If the execution of t
 
 ### Data To Process
 
-This section declares a table variable ("@DataToProcess") that will be used to store all the data that will be processed in the save. Each record includes the corresponding row in Excel ("_ExcelRow"), and a message ("_MessageToUser") that can be sent back to the user.
+This section declares a table variable (`@DataToProcess`) that will be used to store all the data that will be processed in the save. Each record includes the corresponding row in Excel (`_ExcelRow`), and a message (`_MessageToUser`) that can be sent back to the user.
 
-The last two columns ("ExampleColumnKey" and "ExampleColumnValue") are just examples used to validate the data coming in. They are not used in this example so delete them. You also need to change the data types and size to match your data.
+The last two columns (`ExampleColumnKey` and `ExampleColumnValue`) are just examples used to validate the data coming in. They are not used in this example so delete them. You also need to change the data types and size to match your data.
 
 ![](/images/L-Dev-EditingDataSave/SPDataToProcess.png)
 <br>
 
 ### Inserting the Data to Process
 
-This section will take the XML data sent by Interject from your report and put it into the "@DataToProcess" table. Again, you can delete the "ExampleColumnKey" and "ExampleColumnValue" columns and change the data types and size to match your data.
+This section will take the XML data sent by Interject from your report and put it into the `@DataToProcess` table. Again, you can delete the `ExampleColumnKey` and `ExampleColumnValue` columns and change the data types and size to match your data.
 
 ![](/images/L-Dev-EditingDataSave/SPInsertToDataToProcess.png)
 <br>
 
 ### Validations
 
-Now that you have all the data from your report into a table, you can do some validations on it before your target data source is updated. This section will run through certain validations and marks the \_MessageToUser upon a check. This is example code. You can use and modify it to match your report and data or you can delete it. There are 5 parts:
+Now that you have all the data from your report into a table, you can do some validations on it before your target data source is updated. This section will run through certain validations and marks the `_MessageToUser` upon a check. This is example code. You can use and modify it to match your report and data or you can delete it. There are 5 parts:
 
 1. Validating a parameter is a certain value (not used in this example)
 1. Validating the data to save does not contain duplicate keys (change data type and size to match your data)
@@ -509,25 +509,25 @@ Now that you have all the data from your report into a table, you can do some va
 
 You can delete the "CREATE TABLE #ExampleTableToUpdate" part, it is not used in this example. 
 
-Next, another table variable is declared. The "@ChangeLog" table will be filled with information regarding the changes to the data, such as the row in the Excel report, the type of change that was done, and the corresponding key.
+Next, another table variable is declared. The `@ChangeLog` table will be filled with information regarding the changes to the data, such as the row in the Excel report, the type of change that was done, and the corresponding key.
 
 ![](/images/L-Dev-EditingDataSave/SPDeclareChangeLog.png)
 <br>
 
 ### Merge
 
-This section is where the data from your report (located in the "@DataToProcess" table), is merged with the target table in your database. It first declares a transaction. This is so the following changes can either be committed if no errors or rolled back if there is an error. 
+This section is where the data from your report (located in the `@DataToProcess` table), is merged with the target table in your database. It first declares a transaction. This is so the following changes can either be committed if no errors or rolled back if there is an error. 
 
 Next it merges by joining the tables on your key and updating the desired columns when there is a change detected. 
 
-Finally, it outputs the change information to the "@ChangeLog" table.
+Finally, it outputs the change information to the `@ChangeLog` table.
 
 ![](/images/L-Dev-EditingDataSave/SPMerge.png)
 <br>
 
 ### Set Message To User
 
-This section sets the message that will be displayed to the user by comparing the action values in the "@ChangeLog" table. You can change the message to anything you like.
+This section sets the message that will be displayed to the user by comparing the action values in the `@ChangeLog` table. You can change the message to anything you like.
 
 ![](/images/L-Dev-EditingDataSave/SPSetMessageToUser.png)
 <br>
@@ -536,10 +536,12 @@ This section sets the message that will be displayed to the user by comparing th
 
 This last section simply returns the message on each row back to the user. This could be an "Update" or an error message if it was set previously.
 
-It also raises an error message if the parameter "@ErrorMessageToUser" was set.
+It also raises an error message if the parameter `@ErrorMessageToUser` was set.
 
 ![](/images/L-Dev-EditingDataSave/SPFinalResponseToUser.png)
 <br>
+
+### Final Stored Procedure
 
 Now that the Stored Procedure is finished, execute it to save it.
 
@@ -549,7 +551,7 @@ The following is the finished SP:
 <div markdown="1" class="panel">
 
 ```sql
-CREATE OR ALTER PROC NorthwindEditingDataSaveSP
+CREATE OR ALTER PROC [dbo].[NorthwindEditingDataSaveSP]
 
 	-- System Params not in formula
 	@Interject_RequestContext nvarchar(max)
@@ -575,7 +577,7 @@ AS
 	<ExcelVersion>16.0</ExcelVersion>
 	<IdsVersion>2.4.1.25</IdsVersion>
 	<FileName>DevelopEditingDataSave.xlsx</FileName>
-	<FilePath>D:\Users\test\Documents\Documentation\DevReportSave</FilePath>
+	<FilePath>D:\Users\Testing\Documents\Documentation\DevReportSave</FilePath>
 	<TabName>NewReport_1</TabName>
 	<CellRange>C11</CellRange>
 	<SourceFunction>Save</SourceFunction>
@@ -702,50 +704,50 @@ AS
 	
 	DECLARE
 		@ExcelVersion					NVARCHAR(100)
-		,@IdsVersion					NVARCHAR(100)	
-		,@FileName						NVARCHAR(1000)	
+		,@IdsVersion					NVARCHAR(100)
+		,@FileName						NVARCHAR(1000)
 		,@FilePath						NVARCHAR(1000)
-		,@TabName						NVARCHAR(1000)	
-		,@CellRange						NVARCHAR(100)	
-		,@SourceFunction				NVARCHAR(100)	
-		,@UtcOffset						DECIMAL(6,4)	
-		,@ColDefItemsDelimited			xml	
-		,@ResultDefItemsDelimited		xml	
+		,@TabName						NVARCHAR(1000)
+		,@CellRange						NVARCHAR(100)
+		,@SourceFunction				NVARCHAR(100)
+		,@UtcOffset						DECIMAL(6,4)
+		,@ColDefItemsDelimited			xml
+		,@ResultDefItemsDelimited		xml
 		,@RowDefItemsDelimited			xml
 		,@MachineLoginName				NVARCHAR(100)
-		,@MachineName					NVARCHAR(100)	
+		,@MachineName					NVARCHAR(100)
 		,@Interject_UserID				NVARCHAR(100)
 		,@Interject_ClientID			NVARCHAR(100)
-		,@Interject_LoginName			NVARCHAR(100)	
-		,@Interject_LoginAuthTypeID		INT		
+		,@Interject_LoginName			NVARCHAR(100)
+		,@Interject_LoginAuthTypeID		INT
 		,@Interject_LoginDateUTC		DATETIME
 		,@Interject_UserRolesDelimited	NVARCHAR(max)
 		,@UserContextEncrypted			NVARCHAR(4000)
-		,@Interject_XMLDataToSave		xml	
+		,@Interject_XMLDataToSave		xml
 	
 	EXEC [dbo].[RequestContext_Parse]
 		@Interject_RequestContext		= @Interject_RequestContext
-		,@ExcelVersion					 = @ExcelVersion			 OUTPUT
-		,@IdsVersion					 = @IdsVersion				 OUTPUT
-		,@FileName						 = @FileName				 OUTPUT
-		,@FilePath						 = @FilePath				 OUTPUT
-		,@TabName						 = @TabName					 OUTPUT
-		,@CellRange						 = @CellRange				 OUTPUT
-		,@SourceFunction				 = @SourceFunction			 OUTPUT
-		,@UtcOffset						 = @UtcOffset				 OUTPUT
-		,@ColDefItemsDelimited			 = @ColDefItemsDelimited	 OUTPUT
-		,@ResultDefItemsDelimited		 = @ResultDefItemsDelimited	 OUTPUT
-		,@RowDefItemsDelimited			 = @RowDefItemsDelimited	 OUTPUT
-		,@MachineLoginName				 = @MachineLoginName		 OUTPUT
-		,@MachineName					 = @MachineName				 OUTPUT
-		,@Interject_UserID				 = @Interject_UserID		 OUTPUT
-		,@Interject_ClientID			 = @Interject_ClientID		 OUTPUT
-		,@Interject_LoginName			 = @Interject_LoginName		 OUTPUT
-		,@Interject_LoginAuthTypeID		 = @Interject_LoginAuthTypeID OUTPUT
-		,@Interject_LoginDateUTC		 = @Interject_LoginDateUTC	 OUTPUT
-		,@Interject_UserRolesDelimited	 = @Interject_UserRolesDelimited	OUTPUT
-		,@UserContextEncrypted			 = @UserContextEncrypted	 OUTPUT
-		,@Interject_XMLDataToSave		 = @Interject_XMLDataToSave	 OUTPUT
+		,@ExcelVersion					= @ExcelVersion					OUTPUT
+		,@IdsVersion					= @IdsVersion					OUTPUT
+		,@FileName						= @FileName						OUTPUT
+		,@FilePath						= @FilePath						OUTPUT
+		,@TabName						= @TabName						OUTPUT
+		,@CellRange						= @CellRange					OUTPUT
+		,@SourceFunction				= @SourceFunction				OUTPUT
+		,@UtcOffset						= @UtcOffset					OUTPUT
+		,@ColDefItemsDelimited			= @ColDefItemsDelimited			OUTPUT
+		,@ResultDefItemsDelimited		= @ResultDefItemsDelimited		OUTPUT
+		,@RowDefItemsDelimited			= @RowDefItemsDelimited			OUTPUT
+		,@MachineLoginName				= @MachineLoginName				OUTPUT
+		,@MachineName					= @MachineName					OUTPUT
+		,@Interject_UserID				= @Interject_UserID				OUTPUT
+		,@Interject_ClientID			= @Interject_ClientID			OUTPUT
+		,@Interject_LoginName			= @Interject_LoginName			OUTPUT
+		,@Interject_LoginAuthTypeID		= @Interject_LoginAuthTypeID	OUTPUT
+		,@Interject_LoginDateUTC		= @Interject_LoginDateUTC		OUTPUT
+		,@Interject_UserRolesDelimited	= @Interject_UserRolesDelimited	OUTPUT
+		,@UserContextEncrypted			= @UserContextEncrypted			OUTPUT
+		,@Interject_XMLDataToSave		= @Interject_XMLDataToSave		OUTPUT
 	
 	IF @TestMode = 1
 	BEGIN
@@ -993,7 +995,7 @@ FinalResponseToUser:
 
 ## Testing the Stored Procedure
 
-Now you can test the SP by using the [test code](#testing). For example, make a change to the data in the test code and execute the test. Because the "@TestMode" bit is set to 1, it will display all kinds of information about the SP process. Notice the changes and message to user that would be displayed.
+Now you can test the SP by using the [test code](#testing). For example, make a change to the data in the test code and execute the test. Because the `@TestMode` bit is set to 1, it will display all kinds of information about the SP process. Notice the changes and message to user that would be displayed.
 
 ![](/images/L-Dev-EditingDataSave/TestingSP.png)
 <br>
