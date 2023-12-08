@@ -429,9 +429,11 @@ troubleshoot:
 
 releaseNotes:
 - sectiontitle: 2023
-  path: /wReleaseNotes/2023-11_ReleaseNotes.html
+  path: /wReleaseNotes/2023-12_ReleaseNotes.html
   section:
     - title: October
       path: /wReleaseNotes/2023-10_ReleaseNotes.html
     - title: November
       path: /wReleaseNotes/2023-11_ReleaseNotes.html
+    - title: December
+      path: /wReleaseNotes/2023-12_ReleaseNotes.html
