@@ -123,7 +123,7 @@ ADD EditedBy NVARCHAR(40),
 
 ## Setting Up the Stored Procedure
 
-Next you will created a new Stored Procedure that builds from the [previous save](/wDeveloper/L-Dev-InsertDeleteDataSave.html#final-stored-procedure). To make this easier, simply copy the SP into a new query, change the command to "CREATE OR ALTER PROC NorthwindChangelogDataSaveSP" and execute it to save it. Then you can begin making modifications to it. For your convenience, the SP is posted here.
+Next you will create a new Stored Procedure that builds from the [previous save](/wDeveloper/L-Dev-InsertDeleteDataSave.html#final-stored-procedure). To make this easier, simply copy the SP into a new query, change the command to "CREATE OR ALTER PROC NorthwindChangelogDataSaveSP" and execute it to save it. Then you can begin making modifications to it. For your convenience, the SP is posted here.
 
 **Note:** The code for testing the SP has been removed. It will be handled [later](#testing-the-stored-procedure):
 
