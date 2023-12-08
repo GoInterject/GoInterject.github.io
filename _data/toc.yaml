@@ -24,7 +24,7 @@ horizontalnav:
   path: /wTroubleshoot/Troubleshooting-Landing.html
   node: troubleshoot
 - title: Release Notes
-  path: /wReleaseNotes/2023-11_ReleaseNotes.html
+  path: /wReleaseNotes/2023-12_ReleaseNotes.html
   node: releaseNotes
 
 about:
@@ -362,6 +362,8 @@ Developer:
       path: /wDeveloper/L-Dev-EditingDataSave.html
     - title: "Develop: Insert & Delete Data Save"
       path: /wDeveloper/L-Dev-InsertDeleteDataSave.html
+    - title: "Develop: Changelog Data Save"
+      path: /wDeveloper/L-Dev-ChangelogDataSave.html
   - title: Request Context Parse
     path: /wIndex/Request-Context-Parse.html
   - title: Security Best Practices
