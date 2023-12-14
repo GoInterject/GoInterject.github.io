@@ -12,6 +12,9 @@ The Interject website portal is a central place to manage Interject client setti
 
 For all other data sources, a custom website API can be created to connect the data to Interject. This is very similar to how a website application accesses its data layer. Using an API you can connect to PostgreSQL and noSQL databases like MongoDB. You can also use an API to connect to other cloud data APIs such as provided by SalesForce, Intacct, Netsuite, Quicken and many other cloud software services.
 
+![](/images/InterjectWebsitePortal/PortalSite.png)
+<br>
+
 ### [Logging In to the Interject Website Portal](/wPortal/Logging-In-to-Website-Portal.html)
 
 This section details how to log in to the Interject website portal to get access to Interject features.
