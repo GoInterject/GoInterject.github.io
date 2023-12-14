@@ -64,14 +64,14 @@ When running the custom item, Interject will prompt the user for input:
 
 ### Description and Status
 
-When the **Custom Items** tab or **Refresh** button is selected, Interject automatically executes the custom items and sends the `Interject_CommandExecute` parameter to the stored procedure with the value of 0. This can signal the stored procedure to only set the `Interject_CommandDescription` and `Interject_CommandStatus` parameters instead of actually executing the entire command. These parameters are output parameters that Interject displays in the Custom Commands form. When selected or refreshed, Interject will fetch the description and status:
+When the **Custom Items** tab or **Refresh** button is selected, Interject automatically executes the custom items and sends the `Interject_CommandExecute` parameter to the stored procedure with the value of 0. This can signal the stored procedure to only set the `Interject_CommandDescription` and `Interject_CommandStatus` parameters instead of actually executing the entire code. These parameters are output parameters that Interject displays in the Custom Commands form. When selected or refreshed, Interject will fetch the description and status:
 
 ![](/images/CustomItems/GettingDescriptionStatus.png)
 <br>
 
 ### Running the Custom Item
 
-The custom items are defined by the stored procedure or web service. When **Run Selected** is clicked, Interject will set the `Interject_CommandExecute` variable to 1, which signals the stored procedure to execute the entire command.
+The custom items are defined by the stored procedure or web service. When **Run Selected** is clicked, Interject will set the `Interject_CommandExecute` variable to 1, which signals the stored procedure to execute the entire code.
 
 The event is ran asynchronously. The user can cancel the event by clicking the **Cancel Selected** button.  The user should not exit the Interject spreadsheet session until the event is completed or it will be automatically aborted.
 

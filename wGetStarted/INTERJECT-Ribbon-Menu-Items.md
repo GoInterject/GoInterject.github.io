@@ -153,8 +153,8 @@ The Custom Commands feature allows users to manage and run three kinds of operat
 <br>
 
 * **Scheduled Items:** Run scheduled data operations
-* **Data Cell Updates:** Displays the update history of [data cells](/wAbout/Tabular-vs-Data-Cells.html#data-cells)
-* **Custom Items:** Execute [Custom Items](/wDeveloper/CustomItems.html) that run specialized stored procedures
+* **[Data Cell](/wAbout/Tabular-vs-Data-Cells.html#data-cells) Updates:** Displays the update history of data cells
+* **[Custom Items](/wDeveloper/CustomItems.html):** Execute Custom Items that run specialized stored procedures
 
 <br>
 
