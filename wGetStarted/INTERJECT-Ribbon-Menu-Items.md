@@ -147,12 +147,16 @@ When Drilling, the focus will change to the sheet that you are drilling to. If y
 
 ### Custom Commands
 
-The Custom Commands operation allows users to manage and run three kinds of reports: Scheduled Items, Data Cell Updates, and Custom Items.
+The Custom Commands feature allows users to manage and run three kinds of operations: Scheduled Items, Data Cell Updates, and Custom Items.
 
 ![](/images/InterjectRibbon/15.png)
 <br>
 
-These commands are set up by Interject for individual users and they typically run fixed data operations.
+* **Scheduled Items:** Run scheduled data operations
+* **[Data Cell](/wAbout/Tabular-vs-Data-Cells.html#data-cells) Updates:** Displays the update history of data cells
+* **[Custom Items](/wDeveloper/CustomItems.html):** Execute Custom Items that run specialized stored procedures
+
+<br>
 
 ![](/images/InterjectRibbon/16.png)
 <br>
@@ -161,7 +165,7 @@ These commands are set up by Interject for individual users and they typically r
 
 ### Quick Tools
 
-The Quick Tools window provides a convenient set of features to help with convenience and efficiency.
+The Quick Tools window provides a convenient set of features that increase efficiency in setting up and using reports.
 
 ![](/images/InterjectRibbon/17.png)
 <br>
@@ -303,7 +307,7 @@ The operation System contains a large number of options.
 | Force Calc On Worksheet | Forces Excel to calculate all Interject formulas in the Worksheet. Similar to Excel's **Calculate Sheet** button in the Formulas tab on the Ribbon. |
 | View SQL Test For ActiveCell | Provides the SQL code that will be executed for the ActiveCell. The ActiveCell would be any of the [Data Pull](/wIndex/Data-Functions-Landing.html) or [Data Save](/wIndex/ReportSave.html) Formulas. <br> This code can be executed in your development environment to see what would be produced based on current context of the spreadsheet. |
 | View SQL Template For ActiveCell | Will provide sample code as a starting point for creating a new Stored Procedure. A ReportSave will provide a template that can be used to save the data back. |
-| Clear Remembered Logins | Removes all logins from the cache and the profiles removed from the Login manager |
+| Clear Remembered Logins | Logs you out and removes all logins from the cache and the profiles removed from the Login manage |
 | Re-enable Protected Grouping | Excel does not remember when files are protected while enabling groups. Pull or save data to reenable or use this function. |
 | Run the Interject Addin Manager | Starts the Interject Addin Manager if it is not currently running |
 | Check Connection | Allows user to test if a connection to a database can be established. To learn more, [click here.](/wPortal/Data-Connections.html). |

@@ -176,6 +176,26 @@ For an example of this function, see [Lab Create: Inventory Variable](/wGetStart
 </table>
 </div>
 
+<button class="collapsible-parameter">**PopulateDuplicateRowDefs**<br>True: Inserts data for each appearance of a RowDefItem in the sheet.<br><br>False: Will only populate the last instance of a duplicate RowDefItem.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>Boolean</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td></td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>True</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 ###  Excel Formula Bar Example
 
 ```Excel
@@ -195,6 +215,7 @@ For an example of this function, see [Lab Create: Inventory Variable](/wGetStart
 |  RetainRowColumns  |  ""  |  Left blank to indicate not to retain any data in the TargetDataRange (B14:H15).  |  
 |  InsertNewRowsWithin  |  FALSE  |  This value is automatically set to false since RetainRowColumns is blank.  |  
 |  UseTopSpacerRow  |  FALSE  |  Data will be inserted on the first row (18) defined in RowDataRange.  |  
+| PopulateDuplicateRowDefs | "" | Left blank to indicate to display duplicate RowDefItems |
 
 ###  Embeddable Helper Functions
 

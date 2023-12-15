@@ -14,3 +14,4 @@ description: Release notes for the previous month's updates
 |---|---|---|---|
 | 12/7 | New | [Custom Doc Search](/schemas/custom_search) | New search functionality |
 | 12/8 | New | [Develop: Change Log Data Save](/wDeveloper/L-Dev-ChangelogDataSave.html) | New page |
+| 12/15 | New | [Custom Items](/wDeveloper/CustomItems.html) | New page |

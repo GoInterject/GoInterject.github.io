@@ -1,10 +1,11 @@
-# This script is only ran if building locally (see Gemfile for more details)
-# Build locally first before pushing to repo in order for this script to run
-# Remember to change the Gemfile to build for Github pages before pushing to repo
+# This script creates and builds a json file that indexes doc pages on the website
+# The json file is used for the custom search feature
+# This script is only ran if not building for Github pages (see Gemfile for more details)
+# To update the json index file before pushing to the repo, run the "update_index.bat" script
 
 require 'nokogiri'
 
-puts "Setting build index for hook post_write"
+puts "Running custom scripts"
 
 Jekyll::Hooks.register :site, :post_write do |site|
   puts "Building index search_index.json"
