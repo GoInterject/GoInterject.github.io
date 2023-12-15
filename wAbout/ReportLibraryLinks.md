@@ -117,6 +117,13 @@ Notice the new report is added and automatically incremented the version number:
 
 ### Updating a Report Link
 
+You can update a report link details via the right-click menu in the Report Library.
+
+<blockquote class=highlight_note>
+<b>Note:</b> Report links in the "MyFavorites" folder are not editable.
+</blockquote>
+<br>
+
 **Step 1:** Begin by opening the Report Library and right click on the report you wish to edit. Hover the cursor over **Selected Link** and you can view the sub menu:
 
 ![](/images/ReportLibraryLinks/SelectedLinkMenu.png)
