@@ -10,6 +10,10 @@ Gemfile.lock
 _prodDeploy/
 _prodDeploy
 
+# This index file is built automatically with Github actions
+# Therefore there is no need to push this file to the repo
+search_index.json
+
 # python related ignores
 __pycache__/
 .pytest_cache/

@@ -98,6 +98,9 @@ repository:
 encoding:
   UTF-8
 
-exclude: [vendor]
+# exclude search_index.json file to eliminate auto rebuild loop when using "bundle exec jekyll serve"
+exclude: 
+  - vendor/
+  - search_index.json
 
 github: [metadata]
