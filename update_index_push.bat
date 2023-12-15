@@ -1,9 +1,9 @@
 @echo off
 
-REM Run this script before pushing to Github GoInterject.github.io repo
 REM This script sets the use_github_pages to false and builds the site
 REM The search_index.json file will be rebuilt after the build process
 REM The script then sets the use_github_pages back to true
+REM This script will then add files to git, commit, and push to repo
 
 setlocal enabledelayedexpansion
 
