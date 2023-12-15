@@ -17,7 +17,7 @@ source "https://rubygems.org"
 #       auto-build continuously in a loop.
 #       ONLY SERVE WHILE BUILDING FOR GITHUB PAGES
 #
-use_github_pages = true # This boolean controls whether the build is for Github pages or not
+use_github_pages = false # This boolean controls whether the build is for Github pages or not
 #
 if use_github_pages
   gem "github-pages", group: :jekyll_plugins # To build for Github pages (To upgrade this build, run `bundle update github-pages`)
