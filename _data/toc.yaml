@@ -374,6 +374,8 @@ Developer:
     path: /wGetStarted/L-Dev-Error-Handling.html
   - title: Setting Up the jDataPortal
     path: /wDeveloper/SetupjDataPortal.html
+  - title: Custom Items
+    path: /wDeveloper/CustomItems.html
 - sectiontitle: Security &amp; Authentication
   path: /wAbout/TLS.html
   section:

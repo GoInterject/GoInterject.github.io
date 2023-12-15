@@ -147,12 +147,16 @@ When Drilling, the focus will change to the sheet that you are drilling to. If y
 
 ### Custom Commands
 
-The Custom Commands operation allows users to manage and run three kinds of reports: Scheduled Items, Data Cell Updates, and Custom Items.
+The Custom Commands feature allows users to manage and run three kinds of operations: Scheduled Items, Data Cell Updates, and Custom Items.
 
 ![](/images/InterjectRibbon/15.png)
 <br>
 
-These commands are set up by Interject for individual users and they typically run fixed data operations.
+* **Scheduled Items:** Run scheduled data operations
+* **[Data Cell](/wAbout/Tabular-vs-Data-Cells.html#data-cells) Updates:** Displays the update history of data cells
+* **[Custom Items](/wDeveloper/CustomItems.html):** Execute Custom Items that run specialized stored procedures
+
+<br>
 
 ![](/images/InterjectRibbon/16.png)
 <br>
@@ -161,7 +165,7 @@ These commands are set up by Interject for individual users and they typically r
 
 ### Quick Tools
 
-The Quick Tools window provides a convenient set of features to help with convenience and efficiency.
+The Quick Tools window provides a convenient set of features that increase efficiency in setting up and using reports.
 
 ![](/images/InterjectRibbon/17.png)
 <br>
