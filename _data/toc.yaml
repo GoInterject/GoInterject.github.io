@@ -8,15 +8,9 @@ horizontalnav:
 - title: Developer
   path: /wApi/DeveloperMain.html
   node: Developer
-# - title: Design
-#   path: /wDesign/Reporting-Design-Standards.html
-#   node: design
 - title: References
   path: /wIndex/Excel-Function-Index.html
   node: index
-# - title: Apps
-#   path: /wApps/Reference.html
-#   node: apps
 - title: Portal Site 
   path: /wPortal/The-INTERJECT-Website-Portal.html
   node: portal
