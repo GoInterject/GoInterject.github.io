@@ -84,7 +84,9 @@ In this example you will modify the [Customer Aging report](/wGetStarted/L-Creat
 ![](/images/L-Create-Dropdowns/11.png)
 <br>
 
-> **IMPORTANT:** The Value Column Name and the Display Column Name arguments must exactly match the name of a column that is returned by the stored procedure. A good place to look for valid columns is in the Column Definitions section of the report. To learn more about the jDropdown() function and what each of its arguments do, review its [index page](/wIndex/jDropdown.html).
+<blockquote class=highlight_note>
+<b>Important:</b> The Value Column Name and the Display Column Name arguments must exactly match the name of a column that is returned by the stored procedure. A good place to look for valid columns is in the <a href="https://docs.gointerject.com/wAbout/Basics-of-Report-Formulas.html#column-definitions">Column Definitions</a> section of the report. To learn more about the jDropdown() function and what each of its arguments do, review its <a href="https://docs.gointerject.com/wIndex/jDropdown.html">index page</a>.
+</blockquote>
 
 ### Adding a Special Hyperlink
 
