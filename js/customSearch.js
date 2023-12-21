@@ -23,30 +23,38 @@ const query = searchTermDecoded.toLowerCase(); // For case insensitive searching
 const resultsContainer = document.getElementById('custom-search-results');
 const topHitsContainer = document.getElementById('top-hits-results');
 
+// Page
+var currentPageUrl = window.location.href;
 // --------------------------------------------------------------
 // PAGE SCRIPT
 // --------------------------------------------------------------
 // Populate the search form with the search term
-if(searchTermDecoded != 'undefined' && searchTermDecoded != "") {
-	document.getElementById('custom-search-input').value = searchTermDecoded;
+var searchInput = document.getElementById('custom-search-input');
+if (searchInput) {
+  if (searchTermDecoded !== 'undefined' && searchTermDecoded !== "") {
+    searchInput.value = searchTermDecoded;
+  }
+
+  // Put the focus in the search form
+  searchInput.focus(); // focus on search input
 }
 
-// Put the focus in the search form
-document.getElementById('custom-search-input').focus(); // focus on search input
-
 // Mark the Regex checkbox if the query is a regex query
-if(useRegex === 'true') {
-	document.getElementById('custom-regex').checked = true;
+var regexCheckbox = document.getElementById('custom-regex');
+if (regexCheckbox && useRegex === 'true') {
+  regexCheckbox.checked = true;
 }
 
 // Mark the allHits checkbox if the query is an allHits query
-if(allHits === 'true') {
-	document.getElementById('custom-all-hits').checked = true;
+var allHitsCheckbox = document.getElementById('custom-all-hits');
+if (allHitsCheckbox && allHits === 'true') {
+  allHitsCheckbox.checked = true;
 }
 
 // Mark the topHits checkbox if the query is an allHits query
-if(topHits === 'true') {
-	document.getElementById('custom-top-hits').checked = true;
+var topHitsCheckbox = document.getElementById('custom-top-hits');
+if (topHitsCheckbox && topHits === 'true') {
+  topHitsCheckbox.checked = true;
 }
 
 // Display the advanced search options if one is selected already
@@ -64,8 +72,9 @@ else if (query.length < 2) {
 	resultsContainer.innerHTML = '<p>Minimum 2 characters</p>';
 }
 // Fetch and display the results
-else {
+else if (currentPageUrl.includes("custom_search")){
 	if(topHits === 'true') {
+		
 		fetchAndDisplayTopHitsResults();
 	}
 	fetchAndDisplayResults();
@@ -76,17 +85,29 @@ else {
 // --------------------------------------------------------------
 // builds a url from the value in the search form and the options selected, then navigates to the url
 function reloadPage() {
-	loadPage("/schemas/custom_search?q=" + encodeURIComponent(document.getElementById('custom-search-input').value) + "&r=" + document.getElementById('custom-regex').checked + "&a=" + document.getElementById('custom-all-hits').checked + "&t=" + document.getElementById('custom-top-hits').checked);
+  var pathPrefix = isAppsSite ? "/bApps" : "";
+  var searchInput = encodeURIComponent(document.getElementById('custom-search-input').value);
+  var regexChecked = document.getElementById('custom-regex').checked;
+  var allHitsChecked = document.getElementById('custom-all-hits').checked;
+  var topHitsChecked = document.getElementById('custom-top-hits').checked;
+
+  var url = `${pathPrefix}/schemas/custom_search?q=${searchInput}&r=${regexChecked}&a=${allHitsChecked}&t=${topHitsChecked}`;
+
+  loadPage(url);
 }
 
 // --------------------------------------------------------------
 // LISTENERS
 // --------------------------------------------------------------
-// Add the listener to the search form
-document.getElementById('custom-search-form').addEventListener('submit', function (e) {
-	e.preventDefault();
-	reloadPage();
-});
+var searchForm = document.getElementById('custom-search-form');
+
+if (searchForm) {
+	// Add the listener to the search form
+	document.getElementById('custom-search-form').addEventListener('submit', function (e) {
+		e.preventDefault();
+		reloadPage();
+	});
+}
 
 function handleCustomAllHits() {
 	reloadPage()
@@ -106,7 +127,13 @@ function handleCustomRegex() {
 // FUNCTIONS (FETCH AND DISPLAY)
 // --------------------------------------------------------------
 function fetchAndDisplayTopHitsResults() {
-	results = getTopHitsResults(query); // Function in menu.js
+	if(isAppsSite) {
+		results = getTopHitsResultsApps(query); // Function in menu.js
+	}
+	else {
+		results = getTopHitsResults(query); // Function in menu.js	
+	}
+	
 	displayTopHitsResults(results, topHitsContainer);
 }
 
@@ -152,7 +179,16 @@ function displayTopHitsResults(results, container) {
 
 // --------------------------------------------------------------
 function fetchAndDisplayResults() {
-  fetch('../search_index.json')
+	var searchIndexPath;
+	if(isAppsSite) {
+		console.log("is bApps");
+		searchIndexPath = '../../search_index_financials.json'
+	}
+	else {
+		searchIndexPath = '../search_index.json'
+		console.log("is NOT bApps; = " + searchIndexPath);
+	}
+  fetch(searchIndexPath)
     .then(response => response.json())
     .then(searchIndex => {
       var results;

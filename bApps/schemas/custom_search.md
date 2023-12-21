@@ -1,5 +1,5 @@
 ---
-title: "Doc Search"
+title: "Doc Search (Apps)"
 tree: false
 sitemap: false
 keywords: search, interject, documentation, find
@@ -86,3 +86,4 @@ description: Interject documentation search results
 	<hr style="border: 1px solid #878896;">
 	<div id="custom-search-results"></div>
 </div>
+

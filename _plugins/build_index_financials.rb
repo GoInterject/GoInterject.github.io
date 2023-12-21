@@ -3,39 +3,37 @@
 
 require 'nokogiri'
 
-puts "Running script build_index"
+puts "Running script build_index_financials"
 
 Jekyll::Hooks.register :site, :post_write do |site|
-  puts "Building index search_index.json"
+  puts "Building index search_index_financials.json"
 
   # Build your index here
-    index_content = build_index(site)
+    index_finanacials_content = build_index_financials(site)
   
     # Specify the path and filename for the index file
     parent_folder = File.expand_path("..", site.dest)
-	
-    index_file_path = File.join(parent_folder, 'search_index.json')
-    site_index_file_path = File.join(site.dest, 'search_index.json')
+    index_file_path = File.join(parent_folder, 'search_index_financials.json')
+    site_index_file_path = File.join(site.dest, 'search_index_financials.json')
     
     # Write the index content to the file
-    File.write(index_file_path, index_content)
-    File.write(site_index_file_path, index_content)
-	
+    File.write(index_file_path, index_finanacials_content)
+    File.write(site_index_file_path, index_finanacials_content)
   end
   
-  def build_index(site)
+  def build_index_financials(site)
     # Build an array of hashes containing relevant data
     index_data = []
   
     # Iterate over all pages on the website
     site.pages.each do |page|
 
-      # Exclude pages from specific folders
-      next if excluded_folder?(page) || !page.url.end_with?('.html') || page.data['title'] == 404
-
       # Include only documents from specific folders
-      #next unless included_folder?(page)
+      next unless finanacials_included_folder?(page)
       
+      # Exclude pages from specific folders
+      #next if excluded_folder?(page) || !page.url.end_with?('.html') || page.data['title'] == 404
+
       # Use Nokogiri to strip HTML tags from the content
       stripped_content = Nokogiri::HTML(page.content).text
       
@@ -61,8 +59,8 @@ Jekyll::Hooks.register :site, :post_write do |site|
     return index_json
   end
   
-  def included_folder?(page)
-    included_folders = ['wAbout', 'wDesign','wDeveloper' 'wGetStarted', 'wIndex', 'wLabs', 'wPortal', 'wReleaseNotes', 'wTroubleshoot']
+  def finanacials_included_folder?(page)
+    included_folders = ['bApps']
 
     # Check if the page or document is in an included folder
     included_folders.any? do |folder|
@@ -70,8 +68,8 @@ Jekyll::Hooks.register :site, :post_write do |site|
     end
   end
 
-  def excluded_folder?(page)
-    excluded_folders = ['bApps', 'fonts', 'schemas', 'js', 'css', 'assets']
+  def finanacials_excluded_folder?(page)
+    excluded_folders = []
   
     # Check if the page or document is in an excluded folder
     excluded_folders.any? do |folder|

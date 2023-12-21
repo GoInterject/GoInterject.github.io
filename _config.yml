@@ -45,9 +45,11 @@ plugins:
   # - jemoji
   # - jekyll-archives
 
-hook_plugins:
-  - event: :after_jekyll_build
-    script: ./build_index.rb
+#hook_plugins:
+#  - event: :after_jekyll_build
+#    script: ./build_index.rb
+#  - event: :after_jekyll_build
+#    script: ./build_index_financials.rb
 
 # gem:
 #   - jekyll-srcset
@@ -102,5 +104,6 @@ encoding:
 exclude: 
   - vendor/
   - search_index.json
+  - search_index_financials.json
 
 github: [metadata]
