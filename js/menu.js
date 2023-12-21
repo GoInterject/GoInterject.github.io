@@ -10,7 +10,7 @@ var scoreForURLMatch = 5;
 var scoreForKeywordHEAVYMatch = 5   // weight for 1st three keywords
 var scoreForKeywordDEFAULTMatch = 3 // weight for rest of keywords
 var scoreForDescriptionMatch = 1
-function addResult(topic, matchesTitle, matchesDescription, matchesURL, matchesKeywords, matchesTopKeywords)
+function addResult(topic, results, matchesTitle, matchesDescription, matchesURL, matchesKeywords, matchesTopKeywords)
 {
   var matchScore = (matchesTitle * scoreForTitleMatch) +
                   (matchesDescription * scoreForDescriptionMatch) +
@@ -121,35 +121,9 @@ function hookupTOCEvents()
       //console.log("input changed: ",$("#st-search-input").val());
 
       if (searchVal.length > 2) {
-        for (i=0;i<pages.length;i++)
-        {
-          // search url, description, title, and keywords for search input
-          var thisPage = pages[i];
-          var matchesTitle=0, matchesDescription=0, matchesURL=0, matchesKeywords=0, matchesTopKeywords=0;
-          var matchesTitle = matches(String(thisPage.title).toUpperCase(),uppercaseSearchVal);
-          //if (titleMatches > 0) console.log(uppercaseSearchVal,'matches',thisPage.title,titleMatches,'times');
-          if (thisPage.description != null) {
-            matchesDescription = matches(String(thisPage.description).toUpperCase(),uppercaseSearchVal);
-          }
-          if (thisPage.url != null) {
-            matchesURL = matches(String(thisPage.url).toUpperCase(),uppercaseSearchVal);
-          }
-          if (thisPage.keywords != null) {
-            if (thisPage.keywords.length <= 3){
-              matchesTopKeywords = matches(String(thisPage.keywords.slice(0,thisPage.keywords.length)).toUpperCase(),uppercaseSearchVal);
-              matchesKeywords = 0;
-            }
-            else{
-              matchesTopKeywords = matches(String(thisPage.keywords.slice(0,3)).toUpperCase(),uppercaseSearchVal);
-              matchesKeywords = matches(String(thisPage.keywords.slice(2,thisPage.keywords.length)).toUpperCase(),uppercaseSearchVal);
-            }
-
-          }
-          addResult(i, matchesTitle, matchesDescription, matchesURL, matchesKeywords, matchesTopKeywords);
-        }
-        results.sort(function(a,b) {
-          return b.score - a.score;
-        });
+        results = getTopHitsResults(searchVal);
+		
+		
       }
       if (results.length > 0)
       {
@@ -211,6 +185,41 @@ function hookupTOCEvents()
   });
 }
 
+function getTopHitsResults(searchVal) {
+	var uppercaseSearchVal = searchVal.toUpperCase();
+	var topHitsResults = new Array();
+	topHitsResults = [];
+	for (i=0;i<pages.length;i++)
+        {
+          // search url, description, title, and keywords for search input
+          var thisPage = pages[i];
+          var matchesTitle=0, matchesDescription=0, matchesURL=0, matchesKeywords=0, matchesTopKeywords=0;
+          var matchesTitle = matches(String(thisPage.title).toUpperCase(),uppercaseSearchVal);
+          //if (titleMatches > 0) console.log(uppercaseSearchVal,'matches',thisPage.title,titleMatches,'times');
+          if (thisPage.description != null) {
+            matchesDescription = matches(String(thisPage.description).toUpperCase(),uppercaseSearchVal);
+          }
+          if (thisPage.url != null) {
+            matchesURL = matches(String(thisPage.url).toUpperCase(),uppercaseSearchVal);
+          }
+          if (thisPage.keywords != null) {
+            if (thisPage.keywords.length <= 3){
+              matchesTopKeywords = matches(String(thisPage.keywords.slice(0,thisPage.keywords.length)).toUpperCase(),uppercaseSearchVal);
+              matchesKeywords = 0;
+            }
+            else{
+              matchesTopKeywords = matches(String(thisPage.keywords.slice(0,3)).toUpperCase(),uppercaseSearchVal);
+              matchesKeywords = matches(String(thisPage.keywords.slice(2,thisPage.keywords.length)).toUpperCase(),uppercaseSearchVal);
+            }
+
+          }
+          addResult(i, topHitsResults, matchesTitle, matchesDescription, matchesURL, matchesKeywords, matchesTopKeywords);
+        }
+        topHitsResults.sort(function(a,b) {
+          return b.score - a.score;
+        });
+	return topHitsResults;
+}
 function queryString()
 {
     var vars = [], hash;

@@ -17,7 +17,6 @@ description: Interject documentation search results
     }
     #custom-search-button {
         margin-left: 10px;
-        margin-right: 10px;
     }
     #custom-search-results {
   }
@@ -29,7 +28,20 @@ description: Interject documentation search results
         margin-left: 15px;
         margin-bottom: 10px;
     }
-
+    #custom-top-hits {
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+	#custom-advanced_button {
+		display: none; /* Hide the div by default */
+		text-align: right;
+	}
+	#advanced-search-options {
+    }
+	#custom-space {
+		display: none;
+	}
+	
 </style>
 
 <form id="custom-search-form">
@@ -37,13 +49,41 @@ description: Interject documentation search results
   <button type="submit" id="custom-search-button">Search</button>
 </form>
 
-<div>
-  <input type="checkbox" id="custom-regex">
-  <label for="custom-regex">Use Regex</label>
-  <input type="checkbox" id="custom-all-hits">
-  <label for="custom-all-hits">Show all hits</label>
+<div id="custom-advanced_button">
+<button id="custom-advanced-search" style="float: right;" onclick="toggleOptions()">Advanced Search</button>
 </div>
 
-<div id="custom-search-results"></div>
+<div id="advanced-search-options">
+  <input
+    type="checkbox"
+    id="custom-regex"
+    title="Searches with Regex syntax"
+	onclick="handleCustomRegex()"
+  >
+  <label for="custom-regex">Use Regex</label>
+  <input
+    type="checkbox"
+    id="custom-all-hits"
+    title="Displays all hits in the page(s)"
+	onclick="handleCustomAllHits()"
+  >
+  <label for="custom-all-hits">Show all hits</label>
+  <input
+    type="checkbox"
+    id="custom-top-hits"
+    title="Displays hits in page title, url, keywords, and descriptions (Standard search only)"
+	onclick="handleCustomTopHits()"
+  >
+  <label for="custom-top-hits">Display top hits</label>
+</div>
 
-<script src="../js/customSearch.js"></script>
+<div id="custom-space">
+	<br>
+</div>
+
+<div id="resultsContainer">
+	<div id="top-hits-results"></div>
+	<hr style="border: 1px solid #878896;">
+	<div id="custom-search-results"></div>
+</div>
+
