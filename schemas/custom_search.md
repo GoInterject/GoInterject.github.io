@@ -41,6 +41,9 @@ description: Interject documentation search results
 	#custom-space {
 		display: none;
 	}
+	#orderby_dropdown_container {
+		display: none;
+	}
 	
 </style>
 
@@ -48,6 +51,15 @@ description: Interject documentation search results
   <input type="search" id="custom-search-input" placeholder="Enter your search query">
   <button type="submit" id="custom-search-button">Search</button>
 </form>
+
+<div class="orderby_dropdown_container" style="float: right;">
+	<label for="dropdown">Sort:</label>
+  <select id="orderby_dropdown" name="Sort" onchange="handleDropdownChange(this)">
+    <option value="occurrence">Occurrence</option>
+    <option value="alphabetic">Alphabetically</option>
+    <option value="date">Date</option>
+  </select>
+  </div>
 
 <div id="custom-advanced_button">
 <button id="custom-advanced-search" style="float: right;" onclick="toggleOptions()">Advanced Search</button>

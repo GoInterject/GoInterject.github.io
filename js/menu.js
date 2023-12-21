@@ -134,12 +134,10 @@ function hookupTOCEvents()
 
       if (searchVal.length > 2) {
         if (isAppsSite) {
-			console.log("isAppsSite");
 			results = getTopHitsResultsApps(searchVal);
 		}
 		else {
 			results = getTopHitsResults(searchVal);
-			console.log("is not AppsSite");
 		}
 		
       }

@@ -23,6 +23,10 @@ const query = searchTermDecoded.toLowerCase(); // For case insensitive searching
 const resultsContainer = document.getElementById('custom-search-results');
 const topHitsContainer = document.getElementById('top-hits-results');
 
+// Results
+var results = new Array();
+var topHitsResults = new Array();
+
 // Page
 var currentPageUrl = window.location.href;
 // --------------------------------------------------------------
@@ -74,7 +78,6 @@ else if (query.length < 2) {
 // Fetch and display the results
 else if (currentPageUrl.includes("custom_search")){
 	if(topHits === 'true') {
-		
 		fetchAndDisplayTopHitsResults();
 	}
 	fetchAndDisplayResults();
@@ -109,6 +112,23 @@ if (searchForm) {
 	});
 }
 
+// --------------------------------------------------------------
+function handleDropdownChange(selectElement) {
+	var selectedValue = selectElement.value;
+	switch (selectedValue) {
+        case 'occurrence':
+		console.log('Sorting by Occurrence');
+          break;
+        case 'alphabetic':
+		console.log('Sorting by Alphabet');
+          break;
+        case 'date':
+		console.log('Sorting by Date');
+          break;
+      }
+}
+	
+// --------------------------------------------------------------
 function handleCustomAllHits() {
 	reloadPage()
 }
@@ -128,13 +148,13 @@ function handleCustomRegex() {
 // --------------------------------------------------------------
 function fetchAndDisplayTopHitsResults() {
 	if(isAppsSite) {
-		results = getTopHitsResultsApps(query); // Function in menu.js
+		topHitsResults = getTopHitsResultsApps(query); // Function in menu.js
 	}
 	else {
-		results = getTopHitsResults(query); // Function in menu.js	
+		topHitsResults = getTopHitsResults(query); // Function in menu.js	
 	}
 	
-	displayTopHitsResults(results, topHitsContainer);
+	displayTopHitsResults(topHitsResults, topHitsContainer);
 }
 
 // --------------------------------------------------------------
@@ -181,23 +201,22 @@ function displayTopHitsResults(results, container) {
 function fetchAndDisplayResults() {
 	var searchIndexPath;
 	if(isAppsSite) {
-		console.log("is bApps");
 		searchIndexPath = '../../search_index_financials.json'
 	}
 	else {
 		searchIndexPath = '../search_index.json'
-		console.log("is NOT bApps; = " + searchIndexPath);
 	}
   fetch(searchIndexPath)
     .then(response => response.json())
     .then(searchIndex => {
-      var results;
+
       if(useRegex === 'true') {
         results = searchRegex(query, searchIndex); // Gets the results with a Regex search
       }
       else {
         results = search(query, searchIndex); // Gets the results with a standard search
       }
+	  sortResults(results);
       displayResults(results, resultsContainer, query);
     })
     .catch(error => {
@@ -269,6 +288,13 @@ function searchRegex(query, searchIndex) {
       occurrences: occurrences
     };
   }).filter(item => item.occurrences > 0);
+}
+// --------------------------------------------------------------
+// FUNCTIONS (SORT)
+// --------------------------------------------------------------
+function sortResults(results) {
+  // Sort results by occurrences in descending order
+  results.sort((a, b) => b.occurrences - a.occurrences);
 }
 
 // --------------------------------------------------------------
