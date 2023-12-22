@@ -6,7 +6,7 @@ description: This is the base installer
 ---
 * * *
 
-## **Overview:**
+## Overview
 
 Interject aims to make the installation process as simple and painless as possible. This installation is intended for single user computers.
 

@@ -6,7 +6,7 @@ description: Modify a monthly trend report which could easily be modified to acc
 ---
 * * *
 
-##  **Overview**
+## Overview
 
 Financial reports can sometimes share the same row or column configurations. Rather than creating a new report, it is often easier to modify an existing one. For example, you might be using a monthly trend report which could easily be modified to accommodate a budget-to-actual comparison report, showing monthly and year-to-date differences. This Walkthrough will illustrate how to make these changes.
 

@@ -54,7 +54,7 @@ The basic profile is complete! The user is assigned the Standard role by default
 ![](/images/AddingAUser/08.png)
 <br>
 
-### **Adding an Interject Role:**
+### Adding an Interject Role
 
 All new users by default are assigned to the Standard role, which means they can run reports in the Report Library. However, there are other roles such as managing updates to the Report Library, Custom Commands, and being a ClientAdmin. For a list of the Interject Roles, see [here](/wPortal/INTERJECT-Roles.html#overview).
 
@@ -77,7 +77,7 @@ For this scenario, David will be assigned to the ClientAdmin role.
 ![](/images/AddingAUser/11.png)
 <br>
 
-### **Additional Info:**
+### Additional Info
 
 Before finishing up, below the list of the Organization Staff is a section labeled **External Admins**. This section is for any Interject Employees who are consulting on the project. To add an external admin, enter an Interject email address and click **ADD EXTERNAL ADMIN**.
 

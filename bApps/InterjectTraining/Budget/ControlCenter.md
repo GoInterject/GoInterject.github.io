@@ -127,7 +127,7 @@ To make sure, update the *Versions* on the *Summary* tab to **Reg Review Thru** 
 ![](/images/WCNTraining/Budget/ControlCenter_BudgetBookRegReviewThruSetting.png)
 ![](/images/WCNTraining/Budget/ControlCenter_BudgetBookRegReviewThruAmounts.png)
 
-### **AFTER CORP CUTOFF**
+### AFTER CORP CUTOFF
 
 Now if an amount is saved **AFTER** the **Corp Cutoff** date, it will *NOT* be synced to Interject. Take the following example: we saved at *11/2/2019 5:00 PM* (after the **Corp Cutoff** date used in earlier example).
 
