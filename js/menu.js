@@ -10,7 +10,14 @@ var scoreForURLMatch = 5;
 var scoreForKeywordHEAVYMatch = 5   // weight for 1st three keywords
 var scoreForKeywordDEFAULTMatch = 3 // weight for rest of keywords
 var scoreForDescriptionMatch = 1
-function addResult(topic, matchesTitle, matchesDescription, matchesURL, matchesKeywords, matchesTopKeywords)
+
+var isAppsSite = false;
+
+if (window.location.href.indexOf("bApps") !== -1) {
+	isAppsSite = true;
+}
+
+function addResult(topic, results, matchesTitle, matchesDescription, matchesURL, matchesKeywords, matchesTopKeywords)
 {
   var matchScore = (matchesTitle * scoreForTitleMatch) +
                   (matchesDescription * scoreForDescriptionMatch) +
@@ -104,7 +111,12 @@ function hookupTOCEvents()
         {
           // "see all" is selected or they don't have an autocomplete result selected
           //?q=
-          loadPage("/schemas/custom_search?q=" + $("#st-search-input").val());
+          if (isAppsSite) {
+			loadPage("/bApps/schemas/custom_search?q=" + $("#st-search-input").val());
+		  }
+		  else {
+			loadPage("/schemas/custom_search?q=" + $("#st-search-input").val());
+		  }
         } else {
           // an autocomplete result is selected
           loadPage(pages[displayingAutcompleteResults[autoCompleteShowingID]].url);
@@ -121,94 +133,134 @@ function hookupTOCEvents()
       //console.log("input changed: ",$("#st-search-input").val());
 
       if (searchVal.length > 2) {
-        for (i=0;i<pages.length;i++)
-        {
-          // search url, description, title, and keywords for search input
-          var thisPage = pages[i];
-          var matchesTitle=0, matchesDescription=0, matchesURL=0, matchesKeywords=0, matchesTopKeywords=0;
-          var matchesTitle = matches(String(thisPage.title).toUpperCase(),uppercaseSearchVal);
-          //if (titleMatches > 0) console.log(uppercaseSearchVal,'matches',thisPage.title,titleMatches,'times');
-          if (thisPage.description != null) {
-            matchesDescription = matches(String(thisPage.description).toUpperCase(),uppercaseSearchVal);
-          }
-          if (thisPage.url != null) {
-            matchesURL = matches(String(thisPage.url).toUpperCase(),uppercaseSearchVal);
-          }
-          if (thisPage.keywords != null) {
-            if (thisPage.keywords.length <= 3){
-              matchesTopKeywords = matches(String(thisPage.keywords.slice(0,thisPage.keywords.length)).toUpperCase(),uppercaseSearchVal);
-              matchesKeywords = 0;
-            }
-            else{
-              matchesTopKeywords = matches(String(thisPage.keywords.slice(0,3)).toUpperCase(),uppercaseSearchVal);
-              matchesKeywords = matches(String(thisPage.keywords.slice(2,thisPage.keywords.length)).toUpperCase(),uppercaseSearchVal);
-            }
+        if (isAppsSite) {
+			results = getTopHitsResultsApps(searchVal);
+		}
+		else {
+			results = getTopHitsResults(searchVal);
+		}
+		
+      }
+      
+	autoCompleteShowingID = -1;
+	var resultsShown = 0;
+	var resultsOutput = new Array();
+	resultsOutput.push("<div id='autoContainer'>")
+	//console.log(results);
+	for (i=0; i < autoCompleteResultLimit && i < results.length; i++)
+	{
+	  //console.log(i, "of", autoCompleteResultLimit, "is underway");
+	  displayingAutcompleteResults.push(results[i].topic); //log results to global array
+	  resultsOutput.push("<div class='autoCompleteResult' id='autoCompleteResult" + i + "' onclick='loadPage(\"" + pages[results[i].topic].url + "\")'>");
+	  resultsOutput.push("<ul class='autocompleteList'>");
+	  resultsOutput.push("<li id='autoTitle" + i + "' class='autocompleteTitle'>")
+	  resultsOutput.push("<a href=" + pages[results[i].topic].url + ">" + highlightMe(pages[results[i].topic].title,searchVal) + "</a>");
+	  resultsOutput.push("</li>");
+	  resultsOutput.push("<li id='autoUrl" + i + "' class='autocompleteUrl'>")
+	  resultsOutput.push(highlightMe(pages[results[i].topic].url,searchVal));
+	  resultsOutput.push("</li>");
+	  /*
+	  resultsOutput.push("<li id='autoBreadcrumb" + i + "' class='autocompleteBreadcrumb'>")
+	  resultsOutput.push("Breadcrumb: " + breadcrumbString(pages[results[i]].url));
+	  resultsOutput.push("</li>");
+	  */
+	  if (pages[results[i].topic].keywords)
+		  {
+		  resultsOutput.push("<li id='autoKeywords" + i + "' class='autocompleteKeywords'>")
+		  resultsOutput.push("<b>Keywords</b>: <i>" + highlightMe(pages[results[i].topic].keywords,searchVal) + "</i>");
+		  resultsOutput.push("</li>");
+		  }
+		  
+	  // Limit the character length of the description so that the drop down from the search
+	  // does not flow to the bottom of the page
+	  var descriptionCutString;
 
-          }
-          addResult(i, matchesTitle, matchesDescription, matchesURL, matchesKeywords, matchesTopKeywords);
-        }
-        results.sort(function(a,b) {
-          return b.score - a.score;
-        });
-      }
-      if (results.length > 0)
-      {
-        autoCompleteShowingID = -1;
-        var resultsShown = 0;
-        var resultsOutput = new Array();
-        resultsOutput.push("<div id='autoContainer'>")
-        //console.log(results);
-        for (i=0; i < autoCompleteResultLimit && i < results.length; i++)
-        {
-          //console.log(i, "of", autoCompleteResultLimit, "is underway");
-          displayingAutcompleteResults.push(results[i].topic); //log results to global array
-          resultsOutput.push("<div class='autoCompleteResult' id='autoCompleteResult" + i + "' onclick='loadPage(\"" + pages[results[i].topic].url + "\")'>");
-          resultsOutput.push("<ul class='autocompleteList'>");
-          resultsOutput.push("<li id='autoTitle" + i + "' class='autocompleteTitle'>")
-          resultsOutput.push("<a href=" + pages[results[i].topic].url + ">" + highlightMe(pages[results[i].topic].title,searchVal) + "</a>");
-          resultsOutput.push("</li>");
-          resultsOutput.push("<li id='autoUrl" + i + "' class='autocompleteUrl'>")
-          resultsOutput.push(highlightMe(pages[results[i].topic].url,searchVal));
-          resultsOutput.push("</li>");
-          /*
-          resultsOutput.push("<li id='autoBreadcrumb" + i + "' class='autocompleteBreadcrumb'>")
-          resultsOutput.push("Breadcrumb: " + breadcrumbString(pages[results[i]].url));
-          resultsOutput.push("</li>");
-          */
-          if (pages[results[i].topic].keywords)
-          {
-          resultsOutput.push("<li id='autoKeywords" + i + "' class='autocompleteKeywords'>")
-          resultsOutput.push("<b>Keywords</b>: <i>" + highlightMe(pages[results[i].topic].keywords,searchVal) + "</i>");
-          resultsOutput.push("</li>");
-          }
-          // Limit the character length of the description so that the drop down from the search
-          // does not flow to the bottom of the page
-          var descriptionCutString = pages[results[i].topic].description.substring(0, 75) + "..."
-          
-          if (pages[results[i].topic].description)
-          {
-          resultsOutput.push("<li id='autoDescription" + i + "' class='autocompleteDescription'>")
-          resultsOutput.push("<b>Description</b>: " + highlightMe(descriptionCutString,searchVal));
-          resultsOutput.push("</li>");
-          }
-          resultsOutput.push("</ul>");
-          resultsOutput.push("</div>")
-          resultsShown++;
-        }
-        var resultsShownText = (resultsShown > 1) ? resultsShown + " of " + results.length + " docs" : "doc";
-        resultsOutput.push("<div id='autocompleteShowAll'><ul class='autocompleteList'><li class='autocompleteTitle' id='autoSeeAll'><a href='/schemas/custom_search?q=" + searchVal + "'><b>Showing top " + resultsShownText + ". See all results...</b></a></li></ul></div>")
-        resultsOutput.push("</div>");
-        $("#autocompleteResults").css("display","block");
-        $("#autocompleteResults").html(resultsOutput.join(""));
-        autoCompleteShowing = true;
-      } else {
-        $("#autocompleteResults").css("display","none");
-        $("#autocompleteResults").html("");
-        autoCompleteShowing = false;
-      }
+		if (pages[results[i].topic].description != null) {
+		  descriptionCutString = pages[results[i].topic].description.substring(0, 75) + "...";
+		} else {
+		  descriptionCutString = "No description available";
+		}
+	  
+	  if (pages[results[i].topic].description)
+		  {
+		  resultsOutput.push("<li id='autoDescription" + i + "' class='autocompleteDescription'>")
+		  resultsOutput.push("<b>Description</b>: " + highlightMe(descriptionCutString,searchVal));
+		  resultsOutput.push("</li>");
+		  }
+	  resultsOutput.push("</ul>");
+	  resultsOutput.push("</div>")
+	  resultsShown++;
+	}
+	
+	var resultsShownText = (resultsShown > 1) ? resultsShown + " of " + results.length + " docs" : "doc";
+	var sitePath = isAppsSite ? '/bApps' : '';
+	var resultsOutputText = results.length === 0 ? "No top results" : "Showing top " + resultsShownText;
+	var resultsOutputLink = `<a href='${sitePath}/schemas/custom_search?q=${searchVal}'><b>${resultsOutputText}. See all results...</b></a>`;
+
+	resultsOutput.push(`<div id='autocompleteShowAll'><ul class='autocompleteList'><li class='autocompleteTitle' id='autoSeeAll'>${resultsOutputLink}</li></ul></div>`);
+	resultsOutput.push("</div>");
+	$("#autocompleteResults").css("display","block");
+	$("#autocompleteResults").html(resultsOutput.join(""));
+	autoCompleteShowing = true;
+      
       lastSearch = searchVal;
     } // if searchVal != lastSearch
   });
+}
+
+function getTopHitsResults(searchVal) {
+  var uppercaseSearchVal = searchVal.toUpperCase();
+  var topHitsResults = [];
+
+  for (var i = 0; i < pages.length; i++) {
+    var thisPage = pages[i];
+
+    // Check if the URL starts with "/bApps"; if it does, skip processing the page
+    if (thisPage.url && thisPage.url.toUpperCase().startsWith("/BAPPS")) {
+      continue;
+    }
+
+    // Proceed with processing the page if the URL doesn't start with "/bApps"
+    var matchesTitle = matches(String(thisPage.title).toUpperCase(), uppercaseSearchVal);
+    var matchesDescription = thisPage.description ? matches(String(thisPage.description).toUpperCase(), uppercaseSearchVal) : 0;
+    var matchesURL = matches(String(thisPage.url).toUpperCase(), uppercaseSearchVal);
+    var matchesKeywords = thisPage.keywords ? matches(String(thisPage.keywords.slice(2, thisPage.keywords.length)).toUpperCase(), uppercaseSearchVal) : 0;
+    var matchesTopKeywords = thisPage.keywords ? matches(String(thisPage.keywords.slice(0, 3)).toUpperCase(), uppercaseSearchVal) : 0;
+
+    addResult(i, topHitsResults, matchesTitle, matchesDescription, matchesURL, matchesKeywords, matchesTopKeywords);
+  }
+
+  topHitsResults.sort(function(a, b) {
+    return b.score - a.score;
+  });
+
+  return topHitsResults;
+}
+
+function getTopHitsResultsApps(searchVal) {
+var uppercaseSearchVal = searchVal.toUpperCase();
+  var topHitsResults = [];
+
+  for (var i = 0; i < pages.length; i++) {
+    var thisPage = pages[i];
+    
+    // Check if the URL starts with "/bApps"
+    if (thisPage.url && thisPage.url.toUpperCase().startsWith("/BAPPS")) {
+      var matchesTitle = matches(String(thisPage.title).toUpperCase(), uppercaseSearchVal);
+      var matchesDescription = thisPage.description ? matches(String(thisPage.description).toUpperCase(), uppercaseSearchVal) : 0;
+      var matchesURL = matches(String(thisPage.url).toUpperCase(), uppercaseSearchVal);
+      var matchesKeywords = thisPage.keywords ? matches(String(thisPage.keywords.slice(2, thisPage.keywords.length)).toUpperCase(), uppercaseSearchVal) : 0;
+      var matchesTopKeywords = thisPage.keywords ? matches(String(thisPage.keywords.slice(0, 3)).toUpperCase(), uppercaseSearchVal) : 0;
+
+      addResult(i, topHitsResults, matchesTitle, matchesDescription, matchesURL, matchesKeywords, matchesTopKeywords);
+    }
+  }
+
+  topHitsResults.sort(function(a, b) {
+    return b.score - a.score;
+  });
+
+  return topHitsResults;
 }
 
 function queryString()
