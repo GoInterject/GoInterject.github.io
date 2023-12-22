@@ -2,7 +2,7 @@
 title: Projections Change Query Tool
 layout: custom
 keywords: [Training, Projections, Projection Change Query]
-description: 
+description: The Projections Change Query Tool provides insight to how Projections have been changed while open, with views on the summary and detailed levels.
 ---
 
 ## Overview

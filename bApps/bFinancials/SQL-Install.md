@@ -1,18 +1,20 @@
 ---
 title: SQL Database Installation
 layout: custom
-keywords: []
-description: 
+keywords: [SQL Server, MSSQL, mail profile, authentication, role, certificate, deployment, SSMS]
+description: Setup guide for SQL database.
 ---
 
 ## Settings
 
 ### SQL Server Version
+
 To check your MSSQL version, run ```SELECT @@VERSION``` in a query window. 
 
 MSSQL Server 2014 and newer is supported.
 
 ### SQL Database Mail Profile
+
 To check the Mail profile, run ```SELECT name FROM msdb.dbo.sysmail_profile```.
 
 In this case, the result should be **PROD \| BETA \| DEV:Mail**

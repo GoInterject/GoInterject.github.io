@@ -2,7 +2,7 @@
 title: Control Center Summary
 layout: custom
 keywords: [Training, Budget, Control Center]
-description: 
+description: The Budget Change Query Tool provides different views to how budgets have changed over the budget season.
 ---
 
 ## Overview

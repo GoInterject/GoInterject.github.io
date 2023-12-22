@@ -2,7 +2,7 @@
 title: Capital Module
 layout: custom
 keywords: [Training, Capital]
-description: 
+description: The Capital Module is designed to handle Capital POs, and it provides tools for controllers to review Capital allocations across sites and available assets.
 ---
 
 ## Overview

@@ -2,7 +2,7 @@
 title: Projection Template
 layout: custom
 keywords: [Training, Projections, Projection Template]
-description: 
+description: The Local Projections Template is used to save to a district's Projections for a given month. This template closely matches the Local Budget Template in design and function.
 ---
 
 ## Overview

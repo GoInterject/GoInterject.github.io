@@ -2,7 +2,7 @@
 title: Federated Login Design
 layout: custom
 keywords: [login, credentials, accounts, Enterprise, setup]
-description: 
+description: Interject uses a Duende (previously Identity Server 4) API to handle authentication for federated user logins.
 ---
 * * *
 

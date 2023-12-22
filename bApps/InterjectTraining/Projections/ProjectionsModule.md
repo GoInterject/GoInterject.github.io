@@ -2,7 +2,7 @@
 title: Projections Module
 layout: custom
 keywords: [Training, Projections]
-description: 
+description: The Projections Module gives controllers tools needed to forecast the amounts they project as necessary in the upcoming months.
 ---
 
 ## Overview

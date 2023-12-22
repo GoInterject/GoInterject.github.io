@@ -2,7 +2,7 @@
 title: jCell/jCellN()
 layout: custom
 keywords: [jcell, account, segment, function, formula]
-descriptions: jCell retrieves data based on the provided parameters. 
+description: jCell retrieves data based on the provided parameters. 
 ---
 * * *
 

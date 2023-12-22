@@ -2,7 +2,7 @@
 title: Budget Upload Tab
 layout: custom
 keywords: [Training, Budget, Budget Upload Tab]
-description: 
+description: Bulk upload multiple Budget accounts at the same time, in a simple list format.
 ---
 
 ## Overview

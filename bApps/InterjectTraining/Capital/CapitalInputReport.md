@@ -2,7 +2,7 @@
 title: Capital Input Tool Summary
 layout: custom
 keywords: [Training, Capital, Capital Input]
-description: 
+description: This report is used to upload new Capital amounts and recon the saved Capital amounts for the given Budget Year.
 ---
 
 ## Overview

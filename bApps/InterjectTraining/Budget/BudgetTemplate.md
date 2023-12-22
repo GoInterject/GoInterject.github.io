@@ -2,7 +2,7 @@
 title: Budget Template
 layout: custom
 keywords: [Training, Budget, Budget Template]
-description: 
+description: This is the primary tool used for managing Budgets. This tool can be downloaded and customized in your local environment.
 ---
 
 ## Overview

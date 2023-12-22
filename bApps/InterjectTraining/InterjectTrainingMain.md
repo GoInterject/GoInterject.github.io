@@ -2,10 +2,10 @@
 title: Interject Training
 layout: custom
 keywords: [Training]
-description: 
+description: There are many modules that Interject offers to help with managing money and other company resources. In this section, you will find the three core modules and the tools they offer to give better visibility and control over the resources under your jurisdiction.
 ---
-##  **Overview**
----
+
+##  Overview
 
 There are many modules that Interject offers to help with managing money and other company resources. In this section, you will find the three core modules and the tools they offer to give better visibility and control over the resources under your jurisdiction.
 

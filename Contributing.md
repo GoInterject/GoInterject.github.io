@@ -2,6 +2,8 @@
 title: Contributing
 layout: custom
 sitemap: false
+keywords: [best practices, standards, editing, changes, format, style, consistency]
+description: Hello and thank you for wanting to make a contribution to Interject. These are the guidelines that we use to make sure our documentation is the highest quality, and consistent. Included in this document is the documentation cycle from creation to approval.
 ---
 * * *
 

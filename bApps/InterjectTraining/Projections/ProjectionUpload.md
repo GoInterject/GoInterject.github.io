@@ -2,7 +2,7 @@
 title: Projection Upload Tool
 layout: custom
 keywords: [Training, Projections, Projections Upload]
-description: 
+description: The Projections Upload Tool allows controllers to upload projections for multiple accounts in a district at the same time. This upload tool closely matches the Budget Upload Tool in design and function.
 ---
 
 ## Overview

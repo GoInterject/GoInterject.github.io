@@ -2,7 +2,7 @@
 title: Summary Tab
 layout: custom
 keywords: [Training, Capital, Summary Tab]
-description: 
+description: This tab pulls in District Capital Summary totals by Period/Quarter. This is used to recon the Capital amounts saved from the Bud Capital Input tab.
 ---
 
 ## Overview

@@ -2,7 +2,7 @@
 title: Capital Change Query Tool Summary
 layout: custom
 keywords: [Training, Capital, Capital Change Query]
-description: 
+description: This tool provides an in-depth view into the historical data for the Capital PO changes.
 ---
 
 ## Overview

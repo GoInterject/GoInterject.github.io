@@ -2,7 +2,7 @@
 title: Budget Change Query Tool Summary
 layout: custom
 keywords: [Training, Budget, Change Query]
-description: 
+description: The Budget Change Query Tool provides different views of how budgets have changed over the budget season. The following are brief descriptions of each tab in the tool.
 ---
 
 ## Overview

@@ -2,7 +2,7 @@
 title: Unsynced Changes Tab
 layout: custom
 keywords: [Training, Budget, Budget Change Query, Unsynced]
-description: 
+description: This new tab of the Budget Change Query tool highlights all budget changes that have not yet been synced to Interject, either because they are saved after Corp Cutoff or BOD.
 ---
 
 ## Overview

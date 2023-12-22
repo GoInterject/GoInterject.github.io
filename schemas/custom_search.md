@@ -2,7 +2,7 @@
 title: "Docs search"
 tree: false
 sitemap: false
-keywords: search, interject, documentation, find
+keywords: [search, interject, documentation, find]
 description: Interject documentation search results
 ---
 

@@ -2,7 +2,7 @@
 title: Capital Summary by PO Type Tab
 layout: custom
 keywords: [Training, Capital, Capital Summary by PO Type]
-description: 
+description: Pulls in Summarized Capital info broken out by Asset Type (Period/QTR). It is the same as the Capital tab in the Budget Book. This is the report Region and Corporate use to review capital.
 ---
 
 ## Overview

@@ -1,7 +1,7 @@
 ---
 title: Conditional Access
 layout: custom
-keywords: []
+keywords: [policy, statements, user claims, rules]
 description: Conditional access is a feature to control and validate user provisioning via policies that act on the claims issued by your identity server. These are known as Conditional Access policies. Interject's identity server exposes an interface for allowing the provisioning of users in Interject via claims provided by third party identity providers.
 ---
 * * *

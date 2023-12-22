@@ -2,7 +2,7 @@
 title: Bud Capital Input Tab
 layout: custom
 keywords: [Training, Capital, Capital Input]
-description: 
+description: Save new Capital PO Items for a specific District, and pull in existing Capital PO information.
 ---
 
 ## Overview

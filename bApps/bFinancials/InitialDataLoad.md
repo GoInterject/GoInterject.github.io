@@ -1,8 +1,8 @@
 ---
 title: Initial Data Load
 layout: custom
-keywords: []
-description: 
+keywords: [Epicor, setup, init, data]
+description: Setup to initialize Epicor Enterprise Data.
 ---
 
 ## Begin Data Load

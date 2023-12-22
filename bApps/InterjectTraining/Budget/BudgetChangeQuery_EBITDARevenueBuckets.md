@@ -2,7 +2,7 @@
 title: EBITDA Revenue Buckets Tab
 layout: custom
 keywords: [Training, Budget, Budget Change Query]
-description: 
+description: This new tab of the Budget Change Query tool displays total EBITDA and Revenue sums grouped by District and Review Date.
 ---
 
 ## Overview

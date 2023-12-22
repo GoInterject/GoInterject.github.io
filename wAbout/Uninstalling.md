@@ -2,11 +2,11 @@
 title: Uninstalling
 layout: custom
 keywords: [Uninstall, Remove, Delete]
-Description: How to uninstall Interject
+description: Interject aims to make uninstalling a simple and straight forward process. This process fully removes current versions of Interject as well as legacy versions (version 2.3.7.0) and before.
 ---
 * * *
 
-## **Overview:**
+## Overview
 
 Interject aims to make uninstalling a simple and straight forward process. This process fully removes current versions of Interject as well as legacy versions (version 2.3.7.0) and before.
 
