@@ -2,6 +2,7 @@
 title: Report Library Organization
 layout: custom
 keywords: [sorting, organizing, hierarchy, folders, links, updating, editing, moving, deleting]
+headings: ["Overview", "Sorting Reports Links", "Sorting Folders", "Folder Organization"]
 description: The Report Library is designed to be a central hub for all your report sharing and organizational needs. It contains its own folder hierarchy (3 levels deep for simplicity) for basic organization. You can sort reports within a folder and also the nested folders themselves.
 ---
 * * *

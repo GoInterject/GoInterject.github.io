@@ -2,6 +2,7 @@
 title: "Export: Advanced Distribution"
 layout: custom
 keywords: [distribution, grouping, advanced, export, distribute, walkthrough]
+headings: ["Overview", "Custom Tab Renaming", "Replacing Keywords Dynamically", "Export Target Options", "Distributing Multiple Sheets", "Specializing Reports Using Multiple Builds", "Building Distribution Reports Without Pulling Data", "Grouping Segments"]
 description: There are a number of different options available for distributing reports as well as naming workbooks and individual sheets. In this example, you are going to explore some of the more advanced methods.
 ---
 * * *

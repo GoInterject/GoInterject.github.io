@@ -2,6 +2,7 @@
 title: "Create: Building jDropdowns"
 layout: custom
 keywords: [jDropdown, function, hyperlink, custom list, walkthrough]
+headings: ["Overview", "Preparing the Report", "Adding a Named Range", "Creating the Formula", "Adding a Special Hyperlink", "Reviewing the Report Changes", "Creating a Custom jDropdown List"]
 description: The jDropdown formula is used for filtering on multiple parameters.
 ---
 * * *

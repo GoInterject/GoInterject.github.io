@@ -2,6 +2,7 @@
 title: "Modify: Inventory Report"
 layout: custom
 keywords: [alter, change, modify, fixed, inventory, category, add column, add row, jFreezePanes, walkthrough]
+headings: ["Overview", "Setting up the Report", "Adding a Row to the Report", "Adding a New Definition Column", "Preparing the Report to Share"]
 description: In this example you will be modifying a fixed report, going over how to add a row to the report as well as add a description column.
 ---
 * * *

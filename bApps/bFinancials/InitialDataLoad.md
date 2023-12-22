@@ -1,8 +1,9 @@
 ---
 title: Initial Data Load
 layout: custom
-keywords: []
-description: 
+keywords: [Epicor, setup, init, data]
+headings: ["Begin Data Load", "Steps Required for Interject Application Setup - Data Connection", "Redirect the DB Connection to the new DB in Interject portal"]
+description: Setup to initialize Epicor Enterprise Data.
 ---
 
 ## Begin Data Load

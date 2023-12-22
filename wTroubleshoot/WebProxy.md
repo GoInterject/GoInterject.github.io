@@ -2,6 +2,7 @@
 title: Web Proxy Configuration
 layout: custom
 keywords: [config, settings, diagnostics, app.config]
+headings: ["Overview", "Configure via Diagnostics Setting", "Configure via app.config File"]
 description: The Interject Addin allows users to authenticate using Windows authentication. For this Interject uses the Microsoft DefaultCredential library to set up a proxy.
 ---
 * * *

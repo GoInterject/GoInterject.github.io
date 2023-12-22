@@ -2,6 +2,7 @@
 title: Report Templates
 layout: custom
 keywords: [Report, Epicor, Accounts]
+headings: ["Account Rollup Screen", "Building Your Rollups", "Build Your Rows", "The Report Template", "Adding Company Columns"]
 description: Step by step guide on using Interject Financials - Epicor Enterprise financial report templates.
 ---
 

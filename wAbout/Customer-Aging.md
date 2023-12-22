@@ -2,6 +2,7 @@
 title: Customer Aging
 layout: custom
 keywords: [customer, aging, modify, drill, save, detail, pivot table, walkthrough]
+headings: ["Overview", "Navigating to the Aging Summary", "Drilling Into the Aging Detail", "Saving the Data", "Moving to a Pivot Table"]
 description: In this walkthrough, you will open a basic aging summary and modify it to fit your specific needs. You will then drill into the details tab, take notes on any unpaid invoices, then save them back to the database.
 ---
 * * *

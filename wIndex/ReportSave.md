@@ -2,6 +2,7 @@
 title: ReportSave()
 layout: custom
 keywords: [ReportSave, save, function, formula, data]
+headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Embeddable Helper Functions"]
 description: The ReportSave function will use a designated DataPortal to save data in a worksheet to a data source.
 ---
 * * *
@@ -10,7 +11,7 @@ description: The ReportSave function will use a designated DataPortal to save da
 
 The ReportSave function will use a designated DataPortal to save data in a worksheet to a data source. Typically this is done by setting up a DataPortal to run a procedure to take the designated data in the worksheet and save it to a data source. This function makes it convenient to upload local changes to the data source without having to edit it directly.
 
-For an example of this function, see [ Lab Dev: Customer Aging Detail ](/wGetStarted/L-Dev-CustomerCreditSave.html).
+For an example of this function, see [Lab Dev: Customer Aging Detail](/wGetStarted/L-Dev-CustomerCreditSave.html).
 
 ###  Function Arguments
 
@@ -104,7 +105,7 @@ For an example of this function, see [ Lab Dev: Customer Aging Detail ](/wGetSta
     </tr>
     <tr>
 		<td class="pph"><b>Constraints</b></td>
-		<td>The values must match the order of the parameters in the data source (The order can be verified using the [ Validation Report ](/wTroubleshoot/Reports.html#validation-report-for-pullsave-events) )</td>
+		<td>The values must match the order of the parameters in the data source (The order can be verified using the [Validation Report](/wTroubleshoot/Reports.html#validation-report-for-pullsave-events) )</td>
     </tr>
     <tr>
 		<td class="pph"><b>If Blank</b></td>
@@ -174,4 +175,4 @@ For an example of this function, see [ Lab Dev: Customer Aging Detail ](/wGetSta
 ###  Embeddable Helper Functions
 
 * [jDataPortal](/wIndex/jDataPortal.html)
-* [ Param ](Param.html)
+* [Param](Param.html)

@@ -2,6 +2,7 @@
 title: Manual Setup for the Lab Guide
 layout: custom
 keywords: [lab, guide, manual setup, start, Northwind, database, FinCube, data cells]
+headings: ["Overview", "Interject Data Report Flow", "Manual Setup", "Step 1: Setting up the Database", "Step 2: Setting up the Data Connection", "Step 3: Setting up the Data Portals", "Step 4: Setting up FinCube", "Setting up the FinCube Data Connection", "Setting up the FinCube Data Portal", "Setting up the FinCube Data Cells Data Portals", "Step 5: The Report Files", "Step 6: Renaming the Data Portals"]
 description: This page details the necessary requirements and steps to set up a local environment that can accommodate a user following the Lab Guide.
 ---
 * * *

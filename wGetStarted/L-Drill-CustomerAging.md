@@ -2,6 +2,7 @@
 title: "Drill: Customer Aging Report"
 layout: custom
 keywords: [drill, create, build, customer aging, walkthrough]
+headings: ["Overview", "Unfreezing the Excel Sheet", "Build the Drill", "Final Results"]
 description: In this example, you will be setting up a simple drill to the customer orders history. It is a great use case for creating your first drill.
 ---
 * * *

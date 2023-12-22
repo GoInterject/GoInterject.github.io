@@ -2,6 +2,7 @@
 title: Adding Notes To A Report
 layout: custom
 keywords: [Report, Epicor, Notes, Comments]
+headings: ["Report Setup", "Adding Summary Level Comments"]
 description: Step by step guide on adding comment columns to your report templates.
 ---
 

@@ -2,7 +2,8 @@
 title: EBITDA Revenue Buckets Tab
 layout: custom
 keywords: [Training, Budget, Budget Change Query]
-description: 
+headings: ["Overview"]
+description: This new tab of the Budget Change Query tool displays total EBITDA and Revenue sums grouped by District and Review Date.
 ---
 
 ## Overview
@@ -18,4 +19,4 @@ description:
 
 ![](/images/WCNTraining/Budget/BudChangeQuery_EBITDARevenueBuckets_FullView.png)
 
-The left side of the tab pulls in the Revenue amounts for the districts by Review Date Bucket, and the right side shows the EBITDA amounts. The section headers are simlar to the ones in the [ Review Date Summary ](/bApps/InterjectTraining/Budget/BudgetChangeQuery_ReviewDateSummary.html) tab.
+The left side of the tab pulls in the Revenue amounts for the districts by Review Date Bucket, and the right side shows the EBITDA amounts. The section headers are simlar to the ones in the [Review Date Summary](/bApps/InterjectTraining/Budget/BudgetChangeQuery_ReviewDateSummary.html) tab.

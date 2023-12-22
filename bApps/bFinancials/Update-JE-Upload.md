@@ -2,6 +2,7 @@
 title: Interject JE Upload - Update Manager
 layout: custom
 keywords: [Account, Epicor, Companies, JEUpload]
+headings: ["To Check for Your Current Version", "Click Your Version Below for Release Notes and Update Scripts", "Current Version Notes", "Updating", "Rolling Back One Version"]
 description: Interject™ Journal Entry Upload for Epicor Enterprise (This would cover topics that are specific to integration with Epicor Enterprise, and would potentially be different for each ERP) 
 ---
 

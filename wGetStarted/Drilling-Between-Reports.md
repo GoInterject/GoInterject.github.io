@@ -2,6 +2,7 @@
 title: Drilling Between Reports
 layout: custom
 keywords: [drill]
+headings: ["Overview", "Customer Aging Report", "Inventory Report", "Financial Report", "The Three Ways to Drill"]
 description: The Interject drill feature allows you to connect individual reports together to make a simple, fast, and intuitive experience for users to get to the data they use everyday. In this walkthrough you will view drilling between reports with the same reports used in the previously viewed Real-World Walkthroughs.
 ---
 * * *

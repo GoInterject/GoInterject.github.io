@@ -2,6 +2,7 @@
 layout: custom
 title:  .NET API Setup
 keywords: [data api, web api, c#, setup, .NET framework, IIS, server]
+headings: ["Overview", "Requirements", "Get The Code", "The Repo", "Getting IIS", "Windows", "Windows Server Manager", "Publishing", "Deployment", "Set Up Website in IIS", "Windows Host File", "App Pool", "Setting Security Permissions", "Firewall", "Testing", "Connection Strings", "Connecting to Interject", "Interject Docs"]
 description: Shows how to setup an INTERJECT .Net data api.
 ---
 

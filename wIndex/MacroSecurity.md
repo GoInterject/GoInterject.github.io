@@ -2,6 +2,7 @@
 title: Macro Security
 layout: custom
 keywords: [macro, security, sign key, VBA, checksum]
+headings: ["Overview", "Uploading A Macro File", "Opening A Macro File", "Security Settings", "Checking Settings", "File Extensions"]
 description: Macro security involves mitigating the opening and uploading of Excel files that contain macros to ensure no malicious code affects any system.
 ---
 * * *

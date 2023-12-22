@@ -1,8 +1,9 @@
 ---
 title: JE Upload Install
 layout: custom
-keywords: []
-description:
+keywords: [reporting, Epicor, database]
+headings: ["Steps Required for JE Upload Install"]
+description: The following setup instructions will walk you through installation of the JE Upload tool by Interject.
 ---
 
 The following setup instructions will walk you through installation of the JE Upload tool by Interject. If you need to install the full Interject for Financials package, please go [here](/bApps/bFinancials/Technical-Install.html).

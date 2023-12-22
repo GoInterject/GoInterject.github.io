@@ -2,6 +2,7 @@
 title: ReportLookup()
 layout: custom
 keywords: [ReportLookup, lookup, function, formula, data, pull]
+headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Embeddable Helper Functions"]
 description: The ReportLookup function pulls a single piece of data from a data source and inserts it into a single cell within a spreadsheet.
 ---
 * * *
@@ -82,7 +83,7 @@ The ReportLookup function pulls a single piece of data from a data source and in
     </tr>
     <tr>
 		<td class="pph"><b>Constraints</b></td>
-		<td>The values must match the order of the parameters in the data source (The order can be verified using the [ Validation Report ](/wTroubleshoot/Reports.html#validation-report-for-pullsave-events) )</td>
+		<td>The values must match the order of the parameters in the data source (The order can be verified using the [Validation Report](/wTroubleshoot/Reports.html#validation-report-for-pullsave-events) )</td>
     </tr>
     <tr>
 		<td class="pph"><b>If Blank</b></td>

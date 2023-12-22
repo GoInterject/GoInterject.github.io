@@ -2,6 +2,7 @@
 title: FRx Migration
 layout: custom
 keywords: [Report, Epicor, Accounts]
+headings: ["Open SQL Server and Create a New Database", "Import MDB File To the New Database", "Execute FRx Migration Script", "Interject Application Setup- DB Connection", "Redirect DB Connection to New DB in Interject process"]
 description: Step by step guide on data tier, initial data load, FRx Migration, and other key processes of installing of Interject for Financials Epicor Enterprise.
 ---
 
