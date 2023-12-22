@@ -2,6 +2,7 @@
 title: ReportGrouping()
 layout: custom
 keywords: [ReportGrouping, grouping, event, trigger, function, formula]
+headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Trigger Combination List"]
 description: The ReportGrouping function will collapse or expand groups within the sheet when triggered upon a designated event.
 ---
 * * *

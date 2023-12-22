@@ -2,6 +2,7 @@
 title: Interject Ribbon Menu Items
 layout: custom
 keywords: [menu, items, ribbon, buttons, index]
+headings: ["Overview", "Simple Menu Items", "Advanced Menu Items", "Report Library", "Pull Data", "Save Data", "Drill on Data", "Return From Drill", "Custom Commands", "Quick Tools", "Export Book", "Report Builder", "Sheet Protector", "Login/Logout", "Connections", "Company", "Validation Report", "JSON", "Diagnostics", "System", "Check For Updates", "Online Training", "User Support", "About Interject"]
 description: Overviews of each button in the Interject Excel Ribbon.
 ---
 * * *

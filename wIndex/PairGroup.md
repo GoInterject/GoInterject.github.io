@@ -2,6 +2,7 @@
 title: PairGroup()
 layout: custom
 keywords: [PairGroup, helper, function, formula]
+headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Usable In These Functions"]
 description: The PairGroup function will active all [Pair()](Pair.html) functions defined within.
 ---
 * * *

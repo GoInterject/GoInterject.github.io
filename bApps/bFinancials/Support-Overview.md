@@ -2,6 +2,7 @@
 title: Support Overview
 layout: custom
 keywords: [Report, Epicor, Accounts]
+headings: ["Support"]
 description: The best way to get support.
 ---
 

@@ -2,6 +2,7 @@
 title: Interject Financials for Epicor
 layout: custom
 keywords: [Account, Epicor, Companies]
+headings: ["Overview", "My Apps", "Data Connections", "Data Portals"]
 description: Interject™ Financials for Epicor Enterprise (This would cover topics that are specific to integration with Epicor Enterprise, and would potentially be different for each ERP) 
 ---
 

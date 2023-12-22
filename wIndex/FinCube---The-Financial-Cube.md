@@ -2,6 +2,7 @@
 title: FinCube - The Financial Cube
 layout: custom
 keywords: [fincube, segment filter, data portal, filter, forecast, CYA, columns, jColumnDef]
+headings: ["Overview", "Segment Filter Options", "Data Portal Parameters", "Examples using Show Credits and Reverse Signs Parameters", "Available Columns for the DataPortal", "Segment Columns", "Group Columns", "Amount Columns", "CYA Column Notation", "Options for Forecast", "ACT Column Notation", "jColumnDef() Column Notation"]
 description: The FinCube is a single Data Portal that supports a wide variety of reporting needs. It is included as part of the Interject Financials for Spreadsheets application, and many of the segments can be customized for specific needs.
 ---
 * * *
@@ -56,7 +57,7 @@ The table below explains each of the available parameters of the FinCube DataPor
 | TimeLineFrom         |             | If configured, this will allows users run reports showing changes over time based on imported intervals. Using this feature shows the report as it would have been run the previous week. Alternately, it will show changes occuring in the last 12 hours. If this from date and time parameter is omitted, it defaults to 1/1/1900. |
 | TimeLineTo           |             | This parameter works with TimeLineFrom. If omitted it is defaulted to through the current week. |
 
-### Examples using "Show Credits" and "Reverse Signs" Parameters
+### Examples using Show Credits and Reverse Signs Parameters
 
 The **Show Credits** and **Reverse Signs** parameters work together to provide the output required in presenting positive or negative numbers for financial statements. The chart below shows + or - to signify output. The yellow row shows how Assets, Liability, Equity, Revenue, and Expense are naturally recorded in a general ledger. For example, Revenue is always negative by default, but is normally presented as a positive number in a profit and loss report. For certain reconciliations reports, these credit accounts may be specifically set up to show as a negative.
 
@@ -152,7 +153,7 @@ Since these notations are relative to a year and a period, it is important to sp
 
 ### jColumnDef() Column Notation
 
-The [ jColumnDef() ](/wIndex/jColumnDef.html) notation is the most recent addition to the column options and is the most flexible and intuitive in use. Instead of using a single text string to represent an amount, like CYA1 or Act, you can use the jColumnDef() function containing arguments for each of the 12 segments noted in the above DataPortal parameters. In this way, you can specify each component separately and more clearly. jColumnDef() arguments are essentially an additional filter level for each column you want to show.
+The [jColumnDef()](/wIndex/jColumnDef.html) notation is the most recent addition to the column options and is the most flexible and intuitive in use. Instead of using a single text string to represent an amount, like CYA1 or Act, you can use the jColumnDef() function containing arguments for each of the 12 segments noted in the above DataPortal parameters. In this way, you can specify each component separately and more clearly. jColumnDef() arguments are essentially an additional filter level for each column you want to show.
 
 It is important to emphasize that jColumnDef() goes beyond a source (Actual, Budget, fcast1 to fcast12), a year, and a period alone. These are the same segments (9, 10 and 12) that earlier notations (CTA and ACT) can only specify. jColumnDef also supports the remaining 12 segments and each can support the same filter options and groups noted above for DataPortal parameters The result is a highly flexible method to create columns.
 

@@ -2,6 +2,7 @@
 title: Publishing and Updating in the Report Library
 layout: custom
 keywords: [Report, Epicor, Accounts]
+headings: ["Publishing and Updating Report Templates in the Report Library", "Updating Existing Report Templates"]
 description: Step by step guide on using Interject Financials - Publishing Epicor Enterprise financial report templates.
 ---
 

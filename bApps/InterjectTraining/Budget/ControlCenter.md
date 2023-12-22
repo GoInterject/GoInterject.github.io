@@ -2,7 +2,8 @@
 title: Control Center
 layout: custom
 keywords: [Training, Budget, Control Center]
-description: 
+headings: ["Overview", "Accessing Templates from Control Center", "Lock Levels and District Position Assignment", "Contract Center Lock Status", "Budget Review Dates", "Review Dates Example", "AFTER CORP CUTOFF", "Budget Cutoff Sync Dates", "Drills", "Common Save Errors"]
+description: This tool controls who has ability to save to Budgets and when the data will flow from the Budget Module into Interject. It also controls the Projections and Capital lock levels.
 ---
 
 ## Overview
@@ -84,13 +85,13 @@ To see how this works in real time, we'll save an amount to a Budget Template. F
 
 According to our Control Center *Budget Review Dates* (see earlier screenshot), *10/1/2019 3:30 PM* is after *Reg Cutoff* but before *Corp Cutoff*. This means that the $100 will be placed in the **Corp Cutoff Bucket**.
 
-We can double check this in two places: The [ **Budget Change Query Tool** ](/bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html) and the **Budget Book**.
+We can double check this in two places: The [**Budget Change Query Tool**](/bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html) and the **Budget Book**.
 
-In [ **Budget Change Query Tool** ](/bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html), we look on the first tab *ReviewDateSummary*, pulling on the same District and Year.
+In [**Budget Change Query Tool**](/bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html), we look on the first tab *ReviewDateSummary*, pulling on the same District and Year.
 
 ![](/images/WCNTraining/Budget/ControlCenter_BudChangeQueryReviewDates01.png)
 
-The [ **Budget Change Query Tool** ](/bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html) pulls in amounts saved to TC 2.0, and here we see the amount in the correct bucket. 
+The [**Budget Change Query Tool**](/bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html) pulls in amounts saved to TC 2.0, and here we see the amount in the correct bucket. 
 
 Next, look at the **Budget Book**, which shows the amounts saved to Interject. First, on the *Summary* tab we set *Versions* to **Corp Cutoff**. We also set the *In Districts* and *Budget Year* to correspond with what we are using.
 
@@ -116,7 +117,7 @@ The save we completed at *10/1/2019 3:30 PM* now falls into the **Reg Cutoff Buc
 
 ![](/images/WCNTraining/Budget/ControlCenter_BudChangeQueryReviewDates02.png)
 
-In the [ **Budget Change Query Tool** ](/bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html) we see the $100 has moved to the **Reg Cutoff** column. Also notice that the $100 is still in the **Corp Cutoff** column, because **Corp Cutoff** shows **ALL** the amounts leading up to the **Corp Cutoff** date, which is *11/1/2019 5:00 PM* in this case.
+In the [**Budget Change Query Tool**](/bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html) we see the $100 has moved to the **Reg Cutoff** column. Also notice that the $100 is still in the **Corp Cutoff** column, because **Corp Cutoff** shows **ALL** the amounts leading up to the **Corp Cutoff** date, which is *11/1/2019 5:00 PM* in this case.
 
 With this in mind, check the **Budget Book** for both **Reg Cutoff** and **Corp Cutoff** versions. We should see the $100 in both, because it fits in the **Reg Cutoff Bucket** and happens before **Corp Cutoff**.
 
@@ -127,7 +128,7 @@ To make sure, update the *Versions* on the *Summary* tab to **Reg Review Thru** 
 ![](/images/WCNTraining/Budget/ControlCenter_BudgetBookRegReviewThruSetting.png)
 ![](/images/WCNTraining/Budget/ControlCenter_BudgetBookRegReviewThruAmounts.png)
 
-### **AFTER CORP CUTOFF**
+### AFTER CORP CUTOFF
 
 Now if an amount is saved **AFTER** the **Corp Cutoff** date, it will *NOT* be synced to Interject. Take the following example: we saved at *11/2/2019 5:00 PM* (after the **Corp Cutoff** date used in earlier example).
 
@@ -163,22 +164,22 @@ When PI accounts are updated in the Contract Center, or Depr accounts in Capital
 
 There are many drills availabe on this tool, depending on where you drill from.
 
-**Create New Projection Template** opens a new [ Projection Template ](/bApps/InterjectTraining/Projections/ProjectionTemplate.html).
+**Create New Projection Template** opens a new [Projection Template](/bApps/InterjectTraining/Projections/ProjectionTemplate.html).
 ![](/images/WCNTraining/Budget/ControlCenter_ProjDrill.png)
 
-**Create New Budget Template** opens a new [ Budget Template ](/bApps/InterjectTraining/Budget/BudgetTemplateSummary.html).
+**Create New Budget Template** opens a new [Budget Template](/bApps/InterjectTraining/Budget/BudgetTemplateSummary.html).
 ![](/images/WCNTraining/Budget/ControlCenter_BudDrill.png)
 
 Drilling on the Review Date columns gives the following drill options:
 ![](/images/WCNTraining/Budget/ControlCenter_ReviewDateDrills.png)
-* **Drill to Change History - Summary** opens the *Summary* tab on the [ Budget Change Query Tool ](/bApps/InterjectTraining/Budget/BudgetChangeQuery_Summary.html).
-* **Drill to Change History - Detail** opens the *Detail* tab on the [ Budget Change Query Tool ](/bApps/InterjectTraining/Budget/BudgetChangeQuery_Detail.html).
-* **Drill to Review Date Amounts** opens the *ReviewDateSummar* tab on the [ Budget Change Query Tool ](/bApps/InterjectTraining/Budget/BudgetChangeQuery_ReviewDateSummary.html).
+* **Drill to Change History - Summary** opens the *Summary* tab on the [Budget Change Query Tool](/bApps/InterjectTraining/Budget/BudgetChangeQuery_Summary.html).
+* **Drill to Change History - Detail** opens the *Detail* tab on the [Budget Change Query Tool](/bApps/InterjectTraining/Budget/BudgetChangeQuery_Detail.html).
+* **Drill to Review Date Amounts** opens the *ReviewDateSummar* tab on the [Budget Change Query Tool](/bApps/InterjectTraining/Budget/BudgetChangeQuery_ReviewDateSummary.html).
 
 Drilling on the Capital columns gives the following drill options:
 ![](/images/WCNTraining/Budget/ControlCenter_CapitalDrills.png)
-* **Capital Report: Summary** opens the *Summary* tab on the [ Capital Input Tool ](/bApps/InterjectTraining/Capital/CapitalSummary.html).
-* **Capital Report: Detail** opens the *Detail* tab on the [ Capital Input Tool ](/bApps/InterjectTraining/Capital/CapitalInput.html).
+* **Capital Report: Summary** opens the *Summary* tab on the [Capital Input Tool](/bApps/InterjectTraining/Capital/CapitalSummary.html).
+* **Capital Report: Detail** opens the *Detail* tab on the [Capital Input Tool](/bApps/InterjectTraining/Capital/CapitalInput.html).
 
 ## Common Save Errors
 

@@ -2,6 +2,7 @@
 title: "Portal: API Connection"
 layout: custom
 keywords: [api, connection, setting up, setup]
+headings: ["Overview", "Setup for a Data Connection to an API"]
 description: The Interject add-in is a client application that can send a request to a POST HTTP(s) REST API. As long as the response is properly structured, Interject will display the data in Excel. Interject is not a tool that communicates with all APIs, but by allowing users to build custom APIs, it can be connected to any data-source including other APIs that are not natively supported. We provide a customizable API, which can serve as the starting point for this translational API.
 ---
 * * *

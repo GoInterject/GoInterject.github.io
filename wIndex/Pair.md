@@ -2,6 +2,7 @@
 title: Pair()
 layout: custom
 keywords: [Pair, helper, function, formula]
+headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Usable In These Functions"]
 description: The Pair function transfers values from one cell to another.
 ---
 * * *

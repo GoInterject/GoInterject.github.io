@@ -2,6 +2,7 @@
 title: Excel Function Index
 layout: custom
 keywords: [functions, formulas, index, data, pull, save, drill, event, helper, data cell]
+headings: ["Overview", "Data Pull Functions", "Data Save Functions", "Data Drill Functions", "Event Functions", "Helper Functions", "Data Cell Functions"]
 description: Interject provides features by leveraging spreadsheet formulas that are familiar to many users. These formulas can be used to direct data into a spreadsheet, creating practical and adaptable reports. By adding report drills and navigation through additional spreadsheet formulas, these reports become a comprehensive reporting solution.
 ---
 * * *

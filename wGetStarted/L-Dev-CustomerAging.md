@@ -2,6 +2,7 @@
 title: "Develop: Customer Aging"
 layout: custom
 keywords: [developer, example, customer aging, SQL, data portal, data connection, walkthrough]
+headings: ["Overview", "Setting up the Data Connection", "Setting up the Data Portal", "Setting up Formula Parameters", "System Parameters", "Creating the Stored Procedure", "Create the Report"]
 description: On this page, you will create a simple data pull using the Customer Aging Report. It will guide you on how to build connections and data portals as well as cover the SQL stored procedure used to pull the data.
 ---
 * * *

@@ -2,7 +2,8 @@
 title: Summary Tab
 layout: custom
 keywords: [Training, Budget, Budget Change Query]
-description: 
+headings: ["Overview"]
+description: The Summary tab is a summarized view of the saved budgets for the account groupings, with many filter options.
 ---
 
 ## Overview

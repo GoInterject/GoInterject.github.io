@@ -2,6 +2,7 @@
 title: "Drill: Drilling to a Separate Workbook"
 layout: custom
 keywords: [data drill codes, report library, report]
+headings: ["Overview", "Opening the Report and Drilling", "Uploading the Report With a Drill Code", "Adding the Drill Code to the ReportDrill Function", "Running the Drill"]
 description: Interject also gives its users the flexibility in drilling data not only to a different sheet within Excel but a separate workbook altogether. 
 ---
 * * *

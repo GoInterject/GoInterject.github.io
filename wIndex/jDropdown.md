@@ -2,6 +2,7 @@
 title: jDropdown()
 layout: custom
 keywords: [jDropdown, helper, function, formula]
+headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Embeddable Helper Functions"]
 description: The jDropdown function returns data from a DataPortal that can be displayed in a dropdown window for the user to select and insert into a designated cell within the spreadsheet.
 ---
 * * *
@@ -44,7 +45,7 @@ For an example of this function, see [jDropdown](/wGetStarted/L-Create-Dropdowns
     </tr>
     <tr>
 		<td class="pph"><b>Constraints</b></td>
-		<td>The values must match the order of the parameters in the data source (The order can be verified using the [ Validation Report ](/wTroubleshoot/Reports.html#validation-report-for-pullsave-events) )</td>
+		<td>The values must match the order of the parameters in the data source (The order can be verified using the [Validation Report](/wTroubleshoot/Reports.html#validation-report-for-pullsave-events) )</td>
     </tr>
     <tr>
 		<td class="pph"><b>If Blank</b></td>
@@ -197,4 +198,4 @@ For an example of this function, see [jDropdown](/wGetStarted/L-Create-Dropdowns
 ###  Embeddable Helper Functions
 
 * [jDataPortal](/wIndex/jDataPortal.html)
-* [ Param ](Param.html)
+* [Param](Param.html)

@@ -2,6 +2,7 @@
 title: The Interject Website Portal
 layout: custom
 keywords: [website portal, account, connection strings]
+headings: ["Overview", "Logging In to the Interject Website Portal", "Data Connections", "Data Portals", "User Profile"]
 description: The Interject website portal is a central place to manage Interject client settings and user profiles.
 ---
 * * *

@@ -2,6 +2,7 @@
 title: ReportHideRowOrColumn()
 layout: custom
 keywords: [ReportHideRowOrColumn, hide, event, trigger, function, formula]
+headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Trigger Combination List"]
 description: The ReportHideRowOrColumn function will hide a designated row or column when triggered upon a designated event.
 ---
 * * *

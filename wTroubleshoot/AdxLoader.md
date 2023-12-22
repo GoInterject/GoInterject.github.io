@@ -2,6 +2,7 @@
 title: AdxLoader Don't Match
 layout: custom
 keywords: [app, addin, missing, reset]
+headings: ["Overview", "Cause of Error", "Solution", "Displaying Excel Bit Version", "Helpful Microsoft Office Links"]
 description: Every once in a while, Excel Add-ins may end up missing or fail to load in Excel. If your Interject addin is missing, you can follow these steps to reset it.
 ---
 * * *

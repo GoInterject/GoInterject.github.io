@@ -2,11 +2,12 @@
 title: Installing - Single User
 layout: custom
 keywords: [Installing, Install, Basic]
+headings: ["Overview", "Installing Interject"]
 description: This is the base installer
 ---
 * * *
 
-## **Overview:**
+## Overview
 
 Interject aims to make the installation process as simple and painless as possible. This installation is intended for single user computers.
 

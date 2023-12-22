@@ -2,6 +2,7 @@
 title: Event Functions
 layout: custom
 keywords: [event, functions, trigger]
+headings: ["Overview", "ReportMacro", "ReportRun", "ReportCalc", "ReportDefaults", "ReportGrouping", "ReportHideRowOrColumn"]
 description: Event Functions are functions designed to run when a designated event triggers them.
 ---
 * * *

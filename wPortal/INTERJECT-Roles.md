@@ -2,6 +2,7 @@
 title: Interject Roles
 layout: custom
 keywords: [roles, user profile, admin, permissions, security]
+headings: ["Overview", "Standard Role", "Approver Role", "Editor Role", "Corporate Role", "Protector Role", "CustomItems Role", "SchedulerAdmin Role", "ClientAdmin Role"]
 description: At the bottom of the User Profile page are the roles you currently have assigned to your profile. There are a number of roles to choose from. Roles can stack, meaning each role adds the associated permissions to the user.
 ---
 * * *

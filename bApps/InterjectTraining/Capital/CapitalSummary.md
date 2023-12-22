@@ -2,7 +2,8 @@
 title: Summary Tab
 layout: custom
 keywords: [Training, Capital, Summary Tab]
-description: 
+headings: ["Overview", "Drills"]
+description: This tab pulls in District Capital Summary totals by Period/Quarter. This is used to recon the Capital amounts saved from the Bud Capital Input tab.
 ---
 
 ## Overview
@@ -25,9 +26,9 @@ You can drill on any row to edit the Capital amounts belonging to that District 
 
 ![](/images/WCNTraining/Capital/CapitalSummary_DrillWindow.png)
 
-**Drill to Detail** opens up the [ Bud Capital Input ](/bApps/InterjectTraining/Capital/CapitalInput.html) tab in the same report.
+**Drill to Detail** opens up the [Bud Capital Input](/bApps/InterjectTraining/Capital/CapitalInput.html) tab in the same report.
 ![](/images/WCNTraining/Capital/CapitalSummary_DetailDrill.png)
 
-**Drill to CC Query for Change History** opens the [ Capital Change Query report ](/bApps/InterjectTraining/Capital/CCQuery.html).
+**Drill to CC Query for Change History** opens the [Capital Change Query report](/bApps/InterjectTraining/Capital/CCQuery.html).
 ![](/images/WCNTraining/Capital/CapitalSummary_CapitalChangeDrill.png)
 

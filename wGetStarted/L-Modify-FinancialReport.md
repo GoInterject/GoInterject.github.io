@@ -2,11 +2,12 @@
 title: "Modify: Financial Report"
 layout: custom
 keywords: [modify, alter, change, YTD, year to date, budget, actuals, comparison, jColumnDef, PL Trend, walkthrough]
+headings: ["Overview", "Using Column Definitions", "Preparation Cleanup", "Setting up Budget to Actual Comparison Report", "Creating a Year to Date Budget to Actual Comparison Report"]
 description: Modify a monthly trend report which could easily be modified to accommodate a budget-to-actual comparison report, showing monthly and year-to-date differences.
 ---
 * * *
 
-##  **Overview**
+## Overview
 
 Financial reports can sometimes share the same row or column configurations. Rather than creating a new report, it is often easier to modify an existing one. For example, you might be using a monthly trend report which could easily be modified to accommodate a budget-to-actual comparison report, showing monthly and year-to-date differences. This Walkthrough will illustrate how to make these changes.
 

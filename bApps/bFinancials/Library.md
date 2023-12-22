@@ -2,6 +2,7 @@
 title: Report Library
 layout: custom
 keywords: [Account, Epicor, Companies]
+headings: ["Using the Report Library"]
 description: Interject™ Financials for Epicor Enterprise Using the Interject report library.
 ---
 

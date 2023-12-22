@@ -2,6 +2,7 @@
 title: Troubleshooting
 layout: custom
 keywords: [troubleshooting, support, log, problem, error, issues, installation, addin, report]
+headings: ["Overview", "Interject Support", "Addin Errors", "Report Errors"]
 description: Interject optimizes speed by caching company settings such as Data Portals, Connections, and Report Library templates. This information is received on login and stored in memory for as long as the Excel session is open. Troubleshooting is therefore important for new deployments where these settings may need to change often. If there are any changes to company settings, the Interject Excel add-in will check for changes at various actions. Opening the Report Library or the Report Builder automatically checks for setting changes. Other actions like Pull, Save, or Drill check only every two hours, since these actions occur often and could create excess communication. The next three pages are dedicated to understanding how these different actions and environments interact for troubleshooting purposes.
 ---
 * * *

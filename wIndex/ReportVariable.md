@@ -2,13 +2,14 @@
 title: ReportVariable()
 layout: custom
 keywords: [ReportVariable, variable, function, formula, data, pull]
+headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Embeddable Helper Functions"]
 description: The ReportVariable function pulls data from a data source and inserts it into a spreadsheet.
 ---
 * * *
 
 ##  Function Summary
 
-The ReportVariable function pulls data from a data source and inserts it into a spreadsheet. It is similar to the [ ReportFixed ](/wIndex/ReportFixed.html) function because it takes row names as input in addition to column names. Only data that is mapped to both these row and column names from the data source will be inserted. Consequently, the range where data is inserted is defined by the boundaries of the RowDefRange and the ColDefRange. Data returned by this function can be filtered, formatted, and customized for a specific desired report.
+The ReportVariable function pulls data from a data source and inserts it into a spreadsheet. It is similar to the [ReportFixed](/wIndex/ReportFixed.html) function because it takes row names as input in addition to column names. Only data that is mapped to both these row and column names from the data source will be inserted. Consequently, the range where data is inserted is defined by the boundaries of the RowDefRange and the ColDefRange. Data returned by this function can be filtered, formatted, and customized for a specific desired report.
 
 This function differs from the ReportFixed function in that it will group the data based on the values defined in the RowDefRange argument. The grouping feature allows the data to be collapsed and expanded by category. Note: Entries for each group must contain an empty row above in order to populated with data correctly.
 
@@ -116,7 +117,7 @@ For an example of this function, see [Lab Create: Inventory Variable](/wGetStart
 </table>
 </div>
 
-<button class="collapsible-parameter">**RetainRowColumns**<br>The list of column names that will be used as a key for retaining information within the inserted data range. This can be a comma delimited string or a cell reference of a single column name defined in ColDefRange. <br><br>All data in the column(s) matching the names in this argument will be retained after a clear or pull action. Consequently, such rows are also retained and not deleted. However, all data in columns that are not defined in this argument are blanked out after a clear action or overridden after a pull action.<br><br>This feature makes forecasting calculations to remain in the report instead of being cleared. For an example of this feature, see [Using the Retain Feature ](/wGetStarted/L-Create-RetainFeature.html).</button>
+<button class="collapsible-parameter">**RetainRowColumns**<br>The list of column names that will be used as a key for retaining information within the inserted data range. This can be a comma delimited string or a cell reference of a single column name defined in ColDefRange. <br><br>All data in the column(s) matching the names in this argument will be retained after a clear or pull action. Consequently, such rows are also retained and not deleted. However, all data in columns that are not defined in this argument are blanked out after a clear action or overridden after a pull action.<br><br>This feature makes forecasting calculations to remain in the report instead of being cleared. For an example of this feature, see [Using the Retain Feature](/wGetStarted/L-Create-RetainFeature.html).</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
@@ -220,6 +221,6 @@ For an example of this function, see [Lab Create: Inventory Variable](/wGetStart
 ###  Embeddable Helper Functions
 
 * [jDataPortal](/wIndex/jDataPortal.html)
-* [ Param ](Param.html)
+* [Param](Param.html)
 * [jCombine](/wIndex/jCombine.html)
 * [jCombineIF](/wIndex/jCombine_IF.html)

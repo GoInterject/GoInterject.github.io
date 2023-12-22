@@ -2,6 +2,7 @@
 title: Reviewing Report Formulas
 layout: custom
 keywords: [cell formula review, report formulas, function wizard]
+headings: ["Overview", "Getting Started", "The Function Wizard", "Cell Formula Review"]
 description: Reviewing the Interject report formulas for accuracy is a vital step in eliminating report errors. This page shows two tools that help with these formulas&#58; Excel's Function Wizard and Interject's Cell Formula Review.
 ---
 * * *

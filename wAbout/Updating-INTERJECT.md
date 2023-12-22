@@ -2,6 +2,7 @@
 title: Updating Interject
 layout: custom
 keywords: [update, updating, version]
+headings: ["Overview", "Updating to the Newest Version of Interject"]
 description: The walkthrough shows how to update INTERJECT to the newest version
 ---
 * * *

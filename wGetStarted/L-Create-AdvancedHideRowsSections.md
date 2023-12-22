@@ -1,8 +1,9 @@
 ---
 title: Advanced Row and Section Hiding
 layout: custom 
-keyword: [hide, rows, sections]
-description: In this example of the ReportHideRowOrColumn() function, we will hide an entire section of a report based on the condition that the section is empty. You would typically use this in a report when data is pulled in with zero values. By hiding the zero value rows, and the entire section when all the rows within it are zero vale, the reporting area will be more usable. 
+keywords: [hide, rows, sections]
+headings: ["Overview", "Hiding Rows"]
+description: In this example of the ReportHideRowOrColumn function, we will hide an entire section of a report based on the condition that the section is empty. You would typically use this in a report when data is pulled in with zero values. By hiding the zero value rows, and the entire section when all the rows within it are zero vale, the reporting area will be more usable. 
 ---
 * * *
 

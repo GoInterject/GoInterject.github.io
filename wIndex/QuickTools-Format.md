@@ -2,6 +2,7 @@
 title: Quick Tools - Format Tools
 layout: custom
 keywords: [Quick Tools, Format Tools, Center Across Columns, Remove Wrap, Inverse Sign, To Lower Case, To Proper Case, To Upper Case, Trim Values]
+headings: ["Overview", "Center Across Columns", "Remove Wrap", "Inverse Sign", "To Lower Case, To Proper Case, To Upper Case", "Trim Values"]
 description: The Format Tools within Quick Tools deal with the formatting of text and cells
 ---
 * * *

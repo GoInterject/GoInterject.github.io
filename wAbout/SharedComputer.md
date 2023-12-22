@@ -2,11 +2,12 @@
 title: Installing - Shared Computer
 layout: custom
 keywords: [install, Multiple Users, Server, network]
+headings: ["Overview", "Installing Interject on Multi-User Systems"]
 description: This is the multi-user to one computer installation of Interject.
 ---
 * * *
 
-## **Overview:**
+## Overview
 
 Shared Computer installation installs a multi-user instance of Interject on one computer, such as a shared server. Since Interject's Addin Manager is used to manage independent settings for multiple users, this installation is dependant on the Add-in Manager. In order to run Per-Computer installation, you must have administrative-elevated rights.
 

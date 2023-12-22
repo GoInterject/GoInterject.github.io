@@ -2,7 +2,8 @@
 title: Projection Upload Tool
 layout: custom
 keywords: [Training, Projections, Projections Upload]
-description: 
+headings: ["Overview", "Uploading to more than one district at a time", "Drop Projections numbers in without pulling first", "Do I have security rights to Save from the Projections Upload tab?", "Common Save Errors"]
+description: The Projections Upload Tool allows controllers to upload projections for multiple accounts in a district at the same time. This upload tool closely matches the Budget Upload Tool in design and function.
 ---
 
 ## Overview
@@ -64,7 +65,7 @@ Now you will be able to drop in the desired Projections values and save them.
 
 ## Do I have security rights to Save from the Projections Upload tab?
 
-To learn whether you can save to the Projections Upload Tool, please check the [ Tools Controlled by the Control Center ](/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#projections-tools-and-the-control-center) page.
+To learn whether you can save to the Projections Upload Tool, please check the [Tools Controlled by the Control Center](/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#projections-tools-and-the-control-center) page.
 
 ## Common Save Errors
 

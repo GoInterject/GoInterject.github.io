@@ -2,6 +2,7 @@
 title: Report Errors
 layout: custom
 keywords: [report, errors, validation report, user support, progress window, cell formula, sql test]
+headings: ["Overview", "Investigating Report Errors", "Validation Report for Interject Events", "Testing Data Connections", "View SQL Test for ActiveCell"]
 description: Report errors occur for many reasons, some of which relate to how the server handles data and moves it to the report. Other reasons may include the report's direct configuration within Excel. Interject provides various tools and features to help quickly and accurately diagnose report errors.
 ---
 * * *

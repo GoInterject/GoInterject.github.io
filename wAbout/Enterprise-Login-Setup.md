@@ -2,7 +2,8 @@
 title: Enterprise Login Setup
 layout: custom
 keywords: [login, ribbon, credentials, accounts, Enterprise, setup, oidc, auth, code]
-description: 
+headings: ["Overview", "Provide OIDC Details", "Enterprise Login Code", "IP Whitelisting", "Setup Data Connections"]
+description: Interject supports federated logins for enterprise allowing a single sign on (SSO) experience for Interject users within an organization.
 ---
 * * *
 
