@@ -2,6 +2,7 @@
 title: JE Upload Install
 layout: custom
 keywords: [reporting, Epicor, database]
+headings: ["Steps Required for JE Upload Install"]
 description: The following setup instructions will walk you through installation of the JE Upload tool by Interject.
 ---
 

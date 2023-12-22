@@ -2,6 +2,7 @@
 title: ReportDefaults()
 layout: custom
 keywords: [ReportDefaults, defaults, event, trigger, function, formula]
+headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Trigger Combination List", "Embeddable Helper Functions"]
 description: The ReportDefaults function will copy a value from a range to another range when triggered upon a designated event.
 ---
 * * *

@@ -2,6 +2,7 @@
 title: Interject Hyperlinks
 layout: custom
 keywords: [links, hyperlinks]
+headings: ["Overview", "Hyperlink List", "Creating An Example Pull Link"]
 description: Interject provides a way to perform some of the basic Interject functions by clicking on a link within the report.
 ---
 * * *

@@ -2,6 +2,7 @@
 title: Common Dataportal Index
 layout: custom
 keywords: [dataportal, fincube, segmentinfo]
+headings: ["Overview", "FinCube - The Financial Cube", "SegmentInfo - Segment Search"]
 description: These are a few common dataportals used in Interject for specific, supported applications. The exact dataportal code may vary depending on the Interject implementation.
 ---
 * * *

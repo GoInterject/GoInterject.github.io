@@ -2,6 +2,7 @@
 title: Budget Change Query Tool Summary
 layout: custom
 keywords: [Training, Budget, Change Query]
+headings: ["Overview", "Review Date Summary Tab", "Review Date Detail Tab", "EBITDA Change History Tab", "Summary Tab", "Detail Tab", "Unsynced Changes Tab", "EBITDA Revenue Buckets Tab"]
 description: The Budget Change Query Tool provides different views of how budgets have changed over the budget season. The following are brief descriptions of each tab in the tool.
 ---
 

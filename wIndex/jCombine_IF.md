@@ -2,6 +2,7 @@
 title: jCombineIF()
 layout: custom
 keywords: [jCombineIF, helper, function, formula]
+headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Usable In These Functions"]
 description: The jCombineIF function concatenates a range or multiple ranges of cells into a single string using a designated delimiter if a certain condition is met.
 ---
 * * *

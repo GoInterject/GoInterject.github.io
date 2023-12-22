@@ -2,6 +2,7 @@
 title: Capital Change Query Tool Summary
 layout: custom
 keywords: [Training, Capital, Capital Change Query]
+headings: ["Overview", "CCQuery", "ReviewDateSummary"]
 description: This tool provides an in-depth view into the historical data for the Capital PO changes.
 ---
 

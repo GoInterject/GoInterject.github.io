@@ -2,6 +2,7 @@
 title: Projections Template Summary
 layout: custom
 keywords: [Training, Capital, Projections Template]
+headings: ["Overview", "Projections Template", "Projections Upload Tool"]
 description: The Projections Template tools are used by controllers to update their Projections on the District level.
 ---
 

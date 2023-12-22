@@ -2,6 +2,7 @@
 title: Setting Up the jDataPortal
 layout: custom
 keywords: [portal, connection, override, command]
+headings: ["Overview", "Setup jDataPortal", "Result Sets", "Order By", "Filter", "Overriding a Connection", "Overriding a Command"]
 description: The jDataPortal is a powerful Interject function that not only allows users to customize the connection to an Interject Data Portal. In addition to establishing a connection to a Portal, users can also override certain parameters of the Portal to customize their reporting needs.
 ---
 * * *

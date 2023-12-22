@@ -2,6 +2,7 @@
 title: FinCube - The Financial Cube
 layout: custom
 keywords: [fincube, segment filter, data portal, filter, forecast, CYA, columns, jColumnDef]
+headings: ["Overview", "Segment Filter Options", "Data Portal Parameters", "Examples using "Show Credits" and "Reverse Signs" Parameters", "Available Columns for the DataPortal", "Segment Columns", "Group Columns", "Amount Columns", "CYA Column Notation", "Options for Forecast", "ACT Column Notation", "jColumnDef() Column Notation"]
 description: The FinCube is a single Data Portal that supports a wide variety of reporting needs. It is included as part of the Interject Financials for Spreadsheets application, and many of the segments can be customized for specific needs.
 ---
 * * *

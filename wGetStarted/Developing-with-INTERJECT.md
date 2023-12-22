@@ -2,6 +2,7 @@
 title: Developing With Interject
 layout: custom
 keywords: [develop, database, build, create, SQL]
+headings: ["Overview", "Interject Website Portal", "Defining Interject for Developers", "Simple Data Pull", "Advanced Data Pull", "Simple Data Save", "Security Best Practices", "Managing Settings Cache", "Error Handling"]
 description: This section is for professional developers who create the data pathways for reports and applications that can edit data. To facilitate this section, we provide a sample database to assist in training.
 ---
 * * *

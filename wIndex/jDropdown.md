@@ -2,6 +2,7 @@
 title: jDropdown()
 layout: custom
 keywords: [jDropdown, helper, function, formula]
+headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Embeddable Helper Functions"]
 description: The jDropdown function returns data from a DataPortal that can be displayed in a dropdown window for the user to select and insert into a designated cell within the spreadsheet.
 ---
 * * *

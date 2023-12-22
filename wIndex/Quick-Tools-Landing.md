@@ -2,6 +2,7 @@
 title: Quick Tools
 layout: custom
 keywords: [Quick Tools]
+headings: ["Overview", "Quick Tools"]
 description: The Quick Tools window provides a convenient set of macro tools suggested by our users.
 ---
 * * *

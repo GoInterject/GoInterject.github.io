@@ -1,6 +1,7 @@
 ---
 title: "Docs search"
 keywords: [Search, Interject, documentation, manual, guide, reference, api]
+headings: []
 description: Interject documentation search results
 noratings: false
 notoc: false

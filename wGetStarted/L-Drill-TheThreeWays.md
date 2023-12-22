@@ -2,6 +2,7 @@
 title: The Three Ways to Drill
 layout: custom
 keywords: [menu, hyperlink, drill, double click drill, Interject_DoubleClick, custom properties]
+headings: ["Overview", "The Menu Method", "The Hyperlink Method", "The Double Click Method"]
 description: Interject facilitates three different ways to drill. Each method is easy to choose the best one different situations.
 ---
 * * *

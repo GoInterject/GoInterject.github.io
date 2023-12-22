@@ -2,6 +2,7 @@
 title: ReportFixed()
 layout: custom
 keywords: [ReportFixed, fixed, function, formula, data, pull]
+headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Embeddable Helper Functions"]
 description: The ReportFixed function pulls data from a data source and inserts it into a spreadsheet.
 ---
 * * *

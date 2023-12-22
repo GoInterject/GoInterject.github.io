@@ -2,6 +2,7 @@
 title: Creating with Interject
 layout: custom
 keywords: [create, modify, reports, walkthroughs]
+headings: ["Overview", "Modifying an Existing Report", "Creating a Simple Report", "Fixed and Variable Reports", "Drilling Between Reports", "Hiding Rows & Columns", "Building jDropdowns", "Working with Pivot Tables", "Special Column Definitions", "Protecting Sheets", "Using Report Macro", "Using the Retained Feature", "Interject Run On Open", "Exporting Reports"]
 description: This section is for report writers who need to create or modify reports. You will run through basic modification, creation, and publishing of reports.
 ---
 * * *

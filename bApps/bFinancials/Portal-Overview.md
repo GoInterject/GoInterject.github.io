@@ -2,6 +2,7 @@
 title: Portal Overview
 layout: custom
 keywords: [Report, Epicor, Accounts]
+headings: ["User Profiles"]
 description: A quick guide to Using the Interject Data Portal Site.
 ---
 

@@ -2,6 +2,7 @@
 title: Interject Support
 layout: custom
 keywords: [support, user, interject, contact, logging]
+headings: ["Overview", "User Support", "Verbose Logging", "Memory Logging"]
 description: Interject Support in built into Excel via the Interject Addin. You can easily report a problem to Interject or find Interject contact information. You also have the option of turning on certain logs in order to send more key details to Interject.
 ---
 * * *

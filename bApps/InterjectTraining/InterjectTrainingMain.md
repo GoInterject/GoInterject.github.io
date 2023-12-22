@@ -2,6 +2,7 @@
 title: Interject Training
 layout: custom
 keywords: [Training]
+headings: ["Overview", "Capital Module", "Budget Module", "Projections Module"]
 description: There are many modules that Interject offers to help with managing money and other company resources. In this section, you will find the three core modules and the tools they offer to give better visibility and control over the resources under your jurisdiction.
 ---
 

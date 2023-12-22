@@ -2,6 +2,7 @@
 title: Projections Change Query Tool
 layout: custom
 keywords: [Training, Projections, Projection Change Query]
+headings: ["Overview", "Dynamic Columns", "Summary Tab", "Detail Tab", "Summary Last Save Tab", "Detail Last Save Tab"]
 description: The Projections Change Query Tool provides insight to how Projections have been changed while open, with views on the summary and detailed levels.
 ---
 

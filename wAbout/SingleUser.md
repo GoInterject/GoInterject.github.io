@@ -2,6 +2,7 @@
 title: Installing - Single User
 layout: custom
 keywords: [Installing, Install, Basic]
+headings: ["Overview", "Installing Interject"]
 description: This is the base installer
 ---
 * * *

@@ -2,6 +2,7 @@
 title: jColumnDef()
 layout: custom
 keywords: [jColumnDef, helper, function, formula]
+headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition"]
 description: The jColumnDef function defines a column based on one or more parameters.
 ---
 * * *

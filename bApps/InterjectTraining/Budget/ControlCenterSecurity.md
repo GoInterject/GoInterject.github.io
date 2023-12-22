@@ -2,6 +2,7 @@
 title: Tools Controlled by the Control Center
 layout: custom
 keywords: [Training, Budget, Control Center]
+headings: ["Overview", "Do I have security rights to use these tools?", "Budget Tools and the Control Center", "Capital Input Tool and the Control Center", "Projections Tools and the Control Center"]
 description: The Control Center handles access rights for the Budget Template, Budget Upload, Capital Input, Projections Template, and Projections Upload tools. This page details where to find the District Position Assignment, where in each tool you can find the tool's lock level, the messages you'll see if trying to save outside your access rights, and the special circumstance of Regional Controllers for the Budget Tool.
 ---
 

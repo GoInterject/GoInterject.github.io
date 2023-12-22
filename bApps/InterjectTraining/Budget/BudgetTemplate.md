@@ -2,6 +2,7 @@
 title: Budget Template
 layout: custom
 keywords: [Training, Budget, Budget Template]
+headings: ["Overview", "Filters", "Template Setup", "Build Based On", "Account Level", "Other Required Filters", "Additional Filters", "Input Field Explanations", "Base Year and Fincube", "How Templates Work", "Summary and Detail level accounts", "Pulling Summary and Detail levels together", "Saving Summary and Detail levels together", "The Autocalcs", "Do I have security rights to Save from the Budget Template?", "After Corp Cutoff and after BOD", "After Corp Cutoff", "After BOD", "Common Save Errors"]
 description: This is the primary tool used for managing Budgets. This tool can be downloaded and customized in your local environment.
 ---
 

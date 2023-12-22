@@ -2,6 +2,7 @@
 title: Resizing Interject Windows
 layout: custom
 keywords: [resize, size, windows, forms, frame, text resize, make text bigger]
+headings: ["Overview", "Resizing Windows", "Resize the Current Window", "Resize All Windows"]
 description: This is a walkthrough on how to make the Interject pop-up windows larger
 ---
 * * *

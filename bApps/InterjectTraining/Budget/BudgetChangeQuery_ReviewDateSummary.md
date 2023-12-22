@@ -2,6 +2,7 @@
 title: Review Date Summary Tab
 layout: custom
 keywords: [Training, Budget, Budget Change Query]
+headings: ["Overview", "District List", "Review Date Buckets", "Districts with Different Review Dates"]
 description: This tab of the Budget Change Query tool provides a summarized view of the budget amounts across account groupings up to their own Review Date timestamps.
 ---
 

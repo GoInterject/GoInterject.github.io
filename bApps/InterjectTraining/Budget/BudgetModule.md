@@ -2,6 +2,7 @@
 title: Budget Module
 layout: custom
 keywords: [Training, Budget]
+headings: ["Overview", "Budget Template", "Control Center", "Budget Change Query"]
 description: The Budget Module is used by controllers to save and review their budgets for the upcoming year.
 ---
 

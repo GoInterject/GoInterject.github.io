@@ -2,6 +2,7 @@
 title: Inventory Reports
 layout: custom
 keywords: [inventory, reports, drill, detail, return, walkthrough]
+headings: ["Overview", "Navigating to the Inventory Reports", "Drilling to the Detail", "Return From Drill and Re-Drill", "Alternate Inventory Example"]
 description: This lab is a basic inventory example for tracking product quantities. In this walkthrough, you will open a summary of our product categories and total quantities. You will then drill into the Inventory Detail tab to view specific products within that category
 ---
 * * *

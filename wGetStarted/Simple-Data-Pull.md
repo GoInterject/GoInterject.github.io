@@ -2,6 +2,7 @@
 title: Simple Data Pull
 layout: custom
 keywords: [data, pull, develop, build, create]
+headings: ["Overview", "Understanding the Business Use Case", "Customer Aging", "Customer Orders"]
 description: To clearly illustrate the end-to-end workflow of developing a report, you can begin with several simple data pull examples showing different report configurations. You will be reusing Interject reports used in previous sections, because these should be familiar to you if you read this documentation from the beginning.
 ---
 * * *

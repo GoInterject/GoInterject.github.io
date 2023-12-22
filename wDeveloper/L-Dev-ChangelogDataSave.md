@@ -2,6 +2,7 @@
 title: "Develop: Change Log Data Save"
 layout: custom
 keywords: [developer, example, walkthrough, SQL, SSMS, Data Portal, data connection, data save, history]
+headings: ["Overview", "Setting Up the Data Connection", "Setting Up the Data Portal", "Setting Up the Report", "Setting Up the Tables", "Setting Up the Stored Procedure", "Modifying the Stored Procedure", "Current Date and Time", "ChangeLog", "Merge Update", "Merge Insert", "Merge Output", "Update Target Table", "Update History Table", "Final Stored Procedure", "Testing the Stored Procedure", "Testing the ReportSave"]
 description: In this example you will modify the simple data save using the Customer Aging Detail report and the Northwind Customers data source to add or delete a customer.
 ---
 * * *

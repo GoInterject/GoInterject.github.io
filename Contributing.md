@@ -3,6 +3,7 @@ title: Contributing
 layout: custom
 sitemap: false
 keywords: [best practices, standards, editing, changes, format, style, consistency]
+headings: ["Overview", "Contributing Process Flow", "Screenshot Requirements", "Screenshot Software Requirements", "When to Include a Screenshot", "Click Action (Arrow)", "Highlighting & Emphasizing", "Multi-Step Actions in a Single Screenshot (Numbered Steps)", "Emphasizing Text or a Point in a Screenshot", "Note on Complex Screenshots", "Note on Popups in Screenshots", "Screenshots of Excel Content", "Tab Navigation in Screenshots", "Spacing Surrounding Screenshots", "Note for Content Reviewers", "Uploading and Saving Screenshots to the Documentation Site", "Adding Jekyll Headers to Page", "Headings", "Table of Contents", "Grammar/Spelling", "Referencing Buttons and Text", "Lists", "Tables", "Links", "Code Blocks", "Consistency", "Commit Message Standards"]
 description: Hello and thank you for wanting to make a contribution to Interject. These are the guidelines that we use to make sure our documentation is the highest quality, and consistent. Included in this document is the documentation cycle from creation to approval.
 ---
 * * *

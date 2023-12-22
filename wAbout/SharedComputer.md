@@ -2,6 +2,7 @@
 title: Installing - Shared Computer
 layout: custom
 keywords: [install, Multiple Users, Server, network]
+headings: ["Overview", "Installing Interject on Multi-User Systems"]
 description: This is the multi-user to one computer installation of Interject.
 ---
 * * *

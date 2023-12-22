@@ -2,6 +2,7 @@
 title: ReportRange()
 layout: custom
 keywords: [ReportRange, range, function, formula, data, pull]
+headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Embeddable Helper Functions"]
 description: The ReportRange function pulls data from a data source and inserts it into a single range within a spreadsheet.
 ---
 * * *

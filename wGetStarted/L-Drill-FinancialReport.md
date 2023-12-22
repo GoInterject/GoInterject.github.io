@@ -2,6 +2,7 @@
 title: "Drill: Financial Report"
 layout: custom
 keywords: [drill, financials, pair, pairgroup, Interject_JEQuery, segments, PL Trend, walkthrough, data drill codes]
+headings: ["Overview", "Opening the Report", "Unfreezing the Report", "Set Up the Report", "Building the Drill", "Executing the Drill"]
 description: This is a drill for the PL Trend report that was created in a previous walkthrough. This time you will be drilling to a separate workbook instead of to another worksheet.
 ---
 * * *

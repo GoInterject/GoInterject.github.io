@@ -2,6 +2,7 @@
 title: ReportSave()
 layout: custom
 keywords: [ReportSave, save, function, formula, data]
+headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Embeddable Helper Functions"]
 description: The ReportSave function will use a designated DataPortal to save data in a worksheet to a data source.
 ---
 * * *

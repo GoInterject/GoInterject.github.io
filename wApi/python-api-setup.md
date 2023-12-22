@@ -4,6 +4,7 @@ title:  "Python API Setup"
 date:   2018-10-12 9:03:02 -0700
 categories: API Developer
 keywords: [data api, python, setup]
+headings: ["Overview", "Requirements", "Get The Code", "Install The Python Package", "Linux additional requirements", "Install Package", "Setup API", "Get Template Config", "Setup Connection Strings", "Choose Controllers", "Custom Functions", "Running The API", "More Information"]
 description: Shows how to setup an Interject Python data api.
 ---
 

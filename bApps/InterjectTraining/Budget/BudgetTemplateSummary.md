@@ -2,6 +2,7 @@
 title: Budget Template Summary
 layout: custom
 keywords: [Training, Capital, Budget Template]
+headings: ["Overview", "Budget Template", "Budget Upload Tool"]
 description: The Budget Template tools are used by controllers to update their Budgets on the District level.
 ---
 

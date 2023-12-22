@@ -2,6 +2,7 @@
 title: Fixed and Variable Reports
 layout: custom
 keywords: [variable, fixed, variable, reports, walkthroughs]
+headings: ["Overview", "Inventory Fixed Report", "Inventory Variable Report", "Financial Variable Report", "Customer Aging Detail Report"]
 description: This section demonstrates additional Report Formulas such as ReportFixed and ReportVariable. 
 ---
 * * *

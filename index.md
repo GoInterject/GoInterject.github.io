@@ -3,6 +3,7 @@ title: What Does Interject Do?
 layout: custom
 landing: True
 keywords: [real world, use case, report library]
+headings: ["In a Nutshell", "Interject  is..."]
 description: Interject is a new method for connecting users to their data. It is a lightweight, enterprise-scalable platform bringing data to spreadsheets which can be used like customizable web applications 
 ---
 * * *

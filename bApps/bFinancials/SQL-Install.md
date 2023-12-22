@@ -2,6 +2,7 @@
 title: SQL Database Installation
 layout: custom
 keywords: [SQL Server, MSSQL, mail profile, authentication, role, certificate, deployment, SSMS]
+headings: ["Settings", "SQL Server Version", "SQL Database Mail Profile", "Authentication Type", "Interject Database Role", "Interject Database and User Certificate", "Deployment via SSMS"]
 description: Setup guide for SQL database.
 ---
 

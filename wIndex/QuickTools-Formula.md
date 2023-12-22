@@ -2,6 +2,7 @@
 title: Quick Tools - Formula Tools
 layout: custom
 keywords: [Quick Tools, Formula Tools, Remove External References]
+headings: ["Overview", "Remove External References"]
 description: The Formula Tools within Quick Tools deal with formulas.
 ---
 * * *

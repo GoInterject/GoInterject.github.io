@@ -2,6 +2,7 @@
 title: Control Center
 layout: custom
 keywords: [Training, Budget, Control Center]
+headings: ["Overview", "Accessing Templates from Control Center", "Lock Levels and District Position Assignment", "Contract Center Lock Status", "Budget Review Dates", "Review Dates Example", "AFTER CORP CUTOFF", "Budget Cutoff Sync Dates", "Drills", "Common Save Errors"]
 description: This tool controls who has ability to save to Budgets and when the data will flow from the Budget Module into Interject. It also controls the Projections and Capital lock levels.
 ---
 

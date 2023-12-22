@@ -2,6 +2,7 @@
 title: Moving From Test to Live
 layout: custom
 keywords: [Report, Epicor, Accounts]
+headings: ["Option 1: Moving the Entire Database", "Option 2: Deploying A New Implementation From Scratch", "Re-Deploy From Scratch", "Transfer Custom Rollups and Report Templates", "Custom Rollups", "Custom Row Templates", "Custom Reports"]
 description: Step by step guide on converting reports in test environments to reports in live environments.
 ---
 There are two options available when moving your Interject Financials report templates and rollups from a test environment to the live environment, where your users can interact with them.

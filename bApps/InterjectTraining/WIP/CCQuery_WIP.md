@@ -2,6 +2,7 @@
 title: Capital Change Query - CC Query Tab
 layout: custom
 keywords: [Training, Capital, Capital Change Query]
+headings: ["Overview", "Summary Level Drop-Down"]
 description: Pull in change history details for Capital.
 ---
 

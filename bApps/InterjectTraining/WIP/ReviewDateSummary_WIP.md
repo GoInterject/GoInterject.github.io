@@ -2,6 +2,7 @@
 title: Capital Change Query - Review Date Summary
 layout: custom
 keywords: [Training, Capital, Capital Change Query, Review Date]
+headings: ["Overview", "Capital and the Control Center"]
 description: Pull in Capital amounts grouped by Asset type into the Review Date buckets.
 ---
 

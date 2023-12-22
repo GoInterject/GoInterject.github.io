@@ -2,6 +2,7 @@
 title: Deactivate Databases
 layout: custom
 keywords: [inactive, deactivate, databases, script, SQL]
+headings: []
 description: Following are the steps required to deactivate specified databases in your initial upload.
 ---
 

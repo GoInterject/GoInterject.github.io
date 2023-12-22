@@ -2,6 +2,7 @@
 title: Data Tier Install
 layout: custom
 keywords: [Epicor, data tier, data load, FRx, configurations]
+headings: ["Steps Required for Technical Install"]
 description: After you get access to Interject, there are three parts to installing Interject Financials - Epicor Enterprise. First is the initial data tier install, then the data load from Epicor Enterprise and FRx, then the actual report configurations in the Interject application.
 ---
 
