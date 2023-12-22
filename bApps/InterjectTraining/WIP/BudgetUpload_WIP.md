@@ -106,11 +106,11 @@ Then try uploading a change to Budget using the **Budget Upload** tool (after th
 
 Notice the changes have been saved to Target Center 2.0, but they are not yet synced to Interject. Once the *Corp Cutoff* date is set to a Date/Time after our change or BOD, this change will then be synced to Interject.
 
-We can use the [ Budget Change Query Tool ](/bApps/InterjectTraining/Budget/BudgetChangeQueryToolSummary.html) to confirm that our save has been registered in Target Center 2.0. the new tab [ UnsyncedChanges ](/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html) is designed to pull in all amounts not yet synced to Interject, which neatly matches our inquiry. The screenshot below shows that our Budget save succeeded and is in the database.
+We can use the [Budget Change Query Tool](/bApps/InterjectTraining/Budget/BudgetChangeQueryToolSummary.html) to confirm that our save has been registered in Target Center 2.0. the new tab [UnsyncedChanges](/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html) is designed to pull in all amounts not yet synced to Interject, which neatly matches our inquiry. The screenshot below shows that our Budget save succeeded and is in the database.
 
 ![](/images/WCNTraining/Budget/BudgetUpload_UnsyncedChangesBCQuery.png)
 
-Once **BOD** for a Budget Year has been created, any save from the **Budget Upload Tool** will not automatically sync to Interject again, just like *After Corp Cutoff*. However, while it is not in Interject, it is in Target Center 2.0 and can be checked using the [ UnsyncedChanges ](/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html) tab in the [ Budget Change Query Tool ](/bApps/InterjectTraining/Budget/BudgetChangeQueryToolSummary.html). Once Corporate has versioned your change, the Budget amount will be sycned to Interject.
+Once **BOD** for a Budget Year has been created, any save from the **Budget Upload Tool** will not automatically sync to Interject again, just like *After Corp Cutoff*. However, while it is not in Interject, it is in Target Center 2.0 and can be checked using the [UnsyncedChanges](/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html) tab in the [Budget Change Query Tool](/bApps/InterjectTraining/Budget/BudgetChangeQueryToolSummary.html). Once Corporate has versioned your change, the Budget amount will be sycned to Interject.
 
 ## Common Save Errors
 

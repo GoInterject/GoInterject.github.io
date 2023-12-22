@@ -64,7 +64,7 @@ Now you will be able to drop in the desired Projections values and save them.
 
 ## Do I have security rights to Save from the Projections Upload tab?
 
-To learn whether you can save to the Projections Upload Tool, please check the [ Tools Controlled by the Control Center ](/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#projections-tools-and-the-control-center) page.
+To learn whether you can save to the Projections Upload Tool, please check the [Tools Controlled by the Control Center](/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#projections-tools-and-the-control-center) page.
 
 ## Common Save Errors
 

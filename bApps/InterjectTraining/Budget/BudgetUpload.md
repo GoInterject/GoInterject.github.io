@@ -64,7 +64,7 @@ Now you will be able to drop in the desired Budget values and save them!
 
 ## Do I have security rights to Save from the Budget Upload tab?
 
-To find if you can save to the Budget Upload Tool, please check out the [ Tools Controlled by the Control Center ](/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#budget-tools-and-the-control-center) page.
+To find if you can save to the Budget Upload Tool, please check out the [Tools Controlled by the Control Center](/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#budget-tools-and-the-control-center) page.
 
 ## After Corp Cutoff and after BOD
 
@@ -85,7 +85,7 @@ We can use the [Budget Change Query Tool](/bApps/InterjectTraining/Budget/Budget
 
 ![](/images/WCNTraining/Budget/BudgetUpload_UnsyncedChangesBCQuery.png)
 
-Once **BOD** for a Budget Year has been created, any save from the **Budget Upload Tool** will not automatically sync to Interject again, just like *After Corp Cutoff*. However, while it is not in Interject, it is in Target Center 2.0 and can be checked using the [ UnsyncedChanges ](/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html) tab in the [ Budget Change Query Tool ](/bApps/InterjectTraining/Budget/BudgetChangeQueryToolSummary.html). Once Corporate has versioned your change, the Budget amount will be sycned to Interject.
+Once **BOD** for a Budget Year has been created, any save from the **Budget Upload Tool** will not automatically sync to Interject again, just like *After Corp Cutoff*. However, while it is not in Interject, it is in Target Center 2.0 and can be checked using the [UnsyncedChanges](/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html) tab in the [Budget Change Query Tool](/bApps/InterjectTraining/Budget/BudgetChangeQueryToolSummary.html). Once Corporate has versioned your change, the Budget amount will be sycned to Interject.
 
 ## Common Save Errors
 

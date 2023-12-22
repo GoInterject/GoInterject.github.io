@@ -8,9 +8,9 @@ description: jCell retrieves data based on the provided parameters.
 
 ##  Function Summary 
 
-jCell retrieves data based on the provided parameters. The first argument is typically a [ jAcct() ](/wIndex/jAcct.html) lookup when a company has more than one segment to filter. The retrieved data is always summarized into a single value. 
+jCell retrieves data based on the provided parameters. The first argument is typically a [jAcct()](/wIndex/jAcct.html) lookup when a company has more than one segment to filter. The retrieved data is always summarized into a single value. 
 
-Filter text for up to six segments of a chart of accounts. Use the Interject function [ jAcct() ](/wIndex/jAcct.html) when more than a single segment is used as a filter. 
+Filter text for up to six segments of a chart of accounts. Use the Interject function [jAcct()](/wIndex/jAcct.html) when more than a single segment is used as a filter. 
 
 ###  Function Arguments   
 

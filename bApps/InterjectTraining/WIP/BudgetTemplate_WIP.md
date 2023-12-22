@@ -14,12 +14,12 @@ description: This is the primary tool used for managing Budgets. This tool can b
 * **District** - *Required*. Individual district. Cannot use district ranges or groupings
 * **YYYY-MM** - *Required*. Needs to be in YYYY-MM format
 * **Currency** - *Optional*. Blank defaults to your home district currency. Other options are USD and CAD.
-* [ **Base Year** ](#base-year-and-fincube) - *Required*. Used in the pull. Drop-down filter ranges from *Aug Proj -> Dec Act*<br><br>
-[ *Retain Rows - Related Parameters (used in the pull)* ](#retain-rows-and-how-it-works)
+* [**Base Year**](#base-year-and-fincube) - *Required*. Used in the pull. Drop-down filter ranges from *Aug Proj -> Dec Act*<br><br>
+[*Retain Rows - Related Parameters (used in the pull)*](#retain-rows-and-how-it-works)
 * **Retain Rows** - *Required*. Drop-down filter includes *Yes*, *No-Show Last Saved*, *No-Show Prior Bud*. If *Yes*, the Input columns will not wipe out on the pull.
 * **Retain Comments** - *Required*. Drop-down filter includes *Yes* and *No*. If *Yes*, pulling in on the report will not wipe out comments not yet saved to the database.
 * **Insert at End** - *Required*. Drop-down filter includes *Yes* and *No*. If *Yes* and **Retain Rows** is also *Yes*, then new accounts get added at the bottom of their grouping.<br><br>
-[ *Summary and Detail Accounts - Related Parameters* ](#summary-and-detail-level-accounts)
+[*Summary and Detail Accounts - Related Parameters*](#summary-and-detail-level-accounts)
 * **Insert By Full Acct** - *Required*. Used in the pull. Drop-down filter includes *Yes* and *No*. For *No*, new accounts are aggregated at the summary level and dropped in.
 * **Zero Out Missing Accts** - *Required*. Used in the save. Drop-down filter includes *Yes* and *No*. For *Yes*, accounts missing from the template are zeroed out. For *No*, missing accounts will keep their amounts, and any Summary level accounts are offsetted to include the missing accounts automatically.
 
@@ -156,12 +156,12 @@ We then try and upload a change to Budget using the **Budget Template** tool (af
 
 So our changes here have been saved to Target Center 2.0, but they are not yet synced to Interject. Once the *Corp Cutoff* date is set to a Date/Time after our change or BOD, this change will then be synced to Interject.
 
-We can use the the new tab [ UnsyncedChanges ](/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html) in the [ Budget Change Query Tool ](/bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html) to see our changes in Target Center 2.0.
+We can use the the new tab [UnsyncedChanges](/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html) in the [Budget Change Query Tool](/bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html) to see our changes in Target Center 2.0.
 
 ![](/images/WCNTraining/Budget/BudgetTemplate_AfterCorpCutoffBudChangeQuery.png)
 
 ### After BOD
-Once **BOD** for a Budget Year has been created, then any save from the **Budget Template** will not automatically sync to Interject again. This is just like with *After Corp Cutoff*, and while it is not in Interject it is in Target Center 2.0, and can be checked using the [ UnsyncedChanges ](/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html) tab in the [ Budget Change Query Tool ](/bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html). 
+Once **BOD** for a Budget Year has been created, then any save from the **Budget Template** will not automatically sync to Interject again. This is just like with *After Corp Cutoff*, and while it is not in Interject it is in Target Center 2.0, and can be checked using the [UnsyncedChanges](/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html) tab in the [Budget Change Query Tool](/bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html). 
 
 Once Corporate has versioned your change, the Budget amount will be sycned through to Interject.
 

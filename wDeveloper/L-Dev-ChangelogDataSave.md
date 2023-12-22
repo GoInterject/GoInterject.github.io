@@ -30,7 +30,7 @@ For the Data Connection for this example, you will use the connection previously
 
 ## Setting Up the Data Portal
 
-**Step 1:** Navigate to [ https://portal.gointerject.com ](https://portal.gointerject.com) and [ log in ](/wPortal/Logging-In-to-Website-Portal.html). Click on **Data Portals** on the left side bar and then the **NEW DATA PORTAL** button.
+**Step 1:** Navigate to [https://portal.gointerject.com](https://portal.gointerject.com) and [log in](/wPortal/Logging-In-to-Website-Portal.html). Click on **Data Portals** on the left side bar and then the **NEW DATA PORTAL** button.
 
 ![](/images/L-Dev-ChangelogDataSave/NewDataPortal.png)
 <br>

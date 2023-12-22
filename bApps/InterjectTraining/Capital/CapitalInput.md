@@ -42,7 +42,7 @@ This hidden grouped section is for the Replacement Information. You will need to
 
 ## Do I have security rights to Save from this Input File?
 
-To find if you can save to the Capital Input Tool, please check out the [ Tools Controlled by the Control Center ](/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#the-capital-input-tool) page.
+To find if you can save to the Capital Input Tool, please check out the [Tools Controlled by the Control Center](/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#the-capital-input-tool) page.
 
 ## Drills
 
@@ -50,7 +50,7 @@ You can drill on any row to bring up more detailed information for the Capital a
 
 ![](/images/WCNTraining/Capital/CapitalInput_DrillWindow.png)
 
-**Drill to CC Query for Change History** opens the [ Capital Change Query report ](/bApps/InterjectTraining/Capital/CCQuery.html).
+**Drill to CC Query for Change History** opens the [Capital Change Query report](/bApps/InterjectTraining/Capital/CCQuery.html).
 ![](/images/WCNTraining/Capital/CapitalInput_CapitalChangeDrill.png)
 
 ## Common Save Errors

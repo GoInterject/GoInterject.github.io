@@ -8,7 +8,7 @@ description: The ReportFixed function pulls data from a data source and inserts 
 
 ##  Function Summary
 
-The ReportFixed function pulls data from a data source and inserts it into a spreadsheet. It is similar to the [ ReportRange ](/wIndex/ReportRange.html) function but with the addition of receiving row names as input in addition to column names. Only data that is mapped to both these row and column names from the data source will be inserted. Consequently, the range where data is inserted is defined by the boundaries of the RowDefRange and the ColDefRange. Data returned by this function can be filtered, formatted, and customized for a specific desired report.
+The ReportFixed function pulls data from a data source and inserts it into a spreadsheet. It is similar to the [ReportRange](/wIndex/ReportRange.html) function but with the addition of receiving row names as input in addition to column names. Only data that is mapped to both these row and column names from the data source will be inserted. Consequently, the range where data is inserted is defined by the boundaries of the RowDefRange and the ColDefRange. Data returned by this function can be filtered, formatted, and customized for a specific desired report.
 
 For an example of this function, see [Create Inventory Fixed Lab.](/wGetStarted/L-Create-InventoryFixed.html)
 

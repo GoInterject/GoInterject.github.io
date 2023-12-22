@@ -8,10 +8,10 @@ There are two options available when moving your Interject Financials report tem
 
 **Option 1:** [Moving the Entire Database](/bApps/bFinancials/Test2Live.html#option-1-moving-the-entire-database) – This option should only be used when "Live" and "Test" environment are similar. The following criteria must be met:
 
-- [ ] Epicor test database(s) need to be snapshots of "Live". (Data in "Test" server can be older than what is on "Live") 
-- [ ] Epicor data on "Test" was not changed since the snapshot from "Live" 
-- [ ] All Epicor database(s) on “Live” should also be in “Test” 
-- [ ] SQL Server version and setup of “Test” should match “Live”
+- [] Epicor test database(s) need to be snapshots of "Live". (Data in "Test" server can be older than what is on "Live") 
+- [] Epicor data on "Test" was not changed since the snapshot from "Live" 
+- [] All Epicor database(s) on “Live” should also be in “Test” 
+- [] SQL Server version and setup of “Test” should match “Live”
 
 **Option 2:** [Deploying A New Implementation from Scratch](/bApps/bFinancials/Test2Live.html#option-2-deploying-a-new-implementation-from-scratch) – This option will take more time, but it will be a from-scratch installation. The installation steps will mirror the initial deploy for a “Test” server.  Additional steps will include transferring rollups, templates, and reports from “Test” company to “Live”.   
 
