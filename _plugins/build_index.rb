@@ -3,7 +3,7 @@
 
 require 'nokogiri'
 
-puts "Running custom scripts"
+puts "Running script build_index"
 
 Jekyll::Hooks.register :site, :post_write do |site|
   puts "Building index search_index.json"
@@ -13,12 +13,14 @@ Jekyll::Hooks.register :site, :post_write do |site|
   
     # Specify the path and filename for the index file
     parent_folder = File.expand_path("..", site.dest)
+	
     index_file_path = File.join(parent_folder, 'search_index.json')
     site_index_file_path = File.join(site.dest, 'search_index.json')
     
     # Write the index content to the file
     File.write(index_file_path, index_content)
     File.write(site_index_file_path, index_content)
+	
   end
   
   def build_index(site)

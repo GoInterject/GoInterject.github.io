@@ -13,6 +13,7 @@ _prodDeploy
 # This index file is built automatically with Github actions
 # Therefore there is no need to push this file to the repo
 search_index.json
+search_index_financials.json
 
 # python related ignores
 __pycache__/

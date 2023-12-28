@@ -2,6 +2,7 @@
 title: Tabular vs Data Cells
 layout: custom
 keywords: [cells, tabular, data cells]
+headings: ["Overview", "Tabular", "Data Cells", "What is Common Between Data Lists and Data Cells"]
 description: The Report Library is a way for your team to share reports from a central location going beyond just a Sharepoint or a Shared Network Folder. The reports are uploaded to the library and can be accessed from any computer using Excel via Interject.
 ---
 * * *

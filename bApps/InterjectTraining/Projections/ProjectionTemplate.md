@@ -2,7 +2,8 @@
 title: Projection Template
 layout: custom
 keywords: [Training, Projections, Projection Template]
-description: 
+headings: ["Overview", "Input Field Explanations", "Retain Rows and how it works", "Summary and Detail level accounts", "Pulling Summary and Detail levels together", "Saving Summary and Detail levels together", "Dynamic Projection Columns", "The Autocalcs", "Do I have security rights to Save from the Projections Template?", "Common Save Errors"]
+description: The Local Projections Template is used to save to a district's Projections for a given month. This template closely matches the Local Budget Template in design and function.
 ---
 
 ## Overview
@@ -14,11 +15,11 @@ description:
 * **District** - *Required*. Individual district. Cannot use district ranges or groupings
 * **YYYY-MM** - *Required*. Must be in YYYY-MM format
 * **Currency** - *Optional*. Blank defaults to your home district currency. Other options are USD and CAD.<br><br>
-[ *Retain Rows - Related Parameters (used in the pull)* ](#retain-rows-and-how-it-works)
+[*Retain Rows - Related Parameters (used in the pull)*](#retain-rows-and-how-it-works)
 * **Retain Rows** - *Required*. Drop-down filter includes *Yes*, *No-Show Last Saved*, *No-Show Prior Bud*. If *Yes*, the Input columns will not clear on the pull.
 * **Retain Comments** - *Required*. Drop-down filter includes *Yes* and *No*. If *Yes*, pulling on the report will not clear comments not yet saved to the database.
 * **Insert at End** - *Required*. Drop-down filter includes *Yes* and *No*. If *Yes* and **Retain Rows** is also *Yes*, then new accounts get added at the bottom of their grouping.<br><br>
-[ *Summary and Detail Accounts - Related Parameters* ](#summary-and-detail-level-accounts)
+[*Summary and Detail Accounts - Related Parameters*](#summary-and-detail-level-accounts)
 * **Insert By Full Acct** - *Required*. Used in the pull. Drop-down filter includes *Yes* and *No*. For *No*, new accounts are aggregated at the summary level and dropped in.
 * **Zero Out Missing Accts** - *Required*. Used in the save. Drop-down filter includes *Yes* and *No*. For *Yes*, accounts missing from the template are zeroed out. For *No*, missing accounts will keep their amounts, and any Summary level accounts are offset to include the missing accounts automatically.
 
@@ -122,7 +123,7 @@ There are many different types of Autocalcs, but it's important to know that you
 
 ## Do I have security rights to Save from the Projections Template?
 
-To check whether you can save to the Projections Template, please see the [ Tools Controlled by the Control Center ](/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#projections-tools-and-the-control-center) page.
+To check whether you can save to the Projections Template, please see the [Tools Controlled by the Control Center](/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#projections-tools-and-the-control-center) page.
 
 ## Common Save Errors
 

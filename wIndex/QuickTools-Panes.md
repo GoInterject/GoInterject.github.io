@@ -2,6 +2,7 @@
 title: Quick Tools - Panes Tools
 layout: custom
 keywords: [Quick Tools, Pane Tools, Freeze/Unfreeze Panes, Freeze all Tabs]
+headings: ["Overview", "Freeze/Unfreeze Panes", "Freeze all Tabs"]
 description: The Panes Tools within the Quick Tools deal with the window panes in Excel
 ---
 * * *

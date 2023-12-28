@@ -2,7 +2,8 @@
 title: EBITDA Change History Tab
 layout: custom
 keywords: [Training, Budget, Budget Change Query]
-description: 
+headings: ["Overview"]
+description: This view displays the budget change impacts to Revenue and EBITDA.
 ---
 
 ## Overview

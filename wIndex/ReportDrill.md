@@ -2,6 +2,7 @@
 title: ReportDrill()
 layout: custom
 keywords: [ReportDrill, drill, function, formula, data]
+headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Embeddable Helper Functions"]
 description: The ReportDrill function provides a convenient way to run another targeted function while at the same time, transferring contextual data for filtering to that function.
 ---
 * * *

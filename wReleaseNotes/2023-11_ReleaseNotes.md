@@ -2,6 +2,7 @@
 title: Release Notes
 layout: custom
 keywords: [change log, updates, versions, history, what's new]
+headings: ["November 2023", "Documentation Updates"]
 description: Release notes for the previous month's updates
 ---
 * * *

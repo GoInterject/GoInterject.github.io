@@ -2,6 +2,7 @@
 title: "Create: Using the Retain Feature"
 layout: custom
 keywords: [retain, formulas, keep, don't clear, RetainedRowColumns, InsertNewRowsWithin]
+headings: ["Overview", "Create Simple Formulas", "Without RetainedRowColumns", "With RetainedRowColumns", "Insert New Rows Within"]
 description: When using Interject to pull data into your spreadsheet, the report area will be cleared before new data is inserted. This is typically done by the deletion of rows. In some situations, you may want to avoid this clear action in order to retain some formulas or other information, since pulling could remove formulas you have on other columns related to certain data rows.
 ---
 * * *

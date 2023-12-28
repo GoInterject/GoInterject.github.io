@@ -2,6 +2,7 @@
 title: "Develop: jDropdown"
 layout: custom
 keywords: [jDropdown, function, develop, build, walkthrough]
+headings: ["Overview", "Setting up the Data Connection", "Setting up the Data Portal", "Creating the Stored Procedure", "Testing the Stored Procedure"]
 description: Walks through how to create the stored procedures for the jDropdowns built in the customer aging create report.
 ---
 * * *

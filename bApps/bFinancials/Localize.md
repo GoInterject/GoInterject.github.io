@@ -2,6 +2,7 @@
 title: Setup Client Reporting Library
 layout: custom
 keywords: [Report, Epicor, Accounts]
+headings: []
 description: Step by step guide on publishing custom-made reports to your company's report library in the Interject for Financials App for Epicor Enterprise.
 ---
 

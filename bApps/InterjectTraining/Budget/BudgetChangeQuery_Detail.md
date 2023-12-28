@@ -2,7 +2,8 @@
 title: Detail Tab
 layout: custom
 keywords: [Training, Budget, Budget Change Query]
-description: 
+headings: ["Overview"]
+description: This tab of the Budget Change Query tool provides a detailed overview of budgets with several filtering options.
 ---
 
 ## Overview

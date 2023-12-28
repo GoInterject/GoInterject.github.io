@@ -2,6 +2,7 @@
 title: "Modify: Customer Aging Report"
 layout: custom
 keywords: [alter, change, modify, customer aging, totals, walkthrough]
+headings: ["Overview", "Opening the Report and Pulling Data", "Creating a Total Column", "Creating Totals on Top of the Report"]
 description: Here, you will modify the Customer Aging Demo used in the Customer Aging Walkthrough to show the total of invoices due from companies.
 ---
 * * *

@@ -2,6 +2,7 @@
 title: Pull and Save Data
 layout: custom
 keywords: [Account, Epicor, Companies]
+headings: ["Pull Data", "Save Data"]
 description: Interject™ Financials for Epicor Enterprise The basics of pulling and saving data in Interject
 ---
 

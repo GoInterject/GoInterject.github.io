@@ -3,13 +3,14 @@ title: What Does Interject Do?
 layout: custom
 landing: True
 keywords: [real world, use case, report library]
+headings: ["In a Nutshell", "Interject  is..."]
 description: Interject is a new method for connecting users to their data. It is a lightweight, enterprise-scalable platform bringing data to spreadsheets which can be used like customizable web applications 
 ---
 * * *
 
 ##  In a Nutshell 
 
-Interject is a new method for connecting users to their data. It is a lightweight, enterprise-scalable platform bringing data to spreadsheets which can be used like customizable web applications. Interject  goes beyond reporting and business intelligence by empowering users to automate unique business processes and reach deeper into their data. Check out [ Real World Use Cases ](/wAbout/Real-World-Use-Cases.html) to see how accounting, finance, and IT departments benefit. 
+Interject is a new method for connecting users to their data. It is a lightweight, enterprise-scalable platform bringing data to spreadsheets which can be used like customizable web applications. Interject  goes beyond reporting and business intelligence by empowering users to automate unique business processes and reach deeper into their data. Check out [Real World Use Cases](/wAbout/Real-World-Use-Cases.html) to see how accounting, finance, and IT departments benefit. 
 
 IT departments like Interject because it allows them to publish only data, helping spreadsheet users create the user-specific reports they need. The familiar spreadsheet interface drastically reduces support and report requests. And since  Interject  is client/server-based, users save fewer spreadsheets to local network drives. 
 

@@ -2,6 +2,7 @@
 title: View SQL Test for ActiveCell
 layout: custom
 keywords: [report, investigate, activity, logs, error, user support]
+headings: ["Overview"]
 description: The View SQL Test for ActiveCell tool can be used to track down issues with the SQL stored procedures being called by an Interject report function.
 ---
 * * *

@@ -2,6 +2,7 @@
 layout: custom
 title:  Java API Setup
 keywords: [data api, web api, java, setup, spring framework]
+headings: ["Overview", "Requirements", "Get the Code", "Setup", "Run API", "Change Host and Port", "Development Docs", "Interject Docs"]
 description: Shows how to setup an INTERJECT Java data api.
 ---
 

@@ -2,6 +2,7 @@
 title: ReportRange()
 layout: custom
 keywords: [ReportRange, range, function, formula, data, pull]
+headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Embeddable Helper Functions"]
 description: The ReportRange function pulls data from a data source and inserts it into a single range within a spreadsheet.
 ---
 * * *
@@ -9,7 +10,7 @@ description: The ReportRange function pulls data from a data source and inserts 
 ##  Function Summary
 The ReportRange function pulls data from a data source and inserts it into a single range within a spreadsheet. Receives a list of columns for input that will be pulled from the data source. Only data that is mapped to these column names will be inserted. Data returned by this function can be filtered, formatted, and customized for a specific desired data set.
 
-For an example of this function, see [ Lab Create: Customer Aging ](/wGetStarted/L-Create-CustomerAging.html).
+For an example of this function, see [ Lab Create: Customer Aging](/wGetStarted/L-Create-CustomerAging.html).
 
 ###  Function Arguments
 
@@ -103,7 +104,7 @@ For an example of this function, see [ Lab Create: Customer Aging ](/wGetStarte
     </tr>
     <tr>
 		<td class="pph"><b>Constraints</b></td>
-		<td>The values must match the order of the parameters in the data source (The order can be verified using the [ Validation Report ](/wTroubleshoot/Reports.html#validation-report-for-pullsave-events) )</td>
+		<td>The values must match the order of the parameters in the data source (The order can be verified using the [Validation Report](/wTroubleshoot/Reports.html#validation-report-for-pullsave-events) )</td>
     </tr>
     <tr>
 		<td class="pph"><b>If Blank</b></td>
@@ -153,7 +154,7 @@ For an example of this function, see [ Lab Create: Customer Aging ](/wGetStarte
 </table>
 </div>
 
-<button class="collapsible-parameter">**RetainRowColumns**<br>The list of column names that will be used as a key for retaining information within the inserted data range. This can be a comma delimited string or a cell reference of a single column name defined in ColDefRange. <br><br>All data in the column(s) matching the names in this argument will be retained after a a Pull-Run or Pull-Clear event. Consequently, such rows are also retained and not deleted. However, all data in columns that are not defined in this argument are blanked out after a clear action or overridden after a pull action.<br><br>This feature makes forecasting calculations to remain in the report instead of being cleared. For an example of this feature, see [Using the Retain Feature ](/wGetStarted/L-Create-RetainFeature.html).</button>
+<button class="collapsible-parameter">**RetainRowColumns**<br>The list of column names that will be used as a key for retaining information within the inserted data range. This can be a comma delimited string or a cell reference of a single column name defined in ColDefRange. <br><br>All data in the column(s) matching the names in this argument will be retained after a a Pull-Run or Pull-Clear event. Consequently, such rows are also retained and not deleted. However, all data in columns that are not defined in this argument are blanked out after a clear action or overridden after a pull action.<br><br>This feature makes forecasting calculations to remain in the report instead of being cleared. For an example of this feature, see [Using the Retain Feature](/wGetStarted/L-Create-RetainFeature.html).</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
@@ -238,6 +239,6 @@ For an example of this function, see [ Lab Create: Customer Aging ](/wGetStarte
 ###  Embeddable Helper Functions
 
 * [jDataPortal](/wIndex/jDataPortal.html)
-* [ Param ](Param.html)
+* [Param](Param.html)
 * [jCombine](/wIndex/jCombine.html)
 * [jCombineIF](/wIndex/jCombine_IF.html)

@@ -2,6 +2,7 @@
 title: "Develop: Customer Orders"
 layout: custom
 keywords: [developer, example, customer orders, walkthrough, SQL]
+headings: ["Overview", "Verifying the Data Connection", "Copy the Data Portal", "Creating the Stored Procedure", "Create the Report"]
 description: In this example, you will create a second report, Customer Orders, that can be drilled to from the Customer Aging Report you built in the last example. This uses a report range.
 ---
 * * *

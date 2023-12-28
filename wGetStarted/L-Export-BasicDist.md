@@ -2,6 +2,7 @@
 title: "Export: Basic Distribution"
 layout: custom
 keywords: [basic, distribution, email, report, export, file, PDF, walkthrough]
+headings: ["Overview", "Create a Distribution From an Existing Report", "Distributing to a Folder", "Distributing With Email"]
 description: The distribution process provides extensive control when creating and distributing reports. You can create one or more report workbooks and choose which worksheet tabs to include, create copies by iterating through different filters, and choose export targets like File Location, Email, Print, PDF, etc.
 ---
 * * *

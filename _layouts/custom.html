@@ -90,7 +90,7 @@
 	</script>
 	<!-- metadata -->
 	<!--This if statement is required to load jquery on the search.md page before the setTimeout function-->
-	{% if page.title == "Docs search" %}
+	{% if page.title == "Doc Search" or page.title == "Doc Search (Apps)"%}
 		<script src="/js/jquery.js"></script>
 	{% endif %}
   <!-- <link rel="stylesheet" href="/css/font-awesome.min.css"> -->
@@ -224,7 +224,7 @@
 							<div class="toc-nav">
 								<div class="feedback-links">
 									<ul>
-										{% if page.title != "Docs search" %}
+										{% if page.title != "Doc Search" and page.title != "Doc Search (Apps)"%}
 										{% if edit_url != "" %}
                                             <li style="visibility: show">
                                                 <a href="{{ edit_url }}">
@@ -239,7 +239,7 @@
 									</ul>
 								</div>
 								{% unless page.notoc %} {% assign my_min = page.toc_min | default: site.toc_min | default: 2 %} {% assign my_max = page.toc_max | default: site.toc_max | default: 3 %} {% assign my_name = page.url | default: "unnamed" %}
-									{% if page.title != "Docs search" %}
+									{% if page.title != "Doc Search" and page.title != "Doc Search (Apps)"%}
 									<div id="side-toc-title">On this page:</div>
 									{% endif %}
 									{% include toc_pure_liquid.html html=content sanitize=true class="inline_toc" id="my_toc" toc_min=my_min toc_max=my_max page_name=my_name %}
@@ -283,7 +283,7 @@
 	<!-- <script src="/js/anchorlinks.js"></script> -->
 	<script defer src="/js/menu.js"></script>
 	<!-- required for the search page to have jQuery loaded in the header-->
-	{% if page.title != "Docs search" %}
+	{% if page.title != "Doc Search" and page.title != "Doc Search (Apps)"%}
 		<script src="/js/jquery.js"></script>
 	{% endif %}
 	<script src="/js/bootstrap.min.js"></script>
@@ -311,7 +311,7 @@
 	<script defer src="/js/collapsible-parameter.js"></script>
 	<script defer src="/js/collapsible-expanded.js"></script>
 	<script defer src="/js/copyCode.js"></script>
-	
+	<script defer src="/js/customSearch.js"></script>
 
 	<script language="javascript">
 	jQuery(document).ready(function(){

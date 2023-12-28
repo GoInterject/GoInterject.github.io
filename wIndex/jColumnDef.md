@@ -2,6 +2,7 @@
 title: jColumnDef()
 layout: custom
 keywords: [jColumnDef, helper, function, formula]
+headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition"]
 description: The jColumnDef function defines a column based on one or more parameters.
 ---
 * * *
@@ -12,7 +13,7 @@ The jColumnDef function defines a column based on one or more parameters. Each p
 
 The jColumnDef function utilizes a DataPortal to interact with the segments. This DataPortal is specifically setup for the particular needs of the company using Interject. The segments are thus customizable. For most companies, the Interject [FinCube](/wIndex/FinCube---The-Financial-Cube.html) DataPortal will suffice for their reporting needs.
 
-For an example of this function, see [Lab Create: Financial Variable ](/wGetStarted/L-Create-FinancialVariable.html).
+For an example of this function, see [Lab Create: Financial Variable](/wGetStarted/L-Create-FinancialVariable.html).
 
 ###  Function Arguments
 

@@ -2,7 +2,8 @@
 title: Budget Template
 layout: custom
 keywords: [Training, Budget, Budget Template]
-description: 
+headings: ["Overview", "Filters", "Template Setup", "Build Based On", "Account Level", "Other Required Filters", "Additional Filters", "Input Field Explanations", "Base Year and Fincube", "How Templates Work", "Summary and Detail level accounts", "Pulling Summary and Detail levels together", "Saving Summary and Detail levels together", "The Autocalcs", "Do I have security rights to Save from the Budget Template?", "After Corp Cutoff and after BOD", "After Corp Cutoff", "After BOD", "Common Save Errors"]
+description: This is the primary tool used for managing Budgets. This tool can be downloaded and customized in your local environment.
 ---
 
 ## Overview
@@ -43,7 +44,7 @@ The following additional *required* and *optional* filters are described below:
 
 * **District** - *Required*. Designates the individual district. You cannot use district ranges or groupings.
 * **Budget Year** - *Required*. The year currently being budgeted for.
-* [ **Base Year** ](#base-year-and-fincube) - *Required*. Used in the pull. The drop-down filter ranges from *Aug Proj -> Dec Act*<br><br>
+* [**Base Year**](#base-year-and-fincube) - *Required*. Used in the pull. The drop-down filter ranges from *Aug Proj -> Dec Act*<br><br>
 
 ### Additional Filters
 
@@ -131,7 +132,7 @@ There are many different types of Autocalcs, but the main thing to know is that 
 
 ## Do I have security rights to Save from the Budget Template?
 
-To find if you can save to the Budget Template, please check out the [ Tools Controlled by the Control Center ](/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#budget-tools-and-the-control-center) page.
+To find if you can save to the Budget Template, please check out the [Tools Controlled by the Control Center](/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#budget-tools-and-the-control-center) page.
 
 ## After Corp Cutoff and after BOD
 
@@ -149,7 +150,7 @@ We then try and upload a change to Budget using the **Budget Template** tool (af
 
 Notice our changes have been saved to Target Center 2.0, but they are not yet synced to Interject. Once the *Corp Cutoff* date is set to a Date/Time after our change or BOD, this change will be synced to Interject.
 
-We can use the the new [UnsyncedChanges](/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html) in the [ Budget Change Query Tool ](/bApps/InterjectTraining/Budget/BudgetChangeQuery_Summary.html) tab to see our changes in Target Center 2.0.
+We can use the the new [UnsyncedChanges](/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html) in the [Budget Change Query Tool](/bApps/InterjectTraining/Budget/BudgetChangeQuery_Summary.html) tab to see our changes in Target Center 2.0.
 
 ![](/images/WCNTraining/Budget/BudgetTemplate_AfterCorpCutoffBudChangeQuery.png)
 

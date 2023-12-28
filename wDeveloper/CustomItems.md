@@ -2,6 +2,7 @@
 title: Custom Items
 layout: custom
 keywords: [custom commands, execute, sql]
+headings: ["Overview", "Setup Data Portal", "System Parameters", "Formula Parameters", "Description and Status", "Running the Custom Item", "Example Stored Procedure"]
 description: The Custom Item feature of Interject allows a user to interact with a database stored procedure or web service to trigger an event.  It could be used to trigger a special data update process, toggle a switch such as temporarily turning off a report tool for standard users, or running a data maintenance routine.
 ---
 * * *

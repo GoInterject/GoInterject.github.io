@@ -2,6 +2,7 @@
 title: Distributions
 layout: custom
 keywords: [Report, Epicor, Accounts]
+headings: []
 description: Step by step guide on using Interject Financials - Epicor Enterprise financial report distribution.
 ---
 
