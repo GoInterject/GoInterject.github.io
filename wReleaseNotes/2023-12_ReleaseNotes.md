@@ -43,6 +43,9 @@ _Released 12/12/2023_
 
 | Date | Type | Page | Changes |
 |---|---|---|---|
-| 12/7 | New | [Custom Doc Search](/schemas/custom_search) | New search functionality |
+| 12/7 | New | [Doc Search](/schemas/custom_search) | New search functionality |
 | 12/8 | New | [Develop: Change Log Data Save](/wDeveloper/L-Dev-ChangelogDataSave.html) | New page |
 | 12/15 | New | [Custom Items](/wDeveloper/CustomItems.html) | New page |
+| 12/28 | Update | [Doc Search](/schemas/custom_search) | Can search top hits |
+| 12/28 | New | [Doc Search (Apps)](/bApps/schemas/custom_search) | New search functionality for Apps |
+| 12/28 | New | [RowDef Data Clear](/wTroubleshoot/RowDefClear.html) | New page |

@@ -413,6 +413,8 @@ troubleshoot:
       path: /wTroubleshoot/AdxLoader.html
     - title: WebView2 Installation
       path: /wTroubleshoot/WebView2.html
+    - title: RowDef Data Clear
+      path: /wTroubleshoot/RowDefClear.html
 - sectiontitle: Report Errors
   path: /wTroubleshoot/Reports.html
   section:
