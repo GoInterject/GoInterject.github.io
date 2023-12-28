@@ -2,7 +2,8 @@
 title: "Doc Search (Apps)"
 tree: false
 sitemap: false
-keywords: search, interject, documentation, find
+keywords: [search, interject, documentation, find]
+headings: []
 description: Interject documentation search results
 ---
 
@@ -41,7 +42,7 @@ description: Interject documentation search results
 	#custom-space {
 		display: none;
 	}
-	
+		
 </style>
 
 <form id="custom-search-form">
