@@ -13,7 +13,7 @@ if (sitePath.startsWith("/wTesting") == true){
 else if (sitePath.startsWith("/w") == true){
    docstoc = {{ site.data.toc | jsonify }};
 }
-// if not part of the default nav check if it's an app
+ // if not part of the default nav check if it's an app
 else if (sitePath.startsWith("/bApps/bFinancials") == true){
    docstoc = {{ site.data.apptoc.financial | jsonify }};
 }
@@ -26,7 +26,7 @@ else {
 }
 
 // search page case and subcases
-if (sitePath.startsWith("/schemas/search") == true){
+if (sitePath.startsWith("/schemas/custom_search") == true || sitePath.startsWith("/bApps/schemas/custom_search") == true){
     // now determine the referring (origination?) page to determine which docstoc to assign
     if (referringPage.includes("/wTesting") == true){
         docstoc = {{ site.data.testingtoc.testingtoc | jsonify }};
