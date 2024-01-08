@@ -226,8 +226,9 @@ function getTopHitsResults(searchVal) {
     var matchesURL = matches(String(thisPage.url).toUpperCase(), uppercaseSearchVal);
     var matchesKeywords = thisPage.keywords ? matches(String(thisPage.keywords.slice(2, thisPage.keywords.length)).toUpperCase(), uppercaseSearchVal) : 0;
     var matchesTopKeywords = thisPage.keywords ? matches(String(thisPage.keywords.slice(0, 3)).toUpperCase(), uppercaseSearchVal) : 0;
+    var matchesHeadings = thisPage.headings ? matches(String(thisPage.keywords.slice(0, 3)).toUpperCase(), uppercaseSearchVal) : 0;
 
-    addResult(i, topHitsResults, matchesTitle, matchesDescription, matchesURL, matchesKeywords, matchesTopKeywords);
+    addResult(i, topHitsResults, matchesTitle, matchesDescription, matchesURL, matchesKeywords, matchesTopKeywords, matchesHeadings);
   }
 
   topHitsResults.sort(function(a, b) {
@@ -251,8 +252,9 @@ var uppercaseSearchVal = searchVal.toUpperCase();
       var matchesURL = matches(String(thisPage.url).toUpperCase(), uppercaseSearchVal);
       var matchesKeywords = thisPage.keywords ? matches(String(thisPage.keywords.slice(2, thisPage.keywords.length)).toUpperCase(), uppercaseSearchVal) : 0;
       var matchesTopKeywords = thisPage.keywords ? matches(String(thisPage.keywords.slice(0, 3)).toUpperCase(), uppercaseSearchVal) : 0;
+      var matchesHeadings = thisPage.headings ? matches(String(thisPage.keywords.slice(0, 3)).toUpperCase(), uppercaseSearchVal) : 0;
 
-      addResult(i, topHitsResults, matchesTitle, matchesDescription, matchesURL, matchesKeywords, matchesTopKeywords);
+      addResult(i, topHitsResults, matchesTitle, matchesDescription, matchesURL, matchesKeywords, matchesTopKeywords, matchesHeadings);
     }
   }
 

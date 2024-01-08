@@ -72,7 +72,7 @@ description: Interject documentation search results
   <input
     type="checkbox"
     id="custom-top-hits"
-    title="Displays hits in page title, url, keywords, and descriptions (Standard search only)"
+    title="Displays hits in page title, url, keywords, headings, and descriptions (nonRegex search only)"
 	onclick="handleCustomTopHits()"
   >
   <label for="custom-top-hits">Display top hits</label>

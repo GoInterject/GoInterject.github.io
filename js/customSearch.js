@@ -181,13 +181,16 @@ function displayTopHitsResults(results, container) {
 			const hitURL = `<p style="margin-bottom: 0px; margin-top: 0px">${urlHighlight}</p>`;
 			const keywordsHighlight = insertHighlightAll(String(pages[results[i].topic].keywords).toLowerCase(), query);
 			const hitKeywords = `<p style="margin-bottom: 0px; margin-top: 0px"><b>Keywords: </b>${keywordsHighlight}</p>`;
-			const descriptionHighlight = insertHighlightAll(String(pages[results[i].topic].description).toLowerCase(), query);
+			const headingsHighlight = insertHighlightAll(String(pages[results[i].topic].headings).toLowerCase(), query);
+			const hitHeadings = `<p style="margin-bottom: 0px; margin-top: 0px"><b>Headings: </b>${headingsHighlight}</p>`;
+      const descriptionHighlight = insertHighlightAll(String(pages[results[i].topic].description).toLowerCase(), query);
 			const hitDescription = `<p style="margin-bottom: 0px; margin-top: 0px"><b>Description: </b>${descriptionHighlight}</p>`;
 			
 			resultItem.innerHTML = `
 				${titleLink}
 				${hitURL}
 				${hitKeywords}
+        ${hitHeadings}
 				${hitDescription}
 				`;
 
