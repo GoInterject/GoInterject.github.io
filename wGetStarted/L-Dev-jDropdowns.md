@@ -12,7 +12,7 @@ description: Walks through how to create the stored procedures for the jDropdown
  If you are looking to build custom jDropdown stored procedures for your reports, then this example will walk you through just that. But first, remember that a jDropdown formula often requires a separate stored procedure from the one used by a data pull or save. You will walk through how to build the Data Connection, Data Portal, and stored procedure for the [jDropdown example](/wGetStarted/L-Create-Dropdowns.html) built on the Customer Aging report. This stored procedure is designed to filter down on the specific options for a parameter. Include all the columns that can be used as filter values in the report.
 
 <blockquote class=highlight_note>
-<b>Note:</b> It is required that you have access to build stored procedures in your database to complete this example.
+<b>Note:</b> It is required that you have access to build stored procedures in your database to complete this example. This example uses Microsoft's Northwind Database. You can download this database <a href="https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases">here</a> or you can use this example as a guide for your own data source.
 </blockquote>
 
 ### Setting up the Data Connection
@@ -47,7 +47,7 @@ description: Walks through how to create the stored procedures for the jDropdown
 ![](/images/L-Dev-CustAging/06.jpg)
 <br>
 
-The Database Data Connection is now ready to be used in a Data Portal. You should always test a new connection with your security context. Follow the steps in the [Data Connections](/wPortal/Data-Connections.html) walkthrough to test your connection string.
+The Database Data Connection is now ready to be used in a Data Portal. You should always test a new connection with your security context. Follow the steps in the [Data Connections](/wPortal/L-Database-Connection.html#testing-the-connection-string-from-within-excel) walkthrough to test your connection string.
 
 ### Setting up the Data Portal
 
@@ -71,16 +71,16 @@ The Database Data Connection is now ready to be used in a Data Portal. You shoul
 ![](/images/L-Dev-Dropdowns/02.png)
 <br>
 
-**Step 5:** To add your first formula parameter, click **Click here to add a Formula Parameter**. For this parameter, enter **Filter** for Name, **varchar** for Type, and **input** for Direction to input, as shown below.
+**Step 5:** To add your first formula parameter, click **Click here to add a Formula Parameter**. For this parameter, enter **Filter** for Name, **varchar** for Type, and **input** for Direction to input, as shown below. This parameter will be set up in the Stored Procedure to receive a word that will filter the data returned.
 
 ![](/images/L-Dev-Dropdowns/03.png)
 <br>
 
 ### Creating the Stored Procedure
 
-Open up a text editor of your choice. This example will use [SSMS](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017){:target="_blank"}{:rel="noopener noreferrer"} to execute the code, but again, you can use whichever you prefer. You will be creating this stored procedure on the database you created the [data connection](/wGetStarted/L-Dev-jDropdowns.html#setting-up-the-data-connection) for.
+Open up a text editor of your choice. This example will use [SSMS](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017){:target="_blank"}{:rel="noopener noreferrer"} to execute the code, but again, you can use whichever you prefer. You will be creating this stored procedure in the database you created for the [data connection](#setting-up-the-data-connection).
 
-Create a stored procedure called [demo].[Northwind_CustomerDropdown] using the following code example.
+Create a stored procedure called [demo].[Northwind_CustomerDropdown] using the following code example:
 
 <button class = "collapsible"> Northwind_CustomerDropdown </button>
 <div markdown="1" class="panel">
@@ -128,20 +128,19 @@ WHERE
 	(@Filter = '' OR CustomerID LIKE '%' + @Filter + '%')
 ORDER BY [DisplayText]
 GO
-
 ```
 
 </div>
 
-Stored procedures are natively supported by Interject. There are a few key areas to note in the code example that help illustrate Interject features:
+Stored procedures are natively supported by Interject. There are a few key areas to note in the code example above that help illustrate Interject features:
 
-* Parameters: The parameters included in the stored procedure are the same as those added to the Data Portal in a previous walkthrough. On each request, Interject passes the Formula Parameters values from the spreadsheet configuration to the stored procedure along with System Parameters. Output parameters that can populate values in the spreadsheet are supported, but they are not included in this example. In this case, there is only one formula parameter.
+* **Parameters:** The parameters included in the Stored Procedure are the same as those added to the Data Portal. On each request, Interject passes the Formula Parameters values from the spreadsheet configuration to the Stored Procedure along with System Parameters. Output parameters that can populate values in the spreadsheet are supported, but they are not included in this example. In this example, there is only one formula parameter: "filter".
 
-* Select statements: Returning data to Interject uses a select statement. More than one can be returned at a time to reduce the connections needed to fully populate a complex report.
+* **Select statements:** Returning data to Interject uses a select statement. More than one can be returned at a time to reduce the connections needed to fully populate a complex report. Notice the procedure returns 3 select statements, each representing a different data set return to Interject.
 
 ### Testing the Stored Procedure
 
-It is important to test the stored procedure in the database before testing through the Interject platform. The example code includes a test SQL statement that can be executed in a new query, as shown below. Be sure to change the procedure name to match your own.
+It is important to test the Stored Procedure in the database before testing through the Interject platform. The example code includes a test SQL statement that can be executed in a new query, as shown below. Be sure to change the procedure name to match your own.
 
 <button class="collapsible">Example Test Script</button>
 <div markdown="1" class="panel">
