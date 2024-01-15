@@ -3,6 +3,7 @@ title: Multi-Factor Authentication (MFA)
 layout: custom
 keywords: [2fa, login, credentials, security, email confirmation, authenticator app]
 headings: ["Overview", "Enable MFA for a User", "Login With the Authenticator App", "Login With an Email Confirmation"]
+links: ["https://docs.gointerject.com/wAbout/Federated-Login-Design.html", "https://portal.gointerject.com/login.html"]
 description: Multi-factor authentication (MFA), also known as two-factor authentication (2FA), is a security process that requires users to provide two or more authentication factors to verify their identity before gaining access to a system or resources.
 ---
 * * *

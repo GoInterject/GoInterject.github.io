@@ -3,6 +3,7 @@ layout: custom
 title:  Java API Setup
 keywords: [data api, web api, java, setup, spring framework]
 headings: ["Overview", "Requirements", "Get the Code", "Setup", "Run API", "Change Host and Port", "Development Docs", "Interject Docs"]
+links: ["https://spring.io/projects/spring-framework", "https://www.oracle.com/java/technologies/downloads/", "https://maven.apache.org/download.cgi", "mailto:help@gointerject.com", "https://github.com/GoInterject/ids-java-api/archive/refs/heads/main.zip", "/wIndex/jColumnDef.html", "/wPortal/Data-Portals.html#overview-of-parameters", "/wIndex/ReportFixed.html", "/wIndex/ReportRange.html", "/wIndex/ReportSave.html", "/wIndex/ReportVariable.html", "/wGetStarted/L-Dev-Error-Handling.html"]
 description: Shows how to setup an INTERJECT Java data api.
 ---
 

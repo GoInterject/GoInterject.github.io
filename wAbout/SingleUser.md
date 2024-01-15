@@ -3,6 +3,7 @@ title: Installing - Single User
 layout: custom
 keywords: [Installing, Install, Basic]
 headings: ["Overview", "Installing Interject"]
+links: ["/wAbout/SharedComputer.html", "https://portal.gointerject.com/login.html", "https://portal.gointerject.com/invite.html?mode=create", "/wAbout/Logging-In.html#before-using-interject-heres-how-to-login", "mailto:help@gointerject.com"]
 description: This is the base installer
 ---
 * * *

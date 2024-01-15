@@ -3,6 +3,7 @@ title: Drill Through Data
 layout: custom
 keywords: [Account, Epicor, Companies]
 headings: ["Drilling Between Reports"]
+links: ["/images/Interject-Financials/InterjectFinancialsDrill.png"]
 description: Interject™ Financials for Epicor Enterprise. The basics of drilling through data to a more detailed report.
 ---
 

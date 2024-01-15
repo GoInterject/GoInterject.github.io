@@ -3,6 +3,7 @@ title: "Create: Customer Aging Detail Report"
 layout: custom
 keywords: [create, customer aging, detail, report, range, variable, ReportDefaults, Northwind customers, walkthrough]
 headings: ["Overview", "Building the Report", "ReportRange()", "ReportVariable()", "ReportDefaults()", "Formatting the Report"]
+links: ["/wAbout/Customer-Aging.html", "/wIndex/ReportRange.html", "/wIndex/ReportVariable.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wIndex/ReportRange.html", "/wIndex/ReportRange.html", "/wIndex/ReportVariable.html", "/wIndex/ReportDefaults.html", "/wIndex/Event-Functions-Landing.html", "/wAbout/ReportLibraryLinks.html"]
 description: This example uses the Customer Aging demo to show the creation of a Customer Aging Detail report that will have variable customer subtotaled sections, each having their respective invoice detail. You will use both the ReportRange() and ReportVariable() formulas to create the output.
 ---
 * * *

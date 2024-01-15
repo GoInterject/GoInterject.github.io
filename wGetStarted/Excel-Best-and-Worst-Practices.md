@@ -3,6 +3,7 @@ title: Excel Best and Worst Practices
 layout: custom
 keywords: [slow, Excel, best practice, standards, issue, CPU, usage, VBA]
 headings: ["Overview", "Think of Excel as a Better Browser", "Record Counts", "Empty Cell Formatting", "Conditional Formatting", "Limiting the Ranges Used in Interject Report Formulas", "Watch for the Last Row and Last Column", "Images", "File Type", "Pivot Tables", "VBA Macros"]
+links: ["https://support.microsoft.com/en-us/office/cleanup-cells-in-your-workbook-edcc579f-b82f-495b-8d31-e786cd11717b", "/wIndex/ReportRange.html", "/wIndex/ReportRange.html", "https://support.microsoft.com/en-us/office/change-the-default-resolution-for-inserting-pictures-in-office-f4aca5b4-6332-48c6-9488-bf5e0094a7d2#ID0EBF=Windows"]
 description: Defines the best practices of using Excel with Interject.
 ---
 * * *

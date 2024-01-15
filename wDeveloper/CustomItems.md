@@ -3,6 +3,7 @@ title: Custom Items
 layout: custom
 keywords: [custom commands, execute, sql]
 headings: ["Overview", "Setup Data Portal", "System Parameters", "Formula Parameters", "Description and Status", "Running the Custom Item", "Example Stored Procedure"]
+links: ["/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#custom-commands", "https://docs.gointerject.com/wPortal/INTERJECT-Roles.html#clientadmin-role", "https://docs.gointerject.com/wPortal/INTERJECT-Roles.html#customitems-role", "/wPortal/Data-Portals.html", "https://docs.gointerject.com/wPortal/Data-Portals.html#system-parameters-options", "/wPortal/Data-Portals.html#overview-of-parameters"]
 description: The Custom Item feature of Interject allows a user to interact with a database stored procedure or web service to trigger an event.  It could be used to trigger a special data update process, toggle a switch such as temporarily turning off a report tool for standard users, or running a data maintenance routine.
 ---
 * * *

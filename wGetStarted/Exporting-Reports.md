@@ -3,6 +3,7 @@ title: Exporting Reports
 layout: custom
 keywords: [export, non-editable, PDF, send, distribute, publish, non-changeable]
 headings: ["Overview", "Publishing Reports", "Exporting Reports", "Quick Export and PDF", "Basic Distribution", "Advanced Distribution"]
+links: ["/wAbout/Report-Library-Basics.html", "/wAbout/Tabular-vs-Data-Cells.html", "/wAbout/Report-Library-Basics.html", "/wGetStarted/L-Export-QuickExportAndPDF.html", "/wGetStarted/L-Export-BasicDist.html", "/wGetStarted/L-Export-AdvancedDist.html"]
 description: How to export reports either individually or in a batch by publishing or exporting.
 ---
 * * *

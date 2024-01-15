@@ -3,6 +3,7 @@ title: "Create: Special Column Definitions"
 layout: custom
 keywords: [hyperlink, comment, dropdown, list, column definitions, validation, walkthrough]
 headings: ["Overview", "Special Cell Value Comment", "Special Cell Value Hyperlink", "Special Cell Value Validation List", "Stacking Special Cell Types"]
+links: ["/wGetStarted/L-Modify-CustomerAging.html"]
 description: Interject's Special Column Definitions are a convenient way you can customize a cell and provide additional features to your reports.
 ---
 * * *
@@ -60,8 +61,6 @@ Place your cursor over cell **H27** and review the comment that is placed in the
 **Note:** Not all of the cells have been changed, and so there is no comment created for those cells.
 
 ### Special Cell Value Hyperlink
-
-Excel has two types of hyperlinks, the hyperlink property and the Hyperlink() spreadsheet function. This feature uses the spreadsheet function in the report so users can click to open specific web pages. In this example you will use Interject to add hyperlinks to the address column of the report that links the address to a google map search.
 
 Select cell **C2** and input **CompanyName hlink:MapsURL**.
 

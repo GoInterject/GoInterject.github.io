@@ -3,6 +3,7 @@ title: "Develop: Customer Orders"
 layout: custom
 keywords: [developer, example, customer orders, walkthrough, SQL]
 headings: ["Overview", "Verifying the Data Connection", "Copy the Data Portal", "Creating the Stored Procedure", "Create the Report"]
+links: ["/wGetStarted/L-Dev-CustomerAging.html", "/wGetStarted/Drilling-Between-Reports.html", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-portal", "https://portal.gointerject.com/DataPortals.html", "mailto:info@gointerject.com", "/wGetStarted/L-Create-CustomerOrders.html"]
 description: In this example, you will create a second report, Customer Orders, that can be drilled to from the Customer Aging Report you built in the last example. This uses a report range.
 ---
 * * *

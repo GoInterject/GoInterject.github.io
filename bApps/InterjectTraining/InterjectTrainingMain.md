@@ -3,6 +3,7 @@ title: Interject Training
 layout: custom
 keywords: [Training]
 headings: ["Overview", "Capital Module", "Budget Module", "Projections Module"]
+links: ["/bApps/InterjectTraining/Capital/CapitalModule.html", "/bApps/InterjectTraining/Capital/CapitalInputReport.html", "/bApps/InterjectTraining/Budget/BudgetModule.html", "/bApps/InterjectTraining/Projections/ProjectionsModule.html"]
 description: There are many modules that Interject offers to help with managing money and other company resources. In this section, you will find the three core modules and the tools they offer to give better visibility and control over the resources under your jurisdiction.
 ---
 

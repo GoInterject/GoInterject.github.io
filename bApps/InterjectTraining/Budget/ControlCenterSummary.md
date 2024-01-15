@@ -3,6 +3,7 @@ title: Control Center Summary
 layout: custom
 keywords: [Training, Budget, Control Center]
 headings: ["Overview", "Control Center Tool", "Tools Controlled by the Control Center"]
+links: ["/bApps/InterjectTraining/Budget/ControlCenter.html", "/bApps/InterjectTraining/Budget/ControlCenterSecurity.html"]
 description: The Budget Change Query Tool provides different views to how budgets have changed over the budget season.
 ---
 

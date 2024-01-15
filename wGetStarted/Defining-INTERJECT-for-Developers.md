@@ -3,7 +3,7 @@ title: Defining Interject for Developers
 layout: custom
 keywords: [developer, platform, definition, workflow, how it works]
 headings: ["Overview", "Two Basic Concepts Go a Long Way", "Data Workflow"]
-description: Before you get into the details and hands-on examples for developers, it is important to explain how the Interject platform works. Interject directly links a database stored procedure or website API to the Excel interface, in a similar way that middle-tier logic connects to a website application.
+links: []
 ---
 * * *
 

@@ -3,6 +3,7 @@ title: Customer Aging
 layout: custom
 keywords: [customer, aging, modify, drill, save, detail, pivot table, walkthrough]
 headings: ["Overview", "Navigating to the Aging Summary", "Drilling Into the Aging Detail", "Saving the Data", "Moving to a Pivot Table"]
+links: ["/wAbout/Report-Library-Basics.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wAbout/Inventory-Reports.html"]
 description: In this walkthrough, you will open a basic aging summary and modify it to fit your specific needs. You will then drill into the details tab, take notes on any unpaid invoices, then save them back to the database.
 ---
 * * *
@@ -10,8 +11,6 @@ description: In this walkthrough, you will open a basic aging summary and modify
 ## Overview
 
 This lab is a basic Customer Aging demonstration for tracking invoices for multiple customers. In this walkthrough, you will open a basic aging summary and modify it to fit your specific needs. You will then drill into the details tab, take notes on any unpaid invoices, then save them back to the database. This Detail report will also provide the data needed to drill further into each order and customer.
-
-You can go directly to any part of this walkthrough by clicking one of the links below.
 
 <blockquote class=lab_info>
  If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 1 Real World Walkthoughs > Lab 1.1 Customer Aging.

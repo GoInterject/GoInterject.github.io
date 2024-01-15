@@ -3,6 +3,7 @@ title: WebView2 Installation
 layout: custom
 keywords: [login]
 headings: ["Overview", "Verifying Installation", "Via Windows Settings", "Via Control Panel", "Installation", "Repair"]
+links: ["https://learn.microsoft.com/en-us/microsoft-edge/webview2/", "https://developer.microsoft.com/en-us/microsoft-edge/webview2/", "https://learn.microsoft.com/en-us/microsoft-edge/webview2/concepts/distribution"]
 description: Interject uses WebView2 for its login screen. If WebView2 is not installed, nothing will appear when you click the login button. Most systems have WebView2 already installed. If, however, it is not, you can install WebView2 manually.
 ---
 * * *

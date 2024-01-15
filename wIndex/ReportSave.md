@@ -3,6 +3,7 @@ title: ReportSave()
 layout: custom
 keywords: [ReportSave, save, function, formula, data]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Embeddable Helper Functions"]
+links: ["/wGetStarted/L-Dev-CustomerCreditSave.html", "https://docs.gointerject.com/wIndex/jDataPortal.html", "https://docs.gointerject.com/wIndex/Param.html", "/wTroubleshoot/Reports.html#validation-report-for-pullsave-events", "/wIndex/jDataPortal.html", "Param.html"]
 description: The ReportSave function will use a designated DataPortal to save data in a worksheet to a data source.
 ---
 * * *

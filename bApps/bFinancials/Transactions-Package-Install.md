@@ -3,6 +3,7 @@ title: Transactions Package Install
 layout: custom
 keywords: [Epicor, SQL MGT Studio, tools]
 headings: ["Steps Required for Transactions Package"]
+links: ["/bApps/bFinancials/Technical-Install.html", "/images/A-SQL-Installation/newDB.png", "/images/A-SQL-Installation/01.png", "/images/A-SQL-Installation/MgtStudioPointTo.png", "https://drive.google.com/file/d/1hmX-cbVzp-pbqPChEBWKkO-DS2752-Jo/view?usp=sharing"]
 description: The following setup instructions will walk you through installation of the slim package of the Financials - Epicor Enterprise package which contains only transactions tools by Interject.
 ---
 

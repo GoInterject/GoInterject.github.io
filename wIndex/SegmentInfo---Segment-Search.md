@@ -3,6 +3,7 @@ title: SegmentInfo - Segment Search
 layout: custom
 keywords: [segmentinfo, segment search, code, function, columns]
 headings: ["Overview", "Segments Parameters", "Available Columns"]
+links: []
 description: Segments is a Data Portal which allows you to filter for every segment within your chart of accounts and allows you to use your groupings within your filter choices. 
 ---
 * * *

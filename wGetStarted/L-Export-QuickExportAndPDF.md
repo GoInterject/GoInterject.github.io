@@ -3,7 +3,7 @@ title: "Export: Quick Export and PDF"
 layout: custom
 keywords: [quick, export, PDF, publish, distribute, data cells, walkthrough]
 headings: ["Overview", "Quick Export", "Quick PDF"]
-description: The Quick Export and PDF method is the simplest way of distributing. The purpose of Quick Export is to build a new workbook from the current workbook and remove all the external links and Data Cell formulas so users without Interject can view the report.
+links: ["/wAbout/Tabular-vs-Data-Cells.html", "/wAbout/Tabular-vs-Data-Cells.html", "/wAbout/Financial-Report.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#export-book", "https://learn.microsoft.com/en-us/troubleshoot/dynamics/gp/have-microsoft-save-pdf-xps-add-in", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#export-book", "/wGetStarted/L-Export-BasicDist.html"]
 ---
 * * *
 

@@ -3,6 +3,7 @@ title: Real-World Walkthroughs
 layout: custom
 keywords: [use case]
 headings: ["Overview", "Customer Aging", "Inventory Reports", "Financial Reports"]
+links: ["/wAbout/Customer-Aging.html", "/wAbout/Inventory-Reports.html", "/wAbout/Financial-Report.html"]
 description: Real world use cases for the Interject product.
 ---
 * * *

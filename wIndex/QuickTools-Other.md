@@ -3,6 +3,7 @@ title: Quick Tools - Other Tools
 layout: custom
 keywords: [Quick Tools, Other Tools, Unique List from Selection, Unhide All Sheets]
 headings: ["Overview", "Unique List from Selection", "Unhide All Sheets"]
+links: []
 description: The Other Tools within Quick Tools are a collection of miscellaneous tools.
 ---
 * * *

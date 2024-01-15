@@ -3,13 +3,12 @@ title: The Interject Website Portal
 layout: custom
 keywords: [website portal, account, connection strings]
 headings: ["Overview", "Logging In to the Interject Website Portal", "Data Connections", "Data Portals", "User Profile"]
+links: ["/wPortal/Logging-In-to-Website-Portal.html", "/wPortal/Data-Connections.html", "/wPortal/Data-Portals.html", "https://www.connectionstrings.com/", "/wPortal/User-Profile.html"]
 description: The Interject website portal is a central place to manage Interject client settings and user profiles.
 ---
 * * *
 
 ## Overview
-
-The Interject website portal is a central place to manage Interject client settings and user profiles. The most common use is to manage users, data portals, and data connections. Data portals and connections support the Interject reporting and save back functions. This section will review all areas of the website portal. Go directly to any topic by clicking one of the links below. The database connection can support MS SQL Server OLEDB as well as ODBC. ODBC allows connection to any other relational database. Currently, Interject only supports direct connections with databases that support stored procedures. This includes Oracle, MySQL, MariaDB and many others.
 
 For all other data sources, a custom website API can be created to connect the data to Interject. This is very similar to how a website application accesses its data layer. Using an API you can connect to PostgreSQL and noSQL databases like MongoDB. You can also use an API to connect to other cloud data APIs such as provided by SalesForce, Intacct, Netsuite, Quicken and many other cloud software services.
 

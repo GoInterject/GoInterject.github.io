@@ -3,6 +3,7 @@ title: jWorkbookProperty()
 layout: custom
 keywords: [jWorkbookProperty, helper, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Workbook Property List"]
+links: ["/wGetStarted/L-Create-InventoryFixed.html#jworkbookproperty", "/wAbout/Report-Library-Basics.html#using-the-report-library"]
 description: The jWorkbookProperty function extracts information from the properties of the workbook.
 ---
 * * *

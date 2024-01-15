@@ -3,6 +3,7 @@ title: "Create: Working with Pivot Tables"
 layout: custom
 keywords: [pivot table, walkthrough]
 headings: ["Overview", "Building the Support Tab", "Building the Pivot Table", "Customizing the Pivot Table"]
+links: ["/wAbout/Customer-Aging.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wIndex/ReportRun.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wAbout/Customer-Aging.html#CustomerAging-pivot"]
 description: Pivot tables are a flexible and valuable tool for analyzing data in Excel. Interject makes it easier to scale and distribute pivot tables. In this walkthrough you will set up a pivot table based on an Interject report.
 ---
 * * *

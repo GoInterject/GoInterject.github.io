@@ -3,6 +3,7 @@ title: Budget Upload Tab
 layout: custom
 keywords: [Training, Budget, Budget Upload Tab]
 headings: ["Overview", "Uploading to more than one district at a time", "Drop Budget numbers in without pulling first", "Do I have security rights to Save from the Budget Upload tab?", "After Corp Cutoff and after BOD", "Common Save Errors"]
+links: ["/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#budget-tools-and-the-control-center", "/bApps/InterjectTraining/Budget/BudgetChangeQueryToolSummary.html", "/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html", "/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html", "/bApps/InterjectTraining/Budget/BudgetChangeQueryToolSummary.html"]
 description: Bulk upload multiple Budget accounts at the same time, in a simple list format.
 ---
 

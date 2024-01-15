@@ -3,6 +3,7 @@ title: Security Best Practices
 layout: custom
 keywords: [standards]
 headings: ["Overview", "Database Connections and Windows Authentication", "Row Level Security for Reports and Apps", "Template Security", "Testing User Access"]
+links: ["https://docs.gointerject.com/wIndex/Request-Context-Parse.html", "/wAbout/Report-Library-Basics.html#status", "/wAbout/Report-Library-Basics.html"]
 description: Managing security is a key component of the Interject platform, and there are several areas to understand. Security involves both the row level security that can exist in reports and apps and how the middle tier objects are secured. Security also includes which spreadsheet report template can be seen by which users. The paragraphs below discuss each of these areas, best practices in building, and methods to test user access.
 ---
 * * *

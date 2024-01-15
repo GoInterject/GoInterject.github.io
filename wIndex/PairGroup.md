@@ -3,6 +3,7 @@ title: PairGroup()
 layout: custom
 keywords: [PairGroup, helper, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Usable In These Functions"]
+links: ["Pair.html", "Pair.html", "/wGetStarted/L-Drill-CustomerAging.html", "https://docs.gointerject.com/wIndex/Pair.html", "ReportDefaults.html", "ReportDrill.html"]
 description: The PairGroup function will active all [Pair()](Pair.html) functions defined within.
 ---
 * * *

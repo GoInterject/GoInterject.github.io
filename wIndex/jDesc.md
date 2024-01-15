@@ -3,6 +3,7 @@ title: jDesc()
 layout: custom
 keywords: [jDesc, segment, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition"]
+links: []
 description: This function is used to look up a context description based on a specific segment. 
 ---
 * * *

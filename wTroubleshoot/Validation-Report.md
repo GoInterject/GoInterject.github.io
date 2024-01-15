@@ -3,6 +3,7 @@ title: Validation Report
 layout: custom
 keywords: [report, error, user support, validation report, formula, parameters, functions, detailed information, code, events, triggers]
 headings: ["Overview", "Validation Report Options", "Pull/Save Data Event", "Drill Event", "Clear Pull/Save Data Event", "Go Back Event", "Data Cell Functions", "Data Cell Last Change Report", "Cell Formula Review"]
+links: ["/wIndex/Excel-Function-Index.html", "/wAbout/Tabular-vs-Data-Cells.html", "/wIndex/Event-Functions-Landing.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#advanced-menu-items", "/wIndex/Event-Functions-Landing.html", "/wIndex/ReportDrill.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#return-from-drill", "/wAbout/Tabular-vs-Data-Cells.html#data-cells", "/wIndex/Report-Formula-Reviews.html#cell-formula-review"]
 description: The Validation Report feature displays detailed information about Interject pull, save, and drill functions, data cell functions, and events.
 ---
 * * *

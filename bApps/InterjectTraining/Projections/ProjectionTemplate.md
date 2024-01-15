@@ -3,6 +3,7 @@ title: Projection Template
 layout: custom
 keywords: [Training, Projections, Projection Template]
 headings: ["Overview", "Input Field Explanations", "Retain Rows and how it works", "Summary and Detail level accounts", "Pulling Summary and Detail levels together", "Saving Summary and Detail levels together", "Dynamic Projection Columns", "The Autocalcs", "Do I have security rights to Save from the Projections Template?", "Common Save Errors"]
+links: ["/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#projections-tools-and-the-control-center"]
 description: The Local Projections Template is used to save to a district's Projections for a given month. This template closely matches the Local Budget Template in design and function.
 ---
 

@@ -3,6 +3,7 @@ title: "Create: Inventory Variable"
 layout: custom
 keywords: [variable, report, inventory, ReportGrouping, walkthrough]
 headings: ["Overview", "Report Variable", "Final Touches", "ReportGrouping()"]
+links: ["/wIndex/ReportVariable.html", "/wAbout/Inventory-Reports.html", "/wAbout/Report-Library-Basics.html", "/wIndex/Param.html", "/wIndex/QuickTools-Panes.html", "/wIndex/ReportGrouping.html", "/wIndex/Event-Functions-Landing.html", "/wAbout/ReportLibraryLinks.html"]
 description: The ReportVariable() function directs data into multiple specified ranges of a report that can grow and shrink with the data. It is ideal for a financial report or any report that has subtotaled sections.In this example, you will use the report seen in the Inventory Walkthrough. Once completed all rows of the report Inventory By Category with Detail will be populated with a single ReportVariable() function.
 ---
 * * *

@@ -3,6 +3,7 @@ title: Transaction Reports
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: ["Fill Out Report Parameters and Pull Data", "Drill Through Detail"]
+links: ["https://docs.gointerject.com/bApps/bFinancials/The-Basics.html", "/images/Train/TransactionRpt1.png", "/images/Train/TransactionRptDrill.png", "/images/Train/TransactionRptDrill2.png"]
 description: Step by step guide on using Interject Financials - Epicor Enterprise Transaction reports.
 ---
 

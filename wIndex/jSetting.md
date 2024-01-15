@@ -3,6 +3,7 @@ title: jSetting()
 layout: custom
 keywords: [jSetting, helper, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition"]
+links: []
 description: The jSetting function is a simple way to create a Tag/Value pair that can be used internally by the Interject system.
 ---
 * * *

@@ -3,6 +3,7 @@ layout: custom
 title:  Developer Overview
 keywords: [web api, data]
 headings: ["Overview", ".Net API", "Python API", "Java API"]
+links: ["/wApi/dot-net-api-setup.html", "/wApi/python-api-setup.html", "/wApi/java-api-setup.html"]
 description: Interject provides 3 web APIs built on 3 different platforms. These Web APIs serve as a bridge between custom data sources and the Interject Excel Addin, allowing them to request and share information, perform actions, and deliver real-time updates.
 ---
 

@@ -3,6 +3,7 @@ title: Budget Reports
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: []
+links: ["/images/Train/Budget1.png", "/images/Train/Budget2.png"]
 description: Step by step guide on adding budget columns to your report templates.
 ---
 

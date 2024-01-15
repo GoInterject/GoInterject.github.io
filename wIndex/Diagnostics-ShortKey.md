@@ -3,6 +3,7 @@ title: Diagnostics - Change ShortKey
 layout: custom
 keywords: [Diagnostics, Shortkey Changes, Configuration, Config, hotkey, keystrokes, shortcut, keyboard]
 headings: ["Overview", "Input Examples", "Defaults", "Multiple Input Example"]
+links: ["/wIndex/INTERJECT-Hotkey-Index.html#default-hotkey-index"]
 description: The "Change ShortKey" feature allows users to change the shortcut key for certain Interject actions.
 ---
 * * *

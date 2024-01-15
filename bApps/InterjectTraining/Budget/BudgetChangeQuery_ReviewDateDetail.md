@@ -3,6 +3,7 @@ title: Review Date Detail Tab
 layout: custom
 keywords: [Training, Budget, Budget Change Query]
 headings: ["Overview", "Review Type Options"]
+links: []
 description: This tab of the Budget Change Query tool shows the budget amounts per account. Available filters allow the results to be restricted by Review Date Bucket, and many other options.
 ---
 

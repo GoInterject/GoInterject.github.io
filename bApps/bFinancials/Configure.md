@@ -3,6 +3,7 @@ title: Configure
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: ["Schedule Manager", "Data Upload Tool", "Use Initial Config Tool to Perform the Initial Setup", "While logged into Interject, open the configuration tool from the report library.", "Navigate from the Welcome Screen through the initial steps", "Setup/Review Year Name", "Setup/Review Segments", "Account Rollup - Activate Seeded DEMO Config", "Governed Account Rollups", "Ad Hoc Account Rollups", "Other Rollups", "Converting FRx Row Definitions"]
+links: ["/images/Config/Scheduler.png", "/images/Config/UploadTool.png", "/images/Config/ConfigReport.png", "/images/Config/ConfigWelcome.png", "/images/Config/YearNames.png", "/images/Config/ConfirmYears.png", "/images/Config/YearNames.png", "/images/Config/SegmentSetup.png", "/images/Config/RollUpRev.png", "/images/Config/RollupMg.png", "/images/Config/RollupVal.png", "/images/Config/PLVal.png"]
 description: Step by step guide on setting up new and pre-packaged reports in the Interject for Financials App for Epicor Enterprise.
 ---
 

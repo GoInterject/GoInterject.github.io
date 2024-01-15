@@ -3,6 +3,7 @@ title: "Create: Financial Variable Report"
 layout: custom
 keywords: [create, financial, variable, report, financial cube, fincube, walkthrough]
 headings: ["Overview", "Pulling Financial Data With FinCube Data Portal", "Preparing the Row Format", "Converting ReportRange() to ReportVariable()", "Final Formatting"]
+links: ["/wIndex/ReportVariable.html", "/wIndex/FinCube---The-Financial-Cube.html", "/wIndex/ReportRange.html", "/wIndex/ReportRange.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder", "/wIndex/FinCube---The-Financial-Cube.html", "/wIndex/FinCube---The-Financial-Cube.html", "/wIndex/FinCube---The-Financial-Cube.html", "/wIndex/FinCube---The-Financial-Cube.html", "/wIndex/jColumnDef.html", "/wIndex/FinCube---The-Financial-Cube.html", "/wAbout/ReportLibraryLinks.html"]
 description: In this example you are going to use the Financial Cube (FinCube) Data Portal to create a financial statement from scratch. First you will use the ReportRange() formula to review the financial group summaries for a location. With the financial groups retrieved, you will than expand to create a subtotaled financial statement so each subtotaled detail will expand and shrink with the data.
 ---
 * * *

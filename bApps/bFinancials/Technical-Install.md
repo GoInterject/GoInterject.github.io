@@ -3,6 +3,7 @@ title: Data Tier Install
 layout: custom
 keywords: [Epicor, data tier, data load, FRx, configurations]
 headings: ["Steps Required for Technical Install"]
+links: ["https://drive.google.com/file/d/1yqewNlhX4tm5jDo-J1lnEjz8qe-w9gqO/view?usp=sharing", "https://drive.google.com/file/d/1UcSwEf_oKjr3eVSSUJKyzZyB60YGJsaM/view?usp=sharing", "/images/A-SQL-Installation/newDB.png", "/images/A-SQL-Installation/01.png", "/images/A-SQL-Installation/MgtStudioPointTo.png"]
 description: After you get access to Interject, there are three parts to installing Interject Financials - Epicor Enterprise. First is the initial data tier install, then the data load from Epicor Enterprise and FRx, then the actual report configurations in the Interject application.
 ---
 

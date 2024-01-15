@@ -3,6 +3,7 @@ title: Data Portals
 layout: custom
 keywords: [data portals, data connection, setup, system parameters]
 headings: ["Overview", "Setting up a Data Portal", "Overview of Parameters", "Formula Parameters", "System Parameters", "Adding New Parameters", "System Parameters Options"]
+links: ["/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#custom-commands", "https://docs.gointerject.com/wIndex/Request-Context-Parse.html"]
 description: A Data Portal uses a Data Connection to connect to either a stored procedure within a database or to a website API controller in a customer website API.
 ---
 * * *

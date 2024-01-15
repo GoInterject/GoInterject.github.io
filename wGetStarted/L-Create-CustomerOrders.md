@@ -3,6 +3,7 @@ title: "Create: Customer Orders Report"
 layout: custom
 keywords: [report, create, multi-row, customer orders, walkthrough, northwind customer orders, jFreezePanes]
 headings: ["Overview", "Building the Report", "Customizing the Report", "Editing the Report Function", "Adding Multi-Row Range:", "Final Steps"]
+links: ["/wIndex/ReportRange.html", "/wIndex/jFreezePanes.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder", "/wIndex/Common-Dataportal-Index.html", "/wPortal/INTERJECT-Ribbon-Menu-Items.html#pulldata", "/wIndex/ReportRange.html", "/wIndex/jFreezePanes.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools", "/wAbout/ReportLibraryLinks.html"]
 description: This page illustrates the process of building a Customer Order report from scratch and uses the multi-row option to provide a more advanced presentation.
 ---
 * * *

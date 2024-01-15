@@ -3,6 +3,7 @@ title: jCell/jCellN()
 layout: custom
 keywords: [jcell, account, segment, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition"]
+links: ["/wIndex/jAcct.html", "/wIndex/jAcct.html", "/wIndex/jAcct.html", "/wIndex/jAcct.html"]
 description: jCell retrieves data based on the provided parameters. 
 ---
 * * *

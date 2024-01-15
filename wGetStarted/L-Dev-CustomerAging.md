@@ -3,6 +3,7 @@ title: "Develop: Customer Aging"
 layout: custom
 keywords: [developer, example, customer aging, SQL, data portal, data connection, walkthrough]
 headings: ["Overview", "Setting up the Data Connection", "Setting up the Data Portal", "Setting up Formula Parameters", "System Parameters", "Creating the Stored Procedure", "Create the Report"]
+links: ["/wAbout/Customer-Aging.html", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "https://portal.gointerject.com", "/wPortal/L-Database-Connection.html#testing-the-connection-string-from-within-excel", "https://portal.gointerject.com", "/wPortal/Data-Portals.html", "/wPortal/Data-Portals.html", "/wPortal/The-INTERJECT-Website-Portal.html", "mailto:info@gointerject.com", "/wGetStarted/L-Create-CustomerAging.html", "/wGetStarted/L-Dev-CustomerOrders.html"]
 description: On this page, you will create a simple data pull using the Customer Aging Report. It will guide you on how to build connections and data portals as well as cover the SQL stored procedure used to pull the data.
 ---
 * * *

@@ -3,6 +3,7 @@ title: "Create: Building jDropdowns"
 layout: custom
 keywords: [jDropdown, function, hyperlink, custom list, walkthrough]
 headings: ["Overview", "Preparing the Report", "Adding a Named Range", "Creating the Formula", "Adding a Special Hyperlink", "Reviewing the Report Changes", "Creating a Custom jDropdown List"]
+links: ["/wIndex/jDropdown.html", "/wGetStarted/L-Create-CustomerAging.html", "https://docs.gointerject.com/wGetStarted/L-Dev-jDropdowns.html", "/wAbout/Report-Library-Basics.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "https://docs.gointerject.com/wAbout/Basics-of-Report-Formulas.html#column-definitions", "https://docs.gointerject.com/wIndex/jDropdown.html", "/wGetStarted/L-Dev-jDropdowns.html"]
 description: The jDropdown formula is used for filtering on multiple parameters.
 ---
 * * *

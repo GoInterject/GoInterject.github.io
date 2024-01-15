@@ -3,6 +3,7 @@ title: "Develop: Insert &amp; Delete Data Save"
 layout: custom
 keywords: [developer, example, walkthrough, SQL, SSMS, Data Portal, data connection, data save, insertions, deletions]
 headings: ["Overview", "Setting Up the Data Connection", "Setting Up the Data Portal", "Setting Up the Report", "Setting Up the Soft Delete", "Setting Up the Stored Procedure", "Modifying the Stored Procedure", "Data to Process", "Inserting the Data to Process", "Update DataToProcess", "ChangeLog", "Merge Select", "Merge Update", "Merge Insert", "Merge Output", "Update ChangeLog", "Set Message To User", "Final Stored Procedure", "Testing the Stored Procedure", "Testing the ReportSave"]
+links: ["/wDeveloper/L-Dev-EditingDataSave.html", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "https://portal.gointerject.com", "/wPortal/Logging-In-to-Website-Portal.html", "/wIndex/Request-Context-Parse.html", "/wDeveloper/L-Dev-EditingDataSave.html#setting-up-the-report", "/wGetStarted/L-Dev-CustomerAging.html#creating-the-stored-procedure", "/wDeveloper/L-Dev-EditingDataSave.html#final-stored-procedure", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#overview"]
 description: In this example you will modify the Editing Data Save using the Customer Aging Detail report and the Northwind Customers data source to add or delete a customer.
 ---
 * * *

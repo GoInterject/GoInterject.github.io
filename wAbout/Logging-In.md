@@ -3,6 +3,7 @@ title: "Logging In/Out: Individual User"
 layout: custom
 keywords: [login, ribbon, logout, new login, credentials, accounts, user]
 headings: ["Overview", "Initial Interject Login", "New Login", "Logging Out", "Log Back In", "Switch Accounts", "Forgetting Login Credentials"]
+links: []
 description: Logging in is simple and fast! Interject will remember your login and sign you in automatically subsequent visits. You can also add multiple logins and switch accounts easily.
 ---
 * * *

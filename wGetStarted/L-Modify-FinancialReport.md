@@ -3,6 +3,7 @@ title: "Modify: Financial Report"
 layout: custom
 keywords: [modify, alter, change, YTD, year to date, budget, actuals, comparison, jColumnDef, PL Trend, walkthrough]
 headings: ["Overview", "Using Column Definitions", "Preparation Cleanup", "Setting up Budget to Actual Comparison Report", "Creating a Year to Date Budget to Actual Comparison Report"]
+links: ["/wAbout/Report-Library-Basics.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#diagnostics", "/wIndex/jColumnDef.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wAbout/ReportLibraryLinks.html"]
 description: Modify a monthly trend report which could easily be modified to accommodate a budget-to-actual comparison report, showing monthly and year-to-date differences.
 ---
 * * *

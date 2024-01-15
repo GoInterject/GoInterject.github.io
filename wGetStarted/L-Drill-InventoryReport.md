@@ -3,6 +3,7 @@ title: "Drill: Inventory Report"
 layout: custom
 keywords: [drill, report, hyperlinks, walkthrough]
 headings: ["Overview", "Unfreezing the Report", "Setting up the Drill", "Creating Hyperlinks as Drills"]
+links: ["/wAbout/Inventory-Reports.html", "/wIndex/ReportDrill.html", "/wIndex/PairGroup.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "[/wGetStarted/L-Drill-TheThreeWays.html#the-hyperlink-method](wGetStarted/L-Drill-FinancialReport.html"]
 description: In this example, you will view drilling between reports using the same Inventory reports created during the Real World Inventory Walkthrough. You will set up a drill from the Inventory by Category tab to the Inventory by Detail tab of the workbook. You will also set up a hyperlink so the drill can be more intuitive to users.
 ---
 * * *

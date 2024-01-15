@@ -3,6 +3,7 @@ title: FinCube - The Financial Cube
 layout: custom
 keywords: [fincube, segment filter, data portal, filter, forecast, CYA, columns, jColumnDef]
 headings: ["Overview", "Segment Filter Options", "Data Portal Parameters", "Examples using Show Credits and Reverse Signs Parameters", "Available Columns for the DataPortal", "Segment Columns", "Group Columns", "Amount Columns", "CYA Column Notation", "Options for Forecast", "ACT Column Notation", "jColumnDef() Column Notation"]
+links: ["/wIndex/jColumnDef.html"]
 description: The FinCube is a single Data Portal that supports a wide variety of reporting needs. It is included as part of the Interject Financials for Spreadsheets application, and many of the segments can be customized for specific needs.
 ---
 * * *
@@ -30,8 +31,6 @@ Before each parameter is described that can be used in a spreadsheet report, it 
 **Filter with Groups:** Groups are an important feature that make filtering easier and more manageable. The management of groups will be covered in a different page, but they are defined as a text string representing a filter. For example, instead of using a filter for **21000..22000** , set up a group called **Accounts Payable** to represent that filter. And if you set up a group for the filter **30000..32000** , and call it **Long Term Liabilities** , you can use a filter like **Accounts Payable, Long Term Liabilities** to get the defined accounts. There are preset groups for the **Segment 9--Period** parameter for Qtr1, and more can be added for monthly periods. The exclude option in #4 above can also be used, such as when you want to see Revenue accounts but exclude Intercompany clearing accounts. This could be noted as **Revenue,!Intercompany**.
 
 ### Data Portal Parameters
-
-The table below summarizes parameters available for the FinCube DataPortal. Parameters can either be filters set up by spreadsheet users, or they can place data in the spreadsheet. Each parameter links to a spreadsheet cell, or they can be manually specified in the reporting formula if not used in the report. The first 8 parameters of FinCube represent customizable segments. They are typically set up to match a company's chart of account segments and may include other reporting dimensions like companies or currencies.
 
 The table below explains each of the available parameters of the FinCube DataPortal. The example column shows what the typical segment signification, but note that these can be configured differently for every Interject installation.
 

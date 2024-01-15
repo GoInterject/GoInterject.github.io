@@ -3,6 +3,7 @@ title: Interject Shortkey Index
 layout: custom
 keywords: [hotkey, shortkey, keystrokes, shortcut, keyboard]
 headings: ["Overview", "Default Shortkey Index", "Default Commands & Shortkey Index", "Available Shortkeys", "Overriding Shortkeys Using Diagnostics", "Overriding Shortkeys for Individual Installs", "Overriding Shortkeys In a Shared Enterprise Environment"]
+links: ["/wAbout/Logging-In.html", "/wAbout/Report-Library-Basics.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#diagnostics", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#export-book", "/wIndex/Diagnostics-ShortKey.html"]
 description: Interject provides ways to increase productivity and work flow by utilizing shortkeys to quickly perform Interject actions.
 ---
 * * *

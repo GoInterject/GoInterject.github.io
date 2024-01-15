@@ -3,6 +3,7 @@ title: Addins Missing
 layout: custom
 keywords: [app, addin, missing, reset]
 headings: ["Overview", "Reset via System Tray", "Reset via Interject Addin Manager", "Reset via Developer Tab"]
+links: []
 description: Every once in a while, Excel Add-ins may end up missing or fail to load in Excel. If your Interject addin is missing, you can follow these steps to reset it.
 ---
 * * *

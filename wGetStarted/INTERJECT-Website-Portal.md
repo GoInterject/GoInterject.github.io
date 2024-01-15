@@ -3,6 +3,7 @@ title: Interject Website Portal
 layout: custom
 keywords: [data portal, portal, connection, data connection, server, API]
 headings: []
+links: ["/wPortal/L-Database-Connection.html", "/wPortal/L-Api-Connections.html", "/wPortal/The-INTERJECT-Website-Portal.html"]
 description: The Interject website portal is a central place to manage Interject client settings and user profiles. For an Interject developer, the most used areas of the Interject website portal are managing connections and data portals.
 ---
 * * *

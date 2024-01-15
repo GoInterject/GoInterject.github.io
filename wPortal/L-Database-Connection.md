@@ -3,6 +3,7 @@ title: "Portal: Database Connection"
 layout: custom
 keywords: [database connection, setting up, setup]
 headings: ["Overview", "Setup for a Data Connection to a Database", "Testing the Connection String From Within Excel"]
+links: ["https://portal.gointerject.com", "/wPortal/Logging-In-to-Website-Portal.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html"]
 description: This example shows how to connect to a database using a pre-existing data portal.
 ---
 * * *

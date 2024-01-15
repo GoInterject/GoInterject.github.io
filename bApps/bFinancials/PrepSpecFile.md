@@ -3,6 +3,7 @@ title: Install
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: ["Preparing the FRx Report Specification File for Migration", "Finding the FRx Report Specification File", "Converting the .F32 file to an MS Access .MDB File", "Remove the Database Password"]
+links: []
 description: Step by step guide on data tier, initial data load, FRx Migration, and other key processes of installing of Interject for Financials Epicor Enterprise.
 ---
 
