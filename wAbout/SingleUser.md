@@ -1,5 +1,6 @@
 ---
 title: Installing - Single User
+filename: "SingleUser.md"
 layout: custom
 keywords: [Installing, Install, Basic]
 headings: ["Overview", "Installing Interject"]

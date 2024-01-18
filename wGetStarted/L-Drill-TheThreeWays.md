@@ -1,5 +1,6 @@
 ---
 title: The Three Ways to Drill
+filename: "L-Drill-TheThreeWays.md"
 layout: custom
 keywords: [menu, hyperlink, drill, double click drill, Interject_DoubleClick, custom properties]
 headings: ["Overview", "The Menu Method", "The Hyperlink Method", "The Double Click Method"]

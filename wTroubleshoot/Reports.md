@@ -1,5 +1,6 @@
 ---
 title: Report Errors
+filename: "Reports.md"
 layout: custom
 keywords: [report, errors, validation report, user support, progress window, cell formula, sql test]
 headings: ["Overview", "Investigating Report Errors", "Validation Report for Interject Events", "Testing Data Connections", "View SQL Test for ActiveCell"]

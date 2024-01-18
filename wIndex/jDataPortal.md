@@ -1,5 +1,6 @@
 ---
 title: jDataPortal()
+filename: "jDataPortal.md"
 layout: custom
 keywords: [jDataPortal, helper, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Usable In These Report Formulas"]

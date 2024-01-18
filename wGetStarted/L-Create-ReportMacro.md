@@ -1,5 +1,6 @@
 ---
 title: "Create: Using Report Macro"
+filename: "L-Create-ReportMacro.md"
 layout: custom
 keywords: [report, macro, VBA, triggers, hooks, sub, routine, function]
 headings: ["Overview", "Setting up the Worksheet", "Using Report Macro", "Requirements for VBA", "Enabling VBA Hooks"]

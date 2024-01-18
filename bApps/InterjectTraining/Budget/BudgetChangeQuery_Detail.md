@@ -1,5 +1,6 @@
 ---
 title: Detail Tab
+filename: "BudgetChangeQuery_Detail.md"
 layout: custom
 keywords: [Training, Budget, Budget Change Query]
 headings: ["Overview"]

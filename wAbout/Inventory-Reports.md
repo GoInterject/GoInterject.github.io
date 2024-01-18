@@ -1,5 +1,6 @@
 ---
 title: Inventory Reports
+filename: "Inventory-Reports.md"
 layout: custom
 keywords: [inventory, reports, drill, detail, return, walkthrough]
 headings: ["Overview", "Navigating to the Inventory Reports", "Drilling to the Detail", "Return From Drill and Re-Drill", "Alternate Inventory Example"]

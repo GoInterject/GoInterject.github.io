@@ -1,5 +1,6 @@
 ---
 title: "Create: Protecting Sheets"
+filename: "L-Create-Protecting.md"
 layout: custom
 keywords: [password, protecting, unprotecting, locking, unlock, security]
 headings: ["Overview", "Interject Sheet Protector Roles", "Unlocking Cells", "Protecting the Sheet and Pulling Data", "Protecting Multiple Sheets", "Special Consideration for Column Groupings"]

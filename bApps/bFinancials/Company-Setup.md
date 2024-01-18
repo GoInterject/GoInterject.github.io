@@ -1,5 +1,6 @@
 ---
 title: Install
+filename: "Company-Setup.md"
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: []

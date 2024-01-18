@@ -1,5 +1,6 @@
 ---
 title: Report Templates
+filename: "ReportTemplates.md"
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: ["Account Rollup Screen", "Building Your Rollups", "Build Your Rows", "The Report Template", "Adding Company Columns"]

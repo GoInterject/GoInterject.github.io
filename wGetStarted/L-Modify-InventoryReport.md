@@ -1,5 +1,6 @@
 ---
 title: "Modify: Inventory Report"
+filename: "L-Modify-InventoryReport.md"
 layout: custom
 keywords: [alter, change, modify, fixed, inventory, category, add column, add row, jFreezePanes, walkthrough]
 headings: ["Overview", "Setting up the Report", "Adding a Row to the Report", "Adding a New Definition Column", "Preparing the Report to Share"]

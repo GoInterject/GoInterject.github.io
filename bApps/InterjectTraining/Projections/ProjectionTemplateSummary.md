@@ -1,5 +1,6 @@
 ---
 title: Projections Template Summary
+filename: "ProjectionTemplateSummary.md"
 layout: custom
 keywords: [Training, Capital, Projections Template]
 headings: ["Overview", "Projections Template", "Projections Upload Tool"]

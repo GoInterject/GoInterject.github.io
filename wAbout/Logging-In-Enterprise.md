@@ -1,5 +1,6 @@
 ---
 title: "Logging In/Out: Enterprise User"
+filename: "Logging-In-Enterprise.md"
 layout: custom
 keywords: [login, ribbon, logout, new login, credentials, accounts, enterprise, user]
 headings: ["Overview", "Initial Enterprise Login", "New Login", "Logging Out", "Log Back In", "Switch Accounts", "Forgetting Login Credentials", "Clearing Login Cookies"]

@@ -1,5 +1,6 @@
 ---
 title: "Export: Quick Export and PDF"
+filename: "L-Export-QuickExportAndPDF.md"
 layout: custom
 keywords: [quick, export, PDF, publish, distribute, data cells, walkthrough]
 headings: ["Overview", "Quick Export", "Quick PDF"]

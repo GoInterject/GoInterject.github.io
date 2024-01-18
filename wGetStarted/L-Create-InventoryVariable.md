@@ -1,5 +1,6 @@
 ---
 title: "Create: Inventory Variable"
+filename: "L-Create-InventoryVariable.md"
 layout: custom
 keywords: [variable, report, inventory, ReportGrouping, walkthrough]
 headings: ["Overview", "Report Variable", "Final Touches", "ReportGrouping()"]

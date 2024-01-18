@@ -1,5 +1,6 @@
 ---
 title: Training by Example
+filename: "HidingZeros.md"
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: ["Hiding Rows and Sections with Zero Values"]

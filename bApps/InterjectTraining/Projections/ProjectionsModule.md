@@ -1,5 +1,6 @@
 ---
 title: Projections Module
+filename: "ProjectionsModule.md"
 layout: custom
 keywords: [Training, Projections]
 headings: ["Overview", "Projection Template", "Projections Change Query"]

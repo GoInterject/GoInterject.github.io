@@ -1,5 +1,6 @@
 ---
 title: Interject Financials - Epicor - Update Manager
+filename: "Updates.md"
 layout: custom
 keywords: [Account, Epicor, Companies]
 headings: ["To Check for Your Current Version", "Click Your Version Below for Release Notes and Update Scripts", "Current Version Notes", "Updating", "Rolling Back One Version"]

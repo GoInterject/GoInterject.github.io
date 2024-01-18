@@ -1,5 +1,6 @@
 ---
 title: Data Connections
+filename: "Data-Connections.md"
 layout: custom
 keywords: [data connections, data portals, api, database]
 headings: ["Overview", "API Connections", "Database Connection"]

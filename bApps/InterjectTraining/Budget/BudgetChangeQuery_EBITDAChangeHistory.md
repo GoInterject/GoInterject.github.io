@@ -1,5 +1,6 @@
 ---
 title: EBITDA Change History Tab
+filename: "BudgetChangeQuery_EBITDAChangeHistory.md"
 layout: custom
 keywords: [Training, Budget, Budget Change Query]
 headings: ["Overview"]

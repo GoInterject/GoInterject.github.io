@@ -1,5 +1,6 @@
 ---
 title: Diagnostics - Change ShortKey
+filename: "Diagnostics-ShortKey.md"
 layout: custom
 keywords: [Diagnostics, Shortkey Changes, Configuration, Config, hotkey, keystrokes, shortcut, keyboard]
 headings: ["Overview", "Input Examples", "Defaults", "Multiple Input Example"]

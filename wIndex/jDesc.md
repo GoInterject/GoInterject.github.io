@@ -1,5 +1,6 @@
 ---
 title: jDesc()
+filename: "jDesc.md"
 layout: custom
 keywords: [jDesc, segment, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition"]

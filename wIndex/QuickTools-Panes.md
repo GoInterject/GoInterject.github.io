@@ -1,5 +1,6 @@
 ---
 title: Quick Tools - Panes Tools
+filename: "QuickTools-Panes.md"
 layout: custom
 keywords: [Quick Tools, Pane Tools, Freeze/Unfreeze Panes, Freeze all Tabs]
 headings: ["Overview", "Freeze/Unfreeze Panes", "Freeze all Tabs"]

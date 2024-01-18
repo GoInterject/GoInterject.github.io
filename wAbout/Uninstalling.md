@@ -1,5 +1,6 @@
 ---
 title: Uninstalling
+filename: "Uninstalling.md"
 layout: custom
 keywords: [Uninstall, Remove, Delete]
 headings: ["Overview", "Uninstalling Interject"]

@@ -1,5 +1,6 @@
 ---
 title: Verbose Logging
+filename: "Verbose-Logging.md"
 layout: custom
 keywords: [app, errors, reset, send report, verbose logging]
 headings: ["Overview", "Turn on Verbose Logging"]

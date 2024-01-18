@@ -1,5 +1,6 @@
 ---
 title: Web Proxy Configuration
+filename: "WebProxy.md"
 layout: custom
 keywords: [config, settings, diagnostics, app.config]
 headings: ["Overview", "Configure via Diagnostics Setting", "Configure via app.config File"]

@@ -1,5 +1,6 @@
 ---
 title: Summary Tab
+filename: "CapitalSummary.md"
 layout: custom
 keywords: [Training, Capital, Summary Tab]
 headings: ["Overview", "Drills"]

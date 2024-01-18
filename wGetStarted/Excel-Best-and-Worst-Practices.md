@@ -1,5 +1,6 @@
 ---
 title: Excel Best and Worst Practices
+filename: "Excel-Best-and-Worst-Practices.md"
 layout: custom
 keywords: [slow, Excel, best practice, standards, issue, CPU, usage, VBA]
 headings: ["Overview", "Think of Excel as a Better Browser", "Record Counts", "Empty Cell Formatting", "Conditional Formatting", "Limiting the Ranges Used in Interject Report Formulas", "Watch for the Last Row and Last Column", "Images", "File Type", "Pivot Tables", "VBA Macros"]

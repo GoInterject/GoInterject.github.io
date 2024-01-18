@@ -1,5 +1,6 @@
 ---
 title: Transaction Reports
+filename: "TransactionReports.md"
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: ["Fill Out Report Parameters and Pull Data", "Drill Through Detail"]

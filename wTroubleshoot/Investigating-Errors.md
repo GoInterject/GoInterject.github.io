@@ -1,5 +1,6 @@
 ---
 title: Investigating Report Errors
+filename: "Investigating-Errors.md"
 layout: custom
 keywords: [report, error, user support, progress bar window, activity log]
 headings: ["Overview", "Using the Progress Bar Window", "Using Activity Logs"]

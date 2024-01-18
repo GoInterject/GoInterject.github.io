@@ -1,5 +1,6 @@
 ---
 title: Data Pull Functions
+filename: "Data-Functions-Landing.md"
 layout: custom
 keywords: [data pull functions, range, fixed, variable, lookup]
 headings: ["Overview", "ReportRange", "ReportFixed", "ReportVariable", "ReportLookup"]

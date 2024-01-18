@@ -1,5 +1,6 @@
 ---
 title: Addin Errors
+filename: "App-Errors.md"
 layout: custom
 keywords: [app, addin, errors]
 headings: ["Overview", "Excel Drill Animations", "Addins Missing", "Web Proxy Configuration", "Cloud File Uploads Incorrectly"]

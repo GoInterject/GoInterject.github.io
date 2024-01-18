@@ -1,5 +1,6 @@
 ---
 title: jCombineIF()
+filename: "jCombine_IF.md"
 layout: custom
 keywords: [jCombineIF, helper, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Usable In These Functions"]

@@ -1,5 +1,6 @@
 ---
 title: Capital Summary by PO Type Tab
+filename: "CapitalSummaryPOType.md"
 layout: custom
 keywords: [Training, Capital, Capital Summary by PO Type]
 headings: ["Overview", "Hidden Replacement Section"]

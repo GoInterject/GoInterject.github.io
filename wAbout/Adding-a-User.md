@@ -1,5 +1,6 @@
 ---
 title: Adding a User
+filename: "Adding-a-User.md"
 layout: custom
 keywords: [user, role, login, profile, admin]
 headings: ["Overview", "Adding a New User", "Adding an Interject Role", "Additional Info"]

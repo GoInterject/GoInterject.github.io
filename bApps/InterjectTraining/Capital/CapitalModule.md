@@ -1,5 +1,6 @@
 ---
 title: Capital Module
+filename: "CapitalModule.md"
 layout: custom
 keywords: [Training, Capital]
 headings: ["Overview", "Capital Input Tool", "Capital Change Query Tool", "Capital Export Tool"]

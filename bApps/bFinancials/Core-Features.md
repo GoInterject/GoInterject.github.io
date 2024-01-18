@@ -1,5 +1,6 @@
 ---
 title: Core Features
+filename: "Core-Features.md"
 layout: custom
 keywords: [Account, Epicor, Companies]
 headings: ["Report Validation", "Flexibility"]

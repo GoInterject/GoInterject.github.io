@@ -1,5 +1,6 @@
 ---
 title: Updating Interject
+filename: "Updating-INTERJECT.md"
 layout: custom
 keywords: [update, updating, version]
 headings: ["Overview", "Updating to the Newest Version of Interject"]

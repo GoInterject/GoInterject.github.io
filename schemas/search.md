@@ -1,5 +1,6 @@
 ---
 title: "Docs search"
+filename: "search.md"
 keywords: [Search, Interject, documentation, manual, guide, reference, api]
 headings: []
 links: []

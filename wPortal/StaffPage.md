@@ -1,5 +1,6 @@
 ---
 title: "Staff Page: Add, Edit, or Delete Users"
+filename: "StaffPage.md"
 layout: custom
 keywords: [users, new, roles, user passwords, credentials]
 headings: ["Overview", "The Staff Page", "External Admins", "View, Edit, Activate/Deactivate, Delete User", "Add User", "Adding Details", "Password", "Create User", "Welcome Email", "Roles"]

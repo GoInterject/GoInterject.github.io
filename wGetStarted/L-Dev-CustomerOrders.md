@@ -1,5 +1,6 @@
 ---
 title: "Develop: Customer Orders"
+filename: "L-Dev-CustomerOrders.md"
 layout: custom
 keywords: [developer, example, customer orders, walkthrough, SQL]
 headings: ["Overview", "Verifying the Data Connection", "Copy the Data Portal", "Creating the Stored Procedure", "Create the Report"]

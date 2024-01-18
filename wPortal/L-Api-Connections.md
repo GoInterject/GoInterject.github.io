@@ -1,5 +1,6 @@
 ---
 title: "Portal: API Connection"
+filename: "L-Api-Connections.md"
 layout: custom
 keywords: [api, connection, setting up, setup]
 headings: ["Overview", "Setup for a Data Connection to an API"]

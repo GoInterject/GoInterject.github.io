@@ -1,5 +1,6 @@
 ---
 title: Control Center Summary
+filename: "ControlCenterSummary.md"
 layout: custom
 keywords: [Training, Budget, Control Center]
 headings: ["Overview", "Control Center Tool", "Tools Controlled by the Control Center"]

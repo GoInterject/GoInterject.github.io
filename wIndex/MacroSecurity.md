@@ -1,5 +1,6 @@
 ---
 title: Macro Security
+filename: "MacroSecurity.md"
 layout: custom
 keywords: [macro, security, sign key, VBA, checksum]
 headings: ["Overview", "Uploading A Macro File", "Opening A Macro File", "Security Settings", "Checking Settings", "File Extensions"]

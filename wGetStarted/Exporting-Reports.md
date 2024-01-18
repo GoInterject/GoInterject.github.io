@@ -1,5 +1,6 @@
 ---
 title: Exporting Reports
+filename: "Exporting-Reports.md"
 layout: custom
 keywords: [export, non-editable, PDF, send, distribute, publish, non-changeable]
 headings: ["Overview", "Publishing Reports", "Exporting Reports", "Quick Export and PDF", "Basic Distribution", "Advanced Distribution"]

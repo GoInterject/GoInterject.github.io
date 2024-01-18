@@ -1,5 +1,6 @@
 ---
 title: ReportVariable()
+filename: "ReportVariable.md"
 layout: custom
 keywords: [ReportVariable, variable, function, formula, data, pull]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Embeddable Helper Functions"]

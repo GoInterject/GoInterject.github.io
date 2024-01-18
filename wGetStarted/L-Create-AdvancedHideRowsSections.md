@@ -1,5 +1,6 @@
 ---
 title: Advanced Row and Section Hiding
+filename: "L-Create-AdvancedHideRowsSections.md"
 layout: custom 
 keywords: [hide, rows, sections]
 headings: ["Overview", "Hiding Rows"]

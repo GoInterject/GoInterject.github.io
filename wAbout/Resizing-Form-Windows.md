@@ -1,5 +1,6 @@
 ---
 title: Resizing Interject Windows
+filename: "Resizing-Form-Windows.md"
 layout: custom
 keywords: [resize, size, windows, forms, frame, text resize, make text bigger]
 headings: ["Overview", "Resizing Windows", "Resize the Current Window", "Resize All Windows"]

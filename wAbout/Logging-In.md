@@ -1,5 +1,6 @@
 ---
 title: "Logging In/Out: Individual User"
+filename: "Logging-In.md"
 layout: custom
 keywords: [login, ribbon, logout, new login, credentials, accounts, user]
 headings: ["Overview", "Initial Interject Login", "New Login", "Logging Out", "Log Back In", "Switch Accounts", "Forgetting Login Credentials"]

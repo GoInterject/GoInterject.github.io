@@ -1,5 +1,6 @@
 ---
 title: "Create: Working with Pivot Tables"
+filename: "L-Create-PivotTable.md"
 layout: custom
 keywords: [pivot table, walkthrough]
 headings: ["Overview", "Building the Support Tab", "Building the Pivot Table", "Customizing the Pivot Table"]

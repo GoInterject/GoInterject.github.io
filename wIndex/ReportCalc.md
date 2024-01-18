@@ -1,5 +1,6 @@
 ---
 title: ReportCalc()
+filename: "ReportCalc.md"
 layout: custom
 keywords: [ReportCalc, calculation, event, trigger, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Trigger Combination List"]

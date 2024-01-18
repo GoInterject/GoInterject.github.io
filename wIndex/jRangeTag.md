@@ -1,5 +1,6 @@
 ---
 title: jRangeTag()
+filename: "jRangeTag.md"
 layout: custom
 keywords: [jRangeTag, helper, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition"]

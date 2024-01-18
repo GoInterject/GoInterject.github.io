@@ -1,5 +1,6 @@
 ---
 title: Interject JE Upload - Update Manager
+filename: "Update-JE-Upload.md"
 layout: custom
 keywords: [Account, Epicor, Companies, JEUpload]
 headings: ["To Check for Your Current Version", "Click Your Version Below for Release Notes and Update Scripts", "Current Version Notes", "Updating", "Rolling Back One Version"]

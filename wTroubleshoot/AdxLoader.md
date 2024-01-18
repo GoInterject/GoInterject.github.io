@@ -1,5 +1,6 @@
 ---
 title: AdxLoader Don't Match
+filename: "AdxLoader.md"
 layout: custom
 keywords: [app, addin, missing, reset]
 headings: ["Overview", "Cause of Error", "Solution", "Displaying Excel Bit Version", "Helpful Microsoft Office Links"]

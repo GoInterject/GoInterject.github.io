@@ -1,5 +1,6 @@
 ---
 title: JE Upload Install
+filename: "JE-Upload-Install.md"
 layout: custom
 keywords: [reporting, Epicor, database]
 headings: ["Steps Required for JE Upload Install"]

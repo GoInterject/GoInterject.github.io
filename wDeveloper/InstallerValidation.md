@@ -1,5 +1,6 @@
 ---
 title: Checksums for Installers
+filename: "InstallerValidation.md"
 layout: custom
 keywords: [checksum, validation, file integrity, Get-FileHash, hash, algorithm, value]
 headings: ["Overview", "Generating a Checksum", "Full Reset"]

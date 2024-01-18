@@ -1,5 +1,6 @@
 ---
 title: jFocus()
+filename: "jFocus.md"
 layout: custom
 keywords: [jFocus, helper, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition"]

@@ -1,5 +1,6 @@
 ---
 title: PairGroup()
+filename: "PairGroup.md"
 layout: custom
 keywords: [PairGroup, helper, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Usable In These Functions"]

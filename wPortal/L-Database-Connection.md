@@ -1,5 +1,6 @@
 ---
 title: "Portal: Database Connection"
+filename: "L-Database-Connection.md"
 layout: custom
 keywords: [database connection, setting up, setup]
 headings: ["Overview", "Setup for a Data Connection to a Database", "Testing the Connection String From Within Excel"]

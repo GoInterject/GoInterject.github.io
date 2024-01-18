@@ -1,5 +1,6 @@
 ---
 title: Excel Drill Animations
+filename: "Drill-Animations.md"
 layout: custom
 keywords: [drill, slow, slow drill, freeze, crash, disable, animations]
 headings: ["Overview", "Turning Off Animations (Windows 7 or 8)", "Turning Off Animations (Windows 10 Settings)", "Turning Off Animations (Windows 10 Control Panel)", "Turning Off Animations (Excel 2010-2016)", "Turning Off Animations (Excel 365)"]

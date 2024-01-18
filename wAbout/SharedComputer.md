@@ -1,5 +1,6 @@
 ---
 title: Installing - Shared Computer
+filename: "SharedComputer.md"
 layout: custom
 keywords: [install, Multiple Users, Server, network]
 headings: ["Overview", "Installing Interject on Multi-User Systems"]

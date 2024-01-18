@@ -1,5 +1,6 @@
 ---
 title: User Support
+filename: "Reporting-A-Problem.md"
 layout: custom
 keywords: [report, reporting, error, logs, contact, user support]
 headings: ["Overview", "Sending Logs", "Send Report to Interject", "Contact Interject Support"]

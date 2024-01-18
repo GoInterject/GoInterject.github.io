@@ -1,5 +1,6 @@
 ---
 title: Connection Manager
+filename: "ConnectionManager.md"
 layout: custom
 keywords: [id providers, identity providers, login, tokens, federated, enterprise]
 headings: ["Overview", "Logging In and Out of a Connection"]

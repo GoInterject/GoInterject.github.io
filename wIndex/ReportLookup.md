@@ -1,5 +1,6 @@
 ---
 title: ReportLookup()
+filename: "ReportLookup.md"
 layout: custom
 keywords: [ReportLookup, lookup, function, formula, data, pull]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Embeddable Helper Functions"]

@@ -1,5 +1,6 @@
 ---
 title: Budget Module
+filename: "BudgetModule.md"
 layout: custom
 keywords: [Training, Budget]
 headings: ["Overview", "Budget Template", "Control Center", "Budget Change Query"]

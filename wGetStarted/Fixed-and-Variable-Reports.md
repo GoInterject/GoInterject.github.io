@@ -1,5 +1,6 @@
 ---
 title: Fixed and Variable Reports
+filename: "Fixed-and-Variable-Reports.md"
 layout: custom
 keywords: [variable, fixed, variable, reports, walkthroughs]
 headings: ["Overview", "Inventory Fixed Report", "Inventory Variable Report", "Financial Variable Report", "Customer Aging Detail Report"]

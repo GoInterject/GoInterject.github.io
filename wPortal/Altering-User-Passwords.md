@@ -1,5 +1,6 @@
 ---
 title: Changing &amp; Resetting User Passwords
+filename: "Altering-User-Passwords.md"
 layout: custom
 keywords: [user passwords, reset, altering, changing, credentials]
 headings: ["Overview", "Changing Passwords While Logged In", "Reset Password Without Logging In"]

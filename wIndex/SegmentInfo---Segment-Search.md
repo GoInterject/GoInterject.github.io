@@ -1,5 +1,6 @@
 ---
 title: SegmentInfo - Segment Search
+filename: "SegmentInfo---Segment-Search.md"
 layout: custom
 keywords: [segmentinfo, segment search, code, function, columns]
 headings: ["Overview", "Segments Parameters", "Available Columns"]

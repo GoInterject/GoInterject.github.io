@@ -1,5 +1,6 @@
 ---
 title: jSetting()
+filename: "jSetting.md"
 layout: custom
 keywords: [jSetting, helper, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition"]

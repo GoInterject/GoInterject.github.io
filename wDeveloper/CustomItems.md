@@ -1,5 +1,6 @@
 ---
 title: Custom Items
+filename: "CustomItems.md"
 layout: custom
 keywords: [custom commands, execute, sql]
 headings: ["Overview", "Setup Data Portal", "System Parameters", "Formula Parameters", "Description and Status", "Running the Custom Item", "Example Stored Procedure"]

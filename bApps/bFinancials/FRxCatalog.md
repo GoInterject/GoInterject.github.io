@@ -1,5 +1,6 @@
 ---
 title: FRx Catalog
+filename: "FRxCatalog.md"
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: []

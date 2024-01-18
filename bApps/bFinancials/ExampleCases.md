@@ -1,5 +1,6 @@
 ---
 title: Training by Example
+filename: "ExampleCases.md"
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: []

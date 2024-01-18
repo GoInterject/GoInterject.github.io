@@ -1,5 +1,6 @@
 ---
 title: Quick Tools - Other Tools
+filename: "QuickTools-Other.md"
 layout: custom
 keywords: [Quick Tools, Other Tools, Unique List from Selection, Unhide All Sheets]
 headings: ["Overview", "Unique List from Selection", "Unhide All Sheets"]

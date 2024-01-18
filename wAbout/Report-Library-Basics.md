@@ -1,5 +1,6 @@
 ---
 title: Report Library Basics
+filename: "Report-Library-Basics.md"
 layout: custom
 keywords: [report library, folder, link, version, resize, file, status, navigate, search]
 headings: ["Overview", "Opening The Report Library", "Resizing the Report Library", "The Report Library", "Folders Section", "Report Link Section", "Link Version Section", "Status", "Opening a Report", "Navigating the Report Library", "Using the Search Feature", "Using the keyboard", "Using the mouse", "Related Links"]

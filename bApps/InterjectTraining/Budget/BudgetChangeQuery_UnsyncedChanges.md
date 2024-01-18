@@ -1,5 +1,6 @@
 ---
 title: Unsynced Changes Tab
+filename: "BudgetChangeQuery_UnsyncedChanges.md"
 layout: custom
 keywords: [Training, Budget, Budget Change Query, Unsynced]
 headings: ["Overview", "Latest Unsynced Change Info"]

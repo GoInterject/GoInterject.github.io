@@ -1,5 +1,6 @@
 ---
 title: "Create: Inventory Fixed Report"
+filename: "L-Create-InventoryFixed.md"
 layout: custom
 keywords: [fixed, inventory, report, create, jWorkbookProperty, northwind fixed, run on open, walkthrough]
 headings: ["Overview", "Building the Report", "Setting up Run on Open", "jWorkbookProperty()"]

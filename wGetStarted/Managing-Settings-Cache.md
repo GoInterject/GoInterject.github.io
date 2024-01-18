@@ -1,5 +1,6 @@
 ---
 title: Managing Settings Cache
+filename: "Managing-Settings-Cache.md"
 layout: custom
 keywords: [settings, config, files, system, cache]
 headings: ["Overview", "Forcing Cached Settings to Refresh", "Making the Middle Tier Forgiving"]

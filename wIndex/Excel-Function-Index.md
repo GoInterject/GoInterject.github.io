@@ -1,5 +1,6 @@
 ---
 title: Excel Function Index
+filename: "Excel-Function-Index.md"
 layout: custom
 keywords: [functions, formulas, index, data, pull, save, drill, event, helper, data cell]
 headings: ["Overview", "Data Pull Functions", "Data Save Functions", "Data Drill Functions", "Event Functions", "Helper Functions", "Data Cell Functions"]

@@ -1,5 +1,6 @@
 ---
 title: jWorkbookProperty()
+filename: "jWorkbookProperty.md"
 layout: custom
 keywords: [jWorkbookProperty, helper, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Workbook Property List"]

@@ -1,5 +1,6 @@
 ---
 title: "Create: Customer Orders Report"
+filename: "L-Create-CustomerOrders.md"
 layout: custom
 keywords: [report, create, multi-row, customer orders, walkthrough, northwind customer orders, jFreezePanes]
 headings: ["Overview", "Building the Report", "Customizing the Report", "Editing the Report Function", "Adding Multi-Row Range:", "Final Steps"]

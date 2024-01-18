@@ -1,5 +1,6 @@
 ---
 title: FRx Migration
+filename: "FRxMigration.md"
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: ["Open SQL Server and Create a New Database", "Import MDB File To the New Database", "Execute FRx Migration Script", "Interject Application Setup- DB Connection", "Redirect DB Connection to New DB in Interject process"]

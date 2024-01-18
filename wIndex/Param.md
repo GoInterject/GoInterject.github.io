@@ -1,5 +1,6 @@
 ---
 title: Param()
+filename: "Param.md"
 layout: custom
 keywords: [Param, helper, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Usable In These Functions"]

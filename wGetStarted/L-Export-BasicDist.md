@@ -1,5 +1,6 @@
 ---
 title: "Export: Basic Distribution"
+filename: "L-Export-BasicDist.md"
 layout: custom
 keywords: [basic, distribution, email, report, export, file, PDF, walkthrough]
 headings: ["Overview", "Create a Distribution From an Existing Report", "Distributing to a Folder", "Distributing With Email"]

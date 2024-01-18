@@ -1,5 +1,6 @@
 ---
 title: jColumnDef()
+filename: "jColumnDef.md"
 layout: custom
 keywords: [jColumnDef, helper, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition"]

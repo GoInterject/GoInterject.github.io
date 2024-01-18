@@ -1,5 +1,6 @@
 ---
 title: Manual Setup for the Lab Guide
+filename: "LabSetup.md"
 layout: custom
 keywords: [lab, guide, manual setup, start, Northwind, database, FinCube, data cells]
 headings: ["Overview", "Interject Data Report Flow", "Manual Setup", "Step 1: Setting up the Database", "Step 2: Setting up the Data Connection", "Step 3: Setting up the Data Portals", "Step 4: Setting up FinCube", "Setting up the FinCube Data Connection", "Setting up the FinCube Data Portal", "Setting up the FinCube Data Cells Data Portals", "Step 5: The Report Files", "Step 6: Renaming the Data Portals"]

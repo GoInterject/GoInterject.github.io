@@ -1,5 +1,6 @@
 ---
 title: Reporting Capabilities
+filename: "Reporting-Capabilities.md"
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: ["Reporting Capabilities", "Build Financial Statements", "Transaction Reports"]

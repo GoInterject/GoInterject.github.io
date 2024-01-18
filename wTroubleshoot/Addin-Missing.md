@@ -1,5 +1,6 @@
 ---
 title: Addins Missing
+filename: "Addin-Missing.md"
 layout: custom
 keywords: [app, addin, missing, reset]
 headings: ["Overview", "Reset via System Tray", "Reset via Interject Addin Manager", "Reset via Developer Tab"]

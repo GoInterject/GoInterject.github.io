@@ -1,5 +1,6 @@
 ---
 title: Pair()
+filename: "Pair.md"
 layout: custom
 keywords: [Pair, helper, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Usable In These Functions"]

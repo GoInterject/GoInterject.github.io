@@ -1,5 +1,6 @@
 ---
 title: "Drill: Inventory Report"
+filename: "L-Drill-InventoryReport.md"
 layout: custom
 keywords: [drill, report, hyperlinks, walkthrough]
 headings: ["Overview", "Unfreezing the Report", "Setting up the Drill", "Creating Hyperlinks as Drills"]

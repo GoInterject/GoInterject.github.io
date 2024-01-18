@@ -1,5 +1,6 @@
 ---
 title: Interject Financials for Epicor
+filename: "Interject-Financials.md"
 layout: custom
 keywords: [Account, Epicor, Companies]
 headings: ["Overview", "My Apps", "Data Connections", "Data Portals"]

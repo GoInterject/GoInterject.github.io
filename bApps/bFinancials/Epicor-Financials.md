@@ -1,5 +1,6 @@
 ---
 title: Interject Financials - Epicor
+filename: "Epicor-Financials.md"
 layout: custom
 keywords: [Account, Epicor, Companies]
 headings: ["About", "What is Interject Financials - Epicor Enterprise", "Product Sheet", "Prerequisites"]

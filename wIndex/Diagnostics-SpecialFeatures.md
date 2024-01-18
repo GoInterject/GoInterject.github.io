@@ -1,5 +1,6 @@
 ---
 title: Diagnostics - Apply Special Features
+filename: "Diagnostics-SpecialFeatures.md"
 layout: custom
 keywords: [Diagnostics, Apply Special Features, Configuration, Config, animations, bug fix]
 headings: ["Overview", "BugFix1: Microsoft Animations", "BugFix2: Microsoft Repaint"]

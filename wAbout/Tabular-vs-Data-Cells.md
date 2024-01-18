@@ -1,5 +1,6 @@
 ---
 title: Tabular vs Data Cells
+filename: "Tabular-vs-Data-Cells.md"
 layout: custom
 keywords: [cells, tabular, data cells]
 headings: ["Overview", "Tabular", "Data Cells", "What is Common Between Data Lists and Data Cells"]

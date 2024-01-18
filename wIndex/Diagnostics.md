@@ -1,5 +1,6 @@
 ---
 title: Diagnostics
+filename: "Diagnostics.md"
 layout: custom
 keywords: [Diagnostics, Tools, Settings, Configurations, Config]
 headings: ["Overview", "Diagnostic Pane Fields", "Public", "System Tools", "Support"]

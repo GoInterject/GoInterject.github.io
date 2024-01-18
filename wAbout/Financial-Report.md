@@ -1,5 +1,6 @@
 ---
 title: Financial Report
+filename: "Financial-Report.md"
 layout: custom
 keywords: [financial, PL Trend Report, drill, detail, JE transaction, JE lookup, JE Query, data cells, walkthrough]
 headings: ["Overview", "Navigating to the PLTrend Report", "Modifying the Report", "Grouped Detail in the Report", "Drill to JE-Transaction", "Drill Further Into JE-Lookup", "Report Example With Data Cells", "Related Links"]

@@ -1,5 +1,6 @@
 ---
 title: Quick Tools - Formula Tools
+filename: "QuickTools-Formula.md"
 layout: custom
 keywords: [Quick Tools, Formula Tools, Remove External References]
 headings: ["Overview", "Remove External References"]

@@ -1,5 +1,6 @@
 ---
 title: Projection Template
+filename: "ProjectionTemplate.md"
 layout: custom
 keywords: [Training, Projections, Projection Template]
 headings: ["Overview", "Input Field Explanations", "Retain Rows and how it works", "Summary and Detail level accounts", "Pulling Summary and Detail levels together", "Saving Summary and Detail levels together", "Dynamic Projection Columns", "The Autocalcs", "Do I have security rights to Save from the Projections Template?", "Common Save Errors"]

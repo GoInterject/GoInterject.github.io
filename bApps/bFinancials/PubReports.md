@@ -1,5 +1,6 @@
 ---
 title: Publishing and Updating in the Report Library
+filename: "PubReports.md"
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: ["Publishing and Updating Report Templates in the Report Library", "Updating Existing Report Templates"]

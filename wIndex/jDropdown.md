@@ -1,5 +1,6 @@
 ---
 title: jDropdown()
+filename: "jDropdown.md"
 layout: custom
 keywords: [jDropdown, helper, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Embeddable Helper Functions"]

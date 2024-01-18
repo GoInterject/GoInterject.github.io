@@ -1,5 +1,6 @@
 ---
 title: Deactivate Databases
+filename: "DeactiveDB.md"
 layout: custom
 keywords: [inactive, deactivate, databases, script, SQL]
 headings: []

@@ -1,5 +1,6 @@
 ---
 title: FinCube - The Financial Cube
+filename: "FinCube---The-Financial-Cube.md"
 layout: custom
 keywords: [fincube, segment filter, data portal, filter, forecast, CYA, columns, jColumnDef]
 headings: ["Overview", "Segment Filter Options", "Data Portal Parameters", "Examples using Show Credits and Reverse Signs Parameters", "Available Columns for the DataPortal", "Segment Columns", "Group Columns", "Amount Columns", "CYA Column Notation", "Options for Forecast", "ACT Column Notation", "jColumnDef() Column Notation"]

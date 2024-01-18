@@ -1,5 +1,6 @@
 ---
 title: Tools Controlled by the Control Center
+filename: "ControlCenterSecurity.md"
 layout: custom
 keywords: [Training, Budget, Control Center]
 headings: ["Overview", "Do I have security rights to use these tools?", "Budget Tools and the Control Center", "Capital Input Tool and the Control Center", "Projections Tools and the Control Center"]

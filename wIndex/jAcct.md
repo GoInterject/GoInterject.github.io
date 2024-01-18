@@ -1,5 +1,6 @@
 ---
 title: jAcct()
+filename: "jAcct.md"
 layout: custom
 keywords: [jacct, account, segment, function, formula, chart of accounts]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example"]

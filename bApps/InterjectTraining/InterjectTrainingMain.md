@@ -1,5 +1,6 @@
 ---
 title: Interject Training
+filename: "InterjectTrainingMain.md"
 layout: custom
 keywords: [Training]
 headings: ["Overview", "Capital Module", "Budget Module", "Projections Module"]

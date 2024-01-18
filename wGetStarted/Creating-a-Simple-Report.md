@@ -1,5 +1,6 @@
 ---
 title: Creating a Simple Report
+filename: "Creating-a-Simple-Report.md"
 layout: custom
 keywords: [create, reports, walkthroughs]
 headings: ["Overview", "Customer Aging Report", "Customer Orders Report"]

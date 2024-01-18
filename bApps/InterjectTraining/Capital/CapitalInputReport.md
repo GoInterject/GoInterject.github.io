@@ -1,5 +1,6 @@
 ---
 title: Capital Input Tool Summary
+filename: "CapitalInputReport.md"
 layout: custom
 keywords: [Training, Capital, Capital Input]
 headings: ["Overview", "What is new?", "Summary Tab", "Bud Capital Input Tab", "Summary by PO Type Tab"]

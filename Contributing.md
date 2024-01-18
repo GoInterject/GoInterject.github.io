@@ -1,5 +1,6 @@
 ---
 title: Contributing
+filename: "Contributing.md"
 layout: custom
 sitemap: false
 keywords: [best practices, standards, editing, changes, format, style, consistency]

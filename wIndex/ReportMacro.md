@@ -1,5 +1,6 @@
 ---
 title: ReportMacro()
+filename: "ReportMacro.md"
 layout: custom
 keywords: [ReportMacro, macro, vba, event, trigger, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Trigger Combination List"]

@@ -1,5 +1,6 @@
 ---
 title: Release Notes
+filename: "2023-12_ReleaseNotes.md"
 layout: custom
 keywords: [change log, updates, versions, history, what's new]
 headings: ["December 2023", "Excel Addin v2.5.0.23", "Portal Site", "Interject Platform", "Documentation Updates"]

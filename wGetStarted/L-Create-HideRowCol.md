@@ -1,5 +1,6 @@
 ---
 title: "Create: Hiding Rows and Columns"
+filename: "L-Create-HideRowCol.md"
 layout: custom
 keywords: [hide, rows, columns]
 headings: ["Overview", "Hiding Rows", "Hiding Columns"]

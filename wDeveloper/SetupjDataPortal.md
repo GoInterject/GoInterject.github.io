@@ -1,5 +1,6 @@
 ---
 title: Setting Up the jDataPortal
+filename: "SetupjDataPortal.md"
 layout: custom
 keywords: [portal, connection, override, command]
 headings: ["Overview", "Setup jDataPortal", "Result Sets", "Order By", "Filter", "Overriding a Connection", "Overriding a Command"]

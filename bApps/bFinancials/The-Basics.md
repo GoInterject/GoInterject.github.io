@@ -1,5 +1,6 @@
 ---
 title: Train
+filename: "The-Basics.md"
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: ["Interject for Financials Quick Reference", "Important Interject Hotkeys", "Important Formulas", "Important Actions on the Interject Ribbon Menu", "The Basics of Working with Interject for Financials", "Using the Report Library", "Pull Data", "Drilling Between Reports"]

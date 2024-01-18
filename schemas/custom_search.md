@@ -1,5 +1,6 @@
 ---
 title: "Doc Search"
+filename: "custom_search.md"
 tree: false
 sitemap: false
 keywords: [search, interject, documentation, find]

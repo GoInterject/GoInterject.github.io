@@ -1,5 +1,6 @@
 ---
 title: jFreezePanes()
+filename: "jFreezePanes.md"
 layout: custom
 keywords: [jFreezePanes, window, helper, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition"]

@@ -1,5 +1,6 @@
 ---
 title: Basics of Report Formulas
+filename: "Basics-of-Report-Formulas.md"
 layout: custom
 keywords: [report formula, column definitions, formatting range, hidden, parameters, notes]
 headings: ["Overview", "Accessing the Report Formulas", "Column Definitions", "Formatting Range", "Report Formulas", "Hidden Parameters and Notes"]

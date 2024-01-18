@@ -1,5 +1,6 @@
 ---
 title: Adding Notes To A Report
+filename: "AddingNotes.md"
 layout: custom
 keywords: [Report, Epicor, Notes, Comments]
 headings: ["Report Setup", "Adding Summary Level Comments"]

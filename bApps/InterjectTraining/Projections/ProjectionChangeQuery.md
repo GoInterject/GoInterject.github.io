@@ -1,5 +1,6 @@
 ---
 title: Projections Change Query Tool
+filename: "ProjectionChangeQuery.md"
 layout: custom
 keywords: [Training, Projections, Projection Change Query]
 headings: ["Overview", "Dynamic Columns", "Summary Tab", "Detail Tab", "Summary Last Save Tab", "Detail Last Save Tab"]

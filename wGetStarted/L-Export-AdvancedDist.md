@@ -1,5 +1,6 @@
 ---
 title: "Export: Advanced Distribution"
+filename: "L-Export-AdvancedDist.md"
 layout: custom
 keywords: [distribution, grouping, advanced, export, distribute, walkthrough]
 headings: ["Overview", "Custom Tab Renaming", "Replacing Keywords Dynamically", "Export Target Options", "Distributing Multiple Sheets", "Specializing Reports Using Multiple Builds", "Building Distribution Reports Without Pulling Data", "Grouping Segments"]

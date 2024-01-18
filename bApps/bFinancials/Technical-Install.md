@@ -1,5 +1,6 @@
 ---
 title: Data Tier Install
+filename: "Technical-Install.md"
 layout: custom
 keywords: [Epicor, data tier, data load, FRx, configurations]
 headings: ["Steps Required for Technical Install"]

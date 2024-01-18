@@ -1,5 +1,6 @@
 ---
 title: jCombine()
+filename: "jCombine.md"
 layout: custom
 keywords: [jCombine, helper, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Usable In These Functions"]

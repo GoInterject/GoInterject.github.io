@@ -1,5 +1,6 @@
 ---
 title: Bud Capital Input Tab
+filename: "CapitalInput.md"
 layout: custom
 keywords: [Training, Capital, Capital Input]
 headings: ["Overview", "To Delete PO Items", "Asset Information", "Replacement Info", "Do I have security rights to Save from this Input File?", "Drills", "Common Save Errors"]

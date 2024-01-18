@@ -1,5 +1,6 @@
 ---
 title: Working with Interject
+filename: "Working-with-INTERJECT.md"
 layout: custom
 keywords: [overview, report formulas, tabular cells, data cells]
 headings: ["Overview", "Basics of Report Formulas", "Tabular vs Data Cells"]

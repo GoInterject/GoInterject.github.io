@@ -1,5 +1,6 @@
 ---
 title: Configure
+filename: "Configure.md"
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: ["Schedule Manager", "Data Upload Tool", "Use Initial Config Tool to Perform the Initial Setup", "While logged into Interject, open the configuration tool from the report library.", "Navigate from the Welcome Screen through the initial steps", "Setup/Review Year Name", "Setup/Review Segments", "Account Rollup - Activate Seeded DEMO Config", "Governed Account Rollups", "Ad Hoc Account Rollups", "Other Rollups", "Converting FRx Row Definitions"]

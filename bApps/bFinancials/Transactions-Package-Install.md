@@ -1,5 +1,6 @@
 ---
 title: Transactions Package Install
+filename: "Transactions-Package-Install.md"
 layout: custom
 keywords: [Epicor, SQL MGT Studio, tools]
 headings: ["Steps Required for Transactions Package"]

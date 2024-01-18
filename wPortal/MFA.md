@@ -1,5 +1,6 @@
 ---
 title: Multi-Factor Authentication (MFA)
+filename: "MFA.md"
 layout: custom
 keywords: [2fa, login, credentials, security, email confirmation, authenticator app]
 headings: ["Overview", "Enable MFA for a User", "Login With the Authenticator App", "Login With an Email Confirmation"]

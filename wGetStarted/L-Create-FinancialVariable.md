@@ -1,5 +1,6 @@
 ---
 title: "Create: Financial Variable Report"
+filename: "L-Create-FinancialVariable.md"
 layout: custom
 keywords: [create, financial, variable, report, financial cube, fincube, walkthrough]
 headings: ["Overview", "Pulling Financial Data With FinCube Data Portal", "Preparing the Row Format", "Converting ReportRange() to ReportVariable()", "Final Formatting"]

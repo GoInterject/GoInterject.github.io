@@ -1,5 +1,6 @@
 ---
 title: WebView2 Installation
+filename: "WebView2.md"
 layout: custom
 keywords: [login]
 headings: ["Overview", "Verifying Installation", "Via Windows Settings", "Via Control Panel", "Installation", "Repair"]

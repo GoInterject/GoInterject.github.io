@@ -1,5 +1,6 @@
 ---
 title: Helper Functions
+filename: "Helper-Functions.md"
 layout: custom
 keywords: [helper, functions, formula]
 headings: ["Overview", "jDropdown", "jFocus", "jFreezePanes", "jCombine", "jCombineIf", "jDataPortal", "jColumnDef", "jRangeTag", "jWorkbookProperty", "jSetting", "Pair", "PairGroup", "Param"]

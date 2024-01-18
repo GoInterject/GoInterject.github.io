@@ -1,5 +1,6 @@
 ---
 title: Setup Client Reporting Library
+filename: "Localize.md"
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: []

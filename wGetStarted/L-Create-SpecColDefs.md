@@ -1,5 +1,6 @@
 ---
 title: "Create: Special Column Definitions"
+filename: "L-Create-SpecColDefs.md"
 layout: custom
 keywords: [hyperlink, comment, dropdown, list, column definitions, validation, walkthrough]
 headings: ["Overview", "Special Cell Value Comment", "Special Cell Value Hyperlink", "Special Cell Value Validation List", "Stacking Special Cell Types"]

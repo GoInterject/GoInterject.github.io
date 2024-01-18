@@ -1,5 +1,6 @@
 ---
 title: Quick Tools - Format Tools
+filename: "QuickTools-Format.md"
 layout: custom
 keywords: [Quick Tools, Format Tools, Center Across Columns, Remove Wrap, Inverse Sign, To Lower Case, To Proper Case, To Upper Case, Trim Values]
 headings: ["Overview", "Center Across Columns", "Remove Wrap", "Inverse Sign", "To Lower Case, To Proper Case, To Upper Case", "Trim Values"]

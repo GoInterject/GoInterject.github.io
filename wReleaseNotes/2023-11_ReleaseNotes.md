@@ -1,5 +1,6 @@
 ---
 title: Release Notes
+filename: "2023-11_ReleaseNotes.md"
 layout: custom
 keywords: [change log, updates, versions, history, what's new]
 headings: ["November 2023", "Documentation Updates"]

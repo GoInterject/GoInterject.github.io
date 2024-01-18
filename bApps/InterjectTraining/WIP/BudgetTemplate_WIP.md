@@ -1,5 +1,6 @@
 ---
 title: Budget Template
+filename: "BudgetTemplate_WIP.md"
 layout: custom
 keywords: [Training, Budget, Budget Template]
 headings: ["Overview", "Input Field Explanations", "Base Year and Fincube", "Retain Rows and how it works", "Summary and Detail level accounts", "Pulling Summary and Detail levels together", "Saving Summary and Detail levels together", "The Autocalcs", "Do I have security rights to Save from the Budget Template?", "Budget Template and the Control Center", "After Corp Cutoff and after BOD", "After Corp Cutoff", "After BOD", "Common Save Errors"]

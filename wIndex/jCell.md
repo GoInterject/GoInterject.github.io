@@ -1,5 +1,6 @@
 ---
 title: jCell/jCellN()
+filename: "jCell.md"
 layout: custom
 keywords: [jcell, account, segment, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition"]

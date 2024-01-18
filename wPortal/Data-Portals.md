@@ -1,5 +1,6 @@
 ---
 title: Data Portals
+filename: "Data-Portals.md"
 layout: custom
 keywords: [data portals, data connection, setup, system parameters]
 headings: ["Overview", "Setting up a Data Portal", "Overview of Parameters", "Formula Parameters", "System Parameters", "Adding New Parameters", "System Parameters Options"]

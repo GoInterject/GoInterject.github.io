@@ -1,6 +1,7 @@
 ---
 layout: custom
 title:  "Python API Setup"
+filename: "python-api-setup.md"
 date:   2018-10-12 9:03:02 -0700
 categories: API Developer
 keywords: [data api, python, setup]
