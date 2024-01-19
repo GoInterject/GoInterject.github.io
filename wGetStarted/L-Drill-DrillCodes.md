@@ -5,6 +5,7 @@ layout: custom
 keywords: [data drill codes, report library, report]
 headings: ["Overview", "Opening the Report and Drilling", "Uploading the Report With a Drill Code", "Adding the Drill Code to the ReportDrill Function", "Running the Drill"]
 links: ["/wGetStarted/Drilling-Between-Reports.html", "/wAbout/Report-Library-Basics.html", "/wGetStarted/L-Drill-CustomerAging.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wAbout/ReportLibraryLinks.html", "/wIndex/ReportDrill.html", "/wIndex/QuickTools-Panes.html#freezeunfreeze-panes"]
+image_dir: "L-Drill-DrillCodes"
 description: Interject also gives its users the flexibility in drilling data not only to a different sheet within Excel but a separate workbook altogether. 
 ---
 * * *

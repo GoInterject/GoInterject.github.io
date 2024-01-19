@@ -5,6 +5,7 @@ layout: custom
 keywords: [Training, Capital, Capital Change Query]
 headings: ["Overview", "Summary Level Drop-Down"]
 links: []
+image_dir: "WCNTraining/Capital"
 description: Pull in change history details for Capital.
 ---
 

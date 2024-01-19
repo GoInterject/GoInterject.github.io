@@ -5,6 +5,7 @@ layout: custom
 keywords: [Training, Projections, Projections Upload]
 headings: ["Overview", "Uploading to more than one district at a time", "Drop Projections numbers in without pulling first", "Do I have security rights to Save from the Projections Upload tab?", "Common Save Errors"]
 links: ["/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#projections-tools-and-the-control-center"]
+image_dir: "WCNTraining/Projections"
 description: The Projections Upload Tool allows controllers to upload projections for multiple accounts in a district at the same time. This upload tool closely matches the Budget Upload Tool in design and function.
 ---
 

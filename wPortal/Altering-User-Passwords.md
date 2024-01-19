@@ -5,6 +5,7 @@ layout: custom
 keywords: [user passwords, reset, altering, changing, credentials]
 headings: ["Overview", "Changing Passwords While Logged In", "Reset Password Without Logging In"]
 links: []
+image_dir: "Passwords"
 description: This is a section that displays how to reset an Interject user’s password under the conditions that they are not logged in or they are logged in.
 ---
 * * *

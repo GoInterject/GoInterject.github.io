@@ -5,6 +5,7 @@ layout: custom
 keywords: [install, Multiple Users, Server, network]
 headings: ["Overview", "Installing Interject on Multi-User Systems"]
 links: ["https://portal.gointerject.com/login.html", "https://portal.gointerject.com/invite.html?mode=create", "https://docs.gointerject.com/wAbout/Logging-In.html", "mailto:help@gointerject.com"]
+image_dir: "SharedComputer"
 description: This is the multi-user to one computer installation of Interject.
 ---
 * * *

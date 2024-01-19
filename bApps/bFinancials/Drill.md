@@ -5,6 +5,7 @@ layout: custom
 keywords: [Account, Epicor, Companies]
 headings: ["Drilling Between Reports"]
 links: []
+image_dir: "Interject-Financials"
 description: Interject™ Financials for Epicor Enterprise. The basics of drilling through data to a more detailed report.
 ---
 

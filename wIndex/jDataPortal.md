@@ -5,6 +5,7 @@ layout: custom
 keywords: [jDataPortal, helper, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Usable In These Report Formulas"]
 links: ["/wGetStarted/L-Dev-CustomerAgingDetail.html", "/wDeveloper/SetupjDataPortal.html", "/wPortal/INTERJECT-Roles.html", "ReportRange.html", "ReportVariable.html", "ReportFixed.html"]
+image_dir: ""
 description: The jDataPortal function establishes a connection to an Interject DataPortal that will be used as the data source for the function it is embedded in.
 ---
 * * *

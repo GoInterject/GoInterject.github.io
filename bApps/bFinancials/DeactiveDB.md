@@ -5,6 +5,7 @@ layout: custom
 keywords: [inactive, deactivate, databases, script, SQL]
 headings: []
 links: ["https://docs.gointerject.com/bApps/bFinancials/InitialDataLoad.html#begin-data-load"]
+image_dir: ""
 description: Following are the steps required to deactivate specified databases in your initial upload.
 ---
 

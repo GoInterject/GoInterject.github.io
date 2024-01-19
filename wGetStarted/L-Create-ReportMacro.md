@@ -5,6 +5,7 @@ layout: custom
 keywords: [report, macro, VBA, triggers, hooks, sub, routine, function]
 headings: ["Overview", "Setting up the Worksheet", "Using Report Macro", "Requirements for VBA", "Enabling VBA Hooks"]
 links: ["/wIndex/ReportMacro.html", "/wIndex/ReportRange.html", "/wAbout/Customer-Aging.html"]
+image_dir: "L-Create-RepMacro"
 description: ReportMacro is an Excel formula provided by Interject. It allows Interject to interact with publicly defined VBA functions on a report. ReportMacro is useful for specialized reports where a customized action needs to be taken. This action can be built into a VBA Macro based on the complex needs of the report. Then, ReportMacro() is used to execute the custom action at the right point within the reporting process.
 ---
 * * *

@@ -5,6 +5,7 @@ layout: custom
 keywords: [request context, parse, system parameter, stored procedure, XML]
 headings: ["Overview", "Procedure Variables", "The RequestContext_Parse Code", "Testing the Procedure", "An Example Using the Procedure"]
 links: []
+image_dir: ""
 description: This page that lists the interject request context parse stored procedure
 ---
 * * *

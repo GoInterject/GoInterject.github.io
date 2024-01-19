@@ -5,6 +5,7 @@ layout: custom
 keywords: [data pull functions, range, fixed, variable, lookup]
 headings: ["Overview", "ReportRange", "ReportFixed", "ReportVariable", "ReportLookup"]
 links: ["/wIndex/ReportRange.html", "/wIndex/ReportFixed.html", "/wIndex/ReportVariable.html", "/wIndex/ReportLookup.html"]
+image_dir: ""
 description: Data Pull Functions are focused on getting specific data to the report in the right way and placed inside the spreadsheet. There are a variety of functions and options therein to give flexibility in what data is displayed.
 ---
 * * *

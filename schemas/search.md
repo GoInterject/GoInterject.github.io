@@ -4,6 +4,7 @@ filename: "search.md"
 keywords: [Search, Interject, documentation, manual, guide, reference, api]
 headings: []
 links: []
+image_dir: ""
 description: Interject documentation search results
 noratings: false
 notoc: false

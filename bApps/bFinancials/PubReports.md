@@ -5,6 +5,7 @@ layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: ["Publishing and Updating Report Templates in the Report Library", "Updating Existing Report Templates"]
 links: []
+image_dir: "Financials-TemplateSave"
 description: Step by step guide on using Interject Financials - Publishing Epicor Enterprise financial report templates.
 ---
 

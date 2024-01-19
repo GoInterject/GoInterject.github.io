@@ -5,6 +5,7 @@ layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: []
 links: ["https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017"]
+image_dir: "A-SQL-Installation"
 description: Step by step guide on data tier, initial data load, FRx Migration, and other key processes of installing of Interject for Financials Epicor Enterprise.
 ---
 

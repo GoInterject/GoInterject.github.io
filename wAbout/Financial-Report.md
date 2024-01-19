@@ -5,6 +5,7 @@ layout: custom
 keywords: [financial, PL Trend Report, drill, detail, JE transaction, JE lookup, JE Query, data cells, walkthrough]
 headings: ["Overview", "Navigating to the PLTrend Report", "Modifying the Report", "Grouped Detail in the Report", "Drill to JE-Transaction", "Drill Further Into JE-Lookup", "Report Example With Data Cells", "Related Links"]
 links: ["/wAbout/Report-Library-Basics.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data", "/wIndex/jCell.html", "/wIndex/jAcct.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#pull-data", "/wIndex/Data-Cell-Functions.html", "/wGetStarted/L-Modify-FinancialReport.html", "/wGetStarted/Creating-a-Simple-Report.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "/wAbout/Tabular-vs-Data-Cells.html", "/wIndex/Data-Cell-Functions.html"]
+image_dir: "Walkthrough-Financial"
 description: This lab is for controllers or accountants who work with financial data and spreadsheets. In this walkthrough, you will open a Profit and Loss (PL) Trend report and drill into the supporting detail from the general ledger detail. The Journal Entry (JE) Query report will provide you account level detail and will allow for drills further into each journal entry.
 ---
 * * *

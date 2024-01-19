@@ -5,6 +5,7 @@ layout: custom
 keywords: [jacct, account, segment, function, formula, chart of accounts]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example"]
 links: ["/wIndex/jCell.html"]
+image_dir: ""
 description: A helper function that specifies filters for up to six segments of a Chart of Accounts  
 ---
 * * *

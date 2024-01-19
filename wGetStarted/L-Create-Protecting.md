@@ -5,6 +5,7 @@ layout: custom
 keywords: [password, protecting, unprotecting, locking, unlock, security]
 headings: ["Overview", "Interject Sheet Protector Roles", "Unlocking Cells", "Protecting the Sheet and Pulling Data", "Protecting Multiple Sheets", "Special Consideration for Column Groupings"]
 links: ["https://support.microsoft.com/en-au/office/protect-a-worksheet-3179efdb-1285-4d49-a9c3-f4ca36276de6", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#sheet-protector", "/wPortal/INTERJECT-Roles.html", "/wGetStarted/L-Create-CustomerAging.html"]
+image_dir: "L-Create-Protecting"
 description: Interject provides an improved method to handle protecting sheets. The Sheet Protector window allows Interject users with the Client Admin role to quickly protect or unprotect the sheet without any need to know the password.
 ---
 * * *

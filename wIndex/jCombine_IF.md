@@ -5,6 +5,7 @@ layout: custom
 keywords: [jCombineIF, helper, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Usable In These Functions"]
 links: ["/wGetStarted/L-Create-RetainFeature.html#jcombineif", "ReportRange.html", "ReportVariable.html"]
+image_dir: ""
 description: The jCombineIF function concatenates a range or multiple ranges of cells into a single string using a designated delimiter if a certain condition is met.
 ---
 * * *

@@ -5,6 +5,7 @@ layout: custom
 keywords: [report library, link, file, version, report, update, upload, details, documentation]
 headings: ["Overview", "Creating a New Link (File Open)", "Creating a New Link (File Not Open)", "Creating a New Version to an Existing Link", "Updating a Report Link", "The Report Link Details Form", "Types of Links", "Link Documentation"]
 links: ["/wAbout/Report-Library-Basics.html#status", "/wAbout/Report-Library-Basics.html#link-version-section", "/wAbout/ReportLibrarySorting.html", "/wAbout/Report-Library-Basics.html#status", "/wGetStarted/L-Drill-DrillCodes.html", "https://docs.gointerject.com/wTroubleshoot/Cloud-File.html"]
+image_dir: "ReportLibraryLinks"
 description: The Report Library provides an easy interface where new reports can be uploaded, existing reports can be updated, and details and documentation about the report can be added.
 ---
 * * *

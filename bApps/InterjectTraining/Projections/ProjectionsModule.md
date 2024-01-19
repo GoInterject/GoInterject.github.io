@@ -5,6 +5,7 @@ layout: custom
 keywords: [Training, Projections]
 headings: ["Overview", "Projection Template", "Projections Change Query"]
 links: ["/bApps/InterjectTraining/Projections/ProjectionTemplateSummary.html", "/bApps/InterjectTraining/Projections/ProjectionChangeQuery.html"]
+image_dir: ""
 description: The Projections Module gives controllers tools needed to forecast the amounts they project as necessary in the upcoming months.
 ---
 

@@ -5,6 +5,7 @@ layout: custom
 keywords: [report formula, column definitions, formatting range, hidden, parameters, notes]
 headings: ["Overview", "Accessing the Report Formulas", "Column Definitions", "Formatting Range", "Report Formulas", "Hidden Parameters and Notes"]
 links: ["/wAbout/Customer-Aging.html", "/wAbout/Report-Library-Basics.html", "/wPortal/INTERJECT-Ribbon-Menu-Items.html#unfreeze", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wIndex/Data-Functions-Landing.html", "/wIndex/ReportDrill.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data", "/wIndex/ReportSave.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html"]
+image_dir: "BasicsReportFormulas"
 description: At the top of Interject reports is a section called report formulas which handles the behavior of the report.
 ---
 * * *

@@ -5,6 +5,7 @@ layout: custom
 keywords: [basic, distribution, email, report, export, file, PDF, walkthrough]
 headings: ["Overview", "Create a Distribution From an Existing Report", "Distributing to a Folder", "Distributing With Email"]
 links: ["/wAbout/Financial-Report.html", "/wGetStarted/L-Export-AdvancedDist.html#Grouping-Segments", "https://portal.gointerject.com/profile.html", "/wGetStarted/L-Export-AdvancedDist.html"]
+image_dir: "L-Export-BasicDist"
 description: The distribution process provides extensive control when creating and distributing reports. You can create one or more report workbooks and choose which worksheet tabs to include, create copies by iterating through different filters, and choose export targets like File Location, Email, Print, PDF, etc.
 ---
 * * *

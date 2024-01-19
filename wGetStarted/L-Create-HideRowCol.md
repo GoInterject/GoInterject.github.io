@@ -5,6 +5,7 @@ layout: custom
 keywords: [hide, rows, columns]
 headings: ["Overview", "Hiding Rows", "Hiding Columns"]
 links: ["/wIndex/ReportHideRowOrColumn.html", "/wGetStarted/L-Create-CustomerAgingDetail.html", "/wAbout/Report-Library-Basics.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "/wAbout/ReportLibraryLinks.html"]
+image_dir: "L-Create-HideRowCol"
 description: The ReportHideRowOrColumn() function allows you to hide rows columns when they are not needed, for example if a row contains no data. In the first example, you will hide rows containing a total value of zero. The second example shows how to hide columns using the same function and for a similar reason.
 ---
 * * *

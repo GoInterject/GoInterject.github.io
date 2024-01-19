@@ -5,6 +5,7 @@ layout: custom
 keywords: [report, error, user support, progress bar window, activity log]
 headings: ["Overview", "Using the Progress Bar Window", "Using Activity Logs"]
 links: ["/wGetStarted/L-Dev-Error-Handling.html"]
+image_dir: "InvestigatingReportErrors"
 description: Report errors can happen for a number of reasons. There are two types of errors that Interject can display, handled and unhandled. Errors can be investigated using the Progress Bar Window or Activity Logs.
 ---
 * * *

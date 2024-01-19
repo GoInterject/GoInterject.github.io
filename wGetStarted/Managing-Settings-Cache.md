@@ -5,6 +5,7 @@ layout: custom
 keywords: [settings, config, files, system, cache]
 headings: ["Overview", "Forcing Cached Settings to Refresh", "Making the Middle Tier Forgiving"]
 links: []
+image_dir: ""
 description: Interject optimizes speed by caching company settings, such as Data Portals, Connections, and Report Library templates. This information is received on login and is stored in memory for as long as the Excel session is open.
 ---
 * * *

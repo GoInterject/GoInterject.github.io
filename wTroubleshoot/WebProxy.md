@@ -5,6 +5,7 @@ layout: custom
 keywords: [config, settings, diagnostics, app.config]
 headings: ["Overview", "Configure via Diagnostics Setting", "Configure via app.config File"]
 links: ["https://learn.microsoft.com/en-us/dotnet/api/system.net.credentialcache.defaultcredentials", "https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings"]
+image_dir: "App-Errors"
 description: The Interject Addin allows users to authenticate using Windows authentication. For this Interject uses the Microsoft DefaultCredential library to set up a proxy.
 ---
 * * *

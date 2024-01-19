@@ -5,6 +5,7 @@ layout: custom
 keywords: [quick, export, PDF, publish, distribute, data cells, walkthrough]
 headings: ["Overview", "Quick Export", "Quick PDF"]
 links: ["/wAbout/Tabular-vs-Data-Cells.html", "/wAbout/Tabular-vs-Data-Cells.html", "/wAbout/Financial-Report.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#export-book", "https://learn.microsoft.com/en-us/troubleshoot/dynamics/gp/have-microsoft-save-pdf-xps-add-in", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#export-book", "/wGetStarted/L-Export-BasicDist.html"]
+image_dir: "L-Export-QuickExPDF"
 ---
 * * *
 

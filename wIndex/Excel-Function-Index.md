@@ -5,6 +5,7 @@ layout: custom
 keywords: [functions, formulas, index, data, pull, save, drill, event, helper, data cell]
 headings: ["Overview", "Data Pull Functions", "Data Save Functions", "Data Drill Functions", "Event Functions", "Helper Functions", "Data Cell Functions"]
 links: ["/wIndex/ReportRange.html", "/wIndex/ReportFixed.html", "/wIndex/ReportVariable.html", "/wIndex/ReportLookup.html", "/wIndex/ReportSave.html", "/wIndex/ReportDrill.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data", "/wIndex/ReportMacro.html", "/wIndex/ReportRun.html", "/wIndex/ReportCalc.html", "/wIndex/ReportDefaults.html", "/wIndex/ReportGrouping.html", "/wIndex/ReportHideRowOrColumn.html", "/wIndex/jDropdown.html", "/wIndex/jFocus.html", "/wIndex/jFreezePanes.html", "/wIndex/jCombine.html", "/wIndex/jCombine_IF.html", "/wIndex/jDataPortal.html", "/wIndex/jColumnDef.html", "/wIndex/jRangeTag.html", "/wIndex/jWorkbookProperty.html", "/wIndex/Pair.html", "/wIndex/PairGroup.html", "Pair.html", "/wIndex/Param.html", "/wIndex/jAcct.html", "/wIndex/jCell.html", "/wIndex/jDesc.html"]
+image_dir: ""
 description: Interject provides features by leveraging spreadsheet formulas that are familiar to many users. These formulas can be used to direct data into a spreadsheet, creating practical and adaptable reports. By adding report drills and navigation through additional spreadsheet formulas, these reports become a comprehensive reporting solution.
 ---
 * * *

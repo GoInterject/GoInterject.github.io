@@ -5,6 +5,7 @@ layout: custom
 keywords: [Epicor, setup, init, data]
 headings: ["Begin Data Load", "Steps Required for Interject Application Setup - Data Connection", "Redirect the DB Connection to the new DB in Interject portal"]
 links: ["https://docs.gointerject.com/bApps/bFinancials/DeactiveDB.html", "https://portal.gointerject.com", "https://portal.gointerject.com"]
+image_dir: "Train"
 description: Setup to initialize Epicor Enterprise Data.
 ---
 

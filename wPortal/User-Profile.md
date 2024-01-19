@@ -5,6 +5,7 @@ layout: custom
 keywords: [user profile, website portal, roles, admin]
 headings: ["Overview"]
 links: []
+image_dir: "UserProfile"
 description: Shows the user profile area of the website portal.
 ---
 * * *

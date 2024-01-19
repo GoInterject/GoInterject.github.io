@@ -5,6 +5,7 @@ layout: custom
 keywords: [inventory, reports, drill, detail, return, walkthrough]
 headings: ["Overview", "Navigating to the Inventory Reports", "Drilling to the Detail", "Return From Drill and Re-Drill", "Alternate Inventory Example"]
 links: ["/wAbout/Report-Library-Basics.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "/wGetStarted/Drilling-Between-Reports.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#return-from-drill", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "/wGetStarted/L-Modify-InventoryReport.html"]
+image_dir: "Inventory"
 description: This lab is a basic inventory example for tracking product quantities. In this walkthrough, you will open a summary of our product categories and total quantities. You will then drill into the Inventory Detail tab to view specific products within that category
 ---
 * * *

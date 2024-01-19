@@ -5,6 +5,7 @@ layout: custom
 keywords: [range, report, build, example, customer aging, northwind customers, walkthrough]
 headings: ["Overview", "Building the Report", "Getting Started", "Final Formatting", "Setting up jFreezePanes"]
 links: ["/wIndex/ReportRange.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder", "/wApps/Common-Dataportal-Index.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wIndex/jFreezePanes.html", "/wIndex/jFocus.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools", "/wAbout/ReportLibraryLinks.html"]
+image_dir: "L-Create-CustAging"
 description: In this page you will see the process of building a Customer Aging report from scratch to better understand reports and also get a clearer illustration of the Interject Report Range data function
 ---
 * * *

@@ -5,6 +5,7 @@ layout: custom
 keywords: [Training, Capital, Capital Input]
 headings: ["Overview", "To Delete PO Items", "Asset Information", "Replacement Info", "Do I have security rights to Save from this Input File?", "Drills", "Common Save Errors"]
 links: ["/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#the-capital-input-tool", "/bApps/InterjectTraining/Capital/CCQuery.html"]
+image_dir: "WCNTraining/Capital"
 description: Save new Capital PO Items for a specific District, and pull in existing Capital PO information.
 ---
 

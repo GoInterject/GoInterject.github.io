@@ -5,6 +5,7 @@ layout: custom
 keywords: [Training, Budget, Budget Change Query]
 headings: ["Overview"]
 links: []
+image_dir: "WCNTraining/Budget"
 description: This tab of the Budget Change Query tool provides a detailed overview of budgets with several filtering options.
 ---
 

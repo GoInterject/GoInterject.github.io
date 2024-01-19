@@ -5,6 +5,7 @@ layout: custom
 keywords: [jColumnDef, helper, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition"]
 links: ["/wIndex/FinCube---The-Financial-Cube.html", "/wGetStarted/L-Create-FinancialVariable.html", "/wIndex/FinCube---The-Financial-Cube.html"]
+image_dir: ""
 description: The jColumnDef function defines a column based on one or more parameters.
 ---
 * * *

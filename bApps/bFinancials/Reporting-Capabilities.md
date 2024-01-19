@@ -5,6 +5,7 @@ layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: ["Reporting Capabilities", "Build Financial Statements", "Transaction Reports"]
 links: []
+image_dir: ""
 description: Interject™ Financials for Epicor Enterprise comes with a robust inventory of pre-built reports, as well as extended capabilities to builf out custom reports.
 ---
 

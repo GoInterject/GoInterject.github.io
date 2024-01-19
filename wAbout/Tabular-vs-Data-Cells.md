@@ -5,6 +5,7 @@ layout: custom
 keywords: [cells, tabular, data cells]
 headings: ["Overview", "Tabular", "Data Cells", "What is Common Between Data Lists and Data Cells"]
 links: ["/wGetStarted/INTERJECT-Ribbon-Menu-Items#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items#export-book"]
+image_dir: ""
 description: The Report Library is a way for your team to share reports from a central location going beyond just a Sharepoint or a Shared Network Folder. The reports are uploaded to the library and can be accessed from any computer using Excel via Interject.
 ---
 * * *

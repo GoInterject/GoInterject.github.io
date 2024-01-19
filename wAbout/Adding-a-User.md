@@ -5,6 +5,7 @@ layout: custom
 keywords: [user, role, login, profile, admin]
 headings: ["Overview", "Adding a New User", "Adding an Interject Role", "Additional Info"]
 links: ["/wPortal/INTERJECT-Roles.html#overview", "https://portal.gointerject.com/login.html", "/wPortal/INTERJECT-Roles.html#overview"]
+image_dir: "AddingAUser"
 description: This overview is a step by step process on how to add a new user to Interject using the Portal site. Adding a new user can be accomplished only by the ClientAdmin role.
 ---
 * * *

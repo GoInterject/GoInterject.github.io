@@ -5,6 +5,7 @@ layout: custom
 keywords: [autorun, RunOnOpen, run, pull, property]
 headings: ["Overview", "Setting up Run on Open via Diagnostics", "RunOnOpen Input Syntax", "RunOnOpen Examples Codes", "RunOnOpen Example"]
 links: ["/wGetStarted/L-Create-CustomerAging.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#diagnostics", "/wAbout/Report-Library-Basics.html"]
+image_dir: "L-Create-RunOnOpen"
 description: Use this property to auto-pull the report when opening for the first tab that appears. No VBA required.
 ---
 * * *

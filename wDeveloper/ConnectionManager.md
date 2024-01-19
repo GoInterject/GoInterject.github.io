@@ -5,6 +5,7 @@ layout: custom
 keywords: [id providers, identity providers, login, tokens, federated, enterprise]
 headings: ["Overview", "Logging In and Out of a Connection"]
 links: ["/wAbout/Federated-Login-Design.html", "/wAbout/Enterprise-Login-Setup.html", "/wAbout/Logging-In-Enterprise.html#clearing-login-cookies"]
+image_dir: "ConnectionManager"
 description: The Interject Connection Manager displays the current Web API connections associated with a company and that use a federated login.
 ---
 * * *

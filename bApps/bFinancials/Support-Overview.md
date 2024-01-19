@@ -5,6 +5,7 @@ layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: ["Support"]
 links: ["https://docs.gointerject.com/wTroubleshoot/Troubleshooting-Landing.html#overview"]
+image_dir: ""
 description: The best way to get support.
 ---
 

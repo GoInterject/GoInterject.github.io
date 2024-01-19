@@ -5,6 +5,7 @@ layout: custom
 keywords: [menu, items, ribbon, buttons, index]
 headings: ["Overview", "Simple Menu Items", "Advanced Menu Items", "Report Library", "Pull Data", "Save Data", "Drill on Data", "Return From Drill", "Custom Commands", "Quick Tools", "Export Book", "Report Builder", "Sheet Protector", "Login/Logout", "Connections", "Company", "Validation Report", "JSON", "Diagnostics", "System", "Check For Updates", "Online Training", "User Support", "About Interject"]
 links: ["/wAbout/Report-Library-Basics.html", "/wAbout/Customer-Aging.html", "/wIndex/ReportSave.html", "/wAbout/Tabular-vs-Data-Cells.html", "/wGetStarted/Drilling-Between-Reports.html", "/wAbout/Inventory-Reports.html#return-from-drill-and-re-drill", "/wAbout/Tabular-vs-Data-Cells.html#data-cells", "/wDeveloper/CustomItems.html", "/wIndex/Quick-Tools-Landing.html", "/wGetStarted/Exporting-Reports.html", "/wIndex/ReportRange.html", "/wGetStarted/L-Create-CustomerAging.html", "/wGetStarted/L-Create-Protecting.html", "/wAbout/Logging-In.html", "/wDeveloper/ConnectionManager.html", "/wAbout/Report-Library-Basics.html", "/wPortal/Data-Connections.html", "/wTroubleshoot/Validation-Report.html", "/wIndex/Data-Functions-Landing.html", "/wIndex/ReportSave.html", "/wPortal/Data-Connections.html", "/wAbout/Updating-INTERJECT.html", "https://docs.gointerject.com/", "/wTroubleshoot/Reporting-A-Problem.html"]
+image_dir: "InterjectRibbon"
 description: Overviews of each button in the Interject Excel Ribbon.
 ---
 * * *

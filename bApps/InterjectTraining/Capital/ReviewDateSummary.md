@@ -5,6 +5,7 @@ layout: custom
 keywords: [Training, Capital, Capital Change Query, Review Date]
 headings: ["Overview", "Capital and the Control Center"]
 links: ["/bApps/InterjectTraining/Budget/ControlCenter.html", "/bApps/InterjectTraining/Budget/ControlCenter.html"]
+image_dir: "WCNTraining/Capital"
 description: Pull in Capital amounts grouped by Asset group into the Review Date buckets.
 ---
 

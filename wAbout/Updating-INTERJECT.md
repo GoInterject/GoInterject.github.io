@@ -5,6 +5,7 @@ layout: custom
 keywords: [update, updating, version]
 headings: ["Overview", "Updating to the Newest Version of Interject"]
 links: ["https://www.youtube.com/watch?v=lNu5AjM7Ofo", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#check-for-updates"]
+image_dir: "Updating"
 description: The walkthrough shows how to update INTERJECT to the newest version
 ---
 * * *

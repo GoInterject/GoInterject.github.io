@@ -5,6 +5,7 @@ layout: custom
 keywords: [error, handling, RAISERROR, UserNotice, return message]
 headings: ["Overview", "Understanding Error Handling", "Error Handling With RAISERROR", "Error Handling With UserNotice", "Unhandled Error Behavior"]
 links: []
+image_dir: "Error-Handling"
 description: Explains how Interject handles errors in Data Portals using T-SQL RAISERROR and UserNotice.
 ---
 * * *

@@ -5,6 +5,7 @@ layout: custom
 keywords: [jRangeTag, helper, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition"]
 links: ["/wGetStarted/L-Export-BasicDist.html"]
+image_dir: ""
 description: The jRangeTag function simply tags a designated range with a name.
 ---
 * * *

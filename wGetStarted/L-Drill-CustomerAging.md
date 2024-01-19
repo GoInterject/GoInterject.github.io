@@ -5,6 +5,7 @@ layout: custom
 keywords: [drill, create, build, customer aging, walkthrough]
 headings: ["Overview", "Unfreezing the Excel Sheet", "Build the Drill", "Final Results"]
 links: ["/wIndex/ReportDrill.html", "/wIndex/PairGroup.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "/wAbout/ReportLibraryLinks.html"]
+image_dir: "L-Drill-CustAging"
 description: In this example, you will be setting up a simple drill to the customer orders history. It is a great use case for creating your first drill.
 ---
 * * *

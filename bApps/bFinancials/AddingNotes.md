@@ -5,6 +5,7 @@ layout: custom
 keywords: [Report, Epicor, Notes, Comments]
 headings: ["Report Setup", "Adding Summary Level Comments"]
 links: []
+image_dir: "bFinancials-AddingNotes"
 description: Step by step guide on adding comment columns to your report templates.
 ---
 

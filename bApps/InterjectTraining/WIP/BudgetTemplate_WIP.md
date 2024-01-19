@@ -5,6 +5,7 @@ layout: custom
 keywords: [Training, Budget, Budget Template]
 headings: ["Overview", "Input Field Explanations", "Base Year and Fincube", "Retain Rows and how it works", "Summary and Detail level accounts", "Pulling Summary and Detail levels together", "Saving Summary and Detail levels together", "The Autocalcs", "Do I have security rights to Save from the Budget Template?", "Budget Template and the Control Center", "After Corp Cutoff and after BOD", "After Corp Cutoff", "After BOD", "Common Save Errors"]
 links: ["/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html", "/bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html", "/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html", "/bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html"]
+image_dir: "WCNTraining/Budget"
 description: This is the primary tool used for managing Budgets. This tool can be downloaded and customized in your local environment.
 ---
 

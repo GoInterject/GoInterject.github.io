@@ -5,6 +5,7 @@ layout: custom
 keywords: [Training, Capital, Capital Change Query]
 headings: ["Overview", "CCQuery", "ReviewDateSummary"]
 links: ["/bApps/InterjectTraining/WIP/CCQuery_WIP.html", "/bApps/InterjectTraining/WIP/ReviewDateSummary_WIP.html"]
+image_dir: ""
 description: This tool provides an in-depth view into the historical data for the Capital PO changes.
 ---
 

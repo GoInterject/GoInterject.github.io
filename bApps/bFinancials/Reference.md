@@ -5,6 +5,7 @@ layout: custom
 keywords: [FRx, Epicor, deployment]
 headings: ["Reference", "Media/Source Files"]
 links: []
+image_dir: ""
 description: Reference page for the Intuition Interject Deployment Plan
 ---
 

@@ -5,6 +5,7 @@ layout: custom
 keywords: [ReportRun, run, event, trigger, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Trigger Combination List"]
 links: ["wIndex/Event-Functions-Landing.html", "/wGetStarted/L-Create-PivotTable.html", "Data-Functions-Landing.html", "Formatting-Functions-Landing.html"]
+image_dir: ""
 description: The ReportRun function will run a designated report function(s) within a Workbook when triggered upon a designated event.
 ---
 * * *

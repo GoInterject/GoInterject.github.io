@@ -5,6 +5,7 @@ layout: custom
 keywords: [RowDefRange, ColDefRange, Column definition missing, data clear]
 headings: ["Overview", "Cause of the Error", "The Solution"]
 links: ["/wIndex/ReportVariable.html"]
+image_dir: "RowDefClear"
 description: Data does not clear when multiple columns are defined as the RowDefRange for a ReportVariable. This happens only when the first column of the RowDefRange is missing from the ColDefRange.
 ---
 * * *

@@ -5,6 +5,7 @@ layout: custom
 keywords: [customer, aging, modify, drill, save, detail, pivot table, walkthrough]
 headings: ["Overview", "Navigating to the Aging Summary", "Drilling Into the Aging Detail", "Saving the Data", "Moving to a Pivot Table"]
 links: ["/wAbout/Report-Library-Basics.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wAbout/Inventory-Reports.html"]
+image_dir: "Walkthrough-CustAging"
 description: In this walkthrough, you will open a basic aging summary and modify it to fit your specific needs. You will then drill into the details tab, take notes on any unpaid invoices, then save them back to the database.
 ---
 * * *

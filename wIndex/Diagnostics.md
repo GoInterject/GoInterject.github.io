@@ -5,6 +5,7 @@ layout: custom
 keywords: [Diagnostics, Tools, Settings, Configurations, Config]
 headings: ["Overview", "Diagnostic Pane Fields", "Public", "System Tools", "Support"]
 links: ["/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#advanced-menu-items", "/wIndex/Diagnostics-SpecialFeatures.html", "/wIndex/Diagnostics-ShortKey.html"]
+image_dir: "Diagnostics"
 description: The Diagnostics feature of Interject allows users to set and change numerous configurations within Excel as well as utilize various tools for diagnostics and debugging.
 ---
 * * * 

@@ -5,6 +5,7 @@ layout: custom
 keywords: [Diagnostics, Apply Special Features, Configuration, Config, animations, bug fix]
 headings: ["Overview", "BugFix1: Microsoft Animations", "BugFix2: Microsoft Repaint"]
 links: []
+image_dir: "Diagnostics"
 description: The "Apply Special Features" in the Interject Diagnostics Pane allows users to apply certain bux fixes.
 ---
 * * *   

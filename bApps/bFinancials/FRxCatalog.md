@@ -5,6 +5,7 @@ layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: []
 links: []
+image_dir: "Config"
 description: Step by step guide on using Interject Financials - Epicor financial report templates.
 ---
 

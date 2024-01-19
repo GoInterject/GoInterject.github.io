@@ -5,6 +5,7 @@ layout: custom
 keywords: [alter, change, modify, fixed, inventory, category, add column, add row, jFreezePanes, walkthrough]
 headings: ["Overview", "Setting up the Report", "Adding a Row to the Report", "Adding a New Definition Column", "Preparing the Report to Share"]
 links: ["/wAbout/Report-Library-Basics.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wAbout/Basics-of-Report-Formulas.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wIndex/jFreezePanes.html", "/wIndex/jFreezePanes.html", "/wAbout/ReportLibraryLinks.html"]
+image_dir: "L-Modify-Inventory"
 description: In this example you will be modifying a fixed report, going over how to add a row to the report as well as add a description column.
 ---
 * * *

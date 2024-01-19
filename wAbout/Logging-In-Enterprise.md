@@ -5,6 +5,7 @@ layout: custom
 keywords: [login, ribbon, logout, new login, credentials, accounts, enterprise, user]
 headings: ["Overview", "Initial Enterprise Login", "New Login", "Logging Out", "Log Back In", "Switch Accounts", "Forgetting Login Credentials", "Clearing Login Cookies"]
 links: []
+image_dir: "Login-Enterprise"
 description: Logging in is simple and fast! Interject will remember your login and sign you in automatically subsequent visits.You can also add multiple logins and switch accounts easily.
 ---
 * * *

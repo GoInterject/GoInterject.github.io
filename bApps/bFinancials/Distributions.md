@@ -5,6 +5,7 @@ layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: []
 links: ["https://docs.gointerject.com/bApps/bFinancials/ReportTemplates.html"]
+image_dir: "Train"
 description: Step by step guide on using Interject Financials - Epicor Enterprise financial report distribution.
 ---
 

@@ -5,6 +5,7 @@ layout: custom
 keywords: [fixed, inventory, report, create, jWorkbookProperty, northwind fixed, run on open, walkthrough]
 headings: ["Overview", "Building the Report", "Setting up Run on Open", "jWorkbookProperty()"]
 links: ["/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder", "/wIndex/Common-Dataportal-Index.html", "/wIndex/ReportRange.html", "/wIndex/ReportFixed.html", "/wIndex/ReportFixed.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wAbout/ReportLibraryLinks.html", "/wGetStarted/L-Create-RunOnOpen.html", "/wIndex/jWorkbookProperty.html"]
+image_dir: "L-Create-InventoryFix"
 description: In this page, you will go through the process of building a fixed Inventory report from scratch using the ReportFixed() function.
 ---
 * * *

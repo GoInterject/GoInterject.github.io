@@ -5,6 +5,7 @@ layout: custom
 keywords: [Customer Aging Detail, example, walkthrough, SQL, Data Portal, server connection]
 headings: ["Overview", "Verifying the Data Connection", "Copying and Modifying the Data Portals", "Creating the Stored Procedure", "Create the Report", "Creating a New Data Portal With Multiple Record Sets", "Updating the Stored Procedure for 2 Record Sets", "Updating the Report for 2 Record Sets"]
 links: ["/wGetStarted/L-Dev-CustomerOrders.html", "/wAbout/Customer-Aging.html", "/wGetStarted/L-Dev-CustomerAgingDetail.html", "mailto:info@gointerject.com", "/wGetStarted/L-Create-CustomerAgingDetail.html"]
+image_dir: "L-Dev-CustAgingDetail"
 description: In this example, you will learn to create a third report, Customer Aging Detail, that will be drilled to from the Customer Aging Report. This report shows a customer's outstanding balance by individual invoice.
 ---
 * * *

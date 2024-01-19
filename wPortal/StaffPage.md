@@ -5,6 +5,7 @@ layout: custom
 keywords: [users, new, roles, user passwords, credentials]
 headings: ["Overview", "The Staff Page", "External Admins", "View, Edit, Activate/Deactivate, Delete User", "Add User", "Adding Details", "Password", "Create User", "Welcome Email", "Roles"]
 links: ["https://portal.gointerject.com/", "/wPortal/INTERJECT-Roles.html#clientadmin-role", "/wPortal/MFA.html", "/wPortal/Altering-User-Passwords.html", "/wPortal/INTERJECT-Roles.html"]
+image_dir: "StaffPage"
 description: The Interject Portal site allows you to add, edit, or delete users from your organization via the Staff Page. This page will show you how to do this.
 ---
 * * *

@@ -5,6 +5,7 @@ layout: custom
 keywords: [developer, platform, definition, workflow, how it works]
 headings: ["Overview", "Two Basic Concepts Go a Long Way", "Data Workflow"]
 links: []
+image_dir: "Defined"
 ---
 * * *
 

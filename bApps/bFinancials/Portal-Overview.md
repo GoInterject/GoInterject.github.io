@@ -5,6 +5,7 @@ layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: ["User Profiles"]
 links: []
+image_dir: "Login"
 description: A quick guide to Using the Interject Data Portal Site.
 ---
 

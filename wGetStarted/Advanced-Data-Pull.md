@@ -5,6 +5,7 @@ layout: custom
 keywords: [pull, advanced, walkthrough, example]
 headings: ["Overview", "Understanding the Business Use Case", "Customer Aging Detail"]
 links: ["/wAbout/Customer-Aging.html", "/wGetStarted/L-Dev-CustomerAgingDetail.html", "/wGetStarted/L-Dev-CustomerOrders.html", "/wAbout/Customer-Aging.html"]
+image_dir: ""
 description: Interject reports can handle a wide variety of complex reports. Up to this point you have seen simple reports where a single recordset is returned to single area of the spreadsheet. This topic will share advanced reporting configurations that use multiple recordsets and multiple Interject report formulas and supporting functions to construct advanced presentations.
 ---
 * * *

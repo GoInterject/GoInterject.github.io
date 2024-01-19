@@ -5,6 +5,7 @@ layout: custom
 keywords: [login, website portal]
 headings: ["Overview"]
 links: ["https://portal.gointerject.com/login.html", "/wPortal/Lab-15.2-Database-Connection.html", "/wPortal/Data-Portals.html"]
+image_dir: "Login"
 description: The Interject Portal is a websites that allows you to access all the data portals and data connections. Once logged in you can create, customize and remove them as needed.
 ---
 * * *

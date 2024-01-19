@@ -5,6 +5,7 @@ layout: custom
 keywords: [report, test, data, connection, user support]
 headings: ["Overview"]
 links: []
+image_dir: "TestingDataConnections"
 description: Before setting up a Data Connection to a Database, you can verify that the connection can be established within Excel by accessing the Check Connection window.
 ---
 * * *

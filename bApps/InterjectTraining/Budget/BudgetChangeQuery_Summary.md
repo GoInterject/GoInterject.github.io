@@ -5,6 +5,7 @@ layout: custom
 keywords: [Training, Budget, Budget Change Query]
 headings: ["Overview"]
 links: []
+image_dir: "WCNTraining/Budget"
 description: The Summary tab is a summarized view of the saved budgets for the account groupings, with many filter options.
 ---
 

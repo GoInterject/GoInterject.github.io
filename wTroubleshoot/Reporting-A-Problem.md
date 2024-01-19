@@ -5,6 +5,7 @@ layout: custom
 keywords: [report, reporting, error, logs, contact, user support]
 headings: ["Overview", "Sending Logs", "Send Report to Interject", "Contact Interject Support"]
 links: ["/wTroubleshoot/Verbose-Logging.html", "/wTroubleshoot/RAM-Monitoring.html"]
+image_dir: "InterjectSupport"
 description: User Support can be accessed inside Excel and provide an interface to report a problem to Interject or display Interject's contact information.
 ---
 * * *

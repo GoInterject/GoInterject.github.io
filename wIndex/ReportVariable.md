@@ -5,6 +5,7 @@ layout: custom
 keywords: [ReportVariable, variable, function, formula, data, pull]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Embeddable Helper Functions"]
 links: ["/wIndex/ReportFixed.html", "/wGetStarted/L-Create-InventoryVariable.html", "https://docs.gointerject.com/wIndex/jDataPortal.html", "https://docs.gointerject.com/wIndex/Param.html", "https://docs.gointerject.com/wTroubleshoot/Reports.html#validation-report-for-pullsave-events", "/wGetStarted/L-Create-RetainFeature.html", "https://docs.gointerject.com/wIndex/jCombine.html", "https://docs.gointerject.com/wIndex/jCombine_If.html", "/wIndex/jDataPortal.html", "Param.html", "/wIndex/jCombine.html", "/wIndex/jCombine_IF.html"]
+image_dir: ""
 description: The ReportVariable function pulls data from a data source and inserts it into a spreadsheet.
 ---
 * * *

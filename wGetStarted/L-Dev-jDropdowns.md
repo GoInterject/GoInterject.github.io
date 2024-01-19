@@ -5,6 +5,7 @@ layout: custom
 keywords: [jDropdown, function, develop, build, walkthrough]
 headings: ["Overview", "Setting up the Data Connection", "Setting up the Data Portal", "Creating the Stored Procedure", "Testing the Stored Procedure"]
 links: ["/wGetStarted/L-Create-Dropdowns.html", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "https://portal.gointerject.com", "/wPortal/L-Database-Connection.html#testing-the-connection-string-from-within-excel", "https://portal.gointerject.com", "https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017", "/wGetStarted/L-Create-Dropdowns.html"]
+image_dir: "L-Dev-Dropdowns"
 description: Walks through how to create the stored procedures for the jDropdowns built in the customer aging create report.
 ---
 * * *

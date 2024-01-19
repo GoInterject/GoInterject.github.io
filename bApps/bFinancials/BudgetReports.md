@@ -5,6 +5,7 @@ layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: []
 links: []
+image_dir: "Train"
 description: Step by step guide on adding budget columns to your report templates.
 ---
 

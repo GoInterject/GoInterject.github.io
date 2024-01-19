@@ -4,6 +4,7 @@ filename: "ReportLibraryOrganization.md"
 layout: custom
 headings: ["Overview", "Sorting Reports Links", "Sorting Folders", "Folder Organization"]
 links: []
+image_dir: "ReportLibrarySorting"
 description: The Report Library is designed to be a central hub for all your report sharing and organizational needs. It contains its own folder hierarchy (3 levels deep for simplicity) for basic organization. You can sort reports within a folder and also the nested folders themselves.
 ---
 * * *

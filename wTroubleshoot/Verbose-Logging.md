@@ -5,6 +5,7 @@ layout: custom
 keywords: [app, errors, reset, send report, verbose logging]
 headings: ["Overview", "Turn on Verbose Logging"]
 links: ["/wTroubleshoot/Reporting-A-Problem.html#send-report-to-interject"]
+image_dir: "Verbose-Logging"
 description: To help diagnose any errors, Interject uses a Verbose Logging feature. The ideal goal of Verbose Logging is to help recreate an error and send logs to Interject's support team, where it can be fixed.
 ---
 * * *

@@ -4,6 +4,7 @@ filename: "readme.md"
 keywords: []
 headings: []
 links: []
+image_dir: ""
 Description: Website Test Suite
 
 This test suite utilizes pytest to verify that the website meets criteria for a passing stable site.

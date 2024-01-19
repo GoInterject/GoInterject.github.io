@@ -5,6 +5,7 @@ layout: custom
 keywords: [Quick Tools, Hyperlink Tools, Reset Hyperlink Targets for Selection, Create/Edit Interject Hyperlink]
 headings: ["Overview", "Reset Hyperlink Targets for Selection", "Create/Edit Interject Hyperlink", "Create/Edit Interject Hyperlink : Preserving Styles"]
 links: ["/wIndex/INTERJECT-Link-Index.html"]
+image_dir: "QuickToolsHyperlink"
 description: The Hyperlink Tools within Quick Tools deal with Interject Hyperlinks.
 ---
 * * *

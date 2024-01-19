@@ -5,6 +5,7 @@ layout: custom
 keywords: [Security, Privacy, Data Governance]
 headings: ["Interject’s Privacy Policy Statement", "Our Collection of your Information", "Our Use of your Personal Information", "Our Disclosure of your Personal Information to Third Parties", "Our Security Measures to Protect your Personal Information", "Our Use of Cookies, Web Beacons, Web Analytics Services, and Links", "Limiting Use, Disclosure, Retention", "Accuracy of Personal data", "Your Access to and Updating of your Personal data", "Marketing Communications", "Notice to End Users", "Children’s Privacy", "Your California Privacy Rights (United States only)", "Data Security", "Data Integrity and Purpose Limitations", "Access", "Changes to our Privacy Policy", "Contacting Us", "Amendments", "Information Subject to Other Policies"]
 links: ["http://www.google.com/analytics/terms/us.html", "http://www.google.com/policies/privacy/", "https://tools.google.com/dlpage/gaoptout"]
+image_dir: ""
 description: Overview of Interject security measures and protocols.
 ---
 * * *

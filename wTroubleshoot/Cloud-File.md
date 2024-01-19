@@ -5,6 +5,7 @@ layout: custom
 keywords: [network, cloud, website, url, drive, file, report library, upload, download, open, link]
 headings: ["Overview", "Identifying Cloud Files", "Description of the Errors", "Solution: Saving to Local Drive", "Solution: Uploading as a Website Link"]
 links: ["/wAbout/Report-Library-Basics.html"]
+image_dir: "CloudFile"
 description: Sometimes uploading a report from a cloud drive results in errors. This guide helps you identify cloud files, reveals possible errors that may occur, and a few workarounds.
 ---
 * * *

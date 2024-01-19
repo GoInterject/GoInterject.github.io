@@ -5,6 +5,7 @@ layout: custom
 keywords: [hyperlink, comment, dropdown, list, column definitions, validation, walkthrough]
 headings: ["Overview", "Special Cell Value Comment", "Special Cell Value Hyperlink", "Special Cell Value Validation List", "Stacking Special Cell Types"]
 links: ["/wGetStarted/L-Modify-CustomerAging.html"]
+image_dir: "L-Create-SpecColDefs"
 description: Interject's Special Column Definitions are a convenient way you can customize a cell and provide additional features to your reports.
 ---
 * * *

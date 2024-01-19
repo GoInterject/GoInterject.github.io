@@ -5,6 +5,7 @@ layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: ["Account Rollup Screen", "Building Your Rollups", "Build Your Rows", "The Report Template", "Adding Company Columns"]
 links: ["/bApps/bFinancials/Configure.html"]
+image_dir: "Train"
 description: Step by step guide on using Interject Financials - Epicor Enterprise financial report templates.
 ---
 

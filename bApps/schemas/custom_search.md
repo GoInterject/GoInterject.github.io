@@ -6,6 +6,7 @@ sitemap: false
 keywords: [search, interject, documentation, find]
 headings: []
 links: []
+image_dir: ""
 description: Interject documentation search results
 ---
 
