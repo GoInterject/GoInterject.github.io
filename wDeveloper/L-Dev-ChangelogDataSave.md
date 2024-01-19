@@ -4,15 +4,8 @@ filename: "L-Dev-ChangelogDataSave.md"
 layout: custom
 keywords: [developer, example, walkthrough, SQL, SSMS, Data Portal, data connection, data save, history]
 headings: ["Overview", "Setting Up the Data Connection", "Setting Up the Data Portal", "Setting Up the Report", "Setting Up the Tables", "Setting Up the Stored Procedure", "Modifying the Stored Procedure", "Current Date and Time", "ChangeLog", "Merge Update", "Merge Insert", "Merge Output", "Update Target Table", "Update History Table", "Final Stored Procedure", "Testing the Stored Procedure", "Testing the ReportSave"]
-links: ["/wDeveloper/L-Dev-InsertDeleteDataSave.html", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "https://portal.gointerject.com", "/wPortal/Logging-In-to-Website-Portal.html", "/wIndex/Request-Context-Parse.html", "/wDeveloper/L-Dev-InsertDeleteDataSave.html#setting-up-the-report", "
-	[TransactionID]
+links: ["/wDeveloper/L-Dev-InsertDeleteDataSave.html", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "https://portal.gointerject.com", "/wPortal/Logging-In-to-Website-Portal.html", "/wIndex/Request-Context-Parse.html", "/wDeveloper/L-Dev-InsertDeleteDataSave.html#setting-up-the-report", "/wDeveloper/L-Dev-InsertDeleteDataSave.html#final-stored-procedure", "/wDeveloper/L-Dev-InsertDeleteDataSave.html#update-changelog", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#overview"]
 image_dir: "L-Dev-ChangelogDataSave"
-	[TransactionID] [int] IDENTITY(1,1", "5", "40", "40", "30", "30", "30", "30", "60", "15", "15", "15", "10", "15", "15", "24", "24", "24", "15", "40", "10", "7", "/wDeveloper/L-Dev-InsertDeleteDataSave.html#final-stored-procedure", "/wDeveloper/L-Dev-InsertDeleteDataSave.html#update-changelog", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#overview"]
-	[TransactionID] [int] IDENTITY(1,1", "5", "40", "40", "30", "30", "30", "30", "60", "15", "15", "15", "10", "15", "15", "24", "24", "24", "15", "40", "10", "7"]
-	[TransactionID] [int] IDENTITY(1,1", "5", "40", "40", "30", "30", "30", "30", "60", "15", "15", "15", "10", "15", "15", "24", "24", "24", "15", "40", "10", "7"]
-	[TransactionID] [int] IDENTITY(1,1", "5", "40", "40", "30", "30", "30", "30", "60", "15", "15", "15", "10", "15", "15", "24", "24", "24", "15", "40", "10", "7", "/wDeveloper/L-Dev-InsertDeleteDataSave.html#final-stored-procedure", "#testing-the-stored-procedure", "#setting-up-the-tables", "#changelog", "#update-history-table", "/wDeveloper/L-Dev-InsertDeleteDataSave.html#update-changelog", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#overview"]
-	[TransactionID] [int] IDENTITY(1,1", "5", "40", "40", "30", "30", "30", "30", "60", "15", "15", "15", "10", "15", "15", "24", "24", "24", "15", "40", "10", "7", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases"]
-	[TransactionID] [int] IDENTITY(1,1", "5", "40", "40", "30", "30", "30", "30", "60", "15", "15", "15", "10", "15", "15", "24", "24", "24", "15", "40", "10", "7"]
 description: In this example you will modify the simple data save using the Customer Aging Detail report and the Northwind Customers data source to add or delete a customer.
 ---
 * * *
@@ -93,30 +86,30 @@ This example uses a wide table for simplicity. In practice, a tall table is more
 Execute the following SQL code to create this history table:
 
 ```sql
-CREATE TABLE [dbo].[Northwind_Customers_History](
+CREATE TABLE [dbo].[Northwind_Customers_History] (
 	[TransactionID] [int] IDENTITY(1,1) NOT NULL,
-	[CustomerID] [nchar](5) NOT NULL,
-	[CompanyName] [nvarchar](40) NULL,
-	[CompanyNameOld] [nvarchar](40) NULL,
-	[ContactName] [nvarchar](30) NULL,
-	[ContactNameOld] [nvarchar](30) NULL,
-	[ContactTitle] [nvarchar](30) NULL,
-	[ContactTitleOld] [nvarchar](30) NULL,
-	[Address] [nvarchar](60) NULL,
-	[City] [nvarchar](15) NULL,
-	[CityOld] [nvarchar](15) NULL,
-	[Region] [nvarchar](15) NULL,
-	[PostalCode] [nvarchar](10) NULL,
-	[Country] [nvarchar](15) NULL,
-	[CountryOld] [nvarchar](15) NULL,
-	[Phone] [nvarchar](24) NULL,
-	[PhoneOld] [nvarchar](24) NULL,
-	[Fax] [nvarchar](24) NULL,
-	[ClientID] [nvarchar](15) NULL,
+	[CustomerID] [nchar] (5) NOT NULL,
+	[CompanyName] [nvarchar] (40) NULL,
+	[CompanyNameOld] [nvarchar] (40) NULL,
+	[ContactName] [nvarchar] (30) NULL,
+	[ContactNameOld] [nvarchar] (30) NULL,
+	[ContactTitle] [nvarchar] (30) NULL,
+	[ContactTitleOld] [nvarchar] (30) NULL,
+	[Address] [nvarchar] (60) NULL,
+	[City] [nvarchar] (15) NULL,
+	[CityOld] [nvarchar] (15) NULL,
+	[Region] [nvarchar] (15) NULL,
+	[PostalCode] [nvarchar] (10) NULL,
+	[Country] [nvarchar] (15) NULL,
+	[CountryOld] [nvarchar] (15) NULL,
+	[Phone] [nvarchar] (24) NULL,
+	[PhoneOld] [nvarchar] (24) NULL,
+	[Fax] [nvarchar] (24) NULL,
+	[ClientID] [nvarchar] (15) NULL,
 	[IsDeleted] [bit] NULL,
-	[EditedBy] [nvarchar](40) NOT NULL,
-	[ActionType] [nvarchar](10) NOT NULL,
-	[DateEdited] [datetime2](7) NOT NULL,
+	[EditedBy] [nvarchar] (40) NOT NULL,
+	[ActionType] [nvarchar] (10) NOT NULL,
+	[DateEdited] [datetime2] (7) NOT NULL,
 	PRIMARY KEY (TransactionID)
 )
 ```
