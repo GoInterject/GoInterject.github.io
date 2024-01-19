@@ -2,6 +2,7 @@
 title: Interject Hyperlinks
 filename: "INTERJECT-Link-Index.md"
 layout: custom
+keywords: [links, hyperlinks]
 headings: ["Overview", "Hyperlink List", "Creating An Example Pull Link"]
 links: ["/wIndex/jDropdown.html", "/wGetStarted/L-Create-Dropdowns.html", "/wIndex/ReportDrill.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#return-from-drill", "/wIndex/Data-Functions-Landing.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wIndex/ReportSave.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-library", "/wIndex/QuickTools-Hyperlink.html"]
 image_dir: "Link-Index"
