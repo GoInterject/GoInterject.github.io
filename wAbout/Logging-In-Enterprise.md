@@ -23,12 +23,12 @@ Once a federated identity is configured for an Interject client, users can provi
 
 **Step 1:** Click the Login button on the Interject Ribbon to bring up the Login Manager.
 
-![](/images/LogginIn/interject-ribbon-advanced-menu-login-revised.png)
+![](/images/Login-Enterprise/interject-ribbon-advanced-menu-login-revised.png)
 <br>
 
 **Step 2:** Click **Sign into Interject**.
 
-![](/images/LogginIn/SignIntoInterjectClick.png)
+![](/images/Login-Enterprise/SignIntoInterjectClick.png)
 <br>
 
 **Step 3:** Enter your enterprise login code and click **Look Up Code**.
@@ -59,7 +59,7 @@ You can verify you are logged in by the Login Manager Window.
 
 **Step 1:** To add a new login, first click the **Login** button on the Interject Ribbon.
 
-![](/images/LogginIn/interject-ribbon-advanced-menu-login-revised.png)
+![](/images/Login-Enterprise/interject-ribbon-advanced-menu-login-revised.png)
 <br>
 
 **Step 2:** Click the **New Login** button and proceed to enter your credentials the same as in [initial enterprise login](#initial-enterprise-login).
@@ -78,10 +78,10 @@ To log out, you can click the ellipses on the account you wish to log out and cl
 
 You may alternatively click the Logout button on the Interject ribbon.
 
-![](/images/LogginIn/RibbonLogout.png)
+![](/images/Login-Enterprise/RibbonLogout.png)
 <br>
 
-![](/images/LogginIn/LogoutPrompt.png)
+![](/images/Login-Enterprise/LogoutPrompt.png)
 <br>
 
 ### Log Back In

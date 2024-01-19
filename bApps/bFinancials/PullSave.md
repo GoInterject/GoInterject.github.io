@@ -4,7 +4,7 @@ filename: "PullSave.md"
 layout: custom
 keywords: [Account, Epicor, Companies]
 headings: ["Pull Data", "Save Data"]
-links: ["/images/Interject-Financials/InterjectFinancialsPull.png", "/images/InterjectRibbon/09.png"]
+links: []
 description: Interject™ Financials for Epicor Enterprise The basics of pulling and saving data in Interject
 ---
 

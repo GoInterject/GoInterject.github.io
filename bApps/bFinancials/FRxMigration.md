@@ -4,7 +4,7 @@ filename: "FRxMigration.md"
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: ["Open SQL Server and Create a New Database", "Import MDB File To the New Database", "Execute FRx Migration Script", "Interject Application Setup- DB Connection", "Redirect DB Connection to New DB in Interject process"]
-links: ["/images/A-InitialDataLoad/FRXAccess.png", "/images/A-InitialDataLoad/ObjectEx.png", "/images/A-InitialDataLoad/DataBasename.png", "/images/A-InitialDataLoad/SelectDB.png", "/images/A-InitialDataLoad/DBSource.png", "/images/A-InitialDataLoad/DBDestination.png", "/images/A-InitialDataLoad/SelectAll.png", "/images/A-InitialDataLoad/RunImmediately.png", "https://portal.gointerject.com", "/images/A-InitialDataLoad/ConnectionDetails.png", "/images/A-InitialDataLoad/image3.png", "/images/A-InitialDataLoad/image2.png"]
+links: ["https://portal.gointerject.com"]
 description: Step by step guide on data tier, initial data load, FRx Migration, and other key processes of installing of Interject for Financials Epicor Enterprise.
 ---
 

@@ -13,7 +13,7 @@ description: The Quick Tools window provides a convenient set of macro tools sug
 
 The Quick Tools window provides a convenient set of macro tools suggested by our users. 
 
-![](/images/InterjectRibbon/17.png)
+![](/images/QuickToolsLanding/17.png)
 <br>
 
 These tools are efficient ways to complete the most common actions in Interject. 
@@ -24,7 +24,7 @@ These tools are efficient ways to complete the most common actions in Interject.
 
 <br>
 
-![](/images/QuickTools/QuickTools.png)
+![](/images/QuickToolsLanding/QuickTools.png)
 <br>
 
 ### Quick Tools

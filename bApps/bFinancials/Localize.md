@@ -4,7 +4,7 @@ filename: "Localize.md"
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: []
-links: ["/images/Localize/01.png", "/images/Localize/02.png", "/images/Localize/03.png", "/images/Localize/SegNames.png", "/images/Localize/03.png", "/images/Localize/04.png", "/images/Localize/FileSave.png", "/images/Localize/08.png", "/images/Localize/CopyDrillCodes.png"]
+links: []
 description: Step by step guide on publishing custom-made reports to your company's report library in the Interject for Financials App for Epicor Enterprise.
 ---
 

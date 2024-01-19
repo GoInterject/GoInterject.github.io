@@ -45,7 +45,7 @@ Interject aims to make the installation process as simple and painless as possib
 
 **Microsoft** **Edge** :
 
-![](/images/SingleUser/07.PNG)
+![](/images/SingleUser/07.png)
 <br>
 
 **Microsoft Internet Explorer**:
@@ -58,17 +58,27 @@ Interject aims to make the installation process as simple and painless as possib
 ![](/images/SingleUser/09.png)
 <br>
 
-**Step 8:** Read and accept the **End-User License Agreement,** then select **Next**.
+**Step 8:** Two options will be available when installing on Windows Server.
+
+1. Install as 'per-user' (current user)
+2. Install as 'per-machine' (everybody)
+
+To install for current user on the server, make sure the **Only for me** button is selected then click **Next**.
+
+![](/images/SingleUser/09b.png)
+<br>
+
+**Step 9:** Read and accept the **End-User License Agreement,** then select **Next**.
 
 ![](/images/SingleUser/10.png)
 <br>
 
-**Step 9:** Choose the **Destination Folder** for your installation, then select **Next**.
+**Step 10:** Choose the **Destination Folder** for your installation, then select **Next**.
 
 ![](/images/SingleUser/11.png)
 <br>
 
-**Step 10:** Click **Install**.
+**Step 11:** Click **Install**.
 
 ![](/images/SingleUser/12.png)
 <br>

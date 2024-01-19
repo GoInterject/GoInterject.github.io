@@ -58,22 +58,32 @@ Once your files are saved and closed, click **Next** to continue in the Install 
 ![](/images/Updating/06.png)
 <br>
 
-**Step 5:** Next, you will need to read and accept the License Agreement and click **Next** to continue.
+**Step 5:** Two options will be available when installing on Windows Server.
+
+1. Install as 'per-user' (current user)
+2. Install as 'per-machine' (everybody)
+
+To install for current user on the server, make sure the **Only for me** button is selected then click **Next**.
+
+![](/images/Updating/06b.png)
+<br>
+
+**Step 6:** Next, you will need to read and accept the License Agreement and click **Next** to continue.
 
  ![](/images/Updating/07.png)
 <br>
 
-**Step 6:** Choose where to install Interject.
+**Step 7:** Choose where to install Interject.
 
 ![](/images/Updating/08.png)
 <br>
 
-**Step 7:** Now click **Install** to begin the installation.
+**Step 8:** Now click **Install** to begin the installation.
 
 ![](/images/Updating/09.png)
 <br>
 
-**Step 8:** Click **Finish** to close the installer, and you're done!
+**Step 9:** Click **Finish** to close the installer, and you're done!
 
 ![](/images/Updating/10.png)
 <br>

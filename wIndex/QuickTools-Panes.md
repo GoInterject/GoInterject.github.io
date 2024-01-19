@@ -13,7 +13,7 @@ description: The Panes Tools within the Quick Tools deal with the window panes i
 
 The Panes Tools within the Quick Tools deal with the window panes in Excel.
 
-![](/images/QuickTools/PaneTools.png)
+![](/images/QuickToolsPanes/PaneTools.png)
 <br>
 
 ### Freeze/Unfreeze Panes 

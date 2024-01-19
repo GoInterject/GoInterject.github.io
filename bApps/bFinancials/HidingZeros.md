@@ -4,7 +4,7 @@ filename: "HidingZeros.md"
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: ["Hiding Rows and Sections with Zero Values"]
-links: ["/images/bFinancialsHideZeros/HidingZeroValues_Download.xlsx", "{file name='/images/bFinancialsHideZeros/HidingZeroValues_Download.xlsx'}"]
+links: ["{file name='/images/bFinancialsHideZeros/HidingZeroValues_Download.xlsx'}"]
 description: Step by step guide on adding budget columns to your report templates.
 ---
 

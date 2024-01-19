@@ -19,11 +19,11 @@ To turn on Memory Logging:
 
 **Step 1:** Click Diagnostics on the Interject Ribbon:
 
-![](/images/error-reports/23.jpg)
+![](/images/MemoryLogging/23.jpg)
 <br>
 
 **Step 2:** Select **Toggle Memory Logging** and click **Execute Selected Action**:
 
-![](/images/error-reports/ToggleMemoryLogging.png)
+![](/images/MemoryLogging/ToggleMemoryLogging.png)
 <br>
 

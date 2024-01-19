@@ -19,17 +19,17 @@ Errors can be investigated using the Progress Bar Window or Activity Logs.
 
 The Interject Progress Bar Window appears when processing data. When an error occurs, it will display information related to the error. An example of a common error is the misspelling of a data portal, which displays a handled error message when pulling a report with a misspelled data portal.
 
-![](/images/error-reports/01.jpg)
+![](/images/InvestigatingReportErrors/01.jpg)
 <br>
 
 If an unhandled error occurs, Interject will still report the error, but no popup message will be displayed to the user. Instead, the Progress Bar Window will stay open, showing a red X next to the failed data portal call.
 
-![](/images/error-reports/02.jpg)
+![](/images/InvestigatingReportErrors/02.jpg)
 <br>
 
 When that happens, users can double click the failed data portal to see the exact error the server returned.
 
-![](/images/error-reports/03.jpg)
+![](/images/InvestigatingReportErrors/03.jpg)
 <br>
 
 ### Using Activity Logs
@@ -38,15 +38,15 @@ The Client Activity Dashboard is an Excel file setup to generate information reg
 
 **Step 1:** Open the Client Activity Dashboard from the Interject Report Library.
 
-![](/images/error-reports/20.jpg)
+![](/images/InvestigatingReportErrors/20.jpg)
 <br>
 
 **Step 2:** Navigate to the Error Log tab and pull the report (the report will populate with information about the most recent user activity logs that contain errors).
 
-![](/images/error-reports/21.jpg)
+![](/images/InvestigatingReportErrors/21.jpg)
 <br>
 
 **Step 3:** You can use the various filters and parameters on the report to refine the result set. This will help locate information for troubleshooting specific errors.
 
-![](/images/error-reports/22.jpg)
+![](/images/InvestigatingReportErrors/22.jpg)
 <br>

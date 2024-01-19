@@ -51,7 +51,7 @@ The macro security related settings are:
 
 The security settings can be set up for each client/company. To confirm the settings, navigate to Interject Diagnostics > Public > Apply Special Features:
 
-![](/images/Testing/DiagnosticsMacroSecuritySettings.png)
+![](/images/MacroSecurity/DiagnosticsMacroSecuritySettings.png)
 
 ### File Extensions
 

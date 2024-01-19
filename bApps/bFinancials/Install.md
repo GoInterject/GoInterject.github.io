@@ -4,7 +4,7 @@ filename: "Install.md"
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: ["Data Tier Install", "Initial Data Load", "FRx Database Migration", "Epicor Segment Assessment", "Application Install", "Security and Updates"]
-links: ["https://portal.gointerject.com", "https://docs.gointerject.com/bApps/bFinancials/Epicor-Financials.html", "/images/A-SQL-InitialDataLoad/MgtStudioPointTo.png"]
+links: ["https://portal.gointerject.com", "https://docs.gointerject.com/bApps/bFinancials/Epicor-Financials.html"]
 description: Step by step guide on data tier, initial data load, FRx Migration, and other key processes of installing of Interject for Financials Epicor Enterprise.
 ---
 

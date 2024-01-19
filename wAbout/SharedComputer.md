@@ -63,6 +63,7 @@ Shared Computer installation installs a multi-user instance of Interject on one 
 <br>
 
 **Step 11:** Two options will be available when installing on Windows Server.
+
 1. Install as 'per-user' (current user)
 2. Install as 'per-machine' (everybody)
 
@@ -121,7 +122,7 @@ Hit **Next** once the location is selected.
 
 **Step 14:** Click **Finish** once the setup wizard tells you the installation is complete.
 
-![](/images/SingleUser/13.png)
+![](/images/SharedComputer/40.png)
 <br>
 
  <a href="https://docs.gointerject.com/wAbout/Logging-In.html"><h2>Continue Here for Login Information</h2></a>

@@ -51,7 +51,7 @@ Note: If this repo is private and you need access, please [contact us](mailto:he
 
 If you do not have git installed or prefer a different method, simply download the source code from the repository website.
 
-<img class="img-modal" src="/images/temp_gitlab_download_repo.png" width="80%" onclick="zoom_img(this)" />
+<img class="img-modal" src="/images/PythonApiSetup/temp_gitlab_download_repo.png" width="80%" onclick="zoom_img(this)" />
 
 
 ## Install The Python Package

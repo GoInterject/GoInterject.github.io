@@ -14,7 +14,7 @@ description: The Edit Tools within Quick Tools deal with the editing of numeric 
 
 The Edit Tools within Quick Tools deal with the editing of numeric values and objects.
 
-![](/images/QuickTools/EditTools.png)
+![](/images/QuickToolsEdit/EditTools.png)
 <br>
 
 ### Blanks to Zeros
@@ -23,12 +23,12 @@ Inserts a zero for the current cell or all selected cells if they are blank.
 
 <b style='color:red;'><strong>Before:</strong></b>
 
-![](/images/QuickTools/BlanksBefore.png)
+![](/images/QuickToolsEdit/BlanksBefore.png)
 <br>
 
 <b style='color:green;'><strong>After:</strong></b>
 
-![](/images/QuickTools/BlanksAfter.png)
+![](/images/QuickToolsEdit/BlanksAfter.png)
 <br>
 
 ### Zeros to Blanks
@@ -37,12 +37,12 @@ Clears out the current or cell or all selected cells that contain only a zero.
 
 <b style='color:red;'><strong>Before:</strong></b>
 
-![](/images/QuickTools/BlanksAfter.png)
+![](/images/QuickToolsEdit/BlanksAfter.png)
 <br>
 
 <b style='color:green;'><strong>After:</strong></b>
 
-![](/images/QuickTools/BlanksBefore.png)
+![](/images/QuickToolsEdit/BlanksBefore.png)
 <br>
 
 ### Remove Sheet Objects
@@ -53,11 +53,11 @@ Sometimes when importing data from another source, objects such as pictures or d
 
 <b style='color:red;'><strong>Before:</strong></b>
 
-![](/images/QuickTools/ObjectsBefore.png)
+![](/images/QuickToolsEdit/ObjectsBefore.png)
 <br>
 
 <b style='color:green;'><strong>After:</strong></b>
 
-![](/images/QuickTools/ObjectsAfter.png)
+![](/images/QuickToolsEdit/ObjectsAfter.png)
 <br>
 
