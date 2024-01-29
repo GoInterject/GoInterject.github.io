@@ -18,7 +18,6 @@ This is an API built on top of Python and Flask for the Interject Excel Add-in. 
 
 In this walkthrough we will setup a Python API locally which can be used to manage dataflow to and from an Interject Report. 
 
-
 ## Requirements
 
 Before the api can be run you need to ensure that your system meets the following requirements:
@@ -26,7 +25,7 @@ Before the api can be run you need to ensure that your system meets the followin
 - Python 3.4 or greater must be installed
 - Git must be installed (optional)
 
-Once Python is installed the dependancies for the Interject Api include:
+Once Python is installed the dependencies for the Interject Api include:
 
 * Flask >= 0.12.1
 * Flask-RESTful >= 0.3.6
@@ -38,7 +37,6 @@ Once Python is installed the dependancies for the Interject Api include:
 * requests
 * pyOpenSSL (when running api with HTTPS)
 
-
 ## Get The Code
 
 Start by cloning the repository to your system.
@@ -49,11 +47,10 @@ git clone https://github.com/GoInterject/ids-python-api
 
 Note: If this repo is private and you need access, please [contact us](mailto:help@gointerject.com). It will be public soon.
 
-
 If you do not have git installed or prefer a different method, simply download the source code from the repository website.
 
-<img class="img-modal" src="/images/PythonApiSetup/temp_gitlab_download_repo.png" width="80%" onclick="zoom_img(this)" />
-
+![](/images/PythonApiSetup/temp_gitlab_download_repo.png)
+<br>
 
 ## Install The Python Package
 

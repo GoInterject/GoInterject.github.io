@@ -96,16 +96,19 @@ Another type of Report Formula is the [Save](/wIndex/ReportSave.html) formula, w
 
 Each of these formulas is activated by its corresponding button in the [Interject Ribbon menu](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html).
 
-<img class="img-modal" src="/images/BasicsReportFormulas/13.png" onclick="zoom_img(this)" />
+![](/images/BasicsReportFormulas/13.png)
+<br>
 
 If a report has multiple Pulls or Saves, Interject will activate them in order from left to right, for the first 1000 rows of the spreadsheet. If a report has multiple drills, Interject will show a popup list for you to select one specifically. The order of drills in this list will be based on the order of the drills in the report, from left to right and top to bottom.
 
-<img class="img-modal" src="/images/BasicsReportFormulas/14.png" onclick="zoom_img(this)" />
+![](/images/BasicsReportFormulas/14.png)
+<br>
 
 ### Hidden Parameters and Notes
 
 The Hidden Parameters and Notes section has two uses. First, it holds documentation on the configuration for other report writers to see. Second, it can contain hidden parameters and spreadsheet formulas that support the other areas of the spreadsheet report. In this example, the notes contain a basic overview of the report as well as what the drills do.
 
-<img class="img-modal" src="/images/BasicsReportFormulas/15.png" onclick="zoom_img(this)" />
+![](/images/BasicsReportFormulas/15.png)
+<br>
 
 This concludes the discussion of the basics of Report Formulas. Be sure to continue reading, since there are many advanced options to learn more about, which can be leveraged to create tailored reports and applications for the company's needs.
