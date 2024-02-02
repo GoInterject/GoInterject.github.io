@@ -6,6 +6,7 @@ keywords: [autorun, RunOnOpen, run, pull, property]
 headings: ["Overview", "Setting up Run on Open via Diagnostics", "RunOnOpen Input Syntax", "RunOnOpen Examples Codes", "RunOnOpen Example"]
 links: ["/wGetStarted/L-Create-CustomerAging.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#diagnostics", "/wAbout/Report-Library-Basics.html"]
 image_dir: "L-Create-RunOnOpen"
+images: [{file: "DiagnosticsRunOnOpen",type: "png",site: "Addin",cat: "Diagnostics",sub: "Set RunOnOpen For Workbook",report: "",ribbon: "",config: ""},{file: "CustomCollectionsReportLibrary",type: "png",site: "Addin",cat: "Report Library",sub: "",report: "Interject Customer Collections",ribbon: "",config: ""},{file: "AdvancedMenu",type: "png",site: "Addin",cat: "Ribbon",sub: "",report: "",ribbon: "Simple",config: ""},{file: "Diagnostics",type: "png",site: "Addin",cat: "Ribbon",sub: "",report: "",ribbon: "Advanced",config: ""},{file: "EnterCode",type: "png",site: "Addin",cat: "Diagnostics",sub: "Set RunOnOpen For Workbook",report: "",ribbon: "",config: ""},{file: "08",type: "png",site: "Addin",cat: "Report",sub: "",report: "Customer Aging Summary",ribbon: "Simple",config: ""}]
 description: Use this property to auto-pull the report when opening for the first tab that appears. No VBA required.
 ---
 * * *

@@ -6,6 +6,7 @@ keywords: [event, functions, trigger]
 headings: ["Overview", "ReportMacro", "ReportRun", "ReportCalc", "ReportDefaults", "ReportGrouping", "ReportHideRowOrColumn"]
 links: ["/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data", "/wIndex/Data-Functions-Landing.html", "/wTroubleshooting/Validation-Report.html", "/wIndex/ReportMacro.html", "/wIndex/ReportRun.html", "/wIndex/ReportCalc.html", "/wIndex/ReportDefaults.html", "/wIndex/ReportGrouping.html", "/wIndex/ReportVariable.html", "/wIndex/ReportHideRowOrColumn.html"]
 image_dir: ""
+images: []
 description: Event Functions are functions designed to run when a designated event triggers them.
 ---
 * * *

@@ -6,6 +6,7 @@ keywords: [database connection, setting up, setup]
 headings: ["Overview", "Setup for a Data Connection to a Database", "Testing the Connection String From Within Excel"]
 links: ["https://portal.gointerject.com", "/wPortal/Logging-In-to-Website-Portal.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html"]
 image_dir: "Database"
+images: [{file: "01",type: "png",site: "Portal",cat: "Home",sub: "",report: "",ribbon: "",config: ""},{file: "02",type: "png",site: "Portal",cat: "Data Connections",sub: "",report: "",ribbon: "",config: ""},{file: "03",type: "png",site: "Portal",cat: "Data Connections",sub: "Details",report: "",ribbon: "",config: ""},{file: "04",type: "png",site: "Portal",cat: "Data Connections",sub: "Details",report: "",ribbon: "",config: ""},{file: "05",type: "png",site: "Portal",cat: "Data Connections",sub: "Details",report: "",ribbon: "",config: ""},{file: "06",type: "png",site: "Addin",cat: "Ribbon",sub: "",report: "",ribbon: "Simple",config: ""},{file: "07",type: "png",site: "Addin",cat: "Ribbon",sub: "System",report: "",ribbon: "Advanced",config: ""},{file: "08",type: "png",site: "Addin",cat: "Check Connection",sub: "",report: "",ribbon: "Advanced",config: ""},{file: "09",type: "png",site: "Addin",cat: "Check Connection",sub: "",report: "",ribbon: "Advanced",config: ""}]
 description: This example shows how to connect to a database using a pre-existing data portal.
 ---
 * * *

@@ -6,6 +6,7 @@ keywords: [ReportGrouping, grouping, event, trigger, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Trigger Combination List"]
 links: ["wIndex/Event-Functions-Landing.html", "/wIndex/ReportVariable.html", "/wGetStarted/L-Create-InventoryVariable.html#reportgrouping"]
 image_dir: ""
+images: []
 description: The ReportGrouping function will collapse or expand groups within the sheet when triggered upon a designated event.
 ---
 * * *

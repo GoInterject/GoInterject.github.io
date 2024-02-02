@@ -6,6 +6,7 @@ keywords: [ReportRange, range, function, formula, data, pull]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Embeddable Helper Functions"]
 links: ["/wGetStarted/L-Create-CustomerAging.html", "https://docs.gointerject.com/wIndex/jDataPortal.html", "https://docs.gointerject.com/wIndex/Param.html", "/wTroubleshoot/Reports.html#validation-report-for-pullsave-events", "/wGetStarted/L-Create-RetainFeature.html", "https://docs.gointerject.com/wIndex/jCombine.html", "https://docs.gointerject.com/wIndex/jCombine_If.html", "/wIndex/jDataPortal.html", "Param.html", "/wIndex/jCombine.html", "/wIndex/jCombine_IF.html"]
 image_dir: ""
+images: []
 description: The ReportRange function pulls data from a data source and inserts it into a single range within a spreadsheet.
 ---
 * * *

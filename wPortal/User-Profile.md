@@ -6,6 +6,7 @@ keywords: [user profile, website portal, roles, admin]
 headings: ["Overview"]
 links: []
 image_dir: "UserProfile"
+images: [{file: "01",type: "png",site: "Portal",cat: "Staff",sub: "",report: "",ribbon: "",config: ""},{file: "02",type: "png",site: "Portal",cat: "User Profile",sub: "",report: "",ribbon: "",config: ""},{file: "03",type: "png",site: "Portal",cat: "User Profile",sub: "",report: "",ribbon: "",config: ""}]
 description: Shows the user profile area of the website portal.
 ---
 * * *

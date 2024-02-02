@@ -6,6 +6,7 @@ keywords: [CIO, about]
 headings: []
 links: []
 image_dir: ""
+images: []
 description: The CIO has specific needs when a company is growing.
 ---
 * * *

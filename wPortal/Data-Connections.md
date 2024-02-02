@@ -6,6 +6,7 @@ keywords: [data connections, data portals, api, database]
 headings: ["Overview", "API Connections", "Database Connection"]
 links: ["/wPortal/L-Api-Connections.html", "/wPortal/L-Database-Connection.html"]
 image_dir: ""
+images: []
 description: A Connection is used with Data Portals so Interject can connect to certain stored procedures within a database or to a custom website API.
 ---
 * * *

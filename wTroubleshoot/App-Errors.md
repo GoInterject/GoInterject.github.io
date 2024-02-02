@@ -6,6 +6,7 @@ keywords: [app, addin, errors]
 headings: ["Overview", "Excel Drill Animations", "Addins Missing", "Web Proxy Configuration", "Cloud File Uploads Incorrectly"]
 links: ["/wTroubleshoot/Drill-Animations.html", "/wTroubleshoot/Addin-Missing.html", "/wTroubleshoot/WebProxy.html", "/wTroubleshoot/Cloud-File.html"]
 image_dir: ""
+images: []
 description: Errors can occur for many reasons. Sometimes they are related to the environment or computer running Interject. It is important you have tools to capture everything that is interacting with Excel so, it is easier diagnose the cause of errors. This leads to faster troubleshooting and repair.
 ---
 * * *

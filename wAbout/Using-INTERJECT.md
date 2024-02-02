@@ -6,6 +6,7 @@ keywords: [installing, logging in, report library, real world]
 headings: ["Overview", "Installing Interject", "Logging In", "Report Library Basics", "Report Library Links", "Real-World Walkthroughs"]
 links: ["/wAbout/Report-Library-Basics.html", "/wAbout/SingleUser.html", "/wAbout/SingleUser.html", "/wAbout/SharedComputer.html", "/wAbout/Logging-In.html", "/wAbout/Report-Library-Basics.html", "/wAbout/ReportLibraryLinks.html", "/wAbout/Real-World-Walkthroughs.html", "/wAbout/Customer-Aging.html", "/wAbout/Inventory-Reports.html", "/wAbout/Financial-Report.html"]
 image_dir: ""
+images: []
 description: You will run through the basic navigation and control methods most helpful for working efficiently. Please note that every report may be different and may have it's own documentation in the Report Library.
 ---
 * * *

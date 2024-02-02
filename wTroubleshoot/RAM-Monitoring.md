@@ -6,6 +6,7 @@ keywords: [report, ram, monitoring, memory, log, user support]
 headings: ["Overview"]
 links: ["/wTroubleshoot/Reporting-A-Problem.html#send-report-to-interject"]
 image_dir: "MemoryLogging"
+images: [{file: "23",type: "jpg",site: "Addin",cat: "Report",sub: "",report: "Customer Aging Summary",ribbon: "Advanced",config: "Yes"},{file: "ToggleMemoryLogging",type: "png",site: "Addin",cat: "Diagnostics",sub: "Toggle Memory Logging",report: "",ribbon: "",config: ""}]
 description: Memory Logging is a toggled tool in an Excel report. When it is turned on, the memory use of the current workbook is recorded
 ---
 * * *

@@ -6,6 +6,7 @@ keywords: [macro, security, sign key, VBA, checksum]
 headings: ["Overview", "Uploading A Macro File", "Opening A Macro File", "Security Settings", "Checking Settings", "File Extensions"]
 links: ["/wIndex/MacroSecurity#file-extensions", "/wIndex/MacroSecurity#file-extensions"]
 image_dir: "MacroSecurity"
+images: [{file: "UploadMacroFile",type: "png",site: "External",cat: "Flow Chart",sub: "Uploading Macro File",report: "",ribbon: "",config: ""},{file: "OpenMacroFile",type: "png",site: "External",cat: "Flow Chart",sub: "Opening a Macro File",report: "",ribbon: "",config: ""},{file: "DiagnosticsMacroSecuritySettings",type: "png",site: "Addin",cat: "Diagnostics",sub: "Apply Special Features",report: "",ribbon: "",config: ""}]
 description: Macro security involves mitigating the opening and uploading of Excel files that contain macros to ensure no malicious code affects any system.
 ---
 * * *

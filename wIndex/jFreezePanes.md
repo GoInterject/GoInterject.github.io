@@ -6,6 +6,7 @@ keywords: [jFreezePanes, window, helper, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition"]
 links: ["/wGetStarted/Interject-Ribbon-Menu-Items.html#quick-tools", "/wGetStarted/L-Create-CustomerAging.html"]
 image_dir: ""
+images: []
 description: The jFreezePanes function freezes a designated pane so the user can scroll through data and still keep the frozen pane in view.
 ---
 * * *

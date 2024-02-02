@@ -6,6 +6,7 @@ keywords: [ReportCalc, calculation, event, trigger, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Trigger Combination List"]
 links: ["wIndex/Event-Functions-Landing.html", "/wGetStarted/L-Create-HideRowCol.html"]
 image_dir: ""
+images: []
 description: The ReportCalc function executes a calculation of formulas in a worksheet or workbook when triggered upon a designated event.
 ---
 * * *

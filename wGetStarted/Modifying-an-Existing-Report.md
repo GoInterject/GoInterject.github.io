@@ -6,6 +6,7 @@ keywords: [modify, reports, walkthroughs]
 headings: ["Overview", "Customer Aging Report", "Inventory Report", "Financial Report"]
 links: ["/wGetStarted/L-Modify-CustomerAging.html", "/wAbout/Customer-Aging.html", "/wGetStarted/L-Modify-InventoryReport.html", "/wAbout/Inventory-Reports.html", "/wGetStarted/L-Modify-FinancialReport.html", "/wAbout/Financial-Report.html"]
 image_dir: ""
+images: []
 description: Many times in creating a report you don't have to start from scratch. Often it is faster to start with an existing report and make the modifications you need. On this page, you will read through three scenarios in which modifying a report might be needed.
 ---
 * * *

@@ -6,6 +6,7 @@ keywords: [helper, functions, formula]
 headings: ["Overview", "jDropdown", "jFocus", "jFreezePanes", "jCombine", "jCombineIf", "jDataPortal", "jColumnDef", "jRangeTag", "jWorkbookProperty", "jSetting", "Pair", "PairGroup", "Param"]
 links: ["/wIndex/jDropdown.html", "/wIndex/jFocus.html", "/wIndex/jFreezePanes.html", "/wGetStarted/Interject-Ribbon-Menu-Items.html#quick-tools", "/wIndex/jFreezePanes.html", "/wIndex/jCombine.html", "/wIndex/jCombine_IF.html", "/wIndex/jDataPortal.html", "/wIndex/jColumnDef.html", "/wIndex/jRangeTag.html", "/wIndex/jWorkbookProperty.html", "/wIndex/jSetting.html", "/wIndex/Pair.html", "/wIndex/PairGroup.html", "/wIndex/PairGroup.html", "Pair.html", "/wIndex/Param.html", "/wTroubleshoot/Reports.html#validation-report-for-pullsave-events"]
 image_dir: ""
+images: []
 description: Helper Functions are functions that are often embedded into other parent functions to be leveraged into more specific and accurate functions or enhance their capabilities.
 ---
 * * *

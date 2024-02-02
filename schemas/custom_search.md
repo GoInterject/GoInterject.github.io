@@ -7,6 +7,7 @@ keywords: [search, interject, documentation, find]
 headings: []
 links: []
 image_dir: ""
+images: []
 description: Interject documentation search results
 ---
 

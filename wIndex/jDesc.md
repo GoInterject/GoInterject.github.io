@@ -6,6 +6,7 @@ keywords: [jDesc, segment, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition"]
 links: []
 image_dir: ""
+images: []
 description: This function is used to look up a context description based on a specific segment. 
 ---
 * * *

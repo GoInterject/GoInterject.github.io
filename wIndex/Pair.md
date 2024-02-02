@@ -6,6 +6,7 @@ keywords: [Pair, helper, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Usable In These Functions"]
 links: ["/wIndex/PairGroup.html", "/wGetStarted/L-Drill-CustomerAging.html", "/wIndex/ReportDrill.html", "PairGroup.html", "ReportDefaults.html", "ReportDrill.html"]
 image_dir: ""
+images: []
 description: The Pair function transfers values from one cell to another.
 ---
 * * *

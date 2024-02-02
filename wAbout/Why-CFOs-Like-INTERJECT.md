@@ -6,6 +6,7 @@ keywords: [CFO, about]
 headings: []
 links: []
 image_dir: ""
+images: []
 description: CFOs like Interject due to data accuracy, prompt reports, visibility among other beneficial reasons.
 ---
 * * *

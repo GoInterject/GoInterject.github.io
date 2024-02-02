@@ -8,6 +8,7 @@ keywords: [api, python, dataportal]
 headings: ["Setup", "Output Options"]
 links: []
 image_dir: ""
+images: []
 description: Shows how to setup a python data api to utilize custom functions.
 ---
 

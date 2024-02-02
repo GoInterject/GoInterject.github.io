@@ -6,6 +6,7 @@ keywords: [develop, database, build, create, SQL]
 headings: ["Overview", "Interject Website Portal", "Defining Interject for Developers", "Simple Data Pull", "Advanced Data Pull", "Simple Data Save", "Security Best Practices", "Managing Settings Cache", "Error Handling"]
 links: ["mailto:info@gointerject.com", "https://www.microsoft.com/en-us/sql-server/sql-server-editions-express", "https://portal.gointerject.com", "/wPortal/Logging-In-to-Website-Portal.html", "/wGetStarted/Interject-Website-Portal.html", "/wGetStarted/Defining-Interject-for-Developers.html", "/wGetStarted/Simple-Data-Pull.html", "/wGetStarted/Advanced-Data-Pull.html", "/wGetStarted/Simple-Data-Save.html", "/wGetStarted/Security-Best-Practices.html", "/wGetStarted/Managing-Settings-Cache.html", "/wGetStarted/L-Dev-Error-Handling.html"]
 image_dir: ""
+images: []
 description: This section is for professional developers who create the data pathways for reports and applications that can edit data. To facilitate this section, we provide a sample database to assist in training.
 ---
 * * *

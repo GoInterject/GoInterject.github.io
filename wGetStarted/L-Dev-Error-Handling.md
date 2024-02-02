@@ -6,6 +6,7 @@ keywords: [error, handling, RAISERROR, UserNotice, return message]
 headings: ["Overview", "Understanding Error Handling", "Error Handling With RAISERROR", "Error Handling With UserNotice", "Unhandled Error Behavior"]
 links: []
 image_dir: "Error-Handling"
+images: [{file: "01",type: "png",site: "SSMS",cat: "Code",sub: "",report: "",ribbon: "",config: ""},{file: "02",type: "png",site: "SSMS",cat: "Code",sub: "",report: "",ribbon: "",config: ""},{file: "03",type: "png",site: "Addin",cat: "Progress Bar",sub: "Error Popup",report: "",ribbon: "Simple",config: ""},{file: "04",type: "png",site: "Addin",cat: "Progress Bar",sub: "",report: "",ribbon: "Simple",config: ""}]
 description: Explains how Interject handles errors in Data Portals using T-SQL RAISERROR and UserNotice.
 ---
 * * *
