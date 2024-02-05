@@ -6,7 +6,7 @@ keywords: [Quick Tools, Formula Tools, Remove External References]
 headings: ["Overview", "Remove External References"]
 links: []
 image_dir: "QuickToolsFormula"
-images: [{file: "FormulaTools",type: "png",site: "Addin",cat: "Quick Tools",sub: "",report: "",ribbon: "",config: ""},{file: "EditLinks",type: "png",site: "Addin",cat: "Report",sub: "",report: "",ribbon: "",config: ""},{file: "ExternalRefBefore",type: "png",site: "Addin",cat: "Report",sub: "",report: "",ribbon: "",config: ""},{file: "ExternalRefAfter",type: "png",site: "Addin",cat: "Report",sub: "",report: "",ribbon: "",config: ""}]
+images: [{file: "FormulaTools", type: "png", site: "Addin", cat: "Quick Tools", sub: "", report: "", ribbon: "", config: ""},{file: "EditLinks", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: ""},{file: "ExternalRefBefore", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: ""},{file: "ExternalRefAfter", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: ""}]
 description: The Formula Tools within Quick Tools deal with formulas.
 ---
 * * *

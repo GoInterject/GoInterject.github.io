@@ -6,7 +6,7 @@ keywords: [login, website portal]
 headings: ["Overview"]
 links: ["https://portal.gointerject.com/login.html", "/wPortal/Lab-15.2-Database-Connection.html", "/wPortal/Data-Portals.html"]
 image_dir: "Login"
-images: [{file: "01",type: "png",site: "Portal",cat: "Login",sub: "",report: "",ribbon: "",config: ""},{file: "02",type: "png",site: "Portal",cat: "Login",sub: "",report: "",ribbon: "",config: ""},{file: "03",type: "png",site: "Portal",cat: "Home",sub: "",report: "",ribbon: "",config: ""}]
+images: [{file: "01", type: "png", site: "Portal", cat: "Login", sub: "", report: "", ribbon: "", config: ""},{file: "02", type: "png", site: "Portal", cat: "Login", sub: "", report: "", ribbon: "", config: ""},{file: "03", type: "png", site: "Portal", cat: "Home", sub: "", report: "", ribbon: "", config: ""}]
 description: The Interject Portal is a websites that allows you to access all the data portals and data connections. Once logged in you can create, customize and remove them as needed.
 ---
 * * *

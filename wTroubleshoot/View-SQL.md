@@ -6,7 +6,7 @@ keywords: [report, investigate, activity, logs, error, user support]
 headings: ["Overview"]
 links: []
 image_dir: "ViewSqlTest"
-images: [{file: "29",type: "jpg",site: "Addin",cat: "Report",sub: "",report: "Customer Aging Summary",ribbon: "",config: "Yes"},{file: "30",type: "jpg",site: "Addin",cat: "Ribbon",sub: "System",report: "Customer Aging Summary",ribbon: "Advanced",config: "Yes"},{file: "SQLQuery",type: "png",site: "Addin",cat: "View SQL Test For ActiveCell",sub: "",report: "",ribbon: "",config: ""},{file: "SQLQueryTest",type: "png",site: "SSMS",cat: "Code",sub: "",report: "",ribbon: "",config: ""}]
+images: [{file: "29", type: "jpg", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"},{file: "30", type: "jpg", site: "Addin", cat: "Ribbon", sub: "System", report: "Customer Aging Summary", ribbon: "Advanced", config: "Yes"},{file: "SQLQuery", type: "png", site: "Addin", cat: "View SQL Test For ActiveCell", sub: "", report: "", ribbon: "", config: ""},{file: "SQLQueryTest", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}]
 description: The View SQL Test for ActiveCell tool can be used to track down issues with the SQL stored procedures being called by an Interject report function.
 ---
 * * *

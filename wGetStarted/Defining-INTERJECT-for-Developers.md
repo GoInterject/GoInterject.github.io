@@ -6,7 +6,7 @@ keywords: [developer, platform, definition, workflow, how it works]
 headings: ["Overview", "Two Basic Concepts Go a Long Way", "Data Workflow"]
 links: []
 image_dir: "Defined"
-images: [{file: "Interject Stuff",type: "png",site: "External",cat: "Flow Chart",sub: "Platform API",report: "",ribbon: "",config: ""}]
+images: [{file: "Interject Stuff", type: "png", site: "External", cat: "Flow Chart", sub: "Platform API", report: "", ribbon: "", config: ""}]
 description: Interject directly links a database stored procedure or website API to the Excel interface, in a similar way that middle-tier logic connects to a website application.
 ---
 * * *

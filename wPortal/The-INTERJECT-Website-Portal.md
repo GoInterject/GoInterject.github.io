@@ -6,7 +6,7 @@ keywords: [website portal, account, connection strings]
 headings: ["Overview", "Logging In to the Interject Website Portal", "Data Connections", "Data Portals", "User Profile"]
 links: ["/wPortal/Logging-In-to-Website-Portal.html", "/wPortal/Data-Connections.html", "/wPortal/Data-Portals.html", "https://www.connectionstrings.com/", "/wPortal/User-Profile.html"]
 image_dir: "InterjectWebsitePortal"
-images: [{file: "PortalSite",type: "png",site: "Portal",cat: "Home",sub: "",report: "",ribbon: "",config: ""}]
+images: [{file: "PortalSite", type: "png", site: "Portal", cat: "Home", sub: "", report: "", ribbon: "", config: ""}]
 description: The Interject website portal is a central place to manage Interject client settings and user profiles.
 ---
 * * *
