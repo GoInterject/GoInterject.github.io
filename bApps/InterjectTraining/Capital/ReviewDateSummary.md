@@ -6,7 +6,7 @@ keywords: [Training, Capital, Capital Change Query, Review Date]
 headings: ["Overview", "Capital and the Control Center"]
 links: ["/bApps/InterjectTraining/Budget/ControlCenter.html", "/bApps/InterjectTraining/Budget/ControlCenter.html"]
 image_dir: "WCNTraining/Capital"
-images: {file: "Capital/ReviewDateSummary_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "Capital/ReviewDateSummary_BuildingsDetail", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "Budget/ControlCenter_SimpleExample", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
+images: [{file: "ReviewDateSummary_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "Capital/ReviewDateSummary_BuildingsDetail", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ControlCenter_SimpleExample", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}]
 description: Pull in Capital amounts grouped by Asset group into the Review Date buckets.
 ---
 
@@ -32,4 +32,4 @@ The screenshot above shows the Review Dates assigned to District 2041 and the Ca
 
 The screenshot below shows the Review Dates assigned to 2041 in the [Control Center](/bApps/InterjectTraining/Budget/ControlCenter.html). If the dates were to change here, it would also alter how the amounts get pulled into the *Review Date Summary* tab.
 
-![](/images/WCNTraining/Budget/ControlCenter_SimpleExample.png)
+![](/images/WCNTraining/Capital/ControlCenter_SimpleExample.png)

@@ -6,7 +6,7 @@ keywords: [Account, Epicor, Companies]
 headings: ["Pull Data", "Save Data"]
 links: []
 image_dir: "Interject-Financials"
-images: {file: "InterjectFinancialsPull", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "09", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
+images: [{file: "InterjectFinancialsPull", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "09", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}]
 description: Interject™ Financials for Epicor Enterprise The basics of pulling and saving data in Interject
 ---
 

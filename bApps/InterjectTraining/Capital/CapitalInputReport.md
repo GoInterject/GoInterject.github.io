@@ -6,7 +6,7 @@ keywords: [Training, Capital, Capital Input]
 headings: ["Overview", "What is new?", "Summary Tab", "Bud Capital Input Tab", "Summary by PO Type Tab"]
 links: ["/bApps/InterjectTraining/Capital/CapitalSummary.html", "/bApps/InterjectTraining/Capital/CapitalInput.html", "/bApps/InterjectTraining/Capital/CapitalSummaryPOType.html"]
 image_dir: "WCNTraining/Capital"
-images: {file: "Capital/CapitalBudgetInput_ReportLibrary", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
+images: [{file: "CapitalBudgetInput_ReportLibrary", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}]
 description: This report is used to upload new Capital amounts and recon the saved Capital amounts for the given Budget Year.
 ---
 

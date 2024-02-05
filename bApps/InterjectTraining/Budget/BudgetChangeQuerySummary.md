@@ -6,7 +6,7 @@ keywords: [Training, Budget, Change Query]
 headings: ["Overview", "Review Date Summary Tab", "Review Date Detail Tab", "EBITDA Change History Tab", "Summary Tab", "Detail Tab", "Unsynced Changes Tab", "EBITDA Revenue Buckets Tab"]
 links: ["/bApps/InterjectTraining/Budget/BudgetChangeQuery_ReviewDateSummary.html", "/bApps/InterjectTraining/Budget/BudgetChangeQuery_ReviewDateDetail.html", "/bApps/InterjectTraining/Budget/BudgetChangeQuery_EBITDAChangeHistory.html", "/bApps/InterjectTraining/Budget/BudgetChangeQuery_Summary.html", "/bApps/InterjectTraining/Budget/BudgetChangeQuery_Detail.html", "/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html", "/bApps/InterjectTraining/Budget/BudgetChangeQuery_EBITDARevenueBuckets.html"]
 image_dir: "WCNTraining/Budget"
-images: {file: "Budget/BudgetChangeQuery_ReportLibrary", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
+images: [{file: "BudgetChangeQuery_ReportLibrary", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}]
 description: The Budget Change Query Tool provides different views of how budgets have changed over the budget season. The following are brief descriptions of each tab in the tool.
 ---
 

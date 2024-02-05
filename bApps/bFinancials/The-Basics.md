@@ -6,7 +6,7 @@ keywords: [Report, Epicor, Accounts]
 headings: ["Interject for Financials Quick Reference", "Important Interject Hotkeys", "Important Formulas", "Important Actions on the Interject Ribbon Menu", "The Basics of Working with Interject for Financials", "Using the Report Library", "Pull Data", "Drilling Between Reports"]
 links: []
 image_dir: "Interject-Financials"
-images: {file: "InterjectFinancialsRbnMnu", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "InterjectFinancialsReportLib", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "InterjectFinancialsPull", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "09", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "11", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "InterjectFinancialsDrill", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
+images: [{file: "InterjectFinancialsRbnMnu", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "InterjectFinancialsReportLib", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "InterjectFinancialsPull", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "09", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "11", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "InterjectFinancialsDrill", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}]
 description: A quick guide to get users started navigating Interject for Financials Epicor Enterprise.
 ---
 

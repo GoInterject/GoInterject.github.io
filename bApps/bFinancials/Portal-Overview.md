@@ -6,7 +6,7 @@ keywords: [Report, Epicor, Accounts]
 headings: ["User Profiles"]
 links: []
 image_dir: "Login"
-images: {file: "03", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "01", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "03", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
+images: [{file: "03", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "01", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "03", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}]
 description: A quick guide to Using the Interject Data Portal Site.
 ---
 
