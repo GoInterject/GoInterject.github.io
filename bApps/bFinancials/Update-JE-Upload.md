@@ -6,6 +6,7 @@ keywords: [Account, Epicor, Companies, JEUpload]
 headings: ["To Check for Your Current Version", "Click Your Version Below for Release Notes and Update Scripts", "Current Version Notes", "Updating", "Rolling Back One Version"]
 links: ["https://drive.google.com/file/d/10Gxxb4mjKxWpl0v49x1IWK97w6xm-EKV/view?usp=sharing", "https://drive.google.com/file/d/1TGP1PBcNy8T-JD9w2OV7CAStV0rhtTT4/view?usp=sharing", "https://drive.google.com/file/d/1eT33xP-OReDInLZQiU31OWpat0IjPZCu/view?usp=sharing", "https://docs.gointerject.com/bApps/bFinancials/JE-Upload-Install.html"]
 image_dir: "A-InitialDataLoad"
+images: {file: "VersionConfirm", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
 description: Interject™ Journal Entry Upload for Epicor Enterprise (This would cover topics that are specific to integration with Epicor Enterprise, and would potentially be different for each ERP) 
 ---
 

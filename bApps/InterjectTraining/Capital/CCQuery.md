@@ -6,6 +6,7 @@ keywords: [Training, Capital, Capital Change Query]
 headings: ["Overview", "Summary Level Drop-Down"]
 links: []
 image_dir: "WCNTraining/Capital"
+images: {file: "Capital/CCQuery_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "Capital/CCQuery_SummaryByDay", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "Capital/CCQuery_SummaryByChange", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
 description: Pull in change history details for Capital.
 ---
 

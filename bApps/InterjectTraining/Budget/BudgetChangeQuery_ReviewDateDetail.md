@@ -6,6 +6,7 @@ keywords: [Training, Budget, Budget Change Query]
 headings: ["Overview", "Review Type Options"]
 links: []
 image_dir: "WCNTraining/Budget"
+images: {file: "Budget/BudChangeQuery_ReviewDateDetail_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "Budget/BudChangeQuery_ReviewDateDetail_ReviewTypeDropDown", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
 description: This tab of the Budget Change Query tool shows the budget amounts per account. Available filters allow the results to be restricted by Review Date Bucket, and many other options.
 ---
 

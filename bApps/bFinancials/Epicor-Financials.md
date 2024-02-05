@@ -6,6 +6,7 @@ keywords: [Account, Epicor, Companies]
 headings: ["About", "What is Interject Financials - Epicor Enterprise", "Product Sheet", "Prerequisites"]
 links: []
 image_dir: ""
+images: []
 description: Interject™ Financials for Epicor Enterprise (This would cover topics that are specific to integration with Epicor Enterprise, and would potentially be different for each ERP) 
 ---
 

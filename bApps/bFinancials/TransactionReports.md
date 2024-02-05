@@ -6,6 +6,7 @@ keywords: [Report, Epicor, Accounts]
 headings: ["Fill Out Report Parameters and Pull Data", "Drill Through Detail"]
 links: ["https://docs.gointerject.com/bApps/bFinancials/The-Basics.html"]
 image_dir: "Train"
+images: {file: "TransactionRpt1", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "TransactionRptDrill", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "TransactionRptDrill2", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
 description: Step by step guide on using Interject Financials - Epicor Enterprise Transaction reports.
 ---
 

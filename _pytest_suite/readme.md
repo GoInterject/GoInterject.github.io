@@ -5,6 +5,7 @@ keywords: []
 headings: []
 links: []
 image_dir: ""
+images: []
 Description: Website Test Suite
 
 This test suite utilizes pytest to verify that the website meets criteria for a passing stable site.

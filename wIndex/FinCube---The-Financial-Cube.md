@@ -63,7 +63,7 @@ The table below explains each of the available parameters of the FinCube DataPor
 
 The **Show Credits** and **Reverse Signs** parameters work together to provide the output required in presenting positive or negative numbers for financial statements. The chart below shows + or - to signify output. The yellow row shows how Assets, Liability, Equity, Revenue, and Expense are naturally recorded in a general ledger. For example, Revenue is always negative by default, but is normally presented as a positive number in a profit and loss report. For certain reconciliations reports, these credit accounts may be specifically set up to show as a negative.
 
-![](/images/FinCube/image2017-5-20_11-33-44.png?height=250)
+![](/images/FinCube/image2017-5-20_11-33-44.png)
 <br>
 
 ### Available Columns for the DataPortal
@@ -161,10 +161,10 @@ It is important to emphasize that jColumnDef() goes beyond a source (Actual, Bud
 
 The illustration below shows an example. In cells H2 and I2, the jColumnDef() function is entered into the column definition row instead of CYA1 or Act. The jColumnDef() function argument references the cells below it (rows 4 through 15) that notes all the segment options. In this example, the columns will return the Jan and Feb of 2017 actuals, since Period, Year and Source are the only segments used.
 
-![](/images/FinCube/image2017-5-20_14-12-53.png?height=250)
+![](/images/FinCube/image2017-5-20_14-12-53.png)
 <br>
 
 In the following example, you are using more of the segments. The columns were changed so both are for Jan 2017, but the first column is now specified to all revenue for district 2050. the second column is specified to show EBITDA for the same district. Using segment groups provides multiple ways to define a column.
 
-![](/images/FinCube/image2017-5-20_14-40-35.png?height=250)
+![](/images/FinCube/image2017-5-20_14-40-35.png)
 <br>

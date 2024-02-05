@@ -6,6 +6,7 @@ keywords: [Account, Epicor, Companies]
 headings: ["Overview", "My Apps", "Data Connections", "Data Portals"]
 links: ["/wPortal/Data-Portals.html", "/wPortal/Data-Connections.html", "https://www.connectionstrings.com/sql-server/"]
 image_dir: ""
+images: []
 description: Interject™ Financials for Epicor Enterprise (This would cover topics that are specific to integration with Epicor Enterprise, and would potentially be different for each ERP) 
 ---
 
