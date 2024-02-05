@@ -6,7 +6,7 @@ keywords: [Diagnostics, Shortkey Changes, Configuration, Config, hotkey, keystro
 headings: ["Overview", "Input Examples", "Defaults", "Multiple Input Example"]
 links: ["/wIndex/INTERJECT-Hotkey-Index.html#default-hotkey-index"]
 image_dir: "Diagnostics"
-images: [{file: "ChangeShortKey", type: "png", site: "Addin", cat: "Diagnostics", sub: "Change ShortKey", report: "", ribbon: "", config: ""},{file: "ChangeShortKey", type: "png", site: "Addin", cat: "Diagnostics", sub: "Change ShortKey", report: "", ribbon: "", config: ""},{file: "MultipleInputsShortKey", type: "png", site: "Addin", cat: "Diagnostics", sub: "Change ShortKey", report: "", ribbon: "", config: ""},{file: "MultipleInputsShortKeyExecute", type: "png", site: "Addin", cat: "Diagnostics", sub: "Change ShortKey", report: "", ribbon: "", config: ""}]
+images: [{file: "ChangeShortKey", type: "png", site: "Addin", cat: "Diagnostics", sub: "Change ShortKey", report: "", ribbon: "", config: ""}, {file: "ChangeShortKey", type: "png", site: "Addin", cat: "Diagnostics", sub: "Change ShortKey", report: "", ribbon: "", config: ""}, {file: "MultipleInputsShortKey", type: "png", site: "Addin", cat: "Diagnostics", sub: "Change ShortKey", report: "", ribbon: "", config: ""}, {file: "MultipleInputsShortKeyExecute", type: "png", site: "Addin", cat: "Diagnostics", sub: "Change ShortKey", report: "", ribbon: "", config: ""}]
 description: The "Change ShortKey" feature allows users to change the shortcut key for certain Interject actions.
 ---
 * * *

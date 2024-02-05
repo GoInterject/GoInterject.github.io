@@ -6,7 +6,7 @@ keywords: [RowDefRange, ColDefRange, Column definition missing, data clear]
 headings: ["Overview", "Cause of the Error", "The Solution"]
 links: ["/wIndex/ReportVariable.html"]
 image_dir: "RowDefClear"
-images: [{file: "MultipleRowDefs", type: "png", site: "Addin", cat: "Report", sub: "", report: "PL Report Categories by Location", ribbon: "", config: ""},{file: "MissingColumnDefinition", type: "png", site: "Addin", cat: "Report", sub: "", report: "PL Report Categories by Location", ribbon: "", config: ""},{file: "ColumnDefinitions", type: "png", site: "Addin", cat: "Report", sub: "", report: "PL Report Categories by Location", ribbon: "", config: ""}]
+images: [{file: "MultipleRowDefs", type: "png", site: "Addin", cat: "Report", sub: "", report: "PL Report Categories by Location", ribbon: "", config: ""}, {file: "MissingColumnDefinition", type: "png", site: "Addin", cat: "Report", sub: "", report: "PL Report Categories by Location", ribbon: "", config: ""}, {file: "ColumnDefinitions", type: "png", site: "Addin", cat: "Report", sub: "", report: "PL Report Categories by Location", ribbon: "", config: ""}]
 description: Data does not clear when multiple columns are defined as the RowDefRange for a ReportVariable. This happens only when the first column of the RowDefRange is missing from the ColDefRange.
 ---
 * * *
