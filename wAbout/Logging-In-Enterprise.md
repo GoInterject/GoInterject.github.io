@@ -1,8 +1,12 @@
 ---
 title: "Logging In/Out: Enterprise User"
+filename: "Logging-In-Enterprise.md"
 layout: custom
 keywords: [login, ribbon, logout, new login, credentials, accounts, enterprise, user]
 headings: ["Overview", "Initial Enterprise Login", "New Login", "Logging Out", "Log Back In", "Switch Accounts", "Forgetting Login Credentials", "Clearing Login Cookies"]
+links: []
+image_dir: "Login-Enterprise"
+images: [{file: "interject-ribbon-advanced-menu-login-revised", type: "png", site: "Interject", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, {file: "SignIntoInterjectClick", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, {file: "EnterpriseLoginCode", type: "png", site: "Interject", cat: "Enter Credentials", sub: "", report: "", ribbon: "", config: ""}, {file: "SelectProvider", type: "png", site: "Interject", cat: "Enter Credentials", sub: "", report: "", ribbon: "", config: ""}, {file: "FederatedLogin", type: "png", site: "Interject", cat: "Federated Login", sub: "", report: "", ribbon: "", config: ""}, {file: "EnterpriseLoggedIn", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, {file: "interject-ribbon-advanced-menu-login-revised", type: "png", site: "Interject", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, {file: "NewLogin", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, {file: "Logout", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, {file: "RibbonLogout", type: "png", site: "Interject", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, {file: "LogoutPrompt", type: "png", site: "Interject", cat: "Popup", sub: "Logout", report: "", ribbon: "", config: ""}, {file: "LogBackIn", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, {file: "SwitchAccounts", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, {file: "LogoutForget", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, {file: "ClearLoginCookies", type: "png", site: "Interject", cat: "Diagnostics", sub: "Clear External Login Cookies", report: "", ribbon: "Advanced", config: ""}]
 description: Logging in is simple and fast! Interject will remember your login and sign you in automatically subsequent visits.You can also add multiple logins and switch accounts easily.
 ---
 * * *
@@ -21,12 +25,12 @@ Once a federated identity is configured for an Interject client, users can provi
 
 **Step 1:** Click the Login button on the Interject Ribbon to bring up the Login Manager.
 
-![](/images/LogginIn/interject-ribbon-advanced-menu-login-revised.png)
+![](/images/Login-Enterprise/interject-ribbon-advanced-menu-login-revised.png)
 <br>
 
 **Step 2:** Click **Sign into Interject**.
 
-![](/images/LogginIn/SignIntoInterjectClick.png)
+![](/images/Login-Enterprise/SignIntoInterjectClick.png)
 <br>
 
 **Step 3:** Enter your enterprise login code and click **Look Up Code**.
@@ -57,7 +61,7 @@ You can verify you are logged in by the Login Manager Window.
 
 **Step 1:** To add a new login, first click the **Login** button on the Interject Ribbon.
 
-![](/images/LogginIn/interject-ribbon-advanced-menu-login-revised.png)
+![](/images/Login-Enterprise/interject-ribbon-advanced-menu-login-revised.png)
 <br>
 
 **Step 2:** Click the **New Login** button and proceed to enter your credentials the same as in [initial enterprise login](#initial-enterprise-login).
@@ -76,10 +80,10 @@ To log out, you can click the ellipses on the account you wish to log out and cl
 
 You may alternatively click the Logout button on the Interject ribbon.
 
-![](/images/LogginIn/RibbonLogout.png)
+![](/images/Login-Enterprise/RibbonLogout.png)
 <br>
 
-![](/images/LogginIn/LogoutPrompt.png)
+![](/images/Login-Enterprise/LogoutPrompt.png)
 <br>
 
 ### Log Back In

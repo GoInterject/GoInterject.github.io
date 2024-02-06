@@ -1,8 +1,12 @@
 ---
 title: Budget Reports
+filename: "BudgetReports.md"
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: []
+links: []
+image_dir: "Train"
+images: [{file: "Budget1", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "Budget2", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}]
 description: Step by step guide on adding budget columns to your report templates.
 ---
 

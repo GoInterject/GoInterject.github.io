@@ -1,8 +1,12 @@
 ---
 title: Advanced Row and Section Hiding
+filename: "L-Create-AdvancedHideRowsSections.md"
 layout: custom 
 keywords: [hide, rows, sections]
 headings: ["Overview", "Hiding Rows"]
+links: ["/wIndex/ReportHideRowOrColumn.html", "/wAbout/Report-Library-Basics.html", "/wPortal/INTERJECT-Ribbon-Menu-Items.html"]
+image_dir: "L-Create-AdvancedHideRow"
+images: [{file: "AdvanceRowHide1", type: "png", site: "Addin", cat: "Quick Tools", sub: "", report: "Inventory By Category", ribbon: "Advanced", config: ""}, {file: "AdvanceRowHide2", type: "png", site: "Addin", cat: "Report", sub: "", report: "Inventory By Category", ribbon: "", config: "Yes"}, {file: "AdvanceRowHide3", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Inventory By Category", ribbon: "", config: "Yes"}, {file: "AdvanceRowHide4", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Inventory By Category", ribbon: "", config: "Yes"}, {file: "AdvanceRowHide5", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Inventory By Category", ribbon: "", config: "Yes"}, {file: "AdvanceRowHide6", type: "png", site: "Addin", cat: "Report", sub: "", report: "Inventory By Category", ribbon: "", config: "Yes"}, {file: "AdvanceRowHide7", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, {file: "AdvanceRowHide8", type: "png", site: "Addin", cat: "Report", sub: "", report: "Inventory By Category", ribbon: "", config: ""}, {file: "AdvanceRowHide9", type: "png", site: "Addin", cat: "Report", sub: "", report: "Inventory By Category", ribbon: "", config: ""}, {file: "AdvanceRowHide10", type: "png", site: "Addin", cat: "Report", sub: "", report: "Inventory By Category", ribbon: "", config: ""}, {file: "AdvanceRowHide13", type: "png", site: "Addin", cat: "Report", sub: "", report: "Inventory By Category", ribbon: "", config: ""}, {file: "AdvanceRowHide14", type: "png", site: "Addin", cat: "Report", sub: "", report: "Inventory By Category", ribbon: "Simple", config: ""}]
 description: In this example of the ReportHideRowOrColumn function, we will hide an entire section of a report based on the condition that the section is empty. You would typically use this in a report when data is pulled in with zero values. By hiding the zero value rows, and the entire section when all the rows within it are zero vale, the reporting area will be more usable. 
 ---
 * * *

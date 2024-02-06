@@ -1,8 +1,12 @@
 ---
 title: ReportMacro()
+filename: "ReportMacro.md"
 layout: custom
 keywords: [ReportMacro, macro, vba, event, trigger, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Trigger Combination List"]
+links: ["wIndex/Event-Functions-Landing.html", "/wGetStarted/L-Create-ReportMacro.html"]
+image_dir: ""
+images: []
 description: The ReportMacro function executes a designated VBA macro when triggered upon a designated event.
 ---
 * * *

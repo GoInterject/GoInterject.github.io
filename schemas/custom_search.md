@@ -1,9 +1,13 @@
 ---
 title: "Doc Search"
+filename: "custom_search.md"
 tree: false
 sitemap: false
 keywords: [search, interject, documentation, find]
 headings: []
+links: []
+image_dir: ""
+images: []
 description: Interject documentation search results
 ---
 

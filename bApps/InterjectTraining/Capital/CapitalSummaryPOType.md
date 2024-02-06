@@ -1,8 +1,12 @@
 ---
 title: Capital Summary by PO Type Tab
+filename: "CapitalSummaryPOType.md"
 layout: custom
 keywords: [Training, Capital, Capital Summary by PO Type]
 headings: ["Overview", "Hidden Replacement Section"]
+links: []
+image_dir: "WCNTraining/Capital"
+images: [{file: "CapitalSummaryPOType_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "CapitalSummaryPOType_ReplacementSection", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}]
 description: Pulls in Summarized Capital info broken out by Asset Type (Period/QTR). It is the same as the Capital tab in the Budget Book. This is the report Region and Corporate use to review capital.
 ---
 

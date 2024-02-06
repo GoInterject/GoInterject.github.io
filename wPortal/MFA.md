@@ -1,8 +1,12 @@
 ---
 title: Multi-Factor Authentication (MFA)
+filename: "MFA.md"
 layout: custom
 keywords: [2fa, login, credentials, security, email confirmation, authenticator app]
 headings: ["Overview", "Enable MFA for a User", "Login With the Authenticator App", "Login With an Email Confirmation"]
+links: ["https://docs.gointerject.com/wAbout/Federated-Login-Design.html", "https://portal.gointerject.com/login.html"]
+image_dir: "MFA"
+images: [{file: "SelectCompany", type: "png", site: "Portal", cat: "Home", sub: "Company", report: "", ribbon: "", config: ""}, {file: "SelectStaff", type: "png", site: "Portal", cat: "Sidebar", sub: "", report: "", ribbon: "", config: ""}, {file: "SelectMFA", type: "png", site: "Portal", cat: "Organization Staff", sub: "", report: "", ribbon: "", config: ""}, {file: "ClickMFAEnabled", type: "png", site: "Portal", cat: "Multi Factor Authentication", sub: "", report: "", ribbon: "", config: ""}, {file: "MFASetUp", type: "png", site: "Portal", cat: "Organization Staff", sub: "", report: "", ribbon: "", config: ""}, {file: "EnterCode", type: "png", site: "Portal", cat: "Please enter Authentication Code", sub: "", report: "", ribbon: "", config: ""}, {file: "AuthenticatorCode", type: "png", site: "External", cat: "Authenticator", sub: "", report: "", ribbon: "", config: ""}, {file: "QRCode", type: "png", site: "Portal", cat: "Login", sub: "Enable authenticator", report: "", ribbon: "", config: ""}, {file: "EnterEmailCode", type: "png", site: "Portal", cat: "Please enter Authentication Code", sub: "", report: "", ribbon: "", config: ""}, {file: "Email", type: "png", site: "External", cat: "Email", sub: "", report: "", ribbon: "", config: ""}]
 description: Multi-factor authentication (MFA), also known as two-factor authentication (2FA), is a security process that requires users to provide two or more authentication factors to verify their identity before gaining access to a system or resources.
 ---
 * * *

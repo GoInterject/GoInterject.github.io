@@ -1,8 +1,12 @@
 ---
 title: Installing - Single User
+filename: "SingleUser.md"
 layout: custom
 keywords: [Installing, Install, Basic]
 headings: ["Overview", "Installing Interject"]
+links: ["/wAbout/SharedComputer.html", "https://portal.gointerject.com/login.html", "https://portal.gointerject.com/invite.html?mode=create", "/wAbout/Logging-In.html#before-using-interject-heres-how-to-login", "mailto:help@gointerject.com"]
+image_dir: "SingleUser"
+images: [{file: "02", type: "jpg", site: "Portal", cat: "Home", sub: "Main", report: "", ribbon: "", config: ""}, {file: "03", type: "png", site: "Portal", cat: "Download", sub: "Main", report: "", ribbon: "", config: ""}, {file: "04", type: "png", site: "External", cat: "Chrome", sub: "Download", report: "", ribbon: "", config: ""}, {file: "05", type: "png", site: "External", cat: "Firefox", sub: "Download", report: "", ribbon: "", config: ""}, {file: "07", type: "png", site: "External", cat: "Edge", sub: "Download", report: "", ribbon: "", config: ""}, {file: "08", type: "png", site: "External", cat: "Internet Explorer", sub: "Download", report: "", ribbon: "", config: ""}, {file: "09", type: "png", site: "Interject", cat: "Installation", sub: "Setup Wizard", report: "", ribbon: "", config: ""}, {file: "09b", type: "png", site: "Interject", cat: "Installation", sub: "Installation Type", report: "", ribbon: "", config: ""}, {file: "10", type: "png", site: "Interject", cat: "Installation", sub: "End-User License Agreement", report: "", ribbon: "", config: ""}, {file: "11", type: "png", site: "Interject", cat: "Installation", sub: "Select Installation Folder", report: "", ribbon: "", config: ""}, {file: "12", type: "png", site: "Interject", cat: "Installation", sub: "Ready to Install", report: "", ribbon: "", config: ""}, {file: "13", type: "jpg", site: "Interject", cat: "Installation", sub: "Completed Install", report: "", ribbon: "", config: ""}]
 description: This is the base installer
 ---
 * * *
@@ -43,7 +47,7 @@ Interject aims to make the installation process as simple and painless as possib
 
 **Microsoft** **Edge** :
 
-![](/images/SingleUser/07.PNG)
+![](/images/SingleUser/07.png)
 <br>
 
 **Microsoft Internet Explorer**:
@@ -56,17 +60,27 @@ Interject aims to make the installation process as simple and painless as possib
 ![](/images/SingleUser/09.png)
 <br>
 
-**Step 8:** Read and accept the **End-User License Agreement,** then select **Next**.
+**Step 8:** Two options will be available when installing on Windows Server.
+
+1. Install as 'per-user' (current user)
+2. Install as 'per-machine' (everybody)
+
+To install for current user on the server, make sure the **Only for me** button is selected then click **Next**.
+
+![](/images/SingleUser/09b.png)
+<br>
+
+**Step 9:** Read and accept the **End-User License Agreement,** then select **Next**.
 
 ![](/images/SingleUser/10.png)
 <br>
 
-**Step 9:** Choose the **Destination Folder** for your installation, then select **Next**.
+**Step 10:** Choose the **Destination Folder** for your installation, then select **Next**.
 
 ![](/images/SingleUser/11.png)
 <br>
 
-**Step 10:** Click **Install**.
+**Step 11:** Click **Install**.
 
 ![](/images/SingleUser/12.png)
 <br>

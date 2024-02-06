@@ -1,8 +1,12 @@
 ---
 title: Param()
+filename: "Param.md"
 layout: custom
 keywords: [Param, helper, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Usable In These Functions"]
+links: ["/wTroubleshoot/Reports.html#validation-report-for-pullsave-events", "/wGetStarted/L-Drill-CustomerAging.html", "ReportFixed.html", "ReportLookup.html", "ReportRange.html", "ReportSave.html", "ReportVariable.html", "jDropdown.html"]
+image_dir: ""
+images: []
 description: The Param function transfers values as parameters to the DataPortal.
 ---
 * * *

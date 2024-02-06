@@ -1,8 +1,12 @@
 ---
 title: Support Overview
+filename: "Support-Overview.md"
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: ["Support"]
+links: ["https://docs.gointerject.com/wTroubleshoot/Troubleshooting-Landing.html#overview"]
+image_dir: ""
+images: []
 description: The best way to get support.
 ---
 

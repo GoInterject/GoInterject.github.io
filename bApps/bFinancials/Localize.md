@@ -1,8 +1,12 @@
 ---
 title: Setup Client Reporting Library
+filename: "Localize.md"
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: []
+links: []
+image_dir: "Localize"
+images: [{file: "01", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "02", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "03", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "SegNames", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "03", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "04", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "FileSave", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "08", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "CopyDrillCodes", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}]
 description: Step by step guide on publishing custom-made reports to your company's report library in the Interject for Financials App for Epicor Enterprise.
 ---
 
@@ -15,7 +19,6 @@ A subscription to Interject Financial - Epicor Enterprise will provide a "Subscr
 > **Step 1:** Open the Interject Report Library and find the report to be localized. Right-click the Report Link and "View Details" of the report.
 > ![Open Library](/images/Localize/01.png){: .center-image }
 >
-> **Step 2:** Write down the current "Data Drills for Link". You will need these links in a later step.
 >  ![Record Drill Links](/images/Localize/02.png){: .center-image }
 >
 > **Step 3:** Exit the View Detail window and open the Report Link from the Interject Report Library.

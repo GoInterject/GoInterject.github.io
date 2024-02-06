@@ -1,8 +1,12 @@
 ---
 title: FinCube - The Financial Cube
+filename: "FinCube---The-Financial-Cube.md"
 layout: custom
 keywords: [fincube, segment filter, data portal, filter, forecast, CYA, columns, jColumnDef]
 headings: ["Overview", "Segment Filter Options", "Data Portal Parameters", "Examples using Show Credits and Reverse Signs Parameters", "Available Columns for the DataPortal", "Segment Columns", "Group Columns", "Amount Columns", "CYA Column Notation", "Options for Forecast", "ACT Column Notation", "jColumnDef() Column Notation"]
+links: ["/wIndex/jColumnDef.html"]
+image_dir: "FinCube"
+images: [{file: "image2017-5-20_11-33-44", type: "png", site: "External", cat: "Flow Chart", sub: "ShowCredits ReverseSigns Truth Table", report: "", ribbon: "", config: ""}, {file: "image2017-5-20_14-12-53", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, {file: "image2017-5-20_14-40-35", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}]
 description: The FinCube is a single Data Portal that supports a wide variety of reporting needs. It is included as part of the Interject Financials for Spreadsheets application, and many of the segments can be customized for specific needs.
 ---
 * * *
@@ -30,8 +34,6 @@ Before each parameter is described that can be used in a spreadsheet report, it 
 **Filter with Groups:** Groups are an important feature that make filtering easier and more manageable. The management of groups will be covered in a different page, but they are defined as a text string representing a filter. For example, instead of using a filter for **21000..22000** , set up a group called **Accounts Payable** to represent that filter. And if you set up a group for the filter **30000..32000** , and call it **Long Term Liabilities** , you can use a filter like **Accounts Payable, Long Term Liabilities** to get the defined accounts. There are preset groups for the **Segment 9--Period** parameter for Qtr1, and more can be added for monthly periods. The exclude option in #4 above can also be used, such as when you want to see Revenue accounts but exclude Intercompany clearing accounts. This could be noted as **Revenue,!Intercompany**.
 
 ### Data Portal Parameters
-
-The table below summarizes parameters available for the FinCube DataPortal. Parameters can either be filters set up by spreadsheet users, or they can place data in the spreadsheet. Each parameter links to a spreadsheet cell, or they can be manually specified in the reporting formula if not used in the report. The first 8 parameters of FinCube represent customizable segments. They are typically set up to match a company's chart of account segments and may include other reporting dimensions like companies or currencies.
 
 The table below explains each of the available parameters of the FinCube DataPortal. The example column shows what the typical segment signification, but note that these can be configured differently for every Interject installation.
 
@@ -61,7 +63,7 @@ The table below explains each of the available parameters of the FinCube DataPor
 
 The **Show Credits** and **Reverse Signs** parameters work together to provide the output required in presenting positive or negative numbers for financial statements. The chart below shows + or - to signify output. The yellow row shows how Assets, Liability, Equity, Revenue, and Expense are naturally recorded in a general ledger. For example, Revenue is always negative by default, but is normally presented as a positive number in a profit and loss report. For certain reconciliations reports, these credit accounts may be specifically set up to show as a negative.
 
-![](/images/FinCube/image2017-5-20_11-33-44.png?height=250)
+![](/images/FinCube/image2017-5-20_11-33-44.png)
 <br>
 
 ### Available Columns for the DataPortal
@@ -159,10 +161,10 @@ It is important to emphasize that jColumnDef() goes beyond a source (Actual, Bud
 
 The illustration below shows an example. In cells H2 and I2, the jColumnDef() function is entered into the column definition row instead of CYA1 or Act. The jColumnDef() function argument references the cells below it (rows 4 through 15) that notes all the segment options. In this example, the columns will return the Jan and Feb of 2017 actuals, since Period, Year and Source are the only segments used.
 
-![](/images/FinCube/image2017-5-20_14-12-53.png?height=250)
+![](/images/FinCube/image2017-5-20_14-12-53.png)
 <br>
 
 In the following example, you are using more of the segments. The columns were changed so both are for Jan 2017, but the first column is now specified to all revenue for district 2050. the second column is specified to show EBITDA for the same district. Using segment groups provides multiple ways to define a column.
 
-![](/images/FinCube/image2017-5-20_14-40-35.png?height=250)
+![](/images/FinCube/image2017-5-20_14-40-35.png)
 <br>

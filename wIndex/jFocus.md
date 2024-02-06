@@ -1,8 +1,12 @@
 ---
 title: jFocus()
+filename: "jFocus.md"
 layout: custom
 keywords: [jFocus, helper, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition"]
+links: ["/wIndex/jFreezePanes.html", "/wGetStarted/Interject-Ribbon-Menu-Items.html#quick-tools", "/wGetStarted/L-Create-CustomerAging.html"]
+image_dir: ""
+images: []
 description: The jFocus function will move the cursor and select a targeted range after a freeze panes action using Interject's Freeze/UnFreeze Panes action.
 ---
 * * *

@@ -1,8 +1,12 @@
 ---
 title: Summary Tab
+filename: "CapitalSummary2.md"
 layout: custom
 keywords: [Training, Capital, Summary Tab]
 headings: ["Overview", "Drills"]
+links: ["/bApps/InterjectTraining/Capital/CapitalInput.html", "/bApps/InterjectTraining/Capital/CCQuery.html"]
+image_dir: "WCNTraining/Capital"
+images: [{file: "CapitalSummary_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "CapitalSummary_DrillWindow", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "CapitalSummary_DetailDrill", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "CapitalSummary_CapitalChangeDrill", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}]
 description: This tab pulls in District Capital Summary totals by Period/Quarter. This is used to recon the Capital amounts saved from the Bud Capital Input tab.
 ---
 

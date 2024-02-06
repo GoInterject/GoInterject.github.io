@@ -1,8 +1,12 @@
 ---
 title: Basics of Report Formulas
+filename: "Basics-of-Report-Formulas.md"
 layout: custom
 keywords: [report formula, column definitions, formatting range, hidden, parameters, notes]
 headings: ["Overview", "Accessing the Report Formulas", "Column Definitions", "Formatting Range", "Report Formulas", "Hidden Parameters and Notes"]
+links: ["/wAbout/Customer-Aging.html", "/wAbout/Report-Library-Basics.html", "/wPortal/INTERJECT-Ribbon-Menu-Items.html#unfreeze", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wIndex/Data-Functions-Landing.html", "/wIndex/ReportDrill.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data", "/wIndex/ReportSave.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html"]
+image_dir: "BasicsReportFormulas"
+images: [{file: "01", type: "png", site: "Addin", cat: "Report Library", sub: "", report: "Interject Customer Collections", ribbon: "Simple", config: ""}, {file: "02", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}, {file: "03", type: "png", site: "Excel", cat: "Freeze Panes", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}, {file: "04", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "05", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "06", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "07", type: "png", site: "Addin", cat: "Pull Data", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "08", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "09", type: "png", site: "Addin", cat: "Pull Data", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "10", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "11", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "12", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "13", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "14", type: "png", site: "Addin", cat: "Data Drill", sub: "Drill to Aging Detail", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "15", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}]
 description: At the top of Interject reports is a section called report formulas which handles the behavior of the report.
 ---
 * * *
@@ -93,16 +97,19 @@ Another type of Report Formula is the [Save](/wIndex/ReportSave.html) formula, w
 
 Each of these formulas is activated by its corresponding button in the [Interject Ribbon menu](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html).
 
-<img class="img-modal" src="/images/BasicsReportFormulas/13.png" onclick="zoom_img(this)" />
+![](/images/BasicsReportFormulas/13.png)
+<br>
 
 If a report has multiple Pulls or Saves, Interject will activate them in order from left to right, for the first 1000 rows of the spreadsheet. If a report has multiple drills, Interject will show a popup list for you to select one specifically. The order of drills in this list will be based on the order of the drills in the report, from left to right and top to bottom.
 
-<img class="img-modal" src="/images/BasicsReportFormulas/14.png" onclick="zoom_img(this)" />
+![](/images/BasicsReportFormulas/14.png)
+<br>
 
 ### Hidden Parameters and Notes
 
 The Hidden Parameters and Notes section has two uses. First, it holds documentation on the configuration for other report writers to see. Second, it can contain hidden parameters and spreadsheet formulas that support the other areas of the spreadsheet report. In this example, the notes contain a basic overview of the report as well as what the drills do.
 
-<img class="img-modal" src="/images/BasicsReportFormulas/15.png" onclick="zoom_img(this)" />
+![](/images/BasicsReportFormulas/15.png)
+<br>
 
 This concludes the discussion of the basics of Report Formulas. Be sure to continue reading, since there are many advanced options to learn more about, which can be leveraged to create tailored reports and applications for the company's needs.

@@ -1,8 +1,12 @@
 ---
 title: Installing - Shared Computer
+filename: "SharedComputer.md"
 layout: custom
 keywords: [install, Multiple Users, Server, network]
 headings: ["Overview", "Installing Interject on Multi-User Systems"]
+links: ["https://portal.gointerject.com/login.html", "https://portal.gointerject.com/invite.html?mode=create", "https://docs.gointerject.com/wAbout/Logging-In.html", "mailto:help@gointerject.com"]
+image_dir: "SharedComputer"
+images: [{file: "15", type: "jpg", site: "Addin", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "16", type: "png", site: "Portal", cat: "Download", sub: "Main", report: "", ribbon: "", config: ""}, {file: "17", type: "png", site: "Portal", cat: "Download", sub: "Main", report: "", ribbon: "", config: ""}, {file: "22", type: "png", site: "Windows", cat: "Explorer", sub: "Extract All", report: "", ribbon: "", config: ""}, {file: "24", type: "jpg", site: "Windows", cat: "Explorer", sub: "Folder", report: "", ribbon: "", config: ""}, {file: "25", type: "jpg", site: "Windows", cat: "Explorer", sub: "Extract", report: "", ribbon: "", config: ""}, {file: "31", type: "png", site: "Windows", cat: "Explorer", sub: "Folder", report: "", ribbon: "", config: ""}, {file: "33", type: "png", site: "Addin", cat: "Installation", sub: "Setup Wizard", report: "", ribbon: "", config: ""}, {file: "34", type: "png", site: "Addin", cat: "Installation", sub: "Installation Type", report: "", ribbon: "", config: ""}, {file: "37", type: "png", site: "Addin", cat: "Installation", sub: "End-User License Agreement", report: "", ribbon: "", config: ""}, {file: "38", type: "png", site: "Addin", cat: "Installation", sub: "Select Installation Folder", report: "", ribbon: "", config: ""}, {file: "39", type: "png", site: "Addin", cat: "Installation", sub: "Ready to Install", report: "", ribbon: "", config: ""}, {file: "40", type: "png", site: "Addin", cat: "Installation", sub: "Completed Install", report: "", ribbon: "", config: ""}]
 description: This is the multi-user to one computer installation of Interject.
 ---
 * * *
@@ -61,6 +65,7 @@ Shared Computer installation installs a multi-user instance of Interject on one 
 <br>
 
 **Step 11:** Two options will be available when installing on Windows Server.
+
 1. Install as 'per-user' (current user)
 2. Install as 'per-machine' (everybody)
 
@@ -119,7 +124,7 @@ Hit **Next** once the location is selected.
 
 **Step 14:** Click **Finish** once the setup wizard tells you the installation is complete.
 
-![](/images/SingleUser/13.png)
+![](/images/SharedComputer/40.png)
 <br>
 
  <a href="https://docs.gointerject.com/wAbout/Logging-In.html"><h2>Continue Here for Login Information</h2></a>

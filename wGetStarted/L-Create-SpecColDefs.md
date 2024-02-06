@@ -1,8 +1,12 @@
 ---
 title: "Create: Special Column Definitions"
+filename: "L-Create-SpecColDefs.md"
 layout: custom
 keywords: [hyperlink, comment, dropdown, list, column definitions, validation, walkthrough]
 headings: ["Overview", "Special Cell Value Comment", "Special Cell Value Hyperlink", "Special Cell Value Validation List", "Stacking Special Cell Types"]
+links: ["/wGetStarted/L-Modify-CustomerAging.html"]
+image_dir: "L-Create-SpecColDefs"
+images: [{file: "01", type: "jpg", site: "Addin", cat: "Quick Tools", sub: "", report: "Customer Credits", ribbon: "Advanced", config: ""}, {file: "02", type: "jpg", site: "Addin", cat: "Pull Data", sub: "", report: "Customer Credits", ribbon: "Advanced", config: ""}, {file: "03", type: "jpg", site: "Addin", cat: "Report", sub: "", report: "Customer Credits", ribbon: "", config: ""}, {file: "04", type: "jpg", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, {file: "05", type: "jpg", site: "Addin", cat: "Pull Data", sub: "", report: "Customer Credits", ribbon: "Advanced", config: ""}, {file: "06", type: "jpg", site: "Addin", cat: "Report", sub: "", report: "Customer Credits", ribbon: "", config: "Yes"}, {file: "07", type: "jpg", site: "Addin", cat: "Report", sub: "", report: "Customer Credits", ribbon: "", config: "Yes"}, {file: "08", type: "jpg", site: "Addin", cat: "Pull Data", sub: "", report: "Customer Credits", ribbon: "Advanced", config: "Yes"}, {file: "09", type: "jpg", site: "Addin", cat: "Report", sub: "", report: "Customer Credits", ribbon: "", config: "Yes"}, {file: "10", type: "jpg", site: "External", cat: "Browser", sub: "", report: "Customer Credits", ribbon: "", config: "Yes"}, {file: "11", type: "jpg", site: "Addin", cat: "Report", sub: "", report: "Customer Credits", ribbon: "", config: "Yes"}, {file: "12", type: "jpg", site: "Addin", cat: "Report", sub: "", report: "Customer Credits", ribbon: "", config: "Yes"}, {file: "13", type: "jpg", site: "Addin", cat: "Report", sub: "", report: "Customer Credits", ribbon: "Advanced", config: "Yes"}, {file: "14", type: "jpg", site: "Addin", cat: "Pull Data", sub: "", report: "Customer Credits", ribbon: "Advanced", config: "Yes"}, {file: "15", type: "jpg", site: "Addin", cat: "Report", sub: "", report: "Customer Credits", ribbon: "", config: "Yes"}, {file: "16", type: "jpg", site: "External", cat: "Browser", sub: "", report: "Customer Credits", ribbon: "", config: "Yes"}]
 description: Interject's Special Column Definitions are a convenient way you can customize a cell and provide additional features to your reports.
 ---
 * * *
@@ -60,8 +64,6 @@ Place your cursor over cell **H27** and review the comment that is placed in the
 **Note:** Not all of the cells have been changed, and so there is no comment created for those cells.
 
 ### Special Cell Value Hyperlink
-
-Excel has two types of hyperlinks, the hyperlink property and the Hyperlink() spreadsheet function. This feature uses the spreadsheet function in the report so users can click to open specific web pages. In this example you will use Interject to add hyperlinks to the address column of the report that links the address to a google map search.
 
 Select cell **C2** and input **CompanyName hlink:MapsURL**.
 

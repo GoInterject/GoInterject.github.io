@@ -1,9 +1,13 @@
 ---
 title: Contributing
+filename: "Contributing.md"
 layout: custom
 sitemap: false
 keywords: [best practices, standards, editing, changes, format, style, consistency]
 headings: ["Overview", "Contributing Process Flow", "Screenshot Requirements", "Screenshot Software Requirements", "When to Include a Screenshot", "Click Action (Arrow)", "Highlighting & Emphasizing", "Multi-Step Actions in a Single Screenshot (Numbered Steps)", "Emphasizing Text or a Point in a Screenshot", "Note on Complex Screenshots", "Note on Popups in Screenshots", "Screenshots of Excel Content", "Tab Navigation in Screenshots", "Spacing Surrounding Screenshots", "Note for Content Reviewers", "Uploading and Saving Screenshots to the Documentation Site", "Adding Jekyll Headers to Page", "Headings", "Table of Contents", "Grammar/Spelling", "Referencing Buttons and Text", "Lists", "Tables", "Links", "Code Blocks", "Consistency", "Commit Message Standards"]
+links: ["https://www.techsmith.com/screen-capture.html"]
+image_dir: "Contributing"
+images: [{file: "01", type: "png", site: "Addin", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "02", type: "png", site: "Addin", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "03", type: "png", site: "Addin", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "04", type: "png", site: "Addin", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "05", type: "png", site: "Addin", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "06", type: "png", site: "Addin", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "07", type: "png", site: "Addin", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "Documentation_process", type: "png", site: "Addin", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "08", type: "png", site: "Addin", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "09", type: "png", site: "Addin", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "10", type: "png", site: "Addin", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "11", type: "png", site: "Addin", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "12", type: "png", site: "Addin", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "13", type: "png", site: "Addin", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "14", type: "png", site: "Addin", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "15", type: "png", site: "Addin", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "16", type: "png", site: "Addin", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "17", type: "png", site: "Addin", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "18", type: "png", site: "Addin", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "19", type: "png", site: "Addin", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "19", type: "png", site: "Addin", cat: "", sub: "", report: "", ribbon: "", config: ""}]
 description: Hello and thank you for wanting to make a contribution to Interject. These are the guidelines that we use to make sure our documentation is the highest quality, and consistent. Included in this document is the documentation cycle from creation to approval.
 ---
 * * *
@@ -259,8 +263,6 @@ Most pages should have the "Overview" heading as a h2 (##). Subsequent headings 
 Headings should be Title Case (following APA standards).
 
 ### Table of Contents
-
-When adding a new file to the navigation of the website, edit the TOC.yaml file, unless it is for an app branch of the website. When editing the TOC.yaml file, follow the current convention for all the other navigation links. ALL yaml files are located inside the _data folder of the website.
 
 TOC entries should always have a default link. For example, if the parent category group does not have a landing page, it should link to the first sub catagory page.
 

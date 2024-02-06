@@ -1,8 +1,12 @@
 ---
 title: Reference
+filename: "Reference.md"
 layout: custom
 keywords: [FRx, Epicor, deployment]
 headings: ["Reference", "Media/Source Files"]
+links: []
+image_dir: ""
+images: []
 description: Reference page for the Intuition Interject Deployment Plan
 ---
 

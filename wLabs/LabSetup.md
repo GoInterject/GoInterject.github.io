@@ -1,8 +1,12 @@
 ---
 title: Manual Setup for the Lab Guide
+filename: "LabSetup.md"
 layout: custom
 keywords: [lab, guide, manual setup, start, Northwind, database, FinCube, data cells]
 headings: ["Overview", "Interject Data Report Flow", "Manual Setup", "Step 1: Setting up the Database", "Step 2: Setting up the Data Connection", "Step 3: Setting up the Data Portals", "Step 4: Setting up FinCube", "Setting up the FinCube Data Connection", "Setting up the FinCube Data Portal", "Setting up the FinCube Data Cells Data Portals", "Step 5: The Report Files", "Step 6: Renaming the Data Portals"]
+links: ["/wLabs/lab.html", "/wIndex/Excel-Function-Index.html", "/wPortal/Data-Portals.html", "/wPortal/The-INTERJECT-Website-Portal.html", "https://www.microsoft.com/en-us/sql-server/sql-server-downloads", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017", "https://portal.gointerject.com/", "/wPortal/The-INTERJECT-Website-Portal.html", "/wPortal/L-Database-Connection.html", "/wPortal/Data-Portals.html", "/wIndex/FinCube---The-Financial-Cube.html", "/wAbout/Tabular-vs-Data-Cells.html", "/wIndex/Data-Cell-Functions.html"]
+image_dir: "LabSetup"
+images: [{file: "FlowChart", type: "png", site: "External", cat: "Flow Chart", sub: "Data Report Flow", report: "", ribbon: "", config: ""}, {file: "DataConnection", type: "png", site: "Portal", cat: "Data Connections", sub: "Details", report: "", ribbon: "", config: ""}, {file: "FinCubeDataConnection", type: "png", site: "Portal", cat: "Data Connections", sub: "Details", report: "", ribbon: "", config: ""}, {file: "FinCubeDataPortal", type: "png", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "ClientID", type: "png", site: "Addin", cat: "About Interject", sub: "", report: "", ribbon: "", config: ""}]
 description: This page details the necessary requirements and steps to set up a local environment that can accommodate a user following the Lab Guide.
 ---
 * * *
