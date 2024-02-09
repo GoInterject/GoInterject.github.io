@@ -60,6 +60,7 @@ function findMyTopic(tree){
       // first check branch itself <NOTE> we need to do this because our header sections are links
       if (branch[k].path == pageURL && !branch[k].nosync){
         thisIsIt = true;
+        sectionToHighlight = currentSection;
         break;
       }
   
