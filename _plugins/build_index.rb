@@ -30,8 +30,12 @@ Jekyll::Hooks.register :site, :post_write do |site|
     # Iterate over all pages on the website
     site.pages.each do |page|
 
-      # Exclude pages from specific folders
-      next if excluded_folder?(page) || !page.url.end_with?('.html') || page.data['title'] == 404
+      # Continue if the page is the index.html page in the root folder
+      if page.url == '/'
+      # Exclude pages from specific folders, non html files, and the 404.html page
+      elsif excluded_folder?(page) || !page.url.end_with?('.html') || page.data['title'] == 404
+        next
+      end
 
       # Include only documents from specific folders
       #next unless included_folder?(page)
