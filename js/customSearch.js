@@ -238,8 +238,13 @@ function displayResults(results, container, query) {
 
     results.forEach(result => {
       const resultItem = document.createElement('div');
-      const titleLink = `<h5 style="margin-bottom: 0px;"><a href="${result.url}" target="_blank">${result.title}</a></h5>`;
-      const occurrencesContent = `<p style="margin-bottom: 0px; margin-top: 0px; font-size: 12px;">Occurrences: ${result.occurrences}</p>`;
+      const myCurrentTab = findTheTabForThisPage(result.url).toUpperCase()
+      // const currentTab = `<p style="margin-bottom: 0px; margin-top: 3px; display: inline-block;">&lt;${myCurrentTab}&gt; </p>`;
+      const titleLink = `<h5 style="margin-bottom: 0px; margin-top: 3px; display: inline-block;"><a href="${result.url}" target="_blank">${myCurrentTab} : ${result.title}</a></h5>`;
+      const occurrencesContent = `<p style="margin-bottom: 0px; margin-top: 3px; font-size: 12px; display: inline-block; padding-left: 10px;">(Occurrences: ${result.occurrences})</p>`;
+
+      // const titleLink = `<h5 style="margin-bottom: 0px; margin-top: 3px; display: inline-block;"><a href="${myCurrentTab}" target="_blank">${myCurrentTab} : ${result.title}</a></h5>`;
+      // const occurrencesContent = `<p style="margin-bottom: 0px; margin-top: 3px; font-size: 12px; display: inline-block; padding-left: 10px;">(Occurrences: ${result.occurrences})</p>`;
 
       let snippetContent;
       if (useRegex === 'true') {
@@ -253,8 +258,9 @@ function displayResults(results, container, query) {
       }
 
       resultItem.innerHTML = `
-        ${titleLink}
-        ${occurrencesContent}
+        <div style="margin-bottom: 0px;">
+          ${titleLink} ${occurrencesContent}
+        </div>
         <p>&emsp;${snippetContent}</p>
       `;
 
