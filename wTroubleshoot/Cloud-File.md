@@ -1,8 +1,12 @@
 ---
 title: Cloud File Uploads Incorrectly
+filename: "Cloud-File.md"
 layout: custom
 keywords: [network, cloud, website, url, drive, file, report library, upload, download, open, link]
 headings: ["Overview", "Identifying Cloud Files", "Description of the Errors", "Solution: Saving to Local Drive", "Solution: Uploading as a Website Link"]
+links: ["/wAbout/Report-Library-Basics.html"]
+image_dir: "CloudFile"
+images: [{file: "OneDriveLink", type: "png", site: "Addin", cat: "Report Library", sub: "Details", report: "OneDriveReport", ribbon: "", config: ""}, {file: "SharePointLink", type: "png", site: "Addin", cat: "Report Library", sub: "Details", report: "SharepointWebLink", ribbon: "", config: ""}, {file: "ReportLibraryMissingDetails", type: "png", site: "Addin", cat: "Report Library", sub: "", report: "SharepointWebLink", ribbon: "", config: ""}, {file: "UnableToOpen", type: "png", site: "Addin", cat: "Report Library", sub: "Error Popup", report: "", ribbon: "", config: ""}, {file: "ReportLibraryFile", type: "png", site: "Addin", cat: "Report Library", sub: "Details", report: "Financial Report", ribbon: "", config: ""}, {file: "SharePointWebsiteLink", type: "png", site: "Addin", cat: "Report Library", sub: "Details", report: "SharepointWebLink", ribbon: "", config: ""}]
 description: Sometimes uploading a report from a cloud drive results in errors. This guide helps you identify cloud files, reveals possible errors that may occur, and a few workarounds.
 ---
 * * *

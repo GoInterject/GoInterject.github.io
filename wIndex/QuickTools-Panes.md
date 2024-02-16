@@ -1,8 +1,12 @@
 ---
 title: Quick Tools - Panes Tools
+filename: "QuickTools-Panes.md"
 layout: custom
 keywords: [Quick Tools, Pane Tools, Freeze/Unfreeze Panes, Freeze all Tabs]
 headings: ["Overview", "Freeze/Unfreeze Panes", "Freeze all Tabs"]
+links: ["/wIndex/jFreezePanes.html", "/wGetStarted/L-Create-CustomerAging.html#setting-up-jfreezepanes", "/wIndex/jFreezePanes.html"]
+image_dir: "QuickToolsPanes"
+images: [{file: "PaneTools", type: "png", site: "Addin", cat: "Quick Tools", sub: "", report: "", ribbon: "", config: ""}]
 description: The Panes Tools within the Quick Tools deal with the window panes in Excel
 ---
 * * *
@@ -11,7 +15,7 @@ description: The Panes Tools within the Quick Tools deal with the window panes i
 
 The Panes Tools within the Quick Tools deal with the window panes in Excel.
 
-![](/images/QuickTools/PaneTools.png)
+![](/images/QuickToolsPanes/PaneTools.png)
 <br>
 
 ### Freeze/Unfreeze Panes 

@@ -1,8 +1,12 @@
 ---
 title: Training by Example
+filename: "ExampleCases.md"
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: []
+links: ["https://docs.gointerject.com/bApps/bFinancials/HidingZeros.html"]
+image_dir: ""
+images: []
 description: Step by step guide on adding budget columns to your report templates.
 ---
 

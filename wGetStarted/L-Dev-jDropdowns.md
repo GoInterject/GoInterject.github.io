@@ -1,8 +1,12 @@
 ---
 title: "Develop: jDropdown"
+filename: "L-Dev-jDropdowns.md"
 layout: custom
 keywords: [jDropdown, function, develop, build, walkthrough]
 headings: ["Overview", "Setting up the Data Connection", "Setting up the Data Portal", "Creating the Stored Procedure", "Testing the Stored Procedure"]
+links: ["/wGetStarted/L-Create-Dropdowns.html", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "https://portal.gointerject.com", "/wPortal/L-Database-Connection.html#testing-the-connection-string-from-within-excel", "https://portal.gointerject.com", "https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017", "/wGetStarted/L-Create-Dropdowns.html"]
+image_dir: "L-Dev-Dropdowns"
+images: [{file: "01", type: "jpg", site: "Portal", cat: "Home", sub: "", report: "", ribbon: "", config: ""}, {file: "02", type: "jpg", site: "Portal", cat: "Data Connections", sub: "", report: "", ribbon: "", config: ""}, {file: "03", type: "jpg", site: "Portal", cat: "Data Connections", sub: "Details", report: "", ribbon: "", config: ""}, {file: "04", type: "jpg", site: "Portal", cat: "Data Connections", sub: "Details", report: "", ribbon: "", config: ""}, {file: "05", type: "jpg", site: "Portal", cat: "Data Connections", sub: "Details", report: "", ribbon: "", config: ""}, {file: "06", type: "jpg", site: "Portal", cat: "Data Connections", sub: "Details", report: "", ribbon: "", config: ""}, {file: "07", type: "jpg", site: "Portal", cat: "Home", sub: "", report: "", ribbon: "", config: ""}, {file: "08", type: "jpg", site: "Portal", cat: "Data Portals", sub: "", report: "", ribbon: "", config: ""}, {file: "01", type: "png", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "02", type: "png", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "03", type: "png", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "TestStoreProcedureResult", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}]
 description: Walks through how to create the stored procedures for the jDropdowns built in the customer aging create report.
 ---
 * * *
@@ -19,32 +23,32 @@ description: Walks through how to create the stored procedures for the jDropdown
 
 **Step 1:** Navigate to [https://portal.gointerject.com](https://portal.gointerject.com) and log in. Set up a data connection by clicking the **Data Connections** icon.
 
-![](/images/L-Dev-CustAging/01.jpg)
+![](/images/L-Dev-Dropdowns/01.jpg)
 <br>
 
 **Step 2:** On the Data Connections page, click the **New Connection** button.
 
-![](/images/L-Dev-CustAging/02.jpg)
+![](/images/L-Dev-Dropdowns/02.jpg)
 <br>
 
 **Step 3:** In the Connection Type field, verify that **Database** is selected.
 
-![](/images/L-Dev-CustAging/03.jpg)
+![](/images/L-Dev-Dropdowns/03.jpg)
 <br>
 
 **Step 4:** The Connection Details page needs to contain the following information for the new connection: Type **NorthwindExampleDB_MyName** in Connection Name, but include your own name in the suffix. Each connection name must be unique. For the connection string, type **Server=myServerAddress;Database=myDataBase;Trusted_Connection=True;**. This example is using Windows authentication, so username and password are not required. Make sure the server name and database name match the ones you are using for this walkthrough.
 
-![](/images/L-Dev-CustAging/04.jpg)
+![](/images/L-Dev-Dropdowns/04.jpg)
 <br>
 
 **Step 5:** In the Description field, include details about how the data connection will be used.
 
-![](/images/L-Dev-CustAging/05.jpg)
+![](/images/L-Dev-Dropdowns/05.jpg)
 <br>
 
 **Step 6:** Click the Save button to create the new data connection.
 
-![](/images/L-Dev-CustAging/06.jpg)
+![](/images/L-Dev-Dropdowns/06.jpg)
 <br>
 
 The Database Data Connection is now ready to be used in a Data Portal. You should always test a new connection with your security context. Follow the steps in the [Data Connections](/wPortal/L-Database-Connection.html#testing-the-connection-string-from-within-excel) walkthrough to test your connection string.
@@ -53,12 +57,12 @@ The Database Data Connection is now ready to be used in a Data Portal. You shoul
 
 **Step 1:** To add a new Data Portal, return to [https://portal.gointerject.com](https://portal.gointerject.com) and select **Data Portals** from the sidebar menu.
 
-![](/images/L-Dev-CustAging/07.jpg)
+![](/images/L-Dev-Dropdowns/07.jpg)
 <br>
 
 **Step 2:** Click **New Data Portal**.
 
-![](/images/L-Dev-CustAging/08.jpg)
+![](/images/L-Dev-Dropdowns/08.jpg)
 <br>
 
 **Step 3:** Type **NorthwindCustomersDropdown_MyName** for the Data Portal Code. Since this field must be unique, add your name to the suffix. Select the connection that was made in the previous step, **NorthwindExampleDB_MyName**. Also enter a name for the stored procedure **\[demo\].\[Northwind_CustomerDropdown\]**, which will be created later.

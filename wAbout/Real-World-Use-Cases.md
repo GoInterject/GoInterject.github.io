@@ -1,8 +1,12 @@
 ---
 title: Real World Use Cases
+filename: "Real-World-Use-Cases.md"
 layout: custom
 keywords: [use case]
 headings: ["Overview", "High-Speed General Ledger Access", "Consolidated Financials With Accountability", "Financial Reporting Tools for Microsoft Excel", "Collecting Fixed Asset Data Without Sending Spreadsheets", "Adding Visibility and Collaboration to the Financial Close", "Balance Sheet Reconciliation Management", "Financial Planning: Budgeting and Forecasting", "Raising the Bar for Journal Entries", "Adding Change Visibility to Operational Data", "Secure Delivery of Payroll Check Registers", "Collaborate on Cloud Data"]
+links: []
+image_dir: ""
+images: []
 description: Real world use cases for the Interject product.
 ---
 * * *

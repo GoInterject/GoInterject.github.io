@@ -1,8 +1,12 @@
 ---
 title: EBITDA Change History Tab
+filename: "BudgetChangeQuery_EBITDAChangeHistory.md"
 layout: custom
 keywords: [Training, Budget, Budget Change Query]
 headings: ["Overview"]
+links: []
+image_dir: "WCNTraining/Budget"
+images: [{file: "BudChangeQuery_EBITDAChangeHistory_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}]
 description: This view displays the budget change impacts to Revenue and EBITDA.
 ---
 

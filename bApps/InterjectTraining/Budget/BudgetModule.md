@@ -1,8 +1,12 @@
 ---
 title: Budget Module
+filename: "BudgetModule.md"
 layout: custom
 keywords: [Training, Budget]
 headings: ["Overview", "Budget Template", "Control Center", "Budget Change Query"]
+links: ["/bApps/InterjectTraining/Budget/BudgetTemplateSummary.html", "/bApps/InterjectTraining/Budget/ControlCenterSummary.html", "/bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html"]
+image_dir: ""
+images: []
 description: The Budget Module is used by controllers to save and review their budgets for the upcoming year.
 ---
 

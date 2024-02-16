@@ -1,8 +1,12 @@
 ---
 title: Using Interject
+filename: "Using-INTERJECT.md"
 layout: custom
 keywords: [installing, logging in, report library, real world]
 headings: ["Overview", "Installing Interject", "Logging In", "Report Library Basics", "Report Library Links", "Real-World Walkthroughs"]
+links: ["/wAbout/Report-Library-Basics.html", "/wAbout/SingleUser.html", "/wAbout/SingleUser.html", "/wAbout/SharedComputer.html", "/wAbout/Logging-In.html", "/wAbout/Report-Library-Basics.html", "/wAbout/ReportLibraryLinks.html", "/wAbout/Real-World-Walkthroughs.html", "/wAbout/Customer-Aging.html", "/wAbout/Inventory-Reports.html", "/wAbout/Financial-Report.html"]
+image_dir: ""
+images: []
 description: You will run through the basic navigation and control methods most helpful for working efficiently. Please note that every report may be different and may have it's own documentation in the Report Library.
 ---
 * * *
@@ -24,8 +28,6 @@ Logging in is simple and fast! Once logged in we can begin exploring the Report 
 The Report Library is a way to share reports with other users on your team. Reports are uploaded to the library and can be accessed from any computer using the Interject app in Excel. The features in Interject go beyond a Sharepoint or Shared Network Folder. Files can also be versioned, so reverting to a working report is simple.
 
 ### [Report Library Links](/wAbout/ReportLibraryLinks.html)
-
-The Report Library provides an easy interface where new reports can be uploaded, existing reports can be updated, and details and documentation about the report can be added. Reports are called links in the Library. These links can be a link to a file you have saved locally or one uploaded to the Report Library.
 
 ### [Real-World Walkthroughs](/wAbout/Real-World-Walkthroughs.html)
 

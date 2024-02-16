@@ -1,8 +1,12 @@
 ---
 title: Diagnostics - Apply Special Features
+filename: "Diagnostics-SpecialFeatures.md"
 layout: custom
 keywords: [Diagnostics, Apply Special Features, Configuration, Config, animations, bug fix]
 headings: ["Overview", "BugFix1: Microsoft Animations", "BugFix2: Microsoft Repaint"]
+links: []
+image_dir: "Diagnostics"
+images: [{file: "ApplySpecialFeatures", type: "png", site: "Addin", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""}, {file: "BugFix1On", type: "png", site: "Addin", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""}, {file: "BugFix1Off", type: "png", site: "Addin", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""}, {file: "BugFix2On", type: "png", site: "Addin", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""}, {file: "BugFix2Off", type: "png", site: "Addin", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""}]
 description: The "Apply Special Features" in the Interject Diagnostics Pane allows users to apply certain bux fixes.
 ---
 * * *   

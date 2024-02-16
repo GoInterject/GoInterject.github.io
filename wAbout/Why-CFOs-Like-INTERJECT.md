@@ -1,8 +1,12 @@
 ---
 title: Why CFOs Like Interject
+filename: "Why-CFOs-Like-INTERJECT.md"
 layout: custom
 keywords: [CFO, about]
 headings: []
+links: []
+image_dir: ""
+images: []
 description: CFOs like Interject due to data accuracy, prompt reports, visibility among other beneficial reasons.
 ---
 * * *

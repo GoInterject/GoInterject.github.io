@@ -1,0 +1,16 @@
+horizontalnav:
+  - title: WIP
+    path: /bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html
+    node: WIP
+  
+WIP:
+- title: Budget Template
+  path: /bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html
+- title: Budget Upload Tab
+  path: /bApps/InterjectTraining/WIP/BudgetUpload_WIP.html
+- title: Capital Change Query Tool Summary
+  path: /bApps/InterjectTraining/WIP/CapitalChangeQueryTool_WIP.html
+- title: Capital Change Query - CC Query Tab
+  path: /bApps/InterjectTraining/WIP/CCQuery_WIP.html
+- title: Capital Change Query - Review Date Summary
+  path: /bApps/InterjectTraining/WIP/ReviewDateSummary_WIP.html

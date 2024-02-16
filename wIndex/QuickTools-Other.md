@@ -1,8 +1,12 @@
 ---
 title: Quick Tools - Other Tools
+filename: "QuickTools-Other.md"
 layout: custom
 keywords: [Quick Tools, Other Tools, Unique List from Selection, Unhide All Sheets]
 headings: ["Overview", "Unique List from Selection", "Unhide All Sheets"]
+links: []
+image_dir: "QuickToolsOther"
+images: [{file: "OtherTools", type: "png", site: "Addin", cat: "Quick Tools", sub: "", report: "", ribbon: "", config: ""}, {file: "ListBefore", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, {file: "ListAfter", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, {file: "HiddenBefore", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Detail", ribbon: "", config: ""}, {file: "HiddenAfter", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Detail", ribbon: "", config: ""}]
 description: The Other Tools within Quick Tools are a collection of miscellaneous tools.
 ---
 * * *
@@ -11,7 +15,7 @@ description: The Other Tools within Quick Tools are a collection of miscellaneou
 
 The Other Tools within Quick Tools are a collection of miscellaneous tools.
 
-![](/images/QuickTools/OtherTools.png)
+![](/images/QuickToolsOther/OtherTools.png)
 <br>
 
 ### Unique List from Selection
@@ -22,14 +26,14 @@ Makes a text list of all selected cell items and drops them into a new tab in so
 
 Select the list:
 
-![](/images/QuickTools/ListBefore.png)
+![](/images/QuickToolsOther/ListBefore.png)
 <br>
 
 <b style='color:green;'><strong>After:</strong></b>
 
 Note the list is inserted into a new sheet called "UniqueList":
 
-![](/images/QuickTools/ListAfter.png)
+![](/images/QuickToolsOther/ListAfter.png)
 <br>
 
 ### Unhide All Sheets
@@ -38,11 +42,11 @@ Unhides all hidden sheets in the Workbook.
 
 <b style='color:red;'><strong>Before:</strong></b>
 
-![](/images/QuickTools/HiddenBefore.png)
+![](/images/QuickToolsOther/HiddenBefore.png)
 <br>
 
 <b style='color:green;'><strong>After:</strong></b>
 
-![](/images/QuickTools/HiddenAfter.png)
+![](/images/QuickToolsOther/HiddenAfter.png)
 <br>
 

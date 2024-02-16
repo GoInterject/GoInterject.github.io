@@ -1,8 +1,12 @@
 ---
 title: Data Portals
+filename: "Data-Portals.md"
 layout: custom
 keywords: [data portals, data connection, setup, system parameters]
 headings: ["Overview", "Setting up a Data Portal", "Overview of Parameters", "Formula Parameters", "System Parameters", "Adding New Parameters", "System Parameters Options"]
+links: ["/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#custom-commands", "https://docs.gointerject.com/wIndex/Request-Context-Parse.html"]
+image_dir: "DataPortals"
+images: [{file: "01", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "02", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "03", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "04", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "05", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "06", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "07", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "08", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "09", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}]
 description: A Data Portal uses a Data Connection to connect to either a stored procedure within a database or to a website API controller in a customer website API.
 ---
 * * *

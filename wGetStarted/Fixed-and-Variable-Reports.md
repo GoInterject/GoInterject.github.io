@@ -1,8 +1,12 @@
 ---
 title: Fixed and Variable Reports
+filename: "Fixed-and-Variable-Reports.md"
 layout: custom
 keywords: [variable, fixed, variable, reports, walkthroughs]
 headings: ["Overview", "Inventory Fixed Report", "Inventory Variable Report", "Financial Variable Report", "Customer Aging Detail Report"]
+links: ["/wIndex/ReportFixed.html", "/wIndex/ReportVariable.html", "/wGetStarted/L-Create-InventoryFixed.html", "/wAbout/Inventory-Reports.html", "/wIndex/ReportFixed.html", "/wGetStarted/L-Create-InventoryVariable.html", "/wAbout/Inventory-Reports.html", "/wGetStarted/L-Create-FinancialVariable.html", "/wAbout/Financial-Report.html", "/wGetStarted/L-Create-CustomerAgingDetail.html", "/wAbout/Customer-Aging.html"]
+image_dir: ""
+images: []
 description: This section demonstrates additional Report Formulas such as ReportFixed and ReportVariable. 
 ---
 * * *

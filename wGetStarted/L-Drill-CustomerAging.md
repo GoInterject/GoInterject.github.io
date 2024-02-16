@@ -1,8 +1,12 @@
 ---
 title: "Drill: Customer Aging Report"
+filename: "L-Drill-CustomerAging.md"
 layout: custom
 keywords: [drill, create, build, customer aging, walkthrough]
 headings: ["Overview", "Unfreezing the Excel Sheet", "Build the Drill", "Final Results"]
+links: ["/wIndex/ReportDrill.html", "/wIndex/PairGroup.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "/wAbout/ReportLibraryLinks.html"]
+image_dir: "L-Drill-CustAging"
+images: [{file: "01", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}, {file: "02", type: "png", site: "Excel", cat: "Freeze Panes", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}, {file: "03", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "04", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "05", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "06", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "07", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "08", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "09", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "10", type: "png", site: "Addin", cat: "Pull Data", sub: "", report: "Customer Aging Summary", ribbon: "Simple", config: "Yes"}, {file: "11", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}, {file: "13", type: "png", site: "Addin", cat: "Data Drill", sub: "", report: "Customer Aging Summary", ribbon: "Simple", config: ""}, {file: "14", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Orders", ribbon: "", config: ""}]
 description: In this example, you will be setting up a simple drill to the customer orders history. It is a great use case for creating your first drill.
 ---
 * * *

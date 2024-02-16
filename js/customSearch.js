@@ -147,13 +147,7 @@ function handleCustomRegex() {
 // FUNCTIONS (FETCH AND DISPLAY)
 // --------------------------------------------------------------
 function fetchAndDisplayTopHitsResults() {
-	if(isAppsSite) {
-		topHitsResults = getTopHitsResultsApps(query); // Function in menu.js
-	}
-	else {
-		topHitsResults = getTopHitsResults(query); // Function in menu.js	
-	}
-	
+  topHitsResults = getTopHitsResults(query, isAppsSite); // Function in menu.js	
 	displayTopHitsResults(topHitsResults, topHitsContainer);
 }
 
@@ -177,12 +171,35 @@ function displayTopHitsResults(results, container) {
 			const titleLink = `<h5 style="margin-bottom: 0px;"><a href="${pages[results[i].topic].url}" target="_blank">${pages[results[i].topic].title}</a></h5>`;
 			const relevancyScore = getRelevancy(results[i].score, topScore);
 			const hitScore = `<p style="margin-bottom: 0px; margin-top: 0px; font-size: 12px;">Relevancy: ${relevancyScore}%</p>`;
+
 			const urlHighlight = insertHighlightAll(String(pages[results[i].topic].url).toLowerCase(), query);
 			const hitURL = `<p style="margin-bottom: 0px; margin-top: 0px">${urlHighlight}</p>`;
+
 			const keywordsHighlight = insertHighlightAll(String(pages[results[i].topic].keywords).toLowerCase(), query);
 			const hitKeywords = `<p style="margin-bottom: 0px; margin-top: 0px"><b>Keywords: </b>${keywordsHighlight}</p>`;
-			const headingsHighlight = insertHighlightAll(String(pages[results[i].topic].headings).toLowerCase(), query);
+
+			const onlyHeadingHits = findHeadingsWithQuery(String(pages[results[i].topic].headings).toLowerCase(), query);
+      const headingsHighlight = insertHighlightAll(onlyHeadingHits, query);
 			const hitHeadings = `<p style="margin-bottom: 0px; margin-top: 0px"><b>Headings: </b>${headingsHighlight}</p>`;
+
+      const temp = extractImageValues(JSON.stringify(pages[results[i].topic].images).toLowerCase())
+      // console.log("images = " + temp)
+      const temp2 = findHeadingsWithQuery(temp, query)
+      // console.log("onlyHitsImages = " + temp2)
+      const temp3 = insertHighlightAll(temp2, query)
+      // console.log("highlighted images = " + temp3)
+      const temp4 = `<p style="margin-bottom: 0px; margin-top: 0px"><b>Images: </b>${temp3}</p>`;
+      // console.log("images = " + pages[results[i].topic].images)
+      // console.log("image length = " + pages[results[i].topic].images.length)
+
+      // for (j=0; j<pages[results[i].topic].images.length; j++) {
+      //   console.log("object[" + j + "] = " + JSON.stringify(pages[results[i].topic].images[j]))
+      // }
+
+
+			// const imagesHighlight = insertHighlightAll(String(pages[results[i].topic].images).toLowerCase(), query);
+			// const hitImages = `<p style="margin-bottom: 0px; margin-top: 0px"><b>Images: </b>${imagesHighlight}</p>`;
+
       const descriptionHighlight = insertHighlightAll(String(pages[results[i].topic].description).toLowerCase(), query);
 			const hitDescription = `<p style="margin-bottom: 0px; margin-top: 0px"><b>Description: </b>${descriptionHighlight}</p>`;
 			
@@ -191,6 +208,7 @@ function displayTopHitsResults(results, container) {
 				${hitURL}
 				${hitKeywords}
         ${hitHeadings}
+        ${temp4}
 				${hitDescription}
 				`;
 
@@ -238,8 +256,13 @@ function displayResults(results, container, query) {
 
     results.forEach(result => {
       const resultItem = document.createElement('div');
-      const titleLink = `<h5 style="margin-bottom: 0px;"><a href="${result.url}" target="_blank">${result.title}</a></h5>`;
-      const occurrencesContent = `<p style="margin-bottom: 0px; margin-top: 0px; font-size: 12px;">Occurrences: ${result.occurrences}</p>`;
+      const myCurrentTab = findTheTabForThisPage(result.url).toUpperCase()
+      // const currentTab = `<p style="margin-bottom: 0px; margin-top: 3px; display: inline-block;">&lt;${myCurrentTab}&gt; </p>`;
+      const titleLink = `<h5 style="margin-bottom: 0px; margin-top: 3px; display: inline-block;"><a href="${result.url}" target="_blank">${myCurrentTab} : ${result.title}</a></h5>`;
+      const occurrencesContent = `<p style="margin-bottom: 0px; margin-top: 3px; font-size: 12px; display: inline-block; padding-left: 10px;">(Occurrences: ${result.occurrences})</p>`;
+
+      // const titleLink = `<h5 style="margin-bottom: 0px; margin-top: 3px; display: inline-block;"><a href="${myCurrentTab}" target="_blank">${myCurrentTab} : ${result.title}</a></h5>`;
+      // const occurrencesContent = `<p style="margin-bottom: 0px; margin-top: 3px; font-size: 12px; display: inline-block; padding-left: 10px;">(Occurrences: ${result.occurrences})</p>`;
 
       let snippetContent;
       if (useRegex === 'true') {
@@ -253,8 +276,9 @@ function displayResults(results, container, query) {
       }
 
       resultItem.innerHTML = `
-        ${titleLink}
-        ${occurrencesContent}
+        <div style="margin-bottom: 0px;">
+          ${titleLink} ${occurrencesContent}
+        </div>
         <p>&emsp;${snippetContent}</p>
       `;
 
@@ -397,6 +421,38 @@ function getSnippetAll(content, query) {
 // --------------------------------------------------------------
 // FUNCTIONS (OTHER)
 // --------------------------------------------------------------
+function extractImageValues(imagesString) {
+  const images = JSON.parse(imagesString || '[]'); // Handle empty or undefined string
+  const values = [];
+
+  images.forEach(image => {
+    const { file, type, site, cat, sub, report, ribbon, config } = image;
+    values.push(`${file || ''},${type || ''},${site || ''},${cat || ''},${sub || ''},${report || ''},${ribbon || ''},${config || ''}`);
+  });
+
+  return values.join('\n');
+}
+
+// Returns only the list of headings that the query is found in
+// If query is not found in any heading, returns the first 3 headings
+// Return is a comma separated list
+function findHeadingsWithQuery(headingsString, query) {
+  const headings = headingsString.split(',').map(heading => heading.trim());
+  const matchedHeadings = [];
+
+  for (let heading of headings) {
+    if (heading.toLowerCase().includes(query)) {
+      matchedHeadings.push(heading);
+    }
+  }
+
+  if (matchedHeadings.length === 0) {
+    return headings.slice(0, 3).join(', ');
+  } else {
+    return matchedHeadings.join(', ');
+  }
+}
+
 // Highlights a portion of the originalString yellow, from indexStart and extending matchLength number of characters
 function insertHighlight(originalString, indexStart, matchLength) {
   const s = originalString.substring(0, indexStart) +

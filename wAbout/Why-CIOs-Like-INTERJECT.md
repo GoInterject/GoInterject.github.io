@@ -1,8 +1,12 @@
 ---
-title: Why CIO's Like Interject
+title: Why CIOs Like Interject
+filename: "Why-CIOs-Like-INTERJECT.md"
 layout: custom
 keywords: [CIO, about]
 headings: []
+links: []
+image_dir: ""
+images: []
 description: The CIO has specific needs when a company is growing.
 ---
 * * *

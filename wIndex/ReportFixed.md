@@ -1,8 +1,12 @@
 ---
 title: ReportFixed()
+filename: "ReportFixed.md"
 layout: custom
 keywords: [ReportFixed, fixed, function, formula, data, pull]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Embeddable Helper Functions"]
+links: ["/wIndex/ReportRange.html", "/wGetStarted/L-Create-InventoryFixed.html", "https://docs.gointerject.com/wIndex/jDataPortal.html", "https://docs.gointerject.com/wIndex/Param.html", "https://docs.gointerject.com/wTroubleshoot/Reports.html#validation-report-for-pullsave-events", "/wIndex/jDataPortal.html", "/wIndex/Param.html"]
+image_dir: ""
+images: []
 description: The ReportFixed function pulls data from a data source and inserts it into a spreadsheet.
 ---
 * * *

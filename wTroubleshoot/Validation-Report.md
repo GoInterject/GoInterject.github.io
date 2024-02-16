@@ -1,8 +1,12 @@
 ---
 title: Validation Report
+filename: "Validation-Report.md"
 layout: custom
 keywords: [report, error, user support, validation report, formula, parameters, functions, detailed information, code, events, triggers]
 headings: ["Overview", "Validation Report Options", "Pull/Save Data Event", "Drill Event", "Clear Pull/Save Data Event", "Go Back Event", "Data Cell Functions", "Data Cell Last Change Report", "Cell Formula Review"]
+links: ["/wIndex/Excel-Function-Index.html", "/wAbout/Tabular-vs-Data-Cells.html", "/wIndex/Event-Functions-Landing.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#advanced-menu-items", "/wIndex/Event-Functions-Landing.html", "/wIndex/ReportDrill.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#return-from-drill", "/wAbout/Tabular-vs-Data-Cells.html#data-cells", "/wIndex/Report-Formula-Reviews.html#cell-formula-review"]
+image_dir: "ValidationSupport"
+images: [{file: "Ribbon", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, {file: "ValidationReportItems", type: "png", site: "Addin", cat: "Ribbon", sub: "Validation Report", report: "", ribbon: "Advanced", config: ""}, {file: "PullEvent", type: "png", site: "Addin", cat: "Validation Report", sub: "Pull/Save Data Event", report: "", ribbon: "", config: ""}, {file: "DrillEvent", type: "png", site: "Addin", cat: "Validation Report", sub: "Drill Event", report: "", ribbon: "", config: ""}, {file: "GoBackEvent", type: "png", site: "Addin", cat: "Validation Report", sub: "Go Back Event", report: "", ribbon: "", config: ""}, {file: "DataCells", type: "png", site: "Addin", cat: "Validation Report", sub: "Data Cell Functions", report: "", ribbon: "", config: ""}, {file: "RequestXML", type: "png", site: "Addin", cat: "Validation Report", sub: "Data Cell Functions", report: "", ribbon: "", config: ""}, {file: "CurrentFormulas", type: "png", site: "Addin", cat: "Validation Report", sub: "Data Cell Functions", report: "", ribbon: "", config: ""}, {file: "PreviouslyLoadedFormulas", type: "png", site: "Addin", cat: "Validation Report", sub: "Data Cell Functions", report: "", ribbon: "", config: ""}, {file: "LastChangeReport", type: "png", site: "Addin", cat: "Validation Report", sub: "Data Cell Last Change Report", report: "", ribbon: "", config: ""}]
 description: The Validation Report feature displays detailed information about Interject pull, save, and drill functions, data cell functions, and events.
 ---
 * * *
@@ -13,12 +17,12 @@ The Validation Report feature displays detailed information about Interject pull
 
 The Validation Report is located on the [Advanced Menu](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#advanced-menu-items) of the Interject ribbon.
 
-![](/images/error-reports/Ribbon.png)
+![](/images/ValidationSupport/Ribbon.png)
 <br>
 
 By selecting any of the validation options, you can view the code behind each action. Detail information is given for selected ranges, data portals, parameters, formatting codes, and more. This helps users learn as well as diagnose code problems.
 
-![](/images/error-reports/ValidationReportItems.png)
+![](/images/ValidationSupport/ValidationReportItems.png)
 <br>
 
 ### Validation Report Options
@@ -46,14 +50,14 @@ The Pull or Save Data Event will list detailed information for all Interject fun
 * **ErrorText** : Any logged errors with the event
 * **Function Instruction (Parameters)** : Lists the parameters of the function in detail
 
-![](/images/error-reports/PullEvent.png)
+![](/images/ValidationSupport/PullEvent.png)
 <br>
 
 ### Drill Event
 
 The Drill Event command analyzes all [ReportDrill](/wIndex/ReportDrill.html) functions within the sheet. 
 
-![](/images/error-reports/DrillEvent.png)
+![](/images/ValidationSupport/DrillEvent.png)
 <br>
 
 ### Clear Pull/Save Data Event
@@ -64,14 +68,14 @@ This command will list all functions that will be triggered on a Clear Pull or C
 
 Displays functions triggered by the [Go Back](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#return-from-drill) event (also called Return from Drill). (Note: This event is not currently functional.)
 
-![](/images/error-reports/GoBackEvent.png)
+![](/images/ValidationSupport/GoBackEvent.png)
 <br>
 
 ### Data Cell Functions
 
 Interject [data cells](/wAbout/Tabular-vs-Data-Cells.html#data-cells) focus on a single formula within the spreadsheet. The Data Cell Function option displays information 
 
-![](/images/error-reports/DataCells.png)
+![](/images/ValidationSupport/DataCells.png)
 <br>
 
 This report contains 3 major sections:
@@ -82,24 +86,24 @@ This report contains 3 major sections:
 
 **Request XML** shows exactly what is sent to the data portal in XML form.
 
-![](/images/error-reports/RequestXML.png)
+![](/images/ValidationSupport/RequestXML.png)
 <br>
 
 **Current Formulas** displays the current account balances within the data portal.
 
-![](/images/error-reports/CurrentFormulas.png)
+![](/images/ValidationSupport/CurrentFormulas.png)
 <br>
 
 **Previously Loaded Formulas** will show the formulas loaded previously if any.
 
-![](/images/error-reports/PreviouslyLoadedFormulas.png)
+![](/images/ValidationSupport/PreviouslyLoadedFormulas.png)
 <br>
 
 ### Data Cell Last Change Report
 
 This option shows the changes made from the last pull to the current one including the source formula for the change.
 
-![](/images/error-reports/LastChangeReport.png)
+![](/images/ValidationSupport/LastChangeReport.png)
 <br>
 
 ### Cell Formula Review

@@ -1,8 +1,12 @@
 ---
 title: jCell/jCellN()
+filename: "jCell.md"
 layout: custom
 keywords: [jcell, account, segment, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition"]
+links: ["/wIndex/jAcct.html", "/wIndex/jAcct.html", "/wIndex/jAcct.html", "/wIndex/jAcct.html"]
+image_dir: ""
+images: []
 description: jCell retrieves data based on the provided parameters. 
 ---
 * * *

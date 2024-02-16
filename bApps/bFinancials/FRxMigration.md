@@ -1,8 +1,12 @@
 ---
 title: FRx Migration
+filename: "FRxMigration.md"
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: ["Open SQL Server and Create a New Database", "Import MDB File To the New Database", "Execute FRx Migration Script", "Interject Application Setup- DB Connection", "Redirect DB Connection to New DB in Interject process"]
+links: ["https://portal.gointerject.com"]
+image_dir: "A-InitialDataLoad"
+images: [{file: "FRXAccess", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ObjectEx", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "DataBasename", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "SelectDB", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "DBSource", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "DBDestination", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "SelectAll", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "RunImmediately", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ConnectionDetails", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "image3", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "image2", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}]
 description: Step by step guide on data tier, initial data load, FRx Migration, and other key processes of installing of Interject for Financials Epicor Enterprise.
 ---
 

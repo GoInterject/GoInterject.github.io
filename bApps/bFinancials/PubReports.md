@@ -1,8 +1,12 @@
 ---
 title: Publishing and Updating in the Report Library
+filename: "PubReports.md"
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: ["Publishing and Updating Report Templates in the Report Library", "Updating Existing Report Templates"]
+links: []
+image_dir: "Financials-TemplateSave"
+images: [{file: "ReportSave1", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ReportSave2", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ReportSave3", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ReportSave4", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ReportSave5", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ReportSave6", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "UpdateReport1", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "UpdateReport2", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "UpdateReport3", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "UpdateReport4", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}]
 description: Step by step guide on using Interject Financials - Publishing Epicor Enterprise financial report templates.
 ---
 

@@ -1,8 +1,12 @@
 ---
 title: Capital Module
+filename: "CapitalModule.md"
 layout: custom
 keywords: [Training, Capital]
 headings: ["Overview", "Capital Input Tool", "Capital Change Query Tool", "Capital Export Tool"]
+links: ["/bApps/InterjectTraining/Capital/CapitalInputReport.html", "/bApps/InterjectTraining/Capital/CapitalChangeQueryTool.html", "/bApps/InterjectTraining/Capital/CapitalExport.html"]
+image_dir: ""
+images: []
 description: The Capital Module is designed to handle Capital POs, and it provides tools for controllers to review Capital allocations across sites and available assets.
 ---
 

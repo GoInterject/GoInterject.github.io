@@ -1,10 +1,14 @@
 ---
 layout: custom
 title:  "Python API Setup"
+filename: "python-api-setup.md"
 date:   2018-10-12 9:03:02 -0700
 categories: API Developer
 keywords: [data api, python, setup]
 headings: ["Overview", "Requirements", "Get The Code", "Install The Python Package", "Linux additional requirements", "Install Package", "Setup API", "Get Template Config", "Setup Connection Strings", "Choose Controllers", "Custom Functions", "Running The API", "More Information"]
+links: ["mailto:help@gointerject.com", "https://docs.microsoft.com/en-us/sql/connect/odbc/linux-mac/installing-the-microsoft-odbc-driver-for-sql-server", "/wApi/python-api-custom-functions.html", "https://github.com/GoInterject/ids-python-api"]
+image_dir: ""
+images: [{file: "temp_gitlab_download_repo", type: "png", site: "Github", cat: "ids-python-api", sub: "", report: "", ribbon: "", config: ""}]
 description: Shows how to setup an Interject Python data api.
 ---
 
@@ -15,7 +19,6 @@ This is an API built on top of Python and Flask for the Interject Excel Add-in. 
 
 In this walkthrough we will setup a Python API locally which can be used to manage dataflow to and from an Interject Report. 
 
-
 ## Requirements
 
 Before the api can be run you need to ensure that your system meets the following requirements:
@@ -23,7 +26,7 @@ Before the api can be run you need to ensure that your system meets the followin
 - Python 3.4 or greater must be installed
 - Git must be installed (optional)
 
-Once Python is installed the dependancies for the Interject Api include:
+Once Python is installed the dependencies for the Interject Api include:
 
 * Flask >= 0.12.1
 * Flask-RESTful >= 0.3.6
@@ -35,7 +38,6 @@ Once Python is installed the dependancies for the Interject Api include:
 * requests
 * pyOpenSSL (when running api with HTTPS)
 
-
 ## Get The Code
 
 Start by cloning the repository to your system.
@@ -46,11 +48,10 @@ git clone https://github.com/GoInterject/ids-python-api
 
 Note: If this repo is private and you need access, please [contact us](mailto:help@gointerject.com). It will be public soon.
 
-
 If you do not have git installed or prefer a different method, simply download the source code from the repository website.
 
-<img class="img-modal" src="/images/temp_gitlab_download_repo.png" width="80%" onclick="zoom_img(this)" />
-
+![](/images/PythonApiSetup/temp_gitlab_download_repo.png)
+<br>
 
 ## Install The Python Package
 

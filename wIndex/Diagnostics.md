@@ -1,8 +1,12 @@
 ---
 title: Diagnostics
+filename: "Diagnostics.md"
 layout: custom
 keywords: [Diagnostics, Tools, Settings, Configurations, Config]
 headings: ["Overview", "Diagnostic Pane Fields", "Public", "System Tools", "Support"]
+links: ["/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#advanced-menu-items", "/wIndex/Diagnostics-SpecialFeatures.html", "/wIndex/Diagnostics-ShortKey.html"]
+image_dir: "Diagnostics"
+images: [{file: "Ribbon", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, {file: "DiagnosticsPaneFields2", type: "png", site: "Addin", cat: "Diagnostics", sub: "", report: "", ribbon: "", config: ""}, {file: "Public2", type: "png", site: "Addin", cat: "Diagnostics", sub: "Public", report: "", ribbon: "", config: ""}, {file: "SystemTools2", type: "png", site: "Addin", cat: "Diagnostics", sub: "System Tools", report: "", ribbon: "", config: ""}, {file: "Support2", type: "png", site: "Addin", cat: "Diagnostics", sub: "Support", report: "", ribbon: "", config: ""}]
 description: The Diagnostics feature of Interject allows users to set and change numerous configurations within Excel as well as utilize various tools for diagnostics and debugging.
 ---
 * * * 
@@ -67,7 +71,6 @@ The System Tools involve various systems settings.
 | Open Install Configuration | Click Execute Action to open the configuration window |
 | Force Garbage Collector on Dead Memory | Click Execute to clear unused RAM memory (aka Garbage Collection) |
 | Find All Workbook Formulas | Click 'Execute Selected Action' to Find all formulas in the active workbook. |
-| Search the Report Library | Use this command to search for many kinds of data within the Report Library. <br>Below, enter the exact text to locate. Then click 'Execute Selected Action'<br>It will search the names and descriptions of Report Library folders, files (links), versions and drill codes. |
 | Replace Data Portal Codes | Click 'Execute Selected Action' to Replace all DataPortalCodes in the current workbook<br>input text should contain<br>oldName_One = NewName_One<br>anotherOldName = anotherNewName |
 
 ### Support

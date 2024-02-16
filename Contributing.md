@@ -1,9 +1,13 @@
 ---
 title: Contributing
+filename: "Contributing.md"
 layout: custom
 sitemap: false
 keywords: [best practices, standards, editing, changes, format, style, consistency]
-headings: ["Overview", "Contributing Process Flow", "Screenshot Requirements", "Screenshot Software Requirements", "When to Include a Screenshot", "Click Action (Arrow)", "Highlighting & Emphasizing", "Multi-Step Actions in a Single Screenshot (Numbered Steps)", "Emphasizing Text or a Point in a Screenshot", "Note on Complex Screenshots", "Note on Popups in Screenshots", "Screenshots of Excel Content", "Tab Navigation in Screenshots", "Spacing Surrounding Screenshots", "Note for Content Reviewers", "Uploading and Saving Screenshots to the Documentation Site", "Adding Jekyll Headers to Page", "Headings", "Table of Contents", "Grammar/Spelling", "Referencing Buttons and Text", "Lists", "Tables", "Links", "Code Blocks", "Consistency", "Commit Message Standards"]
+headings: ["Overview", "Setting Up A Local Environment", "Commit Messages", "Screenshots", "Screenshot Software Requirements", "When to Include a Screenshot", "Click Action (Arrow)", "Highlighting & Emphasizing", "Multi-Step Actions in a Single Screenshot (Numbered Steps)", "Emphasizing Text or a Point in a Screenshot", "Note on Complex Screenshots", "Note on Popups in Screenshots", "Screenshots of Excel Content", "Tab Navigation in Screenshots", "Screenshots Size", "Spacing Surrounding Screenshots", "Interject Company", "Hiding Credentials", "Uploading and Saving Screenshots to the Documentation Site", "Jekyll Front Matter", "Entries", "Images Entry", "Headings", "Table of Contents", "Grammar/Spelling", "Referencing Buttons and Text", "Lists", "Tables", "Links", "Code Blocks", "Consistency"]
+links: ["https://app.clickup.com/8587490/v/dc/86272-35740/86272-32800", "https://github.com/GoInterject/GoInterject.github.io", "https://www.techsmith.com/screen-capture.html"]
+image_dir: "Contributing"
+images: [{file: "01", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "CloneCopyClick", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "CommandPromptNavigate", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "PullRequestClick", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "PullRequestChooseBranches", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "PullRequestReviewer", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "08", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "09", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "10", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "11", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "12", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "13", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "14", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "15", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "16", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "17", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "18", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "19", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "19", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "InterjectDevelopment", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "EmailBlurred", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "DummyEmailDisplayed", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}]
 description: Hello and thank you for wanting to make a contribution to Interject. These are the guidelines that we use to make sure our documentation is the highest quality, and consistent. Included in this document is the documentation cycle from creation to approval.
 ---
 * * *
@@ -12,65 +16,93 @@ description: Hello and thank you for wanting to make a contribution to Interject
 
 Hello and thank you for wanting to make a contribution to Interject. These are the guidelines that we use to make sure our documentation is the highest quality, and consistent. Included in this document is the documentation cycle from creation to approval.
 
-### Contributing Process Flow
+### Setting Up A Local Environment
 
-**Step 1:** Navigate to our Github repository at GoInterject/GoInterject.github.io.
+For editors of the documentation, it is necessary to set up a local environment where you can edit and preview changes before pushing them to the repository. The following lists the basics steps to do this. For detailed instructions on setting up a local environment for documentation editing, see our [Clickup page](https://app.clickup.com/8587490/v/dc/86272-35740/86272-32800){:target="_blank"}{:rel="noopener noreferrer"}
+
+**Step 1:** Navigate to our [Github Repository](https://github.com/GoInterject/GoInterject.github.io){:target="_blank"}{:rel="noopener noreferrer"}.
 
 ![](/images/Contributing/01.png)
 <br>
 
-**Step 2:** Fork/Clone the repository.
+Click the clone button and then the copy to clipboard icon to copy the repository's URL.
 
-**For editors:** Fork your own branch of the main master branch repository.
-
-![](/images/Contributing/02.png)
+![](/images/Contributing/CloneCopyClick.png)
 <br>
 
-**For content reviewers**: Clone the patch branch named “patch-x.x” (“x.x” in place of the current version number) on the main repository and host locally and make all your changes there before pushing to the origin (master) repository.
+**Step 2:** Navigate to a local folder where you want to clone the repository.
 
-Switch to “patch-x.x” branch.
-
-![](/images/Contributing/03.png)
+![](/images/Contributing/CommandPromptNavigate.png)
 <br>
 
-![](/images/Contributing/04.png)
+Execute the git clone command (be sure to paste the url you copied):
+
+```bash
+git clone https://github.com/GoInterject/GoInterject.github.io.git
+```
+
+**Step 3:** Make your changes locally to a local git branch.
+
+**Step 4:** Push your changes to the repo using the git push command.
+
+```bash
+git push origin local_branch:remote_branch
+```
+
+**Step 5:** Make a pull request to merge the remote_branch you pushed the changes to into the develop branch.
+
+Click **Pull requests** in the header and then **New pull request**.
+
+![](/images/Contributing/PullRequestClick.png)
 <br>
 
-Clone the branch.
+Ensure you are requesting to merge your branch into the develop branch. Click **Create pull request**.
 
-![](/images/Contributing/05.png)
+![](/images/Contributing/PullRequestChooseBranches.png)
 <br>
 
-![](/images/Contributing/06.png)
+Write a description and then click the Reviewers settings button to choose a reviewer. Finally click **Create pull request**.
+
+![](/images/Contributing/PullRequestReviewer.png)
 <br>
 
-** Step 3:** Make your changes on your forked branch.
+### Commit Messages
 
-**Step 4:** Make a pull request to a branch that is titled "patch-x.x".
+All commit messages should follow this general layout. This is to ensure consistency in determining what has been changed.
 
-![](/images/Contributing/07.png)
-<br>
+```
+action(thingchanged): description of the change
+```
 
-**Step 5:** The changes will be reviewed in the patch branch.
+|Actions |When to Use | 
+|---|---|
+|update | This should be used when content currently exists, and you are modifying. I.e. grammatical error fixes, or replacing images|
+|add | This action type should be used when you are creating a content page initially. |
+|remove | This action type is to be used when you are removing a section or an entire page of documentation. |
+|create | This should be used when you are creating a new section to existing documentation. |
 
-**Step 6:** Once all changes are reviewed and approved, that patch branch will be merged into the master branch on a deployment schedule.
+The "thingchanged" should be a single word noun that describes as best as possible, the piece of UI that was changed.
+The "description of the change" should be an accurate description as to what in more detail was changed.
 
-![](/images/Contributing/Documentation_process.png)
-<br>
+Example:
 
-### Screenshot Requirements
+```
+update(screenshots): replaced old SS's with new ones to match UI changes
+```
+
+### Screenshots
 
 Screenshots are used heavily in our documentation. Below are our conventions and our process of including screenshots in the documentation.
 
 #### Screenshot Software Requirements
 
-Screenshots for our website are made consistent by using a screen capture program called [Snagit](https://www.techsmith.com/screen-capture.html).
+Screenshots for our website are made consistent by using a screen capture program called [Snagit](https://www.techsmith.com/screen-capture.html){:target="_blank"}{:rel="noopener noreferrer"}.
 
-In order to keep screenshots consistent, make sure they are captured in the most current software (see above).
+In order to keep screenshots consistent, make sure they are captured in the most current version.
 
 #### When to Include a Screenshot
 
-Every step in a documentation page should be represented in a screenshot. Screenshots can contain multiple steps, but every step in the process of a lab or walkthrough should be shown somewhere in a screenshot. The user should be able to look at only the screenshots on a page and know exactly what to do.
+Every major step in a documentation page should be represented in a screenshot. Screenshots can contain multiple steps, but every step in the process of a lab or walkthrough should be shown somewhere in a screenshot. The user should be able to look at only the screenshots on a page and know exactly what to do.
 
 The following is a simple walkthrough of the recommended screenshot procedure. It is organized by the type of action/step the user is being instructed to take in a given screenshot. There will also be example use cases for some of the screenshot techniques in each section.
 
@@ -116,29 +148,29 @@ Limit these outlines to 3 per screenshot for clarity.
 
 When to use outline/rectangle.
 
-1. To highlight click action areas on the screen if they are hard to see (you can use both an arrow and an outline):
+1\. To highlight click action areas on the screen if they are hard to see (you can use both an arrow and an outline):
 
 ![](/images/Contributing/10.png)
 <br>
 
-2. To emphasize a portion of a window.
+2\. To emphasize a portion of a window.
 
 ![](/images/Contributing/11.png)
 <br>
 
-3. To emphasize a particular window within a screenshot,
+3\. To emphasize a particular window within a screenshot,
 
-4. To highlight “Next”, “Close” and “Ok” buttons (do not use an arrow for this).
+4\. To highlight “Next”, “Close” and “Ok” buttons (do not use an arrow for this).
 
 ![](/images/Contributing/12.png)
 <br>
 
-5. To highlight clickable data-entry (capture) fields (use after a click action indicated by an arrow, if a data entry field comes up) (do not use both an arrow and a red border for this).
+5\. To highlight clickable data-entry (capture) fields (use after a click action indicated by an arrow, if a data entry field comes up) (do not use both an arrow and a red border for this).
 
 ![](/images/Contributing/13.png)
 <br>
 
-6. To highlight checkboxes.
+6\. To highlight checkboxes.
 
 #### Multi-Step Actions in a Single Screenshot (Numbered Steps)
 
@@ -208,6 +240,10 @@ When directing tab navigation (and sheet navigation in Excel), point to it with 
 ![](/images/Contributing/19.png)
 <br>
 
+#### Screenshots Size
+
+Ensure the screenshots are big enough to be displayed properly. In most cases, the original screen capture size will suffice. However, be sure to check if the image is displayed properly and easily read.
+
 #### Spacing Surrounding Screenshots
 
 When including a screenshot in the markdown file, be sure to contain a space before the image and follow the image with a &lt;br&gt; and another space.
@@ -221,36 +257,82 @@ When including a screenshot in the markdown file, be sure to contain a space bef
 ...content...
 ```
 
-### Note for Content Reviewers
+#### Interject Company
 
-When reviewing for publication, check that no assumptions are made regarding steps, major or minor, required in any process.
+Whenever possible, the company that should be displayed in the screenshot should be the "Interject Development" company. The times where this should not be the case is where a specific company should be used in order to correctly proceed with the walkthrough or the example.
 
-### Uploading and Saving Screenshots to the Documentation Site
+![](/images/Contributing/InterjectDevelopment.png)
+<br>
+
+#### Hiding Credentials
+
+All employee emails and passwords should be hidden from the screenshot. This can be accomplished by blanking it out or using the Snagit blur tool:
+
+![](/images/Contributing/EmailBlurred.png)
+<br>
+
+A dummy email or password may be displayed instead:
+
+![](/images/Contributing/DummyEmailDisplayed.png)
+<br>
+
+#### Uploading and Saving Screenshots to the Documentation Site
 
 Generally, upload your screenshot images to be the exact size as the original you had taken. Smaller images, such as in-window popups, should be 360px wide, unless an otherwise more appropriate size is needed.
 
-Name your screenshots 01.png, 02.png, 03.png, etc. based on the order of their placement within the page.
+Name your screenshots appropriately to describe the content of the image. For example, PullDataClick or SaveDataClick. PNG images are preferred but JPG works as well.
 
 When saving screenshots, place them in the following directory:
 
 /images/[DirectoryToYourPageFolder]
 
-If a folder for your page does not exist, please add one and place all images in that folder. This ensures the most simple naming conventions of 01, 02, 03 as the images are displayed on the website. 
+If a folder for your page does not exist, please add one and place all images in that folder. Every page should have its own image folder. Do not combine pages. 
 
-### Adding Jekyll Headers to Page
+### Jekyll Front Matter
 
-All pages must have Jekyll headers added to the top of the page in order for our search function to show it correctly. The way to denote the Jekyll is by three hyphens "---" at the top and bottom of the header. (Note: The "#" denotes comments below).
+The Jekyll front matter is a list of meta data at the top of the md file. It is important that this front matter is accurate, complete, and formatted correctly.
+
+#### Entries
+
+The following are the entries and their descriptions for the front matter:
 
 ``` markdown
 ---
-title: Contributions #Name of Page
-layout: custom #Keep as custom
-keyword: #Whatever the document is about
-description: #A short description
-sitemap: True #Lets google know this needs to be indexed 
+title: Name of Page
+filename: The filename
+layout: custom (only use custom)
+keywords: Keywords that describe the page content
+headings: The headings in the page
+links: The links referenced in the page (both internal and external)
+image_dir: The name of the image directory for this page
+images: A nested list of images with their description (see next section below)
+description: A short description (typically the first paragraph in the overview)
 ---
-* * * #This inserts a horizontal line after the title
+* * *
 ```
+
+#### Images Entry
+
+The images entry for the front matter contain a nested json list of images with keys that describe the content of the image:
+
+- file: Name of the image file (without the extension)
+- type: The type of file (e.g. png or jpg or gif)
+- site: The site origin of the image (e.g. Addin, Portal, Windows)
+- cat: The main category of the image (e.g. pull data, save data, report library)
+- sub: The subcatetory of the image (e.g. more details of the category of the image)
+- report: If a report title, Excel tab, or file is displayed or referenced list the name here
+- ribbon: If simple or advanced ribbon is shown in the image
+- config: If the Interject configuration area is shown in the image
+
+Blank entries are an empty string ("").
+
+Here is an example of a images entry:
+
+```
+images: [{file: "NewDataPortal", type: "png", site: "Portal", cat: "Data Portals", sub: "", report: "", ribbon: "", config: ""}, {file: "DataPortalDetails", type: "png", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "AddSystemParameter", type: "png", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "ChangeReportSaveFunction", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}, {file: "SPCurrentDate", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}]
+```
+
+For more specific examples of what to put in the cat and sub entries, see existing pages.
 
 ### Headings
 
@@ -258,11 +340,13 @@ Most pages should have the "Overview" heading as a h2 (##). Subsequent headings 
 
 Headings should be Title Case (following APA standards).
 
+Headings should not be in bold as they are formatted already with their heading formatting.
+
+Include one line space before and after all headings.
+
 ### Table of Contents
 
-When adding a new file to the navigation of the website, edit the TOC.yaml file, unless it is for an app branch of the website. When editing the TOC.yaml file, follow the current convention for all the other navigation links. ALL yaml files are located inside the _data folder of the website.
-
-TOC entries should always have a default link. For example, if the parent category group does not have a landing page, it should link to the first sub catagory page.
+TOC entries should always have a default link. For example, if the parent category group does not have a landing page, it should link to the first sub category page.
 
 ### Grammar/Spelling
 
@@ -314,7 +398,7 @@ Tables should follow Jekyll/Markdown format for consistency wherever possible:
 | Item3 | This is the description to Item3 |
 ```
 
-Tables need not to have extra spaces as Jekyll will format the table and delete extra spaces. Only use extra spaces where it is necessary to visualize the table in the markdown file.
+Tables do not need to have extra spaces as Jekyll will format the table and delete extra spaces. Only use extra spaces where it is necessary to visualize the table in the markdown file.
 
 When not possible, standard html table format should reflect the same standard table appearance for consistency.
 
@@ -334,25 +418,3 @@ Code blocks are preceded by \`\`\` to mark them as code. Generally, code should 
 
 Wherever possible, maintain the same formatting standards and usage as used in other pages. You can inspect other pages for examples.
 
-### Commit Message Standards
-
-All commit messages should follow this general layout. This is to ensure consistency in determining what has been changed.
-
-```
-action(thingchanged): description of the change
-```
-
-|Actions      |When to use                                                                                                                 |
-|-----------|--------------------------------------------------------------------------------------------------------------------------|
-|update       | This should be used when content currently exists, and you are modifying. I.e. grammatical error fixes, or replacing images|
-|add          | This action type should be used when you are creating a content page initially.                                            |
-|remove       | This action type is to be used when you are removing a section or an entire page of documentation.                         |
-|create       | This should be used when you are creating a new section to existing documentation.                                         |
-
-The "thingchanged" should be a single word noun that describes as best as possible, the piece of UI that was changed.
-The "description of the change" should be an accurate description as to what in more detail was changed.
-
-Example:
-```
-update(screenshots): replaced old SS's with new ones to match UI changes
-```

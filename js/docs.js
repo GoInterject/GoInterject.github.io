@@ -48,10 +48,79 @@ var totalTopics = 0;
 var currentSection;
 var sectionToHighlight;
 
+// Traverses this tree/branch looking for the page, returns the tab it is found in
+function findTheTabInThisTree(tree, page, currentTab) {
+  function processBranch(branch){
+    // check sub pages in section
+    for (var k=0;k<branch.length;k++){
+  
+      // first check branch itself <NOTE> we need to do this because our header sections are links
+      if (branch[k].path == page && !branch[k].nosync){
+        foundTab = currentTab
+        break;
+      }
+  
+      if (branch[k].path == page && !branch[k].nosync){
+        foundTab = currentTab
+        break;
+      }  else {
+        // else recurse through branch
+        if (branch[k].section) {
+          processBranch(branch[k].section);
+        } 
+      }
+      
+    }
+  }
+    var foundTab = ""
+    processBranch(tree);
+  
+    return foundTab;
+}
 
+// Traverses the root node of this toc looking for the page, returns the tab it is found in
+function findTheTabInThisNode(rootnode, page){
+  var myTab = ""
+
+  for (i=0;i<rootnode.horizontalnav.length;i++)
+  {
+    // console.log("i = " + i)
+    if (rootnode.horizontalnav[i].node != "glossary")
+    {
+      myTab = findTheTabInThisTree(rootnode[rootnode.horizontalnav[i].node], page, rootnode.horizontalnav[i].title);
+      if (myTab !== "") {
+        return myTab
+      }
+    }
+
+  }
+  return myTab
+}
+
+// Traverses through all the table of content files looking for the tab that the page is contained in
+// The docstoc variables are declared in toc.js
+function findTheTabForThisPage(page) {
+  var foundThisTab = ""
+  foundThisTab = findTheTabInThisNode(docstocMain, page)
+  if (foundThisTab !== "") {
+    return foundThisTab
+  }
+  foundThisTab = findTheTabInThisNode(docstocFinancials, page)
+  if (foundThisTab !== "") {
+    return foundThisTab
+  }
+  foundThisTab = findTheTabInThisNode(docstocTraining, page)
+  if (foundThisTab !== "") {
+    return foundThisTab
+  }
+  foundThisTab = findTheTabInThisNode(docstocWIP, page)
+  if (foundThisTab !== "") {
+    return foundThisTab
+  }
+return foundThisTab
+}
 
 function findMyTopic(tree){
-
   function processBranch(branch){
 
     // check sub pages in section
@@ -60,6 +129,7 @@ function findMyTopic(tree){
       // first check branch itself <NOTE> we need to do this because our header sections are links
       if (branch[k].path == pageURL && !branch[k].nosync){
         thisIsIt = true;
+        sectionToHighlight = currentSection;
         break;
       }
   

@@ -1,8 +1,12 @@
 ---
 title: FRx Catalog
+filename: "FRxCatalog.md"
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: []
+links: []
+image_dir: "Config"
+images: [{file: "FRxCatalog", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}]
 description: Step by step guide on using Interject Financials - Epicor financial report templates.
 ---
 

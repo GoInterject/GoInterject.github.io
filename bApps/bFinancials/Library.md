@@ -1,8 +1,12 @@
 ---
 title: Report Library
+filename: "Library.md"
 layout: custom
 keywords: [Account, Epicor, Companies]
 headings: ["Using the Report Library"]
+links: []
+image_dir: "Interject-Financials"
+images: [{file: "InterjectFinancialsReportLib", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}]
 description: Interject™ Financials for Epicor Enterprise Using the Interject report library.
 ---
 
