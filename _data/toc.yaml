@@ -18,7 +18,7 @@ horizontalnav:
   path: /wTroubleshoot/Troubleshooting-Landing.html
   node: troubleshoot
 - title: Release Notes
-  path: /wReleaseNotes/2023-12_ReleaseNotes.html
+  path: /wReleaseNotes/2024-01_ReleaseNotes.html
   node: releaseNotes
 
 about:
@@ -27,9 +27,9 @@ about:
   section:
   - title: Real World Use Cases
     path: /wAbout/Real-World-Use-Cases.html
-  - title: Why CFO's Like Interject
+  - title: Why CFOs Like Interject
     path: /wAbout/Why-CFOs-Like-INTERJECT.html
-  - title: Why CIO's Like Interject
+  - title: Why CIOs Like Interject
     path: /wAbout/Why-CIOs-Like-INTERJECT.html
   - title: What You Need to Know
     path: /wAbout/What-You-Need-to-Know.html
@@ -350,7 +350,7 @@ Developer:
     - title: "Develop: Customer Aging Detail"
       path: /wGetStarted/L-Dev-CustomerAgingDetail.html
   - sectiontitle: Data Save
-    path: /wDeveloper/L-Dev-EditingDataSave.html
+    path: /wDeveloper/DataSave.html
     section:
     - title: "Develop: Editing Data Save"
       path: /wDeveloper/L-Dev-EditingDataSave.html
@@ -437,3 +437,8 @@ releaseNotes:
       path: /wReleaseNotes/2023-11_ReleaseNotes.html
     - title: December
       path: /wReleaseNotes/2023-12_ReleaseNotes.html
+- sectiontitle: 2024
+  path: /wReleaseNotes/2024-01_ReleaseNotes.html
+  section:
+    - title: January
+      path: /wReleaseNotes/2024-01_ReleaseNotes.html

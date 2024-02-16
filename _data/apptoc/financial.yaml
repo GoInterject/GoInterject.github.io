@@ -35,6 +35,10 @@ horizontalnav:
 about:
   - title: What is Interject Financials for Epicor
     path: /bApps/bFinancials/Epicor-Financials.html
+  - title: Reporting Capabilities
+    path: /bApps/bFinancials/Reporting-Capabilities.html
+  - title: Troubleshooting and Support
+    path: /bApps/bFinancials/Support-Overview.html
   #- title: Core Features
   #path: /bApps/bFinancials/Core-Features.html
   #- sectiontitle:
@@ -47,9 +51,7 @@ about:
   # - title: Prerequisites
   #  path:
 
-reportingcapabilities:
-  - title: Reporting Capabilities
-    path: /bApps/bFinancials/Reporting-Capabilities.html
+# reportingcapabilities:
     # section:
     #  - title: Profit and Loss
     #    path:
@@ -155,9 +157,6 @@ examples:
     path: /bApps/bFinancials/HidingZeros.html
   - title: Adding Notes
     path: /bApps/bFinancials/AddingNotes.html
-portal:
-  - title: Portal Site Overview
-    path: /bApps/bFinancials/Portal-Overview.html
   # - title: Logging In to the Interject Website Portal
   #  path:
   # - title: Data Connection
@@ -166,9 +165,7 @@ portal:
   #  path:
   # - title: User Profile
 
-support:
-  - title: Troubleshooting and Support
-    path: /bApps/bFinancials/Support-Overview.html
+# support:
   #- title: Troubleshooting App Errors
   # path:
   #- title: Troubleshooting Excel Animations

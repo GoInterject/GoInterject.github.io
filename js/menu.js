@@ -9,6 +9,8 @@ var scoreForTitleMatch = 10;
 var scoreForURLMatch = 5;
 var scoreForKeywordHEAVYMatch = 5   // weight for 1st three keywords
 var scoreForKeywordDEFAULTMatch = 3 // weight for rest of keywords
+var scoreForHeadingsMatch = 2
+var scoreForImagesMatch = 1
 var scoreForDescriptionMatch = 1
 
 var isAppsSite = false;
@@ -17,13 +19,15 @@ if (window.location.href.indexOf("bApps") !== -1) {
 	isAppsSite = true;
 }
 
-function addResult(topic, results, matchesTitle, matchesDescription, matchesURL, matchesKeywords, matchesTopKeywords)
+function addResult(topic, results, matchesTitle, matchesDescription, matchesURL, matchesKeywords, matchesTopKeywords, matchesHeadings, matchesImages)
 {
   var matchScore = (matchesTitle * scoreForTitleMatch) +
                   (matchesDescription * scoreForDescriptionMatch) +
                   (matchesURL * scoreForURLMatch) +
                   (matchesTopKeywords * scoreForKeywordHEAVYMatch) +
-                  (matchesKeywords * scoreForKeywordDEFAULTMatch);
+                  (matchesKeywords * scoreForKeywordDEFAULTMatch) +
+                  (matchesImages * scoreForImagesMatch) +
+                  (matchesHeadings * scoreForHeadingsMatch);
   if (matchScore > 0)
   {
     var resultIndex = results.length;
@@ -133,14 +137,8 @@ function hookupTOCEvents()
       //console.log("input changed: ",$("#st-search-input").val());
 
       if (searchVal.length > 2) {
-        if (isAppsSite) {
-			results = getTopHitsResultsApps(searchVal);
-		}
-		else {
-			results = getTopHitsResults(searchVal);
-		}
-		
-      }
+  			results = getTopHitsResults(searchVal, isAppsSite);
+	    }
       
 	autoCompleteShowingID = -1;
 	var resultsShown = 0;
@@ -208,28 +206,30 @@ function hookupTOCEvents()
   });
 }
 
-function getTopHitsResults(searchVal) {
+function getTopHitsResults(searchVal, searchingAppSite) {
   var uppercaseSearchVal = searchVal.toUpperCase();
   var topHitsResults = [];
 
   for (var i = 0; i < pages.length; i++) {
     var thisPage = pages[i];
 
-    // Check if the URL starts with "/bApps"; if it does, skip processing the page
-    if (thisPage.url && thisPage.url.toUpperCase().startsWith("/BAPPS")) {
+     var thisPageIsAppsSite = thisPage.url ? thisPage.url.toUpperCase().startsWith("/BAPPS") : false
+
+     // Don't do search if these values are opposite (XOR)
+     if (searchingAppSite ^ thisPageIsAppsSite) {
       continue;
     }
 
-    // Proceed with processing the page if the URL doesn't start with "/bApps"
-    var matchesTitle = matches(String(thisPage.title).toUpperCase(), uppercaseSearchVal);
+    var matchesTitle = thisPage.title ? matches(String(thisPage.title).toUpperCase(), uppercaseSearchVal) : 0;
     var matchesDescription = thisPage.description ? matches(String(thisPage.description).toUpperCase(), uppercaseSearchVal) : 0;
-    var matchesURL = matches(String(thisPage.url).toUpperCase(), uppercaseSearchVal);
+    var matchesURL = thisPage.url ? matches(String(thisPage.url).toUpperCase(), uppercaseSearchVal) : 0;
     var matchesKeywords = thisPage.keywords ? matches(String(thisPage.keywords.slice(2, thisPage.keywords.length)).toUpperCase(), uppercaseSearchVal) : 0;
     var matchesTopKeywords = thisPage.keywords ? matches(String(thisPage.keywords.slice(0, 3)).toUpperCase(), uppercaseSearchVal) : 0;
-    var matchesHeadings = thisPage.headings ? matches(String(thisPage.keywords.slice(0, 3)).toUpperCase(), uppercaseSearchVal) : 0;
+    var matchesHeadings = thisPage.url ? matches(String(thisPage.headings).toUpperCase(), uppercaseSearchVal) : 0;
+    var matchesImages = thisPage.images ? matches(convertImagesObject(thisPage.images).toUpperCase(), uppercaseSearchVal) : 0;
 
-    addResult(i, topHitsResults, matchesTitle, matchesDescription, matchesURL, matchesKeywords, matchesTopKeywords, matchesHeadings);
-  }
+    addResult(i, topHitsResults, matchesTitle, matchesDescription, matchesURL, matchesKeywords, matchesTopKeywords, matchesHeadings, matchesImages);
+    }
 
   topHitsResults.sort(function(a, b) {
     return b.score - a.score;
@@ -238,31 +238,16 @@ function getTopHitsResults(searchVal) {
   return topHitsResults;
 }
 
-function getTopHitsResultsApps(searchVal) {
-var uppercaseSearchVal = searchVal.toUpperCase();
-  var topHitsResults = [];
+function convertImagesObject(images) {
+  const jsImages = JSON.parse(JSON.stringify(images) || '[]'); // Parse JSON string into an array of objects
+  const csvLines = [];
 
-  for (var i = 0; i < pages.length; i++) {
-    var thisPage = pages[i];
-    
-    // Check if the URL starts with "/bApps"
-    if (thisPage.url && thisPage.url.toUpperCase().startsWith("/BAPPS")) {
-      var matchesTitle = matches(String(thisPage.title).toUpperCase(), uppercaseSearchVal);
-      var matchesDescription = thisPage.description ? matches(String(thisPage.description).toUpperCase(), uppercaseSearchVal) : 0;
-      var matchesURL = matches(String(thisPage.url).toUpperCase(), uppercaseSearchVal);
-      var matchesKeywords = thisPage.keywords ? matches(String(thisPage.keywords.slice(2, thisPage.keywords.length)).toUpperCase(), uppercaseSearchVal) : 0;
-      var matchesTopKeywords = thisPage.keywords ? matches(String(thisPage.keywords.slice(0, 3)).toUpperCase(), uppercaseSearchVal) : 0;
-      var matchesHeadings = thisPage.headings ? matches(String(thisPage.keywords.slice(0, 3)).toUpperCase(), uppercaseSearchVal) : 0;
-
-      addResult(i, topHitsResults, matchesTitle, matchesDescription, matchesURL, matchesKeywords, matchesTopKeywords, matchesHeadings);
-    }
-  }
-
-  topHitsResults.sort(function(a, b) {
-    return b.score - a.score;
+  jsImages.forEach(image => {
+    // Convert each image object to a CSV line by stringify it
+    csvLines.push(JSON.stringify(image));
   });
 
-  return topHitsResults;
+  return csvLines.join('\n');
 }
 
 function queryString()

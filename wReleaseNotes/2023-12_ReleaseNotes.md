@@ -7,7 +7,7 @@ headings: ["December 2023", "Excel Addin v2.5.0.23", "Portal Site", "Interject P
 links: ["/wIndex/ReportVariable.html#function-arguments", "/wDeveloper/ConnectionManager.html", "/schemas/custom_search", "/wDeveloper/L-Dev-ChangelogDataSave.html", "/wDeveloper/CustomItems.html", "/schemas/custom_search", "/bApps/schemas/custom_search", "/wTroubleshoot/RowDefClear.html"]
 image_dir: ""
 images: []
-description: Release notes for the previous month's updates
+description: Release notes for this month's updates
 ---
 * * *
 

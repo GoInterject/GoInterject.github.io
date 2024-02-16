@@ -2,9 +2,9 @@
 title: Simple Data Pull
 filename: "Simple-Data-Pull.md"
 layout: custom
-keywords: [data, pull, develop, build, create]
-headings: ["Overview", "Understanding the Business Use Case", "Customer Aging", "Customer Orders"]
-links: ["/wAbout/Customer-Aging.html", "/wGetStarted/L-Dev-CustomerAging.html", "/wAbout/Customer-Aging.html", "/wGetStarted/L-Dev-CustomerOrders.html", "/wGetStarted/L-Create-CustomerOrders.html"]
+keywords: [data, pull, develop, build, create, jdropdown]
+headings: ["Overview", "Understanding the Business Use Case", "Customer Aging", "Customer Orders", "jDropdowns"]
+links: ["/wAbout/Customer-Aging.html", "/wGetStarted/L-Dev-CustomerAging.html", "/wAbout/Customer-Aging.html", "/wGetStarted/L-Dev-CustomerOrders.html", "/wGetStarted/L-Create-CustomerOrders.html", "/wGetStarted/L-Dev-jDropdowns.html"]
 image_dir: ""
 images: []
 description: To clearly illustrate the end-to-end workflow of developing a report, you can begin with several simple data pull examples showing different report configurations. You will be reusing Interject reports used in previous sections, because these should be familiar to you if you read this documentation from the beginning.
@@ -28,3 +28,7 @@ Customer Aging, you will learn how to create a simple data pull using the Custom
 ### [Customer Orders](/wGetStarted/L-Dev-CustomerOrders.html)
 
 Customer Orders, you show you how to create a second report, Customer Orders, that will be drilled to from the Customer Aging Report. You should have already seen the Customer Orders report while reviewing the business use case in [Create: Customer Orders](/wGetStarted/L-Create-CustomerOrders.html). Continue to build the Interject configuration and database objects to support the report.
+
+### [jDropdowns](/wGetStarted/L-Dev-jDropdowns.html)
+
+This example will walk you through building a custom jDropdown stored procedure for your reports. You will walk through how to build the Data Connection, Data Portal, and stored procedure for the jDropdown example built on the Customer Aging report. This stored procedure is designed to filter down on the specific options for a parameter. Include all the columns that can be used as filter values in the report.

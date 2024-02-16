@@ -7,7 +7,7 @@ headings: ["November 2023", "Documentation Updates"]
 links: ["/wReleaseNotes/2023-11_ReleaseNotes.html", "/wPortal/MFA.html", "/wApi/DeveloperMain.html", "/wApi/java-api-setup.html", "/wAbout/ReportLibraryLinks.html", "/wAbout/ReportLibraryOrganization.html", "/wTroubleshoot/AdxLoader.html", "/wTroubleshoot/WebView2.html", "/wApi/dot-net-api-setup.html", "/wPortal/INTERJECT-Roles.html", "/wGetStarted/Excel-Best-and-Worst-Practices.html", "/wPortal/StaffPage.html", "/wDeveloper/ConnectionManager.html"]
 image_dir: ""
 images: []
-description: Release notes for the previous month's updates
+description: Release notes for this month's updates
 ---
 * * *
 
