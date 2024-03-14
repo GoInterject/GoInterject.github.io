@@ -150,29 +150,40 @@ Notice 3 names were created correspond to the entries in the left column and the
 
 ### Appending A Prefix and/or Suffix To A Name
 
-Interject can automatically have a prefix and/or suffix appended to a defined name when you create it using Quick Tools. For example, you may want to append the prefix "input_" to your filter names. You must first set up a few defined names for this to work.
+Interject can automatically have a prefix and/or suffix appended to a defined name when you create it using Quick Tools. For example, you may want to append the prefix "input_" to your filter names. You can also fix a suffix to the named ranges. It is best to include these config settings in a separate sheet.
 
-**Step 1:** First select an empty spot within the report to store your prefix and suffix:
+**Step 1:** Open up a new Excel tab called "InterjectConfig".
+
+![](/images/QuickToolsNames/NewTab.png)
+<br>
+
+**Step 2:** Select an empty spot within the sheet to store your prefix and suffix.
 
 ![](/images/QuickToolsNames/PrefixSuffix1.png)
 <br>
 
-**Step 2:** Next, select the prefix name and give it the defined name "InterjectConfig_NamedRangePrefix":
+**Step 3:** Select an empty cell and give it the named range of "InterjectConfig_Settings".
 
 ![](/images/QuickToolsNames/PrefixSuffix2.png)
 <br>
 
-**Step 3:** Give the suffix name the defined name "InterjectConfig_NamedRangeSuffix":
+**Step 4:** Interject will find any json pair in this named range to use. To have Excel format a json pair using the prefix and suffix set up, enter this in the cell:
+
+```bash
+="{""NamedRangePrefix"":"""&C2&"""}{""NamedRangeSuffix"":"""&C3&"""}"
+```
+
+The configurations are now set up.
 
 ![](/images/QuickToolsNames/PrefixSuffix3.png)
 <br>
 
-**Step 4:** Now select the 2 columns you want to create names for:
+**Step 5:** Now select the 2 columns you want to create names for:
 
 ![](/images/QuickToolsNames/SelectedNameRangeBefore.png)
 <br>
 
-**Step 5:** Next open up the Interject Quick Tools and select the tool and click **OK**:
+**Step 6:** Next open up the Interject Quick Tools and select the tool and click **OK**:
 
 ![](/images/QuickToolsNames/SelectedNameRangeMiddle.png)
 <br>
