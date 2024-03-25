@@ -18,7 +18,7 @@ horizontalnav:
   path: /wTroubleshoot/Troubleshooting-Landing.html
   node: troubleshoot
 - title: Release Notes
-  path: /wReleaseNotes/2024-01_ReleaseNotes.html
+  path: /wReleaseNotes/2024-03_ReleaseNotes.html
   node: releaseNotes
 
 about:
@@ -429,12 +429,14 @@ troubleshoot:
 
 releaseNotes:
 - sectiontitle: Versions
-  path: /wReleaseNotes/2023-12_ReleaseNotes.html
+  path: /wReleaseNotes/2024-03_ReleaseNotes.html
   section:
     - title: 2.5.0.22
       path: /wReleaseNotes/2023-10_ReleaseNotes.html
     - title: 2.5.0.23
       path: /wReleaseNotes/2023-12_ReleaseNotes.html
+    - title: 2.5.1.0
+      path: /wReleaseNotes/2024-03_ReleaseNotes.html
 - sectiontitle: 2023
   path: /wReleaseNotes/2023-12_ReleaseNotes.html
   section:
