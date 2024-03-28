@@ -167,10 +167,10 @@ Interject can automatically have a prefix and/or suffix appended to a defined na
 ![](/images/QuickToolsNames/PrefixSuffix2.png)
 <br>
 
-**Step 4:** Interject will find any json pair in this named range to use. To have Excel format a json pair using the prefix and suffix set up, enter this in the cell:
+**Step 4:** Interject will find any json pair in this named range to use. To have Excel format a json pair using the prefix and suffix set up, you can use the Interject [jSetting](/wIndex/jSetting.html) function. This function automatically formats a pair into json form. In the cell with the named range, enter the following:
 
 ```bash
-="{""NamedRangePrefix"":"""&C2&"""}{""NamedRangeSuffix"":"""&C3&"""}"
+=jSetting("NamedRangePrefix", C2)&jSetting("NamedRangeSuffix",C3)
 ```
 
 The configurations are now set up.
