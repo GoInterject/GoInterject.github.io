@@ -87,7 +87,7 @@ To install for current user on the server, make sure the **Only for me** button 
 
 **Step 11:** Once the installation is finished, the installer will tell you if it is complete.
 
-![](/images/SingleUser/13.png   )
+![](/images/SingleUser/13.png)
 
 [Continue Here For Login Information](/wAbout/Logging-In.html#before-using-interject-heres-how-to-login)
 
