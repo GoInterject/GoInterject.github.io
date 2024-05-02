@@ -11,7 +11,7 @@ description: In this page you will see the process of building a Customer Aging 
 ---
 * * *
 
-##  Overview
+## Overview
 
 In this page you will see the process of building a Customer Aging report from scratch to better understand reports and also get a clearer illustration of the Interject [ReportRange()](/wIndex/ReportRange.html) data function.
 
@@ -19,9 +19,9 @@ In this page you will see the process of building a Customer Aging report from s
  If you are following the Training Labs, this is Lab 3.1. Note: The Report Library at Training Labs for this lab will be blank as you are creating a report from a new blank Excel sheet.
 </blockquote>
 
-###  Building the Report
+### Building the Report
 
-**Step 1:** This process begins with the Interject [Report Builder](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder) . Open the Report Build as illustrated below. There is a drop down list of  [Dataportals](/wApps/Common-Dataportal-Index.html) that can be chosen  . An Interject Data Portal is a pre-configured data query that is setup so spreadsheet users can easily direct data into their own spreadsheet reports. Data Portals can be setup to access databases or cloud data and are either setup by Interject developers or the IT team.
+**Step 1:** This process begins with the Interject [Report Builder](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder). Open the Report Build as illustrated below. There is a drop down list of [Dataportals](/wApps/Common-Dataportal-Index.html) that can be chosen. An Interject Data Portal is a pre-configured data query that is setup so spreadsheet users can easily direct data into their own spreadsheet reports. Data Portals can be setup to access databases or cloud data and are either setup by Interject developers or your IT team.
 
 ![](/images/L-Create-CustAging/01.png)
 <br>
@@ -36,7 +36,7 @@ A new sheet should be added that looks like the screenshot below. Now the report
 ![](/images/L-Create-CustAging/03.png)
 <br>
 
-###  Getting Started
+### Getting Started
 
 **Step 1:** Begin by putting the filter value **Market** in C16 so you can limit the data pulled to just a few records that have a Company Name that contains the word **Market**.
 
@@ -103,7 +103,7 @@ For this report, you will set the ColDefRange to the entire second row, 2:2.
 ![](/images/L-Create-CustAging/19.png)
 <br>
 
-###  Final Formatting
+### Final Formatting
 
 The data pulled should look like below.
 
@@ -150,8 +150,4 @@ Use the [**Quick Tools**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-to
 ![](/images/L-Create-CustAging/27.png)
 <br>
 
-Finally, clear the report, refreeze the panes, and upload it to the [Report Library](/wAbout/ReportLibraryLinks.html).
-
-<blockquote class=lab_info>
- Do not upload this file to the Report Library if you are following the Training Labs. You may save the file locally, however, if you want to keep a local copy.
-</blockquote>
+Finally, clear the report and save the file to the Report Library "My Favorites" folder. (For detailed instructions on how to save a file to the Report Library, see [here](/wAbout/ReportLibraryLinks.html).)

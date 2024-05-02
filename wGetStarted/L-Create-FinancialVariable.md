@@ -299,8 +299,4 @@ Ta-Da! After comparing the reports you can notice that, besides some formatting 
 ![](/images/L-Create-FinancialVar/51.png)
 <br>
 
-Finally, clear the report, refreeze the panes, and upload it to the [Report Library](/wAbout/ReportLibraryLinks.html).
-
-<blockquote class=lab_info>
- Do not upload this file to the Report Library if you are following the Training Labs. You may save the file locally, however, if you want to keep a local copy.
-</blockquote>
+Finally, clear the report and save the file to the Report Library "My Favorites" folder. (For detailed instructions on how to save a file to the Report Library, see [here](/wAbout/ReportLibraryLinks.html).)

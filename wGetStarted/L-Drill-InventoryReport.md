@@ -6,7 +6,7 @@ keywords: [drill, report, hyperlinks, walkthrough]
 headings: ["Overview", "Unfreezing the Report", "Setting up the Drill", "Creating Hyperlinks as Drills"]
 links: ["/wAbout/Inventory-Reports.html", "/wIndex/ReportDrill.html", "/wIndex/PairGroup.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "wGetStarted/L-Drill-FinancialReport.html"]
 image_dir: "L-Drill-Inventory"
-images: [{file: "01", type: "png", site: "Addin", cat: "Report", sub: "", report: "Inventory by Category", ribbon: "", config: ""}, {file: "02", type: "png", site: "Excel", cat: "Freeze Panes", sub: "", report: "Inventory by Category", ribbon: "", config: ""}, {file: "03", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, {file: "04", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, {file: "05", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, {file: "06", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, {file: "07", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, {file: "08", type: "png", site: "Addin", cat: "Report", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, {file: "09", type: "png", site: "Excel", cat: "Right Click Menu", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, {file: "10", type: "png", site: "Excel", cat: "Insert Hyperlink", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, {file: "11", type: "png", site: "Addin", cat: "Report", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, {file: "12", type: "png", site: "Addin", cat: "Report", sub: "", report: "Inventory by Category", ribbon: "", config: ""}, {file: "13", type: "png", site: "Addin", cat: "Pull Data", sub: "", report: "Inventory by Category", ribbon: "Simple", config: ""}, {file: "14", type: "png", site: "Addin", cat: "Report", sub: "", report: "Inventory by Category", ribbon: "", config: ""}, {file: "15", type: "gif", site: "Addin", cat: "Data Drill", sub: "", report: "Inventory by Category", ribbon: "", config: ""}]
+images: [{file: "01", type: "png", site: "Addin", cat: "Report", sub: "", report: "Inventory by Category", ribbon: "", config: ""}, {file: "02", type: "png", site: "Excel", cat: "Freeze Panes", sub: "", report: "Inventory by Category", ribbon: "", config: ""}, {file: "03", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, {file: "04", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, {file: "05", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, {file: "06", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, {file: "07", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, {file: "08", type: "png", site: "Addin", cat: "Report", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, {file: "09", type: "png", site: "Excel", cat: "Right Click Menu", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, {file: "10", type: "png", site: "Excel", cat: "Insert Hyperlink", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, {file: "11", type: "png", site: "Addin", cat: "Report", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, {file: "12", type: "png", site: "Addin", cat: "Report", sub: "", report: "Inventory by Category", ribbon: "", config: ""}, {file: "13", type: "png", site: "Addin", cat: "Pull Data", sub: "", report: "Inventory by Category", ribbon: "Simple", config: ""}, {file: "14", type: "png", site: "Addin", cat: "Report", sub: "", report: "Inventory by Category", ribbon: "", config: ""}, {file: "InventoryDrill", type: "gif", site: "Addin", cat: "Data Drill", sub: "", report: "Inventory by Category", ribbon: "", config: ""}]
 description: In this example, you will view drilling between reports using the same Inventory reports created during the Real World Inventory Walkthrough. You will set up a drill from the Inventory by Category tab to the Inventory by Detail tab of the workbook. You will also set up a hyperlink so the drill can be more intuitive to users.
 ---
 * * *
@@ -19,9 +19,9 @@ In this example, you will view drilling between reports using the same Inventory
  If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 4 Drilling To Data > Lab 4.2 Inventory Report.
 </blockquote>
 
-### Unfreezing the Report
+### Initializing the Report
 
-**Step 1:** First, open the Inventory Report Template. This file has been prepared specifically for this exercise. Once opened, it should look like the screenshot below.
+**Step 1:** To begin, open the Interject Inventory Demo report from the Report Library.
 
 ![](/images/L-Drill-Inventory/01.png)
 <br>
@@ -30,6 +30,18 @@ In this example, you will view drilling between reports using the same Inventory
 
 ![](/images/L-Drill-Inventory/02.png)
 <br>
+
+**Step 3:** In this report the [ReportDrill()](/wIndex/ReportDrill.html) function has already been set up. To follow along in this guide, you will need to remove this function so you can set them up manually. Scroll up to the configuration rows and select the the drill and clear their contents.
+
+![](/images/L-Drill-Inventory/02b.png)
+<br>
+
+**Step 4:** Also in this report, the hyperlinks have already been set up. You will set these links up manually [later](#creating-hyperlinks-as-drills). Therefore, select them and remove the hyperlinks.
+
+![](/images/L-Drill-Inventory/02c.png)
+<br>
+
+The report is now ready to be set up for drilling.
 
 ### Setting up the Drill
 
@@ -99,7 +111,7 @@ Here, you have the report pulled and are ready to go.
 
 **Step 4:** Now that you have the data, and can click the hyperlink. As shown in the animated GIF below, click on **Totals for Grains/Cereals** and Interject will drill to the detail of that category in the target worksheet. Hyperlinks only show the Drill window when there is more than one drill option setup. In this case, you only setup one drill and it goes there automatically.
 
-![](/images/L-Drill-Inventory/15.gif)
+![](/images/L-Drill-Inventory/InventoryDrill.gif)
 <br>
 
 Hyperlinking Drills is a simple way to make Interject reports faster and more user-friendly. Click [here](wGetStarted/L-Drill-FinancialReport.html) for the Financial Report Drill walkthrough.

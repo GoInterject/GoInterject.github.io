@@ -6,7 +6,7 @@ keywords: [menu, hyperlink, drill, double click drill, Interject_DoubleClick, cu
 headings: ["Overview", "The Menu Method", "The Hyperlink Method", "The Double Click Method"]
 links: ["/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data", "/wAbout/Customer-Aging.html", "/wAbout/Inventory-Reports.html", "/wGetStarted/L-Drill-InventoryReport.html#creating-hyperlinks-as-drills", "/wAbout/Customer-Aging.html", "https://support.office.com/en-us/article/View-or-change-the-properties-for-an-Office-file-21D604C2-481E-4379-8E54-1DD4622C6B75"]
 image_dir: "L-Drill-TheThreeWays"
-images: [{file: "01", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}, {file: "02", type: "png", site: "Addin", cat: "Data Drill", sub: "", report: "Customer Aging Summary", ribbon: "Advanced", config: ""}, {file: "03", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Detail", ribbon: "", config: ""}, {file: "04", type: "png", site: "Addin", cat: "Report", sub: "", report: "Inventory by Category", ribbon: "", config: ""}, {file: "05", type: "gif", site: "Addin", cat: "Data Drill", sub: "", report: "Inventory by Category", ribbon: "Simple", config: ""}, {file: "06", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}, {file: "07", type: "gif", site: "Addin", cat: "Data Drill", sub: "", report: "Customer Aging Summary", ribbon: "Simple", config: ""}, {file: "08", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Detail", ribbon: "", config: ""}, {file: "properties", type: "png", site: "Excel", cat: "Info", sub: "Advanced Properties", report: "", ribbon: "", config: ""}]
+images: [{file: "01", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}, {file: "02", type: "png", site: "Addin", cat: "Data Drill", sub: "", report: "Customer Aging Summary", ribbon: "Advanced", config: ""}, {file: "03", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Detail", ribbon: "", config: ""}, {file: "04", type: "png", site: "Addin", cat: "Report", sub: "", report: "Inventory by Category", ribbon: "", config: ""}, {file: "InventoryDrill", type: "gif", site: "Addin", cat: "Data Drill", sub: "", report: "Inventory by Category", ribbon: "Simple", config: ""}, {file: "06", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}, {file: "DrillToAgingDetail", type: "gif", site: "Addin", cat: "Data Drill", sub: "", report: "Customer Aging Summary", ribbon: "Simple", config: ""}, {file: "08", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Detail", ribbon: "", config: ""}, {file: "properties", type: "png", site: "Excel", cat: "Info", sub: "Advanced Properties", report: "", ribbon: "", config: ""}]
 description: Interject facilitates three different ways to drill. Each method is easy to choose the best one different situations.
 ---
 * * *
@@ -46,7 +46,7 @@ The hyperlink drill method is another option. It is one of the simplest ways for
 
 By clicking the hyperlink cell, it will automatically trigger the Interject drill. Since there is only one drill option, the Data Drill window will not appear as in previously shown examples. If multiple drill options are present, the Data Drill window will appear so the user can select which drill option to use. The animated GIF below illustrates how the hyperlink drill works in Interject.
 
-![](/images/L-Drill-TheThreeWays/05.gif)
+![](/images/L-Drill-TheThreeWays/InventoryDrill.gif)
 <br>
 
 It is that simple. To know how to set up a hyperlink drill for one of the reports, [click here](/wGetStarted/L-Drill-InventoryReport.html#creating-hyperlinks-as-drills) to see how it was set up in the example above.
@@ -60,7 +60,7 @@ The double click method is similar to the hyperlink method in that it reduces th
 
 The animated GIF below illustrates how the double click method works. The user simply double clicks on the cell to drill on and the Data Drill window appears. In this example, there are multiple drill options so the Data Drill window appears to let the user choose which to use. If only one drill option was available, Interject would have went directly to the target.
 
-![](/images/L-Drill-TheThreeWays/07.gif)
+![](/images/L-Drill-TheThreeWays/DrillToAgingDetail.gif)
 <br>
 
 Again, you should see the target report as shown below.

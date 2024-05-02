@@ -18,9 +18,15 @@ Interject's Special Column Definitions are a convenient way you can customize a 
 1. **Adding a cell comment**
 2. **Adding a hyperlink to a web address**
 3. **Adding a custom drop down validation to each row**
-4. **Adding multiple cell values stacked on a single cell**
 
-These additional features are added by editing the Column Definition Row. The Column Definition Row is a row that designates, and filters, the placement of information. For example, if your report is presenting the field "Company Name", your Column Definition would have a cell with the value "Company Name". To add one of these features to the cells in a column where the report is populated you use an identifier such as **AddComm** for comments, **hLink** for hyperlinks, and **Valuelist** for a drop down list. This example uses the Customer Credits report, which is a version of the [Customer Aging](/wGetStarted/L-Modify-CustomerAging.html).
+![](/images/L-Create-SpecColDefs/00.png)
+<br>
+
+You can even add multiple cell values, for example a comment and a hyperlink.
+
+These additional features are added by editing the Column Definition Row. The Column Definition Row is a row that designates, and filters, the placement of information. For example, if your report is presenting the field "Company Name", your Column Definition would have a cell with the value "Company Name". To add one of these features to the cells in a column where the report is populated you use an identifier such as **AddComm** for comments, **hLink** for hyperlinks, and **Valuelist** for a drop down list. 
+
+This example uses the Customer Credits report, which is in the [Customer Aging](/wGetStarted/L-Modify-CustomerAging.html).
 
 <blockquote class=lab_info>
  If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 5 Advanced Features > Lab 5.4 Special Column Definitions.
