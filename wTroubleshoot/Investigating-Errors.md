@@ -6,7 +6,7 @@ keywords: [report, error, user support, progress bar window, activity log]
 headings: ["Overview", "Using the Progress Bar Window", "Using Activity Logs"]
 links: ["/wGetStarted/L-Dev-Error-Handling.html"]
 image_dir: "InvestigatingReportErrors"
-images: [{file: "01", type: "jpg", site: "Addin", cat: "Progress Bar", sub: "Error Popup", report: "Customer Aging Summary", ribbon: "", config: ""}, {file: "02", type: "jpg", site: "Addin", cat: "Progress Bar", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}, {file: "03", type: "jpg", site: "Addin", cat: "Progress Bar", sub: "Formulas", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "20", type: "jpg", site: "Addin", cat: "Report Library", sub: "Client Activity Dashboard", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "21", type: "jpg", site: "Addin", cat: "Report", sub: "", report: "Activity Dashboard", ribbon: "", config: ""}, {file: "22", type: "jpg", site: "Addin", cat: "Report", sub: "", report: "Error Log", ribbon: "", config: ""}]
+images: [{file: "01", type: "jpg", site: "Addin", cat: "Progress Bar", sub: "Error Popup", report: "Customer Aging Summary", ribbon: "", config: ""}, {file: "02", type: "jpg", site: "Addin", cat: "Progress Bar", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}, {file: "03", type: "jpg", site: "Addin", cat: "Progress Bar", sub: "Formulas", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "20", type: "png", site: "Addin", cat: "Report Library", sub: "Client Activity Dashboard", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "21", type: "jpg", site: "Addin", cat: "Report", sub: "", report: "Activity Dashboard", ribbon: "", config: ""}, {file: "22", type: "jpg", site: "Addin", cat: "Report", sub: "", report: "Error Log", ribbon: "", config: ""}]
 description: Report errors can happen for a number of reasons. There are two types of errors that Interject can display, handled and unhandled. Errors can be investigated using the Progress Bar Window or Activity Logs.
 ---
 * * *
@@ -40,7 +40,7 @@ The Client Activity Dashboard is an Excel file setup to generate information reg
 
 **Step 1:** Open the Client Activity Dashboard from the Interject Report Library.
 
-![](/images/InvestigatingReportErrors/20.jpg)
+![](/images/InvestigatingReportErrors/20.png)
 <br>
 
 **Step 2:** Navigate to the Error Log tab and pull the report (the report will populate with information about the most recent user activity logs that contain errors).

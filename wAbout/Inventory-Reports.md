@@ -23,7 +23,7 @@ This lab is a basic inventory example for tracking product quantities. In this w
 
 **Step 1:** Navigate to the Inventory report page inside the Interject Demos folder of the [Report Library](/wAbout/Report-Library-Basics.html) . The Report Library is a central place for publishing reporting templates. It is versioned and centrally located.
 
-![](/images/Inventory/image2017-6-27_17-6-52.png)
+![](/images/Inventory/01.png)
 <br>
 
 **Step 2:** Check inventory by opening the workbook to see the different categories available.
@@ -33,7 +33,7 @@ This lab is a basic inventory example for tracking product quantities. In this w
 
 To access the totals of in-stock items, just pull the data into the spreadsheet using the [**Pull Data**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) operation.
 
-![](/images/Inventory/image2017-6-12_17-32-49.png)
+![](/images/Inventory/03.png)
 <br>
 
 Now you have an overview of totals for all inventoried categories, as seen below.
@@ -79,7 +79,7 @@ This will bring us back to the previous tab.
 
 This will automatically pull the detail page again, but this time with products from the new category selected in the previous step.
 
-![](/images/Inventory/image2017-8-14_7-54-29.png)
+![](/images/Inventory/10.png)
 <br>
 
 ### Alternate Inventory Example
@@ -93,12 +93,12 @@ Now a report that shows all the categories and their details in one sheet, witho
 
 When cleared, the sheet looks similar to the first category sheet.
 
-![](/images/Inventory/image2017-6-9_14-21-7.png)
+![](/images/Inventory/12.png)
 <br>
 
 **Step 2:** Simply pull the data using the [**Pull Data**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) button to view the inventory data.
 
-![](/images/Inventory/image2017-6-9_14-22-56.png)
+![](/images/Inventory/13.png)
 <br>
 
 Now you can view every category and its detail all in one page, without any drills.
