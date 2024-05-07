@@ -282,7 +282,7 @@ Wherever possible, maintain the same formatting standards and usage as used in o
 
 ### Jekyll Front Matter
 
-The Jekyll front matter is a list of meta data at the top of the md file. It is important that this front matter is accurate, complete, and formatted correctly.
+The Jekyll front matter is a list of meta data at the top of the MD file. It is important that this front matter is accurate, complete, and formatted correctly.
 
 The following are the entries and their descriptions for the front matter:
 
@@ -307,7 +307,7 @@ The images entry for the front matter contain a nested json list of images with 
 - type: The type of file (e.g. png or jpg or gif)
 - site: The site origin of the image (e.g. Addin, Portal, Windows)
 - cat: The main category of the image (e.g. pull data, save data, report library)
-- sub: The subcatetory of the image (e.g. more details of the category of the image)
+- sub: The subcategory of the image (e.g. more details of the category of the image)
 - report: If a report title, Excel tab, or file is displayed or referenced list the name here
 - ribbon: If simple or advanced ribbon is shown in the image
 - config: If the Interject configuration area is shown in the image
