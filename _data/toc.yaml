@@ -415,6 +415,8 @@ troubleshoot:
       path: /wTroubleshoot/WebView2.html
     - title: RowDef Data Clear
       path: /wTroubleshoot/RowDefClear.html
+    - title: Transport Errors
+      path: /wTroubleshoot/Transport-Errors.html
 - sectiontitle: Report Errors
   path: /wTroubleshoot/Reports.html
   section:

@@ -192,3 +192,6 @@ Notice the defined names have the prefix and suffix you just set up:
 
 ![](/images/QuickToolsNames/PrefixSuffix4.png)
 <br>
+
+<blockquote class=highlight_note>
+<b>Note:</b> The named range "InterjectConfig_Settings" can be scoped to the entire workbook or a particular sheet. Interject will apply the settings from the current sheet if they exist, otherwise it will apply the settings that are workbook scoped.</blockquote>

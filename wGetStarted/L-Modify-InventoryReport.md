@@ -148,8 +148,6 @@ This will automatically freeze the panes to the pre-configured position.
 ![](/images/L-Modify-Inventory/21.png)
 <br>
 
-And that is all there is to it. You have now modified the Inventory Report with an additional column and row. Save your new report to the report library as "Modified Inventory_YourName". You can learn how to upload files to the Report Library [here](/wAbout/ReportLibraryLinks.html).
+And that is all there is to it. You have now modified the Inventory Report with an additional column and row. 
 
-<blockquote class=lab_info>
-  Do not upload this file to the Report Library if you are following the Training Labs. You may save the file locally, however, if you want to keep a local copy.
-</blockquote>
+Finally, clear the report and save the file to the Report Library "My Favorites" folder. (For detailed instructions on how to save a file to the Report Library, see [here](/wAbout/ReportLibraryLinks.html).)

@@ -17,6 +17,8 @@ The jSetting function is a simple way to create a JSON Tag/Value pair that can b
 
 This function can be used as a standalone function and does not need to be embedded in another function.
 
+For an example of this function, see [Appending a Prefix](/wIndex/QuickTools-Names.html#appending-a-prefix-andor-suffix-to-a-name).
+
 ###  Function Arguments
 
 <button class="collapsible-parameter">**Tag**<br>The title or tag of the setting.</button>

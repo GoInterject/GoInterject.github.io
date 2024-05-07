@@ -19,9 +19,10 @@ In this example, you will be setting up a simple drill to the customer orders hi
  If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 4 Drilling To Data > Lab 4.1 Customer Aging.
 </blockquote>
 
-### Unfreezing the Excel Sheet
 
-**Step 1:** You begin with a special version of the Customer Collections Report that has the drill removed.
+### Initializing the Report
+
+**Step 1:** To begin, open the Interject Customer Collections report from the Report Library.
 
 ![](/images/L-Drill-CustAging/01.png)
 <br>
@@ -31,14 +32,14 @@ In this example, you will be setting up a simple drill to the customer orders hi
 ![](/images/L-Drill-CustAging/02.png)
 <br>
 
-**Step 3:** When you scroll up to rows 7 through 9, you will see where this file was set up to have 3 [ReportDrill()](/wIndex/ReportDrill.html) functions. This is where you will create your first drill formula for this example.
+**Step 3:** In this report the [ReportDrill()](/wIndex/ReportDrill.html) functions have already been set up. To follow along in this guide, you will need to remove these functions so you can set them up manually. Scroll up to the configuration rows and select the three drills and clear their contents.
 
 ![](/images/L-Drill-CustAging/03.png)
 <br>
 
 ### Build the Drill
 
-**Step 1:** To begin, select cell C7 and type **=ReportDrill()**. Then click the _**fx** _ button to bring up the Function Wizard.
+**Step 1:** To begin, select cell C7 and type **=ReportDrill()**. Then click the **fx** button to bring up the Function Wizard.
 
 ![](/images/L-Drill-CustAging/04.png)
 <br>
@@ -92,8 +93,4 @@ You completed the drill. You can return to the source worksheet, **Customer Agin
 ![](/images/L-Drill-CustAging/14.png)
 <br>
 
-Finally, clear the reports, refreeze the panes, and upload it to the [Report Library](/wAbout/ReportLibraryLinks.html).
-
-<blockquote class=lab_info>
- Do not upload this file to the Report Library if you are following the Training Labs. You may save the file locally, however, if you want to keep a local copy.
-</blockquote>
+Finally, clear the report and save the file to the Report Library "My Favorites" folder. (For detailed instructions on how to save a file to the Report Library, see [here](/wAbout/ReportLibraryLinks.html).)

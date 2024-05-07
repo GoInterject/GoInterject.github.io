@@ -143,8 +143,4 @@ The report is complete, you have added a total for each client and a summary tot
 ![](/images/L-Modify-CustAging/22.png)
 <br>
 
-Once complete, upload the report to your Report Library as "Modified Customer Aging_YourName". You can learn how to upload files to the Report Library [here](/wAbout/ReportLibraryLinks.html).
-
-<blockquote class=lab_info>
-  Do not upload this file to the Report Library if you are following the Training Labs. You may save the file locally, however, if you want to keep a local copy.
-</blockquote>
+Finally, clear the report and save the file to the Report Library "My Favorites" folder. (For detailed instructions on how to save a file to the Report Library, see [here](/wAbout/ReportLibraryLinks.html).)

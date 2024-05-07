@@ -6,7 +6,7 @@ keywords: [report, reporting, error, logs, contact, user support]
 headings: ["Overview", "Sending Logs", "Send Report to Interject", "Contact Interject Support"]
 links: ["/wTroubleshoot/Verbose-Logging.html", "/wTroubleshoot/RAM-Monitoring.html"]
 image_dir: "InterjectSupport"
-images: [{file: "UserSupport", type: "png", site: "Addin", cat: "Ribbon", sub: "User Support", report: "Customer Aging Summary", ribbon: "Advanced", config: "Yes"}, {file: "07", type: "jpg", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "Advanced", config: "Yes"}, {file: "08", type: "jpg", site: "Addin", cat: "Support", sub: "Contact Interject", report: "Customer Aging Summary", ribbon: "Simple", config: "Yes"}, {file: "09", type: "jpg", site: "Addin", cat: "Support", sub: "Report a Problem", report: "Customer Aging Summary", ribbon: "Advanced", config: "Yes"}, {file: "10", type: "jpg", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "Simple", config: ""}, {file: "11", type: "jpg", site: "Addin", cat: "Support", sub: "Contact Interject", report: "Customer Aging Summary", ribbon: "Simple", config: ""}, {file: "12", type: "jpg", site: "Addin", cat: "Support", sub: "Contact Interject", report: "Customer Aging Summary", ribbon: "Simple", config: ""}]
+images: [{file: "UserSupport", type: "png", site: "Addin", cat: "Ribbon", sub: "User Support", report: "Customer Aging Summary", ribbon: "Advanced", config: "Yes"}, {file: "07", type: "jpg", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "Advanced", config: "Yes"}, {file: "08", type: "jpg", site: "Addin", cat: "Support", sub: "Contact Interject", report: "Customer Aging Summary", ribbon: "Simple", config: "Yes"}, {file: "09", type: "png", site: "Addin", cat: "Support", sub: "Report a Problem", report: "Customer Aging Summary", ribbon: "Advanced", config: "Yes"}, {file: "10", type: "jpg", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "Simple", config: ""}, {file: "11", type: "jpg", site: "Addin", cat: "Support", sub: "Contact Interject", report: "Customer Aging Summary", ribbon: "Simple", config: ""}, {file: "12", type: "jpg", site: "Addin", cat: "Support", sub: "Contact Interject", report: "Customer Aging Summary", ribbon: "Simple", config: ""}]
 description: User Support can be accessed inside Excel and provide an interface to report a problem to Interject or display Interject's contact information.
 ---
 * * *
@@ -38,7 +38,7 @@ As long as verbose logging is turned on, Report a Problem can send user data and
 
 **Step 3:** Fill out the form with an Email and optional Name, Phone, and Description then Click **Send Report.**.
 
-![](/images/InterjectSupport/09.jpg)
+![](/images/InterjectSupport/09.png)
 <br>
 
 ### Contact Interject Support

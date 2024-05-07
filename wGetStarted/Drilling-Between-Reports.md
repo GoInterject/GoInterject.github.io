@@ -27,6 +27,10 @@ In this example, you will set up a drill from the **Inventory by Category** tab 
 
 In this example, you will be setting up a drill to a separate workbook that is in the Report Library. It will allow us to view a general ledger and to support a financial statement balance.
 
+### [Drilling to a Separate Workbook](/wGetStarted/L-Drill-DrillCodes.html)
+
+Interject gives its users the flexibility in drilling data not only to a different sheet within Excel but a separate workbook altogether. Interject achieves this functionality by the use of Data Drill Codes that are set up in the Report Library.
+
 ### [The Three Ways to Drill](/wGetStarted/L-Drill-TheThreeWays.html)
 
 There are several ways that users can utilize the drill feature. Here you will walk through the three options available for drills; the Menu Method, the Hyperlink Method, and the Double-Click method.
