@@ -1,9 +1,8 @@
-    
-
+/*
+This script is for expanding and collapsing buttons/sections
+These classes are collapsed by default
+*/
 $(document).ready(function(){    
-    /* 
-    Expands and collapses sections for streamlining documentation upon clicking the expand/collapse event button.
-    */
     var collapse = document.getElementsByClassName("collapsible");
     
     var i;
@@ -29,7 +28,6 @@ $(document).ready(function(){
                 // go to next sibling and restart loop
                 panel = panel.nextElementSibling;
             }
-            //console.log('hello')
         });
     }
 });

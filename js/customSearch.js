@@ -1,3 +1,6 @@
+/*
+This code is for the custom search feature of the website. 
+*/
 // --------------------------------------------------------------
 // TOP LEVEL VARIABLES
 // --------------------------------------------------------------
@@ -8,13 +11,18 @@ const snippetAfter = 50; // number of characters to display after the query
 const queriedString = window.location.search;
 const urlParams = new URLSearchParams(queriedString);
 
-// Extract the parameters from the query string
+/* 
+Extract the parameters from the query string
+
+Queries for search are formatted and added to the search URL. For example:
+https://docs.gointerject.com/schemas/custom_search?q=sample%20&r=false&a=true&t=true
+*/
 const searchTerm = urlParams.get('q');
 const useRegex = urlParams.get('r');
 const allHits = urlParams.get('a');
 const topHits = urlParams.get('t');
 
-// Encode and decode the search term
+// Encode and decode the search term (e.g. converts %20 to spaces)
 const searchTermEncoded = encodeURIComponent(searchTerm);
 const searchTermDecoded = decodeURIComponent(searchTermEncoded);
 const query = searchTermDecoded.toLowerCase(); // For case insensitive searching
@@ -29,18 +37,19 @@ var topHitsResults = new Array();
 
 // Page
 var currentPageUrl = window.location.href;
+
 // --------------------------------------------------------------
-// PAGE SCRIPT
+// PAGE SCRIPT (Builds the page elements)
 // --------------------------------------------------------------
-// Populate the search form with the search term
+// Populate the search form element with the search term
 var searchInput = document.getElementById('custom-search-input');
 if (searchInput) {
   if (searchTermDecoded !== 'undefined' && searchTermDecoded !== "") {
     searchInput.value = searchTermDecoded;
   }
 
-  // Put the focus in the search form
-  searchInput.focus(); // focus on search input
+  // Put the focus on the search form
+  searchInput.focus();
 }
 
 // Mark the Regex checkbox if the query is a regex query
@@ -61,11 +70,6 @@ if (topHitsCheckbox && topHits === 'true') {
   topHitsCheckbox.checked = true;
 }
 
-// Display the advanced search options if one is selected already
-if(useRegex === 'true' || allHits === 'true' || topHits === 'true') {
-	toggleOptions();
-}
-
 // Display message if the query is Regex and not valid
 if (useRegex === 'true' && !isValidRegex(query)) {
 	resultsContainer.innerHTML = '<p>Not a valid Regex expression</p>';
@@ -75,6 +79,7 @@ if (useRegex === 'true' && !isValidRegex(query)) {
 else if (query.length < 2) {
 	resultsContainer.innerHTML = '<p>Minimum 2 characters</p>';
 }
+
 // Fetch and display the results
 else if (currentPageUrl.includes("custom_search")){
 	if(topHits === 'true') {
@@ -84,9 +89,10 @@ else if (currentPageUrl.includes("custom_search")){
 }
 
 // --------------------------------------------------------------
-// RELOAD PAGE
+// RELOAD PAGE (Called when something changes)
 // --------------------------------------------------------------
-// builds a url from the value in the search form and the options selected, then navigates to the url
+// builds a url from the value in the search form and the options selected, 
+// then navigates to the url
 function reloadPage() {
   var pathPrefix = isAppsSite ? "/bApps" : "";
   var searchInput = encodeURIComponent(document.getElementById('custom-search-input').value);
@@ -113,22 +119,6 @@ if (searchForm) {
 }
 
 // --------------------------------------------------------------
-function handleDropdownChange(selectElement) {
-	var selectedValue = selectElement.value;
-	switch (selectedValue) {
-        case 'occurrence':
-		console.log('Sorting by Occurrence');
-          break;
-        case 'alphabetic':
-		console.log('Sorting by Alphabet');
-          break;
-        case 'date':
-		console.log('Sorting by Date');
-          break;
-      }
-}
-	
-// --------------------------------------------------------------
 function handleCustomAllHits() {
 	reloadPage()
 }
@@ -146,6 +136,7 @@ function handleCustomRegex() {
 // --------------------------------------------------------------
 // FUNCTIONS (FETCH AND DISPLAY)
 // --------------------------------------------------------------
+// Gets the top hits and displays them
 function fetchAndDisplayTopHitsResults() {
   topHitsResults = getTopHitsResults(query, isAppsSite); // Function in menu.js	
 	displayTopHitsResults(topHitsResults, topHitsContainer);
@@ -182,23 +173,10 @@ function displayTopHitsResults(results, container) {
       const headingsHighlight = insertHighlightAll(onlyHeadingHits, query);
 			const hitHeadings = `<p style="margin-bottom: 0px; margin-top: 0px"><b>Headings: </b>${headingsHighlight}</p>`;
 
-      const temp = extractImageValues(JSON.stringify(pages[results[i].topic].images).toLowerCase())
-      // console.log("images = " + temp)
-      const temp2 = findHeadingsWithQuery(temp, query)
-      // console.log("onlyHitsImages = " + temp2)
-      const temp3 = insertHighlightAll(temp2, query)
-      // console.log("highlighted images = " + temp3)
-      const temp4 = `<p style="margin-bottom: 0px; margin-top: 0px"><b>Images: </b>${temp3}</p>`;
-      // console.log("images = " + pages[results[i].topic].images)
-      // console.log("image length = " + pages[results[i].topic].images.length)
-
-      // for (j=0; j<pages[results[i].topic].images.length; j++) {
-      //   console.log("object[" + j + "] = " + JSON.stringify(pages[results[i].topic].images[j]))
-      // }
-
-
-			// const imagesHighlight = insertHighlightAll(String(pages[results[i].topic].images).toLowerCase(), query);
-			// const hitImages = `<p style="margin-bottom: 0px; margin-top: 0px"><b>Images: </b>${imagesHighlight}</p>`;
+      const imageStrings = extractImageValues(JSON.stringify(pages[results[i].topic].images).toLowerCase())
+      const imageHits = findHeadingsWithQuery(imageStrings, query)
+      const imageHightlight = insertHighlightAll(imageHits, query)
+      const hitImages = `<p style="margin-bottom: 0px; margin-top: 0px"><b>Images: </b>${imageHightlight}</p>`;
 
       const descriptionHighlight = insertHighlightAll(String(pages[results[i].topic].description).toLowerCase(), query);
 			const hitDescription = `<p style="margin-bottom: 0px; margin-top: 0px"><b>Description: </b>${descriptionHighlight}</p>`;
@@ -208,7 +186,7 @@ function displayTopHitsResults(results, container) {
 				${hitURL}
 				${hitKeywords}
         ${hitHeadings}
-        ${temp4}
+        ${hitImages}
 				${hitDescription}
 				`;
 
@@ -219,6 +197,7 @@ function displayTopHitsResults(results, container) {
 }
 
 // --------------------------------------------------------------
+// Gets the search hits and displays them
 function fetchAndDisplayResults() {
 	var searchIndexPath;
 	if(isAppsSite) {
@@ -238,7 +217,7 @@ function fetchAndDisplayResults() {
         results = search(query, searchIndex); // Gets the results with a standard search
       }
 	  sortResults(results);
-      displayResults(results, resultsContainer, query);
+    displayResults(results, resultsContainer, query);
     })
     .catch(error => {
       console.error('Error fetching search index:', error);
@@ -290,31 +269,49 @@ function displayResults(results, container, query) {
 // --------------------------------------------------------------
 // FUNCTIONS (SEARCH)
 // --------------------------------------------------------------
+// Searches through all pages for the query
 function search(query, index) {
+  // Map over each page in the index array
   return index.map(page => {
+    // Convert the content of the current page to lowercase
     const lowercaseContent = page.content.toLowerCase();
+
+    // Count the occurrences of the query within the lowercase content
     const occurrences = countOccurrences(lowercaseContent, query);
 
+    // Return an object representing the page with the added 'occurrences' property
     return {
-      ...page,
-      occurrences: occurrences
+      ...page, // Spread operator to include all existing properties of the page
+      occurrences: occurrences // Add a new property 'occurrences' with the count of query occurrences
     };
-  }).filter(page => page.occurrences > 0);
+  })
+  // Filter out pages with no occurrences of the query
+  .filter(page => page.occurrences > 0);
 }
 
 // --------------------------------------------------------------
+// Searches through all pages for the query (with regex)
 function searchRegex(query, searchIndex) {
-  const regex = new RegExp(query, 'ig'); // 'i' for case-insensitive, adjust flags as needed
+  // Create a regular expression object with 'query' as the pattern
+  // 'ig' flags: 'i' for case-insensitive search, 'g' for global search
+  const regex = new RegExp(query, 'ig');
 
+  // Map over each item in the search index array
   return searchIndex.map(item => {
+    // Use the regular expression to find all matches in the content of the current item
     const matches = item.content.match(regex);
+    
+    // Count the number of matches found, or set to 0 if no matches were found
     const occurrences = matches ? matches.length : 0;
 
+    // Return an object representing the item with the added 'occurrences' property
     return {
-      ...item,
-      occurrences: occurrences
+      ...item, // Spread operator to include all existing properties of the item
+      occurrences: occurrences // Add a new property 'occurrences' with the count of query occurrences
     };
-  }).filter(item => item.occurrences > 0);
+  })
+  // Filter out items with no occurrences of the query
+  .filter(item => item.occurrences > 0);
 }
 // --------------------------------------------------------------
 // FUNCTIONS (SORT)
@@ -327,87 +324,124 @@ function sortResults(results) {
 // --------------------------------------------------------------
 // FUNCTIONS (SNIPPETS)
 // --------------------------------------------------------------
+// Gets the snippet for a regex search
 function getSnippetRegex(content, query) {
+  // Create a regular expression object with 'query' as the pattern
+  // Wrap 'query' in parentheses to capture it as a group
+  // 'ig' flags: 'i' for case-insensitive search, 'g' for global search
   const regex = new RegExp(`(${query})`, 'ig');
+  
+  // Execute the regular expression on the content to find the first match
   const match = regex.exec(content);
 
+  // If a match is found
   if (match) {
+    // Calculate the start and end positions of the snippet
     const start = Math.max(0, match.index - snippetBefore);
     const end = Math.min(content.length, match.index + match[0].length + snippetAfter);
+    
+    // Extract the snippet from the content based on the calculated start and end positions
     const snippet = content.substring(start, end);
 
-    // Highlight the matched part with a yellow background
+    // Highlight the matched part of the snippet with a yellow background
     const highlightedSnippet = snippet.replace(new RegExp(query, 'ig'), match => `<span style="background-color: yellow;">${match}</span>`);
 
+    // Return the highlighted snippet with ellipses on both ends
     return `&emsp;...${highlightedSnippet}...`;
   } else {
+    // If no match is found, return a portion of the content with ellipses
     return content.substring(0, snippetBefore + snippetAfter) + '...';
   }
 }
-// --------------------------------------------------------------
 
+// --------------------------------------------------------------
+// Gets the snippet for an all hits regex search
 function getSnippetRegexAll(content, query) {
+  // Create a regular expression object with 'query' as the pattern
+  // Wrap 'query' in parentheses to capture it as a group
+  // 'ig' flags: 'i' for case-insensitive search, 'g' for global search
   const regex = new RegExp(`(${query})`, 'ig');
-  let match;
-  let snippets = [];
   
+  let match; // Declare a variable to store each match
+  let snippets = []; // Declare an array to store snippets
+  
+  // Iterate through all matches found in the content using a while loop
   while ((match = regex.exec(content)) !== null) {
+    // Calculate the start and end positions of the current snippet
     const start = Math.max(0, match.index - snippetBefore);
     const end = Math.min(content.length, match.index + match[0].length + snippetAfter);
+    
+    // Extract the current snippet from the content based on the calculated start and end positions
     const currentSnippet = content.substring(start, end);
 
-    // Highlight the matched part with a yellow background
+    // Highlight the matched part of the snippet with a yellow background
     const highlightedSnippet = insertHighlight(currentSnippet, match.index - start, match[0].length);
 
+    // Add the highlighted snippet to the snippets array with ellipses on both ends
     snippets.push(`&emsp;...${highlightedSnippet}...`);
   }
 
-  // If there are no matches, return the original content
+  // If there are no matches, return a portion of the original content with ellipses
   if (snippets.length === 0) {
     return content.substring(0, snippetBefore + snippetAfter) + '...';
   }
 
-  // Join the snippets with newline characters
+  // Join the snippets with newline characters and return as a single string
   return snippets.join('<br>');
 }
 
 // --------------------------------------------------------------
+// Gets the snippet for a search
 function getSnippet(content, query) {
+  // Find the index of the first occurrence of the query in the content (case-insensitive)
   const index = content.toLowerCase().indexOf(query);
 
+  // If the query is found within the content
   if (index !== -1) {
+    // Calculate the start and end positions of the snippet
     const start = Math.max(0, index - snippetBefore); // index of the start of the snippet
     const end = Math.min(content.length, index + snippetAfter); // index of the end of the snippet
+    
+    // Extract the snippet from the content based on the calculated start and end positions
     const snippet = content.substring(start, end);
 
-    // Wrap the matched query in a span with a yellow background
+    // Highlight the matched part of the snippet with a yellow background
     const highlightedSnippet = snippet.replace(new RegExp(escapeString(query), 'ig'), match => `<span style="background-color: yellow;">${match}</span>`);
 
+    // Return the highlighted snippet with ellipses on both ends
     return `&emsp;...${highlightedSnippet}...`;
   } else {
-    // If query not found, return the beginning of the content
+    // If query not found, return a portion of the beginning of the content with ellipses
     return content.substring(0, snippetBefore + snippetAfter) + '...';
   }
 }
 
 // --------------------------------------------------------------
+// Gets the snippet for an all hits search
 function getSnippetAll(content, query) {
+  // Create a regular expression object with 'query' as the pattern
+  // 'ig' flags: 'i' for case-insensitive search, 'g' for global search
   const regex = new RegExp(escapeString(query), 'ig');
-  let match;
-  let snippets = [];
+  let match; // Declare a variable to store each match
+  let snippets = []; // Declare an array to store snippets
 
+  // Iterate through all matches found in the content using a while loop
   while ((match = regex.exec(content)) !== null) {
+    // Calculate the start and end positions of the current snippet
     const start = Math.max(0, match.index - snippetBefore);
     const end = Math.min(content.length, match.index + match[0].length + snippetAfter);
+    
+    // Extract the current snippet from the content based on the calculated start and end positions
     const snippet = content.substring(start, end);
 
     // Wrap the matched query in a span with a yellow background
     const highlightedSnippet = insertHighlight(snippet, match.index - start, match[0].length);
 
+    // Add the highlighted snippet to the snippets array with ellipses on both ends
     snippets.push(`&emsp;...${highlightedSnippet}...`);
   }
 
-  // If there are no matches, return the beginning of the content
+  // If there are no matches, return a portion of the beginning of the content with ellipses
   if (snippets.length === 0) {
     return content.substring(0, snippetBefore + snippetAfter) + '...';
   }
@@ -415,24 +449,35 @@ function getSnippetAll(content, query) {
   // Remove the leading whitespace from the first snippet
   snippets[0] = snippets[0].replace(/^&emsp;/, '');
 
+  // Join the snippets with newline characters and return as a single string
   return snippets.join('<br>');
 }
 
 // --------------------------------------------------------------
 // FUNCTIONS (OTHER)
 // --------------------------------------------------------------
+// Extracts the values of the image json in the meta-data front matter of the md files
 function extractImageValues(imagesString) {
-  const images = JSON.parse(imagesString || '[]'); // Handle empty or undefined string
+  // Parse the JSON string 'imagesString' into an array of objects or an empty array if 'imagesString' is empty or undefined
+  const images = JSON.parse(imagesString || '[]');
+
+  // Declare an empty array to store the extracted values
   const values = [];
 
+  // Iterate over each image object in the 'images' array
   images.forEach(image => {
+    // Destructure the properties of the image object with default values
     const { file, type, site, cat, sub, report, ribbon, config } = image;
+
+    // Construct a comma-separated string of image values, using empty string as default for missing properties
     values.push(`${file || ''},${type || ''},${site || ''},${cat || ''},${sub || ''},${report || ''},${ribbon || ''},${config || ''}`);
   });
 
+  // Join the array of values with newline characters and return as a single string
   return values.join('\n');
 }
 
+// --------------------------------------------------------------
 // Returns only the list of headings that the query is found in
 // If query is not found in any heading, returns the first 3 headings
 // Return is a comma separated list
@@ -453,6 +498,7 @@ function findHeadingsWithQuery(headingsString, query) {
   }
 }
 
+// --------------------------------------------------------------
 // Highlights a portion of the originalString yellow, from indexStart and extending matchLength number of characters
 function insertHighlight(originalString, indexStart, matchLength) {
   const s = originalString.substring(0, indexStart) +
@@ -471,11 +517,13 @@ function insertHighlightAll(originalString, stringToHighlight) {
 }
 
 // --------------------------------------------------------------
+// Converts the string by escaping invalid url characters
 function escapeString(s) {
   return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
 // --------------------------------------------------------------
+// Returns true if the string is a valid regex expression
 function isValidRegex(str) {
   try {
     new RegExp(str);
@@ -486,6 +534,7 @@ function isValidRegex(str) {
 }
 
 // --------------------------------------------------------------
+// Gets a percentage rating of relevancy based on the score compared to the top score
 function getRelevancy(score, topScore) {
 	if(score === topScore) {
 		return 100
@@ -495,16 +544,10 @@ function getRelevancy(score, topScore) {
 }
 
 // --------------------------------------------------------------
+// Returns the number of times the query appears in the content
 function countOccurrences(content, query) {
   const lowercaseContent = content.toLowerCase();
   const occurrences = lowercaseContent.split(query.toLowerCase()).length - 1;
   return occurrences;
 }
 
-// --------------------------------------------------------------
-function toggleOptions() {
-    var optionsDiv = document.getElementById("advanced-search-options");
-	spaceDiv = document.getElementById("custom-space");
-    optionsDiv.style.display = (optionsDiv.style.display === "block") ? "none" : "block";
-	spaceDiv.style.display = (optionsDiv.style.display === "block") ? "none" : "block";
-  }

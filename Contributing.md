@@ -12,9 +12,11 @@ description: Hello and thank you for wanting to make a contribution to Interject
 ---
 * * *
 
-## Overview
+# Overview
 
 Hello and thank you for wanting to make a contribution to Interject. These are the guidelines that we use to make sure our documentation is the highest quality, and consistent. Included in this document is the documentation cycle from creation to approval.
+
+## Setup
 
 ### Setting Up A Local Environment
 
@@ -90,27 +92,41 @@ Example:
 update(screenshots): replaced old SS's with new ones to match UI changes
 ```
 
-### Screenshots
+## Screenshots
 
 Screenshots are used heavily in our documentation. Below are our conventions and our process of including screenshots in the documentation.
 
-#### Screenshot Software Requirements
+### Screenshot Software Requirements
 
 Screenshots for our website are made consistent by using a screen capture program called [Snagit](https://www.techsmith.com/screen-capture.html){:target="_blank"}{:rel="noopener noreferrer"}.
 
-In order to keep screenshots consistent, make sure they are captured in the most current version.
+In order to keep screenshots consistent, make sure they are captured in the most current Interject/Excel version. For reference, keep the screenshots consistent with the other images in the documentation in regards to color scheme, menu items, size, etc.
 
-#### When to Include a Screenshot
+### When to Include a Screenshot
 
 Every major step in a documentation page should be represented in a screenshot. Screenshots can contain multiple steps, but every step in the process of a lab or walkthrough should be shown somewhere in a screenshot. The user should be able to look at only the screenshots on a page and know exactly what to do.
 
 The following is a simple walkthrough of the recommended screenshot procedure. It is organized by the type of action/step the user is being instructed to take in a given screenshot. There will also be example use cases for some of the screenshot techniques in each section.
 
-#### Click Action (Arrow)
+### Company and Email
 
-If the instructions call for a click action, use a **solid, red arrow** pointing to the click location.
+All screenshots should use the **Northwind Data Company** as the example and a generic email such as mary@northwinddata.com:
 
-**Arrows** should be:
+![](/images/Contributing/NorthwindDataCompany.png)
+<br>
+
+### Sensitive Information
+
+If sensitive information must be displayed (e.g. emails), blur them out:
+
+![](/images/Contributing/BluredInformation.png)
+<br>
+
+### Click Action (Arrow)
+
+If the instructions call for a click action, use a solid, red arrow pointing to the click location.
+
+Arrows should be:
 * red,
 * 7px in thickness,
 * below the item if possible,
@@ -118,27 +134,52 @@ If the instructions call for a click action, use a **solid, red arrow** pointing
 
 No arrow is needed for "Next", "Finish" or "Ok" actions, or when only a single button is used in a screenshot.
 
-When to use an arrow in a screenshot.
+When to use an arrow in a screenshot:
 
-1. For click actions:
+1. For pointing to click actions:
 
 ![](/images/Contributing/08.png)
 <br>
 
-2. To point to tab navigation steps.
+2. To point to specific step items:
 
 ![](/images/Contributing/09.png)
 <br>
 
-It is important to **place arrows where they are easily seen**, such as *below* the dark green menu of Excel 2016.
+It is important to place arrows where they are easily seen and not to block important visual information.
 
-#### Highlighting & Emphasizing
+### Dotted Arrows
 
-When discussing a specific portion of a window, a window inside of the screenshot, or button press actions, use a **red outline/rectangle** that is 2px wide around the area/button to highlight it.
+A dotted arrow can be used to indicate an expanding of rows or columns.
+
+![](/images/Contributing/DottedArrow.png)
+<br>
+
+### Multi-Step Actions in a Single Screenshot (Numbered Steps)
+
+If multiple steps are contained in one image, label the steps 1, 2, 3, etc. in Snagit. This gives readers more direction when steps are complex.
+
+When using arrows and numbers together, always connect the arrow to a number and ensure that the arrow is projecting from the center of the number circle.
+
+Number-labeled steps should be:
+* red,
+* made using the numbering feature of Snagit,
+* have a middle-centered shadow behind them,
+* large enough to read (use Snagit’s default size),
+* connected to any red arrows also used in the step.
+
+For more complex screenshots containing multiple steps, place steps in an ordered list above the image, numbered correspondingly and tabbed in once.
+
+![](/images/Contributing/14.png)
+<br>
+
+### Red Outlines
+
+When discussing a specific portion of a window, a window inside of the screenshot, or button press actions, use a red outline that is 2px wide around the area/button to highlight it.
 
 "Next" and "Close" button press actions should also be emphasized by enclosing them in a red rectangle.
 
-Such **outlines/rectangles** should:
+The red outlines should:
 * be red,
 * be 2px in thickness,
 * be surrounding the button,
@@ -146,105 +187,71 @@ Such **outlines/rectangles** should:
 
 Limit these outlines to 3 per screenshot for clarity.
 
-When to use outline/rectangle.
+When to use red outlines:
 
-1\. To highlight click action areas on the screen if they are hard to see (you can use both an arrow and an outline):
+1. To highlight click action areas on the screen if they are hard to see (you can use both an arrow and an outline):
 
 ![](/images/Contributing/10.png)
 <br>
 
-2\. To emphasize a portion of a window.
+2. To emphasize a portion of within the screenshot:
 
 ![](/images/Contributing/11.png)
 <br>
 
-3\. To emphasize a particular window within a screenshot,
-
-4\. To highlight “Next”, “Close” and “Ok” buttons (do not use an arrow for this).
+3. To highlight “Next”, “Close” and “Ok” buttons (do not use an arrow for this):
 
 ![](/images/Contributing/12.png)
 <br>
 
-5\. To highlight clickable data-entry (capture) fields (use after a click action indicated by an arrow, if a data entry field comes up) (do not use both an arrow and a red border for this).
+4. To highlight clickable data-entry (capture) fields (use after a click action indicated by an arrow, if a data entry field comes up) (do not use both an arrow and a red border for this):
 
 ![](/images/Contributing/13.png)
 <br>
 
-6\. To highlight checkboxes.
-
-#### Multi-Step Actions in a Single Screenshot (Numbered Steps)
-
-If multiple steps are contained in one image, **label the steps 1, 2, 3,** etc. in Snagit. This gives readers more direction when steps are complex.
-
-When using arrows and numbers together, always connect the arrow to a number and ensure that the arrow is projecting from the center of the number circle.
-
-**Number-labeled steps** should be:
-* red,
-* made using the numbering feature of Snagit,
-* have a middle-centered shadow behind them,
-* large enough to read (use Snagit’s default size),
-* connected to any red arrows also used in the step.
-
-For more complex screenshots containing multiple steps, **place steps in an ordered list above the image**, numbered correspondingly and tabbed in once.
-
-![](/images/Contributing/14.png)
-<br>
-
-#### Emphasizing Text or a Point in a Screenshot
-
-When emphasizing a point, **underline** the particular point with a **2px red line**. Do not use this to highlight buttons within screenshots (instead use the red outline described above).
-
-![](/images/Contributing/15.png)
-<br>
-
-#### Note on Complex Screenshots
+### Complex Steps
 
 For complex screenshots, include more thorough text narration in the documentation.
 
 If a procedure is extremely involved, use a GIF.
 
+![](/images/Contributing/06.gif)
+<br>
+
 If a screenshot has multiple images, be sure to use an ordered list of steps within it.
 
-#### Note on Popups in Screenshots
+![](/images/Contributing/12.png)
+<br>
+
+### Popup Windows in Screenshots
 
 When screen capturing windows that contain popups, make sure the popup appears distinct from the page containing it. To do this, allow the popup to slightly overlap other content in the image. Do not line it up with any other lines on the page. Unless a screenshot of just the pop up is needed (for a special circumstance), make sure to take screenshots of popups with the windows in which they appear; it is important to show all images with as much context as possible.
 
 ![](/images/Contributing/16.png)
 <br>
 
-#### Screenshots of Excel Content
+### Ripped Border
 
-For screenshots of Excel content:
-
-* Include the Row and Column definitions in the spreadsheet to provide context, when appropriate.
-* Include the Interject menu ribbon when it is being used. If the step depicted in the screenshot does not use the Interject menu ribbon, do not include it in the screenshot (to save space).
-* Make sure that **no personal or confidential data is visible on the screen** when taking screenshots. Use mary@mycompany.com or joe@mycompany.com for masking report library and email data or remove all personal information using snagit to cover it. For login examples, use "dummy" login credentials. Use the dummy names consistently. If mary@mycompany.com is used once on a page, use it throughout that page.
-* With the exception of login boxes, **highlight all boxes from clicks to data entry** (use 2px red border). 
-* Remove the cursor from the page when the screen is being captured, unless the cursor is needed.
-* If an image is to appear truncated, manually **add a "ripped" black border**.
-
-Here is an example using a dummy credential.
-
-![](/images/Contributing/17.png)
-<br>
-
-Here is an example using a ripped border (see left hand side).
+If an image is to appear truncated, manually **add a "ripped" black border**.
 
 ![](/images/Contributing/18.png)
 <br>
 
-#### Tab Navigation in Screenshots
+### Screenshots of Excel Content
 
-When directing tab navigation (and sheet navigation in Excel), point to it with an arrow. This is especially helpful for larger screenshots.
+For screenshots of Excel content:
 
-![](/images/Contributing/19.png)
-<br>
+* Include the Row and Column definitions in the spreadsheet to provide context, when appropriate.
+* Include the Interject menu ribbon when it is being used. If the step(s) depicted in the screenshot does not use the Interject menu ribbon, do not include it in the screenshot (to save space).
+* Make sure that **no personal or confidential data is visible on the screen** when taking screenshots. 
+* With the exception of login boxes, **highlight all boxes from clicks to data entry** (use 2px red border). 
+* Remove the cursor from the page when the screen is being captured, unless the cursor is needed.
 
-#### Screenshots Size
+### Screenshots Size
 
-Ensure the screenshots are big enough to be displayed properly. In most cases, the original screen capture size will suffice. However, be sure to check if the image is displayed properly and easily read.
+Ensure the screenshots are big enough to be displayed properly. In most cases, the original screen capture size will suffice. However, be sure to check if the image is displayed properly and easily read. In addition, if you click on the image in the documentation page after the website is built, it should zoom in enough to easily read the details.
 
-#### Spacing Surrounding Screenshots
+### Spacing Surrounding Screenshots
 
 When including a screenshot in the markdown file, be sure to contain a space before the image and follow the image with a &lt;br&gt; and another space.
 
@@ -257,26 +264,7 @@ When including a screenshot in the markdown file, be sure to contain a space bef
 ...content...
 ```
 
-#### Interject Company
-
-Whenever possible, the company that should be displayed in the screenshot should be the "Interject Development" company. The times where this should not be the case is where a specific company should be used in order to correctly proceed with the walkthrough or the example.
-
-![](/images/Contributing/InterjectDevelopment.png)
-<br>
-
-#### Hiding Credentials
-
-All employee emails and passwords should be hidden from the screenshot. This can be accomplished by blanking it out or using the Snagit blur tool:
-
-![](/images/Contributing/EmailBlurred.png)
-<br>
-
-A dummy email or password may be displayed instead:
-
-![](/images/Contributing/DummyEmailDisplayed.png)
-<br>
-
-#### Uploading and Saving Screenshots to the Documentation Site
+### Uploading and Saving Screenshots to the Documentation Site
 
 Generally, upload your screenshot images to be the exact size as the original you had taken. Smaller images, such as in-window popups, should be 360px wide, unless an otherwise more appropriate size is needed.
 
@@ -288,11 +276,13 @@ When saving screenshots, place them in the following directory:
 
 If a folder for your page does not exist, please add one and place all images in that folder. Every page should have its own image folder. Do not combine pages. 
 
+## Standards and Formatting
+
+Wherever possible, maintain the same formatting standards and usage as used in other pages. You can inspect the pages for examples.
+
 ### Jekyll Front Matter
 
 The Jekyll front matter is a list of meta data at the top of the md file. It is important that this front matter is accurate, complete, and formatted correctly.
-
-#### Entries
 
 The following are the entries and their descriptions for the front matter:
 
@@ -310,8 +300,6 @@ description: A short description (typically the first paragraph in the overview)
 ---
 * * *
 ```
-
-#### Images Entry
 
 The images entry for the front matter contain a nested json list of images with keys that describe the content of the image:
 
@@ -400,9 +388,11 @@ Tables should follow Jekyll/Markdown format for consistency wherever possible:
 
 Tables do not need to have extra spaces as Jekyll will format the table and delete extra spaces. Only use extra spaces where it is necessary to visualize the table in the markdown file.
 
-When not possible, standard html table format should reflect the same standard table appearance for consistency.
+When this is not possible (e.g. needing html formatting in the table), standard html table format should reflect the same standard table appearance for consistency.
 
 ### Links
+
+Include links to other pages as necessary for expanded learning about the concept or terms being used.
 
 Ensure all links work. Links to external websites should be followed by:
 
@@ -414,7 +404,88 @@ Ensure all links work. Links to external websites should be followed by:
 
 Code blocks are preceded by \`\`\` to mark them as code. Generally, code should be be separated from the main content of the page.
 
-### Consistency
+When the code is significant in size, wrap it in a [collapsible button](#collapsible-button):
 
-Wherever possible, maintain the same formatting standards and usage as used in other pages. You can inspect other pages for examples.
+## HTML/CSS Classes
 
+### Collapsible Button
+
+A collapsible button is useful for collapsing a large amount of text or table to improve readability. This is useful for code blocks:
+
+![](/images/Contributing/CodeButton.png)
+<br>
+
+Wrap a large amount of code in this class:
+
+```
+<button class="collapsible">Text to display on the button</button>
+<div markdown="1" class="panel">
+    ```
+    <code>
+    ```
+</div>
+```
+
+### Collapsible Button (Expanded)
+
+This class is just like a collapsible button except that it is expanded by default:
+
+![](/images/Contributing/CollapsableButtonExpanded.png)
+<br>
+
+The code for this class:
+
+```
+<button class="collapsible-expanded">Text to display on the button</button>
+<div markdown="1" class="panel-expanded">
+
+</div>
+```
+
+### Parameter Button
+
+This is similar to the Collapsible button but is a different class used specifically for the parameters of the Interject functions:
+
+![](/images/Contributing/ParameterButton.png)
+<br>
+
+The code:
+
+```
+<button class="collapsible-parameter">**Button Title**<br>The text to display</button>
+<div markdown="1" class="panel-parameter">
+
+</div>
+```
+
+### Highlight Note
+
+Highlight notes are used to highlight special parenthetical messages but with important significance:
+
+![](/images/Contributing/HighlightNote.png)
+<br>
+
+The code for the highlightnote:
+
+```
+<blockquote class=highlightnote>
+<br><b>Note:</b> Text to display<br><br>
+</blockquote>
+```
+
+### Lab Note
+
+A lab note is used for key information to direct the user who is following the lab guide:
+
+![](/images/Contributing/LabNote.png)
+<br>
+
+The code:
+
+```
+<blockquote class=lab_info>
+ Text to display
+</blockquote>
+```
+
+###

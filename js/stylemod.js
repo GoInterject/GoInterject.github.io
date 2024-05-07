@@ -1,4 +1,6 @@
-
+/*
+This code sets up an event handler to open images in a zoomed view when they are clicked. 
+*/
 $(document).ready(function(){
 
     /* opens a image into a zoomed view for ease of viewing */
@@ -20,14 +22,6 @@ $(document).ready(function(){
             modal.onclick = function() {
                 modal.style.display = "none";
             }
-
-            // Get the <span> element that closes the modal
-            // var span = document.getElementsByClassName("close-modal")[0];
-            
-            // When the user clicks on <span> (x), close the modal
-            // span.onclick = function() { 
-            //     modal.style.display = "none";
-            // }
         };
     });
 });
