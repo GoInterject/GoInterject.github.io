@@ -41,11 +41,6 @@ description: Interject documentation search results
 		display: none; /* Hide the div by default */
 		text-align: right;
 	}
-	#advanced-search-options {
-    }
-	#custom-space {
-		display: none;
-	}
 		
 </style>
 

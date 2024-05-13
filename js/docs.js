@@ -1,14 +1,30 @@
+// ==============================================================
+// TOP LEVEL VARIABLES
+// ==============================================================
 // Right nav highlighting
 var sidebarObj = (document.getElementsByClassName("sidebar")[0]) ? document.getElementsByClassName("sidebar")[0] : document.getElementsByClassName("sidebar-home")[0]
 var sidebarBottom = sidebarObj.getBoundingClientRect().bottom;
 var footerTop = document.getElementsByClassName("footer")[0].getBoundingClientRect().top;
 var headerOffset = document.getElementsByClassName("container-fluid")[0].getBoundingClientRect().bottom;
 
-
 // ensure that the left nav visibly displays the current topic
 var current = document.getElementsByClassName("active currentPage");
 var body = document.getElementsByClassName("col-content content");
 
+var outputHorzTabs = new Array();
+var outputLetNav = new Array();
+var totalTopics = 0;
+var currentSection;
+var sectionToHighlight;
+
+var currentHeading = "";
+
+// ==============================================================
+// SCRIPT
+// ==============================================================
+// --------------------------------------------------------------
+// RIGHT SIDE BAR
+// --------------------------------------------------------------
 if (current[0]) {
     if (sidebarObj) {
       current[0].scrollIntoView(true);
@@ -20,36 +36,243 @@ if (current[0]) {
     }
   }
 
+$(window).scroll(function(){
+  var headingPositions = new Array();
+  $("h1, h2, h3, h4, h5, h6").each(function(){
+    if (this.id == "") this.id="title";
+    headingPositions[this.id]=this.getBoundingClientRect().top;
+  });
+  headingPositions.sort();
+  // the headings have all been grabbed and sorted in order of their scroll
+  // position (from the top of the page). First one is toppermost.
+  for(var key in headingPositions)
+  {
+    if (headingPositions[key] > 0 && headingPositions[key] < 200)
+    {
+      if (currentHeading != key)
+      {
+        // a new heading has scrolled to within 200px of the top of the page.
+        // highlight the right-nav entry and de-highlight the others.
+        highlightRightNav(key);
+        currentHeading = key;
+      }
+      break;
+    }
+  }
+});
+
+// --------------------------------------------------------------
+// TOGGLE MENU
+// --------------------------------------------------------------
+$("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $(".wrapper").toggleClass("right-open");
+        $(".col-toc").toggleClass("col-toc-hidden");
+    });
+$("#menu-toggle-left").click(function(e) {
+        e.preventDefault();
+        $(".col-nav").toggleClass("col-toc-hidden");
+    });
+$(".navbar-toggle").click(function(){
+  $("#sidebar-nav").each(function(){
+    $(this).toggleClass("hidden-sm");
+    $(this).toggleClass("hidden-xs");
+  });
+});
+
+var navHeight = $('.navbar').outerHeight(true) + 80;
+
+$(document.body).scrollspy({
+	target: '#leftCol',
+	offset: navHeight
+});
+
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  // $( ".toc-nav a" ).addClass( "active" );
+  $(".toc-nav a").on('click', function(event) {
+    // $(this).addClass('active');
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+      loadHash(hash);
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+
+    } // End if
+  });
+  if (window.location.hash) loadHash(window.location.hash);
+});
+
+$(document).ready(function(){
+  $(".sidebar").Stickyfill();
+
+  // Add smooth scrolling to all links
+  $(".nav-sidebar ul li a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top-80
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+
+// Make dropdown show on hover
+$('ul.nav li.dropdown').hover(function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+}, function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+});
+
+// Temp hack for side menu
+$('.nav-sidebar ul li a').click(function() {
+    $(this).addClass('collapse').siblings().toggleClass('in');
+});
+
+if($('.nav-sidebar ul a.active').length != 0)
+{
+  $('.nav-sidebar ul').click(function() {
+      $(this).addClass('collapse in').siblings;
+  });
+}
+
+// --------------------------------------------------------------
+// COMPONENTS
+// --------------------------------------------------------------
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+// Enable glossary link popovers
+$('.glossLink').popover();
+
+// sync tabs with the same data-group
+window.onload = function() {
+  $('.nav-tabs > li > a').click(function(e) {
+    var group = $(this).attr('data-group');
+    $('.nav-tabs > li > a[data-group="'+ group +'"]').tab('show');
+  })
+  $('.ctrl-right .btn-group').css("visibility","visible");
+};
+
+// ==============================================================
+// FUNCTIONS
+// ==============================================================
 function addMyClass(classToAdd) {
   var classString = this.className; // returns the string of all the classes for myDiv
    // Adds the class "main__section" to the string (notice the leading space)
   this.className = newClass; // sets className to the new string
 }
 
-function navClicked(sourceLink)
+// --------------------------------------------------------------
+// RIGHT SIDE BAR
+// --------------------------------------------------------------
+// Highlights the heading in the right side bar that the current scroll 
+// position is on in the document page
+function highlightRightNav(heading)
 {
-  var classString = document.getElementById('#item' + sourceLink).className;
-  if (classString.indexOf(' in') > -1)
-  {
-    //collapse
-    var newClass = classString.replace(' in','');
-    document.getElementById('#item' + sourceLink).className = newClass;
-  } else {
-    //expand
-    var newClass = classString.concat(' in');
-    document.getElementById('#item' + sourceLink).className = newClass;
+  if (document.location.pathname.indexOf("/glossary/")<0){
+    if (heading == "title")
+    {
+      history.replaceState({},"Top of page on " + document.location.pathname,document.location.protocol +"//"+ document.location.hostname + (location.port ? ':'+location.port: '') + document.location.pathname);
+      $("#my_toc a").each(function(){
+        $(this).removeClass("active");
+      });
+      $("#sidebar-wrapper").animate({
+        scrollTop: 0
+      },800);
+    } else {
+      var targetAnchorHREF = document.location.protocol +"//"+ document.location.hostname + (location.port ? ':'+location.port: '') + document.location.pathname + "#" + heading;
+      // make sure we aren't filtering out that heading level
+      var noFilterFound = false;
+      $("#my_toc a").each(function(){
+        if (this.href==targetAnchorHREF) {
+          noFilterFound = true;
+        }
+      });
+      // now, highlight that heading
+      if (noFilterFound)
+      {
+        $("#my_toc a").each(function(){
+          //console.log("right-nav",this.href);
+          if (this.href==targetAnchorHREF)
+          {
+            history.replaceState({},this.innerText,targetAnchorHREF);
+            $(this).addClass("active");
+            var sidebarOffset = (sidebarBottom > 200) ? 200 : headerOffset - 20;
+            $("#sidebar-wrapper").animate({
+              scrollTop: $("#sidebar-wrapper").scrollTop() + $(this).position().top - sidebarOffset
+            },100);
+            //document.getElementById("sidebar-wrapper").scrollTop = this.getBoundingClientRect().top - 200;
+          } else {
+            $(this).removeClass("active");
+          }
+        });
+      }
+    }
   }
-
 }
 
-var outputHorzTabs = new Array();
-var outputLetNav = new Array();
-var totalTopics = 0;
-var currentSection;
-var sectionToHighlight;
+// --------------------------------------------------------------
+  // Using jQuery's animate() method to add smooth page scroll
+  function loadHash(hashObj)
+{
+  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+  $('html, body').animate({
+    scrollTop: $(hashObj).offset().top-80
+  }, 800);
+}
 
+// --------------------------------------------------------------
+// TAB DISPLAYED IN CUSTOM SEARCH
+// --------------------------------------------------------------
+// Traverses through all the table of content files looking for the tab 
+// that the page is contained in
+// The docstoc variables are declared in toc.js
+function findTheTabForThisPage(page) {
+  var foundThisTab = ""
+  foundThisTab = findTheTabInThisNode(docstocMain, page)
+  if (foundThisTab !== "") {
+    return foundThisTab
+  }
+  foundThisTab = findTheTabInThisNode(docstocFinancials, page)
+  if (foundThisTab !== "") {
+    return foundThisTab
+  }
+  foundThisTab = findTheTabInThisNode(docstocTraining, page)
+  if (foundThisTab !== "") {
+    return foundThisTab
+  }
+  foundThisTab = findTheTabInThisNode(docstocWIP, page)
+  if (foundThisTab !== "") {
+    return foundThisTab
+  }
+return foundThisTab
+}
+
+// --------------------------------------------------------------
 // Traverses this tree/branch looking for the page, returns the tab it is found in
 function findTheTabInThisTree(tree, page, currentTab) {
+  // Recursive function
   function processBranch(branch){
     // check sub pages in section
     for (var k=0;k<branch.length;k++){
@@ -78,6 +301,7 @@ function findTheTabInThisTree(tree, page, currentTab) {
     return foundTab;
 }
 
+// --------------------------------------------------------------
 // Traverses the root node of this toc looking for the page, returns the tab it is found in
 function findTheTabInThisNode(rootnode, page){
   var myTab = ""
@@ -97,30 +321,29 @@ function findTheTabInThisNode(rootnode, page){
   return myTab
 }
 
-// Traverses through all the table of content files looking for the tab that the page is contained in
-// The docstoc variables are declared in toc.js
-function findTheTabForThisPage(page) {
-  var foundThisTab = ""
-  foundThisTab = findTheTabInThisNode(docstocMain, page)
-  if (foundThisTab !== "") {
-    return foundThisTab
+// --------------------------------------------------------------
+// LEFT NAVIGATION MENU
+// --------------------------------------------------------------
+// Handles click action of a navigation item
+function navClicked(sourceLink)
+{
+  var classString = document.getElementById('#item' + sourceLink).className;
+  if (classString.indexOf(' in') > -1)
+  {
+    //collapse
+    var newClass = classString.replace(' in','');
+    document.getElementById('#item' + sourceLink).className = newClass;
+  } else {
+    //expand
+    var newClass = classString.concat(' in');
+    document.getElementById('#item' + sourceLink).className = newClass;
   }
-  foundThisTab = findTheTabInThisNode(docstocFinancials, page)
-  if (foundThisTab !== "") {
-    return foundThisTab
-  }
-  foundThisTab = findTheTabInThisNode(docstocTraining, page)
-  if (foundThisTab !== "") {
-    return foundThisTab
-  }
-  foundThisTab = findTheTabInThisNode(docstocWIP, page)
-  if (foundThisTab !== "") {
-    return foundThisTab
-  }
-return foundThisTab
 }
 
+// --------------------------------------------------------------
+// Traverses the toc tree looking for the current item
 function findMyTopic(tree){
+  // Recursive function
   function processBranch(branch){
 
     // check sub pages in section
@@ -154,6 +377,8 @@ function findMyTopic(tree){
   return thisIsIt;
 }
 
+// --------------------------------------------------------------
+// Walks through the toc json tree and builds a html toc contents
 function walkTree(tree)
 {
   for (var j=0;j<tree.length;j++)
@@ -232,20 +457,23 @@ function walkTree(tree)
   }
 }
 
+// --------------------------------------------------------------
+// Builds the left side vertical navigation toc and the 
+// top horizontal navigation for the page
 function renderNav(docstoc) {
   for (i=0;i<docstoc.horizontalnav.length;i++)
   {
     if (docstoc.horizontalnav[i].node != "glossary")
     {
       currentSection = docstoc.horizontalnav[i].node;
-      // build vertical nav
+      // Build vertical navigation
       var itsHere = findMyTopic(docstoc[docstoc.horizontalnav[i].node]);
       if (itsHere || docstoc.horizontalnav[i].path == pageURL)
       {
         walkTree(docstoc[docstoc.horizontalnav[i].node]);
       }
     }
-    // build horizontal nav
+    // Build Horizontal navigation
     outputHorzTabs.push('<li id="' + docstoc.horizontalnav[i].node + '"');
     if (docstoc.horizontalnav[i].path==pageURL || docstoc.horizontalnav[i].node==sectionToHighlight)
     {
@@ -255,8 +483,7 @@ function renderNav(docstoc) {
   }
   if (outputLetNav.length==0)
   {
-    //console.log("outputletnav is length zero");
-    // didn't find the current topic in the standard TOC; maybe it's a collection;
+    // Didn't find the current topic in the standard TOC; maybe it's a collection;
     for (var key in collectionsTOC)
     {
       var itsHere = findMyTopic(collectionsTOC[key]);
@@ -278,244 +505,40 @@ function renderNav(docstoc) {
   document.getElementById('jsTOCLeftNav').innerHTML = outputLetNav.join('');
 }
 
-function highlightRightNav(heading)
-{
-  if (document.location.pathname.indexOf("/glossary/")<0){
-    //console.log("highlightRightNav called on",document.location.pathname)
-    if (heading == "title")
-    {
-      history.replaceState({},"Top of page on " + document.location.pathname,document.location.protocol +"//"+ document.location.hostname + (location.port ? ':'+location.port: '') + document.location.pathname);
-      $("#my_toc a").each(function(){
-        $(this).removeClass("active");
-      });
-      $("#sidebar-wrapper").animate({
-        scrollTop: 0
-      },800);
-    } else {
-      var targetAnchorHREF = document.location.protocol +"//"+ document.location.hostname + (location.port ? ':'+location.port: '') + document.location.pathname + "#" + heading;
-      // make sure we aren't filtering out that heading level
-      var noFilterFound = false;
-      $("#my_toc a").each(function(){
-        if (this.href==targetAnchorHREF) {
-          noFilterFound = true;
-        }
-      });
-      // now, highlight that heading
-      if (noFilterFound)
-      {
-        $("#my_toc a").each(function(){
-          //console.log("right-nav",this.href);
-          if (this.href==targetAnchorHREF)
-          {
-            history.replaceState({},this.innerText,targetAnchorHREF);
-            $(this).addClass("active");
-            var sidebarOffset = (sidebarBottom > 200) ? 200 : headerOffset - 20;
-            $("#sidebar-wrapper").animate({
-              scrollTop: $("#sidebar-wrapper").scrollTop() + $(this).position().top - sidebarOffset
-            },100);
-            //document.getElementById("sidebar-wrapper").scrollTop = this.getBoundingClientRect().top - 200;
-          } else {
-            $(this).removeClass("active");
-          }
-        });
-      }
-    }
+// --------------------------------------------------------------
+// COOKIES
+// --------------------------------------------------------------
+// This function creates a new cookie with the specified name, value, and expiration days.
+function createCookie(name, value, days) {
+  var expires = "";
+  if (days) {
+      var date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      expires = "; expires=" + date.toUTCString();
   }
-}
-var currentHeading = "";
-$(window).scroll(function(){
-  var headingPositions = new Array();
-  $("h1, h2, h3, h4, h5, h6").each(function(){
-    if (this.id == "") this.id="title";
-    headingPositions[this.id]=this.getBoundingClientRect().top;
-  });
-  headingPositions.sort();
-  // the headings have all been grabbed and sorted in order of their scroll
-  // position (from the top of the page). First one is toppermost.
-  for(var key in headingPositions)
-  {
-    if (headingPositions[key] > 0 && headingPositions[key] < 200)
-    {
-      if (currentHeading != key)
-      {
-        // a new heading has scrolled to within 200px of the top of the page.
-        // highlight the right-nav entry and de-highlight the others.
-        highlightRightNav(key);
-        currentHeading = key;
-      }
-      break;
-    }
-  }
-});
-
-
-// Cookie functions
-function createCookie(name,value,days) {
-    var expires = "";
-    if (days) {
-        var date = new Date();
-        date.setTime(date.getTime() + (days*24*60*60*1000));
-        expires = "; expires=" + date.toUTCString();
-    }
-    document.cookie = name + "=" + value + expires + "; path=/";
+  // Set the cookie with the provided name, value, expiration, and path
+  document.cookie = name + "=" + value + expires + "; path=/";
 }
 
+// --------------------------------------------------------------
+// This function reads the value of the cookie with the specified name.
 function readCookie(name) {
-    var nameEQ = name + "=";
-    var ca = document.cookie.split(';');
-    for(var i=0;i < ca.length;i++) {
-        var c = ca[i];
-        while (c.charAt(0)==' ') c = c.substring(1,c.length);
-        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-    }
-    return null;
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(';');
+  for (var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      // Trim any leading whitespace from the cookie string
+      while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+      // If the cookie name matches, return the cookie value
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+  }
+  // If the cookie is not found, return null
+  return null;
 }
 
+// --------------------------------------------------------------
+// This function erases (deletes) the cookie with the specified name.
 function eraseCookie(name) {
-    createCookie(name,"",-1);
+  // Call createCookie function with an expiration date in the past to delete the cookie
+  createCookie(name, "", -1);
 }
-
-/*
- *
- * toggle menu *********************************************************************
- *
- */
-
-$("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $(".wrapper").toggleClass("right-open");
-        $(".col-toc").toggleClass("col-toc-hidden");
-    });
-$("#menu-toggle-left").click(function(e) {
-        e.preventDefault();
-        $(".col-nav").toggleClass("col-toc-hidden");
-    });
-$(".navbar-toggle").click(function(){
-  $("#sidebar-nav").each(function(){
-    $(this).toggleClass("hidden-sm");
-    $(this).toggleClass("hidden-xs");
-  });
-});
-
-var navHeight = $('.navbar').outerHeight(true) + 80;
-
-$(document.body).scrollspy({
-	target: '#leftCol',
-	offset: navHeight
-});
-
-function loadHash(hashObj)
-{
-  // Using jQuery's animate() method to add smooth page scroll
-  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-  $('html, body').animate({
-    scrollTop: $(hashObj).offset().top-80
-  }, 800);
-}
-
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  // $( ".toc-nav a" ).addClass( "active" );
-  $(".toc-nav a").on('click', function(event) {
-    // $(this).addClass('active');
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-      loadHash(hash);
-
-      // Add hash (#) to URL when done scrolling (default click behavior)
-      window.location.hash = hash;
-
-    } // End if
-  });
-  if (window.location.hash) loadHash(window.location.hash);
-});
-
-
-$(document).ready(function(){
-  $(".sidebar").Stickyfill();
-
-  // Add smooth scrolling to all links
-  $(".nav-sidebar ul li a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top-80
-      }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-
-
-/*
- *
- * make dropdown show on hover *********************************************************************
- *
- */
-
-$('ul.nav li.dropdown').hover(function() {
-  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
-}, function() {
-  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
-});
-
-
-
-/*
- *
- * TEMP HACK For side menu*********************************************************************
- *
- */
-
-$('.nav-sidebar ul li a').click(function() {
-    $(this).addClass('collapse').siblings().toggleClass('in');
-});
-
-if($('.nav-sidebar ul a.active').length != 0)
-{
-  $('.nav-sidebar ul').click(function() {
-      $(this).addClass('collapse in').siblings;
-  });
-}
-
-
-/*
- *
- * Components *********************************************************************
- *
- */
-
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
-
-// Enable glossary link popovers
-$('.glossLink').popover();
-
-// sync tabs with the same data-group
-window.onload = function() {
-  $('.nav-tabs > li > a').click(function(e) {
-    var group = $(this).attr('data-group');
-    $('.nav-tabs > li > a[data-group="'+ group +'"]').tab('show');
-  })
-  $('.ctrl-right .btn-group').css("visibility","visible");
-};
-
-

@@ -33,6 +33,8 @@ sitemaps: false
 <div id="glossaryMatch"></div>
 
 {% comment %}
+This page is currently not used, been replaced with a custom search
+
 This block of code retrieves the search hits via the Google Programmable Search Engine API
 To make changes in the way the Search engine performs or looks, log in to the control panel at:
 https://programmablesearchengine.google.com/controlpanel/all

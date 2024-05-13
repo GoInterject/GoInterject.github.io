@@ -1,11 +1,16 @@
 ---
 layout: null
 ---
-
+/*
+The table of contents (toc) will be different depending on which site version is displayed
+Sets the variable docstoc according to which site version is displayed by analyzing the URL
+Then renders the toc
+*/
 // check the url of the webpage sitePath is defined in head of custom.html
 // define the nav container variable
 var docstoc
 
+// These variables read the toc from the yaml files and convert it to json
 var docstocTesting = {{ site.data.testingtoc.testingtoc | jsonify }};
 var docstocMain = {{ site.data.toc | jsonify }};
 var docstocFinancials = {{ site.data.apptoc.financial | jsonify }};
