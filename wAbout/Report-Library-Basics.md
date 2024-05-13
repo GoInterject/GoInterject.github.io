@@ -19,17 +19,12 @@ The Report Library is a way for your team to share reports from a central locati
 
 Once Interject is installed, an Interject Ribbon will be added to Excel.
 
-**Step 1:** To start, open the Interject ribbon menu.
+**Step 1:** To start, click the Interject Ribbon menu and open the Report Library. Click the icon or use the keystroke Ctrl+Shift+L on the keyboard.
 
-![](/images/ReportLibraryBasics/1.01GettingtoRL-InterjectTab.png)
+![](/images/ReportLibraryBasics/Ribbon.png)
 <br>
 
-**Step 2:** The Report Library is located on the far left of the ribbon. Click the icon or use the keystroke Ctrl+Shift+L on the keyboard.
-
-![](/images/ReportLibraryBasics/1.02GettingtoRL-ClickRL.png)
-<br>
-
-**Step 3:** The Report Library consists of folders and sub-folders, just like a typical folder hierarchy (max three levels deep for simplicity).
+**Step 2:** The Report Library consists of folders and sub-folders, just like a typical folder hierarchy (max three levels deep for simplicity).
 
 ![](/images/ReportLibraryBasics/ReportLibrary.png)
 <br>
