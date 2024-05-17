@@ -1,4 +1,7 @@
-
+/*
+This script is for expanding and collapsing buttons/sections
+These classes are expanded by default
+*/
 $(document).ready(function(){	
 	/* 
 	Expands and collapses sections for streamlining documentation upon clicking the expand/collapse event button.
@@ -30,7 +33,6 @@ $(document).ready(function(){
 				// go to next sibling and restart loop
 				panel = panel.nextElementSibling;
 			}
-			//console.log('hello')
 		});
 	
 	}

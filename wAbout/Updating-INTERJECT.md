@@ -23,24 +23,19 @@ Here is a brief video on Updating Interject, followed by a more detailed walkthr
 
 ### Updating to the Newest Version of Interject
 
-**Step 1:** In order to update Interject, you will need to close Excel. So save anything open in Excel now.
-
-![](/images/Updating/01.png)
-<br>
-
-**Step 2:** Once everything is saved, and you are logged in, click the [**Check for Updates**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#check-for-updates) button in the Interject ribbon. You cannot check for updates until you are logged in.
+**Step 1:** After you [log in](/wAbout/Logging-In.html), click the [**Check for Updates**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#check-for-updates) button in the Interject ribbon. You cannot check for updates until you are logged in.
 
 ![](/images/Updating/02.png)
 <br>
 
-**Step 3:** A popup will appear with information about the computer's current, as well as the latest available Interject Version. If Interject has a critical update, there may also be an **Install By** date. If that is the case you must install the update as soon as possible. Click **Get Update** to get the new version. It should only take a moment.
+**Step 2:** A popup will appear with information about the computer's current, as well as the latest available Interject Version. If Interject has a critical update, there may also be an **Install By** date. If that is the case you must install the update as soon as possible. Click **Get Update** to get the new version. It should only take a moment.
 
 ![](/images/Updating/03.png)
 <br>
 
 **Note:** If this popup appears at any point without having clicked the **Check for Updates** button, it means that Interject has released an important update. Interject will not lock up into updating at any time, so its okay to postpone it momentarily, but its recommended that you update at the earliest convenience.
 
-**Step 4:** After clicking **Get Update**, the Interject Excel Add-in Setup will pop up. Interject requires Excel to be closed to update. Click the exit button to close excel.
+**Step 3:** After clicking **Get Update**, the Interject Excel Add-in Setup will pop up. Interject requires Excel to be closed to update. Click the exit button to close excel.
 
 ![](/images/Updating/04.png)
 <br>
@@ -60,7 +55,7 @@ Once your files are saved and closed, click **Next** to continue in the Install 
 ![](/images/Updating/06.png)
 <br>
 
-**Step 5:** Two options will be available when installing on Windows Server.
+**Step 4:** Two options will be available when installing on Windows Server.
 
 1. Install as 'per-user' (current user)
 2. Install as 'per-machine' (everybody)
@@ -70,22 +65,22 @@ To install for current user on the server, make sure the **Only for me** button 
 ![](/images/Updating/06b.png)
 <br>
 
-**Step 6:** Next, you will need to read and accept the License Agreement and click **Next** to continue.
+**Step 5:** Next, you will need to read and accept the License Agreement and click **Next** to continue.
 
  ![](/images/Updating/07.png)
 <br>
 
-**Step 7:** Choose where to install Interject.
+**Step 6:** Choose where to install Interject.
 
 ![](/images/Updating/08.png)
 <br>
 
-**Step 8:** Now click **Install** to begin the installation.
+**Step 7:** Now click **Install** to begin the installation.
 
 ![](/images/Updating/09.png)
 <br>
 
-**Step 9:** Click **Finish** to close the installer, and you're done!
+**Step 8:** Click **Finish** to close the installer, and you're done!
 
 ![](/images/Updating/10.png)
 <br>
