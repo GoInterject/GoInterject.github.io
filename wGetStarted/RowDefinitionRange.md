@@ -46,6 +46,11 @@ Notice this report is a Variable Report with the RowDef Items defined in column 
 ![](/images/RowDefinitionRange/PLTrendRowDefItems.png)
 <br>
 
+This is one example of a report that uses a single column for the RowDef Items. To display different locations for each account, each district has its own column:
+
+![](/images/RowDefinitionRange/MultipleColumns.png)
+<br>
+
 
 
 - Show Single district on one column
