@@ -1,3 +1,6 @@
+---
+layout: null
+---
 // This script generates a JavaScript array containing information about each page in the Jekyll site.
 // The page data includes URL, title, filename, links, image directory, images, description, keywords, and headings.
 
