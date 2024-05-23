@@ -130,3 +130,11 @@ Hit **Next** once the location is selected.
  <a href="https://docs.gointerject.com/wAbout/Logging-In.html"><h2>Continue Here for Login Information</h2></a>
 
 If you run into any issues, email us at [help@gointerject.com](mailto:help@gointerject.com).
+
+### File Locations
+
+The following are the file locations for Interject for Windows Server installs:
+
+- Application: C:\Program Files (x86)\Interject\
+- File Cache: AppData\local\Interject
+- Config & Auth: AppData\roaming\Interject

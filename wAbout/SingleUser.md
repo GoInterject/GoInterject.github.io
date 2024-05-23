@@ -92,3 +92,11 @@ To install for current user on the server, make sure the **Only for me** button 
 [Continue Here For Login Information](/wAbout/Logging-In.html#before-using-interject-heres-how-to-login)
 
 If you run into any issues, email us at [help@gointerject.com](mailto:help@gointerject.com).
+
+### File Locations
+
+The following are the file locations for Interject for a single user:
+
+- Application: AppData\local\Interject
+- File Cache: AppData\local\Interject
+- Config & Auth: AppData\roaming\Interject
