@@ -127,13 +127,14 @@ Hit **Next** once the location is selected.
 ![](/images/SharedComputer/40.png)
 <br>
 
- <a href="https://docs.gointerject.com/wAbout/Logging-In.html"><h2>Continue Here for Login Information</h2></a>
+
+[Click here for login information](/wAbout/Logging-In.html)
 
 If you run into any issues, email us at [help@gointerject.com](mailto:help@gointerject.com).
 
 ### File Locations
 
-The following are the file locations for Interject for Windows Server installs:
+The following are the file locations for Interject for a Windows Server install:
 
 - Application: C:\Program Files (x86)\Interject\
 - File Cache: AppData\local\Interject

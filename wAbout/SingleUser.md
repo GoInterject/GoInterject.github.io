@@ -89,13 +89,13 @@ To install for current user on the server, make sure the **Only for me** button 
 
 ![](/images/SingleUser/13.png)
 
-[Continue Here For Login Information](/wAbout/Logging-In.html#before-using-interject-heres-how-to-login)
+[Click here for login information](/wAbout/Logging-In.html)
 
 If you run into any issues, email us at [help@gointerject.com](mailto:help@gointerject.com).
 
 ### File Locations
 
-The following are the file locations for Interject for a single user:
+The following are the file locations for Interject for a single user install:
 
 - Application: AppData\local\Interject
 - File Cache: AppData\local\Interject
