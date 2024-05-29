@@ -7,8 +7,8 @@ headings: ["Overview", ""]
 links: ["/wPortal/INTERJECT-Roles.html"]
 image_dir: "FolderPermissions"
 images: [
-    {file: "", type: "png", site: "Portal", cat: "", sub: "", report: "", ribbon: "", config: ""},
-
+    {file: "FolderPermissionsPage", type: "png", site: "Portal", cat: "Folder permissions", sub: "", report: "", ribbon: "", config: ""},
+    {file: "FolderCustomRole", type: "png", site: "Portal", cat: "Folder permissions", sub: "", report: "", ribbon: "", config: ""}
 ]
 description: 
 ---
@@ -16,6 +16,12 @@ description:
 
 ## Overview
 
-The Folder Permissions page allows you to assign roles to folders in the Report Library.
+The Folder Permissions page allows you to assign roles to folders in the Report Library. The role count shows how many roles have been assigned to that particular folder. Folders with roles assigned to it are only viewable by those roles. If no roles have been assigned to the folder, then the they are viewable to all roles.
 
+![](/images/FolderPermissions/FolderPermissionsPage.png)
+<br>
 
+[Custom roles](/wPortal/Roles.md#custom-roles) can be used in conjunction with folder permissions to give a folder viewable rights only to a selected users.
+
+![](/images/FolderPermissions/FolderCustomRole.png)
+<br>
