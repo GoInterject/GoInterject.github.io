@@ -83,8 +83,10 @@ else if (query.length < 2) {
 // Fetch and display the results
 else if (currentPageUrl.includes("custom_search")){
 	if(topHits === 'true') {
+    console.log("top hits is true: displaying top hits")
 		fetchAndDisplayTopHitsResults();
 	}
+  console.log("displaying all results")
 	fetchAndDisplayResults();
 }
 
