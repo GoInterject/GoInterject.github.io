@@ -4,7 +4,7 @@ filename: "Roles.md"
 layout: custom
 keywords: []
 headings: ["Overview", "Custom Roles"]
-links: ["/wPortal/INTERJECT-Roles.html"]
+links: ["/wPortal/INTERJECT-Roles.html", "/wPortal/FolderPermissions.html"]
 image_dir: "Roles"
 images: [
 {file: "Roles", type: "png", site: "Portal", cat: "Roles", sub: "", report: "", ribbon: "", config: ""},
@@ -16,7 +16,7 @@ images: [
 description: The Roles page allows you to manage Interject Roles by assigning them to the users in your organization. You can also view how many user's currently have a role assigned. You can also add custom roles.
 ---
 * * *
-
+ 
 ## Overview
 
 The Roles page allows you to manage [Interject Roles](/wPortal/INTERJECT-Roles.html) by assigning them to the users in your organization. You can also view how many user's currently have a role assigned. You can also add custom roles.
@@ -26,7 +26,7 @@ The Roles page allows you to manage [Interject Roles](/wPortal/INTERJECT-Roles.h
 
 ### Custom Roles
 
-Custom roles give you greater flexibility in controlling folder access in the Report Library.
+Custom roles relate to [Folder Permissions](/wPortal/FolderPermissions.html) and give you greater flexibility in controlling folder access in the Report Library. 
 
 **Step 1:** Click on the **Create New Role** button:
 
