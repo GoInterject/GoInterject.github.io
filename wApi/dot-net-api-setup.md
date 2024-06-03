@@ -161,7 +161,7 @@ The Application Pools can be viewed by selecting it in the left hand explorer. V
 
 ### Setting Security Permissions
 
-Depending on your use case, you may need to give the App Pool "modify" permissions.
+Depending on your use case, you may need to give the App Pool "modify" permissions. According to the least privilege principle, this is only advisable when necessary, for example for logging purposes or to allow file uploads.
 
 **Step 1:** Right click the website and select "Edit Permissions..."
 
