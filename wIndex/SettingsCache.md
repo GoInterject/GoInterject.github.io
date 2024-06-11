@@ -1,14 +1,19 @@
 ---
-title: Interject Settings & Cache
+title: Interject Settings and Cache
 filename: "SettingsCache.md"
 layout: custom
 keywords: [Diagnostics, Tools, Settings, Configurations, Config]
-headings: ["Overview"]
-links: []
+headings: ["Overview", "Opening the Folders", "Resetting Settings and Cache"]
+links: ["/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#advanced-menu-items"]
 image_dir: "SettingsCache"
 images: [
-    {file: "Ribbon", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
-description: 
+    {file: "DiagnosticsRibbon", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
+    {file: "Diagnostics", type: "png", site: "Addin", cat: "Diagnostics", sub: "Open User Folders", report: "", ribbon: "", config: ""}, 
+    {file: "ResetFileCache", type: "png", site: "Addin", cat: "Diagnostics", sub: "Reset File Cache", report: "", ribbon: "", config: ""}, 
+    {file: "ResetSettingsCache", type: "png", site: "Addin", cat: "Diagnostics", sub: "Reset Settings Cache", report: "", ribbon: "", config: ""},
+    {file: "ResetSettingsCacheAllUsers", type: "png", site: "Addin", cat: "Diagnostics", sub: "Reset Settings Cache - All Users", report: "", ribbon: "", config: ""}
+    ]
+description: Interject keeps multiple folders on your local drive for settings and a file cache. These folders help facilitate logging in, better performance, and functionality.
 ---
 * * * 
 
@@ -35,10 +40,10 @@ Interject keeps multiple folders on your local drive for settings and a file cac
 
 You can open these folders easily by clicking on **Diagnostics** on the [Advanced Interject ribbon](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#advanced-menu-items), select **Open User Folders** and then click **Execute Selected Action**.
 
-![](/images/Federated-Login-Design/DiagnosticsRibbon.png)
+![](/images/SettingsCache/DiagnosticsRibbon.png)
 <br>
 
-![](/images/Federated-Login-Design/Diagnostics.png)
+![](/images/SettingsCache/Diagnostics.png)
 <br>
 
 ### Resetting Settings and Cache
@@ -47,7 +52,7 @@ The Diagnostics window has a number of options to reset the local settings and f
 
 The "Reset File Cache" options will remove all locally cached files:
 
-![](/images/SettingsCache/Reset%20File%20Cache.png)
+![](/images/SettingsCache/ResetFileCache.png)
 <br>
 
 The "Reset Settings Cache" option in the Public section that will reset the settings cache files:
