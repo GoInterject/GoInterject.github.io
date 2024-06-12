@@ -13,13 +13,13 @@ images: [
 {file: "EditDelete", type: "png", site: "Portal", cat: "Roles", sub: "", report: "", ribbon: "", config: ""},
 {file: "AssignRole", type: "png", site: "Portal", cat: "Roles", sub: "", report: "", ribbon: "", config: ""},
 ]
-description: The Roles page allows you to manage Interject Roles by assigning them to the users in your organization. You can also view how many user's currently have a role assigned. You can also add custom roles.
+description: The Roles page allows you to manage Interject Roles by assigning them to the users in your organization. You can also view how many users currently have a role assigned. You can also add custom roles.
 ---
 * * *
  
 ## Overview
 
-The Roles page allows you to manage [Interject Roles](/wPortal/INTERJECT-Roles.html) by assigning them to the users in your organization. You can also view how many user's currently have a role assigned. You can also add custom roles.
+The Roles page allows you to manage [Interject Roles](/wPortal/INTERJECT-Roles.html) by assigning them to the users in your organization. You can also view how many users currently have a role assigned. You can also add custom roles.
 
 ![](/images/Roles/Roles.png)
 <br>
@@ -40,7 +40,7 @@ Custom roles relate to [Folder Permissions](/wPortal/FolderPermissions.html) and
 After the role is created, you can edit it or delete it by clicking on the Actions icons.
 
 <blockquote class=highlight_note>
-<b>Note:</b> You can only delete custom roles and only if they are not assigned to any users.
+<b>Note:</b> You can only delete custom roles and only if they are not assigned to any users or folders.
 </blockquote>
 <br>
 
