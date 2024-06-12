@@ -370,7 +370,7 @@ Developer:
     path: /wDeveloper/SetupjDataPortal.html
   - title: Custom Items
     path: /wDeveloper/CustomItems.html
-- sectiontitle: Security &amp; Authentication
+- sectiontitle: Enterprise Capabilities
   path: /wAbout/TLS.html
   section:
   - title: TLS for HTTPS
@@ -387,6 +387,8 @@ Developer:
     path: /wAbout/Federated-Login-Design.html
   - title: Connection Manager
     path: /wDeveloper/ConnectionManager.html
+  - title: Internal Support Setup
+    path: /wDeveloper/InternalSupportSetup.html
 
 troubleshoot:
 - sectiontitle: Interject Support
