@@ -4,7 +4,7 @@ filename: "2024-06_ReleaseNotes.md"
 layout: custom
 keywords: [change log, updates, versions, history, what's new]
 headings: ["June 2024", "Excel Addin v2.5.1.1", "Portal Site", "Documentation Updates"]
-links: []
+links: ["/wAbout/SingleUser.html", "/wAbout/SharedComputer.html", "/wPortal/Roles.html", "/wPortal/FolderPermissions.html"]
 image_dir: ""
 images: []
 description: Release notes for this month's updates
@@ -41,5 +41,7 @@ _Released 6/6/24_
 
 | Date | Type | Page | Changes |
 |---|---|---|---|
-|  |  |  |  |
-|  |  |  |  |
+| 6/1 | Update | [Installing - Single User](/wAbout/SingleUser.html) | New Section |
+| 6/1 | Update | [Installing - Shared Computer](/wAbout/SharedComputer.html) | New Section |
+| 6/12 | New | [Roles](/wPortal/Roles.html) | New page |
+| 6/12 | New | [Folder Permissions](/wPortal/FolderPermissions.html) | New |
