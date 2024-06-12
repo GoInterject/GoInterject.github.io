@@ -21,7 +21,7 @@ _Released 6/4/24_
 
 - ✅ The main settings and login information are moved from the AppData local to AppData roaming so that when a user is in a shared environment with multiple possible windows instances they could log into, their Interject login and settings can roam between them. This will have little to no effect on single user computers as the roaming folder always exists and persists between logins.
 
-- ✅ Adds a hook to sanitize incoming logs for potentially sensitive data. Currently only looking for SSNs.
+- ✅ Adds a hook to sanitize incoming logs for potentially sensitive data that is included in parameters in error logs or database errors controlled by third party, not reports. Currently only looking for SSNs.
 
 - ✅ The logging feature gathers a minimal amount of data and sends it to the Platform API in batches of no more than 100 or if the last logged data was added more than 5 hours ago.
 
