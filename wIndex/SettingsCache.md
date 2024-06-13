@@ -10,8 +10,7 @@ images: [
     {file: "DiagnosticsRibbon", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
     {file: "Diagnostics", type: "png", site: "Addin", cat: "Diagnostics", sub: "Open User Folders", report: "", ribbon: "", config: ""}, 
     {file: "ResetFileCache", type: "png", site: "Addin", cat: "Diagnostics", sub: "Reset File Cache", report: "", ribbon: "", config: ""}, 
-    {file: "ResetSettingsCache", type: "png", site: "Addin", cat: "Diagnostics", sub: "Reset Settings Cache", report: "", ribbon: "", config: ""},
-    {file: "ResetSettingsCacheAllUsers", type: "png", site: "Addin", cat: "Diagnostics", sub: "Reset Settings Cache - All Users", report: "", ribbon: "", config: ""}
+    {file: "ResetSettingsCache", type: "png", site: "Addin", cat: "Diagnostics", sub: "Reset Settings Cache", report: "", ribbon: "", config: ""}
     ]
 description: Interject keeps multiple folders on your local drive for settings and a file cache. These folders help facilitate logging in, better performance, and functionality.
 ---
@@ -58,9 +57,4 @@ The "Reset File Cache" options will remove all locally cached files:
 The "Reset Settings Cache" option in the Public section that will reset the settings cache files:
 
 ![](/images/SettingsCache/ResetSettingsCache.png)
-<br>
-
-The "Reset Settings Cache - All Users" will force all users in the client's organization to reset their settings. This will happen the next time they log in.
-
-![](/images/SettingsCache/ResetSettingsCacheAllUsers.png)
 <br>

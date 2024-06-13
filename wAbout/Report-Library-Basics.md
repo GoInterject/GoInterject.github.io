@@ -21,8 +21,7 @@ images: [{file: "1.01GettingtoRL-InterjectTab", type: "png", site: "Addin", cat:
 {file: "SearchReportLinksWindowReports", type: "png", site: "Addin", cat: "Report Library", sub: "Search", report: "", ribbon: "", config: ""}, 
 {file: "SearchReportLinksWindowSearch", type: "png", site: "Addin", cat: "Report Library", sub: "Search", report: "", ribbon: "", config: ""}, 
 {file: "SearchReportLinksWindowGoto", type: "png", site: "Addin", cat: "Report Library", sub: "Search", report: "", ribbon: "", config: ""}, 
-{file: "SearchReportLinksWindowDownload", type: "png", site: "Addin", cat: "Report Library", sub: "Search", report: "", ribbon: "", config: ""},
-{file: "SearchReportLibrary", type: "png", site: "Addin", cat: "Diagnostics", sub: "Search the Report Library", report: "", ribbon:, "", config: ""}
+{file: "SearchReportLinksWindowDownload", type: "png", site: "Addin", cat: "Report Library", sub: "Search", report: "", ribbon: "", config: ""}
 ]
 description: The Report Library is a way for your team to share reports from a central location going beyond just a Sharepoint or a Shared Network Folder.The reports are uploaded to the library and can be accessed from any computer using Excel via Interject.
 ---
@@ -167,13 +166,6 @@ You may also download a .CSV file, which lists the ID, Report Path, Report Name,
 **Step 3:** Double-clicking on a link opens the report and keeps the Report Library open, while single-clicking the **Open Link** button will open the selected report and close Report Library
 
 For how to add or change files in the Report Library, please check out [Lab Create: Updating the Report Library](/wGetStarted/L-Create-UpdatingReportLibrary) .
-
-### Using the Diagnostics Form
-
-The Diagnostics form has an option to "Search the Report Library" under System Tools. Fill in the text you want to search for in the **Input** field and **Execute Selected Action** to get the results:
-
-![](/images/ReportLibraryBasics/SearchReportLibrary.png)
-<br>
 
 ## Related Links
 
