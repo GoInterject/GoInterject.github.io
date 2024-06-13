@@ -5,9 +5,14 @@ layout: custom
 keywords: [Diagnostics, Shortkey Changes, Configuration, Config, hotkey, keystrokes, shortcut, keyboard]
 headings: ["Overview", "Input Examples", "Defaults", "Multiple Input Example"]
 links: ["/wIndex/INTERJECT-Hotkey-Index.html#default-hotkey-index"]
-image_dir: "Diagnostics"
-images: [{file: "ChangeShortKey", type: "png", site: "Addin", cat: "Diagnostics", sub: "Change ShortKey", report: "", ribbon: "", config: ""}, {file: "ChangeShortKey", type: "png", site: "Addin", cat: "Diagnostics", sub: "Change ShortKey", report: "", ribbon: "", config: ""}, {file: "MultipleInputsShortKey", type: "png", site: "Addin", cat: "Diagnostics", sub: "Change ShortKey", report: "", ribbon: "", config: ""}, {file: "MultipleInputsShortKeyExecute", type: "png", site: "Addin", cat: "Diagnostics", sub: "Change ShortKey", report: "", ribbon: "", config: ""}]
-description: The "Change ShortKey" feature allows users to change the shortcut key for certain Interject actions.
+image_dir: "DiagnosticsShortKeys"
+images: [
+    {file: "ChangeShortKey", type: "png", site: "Addin", cat: "Diagnostics", sub: "Change ShortKey", report: "", ribbon: "", config: ""}, 
+    {file: "ChangeShortKey", type: "png", site: "Addin", cat: "Diagnostics", sub: "Change ShortKey", report: "", ribbon: "", config: ""}, 
+    {file: "MultipleInputsShortKey", type: "png", site: "Addin", cat: "Diagnostics", sub: "Change ShortKey", report: "", ribbon: "", config: ""}, 
+    {file: "MultipleInputsShortKeyExecute", type: "png", site: "Addin", cat: "Diagnostics", sub: "Change ShortKey", report: "", ribbon: "", config: ""}
+    ]
+description: The Change ShortKey feature allows users to change the shortcut key for certain Interject actions.
 ---
 * * *
 
@@ -15,7 +20,7 @@ description: The "Change ShortKey" feature allows users to change the shortcut k
 
 The "Change ShortKey" feature allows users to change the shortcut key for certain Interject actions.
 
-![](/images/Diagnostics/ChangeShortKey.png)
+![](/images/DiagnosticsShortKeys/ChangeShortKey.png)
 <br>
 
 These settings are found in the IdsSettings.xml file. For example, an entry in that file may have an entry such as:
@@ -45,7 +50,7 @@ Multiple inputs are allowed. For example, you can reassign multiple actions by l
 
 **Step 1:** Open the Diagnostics window and navigate to the "Change ShortKey" section:
 
-![](/images/Diagnostics/ChangeShortKey.png)
+![](/images/DiagnosticsShortKeys/ChangeShortKey.png)
 <br>
 
 **Step 2:** Input the following in the "Input" field:
@@ -57,12 +62,12 @@ DrillOnData=Ctrl+Shift+D
 Diagnostics=Ctrl+Shift+K
 ```
 
-![](/images/Diagnostics/MultipleInputsShortKey.png)
+![](/images/DiagnosticsShortKeys/MultipleInputsShortKey.png)
 <br>
 
 **Step 3:** Click on &lt;Execute Selected Action&gt;:
 
-![](/images/Diagnostics/MultipleInputsShortKeyExecute.png)
+![](/images/DiagnosticsShortKeys/MultipleInputsShortKeyExecute.png)
 <br>
 
 **Result:** Shortkey changes are enabled, Diagnostics command is set to Ctrl+Shift+K and DrillOnData command is set to Ctrl+Shift+D.
