@@ -8,7 +8,7 @@ links: []
 image_dir: "InternalSupportSetup"
 images: [
 {file: "SupportForm", type: "png", site: "Addin", cat: "Support", sub: "", report: "", ribbon: "", config: ""},
-{file: "InterjectFolder", type: "png", site: "Windows", cat: "Explorer", sub: "", report: "", ribbon: "", config: ""},
+{file: "OpenApplicationFolders", type: "png", site: "Addin", cat: "Diagnostics", sub: "Open Application Folders", report: "", ribbon: "", config: ""},
 {file: "OpenAppConfig", type: "png", site: "Windows", cat: "Explorer", sub: "", report: "", ribbon: "", config: ""},
 {file: "AddEntries", type: "png", site: "External", cat: "Notepad", sub: "", report: "", ribbon: "", config: ""},
 {file: "UserSupport", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""},
@@ -29,12 +29,13 @@ Interject provides a way to add your own internal support contact information to
 
 **Step 1:** Ensure Excel is not running.
 
-**Step 2:** Navigate to the program directory for Interject:
+**Step 2:** Navigate to the program directory for Interject. This can be easily done using the diagnostics command "Open Application Folder":
 
-![](/images/InternalSupportSetup/InterjectFolder.png)
+
+![](/images/InternalSupportSetup/OpenApplicationFolders.png)
 <br>
 
-**Step 3:** Open the `app.config` file with a text editor:
+**Step 3:** In the Interject program directory, open the `app.config` file with a text editor:
 
 ![](/images/InternalSupportSetup/OpenAppConfig.png)
 <br>
