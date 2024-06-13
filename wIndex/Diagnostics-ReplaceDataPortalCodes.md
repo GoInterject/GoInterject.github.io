@@ -2,16 +2,15 @@
 title: Diagnostics - Replace Data Portal Codes
 filename: "Diagnostics-ReplaceDataPortalCodes.md"
 layout: custom
-keywords: []
+keywords: [diagnostics, data portal codes]
 headings: ["Overview"]
 links: []
 image_dir: "DiagnosticsReplaceDataPortalCodes"
 images: [
-    {file: "ReplaceDataPortalCodes", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-    {file: "Results", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
+    {file: "ReplaceDataPortalCodes", type: "png", site: "Addin", cat: "Diagnostics", sub: "Replace Data Portal Codes", report: "", ribbon: "", config: ""}, 
+    {file: "Results", type: "png", site: "Addin", cat: "Diagnostics", sub: "Replace Data Portal Codes", report: "", ribbon: "", config: ""}
 ]
-]
-description: 
+description: The Diagnostics Replace Data Portal Codes command will replace all data portal codes in the current active workbook. This makes it handy to replace only the codes that are currently in Interject formulas and not elsewhere.
 ---
 * * *
 
