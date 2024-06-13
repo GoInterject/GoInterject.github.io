@@ -44,4 +44,7 @@ _Released 6/6/24_
 | 6/1 | Update | [Installing - Single User](/wAbout/SingleUser.html) | New Section |
 | 6/1 | Update | [Installing - Shared Computer](/wAbout/SharedComputer.html) | New Section |
 | 6/12 | New | [Roles](/wPortal/Roles.html) | New page |
-| 6/12 | New | [Folder Permissions](/wPortal/FolderPermissions.html) | New |
+| 6/12 | New | [Folder Permissions](/wPortal/FolderPermissions.html) | New Page |
+| 6/12 | Update | [Diagnostics](/wIndex/Diagnostics.html) | Updated links |
+| 6/12 | New | [Diagnostics - Find All Workbook Formulas](/wIndex/Diagnostics-FindAllFormulas.html) | New Page |
+| 6/12 | New | [Diagnostics - Replace Data Portal Codes](/wIndex/Diagnostics-ReplaceDataPortalCodes.html) | New Page |
