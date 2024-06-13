@@ -41,8 +41,8 @@ _Released 6/6/24_
 
 | Date | Type | Page | Changes |
 |---|---|---|---|
-| 6/1 | Update | [Installing - Single User](/wAbout/SingleUser.html) | New Section |
-| 6/1 | Update | [Installing - Shared Computer](/wAbout/SharedComputer.html) | New Section |
+| 6/1 | Update | [Installing - Single User](/wAbout/SingleUser.html#file-locations) | New Section |
+| 6/1 | Update | [Installing - Shared Computer](/wAbout/SharedComputer.html#file-locations) | New Section |
 | 6/12 | New | [Roles](/wPortal/Roles.html) | New page |
 | 6/12 | New | [Folder Permissions](/wPortal/FolderPermissions.html) | New Page |
 | 6/12 | Update | [Diagnostics](/wIndex/Diagnostics.html) | Updated links |
