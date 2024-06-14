@@ -44,7 +44,7 @@ If the first input is "text_all", the results will be the same as "text_formula"
 
 ### SQL Query
 
-The "sql_query" will display SQL code that displays the formula information in a table form:
+The "sql_query" will display SQL code that you can execute to display the formula information in a table form:
 
 ![](/images/DiagnosticsFindAllFormulas/SQLQuery.png)
 <br>

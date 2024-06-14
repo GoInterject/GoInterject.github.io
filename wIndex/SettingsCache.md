@@ -32,7 +32,7 @@ Interject keeps multiple folders on your local drive for settings and a file cac
 <br>
 
 <blockquote class=highlight_note>
-<b>Note:</b> Prior to version 2.5.1.1, Interject used the local folder for settings. Starting with 2.5.1.1, however, Interject stores the settings in the roaming profile so that settings can be synced across systems. The local folder still exists for archival purposes.
+<b>Note:</b> Starting with Interject version 2.5.1.1, Interject stores the settings in the roaming profile so that settings can be synced across systems. The local folder still exists, however, for archival purposes.
 </blockquote>
 
 ### Opening the Folders

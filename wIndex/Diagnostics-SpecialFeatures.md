@@ -19,7 +19,7 @@ description: The "Apply Special Features" in the Interject Diagnostics Pane allo
 
 ## Overview
 
-The "Apply Special Features" in the Interject Diagnostics Pane allows users to apply certain bux fixes.
+The "Apply Special Features" in the Interject Diagnostics Pane allows users to apply certain bug fixes.
 
 ![](/images/DiagnosticsSpecialFeatures/ApplySpecialFeatures.png)
 <br>

@@ -16,7 +16,7 @@ description: The Diagnostics Replace Data Portal Codes command will replace all 
 
 ## Overview
 
-The Diagnostics "Replace Data Portal Codes" command will replace all data portal codes in the current active workbook. This makes it handy to replace only the codes that are currently in Interject formulas and not elsewhere.
+The Diagnostics "Replace Data Portal Codes" command will replace all data portal codes in the current active workbook. This makes it easy to replace only the codes that are currently in Interject formulas and not elsewhere.
 
 ![](/images/DiagnosticsReplaceDataPortalCodes/ReplaceDataPortalCodes.png)
 <br>

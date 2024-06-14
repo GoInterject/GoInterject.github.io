@@ -40,7 +40,7 @@ Custom roles relate to [Folder Permissions](/wPortal/FolderPermissions.html) and
 After the role is created, you can edit it or delete it by clicking on the Actions icons.
 
 <blockquote class=highlight_note>
-<b>Note:</b> You can only delete custom roles and only if they are not assigned to any users or folders.
+<b>Note:</b> Non-custom roles cannot be deleted. Custom roles can only be deleted if they are not assigned to any users and folders.
 </blockquote>
 <br>
 
