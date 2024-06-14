@@ -5,17 +5,23 @@ layout: custom
 keywords: [Diagnostics, Apply Special Features, Configuration, Config, animations, bug fix]
 headings: ["Overview", "BugFix1: Microsoft Animations", "BugFix2: Microsoft Repaint"]
 links: []
-image_dir: "Diagnostics"
-images: [{file: "ApplySpecialFeatures", type: "png", site: "Addin", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""}, {file: "BugFix1On", type: "png", site: "Addin", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""}, {file: "BugFix1Off", type: "png", site: "Addin", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""}, {file: "BugFix2On", type: "png", site: "Addin", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""}, {file: "BugFix2Off", type: "png", site: "Addin", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""}]
+image_dir: "DiagnosticsSpecialFeatures"
+images: [
+    {file: "ApplySpecialFeatures", type: "png", site: "Addin", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""}, 
+    {file: "BugFix1On", type: "png", site: "Addin", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""}, 
+    {file: "BugFix1Off", type: "png", site: "Addin", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""}, 
+    {file: "BugFix2On", type: "png", site: "Addin", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""}, 
+    {file: "BugFix2Off", type: "png", site: "Addin", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""}
+    ]
 description: The "Apply Special Features" in the Interject Diagnostics Pane allows users to apply certain bux fixes.
 ---
 * * *   
 
 ## Overview
 
-The "Apply Special Features" in the Interject Diagnostics Pane allows users to apply certain bux fixes.
+The "Apply Special Features" in the Interject Diagnostics Pane allows users to apply certain bug fixes.
 
-![](/images/Diagnostics/ApplySpecialFeatures.png)
+![](/images/DiagnosticsSpecialFeatures/ApplySpecialFeatures.png)
 <br>
 
 ### BugFix1: Microsoft Animations
@@ -28,7 +34,7 @@ The Microsoft Animations Bug caused certain screen issues due to Microsoft's Ani
 BugFix1=ON
 ```
 
-![](/images/Diagnostics/BugFix1On.png)
+![](/images/DiagnosticsSpecialFeatures/BugFix1On.png)
 <br>
 
 **Turn On Animations:** To turn on animations, enter the following in the Input field and press &lt;Execute Selected Action&gt;:
@@ -37,7 +43,7 @@ BugFix1=ON
 BugFix1=OFF
 ```
 
-![](/images/Diagnostics/BugFix1Off.png)
+![](/images/DiagnosticsSpecialFeatures/BugFix1Off.png)
 <br>
 
 ### BugFix2: Microsoft Repaint
@@ -50,7 +56,7 @@ The Microsoft Repaint Bug causes screen issues when an Excel Add-In programatica
 BugFix2=ON
 ```
 
-![](/images/Diagnostics/BugFix2On.png)
+![](/images/DiagnosticsSpecialFeatures/BugFix2On.png)
 <br>
 
 **Turn Off Repaint Bug Fix:** To disable this bug fix, enter the following in the Input field and press &lt;Execute Selected Action&gt;:
@@ -59,5 +65,5 @@ BugFix2=ON
 BugFix2=OFF
 ```
 
-![](/images/Diagnostics/BugFix2Off.png)
+![](/images/DiagnosticsSpecialFeatures/BugFix2Off.png)
 <br>

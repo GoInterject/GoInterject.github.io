@@ -18,7 +18,7 @@ horizontalnav:
   path: /wTroubleshoot/Troubleshooting-Landing.html
   node: troubleshoot
 - title: Release Notes
-  path: /wReleaseNotes/2024-03_ReleaseNotes.html
+  path: /wReleaseNotes/2024-06_ReleaseNotes.html
   node: releaseNotes
 
 about:
@@ -287,6 +287,10 @@ index:
       path: /wIndex/Diagnostics-SpecialFeatures.html
     - title: Diagnostics - Change ShortKeys
       path: /wIndex/Diagnostics-ShortKey.html
+    - title: Diagnostics - Find All Workbook Formulas
+      path: /wIndex/Diagnostics-FindAllFormulas.html
+    - title: Diagnostics - Replace Data Portal Codes
+      path: /wIndex/Diagnostics-ReplaceDataPortalCodes.html
 
 portal:
   - sectiontitle: Interject Website Portal
@@ -314,6 +318,10 @@ portal:
         path: /wPortal/Altering-User-Passwords.html
       - title: Multi-Factor Authentication
         path: /wPortal/MFA.html
+      - title: Roles
+        path: /wPortal/Roles.html
+      - title: Folder Permissions
+        path: /wPortal/FolderPermissions.html
 
 Developer:
 - sectiontitle: Api Developer
@@ -370,7 +378,7 @@ Developer:
     path: /wDeveloper/SetupjDataPortal.html
   - title: Custom Items
     path: /wDeveloper/CustomItems.html
-- sectiontitle: Security &amp; Authentication
+- sectiontitle: Enterprise Capabilities
   path: /wAbout/TLS.html
   section:
   - title: TLS for HTTPS
@@ -387,6 +395,8 @@ Developer:
     path: /wAbout/Federated-Login-Design.html
   - title: Connection Manager
     path: /wDeveloper/ConnectionManager.html
+  - title: Internal Support Setup
+    path: /wDeveloper/InternalSupportSetup.html
 
 troubleshoot:
 - sectiontitle: Interject Support
@@ -431,7 +441,7 @@ troubleshoot:
 
 releaseNotes:
 - sectiontitle: Versions
-  path: /wReleaseNotes/2024-03_ReleaseNotes.html
+  path: /wReleaseNotes/2024-06_ReleaseNotes.html
   section:
     - title: 2.5.0.22
       path: /wReleaseNotes/2023-10_ReleaseNotes.html
@@ -439,6 +449,8 @@ releaseNotes:
       path: /wReleaseNotes/2023-12_ReleaseNotes.html
     - title: 2.5.1.0
       path: /wReleaseNotes/2024-03_ReleaseNotes.html
+    - title: 2.5.1.1
+      path: /wReleaseNotes/2024-06_ReleaseNotes.html
 - sectiontitle: 2023
   path: /wReleaseNotes/2023-12_ReleaseNotes.html
   section:
@@ -449,9 +461,11 @@ releaseNotes:
     - title: December
       path: /wReleaseNotes/2023-12_ReleaseNotes.html
 - sectiontitle: 2024
-  path: /wReleaseNotes/2024-01_ReleaseNotes.html
+  path: /wReleaseNotes/2024-06_ReleaseNotes.html
   section:
     - title: January
       path: /wReleaseNotes/2024-01_ReleaseNotes.html
     - title: March
       path: /wReleaseNotes/2024-03_ReleaseNotes.html
+    - title: June
+      path: /wReleaseNotes/2024-06_ReleaseNotes.html
