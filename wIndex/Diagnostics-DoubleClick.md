@@ -2,7 +2,7 @@
 title: Diagnostics - Toggle Double Click Events
 filename: "Diagnostics-DoubleClick.md"
 layout: custom
-keywords: []
+keywords: [drill, edit mode, double click]
 headings: ["Overview"]
 links: []
 image_dir: "DiagnosticsDoubleClick"

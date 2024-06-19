@@ -2,7 +2,7 @@
 title: Diagnostics - Set Enterprise Connection
 filename: "Diagnostics-EnterpriseConnection.md"
 layout: custom
-keywords: []
+keywords: [connection string, encrypt, setup]
 headings: ["Overview"]
 links: ["https://docs.gointerject.com/wPortal/INTERJECT-Roles.html#clientadmin-role"]
 image_dir: "DiagnosticsEnterpriseConnection"
@@ -10,7 +10,7 @@ images: [
 	{file: "SetEnterpriseConnection", type: "png", site: "Addin", cat: "Diagnostics", sub: "Set Enterprise Connection", report: "", ribbon: "", config: ""},
 	{file: "ExecuteCommand", type: "png", site: "Addin", cat: "Diagnostics", sub: "Set Enterprise Connection", report: "", ribbon: "", config: ""}
 ]
-description: 
+description: The Diagnostic "Set Enterprise Connection" allows an enterprise to store an encrypted connection string.
 ---
 * * *
 
