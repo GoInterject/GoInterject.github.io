@@ -2,7 +2,7 @@
 title: Diagnostics - List Data Portals
 filename: "Diagnostics-ListDataPortals.md"
 layout: custom
-keywords: []
+keywords: [rtf, portals]
 headings: ["Overview"]
 links: []
 image_dir: "DiagnosticsListDataPortals"
