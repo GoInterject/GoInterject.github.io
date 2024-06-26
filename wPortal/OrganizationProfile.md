@@ -4,7 +4,7 @@ filename: "OrganizationProfile.md"
 layout: custom
 keywords: [company, details, information, smtp, cache]
 headings: ["Overview", "Organization Details", "Settings"]
-links: ["/wPortal/INTERJECT-Roles.html#clientadmin-role", "/wIndex/SettingsCache.html"]
+links: ["/wPortal/INTERJECT-Roles.html#clientadmin-role", "/wAbout/Enterprise-Login-Setup.html#enterprise-login-code", "/wIndex/SettingsCache.html"]
 image_dir: "OrganizationProfile"
 images: [
 	{file: "OrganizationProfile", type: "png", site: "Portal", cat: "Organization Profile", sub: "", report: "", ribbon: "", config: ""},
@@ -24,7 +24,13 @@ The Organization Profile allows [ClientAdmins](/wPortal/INTERJECT-Roles.html#cli
 
 ### Organization Details
 
+ClientAdmins can change details of their organization here.
 
+- [Enterprise Login Codes](/wAbout/Enterprise-Login-Setup.html#enterprise-login-code): These are login codes that have been set up for your company by Interject.
+- Authorization Type ID: This is unchangeable. Interject sets auth ID 10 for Interject authentication.
+- License Renew Date: This is unchangeable. Displays the current license's expiration date.
+- Created Dated: Optional field to display the company's created date of Interject.
+- Last Modified Date: Optional field to display when the organization Profile was last updated.
 
 ![](/images/OrganizationProfile/OrganizationDetails.png)
 <br>

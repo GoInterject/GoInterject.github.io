@@ -299,6 +299,13 @@ portal:
     path: /wPortal/Logging-In-to-Website-Portal.html
   - title: Download Interject
     path: /wPortal/DownloadInterject.html
+  - title: My Apps (Subscribers)
+    path: /wPortal/MyApps.html
+  - sectiontitle: Published Apps
+    path: /wPortal/PublishedApps.html
+    section:
+    - title: Subscribers
+      path: /wPortal/Subscribers.html
   - sectiontitle: Data Connections
     path: /wPortal/Data-Connections.html
     section:
