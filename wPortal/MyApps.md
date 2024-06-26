@@ -15,15 +15,13 @@ images: [
 	{file: "RedirectionDisplayed", type: "png", site: "Portal", cat: "My Apps", sub: "Connection Redirect", report: "", ribbon: "", config: ""},
 	{file: "DeleteRedirection", type: "png", site: "Portal", cat: "My Apps", sub: "Connection Redirect", report: "", ribbon: "", config: ""}
 ]
-description: The My Apps page on the Portal site displays all the apps you are currently subscribed to. 
-An app (sometimes called "Offering") is a set of reporting solutions that include Report Library links, data portals, and data connections. They are published by a publisher company and made available to subscribers. Currently, Interject handles all published apps so first contact us to get a published app set up for your company.
+description: The My Apps page on the Portal site displays all the apps you are currently subscribed to. An app (sometimes called "Offering") is a set of reporting solutions that include Report Library links, data portals, and data connections. They are published by a publisher company and made available to subscribers. Currently, Interject handles all published apps so first contact us to get a published app set up for your company.
 ---
 * * *
 
 ## Overview
 
-The My Apps page on the Portal site displays all the apps you are currently subscribed to. 
-An app (sometimes called "Offering") is a set of reporting solutions that include Report Library links, data portals, and data connections. They are published by a publisher company and made available to subscribers. Currently, Interject handles all published apps so first contact us to get a published app set up for your company.
+The My Apps page on the Portal site displays all the apps you are currently subscribed to. An app (sometimes called "Offering") is a set of reporting solutions that include Report Library links, data portals, and data connections. They are published by a publisher company and made available to subscribers. Currently, Interject handles all published apps so first contact us to get a published app set up for your company.
 
 ![](/images/MyApps/MyAppsPage.png)
 <br>

@@ -15,13 +15,13 @@ images: [
 	{file: "AddDataPortalToApp", type: "png", site: "Portal", cat: "Published Apps", sub: "App Details", report: "", ribbon: "", config: ""},
 	{file: "DownloadReportInformation", type: "png", site: "Portal", cat: "Published Apps", sub: "App Details", report: "", ribbon: "", config: ""}
 ]
-description: The "Published Apps" page on the Portal site displays all of your company's published apps. A published app is a collection of data portals, connections and Report Library links. Published apps are configured by Interject for a company to allow them to distribute the app to subscribers.
+description: The Published Apps page on the Portal site displays all of your company's published apps. A published app is a collection of data portals, connections and Report Library links. Published apps are configured by Interject for a company to allow them to distribute the app to subscribers.
 ---
 * * *
 
 ## Overview
 
-The "Published Apps" page on the Portal site displays all of your company's published apps. A published app is a collection of data portals, connections and Report Library links. Published apps are configured by Interject for a company to allow them to distribute the app to subscribers.
+The Published Apps page on the Portal site displays all of your company's published apps. A published app is a collection of data portals, connections and Report Library links. Published apps are configured by Interject for a company to allow them to distribute the app to subscribers.
 
 ![](/images/PublishedApps/PublishedAppsPage.png)
 <br>
@@ -36,11 +36,11 @@ Clicking on the app in the list will open the App Details page.
 - **Description:** App description
 - **Data Portal:** The number of data portals included in this app
 - **Status:** Active or trial
-- **IsPublic:** This field is not functional
+- **IsPublic:** This field is currently not functional
 - **Register Date:** Date this app was registered
 - **Sort Order:** A number that will sort the Report Library Folder in relation to other folders
 - **Renew Date:** The app's expiration date
-- **IsPremium:** This field is not functional
+- **IsPremium:** This field is currently not functional
 - **App Report Folder:** This is the name of the folder that will appear in the Report Library
 
 ![](/images/PublishedApps/AppDetails.png)
@@ -48,9 +48,11 @@ Clicking on the app in the list will open the App Details page.
 
 ### Data Portals
 
+This section allows management of what data portals are available in the published app. 
+
 #### Portals in App
 
-This section allows management of what data portals are available in the published app. The table on the left displays all data portals that are currently made available to subscribers of the app. 
+The table on the left displays all data portals that are currently made available to subscribers of the app. 
 
 ![](/images/PublishedApps/DataPortalsInApp.png)
 <br>
