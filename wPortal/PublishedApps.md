@@ -57,7 +57,7 @@ The table on the left displays all data portals that are currently made availabl
 ![](/images/PublishedApps/DataPortalsInApp.png)
 <br>
 
-When you click **Edit**, you can choose to make the data portal [overridable](/wPortal/MyApps.html#connection-redirection). Clicking on the garbage **<font size="+1">&#x1F5D1;</font>** icon will remove the data portal from the app. (Be sure to click **Save**.)
+When you click **Edit**, you can choose to make the connection for the data portal [overridable](/wPortal/MyApps.html#connection-redirection). Clicking on the garbage **<font size="+1">&#x1F5D1;</font>** icon will remove the data portal from the app. (Be sure to click **Save**.)
 
 ![](/images/PublishedApps/EditDataPortal.png)
 <br>

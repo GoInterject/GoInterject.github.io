@@ -28,7 +28,7 @@ Multi-factor authentication (MFA), also known as two-factor authentication (2FA)
 Interject supports MFA via email confirmation or an Authenticator App and it can be set up for any user within your organization.
 
 <blockquote class=highlight_note>
-<b>Note:</b> Interject MFA only works for Interject credentials. Users that use a federated login are managed by their Identity Provider (see <a href="https://docs.gointerject.com/wAbout/Federated-Login-Design.html">here</a> for more info).
+<b>Note:</b> Interject MFA only works for Interject credentials. Users that use a federated login are managed by their Identity Provider (see <a href="https://docs.gointerject.com/wAbout/Federated-Login-Design.html">here</a> for more info). In addition, only <a href="https://docs.gointerject.com/wPortal/INTERJECT-Roles.html#clientadmin-role">ClientAdmins</a> can set up MFA.
 </blockquote>
 
 ### Enable MFA for a User
