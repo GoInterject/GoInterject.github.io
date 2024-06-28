@@ -49,6 +49,11 @@ Once you are subscribed to an app, they will appear in the Report Library and al
 
 ClientAdmins are allowed to redirect a data connection. A Connection Redirect is used to override a default connection with one that is catered to your own company. This is common with some App subscriptions so that it can access custom data for your company.
 
+<blockquote class=highlight_note>
+<b>Note:</b> To override a connection on the fly without having to set up a connection redirection, you can use the <a href="https://docs.gointerject.com/wIndex/jDataPortal.html">jDataPortal</a> function.
+</blockquote>
+<br>
+
 To override a connection, select the data connection you want to redirect in the "Default Offering Connection" and change the redirect in the "Your Company Connection" list and click **Save**:
 
 ![](/images/MyApps/ConnectionRedirect.png)
