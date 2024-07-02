@@ -2,7 +2,7 @@
 title: Diagnostics - Find All Workbook Formulas
 filename: "Diagnostics-FindAllFormulas.md"
 layout: custom
-keywords: [diagnostics, formulas, functions]
+keywords: [search, find, functions, formulas]
 headings: ["Overview", "Text Formula", "Text All", "SQL Query", "XML"]
 links: []
 image_dir: "DiagnosticsFindAllFormulas"
@@ -14,7 +14,7 @@ images: [
     {file: "SQLOutput", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
     {file: "XML", type: "png", site: "Addin", cat: "Diagnostics", sub: "FindAllWorkbookFormulas", report: "", ribbon: "", config: ""}
     ]
-description: The Diagnostic command Find All Workbook Formulas will display information about every Interject formula in the active workbook. Depending on which line is first in the input field, it will output to several different formats.
+description: The Diagnostic command "Find All Workbook Formulas" will display information about every Interject formula in the active workbook. Depending on which line is first in the input field, it will output to several different formats.
 
 ---
 * * *
@@ -25,7 +25,6 @@ The Diagnostic command "Find All Workbook Formulas" will display information abo
 
 ![](/images/DiagnosticsFindAllFormulas/FindAllFormulas.png)
 <br>
-
 
 ### Text Formula
 
@@ -41,14 +40,12 @@ If the first input is "text_all", the results will be the same as "text_formula"
 ![](/images/DiagnosticsFindAllFormulas/TextAll.png)
 <br>
 
-
 ### SQL Query
 
 The "sql_query" will display SQL code that you can execute to display the formula information in a table form:
 
 ![](/images/DiagnosticsFindAllFormulas/SQLQuery.png)
 <br>
-
 
 ![](/images/DiagnosticsFindAllFormulas/SQLOutput.png)
 <br>
