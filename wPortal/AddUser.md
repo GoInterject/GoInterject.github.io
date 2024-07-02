@@ -1,5 +1,5 @@
 ---
-title: Adding A User
+title: Adding a User
 filename: "AddUser.md"
 layout: custom
 keywords: [create, new, user]

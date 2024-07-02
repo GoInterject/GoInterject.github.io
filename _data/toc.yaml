@@ -18,7 +18,7 @@ horizontalnav:
   path: /wTroubleshoot/Troubleshooting-Landing.html
   node: troubleshoot
 - title: Release Notes
-  path: /wReleaseNotes/2024-06_ReleaseNotes.html
+  path: /wReleaseNotes/2024-07_ReleaseNotes.html
   node: releaseNotes
 
 about:
@@ -280,17 +280,31 @@ index:
     path: /wIndex/INTERJECT-Hotkey-Index.html
   - title: Interject Hyperlinks
     path: /wIndex/INTERJECT-Link-Index.html
+  - title: Interject Settings and Cache
+    path: /wIndex/SettingsCache.html
   - sectiontitle: Diagnostics
     path: /wIndex/Diagnostics.html
     section:
-    - title: Diagnostics - Special Features
+    - title: Apply Special Features
       path: /wIndex/Diagnostics-SpecialFeatures.html
-    - title: Diagnostics - Change ShortKeys
-      path: /wIndex/Diagnostics-ShortKey.html
-    - title: Diagnostics - Find All Workbook Formulas
+    - title: List Data Portals
+      path: /wIndex/Diagnostics-ListDataPortals.html
+    - title: Toggle Double Click Events
+      path: /wIndex/Diagnostics-DoubleClick.html
+    - title: Garbage Collector
+      path: /wIndex/Diagnostics-GarbageCollection.html
+    - title: Find All Workbook Formulas
       path: /wIndex/Diagnostics-FindAllFormulas.html
-    - title: Diagnostics - Replace Data Portal Codes
+    - title: Replace Data Portal Codes
       path: /wIndex/Diagnostics-ReplaceDataPortalCodes.html
+    - title: Clear Data Cell Cache
+      path: /wIndex/Diagnostics-ClearDataCellCache.html
+    - title: Change ShortKeys
+      path: /wIndex/Diagnostics-ShortKey.html
+    - title: Clear Error Log
+      path: /wIndex/Diagnostics-ClearErrorLog.html
+    - title: Re-initiate Interject
+      path: /wIndex/Diagnostics-ReinitiateInterject.html
 
 portal:
   - title: Interject Website Portal
@@ -327,7 +341,7 @@ portal:
         path: /wPortal/Altering-User-Passwords.html
       - title: Multi-Factor Authentication
         path: /wPortal/MFA.html
-      - title: Adding A User
+      - title: Adding a User
         path: /wPortal/AddUser.html
     - title: Organization Profile
       path: /wPortal/OrganizationProfile.html
@@ -396,6 +410,10 @@ Developer:
 - sectiontitle: Enterprise Capabilities
   path: /wAbout/TLS.html
   section:
+  - title: Open Install Configuration
+    path: /wIndex/Diagnostics-InstallConfig.html
+  - title: Set Enterprise Connection
+    path: /wIndex/Diagnostics-EnterpriseConnection.html
   - title: TLS for HTTPS
     path: /wAbout/TLS.html
   - title: Checksums for Installers
@@ -476,7 +494,7 @@ releaseNotes:
     - title: December
       path: /wReleaseNotes/2023-12_ReleaseNotes.html
 - sectiontitle: 2024
-  path: /wReleaseNotes/2024-06_ReleaseNotes.html
+  path: /wReleaseNotes/2024-07_ReleaseNotes.html
   section:
     - title: January
       path: /wReleaseNotes/2024-01_ReleaseNotes.html
@@ -484,3 +502,5 @@ releaseNotes:
       path: /wReleaseNotes/2024-03_ReleaseNotes.html
     - title: June
       path: /wReleaseNotes/2024-06_ReleaseNotes.html
+    - title: July
+      path: /wReleaseNotes/2024-07_ReleaseNotes.html
