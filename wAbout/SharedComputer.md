@@ -68,7 +68,7 @@ Shared Computer installation installs a multi-user instance of Interject on one 
 ![](/images/SharedComputer/31.png)
 <br>
 
-**Step 9:** Step 9: Select **Next** when the Interject Excel Add-In Setup Wizard launches.
+**Step 9:** Select **Next** when the Interject Excel Add-In Setup Wizard launches.
 
 ![](/images/SharedComputer/33.png)
 <br>
@@ -124,7 +124,7 @@ To see the Add-In-Express install log, go to this file: (update the path for the
 
 </div>
 
-**Step 12:** Select the desired install location by clicking **Browse...**. By default a folder will be made inside the Programs(x86) folder.
+**Step 12:** Select the desired install location by clicking **Browse...**. By default a folder will be made inside the Programs (x86) folder.
 
 Hit **Next** once the location is selected.
 
