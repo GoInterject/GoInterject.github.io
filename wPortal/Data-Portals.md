@@ -6,7 +6,18 @@ keywords: [data portals, data connection, setup, system parameters]
 headings: ["Overview", "Setting up a Data Portal", "Overview of Parameters", "Formula Parameters", "System Parameters", "Adding New Parameters", "System Parameters Options"]
 links: ["/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#custom-commands", "https://docs.gointerject.com/wIndex/Request-Context-Parse.html"]
 image_dir: "DataPortals"
-images: [{file: "01", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "02", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "03", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "04", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "05", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "06", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "07", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "08", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "09", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}]
+images: [
+    {file: "NewDataPortalButton", type: "png", site: "Portal", cat: "Data Portals", sub: "", report: "", ribbon: "", config: ""}, 
+    {file: "01", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+    {file: "02", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+    {file: "03", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+    {file: "04", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+    {file: "05", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+    {file: "06", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+    {file: "07", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+    {file: "08", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+    {file: "09", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}
+    ]
 description: A Data Portal uses a Data Connection to connect to either a stored procedure within a database or to a website API controller in a customer website API.
 ---
 * * *
@@ -14,11 +25,14 @@ description: A Data Portal uses a Data Connection to connect to either a stored 
 ## Overview
 
 A Data Portal uses a Data Connection to connect to either a stored procedure within a database or to a website API controller in a customer website API. In this section, you will quickly set up a Data Portal for a database to pull data into our spreadsheet.
-Setting up an Data Portal to connect to a website API is not covered in this documentation yet as the sections are currently under construction. Please contact us directly for assistance with Website APIs.
+Setting up a Data Portal to connect to a website API is not covered in this documentation yet as the sections are currently under construction. Please contact us directly for assistance with Website APIs.
 
 ### Setting up a Data Portal
 
-**Step 1** : To setup a Data Portal click on the **Data Portals** icon.
+**Step 1** : To setup a Data Portal click on the **Data Portals** button.
+
+![](/images/DataPortals/NewDataPortalButton.png)
+<br>
 
 **Step 2** : In the Data Portals page, select the **New Data Portal** button in the top right corner.
 

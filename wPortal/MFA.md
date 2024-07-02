@@ -6,7 +6,17 @@ keywords: [2fa, login, credentials, security, email confirmation, authenticator 
 headings: ["Overview", "Enable MFA for a User", "Login With the Authenticator App", "Login With an Email Confirmation"]
 links: ["https://docs.gointerject.com/wAbout/Federated-Login-Design.html", "https://portal.gointerject.com/login.html"]
 image_dir: "MFA"
-images: [{file: "SelectCompany", type: "png", site: "Portal", cat: "Home", sub: "Company", report: "", ribbon: "", config: ""}, {file: "SelectStaff", type: "png", site: "Portal", cat: "Sidebar", sub: "", report: "", ribbon: "", config: ""}, {file: "SelectMFA", type: "png", site: "Portal", cat: "Organization Staff", sub: "", report: "", ribbon: "", config: ""}, {file: "ClickMFAEnabled", type: "png", site: "Portal", cat: "Multi Factor Authentication", sub: "", report: "", ribbon: "", config: ""}, {file: "MFASetUp", type: "png", site: "Portal", cat: "Organization Staff", sub: "", report: "", ribbon: "", config: ""}, {file: "EnterCode", type: "png", site: "Portal", cat: "Please enter Authentication Code", sub: "", report: "", ribbon: "", config: ""}, {file: "AuthenticatorCode", type: "png", site: "External", cat: "Authenticator", sub: "", report: "", ribbon: "", config: ""}, {file: "QRCode", type: "png", site: "Portal", cat: "Login", sub: "Enable authenticator", report: "", ribbon: "", config: ""}, {file: "EnterEmailCode", type: "png", site: "Portal", cat: "Please enter Authentication Code", sub: "", report: "", ribbon: "", config: ""}, {file: "Email", type: "png", site: "External", cat: "Email", sub: "", report: "", ribbon: "", config: ""}]
+images: [
+    {file: "SelectStaff", type: "png", site: "Portal", cat: "Sidebar", sub: "", report: "", ribbon: "", config: ""}, 
+    {file: "SelectMFA", type: "png", site: "Portal", cat: "Organization Staff", sub: "", report: "", ribbon: "", config: ""}, 
+    {file: "ClickMFAEnabled", type: "png", site: "Portal", cat: "Multi Factor Authentication", sub: "", report: "", ribbon: "", config: ""}, 
+    {file: "MFASetUp", type: "png", site: "Portal", cat: "Organization Staff", sub: "", report: "", ribbon: "", config: ""}, 
+    {file: "EnterCode", type: "png", site: "Portal", cat: "Please enter Authentication Code", sub: "", report: "", ribbon: "", config: ""}, 
+    {file: "AuthenticatorCode", type: "png", site: "External", cat: "Authenticator", sub: "", report: "", ribbon: "", config: ""}, 
+    {file: "QRCode", type: "png", site: "Portal", cat: "Login", sub: "Enable authenticator", report: "", ribbon: "", config: ""}, 
+    {file: "EnterEmailCode", type: "png", site: "Portal", cat: "Please enter Authentication Code", sub: "", report: "", ribbon: "", config: ""}, 
+    {file: "Email", type: "png", site: "External", cat: "Email", sub: "", report: "", ribbon: "", config: ""}
+    ]
 description: Multi-factor authentication (MFA), also known as two-factor authentication (2FA), is a security process that requires users to provide two or more authentication factors to verify their identity before gaining access to a system or resources.
 ---
 * * *
@@ -18,14 +28,12 @@ Multi-factor authentication (MFA), also known as two-factor authentication (2FA)
 Interject supports MFA via email confirmation or an Authenticator App and it can be set up for any user within your organization.
 
 <blockquote class=highlight_note>
-<b>Note:</b> Interject MFA only works for Interject credentials. Users that use a federated login are managed by their Identity Provider (see <a href="https://docs.gointerject.com/wAbout/Federated-Login-Design.html">here</a> for more info).
+<b>Note:</b> Interject MFA only works for Interject credentials. Users that use a federated login are managed by their Identity Provider (see <a href="https://docs.gointerject.com/wAbout/Federated-Login-Design.html">here</a> for more info). In addition, only <a href="https://docs.gointerject.com/wPortal/INTERJECT-Roles.html#clientadmin-role">ClientAdmins</a> can set up MFA.
 </blockquote>
 
 ### Enable MFA for a User
 
-**Step 1:** To begin, login in to the [Portal site](https://portal.gointerject.com/login.html). On the top right of the site, select your company.
-
-![](/images/MFA/SelectCompany.png)
+**Step 1:** To begin, login in to the [Portal site](https://portal.gointerject.com/login.html). 
 <br>
 
 **Step 2:** On the left navigation panel, select **Staff**.
