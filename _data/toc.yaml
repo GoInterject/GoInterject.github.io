@@ -293,35 +293,50 @@ index:
       path: /wIndex/Diagnostics-ReplaceDataPortalCodes.html
 
 portal:
-  - sectiontitle: Interject Website Portal
+  - title: Interject Website Portal
     path: /wPortal/The-INTERJECT-Website-Portal.html
+  - title: Logging In to Website Portal
+    path: /wPortal/Logging-In-to-Website-Portal.html
+  - title: Download Interject
+    path: /wPortal/DownloadInterject.html
+  - title: My Apps (Subscribers)
+    path: /wPortal/MyApps.html
+  - sectiontitle: Published Apps
+    path: /wPortal/PublishedApps.html
     section:
-    - title: Logging In to Website Portal
-      path: /wPortal/Logging-In-to-Website-Portal.html
-    - sectiontitle: Data Connections
-      path: /wPortal/Data-Connections.html
-      section:
-      - title: "Portal: API Connections"
-        path: /wPortal/L-Api-Connections.html
-      - title: "Portal: Database Connection"
-        path: /wPortal/L-Database-Connection.html
-    - title: Data Portals
-      path: /wPortal/Data-Portals.html
+    - title: Subscribers
+      path: /wPortal/Subscribers.html
+  - sectiontitle: Data Connections
+    path: /wPortal/Data-Connections.html
+    section:
+    - title: "Portal: API Connections"
+      path: /wPortal/L-Api-Connections.html
+    - title: "Portal: Database Connection"
+      path: /wPortal/L-Database-Connection.html
+  - title: Data Portals
+    path: /wPortal/Data-Portals.html
+  - sectiontitle: Settings
+    path: /wPortal/User-Profile.html
+    section:
     - sectiontitle: User Profile
       path: /wPortal/User-Profile.html
       section:
-      - title: Staff Page
-        path: /wPortal/StaffPage.html
       - title: Interject Roles
         path: /wPortal/INTERJECT-Roles.html
       - title: Changing &amp; Resetting User Passwords
         path: /wPortal/Altering-User-Passwords.html
       - title: Multi-Factor Authentication
         path: /wPortal/MFA.html
-      - title: Roles
-        path: /wPortal/Roles.html
-      - title: Folder Permissions
-        path: /wPortal/FolderPermissions.html
+      - title: Adding A User
+        path: /wPortal/AddUser.html
+    - title: Organization Profile
+      path: /wPortal/OrganizationProfile.html
+    - title: Staff Page
+      path: /wPortal/StaffPage.html
+    - title: Folder Permissions
+      path: /wPortal/FolderPermissions.html
+    - title: Roles
+      path: /wPortal/Roles.html
 
 Developer:
 - sectiontitle: Api Developer

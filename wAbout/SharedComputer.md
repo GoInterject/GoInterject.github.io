@@ -4,10 +4,24 @@ filename: "SharedComputer.md"
 layout: custom
 keywords: [install, Multiple Users, Server, network]
 headings: ["Overview", "Installing Interject on Multi-User Systems"]
-links: ["https://portal.gointerject.com/login.html", "https://portal.gointerject.com/invite.html?mode=create", "https://docs.gointerject.com/wAbout/Logging-In.html", "mailto:help@gointerject.com"]
+links: ["https://portal.gointerject.com/login.html", "https://portal.gointerject.com/invite.html?mode=create", "/wPortal/DownloadInterject.html", "https://docs.gointerject.com/wAbout/Logging-In.html", "mailto:help@gointerject.com"]
 image_dir: "SharedComputer"
-images: [{file: "15", type: "jpg", site: "Addin", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "16", type: "png", site: "Portal", cat: "Download", sub: "Main", report: "", ribbon: "", config: ""}, {file: "17", type: "png", site: "Portal", cat: "Download", sub: "Main", report: "", ribbon: "", config: ""}, {file: "22", type: "png", site: "Windows", cat: "Explorer", sub: "Extract All", report: "", ribbon: "", config: ""}, {file: "24", type: "jpg", site: "Windows", cat: "Explorer", sub: "Folder", report: "", ribbon: "", config: ""}, {file: "25", type: "jpg", site: "Windows", cat: "Explorer", sub: "Extract", report: "", ribbon: "", config: ""}, {file: "31", type: "png", site: "Windows", cat: "Explorer", sub: "Folder", report: "", ribbon: "", config: ""}, {file: "33", type: "png", site: "Addin", cat: "Installation", sub: "Setup Wizard", report: "", ribbon: "", config: ""}, {file: "34", type: "png", site: "Addin", cat: "Installation", sub: "Installation Type", report: "", ribbon: "", config: ""}, {file: "37", type: "png", site: "Addin", cat: "Installation", sub: "End-User License Agreement", report: "", ribbon: "", config: ""}, {file: "38", type: "png", site: "Addin", cat: "Installation", sub: "Select Installation Folder", report: "", ribbon: "", config: ""}, {file: "39", type: "png", site: "Addin", cat: "Installation", sub: "Ready to Install", report: "", ribbon: "", config: ""}, {file: "40", type: "png", site: "Addin", cat: "Installation", sub: "Completed Install", report: "", ribbon: "", config: ""}]
-description: This is the multi-user to one computer installation of Interject.
+images: [
+    {file: "15", type: "jpg", site: "Addin", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+    {file: "16", type: "png", site: "Portal", cat: "Download", sub: "Main", report: "", ribbon: "", config: ""}, 
+    {file: "17", type: "png", site: "Portal", cat: "Download", sub: "Main", report: "", ribbon: "", config: ""}, 
+    {file: "22", type: "png", site: "Windows", cat: "Explorer", sub: "Extract All", report: "", ribbon: "", config: ""}, 
+    {file: "24", type: "jpg", site: "Windows", cat: "Explorer", sub: "Folder", report: "", ribbon: "", config: ""}, 
+    {file: "25", type: "jpg", site: "Windows", cat: "Explorer", sub: "Extract", report: "", ribbon: "", config: ""}, 
+    {file: "31", type: "png", site: "Windows", cat: "Explorer", sub: "Folder", report: "", ribbon: "", config: ""}, 
+    {file: "33", type: "png", site: "Addin", cat: "Installation", sub: "Setup Wizard", report: "", ribbon: "", config: ""}, 
+    {file: "34", type: "png", site: "Addin", cat: "Installation", sub: "Installation Type", report: "", ribbon: "", config: ""}, 
+    {file: "37", type: "png", site: "Addin", cat: "Installation", sub: "End-User License Agreement", report: "", ribbon: "", config: ""}, 
+    {file: "38", type: "png", site: "Addin", cat: "Installation", sub: "Select Installation Folder", report: "", ribbon: "", config: ""}, 
+    {file: "39", type: "png", site: "Addin", cat: "Installation", sub: "Ready to Install", report: "", ribbon: "", config: ""}, 
+    {file: "40", type: "png", site: "Addin", cat: "Installation", sub: "Completed Install", report: "", ribbon: "", config: ""}
+    ]
+description: Shared Computer installation installs a multi-user instance of Interject on one computer, such as a shared server. Since Interject's Addin Manager is used to manage independent settings for multiple users, this installation is dependant on the Add-in Manager. In order to run Per-Computer installation, you must have administrative-elevated rights.
 ---
 * * *
 
@@ -17,49 +31,49 @@ Shared Computer installation installs a multi-user instance of Interject on one 
 
 ### Installing Interject on Multi-User Systems
 
-**Step 1:** Log in to the [**Interject website portal**](https://portal.gointerject.com/login.html). If you do not have an account go [here.](https://portal.gointerject.com/invite.html?mode=create) <!--best practices for documentation say to avoid pointing users to a url using a "click here" type of method. Instead, link directly to descriptive text within a sentence, as I've done above. (http://www.writethedocs.org/guide/writing/docs-principles/ > under Skimmable) -->
+**Step 1:** Log in to the [Interject website portal](https://portal.gointerject.com/login.html). If you do not have an account you can request one [here](https://portal.gointerject.com/invite.html?mode=create).
 
-**Step 2:** Once logged in, go to the **download page.**.
+**Step 2:** Once logged in, go to the download page.
 
 ![](/images/SharedComputer/15.jpg)
 <br>
 
-**Step 3:** Select **View other installers >>**.
+**Step 3:** Click **View other installers**. (For detailed information, see [Download Interject](/wPortal/DownloadInterject.html)).
 
 ![](/images/SharedComputer/16.png)
 <br>
 
-**Step 4:** Click the **Zip File for IT Admins Multiple-Users** option. This installer is only available on **Windows Server** machines. **Admin** privileges are also required for this install.
+**Step 4:** Click the **Zip File for IT Admins Multiple-Users** option. (Admin privileges are required for this install.)
 
 ![](/images/SharedComputer/17.png)
 <br>
 
-**Step 5:** When the download is complete, **extract** the **zip file**. <!--is this step necessary? At this stage, I think it probably a given, or at least could be added onto another step.-->
+**Step 5:** When the download is complete, extract the zip file. 
 
 ![](/images/SharedComputer/22.png)
 <br>
 
-**Step 6:** Determine your **Destination Folder**.
+**Step 6:** Determine your dDestination folder.
 
 ![](/images/SharedComputer/24.jpg)
 <br>
 
-**Step 7:** Confirm your **Destination Folder**.
+**Step 7:** Confirm your destination folder.
 
 ![](/images/SharedComputer/25.jpg)
 <br>
 
-**Step 8:** Navigate back to your **Extracted Zip Folder** and run the **InterjectSetup_Production_40_Standard_\[version\].exe** file **As Administrator**.
+**Step 8:** Navigate back to your extracted zip folder and run the InterjectSetup_Production_40_Standard_\[version\].exe file as an Administrator.
 
 ![](/images/SharedComputer/31.png)
 <br>
 
-**Step 9:** Step 9: Select "Next" when the **Interject Excel Add-In Setup Wizard** launches.
+**Step 9:** Select **Next** when the Interject Excel Add-In Setup Wizard launches.
 
 ![](/images/SharedComputer/33.png)
 <br>
 
-**Step 10:** Read and accept the **End-User License Agreement** and select **Next**.
+**Step 10:** Read and accept the End-User License Agreement and select **Next**.
 
 ![](/images/SharedComputer/34.png)
 <br>
@@ -110,7 +124,7 @@ To see the Add-In-Express install log, go to this file: (update the path for the
 
 </div>
 
-**Step 12:** Select the desired install location by clicking **Browse...**. By default a folder will be made inside the **Programs(x86)** folder.
+**Step 12:** Select the desired install location by clicking **Browse...**. By default a folder will be made inside the Programs (x86) folder.
 
 Hit **Next** once the location is selected.
 
@@ -127,7 +141,6 @@ Hit **Next** once the location is selected.
 ![](/images/SharedComputer/40.png)
 <br>
 
-
 [Click here for login information](/wAbout/Logging-In.html)
 
 If you run into any issues, email us at [help@gointerject.com](mailto:help@gointerject.com).
@@ -136,6 +149,6 @@ If you run into any issues, email us at [help@gointerject.com](mailto:help@goint
 
 The following are the file locations for Interject for a Windows Server install:
 
-- Application: C:\Program Files (x86)\Interject\
-- File Cache: AppData\local\Interject
-- Config & Auth: AppData\roaming\Interject
+- **Application:** C:\Program Files (x86)\Interject\
+- **File Cache:** AppData\local\Interject
+- **Config & Auth:** AppData\roaming\Interject
