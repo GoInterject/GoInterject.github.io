@@ -53,7 +53,7 @@ Shared Computer installation installs a multi-user instance of Interject on one 
 ![](/images/SharedComputer/22.png)
 <br>
 
-**Step 6:** Determine your dDestination folder.
+**Step 6:** Determine your Destination folder.
 
 ![](/images/SharedComputer/24.jpg)
 <br>

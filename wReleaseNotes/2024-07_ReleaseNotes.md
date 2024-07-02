@@ -3,8 +3,8 @@ title: Release Notes
 filename: "2024-07_ReleaseNotes.md"
 layout: custom
 keywords: [change log, updates, versions, history, what's new]
-headings: ["July 2024", "Documentation Updates"]
-links: []
+headings: ["June 2024", "Documentation Updates"]
+links: ["/wIndex/SettingsCache.html", "/wIndex/Diagnostics-ListDataPortals.html", "/wIndex/Diagnostics-DoubleClick.html", "/wIndex/Diagnostics-GarbageCollection.html", "/wIndex/Diagnostics-FindAllFormulas.html", "/wIndex/Diagnostics-ReplaceDataPortalCodes.html", "/wIndex/Diagnostics-ClearDataCellCache.html", "/wIndex/Diagnostics-ClearErrorLog.html", "/wIndex/Diagnostics-ReinitiateInterject.html", "/wIndex/Diagnostics-InstallConfig.html", "/wIndex/Diagnostics-EnterpriseConnection.html", "/wPortal/DownloadInterject.html", "/wPortal/MyApps.html", "/wPortal/PublishedApps.html", "/wPortal/Subscribers.html", "/wPortal/AddUser.html", "/wPortal/OrganizationProfile.html", "/wPortal/User-Profile.html"]
 image_dir: ""
 images: []
 description: Release notes for this month's updates
