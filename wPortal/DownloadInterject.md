@@ -27,7 +27,7 @@ The **Installer Download Interject** button will automatically download the late
 ![](/images/DownloadInterject/CurrentVersion.png)
 <br>
 
-Click on "View Other Installers link to display other versions of Interject:
+Click on "View Other Installers" link to display other versions of Interject:
 
 ![](/images/DownloadInterject/ViewOtherInstallers.png)
 <br>

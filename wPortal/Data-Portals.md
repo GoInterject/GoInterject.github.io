@@ -25,7 +25,7 @@ description: A Data Portal uses a Data Connection to connect to either a stored 
 ## Overview
 
 A Data Portal uses a Data Connection to connect to either a stored procedure within a database or to a website API controller in a customer website API. In this section, you will quickly set up a Data Portal for a database to pull data into our spreadsheet.
-Setting up an Data Portal to connect to a website API is not covered in this documentation yet as the sections are currently under construction. Please contact us directly for assistance with Website APIs.
+Setting up a Data Portal to connect to a website API is not covered in this documentation yet as the sections are currently under construction. Please contact us directly for assistance with Website APIs.
 
 ### Setting up a Data Portal
 
