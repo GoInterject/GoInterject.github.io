@@ -6,7 +6,23 @@ keywords: [drill, report, hyperlinks, walkthrough]
 headings: ["Overview", "Unfreezing the Report", "Setting up the Drill", "Creating Hyperlinks as Drills"]
 links: ["/wAbout/Inventory-Reports.html", "/wIndex/ReportDrill.html", "/wIndex/PairGroup.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "wGetStarted/L-Drill-FinancialReport.html"]
 image_dir: "L-Drill-Inventory"
-images: [{file: "01", type: "png", site: "Addin", cat: "Report", sub: "", report: "Inventory by Category", ribbon: "", config: ""}, {file: "02", type: "png", site: "Excel", cat: "Freeze Panes", sub: "", report: "Inventory by Category", ribbon: "", config: ""}, {file: "03", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, {file: "04", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, {file: "05", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, {file: "06", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, {file: "07", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, {file: "08", type: "png", site: "Addin", cat: "Report", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, {file: "09", type: "png", site: "Excel", cat: "Right Click Menu", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, {file: "10", type: "png", site: "Excel", cat: "Insert Hyperlink", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, {file: "11", type: "png", site: "Addin", cat: "Report", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, {file: "12", type: "png", site: "Addin", cat: "Report", sub: "", report: "Inventory by Category", ribbon: "", config: ""}, {file: "13", type: "png", site: "Addin", cat: "Pull Data", sub: "", report: "Inventory by Category", ribbon: "Simple", config: ""}, {file: "14", type: "png", site: "Addin", cat: "Report", sub: "", report: "Inventory by Category", ribbon: "", config: ""}, {file: "InventoryDrill", type: "gif", site: "Addin", cat: "Data Drill", sub: "", report: "Inventory by Category", ribbon: "", config: ""}]
+images: [
+	{file: "01", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Inventory by Category", ribbon: "", config: ""}, 
+	{file: "02", type: "png", site: "Excel", cat: "Freeze Panes", sub: "", report: "Inventory by Category", ribbon: "", config: ""}, 
+	{file: "03", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, 
+	{file: "04", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, 
+	{file: "05", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, 
+	{file: "06", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, 
+	{file: "07", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, 
+	{file: "08", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, 
+	{file: "09", type: "png", site: "Excel", cat: "Right Click Menu", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, 
+	{file: "10", type: "png", site: "Excel", cat: "Insert Hyperlink", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, 
+	{file: "11", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, 
+	{file: "12", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Inventory by Category", ribbon: "", config: ""}, 
+	{file: "13", type: "png", site: "Add-in", cat: "Pull Data", sub: "", report: "Inventory by Category", ribbon: "Simple", config: ""}, 
+	{file: "14", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Inventory by Category", ribbon: "", config: ""}, 
+	{file: "InventoryDrill", type: "gif", site: "Add-in", cat: "Data Drill", sub: "", report: "Inventory by Category", ribbon: "", config: ""}
+	]
 description: In this example, you will view drilling between reports using the same Inventory reports created during the Real World Inventory Walkthrough. You will set up a drill from the Inventory by Category tab to the Inventory by Detail tab of the workbook. You will also set up a hyperlink so the drill can be more intuitive to users.
 ---
 * * *

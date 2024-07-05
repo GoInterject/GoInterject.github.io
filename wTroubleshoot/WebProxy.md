@@ -6,14 +6,17 @@ keywords: [config, settings, diagnostics, app.config]
 headings: ["Overview", "Configure via Diagnostics Setting", "Configure via app.config File"]
 links: ["https://learn.microsoft.com/en-us/dotnet/api/system.net.credentialcache.defaultcredentials", "https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings"]
 image_dir: "App-Errors"
-images: [{file: "DiagnosticsButton", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, {file: "DiagnosticsSetProxyUsage", type: "png", site: "Addin", cat: "Diagnostics", sub: "Set Proxy Usage", report: "", ribbon: "", config: ""}]
-description: The Interject Addin allows users to authenticate using Windows authentication. For this Interject uses the Microsoft DefaultCredential library to set up a proxy.
+images: [
+	{file: "DiagnosticsButton", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
+	{file: "DiagnosticsSetProxyUsage", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Set Proxy Usage", report: "", ribbon: "", config: ""}
+	]
+description: The Interject Add-in allows users to authenticate using Windows authentication. For this Interject uses the Microsoft DefaultCredential library to set up a proxy.
 ---
 * * *
 
 ## Overview
 
-The Interject Addin allows users to authenticate using Windows authentication. For this Interject uses [System.Net.CredentialCache.DefaultCredential](https://learn.microsoft.com/en-us/dotnet/api/system.net.credentialcache.defaultcredentials){:target="_blank"}{:rel="noopener noreferrer"} library to set up a proxy. Interject's default Windows proxy at the application level can prevent a client's machine level proxy. This will prevent a user from being able to log in. To get around this, there is an Interject setting where users and clients can disable the Windows proxy.
+The Interject Add-in allows users to authenticate using Windows authentication. For this Interject uses [System.Net.CredentialCache.DefaultCredential](https://learn.microsoft.com/en-us/dotnet/api/system.net.credentialcache.defaultcredentials){:target="_blank"}{:rel="noopener noreferrer"} library to set up a proxy. Interject's default Windows proxy at the application level can prevent a client's machine level proxy. This will prevent a user from being able to log in. To get around this, there is an Interject setting where users and clients can disable the Windows proxy.
 
 ### Configure via Diagnostics Setting
 

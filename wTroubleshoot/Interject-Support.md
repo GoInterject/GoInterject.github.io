@@ -7,13 +7,13 @@ headings: ["Overview", "User Support", "Verbose Logging", "Memory Logging"]
 links: ["/wTroubleshoot/Reporting-A-Problem.html", "/wTroubleshoot/Verbose-Logging.html", "/wTroubleshoot/RAM-Monitoring.html"]
 image_dir: ""
 images: []
-description: Interject Support in built into Excel via the Interject Addin. You can easily report a problem to Interject or find Interject contact information. You also have the option of turning on certain logs in order to send more key details to Interject.
+description: Interject Support in built into Excel via the Interject Add-in. You can easily report a problem to Interject or find Interject contact information. You also have the option of turning on certain logs in order to send more key details to Interject.
 ---
 * * *
 
 ## Overview
 
-Interject Support in built into Excel via the Interject Addin. You can easily report a problem to Interject or find Interject contact information. You also have the option of turning on certain logs in order to send more key details to Interject.
+Interject Support in built into Excel via the Interject Add-in. You can easily report a problem to Interject or find Interject contact information. You also have the option of turning on certain logs in order to send more key details to Interject.
 
 ### [User Support](/wTroubleshoot/Reporting-A-Problem.html)
 

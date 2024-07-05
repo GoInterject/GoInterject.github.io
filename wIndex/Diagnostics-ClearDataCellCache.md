@@ -7,10 +7,10 @@ headings: ["Overview", "Caches"]
 links: []
 image_dir: "DiagnosticsClearDataCellCache"
 images: [
-	{file: "ClearDataCellCache", type: "png", site: "Addin", cat: "Diagnostics", sub: "Clear Data Cell Cache", report: "", ribbon: "", config: ""},
-	{file: "LastPulledValues", type: "png", site: "Addin", cat: "Report", sub: "Interject_LastPulledValues", report: "", ribbon: "", config: ""},
-	{file: "AccelerateDataCells", type: "png", site: "Addin", cat: "Pull Data", sub: "Accelerate Data Cells by Using Cache", report: "", ribbon: "", config: ""},
-	{file: "DataCellsCleared", type: "png", site: "Addin", cat: "Diagnostics", sub: "Clear Data Cell Cache", report: "", ribbon: "", config: ""}
+	{file: "ClearDataCellCache", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Clear Data Cell Cache", report: "", ribbon: "", config: ""},
+	{file: "LastPulledValues", type: "png", site: "Add-in", cat: "Report", sub: "Interject_LastPulledValues", report: "", ribbon: "", config: ""},
+	{file: "AccelerateDataCells", type: "png", site: "Add-in", cat: "Pull Data", sub: "Accelerate Data Cells by Using Cache", report: "", ribbon: "", config: ""},
+	{file: "DataCellsCleared", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Clear Data Cell Cache", report: "", ribbon: "", config: ""}
 ]
 description: The "Clear Data Cell Cache" command in our Diagnostics form is essential for maintaining the accuracy and freshness of data in your reports. Data cells are individual cells in an Excel report that retrieve data directly from a source.
 ---

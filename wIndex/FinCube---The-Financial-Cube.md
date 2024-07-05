@@ -6,7 +6,11 @@ keywords: [fincube, segment filter, data portal, filter, forecast, CYA, columns,
 headings: ["Overview", "Segment Filter Options", "Data Portal Parameters", "Examples using Show Credits and Reverse Signs Parameters", "Available Columns for the DataPortal", "Segment Columns", "Group Columns", "Amount Columns", "CYA Column Notation", "Options for Forecast", "ACT Column Notation", "jColumnDef() Column Notation"]
 links: ["/wIndex/jColumnDef.html"]
 image_dir: "FinCube"
-images: [{file: "image2017-5-20_11-33-44", type: "png", site: "External", cat: "Flow Chart", sub: "ShowCredits ReverseSigns Truth Table", report: "", ribbon: "", config: ""}, {file: "image2017-5-20_14-12-53", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, {file: "image2017-5-20_14-40-35", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}]
+images: [
+	{file: "image2017-5-20_11-33-44", type: "png", site: "External", cat: "Flow Chart", sub: "ShowCredits ReverseSigns Truth Table", report: "", ribbon: "", config: ""}, 
+	{file: "image2017-5-20_14-12-53", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, 
+	{file: "image2017-5-20_14-40-35", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}
+	]
 description: The FinCube is a single Data Portal that supports a wide variety of reporting needs. It is included as part of the Interject Financials for Spreadsheets application, and many of the segments can be customized for specific needs.
 ---
 * * *

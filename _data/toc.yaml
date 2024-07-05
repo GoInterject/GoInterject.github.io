@@ -441,12 +441,12 @@ troubleshoot:
       path: /wTroubleshoot/Verbose-Logging.html
     - title: Memory Logging
       path: /wTroubleshoot/RAM-Monitoring.html
-- sectiontitle: Addin Errors
+- sectiontitle: Add-in Errors
   path: /wTroubleshoot/App-Errors.html
   section:
     - title: Excel Drill Animations
       path: /wTroubleshoot/Drill-Animations.html
-    - title: Addins Missing
+    - title: Add-ins Missing
       path: /wTroubleshoot/Addin-Missing.html
     - title: Web Proxy Configuration
       path: /wTroubleshoot/WebProxy.html

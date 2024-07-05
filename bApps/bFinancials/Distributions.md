@@ -6,7 +6,12 @@ keywords: [Report, Epicor, Accounts]
 headings: []
 links: ["https://docs.gointerject.com/bApps/bFinancials/ReportTemplates.html"]
 image_dir: "Train"
-images: [{file: "Dist1", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "Dist2", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "Dist3", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "Dist4", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}]
+images: [
+	{file: "Dist1", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Dist2", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Dist3", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Dist4", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
+	]
 description: Step by step guide on using Interject Financials - Epicor Enterprise financial report distribution.
 ---
 

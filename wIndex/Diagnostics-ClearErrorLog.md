@@ -7,7 +7,7 @@ headings: ["Overview"]
 links: ["/wIndex/SettingsCache.html", "/wTroubleshoot/Reporting-A-Problem.html#send-report-to-interject"]
 image_dir: "DiagnosticsClearErrorLog"
 images: [
-	{file: "ClearErrorLog", type: "png", site: "Addin", cat: "Diagnostics", sub: "Clear Error Log", report: "", ribbon: "", config: ""},
+	{file: "ClearErrorLog", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Clear Error Log", report: "", ribbon: "", config: ""},
 	{file: "SettingsFolder", type: "png", site: "Windows", cat: "Explorer", sub: "", report: "", ribbon: "", config: ""}
 ]
 description: Interject keeps an encrypted error log locally in order to record errors as they happen and improve user support. The "Clear Error Log" from Diagnostics will clear this log.

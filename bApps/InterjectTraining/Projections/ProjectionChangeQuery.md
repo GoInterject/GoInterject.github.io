@@ -6,7 +6,13 @@ keywords: [Training, Projections, Projection Change Query]
 headings: ["Overview", "Dynamic Columns", "Summary Tab", "Detail Tab", "Summary Last Save Tab", "Detail Last Save Tab"]
 links: []
 image_dir: "WCNTraining/Projections"
-images: [{file: "ProjectionsChangeQuery_ReportLibrary", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ProjChangeQuery_Summary_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ProjChangeQuery_Detail_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ProjChangeQuery_SummaryLastSave_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ProjChangeQuery_DetailLastSave_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}]
+images: [
+	{file: "ProjectionsChangeQuery_ReportLibrary", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ProjChangeQuery_Summary_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ProjChangeQuery_Detail_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ProjChangeQuery_SummaryLastSave_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ProjChangeQuery_DetailLastSave_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
+	]
 description: The Projections Change Query Tool provides insight to how Projections have been changed while open, with views on the summary and detailed levels.
 ---
 

@@ -7,12 +7,18 @@ headings: ["Overview", "Setup"]
 links: []
 image_dir: "InternalSupportSetup"
 images: [
-{file: "SupportForm", type: "png", site: "Addin", cat: "Support", sub: "", report: "", ribbon: "", config: ""},
-{file: "OpenApplicationFolders", type: "png", site: "Addin", cat: "Diagnostics", sub: "Open Application Folders", report: "", ribbon: "", config: ""},
-{file: "OpenAppConfig", type: "png", site: "Windows", cat: "Explorer", sub: "", report: "", ribbon: "", config: ""},
-{file: "AddEntries", type: "png", site: "External", cat: "Notepad", sub: "", report: "", ribbon: "", config: ""},
-{file: "UserSupport", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""},
-{file: "SupportForm", type: "png", site: "Addin", cat: "Support", sub: "", report: "", ribbon: "", config: ""},
+
+	{file: "SupportForm", type: "png", site: "Add-in", cat: "Support", sub: "", report: "", ribbon: "", config: ""},
+
+	{file: "OpenApplicationFolders", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Open Application Folders", report: "", ribbon: "", config: ""},
+
+	{file: "OpenAppConfig", type: "png", site: "Windows", cat: "Explorer", sub: "", report: "", ribbon: "", config: ""},
+
+	{file: "AddEntries", type: "png", site: "External", cat: "Notepad", sub: "", report: "", ribbon: "", config: ""},
+
+	{file: "UserSupport", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""},
+
+	{file: "SupportForm", type: "png", site: "Add-in", cat: "Support", sub: "", report: "", ribbon: "", config: ""},
 ]
 description: Interject provides a way to add your own internal support contact information to the Interject User Support form.
 ---

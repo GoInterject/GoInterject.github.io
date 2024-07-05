@@ -6,7 +6,14 @@ keywords: [login, credentials, accounts, Enterprise, setup]
 headings: ["Overview", "Enterprise Login Code", "Web Pages with Webview2", "Tokens and Refresh Cycle", "How Tokens are Stored", "Legacy Interject Logins"]
 links: ["https://duendesoftware.com/products/identityserver", "/wAbout/logging-in-enterprise.html", "https://learn.microsoft.com/en-us/microsoft-edge/webview2/", "https://openid.net/developers/how-connect-works/", "https://auth0.com/intro-to-iam/what-is-oauth-2", "https://learn.microsoft.com/en-us/dotnet/standard/security/how-to-use-data-protection", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#advanced-menu-items"]
 image_dir: "Federated-Login-Design"
-images: [{file: "FederatedLoginFlowchart", type: "png", site: "External", cat: "Flow Chart", sub: "Login Process", report: "", ribbon: "", config: ""}, {file: "EnterpriseLoginFlowchart", type: "png", site: "Interject", cat: "Login", sub: "Federated Login", report: "", ribbon: "", config: ""}, {file: "FileExplorer", type: "png", site: "Windows", cat: "Explorer", sub: "", report: "", ribbon: "", config: ""}, {file: "DiagnosticsRibbon", type: "png", site: "Interject", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, {file: "Diagnostics", type: "png", site: "Addin", cat: "Diagnostics", sub: "Open User Folders", report: "", ribbon: "", config: ""}, {file: "DualLogins", type: "png", site: "Addin", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}]
+images: [
+	{file: "FederatedLoginFlowchart", type: "png", site: "External", cat: "Flow Chart", sub: "Login Process", report: "", ribbon: "", config: ""}, 
+	{file: "EnterpriseLoginFlowchart", type: "png", site: "Interject", cat: "Login", sub: "Federated Login", report: "", ribbon: "", config: ""}, 
+	{file: "FileExplorer", type: "png", site: "Windows", cat: "Explorer", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "DiagnosticsRibbon", type: "png", site: "Interject", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
+	{file: "Diagnostics", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Open User Folders", report: "", ribbon: "", config: ""}, 
+	{file: "DualLogins", type: "png", site: "Add-in", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}
+	]
 description: Interject uses a Duende (previously Identity Server 4) API to handle authentication for federated user logins.
 ---
 * * *
@@ -29,7 +36,7 @@ See [Logging In/Out: Enterprise User](/wAbout/logging-in-enterprise.html) for a 
 
 ### Web Pages with Webview2
 
-In order for the Interject Addin to show the login page and redirect properly to federated login pages, a web browser environment is needed. Webview2 is a framework for embedding web technologies like HTML and JavaScript in native windows apps of various kinds. 
+In order for the Interject Add-in to show the login page and redirect properly to federated login pages, a web browser environment is needed. Webview2 is a framework for embedding web technologies like HTML and JavaScript in native windows apps of various kinds. 
 
 To learn more about Webview2, refer to this [documentation](https://learn.microsoft.com/en-us/microsoft-edge/webview2/).
 

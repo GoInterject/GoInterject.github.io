@@ -6,7 +6,23 @@ keywords: [Report, Epicor, Notes, Comments]
 headings: ["Report Setup", "Adding Summary Level Comments"]
 links: []
 image_dir: "bFinancials-AddingNotes"
-images: [{file: "01", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "02", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "03", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "04", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "05", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "06", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "07", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "08", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "09", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "10", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "11", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "11.1", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "12", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "13", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "14", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}]
+images: [
+	{file: "01", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "02", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "03", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "04", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "05", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "06", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "07", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "08", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "09", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "10", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "11", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "11.1", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "12", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "13", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "14", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
+	]
 description: Step by step guide on adding comment columns to your report templates.
 ---
 

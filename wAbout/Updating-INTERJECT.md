@@ -6,7 +6,20 @@ keywords: [update, updating, version]
 headings: ["Overview", "Updating to the Newest Version of Interject"]
 links: ["https://www.youtube.com/watch?v=lNu5AjM7Ofo", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#check-for-updates"]
 image_dir: "Updating"
-images: [{file: "01", type: "png", site: "Interject", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, {file: "02", type: "png", site: "Interject", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, {file: "03", type: "png", site: "Interject", cat: "Check for Updates", sub: "", report: "", ribbon: "Simple", config: ""}, {file: "04", type: "png", site: "Interject", cat: "Update", sub: "", report: "", ribbon: "Simple", config: ""}, {file: "05", type: "png", site: "Interject", cat: "Update", sub: "", report: "", ribbon: "", config: ""}, {file: "CloseExcel", type: "png", site: "Interject", cat: "Update", sub: "", report: "", ribbon: "", config: ""}, {file: "06", type: "png", site: "Interject", cat: "Installation", sub: "Setup Wizard", report: "", ribbon: "", config: ""}, {file: "06b", type: "png", site: "Interject", cat: "Installation", sub: "Installation Type", report: "", ribbon: "", config: ""}, {file: "07", type: "png", site: "Interject", cat: "Installation", sub: "End-User License Agreement", report: "", ribbon: "", config: ""}, {file: "08", type: "png", site: "Interject", cat: "Installation", sub: "Select Installation Folder", report: "", ribbon: "", config: ""}, {file: "09", type: "png", site: "Interject", cat: "Installation", sub: "Ready to Install", report: "", ribbon: "", config: ""}, {file: "10", type: "png", site: "Interject", cat: "Installation", sub: "Completed Install", report: "", ribbon: "", config: ""}]
+images: [
+	{file: "01", type: "png", site: "Interject", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, 
+	{file: "02", type: "png", site: "Interject", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, 
+	{file: "03", type: "png", site: "Interject", cat: "Check for Updates", sub: "", report: "", ribbon: "Simple", config: ""}, 
+	{file: "04", type: "png", site: "Interject", cat: "Update", sub: "", report: "", ribbon: "Simple", config: ""}, 
+	{file: "05", type: "png", site: "Interject", cat: "Update", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "CloseExcel", type: "png", site: "Interject", cat: "Update", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "06", type: "png", site: "Interject", cat: "Installation", sub: "Setup Wizard", report: "", ribbon: "", config: ""}, 
+	{file: "06b", type: "png", site: "Interject", cat: "Installation", sub: "Installation Type", report: "", ribbon: "", config: ""}, 
+	{file: "07", type: "png", site: "Interject", cat: "Installation", sub: "End-User License Agreement", report: "", ribbon: "", config: ""}, 
+	{file: "08", type: "png", site: "Interject", cat: "Installation", sub: "Select Installation Folder", report: "", ribbon: "", config: ""}, 
+	{file: "09", type: "png", site: "Interject", cat: "Installation", sub: "Ready to Install", report: "", ribbon: "", config: ""}, 
+	{file: "10", type: "png", site: "Interject", cat: "Installation", sub: "Completed Install", report: "", ribbon: "", config: ""}
+	]
 description: The walkthrough shows how to update INTERJECT to the newest version
 ---
 * * *
@@ -45,7 +58,7 @@ Once Excel has been closed click **Update** to continue to the update.
 ![](/images/Updating/05.png)
 <br>
 
-If you have any active or hidden Excel files open, the Add-in Manager will tell you which files are open and whether they've been saved. To avoid losing your work, please save the files and close Excel before continuing
+If you have any active or hidden Excel files open, the Addin Manager will tell you which files are open and whether they've been saved. To avoid losing your work, please save the files and close Excel before continuing
 
 ![](/images/Updating/CloseExcel.png)
 <br>

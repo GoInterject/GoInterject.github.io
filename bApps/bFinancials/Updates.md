@@ -6,7 +6,9 @@ keywords: [Account, Epicor, Companies]
 headings: ["To Check for Your Current Version", "Click Your Version Below for Release Notes and Update Scripts", "Current Version Notes", "Updating", "Rolling Back One Version"]
 links: ["https://drive.google.com/file/d/1yqewNlhX4tm5jDo-J1lnEjz8qe-w9gqO/view?usp=sharing", "https://drive.google.com/file/d/1b6VJploEafuftn9UP9Mqdt4F7ywbsqju/view?usp=sharing", "https://drive.google.com/file/d/1jcotjzfZnS9Pn7lR2BguVpzhfoSYzBGa/view?usp=sharing", "https://drive.google.com/file/d/1Ol_mK9cseyhOwuzZ45FQiIuJAA75ETNt/view?usp=sharing", "https://drive.google.com/file/d/1QE_3izgZQwMjCFgWubGv0C5wKAgiTAUV/view?usp=sharing", "https://drive.google.com/file/d/18nGnIljPN9mgxxUaQRGMj5G7t1MBiUtH/view?usp=sharing", "https://docs.gointerject.com/bApps/bFinancials/Technical-Install.html"]
 image_dir: "A-InitialDataLoad"
-images: [{file: "VersionConfirm", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}]
+images: [
+	{file: "VersionConfirm", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
+	]
 description: Interject™ Financials for Epicor Enterprise (This would cover topics that are specific to integration with Epicor Enterprise, and would potentially be different for each ERP)
 ---
 

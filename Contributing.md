@@ -7,7 +7,30 @@ keywords: [best practices, standards, editing, changes, format, style, consisten
 headings: ["Overview", "Setting Up A Local Environment", "Commit Messages", "Screenshots", "Screenshot Software Requirements", "When to Include a Screenshot", "Click Action (Arrow)", "Highlighting & Emphasizing", "Multi-Step Actions in a Single Screenshot (Numbered Steps)", "Emphasizing Text or a Point in a Screenshot", "Note on Complex Screenshots", "Note on Popups in Screenshots", "Screenshots of Excel Content", "Tab Navigation in Screenshots", "Screenshots Size", "Spacing Surrounding Screenshots", "Interject Company", "Hiding Credentials", "Uploading and Saving Screenshots to the Documentation Site", "Jekyll Front Matter", "Entries", "Images Entry", "Headings", "Table of Contents", "Grammar/Spelling", "Referencing Buttons and Text", "Lists", "Tables", "Links", "Code Blocks", "Consistency"]
 links: ["https://app.clickup.com/8587490/v/dc/86272-35740/86272-32800", "https://github.com/GoInterject/GoInterject.github.io", "https://www.techsmith.com/screen-capture.html"]
 image_dir: "Contributing"
-images: [{file: "01", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "CloneCopyClick", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "CommandPromptNavigate", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "PullRequestClick", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "PullRequestChooseBranches", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "PullRequestReviewer", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "08", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "09", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "10", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "11", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "12", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "13", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "14", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "15", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "16", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "17", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "18", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "19", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "19", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "InterjectDevelopment", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "EmailBlurred", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "DummyEmailDisplayed", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}]
+images: [
+	{file: "01", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "CloneCopyClick", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "CommandPromptNavigate", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "PullRequestClick", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "PullRequestChooseBranches", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "PullRequestReviewer", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "08", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "09", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "10", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "11", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "12", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "13", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "14", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "15", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "16", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "17", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "18", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "19", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "19", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "InterjectDevelopment", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "EmailBlurred", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "DummyEmailDisplayed", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
+	]
 description: Hello and thank you for wanting to make a contribution to Interject. These are the guidelines that we use to make sure our documentation is the highest quality, and consistent. Included in this document is the documentation cycle from creation to approval.
 ---
 * * *
@@ -305,7 +328,7 @@ The images entry for the front matter contain a nested json list of images with 
 
 - file: Name of the image file (without the extension)
 - type: The type of file (e.g. png or jpg or gif)
-- site: The site origin of the image (e.g. Addin, Portal, Windows)
+- site: The site origin of the image (e.g. Add-in, Portal, Windows)
 - cat: The main category of the image (e.g. pull data, save data, report library)
 - sub: The subcategory of the image (e.g. more details of the category of the image)
 - report: If a report title, Excel tab, or file is displayed or referenced list the name here
@@ -317,7 +340,13 @@ Blank entries are an empty string ("").
 Here is an example of a images entry:
 
 ```
-images: [{file: "NewDataPortal", type: "png", site: "Portal", cat: "Data Portals", sub: "", report: "", ribbon: "", config: ""}, {file: "DataPortalDetails", type: "png", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "AddSystemParameter", type: "png", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "ChangeReportSaveFunction", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}, {file: "SPCurrentDate", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}]
+images: [
+	{file: "NewDataPortal", type: "png", site: "Portal", cat: "Data Portals", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "DataPortalDetails", type: "png", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "AddSystemParameter", type: "png", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "ChangeReportSaveFunction", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}, 
+	{file: "SPCurrentDate", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}
+	]
 ```
 
 For more specific examples of what to put in the cat and sub entries, see existing pages.

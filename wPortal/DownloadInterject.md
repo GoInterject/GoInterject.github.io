@@ -7,7 +7,7 @@ headings: ["Overview"]
 links: []
 image_dir: ""
 images: [
-    {file: "", type: "png", site: "Addin", cat: "", sub: "", report: "", ribbon: "", config: ""}
+    {file: "", type: "png", site: "Add-in", cat: "", sub: "", report: "", ribbon: "", config: ""}
 ]
 description: 
 ---

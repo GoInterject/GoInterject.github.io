@@ -6,7 +6,20 @@ keywords: [login, ribbon, logout, new login, credentials, accounts, user]
 headings: ["Overview", "Initial Interject Login", "New Login", "Logging Out", "Log Back In", "Switch Accounts", "Forgetting Login Credentials"]
 links: []
 image_dir: "LogginIn"
-images: [{file: "interject-ribbon-advanced-menu-login-revised", type: "png", site: "Interject", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, {file: "SignIntoInterjectClick", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, {file: "InterjectAccountCredentials", type: "png", site: "Interject", cat: "Enter Credentials", sub: "", report: "", ribbon: "", config: ""}, {file: "LoginManager", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, {file: "interject-ribbon-advanced-menu-login-revised", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "Simple", config: ""}, {file: "NewLoginClick", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, {file: "EllipsesLogout", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, {file: "RibbonLogout", type: "png", site: "Interject", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, {file: "LogoutPrompt", type: "png", site: "Interject", cat: "Popup", sub: "Logout", report: "", ribbon: "", config: ""}, {file: "LogBackIn", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, {file: "SwitchAccounts", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, {file: "LogoutForget", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}]
+images: [
+	{file: "interject-ribbon-advanced-menu-login-revised", type: "png", site: "Interject", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, 
+	{file: "SignIntoInterjectClick", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "InterjectAccountCredentials", type: "png", site: "Interject", cat: "Enter Credentials", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "LoginManager", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "interject-ribbon-advanced-menu-login-revised", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "Simple", config: ""}, 
+	{file: "NewLoginClick", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "EllipsesLogout", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "RibbonLogout", type: "png", site: "Interject", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, 
+	{file: "LogoutPrompt", type: "png", site: "Interject", cat: "Popup", sub: "Logout", report: "", ribbon: "", config: ""}, 
+	{file: "LogBackIn", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "SwitchAccounts", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "LogoutForget", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}
+	]
 description: Logging in is simple and fast! Interject will remember your login and sign you in automatically subsequent visits. You can also add multiple logins and switch accounts easily.
 ---
 * * *

@@ -6,7 +6,23 @@ keywords: [login, ribbon, logout, new login, credentials, accounts, enterprise, 
 headings: ["Overview", "Initial Enterprise Login", "New Login", "Logging Out", "Log Back In", "Switch Accounts", "Forgetting Login Credentials", "Clearing Login Cookies"]
 links: []
 image_dir: "Login-Enterprise"
-images: [{file: "interject-ribbon-advanced-menu-login-revised", type: "png", site: "Interject", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, {file: "SignIntoInterjectClick", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, {file: "EnterpriseLoginCode", type: "png", site: "Interject", cat: "Enter Credentials", sub: "", report: "", ribbon: "", config: ""}, {file: "SelectProvider", type: "png", site: "Interject", cat: "Enter Credentials", sub: "", report: "", ribbon: "", config: ""}, {file: "FederatedLogin", type: "png", site: "Interject", cat: "Federated Login", sub: "", report: "", ribbon: "", config: ""}, {file: "EnterpriseLoggedIn", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, {file: "interject-ribbon-advanced-menu-login-revised", type: "png", site: "Interject", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, {file: "NewLogin", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, {file: "Logout", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, {file: "RibbonLogout", type: "png", site: "Interject", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, {file: "LogoutPrompt", type: "png", site: "Interject", cat: "Popup", sub: "Logout", report: "", ribbon: "", config: ""}, {file: "LogBackIn", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, {file: "SwitchAccounts", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, {file: "LogoutForget", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, {file: "ClearLoginCookies", type: "png", site: "Interject", cat: "Diagnostics", sub: "Clear External Login Cookies", report: "", ribbon: "Advanced", config: ""}]
+images: [
+	{file: "interject-ribbon-advanced-menu-login-revised", type: "png", site: "Interject", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, 
+	{file: "SignIntoInterjectClick", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "EnterpriseLoginCode", type: "png", site: "Interject", cat: "Enter Credentials", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "SelectProvider", type: "png", site: "Interject", cat: "Enter Credentials", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "FederatedLogin", type: "png", site: "Interject", cat: "Federated Login", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "EnterpriseLoggedIn", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "interject-ribbon-advanced-menu-login-revised", type: "png", site: "Interject", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, 
+	{file: "NewLogin", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Logout", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "RibbonLogout", type: "png", site: "Interject", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, 
+	{file: "LogoutPrompt", type: "png", site: "Interject", cat: "Popup", sub: "Logout", report: "", ribbon: "", config: ""}, 
+	{file: "LogBackIn", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "SwitchAccounts", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "LogoutForget", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ClearLoginCookies", type: "png", site: "Interject", cat: "Diagnostics", sub: "Clear External Login Cookies", report: "", ribbon: "Advanced", config: ""}
+	]
 description: Logging in is simple and fast! Interject will remember your login and sign you in automatically subsequent visits.You can also add multiple logins and switch accounts easily.
 ---
 * * *
@@ -15,7 +31,7 @@ description: Logging in is simple and fast! Interject will remember your login a
 
 Logging in is simple and fast! Interject will remember your login for 30 days. You can also add multiple logins and switch accounts easily.
 
-Once a federated identity is configured for an Interject client, users can provide an accompanying enterprise login code and login to Interject with their federated identity. This page describes how to use the login from the Interject Excel Addin.
+Once a federated identity is configured for an Interject client, users can provide an accompanying enterprise login code and login to Interject with their federated identity. This page describes how to use the login from the Interject Excel Add-in.
 
 <blockquote class=highlight_note>
 <b>Note:</b> This page uses Interject version 2.5.0.19 for the content and screenshots.
@@ -54,7 +70,7 @@ You can verify you are logged in by the Login Manager Window.
 <br>
 
 <blockquote class=highlight_note>
-<b>Note:</b> Some login pages may have a "Remember Me" or a "Save Login" checkbox to save time the next time the user comes to the login page. These features are not guaranteed to work while logging in using the Interject federated login approach. The browser enabling these federated login pages is Webview2 and not the user's standard browser and is not accessible from within the Excel Addin.
+<b>Note:</b> Some login pages may have a "Remember Me" or a "Save Login" checkbox to save time the next time the user comes to the login page. These features are not guaranteed to work while logging in using the Interject federated login approach. The browser enabling these federated login pages is Webview2 and not the user's standard browser and is not accessible from within the Excel Add-in.
 </blockquote>
 
 ### New Login

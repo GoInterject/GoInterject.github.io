@@ -6,7 +6,18 @@ keywords: [Report, Epicor, Accounts]
 headings: ["Preparing the FRx Report Specification File for Migration", "Finding the FRx Report Specification File", "Converting the .F32 file to an MS Access .MDB File", "Remove the Database Password"]
 links: []
 image_dir: "A-InitialDataLoad"
-images: [{file: "FRXCompanyInfo", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "F32File", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "SaveLocalFRX", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ClickThroughErrors", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "SaveNewFile", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "EnableContent", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "OpenOtherFiles", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "BrowseFile", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "OpenExclusive", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "UnsetPW", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}]
+images: [
+	{file: "FRXCompanyInfo", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "F32File", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "SaveLocalFRX", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ClickThroughErrors", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "SaveNewFile", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "EnableContent", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "OpenOtherFiles", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "BrowseFile", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "OpenExclusive", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "UnsetPW", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
+	]
 description: Step by step guide on data tier, initial data load, FRx Migration, and other key processes of installing of Interject for Financials Epicor Enterprise.
 ---
 

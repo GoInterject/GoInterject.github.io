@@ -1,12 +1,20 @@
 ---
-title: Addins Missing
+title: Add-ins Missing
 filename: "Addin-Missing.md"
 layout: custom
 keywords: [app, addin, missing, reset]
 headings: ["Overview", "Reset via System Tray", "Reset via Interject Addin Manager", "Reset via Developer Tab"]
 links: []
 image_dir: "Addin-Missing"
-images: [{file: "Interject-Missing-From-Ribbon", type: "png", site: "Excel", cat: "Ribbon", sub: "", report: "", ribbon: "", config: ""}, {file: "System-Tray", type: "png", site: "Windows", cat: "Task Bar", sub: "Interject Task Bar Menu", report: "", ribbon: "", config: ""}, {file: "Windows-Search", type: "png", site: "Windows", cat: "Start Menu", sub: "", report: "", ribbon: "", config: ""}, {file: "Reset-Excel-Addins", type: "png", site: "Addin", cat: "Addin Manager", sub: "Reset Excel Addins", report: "", ribbon: "", config: ""}, {file: "Show-Developer-Tab", type: "png", site: "Excel", cat: "Customize Ribbon", sub: "", report: "", ribbon: "", config: ""}, {file: "Addin-Interject", type: "png", site: "Excel", cat: "Add-ins", sub: "", report: "", ribbon: "", config: ""}, {file: "Com-Interject", type: "png", site: "Excel", cat: "COM Add-ins", sub: "", report: "", ribbon: "", config: ""}]
+images: [
+	{file: "Interject-Missing-From-Ribbon", type: "png", site: "Excel", cat: "Ribbon", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "System-Tray", type: "png", site: "Windows", cat: "Task Bar", sub: "Interject Task Bar Menu", report: "", ribbon: "", config: ""}, 
+	{file: "Windows-Search", type: "png", site: "Windows", cat: "Start Menu", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Reset-Excel-Addins", type: "png", site: "Add-in", cat: "Addin Manager", sub: "Reset Excel Addins", report: "", ribbon: "", config: ""}, 
+	{file: "Show-Developer-Tab", type: "png", site: "Excel", cat: "Customize Ribbon", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Addin-Interject", type: "png", site: "Excel", cat: "Add-ins", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Com-Interject", type: "png", site: "Excel", cat: "COM Add-ins", sub: "", report: "", ribbon: "", config: ""}
+	]
 description: Every once in a while, Excel Add-ins may end up missing or fail to load in Excel. If your Interject addin is missing, you can follow these steps to reset it.
 ---
 * * *

@@ -7,11 +7,11 @@ headings: ["Overview", "Diagnostic Pane Fields", "Public", "System Tools", "Supp
 links: ["/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#advanced-menu-items", "/wIndex/Diagnostics-SpecialFeatures.html", "/wIndex/Diagnostics-ShortKey.html"]
 image_dir: "Diagnostics"
 images: [
- {file: "Ribbon", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
- {file: "DiagnosticsPaneFields2", type: "png", site: "Addin", cat: "Diagnostics", sub: "", report: "", ribbon: "", config: ""}, 
- {file: "Public2", type: "png", site: "Addin", cat: "Diagnostics", sub: "Public", report: "", ribbon: "", config: ""}, 
- {file: "SystemTools2", type: "png", site: "Addin", cat: "Diagnostics", sub: "System Tools", report: "", ribbon: "", config: ""}, 
- {file: "Support2", type: "png", site: "Addin", cat: "Diagnostics", sub: "Support", report: "", ribbon: "", config: ""}
+ {file: "Ribbon", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
+ {file: "DiagnosticsPaneFields2", type: "png", site: "Add-in", cat: "Diagnostics", sub: "", report: "", ribbon: "", config: ""}, 
+ {file: "Public2", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Public", report: "", ribbon: "", config: ""}, 
+ {file: "SystemTools2", type: "png", site: "Add-in", cat: "Diagnostics", sub: "System Tools", report: "", ribbon: "", config: ""}, 
+ {file: "Support2", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Support", report: "", ribbon: "", config: ""}
  ]
 description: The Diagnostics feature of Interject allows users to set and change numerous configurations within Excel as well as utilize various tools for diagnostics and debugging.
 ---

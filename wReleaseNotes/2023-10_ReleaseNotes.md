@@ -3,7 +3,7 @@ title: Release Notes
 filename: "2023-10_ReleaseNotes.md"
 layout: custom
 keywords: [change log, updates, versions, history, what's new]
-headings: ["October 2023", "Excel Addin v2.5.0.22", "Portal Site", "Interject Platform", "Documentation Updates"]
+headings: ["October 2023", "Excel Add-in v2.5.0.22", "Portal Site", "Interject Platform", "Documentation Updates"]
 links: ["/wDeveloper/SetupjDataPortal.html", "/wDeveloper/InstallerValidation.html", "/wDeveloper/ConditionalAccess.html", "/wTroubleshoot/Validation-Report.html", "/wDeveloper/InstallerValidation.html", "/wDeveloper/ConditionalAccess.html", "/wGetStarted/L-Drill-FinancialReport.html", "/wDeveloper/L-Dev-EditingDataSave.html", "/wDeveloper/L-Dev-InsertDeleteDataSave.html", "/wDeveloper/SetupjDataPortal.html"]
 image_dir: ""
 images: []
@@ -13,7 +13,7 @@ description: Release notes for this month's updates
 
 ## October 2023
 
-### Excel Addin v2.5.0.22
+### Excel Add-in v2.5.0.22
 
 _Released 10/13/23_
 

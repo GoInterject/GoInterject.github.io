@@ -10,7 +10,7 @@ images: [
 	{file: "MyAppsPage", type: "png", site: "Portal", cat: "My Apps", sub: "", report: "", ribbon: "", config: ""},
 	{file: "Expiration", type: "png", site: "Portal", cat: "My Apps", sub: "", report: "", ribbon: "", config: ""},
 	{file: "InterjectDemoApp", type: "png", site: "Portal", cat: "My Apps", report: "", ribbon: "", config: ""},
-	{file: "ReportLibrarySubscriptions", type: "png", site: "Addin", cat: "Report Library", sub: "", report: "", ribbon: "", config: ""},
+	{file: "ReportLibrarySubscriptions", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "", ribbon: "", config: ""},
 	{file: "ConnectionRedirect", type: "png", site: "Portal", cat: "My Apps", sub: "Connection Redirect", report: "", ribbon: "", config: ""},
 	{file: "RedirectionDisplayed", type: "png", site: "Portal", cat: "My Apps", sub: "Connection Redirect", report: "", ribbon: "", config: ""},
 	{file: "DeleteRedirection", type: "png", site: "Portal", cat: "My Apps", sub: "Connection Redirect", report: "", ribbon: "", config: ""}

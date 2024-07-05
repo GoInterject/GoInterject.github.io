@@ -6,7 +6,51 @@ keywords: [menu, items, ribbon, buttons, index]
 headings: ["Overview", "Simple Menu Items", "Advanced Menu Items", "Report Library", "Pull Data", "Save Data", "Drill on Data", "Return From Drill", "Custom Commands", "Quick Tools", "Export Book", "Report Builder", "Sheet Protector", "Login/Logout", "Connections", "Company", "Validation Report", "JSON", "Diagnostics", "System", "Check For Updates", "Online Training", "User Support", "About Interject"]
 links: ["/wAbout/Report-Library-Basics.html", "/wAbout/Customer-Aging.html", "/wIndex/ReportSave.html", "/wAbout/Tabular-vs-Data-Cells.html", "/wGetStarted/Drilling-Between-Reports.html", "/wAbout/Inventory-Reports.html#return-from-drill-and-re-drill", "/wAbout/Tabular-vs-Data-Cells.html#data-cells", "/wDeveloper/CustomItems.html", "/wIndex/Quick-Tools-Landing.html", "/wGetStarted/Exporting-Reports.html", "/wIndex/ReportRange.html", "/wGetStarted/L-Create-CustomerAging.html", "/wGetStarted/L-Create-Protecting.html", "/wAbout/Logging-In.html", "/wDeveloper/ConnectionManager.html", "/wAbout/Report-Library-Basics.html", "/wPortal/Data-Connections.html", "/wTroubleshoot/Validation-Report.html", "/wIndex/Data-Functions-Landing.html", "/wIndex/ReportSave.html", "/wPortal/Data-Connections.html", "/wAbout/Updating-INTERJECT.html", "https://docs.gointerject.com/", "/wTroubleshoot/Reporting-A-Problem.html"]
 image_dir: "InterjectRibbon"
-images: [{file: "RibbonAdvancedMenuButton", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, {file: "RibbonSimpleMenu", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, {file: "RibbonSimpleMenuButton", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, {file: "RibbonAdvancedMenu", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, {file: "04", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, {file: "05", type: "png", site: "Addin", cat: "Report Library", sub: "", report: "", ribbon: "", config: ""}, {file: "06", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, {file: "07", type: "png", site: "Addin", cat: "Pull Data", sub: "", report: "", ribbon: "", config: ""}, {file: "09", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, {file: "SaveAdditionalOptions", type: "png", site: "Addin", cat: "Save Data", sub: "", report: "", ribbon: "", config: ""}, {file: "12", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, {file: "13", type: "png", site: "Addin", cat: "Data Drill", sub: "", report: "", ribbon: "", config: ""}, {file: "14", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, {file: "15", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, {file: "16", type: "png", site: "Addin", cat: "Custom Commands", sub: "Scheduled Items", report: "", ribbon: "", config: ""}, {file: "17", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, {file: "18", type: "png", site: "Addin", cat: "Quick Tools", sub: "", report: "", ribbon: "", config: ""}, {file: "21", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, {file: "22", type: "png", site: "Addin", cat: "Distribution", sub: "", report: "", ribbon: "", config: ""}, {file: "23", type: "png", site: "Addin", cat: "Distribution", sub: "", report: "", ribbon: "", config: ""}, {file: "24", type: "png", site: "Addin", cat: "Distribution", sub: "", report: "", ribbon: "", config: ""}, {file: "25", type: "png", site: "Addin", cat: "Distribution", sub: "", report: "", ribbon: "", config: ""}, {file: "26", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, {file: "27", type: "png", site: "Addin", cat: "Report Builder", sub: "", report: "", ribbon: "", config: ""}, {file: "28", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, {file: "Login-Logout", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, {file: "Connections", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, {file: "ConnectionsWindow", type: "png", site: "Addin", cat: "Manage Connections", sub: "", report: "", ribbon: "", config: ""}, {file: "Company", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, {file: "31", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, {file: "33", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, {file: "34", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, {file: "35", type: "png", site: "Addin", cat: "Diagnostics", sub: "", report: "", ribbon: "", config: ""}, {file: "36", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, {file: "37", type: "png", site: "Addin", cat: "Ribbon", sub: "System Menu", report: "", ribbon: "Advanced", config: ""}, {file: "38", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, {file: "39", type: "png", site: "Addin", cat: "Check For Updates", sub: "", report: "", ribbon: "", config: ""}, {file: "40", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, {file: "41", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, {file: "42", type: "png", site: "Addin", cat: "Support", sub: "Contact Interject", report: "", ribbon: "", config: ""}, {file: "43", type: "png", site: "Addin", cat: "Support", sub: "Report a Problem", report: "", ribbon: "", config: ""}, {file: "44", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, {file: "45", type: "png", site: "Addin", cat: "About Interject", sub: "", report: "", ribbon: "", config: ""}]
+images: [
+	{file: "RibbonAdvancedMenuButton", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, 
+	{file: "RibbonSimpleMenu", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, 
+	{file: "RibbonSimpleMenuButton", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
+	{file: "RibbonAdvancedMenu", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
+	{file: "04", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
+	{file: "05", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "06", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
+	{file: "07", type: "png", site: "Add-in", cat: "Pull Data", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "09", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
+	{file: "SaveAdditionalOptions", type: "png", site: "Add-in", cat: "Save Data", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "12", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
+	{file: "13", type: "png", site: "Add-in", cat: "Data Drill", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "14", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
+	{file: "15", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
+	{file: "16", type: "png", site: "Add-in", cat: "Custom Commands", sub: "Scheduled Items", report: "", ribbon: "", config: ""}, 
+	{file: "17", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
+	{file: "18", type: "png", site: "Add-in", cat: "Quick Tools", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "21", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
+	{file: "22", type: "png", site: "Add-in", cat: "Distribution", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "23", type: "png", site: "Add-in", cat: "Distribution", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "24", type: "png", site: "Add-in", cat: "Distribution", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "25", type: "png", site: "Add-in", cat: "Distribution", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "26", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
+	{file: "27", type: "png", site: "Add-in", cat: "Report Builder", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "28", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
+	{file: "Login-Logout", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
+	{file: "Connections", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
+	{file: "ConnectionsWindow", type: "png", site: "Add-in", cat: "Manage Connections", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Company", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
+	{file: "31", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
+	{file: "33", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
+	{file: "34", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
+	{file: "35", type: "png", site: "Add-in", cat: "Diagnostics", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "36", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
+	{file: "37", type: "png", site: "Add-in", cat: "Ribbon", sub: "System Menu", report: "", ribbon: "Advanced", config: ""}, 
+	{file: "38", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
+	{file: "39", type: "png", site: "Add-in", cat: "Check For Updates", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "40", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
+	{file: "41", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
+	{file: "42", type: "png", site: "Add-in", cat: "Support", sub: "Contact Interject", report: "", ribbon: "", config: ""}, 
+	{file: "43", type: "png", site: "Add-in", cat: "Support", sub: "Report a Problem", report: "", ribbon: "", config: ""}, 
+	{file: "44", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
+	{file: "45", type: "png", site: "Add-in", cat: "About Interject", sub: "", report: "", ribbon: "", config: ""}
+	]
 description: Overviews of each button in the Interject Excel Ribbon.
 ---
 * * *
@@ -320,7 +364,7 @@ The operation System contains a large number of options.
 
 ### Check For Updates
 
-Checks for updates to the Interject Addin. This applies to installations downloaded from the website. If an IT department installed Interject on a network, there is no need to check for updates. For more information, see [Updating Interject](/wAbout/Updating-INTERJECT.html).
+Checks for updates to the Interject Add-in. This applies to installations downloaded from the website. If an IT department installed Interject on a network, there is no need to check for updates. For more information, see [Updating Interject](/wAbout/Updating-INTERJECT.html).
 
 ![](/images/InterjectRibbon/38.png)
 <br>

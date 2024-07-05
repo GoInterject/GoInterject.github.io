@@ -6,7 +6,13 @@ keywords: [report, test, data, connection, user support]
 headings: ["Overview"]
 links: []
 image_dir: "TestingDataConnections"
-images: [{file: "25", type: "jpg", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "Simple", config: "Yes"}, {file: "26", type: "jpg", site: "Addin", cat: "Ribbon", sub: "System", report: "Customer Aging Summary", ribbon: "Advanced", config: "Yes"}, {file: "27", type: "jpg", site: "Addin", cat: "Check Connection", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "28", type: "jpg", site: "Addin", cat: "Check Connection", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "CheckConnectionError", type: "png", site: "Addin", cat: "Check Connection", sub: "", report: "", ribbon: "", config: ""}]
+images: [
+	{file: "25", type: "jpg", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "Simple", config: "Yes"}, 
+	{file: "26", type: "jpg", site: "Add-in", cat: "Ribbon", sub: "System", report: "Customer Aging Summary", ribbon: "Advanced", config: "Yes"}, 
+	{file: "27", type: "jpg", site: "Add-in", cat: "Check Connection", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, 
+	{file: "28", type: "jpg", site: "Add-in", cat: "Check Connection", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, 
+	{file: "CheckConnectionError", type: "png", site: "Add-in", cat: "Check Connection", sub: "", report: "", ribbon: "", config: ""}
+	]
 description: Before setting up a Data Connection to a Database, you can verify that the connection can be established within Excel by accessing the Check Connection window.
 ---
 * * *
