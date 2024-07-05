@@ -7,21 +7,21 @@ headings: ["Overview", "Initial Enterprise Login", "New Login", "Logging Out", "
 links: []
 image_dir: "Login-Enterprise"
 images: [
-	{file: "interject-ribbon-advanced-menu-login-revised", type: "png", site: "Interject", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, 
-	{file: "SignIntoInterjectClick", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "EnterpriseLoginCode", type: "png", site: "Interject", cat: "Enter Credentials", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "SelectProvider", type: "png", site: "Interject", cat: "Enter Credentials", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "FederatedLogin", type: "png", site: "Interject", cat: "Federated Login", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "EnterpriseLoggedIn", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "interject-ribbon-advanced-menu-login-revised", type: "png", site: "Interject", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, 
-	{file: "NewLogin", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "Logout", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "RibbonLogout", type: "png", site: "Interject", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, 
-	{file: "LogoutPrompt", type: "png", site: "Interject", cat: "Popup", sub: "Logout", report: "", ribbon: "", config: ""}, 
-	{file: "LogBackIn", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "SwitchAccounts", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "LogoutForget", type: "png", site: "Interject", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "ClearLoginCookies", type: "png", site: "Interject", cat: "Diagnostics", sub: "Clear External Login Cookies", report: "", ribbon: "Advanced", config: ""}
+	{file: "interject-ribbon-advanced-menu-login-revised", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, 
+	{file: "SignIntoInterjectClick", type: "png", site: "Add-in", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "EnterpriseLoginCode", type: "png", site: "Add-in", cat: "Enter Credentials", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "SelectProvider", type: "png", site: "Add-in", cat: "Enter Credentials", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "FederatedLogin", type: "png", site: "Add-in", cat: "Federated Login", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "EnterpriseLoggedIn", type: "png", site: "Add-in", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "interject-ribbon-advanced-menu-login-revised", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, 
+	{file: "NewLogin", type: "png", site: "Add-in", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Logout", type: "png", site: "Add-in", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "RibbonLogout", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, 
+	{file: "LogoutPrompt", type: "png", site: "Add-in", cat: "Popup", sub: "Logout", report: "", ribbon: "", config: ""}, 
+	{file: "LogBackIn", type: "png", site: "Add-in", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "SwitchAccounts", type: "png", site: "Add-in", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "LogoutForget", type: "png", site: "Add-in", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ClearLoginCookies", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Clear External Login Cookies", report: "", ribbon: "Advanced", config: ""}
 	]
 description: Logging in is simple and fast! Interject will remember your login and sign you in automatically subsequent visits.You can also add multiple logins and switch accounts easily.
 ---

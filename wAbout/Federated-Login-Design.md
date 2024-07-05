@@ -8,9 +8,9 @@ links: ["https://duendesoftware.com/products/identityserver", "/wAbout/logging-i
 image_dir: "Federated-Login-Design"
 images: [
 	{file: "FederatedLoginFlowchart", type: "png", site: "External", cat: "Flow Chart", sub: "Login Process", report: "", ribbon: "", config: ""}, 
-	{file: "EnterpriseLoginFlowchart", type: "png", site: "Interject", cat: "Login", sub: "Federated Login", report: "", ribbon: "", config: ""}, 
+	{file: "EnterpriseLoginFlowchart", type: "png", site: "Add-in", cat: "Login", sub: "Federated Login", report: "", ribbon: "", config: ""}, 
 	{file: "FileExplorer", type: "png", site: "Windows", cat: "Explorer", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "DiagnosticsRibbon", type: "png", site: "Interject", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
+	{file: "DiagnosticsRibbon", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
 	{file: "Diagnostics", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Open User Folders", report: "", ribbon: "", config: ""}, 
 	{file: "DualLogins", type: "png", site: "Add-in", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}
 	]
