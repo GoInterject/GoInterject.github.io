@@ -94,7 +94,9 @@ In the title field, type **Filters** then in the **Refers to cells** field, sele
 ![](/images/L-Create-Protecting/06.jpg)
 <br>
 
-**Note:** If the password field is left empty for the named range then anyone can use the filters for the report but they cannot change the data outside of the filter range.
+<blockquote class=highlight_note>
+<b>Note:</b> If the password field is left empty for the named range then anyone can use the filters for the report but they cannot change the data outside of the filter range.
+</blockquote>
 <br>
 
 ### Protecting the Sheet and Pulling Data
@@ -154,7 +156,10 @@ The Interject Sheet Protector also allows for groupings to be expanded and contr
 ![](/images/L-Create-Protecting/15.jpg)
 <br>
 
-**Note:** Interject leverages the existing sheet protector in native Excel. For this reason, most of the restrictions and rights are the same.
+<blockquote class=highlight_note>
+<b>Note:</b> Interject leverages the existing sheet protector in native Excel. For this reason, most of the restrictions and rights are the same.
+</blockquote>
+<br>
 
 Directly after protecting a sheet, groupings are still operational.
 

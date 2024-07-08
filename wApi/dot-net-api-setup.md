@@ -54,7 +54,11 @@ With Git, you can clone the repository directly to your system. Navigate to the 
 git clone https://github.com/GoInterject/ids-dotnet-api.git
 ```
 
-**Note:** If this repo is private and you need access, please [contact us](mailto:help@gointerject.com). It will be public soon.
+<br>
+<blockquote class=highlight_note>
+<b>Note:</b> If this repo is private and you need access, please <a href="mailto:help@gointerject.com">contact us</a>. It will be public soon.
+</blockquote>
+<br>
 
 Alternatively you can download the [zip file](https://github.com/GoInterject/ids-dotnet-api/archive/refs/heads/main.zip){:target="_blank"}{:rel="noopener noreferrer"} and unpack manually:
 

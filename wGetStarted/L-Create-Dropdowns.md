@@ -66,21 +66,21 @@ In this example you will modify the [Customer Aging report](/wGetStarted/L-Creat
 
 ### Adding a Named Range
 
-**Step 1:** Now select the **Formulas** ribbon tab and select **Name Manager**.
+**Step 1:** Select cell H7:
 
-![](/images/L-Create-Dropdowns/03.png)
+**Step 2:** Click the **Quick Tools** button on the Interject ribbon and select "Create Range Name for Sheet":
+
+![](/images/L-Create-Dropdowns/QuickTools.png)
 <br>
 
-**Step 2:** Next, select **New...**.
+**Step 3:** Enter "CompanyNameDDL" in the field and click **OK**:
 
-![](/images/L-Create-Dropdowns/04.png)
+![](/images/L-Create-Dropdowns/EnterRangeName.png)
 <br>
 
-**Step 3:** For the **Name:** field input **CompanyNameDDL**, and in the **Refers to:** field input **=CustomerAging!$H$7**. Click **OK** and **Close** the Name Manager window.
-
-![](/images/L-Create-Dropdowns/05.png)
-
-**Note:** A named range is used here so that upon the movement of the formula, the hyperlink that is created later will still reference the cell with the jDropdown() formula.
+<blockquote class=highlight_note>
+<b>Note:</b> A named range is used here so that upon the movement of the formula, the hyperlink that is created later will still reference the cell with the jDropdown() formula.
+</blockquote>
 <br>
 
 ### Creating the Formula

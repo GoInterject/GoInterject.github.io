@@ -87,7 +87,10 @@ Interject will create the Distribution worksheet in the existing workbook and wi
 ![](/images/L-Export-BasicDist/08.png)
 <br>
 
-**Note:** The **Enabled?** column contains a drop down list of options that can be applied to the tabs, on an individual basis, which are being created.
+<blockquote class=highlight_note>
+<b>Note:</b> The <b>Enabled?</b> column contains a drop down list of options that can be applied to the tabs, on an individual basis, which are being created.
+</blockquote>
+<br>
 
 * **Blank -** When the enabled column is set to blank, Interject interprets this as a **Yes** value and automatically pulls the data after the report is created.
 * **Yes -** When this column value is set to **Yes** then distribution report builder will automatically create the reports **And** pull the data.

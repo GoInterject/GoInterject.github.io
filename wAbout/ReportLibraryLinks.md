@@ -71,7 +71,10 @@ The new report now appears in the Library:
 ![](/images/ReportLibraryLinks/NewLinkCreated.png)
 <br>
 
-Note: If the file is not saved locally you will be prompted to save the file first before you can upload the file to the Report Library:
+<blockquote class=highlight_note>
+<b>Note:</b> If the file is not saved locally you will be prompted to save the file first before you can upload the file to the Report Library.
+</blockquote>
+<br>
 
 ![](/images/ReportLibraryLinks/SaveFileExplorer.png)
 <br>

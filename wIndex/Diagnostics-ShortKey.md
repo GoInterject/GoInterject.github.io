@@ -29,7 +29,10 @@ These settings are found in the IdsSettings.xml file. For example, an entry in t
 
 \<ReportLibrary\>Ctrl+Shift+A\</ReportLibrary\> (Report Library is assigned to the shortkey Ctrl+Shift+A)
 
-**Note:** You cannot change a shortkey that is currently in use. You must first reassign the action that is set to that shortkey. Also, shortkey changes here will override Excel's shortkey assignments.
+<blockquote class=highlight_note>
+<b>Note:</b> You cannot change a shortkey that is currently in use. You must first reassign the action that is set to that shortkey. Also, shortkey changes here will override Excel's shortkey assignments.
+</blockquote>
+<br>
 
 ### Input Examples
 

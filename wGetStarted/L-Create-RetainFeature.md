@@ -90,7 +90,10 @@ Without using the RetainedRowColumns feature, if your formulas are on the same r
 ![](/images/L-Create-Retain/08.png)
 <br>
 
-**Note:** The reason that some of the rows do not lose their formulas is because they are what are considered summary rows. A ReportVariable() also contains detail rows which are rows that get deleted on a pull or clear.
+<blockquote class=highlight_note>
+<b>Note:</b> The reason that some of the rows do not lose their formulas is because they are what are considered summary rows. A ReportVariable() also contains detail rows which are rows that get deleted on a pull or clear.
+</blockquote>
+<br>
 
 ### With RetainedRowColumns
 

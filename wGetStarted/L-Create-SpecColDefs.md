@@ -73,7 +73,10 @@ Select cell **H2** and input **CreditLimit Addcomm:LastCredit**.
 ![](/images/L-Create-SpecColDefs/04.jpg)
 <br>
 
-Note: **Addcomm** designates the type of special column that you are using and **LastCredit** is the actual content in the comment.
+<blockquote class=highlight_note>
+<b>Note:</b> <b>Addcomm</b> designates the type of special column that you are using and <b>LastCredit</b> is the actual content in the comment.
+</blockquote>
+<br>
 
 Pull the data.
 
@@ -84,7 +87,10 @@ Place your cursor over cell **H27** and review the comment that is placed in the
 
 ![](/images/L-Create-SpecColDefs/06.jpg)
 
-**Note:** Not all of the cells have been changed, and so there is no comment created for those cells.
+<blockquote class=highlight_note>
+<b>Note:</b> Not all of the cells have been changed, and so there is no comment created for those cells.
+</blockquote>
+<br>
 
 ### Special Cell Value Hyperlink
 
@@ -93,7 +99,10 @@ Select cell **C2** and input **CompanyName hlink:MapsURL**.
 ![](/images/L-Create-SpecColDefs/07.jpg)
 <br>
 
-**Note:** The **MapsURL** segment of the **hlink** string designates a column built in the SQL stored procedure. The hlink string only links to a whole column of data you cannot concatenate values in Excel, but can in the SQL stored procedure as long as it results in a single column.
+<blockquote class=highlight_note>
+<b>Note:</b> The <b>MapsURL</b> segment of the <b>hlink</b> string designates a column built in the SQL stored procedure. The hlink string only links to a whole column of data you cannot concatenate values in Excel, but can in the SQL stored procedure as long as it results in a single column.
+</blockquote>
+<br>
 
 Pull the data.
 
@@ -110,7 +119,10 @@ Select cell **C27** and notice that it takes you to Google Maps.
 ![](/images/L-Create-SpecColDefs/10.jpg)
 <br>
 
-**Note:** The addresses may not be valid as they are fabricated data from the Northwind Database.
+<blockquote class=highlight_note>
+<b>Note:</b> The addresses may not be valid as they are fabricated data from the Northwind Database.
+</blockquote>
+<br>
 
 ### Special Cell Value Validation List
 
@@ -157,4 +169,3 @@ Click on the hyperlink in cell **C27** and notice that the functionality of the 
 <br>
 
 If there are any additional special column features that are not listed here or you have any questions, please contact Interject at info@gointerject.com.
-

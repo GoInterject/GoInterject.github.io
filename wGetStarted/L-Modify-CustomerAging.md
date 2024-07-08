@@ -102,7 +102,10 @@ Now that the report is formatted for the new data, you need to add formulas for 
 
 **Step 3:** In this instance, you are going to write a SUM Formula to get our totals. A simple example of this formula is shown in the image below.
 
-**Note:** This report is setup to place data starting in row 23, and that same row is considered the Formatting Range. You must put the formula on this row to be copied down with the data.
+<blockquote class=highlight_note>
+<b>Note:</b> This report is setup to place data starting in row 23, and that same row is considered the Formatting Range. You must put the formula on this row to be copied down with the data.
+</blockquote>
+<br>
 
 ![](/images/L-Modify-CustAging/11.png)
 <br>

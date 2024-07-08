@@ -85,4 +85,7 @@ The email will display the code needed to log in.
 ![](/images/MFA/Email.png)
 <br>
 
-**Note:** The email code expires in 5 minutes.
+<blockquote class=highlight_note>
+<b>Note:</b> The email code expires in 5 minutes.
+</blockquote>
+<br>

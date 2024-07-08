@@ -88,7 +88,10 @@ To install for everybody on the server, make sure the **Everybody** button is se
 ![](/images/SharedComputer/37.png)
 <br>
 
-**Note:** Other Install features are available. For instructions on advanced installs, click on the readme located in the ZIP file or refer to the text file in the dropdown below.
+<blockquote class=highlight_note>
+<b>Note:</b> Other Install features are available. For instructions on advanced installs, click on the readme located in the ZIP file or refer to the text file in the dropdown below.
+</blockquote>
+<br>
 
 <button class="collapsible">ReadMe File</button>
 <div markdown="1" class="panel">

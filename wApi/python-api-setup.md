@@ -48,7 +48,11 @@ Start by cloning the repository to your system.
 git clone https://github.com/GoInterject/ids-python-api
 ```
 
-Note: If this repo is private and you need access, please [contact us](mailto:help@gointerject.com). It will be public soon.
+<br>
+<blockquote class=highlight_note>
+<b>Note:</b> If this repo is private and you need access, please <a href="mailto:help@gointerject.com">contact us</a>. It will be public soon.
+</blockquote>
+<br>
 
 If you do not have git installed or prefer a different method, simply download the source code from the repository website.
 

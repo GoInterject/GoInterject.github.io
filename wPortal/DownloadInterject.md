@@ -1,15 +1,19 @@
 ---
 title: Download Interject
-filename: ""
+filename: "DownloadInterject.md"
 layout: custom
-keywords: []
-headings: ["Overview"]
-links: []
-image_dir: ""
+keywords: [download, checksum, installation]
+headings: ["Overview", "Current Version", "Previous Versions and Checksums"]
+links: ["/wDeveloper/InstallerValidation.html"]
+image_dir: "DownloadInterject"
 images: [
-    {file: "", type: "png", site: "Add-in", cat: "", sub: "", report: "", ribbon: "", config: ""}
+	{file: "DownloadInterjectPage", type: "png", site: "Portal", cat: "Download Interject", sub: "", report: "", ribbon: "", config: ""},
+	{file: "CurrentVersion", type: "png", site: "Portal", cat: "Download Interject", sub: "", report: "", ribbon: "", config: ""},
+	{file: "ViewOtherInstallers", type: "png", site: "Portal", cat: "Download Interject", sub: "", report: "", ribbon: "", config: ""},
+	{file: "ZipFile", type: "png", site: "Portal", cat: "Download Interject", sub: "", report: "", ribbon: "", config: ""},
+	{file: "PreviousVersions", type: "png", site: "Portal", cat: "Download Interject", sub: "", report: "", ribbon: "", config: ""}
 ]
-description: 
+description: The Download Interject page is where you can find the latest version of Interject as well as older versions.
 ---
 * * *
 
@@ -37,7 +41,7 @@ The **Zip File** button will download the latest bundle in a zip folder that inc
 ![](/images/DownloadInterject/ZipFile.png)
 <br>
 
-### Previous Versions
+### Previous Versions and Checksums
 
 The Previous Versions sections will display previous versions of Interject along with their release dates and system requirements. By clicking the **checksum** link, you can also download a csv file containing the [checksums](/wDeveloper/InstallerValidation.html) of the executable or zip file.
 

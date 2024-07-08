@@ -11,7 +11,7 @@ images: [
     {file: "03", type: "png", site: "Portal", cat: "Download", sub: "Main", report: "", ribbon: "", config: ""}, 
     {file: "04", type: "png", site: "External", cat: "Chrome", sub: "Download", report: "", ribbon: "", config: ""}, 
     {file: "05", type: "png", site: "External", cat: "Firefox", sub: "Download", report: "", ribbon: "", config: ""}, 
-    {file: "07", type: "png", site: "External", cat: "Edge", sub: "Download", report: "", ribbon: "", config: ""}, 
+    {file: "Edge", type: "png", site: "External", cat: "Edge", sub: "Download", report: "", ribbon: "", config: ""}, 
     {file: "08", type: "png", site: "External", cat: "Internet Explorer", sub: "Download", report: "", ribbon: "", config: ""}, 
     {file: "09", type: "png", site: "Add-in", cat: "Installation", sub: "Setup Wizard", report: "", ribbon: "", config: ""}, 
     {file: "09b", type: "png", site: "Add-in", cat: "Installation", sub: "Installation Type", report: "", ribbon: "", config: ""}, 
@@ -63,7 +63,7 @@ Interject aims to make the installation process as simple and painless as possib
 
 **Microsoft Edge:**
 
-![](/images/SingleUser/07.png)
+![](/images/SingleUser/Edge.png)
 <br>
 
 **Microsoft Internet Explorer:**

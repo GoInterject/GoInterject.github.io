@@ -4,7 +4,7 @@ filename: "L-Dev-InsertDeleteDataSave.md"
 layout: custom
 keywords: [developer, example, walkthrough, SQL, SSMS, Data Portal, data connection, data save, insertions, deletions]
 headings: ["Overview", "Setting Up the Data Connection", "Setting Up the Data Portal", "Setting Up the Report", "Setting Up the Soft Delete", "Setting Up the Stored Procedure", "Modifying the Stored Procedure", "Data to Process", "Inserting the Data to Process", "Update DataToProcess", "ChangeLog", "Merge Select", "Merge Update", "Merge Insert", "Merge Output", "Update ChangeLog", "Set Message To User", "Final Stored Procedure", "Testing the Stored Procedure", "Testing the ReportSave"]
-links: ["/wDeveloper/L-Dev-EditingDataSave.html", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "https://portal.gointerject.com", "/wPortal/Logging-In-to-Website-Portal.html", "/wIndex/Request-Context-Parse.html", "/wDeveloper/L-Dev-EditingDataSave.html#setting-up-the-report", "/wGetStarted/L-Dev-CustomerAging.html#creating-the-stored-procedure", "/wDeveloper/L-Dev-EditingDataSave.html#final-stored-procedure", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#overview"]
+links: ["/wDeveloper/L-Dev-EditingDataSave.html", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "https://portal.gointerject.com", "/wPortal/Logging-In-to-Website-Portal.html", "https://docs.gointerject.com/wDeveloper/L-Dev-InsertDeleteDataSave.html#setting-up-the-stored-procedure", "/wIndex/Request-Context-Parse.html", "/wDeveloper/L-Dev-EditingDataSave.html#setting-up-the-report", "/wGetStarted/L-Dev-CustomerAging.html#creating-the-stored-procedure", "/wDeveloper/L-Dev-EditingDataSave.html#final-stored-procedure", "https://docs.gointerject.com/wDeveloper/L-Dev-InsertDeleteDataSave.html#testing-the-stored-procedure", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#overview"]
 image_dir: "L-Dev-InsertDeleteDataSave"
 images: [
 	{file: "NewDataPortal", type: "png", site: "Portal", cat: "Data Portals", sub: "", report: "", ribbon: "", config: ""}, 
@@ -43,7 +43,10 @@ description: In this example you will modify the Editing Data Save using the Cus
 
 In this example you will modify the previous [Editing Data Save](/wDeveloper/L-Dev-EditingDataSave.html), which was set up to edit a customer's contact name and title. In this Insert &amp; Delete Data Save, you will walkthrough the steps to edit all the columns. In addition, you will also include the ability to insert or delete a customer from within the Excel report.
 
-**Note:** The Customer Aging Report used in this example is a report that displays a customer's outstanding balances. It is not normally used to edit, insert, or delete a customer directly. However, for this walkthrough demonstration purpose, you will modify the report in order to do so.
+<blockquote class=highlight_note>
+<b>Note:</b> The Customer Aging Report used in this example is a report that displays a customer's outstanding balances. It is not normally used to edit, insert, or delete a customer directly. However, for this walkthrough demonstration purpose, you will modify the report in order to do so.
+</blockquote>
+<br>
 
 This walkthrough involves 6 main steps:
 
@@ -80,7 +83,9 @@ For the Data Connection for this example, you will use the connection previously
 * **Command Type:** Stored Procedure
 * **Stored Procedure/Command:** NorthwindInsertDeleteDataSaveSP
 
-**Note:** You will create the "NorthwindInsertDeleteDataSaveSP" Stored Procedure [later](#setting-up-the-stored-procedure).
+<blockquote class=highlight_note>
+<b>Note:</b> You will create the "NorthwindInsertDeleteDataSaveSP" Stored Procedure <a href="https://docs.gointerject.com/wDeveloper/L-Dev-InsertDeleteDataSave.html#setting-up-the-stored-procedure">later</a>
+</blockquote>
 <br>
 
 ![](/images/L-Dev-InsertDeleteDataSave/DataPortalDetails.png)
@@ -162,7 +167,10 @@ ALTER COLUMN IsDeleted BIT NOT NULL
 
 Next you will created a new Stored Procedure that builds from the [previous save](/wDeveloper/L-Dev-EditingDataSave.html#final-stored-procedure). To make this easier, simply copy the SP into a new query, change the command to "CREATE OR ALTER PROC NorthwindInsertDeleteDataSaveSP" and execute it to save it. Then you can begin making modifications to it. For your convenience, the SP is posted here.
 
-**Note:** The code for testing the SP has been removed. It will be handled [later](#testing-the-stored-procedure):
+<blockquote class=highlight_note>
+<b>Note:</b> The code for testing the SP has been removed. It will be handled <a href="https://docs.gointerject.com/wDeveloper/L-Dev-InsertDeleteDataSave.html#testing-the-stored-procedure">later</a>
+</blockquote>
+<br>
 
 <button class = "collapsible"> NorthwindInsertDeleteDataSaveSP </button>
 <div markdown="1" class="panel">

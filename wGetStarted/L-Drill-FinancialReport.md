@@ -126,7 +126,10 @@ Now let's use the Function Wizard to edit the PairGroup() function by clicking o
 
 **Step 8:** You have two more values to pass, the Location and the Account. Type **Pair(M21,"Segment2",TRUE)** into Pair2, which will pass the Location into the next report, and type **Pair(F26:F125,"Segment1",TRUE)** into Pair3, which will pass the Account or Account Group into the next report.
 
-Note: Excel is picky about Quotation marks so please ensure all your formulas have Straight Quotation marks (instead of Smart Quotation marks) in order for the formulas to work.
+<blockquote class=highlight_note>
+<b>Note:</b> Excel is picky about Quotation marks so please ensure all your formulas have Straight Quotation marks (instead of Smart Quotation marks) in order for the formulas to work.
+</blockquote>
+<br>
 
 ![](/images/L-Drill-Financial/11.png)
 <br>

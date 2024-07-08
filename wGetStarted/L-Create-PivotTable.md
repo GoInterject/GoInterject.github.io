@@ -117,7 +117,7 @@ In the Year-Mth column in L21, type **=TEXT(I21,\"yyyy-mm\")**.
 ![](/images/L-Create-PivotTable/12.jpg)
 <br>
 
-**Note:** The parameter section of the report should look like the following screenshot.
+The parameter section of the report should look like the following screenshot.
 
 ![](/images/L-Create-PivotTable/13.jpg)
 <br>

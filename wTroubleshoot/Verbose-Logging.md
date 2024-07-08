@@ -54,7 +54,10 @@ To turn it on, select the **Toggle Verbose Logging** option in the menu, then cl
 ![](/images/Verbose-Logging/ConfirmVerboseLogging.png)
 <br>
 
-**Note: All activity will be logged for 16 hours**, but you can turn them off at any time with the same steps used to turn them on. While logging is on, the system will perform a little slower then usual. Multiple log files may be created, and they will be available for ten days. If Excel is closed, the logging process automatically begins once Excel is restarted. The Results section shows where the log file is located:
+<blockquote class=highlight_note>
+<b>Note:</b> All activity will be logged for 16 hours, but you can turn them off at any time with the same steps used to turn them on. While logging is on, the system will perform a little slower then usual. Multiple log files may be created, and they will be available for ten days. If Excel is closed, the logging process automatically begins once Excel is restarted. The Results section shows where the log file is located.
+</blockquote>
+<br>
 
 ![](/images/Verbose-Logging/VerboseLoggingResults.png)
 <br>

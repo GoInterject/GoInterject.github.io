@@ -4,7 +4,7 @@ filename: "L-Dev-EditingDataSave.md"
 layout: custom
 keywords: [developer, example, walkthrough, SQL, SSMS, Data Portal, data connection, data save]
 headings: ["Overview", "Setting Up the Data Connection", "Setting Up the Data Portal", "Setting Up the Report", "Setting Up the ReportSave Function", "Setting Up the Stored Procedure", "Add the RequestContext_Parse Stored Procedure", "Modifying the Stored Procedure", "Parameters", "Testing", "Context Parameters", "Error Message", "Data To Process", "Inserting the Data to Process", "Validations", "ChangeLog", "Merge", "Set Message To User", "Final Response To User", "Final Stored Procedure", "Testing the Stored Procedure", "Testing the ReportSave"]
-links: ["/wGetStarted/L-Dev-CustomerAging.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data", "/wIndex/ReportSave.html", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "https://portal.gointerject.com", "/wPortal/Logging-In-to-Website-Portal.html", "/wIndex/Request-Context-Parse.html", "/wGetStarted/L-Dev-CustomerAging.html#create-the-report", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#overview"]
+links: ["/wGetStarted/L-Dev-CustomerAging.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data", "/wIndex/ReportSave.html", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "https://portal.gointerject.com", "/wPortal/Logging-In-to-Website-Portal.html", "https://docs.gointerject.com/wDeveloper/L-Dev-EditingDataSave.html#setting-up-the-stored-procedure", "/wIndex/Request-Context-Parse.html", "/wGetStarted/L-Dev-CustomerAging.html#create-the-report", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#overview"]
 image_dir: "L-Dev-EditingDataSave"
 images: [
 	{file: "NewDataPortal", type: "png", site: "Portal", cat: "Data Portals", sub: "", report: "", ribbon: "", config: ""}, 
@@ -49,8 +49,10 @@ In this example you will build from the previous report where you built a [Data 
 
 In this Editing Data Save example, you will set up a data save that will allow you to edit a customer's contact name and title right from within the Excel report. 
 
-
-**Note:** The Customer Aging Report used in this example is a report that displays a customer's outstanding balances. It is not normally used to edit a customer directly. However, for this walkthrough demonstration purpose, you will modify the report in order to do so.
+<blockquote class=highlight_note>
+<b>Note:</b> The Customer Aging Report used in this example is a report that displays a customer's outstanding balances. It is not normally used to edit a customer directly. However, for this walkthrough demonstration purpose, you will modify the report in order to do so.
+</blockquote>
+<br>
 
 This walkthrough involves 6 main steps:
 
@@ -87,7 +89,9 @@ For the Data Connection for this example, you will use the connection previously
 * **Command Type:** Stored Procedure
 * **Stored Procedure/Command:** NorthwindEditingDataSaveSP
 
-**Note:** You will create the "NorthwindEditingDataSaveSP" Stored Procedure [later](#setting-up-the-stored-procedure).
+<blockquote class=highlight_note>
+<b>Note:</b> You will create the "NorthwindEditingDataSaveSP" Stored Procedure <a href="https://docs.gointerject.com/wDeveloper/L-Dev-EditingDataSave.html#setting-up-the-stored-procedure">later</a>
+</blockquote>
 <br>
 
 ![](/images/L-Dev-EditingDataSave/DataPortalDetails.png)

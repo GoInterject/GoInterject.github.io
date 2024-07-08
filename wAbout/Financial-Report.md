@@ -185,7 +185,7 @@ Notice that these are the same accounts that makeup **Revenue - Sales** in the o
 ![](/images/Walkthrough-Financial/20.png)
 <br>
 
-**Step 3:** Now use the [**Pull Data**](/wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#pull-data) function. Note: Ensure that the **"Calculate Data Cells"** is checked.
+**Step 3:** Now use the [**Pull Data**](/wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#pull-data) function. Ensure that the **"Calculate Data Cells"** is checked.
 
 ![](/images/Walkthrough-Financial/21.png)
 <br>

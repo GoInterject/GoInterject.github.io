@@ -4,7 +4,7 @@ filename: "L-Dev-ChangelogDataSave.md"
 layout: custom
 keywords: [developer, example, walkthrough, SQL, SSMS, Data Portal, data connection, data save, history]
 headings: ["Overview", "Setting Up the Data Connection", "Setting Up the Data Portal", "Setting Up the Report", "Setting Up the Tables", "Setting Up the Stored Procedure", "Modifying the Stored Procedure", "Current Date and Time", "ChangeLog", "Merge Update", "Merge Insert", "Merge Output", "Update Target Table", "Update History Table", "Final Stored Procedure", "Testing the Stored Procedure", "Testing the ReportSave"]
-links: ["/wDeveloper/L-Dev-InsertDeleteDataSave.html", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "https://portal.gointerject.com", "/wPortal/Logging-In-to-Website-Portal.html", "/wIndex/Request-Context-Parse.html", "/wDeveloper/L-Dev-InsertDeleteDataSave.html#setting-up-the-report", "/wDeveloper/L-Dev-InsertDeleteDataSave.html#final-stored-procedure", "/wDeveloper/L-Dev-InsertDeleteDataSave.html#update-changelog", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#overview"]
+links: ["/wDeveloper/L-Dev-InsertDeleteDataSave.html", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "https://portal.gointerject.com", "/wPortal/Logging-In-to-Website-Portal.html", "https://docs.gointerject.com/wDeveloper/L-Dev-ChangelogDataSave.html#setting-up-the-stored-procedure", "/wIndex/Request-Context-Parse.html", "/wDeveloper/L-Dev-InsertDeleteDataSave.html#setting-up-the-report", "/wDeveloper/L-Dev-InsertDeleteDataSave.html#final-stored-procedure", "https://docs.gointerject.com/wDeveloper/L-Dev-ChangelogDataSave.html#testing-the-stored-procedure", "/wDeveloper/L-Dev-InsertDeleteDataSave.html#update-changelog", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#overview"]
 image_dir: "L-Dev-ChangelogDataSave"
 images: [
 	{file: "NewDataPortal", type: "png", site: "Portal", cat: "Data Portals", sub: "", report: "", ribbon: "", config: ""}, 
@@ -68,7 +68,9 @@ For the Data Connection for this example, you will use the connection previously
 * **Command Type:** Stored Procedure
 * **Stored Procedure/Command:** NorthwindChangelogDataSaveSP
 
-**Note:** You will create the "NorthwindChangelogDataSaveSP" Stored Procedure [later](#setting-up-the-stored-procedure).
+<blockquote class=highlight_note>
+<b>Note:</b> You will create the "NorthwindChangelogDataSaveSP" Stored Procedure <a href="https://docs.gointerject.com/wDeveloper/L-Dev-ChangelogDataSave.html#setting-up-the-stored-procedure">later</a>.
+</blockquote>
 <br>
 
 ![](/images/L-Dev-ChangelogDataSave/DataPortalDetails.png)
@@ -149,7 +151,10 @@ ADD EditedBy NVARCHAR(40),
 
 Next you will create a new Stored Procedure that builds from the [previous save](/wDeveloper/L-Dev-InsertDeleteDataSave.html#final-stored-procedure). To make this easier, simply copy the SP into a new query, change the command to "CREATE OR ALTER PROC NorthwindChangelogDataSaveSP" and execute it to save it. Then you can begin making modifications to it. For your convenience, the SP is posted here.
 
-**Note:** The code for testing the SP has been removed. It will be handled [later](#testing-the-stored-procedure):
+<blockquote class=highlight_note>
+<b>Note:</b> The code for testing the SP has been removed. It will be handled <a href="https://docs.gointerject.com/wDeveloper/L-Dev-ChangelogDataSave.html#testing-the-stored-procedure">later</a>
+</blockquote>
+<br>
 
 <button class = "collapsible"> NorthwindChangelogDataSaveSP </button>
 <div markdown="1" class="panel">

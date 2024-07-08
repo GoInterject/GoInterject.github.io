@@ -58,4 +58,7 @@ This is a section that displays how to reset an Interject user’s password unde
 ![](/images/Passwords/04.jpg)
 <br>
 
-**Note:** The page will redirect back to the Interject Website Portal upon a successful password reset.
+<blockquote class=highlight_note>
+<b>Note:</b> The page will redirect back to the Interject Website Portal upon a successful password reset.
+</blockquote>
+<br>

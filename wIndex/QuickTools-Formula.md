@@ -27,7 +27,10 @@ The Formula Tools within Quick Tools deal with formulas.
 
 Removes all references in the Workbook to external files/objects and converts the formula in the cells to a text/numeric value.
 
-Note: When there are references in the Workbook to external files, the "Edit Links" button will be visible on the Data tab:
+<blockquote class=highlight_note>
+<b>Note:</b> When there are references in the Workbook to external files, the "Edit Links" button will be visible on the Data tab.
+</blockquote>
+<br>
 
 ![](/images/QuickToolsFormula/EditLinks.png)
 <br>

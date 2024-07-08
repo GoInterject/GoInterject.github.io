@@ -98,7 +98,10 @@ After pressing OK, the report formula should look as it does in the image below.
 ![](/images/L-Drill-Inventory/09.png)
 <br>
 
-**Note:** Each drill will need to be linked individually, not all at once. If they are linked all at once then the drills will not work as it will drill everything at once, rather than one at a time.
+<blockquote class=highlight_note>
+<b>Note:</b> Each drill will need to be linked individually, not all at once. If they are linked all at once then the drills will not work as it will drill everything at once, rather than one at a time.
+</blockquote>
+<br>
 
 **Step 2:** In the Hyperlink pop-up window, you will select **Place in This Document**. Then select **ScreenTip**, type **Interject Drill**, and press OK. Although this technically sets up a hyperlink to cell A1 in the same tab, Interject will override the event so the Interject drill will activate.
 

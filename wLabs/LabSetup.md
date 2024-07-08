@@ -73,7 +73,10 @@ For detailed instructions on how to set up a Data Connection, see [Portal: Datab
 
 Now that you have a database and set up a Data Connection to it, you need to start adding Data Portals. For instructions on how to set up Data Portals, see [Data Portals](/wPortal/Data-Portals.html). Following is a list of the Data Portals and their Stored Procedures used in the Labs.
 
->**Note:** The Data Type and Direction are automatically set when selecting a System Parameter.
+<blockquote class=highlight_note>
+<b>Note:</b> The Data Type and Direction are automatically set when selecting a System Parameter.
+</blockquote>
+<br>
 
 <button class="collapsible-parameter">**NorthwindCreditSave**<br>Stored Procedure: [demo].[Northwind_Credit_Save]</button>
 <div markdown="1" class="panel-parameter">
@@ -559,7 +562,10 @@ The FinCube Data Portals must be set up for your particular Client profile. Ther
 
 Following are the Data Portals that must be set up.
 
->**Note:** There are no parameters in the FinCube Portals.
+<blockquote class=highlight_note>
+<b>Note:</b> There are no parameters in the FinCube Portals.
+</blockquote>
+<br>
 
 | Data Portal | Description | Connection | Command Type | Stored Procedure/Command | Api Relative Url |
 |-----|-----|-----|-----|-----|-----|
@@ -578,7 +584,10 @@ The following zip file contains all the necessary files for the Lab Guide:
 
 [2]:{{ site.url }}/download/LabFiles.zip
 
->**Note:** Some labs do not have a lab file as they either start with a blank Excel file or are continued from a previous lab. The following labs do not have a file: 3.1, 3.2, 3.3, 3.6, and 7.3.
+<blockquote class=highlight_note>
+<b>Note:</b> Some labs do not have a lab file as they either start with a blank Excel file or are continued from a previous lab. The following labs do not have a file: 3.1, 3.2, 3.3, 3.6, and 7.3.
+</blockquote>
+<br>
 
 ### Step 6: Renaming the Data Portals
 

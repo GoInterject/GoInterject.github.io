@@ -81,7 +81,7 @@ Invalid references happen when cells refer to another cell that has been deleted
 
 <b style='color:red;'><strong>Before:</strong></b>
 
-Note: This name refers to a cell that is currently invalid:
+This name refers to a cell that is currently invalid:
 
 ![](/images/QuickToolsNames/RefBefore.png)
 <br>
@@ -100,7 +100,7 @@ Removes all user named ranges that are scoped to the current sheet.
 
 <b style='color:red;'><strong>Before:</strong></b>
 
-Note: There are 3 names that are scoped to the current sheet "ReportRange":
+There are 3 names that are scoped to the current sheet "ReportRange":
 
 ![](/images/QuickToolsNames/DefinedNamesSheetBefore.png)
 <br>

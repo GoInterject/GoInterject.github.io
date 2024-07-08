@@ -213,4 +213,7 @@ Interject provides an easy way to override shortkeys using the Interject Diagnos
 
 **Step 6:** Now save your text editor and open excel and the shortkey will now work.
 
-**Note:** To edit shortkeys on an enterprise level, administrative rights for the environment are required.
+<blockquote class=highlight_note>
+<b>Note:</b> To edit shortkeys on an enterprise level, administrative rights for the environment are required.
+</blockquote>
+<br>
