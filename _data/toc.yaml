@@ -250,7 +250,7 @@ index:
           path: /wIndex/jDesc.html
     - title: Reviewing Report Functions
       path: /wIndex/Report-Formula-Reviews.html
-  - sectiontitle: Common Dataportal Index
+  - sectiontitle: Common Data Portal Index
     path: /wIndex/Common-Dataportal-Index.html
     section:
     - title: FinCube - The Financial Cube

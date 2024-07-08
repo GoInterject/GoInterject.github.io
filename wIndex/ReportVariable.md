@@ -21,7 +21,7 @@ For an example of this function, see [Lab Create: Inventory Variable](/wGetStart
 
 ###  Function Arguments
 
-<button class="collapsible-parameter">**DataPortal**<br>The name of the Interject DataPortal that will be used as the data source for this function.</button>
+<button class="collapsible-parameter">**DataPortal**<br>The name of the Interject Data Portal that will be used as the data source for this function.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
@@ -101,7 +101,7 @@ For an example of this function, see [Lab Create: Inventory Variable](/wGetStart
 </table>
 </div>
 
-<button class="collapsible-parameter">**Parameters**<br>The cells designating the parameters for the DataPortal. The values in these cells will filter the data that is inserted from the data source.</button>
+<button class="collapsible-parameter">**Parameters**<br>The cells designating the parameters for the Data Portal. The values in these cells will filter the data that is inserted from the data source.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
@@ -212,7 +212,7 @@ For an example of this function, see [Lab Create: Inventory Variable](/wGetStart
 | Argument Name  |  Example Mapping  |  Explanation   |  
 |------|------|------|
 |  Function Name  |  =ReportVariable()  |  The name of this function.  |  
-|  DataPortal  |  "NorthwindVariable"  |  This function will use the "NorthwindVariable" DataPortal for the data source.  |  
+|  DataPortal  |  "NorthwindVariable"  |  This function will use the "NorthwindVariable" Data Portal for the data source.  |  
 |  RowDefRange  |  B18:B54  |  The names found in B18:B54 will be used to map to the column names found in row 2 (ColDefRange). Only data that intersects these names will be inserted on these rows. Data will be grouped by the names found in this range.  |  
 |  ColDefRange  |  2:2  |  The names found in row 2 will be used to map to the row names found in row B14:B27 (RowDefRange). Only data that intersects these names will be inserted on these columns.  |  
 |  Format Range  | 4:4 |  The formatting used in row 4 will be used as a template for the inserted data.  |  

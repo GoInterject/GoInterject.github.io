@@ -251,11 +251,11 @@ To confirm the API is working, navigate to the host name or port you set up [pre
 
 The most common use of a Data API is for Intranet use. In this scenario a connection string can be shared by all users, while also protected within the Data API.
 
-Interject supports DataPortal connections for both direct DB access and API access. When using an API, you can code the API to perform certain DB actions by using "PassThrough" settings. These are configured in the DataPortal and DataPortal Connection. For these to work, they need to be able to find a connection string in the API.
+Interject supports Data Portal connections for both direct DB access and API access. When using an API, you can code the API to perform certain DB actions by using "PassThrough" settings. These are configured in the Data Portal and Data Portal Connection. For these to work, they need to be able to find a connection string in the API.
 
 If this API offers public access, then connection strings should not be shared in the `web.config` file. Instead a custom validation lookup process should be implemented, which also requires some custom coding. This Data API uses a `appsettings.json` file for this purpose.
 
-* Determine a meaningful name for the connection string (preferably without spaces) This name will be used by an Interject DataPortal Connection, and it will reference the connection string within the `appsettings.json`. Names must be unique.
+* Determine a meaningful name for the connection string (preferably without spaces) This name will be used by an Interject Data Portal Connection, and it will reference the connection string within the `appsettings.json`. Names must be unique.
 * Open the `appsettings.json` file (in the `interject-dotnet-api` directory) in any text editor or code IDE.
 * Add a new entry in the list of ConnectionStrings collection.
 

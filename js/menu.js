@@ -116,10 +116,10 @@ function hookupTOCEvents()
           // "see all" is selected or they don't have an autocomplete result selected
           //?q=
           if (isAppsSite) {
-			loadPage("/bApps/schemas/custom_search?q=" + $("#st-search-input").val());
+			loadPage("/bApps/schemas/custom_search?q=" + $("#st-search-input").val() + "&t=true");
 		  }
 		  else {
-			loadPage("/schemas/custom_search?q=" + $("#st-search-input").val());
+			loadPage("/schemas/custom_search?q=" + $("#st-search-input").val() + "&t=true");
 		  }
         } else {
           // an autocomplete result is selected
@@ -193,7 +193,7 @@ function hookupTOCEvents()
 	var resultsShownText = (resultsShown > 1) ? resultsShown + " of " + results.length + " docs" : "doc";
 	var sitePath = isAppsSite ? '/bApps' : '';
 	var resultsOutputText = results.length === 0 ? "No top results" : "Showing top " + resultsShownText;
-	var resultsOutputLink = `<a href='${sitePath}/schemas/custom_search?q=${searchVal}'><b>${resultsOutputText}. See all results...</b></a>`;
+	var resultsOutputLink = `<a href='${sitePath}/schemas/custom_search?q=${searchVal}&t=true'><b>${resultsOutputText}. See all results...</b></a>`;
 
 	resultsOutput.push(`<div id='autocompleteShowAll'><ul class='autocompleteList'><li class='autocompleteTitle' id='autoSeeAll'>${resultsOutputLink}</li></ul></div>`);
 	resultsOutput.push("</div>");

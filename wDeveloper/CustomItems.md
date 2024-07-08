@@ -107,7 +107,7 @@ For your convenience, the procedure is posted here:
 ALTER PROC [demo].[CustomItems_Example]
 
 	-- Example optional parameter. There are two ways to set an initial value 
-	--     1) set the default value below and not setup the parameter in the dataportals.  
+	--     1) set the default value below and not setup the parameter in the data portals.  
 	--     2) set a default value in the data portal setup.
 	-- 
 	-- If in #2 the default value starts with a question mark like "?Enter Year Month (YYYY-MM)", this will cause Interject
@@ -120,7 +120,7 @@ ALTER PROC [demo].[CustomItems_Example]
 	,@Interject_CommandResult VARCHAR(200) OUTPUT -- This provides the result of the execute.  it is limited to 200 characters.
 
 	-- System Parameters Optional
-	,@Interject_CommandDescription VARCHAR(200) OUTPUT -- Shows friendly description to user. Shows DataPortal name if parameter not used.
+	,@Interject_CommandDescription VARCHAR(200) OUTPUT -- Shows friendly description to user. Shows Data Portal name if parameter not used.
 	,@Interject_CommandStatus VARCHAR(200) OUTPUT -- Will return a status such as details from the last time it was run.
 
 	-- The below are examples of Interject reserved parameters 

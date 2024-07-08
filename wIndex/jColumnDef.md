@@ -15,13 +15,13 @@ description: The jColumnDef function defines a column based on one or more param
 
 The jColumnDef function defines a column based on one or more parameters. Each parameter represents a segment. The segments can be set to filter the data that this column represents. Typically this function is used with a Data Pull function for a financial report.
 
-The jColumnDef function utilizes a DataPortal to interact with the segments. This DataPortal is specifically setup for the particular needs of the company using Interject. The segments are thus customizable. For most companies, the Interject [FinCube](/wIndex/FinCube---The-Financial-Cube.html) DataPortal will suffice for their reporting needs.
+The jColumnDef function utilizes a Data Portal to interact with the segments. This Data Portal is specifically setup for the particular needs of the company using Interject. The segments are thus customizable. For most companies, the Interject [FinCube](/wIndex/FinCube---The-Financial-Cube.html) Data Portal will suffice for their reporting needs.
 
 For an example of this function, see [Lab Create: Financial Variable](/wGetStarted/L-Create-FinancialVariable.html).
 
 ###  Function Arguments
 
-The parameters and segments listed below are some examples of the FinCube DataPortal. Actual parameters will vary depending on what DataPortal is being used. For more information about these parameters, see [FinCube](/wIndex/FinCube---The-Financial-Cube.html).
+The parameters and segments listed below are some examples of the FinCube Data Portal. Actual parameters will vary depending on what Data Portal is being used. For more information about these parameters, see [FinCube](/wIndex/FinCube---The-Financial-Cube.html).
 
 <button class="collapsible-parameter">**Source (Segment12)**<br>The source of the data (e.g. "Actual", "Budget", "Projection", etc.).</button>
 <div markdown="1" class="panel-parameter">

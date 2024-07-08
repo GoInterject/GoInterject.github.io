@@ -196,7 +196,7 @@ AS
 	Reserved Parameters:
 	---------------------------------------------------------------------------
 	Note: If the below parameters are added to your stored procedure and to the
-	dataportal parameter list, Interject will pass the related value automatically.
+	data portal parameter list, Interject will pass the related value automatically.
 	
 	@Interject_XMLDataToSave varchar(max) - Required for saving data. It contains XML for the designated cells values.
 	@Interject_ColDefItems varchar(max) - Provides the Column Definitions in XML designated within the report formula.
@@ -698,7 +698,7 @@ AS
 	Reserved Parameters:
 	---------------------------------------------------------------------------
 	Note: If the below parameters are added to your stored procedure and to the
-	dataportal parameter list, Interject will pass the related value automatically.
+	data portal parameter list, Interject will pass the related value automatically.
 	
 	@Interject_XMLDataToSave varchar(max) - Required for saving data. It contains XML for the designated cells values.
 	@Interject_ColDefItems  varchar(max) - Provides the Column Definitions in XML designated within the report formula.

@@ -52,5 +52,5 @@ For information about connecting to other sources, visit [Connectionstrings.com/
 
 "DataPortal03"
 - Summary & detail report of Epicor Chart of Accounts with balances
-- Override of another DataPortal from offering
+- Override of another Data Portal from offering
 - Connection: "Connection01"

@@ -150,7 +150,7 @@ The only thing left to set up in this report is the actual ReportSave function.
 
 **Step 2:** Enter the following details in the Function Wizard:
 
-1. **DataPortal:** Enter the Data Portal you set up in the [beginning](#setting-up-the-data-portal).
+1. **Data Portal:** Enter the Data Portal you set up in the [beginning](#setting-up-the-data-portal).
 2. **RowDefRange:** This range defines the unique keys in the data source for each row. In this case it is the CustomerID. Enter the single column range for the CustomerIDs and be sure to select one row beyond the last ID (to allow expansion).
 3. **ColDefRange:** Enter **4:4**. This range contains the columns that will be saved.
 4. **ResultsRange:** Enter **6:6**. This range represents the return message to the user.
@@ -714,7 +714,7 @@ AS
 	Reserved Parameters:
 	---------------------------------------------------------------------------
 	Note: If the below parameters are added to your stored procedure and to the
-	dataportal parameter list, Interject will pass the related value automatically.
+	data portal parameter list, Interject will pass the related value automatically.
 	
 	@Interject_XMLDataToSave varchar(max) - Required for saving data. It contains XML for the designated cells values.
 	@Interject_ColDefItems varchar(max) - Provides the Column Definitions in XML designated within the report formula.

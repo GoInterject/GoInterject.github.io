@@ -67,7 +67,7 @@ description: Interject documentation search results
     title="Displays all hits in the page(s)"
 	onclick="handleCustomAllHits()"
   >
-  <label for="custom-all-hits">Show all hits</label>
+  <label for="custom-all-hits">Show all hits on page</label>
   <input
     type="checkbox"
     id="custom-top-hits"

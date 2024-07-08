@@ -115,7 +115,7 @@ In cell E20 input **Notes Get:** and in cell G20 input **=ReportFixed()**.
 
 Then, select cell G20, and select the **fx** button. Now input the following values for each field:
     
-     DataPortal  = ERP_Note_Fixed_Get
+     Data Portal = ERP_Note_Fixed_Get
      RowDefRange = C70:E171
      ColDefRange = 11:11
      Parameters  = Param(,G64,,,,,,G65,MONTH(FiscalPeriod),YEAR(FiscalPeriod))
@@ -150,7 +150,7 @@ In cell E21 insert **Notes Save:** and in cell G21 **=ReportSave()**.
 
 Next, select cell G21, then select the **fx** button and input the following values for each field:
 
-    DataPortal   = ERP_Note_Save
+    Data Portal  = ERP_Note_Save
     RowDefRange  = C71:C169
     ColDefRange  = 13:13
     ResultsRange = N13
