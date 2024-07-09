@@ -4,7 +4,7 @@ filename: "Logging-In-Enterprise.md"
 layout: custom
 keywords: [login, ribbon, logout, new login, credentials, accounts, enterprise, user]
 headings: ["Overview", "Initial Enterprise Login", "New Login", "Logging Out", "Log Back In", "Switch Accounts", "Forgetting Login Credentials", "Clearing Login Cookies"]
-links: []
+links: ["#initial-enterprise-login"]
 image_dir: "Login-Enterprise"
 images: [
 	{file: "interject-ribbon-advanced-menu-login-revised", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, 

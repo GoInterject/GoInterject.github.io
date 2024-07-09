@@ -4,7 +4,7 @@ filename: "CustomItems.md"
 layout: custom
 keywords: [custom commands, execute, sql]
 headings: ["Overview", "Setup Data Portal", "System Parameters", "Formula Parameters", "Description and Status", "Running the Custom Item", "Example Stored Procedure"]
-links: ["/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#custom-commands", "https://docs.gointerject.com/wPortal/INTERJECT-Roles.html#clientadmin-role", "https://docs.gointerject.com/wPortal/INTERJECT-Roles.html#customitems-role", "/wPortal/Data-Portals.html", "https://docs.gointerject.com/wPortal/Data-Portals.html#system-parameters-options", "/wPortal/Data-Portals.html#overview-of-parameters"]
+links: ["/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#custom-commands", "https://docs.gointerject.com/wPortal/INTERJECT-Roles.html#clientadmin-role", "https://docs.gointerject.com/wPortal/INTERJECT-Roles.html#customitems-role", "/wPortal/Data-Portals.html", "#description-and-status", "#running-the-custom-item", "https://docs.gointerject.com/wPortal/Data-Portals.html#system-parameters-options", "/wPortal/Data-Portals.html#overview-of-parameters"]
 image_dir: "CustomItems"
 images: [
 	{file: "CustomItems", type: "png", site: "Add-in", cat: "Custom Commands", sub: "Custom Items", report: "", ribbon: "", config: ""}, 

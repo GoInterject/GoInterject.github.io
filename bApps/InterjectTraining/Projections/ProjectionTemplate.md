@@ -4,7 +4,7 @@ filename: "ProjectionTemplate.md"
 layout: custom
 keywords: [Training, Projections, Projection Template]
 headings: ["Overview", "Input Field Explanations", "Retain Rows and how it works", "Summary and Detail level accounts", "Pulling Summary and Detail levels together", "Saving Summary and Detail levels together", "Dynamic Projection Columns", "The Autocalcs", "Do I have security rights to Save from the Projections Template?", "Common Save Errors"]
-links: ["/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#projections-tools-and-the-control-center"]
+links: ["#retain-rows-and-how-it-works", "#summary-and-detail-level-accounts", "/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#projections-tools-and-the-control-center"]
 image_dir: "WCNTraining/Projections"
 images: [
 	{file: "ProjectionTemplate_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 

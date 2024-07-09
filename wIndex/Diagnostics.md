@@ -4,7 +4,7 @@ filename: "Diagnostics.md"
 layout: custom
 keywords: [Diagnostics, Tools, Settings, Configurations, Config]
 headings: ["Overview", "Diagnostic Pane Fields", "Public", "System Tools", "Support"]
-links: ["/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#advanced-menu-items", "/wIndex/Diagnostics-SpecialFeatures.html", "/wIndex/Diagnostics-ShortKey.html"]
+links: ["/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#advanced-menu-items", "/wAbout/Logging-In-Enterprise.html#clearing-login-cookies", "/wTroubleshoot/Verbose-Logging.html", "/wTroubleshoot/RAM-Monitoring.html", "/wTroubleshoot/Validation-Report.html#data-cell-functions", "/wIndex/SettingsCache.html#resetting-settings-and-cache", "/wIndex/SettingsCache.html#opening-the-folders", "/wIndex/Diagnostics-SpecialFeatures.html", "/wIndex/Diagnostics-ListDataPortals.html", "/wIndex/Diagnostics-DoubleClick.html", "/wGetStarted/L-Create-RunOnOpen.html#setting-up-run-on-open-via-diagnostics", "/wIndex/SettingsCache.html#resetting-settings-and-cache", "/wDeveloper/InternalSupportSetup.html#setup", "/wIndex/Diagnostics-EnterpriseConnection.html", "/wIndex/Diagnostics-InstallConfig.html", "/wIndex/Diagnostics-GarbageCollection.html", "/wIndex/Diagnostics-FindAllFormulas.html", "/wIndex/Diagnostics-ReplaceDataPortalCodes.html", "/wIndex/Diagnostics-ClearDataCellCache.html", "/wIndex/Diagnostics-ShortKey.html", "/wIndex/Diagnostics-ClearErrorLog.html", "/wIndex/Diagnostics-ReinitiateInterject.html"]
 image_dir: "Diagnostics"
 images: [
  {file: "Ribbon", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 

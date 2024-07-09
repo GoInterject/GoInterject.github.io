@@ -4,7 +4,7 @@ filename: "MyApps.md"
 layout: custom
 keywords: [redirect, override, offerings, subscriptions, portals, connections, links]
 headings: ["Overview", "Expiration", "App Offering", "Connection Redirection"]
-links: ["mailto:info@gointerject.com"]
+links: ["mailto:info@gointerject.com", "#connection-redirection", "https://docs.gointerject.com/wIndex/jDataPortal.html"]
 image_dir: "MyApps"
 images: [
 	{file: "MyAppsPage", type: "png", site: "Portal", cat: "My Apps", sub: "", report: "", ribbon: "", config: ""},

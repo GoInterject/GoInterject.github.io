@@ -4,7 +4,7 @@ filename: "L-Dev-jDropdowns.md"
 layout: custom
 keywords: [jDropdown, function, develop, build, walkthrough]
 headings: ["Overview", "Setting up the Data Connection", "Setting up the Data Portal", "Creating the Stored Procedure", "Testing the Stored Procedure"]
-links: ["/wGetStarted/L-Create-Dropdowns.html", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "https://portal.gointerject.com", "/wPortal/L-Database-Connection.html#testing-the-connection-string-from-within-excel", "https://portal.gointerject.com", "https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017", "/wGetStarted/L-Create-Dropdowns.html"]
+links: ["/wGetStarted/L-Create-Dropdowns.html", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "https://portal.gointerject.com", "/wPortal/L-Database-Connection.html#testing-the-connection-string-from-within-excel", "https://portal.gointerject.com", "https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017", "#setting-up-the-data-connection", "/wGetStarted/L-Create-Dropdowns.html"]
 image_dir: "L-Dev-Dropdowns"
 images: [
 	{file: "01", type: "jpg", site: "Portal", cat: "Home", sub: "", report: "", ribbon: "", config: ""}, 

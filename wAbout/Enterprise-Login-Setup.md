@@ -4,7 +4,7 @@ filename: "Enterprise-Login-Setup.md"
 layout: custom
 keywords: [login, ribbon, credentials, accounts, Enterprise, setup, oidc, auth, code]
 headings: ["Overview", "Provide OIDC Details", "Enterprise Login Code", "IP Whitelisting", "Setup Data Connections"]
-links: ["https://openid.net/developers/how-connect-works/", "https://www.oasis-open.org/standard/saml/", "https://learn.microsoft.com/en-us/azure/active-directory/develop/v2-protocols-oidc", "https://developer.okta.com/docs/concepts/auth-servers/", "https://auth0.com/docs/get-started/authentication-and-authorization-flow", "https://learn.microsoft.com/en-us/azure/active-directory/develop/v2-protocols-oidc#enable-id-tokens", "/wAbout/Logging-In-Enterprise.html", "https://portal.gointerject.com/"]
+links: ["https://openid.net/developers/how-connect-works/", "https://www.oasis-open.org/standard/saml/", "https://learn.microsoft.com/en-us/azure/active-directory/develop/v2-protocols-oidc", "https://developer.okta.com/docs/concepts/auth-servers/", "https://auth0.com/docs/get-started/authentication-and-authorization-flow", "#provide-oidc-details", "#enterprise-login-code", "#ip-whitelisting", "https://learn.microsoft.com/en-us/azure/active-directory/develop/v2-protocols-oidc#enable-id-tokens", "/wAbout/Logging-In-Enterprise.html", "https://portal.gointerject.com/"]
 image_dir: "Enterprise-Login-Setup"
 images: [
 	{file: "OrganizationProfile", type: "png", site: "Portal", cat: "Organization Profile", sub: "", report: "", ribbon: "", config: ""}, 

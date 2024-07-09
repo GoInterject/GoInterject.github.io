@@ -4,7 +4,7 @@ filename: "WebView2.md"
 layout: custom
 keywords: [login]
 headings: ["Overview", "Verifying Installation", "Via Windows Settings", "Via Control Panel", "Installation", "Repair"]
-links: ["https://learn.microsoft.com/en-us/microsoft-edge/webview2/", "https://developer.microsoft.com/en-us/microsoft-edge/webview2/", "https://learn.microsoft.com/en-us/microsoft-edge/webview2/concepts/distribution"]
+links: ["https://learn.microsoft.com/en-us/microsoft-edge/webview2/", "https://developer.microsoft.com/en-us/microsoft-edge/webview2/", "https://learn.microsoft.com/en-us/microsoft-edge/webview2/concepts/distribution", "#verifying-installation"]
 image_dir: "WebView2"
 images: [
 	{file: "StartSettings", type: "png", site: "Windows", cat: "Start Menu", sub: "", report: "", ribbon: "", config: ""}, 

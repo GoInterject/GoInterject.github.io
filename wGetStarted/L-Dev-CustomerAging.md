@@ -4,7 +4,7 @@ filename: "L-Dev-CustomerAging.md"
 layout: custom
 keywords: [developer, example, customer aging, SQL, data portal, data connection, walkthrough]
 headings: ["Overview", "Setting up the Data Connection", "Setting up the Data Portal", "Setting up Formula Parameters", "System Parameters", "Creating the Stored Procedure", "Create the Report"]
-links: ["/wAbout/Customer-Aging.html", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "https://portal.gointerject.com", "#setting-up-the-data-connection", "https://docs.gointerject.com/wPortal/Data-Portals.html", "/wPortal/L-Database-Connection.html#testing-the-connection-string-from-within-excel", "https://portal.gointerject.com", "/wPortal/Data-Portals.html", "/wPortal/Data-Portals.html", "/wPortal/The-INTERJECT-Website-Portal.html", "mailto:info@gointerject.com", "/wGetStarted/L-Create-CustomerAging.html", "/wGetStarted/L-Dev-CustomerOrders.html"]
+links: ["/wAbout/Customer-Aging.html", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "https://portal.gointerject.com", "/wPortal/L-Database-Connection.html#testing-the-connection-string-from-within-excel", "https://portal.gointerject.com", "#setting-up-the-data-connection", "https://docs.gointerject.com/wPortal/Data-Portals.html", "/wPortal/Data-Portals.html", "/wPortal/The-INTERJECT-Website-Portal.html", "mailto:info@gointerject.com", "/wGetStarted/L-Create-CustomerAging.html", "/wGetStarted/L-Dev-CustomerOrders.html"]
 image_dir: "L-Dev-CustAging"
 images: [
 	{file: "ReportLibraryCustomerCollections", type: "png", site: "Portal", cat: "Home", sub: "", report: "", ribbon: "", config: ""}, 

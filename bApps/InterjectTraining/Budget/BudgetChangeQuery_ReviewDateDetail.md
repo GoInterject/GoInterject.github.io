@@ -4,7 +4,7 @@ filename: "BudgetChangeQuery_ReviewDateDetail.md"
 layout: custom
 keywords: [Training, Budget, Budget Change Query]
 headings: ["Overview", "Review Type Options"]
-links: []
+links: ["#review-type-options"]
 image_dir: "WCNTraining/Budget"
 images: [
 	{file: "BudChangeQuery_ReviewDateDetail_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 

@@ -4,7 +4,7 @@ filename: "Logging-In.md"
 layout: custom
 keywords: [login, ribbon, logout, new login, credentials, accounts, user]
 headings: ["Overview", "Initial Interject Login", "New Login", "Logging Out", "Log Back In", "Switch Accounts", "Forgetting Login Credentials"]
-links: []
+links: ["#initial-interject-login"]
 image_dir: "LogginIn"
 images: [
 	{file: "interject-ribbon-advanced-menu-login-revised", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, 

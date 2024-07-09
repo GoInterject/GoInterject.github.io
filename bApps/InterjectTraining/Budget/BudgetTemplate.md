@@ -4,7 +4,7 @@ filename: "BudgetTemplate.md"
 layout: custom
 keywords: [Training, Budget, Budget Template]
 headings: ["Overview", "Filters", "Template Setup", "Build Based On", "Account Level", "Other Required Filters", "Additional Filters", "Input Field Explanations", "Base Year and Fincube", "How Templates Work", "Summary and Detail level accounts", "Pulling Summary and Detail levels together", "Saving Summary and Detail levels together", "The Autocalcs", "Do I have security rights to Save from the Budget Template?", "After Corp Cutoff and after BOD", "After Corp Cutoff", "After BOD", "Common Save Errors"]
-links: ["/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#budget-tools-and-the-control-center", "/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html", "/bApps/InterjectTraining/Budget/BudgetChangeQuery_Summary.html", "/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html", "/bApps/InterjectTraining/Budget/BudgetChangeQuery_Summary.html"]
+links: ["#base-year-and-fincube", "/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#budget-tools-and-the-control-center", "/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html", "/bApps/InterjectTraining/Budget/BudgetChangeQuery_Summary.html", "/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html", "/bApps/InterjectTraining/Budget/BudgetChangeQuery_Summary.html"]
 image_dir: "WCNTraining/Budget"
 images: [
 	{file: "FilterOptions1", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 

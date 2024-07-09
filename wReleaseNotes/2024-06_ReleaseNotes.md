@@ -4,7 +4,7 @@ filename: "2024-06_ReleaseNotes.md"
 layout: custom
 keywords: [change log, updates, versions, history, what's new]
 headings: ["June 2024", "Excel Add-in v2.5.1.1", "Portal Site", "Documentation Updates"]
-links: ["/wAbout/SingleUser.html", "/wAbout/SharedComputer.html", "/wPortal/Roles.html", "/wPortal/FolderPermissions.html"]
+links: ["/wAbout/SingleUser.html#file-locations", "/wAbout/SharedComputer.html#file-locations", "/wPortal/Roles.html", "/wPortal/FolderPermissions.html", "/wIndex/Diagnostics.html", "/wIndex/Diagnostics-FindAllFormulas.html", "/wIndex/Diagnostics-ReplaceDataPortalCodes.html"]
 image_dir: ""
 images: []
 description: Release notes for this month's updates

@@ -4,7 +4,7 @@ filename: "SharedComputer.md"
 layout: custom
 keywords: [install, Multiple Users, Server, network]
 headings: ["Overview", "Installing Interject on Multi-User Systems"]
-links: ["https://portal.gointerject.com/login.html", "https://portal.gointerject.com/invite.html?mode=create", "/wPortal/DownloadInterject.html", "https://docs.gointerject.com/wAbout/Logging-In.html", "mailto:help@gointerject.com"]
+links: ["https://portal.gointerject.com/login.html", "https://portal.gointerject.com/invite.html?mode=create", "/wPortal/DownloadInterject.html", "/wAbout/Logging-In.html", "mailto:help@gointerject.com"]
 image_dir: "SharedComputer"
 images: [
     {file: "15", type: "jpg", site: "Add-in", cat: "", sub: "", report: "", ribbon: "", config: ""}, 

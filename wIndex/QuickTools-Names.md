@@ -4,7 +4,7 @@ filename: "QuickTools-Names.md"
 layout: custom
 keywords: [Quick Tools, Names Tools, Remove Names with Ref Errors from Book, Remove All Names from Sheet, Remove All Names from Book, Create Range Name for Sheet, Create Range Names for Sheet for 2 Column Selection]
 headings: ["Overview", "Excel Name Manager", "Remove Names with Ref Errors from Book", "Remove All Names from Sheet", "Remove All Names from Book", "Create Range Name for Sheet", "Create Range Names for Sheet for 2 Column Selection", "Appending A Prefix and/or Suffix To A Name"]
-links: []
+links: ["/wIndex/jSetting.html"]
 image_dir: "QuickToolsNames"
 images: [
 	{file: "NamesTools", type: "png", site: "Add-in", cat: "Quick Tools", sub: "", report: "", ribbon: "", config: ""}, 

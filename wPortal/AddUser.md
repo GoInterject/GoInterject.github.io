@@ -4,6 +4,7 @@ filename: "AddUser.md"
 layout: custom
 keywords: [create, new, user]
 headings: ["Overview", "Add User", "Adding Details", "Password", "Create User", "Welcome Email", "Roles"]
+links: ["/wPortal/StaffPage.html", "/wPortal/INTERJECT-Roles.html#clientadmin-role", "#welcome-email", "/wPortal/Altering-User-Passwords.html", "/wPortal/INTERJECT-Roles.html"]
 image_dir: "AddUser"
 images: [
     {file: "AddUser", type: "png", site: "Portal", cat: "Organization Staff", sub: "", report: "", ribbon: "", config: ""}, 

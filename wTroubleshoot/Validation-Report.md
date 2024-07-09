@@ -4,7 +4,7 @@ filename: "Validation-Report.md"
 layout: custom
 keywords: [report, error, user support, validation report, formula, parameters, functions, detailed information, code, events, triggers]
 headings: ["Overview", "Validation Report Options", "Pull/Save Data Event", "Drill Event", "Clear Pull/Save Data Event", "Go Back Event", "Data Cell Functions", "Data Cell Last Change Report", "Cell Formula Review"]
-links: ["/wIndex/Excel-Function-Index.html", "/wAbout/Tabular-vs-Data-Cells.html", "/wIndex/Event-Functions-Landing.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#advanced-menu-items", "/wIndex/Event-Functions-Landing.html", "/wIndex/ReportDrill.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#return-from-drill", "/wAbout/Tabular-vs-Data-Cells.html#data-cells", "/wIndex/Report-Formula-Reviews.html#cell-formula-review"]
+links: ["/wIndex/Excel-Function-Index.html", "/wAbout/Tabular-vs-Data-Cells.html", "/wIndex/Event-Functions-Landing.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#advanced-menu-items", "/wIndex/Event-Functions-Landing.html", "#pullsave-data-event", "#pullsave-data-event", "#drill-event", "#clear-pullsave-data-event", "#clear-pullsave-data-event", "#go-back-event", "#data-cell-functions", "#data-cell-last-change-report", "#cell-formula-review", "/wIndex/ReportDrill.html", "#pullsave-data-event", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#return-from-drill", "/wAbout/Tabular-vs-Data-Cells.html#data-cells", "/wIndex/Report-Formula-Reviews.html#cell-formula-review"]
 image_dir: "ValidationReport"
 images: [
     {file: "Ribbon", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 

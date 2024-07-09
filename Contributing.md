@@ -5,7 +5,7 @@ layout: custom
 sitemap: false
 keywords: [best practices, standards, editing, changes, format, style, consistency]
 headings: ["Overview", "Setting Up A Local Environment", "Commit Messages", "Screenshots", "Screenshot Software Requirements", "When to Include a Screenshot", "Click Action (Arrow)", "Highlighting & Emphasizing", "Multi-Step Actions in a Single Screenshot (Numbered Steps)", "Emphasizing Text or a Point in a Screenshot", "Note on Complex Screenshots", "Note on Popups in Screenshots", "Screenshots of Excel Content", "Tab Navigation in Screenshots", "Screenshots Size", "Spacing Surrounding Screenshots", "Interject Company", "Hiding Credentials", "Uploading and Saving Screenshots to the Documentation Site", "Jekyll Front Matter", "Entries", "Images Entry", "Headings", "Table of Contents", "Grammar/Spelling", "Referencing Buttons and Text", "Lists", "Tables", "Links", "Code Blocks", "Consistency"]
-links: ["https://app.clickup.com/8587490/v/dc/86272-35740/86272-32800", "https://github.com/GoInterject/GoInterject.github.io", "https://www.techsmith.com/screen-capture.html"]
+links: ["https://app.clickup.com/8587490/v/dc/86272-35740/86272-32800", "https://github.com/GoInterject/GoInterject.github.io", "https://www.techsmith.com/screen-capture.html", "#collapsible-button"]
 image_dir: "Contributing"
 images: [
 	{file: "01", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 

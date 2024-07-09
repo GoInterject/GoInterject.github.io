@@ -4,7 +4,7 @@ filename: "ReportLibraryLinks.md"
 layout: custom
 keywords: [report library, link, file, version, report, update, upload, details, documentation]
 headings: ["Overview", "Creating a New Link (File Open)", "Creating a New Link (File Not Open)", "Creating a New Version to an Existing Link", "Updating a Report Link", "The Report Link Details Form", "Types of Links", "Link Documentation"]
-links: ["/wAbout/Report-Library-Basics.html#status", "/wAbout/Report-Library-Basics.html#link-version-section", "/wAbout/ReportLibrarySorting.html", "/wAbout/Report-Library-Basics.html#status", "/wGetStarted/L-Drill-DrillCodes.html", "https://docs.gointerject.com/wTroubleshoot/Cloud-File.html"]
+links: ["#report-link-details-form", "/wAbout/Report-Library-Basics.html#status", "/wAbout/Report-Library-Basics.html#link-version-section", "/wAbout/ReportLibrarySorting.html", "/wAbout/Report-Library-Basics.html#status", "#types-of-links", "#link-documentation", "/wGetStarted/L-Drill-DrillCodes.html", "https://docs.gointerject.com/wTroubleshoot/Cloud-File.html"]
 image_dir: "ReportLibraryLinks"
 images: [
 	{file: "OpenReportLibrary", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "", ribbon: "Simple", config: ""}, 

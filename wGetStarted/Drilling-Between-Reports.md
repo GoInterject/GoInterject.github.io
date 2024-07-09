@@ -4,7 +4,7 @@ filename: "Drilling-Between-Reports.md"
 layout: custom
 keywords: [drill]
 headings: ["Overview", "Customer Aging Report", "Inventory Report", "Financial Report", "The Three Ways to Drill"]
-links: ["/wAbout/Real-World-Walkthroughs.html", "/wGetStarted/L-Drill-CustomerAging.html", "/wGetStarted/L-Drill-InventoryReport.html", "/wGetStarted/L-Drill-FinancialReport.html", "/wGetStarted/L-Drill-TheThreeWays.html"]
+links: ["/wAbout/Real-World-Walkthroughs.html", "/wGetStarted/L-Drill-CustomerAging.html", "/wGetStarted/L-Drill-InventoryReport.html", "/wGetStarted/L-Drill-FinancialReport.html", "/wGetStarted/L-Drill-DrillCodes.html", "/wGetStarted/L-Drill-TheThreeWays.html"]
 image_dir: ""
 images: []
 description: The Interject drill feature allows you to connect individual reports together to make a simple, fast, and intuitive experience for users to get to the data they use everyday. In this walkthrough you will view drilling between reports with the same reports used in the previously viewed Real-World Walkthroughs.

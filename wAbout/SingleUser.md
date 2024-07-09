@@ -4,7 +4,7 @@ filename: "SingleUser.md"
 layout: custom
 keywords: [Installing, Install, Basic]
 headings: ["Overview", "Installing Interject"]
-links: ["/wAbout/SharedComputer.html", "/wPortal/DownloadInterject.html", "https://portal.gointerject.com/login.html", "/wPortal/DownloadInterject.html", "https://portal.gointerject.com/invite.html?mode=create", "/wAbout/Logging-In.html#before-using-interject-heres-how-to-login", "mailto:help@gointerject.com"]
+links: ["https://docs.gointerject.com/wAbout/SharedComputer.html", "https://portal.gointerject.com/login.html", "https://portal.gointerject.com/invite.html?mode=create", "/wPortal/DownloadInterject.html", "/wAbout/Logging-In.html", "mailto:help@gointerject.com"]
 image_dir: "SingleUser"
 images: [
     {file: "02", type: "jpg", site: "Portal", cat: "Home", sub: "Main", report: "", ribbon: "", config: ""}, 
