@@ -8,7 +8,9 @@ keywords: [data api, python, setup]
 headings: ["Overview", "Requirements", "Get The Code", "Install The Python Package", "Linux additional requirements", "Install Package", "Setup API", "Get Template Config", "Setup Connection Strings", "Choose Controllers", "Custom Functions", "Running The API", "More Information"]
 links: ["mailto:help@gointerject.com", "https://docs.microsoft.com/en-us/sql/connect/odbc/linux-mac/installing-the-microsoft-odbc-driver-for-sql-server", "/wApi/python-api-custom-functions.html", "https://github.com/GoInterject/ids-python-api"]
 image_dir: ""
-images: [{file: "temp_gitlab_download_repo", type: "png", site: "Github", cat: "ids-python-api", sub: "", report: "", ribbon: "", config: ""}]
+images: [
+	{file: "temp_gitlab_download_repo", type: "png", site: "Github", cat: "ids-python-api", sub: "", report: "", ribbon: "", config: ""}
+	]
 description: Shows how to setup an Interject Python data api.
 ---
 
@@ -46,7 +48,11 @@ Start by cloning the repository to your system.
 git clone https://github.com/GoInterject/ids-python-api
 ```
 
-Note: If this repo is private and you need access, please [contact us](mailto:help@gointerject.com). It will be public soon.
+<br>
+<blockquote class=highlight_note>
+<b>Note:</b> If this repo is private and you need access, please <a href="mailto:help@gointerject.com">contact us</a>. It will be public soon.
+</blockquote>
+<br>
 
 If you do not have git installed or prefer a different method, simply download the source code from the repository website.
 

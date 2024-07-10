@@ -6,7 +6,13 @@ keywords: [Quick Tools, Other Tools, Unique List from Selection, Unhide All Shee
 headings: ["Overview", "Unique List from Selection", "Unhide All Sheets"]
 links: []
 image_dir: "QuickToolsOther"
-images: [{file: "OtherTools", type: "png", site: "Addin", cat: "Quick Tools", sub: "", report: "", ribbon: "", config: ""}, {file: "ListBefore", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, {file: "ListAfter", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, {file: "HiddenBefore", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Detail", ribbon: "", config: ""}, {file: "HiddenAfter", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Detail", ribbon: "", config: ""}]
+images: [
+	{file: "OtherTools", type: "png", site: "Add-in", cat: "Quick Tools", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ListBefore", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ListAfter", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "HiddenBefore", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Customer Aging Detail", ribbon: "", config: ""}, 
+	{file: "HiddenAfter", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Customer Aging Detail", ribbon: "", config: ""}
+	]
 description: The Other Tools within Quick Tools are a collection of miscellaneous tools.
 ---
 * * *

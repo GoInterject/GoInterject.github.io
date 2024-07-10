@@ -4,9 +4,37 @@ filename: "L-Dev-CustomerAging.md"
 layout: custom
 keywords: [developer, example, customer aging, SQL, data portal, data connection, walkthrough]
 headings: ["Overview", "Setting up the Data Connection", "Setting up the Data Portal", "Setting up Formula Parameters", "System Parameters", "Creating the Stored Procedure", "Create the Report"]
-links: ["/wAbout/Customer-Aging.html", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "https://portal.gointerject.com", "/wPortal/L-Database-Connection.html#testing-the-connection-string-from-within-excel", "https://portal.gointerject.com", "/wPortal/Data-Portals.html", "/wPortal/Data-Portals.html", "/wPortal/The-INTERJECT-Website-Portal.html", "mailto:info@gointerject.com", "/wGetStarted/L-Create-CustomerAging.html", "/wGetStarted/L-Dev-CustomerOrders.html"]
+links: ["/wAbout/Customer-Aging.html", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "https://portal.gointerject.com", "/wPortal/L-Database-Connection.html#testing-the-connection-string-from-within-excel", "https://portal.gointerject.com", "#setting-up-the-data-connection", "https://docs.gointerject.com/wPortal/Data-Portals.html", "/wPortal/Data-Portals.html", "/wPortal/The-INTERJECT-Website-Portal.html", "mailto:info@gointerject.com", "/wGetStarted/L-Create-CustomerAging.html", "/wGetStarted/L-Dev-CustomerOrders.html"]
 image_dir: "L-Dev-CustAging"
-images: [{file: "ReportLibraryCustomerCollections", type: "png", site: "Portal", cat: "Home", sub: "", report: "", ribbon: "", config: ""}, {file: "01", type: "jpg", site: "Portal", cat: "Data Connections", sub: "", report: "", ribbon: "", config: ""}, {file: "02", type: "jpg", site: "Portal", cat: "Data Connections", sub: "Details", report: "", ribbon: "", config: ""}, {file: "03", type: "jpg", site: "Portal", cat: "Data Connections", sub: "Details", report: "", ribbon: "", config: ""}, {file: "04", type: "jpg", site: "Portal", cat: "Data Connections", sub: "Details", report: "", ribbon: "", config: ""}, {file: "05", type: "png", site: "Portal", cat: "Data Connections", sub: "Details", report: "", ribbon: "", config: ""}, {file: "06", type: "png", site: "Portal", cat: "Data Connections", sub: "Details", report: "", ribbon: "", config: ""}, {file: "07", type: "jpg", site: "Portal", cat: "Home", sub: "", report: "", ribbon: "", config: ""}, {file: "08", type: "jpg", site: "Portal", cat: "Data Portals", sub: "", report: "", ribbon: "", config: ""}, {file: "09", type: "png", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "10", type: "png", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "11", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "12", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "13", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "14", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "15", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "16", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "17", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "18", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "19", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "20", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "21", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "21", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "22", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "23", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "24", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "25", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}]
+images: [
+	{file: "ReportLibraryCustomerCollections", type: "png", site: "Portal", cat: "Home", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "01", type: "jpg", site: "Portal", cat: "Data Connections", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "02", type: "jpg", site: "Portal", cat: "Data Connections", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "03", type: "jpg", site: "Portal", cat: "Data Connections", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "04", type: "jpg", site: "Portal", cat: "Data Connections", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "05", type: "png", site: "Portal", cat: "Data Connections", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "06", type: "png", site: "Portal", cat: "Data Connections", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "07", type: "jpg", site: "Portal", cat: "Home", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "08", type: "jpg", site: "Portal", cat: "Data Portals", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "09", type: "png", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "10", type: "png", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "11", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "12", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "13", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "14", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "15", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "16", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "17", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "18", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "19", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "20", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "21", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "21", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "22", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "23", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "24", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "25", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}
+	]
 description: On this page, you will create a simple data pull using the Customer Aging Report. It will guide you on how to build connections and data portals as well as cover the SQL stored procedure used to pull the data.
 ---
 * * *
@@ -18,8 +46,9 @@ On this page, you will create a simple data pull using the Customer Aging Report
 <blockquote class=highlight_note>
 <b>Note:</b> This example uses Microsoft's Northwind Database. You can download this database <a href="https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases">here</a> or you can use this example as a guide for your own data source.
 </blockquote>
+<br>
 
-**Developer Note:** To work through this example, locate the Customer Collections link in the Interject Report Library.
+To work through this example, locate the Customer Collections link in the Interject Report Library.
 
 ![](/images/L-Dev-CustAging/ReportLibraryCustomerCollections.png)
 <br>
@@ -80,8 +109,10 @@ The Database Data Connection is now ready to be used in a Data Portal. You shoul
 ![](/images/L-Dev-CustAging/10.png)
 <br>
 
-**Note:** If this is your first time setting up a data portal, review [**Data Portals**](/wPortal/Data-Portals.html), which describes the data portal parameters in more detail, including the difference between formula and system parameters. Proceed to the next step to continue.
-
+<blockquote class=highlight_note>
+<b>Note:</b> If this is your first time setting up a data portal, review <a href="https://docs.gointerject.com/wPortal/Data-Portals.html">Data Portals</a>, which describes the data portal parameters in more detail, including the difference between formula and system parameters. Proceed to the next step to continue.
+</blockquote>
+<br>
 ### Setting up Formula Parameters
 
 **Step 1:** To add your first formula parameter, click **Click here to add a Formula Parameter**. For this parameter, enter **CompanyName** for Name, **varchar** for Type, and **input** for Direction to input, as shown below.
@@ -99,7 +130,10 @@ The Database Data Connection is now ready to be used in a Data Portal. You shoul
 ![](/images/L-Dev-CustAging/13.jpg)
 <br>
 
-**Note:** When you set up a formula parameter, the **Save** icon is red until you save your changes. After your changes are saved, the **Save** icon turns green.
+<blockquote class=highlight_note>
+<b>Note:</b> When you set up a formula parameter, the **Save** icon is red until you save your changes. After your changes are saved, the **Save** icon turns green.
+</blockquote>
+<br>
 
 **Step 5:** Click the **Click here to add a Formula Parameter** to add the second parameter. Enter **ContactName** for Name, **varchar** for Type, and **input** for Direction.
 

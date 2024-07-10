@@ -6,7 +6,10 @@ keywords: [Training, Budget, Budget Change Query, Unsynced]
 headings: ["Overview", "Latest Unsynced Change Info"]
 links: []
 image_dir: "WCNTraining/Budget"
-images: [{file: "BudChangeQuery_Unsynced_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "BudChangeQuery_Unsynced_ChangeInfo", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}]
+images: [
+	{file: "BudChangeQuery_Unsynced_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "BudChangeQuery_Unsynced_ChangeInfo", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
+	]
 description: This new tab of the Budget Change Query tool highlights all budget changes that have not yet been synced to Interject, either because they are saved after Corp Cutoff or BOD.
 ---
 

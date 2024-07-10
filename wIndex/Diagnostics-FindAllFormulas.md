@@ -7,12 +7,12 @@ headings: ["Overview", "Text Formula", "Text All", "SQL Query", "XML"]
 links: []
 image_dir: "DiagnosticsFindAllFormulas"
 images: [
-    {file: "FindAllFormulas", type: "png", site: "Addin", cat: "Diagnostics", sub: "FindAllWorkbookFormulas", report: "", ribbon: "", config: ""}, 
-    {file: "TextFormula", type: "png", site: "Addin", cat: "Diagnostics", sub: "FindAllWorkbookFormulas", report: "", ribbon: "", config: ""}, 
-    {file: "TextAll", type: "png", site: "Addin", cat: "Diagnostics", sub: "FindAllWorkbookFormulas", report: "", ribbon: "", config: ""}, 
-    {file: "SQLQuery", type: "png", site: "Addin", cat: "Diagnostics", sub: "FindAllWorkbookFormulas", report: "", ribbon: "", config: ""}, 
+    {file: "FindAllFormulas", type: "png", site: "Add-in", cat: "Diagnostics", sub: "FindAllWorkbookFormulas", report: "", ribbon: "", config: ""}, 
+    {file: "TextFormula", type: "png", site: "Add-in", cat: "Diagnostics", sub: "FindAllWorkbookFormulas", report: "", ribbon: "", config: ""}, 
+    {file: "TextAll", type: "png", site: "Add-in", cat: "Diagnostics", sub: "FindAllWorkbookFormulas", report: "", ribbon: "", config: ""}, 
+    {file: "SQLQuery", type: "png", site: "Add-in", cat: "Diagnostics", sub: "FindAllWorkbookFormulas", report: "", ribbon: "", config: ""}, 
     {file: "SQLOutput", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
-    {file: "XML", type: "png", site: "Addin", cat: "Diagnostics", sub: "FindAllWorkbookFormulas", report: "", ribbon: "", config: ""}
+    {file: "XML", type: "png", site: "Add-in", cat: "Diagnostics", sub: "FindAllWorkbookFormulas", report: "", ribbon: "", config: ""}
     ]
 description: The Diagnostic command "Find All Workbook Formulas" will display information about every Interject formula in the active workbook. Depending on which line is first in the input field, it will output to several different formats.
 

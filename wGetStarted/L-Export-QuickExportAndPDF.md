@@ -6,7 +6,23 @@ keywords: [quick, export, PDF, publish, distribute, data cells, walkthrough]
 headings: ["Overview", "Export Workbook", "Export Sheet", "Quick PDF"]
 links: ["/wAbout/Tabular-vs-Data-Cells.html", "/wAbout/Tabular-vs-Data-Cells.html", "/wAbout/Financial-Report.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#export-book", "/wIndex/jRangeTag.html", "https://learn.microsoft.com/en-us/troubleshoot/dynamics/gp/have-microsoft-save-pdf-xps-add-in", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#export-book", "/wGetStarted/L-Export-BasicDist.html"]
 image_dir: "L-Export-QuickExPDF"
-images: [{file: "01", type: "png", site: "Addin", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, {file: "02", type: "png", site: "Addin", cat: "Pull Data", sub: "", report: "PL Trend Report", ribbon: "Simple", config: ""}, {file: "03", type: "png", site: "Addin", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, {file: "04", type: "png", site: "Addin", cat: "Export And Distribution", sub: "", report: "PL Trend Report", ribbon: "Simple", config: ""}, {file: "05", type: "png", site: "Addin", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "Simple", config: ""}, {file: "ExportSheet", type: "png", site: "Addin", cat: "Export And Distribution", sub: "", report: "", ribbon: "", config: ""}, {file: "OpenReport", type: "png", site: "Addin", cat: "Report Library", sub: "", report: "Interject Customer Collections", ribbon: "", config: ""}, {file: "PullData", type: "png", site: "Addin", cat: "Pull Data", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}, {file: "jRangeTagItems", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, {file: "ExcludeCells", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}, {file: "ClickExportSheet", type: "png", site: "Addin", cat: "Export And Distribution", sub: "", report: "", ribbon: "", config: ""}, {file: "ExportedSheet", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, {file: "06", type: "png", site: "Addin", cat: "Export And Distribution", sub: "", report: "PL Trend Report", ribbon: "Simple", config: ""}, {file: "07", type: "png", site: "Windows", cat: "Explorer", sub: "", report: "", ribbon: "", config: ""}, {file: "08", type: "png", site: "External", cat: "Browser", sub: "", report: "PL Trend Report", ribbon: "", config: ""}]
+images: [
+	{file: "01", type: "png", site: "Add-in", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, 
+	{file: "02", type: "png", site: "Add-in", cat: "Pull Data", sub: "", report: "PL Trend Report", ribbon: "Simple", config: ""}, 
+	{file: "03", type: "png", site: "Add-in", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, 
+	{file: "04", type: "png", site: "Add-in", cat: "Export And Distribution", sub: "", report: "PL Trend Report", ribbon: "Simple", config: ""}, 
+	{file: "05", type: "png", site: "Add-in", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "Simple", config: ""}, 
+	{file: "ExportSheet", type: "png", site: "Add-in", cat: "Export And Distribution", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "OpenReport", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "Interject Customer Collections", ribbon: "", config: ""}, 
+	{file: "PullData", type: "png", site: "Add-in", cat: "Pull Data", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}, 
+	{file: "jRangeTagItems", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ExcludeCells", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}, 
+	{file: "ClickExportSheet", type: "png", site: "Add-in", cat: "Export And Distribution", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ExportedSheet", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "06", type: "png", site: "Add-in", cat: "Export And Distribution", sub: "", report: "PL Trend Report", ribbon: "Simple", config: ""}, 
+	{file: "07", type: "png", site: "Windows", cat: "Explorer", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "08", type: "png", site: "External", cat: "Browser", sub: "", report: "PL Trend Report", ribbon: "", config: ""}
+	]
 description: The Quick Export and PDF method is the simplest way of distributing. The purpose of Quick Export is to build a new workbook from the current workbook and remove all the external links and Data Cell formulas so users without Interject can view the report.
 ---
 * * *
@@ -28,7 +44,12 @@ Take the report **PL Trend Report with Data Cells** from the [Financial Walkthro
 ![](/images/L-Export-QuickExPDF/01.png)
 <br>
 
-**Step 1:** First, use the [**Pull Data**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) operation to pull the report for Location 7002 and month 2002-05. Note: Ensure that the **Calculate Data Cells** is checked.
+**Step 1:** First, use the [**Pull Data**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) operation to pull the report for Location 7002 and month 2002-05.
+
+<blockquote class=highlight_note>
+<b>Note:</b> Ensure that the <b>Calculate Data Cells</b> is checked.
+</blockquote>
+<br>
 
 ![](/images/L-Export-QuickExPDF/02.png)
 <br>

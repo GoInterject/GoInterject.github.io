@@ -7,8 +7,8 @@ headings: ["Overview"]
 links: []
 image_dir: "DiagnosticsListDataPortals"
 images: [
-	{file: "ListDataPortals", type: "png", site: "Addin", cat: "Diagnostics", sub: "List Data Portals", report: "", ribbon: "", config: ""},
-	{file: "OutputRTF", type: "png", site: "Addin", cat: "Diagnostics", sub: "List Data Portals", report: "", ribbon: "", config: ""},
+	{file: "ListDataPortals", type: "png", site: "Add-in", cat: "Diagnostics", sub: "List Data Portals", report: "", ribbon: "", config: ""},
+	{file: "OutputRTF", type: "png", site: "Add-in", cat: "Diagnostics", sub: "List Data Portals", report: "", ribbon: "", config: ""},
 	{file: "RTFDocument", type: "png", site: "External", cat: "Word", sub: "Document", report: "", ribbon: "", config: ""}
 ]
 description: The "List Data Portals" command in our Excel add-in diagnostics form outputs a comprehensive list of all data portals associated with the company in RTF (Rich Text Format).

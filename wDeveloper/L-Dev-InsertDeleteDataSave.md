@@ -4,9 +4,37 @@ filename: "L-Dev-InsertDeleteDataSave.md"
 layout: custom
 keywords: [developer, example, walkthrough, SQL, SSMS, Data Portal, data connection, data save, insertions, deletions]
 headings: ["Overview", "Setting Up the Data Connection", "Setting Up the Data Portal", "Setting Up the Report", "Setting Up the Soft Delete", "Setting Up the Stored Procedure", "Modifying the Stored Procedure", "Data to Process", "Inserting the Data to Process", "Update DataToProcess", "ChangeLog", "Merge Select", "Merge Update", "Merge Insert", "Merge Output", "Update ChangeLog", "Set Message To User", "Final Stored Procedure", "Testing the Stored Procedure", "Testing the ReportSave"]
-links: ["/wDeveloper/L-Dev-EditingDataSave.html", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "https://portal.gointerject.com", "/wPortal/Logging-In-to-Website-Portal.html", "/wIndex/Request-Context-Parse.html", "/wDeveloper/L-Dev-EditingDataSave.html#setting-up-the-report", "/wGetStarted/L-Dev-CustomerAging.html#creating-the-stored-procedure", "/wDeveloper/L-Dev-EditingDataSave.html#final-stored-procedure", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#overview"]
+links: ["/wDeveloper/L-Dev-EditingDataSave.html", "#setting-up-the-data-connection", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "#setting-up-the-data-portal", "#setting-up-the-report", "#setting-up-the-soft-delete", "#setting-up-the-stored-procedure", "#testing-the-stored-procedure", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "https://portal.gointerject.com", "/wPortal/Logging-In-to-Website-Portal.html", "https://docs.gointerject.com/wDeveloper/L-Dev-InsertDeleteDataSave.html#setting-up-the-stored-procedure", "/wIndex/Request-Context-Parse.html", "/wDeveloper/L-Dev-EditingDataSave.html#setting-up-the-report", "/wGetStarted/L-Dev-CustomerAging.html#creating-the-stored-procedure", "/wDeveloper/L-Dev-EditingDataSave.html#final-stored-procedure", "https://docs.gointerject.com/wDeveloper/L-Dev-InsertDeleteDataSave.html#testing-the-stored-procedure", "#setting-up-the-report", "#merge-insert", "#data-to-process", "#update-changelog", "#setting-up-the-soft-delete", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#overview"]
 image_dir: "L-Dev-InsertDeleteDataSave"
-images: [{file: "NewDataPortal", type: "png", site: "Portal", cat: "Data Portals", sub: "", report: "", ribbon: "", config: ""}, {file: "DataPortalDetails", type: "png", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "AddSystemParameter", type: "png", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "ChangeReportSaveFunction", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "AddColumnDefNames", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, {file: "AddDeleteColumn", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}, {file: "ClickDataValidation", type: "png", site: "Excel", cat: "Data Validation", sub: "Data Validation", report: "", ribbon: "", config: ""}, {file: "DataValidationWindow", type: "png", site: "Excel", cat: "Data Validation", sub: "", report: "", ribbon: "", config: ""}, {file: "EnterClear", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, {file: "AddIsDeletedToPullSP", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "SPDataToProcess", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "SPInsertToDataToProcess", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "SPUpdateDataToProcess", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "SPChangeLog", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "SPMergeSelect", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "SPMergeUpdate", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "SPMergeInsert", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "SPOutput2", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "SPUpdateChangeLog", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "SPSetMessageToUser", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "ViewSQLTestClick", type: "png", site: "Addin", cat: "Ribbon", sub: "System", report: "", ribbon: "", config: "Yes"}, {file: "CopyTestCode", type: "png", site: "Addin", cat: "View SQL Test For ActiveCell", sub: "", report: "", ribbon: "", config: ""}, {file: "PasteTestCode", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "ExecuteTestCode", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "TestCodeExecuted", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "TestingTheReportChanges", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}, {file: "TestingTheReportResults", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}]
+images: [
+	{file: "NewDataPortal", type: "png", site: "Portal", cat: "Data Portals", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "DataPortalDetails", type: "png", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "AddSystemParameter", type: "png", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "ChangeReportSaveFunction", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, 
+	{file: "AddColumnDefNames", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, 
+	{file: "AddDeleteColumn", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}, 
+	{file: "ClickDataValidation", type: "png", site: "Excel", cat: "Data Validation", sub: "Data Validation", report: "", ribbon: "", config: ""}, 
+	{file: "DataValidationWindow", type: "png", site: "Excel", cat: "Data Validation", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "EnterClear", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, 
+	{file: "AddIsDeletedToPullSP", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "SPDataToProcess", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "SPInsertToDataToProcess", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "SPUpdateDataToProcess", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "SPChangeLog", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "SPMergeSelect", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "SPMergeUpdate", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "SPMergeInsert", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "SPOutput2", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "SPUpdateChangeLog", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "SPSetMessageToUser", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ViewSQLTestClick", type: "png", site: "Add-in", cat: "Ribbon", sub: "System", report: "", ribbon: "", config: "Yes"}, 
+	{file: "CopyTestCode", type: "png", site: "Add-in", cat: "View SQL Test For ActiveCell", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "PasteTestCode", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ExecuteTestCode", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "TestCodeExecuted", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "TestingTheReportChanges", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}, 
+	{file: "TestingTheReportResults", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}
+	]
 description: In this example you will modify the Editing Data Save using the Customer Aging Detail report and the Northwind Customers data source to add or delete a customer.
 ---
 * * *
@@ -15,7 +43,10 @@ description: In this example you will modify the Editing Data Save using the Cus
 
 In this example you will modify the previous [Editing Data Save](/wDeveloper/L-Dev-EditingDataSave.html), which was set up to edit a customer's contact name and title. In this Insert &amp; Delete Data Save, you will walkthrough the steps to edit all the columns. In addition, you will also include the ability to insert or delete a customer from within the Excel report.
 
-**Note:** The Customer Aging Report used in this example is a report that displays a customer's outstanding balances. It is not normally used to edit, insert, or delete a customer directly. However, for this walkthrough demonstration purpose, you will modify the report in order to do so.
+<blockquote class=highlight_note>
+<b>Note:</b> The Customer Aging Report used in this example is a report that displays a customer's outstanding balances. It is not normally used to edit, insert, or delete a customer directly. However, for this walkthrough demonstration purpose, you will modify the report in order to do so.
+</blockquote>
+<br>
 
 This walkthrough involves 6 main steps:
 
@@ -52,7 +83,9 @@ For the Data Connection for this example, you will use the connection previously
 * **Command Type:** Stored Procedure
 * **Stored Procedure/Command:** NorthwindInsertDeleteDataSaveSP
 
-**Note:** You will create the "NorthwindInsertDeleteDataSaveSP" Stored Procedure [later](#setting-up-the-stored-procedure).
+<blockquote class=highlight_note>
+<b>Note:</b> You will create the "NorthwindInsertDeleteDataSaveSP" Stored Procedure <a href="https://docs.gointerject.com/wDeveloper/L-Dev-InsertDeleteDataSave.html#setting-up-the-stored-procedure">later</a>
+</blockquote>
 <br>
 
 ![](/images/L-Dev-InsertDeleteDataSave/DataPortalDetails.png)
@@ -134,7 +167,10 @@ ALTER COLUMN IsDeleted BIT NOT NULL
 
 Next you will created a new Stored Procedure that builds from the [previous save](/wDeveloper/L-Dev-EditingDataSave.html#final-stored-procedure). To make this easier, simply copy the SP into a new query, change the command to "CREATE OR ALTER PROC NorthwindInsertDeleteDataSaveSP" and execute it to save it. Then you can begin making modifications to it. For your convenience, the SP is posted here.
 
-**Note:** The code for testing the SP has been removed. It will be handled [later](#testing-the-stored-procedure):
+<blockquote class=highlight_note>
+<b>Note:</b> The code for testing the SP has been removed. It will be handled <a href="https://docs.gointerject.com/wDeveloper/L-Dev-InsertDeleteDataSave.html#testing-the-stored-procedure">later</a>
+</blockquote>
+<br>
 
 <button class = "collapsible"> NorthwindInsertDeleteDataSaveSP </button>
 <div markdown="1" class="panel">
@@ -181,7 +217,7 @@ AS
 	Reserved Parameters:
 	---------------------------------------------------------------------------
 	Note: If the below parameters are added to your stored procedure and to the
-	dataportal parameter list, Interject will pass the related value automatically.
+	data portal parameter list, Interject will pass the related value automatically.
 	
 	@Interject_XMLDataToSave varchar(max) - Required for saving data. It contains XML for the designated cells values.
 	@Interject_ColDefItems varchar(max) - Provides the Column Definitions in XML designated within the report formula.
@@ -628,7 +664,7 @@ AS
 	Reserved Parameters:
 	---------------------------------------------------------------------------
 	Note: If the below parameters are added to your stored procedure and to the
-	dataportal parameter list, Interject will pass the related value automatically.
+	data portal parameter list, Interject will pass the related value automatically.
 	
 	@Interject_XMLDataToSave varchar(max) - Required for saving data. It contains XML for the designated cells values.
 	@Interject_ColDefItems varchar(max) - Provides the Column Definitions in XML designated within the report formula.

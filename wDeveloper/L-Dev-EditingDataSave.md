@@ -4,9 +4,41 @@ filename: "L-Dev-EditingDataSave.md"
 layout: custom
 keywords: [developer, example, walkthrough, SQL, SSMS, Data Portal, data connection, data save]
 headings: ["Overview", "Setting Up the Data Connection", "Setting Up the Data Portal", "Setting Up the Report", "Setting Up the ReportSave Function", "Setting Up the Stored Procedure", "Add the RequestContext_Parse Stored Procedure", "Modifying the Stored Procedure", "Parameters", "Testing", "Context Parameters", "Error Message", "Data To Process", "Inserting the Data to Process", "Validations", "ChangeLog", "Merge", "Set Message To User", "Final Response To User", "Final Stored Procedure", "Testing the Stored Procedure", "Testing the ReportSave"]
-links: ["/wGetStarted/L-Dev-CustomerAging.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data", "/wIndex/ReportSave.html", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "https://portal.gointerject.com", "/wPortal/Logging-In-to-Website-Portal.html", "/wIndex/Request-Context-Parse.html", "/wGetStarted/L-Dev-CustomerAging.html#create-the-report", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#overview"]
+links: ["/wGetStarted/L-Dev-CustomerAging.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data", "/wIndex/ReportSave.html", "#setting-up-the-data-connection", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "#setting-up-the-data-portal", "#setting-up-the-report", "#setting-up-the-reportsave-function", "#setting-up-the-stored-procedure", "#testing-the-stored-procedure", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "https://portal.gointerject.com", "/wPortal/Logging-In-to-Website-Portal.html", "https://docs.gointerject.com/wDeveloper/L-Dev-EditingDataSave.html#setting-up-the-stored-procedure", "/wIndex/Request-Context-Parse.html", "/wGetStarted/L-Dev-CustomerAging.html#create-the-report", "#setting-up-the-data-portal", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#overview", "#add-the-requestcontext_parse-stored-procedure", "#testing"]
 image_dir: "L-Dev-EditingDataSave"
-images: [{file: "NewDataPortal", type: "png", site: "Portal", cat: "Data Portals", sub: "", report: "", ribbon: "", config: ""}, {file: "DataPortalDetails", type: "png", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "AddSystemParameter", type: "png", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "PullData", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, {file: "UnfreezePanes", type: "png", site: "Addin", cat: "Quick Tools", sub: "", report: "", ribbon: "Simple", config: ""}, {file: "HighlightFirstTwoRows", type: "png", site: "Excel", cat: "Right Click Menu", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "InsertCopiedRows", type: "png", site: "Excel", cat: "Right Click Menu", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}, {file: "InsertCopiedRowsAgain", type: "png", site: "Excel", cat: "Right Click Menu", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}, {file: "SetupConfigSection", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, {file: "FunctionWizard", type: "png", site: "Addin", cat: "Report", sub: "Function Wizard", report: "", ribbon: "", config: "Yes"}, {file: "FunctionWizardFilled2", type: "png", site: "Addin", cat: "Report", sub: "Function Wizard", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "ReportSetUp", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "SQLTemplate", type: "png", site: "Addin", cat: "Ribbon", sub: "System", report: "", ribbon: "", config: "Yes"}, {file: "SQLTemplateCode", type: "png", site: "Addin", cat: "Diagnostics", sub: "View SQL Template For ActiveCell", report: "", ribbon: "", config: ""}, {file: "ExecuteStoredProcedure", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "SPParams", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "SPTesting", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "SPContextParams", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "SPErrorMessage", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "SPDataToProcess", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "SPInsertToDataToProcess", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "SPValidation", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "SPDeclareChangeLog", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "SPMerge", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "SPSetMessageToUser", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "SPFinalResponseToUser", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "TestingSP", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "TestingRollback", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "TestingPullData", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}, {file: "TestingSave", type: "png", site: "Addin", cat: "Save Data", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}, {file: "TestingResults", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}]
+images: [
+	{file: "NewDataPortal", type: "png", site: "Portal", cat: "Data Portals", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "DataPortalDetails", type: "png", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "AddSystemParameter", type: "png", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "PullData", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "UnfreezePanes", type: "png", site: "Add-in", cat: "Quick Tools", sub: "", report: "", ribbon: "Simple", config: ""}, 
+	{file: "HighlightFirstTwoRows", type: "png", site: "Excel", cat: "Right Click Menu", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, 
+	{file: "InsertCopiedRows", type: "png", site: "Excel", cat: "Right Click Menu", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}, 
+	{file: "InsertCopiedRowsAgain", type: "png", site: "Excel", cat: "Right Click Menu", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}, 
+	{file: "SetupConfigSection", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, 
+	{file: "FunctionWizard", type: "png", site: "Add-in", cat: "Report", sub: "Function Wizard", report: "", ribbon: "", config: "Yes"}, 
+	{file: "FunctionWizardFilled2", type: "png", site: "Add-in", cat: "Report", sub: "Function Wizard", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, 
+	{file: "ReportSetUp", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, 
+	{file: "SQLTemplate", type: "png", site: "Add-in", cat: "Ribbon", sub: "System", report: "", ribbon: "", config: "Yes"}, 
+	{file: "SQLTemplateCode", type: "png", site: "Add-in", cat: "Diagnostics", sub: "View SQL Template For ActiveCell", report: "", ribbon: "", config: ""}, 
+	{file: "ExecuteStoredProcedure", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "SPParams", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "SPTesting", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "SPContextParams", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "SPErrorMessage", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "SPDataToProcess", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "SPInsertToDataToProcess", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "SPValidation", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "SPDeclareChangeLog", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "SPMerge", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "SPSetMessageToUser", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "SPFinalResponseToUser", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "TestingSP", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "TestingRollback", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "TestingPullData", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}, 
+	{file: "TestingSave", type: "png", site: "Add-in", cat: "Save Data", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}, 
+	{file: "TestingResults", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}
+	]
 description: In this example you will walkthrough the steps in order to Save Data using the Interject Function ReportSave. In this Editing Data Save example, you will set up a data save that will allow you to edit a customer's contact name and title right from within the Excel report.
 ---
 * * *
@@ -17,8 +49,10 @@ In this example you will build from the previous report where you built a [Data 
 
 In this Editing Data Save example, you will set up a data save that will allow you to edit a customer's contact name and title right from within the Excel report. 
 
-
-**Note:** The Customer Aging Report used in this example is a report that displays a customer's outstanding balances. It is not normally used to edit a customer directly. However, for this walkthrough demonstration purpose, you will modify the report in order to do so.
+<blockquote class=highlight_note>
+<b>Note:</b> The Customer Aging Report used in this example is a report that displays a customer's outstanding balances. It is not normally used to edit a customer directly. However, for this walkthrough demonstration purpose, you will modify the report in order to do so.
+</blockquote>
+<br>
 
 This walkthrough involves 6 main steps:
 
@@ -55,7 +89,9 @@ For the Data Connection for this example, you will use the connection previously
 * **Command Type:** Stored Procedure
 * **Stored Procedure/Command:** NorthwindEditingDataSaveSP
 
-**Note:** You will create the "NorthwindEditingDataSaveSP" Stored Procedure [later](#setting-up-the-stored-procedure).
+<blockquote class=highlight_note>
+<b>Note:</b> You will create the "NorthwindEditingDataSaveSP" Stored Procedure <a href="https://docs.gointerject.com/wDeveloper/L-Dev-EditingDataSave.html#setting-up-the-stored-procedure">later</a>
+</blockquote>
 <br>
 
 ![](/images/L-Dev-EditingDataSave/DataPortalDetails.png)
@@ -118,7 +154,7 @@ The only thing left to set up in this report is the actual ReportSave function.
 
 **Step 2:** Enter the following details in the Function Wizard:
 
-1. **DataPortal:** Enter the Data Portal you set up in the [beginning](#setting-up-the-data-portal).
+1. **Data Portal:** Enter the Data Portal you set up in the [beginning](#setting-up-the-data-portal).
 2. **RowDefRange:** This range defines the unique keys in the data source for each row. In this case it is the CustomerID. Enter the single column range for the CustomerIDs and be sure to select one row beyond the last ID (to allow expansion).
 3. **ColDefRange:** Enter **4:4**. This range contains the columns that will be saved.
 4. **ResultsRange:** Enter **6:6**. This range represents the return message to the user.
@@ -682,7 +718,7 @@ AS
 	Reserved Parameters:
 	---------------------------------------------------------------------------
 	Note: If the below parameters are added to your stored procedure and to the
-	dataportal parameter list, Interject will pass the related value automatically.
+	data portal parameter list, Interject will pass the related value automatically.
 	
 	@Interject_XMLDataToSave varchar(max) - Required for saving data. It contains XML for the designated cells values.
 	@Interject_ColDefItems varchar(max) - Provides the Column Definitions in XML designated within the report formula.

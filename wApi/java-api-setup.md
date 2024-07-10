@@ -6,7 +6,9 @@ keywords: [data api, web api, java, setup, spring framework]
 headings: ["Overview", "Requirements", "Get the Code", "Setup", "Run API", "Change Host and Port", "Development Docs", "Interject Docs"]
 links: ["https://spring.io/projects/spring-framework", "https://www.oracle.com/java/technologies/downloads/", "https://maven.apache.org/download.cgi", "mailto:help@gointerject.com", "https://github.com/GoInterject/ids-java-api/archive/refs/heads/main.zip", "/wIndex/jColumnDef.html", "/wPortal/Data-Portals.html#overview-of-parameters", "/wIndex/ReportFixed.html", "/wIndex/ReportRange.html", "/wIndex/ReportSave.html", "/wIndex/ReportVariable.html", "/wGetStarted/L-Dev-Error-Handling.html"]
 image_dir: "API"
-images: [{file: "JavaDownloadZip", type: "png", site: "Github", cat: "ids-java-api", sub: "", report: "", ribbon: "", config: ""}]
+images: [
+	{file: "JavaDownloadZip", type: "png", site: "Github", cat: "ids-java-api", sub: "", report: "", ribbon: "", config: ""}
+	]
 description: Shows how to setup an INTERJECT Java data api.
 ---
 
@@ -27,7 +29,11 @@ With Git, you can clone the repository directly to your system. Navigate to the 
 git clone https://github.com/GoInterject/ids-java-api.git
 ```
 
-**Note:** If this repo is private and you need access, please [contact us](mailto:help@gointerject.com). It will be public soon.
+<br>
+<blockquote class=highlight_note>
+<b>Note:</b> If this repo is private and you need access, please <a href="mailto:help@gointerject.com">contact us</a>. It will be public soon.
+</blockquote>
+<br>
 
 Alternatively you can download the [zip file](https://github.com/GoInterject/ids-java-api/archive/refs/heads/main.zip){:target="_blank"}{:rel="noopener noreferrer"} and unpack manually:
 
@@ -64,7 +70,10 @@ To run with Java:
 java -jar "./target/interject-webbapp-1.0.0-SNAPSHOT.jar"
 ```
 
-**Note:** For more information, view the Readme in the parent directory or the doc files in the docs folder of the repo.
+<blockquote class=highlight_note>
+<b>Note:</b> For more information, view the Readme in the parent directory or the doc files in the docs folder of the repo.
+</blockquote>
+<br>
 
 ### Change Host and Port
 

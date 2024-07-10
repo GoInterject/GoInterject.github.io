@@ -34,7 +34,7 @@ System Parameters Related to User Identity:
 | @Interject_NTLogin | Windows authentication user name (Domain excluded) |
 | @Interject_LoginName | Interject user name logged in |
 | @Interject_UserID | Interject user id |
-| @Interject_ClientID | The client id that is current in the Interject Addin. Note that Company and Client may be used interchangeably |
+| @Interject_ClientID | The client id that is current in the Interject Add-in. Note that Company and Client may be used interchangeably |
 | <a href="https://docs.gointerject.com/wIndex/Request-Context-Parse.html">@Interject_RequestContext</a> | Is XML that includes a UserContext node |
 
 When the above system parameters are used, it is important for the middle tier object to be configured to receive it. Stored procedures must have the additional parameters added or Interject will show an error to the user when pulling the report. Using an API as a middle tier will not likely create an error when additional parameters are added. Since you control the code for an API, you would need to add additional code in the API before the additional parameters would be utilized.

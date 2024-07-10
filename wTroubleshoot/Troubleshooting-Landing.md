@@ -3,7 +3,7 @@ title: Troubleshooting
 filename: "Troubleshooting-Landing.md"
 layout: custom
 keywords: [troubleshooting, support, log, problem, error, issues, installation, addin, report]
-headings: ["Overview", "Interject Support", "Addin Errors", "Report Errors"]
+headings: ["Overview", "Interject Support", "Add-in Errors", "Report Errors"]
 links: ["/wTroubleshoot/Interject-Support.html", "/wTroubleshoot/App-Errors.html", "/wTroubleshoot/Reports.html"]
 image_dir: ""
 images: []
@@ -17,11 +17,11 @@ Interject optimizes speed by caching company settings such as Data Portals, Conn
 
 ### [Interject Support](/wTroubleshoot/Interject-Support.html)
 
-Interject Support in built into Excel via the Interject Addin. You can easily report a problem to Interject or find Interject contact information. You also have the option of turning on certain logs in order to send more key details to Interject.
+Interject Support in built into Excel via the Interject Add-in. You can easily report a problem to Interject or find Interject contact information. You also have the option of turning on certain logs in order to send more key details to Interject.
 
-### [Addin Errors](/wTroubleshoot/App-Errors.html)
+### [Add-in Errors](/wTroubleshoot/App-Errors.html)
 
-Errors with Excel Addins or the Interject Addin can occur for many reasons. Sometimes they are related to the environment or computer running Interject. It is important you have tools to capture everything that is interacting with Excel so it is easier diagnose the cause of the errors. This leads to faster troubleshooting and repair.
+Errors with Excel Add-ins or the Interject Add-in can occur for many reasons. Sometimes they are related to the environment or computer running Interject. It is important you have tools to capture everything that is interacting with Excel so it is easier diagnose the cause of the errors. This leads to faster troubleshooting and repair.
 
 ### [Report Errors](/wTroubleshoot/Reports.html)
 

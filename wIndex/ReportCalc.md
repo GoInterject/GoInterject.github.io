@@ -15,7 +15,10 @@ description: The ReportCalc function executes a calculation of formulas in a wor
 
 The ReportCalc function executes a calculation of formulas in a worksheet or workbook when triggered upon a designated [event](wIndex/Event-Functions-Landing.html).
 
-Note: The latest version of the Interject Add-In will automatically perform a recalculation on the workbook whenever the pull, save, or drill window is displayed.
+<blockquote class=highlight_note>
+<b>Note:</b> The latest version of the Interject Add-In will automatically perform a recalculation on the workbook whenever the pull, save, or drill window is displayed.
+</blockquote>
+<br>
 
 For an example of this function, see [Lab Create: Hiding Rows & Columns](/wGetStarted/L-Create-HideRowCol.html).
 

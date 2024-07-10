@@ -6,7 +6,17 @@ keywords: [menu, hyperlink, drill, double click drill, Interject_DoubleClick, cu
 headings: ["Overview", "The Menu Method", "The Hyperlink Method", "The Double Click Method"]
 links: ["/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data", "/wAbout/Customer-Aging.html", "/wAbout/Inventory-Reports.html", "/wGetStarted/L-Drill-InventoryReport.html#creating-hyperlinks-as-drills", "/wAbout/Customer-Aging.html", "https://support.office.com/en-us/article/View-or-change-the-properties-for-an-Office-file-21D604C2-481E-4379-8E54-1DD4622C6B75"]
 image_dir: "L-Drill-TheThreeWays"
-images: [{file: "01", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}, {file: "02", type: "png", site: "Addin", cat: "Data Drill", sub: "", report: "Customer Aging Summary", ribbon: "Advanced", config: ""}, {file: "03", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Detail", ribbon: "", config: ""}, {file: "04", type: "png", site: "Addin", cat: "Report", sub: "", report: "Inventory by Category", ribbon: "", config: ""}, {file: "InventoryDrill", type: "gif", site: "Addin", cat: "Data Drill", sub: "", report: "Inventory by Category", ribbon: "Simple", config: ""}, {file: "06", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}, {file: "DrillToAgingDetail", type: "gif", site: "Addin", cat: "Data Drill", sub: "", report: "Customer Aging Summary", ribbon: "Simple", config: ""}, {file: "08", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Detail", ribbon: "", config: ""}, {file: "properties", type: "png", site: "Excel", cat: "Info", sub: "Advanced Properties", report: "", ribbon: "", config: ""}]
+images: [
+	{file: "01", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}, 
+	{file: "02", type: "png", site: "Add-in", cat: "Data Drill", sub: "", report: "Customer Aging Summary", ribbon: "Advanced", config: ""}, 
+	{file: "03", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Customer Aging Detail", ribbon: "", config: ""}, 
+	{file: "04", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Inventory by Category", ribbon: "", config: ""}, 
+	{file: "InventoryDrill", type: "gif", site: "Add-in", cat: "Data Drill", sub: "", report: "Inventory by Category", ribbon: "Simple", config: ""}, 
+	{file: "06", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}, 
+	{file: "DrillToAgingDetail", type: "gif", site: "Add-in", cat: "Data Drill", sub: "", report: "Customer Aging Summary", ribbon: "Simple", config: ""}, 
+	{file: "08", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Customer Aging Detail", ribbon: "", config: ""}, 
+	{file: "properties", type: "png", site: "Excel", cat: "Info", sub: "Advanced Properties", report: "", ribbon: "", config: ""}
+	]
 description: Interject facilitates three different ways to drill. Each method is easy to choose the best one different situations.
 ---
 * * *

@@ -6,7 +6,9 @@ keywords: [Training, Capital, Projections Template]
 headings: ["Overview", "Projections Template", "Projections Upload Tool"]
 links: ["/bApps/InterjectTraining/Projections/ProjectionTemplate.html", "/bApps/InterjectTraining/Projections/ProjectionUpload.html"]
 image_dir: "WCNTraining/Projections"
-images: [{file: "ProjectionsTemplate_ReportLibrary", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}]
+images: [
+	{file: "ProjectionsTemplate_ReportLibrary", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
+	]
 description: The Projections Template tools are used by controllers to update their Projections on the District level.
 ---
 

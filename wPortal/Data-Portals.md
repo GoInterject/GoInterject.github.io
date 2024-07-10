@@ -111,7 +111,12 @@ Now that the Data Portal is created, you can set up our parameters for the Data 
 ![](/images/DataPortals/08.jpg)
 <br>
 
-**Step 6** : Repeat the previous steps to add additional parameters as needed. Note: The order in which you add the Formula Parameters must match the order in the Param() formula used in the spreadsheet Report Formula.
+**Step 6** : Repeat the previous steps to add additional parameters as needed. 
+
+<blockquote class=highlight_note>
+<b>Note:</b> The order in which you add the Formula Parameters must match the order in the Param() formula used in the spreadsheet Report Formula.
+</blockquote>
+<br>
 
 ![](/images/DataPortals/09.jpg)
 <br>

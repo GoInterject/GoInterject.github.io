@@ -6,7 +6,33 @@ keywords: [jDropdown, function, hyperlink, custom list, walkthrough]
 headings: ["Overview", "Preparing the Report", "Adding a Named Range", "Creating the Formula", "Adding a Special Hyperlink", "Reviewing the Report Changes", "Creating a Custom jDropdown List"]
 links: ["/wIndex/jDropdown.html", "/wGetStarted/L-Create-CustomerAging.html", "https://docs.gointerject.com/wGetStarted/L-Dev-jDropdowns.html", "/wAbout/Report-Library-Basics.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "https://docs.gointerject.com/wAbout/Basics-of-Report-Formulas.html#column-definitions", "https://docs.gointerject.com/wIndex/jDropdown.html", "/wGetStarted/L-Dev-jDropdowns.html"]
 image_dir: "L-Create-Dropdowns"
-images: [{file: "01", type: "png", site: "Addin", cat: "Report Library", sub: "", report: "Interject Customer Collections", ribbon: "Simple", config: ""}, {file: "02", type: "png", site: "Addin", cat: "Quick Tools", sub: "", report: "Customer Aging Summary", ribbon: "Simple", config: ""}, {file: "03", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, {file: "04", type: "png", site: "Excel", cat: "Name Manger", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "05", type: "png", site: "Excel", cat: "Name Manger", sub: "New Name", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "06", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "07", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "08", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "09", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "10", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "11", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "12", type: "png", site: "Excel", cat: "Right Click Menu", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "13", type: "png", site: "Excel", cat: "Insert Hyperlink", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "14", type: "png", site: "Excel", cat: "Insert Hyperlink", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "15", type: "png", site: "Addin", cat: "Jdropdown Select Menu", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "16", type: "png", site: "Addin", cat: "Pull Data", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "17", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, {file: "EnterYourResponse", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, {file: "EnterjDropdown", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, {file: "EnterFX", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "", ribbon: "", config: ""}, {file: "ClickLink", type: "png", site: "Excel", cat: "Right Click Menu", sub: "", report: "", ribbon: "", config: ""}, {file: "TypeTheCellReference", type: "png", site: "Excel", cat: "Insert Hyperlink", sub: "", report: "", ribbon: "", config: ""}, {file: "EnterScreenTipText", type: "png", site: "Excel", cat: "Insert Hyperlink", sub: "", report: "", ribbon: "", config: ""}, {file: "DropdownList", type: "png", site: "Addin", cat: "Jdropdown Select Menu", sub: "", report: "", ribbon: "", config: ""}, {file: "EntryEntered", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: ""}]
+images: [
+	{file: "01", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "Interject Customer Collections", ribbon: "Simple", config: ""}, 
+	{file: "02", type: "png", site: "Add-in", cat: "Quick Tools", sub: "", report: "Customer Aging Summary", ribbon: "Simple", config: ""}, 
+	{file: "03", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, 
+	{file: "04", type: "png", site: "Excel", cat: "Name Manger", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, 
+	{file: "05", type: "png", site: "Excel", cat: "Name Manger", sub: "New Name", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, 
+	{file: "06", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, 
+	{file: "07", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, 
+	{file: "08", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, 
+	{file: "09", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, 
+	{file: "10", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, 
+	{file: "11", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, 
+	{file: "12", type: "png", site: "Excel", cat: "Right Click Menu", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, 
+	{file: "13", type: "png", site: "Excel", cat: "Insert Hyperlink", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, 
+	{file: "14", type: "png", site: "Excel", cat: "Insert Hyperlink", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, 
+	{file: "15", type: "png", site: "Add-in", cat: "Jdropdown Select Menu", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, 
+	{file: "16", type: "png", site: "Add-in", cat: "Pull Data", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, 
+	{file: "17", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, 
+	{file: "EnterYourResponse", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "EnterjDropdown", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "EnterFX", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ClickLink", type: "png", site: "Excel", cat: "Right Click Menu", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "TypeTheCellReference", type: "png", site: "Excel", cat: "Insert Hyperlink", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "EnterScreenTipText", type: "png", site: "Excel", cat: "Insert Hyperlink", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "DropdownList", type: "png", site: "Add-in", cat: "Jdropdown Select Menu", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "EntryEntered", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: ""}
+	]
 description: The jDropdown formula is used for filtering on multiple parameters.
 ---
 * * *
@@ -40,21 +66,21 @@ In this example you will modify the [Customer Aging report](/wGetStarted/L-Creat
 
 ### Adding a Named Range
 
-**Step 1:** Now select the **Formulas** ribbon tab and select **Name Manager**.
+**Step 1:** Select cell H7:
 
-![](/images/L-Create-Dropdowns/03.png)
+**Step 2:** Click the **Quick Tools** button on the Interject ribbon and select "Create Range Name for Sheet":
+
+![](/images/L-Create-Dropdowns/QuickTools.png)
 <br>
 
-**Step 2:** Next, select **New...**.
+**Step 3:** Enter "CompanyNameDDL" in the field and click **OK**:
 
-![](/images/L-Create-Dropdowns/04.png)
+![](/images/L-Create-Dropdowns/EnterRangeName.png)
 <br>
 
-**Step 3:** For the **Name:** field input **CompanyNameDDL**, and in the **Refers to:** field input **=CustomerAging!$H$7**. Click **OK** and **Close** the Name Manager window.
-
-![](/images/L-Create-Dropdowns/05.png)
-
-**Note:** A named range is used here so that upon the movement of the formula, the hyperlink that is created later will still reference the cell with the jDropdown() formula.
+<blockquote class=highlight_note>
+<b>Note:</b> A named range is used here so that upon the movement of the formula, the hyperlink that is created later will still reference the cell with the jDropdown() formula.
+</blockquote>
 <br>
 
 ### Creating the Formula

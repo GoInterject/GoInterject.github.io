@@ -6,7 +6,32 @@ keywords: [range, report, build, example, customer aging, northwind customers, w
 headings: ["Overview", "Building the Report", "Getting Started", "Final Formatting", "Setting up jFreezePanes"]
 links: ["/wIndex/ReportRange.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder", "/wApps/Common-Dataportal-Index.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wIndex/jFreezePanes.html", "/wIndex/jFocus.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools", "/wAbout/ReportLibraryLinks.html"]
 image_dir: "L-Create-CustAging"
-images: [{file: "01", type: "png", site: "Addin", cat: "Report Builder", sub: "", report: "", ribbon: "Simple", config: ""}, {file: "02", type: "png", site: "Addin", cat: "Report Builder", sub: "", report: "NorthwindCustomers", ribbon: "Simple", config: ""}, {file: "03", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, {file: "08", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, {file: "09", type: "png", site: "Addin", cat: "Pull Data", sub: "", report: "", ribbon: "Simple", config: "Yes"}, {file: "10", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, {file: "11", type: "gif", site: "Excel", cat: "Right Click Menu", sub: "Copy & Paste", report: "", ribbon: "Simple", config: "Yes"}, {file: "12", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, {file: "13", type: "png", site: "Addin", cat: "Pull Data", sub: "", report: "", ribbon: "Simple", config: "Yes"}, {file: "14", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, {file: "15", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, {file: "16", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "", ribbon: "", config: "Yes"}, {file: "17", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "", ribbon: "", config: "Yes"}, {file: "18", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "", ribbon: "", config: "Yes"}, {file: "19", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "", ribbon: "", config: "Yes"}, {file: "19", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "", ribbon: "", config: "Yes"}, {file: "21", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, {file: "22", type: "png", site: "Excel", cat: "Right Click Menu", sub: "", report: "", ribbon: "", config: "Yes"}, {file: "23", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, {file: "24", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "", ribbon: "", config: "Yes"}, {file: "jFocusEntry", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, {file: "25", type: "png", site: "Addin", cat: "Quick Tools", sub: "", report: "", ribbon: "", config: "Yes"}, {file: "26", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, {file: "27", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: ""}]
+images: [
+	{file: "01", type: "png", site: "Add-in", cat: "Report Builder", sub: "", report: "", ribbon: "Simple", config: ""}, 
+	{file: "02", type: "png", site: "Add-in", cat: "Report Builder", sub: "", report: "NorthwindCustomers", ribbon: "Simple", config: ""}, 
+	{file: "03", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, 
+	{file: "08", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, 
+	{file: "09", type: "png", site: "Add-in", cat: "Pull Data", sub: "", report: "", ribbon: "Simple", config: "Yes"}, 
+	{file: "10", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "11", type: "gif", site: "Excel", cat: "Right Click Menu", sub: "Copy & Paste", report: "", ribbon: "Simple", config: "Yes"}, 
+	{file: "12", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, 
+	{file: "13", type: "png", site: "Add-in", cat: "Pull Data", sub: "", report: "", ribbon: "Simple", config: "Yes"}, 
+	{file: "14", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, 
+	{file: "15", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, 
+	{file: "16", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "", ribbon: "", config: "Yes"}, 
+	{file: "17", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "", ribbon: "", config: "Yes"}, 
+	{file: "18", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "", ribbon: "", config: "Yes"}, 
+	{file: "19", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "", ribbon: "", config: "Yes"}, 
+	{file: "19", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "", ribbon: "", config: "Yes"}, 
+	{file: "21", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, 
+	{file: "22", type: "png", site: "Excel", cat: "Right Click Menu", sub: "", report: "", ribbon: "", config: "Yes"}, 
+	{file: "23", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, 
+	{file: "24", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "", ribbon: "", config: "Yes"}, 
+	{file: "jFocusEntry", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, 
+	{file: "25", type: "png", site: "Add-in", cat: "Quick Tools", sub: "", report: "", ribbon: "", config: "Yes"}, 
+	{file: "26", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "27", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: ""}
+	]
 description: In this page you will see the process of building a Customer Aging report from scratch to better understand reports and also get a clearer illustration of the Interject Report Range data function
 ---
 * * *
@@ -21,7 +46,7 @@ In this page you will see the process of building a Customer Aging report from s
 
 ### Building the Report
 
-**Step 1:** This process begins with the Interject [Report Builder](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder). Open the Report Build as illustrated below. There is a drop down list of [Dataportals](/wApps/Common-Dataportal-Index.html) that can be chosen. An Interject Data Portal is a pre-configured data query that is setup so spreadsheet users can easily direct data into their own spreadsheet reports. Data Portals can be setup to access databases or cloud data and are either setup by Interject developers or your IT team.
+**Step 1:** This process begins with the Interject [Report Builder](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder). Open the Report Build as illustrated below. There is a drop down list of [Data Portals](/wApps/Common-Dataportal-Index.html) that can be chosen. An Interject Data Portal is a pre-configured data query that is setup so spreadsheet users can easily direct data into their own spreadsheet reports. Data Portals can be setup to access databases or cloud data and are either setup by Interject developers or your IT team.
 
 ![](/images/L-Create-CustAging/01.png)
 <br>

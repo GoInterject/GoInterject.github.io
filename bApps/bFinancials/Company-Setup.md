@@ -6,7 +6,13 @@ keywords: [Report, Epicor, Accounts]
 headings: []
 links: ["https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017"]
 image_dir: "A-SQL-Installation"
-images: [{file: "DDomain", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ADServer", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "DDomain2", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ActiveUser", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ActiveUser2", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}]
+images: [
+	{file: "DDomain", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ADServer", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "DDomain2", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ActiveUser", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ActiveUser2", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
+	]
 description: Step by step guide on data tier, initial data load, FRx Migration, and other key processes of installing of Interject for Financials Epicor Enterprise.
 ---
 

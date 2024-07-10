@@ -4,9 +4,22 @@ filename: "Updating-INTERJECT.md"
 layout: custom
 keywords: [update, updating, version]
 headings: ["Overview", "Updating to the Newest Version of Interject"]
-links: ["https://www.youtube.com/watch?v=lNu5AjM7Ofo", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#check-for-updates"]
+links: ["https://www.youtube.com/watch?v=lNu5AjM7Ofo", "/wAbout/Logging-In.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#check-for-updates"]
 image_dir: "Updating"
-images: [{file: "01", type: "png", site: "Interject", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, {file: "02", type: "png", site: "Interject", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, {file: "03", type: "png", site: "Interject", cat: "Check for Updates", sub: "", report: "", ribbon: "Simple", config: ""}, {file: "04", type: "png", site: "Interject", cat: "Update", sub: "", report: "", ribbon: "Simple", config: ""}, {file: "05", type: "png", site: "Interject", cat: "Update", sub: "", report: "", ribbon: "", config: ""}, {file: "CloseExcel", type: "png", site: "Interject", cat: "Update", sub: "", report: "", ribbon: "", config: ""}, {file: "06", type: "png", site: "Interject", cat: "Installation", sub: "Setup Wizard", report: "", ribbon: "", config: ""}, {file: "06b", type: "png", site: "Interject", cat: "Installation", sub: "Installation Type", report: "", ribbon: "", config: ""}, {file: "07", type: "png", site: "Interject", cat: "Installation", sub: "End-User License Agreement", report: "", ribbon: "", config: ""}, {file: "08", type: "png", site: "Interject", cat: "Installation", sub: "Select Installation Folder", report: "", ribbon: "", config: ""}, {file: "09", type: "png", site: "Interject", cat: "Installation", sub: "Ready to Install", report: "", ribbon: "", config: ""}, {file: "10", type: "png", site: "Interject", cat: "Installation", sub: "Completed Install", report: "", ribbon: "", config: ""}]
+images: [
+	{file: "01", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, 
+	{file: "02", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, 
+	{file: "03", type: "png", site: "Add-in", cat: "Check for Updates", sub: "", report: "", ribbon: "Simple", config: ""}, 
+	{file: "04", type: "png", site: "Add-in", cat: "Update", sub: "", report: "", ribbon: "Simple", config: ""}, 
+	{file: "05", type: "png", site: "Add-in", cat: "Update", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "CloseExcel", type: "png", site: "Add-in", cat: "Update", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "06", type: "png", site: "Add-in", cat: "Installation", sub: "Setup Wizard", report: "", ribbon: "", config: ""}, 
+	{file: "06b", type: "png", site: "Add-in", cat: "Installation", sub: "Installation Type", report: "", ribbon: "", config: ""}, 
+	{file: "07", type: "png", site: "Add-in", cat: "Installation", sub: "End-User License Agreement", report: "", ribbon: "", config: ""}, 
+	{file: "08", type: "png", site: "Add-in", cat: "Installation", sub: "Select Installation Folder", report: "", ribbon: "", config: ""}, 
+	{file: "09", type: "png", site: "Add-in", cat: "Installation", sub: "Ready to Install", report: "", ribbon: "", config: ""}, 
+	{file: "10", type: "png", site: "Add-in", cat: "Installation", sub: "Completed Install", report: "", ribbon: "", config: ""}
+	]
 description: The walkthrough shows how to update INTERJECT to the newest version
 ---
 * * *
@@ -23,17 +36,20 @@ Here is a brief video on Updating Interject, followed by a more detailed walkthr
 
 ### Updating to the Newest Version of Interject
 
-**Step 1:** After you [log in](/wAbout/Logging-In.html), click the [**Check for Updates**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#check-for-updates) button in the Interject ribbon. You cannot check for updates until you are logged in.
+**Step 1:** After you [log in](/wAbout/Logging-In.html), click the [Check for Updates](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#check-for-updates) button in the Interject ribbon. You cannot check for updates until you are logged in.
 
 ![](/images/Updating/02.png)
 <br>
 
-**Step 2:** A popup will appear with information about the computer's current, as well as the latest available Interject Version. If Interject has a critical update, there may also be an **Install By** date. If that is the case you must install the update as soon as possible. Click **Get Update** to get the new version. It should only take a moment.
+**Step 2:** A popup will appear with information about the computer's current, as well as the latest available Interject Version. If Interject has a critical update, there may also be an Install By date. If that is the case you must install the update as soon as possible. Click **Get Update** to get the new version. It should only take a moment.
 
 ![](/images/Updating/03.png)
 <br>
 
-**Note:** If this popup appears at any point without having clicked the **Check for Updates** button, it means that Interject has released an important update. Interject will not lock up into updating at any time, so its okay to postpone it momentarily, but its recommended that you update at the earliest convenience.
+<blockquote class=highlight_note>
+<b>Note:</b> If this popup appears at any point without having clicked the <b>Check for Updates</b> button, it means that Interject has released an important update. Interject will not lock up into updating at any time, so its okay to postpone it momentarily, but its recommended that you update at the earliest convenience.
+</blockquote>
+<br>
 
 **Step 3:** After clicking **Get Update**, the Interject Excel Add-in Setup will pop up. Interject requires Excel to be closed to update. Click the exit button to close excel.
 
@@ -45,7 +61,7 @@ Once Excel has been closed click **Update** to continue to the update.
 ![](/images/Updating/05.png)
 <br>
 
-If you have any active or hidden Excel files open, the Add-in Manager will tell you which files are open and whether they've been saved. To avoid losing your work, please save the files and close Excel before continuing
+If you have any active or hidden Excel files open, the Addin Manager will tell you which files are open and whether they've been saved. To avoid losing your work, please save the files and close Excel before continuing
 
 ![](/images/Updating/CloseExcel.png)
 <br>

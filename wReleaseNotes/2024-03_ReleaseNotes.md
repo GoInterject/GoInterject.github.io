@@ -3,8 +3,8 @@ title: Release Notes
 filename: "2024-03_ReleaseNotes.md"
 layout: custom
 keywords: [change log, updates, versions, history, what's new]
-headings: ["March 2024", "Documentation Updates"]
-links: []
+headings: ["March 2024", "Excel Add-in v2.5.1.0", "Documentation Updates"]
+links: ["/wGetStarted/L-Export-QuickExportAndPDF.html#export-sheet", "/wIndex/QuickTools-Names.html#appending-a-prefix-andor-suffix-to-a-name", "/wGetStarted/L-Export-QuickExportAndPDF.html#export-sheet"]
 image_dir: ""
 images: []
 description: Release notes for this month's updates
@@ -13,7 +13,7 @@ description: Release notes for this month's updates
 
 ## March 2024
 
-### Excel Addin v2.5.1.0
+### Excel Add-in v2.5.1.0
 
 _Released 3/18/24_
 

@@ -19,7 +19,7 @@ For an example of this function, see [Create Inventory Fixed Lab.](/wGetStarted/
 
 ###  Function Arguments
 
-<button class="collapsible-parameter">**DataPortal**<br>The name of the Interject DataPortal that will be used as the data source for this function.</button>
+<button class="collapsible-parameter">**Data Portal**<br>The name of the Interject Data Portal that will be used as the data source for this function.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
@@ -79,7 +79,7 @@ For an example of this function, see [Create Inventory Fixed Lab.](/wGetStarted/
 </table>
 </div>
 
-<button class="collapsible-parameter">**Parameters**<br>The cells designating the parameters for the DataPortal. The values in these cells will filter the data that is inserted from the data source.</button>
+<button class="collapsible-parameter">**Parameters**<br>The cells designating the parameters for the Data Portal. The values in these cells will filter the data that is inserted from the data source.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
@@ -110,7 +110,7 @@ For an example of this function, see [Create Inventory Fixed Lab.](/wGetStarted/
 | Argument Name  |  Example Mapping  |  Explanation   |  
 |------|------|------|
 |  Function Name  |  =ReportFixed()  |  The name of this function.  |  
-|  DataPortal  |  "NorthwindFixed"  |  This function will use the "NorthwindCustomers" DataPortal for the data source.  |  
+|  DataPortal  |  "NorthwindFixed"  |  This function will use the "NorthwindCustomers" Data Portal for the data source.  |  
 |  RowDefRange  |  B14:B27  |  The names found in B14:B27 will be used to map to the column names found in row 2 (ColDefRange). Only data that intersects these names will be inserted on these rows.  |  
 |  ColDefRange  |  2:2  |  The names found in row 2 will be used to map to the row names found in row B14:B27 (RowDefRange). Only data that intersects these names will be inserted on these columns.  |  
 |  Parameters  |  N/A  |  The data returned from the data source will not be filtered.  |  

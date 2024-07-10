@@ -4,30 +4,30 @@ filename: "SharedComputer.md"
 layout: custom
 keywords: [install, Multiple Users, Server, network]
 headings: ["Overview", "Installing Interject on Multi-User Systems"]
-links: ["https://portal.gointerject.com/login.html", "https://portal.gointerject.com/invite.html?mode=create", "/wPortal/DownloadInterject.html", "https://docs.gointerject.com/wAbout/Logging-In.html", "mailto:help@gointerject.com"]
+links: ["https://portal.gointerject.com/login.html", "https://portal.gointerject.com/invite.html?mode=create", "/wPortal/DownloadInterject.html", "/wAbout/Logging-In.html", "mailto:help@gointerject.com"]
 image_dir: "SharedComputer"
 images: [
-    {file: "15", type: "jpg", site: "Addin", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+    {file: "15", type: "jpg", site: "Add-in", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
     {file: "16", type: "png", site: "Portal", cat: "Download", sub: "Main", report: "", ribbon: "", config: ""}, 
     {file: "17", type: "png", site: "Portal", cat: "Download", sub: "Main", report: "", ribbon: "", config: ""}, 
     {file: "22", type: "png", site: "Windows", cat: "Explorer", sub: "Extract All", report: "", ribbon: "", config: ""}, 
     {file: "24", type: "jpg", site: "Windows", cat: "Explorer", sub: "Folder", report: "", ribbon: "", config: ""}, 
     {file: "25", type: "jpg", site: "Windows", cat: "Explorer", sub: "Extract", report: "", ribbon: "", config: ""}, 
     {file: "31", type: "png", site: "Windows", cat: "Explorer", sub: "Folder", report: "", ribbon: "", config: ""}, 
-    {file: "33", type: "png", site: "Addin", cat: "Installation", sub: "Setup Wizard", report: "", ribbon: "", config: ""}, 
-    {file: "34", type: "png", site: "Addin", cat: "Installation", sub: "Installation Type", report: "", ribbon: "", config: ""}, 
-    {file: "37", type: "png", site: "Addin", cat: "Installation", sub: "End-User License Agreement", report: "", ribbon: "", config: ""}, 
-    {file: "38", type: "png", site: "Addin", cat: "Installation", sub: "Select Installation Folder", report: "", ribbon: "", config: ""}, 
-    {file: "39", type: "png", site: "Addin", cat: "Installation", sub: "Ready to Install", report: "", ribbon: "", config: ""}, 
-    {file: "40", type: "png", site: "Addin", cat: "Installation", sub: "Completed Install", report: "", ribbon: "", config: ""}
+    {file: "33", type: "png", site: "Add-in", cat: "Installation", sub: "Setup Wizard", report: "", ribbon: "", config: ""}, 
+    {file: "34", type: "png", site: "Add-in", cat: "Installation", sub: "Installation Type", report: "", ribbon: "", config: ""}, 
+    {file: "37", type: "png", site: "Add-in", cat: "Installation", sub: "End-User License Agreement", report: "", ribbon: "", config: ""}, 
+    {file: "38", type: "png", site: "Add-in", cat: "Installation", sub: "Select Installation Folder", report: "", ribbon: "", config: ""}, 
+    {file: "39", type: "png", site: "Add-in", cat: "Installation", sub: "Ready to Install", report: "", ribbon: "", config: ""}, 
+    {file: "40", type: "png", site: "Add-in", cat: "Installation", sub: "Completed Install", report: "", ribbon: "", config: ""}
     ]
-description: Shared Computer installation installs a multi-user instance of Interject on one computer, such as a shared server. Since Interject's Addin Manager is used to manage independent settings for multiple users, this installation is dependant on the Add-in Manager. In order to run Per-Computer installation, you must have administrative-elevated rights.
+description: Shared Computer installation installs a multi-user instance of Interject on one computer, such as a shared server. Since Interject's Addin Manager is used to manage independent settings for multiple users, this installation is dependant on the Addin Manager. In order to run Per-Computer installation, you must have administrative-elevated rights.
 ---
 * * *
 
 ## Overview
 
-Shared Computer installation installs a multi-user instance of Interject on one computer, such as a shared server. Since Interject's Addin Manager is used to manage independent settings for multiple users, this installation is dependant on the Add-in Manager. In order to run Per-Computer installation, you must have administrative-elevated rights.
+Shared Computer installation installs a multi-user instance of Interject on one computer, such as a shared server. Since Interject's Addin Manager is used to manage independent settings for multiple users, this installation is dependant on the Addin Manager. In order to run Per-Computer installation, you must have administrative-elevated rights.
 
 ### Installing Interject on Multi-User Systems
 
@@ -88,7 +88,10 @@ To install for everybody on the server, make sure the **Everybody** button is se
 ![](/images/SharedComputer/37.png)
 <br>
 
-**Note:** Other Install features are available. For instructions on advanced installs, click on the readme located in the ZIP file or refer to the text file in the dropdown below.
+<blockquote class=highlight_note>
+<b>Note:</b> Other Install features are available. For instructions on advanced installs, click on the readme located in the ZIP file or refer to the text file in the dropdown below.
+</blockquote>
+<br>
 
 <button class="collapsible">ReadMe File</button>
 <div markdown="1" class="panel">

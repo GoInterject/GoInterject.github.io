@@ -6,7 +6,9 @@ keywords: [Training, Capital, Capital Change Query]
 headings: ["Overview", "CCQuery", "ReviewDateSummary"]
 links: ["/bApps/InterjectTraining/Capital/CCQuery.html", "/bApps/InterjectTraining/Capital/ReviewDateSummary.html"]
 image_dir: "WCNTraining/Capital"
-images: [{file: "CapitalChangeQuery_ReportLibrary", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}]
+images: [
+	{file: "CapitalChangeQuery_ReportLibrary", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
+	]
 description: This tool provides an in-depth view into the historical data for the Capital PO changes.
 ---
 
