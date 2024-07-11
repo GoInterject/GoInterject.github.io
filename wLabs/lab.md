@@ -184,7 +184,7 @@ Interject contains a feature called Drill on Data. This feature allows the user 
 • Creating Hyperlinks to Drill on Data
 <br>
 
-#### [4.3 Lab Drill: Financial Report](/wGetStarted/L-Drill-InventoryReport.html)
+#### [4.3 Lab Drill: Financial Report](/wGetStarted/L-Drill-FinancialReport.html)
 
 **_Concepts_** :
 • Building a Drill on Data
