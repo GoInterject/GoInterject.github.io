@@ -241,7 +241,9 @@
 								{% unless page.notoc %} {% assign my_min = page.toc_min | default: site.toc_min | default: 2 %} {% assign my_max = page.toc_max | default: site.toc_max | default: 3 %} {% assign my_name = page.url | default: "unnamed" %}
 									{% if page.title != "Doc Search" and page.title != "Doc Search (Apps)"%}
 									<div id="side-toc-title">On this page:</div>
-									<div id="side-toc-title" style="color: #0090C8;">{{ page.title }}</div>
+									<div id="side-toc-title" style="color: #0090C8;">
+										<a href="javascript:void(0)" onclick="window.location.href='{{ page.url }}';" style="color: inherit; text-decoration: none;">{{ page.title }}</a>
+									  </div>
 									{% endif %}
 									{% include toc_pure_liquid.html html=content sanitize=true class="inline_toc" id="my_toc" toc_min=my_min toc_max=my_max page_name=my_name %}
 								</div>
