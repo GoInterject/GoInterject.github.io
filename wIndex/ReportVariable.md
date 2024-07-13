@@ -15,13 +15,13 @@ description: The ReportVariable function pulls data from a data source and inser
 
 The ReportVariable function pulls data from a data source and inserts it into a spreadsheet. It is similar to the [ReportFixed](/wIndex/ReportFixed.html) function because it takes row names as input in addition to column names. Only data that is mapped to both these row and column names from the data source will be inserted. Consequently, the range where data is inserted is defined by the boundaries of the RowDefRange and the ColDefRange. Data returned by this function can be filtered, formatted, and customized for a specific desired report.
 
-This function differs from the ReportFixed function in that it will group the data based on the values defined in the RowDefRange argument. The grouping feature allows the data to be collapsed and expanded by category. Note: Entries for each group must contain an empty row above in order to populated with data correctly.
+This function differs from the ReportFixed function in that it will group the data based on the values defined in the RowDefRange argument. The grouping feature allows the data to be collapsed and expanded by category. 
 
 For an example of this function, see [Lab Create: Inventory Variable](/wGetStarted/L-Create-InventoryVariable.html).
 
 ###  Function Arguments
 
-<button class="collapsible-parameter">**DataPortal**<br>The name of the Interject DataPortal that will be used as the data source for this function.</button>
+<button class="collapsible-parameter">**DataPortal**<br>The name of the Interject Data Portal that will be used as the data source for this function.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
@@ -41,7 +41,7 @@ For an example of this function, see [Lab Create: Inventory Variable](/wGetStart
 </table>
 </div>
 
-<button class="collapsible-parameter">**RowDefRange**<br>A single column range that contains the values that map to the RowDefName field of the data source. Each value in this range will be matched to the same value in the RowDefName of the data source. Only these values will be populated with data after a pull action.<br><br>If the data source does not have a column "RowDefName", this function will look for a column name defined in the column in the ColDefRange and the row defined here in RowDefRange. For example, if row 2 is defined in ColDefRange and column B is defined in RowDefRange, this function will look at the value in B2 to map the data to.<br><br>If there are records in the data source that are excluded in this range, the data from those columns will be included in a [leftover] section after a pull action.</button>
+<button class="collapsible-parameter">**RowDefRange**<br>A single column range that contains the values that map to the RowDefName field of the data source. Each value in this range will be matched to the same value in the RowDefName of the data source. Only these values will be populated with data after a pull action.<br><br>If the data source does not have a column "RowDefName", this function will look for a column name defined in the column in the ColDefRange and the row defined here in RowDefRange. For example, if row 2 is defined in ColDefRange and column B is defined in RowDefRange, this function will look at the value in B2 to map the data to.<br><br>If there are records in the data source that are excluded in this range, the data from those columns will be included in a [leftover] section after a pull action.<br><br>The last row of this section must be blank.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
@@ -101,7 +101,7 @@ For an example of this function, see [Lab Create: Inventory Variable](/wGetStart
 </table>
 </div>
 
-<button class="collapsible-parameter">**Parameters**<br>The cells designating the parameters for the DataPortal. The values in these cells will filter the data that is inserted from the data source.</button>
+<button class="collapsible-parameter">**Parameters**<br>The cells designating the parameters for the Data Portal. The values in these cells will filter the data that is inserted from the data source.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
@@ -212,7 +212,7 @@ For an example of this function, see [Lab Create: Inventory Variable](/wGetStart
 | Argument Name  |  Example Mapping  |  Explanation   |  
 |------|------|------|
 |  Function Name  |  =ReportVariable()  |  The name of this function.  |  
-|  DataPortal  |  "NorthwindVariable"  |  This function will use the "NorthwindVariable" DataPortal for the data source.  |  
+|  DataPortal  |  "NorthwindVariable"  |  This function will use the "NorthwindVariable" Data Portal for the data source.  |  
 |  RowDefRange  |  B18:B54  |  The names found in B18:B54 will be used to map to the column names found in row 2 (ColDefRange). Only data that intersects these names will be inserted on these rows. Data will be grouped by the names found in this range.  |  
 |  ColDefRange  |  2:2  |  The names found in row 2 will be used to map to the row names found in row B14:B27 (RowDefRange). Only data that intersects these names will be inserted on these columns.  |  
 |  Format Range  | 4:4 |  The formatting used in row 4 will be used as a template for the inserted data.  |  

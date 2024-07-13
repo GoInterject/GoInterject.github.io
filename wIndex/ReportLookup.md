@@ -17,7 +17,7 @@ The ReportLookup function pulls a single piece of data from a data source and in
 
 ###  Function Arguments
 
-<button class="collapsible-parameter">**DataPortal**<br>The name of the Interject DataPortal that will be used as the data source for this function. The helper function [jDataPortal()](/wIndex/jDataPortal.html) can be used to further define which row to use from the DataPortal.</button>
+<button class="collapsible-parameter">**Data Portal**<br>The name of the Interject Data Portal that will be used as the data source for this function. The helper function [jDataPortal()](/wIndex/jDataPortal.html) can be used to further define which row to use from the Data Portal.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
@@ -37,7 +37,7 @@ The ReportLookup function pulls a single piece of data from a data source and in
 </table>
 </div>
 
-<button class="collapsible-parameter">**TargetDataRange**<br>A single cell where the data will be inserted. If the DataPortal returns a list of data, this function will return the value from the first row.</button>
+<button class="collapsible-parameter">**TargetDataRange**<br>A single cell where the data will be inserted. If the Data Portal returns a list of data, this function will return the value from the first row.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
@@ -77,7 +77,7 @@ The ReportLookup function pulls a single piece of data from a data source and in
 </table>
 </div>
 
-<button class="collapsible-parameter">**Parameters**<br>The cells designating the matching parameters for the DataPortal. The values in these cells will filter the data that is inserted from the data source.</button>
+<button class="collapsible-parameter">**Parameters**<br>The cells designating the matching parameters for the Data Portal. The values in these cells will filter the data that is inserted from the data source.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
@@ -108,7 +108,7 @@ The ReportLookup function pulls a single piece of data from a data source and in
 | Argument Name  |  Example Mapping  |  Explanation   |  
 |------|------|------|
 |  Function Name  |  =ReportLookup()  |  The name of this function.  |  
-|  DataPortal  |  "jDataPortal("NorthwindCustomers",1,"[CustomerID] Like ‘%SAVE%’)"  |  Uses the helper function [jDataPortal()](/wIndex/jDataPortal.html) designating the "NorthwindCustomers" DataPortal. Filters the records to include only those whose CustomerID contains the string "save".  |  
+|  DataPortal  |  "jDataPortal("NorthwindCustomers",1,"[CustomerID] Like ‘%SAVE%’)"  |  Uses the helper function [jDataPortal()](/wIndex/jDataPortal.html) designating the "NorthwindCustomers" Data Portal. Filters the records to include only those whose CustomerID contains the string "save".  |  
 |  TargetDataRange  |  C14  |  Data will be inserted to cell C14.  |  
 |  ColDefRange  |  H1  |  The column name in H1 will be the data field that is returned from the data source.  |  
 |  Parameters  |  N/A  |  The data returned from the data source will not be filtered.  |  

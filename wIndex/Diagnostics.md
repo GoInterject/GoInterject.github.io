@@ -4,14 +4,14 @@ filename: "Diagnostics.md"
 layout: custom
 keywords: [Diagnostics, Tools, Settings, Configurations, Config]
 headings: ["Overview", "Diagnostic Pane Fields", "Public", "System Tools", "Support"]
-links: ["/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#advanced-menu-items", "/wIndex/Diagnostics-SpecialFeatures.html", "/wIndex/Diagnostics-ShortKey.html"]
+links: ["/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#advanced-menu-items", "/wAbout/Logging-In-Enterprise.html#clearing-login-cookies", "/wTroubleshoot/Verbose-Logging.html", "/wTroubleshoot/RAM-Monitoring.html", "/wTroubleshoot/Validation-Report.html#data-cell-functions", "/wIndex/SettingsCache.html#resetting-settings-and-cache", "/wIndex/SettingsCache.html#opening-the-folders", "/wIndex/Diagnostics-SpecialFeatures.html", "/wIndex/Diagnostics-ListDataPortals.html", "/wIndex/Diagnostics-DoubleClick.html", "/wGetStarted/L-Create-RunOnOpen.html#setting-up-run-on-open-via-diagnostics", "/wIndex/SettingsCache.html#resetting-settings-and-cache", "/wDeveloper/InternalSupportSetup.html#setup", "/wIndex/Diagnostics-EnterpriseConnection.html", "/wIndex/Diagnostics-InstallConfig.html", "/wIndex/Diagnostics-GarbageCollection.html", "/wIndex/Diagnostics-FindAllFormulas.html", "/wIndex/Diagnostics-ReplaceDataPortalCodes.html", "/wIndex/Diagnostics-ClearDataCellCache.html", "/wIndex/Diagnostics-ShortKey.html", "/wIndex/Diagnostics-ClearErrorLog.html", "/wIndex/Diagnostics-ReinitiateInterject.html"]
 image_dir: "Diagnostics"
 images: [
- {file: "Ribbon", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
- {file: "DiagnosticsPaneFields2", type: "png", site: "Addin", cat: "Diagnostics", sub: "", report: "", ribbon: "", config: ""}, 
- {file: "Public2", type: "png", site: "Addin", cat: "Diagnostics", sub: "Public", report: "", ribbon: "", config: ""}, 
- {file: "SystemTools2", type: "png", site: "Addin", cat: "Diagnostics", sub: "System Tools", report: "", ribbon: "", config: ""}, 
- {file: "Support2", type: "png", site: "Addin", cat: "Diagnostics", sub: "Support", report: "", ribbon: "", config: ""}
+ {file: "Ribbon", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
+ {file: "DiagnosticsPaneFields2", type: "png", site: "Add-in", cat: "Diagnostics", sub: "", report: "", ribbon: "", config: ""}, 
+ {file: "Public2", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Public", report: "", ribbon: "", config: ""}, 
+ {file: "SystemTools2", type: "png", site: "Add-in", cat: "Diagnostics", sub: "System Tools", report: "", ribbon: "", config: ""}, 
+ {file: "Support2", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Support", report: "", ribbon: "", config: ""}
  ]
 description: The Diagnostics feature of Interject allows users to set and change numerous configurations within Excel as well as utilize various tools for diagnostics and debugging.
 ---
@@ -65,7 +65,7 @@ The System Tools involve various systems settings.
 
 | Setting | Description |
 |----|----|
-| [List DataPortals](/wIndex/Diagnostics-ListDataPortals.html) | Click Execute Selected Action to show the DataPortal List for the active user. |
+| [List DataPortals](/wIndex/Diagnostics-ListDataPortals.html) | Click Execute Selected Action to show the Data Portal List for the active user. |
 | [Toggle Double Click Events](/wIndex/Diagnostics-DoubleClick.html) | Click 'Execute Selected Action' to enable or disable the Interject_DoubleClick custom property in the current workbook [TestsTypes.xlsx]. By setting to true it will enable the double click events for the drill. The in-memory setting is set to False. |
 | [Set RunOnOpen For Workbook](/wGetStarted/L-Create-RunOnOpen.html#setting-up-run-on-open-via-diagnostics) | Click 'Execute Selected Action' to enable or disable the Interject_RunOnOpen custom property in the current workbook [TestsTypes.xlsx]. By setting this property the workbook can automatically pull data when opened.<br><br>Input allowed:<br>No input will toggle between true and false. True will pull data on the activesheet when opened.<br>'Prompt' = will show Pull Data form when file is opened.<br>'T:Sheet1\|F:!A5' = will pull data for the tab Sheet1 but will exclude A5 from the report action, but will run the rest.<br>'F:A5' = will pull data for the active sheet for only the report formula in cell A5.<br>'T:Sheet1' = will pull data for the tab Sheet1 for all report formulas.<br>'RunOnce,T:Sheet1' = Will do the same as above, but the setting will be cleared afterwards.<br>'T:Sheet1,T:Sheet2\|F:CellName' = will pull for all of Sheet1, then pull for Sheet2 but for only the report formulas in the range name 'CellName'.<br><br>To test various settings against the current workbook, and view a sample execution plan, use: 'Test=' and then the instructions<br> Test= T:Sheet1\|F:A5' <br> Test= true <br> Test= T:Sheet1 <br> Test= F:A5 <br> ... then click Execute Selected Action|
 | [Reset File Cache](/wIndex/SettingsCache.html#resetting-settings-and-cache) | This will remove all files that were previously downloaded and cached as well as reset the users settings cache. |

@@ -6,7 +6,12 @@ keywords: [error, handling, RAISERROR, UserNotice, return message]
 headings: ["Overview", "Understanding Error Handling", "Error Handling With RAISERROR", "Error Handling With UserNotice", "Unhandled Error Behavior"]
 links: []
 image_dir: "Error-Handling"
-images: [{file: "01", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "02", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "03", type: "png", site: "Addin", cat: "Progress Bar", sub: "Error Popup", report: "", ribbon: "Simple", config: ""}, {file: "04", type: "png", site: "Addin", cat: "Progress Bar", sub: "", report: "", ribbon: "Simple", config: ""}]
+images: [
+	{file: "01", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "02", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "03", type: "png", site: "Add-in", cat: "Progress Bar", sub: "Error Popup", report: "", ribbon: "Simple", config: ""}, 
+	{file: "04", type: "png", site: "Add-in", cat: "Progress Bar", sub: "", report: "", ribbon: "Simple", config: ""}
+	]
 description: Explains how Interject handles errors in Data Portals using T-SQL RAISERROR and UserNotice.
 ---
 * * *
@@ -52,7 +57,7 @@ Errors can quickly be handled (as opposed to leaving them unhandled) by develope
 
 ### Unhandled Error Behavior
 
-If you opt not to use UserNotice, your error will still be reported by the Interject Addin, but no popup window will appear for the user:
+If you opt not to use UserNotice, your error will still be reported by the Interject Add-in, but no popup window will appear for the user:
 
 ![](/images/Error-Handling/04.png)
 <br>

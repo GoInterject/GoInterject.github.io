@@ -4,9 +4,11 @@ filename: "InstallerValidation.md"
 layout: custom
 keywords: [checksum, validation, file integrity, Get-FileHash, hash, algorithm, value]
 headings: ["Overview", "Generating a Checksum", "Full Reset"]
-links: ["mailto:info@gointerject.com", "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash?view=powershell-7.3", "https://portal.gointerject.com/download-interject.html", "https://test-portal.gointerject.com/download-interject.html"]
+links: ["/wPortal/DownloadInterject.html#previous-versions-and-checksums", "https://portal.gointerject.com/", "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash?view=powershell-7.3", "https://portal.gointerject.com/download-interject.html", "https://test-portal.gointerject.com/download-interject.html"]
 image_dir: "Installer-Validation"
-images: [{file: "Powershell", type: "png", site: "External", cat: "Powershell", sub: "", report: "", ribbon: "", config: ""}]
+images: [
+	{file: "Powershell", type: "png", site: "External", cat: "Powershell", sub: "", report: "", ribbon: "", config: ""}
+	]
 description: The data integrity of Interject installation files can be verified by comparing its checksum. Interject creates csv files containing the official checksum of the installation file. To verify an installer, you can generate a checksum for the file and compared it with the official checksum.
 ---
 * * *
@@ -15,7 +17,7 @@ description: The data integrity of Interject installation files can be verified 
 
 The data integrity of Interject installation files can be verified by comparing its checksum. Interject creates csv files containing the official checksum of the installation file. To verify an installer, you can generate a checksum for the file and compare it with the official checksum.
 
-To obtain the official checksum for our installation files, please contact us at [security@gointerject.com](mailto:info@gointerject.com).
+The official [checksums](/wPortal/DownloadInterject.html#previous-versions-and-checksums) for our installation files can be found on our [portal site](https://portal.gointerject.com/).
 
 ### Generating a Checksum
 
@@ -36,7 +38,6 @@ Get-FileHash <FILE> -algorithm "<ALGO>"
 ### Full Reset
 
 If the checksums do not match or you cannot obtain an official checksum for your installation version, it is recommended to uninstall the current version and obtain a new installer from our [portal site](https://portal.gointerject.com/download-interject.html) or [test portal site](https://test-portal.gointerject.com/download-interject.html). Obtain the official checksum and validate the file's checksum using the method in the previous section before installing.
-
 <br>
 
 <blockquote class=highlight_note>

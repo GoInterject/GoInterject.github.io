@@ -19,7 +19,7 @@ Other Helper Functions are focused on the report itself and does not impact or d
 
 ### [jDropdown](/wIndex/jDropdown.html)
 
-The jDropdown function returns data from a DataPortal that can be displayed in a dropdown window for the user to select and insert into a designated cell within the spreadsheet. It is typically used to easily insert a valid parameter into the spreadsheet to filter the data returned by a report function after a pull action. When this function is linked to a hyperlink, the user can simply click on the hyperlink to display a list of valid parameters and insert one or more into the spreadsheet.
+The jDropdown function returns data from a Data Portal that can be displayed in a dropdown window for the user to select and insert into a designated cell within the spreadsheet. It is typically used to easily insert a valid parameter into the spreadsheet to filter the data returned by a report function after a pull action. When this function is linked to a hyperlink, the user can simply click on the hyperlink to display a list of valid parameters and insert one or more into the spreadsheet.
 
 ### [jFocus](/wIndex/jFocus.html)
 
@@ -39,7 +39,7 @@ The jCombineIF function concatenates a range or multiple ranges of cells into a 
 
 ### [jDataPortal](/wIndex/jDataPortal.html)
 
-The jDataPortal function establishes a connection to an Interject DataPortal that will be used as the data source for the function it is embedded in. Data sets accessed utilizing the jDataPortal are stored in memory. This allows the data set to be accessed later without having to query the data again via the DataPortal.
+The jDataPortal function establishes a connection to an Interject Data Portal that will be used as the data source for the function it is embedded in. Data sets accessed utilizing the jDataPortal are stored in memory. This allows the data set to be accessed later without having to query the data again via the Data Portal.
 
 ### [jColumnDef](/wIndex/jColumnDef.html)
 
@@ -67,5 +67,5 @@ The PairGroup function will active all [Pair()](Pair.html) functions defined wit
 
 ### [Param](/wIndex/Param.html)
 
-The Param function transfers values as parameters to the DataPortal. The values must match the order of the parameters in the data source (The order can be verified using the [Validation Report](/wTroubleshoot/Reports.html#validation-report-for-pullsave-events) ).
+The Param function transfers values as parameters to the Data Portal. The values must match the order of the parameters in the data source (The order can be verified using the [Validation Report](/wTroubleshoot/Reports.html#validation-report-for-pullsave-events) ).
 

@@ -23,9 +23,9 @@ You can add roles by selecting the role name from the drop down list. Then click
 <br>
 
 <blockquote class=highlightnote>
-<br><b>Note:</b> Changes will take place on the next successful login from the user.<br><br>
+<b>Note:</b> Changes will take place on the next successful login from the user.<br>
 </blockquote>
-
+<br>
 
 ### Standard Role
 

@@ -250,7 +250,7 @@ index:
           path: /wIndex/jDesc.html
     - title: Reviewing Report Functions
       path: /wIndex/Report-Formula-Reviews.html
-  - sectiontitle: Common Dataportal Index
+  - sectiontitle: Common Data Portal Index
     path: /wIndex/Common-Dataportal-Index.html
     section:
     - title: FinCube - The Financial Cube
@@ -441,12 +441,12 @@ troubleshoot:
       path: /wTroubleshoot/Verbose-Logging.html
     - title: Memory Logging
       path: /wTroubleshoot/RAM-Monitoring.html
-- sectiontitle: Addin Errors
+- sectiontitle: Add-in Errors
   path: /wTroubleshoot/App-Errors.html
   section:
     - title: Excel Drill Animations
       path: /wTroubleshoot/Drill-Animations.html
-    - title: Addins Missing
+    - title: Add-ins Missing
       path: /wTroubleshoot/Addin-Missing.html
     - title: Web Proxy Configuration
       path: /wTroubleshoot/WebProxy.html

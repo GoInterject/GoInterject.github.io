@@ -4,7 +4,7 @@ filename: "MFA.md"
 layout: custom
 keywords: [2fa, login, credentials, security, email confirmation, authenticator app]
 headings: ["Overview", "Enable MFA for a User", "Login With the Authenticator App", "Login With an Email Confirmation"]
-links: ["https://docs.gointerject.com/wAbout/Federated-Login-Design.html", "https://portal.gointerject.com/login.html"]
+links: ["https://docs.gointerject.com/wAbout/Federated-Login-Design.html", "https://docs.gointerject.com/wPortal/INTERJECT-Roles.html#clientadmin-role", "https://portal.gointerject.com/login.html"]
 image_dir: "MFA"
 images: [
     {file: "SelectStaff", type: "png", site: "Portal", cat: "Sidebar", sub: "", report: "", ribbon: "", config: ""}, 
@@ -85,4 +85,7 @@ The email will display the code needed to log in.
 ![](/images/MFA/Email.png)
 <br>
 
-**Note:** The email code expires in 5 minutes.
+<blockquote class=highlight_note>
+<b>Note:</b> The email code expires in 5 minutes.
+</blockquote>
+<br>

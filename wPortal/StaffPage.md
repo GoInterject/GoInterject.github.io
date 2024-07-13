@@ -4,7 +4,7 @@ filename: "StaffPage.md"
 layout: custom
 keywords: [users, organization, roles, user passwords, credentials]
 headings: ["Overview", "The Staff Page", "External Admins", "View, Edit, Activate/Deactivate, Delete User", "Add User"]
-links: ["https://portal.gointerject.com/", "/wPortal/INTERJECT-Roles.html#clientadmin-role", "/wPortal/MFA.html", "/wPortal/Altering-User-Passwords.html", "/wPortal/INTERJECT-Roles.html"]
+links: ["https://portal.gointerject.com/", "/wPortal/INTERJECT-Roles.html#clientadmin-role", "/wPortal/MFA.html", "/wPortal/User-Profile.md", "/wPortal/AddUser.html"]
 image_dir: "StaffPage"
 images: [
     {file: "SelectCompany", type: "png", site: "Portal", cat: "Home", sub: "Company", report: "", ribbon: "", config: ""}, 

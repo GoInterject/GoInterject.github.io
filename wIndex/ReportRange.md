@@ -18,7 +18,7 @@ For an example of this function, see [ Lab Create: Customer Aging](/wGetStarted
 
 ###  Function Arguments
 
-<button class="collapsible-parameter">**DataPortal**<br>The name of the Interject DataPortal that will be used as the data source for this function.</button>
+<button class="collapsible-parameter">**Data Portal**<br>The name of the Interject Data Portal that will be used as the data source for this function.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
@@ -98,7 +98,7 @@ For an example of this function, see [ Lab Create: Customer Aging](/wGetStarted
 </table>
 </div>
 
-<button class="collapsible-parameter">**Parameters**<br>The cells designating the parameters for the DataPortal. The values in these cells will filter the data that is inserted from the data source.</button>
+<button class="collapsible-parameter">**Parameters**<br>The cells designating the parameters for the Data Portal. The values in these cells will filter the data that is inserted from the data source.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
@@ -229,7 +229,7 @@ For an example of this function, see [ Lab Create: Customer Aging](/wGetStarted
 | Argument Name  |  Example Mapping  |  Explanation   |  
 |------|------|------|
 |  Function Name  |  =ReportRange()  |  The name of this function.  |  
-|  DataPortal  |  "NorthwindCustomers"  |  This function will use the "NorthwindCustomers" DataPortal for the data source.  |  
+|  DataPortal  |  "NorthwindCustomers"  |  This function will use the "NorthwindCustomers" Data Portal for the data source.  |  
 |  TargetDataRange  |  B14:H15  |  Data will be inserted starting at row 14 and only extend from column B to column H.  |  
 |  ColDefRange  |  B2:H2  |  The column names specified in B2:H2 will determine which data fields are returned from the data source.  |  
 |  FormatRange  |  B4:H4  |  The formatting used in this range will be used as a template for the inserted data.  |  

@@ -7,19 +7,19 @@ headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example"
 links: ["/wGetStarted/L-Dev-CustomerCreditSave.html", "https://docs.gointerject.com/wIndex/jDataPortal.html", "https://docs.gointerject.com/wIndex/Param.html", "/wTroubleshoot/Reports.html#validation-report-for-pullsave-events", "/wIndex/jDataPortal.html", "Param.html"]
 image_dir: ""
 images: []
-description: The ReportSave function will use a designated DataPortal to save data in a worksheet to a data source.
+description: The ReportSave function will use a designated Data Portal to save data in a worksheet to a data source.
 ---
 * * *
 
 ##  Function Summary
 
-The ReportSave function will use a designated DataPortal to save data in a worksheet to a data source. Typically this is done by setting up a DataPortal to run a procedure to take the designated data in the worksheet and save it to a data source. This function makes it convenient to upload local changes to the data source without having to edit it directly.
+The ReportSave function will use a designated Data Portal to save data in a worksheet to a data source. Typically this is done by setting up a DataPortal to run a procedure to take the designated data in the worksheet and save it to a data source. This function makes it convenient to upload local changes to the data source without having to edit it directly.
 
 For an example of this function, see [Lab Dev: Customer Aging Detail](/wGetStarted/L-Dev-CustomerCreditSave.html).
 
 ###  Function Arguments
 
-<button class="collapsible-parameter">**DataPortal**<br>The name of the Interject DataPortal that will be used when this function is ran.</button>
+<button class="collapsible-parameter">**DataPortal**<br>The name of the Interject Data Portal that will be used when this function is ran.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
@@ -79,7 +79,7 @@ For an example of this function, see [Lab Dev: Customer Aging Detail](/wGetStart
 </table>
 </div>
 
-<button class="collapsible-parameter">**ResultsRange**<br>The range designating the names of the columns that will be returned via the data source. Typically this is information sent back from the DataPortal to be displayed after a save.</button>
+<button class="collapsible-parameter">**ResultsRange**<br>The range designating the names of the columns that will be returned via the data source. Typically this is information sent back from the Data Portal to be displayed after a save.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
@@ -99,7 +99,7 @@ For an example of this function, see [Lab Dev: Customer Aging Detail](/wGetStart
 </table>
 </div>
 
-<button class="collapsible-parameter">**Parameters**<br>The cells designating the matching parameters for the DataPortal. The values in these cells will filter the data that is saved via the data source.</button>
+<button class="collapsible-parameter">**Parameters**<br>The cells designating the matching parameters for the Data Portal. The values in these cells will filter the data that is saved via the data source.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
@@ -170,7 +170,7 @@ For an example of this function, see [Lab Dev: Customer Aging Detail](/wGetStart
 | Argument Name  |  Example Mapping  |  Explanation   |  
 |------|------|------|
 |  Function Name  |  =ReportSave()  |  The name of this function.  |  
-|  DataPortal  |  "NorthwindInvoiceSave"  |  This function will use the "NorthwindInvoiceSave" DataPortal for the data source.  |  
+|  DataPortal  |  "NorthwindInvoiceSave"  |  This function will use the "NorthwindInvoiceSave" Data Portal for the data source.  |  
 |  RowDefRange  |  B42:B58  |  The unique row IDs are designated to be in column B and the rows 42:58 will be saved.  |  
 |  Col Def Range  |  12:12  |  Row 12 is designated to contain the column names that will be saved via the data source.  |  
 |  ResultRange  |  14:14  |  Row 14 is designated to contain the column names that will be displayed when returning from the save.  |  

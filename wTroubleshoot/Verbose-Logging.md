@@ -6,7 +6,13 @@ keywords: [app, errors, reset, send report, verbose logging]
 headings: ["Overview", "Turn on Verbose Logging"]
 links: ["/wTroubleshoot/Reporting-A-Problem.html#send-report-to-interject"]
 image_dir: "Verbose-Logging"
-images: [{file: "01", type: "jpg", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "Simple", config: ""}, {file: "02", type: "jpg", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "Advanced", config: ""}, {file: "ToggleVerboseLogging", type: "png", site: "Addin", cat: "Diagnostics", sub: "Toggle Verbose Logging", report: "", ribbon: "", config: ""}, {file: "ConfirmVerboseLogging", type: "png", site: "Addin", cat: "Diagnostics", sub: "Toggle Verbose Logging", report: "", ribbon: "", config: ""}, {file: "VerboseLoggingResults", type: "png", site: "Addin", cat: "Diagnostics", sub: "Toggle Verbose Logging", report: "", ribbon: "", config: ""}]
+images: [
+	{file: "01", type: "jpg", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "Simple", config: ""}, 
+	{file: "02", type: "jpg", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "Advanced", config: ""}, 
+	{file: "ToggleVerboseLogging", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Toggle Verbose Logging", report: "", ribbon: "", config: ""}, 
+	{file: "ConfirmVerboseLogging", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Toggle Verbose Logging", report: "", ribbon: "", config: ""}, 
+	{file: "VerboseLoggingResults", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Toggle Verbose Logging", report: "", ribbon: "", config: ""}
+	]
 description: To help diagnose any errors, Interject uses a Verbose Logging feature. The ideal goal of Verbose Logging is to help recreate an error and send logs to Interject's support team, where it can be fixed.
 ---
 * * *
@@ -48,7 +54,10 @@ To turn it on, select the **Toggle Verbose Logging** option in the menu, then cl
 ![](/images/Verbose-Logging/ConfirmVerboseLogging.png)
 <br>
 
-**Note: All activity will be logged for 16 hours**, but you can turn them off at any time with the same steps used to turn them on. While logging is on, the system will perform a little slower then usual. Multiple log files may be created, and they will be available for ten days. If Excel is closed, the logging process automatically begins once Excel is restarted. The Results section shows where the log file is located:
+<blockquote class=highlight_note>
+<b>Note:</b> All activity will be logged for 16 hours, but you can turn them off at any time with the same steps used to turn them on. While logging is on, the system will perform a little slower then usual. Multiple log files may be created, and they will be available for ten days. If Excel is closed, the logging process automatically begins once Excel is restarted. The Results section shows where the log file is located.
+</blockquote>
+<br>
 
 ![](/images/Verbose-Logging/VerboseLoggingResults.png)
 <br>

@@ -4,21 +4,21 @@ filename: "SingleUser.md"
 layout: custom
 keywords: [Installing, Install, Basic]
 headings: ["Overview", "Installing Interject"]
-links: ["/wAbout/SharedComputer.html", "/wPortal/DownloadInterject.html", "https://portal.gointerject.com/login.html", "/wPortal/DownloadInterject.html", "https://portal.gointerject.com/invite.html?mode=create", "/wAbout/Logging-In.html#before-using-interject-heres-how-to-login", "mailto:help@gointerject.com"]
+links: ["https://docs.gointerject.com/wAbout/SharedComputer.html", "https://portal.gointerject.com/login.html", "https://portal.gointerject.com/invite.html?mode=create", "/wPortal/DownloadInterject.html", "/wAbout/Logging-In.html", "mailto:help@gointerject.com"]
 image_dir: "SingleUser"
 images: [
     {file: "02", type: "jpg", site: "Portal", cat: "Home", sub: "Main", report: "", ribbon: "", config: ""}, 
     {file: "03", type: "png", site: "Portal", cat: "Download", sub: "Main", report: "", ribbon: "", config: ""}, 
     {file: "04", type: "png", site: "External", cat: "Chrome", sub: "Download", report: "", ribbon: "", config: ""}, 
     {file: "05", type: "png", site: "External", cat: "Firefox", sub: "Download", report: "", ribbon: "", config: ""}, 
-    {file: "07", type: "png", site: "External", cat: "Edge", sub: "Download", report: "", ribbon: "", config: ""}, 
+    {file: "Edge", type: "png", site: "External", cat: "Edge", sub: "Download", report: "", ribbon: "", config: ""}, 
     {file: "08", type: "png", site: "External", cat: "Internet Explorer", sub: "Download", report: "", ribbon: "", config: ""}, 
-    {file: "09", type: "png", site: "Interject", cat: "Installation", sub: "Setup Wizard", report: "", ribbon: "", config: ""}, 
-    {file: "09b", type: "png", site: "Interject", cat: "Installation", sub: "Installation Type", report: "", ribbon: "", config: ""}, 
-    {file: "10", type: "png", site: "Interject", cat: "Installation", sub: "End-User License Agreement", report: "", ribbon: "", config: ""}, 
-    {file: "11", type: "png", site: "Interject", cat: "Installation", sub: "Select Installation Folder", report: "", ribbon: "", config: ""}, 
-    {file: "12", type: "png", site: "Interject", cat: "Installation", sub: "Ready to Install", report: "", ribbon: "", config: ""}, 
-    {file: "13", type: "jpg", site: "Interject", cat: "Installation", sub: "Completed Install", report: "", ribbon: "", config: ""}
+    {file: "09", type: "png", site: "Add-in", cat: "Installation", sub: "Setup Wizard", report: "", ribbon: "", config: ""}, 
+    {file: "09b", type: "png", site: "Add-in", cat: "Installation", sub: "Installation Type", report: "", ribbon: "", config: ""}, 
+    {file: "10", type: "png", site: "Add-in", cat: "Installation", sub: "End-User License Agreement", report: "", ribbon: "", config: ""}, 
+    {file: "11", type: "png", site: "Add-in", cat: "Installation", sub: "Select Installation Folder", report: "", ribbon: "", config: ""}, 
+    {file: "12", type: "png", site: "Add-in", cat: "Installation", sub: "Ready to Install", report: "", ribbon: "", config: ""}, 
+    {file: "13", type: "jpg", site: "Add-in", cat: "Installation", sub: "Completed Install", report: "", ribbon: "", config: ""}
     ]
 description: Interject aims to make the installation process as simple and painless as possible. This installation is intended for single user computers.
 ---
@@ -63,7 +63,7 @@ Interject aims to make the installation process as simple and painless as possib
 
 **Microsoft Edge:**
 
-![](/images/SingleUser/07.png)
+![](/images/SingleUser/Edge.png)
 <br>
 
 **Microsoft Internet Explorer:**

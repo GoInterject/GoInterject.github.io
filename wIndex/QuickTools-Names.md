@@ -4,9 +4,36 @@ filename: "QuickTools-Names.md"
 layout: custom
 keywords: [Quick Tools, Names Tools, Remove Names with Ref Errors from Book, Remove All Names from Sheet, Remove All Names from Book, Create Range Name for Sheet, Create Range Names for Sheet for 2 Column Selection]
 headings: ["Overview", "Excel Name Manager", "Remove Names with Ref Errors from Book", "Remove All Names from Sheet", "Remove All Names from Book", "Create Range Name for Sheet", "Create Range Names for Sheet for 2 Column Selection", "Appending A Prefix and/or Suffix To A Name"]
-links: []
+links: ["/wIndex/jSetting.html"]
 image_dir: "QuickToolsNames"
-images: [{file: "NamesTools", type: "png", site: "Addin", cat: "Quick Tools", sub: "", report: "", ribbon: "", config: ""}, {file: "NameManager", type: "png", site: "Excel", cat: "Name Manager", sub: "", report: "", ribbon: "", config: ""}, {file: "NameManager2", type: "png", site: "Excel", cat: "Name Manager", sub: "", report: "", ribbon: "", config: ""}, {file: "NameManager5", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, {file: "NameManager3", type: "png", site: "Excel", cat: "Name Manager", sub: "", report: "", ribbon: "", config: ""}, {file: "NameManager4", type: "png", site: "Excel", cat: "Name Manager", sub: "New Name", report: "", ribbon: "", config: ""}, {file: "RefBefore", type: "png", site: "Excel", cat: "Name Manager", sub: "", report: "", ribbon: "", config: ""}, {file: "RefMiddle", type: "png", site: "Addin", cat: "Quick Tools", sub: "", report: "", ribbon: "", config: ""}, {file: "RefAfter", type: "png", site: "Excel", cat: "Name Manager", sub: "", report: "", ribbon: "", config: ""}, {file: "DefinedNamesSheetBefore", type: "png", site: "Excel", cat: "Name Manager", sub: "", report: "", ribbon: "", config: ""}, {file: "DefinedNamesSheetAfter", type: "png", site: "Excel", cat: "Name Manager", sub: "", report: "", ribbon: "", config: ""}, {file: "DefinedNamesBookBefore", type: "png", site: "Excel", cat: "Name Manager", sub: "", report: "", ribbon: "", config: ""}, {file: "DefinedNamesBookAfter", type: "png", site: "Excel", cat: "Name Manager", sub: "", report: "", ribbon: "", config: ""}, {file: "DefineNameRangeBefore", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, {file: "DefineNameRangeMiddle", type: "png", site: "Addin", cat: "Quick Tools", sub: "", report: "", ribbon: "", config: ""}, {file: "DefineNameRangeAfter", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, {file: "DefineNameRangeAfter2", type: "png", site: "Excel", cat: "Name Manager", sub: "", report: "", ribbon: "", config: ""}, {file: "SelectedNameRangeBefore", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, {file: "SelectedNameRangeMiddle", type: "png", site: "Addin", cat: "Quick Tools", sub: "", report: "", ribbon: "", config: ""}, {file: "SelectedNameRangeAfter", type: "png", site: "Excel", cat: "Name Manager", sub: "", report: "", ribbon: "", config: ""}, {file: "PrefixSuffix1", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, {file: "PrefixSuffix2", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, {file: "PrefixSuffix3", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, {file: "SelectedNameRangeBefore", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, {file: "SelectedNameRangeMiddle", type: "png", site: "Addin", cat: "Quick Tools", sub: "", report: "", ribbon: "", config: ""}, {file: "PrefixSuffix4", type: "png", site: "Excel", cat: "Name Manager", sub: "", report: "", ribbon: "", config: ""}]
+images: [
+	{file: "NamesTools", type: "png", site: "Add-in", cat: "Quick Tools", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "NameManager", type: "png", site: "Excel", cat: "Name Manager", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "NameManager2", type: "png", site: "Excel", cat: "Name Manager", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "NameManager5", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "NameManager3", type: "png", site: "Excel", cat: "Name Manager", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "NameManager4", type: "png", site: "Excel", cat: "Name Manager", sub: "New Name", report: "", ribbon: "", config: ""}, 
+	{file: "RefBefore", type: "png", site: "Excel", cat: "Name Manager", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "RefMiddle", type: "png", site: "Add-in", cat: "Quick Tools", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "RefAfter", type: "png", site: "Excel", cat: "Name Manager", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "DefinedNamesSheetBefore", type: "png", site: "Excel", cat: "Name Manager", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "DefinedNamesSheetAfter", type: "png", site: "Excel", cat: "Name Manager", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "DefinedNamesBookBefore", type: "png", site: "Excel", cat: "Name Manager", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "DefinedNamesBookAfter", type: "png", site: "Excel", cat: "Name Manager", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "DefineNameRangeBefore", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "DefineNameRangeMiddle", type: "png", site: "Add-in", cat: "Quick Tools", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "DefineNameRangeAfter", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "DefineNameRangeAfter2", type: "png", site: "Excel", cat: "Name Manager", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "SelectedNameRangeBefore", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, 
+	{file: "SelectedNameRangeMiddle", type: "png", site: "Add-in", cat: "Quick Tools", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "SelectedNameRangeAfter", type: "png", site: "Excel", cat: "Name Manager", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "PrefixSuffix1", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "PrefixSuffix2", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "PrefixSuffix3", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "SelectedNameRangeBefore", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, 
+	{file: "SelectedNameRangeMiddle", type: "png", site: "Add-in", cat: "Quick Tools", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "PrefixSuffix4", type: "png", site: "Excel", cat: "Name Manager", sub: "", report: "", ribbon: "", config: ""}
+	]
 description: The Names Tools within Quick Tools deal with defined names.
 ---
 * * *
@@ -54,7 +81,7 @@ Invalid references happen when cells refer to another cell that has been deleted
 
 <b style='color:red;'><strong>Before:</strong></b>
 
-Note: This name refers to a cell that is currently invalid:
+This name refers to a cell that is currently invalid:
 
 ![](/images/QuickToolsNames/RefBefore.png)
 <br>
@@ -73,7 +100,7 @@ Removes all user named ranges that are scoped to the current sheet.
 
 <b style='color:red;'><strong>Before:</strong></b>
 
-Note: There are 3 names that are scoped to the current sheet "ReportRange":
+There are 3 names that are scoped to the current sheet "ReportRange":
 
 ![](/images/QuickToolsNames/DefinedNamesSheetBefore.png)
 <br>

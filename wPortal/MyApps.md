@@ -4,13 +4,13 @@ filename: "MyApps.md"
 layout: custom
 keywords: [redirect, override, offerings, subscriptions, portals, connections, links]
 headings: ["Overview", "Expiration", "App Offering", "Connection Redirection"]
-links: ["mailto:info@gointerject.com"]
+links: ["mailto:info@gointerject.com", "#connection-redirection", "https://docs.gointerject.com/wIndex/jDataPortal.html"]
 image_dir: "MyApps"
 images: [
 	{file: "MyAppsPage", type: "png", site: "Portal", cat: "My Apps", sub: "", report: "", ribbon: "", config: ""},
 	{file: "Expiration", type: "png", site: "Portal", cat: "My Apps", sub: "", report: "", ribbon: "", config: ""},
 	{file: "InterjectDemoApp", type: "png", site: "Portal", cat: "My Apps", report: "", ribbon: "", config: ""},
-	{file: "ReportLibrarySubscriptions", type: "png", site: "Addin", cat: "Report Library", sub: "", report: "", ribbon: "", config: ""},
+	{file: "ReportLibrarySubscriptions", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "", ribbon: "", config: ""},
 	{file: "ConnectionRedirect", type: "png", site: "Portal", cat: "My Apps", sub: "Connection Redirect", report: "", ribbon: "", config: ""},
 	{file: "RedirectionDisplayed", type: "png", site: "Portal", cat: "My Apps", sub: "Connection Redirect", report: "", ribbon: "", config: ""},
 	{file: "DeleteRedirection", type: "png", site: "Portal", cat: "My Apps", sub: "Connection Redirect", report: "", ribbon: "", config: ""}

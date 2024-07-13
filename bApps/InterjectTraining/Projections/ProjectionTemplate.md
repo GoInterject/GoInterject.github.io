@@ -4,9 +4,37 @@ filename: "ProjectionTemplate.md"
 layout: custom
 keywords: [Training, Projections, Projection Template]
 headings: ["Overview", "Input Field Explanations", "Retain Rows and how it works", "Summary and Detail level accounts", "Pulling Summary and Detail levels together", "Saving Summary and Detail levels together", "Dynamic Projection Columns", "The Autocalcs", "Do I have security rights to Save from the Projections Template?", "Common Save Errors"]
-links: ["/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#projections-tools-and-the-control-center"]
+links: ["#retain-rows-and-how-it-works", "#summary-and-detail-level-accounts", "/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#projections-tools-and-the-control-center"]
 image_dir: "WCNTraining/Projections"
-images: [{file: "ProjectionTemplate_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ProjectionTemplate_RetainRowsBeforeClear", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ProjectionTemplate_RetainRowsAfterClear", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ProjectionTemplate_InsertAtEndNo", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ProjectionTemplate_InsertAtEndYes", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ProjectionTemplate_SummaryDetail_PullStart", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ProjectionTemplate_SummaryDetail_SummaryPrep", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ProjectionTemplate_SummaryDetail_SummaryPull", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ProjectionTemplate_SummaryDetailSaveStart", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ProjectionTemplate_SummaryDetail_ZeroOutNo", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ProjectionTemplate_SummaryDetail_ZeroOutYes", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ProjectionTemplate_3Months", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ProjectionTemplate_4Months", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ProjectionTemplate_5Months", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ProjectionTemplate_Autocalcs", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ProjectionTemplate_Error_LockLevel", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ProjectionTemplate_Error_LastPullFor", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ProjectionTemplate_Error_DistrictRequired", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ProjectionTemplate_Error_YearMonthRequired", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ProjectionTemplate_Error_MissingColumns", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ProjectionTemplate_Error_InvalidAccount", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ProjectionTemplate_Error_InvalidSyst", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ProjectionTemplate_Error_InvalidSbst", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ProjectionTemplate_Error_NonumericAmount", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ProjectionTemplate_Error_ExponentialAmount", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ProjectionTemplate_Error_Duplicates", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "ProjectionTemplate_Error_BrokenFormula", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}]
+images: [
+	{file: "ProjectionTemplate_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ProjectionTemplate_RetainRowsBeforeClear", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ProjectionTemplate_RetainRowsAfterClear", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ProjectionTemplate_InsertAtEndNo", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ProjectionTemplate_InsertAtEndYes", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ProjectionTemplate_SummaryDetail_PullStart", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ProjectionTemplate_SummaryDetail_SummaryPrep", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ProjectionTemplate_SummaryDetail_SummaryPull", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ProjectionTemplate_SummaryDetailSaveStart", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ProjectionTemplate_SummaryDetail_ZeroOutNo", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ProjectionTemplate_SummaryDetail_ZeroOutYes", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ProjectionTemplate_3Months", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ProjectionTemplate_4Months", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ProjectionTemplate_5Months", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ProjectionTemplate_Autocalcs", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ProjectionTemplate_Error_LockLevel", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ProjectionTemplate_Error_LastPullFor", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ProjectionTemplate_Error_DistrictRequired", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ProjectionTemplate_Error_YearMonthRequired", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ProjectionTemplate_Error_MissingColumns", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ProjectionTemplate_Error_InvalidAccount", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ProjectionTemplate_Error_InvalidSyst", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ProjectionTemplate_Error_InvalidSbst", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ProjectionTemplate_Error_NonumericAmount", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ProjectionTemplate_Error_ExponentialAmount", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ProjectionTemplate_Error_Duplicates", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ProjectionTemplate_Error_BrokenFormula", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
+	]
 description: The Local Projections Template is used to save to a district's Projections for a given month. This template closely matches the Local Budget Template in design and function.
 ---
 
