@@ -97,7 +97,7 @@ declare
 	,@Interject_LoginDateUTC		datetime		 
 	,@Interject_UserRolesDelimited	nvarchar(max)	 
 	,@UserContextEncrypted			nvarchar(4000)	 
-	,@XMLDataToSave					nvarchar(max)	 
+	,@Interject_XMLDataToSave		nvarchar(max)	 
 
 set @Interject_RequestContext = 
 '<?xml version="1.0" encoding="utf-16" standalone="yes"?>
@@ -184,7 +184,7 @@ exec [dbo].[RequestContext_Parse]
 	,@Interject_LoginDateUTC		 = @Interject_LoginDateUTC	 output
 	,@Interject_UserRolesDelimited	 = @Interject_UserRolesDelimited	output
 	,@UserContextEncrypted			 = @UserContextEncrypted	 output
-	,@XMLDataToSave					 = @XMLDataToSave			 output
+	,@Interject_XMLDataToSave		 = @Interject_XMLDataToSave			 output
 
 Select
 	@ExcelVersion					as '@ExcelVersion'
@@ -207,7 +207,7 @@ Select
 	,@Interject_LoginDateUTC		as '@Interject_LoginDateUTC'
 	,@Interject_UserRolesDelimited	as '@Interject_UserRolesDelimited'
 	,@UserContextEncrypted			as '@UserContextEncrypted'
-	,@XMLDataToSave					as '@XMLDataToSave'
+	,@Interject_XMLDataToSave		as '@XMLDataToSave'
 
 
 -- since all paramters are optional, you can also just ask for the values you need like below
@@ -232,9 +232,9 @@ ALTER proc [dbo].[RequestContext_Parse]
 	,@CellRange						nvarchar(100)	 = '' output
 	,@SourceFunction				nvarchar(100)	 = '' output
 	,@UtcOffset						decimal(6,4)	 = 0 output
-	,@ColDefItemsDelimited			xml				 = '' output
-	,@ResultDefItemsDelimited		xml				 = '' output
-	,@RowDefItemsDelimited			xml				 = '' output
+	,@ColDefItemsDelimited			nvarchar(max)	 = '' output
+	,@ResultDefItemsDelimited		nvarchar(max)	 = '' output
+	,@RowDefItemsDelimited			nvarchar(max)	 = '' output
 	,@MachineLoginName				nvarchar(100)	 = '' output
 	,@MachineName					nvarchar(100)	 = '' output
 	,@Interject_UserID				nvarchar(100)	 = '' output
@@ -244,7 +244,7 @@ ALTER proc [dbo].[RequestContext_Parse]
 	,@Interject_LoginDateUTC		datetime		 = null output
 	,@Interject_UserRolesDelimited	nvarchar(max)	 = '' output
 	,@UserContextEncrypted			nvarchar(4000)	 = '' output
-	,@Interject_XMLDataToSave		xml				 = null output
+	,@Interject_XMLDataToSave		nvarchar(max)	 = null output
 
 	
 as
@@ -268,9 +268,6 @@ are examples to pull all the data or just a couple values that you need (which i
 		,@CellRange					= T.c.value('./CellRange[1]',							'nvarchar(100)') 
 		,@SourceFunction			= T.c.value('./SourceFunction[1]',						'nvarchar(100)') 
 		,@UtcOffset					= T.c.value('./UtcOffset[1]',							'decimal(6,4)') 
-		--,@ColDefItemsDelimited		= T.c.value('./ColDefItems[1]',						'nvarchar(max)') 
-		--,@ResultDefItemsDelimited	= T.c.value('./ResultDefItems[1]',						'nvarchar(max)') 
-		--,@RowDefItemsDelimited		= T.c.value('./RowDefItems[1]',						'nvarchar(max)') 
 		,@MachineLoginName			= T.c.value('./UserContext[1]/MachineLoginName[1]',		'nvarchar(100)')
 		,@MachineName				= T.c.value('./UserContext[1]/MachineName[1]',			'nvarchar(100)') 
 		,@Interject_UserID			= T.c.value('./UserContext[1]/UserId[1]',				'nvarchar(100)') 
@@ -278,13 +275,11 @@ are examples to pull all the data or just a couple values that you need (which i
 		,@Interject_LoginName		= T.c.value('./UserContext[1]/LoginName[1]',			'nvarchar(100)') 
 		,@Interject_LoginAuthTypeID	= T.c.value('./UserContext[1]/LoginAuthTypeId[1]',		'int') 
 		,@Interject_LoginDateUTC	= T.c.value('./UserContext[1]/LoginDateUtc[1]',			'datetime') 
-		--,@Interject_UserRolesDelimited	= T.c.value('./UserContext[1]/UserRolesDelimited[1]',	'nvarchar(max)') 
 		,@UserContextEncrypted		= T.c.value('./UserContextEncrypted[1]',				'nvarchar(100)') 
-		,@XMLDataToSave				= T.c.value('./XMLDataToSave[1]',						'nvarchar(max)') 
 	from @Interject_RequestContextXML.nodes('/RequestContext') T(c)
 
 	--set @XMLDataToSave = cast(@Interject_RequestContextXML.query('/RequestContext/XMLDataToSave') as nvarchar(max))
-	set @XMLDataToSave = CONVERT(nvarchar(max),@Interject_RequestContextXML.query('/RequestContext/XMLDataToSave'))
+	set @Interject_XMLDataToSave = CONVERT(nvarchar(max),@Interject_RequestContextXML.query('/RequestContext/XMLDataToSave'))
 
 	-- UserRolesDelimited
 	Select @Interject_UserRolesDelimited =
@@ -386,7 +381,7 @@ declare
 	,@Interject_LoginDateUTC		datetime		 
 	,@Interject_UserRolesDelimited	nvarchar(max)	 
 	,@UserContextEncrypted			nvarchar(4000)	 
-	,@XMLDataToSave					nvarchar(max)	 
+	,@Interject_XMLDataToSave					nvarchar(max)	 
 
 set @Interject_RequestContext = 
 '<?xml version="1.0" encoding="utf-16" standalone="yes"?>
@@ -473,7 +468,7 @@ exec [dbo].[RequestContext_Parse]
 	,@Interject_LoginDateUTC		 = @Interject_LoginDateUTC	 output
 	,@Interject_UserRolesDelimited	 = @Interject_UserRolesDelimited	output
 	,@UserContextEncrypted			 = @UserContextEncrypted	 output
-	,@XMLDataToSave					 = @XMLDataToSave			 output
+	,@Interject_XMLDataToSave		 = @Interject_XMLDataToSave	 output
 
 Select
 	@ExcelVersion					as '@ExcelVersion'
@@ -496,10 +491,10 @@ Select
 	,@Interject_LoginDateUTC		as '@Interject_LoginDateUTC'
 	,@Interject_UserRolesDelimited	as '@Interject_UserRolesDelimited'
 	,@UserContextEncrypted			as '@UserContextEncrypted'
-	,@XMLDataToSave					as '@XMLDataToSave'
+	,@Interject_XMLDataToSave		as '@XMLDataToSave'
 
 
--- since all paramters are optional, you can also just ask for the values you need like below
+-- since all parameters are optional, you can also just ask for the values you need like below
 
 exec [dbo].[RequestContext_Parse]
 	@Interject_RequestContext		= @Interject_RequestContext
