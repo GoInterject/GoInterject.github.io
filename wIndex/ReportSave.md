@@ -15,7 +15,7 @@ description: The ReportSave function will use a designated Data Portal to save d
 
 The ReportSave function will use a designated Data Portal to save data in a worksheet to a data source. Typically this is done by setting up a DataPortal to run a procedure to take the designated data in the worksheet and save it to a data source. This function makes it convenient to upload local changes to the data source without having to edit it directly.
 
-For an example of this function, see [Lab Dev: Customer Aging Detail](/wGetStarted/L-Dev-CustomerCreditSave.html).
+For an example of this function, see [Develop: Editing Data Save](/wDeveloper/L-Dev-EditingDataSave.html).
 
 ###  Function Arguments
 
