@@ -25,9 +25,9 @@ In order to have the necessary requirements to go through the Lab Guide, a user 
 ![](/images/LabSetup/ReportLibraryLabFiles.png)
 <br>
 
-In addition, the Training Demo App grants a user access to all the Data Portals referenced in the labs. All the Data Portals in the Lab Guide use an API Data Connection. Therefore, no local database is necessary.
+In addition, the Training Demo App grants a user access to all the Data Portals referenced in the labs. With the exception of the developer labs [8](#lab-8--developing-data-pull) and [9](#lab-9--developing-data-save), all the Data Portals in the Lab Guide use an API Data Connection. Therefore, no local database is necessary for labs 1-7.
 
-To setup the lab environment manually, see [here](/wLabs/LabSetup.html).
+To setup the lab environment manually, see [Manual Setup for the Lab Guide](/wLabs/LabSetup.html).
 
 ### Before You Begin
 
@@ -293,8 +293,80 @@ This lab will focus on how to export a report once it is completed and utilizing
 **_Concepts_** :
 • Adding Prefixes and Suffixes to the Distributed Report
 • Adding Keywords for Generated Report Tabs
-• Distributing to Mulitple Sheets
+• Distributing to Multiple Sheets
 • Distributing to Multiple Workbooks
 • Distributing Without Pulling Data
 • Grouping Segments
+<br>
+
+### Lab 8 : Developing Data Pull
+
+In this lab you will work on developing your own custom data pulls from the ground up.
+
+#### [8.1 Lab Develop: Customer Aging](/wGetStarted/L-Dev-CustomerAging.html)
+
+**_Concepts_** :
+• Setting up a data connection
+• Setting up a data portal
+• Setting up the formula and system parameters
+• Creating a stored procedure for a data pull
+<br>
+
+#### [8.2 Lab Develop: Customer Orders](/wGetStarted/L-Dev-CustomerOrders.html)
+
+**_Concepts_** :
+• Cloning a data portal
+• Creating a stored procedure for a data pull
+<br>
+
+#### [8.3 Lab Develop: Customer jDropdowns](/wGetStarted/L-Dev-jDropdowns.html)
+
+**_Concepts_** :
+• Setting up a data connection
+• Setting up a data portal
+• Creating a stored procedure for a jDropdown
+• Testing the stored procedure
+<br>
+
+#### [8.4 Lab Develop: Customer Aging Detail](/wGetStarted/L-Dev-CustomerAgingDetail.html)
+
+**_Concepts_** :
+• Cloning a data portal
+• Creating a stored procedure for a data pull with multiple data sets
+• Updating a report to handle 2 data sets
+<br>
+
+### Lab 9 : Developing Data Save
+
+In this lab you will learn how to develop a data save in three incremental examples.
+
+#### [9.1 Lab Develop: Editing Data Save](/wDeveloper/L-Dev-EditingDataSave.html)
+
+**_Concepts_** :
+• Setting up a data connection
+• Setting up a data portal
+• Setting up a report for a data save to edit columns
+• Adding the RequestContext_Parse stored procedure
+• Creating a stored procedure for a data save to edit columns
+• Testing the stored procedure
+• Testing the ReportSave function
+<br>
+
+#### [9.2 Lab Develop: Insert & Delete Data Save](/wDeveloper/L-Dev-InsertDeleteDataSave.html)
+
+**_Concepts_** :
+• Setting up a data portal
+• Setting up a report for a data save to insert and delete records
+• Modifying a stored procedure for a data save to insert and delete records
+• Testing the stored procedure
+• Testing the ReportSave function
+<br>
+
+#### [9.3 Lab Develop: Changelog Data Save](/wDeveloper/L-Dev-ChangelogDataSave.html)
+
+**_Concepts_** :
+• Setting up a data portal
+• Modifying a stored procedure for a data save to add a change log
+• Testing the stored procedure
+• Testing the ReportSave function
 <br>
