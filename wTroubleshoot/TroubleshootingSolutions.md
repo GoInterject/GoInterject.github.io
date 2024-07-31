@@ -75,3 +75,31 @@ _"One or more of the Interject web apis are offline or could not be reached. The
 - <span style="color: red;">ISSUE:</span> Firewall does not allow access to unapproved external services
 
     <span style="color: green;">SOLUTION:</span> [Whitelist](/wAbout/Enterprise-Login-Setup.html#ip-whitelisting) our auth API URL
+
+### Error: File Not Uploading Correctly to Report Library
+
+- <span style="color: red;">ISSUE:</span> Cloud files or files on a shared network may not upload to Report Library correctly.
+
+    <span style="color: green;">SOLUTION:</span> Save file to [local drive](/wTroubleshoot/Cloud-File.html#solution-saving-to-local-drive) before uploading.
+
+    <span style="color: green;">SOLUTION:</span> Save cloud file as a [website link](/wTroubleshoot/Cloud-File.html#solution-uploading-as-a-website-link).
+
+### Error: Report Showing Incorrect Data or Data Missing
+
+- <span style="color: red;">ISSUE:</span> Report formulas not set up correctly.
+
+    <span style="color: green;">SOLUTION:</span> Double check your formula is set up correctly using our [doc pages](/wIndex/Excel-Function-Index.html).
+
+- <span style="color: red;">ISSUE:</span> Data API not set up correctly.
+
+    <span style="color: green;">SOLUTION:</span> Ensure the data API endpoint is configured correctly. Our API repos have docs and examples of how to access your data.
+
+- <span style="color: red;">ISSUE:</span> Wrong Interject version. Each versions has different features and functionality. Upgrading may help and in some cases it may help to downgrade your version to isolate the issue.
+
+    <span style="color: green;">SOLUTION:</span> Upgrade/Downgrade your [Interject version](https://portal.gointerject.com/download-interject.html#additionalInstallers).
+
+### Error: 
+
+- <span style="color: red;">ISSUE:</span> 
+
+    <span style="color: green;">SOLUTION:</span> 
