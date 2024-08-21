@@ -278,8 +278,7 @@ are examples to pull all the data or just a couple values that you need (which i
 		,@UserContextEncrypted		= T.c.value('./UserContextEncrypted[1]',				'nvarchar(100)') 
 	from @Interject_RequestContextXML.nodes('/RequestContext') T(c)
 
-	--set @XMLDataToSave = cast(@Interject_RequestContextXML.query('/RequestContext/XMLDataToSave') as nvarchar(max))
-	set @Interject_XMLDataToSave = CONVERT(nvarchar(max),@Interject_RequestContextXML.query('/RequestContext/XMLDataToSave'))
+	set @Interject_XMLDataToSave = cast(@Interject_RequestContextXML.query('/RequestContext/XMLDataToSave') as nvarchar(max))
 
 	-- UserRolesDelimited
 	Select @Interject_UserRolesDelimited =

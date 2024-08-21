@@ -7,40 +7,42 @@ headings: ["Overview", "Building the Report", "Customizing the Report", "Editing
 links: ["/wIndex/ReportRange.html", "/wIndex/jFreezePanes.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder", "/wIndex/Common-Dataportal-Index.html", "/wPortal/INTERJECT-Ribbon-Menu-Items.html#pulldata", "/wIndex/ReportRange.html", "/wIndex/jFreezePanes.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools", "/wAbout/ReportLibraryLinks.html"]
 image_dir: "L-Create-CustOrders"
 images: [
-	{file: "01", type: "png", site: "Add-in", cat: "Report Builder", sub: "", report: "", ribbon: "Simple", config: ""}, 
-	{file: "02", type: "png", site: "Add-in", cat: "Report Builder", sub: "", report: "NorthwindCustomerOrders", ribbon: "Simple", config: ""}, 
-	{file: "03", type: "jpg", site: "Add-in", cat: "Report", sub: "", report: "NorthwindCustomerOrders", ribbon: "", config: "Yes"}, 
-	{file: "04", type: "jpg", site: "Add-in", cat: "Report", sub: "", report: "NorthwindCustomerOrders", ribbon: "", config: "Yes"}, 
-	{file: "05", type: "png", site: "Add-in", cat: "Pull Data", sub: "", report: "NorthwindCustomerOrders", ribbon: "Simple", config: "Yes"}, 
-	{file: "06", type: "png", site: "Add-in", cat: "Report", sub: "", report: "NorthwindCustomerOrders", ribbon: "", config: "Yes"}, 
-	{file: "07", type: "gif", site: "Excel", cat: "Right Click Menu", sub: "Copy & Paste", report: "NorthwindCustomerOrders", ribbon: "Simple", config: "Yes"}, 
-	{file: "08", type: "png", site: "Add-in", cat: "Pull Data", sub: "", report: "NorthwindCustomerOrders", ribbon: "", config: "Yes"}, 
-	{file: "9", type: "jpg", site: "Add-in", cat: "Report", sub: "", report: "NorthwindCustomerOrders", ribbon: "", config: "Yes"}, 
-	{file: "10", type: "jpg", site: "Excel", cat: "Function Wizard", sub: "", report: "NorthwindCustomerOrders", ribbon: "", config: "Yes"}, 
-	{file: "11", type: "jpg", site: "Excel", cat: "Function Wizard", sub: "", report: "NorthwindCustomerOrders", ribbon: "", config: "Yes"}, 
-	{file: "12", type: "jpg", site: "Excel", cat: "Function Wizard", sub: "", report: "NorthwindCustomerOrders", ribbon: "", config: "Yes"}, 
-	{file: "13", type: "png", site: "Add-in", cat: "Pull Data", sub: "", report: "NorthwindCustomerOrders", ribbon: "Simple", config: "Yes"}, 
-	{file: "14", type: "jpg", site: "Add-in", cat: "Report", sub: "", report: "NorthwindCustomerOrders", ribbon: "", config: "Yes"}, 
-	{file: "15", type: "jpg", site: "Add-in", cat: "Report", sub: "", report: "NorthwindCustomerOrders", ribbon: "", config: "Yes"}, 
-	{file: "16", type: "jpg", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, 
-	{file: "16b", type: "png", site: "Excel", cat: "Right Click Menu", sub: "", report: "", ribbon: "", config: "Yes"}, 
-	{file: "17", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, 
-	{file: "18", type: "jpg", site: "Excel", cat: "Right Click Menu", sub: "", report: "", ribbon: "", config: "Yes"}, 
-	{file: "19", type: "jpg", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, 
-	{file: "20", type: "jpg", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, 
-	{file: "21", type: "jpg", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, 
-	{file: "22", type: "jpg", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, 
-	{file: "23", type: "jpg", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, 
-	{file: "24", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "", ribbon: "", config: "Yes"}, 
-	{file: "25", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "", ribbon: "", config: "Yes"}, 
-	{file: "26", type: "png", site: "Add-in", cat: "Pull Data", sub: "", report: "", ribbon: "Simple", config: "Yes"}, 
-	{file: "27", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, 
-	{file: "28", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "", ribbon: "", config: "Yes"}, 
-	{file: "29", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "", ribbon: "", config: "Yes"}, 
-	{file: "30", type: "png", site: "Add-in", cat: "Quick Tools", sub: "", report: "", ribbon: "Simple", config: "Yes"}, 
-	{file: "31", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "32", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: ""}
-	]
+    {file: "01", type: "png", site: "Addin", cat: "Report Builder", sub: "", report: "", ribbon: "Simple", config: ""},
+    {file: "02", type: "png", site: "Addin", cat: "Report Builder", sub: "", report: "NorthwindCustomerOrders", ribbon: "Simple", config: ""},
+    {file: "03", type: "jpg", site: "Addin", cat: "Report", sub: "", report: "NorthwindCustomerOrders", ribbon: "", config: "Yes"},
+    {file: "04", type: "jpg", site: "Addin", cat: "Report", sub: "", report: "NorthwindCustomerOrders", ribbon: "", config: "Yes"},
+    {file: "05", type: "png", site: "Addin", cat: "Pull Data", sub: "", report: "NorthwindCustomerOrders", ribbon: "Simple", config: "Yes"},
+    {file: "06", type: "png", site: "Addin", cat: "Report", sub: "", report: "NorthwindCustomerOrders", ribbon: "", config: "Yes"},
+    {file: "07", type: "gif", site: "Excel", cat: "Right Click Menu", sub: "Copy & Paste", report: "NorthwindCustomerOrders", ribbon: "Simple", config: "Yes"},
+    {file: "08", type: "png", site: "Addin", cat: "Pull Data", sub: "", report: "NorthwindCustomerOrders", ribbon: "", config: "Yes"},
+    {file: "9", type: "jpg", site: "Addin", cat: "Report", sub: "", report: "NorthwindCustomerOrders", ribbon: "", config: "Yes"},
+    {file: "10", type: "jpg", site: "Excel", cat: "Function Wizard", sub: "", report: "NorthwindCustomerOrders", ribbon: "", config: "Yes"},
+    {file: "11", type: "jpg", site: "Excel", cat: "Function Wizard", sub: "", report: "NorthwindCustomerOrders", ribbon: "", config: "Yes"},
+    {file: "12", type: "jpg", site: "Excel", cat: "Function Wizard", sub: "", report: "NorthwindCustomerOrders", ribbon: "", config: "Yes"},
+    {file: "13", type: "png", site: "Addin", cat: "Pull Data", sub: "", report: "NorthwindCustomerOrders", ribbon: "Simple", config: "Yes"},
+    {file: "14", type: "jpg", site: "Addin", cat: "Report", sub: "", report: "NorthwindCustomerOrders", ribbon: "", config: "Yes"},
+    {file: "15", type: "jpg", site: "Addin", cat: "Report", sub: "", report: "NorthwindCustomerOrders", ribbon: "", config: "Yes"},
+    {file: "16", type: "jpg", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"},
+    {file: "16b", type: "png", site: "Excel", cat: "Right Click Menu", sub: "", report: "", ribbon: "", config: "Yes"},
+    {file: "17", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"},
+    {file: "18", type: "jpg", site: "Excel", cat: "Right Click Menu", sub: "", report: "", ribbon: "", config: "Yes"},
+    {file: "19", type: "jpg", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"},
+    {file: "20", type: "jpg", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"},
+    {file: "21", type: "jpg", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"},
+    {file: "22", type: "jpg", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"},
+    {file: "23", type: "jpg", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"},
+    {file: "24", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "", ribbon: "", config: "Yes"},
+    {file: "25", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "", ribbon: "", config: "Yes"},
+    {file: "26", type: "png", site: "Addin", cat: "Pull Data", sub: "", report: "", ribbon: "Simple", config: "Yes"},
+    {file: "27", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"},
+    {file: "28", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "", ribbon: "", config: "Yes"},
+    {file: "29", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "", ribbon: "", config: "Yes"},
+    {file: "30", type: "png", site: "Addin", cat: "Quick Tools", sub: "", report: "", ribbon: "Simple", config: "Yes"},
+    {file: "31", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "", config: ""},
+    {file: "32", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Orders", ribbon: "", config: ""},
+    {file: "ReportLookupFormula", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Orders", ribbon: "", config: "Yes"},
+    {file: "ReportLookupPulled", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Orders", ribbon: "", config: ""}
+]
 description: This page illustrates the process of building a Customer Order report from scratch and uses the multi-row option to provide a more advanced presentation.
 ---
 * * *
@@ -235,3 +237,23 @@ Every report will be specific to the company's needs and best practices, but a c
 <br>
 
 Finally, clear the report and save the file to the Report Library "My Favorites" folder. (For detailed instructions on how to save a file to the Report Library, see [here](/wAbout/ReportLibraryLinks.html).)
+
+### Adding a Report Label With ReportLookup
+
+The [ReportLookup()](/wIndex/ReportLookup.html) function is great for pulling in a single piece of data into your report. Here we will use it to generate a label for the report based on the CustomerID entered in cell C19.
+
+**Step 1:** In cell I10, enter the following details:
+
+```
+=ReportLookup("NorthwindCustomers",C15,C2,Param(C17,C18,C19))
+```
+
+![](/images/L-Create-CustOrders/ReportLookupFormula.png)
+<br>
+
+This will pull from the "NorthwindCustomers" data portal and pull the Company Name of the CustomerID entered in C19. It will insert this into cell C15.
+
+Pull the data again to see the report label inserted:
+
+![](/images/L-Create-CustOrders/ReportLookupPulled.png)
+<br>

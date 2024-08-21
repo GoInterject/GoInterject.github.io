@@ -4,7 +4,7 @@ filename: "L-Dev-CustomerAging.md"
 layout: custom
 keywords: [developer, example, customer aging, SQL, data portal, data connection, walkthrough]
 headings: ["Overview", "Setting up the Data Connection", "Setting up the Data Portal", "Setting up Formula Parameters", "System Parameters", "Creating the Stored Procedure", "Create the Report"]
-links: ["/wAbout/Customer-Aging.html", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "https://portal.gointerject.com", "/wPortal/L-Database-Connection.html#testing-the-connection-string-from-within-excel", "https://portal.gointerject.com", "#setting-up-the-data-connection", "https://docs.gointerject.com/wPortal/Data-Portals.html", "/wPortal/Data-Portals.html", "/wPortal/The-INTERJECT-Website-Portal.html", "mailto:info@gointerject.com", "/wGetStarted/L-Create-CustomerAging.html", "/wGetStarted/L-Dev-CustomerOrders.html"]
+links: ["/wAbout/Customer-Aging.html", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "https://docs.gointerject.com/wLabs/LabSetup.html#step-1-setting-up-the-database", "https://portal.gointerject.com", "/wPortal/L-Database-Connection.html#testing-the-connection-string-from-within-excel", "https://portal.gointerject.com", "#setting-up-the-data-connection", "https://docs.gointerject.com/wPortal/Data-Portals.html", "/wPortal/Data-Portals.html", "/wPortal/The-INTERJECT-Website-Portal.html", "mailto:info@gointerject.com", "/wGetStarted/L-Create-CustomerAging.html", "/wGetStarted/L-Dev-CustomerOrders.html"]
 image_dir: "L-Dev-CustAging"
 images: [
 	{file: "ReportLibraryCustomerCollections", type: "png", site: "Portal", cat: "Home", sub: "", report: "", ribbon: "", config: ""}, 
@@ -44,7 +44,7 @@ description: On this page, you will create a simple data pull using the Customer
 On this page, you will create a simple data pull using the Customer Aging Report. To review the business use case for this report, see [Real World Walkthroughs \- Customer Aging](/wAbout/Customer-Aging.html). This example begins with steps for creating the Interject data connection and data portals, followed by the steps on how to create the stored procedure. Finally, you will be directed to another page that shows how to use the data portal to create the spreadsheet report from scratch.
 
 <blockquote class=highlight_note>
-<b>Note:</b> This example uses Microsoft's Northwind Database. You can download this database <a href="https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases">here</a> or you can use this example as a guide for your own data source.
+<b>Note:</b> This example uses Microsoft's <a href="https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases">Northwind Database</a>. To download a minimized copy of the Northwind database for use in the labs, see <a href="https://docs.gointerject.com/wLabs/LabSetup.html#step-1-setting-up-the-database">here</a>.
 </blockquote>
 <br>
 

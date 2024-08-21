@@ -4,7 +4,7 @@ filename: "L-Dev-EditingDataSave.md"
 layout: custom
 keywords: [developer, example, walkthrough, SQL, SSMS, Data Portal, data connection, data save]
 headings: ["Overview", "Setting Up the Data Connection", "Setting Up the Data Portal", "Setting Up the Report", "Setting Up the ReportSave Function", "Setting Up the Stored Procedure", "Add the RequestContext_Parse Stored Procedure", "Modifying the Stored Procedure", "Parameters", "Testing", "Context Parameters", "Error Message", "Data To Process", "Inserting the Data to Process", "Validations", "ChangeLog", "Merge", "Set Message To User", "Final Response To User", "Final Stored Procedure", "Testing the Stored Procedure", "Testing the ReportSave"]
-links: ["/wGetStarted/L-Dev-CustomerAging.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data", "/wIndex/ReportSave.html", "#setting-up-the-data-connection", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "#setting-up-the-data-portal", "#setting-up-the-report", "#setting-up-the-reportsave-function", "#setting-up-the-stored-procedure", "#testing-the-stored-procedure", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "https://portal.gointerject.com", "/wPortal/Logging-In-to-Website-Portal.html", "https://docs.gointerject.com/wDeveloper/L-Dev-EditingDataSave.html#setting-up-the-stored-procedure", "/wIndex/Request-Context-Parse.html", "/wGetStarted/L-Dev-CustomerAging.html#create-the-report", "#setting-up-the-data-portal", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#overview", "#add-the-requestcontext_parse-stored-procedure", "#testing"]
+links: ["/wGetStarted/L-Dev-CustomerAging.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data", "/wIndex/ReportSave.html", "#setting-up-the-data-connection", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "#setting-up-the-data-portal", "#setting-up-the-report", "#setting-up-the-reportsave-function", "#setting-up-the-stored-procedure", "#testing-the-stored-procedure", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "https://docs.gointerject.com/wLabs/LabSetup.html#step-1-setting-up-the-database", "https://portal.gointerject.com", "/wPortal/Logging-In-to-Website-Portal.html", "https://docs.gointerject.com/wDeveloper/L-Dev-EditingDataSave.html#setting-up-the-stored-procedure", "/wIndex/Request-Context-Parse.html", "/wGetStarted/L-Dev-CustomerAging.html#create-the-report", "#setting-up-the-data-portal", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#overview", "#add-the-requestcontext_parse-stored-procedure", "#testing"]
 image_dir: "L-Dev-EditingDataSave"
 images: [
 	{file: "NewDataPortal", type: "png", site: "Portal", cat: "Data Portals", sub: "", report: "", ribbon: "", config: ""}, 
@@ -66,7 +66,7 @@ This walkthrough involves 6 main steps:
 <br>
 
 <blockquote class=highlight_note>
-<b>Note:</b> This example uses Microsoft's Northwind Database. You can download this database <a href="https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases">here</a> or you can use this example as a guide for your own data source.
+<b>Note:</b> This example uses Microsoft's <a href="https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases">Northwind Database</a>. To download a minimized copy of the Northwind database for use in these labs, see <a href="https://docs.gointerject.com/wLabs/LabSetup.html#step-1-setting-up-the-database">here</a>.
 </blockquote>
 
 ## Setting Up the Data Connection
@@ -212,9 +212,9 @@ CREATE proc [dbo].[RequestContext_Parse]
 	,@CellRange						nvarchar(100)	 = '' output
 	,@SourceFunction				nvarchar(100)	 = '' output
 	,@UtcOffset						decimal(6,4)	 = 0 output
-	,@ColDefItemsDelimited			xml				 = '' output
-	,@ResultDefItemsDelimited		xml				 = '' output
-	,@RowDefItemsDelimited			xml				 = '' output
+	,@ColDefItemsDelimited			nvarchar(max)	 = '' output
+	,@ResultDefItemsDelimited		nvarchar(max)	 = '' output
+	,@RowDefItemsDelimited			nvarchar(max)	 = '' output
 	,@MachineLoginName				nvarchar(100)	 = '' output
 	,@MachineName					nvarchar(100)	 = '' output
 	,@Interject_UserID				nvarchar(100)	 = '' output
@@ -224,7 +224,7 @@ CREATE proc [dbo].[RequestContext_Parse]
 	,@Interject_LoginDateUTC		datetime		 = null output
 	,@Interject_UserRolesDelimited	nvarchar(max)	 = '' output
 	,@UserContextEncrypted			nvarchar(4000)	 = '' output
-	,@Interject_XMLDataToSave		xml				 = null output
+	,@Interject_XMLDataToSave		nvarchar(max)	 = null output
 
 	
 as
@@ -242,9 +242,9 @@ declare
 	,@CellRange						nvarchar(100)	 
 	,@SourceFunction				nvarchar(100)	 
 	,@UtcOffset						decimal(6,4)	 
-	,@ColDefItemsDelimited			xml	 
-	,@ResultDefItemsDelimited		xml	
-	,@RowDefItemsDelimited			xml	 
+	,@ColDefItemsDelimited			nvarchar(max)	 
+	,@ResultDefItemsDelimited		nvarchar(max)	 
+	,@RowDefItemsDelimited			nvarchar(max)	 
 	,@MachineLoginName				nvarchar(100)	 
 	,@MachineName					nvarchar(100)	 
 	,@Interject_UserID				nvarchar(100)	 
@@ -254,7 +254,7 @@ declare
 	,@Interject_LoginDateUTC		datetime		 
 	,@Interject_UserRolesDelimited	nvarchar(max)	 
 	,@UserContextEncrypted			nvarchar(4000)	 
-	,@Interject_XMLDataToSave		xml	 
+	,@Interject_XMLDataToSave		nvarchar(max)	 
 
 set @Interject_RequestContext = 
 '<?xml version="1.0" encoding="utf-16" standalone="yes"?>
@@ -378,7 +378,7 @@ Select
 	,@UserContextEncrypted			as '@UserContextEncrypted'
 	,@Interject_XMLDataToSave		as '@Interject_XMLDataToSave'
 
--- since all paramters are optional, you can also just ask for the values you need like below
+-- since all parameters are optional, you can also just ask for the values you need like below
 
 exec [dbo].[RequestContext_Parse]
 	@Interject_RequestContext		= @Interject_RequestContext
@@ -413,7 +413,6 @@ Select
 		,@Interject_LoginAuthTypeID				= T.c.value('./UserContext[1]/LoginAuthTypeId[1]',		'int') 
 		,@Interject_LoginDateUTC				= T.c.value('./UserContext[1]/LoginDateUtc[1]',			'datetime') 
 		,@UserContextEncrypted					= T.c.value('./UserContextEncrypted[1]',				'nvarchar(100)') 
-		,@Interject_XMLDataToSave				= T.c.value('./XMLDataToSave[1]',						'nvarchar(max)') 
 	from @Interject_RequestContextXML.nodes('/RequestContext') T(c)
 
 	set @Interject_XMLDataToSave = cast(@Interject_RequestContextXML.query('/RequestContext/XMLDataToSave') as nvarchar(max))

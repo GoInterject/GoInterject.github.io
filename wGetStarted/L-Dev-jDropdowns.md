@@ -4,7 +4,7 @@ filename: "L-Dev-jDropdowns.md"
 layout: custom
 keywords: [jDropdown, function, develop, build, walkthrough]
 headings: ["Overview", "Setting up the Data Connection", "Setting up the Data Portal", "Creating the Stored Procedure", "Testing the Stored Procedure"]
-links: ["/wGetStarted/L-Create-Dropdowns.html", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "https://portal.gointerject.com", "/wPortal/L-Database-Connection.html#testing-the-connection-string-from-within-excel", "https://portal.gointerject.com", "https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017", "#setting-up-the-data-connection", "/wGetStarted/L-Create-Dropdowns.html"]
+links: ["/wGetStarted/L-Create-Dropdowns.html", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "https://docs.gointerject.com/wLabs/LabSetup.html#step-1-setting-up-the-database", "https://portal.gointerject.com", "/wPortal/L-Database-Connection.html#testing-the-connection-string-from-within-excel", "https://portal.gointerject.com", "https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017", "#setting-up-the-data-connection", "/wGetStarted/L-Create-Dropdowns.html"]
 image_dir: "L-Dev-Dropdowns"
 images: [
 	{file: "01", type: "jpg", site: "Portal", cat: "Home", sub: "", report: "", ribbon: "", config: ""}, 
@@ -29,7 +29,7 @@ description: Walks through how to create the stored procedures for the jDropdown
  If you are looking to build custom jDropdown stored procedures for your reports, then this example will walk you through just that. But first, remember that a jDropdown formula often requires a separate stored procedure from the one used by a data pull or save. You will walk through how to build the Data Connection, Data Portal, and stored procedure for the [jDropdown example](/wGetStarted/L-Create-Dropdowns.html) built on the Customer Aging report. This stored procedure is designed to filter down on the specific options for a parameter. Include all the columns that can be used as filter values in the report.
 
 <blockquote class=highlight_note>
-<b>Note:</b> It is required that you have access to build stored procedures in your database to complete this example. This example uses Microsoft's Northwind Database. You can download this database <a href="https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases">here</a> or you can use this example as a guide for your own data source.
+<b>Note:</b> It is required that you have access to build stored procedures in your database to complete this example. This example uses Microsoft's <a href="https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases">Northwind Database</a>. To download a minimized copy of the Northwind database for use in the labs, see <a href="https://docs.gointerject.com/wLabs/LabSetup.html#step-1-setting-up-the-database">here</a>.
 </blockquote>
 
 ### Setting up the Data Connection
