@@ -6,7 +6,33 @@ keywords: [drill, financials, pair, pairgroup, Interject_JEQuery, segments, PL T
 headings: ["Overview", "Opening the Report", "Unfreezing the Report", "Set Up the Report", "Building the Drill", "Executing the Drill"]
 links: ["/wAbout/Financial-Report.html", "/wIndex/ReportDrill.html", "/wIndex/ReportDrill.html", "/wGetStarted/L-Drill-DrillCodes.html", "/wIndex/PairGroup.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html"]
 image_dir: "L-Drill-Financial"
-images: [{file: "PLTrendReport", type: "png", site: "Addin", cat: "Report Library", sub: "", report: "PL Trend", ribbon: "", config: ""}, {file: "01", type: "png", site: "Addin", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, {file: "UnfreezePanes", type: "png", site: "Addin", cat: "Quick Tools", sub: "", report: "PL Trend Report", ribbon: "Advanced", config: ""}, {file: "DrillsPresent", type: "png", site: "Addin", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}, {file: "ClearDrills", type: "png", site: "Addin", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}, {file: "03", type: "png", site: "Addin", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, {file: "04", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}, {file: "05", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}, {file: "06", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}, {file: "07", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}, {file: "08", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}, {file: "09", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}, {file: "10", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}, {file: "11", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}, {file: "12", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}, {file: "13", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}, {file: "14", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}, {file: "15", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}, {file: "16", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "", ribbon: "", config: ""}, {file: "17", type: "png", site: "Addin", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}, {file: "18", type: "png", site: "Addin", cat: "Pull Data", sub: "", report: "PL Trend Report", ribbon: "Simple", config: "Yes"}, {file: "19", type: "png", site: "Addin", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, {file: "20", type: "png", site: "Addin", cat: "Data Drill", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, {file: "21", type: "png", site: "Addin", cat: "Data Drill", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, {file: "22", type: "gif", site: "Addin", cat: "Data Drill", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}]
+images: [
+	{file: "PLTrendReport", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "PL Trend", ribbon: "", config: ""}, 
+	{file: "01", type: "png", site: "Add-in", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, 
+	{file: "UnfreezePanes", type: "png", site: "Add-in", cat: "Quick Tools", sub: "", report: "PL Trend Report", ribbon: "Advanced", config: ""}, 
+	{file: "DrillsPresent", type: "png", site: "Add-in", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}, 
+	{file: "ClearDrills", type: "png", site: "Add-in", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}, 
+	{file: "03", type: "png", site: "Add-in", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, 
+	{file: "04", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}, 
+	{file: "05", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}, 
+	{file: "06", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}, 
+	{file: "07", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}, 
+	{file: "08", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}, 
+	{file: "09", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}, 
+	{file: "10", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}, 
+	{file: "11", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}, 
+	{file: "12", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}, 
+	{file: "13", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}, 
+	{file: "14", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}, 
+	{file: "15", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}, 
+	{file: "16", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "17", type: "png", site: "Add-in", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}, 
+	{file: "18", type: "png", site: "Add-in", cat: "Pull Data", sub: "", report: "PL Trend Report", ribbon: "Simple", config: "Yes"}, 
+	{file: "19", type: "png", site: "Add-in", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, 
+	{file: "20", type: "png", site: "Add-in", cat: "Data Drill", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, 
+	{file: "21", type: "png", site: "Add-in", cat: "Data Drill", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, 
+	{file: "22", type: "gif", site: "Add-in", cat: "Data Drill", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}
+	]
 description: This is a drill for the PL Trend report that was created in a previous walkthrough. This time you will be drilling to a separate workbook instead of to another worksheet.
 ---
 * * *
@@ -100,7 +126,10 @@ Now let's use the Function Wizard to edit the PairGroup() function by clicking o
 
 **Step 8:** You have two more values to pass, the Location and the Account. Type **Pair(M21,"Segment2",TRUE)** into Pair2, which will pass the Location into the next report, and type **Pair(F26:F125,"Segment1",TRUE)** into Pair3, which will pass the Account or Account Group into the next report.
 
-Note: Excel is picky about Quotation marks so please ensure all your formulas have Straight Quotation marks (instead of Smart Quotation marks) in order for the formulas to work.
+<blockquote class=highlight_note>
+<b>Note:</b> Excel is picky about Quotation marks so please ensure all your formulas have Straight Quotation marks (instead of Smart Quotation marks) in order for the formulas to work.
+</blockquote>
+<br>
 
 ![](/images/L-Drill-Financial/11.png)
 <br>

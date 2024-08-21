@@ -6,7 +6,17 @@ keywords: [Report, Epicor, Accounts]
 headings: []
 links: []
 image_dir: "Localize"
-images: [{file: "01", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "02", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "03", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "SegNames", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "03", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "04", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "FileSave", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "08", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, {file: "CopyDrillCodes", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}]
+images: [
+	{file: "01", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "02", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "03", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "SegNames", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "03", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "04", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "FileSave", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "08", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "CopyDrillCodes", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
+	]
 description: Step by step guide on publishing custom-made reports to your company's report library in the Interject for Financials App for Epicor Enterprise.
 ---
 

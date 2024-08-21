@@ -7,10 +7,10 @@ headings: ["Overview"]
 links: []
 image_dir: "DiagnosticsDoubleClick"
 images: [
-	{file: "DoubleClickEvents", type: "png", site: "Addin", cat: "Diagnostics", sub: "Toggle Double Click Events", report: "", ribbon: "", config: ""},
-	{file: "EditMode", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""},
-	{file: "DoubleClickMode", type: "png", site: "Addin", cat: "Diagnostics", sub: "Toggle Double Click Events", report: "", ribbon: "", config: ""},
-	{file: "DrillForm", type: "png", site: "Addin", cat: "Data Drill", sub: "", report: "", ribbon: "", config: ""}
+	{file: "DoubleClickEvents", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Toggle Double Click Events", report: "", ribbon: "", config: ""},
+	{file: "EditMode", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""},
+	{file: "DoubleClickMode", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Toggle Double Click Events", report: "", ribbon: "", config: ""},
+	{file: "DrillForm", type: "png", site: "Add-in", cat: "Data Drill", sub: "", report: "", ribbon: "", config: ""}
 ]
 description: The Diagnostics "Toggle Double Click Events" will allow you to enable double clicking on a cell to open the drill form.
 ---

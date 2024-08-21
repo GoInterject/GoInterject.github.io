@@ -7,10 +7,10 @@ headings: ["Overview", "Opening the Folders", "Resetting Settings and Cache"]
 links: ["/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#advanced-menu-items"]
 image_dir: "SettingsCache"
 images: [
-    {file: "DiagnosticsRibbon", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
-    {file: "Diagnostics", type: "png", site: "Addin", cat: "Diagnostics", sub: "Open User Folders", report: "", ribbon: "", config: ""}, 
-    {file: "ResetFileCache", type: "png", site: "Addin", cat: "Diagnostics", sub: "Reset File Cache", report: "", ribbon: "", config: ""}, 
-    {file: "ResetSettingsCache", type: "png", site: "Addin", cat: "Diagnostics", sub: "Reset Settings Cache", report: "", ribbon: "", config: ""}
+    {file: "DiagnosticsRibbon", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
+    {file: "Diagnostics", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Open User Folders", report: "", ribbon: "", config: ""}, 
+    {file: "ResetFileCache", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Reset File Cache", report: "", ribbon: "", config: ""}, 
+    {file: "ResetSettingsCache", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Reset Settings Cache", report: "", ribbon: "", config: ""}
     ]
 description: Interject keeps multiple folders on your local drive for settings and a file cache. These folders help facilitate logging in, better performance, and functionality.
 ---

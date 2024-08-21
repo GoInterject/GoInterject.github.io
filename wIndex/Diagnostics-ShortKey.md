@@ -7,10 +7,10 @@ headings: ["Overview", "Input Examples", "Defaults", "Multiple Input Example"]
 links: ["/wIndex/INTERJECT-Hotkey-Index.html#default-hotkey-index"]
 image_dir: "DiagnosticsShortKeys"
 images: [
-    {file: "ChangeShortKey", type: "png", site: "Addin", cat: "Diagnostics", sub: "Change ShortKey", report: "", ribbon: "", config: ""}, 
-    {file: "ChangeShortKey", type: "png", site: "Addin", cat: "Diagnostics", sub: "Change ShortKey", report: "", ribbon: "", config: ""}, 
-    {file: "MultipleInputsShortKey", type: "png", site: "Addin", cat: "Diagnostics", sub: "Change ShortKey", report: "", ribbon: "", config: ""}, 
-    {file: "MultipleInputsShortKeyExecute", type: "png", site: "Addin", cat: "Diagnostics", sub: "Change ShortKey", report: "", ribbon: "", config: ""}
+    {file: "ChangeShortKey", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Change ShortKey", report: "", ribbon: "", config: ""}, 
+    {file: "ChangeShortKey", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Change ShortKey", report: "", ribbon: "", config: ""}, 
+    {file: "MultipleInputsShortKey", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Change ShortKey", report: "", ribbon: "", config: ""}, 
+    {file: "MultipleInputsShortKeyExecute", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Change ShortKey", report: "", ribbon: "", config: ""}
     ]
 description: The "Change ShortKey" feature allows users to change the shortcut key for certain Interject actions.
 ---
@@ -29,7 +29,10 @@ These settings are found in the IdsSettings.xml file. For example, an entry in t
 
 \<ReportLibrary\>Ctrl+Shift+A\</ReportLibrary\> (Report Library is assigned to the shortkey Ctrl+Shift+A)
 
-**Note:** You cannot change a shortkey that is currently in use. You must first reassign the action that is set to that shortkey. Also, shortkey changes here will override Excel's shortkey assignments.
+<blockquote class=highlight_note>
+<b>Note:</b> You cannot change a shortkey that is currently in use. You must first reassign the action that is set to that shortkey. Also, shortkey changes here will override Excel's shortkey assignments.
+</blockquote>
+<br>
 
 ### Input Examples
 

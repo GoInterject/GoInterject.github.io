@@ -6,7 +6,9 @@ keywords: [lab, guide, get started, walkthrough]
 headings: ["Overview", "Subscription Setup", "Before You Begin", "Lab 1 : Real World Walkthroughs", "1.1 Customer Aging", "1.2 Inventory Reports", "1.3 Financial Report", "Lab 2 : Modifying Reports", "2.1 Basics of Report Formulas", "2.2 Lab Modify: Customer Aging", "2.3 Lab Modify: Inventory Report", "2.4 Lab Modify: Financial Report", "Lab 3 : Creating Reports", "3.1 Lab Create: Customer Aging", "3.2 Lab Create: Customer Orders", "3.3 Lab Create: Inventory Fixed", "3.4 Lab Create: Inventory Variable Report", "3.5 Lab Create: Financial Variable", "3.6 Lab Create: Customer Aging Detail", "Lab 4 : Drilling To Data", "4.1 Lab Drill: Customer Aging", "4.2 Lab Drill: Inventory Report", "4.3 Lab Drill: Financial Report", "4.4 Lab Drill: Drilling to a Separate Workbook", "Lab 5 : Advanced Features", "5.1 Lab Create: Hiding Rows & Columns", "5.2 Lab Create: Advanced Row and Section Hiding", "5.3 Lab Create: Building jDropdowns", "5.4 Lab Create: Special Column Definitions", "5.5 Lab Create: Using the Retain Feature", "Lab 6 : Special Features", "6.1 Lab Create: Working with Pivot Tables", "6.2 Lab Create: Protecting Sheets", "6.3 Lab Create: Using Report Macro", "6.4 Lab Create: Interject Run On Open", "Lab 7 : Exporting Data", "7.1 Lab Export: Quick Export and PDF", "7.2 Lab Export: Basic Distribution", "7.3 Lab Export: Advanced Distribution"]
 links: ["mailto:info@gointerject.com", "/wLabs/LabSetup.html", "/wAbout/SingleUser.html", "/wAbout/Logging-In.html", "/wAbout/Report-Library-Basics.html", "/wAbout/Real-World-Walkthroughs.html", "/wAbout/Customer-Aging.html", "/wAbout/Inventory-Reports.html", "/wAbout/Financial-Report.html", "/wGetStarted/Modifying-an-Existing-Report.html", "/wAbout/Basics-of-Report-Formulas.html", "/wGetStarted/L-Modify-CustomerAging.html", "/wGetStarted/L-Modify-InventoryReport.html", "/wGetStarted/L-Modify-FinancialReport.html", "/wGetStarted/Creating-a-Simple-Report.html", "/wGetStarted/L-Create-CustomerAging.html", "/wGetStarted/L-Create-CustomerOrders.html", "/wGetStarted/L-Create-InventoryFixed.html", "/wGetStarted/L-Create-InventoryVariable.html", "/wGetStarted/L-Create-FinancialVariable.html", "/wGetStarted/L-Create-CustomerAgingDetail.html", "/wGetStarted/Drilling-Between-Reports.html", "/wGetStarted/L-Drill-CustomerAging.html", "/wGetStarted/L-Drill-InventoryReport.html", "/wGetStarted/L-Drill-InventoryReport.html", "/wGetStarted/L-Drill-DrillCodes.html", "/wGetStarted/L-Create-HideRowCol.html", "/wGetStarted/L-Create-AdvancedHideRowsSections.html", "/wGetStarted/L-Create-Dropdowns.html", "/wGetStarted/L-Create-SpecColDefs.html", "/wGetStarted/L-Create-RetainFeature.html", "/wGetStarted/L-Create-PivotTable.html", "/wGetStarted/L-Create-Protecting.html", "/wGetStarted/L-Create-ReportMacro.html", "/wGetStarted/L-Create-RunOnOpen.html", "/wGetStarted/L-Export-QuickExportAndPDF.html", "/wGetStarted/L-Export-BasicDist.html", "/wGetStarted/L-Export-AdvancedDist.html"]
 image_dir: "LabSetup"
-images: [{file: "ReportLibraryLabFiles", type: "png", site: "Addin", cat: "Report Library", sub: "", report: "", ribbon: "", config: ""}]
+images: [
+	{file: "ReportLibraryLabFiles", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "", ribbon: "", config: ""}
+	]
 description: These labs are offered as an introductory course on the Interject® Add-In for Microsoft Excel®. By following this guide, you will be learn how to use the Interject Add-in to create and modify reports in Excel.
 ---
 * * *
@@ -23,9 +25,9 @@ In order to have the necessary requirements to go through the Lab Guide, a user 
 ![](/images/LabSetup/ReportLibraryLabFiles.png)
 <br>
 
-In addition, the Training Demo App grants a user access to all the Data Portals referenced in the labs. All the Data Portals in the Lab Guide use an API Data Connection. Therefore, no local database is necessary.
+In addition, the Training Demo App grants a user access to all the Data Portals referenced in the labs. With the exception of the developer labs [8](#lab-8--developing-data-pull) and [9](#lab-9--developing-data-save), all the Data Portals in the Lab Guide use an API Data Connection. Therefore, no local database is necessary for labs 1-7.
 
-To setup the lab environment manually, see [here](/wLabs/LabSetup.html).
+To setup the lab environment manually, see [Manual Setup for the Lab Guide](/wLabs/LabSetup.html).
 
 ### Before You Begin
 
@@ -182,7 +184,7 @@ Interject contains a feature called Drill on Data. This feature allows the user 
 • Creating Hyperlinks to Drill on Data
 <br>
 
-#### [4.3 Lab Drill: Financial Report](/wGetStarted/L-Drill-InventoryReport.html)
+#### [4.3 Lab Drill: Financial Report](/wGetStarted/L-Drill-FinancialReport.html)
 
 **_Concepts_** :
 • Building a Drill on Data
@@ -291,8 +293,80 @@ This lab will focus on how to export a report once it is completed and utilizing
 **_Concepts_** :
 • Adding Prefixes and Suffixes to the Distributed Report
 • Adding Keywords for Generated Report Tabs
-• Distributing to Mulitple Sheets
+• Distributing to Multiple Sheets
 • Distributing to Multiple Workbooks
 • Distributing Without Pulling Data
 • Grouping Segments
+<br>
+
+### Lab 8 : Developing Data Pull
+
+In this lab you will work on developing your own custom data pulls from the ground up.
+
+#### [8.1 Lab Develop: Customer Aging](/wGetStarted/L-Dev-CustomerAging.html)
+
+**_Concepts_** :
+• Setting up a data connection
+• Setting up a data portal
+• Setting up the formula and system parameters
+• Creating a stored procedure for a data pull
+<br>
+
+#### [8.2 Lab Develop: Customer Orders](/wGetStarted/L-Dev-CustomerOrders.html)
+
+**_Concepts_** :
+• Cloning a data portal
+• Creating a stored procedure for a data pull
+<br>
+
+#### [8.3 Lab Develop: Customer jDropdowns](/wGetStarted/L-Dev-jDropdowns.html)
+
+**_Concepts_** :
+• Setting up a data connection
+• Setting up a data portal
+• Creating a stored procedure for a jDropdown
+• Testing the stored procedure
+<br>
+
+#### [8.4 Lab Develop: Customer Aging Detail](/wGetStarted/L-Dev-CustomerAgingDetail.html)
+
+**_Concepts_** :
+• Cloning a data portal
+• Creating a stored procedure for a data pull with multiple data sets
+• Updating a report to handle 2 data sets
+<br>
+
+### Lab 9 : Developing Data Save
+
+In this lab you will learn how to develop a data save in three incremental examples.
+
+#### [9.1 Lab Develop: Editing Data Save](/wDeveloper/L-Dev-EditingDataSave.html)
+
+**_Concepts_** :
+• Setting up a data connection
+• Setting up a data portal
+• Setting up a report for a data save to edit columns
+• Adding the RequestContext_Parse stored procedure
+• Creating a stored procedure for a data save to edit columns
+• Testing the stored procedure
+• Testing the ReportSave function
+<br>
+
+#### [9.2 Lab Develop: Insert & Delete Data Save](/wDeveloper/L-Dev-InsertDeleteDataSave.html)
+
+**_Concepts_** :
+• Setting up a data portal
+• Setting up a report for a data save to insert and delete records
+• Modifying a stored procedure for a data save to insert and delete records
+• Testing the stored procedure
+• Testing the ReportSave function
+<br>
+
+#### [9.3 Lab Develop: Changelog Data Save](/wDeveloper/L-Dev-ChangelogDataSave.html)
+
+**_Concepts_** :
+• Setting up a data portal
+• Modifying a stored procedure for a data save to add a change log
+• Testing the stored procedure
+• Testing the ReportSave function
 <br>

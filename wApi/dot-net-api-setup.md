@@ -4,9 +4,31 @@ title:  .NET API Setup
 filename: "dot-net-api-setup.md"
 keywords: [data api, web api, c#, setup, .NET framework, IIS, server]
 headings: ["Overview", "Requirements", "Get The Code", "The Repo", "Getting IIS", "Windows", "Windows Server Manager", "Publishing", "Deployment", "Set Up Website in IIS", "Windows Host File", "App Pool", "Setting Security Permissions", "Firewall", "Testing", "Connection Strings", "Connecting to Interject", "Interject Docs"]
-links: ["https://learn.microsoft.com/en-us/dotnet/framework/", "https://www.iis.net/", "https://dotnet.microsoft.com/en-us/download/dotnet", "https://dotnet.microsoft.com/download", "https://www.mono-project.com/", "mailto:help@gointerject.com", "https://github.com/GoInterject/ids-dotnet-api/archive/refs/heads/main.zip", "https://learn.microsoft.com/en-us/iis/get-started/introduction-to-iis/iis-web-server-overview", "https://learn.microsoft.com/en-us/windows-server/administration/server-core/server-core-roles-and-services", "https://learn.microsoft.com/en-us/iis/application-frameworks/scenario-build-an-aspnet-website-on-iis/configuring-step-1-install-iis-and-asp-net-modules", "https://learn.microsoft.com/en-us/dotnet/core/tutorials/publishing-with-visual-studio", "https://learn.microsoft.com/en-us/dotnet/core/tutorials/publishing-with-visual-studio-code", "https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-publish", "https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/iis/", "https://learn.microsoft.com/en-us/iis/manage/configuring-security/how-to-set-up-ssl-on-iis", "https://learn.microsoft.com/en-us/iis/get-started/getting-started-with-iis/create-a-web-site", "https://portal.gointerject.com/", "/wPortal/L-Api-Connections.html", "/wPortal/Data-Portals.html", "/wIndex/jColumnDef.html", "/wPortal/Data-Portals.html#overview-of-parameters", "/wIndex/ReportFixed.html", "/wIndex/ReportRange.html", "/wIndex/ReportSave.html", "/wIndex/ReportVariable.html", "/wGetStarted/L-Dev-Error-Handling.html"]
+links: ["https://learn.microsoft.com/en-us/dotnet/framework/", "https://www.iis.net/", "https://dotnet.microsoft.com/en-us/download/dotnet", "https://dotnet.microsoft.com/download", "https://www.mono-project.com/", "mailto:help@gointerject.com", "https://github.com/GoInterject/ids-dotnet-api/archive/refs/heads/main.zip", "https://learn.microsoft.com/en-us/iis/get-started/introduction-to-iis/iis-web-server-overview", "https://learn.microsoft.com/en-us/windows-server/administration/server-core/server-core-roles-and-services", "https://learn.microsoft.com/en-us/iis/application-frameworks/scenario-build-an-aspnet-website-on-iis/configuring-step-1-install-iis-and-asp-net-modules", "https://learn.microsoft.com/en-us/dotnet/core/tutorials/publishing-with-visual-studio", "https://learn.microsoft.com/en-us/dotnet/core/tutorials/publishing-with-visual-studio-code", "https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-publish", "https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/iis/", "#deployment", "https://learn.microsoft.com/en-us/iis/manage/configuring-security/how-to-set-up-ssl-on-iis", "https://learn.microsoft.com/en-us/iis/get-started/getting-started-with-iis/create-a-web-site", "#setup-website-in-iis", "https://portal.gointerject.com/", "/wPortal/L-Api-Connections.html", "/wPortal/Data-Portals.html", "/wIndex/jColumnDef.html", "/wPortal/Data-Portals.html#overview-of-parameters", "/wIndex/ReportFixed.html", "/wIndex/ReportRange.html", "/wIndex/ReportSave.html", "/wIndex/ReportVariable.html", "/wGetStarted/L-Dev-Error-Handling.html"]
 image_dir: "dot-net-api"
-images: [{file: "DotNetDownloadZip", type: "png", site: "Github", cat: "ids-dotnet-api", sub: "", report: "", ribbon: "", config: ""}, {file: "TurnWindowsFeaturesOn", type: "png", site: "Windows", cat: "Control Panel", sub: "", report: "", ribbon: "", config: ""}, {file: "IISFeaturesOnOrOff", type: "png", site: "Addin", cat: "Turn Windows features on or off", sub: "", report: "", ribbon: "", config: ""}, {file: "AddRolesAndFeatures", type: "png", site: "External", cat: "Server Manager", sub: "Dashboard", report: "", ribbon: "", config: ""}, {file: "ServerRoles", type: "png", site: "External", cat: "Server Manager", sub: "Server Roles", report: "", ribbon: "", config: ""}, {file: "StartIIS", type: "png", site: "Windows", cat: "Start Menu", sub: "", report: "", ribbon: "", config: ""}, {file: "ServerManagerIIS", type: "png", site: "External", cat: "Server Manager", sub: "Tools", report: "", ribbon: "", config: ""}, {file: "AddWebsite", type: "png", site: "Windows", cat: "IIS", sub: "", report: "", ribbon: "", config: ""}, {file: "IISSettingsExample", type: "png", site: "Windows", cat: "IIS", sub: "Add Website", report: "", ribbon: "", config: ""}, {file: "HostFile", type: "png", site: "External", cat: "Notepad", sub: "host", report: "", ribbon: "", config: ""}, {file: "AppPool", type: "png", site: "Windows", cat: "IIS", sub: "Application Pools", report: "", ribbon: "", config: ""}, {file: "EditPermissions", type: "png", site: "Windows", cat: "IIS", sub: "Right Click Menu", report: "", ribbon: "", config: ""}, {file: "EditSecurity", type: "png", site: "Windows", cat: "File Properties", sub: "Security", report: "", ribbon: "", config: ""}, {file: "AddPermission", type: "png", site: "Windows", cat: "File Properties", sub: "Security", report: "", ribbon: "", config: ""}, {file: "Locations", type: "png", site: "Windows", cat: "File Properties", sub: "Locations", report: "", ribbon: "", config: ""}, {file: "SelectSystemName", type: "png", site: "Windows", cat: "File Properties", sub: "System Name", report: "", ribbon: "", config: ""}, {file: "CheckNames", type: "png", site: "Windows", cat: "File Properties", sub: "Locations", report: "", ribbon: "", config: ""}, {file: "AppPoolNameUnderlined", type: "png", site: "Windows", cat: "File Properties", sub: "Locations", report: "", ribbon: "", config: ""}, {file: "Modify", type: "png", site: "Windows", cat: "File Properties", sub: "Security", report: "", ribbon: "", config: ""}, {file: "IISServerRunning", type: "png", site: "Windows", cat: "IIS", sub: "Right Bar Menu", report: "", ribbon: "", config: ""}, {file: "ApiRunning", type: "png", site: "External", cat: "Browser", sub: "", report: "", ribbon: "", config: ""}]
+images: [
+	{file: "DotNetDownloadZip", type: "png", site: "Github", cat: "ids-dotnet-api", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "TurnWindowsFeaturesOn", type: "png", site: "Windows", cat: "Control Panel", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "IISFeaturesOnOrOff", type: "png", site: "Add-in", cat: "Turn Windows features on or off", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "AddRolesAndFeatures", type: "png", site: "External", cat: "Server Manager", sub: "Dashboard", report: "", ribbon: "", config: ""}, 
+	{file: "ServerRoles", type: "png", site: "External", cat: "Server Manager", sub: "Server Roles", report: "", ribbon: "", config: ""}, 
+	{file: "StartIIS", type: "png", site: "Windows", cat: "Start Menu", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ServerManagerIIS", type: "png", site: "External", cat: "Server Manager", sub: "Tools", report: "", ribbon: "", config: ""}, 
+	{file: "AddWebsite", type: "png", site: "Windows", cat: "IIS", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "IISSettingsExample", type: "png", site: "Windows", cat: "IIS", sub: "Add Website", report: "", ribbon: "", config: ""}, 
+	{file: "HostFile", type: "png", site: "External", cat: "Notepad", sub: "host", report: "", ribbon: "", config: ""}, 
+	{file: "AppPool", type: "png", site: "Windows", cat: "IIS", sub: "Application Pools", report: "", ribbon: "", config: ""}, 
+	{file: "EditPermissions", type: "png", site: "Windows", cat: "IIS", sub: "Right Click Menu", report: "", ribbon: "", config: ""}, 
+	{file: "EditSecurity", type: "png", site: "Windows", cat: "File Properties", sub: "Security", report: "", ribbon: "", config: ""}, 
+	{file: "AddPermission", type: "png", site: "Windows", cat: "File Properties", sub: "Security", report: "", ribbon: "", config: ""}, 
+	{file: "Locations", type: "png", site: "Windows", cat: "File Properties", sub: "Locations", report: "", ribbon: "", config: ""}, 
+	{file: "SelectSystemName", type: "png", site: "Windows", cat: "File Properties", sub: "System Name", report: "", ribbon: "", config: ""}, 
+	{file: "CheckNames", type: "png", site: "Windows", cat: "File Properties", sub: "Locations", report: "", ribbon: "", config: ""}, 
+	{file: "AppPoolNameUnderlined", type: "png", site: "Windows", cat: "File Properties", sub: "Locations", report: "", ribbon: "", config: ""}, 
+	{file: "Modify", type: "png", site: "Windows", cat: "File Properties", sub: "Security", report: "", ribbon: "", config: ""}, 
+	{file: "IISServerRunning", type: "png", site: "Windows", cat: "IIS", sub: "Right Bar Menu", report: "", ribbon: "", config: ""}, 
+	{file: "ApiRunning", type: "png", site: "External", cat: "Browser", sub: "", report: "", ribbon: "", config: ""}
+	]
 description: Shows how to setup an INTERJECT .Net data api.
 ---
 
@@ -32,7 +54,11 @@ With Git, you can clone the repository directly to your system. Navigate to the 
 git clone https://github.com/GoInterject/ids-dotnet-api.git
 ```
 
-**Note:** If this repo is private and you need access, please [contact us](mailto:help@gointerject.com). It will be public soon.
+<br>
+<blockquote class=highlight_note>
+<b>Note:</b> If this repo is private and you need access, please <a href="mailto:help@gointerject.com">contact us</a>. It will be public soon.
+</blockquote>
+<br>
 
 Alternatively you can download the [zip file](https://github.com/GoInterject/ids-dotnet-api/archive/refs/heads/main.zip){:target="_blank"}{:rel="noopener noreferrer"} and unpack manually:
 
@@ -41,7 +67,7 @@ Alternatively you can download the [zip file](https://github.com/GoInterject/ids
 
 ### The Repo
 
-The repo contains two code bases: the `interject.api` code and the `interject.data.api` code. The Interject.Api contains the code relating to the handling of Interject requests, formatting data, and returning responses to the Interject Addin. This package is available on Nuget, the central package repository. The code base is included in the repo for preview.
+The repo contains two code bases: the `interject.api` code and the `interject.data.api` code. The Interject.Api contains the code relating to the handling of Interject requests, formatting data, and returning responses to the Interject Add-in. This package is available on Nuget, the central package repository. The code base is included in the repo for preview.
 
 The Interject.Data.Api contains the code relating to controllers and endpoints. The Interject.Api package is imported from Nuget into the Interject.Data.Api with the using statement:
 
@@ -229,11 +255,11 @@ To confirm the API is working, navigate to the host name or port you set up [pre
 
 The most common use of a Data API is for Intranet use. In this scenario a connection string can be shared by all users, while also protected within the Data API.
 
-Interject supports DataPortal connections for both direct DB access and API access. When using an API, you can code the API to perform certain DB actions by using "PassThrough" settings. These are configured in the DataPortal and DataPortal Connection. For these to work, they need to be able to find a connection string in the API.
+Interject supports Data Portal connections for both direct DB access and API access. When using an API, you can code the API to perform certain DB actions by using "PassThrough" settings. These are configured in the Data Portal and Data Portal Connection. For these to work, they need to be able to find a connection string in the API.
 
 If this API offers public access, then connection strings should not be shared in the `web.config` file. Instead a custom validation lookup process should be implemented, which also requires some custom coding. This Data API uses a `appsettings.json` file for this purpose.
 
-* Determine a meaningful name for the connection string (preferably without spaces) This name will be used by an Interject DataPortal Connection, and it will reference the connection string within the `appsettings.json`. Names must be unique.
+* Determine a meaningful name for the connection string (preferably without spaces) This name will be used by an Interject Data Portal Connection, and it will reference the connection string within the `appsettings.json`. Names must be unique.
 * Open the `appsettings.json` file (in the `interject-dotnet-api` directory) in any text editor or code IDE.
 * Add a new entry in the list of ConnectionStrings collection.
 
@@ -252,7 +278,7 @@ Example of a connection string entry:
 
 ### Connecting to Interject
 
-With the API running and connection strings stored in the `appsettings.json` file, you can connect the Interject Addin by setting up a Data Connection and Data Portal on the [Portal Site](https://portal.gointerject.com/).
+With the API running and connection strings stored in the `appsettings.json` file, you can connect the Interject Add-in by setting up a Data Connection and Data Portal on the [Portal Site](https://portal.gointerject.com/).
 
 For how to set up an API Data Connection, see [Portal: API Connection](/wPortal/L-Api-Connections.html). For Data Portals, see [Data Portals](/wPortal/Data-Portals.html).
 

@@ -15,7 +15,7 @@ description: The ReportDrill function provides a convenient way to run another t
 
 The ReportDrill function provides a convenient way to run another targeted function while at the same time, transferring contextual data for filtering to that function. It is widely used as a way to connect and pass information between workbooks and worksheets. Drilling takes a defined input and passes it in as a parameter to another workbook or worksheet, similar to hyperlinks on a web page. Depending on the types of input behind the hyperlink, more detailed and specific information can be viewed. The ReportDrill function can be structured in ways that make drilling data very powerful.
 
-In order to set up a drill that targets a function in another workbook, it is necessary to set up a drill code in the [Report Library](/wGetStarted/L-Create-UpdatingReportLibrary#adding-a-drill-code-to-a-report).
+In order to set up a drill that targets a function in another workbook, it is necessary to set up a drill code in the [Report Library](/wGetStarted/L-Drill-DrillCodes.html).
 
 For an example of this function, see [Lab Drill: Customer Aging](/wGetStarted/L-Drill-CustomerAging.html).
 
@@ -41,7 +41,7 @@ For an example of this function, see [Lab Drill: Customer Aging](/wGetStarted/L-
 </table>
 </div>
 
-<button class="collapsible-parameter">**ReportCodeToRun**<br>The name of the drill code that has been set up in the [Report Library](/wGetStarted/L-Create-UpdatingReportLibrary#adding-a-drill-code-to-a-report) that allows you to drill between workbooks.</button>
+<button class="collapsible-parameter">**ReportCodeToRun**<br>The name of the drill code that has been set up in the [Report Library](/wGetStarted/L-Drill-DrillCodes.html) that allows you to drill between workbooks.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>

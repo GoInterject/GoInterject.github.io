@@ -4,9 +4,18 @@ filename: "CustomItems.md"
 layout: custom
 keywords: [custom commands, execute, sql]
 headings: ["Overview", "Setup Data Portal", "System Parameters", "Formula Parameters", "Description and Status", "Running the Custom Item", "Example Stored Procedure"]
-links: ["/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#custom-commands", "https://docs.gointerject.com/wPortal/INTERJECT-Roles.html#clientadmin-role", "https://docs.gointerject.com/wPortal/INTERJECT-Roles.html#customitems-role", "/wPortal/Data-Portals.html", "https://docs.gointerject.com/wPortal/Data-Portals.html#system-parameters-options", "/wPortal/Data-Portals.html#overview-of-parameters"]
+links: ["/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#custom-commands", "https://docs.gointerject.com/wPortal/INTERJECT-Roles.html#clientadmin-role", "https://docs.gointerject.com/wPortal/INTERJECT-Roles.html#customitems-role", "/wPortal/Data-Portals.html", "#description-and-status", "#running-the-custom-item", "https://docs.gointerject.com/wPortal/Data-Portals.html#system-parameters-options", "/wPortal/Data-Portals.html#overview-of-parameters"]
 image_dir: "CustomItems"
-images: [{file: "CustomItems", type: "png", site: "Addin", cat: "Custom Commands", sub: "Custom Items", report: "", ribbon: "", config: ""}, {file: "IsCustomCommand", type: "png", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "SystemParameters", type: "png", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "FormulaParameterMore", type: "png", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "FormulaParameterDefault", type: "png", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "Prompt", type: "png", site: "Addin", cat: "Popup", sub: "", report: "", ribbon: "", config: ""}, {file: "GettingDescriptionStatus", type: "png", site: "Addin", cat: "Custom Commands", sub: "Custom Items", report: "", ribbon: "", config: ""}, {file: "CustomItemsInformation", type: "png", site: "Addin", cat: "Custom Commands", sub: "Custom Items", report: "", ribbon: "", config: ""}]
+images: [
+	{file: "CustomItems", type: "png", site: "Add-in", cat: "Custom Commands", sub: "Custom Items", report: "", ribbon: "", config: ""}, 
+	{file: "IsCustomCommand", type: "png", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "SystemParameters", type: "png", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "FormulaParameterMore", type: "png", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "FormulaParameterDefault", type: "png", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "Prompt", type: "png", site: "Add-in", cat: "Popup", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "GettingDescriptionStatus", type: "png", site: "Add-in", cat: "Custom Commands", sub: "Custom Items", report: "", ribbon: "", config: ""}, 
+	{file: "CustomItemsInformation", type: "png", site: "Add-in", cat: "Custom Commands", sub: "Custom Items", report: "", ribbon: "", config: ""}
+	]
 description: The Custom Item feature of Interject allows a user to interact with a database stored procedure or web service to trigger an event.  It could be used to trigger a special data update process, toggle a switch such as temporarily turning off a report tool for standard users, or running a data maintenance routine.
 ---
 * * *
@@ -98,7 +107,7 @@ For your convenience, the procedure is posted here:
 ALTER PROC [demo].[CustomItems_Example]
 
 	-- Example optional parameter. There are two ways to set an initial value 
-	--     1) set the default value below and not setup the parameter in the dataportals.  
+	--     1) set the default value below and not setup the parameter in the data portals.  
 	--     2) set a default value in the data portal setup.
 	-- 
 	-- If in #2 the default value starts with a question mark like "?Enter Year Month (YYYY-MM)", this will cause Interject
@@ -111,7 +120,7 @@ ALTER PROC [demo].[CustomItems_Example]
 	,@Interject_CommandResult VARCHAR(200) OUTPUT -- This provides the result of the execute.  it is limited to 200 characters.
 
 	-- System Parameters Optional
-	,@Interject_CommandDescription VARCHAR(200) OUTPUT -- Shows friendly description to user. Shows DataPortal name if parameter not used.
+	,@Interject_CommandDescription VARCHAR(200) OUTPUT -- Shows friendly description to user. Shows Data Portal name if parameter not used.
 	,@Interject_CommandStatus VARCHAR(200) OUTPUT -- Will return a status such as details from the last time it was run.
 
 	-- The below are examples of Interject reserved parameters 

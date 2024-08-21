@@ -40,7 +40,10 @@ Here are the various conditional checks available in the system:
 
 All the conditional checks are against the user claims. Claims are key value pairs. We get these claims from external providers.
 
-**Note:** Claim keys are not case sensitive.
+<blockquote class=highlight_note>
+<b>Note:</b> Claim keys are not case sensitive.
+</blockquote>
+<br>
 
 Here are a few examples of user claims:
 

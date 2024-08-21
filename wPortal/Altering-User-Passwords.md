@@ -6,7 +6,14 @@ keywords: [user passwords, reset, altering, changing, credentials]
 headings: ["Overview", "Changing Passwords While Logged In", "Reset Password Without Logging In"]
 links: []
 image_dir: "Passwords"
-images: [{file: "01_fix", type: "jpg", site: "Portal", cat: "Home", sub: "", report: "", ribbon: "", config: ""}, {file: "02_fix", type: "jpg", site: "Portal", cat: "User Profile", sub: "", report: "", ribbon: "", config: ""}, {file: "03", type: "jpg", site: "Portal", cat: "User Profile", sub: "", report: "", ribbon: "", config: ""}, {file: "01", type: "jpg", site: "Portal", cat: "Login", sub: "", report: "", ribbon: "", config: ""}, {file: "02", type: "jpg", site: "Portal", cat: "Login", sub: "Password Reset Request", report: "", ribbon: "", config: ""}, {file: "04", type: "jpg", site: "Portal", cat: "Login", sub: "Password Reset Request", report: "", ribbon: "", config: ""}]
+images: [
+	{file: "01_fix", type: "jpg", site: "Portal", cat: "Home", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "02_fix", type: "jpg", site: "Portal", cat: "User Profile", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "03", type: "jpg", site: "Portal", cat: "User Profile", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "01", type: "jpg", site: "Portal", cat: "Login", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "02", type: "jpg", site: "Portal", cat: "Login", sub: "Password Reset Request", report: "", ribbon: "", config: ""}, 
+	{file: "04", type: "jpg", site: "Portal", cat: "Login", sub: "Password Reset Request", report: "", ribbon: "", config: ""}
+	]
 description: This is a section that displays how to reset an Interject user’s password under the conditions that they are not logged in or they are logged in.
 ---
 * * *
@@ -51,4 +58,7 @@ This is a section that displays how to reset an Interject user’s password unde
 ![](/images/Passwords/04.jpg)
 <br>
 
-**Note:** The page will redirect back to the Interject Website Portal upon a successful password reset.
+<blockquote class=highlight_note>
+<b>Note:</b> The page will redirect back to the Interject Website Portal upon a successful password reset.
+</blockquote>
+<br>

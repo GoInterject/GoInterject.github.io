@@ -4,7 +4,7 @@ filename: "FolderPermissions.md"
 layout: custom
 keywords: []
 headings: ["Overview", ""]
-links: ["/wPortal/INTERJECT-Roles.html"]
+links: ["/wPortal/Roles.md#custom-roles"]
 image_dir: "FolderPermissions"
 images: [
     {file: "FolderPermissionsPage", type: "png", site: "Portal", cat: "Folder permissions", sub: "", report: "", ribbon: "", config: ""},

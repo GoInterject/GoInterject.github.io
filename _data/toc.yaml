@@ -18,7 +18,7 @@ horizontalnav:
   path: /wTroubleshoot/Troubleshooting-Landing.html
   node: troubleshoot
 - title: Release Notes
-  path: /wReleaseNotes/2024-07_ReleaseNotes.html
+  path: /wReleaseNotes/2024-08_ReleaseNotes.html
   node: releaseNotes
 
 about:
@@ -250,7 +250,7 @@ index:
           path: /wIndex/jDesc.html
     - title: Reviewing Report Functions
       path: /wIndex/Report-Formula-Reviews.html
-  - sectiontitle: Common Dataportal Index
+  - sectiontitle: Common Data Portal Index
     path: /wIndex/Common-Dataportal-Index.html
     section:
     - title: FinCube - The Financial Cube
@@ -441,12 +441,12 @@ troubleshoot:
       path: /wTroubleshoot/Verbose-Logging.html
     - title: Memory Logging
       path: /wTroubleshoot/RAM-Monitoring.html
-- sectiontitle: Addin Errors
+- sectiontitle: Add-in Errors
   path: /wTroubleshoot/App-Errors.html
   section:
     - title: Excel Drill Animations
       path: /wTroubleshoot/Drill-Animations.html
-    - title: Addins Missing
+    - title: Add-ins Missing
       path: /wTroubleshoot/Addin-Missing.html
     - title: Web Proxy Configuration
       path: /wTroubleshoot/WebProxy.html
@@ -474,7 +474,7 @@ troubleshoot:
 
 releaseNotes:
 - sectiontitle: Versions
-  path: /wReleaseNotes/2024-06_ReleaseNotes.html
+  path: /wReleaseNotes/2024-08_ReleaseNotes.html
   section:
     - title: 2.5.0.22
       path: /wReleaseNotes/2023-10_ReleaseNotes.html
@@ -484,6 +484,8 @@ releaseNotes:
       path: /wReleaseNotes/2024-03_ReleaseNotes.html
     - title: 2.5.1.1
       path: /wReleaseNotes/2024-06_ReleaseNotes.html
+    - title: 2.5.2.11
+      path: /wReleaseNotes/2024-08_ReleaseNotes.html
 - sectiontitle: 2023
   path: /wReleaseNotes/2023-12_ReleaseNotes.html
   section:
@@ -494,7 +496,7 @@ releaseNotes:
     - title: December
       path: /wReleaseNotes/2023-12_ReleaseNotes.html
 - sectiontitle: 2024
-  path: /wReleaseNotes/2024-07_ReleaseNotes.html
+  path: /wReleaseNotes/2024-08_ReleaseNotes.html
   section:
     - title: January
       path: /wReleaseNotes/2024-01_ReleaseNotes.html
@@ -504,3 +506,5 @@ releaseNotes:
       path: /wReleaseNotes/2024-06_ReleaseNotes.html
     - title: July
       path: /wReleaseNotes/2024-07_ReleaseNotes.html
+    - title: August
+      path: /wReleaseNotes/2024-08_ReleaseNotes.html

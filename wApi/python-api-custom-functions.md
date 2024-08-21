@@ -4,7 +4,7 @@ title:  "Custom Functions With The Python Interject API"
 filename: "python-api-custom-functions.md"
 date:   2018-10-12 9:03:02 -0700
 categories: API Developer
-keywords: [api, python, dataportal]
+keywords: [api, python, data portal]
 headings: ["Setup", "Output Options"]
 links: []
 image_dir: ""
@@ -28,7 +28,7 @@ setup requires the following conditions be met:
     - api connection string name = Not Needed
     - authentication type = 10 
 
-- Interject Dataportal 
+- Interject Data Portal 
     - connection = name of connection
     - command type = stored procedure name
     - Stored Procedure / Command = function name to run in CUSTOM_MODULE
@@ -40,7 +40,7 @@ setup requires the following conditions be met:
 
     def interject_custom_func(**kwargs):
         """ Custom defined function which operates on pulled data from excel
-            or a dataportal source before sending the data to its final destination
+            or a data portal source before sending the data to its final destination
             
             Arguments:
                 kwargs {dict} -- dictionary with options and input dataframe
@@ -77,9 +77,9 @@ Interject request information is passed to a custom function through the kwargs 
 |-----|-----|-----|
 | kwargs['dataframe'] | pandas.DataFrame() | Pandas dataframe | 
 | kwargs['user_message'] | string | Interject User message (notices should contain "usernotice:", and errors should contain "usererror:") |
-| kwargs['param_list'][ParamName]['name'] | string | The name of the formula parameter in the dataportal |
+| kwargs['param_list'][ParamName]['name'] | string | The name of the formula parameter in the data portal |
 | kwargs['param_list'][ParamName]['expects_output'] | bool | Defines if the output_value should replace the value in the report |
 | kwargs['param_list'][ParamName]['in_formula'] | bool | determines whether the parameter is in the report formula or not (system params will be false) |
 | kwargs['param_list'][ParamName]['input_value'] | any | Input parameter value from the user |
-| kwargs['param_list'][ParamName]['output_value'] | any | Output parameter defined by the dataportal |
+| kwargs['param_list'][ParamName]['output_value'] | any | Output parameter defined by the data portal |
 | kwargs['param_list'][ParamName]['user_validation_msg'] | string | Not Currently Available |

@@ -7,19 +7,19 @@ headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example"
 links: ["/wGetStarted/L-Create-Dropdowns.html", "https://docs.gointerject.com/wGetStarted/L-Create-Dropdowns.html#creating-a-custom-jdropdown-list", "https://docs.gointerject.com/wIndex/jDataPortal.html", "https://docs.gointerject.com/wIndex/Param.html", "/wTroubleshoot/Reports.html#validation-report-for-pullsave-events", "/wIndex/jDataPortal.html", "/wIndex/jDataPortal.html", "Param.html"]
 image_dir: ""
 images: []
-description: The jDropdown function returns data from a DataPortal that can be displayed in a dropdown window for the user to select and insert into a designated cell within the spreadsheet.
+description: The jDropdown function returns data from a Data Portal that can be displayed in a dropdown window for the user to select and insert into a designated cell within the spreadsheet.
 ---
 * * *
 
 ##  Function Summary
 
-The jDropdown function returns data from a DataPortal that can be displayed in a dropdown window for the user to select and insert into a designated cell within the spreadsheet. It is typically used to easily insert a valid parameter into the spreadsheet to filter the data returned by a report function after a pull action. When this function is linked to a hyperlink, the user can simply click on the hyperlink to display a list of valid parameters and insert one or more into the spreadsheet.
+The jDropdown function returns data from a Data Portal that can be displayed in a dropdown window for the user to select and insert into a designated cell within the spreadsheet. It is typically used to easily insert a valid parameter into the spreadsheet to filter the data returned by a report function after a pull action. When this function is linked to a hyperlink, the user can simply click on the hyperlink to display a list of valid parameters and insert one or more into the spreadsheet.
 
 For an example of this function, see [jDropdown](/wGetStarted/L-Create-Dropdowns.html).
 
 ###  Function Arguments
 
-<button class="collapsible-parameter">**DataPortal**<br>The name of the Interject DataPortal that will be used as the data source for this function. A <a href="https://docs.gointerject.com/wGetStarted/L-Create-Dropdowns.html#creating-a-custom-jdropdown-list">Custom List</a> may be entered instead of a DataPortal.</button>
+<button class="collapsible-parameter">**Data Portal**<br>The name of the Interject Data Portal that will be used as the data source for this function. A <a href="https://docs.gointerject.com/wGetStarted/L-Create-Dropdowns.html#creating-a-custom-jdropdown-list">Custom List</a> may be entered instead of a Data Portal.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
@@ -39,7 +39,7 @@ For an example of this function, see [jDropdown](/wGetStarted/L-Create-Dropdowns
 </table>
 </div>
 
-<button class="collapsible-parameter">**Parameters**<br>The cells designating the parameters for the DataPortal. The values in these cells will filter the data that is inserted from the data source.</button>
+<button class="collapsible-parameter">**Parameters**<br>The cells designating the parameters for the Data Portal. The values in these cells will filter the data that is inserted from the data source.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
@@ -119,7 +119,7 @@ For an example of this function, see [jDropdown](/wGetStarted/L-Create-Dropdowns
 </table>
 </div>
 
-<button class="collapsible-parameter">**Display Column Name**<br>Then name of the column from the DataPortal that will be displayed in the drop down list.</button>
+<button class="collapsible-parameter">**Display Column Name**<br>Then name of the column from the Data Portal that will be displayed in the drop down list.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
@@ -190,7 +190,7 @@ For an example of this function, see [jDropdown](/wGetStarted/L-Create-Dropdowns
 | Argument Name  |  Example Mapping  |  Explanation   |  
 |------|------|------|
 |  Function Name  |  =jDropdown()  |  The name of this function.  |  
-|  DataPortal  |  jDataPortal("NorthwindCustomersDropdown",1)  |  Uses the helper function [jDataPortal()](/wIndex/jDataPortal.html) designating the "NorthwindCustomersDropdown" DataPortal. Filters the records to include only those whose CustomerID contains the string "save".  |  
+|  DataPortal  |  jDataPortal("NorthwindCustomersDropdown",1)  |  Uses the helper function [jDataPortal()](/wIndex/jDataPortal.html) designating the "NorthwindCustomersDropdown" Data Portal. Filters the records to include only those whose CustomerID contains the string "save".  |  
 |  Parameters  |  ""  |  The data returned from the data source will not be filtered.  |  
 |  MultiSelect  |  FALSE  |  Only one entry can be selected from the dropdown window.  |  
 |  Target Cell  |  C17  |  The entry selected will be inserted into cell C17.  |  

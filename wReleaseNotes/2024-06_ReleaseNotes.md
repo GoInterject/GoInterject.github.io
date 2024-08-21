@@ -3,8 +3,8 @@ title: Release Notes
 filename: "2024-06_ReleaseNotes.md"
 layout: custom
 keywords: [change log, updates, versions, history, what's new]
-headings: ["June 2024", "Excel Addin v2.5.1.1", "Portal Site", "Documentation Updates"]
-links: ["/wAbout/SingleUser.html", "/wAbout/SharedComputer.html", "/wPortal/Roles.html", "/wPortal/FolderPermissions.html"]
+headings: ["June 2024", "Excel Add-in v2.5.1.1", "Portal Site", "Documentation Updates"]
+links: ["/wAbout/SingleUser.html#file-locations", "/wAbout/SharedComputer.html#file-locations", "/wPortal/Roles.html", "/wPortal/FolderPermissions.html", "/wIndex/Diagnostics.html", "/wIndex/Diagnostics-FindAllFormulas.html", "/wIndex/Diagnostics-ReplaceDataPortalCodes.html"]
 image_dir: ""
 images: []
 description: Release notes for this month's updates
@@ -13,7 +13,7 @@ description: Release notes for this month's updates
 
 ## June 2024
 
-### Excel Addin v2.5.1.1
+### Excel Add-in v2.5.1.1
 
 _Released 6/4/24_
 
@@ -25,7 +25,7 @@ _Released 6/4/24_
 
 - ✅ The logging feature gathers a minimal amount of data and sends it to the Platform API in batches of no more than 100 or if the last logged data was added more than 5 hours ago.
 
-- ✅ No more than once per day, the Addin makes a single call to the Platform API to gather which log categories it should be logging. This only happens if it hasn't checked in more than 24 hours. That is also a way to turn off logging for all users; by setting the endpoint to return an empty string, no logs will be gathered.
+- ✅ No more than once per day, the Add-in makes a single call to the Platform API to gather which log categories it should be logging. This only happens if it hasn't checked in more than 24 hours. That is also a way to turn off logging for all users; by setting the endpoint to return an empty string, no logs will be gathered.
 
 ### Portal Site
 

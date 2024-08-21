@@ -7,7 +7,7 @@ description:
 
 ## Overview
 
-Interject provides [Fixed and Variable Reports](/wGetStarted/Fixed-and-Variable-Reports.html) that populate data based on a Row Definition. Traditionally this is a single column range defined in the report. The Interject Addin uses this range to query the data. Only records that contain the row def items defined  inside this range are returned.
+Interject provides [Fixed and Variable Reports](/wGetStarted/Fixed-and-Variable-Reports.html) that populate data based on a Row Definition. Traditionally this is a single column range defined in the report. The Interject Add-in uses this range to query the data. Only records that contain the row def items defined  inside this range are returned.
 
 Starting with version 2.5.0, Interject provides the option of defining multiple columns in the row definition range. With this multi-column feature, the combination of row def items provide a unique *key* for matching up the data.
 

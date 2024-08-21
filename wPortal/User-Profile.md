@@ -4,7 +4,7 @@ filename: "User-Profile.md"
 layout: custom
 keywords: [user profile, website portal, roles, admin]
 headings: ["Overview", "User Details", "ClientAdmins"]
-links: ["https://docs.gointerject.com/wAbout/Logging-In.html", "/wPortal/Altering-User-Passwords.html", "/wPortal/INTERJECT-Roles.html#clientadmin-role", "/wPortal/INTERJECT-Roles.html"]
+links: ["#clientadmins", "https://docs.gointerject.com/wAbout/Logging-In.html", "/wPortal/Altering-User-Passwords.html", "/wPortal/INTERJECT-Roles.html#clientadmin-role", "/wPortal/INTERJECT-Roles.html"]
 image_dir: "UserProfile"
 images: [
 	{file: "UserProfilePage", type: "png", site: "Portal", cat: "User Profile", sub: "", report: "", ribbon: "", config: ""},

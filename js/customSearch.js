@@ -151,11 +151,12 @@ function displayTopHitsResults(results, container) {
 	var horizontalLine = document.createElement("hr");
 	horizontalLine.style.border = "1px solid #878896";
 	resultsContainer.insertBefore(horizontalLine, container);
+  const sectionHeader = '<b>Top Hits Results:</b><br>'
 
-	container.innerHTML = '';
+  container.innerHTML = `${sectionHeader}`;
 	
 	if(results.length === 0) {
-		container.innerHTML = '<p>No top hits results found</p>';
+		container.innerHTML = `${sectionHeader}<p>No results found</p>`;
 	}
 	else {
 		const topScore = results[0].score;
@@ -228,10 +229,12 @@ function fetchAndDisplayResults() {
 
 // --------------------------------------------------------------
 function displayResults(results, container, query) {
-  container.innerHTML = '';
+  const sectionHeader = '<b>Page Results:</b><br>'
+  
+  container.innerHTML = `${sectionHeader}`;
 
   if (results.length === 0) {
-    container.innerHTML = '<p>No results found</p>';
+    container.innerHTML = `${sectionHeader}<p>No results found</p>`;
   } 
   else {
 

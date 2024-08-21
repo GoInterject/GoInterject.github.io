@@ -6,7 +6,12 @@ keywords: [app, addin, missing, reset]
 headings: ["Overview", "Cause of Error", "Solution", "Displaying Excel Bit Version", "Helpful Microsoft Office Links"]
 links: ["/wAbout/Uninstalling.html", "/wAbout/SingleUser.html", "/wAbout/SharedComputer.html", "https://support.microsoft.com/en-us/office/choose-between-the-64-bit-or-32-bit-version-of-office-2dee7807-8f95-4d0c-b5fe-6c6f49b8d261", "https://www.microsoft.com/en-us/microsoft-365/download-office", "https://learn.microsoft.com/en-us/deployoffice/change-bitness"]
 image_dir: "AdxLoader"
-images: [{file: "AdxLoaderDontMatch", type: "png", site: "Excel", cat: "Popup", sub: "", report: "", ribbon: "", config: ""}, {file: "ClickAccount", type: "png", site: "Excel", cat: "File Menu", sub: "", report: "", ribbon: "", config: ""}, {file: "ClickAboutExcel", type: "png", site: "Excel", cat: "Account", sub: "", report: "", ribbon: "", config: ""}, {file: "ExcelBitVersion", type: "png", site: "Excel", cat: "About Excel", sub: "", report: "", ribbon: "", config: ""}]
+images: [
+	{file: "AdxLoaderDontMatch", type: "png", site: "Excel", cat: "Popup", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ClickAccount", type: "png", site: "Excel", cat: "File Menu", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ClickAboutExcel", type: "png", site: "Excel", cat: "Account", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ExcelBitVersion", type: "png", site: "Excel", cat: "About Excel", sub: "", report: "", ribbon: "", config: ""}
+	]
 description: Every once in a while, Excel Add-ins may end up missing or fail to load in Excel. If your Interject addin is missing, you can follow these steps to reset it.
 ---
 * * *
@@ -26,7 +31,7 @@ This issue results in an error message upon opening Excel:
 
 ### Cause of Error
 
-The most likely cause of this error is that the bit version of Excel is out of sync with the Interject Addin bit version. This will happen if the architecture type of Microsoft Excel/Office is changed (e.g. 32 and 64 bit).
+The most likely cause of this error is that the bit version of Excel is out of sync with the Interject Add-in bit version. This will happen if the architecture type of Microsoft Excel/Office is changed (e.g. 32 and 64 bit).
 
 ### Solution
 

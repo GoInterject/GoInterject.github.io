@@ -7,13 +7,13 @@ headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example"
 links: ["/wGetStarted/L-Dev-CustomerAgingDetail.html", "/wDeveloper/SetupjDataPortal.html", "/wPortal/INTERJECT-Roles.html", "ReportRange.html", "ReportVariable.html", "ReportFixed.html"]
 image_dir: ""
 images: []
-description: The jDataPortal function establishes a connection to an Interject DataPortal that will be used as the data source for the function it is embedded in.
+description: The jDataPortal function establishes a connection to an Interject Data Portal that will be used as the data source for the function it is embedded in.
 ---
 * * *
 
 ##  Function Summary
 
-The jDataPortal function establishes a connection to an Interject DataPortal that will be used as the data source for the function it is embedded in. Data sets accessed utilizing the jDataPortal are stored in memory. This allows the data set to be accessed later without having to query the data again via the DataPortal.
+The jDataPortal function establishes a connection to an Interject Data Portal that will be used as the data source for the function it is embedded in. Data sets accessed utilizing the jDataPortal are stored in memory. This allows the data set to be accessed later without having to query the data again via the Data Portal.
 
 For an example of this function, see [Lab Dev: Customer Aging Detail](/wGetStarted/L-Dev-CustomerAgingDetail.html).
 
@@ -21,7 +21,7 @@ For instructions on how to set up this function, see [Setting Up the jDataPortal
 
 ###  Function Arguments
 
-<button class="collapsible-parameter">**DataPortalName**<br>The name of the Interject DataPortal that will be used as the data source for this function.</button>
+<button class="collapsible-parameter">**DataPortalName**<br>The name of the Interject Data Portal that will be used as the data source for this function.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
@@ -152,7 +152,7 @@ For instructions on how to set up this function, see [Setting Up the jDataPortal
 | Argument Name  |  Example Mapping  |  Explanation   |  
 |------|------|------|
 |  Function Name  |  =jDataPortal  |  The name of this function.  |  
-|  Data Portal Name  |  NorthwindMultiRecord_Pull  |  This function will use the "NorthwindMultiRecord_Pull" DataPortal for the data source.  |  
+|  Data Portal Name  |  NorthwindMultiRecord_Pull  |  This function will use the "NorthwindMultiRecord_Pull" Data Portal for the data source.  |  
 |  Data Result Number  |  2  |  This data connection will use the 2nd result set previously held in memory from previous calls.  |  
 |  Filter  |  [CompanyName] Like ‘%s%’  |  This data connection will only return records whose CompanyName contains an 's' character.  |  
 |  OrderBy  |  [CustomerID] ASC  |  The data result will be ordered by the column CustomerID in ascending order.  |  

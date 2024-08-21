@@ -6,7 +6,33 @@ keywords: [financial, PL Trend Report, drill, detail, JE transaction, JE lookup,
 headings: ["Overview", "Navigating to the PLTrend Report", "Modifying the Report", "Grouped Detail in the Report", "Drill to JE-Transaction", "Drill Further Into JE-Lookup", "Report Example With Data Cells", "Related Links"]
 links: ["/wAbout/Report-Library-Basics.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data", "/wIndex/jCell.html", "/wIndex/jAcct.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#pull-data", "/wIndex/Data-Cell-Functions.html", "/wGetStarted/L-Modify-FinancialReport.html", "/wGetStarted/Creating-a-Simple-Report.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "/wAbout/Tabular-vs-Data-Cells.html", "/wIndex/Data-Cell-Functions.html"]
 image_dir: "Walkthrough-Financial"
-images: [{file: "01", type: "png", site: "Addin", cat: "Report Library", sub: "", report: "PL Trend", ribbon: "Simple", config: ""}, {file: "02", type: "png", site: "Addin", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, {file: "03", type: "png", site: "Addin", cat: "Pull Data", sub: "", report: "PL Trend Report", ribbon: "Simple", config: ""}, {file: "04", type: "png", site: "Addin", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "Simple", config: ""}, {file: "05", type: "png", site: "Addin", cat: "Pull Data", sub: "", report: "PL Trend Report", ribbon: "Simple", config: ""}, {file: "06", type: "gif", site: "Addin", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, {file: "07", type: "png", site: "Addin", cat: "Pull Data", sub: "", report: "PL Trend Report", ribbon: "Simple", config: ""}, {file: "08", type: "png", site: "Addin", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, {file: "09", type: "png", site: "Addin", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, {file: "10", type: "png", site: "Addin", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, {file: "11", type: "png", site: "Addin", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, {file: "12", type: "png", site: "Addin", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, {file: "13", type: "png", site: "Addin", cat: "Data Drill", sub: "Drill To JEQuery - Account", report: "PL Trend Report", ribbon: "Simple", config: ""}, {file: "14", type: "png", site: "Addin", cat: "Report", sub: "", report: "Journal Entry Query", ribbon: "", config: ""}, {file: "15", type: "png", site: "Addin", cat: "Data Drill", sub: "JE Lookup", report: "Journal Entry Query", ribbon: "", config: ""}, {file: "16", type: "png", site: "Addin", cat: "Report", sub: "", report: "Journal Look Up", ribbon: "", config: ""}, {file: "17", type: "png", site: "Addin", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, {file: "18", type: "png", site: "Addin", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, {file: "19", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, {file: "20", type: "png", site: "Addin", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, {file: "21", type: "png", site: "Addin", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, {file: "22", type: "png", site: "Addin", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, {file: "23", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, {file: "24", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, {file: "25", type: "png", site: "Addin", cat: "Pull Data", sub: "", report: "PL Trend Report", ribbon: "Simple", config: ""}]
+images: [
+	{file: "01", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "PL Trend", ribbon: "Simple", config: ""}, 
+	{file: "02", type: "png", site: "Add-in", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, 
+	{file: "03", type: "png", site: "Add-in", cat: "Pull Data", sub: "", report: "PL Trend Report", ribbon: "Simple", config: ""}, 
+	{file: "04", type: "png", site: "Add-in", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "Simple", config: ""}, 
+	{file: "05", type: "png", site: "Add-in", cat: "Pull Data", sub: "", report: "PL Trend Report", ribbon: "Simple", config: ""}, 
+	{file: "06", type: "gif", site: "Add-in", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, 
+	{file: "07", type: "png", site: "Add-in", cat: "Pull Data", sub: "", report: "PL Trend Report", ribbon: "Simple", config: ""}, 
+	{file: "08", type: "png", site: "Add-in", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, 
+	{file: "09", type: "png", site: "Add-in", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, 
+	{file: "10", type: "png", site: "Add-in", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, 
+	{file: "11", type: "png", site: "Add-in", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, 
+	{file: "12", type: "png", site: "Add-in", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, 
+	{file: "13", type: "png", site: "Add-in", cat: "Data Drill", sub: "Drill To JEQuery - Account", report: "PL Trend Report", ribbon: "Simple", config: ""}, 
+	{file: "14", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Journal Entry Query", ribbon: "", config: ""}, 
+	{file: "15", type: "png", site: "Add-in", cat: "Data Drill", sub: "JE Lookup", report: "Journal Entry Query", ribbon: "", config: ""}, 
+	{file: "16", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Journal Look Up", ribbon: "", config: ""}, 
+	{file: "17", type: "png", site: "Add-in", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, 
+	{file: "18", type: "png", site: "Add-in", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, 
+	{file: "19", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, 
+	{file: "20", type: "png", site: "Add-in", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, 
+	{file: "21", type: "png", site: "Add-in", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, 
+	{file: "22", type: "png", site: "Add-in", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, 
+	{file: "23", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, 
+	{file: "24", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, 
+	{file: "25", type: "png", site: "Add-in", cat: "Pull Data", sub: "", report: "PL Trend Report", ribbon: "Simple", config: ""}
+	]
 description: This lab is for controllers or accountants who work with financial data and spreadsheets. In this walkthrough, you will open a Profit and Loss (PL) Trend report and drill into the supporting detail from the general ledger detail. The Journal Entry (JE) Query report will provide you account level detail and will allow for drills further into each journal entry.
 ---
 * * *
@@ -127,9 +153,14 @@ This drill goes directly to a second tab in the report called JE Lookup, and it 
 
 The above examples illustrate the Interject Data List reports. These reports are structured by specifying what financial data goes into which column and row subtotals setup to show a specific group of accounts. Interject provides an alternate method to setting up reports so each worksheet cell can contain any value you need.
 
-**Step 1** : The first thing to do is delete the rows below 44 and completely clear them out.
+**Step 1** : First expand the groups by clicking the "2" in the group management pane:
 
-![](/images/Walkthrough-Financial/17.png)
+![](/images/Walkthrough-Financial/17a.png)
+<br>
+
+**Step 2** : Now highlight all the rows below the "Revenue" section, right click on the section and delete the rows.
+
+![](/images/Walkthrough-Financial/17b.png)
 <br>
 
 The report now looks like this.
@@ -139,7 +170,7 @@ The report now looks like this.
 
 Now use Data Cells to replicate some of the present data. By having both data generated by tabular reports and data cells next to each other, you can confirm that they are yielding the same results.
 
-**Step 2:** To see how it works, use a Data Cell equation.
+**Step 3:** To see how it works, use a Data Cell equation.
 
 The example below illustrates how the [jCell()](/wIndex/jCell.html) function can be used to show totals for Actual in March 2002.
 
@@ -159,7 +190,7 @@ Notice that these are the same accounts that makeup **Revenue - Sales** in the o
 ![](/images/Walkthrough-Financial/20.png)
 <br>
 
-**Step 3:** Now use the [**Pull Data**](/wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#pull-data) function. Note: Ensure that the **"Calculate Data Cells"** is checked.
+**Step 4:** Now use the [**Pull Data**](/wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#pull-data) function. Ensure that the **"Calculate Data Cells"** is checked.
 
 ![](/images/Walkthrough-Financial/21.png)
 <br>
@@ -169,7 +200,7 @@ As you can see, the totals for **Revenue - Sales** match for both the data cell 
 ![](/images/Walkthrough-Financial/22.png)
 <br>
 
-**Step 4:** Listing out each account for a financial group can take time if the account is large enough. Next, try to use data cells again, but this time use groupings to make the function easier.
+**Step 5:** Listing out each account for a financial group can take time if the account is large enough. Next, try to use data cells again, but this time use groupings to make the function easier.
 
 Go back to the jAcct() function window and change the accounts to be **Revenue - Sales** instead of the numbered list. Be sure to keep everything else the same.
 
@@ -181,7 +212,7 @@ After the switch, you can see that the values still are the same (Note: You may 
 ![](/images/Walkthrough-Financial/24.png)
 <br>
 
-**Step 5:** More complex filter text can be used to request precise balances. The following example uses a combination of ranges, exclusions, wildcards, and financial groups to return specific data. Even Net Income or EBITDA can be presented in a single worksheet cell.
+**Step 6:** More complex filter text can be used to request precise balances. The following example uses a combination of ranges, exclusions, wildcards, and financial groups to return specific data. Even Net Income or EBITDA can be presented in a single worksheet cell.
 
 For more information on the Data Cell Filter options, [click here](/wIndex/Data-Cell-Functions.html).
 

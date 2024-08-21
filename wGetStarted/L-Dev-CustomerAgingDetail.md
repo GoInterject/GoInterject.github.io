@@ -4,9 +4,33 @@ filename: "L-Dev-CustomerAgingDetail.md"
 layout: custom
 keywords: [Customer Aging Detail, example, walkthrough, SQL, Data Portal, server connection]
 headings: ["Overview", "Verifying the Data Connection", "Copying and Modifying the Data Portals", "Creating the Stored Procedure", "Create the Report", "Creating a New Data Portal With Multiple Record Sets", "Updating the Stored Procedure for 2 Record Sets", "Updating the Report for 2 Record Sets"]
-links: ["/wGetStarted/L-Dev-CustomerOrders.html", "/wAbout/Customer-Aging.html", "/wGetStarted/L-Dev-CustomerAgingDetail.html", "mailto:info@gointerject.com", "/wGetStarted/L-Create-CustomerAgingDetail.html"]
+links: ["/wGetStarted/L-Dev-CustomerOrders.html", "/wAbout/Customer-Aging.html", "/wGetStarted/L-Dev-CustomerAgingDetail.html", "mailto:info@gointerject.com", "/wGetStarted/L-Create-CustomerAgingDetail.html", "/wIndex/jDataPortal.html"]
 image_dir: "L-Dev-CustAgingDetail"
-images: [{file: "01", type: "png", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "02", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "03", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "04", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "05", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "06", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "07", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "08", type: "png", site: "Addin", cat: "Report", sub: "", report: "", ribbon: "Advanced", config: ""}, {file: "09", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, {file: "10", type: "png", site: "Addin", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, {file: "11", type: "png", site: "Addin", cat: "System", sub: "View SQL Template For ActiveCell", report: "", ribbon: "Advanced", config: "Yes"}, {file: "12", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "13", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Detail", ribbon: "", config: ""}, {file: "14", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "15", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "16", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, {file: "17", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "18", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "19", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "20", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, {file: "21", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Detail", ribbon: "Advanced", config: "Yes"}, {file: "22", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Detail", ribbon: "Advanced", config: "Yes"}, {file: "23", type: "png", site: "Addin", cat: "Report", sub: "", report: "Customer Aging Detail", ribbon: "", config: ""}]
+images: [
+	{file: "01", type: "png", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "02", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "03", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "04", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "05", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "06", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "07", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "08", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "Advanced", config: ""}, 
+	{file: "09", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, 
+	{file: "10", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
+	{file: "11", type: "png", site: "Add-in", cat: "System", sub: "View SQL Template For ActiveCell", report: "", ribbon: "Advanced", config: "Yes"}, 
+	{file: "12", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "13", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Customer Aging Detail", ribbon: "", config: ""}, 
+	{file: "14", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "15", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "16", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "17", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "18", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "19", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "20", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "21", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Customer Aging Detail", ribbon: "Advanced", config: "Yes"}, 
+	{file: "22", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Customer Aging Detail", ribbon: "Advanced", config: "Yes"}, 
+	{file: "23", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Customer Aging Detail", ribbon: "", config: ""}
+	]
 description: In this example, you will learn to create a third report, Customer Aging Detail, that will be drilled to from the Customer Aging Report. This report shows a customer's outstanding balance by individual invoice.
 ---
 * * *
@@ -591,7 +615,7 @@ When this code is executed, it should return two record sets as shown below.
 
 ### Updating the Report for 2 Record Sets
 
-You are ready to modify the report to use your new data portal. The changes are simple since you only need to use a new function, jDataPortal(), to specify the data portal record set number for each report function.
+You are ready to modify the report to use your new data portal. The changes are simple since you only need to use a new function, [jDataPortal()](/wIndex/jDataPortal.html), to specify the data portal record set number for each report function.
 
 **Step 1:** In the **Customer Aging Detail** report that you just completed, change the **=ReportRange()** function by replacing the previous data portal with the new one. However, you will be encasing the new data portal inside a jDataPortal() function. So **=ReportRange(“oldDataPortalCode”,..** becomes **=ReportRange(jDataPortal(“NorthwindMultiRecord_MyName”,2),...** The end result should look like the below screenshot for ReportRange().
 
