@@ -2,20 +2,18 @@
 title: Troubleshooting Guide
 filename: "TroubleshootingSolutions.md"
 layout: custom
-keywords: []
+keywords: [errors, solutions, fix]
 headings: ["Overview"]
-links: []
+links: ["https://portal.gointerject.com/download-interject.html", "/wAbout/TLS.html", "/wAbout/Enterprise-Login-Setup.html#ip-whitelisting", "/wTroubleshoot/Addin-Missing.html", "/wAbout/Enterprise-Login-Setup.html#ip-whitelisting", "/wTroubleshoot/WebView2.html", "/wAbout/Enterprise-Login-Setup.html#ip-whitelisting", "/wTroubleshoot/Cloud-File.html#solution-saving-to-local-drive", "/wTroubleshoot/Cloud-File.html#solution-uploading-as-a-website-link", "/wIndex/Excel-Function-Index.html", "https://portal.gointerject.com/download-interject.html#additionalInstallers"]
 image_dir: ""
-images: [
-    {file: "", type: "png", site: "Addin", cat: "", sub: "", report: "", ribbon: "", config: ""}
-]
-description: This is a troubleshooting guide for the Interject Add-in. This resource is designed to help you navigate and resolve a variety of common issues you might encounter while using the Add-in.
+images: []
+description: This is a troubleshooting guide for the Interject Add-in. This resource is designed to help you navigate and resolve a variety of common issues you might encounter while using the Interject Add-in.
 ---
 * * *
 
 ## Overview
 
-This is a troubleshooting guide for the Interject Add-in. This resource is designed to help you navigate and resolve a variety of common issues you might encounter while using the Add-in. 
+This is a troubleshooting guide for the Interject Add-in. This resource is designed to help you navigate and resolve a variety of common issues you might encounter while using the Interject Add-in. 
 
 ### Error: Add-in Not Completely Loaded
 
@@ -97,9 +95,3 @@ _"One or more of the Interject web apis are offline or could not be reached. The
 - <span style="color: red;">ISSUE:</span> Wrong Interject version. Each versions has different features and functionality. Upgrading may help and in some cases it may help to downgrade your version to isolate the issue.
 
     <span style="color: green;">SOLUTION:</span> Upgrade/Downgrade your [Interject version](https://portal.gointerject.com/download-interject.html#additionalInstallers).
-
-### Error: 
-
-- <span style="color: red;">ISSUE:</span> 
-
-    <span style="color: green;">SOLUTION:</span> 
