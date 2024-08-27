@@ -13,13 +13,13 @@ images: [
     {file: "BugFix2On", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""}, 
     {file: "BugFix2Off", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""}
     ]
-description: The "Apply Special Features" in the Interject Diagnostics Pane allows users to apply certain bux fixes.
+description: The "Apply Special Features" in the Interject Diagnostics Pane allows users to apply certain configurations and bug fixes.
 ---
 * * *   
 
 ## Overview
 
-The "Apply Special Features" in the Interject Diagnostics Pane allows users to apply certain bug fixes.
+The "Apply Special Features" in the Interject Diagnostics Pane allows users to apply certain configurations and bug fixes.
 
 ![](/images/DiagnosticsSpecialFeatures/ApplySpecialFeatures.png)
 <br>
@@ -67,3 +67,20 @@ BugFix2=OFF
 
 ![](/images/DiagnosticsSpecialFeatures/BugFix2Off.png)
 <br>
+
+## Macro Security Settings
+
+These are displayed for your reference here. For more on information, see [Macro Security](/wIndex/MacroSecurity.html)
+
+## Webview2 Login
+
+
+
+```
+UseWebView2=TRUE
+```
+
+
+```
+UseWebView2=FALSE
+```
