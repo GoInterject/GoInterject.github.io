@@ -51,7 +51,7 @@ This example uses the Customer Credits report, which is in the [Customer Aging](
 
 ### Special Cell Value Comment
 
-A comment is often used to note more detailed information about the data in a cell. Comments are useful when the information contained within them are not required but need to be referenced when you put your mouse over the cell. In this example you will add comments to the credit limit column to note who last changed the credit.
+A comment is often used to note more detailed information about the data in a cell. Comments are useful when the information contained within them are not required but need to be referenced when you put your mouse over the cell. In this example you will add comments to the InvoiceTotal column to note the customer's last unpaid invoice.
 
 To start, unfreeze the panes.
 
@@ -68,13 +68,13 @@ The report looks like this:
 ![](/images/L-Create-SpecColDefs/03.jpg)
 <br>
 
-Select cell **H2** and input **CreditLimit Addcomm:LastCredit**.
+Select cell **G2** and input **InvoiceTotal Addcomm:LastUnpaidInvoice**.
 
 ![](/images/L-Create-SpecColDefs/04.jpg)
 <br>
 
 <blockquote class=highlight_note>
-<b>Note:</b> <b>Addcomm</b> designates the type of special column that you are using and <b>LastCredit</b> is the actual content in the comment.
+<b>Note:</b> <b>Addcomm</b> designates the type of special column that you are using and <b>LastUnpaidInvoice</b> is the actual content in the comment.
 </blockquote>
 <br>
 
@@ -83,14 +83,9 @@ Pull the data.
 ![](/images/L-Create-SpecColDefs/05.jpg)
 <br>
 
-Place your cursor over cell **H27** and review the comment that is placed in the cell. Notice that the **Credit Limit** column was pulled as it was before the changes but it has a comment associated with it that now details the changes made to that column.
+Place your cursor over cell **G27** and review the comment that is placed in the cell. Notice that the **InvoiceTotal** column was pulled as it was before the changes but it has a comment associated with it that now details the last unpaid invoice of the customer.
 
 ![](/images/L-Create-SpecColDefs/06.jpg)
-
-<blockquote class=highlight_note>
-<b>Note:</b> Not all of the cells have been changed, and so there is no comment created for those cells.
-</blockquote>
-<br>
 
 ### Special Cell Value Hyperlink
 
@@ -130,7 +125,7 @@ Inserting data validation dropdown lists are similar to the other special column
 
 For this example, use **AccountFreeze** in cell **K2**.
 
-Select the cell, then input **AccountFreeze valuelist:FreezeOptions**. Pull the Data again.
+Select the cell, then input **AccountFreeze Valuelist:FreezeOptions**. Pull the Data again.
 
 ![](/images/L-Create-SpecColDefs/11.jpg)
 <br>
@@ -148,7 +143,7 @@ Excel allows users to have multiple special cell values attributed to a single c
 
 For this example, use **Company Name** cell **C2**
 
-Select the cell, then input **CompanyName hlink:MapURL** **addcomm:AddressLong**
+Select the cell, then input **CompanyName hlink:MapURL** **Addcomm:AddressLong**
 
 ![](/images/L-Create-SpecColDefs/13.jpg)
 <br>
@@ -167,5 +162,3 @@ Click on the hyperlink in cell **C27** and notice that the functionality of the 
 
 ![](/images/L-Create-SpecColDefs/16.jpg)
 <br>
-
-If there are any additional special column features that are not listed here or you have any questions, please contact Interject at info@gointerject.com.

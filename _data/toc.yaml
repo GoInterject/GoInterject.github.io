@@ -432,6 +432,8 @@ Developer:
     path: /wDeveloper/InternalSupportSetup.html
 
 troubleshoot:
+- title: Troubleshooting Guide
+  path: /wTroubleshoot/TroubleshootingGuide.html
 - sectiontitle: Interject Support
   path: /wTroubleshoot/Interject-Support.html
   section:
