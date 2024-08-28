@@ -4,7 +4,7 @@ filename: "Troubleshooting-Landing.md"
 layout: custom
 keywords: [troubleshooting, support, log, problem, error, issues, installation, addin, report]
 headings: ["Overview", "Interject Support", "Add-in Errors", "Report Errors"]
-links: ["/wTroubleshoot/Interject-Support.html", "/wTroubleshoot/App-Errors.html", "/wTroubleshoot/Reports.html"]
+links: ["https://docs.gointerject.com/wTroubleshoot/TroubleshootingGuide.html", "/wTroubleshoot/Interject-Support.html", "/wTroubleshoot/App-Errors.html", "/wTroubleshoot/Reports.html"]
 image_dir: ""
 images: []
 description: Interject optimizes speed by caching company settings such as Data Portals, Connections, and Report Library templates. This information is received on login and stored in memory for as long as the Excel session is open. Troubleshooting is therefore important for new deployments where these settings may need to change often. If there are any changes to company settings, the Interject Excel add-in will check for changes at various actions. Opening the Report Library or the Report Builder automatically checks for setting changes. Other actions like Pull, Save, or Drill check only every two hours, since these actions occur often and could create excess communication. The next three pages are dedicated to understanding how these different actions and environments interact for troubleshooting purposes.
@@ -14,6 +14,11 @@ description: Interject optimizes speed by caching company settings such as Data 
 ## Overview
 
 Interject optimizes speed by caching company settings such as Data Portals, Connections, and Report Library templates. This information is received on login and stored in memory for as long as the Excel session is open. Troubleshooting is therefore important for new deployments where these settings may need to change often. If there are any changes to company settings, the Interject Excel add-in will check for changes at various actions. Opening the Report Library or the Report Builder automatically checks for setting changes. Other actions like Pull, Save, or Drill check only every two hours, since these actions occur often and could create excess communication. The next three pages are dedicated to understanding how these different actions and environments interact for troubleshooting purposes.
+
+<blockquote class=highlight_note>
+<b>Note:</b> For a quick guide on some common issues with solutions, see our <a href="https://docs.gointerject.com/wTroubleshoot/TroubleshootingGuide.html">Troubleshooting Guide</a>.
+</blockquote>
+<br>
 
 ### [Interject Support](/wTroubleshoot/Interject-Support.html)
 

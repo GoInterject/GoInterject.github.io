@@ -3,8 +3,8 @@ title: Troubleshooting Guide
 filename: "TroubleshootingSolutions.md"
 layout: custom
 keywords: [errors, solutions, fix]
-headings: ["Overview"]
-links: ["https://portal.gointerject.com/download-interject.html", "/wAbout/TLS.html", "/wAbout/Enterprise-Login-Setup.html#ip-whitelisting", "/wTroubleshoot/Addin-Missing.html", "/wAbout/Enterprise-Login-Setup.html#ip-whitelisting", "/wTroubleshoot/WebView2.html", "/wAbout/Enterprise-Login-Setup.html#ip-whitelisting", "/wTroubleshoot/Cloud-File.html#solution-saving-to-local-drive", "/wTroubleshoot/Cloud-File.html#solution-uploading-as-a-website-link", "/wIndex/Excel-Function-Index.html", "https://portal.gointerject.com/download-interject.html#additionalInstallers"]
+headings: ["Overview", "Error: Add-in Not Completely Loaded", "Error: Incompatible FIPS", "Error: Interject Web API Offline", "Error: Interject Add-in Ribbon is Gone", "Error: Cannot Connect or Communicate With Interject Platform", "Error: Login Page Not Showing (ver 2.5+)", "Error: File Not Uploading Correctly to Report Library", "Error: Report Showing Incorrect Data or Data Missing"]
+links: ["https://portal.gointerject.com/download-interject.html", "/wAbout/TLS.html", "/wAbout/Enterprise-Login-Setup.html#ip-whitelisting", "/wTroubleshoot/Addin-Missing.html", "/wAbout/Enterprise-Login-Setup.html#ip-whitelisting", "https://live-interject-authapi.azurewebsites.net/", "https://live-interject-authapi.azurewebsites.net/.well-known/openid-configuration", "https://live-interject-authapi.azurewebsites.net/", "/wTroubleshoot/WebView2.html", "/wAbout/Enterprise-Login-Setup.html#ip-whitelisting", "/wTroubleshoot/Cloud-File.html#solution-saving-to-local-drive", "/wTroubleshoot/Cloud-File.html#solution-uploading-as-a-website-link", "/wIndex/Excel-Function-Index.html", "https://portal.gointerject.com/download-interject.html#additionalInstallers"]
 image_dir: ""
 images: []
 description: This is a troubleshooting guide for the Interject Add-in. This resource is designed to help you navigate and resolve a variety of common issues you might encounter while using the Interject Add-in.
@@ -74,6 +74,21 @@ _"One or more of the Interject web apis are offline or could not be reached. The
 
     <span style="color: green;">SOLUTION:</span> [Whitelist](/wAbout/Enterprise-Login-Setup.html#ip-whitelisting) our auth API URL
 
+- <span style="color: red;">ISSUE:</span> The firewall does not register the Interject auth API domain as secure because the SSL Certificate is being assigned to the domain from a proxy.
+
+    <span style="color: blue;">TEST:</span> If you see an error when you navigate to https://live-interject-authapi.azurewebsites.net/.
+
+    <span style="color: blue;">TEST:</span> Open https://live-interject-authapi.azurewebsites.net/.well-known/openid-configuration in the browser. View and verify the SSL certificate details: "Issued to = *.azurewebsites.net" and "Issued By = Microsoft Azure RSA TLS Issuing CA 08". If you see something else, the network is passing traffic to this domain through a proxy and overriding the SSL.
+
+    <span style="color: green;">SOLUTION:</span> Review your firewall and networking configuration to ensure https://live-interject-authapi.azurewebsites.net/ is not blocked.
+
+    <span style="color: green;">SOLUTION:</span> Review your firewall and networking configuration to ensure your proxy is correctly handling the SSL certificate passthroughs for the Interject auth API domain.
+
+<blockquote class="highlight_note" style="margin-left: 40px;">
+<b>Note:</b> Eventually the auth API will be hosted on the gointerject domain and future addin versions will likely not run into these issues with networks in this configuration.
+</blockquote>
+<br>
+
 ### Error: File Not Uploading Correctly to Report Library
 
 - <span style="color: red;">ISSUE:</span> Cloud files or files on a shared network may not upload to Report Library correctly.
@@ -95,20 +110,3 @@ _"One or more of the Interject web apis are offline or could not be reached. The
 - <span style="color: red;">ISSUE:</span> Wrong Interject version. Each versions has different features and functionality. Upgrading may help and in some cases it may help to downgrade your version to isolate the issue.
 
     <span style="color: green;">SOLUTION:</span> Upgrade/Downgrade your [Interject version](https://portal.gointerject.com/download-interject.html#additionalInstallers).
-
-### Error: Login Page Does Not Show
-
-- <span style="color: red;">ISSUE:</span> The firewall does not register the Interject auth API domain as secure because the SSL Certificate is being assigned to the domain from a proxy.
-
-    <span style="color: blue;">TEST:</span> If you see an error when you navigate to https://live-interject-authapi.azurewebsites.net/.
-
-    <span style="color: blue;">TEST:</span> Open https://live-interject-authapi.azurewebsites.net/.well-known/openid-configuration in the browser. View and verify the SSL certificate details: "Issued to = *.azurewebsites.net" and "Issued By = Microsoft Azure RSA TLS Issuing CA 08". If you see something else, the network is passing traffic to this domain through a proxy and overriding the SSL.
-
-    <span style="color: green;">SOLUTION:</span> Review your firewall and networking configuration to ensure https://live-interject-authapi.azurewebsites.net/ is not blocked.
-
-    <span style="color: green;">SOLUTION:</span> Review your firewall and networking configuration to ensure your proxy is correctly handling the SSL certificate passthroughs for the Interject auth API domain.
-
-<blockquote class="highlight_note" style="margin-left: 40px;">
-<b>Note:</b> Eventually the auth API will be hosted on the gointerject domain and future addin versions will likely not run into these issues with networks in this configuration.
-</blockquote>
-<br>
