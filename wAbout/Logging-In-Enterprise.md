@@ -4,7 +4,7 @@ filename: "Logging-In-Enterprise.md"
 layout: custom
 keywords: [login, ribbon, logout, new login, credentials, accounts, enterprise, user]
 headings: ["Overview", "Initial Enterprise Login", "New Login", "Logging Out", "Log Back In", "Switch Accounts", "Forgetting Login Credentials", "Clearing Login Cookies"]
-links: ["#initial-enterprise-login"]
+links: ["https://docs.gointerject.com/wIndex/Diagnostics-SpecialFeatures.html#webview2browser-login", "#initial-enterprise-login"]
 image_dir: "Login-Enterprise"
 images: [
 	{file: "interject-ribbon-advanced-menu-login-revised", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, 
@@ -34,7 +34,7 @@ Logging in is simple and fast! Interject will remember your login for 30 days. Y
 Once a federated identity is configured for an Interject client, users can provide an accompanying enterprise login code and login to Interject with their federated identity. This page describes how to use the login from the Interject Excel Add-in.
 
 <blockquote class=highlight_note>
-<b>Note:</b> This page uses Interject version 2.5.0.19 for the content and screenshots.
+<b>Note:</b> Interject uses Webview2 for its login form. For instructions on how to use your browser instead, see <a href="https://docs.gointerject.com/wIndex/Diagnostics-SpecialFeatures.html#webview2browser-login">Webview2/Browser Login</a>.
 </blockquote>
 
 ### Initial Enterprise Login

@@ -13,13 +13,13 @@ images: [
     {file: "BugFix2On", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""}, 
     {file: "BugFix2Off", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""}
     ]
-description: The "Apply Special Features" in the Interject Diagnostics Pane allows users to apply certain bux fixes.
+description: The "Apply Special Features" in the Interject Diagnostics Pane allows users to apply certain configurations and bug fixes.
 ---
 * * *   
 
 ## Overview
 
-The "Apply Special Features" in the Interject Diagnostics Pane allows users to apply certain bug fixes.
+The "Apply Special Features" in the Interject Diagnostics Pane allows users to apply certain configurations and bug fixes.
 
 ![](/images/DiagnosticsSpecialFeatures/ApplySpecialFeatures.png)
 <br>
@@ -66,4 +66,37 @@ BugFix2=OFF
 ```
 
 ![](/images/DiagnosticsSpecialFeatures/BugFix2Off.png)
+<br>
+
+## Macro Security Settings
+
+These are displayed for your reference here. For more on information, see [Macro Security](/wIndex/MacroSecurity.html)
+
+![](/images/DiagnosticsSpecialFeatures/MacroSecuritySettings.png)
+<br>
+
+## Webview2/Browser Login
+
+Interject provides an alternative to the standard Webview2 login form. Your default web browser can be used instead by setting the UseWebView2 switch in Diagnostics.
+
+<blockquote class=highlight_note>
+<b>Note:</b> Web browser login is only supported by Microsoft Edge at this time.
+</blockquote>
+<br>
+
+![](/images/DiagnosticsSpecialFeatures/LoginCompare.png)
+<br>
+
+```
+UseWebView2=TRUE
+```
+
+![](/images/DiagnosticsSpecialFeatures/Webview2True.png)
+<br>
+
+```
+UseWebView2=FALSE
+```
+
+![](/images/DiagnosticsSpecialFeatures/Webview2False.png)
 <br>
