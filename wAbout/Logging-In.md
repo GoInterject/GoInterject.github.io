@@ -4,7 +4,7 @@ filename: "Logging-In.md"
 layout: custom
 keywords: [login, ribbon, logout, new login, credentials, accounts, user]
 headings: ["Overview", "Initial Interject Login", "New Login", "Logging Out", "Log Back In", "Switch Accounts", "Forgetting Login Credentials"]
-links: ["#initial-interject-login"]
+links: ["https://docs.gointerject.com/wIndex/Diagnostics-SpecialFeatures.html#webview2browser-login", "#initial-interject-login"]
 image_dir: "LogginIn"
 images: [
 	{file: "interject-ribbon-advanced-menu-login-revised", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, 
@@ -29,7 +29,7 @@ description: Logging in is simple and fast! Interject will remember your login a
 Logging in is simple and fast! Interject will remember your login for 30 days. You can also add multiple logins and switch accounts easily.
 
 <blockquote class=highlight_note>
-<b>Note:</b> This page uses Interject version 2.5.0.19 for the content and screenshots.
+<b>Note:</b> Interject uses Webview2 for its login form. For instructions on how to use your browser instead, see <a href="https://docs.gointerject.com/wIndex/Diagnostics-SpecialFeatures.html#webview2browser-login">Webview2/Browser Login</a>.
 </blockquote>
 
 ### Initial Interject Login
