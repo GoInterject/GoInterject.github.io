@@ -72,15 +72,31 @@ BugFix2=OFF
 
 These are displayed for your reference here. For more on information, see [Macro Security](/wIndex/MacroSecurity.html)
 
-## Webview2 Login
+![](/images/DiagnosticsSpecialFeatures/MacroSecuritySettings.png)
+<br>
 
+## Webview2/Browser Login
 
+Interject provides an alternative to the standard Webview2 login form. Your default web browser can be used instead by setting the UseWebView2 switch in Diagnostics.
+
+<blockquote class=highlight_note>
+<b>Note:</b> Web browser login is only supported by Microsoft Edge at this time.
+</blockquote>
+<br>
+
+![](/images/DiagnosticsSpecialFeatures/LoginCompare.png)
+<br>
 
 ```
 UseWebView2=TRUE
 ```
 
+![](/images/DiagnosticsSpecialFeatures/Webview2True.png)
+<br>
 
 ```
 UseWebView2=FALSE
 ```
+
+![](/images/DiagnosticsSpecialFeatures/Webview2False.png)
+<br>
