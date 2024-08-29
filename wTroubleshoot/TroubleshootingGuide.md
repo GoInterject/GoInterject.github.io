@@ -53,7 +53,6 @@ _"One or more of the Interject web apis are offline or could not be reached. The
 
     <span style="color: green;">SOLUTION:</span> Use the Interject Addin manager to [reset the Add-in](/wTroubleshoot/Addin-Missing.html)
 
-
 ### Error: Cannot Connect or Communicate With Interject Platform
 
 - <span style="color: red;">ISSUE:</span> Proxy network is blocking outgoing traffic

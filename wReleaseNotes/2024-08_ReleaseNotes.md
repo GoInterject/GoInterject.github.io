@@ -48,3 +48,6 @@ _Released 8/20/24_
 | 8/21 | Update | [Develop: Editing Data Save](/wDeveloper/L-Dev-EditingDataSave.html) | Updated code |
 | 8/21 | Update | Multiple lab docs | Updated notes/links |
 | 8/21 | New | [Create: Customer Orders Report](/wGetStarted/L-Create-CustomerOrders.html#adding-a-report-label-with-reportlookup) | New section on ReportLookup |
+| 8/28 | New | [Troubleshooting Guide](/wTroubleshoot/TroubleshootingGuide.html) | New page |
+| 8/28 | Update | [Create: Special Column Definitions](/wGetStarted/L-Create-SpecColDefs.html) | Updated details |
+| 8/29 | New | [Diagnostics - Apply Special Features](/wIndex/Diagnostics-SpecialFeatures.html) | New sections |
