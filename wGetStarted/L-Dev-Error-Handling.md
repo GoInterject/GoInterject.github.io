@@ -4,7 +4,7 @@ filename: "L-Dev-Error-Handling.md"
 layout: custom
 keywords: [error, handling, RAISERROR, UserNotice, return message]
 headings: ["Overview", "Understanding Error Handling", "Error Handling With RAISERROR", "Error Handling With UserNotice", "Unhandled Error Behavior"]
-links: []
+links: ["https://docs.microsoft.com/en-us/sql/t-sql/language-elements/raiserror-transact-sql?view=sql-server-2017"]
 image_dir: "Error-Handling"
 images: [
 	{file: "01", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 
@@ -18,7 +18,7 @@ description: Explains how Interject handles errors in Data Portals using T-SQL R
 
 ## Overview
 
-This page will cover error handling in Interject development using T-SQL’s RAISERROR and Interject’s UserrNotice flag.
+This page will cover error handling in Interject development using T-SQL’s RAISERROR and Interject’s UserNotice flag.
 
 ### Understanding Error Handling
 
@@ -28,7 +28,7 @@ There are two types of errors that Interject can display: unhandled and handled.
 
 Interject leverages the T-SQL statement RAISERROR in its Data Portals to process errors.
 
-RAISERROR is designed to generate error messages and initiate error processing in the session (Source: [Microsoft RAISERROR Documentation][microsoft doc]{:target="_blank"}{:rel="noopener noreferrer"}). It is used as follows:
+RAISERROR is designed to generate error messages and initiate error processing in the session (Source: [Microsoft RAISERROR Documentation](https://docs.microsoft.com/en-us/sql/t-sql/language-elements/raiserror-transact-sql?view=sql-server-2017){:target="_blank"}{:rel="noopener noreferrer"}). It is used as follows:
 
 ![](/images/Error-Handling/01.png)
 <br>
@@ -39,7 +39,7 @@ RAISERROR is designed to generate error messages and initiate error processing i
 
 **state** - number, 0-255, used to locate where errors occur in your code.
 
-* See [Microsoft RAISERROR Documentation][microsoft doc]{:target="_blank"}{:rel="noopener noreferrer"} from more detailed information on using RAISERROR and its parameters.
+* See [Microsoft RAISERROR Documentation](https://docs.microsoft.com/en-us/sql/t-sql/language-elements/raiserror-transact-sql?view=sql-server-2017){:target="_blank"}{:rel="noopener noreferrer"} from more detailed information on using RAISERROR and its parameters.
 
 ### Error Handling With UserNotice
 
@@ -61,5 +61,3 @@ If you opt not to use UserNotice, your error will still be reported by the Inter
 
 ![](/images/Error-Handling/04.png)
 <br>
-
-[microsoft doc]: https://docs.microsoft.com/en-us/sql/t-sql/language-elements/raiserror-transact-sql?view=sql-server-2017

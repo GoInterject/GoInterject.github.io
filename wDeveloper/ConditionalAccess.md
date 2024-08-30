@@ -4,7 +4,7 @@ filename: "ConditionalAccess.md"
 layout: custom
 keywords: [policy, statements, user claims, rules]
 headings: ["Overview", "Conditional Statements", "User Claims", "Conditional Rules", "Configuring Conditional Access"]
-links: []
+links: ["http://schemas.microsoft.com/ws/2008/06/identity/claims/role", "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress", "http://schemas.microsoft.com/ws/2008/06/identity/claims/role|Admin|Equals", "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress", "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress", "http://schemas.microsoft.com/ws/2008/06/identity/claims/role", "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress", "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress"]
 image_dir: ""
 images: []
 description: Conditional access is a feature to control and validate user provisioning via policies that act on the claims issued by your identity server. These are known as Conditional Access policies. Interject's identity server exposes an interface for allowing the provisioning of users in Interject via claims provided by third party identity providers.
@@ -47,20 +47,20 @@ All the conditional checks are against the user claims. Claims are key value pai
 
 Here are a few examples of user claims:
 
-|Claim| Claim Key | Claim Value |
+| Claim | Claim Key | Claim Value |
 |---|---|---|
-|Role| http://schemas.microsoft.com/ws/2008/06/identity/claims/role | Admin |
-|Email| http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress | user@example.com |
+| Role| http://schemas.microsoft.com/ws/2008/06/identity/claims/role | Admin |
+| Email| http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress | user@example.com |
 
 ### Conditional Rules
 
 Here is an example of how the conditional rules mapping is applied:
 
-|Id|ProviderClaimKey| ProviderClaimValue| Condition | Regular Expression|
+| Id | ProviderClaimKey | ProviderClaimValue | Condition | Regular Expression |
 |---|---|---|---|---|
-|Rule1|http://schemas.microsoft.com/ws/2008/06/identity/claims/role|Admin|Equals||
-|Rule2|http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress|1@example.com,2@example.com,3@example.com|Contains||
-|Rule3|http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress||RegularExpression|^[A-Za-z0-9._%+-]+@gointerject\.com$|
+| Rule1 | http://schemas.microsoft.com/ws/2008/06/identity/claims/role | Admin | Equals | |
+| Rule2 | http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress | 1@example.com,2@example.com,3@example.com | Contains | |
+| Rule3 | http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress | | RegularExpression | ^[A-Za-z0-9._%+-]+@gointerject\.com$ |
 
 **Rule1**: The user is allowed access only when the Claim value for http://schemas.microsoft.com/ws/2008/06/identity/claims/role (Role) is equal to 'Admin'
 

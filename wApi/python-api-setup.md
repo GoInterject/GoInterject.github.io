@@ -6,7 +6,7 @@ date:   2018-10-12 9:03:02 -0700
 categories: API Developer
 keywords: [data api, python, setup]
 headings: ["Overview", "Requirements", "Get The Code", "Install The Python Package", "Linux additional requirements", "Install Package", "Setup API", "Get Template Config", "Setup Connection Strings", "Choose Controllers", "Custom Functions", "Running The API", "More Information"]
-links: ["mailto:help@gointerject.com", "https://docs.microsoft.com/en-us/sql/connect/odbc/linux-mac/installing-the-microsoft-odbc-driver-for-sql-server", "/wApi/python-api-custom-functions.html", "https://github.com/GoInterject/ids-python-api"]
+links: ["https://github.com/GoInterject/ids-python-api", "mailto:help@gointerject.com", "https://docs.microsoft.com/en-us/sql/connect/odbc/linux-mac/installing-the-microsoft-odbc-driver-for-sql-server", "/wApi/python-api-custom-functions.html", "https://github.com/GoInterject/ids-python-api"]
 image_dir: ""
 images: [
 	{file: "temp_gitlab_download_repo", type: "png", site: "Github", cat: "ids-python-api", sub: "", report: "", ribbon: "", config: ""}
