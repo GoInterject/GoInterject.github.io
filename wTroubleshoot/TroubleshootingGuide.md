@@ -25,6 +25,10 @@ This is a troubleshooting guide for the Interject Add-in. This resource is desig
 
     <span style="color: green;">SOLUTION:</span> Restart Interject Add-in, upgrade Add-ins, deactivate conflicting Add-ins
 
+- <span style="color: red;">ISSUE:</span> Excel running in background locked up
+
+    <span style="color: green;">SOLUTION:</span> Restart Microsoft Excel
+
 ### Error: Incompatible FIPS 
 
 _"This implementation is not part of the Windows Platform FIPS validated cryptographic algorithms"_
