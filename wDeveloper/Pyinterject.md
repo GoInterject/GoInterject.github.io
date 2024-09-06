@@ -3,8 +3,8 @@ title: Pyinterject
 filename: "pyinterject.md"
 layout: custom
 keywords: [python, platform, api, package, scripts, crud]
-headings: ["Overview", "Requirements", "Get the Code", "Setup", "What Can Pyinterject Do", "Example Scripts"]
-links: ["https://www.python.org/downloads/", "https://github.com/GoInterject/pyinterject/blob/master/pyproject.toml", "https://github.com/GoInterject/pyinterject.git", "mailto:help@gointerject.com"]
+headings: ["Overview", "What Can Pyinterject Do", "Example Scripts", "Get the Code"]
+links: ["mailto:help@gointerject.com"]
 image_dir: ""
 images: []
 description: Pyinterject is a Python client package that allows access to the Interject platform directly. With Python scripts, you can perform CRUD operations on your organization's information (e.g. data portals, data connections, users, etc.). This makes it extremely more efficient to handle bulk operations and routine maintenance.
@@ -15,69 +15,15 @@ description: Pyinterject is a Python client package that allows access to the In
 
 Pyinterject is a Python client package that allows access to the Interject platform directly. With Python scripts, you can perform CRUD operations on your organization's information (e.g. data portals, data connections, users, etc.). This makes it extremely more efficient to handle bulk operations and routine maintenance.
 
-### Requirements
-
-* [Python](https://www.python.org/downloads/){:target="_blank"}{:rel="noopener noreferrer"} 3.10 - 3.12
-
-Once Python is installed the dependencies for Pyinterject include:
-
-* poetry (for build)
-* requests
-* pydantic
-* typer
-* rich
-* loguru
-* pyodbc
-* pyyaml
-* pandas
-* click
-* prompt-toolkit
-* python-dotenv
-* toml
-
-<blockquote class=highlight_note>
-<b>Note:</b> For the most current version requirements of the dependencies, see the <a href="https://github.com/GoInterject/pyinterject/blob/master/pyproject.toml" target="_blank" rel="noopener noreferrer">repo</a>.
-</blockquote>
-<br>
-
-###  Get the Code
-
-With Git, you can clone the repository directly to your system. Navigate to the desired directory and run the following command:
-
-```git
-git clone https://github.com/GoInterject/pyinterject.git
-```
-
-<br>
-<blockquote class=highlight_note>
-<b>Note:</b> If this repo is private and you need access, please <a href="mailto:help@gointerject.com">contact us</a>. It will be public soon.
-</blockquote>
-<br>
-
-### Setup
-
-The simplest way to install Pyinterject is with pip and git:
-
-```
-pip install <PACKAGE PATH (.tar.gz OR .whl)>
-```
-
-Example:
-
-```
-pip install pyinterject-0.1.3-pkg/pyinterject-0.1.3.tar.gz
-```
-
 ### What Can Pyinterject Do
 
 Pyinterject can retrieve reports and information from a client as well as perform certain CRUD operations on a number of elements:
 
 * Clients
-* Client roles
-* Custom roles
+* Client custom roles
 * Users
 * User roles
-* Data Portals
+* Data Portals and parameters
 * Data Connections
 
 ### Example Scripts
@@ -130,3 +76,7 @@ resp = ids.update_user(client_id_public=clientIdPublic,
                        user_id_public=user.UserIDPublic, 
                        user=user)
 ```
+
+###  Get the Code
+
+The code for Pyinterject will be released soon. If you are interested, [contact us](mailto:help@gointerject.com) to be a part of the Beta release program.
