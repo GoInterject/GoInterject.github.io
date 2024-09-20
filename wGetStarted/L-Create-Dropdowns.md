@@ -162,7 +162,7 @@ The jDropdown feature can be used to create a custom list of items in a dropdown
 list:Yes,No,Maybe
 ```
 
-To display the list options in the dropdown window something different then the entry, use the following format:
+To display something different in the dropdown menu than what will be entered in the cell, use the following format:
 
 ```
 list:Yes^This is Yes,No^This is No,Maybe^This is Maybe
