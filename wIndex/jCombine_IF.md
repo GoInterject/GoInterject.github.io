@@ -118,8 +118,3 @@ For an example of this function, see [Lab Create: Using the Retain Feature](/wGe
 |  SelectedRange  |  J15:O15  |  The range J15:O15 will be the values concatenated if the criteria is met.  |  
 |  CriteriaValue  |  TRUE  |  The boolean value of True is used as the criteria.  |  
 |  Delimiter  |  ";"  |  The semicolon ";" will be used as the delimiter for the concatenation.  |  
-
-###  Usable In These Functions
-
-* [ReportRange](ReportRange.html) 
-* [ReportVariable](ReportVariable.html)
