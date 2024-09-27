@@ -188,7 +188,7 @@ Now that the ReportSave function is completed, Interject can use it to generate 
 
 ## Add the RequestContext_Parse Stored Procedure
 
-The template that is created by Interject references a Stored Procedure called "RequestContext_Parse". This SP will process the XML data that is passed to your SP via the "Interject_RequestContext" parameter. After processing this data, you will have SP variables you can use within your SP (e.g. "@Interject_UserID", "@Interject_LoginDateUTC"). In order for the Data save Stored Procedure to work, you need to create the "RequestContext_Parse" Stored Procedure. In your database, open up a new query and execute the following code:
+The template that is created by Interject references a Stored Procedure called "RequestContext_Parse". This SP will process the XML data that is passed to your SP via the "Interject_RequestContext" parameter. After processing this data, you will have SP variables you can use within your SP (e.g. "@Interject_UserID", "@Interject_LoginDateUTC"). In order for the Data save Stored Procedure to work, you will need this Stored Procedure. If you do not currently have it, you can create it. In your database, open up a new query and execute the following code:
 
 <button class = "collapsible"> RequestContext_Parse </button>
 <div markdown="1" class="panel">
@@ -610,7 +610,7 @@ AS
 	---------------------------------------------------------------------------
 	
 
-	EXEC NorthwindEditingDataSaveSP
+	EXEC dbo.NorthwindEditingDataSaveSP
 		@TestMode = 1
 		,@Interject_RequestContext = '<?xml version="1.0" encoding="utf-16" standalone="yes"?>
 <RequestContext>
@@ -919,7 +919,7 @@ AS
 			--
 			-- use MERGE statement that UPDATES, INSERTS, and DELETES in one action
 			--
-			MERGE dbo.Northwind_Customers t -- t = the target table or view to update
+			MERGE demo.Northwind_Customers t -- t = the target table or view to update
 			USING (
 				SELECT
 					[_ExcelRow]

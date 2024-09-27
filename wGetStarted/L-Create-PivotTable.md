@@ -122,7 +122,7 @@ The parameter section of the report should look like the following screenshot.
 ![](/images/L-Create-PivotTable/13.jpg)
 <br>
 
-**Step 12:** Now that you have entered the fields, you can use [**Pull Data**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) on the report, filtering for companies with **Market** in their names. First type **Market** in the filter cell C1 and then **Pull Data**.
+**Step 12:** Now that you have entered the fields, you can use [**Pull Data**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) on the report, filtering for companies with **Market** in their names. First type **Market** in the filter cell C14 and then **Pull Data**.
 
 ![](/images/L-Create-PivotTable/14.jpg)
 <br>
@@ -161,7 +161,7 @@ The parameter section of the report should look like the following screenshot.
 
 ### Customizing the Pivot Table
 
-**Step 1:** Prepare the pivot table worksheet to interact with the Interject worksheet. That way the data can be updated based on select filters, and security can be considered. You will insert the configuration rows at the top as you normally do with Interject reports, but Report Formulas is the only section being used. You will also add a Title and hide the grids.
+**Step 1:** Prepare the pivot table worksheet to interact with the Interject worksheet. That way the data can be updated based on select filters, and security can be considered. Insert the Interject configuration rows at the top as normal, even though Report Formulas is the only section being used. You will also add a Title and hide the grids.
 
 ![](/images/L-Create-PivotTable/18.png)
 <br>

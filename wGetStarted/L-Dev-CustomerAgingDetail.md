@@ -62,7 +62,7 @@ For this report you are going to use two data portals. The first will be the sam
 ![](/images/L-Dev-CustAgingDetail/03.jpg)
 <br>
 
-**Step 4:** You will use the existing Formula Parameters but for this example you need to add more more. Select **Click here to add a Formula Parameter**. Enter **IncludePaid** for Name, **varchar** for Type, and **input** for direction. Click the **More** button.
+**Step 4:** You will use the existing Formula Parameters but for this example you need to add more. Select **Click here to add a Formula Parameter**. Enter **IncludePaid** for Name, **varchar** for Type, and **input** for direction. Click the **More** button.
 
 ![](/images/L-Dev-CustAgingDetail/04.jpg)
 <br>
@@ -125,7 +125,7 @@ BEGIN
 END
 
 -- This is another SP that parses the xml in request context to get the needed system data
-EXEC [demo].[RequestContext_Parse]
+EXEC [dbo].[RequestContext_Parse]
   @Interject_RequestContext		= @Interject_RequestContext	
   ,@Interject_LoginName			= @Interject_LoginName	OUTPUT
   ,@UtcOffset = @UtcOffset OUTPUT
@@ -478,7 +478,7 @@ Steps 5 and 6 should look like below:
 
 </div>
 
-**Step 7:** The changes to the stored procedure are complet. It is important to test the stored procedure in the database before testing it through the Interject platform. You can use the same test script used earlier in this topic. Your test code should look similar to the SQL below.
+**Step 7:** The changes to the stored procedure are complete. It is important to test the stored procedure in the database before testing it through the Interject platform. You can use the same test script used earlier in this topic. Your test code should look similar to the SQL below.
 
 <button class="collapsible">Test Script</button>
 <div markdown="1" class="panel">

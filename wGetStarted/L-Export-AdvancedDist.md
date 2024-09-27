@@ -46,7 +46,7 @@ description: There are a number of different options available for distributing 
 There are a number of different options available for distributing reports as well as naming workbooks and individual sheets. In this example, you are going to explore some of the more advanced methods.
 
 <blockquote class=lab_info>
- If you are following the Training Labs, this report file is continued from the previous lab: Training Labs > Lab 7 Exporting Data > Lab 7.2 Basic Distribution.
+ If you are following the Training Labs, this report file is continued from the previous lab: Training Labs > Lab 7 Exporting Data > Lab 7.2 Basic Distribution. Note: The Report Library at Training Labs for this lab will be blank.
 </blockquote>
 
 ### Custom Tab Renaming

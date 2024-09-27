@@ -104,7 +104,7 @@ Pull the data.
 ![](/images/L-Create-SpecColDefs/08.jpg)
 <br>
 
-**CompanyName** is still pulled normally but instead of the normal dataset look, it will create a hyperlink formula. The **Link Location** goes to Google Maps and searches for the full address for that company.concatenated with the address associated with each company. This way the location data is accessible but does not overcrowd the information while the **Friendly Name** of the URL is the **Company Name**.
+**CompanyName** is still pulled normally but instead of the normal dataset, it will create a hyperlink formula. The **Link Location** goes to Google Maps and searches for the full address for that company. This way the location data is accessible but does not overcrowd the information while the **Friendly Name** of the URL is the **Company Name**.
 
 ![](/images/L-Create-SpecColDefs/09.jpg)
 <br>

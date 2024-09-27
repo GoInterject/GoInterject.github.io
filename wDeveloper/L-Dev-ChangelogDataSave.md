@@ -1076,9 +1076,9 @@ AS
 			 AND [IsDeleted] = 0
 			 AND [IsDeletedOld] = 1
 
-		  UPDATE [dbo].[Northwind_Customers]
-		  SET [dbo].[Northwind_Customers].UpdateTypeCode = cl.UpdateTypeCode
-		  FROM [dbo].[Northwind_Customers] nc
+		  UPDATE [demo].[Northwind_Customers]
+		  SET [demo].[Northwind_Customers].UpdateTypeCode = cl.UpdateTypeCode
+		  FROM [demo].[Northwind_Customers] nc
 		  INNER JOIN @ChangeLog cl
 		  ON nc.CustomerID = cl.CustomerID
 	   

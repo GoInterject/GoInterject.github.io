@@ -64,7 +64,7 @@ To unfreeze the panels, click on **Quick Tools** from the Interject tab. Then se
 
 ### Set Up the Report
 
-If you scroll up, you will find that there are already drills set up in this report.
+If you scroll up, you may find that the drills are already set up in this report.
 
 ![](/images/L-Drill-Financial/DrillsPresent.png)
 <br>

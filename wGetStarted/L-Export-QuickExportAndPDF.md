@@ -37,7 +37,7 @@ The Export method is the simplest way of distributing. The purpose of Export is 
 
 ### Export Workbook
 
-Interject features the option to export the workbook This export process removes Data Cell formulas and external links from a sheet or workbook so users without Interject can view them.
+Interject features the option to export the workbook. This export process removes Data Cell formulas and external links from a sheet or workbook so users without Interject can view them.
 
 Take the report **PL Trend Report with Data Cells** from the [Financial Walkthrough](/wAbout/Financial-Report.html) as an example. It is shown below.
 
