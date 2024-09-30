@@ -3,7 +3,7 @@ title: Troubleshooting Guide
 filename: "TroubleshootingSolutions.md"
 layout: custom
 keywords: [errors, solutions, fix]
-headings: ["Overview", "Error: Add-in Not Completely Loaded", "Error: Incompatible FIPS", "Error: Interject Web API Offline", "Error: Interject Add-in Ribbon is Gone", "Error: Cannot Connect or Communicate With Interject Platform", "Error: Login Page Not Showing (ver 2.5+)", "Error: File Not Uploading Correctly to Report Library", "Error: Report Showing Incorrect Data or Data Missing"]
+headings: ["Overview", "Error: Add-in Not Completely Loaded", "Error: Incompatible FIPS", "Error: Interject Web API Offline", "Can't Install or Uninstall Interject", "Error: Interject Add-in Ribbon is Gone", "Error: Cannot Connect or Communicate With Interject Platform", "Error: Login Page Not Showing (ver 2.5+)", "Error: File Not Uploading Correctly to Report Library", "Error: Report Showing Incorrect Data or Data Missing"]
 links: ["https://portal.gointerject.com/download-interject.html", "/wAbout/TLS.html", "/wAbout/Enterprise-Login-Setup.html#ip-whitelisting", "/wTroubleshoot/Addin-Missing.html", "/wAbout/Enterprise-Login-Setup.html#ip-whitelisting", "https://live-interject-authapi.azurewebsites.net/", "https://live-interject-authapi.azurewebsites.net/.well-known/openid-configuration", "https://live-interject-authapi.azurewebsites.net/", "/wTroubleshoot/WebView2.html", "/wAbout/Enterprise-Login-Setup.html#ip-whitelisting", "/wTroubleshoot/Cloud-File.html#solution-saving-to-local-drive", "/wTroubleshoot/Cloud-File.html#solution-uploading-as-a-website-link", "/wIndex/Excel-Function-Index.html", "https://portal.gointerject.com/download-interject.html#additionalInstallers"]
 image_dir: ""
 images: []
@@ -50,6 +50,12 @@ _"One or more of the Interject web apis are offline or could not be reached. The
 - <span style="color: red;">ISSUE:</span> The network may have a firewall policy blocking requests to Interject cloud services
 
     <span style="color: green;">SOLUTION:</span> Review the URL's that must be [whitelisted](/wAbout/Enterprise-Login-Setup.html#ip-whitelisting) for Interject to work
+
+### Error: Can't Install or Uninstall Interject
+
+- <span style="color: red;">ISSUE:</span> A corrupted installation prevents reinstallation or uninstallation
+
+    <span style="color: green;">SOLUTION:</span> Use the [Microsoft Troubleshooter](https://support.microsoft.com/en-us/topic/fix-problems-that-block-programs-from-being-installed-or-removed-cca7d1b6-65a9-3d98-426b-e9f927e1eb4d){:target="_blank"}{:rel="noopener noreferrer"} to [manual uninstall](/wTroubleshoot/CorruptedInstallation.html) Interject
 
 ### Error: Interject Add-in Ribbon is Gone
 
