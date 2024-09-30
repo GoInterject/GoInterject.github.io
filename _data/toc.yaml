@@ -464,6 +464,8 @@ troubleshoot:
       path: /wTroubleshoot/RowDefClear.html
     - title: Transport Errors
       path: /wTroubleshoot/Transport-Errors.html
+    - title: Corrupted Interject Installation
+      path: /wTroubleshoot/CorruptedInstallation.html
 - sectiontitle: Report Errors
   path: /wTroubleshoot/Reports.html
   section:

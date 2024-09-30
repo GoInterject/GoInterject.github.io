@@ -2,8 +2,8 @@
 title: Corrupted Interject Installation
 filename: "CorruptedInstallation.md"
 layout: custom
-keywords: [corrupt, installation, uninstallation, microsoft troubleshooter, manual, registry]
-headings: ["Overview", "Manual Uninstallation", "Uninstalling With the Microsoft Troubleshooter"]
+keywords: [corrupt, installation, uninstall, microsoft troubleshooter, manual, registry]
+headings: ["Overview", "Manual Uninstall", "Uninstalling With the Microsoft Troubleshooter"]
 links: ["https://support.microsoft.com/en-us/topic/fix-problems-that-block-programs-from-being-installed-or-removed-cca7d1b6-65a9-3d98-426b-e9f927e1eb4d"]
 image_dir: "CorruptedInstallation"
 images: [
@@ -19,9 +19,9 @@ description: There are some instances where Interject may be left in an incomple
 
 There are some instances where Interject may be left in an incomplete or corrupted state after installation. This can happen, for example, if the Interject installer was executed from within a zipped folder, without being properly extracted first. In such cases, the installation process may only partially complete, leading to issues such as being unable to uninstall or reinstall Interject properly. When this happens, manual intervention is required to fully remove the corrupted installation.
 
-### Manual Uninstallation
+### Manual Uninstall
 
-Manual uninstallation of Interject involves deleting various files and making changes to the Windows registry, which can be complicated and prone to errors. To simplify this process, Microsoft provides a [Troubleshooter tool](https://support.microsoft.com/en-us/topic/fix-problems-that-block-programs-from-being-installed-or-removed-cca7d1b6-65a9-3d98-426b-e9f927e1eb4d){:target="_blank"}{:rel="noopener noreferrer"} that can assist in removing problematic installations. This tool automates much of the cleanup process, helping ensure that all Interject-related files and registry entries are completely removed, allowing for a fresh reinstallation.
+A manual uninstall of Interject involves deleting various files and making changes to the Windows registry, which can be complicated and prone to errors. To simplify this process, Microsoft provides a [Troubleshooter](https://support.microsoft.com/en-us/topic/fix-problems-that-block-programs-from-being-installed-or-removed-cca7d1b6-65a9-3d98-426b-e9f927e1eb4d){:target="_blank"}{:rel="noopener noreferrer"} tool that can assist in removing problematic installations. This tool automates much of the cleanup process, helping ensure that all Interject-related files and registry entries are completely removed, allowing for a fresh reinstallation.
 
 ### Uninstalling With the Microsoft Troubleshooter
 
