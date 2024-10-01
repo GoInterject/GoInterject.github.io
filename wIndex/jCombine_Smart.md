@@ -1,8 +1,8 @@
 ---
-title: jCombine()
-filename: "jCombine.md"
+title: jCombineSmart()
+filename: "jCombineSmart.md"
 layout: custom
-keywords: [jCombine, helper, function, formula]
+keywords: [jCombineSmart, helper, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Usable In These Functions"]
 links: ["/wGetStarted/L-Create-RetainFeature.html", "ReportRange.html", "ReportVariable.html"]
 image_dir: ""
@@ -13,11 +13,9 @@ description: The jCombine function concatenates a range or multiple ranges of ce
 
 ##  Function Summary
 
-The jCombine function concatenates a range or multiple ranges of cells into a single string using a designated delimiter. Blank cells are skipped.
+The jCombineSmart function concatenates a range or multiple ranges of cells into a single string using a designated delimiter. Blank cells and duplicate cells are skipped and the resulting concatenation is sorted. This function can also be set to interpret the input as numbers so that sorting can be numerically ascending. In addition, it applies continuous ranges where possible. For example, "2,6,6,1,3" becomes "1..3,6".
 
 This function can be used as a standalone function and does not need to be embedded in another function.
-
-For an example of this function, see [Lab Create: Using the Retain Feature](/wGetStarted/L-Create-RetainFeature.html).
 
 ###  Function Arguments
 
@@ -61,10 +59,50 @@ For an example of this function, see [Lab Create: Using the Retain Feature](/wGe
 </table>
 </div>
 
+<button class="collapsible-parameter">**Range Code**<br>The text displayed as the range operator for continuous ranges.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>String</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>Max 255 char</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>".."</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**Convert To Numeric**<br>True: Trims inputs of leading zeros and converts to a numeric value.<br><br>False: Treats inputs as text.</button>
+<div markdown="1" class="panel-parameter">
+<table>
+  <tbody>
+    <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>Boolean</td>
+    </tr>
+    <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td></td>
+    </tr>
+    <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>False</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 ###  Excel Formula Bar Example
 
 ```Excel
-=jCombine((A2,F2:G2,R2:T2))
+=jCombineSmart(F2:L2, "|", "...", True)
 ```
 
 ###  Function Composition
@@ -72,5 +110,7 @@ For an example of this function, see [Lab Create: Using the Retain Feature](/wGe
 | Argument Name  |  Example Mapping  |  Explanation   |  
 |------|------|------|
 |  Function Name  |  =jCombine()  |  The name of this function.  |  
-|  Selected Range  |  (A2,F2:G2,R2:T2)  |  The ranges selected for concatenation are: A2, F2:G2, and R2:T2.  |  
-|  Delimiter  |    |  Blank to indicate a comma is to be used as the delimiter.  |  
+|  Selected Range  |  F2:L2  |  The range F2:L2 will be the values concatenated.  |  
+|  Delimiter  |  "\|"  |  The pipe "\|" will be used as the delimiter for the concatenation.  |  
+|  Range Code  |  "..."  |  Three dots "..." will be used as the range operator for continuous ranges.  |  
+|  Convert To Numeric  |  True  |  Will convert the cells to a numeric value.  |  

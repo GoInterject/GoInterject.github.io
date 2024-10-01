@@ -4,7 +4,7 @@ filename: "Data-Portals.md"
 layout: custom
 keywords: [data portals, data connection, setup, system parameters]
 headings: ["Overview", "Setting up a Data Portal", "Overview of Parameters", "Formula Parameters", "System Parameters", "Adding New Parameters", "System Parameters Options"]
-links: ["/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#custom-commands", "https://docs.gointerject.com/wIndex/Request-Context-Parse.html"]
+links: ["/wIndex/ReportBuilder.html", "https://docs.gointerject.com/wIndex/Request-Context-Parse.html"]
 image_dir: "DataPortals"
 images: [
     {file: "NewDataPortalButton", type: "png", site: "Portal", cat: "Data Portals", sub: "", report: "", ribbon: "", config: ""}, 
@@ -58,7 +58,7 @@ The new page will look like below:
 <br>
 
 - **Api Relative Url** : This setting indicates the rest of the API URL that will be concatenated with the root URL of an API Data Connection when a request is sent. For example, the root URL for the connection may be **https:[api.myapi.com]** . If your API controller name is CustomerData, then you would type **\CustomerData** in API Relative URL. The API request would be sent to **https:[api.myapi.com]\CustomerData**. This field is ignored when a Data Portal uses a database connection.
-- **Helper Default Columns (optional)** : You can use a comma delimited list to set default columns that will appear when a new report is created using the Report Builder.
+- **Helper Default Columns (optional)** : You can use a comma delimited list to set default columns that will appear when a new report is created using the [Report Builder](/wIndex/ReportBuilder.html).
 - **Is Custom Command** : When set to yes, allows background jobs to run from the Custom Commands Window. Custom Commands require specific parameters to work with the Custom Commands window. See the [Interject Ribbon](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#custom-commands) on how to use Custom Commands.
 
 ![](/images/DataPortals/04.jpg)
@@ -99,7 +99,8 @@ Now that the Data Portal is created, you can set up our parameters for the Data 
 - **Helper Default** : This inserts a default value into the cell of the Excel report when using the Report Builder.
 - **Options** : Use a comma separated list to provide the Excel user with a drop down list of options.
 - **Comments** : This inserts an Excel comment, with our text, into the cell of the Excel report when using the Report Builder.
- To see how these fields are used when setting up a report using Report Builder click here. (You will not be using any of these inputs in this example.)
+
+ To see how these fields are used when setting up a report, see [Report Builder](/wIndex/ReportBuilder.html).
 
 ![](/images/DataPortals/07.jpg)
 <br>

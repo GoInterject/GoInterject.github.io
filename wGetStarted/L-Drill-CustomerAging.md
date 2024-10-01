@@ -33,7 +33,6 @@ In this example, you will be setting up a simple drill to the customer orders hi
  If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 4 Drilling To Data > Lab 4.1 Customer Aging.
 </blockquote>
 
-
 ### Initializing the Report
 
 **Step 1:** To begin, open the Interject Customer Collections report from the Report Library.
@@ -46,7 +45,7 @@ In this example, you will be setting up a simple drill to the customer orders hi
 ![](/images/L-Drill-CustAging/02.png)
 <br>
 
-**Step 3:** In this report the [ReportDrill()](/wIndex/ReportDrill.html) functions have already been set up. To follow along in this guide, you will need to remove these functions so you can set them up manually. Scroll up to the configuration rows and select the three drills and clear their contents.
+**Step 3:** In this report the [ReportDrill()](/wIndex/ReportDrill.html) functions may have been already set up. To follow along in this guide, you will need to remove these functions so you can set them up manually. Scroll up to the configuration rows and select the three drills and clear their contents.
 
 ![](/images/L-Drill-CustAging/03.png)
 <br>

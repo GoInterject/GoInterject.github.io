@@ -47,7 +47,7 @@ In this example, you will view drilling between reports using the same Inventory
 ![](/images/L-Drill-Inventory/02.png)
 <br>
 
-**Step 3:** In this report the [ReportDrill()](/wIndex/ReportDrill.html) function has already been set up. To follow along in this guide, you will need to remove this function so you can set them up manually. Scroll up to the configuration rows and select the the drill and clear their contents.
+**Step 3:** In this report the [ReportDrill()](/wIndex/ReportDrill.html) function may have been already set up. To follow along in this guide, you will need to remove this function so you can set them up manually. Scroll up to the configuration rows and select the the drill and clear their contents.
 
 ![](/images/L-Drill-Inventory/02b.png)
 <br>

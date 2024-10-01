@@ -38,7 +38,7 @@ description: The distribution process provides extensive control when creating a
 The distribution process provides extensive control when creating and distributing reports. You can create one or more report workbooks and choose which worksheet tabs to include, create copies by iterating through different filters, and choose export targets like File Location, Email, Print, PDF, etc.
 
 <blockquote class=lab_info>
- If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 7 Exporting Data > Lab 7.2 Basic Distribution.
+ If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 7 Exporting Data > Lab 7.2 Basic Distribution. Note: The Report Library at Training Labs for this lab will be blank.
 </blockquote>
 
 ### Create a Distribution From an Existing Report

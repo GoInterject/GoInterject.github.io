@@ -163,7 +163,7 @@ getstarted:
     - sectiontitle: Exporting Reports
       path: /wGetStarted/Exporting-Reports.html
       section:
-      - title: "Export: Quick Export and PDF"
+      - title: "Export: Workbook, Sheet, and PDF"
         path: /wGetStarted/L-Export-QuickExportAndPDF.html
       - title: "Export: Basic Distribution"
         path: /wGetStarted/L-Export-BasicDist.html
@@ -223,6 +223,8 @@ index:
           path: /wIndex/jCombine.html
         - title: jCombineIf()
           path: /wIndex/jCombine_IF.html
+        - title: jCombineSmart()
+          path: /wIndex/jCombine_Smart.html
         - title: jDataPortal()
           path: /wIndex/jDataPortal.html
         - title: jColumnDef()
@@ -462,6 +464,8 @@ troubleshoot:
       path: /wTroubleshoot/RowDefClear.html
     - title: Transport Errors
       path: /wTroubleshoot/Transport-Errors.html
+    - title: Corrupted Interject Installation
+      path: /wTroubleshoot/CorruptedInstallation.html
 - sectiontitle: Report Errors
   path: /wTroubleshoot/Reports.html
   section:

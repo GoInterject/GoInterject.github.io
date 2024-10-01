@@ -73,7 +73,7 @@ First, in cell **Q26**, input **Forecasting Formulas.** Then, edit the formula i
 ![](/images/L-Create-Retain/05.png)
 <br>
 
-Project a 10% increase to every value. First select cell **P29** and input the formula **=L29 \* 1.10**. Copy cell **P29** to the clipboard. Next highlight cells **P29:R152**. Finally, right-click on the area and copy the formulas.
+Project a 10% increase to every value. First select cell **P29** and input the formula **=L29 \* 1.10**. Copy cell **P29** to the clipboard. Next highlight cells **P29:R152**. Finally, right-click on the area and paste the formulas.
 
 ![](/images/L-Create-Retain/06.png)
 <br>

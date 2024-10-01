@@ -4,7 +4,7 @@ filename: "Reference.md"
 layout: custom
 keywords: [FRx, Epicor, deployment]
 headings: ["Reference", "Media/Source Files"]
-links: []
+links: ["https://install.gointerject.com/installs/Interject_Version_Installer.exe", "https://portal.gointerject.com/kb/HowToUse/Installing.html"]
 image_dir: ""
 images: []
 description: Reference page for the Intuition Interject Deployment Plan

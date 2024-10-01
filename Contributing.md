@@ -328,7 +328,7 @@ The images entry for the front matter contain a nested json list of images with 
 
 - file: Name of the image file (without the extension)
 - type: The type of file (e.g. png or jpg or gif)
-- site: The site origin of the image (e.g. Add-in, Portal, Windows)
+- site: The site origin of the image (e.g. Add-in, Excel, SSMS, Portal, Windows)
 - cat: The main category of the image (e.g. pull data, save data, report library)
 - sub: The subcategory of the image (e.g. more details of the category of the image)
 - report: If a report title, Excel tab, or file is displayed or referenced list the name here

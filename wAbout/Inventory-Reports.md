@@ -31,7 +31,7 @@ description: This lab is a basic inventory example for tracking product quantiti
 This lab is a basic inventory example for tracking product quantities. In this walkthrough, you will open a summary of our product categories and total quantities. You will then drill into the Inventory Detail tab to view specific products within that category. There is also a secondary inventory option which allows us to view all of the categories, and the products within them, in a single sheet.
 
 <blockquote class=lab_info>
- If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 1 Real World Walkthroughs > Lab 1.2 Basics of Report Formulas.
+ If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 1 Real World Walkthroughs > Lab 1.2 Inventory Reports.
 </blockquote>
 
 ### Navigating to the Inventory Reports
@@ -99,7 +99,7 @@ This will automatically pull the detail page again, but this time with products 
 
 ### Alternate Inventory Example
 
-Now a report that shows all the categories and their details in one sheet, without having to drill back and forth between the two sheets. To accomplish this, you are going to use InvByCategory_WithDetail.
+Now you will use a report that shows all the categories and their details in one sheet, without having to drill back and forth between the two sheets. To accomplish this, you are going to use InvByCategory_WithDetail.
 
 **Step 1:** You need to open the WithDetails tab.
 
