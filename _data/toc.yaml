@@ -18,7 +18,7 @@ horizontalnav:
   path: /wTroubleshoot/Troubleshooting-Landing.html
   node: troubleshoot
 - title: Release Notes
-  path: /wReleaseNotes/2024-08_ReleaseNotes.html
+  path: /wReleaseNotes/2024-10_ReleaseNotes.html
   node: releaseNotes
 
 about:
@@ -370,6 +370,8 @@ Developer:
           path: /wApi/python-api-custom-functions.html
     - title: Java Api Setup
       path: /wApi/java-api-setup.html
+    - title: Pyinterject
+      path: /wDeveloper/Pyinterject.html
 - sectiontitle: Developing With Interject
   path: /wGetStarted/Developing-with-INTERJECT.html
   section:
@@ -483,7 +485,7 @@ troubleshoot:
 
 releaseNotes:
 - sectiontitle: Versions
-  path: /wReleaseNotes/2024-08_ReleaseNotes.html
+  path: /wReleaseNotes/2024-10_ReleaseNotes.html
   section:
     - title: 2.5.0.22
       path: /wReleaseNotes/2023-10_ReleaseNotes.html
@@ -505,7 +507,7 @@ releaseNotes:
     - title: December
       path: /wReleaseNotes/2023-12_ReleaseNotes.html
 - sectiontitle: 2024
-  path: /wReleaseNotes/2024-08_ReleaseNotes.html
+  path: /wReleaseNotes/2024-10_ReleaseNotes.html
   section:
     - title: January
       path: /wReleaseNotes/2024-01_ReleaseNotes.html
@@ -517,3 +519,7 @@ releaseNotes:
       path: /wReleaseNotes/2024-07_ReleaseNotes.html
     - title: August
       path: /wReleaseNotes/2024-08_ReleaseNotes.html
+    - title: September
+      path: /wReleaseNotes/2024-09_ReleaseNotes.html
+    - title: October
+      path: /wReleaseNotes/2024-10_ReleaseNotes.html
