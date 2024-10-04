@@ -259,31 +259,6 @@ index:
       path: /wIndex/FinCube---The-Financial-Cube.html
     - title: SegmentInfo - Segment Search
       path: /wIndex/SegmentInfo---Segment-Search.html
-  - title: Excel Best and Worst Practices
-    path: /wGetStarted/Excel-Best-and-Worst-Practices.html
-  - sectiontitle: Quick Tools
-    path: /wIndex/Quick-Tools-Landing.html
-    section:
-    - title: Panes Tools
-      path: /wIndex/QuickTools-Panes.html
-    - title: Formatting Tools
-      path: /wIndex/QuickTools-Format.html
-    - title: Formula Tools
-      path: /wIndex/QuickTools-Formula.html
-    - title: Editing Tools
-      path: /wIndex/QuickTools-Edit.html
-    - title: Naming Tools
-      path: /wIndex/QuickTools-Names.html
-    - title: Hyperlink Tools
-      path: /wIndex/QuickTools-Hyperlink.html
-    - title: Other Tools
-      path: /wIndex/QuickTools-Other.html
-  - title: Interject Shortkey Index
-    path: /wIndex/INTERJECT-Hotkey-Index.html
-  - title: Interject Hyperlinks
-    path: /wIndex/INTERJECT-Link-Index.html
-  - title: Interject Settings and Cache
-    path: /wIndex/SettingsCache.html
   - sectiontitle: Diagnostics
     path: /wIndex/Diagnostics.html
     section:
@@ -307,6 +282,34 @@ index:
       path: /wIndex/Diagnostics-ClearErrorLog.html
     - title: Re-initiate Interject
       path: /wIndex/Diagnostics-ReinitiateInterject.html
+  - sectiontitle: Quick Tools
+    path: /wIndex/Quick-Tools-Landing.html
+    section:
+    - title: Panes Tools
+      path: /wIndex/QuickTools-Panes.html
+    - title: Formatting Tools
+      path: /wIndex/QuickTools-Format.html
+    - title: Formula Tools
+      path: /wIndex/QuickTools-Formula.html
+    - title: Editing Tools
+      path: /wIndex/QuickTools-Edit.html
+    - title: Naming Tools
+      path: /wIndex/QuickTools-Names.html
+    - title: Hyperlink Tools
+      path: /wIndex/QuickTools-Hyperlink.html
+    - title: Other Tools
+      path: /wIndex/QuickTools-Other.html
+  - title: Excel Best and Worst Practices
+    path: /wGetStarted/Excel-Best-and-Worst-Practices.html
+  - title: Interject Shortkey Index
+    path: /wIndex/INTERJECT-Hotkey-Index.html
+  - title: Interject Hyperlinks
+    path: /wIndex/INTERJECT-Link-Index.html
+  - title: Interject Settings and Cache
+    path: /wIndex/SettingsCache.html
+  - title: Report Builder
+    path: /wIndex/ReportBuilder.html
+
 
 portal:
   - title: Interject Website Portal
