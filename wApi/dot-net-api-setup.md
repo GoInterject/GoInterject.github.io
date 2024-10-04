@@ -38,7 +38,7 @@ Interject allows data flow from custom sources through a web API. The Interject 
 
 ### Requirements
 
--  [Internet Information Services (IIS)](https://www.iis.net/){:target="_blank"}{:rel="noopener noreferrer"} (if hosting with IIS)
+- [Internet Information Services (IIS)](https://www.iis.net/){:target="_blank"}{:rel="noopener noreferrer"} (if hosting with IIS)
 - [.NET >= 7.0](https://dotnet.microsoft.com/en-us/download/dotnet){:target="_blank"}{:rel="noopener noreferrer"}
 - [.NET SDK](https://dotnet.microsoft.com/download){:target="_blank"}{:rel="noopener noreferrer"} (for developing)
 
