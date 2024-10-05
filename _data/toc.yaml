@@ -18,7 +18,7 @@ horizontalnav:
   path: /wTroubleshoot/Troubleshooting-Landing.html
   node: troubleshoot
 - title: Release Notes
-  path: /wReleaseNotes/2024-08_ReleaseNotes.html
+  path: /wReleaseNotes/2024-10_ReleaseNotes.html
   node: releaseNotes
 
 about:
@@ -259,31 +259,6 @@ index:
       path: /wIndex/FinCube---The-Financial-Cube.html
     - title: SegmentInfo - Segment Search
       path: /wIndex/SegmentInfo---Segment-Search.html
-  - title: Excel Best and Worst Practices
-    path: /wGetStarted/Excel-Best-and-Worst-Practices.html
-  - sectiontitle: Quick Tools
-    path: /wIndex/Quick-Tools-Landing.html
-    section:
-    - title: Panes Tools
-      path: /wIndex/QuickTools-Panes.html
-    - title: Formatting Tools
-      path: /wIndex/QuickTools-Format.html
-    - title: Formula Tools
-      path: /wIndex/QuickTools-Formula.html
-    - title: Editing Tools
-      path: /wIndex/QuickTools-Edit.html
-    - title: Naming Tools
-      path: /wIndex/QuickTools-Names.html
-    - title: Hyperlink Tools
-      path: /wIndex/QuickTools-Hyperlink.html
-    - title: Other Tools
-      path: /wIndex/QuickTools-Other.html
-  - title: Interject Shortkey Index
-    path: /wIndex/INTERJECT-Hotkey-Index.html
-  - title: Interject Hyperlinks
-    path: /wIndex/INTERJECT-Link-Index.html
-  - title: Interject Settings and Cache
-    path: /wIndex/SettingsCache.html
   - sectiontitle: Diagnostics
     path: /wIndex/Diagnostics.html
     section:
@@ -307,6 +282,34 @@ index:
       path: /wIndex/Diagnostics-ClearErrorLog.html
     - title: Re-initiate Interject
       path: /wIndex/Diagnostics-ReinitiateInterject.html
+  - sectiontitle: Quick Tools
+    path: /wIndex/Quick-Tools-Landing.html
+    section:
+    - title: Panes Tools
+      path: /wIndex/QuickTools-Panes.html
+    - title: Formatting Tools
+      path: /wIndex/QuickTools-Format.html
+    - title: Formula Tools
+      path: /wIndex/QuickTools-Formula.html
+    - title: Editing Tools
+      path: /wIndex/QuickTools-Edit.html
+    - title: Naming Tools
+      path: /wIndex/QuickTools-Names.html
+    - title: Hyperlink Tools
+      path: /wIndex/QuickTools-Hyperlink.html
+    - title: Other Tools
+      path: /wIndex/QuickTools-Other.html
+  - title: Excel Best and Worst Practices
+    path: /wGetStarted/Excel-Best-and-Worst-Practices.html
+  - title: Interject Shortkey Index
+    path: /wIndex/INTERJECT-Hotkey-Index.html
+  - title: Interject Hyperlinks
+    path: /wIndex/INTERJECT-Link-Index.html
+  - title: Interject Settings and Cache
+    path: /wIndex/SettingsCache.html
+  - title: Report Builder
+    path: /wIndex/ReportBuilder.html
+
 
 portal:
   - title: Interject Website Portal
@@ -367,6 +370,8 @@ Developer:
           path: /wApi/python-api-custom-functions.html
     - title: Java Api Setup
       path: /wApi/java-api-setup.html
+    - title: Pyinterject
+      path: /wDeveloper/Pyinterject.html
 - sectiontitle: Developing With Interject
   path: /wGetStarted/Developing-with-INTERJECT.html
   section:
@@ -480,7 +485,7 @@ troubleshoot:
 
 releaseNotes:
 - sectiontitle: Versions
-  path: /wReleaseNotes/2024-08_ReleaseNotes.html
+  path: /wReleaseNotes/2024-10_ReleaseNotes.html
   section:
     - title: 2.5.0.22
       path: /wReleaseNotes/2023-10_ReleaseNotes.html
@@ -502,7 +507,7 @@ releaseNotes:
     - title: December
       path: /wReleaseNotes/2023-12_ReleaseNotes.html
 - sectiontitle: 2024
-  path: /wReleaseNotes/2024-08_ReleaseNotes.html
+  path: /wReleaseNotes/2024-10_ReleaseNotes.html
   section:
     - title: January
       path: /wReleaseNotes/2024-01_ReleaseNotes.html
@@ -514,3 +519,7 @@ releaseNotes:
       path: /wReleaseNotes/2024-07_ReleaseNotes.html
     - title: August
       path: /wReleaseNotes/2024-08_ReleaseNotes.html
+    - title: September
+      path: /wReleaseNotes/2024-09_ReleaseNotes.html
+    - title: October
+      path: /wReleaseNotes/2024-10_ReleaseNotes.html

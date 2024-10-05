@@ -21,26 +21,31 @@ This is an API built on top of Python and Flask for the Interject Excel Add-in. 
 
 In this walkthrough we will setup a Python API locally which can be used to manage dataflow to and from an Interject Report. 
 
-## Requirements
+### Requirements
 
-Before the api can be run you need to ensure that your system meets the following requirements:
+* [Python](https://www.python.org/downloads/){:target="_blank"}{:rel="noopener noreferrer"} >= 3.9
 
-- Python 3.4 or greater must be installed
-- Git must be installed (optional)
+Once Python is installed the dependencies for the Interject API include:
 
-Once Python is installed the dependencies for the Interject Api include:
-
-* Flask >= 0.12.1
-* Flask-RESTful >= 0.3.6
-* SQLAlchemy >= 1.1.15
-* pycryptodome >= 3.4.0
-* pyodbc >= 4.0.21
-* mysqlclient >= 1.3.12
-* urllib3
+* poetry (for build)
+* typer
+* fastapi
+* uvicorn
+* pydantic
+* pyjwt
+* pandas
+* sqlalchemy
+* pyodbc
+* loguru
 * requests
-* pyOpenSSL (when running api with HTTPS)
+* pyOpenSSL (when running API with HTTPS)
 
-## Get The Code
+<blockquote class=highlight_note>
+<b>Note:</b> For the most current version requirements of the dependencies, see the <a href="https://github.com/GoInterject/ids-python-api/blob/master/pyproject.toml" target="_blank" rel="noopener noreferrer">repo</a>.
+</blockquote>
+<br>
+
+### Get The Code
 
 Start by cloning the repository to your system.
 
@@ -59,38 +64,41 @@ If you do not have git installed or prefer a different method, simply download t
 ![](/images/PythonApiSetup/temp_gitlab_download_repo.png)
 <br>
 
-## Install The Python Package
+### Install The Python Package
 
-After cloning the repository install the package locally to the python environment using one of the following commands.
+After cloning the repository, install the package locally to the Python environment using one of the following commands.
 
-### Linux additional requirements
+#### Linux Additional Requirements
 
 If you are using a linux system it will be important to install the additional 2 tools:
-1. install mysql_config (for mysqlclient/MySQL connections): 
 
-    ```
+1. Install mysql_config (for mysqlclient/MySQL connections): 
+
+    ```bash
     sudo apt-get install libmysqlclient-dev
     ```
-2. install [Microsofts ODBC driver](https://docs.microsoft.com/en-us/sql/connect/odbc/linux-mac/installing-the-microsoft-odbc-driver-for-sql-server) (for pyodbc/MSSQL connections) 
 
+2. Install [Microsofts ODBC driver](https://docs.microsoft.com/en-us/sql/connect/odbc/linux-mac/installing-the-microsoft-odbc-driver-for-sql-server){:target="_blank"}{:rel="noopener noreferrer"} (for pyodbc/MSSQL connections) 
 
-### Install Package
+#### Install Package
 
 ```python
 python setup.py develop
 ``` 
+
 or 
+
 ```python
 python setup.py -e .
 ```
 
-## Setup API
+### Setup API
 
-### Get Template Config
+#### Get Template Config
 
-To run the API, settings related to its functionality need to be set. These are located in the file named <code>appconfig.py</code>. By default the source code has an example config named <code>example_appconfig.py</code> but this must be renamed to <code>appconfig.py</code>.
+To run the API, settings related to its functionality need to be set. These are located in the file named `appconfig.py`. By default the source code has an example config named `example_appconfig.py` but this must be renamed to `appconfig.py`.
 
-### Setup Connection Strings
+#### Setup Connection Strings
 
 Interject Data Connections contain an Api Connection String Name. In order to allow the API to connect to a Data Connection, it must be added to the `CONNECTIONSTRINGS` dictionary object following the format `'conn_string_name' : 'conn_string'`. As many connection strings as are desired to serve from the server can be added to this variable.
 
@@ -101,9 +109,9 @@ CONNECTIONSTRINGS = {
 }
 ```
 
-### Choose Controllers
+#### Choose Controllers
 
-In the <code>appconfig.py</code> file the variable, `CONTROLLERS` is an dictionary object with the types of database handles to be loaded by the flask server. Any of these controllers can be set to false and then will not require their dependent packages to be installed. For example if a user only wanted to use the API with a MySQL database then the controllers could be configured like below, which would not require `pandas` or `pymongo` packages to be installed.
+In the `appconfig.py` file the variable, `CONTROLLERS` is a dictionary object with the types of database handles to be loaded by the flask server. Any of these controllers can be set to false and then will not require their dependent packages to be installed. For example if a user only wanted to use the API with a MySQL database then the controllers could be configured like below, which would not require `pandas` or `pymongo` packages to be installed.
 
 ```python
 # Controllers define what python packages should be imported 
@@ -115,13 +123,12 @@ CONTROLLERS = {
 }
 ```
 
+#### Custom Functions
 
-### Custom Functions
-
-If the `MongoDB` or `Pandas` controllers are being utilized, then it is possible to first pull data into a custom python module before sending it as a outgoing response from the server. This functionality utilizes the `Pandas` python package and more information can be found in the [Python Api Custom Functions](/wApi/python-api-custom-functions.html) page.
+If the `MongoDB` or `Pandas` controllers are being utilized, then it is possible to first pull data into a custom python module before sending it as a outgoing response from the server. This functionality utilizes the `Pandas` python package and more information can be found in the [Python Api Custom Functions](/wApi/python-api-custom-functions.html){:target="_blank"}{:rel="noopener noreferrer"} page.
 
 
-## Running The API
+### Running The API
 
 Once settings have been configured, the server can be launched using the built-in flask server (`main.py`) or via the Twisted Web production ready server (`server.py`) using the following command:
 
@@ -129,6 +136,6 @@ Once settings have been configured, the server can be launched using the built-i
 python server.py
 ``` 
 
-## More Information
+### More Information
 
-For more information visit the source code and readme for the [project on GitHub](https://github.com/GoInterject/ids-python-api).
+For more information visit the source code and readme for the [project on GitHub](https://github.com/GoInterject/ids-python-api){:target="_blank"}{:rel="noopener noreferrer"}.
