@@ -111,7 +111,7 @@ CONNECTIONSTRINGS = {
 
 #### Choose Controllers
 
-In the `appconfig.py` file the variable, `CONTROLLERS` is an dictionary object with the types of database handles to be loaded by the flask server. Any of these controllers can be set to false and then will not require their dependent packages to be installed. For example if a user only wanted to use the API with a MySQL database then the controllers could be configured like below, which would not require `pandas` or `pymongo` packages to be installed.
+In the `appconfig.py` file the variable, `CONTROLLERS` is a dictionary object with the types of database handles to be loaded by the flask server. Any of these controllers can be set to false and then will not require their dependent packages to be installed. For example if a user only wanted to use the API with a MySQL database then the controllers could be configured like below, which would not require `pandas` or `pymongo` packages to be installed.
 
 ```python
 # Controllers define what python packages should be imported 
