@@ -15,12 +15,16 @@ description: Interject uses the Transport Layer Security (TLS). TLS is a cryptog
 
 Interject uses the Transport Layer Security (TLS). TLS is a cryptographic protocol designed to provide secure communication over a computer network. It ensures data privacy and integrity between two communicating applications by encrypting the information exchanged.
 
+<br>
+
 ### TLS 1.0/1.1 End of Support
 
 For Interject version 2.3.34 and earlier, the default is TLS 1.1. Support for TLS 1.0 and TLS 1.1 will end by October 31, 2024. For more info, see [here](https://learn.microsoft.com/en-us/lifecycle/announcements/tls-support-ending-10-31-2024){:target="_blank"}{:rel="noopener noreferrer"}. Your options are:
 
  - [Upgrade Interject](https://portal.gointerject.com/download-interject.html)
  - Update to TLS 1.2 by [enabling TLS 1.2](#enabling-tls-12-for-earlier-interject-version) and [changing the settings](#set-tls-12-setting-via-install-code)
+
+<br>
 
 ### Enabling TLS 1.2 for Earlier Interject Version
 
@@ -66,6 +70,7 @@ The installation location is on the **Add-Ins** tab:
 Restart the Addin Manger.
 
 ![](/images/TLS/StartAddinManager.png)
+<br>
 <br>
 
 ### Set TLS 1.2 Setting via Install Code
