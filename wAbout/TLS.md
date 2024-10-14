@@ -91,7 +91,7 @@ Restart Excel to ensure TLS 1.2 setting is active.
 
 ### Set TLS Settings via IDSSettings File
 
-You can manual set the TLS setting via the **IDSSetting.xml**.
+You can manual set the TLS setting via the **IDSSettings.xml**.
 
 **Step 1:** Open the Diagnostics, select **Open User Folders** and click **Execute Selected Action**.
 
