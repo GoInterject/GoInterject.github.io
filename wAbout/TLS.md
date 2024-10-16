@@ -3,13 +3,13 @@ title: Interject TLS for HTTPS
 filename: "TLS.md"
 layout: custom
 keywords: [Security, Privacy, Data Governance, Transport, Config, IDSSettings, Install Code]
-headings: ["Overview", "TLS 1.0/1.1 End of Support", "Set TLS Settings via IDSSettings File", "Enabling TLS 1.2 for the Addin Manager"]
+headings: ["Overview", "TLS 1.0/1.1 End of Support", "#default-tls-for-interject", "Set TLS Settings via IDSSettings File", "Enabling TLS 1.2 for the Addin Manager"]
 links: ["https://learn.microsoft.com/en-us/lifecycle/announcements/tls-support-ending-10-31-2024", "https://portal.gointerject.com/download-interject.html", "#set-tls-settings-via-idssettings-file"]
 image_dir: "TLS"
 images: [
 	{file: "OpenUserFolders", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Open User Folders", report: "", ribbon: "", config: ""},
 	{file: "SettingsFolder", type: "png", site: "Windows", cat: "Explorer", sub: "", report: "", ribbon: "", config: ""},
-	{file: "TLSSetting", type: "png", site: "Windoes", cat: "Notepad", sub: "", report: "", ribbon: "", config: ""},
+	{file: "TLSSetting", type: "png", site: "Windows", cat: "Notepad", sub: "", report: "", ribbon: "", config: ""},
 	{file: "ExcelFileTab", type: "png", site: "Excel", cat: "", sub: "", report: "", ribbon: "", config: ""},
 	{file: "FileTabOptions", type: "png", site: "Excel", cat: "", sub: "", report: "", ribbon: "", config: ""},
 	{file: "InterjectInstallationLocation", type: "png", site: "Excel", cat: "Options", sub: "", report: "", ribbon: "", config: ""},
@@ -35,6 +35,22 @@ For Interject version 2.3.34 and earlier, the default is TLS 1.1. Support for TL
  1. [Upgrade Interject](https://portal.gointerject.com/download-interject.html)
 
  2. Update to TLS 1.2 by [changing the settings](#set-tls-settings-via-idssettings-file)
+
+<br>
+
+### Default TLS for Interject
+
+Interject's Addin and Addin Manager both use TLS 1.2 as default starting with Interject version 2.5.2.11. Older versions do not.
+
+Release for versions 2.5.0.14 to 2.5.1.1:
+
+- Addin - Uses TLS 1.2 as default
+- Addin Manager - Uses TLS 1.1 as default
+
+Release for versions below 2.5.0.14:
+
+- Addin - Uses TLS 1.1 as default
+- Addin Manager - Uses TLS 1.1 as default
 
 <br>
 
@@ -76,7 +92,7 @@ Restart Excel to ensure your settings are active.
 
 In addition to setting the TLS setting for the Addin, you can also optionally set the Addin Manager to use System default TLS settings. This means that the .NET Framework will automatically choose the most secure and highest TLS version supported by both the client (your application) and the server it is communicating with. Typically, this is TLS 1.2 or TLS 1.3 on modern systems.
 
-The Addin Manager typically does not use TLS calls except for some logging activities. To enable this, you must edit a config file located in the Interject installation folder.
+To ensure your system's default TLS setting is used by the Addin Manager you must edit a config file located in the Interject installation folder.
 
 **Step 1:** To determine where Interject is installed, open Excel and click on the File tab:
 
