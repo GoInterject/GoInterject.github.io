@@ -40,14 +40,19 @@ For Interject version 2.3.34 and earlier, the default is TLS 1.1. Support for TL
 
 ### Default TLS for Interject
 
-Interject's Addin and Addin Manager both use TLS 1.2 as default starting with Interject version 2.5.2.11. Older versions do not.
+Interject's Addin and Addin Manager have a default TLS setting based on the Interject version:
 
-Release for versions 2.5.0.14 to 2.5.1.1:
+Interject versions 2.5.2.12 and above:
+
+- Addin - Uses TLS 1.2 as default
+- Addin Manager - Uses TLS 1.2 as default
+
+Interject versions 2.5.0.14 through 2.5.2.11:
 
 - Addin - Uses TLS 1.2 as default
 - Addin Manager - Uses TLS 1.1 as default
 
-Release for versions below 2.5.0.14:
+Interject versions below 2.5.0.14:
 
 - Addin - Uses TLS 1.1 as default
 - Addin Manager - Uses TLS 1.1 as default
