@@ -3,7 +3,7 @@ title: Interject TLS for HTTPS
 filename: "TLS.md"
 layout: custom
 keywords: [Security, Privacy, Data Governance, Transport, Config, IDSSettings, Install Code]
-headings: ["Overview", "TLS 1.0/1.1 End of Support", "#default-tls-for-interject", "Set TLS Settings via IDSSettings File", "Enabling TLS 1.2 for the Addin Manager"]
+headings: ["Overview", "TLS 1.0/1.1 End of Support", "Default TLS for Interject", "Set TLS Settings via IDSSettings File", "Enabling System Default TLS Settings for the Addin Manager"]
 links: ["https://learn.microsoft.com/en-us/lifecycle/announcements/tls-support-ending-10-31-2024", "https://portal.gointerject.com/download-interject.html", "#set-tls-settings-via-idssettings-file"]
 image_dir: "TLS"
 images: [
