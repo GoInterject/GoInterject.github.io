@@ -2,14 +2,15 @@
 title: TLS Changes
 filename: "TLSUsers.md"
 layout: custom
-keywords: []
-headings: ["Overview"]
-links: []
-image_dir: ""
+keywords: ["tls", "resolution", "update"]
+headings: ["Overview", "Who This Impacts", "How to Solve Issue", "Update Interject To the Latest Version", "Updating From Version 2.5+", "Updating From Version 2.3.34", "Manually Overriding TLS Settings", "Contact Interject"]
+links: ["https://learn.microsoft.com/en-us/lifecycle/announcements/tls-support-ending-10-31-2024", "https://portal.gointerject.com/download-interject.html", "/wAbout/TLS.html#set-tls-settings-via-idssettings-file", "/wAbout/Updating-INTERJECT.html", "/wAbout/Uninstalling.html", "/wPortal/DownloadInterject.html", "/wAbout/SharedComputer.html", "/wAbout/TLS.html", "mailto:help@gointerject.com", "/wTroubleshoot/Reporting-A-Problem.md#send-report-to-interject"]
+image_dir: "TLSUser"
 images: [
-    {file: "", type: "png", site: "Addin", cat: "", sub: "", report: "", ribbon: "", config: ""}
+	{file: "GetUpdate", type: "png", site: "Add-in", cat: "Check for Updates", sub: "", report: "", ribbon: "", config: ""},
+	{file: "UserSupport", type: "png", site: "Add-in", cat: "User Support", sub: "", report: "", ribbon: "", config: ""}
 ]
-description: 
+description: Microsoft announced that their Azure Cloud will drop support for TLS 1.0 and 1.1 on October 31, 2024 to improve their security posture. After that date, applications interacting with Azure cloud services using TLS 1.0 and 1.1 will stop working.
 ---
 * * *
 
