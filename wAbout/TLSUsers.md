@@ -15,15 +15,29 @@ description:
 
 ## Overview
 
-Microsoft [announced](https://learn.microsoft.com/en-us/lifecycle/announcements/tls-support-ending-10-31-2024){:target="_blank"}{:rel="noopener noreferrer"} that all TLS communications must use version 1.2 starting October 31, 2024. After that date, any communication using TLS 1.0 or 1.1 will not work.
+Microsoft [announced](https://learn.microsoft.com/en-us/lifecycle/announcements/tls-support-ending-10-31-2024){:target="_blank"}{:rel="noopener noreferrer"} that their Azure Cloud will drop support for TLS 1.0 and 1.1 on October 31, 2024 to improve their security posture. After that date, applications interacting with Azure cloud services using TLS 1.0 and 1.1 will stop working.
 
-This means users on versions of Interject that use TLS 1.1 will need to either:
+<br>
 
-- [Update Interject](https://portal.gointerject.com/download-interject.html)
+### Who This Impacts
 
-- [Update TLS](/wAbout/TLS.html#set-tls-settings-via-idssettings-file) to TLS 1.2.
+- Interject users on all version before 2.5.2.12.
 
-### Update Interject From Version 2.5+
+<br>
+
+### How to Solve Issue
+
+There are 2 primary solutions for Interject users. Most users should attempt to update to the latest version. Users with specific needs should consider the manual override option:
+
+- [Update Interject to 2.5.2.12 or above](https://portal.gointerject.com/download-interject.html)
+
+- [Manually override TLS in settings files](/wAbout/TLS.html#set-tls-settings-via-idssettings-file)
+
+<br>
+
+### Update Interject To the Latest Version
+
+#### Updating From Version 2.5+
 
 When updating Interject from a 2.5 version and above, you simply have to click the **Check for Updates** button on the Interject ribbon. Then click **Get Update**:
 
@@ -32,8 +46,7 @@ When updating Interject from a 2.5 version and above, you simply have to click t
 
 For detailed instructions about updating Interject, see [here](/wAbout/Updating-INTERJECT.html).
 
-
-### Update Interject From Version 2.3.34
+#### Updating From Version 2.3.34
 
 If you have Interject version 2.3.34, you will have to uninstall this version first.
 
@@ -43,9 +56,13 @@ If you have Interject version 2.3.34, you will have to uninstall this version fi
 
 3. [Install](/wAbout/SharedComputer.html) Interject
 
-### Updating TLS 1.2
+<br>
+
+### Manually Overriding TLS Settings
 
 For those who still want to use an older version of Interject, you can still update the Interject settings to use TLS 1.2. For more info, see [here](/wAbout/TLS.html).
+
+<br>
 
 ### Contact Interject
 
