@@ -453,6 +453,8 @@ troubleshoot:
 - sectiontitle: Add-in Errors
   path: /wTroubleshoot/App-Errors.html
   section:
+    - title: TLS Changes
+      path: /wAbout/TLSUsers.html
     - title: Excel Drill Animations
       path: /wTroubleshoot/Drill-Animations.html
     - title: Add-ins Missing
