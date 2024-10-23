@@ -68,7 +68,7 @@ def process_folder(folder_path):
             # print(root, dirs, file_name)
             if file_name.endswith('.md'):
                 file_path = os.path.join(root, file_name)
-                process_md_file(file_path, file_name)
+                process_md_file(file_path)
 
 if __name__ == "__main__":
 

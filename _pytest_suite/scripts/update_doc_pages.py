@@ -13,8 +13,8 @@ def run_script(script_path):
 
 if __name__ == "__main__":
     scripts = [
-        "_pytest_suite/scripts/filename.py",
-        # "_pytest_suite/scripts/image_dir.py",
+        # "_pytest_suite/scripts/filename.py",
+        "_pytest_suite/scripts/image_dir.py",
         # "_pytest_suite/scripts/images.py",
         # "_pytest_suite/scripts/headings.py",
         # "_pytest_suite/scripts/links.py",

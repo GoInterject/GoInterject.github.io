@@ -5,7 +5,7 @@ layout: custom
 keywords: []
 headings: ["Overview"]
 links: []
-image_dir: ""
+image_dir: "DiagnosticsGarbageCollection"
 images: []
 description: The "Force Garbage Collection on Dead Memory" command in our Diagnostics form is a powerful tool designed to optimize memory usage by explicitly invoking the garbage collection process.
 ---
