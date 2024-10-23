@@ -11,7 +11,11 @@ images: [
     {file: "BugFix1On", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""}, 
     {file: "BugFix1Off", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""}, 
     {file: "BugFix2On", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""}, 
-    {file: "BugFix2Off", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""}
+    {file: "BugFix2Off", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""},
+    {file: "MacroSecuritySettings", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""},
+	{file: "LoginCompare", type: "png", site: "Add-in", cat: "Login", sub: "", report: "", ribbon: "", config: ""},
+	{file: "Webview2True", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""},
+	{file: "Webview2False", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""}
     ]
 description: The "Apply Special Features" in the Interject Diagnostics Pane allows users to apply certain configurations and bug fixes.
 ---

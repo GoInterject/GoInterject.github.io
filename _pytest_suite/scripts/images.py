@@ -17,7 +17,7 @@ import json
 
 # If true: if the count between the images in the front matter is different from the number of images found in the document:
 # will remove front matter image entry and insert a new image entry
-INSERT_NEW_ENTRY = False
+INSERT_NEW_ENTRY = True
 # Replace with the path to the folder containing .md files
 FOLDER_PATH = r"D:\Users\samuelr\Documents\GitHub\GoInterject.github.io"
 
@@ -221,7 +221,7 @@ def process_md_file(file_path):
     # Images found in file and the count does not match the number of images in front matter
     # Do not update the file
     else:
-        print("ERROR: File", file_path, "not updated: 'images' and 'filenames' count is not equal") 
+        print(f"ERROR: File {file_path} not updated: images in front matter ({len(images_from_front_matter)}) and in file ({len(image_filenames_list)}) are not equal") 
 
 def process_folder(folder_path):
     for root, dirs, files in os.walk(folder_path):

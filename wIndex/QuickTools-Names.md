@@ -27,6 +27,7 @@ images: [
 	{file: "SelectedNameRangeBefore", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, 
 	{file: "SelectedNameRangeMiddle", type: "png", site: "Add-in", cat: "Quick Tools", sub: "", report: "", ribbon: "", config: ""}, 
 	{file: "SelectedNameRangeAfter", type: "png", site: "Excel", cat: "Name Manager", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "NewTab", type: "png", site: "Add-in", cat: "Report", sub: "InterjectConfig", report: "", ribbon: "", config: ""}, 
 	{file: "PrefixSuffix1", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, 
 	{file: "PrefixSuffix2", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, 
 	{file: "PrefixSuffix3", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, 

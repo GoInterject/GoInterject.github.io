@@ -7,7 +7,6 @@ headings: ["Overview", "The Staff Page", "External Admins", "View, Edit, Activat
 links: ["https://portal.gointerject.com/", "/wPortal/INTERJECT-Roles.html#clientadmin-role", "/wPortal/MFA.html", "/wPortal/User-Profile.html", "/wPortal/AddUser.html"]
 image_dir: "StaffPage"
 images: [
-    {file: "SelectCompany", type: "png", site: "Portal", cat: "Home", sub: "Company", report: "", ribbon: "", config: ""}, 
     {file: "ClickStaff", type: "png", site: "Portal", cat: "Sidebar", sub: "", report: "", ribbon: "", config: ""}, 
     {file: "Staff", type: "png", site: "Portal", cat: "Organization Staff", sub: "", report: "", ribbon: "", config: ""}, 
     {file: "ExternalAdmins", type: "png", site: "Portal", cat: "Organization Staff", sub: "", report: "", ribbon: "", config: ""}, 

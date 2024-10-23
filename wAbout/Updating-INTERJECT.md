@@ -7,7 +7,6 @@ headings: ["Overview", "Updating to the Newest Version of Interject"]
 links: ["https://www.youtube.com/watch?v=lNu5AjM7Ofo", "/wAbout/Logging-In.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#check-for-updates"]
 image_dir: "Updating"
 images: [
-	{file: "01", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, 
 	{file: "02", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, 
 	{file: "03", type: "png", site: "Add-in", cat: "Check for Updates", sub: "", report: "", ribbon: "Simple", config: ""}, 
 	{file: "04", type: "png", site: "Add-in", cat: "Update", sub: "", report: "", ribbon: "Simple", config: ""}, 

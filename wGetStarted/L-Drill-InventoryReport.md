@@ -9,6 +9,8 @@ image_dir: "L-Drill-Inventory"
 images: [
 	{file: "01", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Inventory by Category", ribbon: "", config: ""}, 
 	{file: "02", type: "png", site: "Excel", cat: "Freeze Panes", sub: "", report: "Inventory by Category", ribbon: "", config: ""}, 
+	{file: "02b", type: "png", site: "Excel", cat: "Right Click Menu", sub: "Clear Contents", report: "Inventory by Category", ribbon: "", config: ""}, 
+	{file: "02c", type: "png", site: "Excel", cat: "Right Click Menu", sub: "Remove Hyperlinks", report: "Inventory by Category", ribbon: "", config: ""}, 
 	{file: "03", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, 
 	{file: "04", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, 
 	{file: "05", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, 

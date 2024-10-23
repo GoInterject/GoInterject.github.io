@@ -9,9 +9,8 @@ image_dir: "L-Create-Dropdowns"
 images: [
 	{file: "01", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "Interject Customer Collections", ribbon: "Simple", config: ""}, 
 	{file: "02", type: "png", site: "Add-in", cat: "Quick Tools", sub: "", report: "Customer Aging Summary", ribbon: "Simple", config: ""}, 
-	{file: "03", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: "Yes"}, 
-	{file: "04", type: "png", site: "Excel", cat: "Name Manger", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, 
-	{file: "05", type: "png", site: "Excel", cat: "Name Manger", sub: "New Name", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, 
+	{file: "QuickTools", type: "png", site: "Add-in", cat: "Quick Tools", sub: "", report: "Customer Aging Summary", ribbon: "Simple", config: ""}, 
+	{file: "EnterRangeName", type: "png", site: "Add-in", cat: "Quick Tools", sub: "Create Range Name", report: "", ribbon: "Simple", config: ""}, 
 	{file: "06", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, 
 	{file: "07", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, 
 	{file: "08", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Customer Aging Summary", ribbon: "", config: "Yes"}, 

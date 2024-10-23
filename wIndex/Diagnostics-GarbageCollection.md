@@ -6,7 +6,9 @@ keywords: []
 headings: ["Overview"]
 links: []
 image_dir: "DiagnosticsGarbageCollection"
-images: []
+images: [
+    {file: "ForceGarbageCollection", type: "png", site: "Addin", cat: "Diagnostics", sub: "Force Garbage Collector on Dead Memory", report: "", ribbon: "", config: "Yes"}
+]
 description: The "Force Garbage Collection on Dead Memory" command in our Diagnostics form is a powerful tool designed to optimize memory usage by explicitly invoking the garbage collection process.
 ---
 * * *

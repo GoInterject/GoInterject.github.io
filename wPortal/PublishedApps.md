@@ -13,7 +13,8 @@ images: [
 	{file: "EditDataPortal", type: "png", site: "Portal", cat: "Published Apps", sub: "App Details", report: "", ribbon: "", config: ""},
 	{file: "DataPortalsInAppReports", type: "png", site: "Portal", cat: "Published Apps", sub: "App Details", report: "", ribbon: "", config: ""},
 	{file: "AddDataPortalToApp", type: "png", site: "Portal", cat: "Published Apps", sub: "App Details", report: "", ribbon: "", config: ""},
-	{file: "DownloadReportInformation", type: "png", site: "Portal", cat: "Published Apps", sub: "App Details", report: "", ribbon: "", config: ""}
+	{file: "DownloadReportInformation", type: "png", site: "Portal", cat: "Published Apps", sub: "App Details", report: "", ribbon: "", config: ""},
+	{file: "DownloadReportInformationCSV", type: "png", site: "Excel", cat: "", sub: "", report: "", ribbon: "", config: ""}
 ]
 description: The Published Apps page on the Portal site displays all of your company's published apps. A published app is a collection of data portals, connections and Report Library links. Published apps are configured by Interject for a company to allow them to distribute the app to subscribers.
 ---
