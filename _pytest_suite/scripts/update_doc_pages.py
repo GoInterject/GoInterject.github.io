@@ -1,6 +1,8 @@
 import subprocess
 
-# Updates all front matter in the doc pages (headings, links, filenames, image directory, images)
+# Updates all front matter in the doc pages:
+# headings, links, filenames, image directory, images
+
 # Also outputs images data
 
 def run_script(script_path):
@@ -11,7 +13,11 @@ def run_script(script_path):
 
 if __name__ == "__main__":
     scripts = [
-        "support_assistant/scripts/website/links.py",
+        "_pytest_suite/scripts/filename.py",
+        # "_pytest_suite/scripts/image_dir.py",
+        # "_pytest_suite/scripts/images.py",
+        # "_pytest_suite/scripts/headings.py",
+        # "_pytest_suite/scripts/links.py",
     ]
 
     for script_path in scripts:
