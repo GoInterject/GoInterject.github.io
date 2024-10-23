@@ -7,16 +7,16 @@ headings: ["Overview", "Add User", "Adding Details", "Password", "Create User", 
 links: ["/wPortal/StaffPage.html", "/wPortal/INTERJECT-Roles.html#clientadmin-role", "#welcome-email", "/wPortal/Altering-User-Passwords.html", "/wPortal/INTERJECT-Roles.html"]
 image_dir: "AddUser"
 images: [
-    {file: "AddUser", type: "png", site: "Portal", cat: "Organization Staff", sub: "", report: "", ribbon: "", config: ""}, 
-    {file: "UserProfile", type: "png", site: "Portal", cat: "User Profile", sub: "", report: "", ribbon: "", config: ""}, 
-    {file: "MoreOptions", type: "png", site: "Portal", cat: "User Profile", sub: "", report: "", ribbon: "", config: ""}, 
-    {file: "FillInNewUser", type: "png", site: "Portal", cat: "User Profile", sub: "", report: "", ribbon: "", config: ""}, 
-    {file: "SetPassword", type: "png", site: "Portal", cat: "User Profile", sub: "", report: "", ribbon: "", config: ""}, 
-    {file: "Create", type: "png", site: "Portal", cat: "User Profile", sub: "", report: "", ribbon: "", config: ""}, 
-    {file: "ChangesSaved", type: "png", site: "Portal", cat: "User Profile", sub: "Popup", report: "", ribbon: "", config: ""}, 
-    {file: "SendEmail", type: "png", site: "Portal", cat: "User Profile", sub: "", report: "", ribbon: "", config: ""}, 
-    {file: "Roles", type: "png", site: "Portal", cat: "User Profile", sub: "", report: "", ribbon: "", config: ""}
-]
+	{file: "StaffPage", type: "png", site: "Portal", cat: "Organization Staff", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "UserProfile", type: "png", site: "Portal", cat: "User Profile", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "MoreOptions", type: "png", site: "Portal", cat: "User Profile", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "FillInNewUser", type: "png", site: "Portal", cat: "User Profile", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "SetPassword", type: "png", site: "Portal", cat: "User Profile", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Create", type: "png", site: "Portal", cat: "User Profile", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ChangesSaved", type: "png", site: "Portal", cat: "User Profile", sub: "Popup", report: "", ribbon: "", config: ""}, 
+	{file: "SendEmail", type: "png", site: "Portal", cat: "User Profile", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Roles", type: "png", site: "Portal", cat: "User Profile", sub: "", report: "", ribbon: "", config: ""}
+	]
 description: On the Portal site from the Staff page, ClientAdmins can add a user to their organization.
 ---
 * * *

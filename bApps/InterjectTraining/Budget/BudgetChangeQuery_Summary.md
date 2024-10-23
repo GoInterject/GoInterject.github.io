@@ -7,7 +7,7 @@ headings: ["Overview"]
 links: []
 image_dir: "WCNTraining/Budget"
 images: [
-	{file: "BudChangeQuery_Summary_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
+	{file: "Budget/BudChangeQuery_Summary_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
 	]
 description: The Summary tab is a summarized view of the saved budgets for the account groupings, with many filter options.
 ---

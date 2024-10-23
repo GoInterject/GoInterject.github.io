@@ -7,7 +7,7 @@ headings: ["Overview"]
 links: []
 image_dir: "WCNTraining/Budget"
 images: [
-	{file: "BudChangeQuery_Detail_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
+	{file: "Budget/BudChangeQuery_Detail_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
 	]
 description: This tab of the Budget Change Query tool provides a detailed overview of budgets with several filtering options.
 ---

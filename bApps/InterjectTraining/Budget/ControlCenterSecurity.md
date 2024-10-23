@@ -7,20 +7,20 @@ headings: ["Overview", "Do I have security rights to use these tools?", "Budget 
 links: ["/bApps/InterjectTraining/Budget/ControlCenter.html", "/bApps/InterjectTraining/Budget/ControlCenter.html", "/bApps/InterjectTraining/Budget/ControlCenter.html"]
 image_dir: "WCNTraining/Budget"
 images: [
-	{file: "CapitalInput_DPANavigation", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "CapitalInput_DPAWindow", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_ControlCenter1District", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetTemplate_LockLevelError", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_LockLevel1District", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_ControlCenter2Districts", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_LockLevel2Districts", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "CapitalInput_ControlCenterLockLevel", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "CapitalInput_Error_LockLevel", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "ProjectionUpload_ControlCenter1District", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "ProjectionTemplate_LockLevelError", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "ProjectionUpload_LockLevel1District", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "ProjectionUpload_ControlCenter2Districts", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "ProjectionUpload_LockLevel2Districts", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
+	{file: "Budget/CapitalInput_DPANavigation", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/CapitalInput_DPAWindow", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_ControlCenter1District", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetTemplate_LockLevelError", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_LockLevel1District", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_ControlCenter2Districts", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_LockLevel2Districts", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/CapitalInput_ControlCenterLockLevel", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/CapitalInput_Error_LockLevel", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/ProjectionUpload_ControlCenter1District", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/ProjectionTemplate_LockLevelError", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/ProjectionUpload_LockLevel1District", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/ProjectionUpload_ControlCenter2Districts", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/ProjectionUpload_LockLevel2Districts", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
 	]
 description: The Control Center handles access rights for the Budget Template, Budget Upload, Capital Input, Projections Template, and Projections Upload tools. This page details where to find the District Position Assignment, where in each tool you can find the tool's lock level, the messages you'll see if trying to save outside your access rights, and the special circumstance of Regional Controllers for the Budget Tool.
 ---

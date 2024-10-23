@@ -7,9 +7,9 @@ headings: ["Overview", "Capital and the Control Center"]
 links: ["/bApps/InterjectTraining/Budget/ControlCenter.html", "/bApps/InterjectTraining/Budget/ControlCenter.html"]
 image_dir: "WCNTraining/Capital"
 images: [
-	{file: "ReviewDateSummary_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Capital/ReviewDateSummary_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
 	{file: "Capital/ReviewDateSummary_BuildingsDetail", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "ControlCenter_SimpleExample", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
+	{file: "Capital/ControlCenter_SimpleExample", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
 	]
 description: Pull in Capital amounts grouped by Asset group into the Review Date buckets.
 ---
