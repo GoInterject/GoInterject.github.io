@@ -4,7 +4,7 @@ filename: "MFA.md"
 layout: custom
 keywords: [2fa, login, credentials, security, email confirmation, authenticator app]
 headings: ["Overview", "Enable MFA for a User", "Login With the Authenticator App", "Login With an Email Confirmation"]
-links: ["https://docs.gointerject.com/wAbout/Federated-Login-Design.html", "https://docs.gointerject.com/wPortal/INTERJECT-Roles.html#clientadmin-role", "https://portal.gointerject.com/login.html"]
+links: ["https://docs.gointerject.com/wDeveloper/Federated-Login-Design.html", "https://docs.gointerject.com/wPortal/INTERJECT-Roles.html#clientadmin-role", "https://portal.gointerject.com/login.html"]
 image_dir: "MFA"
 images: [
     {file: "SelectStaff", type: "png", site: "Portal", cat: "Sidebar", sub: "", report: "", ribbon: "", config: ""}, 
@@ -28,7 +28,7 @@ Multi-factor authentication (MFA), also known as two-factor authentication (2FA)
 Interject supports MFA via email confirmation or an Authenticator App and it can be set up for any user within your organization.
 
 <blockquote class=highlight_note>
-<b>Note:</b> Interject MFA only works for Interject credentials. Users that use a federated login are managed by their Identity Provider (see <a href="https://docs.gointerject.com/wAbout/Federated-Login-Design.html">here</a> for more info). In addition, only <a href="https://docs.gointerject.com/wPortal/INTERJECT-Roles.html#clientadmin-role">ClientAdmins</a> can set up MFA.
+<b>Note:</b> Interject MFA only works for Interject credentials. Users that use a federated login are managed by their Identity Provider (see <a href="https://docs.gointerject.com/wDeveloper/Federated-Login-Design.html">here</a> for more info). In addition, only <a href="https://docs.gointerject.com/wPortal/INTERJECT-Roles.html#clientadmin-role">ClientAdmins</a> can set up MFA.
 </blockquote>
 
 ### Enable MFA for a User

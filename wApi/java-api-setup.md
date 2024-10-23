@@ -4,7 +4,7 @@ title:  Java API Setup
 filename: "java-api-setup.md"
 keywords: [data api, web api, java, setup, spring framework]
 headings: ["Overview", "Requirements", "Get the Code", "Setup", "Run API", "Change Host and Port", "Development Docs", "Interject Docs"]
-links: ["https://spring.io/projects/spring-framework", "https://www.oracle.com/java/technologies/downloads/", "https://maven.apache.org/download.cgi", "https://github.com/GoInterject/ids-java-api.git", "mailto:help@gointerject.com", "https://github.com/GoInterject/ids-java-api/archive/refs/heads/main.zip", "/wIndex/jColumnDef.html", "/wPortal/Data-Portals.html#overview-of-parameters", "/wIndex/ReportFixed.html", "/wIndex/ReportRange.html", "/wIndex/ReportSave.html", "/wIndex/ReportVariable.html", "/wGetStarted/L-Dev-Error-Handling.html"]
+links: ["https://spring.io/projects/spring-framework", "https://www.oracle.com/java/technologies/downloads/", "https://maven.apache.org/download.cgi", "https://github.com/GoInterject/ids-java-api.git", "mailto:help@gointerject.com", "https://github.com/GoInterject/ids-java-api/archive/refs/heads/main.zip", "/wFunctions/jColumnDef.html", "/wPortal/Data-Portals.html#overview-of-parameters", "/wFunctions/ReportFixed.html", "/wFunctions/ReportRange.html", "/wFunctions/ReportSave.html", "/wFunctions/ReportVariable.html", "/wDeveloper/L-Dev-Error-Handling.html"]
 image_dir: "API"
 images: [
 	{file: "JavaDownloadZip", type: "png", site: "Github", cat: "ids-java-api", sub: "", report: "", ribbon: "", config: ""}
@@ -104,11 +104,11 @@ There are docs in the repo pertaining to setting up Interject reports and functi
 | File | Description |
 |---|---|
 | example.xlsx | An example Excel workbook that interacts with the API endpoints |
-| formula_jcolumndef | How to set up the [jColumnDef](/wIndex/jColumnDef.html) formula |
+| formula_jcolumndef | How to set up the [jColumnDef](/wFunctions/jColumnDef.html) formula |
 | portal_parameters | How to set up Interject [parameters](/wPortal/Data-Portals.html#overview-of-parameters) |
-| report_fixed | How to set up an Interject [ReportFixed](/wIndex/ReportFixed.html) |
-| report_range | How to set up an Interject [ReportRange](/wIndex/ReportRange.html) |
-| report_save | How to set up an Interject [ReportSave](/wIndex/ReportSave.html) |
-| report_variable | How to set up an Interject [ReportVariable](/wIndex/ReportVariable.html) |
+| report_fixed | How to set up an Interject [ReportFixed](/wFunctions/ReportFixed.html) |
+| report_range | How to set up an Interject [ReportRange](/wFunctions/ReportRange.html) |
+| report_save | How to set up an Interject [ReportSave](/wFunctions/ReportSave.html) |
+| report_variable | How to set up an Interject [ReportVariable](/wFunctions/ReportVariable.html) |
 | sql_data_connection | How to work with the `SqlDataConnection` interface to set up a SQL data connection and controller |
-| user_message | How to send [messages](/wGetStarted/L-Dev-Error-Handling.html) back to the Interject from the API |
+| user_message | How to send [messages](/wDeveloper/L-Dev-Error-Handling.html) back to the Interject from the API |

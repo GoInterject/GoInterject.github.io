@@ -4,7 +4,7 @@ filename: "L-Dev-EditingDataSave.md"
 layout: custom
 keywords: [developer, example, walkthrough, SQL, SSMS, Data Portal, data connection, data save]
 headings: ["Overview", "Setting Up the Data Connection", "Setting Up the Data Portal", "Setting Up the Report", "Setting Up the ReportSave Function", "Setting Up the Stored Procedure", "Add the RequestContext_Parse Stored Procedure", "Modifying the Stored Procedure", "Parameters", "Testing", "Context Parameters", "Error Message", "Data To Process", "Inserting the Data to Process", "Validations", "ChangeLog", "Merge", "Set Message To User", "Final Response To User", "Final Stored Procedure", "Testing the Stored Procedure", "Testing the ReportSave"]
-links: ["/wGetStarted/L-Dev-CustomerAging.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data", "/wIndex/ReportSave.html", "#setting-up-the-data-connection", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "#setting-up-the-data-portal", "#setting-up-the-report", "#setting-up-the-reportsave-function", "#setting-up-the-stored-procedure", "#testing-the-stored-procedure", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "https://docs.gointerject.com/wLabs/LabSetup.html#step-1-setting-up-the-database", "https://portal.gointerject.com", "/wPortal/Logging-In-to-Website-Portal.html", "https://docs.gointerject.com/wDeveloper/L-Dev-EditingDataSave.html#setting-up-the-stored-procedure", "/wIndex/Request-Context-Parse.html", "/wGetStarted/L-Dev-CustomerAging.html#create-the-report", "#setting-up-the-data-portal", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#overview", "#add-the-requestcontext_parse-stored-procedure", "#testing"]
+links: ["/wDeveloper/L-Dev-CustomerAging.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data", "/wFunctions/ReportSave.html", "#setting-up-the-data-connection", "/wDeveloper/L-Dev-CustomerAging.html#setting-up-the-data-connection", "#setting-up-the-data-portal", "#setting-up-the-report", "#setting-up-the-reportsave-function", "#setting-up-the-stored-procedure", "#testing-the-stored-procedure", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "/wDeveloper/L-Dev-CustomerAging.html#setting-up-the-data-connection", "https://docs.gointerject.com/wLabs/LabSetup.html#step-1-setting-up-the-database", "https://portal.gointerject.com", "/wPortal/Logging-In-to-Website-Portal.html", "https://docs.gointerject.com/wDeveloper/L-Dev-EditingDataSave.html#setting-up-the-stored-procedure", "/wDeveloper/Request-Context-Parse.html", "/wDeveloper/L-Dev-CustomerAging.html#create-the-report", "#setting-up-the-data-portal", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#overview", "#add-the-requestcontext_parse-stored-procedure", "#testing"]
 image_dir: "L-Dev-EditingDataSave"
 images: [
 	{file: "NewDataPortal", type: "png", site: "Portal", cat: "Data Portals", sub: "", report: "", ribbon: "", config: ""}, 
@@ -45,7 +45,7 @@ description: In this example you will walkthrough the steps in order to Save Dat
 
 ## Overview
 
-In this example you will build from the previous report where you built a [Data Pull](/wGetStarted/L-Dev-CustomerAging.html). Here, you will walkthrough the steps in order to [Save Data](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data) using the Interject function [ReportSave](/wIndex/ReportSave.html). This function makes it convenient to modify the data source right inside of your Excel report without having to edit the data source directly.
+In this example you will build from the previous report where you built a [Data Pull](/wDeveloper/L-Dev-CustomerAging.html). Here, you will walkthrough the steps in order to [Save Data](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data) using the Interject function [ReportSave](/wFunctions/ReportSave.html). This function makes it convenient to modify the data source right inside of your Excel report without having to edit the data source directly.
 
 In this Editing Data Save example, you will set up a data save that will allow you to edit a customer's contact name and title right from within the Excel report. 
 
@@ -56,7 +56,7 @@ In this Editing Data Save example, you will set up a data save that will allow y
 
 This walkthrough involves 6 main steps:
 
-1. [Set up a Data Connection](#setting-up-the-data-connection) ([completed already](/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection))
+1. [Set up a Data Connection](#setting-up-the-data-connection) ([completed already](/wDeveloper/L-Dev-CustomerAging.html#setting-up-the-data-connection))
 2. [Set up a Data Portal](#setting-up-the-data-portal)
 3. [Setting up the report to handle the save](#setting-up-the-report)
 4. [Set up the ReportSave function](#setting-up-the-reportsave-function)
@@ -71,7 +71,7 @@ This walkthrough involves 6 main steps:
 
 ## Setting Up the Data Connection
 
-For the Data Connection for this example, you will use the connection previously set up [here](/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection).
+For the Data Connection for this example, you will use the connection previously set up [here](/wDeveloper/L-Dev-CustomerAging.html#setting-up-the-data-connection).
 
 ## Setting Up the Data Portal
 
@@ -102,11 +102,11 @@ For the Data Connection for this example, you will use the connection previously
 ![](/images/L-Dev-EditingDataSave/AddSystemParameter.png)
 <br>
 
-The System Parameter [Interject_RequestContext](/wIndex/Request-Context-Parse.html) will transfer contextual data to the Stored Procedure you will set up later. In this example you will not need this info but it is a good practice to set this parameter for all your Stored Procedures.
+The System Parameter [Interject_RequestContext](/wDeveloper/Request-Context-Parse.html) will transfer contextual data to the Stored Procedure you will set up later. In this example you will not need this info but it is a good practice to set this parameter for all your Stored Procedures.
 
 ## Setting Up the Report
 
-Begin by opening up the report that was completed in the [Data Pull](/wGetStarted/L-Dev-CustomerAging.html#create-the-report). You will modify this report to set up the ReportSave.
+Begin by opening up the report that was completed in the [Data Pull](/wDeveloper/L-Dev-CustomerAging.html#create-the-report). You will modify this report to set up the ReportSave.
 
 **Step 1:** Ensure **Market** is entered as a Company Name filter and pull the data:
 

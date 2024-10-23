@@ -70,7 +70,7 @@ BugFix2=OFF
 
 ## Macro Security Settings
 
-These are displayed for your reference here. For more on information, see [Macro Security](/wIndex/MacroSecurity.html)
+These are displayed for your reference here. For more on information, see [Macro Security](/wDeveloper/MacroSecurity.html)
 
 ![](/images/DiagnosticsSpecialFeatures/MacroSecuritySettings.png)
 <br>

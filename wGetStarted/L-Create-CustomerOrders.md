@@ -4,7 +4,7 @@ filename: "L-Create-CustomerOrders.md"
 layout: custom
 keywords: [report, create, multi-row, customer orders, walkthrough, northwind customer orders, jFreezePanes]
 headings: ["Overview", "Building the Report", "Customizing the Report", "Editing the Report Function", "Adding Multi-Row Range:", "Final Steps"]
-links: ["/wIndex/ReportRange.html", "/wIndex/jFreezePanes.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder", "/wIndex/Common-Dataportal-Index.html", "/wPortal/INTERJECT-Ribbon-Menu-Items.html#pulldata", "/wIndex/ReportRange.html", "/wIndex/jFreezePanes.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools", "/wAbout/ReportLibraryLinks.html"]
+links: ["/wFunctions/ReportRange.html", "/wFunctions/jFreezePanes.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder", "/wIndex/Common-Dataportal-Index.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pulldata", "/wFunctions/ReportRange.html", "/wFunctions/jFreezePanes.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools", "/wAbout/ReportLibraryLinks.html"]
 image_dir: "L-Create-CustOrders"
 images: [
     {file: "01", type: "png", site: "Addin", cat: "Report Builder", sub: "", report: "", ribbon: "Simple", config: ""},
@@ -49,7 +49,7 @@ description: This page illustrates the process of building a Customer Order repo
 
 ##  Overview
 
-This page illustrates the process of building a Customer Order report from scratch and uses the multi-row option to provide a more advanced presentation. Here you will get a better understating of the [ReportRange()](/wIndex/ReportRange.html) and the [jFreezePanes()](/wIndex/jFreezePanes.html) functions.
+This page illustrates the process of building a Customer Order report from scratch and uses the multi-row option to provide a more advanced presentation. Here you will get a better understating of the [ReportRange()](/wFunctions/ReportRange.html) and the [jFreezePanes()](/wFunctions/jFreezePanes.html) functions.
 
 <blockquote class=lab_info>
 If you are following the Training Labs, this is Lab 3.2. Note: The Report Library at Training Labs for this lab will be blank as you are creating a report from a new blank Excel sheet.
@@ -79,7 +79,7 @@ A new sheet should be added that looks like the screenshot below. Now the report
 ![](/images/L-Create-CustOrders/04.jpg)
 <br>
 
-**Step 2:** Now use the [**Pull on Data**](/wPortal/INTERJECT-Ribbon-Menu-Items.html#pulldata) menu item to grab the data.
+**Step 2:** Now use the [**Pull on Data**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pulldata) menu item to grab the data.
 
 ![](/images/L-Create-CustOrders/05.png)
 <br>
@@ -189,7 +189,7 @@ Below is an example of what a Formatting Range might look like (Note the column 
 ![](/images/L-Create-CustOrders/23.jpg)
 <br>
 
-**Step 5:** Before pulling the data, you need to edit the [ReportRange()](/wIndex/ReportRange.html) Formula in C10 so that it uses the Column Definition and Formatting Range set in the previous steps.
+**Step 5:** Before pulling the data, you need to edit the [ReportRange()](/wFunctions/ReportRange.html) Formula in C10 so that it uses the Column Definition and Formatting Range set in the previous steps.
 
 ![](/images/L-Create-CustOrders/24.png)
 <br>
@@ -211,7 +211,7 @@ The report should look something like this. Note that the text gets overwritten 
 
 ###  Final Steps
 
-**Step 1:** Now setup a [jFreezePanes](/wIndex/jFreezePanes.html) function so you can quickly unfreeze and freeze the panes at the correct position. First, setup the jFreezePane function in cell F10 by going into the report formulas section and typing **=jFreezePanes()**, then click the **fx** button to open the Formula Wizard.
+**Step 1:** Now setup a [jFreezePanes](/wFunctions/jFreezePanes.html) function so you can quickly unfreeze and freeze the panes at the correct position. First, setup the jFreezePane function in cell F10 by going into the report formulas section and typing **=jFreezePanes()**, then click the **fx** button to open the Formula Wizard.
 
 ![](/images/L-Create-CustOrders/28.png)
 <br>
@@ -240,7 +240,7 @@ Finally, clear the report and save the file to the Report Library "My Favorites"
 
 ### Adding a Report Label With ReportLookup
 
-The [ReportLookup()](/wIndex/ReportLookup.html) function is great for pulling in a single piece of data into your report. Here we will use it to generate a label for the report based on the CustomerID entered in cell C19.
+The [ReportLookup()](/wFunctions/ReportLookup.html) function is great for pulling in a single piece of data into your report. Here we will use it to generate a label for the report based on the CustomerID entered in cell C19.
 
 **Step 1:** In cell I10, enter the following details:
 

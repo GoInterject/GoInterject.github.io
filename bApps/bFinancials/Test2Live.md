@@ -4,7 +4,7 @@ filename: "Test2Live.md"
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: ["Option 1: Moving the Entire Database", "Option 2: Deploying A New Implementation From Scratch", "Re-Deploy From Scratch", "Transfer Custom Rollups and Report Templates", "Custom Rollups", "Custom Row Templates", "Custom Reports"]
-links: ["/bApps/bFinancials/Test2Live.html#option-1-moving-the-entire-database", "/bApps/bFinancials/Test2Live.html#option-2-deploying-a-new-implementation-from-scratch", "https://docs.gointerject.com/bApps/bFinancials/InitialDataLoad.html#steps-required-for-interject-application-setup---data-connection", "https://docs.gointerject.com/bApps/bFinancials/Technical-Install.html", "https://docs.gointerject.com/bApps/bFinancials/InitialDataLoad.html#begin-data-load", "https://docs.gointerject.com/bApps/bFinancials/Localize.html"]
+links: ["/bApps/bFinancials/Test2Live.html#option-1-moving-the-entire-database", "/bApps/bFinancials/Test2Live.html#option-2-deploying-a-new-implementation-from-scratch", "https://docs.gointerject.com/bApps/bFinancials/InitialDataLoad.html#steps-required-for-interject-application-setup-data-connection", "https://docs.gointerject.com/bApps/bFinancials/Technical-Install.html", "https://docs.gointerject.com/bApps/bFinancials/InitialDataLoad.html#begin-data-load", "https://docs.gointerject.com/bApps/bFinancials/Localize.html"]
 image_dir: "Config"
 images: [
 	{file: "SchedulerReportLib", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 

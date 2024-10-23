@@ -4,7 +4,7 @@ filename: "L-Modify-FinancialReport.md"
 layout: custom
 keywords: [modify, alter, change, YTD, year to date, budget, actuals, comparison, jColumnDef, PL Trend, walkthrough]
 headings: ["Overview", "Using Column Definitions", "Preparation Cleanup", "Setting up Budget to Actual Comparison Report", "Creating a Year to Date Budget to Actual Comparison Report"]
-links: ["/wAbout/Report-Library-Basics.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#diagnostics", "/wIndex/jColumnDef.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wAbout/ReportLibraryLinks.html"]
+links: ["/wAbout/Report-Library-Basics.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#diagnostics", "/wFunctions/jColumnDef.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wAbout/ReportLibraryLinks.html"]
 image_dir: "L-Modify-Financial"
 images: [
 	{file: "01", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "PL Trend", ribbon: "Simple", config: ""}, 
@@ -64,7 +64,7 @@ The jColumnDef() formulas in cells L2 to N2 are important to understand. They ex
 ![](/images/L-Modify-Financial/03.png)
 <br>
 
-Notice that [jColumnDef()](/wIndex/jColumnDef.html) draws its parameters from the cells that it has been designated to take values from. In this case those cells are right underneath the formula. Here, jColumnDef() is only referencing a Source (Actual or Budget), a month period, and a year. However, it is designed to handle currency and other reporting dimensions as well.
+Notice that [jColumnDef()](/wFunctions/jColumnDef.html) draws its parameters from the cells that it has been designated to take values from. In this case those cells are right underneath the formula. Here, jColumnDef() is only referencing a Source (Actual or Budget), a month period, and a year. However, it is designed to handle currency and other reporting dimensions as well.
 
 ![](/images/L-Modify-Financial/04.png)
 <br>

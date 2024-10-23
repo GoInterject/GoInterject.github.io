@@ -4,7 +4,7 @@ filename: "Financial-Report.md"
 layout: custom
 keywords: [financial, PL Trend Report, drill, detail, JE transaction, JE lookup, JE Query, data cells, walkthrough]
 headings: ["Overview", "Navigating to the PLTrend Report", "Modifying the Report", "Grouped Detail in the Report", "Drill to JE-Transaction", "Drill Further Into JE-Lookup", "Report Example With Data Cells", "Related Links"]
-links: ["/wAbout/Report-Library-Basics.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data", "/wIndex/jCell.html", "/wIndex/jAcct.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#pull-data", "/wIndex/Data-Cell-Functions.html", "/wGetStarted/L-Modify-FinancialReport.html", "/wGetStarted/Creating-a-Simple-Report.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "/wAbout/Tabular-vs-Data-Cells.html", "/wIndex/Data-Cell-Functions.html"]
+links: ["/wAbout/Report-Library-Basics.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data", "/wFunctions/jCell.html", "/wFunctions/jAcct.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#pull-data", "/wFunctions/Data-Cell-Functions.html", "/wGetStarted/L-Modify-FinancialReport.html", "/wGetStarted/Creating-a-Simple-Report.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "/wAbout/Tabular-vs-Data-Cells.html", "/wFunctions/Data-Cell-Functions.html"]
 image_dir: "Walkthrough-Financial"
 images: [
 	{file: "01", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "PL Trend", ribbon: "Simple", config: ""}, 
@@ -172,14 +172,14 @@ Now use Data Cells to replicate some of the present data. By having both data ge
 
 **Step 3:** To see how it works, use a Data Cell equation.
 
-The example below illustrates how the [jCell()](/wIndex/jCell.html) function can be used to show totals for Actual in March 2002.
+The example below illustrates how the [jCell()](/wFunctions/jCell.html) function can be used to show totals for Actual in March 2002.
 
 To open the function window, select the cell, click on jCellN in the formula bar above the columns, then click the fx button to the left.
 
 ![](/images/Walkthrough-Financial/19.png)
 <br>
 
-Use the [jAcct()](/wIndex/jAcct.html) function inside the Full Account box to include filters for both the Accounts and Location segments of the chart of accounts.
+Use the [jAcct()](/wFunctions/jAcct.html) function inside the Full Account box to include filters for both the Accounts and Location segments of the chart of accounts.
 
 To get the Function window for jAcct(), just click inside of its function in the formula bar.
 
@@ -214,7 +214,7 @@ After the switch, you can see that the values still are the same (Note: You may 
 
 **Step 6:** More complex filter text can be used to request precise balances. The following example uses a combination of ranges, exclusions, wildcards, and financial groups to return specific data. Even Net Income or EBITDA can be presented in a single worksheet cell.
 
-For more information on the Data Cell Filter options, [click here](/wIndex/Data-Cell-Functions.html).
+For more information on the Data Cell Filter options, [click here](/wFunctions/Data-Cell-Functions.html).
 
 In the below example, the groupings to the left of the figures represent the grouping filter in the jAcct Function to the cell beside it. This is so you can see what account groupings are being used for each of the numbers.
 
@@ -247,4 +247,4 @@ This completes the initial walkthrough detailing interactive reporting. Later in
 
 [Tabular vs Data Cells](/wAbout/Tabular-vs-Data-Cells.html)
 
-[Data Cell Functions](/wIndex/Data-Cell-Functions.html)
+[Data Cell Functions](/wFunctions/Data-Cell-Functions.html)

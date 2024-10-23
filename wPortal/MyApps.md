@@ -4,7 +4,7 @@ filename: "MyApps.md"
 layout: custom
 keywords: [redirect, override, offerings, subscriptions, portals, connections, links]
 headings: ["Overview", "Expiration", "App Offering", "Connection Redirection"]
-links: ["mailto:info@gointerject.com", "#connection-redirection", "https://docs.gointerject.com/wIndex/jDataPortal.html"]
+links: ["mailto:info@gointerject.com", "#connection-redirection", "https://docs.gointerject.com/wFunctions/jDataPortal.html"]
 image_dir: "MyApps"
 images: [
 	{file: "MyAppsPage", type: "png", site: "Portal", cat: "My Apps", sub: "", report: "", ribbon: "", config: ""},
@@ -50,7 +50,7 @@ Once you are subscribed to an app, they will appear in the Report Library and al
 ClientAdmins are allowed to redirect a data connection. A Connection Redirect is used to override a default connection with one that is catered to your own company. This is common with some App subscriptions so that it can access custom data for your company.
 
 <blockquote class=highlight_note>
-<b>Note:</b> To override a connection on the fly without having to set up a connection redirection, you can use the <a href="https://docs.gointerject.com/wIndex/jDataPortal.html">jDataPortal</a> function.
+<b>Note:</b> To override a connection on the fly without having to set up a connection redirection, you can use the <a href="https://docs.gointerject.com/wFunctions/jDataPortal.html">jDataPortal</a> function.
 </blockquote>
 <br>
 

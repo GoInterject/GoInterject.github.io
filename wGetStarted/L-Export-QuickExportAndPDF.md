@@ -4,7 +4,7 @@ filename: "L-Export-QuickExportAndPDF.md"
 layout: custom
 keywords: [quick, export, PDF, publish, distribute, data cells, walkthrough]
 headings: ["Overview", "Export Workbook", "Export Sheet", "Quick PDF"]
-links: ["/wAbout/Tabular-vs-Data-Cells.html", "/wAbout/Tabular-vs-Data-Cells.html", "/wAbout/Financial-Report.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#export-book", "/wIndex/jRangeTag.html", "https://learn.microsoft.com/en-us/troubleshoot/dynamics/gp/have-microsoft-save-pdf-xps-add-in", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#export-book", "/wGetStarted/L-Export-BasicDist.html"]
+links: ["/wAbout/Tabular-vs-Data-Cells.html", "/wAbout/Tabular-vs-Data-Cells.html", "/wAbout/Financial-Report.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#export-book", "/wFunctions/jRangeTag.html", "https://learn.microsoft.com/en-us/troubleshoot/dynamics/gp/have-microsoft-save-pdf-xps-add-in", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#export-book", "/wGetStarted/L-Export-BasicDist.html"]
 image_dir: "L-Export-QuickExPDF"
 images: [
 	{file: "01", type: "png", site: "Add-in", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, 
@@ -76,7 +76,7 @@ The Export Sheet option does everything the Export Workbook does but only export
 ![](/images/L-Export-QuickExPDF/ExportSheet.png)
 <br>
 
-In addition, the Export Sheet features allows you additional options to customize what is exported. It does this by utilizing the [jRangeTag](/wIndex/jRangeTag.html) to set three settings:
+In addition, the Export Sheet features allows you additional options to customize what is exported. It does this by utilizing the [jRangeTag](/wFunctions/jRangeTag.html) to set three settings:
 
 * **ExportSheetRange:** Specifies the range to be exported
 * **ExportSheetExcludeColumnRange:** Specifies a range where if a cell has the value of "Exclude", that column will not be exported

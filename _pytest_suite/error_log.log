@@ -1,0 +1,180 @@
+2024-10-23 10:00:22,148 - ERROR - 
+The image: D:\Users\samuelr\Documents\Github\GoInterject.github.io\images\Walkthrough-Financial\17.png does not exist.
+The image link is located in: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wAbout\Financial-Report.md
+2024-10-23 10:00:22,150 - ERROR - File does not exist for link: /wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#pull-data in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wAbout\Financial-Report.md
+2024-10-23 10:00:22,153 - ERROR - 
+The image: D:\Users\samuelr\Documents\Github\GoInterject.github.io\images\Inventory\image2017-6-27_17-6-52.png does not exist.
+The image link is located in: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wAbout\Inventory-Reports.md
+2024-10-23 10:00:22,158 - ERROR - 
+The image: D:\Users\samuelr\Documents\Github\GoInterject.github.io\images\Inventory\image2017-6-12_17-32-49.png does not exist.
+The image link is located in: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wAbout\Inventory-Reports.md
+2024-10-23 10:00:22,159 - ERROR - 
+The image: D:\Users\samuelr\Documents\Github\GoInterject.github.io\images\Inventory\image2017-8-14_7-54-29.png does not exist.
+The image link is located in: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wAbout\Inventory-Reports.md
+2024-10-23 10:00:22,159 - ERROR - 
+The image: D:\Users\samuelr\Documents\Github\GoInterject.github.io\images\Inventory\image2017-6-9_14-21-7.png does not exist.
+The image link is located in: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wAbout\Inventory-Reports.md
+2024-10-23 10:00:22,160 - ERROR - 
+The image: D:\Users\samuelr\Documents\Github\GoInterject.github.io\images\Inventory\image2017-6-9_14-22-56.png does not exist.
+The image link is located in: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wAbout\Inventory-Reports.md
+2024-10-23 10:00:24,169 - ERROR - 
+The image: D:\Users\samuelr\Documents\Github\GoInterject.github.io\images\ReportLibraryBasics\1.01GettingtoRL-InterjectTab.png does not exist.
+The image link is located in: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wAbout\Report-Library-Basics.md
+2024-10-23 10:00:24,170 - ERROR - 
+The image: D:\Users\samuelr\Documents\Github\GoInterject.github.io\images\ReportLibraryBasics\1.02GettingtoRL-ClickRL.png does not exist.
+The image link is located in: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wAbout\Report-Library-Basics.md
+2024-10-23 10:00:24,172 - ERROR - File does not exist for link: /wGetStarted/L-Create-UpdatingReportLibrary in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wAbout\Report-Library-Basics.md
+2024-10-23 10:00:24,174 - ERROR - Heading not found for link: #report-link-details-form in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wAbout\ReportLibraryLinks.md
+2024-10-23 10:00:24,176 - ERROR - File does not exist for link: /wAbout/ReportLibrarySorting.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wAbout\ReportLibraryLinks.md
+2024-10-23 10:00:25,514 - ERROR - 
+The image: D:\Users\samuelr\Documents\Github\GoInterject.github.io\images\SingleUser\13.jpg does not exist.
+The image link is located in: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wAbout\SingleUser.md
+2024-10-23 10:00:26,821 - ERROR - File does not exist for link: /wGetStarted/INTERJECT-Ribbon-Menu-Items#pull-data in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wAbout\Tabular-vs-Data-Cells.md
+2024-10-23 10:00:26,822 - ERROR - File does not exist for link: /wGetStarted/INTERJECT-Ribbon-Menu-Items#export-book in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wAbout\Tabular-vs-Data-Cells.md
+2024-10-23 10:00:26,824 - ERROR - 
+The image: D:\Users\samuelr\Documents\Github\GoInterject.github.io\images\Updating\01.png does not exist.
+The image link is located in: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wAbout\Updating-INTERJECT.md
+2024-10-23 10:00:38,643 - ERROR - Heading not found for link: #setup-website-in-iis in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wApi\dot-net-api-setup.md
+2024-10-23 10:00:41,270 - ERROR - Broken URL link: https://github.com/GoInterject/ids-java-api.git in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wApi\java-api-setup.md
+2024-10-23 10:00:41,777 - ERROR - Broken URL link: https://github.com/GoInterject/ids-java-api/archive/refs/heads/main.zip in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wApi\java-api-setup.md
+2024-10-23 10:00:42,321 - ERROR - Broken URL link: https://github.com/GoInterject/ids-python-api in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wApi\python-api-setup.md
+2024-10-23 10:00:43,643 - ERROR - Broken URL link: https://github.com/GoInterject/ids-python-api in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wApi\python-api-setup.md
+2024-10-23 10:00:44,095 - ERROR - Broken URL link: http://schemas.microsoft.com/ws/2008/06/identity/claims/role in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wDeveloper\ConditionalAccess.md
+2024-10-23 10:00:44,569 - ERROR - Broken URL link: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wDeveloper\ConditionalAccess.md
+2024-10-23 10:00:45,007 - ERROR - Broken URL link: http://schemas.microsoft.com/ws/2008/06/identity/claims/role|Admin|Equals in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wDeveloper\ConditionalAccess.md
+2024-10-23 10:00:45,443 - ERROR - Broken URL link: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wDeveloper\ConditionalAccess.md
+2024-10-23 10:00:45,885 - ERROR - Broken URL link: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wDeveloper\ConditionalAccess.md
+2024-10-23 10:00:46,336 - ERROR - Broken URL link: http://schemas.microsoft.com/ws/2008/06/identity/claims/role in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wDeveloper\ConditionalAccess.md
+2024-10-23 10:00:46,766 - ERROR - Broken URL link: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wDeveloper\ConditionalAccess.md
+2024-10-23 10:00:47,254 - ERROR - Broken URL link: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wDeveloper\ConditionalAccess.md
+2024-10-23 10:00:49,506 - ERROR - File does not exist for link: /wDeveloper/Simple-Data-Pull.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wDeveloper\Developing-with-INTERJECT.md
+2024-10-23 10:00:49,507 - ERROR - File does not exist for link: /wGetStarted/Simple-Data-Save.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wDeveloper\Developing-with-INTERJECT.md
+2024-10-23 10:00:51,222 - ERROR - Broken URL link: https://www.oasis-open.org/standard/saml/ in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wDeveloper\Enterprise-Login-Setup.md
+2024-10-23 10:00:53,799 - ERROR - Broken URL link: https://login.microsoftonline.com/{tenant}/v2.0 in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wDeveloper\Enterprise-Login-Setup.md
+2024-10-23 10:00:54,570 - ERROR - Broken URL link: https://login.microsoftonline.com/{tenant}/v2.0/.well-known/openid-configuration in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wDeveloper\Enterprise-Login-Setup.md
+2024-10-23 10:00:56,382 - ERROR - Broken URL link: https://graph.microsoft.com/oidc/userinfo in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wDeveloper\Enterprise-Login-Setup.md
+2024-10-23 10:01:17,106 - ERROR - File does not exist for link: /wIndex/MacroSecurity#file-extensions in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wDeveloper\MacroSecurity.md
+2024-10-23 10:01:17,106 - ERROR - File does not exist for link: /wIndex/MacroSecurity#file-extensions in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wDeveloper\MacroSecurity.md
+2024-10-23 10:01:17,575 - ERROR - Broken URL link: https://docs.gointerject.com/wDeveloper/Request-Context-Parse.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wDeveloper\Security-Best-Practices.md
+2024-10-23 10:01:21,179 - ERROR - File does not exist for link: /wIndex/ReportRange.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wFunctions\Data-Functions-Landing.md
+2024-10-23 10:01:21,179 - ERROR - File does not exist for link: /wIndex/ReportFixed.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wFunctions\Data-Functions-Landing.md
+2024-10-23 10:01:21,180 - ERROR - File does not exist for link: /wIndex/ReportVariable.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wFunctions\Data-Functions-Landing.md
+2024-10-23 10:01:21,181 - ERROR - File does not exist for link: /wIndex/ReportLookup.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wFunctions\Data-Functions-Landing.md
+2024-10-23 10:01:21,182 - ERROR - File does not exist for link: /wTroubleshooting/Validation-Report.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wFunctions\Event-Functions-Landing.md
+2024-10-23 10:01:22,129 - ERROR - Broken URL link: https://docs.gointerject.com/wFunctions/jDataPortal.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wFunctions\jDropdown.md
+2024-10-23 10:01:22,560 - ERROR - Broken URL link: https://docs.gointerject.com/wFunctions/Param.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wFunctions\jDropdown.md
+2024-10-23 10:01:23,032 - ERROR - Broken URL link: https://docs.gointerject.com/wFunctions/Pair.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wFunctions\PairGroup.md
+2024-10-23 10:01:23,417 - ERROR - Broken URL link: https://docs.gointerject.com/wFunctions/Pair.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wFunctions\ReportDefaults.md
+2024-10-23 10:01:23,823 - ERROR - Broken URL link: https://docs.gointerject.com/wFunctions/PairGroup.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wFunctions\ReportDefaults.md
+2024-10-23 10:01:23,827 - ERROR - File does not exist for link: /wGetStarted//L-Create-UpdatingReportLibrary#adding-a-drill-code-to-a-report in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wFunctions\ReportDrill.md
+2024-10-23 10:01:23,827 - ERROR - File does not exist for link: /wGetStarted//L-Create-UpdatingReportLibrary#adding-a-drill-code-to-a-report in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wFunctions\ReportDrill.md
+2024-10-23 10:01:24,194 - ERROR - Broken URL link: https://docs.gointerject.com/wFunctions/Pair.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wFunctions\ReportDrill.md
+2024-10-23 10:01:24,576 - ERROR - Broken URL link: https://docs.gointerject.com/wFunctions/PairGroup.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wFunctions\ReportDrill.md
+2024-10-23 10:01:24,986 - ERROR - Broken URL link: https://docs.gointerject.com/wFunctions/jDataPortal.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wFunctions\ReportFixed.md
+2024-10-23 10:01:25,377 - ERROR - Broken URL link: https://docs.gointerject.com/wFunctions/Param.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wFunctions\ReportFixed.md
+2024-10-23 10:01:26,232 - ERROR - Broken URL link: https://docs.gointerject.com/wFunctions/jDataPortal.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wFunctions\ReportLookup.md
+2024-10-23 10:01:26,581 - ERROR - Broken URL link: https://docs.gointerject.com/wFunctions/Param.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wFunctions\ReportLookup.md
+2024-10-23 10:01:26,939 - ERROR - Broken URL link: https://docs.gointerject.com/wFunctions/jDataPortal.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wFunctions\ReportRange.md
+2024-10-23 10:01:27,352 - ERROR - Broken URL link: https://docs.gointerject.com/wFunctions/Param.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wFunctions\ReportRange.md
+2024-10-23 10:01:27,824 - ERROR - Broken URL link: https://docs.gointerject.com/wFunctions/jCombine.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wFunctions\ReportRange.md
+2024-10-23 10:01:28,353 - ERROR - Broken URL link: https://docs.gointerject.com/wFunctions/jCombine_If.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wFunctions\ReportRange.md
+2024-10-23 10:01:28,358 - ERROR - File does not exist for link: /wGetStarted//L-Dev-CustomerCreditSave.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wFunctions\ReportSave.md
+2024-10-23 10:01:28,783 - ERROR - Broken URL link: https://docs.gointerject.com/wFunctions/jDataPortal.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wFunctions\ReportSave.md
+2024-10-23 10:01:29,180 - ERROR - Broken URL link: https://docs.gointerject.com/wFunctions/Param.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wFunctions\ReportSave.md
+2024-10-23 10:01:29,580 - ERROR - Broken URL link: https://docs.gointerject.com/wFunctions/jDataPortal.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wFunctions\ReportVariable.md
+2024-10-23 10:01:29,955 - ERROR - Broken URL link: https://docs.gointerject.com/wFunctions/Param.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wFunctions\ReportVariable.md
+2024-10-23 10:01:30,681 - ERROR - Broken URL link: https://docs.gointerject.com/wFunctions/jCombine.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wFunctions\ReportVariable.md
+2024-10-23 10:01:31,058 - ERROR - Broken URL link: https://docs.gointerject.com/wFunctions/jCombine_If.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wFunctions\ReportVariable.md
+2024-10-23 10:01:32,061 - ERROR - File does not exist for link: /wApps/Common-Dataportal-Index.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wGetStarted\L-Create-CustomerAging.md
+2024-10-23 10:01:32,068 - ERROR - 
+The image: D:\Users\samuelr\Documents\Github\GoInterject.github.io\images\L-Create-Dropdowns\03.png does not exist.
+The image link is located in: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wGetStarted\L-Create-Dropdowns.md
+2024-10-23 10:01:32,069 - ERROR - 
+The image: D:\Users\samuelr\Documents\Github\GoInterject.github.io\images\L-Create-Dropdowns\04.png does not exist.
+The image link is located in: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wGetStarted\L-Create-Dropdowns.md
+2024-10-23 10:01:32,070 - ERROR - 
+The image: D:\Users\samuelr\Documents\Github\GoInterject.github.io\images\L-Create-Dropdowns\05.png does not exist.
+The image link is located in: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wGetStarted\L-Create-Dropdowns.md
+2024-10-23 10:01:32,524 - ERROR - Broken URL link: https://docs.gointerject.com/wDeveloper/L-Dev-jDropdowns.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wGetStarted\L-Create-Dropdowns.md
+2024-10-23 10:01:33,514 - ERROR - Broken URL link: https://docs.gointerject.com/wFunctions/jDropdown.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wGetStarted\L-Create-Dropdowns.md
+2024-10-23 10:01:36,622 - ERROR - 'image_dir' key is missing from D:\Users\samuelr\Documents\Github\GoInterject.github.io\wGetStarted\RowDefinitionRange.md
+2024-10-23 10:01:38,669 - ERROR - 
+The image: D:\Users\samuelr\Documents\Github\GoInterject.github.io\images\ReportBuilder\.png does not exist.
+The image link is located in: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wIndex\ReportBuilder.md
+2024-10-23 10:01:38,675 - ERROR - File does not exist for link: /wIndex/Excel-Function-Index.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wLabs\LabSetup.md
+2024-10-23 10:01:41,581 - ERROR - Broken URL link: https://data-api.gointerject.com/api in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wLabs\LabSetup.md
+2024-10-23 10:01:41,582 - ERROR - File does not exist for link: /wIndex/Data-Cell-Functions.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wLabs\LabSetup.md
+2024-10-23 10:01:41,984 - ERROR - Broken URL link: https://docs.gointerject.com/wDeveloper/Request-Context-Parse.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wPortal\Data-Portals.md
+2024-10-23 10:01:49,112 - ERROR - Broken URL link: https://docs.gointerject.com/wDeveloper/MacroSecurity.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wPortal\INTERJECT-Roles.md
+2024-10-23 10:01:54,888 - ERROR - File does not exist for link: /wPortal/Lab-15.2-Database-Connection.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wPortal\Logging-In-to-Website-Portal.md
+2024-10-23 10:01:55,323 - ERROR - Broken URL link: https://docs.gointerject.com/wDeveloper/Federated-Login-Design.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wPortal\MFA.md
+2024-10-23 10:01:56,779 - ERROR - Broken URL link: https://docs.gointerject.com/wFunctions/jDataPortal.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wPortal\MyApps.md
+2024-10-23 10:01:56,786 - ERROR - File does not exist for link: /wAbout/Enterprise-Login-Setup.html#enterprise-login-code in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wPortal\OrganizationProfile.md
+2024-10-23 10:02:03,433 - ERROR - File does not exist for link: /wAbout/Enterprise-Login-Setup.html#ip-whitelisting in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wTroubleshoot\TroubleshootingGuide.md
+2024-10-23 10:02:03,434 - ERROR - File does not exist for link: /wAbout/Enterprise-Login-Setup.html#ip-whitelisting in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wTroubleshoot\TroubleshootingGuide.md
+2024-10-23 10:02:04,918 - ERROR - File does not exist for link: /wAbout/Enterprise-Login-Setup.html#ip-whitelisting in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\wTroubleshoot\TroubleshootingGuide.md
+2024-10-23 10:02:12,750 - ERROR - 
+The image: D:\Users\samuelr\Documents\Github\GoInterject.github.io\images\Train\Login1.png does not exist.
+The image link is located in: D:\Users\samuelr\Documents\Github\GoInterject.github.io\bApps\bFinancials\InitialDataLoad.md
+2024-10-23 10:02:12,751 - ERROR - 
+The image: D:\Users\samuelr\Documents\Github\GoInterject.github.io\images\Train\changeco.png does not exist.
+The image link is located in: D:\Users\samuelr\Documents\Github\GoInterject.github.io\bApps\bFinancials\InitialDataLoad.md
+2024-10-23 10:02:12,751 - ERROR - 
+The image: D:\Users\samuelr\Documents\Github\GoInterject.github.io\images\Train\NewConnection0.png does not exist.
+The image link is located in: D:\Users\samuelr\Documents\Github\GoInterject.github.io\bApps\bFinancials\InitialDataLoad.md
+2024-10-23 10:02:12,752 - ERROR - 
+The image: D:\Users\samuelr\Documents\Github\GoInterject.github.io\images\Train\NewConnections.png does not exist.
+The image link is located in: D:\Users\samuelr\Documents\Github\GoInterject.github.io\bApps\bFinancials\InitialDataLoad.md
+2024-10-23 10:02:12,752 - ERROR - 
+The image: D:\Users\samuelr\Documents\Github\GoInterject.github.io\images\Train\04.png does not exist.
+The image link is located in: D:\Users\samuelr\Documents\Github\GoInterject.github.io\bApps\bFinancials\InitialDataLoad.md
+2024-10-23 10:02:12,753 - ERROR - 
+The image: D:\Users\samuelr\Documents\Github\GoInterject.github.io\images\Train\MyApps.png does not exist.
+The image link is located in: D:\Users\samuelr\Documents\Github\GoInterject.github.io\bApps\bFinancials\InitialDataLoad.md
+2024-10-23 10:02:12,753 - ERROR - 
+The image: D:\Users\samuelr\Documents\Github\GoInterject.github.io\images\Train\ConnectionRedirect.png does not exist.
+The image link is located in: D:\Users\samuelr\Documents\Github\GoInterject.github.io\bApps\bFinancials\InitialDataLoad.md
+2024-10-23 10:02:14,368 - ERROR - 
+The image: D:\Users\samuelr\Documents\Github\GoInterject.github.io\images\A-SQL-InitialDataLoad\MgtStudioPointTo.png does not exist.
+The image link is located in: D:\Users\samuelr\Documents\Github\GoInterject.github.io\bApps\bFinancials\Install.md
+2024-10-23 10:02:18,009 - ERROR - Broken URL link: https://drive.google.com/file/d/10Gxxb4mjKxWpl0v49x1IWK97w6xm-EKV/view?usp=sharing in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\bApps\bFinancials\JE-Upload-Install.md
+2024-10-23 10:02:18,443 - ERROR - 
+The image: D:\Users\samuelr\Documents\Github\GoInterject.github.io\images\Financials-TemplateSave\UpdateReport1.png does not exist.
+The image link is located in: D:\Users\samuelr\Documents\Github\GoInterject.github.io\bApps\bFinancials\PubReports.md
+2024-10-23 10:02:18,443 - ERROR - 
+The image: D:\Users\samuelr\Documents\Github\GoInterject.github.io\images\Financials-TemplateSave\UpdateReport2.png does not exist.
+The image link is located in: D:\Users\samuelr\Documents\Github\GoInterject.github.io\bApps\bFinancials\PubReports.md
+2024-10-23 10:02:18,444 - ERROR - 
+The image: D:\Users\samuelr\Documents\Github\GoInterject.github.io\images\Financials-TemplateSave\UpdateReport3.png does not exist.
+The image link is located in: D:\Users\samuelr\Documents\Github\GoInterject.github.io\bApps\bFinancials\PubReports.md
+2024-10-23 10:02:18,444 - ERROR - 
+The image: D:\Users\samuelr\Documents\Github\GoInterject.github.io\images\Financials-TemplateSave\UpdateReport4.png does not exist.
+The image link is located in: D:\Users\samuelr\Documents\Github\GoInterject.github.io\bApps\bFinancials\PubReports.md
+2024-10-23 10:02:18,445 - ERROR - 
+The image: D:\Users\samuelr\Documents\Github\GoInterject.github.io\images\Interject-Financials\09.png does not exist.
+The image link is located in: D:\Users\samuelr\Documents\Github\GoInterject.github.io\bApps\bFinancials\PullSave.md
+2024-10-23 10:02:20,506 - ERROR - Broken URL link: https://drive.google.com/file/d/1yqewNlhX4tm5jDo-J1lnEjz8qe-w9gqO/view?usp=sharing in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\bApps\bFinancials\Technical-Install.md
+2024-10-23 10:02:21,452 - ERROR - Broken URL link: https://drive.google.com/file/d/1UcSwEf_oKjr3eVSSUJKyzZyB60YGJsaM/view?usp=sharing in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\bApps\bFinancials\Technical-Install.md
+2024-10-23 10:02:23,259 - ERROR - 
+The image: D:\Users\samuelr\Documents\Github\GoInterject.github.io\images\Interject-Financials\09.png does not exist.
+The image link is located in: D:\Users\samuelr\Documents\Github\GoInterject.github.io\bApps\bFinancials\The-Basics.md
+2024-10-23 10:02:23,259 - ERROR - 
+The image: D:\Users\samuelr\Documents\Github\GoInterject.github.io\images\Interject-Financials\11.png does not exist.
+The image link is located in: D:\Users\samuelr\Documents\Github\GoInterject.github.io\bApps\bFinancials\The-Basics.md
+2024-10-23 10:02:25,205 - ERROR - Broken URL link: https://drive.google.com/file/d/10Gxxb4mjKxWpl0v49x1IWK97w6xm-EKV/view?usp=sharing in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\bApps\bFinancials\Update-JE-Upload.md
+2024-10-23 10:02:25,943 - ERROR - Broken URL link: https://drive.google.com/file/d/1TGP1PBcNy8T-JD9w2OV7CAStV0rhtTT4/view?usp=sharing in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\bApps\bFinancials\Update-JE-Upload.md
+2024-10-23 10:02:26,679 - ERROR - Broken URL link: https://drive.google.com/file/d/1eT33xP-OReDInLZQiU31OWpat0IjPZCu/view?usp=sharing in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\bApps\bFinancials\Update-JE-Upload.md
+2024-10-23 10:02:27,945 - ERROR - Broken URL link: https://drive.google.com/file/d/1yqewNlhX4tm5jDo-J1lnEjz8qe-w9gqO/view?usp=sharing in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\bApps\bFinancials\Updates.md
+2024-10-23 10:02:28,644 - ERROR - Broken URL link: https://drive.google.com/file/d/1b6VJploEafuftn9UP9Mqdt4F7ywbsqju/view?usp=sharing in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\bApps\bFinancials\Updates.md
+2024-10-23 10:02:29,470 - ERROR - Broken URL link: https://drive.google.com/file/d/1jcotjzfZnS9Pn7lR2BguVpzhfoSYzBGa/view?usp=sharing in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\bApps\bFinancials\Updates.md
+2024-10-23 10:02:30,301 - ERROR - Broken URL link: https://drive.google.com/file/d/1Ol_mK9cseyhOwuzZ45FQiIuJAA75ETNt/view?usp=sharing in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\bApps\bFinancials\Updates.md
+2024-10-23 10:02:31,088 - ERROR - Broken URL link: https://drive.google.com/file/d/1QE_3izgZQwMjCFgWubGv0C5wKAgiTAUV/view?usp=sharing in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\bApps\bFinancials\Updates.md
+2024-10-23 10:02:31,990 - ERROR - Broken URL link: https://drive.google.com/file/d/18nGnIljPN9mgxxUaQRGMj5G7t1MBiUtH/view?usp=sharing in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\bApps\bFinancials\Updates.md
+2024-10-23 10:02:32,447 - ERROR - File does not exist for link: /bApps/InterjectTraining/Budget/BudgetChangeQueryToolSummary.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\bApps\InterjectTraining\Budget\BudgetUpload.md
+2024-10-23 10:02:32,447 - ERROR - File does not exist for link: /bApps/InterjectTraining/Budget/BudgetChangeQueryToolSummary.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\bApps\InterjectTraining\Budget\BudgetUpload.md
+2024-10-23 10:02:32,468 - ERROR - File does not exist for link: /bApps/InterjectTraining/Capital/CapitalExport.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\bApps\InterjectTraining\Capital\CapitalModule.md
+2024-10-23 10:02:32,473 - ERROR - 
+The image: D:\Users\samuelr\Documents\Github\GoInterject.github.io\images\WCNTraining/Capital\Capital/ReviewDateSummary_BuildingsDetail.png does not exist.
+The image link is located in: D:\Users\samuelr\Documents\Github\GoInterject.github.io\bApps\InterjectTraining\Capital\ReviewDateSummary.md
+2024-10-23 10:02:32,490 - ERROR - File does not exist for link: /bApps/InterjectTraining/Budget/BudgetChangeQueryToolSummary.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\bApps\InterjectTraining\WIP\BudgetUpload_WIP.md
+2024-10-23 10:02:32,490 - ERROR - File does not exist for link: /bApps/InterjectTraining/Budget/BudgetChangeQueryToolSummary.html in file: D:\Users\samuelr\Documents\Github\GoInterject.github.io\bApps\InterjectTraining\WIP\BudgetUpload_WIP.md

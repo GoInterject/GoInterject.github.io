@@ -4,7 +4,7 @@ filename: "Basics-of-Report-Formulas.md"
 layout: custom
 keywords: [report formula, column definitions, formatting range, hidden, parameters, notes]
 headings: ["Overview", "Accessing the Report Formulas", "Column Definitions", "Formatting Range", "Report Formulas", "Hidden Parameters and Notes"]
-links: ["/wAbout/Customer-Aging.html", "/wAbout/Report-Library-Basics.html", "/wPortal/INTERJECT-Ribbon-Menu-Items.html#unfreeze", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wIndex/Data-Functions-Landing.html", "/wIndex/ReportDrill.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data", "/wIndex/ReportSave.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html"]
+links: ["/wAbout/Customer-Aging.html", "/wAbout/Report-Library-Basics.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#unfreeze", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wFunctions/Data-Functions-Landing.html", "/wFunctions/ReportDrill.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data", "/wFunctions/ReportSave.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html"]
 image_dir: "BasicsReportFormulas"
 images: [
 	{file: "01", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "Interject Customer Collections", ribbon: "Simple", config: ""}, 
@@ -47,7 +47,7 @@ When the report is opened it will be blank. It is ready for any filters before p
 ![](/images/BasicsReportFormulas/02.png)
 <br>
 
-**Step 2:** To see the formulas working behind Interject, you need to [Unfreeze](/wPortal/INTERJECT-Ribbon-Menu-Items.html#unfreeze) the panes hiding them. Select the View ribbon and select the **Freeze Panes** drop-down. Then choose the first operation, **Unfreeze Panes**.
+**Step 2:** To see the formulas working behind Interject, you need to [Unfreeze](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#unfreeze) the panes hiding them. Select the View ribbon and select the **Freeze Panes** drop-down. Then choose the first operation, **Unfreeze Panes**.
 
 ![](/images/BasicsReportFormulas/03.png)
 <br>
@@ -107,9 +107,9 @@ Report Formulas are a big part of how Interject directs data in and out of the s
 ![](/images/BasicsReportFormulas/12.png)
 <br>
 
-The first formula is a **Report Range** formula and will pull the data from a data source to the spreadsheet. There are other Interject report formulas to pull data (see [Data Pull Functions](/wIndex/Data-Functions-Landing.html)). You will look at these later. The screenshot above also shows three [ReportDrill()](/wIndex/ReportDrill.html) formulas that enable [drill](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data) functionality. A drill lets us navigate to another spreadsheet report based on the context selected.
+The first formula is a **Report Range** formula and will pull the data from a data source to the spreadsheet. There are other Interject report formulas to pull data (see [Data Pull Functions](/wFunctions/Data-Functions-Landing.html)). You will look at these later. The screenshot above also shows three [ReportDrill()](/wFunctions/ReportDrill.html) formulas that enable [drill](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data) functionality. A drill lets us navigate to another spreadsheet report based on the context selected.
 
-Another type of Report Formula is the [Save](/wIndex/ReportSave.html) formula, which is not shown here. This type of Report Formula enables an application developer to build save back features into our reports, such as saving back comments on financial variances to a central database so they can be presented in other reports.
+Another type of Report Formula is the [Save](/wFunctions/ReportSave.html) formula, which is not shown here. This type of Report Formula enables an application developer to build save back features into our reports, such as saving back comments on financial variances to a central database so they can be presented in other reports.
 
 Each of these formulas is activated by its corresponding button in the [Interject Ribbon menu](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html).
 

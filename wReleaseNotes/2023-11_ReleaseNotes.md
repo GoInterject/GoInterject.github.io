@@ -4,7 +4,7 @@ filename: "2023-11_ReleaseNotes.md"
 layout: custom
 keywords: [change log, updates, versions, history, what's new]
 headings: ["November 2023", "Documentation Updates"]
-links: ["/wReleaseNotes/2023-11_ReleaseNotes.html", "/wPortal/MFA.html", "/wApi/DeveloperMain.html", "/wApi/java-api-setup.html", "/wAbout/ReportLibraryLinks.html", "/wAbout/ReportLibraryOrganization.html", "/wTroubleshoot/AdxLoader.html", "/wTroubleshoot/WebView2.html", "/wApi/dot-net-api-setup.html", "/wPortal/INTERJECT-Roles.html", "/wGetStarted/Excel-Best-and-Worst-Practices.html", "/wPortal/StaffPage.html", "/wDeveloper/ConnectionManager.html"]
+links: ["/wReleaseNotes/2023-11_ReleaseNotes.html", "/wPortal/MFA.html", "/wApi/DeveloperMain.html", "/wApi/java-api-setup.html", "/wAbout/ReportLibraryLinks.html", "/wAbout/ReportLibraryOrganization.html", "/wTroubleshoot/AdxLoader.html", "/wTroubleshoot/WebView2.html", "/wApi/dot-net-api-setup.html", "/wPortal/INTERJECT-Roles.html", "/wIndex/Excel-Best-and-Worst-Practices.html", "/wPortal/StaffPage.html", "/wDeveloper/ConnectionManager.html"]
 image_dir: ""
 images: []
 description: Release notes for this month's updates
@@ -28,6 +28,6 @@ description: Release notes for this month's updates
 | 11/2 | Replace | [.Net API Setup](/wApi/dot-net-api-setup.html) | Redesign of page |
 | 11/2 | Replace | [Interject Roles](/wPortal/INTERJECT-Roles.html) | Redesign of page |
 | 11/7 | Update | Added Interject icon to browser tabs | New icon |
-| 11/7 | Update | [Excel Best and Worst Practices](/wGetStarted/Excel-Best-and-Worst-Practices.html) | New section |
+| 11/7 | Update | [Excel Best and Worst Practices](/wIndex/Excel-Best-and-Worst-Practices.html) | New section |
 | 11/7 | New | [Staff Page](/wPortal/StaffPage.html) | New page |
 | 11/30 | New | [Connection Manager](/wDeveloper/ConnectionManager.html) | New page |

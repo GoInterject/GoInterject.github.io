@@ -59,7 +59,7 @@ Notice this report is a Variable Report with the RowDef Items defined in column 
 
 ## RowDef Items
 
-The Fixed and Variable Reports take a parameter called "RowDefRange" (for more information about this parameter, see [ReportFixed](/wIndex/ReportFixed.html#function-arguments)). This parameter defines a range that includes a set of individual values which are "RowDef Items". Here is an example of a Fixed Report with a single column of row def items (B16:B28):
+The Fixed and Variable Reports take a parameter called "RowDefRange" (for more information about this parameter, see [ReportFixed](/wFunctions/ReportFixed.html#function-arguments)). This parameter defines a range that includes a set of individual values which are "RowDef Items". Here is an example of a Fixed Report with a single column of row def items (B16:B28):
 
 ![](/images/RowDefinitionRange/FixedRowDefRange.png)
 <br>

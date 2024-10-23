@@ -4,7 +4,7 @@ filename: "L-Drill-FinancialReport.md"
 layout: custom
 keywords: [drill, financials, pair, pairgroup, Interject_JEQuery, segments, PL Trend, walkthrough, data drill codes]
 headings: ["Overview", "Opening the Report", "Unfreezing the Report", "Set Up the Report", "Building the Drill", "Executing the Drill"]
-links: ["/wAbout/Financial-Report.html", "/wIndex/ReportDrill.html", "/wIndex/ReportDrill.html", "/wGetStarted/L-Drill-DrillCodes.html", "/wIndex/PairGroup.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html"]
+links: ["/wAbout/Financial-Report.html", "/wFunctions/ReportDrill.html", "/wFunctions/ReportDrill.html", "/wGetStarted/L-Drill-DrillCodes.html", "/wFunctions/PairGroup.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html"]
 image_dir: "L-Drill-Financial"
 images: [
 	{file: "PLTrendReport", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "PL Trend", ribbon: "", config: ""}, 
@@ -39,7 +39,7 @@ description: This is a drill for the PL Trend report that was created in a previ
 
 ## Overview
 
-For this drill example you will use the **PL Trend** report that was previously featured in the [Financial Report - Walkthrough](/wAbout/Financial-Report.html). For this example, you will set up a [ReportDrill](/wIndex/ReportDrill.html) function to drill to a _separate_ workbook. This can be very useful when there is a common report, such as one that shows general ledger detail, that can be used as a drill from several different reports and workbooks. You will be viewing that same example with the JE (Journal Entry) Query drill report.
+For this drill example you will use the **PL Trend** report that was previously featured in the [Financial Report - Walkthrough](/wAbout/Financial-Report.html). For this example, you will set up a [ReportDrill](/wFunctions/ReportDrill.html) function to drill to a _separate_ workbook. This can be very useful when there is a common report, such as one that shows general ledger detail, that can be used as a drill from several different reports and workbooks. You will be viewing that same example with the JE (Journal Entry) Query drill report.
 
 <blockquote class=lab_info>
  If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 4 Drilling To Data > Lab 4.3 Financial Report.
@@ -85,7 +85,7 @@ Next, type in **7002** for the location in M21. And type **2002-05** for the mon
 
 Now you will begin to set up the drill.
 
-**Step 1:** In cell G17, type [**=ReportDrill()**](/wIndex/ReportDrill.html). Column G is fairly narrow, but it will simply overlap the cells to the right. Then click the **fx** button as illustrated below to bring up the Function Wizard.
+**Step 1:** In cell G17, type [**=ReportDrill()**](/wFunctions/ReportDrill.html). Column G is fairly narrow, but it will simply overlap the cells to the right. Then click the **fx** button as illustrated below to bring up the Function Wizard.
 
 ![](/images/L-Drill-Financial/04.png)
 <br>
@@ -95,7 +95,7 @@ Now you will begin to set up the drill.
 ![](/images/L-Drill-Financial/05.png)
 <br>
 
-**Step 3:** Next you will use the TransferPairs argument to note which cell values in the source worksheet will be transferred to the target worksheet during the drill operation. To do this, use special functions to pair the source cells to the target cells. Type [**PairGroup(Pair())**](/wIndex/PairGroup.html) in the TransferPairs argument to get it started. You will return to add more to this argument.
+**Step 3:** Next you will use the TransferPairs argument to note which cell values in the source worksheet will be transferred to the target worksheet during the drill operation. To do this, use special functions to pair the source cells to the target cells. Type [**PairGroup(Pair())**](/wFunctions/PairGroup.html) in the TransferPairs argument to get it started. You will return to add more to this argument.
 
 ![](/images/L-Drill-Financial/06.png)
 <br>

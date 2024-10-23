@@ -4,7 +4,7 @@ filename: "LabSetup.md"
 layout: custom
 keywords: [lab, guide, manual setup, start, Northwind, database, FinCube, data cells]
 headings: ["Overview", "Interject Data Report Flow", "Manual Setup", "Step 1: Setting up the Database", "Step 2: Setting up the Data Connection", "Step 3: Setting up the Data Portals", "Step 4: Setting up FinCube", "Setting up the FinCube Data Connection", "Setting up the FinCube Data Portal", "Setting up the FinCube Data Cells Data Portals", "Step 5: The Report Files", "Step 6: Renaming the Data Portals"]
-links: ["/wLabs/lab.html", "/wIndex/Excel-Function-Index.html", "/wPortal/Data-Portals.html", "/wPortal/The-INTERJECT-Website-Portal.html", "#step-1-setting-up-the-database", "#step-2-setting-up-the-data-connection", "#step-3-setting-up-the-data-portals", "#step-4-setting-up-fincube", "#step-5-the-report-files", "#step-6-renaming-the-data-portals", "https://www.microsoft.com/en-us/sql-server/sql-server-downloads", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017", "https://portal.gointerject.com/", "/wPortal/The-INTERJECT-Website-Portal.html", "/wPortal/L-Database-Connection.html", "/wPortal/Data-Portals.html", "/wIndex/FinCube---The-Financial-Cube.html", "/wAbout/Tabular-vs-Data-Cells.html", "https://data-api.gointerject.com/api", "/wIndex/Data-Cell-Functions.html"]
+links: ["/wLabs/lab.html", "/wIndex/Excel-Function-Index.html", "/wPortal/Data-Portals.html", "/wPortal/The-INTERJECT-Website-Portal.html", "#step-1-setting-up-the-database", "#step-2-setting-up-the-data-connection", "#step-3-setting-up-the-data-portals", "#step-4-setting-up-fincube", "#step-5-the-report-files", "#step-6-renaming-the-data-portals", "https://www.microsoft.com/en-us/sql-server/sql-server-downloads", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017", "https://portal.gointerject.com/", "/wPortal/The-INTERJECT-Website-Portal.html", "/wPortal/L-Database-Connection.html", "/wPortal/Data-Portals.html", "/wIndex/FinCubeTheFinancialCube.html", "/wAbout/Tabular-vs-Data-Cells.html", "https://data-api.gointerject.com/api", "/wIndex/Data-Cell-Functions.html"]
 image_dir: "LabSetupManual"
 images: [
 	{file: "FlowChart", type: "png", site: "External", cat: "Flow Chart", sub: "Data Report Flow", report: "", ribbon: "", config: ""}, 
@@ -513,7 +513,7 @@ Now that you have a database and set up a Data Connection to it, you need to sta
 
 ### Step 4: Setting up FinCube
 
-[FinCube](/wIndex/FinCube---The-Financial-Cube.html) is a special Data Portal that is used for financial reporting. This Portal is called "Demo_Interject_FinCube" in the Lab files and is used in 6 labs:
+[FinCube](/wIndex/FinCubeTheFinancialCube.html) is a special Data Portal that is used for financial reporting. This Portal is called "Demo_Interject_FinCube" in the Lab files and is used in 6 labs:
 
 * Lab 1.3 Financial Report
 * Lab 2.4 Financial Report

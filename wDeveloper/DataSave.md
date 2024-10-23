@@ -4,7 +4,7 @@ filename: "DataSave.md"
 layout: custom
 keywords: [data, save, develop, build, create]
 headings: ["Overview", "Editing Data Save", "Insert & Delete Data Save", "Changelog Data Save"]
-links: ["/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data", "/wDeveloper/L-Dev-EditingDataSave.html", "/wGetStarted/L-Dev-CustomerAging.html", "/wDeveloper/L-Dev-InsertDeleteDataSave.html", "/wDeveloper/L-Dev-ChangelogDataSave.html"]
+links: ["/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data", "/wDeveloper/L-Dev-EditingDataSave.html", "/wDeveloper/L-Dev-CustomerAging.html", "/wDeveloper/L-Dev-InsertDeleteDataSave.html", "/wDeveloper/L-Dev-ChangelogDataSave.html"]
 image_dir: ""
 images: []
 description: 
@@ -19,7 +19,7 @@ It is expected that these examples will be completed in order as they each build
 
 ### [Editing Data Save](/wDeveloper/L-Dev-EditingDataSave.html)
 
-In this example you will build from the previous [Data Pull report](/wGetStarted/L-Dev-CustomerAging.html). Here, you will walkthrough the steps in order to Save Data using the Interject function ReportSave. This function makes it convenient to modify the data source right inside of your Excel report without having to edit the data source directly. In this Editing Data Save example, you will set up a data save that will allow you to edit a customer's contact name and title right from within the Excel report.
+In this example you will build from the previous [Data Pull report](/wDeveloper/L-Dev-CustomerAging.html). Here, you will walkthrough the steps in order to Save Data using the Interject function ReportSave. This function makes it convenient to modify the data source right inside of your Excel report without having to edit the data source directly. In this Editing Data Save example, you will set up a data save that will allow you to edit a customer's contact name and title right from within the Excel report.
 
 ### [Insert & Delete Data Save](/wDeveloper/L-Dev-InsertDeleteDataSave.html)
 

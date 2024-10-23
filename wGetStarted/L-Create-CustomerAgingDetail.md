@@ -4,7 +4,7 @@ filename: "L-Create-CustomerAgingDetail.md"
 layout: custom
 keywords: [create, customer aging, detail, report, range, variable, ReportDefaults, Northwind customers, walkthrough]
 headings: ["Overview", "Building the Report", "ReportRange()", "ReportVariable()", "ReportDefaults()", "Formatting the Report"]
-links: ["/wAbout/Customer-Aging.html", "/wIndex/ReportRange.html", "/wIndex/ReportVariable.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wIndex/ReportRange.html", "/wIndex/ReportRange.html", "/wIndex/ReportVariable.html", "/wIndex/ReportDefaults.html", "/wIndex/Event-Functions-Landing.html", "/wAbout/ReportLibraryLinks.html"]
+links: ["/wAbout/Customer-Aging.html", "/wFunctions/ReportRange.html", "/wFunctions/ReportVariable.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wFunctions/ReportRange.html", "/wFunctions/ReportRange.html", "/wFunctions/ReportVariable.html", "/wFunctions/ReportDefaults.html", "/wFunctions/Event-Functions-Landing.html", "/wAbout/ReportLibraryLinks.html"]
 image_dir: "L-Create-CustAgingDetail"
 images: [
 	{file: "01", type: "png", site: "Add-in", cat: "Report Builder", sub: "", report: "NorthwindCustomers", ribbon: "Advanced", config: ""}, 
@@ -53,7 +53,7 @@ description: This example uses the Customer Aging demo to show the creation of a
 
 ## Overview
 
-This example uses the [Customer Aging](/wAbout/Customer-Aging.html) demo to show the creation of a Customer Aging Detail report that will have variable customer subtotaled sections, each having their respective invoice detail. You will use both the [ReportRange()](/wIndex/ReportRange.html) and [ReportVariable()](/wIndex/ReportVariable.html) formulas to create the output.
+This example uses the [Customer Aging](/wAbout/Customer-Aging.html) demo to show the creation of a Customer Aging Detail report that will have variable customer subtotaled sections, each having their respective invoice detail. You will use both the [ReportRange()](/wFunctions/ReportRange.html) and [ReportVariable()](/wFunctions/ReportVariable.html) formulas to create the output.
 
 <blockquote class=lab_info>
  If you are following the Training Labs, this is Lab 3.6. Note: The Report Library at Training Labs for this lab will be blank as you are creating a report from a new blank Excel sheet.
@@ -78,7 +78,7 @@ When the template is complete, it should look like the one below.
 
 ### ReportRange()
 
-**Step 1:** You can select [Pull Data](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) to see which columns are available. Since the [ReportRange()](/wIndex/ReportRange.html) function does not have a Column Definition defined, it should show all the columns with their column names.
+**Step 1:** You can select [Pull Data](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) to see which columns are available. Since the [ReportRange()](/wFunctions/ReportRange.html) function does not have a Column Definition defined, it should show all the columns with their column names.
 
 ![](/images/L-Create-CustAgingDetail/06.png)
 <br>
@@ -185,7 +185,7 @@ The formatting has been copied down to the rest of the report and there are subt
 ![](/images/L-Create-CustAgingDetail/26.png)
 <br>
 
-**Step 6:** To define the second formula, add **=ReportVariable()** to cell C23 and click the fx button. The placement of this formula matters, since you want it to run after the ReportRange(). The [ReportRange()](/wIndex/ReportRange.html) will be pulled first to provide the list of customer sections, and then the [ReportVariable()](/wIndex/ReportVariable.html) will populate the invoices for each section.
+**Step 6:** To define the second formula, add **=ReportVariable()** to cell C23 and click the fx button. The placement of this formula matters, since you want it to run after the ReportRange(). The [ReportRange()](/wFunctions/ReportRange.html) will be pulled first to provide the list of customer sections, and then the [ReportVariable()](/wFunctions/ReportVariable.html) will populate the invoices for each section.
 
 ![](/images/L-Create-CustAgingDetail/27.png)
 <br>
@@ -227,7 +227,7 @@ After pulling the report you now have invoice detail in each section.
 
 ### ReportDefaults()
 
-**Step 1:** The parameters in C33:C36 are not cleared after clearing the data. You can setup a [ReportDefaults()](/wIndex/ReportDefaults.html) formula to have these cleared after you clear the data. ReportDefaults is an [event](/wIndex/Event-Functions-Landing.html) function, which means it triggers on a particular Interject event. Click on cell **G23** and enter **=ReportDefaults()** and click on the Function Wizard button.
+**Step 1:** The parameters in C33:C36 are not cleared after clearing the data. You can setup a [ReportDefaults()](/wFunctions/ReportDefaults.html) formula to have these cleared after you clear the data. ReportDefaults is an [event](/wFunctions/Event-Functions-Landing.html) function, which means it triggers on a particular Interject event. Click on cell **G23** and enter **=ReportDefaults()** and click on the Function Wizard button.
 
 ![](/images/L-Create-CustAgingDetail/ReportDefaultsEntry.png)
 <br>

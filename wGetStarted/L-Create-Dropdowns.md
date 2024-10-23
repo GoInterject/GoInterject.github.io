@@ -4,7 +4,7 @@ filename: "L-Create-Dropdowns.md"
 layout: custom
 keywords: [jDropdown, function, hyperlink, custom list, walkthrough]
 headings: ["Overview", "Preparing the Report", "Adding a Named Range", "Creating the Formula", "Adding a Special Hyperlink", "Reviewing the Report Changes", "Creating a Custom jDropdown List"]
-links: ["/wIndex/jDropdown.html", "/wGetStarted/L-Create-CustomerAging.html", "https://docs.gointerject.com/wGetStarted/L-Dev-jDropdowns.html", "/wAbout/Report-Library-Basics.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "https://docs.gointerject.com/wAbout/Basics-of-Report-Formulas.html#column-definitions", "https://docs.gointerject.com/wIndex/jDropdown.html", "/wGetStarted/L-Dev-jDropdowns.html"]
+links: ["/wFunctions/jDropdown.html", "/wGetStarted/L-Create-CustomerAging.html", "https://docs.gointerject.com/wDeveloper/L-Dev-jDropdowns.html", "/wAbout/Report-Library-Basics.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "https://docs.gointerject.com/wAbout/Basics-of-Report-Formulas.html#column-definitions", "https://docs.gointerject.com/wFunctions/jDropdown.html", "/wDeveloper/L-Dev-jDropdowns.html"]
 image_dir: "L-Create-Dropdowns"
 images: [
 	{file: "01", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "Interject Customer Collections", ribbon: "Simple", config: ""}, 
@@ -39,12 +39,12 @@ description: The jDropdown formula is used for filtering on multiple parameters.
 
 ## Overview
 
-Interject reports typically have parameters that can be passed to a stored procedure that can filter the data. It can be difficult to remember what the exact filter names are and which are even available for the stored procedure. This is especially true in large reports with many filtering options. However, you can use Interject's [jDropdown](/wIndex/jDropdown.html) formula to automatically create hyperlinked lists of available filters. This makes filtering in large reports a much simpler task! 
+Interject reports typically have parameters that can be passed to a stored procedure that can filter the data. It can be difficult to remember what the exact filter names are and which are even available for the stored procedure. This is especially true in large reports with many filtering options. However, you can use Interject's [jDropdown](/wFunctions/jDropdown.html) formula to automatically create hyperlinked lists of available filters. This makes filtering in large reports a much simpler task! 
 
 In this example you will modify the [Customer Aging report](/wGetStarted/L-Create-CustomerAging.html) by adding the jDropdown functionality to one of the filters, while using an existing Data Portal.
 
 <blockquote class=highlight_note>
-<b>Note:</b> The jDropdown feature requires a Data Portal with a stored procedure to operate. In the event that you cannot create a stored procedure, you can reuse a Data Portal from the report formula that populates the report in which you want to use this feature. To learn how to build the Database Connection, Data Portal, and stored procedure used in this example, follow the instructions in the <a href="https://docs.gointerject.com/wGetStarted/L-Dev-jDropdowns.html">developer example</a>. Otherwise contact your IT department to help implement this functionality.
+<b>Note:</b> The jDropdown feature requires a Data Portal with a stored procedure to operate. In the event that you cannot create a stored procedure, you can reuse a Data Portal from the report formula that populates the report in which you want to use this feature. To learn how to build the Database Connection, Data Portal, and stored procedure used in this example, follow the instructions in the <a href="https://docs.gointerject.com/wDeveloper/L-Dev-jDropdowns.html">developer example</a>. Otherwise contact your IT department to help implement this functionality.
 </blockquote>
 
 <br>
@@ -116,7 +116,7 @@ In this example you will modify the [Customer Aging report](/wGetStarted/L-Creat
 <br>
 
 <blockquote class=highlight_note>
-<b>Important:</b> The Value Column Name and the Display Column Name arguments must exactly match the name of a column that is returned by the stored procedure. A good place to look for valid columns is in the <a href="https://docs.gointerject.com/wAbout/Basics-of-Report-Formulas.html#column-definitions">Column Definitions</a> section of the report. To learn more about the jDropdown() function and what each of its arguments do, review its <a href="https://docs.gointerject.com/wIndex/jDropdown.html">index page</a>.
+<b>Important:</b> The Value Column Name and the Display Column Name arguments must exactly match the name of a column that is returned by the stored procedure. A good place to look for valid columns is in the <a href="https://docs.gointerject.com/wAbout/Basics-of-Report-Formulas.html#column-definitions">Column Definitions</a> section of the report. To learn more about the jDropdown() function and what each of its arguments do, review its <a href="https://docs.gointerject.com/wFunctions/jDropdown.html">index page</a>.
 </blockquote>
 
 ### Adding a Special Hyperlink
@@ -152,7 +152,7 @@ In this example you will modify the [Customer Aging report](/wGetStarted/L-Creat
 ![](/images/L-Create-Dropdowns/17.png)
 <br>
 
-To build the stored procedure and Data Portal, and database connection that allows this formula to work, continue to the [developer section of this example](/wGetStarted/L-Dev-jDropdowns.html).
+To build the stored procedure and Data Portal, and database connection that allows this formula to work, continue to the [developer section of this example](/wDeveloper/L-Dev-jDropdowns.html).
 
 ### Creating a Custom jDropdown List
 

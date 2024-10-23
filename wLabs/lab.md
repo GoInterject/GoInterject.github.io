@@ -303,7 +303,7 @@ This lab will focus on how to export a report once it is completed and utilizing
 
 In this lab you will work on developing your own custom data pulls from the ground up.
 
-#### [8.1 Lab Develop: Customer Aging](/wGetStarted/L-Dev-CustomerAging.html)
+#### [8.1 Lab Develop: Customer Aging](/wDeveloper/L-Dev-CustomerAging.html)
 
 **_Concepts_** :
 • Setting up a data connection
@@ -312,14 +312,14 @@ In this lab you will work on developing your own custom data pulls from the grou
 • Creating a stored procedure for a data pull
 <br>
 
-#### [8.2 Lab Develop: Customer Orders](/wGetStarted/L-Dev-CustomerOrders.html)
+#### [8.2 Lab Develop: Customer Orders](/wDeveloper/L-Dev-CustomerOrders.html)
 
 **_Concepts_** :
 • Cloning a data portal
 • Creating a stored procedure for a data pull
 <br>
 
-#### [8.3 Lab Develop: Customer jDropdowns](/wGetStarted/L-Dev-jDropdowns.html)
+#### [8.3 Lab Develop: Customer jDropdowns](/wDeveloper/L-Dev-jDropdowns.html)
 
 **_Concepts_** :
 • Setting up a data connection
@@ -328,7 +328,7 @@ In this lab you will work on developing your own custom data pulls from the grou
 • Testing the stored procedure
 <br>
 
-#### [8.4 Lab Develop: Customer Aging Detail](/wGetStarted/L-Dev-CustomerAgingDetail.html)
+#### [8.4 Lab Develop: Customer Aging Detail](/wDeveloper/L-Dev-CustomerAgingDetail.html)
 
 **_Concepts_** :
 • Cloning a data portal

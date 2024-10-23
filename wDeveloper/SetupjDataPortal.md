@@ -4,7 +4,7 @@ filename: "SetupjDataPortal.md"
 layout: custom
 keywords: [portal, connection, override, command]
 headings: ["Overview", "Setup jDataPortal", "Result Sets", "Order By", "Filter", "Overriding a Connection", "Overriding a Command"]
-links: ["/wIndex/jDataPortal.html", "https://learn.microsoft.com/en-us/dotnet/api/system.data.dataview.sort", "https://learn.microsoft.com/en-us/dotnet/api/system.data.dataview.rowfilter", "https://learn.microsoft.com/en-us/dotnet/api/system.data.datacolumn.expression", "/wPortal/Data-Connections.html", "https://portal.gointerject.com/DataPortals.html", "/wPortal/INTERJECT-Roles.html"]
+links: ["/wFunctions/jDataPortal.html", "https://learn.microsoft.com/en-us/dotnet/api/system.data.dataview.sort", "https://learn.microsoft.com/en-us/dotnet/api/system.data.dataview.rowfilter", "https://learn.microsoft.com/en-us/dotnet/api/system.data.datacolumn.expression", "/wPortal/Data-Connections.html", "https://portal.gointerject.com/DataPortals.html", "/wPortal/INTERJECT-Roles.html"]
 image_dir: "SetupjDataPortal"
 images: [
 	{file: "CustomerCollectionsReport", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "Interject Customer Collections", ribbon: "", config: ""}, 
@@ -26,7 +26,7 @@ description: The jDataPortal is a powerful Interject function that not only allo
 
 ## Overview
 
-The [jDataPortal](/wIndex/jDataPortal.html) is a powerful Interject function that not only allows users to not only establish and customize the connection to an Interject Data Portal, but also override certain parameters of the Portal to customize reporting needs.
+The [jDataPortal](/wFunctions/jDataPortal.html) is a powerful Interject function that not only allows users to not only establish and customize the connection to an Interject Data Portal, but also override certain parameters of the Portal to customize reporting needs.
 
 ### Setup jDataPortal
 

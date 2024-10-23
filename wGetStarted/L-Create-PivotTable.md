@@ -4,7 +4,7 @@ filename: "L-Create-PivotTable.md"
 layout: custom
 keywords: [pivot table, walkthrough]
 headings: ["Overview", "Building the Support Tab", "Building the Pivot Table", "Customizing the Pivot Table"]
-links: ["/wAbout/Customer-Aging.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wIndex/ReportRun.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wAbout/Customer-Aging.html#CustomerAging-pivot"]
+links: ["/wAbout/Customer-Aging.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wFunctions/ReportRun.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wAbout/Customer-Aging.html#CustomerAging-pivot"]
 image_dir: "L-Create-PivotTable"
 images: [
 	{file: "01", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "Interject Customer Collections", ribbon: "Simple", config: ""}, 
@@ -166,7 +166,7 @@ The parameter section of the report should look like the following screenshot.
 ![](/images/L-Create-PivotTable/18.png)
 <br>
 
-**Step 2:** Now set up the [ReportRun()](/wIndex/ReportRun.html) function. This will cause the target sheet to perform a [**Pull Data**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) or [**Clear Data**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) when Pull Data is triggered from the pivot table worksheet.
+**Step 2:** Now set up the [ReportRun()](/wFunctions/ReportRun.html) function. This will cause the target sheet to perform a [**Pull Data**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) or [**Clear Data**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) when Pull Data is triggered from the pivot table worksheet.
 
 ![](/images/L-Create-PivotTable/19.png)
 <br>

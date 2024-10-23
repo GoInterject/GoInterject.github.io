@@ -4,7 +4,7 @@ filename: "TroubleshootingSolutions.md"
 layout: custom
 keywords: [errors, solutions, fix]
 headings: ["Overview", "Error: Add-in Not Completely Loaded", "Error: Incompatible FIPS", "Error: Interject Web API Offline", "Can't Install or Uninstall Interject", "Error: Interject Add-in Ribbon is Gone", "Error: Cannot Connect or Communicate With Interject Platform", "Error: Login Page Not Showing (ver 2.5+)", "Error: File Not Uploading Correctly to Report Library", "Error: Report Showing Incorrect Data or Data Missing"]
-links: ["https://portal.gointerject.com/download-interject.html", "/wAbout/TLS.html", "/wAbout/Enterprise-Login-Setup.html#ip-whitelisting", "/wTroubleshoot/Addin-Missing.html", "/wAbout/Enterprise-Login-Setup.html#ip-whitelisting", "https://live-interject-authapi.azurewebsites.net/", "https://live-interject-authapi.azurewebsites.net/.well-known/openid-configuration", "https://live-interject-authapi.azurewebsites.net/", "/wTroubleshoot/WebView2.html", "/wAbout/Enterprise-Login-Setup.html#ip-whitelisting", "/wTroubleshoot/Cloud-File.html#solution-saving-to-local-drive", "/wTroubleshoot/Cloud-File.html#solution-uploading-as-a-website-link", "/wIndex/Excel-Function-Index.html", "https://portal.gointerject.com/download-interject.html#additionalInstallers"]
+links: ["https://portal.gointerject.com/download-interject.html", "/wDeveloper/TLS.html", "/wAbout/Enterprise-Login-Setup.html#ip-whitelisting", "/wTroubleshoot/Addin-Missing.html", "/wAbout/Enterprise-Login-Setup.html#ip-whitelisting", "https://live-interject-authapi.azurewebsites.net/", "https://live-interject-authapi.azurewebsites.net/.well-known/openid-configuration", "https://live-interject-authapi.azurewebsites.net/", "/wTroubleshoot/WebView2.html", "/wAbout/Enterprise-Login-Setup.html#ip-whitelisting", "/wTroubleshoot/Cloud-File.html#solution-saving-to-local-drive", "/wTroubleshoot/Cloud-File.html#solution-uploading-as-a-website-link", "/wFunctions/Excel-Function-Index.html", "https://portal.gointerject.com/download-interject.html#additionalInstallers"]
 image_dir: ""
 images: []
 description: This is a troubleshooting guide for the Interject Add-in. This resource is designed to help you navigate and resolve a variety of common issues you might encounter while using the Interject Add-in.
@@ -45,7 +45,7 @@ _"One or more of the Interject web apis are offline or could not be reached. The
 
     <span style="color: green;">SOLUTION:</span> [Upgrade Interject](https://portal.gointerject.com/download-interject.html)
 
-    <span style="color: green;">SOLUTION:</span> Override TLS protocol with [System settings](/wAbout/TLS.html)
+    <span style="color: green;">SOLUTION:</span> Override TLS protocol with [System settings](/wDeveloper/TLS.html)
 
 - <span style="color: red;">ISSUE:</span> The network may have a firewall policy blocking requests to Interject cloud services
 
@@ -110,7 +110,7 @@ _"One or more of the Interject web apis are offline or could not be reached. The
 
 - <span style="color: red;">ISSUE:</span> Report formulas not set up correctly.
 
-    <span style="color: green;">SOLUTION:</span> Double check your formula is set up correctly using our [doc pages](/wIndex/Excel-Function-Index.html).
+    <span style="color: green;">SOLUTION:</span> Double check your formula is set up correctly using our [doc pages](/wFunctions/Excel-Function-Index.html).
 
 - <span style="color: red;">ISSUE:</span> Data API not set up correctly.
 

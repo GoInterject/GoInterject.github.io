@@ -4,7 +4,7 @@ filename: "QuickTools-Names.md"
 layout: custom
 keywords: [Quick Tools, Names Tools, Remove Names with Ref Errors from Book, Remove All Names from Sheet, Remove All Names from Book, Create Range Name for Sheet, Create Range Names for Sheet for 2 Column Selection]
 headings: ["Overview", "Excel Name Manager", "Remove Names with Ref Errors from Book", "Remove All Names from Sheet", "Remove All Names from Book", "Create Range Name for Sheet", "Create Range Names for Sheet for 2 Column Selection", "Appending A Prefix and/or Suffix To A Name"]
-links: ["/wIndex/jSetting.html"]
+links: ["/wFunctions/jSetting.html"]
 image_dir: "QuickToolsNames"
 images: [
 	{file: "NamesTools", type: "png", site: "Add-in", cat: "Quick Tools", sub: "", report: "", ribbon: "", config: ""}, 
@@ -194,7 +194,7 @@ Interject can automatically have a prefix and/or suffix appended to a defined na
 ![](/images/QuickToolsNames/PrefixSuffix2.png)
 <br>
 
-**Step 4:** Interject will find any json pair in this named range to use. To have Excel format a json pair using the prefix and suffix set up, you can use the Interject [jSetting](/wIndex/jSetting.html) function. This function automatically formats a pair into json form. In the cell with the named range, enter the following:
+**Step 4:** Interject will find any json pair in this named range to use. To have Excel format a json pair using the prefix and suffix set up, you can use the Interject [jSetting](/wFunctions/jSetting.html) function. This function automatically formats a pair into json form. In the cell with the named range, enter the following:
 
 ```bash
 =jSetting("NamedRangePrefix", C2)&jSetting("NamedRangeSuffix",C3)

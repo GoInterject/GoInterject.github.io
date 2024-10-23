@@ -4,7 +4,7 @@ filename: "RowDefClear.md"
 layout: custom
 keywords: [RowDefRange, ColDefRange, Column definition missing, data clear]
 headings: ["Overview", "Cause of the Error", "The Solution"]
-links: ["/wIndex/ReportVariable.html"]
+links: ["/wFunctions/ReportVariable.html"]
 image_dir: "RowDefClear"
 images: [
 	{file: "MultipleRowDefs", type: "png", site: "Add-in", cat: "Report", sub: "", report: "PL Report Categories by Location", ribbon: "", config: ""}, 
@@ -17,7 +17,7 @@ description: Data does not clear when multiple columns are defined as the RowDef
 
 ## Overview
 
-Data does not clear when multiple columns are defined as the RowDefRange for a [ReportVariable](/wIndex/ReportVariable.html). This happens only when the first column of the RowDefRange is missing from the ColDefRange.
+Data does not clear when multiple columns are defined as the RowDefRange for a [ReportVariable](/wFunctions/ReportVariable.html). This happens only when the first column of the RowDefRange is missing from the ColDefRange.
 
 ### Cause of the Error
 

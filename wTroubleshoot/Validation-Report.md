@@ -4,7 +4,7 @@ filename: "Validation-Report.md"
 layout: custom
 keywords: [report, error, user support, validation report, formula, parameters, functions, detailed information, code, events, triggers]
 headings: ["Overview", "Validation Report Options", "Pull/Save Data Event", "Drill Event", "Clear Pull/Save Data Event", "Go Back Event", "Data Cell Functions", "Data Cell Last Change Report", "Cell Formula Review"]
-links: ["/wIndex/Excel-Function-Index.html", "/wAbout/Tabular-vs-Data-Cells.html", "/wIndex/Event-Functions-Landing.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#advanced-menu-items", "/wIndex/Event-Functions-Landing.html", "#pullsave-data-event", "#pullsave-data-event", "#drill-event", "#clear-pullsave-data-event", "#clear-pullsave-data-event", "#go-back-event", "#data-cell-functions", "#data-cell-last-change-report", "#cell-formula-review", "/wIndex/ReportDrill.html", "#pullsave-data-event", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#return-from-drill", "/wAbout/Tabular-vs-Data-Cells.html#data-cells", "/wIndex/Report-Formula-Reviews.html#cell-formula-review"]
+links: ["/wFunctions/Excel-Function-Index.html", "/wAbout/Tabular-vs-Data-Cells.html", "/wFunctions/Event-Functions-Landing.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#advanced-menu-items", "/wFunctions/Event-Functions-Landing.html", "#pullsave-data-event", "#pullsave-data-event", "#drill-event", "#clear-pullsave-data-event", "#clear-pullsave-data-event", "#go-back-event", "#data-cell-functions", "#data-cell-last-change-report", "#cell-formula-review", "/wFunctions/ReportDrill.html", "#pullsave-data-event", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#return-from-drill", "/wAbout/Tabular-vs-Data-Cells.html#data-cells", "/wIndex/Report-Formula-Reviews.html#cell-formula-review"]
 image_dir: "ValidationReport"
 images: [
     {file: "Ribbon", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
@@ -26,7 +26,7 @@ description: The Validation Report feature displays detailed information about I
 
 ## Overview
 
-The Validation Report feature displays detailed information about Interject pull, save, and drill [functions](/wIndex/Excel-Function-Index.html), [data cell functions](/wAbout/Tabular-vs-Data-Cells.html), and [events](/wIndex/Event-Functions-Landing.html). It is a tool to help report writers see how specific report formulas behave by interpreting the report formula inputs. When developing report templates, there are often many Interject report formulas in a single template. The Validation Report can help analyze the order of execution for the report formulas. This ensures that Interject events occur in the intended order. The Validation Report also shows report writers how to check if a formula is included in the Interject execution plan. Finally, the Validation Report tool displays to writers which parameters are being included in every report formula on the report template.
+The Validation Report feature displays detailed information about Interject pull, save, and drill [functions](/wFunctions/Excel-Function-Index.html), [data cell functions](/wAbout/Tabular-vs-Data-Cells.html), and [events](/wFunctions/Event-Functions-Landing.html). It is a tool to help report writers see how specific report formulas behave by interpreting the report formula inputs. When developing report templates, there are often many Interject report formulas in a single template. The Validation Report can help analyze the order of execution for the report formulas. This ensures that Interject events occur in the intended order. The Validation Report also shows report writers how to check if a formula is included in the Interject execution plan. Finally, the Validation Report tool displays to writers which parameters are being included in every report formula on the report template.
 
 The Validation Report is located on the [Advanced Menu](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#advanced-menu-items) of the Interject ribbon.
 
@@ -40,7 +40,7 @@ By selecting any of the validation options, you can view the code behind each ac
 
 ### Validation Report Options
 
-The Validation Report can assist in analyzing Interject functions and events. For an overview on Interject events, see [Event Functions](/wIndex/Event-Functions-Landing.html).
+The Validation Report can assist in analyzing Interject functions and events. For an overview on Interject events, see [Event Functions](/wFunctions/Event-Functions-Landing.html).
 
 * [**Pull Data Event**](#pullsave-data-event): Analyzes all functions triggered by a Pull-Run event
 * [**Save Data Event**](#pullsave-data-event): Analyzes all functions triggered by a Save-Run event
@@ -68,7 +68,7 @@ The Pull or Save Data Event will list detailed information for all Interject fun
 
 ### Drill Event
 
-The Drill Event command analyzes all [ReportDrill](/wIndex/ReportDrill.html) functions within the sheet. 
+The Drill Event command analyzes all [ReportDrill](/wFunctions/ReportDrill.html) functions within the sheet. 
 
 ![](/images/ValidationReport/DrillEvent.png)
 <br>
