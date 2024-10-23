@@ -6,7 +6,19 @@ keywords: [Rowdef name, multi-column, multiple, aggregation]
 headings: []
 links: []
 image_dir: "RowDefinitionRange"
-images: []
+images: [
+	{file: "PLReportRL", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""},
+	{file: "PullData", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""},
+	{file: "Unfreeze", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""},
+	{file: "ExpandGroups", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""},
+	{file: "PLTrendRowDefItems", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""},
+	{file: "FixedRowDefRange", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""},
+	{file: "VariableRowDefRange", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""},
+	{file: "ViewSQLClick", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""},
+	{file: "ViewSQLFixedSingleColumn", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""},
+	{file: "RowDefItems2", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""},
+	{file: "CategoryName", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
+]
 description: 
 ---
 

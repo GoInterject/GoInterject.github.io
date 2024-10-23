@@ -2,14 +2,25 @@
 title: Report Builder
 filename: "ReportBuilder.md"
 layout: custom
-keywords: []
+keywords: ["report", "build", "portal", "template"]
 headings: ["Overview"]
 links: []
 image_dir: "ReportBuilder"
 images: [
-    {file: "", type: "png", site: "Addin", cat: "", sub: "", report: "", ribbon: "", config: ""}
+	{file: "Ribbon", type: "png", site: "Add-in", cat: "Ribbon", sub: "Report Builder", report: "", ribbon: "Advanced", config: ""},
+	{file: "OpenReportBuilder", type: "png", site: "Add-in", cat: "Report Builder", sub: "", report: "", ribbon: "Advanced", config: ""},
+	{file: "ReportBuilderNorthwindCustomers", type: "png", site: "Add-in", cat: "Report Builder", sub: "", report: "NorthwindCustomers", ribbon: "", config: ""},
+	{file: "ReportBuilder", type: "png", site: "Add-in", cat: "Report Builder", sub: "", report: "NorthwindCustomers", ribbon: "", config: ""},
+	{file: "NorthwindCustomersReport", type: "png", site: "Add-in", cat: "Report", sub: "", report: "NorthwindCustomers", ribbon: "", config: "Yes"},
+	{file: "AllColumnsReturned", type: "png", site: "Add-in", cat: "Report", sub: "", report: "NorthwindCustomers", ribbon: "", config: "Yes"},
+	{file: "CommaDelimitedList", type: "png", site: "Portal", cat: "Data Portals", sub: "Helper Default Columns", report: "", ribbon: "", config: ""},
+	{file: "SelectedColumnsBuilt", type: "png", site: "Add-in", cat: "Report", sub: "", report: "NorthwindCustomers", ribbon: "", config: "Yes"},
+	{file: "ColumnFilters", type: "png", site: "Add-in", cat: "Right Click Menu", sub: "Sort Filter", report: "NorthwindCustomers", ribbon: "", config: "Yes"},
+	{file: "FormulaParameters", type: "png", site: "Portal", cat: "Data Portals", sub: "Formula Parameters", report: "", ribbon: "", config: ""},
+	{file: "ReportBuilderSection", type: "png", site: "Portal", cat: "Data Portals", sub: "Formula Parameters", report: "", ribbon: "", config: ""},
+	{file: "CustomizedParameter", type: "png", site: "Add-in", cat: "Report", sub: "Dropdown Menu", report: "NorthwindCustomers", ribbon: "", config: "Yes"},
 ]
-description: 
+description: The Report Builder is a tool in the Interject Addin to easily create a report based on the settings in a Data Portal.
 ---
 * * *
 
