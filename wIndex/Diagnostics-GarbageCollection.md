@@ -1,6 +1,6 @@
 ---
 title: Diagnostics - Force Garbage Collection on Dead Memory
-filename: ""
+filename: "Diagnostics-GarbageCollection.md"
 layout: custom
 keywords: []
 headings: ["Overview"]

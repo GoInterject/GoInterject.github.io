@@ -1,6 +1,6 @@
 ---
 title: BSpec()
-filename: ""
+filename: "BSpec.md"
 layout: custom
 keywords: []
 headings: []

@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting Guide
-filename: "TroubleshootingSolutions.md"
+filename: "TroubleshootingGuide.md"
 layout: custom
 keywords: [errors, solutions, fix]
 headings: ["Overview", "Error: Add-in Not Completely Loaded", "Error: Incompatible FIPS", "Error: Interject Web API Offline", "Can't Install or Uninstall Interject", "Error: Interject Add-in Ribbon is Gone", "Error: Cannot Connect or Communicate With Interject Platform", "Error: Login Page Not Showing (ver 2.5+)", "Error: File Not Uploading Correctly to Report Library", "Error: Report Showing Incorrect Data or Data Missing"]

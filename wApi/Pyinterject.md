@@ -1,6 +1,6 @@
 ---
 title: Pyinterject
-filename: "pyinterject.md"
+filename: "Pyinterject.md"
 layout: custom
 keywords: [python, platform, api, package, scripts, crud]
 headings: ["Overview", "What Can Pyinterject Do", "Example Scripts", "Get the Code"]

@@ -1,6 +1,6 @@
 ---
 title: jCombineSmart()
-filename: "jCombineSmart.md"
+filename: "jCombine_Smart.md"
 layout: custom
 keywords: [jCombineSmart, helper, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Usable In These Functions"]

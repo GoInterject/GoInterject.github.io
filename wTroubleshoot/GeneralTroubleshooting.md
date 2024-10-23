@@ -1,6 +1,6 @@
 ---
 title: General Troubleshooting
-filename: "GeneralToubleshooting.md"
+filename: "GeneralTroubleshooting.md"
 layout: custom
 keywords: [help, support, diagnose, conflict, tech, issue, problem]
 headings: ["Overview"]
