@@ -3,7 +3,7 @@ title: Installing - Single User
 filename: "SingleUser.md"
 layout: custom
 keywords: [Installing, Install, Basic]
-headings: ["Overview", "Installing Interject"]
+headings: ["Overview", "Installing Interject", "File Locations"]
 links: ["https://docs.gointerject.com/wAbout/SharedComputer.html", "https://portal.gointerject.com/login.html", "https://portal.gointerject.com/invite.html?mode=create", "/wPortal/DownloadInterject.html", "/wAbout/Logging-In.html", "mailto:help@gointerject.com"]
 image_dir: "SingleUser"
 images: [

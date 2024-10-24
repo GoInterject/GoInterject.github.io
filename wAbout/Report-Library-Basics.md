@@ -3,7 +3,7 @@ title: Report Library Basics
 filename: "Report-Library-Basics.md"
 layout: custom
 keywords: [report library, folder, link, version, resize, file, status, navigate, search]
-headings: ["Overview", "Opening The Report Library", "Resizing the Report Library", "The Report Library", "Folders Section", "Report Link Section", "Link Version Section", "Status", "Opening a Report", "Navigating the Report Library", "Using the Search Feature", "Using the keyboard", "Using the mouse", "Using the Diagnostics Form", "Related Links"]
+headings: ["Overview", "Opening The Report Library", "Resizing the Report Library", "The Report Library", "Folders Section", "Report Link Section", "Link Version Section", "Status", "Opening a Report", "Navigating the Report Library", "Using the Search Feature", "Using the keyboard", "Using the mouse", "Related Links"]
 links: ["/wAbout/Resizing-Form-Windows.html", "/wGetStarted/L-Create-UpdatingReportLibrary", "/wAbout/Logging-In.html", "/wAbout/Updating-Interject.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "/wAbout/Real-World-Walkthroughs.html", "/wAbout/Inventory-Reports.html"]
 image_dir: "ReportLibraryBasics"
 images: [

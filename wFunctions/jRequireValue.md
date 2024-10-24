@@ -3,7 +3,7 @@ title:
 layout: custom
 filename: "jRequireValue.md"
 keywords: []
-headings: []
+headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition"]
 links: []
 image_dir: ""
 images: []

@@ -3,7 +3,7 @@ title: Folder Permissions
 filename: "FolderPermissions.md"
 layout: custom
 keywords: []
-headings: ["Overview", ""]
+headings: ["Overview"]
 links: ["/wPortal/Roles.md#custom-roles"]
 image_dir: "FolderPermissions"
 images: [

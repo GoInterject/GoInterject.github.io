@@ -3,7 +3,7 @@ title: "Drill: Customer Aging Report"
 filename: "L-Drill-CustomerAging.md"
 layout: custom
 keywords: [drill, create, build, customer aging, walkthrough]
-headings: ["Overview", "Unfreezing the Excel Sheet", "Build the Drill", "Final Results"]
+headings: ["Overview", "Initializing the Report", "Build the Drill", "Final Results"]
 links: ["/wFunctions/ReportDrill.html", "/wFunctions/PairGroup.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "/wAbout/ReportLibraryLinks.html"]
 image_dir: "L-Drill-CustAging"
 images: [

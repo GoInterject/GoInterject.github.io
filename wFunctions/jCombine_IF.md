@@ -3,7 +3,7 @@ title: jCombineIF()
 filename: "jCombine_IF.md"
 layout: custom
 keywords: [jCombineIF, helper, function, formula]
-headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Usable In These Functions"]
+headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition"]
 links: ["/wGetStarted/L-Create-RetainFeature.html#jcombineif", "ReportRange.html", "ReportVariable.html"]
 image_dir: ""
 images: []

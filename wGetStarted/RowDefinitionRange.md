@@ -3,7 +3,7 @@ title: Advanced Principles for the Row Definition Range
 filename: "RowDefinitionRange.md"
 layout: custom
 keywords: [Rowdef name, multi-column, multiple, aggregation]
-headings: []
+headings: ["Overview", "Multi-Column RowDef Feature", "Opening and Displaying the Report", "RowDef Items", "Information Sent to Data Source", "Multi-Column Row Definitions"]
 links: []
 image_dir: "RowDefinitionRange"
 images: [

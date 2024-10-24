@@ -3,7 +3,7 @@ title: Diagnostics - Apply Special Features
 filename: "Diagnostics-SpecialFeatures.md"
 layout: custom
 keywords: [Diagnostics, Apply Special Features, Configuration, Config, animations, bug fix]
-headings: ["Overview", "BugFix1: Microsoft Animations", "BugFix2: Microsoft Repaint"]
+headings: ["Overview", "BugFix1: Microsoft Animations", "BugFix2: Microsoft Repaint", "Macro Security Settings", "Webview2/Browser Login"]
 links: []
 image_dir: "DiagnosticsSpecialFeatures"
 images: [

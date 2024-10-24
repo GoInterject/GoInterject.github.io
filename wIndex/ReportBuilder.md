@@ -3,7 +3,7 @@ title: Report Builder
 filename: "ReportBuilder.md"
 layout: custom
 keywords: ["report", "build", "portal", "template"]
-headings: ["Overview"]
+headings: ["Overview", "Building A Report", "Helper Default Columns", "Report Builder Section"]
 links: []
 image_dir: "ReportBuilder"
 images: [

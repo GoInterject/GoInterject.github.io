@@ -3,7 +3,7 @@ title: BSpec()
 filename: "BSpec.md"
 layout: custom
 keywords: []
-headings: []
+headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition"]
 links: []
 image_dir: ""
 images: []

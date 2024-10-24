@@ -3,7 +3,7 @@ title: jAcct()
 filename: "jAcct.md"
 layout: custom
 keywords: [jacct, account, segment, function, formula, chart of accounts]
-headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example"]
+headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition"]
 links: ["/wFunctions/jCell.html"]
 image_dir: ""
 images: []

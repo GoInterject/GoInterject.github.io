@@ -3,7 +3,7 @@ title: Adding a User
 filename: "AddUser.md"
 layout: custom
 keywords: [create, new, user]
-headings: ["Overview", "Add User", "Adding Details", "Password", "Create User", "Welcome Email", "Roles"]
+headings: ["Overview", "Add A User", "Adding Details", "Password", "Create User", "Welcome Email", "Roles"]
 links: ["/wPortal/StaffPage.html", "/wPortal/INTERJECT-Roles.html#clientadmin-role", "#welcome-email", "/wPortal/Altering-User-Passwords.html", "/wPortal/INTERJECT-Roles.html"]
 image_dir: "AddUser"
 images: [

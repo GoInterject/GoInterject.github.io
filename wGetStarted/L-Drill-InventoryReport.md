@@ -3,7 +3,7 @@ title: "Drill: Inventory Report"
 filename: "L-Drill-InventoryReport.md"
 layout: custom
 keywords: [drill, report, hyperlinks, walkthrough]
-headings: ["Overview", "Unfreezing the Report", "Setting up the Drill", "Creating Hyperlinks as Drills"]
+headings: ["Overview", "Initializing the Report", "Setting up the Drill", "Creating Hyperlinks as Drills"]
 links: ["/wAbout/Inventory-Reports.html", "/wFunctions/ReportDrill.html", "#creating-hyperlinks-as-drills", "/wFunctions/ReportDrill.html", "/wFunctions/PairGroup.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "/wGetStarted//L-Drill-FinancialReport.html"]
 image_dir: "L-Drill-Inventory"
 images: [

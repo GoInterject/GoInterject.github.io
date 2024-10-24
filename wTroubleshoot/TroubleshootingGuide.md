@@ -3,7 +3,7 @@ title: Troubleshooting Guide
 filename: "TroubleshootingGuide.md"
 layout: custom
 keywords: [errors, solutions, fix]
-headings: ["Overview", "Error: Add-in Not Completely Loaded", "Error: Incompatible FIPS", "Error: Interject Web API Offline", "Can't Install or Uninstall Interject", "Error: Interject Add-in Ribbon is Gone", "Error: Cannot Connect or Communicate With Interject Platform", "Error: Login Page Not Showing (ver 2.5+)", "Error: File Not Uploading Correctly to Report Library", "Error: Report Showing Incorrect Data or Data Missing"]
+headings: ["Overview", "Error: Add-in Not Completely Loaded", "Error: Incompatible FIPS", "Error: Interject Web API Offline", "Error: Can't Install or Uninstall Interject", "Error: Interject Add-in Ribbon is Gone", "Error: Cannot Connect or Communicate With Interject Platform", "Error: Login Page Not Showing (ver 2.5+)", "Error: File Not Uploading Correctly to Report Library", "Error: Report Showing Incorrect Data or Data Missing"]
 links: ["https://portal.gointerject.com/download-interject.html", "/wDeveloper/TLS.html", "/wAbout/Enterprise-Login-Setup.html#ip-whitelisting", "/wTroubleshoot/Addin-Missing.html", "/wAbout/Enterprise-Login-Setup.html#ip-whitelisting", "https://live-interject-authapi.azurewebsites.net/", "https://live-interject-authapi.azurewebsites.net/.well-known/openid-configuration", "https://live-interject-authapi.azurewebsites.net/", "/wTroubleshoot/WebView2.html", "/wAbout/Enterprise-Login-Setup.html#ip-whitelisting", "/wTroubleshoot/Cloud-File.html#solution-saving-to-local-drive", "/wTroubleshoot/Cloud-File.html#solution-uploading-as-a-website-link", "/wFunctions/Excel-Function-Index.html", "https://portal.gointerject.com/download-interject.html#additionalInstallers"]
 image_dir: ""
 images: []
