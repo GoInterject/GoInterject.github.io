@@ -16,7 +16,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuerySummary
   images:
   - cat: ''
     config: ''
-    file: BudgetChangeQuery_ReportLibrary
+    file: Budget/BudgetChangeQuery_ReportLibrary
     report: ''
     ribbon: ''
     site: ''
@@ -46,7 +46,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_Detail
   images:
   - cat: ''
     config: ''
-    file: BudChangeQuery_Detail_FullView
+    file: Budget/BudChangeQuery_Detail_FullView
     report: ''
     ribbon: ''
     site: ''
@@ -68,7 +68,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_EBITDA
   images:
   - cat: ''
     config: ''
-    file: BudChangeQuery_EBITDAChangeHistory_FullView
+    file: Budget/BudChangeQuery_EBITDAChangeHistory_FullView
     report: ''
     ribbon: ''
     site: ''
@@ -91,7 +91,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_EBITDA
   images:
   - cat: ''
     config: ''
-    file: BudChangeQuery_EBITDARevenueBuckets_FullView
+    file: Budget/BudChangeQuery_EBITDARevenueBuckets_FullView
     report: ''
     ribbon: ''
     site: ''
@@ -117,7 +117,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_Review
   images:
   - cat: ''
     config: ''
-    file: BudChangeQuery_ReviewDateDetail_FullView
+    file: Budget/BudChangeQuery_ReviewDateDetail_FullView
     report: ''
     ribbon: ''
     site: ''
@@ -125,7 +125,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_Review
     type: png
   - cat: ''
     config: ''
-    file: BudChangeQuery_ReviewDateDetail_ReviewTypeDropDown
+    file: Budget/BudChangeQuery_ReviewDateDetail_ReviewTypeDropDown
     report: ''
     ribbon: ''
     site: ''
@@ -152,7 +152,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_Review
   images:
   - cat: ''
     config: ''
-    file: BudChangeQuery_ReviewDateSummary_FullView
+    file: Budget/BudChangeQuery_ReviewDateSummary_FullView
     report: ''
     ribbon: ''
     site: ''
@@ -160,7 +160,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_Review
     type: png
   - cat: ''
     config: ''
-    file: BudChangeQuery_ReviewDateSummary_DistrictList
+    file: Budget/BudChangeQuery_ReviewDateSummary_DistrictList
     report: ''
     ribbon: ''
     site: ''
@@ -168,7 +168,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_Review
     type: png
   - cat: ''
     config: ''
-    file: BudChangeQuery_ReviewDateSummary_ReviewDateBuckets
+    file: Budget/BudChangeQuery_ReviewDateSummary_ReviewDateBuckets
     report: ''
     ribbon: ''
     site: ''
@@ -176,7 +176,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_Review
     type: png
   - cat: ''
     config: ''
-    file: BudChangeQuery_ReviewDateSummary_ChangesFrom
+    file: Budget/BudChangeQuery_ReviewDateSummary_ChangesFrom
     report: ''
     ribbon: ''
     site: ''
@@ -184,7 +184,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_Review
     type: png
   - cat: ''
     config: ''
-    file: BudChangeQuery_ReviewDateSummary_ControlCenterReviewDates
+    file: Budget/BudChangeQuery_ReviewDateSummary_ControlCenterReviewDates
     report: ''
     ribbon: ''
     site: ''
@@ -192,7 +192,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_Review
     type: png
   - cat: ''
     config: ''
-    file: BudChangeQuery_ReviewDateSummary_RegCutoffAmounts
+    file: Budget/BudChangeQuery_ReviewDateSummary_RegCutoffAmounts
     report: ''
     ribbon: ''
     site: ''
@@ -215,7 +215,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_Summar
   images:
   - cat: ''
     config: ''
-    file: BudChangeQuery_Summary_FullView
+    file: Budget/BudChangeQuery_Summary_FullView
     report: ''
     ribbon: ''
     site: ''
@@ -240,7 +240,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_Unsync
   images:
   - cat: ''
     config: ''
-    file: BudChangeQuery_Unsynced_FullView
+    file: Budget/BudChangeQuery_Unsynced_FullView
     report: ''
     ribbon: ''
     site: ''
@@ -248,7 +248,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_Unsync
     type: png
   - cat: ''
     config: ''
-    file: BudChangeQuery_Unsynced_ChangeInfo
+    file: Budget/BudChangeQuery_Unsynced_ChangeInfo
     report: ''
     ribbon: ''
     site: ''
@@ -310,7 +310,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplate.html:
   images:
   - cat: ''
     config: ''
-    file: FilterOptions1
+    file: Budget/FilterOptions1
     report: ''
     ribbon: ''
     site: ''
@@ -318,7 +318,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplate.html:
     type: png
   - cat: ''
     config: ''
-    file: FilterOptions_BuildBaseOn
+    file: Budget/FilterOptions_BuildBaseOn
     report: ''
     ribbon: ''
     site: ''
@@ -326,7 +326,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplate.html:
     type: png
   - cat: ''
     config: ''
-    file: FilterOptions_AccountLevel
+    file: Budget/FilterOptions_AccountLevel
     report: ''
     ribbon: ''
     site: ''
@@ -334,7 +334,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplate.html:
     type: png
   - cat: ''
     config: ''
-    file: FilterOptions2
+    file: Budget/FilterOptions2
     report: ''
     ribbon: ''
     site: ''
@@ -342,7 +342,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplate.html:
     type: png
   - cat: ''
     config: ''
-    file: FilterOptions3
+    file: Budget/FilterOptions3
     report: ''
     ribbon: ''
     site: ''
@@ -350,7 +350,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplate.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_BaseYear01
+    file: Budget/BudgetTemplate_BaseYear01
     report: ''
     ribbon: ''
     site: ''
@@ -358,7 +358,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplate.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_BaseYear02
+    file: Budget/BudgetTemplate_BaseYear02
     report: ''
     ribbon: ''
     site: ''
@@ -366,7 +366,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplate.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_InsertAtEndNo
+    file: Budget/BudgetTemplate_InsertAtEndNo
     report: ''
     ribbon: ''
     site: ''
@@ -374,7 +374,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplate.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_SummaryDetailPullStart
+    file: Budget/BudgetTemplate_SummaryDetailPullStart
     report: ''
     ribbon: ''
     site: ''
@@ -382,7 +382,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplate.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_SummaryDetail_SummaryPull
+    file: Budget/BudgetTemplate_SummaryDetail_SummaryPull
     report: ''
     ribbon: ''
     site: ''
@@ -390,7 +390,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplate.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_SummaryDetailSaveStart
+    file: Budget/BudgetTemplate_SummaryDetailSaveStart
     report: ''
     ribbon: ''
     site: ''
@@ -398,7 +398,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplate.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_SummaryDetail_ZeroOutNo
+    file: Budget/BudgetTemplate_SummaryDetail_ZeroOutNo
     report: ''
     ribbon: ''
     site: ''
@@ -406,7 +406,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplate.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_SummaryDetail_ZeroOutYes
+    file: Budget/BudgetTemplate_SummaryDetail_ZeroOutYes
     report: ''
     ribbon: ''
     site: ''
@@ -414,7 +414,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplate.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_Autocalcs
+    file: Budget/BudgetTemplate_Autocalcs
     report: ''
     ribbon: ''
     site: ''
@@ -422,7 +422,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplate.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_CCAfterCorpCutoff
+    file: Budget/BudgetUpload_CCAfterCorpCutoff
     report: ''
     ribbon: ''
     site: ''
@@ -430,7 +430,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplate.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_AfterCorpCutoffSave
+    file: Budget/BudgetTemplate_AfterCorpCutoffSave
     report: ''
     ribbon: ''
     site: ''
@@ -438,7 +438,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplate.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_AfterCorpCutoff
+    file: Budget/BudgetTemplate_AfterCorpCutoff
     report: ''
     ribbon: ''
     site: ''
@@ -446,7 +446,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplate.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_AfterCorpCutoffBudChangeQuery
+    file: Budget/BudgetTemplate_AfterCorpCutoffBudChangeQuery
     report: ''
     ribbon: ''
     site: ''
@@ -454,7 +454,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplate.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_Error_TemplateOutofDate
+    file: Budget/BudgetTemplate_Error_TemplateOutofDate
     report: ''
     ribbon: ''
     site: ''
@@ -462,7 +462,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplate.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_Error_LockLevel
+    file: Budget/BudgetTemplate_Error_LockLevel
     report: ''
     ribbon: ''
     site: ''
@@ -470,7 +470,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplate.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_Error_LastPullFor
+    file: Budget/BudgetTemplate_Error_LastPullFor
     report: ''
     ribbon: ''
     site: ''
@@ -478,7 +478,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplate.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_Error_DistrictRequired
+    file: Budget/BudgetTemplate_Error_DistrictRequired
     report: ''
     ribbon: ''
     site: ''
@@ -486,7 +486,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplate.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_Error_YearMonthRequired
+    file: Budget/BudgetTemplate_Error_YearMonthRequired
     report: ''
     ribbon: ''
     site: ''
@@ -494,7 +494,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplate.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_Error_AfterCorpCutoff
+    file: Budget/BudgetTemplate_Error_AfterCorpCutoff
     report: ''
     ribbon: ''
     site: ''
@@ -502,7 +502,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplate.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_Error_MissingColumns
+    file: Budget/BudgetTemplate_Error_MissingColumns
     report: ''
     ribbon: ''
     site: ''
@@ -510,7 +510,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplate.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_Error_InvalidAccount
+    file: Budget/BudgetTemplate_Error_InvalidAccount
     report: ''
     ribbon: ''
     site: ''
@@ -518,7 +518,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplate.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_Error_InvalidSyst
+    file: Budget/BudgetTemplate_Error_InvalidSyst
     report: ''
     ribbon: ''
     site: ''
@@ -526,7 +526,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplate.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_Error_InvalidSbst
+    file: Budget/BudgetTemplate_Error_InvalidSbst
     report: ''
     ribbon: ''
     site: ''
@@ -534,7 +534,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplate.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_Error_NonumericAmount
+    file: Budget/BudgetTemplate_Error_NonumericAmount
     report: ''
     ribbon: ''
     site: ''
@@ -542,7 +542,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplate.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_Error_ExponentialAmount
+    file: Budget/BudgetTemplate_Error_ExponentialAmount
     report: ''
     ribbon: ''
     site: ''
@@ -550,7 +550,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplate.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_Error_Duplicates
+    file: Budget/BudgetTemplate_Error_Duplicates
     report: ''
     ribbon: ''
     site: ''
@@ -558,7 +558,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplate.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_Error_BrokenFormula
+    file: Budget/BudgetTemplate_Error_BrokenFormula
     report: ''
     ribbon: ''
     site: ''
@@ -589,7 +589,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplateSummary.ht
   images:
   - cat: ''
     config: ''
-    file: BudgetTemplate_ReportLibrary
+    file: Budget/BudgetTemplate_ReportLibrary
     report: ''
     ribbon: ''
     site: ''
@@ -619,7 +619,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetUpload.html:
   images:
   - cat: ''
     config: ''
-    file: BudgetUpload_FullView
+    file: Budget/BudgetUpload_FullView
     report: ''
     ribbon: ''
     site: ''
@@ -627,7 +627,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetUpload.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_MultipleDistrictsPull
+    file: Budget/BudgetUpload_MultipleDistrictsPull
     report: ''
     ribbon: ''
     site: ''
@@ -635,7 +635,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetUpload.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_MultipleDistrictsSave
+    file: Budget/BudgetUpload_MultipleDistrictsSave
     report: ''
     ribbon: ''
     site: ''
@@ -643,7 +643,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetUpload.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_BlankRowsDefault
+    file: Budget/BudgetUpload_BlankRowsDefault
     report: ''
     ribbon: ''
     site: ''
@@ -651,7 +651,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetUpload.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_InsertNewRowsMiddle
+    file: Budget/BudgetUpload_InsertNewRowsMiddle
     report: ''
     ribbon: ''
     site: ''
@@ -659,7 +659,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetUpload.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_InsertNewRowsFromEmpty
+    file: Budget/BudgetUpload_InsertNewRowsFromEmpty
     report: ''
     ribbon: ''
     site: ''
@@ -667,7 +667,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetUpload.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_QuickTools
+    file: Budget/BudgetUpload_QuickTools
     report: ''
     ribbon: ''
     site: ''
@@ -675,7 +675,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetUpload.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_SaveFormula
+    file: Budget/BudgetUpload_SaveFormula
     report: ''
     ribbon: ''
     site: ''
@@ -683,7 +683,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetUpload.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_SmallSaveRange
+    file: Budget/BudgetUpload_SmallSaveRange
     report: ''
     ribbon: ''
     site: ''
@@ -691,7 +691,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetUpload.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_BigSaveRange
+    file: Budget/BudgetUpload_BigSaveRange
     report: ''
     ribbon: ''
     site: ''
@@ -699,7 +699,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetUpload.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_CCAfterCorpCutoff
+    file: Budget/BudgetUpload_CCAfterCorpCutoff
     report: ''
     ribbon: ''
     site: ''
@@ -707,7 +707,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetUpload.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_AfterCorpCutoffMessage
+    file: Budget/BudgetUpload_AfterCorpCutoffMessage
     report: ''
     ribbon: ''
     site: ''
@@ -715,7 +715,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetUpload.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_AfterCorpCutoffRowMessage
+    file: Budget/BudgetUpload_AfterCorpCutoffRowMessage
     report: ''
     ribbon: ''
     site: ''
@@ -723,7 +723,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetUpload.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_UnsyncedChangesBCQuery
+    file: Budget/BudgetUpload_UnsyncedChangesBCQuery
     report: ''
     ribbon: ''
     site: ''
@@ -731,7 +731,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetUpload.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_LockLevelError
+    file: Budget/BudgetUpload_LockLevelError
     report: ''
     ribbon: ''
     site: ''
@@ -739,7 +739,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetUpload.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_DPAError
+    file: Budget/BudgetUpload_DPAError
     report: ''
     ribbon: ''
     site: ''
@@ -747,7 +747,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetUpload.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_InvalidSource
+    file: Budget/BudgetUpload_InvalidSource
     report: ''
     ribbon: ''
     site: ''
@@ -755,7 +755,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetUpload.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_InvalidYear
+    file: Budget/BudgetUpload_InvalidYear
     report: ''
     ribbon: ''
     site: ''
@@ -763,7 +763,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetUpload.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_IncompleteGLString
+    file: Budget/BudgetUpload_IncompleteGLString
     report: ''
     ribbon: ''
     site: ''
@@ -771,7 +771,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetUpload.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_InvalidAccount
+    file: Budget/BudgetUpload_InvalidAccount
     report: ''
     ribbon: ''
     site: ''
@@ -779,7 +779,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetUpload.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_InvalidDistrict
+    file: Budget/BudgetUpload_InvalidDistrict
     report: ''
     ribbon: ''
     site: ''
@@ -787,7 +787,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetUpload.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_InvalidSystem
+    file: Budget/BudgetUpload_InvalidSystem
     report: ''
     ribbon: ''
     site: ''
@@ -795,7 +795,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetUpload.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_InvalidSubSystem
+    file: Budget/BudgetUpload_InvalidSubSystem
     report: ''
     ribbon: ''
     site: ''
@@ -803,7 +803,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetUpload.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_DuplicateAccount
+    file: Budget/BudgetUpload_DuplicateAccount
     report: ''
     ribbon: ''
     site: ''
@@ -811,7 +811,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetUpload.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_InvalidAmount
+    file: Budget/BudgetUpload_InvalidAmount
     report: ''
     ribbon: ''
     site: ''
@@ -819,7 +819,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetUpload.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_DistrictNotinRightsRow
+    file: Budget/BudgetUpload_DistrictNotinRightsRow
     report: ''
     ribbon: ''
     site: ''
@@ -827,7 +827,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetUpload.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_RegCorpMultipleDistrictError
+    file: Budget/BudgetUpload_RegCorpMultipleDistrictError
     report: ''
     ribbon: ''
     site: ''
@@ -835,7 +835,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetUpload.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_NotinDPAforDistrict
+    file: Budget/BudgetUpload_NotinDPAforDistrict
     report: ''
     ribbon: ''
     site: ''
@@ -843,7 +843,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetUpload.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_CannotUpdateAutocalcs
+    file: Budget/BudgetUpload_CannotUpdateAutocalcs
     report: ''
     ribbon: ''
     site: ''
@@ -851,7 +851,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetUpload.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_AfterCorpCutoffMessage
+    file: Budget/BudgetUpload_AfterCorpCutoffMessage
     report: ''
     ribbon: ''
     site: ''
@@ -859,7 +859,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetUpload.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_AfterCorpCutoffRowMessageSingle
+    file: Budget/BudgetUpload_AfterCorpCutoffRowMessageSingle
     report: ''
     ribbon: ''
     site: ''
@@ -897,7 +897,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
   images:
   - cat: ''
     config: ''
-    file: ControlCenter_ReportLibrary
+    file: Budget/ControlCenter_ReportLibrary
     report: ''
     ribbon: ''
     site: ''
@@ -905,7 +905,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_FullView
+    file: Budget/ControlCenter_FullView
     report: ''
     ribbon: ''
     site: ''
@@ -913,7 +913,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_BudgetFileLink
+    file: Budget/ControlCenter_BudgetFileLink
     report: ''
     ribbon: ''
     site: ''
@@ -921,7 +921,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_BudgetFileOpened
+    file: Budget/ControlCenter_BudgetFileOpened
     report: ''
     ribbon: ''
     site: ''
@@ -929,7 +929,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_DrillNewTemplates
+    file: Budget/ControlCenter_DrillNewTemplates
     report: ''
     ribbon: ''
     site: ''
@@ -937,7 +937,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_DPANavigation
+    file: Budget/CapitalInput_DPANavigation
     report: ''
     ribbon: ''
     site: ''
@@ -945,7 +945,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_DPAWindow
+    file: Budget/CapitalInput_DPAWindow
     report: ''
     ribbon: ''
     site: ''
@@ -953,7 +953,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_CurrentLockLevel
+    file: Budget/ControlCenter_CurrentLockLevel
     report: ''
     ribbon: ''
     site: ''
@@ -961,7 +961,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_LockLevelOptions
+    file: Budget/ControlCenter_LockLevelOptions
     report: ''
     ribbon: ''
     site: ''
@@ -969,7 +969,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_LockedOut
+    file: Budget/ControlCenter_LockedOut
     report: ''
     ribbon: ''
     site: ''
@@ -977,7 +977,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_ContractCenterUnlocked
+    file: Budget/ControlCenter_ContractCenterUnlocked
     report: ''
     ribbon: ''
     site: ''
@@ -985,7 +985,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_ContractCenterLocked
+    file: Budget/ControlCenter_ContractCenterLocked
     report: ''
     ribbon: ''
     site: ''
@@ -993,7 +993,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_ReviewDates
+    file: Budget/ControlCenter_ReviewDates
     report: ''
     ribbon: ''
     site: ''
@@ -1001,7 +1001,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_BudTemplateSave01
+    file: Budget/ControlCenter_BudTemplateSave01
     report: ''
     ribbon: ''
     site: ''
@@ -1009,7 +1009,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_BudChangeQueryReviewDates01
+    file: Budget/ControlCenter_BudChangeQueryReviewDates01
     report: ''
     ribbon: ''
     site: ''
@@ -1017,7 +1017,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_BudgetBookCorpCutoffSetting
+    file: Budget/ControlCenter_BudgetBookCorpCutoffSetting
     report: ''
     ribbon: ''
     site: ''
@@ -1025,7 +1025,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_BudgetBookCorpCutoffAmount01
+    file: Budget/ControlCenter_BudgetBookCorpCutoffAmount01
     report: ''
     ribbon: ''
     site: ''
@@ -1033,7 +1033,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_BudgetBookRegCutoffSetting
+    file: Budget/ControlCenter_BudgetBookRegCutoffSetting
     report: ''
     ribbon: ''
     site: ''
@@ -1041,7 +1041,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_BudgetBookRegCutoffAmount02
+    file: Budget/ControlCenter_BudgetBookRegCutoffAmount02
     report: ''
     ribbon: ''
     site: ''
@@ -1049,7 +1049,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_ReviewDates02
+    file: Budget/ControlCenter_ReviewDates02
     report: ''
     ribbon: ''
     site: ''
@@ -1057,7 +1057,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_BudChangeQueryReviewDates02
+    file: Budget/ControlCenter_BudChangeQueryReviewDates02
     report: ''
     ribbon: ''
     site: ''
@@ -1065,7 +1065,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_BudgetBookRegAndCorpCutoffAmounts
+    file: Budget/ControlCenter_BudgetBookRegAndCorpCutoffAmounts
     report: ''
     ribbon: ''
     site: ''
@@ -1073,7 +1073,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_BudgetBookRegReviewThruSetting
+    file: Budget/ControlCenter_BudgetBookRegReviewThruSetting
     report: ''
     ribbon: ''
     site: ''
@@ -1081,7 +1081,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_BudgetBookRegReviewThruAmounts
+    file: Budget/ControlCenter_BudgetBookRegReviewThruAmounts
     report: ''
     ribbon: ''
     site: ''
@@ -1089,7 +1089,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_BudTemplateSave02
+    file: Budget/ControlCenter_BudTemplateSave02
     report: ''
     ribbon: ''
     site: ''
@@ -1097,7 +1097,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_BudChangeQueryReviewDates03
+    file: Budget/ControlCenter_BudChangeQueryReviewDates03
     report: ''
     ribbon: ''
     site: ''
@@ -1105,7 +1105,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_BudgetBookCorpCutoffAmount02
+    file: Budget/ControlCenter_BudgetBookCorpCutoffAmount02
     report: ''
     ribbon: ''
     site: ''
@@ -1113,7 +1113,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_CutoffSyncDates
+    file: Budget/ControlCenter_CutoffSyncDates
     report: ''
     ribbon: ''
     site: ''
@@ -1121,7 +1121,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_ProjDrill
+    file: Budget/ControlCenter_ProjDrill
     report: ''
     ribbon: ''
     site: ''
@@ -1129,7 +1129,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_BudDrill
+    file: Budget/ControlCenter_BudDrill
     report: ''
     ribbon: ''
     site: ''
@@ -1137,7 +1137,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_ReviewDateDrills
+    file: Budget/ControlCenter_ReviewDateDrills
     report: ''
     ribbon: ''
     site: ''
@@ -1145,7 +1145,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_CapitalDrills
+    file: Budget/ControlCenter_CapitalDrills
     report: ''
     ribbon: ''
     site: ''
@@ -1153,7 +1153,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_Errors_LockLevelTooHigh
+    file: Budget/ControlCenter_Errors_LockLevelTooHigh
     report: ''
     ribbon: ''
     site: ''
@@ -1161,7 +1161,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_Errors_OneSecondOffsetReviewDates
+    file: Budget/ControlCenter_Errors_OneSecondOffsetReviewDates
     report: ''
     ribbon: ''
     site: ''
@@ -1169,7 +1169,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_Errors_YearMonth
+    file: Budget/ControlCenter_Errors_YearMonth
     report: ''
     ribbon: ''
     site: ''
@@ -1177,7 +1177,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_Errors_InvalidDistricts
+    file: Budget/ControlCenter_Errors_InvalidDistricts
     report: ''
     ribbon: ''
     site: ''
@@ -1185,7 +1185,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_Errors_InvalidLockLevel
+    file: Budget/ControlCenter_Errors_InvalidLockLevel
     report: ''
     ribbon: ''
     site: ''
@@ -1193,7 +1193,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_Errors_InvalidReviewDate
+    file: Budget/ControlCenter_Errors_InvalidReviewDate
     report: ''
     ribbon: ''
     site: ''
@@ -1201,7 +1201,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_Errors_LowLevelReviewDates
+    file: Budget/ControlCenter_Errors_LowLevelReviewDates
     report: ''
     ribbon: ''
     site: ''
@@ -1243,7 +1243,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenterSecurity.ht
   images:
   - cat: ''
     config: ''
-    file: CapitalInput_DPANavigation
+    file: Budget/CapitalInput_DPANavigation
     report: ''
     ribbon: ''
     site: ''
@@ -1251,7 +1251,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenterSecurity.ht
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_DPAWindow
+    file: Budget/CapitalInput_DPAWindow
     report: ''
     ribbon: ''
     site: ''
@@ -1259,7 +1259,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenterSecurity.ht
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_ControlCenter1District
+    file: Budget/BudgetUpload_ControlCenter1District
     report: ''
     ribbon: ''
     site: ''
@@ -1267,7 +1267,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenterSecurity.ht
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_LockLevelError
+    file: Budget/BudgetTemplate_LockLevelError
     report: ''
     ribbon: ''
     site: ''
@@ -1275,7 +1275,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenterSecurity.ht
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_LockLevel1District
+    file: Budget/BudgetUpload_LockLevel1District
     report: ''
     ribbon: ''
     site: ''
@@ -1283,7 +1283,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenterSecurity.ht
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_ControlCenter2Districts
+    file: Budget/BudgetUpload_ControlCenter2Districts
     report: ''
     ribbon: ''
     site: ''
@@ -1291,7 +1291,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenterSecurity.ht
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_LockLevel2Districts
+    file: Budget/BudgetUpload_LockLevel2Districts
     report: ''
     ribbon: ''
     site: ''
@@ -1299,7 +1299,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenterSecurity.ht
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_ControlCenterLockLevel
+    file: Budget/CapitalInput_ControlCenterLockLevel
     report: ''
     ribbon: ''
     site: ''
@@ -1307,7 +1307,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenterSecurity.ht
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_Error_LockLevel
+    file: Budget/CapitalInput_Error_LockLevel
     report: ''
     ribbon: ''
     site: ''
@@ -1315,7 +1315,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenterSecurity.ht
     type: png
   - cat: ''
     config: ''
-    file: ProjectionUpload_ControlCenter1District
+    file: Budget/ProjectionUpload_ControlCenter1District
     report: ''
     ribbon: ''
     site: ''
@@ -1323,7 +1323,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenterSecurity.ht
     type: png
   - cat: ''
     config: ''
-    file: ProjectionTemplate_LockLevelError
+    file: Budget/ProjectionTemplate_LockLevelError
     report: ''
     ribbon: ''
     site: ''
@@ -1331,7 +1331,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenterSecurity.ht
     type: png
   - cat: ''
     config: ''
-    file: ProjectionUpload_LockLevel1District
+    file: Budget/ProjectionUpload_LockLevel1District
     report: ''
     ribbon: ''
     site: ''
@@ -1339,7 +1339,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenterSecurity.ht
     type: png
   - cat: ''
     config: ''
-    file: ProjectionUpload_ControlCenter2Districts
+    file: Budget/ProjectionUpload_ControlCenter2Districts
     report: ''
     ribbon: ''
     site: ''
@@ -1347,7 +1347,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenterSecurity.ht
     type: png
   - cat: ''
     config: ''
-    file: ProjectionUpload_LockLevel2Districts
+    file: Budget/ProjectionUpload_LockLevel2Districts
     report: ''
     ribbon: ''
     site: ''
@@ -1392,7 +1392,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CCQuery.html:
   images:
   - cat: ''
     config: ''
-    file: CCQuery_FullView
+    file: Capital/CCQuery_FullView
     report: ''
     ribbon: ''
     site: ''
@@ -1400,7 +1400,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CCQuery.html:
     type: png
   - cat: ''
     config: ''
-    file: CCQuery_SummaryByDay
+    file: Capital/CCQuery_SummaryByDay
     report: ''
     ribbon: ''
     site: ''
@@ -1408,7 +1408,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CCQuery.html:
     type: png
   - cat: ''
     config: ''
-    file: CCQuery_SummaryByChange
+    file: Capital/CCQuery_SummaryByChange
     report: ''
     ribbon: ''
     site: ''
@@ -1433,7 +1433,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalChangeQueryTool.
   images:
   - cat: ''
     config: ''
-    file: CapitalChangeQuery_ReportLibrary
+    file: Capital/CapitalChangeQuery_ReportLibrary
     report: ''
     ribbon: ''
     site: ''
@@ -1464,7 +1464,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInput.html:
   images:
   - cat: ''
     config: ''
-    file: CapitalInput_FullView
+    file: Capital/CapitalInput_FullView
     report: ''
     ribbon: ''
     site: ''
@@ -1472,7 +1472,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInput.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_Delete
+    file: Capital/CapitalInput_Delete
     report: ''
     ribbon: ''
     site: ''
@@ -1480,7 +1480,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInput.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_AssetInfo
+    file: Capital/CapitalInput_AssetInfo
     report: ''
     ribbon: ''
     site: ''
@@ -1488,7 +1488,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInput.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_ReplacementInfo
+    file: Capital/CapitalInput_ReplacementInfo
     report: ''
     ribbon: ''
     site: ''
@@ -1496,7 +1496,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInput.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_DrillWindow
+    file: Capital/CapitalInput_DrillWindow
     report: ''
     ribbon: ''
     site: ''
@@ -1504,7 +1504,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInput.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_CapitalChangeDrill
+    file: Capital/CapitalInput_CapitalChangeDrill
     report: ''
     ribbon: ''
     site: ''
@@ -1512,7 +1512,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInput.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_Error_TypeSubType
+    file: Capital/CapitalInput_Error_TypeSubType
     report: ''
     ribbon: ''
     site: ''
@@ -1520,7 +1520,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInput.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_Error_ReplacementReqs
+    file: Capital/CapitalInput_Error_ReplacementReqs
     report: ''
     ribbon: ''
     site: ''
@@ -1528,7 +1528,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInput.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_Error_RePull
+    file: Capital/CapitalInput_Error_RePull
     report: ''
     ribbon: ''
     site: ''
@@ -1536,7 +1536,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInput.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_Error_InvalidYear
+    file: Capital/CapitalInput_Error_InvalidYear
     report: ''
     ribbon: ''
     site: ''
@@ -1544,7 +1544,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInput.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_Error_InvalidDistrict
+    file: Capital/CapitalInput_Error_InvalidDistrict
     report: ''
     ribbon: ''
     site: ''
@@ -1552,7 +1552,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInput.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_Error_YearNotSetup
+    file: Capital/CapitalInput_Error_YearNotSetup
     report: ''
     ribbon: ''
     site: ''
@@ -1560,7 +1560,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInput.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_Error_MissingColumns
+    file: Capital/CapitalInput_Error_MissingColumns
     report: ''
     ribbon: ''
     site: ''
@@ -1568,7 +1568,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInput.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_Error_MissingFields
+    file: Capital/CapitalInput_Error_MissingFields
     report: ''
     ribbon: ''
     site: ''
@@ -1576,7 +1576,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInput.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_Error_PONumReq
+    file: Capital/CapitalInput_Error_PONumReq
     report: ''
     ribbon: ''
     site: ''
@@ -1584,7 +1584,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInput.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_Error_PODescriptionReq
+    file: Capital/CapitalInput_Error_PODescriptionReq
     report: ''
     ribbon: ''
     site: ''
@@ -1592,7 +1592,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInput.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_Error_PODescriptionMatching
+    file: Capital/CapitalInput_Error_PODescriptionMatching
     report: ''
     ribbon: ''
     site: ''
@@ -1600,7 +1600,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInput.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_Error_PONumRange
+    file: Capital/CapitalInput_Error_PONumRange
     report: ''
     ribbon: ''
     site: ''
@@ -1608,7 +1608,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInput.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_Error_InvalidPOItem
+    file: Capital/CapitalInput_Error_InvalidPOItem
     report: ''
     ribbon: ''
     site: ''
@@ -1616,7 +1616,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInput.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_Error_DuplicatePOItem
+    file: Capital/CapitalInput_Error_DuplicatePOItem
     report: ''
     ribbon: ''
     site: ''
@@ -1624,7 +1624,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInput.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_Error_InvalidAssetType
+    file: Capital/CapitalInput_Error_InvalidAssetType
     report: ''
     ribbon: ''
     site: ''
@@ -1632,7 +1632,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInput.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_Error_InvalidLife
+    file: Capital/CapitalInput_Error_InvalidLife
     report: ''
     ribbon: ''
     site: ''
@@ -1640,7 +1640,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInput.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_Error_TruckNum
+    file: Capital/CapitalInput_Error_TruckNum
     report: ''
     ribbon: ''
     site: ''
@@ -1648,7 +1648,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInput.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_Error_NewUsed
+    file: Capital/CapitalInput_Error_NewUsed
     report: ''
     ribbon: ''
     site: ''
@@ -1656,7 +1656,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInput.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_Error_DuplicateTruck
+    file: Capital/CapitalInput_Error_DuplicateTruck
     report: ''
     ribbon: ''
     site: ''
@@ -1664,7 +1664,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInput.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_Error_TruckForBody
+    file: Capital/CapitalInput_Error_TruckForBody
     report: ''
     ribbon: ''
     site: ''
@@ -1672,7 +1672,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInput.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_Error_TruckNumReq
+    file: Capital/CapitalInput_Error_TruckNumReq
     report: ''
     ribbon: ''
     site: ''
@@ -1680,7 +1680,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInput.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_Error_InvalidModelYear
+    file: Capital/CapitalInput_Error_InvalidModelYear
     report: ''
     ribbon: ''
     site: ''
@@ -1688,7 +1688,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInput.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_Error_InvalidMonthly
+    file: Capital/CapitalInput_Error_InvalidMonthly
     report: ''
     ribbon: ''
     site: ''
@@ -1696,7 +1696,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInput.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_Error_ExportedPO
+    file: Capital/CapitalInput_Error_ExportedPO
     report: ''
     ribbon: ''
     site: ''
@@ -1725,7 +1725,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInputReport.html
   images:
   - cat: ''
     config: ''
-    file: CapitalBudgetInput_ReportLibrary
+    file: Capital/CapitalBudgetInput_ReportLibrary
     report: ''
     ribbon: ''
     site: ''
@@ -1773,7 +1773,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalSummary.html:
   images:
   - cat: ''
     config: ''
-    file: CapitalSummary_FullView
+    file: Capital/CapitalSummary_FullView
     report: ''
     ribbon: ''
     site: ''
@@ -1781,7 +1781,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalSummary.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalSummary_DrillWindow
+    file: Capital/CapitalSummary_DrillWindow
     report: ''
     ribbon: ''
     site: ''
@@ -1789,7 +1789,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalSummary.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalSummary_DetailDrill
+    file: Capital/CapitalSummary_DetailDrill
     report: ''
     ribbon: ''
     site: ''
@@ -1797,7 +1797,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalSummary.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalSummary_CapitalChangeDrill
+    file: Capital/CapitalSummary_CapitalChangeDrill
     report: ''
     ribbon: ''
     site: ''
@@ -1823,7 +1823,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalSummary2.html:
   images:
   - cat: ''
     config: ''
-    file: CapitalSummary_FullView
+    file: Capital/CapitalSummary_FullView
     report: ''
     ribbon: ''
     site: ''
@@ -1831,7 +1831,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalSummary2.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalSummary_DrillWindow
+    file: Capital/CapitalSummary_DrillWindow
     report: ''
     ribbon: ''
     site: ''
@@ -1839,7 +1839,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalSummary2.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalSummary_DetailDrill
+    file: Capital/CapitalSummary_DetailDrill
     report: ''
     ribbon: ''
     site: ''
@@ -1847,7 +1847,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalSummary2.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalSummary_CapitalChangeDrill
+    file: Capital/CapitalSummary_CapitalChangeDrill
     report: ''
     ribbon: ''
     site: ''
@@ -1859,8 +1859,12 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalSummary2.html:
   - Summary Tab
   layout: custom
   links:
+  - /images/WCNTraining/Capital/CapitalSummary_FullView.png
+  - /images/WCNTraining/Capital/CapitalSummary_DrillWindow.png
   - /bApps/InterjectTraining/Capital/CapitalInput.html
+  - /images/WCNTraining/Capital/CapitalSummary_DetailDrill.png
   - /bApps/InterjectTraining/Capital/CCQuery.html
+  - /images/WCNTraining/Capital/CapitalSummary_CapitalChangeDrill.png
   title: Summary Tab
 www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalSummaryPOType.html:
   description: Pulls in Summarized Capital info broken out by Asset Type (Period/QTR).
@@ -1874,7 +1878,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalSummaryPOType.ht
   images:
   - cat: ''
     config: ''
-    file: CapitalSummaryPOType_FullView
+    file: Capital/CapitalSummaryPOType_FullView
     report: ''
     ribbon: ''
     site: ''
@@ -1882,7 +1886,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalSummaryPOType.ht
     type: png
   - cat: ''
     config: ''
-    file: CapitalSummaryPOType_ReplacementSection
+    file: Capital/CapitalSummaryPOType_ReplacementSection
     report: ''
     ribbon: ''
     site: ''
@@ -1906,7 +1910,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/ReviewDateSummary.html:
   images:
   - cat: ''
     config: ''
-    file: ReviewDateSummary_FullView
+    file: Capital/ReviewDateSummary_FullView
     report: ''
     ribbon: ''
     site: ''
@@ -1922,7 +1926,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/ReviewDateSummary.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_SimpleExample
+    file: Capital/ControlCenter_SimpleExample
     report: ''
     ribbon: ''
     site: ''
@@ -1953,7 +1957,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionChangeQue
   images:
   - cat: ''
     config: ''
-    file: ProjectionsChangeQuery_ReportLibrary
+    file: Projections/ProjectionsChangeQuery_ReportLibrary
     report: ''
     ribbon: ''
     site: ''
@@ -1961,7 +1965,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionChangeQue
     type: png
   - cat: ''
     config: ''
-    file: ProjChangeQuery_Summary_FullView
+    file: Projections/ProjChangeQuery_Summary_FullView
     report: ''
     ribbon: ''
     site: ''
@@ -1969,7 +1973,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionChangeQue
     type: png
   - cat: ''
     config: ''
-    file: ProjChangeQuery_Detail_FullView
+    file: Projections/ProjChangeQuery_Detail_FullView
     report: ''
     ribbon: ''
     site: ''
@@ -1977,7 +1981,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionChangeQue
     type: png
   - cat: ''
     config: ''
-    file: ProjChangeQuery_SummaryLastSave_FullView
+    file: Projections/ProjChangeQuery_SummaryLastSave_FullView
     report: ''
     ribbon: ''
     site: ''
@@ -1985,7 +1989,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionChangeQue
     type: png
   - cat: ''
     config: ''
-    file: ProjChangeQuery_DetailLastSave_FullView
+    file: Projections/ProjChangeQuery_DetailLastSave_FullView
     report: ''
     ribbon: ''
     site: ''
@@ -2018,7 +2022,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionTemplate.
   images:
   - cat: ''
     config: ''
-    file: ProjectionTemplate_FullView
+    file: Projections/ProjectionTemplate_FullView
     report: ''
     ribbon: ''
     site: ''
@@ -2026,7 +2030,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionTemplate.
     type: png
   - cat: ''
     config: ''
-    file: ProjectionTemplate_RetainRowsBeforeClear
+    file: Projections/ProjectionTemplate_RetainRowsBeforeClear
     report: ''
     ribbon: ''
     site: ''
@@ -2034,7 +2038,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionTemplate.
     type: png
   - cat: ''
     config: ''
-    file: ProjectionTemplate_RetainRowsAfterClear
+    file: Projections/ProjectionTemplate_RetainRowsAfterClear
     report: ''
     ribbon: ''
     site: ''
@@ -2042,7 +2046,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionTemplate.
     type: png
   - cat: ''
     config: ''
-    file: ProjectionTemplate_InsertAtEndNo
+    file: Projections/ProjectionTemplate_InsertAtEndNo
     report: ''
     ribbon: ''
     site: ''
@@ -2050,7 +2054,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionTemplate.
     type: png
   - cat: ''
     config: ''
-    file: ProjectionTemplate_InsertAtEndYes
+    file: Projections/ProjectionTemplate_InsertAtEndYes
     report: ''
     ribbon: ''
     site: ''
@@ -2058,7 +2062,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionTemplate.
     type: png
   - cat: ''
     config: ''
-    file: ProjectionTemplate_SummaryDetail_PullStart
+    file: Projections/ProjectionTemplate_SummaryDetail_PullStart
     report: ''
     ribbon: ''
     site: ''
@@ -2066,7 +2070,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionTemplate.
     type: png
   - cat: ''
     config: ''
-    file: ProjectionTemplate_SummaryDetail_SummaryPrep
+    file: Projections/ProjectionTemplate_SummaryDetail_SummaryPrep
     report: ''
     ribbon: ''
     site: ''
@@ -2074,7 +2078,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionTemplate.
     type: png
   - cat: ''
     config: ''
-    file: ProjectionTemplate_SummaryDetail_SummaryPull
+    file: Projections/ProjectionTemplate_SummaryDetail_SummaryPull
     report: ''
     ribbon: ''
     site: ''
@@ -2082,7 +2086,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionTemplate.
     type: png
   - cat: ''
     config: ''
-    file: ProjectionTemplate_SummaryDetailSaveStart
+    file: Projections/ProjectionTemplate_SummaryDetailSaveStart
     report: ''
     ribbon: ''
     site: ''
@@ -2090,7 +2094,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionTemplate.
     type: png
   - cat: ''
     config: ''
-    file: ProjectionTemplate_SummaryDetail_ZeroOutNo
+    file: Projections/ProjectionTemplate_SummaryDetail_ZeroOutNo
     report: ''
     ribbon: ''
     site: ''
@@ -2098,7 +2102,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionTemplate.
     type: png
   - cat: ''
     config: ''
-    file: ProjectionTemplate_SummaryDetail_ZeroOutYes
+    file: Projections/ProjectionTemplate_SummaryDetail_ZeroOutYes
     report: ''
     ribbon: ''
     site: ''
@@ -2106,7 +2110,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionTemplate.
     type: png
   - cat: ''
     config: ''
-    file: ProjectionTemplate_3Months
+    file: Projections/ProjectionTemplate_3Months
     report: ''
     ribbon: ''
     site: ''
@@ -2114,7 +2118,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionTemplate.
     type: png
   - cat: ''
     config: ''
-    file: ProjectionTemplate_4Months
+    file: Projections/ProjectionTemplate_4Months
     report: ''
     ribbon: ''
     site: ''
@@ -2122,7 +2126,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionTemplate.
     type: png
   - cat: ''
     config: ''
-    file: ProjectionTemplate_5Months
+    file: Projections/ProjectionTemplate_5Months
     report: ''
     ribbon: ''
     site: ''
@@ -2130,7 +2134,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionTemplate.
     type: png
   - cat: ''
     config: ''
-    file: ProjectionTemplate_Autocalcs
+    file: Projections/ProjectionTemplate_Autocalcs
     report: ''
     ribbon: ''
     site: ''
@@ -2138,7 +2142,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionTemplate.
     type: png
   - cat: ''
     config: ''
-    file: ProjectionTemplate_Error_LockLevel
+    file: Projections/ProjectionTemplate_Error_LockLevel
     report: ''
     ribbon: ''
     site: ''
@@ -2146,7 +2150,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionTemplate.
     type: png
   - cat: ''
     config: ''
-    file: ProjectionTemplate_Error_LastPullFor
+    file: Projections/ProjectionTemplate_Error_LastPullFor
     report: ''
     ribbon: ''
     site: ''
@@ -2154,7 +2158,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionTemplate.
     type: png
   - cat: ''
     config: ''
-    file: ProjectionTemplate_Error_DistrictRequired
+    file: Projections/ProjectionTemplate_Error_DistrictRequired
     report: ''
     ribbon: ''
     site: ''
@@ -2162,7 +2166,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionTemplate.
     type: png
   - cat: ''
     config: ''
-    file: ProjectionTemplate_Error_YearMonthRequired
+    file: Projections/ProjectionTemplate_Error_YearMonthRequired
     report: ''
     ribbon: ''
     site: ''
@@ -2170,7 +2174,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionTemplate.
     type: png
   - cat: ''
     config: ''
-    file: ProjectionTemplate_Error_MissingColumns
+    file: Projections/ProjectionTemplate_Error_MissingColumns
     report: ''
     ribbon: ''
     site: ''
@@ -2178,7 +2182,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionTemplate.
     type: png
   - cat: ''
     config: ''
-    file: ProjectionTemplate_Error_InvalidAccount
+    file: Projections/ProjectionTemplate_Error_InvalidAccount
     report: ''
     ribbon: ''
     site: ''
@@ -2186,7 +2190,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionTemplate.
     type: png
   - cat: ''
     config: ''
-    file: ProjectionTemplate_Error_InvalidSyst
+    file: Projections/ProjectionTemplate_Error_InvalidSyst
     report: ''
     ribbon: ''
     site: ''
@@ -2194,7 +2198,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionTemplate.
     type: png
   - cat: ''
     config: ''
-    file: ProjectionTemplate_Error_InvalidSbst
+    file: Projections/ProjectionTemplate_Error_InvalidSbst
     report: ''
     ribbon: ''
     site: ''
@@ -2202,7 +2206,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionTemplate.
     type: png
   - cat: ''
     config: ''
-    file: ProjectionTemplate_Error_NonumericAmount
+    file: Projections/ProjectionTemplate_Error_NonumericAmount
     report: ''
     ribbon: ''
     site: ''
@@ -2210,7 +2214,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionTemplate.
     type: png
   - cat: ''
     config: ''
-    file: ProjectionTemplate_Error_ExponentialAmount
+    file: Projections/ProjectionTemplate_Error_ExponentialAmount
     report: ''
     ribbon: ''
     site: ''
@@ -2218,7 +2222,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionTemplate.
     type: png
   - cat: ''
     config: ''
-    file: ProjectionTemplate_Error_Duplicates
+    file: Projections/ProjectionTemplate_Error_Duplicates
     report: ''
     ribbon: ''
     site: ''
@@ -2226,7 +2230,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionTemplate.
     type: png
   - cat: ''
     config: ''
-    file: ProjectionTemplate_Error_BrokenFormula
+    file: Projections/ProjectionTemplate_Error_BrokenFormula
     report: ''
     ribbon: ''
     site: ''
@@ -2254,7 +2258,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionTemplateS
   images:
   - cat: ''
     config: ''
-    file: ProjectionsTemplate_ReportLibrary
+    file: Projections/ProjectionsTemplate_ReportLibrary
     report: ''
     ribbon: ''
     site: ''
@@ -2284,7 +2288,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionUpload.ht
   images:
   - cat: ''
     config: ''
-    file: ProjectionUpload_FullView
+    file: Projections/ProjectionUpload_FullView
     report: ''
     ribbon: ''
     site: ''
@@ -2292,7 +2296,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionUpload.ht
     type: png
   - cat: ''
     config: ''
-    file: ProjectionUpload_MultipleDistrictsPull
+    file: Projections/ProjectionUpload_MultipleDistrictsPull
     report: ''
     ribbon: ''
     site: ''
@@ -2300,7 +2304,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionUpload.ht
     type: png
   - cat: ''
     config: ''
-    file: ProjectionUpload_MultipleDistrictsSave
+    file: Projections/ProjectionUpload_MultipleDistrictsSave
     report: ''
     ribbon: ''
     site: ''
@@ -2308,7 +2312,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionUpload.ht
     type: png
   - cat: ''
     config: ''
-    file: ProjectionUpload_BlankRowsDefault
+    file: Projections/ProjectionUpload_BlankRowsDefault
     report: ''
     ribbon: ''
     site: ''
@@ -2316,7 +2320,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionUpload.ht
     type: png
   - cat: ''
     config: ''
-    file: ProjectionUpload_InsertNewRowsMiddle
+    file: Projections/ProjectionUpload_InsertNewRowsMiddle
     report: ''
     ribbon: ''
     site: ''
@@ -2324,7 +2328,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionUpload.ht
     type: png
   - cat: ''
     config: ''
-    file: ProjectionUpload_InsertNewRowsFromEmpty
+    file: Projections/ProjectionUpload_InsertNewRowsFromEmpty
     report: ''
     ribbon: ''
     site: ''
@@ -2332,7 +2336,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionUpload.ht
     type: png
   - cat: ''
     config: ''
-    file: ProjectionUpload_QuickTools
+    file: Projections/ProjectionUpload_QuickTools
     report: ''
     ribbon: ''
     site: ''
@@ -2340,7 +2344,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionUpload.ht
     type: png
   - cat: ''
     config: ''
-    file: ProjectionUpload_SaveFormula
+    file: Projections/ProjectionUpload_SaveFormula
     report: ''
     ribbon: ''
     site: ''
@@ -2348,7 +2352,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionUpload.ht
     type: png
   - cat: ''
     config: ''
-    file: ProjectionUpload_SmallSaveRange
+    file: Projections/ProjectionUpload_SmallSaveRange
     report: ''
     ribbon: ''
     site: ''
@@ -2356,7 +2360,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionUpload.ht
     type: png
   - cat: ''
     config: ''
-    file: ProjectionUpload_BigSaveRange
+    file: Projections/ProjectionUpload_BigSaveRange
     report: ''
     ribbon: ''
     site: ''
@@ -2364,7 +2368,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionUpload.ht
     type: png
   - cat: ''
     config: ''
-    file: ProjectionUpload_LockLevelError
+    file: Projections/ProjectionUpload_LockLevelError
     report: ''
     ribbon: ''
     site: ''
@@ -2372,7 +2376,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionUpload.ht
     type: png
   - cat: ''
     config: ''
-    file: ProjectionUpload_DPAError
+    file: Projections/ProjectionUpload_DPAError
     report: ''
     ribbon: ''
     site: ''
@@ -2380,7 +2384,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionUpload.ht
     type: png
   - cat: ''
     config: ''
-    file: ProjectionUpload_InvalidYearMonth
+    file: Projections/ProjectionUpload_InvalidYearMonth
     report: ''
     ribbon: ''
     site: ''
@@ -2388,7 +2392,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionUpload.ht
     type: png
   - cat: ''
     config: ''
-    file: ProjectionUpload_IncompleteGLString
+    file: Projections/ProjectionUpload_IncompleteGLString
     report: ''
     ribbon: ''
     site: ''
@@ -2396,7 +2400,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionUpload.ht
     type: png
   - cat: ''
     config: ''
-    file: ProjectionUpload_InvalidAccount
+    file: Projections/ProjectionUpload_InvalidAccount
     report: ''
     ribbon: ''
     site: ''
@@ -2404,7 +2408,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionUpload.ht
     type: png
   - cat: ''
     config: ''
-    file: ProjectionUpload_InvalidDistrict
+    file: Projections/ProjectionUpload_InvalidDistrict
     report: ''
     ribbon: ''
     site: ''
@@ -2412,7 +2416,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionUpload.ht
     type: png
   - cat: ''
     config: ''
-    file: ProjectionUpload_InvalidSystem
+    file: Projections/ProjectionUpload_InvalidSystem
     report: ''
     ribbon: ''
     site: ''
@@ -2420,7 +2424,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionUpload.ht
     type: png
   - cat: ''
     config: ''
-    file: ProjectionUpload_InvalidSubSystem
+    file: Projections/ProjectionUpload_InvalidSubSystem
     report: ''
     ribbon: ''
     site: ''
@@ -2428,7 +2432,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionUpload.ht
     type: png
   - cat: ''
     config: ''
-    file: ProjectionUpload_DuplicateAccount
+    file: Projections/ProjectionUpload_DuplicateAccount
     report: ''
     ribbon: ''
     site: ''
@@ -2436,7 +2440,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionUpload.ht
     type: png
   - cat: ''
     config: ''
-    file: ProjectionUpload_InvalidAmount
+    file: Projections/ProjectionUpload_InvalidAmount
     report: ''
     ribbon: ''
     site: ''
@@ -2444,7 +2448,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionUpload.ht
     type: png
   - cat: ''
     config: ''
-    file: ProjectionUpload_DistrictNotinRightsRow
+    file: Projections/ProjectionUpload_DistrictNotinRightsRow
     report: ''
     ribbon: ''
     site: ''
@@ -2452,7 +2456,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionUpload.ht
     type: png
   - cat: ''
     config: ''
-    file: ProjectionUpload_RegCorpMultipleDistrictError
+    file: Projections/ProjectionUpload_RegCorpMultipleDistrictError
     report: ''
     ribbon: ''
     site: ''
@@ -2460,7 +2464,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionUpload.ht
     type: png
   - cat: ''
     config: ''
-    file: ProjectionUpload_NotinDPAforDistrict
+    file: Projections/ProjectionUpload_NotinDPAforDistrict
     report: ''
     ribbon: ''
     site: ''
@@ -2468,7 +2472,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionUpload.ht
     type: png
   - cat: ''
     config: ''
-    file: ProjectionUpload_CannotUpdateAutocalcs
+    file: Projections/ProjectionUpload_CannotUpdateAutocalcs
     report: ''
     ribbon: ''
     site: ''
@@ -2523,7 +2527,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
   images:
   - cat: ''
     config: ''
-    file: BudgetTemplate_FullView
+    file: Budget/BudgetTemplate_FullView
     report: ''
     ribbon: ''
     site: ''
@@ -2531,7 +2535,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_BaseYear01
+    file: Budget/BudgetTemplate_BaseYear01
     report: ''
     ribbon: ''
     site: ''
@@ -2539,7 +2543,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_BaseYear02
+    file: Budget/BudgetTemplate_BaseYear02
     report: ''
     ribbon: ''
     site: ''
@@ -2547,7 +2551,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_RetainRowsBeforeClear
+    file: Budget/BudgetTemplate_RetainRowsBeforeClear
     report: ''
     ribbon: ''
     site: ''
@@ -2555,7 +2559,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_RetainRowsAfterClear
+    file: Budget/BudgetTemplate_RetainRowsAfterClear
     report: ''
     ribbon: ''
     site: ''
@@ -2563,7 +2567,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_InsertAtEndNo
+    file: Budget/BudgetTemplate_InsertAtEndNo
     report: ''
     ribbon: ''
     site: ''
@@ -2571,7 +2575,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_InsertAtEndYes
+    file: Budget/BudgetTemplate_InsertAtEndYes
     report: ''
     ribbon: ''
     site: ''
@@ -2579,7 +2583,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_SummaryDetailPullStart
+    file: Budget/BudgetTemplate_SummaryDetailPullStart
     report: ''
     ribbon: ''
     site: ''
@@ -2587,7 +2591,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_SummaryDetail_SummaryPrep
+    file: Budget/BudgetTemplate_SummaryDetail_SummaryPrep
     report: ''
     ribbon: ''
     site: ''
@@ -2595,7 +2599,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_SummaryDetail_SummaryPull
+    file: Budget/BudgetTemplate_SummaryDetail_SummaryPull
     report: ''
     ribbon: ''
     site: ''
@@ -2603,7 +2607,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_SummaryDetailSaveStart
+    file: Budget/BudgetTemplate_SummaryDetailSaveStart
     report: ''
     ribbon: ''
     site: ''
@@ -2611,7 +2615,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_SummaryDetail_ZeroOutNo
+    file: Budget/BudgetTemplate_SummaryDetail_ZeroOutNo
     report: ''
     ribbon: ''
     site: ''
@@ -2619,7 +2623,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_SummaryDetail_ZeroOutYes
+    file: Budget/BudgetTemplate_SummaryDetail_ZeroOutYes
     report: ''
     ribbon: ''
     site: ''
@@ -2627,7 +2631,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_Autocalcs
+    file: Budget/BudgetTemplate_Autocalcs
     report: ''
     ribbon: ''
     site: ''
@@ -2635,7 +2639,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_DPANavigation
+    file: Budget/CapitalInput_DPANavigation
     report: ''
     ribbon: ''
     site: ''
@@ -2643,7 +2647,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_DPAWindow
+    file: Budget/CapitalInput_DPAWindow
     report: ''
     ribbon: ''
     site: ''
@@ -2651,7 +2655,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_ControlCenter1District
+    file: Budget/BudgetUpload_ControlCenter1District
     report: ''
     ribbon: ''
     site: ''
@@ -2659,7 +2663,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_LockLevelError
+    file: Budget/BudgetTemplate_LockLevelError
     report: ''
     ribbon: ''
     site: ''
@@ -2667,7 +2671,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_CCAfterCorpCutoff
+    file: Budget/BudgetUpload_CCAfterCorpCutoff
     report: ''
     ribbon: ''
     site: ''
@@ -2675,7 +2679,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_AfterCorpCutoffSave
+    file: Budget/BudgetTemplate_AfterCorpCutoffSave
     report: ''
     ribbon: ''
     site: ''
@@ -2683,7 +2687,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_AfterCorpCutoff
+    file: Budget/BudgetTemplate_AfterCorpCutoff
     report: ''
     ribbon: ''
     site: ''
@@ -2691,7 +2695,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_AfterCorpCutoffBudChangeQuery
+    file: Budget/BudgetTemplate_AfterCorpCutoffBudChangeQuery
     report: ''
     ribbon: ''
     site: ''
@@ -2699,7 +2703,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_Error_TemplateOutofDate
+    file: Budget/BudgetTemplate_Error_TemplateOutofDate
     report: ''
     ribbon: ''
     site: ''
@@ -2707,7 +2711,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_Error_LockLevel
+    file: Budget/BudgetTemplate_Error_LockLevel
     report: ''
     ribbon: ''
     site: ''
@@ -2715,7 +2719,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_Error_LastPullFor
+    file: Budget/BudgetTemplate_Error_LastPullFor
     report: ''
     ribbon: ''
     site: ''
@@ -2723,7 +2727,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_Error_DistrictRequired
+    file: Budget/BudgetTemplate_Error_DistrictRequired
     report: ''
     ribbon: ''
     site: ''
@@ -2731,7 +2735,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_Error_YearMonthRequired
+    file: Budget/BudgetTemplate_Error_YearMonthRequired
     report: ''
     ribbon: ''
     site: ''
@@ -2739,7 +2743,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_Error_AfterCorpCutoff
+    file: Budget/BudgetTemplate_Error_AfterCorpCutoff
     report: ''
     ribbon: ''
     site: ''
@@ -2747,7 +2751,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_Error_MissingColumns
+    file: Budget/BudgetTemplate_Error_MissingColumns
     report: ''
     ribbon: ''
     site: ''
@@ -2755,7 +2759,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_Error_InvalidAccount
+    file: Budget/BudgetTemplate_Error_InvalidAccount
     report: ''
     ribbon: ''
     site: ''
@@ -2763,7 +2767,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_Error_InvalidSyst
+    file: Budget/BudgetTemplate_Error_InvalidSyst
     report: ''
     ribbon: ''
     site: ''
@@ -2771,7 +2775,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_Error_InvalidSbst
+    file: Budget/BudgetTemplate_Error_InvalidSbst
     report: ''
     ribbon: ''
     site: ''
@@ -2779,7 +2783,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_Error_NonumericAmount
+    file: Budget/BudgetTemplate_Error_NonumericAmount
     report: ''
     ribbon: ''
     site: ''
@@ -2787,7 +2791,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_Error_ExponentialAmount
+    file: Budget/BudgetTemplate_Error_ExponentialAmount
     report: ''
     ribbon: ''
     site: ''
@@ -2795,7 +2799,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_Error_Duplicates
+    file: Budget/BudgetTemplate_Error_Duplicates
     report: ''
     ribbon: ''
     site: ''
@@ -2803,7 +2807,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetTemplate_Error_BrokenFormula
+    file: Budget/BudgetTemplate_Error_BrokenFormula
     report: ''
     ribbon: ''
     site: ''
@@ -2839,7 +2843,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
   images:
   - cat: ''
     config: ''
-    file: BudgetUpload_FullView
+    file: Budget/BudgetUpload_FullView
     report: ''
     ribbon: ''
     site: ''
@@ -2847,7 +2851,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_MultipleDistrictsPull
+    file: Budget/BudgetUpload_MultipleDistrictsPull
     report: ''
     ribbon: ''
     site: ''
@@ -2855,7 +2859,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_MultipleDistrictsSave
+    file: Budget/BudgetUpload_MultipleDistrictsSave
     report: ''
     ribbon: ''
     site: ''
@@ -2863,7 +2867,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_BlankRowsDefault
+    file: Budget/BudgetUpload_BlankRowsDefault
     report: ''
     ribbon: ''
     site: ''
@@ -2871,7 +2875,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_InsertNewRowsMiddle
+    file: Budget/BudgetUpload_InsertNewRowsMiddle
     report: ''
     ribbon: ''
     site: ''
@@ -2879,7 +2883,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_InsertNewRowsFromEmpty
+    file: Budget/BudgetUpload_InsertNewRowsFromEmpty
     report: ''
     ribbon: ''
     site: ''
@@ -2887,7 +2891,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_QuickTools
+    file: Budget/BudgetUpload_QuickTools
     report: ''
     ribbon: ''
     site: ''
@@ -2895,7 +2899,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_SaveFormula
+    file: Budget/BudgetUpload_SaveFormula
     report: ''
     ribbon: ''
     site: ''
@@ -2903,7 +2907,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_SmallSaveRange
+    file: Budget/BudgetUpload_SmallSaveRange
     report: ''
     ribbon: ''
     site: ''
@@ -2911,7 +2915,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_BigSaveRange
+    file: Budget/BudgetUpload_BigSaveRange
     report: ''
     ribbon: ''
     site: ''
@@ -2919,7 +2923,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_DPANavigation
+    file: Budget/CapitalInput_DPANavigation
     report: ''
     ribbon: ''
     site: ''
@@ -2927,7 +2931,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: CapitalInput_DPAWindow
+    file: Budget/CapitalInput_DPAWindow
     report: ''
     ribbon: ''
     site: ''
@@ -2935,7 +2939,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_ControlCenter1District
+    file: Budget/BudgetUpload_ControlCenter1District
     report: ''
     ribbon: ''
     site: ''
@@ -2943,7 +2947,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_LockLevel1District
+    file: Budget/BudgetUpload_LockLevel1District
     report: ''
     ribbon: ''
     site: ''
@@ -2951,7 +2955,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_ControlCenter2Districts
+    file: Budget/BudgetUpload_ControlCenter2Districts
     report: ''
     ribbon: ''
     site: ''
@@ -2959,7 +2963,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_LockLevel2Districts
+    file: Budget/BudgetUpload_LockLevel2Districts
     report: ''
     ribbon: ''
     site: ''
@@ -2967,7 +2971,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_CCAfterCorpCutoff
+    file: Budget/BudgetUpload_CCAfterCorpCutoff
     report: ''
     ribbon: ''
     site: ''
@@ -2975,7 +2979,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_AfterCorpCutoffMessage
+    file: Budget/BudgetUpload_AfterCorpCutoffMessage
     report: ''
     ribbon: ''
     site: ''
@@ -2983,7 +2987,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_AfterCorpCutoffRowMessage
+    file: Budget/BudgetUpload_AfterCorpCutoffRowMessage
     report: ''
     ribbon: ''
     site: ''
@@ -2991,7 +2995,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_UnsyncedChangesBCQuery
+    file: Budget/BudgetUpload_UnsyncedChangesBCQuery
     report: ''
     ribbon: ''
     site: ''
@@ -2999,7 +3003,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_LockLevelError
+    file: Budget/BudgetUpload_LockLevelError
     report: ''
     ribbon: ''
     site: ''
@@ -3007,7 +3011,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_DPAError
+    file: Budget/BudgetUpload_DPAError
     report: ''
     ribbon: ''
     site: ''
@@ -3015,7 +3019,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_InvalidSource
+    file: Budget/BudgetUpload_InvalidSource
     report: ''
     ribbon: ''
     site: ''
@@ -3023,7 +3027,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_InvalidYear
+    file: Budget/BudgetUpload_InvalidYear
     report: ''
     ribbon: ''
     site: ''
@@ -3031,7 +3035,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_IncompleteGLString
+    file: Budget/BudgetUpload_IncompleteGLString
     report: ''
     ribbon: ''
     site: ''
@@ -3039,7 +3043,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_InvalidAccount
+    file: Budget/BudgetUpload_InvalidAccount
     report: ''
     ribbon: ''
     site: ''
@@ -3047,7 +3051,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_InvalidDistrict
+    file: Budget/BudgetUpload_InvalidDistrict
     report: ''
     ribbon: ''
     site: ''
@@ -3055,7 +3059,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_InvalidSystem
+    file: Budget/BudgetUpload_InvalidSystem
     report: ''
     ribbon: ''
     site: ''
@@ -3063,7 +3067,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_InvalidSubSystem
+    file: Budget/BudgetUpload_InvalidSubSystem
     report: ''
     ribbon: ''
     site: ''
@@ -3071,7 +3075,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_DuplicateAccount
+    file: Budget/BudgetUpload_DuplicateAccount
     report: ''
     ribbon: ''
     site: ''
@@ -3079,7 +3083,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_InvalidAmount
+    file: Budget/BudgetUpload_InvalidAmount
     report: ''
     ribbon: ''
     site: ''
@@ -3087,7 +3091,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_DistrictNotinRightsRow
+    file: Budget/BudgetUpload_DistrictNotinRightsRow
     report: ''
     ribbon: ''
     site: ''
@@ -3095,7 +3099,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_RegCorpMultipleDistrictError
+    file: Budget/BudgetUpload_RegCorpMultipleDistrictError
     report: ''
     ribbon: ''
     site: ''
@@ -3103,7 +3107,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_NotinDPAforDistrict
+    file: Budget/BudgetUpload_NotinDPAforDistrict
     report: ''
     ribbon: ''
     site: ''
@@ -3111,7 +3115,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_CannotUpdateAutocalcs
+    file: Budget/BudgetUpload_CannotUpdateAutocalcs
     report: ''
     ribbon: ''
     site: ''
@@ -3119,7 +3123,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_AfterCorpCutoffMessage
+    file: Budget/BudgetUpload_AfterCorpCutoffMessage
     report: ''
     ribbon: ''
     site: ''
@@ -3127,7 +3131,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: BudgetUpload_AfterCorpCutoffRowMessageSingle
+    file: Budget/BudgetUpload_AfterCorpCutoffRowMessageSingle
     report: ''
     ribbon: ''
     site: ''
@@ -3154,7 +3158,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/CCQuery_WIP.html:
   images:
   - cat: ''
     config: ''
-    file: CCQuery_FullView
+    file: Capital/CCQuery_FullView
     report: ''
     ribbon: ''
     site: ''
@@ -3162,7 +3166,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/CCQuery_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: CCQuery_SummaryByDay
+    file: Capital/CCQuery_SummaryByDay
     report: ''
     ribbon: ''
     site: ''
@@ -3170,7 +3174,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/CCQuery_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: CCQuery_SummaryByChange
+    file: Capital/CCQuery_SummaryByChange
     report: ''
     ribbon: ''
     site: ''
@@ -3213,7 +3217,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/ReviewDateSummary_WIP.html:
   images:
   - cat: ''
     config: ''
-    file: ReviewDateSummary_FullView
+    file: Capital/ReviewDateSummary_FullView
     report: ''
     ribbon: ''
     site: ''
@@ -3221,7 +3225,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/ReviewDateSummary_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: ReviewDateSummary_BuildingsDetail
+    file: Capital/ReviewDateSummary_BuildingsDetail
     report: ''
     ribbon: ''
     site: ''
@@ -3229,7 +3233,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/ReviewDateSummary_WIP.html:
     type: png
   - cat: ''
     config: ''
-    file: ControlCenter_SimpleExample
+    file: Capital/ControlCenter_SimpleExample
     report: ''
     ribbon: ''
     site: ''
@@ -3379,7 +3383,22 @@ www.docs.gointerject.com/bApps/bFinancials/AddingNotes.html:
   - Notes
   - Comments
   layout: custom
-  links: []
+  links:
+  - /images/bFinancials-AddingNotes/01.png
+  - /images/bFinancials-AddingNotes/02.png
+  - /images/bFinancials-AddingNotes/03.png
+  - /images/bFinancials-AddingNotes/04.png
+  - /images/bFinancials-AddingNotes/05.png
+  - /images/bFinancials-AddingNotes/06.png
+  - /images/bFinancials-AddingNotes/07.png
+  - /images/bFinancials-AddingNotes/08.png
+  - /images/bFinancials-AddingNotes/09.png
+  - /images/bFinancials-AddingNotes/10.png
+  - /images/bFinancials-AddingNotes/11.png
+  - /images/bFinancials-AddingNotes/11.1.png
+  - /images/bFinancials-AddingNotes/12.png
+  - /images/bFinancials-AddingNotes/13.png
+  - /images/bFinancials-AddingNotes/14.png
   title: Adding Notes To A Report
 www.docs.gointerject.com/bApps/bFinancials/BudgetReports.html:
   description: Step by step guide on adding budget columns to your report templates.
@@ -3408,7 +3427,9 @@ www.docs.gointerject.com/bApps/bFinancials/BudgetReports.html:
   - Epicor
   - Accounts
   layout: custom
-  links: []
+  links:
+  - /images/Train/Budget1.png
+  - /images/Train/Budget2.png
   title: Budget Reports
 www.docs.gointerject.com/bApps/bFinancials/Company-Setup.html:
   description: Step by step guide on data tier, initial data load, FRx Migration,
@@ -3463,6 +3484,11 @@ www.docs.gointerject.com/bApps/bFinancials/Company-Setup.html:
   - Accounts
   layout: custom
   links:
+  - /images/A-SQL-Installation/DDomain.png
+  - /images/A-SQL-Installation/ADServer.png
+  - /images/A-SQL-Installation/DDomain2.png
+  - /images/A-SQL-Installation/ActiveUser.png
+  - /images/A-SQL-Installation/ActiveUser2.png
   - https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017
   title: Install
 www.docs.gointerject.com/bApps/bFinancials/Configure.html:
@@ -3585,7 +3611,19 @@ www.docs.gointerject.com/bApps/bFinancials/Configure.html:
   - Epicor
   - Accounts
   layout: custom
-  links: []
+  links:
+  - /images/Config/Scheduler.png
+  - /images/Config/UploadTool.png
+  - /images/Config/ConfigReport.png
+  - /images/Config/ConfigWelcome.png
+  - /images/Config/YearNames.png
+  - /images/Config/ConfirmYears.png
+  - /images/Config/YearNames.png
+  - /images/Config/SegmentSetup.png
+  - /images/Config/RollUpRev.png
+  - /images/Config/RollupMg.png
+  - /images/Config/RollupVal.png
+  - /images/Config/PLVal.png
   title: Configure
 www.docs.gointerject.com/bApps/bFinancials/Core-Features.html:
   description: Interject™ Financials for Epicor Enterprise (This would cover topics
@@ -3667,6 +3705,10 @@ www.docs.gointerject.com/bApps/bFinancials/Distributions.html:
   layout: custom
   links:
   - https://docs.gointerject.com/bApps/bFinancials/ReportTemplates.html
+  - /images/Train/Dist1.png
+  - /images/Train/Dist2.png
+  - /images/Train/Dist3.png
+  - /images/Train/Dist4.png
   title: Distributions
 www.docs.gointerject.com/bApps/bFinancials/Drill.html:
   description: Interject™ Financials for Epicor Enterprise. The basics of drilling
@@ -3689,7 +3731,8 @@ www.docs.gointerject.com/bApps/bFinancials/Drill.html:
   - Epicor
   - Companies
   layout: custom
-  links: []
+  links:
+  - /images/Interject-Financials/InterjectFinancialsDrill.png
   title: Drill Through Data
 www.docs.gointerject.com/bApps/bFinancials/Epicor-Financials.html:
   description: Interject™ Financials for Epicor Enterprise (This would cover topics
@@ -3744,7 +3787,8 @@ www.docs.gointerject.com/bApps/bFinancials/FRxCatalog.html:
   - Epicor
   - Accounts
   layout: custom
-  links: []
+  links:
+  - /images/Config/FRxCatalog.png
   title: FRx Catalog
 www.docs.gointerject.com/bApps/bFinancials/FRxMigration.html:
   description: Step by step guide on data tier, initial data load, FRx Migration,
@@ -3852,7 +3896,18 @@ www.docs.gointerject.com/bApps/bFinancials/FRxMigration.html:
   - Accounts
   layout: custom
   links:
+  - /images/A-InitialDataLoad/FRXAccess.png
+  - /images/A-InitialDataLoad/ObjectEx.png
+  - /images/A-InitialDataLoad/DataBasename.png
+  - /images/A-InitialDataLoad/SelectDB.png
+  - /images/A-InitialDataLoad/DBSource.png
+  - /images/A-InitialDataLoad/DBDestination.png
+  - /images/A-InitialDataLoad/SelectAll.png
+  - /images/A-InitialDataLoad/RunImmediately.png
   - https://portal.gointerject.com
+  - /images/A-InitialDataLoad/ConnectionDetails.png
+  - /images/A-InitialDataLoad/image3.png
+  - /images/A-InitialDataLoad/image2.png
   title: FRx Migration
 www.docs.gointerject.com/bApps/bFinancials/HidingZeros.html:
   description: Step by step guide on adding budget columns to your report templates.
@@ -4037,9 +4092,17 @@ www.docs.gointerject.com/bApps/bFinancials/InitialDataLoad.html:
   - data
   layout: custom
   links:
+  - /images/Train/sample.png
   - https://docs.gointerject.com/bApps/bFinancials/DeactiveDB.html
   - https://portal.gointerject.com
+  - /images/A-InitialDataLoad/Login1.png
+  - /images/A-InitialDataLoad/changeco.png
+  - /images/A-InitialDataLoad/NewConnection0.png
+  - /images/A-SQL-Installation/NewConnections.png
+  - /images/Database/04.png
   - https://portal.gointerject.com
+  - /images/A-InitialDataLoad/MyApps.png
+  - /images/A-InitialDataLoad/ConnectionRedirect.png
   title: Initial Data Load
 www.docs.gointerject.com/bApps/bFinancials/Install.html:
   description: Step by step guide on data tier, initial data load, FRx Migration,
@@ -4070,6 +4133,7 @@ www.docs.gointerject.com/bApps/bFinancials/Install.html:
   links:
   - https://portal.gointerject.com
   - https://docs.gointerject.com/bApps/bFinancials/Epicor-Financials.html
+  - /images/A-SQL-InitialDataLoad/MgtStudioPointTo.png
   title: Install
 www.docs.gointerject.com/bApps/bFinancials/Interject-Financials.html:
   description: Interject™ Financials for Epicor Enterprise (This would cover topics
@@ -4132,6 +4196,9 @@ www.docs.gointerject.com/bApps/bFinancials/JE-Upload-Install.html:
   layout: custom
   links:
   - /bApps/bFinancials/Technical-Install.html
+  - /images/A-SQL-Installation/newDB.png
+  - /images/A-SQL-Installation/01.png
+  - /images/A-SQL-Installation/MgtStudioPointTo.png
   - https://drive.google.com/file/d/10Gxxb4mjKxWpl0v49x1IWK97w6xm-EKV/view?usp=sharing
   title: JE Upload Install
 www.docs.gointerject.com/bApps/bFinancials/Library.html:
@@ -4155,7 +4222,8 @@ www.docs.gointerject.com/bApps/bFinancials/Library.html:
   - Epicor
   - Companies
   layout: custom
-  links: []
+  links:
+  - /images/Interject-Financials/InterjectFinancialsReportLib.png
   title: Report Library
 www.docs.gointerject.com/bApps/bFinancials/Localize.html:
   description: Step by step guide on publishing custom-made reports to your company's
@@ -4241,7 +4309,16 @@ www.docs.gointerject.com/bApps/bFinancials/Localize.html:
   - Epicor
   - Accounts
   layout: custom
-  links: []
+  links:
+  - /images/Localize/01.png
+  - /images/Localize/02.png
+  - /images/Localize/03.png
+  - /images/Localize/SegNames.png
+  - /images/Localize/03.png
+  - /images/Localize/04.png
+  - /images/Localize/FileSave.png
+  - /images/Localize/08.png
+  - /images/Localize/CopyDrillCodes.png
   title: Setup Client Reporting Library
 www.docs.gointerject.com/bApps/bFinancials/Portal-Overview.html:
   description: A quick guide to Using the Interject Data Portal Site.
@@ -4281,6 +4358,9 @@ www.docs.gointerject.com/bApps/bFinancials/Portal-Overview.html:
   layout: custom
   links:
   - https://portal.gointerject.com/login.html
+  - /images/Login/03.png
+  - /images/UserProfile/01.png
+  - /images/UserProfile/03.png
   title: Portal Overview
 www.docs.gointerject.com/bApps/bFinancials/PrepSpecFile.html:
   description: Step by step guide on data tier, initial data load, FRx Migration,
@@ -4474,7 +4554,17 @@ www.docs.gointerject.com/bApps/bFinancials/PubReports.html:
   - Epicor
   - Accounts
   layout: custom
-  links: []
+  links:
+  - /images/Financials-TemplateSave/ReportSave1.png
+  - /images/Financials-TemplateSave/ReportSave2.png
+  - /images/Financials-TemplateSave/ReportSave3.png
+  - /images/Financials-TemplateSave/ReportSave4.png
+  - /images/Financials-TemplateSave/ReportSave5.png
+  - /images/Financials-TemplateSave/ReportSave6.png
+  - /images/Financials-TemplateUpdate/UpdateReport1.png
+  - /images/Financials-TemplateUpdate/UpdateReport2.png
+  - /images/Financials-TemplateUpdate/UpdateReport3.png
+  - /images/Financials-TemplateUpdate/UpdateReport4.png
   title: Publishing and Updating in the Report Library
 www.docs.gointerject.com/bApps/bFinancials/PullSave.html:
   description: Interject™ Financials for Epicor Enterprise The basics of pulling and
@@ -4506,7 +4596,9 @@ www.docs.gointerject.com/bApps/bFinancials/PullSave.html:
   - Epicor
   - Companies
   layout: custom
-  links: []
+  links:
+  - /images/Interject-Financials/InterjectFinancialsPull.png
+  - /images/InterjectRibbon/09.png
   title: Pull and Save Data
 www.docs.gointerject.com/bApps/bFinancials/Reference.html:
   description: Reference page for the Intuition Interject Deployment Plan
@@ -4648,6 +4740,19 @@ www.docs.gointerject.com/bApps/bFinancials/ReportTemplates.html:
   layout: custom
   links:
   - /bApps/bFinancials/Configure.html
+  - /images/Train/BuildReport1.png
+  - /images/Train/AcctRollupNew.png
+  - /images/Train/AcctRollup2.png
+  - /images/Train/BuildRow.png
+  - /images/Train/RowTemp4.png
+  - /images/Train/FRxCatalogRowTemp.png
+  - /images/Train/rowtemp2c.png
+  - /images/Train/ReportTemp.png
+  - /images/Train/DropRow.png
+  - /images/Train/TypeName.png
+  - /images/Train/HeaderNames.png
+  - /images/Train/ShowDetail.png
+  - /images/Train/DetailShot.png
   title: Report Templates
 www.docs.gointerject.com/bApps/bFinancials/Reporting-Capabilities.html:
   description: Interject™ Financials for Epicor Enterprise comes with a robust inventory
@@ -4750,6 +4855,9 @@ www.docs.gointerject.com/bApps/bFinancials/Technical-Install.html:
   links:
   - https://drive.google.com/file/d/1yqewNlhX4tm5jDo-J1lnEjz8qe-w9gqO/view?usp=sharing
   - https://drive.google.com/file/d/1UcSwEf_oKjr3eVSSUJKyzZyB60YGJsaM/view?usp=sharing
+  - /images/A-SQL-Installation/newDB.png
+  - /images/A-SQL-Installation/01.png
+  - /images/A-SQL-Installation/MgtStudioPointTo.png
   title: Data Tier Install
 www.docs.gointerject.com/bApps/bFinancials/Test.html:
   description: Step by step guide on testing procedures for governed and ad-hoc reports.
@@ -4959,7 +5067,13 @@ www.docs.gointerject.com/bApps/bFinancials/The-Basics.html:
   - Epicor
   - Accounts
   layout: custom
-  links: []
+  links:
+  - /images/Interject-Financials/InterjectFinancialsRbnMnu.png
+  - /images/Interject-Financials/InterjectFinancialsReportLib.png
+  - /images/Interject-Financials/InterjectFinancialsPull.png
+  - /images/InterjectRibbon/09.png
+  - /images/InterjectRibbon/11.png
+  - /images/Interject-Financials/InterjectFinancialsDrill.png
   title: Train
 www.docs.gointerject.com/bApps/bFinancials/TransactionReports.html:
   description: Step by step guide on using Interject Financials - Epicor Enterprise
@@ -5001,6 +5115,9 @@ www.docs.gointerject.com/bApps/bFinancials/TransactionReports.html:
   layout: custom
   links:
   - https://docs.gointerject.com/bApps/bFinancials/The-Basics.html
+  - /images/Train/TransactionRpt1.png
+  - /images/Train/TransactionRptDrill.png
+  - /images/Train/TransactionRptDrill2.png
   title: Transaction Reports
 www.docs.gointerject.com/bApps/bFinancials/Transactions-Package-Install.html:
   description: The following setup instructions will walk you through installation
@@ -5042,6 +5159,9 @@ www.docs.gointerject.com/bApps/bFinancials/Transactions-Package-Install.html:
   layout: custom
   links:
   - /bApps/bFinancials/Technical-Install.html
+  - /images/A-SQL-Installation/newDB.png
+  - /images/A-SQL-Installation/01.png
+  - /images/A-SQL-Installation/MgtStudioPointTo.png
   - https://drive.google.com/file/d/1hmX-cbVzp-pbqPChEBWKkO-DS2752-Jo/view?usp=sharing
   title: Transactions Package Install
 www.docs.gointerject.com/bApps/bFinancials/Update-JE-Upload.html:
@@ -5073,6 +5193,7 @@ www.docs.gointerject.com/bApps/bFinancials/Update-JE-Upload.html:
   layout: custom
   links:
   - https://drive.google.com/file/d/10Gxxb4mjKxWpl0v49x1IWK97w6xm-EKV/view?usp=sharing
+  - /images/A-InitialDataLoad/VersionConfirm.png
   - https://drive.google.com/file/d/1TGP1PBcNy8T-JD9w2OV7CAStV0rhtTT4/view?usp=sharing
   - https://drive.google.com/file/d/1eT33xP-OReDInLZQiU31OWpat0IjPZCu/view?usp=sharing
   - https://docs.gointerject.com/bApps/bFinancials/JE-Upload-Install.html
@@ -5105,6 +5226,7 @@ www.docs.gointerject.com/bApps/bFinancials/Updates.html:
   layout: custom
   links:
   - https://drive.google.com/file/d/1yqewNlhX4tm5jDo-J1lnEjz8qe-w9gqO/view?usp=sharing
+  - /images/A-InitialDataLoad/VersionConfirm.png
   - https://drive.google.com/file/d/1b6VJploEafuftn9UP9Mqdt4F7ywbsqju/view?usp=sharing
   - https://drive.google.com/file/d/1jcotjzfZnS9Pn7lR2BguVpzhfoSYzBGa/view?usp=sharing
   - https://drive.google.com/file/d/1Ol_mK9cseyhOwuzZ45FQiIuJAA75ETNt/view?usp=sharing
@@ -5659,7 +5781,15 @@ www.docs.gointerject.com/wAbout/Financial-Report.html:
     type: png
   - cat: Report
     config: ''
-    file: '17'
+    file: 17a
+    report: PL Trend Report
+    ribbon: ''
+    site: Add-in
+    sub: ''
+    type: png
+  - cat: Report
+    config: ''
+    file: 17b
     report: PL Trend Report
     ribbon: ''
     site: Add-in
@@ -5741,6 +5871,7 @@ www.docs.gointerject.com/wAbout/Financial-Report.html:
   - walkthrough
   layout: custom
   links:
+  - https://www.youtube.com/embed/13H24zWv7is
   - /wAbout/Report-Library-Basics.html
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data
@@ -5773,7 +5904,7 @@ www.docs.gointerject.com/wAbout/Inventory-Reports.html:
   images:
   - cat: Report Library
     config: ''
-    file: image2017-6-27_17-6-52
+    file: '01'
     report: Interject Inventory Demo
     ribbon: Simple
     site: Add-in
@@ -5789,7 +5920,7 @@ www.docs.gointerject.com/wAbout/Inventory-Reports.html:
     type: png
   - cat: Pull Data
     config: ''
-    file: image2017-6-12_17-32-49
+    file: '03'
     report: Inventory By Category
     ribbon: Simple
     site: Add-in
@@ -5845,7 +5976,7 @@ www.docs.gointerject.com/wAbout/Inventory-Reports.html:
     type: gif
   - cat: Report
     config: ''
-    file: image2017-8-14_7-54-29
+    file: '10'
     report: Inventory Detail
     ribbon: ''
     site: Add-in
@@ -5861,7 +5992,7 @@ www.docs.gointerject.com/wAbout/Inventory-Reports.html:
     type: png
   - cat: Report
     config: ''
-    file: image2017-6-9_14-21-7
+    file: '12'
     report: Inventory By Category
     ribbon: ''
     site: Add-in
@@ -5869,7 +6000,7 @@ www.docs.gointerject.com/wAbout/Inventory-Reports.html:
     type: png
   - cat: Pull Data
     config: ''
-    file: image2017-6-9_14-22-56
+    file: '13'
     report: Inventory By Category
     ribbon: Simple
     site: Add-in
@@ -6234,25 +6365,16 @@ www.docs.gointerject.com/wAbout/Report-Library-Basics.html:
   - Using the Search Feature
   - Using the keyboard
   - Using the mouse
-  - Using the Diagnostics Form
   - Related Links
   image_dir: ReportLibraryBasics
   images:
   - cat: Ribbon
     config: ''
-    file: 1.01GettingtoRL-InterjectTab
+    file: Ribbon
     report: ''
     ribbon: Simple
     site: Add-in
-    sub: ''
-    type: png
-  - cat: Ribbon
-    config: ''
-    file: 1.02GettingtoRL-ClickRL
-    report: ''
-    ribbon: Simple
-    site: Add-in
-    sub: ''
+    sub: Report Library
     type: png
   - cat: Report Library
     config: ''
@@ -6889,6 +7011,7 @@ www.docs.gointerject.com/wAbout/SharedComputer.html:
   headings:
   - Overview
   - Installing Interject on Multi-User Systems
+  - File Locations
   image_dir: SharedComputer
   images:
   - cat: ''
@@ -7015,6 +7138,7 @@ www.docs.gointerject.com/wAbout/SingleUser.html:
   headings:
   - Overview
   - Installing Interject
+  - File Locations
   image_dir: SingleUser
   images:
   - cat: Home
@@ -7112,7 +7236,7 @@ www.docs.gointerject.com/wAbout/SingleUser.html:
     ribbon: ''
     site: Add-in
     sub: Completed Install
-    type: jpg
+    type: png
   keywords:
   - Installing
   - Install
@@ -7121,6 +7245,7 @@ www.docs.gointerject.com/wAbout/SingleUser.html:
   links:
   - https://docs.gointerject.com/wAbout/SharedComputer.html
   - https://portal.gointerject.com/login.html
+  - https://portal.gointerject.com</a>
   - https://portal.gointerject.com/invite.html?mode=create
   - /wPortal/DownloadInterject.html
   - /wAbout/Logging-In.html
@@ -7206,14 +7331,6 @@ www.docs.gointerject.com/wAbout/Updating-INTERJECT.html:
   - Updating to the Newest Version of Interject
   image_dir: Updating
   images:
-  - cat: Ribbon
-    config: ''
-    file: '01'
-    report: ''
-    ribbon: Simple
-    site: Add-in
-    sub: ''
-    type: png
   - cat: Ribbon
     config: ''
     file: '02'
@@ -7308,6 +7425,7 @@ www.docs.gointerject.com/wAbout/Updating-INTERJECT.html:
   - version
   layout: custom
   links:
+  - https://www.youtube.com/embed/lNu5AjM7Ofo?si=bwwkpHZBTNK-Jtwf
   - https://www.youtube.com/watch?v=lNu5AjM7Ofo
   - /wAbout/Logging-In.html
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#check-for-updates
@@ -7423,7 +7541,7 @@ www.docs.gointerject.com/wAbout/Working-with-INTERJECT.html:
   - data cells
   layout: custom
   links:
-  - /wAbout/Basics-of-Report-Formulas.html
+  - /wAbout/Basics-of-Report-Formulas1.html
   - /wAbout/Tabular-vs-Data-Cells.html
   title: Working with Interject
 www.docs.gointerject.com/wAbout/privacy-policy.html:
@@ -7521,7 +7639,7 @@ www.docs.gointerject.com/wApi/Pyinterject.html:
     platform directly. With Python scripts, you can perform CRUD operations on your
     organization's information (e.g. data portals, data connections, users, etc.).
     This makes it extremely more efficient to handle bulk operations and routine maintenance.
-  filename: pyinterject.md
+  filename: Pyinterject.md
   headings:
   - Overview
   - What Can Pyinterject Do
@@ -7843,7 +7961,7 @@ www.docs.gointerject.com/wApi/python-api-setup.html:
   - Requirements
   - Get The Code
   - Install The Python Package
-  - Linux additional requirements
+  - Linux Additional Requirements
   - Install Package
   - Setup API
   - Get Template Config
@@ -7852,7 +7970,7 @@ www.docs.gointerject.com/wApi/python-api-setup.html:
   - Custom Functions
   - Running The API
   - More Information
-  image_dir: ''
+  image_dir: PythonApiSetup
   images:
   - cat: ids-python-api
     config: ''
@@ -7868,6 +7986,8 @@ www.docs.gointerject.com/wApi/python-api-setup.html:
   - setup
   layout: custom
   links:
+  - https://www.python.org/downloads/
+  - https://github.com/GoInterject/ids-python-api/blob/master/pyproject.toml
   - https://github.com/GoInterject/ids-python-api
   - mailto:help@gointerject.com
   - https://docs.microsoft.com/en-us/sql/connect/odbc/linux-mac/installing-the-microsoft-odbc-driver-for-sql-server
@@ -7921,14 +8041,14 @@ www.docs.gointerject.com/wDeveloper/ConditionalAccess.html:
   - rules
   layout: custom
   links:
-  - http://schemas.microsoft.com/ws/2008/06/identity/claims/role
-  - http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress
-  - http://schemas.microsoft.com/ws/2008/06/identity/claims/role|Admin|Equals
-  - http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress
-  - http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress
-  - http://schemas.microsoft.com/ws/2008/06/identity/claims/role
-  - http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress
-  - http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress
+  - /ws/2008/06/identity/claims/role
+  - /ws/2005/05/identity/claims/emailaddress
+  - /ws/2008/06/identity/claims/role
+  - /ws/2005/05/identity/claims/emailaddress
+  - /ws/2005/05/identity/claims/emailaddress
+  - /ws/2008/06/identity/claims/role
+  - /ws/2005/05/identity/claims/emailaddress
+  - /ws/2005/05/identity/claims/emailaddress
   title: Conditional Access
 www.docs.gointerject.com/wDeveloper/ConnectionManager.html:
   description: The Interject Connection Manager displays the current Web API connections
@@ -8279,6 +8399,9 @@ www.docs.gointerject.com/wDeveloper/Enterprise-Login-Setup.html:
   - https://learn.microsoft.com/en-us/azure/active-directory/develop/v2-protocols-oidc
   - https://developer.okta.com/docs/concepts/auth-servers/
   - https://auth0.com/docs/get-started/authentication-and-authorization-flow
+  - '#provide-oidc-details'
+  - '#enterprise-login-code'
+  - '#ip-whitelisting'
   - https://login.microsoftonline.com/{tenant}/v2.0
   - https://login.microsoftonline.com/{tenant}/v2.0/.well-known/openid-configuration
   - https://login.microsoftonline.com/{tenant}/oauth2/v2.0/authorize
@@ -8287,8 +8410,6 @@ www.docs.gointerject.com/wDeveloper/Enterprise-Login-Setup.html:
   - https://learn.microsoft.com/en-us/azure/active-directory/develop/v2-protocols-oidc#enable-id-tokens
   - /wAbout/Logging-In-Enterprise.html
   - https://portal.gointerject.com/
-  - https://platform-api.gointerject.com/
-  - https://live-interject-authapi.azurewebsites.net/
   - https://platform-api.gointerject.com/
   - https://live-interject-authapi.azurewebsites.net/
   title: Enterprise Login Setup
@@ -9561,8 +9682,8 @@ www.docs.gointerject.com/wDeveloper/L-Dev-EditingDataSave.html:
   - '#setting-up-the-stored-procedure'
   - '#testing-the-stored-procedure'
   - https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases
-  - /wDeveloper/L-Dev-CustomerAging.html#setting-up-the-data-connection
   - https://docs.gointerject.com/wLabs/LabSetup.html#step-1-setting-up-the-database
+  - /wDeveloper/L-Dev-CustomerAging.html#setting-up-the-data-connection
   - https://portal.gointerject.com
   - /wPortal/Logging-In-to-Website-Portal.html
   - https://docs.gointerject.com/wDeveloper/L-Dev-EditingDataSave.html#setting-up-the-stored-procedure
@@ -9625,6 +9746,7 @@ www.docs.gointerject.com/wDeveloper/L-Dev-Error-Handling.html:
   - return message
   layout: custom
   links:
+  - https://docs.microsoft.com/en-us/sql/t-sql/language-elements/raiserror-transact-sql?view=sql-server-2017
   - https://docs.microsoft.com/en-us/sql/t-sql/language-elements/raiserror-transact-sql?view=sql-server-2017
   title: 'Develop: Error Handling with RAISERROR and UserNotice'
 www.docs.gointerject.com/wDeveloper/L-Dev-InsertDeleteDataSave.html:
@@ -10284,9 +10406,9 @@ www.docs.gointerject.com/wDeveloper/TLS.html:
   headings:
   - Overview
   - TLS 1.0/1.1 End of Support
-  - '#default-tls-for-interject'
+  - Default TLS for Interject
   - Set TLS Settings via IDSSettings File
-  - Enabling TLS 1.2 for the Addin Manager
+  - Enabling System Default TLS Settings for the Addin Manager
   image_dir: TLS
   images:
   - cat: Diagnostics
@@ -10385,8 +10507,12 @@ www.docs.gointerject.com/wDeveloper/TLS.html:
   title: Interject TLS for HTTPS
 www.docs.gointerject.com/wFunctions/BSpec.html:
   description: null
-  filename: ''
-  headings: []
+  filename: BSpec.md
+  headings:
+  - Function Summary
+  - Function Arguments
+  - Excel Formula Bar Example
+  - Function Composition
   image_dir: ''
   images: []
   keywords: []
@@ -10467,7 +10593,7 @@ www.docs.gointerject.com/wFunctions/Event-Functions-Landing.html:
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data
-  - /wFunctions/Data-Functions-Landing.html
+  - /wIndex/Data-Functions-Landing.html
   - /wTroubleshooting/Validation-Report.html
   - /wFunctions/ReportMacro.html
   - /wFunctions/ReportRun.html
@@ -10604,7 +10730,7 @@ www.docs.gointerject.com/wFunctions/Pair.html:
   layout: custom
   links:
   - /wFunctions/PairGroup.html
-  - /wGetStarted//L-Drill-CustomerAging.html
+  - /wGetStarted/L-Drill-CustomerAging.html
   - /wFunctions/ReportDrill.html
   - /wFunctions/PairGroup.html
   - /wFunctions/ReportDefaults.html
@@ -10612,8 +10738,16 @@ www.docs.gointerject.com/wFunctions/Pair.html:
   title: Pair()
 www.docs.gointerject.com/wFunctions/PairExt.html:
   description: null
-  filename: ''
-  headings: []
+  filename: PairExt.md
+  headings:
+  - Function Summary
+  - Function Arguments
+  - Excel Formula Bar Example
+  - Function Composition
+  - Function Summary
+  - Function Arguments
+  - Excel Formula Bar Example
+  - Function Composition
   image_dir: ''
   images: []
   keywords: []
@@ -10641,7 +10775,7 @@ www.docs.gointerject.com/wFunctions/PairGroup.html:
   links:
   - /wFunctions/Pair.html
   - /wFunctions/Pair.html
-  - /wGetStarted//L-Drill-CustomerAging.html
+  - /wGetStarted/L-Drill-CustomerAging.html
   - https://docs.gointerject.com/wFunctions/Pair.html
   - /wFunctions/ReportDefaults.html
   - /wFunctions/ReportDrill.html
@@ -10699,8 +10833,12 @@ www.docs.gointerject.com/wFunctions/ReportCalc.html:
   title: ReportCalc()
 www.docs.gointerject.com/wFunctions/ReportDBExec.html:
   description: null
-  filename: ''
-  headings: []
+  filename: ReportDBExec.md
+  headings:
+  - Function Summary
+  - Function Arguments
+  - Excel Formula Bar Example
+  - Function Composition
   image_dir: ''
   images: []
   keywords: []
@@ -10730,7 +10868,7 @@ www.docs.gointerject.com/wFunctions/ReportDefaults.html:
   layout: custom
   links:
   - /wFunctions/Event-Functions-Landing.html
-  - /wGetStarted//L-Create-CustomerAgingDetail.html#reportdefaults
+  - /wGetStarted/L-Create-CustomerAgingDetail.html#reportdefaults
   - https://docs.gointerject.com/wFunctions/Pair.html
   - https://docs.gointerject.com/wFunctions/PairGroup.html
   - /wFunctions/PairGroup.html
@@ -10757,10 +10895,10 @@ www.docs.gointerject.com/wFunctions/ReportDrill.html:
   - data
   layout: custom
   links:
-  - /wGetStarted//L-Create-UpdatingReportLibrary#adding-a-drill-code-to-a-report
-  - /wGetStarted//L-Drill-CustomerAging.html
+  - /wGetStarted/L-Drill-DrillCodes.html
+  - /wGetStarted/L-Drill-CustomerAging.html
   - /wFunctions/Data-Functions-Landing.html
-  - /wGetStarted//L-Create-UpdatingReportLibrary#adding-a-drill-code-to-a-report
+  - /wGetStarted/L-Drill-DrillCodes.html
   - /wFunctions/Pair.html
   - https://docs.gointerject.com/wFunctions/Pair.html
   - https://docs.gointerject.com/wFunctions/PairGroup.html
@@ -10920,11 +11058,11 @@ www.docs.gointerject.com/wFunctions/ReportRange.html:
   - pull
   layout: custom
   links:
-  - /wGetStarted//L-Create-CustomerAging.html
+  - /wGetStarted/L-Create-CustomerAging.html
   - https://docs.gointerject.com/wFunctions/jDataPortal.html
   - https://docs.gointerject.com/wFunctions/Param.html
-  - wTroubleshoot/Reports.html#validation-report-for-pullsave-events
-  - /wGetStarted//L-Create-RetainFeature.html
+  - /wTroubleshoot/Reports.html#validation-report-for-pullsave-events
+  - /wGetStarted/L-Create-RetainFeature.html
   - https://docs.gointerject.com/wFunctions/jCombine.html
   - https://docs.gointerject.com/wFunctions/jCombine_If.html
   - /wFunctions/jDataPortal.html
@@ -10979,17 +11117,21 @@ www.docs.gointerject.com/wFunctions/ReportSave.html:
   - data
   layout: custom
   links:
-  - /wGetStarted//L-Dev-CustomerCreditSave.html
+  - /wDeveloper/L-Dev-EditingDataSave.html
   - https://docs.gointerject.com/wFunctions/jDataPortal.html
   - https://docs.gointerject.com/wFunctions/Param.html
-  - wTroubleshoot/Reports.html#validation-report-for-pullsave-events
+  - /wTroubleshoot/Reports.html#validation-report-for-pullsave-events
   - /wFunctions/jDataPortal.html
   - /wFunctions/Param.html
   title: ReportSave()
 www.docs.gointerject.com/wFunctions/ReportSystemCheck.html:
   description: null
-  filename: ''
-  headings: []
+  filename: ReportSystemCheck.md
+  headings:
+  - Function Summary
+  - Function Arguments
+  - Excel Formula Bar Example
+  - Function Composition
   image_dir: ''
   images: []
   keywords: []
@@ -11032,8 +11174,12 @@ www.docs.gointerject.com/wFunctions/ReportVariable.html:
   title: ReportVariable()
 www.docs.gointerject.com/wFunctions/SDesc.html:
   description: null
-  filename: ''
-  headings: []
+  filename: SDesc.md
+  headings:
+  - Function Summary
+  - Function Arguments
+  - Excel Formula Bar Example
+  - Function Composition
   image_dir: ''
   images: []
   keywords: []
@@ -11048,6 +11194,7 @@ www.docs.gointerject.com/wFunctions/jAcct.html:
   - Function Summary
   - Function Arguments
   - Excel Formula Bar Example
+  - Function Composition
   image_dir: ''
   images: []
   keywords:
@@ -11063,8 +11210,12 @@ www.docs.gointerject.com/wFunctions/jAcct.html:
   title: jAcct()
 www.docs.gointerject.com/wFunctions/jAction.html:
   description: null
-  filename: ''
-  headings: []
+  filename: jAction.md
+  headings:
+  - Function Summary
+  - Function Arguments
+  - Excel Formula Bar Example
+  - Function Composition
   image_dir: ''
   images: []
   keywords: []
@@ -11073,8 +11224,12 @@ www.docs.gointerject.com/wFunctions/jAction.html:
   title: null
 www.docs.gointerject.com/wFunctions/jBinder.html:
   description: null
-  filename: ''
-  headings: []
+  filename: jBinder.md
+  headings:
+  - Function Summary
+  - Function Arguments
+  - Excel Formula Bar Example
+  - Function Composition
   image_dir: ''
   images: []
   keywords: []
@@ -11134,7 +11289,6 @@ www.docs.gointerject.com/wFunctions/jCombine.html:
   - Function Arguments
   - Excel Formula Bar Example
   - Function Composition
-  - Usable In These Functions
   image_dir: ''
   images: []
   keywords:
@@ -11145,8 +11299,6 @@ www.docs.gointerject.com/wFunctions/jCombine.html:
   layout: custom
   links:
   - /wGetStarted/L-Create-RetainFeature.html
-  - ReportRange.html
-  - ReportVariable.html
   title: jCombine()
 www.docs.gointerject.com/wFunctions/jCombine_IF.html:
   description: The jCombineIF function concatenates a range or multiple ranges of
@@ -11158,7 +11310,6 @@ www.docs.gointerject.com/wFunctions/jCombine_IF.html:
   - Function Arguments
   - Excel Formula Bar Example
   - Function Composition
-  - Usable In These Functions
   image_dir: ''
   images: []
   keywords:
@@ -11169,19 +11320,16 @@ www.docs.gointerject.com/wFunctions/jCombine_IF.html:
   layout: custom
   links:
   - /wGetStarted/L-Create-RetainFeature.html#jcombineif
-  - ReportRange.html
-  - ReportVariable.html
   title: jCombineIF()
 www.docs.gointerject.com/wFunctions/jCombine_Smart.html:
   description: The jCombine function concatenates a range or multiple ranges of cells
     into a single string using a designated delimiter.
-  filename: jCombineSmart.md
+  filename: jCombine_Smart.md
   headings:
   - Function Summary
   - Function Arguments
   - Excel Formula Bar Example
   - Function Composition
-  - Usable In These Functions
   image_dir: ''
   images: []
   keywords:
@@ -11190,15 +11338,16 @@ www.docs.gointerject.com/wFunctions/jCombine_Smart.html:
   - function
   - formula
   layout: custom
-  links:
-  - /wGetStarted/L-Create-RetainFeature.html
-  - ReportRange.html
-  - ReportVariable.html
+  links: []
   title: jCombineSmart()
 www.docs.gointerject.com/wFunctions/jCopy.html:
   description: null
-  filename: ''
-  headings: []
+  filename: jCopy.md
+  headings:
+  - Function Summary
+  - Function Arguments
+  - Excel Formula Bar Example
+  - Function Composition
   image_dir: ''
   images: []
   keywords: []
@@ -11207,8 +11356,12 @@ www.docs.gointerject.com/wFunctions/jCopy.html:
   title: null
 www.docs.gointerject.com/wFunctions/jDataFixed.html:
   description: null
-  filename: ''
-  headings: []
+  filename: jDataFixed.md
+  headings:
+  - Function Summary
+  - Function Arguments
+  - Excel Formula Bar Example
+  - Function Composition
   image_dir: ''
   images: []
   keywords: []
@@ -11243,8 +11396,12 @@ www.docs.gointerject.com/wFunctions/jDataPortal.html:
   title: jDataPortal()
 www.docs.gointerject.com/wFunctions/jDataRange.html:
   description: null
-  filename: ''
-  headings: []
+  filename: jDataRange.md
+  headings:
+  - Function Summary
+  - Function Arguments
+  - Excel Formula Bar Example
+  - Function Composition
   image_dir: ''
   images: []
   keywords: []
@@ -11253,8 +11410,12 @@ www.docs.gointerject.com/wFunctions/jDataRange.html:
   title: null
 www.docs.gointerject.com/wFunctions/jDataSave.html:
   description: null
-  filename: ''
-  headings: []
+  filename: jDataSave.md
+  headings:
+  - Function Summary
+  - Function Arguments
+  - Excel Formula Bar Example
+  - Function Composition
   image_dir: ''
   images: []
   keywords: []
@@ -11304,7 +11465,7 @@ www.docs.gointerject.com/wFunctions/jDropdown.html:
   - https://docs.gointerject.com/wGetStarted/L-Create-Dropdowns.html#creating-a-custom-jdropdown-list
   - https://docs.gointerject.com/wFunctions/jDataPortal.html
   - https://docs.gointerject.com/wFunctions/Param.html
-  - wTroubleshoot/Reports.html#validation-report-for-pullsave-events
+  - /wTroubleshoot/Reports.html#validation-report-for-pullsave-events
   - /wFunctions/jDataPortal.html
   - /wFunctions/jDataPortal.html
   - /wFunctions/Param.html
@@ -11355,8 +11516,12 @@ www.docs.gointerject.com/wFunctions/jFreezePanes.html:
   title: jFreezePanes()
 www.docs.gointerject.com/wFunctions/jMacro.html:
   description: null
-  filename: ''
-  headings: []
+  filename: jMacro.md
+  headings:
+  - Function Summary
+  - Function Arguments
+  - Excel Formula Bar Example
+  - Function Composition
   image_dir: ''
   images: []
   keywords: []
@@ -11365,8 +11530,12 @@ www.docs.gointerject.com/wFunctions/jMacro.html:
   title: null
 www.docs.gointerject.com/wFunctions/jMerge.html:
   description: null
-  filename: ''
-  headings: []
+  filename: jMerge.md
+  headings:
+  - Function Summary
+  - Function Arguments
+  - Excel Formula Bar Example
+  - Function Composition
   image_dir: ''
   images: []
   keywords: []
@@ -11375,8 +11544,12 @@ www.docs.gointerject.com/wFunctions/jMerge.html:
   title: null
 www.docs.gointerject.com/wFunctions/jMergePoint.html:
   description: null
-  filename: ''
-  headings: []
+  filename: jMergePoint.md
+  headings:
+  - Function Summary
+  - Function Arguments
+  - Excel Formula Bar Example
+  - Function Composition
   image_dir: ''
   images: []
   keywords: []
@@ -11385,8 +11558,12 @@ www.docs.gointerject.com/wFunctions/jMergePoint.html:
   title: null
 www.docs.gointerject.com/wFunctions/jNavigate.html:
   description: null
-  filename: ''
-  headings: []
+  filename: jNavigate.md
+  headings:
+  - Function Summary
+  - Function Arguments
+  - Excel Formula Bar Example
+  - Function Composition
   image_dir: ''
   images: []
   keywords: []
@@ -11414,8 +11591,12 @@ www.docs.gointerject.com/wFunctions/jRangeTag.html:
   title: jRangeTag()
 www.docs.gointerject.com/wFunctions/jRequireValue.html:
   description: null
-  filename: ''
-  headings: []
+  filename: jRequireValue.md
+  headings:
+  - Function Summary
+  - Function Arguments
+  - Excel Formula Bar Example
+  - Function Composition
   image_dir: ''
   images: []
   keywords: []
@@ -11424,8 +11605,12 @@ www.docs.gointerject.com/wFunctions/jRequireValue.html:
   title: null
 www.docs.gointerject.com/wFunctions/jRun.html:
   description: null
-  filename: ''
-  headings: []
+  filename: jRun.md
+  headings:
+  - Function Summary
+  - Function Arguments
+  - Excel Formula Bar Example
+  - Function Composition
   image_dir: ''
   images: []
   keywords: []
@@ -11434,8 +11619,12 @@ www.docs.gointerject.com/wFunctions/jRun.html:
   title: null
 www.docs.gointerject.com/wFunctions/jScope.html:
   description: null
-  filename: ''
-  headings: []
+  filename: jScope.md
+  headings:
+  - Function Summary
+  - Function Arguments
+  - Excel Formula Bar Example
+  - Function Composition
   image_dir: ''
   images: []
   keywords: []
@@ -11464,8 +11653,12 @@ www.docs.gointerject.com/wFunctions/jSetting.html:
   title: jSetting()
 www.docs.gointerject.com/wFunctions/jTabName.html:
   description: null
-  filename: ''
-  headings: []
+  filename: jTabName.md
+  headings:
+  - Function Summary
+  - Function Arguments
+  - Excel Formula Bar Example
+  - Function Composition
   image_dir: ''
   images: []
   keywords: []
@@ -11585,6 +11778,7 @@ www.docs.gointerject.com/wGetStarted/Drilling-Between-Reports.html:
   - Customer Aging Report
   - Inventory Report
   - Financial Report
+  - Drilling to a Separate Workbook
   - The Three Ways to Drill
   image_dir: ''
   images: []
@@ -12074,7 +12268,6 @@ www.docs.gointerject.com/wGetStarted/INTERJECT-Ribbon-Menu-Items.html:
   - /wDeveloper/CustomItems.html
   - /wIndex/Quick-Tools-Landing.html
   - /wGetStarted/Exporting-Reports.html
-  - /wFunctions/ReportRange.html
   - /wFunctions/ReportRange.html
   - /wIndex/ReportBuilder.html
   - /wGetStarted/L-Create-CustomerAging.html
@@ -12795,6 +12988,7 @@ www.docs.gointerject.com/wGetStarted/L-Create-CustomerOrders.html:
   - Editing the Report Function
   - 'Adding Multi-Row Range:'
   - Final Steps
+  - Adding a Report Label With ReportLookup
   image_dir: L-Create-CustOrders
   images:
   - cat: Report Builder
@@ -13096,6 +13290,7 @@ www.docs.gointerject.com/wGetStarted/L-Create-CustomerOrders.html:
   - /wFunctions/jFreezePanes.html
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools
   - /wAbout/ReportLibraryLinks.html
+  - /wFunctions/ReportLookup.html
   title: 'Create: Customer Orders Report'
 www.docs.gointerject.com/wGetStarted/L-Create-Dropdowns.html:
   description: The jDropdown formula is used for filtering on multiple parameters.
@@ -13126,29 +13321,21 @@ www.docs.gointerject.com/wGetStarted/L-Create-Dropdowns.html:
     site: Add-in
     sub: ''
     type: png
-  - cat: Report
-    config: 'Yes'
-    file: '03'
-    report: ''
-    ribbon: ''
+  - cat: Quick Tools
+    config: ''
+    file: QuickTools
+    report: Customer Aging Summary
+    ribbon: Simple
     site: Add-in
     sub: ''
     type: png
-  - cat: Name Manger
-    config: 'Yes'
-    file: '04'
-    report: Customer Aging Summary
-    ribbon: ''
-    site: Excel
-    sub: ''
-    type: png
-  - cat: Name Manger
-    config: 'Yes'
-    file: '05'
-    report: Customer Aging Summary
-    ribbon: ''
-    site: Excel
-    sub: New Name
+  - cat: Quick Tools
+    config: ''
+    file: EnterRangeName
+    report: ''
+    ribbon: Simple
+    site: Add-in
+    sub: Create Range Name
     type: png
   - cat: Function Wizard
     config: 'Yes'
@@ -15290,6 +15477,14 @@ www.docs.gointerject.com/wGetStarted/L-Create-SpecColDefs.html:
   - Stacking Special Cell Types
   image_dir: L-Create-SpecColDefs
   images:
+  - cat: Report
+    config: ''
+    file: '00'
+    report: Customer Credits
+    ribbon: ''
+    site: Add-in
+    sub: ''
+    type: jpg
   - cat: Quick Tools
     config: ''
     file: '01'
@@ -15436,7 +15631,7 @@ www.docs.gointerject.com/wGetStarted/L-Drill-CustomerAging.html:
   filename: L-Drill-CustomerAging.md
   headings:
   - Overview
-  - Unfreezing the Excel Sheet
+  - Initializing the Report
   - Build the Drill
   - Final Results
   image_dir: L-Drill-CustAging
@@ -15947,7 +16142,7 @@ www.docs.gointerject.com/wGetStarted/L-Drill-InventoryReport.html:
   filename: L-Drill-InventoryReport.md
   headings:
   - Overview
-  - Unfreezing the Report
+  - Initializing the Report
   - Setting up the Drill
   - Creating Hyperlinks as Drills
   image_dir: L-Drill-Inventory
@@ -15967,6 +16162,22 @@ www.docs.gointerject.com/wGetStarted/L-Drill-InventoryReport.html:
     ribbon: ''
     site: Excel
     sub: ''
+    type: png
+  - cat: Right Click Menu
+    config: ''
+    file: 02b
+    report: Inventory by Category
+    ribbon: ''
+    site: Excel
+    sub: Clear Contents
+    type: png
+  - cat: Right Click Menu
+    config: ''
+    file: 02c
+    report: Inventory by Category
+    ribbon: ''
+    site: Excel
+    sub: Remove Hyperlinks
     type: png
   - cat: Function Wizard
     config: 'Yes'
@@ -16085,7 +16296,7 @@ www.docs.gointerject.com/wGetStarted/L-Drill-InventoryReport.html:
   - /wFunctions/ReportDrill.html
   - /wFunctions/PairGroup.html
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html
-  - /wGetStarted//L-Drill-FinancialReport.html
+  - /wGetStarted/L-Drill-FinancialReport.html
   title: 'Drill: Inventory Report'
 www.docs.gointerject.com/wGetStarted/L-Drill-TheThreeWays.html:
   description: Interject facilitates three different ways to drill. Each method is
@@ -17458,12 +17669,115 @@ www.docs.gointerject.com/wGetStarted/Modifying-an-Existing-Report.html:
   title: Modifying an Existing Report
 www.docs.gointerject.com/wGetStarted/RowDefinitionRange.html:
   description: null
+  filename: RowDefinitionRange.md
+  headings:
+  - Overview
+  - Multi-Column RowDef Feature
+  - Opening and Displaying the Report
+  - RowDef Items
+  - Information Sent to Data Source
+  - Multi-Column Row Definitions
+  image_dir: RowDefinitionRange
+  images:
+  - cat: ''
+    config: ''
+    file: PLReportRL
+    report: ''
+    ribbon: ''
+    site: ''
+    sub: ''
+    type: png
+  - cat: ''
+    config: ''
+    file: PullData
+    report: ''
+    ribbon: ''
+    site: ''
+    sub: ''
+    type: png
+  - cat: ''
+    config: ''
+    file: Unfreeze
+    report: ''
+    ribbon: ''
+    site: ''
+    sub: ''
+    type: png
+  - cat: ''
+    config: ''
+    file: ExpandGroups
+    report: ''
+    ribbon: ''
+    site: ''
+    sub: ''
+    type: png
+  - cat: ''
+    config: ''
+    file: PLTrendRowDefItems
+    report: ''
+    ribbon: ''
+    site: ''
+    sub: ''
+    type: png
+  - cat: ''
+    config: ''
+    file: FixedRowDefRange
+    report: ''
+    ribbon: ''
+    site: ''
+    sub: ''
+    type: png
+  - cat: ''
+    config: ''
+    file: VariableRowDefRange
+    report: ''
+    ribbon: ''
+    site: ''
+    sub: ''
+    type: png
+  - cat: ''
+    config: ''
+    file: ViewSQLClick
+    report: ''
+    ribbon: ''
+    site: ''
+    sub: ''
+    type: png
+  - cat: ''
+    config: ''
+    file: ViewSQLFixedSingleColumn
+    report: ''
+    ribbon: ''
+    site: ''
+    sub: ''
+    type: png
+  - cat: ''
+    config: ''
+    file: RowDefItems2
+    report: ''
+    ribbon: ''
+    site: ''
+    sub: ''
+    type: png
+  - cat: ''
+    config: ''
+    file: CategoryName
+    report: ''
+    ribbon: ''
+    site: ''
+    sub: ''
+    type: png
   keywords:
   - Rowdef name
   - multi-column
   - multiple
   - aggregation
   layout: custom
+  links:
+  - /wGetStarted/Fixed-and-Variable-Reports.html
+  - /wIndex/InterjectConfig_Settings.html
+  - /wFunctions/ReportFixed.html#function-arguments
+  - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#system
   title: Advanced Principles for the Row Definition Range
 www.docs.gointerject.com/wGetStarted/Simple-Data-Pull.html:
   description: To clearly illustrate the end-to-end workflow of developing a report,
@@ -17720,11 +18034,19 @@ www.docs.gointerject.com/wIndex/Diagnostics-GarbageCollection.html:
   description: The "Force Garbage Collection on Dead Memory" command in our Diagnostics
     form is a powerful tool designed to optimize memory usage by explicitly invoking
     the garbage collection process.
-  filename: ''
+  filename: Diagnostics-GarbageCollection.md
   headings:
   - Overview
-  image_dir: ''
-  images: []
+  image_dir: DiagnosticsGarbageCollection
+  images:
+  - cat: Diagnostics
+    config: 'Yes'
+    file: ForceGarbageCollection
+    report: ''
+    ribbon: ''
+    site: Addin
+    sub: Force Garbage Collector on Dead Memory
+    type: png
   keywords: []
   layout: custom
   links: []
@@ -17888,6 +18210,8 @@ www.docs.gointerject.com/wIndex/Diagnostics-SpecialFeatures.html:
   - Overview
   - 'BugFix1: Microsoft Animations'
   - 'BugFix2: Microsoft Repaint'
+  - Macro Security Settings
+  - Webview2/Browser Login
   image_dir: DiagnosticsSpecialFeatures
   images:
   - cat: Diagnostics
@@ -17930,6 +18254,38 @@ www.docs.gointerject.com/wIndex/Diagnostics-SpecialFeatures.html:
     site: Add-in
     sub: Apply Special Features
     type: png
+  - cat: Diagnostics
+    config: ''
+    file: MacroSecuritySettings
+    report: ''
+    ribbon: ''
+    site: Add-in
+    sub: Apply Special Features
+    type: png
+  - cat: Login
+    config: ''
+    file: LoginCompare
+    report: ''
+    ribbon: ''
+    site: Add-in
+    sub: ''
+    type: png
+  - cat: Diagnostics
+    config: ''
+    file: Webview2True
+    report: ''
+    ribbon: ''
+    site: Add-in
+    sub: Apply Special Features
+    type: png
+  - cat: Diagnostics
+    config: ''
+    file: Webview2False
+    report: ''
+    ribbon: ''
+    site: Add-in
+    sub: Apply Special Features
+    type: png
   keywords:
   - Diagnostics
   - Apply Special Features
@@ -17938,7 +18294,8 @@ www.docs.gointerject.com/wIndex/Diagnostics-SpecialFeatures.html:
   - animations
   - bug fix
   layout: custom
-  links: []
+  links:
+  - /wDeveloper/MacroSecurity.html
   title: Diagnostics - Apply Special Features
 www.docs.gointerject.com/wIndex/Diagnostics.html:
   description: The Diagnostics feature of Interject allows users to set and change
@@ -18997,6 +19354,14 @@ www.docs.gointerject.com/wIndex/QuickTools-Names.html:
     type: png
   - cat: Report
     config: ''
+    file: NewTab
+    report: ''
+    ribbon: ''
+    site: Add-in
+    sub: InterjectConfig
+    type: png
+  - cat: Report
+    config: ''
     file: PrefixSuffix1
     report: ''
     ribbon: ''
@@ -19253,23 +19618,120 @@ www.docs.gointerject.com/wIndex/Report-Formula-Reviews.html:
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#advanced-menu-items
   title: Reviewing Report Formulas
 www.docs.gointerject.com/wIndex/ReportBuilder.html:
-  description: null
+  description: The Report Builder is a tool in the Interject Addin to easily create
+    a report based on the settings in a Data Portal.
   filename: ReportBuilder.md
   headings:
   - Overview
+  - Building A Report
+  - Helper Default Columns
+  - Report Builder Section
   image_dir: ReportBuilder
   images:
-  - cat: ''
+  - cat: Ribbon
     config: ''
-    file: ''
+    file: Ribbon
     report: ''
-    ribbon: ''
-    site: Addin
+    ribbon: Advanced
+    site: Add-in
+    sub: Report Builder
+    type: png
+  - cat: Report Builder
+    config: ''
+    file: OpenReportBuilder
+    report: ''
+    ribbon: Advanced
+    site: Add-in
     sub: ''
     type: png
-  keywords: []
+  - cat: Report Builder
+    config: ''
+    file: ReportBuilderNorthwindCustomers
+    report: NorthwindCustomers
+    ribbon: ''
+    site: Add-in
+    sub: ''
+    type: png
+  - cat: Report Builder
+    config: ''
+    file: ReportBuilder
+    report: NorthwindCustomers
+    ribbon: ''
+    site: Add-in
+    sub: ''
+    type: png
+  - cat: Report
+    config: 'Yes'
+    file: NorthwindCustomersReport
+    report: NorthwindCustomers
+    ribbon: ''
+    site: Add-in
+    sub: ''
+    type: png
+  - cat: Report
+    config: 'Yes'
+    file: AllColumnsReturned
+    report: NorthwindCustomers
+    ribbon: ''
+    site: Add-in
+    sub: ''
+    type: png
+  - cat: Data Portals
+    config: ''
+    file: CommaDelimitedList
+    report: ''
+    ribbon: ''
+    site: Portal
+    sub: Helper Default Columns
+    type: png
+  - cat: Report
+    config: 'Yes'
+    file: SelectedColumnsBuilt
+    report: NorthwindCustomers
+    ribbon: ''
+    site: Add-in
+    sub: ''
+    type: png
+  - cat: Right Click Menu
+    config: 'Yes'
+    file: ColumnFilters
+    report: NorthwindCustomers
+    ribbon: ''
+    site: Add-in
+    sub: Sort Filter
+    type: png
+  - cat: Data Portals
+    config: ''
+    file: FormulaParameters
+    report: ''
+    ribbon: ''
+    site: Portal
+    sub: Formula Parameters
+    type: png
+  - cat: Data Portals
+    config: ''
+    file: ReportBuilderSection
+    report: ''
+    ribbon: ''
+    site: Portal
+    sub: Formula Parameters
+    type: png
+  - cat: Report
+    config: 'Yes'
+    file: CustomizedParameter
+    report: NorthwindCustomers
+    ribbon: ''
+    site: Add-in
+    sub: Dropdown Menu
+    type: png
+  keywords:
+  - report
+  - build
+  - portal
+  - template
   layout: custom
-  links: []
+  links:
+  - /wPortal/Data-Portals.html
   title: Report Builder
 www.docs.gointerject.com/wIndex/SegmentInfoSegmentSearch.html:
   description: Segments is a Data Portal which allows you to filter for every segment
@@ -19432,8 +19894,8 @@ www.docs.gointerject.com/wLabs/LabSetup.html:
   - /wPortal/L-Database-Connection.html
   - /wPortal/Data-Portals.html
   - /wIndex/FinCubeTheFinancialCube.html
-  - /wAbout/Tabular-vs-Data-Cells.html
   - https://data-api.gointerject.com/api
+  - /wAbout/Tabular-vs-Data-Cells.html
   - /wIndex/Data-Cell-Functions.html
   title: Manual Setup for the Lab Guide
 www.docs.gointerject.com/wLabs/lab.html:
@@ -19481,6 +19943,15 @@ www.docs.gointerject.com/wLabs/lab.html:
   - '7.1 Lab Export: Quick Export and PDF'
   - '7.2 Lab Export: Basic Distribution'
   - '7.3 Lab Export: Advanced Distribution'
+  - 'Lab 8 : Developing Data Pull'
+  - '8.1 Lab Develop: Customer Aging'
+  - '8.2 Lab Develop: Customer Orders'
+  - '8.3 Lab Develop: Customer jDropdowns'
+  - '8.4 Lab Develop: Customer Aging Detail'
+  - 'Lab 9 : Developing Data Save'
+  - '9.1 Lab Develop: Editing Data Save'
+  - '9.2 Lab Develop: Insert & Delete Data Save'
+  - '9.3 Lab Develop: Changelog Data Save'
   image_dir: LabSetup
   images:
   - cat: Report Library
@@ -19499,6 +19970,8 @@ www.docs.gointerject.com/wLabs/lab.html:
   layout: custom
   links:
   - mailto:info@gointerject.com
+  - '#lab-8--developing-data-pull'
+  - '#lab-9--developing-data-save'
   - /wLabs/LabSetup.html
   - /wAbout/SingleUser.html
   - /wAbout/Logging-In.html
@@ -19522,7 +19995,7 @@ www.docs.gointerject.com/wLabs/lab.html:
   - /wGetStarted/Drilling-Between-Reports.html
   - /wGetStarted/L-Drill-CustomerAging.html
   - /wGetStarted/L-Drill-InventoryReport.html
-  - /wGetStarted/L-Drill-InventoryReport.html
+  - /wGetStarted/L-Drill-FinancialReport.html
   - /wGetStarted/L-Drill-DrillCodes.html
   - /wGetStarted/L-Create-HideRowCol.html
   - /wGetStarted/L-Create-AdvancedHideRowsSections.html
@@ -19536,6 +20009,13 @@ www.docs.gointerject.com/wLabs/lab.html:
   - /wGetStarted/L-Export-QuickExportAndPDF.html
   - /wGetStarted/L-Export-BasicDist.html
   - /wGetStarted/L-Export-AdvancedDist.html
+  - /wDeveloper/L-Dev-CustomerAging.html
+  - /wDeveloper/L-Dev-CustomerOrders.html
+  - /wDeveloper/L-Dev-jDropdowns.html
+  - /wDeveloper/L-Dev-CustomerAgingDetail.html
+  - /wDeveloper/L-Dev-EditingDataSave.html
+  - /wDeveloper/L-Dev-InsertDeleteDataSave.html
+  - /wDeveloper/L-Dev-ChangelogDataSave.html
   title: Lab Guide
 www.docs.gointerject.com/wPortal/AddUser.html:
   description: On the Portal site from the Staff page, ClientAdmins can add a user
@@ -19543,7 +20023,7 @@ www.docs.gointerject.com/wPortal/AddUser.html:
   filename: AddUser.md
   headings:
   - Overview
-  - Add User
+  - Add A User
   - Adding Details
   - Password
   - Create User
@@ -19553,7 +20033,7 @@ www.docs.gointerject.com/wPortal/AddUser.html:
   images:
   - cat: Organization Staff
     config: ''
-    file: AddUser
+    file: StaffPage
     report: ''
     ribbon: ''
     site: Portal
@@ -19825,6 +20305,8 @@ www.docs.gointerject.com/wPortal/Data-Portals.html:
   layout: custom
   links:
   - /wIndex/ReportBuilder.html
+  - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#custom-commands
+  - /wIndex/ReportBuilder.html
   - https://docs.gointerject.com/wDeveloper/Request-Context-Parse.html
   title: Data Portals
 www.docs.gointerject.com/wPortal/DownloadInterject.html:
@@ -19890,7 +20372,6 @@ www.docs.gointerject.com/wPortal/FolderPermissions.html:
   filename: FolderPermissions.md
   headings:
   - Overview
-  - ''
   image_dir: FolderPermissions
   images:
   - cat: Folder permissions
@@ -20478,6 +20959,14 @@ www.docs.gointerject.com/wPortal/PublishedApps.html:
     site: Portal
     sub: App Details
     type: png
+  - cat: ''
+    config: ''
+    file: DownloadReportInformationCSV
+    report: ''
+    ribbon: ''
+    site: Excel
+    sub: ''
+    type: png
   keywords:
   - offerings
   - subscribers
@@ -20556,14 +21045,6 @@ www.docs.gointerject.com/wPortal/StaffPage.html:
   - Add User
   image_dir: StaffPage
   images:
-  - cat: Home
-    config: ''
-    file: SelectCompany
-    report: ''
-    ribbon: ''
-    site: Portal
-    sub: Company
-    type: png
   - cat: Sidebar
     config: ''
     file: ClickStaff
@@ -20988,7 +21469,14 @@ www.docs.gointerject.com/wReleaseNotes/2024-08_ReleaseNotes.html:
   - history
   - what's new
   layout: custom
-  links: []
+  links:
+  - /wLabs/lab.html
+  - /wDeveloper/Request-Context-Parse.html
+  - /wDeveloper/L-Dev-EditingDataSave.html
+  - /wGetStarted/L-Create-CustomerOrders.html#adding-a-report-label-with-reportlookup
+  - /wTroubleshoot/TroubleshootingGuide.html
+  - /wGetStarted/L-Create-SpecColDefs.html
+  - /wIndex/Diagnostics-SpecialFeatures.html
   title: Release Notes
 www.docs.gointerject.com/wReleaseNotes/2024-10_ReleaseNotes.html:
   description: Release notes for this month's updates
@@ -21440,9 +21928,21 @@ www.docs.gointerject.com/wTroubleshoot/GeneralTroubleshooting.html:
     to gather as much information as possible before reaching out to tech support.
     This guide outlines the key areas to check and log, which can assist in diagnosing
     and potentially resolving issues on your own.
-  filename: GeneralToubleshooting.md
+  filename: GeneralTroubleshooting.md
   headings:
   - Overview
+  - Interject
+  - Spread of Issue
+  - Frequency of Issue
+  - System Environment
+  - Recent Changes
+  - Replication Steps
+  - Authentication and Permissions
+  - Firewall/Networking
+  - Antivirus Conflicts
+  - Error Messages
+  - Third-Party Add-ins
+  - Temporary Files and Cache
   image_dir: ''
   images: []
   keywords:
@@ -21804,6 +22304,8 @@ www.docs.gointerject.com/wTroubleshoot/Transport-Errors.html:
   filename: Transport-Errors.md
   headings:
   - Overview
+  - Types of Transport Errors
+  - Troubleshooting
   image_dir: ''
   images: []
   keywords:
@@ -21856,13 +22358,13 @@ www.docs.gointerject.com/wTroubleshoot/TroubleshootingGuide.html:
   description: This is a troubleshooting guide for the Interject Add-in. This resource
     is designed to help you navigate and resolve a variety of common issues you might
     encounter while using the Interject Add-in.
-  filename: TroubleshootingSolutions.md
+  filename: TroubleshootingGuide.md
   headings:
   - Overview
   - 'Error: Add-in Not Completely Loaded'
   - 'Error: Incompatible FIPS'
   - 'Error: Interject Web API Offline'
-  - Can't Install or Uninstall Interject
+  - 'Error: Can''t Install or Uninstall Interject'
   - 'Error: Interject Add-in Ribbon is Gone'
   - 'Error: Cannot Connect or Communicate With Interject Platform'
   - 'Error: Login Page Not Showing (ver 2.5+)'
@@ -21879,13 +22381,15 @@ www.docs.gointerject.com/wTroubleshoot/TroubleshootingGuide.html:
   - https://portal.gointerject.com/download-interject.html
   - /wDeveloper/TLS.html
   - /wAbout/Enterprise-Login-Setup.html#ip-whitelisting
+  - https://support.microsoft.com/en-us/topic/fix-problems-that-block-programs-from-being-installed-or-removed-cca7d1b6-65a9-3d98-426b-e9f927e1eb4d
+  - /wTroubleshoot/CorruptedInstallation.html
   - /wTroubleshoot/Addin-Missing.html
+  - /wAbout/Enterprise-Login-Setup.html#ip-whitelisting
+  - /wTroubleshoot/WebView2.html
   - /wAbout/Enterprise-Login-Setup.html#ip-whitelisting
   - https://live-interject-authapi.azurewebsites.net/
   - https://live-interject-authapi.azurewebsites.net/.well-known/openid-configuration
   - https://live-interject-authapi.azurewebsites.net/
-  - /wTroubleshoot/WebView2.html
-  - /wAbout/Enterprise-Login-Setup.html#ip-whitelisting
   - /wTroubleshoot/Cloud-File.html#solution-saving-to-local-drive
   - /wTroubleshoot/Cloud-File.html#solution-uploading-as-a-website-link
   - /wFunctions/Excel-Function-Index.html
