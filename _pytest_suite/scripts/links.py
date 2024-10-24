@@ -268,7 +268,7 @@ def extract_links_from_content5(file_content):
 
     return links
 
-def extract_links_from_content(file_content):
+def extract_links_from_content6(file_content):
     # Define the regex pattern to match [text](link)
     pattern_square_brackets = re.compile(r'\[([^\]]+)\]\(([^)]+)\)')
 
@@ -276,7 +276,8 @@ def extract_links_from_content(file_content):
     pattern_a_tag = re.compile(r'<a\s+(?:[^>]*?\s+)?href=(["\'])(.*?)\1')
 
     # Define the regex pattern for URLs and anchor links
-    pattern_links = re.compile(r'(https?:\/\/[^\s#\)]+(?:#[^\s]*)?|\/w[^\s#\)]+(?:#[^\s]*)?|#[^\s\)]+)')
+    # pattern_links = re.compile(r'(https?:\/\/[^\s#\)]+(?:#[^\s]*)?|\/w[^\s#\)]+(?:#[^\s]*)?|#[^\s\)]+)')
+    pattern_links = re.compile(r'(https?:\/\/[^\s#\)]+|\/w[^\s#\)]+|#[^\s\)]+)')
 
     # Find all matches in the file content
     matches_square_brackets = list(pattern_square_brackets.finditer(file_content))
@@ -311,6 +312,123 @@ def extract_links_from_content(file_content):
             if link not in seen_links:
                 links.append(link)
                 seen_links.add(link)  # Track the added link
+
+    return links
+
+def extract_links_from_content7(file_content):
+    links = []
+    
+    # Define regex patterns for the different types of links
+    patterns = [
+        r'https?://[^\s]+',  # URL (http or https)
+        r'\[.*?\]\(https?://[^\s]+\)',  # Bracket URL Link
+        r'\[.*?\]\(/w[^\s]*\)',  # Page Link
+        r'\[.*?\]\(#.*?\)',  # Anchor Link
+    ]
+
+    # Combine the patterns into one regex
+    combined_pattern = '|'.join(patterns)
+
+    # Find all matches in the file content
+    matches = re.findall(combined_pattern, file_content)
+
+    # Clean up matches (if needed) and append to links
+    for match in matches:
+        links.append(match)
+
+    return links
+
+def extract_links_from_content8(file_content):
+    links = []
+    
+    # Define regex patterns for the different types of links
+    patterns = [
+        r'https?://[^\s]+',  # URL (http or https)
+        r'\[.*?\]\((https?://[^\s]+)\)',  # Bracket URL Link
+        r'\[.*?\]\((/w[^\s]*)\)',  # Page Link
+        r'\[.*?\]\((#.*?)\)',  # Anchor Link
+    ]
+
+    # Combine the patterns into one regex
+    combined_pattern = '|'.join(patterns)
+
+    # Find all matches in the file content
+    matches = re.findall(combined_pattern, file_content)
+
+    # Clean up matches and append to links
+    for match in matches:
+        # Each match will be a tuple; get the first non-empty group
+        link = next(filter(None, match), None)
+        if link:
+            links.append(link)
+
+    return links
+
+
+def extract_links_from_content(file_content):
+    links = []
+    length = len(file_content)
+    i = 0
+
+    while i < length:
+        char = file_content[i]
+
+        # Check for the start of a URL
+        if char == 'h' and i + 4 <= length and file_content[i:i + 4] in ['http', 'https']:
+            # Extract the URL
+            start = i
+            while i < length and not (file_content[i].isspace() or 
+                                       (file_content[i] == '.' and (i + 1 >= length or file_content[i + 1].isspace())) or 
+                                       file_content[i] == '>'):
+                i += 1
+            links.append(file_content[start:i])
+
+        # Check for bracketed links: [text](url)
+        elif char == '[':
+            # Find the closing bracket
+            # Ignore no text in brackets, e.g. []
+            if i + 1 < length and file_content[i + 1] != ']':
+                start_bracket = i + 1
+                end_bracket = file_content.find(']', start_bracket)
+                
+                if end_bracket != -1:
+                    # Check if the character following the closing bracket is an opening parenthesis
+                    if end_bracket + 1 < length and file_content[end_bracket + 1] == '(':
+                        # Find the opening parenthesis
+                        start_parenthesis = end_bracket + 2  # Move to the character after '('
+                        end_parenthesis = file_content.find(')', start_parenthesis)
+                        
+                        if end_parenthesis != -1:
+                            # Extract the URL inside the parentheses
+                            link = file_content[start_parenthesis:end_parenthesis]
+                            links.append(link.strip())
+                            # Move the index to the end of the parenthesis
+                            i = end_parenthesis  # Move to the closing parenthesis
+                        else:
+                            # No closing parenthesis found, skip to the end of the bracket
+                            i = end_bracket
+                    else:
+                        # If no opening parenthesis found, just skip to the end of the bracket
+                        i = end_bracket
+                else:
+                    i += 1  # Just move forward if no closing bracket is found
+
+        # Check for page links that start with '/w'
+        elif char == '/' and file_content[i:i + 2] == '/w':
+            start = i
+            while i < length and file_content[i] not in (' ', '\n', '.', ',', ')'):
+                i += 1
+            links.append(file_content[start:i])
+
+        # Check for anchor links
+        elif char == '#' and (i == 0 or file_content[i - 1] in [' ', '\n', '(', '[']):
+            start = i
+            while i < length and file_content[i] not in (' ', '\n', '.', ',', ')'):
+                i += 1
+            links.append(file_content[start:i])
+
+        else:
+            i += 1  # Move to the next character
 
     return links
 
