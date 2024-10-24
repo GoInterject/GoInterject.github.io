@@ -4,7 +4,7 @@ filename: "The-Basics.md"
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: ["Interject for Financials Quick Reference", "Important Interject Hotkeys", "Important Formulas", "Important Actions on the Interject Ribbon Menu", "The Basics of Working with Interject for Financials", "Using the Report Library", "Pull Data", "Drilling Between Reports"]
-links: []
+links: ["/images/Interject-Financials/InterjectFinancialsRbnMnu.png", "/images/Interject-Financials/InterjectFinancialsReportLib.png", "/images/Interject-Financials/InterjectFinancialsPull.png", "/images/InterjectRibbon/09.png", "/images/InterjectRibbon/11.png", "/images/Interject-Financials/InterjectFinancialsDrill.png"]
 image_dir: "Interject-Financials"
 images: [
 	{file: "InterjectFinancialsRbnMnu", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 

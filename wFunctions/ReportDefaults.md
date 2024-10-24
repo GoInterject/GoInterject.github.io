@@ -4,7 +4,7 @@ filename: "ReportDefaults.md"
 layout: custom
 keywords: [ReportDefaults, defaults, event, trigger, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Trigger Combination List", "Embeddable Helper Functions"]
-links: ["/wFunctions/Event-Functions-Landing.html", "/wGetStarted//L-Create-CustomerAgingDetail.html#reportdefaults", "https://docs.gointerject.com/wFunctions/Pair.html", "https://docs.gointerject.com/wFunctions/PairGroup.html", "/wFunctions/PairGroup.html", "/wFunctions/Pair.html"]
+links: ["/wFunctions/Event-Functions-Landing.html", "/wGetStarted/L-Create-CustomerAgingDetail.html#reportdefaults", "https://docs.gointerject.com/wFunctions/Pair.html", "https://docs.gointerject.com/wFunctions/PairGroup.html", "/wFunctions/PairGroup.html", "/wFunctions/Pair.html"]
 image_dir: ""
 images: []
 description: The ReportDefaults function will copy a value from a range to another range when triggered upon a designated event.

@@ -4,7 +4,7 @@ filename: "PairGroup.md"
 layout: custom
 keywords: [PairGroup, helper, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Usable In These Functions"]
-links: ["/wFunctions/Pair.html", "/wFunctions/Pair.html", "/wGetStarted//L-Drill-CustomerAging.html", "https://docs.gointerject.com/wFunctions/Pair.html", "/wFunctions/ReportDefaults.html", "/wFunctions/ReportDrill.html"]
+links: ["/wFunctions/Pair.html", "/wFunctions/Pair.html", "/wGetStarted/L-Drill-CustomerAging.html", "https://docs.gointerject.com/wFunctions/Pair.html", "/wFunctions/ReportDefaults.html", "/wFunctions/ReportDrill.html"]
 image_dir: ""
 images: []
 description: The PairGroup function will active all [Pair()](/wFunctions/Pair.html) functions defined within.

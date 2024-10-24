@@ -4,7 +4,7 @@ filename: "Company-Setup.md"
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: []
-links: ["https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017"]
+links: ["/images/A-SQL-Installation/DDomain.png", "/images/A-SQL-Installation/ADServer.png", "/images/A-SQL-Installation/DDomain2.png", "/images/A-SQL-Installation/ActiveUser.png", "/images/A-SQL-Installation/ActiveUser2.png", "https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017"]
 image_dir: "A-SQL-Installation"
 images: [
 	{file: "DDomain", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 

@@ -4,7 +4,7 @@ filename: "jCombine.md"
 layout: custom
 keywords: [jCombine, helper, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition"]
-links: ["/wGetStarted/L-Create-RetainFeature.html", "ReportRange.html", "ReportVariable.html"]
+links: ["/wGetStarted/L-Create-RetainFeature.html"]
 image_dir: ""
 images: []
 description: The jCombine function concatenates a range or multiple ranges of cells into a single string using a designated delimiter.

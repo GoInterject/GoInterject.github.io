@@ -4,7 +4,7 @@ filename: "ConditionalAccess.md"
 layout: custom
 keywords: [policy, statements, user claims, rules]
 headings: ["Overview", "Conditional Statements", "User Claims", "Conditional Rules", "Configuring Conditional Access"]
-links: ["http://schemas.microsoft.com/ws/2008/06/identity/claims/role", "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress", "http://schemas.microsoft.com/ws/2008/06/identity/claims/role|Admin|Equals", "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress", "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress", "http://schemas.microsoft.com/ws/2008/06/identity/claims/role", "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress", "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress"]
+links: ["/ws/2008/06/identity/claims/role", "/ws/2005/05/identity/claims/emailaddress", "/ws/2008/06/identity/claims/role", "/ws/2005/05/identity/claims/emailaddress", "/ws/2005/05/identity/claims/emailaddress", "/ws/2008/06/identity/claims/role", "/ws/2005/05/identity/claims/emailaddress", "/ws/2005/05/identity/claims/emailaddress"]
 image_dir: ""
 images: []
 description: Conditional access is a feature to control and validate user provisioning via policies that act on the claims issued by your identity server. These are known as Conditional Access policies. Interject's identity server exposes an interface for allowing the provisioning of users in Interject via claims provided by third party identity providers.

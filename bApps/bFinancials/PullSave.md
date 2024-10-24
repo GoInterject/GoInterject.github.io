@@ -4,7 +4,7 @@ filename: "PullSave.md"
 layout: custom
 keywords: [Account, Epicor, Companies]
 headings: ["Pull Data", "Save Data"]
-links: []
+links: ["/images/Interject-Financials/InterjectFinancialsPull.png", "/images/InterjectRibbon/09.png"]
 image_dir: "Interject-Financials"
 images: [
 	{file: "InterjectFinancialsPull", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 

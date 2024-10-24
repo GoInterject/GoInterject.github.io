@@ -4,7 +4,7 @@ filename: "BudgetReports.md"
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: []
-links: []
+links: ["/images/Train/Budget1.png", "/images/Train/Budget2.png"]
 image_dir: "Train"
 images: [
 	{file: "Budget1", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 

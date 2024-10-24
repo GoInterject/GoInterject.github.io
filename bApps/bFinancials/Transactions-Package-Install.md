@@ -4,7 +4,7 @@ filename: "Transactions-Package-Install.md"
 layout: custom
 keywords: [Epicor, SQL MGT Studio, tools]
 headings: ["Steps Required for Transactions Package"]
-links: ["/bApps/bFinancials/Technical-Install.html", "https://drive.google.com/file/d/1hmX-cbVzp-pbqPChEBWKkO-DS2752-Jo/view?usp=sharing"]
+links: ["/bApps/bFinancials/Technical-Install.html", "/images/A-SQL-Installation/newDB.png", "/images/A-SQL-Installation/01.png", "/images/A-SQL-Installation/MgtStudioPointTo.png", "https://drive.google.com/file/d/1hmX-cbVzp-pbqPChEBWKkO-DS2752-Jo/view?usp=sharing"]
 image_dir: "A-SQL-Installation"
 images: [
 	{file: "newDB", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 

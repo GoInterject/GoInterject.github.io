@@ -4,7 +4,7 @@ filename: "L-Drill-InventoryReport.md"
 layout: custom
 keywords: [drill, report, hyperlinks, walkthrough]
 headings: ["Overview", "Initializing the Report", "Setting up the Drill", "Creating Hyperlinks as Drills"]
-links: ["/wAbout/Inventory-Reports.html", "/wFunctions/ReportDrill.html", "#creating-hyperlinks-as-drills", "/wFunctions/ReportDrill.html", "/wFunctions/PairGroup.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "/wGetStarted//L-Drill-FinancialReport.html"]
+links: ["/wAbout/Inventory-Reports.html", "/wFunctions/ReportDrill.html", "#creating-hyperlinks-as-drills", "/wFunctions/ReportDrill.html", "/wFunctions/PairGroup.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "/wGetStarted/L-Drill-FinancialReport.html"]
 image_dir: "L-Drill-Inventory"
 images: [
 	{file: "01", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Inventory by Category", ribbon: "", config: ""}, 

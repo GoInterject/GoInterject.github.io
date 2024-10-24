@@ -4,7 +4,7 @@ filename: "CapitalSummary2.md"
 layout: custom
 keywords: [Training, Capital, Summary Tab]
 headings: ["Overview", "Drills"]
-links: ["/bApps/InterjectTraining/Capital/CapitalInput.html", "/bApps/InterjectTraining/Capital/CCQuery.html"]
+links: ["/images/WCNTraining/Capital/CapitalSummary_FullView.png", "/images/WCNTraining/Capital/CapitalSummary_DrillWindow.png", "/bApps/InterjectTraining/Capital/CapitalInput.html", "/images/WCNTraining/Capital/CapitalSummary_DetailDrill.png", "/bApps/InterjectTraining/Capital/CCQuery.html", "/images/WCNTraining/Capital/CapitalSummary_CapitalChangeDrill.png"]
 image_dir: "WCNTraining/Capital"
 images: [
 	{file: "Capital/CapitalSummary_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 

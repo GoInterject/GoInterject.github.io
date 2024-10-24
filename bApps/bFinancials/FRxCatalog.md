@@ -4,7 +4,7 @@ filename: "FRxCatalog.md"
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: []
-links: []
+links: ["/images/Config/FRxCatalog.png"]
 image_dir: "Config"
 images: [
 	{file: "FRxCatalog", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}

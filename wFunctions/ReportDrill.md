@@ -4,7 +4,7 @@ filename: "ReportDrill.md"
 layout: custom
 keywords: [ReportDrill, drill, function, formula, data]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Embeddable Helper Functions"]
-links: ["/wGetStarted//L-Create-UpdatingReportLibrary#adding-a-drill-code-to-a-report", "/wGetStarted//L-Drill-CustomerAging.html", "/wFunctions/Data-Functions-Landing.html", "/wGetStarted//L-Create-UpdatingReportLibrary#adding-a-drill-code-to-a-report", "/wFunctions/Pair.html", "https://docs.gointerject.com/wFunctions/Pair.html", "https://docs.gointerject.com/wFunctions/PairGroup.html", "/wFunctions/PairGroup.html", "/wFunctions/Pair.html"]
+links: ["/wGetStarted/L-Drill-DrillCodes.html", "/wGetStarted/L-Drill-CustomerAging.html", "/wFunctions/Data-Functions-Landing.html", "/wGetStarted/L-Drill-DrillCodes.html", "/wFunctions/Pair.html", "https://docs.gointerject.com/wFunctions/Pair.html", "https://docs.gointerject.com/wFunctions/PairGroup.html", "/wFunctions/PairGroup.html", "/wFunctions/Pair.html"]
 image_dir: ""
 images: []
 description: The ReportDrill function provides a convenient way to run another targeted function while at the same time, transferring contextual data for filtering to that function.

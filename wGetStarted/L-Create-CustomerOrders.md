@@ -4,7 +4,7 @@ filename: "L-Create-CustomerOrders.md"
 layout: custom
 keywords: [report, create, multi-row, customer orders, walkthrough, northwind customer orders, jFreezePanes]
 headings: ["Overview", "Building the Report", "Customizing the Report", "Editing the Report Function", "Adding Multi-Row Range:", "Final Steps", "Adding a Report Label With ReportLookup"]
-links: ["/wFunctions/ReportRange.html", "/wFunctions/jFreezePanes.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder", "/wIndex/Common-Dataportal-Index.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pulldata", "/wFunctions/ReportRange.html", "/wFunctions/jFreezePanes.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools", "/wAbout/ReportLibraryLinks.html"]
+links: ["/wFunctions/ReportRange.html", "/wFunctions/jFreezePanes.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder", "/wIndex/Common-Dataportal-Index.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pulldata", "/wFunctions/ReportRange.html", "/wFunctions/jFreezePanes.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools", "/wAbout/ReportLibraryLinks.html", "/wFunctions/ReportLookup.html"]
 image_dir: "L-Create-CustOrders"
 images: [
     {file: "01", type: "png", site: "Addin", cat: "Report Builder", sub: "", report: "", ribbon: "Simple", config: ""},

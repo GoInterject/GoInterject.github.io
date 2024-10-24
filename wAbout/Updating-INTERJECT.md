@@ -4,7 +4,7 @@ filename: "Updating-INTERJECT.md"
 layout: custom
 keywords: [update, updating, version]
 headings: ["Overview", "Updating to the Newest Version of Interject"]
-links: ["https://www.youtube.com/watch?v=lNu5AjM7Ofo", "/wAbout/Logging-In.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#check-for-updates"]
+links: ["https://www.youtube.com/embed/lNu5AjM7Ofo?si=bwwkpHZBTNK-Jtwf", "https://www.youtube.com/watch?v=lNu5AjM7Ofo", "/wAbout/Logging-In.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#check-for-updates"]
 image_dir: "Updating"
 images: [
 	{file: "02", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, 

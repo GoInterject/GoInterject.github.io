@@ -4,7 +4,7 @@ filename: "Event-Functions-Landing.md"
 layout: custom
 keywords: [event, functions, trigger]
 headings: ["Overview", "ReportMacro", "ReportRun", "ReportCalc", "ReportDefaults", "ReportGrouping", "ReportHideRowOrColumn"]
-links: ["/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data", "/wFunctions/Data-Functions-Landing.html", "/wTroubleshooting/Validation-Report.html", "/wFunctions/ReportMacro.html", "/wFunctions/ReportRun.html", "/wFunctions/ReportCalc.html", "/wFunctions/ReportDefaults.html", "/wFunctions/ReportGrouping.html", "/wFunctions/ReportVariable.html", "/wFunctions/ReportHideRowOrColumn.html"]
+links: ["/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data", "/wIndex/Data-Functions-Landing.html", "/wTroubleshooting/Validation-Report.html", "/wFunctions/ReportMacro.html", "/wFunctions/ReportRun.html", "/wFunctions/ReportCalc.html", "/wFunctions/ReportDefaults.html", "/wFunctions/ReportGrouping.html", "/wFunctions/ReportVariable.html", "/wFunctions/ReportHideRowOrColumn.html"]
 image_dir: ""
 images: []
 description: Event Functions are functions designed to run when a designated event triggers them.
@@ -45,7 +45,7 @@ The ReportRun function will run a designated report function(s) within a Workboo
 
 The ReportCalc function executes a calculation of formulas in a worksheet or workbook when triggered upon a designated event.
 
-### [ReportDefaults](/wInwFunctionsdex/ReportDefaults.html)
+### [ReportDefaults](/wFunctions/ReportDefaults.html)
 
 The ReportDefaults function will copy a value from a range to another range when triggered upon a designated event.
 

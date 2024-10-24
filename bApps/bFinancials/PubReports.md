@@ -4,7 +4,7 @@ filename: "PubReports.md"
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: ["Publishing and Updating Report Templates in the Report Library", "Updating Existing Report Templates"]
-links: []
+links: ["/images/Financials-TemplateSave/ReportSave1.png", "/images/Financials-TemplateSave/ReportSave2.png", "/images/Financials-TemplateSave/ReportSave3.png", "/images/Financials-TemplateSave/ReportSave4.png", "/images/Financials-TemplateSave/ReportSave5.png", "/images/Financials-TemplateSave/ReportSave6.png", "/images/Financials-TemplateUpdate/UpdateReport1.png", "/images/Financials-TemplateUpdate/UpdateReport2.png", "/images/Financials-TemplateUpdate/UpdateReport3.png", "/images/Financials-TemplateUpdate/UpdateReport4.png"]
 image_dir: "Financials-TemplateSave"
 images: [
 	{file: "ReportSave1", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 

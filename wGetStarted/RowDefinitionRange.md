@@ -4,7 +4,7 @@ filename: "RowDefinitionRange.md"
 layout: custom
 keywords: [Rowdef name, multi-column, multiple, aggregation]
 headings: ["Overview", "Multi-Column RowDef Feature", "Opening and Displaying the Report", "RowDef Items", "Information Sent to Data Source", "Multi-Column Row Definitions"]
-links: []
+links: ["/wGetStarted/Fixed-and-Variable-Reports.html", "/wIndex/InterjectConfig_Settings.html", "/wFunctions/ReportFixed.html#function-arguments", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#system"]
 image_dir: "RowDefinitionRange"
 images: [
 	{file: "PLReportRL", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""},

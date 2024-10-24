@@ -4,7 +4,7 @@ filename: "Working-with-INTERJECT.md"
 layout: custom
 keywords: [overview, report formulas, tabular cells, data cells]
 headings: ["Overview", "Basics of Report Formulas", "Tabular vs Data Cells"]
-links: ["/wAbout/Basics-of-Report-Formulas.html", "/wAbout/Tabular-vs-Data-Cells.html"]
+links: ["/wAbout/Basics-of-Report-Formulas1.html", "/wAbout/Tabular-vs-Data-Cells.html"]
 image_dir: ""
 images: []
 description: Since Interject introduces new methods and standards for working with spreadsheets, it is helpful to understand some key concepts so you can realize its potential.

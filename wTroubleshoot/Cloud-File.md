@@ -24,7 +24,7 @@ The [Report Library](/wAbout/Report-Library-Basics.html) provides a central hub 
 
 ### Identifying Cloud Files
 
-You can identify the cloud file when you try to upload it to the Report Library. For example, the link path will be sourced from https://. Compare the following two examples:
+You can identify the cloud file when you try to upload it to the Report Library. For example, the link path will be sourced from https. Compare the following two examples:
 
 **OneDrive link:**
 

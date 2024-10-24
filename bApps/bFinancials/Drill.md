@@ -4,7 +4,7 @@ filename: "Drill.md"
 layout: custom
 keywords: [Account, Epicor, Companies]
 headings: ["Drilling Between Reports"]
-links: []
+links: ["/images/Interject-Financials/InterjectFinancialsDrill.png"]
 image_dir: "Interject-Financials"
 images: [
 	{file: "InterjectFinancialsDrill", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}

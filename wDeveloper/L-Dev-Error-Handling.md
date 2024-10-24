@@ -4,7 +4,7 @@ filename: "L-Dev-Error-Handling.md"
 layout: custom
 keywords: [error, handling, RAISERROR, UserNotice, return message]
 headings: ["Overview", "Understanding Error Handling", "Error Handling With RAISERROR", "Error Handling With UserNotice", "Unhandled Error Behavior"]
-links: ["https://docs.microsoft.com/en-us/sql/t-sql/language-elements/raiserror-transact-sql?view=sql-server-2017"]
+links: ["https://docs.microsoft.com/en-us/sql/t-sql/language-elements/raiserror-transact-sql?view=sql-server-2017", "https://docs.microsoft.com/en-us/sql/t-sql/language-elements/raiserror-transact-sql?view=sql-server-2017"]
 image_dir: "Error-Handling"
 images: [
 	{file: "01", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""}, 

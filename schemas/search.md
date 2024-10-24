@@ -3,7 +3,7 @@ title: "Docs search"
 filename: "search.md"
 keywords: [Search, Interject, documentation, manual, guide, reference, api]
 headings: []
-links: []
+links: ["https://programmablesearchengine.google.com/controlpanel/all", "https://cse.google.com/cse.js?cx='"]
 image_dir: ""
 images: []
 description: Interject documentation search results

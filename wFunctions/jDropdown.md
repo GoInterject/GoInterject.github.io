@@ -4,7 +4,7 @@ filename: "jDropdown.md"
 layout: custom
 keywords: [jDropdown, helper, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Embeddable Helper Functions"]
-links: ["/wGetStarted/L-Create-Dropdowns.html", "https://docs.gointerject.com/wGetStarted/L-Create-Dropdowns.html#creating-a-custom-jdropdown-list", "https://docs.gointerject.com/wFunctions/jDataPortal.html", "https://docs.gointerject.com/wFunctions/Param.html", "wTroubleshoot/Reports.html#validation-report-for-pullsave-events", "/wFunctions/jDataPortal.html", "/wFunctions/jDataPortal.html", "/wFunctions/Param.html"]
+links: ["/wGetStarted/L-Create-Dropdowns.html", "https://docs.gointerject.com/wGetStarted/L-Create-Dropdowns.html#creating-a-custom-jdropdown-list", "https://docs.gointerject.com/wFunctions/jDataPortal.html", "https://docs.gointerject.com/wFunctions/Param.html", "/wTroubleshoot/Reports.html#validation-report-for-pullsave-events", "/wFunctions/jDataPortal.html", "/wFunctions/jDataPortal.html", "/wFunctions/Param.html"]
 image_dir: ""
 images: []
 description: The jDropdown function returns data from a Data Portal that can be displayed in a dropdown window for the user to select and insert into a designated cell within the spreadsheet.

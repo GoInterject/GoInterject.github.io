@@ -4,7 +4,7 @@ filename: "Diagnostics-SpecialFeatures.md"
 layout: custom
 keywords: [Diagnostics, Apply Special Features, Configuration, Config, animations, bug fix]
 headings: ["Overview", "BugFix1: Microsoft Animations", "BugFix2: Microsoft Repaint", "Macro Security Settings", "Webview2/Browser Login"]
-links: []
+links: ["/wDeveloper/MacroSecurity.html"]
 image_dir: "DiagnosticsSpecialFeatures"
 images: [
     {file: "ApplySpecialFeatures", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""}, 

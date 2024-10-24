@@ -4,7 +4,7 @@ filename: "InitialDataLoad.md"
 layout: custom
 keywords: [Epicor, setup, init, data]
 headings: ["Begin Data Load", "Steps Required for Interject Application Setup Data Connection", "Redirect the DB Connection to the new DB in Interject portal"]
-links: ["https://docs.gointerject.com/bApps/bFinancials/DeactiveDB.html", "https://portal.gointerject.com", "https://portal.gointerject.com"]
+links: ["/images/Train/sample.png", "https://docs.gointerject.com/bApps/bFinancials/DeactiveDB.html", "https://portal.gointerject.com", "/images/A-InitialDataLoad/Login1.png", "/images/A-InitialDataLoad/changeco.png", "/images/A-InitialDataLoad/NewConnection0.png", "/images/A-SQL-Installation/NewConnections.png", "/images/Database/04.png", "https://portal.gointerject.com", "/images/A-InitialDataLoad/MyApps.png", "/images/A-InitialDataLoad/ConnectionRedirect.png"]
 image_dir: "Train"
 images: [
 	{file: "sample", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 

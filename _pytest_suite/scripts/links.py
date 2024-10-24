@@ -13,7 +13,7 @@ import os
 import re
 
 def process_md_file(file_path):
-    print(f"Finding links in {file_path}")
+    print (f"Finding links in {file_path}")
     # Read the content of the Markdown file
     with open(file_path, 'r', encoding='utf-8') as file:
         raw_content = file.read()
@@ -47,325 +47,6 @@ def process_md_file(file_path):
     with open(file_path, 'w', encoding='utf-8') as file:
         file.write(front_matter)
 
-def extract_links_from_content0(file_content):
-    # Define the regex pattern to match [text](link)
-    pattern_square_brackets = re.compile(r'\[([^\]]+)\]\(([^)]+)\)')
-
-    # Define the regex pattern to match <a href="url">
-    pattern_a_tag = re.compile(r'<a\s+(?:[^>]*?\s+)?href=(["\'])(.*?)\1')
-
-    # Find all matches in the file content for square brackets pattern using finditer
-    matches_square_brackets = pattern_square_brackets.finditer(file_content)
-
-    # Find all matches in the file content for <a href="url"> pattern using finditer
-    matches_a_tag = pattern_a_tag.finditer(file_content)
-
-    # Combine matches from both patterns in the order they appear
-    all_matches = sorted(
-        list(matches_square_brackets) + list(matches_a_tag),
-        key=lambda match: match.start()
-    )
-
-    # Exclude links that begin with "/images/"
-    filtered_matches = [match.group(2) for match in all_matches
-                        if not match.group(2).startswith('/images/')]
-
-    return filtered_matches
-
-def extract_links_from_content1(file_content):
-    # Define the regex pattern to match [text](link)
-    pattern_square_brackets = re.compile(r'\[([^\]]+)\]\(([^)]+)\)')
-
-    # Define the regex pattern to match <a href="url">
-    pattern_a_tag = re.compile(r'<a\s+(?:[^>]*?\s+)?href=(["\'])(.*?)\1')
-
-    # Define the regex pattern for URLs, page links, and anchor links
-    pattern_links = re.compile(r'(https?:\/\/[^\s#]+(?:#[^\s]*)?|\/w[^\s#]+(?:#[^\s]*)?|#[^\s]+)')
-
-    # Find all matches in the file content for square brackets pattern using finditer
-    matches_square_brackets = pattern_square_brackets.finditer(file_content)
-
-    # Find all matches in the file content for <a href="url"> pattern using finditer
-    matches_a_tag = pattern_a_tag.finditer(file_content)
-
-    # Find all matches in the file content for URL and page links using finditer
-    matches_links = pattern_links.finditer(file_content)
-
-    # Combine matches from all patterns in the order they appear
-    all_matches = sorted(
-        list(matches_square_brackets) + list(matches_a_tag) + list(matches_links),
-        key=lambda match: match.start()
-    )
-
-    # Extract and filter links
-    filtered_matches = [match.group(2) if match.lastindex == 2 else match.group(0) 
-                        for match in all_matches if not match.group(2).startswith('/images/')]
-
-    return filtered_matches
-
-def extract_links_from_content2(file_content):
-    # Define the regex pattern to match [text](link)
-    pattern_square_brackets = re.compile(r'\[([^\]]+)\]\(([^)]+)\)')
-
-    # Define the regex pattern to match <a href="url">
-    pattern_a_tag = re.compile(r'<a\s+(?:[^>]*?\s+)?href=(["\'])(.*?)\1')
-
-    # Define the regex pattern for URLs, page links, and anchor links
-    pattern_links = re.compile(r'(https?:\/\/[^\s#]+(?:#[^\s]*)?|\/w[^\s#]+(?:#[^\s]*)?|#[^\s]+)')
-
-    # Find all matches in the file content for square brackets pattern using finditer
-    matches_square_brackets = pattern_square_brackets.finditer(file_content)
-
-    # Find all matches in the file content for <a href="url"> pattern using finditer
-    matches_a_tag = pattern_a_tag.finditer(file_content)
-
-    # Find all matches in the file content for URL and page links using finditer
-    matches_links = pattern_links.finditer(file_content)
-
-    # Combine matches from all patterns in the order they appear
-    all_matches = sorted(
-        list(matches_square_brackets) + list(matches_a_tag) + list(matches_links),
-        key=lambda match: match.start()
-    )
-
-    # Extract and filter links
-    filtered_matches = [
-        match.group(2) if match.lastindex and match.lastindex == 2 else match.group(0)
-        for match in all_matches
-        if not (match.lastindex and match.group(2).startswith('/images/'))
-    ]
-
-    return filtered_matches
-
-def extract_links_from_content3(file_content):
-    # Define the regex pattern to match [text](link)
-    pattern_square_brackets = re.compile(r'\[([^\]]+)\]\(([^)]+)\)')
-
-    # Define the regex pattern to match <a href="url">
-    pattern_a_tag = re.compile(r'<a\s+(?:[^>]*?\s+)?href=(["\'])(.*?)\1')
-
-    # Define the regex pattern for URLs, page links, and anchor links
-    pattern_links = re.compile(r'(https?:\/\/[^\s#]+(?:#[^\s]*)?|\/w[^\s#]+(?:#[^\s]*)?|#[^\s]+)')
-
-    # Find all matches in the file content for square brackets pattern using finditer
-    matches_square_brackets = pattern_square_brackets.finditer(file_content)
-
-    # Find all matches in the file content for <a href="url"> pattern using finditer
-    matches_a_tag = pattern_a_tag.finditer(file_content)
-
-    # Find all matches in the file content for URL and page links using finditer
-    matches_links = pattern_links.finditer(file_content)
-
-    # Combine matches from all patterns in the order they appear
-    all_matches = sorted(
-        list(matches_square_brackets) + list(matches_a_tag) + list(matches_links),
-        key=lambda match: match.start()
-    )
-
-    # Extract and filter links
-    filtered_matches = []
-    for match in all_matches:
-        # Check if match has group(2); if not, use group(0)
-        link = match.group(2) if match.lastindex and match.lastindex >= 2 else match.group(0)
-
-        # Exclude links that start with "/images/"
-        if not link.startswith('/images/'):
-            filtered_matches.append(link)
-
-    return filtered_matches
-
-def extract_links_from_content4(file_content):
-    # Define the regex pattern to match [text](link)
-    pattern_square_brackets = re.compile(r'\[([^\]]+)\]\(([^)]+)\)')
-
-    # Define the regex pattern to match <a href="url">
-    pattern_a_tag = re.compile(r'<a\s+(?:[^>]*?\s+)?href=(["\'])(.*?)\1')
-
-    # Define the regex pattern for URLs, page links, and anchor links
-    pattern_links = re.compile(r'(https?:\/\/[^\s#\)]+(?:#[^\s]*)?|\/w[^\s#\)]+(?:#[^\s]*)?|#[^\s\)]+)')
-
-    # Find all matches in the file content for square brackets pattern using finditer
-    matches_square_brackets = pattern_square_brackets.finditer(file_content)
-
-    # Find all matches in the file content for <a href="url"> pattern using finditer
-    matches_a_tag = pattern_a_tag.finditer(file_content)
-
-    # Find all matches in the file content for URL and page links using finditer
-    matches_links = pattern_links.finditer(file_content)
-
-    # Combine matches from all patterns in the order they appear
-    all_matches = sorted(
-        list(matches_square_brackets) + list(matches_a_tag) + list(matches_links),
-        key=lambda match: match.start()
-    )
-
-    # Define patterns to filter out: strings consisting of # or multiple #
-    patterns_to_filter = re.compile(r'^#+$')  # Matches any number of '#', like "##", "###"
-
-    # Extra patterns to remove
-    patterns_to_remove = re.compile(r'{:target="_blank"}{:rel="noopener"}')
-
-    # Extract and filter links
-    filtered_matches = []
-    for match in all_matches:
-        # Check if match has group(2); if not, use group(0)
-        link = match.group(2) if match.lastindex and match.lastindex >= 2 else match.group(0)
-
-        # Remove trailing unwanted parts like {:target="_blank"}{:rel="noopener"}
-        link = re.sub(patterns_to_remove, '', link)
-
-        # Exclude links that start with "/images/", or are just hashtags (e.g., "##", "###")
-        if not link.startswith('/images/') and not patterns_to_filter.match(link):
-            filtered_matches.append(link)
-
-    return filtered_matches
-
-def extract_links_from_content5(file_content):
-    # Define the regex pattern to match [text](link)
-    pattern_square_brackets = re.compile(r'\[([^\]]+)\]\(([^)]+)\)')
-
-    # Define the regex pattern to match <a href="url">
-    pattern_a_tag = re.compile(r'<a\s+(?:[^>]*?\s+)?href=(["\'])(.*?)\1')
-
-    # Define the regex pattern for URLs, page links, and anchor links
-    pattern_links = re.compile(r'(https?:\/\/[^\s#\)]+(?:#[^\s]*)?|\/w[^\s#\)]+(?:#[^\s]*)?|#[^\s\)]+)')
-
-    # Find all matches in the file content for square brackets pattern using finditer
-    matches_square_brackets = pattern_square_brackets.finditer(file_content)
-
-    # Find all matches in the file content for <a href="url"> pattern using finditer
-    matches_a_tag = pattern_a_tag.finditer(file_content)
-
-    # Find all matches in the file content for URL and page links using finditer
-    matches_links = pattern_links.finditer(file_content)
-
-    # Combine matches from all patterns in the order they appear
-    all_matches = sorted(
-        list(matches_square_brackets) + list(matches_a_tag) + list(matches_links),
-        key=lambda match: match.start()
-    )
-
-    # Define patterns to filter out: strings consisting of # or multiple #
-    patterns_to_filter = re.compile(r'^#+$')  # Matches any number of '#', like "##", "###"
-
-    # Extra patterns to remove
-    patterns_to_remove = re.compile(r'{:target="_blank"}{:rel="noopener"}')
-
-    # List to store links
-    links = []
-
-    # Extract and filter links
-    for match in all_matches:
-        # Check if match has group(2); if not, use group(0)
-        link = match.group(2) if match.lastindex and match.lastindex >= 2 else match.group(0)
-
-        # Remove trailing unwanted parts like {:target="_blank"}{:rel="noopener"}
-        link = re.sub(patterns_to_remove, '', link).strip()
-
-        # Exclude links that start with "/images/", or are just hashtags (e.g., "##", "###")
-        if not link.startswith('/images/') and not patterns_to_filter.match(link):
-            # Add the link to the list (maintaining duplicates)
-            links.append(link)
-
-    return links
-
-def extract_links_from_content6(file_content):
-    # Define the regex pattern to match [text](link)
-    pattern_square_brackets = re.compile(r'\[([^\]]+)\]\(([^)]+)\)')
-
-    # Define the regex pattern to match <a href="url">
-    pattern_a_tag = re.compile(r'<a\s+(?:[^>]*?\s+)?href=(["\'])(.*?)\1')
-
-    # Define the regex pattern for URLs and anchor links
-    # pattern_links = re.compile(r'(https?:\/\/[^\s#\)]+(?:#[^\s]*)?|\/w[^\s#\)]+(?:#[^\s]*)?|#[^\s\)]+)')
-    pattern_links = re.compile(r'(https?:\/\/[^\s#\)]+|\/w[^\s#\)]+|#[^\s\)]+)')
-
-    # Find all matches in the file content
-    matches_square_brackets = list(pattern_square_brackets.finditer(file_content))
-    matches_a_tag = list(pattern_a_tag.finditer(file_content))
-    matches_links = list(pattern_links.finditer(file_content))
-
-    # Combine matches while preserving the order
-    all_matches = sorted(
-        matches_square_brackets + matches_a_tag + matches_links,
-        key=lambda match: match.start()
-    )
-
-    # Define patterns to filter out
-    patterns_to_filter = re.compile(r'^#+$')  # Matches any number of '#'
-    patterns_to_remove = re.compile(r'{:target="_blank"}{:rel="noopener"}')
-
-    # Set to keep track of added links
-    seen_links = set()
-    links = []
-
-    # Extract and filter links
-    for match in all_matches:
-        # Check if match has group(2); if not, use group(0)
-        link = match.group(2) if match.lastindex and match.lastindex >= 2 else match.group(0)
-
-        # Remove unwanted suffixes
-        link = re.sub(patterns_to_remove, '', link).strip()
-
-        # Exclude unwanted links
-        if not link.startswith('/images/') and not patterns_to_filter.match(link):
-            # Only add link if it hasn't been added yet
-            if link not in seen_links:
-                links.append(link)
-                seen_links.add(link)  # Track the added link
-
-    return links
-
-def extract_links_from_content7(file_content):
-    links = []
-    
-    # Define regex patterns for the different types of links
-    patterns = [
-        r'https?://[^\s]+',  # URL (http or https)
-        r'\[.*?\]\(https?://[^\s]+\)',  # Bracket URL Link
-        r'\[.*?\]\(/w[^\s]*\)',  # Page Link
-        r'\[.*?\]\(#.*?\)',  # Anchor Link
-    ]
-
-    # Combine the patterns into one regex
-    combined_pattern = '|'.join(patterns)
-
-    # Find all matches in the file content
-    matches = re.findall(combined_pattern, file_content)
-
-    # Clean up matches (if needed) and append to links
-    for match in matches:
-        links.append(match)
-
-    return links
-
-def extract_links_from_content8(file_content):
-    links = []
-    
-    # Define regex patterns for the different types of links
-    patterns = [
-        r'https?://[^\s]+',  # URL (http or https)
-        r'\[.*?\]\((https?://[^\s]+)\)',  # Bracket URL Link
-        r'\[.*?\]\((/w[^\s]*)\)',  # Page Link
-        r'\[.*?\]\((#.*?)\)',  # Anchor Link
-    ]
-
-    # Combine the patterns into one regex
-    combined_pattern = '|'.join(patterns)
-
-    # Find all matches in the file content
-    matches = re.findall(combined_pattern, file_content)
-
-    # Clean up matches and append to links
-    for match in matches:
-        # Each match will be a tuple; get the first non-empty group
-        link = next(filter(None, match), None)
-        if link:
-            links.append(link)
-
-    return links
-
-
 def extract_links_from_content(file_content):
     links = []
     length = len(file_content)
@@ -373,10 +54,10 @@ def extract_links_from_content(file_content):
 
     while i < length:
         char = file_content[i]
-        print(f"i = {i}, char = {char}")
+        #print(f"i = {i}, char = {char}")
 
         # Check for the start of a URL
-        if char == 'h' and i + 4 <= length and file_content[i:i + 4] in ['http', 'https']:
+        if char == 'h' and i + 4 <= length and file_content[i:i + 8] in ['http://', 'https://']:
             #print("found http link")
             # Extract the URL
             start = i
@@ -431,12 +112,21 @@ def extract_links_from_content(file_content):
                     i += 1  # Just move forward if no closing bracket is found
 
         # Check for page links that start with '/w'
-        elif char == '/' and file_content[i:i + 2] == '/w':
-            #print("found /w link")
-            start = i
-            while i < length and file_content[i] not in (' ', '\n', '.', ',', ')'):
+        elif char == '/':
+            if file_content[i:i + 2] == '/w':
+                #print("found /w link")
+                start = i
+                while i < length and file_content[i] not in (' ', '\n', '.', ',', ')'):
+                    i += 1
+                links.append(file_content[start:i])
+            elif file_content[i-1] == '"' and (file_content[i:i + 2] == '/b' or file_content[i:i + 2] == '/w'):
+                #print("found /b or /w link inside href")
+                start = i
+                while i < length and file_content[i] != '"':
+                    i += 1
+                links.append(file_content[start:i])
+            else:
                 i += 1
-            links.append(file_content[start:i])
 
         # Check for anchor links, skipping headings
         elif char == '#' and (i == 0 or file_content[i - 1] in [' ', '\n', '(', '[']):
@@ -452,9 +142,20 @@ def extract_links_from_content(file_content):
                     links.append(link)
             else:
                 i += 1 # Move to the next character
+        
+        elif char == 'm' and i + 6 <= length and file_content[i:i + 6] in ['mailto']:
+            #print("found mail link")
+            # Extract the URL
+            start = i
+            # This will signal the end of the link: whitespace, quotation mark, period followed by a whitespace
+            while i < length and not (file_content[i-3] == 'c' and file_content[i-2] == 'o' and file_content[i-1] == 'm'):
+                i += 1
+            
+            links.append(file_content[start:i])  # Include the URL as is
+
+        
         else:
             i += 1  # Move to the next character
-
 
 
     return links

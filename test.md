@@ -1,7 +1,7 @@
 ---
 title: test
 headings: []
-links: ["/images/L-Dev-InsertDeleteDataSave/AddIsDeletedToPullSP.png", "/wDeveloper/L-Dev-EditingDataSave", "#setting-up-the-data-connection", "/wDeveloper/L-Dev-CustomerAging.html#setting-up-the-data-connection", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "https://learn", "https://docs", "/wLabs/LabSetup", "max"]
+links: ["/wDeveloper/L-Dev-EditingDataSave", "#setting-up-the-data-connection", "/wDeveloper/L-Dev-CustomerAging.html#setting-up-the-data-connection", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "https://docs.gointerject.com/wLabs/LabSetup.html#step-1-setting-up-the-database"]
 ---
 
 ## Overview

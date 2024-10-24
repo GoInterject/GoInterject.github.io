@@ -4,7 +4,7 @@ filename: "ReportBuilder.md"
 layout: custom
 keywords: ["report", "build", "portal", "template"]
 headings: ["Overview", "Building A Report", "Helper Default Columns", "Report Builder Section"]
-links: []
+links: ["/wPortal/Data-Portals.html"]
 image_dir: "ReportBuilder"
 images: [
 	{file: "Ribbon", type: "png", site: "Add-in", cat: "Ribbon", sub: "Report Builder", report: "", ribbon: "Advanced", config: ""},
