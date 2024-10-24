@@ -373,63 +373,66 @@ def extract_links_from_content(file_content):
 
     while i < length:
         char = file_content[i]
+        print(f"i = {i}, char = {char}")
 
         # Check for the start of a URL
         if char == 'h' and i + 4 <= length and file_content[i:i + 4] in ['http', 'https']:
+            #print("found http link")
             # Extract the URL
             start = i
+            # This will signal the end of the url: whitespace, quotation mark, period followed by a whitespace
             while i < length and not (file_content[i].isspace() or 
                                     file_content[i] == '"' or
                                     (file_content[i] == '.' and (i + 1 >= length or file_content[i + 1].isspace()))):
                 i += 1
             
-            # Exclude the last quotation mark if it exists
-            # if i > start and file_content[i - 1] == '"':
-            #     links.append(file_content[start:i - 1])  # Exclude the last quote
-            # else:
             links.append(file_content[start:i])  # Include the URL as is
 
         # Check for bracketed links: [text](url)
         elif char == '[':
-            # print("found [")
-            i = i + 1
+            #print("found open bracket [")
+            i += 1
             # Find the closing bracket
-            # Ignore no text in brackets, e.g. []
+            # If there is text inside the brackets, e.g. [text]
             if i < length and file_content[i] != ']':
-                # print("found text in []")
-                start_bracket = i + 1
+                #print("found text in [brackets]")
+                start_bracket = i
                 end_bracket = file_content.find(']', start_bracket)
                 
+                # Found ending bracket
                 if end_bracket != -1:
-                    # print("found end bracket")
+                    #print("found end bracket")
                     # Check if the character following the closing bracket is an opening parenthesis
                     if end_bracket + 1 < length and file_content[end_bracket + 1] == '(':
-                        # print("( follows ]")
+                        #print("( follows ]")
                         # Find the opening parenthesis
                         start_parenthesis = end_bracket + 2  # Move to the character after '('
                         end_parenthesis = file_content.find(')', start_parenthesis)
                         
+                        # Found ending parenthesis
                         if end_parenthesis != -1:
-                            # print("found )")
+                            #print("found )")
                             # Extract the URL inside the parentheses
                             link = file_content[start_parenthesis:end_parenthesis]
                             links.append(link.strip())
                             # Move the index to the end of the parenthesis
                             i = end_parenthesis  # Move to the closing parenthesis
+                        # No closing parenthesis found, skip to the end of the bracket
                         else:
-                            # print("no ) found")
-                            # No closing parenthesis found, skip to the end of the bracket
-                            i = end_bracket
+                            #print("no ) found")
+                            i = end_bracket + 1
+                    # If no opening parenthesis found, just skip to the end of the bracket
                     else:
-                        # print("no ) found")
-                        # If no opening parenthesis found, just skip to the end of the bracket
-                        i = end_bracket
+                        #print("no ( found")
+                        i = end_bracket + 1
+                # No ending bracket found
                 else:
-                    # print("no ] found")
+                    #print("no ] found")
                     i += 1  # Just move forward if no closing bracket is found
 
         # Check for page links that start with '/w'
         elif char == '/' and file_content[i:i + 2] == '/w':
+            #print("found /w link")
             start = i
             while i < length and file_content[i] not in (' ', '\n', '.', ',', ')'):
                 i += 1
@@ -439,6 +442,7 @@ def extract_links_from_content(file_content):
         elif char == '#' and (i == 0 or file_content[i - 1] in [' ', '\n', '(', '[']):
             # Check for heading: skip if followed by another '#' or is the start of a heading
             if i + 1 < length and file_content[i + 1] not in (' ', '\n', '.', ',', ')'):
+                #print("found # link")
                 start = i
                 while i < length and file_content[i] not in (' ', '\n', '.', ',', ')'):
                     i += 1
@@ -446,7 +450,8 @@ def extract_links_from_content(file_content):
                 link = file_content[start:i]
                 if not link.startswith('#'):
                     links.append(link)
-
+            else:
+                i += 1 # Move to the next character
         else:
             i += 1  # Move to the next character
 
@@ -471,4 +476,4 @@ if __name__ == "__main__":
     root_folder = r"D:\Users\samuelr\Documents\GitHub\GoInterject.github.io"
     process_folder(root_folder)
 
-    print("Links extracted and update completed for all .md files.")
+    #print("Links extracted and update completed for all .md files.")
