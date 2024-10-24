@@ -13,6 +13,7 @@ import os
 import re
 
 def process_md_file(file_path):
+    print(f"Finding links in {file_path}")
     # Read the content of the Markdown file
     with open(file_path, 'r', encoding='utf-8') as file:
         raw_content = file.read()
@@ -378,39 +379,53 @@ def extract_links_from_content(file_content):
             # Extract the URL
             start = i
             while i < length and not (file_content[i].isspace() or 
-                                       (file_content[i] == '.' and (i + 1 >= length or file_content[i + 1].isspace())) or 
-                                       file_content[i] == '>'):
+                                    file_content[i] == '"' or
+                                    (file_content[i] == '.' and (i + 1 >= length or file_content[i + 1].isspace()))):
                 i += 1
-            links.append(file_content[start:i])
+            
+            # Exclude the last quotation mark if it exists
+            # if i > start and file_content[i - 1] == '"':
+            #     links.append(file_content[start:i - 1])  # Exclude the last quote
+            # else:
+            links.append(file_content[start:i])  # Include the URL as is
 
         # Check for bracketed links: [text](url)
         elif char == '[':
+            # print("found [")
+            i = i + 1
             # Find the closing bracket
             # Ignore no text in brackets, e.g. []
-            if i + 1 < length and file_content[i + 1] != ']':
+            if i < length and file_content[i] != ']':
+                # print("found text in []")
                 start_bracket = i + 1
                 end_bracket = file_content.find(']', start_bracket)
                 
                 if end_bracket != -1:
+                    # print("found end bracket")
                     # Check if the character following the closing bracket is an opening parenthesis
                     if end_bracket + 1 < length and file_content[end_bracket + 1] == '(':
+                        # print("( follows ]")
                         # Find the opening parenthesis
                         start_parenthesis = end_bracket + 2  # Move to the character after '('
                         end_parenthesis = file_content.find(')', start_parenthesis)
                         
                         if end_parenthesis != -1:
+                            # print("found )")
                             # Extract the URL inside the parentheses
                             link = file_content[start_parenthesis:end_parenthesis]
                             links.append(link.strip())
                             # Move the index to the end of the parenthesis
                             i = end_parenthesis  # Move to the closing parenthesis
                         else:
+                            # print("no ) found")
                             # No closing parenthesis found, skip to the end of the bracket
                             i = end_bracket
                     else:
+                        # print("no ) found")
                         # If no opening parenthesis found, just skip to the end of the bracket
                         i = end_bracket
                 else:
+                    # print("no ] found")
                     i += 1  # Just move forward if no closing bracket is found
 
         # Check for page links that start with '/w'
@@ -420,15 +435,22 @@ def extract_links_from_content(file_content):
                 i += 1
             links.append(file_content[start:i])
 
-        # Check for anchor links
+        # Check for anchor links, skipping headings
         elif char == '#' and (i == 0 or file_content[i - 1] in [' ', '\n', '(', '[']):
-            start = i
-            while i < length and file_content[i] not in (' ', '\n', '.', ',', ')'):
-                i += 1
-            links.append(file_content[start:i])
+            # Check for heading: skip if followed by another '#' or is the start of a heading
+            if i + 1 < length and file_content[i + 1] not in (' ', '\n', '.', ',', ')'):
+                start = i
+                while i < length and file_content[i] not in (' ', '\n', '.', ',', ')'):
+                    i += 1
+                # Add the anchor link found, but ensure it is not part of a heading
+                link = file_content[start:i]
+                if not link.startswith('#'):
+                    links.append(link)
 
         else:
             i += 1  # Move to the next character
+
+
 
     return links
 

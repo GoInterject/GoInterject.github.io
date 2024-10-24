@@ -17,6 +17,7 @@ def extract_headings(file_content):
     return [re.sub(r'^\s*#*\s*', '', heading.strip()) for heading in sum(headings, ()) if heading]
 
 def process_md_file(file_path):
+    print(f"Finding headings in {file_path}")
     # Read the content of the Markdown file
     with open(file_path, 'r', encoding='utf-8') as file:
         raw_content = file.read()

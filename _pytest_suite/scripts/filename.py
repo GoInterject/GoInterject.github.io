@@ -12,6 +12,7 @@ import os
 import re
 
 def process_md_file(file_path):
+    print(f"Finding filename in {file_path}")
     with open(file_path, 'r', encoding='utf-8') as file:
         raw_content = file.read()
 

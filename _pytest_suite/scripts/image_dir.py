@@ -35,6 +35,7 @@ def merge_root_and_sub_folder(image):
         return root_folder
 
 def process_md_file(file_path):
+    print(f"Finding image_dir in {file_path}")
     with open(file_path, 'r', encoding='utf-8') as file:
         raw_content = file.read()
 
