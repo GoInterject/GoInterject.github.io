@@ -1,7 +1,7 @@
 ---
-title: jMerge()
+title: ReportMerge()
 layout: custom
-filename: "jMerge.md"
+filename: "ReportMerge.md"
 keywords: []
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition"]
 links: []
@@ -31,7 +31,7 @@ This function is used to merge two workbooks into one. Add additional jMergePoin
  </tr>
  <tr>
 		<td class="pph"><b>If Blank</b></td>
-		<td>Function invalid</td>
+		<td>Does not concatenate any cells</td>
  </tr>
  </tbody>
 </table>
@@ -43,7 +43,7 @@ This function is used to merge two workbooks into one. Add additional jMergePoin
  <tbody>
  <tr>
 		<td class="pph"><b>Type</b></td>
-		<td>String</td>
+		<td>Cell/String</td>
  </tr>
  <tr>
 		<td class="pph"><b>Constraints</b></td>
@@ -51,7 +51,7 @@ This function is used to merge two workbooks into one. Add additional jMergePoin
  </tr>
  <tr>
 		<td class="pph"><b>If Blank</b></td>
-		<td>Function invalid</td>
+		<td>Does not concatenate any cells</td>
  </tr>
  </tbody>
 </table>
@@ -63,7 +63,7 @@ This function is used to merge two workbooks into one. Add additional jMergePoin
  <tbody>
  <tr>
 		<td class="pph"><b>Type</b></td>
-		<td>Range/String/Boolean</td>
+		<td>Cell/String</td>
  </tr>
  <tr>
 		<td class="pph"><b>Constraints</b></td>
@@ -76,13 +76,14 @@ This function is used to merge two workbooks into one. Add additional jMergePoin
  </tbody>
 </table>
 </div>
+
 <button class="collapsible-parameter">**PullOnOpen**<br>(Optional) Run a pull on the worksheet after opening. The default is false</button>
 <div markdown="1" class="panel-parameter">
 <table>
  <tbody>
  <tr>
 		<td class="pph"><b>Type</b></td>
-		<td>Range/String/Boolean</td>
+		<td>Cell/String</td>
  </tr>
  <tr>
 		<td class="pph"><b>Constraints</b></td>
@@ -95,13 +96,14 @@ This function is used to merge two workbooks into one. Add additional jMergePoin
  </tbody>
 </table>
 </div>
-<button class="collapsible-parameter">**MergePoints**<br>(Optional) Provde a range referece to a list of jMergePoint functions. If none is provided, then all jMergePoint functions within the book will be considered.</button>
+
+<button class="collapsible-parameter">**MergePoints**<br>(Optional) Provide a range reference to a list of jMergePoint functions. If none is provided, then all jMergePoint functions within the book will be considered.</button>
 <div markdown="1" class="panel-parameter">
 <table>
  <tbody>
  <tr>
 		<td class="pph"><b>Type</b></td>
-		<td>Range/String/Boolean</td>
+		<td>Cell/String</td>
  </tr>
  <tr>
 		<td class="pph"><b>Constraints</b></td>
@@ -120,7 +122,7 @@ This function is used to merge two workbooks into one. Add additional jMergePoin
  <tbody>
  <tr>
 		<td class="pph"><b>Type</b></td>
-		<td>Range/String/Boolean</td>
+		<td>Cell/String</td>
  </tr>
  <tr>
 		<td class="pph"><b>Constraints</b></td>

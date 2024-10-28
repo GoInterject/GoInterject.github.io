@@ -1,5 +1,5 @@
 ---
-title: 
+title: jCopy()
 layout: custom
 filename: "jCopy.md"
 keywords: []
@@ -13,10 +13,11 @@ description:
 
 ## Function Summary
 
+Used with a jAction, will copy values to a target cell. Can also be used to restrict the jAction event if the RequireValue parameter is used.
 
 ### Function Arguments
 
-<button class="collapsible-parameter">**Segment1-6**<br>desc</button>
+<button class="collapsible-parameter">**From**<br>desc</button>
 <div markdown="1" class="panel-parameter">
 <table>
  <tbody>
@@ -36,7 +37,27 @@ description:
 </table>
 </div>
 
-<button class="collapsible-parameter">**param**<br>desc</button>
+<button class="collapsible-parameter">**Target**<br>desc</button>
+<div markdown="1" class="panel-parameter">
+<table>
+ <tbody>
+ <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>Range/String/Boolean</td>
+ </tr>
+ <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>Max 255 char</td>
+ </tr>
+ <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Does not concatenate any cells</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<button class="collapsible-parameter">**RequireValue**<br>desc</button>
 <div markdown="1" class="panel-parameter">
 <table>
  <tbody>

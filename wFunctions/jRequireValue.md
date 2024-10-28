@@ -1,5 +1,5 @@
 ---
-title: 
+title: jRequireValue()
 layout: custom
 filename: "jRequireValue.md"
 keywords: []
@@ -13,10 +13,11 @@ description:
 
 ## Function Summary
 
+Can be used to restrict if a jAction is enabled unless the required value settings are true. Can also be performed within the jCopy function.
 
 ### Function Arguments
 
-<button class="collapsible-parameter">**Segment1-6**<br>desc</button>
+<button class="collapsible-parameter">**From**<br>desc</button>
 <div markdown="1" class="panel-parameter">
 <table>
  <tbody>
@@ -36,7 +37,7 @@ description:
 </table>
 </div>
 
-<button class="collapsible-parameter">**param**<br>desc</button>
+<button class="collapsible-parameter">**Value**<br>desc</button>
 <div markdown="1" class="panel-parameter">
 <table>
  <tbody>

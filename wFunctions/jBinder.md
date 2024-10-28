@@ -1,5 +1,5 @@
 ---
-title: 
+title: jBinder()
 layout: custom
 filename: "jBinder.md"
 keywords: []
@@ -13,10 +13,11 @@ description:
 
 ## Function Summary
 
+This function is used to mark tabs with settings that make the Binder feature easier to use and distributed to end users.
 
 ### Function Arguments
 
-<button class="collapsible-parameter">**Segment1-6**<br>desc</button>
+<button class="collapsible-parameter">**OptionName**<br>Enter the option name such as 'Default' or the dimension name to iterate through.</button>
 <div markdown="1" class="panel-parameter">
 <table>
  <tbody>
@@ -36,7 +37,7 @@ description:
 </table>
 </div>
 
-<button class="collapsible-parameter">**param**<br>desc</button>
+<button class="collapsible-parameter">**TargetCell**<br>When specifying dimensions to use, reference the cell that represents that dimension in the sheet.</button>
 <div markdown="1" class="panel-parameter">
 <table>
  <tbody>

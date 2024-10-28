@@ -1,7 +1,7 @@
 ---
-title: 
+title: GL/NGL()
 layout: custom
-filename: "jNavigate.md"
+filename: "GL.md"
 keywords: []
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition"]
 links: []

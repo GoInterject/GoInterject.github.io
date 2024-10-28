@@ -1,5 +1,5 @@
 ---
-title: 
+title: jRun()
 layout: custom
 filename: "jRun.md"
 keywords: []
@@ -13,10 +13,11 @@ description:
 
 ## Function Summary
 
+Used with a jAction, can trigger the action reports to run based on the selected range of the reports.
 
 ### Function Arguments
 
-<button class="collapsible-parameter">**Segment1-6**<br>desc</button>
+<button class="collapsible-parameter">**Target**<br>desc</button>
 <div markdown="1" class="panel-parameter">
 <table>
  <tbody>
@@ -36,7 +37,7 @@ description:
 </table>
 </div>
 
-<button class="collapsible-parameter">**param**<br>desc</button>
+<button class="collapsible-parameter">**Mode**<br>desc</button>
 <div markdown="1" class="panel-parameter">
 <table>
  <tbody>

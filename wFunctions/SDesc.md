@@ -16,7 +16,7 @@ description:
 
 ### Function Arguments
 
-<button class="collapsible-parameter">**Segment1-6**<br>desc</button>
+<button class="collapsible-parameter">**Value**<br>desc</button>
 <div markdown="1" class="panel-parameter">
 <table>
  <tbody>
@@ -36,7 +36,7 @@ description:
 </table>
 </div>
 
-<button class="collapsible-parameter">**param**<br>desc</button>
+<button class="collapsible-parameter">**SegmentNumber**<br>desc</button>
 <div markdown="1" class="panel-parameter">
 <table>
  <tbody>

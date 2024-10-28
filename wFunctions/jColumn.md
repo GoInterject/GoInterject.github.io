@@ -1,7 +1,7 @@
 ---
-title: jMerge()
+title: jColumn()
 layout: custom
-filename: "jMerge.md"
+filename: "jColumn.md"
 keywords: []
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition"]
 links: []
@@ -13,31 +13,11 @@ description:
 
 ## Function Summary
 
-This function is used to merge two workbooks into one. Add additional jMergePoint functions to indicate which tabs are merged and where to place them.
+Provides an easy way to define columns for financial/operational data.
 
 ### Function Arguments
 
-<button class="collapsible-parameter">**FileName**<br>Use the Report Library Sheet Link Code, or else a fully qualified path to the other Workbook.</button>
-<div markdown="1" class="panel-parameter">
-<table>
- <tbody>
- <tr>
-		<td class="pph"><b>Type</b></td>
-		<td>Cell/String</td>
- </tr>
- <tr>
-		<td class="pph"><b>Constraints</b></td>
-		<td>Max 255 char</td>
- </tr>
- <tr>
-		<td class="pph"><b>If Blank</b></td>
-		<td>Function invalid</td>
- </tr>
- </tbody>
-</table>
-</div>
-
-<button class="collapsible-parameter">**MergeID**<br>Use a unique ID to identify this jMerge. This is required to clear tabs.</button>
+<button class="collapsible-parameter">**Source**<br>Source relates to values such as Budget, Actual, Forecast.</button>
 <div markdown="1" class="panel-parameter">
 <table>
  <tbody>
@@ -51,13 +31,13 @@ This function is used to merge two workbooks into one. Add additional jMergePoin
  </tr>
  <tr>
 		<td class="pph"><b>If Blank</b></td>
-		<td>Function invalid</td>
+		<td></td>
  </tr>
  </tbody>
 </table>
 </div>
 
-<button class="collapsible-parameter">**RemoveTabsOnClear**<br>(Optional) Indicate whether to delete merged tabs when clearing data. The default is False. Otherwise enter 'True'. If true you must enter a MergeID parameter value.</button>
+<button class="collapsible-parameter">**Year**<br>Specify the year. Also accepts dates or YYYY-MM format for year</button>
 <div markdown="1" class="panel-parameter">
 <table>
  <tbody>
@@ -76,7 +56,8 @@ This function is used to merge two workbooks into one. Add additional jMergePoin
  </tbody>
 </table>
 </div>
-<button class="collapsible-parameter">**PullOnOpen**<br>(Optional) Run a pull on the worksheet after opening. The default is false</button>
+
+<button class="collapsible-parameter">**Period**<br>Period number relates to month (1 to 12) and also accepts date or YYYY-MM format for month. When Balance Type is QTR it relates to quarter (1 to 4)</button>
 <div markdown="1" class="panel-parameter">
 <table>
  <tbody>
@@ -95,7 +76,8 @@ This function is used to merge two workbooks into one. Add additional jMergePoin
  </tbody>
 </table>
 </div>
-<button class="collapsible-parameter">**MergePoints**<br>(Optional) Provde a range referece to a list of jMergePoint functions. If none is provided, then all jMergePoint functions within the book will be considered.</button>
+
+<button class="collapsible-parameter">**BalanceType**<br>[Optional] Specify a balance type. Accepts MTD, QTD, YTD and QTR. Blank defaults to MTD</button>
 <div markdown="1" class="panel-parameter">
 <table>
  <tbody>
@@ -114,7 +96,26 @@ This function is used to merge two workbooks into one. Add additional jMergePoin
  </tbody>
 </table>
 </div>
-<button class="collapsible-parameter">**Disabled**<br>(Optional) Function will not execute on pull if set to true. The default is false.</button>
+<button class="collapsible-parameter">**Version**<br>[Optional] Specify a version code if applicable</button>
+<div markdown="1" class="panel-parameter">
+<table>
+ <tbody>
+ <tr>
+		<td class="pph"><b>Type</b></td>
+		<td>Range/String/Boolean</td>
+ </tr>
+ <tr>
+		<td class="pph"><b>Constraints</b></td>
+		<td>Max 255 char</td>
+ </tr>
+ <tr>
+		<td class="pph"><b>If Blank</b></td>
+		<td>Does not concatenate any cells</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<button class="collapsible-parameter">**Segment 1-8**<br>[Optional] Specify Segment 1-8.</button>
 <div markdown="1" class="panel-parameter">
 <table>
  <tbody>

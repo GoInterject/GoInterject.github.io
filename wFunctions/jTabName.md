@@ -1,5 +1,5 @@
 ---
-title: 
+title: jTabName()
 layout: custom
 filename: "jTabName.md"
 keywords: []
@@ -13,36 +13,17 @@ description:
 
 ## Function Summary
 
+This function indicates the name of the worksheet tab for the specified range. If no range is given, it uses the current sheet.
 
 ### Function Arguments
 
-<button class="collapsible-parameter">**Segment1-6**<br>desc</button>
+<button class="collapsible-parameter">**Range**<br>(Optional) Enter a range in another sheet within this workbook. The jTabName formula will retain the name of that sheet.</button>
 <div markdown="1" class="panel-parameter">
 <table>
  <tbody>
  <tr>
 		<td class="pph"><b>Type</b></td>
 		<td>Cell/String</td>
- </tr>
- <tr>
-		<td class="pph"><b>Constraints</b></td>
-		<td>Max 255 char</td>
- </tr>
- <tr>
-		<td class="pph"><b>If Blank</b></td>
-		<td>Does not concatenate any cells</td>
- </tr>
- </tbody>
-</table>
-</div>
-
-<button class="collapsible-parameter">**param**<br>desc</button>
-<div markdown="1" class="panel-parameter">
-<table>
- <tbody>
- <tr>
-		<td class="pph"><b>Type</b></td>
-		<td>Range/String/Boolean</td>
  </tr>
  <tr>
 		<td class="pph"><b>Constraints</b></td>

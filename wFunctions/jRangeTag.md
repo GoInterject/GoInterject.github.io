@@ -12,6 +12,7 @@ description: The jRangeTag function simply tags a designated range with a name.
 * * *
 
 ##  Function Summary
+
 The jRangeTag function simply tags a designated range with a name. This is used to support certain automated processes unique to Interject functions, for example report distribution.
 
 For an example of this function, see [Lab Create: Basic Distribution](/wGetStarted/L-Export-BasicDist.html).
