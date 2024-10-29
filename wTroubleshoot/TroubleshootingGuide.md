@@ -4,7 +4,7 @@ filename: "TroubleshootingGuide.md"
 layout: custom
 keywords: [errors, solutions, fix]
 headings: ["Overview", "Error: Add-in Not Completely Loaded", "Error: Incompatible FIPS", "Error: Interject Web API Offline", "Error: Can't Install or Uninstall Interject", "Error: Interject Add-in Ribbon is Gone", "Error: Cannot Connect or Communicate With Interject Platform", "Error: Login Page Not Showing (ver 2.5+)", "Error: File Not Uploading Correctly to Report Library", "Error: Report Showing Incorrect Data or Data Missing"]
-links: ["https://portal.gointerject.com/download-interject.html", "/wDeveloper/TLS.html", "/wAbout/Enterprise-Login-Setup.html#ip-whitelisting", "https://support.microsoft.com/en-us/topic/fix-problems-that-block-programs-from-being-installed-or-removed-cca7d1b6-65a9-3d98-426b-e9f927e1eb4d", "/wTroubleshoot/CorruptedInstallation.html", "/wTroubleshoot/Addin-Missing.html", "/wAbout/Enterprise-Login-Setup.html#ip-whitelisting", "/wTroubleshoot/WebView2.html", "/wAbout/Enterprise-Login-Setup.html#ip-whitelisting", "https://live-interject-authapi.azurewebsites.net/", "https://live-interject-authapi.azurewebsites.net/.well-known/openid-configuration", "https://live-interject-authapi.azurewebsites.net/", "/wTroubleshoot/Cloud-File.html#solution-saving-to-local-drive", "/wTroubleshoot/Cloud-File.html#solution-uploading-as-a-website-link", "/wFunctions/Excel-Function-Index.html", "https://portal.gointerject.com/download-interject.html#additionalInstallers"]
+links: ["https://portal.gointerject.com/download-interject.html", "/wDeveloper/TLS.html", "/wDeveloper/Enterprise-Login-Setup.html#ip-whitelisting", "https://support.microsoft.com/en-us/topic/fix-problems-that-block-programs-from-being-installed-or-removed-cca7d1b6-65a9-3d98-426b-e9f927e1eb4d", "/wTroubleshoot/CorruptedInstallation.html", "/wTroubleshoot/Addin-Missing.html", "/wDeveloper/Enterprise-Login-Setup.html#ip-whitelisting", "/wTroubleshoot/WebView2.html", "/wDeveloper/Enterprise-Login-Setup.html#ip-whitelisting", "https://live-interject-authapi.azurewebsites.net/", "https://live-interject-authapi.azurewebsites.net/.well-known/openid-configuration", "https://live-interject-authapi.azurewebsites.net/", "/wTroubleshoot/Cloud-File.html#solution-saving-to-local-drive", "/wTroubleshoot/Cloud-File.html#solution-uploading-as-a-website-link", "/wFunctions/Excel-Function-Index.html", "https://portal.gointerject.com/download-interject.html#additionalInstallers"]
 image_dir: ""
 images: []
 description: This is a troubleshooting guide for the Interject Add-in. This resource is designed to help you navigate and resolve a variety of common issues you might encounter while using the Interject Add-in.
@@ -49,7 +49,7 @@ _"One or more of the Interject web apis are offline or could not be reached. The
 
 - <span style="color: red;">ISSUE:</span> The network may have a firewall policy blocking requests to Interject cloud services
 
-    <span style="color: green;">SOLUTION:</span> Review the URL's that must be [whitelisted](/wAbout/Enterprise-Login-Setup.html#ip-whitelisting) for Interject to work
+    <span style="color: green;">SOLUTION:</span> Review the URL's that must be [whitelisted](/wDeveloper/Enterprise-Login-Setup.html#ip-whitelisting) for Interject to work
 
 ### Error: Can't Install or Uninstall Interject
 
@@ -67,7 +67,7 @@ _"One or more of the Interject web apis are offline or could not be reached. The
 
 - <span style="color: red;">ISSUE:</span> Proxy network is blocking outgoing traffic
 
-    <span style="color: green;">SOLUTION:</span> [Whitelist](/wAbout/Enterprise-Login-Setup.html#ip-whitelisting) our auth API URL
+    <span style="color: green;">SOLUTION:</span> [Whitelist](/wDeveloper/Enterprise-Login-Setup.html#ip-whitelisting) our auth API URL
 
 ### Error: Login Page Not Showing (ver 2.5+)
 
@@ -81,7 +81,7 @@ _"One or more of the Interject web apis are offline or could not be reached. The
 
 - <span style="color: red;">ISSUE:</span> Firewall does not allow access to unapproved external services
 
-    <span style="color: green;">SOLUTION:</span> [Whitelist](/wAbout/Enterprise-Login-Setup.html#ip-whitelisting) our auth API URL
+    <span style="color: green;">SOLUTION:</span> [Whitelist](/wDeveloper/Enterprise-Login-Setup.html#ip-whitelisting) our auth API URL
 
 - <span style="color: red;">ISSUE:</span> The firewall does not register the Interject auth API domain as secure because the SSL Certificate is being assigned to the domain from a proxy.
 

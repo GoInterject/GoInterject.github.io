@@ -4,7 +4,7 @@ filename: "jFreezePanes.md"
 layout: custom
 keywords: [jFreezePanes, window, helper, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition"]
-links: ["/wGetStarted/Interject-Ribbon-Menu-Items.html#quick-tools", "/wGetStarted/L-Create-CustomerAging.html"]
+links: ["/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools", "/wGetStarted/L-Create-CustomerAging.html"]
 image_dir: ""
 images: []
 description: The jFreezePanes function freezes a designated pane so the user can scroll through data and still keep the frozen pane in view.
@@ -15,7 +15,7 @@ description: The jFreezePanes function freezes a designated pane so the user can
 
 The jFreezePanes function freezes a designated pane so the user can scroll through data and still keep the frozen pane in view. The function also hides a designated range of the report, typically the configuration section of an Interject report. This provides the user with a more user-friendly simplified viewing experience.
 
-This action can be triggered by the Freeze/UnFreeze Panes found in [Quick Tools](/wGetStarted/Interject-Ribbon-Menu-Items.html#quick-tools) on the Interject Ribbon Menu. There is also an option there to Freeze All Tabs, which will freeze all sheets containing the jFreezePanes function (it will not unfreeze the panes).
+This action can be triggered by the Freeze/UnFreeze Panes found in [Quick Tools](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools) on the Interject Ribbon Menu. There is also an option there to Freeze All Tabs, which will freeze all sheets containing the jFreezePanes function (it will not unfreeze the panes).
 
 For an example of this function, see [Lab Create: Customer Aging](/wGetStarted/L-Create-CustomerAging.html).
 

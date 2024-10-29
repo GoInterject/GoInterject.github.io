@@ -4,7 +4,7 @@ filename: "Developing-with-INTERJECT.md"
 layout: custom
 keywords: [develop, database, build, create, SQL]
 headings: ["Overview", "Interject Website Portal", "Defining Interject for Developers", "Simple Data Pull", "Advanced Data Pull", "Simple Data Save", "Security Best Practices", "Managing Settings Cache", "Error Handling"]
-links: ["mailto:info@gointerject.com", "https://www.microsoft.com/en-us/sql-server/sql-server-editions-express", "https://portal.gointerject.com", "/wPortal/Logging-In-to-Website-Portal.html", "/wDeveloper/INTERJECT-Website-Portal.html", "/wDeveloper/Defining-INTERJECT-for-Developers.html", "/wDeveloper/Simple-Data-Pull.html", "/wDeveloper/Advanced-Data-Pull.html", "/wGetStarted/Simple-Data-Save.html", "/wDeveloper/Security-Best-Practices.html", "/wDeveloper/Managing-Settings-Cache.html", "/wDeveloper/L-Dev-Error-Handling.html"]
+links: ["mailto:info@gointerject.com", "https://www.microsoft.com/en-us/sql-server/sql-server-editions-express", "https://portal.gointerject.com", "/wPortal/Logging-In-to-Website-Portal.html", "/wDeveloper/INTERJECT-Website-Portal.html", "/wDeveloper/Defining-INTERJECT-for-Developers.html", "/wDeveloper/Simple-Data-Pull.html", "/wDeveloper/Advanced-Data-Pull.html", "/wDeveloper/DataSave.html", "/wDeveloper/Security-Best-Practices.html", "/wDeveloper/Managing-Settings-Cache.html", "/wDeveloper/L-Dev-Error-Handling.html"]
 image_dir: ""
 images: []
 description: This section is for professional developers who create the data pathways for reports and applications that can edit data. To facilitate this section, we provide a sample database to assist in training.
@@ -35,7 +35,7 @@ To clearly illustrate the end-to-end workflow of developing a report, you can be
 
 Interject reports can handle a wide variety of complex reports. Up to this point you have seen simple reports where a single recordset is returned to single area of the spreadsheet. This topic will share advanced reporting configurations that use multiple recordsets and multiple Interject report formulas and supporting functions to construct advanced presentations.
 
-### [Simple Data Save](/wGetStarted/Simple-Data-Save.html)
+### [Data Save](/wDeveloper/DataSave.html)
 
 Interject allows for the editing of data and uploading those changes directly into the database it is connected to. This requires a different Data Portal.
 

@@ -5,7 +5,7 @@ layout: custom
 keywords: [Training, Capital, Capital Change Query]
 headings: ["Overview", "CCQuery", "ReviewDateSummary"]
 links: ["/bApps/InterjectTraining/Capital/CCQuery.html", "/bApps/InterjectTraining/Capital/ReviewDateSummary.html"]
-image_dir: "WCNTraining/Capital"
+image_dir: "WCNTraining"
 images: [
 	{file: "Capital/CapitalChangeQuery_ReportLibrary", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
 	]

@@ -4,7 +4,7 @@ filename: "ReportRange.md"
 layout: custom
 keywords: [ReportRange, range, function, formula, data, pull]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Embeddable Helper Functions"]
-links: ["/wGetStarted/L-Create-CustomerAging.html", "https://docs.gointerject.com/wFunctions/jDataPortal.html", "https://docs.gointerject.com/wFunctions/Param.html", "/wTroubleshoot/Reports.html#validation-report-for-pullsave-events", "/wGetStarted/L-Create-RetainFeature.html", "https://docs.gointerject.com/wFunctions/jCombine.html", "https://docs.gointerject.com/wFunctions/jCombine_If.html", "/wFunctions/jDataPortal.html", "/wFunctions/Param.html", "/wFunctions/jCombine.html", "/wFunctions/jCombine_IF.html"]
+links: ["/wGetStarted/L-Create-CustomerAging.html", "https://docs.gointerject.com/wFunctions/jDataPortal.html", "https://docs.gointerject.com/wFunctions/Param.html", "/wTroubleshoot/Reports.html#validation-report-for-interject-events", "/wGetStarted/L-Create-RetainFeature.html", "https://docs.gointerject.com/wFunctions/jCombine.html", "https://docs.gointerject.com/wFunctions/jCombine_If.html", "/wFunctions/jDataPortal.html", "/wFunctions/Param.html", "/wFunctions/jCombine.html", "/wFunctions/jCombine_IF.html"]
 image_dir: ""
 images: []
 description: The ReportRange function pulls data from a data source and inserts it into a single range within a spreadsheet.
@@ -108,7 +108,7 @@ For an example of this function, see [Lab Create: Customer Aging](/wGetStarted/L
     </tr>
     <tr>
 		<td class="pph"><b>Constraints</b></td>
-		<td>The values must match the order of the parameters in the data source (The order can be verified using the [Validation Report](/wTroubleshoot/Reports.html#validation-report-for-pullsave-events) )</td>
+		<td>The values must match the order of the parameters in the data source (The order can be verified using the [Validation Report](/wTroubleshoot/Reports.html#validation-report-for-interject-events) )</td>
     </tr>
     <tr>
 		<td class="pph"><b>If Blank</b></td>

@@ -4,7 +4,7 @@ filename: "Basics-of-Report-Formulas.md"
 layout: custom
 keywords: [report formula, column definitions, formatting range, hidden, parameters, notes]
 headings: ["Overview", "Accessing the Report Formulas", "Column Definitions", "Formatting Range", "Report Formulas", "Hidden Parameters and Notes"]
-links: ["/wAbout/Customer-Aging.html", "/wAbout/Report-Library-Basics.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#unfreeze", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wFunctions/Data-Functions-Landing.html", "/wFunctions/ReportDrill.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data", "/wFunctions/ReportSave.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html"]
+links: ["/wAbout/Customer-Aging.html", "/wAbout/Report-Library-Basics.html", "/wIndex/QuickTools-Panes.html#freezeunfreeze-panes", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wFunctions/Data-Functions-Landing.html", "/wFunctions/ReportDrill.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data", "/wFunctions/ReportSave.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html"]
 image_dir: "BasicsReportFormulas"
 images: [
 	{file: "01", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "Interject Customer Collections", ribbon: "Simple", config: ""}, 
@@ -47,7 +47,7 @@ When the report is opened it will be blank. It is ready for any filters before p
 ![](/images/BasicsReportFormulas/02.png)
 <br>
 
-**Step 2:** To see the formulas working behind Interject, you need to [Unfreeze](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#unfreeze) the panes hiding them. Select the View ribbon and select the **Freeze Panes** drop-down. Then choose the first operation, **Unfreeze Panes**.
+**Step 2:** To see the formulas working behind Interject, you need to [Unfreeze](/wIndex/QuickTools-Panes.html#freezeunfreeze-panes) the panes hiding them. Select the View ribbon and select the **Freeze Panes** drop-down. Then choose the first operation, **Unfreeze Panes**.
 
 ![](/images/BasicsReportFormulas/03.png)
 <br>
@@ -71,7 +71,7 @@ You have full control of what column labels that are shown in the reports. Notic
 ![](/images/BasicsReportFormulas/06.png)
 <br>
 
-**Step 2:** Now use [**Pull Data**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data)to see where the **CustomerID** data is populated.
+**Step 2:** Now use [**Pull Data**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.md#pull-data)to see where the **CustomerID** data is populated.
 
 ![](/images/BasicsReportFormulas/07.png)
 <br>

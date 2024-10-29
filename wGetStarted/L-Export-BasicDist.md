@@ -4,7 +4,7 @@ filename: "L-Export-BasicDist.md"
 layout: custom
 keywords: [basic, distribution, email, report, export, file, PDF, walkthrough]
 headings: ["Overview", "Create a Distribution From an Existing Report", "Distributing to a Folder", "Distributing With Email"]
-links: ["/wAbout/Financial-Report.html", "/wGetStarted/L-Export-AdvancedDist.html#Grouping-Segments", "https://portal.gointerject.com/profile.html", "/wGetStarted/L-Export-AdvancedDist.html"]
+links: ["/wAbout/Financial-Report.html", "/wGetStarted/L-Export-AdvancedDist.html#grouping-segments", "https://portal.gointerject.com/profile.html", "/wGetStarted/L-Export-AdvancedDist.html"]
 image_dir: "L-Export-BasicDist"
 images: [
 	{file: "01", type: "png", site: "Add-in", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, 
@@ -128,7 +128,7 @@ As the distribution process is running, it will display its activity and progres
 ![](/images/L-Export-BasicDist/12.png)
 <br>
 
-When the process is complete, the new workbook opens and the the original workbook is unchanged. Looking closer at what you created, the workbook below has 3 worksheets, and each worksheet has its own filter values as configured. You will notice that the worksheet names are simply incrementally numbers. You will cover how to custom name each tab in the next section, [Advanced Distribution](/wGetStarted/L-Export-AdvancedDist.html#Grouping-Segments) page.
+When the process is complete, the new workbook opens and the the original workbook is unchanged. Looking closer at what you created, the workbook below has 3 worksheets, and each worksheet has its own filter values as configured. You will notice that the worksheet names are simply incrementally numbers. You will cover how to custom name each tab in the next section, [Advanced Distribution](/wGetStarted/L-Export-AdvancedDist.html#grouping-segments) page.
 
 ![](/images/L-Export-BasicDist/13.png)
 <br>

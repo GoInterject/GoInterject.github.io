@@ -5,7 +5,7 @@ layout: custom
 keywords: [Training, Budget, Control Center]
 headings: ["Overview", "Accessing Templates from Control Center", "Lock Levels and District Position Assignment", "Contract Center Lock Status", "Budget Review Dates", "Review Dates Example", "AFTER CORP CUTOFF", "Budget Cutoff Sync Dates", "Drills", "Common Save Errors"]
 links: ["/bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html", "/bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html", "/bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html", "/bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html", "/bApps/InterjectTraining/Projections/ProjectionTemplate.html", "/bApps/InterjectTraining/Budget/BudgetTemplateSummary.html", "/bApps/InterjectTraining/Budget/BudgetChangeQuery_Summary.html", "/bApps/InterjectTraining/Budget/BudgetChangeQuery_Detail.html", "/bApps/InterjectTraining/Budget/BudgetChangeQuery_ReviewDateSummary.html", "/bApps/InterjectTraining/Capital/CapitalSummary.html", "/bApps/InterjectTraining/Capital/CapitalInput.html"]
-image_dir: "WCNTraining/Budget"
+image_dir: "WCNTraining"
 images: [
 	{file: "Budget/ControlCenter_ReportLibrary", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
 	{file: "Budget/ControlCenter_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 

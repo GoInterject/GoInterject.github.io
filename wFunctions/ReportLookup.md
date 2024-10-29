@@ -4,7 +4,7 @@ filename: "ReportLookup.md"
 layout: custom
 keywords: [ReportLookup, lookup, function, formula, data, pull]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Embeddable Helper Functions"]
-links: ["/wFunctions/jDataPortal.html", "https://docs.gointerject.com/wFunctions/jDataPortal.html", "https://docs.gointerject.com/wFunctions/Param.html", "/wTroubleshoot/Reports.html#validation-report-for-pullsave-events", "/wFunctions/jDataPortal.html", "/wFunctions/jDataPortal.html", "/wFunctions/Param.html"]
+links: ["/wFunctions/jDataPortal.html", "https://docs.gointerject.com/wFunctions/jDataPortal.html", "https://docs.gointerject.com/wFunctions/Param.html", "/wTroubleshoot/Reports.html#validation-report-for-interject-events", "/wFunctions/jDataPortal.html", "/wFunctions/jDataPortal.html", "/wFunctions/Param.html"]
 image_dir: ""
 images: []
 description: The ReportLookup function pulls a single piece of data from a data source and inserts it into a single cell within a spreadsheet.
@@ -87,7 +87,7 @@ The ReportLookup function pulls a single piece of data from a data source and in
     </tr>
     <tr>
 		<td class="pph"><b>Constraints</b></td>
-		<td>The values must match the order of the parameters in the data source (The order can be verified using the [Validation Report](/wTroubleshoot/Reports.html#validation-report-for-pullsave-events) )</td>
+		<td>The values must match the order of the parameters in the data source (The order can be verified using the [Validation Report](/wTroubleshoot/Reports.html#validation-report-for-interject-events) )</td>
     </tr>
     <tr>
 		<td class="pph"><b>If Blank</b></td>

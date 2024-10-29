@@ -210,7 +210,7 @@ Select
 	,@Interject_XMLDataToSave		as '@XMLDataToSave'
 
 
--- since all paramters are optional, you can also just ask for the values you need like below
+-- since all parameters are optional, you can also just ask for the values you need like below
 
 exec [dbo].[RequestContext_Parse]
 	@Interject_RequestContext		= @Interject_RequestContext

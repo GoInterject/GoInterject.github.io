@@ -4,7 +4,7 @@ filename: "Helper-Functions.md"
 layout: custom
 keywords: [helper, functions, formula]
 headings: ["Overview", "jDropdown", "jFocus", "jFreezePanes", "jCombine", "jCombineIf", "jDataPortal", "jColumnDef", "jRangeTag", "jWorkbookProperty", "jSetting", "Pair", "PairGroup", "Param"]
-links: ["/wFunctions/jDropdown.html", "/wFunctions/jFocus.html", "/wFunctions/jFreezePanes.html", "/wGetStarted/Interject-Ribbon-Menu-Items.html#quick-tools", "/wFunctions/jFreezePanes.html", "/wFunctions/jCombine.html", "/wFunctions/jCombine_IF.html", "/wFunctions/jDataPortal.html", "/wFunctions/jColumnDef.html", "/wFunctions/jRangeTag.html", "/wFunctions/jWorkbookProperty.html", "/wFunctions/jSetting.html", "/wFunctions/Pair.html", "/wFunctions/PairGroup.html", "/wFunctions/PairGroup.html", "/wFunctions/Pair.html", "/wFunctions/Param.html", "/wTroubleshoot/Reports.html#validation-report-for-pullsave-events"]
+links: ["/wFunctions/jDropdown.html", "/wFunctions/jFocus.html", "/wFunctions/jFreezePanes.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools", "/wFunctions/jFreezePanes.html", "/wFunctions/jCombine.html", "/wFunctions/jCombine_IF.html", "/wFunctions/jDataPortal.html", "/wFunctions/jColumnDef.html", "/wFunctions/jRangeTag.html", "/wFunctions/jWorkbookProperty.html", "/wFunctions/jSetting.html", "/wFunctions/Pair.html", "/wFunctions/PairGroup.html", "/wFunctions/PairGroup.html", "/wFunctions/Pair.html", "/wFunctions/Param.html", "/wTroubleshoot/Reports.html#validation-report-for-interject-events"]
 image_dir: ""
 images: []
 description: Helper Functions are functions that are often embedded into other parent functions to be leveraged into more specific and accurate functions or enhance their capabilities.
@@ -23,7 +23,7 @@ The jDropdown function returns data from a Data Portal that can be displayed in 
 
 ### [jFocus](/wFunctions/jFocus.html)
 
-The jFocus function will move the cursor and select a targeted range after a freeze panes action using Interject's Freeze/UnFreeze Panes action. The [jFreezePanes](/wFunctions/jFreezePanes.html) function must be set up for this to trigger. The Freeze/UnFreeze Panes action can be found in [Quick Tools](/wGetStarted/Interject-Ribbon-Menu-Items.html#quick-tools) on the Interject Ribbon Menu.
+The jFocus function will move the cursor and select a targeted range after a freeze panes action using Interject's Freeze/UnFreeze Panes action. The [jFreezePanes](/wFunctions/jFreezePanes.html) function must be set up for this to trigger. The Freeze/UnFreeze Panes action can be found in [Quick Tools](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools) on the Interject Ribbon Menu.
 
 ### [jFreezePanes](/wFunctions/jFreezePanes.html)
 
@@ -67,5 +67,5 @@ The PairGroup function will active all [Pair()](/wFunctions/Pair.html) functions
 
 ### [Param](/wFunctions/Param.html)
 
-The Param function transfers values as parameters to the Data Portal. The values must match the order of the parameters in the data source (The order can be verified using the [Validation Report](/wTroubleshoot/Reports.html#validation-report-for-pullsave-events) ).
+The Param function transfers values as parameters to the Data Portal. The values must match the order of the parameters in the data source (The order can be verified using the [Validation Report](/wTroubleshoot/Reports.html#validation-report-for-interject-events) ).
 

@@ -4,7 +4,7 @@ filename: "ReportVariable.md"
 layout: custom
 keywords: [ReportVariable, variable, function, formula, data, pull]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Embeddable Helper Functions"]
-links: ["/wFunctions/ReportFixed.html", "/wGetStarted/L-Create-InventoryVariable.html", "https://docs.gointerject.com/wFunctions/jDataPortal.html", "https://docs.gointerject.com/wFunctions/Param.html", "https://docs.gointerject.com/wTroubleshoot/Reports.html#validation-report-for-pullsave-events", "/wGetStarted/L-Create-RetainFeature.html", "https://docs.gointerject.com/wFunctions/jCombine.html", "https://docs.gointerject.com/wFunctions/jCombine_If.html", "/wFunctions/jDataPortal.html", "/wFunctions/Param.html", "/wFunctions/jCombine.html", "/wFunctions/jCombine_IF.html"]
+links: ["/wFunctions/ReportFixed.html", "/wGetStarted/L-Create-InventoryVariable.html", "https://docs.gointerject.com/wFunctions/jDataPortal.html", "https://docs.gointerject.com/wFunctions/Param.html", "https://docs.gointerject.com/wTroubleshoot/Reports.html#validation-report-for-interject-events", "/wGetStarted/L-Create-RetainFeature.html", "https://docs.gointerject.com/wFunctions/jCombine.html", "https://docs.gointerject.com/wFunctions/jCombine_If.html", "/wFunctions/jDataPortal.html", "/wFunctions/Param.html", "/wFunctions/jCombine.html", "/wFunctions/jCombine_IF.html"]
 image_dir: ""
 images: []
 description: The ReportVariable function pulls data from a data source and inserts it into a spreadsheet.
@@ -111,7 +111,7 @@ For an example of this function, see [Lab Create: Inventory Variable](/wGetStart
     </tr>
     <tr>
 		<td class="pph"><b>Constraints</b></td>
-		<td>The values must match the order of the parameters in the data source (The order can be verified using the <a href="https://docs.gointerject.com/wTroubleshoot/Reports.html#validation-report-for-pullsave-events">Validation Report</a>)</td>
+		<td>The values must match the order of the parameters in the data source (The order can be verified using the <a href="https://docs.gointerject.com/wTroubleshoot/Reports.html#validation-report-for-interject-events">Validation Report</a>)</td>
     </tr>
     <tr>
 		<td class="pph"><b>If Blank</b></td>

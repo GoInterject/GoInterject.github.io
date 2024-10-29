@@ -4,7 +4,7 @@ filename: "Working-with-INTERJECT.md"
 layout: custom
 keywords: [overview, report formulas, tabular cells, data cells]
 headings: ["Overview", "Basics of Report Formulas", "Tabular vs Data Cells"]
-links: ["/wAbout/Basics-of-Report-Formulas1.html", "/wAbout/Tabular-vs-Data-Cells.html"]
+links: ["/wAbout/Basics-of-Report-Formulas.html", "/wAbout/Tabular-vs-Data-Cells.html"]
 image_dir: ""
 images: []
 description: Since Interject introduces new methods and standards for working with spreadsheets, it is helpful to understand some key concepts so you can realize its potential.
@@ -15,7 +15,7 @@ description: Since Interject introduces new methods and standards for working wi
 
 Since Interject introduces new methods and standards for working with spreadsheets, it is helpful to understand some key concepts so you can realize its potential. The internet has proliferated the use of client/server web applications throughout the world, and it is time to apply this same way of thinking to spreadsheets. The following topics are helpful places to begin.
 
-### [Basics of Report Formulas](/wAbout/Basics-of-Report-Formulas1.html)
+### [Basics of Report Formulas](/wAbout/Basics-of-Report-Formulas.html)
 
 Report Formulas are used to direct data in and out of your spreadsheet reports and applications. This section will illustrate what is behind the scenes of interactive Interject worksheets so you can better understand how they adapt to your needs.
 

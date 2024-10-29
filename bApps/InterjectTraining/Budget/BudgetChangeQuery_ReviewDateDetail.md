@@ -5,7 +5,7 @@ layout: custom
 keywords: [Training, Budget, Budget Change Query]
 headings: ["Overview", "Review Type Options"]
 links: ["#review-type-options"]
-image_dir: "WCNTraining/Budget"
+image_dir: "WCNTraining"
 images: [
 	{file: "Budget/BudChangeQuery_ReviewDateDetail_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
 	{file: "Budget/BudChangeQuery_ReviewDateDetail_ReviewTypeDropDown", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}

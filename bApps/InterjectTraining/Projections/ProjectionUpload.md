@@ -5,7 +5,7 @@ layout: custom
 keywords: [Training, Projections, Projections Upload]
 headings: ["Overview", "Uploading to more than one district at a time", "Drop Projections numbers in without pulling first", "Do I have security rights to Save from the Projections Upload tab?", "Common Save Errors"]
 links: ["/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#projections-tools-and-the-control-center"]
-image_dir: "WCNTraining/Projections"
+image_dir: "WCNTraining"
 images: [
 	{file: "Projections/ProjectionUpload_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
 	{file: "Projections/ProjectionUpload_MultipleDistrictsPull", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 

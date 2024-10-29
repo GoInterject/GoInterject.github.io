@@ -5,7 +5,7 @@ layout: custom
 keywords: [Training, Capital, Capital Input]
 headings: ["Overview", "What is new?", "Summary Tab", "Bud Capital Input Tab", "Summary by PO Type Tab"]
 links: ["/bApps/InterjectTraining/Capital/CapitalSummary.html", "/bApps/InterjectTraining/Capital/CapitalInput.html", "/bApps/InterjectTraining/Capital/CapitalSummaryPOType.html"]
-image_dir: "WCNTraining/Capital"
+image_dir: "WCNTraining"
 images: [
 	{file: "Capital/CapitalBudgetInput_ReportLibrary", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
 	]

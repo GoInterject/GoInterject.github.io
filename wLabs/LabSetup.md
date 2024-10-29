@@ -4,7 +4,7 @@ filename: "LabSetup.md"
 layout: custom
 keywords: [lab, guide, manual setup, start, Northwind, database, FinCube, data cells]
 headings: ["Overview", "Interject Data Report Flow", "Manual Setup", "Step 1: Setting up the Database", "Step 2: Setting up the Data Connection", "Step 3: Setting up the Data Portals", "Step 4: Setting up FinCube", "Setting up the FinCube Data Connection", "Setting up the FinCube Data Portal", "Setting up the FinCube Data Cells Data Portals", "Step 5: The Report Files", "Step 6: Renaming the Data Portals"]
-links: ["/wLabs/lab.html", "/wIndex/Excel-Function-Index.html", "/wPortal/Data-Portals.html", "/wPortal/The-INTERJECT-Website-Portal.html", "#step-1-setting-up-the-database", "#step-2-setting-up-the-data-connection", "#step-3-setting-up-the-data-portals", "#step-4-setting-up-fincube", "#step-5-the-report-files", "#step-6-renaming-the-data-portals", "https://www.microsoft.com/en-us/sql-server/sql-server-downloads", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017", "https://portal.gointerject.com/", "/wPortal/The-INTERJECT-Website-Portal.html", "/wPortal/L-Database-Connection.html", "/wPortal/Data-Portals.html", "/wIndex/FinCubeTheFinancialCube.html", "https://data-api.gointerject.com/api", "/wAbout/Tabular-vs-Data-Cells.html", "/wIndex/Data-Cell-Functions.html"]
+links: ["/wLabs/lab.html", "/wFunctions/Excel-Function-Index.html", "/wPortal/Data-Portals.html", "/wPortal/The-INTERJECT-Website-Portal.html", "#step-1-setting-up-the-database", "#step-2-setting-up-the-data-connection", "#step-3-setting-up-the-data-portals", "#step-4-setting-up-fincube", "#step-5-the-report-files", "#step-6-renaming-the-data-portals", "https://www.microsoft.com/en-us/sql-server/sql-server-downloads", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017", "https://portal.gointerject.com/", "/wPortal/The-INTERJECT-Website-Portal.html", "/wPortal/L-Database-Connection.html", "/wPortal/Data-Portals.html", "/wIndex/FinCubeTheFinancialCube.html", "/wAbout/Tabular-vs-Data-Cells.html", "/wFunctions/Data-Cell-Functions.html"]
 image_dir: "LabSetupManual"
 images: [
 	{file: "FlowChart", type: "png", site: "External", cat: "Flow Chart", sub: "Data Report Flow", report: "", ribbon: "", config: ""}, 
@@ -23,7 +23,7 @@ The [Lab Guide](/wLabs/lab.html) provides a convenient way for users to become f
 
 ### Interject Data Report Flow
 
-The reports in the Lab Guide contain [Interject report formulas](/wIndex/Excel-Function-Index.html), each referencing a [Data Portal](/wPortal/Data-Portals.html) setup on the [Interject Portal Website](/wPortal/The-INTERJECT-Website-Portal.html). These Data Portals in turn reference a Data Connection and a Stored Procedure that point to a data source where the data will be pulled from. When the data source is a database, the entire flow can be conceptualized by the following diagram:
+The reports in the Lab Guide contain [Interject report formulas](/wFunctions/Excel-Function-Index.html), each referencing a [Data Portal](/wPortal/Data-Portals.html) setup on the [Interject Portal Website](/wPortal/The-INTERJECT-Website-Portal.html). These Data Portals in turn reference a Data Connection and a Stored Procedure that point to a data source where the data will be pulled from. When the data source is a database, the entire flow can be conceptualized by the following diagram:
 
 ![](/images/LabSetupManual/FlowChart.png)
 <br>
@@ -553,7 +553,7 @@ You can use the following settings for the FinCube Data Portal:
 
 #### Setting up the FinCube Data Cells Data Portals
 
-[Data Cells](/wAbout/Tabular-vs-Data-Cells.html) are a special type of cell that can directly pull data into the cell using the [Data Cell Functions](/wIndex/Data-Cell-Functions.html). Data Cells are used in Lab 7.1 Quick Export and PDF. In order for the Data Cells to work, there must be some Data Portals set up. All these Data Portals will use the FinCube Data Connection set up previously.
+[Data Cells](/wAbout/Tabular-vs-Data-Cells.html) are a special type of cell that can directly pull data into the cell using the [Data Cell Functions](/wFunctions/Data-Cell-Functions.html). Data Cells are used in Lab 7.1 Quick Export and PDF. In order for the Data Cells to work, there must be some Data Portals set up. All these Data Portals will use the FinCube Data Connection set up previously.
 
 The FinCube Data Portals must be set up for your particular Client profile. Therefore you will need your ClientID. This can be found by clicking **About Interject** on the Interject ribbon:
 

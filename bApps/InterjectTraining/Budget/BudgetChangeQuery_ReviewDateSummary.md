@@ -5,7 +5,7 @@ layout: custom
 keywords: [Training, Budget, Budget Change Query]
 headings: ["Overview", "District List", "Review Date Buckets", "Districts with Different Review Dates"]
 links: []
-image_dir: "WCNTraining/Budget"
+image_dir: "WCNTraining"
 images: [
 	{file: "Budget/BudChangeQuery_ReviewDateSummary_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
 	{file: "Budget/BudChangeQuery_ReviewDateSummary_DistrictList", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 

@@ -4,7 +4,7 @@ filename: "ReportFixed.md"
 layout: custom
 keywords: [ReportFixed, fixed, function, formula, data, pull]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Embeddable Helper Functions"]
-links: ["/wFunctions/ReportRange.html", "/wGetStarted/L-Create-InventoryFixed.html", "https://docs.gointerject.com/wFunctions/jDataPortal.html", "https://docs.gointerject.com/wFunctions/Param.html", "https://docs.gointerject.com/wTroubleshoot/Reports.html#validation-report-for-pullsave-events", "/wFunctions/jDataPortal.html", "/wFunctions/Param.html"]
+links: ["/wFunctions/ReportRange.html", "/wGetStarted/L-Create-InventoryFixed.html", "https://docs.gointerject.com/wFunctions/jDataPortal.html", "https://docs.gointerject.com/wFunctions/Param.html", "https://docs.gointerject.com/wTroubleshoot/Reports.html#validation-report-for-interject-events", "/wFunctions/jDataPortal.html", "/wFunctions/Param.html"]
 image_dir: ""
 images: []
 description: The ReportFixed function pulls data from a data source and inserts it into a spreadsheet.
@@ -89,7 +89,7 @@ For an example of this function, see [Create Inventory Fixed Lab.](/wGetStarted/
     </tr>
     <tr>
 		<td class="pph"><b>Constraints</b></td>
-		<td>The values must match the order of the parameters in the data source (The order can be verified using the <a href="https://docs.gointerject.com/wTroubleshoot/Reports.html#validation-report-for-pullsave-events">Validation Report</a>)</td>
+		<td>The values must match the order of the parameters in the data source (The order can be verified using the <a href="https://docs.gointerject.com/wTroubleshoot/Reports.html#validation-report-for-interject-events">Validation Report</a>)</td>
     </tr>
     <tr>
 		<td class="pph"><b>If Blank</b></td>

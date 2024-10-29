@@ -4,7 +4,7 @@ filename: "L-Create-CustomerAging.md"
 layout: custom
 keywords: [range, report, build, example, customer aging, northwind customers, walkthrough]
 headings: ["Overview", "Building the Report", "Getting Started", "Final Formatting", "Setting up jFreezePanes"]
-links: ["/wFunctions/ReportRange.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder", "/wApps/Common-Dataportal-Index.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wFunctions/jFreezePanes.html", "/wFunctions/jFocus.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools", "/wAbout/ReportLibraryLinks.html"]
+links: ["/wFunctions/ReportRange.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder", "/wIndex/Common-Dataportal-Index.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wFunctions/jFreezePanes.html", "/wFunctions/jFocus.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools", "/wAbout/ReportLibraryLinks.html"]
 image_dir: "L-Create-CustAging"
 images: [
 	{file: "01", type: "png", site: "Add-in", cat: "Report Builder", sub: "", report: "", ribbon: "Simple", config: ""}, 
@@ -46,7 +46,7 @@ In this page you will see the process of building a Customer Aging report from s
 
 ### Building the Report
 
-**Step 1:** This process begins with the Interject [Report Builder](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder). Open the Report Build as illustrated below. There is a drop down list of [Data Portals](/wApps/Common-Dataportal-Index.html) that can be chosen. An Interject Data Portal is a pre-configured data query that is setup so spreadsheet users can easily direct data into their own spreadsheet reports. Data Portals can be setup to access databases or cloud data and are either setup by Interject developers or your IT team.
+**Step 1:** This process begins with the Interject [Report Builder](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder). Open the Report Build as illustrated below. There is a drop down list of [Data Portals](/wIndex/Common-Dataportal-Index.html) that can be chosen. An Interject Data Portal is a pre-configured data query that is setup so spreadsheet users can easily direct data into their own spreadsheet reports. Data Portals can be setup to access databases or cloud data and are either setup by Interject developers or your IT team.
 
 ![](/images/L-Create-CustAging/01.png)
 <br>

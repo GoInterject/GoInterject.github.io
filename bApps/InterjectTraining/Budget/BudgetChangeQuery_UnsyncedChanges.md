@@ -5,7 +5,7 @@ layout: custom
 keywords: [Training, Budget, Budget Change Query, Unsynced]
 headings: ["Overview", "Latest Unsynced Change Info"]
 links: []
-image_dir: "WCNTraining/Budget"
+image_dir: "WCNTraining"
 images: [
 	{file: "Budget/BudChangeQuery_Unsynced_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
 	{file: "Budget/BudChangeQuery_Unsynced_ChangeInfo", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}

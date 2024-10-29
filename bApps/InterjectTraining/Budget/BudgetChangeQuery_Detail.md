@@ -5,7 +5,7 @@ layout: custom
 keywords: [Training, Budget, Budget Change Query]
 headings: ["Overview"]
 links: []
-image_dir: "WCNTraining/Budget"
+image_dir: "WCNTraining"
 images: [
 	{file: "Budget/BudChangeQuery_Detail_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
 	]

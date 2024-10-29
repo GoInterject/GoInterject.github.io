@@ -5,7 +5,7 @@ layout: custom
 keywords: [Training, Capital, Capital Summary by PO Type]
 headings: ["Overview", "Hidden Replacement Section"]
 links: []
-image_dir: "WCNTraining/Capital"
+image_dir: "WCNTraining"
 images: [
 	{file: "Capital/CapitalSummaryPOType_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
 	{file: "Capital/CapitalSummaryPOType_ReplacementSection", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}

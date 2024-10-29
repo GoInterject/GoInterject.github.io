@@ -4,7 +4,7 @@ filename: "Report-Library-Basics.md"
 layout: custom
 keywords: [report library, folder, link, version, resize, file, status, navigate, search]
 headings: ["Overview", "Opening The Report Library", "Resizing the Report Library", "The Report Library", "Folders Section", "Report Link Section", "Link Version Section", "Status", "Opening a Report", "Navigating the Report Library", "Using the Search Feature", "Using the keyboard", "Using the mouse", "Related Links"]
-links: ["/wAbout/Resizing-Form-Windows.html", "/wGetStarted/L-Create-UpdatingReportLibrary", "/wAbout/Logging-In.html", "/wAbout/Updating-Interject.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "/wAbout/Real-World-Walkthroughs.html", "/wAbout/Inventory-Reports.html"]
+links: ["/wAbout/Resizing-Form-Windows.html", "/wAbout/ReportLibraryLinks.html", "/wAbout/Logging-In.html", "/wAbout/Updating-Interject.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "/wAbout/Real-World-Walkthroughs.html", "/wAbout/Inventory-Reports.html"]
 image_dir: "ReportLibraryBasics"
 images: [
 	{file: "Ribbon", type: "png", site: "Add-in", cat: "Ribbon", sub: "Report Library", report: "", ribbon: "Simple", config: ""}, 
@@ -165,7 +165,7 @@ You may also download a .CSV file, which lists the ID, Report Path, Report Name,
 
 **Step 3:** Double-clicking on a link opens the report and keeps the Report Library open, while single-clicking the **Open Link** button will open the selected report and close Report Library
 
-For how to add or change files in the Report Library, please check out [Lab Create: Updating the Report Library](/wGetStarted/L-Create-UpdatingReportLibrary) .
+For how to add or change files in the Report Library, please check out [Report Library Links](/wAbout/ReportLibraryLinks.html) .
 
 ## Related Links
 

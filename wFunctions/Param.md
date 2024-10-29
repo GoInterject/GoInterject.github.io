@@ -4,7 +4,7 @@ filename: "Param.md"
 layout: custom
 keywords: [Param, helper, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Usable In These Functions"]
-links: ["/wTroubleshoot/Reports.html#validation-report-for-pullsave-events", "/wGetStarted/L-Drill-CustomerAging.html", "/wFunctions/ReportFixed.html", "/wFunctions/ReportLookup.html", "/wFunctions/ReportRange.html", "/wFunctions/ReportSave.html", "/wFunctions/ReportVariable.html", "/wFunctions/jDropdown.html"]
+links: ["/wTroubleshoot/Reports.html#validation-report-for-interject-events", "/wGetStarted/L-Drill-CustomerAging.html", "/wFunctions/ReportFixed.html", "/wFunctions/ReportLookup.html", "/wFunctions/ReportRange.html", "/wFunctions/ReportSave.html", "/wFunctions/ReportVariable.html", "/wFunctions/jDropdown.html"]
 image_dir: ""
 images: []
 description: The Param function transfers values as parameters to the Data Portal.
@@ -12,7 +12,7 @@ description: The Param function transfers values as parameters to the Data Porta
 * * *
 
 ##  Function Summary
-The Param function transfers values as parameters to the Data Portal. The values must match the order of the parameters in the data source (The order can be verified using the [Validation Report](/wTroubleshoot/Reports.html#validation-report-for-pullsave-events) ).
+The Param function transfers values as parameters to the Data Portal. The values must match the order of the parameters in the data source (The order can be verified using the [Validation Report](/wTroubleshoot/Reports.html#validation-report-for-interject-events) ).
 
 For an example of this function, see [Lab Drill: Customer Aging](/wGetStarted/L-Drill-CustomerAging.html).
 

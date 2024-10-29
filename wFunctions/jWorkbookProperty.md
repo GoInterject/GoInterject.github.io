@@ -4,7 +4,7 @@ filename: "jWorkbookProperty.md"
 layout: custom
 keywords: [jWorkbookProperty, helper, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Workbook Property List"]
-links: ["/wGetStarted/L-Create-InventoryFixed.html#jworkbookproperty", "/wAbout/Report-Library-Basics.html#using-the-report-library"]
+links: ["/wGetStarted/L-Create-InventoryFixed.html#jworkbookproperty", "/wAbout/Report-Library-Basics.html"]
 image_dir: ""
 images: []
 description: The jWorkbookProperty function extracts information from the properties of the workbook.
@@ -70,4 +70,4 @@ These are properties that can be extracted using this function. They are native 
  
 **Custom Workbook Properties**
 
-In addition to the native Excel properties, this function can also extract custom workbook properties. You can add or edit these properties in the Advanced Properties on the workbook's info page in settings. Interject utilizes these custom properties to store information about the workbook. These custom properties are displayed in the [Report Library](/wAbout/Report-Library-Basics.html#using-the-report-library) and can be extracted with this function (case-sensitive).
+In addition to the native Excel properties, this function can also extract custom workbook properties. You can add or edit these properties in the Advanced Properties on the workbook's info page in settings. Interject utilizes these custom properties to store information about the workbook. These custom properties are displayed in the [Report Library](/wAbout/Report-Library-Basics.html) and can be extracted with this function (case-sensitive).

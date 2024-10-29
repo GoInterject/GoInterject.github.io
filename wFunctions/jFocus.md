@@ -4,7 +4,7 @@ filename: "jFocus.md"
 layout: custom
 keywords: [jFocus, helper, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition"]
-links: ["/wFunctions/jFreezePanes.html", "/wGetStarted/Interject-Ribbon-Menu-Items.html#quick-tools", "/wGetStarted/L-Create-CustomerAging.html"]
+links: ["/wFunctions/jFreezePanes.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools", "/wGetStarted/L-Create-CustomerAging.html"]
 image_dir: ""
 images: []
 description: The jFocus function will move the cursor and select a targeted range after a freeze panes action using Interject's Freeze/UnFreeze Panes action.
@@ -13,7 +13,7 @@ description: The jFocus function will move the cursor and select a targeted rang
 
 ##  Function Summary
 
-The jFocus function will move the cursor and select a targeted range after a freeze panes action using Interject's Freeze/UnFreeze Panes action. The [jFreezePanes](/wFunctions/jFreezePanes.html) function must be set up for this to trigger. The Freeze/UnFreeze Panes action can be found in [Quick Tools](/wGetStarted/Interject-Ribbon-Menu-Items.html#quick-tools) on the Interject Ribbon Menu.
+The jFocus function will move the cursor and select a targeted range after a freeze panes action using Interject's Freeze/UnFreeze Panes action. The [jFreezePanes](/wFunctions/jFreezePanes.html) function must be set up for this to trigger. The Freeze/UnFreeze Panes action can be found in [Quick Tools](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools) on the Interject Ribbon Menu.
 
 For an example of this function, see [Lab Create: Customer Aging](/wGetStarted/L-Create-CustomerAging.html).
 

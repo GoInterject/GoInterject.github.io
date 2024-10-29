@@ -4,7 +4,7 @@ filename: "L-Create-PivotTable.md"
 layout: custom
 keywords: [pivot table, walkthrough]
 headings: ["Overview", "Building the Support Tab", "Building the Pivot Table", "Customizing the Pivot Table"]
-links: ["/wAbout/Customer-Aging.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wFunctions/ReportRun.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wAbout/Customer-Aging.html#CustomerAging-pivot"]
+links: ["/wAbout/Customer-Aging.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wFunctions/ReportRun.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wAbout/Customer-Aging.html#moving-to-a-pivot-table"]
 image_dir: "L-Create-PivotTable"
 images: [
 	{file: "01", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "Interject Customer Collections", ribbon: "Simple", config: ""}, 
@@ -213,4 +213,4 @@ Now you can see that the table only pulled data from transactions occurring in 1
 ![](/images/L-Create-PivotTable/26.png)
 <br>
 
-For more ways to work with a pivot table, see the [pivot table section](/wAbout/Customer-Aging.html#CustomerAging-pivot) on the customer aging walkthrough.
+For more ways to work with a pivot table, see the [pivot table section](/wAbout/Customer-Aging.html#moving-to-a-pivot-table) on the customer aging walkthrough.

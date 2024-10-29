@@ -5,7 +5,7 @@ layout: custom
 keywords: [Training, Capital, Projections Template]
 headings: ["Overview", "Projections Template", "Projections Upload Tool"]
 links: ["/bApps/InterjectTraining/Projections/ProjectionTemplate.html", "/bApps/InterjectTraining/Projections/ProjectionUpload.html"]
-image_dir: "WCNTraining/Projections"
+image_dir: "WCNTraining"
 images: [
 	{file: "Projections/ProjectionsTemplate_ReportLibrary", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
 	]

@@ -5,7 +5,7 @@ layout: custom
 keywords: [Training, Projections, Projection Change Query]
 headings: ["Overview", "Dynamic Columns", "Summary Tab", "Detail Tab", "Summary Last Save Tab", "Detail Last Save Tab"]
 links: []
-image_dir: "WCNTraining/Projections"
+image_dir: "WCNTraining"
 images: [
 	{file: "Projections/ProjectionsChangeQuery_ReportLibrary", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
 	{file: "Projections/ProjChangeQuery_Summary_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 

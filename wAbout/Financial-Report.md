@@ -4,7 +4,7 @@ filename: "Financial-Report.md"
 layout: custom
 keywords: [financial, PL Trend Report, drill, detail, JE transaction, JE lookup, JE Query, data cells, walkthrough]
 headings: ["Overview", "Navigating to the PLTrend Report", "Modifying the Report", "Grouped Detail in the Report", "Drill to JE-Transaction", "Drill Further Into JE-Lookup", "Report Example With Data Cells", "Related Links"]
-links: ["https://www.youtube.com/embed/13H24zWv7is", "/wAbout/Report-Library-Basics.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data", "/wFunctions/jCell.html", "/wFunctions/jAcct.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#pull-data", "/wFunctions/Data-Cell-Functions.html", "/wGetStarted/L-Modify-FinancialReport.html", "/wGetStarted/Creating-a-Simple-Report.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "/wAbout/Tabular-vs-Data-Cells.html", "/wFunctions/Data-Cell-Functions.html"]
+links: ["https://www.youtube.com/embed/13H24zWv7is", "/wAbout/Report-Library-Basics.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data", "/wFunctions/jCell.html", "/wFunctions/jAcct.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wFunctions/Data-Cell-Functions.html", "/wGetStarted/L-Modify-FinancialReport.html", "/wGetStarted/Creating-a-Simple-Report.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "/wAbout/Tabular-vs-Data-Cells.html", "/wFunctions/Data-Cell-Functions.html"]
 image_dir: "Walkthrough-Financial"
 images: [
 	{file: "01", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "PL Trend", ribbon: "Simple", config: ""}, 
@@ -191,7 +191,7 @@ Notice that these are the same accounts that makeup **Revenue - Sales** in the o
 ![](/images/Walkthrough-Financial/20.png)
 <br>
 
-**Step 4:** Now use the [**Pull Data**](/wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#pull-data) function. Ensure that the **"Calculate Data Cells"** is checked.
+**Step 4:** Now use the [**Pull Data**](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) function. Ensure that the **"Calculate Data Cells"** is checked.
 
 ![](/images/Walkthrough-Financial/21.png)
 <br>

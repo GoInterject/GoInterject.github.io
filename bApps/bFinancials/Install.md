@@ -4,8 +4,8 @@ filename: "Install.md"
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: ["Data Tier Install", "Initial Data Load", "FRx Database Migration", "Epicor Segment Assessment", "Application Install", "Security and Updates"]
-links: ["https://portal.gointerject.com", "https://docs.gointerject.com/bApps/bFinancials/Epicor-Financials.html", "/images/A-SQL-InitialDataLoad/MgtStudioPointTo.png"]
-image_dir: "A-SQL-InitialDataLoad"
+links: ["https://portal.gointerject.com", "https://docs.gointerject.com/bApps/bFinancials/Epicor-Financials.html"]
+image_dir: "A-SQL-Installation"
 images: [
 	{file: "MgtStudioPointTo", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
 	]
@@ -45,7 +45,7 @@ After gaining access as a new company, there are three parts to installing Inter
 >
 > **Step 3:** Make sure that the script is pointed to the database you just created, and execute the script
 >
-> ![Mgt Studio Point](/images/A-SQL-InitialDataLoad/MgtStudioPointTo.png)
+> ![Mgt Studio Point](/images/A-SQL-Installation/MgtStudioPointTo.png)
 >
 > **Step 4:** Execute initial deploy script on the new Interject Reporting Database
 >

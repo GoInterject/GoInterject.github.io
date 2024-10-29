@@ -5,7 +5,7 @@ layout: custom
 keywords: [Training, Budget, Control Center]
 headings: ["Overview", "Do I have security rights to use these tools?", "Budget Tools and the Control Center", "Capital Input Tool and the Control Center", "Projections Tools and the Control Center"]
 links: ["/bApps/InterjectTraining/Budget/ControlCenter.html", "/bApps/InterjectTraining/Budget/ControlCenter.html", "/bApps/InterjectTraining/Budget/ControlCenter.html"]
-image_dir: "WCNTraining/Budget"
+image_dir: "WCNTraining"
 images: [
 	{file: "Budget/CapitalInput_DPANavigation", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
 	{file: "Budget/CapitalInput_DPAWindow", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 

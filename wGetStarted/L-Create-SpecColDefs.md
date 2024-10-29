@@ -7,7 +7,7 @@ headings: ["Overview", "Special Cell Value Comment", "Special Cell Value Hyperli
 links: ["/wGetStarted/L-Modify-CustomerAging.html"]
 image_dir: "L-Create-SpecColDefs"
 images: [
-	{file: "00", type: "jpg", site: "Add-in", cat: "Report", sub: "", report: "Customer Credits", ribbon: "", config: ""}, 
+	{file: "00", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Customer Credits", ribbon: "", config: ""}, 
 	{file: "01", type: "jpg", site: "Add-in", cat: "Quick Tools", sub: "", report: "Customer Credits", ribbon: "Advanced", config: ""}, 
 	{file: "02", type: "jpg", site: "Add-in", cat: "Pull Data", sub: "", report: "Customer Credits", ribbon: "Advanced", config: ""}, 
 	{file: "03", type: "jpg", site: "Add-in", cat: "Report", sub: "", report: "Customer Credits", ribbon: "", config: ""}, 

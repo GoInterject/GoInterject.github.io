@@ -4,7 +4,7 @@ filename: "MacroSecurity.md"
 layout: custom
 keywords: [macro, security, sign key, VBA, checksum]
 headings: ["Overview", "Uploading A Macro File", "Opening A Macro File", "Security Settings", "Checking Settings", "File Extensions"]
-links: ["/wIndex/MacroSecurity#file-extensions", "/wIndex/MacroSecurity#file-extensions"]
+links: ["/wDeveloper/MacroSecurity.html#file-extensions", "/wDeveloper/MacroSecurity.html#file-extensions"]
 image_dir: "MacroSecurity"
 images: [
 	{file: "UploadMacroFile", type: "png", site: "External", cat: "Flow Chart", sub: "Uploading Macro File", report: "", ribbon: "", config: ""}, 
@@ -50,8 +50,8 @@ The macro security related settings are:
 | MacroFileSigningKey | A key that is used to digital sign the macro files. | Long string of characters |
 | FileSigningAPI | A link to an API that will digital sign the macro files. | URL Link |
 | FileSigningAPI_V2 | Currently not used. | URL Link |
-| AdditionalFileExtensionsAllowed | Allows a company to upload/open unauthorized file types | List of [File Extensions](/wIndex/MacroSecurity#file-extensions) (e.g.".ppt, .pptx")|
-| FileExtensionsNotAllowed | Prohibits a company to upload/open authorized file types | List of [File Extensions](/wIndex/MacroSecurity#file-extensions) (e.g. ".doc, .docx")|
+| AdditionalFileExtensionsAllowed | Allows a company to upload/open unauthorized file types | List of [File Extensions](/wDeveloper/MacroSecurity.html#file-extensions) (e.g.".ppt, .pptx")|
+| FileExtensionsNotAllowed | Prohibits a company to upload/open authorized file types | List of [File Extensions](/wDeveloper/MacroSecurity.html#file-extensions) (e.g. ".doc, .docx")|
 
 ### Checking Settings
 

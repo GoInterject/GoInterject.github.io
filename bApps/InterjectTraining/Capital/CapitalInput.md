@@ -4,8 +4,8 @@ filename: "CapitalInput.md"
 layout: custom
 keywords: [Training, Capital, Capital Input]
 headings: ["Overview", "To Delete PO Items", "Asset Information", "Replacement Info", "Do I have security rights to Save from this Input File?", "Drills", "Common Save Errors"]
-links: ["/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#the-capital-input-tool", "/bApps/InterjectTraining/Capital/CCQuery.html"]
-image_dir: "WCNTraining/Capital"
+links: ["/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#capital-input-tool-and-the-control-center", "/bApps/InterjectTraining/Capital/CCQuery.html"]
+image_dir: "WCNTraining"
 images: [
 	{file: "Capital/CapitalInput_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
 	{file: "Capital/CapitalInput_Delete", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
@@ -78,7 +78,7 @@ This hidden grouped section is for the Replacement Information. You will need to
 
 ## Do I have security rights to Save from this Input File?
 
-To find if you can save to the Capital Input Tool, please check out the [Tools Controlled by the Control Center](/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#the-capital-input-tool) page.
+To find if you can save to the Capital Input Tool, please check out the [Tools Controlled by the Control Center](/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#capital-input-tool-and-the-control-center) page.
 
 ## Drills
 

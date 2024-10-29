@@ -5,7 +5,7 @@ layout: custom
 keywords: [Training, Budget, Budget Template]
 headings: ["Overview", "Input Field Explanations", "Base Year and Fincube", "Retain Rows and how it works", "Summary and Detail level accounts", "Pulling Summary and Detail levels together", "Saving Summary and Detail levels together", "The Autocalcs", "Do I have security rights to Save from the Budget Template?", "Budget Template and the Control Center", "After Corp Cutoff and after BOD", "After Corp Cutoff", "After BOD", "Common Save Errors"]
 links: ["#base-year-and-fincube", "#retain-rows-and-how-it-works", "#summary-and-detail-level-accounts", "/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html", "/bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html", "/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html", "/bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html"]
-image_dir: "WCNTraining/Budget"
+image_dir: "WCNTraining"
 images: [
 	{file: "Budget/BudgetTemplate_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
 	{file: "Budget/BudgetTemplate_BaseYear01", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 

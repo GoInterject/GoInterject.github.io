@@ -5,7 +5,7 @@ layout: custom
 keywords: [Training, Capital, Summary Tab]
 headings: ["Overview", "Drills"]
 links: ["/bApps/InterjectTraining/Capital/CapitalInput.html", "/bApps/InterjectTraining/Capital/CCQuery.html"]
-image_dir: "WCNTraining/Capital"
+image_dir: "WCNTraining"
 images: [
 	{file: "Capital/CapitalSummary_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
 	{file: "Capital/CapitalSummary_DrillWindow", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 

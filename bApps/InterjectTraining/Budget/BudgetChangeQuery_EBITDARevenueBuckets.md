@@ -5,7 +5,7 @@ layout: custom
 keywords: [Training, Budget, Budget Change Query]
 headings: ["Overview"]
 links: ["/bApps/InterjectTraining/Budget/BudgetChangeQuery_ReviewDateSummary.html"]
-image_dir: "WCNTraining/Budget"
+image_dir: "WCNTraining"
 images: [
 	{file: "Budget/BudChangeQuery_EBITDARevenueBuckets_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
 	]
