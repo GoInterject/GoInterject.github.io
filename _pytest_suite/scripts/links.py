@@ -1,12 +1,15 @@
 # ADDS LINKS TO FRONT MATTER
 
-# Run this script when updating documentation links
+# Run this script when updating documentation links for a file or all files of a root folder
 
 # This script will search the root folder and all subfolders for .md files
 # Excludes the "_site" folder
 # Deletes the links entry in the Jekyll front matter if currently present
-# Finds all links in the file (as indicated by '[text](link)' or 'a href="url"' but not if the link starts with "/images")
-# Excludes references to the same page (as indicated by '[text](#link)')
+# Finds all links in the file (as indicated by '[text](link)' or 'a href="url"')
+# Valid links are preceded by '"', '[', or '('
+# Excludes links preceded by white space - these are explanatory links
+# Excludes links that start with "/images" - these are images
+# Excludes references to the same page (as indicated by '[text](#link)') - these are headings
 # Makes en entry of links in the Jekyll front matter after the headings entry
 
 import os
@@ -23,6 +26,8 @@ def process_md_file(file_path):
 
     # Extract links from the content
     links = extract_links_from_content(content)
+
+    links = clean_links(links)
 
     if links:
         # Use double quotes around each heading
@@ -47,6 +52,17 @@ def process_md_file(file_path):
     with open(file_path, 'w', encoding='utf-8') as file:
         file.write(front_matter)
 
+def clean_links(links):
+    cleaned_links = []
+    
+    for link in links:
+        # Remove trailing parentheses if they exist
+        while link.endswith(')'):
+            link = link[:-1]
+        cleaned_links.append(link)
+
+    return cleaned_links
+
 def extract_links_from_content(file_content):
     links = []
     length = len(file_content)
@@ -54,13 +70,14 @@ def extract_links_from_content(file_content):
 
     while i < length:
         char = file_content[i]
-        #print(f"i = {i}, char = {char}")
+        # print(f"i = {i}, char = {char}")
 
         # Check for the start of a URL
-        if char == 'h' and i + 4 <= length and file_content[i:i + 8] in ['http://', 'https://']:
-            #print("found http link")
+        if (char == '"' or char == '(') and i + 9 <= length and file_content[i+1:i + 9] in ['http://', 'https://']:
+            # print("found http link")
             # Extract the URL
-            start = i
+            start = i + 1
+            i += 1
             # This will signal the end of the url: whitespace, quotation mark, period followed by a whitespace
             while i < length and not (file_content[i].isspace() or 
                                     file_content[i] == '"' or
@@ -95,7 +112,8 @@ def extract_links_from_content(file_content):
                             #print("found )")
                             # Extract the URL inside the parentheses
                             link = file_content[start_parenthesis:end_parenthesis]
-                            links.append(link.strip())
+                            if not link.startswith("/images"): # exclude image links
+                                links.append(link.strip())
                             # Move the index to the end of the parenthesis
                             i = end_parenthesis  # Move to the closing parenthesis
                         # No closing parenthesis found, skip to the end of the bracket
@@ -111,9 +129,9 @@ def extract_links_from_content(file_content):
                     #print("no ] found")
                     i += 1  # Just move forward if no closing bracket is found
 
-        # Check for page links that start with '/w'
-        elif char == '/':
-            if file_content[i:i + 2] == '/w':
+        # Check for page links that start with (/w or "/b or "/w
+        elif char == '(/)':
+            if file_content[i:i + 2] == '/w' and file_content[i-1] == '(':
                 #print("found /w link")
                 start = i
                 while i < length and file_content[i] not in (' ', '\n', '.', ',', ')'):
@@ -152,11 +170,9 @@ def extract_links_from_content(file_content):
                 i += 1
             
             links.append(file_content[start:i])  # Include the URL as is
-
         
         else:
             i += 1  # Move to the next character
-
 
     return links
 

@@ -85,11 +85,11 @@ _"One or more of the Interject web apis are offline or could not be reached. The
 
 - <span style="color: red;">ISSUE:</span> The firewall does not register the Interject auth API domain as secure because the SSL Certificate is being assigned to the domain from a proxy.
 
-    <span style="color: blue;">TEST:</span> If you see an error when you navigate to https://live-interject-authapi.azurewebsites.net/.
+    <span style="color: blue;">TEST:</span> If you see an error when you navigate to (https://live-interject-authapi.azurewebsites.net/).
 
-    <span style="color: blue;">TEST:</span> Open https://live-interject-authapi.azurewebsites.net/.well-known/openid-configuration in the browser. View and verify the SSL certificate details: "Issued to = *.azurewebsites.net" and "Issued By = Microsoft Azure RSA TLS Issuing CA 08". If you see something else, the network is passing traffic to this domain through a proxy and overriding the SSL.
+    <span style="color: blue;">TEST:</span> Open (https://live-interject-authapi.azurewebsites.net/.well-known/openid-configuration) in the browser. View and verify the SSL certificate details: "Issued to = *.azurewebsites.net" and "Issued By = Microsoft Azure RSA TLS Issuing CA 08". If you see something else, the network is passing traffic to this domain through a proxy and overriding the SSL.
 
-    <span style="color: green;">SOLUTION:</span> Review your firewall and networking configuration to ensure https://live-interject-authapi.azurewebsites.net/ is not blocked.
+    <span style="color: green;">SOLUTION:</span> Review your firewall and networking configuration to ensure (https://live-interject-authapi.azurewebsites.net/) is not blocked.
 
     <span style="color: green;">SOLUTION:</span> Review your firewall and networking configuration to ensure your proxy is correctly handling the SSL certificate passthroughs for the Interject auth API domain.
 

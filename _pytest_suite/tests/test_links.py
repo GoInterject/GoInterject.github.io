@@ -1,7 +1,14 @@
+# SCRIPT IS A PYTEST
+# VALIDATES ALL LINKS IN DOCUMENTATION FOLDERS
+# EXTRACTS FROM THE FRONT MATTER: HEADINGS, IMAGES, AND LINKS
+# HEADINGS: CHECKS IF THAT HEADING EXISTS IN THE FILE
+# IMAGES: CHECKS IF THE IMAGE FILE EXISTS
+# LINKS: CHECK IF THE FILE EXISTS OR THE URL LINK IS VALID
+
 import os
 import logging
 import requests
-import yaml  # for parsing YAML front matter
+import yaml
 from enum import Enum
 import re
 
@@ -9,20 +16,23 @@ import re
 logger = logging.getLogger(__name__)
 global_headings_dict = {}
 global_front_matter = {}
+
 num_files_checked = 0
+num_file_errors = 0
 num_errors_url = 0
 num_errors_images = 0
 num_errors_files = 0
 num_errors_headings = 0
-num_file_errors = 0
-CHECK_IMAGES = False
-CHECK_FILES = False
-CHECK_HEADINGS = False # Headings will not be check if CHECK_FILES = False
-CHECK_FILES_IN_LINKS = False
-CHECK_HEADINGS_IN_LINKS = False # Headings in links will not be check if CHECK_FILES_IN_LINKS = False
+
+CHECK_IMAGES = True
+CHECK_FILES = True
+CHECK_HEADINGS = True # Headings will not be check if CHECK_FILES = False
+CHECK_FILES_IN_LINKS = True
+CHECK_HEADINGS_IN_LINKS = True # Headings in links will not be check if CHECK_FILES_IN_LINKS = False
 CHECK_URL_LINKS = True
 
 # ----------------------------------------------------------------------------------
+# These are the folders that will be checked
 class PageDirectories(Enum):
     WABOUT = "wAbout"
     WAPI = "wApi"
@@ -42,12 +52,8 @@ class PageDirectories(Enum):
     InterjectTRAININGWIP = "bApps\\InterjectTraining\\WIP"
 
 # ----------------------------------------------------------------------------------
-def prRed(skk): 
-    logger.error(skk)
-
-# ----------------------------------------------------------------------------------
-def get_par_dir(n, file):
-    """ returns n parent directory of file """
+def get_parent_dir(n, file):
+    """ returns parent directory of file """
     file_path = os.path.abspath(file)
     for i in range(n):
         file_path = os.path.dirname(file_path)
@@ -55,7 +61,7 @@ def get_par_dir(n, file):
 
 # ----------------------------------------------------------------------------------
 def get_root_dir():
-    root = get_par_dir(3, __file__)
+    root = get_parent_dir(3, __file__)
     return root
 
 # ----------------------------------------------------------------------------------
@@ -160,11 +166,30 @@ def verify_images_in_file(root_folder, file_path, image_dir, images) -> bool:
     return file_test_results
 
 # ----------------------------------------------------------------------------------
+def log_error(message):
+    logger.error(message)
+    return False
+
+# ----------------------------------------------------------------------------------
+def check_file_exists(linked_file_path, file_path):
+    if not os.path.exists(linked_file_path):
+        return log_error(f"FILE NOT FOUND: {linked_file_path} in file: {file_path}\n")
+    return True
+
+# ----------------------------------------------------------------------------------
+def check_heading_exists(linked_file_path, link_heading, file_path):
+    file_front_matter = global_front_matter.get(linked_file_path.replace('/', '\\'), {})
+    file_headings = file_front_matter.get("headings", [])
+    converted_file_headings = [convert_heading_to_anchor(h) for h in file_headings]
+
+    if link_heading and link_heading not in converted_file_headings:
+        return log_error(f"HEADING NOT FOUND: {linked_file_path}#{link_heading} in file: {file_path}\n")
+    return True
+
+# ----------------------------------------------------------------------------------
 def verify_links_in_file(root_folder, file_path, links, headings) -> bool:
     file_test_results = True
-    global num_errors_url
-    global num_errors_files
-    global num_errors_headings
+    global num_errors_url, num_errors_files, num_errors_headings
 
     # Create a list of converted headings
     converted_headings = [convert_heading_to_anchor(h) for h in headings]
@@ -173,84 +198,57 @@ def verify_links_in_file(root_folder, file_path, links, headings) -> bool:
         # Internal Heading link - check if heading exists
         if link.startswith("#") and CHECK_HEADINGS:
             anchor_link = link[1:]  # Remove the '#' character
-            
-            # Check if the anchor link exists in the converted headings
             if anchor_link not in converted_headings:
-                logger.error(f"HEADING NOT FOUND: {link} in file: {file_path}\n")
-                num_errors_headings = num_errors_headings + 1
-                file_test_results = False        
+                file_test_results = log_error(f"HEADING NOT FOUND: {link} in file: {file_path}\n")
+                num_errors_headings += 1
+
         # Internal Link - check if file exists
         elif link.startswith("/") and CHECK_FILES:
-            # Split the link on "#" to get the file path and heading separately
             base_link, separator, link_heading = link.partition("#")
             base_file_path = base_link[1:].replace(".html", ".md")
+            linked_file_path = os.path.normpath(os.path.join(root_folder, base_file_path))
 
-            # Construct the full path to the markdown file
-            linked_file_path = os.path.normpath(os.path.join(root_folder, base_file_path))            
-
-            # Check if the file exists
-            if not os.path.exists(linked_file_path):
+            if not check_file_exists(linked_file_path, file_path):
+                num_errors_files += 1
                 file_test_results = False
-                logger.error(f"FILE NOT FOUND: {linked_file_path} in file: {file_path}\n")
-                num_errors_files = num_errors_files + 1
-            # Check if the link heading exists
             elif link_heading and CHECK_HEADINGS:
-                file_front_matter = global_front_matter.get(linked_file_path.replace('/', '\\'), {})
-                file_headings = file_front_matter.get("headings", [])
-                converted_file_headings = [convert_heading_to_anchor(h) for h in file_headings]
-
-                # Check if the linked heading exists in the target file's headings
-                if link_heading and link_heading not in converted_file_headings:
-                    file_test_results = False
-                    logger.error(f"HEADING NOT FOUND: {linked_file_path}#{link_heading} in file: {file_path}\n")
-                    num_errors_headings = num_errors_headings + 1
+                file_test_results = check_heading_exists(linked_file_path, link_heading, file_path)
+                if not file_test_results:
+                    num_errors_headings += 1
 
         # External URL starts with http
         elif link.startswith("http"):
-            # If external url is an actual page in our docs, just check the local file
             base_url = "https://docs.gointerject.com"
             if link.startswith(base_url) and CHECK_FILES_IN_LINKS:
                 page_link = link[len(base_url):]
                 base_link, separator, link_heading = page_link.partition("#")
                 base_file_path = base_link[1:].replace(".html", ".md")
-
-                # Construct the full path to the markdown file
                 linked_file_path = os.path.normpath(os.path.join(root_folder, base_file_path))
 
-                if not os.path.exists(linked_file_path):
+                if not check_file_exists(linked_file_path, file_path):
+                    num_errors_files += 1
                     file_test_results = False
-                    logger.error(f"FILE IN LINK NOT FOUND: {linked_file_path} in file: {file_path}\n")
-                    num_errors_files = num_errors_files + 1
-
                 elif link_heading and CHECK_HEADINGS_IN_LINKS:
-                    file_front_matter = global_front_matter.get(linked_file_path.replace('/', '\\'), {})
-                    file_headings = file_front_matter.get("headings", [])
-                    converted_file_headings = [convert_heading_to_anchor(h) for h in file_headings]
-
-                    # Check if the linked heading exists in the target file's headings
-                    if link_heading and link_heading not in converted_file_headings:
-                        file_test_results = False
-                        logger.error(f"HEADING IN LINK NOT FOUND: {linked_file_path}#{link_heading} in file: {file_path}\n")
-                        num_errors_headings = num_errors_headings + 1
+                    file_test_results = check_heading_exists(linked_file_path, link_heading, file_path)
+                    if not file_test_results:
+                        num_errors_headings += 1
 
             # External URL - check HTTP response
             elif not link.startswith(base_url) and CHECK_URL_LINKS:
                 try:
                     response = requests.get(link, allow_redirects=True)
-                    if response.status_code == 401 or response.status_code == 403:
-                        logger.info(f" URL FOUND BUT NOT AUTHORIZED: {link} in file: {file_path}\n")
+                    if response.status_code in {401, 403}:
+                        logger.info(f"URL FOUND BUT NOT AUTHORIZED: {link} in file: {file_path}\n")
                     elif response.status_code != 200:
-                        file_test_results = False
-                        logger.error(f"URL NOT FOUND (Status Code: {response.status_code}): {link} in file: {file_path}\n")
+                        file_test_results = log_error(f"URL NOT FOUND (Status Code: {response.status_code}): {link} in file: {file_path}\n")
                         num_errors_url += 1
                 except requests.RequestException as e:
-                    file_test_results = False
-                    logger.error(f"URL Error while accessing URL: {link} in file: {file_path} - {str(e)}\n")
+                    file_test_results = log_error(f"URL Error while accessing URL: {link} in file: {file_path} - {str(e)}\n")
                     num_errors_url += 1
 
     return file_test_results
-# ----------------------------------------------------------------------------------
 
+# ----------------------------------------------------------------------------------
 def test_links():
     root = get_root_dir()
     extract_front_matter_from_files(root)

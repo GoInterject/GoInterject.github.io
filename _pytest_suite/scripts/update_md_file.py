@@ -21,10 +21,11 @@ if __name__ == "__main__":
     TAB_FOLDER = "\wAbout"
     # TAB_FOLDER = "\wLabs"
     # TAB_FOLDER = ""
+    # TAB_FOLDER = r"\bApps\bFinancials"
     # FILE = "L-Dev-ChangelogDataSave"
     # FILE = "Contributing"
     # FILE = "INTERJECT-Roles"
-    FILE = "SharedComputer"
+    FILE = "SingleUser"
     # FILE = "L-Dev-InsertDeleteDataSave"
     # FILE = "test"
     NEW_DOC_PAGE = True # Set to true will generate images entry from all images referenced in the file
