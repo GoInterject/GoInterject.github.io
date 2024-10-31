@@ -1,10 +1,12 @@
+# List of Interject formula doc pages to parse for metadata
+
 from enum import Enum
 
 class InterjectFormulas(Enum):
     REPORT_RANGE = "ReportRange.md"
     REPORT_FIXED = "ReportFixed.md"
-    REPORT_VARIABLE = "Report"
-    REPORT_LOOKUP = "Report"
+    REPORT_VARIABLE = "ReportVariable.md"
+    REPORT_LOOKUP = "ReportLookup.md"
     REPORT_SAVE = "ReportSave.md"
     REPORT_DRILL = "ReportDrill.md"
     REPORT_MACRO = "ReportMacro.md"
@@ -17,8 +19,8 @@ class InterjectFormulas(Enum):
     JFOCUS = "jFocus.md"
     JFREEZE_PANES = "jFreezePanes.md"
     JCOMBINE = "jCombine.md"
-    JCOMBINE_IF = "jCombineIF.md"
-    JCOMBINE_SMART = "jCombineSmart.md"
+    JCOMBINE_IF = "jCombine_IF.md"
+    JCOMBINE_SMART = "jCombine_Smart.md"
     JCOLUMN_DEF = "jColumnDef.md"
     JRANGE_TAG = "jRangeTag.md"
     JWORKBOOK_PROPERTY = "jWorkbookProperty.md"

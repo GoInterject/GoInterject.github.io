@@ -6,7 +6,7 @@
 import yaml
 import os
 import sys
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from utils.root_directory import get_root_dir
 
 # ---------------------------------------------------------------
@@ -20,7 +20,7 @@ FRONT_MATTER_FILEPATH = './_metadata/front_matter.yaml'
 # ---------------------------------------------------------------
 # METHODS
 # ---------------------------------------------------------------
-def extract_keywords(yaml_file, output_file):
+def extract_keywords(yaml_file):
     # Load the YAML file
     with open(yaml_file, 'r') as file:
         data = yaml.safe_load(file)
@@ -39,8 +39,15 @@ def extract_keywords(yaml_file, output_file):
 # MAIN
 # ---------------------------------------------------------------
 def main():
-    root_folder = get_root_dir(4)
+    root_folder = get_root_dir(3)
+
+    # Ensure the output folder exists
+    output_folder_path = os.path.join(root_folder, OUTPUT_FOLDER)
+    os.makedirs(output_folder_path, exist_ok=True)
+
+    # Define the output file path for saving the front matter
     full_output_filepath = os.path.join(root_folder, OUTPUT_FOLDER, OUTPUT_FILENAME)
+
     output_filepath = "./" + OUTPUT_FOLDER + "/" + OUTPUT_FILENAME
     unique_keywords = extract_keywords(FRONT_MATTER_FILEPATH)
 

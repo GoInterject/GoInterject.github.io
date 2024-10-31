@@ -11,8 +11,8 @@
 import os
 import yaml  # for parsing YAML front matter and saving the result
 import sys
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
-from utils.page_directories import PageDirectories
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from utils.doc_page_folder_list import PageDirectories
 from utils.root_directory import get_root_dir
 
 # ---------------------------------------------------------------

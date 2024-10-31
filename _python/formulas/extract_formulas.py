@@ -7,7 +7,7 @@ import json
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from utils.root_directory import get_root_dir
-from utils.formulas import InterjectFormulas
+from utils.formula_list import InterjectFormulas
 
 # ---------------------------------------------------------------
 # GLOBALS
@@ -58,8 +58,12 @@ def extract_json_from_file(filename):
         # Extract details from the table
         type_match = re.search(r'<b>Type</b></td>\s*<td>(.*?)</td>', param_details)
         if type_match:
-            # Split types if there are multiple
-            param_info["data_type"] = [t.strip() for t in re.split(r'[\/,]', type_match.group(1))]
+            # Clean the type string and split by '/'
+            types_raw = type_match.group(1)
+            # Remove HTML tags
+            types_cleaned = re.sub(r'<[^>]+>', '', types_raw)  # Remove all HTML tags
+            # Split by '/'
+            param_info["data_type"] = [t.strip() for t in types_cleaned.split('/') if t.strip()]
         
         constraints_match = re.search(r'<b>Constraints</b></td>\s*<td>(.*?)</td>', param_details)
         if constraints_match:
@@ -90,7 +94,6 @@ def extract_formulas(root_folder):
 
     for file in InterjectFormulas:
         file_path = os.path.join(root_folder, file.value)
-        print(f"file_path = {file_path}")
 
         with open(file_path, "r", encoding="utf-8") as file_handle:
             json_data = extract_json_from_file(file_path)

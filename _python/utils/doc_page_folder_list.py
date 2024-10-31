@@ -1,3 +1,5 @@
+# List of folders of doc pages to parse for metadata
+
 from enum import Enum
 
 class PageDirectories(Enum):

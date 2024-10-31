@@ -12,8 +12,8 @@ from bs4 import BeautifulSoup
 import json
 import html2text
 import sys
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
-from utils.page_directories import PageDirectories
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from utils.doc_page_folder_list import PageDirectories
 from utils.root_directory import get_root_dir
 
 # ---------------------------------------------------------------
@@ -94,8 +94,12 @@ def replace_strings_in_file(file_path, old_string, new_string):
 # ---------------------------------------------------------------
 def main():
     # The root directory of the documentation repo (i.e. gointerject.github.io)
-    root_folder = get_root_dir(4)
+    root_folder = get_root_dir(3)
     folder_to_search = os.path.join(root_folder, "_site")
+
+    # Ensure the output folder exists
+    output_folder_path = os.path.join(root_folder, OUTPUT_FOLDER)
+    os.makedirs(output_folder_path, exist_ok=True)
 
     # Define the output file path for saving the front matter
     full_output_filepath = os.path.join(root_folder, OUTPUT_FOLDER, OUTPUT_FILENAME)
