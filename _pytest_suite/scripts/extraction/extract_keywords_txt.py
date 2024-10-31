@@ -5,6 +5,9 @@
 # ---------------------------------------------------------------
 import yaml
 import os
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+from utils.root_directory import get_root_dir
 
 # ---------------------------------------------------------------
 # GLOBALS
@@ -16,19 +19,6 @@ FRONT_MATTER_FILEPATH = './_metadata/front_matter.yaml'
 
 # ---------------------------------------------------------------
 # METHODS
-# ---------------------------------------------------------------
-def get_par_dir(n, file):
-    """ returns n parent directory of file """
-    file_path = os.path.abspath(file)
-    for i in range(n):
-        file_path = os.path.dirname(file_path)
-    return file_path
-
-# ---------------------------------------------------------------
-def get_root_dir():
-    root = get_par_dir(4, __file__)
-    return root
-
 # ---------------------------------------------------------------
 def extract_keywords(yaml_file, output_file):
     # Load the YAML file
@@ -43,20 +33,22 @@ def extract_keywords(yaml_file, output_file):
         keywords = item.get('keywords', [])
         unique_keywords.update(keywords)
 
-    # Write unique keywords to output file
-    with open(output_file, 'w') as file:
-        for keyword in sorted(unique_keywords):
-            file.write(f"{keyword}\n")
+    return unique_keywords
 
 # ---------------------------------------------------------------
 # MAIN
 # ---------------------------------------------------------------
 def main():
-    root_folder = get_root_dir()
-    output_file = os.path.join(root_folder, OUTPUT_FOLDER, OUTPUT_FILENAME)
+    root_folder = get_root_dir(4)
+    full_output_filepath = os.path.join(root_folder, OUTPUT_FOLDER, OUTPUT_FILENAME)
     output_filepath = "./" + OUTPUT_FOLDER + "/" + OUTPUT_FILENAME
-    extract_keywords(FRONT_MATTER_FILEPATH, output_filepath)
-    print(f"  Keywords extracted and saved to {output_file}")
+    unique_keywords = extract_keywords(FRONT_MATTER_FILEPATH)
+
+    with open(output_filepath, 'w') as file:
+        for keyword in sorted(unique_keywords):
+            file.write(f"{keyword}\n")
+
+    print(f"  Keywords extracted and saved to {full_output_filepath}")
 
 if __name__ == "__main__":
     main()

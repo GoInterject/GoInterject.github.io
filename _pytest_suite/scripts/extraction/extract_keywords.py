@@ -6,6 +6,9 @@
 import yaml
 import json
 import os
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+from utils.root_directory import get_root_dir
 
 # ---------------------------------------------------------------
 # GLOBALS
@@ -18,19 +21,6 @@ KEYWORDS_FILEPATH = './_metadata/keywords.txt'
 
 # ---------------------------------------------------------------
 # METHODS
-# ---------------------------------------------------------------
-def get_par_dir(n, file):
-    """ returns n parent directory of file """
-    file_path = os.path.abspath(file)
-    for i in range(n):
-        file_path = os.path.dirname(file_path)
-    return file_path
-
-# ---------------------------------------------------------------
-def get_root_dir():
-    root = get_par_dir(4, __file__)
-    return root
-
 # ---------------------------------------------------------------
 def create_index(yaml_file, keywords_file, output_file):
     # Load the keywords from unique_keywords.txt
@@ -58,11 +48,12 @@ def create_index(yaml_file, keywords_file, output_file):
 # MAIN
 # ---------------------------------------------------------------
 def main():
-    root_folder = get_root_dir()
-    output_file = os.path.join(root_folder, OUTPUT_FOLDER, OUTPUT_FILENAME)
+    root_folder = get_root_dir(4)
+    full_output_filepath = os.path.join(root_folder, OUTPUT_FOLDER, OUTPUT_FILENAME)
     output_filepath = "./" + OUTPUT_FOLDER + "/" + OUTPUT_FILENAME
     create_index(FRONT_MATTER_FILEPATH, KEYWORDS_FILEPATH, output_filepath)
-    print(f"  Index created and saved to {output_file}")
+    print(f"  Index created and saved to {full_output_filepath}")
 
 if __name__ == "__main__":
     main()
+    

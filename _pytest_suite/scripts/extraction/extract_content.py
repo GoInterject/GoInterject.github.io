@@ -11,8 +11,10 @@ import os
 from bs4 import BeautifulSoup
 import json
 import html2text
-from page_directories import PageDirectories
-from root_directory import get_root_dir
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+from utils.page_directories import PageDirectories
+from utils.root_directory import get_root_dir
 
 # ---------------------------------------------------------------
 # GLOBALS
@@ -96,15 +98,15 @@ def main():
     folder_to_search = os.path.join(root_folder, "_site")
 
     # Define the output file path for saving the front matter
-    output_file = os.path.join(root_folder, OUTPUT_FOLDER, OUTPUT_FILENAME)
+    full_output_filepath = os.path.join(root_folder, OUTPUT_FOLDER, OUTPUT_FILENAME)
 
-    extract_content_from_pages(folder_to_search, output_file)
+    extract_content_from_pages(folder_to_search, full_output_filepath)
 
     # Replace strings in the file
     for i in range(len(OLD_STRINGS)):
-        replace_strings_in_file(output_file, OLD_STRINGS[i], NEW_STRINGS[i])
+        replace_strings_in_file(full_output_filepath, OLD_STRINGS[i], NEW_STRINGS[i])
 
-    print(f"  Index created and saved to {output_file}")
+    print(f"  Index created and saved to {full_output_filepath}")
 
 if __name__ == "__main__":
     main()

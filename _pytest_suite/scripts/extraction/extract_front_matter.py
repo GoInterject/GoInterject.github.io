@@ -10,8 +10,10 @@
 # ---------------------------------------------------------------
 import os
 import yaml  # for parsing YAML front matter and saving the result
-from page_directories import PageDirectories
-from root_directory import get_root_dir
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+from utils.page_directories import PageDirectories
+from utils.root_directory import get_root_dir
 
 # ---------------------------------------------------------------
 # GLOBALS
@@ -22,7 +24,28 @@ OUTPUT_FILENAME = 'front_matter.yaml'
 # ---------------------------------------------------------------
 # METHODS
 # ---------------------------------------------------------------
-def extract_front_matter(file_path):
+def extract_front_matter(root_folder):
+    global_front_matter = {}
+
+    for folder in PageDirectories:
+        dir_path = os.path.join(root_folder, folder.value)
+        if not os.path.exists(dir_path):
+            continue
+
+        for file_name in os.listdir(dir_path):
+            file_path = os.path.join(dir_path, file_name)
+            if not file_name.endswith(".md"):
+                continue
+
+            with open(file_path, "r", encoding="utf-8") as file_handle:
+                front_matter = extract_front_matter_from_file(file_path)
+                web_url = convert_to_url(file_path, root_folder)
+                global_front_matter[web_url] = front_matter
+    
+    return global_front_matter
+    
+# ---------------------------------------------------------------
+def extract_front_matter_from_file(file_path):
     """Extract front matter from a file content string."""
 
     with open(file_path, "r", encoding="utf-8") as file_handle:
@@ -62,34 +85,19 @@ def convert_to_url(file_path, root_folder):
 # MAIN
 # ---------------------------------------------------------------
 def main():
-    global_front_matter = {}
-    root_folder = get_root_dir(4)
-
-    for folder in PageDirectories:
-        dir_path = os.path.join(root_folder, folder.value)
-        if not os.path.exists(dir_path):
-            continue
-
-        for file_name in os.listdir(dir_path):
-            file_path = os.path.join(dir_path, file_name)
-            if not file_name.endswith(".md"):
-                continue
-
-            with open(file_path, "r", encoding="utf-8") as file_handle:
-                front_matter = extract_front_matter(file_path)
-                web_url = convert_to_url(file_path, root_folder)
-                global_front_matter[web_url] = front_matter
+    root_folder = get_root_dir(3)
+    global_front_matter = extract_front_matter(root_folder)
 
     # Ensure the output folder exists
     output_folder_path = os.path.join(root_folder, OUTPUT_FOLDER)
     os.makedirs(output_folder_path, exist_ok=True)
 
     # Define the output file path for saving the front matter
-    output_file = os.path.join(root_folder, OUTPUT_FOLDER, OUTPUT_FILENAME)
+    full_output_filepath = os.path.join(root_folder, OUTPUT_FOLDER, OUTPUT_FILENAME)
 
     # Save the global front matter dictionary to an external YAML file
-    save_front_matter_to_file(output_file, global_front_matter)
-    print(f"  Front matter saved to {output_file}")
+    save_front_matter_to_file(full_output_filepath, global_front_matter)
+    print(f"  Front matter saved to {full_output_filepath}")
 
 if __name__ == "__main__":
     main()
