@@ -10,13 +10,19 @@
 # Excludes links preceded by white space - these are explanatory links
 # Excludes links that start with "/images" - these are images
 # Excludes references to the same page (as indicated by '[text](#link)') - these are headings
-# Makes en entry of links in the Jekyll front matter after the headings entry
+# Makes an entry of links in the Jekyll front matter after the headings entry
 
+# ---------------------------------------------------------------
 import os
 import re
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from config import ROOT_FOLDER
 
+# ---------------------------------------------------------------
+# METHODS
+# ---------------------------------------------------------------
 def process_md_file(file_path):
-    print (f"Finding links in {file_path}")
     # Read the content of the Markdown file
     with open(file_path, 'r', encoding='utf-8') as file:
         raw_content = file.read()
@@ -52,6 +58,7 @@ def process_md_file(file_path):
     with open(file_path, 'w', encoding='utf-8') as file:
         file.write(front_matter)
 
+# ---------------------------------------------------------------
 def clean_links(links):
     cleaned_links = []
     
@@ -63,6 +70,7 @@ def clean_links(links):
 
     return cleaned_links
 
+# ---------------------------------------------------------------
 def extract_links_from_content(file_content):
     links = []
     length = len(file_content)
@@ -176,6 +184,7 @@ def extract_links_from_content(file_content):
 
     return links
 
+# ---------------------------------------------------------------
 def process_folder(folder_path):
     for root, dirs, files in os.walk(folder_path):
         if "_site" in dirs:
@@ -185,12 +194,7 @@ def process_folder(folder_path):
                 file_path = os.path.join(root, file_name)
                 process_md_file(file_path)
 
+# ---------------------------------------------------------------
 if __name__ == "__main__":
-    # Process all .md files in subfolders (excluding "_site")
-    # root_file = r"D:\Users\samuelr\Documents\GitHub\GoInterject.github.io\index.md"
-    # process_md_file(root_file)
-
-    root_folder = r"D:\Users\samuelr\Documents\GitHub\GoInterject.github.io"
-    process_folder(root_folder)
-
-    #print("Links extracted and update completed for all .md files.")
+    process_folder(ROOT_FOLDER)
+    print("  Links updated in front matter for all md files.")

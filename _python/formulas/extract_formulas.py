@@ -6,7 +6,7 @@ import re
 import json
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from utils.root_directory import get_root_dir
+from config import ROOT_FOLDER
 from utils.formula_list import InterjectFormulas
 
 # ---------------------------------------------------------------
@@ -106,15 +106,11 @@ def extract_formulas(root_folder):
 # MAIN
 # ---------------------------------------------------------------
 def main():
-    root_folder = get_root_dir(3)
-    root_functions_folder = os.path.join(root_folder, "wFunctions")
+    root_functions_folder = os.path.join(ROOT_FOLDER, "wFunctions")
 
-    input_filepath = os.path.join(root_folder, "wFunctions", FILENAME)
-    # print(F"input_file = {input_filepath}")
-
-    output_folder_path = os.path.join(root_folder, OUTPUT_FOLDER)
+    output_folder_path = os.path.join(ROOT_FOLDER, OUTPUT_FOLDER)
     os.makedirs(output_folder_path, exist_ok=True)
-    output_file = os.path.join(root_folder, OUTPUT_FOLDER, OUTPUT_FILENAME)
+    output_file = os.path.join(ROOT_FOLDER, OUTPUT_FOLDER, OUTPUT_FILENAME)
 
     # Run the function and print the JSON output
     json_output = extract_formulas(root_functions_folder)

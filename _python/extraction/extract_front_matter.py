@@ -13,7 +13,7 @@ import yaml  # for parsing YAML front matter and saving the result
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from utils.doc_page_folder_list import PageDirectories
-from utils.root_directory import get_root_dir
+from config import ROOT_FOLDER
 
 # ---------------------------------------------------------------
 # GLOBALS
@@ -24,11 +24,11 @@ OUTPUT_FILENAME = 'front_matter.yaml'
 # ---------------------------------------------------------------
 # METHODS
 # ---------------------------------------------------------------
-def extract_front_matter(root_folder):
+def extract_front_matter():
     global_front_matter = {}
 
     for folder in PageDirectories:
-        dir_path = os.path.join(root_folder, folder.value)
+        dir_path = os.path.join(ROOT_FOLDER, folder.value)
         if not os.path.exists(dir_path):
             continue
 
@@ -39,7 +39,7 @@ def extract_front_matter(root_folder):
 
             with open(file_path, "r", encoding="utf-8") as file_handle:
                 front_matter = extract_front_matter_from_file(file_path)
-                web_url = convert_to_url(file_path, root_folder)
+                web_url = convert_to_url(file_path, ROOT_FOLDER)
                 global_front_matter[web_url] = front_matter
     
     return global_front_matter
@@ -85,15 +85,14 @@ def convert_to_url(file_path, root_folder):
 # MAIN
 # ---------------------------------------------------------------
 def main():
-    root_folder = get_root_dir(3)
-    global_front_matter = extract_front_matter(root_folder)
+    global_front_matter = extract_front_matter()
 
     # Ensure the output folder exists
-    output_folder_path = os.path.join(root_folder, OUTPUT_FOLDER)
+    output_folder_path = os.path.join(ROOT_FOLDER, OUTPUT_FOLDER)
     os.makedirs(output_folder_path, exist_ok=True)
 
     # Define the output file path for saving the front matter
-    full_output_filepath = os.path.join(root_folder, OUTPUT_FOLDER, OUTPUT_FILENAME)
+    full_output_filepath = os.path.join(ROOT_FOLDER, OUTPUT_FOLDER, OUTPUT_FILENAME)
 
     # Save the global front matter dictionary to an external YAML file
     save_front_matter_to_file(full_output_filepath, global_front_matter)

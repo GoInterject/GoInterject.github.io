@@ -8,7 +8,7 @@ import json
 import os
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from utils.root_directory import get_root_dir
+from config import ROOT_FOLDER
 
 # ---------------------------------------------------------------
 # GLOBALS
@@ -48,14 +48,12 @@ def create_index(yaml_file, keywords_file, output_file):
 # MAIN
 # ---------------------------------------------------------------
 def main():
-    root_folder = get_root_dir(3)
-
     # Ensure the output folder exists
-    output_folder_path = os.path.join(root_folder, OUTPUT_FOLDER)
+    output_folder_path = os.path.join(ROOT_FOLDER, OUTPUT_FOLDER)
     os.makedirs(output_folder_path, exist_ok=True)
 
     # Define the output file path for saving the front matter
-    full_output_filepath = os.path.join(root_folder, OUTPUT_FOLDER, OUTPUT_FILENAME)
+    full_output_filepath = os.path.join(ROOT_FOLDER, OUTPUT_FOLDER, OUTPUT_FILENAME)
 
     output_filepath = "./" + OUTPUT_FOLDER + "/" + OUTPUT_FILENAME
     create_index(FRONT_MATTER_FILEPATH, KEYWORDS_FILEPATH, output_filepath)

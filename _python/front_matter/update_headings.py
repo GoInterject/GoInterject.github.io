@@ -8,16 +8,23 @@
 # Finds all headings in the file (as indicated by '##' or '###' or '####')
 # Makes en entry of headings in the Jekyll front matter after the keywords entry
 
+# ---------------------------------------------------------------
 import os
 import re
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from config import ROOT_FOLDER
 
+# ---------------------------------------------------------------
+# METHODS
+# ---------------------------------------------------------------
 def extract_headings(file_content):
     # Use regex to find headings (lines starting with ##, ###, ####)
     headings = re.findall(r'^##\s*(.*?)$|^###\s*(.*?)$|^####\s*(.*?)$', file_content, re.MULTILINE)
     return [re.sub(r'^\s*#*\s*', '', heading.strip()) for heading in sum(headings, ()) if heading]
 
+# ---------------------------------------------------------------
 def process_md_file(file_path):
-    print(f"Finding headings in {file_path}")
     # Read the content of the Markdown file
     with open(file_path, 'r', encoding='utf-8') as file:
         raw_content = file.read()
@@ -54,6 +61,7 @@ def process_md_file(file_path):
     with open(file_path, 'w', encoding='utf-8') as file:
         file.write(front_matter)
 
+# ---------------------------------------------------------------
 def process_folder(folder_path):
     for root, dirs, files in os.walk(folder_path):
         if "_site" in dirs:
@@ -63,10 +71,9 @@ def process_folder(folder_path):
                 file_path = os.path.join(root, file_name)
                 process_md_file(file_path)
 
+# ---------------------------------------------------------------
+# MAIN
+# ---------------------------------------------------------------
 if __name__ == "__main__":
-    root_folder = r"D:\Users\samuelr\Documents\GitHub\GoInterject.github.io"
-    
-    # Process all .md files in subfolders (excluding "_site")
-    process_folder(root_folder)
-    
-    print("Headings extracted and update completed for all .md files.")
+    process_folder(ROOT_FOLDER)
+    print("  Update headings in front matter for all md files.")

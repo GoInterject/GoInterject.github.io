@@ -8,9 +8,16 @@
 # Extracts the name of the directory used for images (root folder + sub folder if present)
 # Makes en entry of image_dir in the Jekyll front matter after the links entry
 
+# ---------------------------------------------------------------
 import os
 import re
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from config import ROOT_FOLDER
 
+# ---------------------------------------------------------------
+# METHODS
+# ---------------------------------------------------------------
 def extract_image_directory(file_content):
     # Regular expression pattern to find image references in the format ![anytext](/images/folder/filename)
     pattern = re.compile(r'!\[([^\]]*)\]\(/images/([^/]+/|)([^)]+)\)')
@@ -21,6 +28,7 @@ def extract_image_directory(file_content):
     else:
         return None
 
+# ---------------------------------------------------------------
 def merge_root_and_sub_folder(image):
     alt_text, sub_folder, filename = image
     root_folder = sub_folder.split('/')[0] if sub_folder else ""  # Extract root folder from subfolder
@@ -34,8 +42,8 @@ def merge_root_and_sub_folder(image):
     else:
         return root_folder
 
+# ---------------------------------------------------------------
 def process_md_file(file_path):
-    print(f"Finding image_dir in {file_path}")
     with open(file_path, 'r', encoding='utf-8') as file:
         raw_content = file.read()
 
@@ -61,6 +69,7 @@ def process_md_file(file_path):
     with open(file_path, 'w', encoding='utf-8') as file:
         file.write(front_matter)
 
+# ---------------------------------------------------------------
 def process_folder(folder_path):
     for root, dirs, files in os.walk(folder_path):
         if "_site" in dirs:
@@ -71,12 +80,9 @@ def process_folder(folder_path):
                 file_path = os.path.join(root, file_name)
                 process_md_file(file_path)
 
+# ---------------------------------------------------------------
+# MAIN
+# ---------------------------------------------------------------
 if __name__ == "__main__":
-
-    # Replace with the path to the folder containing .md files
-    folder_path = r"D:\Users\samuelr\Documents\GitHub\GoInterject.github.io"
-
-    # Process all .md files in subfolders
-    process_folder(folder_path)
-
-    print("Image directory extracted and update completed for all .md files.")
+    process_folder(ROOT_FOLDER)
+    print("  Updated image_dir in front matter for all md files.")
