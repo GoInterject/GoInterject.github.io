@@ -12,7 +12,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuerySummary
   - Detail Tab
   - Unsynced Changes Tab
   - EBITDA Revenue Buckets Tab
-  image_dir: WCNTraining/Budget
+  image_dir: WCNTraining
   images:
   - cat: ''
     config: ''
@@ -42,7 +42,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_Detail
   filename: BudgetChangeQuery_Detail.md
   headings:
   - Overview
-  image_dir: WCNTraining/Budget
+  image_dir: WCNTraining
   images:
   - cat: ''
     config: ''
@@ -64,7 +64,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_EBITDA
   filename: BudgetChangeQuery_EBITDAChangeHistory.md
   headings:
   - Overview
-  image_dir: WCNTraining/Budget
+  image_dir: WCNTraining
   images:
   - cat: ''
     config: ''
@@ -87,7 +87,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_EBITDA
   filename: BudgetChangeQuery_EBITDARevenueBuckets.md
   headings:
   - Overview
-  image_dir: WCNTraining/Budget
+  image_dir: WCNTraining
   images:
   - cat: ''
     config: ''
@@ -113,7 +113,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_Review
   headings:
   - Overview
   - Review Type Options
-  image_dir: WCNTraining/Budget
+  image_dir: WCNTraining
   images:
   - cat: ''
     config: ''
@@ -148,7 +148,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_Review
   - District List
   - Review Date Buckets
   - Districts with Different Review Dates
-  image_dir: WCNTraining/Budget
+  image_dir: WCNTraining
   images:
   - cat: ''
     config: ''
@@ -211,7 +211,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_Summar
   filename: BudgetChangeQuery_Summary.md
   headings:
   - Overview
-  image_dir: WCNTraining/Budget
+  image_dir: WCNTraining
   images:
   - cat: ''
     config: ''
@@ -236,7 +236,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_Unsync
   headings:
   - Overview
   - Latest Unsynced Change Info
-  image_dir: WCNTraining/Budget
+  image_dir: WCNTraining
   images:
   - cat: ''
     config: ''
@@ -306,7 +306,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplate.html:
   - After Corp Cutoff
   - After BOD
   - Common Save Errors
-  image_dir: WCNTraining/Budget
+  image_dir: WCNTraining
   images:
   - cat: ''
     config: ''
@@ -585,7 +585,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplateSummary.ht
   - Overview
   - Budget Template
   - Budget Upload Tool
-  image_dir: WCNTraining/Budget
+  image_dir: WCNTraining
   images:
   - cat: ''
     config: ''
@@ -615,7 +615,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetUpload.html:
   - Do I have security rights to Save from the Budget Upload tab?
   - After Corp Cutoff and after BOD
   - Common Save Errors
-  image_dir: WCNTraining/Budget
+  image_dir: WCNTraining
   images:
   - cat: ''
     config: ''
@@ -872,10 +872,10 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetUpload.html:
   layout: custom
   links:
   - /bApps/InterjectTraining/Budget/ControlCenterSecurity.html#budget-tools-and-the-control-center
-  - /bApps/InterjectTraining/Budget/BudgetChangeQueryToolSummary.html
+  - /bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html
   - /bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html
   - /bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html
-  - /bApps/InterjectTraining/Budget/BudgetChangeQueryToolSummary.html
+  - /bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html
   title: Budget Upload Tab
 www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
   description: This tool controls who has ability to save to Budgets and when the
@@ -893,7 +893,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html:
   - Budget Cutoff Sync Dates
   - Drills
   - Common Save Errors
-  image_dir: WCNTraining/Budget
+  image_dir: WCNTraining
   images:
   - cat: ''
     config: ''
@@ -1239,7 +1239,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenterSecurity.ht
   - Budget Tools and the Control Center
   - Capital Input Tool and the Control Center
   - Projections Tools and the Control Center
-  image_dir: WCNTraining/Budget
+  image_dir: WCNTraining
   images:
   - cat: ''
     config: ''
@@ -1388,7 +1388,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CCQuery.html:
   headings:
   - Overview
   - Summary Level Drop-Down
-  image_dir: WCNTraining/Capital
+  image_dir: WCNTraining
   images:
   - cat: ''
     config: ''
@@ -1429,7 +1429,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalChangeQueryTool.
   - Overview
   - CCQuery
   - ReviewDateSummary
-  image_dir: WCNTraining/Capital
+  image_dir: WCNTraining
   images:
   - cat: ''
     config: ''
@@ -1460,7 +1460,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInput.html:
   - Do I have security rights to Save from this Input File?
   - Drills
   - Common Save Errors
-  image_dir: WCNTraining/Capital
+  image_dir: WCNTraining
   images:
   - cat: ''
     config: ''
@@ -1708,7 +1708,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInput.html:
   - Capital Input
   layout: custom
   links:
-  - /bApps/InterjectTraining/Budget/ControlCenterSecurity.html#the-capital-input-tool
+  - /bApps/InterjectTraining/Budget/ControlCenterSecurity.html#capital-input-tool-and-the-control-center
   - /bApps/InterjectTraining/Capital/CCQuery.html
   title: Bud Capital Input Tab
 www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInputReport.html:
@@ -1721,7 +1721,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInputReport.html
   - Summary Tab
   - Bud Capital Input Tab
   - Summary by PO Type Tab
-  image_dir: WCNTraining/Capital
+  image_dir: WCNTraining
   images:
   - cat: ''
     config: ''
@@ -1760,7 +1760,6 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalModule.html:
   links:
   - /bApps/InterjectTraining/Capital/CapitalInputReport.html
   - /bApps/InterjectTraining/Capital/CapitalChangeQueryTool.html
-  - /bApps/InterjectTraining/Capital/CapitalExport.html
   title: Capital Module
 www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalSummary.html:
   description: This tab pulls in District Capital Summary totals by Period/Quarter.
@@ -1769,7 +1768,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalSummary.html:
   headings:
   - Overview
   - Drills
-  image_dir: WCNTraining/Capital
+  image_dir: WCNTraining
   images:
   - cat: ''
     config: ''
@@ -1819,7 +1818,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalSummary2.html:
   headings:
   - Overview
   - Drills
-  image_dir: WCNTraining/Capital
+  image_dir: WCNTraining
   images:
   - cat: ''
     config: ''
@@ -1874,7 +1873,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalSummaryPOType.ht
   headings:
   - Overview
   - Hidden Replacement Section
-  image_dir: WCNTraining/Capital
+  image_dir: WCNTraining
   images:
   - cat: ''
     config: ''
@@ -1906,7 +1905,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Capital/ReviewDateSummary.html:
   headings:
   - Overview
   - Capital and the Control Center
-  image_dir: WCNTraining/Capital
+  image_dir: WCNTraining
   images:
   - cat: ''
     config: ''
@@ -1953,7 +1952,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionChangeQue
   - Detail Tab
   - Summary Last Save Tab
   - Detail Last Save Tab
-  image_dir: WCNTraining/Projections
+  image_dir: WCNTraining
   images:
   - cat: ''
     config: ''
@@ -2018,7 +2017,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionTemplate.
   - The Autocalcs
   - Do I have security rights to Save from the Projections Template?
   - Common Save Errors
-  image_dir: WCNTraining/Projections
+  image_dir: WCNTraining
   images:
   - cat: ''
     config: ''
@@ -2254,7 +2253,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionTemplateS
   - Overview
   - Projections Template
   - Projections Upload Tool
-  image_dir: WCNTraining/Projections
+  image_dir: WCNTraining
   images:
   - cat: ''
     config: ''
@@ -2284,7 +2283,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionUpload.ht
   - Drop Projections numbers in without pulling first
   - Do I have security rights to Save from the Projections Upload tab?
   - Common Save Errors
-  image_dir: WCNTraining/Projections
+  image_dir: WCNTraining
   images:
   - cat: ''
     config: ''
@@ -2523,7 +2522,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html:
   - After Corp Cutoff
   - After BOD
   - Common Save Errors
-  image_dir: WCNTraining/Budget
+  image_dir: WCNTraining
   images:
   - cat: ''
     config: ''
@@ -2839,7 +2838,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
   - Budget Upload and the Control Center
   - After Corp Cutoff and after BOD
   - Common Save Errors
-  image_dir: WCNTraining/Budget
+  image_dir: WCNTraining
   images:
   - cat: ''
     config: ''
@@ -3143,10 +3142,10 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html:
   - Budget Upload Tab
   layout: custom
   links:
-  - /bApps/InterjectTraining/Budget/BudgetChangeQueryToolSummary.html
+  - /bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html
   - /bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html
   - /bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html
-  - /bApps/InterjectTraining/Budget/BudgetChangeQueryToolSummary.html
+  - /bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html
   title: Budget Upload Tab
 www.docs.gointerject.com/bApps/InterjectTraining/WIP/CCQuery_WIP.html:
   description: Pull in change history details for Capital.
@@ -3154,7 +3153,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/CCQuery_WIP.html:
   headings:
   - Overview
   - Summary Level Drop-Down
-  image_dir: WCNTraining/Capital
+  image_dir: WCNTraining
   images:
   - cat: ''
     config: ''
@@ -3213,7 +3212,7 @@ www.docs.gointerject.com/bApps/InterjectTraining/WIP/ReviewDateSummary_WIP.html:
   headings:
   - Overview
   - Capital and the Control Center
-  image_dir: WCNTraining/Capital
+  image_dir: WCNTraining
   images:
   - cat: ''
     config: ''
@@ -4019,7 +4018,7 @@ www.docs.gointerject.com/bApps/bFinancials/InitialDataLoad.html:
   - Begin Data Load
   - Steps Required for Interject Application Setup Data Connection
   - Redirect the DB Connection to the new DB in Interject portal
-  image_dir: Train
+  image_dir: A-InitialDataLoad
   images:
   - cat: ''
     config: ''
@@ -4092,17 +4091,9 @@ www.docs.gointerject.com/bApps/bFinancials/InitialDataLoad.html:
   - data
   layout: custom
   links:
-  - /images/Train/sample.png
   - https://docs.gointerject.com/bApps/bFinancials/DeactiveDB.html
   - https://portal.gointerject.com
-  - /images/A-InitialDataLoad/Login1.png
-  - /images/A-InitialDataLoad/changeco.png
-  - /images/A-InitialDataLoad/NewConnection0.png
-  - /images/A-SQL-Installation/NewConnections.png
-  - /images/Database/04.png
   - https://portal.gointerject.com
-  - /images/A-InitialDataLoad/MyApps.png
-  - /images/A-InitialDataLoad/ConnectionRedirect.png
   title: Initial Data Load
 www.docs.gointerject.com/bApps/bFinancials/Install.html:
   description: Step by step guide on data tier, initial data load, FRx Migration,
@@ -4115,7 +4106,7 @@ www.docs.gointerject.com/bApps/bFinancials/Install.html:
   - Epicor Segment Assessment
   - Application Install
   - Security and Updates
-  image_dir: A-SQL-InitialDataLoad
+  image_dir: A-SQL-Installation
   images:
   - cat: ''
     config: ''
@@ -4133,7 +4124,6 @@ www.docs.gointerject.com/bApps/bFinancials/Install.html:
   links:
   - https://portal.gointerject.com
   - https://docs.gointerject.com/bApps/bFinancials/Epicor-Financials.html
-  - /images/A-SQL-InitialDataLoad/MgtStudioPointTo.png
   title: Install
 www.docs.gointerject.com/bApps/bFinancials/Interject-Financials.html:
   description: Interject™ Financials for Epicor Enterprise (This would cover topics
@@ -4467,7 +4457,7 @@ www.docs.gointerject.com/bApps/bFinancials/PubReports.html:
   headings:
   - Publishing and Updating Report Templates in the Report Library
   - Updating Existing Report Templates
-  image_dir: Financials-TemplateSave
+  image_dir: PublishReports
   images:
   - cat: ''
     config: ''
@@ -4554,17 +4544,7 @@ www.docs.gointerject.com/bApps/bFinancials/PubReports.html:
   - Epicor
   - Accounts
   layout: custom
-  links:
-  - /images/Financials-TemplateSave/ReportSave1.png
-  - /images/Financials-TemplateSave/ReportSave2.png
-  - /images/Financials-TemplateSave/ReportSave3.png
-  - /images/Financials-TemplateSave/ReportSave4.png
-  - /images/Financials-TemplateSave/ReportSave5.png
-  - /images/Financials-TemplateSave/ReportSave6.png
-  - /images/Financials-TemplateUpdate/UpdateReport1.png
-  - /images/Financials-TemplateUpdate/UpdateReport2.png
-  - /images/Financials-TemplateUpdate/UpdateReport3.png
-  - /images/Financials-TemplateUpdate/UpdateReport4.png
+  links: []
   title: Publishing and Updating in the Report Library
 www.docs.gointerject.com/bApps/bFinancials/PullSave.html:
   description: Interject™ Financials for Epicor Enterprise The basics of pulling and
@@ -4596,9 +4576,7 @@ www.docs.gointerject.com/bApps/bFinancials/PullSave.html:
   - Epicor
   - Companies
   layout: custom
-  links:
-  - /images/Interject-Financials/InterjectFinancialsPull.png
-  - /images/InterjectRibbon/09.png
+  links: []
   title: Pull and Save Data
 www.docs.gointerject.com/bApps/bFinancials/Reference.html:
   description: Reference page for the Intuition Interject Deployment Plan
@@ -4809,7 +4787,7 @@ www.docs.gointerject.com/bApps/bFinancials/Support-Overview.html:
   - Accounts
   layout: custom
   links:
-  - https://docs.gointerject.comTroubleshoot/Troubleshooting-Landing.html#overview
+  - https://docs.gointerject.com/wTroubleshoot/Troubleshooting-Landing.html#overview
   title: Support Overview
 www.docs.gointerject.com/bApps/bFinancials/Technical-Install.html:
   description: After you get access to Interject, there are three parts to installing
@@ -5016,47 +4994,15 @@ www.docs.gointerject.com/bApps/bFinancials/The-Basics.html:
   images:
   - cat: ''
     config: ''
+    file: Pull
+    report: ''
+    ribbon: ''
+    site: ''
+    sub: ''
+    type: png
+  - cat: ''
+    config: ''
     file: InterjectFinancialsRbnMnu
-    report: ''
-    ribbon: ''
-    site: ''
-    sub: ''
-    type: png
-  - cat: ''
-    config: ''
-    file: InterjectFinancialsReportLib
-    report: ''
-    ribbon: ''
-    site: ''
-    sub: ''
-    type: png
-  - cat: ''
-    config: ''
-    file: InterjectFinancialsPull
-    report: ''
-    ribbon: ''
-    site: ''
-    sub: ''
-    type: png
-  - cat: ''
-    config: ''
-    file: 09
-    report: ''
-    ribbon: ''
-    site: ''
-    sub: ''
-    type: png
-  - cat: ''
-    config: ''
-    file: '11'
-    report: ''
-    ribbon: ''
-    site: ''
-    sub: ''
-    type: png
-  - cat: ''
-    config: ''
-    file: InterjectFinancialsDrill
     report: ''
     ribbon: ''
     site: ''
@@ -5067,13 +5013,7 @@ www.docs.gointerject.com/bApps/bFinancials/The-Basics.html:
   - Epicor
   - Accounts
   layout: custom
-  links:
-  - /images/Interject-Financials/InterjectFinancialsRbnMnu.png
-  - /images/Interject-Financials/InterjectFinancialsReportLib.png
-  - /images/Interject-Financials/InterjectFinancialsPull.png
-  - /images/InterjectRibbon/09.png
-  - /images/InterjectRibbon/11.png
-  - /images/Interject-Financials/InterjectFinancialsDrill.png
+  links: []
   title: Train
 www.docs.gointerject.com/bApps/bFinancials/TransactionReports.html:
   description: Step by step guide on using Interject Financials - Epicor Enterprise
@@ -5234,7 +5174,7 @@ www.docs.gointerject.com/bApps/bFinancials/Updates.html:
   - https://drive.google.com/file/d/18nGnIljPN9mgxxUaQRGMj5G7t1MBiUtH/view?usp=sharing
   - https://docs.gointerject.com/bApps/bFinancials/Technical-Install.html
   title: Interject Financials - Epicor - Update Manager
-www.docs.gointerject.comAbout/Basics-of-Report-Formulas.html:
+www.docs.gointerject.com/wAbout/Basics-of-Report-Formulas.html:
   description: At the top of Interject reports is a section called report formulas
     which handles the behavior of the report.
   filename: Basics-of-Report-Formulas.md
@@ -5378,7 +5318,7 @@ www.docs.gointerject.comAbout/Basics-of-Report-Formulas.html:
   links:
   - /wAbout/Customer-Aging.html
   - /wAbout/Report-Library-Basics.html
-  - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#unfreeze
+  - /wIndex/QuickTools-Panes.html#freezeunfreeze-panes
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data
   - /wFunctions/Data-Functions-Landing.html
   - /wFunctions/ReportDrill.html
@@ -5386,7 +5326,7 @@ www.docs.gointerject.comAbout/Basics-of-Report-Formulas.html:
   - /wFunctions/ReportSave.html
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html
   title: Basics of Report Formulas
-www.docs.gointerject.comAbout/Customer-Aging.html:
+www.docs.gointerject.com/wAbout/Customer-Aging.html:
   description: In this walkthrough, you will open a basic aging summary and modify
     it to fit your specific needs. You will then drill into the details tab, take
     notes on any unpaid invoices, then save them back to the database.
@@ -5633,7 +5573,7 @@ www.docs.gointerject.comAbout/Customer-Aging.html:
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data
   - /wAbout/Inventory-Reports.html
   title: Customer Aging
-www.docs.gointerject.comAbout/Financial-Report.html:
+www.docs.gointerject.com/wAbout/Financial-Report.html:
   description: This lab is for controllers or accountants who work with financial
     data and spreadsheets. In this walkthrough, you will open a Profit and Loss (PL)
     Trend report and drill into the supporting detail from the general ledger detail.
@@ -5880,7 +5820,7 @@ www.docs.gointerject.comAbout/Financial-Report.html:
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data
   - /wFunctions/jCell.html
   - /wFunctions/jAcct.html
-  - /wGetStarted/INTERJECT-Ribbon-Menu-Items_83689479.html#pull-data
+  - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data
   - /wFunctions/Data-Cell-Functions.html
   - /wGetStarted/L-Modify-FinancialReport.html
   - /wGetStarted/Creating-a-Simple-Report.html
@@ -5888,7 +5828,7 @@ www.docs.gointerject.comAbout/Financial-Report.html:
   - /wAbout/Tabular-vs-Data-Cells.html
   - /wFunctions/Data-Cell-Functions.html
   title: Financial Report
-www.docs.gointerject.comAbout/Inventory-Reports.html:
+www.docs.gointerject.com/wAbout/Inventory-Reports.html:
   description: This lab is a basic inventory example for tracking product quantities.
     In this walkthrough, you will open a summary of our product categories and total
     quantities. You will then drill into the Inventory Detail tab to view specific
@@ -6030,7 +5970,7 @@ www.docs.gointerject.comAbout/Inventory-Reports.html:
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html
   - /wGetStarted/L-Modify-InventoryReport.html
   title: Inventory Reports
-www.docs.gointerject.comAbout/Logging-In-Enterprise.html:
+www.docs.gointerject.com/wAbout/Logging-In-Enterprise.html:
   description: Logging in is simple and fast! Interject will remember your login and
     sign you in automatically subsequent visits.You can also add multiple logins and
     switch accounts easily.
@@ -6177,10 +6117,10 @@ www.docs.gointerject.comAbout/Logging-In-Enterprise.html:
   - user
   layout: custom
   links:
-  - https://docs.gointerject.comIndex/Diagnostics-SpecialFeatures.html#webview2browser-login
+  - https://docs.gointerject.com/wIndex/Diagnostics-SpecialFeatures.html#webview2browser-login
   - '#initial-enterprise-login'
   title: 'Logging In/Out: Enterprise User'
-www.docs.gointerject.comAbout/Logging-In.html:
+www.docs.gointerject.com/wAbout/Logging-In.html:
   description: Logging in is simple and fast! Interject will remember your login and
     sign you in automatically subsequent visits. You can also add multiple logins
     and switch accounts easily.
@@ -6301,10 +6241,10 @@ www.docs.gointerject.comAbout/Logging-In.html:
   - user
   layout: custom
   links:
-  - https://docs.gointerject.comIndex/Diagnostics-SpecialFeatures.html#webview2browser-login
+  - https://docs.gointerject.com/wIndex/Diagnostics-SpecialFeatures.html#webview2browser-login
   - '#initial-interject-login'
   title: 'Logging In/Out: Individual User'
-www.docs.gointerject.comAbout/Real-World-Use-Cases.html:
+www.docs.gointerject.com/wAbout/Real-World-Use-Cases.html:
   description: Real world use cases for the Interject product.
   filename: Real-World-Use-Cases.md
   headings:
@@ -6327,7 +6267,7 @@ www.docs.gointerject.comAbout/Real-World-Use-Cases.html:
   layout: custom
   links: []
   title: Real World Use Cases
-www.docs.gointerject.comAbout/Real-World-Walkthroughs.html:
+www.docs.gointerject.com/wAbout/Real-World-Walkthroughs.html:
   description: Real world use cases for the Interject product.
   filename: Real-World-Walkthroughs.md
   headings:
@@ -6345,7 +6285,7 @@ www.docs.gointerject.comAbout/Real-World-Walkthroughs.html:
   - /wAbout/Inventory-Reports.html
   - /wAbout/Financial-Report.html
   title: Real-World Walkthroughs
-www.docs.gointerject.comAbout/Report-Library-Basics.html:
+www.docs.gointerject.com/wAbout/Report-Library-Basics.html:
   description: The Report Library is a way for your team to share reports from a central
     location going beyond just a Sharepoint or a Shared Network Folder.The reports
     are uploaded to the library and can be accessed from any computer using Excel
@@ -6501,14 +6441,14 @@ www.docs.gointerject.comAbout/Report-Library-Basics.html:
   layout: custom
   links:
   - /wAbout/Resizing-Form-Windows.html
-  - /wGetStarted/L-Create-UpdatingReportLibrary
+  - /wAbout/ReportLibraryLinks.html
   - /wAbout/Logging-In.html
   - /wAbout/Updating-Interject.html
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html
   - /wAbout/Real-World-Walkthroughs.html
   - /wAbout/Inventory-Reports.html
   title: Report Library Basics
-www.docs.gointerject.comAbout/ReportLibraryLinks.html:
+www.docs.gointerject.com/wAbout/ReportLibraryLinks.html:
   description: The Report Library provides an easy interface where new reports can
     be uploaded, existing reports can be updated, and details and documentation about
     the report can be added.
@@ -6736,17 +6676,17 @@ www.docs.gointerject.comAbout/ReportLibraryLinks.html:
   - documentation
   layout: custom
   links:
-  - '#report-link-details-form'
+  - '#the-report-link-details-form'
   - /wAbout/Report-Library-Basics.html#status
   - /wAbout/Report-Library-Basics.html#link-version-section
-  - /wAbout/ReportLibrarySorting.html
+  - /wAbout/ReportLibraryOrganization.html
   - /wAbout/Report-Library-Basics.html#status
   - '#types-of-links'
   - '#link-documentation'
   - /wGetStarted/L-Drill-DrillCodes.html
-  - https://docs.gointerject.comTroubleshoot/Cloud-File.html
+  - https://docs.gointerject.com/wTroubleshoot/Cloud-File.html
   title: Report Library Links
-www.docs.gointerject.comAbout/ReportLibraryOrganization.html:
+www.docs.gointerject.com/wAbout/ReportLibraryOrganization.html:
   description: The Report Library is designed to be a central hub for all your report
     sharing and organizational needs. It contains its own folder hierarchy (3 levels
     deep for simplicity) for basic organization. You can sort reports within a folder
@@ -6836,7 +6776,7 @@ www.docs.gointerject.comAbout/ReportLibraryOrganization.html:
   layout: custom
   links: []
   title: Report Library Organization
-www.docs.gointerject.comAbout/Resizing-Form-Windows.html:
+www.docs.gointerject.com/wAbout/Resizing-Form-Windows.html:
   description: This is a walkthrough on how to make the Interject pop-up windows larger
   filename: Resizing-Form-Windows.md
   headings:
@@ -7001,7 +6941,7 @@ www.docs.gointerject.comAbout/Resizing-Form-Windows.html:
   layout: custom
   links: []
   title: Resizing Interject Windows
-www.docs.gointerject.comAbout/SharedComputer.html:
+www.docs.gointerject.com/wAbout/SharedComputer.html:
   description: Shared Computer installation installs a multi-user instance of Interject
     on one computer, such as a shared server. Since Interject's Addin Manager is used
     to manage independent settings for multiple users, this installation is dependant
@@ -7131,7 +7071,7 @@ www.docs.gointerject.comAbout/SharedComputer.html:
   - /wAbout/Logging-In.html
   - mailto:help@gointerject.com
   title: Installing - Shared Computer
-www.docs.gointerject.comAbout/SingleUser.html:
+www.docs.gointerject.com/wAbout/SingleUser.html:
   description: Interject aims to make the installation process as simple and painless
     as possible. This installation is intended for single user computers.
   filename: SingleUser.md
@@ -7243,15 +7183,14 @@ www.docs.gointerject.comAbout/SingleUser.html:
   - Basic
   layout: custom
   links:
-  - https://docs.gointerject.comAbout/SharedComputer.html
+  - https://docs.gointerject.com/wAbout/SharedComputer.html
   - https://portal.gointerject.com/login.html
-  - https://portal.gointerject.com</a>
   - https://portal.gointerject.com/invite.html?mode=create
   - /wPortal/DownloadInterject.html
   - /wAbout/Logging-In.html
   - mailto:help@gointerject.com
   title: Installing - Single User
-www.docs.gointerject.comAbout/Tabular-vs-Data-Cells.html:
+www.docs.gointerject.com/wAbout/Tabular-vs-Data-Cells.html:
   description: The Report Library is a way for your team to share reports from a central
     location going beyond just a Sharepoint or a Shared Network Folder. The reports
     are uploaded to the library and can be accessed from any computer using Excel
@@ -7270,10 +7209,10 @@ www.docs.gointerject.comAbout/Tabular-vs-Data-Cells.html:
   - data cells
   layout: custom
   links:
-  - /wGetStarted/INTERJECT-Ribbon-Menu-Items#pull-data
-  - /wGetStarted/INTERJECT-Ribbon-Menu-Items#export-book
+  - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data
+  - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#export-book
   title: Tabular vs Data Cells
-www.docs.gointerject.comAbout/Uninstalling.html:
+www.docs.gointerject.com/wAbout/Uninstalling.html:
   description: Interject aims to make uninstalling a simple and straight forward process.
     This process fully removes current versions of Interject as well as legacy versions
     (version 2.3.7.0) and before.
@@ -7323,7 +7262,7 @@ www.docs.gointerject.comAbout/Uninstalling.html:
   links:
   - mailto:help@gointerject.com
   title: Uninstalling
-www.docs.gointerject.comAbout/Updating-INTERJECT.html:
+www.docs.gointerject.com/wAbout/Updating-INTERJECT.html:
   description: The walkthrough shows how to update INTERJECT to the newest version
   filename: Updating-INTERJECT.md
   headings:
@@ -7426,11 +7365,11 @@ www.docs.gointerject.comAbout/Updating-INTERJECT.html:
   layout: custom
   links:
   - https://www.youtube.com/embed/lNu5AjM7Ofo?si=bwwkpHZBTNK-Jtwf
-  - https://www.youtube.comatch?v=lNu5AjM7Ofo
+  - https://www.youtube.com/watch?v=lNu5AjM7Ofo
   - /wAbout/Logging-In.html
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#check-for-updates
   title: Updating Interject
-www.docs.gointerject.comAbout/Using-INTERJECT.html:
+www.docs.gointerject.com/wAbout/Using-INTERJECT.html:
   description: You will run through the basic navigation and control methods most
     helpful for working efficiently. Please note that every report may be different
     and may have it's own documentation in the Report Library.
@@ -7463,7 +7402,7 @@ www.docs.gointerject.comAbout/Using-INTERJECT.html:
   - /wAbout/Inventory-Reports.html
   - /wAbout/Financial-Report.html
   title: Using Interject
-www.docs.gointerject.comAbout/What-You-Need-to-Know.html:
+www.docs.gointerject.com/wAbout/What-You-Need-to-Know.html:
   description: Interject was built for large companies with hundreds of users that
     run thousands of reports each day. Interject commonly handles report volumes over
     of 300,000 per month, and we can manage much, much more.
@@ -7498,7 +7437,7 @@ www.docs.gointerject.comAbout/What-You-Need-to-Know.html:
   - /wAbout/Tabular-vs-Data-Cells.html
   - /wAbout/Tabular-vs-Data-Cells.html
   title: What You Need to Know
-www.docs.gointerject.comAbout/Why-CFOs-Like-INTERJECT.html:
+www.docs.gointerject.com/wAbout/Why-CFOs-Like-INTERJECT.html:
   description: CFOs like Interject due to data accuracy, prompt reports, visibility
     among other beneficial reasons.
   filename: Why-CFOs-Like-INTERJECT.md
@@ -7511,7 +7450,7 @@ www.docs.gointerject.comAbout/Why-CFOs-Like-INTERJECT.html:
   layout: custom
   links: []
   title: Why CFOs Like Interject
-www.docs.gointerject.comAbout/Why-CIOs-Like-INTERJECT.html:
+www.docs.gointerject.com/wAbout/Why-CIOs-Like-INTERJECT.html:
   description: The CIO has specific needs when a company is growing.
   filename: Why-CIOs-Like-INTERJECT.md
   headings: []
@@ -7523,7 +7462,7 @@ www.docs.gointerject.comAbout/Why-CIOs-Like-INTERJECT.html:
   layout: custom
   links: []
   title: Why CIOs Like Interject
-www.docs.gointerject.comAbout/Working-with-INTERJECT.html:
+www.docs.gointerject.com/wAbout/Working-with-INTERJECT.html:
   description: Since Interject introduces new methods and standards for working with
     spreadsheets, it is helpful to understand some key concepts so you can realize
     its potential.
@@ -7541,10 +7480,10 @@ www.docs.gointerject.comAbout/Working-with-INTERJECT.html:
   - data cells
   layout: custom
   links:
-  - /wAbout/Basics-of-Report-Formulas1.html
+  - /wAbout/Basics-of-Report-Formulas.html
   - /wAbout/Tabular-vs-Data-Cells.html
   title: Working with Interject
-www.docs.gointerject.comAbout/privacy-policy.html:
+www.docs.gointerject.com/wAbout/privacy-policy.html:
   description: Overview of Interject security measures and protocols.
   filename: privacy-policy.md
   headings:
@@ -7580,7 +7519,7 @@ www.docs.gointerject.comAbout/privacy-policy.html:
   - http://www.google.com/policies/privacy/
   - https://tools.google.com/dlpage/gaoptout
   title: Privacy Policy
-www.docs.gointerject.comAbout/security-policy.html:
+www.docs.gointerject.com/wAbout/security-policy.html:
   description: Overview of Interject security measures and protocols.
   filename: security-policy.md
   headings:
@@ -7612,7 +7551,7 @@ www.docs.gointerject.comAbout/security-policy.html:
   links:
   - /wAbout/privacy-policy.html
   title: Interject Security Policy
-www.docs.gointerject.comApi/DeveloperMain.html:
+www.docs.gointerject.com/wApi/DeveloperMain.html:
   description: Interject provides 3 web APIs built on 3 different platforms. These
     Web APIs serve as a bridge between custom data sources and the Interject Excel
     Add-in, allowing them to request and share information, perform actions, and deliver
@@ -7634,7 +7573,7 @@ www.docs.gointerject.comApi/DeveloperMain.html:
   - /wApi/python-api-setup.html
   - /wApi/java-api-setup.html
   title: Developer Overview
-www.docs.gointerject.comApi/Pyinterject.html:
+www.docs.gointerject.com/wApi/Pyinterject.html:
   description: Pyinterject is a Python client package that allows access to the Interject
     platform directly. With Python scripts, you can perform CRUD operations on your
     organization's information (e.g. data portals, data connections, users, etc.).
@@ -7658,7 +7597,7 @@ www.docs.gointerject.comApi/Pyinterject.html:
   links:
   - mailto:help@gointerject.com
   title: Pyinterject
-www.docs.gointerject.comApi/dot-net-api-setup.html:
+www.docs.gointerject.com/wApi/dot-net-api-setup.html:
   description: Shows how to setup an INTERJECT .Net data api.
   filename: dot-net-api-setup.md
   headings:
@@ -7869,7 +7808,7 @@ www.docs.gointerject.comApi/dot-net-api-setup.html:
   - mailto:help@gointerject.com
   - https://github.com/GoInterject/ids-dotnet-api/archive/refs/heads/main.zip
   - https://learn.microsoft.com/en-us/iis/get-started/introduction-to-iis/iis-web-server-overview
-  - https://learn.microsoft.com/en-usindows-server/administration/server-core/server-core-roles-and-services
+  - https://learn.microsoft.com/en-us/windows-server/administration/server-core/server-core-roles-and-services
   - https://learn.microsoft.com/en-us/iis/application-frameworks/scenario-build-an-aspnet-website-on-iis/configuring-step-1-install-iis-and-asp-net-modules
   - https://learn.microsoft.com/en-us/dotnet/core/tutorials/publishing-with-visual-studio
   - https://learn.microsoft.com/en-us/dotnet/core/tutorials/publishing-with-visual-studio-code
@@ -7878,7 +7817,7 @@ www.docs.gointerject.comApi/dot-net-api-setup.html:
   - '#deployment'
   - https://learn.microsoft.com/en-us/iis/manage/configuring-security/how-to-set-up-ssl-on-iis
   - https://learn.microsoft.com/en-us/iis/get-started/getting-started-with-iis/create-a-web-site
-  - '#setup-website-in-iis'
+  - '#set-up-website-in-iis'
   - https://portal.gointerject.com/
   - /wPortal/L-Api-Connections.html
   - /wPortal/Data-Portals.html
@@ -7890,7 +7829,7 @@ www.docs.gointerject.comApi/dot-net-api-setup.html:
   - /wFunctions/ReportVariable.html
   - /wDeveloper/L-Dev-Error-Handling.html
   title: .NET API Setup
-www.docs.gointerject.comApi/java-api-setup.html:
+www.docs.gointerject.com/wApi/java-api-setup.html:
   description: Shows how to setup an INTERJECT Java data api.
   filename: java-api-setup.md
   headings:
@@ -7934,7 +7873,7 @@ www.docs.gointerject.comApi/java-api-setup.html:
   - /wFunctions/ReportVariable.html
   - /wDeveloper/L-Dev-Error-Handling.html
   title: Java API Setup
-www.docs.gointerject.comApi/python-api-custom-functions.html:
+www.docs.gointerject.com/wApi/python-api-custom-functions.html:
   categories: API Developer
   date: 2018-10-12 9:03:02 -0700
   description: Shows how to setup a python data api to utilize custom functions.
@@ -7951,7 +7890,7 @@ www.docs.gointerject.comApi/python-api-custom-functions.html:
   layout: custom
   links: []
   title: Custom Functions With The Python Interject API
-www.docs.gointerject.comApi/python-api-setup.html:
+www.docs.gointerject.com/wApi/python-api-setup.html:
   categories: API Developer
   date: 2018-10-12 9:03:02 -0700
   description: Shows how to setup an Interject Python data api.
@@ -7994,7 +7933,7 @@ www.docs.gointerject.comApi/python-api-setup.html:
   - /wApi/python-api-custom-functions.html
   - https://github.com/GoInterject/ids-python-api
   title: Python API Setup
-www.docs.gointerject.comDeveloper/Advanced-Data-Pull.html:
+www.docs.gointerject.com/wDeveloper/Advanced-Data-Pull.html:
   description: Interject reports can handle a wide variety of complex reports. Up
     to this point you have seen simple reports where a single recordset is returned
     to single area of the spreadsheet. This topic will share advanced reporting configurations
@@ -8019,7 +7958,7 @@ www.docs.gointerject.comDeveloper/Advanced-Data-Pull.html:
   - /wDeveloper/L-Dev-CustomerOrders.html
   - /wAbout/Customer-Aging.html
   title: Advanced Data Pull
-www.docs.gointerject.comDeveloper/ConditionalAccess.html:
+www.docs.gointerject.com/wDeveloper/ConditionalAccess.html:
   description: Conditional access is a feature to control and validate user provisioning
     via policies that act on the claims issued by your identity server. These are
     known as Conditional Access policies. Interject's identity server exposes an interface
@@ -8040,17 +7979,9 @@ www.docs.gointerject.comDeveloper/ConditionalAccess.html:
   - user claims
   - rules
   layout: custom
-  links:
-  - /ws/2008/06/identity/claims/role
-  - /ws/2005/05/identity/claims/emailaddress
-  - /ws/2008/06/identity/claims/role
-  - /ws/2005/05/identity/claims/emailaddress
-  - /ws/2005/05/identity/claims/emailaddress
-  - /ws/2008/06/identity/claims/role
-  - /ws/2005/05/identity/claims/emailaddress
-  - /ws/2005/05/identity/claims/emailaddress
+  links: []
   title: Conditional Access
-www.docs.gointerject.comDeveloper/ConnectionManager.html:
+www.docs.gointerject.com/wDeveloper/ConnectionManager.html:
   description: The Interject Connection Manager displays the current Web API connections
     associated with a company and that use a federated login.
   filename: ConnectionManager.md
@@ -8104,7 +8035,7 @@ www.docs.gointerject.comDeveloper/ConnectionManager.html:
   - /wDeveloper/Enterprise-Login-Setup.html
   - /wAbout/Logging-In-Enterprise.html#clearing-login-cookies
   title: Connection Manager
-www.docs.gointerject.comDeveloper/CustomItems.html:
+www.docs.gointerject.com/wDeveloper/CustomItems.html:
   description: The Custom Item feature of Interject allows a user to interact with
     a database stored procedure or web service to trigger an event.  It could be used
     to trigger a special data update process, toggle a switch such as temporarily
@@ -8191,15 +8122,15 @@ www.docs.gointerject.comDeveloper/CustomItems.html:
   layout: custom
   links:
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#custom-commands
-  - https://docs.gointerject.comPortal/INTERJECT-Roles.html#clientadmin-role
-  - https://docs.gointerject.comPortal/INTERJECT-Roles.html#customitems-role
+  - https://docs.gointerject.com/wPortal/INTERJECT-Roles.html#clientadmin-role
+  - https://docs.gointerject.com/wPortal/INTERJECT-Roles.html#customitems-role
   - /wPortal/Data-Portals.html
   - '#description-and-status'
   - '#running-the-custom-item'
-  - https://docs.gointerject.comPortal/Data-Portals.html#system-parameters-options
+  - https://docs.gointerject.com/wPortal/Data-Portals.html#system-parameters-options
   - /wPortal/Data-Portals.html#overview-of-parameters
   title: Custom Items
-www.docs.gointerject.comDeveloper/DataSave.html:
+www.docs.gointerject.com/wDeveloper/DataSave.html:
   description: null
   filename: DataSave.md
   headings:
@@ -8223,7 +8154,7 @@ www.docs.gointerject.comDeveloper/DataSave.html:
   - /wDeveloper/L-Dev-InsertDeleteDataSave.html
   - /wDeveloper/L-Dev-ChangelogDataSave.html
   title: Data Save
-www.docs.gointerject.comDeveloper/Defining-INTERJECT-for-Developers.html:
+www.docs.gointerject.com/wDeveloper/Defining-INTERJECT-for-Developers.html:
   description: Interject directly links a database stored procedure or website API
     to the Excel interface, in a similar way that middle-tier logic connects to a
     website application.
@@ -8251,7 +8182,7 @@ www.docs.gointerject.comDeveloper/Defining-INTERJECT-for-Developers.html:
   layout: custom
   links: []
   title: Defining Interject for Developers
-www.docs.gointerject.comDeveloper/Developing-with-INTERJECT.html:
+www.docs.gointerject.com/wDeveloper/Developing-with-INTERJECT.html:
   description: This section is for professional developers who create the data pathways
     for reports and applications that can edit data. To facilitate this section, we
     provide a sample database to assist in training.
@@ -8284,12 +8215,12 @@ www.docs.gointerject.comDeveloper/Developing-with-INTERJECT.html:
   - /wDeveloper/Defining-INTERJECT-for-Developers.html
   - /wDeveloper/Simple-Data-Pull.html
   - /wDeveloper/Advanced-Data-Pull.html
-  - /wGetStarted/Simple-Data-Save.html
+  - /wDeveloper/DataSave.html
   - /wDeveloper/Security-Best-Practices.html
   - /wDeveloper/Managing-Settings-Cache.html
   - /wDeveloper/L-Dev-Error-Handling.html
   title: Developing With Interject
-www.docs.gointerject.comDeveloper/Diagnostics-EnterpriseConnection.html:
+www.docs.gointerject.com/wDeveloper/Diagnostics-EnterpriseConnection.html:
   description: The Diagnostic "Set Enterprise Connection" allows an enterprise to
     store an encrypted connection string.
   filename: Diagnostics-EnterpriseConnection.md
@@ -8319,9 +8250,9 @@ www.docs.gointerject.comDeveloper/Diagnostics-EnterpriseConnection.html:
   - setup
   layout: custom
   links:
-  - https://docs.gointerject.comPortal/INTERJECT-Roles.html#clientadmin-role
+  - https://docs.gointerject.com/wPortal/INTERJECT-Roles.html#clientadmin-role
   title: Set Enterprise Connection
-www.docs.gointerject.comDeveloper/Diagnostics-InstallConfig.html:
+www.docs.gointerject.com/wDeveloper/Diagnostics-InstallConfig.html:
   description: The "Open Install Configuration" from the Diagnostic form opens up
     the Configure Interject form where an enterprise can enter an install code for
     a custom installation. These custom installations are set up by Interject and
@@ -8354,7 +8285,7 @@ www.docs.gointerject.comDeveloper/Diagnostics-InstallConfig.html:
   layout: custom
   links: []
   title: Open Install Configuration
-www.docs.gointerject.comDeveloper/Enterprise-Login-Setup.html:
+www.docs.gointerject.com/wDeveloper/Enterprise-Login-Setup.html:
   description: Interject supports federated logins for enterprise allowing a single
     sign on (SSO) experience for Interject users within an organization.
   filename: Enterprise-Login-Setup.md
@@ -8402,18 +8333,11 @@ www.docs.gointerject.comDeveloper/Enterprise-Login-Setup.html:
   - '#provide-oidc-details'
   - '#enterprise-login-code'
   - '#ip-whitelisting'
-  - https://login.microsoftonline.com/{tenant}/v2.0
-  - https://login.microsoftonline.com/{tenant}/v2.0/.well-known/openid-configuration
-  - https://login.microsoftonline.com/{tenant}/oauth2/v2.0/authorize
-  - https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token
-  - https://graph.microsoft.com/oidc/userinfo
   - https://learn.microsoft.com/en-us/azure/active-directory/develop/v2-protocols-oidc#enable-id-tokens
   - /wAbout/Logging-In-Enterprise.html
   - https://portal.gointerject.com/
-  - https://platform-api.gointerject.com/
-  - https://live-interject-authapi.azurewebsites.net/
   title: Enterprise Login Setup
-www.docs.gointerject.comDeveloper/Federated-Login-Design.html:
+www.docs.gointerject.com/wDeveloper/Federated-Login-Design.html:
   description: Interject uses a Duende (previously Identity Server 4) API to handle
     authentication for federated user logins.
   filename: Federated-Login-Design.md
@@ -8484,13 +8408,13 @@ www.docs.gointerject.comDeveloper/Federated-Login-Design.html:
   links:
   - https://duendesoftware.com/products/identityserver
   - /wAbout/logging-in-enterprise.html
-  - https://learn.microsoft.com/en-us/microsoft-edgeebview2/
+  - https://learn.microsoft.com/en-us/microsoft-edge/webview2/
   - https://openid.net/developers/how-connect-works/
-  - https://auth0.com/intro-to-iamhat-is-oauth-2
+  - https://auth0.com/intro-to-iam/what-is-oauth-2
   - https://learn.microsoft.com/en-us/dotnet/standard/security/how-to-use-data-protection
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#advanced-menu-items
   title: Federated Login Design
-www.docs.gointerject.comDeveloper/INTERJECT-Website-Portal.html:
+www.docs.gointerject.com/wDeveloper/INTERJECT-Website-Portal.html:
   description: The Interject website portal is a central place to manage Interject
     client settings and user profiles. For an Interject developer, the most used areas
     of the Interject website portal are managing connections and data portals.
@@ -8511,7 +8435,7 @@ www.docs.gointerject.comDeveloper/INTERJECT-Website-Portal.html:
   - /wPortal/L-Api-Connections.html
   - /wPortal/The-INTERJECT-Website-Portal.html
   title: Interject Website Portal
-www.docs.gointerject.comDeveloper/InstallerValidation.html:
+www.docs.gointerject.com/wDeveloper/InstallerValidation.html:
   description: The data integrity of Interject installation files can be verified
     by comparing its checksum. Interject creates csv files containing the official
     checksum of the installation file. To verify an installer, you can generate a
@@ -8547,7 +8471,7 @@ www.docs.gointerject.comDeveloper/InstallerValidation.html:
   - https://portal.gointerject.com/download-interject.html
   - https://test-portal.gointerject.com/download-interject.html
   title: Checksums for Installers
-www.docs.gointerject.comDeveloper/InternalSupportSetup.html:
+www.docs.gointerject.com/wDeveloper/InternalSupportSetup.html:
   description: Interject provides a way to add your own internal support contact information
     to the Interject User Support form.
   filename: InternalSupportSetup.md
@@ -8613,7 +8537,7 @@ www.docs.gointerject.comDeveloper/InternalSupportSetup.html:
   layout: custom
   links: []
   title: Internal Support Setup
-www.docs.gointerject.comDeveloper/L-Dev-ChangelogDataSave.html:
+www.docs.gointerject.com/wDeveloper/L-Dev-ChangelogDataSave.html:
   description: In this example you will modify the simple data save using the Customer
     Aging Detail report and the Northwind Customers data source to add or delete a
     customer.
@@ -8802,22 +8726,22 @@ www.docs.gointerject.comDeveloper/L-Dev-ChangelogDataSave.html:
   - '#setting-up-the-stored-procedure'
   - '#testing-the-stored-procedure'
   - https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases
-  - https://docs.gointerject.comLabs/LabSetup.html#step-1-setting-up-the-database
+  - https://docs.gointerject.com/wLabs/LabSetup.html#step-1-setting-up-the-database
   - /wDeveloper/L-Dev-CustomerAging.html#setting-up-the-data-connection
   - https://portal.gointerject.com
   - /wPortal/Logging-In-to-Website-Portal.html
-  - https://docs.gointerject.comDeveloper/L-Dev-ChangelogDataSave.html#setting-up-the-stored-procedure
+  - https://docs.gointerject.com/wDeveloper/L-Dev-ChangelogDataSave.html#setting-up-the-stored-procedure
   - /wDeveloper/Request-Context-Parse.html
   - /wDeveloper/L-Dev-InsertDeleteDataSave.html#setting-up-the-report
   - /wDeveloper/L-Dev-InsertDeleteDataSave.html#final-stored-procedure
-  - https://docs.gointerject.comDeveloper/L-Dev-ChangelogDataSave.html#testing-the-stored-procedure
+  - https://docs.gointerject.com/wDeveloper/L-Dev-ChangelogDataSave.html#testing-the-stored-procedure
   - '#setting-up-the-tables'
   - '#changelog'
   - '#update-history-table'
   - /wDeveloper/L-Dev-InsertDeleteDataSave.html#update-changelog
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#overview
   title: 'Develop: Change Log Data Save'
-www.docs.gointerject.comDeveloper/L-Dev-CustomerAging.html:
+www.docs.gointerject.com/wDeveloper/L-Dev-CustomerAging.html:
   description: On this page, you will create a simple data pull using the Customer
     Aging Report. It will guide you on how to build connections and data portals as
     well as cover the SQL stored procedure used to pull the data.
@@ -9060,19 +8984,19 @@ www.docs.gointerject.comDeveloper/L-Dev-CustomerAging.html:
   links:
   - /wAbout/Customer-Aging.html
   - https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases
-  - https://docs.gointerject.comLabs/LabSetup.html#step-1-setting-up-the-database
+  - https://docs.gointerject.com/wLabs/LabSetup.html#step-1-setting-up-the-database
   - https://portal.gointerject.com
   - /wPortal/L-Database-Connection.html#testing-the-connection-string-from-within-excel
   - https://portal.gointerject.com
   - '#setting-up-the-data-connection'
-  - https://docs.gointerject.comPortal/Data-Portals.html
+  - https://docs.gointerject.com/wPortal/Data-Portals.html
   - /wPortal/Data-Portals.html
   - /wPortal/The-INTERJECT-Website-Portal.html
   - mailto:info@gointerject.com
   - /wGetStarted/L-Create-CustomerAging.html
   - /wDeveloper/L-Dev-CustomerOrders.html
   title: 'Develop: Customer Aging'
-www.docs.gointerject.comDeveloper/L-Dev-CustomerAgingDetail.html:
+www.docs.gointerject.com/wDeveloper/L-Dev-CustomerAgingDetail.html:
   description: In this example, you will learn to create a third report, Customer
     Aging Detail, that will be drilled to from the Customer Aging Report. This report
     shows a customer's outstanding balance by individual invoice.
@@ -9288,7 +9212,7 @@ www.docs.gointerject.comDeveloper/L-Dev-CustomerAgingDetail.html:
   - /wGetStarted/L-Create-CustomerAgingDetail.html
   - /wFunctions/jDataPortal.html
   title: 'Develop: Customer Aging Detail'
-www.docs.gointerject.comDeveloper/L-Dev-CustomerOrders.html:
+www.docs.gointerject.com/wDeveloper/L-Dev-CustomerOrders.html:
   description: In this example, you will create a second report, Customer Orders,
     that can be drilled to from the Customer Aging Report you built in the last example.
     This uses a report range.
@@ -9381,7 +9305,7 @@ www.docs.gointerject.comDeveloper/L-Dev-CustomerOrders.html:
   - mailto:info@gointerject.com
   - /wGetStarted/L-Create-CustomerOrders.html
   title: 'Develop: Customer Orders'
-www.docs.gointerject.comDeveloper/L-Dev-EditingDataSave.html:
+www.docs.gointerject.com/wDeveloper/L-Dev-EditingDataSave.html:
   description: In this example you will walkthrough the steps in order to Save Data
     using the Interject Function ReportSave. In this Editing Data Save example, you
     will set up a data save that will allow you to edit a customer's contact name
@@ -9682,11 +9606,11 @@ www.docs.gointerject.comDeveloper/L-Dev-EditingDataSave.html:
   - '#setting-up-the-stored-procedure'
   - '#testing-the-stored-procedure'
   - https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases
-  - https://docs.gointerject.comLabs/LabSetup.html#step-1-setting-up-the-database
+  - https://docs.gointerject.com/wLabs/LabSetup.html#step-1-setting-up-the-database
   - /wDeveloper/L-Dev-CustomerAging.html#setting-up-the-data-connection
   - https://portal.gointerject.com
   - /wPortal/Logging-In-to-Website-Portal.html
-  - https://docs.gointerject.comDeveloper/L-Dev-EditingDataSave.html#setting-up-the-stored-procedure
+  - https://docs.gointerject.com/wDeveloper/L-Dev-EditingDataSave.html#setting-up-the-stored-procedure
   - /wDeveloper/Request-Context-Parse.html
   - /wDeveloper/L-Dev-CustomerAging.html#create-the-report
   - '#setting-up-the-data-portal'
@@ -9694,7 +9618,7 @@ www.docs.gointerject.comDeveloper/L-Dev-EditingDataSave.html:
   - '#add-the-requestcontext_parse-stored-procedure'
   - '#testing'
   title: 'Develop: Editing Data Save'
-www.docs.gointerject.comDeveloper/L-Dev-Error-Handling.html:
+www.docs.gointerject.com/wDeveloper/L-Dev-Error-Handling.html:
   description: Explains how Interject handles errors in Data Portals using T-SQL RAISERROR
     and UserNotice.
   filename: L-Dev-Error-Handling.md
@@ -9749,7 +9673,7 @@ www.docs.gointerject.comDeveloper/L-Dev-Error-Handling.html:
   - https://docs.microsoft.com/en-us/sql/t-sql/language-elements/raiserror-transact-sql?view=sql-server-2017
   - https://docs.microsoft.com/en-us/sql/t-sql/language-elements/raiserror-transact-sql?view=sql-server-2017
   title: 'Develop: Error Handling with RAISERROR and UserNotice'
-www.docs.gointerject.comDeveloper/L-Dev-InsertDeleteDataSave.html:
+www.docs.gointerject.com/wDeveloper/L-Dev-InsertDeleteDataSave.html:
   description: In this example you will modify the Editing Data Save using the Customer
     Aging Detail report and the Northwind Customers data source to add or delete a
     customer.
@@ -10015,16 +9939,16 @@ www.docs.gointerject.comDeveloper/L-Dev-InsertDeleteDataSave.html:
   - '#setting-up-the-stored-procedure'
   - '#testing-the-stored-procedure'
   - https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases
-  - https://docs.gointerject.comLabs/LabSetup.html#step-1-setting-up-the-database
+  - https://docs.gointerject.com/wLabs/LabSetup.html#step-1-setting-up-the-database
   - /wDeveloper/L-Dev-CustomerAging.html#setting-up-the-data-connection
   - https://portal.gointerject.com
   - /wPortal/Logging-In-to-Website-Portal.html
-  - https://docs.gointerject.comDeveloper/L-Dev-InsertDeleteDataSave.html#setting-up-the-stored-procedure
+  - https://docs.gointerject.com/wDeveloper/L-Dev-InsertDeleteDataSave.html#setting-up-the-stored-procedure
   - /wDeveloper/Request-Context-Parse.html
   - /wDeveloper/L-Dev-EditingDataSave.html#setting-up-the-report
   - /wDeveloper/L-Dev-CustomerAging.html#creating-the-stored-procedure
   - /wDeveloper/L-Dev-EditingDataSave.html#final-stored-procedure
-  - https://docs.gointerject.comDeveloper/L-Dev-InsertDeleteDataSave.html#testing-the-stored-procedure
+  - https://docs.gointerject.com/wDeveloper/L-Dev-InsertDeleteDataSave.html#testing-the-stored-procedure
   - '#setting-up-the-report'
   - '#merge-insert'
   - '#data-to-process'
@@ -10032,7 +9956,7 @@ www.docs.gointerject.comDeveloper/L-Dev-InsertDeleteDataSave.html:
   - '#setting-up-the-soft-delete'
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#overview
   title: 'Develop: Insert &amp; Delete Data Save'
-www.docs.gointerject.comDeveloper/L-Dev-jDropdowns.html:
+www.docs.gointerject.com/wDeveloper/L-Dev-jDropdowns.html:
   description: Walks through how to create the stored procedures for the jDropdowns
     built in the customer aging create report.
   filename: L-Dev-jDropdowns.md
@@ -10150,7 +10074,7 @@ www.docs.gointerject.comDeveloper/L-Dev-jDropdowns.html:
   links:
   - /wGetStarted/L-Create-Dropdowns.html
   - https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases
-  - https://docs.gointerject.comLabs/LabSetup.html#step-1-setting-up-the-database
+  - https://docs.gointerject.com/wLabs/LabSetup.html#step-1-setting-up-the-database
   - https://portal.gointerject.com
   - /wPortal/L-Database-Connection.html#testing-the-connection-string-from-within-excel
   - https://portal.gointerject.com
@@ -10158,7 +10082,7 @@ www.docs.gointerject.comDeveloper/L-Dev-jDropdowns.html:
   - '#setting-up-the-data-connection'
   - /wGetStarted/L-Create-Dropdowns.html
   title: 'Develop: jDropdown'
-www.docs.gointerject.comDeveloper/MacroSecurity.html:
+www.docs.gointerject.com/wDeveloper/MacroSecurity.html:
   description: Macro security involves mitigating the opening and uploading of Excel
     files that contain macros to ensure no malicious code affects any system.
   filename: MacroSecurity.md
@@ -10203,10 +10127,10 @@ www.docs.gointerject.comDeveloper/MacroSecurity.html:
   - checksum
   layout: custom
   links:
-  - /wIndex/MacroSecurity#file-extensions
-  - /wIndex/MacroSecurity#file-extensions
+  - /wDeveloper/MacroSecurity.html#file-extensions
+  - /wDeveloper/MacroSecurity.html#file-extensions
   title: Macro Security
-www.docs.gointerject.comDeveloper/Managing-Settings-Cache.html:
+www.docs.gointerject.com/wDeveloper/Managing-Settings-Cache.html:
   description: Interject optimizes speed by caching company settings, such as Data
     Portals, Connections, and Report Library templates. This information is received
     on login and is stored in memory for as long as the Excel session is open.
@@ -10226,7 +10150,7 @@ www.docs.gointerject.comDeveloper/Managing-Settings-Cache.html:
   layout: custom
   links: []
   title: Managing Settings Cache
-www.docs.gointerject.comDeveloper/Request-Context-Parse.html:
+www.docs.gointerject.com/wDeveloper/Request-Context-Parse.html:
   description: This page that lists the interject request context parse stored procedure
   filename: Request-Context-Parse.md
   headings:
@@ -10246,7 +10170,7 @@ www.docs.gointerject.comDeveloper/Request-Context-Parse.html:
   layout: custom
   links: []
   title: Request Context Parse
-www.docs.gointerject.comDeveloper/Security-Best-Practices.html:
+www.docs.gointerject.com/wDeveloper/Security-Best-Practices.html:
   description: Managing security is a key component of the Interject platform, and
     there are several areas to understand. Security involves both the row level security
     that can exist in reports and apps and how the middle tier objects are secured.
@@ -10266,11 +10190,11 @@ www.docs.gointerject.comDeveloper/Security-Best-Practices.html:
   - standards
   layout: custom
   links:
-  - https://docs.gointerject.comDeveloper/Request-Context-Parse.html
+  - https://docs.gointerject.com/wDeveloper/Request-Context-Parse.html
   - /wAbout/Report-Library-Basics.html#status
   - /wAbout/Report-Library-Basics.html
   title: Security Best Practices
-www.docs.gointerject.comDeveloper/SetupjDataPortal.html:
+www.docs.gointerject.com/wDeveloper/SetupjDataPortal.html:
   description: The jDataPortal is a powerful Interject function that not only allows
     users to customize the connection to an Interject Data Portal. In addition to
     establishing a connection to a Portal, users can also override certain parameters
@@ -10397,7 +10321,38 @@ www.docs.gointerject.comDeveloper/SetupjDataPortal.html:
   - https://portal.gointerject.com/DataPortals.html
   - /wPortal/INTERJECT-Roles.html
   title: Setting Up the jDataPortal
-www.docs.gointerject.comDeveloper/TLS.html:
+www.docs.gointerject.com/wDeveloper/Simple-Data-Pull.html:
+  description: To clearly illustrate the end-to-end workflow of developing a report,
+    you can begin with several simple data pull examples showing different report
+    configurations. You will be reusing Interject reports used in previous sections,
+    because these should be familiar to you if you read this documentation from the
+    beginning.
+  filename: Simple-Data-Pull.md
+  headings:
+  - Overview
+  - Understanding the Business Use Case
+  - Customer Aging
+  - Customer Orders
+  - jDropdowns
+  image_dir: ''
+  images: []
+  keywords:
+  - data
+  - pull
+  - develop
+  - build
+  - create
+  - jdropdown
+  layout: custom
+  links:
+  - /wAbout/Customer-Aging.html
+  - /wDeveloper/L-Dev-CustomerAging.html
+  - /wAbout/Customer-Aging.html
+  - /wDeveloper/L-Dev-CustomerOrders.html
+  - /wGetStarted/L-Create-CustomerOrders.html
+  - /wDeveloper/L-Dev-jDropdowns.html
+  title: Simple Data Pull
+www.docs.gointerject.com/wDeveloper/TLS.html:
   description: Interject uses the Transport Layer Security (TLS). TLS is a cryptographic
     protocol designed to provide secure communication over a computer network. It
     ensures data privacy and integrity between two communicating applications by encrypting
@@ -10505,7 +10460,7 @@ www.docs.gointerject.comDeveloper/TLS.html:
   - https://portal.gointerject.com/download-interject.html
   - '#set-tls-settings-via-idssettings-file'
   title: Interject TLS for HTTPS
-www.docs.gointerject.comFunctions/BSpec.html:
+www.docs.gointerject.com/wFunctions/BSpec.html:
   description: null
   filename: BSpec.md
   headings:
@@ -10519,7 +10474,7 @@ www.docs.gointerject.comFunctions/BSpec.html:
   layout: custom
   links: []
   title: BSpec()
-www.docs.gointerject.comFunctions/Data-Cell-Functions.html:
+www.docs.gointerject.com/wFunctions/Data-Cell-Functions.html:
   description: Data Cells are focused on a single formula which can be placed anywhere
     in the spreadsheet and can ask for any financial number or summary from it. Once
     this single formula approach is understood, there is no limit to the combinations
@@ -10542,7 +10497,7 @@ www.docs.gointerject.comFunctions/Data-Cell-Functions.html:
   - /wFunctions/jAcct.html
   - /wFunctions/jDesc.html
   title: Data Cell Functions
-www.docs.gointerject.comFunctions/Data-Functions-Landing.html:
+www.docs.gointerject.com/wFunctions/Data-Functions-Landing.html:
   description: Data Pull Functions are focused on getting specific data to the report
     in the right way and placed inside the spreadsheet. There are a variety of functions
     and options therein to give flexibility in what data is displayed.
@@ -10563,12 +10518,12 @@ www.docs.gointerject.comFunctions/Data-Functions-Landing.html:
   - lookup
   layout: custom
   links:
-  - /wIndex/ReportRange.html
-  - /wIndex/ReportFixed.html
-  - /wIndex/ReportVariable.html
-  - /wIndex/ReportLookup.html
+  - /wFunctions/ReportRange.html
+  - /wFunctions/ReportFixed.html
+  - /wFunctions/ReportVariable.html
+  - /wFunctions/ReportLookup.html
   title: Data Pull Functions
-www.docs.gointerject.comFunctions/Event-Functions-Landing.html:
+www.docs.gointerject.com/wFunctions/Event-Functions-Landing.html:
   description: Event Functions are functions designed to run when a designated event
     triggers them.
   filename: Event-Functions-Landing.md
@@ -10593,8 +10548,8 @@ www.docs.gointerject.comFunctions/Event-Functions-Landing.html:
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data
-  - /wIndex/Data-Functions-Landing.html
-  - /wTroubleshooting/Validation-Report.html
+  - /wFunctions/Data-Functions-Landing.html
+  - /wTroubleshoot/Validation-Report.html
   - /wFunctions/ReportMacro.html
   - /wFunctions/ReportRun.html
   - /wFunctions/ReportCalc.html
@@ -10603,7 +10558,7 @@ www.docs.gointerject.comFunctions/Event-Functions-Landing.html:
   - /wFunctions/ReportVariable.html
   - /wFunctions/ReportHideRowOrColumn.html
   title: Event Functions
-www.docs.gointerject.comFunctions/Excel-Function-Index.html:
+www.docs.gointerject.com/wFunctions/Excel-Function-Index.html:
   description: Interject provides features by leveraging spreadsheet formulas that
     are familiar to many users. These formulas can be used to direct data into a spreadsheet,
     creating practical and adaptable reports. By adding report drills and navigation
@@ -10664,7 +10619,21 @@ www.docs.gointerject.comFunctions/Excel-Function-Index.html:
   - /wFunctions/jCell.html
   - /wFunctions/jDesc.html
   title: Excel Function Index
-www.docs.gointerject.comFunctions/Helper-Functions.html:
+www.docs.gointerject.com/wFunctions/GL.html:
+  description: null
+  filename: GL.md
+  headings:
+  - Function Summary
+  - Function Arguments
+  - Excel Formula Bar Example
+  - Function Composition
+  image_dir: ''
+  images: []
+  keywords: []
+  layout: custom
+  links: []
+  title: GL/NGL()
+www.docs.gointerject.com/wFunctions/Helper-Functions.html:
   description: Helper Functions are functions that are often embedded into other parent
     functions to be leveraged into more specific and accurate functions or enhance
     their capabilities.
@@ -10695,7 +10664,7 @@ www.docs.gointerject.comFunctions/Helper-Functions.html:
   - /wFunctions/jDropdown.html
   - /wFunctions/jFocus.html
   - /wFunctions/jFreezePanes.html
-  - /wGetStarted/Interject-Ribbon-Menu-Items.html#quick-tools
+  - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools
   - /wFunctions/jFreezePanes.html
   - /wFunctions/jCombine.html
   - /wFunctions/jCombine_IF.html
@@ -10709,9 +10678,9 @@ www.docs.gointerject.comFunctions/Helper-Functions.html:
   - /wFunctions/PairGroup.html
   - /wFunctions/Pair.html
   - /wFunctions/Param.html
-  - /wTroubleshoot/Reports.html#validation-report-for-pullsave-events
+  - /wTroubleshoot/Reports.html#validation-report-for-interject-events
   title: Helper Functions
-www.docs.gointerject.comFunctions/Pair.html:
+www.docs.gointerject.com/wFunctions/Pair.html:
   description: The Pair function transfers values from one cell to another.
   filename: Pair.md
   headings:
@@ -10736,14 +10705,10 @@ www.docs.gointerject.comFunctions/Pair.html:
   - /wFunctions/ReportDefaults.html
   - /wFunctions/ReportDrill.html
   title: Pair()
-www.docs.gointerject.comFunctions/PairExt.html:
+www.docs.gointerject.com/wFunctions/PairExt.html:
   description: null
   filename: PairExt.md
   headings:
-  - Function Summary
-  - Function Arguments
-  - Excel Formula Bar Example
-  - Function Composition
   - Function Summary
   - Function Arguments
   - Excel Formula Bar Example
@@ -10754,7 +10719,7 @@ www.docs.gointerject.comFunctions/PairExt.html:
   layout: custom
   links: []
   title: PairExt()
-www.docs.gointerject.comFunctions/PairGroup.html:
+www.docs.gointerject.com/wFunctions/PairGroup.html:
   description: The PairGroup function will active all [Pair()](/wFunctions/Pair.html)
     functions defined within.
   filename: PairGroup.md
@@ -10776,11 +10741,11 @@ www.docs.gointerject.comFunctions/PairGroup.html:
   - /wFunctions/Pair.html
   - /wFunctions/Pair.html
   - /wGetStarted/L-Drill-CustomerAging.html
-  - https://docs.gointerject.comFunctions/Pair.html
+  - https://docs.gointerject.com/wFunctions/Pair.html
   - /wFunctions/ReportDefaults.html
   - /wFunctions/ReportDrill.html
   title: PairGroup()
-www.docs.gointerject.comFunctions/Param.html:
+www.docs.gointerject.com/wFunctions/Param.html:
   description: The Param function transfers values as parameters to the Data Portal.
   filename: Param.md
   headings:
@@ -10798,7 +10763,7 @@ www.docs.gointerject.comFunctions/Param.html:
   - formula
   layout: custom
   links:
-  - /wTroubleshoot/Reports.html#validation-report-for-pullsave-events
+  - /wTroubleshoot/Reports.html#validation-report-for-interject-events
   - /wGetStarted/L-Drill-CustomerAging.html
   - /wFunctions/ReportFixed.html
   - /wFunctions/ReportLookup.html
@@ -10807,7 +10772,7 @@ www.docs.gointerject.comFunctions/Param.html:
   - /wFunctions/ReportVariable.html
   - /wFunctions/jDropdown.html
   title: Param()
-www.docs.gointerject.comFunctions/ReportCalc.html:
+www.docs.gointerject.com/wFunctions/ReportCalc.html:
   description: The ReportCalc function executes a calculation of formulas in a worksheet
     or workbook when triggered upon a designated event.
   filename: ReportCalc.md
@@ -10831,21 +10796,7 @@ www.docs.gointerject.comFunctions/ReportCalc.html:
   - /wFunctions/Event-Functions-Landing.html
   - /wGetStarted/L-Create-HideRowCol.html
   title: ReportCalc()
-www.docs.gointerject.comFunctions/ReportDBExec.html:
-  description: null
-  filename: ReportDBExec.md
-  headings:
-  - Function Summary
-  - Function Arguments
-  - Excel Formula Bar Example
-  - Function Composition
-  image_dir: ''
-  images: []
-  keywords: []
-  layout: custom
-  links: []
-  title: null
-www.docs.gointerject.comFunctions/ReportDefaults.html:
+www.docs.gointerject.com/wFunctions/ReportDefaults.html:
   description: The ReportDefaults function will copy a value from a range to another
     range when triggered upon a designated event.
   filename: ReportDefaults.md
@@ -10869,12 +10820,12 @@ www.docs.gointerject.comFunctions/ReportDefaults.html:
   links:
   - /wFunctions/Event-Functions-Landing.html
   - /wGetStarted/L-Create-CustomerAgingDetail.html#reportdefaults
-  - https://docs.gointerject.comFunctions/Pair.html
-  - https://docs.gointerject.comFunctions/PairGroup.html
+  - https://docs.gointerject.com/wFunctions/Pair.html
+  - https://docs.gointerject.com/wFunctions/PairGroup.html
   - /wFunctions/PairGroup.html
   - /wFunctions/Pair.html
   title: ReportDefaults()
-www.docs.gointerject.comFunctions/ReportDrill.html:
+www.docs.gointerject.com/wFunctions/ReportDrill.html:
   description: The ReportDrill function provides a convenient way to run another targeted
     function while at the same time, transferring contextual data for filtering to
     that function.
@@ -10900,12 +10851,12 @@ www.docs.gointerject.comFunctions/ReportDrill.html:
   - /wFunctions/Data-Functions-Landing.html
   - /wGetStarted/L-Drill-DrillCodes.html
   - /wFunctions/Pair.html
-  - https://docs.gointerject.comFunctions/Pair.html
-  - https://docs.gointerject.comFunctions/PairGroup.html
+  - https://docs.gointerject.com/wFunctions/Pair.html
+  - https://docs.gointerject.com/wFunctions/PairGroup.html
   - /wFunctions/PairGroup.html
   - /wFunctions/Pair.html
   title: ReportDrill()
-www.docs.gointerject.comFunctions/ReportFixed.html:
+www.docs.gointerject.com/wFunctions/ReportFixed.html:
   description: The ReportFixed function pulls data from a data source and inserts
     it into a spreadsheet.
   filename: ReportFixed.md
@@ -10928,13 +10879,13 @@ www.docs.gointerject.comFunctions/ReportFixed.html:
   links:
   - /wFunctions/ReportRange.html
   - /wGetStarted/L-Create-InventoryFixed.html
-  - https://docs.gointerject.comFunctions/jDataPortal.html
-  - https://docs.gointerject.comFunctions/Param.html
-  - https://docs.gointerject.comTroubleshoot/Reports.html#validation-report-for-pullsave-events
+  - https://docs.gointerject.com/wFunctions/jDataPortal.html
+  - https://docs.gointerject.com/wFunctions/Param.html
+  - https://docs.gointerject.com/wTroubleshoot/Reports.html#validation-report-for-interject-events
   - /wFunctions/jDataPortal.html
   - /wFunctions/Param.html
   title: ReportFixed()
-www.docs.gointerject.comFunctions/ReportGrouping.html:
+www.docs.gointerject.com/wFunctions/ReportGrouping.html:
   description: The ReportGrouping function will collapse or expand groups within the
     sheet when triggered upon a designated event.
   filename: ReportGrouping.md
@@ -10959,7 +10910,7 @@ www.docs.gointerject.comFunctions/ReportGrouping.html:
   - /wFunctions/ReportVariable.html
   - /wGetStarted/L-Create-InventoryVariable.html#reportgrouping
   title: ReportGrouping()
-www.docs.gointerject.comFunctions/ReportHideRowOrColumn.html:
+www.docs.gointerject.com/wFunctions/ReportHideRowOrColumn.html:
   description: The ReportHideRowOrColumn function will hide a designated row or column
     when triggered upon a designated event.
   filename: ReportHideRowOrColumn.md
@@ -10983,7 +10934,7 @@ www.docs.gointerject.comFunctions/ReportHideRowOrColumn.html:
   - /wFunctions/Event-Functions-Landing.html
   - /wGetStarted/L-Create-HideRowCol.html
   title: ReportHideRowOrColumn()
-www.docs.gointerject.comFunctions/ReportLookup.html:
+www.docs.gointerject.com/wFunctions/ReportLookup.html:
   description: The ReportLookup function pulls a single piece of data from a data
     source and inserts it into a single cell within a spreadsheet.
   filename: ReportLookup.md
@@ -11005,14 +10956,14 @@ www.docs.gointerject.comFunctions/ReportLookup.html:
   layout: custom
   links:
   - /wFunctions/jDataPortal.html
-  - https://docs.gointerject.comFunctions/jDataPortal.html
-  - https://docs.gointerject.comFunctions/Param.html
-  - /wTroubleshoot/Reports.html#validation-report-for-pullsave-events
+  - https://docs.gointerject.com/wFunctions/jDataPortal.html
+  - https://docs.gointerject.com/wFunctions/Param.html
+  - /wTroubleshoot/Reports.html#validation-report-for-interject-events
   - /wFunctions/jDataPortal.html
   - /wFunctions/jDataPortal.html
   - /wFunctions/Param.html
   title: ReportLookup()
-www.docs.gointerject.comFunctions/ReportMacro.html:
+www.docs.gointerject.com/wFunctions/ReportMacro.html:
   description: The ReportMacro function executes a designated VBA macro when triggered
     upon a designated event.
   filename: ReportMacro.md
@@ -11037,7 +10988,21 @@ www.docs.gointerject.comFunctions/ReportMacro.html:
   - /wFunctions/Event-Functions-Landing.html
   - /wGetStarted/L-Create-ReportMacro.html
   title: ReportMacro()
-www.docs.gointerject.comFunctions/ReportRange.html:
+www.docs.gointerject.com/wFunctions/ReportMerge.html:
+  description: null
+  filename: ReportMerge.md
+  headings:
+  - Function Summary
+  - Function Arguments
+  - Excel Formula Bar Example
+  - Function Composition
+  image_dir: ''
+  images: []
+  keywords: []
+  layout: custom
+  links: []
+  title: ReportMerge()
+www.docs.gointerject.com/wFunctions/ReportRange.html:
   description: The ReportRange function pulls data from a data source and inserts
     it into a single range within a spreadsheet.
   filename: ReportRange.md
@@ -11059,18 +11024,18 @@ www.docs.gointerject.comFunctions/ReportRange.html:
   layout: custom
   links:
   - /wGetStarted/L-Create-CustomerAging.html
-  - https://docs.gointerject.comFunctions/jDataPortal.html
-  - https://docs.gointerject.comFunctions/Param.html
-  - /wTroubleshoot/Reports.html#validation-report-for-pullsave-events
+  - https://docs.gointerject.com/wFunctions/jDataPortal.html
+  - https://docs.gointerject.com/wFunctions/Param.html
+  - /wTroubleshoot/Reports.html#validation-report-for-interject-events
   - /wGetStarted/L-Create-RetainFeature.html
-  - https://docs.gointerject.comFunctions/jCombine.html
-  - https://docs.gointerject.comFunctions/jCombine_If.html
+  - https://docs.gointerject.com/wFunctions/jCombine.html
+  - https://docs.gointerject.com/wFunctions/jCombine_If.html
   - /wFunctions/jDataPortal.html
   - /wFunctions/Param.html
   - /wFunctions/jCombine.html
   - /wFunctions/jCombine_IF.html
   title: ReportRange()
-www.docs.gointerject.comFunctions/ReportRun.html:
+www.docs.gointerject.com/wFunctions/ReportRun.html:
   description: The ReportRun function will run a designated report function(s) within
     a Workbook when triggered upon a designated event.
   filename: ReportRun.md
@@ -11097,7 +11062,7 @@ www.docs.gointerject.comFunctions/ReportRun.html:
   - /wFunctions/Event-Functions-Landing.html
   - '#function-composition'
   title: ReportRun()
-www.docs.gointerject.comFunctions/ReportSave.html:
+www.docs.gointerject.com/wFunctions/ReportSave.html:
   description: The ReportSave function will use a designated Data Portal to save data
     in a worksheet to a data source.
   filename: ReportSave.md
@@ -11118,27 +11083,13 @@ www.docs.gointerject.comFunctions/ReportSave.html:
   layout: custom
   links:
   - /wDeveloper/L-Dev-EditingDataSave.html
-  - https://docs.gointerject.comFunctions/jDataPortal.html
-  - https://docs.gointerject.comFunctions/Param.html
-  - /wTroubleshoot/Reports.html#validation-report-for-pullsave-events
+  - https://docs.gointerject.com/wFunctions/jDataPortal.html
+  - https://docs.gointerject.com/wFunctions/Param.html
+  - /wTroubleshoot/Reports.html#validation-report-for-interject-events
   - /wFunctions/jDataPortal.html
   - /wFunctions/Param.html
   title: ReportSave()
-www.docs.gointerject.comFunctions/ReportSystemCheck.html:
-  description: null
-  filename: ReportSystemCheck.md
-  headings:
-  - Function Summary
-  - Function Arguments
-  - Excel Formula Bar Example
-  - Function Composition
-  image_dir: ''
-  images: []
-  keywords: []
-  layout: custom
-  links: []
-  title: null
-www.docs.gointerject.comFunctions/ReportVariable.html:
+www.docs.gointerject.com/wFunctions/ReportVariable.html:
   description: The ReportVariable function pulls data from a data source and inserts
     it into a spreadsheet.
   filename: ReportVariable.md
@@ -11161,18 +11112,18 @@ www.docs.gointerject.comFunctions/ReportVariable.html:
   links:
   - /wFunctions/ReportFixed.html
   - /wGetStarted/L-Create-InventoryVariable.html
-  - https://docs.gointerject.comFunctions/jDataPortal.html
-  - https://docs.gointerject.comFunctions/Param.html
-  - https://docs.gointerject.comTroubleshoot/Reports.html#validation-report-for-pullsave-events
+  - https://docs.gointerject.com/wFunctions/jDataPortal.html
+  - https://docs.gointerject.com/wFunctions/Param.html
+  - https://docs.gointerject.com/wTroubleshoot/Reports.html#validation-report-for-interject-events
   - /wGetStarted/L-Create-RetainFeature.html
-  - https://docs.gointerject.comFunctions/jCombine.html
-  - https://docs.gointerject.comFunctions/jCombine_If.html
+  - https://docs.gointerject.com/wFunctions/jCombine.html
+  - https://docs.gointerject.com/wFunctions/jCombine_If.html
   - /wFunctions/jDataPortal.html
   - /wFunctions/Param.html
   - /wFunctions/jCombine.html
   - /wFunctions/jCombine_IF.html
   title: ReportVariable()
-www.docs.gointerject.comFunctions/SDesc.html:
+www.docs.gointerject.com/wFunctions/SDesc.html:
   description: null
   filename: SDesc.md
   headings:
@@ -11186,7 +11137,7 @@ www.docs.gointerject.comFunctions/SDesc.html:
   layout: custom
   links: []
   title: null
-www.docs.gointerject.comFunctions/jAcct.html:
+www.docs.gointerject.com/wFunctions/jAcct.html:
   description: A helper function that specifies filters for up to six segments of
     a Chart of Accounts
   filename: jAcct.md
@@ -11208,7 +11159,7 @@ www.docs.gointerject.comFunctions/jAcct.html:
   links:
   - /wFunctions/jCell.html
   title: jAcct()
-www.docs.gointerject.comFunctions/jAction.html:
+www.docs.gointerject.com/wFunctions/jAction.html:
   description: null
   filename: jAction.md
   headings:
@@ -11221,8 +11172,8 @@ www.docs.gointerject.comFunctions/jAction.html:
   keywords: []
   layout: custom
   links: []
-  title: null
-www.docs.gointerject.comFunctions/jBinder.html:
+  title: jAction()
+www.docs.gointerject.com/wFunctions/jBinder.html:
   description: null
   filename: jBinder.md
   headings:
@@ -11235,8 +11186,8 @@ www.docs.gointerject.comFunctions/jBinder.html:
   keywords: []
   layout: custom
   links: []
-  title: null
-www.docs.gointerject.comFunctions/jCell.html:
+  title: jBinder()
+www.docs.gointerject.com/wFunctions/jCell.html:
   description: jCell retrieves data based on the provided parameters.
   filename: jCell.md
   headings:
@@ -11259,7 +11210,21 @@ www.docs.gointerject.comFunctions/jCell.html:
   - /wFunctions/jAcct.html
   - /wFunctions/jAcct.html
   title: jCell/jCellN()
-www.docs.gointerject.comFunctions/jColumnDef.html:
+www.docs.gointerject.com/wFunctions/jColumn.html:
+  description: null
+  filename: jColumn.md
+  headings:
+  - Function Summary
+  - Function Arguments
+  - Excel Formula Bar Example
+  - Function Composition
+  image_dir: ''
+  images: []
+  keywords: []
+  layout: custom
+  links: []
+  title: jColumn()
+www.docs.gointerject.com/wFunctions/jColumnDef.html:
   description: The jColumnDef function defines a column based on one or more parameters.
   filename: jColumnDef.md
   headings:
@@ -11280,7 +11245,7 @@ www.docs.gointerject.comFunctions/jColumnDef.html:
   - /wGetStarted/L-Create-FinancialVariable.html
   - /wIndex/FinCubeTheFinancialCube.html
   title: jColumnDef()
-www.docs.gointerject.comFunctions/jCombine.html:
+www.docs.gointerject.com/wFunctions/jCombine.html:
   description: The jCombine function concatenates a range or multiple ranges of cells
     into a single string using a designated delimiter.
   filename: jCombine.md
@@ -11300,7 +11265,7 @@ www.docs.gointerject.comFunctions/jCombine.html:
   links:
   - /wGetStarted/L-Create-RetainFeature.html
   title: jCombine()
-www.docs.gointerject.comFunctions/jCombine_IF.html:
+www.docs.gointerject.com/wFunctions/jCombine_IF.html:
   description: The jCombineIF function concatenates a range or multiple ranges of
     cells into a single string using a designated delimiter if a certain condition
     is met.
@@ -11318,10 +11283,9 @@ www.docs.gointerject.comFunctions/jCombine_IF.html:
   - function
   - formula
   layout: custom
-  links:
-  - /wGetStarted/L-Create-RetainFeature.html#jcombineif
+  links: []
   title: jCombineIF()
-www.docs.gointerject.comFunctions/jCombine_Smart.html:
+www.docs.gointerject.com/wFunctions/jCombine_Smart.html:
   description: The jCombine function concatenates a range or multiple ranges of cells
     into a single string using a designated delimiter.
   filename: jCombine_Smart.md
@@ -11340,7 +11304,7 @@ www.docs.gointerject.comFunctions/jCombine_Smart.html:
   layout: custom
   links: []
   title: jCombineSmart()
-www.docs.gointerject.comFunctions/jCopy.html:
+www.docs.gointerject.com/wFunctions/jCopy.html:
   description: null
   filename: jCopy.md
   headings:
@@ -11353,22 +11317,8 @@ www.docs.gointerject.comFunctions/jCopy.html:
   keywords: []
   layout: custom
   links: []
-  title: null
-www.docs.gointerject.comFunctions/jDataFixed.html:
-  description: null
-  filename: jDataFixed.md
-  headings:
-  - Function Summary
-  - Function Arguments
-  - Excel Formula Bar Example
-  - Function Composition
-  image_dir: ''
-  images: []
-  keywords: []
-  layout: custom
-  links: []
-  title: null
-www.docs.gointerject.comFunctions/jDataPortal.html:
+  title: jCopy()
+www.docs.gointerject.com/wFunctions/jDataPortal.html:
   description: The jDataPortal function establishes a connection to an Interject Data
     Portal that will be used as the data source for the function it is embedded in.
   filename: jDataPortal.md
@@ -11394,35 +11344,7 @@ www.docs.gointerject.comFunctions/jDataPortal.html:
   - /wFunctions/ReportVariable.html
   - /wFunctions/ReportFixed.html
   title: jDataPortal()
-www.docs.gointerject.comFunctions/jDataRange.html:
-  description: null
-  filename: jDataRange.md
-  headings:
-  - Function Summary
-  - Function Arguments
-  - Excel Formula Bar Example
-  - Function Composition
-  image_dir: ''
-  images: []
-  keywords: []
-  layout: custom
-  links: []
-  title: null
-www.docs.gointerject.comFunctions/jDataSave.html:
-  description: null
-  filename: jDataSave.md
-  headings:
-  - Function Summary
-  - Function Arguments
-  - Excel Formula Bar Example
-  - Function Composition
-  image_dir: ''
-  images: []
-  keywords: []
-  layout: custom
-  links: []
-  title: null
-www.docs.gointerject.comFunctions/jDesc.html:
+www.docs.gointerject.com/wFunctions/jDesc.html:
   description: This function is used to look up a context description based on a specific
     segment.
   filename: jDesc.md
@@ -11441,7 +11363,7 @@ www.docs.gointerject.comFunctions/jDesc.html:
   layout: custom
   links: []
   title: jDesc()
-www.docs.gointerject.comFunctions/jDropdown.html:
+www.docs.gointerject.com/wFunctions/jDropdown.html:
   description: The jDropdown function returns data from a Data Portal that can be
     displayed in a dropdown window for the user to select and insert into a designated
     cell within the spreadsheet.
@@ -11462,15 +11384,15 @@ www.docs.gointerject.comFunctions/jDropdown.html:
   layout: custom
   links:
   - /wGetStarted/L-Create-Dropdowns.html
-  - https://docs.gointerject.comGetStarted/L-Create-Dropdowns.html#creating-a-custom-jdropdown-list
-  - https://docs.gointerject.comFunctions/jDataPortal.html
-  - https://docs.gointerject.comFunctions/Param.html
-  - /wTroubleshoot/Reports.html#validation-report-for-pullsave-events
+  - https://docs.gointerject.com/wGetStarted/L-Create-Dropdowns.html#creating-a-custom-jdropdown-list
+  - https://docs.gointerject.com/wFunctions/jDataPortal.html
+  - https://docs.gointerject.com/wFunctions/Param.html
+  - /wTroubleshoot/Reports.html#validation-report-for-interject-events
   - /wFunctions/jDataPortal.html
   - /wFunctions/jDataPortal.html
   - /wFunctions/Param.html
   title: jDropdown()
-www.docs.gointerject.comFunctions/jFocus.html:
+www.docs.gointerject.com/wFunctions/jFocus.html:
   description: The jFocus function will move the cursor and select a targeted range
     after a freeze panes action using Interject's Freeze/UnFreeze Panes action.
   filename: jFocus.md
@@ -11489,10 +11411,10 @@ www.docs.gointerject.comFunctions/jFocus.html:
   layout: custom
   links:
   - /wFunctions/jFreezePanes.html
-  - /wGetStarted/Interject-Ribbon-Menu-Items.html#quick-tools
+  - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools
   - /wGetStarted/L-Create-CustomerAging.html
   title: jFocus()
-www.docs.gointerject.comFunctions/jFreezePanes.html:
+www.docs.gointerject.com/wFunctions/jFreezePanes.html:
   description: The jFreezePanes function freezes a designated pane so the user can
     scroll through data and still keep the frozen pane in view.
   filename: jFreezePanes.md
@@ -11511,10 +11433,10 @@ www.docs.gointerject.comFunctions/jFreezePanes.html:
   - formula
   layout: custom
   links:
-  - /wGetStarted/Interject-Ribbon-Menu-Items.html#quick-tools
+  - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools
   - /wGetStarted/L-Create-CustomerAging.html
   title: jFreezePanes()
-www.docs.gointerject.comFunctions/jMacro.html:
+www.docs.gointerject.com/wFunctions/jMacro.html:
   description: null
   filename: jMacro.md
   headings:
@@ -11527,8 +11449,8 @@ www.docs.gointerject.comFunctions/jMacro.html:
   keywords: []
   layout: custom
   links: []
-  title: null
-www.docs.gointerject.comFunctions/jMerge.html:
+  title: jMacro()
+www.docs.gointerject.com/wFunctions/jMerge.html:
   description: null
   filename: jMerge.md
   headings:
@@ -11541,8 +11463,8 @@ www.docs.gointerject.comFunctions/jMerge.html:
   keywords: []
   layout: custom
   links: []
-  title: null
-www.docs.gointerject.comFunctions/jMergePoint.html:
+  title: jMerge()
+www.docs.gointerject.com/wFunctions/jMergePoint.html:
   description: null
   filename: jMergePoint.md
   headings:
@@ -11555,22 +11477,8 @@ www.docs.gointerject.comFunctions/jMergePoint.html:
   keywords: []
   layout: custom
   links: []
-  title: null
-www.docs.gointerject.comFunctions/jNavigate.html:
-  description: null
-  filename: jNavigate.md
-  headings:
-  - Function Summary
-  - Function Arguments
-  - Excel Formula Bar Example
-  - Function Composition
-  image_dir: ''
-  images: []
-  keywords: []
-  layout: custom
-  links: []
-  title: null
-www.docs.gointerject.comFunctions/jRangeTag.html:
+  title: jMergePoint()
+www.docs.gointerject.com/wFunctions/jRangeTag.html:
   description: The jRangeTag function simply tags a designated range with a name.
   filename: jRangeTag.md
   headings:
@@ -11589,7 +11497,7 @@ www.docs.gointerject.comFunctions/jRangeTag.html:
   links:
   - /wGetStarted/L-Export-BasicDist.html
   title: jRangeTag()
-www.docs.gointerject.comFunctions/jRequireValue.html:
+www.docs.gointerject.com/wFunctions/jRequireValue.html:
   description: null
   filename: jRequireValue.md
   headings:
@@ -11602,8 +11510,8 @@ www.docs.gointerject.comFunctions/jRequireValue.html:
   keywords: []
   layout: custom
   links: []
-  title: null
-www.docs.gointerject.comFunctions/jRun.html:
+  title: jRequireValue()
+www.docs.gointerject.com/wFunctions/jRun.html:
   description: null
   filename: jRun.md
   headings:
@@ -11616,8 +11524,8 @@ www.docs.gointerject.comFunctions/jRun.html:
   keywords: []
   layout: custom
   links: []
-  title: null
-www.docs.gointerject.comFunctions/jScope.html:
+  title: jRun()
+www.docs.gointerject.com/wFunctions/jScope.html:
   description: null
   filename: jScope.md
   headings:
@@ -11630,8 +11538,8 @@ www.docs.gointerject.comFunctions/jScope.html:
   keywords: []
   layout: custom
   links: []
-  title: null
-www.docs.gointerject.comFunctions/jSetting.html:
+  title: jScope()
+www.docs.gointerject.com/wFunctions/jSetting.html:
   description: The jSetting function is a simple way to create a Tag/Value pair that
     can be used internally by the Interject system.
   filename: jSetting.md
@@ -11651,7 +11559,7 @@ www.docs.gointerject.comFunctions/jSetting.html:
   links:
   - /wIndex/QuickTools-Names.html#appending-a-prefix-andor-suffix-to-a-name
   title: jSetting()
-www.docs.gointerject.comFunctions/jTabName.html:
+www.docs.gointerject.com/wFunctions/jTabName.html:
   description: null
   filename: jTabName.md
   headings:
@@ -11664,8 +11572,8 @@ www.docs.gointerject.comFunctions/jTabName.html:
   keywords: []
   layout: custom
   links: []
-  title: null
-www.docs.gointerject.comFunctions/jWorkbookProperty.html:
+  title: jTabName()
+www.docs.gointerject.com/wFunctions/jWorkbookProperty.html:
   description: The jWorkbookProperty function extracts information from the properties
     of the workbook.
   filename: jWorkbookProperty.md
@@ -11685,9 +11593,9 @@ www.docs.gointerject.comFunctions/jWorkbookProperty.html:
   layout: custom
   links:
   - /wGetStarted/L-Create-InventoryFixed.html#jworkbookproperty
-  - /wAbout/Report-Library-Basics.html#using-the-report-library
+  - /wAbout/Report-Library-Basics.html
   title: jWorkbookProperty()
-www.docs.gointerject.comGetStarted/Creating-a-Simple-Report.html:
+www.docs.gointerject.com/wGetStarted/Creating-a-Simple-Report.html:
   description: Now that you know how to modify reports, you can take it one step further.
     In this section, you will create an Interject report completely from scratch.
     To make things easy, recreate a sheet from our previous examples that you are
@@ -11710,7 +11618,7 @@ www.docs.gointerject.comGetStarted/Creating-a-Simple-Report.html:
   - /wGetStarted/L-Create-CustomerOrders.html
   - /wFunctions/ReportRange.html
   title: Creating a Simple Report
-www.docs.gointerject.comGetStarted/Creating-with-INTERJECT.html:
+www.docs.gointerject.com/wGetStarted/Creating-with-INTERJECT.html:
   description: This section is for report writers who need to create or modify reports.
     You will run through basic modification, creation, and publishing of reports.
   filename: Creating-with-INTERJECT.md
@@ -11739,7 +11647,7 @@ www.docs.gointerject.comGetStarted/Creating-with-INTERJECT.html:
   layout: custom
   links:
   - mailto:help@gointerject.com
-  - https://docs.gointerject.comLabs/lab.html
+  - https://docs.gointerject.com/wLabs/lab.html
   - /wGetStarted/Modifying-an-Existing-Report.html
   - /wGetStarted/L-Modify-CustomerAging.html
   - /wGetStarted/L-Modify-InventoryReport.html
@@ -11767,7 +11675,7 @@ www.docs.gointerject.comGetStarted/Creating-with-INTERJECT.html:
   - /wGetStarted/L-Create-RunOnOpen.html
   - /wGetStarted/Exporting-Reports.html
   title: Creating with Interject
-www.docs.gointerject.comGetStarted/Drilling-Between-Reports.html:
+www.docs.gointerject.com/wGetStarted/Drilling-Between-Reports.html:
   description: The Interject drill feature allows you to connect individual reports
     together to make a simple, fast, and intuitive experience for users to get to
     the data they use everyday. In this walkthrough you will view drilling between
@@ -11793,7 +11701,7 @@ www.docs.gointerject.comGetStarted/Drilling-Between-Reports.html:
   - /wGetStarted/L-Drill-DrillCodes.html
   - /wGetStarted/L-Drill-TheThreeWays.html
   title: Drilling Between Reports
-www.docs.gointerject.comGetStarted/Exporting-Reports.html:
+www.docs.gointerject.com/wGetStarted/Exporting-Reports.html:
   description: How to export reports either individually or in a batch by publishing
     or exporting.
   filename: Exporting-Reports.md
@@ -11823,7 +11731,7 @@ www.docs.gointerject.comGetStarted/Exporting-Reports.html:
   - /wGetStarted/L-Export-BasicDist.html
   - /wGetStarted/L-Export-AdvancedDist.html
   title: Exporting Reports
-www.docs.gointerject.comGetStarted/Fixed-and-Variable-Reports.html:
+www.docs.gointerject.com/wGetStarted/Fixed-and-Variable-Reports.html:
   description: This section demonstrates additional Report Formulas such as ReportFixed
     and ReportVariable.
   filename: Fixed-and-Variable-Reports.md
@@ -11855,7 +11763,7 @@ www.docs.gointerject.comGetStarted/Fixed-and-Variable-Reports.html:
   - /wGetStarted/L-Create-CustomerAgingDetail.html
   - /wAbout/Customer-Aging.html
   title: Fixed and Variable Reports
-www.docs.gointerject.comGetStarted/INTERJECT-Ribbon-Menu-Items.html:
+www.docs.gointerject.com/wGetStarted/INTERJECT-Ribbon-Menu-Items.html:
   description: Overviews of each button in the Interject Excel Ribbon.
   filename: INTERJECT-Ribbon-Menu-Items.md
   headings:
@@ -12284,7 +12192,7 @@ www.docs.gointerject.comGetStarted/INTERJECT-Ribbon-Menu-Items.html:
   - https://docs.gointerject.com/
   - /wTroubleshoot/Reporting-A-Problem.html
   title: Interject Ribbon Menu Items
-www.docs.gointerject.comGetStarted/L-Create-AdvancedHideRowsSections.html:
+www.docs.gointerject.com/wGetStarted/L-Create-AdvancedHideRowsSections.html:
   description: In this example of the ReportHideRowOrColumn function, we will hide
     an entire section of a report based on the condition that the section is empty.
     You would typically use this in a report when data is pulled in with zero values.
@@ -12402,7 +12310,7 @@ www.docs.gointerject.comGetStarted/L-Create-AdvancedHideRowsSections.html:
   - /wAbout/Report-Library-Basics.html
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html
   title: Advanced Row and Section Hiding
-www.docs.gointerject.comGetStarted/L-Create-CustomerAging.html:
+www.docs.gointerject.com/wGetStarted/L-Create-CustomerAging.html:
   description: In this page you will see the process of building a Customer Aging
     report from scratch to better understand reports and also get a clearer illustration
     of the Interject Report Range data function
@@ -12619,14 +12527,14 @@ www.docs.gointerject.comGetStarted/L-Create-CustomerAging.html:
   links:
   - /wFunctions/ReportRange.html
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder
-  - /wApps/Common-Dataportal-Index.html
+  - /wIndex/Common-Dataportal-Index.html
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data
   - /wFunctions/jFreezePanes.html
   - /wFunctions/jFocus.html
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools
   - /wAbout/ReportLibraryLinks.html
   title: 'Create: Customer Aging Report'
-www.docs.gointerject.comGetStarted/L-Create-CustomerAgingDetail.html:
+www.docs.gointerject.com/wGetStarted/L-Create-CustomerAgingDetail.html:
   description: This example uses the Customer Aging demo to show the creation of a
     Customer Aging Detail report that will have variable customer subtotaled sections,
     each having their respective invoice detail. You will use both the ReportRange()
@@ -12977,7 +12885,7 @@ www.docs.gointerject.comGetStarted/L-Create-CustomerAgingDetail.html:
   - /wFunctions/Event-Functions-Landing.html
   - /wAbout/ReportLibraryLinks.html
   title: 'Create: Customer Aging Detail Report'
-www.docs.gointerject.comGetStarted/L-Create-CustomerOrders.html:
+www.docs.gointerject.com/wGetStarted/L-Create-CustomerOrders.html:
   description: This page illustrates the process of building a Customer Order report
     from scratch and uses the multi-row option to provide a more advanced presentation.
   filename: L-Create-CustomerOrders.md
@@ -13285,14 +13193,14 @@ www.docs.gointerject.comGetStarted/L-Create-CustomerOrders.html:
   - /wFunctions/jFreezePanes.html
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder
   - /wIndex/Common-Dataportal-Index.html
-  - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pulldata
+  - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data
   - /wFunctions/ReportRange.html
   - /wFunctions/jFreezePanes.html
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools
   - /wAbout/ReportLibraryLinks.html
   - /wFunctions/ReportLookup.html
   title: 'Create: Customer Orders Report'
-www.docs.gointerject.comGetStarted/L-Create-Dropdowns.html:
+www.docs.gointerject.com/wGetStarted/L-Create-Dropdowns.html:
   description: The jDropdown formula is used for filtering on multiple parameters.
   filename: L-Create-Dropdowns.md
   headings:
@@ -13507,14 +13415,14 @@ www.docs.gointerject.comGetStarted/L-Create-Dropdowns.html:
   links:
   - /wFunctions/jDropdown.html
   - /wGetStarted/L-Create-CustomerAging.html
-  - https://docs.gointerject.comDeveloper/L-Dev-jDropdowns.html
+  - https://docs.gointerject.com/wDeveloper/L-Dev-jDropdowns.html
   - /wAbout/Report-Library-Basics.html
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html
-  - https://docs.gointerject.comAbout/Basics-of-Report-Formulas.html#column-definitions
-  - https://docs.gointerject.comFunctions/jDropdown.html
+  - https://docs.gointerject.com/wAbout/Basics-of-Report-Formulas.html#column-definitions
+  - https://docs.gointerject.com/wFunctions/jDropdown.html
   - /wDeveloper/L-Dev-jDropdowns.html
   title: 'Create: Building jDropdowns'
-www.docs.gointerject.comGetStarted/L-Create-FinancialVariable.html:
+www.docs.gointerject.com/wGetStarted/L-Create-FinancialVariable.html:
   description: In this example you are going to use the Financial Cube (FinCube) Data
     Portal to create a financial statement from scratch. First you will use the ReportRange()
     formula to review the financial group summaries for a location. With the financial
@@ -13944,7 +13852,7 @@ www.docs.gointerject.comGetStarted/L-Create-FinancialVariable.html:
   - /wIndex/FinCubeTheFinancialCube.html
   - /wAbout/ReportLibraryLinks.html
   title: 'Create: Financial Variable Report'
-www.docs.gointerject.comGetStarted/L-Create-HideRowCol.html:
+www.docs.gointerject.com/wGetStarted/L-Create-HideRowCol.html:
   description: The ReportHideRowOrColumn() function allows you to hide rows columns
     when they are not needed, for example if a row contains no data. In the first
     example, you will hide rows containing a total value of zero. The second example
@@ -14137,7 +14045,7 @@ www.docs.gointerject.comGetStarted/L-Create-HideRowCol.html:
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html
   - /wAbout/ReportLibraryLinks.html
   title: 'Create: Hiding Rows and Columns'
-www.docs.gointerject.comGetStarted/L-Create-InventoryFixed.html:
+www.docs.gointerject.com/wGetStarted/L-Create-InventoryFixed.html:
   description: In this page, you will go through the process of building a fixed Inventory
     report from scratch using the ReportFixed() function.
   filename: L-Create-InventoryFixed.md
@@ -14369,7 +14277,7 @@ www.docs.gointerject.comGetStarted/L-Create-InventoryFixed.html:
   - /wGetStarted/L-Create-RunOnOpen.html
   - /wFunctions/jWorkbookProperty.html
   title: 'Create: Inventory Fixed Report'
-www.docs.gointerject.comGetStarted/L-Create-InventoryVariable.html:
+www.docs.gointerject.com/wGetStarted/L-Create-InventoryVariable.html:
   description: The ReportVariable() function directs data into multiple specified
     ranges of a report that can grow and shrink with the data. It is ideal for a financial
     report or any report that has subtotaled sections.In this example, you will use
@@ -14601,7 +14509,7 @@ www.docs.gointerject.comGetStarted/L-Create-InventoryVariable.html:
   - /wFunctions/Event-Functions-Landing.html
   - /wAbout/ReportLibraryLinks.html
   title: 'Create: Inventory Variable'
-www.docs.gointerject.comGetStarted/L-Create-PivotTable.html:
+www.docs.gointerject.com/wGetStarted/L-Create-PivotTable.html:
   description: Pivot tables are a flexible and valuable tool for analyzing data in
     Excel. Interject makes it easier to scale and distribute pivot tables. In this
     walkthrough you will set up a pivot table based on an Interject report.
@@ -14856,9 +14764,9 @@ www.docs.gointerject.comGetStarted/L-Create-PivotTable.html:
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data
-  - /wAbout/Customer-Aging.html#CustomerAging-pivot
+  - /wAbout/Customer-Aging.html#moving-to-a-pivot-table
   title: 'Create: Working with Pivot Tables'
-www.docs.gointerject.comGetStarted/L-Create-Protecting.html:
+www.docs.gointerject.com/wGetStarted/L-Create-Protecting.html:
   description: Interject provides an improved method to handle protecting sheets.
     The Sheet Protector window allows Interject users with the Client Admin role to
     quickly protect or unprotect the sheet without any need to know the password.
@@ -15054,7 +14962,7 @@ www.docs.gointerject.comGetStarted/L-Create-Protecting.html:
   - /wPortal/INTERJECT-Roles.html
   - /wGetStarted/L-Create-CustomerAging.html
   title: 'Create: Protecting Sheets'
-www.docs.gointerject.comGetStarted/L-Create-ReportMacro.html:
+www.docs.gointerject.com/wGetStarted/L-Create-ReportMacro.html:
   description: ReportMacro is an Excel formula provided by Interject. It allows Interject
     to interact with publicly defined VBA functions on a report. ReportMacro is useful
     for specialized reports where a customized action needs to be taken. This action
@@ -15221,7 +15129,7 @@ www.docs.gointerject.comGetStarted/L-Create-ReportMacro.html:
   - /wFunctions/ReportRange.html
   - /wAbout/Customer-Aging.html
   title: 'Create: Using Report Macro'
-www.docs.gointerject.comGetStarted/L-Create-RetainFeature.html:
+www.docs.gointerject.com/wGetStarted/L-Create-RetainFeature.html:
   description: When using Interject to pull data into your spreadsheet, the report
     area will be cleared before new data is inserted. This is typically done by the
     deletion of rows. In some situations, you may want to avoid this clear action
@@ -15393,7 +15301,7 @@ www.docs.gointerject.comGetStarted/L-Create-RetainFeature.html:
   - /wFunctions/ReportVariable.html
   - /wFunctions/jCombine.html
   title: 'Create: Using the Retain Feature'
-www.docs.gointerject.comGetStarted/L-Create-RunOnOpen.html:
+www.docs.gointerject.com/wGetStarted/L-Create-RunOnOpen.html:
   description: Use this property to auto-pull the report when opening for the first
     tab that appears. No VBA required.
   filename: L-Create-RunOnOpen.md
@@ -15465,7 +15373,7 @@ www.docs.gointerject.comGetStarted/L-Create-RunOnOpen.html:
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#diagnostics
   - /wAbout/Report-Library-Basics.html
   title: 'Create: Interject Run On Open'
-www.docs.gointerject.comGetStarted/L-Create-SpecColDefs.html:
+www.docs.gointerject.com/wGetStarted/L-Create-SpecColDefs.html:
   description: Interject's Special Column Definitions are a convenient way you can
     customize a cell and provide additional features to your reports.
   filename: L-Create-SpecColDefs.md
@@ -15484,7 +15392,7 @@ www.docs.gointerject.comGetStarted/L-Create-SpecColDefs.html:
     ribbon: ''
     site: Add-in
     sub: ''
-    type: jpg
+    type: png
   - cat: Quick Tools
     config: ''
     file: '01'
@@ -15625,7 +15533,7 @@ www.docs.gointerject.comGetStarted/L-Create-SpecColDefs.html:
   links:
   - /wGetStarted/L-Modify-CustomerAging.html
   title: 'Create: Special Column Definitions'
-www.docs.gointerject.comGetStarted/L-Drill-CustomerAging.html:
+www.docs.gointerject.com/wGetStarted/L-Drill-CustomerAging.html:
   description: In this example, you will be setting up a simple drill to the customer
     orders history. It is a great use case for creating your first drill.
   filename: L-Drill-CustomerAging.md
@@ -15753,7 +15661,7 @@ www.docs.gointerject.comGetStarted/L-Drill-CustomerAging.html:
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html
   - /wAbout/ReportLibraryLinks.html
   title: 'Drill: Customer Aging Report'
-www.docs.gointerject.comGetStarted/L-Drill-DrillCodes.html:
+www.docs.gointerject.com/wGetStarted/L-Drill-DrillCodes.html:
   description: Interject also gives its users the flexibility in drilling data not
     only to a different sheet within Excel but a separate workbook altogether.
   filename: L-Drill-DrillCodes.md
@@ -15900,7 +15808,7 @@ www.docs.gointerject.comGetStarted/L-Drill-DrillCodes.html:
   - '#opening-the-report-and-drilling'
   - /wIndex/QuickTools-Panes.html#freezeunfreeze-panes
   title: 'Drill: Drilling to a Separate Workbook'
-www.docs.gointerject.comGetStarted/L-Drill-FinancialReport.html:
+www.docs.gointerject.com/wGetStarted/L-Drill-FinancialReport.html:
   description: This is a drill for the PL Trend report that was created in a previous
     walkthrough. This time you will be drilling to a separate workbook instead of
     to another worksheet.
@@ -16133,7 +16041,7 @@ www.docs.gointerject.comGetStarted/L-Drill-FinancialReport.html:
   - /wFunctions/PairGroup.html
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html
   title: 'Drill: Financial Report'
-www.docs.gointerject.comGetStarted/L-Drill-InventoryReport.html:
+www.docs.gointerject.com/wGetStarted/L-Drill-InventoryReport.html:
   description: In this example, you will view drilling between reports using the same
     Inventory reports created during the Real World Inventory Walkthrough. You will
     set up a drill from the Inventory by Category tab to the Inventory by Detail tab
@@ -16298,7 +16206,7 @@ www.docs.gointerject.comGetStarted/L-Drill-InventoryReport.html:
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html
   - /wGetStarted/L-Drill-FinancialReport.html
   title: 'Drill: Inventory Report'
-www.docs.gointerject.comGetStarted/L-Drill-TheThreeWays.html:
+www.docs.gointerject.com/wGetStarted/L-Drill-TheThreeWays.html:
   description: Interject facilitates three different ways to drill. Each method is
     easy to choose the best one different situations.
   filename: L-Drill-TheThreeWays.md
@@ -16397,7 +16305,7 @@ www.docs.gointerject.comGetStarted/L-Drill-TheThreeWays.html:
   - /wAbout/Customer-Aging.html
   - https://support.office.com/en-us/article/View-or-change-the-properties-for-an-Office-file-21D604C2-481E-4379-8E54-1DD4622C6B75
   title: The Three Ways to Drill
-www.docs.gointerject.comGetStarted/L-Export-AdvancedDist.html:
+www.docs.gointerject.com/wGetStarted/L-Export-AdvancedDist.html:
   description: There are a number of different options available for distributing
     reports as well as naming workbooks and individual sheets. In this example, you
     are going to explore some of the more advanced methods.
@@ -16656,7 +16564,7 @@ www.docs.gointerject.comGetStarted/L-Export-AdvancedDist.html:
   links:
   - /wGetStarted/L-Export-BasicDist.html
   title: 'Export: Advanced Distribution'
-www.docs.gointerject.comGetStarted/L-Export-BasicDist.html:
+www.docs.gointerject.com/wGetStarted/L-Export-BasicDist.html:
   description: The distribution process provides extensive control when creating and
     distributing reports. You can create one or more report workbooks and choose which
     worksheet tabs to include, create copies by iterating through different filters,
@@ -16849,11 +16757,11 @@ www.docs.gointerject.comGetStarted/L-Export-BasicDist.html:
   layout: custom
   links:
   - /wAbout/Financial-Report.html
-  - /wGetStarted/L-Export-AdvancedDist.html#Grouping-Segments
+  - /wGetStarted/L-Export-AdvancedDist.html#grouping-segments
   - https://portal.gointerject.com/profile.html
   - /wGetStarted/L-Export-AdvancedDist.html
   title: 'Export: Basic Distribution'
-www.docs.gointerject.comGetStarted/L-Export-QuickExportAndPDF.html:
+www.docs.gointerject.com/wGetStarted/L-Export-QuickExportAndPDF.html:
   description: The Quick Export and PDF method is the simplest way of distributing.
     The purpose of Quick Export is to build a new workbook from the current workbook
     and remove all the external links and Data Cell formulas so users without Interject
@@ -17006,7 +16914,7 @@ www.docs.gointerject.comGetStarted/L-Export-QuickExportAndPDF.html:
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#export-book
   - /wGetStarted/L-Export-BasicDist.html
   title: 'Export: Workbook, Sheet, and PDF'
-www.docs.gointerject.comGetStarted/L-Modify-CustomerAging.html:
+www.docs.gointerject.com/wGetStarted/L-Modify-CustomerAging.html:
   description: Here, you will modify the Customer Aging Demo used in the Customer
     Aging Walkthrough to show the total of invoices due from companies.
   filename: L-Modify-CustomerAging.md
@@ -17206,7 +17114,7 @@ www.docs.gointerject.comGetStarted/L-Modify-CustomerAging.html:
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html
   - /wAbout/ReportLibraryLinks.html
   title: 'Modify: Customer Aging Report'
-www.docs.gointerject.comGetStarted/L-Modify-FinancialReport.html:
+www.docs.gointerject.com/wGetStarted/L-Modify-FinancialReport.html:
   description: Modify a monthly trend report which could easily be modified to accommodate
     a budget-to-actual comparison report, showing monthly and year-to-date differences.
   filename: L-Modify-FinancialReport.md
@@ -17440,7 +17348,7 @@ www.docs.gointerject.comGetStarted/L-Modify-FinancialReport.html:
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data
   - /wAbout/ReportLibraryLinks.html
   title: 'Modify: Financial Report'
-www.docs.gointerject.comGetStarted/L-Modify-InventoryReport.html:
+www.docs.gointerject.com/wGetStarted/L-Modify-InventoryReport.html:
   description: In this example you will be modifying a fixed report, going over how
     to add a row to the report as well as add a description column.
   filename: L-Modify-InventoryReport.md
@@ -17641,7 +17549,7 @@ www.docs.gointerject.comGetStarted/L-Modify-InventoryReport.html:
   - /wFunctions/jFreezePanes.html
   - /wAbout/ReportLibraryLinks.html
   title: 'Modify: Inventory Report'
-www.docs.gointerject.comGetStarted/Modifying-an-Existing-Report.html:
+www.docs.gointerject.com/wGetStarted/Modifying-an-Existing-Report.html:
   description: Many times in creating a report you don't have to start from scratch.
     Often it is faster to start with an existing report and make the modifications
     you need. On this page, you will read through three scenarios in which modifying
@@ -17667,7 +17575,7 @@ www.docs.gointerject.comGetStarted/Modifying-an-Existing-Report.html:
   - /wGetStarted/L-Modify-FinancialReport.html
   - /wAbout/Financial-Report.html
   title: Modifying an Existing Report
-www.docs.gointerject.comGetStarted/RowDefinitionRange.html:
+www.docs.gointerject.com/wGetStarted/RowDefinitionRange.html:
   description: null
   filename: RowDefinitionRange.md
   headings:
@@ -17775,42 +17683,11 @@ www.docs.gointerject.comGetStarted/RowDefinitionRange.html:
   layout: custom
   links:
   - /wGetStarted/Fixed-and-Variable-Reports.html
-  - /wIndex/InterjectConfig_Settings.html
+  - /wIndex/QuickTools-Names.md#appending-a-prefix-andor-suffix-to-a-name
   - /wFunctions/ReportFixed.html#function-arguments
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#system
   title: Advanced Principles for the Row Definition Range
-www.docs.gointerject.comGetStarted/Simple-Data-Pull.html:
-  description: To clearly illustrate the end-to-end workflow of developing a report,
-    you can begin with several simple data pull examples showing different report
-    configurations. You will be reusing Interject reports used in previous sections,
-    because these should be familiar to you if you read this documentation from the
-    beginning.
-  filename: Simple-Data-Pull.md
-  headings:
-  - Overview
-  - Understanding the Business Use Case
-  - Customer Aging
-  - Customer Orders
-  - jDropdowns
-  image_dir: ''
-  images: []
-  keywords:
-  - data
-  - pull
-  - develop
-  - build
-  - create
-  - jdropdown
-  layout: custom
-  links:
-  - /wAbout/Customer-Aging.html
-  - /wDeveloper/L-Dev-CustomerAging.html
-  - /wAbout/Customer-Aging.html
-  - /wDeveloper/L-Dev-CustomerOrders.html
-  - /wGetStarted/L-Create-CustomerOrders.html
-  - /wDeveloper/L-Dev-jDropdowns.html
-  title: Simple Data Pull
-www.docs.gointerject.comIndex/Common-Dataportal-Index.html:
+www.docs.gointerject.com/wIndex/Common-Dataportal-Index.html:
   description: These are a few common data portals used in Interject for specific,
     supported applications. The exact data portal code may vary depending on the Interject
     implementation.
@@ -17830,7 +17707,7 @@ www.docs.gointerject.comIndex/Common-Dataportal-Index.html:
   - /wIndex/FinCubeTheFinancialCube.html
   - /wIndex/SegmentInfoSegmentSearch.html
   title: Common Data Portal Index
-www.docs.gointerject.comIndex/Diagnostics-ClearDataCellCache.html:
+www.docs.gointerject.com/wIndex/Diagnostics-ClearDataCellCache.html:
   description: The "Clear Data Cell Cache" command in our Diagnostics form is essential
     for maintaining the accuracy and freshness of data in your reports. Data cells
     are individual cells in an Excel report that retrieve data directly from a source.
@@ -17880,7 +17757,7 @@ www.docs.gointerject.comIndex/Diagnostics-ClearDataCellCache.html:
   layout: custom
   links: []
   title: Diagnostics - Clear Data Cell Cache
-www.docs.gointerject.comIndex/Diagnostics-ClearErrorLog.html:
+www.docs.gointerject.com/wIndex/Diagnostics-ClearErrorLog.html:
   description: Interject keeps an encrypted error log locally in order to record errors
     as they happen and improve user support. The "Clear Error Log" from Diagnostics
     will clear this log.
@@ -17914,7 +17791,7 @@ www.docs.gointerject.comIndex/Diagnostics-ClearErrorLog.html:
   - /wIndex/SettingsCache.html
   - /wTroubleshoot/Reporting-A-Problem.html#send-report-to-interject
   title: Diagnostics - Clear Error Log
-www.docs.gointerject.comIndex/Diagnostics-DoubleClick.html:
+www.docs.gointerject.com/wIndex/Diagnostics-DoubleClick.html:
   description: The Diagnostics "Toggle Double Click Events" will allow you to enable
     double clicking on a cell to open the drill form.
   filename: Diagnostics-DoubleClick.md
@@ -17961,7 +17838,7 @@ www.docs.gointerject.comIndex/Diagnostics-DoubleClick.html:
   layout: custom
   links: []
   title: Diagnostics - Toggle Double Click Events
-www.docs.gointerject.comIndex/Diagnostics-FindAllFormulas.html:
+www.docs.gointerject.com/wIndex/Diagnostics-FindAllFormulas.html:
   description: The Diagnostic command "Find All Workbook Formulas" will display information
     about every Interject formula in the active workbook. Depending on which line
     is first in the input field, it will output to several different formats.
@@ -18030,7 +17907,7 @@ www.docs.gointerject.comIndex/Diagnostics-FindAllFormulas.html:
   layout: custom
   links: []
   title: Diagnostics - Find All Workbook Formulas
-www.docs.gointerject.comIndex/Diagnostics-GarbageCollection.html:
+www.docs.gointerject.com/wIndex/Diagnostics-GarbageCollection.html:
   description: The "Force Garbage Collection on Dead Memory" command in our Diagnostics
     form is a powerful tool designed to optimize memory usage by explicitly invoking
     the garbage collection process.
@@ -18051,7 +17928,7 @@ www.docs.gointerject.comIndex/Diagnostics-GarbageCollection.html:
   layout: custom
   links: []
   title: Diagnostics - Force Garbage Collection on Dead Memory
-www.docs.gointerject.comIndex/Diagnostics-ListDataPortals.html:
+www.docs.gointerject.com/wIndex/Diagnostics-ListDataPortals.html:
   description: The "List Data Portals" command in our Excel add-in diagnostics form
     outputs a comprehensive list of all data portals associated with the company in
     RTF (Rich Text Format).
@@ -18090,7 +17967,7 @@ www.docs.gointerject.comIndex/Diagnostics-ListDataPortals.html:
   layout: custom
   links: []
   title: Diagnostics - List Data Portals
-www.docs.gointerject.comIndex/Diagnostics-ReinitiateInterject.html:
+www.docs.gointerject.com/wIndex/Diagnostics-ReinitiateInterject.html:
   description: The "Re-initiate Interject" from the Diagnostics form sets up basic
     information for Interject to initialize for the first time. It will also reset
     any global settings and other settings if Interject has already been initialized.
@@ -18115,7 +17992,7 @@ www.docs.gointerject.comIndex/Diagnostics-ReinitiateInterject.html:
   layout: custom
   links: []
   title: Diagnostics - Re-initiate Interject
-www.docs.gointerject.comIndex/Diagnostics-ReplaceDataPortalCodes.html:
+www.docs.gointerject.com/wIndex/Diagnostics-ReplaceDataPortalCodes.html:
   description: The Diagnostics "Replace Data Portal Codes" command will replace all
     data portal codes in the current active workbook. This makes it handy to replace
     only the codes that are currently in Interject formulas and not elsewhere.
@@ -18146,7 +18023,7 @@ www.docs.gointerject.comIndex/Diagnostics-ReplaceDataPortalCodes.html:
   layout: custom
   links: []
   title: Diagnostics - Replace Data Portal Codes
-www.docs.gointerject.comIndex/Diagnostics-ShortKey.html:
+www.docs.gointerject.com/wIndex/Diagnostics-ShortKey.html:
   description: The "Change ShortKey" feature allows users to change the shortcut key
     for certain Interject actions.
   filename: Diagnostics-ShortKey.md
@@ -18200,9 +18077,9 @@ www.docs.gointerject.comIndex/Diagnostics-ShortKey.html:
   - keyboard
   layout: custom
   links:
-  - /wIndex/INTERJECT-Hotkey-Index.html#default-hotkey-index
+  - /wIndex/INTERJECT-Hotkey-Index.html#default-shortkey-index
   title: Diagnostics - Change ShortKey
-www.docs.gointerject.comIndex/Diagnostics-SpecialFeatures.html:
+www.docs.gointerject.com/wIndex/Diagnostics-SpecialFeatures.html:
   description: The "Apply Special Features" in the Interject Diagnostics Pane allows
     users to apply certain configurations and bug fixes.
   filename: Diagnostics-SpecialFeatures.md
@@ -18297,7 +18174,7 @@ www.docs.gointerject.comIndex/Diagnostics-SpecialFeatures.html:
   links:
   - /wDeveloper/MacroSecurity.html
   title: Diagnostics - Apply Special Features
-www.docs.gointerject.comIndex/Diagnostics.html:
+www.docs.gointerject.com/wIndex/Diagnostics.html:
   description: The Diagnostics feature of Interject allows users to set and change
     numerous configurations within Excel as well as utilize various tools for diagnostics
     and debugging.
@@ -18381,7 +18258,7 @@ www.docs.gointerject.comIndex/Diagnostics.html:
   - /wIndex/Diagnostics-ClearErrorLog.html
   - /wIndex/Diagnostics-ReinitiateInterject.html
   title: Diagnostics
-www.docs.gointerject.comIndex/Excel-Best-and-Worst-Practices.html:
+www.docs.gointerject.com/wIndex/Excel-Best-and-Worst-Practices.html:
   description: Defines the best practices of using Excel with Interject.
   filename: Excel-Best-and-Worst-Practices.md
   headings:
@@ -18470,7 +18347,7 @@ www.docs.gointerject.comIndex/Excel-Best-and-Worst-Practices.html:
   - /wFunctions/ReportRange.html
   - https://support.microsoft.com/en-us/office/change-the-default-resolution-for-inserting-pictures-in-office-f4aca5b4-6332-48c6-9488-bf5e0094a7d2#ID0EBF=Windows
   title: Excel Best and Worst Practices
-www.docs.gointerject.comIndex/FinCubeTheFinancialCube.html:
+www.docs.gointerject.com/wIndex/FinCubeTheFinancialCube.html:
   description: The FinCube is a single Data Portal that supports a wide variety of
     reporting needs. It is included as part of the Interject Financials for Spreadsheets
     application, and many of the segments can be customized for specific needs.
@@ -18527,7 +18404,7 @@ www.docs.gointerject.comIndex/FinCubeTheFinancialCube.html:
   links:
   - /wFunctions/jColumnDef.html
   title: FinCube - The Financial Cube
-www.docs.gointerject.comIndex/INTERJECT-Hotkey-Index.html:
+www.docs.gointerject.com/wIndex/INTERJECT-Hotkey-Index.html:
   description: Interject provides ways to increase productivity and work flow by utilizing
     shortkeys to quickly perform Interject actions.
   filename: INTERJECT-Hotkey-Index.md
@@ -18664,7 +18541,7 @@ www.docs.gointerject.comIndex/INTERJECT-Hotkey-Index.html:
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#export-book
   - /wIndex/Diagnostics-ShortKey.html
   title: Interject Shortkey Index
-www.docs.gointerject.comIndex/INTERJECT-Link-Index.html:
+www.docs.gointerject.com/wIndex/INTERJECT-Link-Index.html:
   description: Interject provides a way to perform some of the basic Interject functions
     by clicking on a link within the report.
   filename: INTERJECT-Link-Index.md
@@ -18731,7 +18608,7 @@ www.docs.gointerject.comIndex/INTERJECT-Link-Index.html:
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-library
   - /wIndex/QuickTools-Hyperlink.html
   title: Interject Hyperlinks
-www.docs.gointerject.comIndex/Quick-Tools-Landing.html:
+www.docs.gointerject.com/wIndex/Quick-Tools-Landing.html:
   description: The Quick Tools window provides a convenient set of macro tools suggested
     by our users.
   filename: Quick-Tools-Landing.md
@@ -18767,9 +18644,9 @@ www.docs.gointerject.comIndex/Quick-Tools-Landing.html:
   - /wIndex/QuickTools-Format.html#center-across-columns
   - /wIndex/QuickTools-Format.html#remove-wrap
   - /wIndex/QuickTools-Format.html#inverse-sign
-  - /wIndex/QuickTools-Format.html#to-lower-case
-  - /wIndex/QuickTools-Format.html#to-proper-case
-  - /wIndex/QuickTools-Format.html#to-upper-case
+  - /wIndex/QuickTools-Format.html#to-lower-case-to-proper-case-to-upper-case
+  - /wIndex/QuickTools-Format.html#to-lower-case-to-proper-case-to-upper-case
+  - /wIndex/QuickTools-Format.html#to-lower-case-to-proper-case-to-upper-case
   - /wIndex/QuickTools-Format.html#trim-values
   - /wIndex/QuickTools-Formula.html#remove-external-references
   - /wIndex/QuickTools-Edit.html#blanks-to-zeros
@@ -18786,7 +18663,7 @@ www.docs.gointerject.comIndex/Quick-Tools-Landing.html:
   - /wIndex/QuickTools-Other.html#unique-list-from-selection
   - /wIndex/QuickTools-Other.html#unhide-all-sheets
   title: Quick Tools
-www.docs.gointerject.comIndex/QuickTools-Edit.html:
+www.docs.gointerject.com/wIndex/QuickTools-Edit.html:
   description: The Edit Tools within Quick Tools deal with the editing of numeric
     values and objects.
   filename: QuickTools-Edit.md
@@ -18862,7 +18739,7 @@ www.docs.gointerject.comIndex/QuickTools-Edit.html:
   layout: custom
   links: []
   title: Quick Tools - Edit Tools
-www.docs.gointerject.comIndex/QuickTools-Format.html:
+www.docs.gointerject.com/wIndex/QuickTools-Format.html:
   description: The Format Tools within Quick Tools deal with the formatting of text
     and cells
   filename: QuickTools-Format.md
@@ -18992,7 +18869,7 @@ www.docs.gointerject.comIndex/QuickTools-Format.html:
   layout: custom
   links: []
   title: Quick Tools - Format Tools
-www.docs.gointerject.comIndex/QuickTools-Formula.html:
+www.docs.gointerject.com/wIndex/QuickTools-Formula.html:
   description: The Formula Tools within Quick Tools deal with formulas.
   filename: QuickTools-Formula.md
   headings:
@@ -19039,7 +18916,7 @@ www.docs.gointerject.comIndex/QuickTools-Formula.html:
   layout: custom
   links: []
   title: Quick Tools - Formula Tools
-www.docs.gointerject.comIndex/QuickTools-Hyperlink.html:
+www.docs.gointerject.com/wIndex/QuickTools-Hyperlink.html:
   description: The Hyperlink Tools within Quick Tools deal with Interject Hyperlinks.
   filename: QuickTools-Hyperlink.md
   headings:
@@ -19178,7 +19055,7 @@ www.docs.gointerject.comIndex/QuickTools-Hyperlink.html:
   links:
   - /wIndex/INTERJECT-Link-Index.html
   title: Quick Tools - Hyperlink Tools
-www.docs.gointerject.comIndex/QuickTools-Names.html:
+www.docs.gointerject.com/wIndex/QuickTools-Names.html:
   description: The Names Tools within Quick Tools deal with defined names.
   filename: QuickTools-Names.md
   headings:
@@ -19420,7 +19297,7 @@ www.docs.gointerject.comIndex/QuickTools-Names.html:
   links:
   - /wFunctions/jSetting.html
   title: Quick Tools - Names Tools
-www.docs.gointerject.comIndex/QuickTools-Other.html:
+www.docs.gointerject.com/wIndex/QuickTools-Other.html:
   description: The Other Tools within Quick Tools are a collection of miscellaneous
     tools.
   filename: QuickTools-Other.md
@@ -19478,7 +19355,7 @@ www.docs.gointerject.comIndex/QuickTools-Other.html:
   layout: custom
   links: []
   title: Quick Tools - Other Tools
-www.docs.gointerject.comIndex/QuickTools-Panes.html:
+www.docs.gointerject.com/wIndex/QuickTools-Panes.html:
   description: The Panes Tools within the Quick Tools deal with the window panes in
     Excel
   filename: QuickTools-Panes.md
@@ -19507,7 +19384,7 @@ www.docs.gointerject.comIndex/QuickTools-Panes.html:
   - /wGetStarted/L-Create-CustomerAging.html#setting-up-jfreezepanes
   - /wFunctions/jFreezePanes.html
   title: Quick Tools - Panes Tools
-www.docs.gointerject.comIndex/Report-Formula-Reviews.html:
+www.docs.gointerject.com/wIndex/Report-Formula-Reviews.html:
   description: Reviewing the Interject report formulas for accuracy is a vital step
     in eliminating report errors. This page shows two tools that help with these formulas&#58;
     Excel's Function Wizard and Interject's Cell Formula Review.
@@ -19617,7 +19494,7 @@ www.docs.gointerject.comIndex/Report-Formula-Reviews.html:
   - https://support.microsoft.com/en-au/office/using-functions-and-nested-functions-in-excel-formulas-3f4cf298-ded7-4f91-bc80-607533b65f02
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#advanced-menu-items
   title: Reviewing Report Formulas
-www.docs.gointerject.comIndex/ReportBuilder.html:
+www.docs.gointerject.com/wIndex/ReportBuilder.html:
   description: The Report Builder is a tool in the Interject Addin to easily create
     a report based on the settings in a Data Portal.
   filename: ReportBuilder.md
@@ -19733,7 +19610,7 @@ www.docs.gointerject.comIndex/ReportBuilder.html:
   links:
   - /wPortal/Data-Portals.html
   title: Report Builder
-www.docs.gointerject.comIndex/SegmentInfoSegmentSearch.html:
+www.docs.gointerject.com/wIndex/SegmentInfoSegmentSearch.html:
   description: Segments is a Data Portal which allows you to filter for every segment
     within your chart of accounts and allows you to use your groupings within your
     filter choices.
@@ -19753,7 +19630,7 @@ www.docs.gointerject.comIndex/SegmentInfoSegmentSearch.html:
   layout: custom
   links: []
   title: SegmentInfo - Segment Search
-www.docs.gointerject.comIndex/SettingsCache.html:
+www.docs.gointerject.com/wIndex/SettingsCache.html:
   description: Interject keeps multiple folders on your local drive for settings and
     a file cache. These folders help facilitate logging in, better performance, and
     functionality.
@@ -19806,7 +19683,7 @@ www.docs.gointerject.comIndex/SettingsCache.html:
   links:
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#advanced-menu-items
   title: Interject Settings and Cache
-www.docs.gointerject.comLabs/LabSetup.html:
+www.docs.gointerject.com/wLabs/LabSetup.html:
   description: This page details the necessary requirements and steps to set up a
     local environment that can accommodate a user following the Lab Guide.
   filename: LabSetup.md
@@ -19877,7 +19754,7 @@ www.docs.gointerject.comLabs/LabSetup.html:
   layout: custom
   links:
   - /wLabs/lab.html
-  - /wIndex/Excel-Function-Index.html
+  - /wFunctions/Excel-Function-Index.html
   - /wPortal/Data-Portals.html
   - /wPortal/The-INTERJECT-Website-Portal.html
   - '#step-1-setting-up-the-database'
@@ -19894,11 +19771,10 @@ www.docs.gointerject.comLabs/LabSetup.html:
   - /wPortal/L-Database-Connection.html
   - /wPortal/Data-Portals.html
   - /wIndex/FinCubeTheFinancialCube.html
-  - https://data-api.gointerject.com/api
   - /wAbout/Tabular-vs-Data-Cells.html
-  - /wIndex/Data-Cell-Functions.html
+  - /wFunctions/Data-Cell-Functions.html
   title: Manual Setup for the Lab Guide
-www.docs.gointerject.comLabs/lab.html:
+www.docs.gointerject.com/wLabs/lab.html:
   description: These labs are offered as an introductory course on the Interject®
     Add-In for Microsoft Excel®. By following this guide, you will be learn how to
     use the Interject Add-in to create and modify reports in Excel.
@@ -20017,7 +19893,7 @@ www.docs.gointerject.comLabs/lab.html:
   - /wDeveloper/L-Dev-InsertDeleteDataSave.html
   - /wDeveloper/L-Dev-ChangelogDataSave.html
   title: Lab Guide
-www.docs.gointerject.comPortal/AddUser.html:
+www.docs.gointerject.com/wPortal/AddUser.html:
   description: On the Portal site from the Staff page, ClientAdmins can add a user
     to their organization.
   filename: AddUser.md
@@ -20115,7 +19991,7 @@ www.docs.gointerject.comPortal/AddUser.html:
   - /wPortal/Altering-User-Passwords.html
   - /wPortal/INTERJECT-Roles.html
   title: Adding a User
-www.docs.gointerject.comPortal/Altering-User-Passwords.html:
+www.docs.gointerject.com/wPortal/Altering-User-Passwords.html:
   description: This is a section that displays how to reset an Interject user’s password
     under the conditions that they are not logged in or they are logged in.
   filename: Altering-User-Passwords.md
@@ -20182,7 +20058,7 @@ www.docs.gointerject.comPortal/Altering-User-Passwords.html:
   layout: custom
   links: []
   title: Changing &amp; Resetting User Passwords
-www.docs.gointerject.comPortal/Data-Connections.html:
+www.docs.gointerject.com/wPortal/Data-Connections.html:
   description: A Connection is used with Data Portals so Interject can connect to
     certain stored procedures within a database or to a custom website API.
   filename: Data-Connections.md
@@ -20202,7 +20078,7 @@ www.docs.gointerject.comPortal/Data-Connections.html:
   - /wPortal/L-Api-Connections.html
   - /wPortal/L-Database-Connection.html
   title: Data Connections
-www.docs.gointerject.comPortal/Data-Portals.html:
+www.docs.gointerject.com/wPortal/Data-Portals.html:
   description: A Data Portal uses a Data Connection to connect to either a stored
     procedure within a database or to a website API controller in a customer website
     API.
@@ -20307,9 +20183,9 @@ www.docs.gointerject.comPortal/Data-Portals.html:
   - /wIndex/ReportBuilder.html
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#custom-commands
   - /wIndex/ReportBuilder.html
-  - https://docs.gointerject.comDeveloper/Request-Context-Parse.html
+  - https://docs.gointerject.com/wDeveloper/Request-Context-Parse.html
   title: Data Portals
-www.docs.gointerject.comPortal/DownloadInterject.html:
+www.docs.gointerject.com/wPortal/DownloadInterject.html:
   description: The Download Interject page is where you can find the latest version
     of Interject as well as older versions.
   filename: DownloadInterject.md
@@ -20367,7 +20243,7 @@ www.docs.gointerject.comPortal/DownloadInterject.html:
   links:
   - /wDeveloper/InstallerValidation.html
   title: Download Interject
-www.docs.gointerject.comPortal/FolderPermissions.html:
+www.docs.gointerject.com/wPortal/FolderPermissions.html:
   description: null
   filename: FolderPermissions.md
   headings:
@@ -20395,7 +20271,7 @@ www.docs.gointerject.comPortal/FolderPermissions.html:
   links:
   - /wPortal/Roles.md#custom-roles
   title: Folder Permissions
-www.docs.gointerject.comPortal/INTERJECT-Roles.html:
+www.docs.gointerject.com/wPortal/INTERJECT-Roles.html:
   description: At the bottom of the User Profile page are the roles you currently
     have assigned to your profile. There are a number of roles to choose from. Roles
     can stack, meaning each role adds the associated permissions to the user.
@@ -20428,39 +20304,39 @@ www.docs.gointerject.comPortal/INTERJECT-Roles.html:
   - security
   layout: custom
   links:
-  - https://docs.gointerject.comPortal/User-Profile.html
+  - https://docs.gointerject.com/wPortal/User-Profile.html
   - /wPortal/Roles.html#custom-roles
-  - https://docs.gointerject.comAbout/ReportLibraryLinks.html
-  - https://docs.gointerject.comAbout/ReportLibraryLinks.html
-  - https://docs.gointerject.comDeveloper/SetupjDataPortal.html#overriding-a-connection
-  - https://docs.gointerject.comAbout/Report-Library-Basics.html#status
-  - https://docs.gointerject.comAbout/ReportLibraryLinks.html
-  - https://docs.gointerject.comAbout/ReportLibraryLinks.html#updating-a-report-link
-  - https://docs.gointerject.comDeveloper/SetupjDataPortal.html#overriding-a-command
-  - https://docs.gointerject.comPortal/Data-Portals.html
-  - https://docs.gointerject.comPortal/Data-Portals.html#overview-of-parameters
-  - https://docs.gointerject.comGetStarted/L-Create-Protecting.html
-  - https://docs.gointerject.comGetStarted/INTERJECT-Ribbon-Menu-Items.html#custom-commands
+  - https://docs.gointerject.com/wAbout/ReportLibraryLinks.html
+  - https://docs.gointerject.com/wAbout/ReportLibraryLinks.html
+  - https://docs.gointerject.com/wDeveloper/SetupjDataPortal.html#overriding-a-connection
+  - https://docs.gointerject.com/wAbout/Report-Library-Basics.html#status
+  - https://docs.gointerject.com/wAbout/ReportLibraryLinks.html
+  - https://docs.gointerject.com/wAbout/ReportLibraryLinks.html#updating-a-report-link
+  - https://docs.gointerject.com/wDeveloper/SetupjDataPortal.html#overriding-a-command
+  - https://docs.gointerject.com/wPortal/Data-Portals.html
+  - https://docs.gointerject.com/wPortal/Data-Portals.html#overview-of-parameters
+  - https://docs.gointerject.com/wGetStarted/L-Create-Protecting.html
+  - https://docs.gointerject.com/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#custom-commands
   - /bApps/bFinancials/Configure.html
-  - https://docs.gointerject.comAbout/Report-Library-Basics.html#opening-a-report
-  - https://docs.gointerject.comAbout/ReportLibraryLinks.html
-  - https://docs.gointerject.comAbout/ReportLibraryLinks.html#updating-a-report-link
-  - https://docs.gointerject.comDeveloper/SetupjDataPortal.html#overriding-a-connection
-  - https://docs.gointerject.comDeveloper/MacroSecurity.html
-  - https://docs.gointerject.comDeveloper/SetupjDataPortal.html#overriding-a-command
-  - https://docs.gointerject.comGetStarted/L-Create-Protecting.html
-  - https://docs.gointerject.comGetStarted/INTERJECT-Ribbon-Menu-Items.html#custom-commands
+  - https://docs.gointerject.com/wAbout/Report-Library-Basics.html#opening-a-report
+  - https://docs.gointerject.com/wAbout/ReportLibraryLinks.html
+  - https://docs.gointerject.com/wAbout/ReportLibraryLinks.html#updating-a-report-link
+  - https://docs.gointerject.com/wDeveloper/SetupjDataPortal.html#overriding-a-connection
+  - https://docs.gointerject.com/wDeveloper/MacroSecurity.html
+  - https://docs.gointerject.com/wDeveloper/SetupjDataPortal.html#overriding-a-command
+  - https://docs.gointerject.com/wGetStarted/L-Create-Protecting.html
+  - https://docs.gointerject.com/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#custom-commands
   - /bApps/bFinancials/Configure.html
-  - https://docs.gointerject.comPortal/Data-Portals.html
-  - https://docs.gointerject.comPortal/Data-Portals.html#overview-of-parameters
-  - https://docs.gointerject.comPortal/Altering-User-Passwords.html
-  - https://docs.gointerject.comPortal/StaffPage.html
-  - https://docs.gointerject.comIndex/Diagnostics.html#system-tools
-  - https://docs.gointerject.comIndex/Diagnostics.html#support
-  - https://docs.gointerject.comIndex/Diagnostics.html#system-tools
-  - https://docs.gointerject.comIndex/Diagnostics.html#support
+  - https://docs.gointerject.com/wPortal/Data-Portals.html
+  - https://docs.gointerject.com/wPortal/Data-Portals.html#overview-of-parameters
+  - https://docs.gointerject.com/wPortal/Altering-User-Passwords.html
+  - https://docs.gointerject.com/wPortal/StaffPage.html
+  - https://docs.gointerject.com/wIndex/Diagnostics.html#system-tools
+  - https://docs.gointerject.com/wIndex/Diagnostics.html#support
+  - https://docs.gointerject.com/wIndex/Diagnostics.html#system-tools
+  - https://docs.gointerject.com/wIndex/Diagnostics.html#support
   title: Interject Roles
-www.docs.gointerject.comPortal/L-Api-Connections.html:
+www.docs.gointerject.com/wPortal/L-Api-Connections.html:
   description: The Interject add-in is a client application that can send a request
     to a POST HTTP(s) REST API. As long as the response is properly structured, Interject
     will display the data in Excel. Interject is not a tool that communicates with
@@ -20524,7 +20400,7 @@ www.docs.gointerject.comPortal/L-Api-Connections.html:
   - https://portal.gointerject.com
   - /wPortal/Logging-In-to-Website-Portal.html
   title: 'Portal: API Connection'
-www.docs.gointerject.comPortal/L-Database-Connection.html:
+www.docs.gointerject.com/wPortal/L-Database-Connection.html:
   description: This example shows how to connect to a database using a pre-existing
     data portal.
   filename: L-Database-Connection.md
@@ -20616,7 +20492,7 @@ www.docs.gointerject.comPortal/L-Database-Connection.html:
   - /wPortal/Logging-In-to-Website-Portal.html
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html
   title: 'Portal: Database Connection'
-www.docs.gointerject.comPortal/Logging-In-to-Website-Portal.html:
+www.docs.gointerject.com/wPortal/Logging-In-to-Website-Portal.html:
   description: The Interject Portal is a websites that allows you to access all the
     data portals and data connections. Once logged in you can create, customize and
     remove them as needed.
@@ -20655,10 +20531,10 @@ www.docs.gointerject.comPortal/Logging-In-to-Website-Portal.html:
   layout: custom
   links:
   - https://portal.gointerject.com/login.html
-  - /wPortal/Lab-15.2-Database-Connection.html
+  - /wPortal/Data-Connections.html
   - /wPortal/Data-Portals.html
   title: Logging In to Website Portal
-www.docs.gointerject.comPortal/MFA.html:
+www.docs.gointerject.com/wPortal/MFA.html:
   description: Multi-factor authentication (MFA), also known as two-factor authentication
     (2FA), is a security process that requires users to provide two or more authentication
     factors to verify their identity before gaining access to a system or resources.
@@ -20751,11 +20627,11 @@ www.docs.gointerject.comPortal/MFA.html:
   - authenticator app
   layout: custom
   links:
-  - https://docs.gointerject.comDeveloper/Federated-Login-Design.html
-  - https://docs.gointerject.comPortal/INTERJECT-Roles.html#clientadmin-role
+  - https://docs.gointerject.com/wDeveloper/Federated-Login-Design.html
+  - https://docs.gointerject.com/wPortal/INTERJECT-Roles.html#clientadmin-role
   - https://portal.gointerject.com/login.html
   title: Multi-Factor Authentication (MFA)
-www.docs.gointerject.comPortal/MyApps.html:
+www.docs.gointerject.com/wPortal/MyApps.html:
   description: The My Apps page on the Portal site displays all the apps you are currently
     subscribed to. An app (sometimes called "Offering") is a set of reporting solutions
     that include Report Library links, data portals, and data connections. They are
@@ -20837,9 +20713,9 @@ www.docs.gointerject.comPortal/MyApps.html:
   links:
   - mailto:info@gointerject.com
   - '#connection-redirection'
-  - https://docs.gointerject.comFunctions/jDataPortal.html
+  - https://docs.gointerject.com/wFunctions/jDataPortal.html
   title: My Apps
-www.docs.gointerject.comPortal/OrganizationProfile.html:
+www.docs.gointerject.com/wPortal/OrganizationProfile.html:
   description: The Organization Profile allows ClientAdmins to change their organization's
     details.
   filename: OrganizationProfile.md
@@ -20882,12 +20758,12 @@ www.docs.gointerject.comPortal/OrganizationProfile.html:
   layout: custom
   links:
   - /wPortal/INTERJECT-Roles.html#clientadmin-role
-  - /wAbout/Enterprise-Login-Setup.html#enterprise-login-code
+  - /wDeveloper/Enterprise-Login-Setup.html#enterprise-login-code
   - /wIndex/SettingsCache.html
   - https://support.microsoft.com/en-us/office/pop-imap-and-smtp-settings-for-outlook-com-d088b986-291d-42b8-9564-9c414e2aa040
   - https://help.socketlabs.com/docs/getting-started-with-smtp
   title: Organization Profile
-www.docs.gointerject.comPortal/PublishedApps.html:
+www.docs.gointerject.com/wPortal/PublishedApps.html:
   description: The Published Apps page on the Portal site displays all of your company's
     published apps. A published app is a collection of data portals, connections and
     Report Library links. Published apps are configured by Interject for a company
@@ -20977,7 +20853,7 @@ www.docs.gointerject.comPortal/PublishedApps.html:
   links:
   - /wPortal/MyApps.html#connection-redirection
   title: Published Apps
-www.docs.gointerject.comPortal/Roles.html:
+www.docs.gointerject.com/wPortal/Roles.html:
   description: The Roles page allows you to manage Interject Roles by assigning them
     to the users in your organization. You can also view how many users currently
     have a role assigned. You can also add custom roles.
@@ -21033,7 +20909,7 @@ www.docs.gointerject.comPortal/Roles.html:
   - /wPortal/INTERJECT-Roles.html
   - /wPortal/FolderPermissions.html
   title: Roles
-www.docs.gointerject.comPortal/StaffPage.html:
+www.docs.gointerject.com/wPortal/StaffPage.html:
   description: The Interject Portal site allows you to add, edit, or delete users
     from your organization via the Staff Page. This page will show you how to do this.
   filename: StaffPage.md
@@ -21107,7 +20983,7 @@ www.docs.gointerject.comPortal/StaffPage.html:
   - /wPortal/User-Profile.html
   - /wPortal/AddUser.html
   title: Staff Page
-www.docs.gointerject.comPortal/Subscribers.html:
+www.docs.gointerject.com/wPortal/Subscribers.html:
   description: The Subscribers page allows a publisher to view and manage their subscribers.
   filename: Subscribers.md
   headings:
@@ -21161,7 +21037,7 @@ www.docs.gointerject.comPortal/Subscribers.html:
   layout: custom
   links: []
   title: Subscribers
-www.docs.gointerject.comPortal/The-INTERJECT-Website-Portal.html:
+www.docs.gointerject.com/wPortal/The-INTERJECT-Website-Portal.html:
   description: The Interject website portal is a central place to manage Interject
     client settings and user profiles.
   filename: The-INTERJECT-Website-Portal.md
@@ -21193,7 +21069,7 @@ www.docs.gointerject.comPortal/The-INTERJECT-Website-Portal.html:
   - https://www.connectionstrings.com/
   - /wPortal/User-Profile.html
   title: The Interject Website Portal
-www.docs.gointerject.comPortal/User-Profile.html:
+www.docs.gointerject.com/wPortal/User-Profile.html:
   description: The User Profile page allows a user to change their basic information
     as well as change their password. If the user is a then they will also have additional
     functionality.
@@ -21258,12 +21134,12 @@ www.docs.gointerject.comPortal/User-Profile.html:
   layout: custom
   links:
   - '#clientadmins'
-  - https://docs.gointerject.comAbout/Logging-In.html
+  - https://docs.gointerject.com/wAbout/Logging-In.html
   - /wPortal/Altering-User-Passwords.html
   - /wPortal/INTERJECT-Roles.html#clientadmin-role
   - /wPortal/INTERJECT-Roles.html
   title: User Profile
-www.docs.gointerject.comReleaseNotes/2023-10_ReleaseNotes.html:
+www.docs.gointerject.com/wReleaseNotes/2023-10_ReleaseNotes.html:
   description: Release notes for this month's updates
   filename: 2023-10_ReleaseNotes.md
   headings:
@@ -21293,7 +21169,7 @@ www.docs.gointerject.comReleaseNotes/2023-10_ReleaseNotes.html:
   - /wDeveloper/L-Dev-InsertDeleteDataSave.html
   - /wDeveloper/SetupjDataPortal.html
   title: Release Notes
-www.docs.gointerject.comReleaseNotes/2023-11_ReleaseNotes.html:
+www.docs.gointerject.com/wReleaseNotes/2023-11_ReleaseNotes.html:
   description: Release notes for this month's updates
   filename: 2023-11_ReleaseNotes.md
   headings:
@@ -21323,7 +21199,7 @@ www.docs.gointerject.comReleaseNotes/2023-11_ReleaseNotes.html:
   - /wPortal/StaffPage.html
   - /wDeveloper/ConnectionManager.html
   title: Release Notes
-www.docs.gointerject.comReleaseNotes/2023-12_ReleaseNotes.html:
+www.docs.gointerject.com/wReleaseNotes/2023-12_ReleaseNotes.html:
   description: Release notes for this month's updates
   filename: 2023-12_ReleaseNotes.md
   headings:
@@ -21351,7 +21227,7 @@ www.docs.gointerject.comReleaseNotes/2023-12_ReleaseNotes.html:
   - /bApps/schemas/custom_search.html
   - /wTroubleshoot/RowDefClear.html
   title: Release Notes
-www.docs.gointerject.comReleaseNotes/2024-01_ReleaseNotes.html:
+www.docs.gointerject.com/wReleaseNotes/2024-01_ReleaseNotes.html:
   description: Release notes for this month's updates
   filename: 2024-01_ReleaseNotes.md
   headings:
@@ -21369,7 +21245,7 @@ www.docs.gointerject.comReleaseNotes/2024-01_ReleaseNotes.html:
   links:
   - /wDeveloper/L-Dev-jDropdowns.html
   title: Release Notes
-www.docs.gointerject.comReleaseNotes/2024-03_ReleaseNotes.html:
+www.docs.gointerject.com/wReleaseNotes/2024-03_ReleaseNotes.html:
   description: Release notes for this month's updates
   filename: 2024-03_ReleaseNotes.md
   headings:
@@ -21390,7 +21266,7 @@ www.docs.gointerject.comReleaseNotes/2024-03_ReleaseNotes.html:
   - /wIndex/QuickTools-Names.html#appending-a-prefix-andor-suffix-to-a-name
   - /wGetStarted/L-Export-QuickExportAndPDF.html#export-sheet
   title: Release Notes
-www.docs.gointerject.comReleaseNotes/2024-06_ReleaseNotes.html:
+www.docs.gointerject.com/wReleaseNotes/2024-06_ReleaseNotes.html:
   description: Release notes for this month's updates
   filename: 2024-06_ReleaseNotes.md
   headings:
@@ -21416,7 +21292,7 @@ www.docs.gointerject.comReleaseNotes/2024-06_ReleaseNotes.html:
   - /wIndex/Diagnostics-FindAllFormulas.html
   - /wIndex/Diagnostics-ReplaceDataPortalCodes.html
   title: Release Notes
-www.docs.gointerject.comReleaseNotes/2024-07_ReleaseNotes.html:
+www.docs.gointerject.com/wReleaseNotes/2024-07_ReleaseNotes.html:
   description: Release notes for this month's updates
   filename: 2024-07_ReleaseNotes.md
   headings:
@@ -21451,7 +21327,7 @@ www.docs.gointerject.comReleaseNotes/2024-07_ReleaseNotes.html:
   - /wPortal/OrganizationProfile.html
   - /wPortal/User-Profile.html
   title: Release Notes
-www.docs.gointerject.comReleaseNotes/2024-08_ReleaseNotes.html:
+www.docs.gointerject.com/wReleaseNotes/2024-08_ReleaseNotes.html:
   description: Release notes for this month's updates
   filename: 2024-08_ReleaseNotes.md
   headings:
@@ -21478,7 +21354,7 @@ www.docs.gointerject.comReleaseNotes/2024-08_ReleaseNotes.html:
   - /wGetStarted/L-Create-SpecColDefs.html
   - /wIndex/Diagnostics-SpecialFeatures.html
   title: Release Notes
-www.docs.gointerject.comReleaseNotes/2024-10_ReleaseNotes.html:
+www.docs.gointerject.com/wReleaseNotes/2024-10_ReleaseNotes.html:
   description: Release notes for this month's updates
   filename: 2024-10_ReleaseNotes.md
   headings:
@@ -21501,7 +21377,7 @@ www.docs.gointerject.comReleaseNotes/2024-10_ReleaseNotes.html:
   - /wTroubleshoot/CorruptedInstallation.html
   - /wApi/Pyinterject.html
   title: Release Notes
-www.docs.gointerject.comTroubleshoot/Addin-Missing.html:
+www.docs.gointerject.com/wTroubleshoot/Addin-Missing.html:
   description: Every once in a while, Excel Add-ins may end up missing or fail to
     load in Excel. If your Interject addin is missing, you can follow these steps
     to reset it.
@@ -21577,7 +21453,7 @@ www.docs.gointerject.comTroubleshoot/Addin-Missing.html:
   layout: custom
   links: []
   title: Add-ins Missing
-www.docs.gointerject.comTroubleshoot/AdxLoader.html:
+www.docs.gointerject.com/wTroubleshoot/AdxLoader.html:
   description: Every once in a while, Excel Add-ins may end up missing or fail to
     load in Excel. If your Interject addin is missing, you can follow these steps
     to reset it.
@@ -21636,7 +21512,7 @@ www.docs.gointerject.comTroubleshoot/AdxLoader.html:
   - https://www.microsoft.com/en-us/microsoft-365/download-office
   - https://learn.microsoft.com/en-us/deployoffice/change-bitness
   title: AdxLoader Don't Match
-www.docs.gointerject.comTroubleshoot/App-Errors.html:
+www.docs.gointerject.com/wTroubleshoot/App-Errors.html:
   description: Errors can occur for many reasons. Sometimes they are related to the
     environment or computer running Interject. It is important you have tools to capture
     everything that is interacting with Excel so, it is easier diagnose the cause
@@ -21661,7 +21537,7 @@ www.docs.gointerject.comTroubleshoot/App-Errors.html:
   - /wTroubleshoot/WebProxy.html
   - /wTroubleshoot/Cloud-File.html
   title: Add-in Errors
-www.docs.gointerject.comTroubleshoot/Cloud-File.html:
+www.docs.gointerject.com/wTroubleshoot/Cloud-File.html:
   description: Sometimes uploading a report from a cloud drive results in errors.
     This guide helps you identify cloud files, reveals possible errors that may occur,
     and a few workarounds.
@@ -21738,7 +21614,7 @@ www.docs.gointerject.comTroubleshoot/Cloud-File.html:
   links:
   - /wAbout/Report-Library-Basics.html
   title: Cloud File Uploads Incorrectly
-www.docs.gointerject.comTroubleshoot/CorruptedInstallation.html:
+www.docs.gointerject.com/wTroubleshoot/CorruptedInstallation.html:
   description: There are some instances where Interject may be left in an incomplete
     or corrupted state after installation. This can happen, for example, if the Interject
     installer was executed from within a zipped folder, without being properly extracted
@@ -21787,7 +21663,7 @@ www.docs.gointerject.comTroubleshoot/CorruptedInstallation.html:
   links:
   - https://support.microsoft.com/en-us/topic/fix-problems-that-block-programs-from-being-installed-or-removed-cca7d1b6-65a9-3d98-426b-e9f927e1eb4d
   title: Corrupted Interject Installation
-www.docs.gointerject.comTroubleshoot/Drill-Animations.html:
+www.docs.gointerject.com/wTroubleshoot/Drill-Animations.html:
   description: Running animations while working with data may slow performance and
     interfere with Interject events, such as Drill on Data events.
   filename: Drill-Animations.md
@@ -21923,7 +21799,7 @@ www.docs.gointerject.comTroubleshoot/Drill-Animations.html:
   layout: custom
   links: []
   title: Excel Drill Animations
-www.docs.gointerject.comTroubleshoot/GeneralTroubleshooting.html:
+www.docs.gointerject.com/wTroubleshoot/GeneralTroubleshooting.html:
   description: When encountering issues with the Interject Excel Add-in, it is helpful
     to gather as much information as possible before reaching out to tech support.
     This guide outlines the key areas to check and log, which can assist in diagnosing
@@ -21956,7 +21832,7 @@ www.docs.gointerject.comTroubleshoot/GeneralTroubleshooting.html:
   layout: custom
   links: []
   title: General Troubleshooting
-www.docs.gointerject.comTroubleshoot/Interject-Support.html:
+www.docs.gointerject.com/wTroubleshoot/Interject-Support.html:
   description: Interject Support in built into Excel via the Interject Add-in. You
     can easily report a problem to Interject or find Interject contact information.
     You also have the option of turning on certain logs in order to send more key
@@ -21981,7 +21857,7 @@ www.docs.gointerject.comTroubleshoot/Interject-Support.html:
   - /wTroubleshoot/Verbose-Logging.html
   - /wTroubleshoot/RAM-Monitoring.html
   title: Interject Support
-www.docs.gointerject.comTroubleshoot/Investigating-Errors.html:
+www.docs.gointerject.com/wTroubleshoot/Investigating-Errors.html:
   description: Report errors can happen for a number of reasons. There are two types
     of errors that Interject can display, handled and unhandled. Errors can be investigated
     using the Progress Bar Window or Activity Logs.
@@ -22050,7 +21926,7 @@ www.docs.gointerject.comTroubleshoot/Investigating-Errors.html:
   links:
   - /wDeveloper/L-Dev-Error-Handling.html
   title: Investigating Report Errors
-www.docs.gointerject.comTroubleshoot/RAM-Monitoring.html:
+www.docs.gointerject.com/wTroubleshoot/RAM-Monitoring.html:
   description: Memory Logging is a toggled tool in an Excel report. When it is turned
     on, the memory use of the current workbook is recorded
   filename: RAM-Monitoring.md
@@ -22085,7 +21961,7 @@ www.docs.gointerject.comTroubleshoot/RAM-Monitoring.html:
   links:
   - /wTroubleshoot/Reporting-A-Problem.html#send-report-to-interject
   title: Memory Logging
-www.docs.gointerject.comTroubleshoot/Reporting-A-Problem.html:
+www.docs.gointerject.com/wTroubleshoot/Reporting-A-Problem.html:
   description: User Support can be accessed inside Excel and provide an interface
     to report a problem to Interject or display Interject's contact information.
   filename: Reporting-A-Problem.md
@@ -22164,7 +22040,7 @@ www.docs.gointerject.comTroubleshoot/Reporting-A-Problem.html:
   - /wTroubleshoot/Verbose-Logging.html
   - /wTroubleshoot/RAM-Monitoring.html
   title: User Support
-www.docs.gointerject.comTroubleshoot/Reports.html:
+www.docs.gointerject.com/wTroubleshoot/Reports.html:
   description: Report errors occur for many reasons, some of which relate to how the
     server handles data and moves it to the report. Other reasons may include the
     report's direct configuration within Excel. Interject provides various tools and
@@ -22193,7 +22069,7 @@ www.docs.gointerject.comTroubleshoot/Reports.html:
   - /wTroubleshoot/Testing-Data-Connections.html
   - /wTroubleshoot/View-SQL.html
   title: Report Errors
-www.docs.gointerject.comTroubleshoot/RowDefClear.html:
+www.docs.gointerject.com/wTroubleshoot/RowDefClear.html:
   description: Data does not clear when multiple columns are defined as the RowDefRange
     for a ReportVariable. This happens only when the first column of the RowDefRange
     is missing from the ColDefRange.
@@ -22237,7 +22113,7 @@ www.docs.gointerject.comTroubleshoot/RowDefClear.html:
   links:
   - /wFunctions/ReportVariable.html
   title: RowDef Data Clear
-www.docs.gointerject.comTroubleshoot/Testing-Data-Connections.html:
+www.docs.gointerject.com/wTroubleshoot/Testing-Data-Connections.html:
   description: Before setting up a Data Connection to a Database, you can verify that
     the connection can be established within Excel by accessing the Check Connection
     window.
@@ -22295,7 +22171,7 @@ www.docs.gointerject.comTroubleshoot/Testing-Data-Connections.html:
   layout: custom
   links: []
   title: Testing Data Connections
-www.docs.gointerject.comTroubleshoot/Transport-Errors.html:
+www.docs.gointerject.com/wTroubleshoot/Transport-Errors.html:
   description: The network transport layer is responsible for the reliable transmission
     of data between devices over a network. The transport layer is typically implemented
     in protocols such as TCP (Transmission Control Protocol) or UDP (User Datagram
@@ -22318,7 +22194,7 @@ www.docs.gointerject.comTroubleshoot/Transport-Errors.html:
   layout: custom
   links: []
   title: Network Transport Errors
-www.docs.gointerject.comTroubleshoot/Troubleshooting-Landing.html:
+www.docs.gointerject.com/wTroubleshoot/Troubleshooting-Landing.html:
   description: Interject optimizes speed by caching company settings such as Data
     Portals, Connections, and Report Library templates. This information is received
     on login and stored in memory for as long as the Excel session is open. Troubleshooting
@@ -22349,12 +22225,12 @@ www.docs.gointerject.comTroubleshoot/Troubleshooting-Landing.html:
   - report
   layout: custom
   links:
-  - https://docs.gointerject.comTroubleshoot/TroubleshootingGuide.html
+  - https://docs.gointerject.com/wTroubleshoot/TroubleshootingGuide.html
   - /wTroubleshoot/Interject-Support.html
   - /wTroubleshoot/App-Errors.html
   - /wTroubleshoot/Reports.html
   title: Troubleshooting
-www.docs.gointerject.comTroubleshoot/TroubleshootingGuide.html:
+www.docs.gointerject.com/wTroubleshoot/TroubleshootingGuide.html:
   description: This is a troubleshooting guide for the Interject Add-in. This resource
     is designed to help you navigate and resolve a variety of common issues you might
     encounter while using the Interject Add-in.
@@ -22380,13 +22256,13 @@ www.docs.gointerject.comTroubleshoot/TroubleshootingGuide.html:
   links:
   - https://portal.gointerject.com/download-interject.html
   - /wDeveloper/TLS.html
-  - /wAbout/Enterprise-Login-Setup.html#ip-whitelisting
+  - /wDeveloper/Enterprise-Login-Setup.html#ip-whitelisting
   - https://support.microsoft.com/en-us/topic/fix-problems-that-block-programs-from-being-installed-or-removed-cca7d1b6-65a9-3d98-426b-e9f927e1eb4d
   - /wTroubleshoot/CorruptedInstallation.html
   - /wTroubleshoot/Addin-Missing.html
-  - /wAbout/Enterprise-Login-Setup.html#ip-whitelisting
+  - /wDeveloper/Enterprise-Login-Setup.html#ip-whitelisting
   - /wTroubleshoot/WebView2.html
-  - /wAbout/Enterprise-Login-Setup.html#ip-whitelisting
+  - /wDeveloper/Enterprise-Login-Setup.html#ip-whitelisting
   - https://live-interject-authapi.azurewebsites.net/
   - https://live-interject-authapi.azurewebsites.net/.well-known/openid-configuration
   - https://live-interject-authapi.azurewebsites.net/
@@ -22395,7 +22271,7 @@ www.docs.gointerject.comTroubleshoot/TroubleshootingGuide.html:
   - /wFunctions/Excel-Function-Index.html
   - https://portal.gointerject.com/download-interject.html#additionalInstallers
   title: Troubleshooting Guide
-www.docs.gointerject.comTroubleshoot/Validation-Report.html:
+www.docs.gointerject.com/wTroubleshoot/Validation-Report.html:
   description: The Validation Report feature displays detailed information about Interject
     pull, save, and drill functions, data cell functions, and events.
   filename: Validation-Report.md
@@ -22541,7 +22417,7 @@ www.docs.gointerject.comTroubleshoot/Validation-Report.html:
   - /wAbout/Tabular-vs-Data-Cells.html#data-cells
   - /wIndex/Report-Formula-Reviews.html#cell-formula-review
   title: Validation Report
-www.docs.gointerject.comTroubleshoot/Verbose-Logging.html:
+www.docs.gointerject.com/wTroubleshoot/Verbose-Logging.html:
   description: To help diagnose any errors, Interject uses a Verbose Logging feature.
     The ideal goal of Verbose Logging is to help recreate an error and send logs to
     Interject's support team, where it can be fixed.
@@ -22601,7 +22477,7 @@ www.docs.gointerject.comTroubleshoot/Verbose-Logging.html:
   links:
   - /wTroubleshoot/Reporting-A-Problem.html#send-report-to-interject
   title: Verbose Logging
-www.docs.gointerject.comTroubleshoot/View-SQL.html:
+www.docs.gointerject.com/wTroubleshoot/View-SQL.html:
   description: The View SQL Test for ActiveCell tool can be used to track down issues
     with the SQL stored procedures being called by an Interject report function.
   filename: View-SQL.md
@@ -22651,7 +22527,7 @@ www.docs.gointerject.comTroubleshoot/View-SQL.html:
   layout: custom
   links: []
   title: View SQL Test for ActiveCell
-www.docs.gointerject.comTroubleshoot/WebProxy.html:
+www.docs.gointerject.com/wTroubleshoot/WebProxy.html:
   description: The Interject Add-in allows users to authenticate using Windows authentication.
     For this Interject uses the Microsoft DefaultCredential library to set up a proxy.
   filename: WebProxy.md
@@ -22687,7 +22563,7 @@ www.docs.gointerject.comTroubleshoot/WebProxy.html:
   - https://learn.microsoft.com/en-us/dotnet/api/system.net.credentialcache.defaultcredentials
   - https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings
   title: Web Proxy Configuration
-www.docs.gointerject.comTroubleshoot/WebView2.html:
+www.docs.gointerject.com/wTroubleshoot/WebView2.html:
   description: Interject uses WebView2 for its login screen. If WebView2 is not installed,
     nothing will appear when you click the login button. Most systems have WebView2
     already installed. If, however, it is not, you can install WebView2 manually.
@@ -22769,8 +22645,8 @@ www.docs.gointerject.comTroubleshoot/WebView2.html:
   - login
   layout: custom
   links:
-  - https://learn.microsoft.com/en-us/microsoft-edgeebview2/
-  - https://developer.microsoft.com/en-us/microsoft-edgeebview2/
-  - https://learn.microsoft.com/en-us/microsoft-edgeebview2/concepts/distribution
+  - https://learn.microsoft.com/en-us/microsoft-edge/webview2/
+  - https://developer.microsoft.com/en-us/microsoft-edge/webview2/
+  - https://learn.microsoft.com/en-us/microsoft-edge/webview2/concepts/distribution
   - '#verifying-installation'
   title: WebView2 Installation
