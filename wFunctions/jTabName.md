@@ -1,7 +1,7 @@
 ---
 title: jTabName()
-layout: custom
 filename: "jTabName.md"
+layout: custom
 keywords: []
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition"]
 links: []

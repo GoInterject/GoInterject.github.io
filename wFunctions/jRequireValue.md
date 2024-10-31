@@ -1,7 +1,7 @@
 ---
 title: jRequireValue()
-layout: custom
 filename: "jRequireValue.md"
+layout: custom
 keywords: []
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition"]
 links: []

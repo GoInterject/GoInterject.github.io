@@ -1,7 +1,7 @@
 ---
 title: jColumn()
-layout: custom
 filename: "jColumn.md"
+layout: custom
 keywords: []
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition"]
 links: []

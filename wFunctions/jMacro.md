@@ -1,7 +1,7 @@
 ---
 title: jMacro()
-layout: custom
 filename: "jMacro.md"
+layout: custom
 keywords: []
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition"]
 links: []

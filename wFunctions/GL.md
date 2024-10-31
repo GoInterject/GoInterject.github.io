@@ -1,7 +1,7 @@
 ---
 title: GL/NGL()
-layout: custom
 filename: "GL.md"
+layout: custom
 keywords: []
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition"]
 links: []

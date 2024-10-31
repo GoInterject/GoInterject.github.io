@@ -1,7 +1,7 @@
 ---
 title: jMerge()
-layout: custom
 filename: "jMerge.md"
+layout: custom
 keywords: []
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition"]
 links: []
