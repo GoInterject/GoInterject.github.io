@@ -5,6 +5,7 @@ import extract_front_matter
 import extract_keywords_txt
 import extract_keywords
 import extract_content
+from formulas.extract_formulas import main as extract_formulas
 
 def run_all():
     # Run each script in order
@@ -19,6 +20,9 @@ def run_all():
 
     print("Running extract_content.py...")
     extract_content.main()
+
+    print("Running extract_formulas.py...")
+    extract_formulas()
 
     print("All scripts completed successfully.")
 

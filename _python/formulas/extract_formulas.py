@@ -103,20 +103,25 @@ def extract_formulas(root_folder):
     return json.dumps(all_descriptions, indent=4)
 
 # ---------------------------------------------------------------
+# MAIN
+# ---------------------------------------------------------------
+def main():
+    root_folder = get_root_dir(3)
+    root_functions_folder = os.path.join(root_folder, "wFunctions")
 
-root_folder = get_root_dir(3)
-root_functions_folder = os.path.join(root_folder, "wFunctions")
+    input_filepath = os.path.join(root_folder, "wFunctions", FILENAME)
+    # print(F"input_file = {input_filepath}")
 
-input_filepath = os.path.join(root_folder, "wFunctions", FILENAME)
-# print(F"input_file = {input_filepath}")
+    output_folder_path = os.path.join(root_folder, OUTPUT_FOLDER)
+    os.makedirs(output_folder_path, exist_ok=True)
+    output_file = os.path.join(root_folder, OUTPUT_FOLDER, OUTPUT_FILENAME)
 
-output_folder_path = os.path.join(root_folder, OUTPUT_FOLDER)
-os.makedirs(output_folder_path, exist_ok=True)
-output_file = os.path.join(root_folder, OUTPUT_FOLDER, OUTPUT_FILENAME)
+    # Run the function and print the JSON output
+    json_output = extract_formulas(root_functions_folder)
+    with open(output_file, 'w', encoding='utf-8') as f:
+        f.write(json_output)
 
-# Run the function and print the JSON output
-json_output = extract_formulas(root_functions_folder)
-with open(output_file, 'w', encoding='utf-8') as f:
-    f.write(json_output)
+    print(f"  JSON output saved to {output_file}")
 
-print(f"  JSON output saved to {output_file}")
+if __name__ == "__main__":
+    main()
