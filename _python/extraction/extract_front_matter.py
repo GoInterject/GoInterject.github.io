@@ -81,6 +81,7 @@ def convert_to_url(file_path, root_folder):
     web_url = web_url.replace(".md", ".html")  # Change .md extension to .html
     return web_url
 
+
 # ---------------------------------------------------------------
 # MAIN
 # ---------------------------------------------------------------

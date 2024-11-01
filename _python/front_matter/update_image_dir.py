@@ -14,6 +14,8 @@ import re
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from config import ROOT_FOLDER
+from utils.doc_page_folder_list import PageDirectories
+from utils.file_processor import process_folder
 
 # ---------------------------------------------------------------
 # METHODS
@@ -70,19 +72,8 @@ def process_md_file(file_path):
         file.write(front_matter)
 
 # ---------------------------------------------------------------
-def process_folder(folder_path):
-    for root, dirs, files in os.walk(folder_path):
-        if "_site" in dirs:
-            dirs.remove("_site")  # Exclude the "_site" subfolder
-        for file_name in files:
-            # print(root, dirs, file_name)
-            if file_name.endswith('.md'):
-                file_path = os.path.join(root, file_name)
-                process_md_file(file_path)
-
-# ---------------------------------------------------------------
 # MAIN
 # ---------------------------------------------------------------
 if __name__ == "__main__":
-    process_folder(ROOT_FOLDER)
+    process_folder(ROOT_FOLDER, PageDirectories, process_md_file)
     print("  Updated image_dir in front matter for all md files.")

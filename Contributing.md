@@ -521,4 +521,35 @@ The code:
 </blockquote>
 ```
 
-###
+### Python Suite
+
+In the `_python` folder is a suite for various update, extraction, and pytest scripts:
+
+- _python/extraction: Scripts for extracting meta data from the front matter
+- _python/formulas: Scripts for extracting Interject formula information
+- _python/front_matter: Scripts for updating the front matter in doc pages
+- _python/tests: Pytest to verify all links in the doc site
+
+All extracted metadata will be found in the `_metadata` folder.
+
+<blockquote class=highlight_note>
+<b>Note:</b>  Be sure to commit your changes before running scripts in the event you need to revert back.
+</blockquote>
+<br>
+
+### Pytests
+
+The Pytest can be run on the site to validate the links (images, internal links, headings, and URLs). 
+
+<blockquote class=highlight_note>
+<b>Note:</b> The pytest will use the front_matter.yaml in the _metadata folder. If not found, it will extract the front matter from all doc files.
+</blockquote>
+<br>
+
+From the `gointerject.github.io/python` folder, run the following:
+
+```bash
+python pytest
+```
+
+Results will be printed and logs will appear in the `_python/logs` folder.

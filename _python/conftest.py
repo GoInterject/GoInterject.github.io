@@ -4,8 +4,8 @@ import logging
 def pytest_configure():
     # Define paths to log files in the test directory
     base_dir = os.path.dirname(__file__)  # This points to the 'test' directory if conftest.py is there
-    error_log_path = os.path.join(base_dir, "error_log.log")
-    test_log_path = os.path.join(base_dir, "test_log.log")
+    error_log_path = os.path.join(base_dir, "logs", "error_log.log")
+    test_log_path = os.path.join(base_dir, "logs", "test_log.log")
 
     # Delete logs at the start of the session to ensure fresh logs
     for log_file in [error_log_path, test_log_path]:

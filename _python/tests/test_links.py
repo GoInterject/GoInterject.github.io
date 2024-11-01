@@ -9,8 +9,13 @@ import os
 import logging
 import requests
 import yaml
-from enum import Enum
 import re
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from config import ROOT_FOLDER
+from utils.doc_page_folder_list import PageDirectories
+from utils.file_processor import convert_url_to_file_path, convert_filepath_to_url
+from extraction.extract_front_matter import extract_front_matter
 
 # ----------------------------------------------------------------------------------
 logger = logging.getLogger(__name__)
@@ -32,54 +37,6 @@ CHECK_HEADINGS_IN_LINKS = True # Headings in links will not be check if CHECK_FI
 CHECK_URL_LINKS = True
 
 # ----------------------------------------------------------------------------------
-# These are the folders that will be checked
-class PageDirectories(Enum):
-    WABOUT = "wAbout"
-    WAPI = "wApi"
-    WDESIGN = "wDesign"
-    WDEVELOPER = "wDeveloper"
-    WFUNCTIONS = "wFunctions"
-    WGETSTARTED = "wGetStarted"
-    WINDEX = "wIndex"
-    WLABS = "wLabs"
-    WPORTAL = "wPortal"
-    WRELEASENOTES = "wReleaseNotes"
-    WTROUBLESHOOT = "wTroubleshoot"
-    BFINANCIALS = "bApps\\bFinancials"
-    InterjectTRAININGBUDGET = "bApps\\InterjectTraining\\Budget"
-    InterjectTRAININGCAPITAL = "bApps\\InterjectTraining\\Capital"
-    InterjectTRAININGPROJECTIONS = "bApps\\InterjectTraining\\Projections"
-    InterjectTRAININGWIP = "bApps\\InterjectTraining\\WIP"
-
-# ----------------------------------------------------------------------------------
-def get_parent_dir(n, file):
-    """ returns parent directory of file """
-    file_path = os.path.abspath(file)
-    for i in range(n):
-        file_path = os.path.dirname(file_path)
-    return file_path
-
-# ----------------------------------------------------------------------------------
-def get_root_dir():
-    root = get_parent_dir(3, __file__)
-    return root
-
-# ----------------------------------------------------------------------------------
-def extract_front_matter(file_str):
-    """Extract front matter from a file content string."""
-    if file_str.startswith("---"):
-        end_idx = file_str.find("---", 3)  # Find the second occurrence of '---'
-        if end_idx != -1:
-            front_matter_str = file_str[3:end_idx]
-            # Replace tabs with spaces to prevent YAML parsing errors
-            front_matter_str = front_matter_str.replace("\t", "    ")  # Replace with 4 spaces (adjust as needed)
-            try:
-                return yaml.safe_load(front_matter_str)
-            except yaml.YAMLError as e:
-                logger.error(f"PARSE: Error parsing YAML front matter: {str(e)}")
-    return {}
-
-# ----------------------------------------------------------------------------------
 def convert_heading_to_anchor(heading: str) -> str:
     """
     Convert a heading string into a Jekyll-style anchor link.
@@ -97,21 +54,43 @@ def convert_heading_to_anchor(heading: str) -> str:
     return anchor
 
 # ----------------------------------------------------------------------------------
-def extract_front_matter_from_files(root_folder):
-    for folder in PageDirectories:
-        dir_path = os.path.join(root_folder, folder.value)
-        if not os.path.exists(dir_path):
-            continue
+def get_yaml_from_file(file_path):
+    with open(file_path, 'r', encoding='utf-8') as file:
+        return yaml.safe_load(file)
 
-        for file_name in os.listdir(dir_path):
-            file_path = os.path.join(dir_path, file_name)
-            if not file_name.endswith(".md"):
-                continue
+# ----------------------------------------------------------------------------------
+# def extract_front_matter(file_str):
+#     """Extract front matter from a file content string."""
+#     if file_str.startswith("---"):
+#         end_idx = file_str.find("---", 3)  # Find the second occurrence of '---'
+#         if end_idx != -1:
+#             front_matter_str = file_str[3:end_idx]
+#             # Replace tabs with spaces to prevent YAML parsing errors
+#             front_matter_str = front_matter_str.replace("\t", "    ")  # Replace with 4 spaces (adjust as needed)
+#             try:
+#                 return yaml.safe_load(front_matter_str)
+#             except yaml.YAMLError as e:
+#                 logger.error(f"PARSE: Error parsing YAML front matter: {str(e)}")
+#     return {}
 
-            with open(file_path, "r", encoding="utf-8") as file_handle:
-                file_str = file_handle.read()
-                front_matter = extract_front_matter(file_str)
-                global_front_matter[file_path] = front_matter
+# ----------------------------------------------------------------------------------
+# def extract_front_matter_from_files(root_folder):
+#     # global global_front_matter
+
+#     for folder in PageDirectories:
+#         dir_path = os.path.join(root_folder, folder.value)
+#         if not os.path.exists(dir_path):
+#             continue
+
+#         for file_name in os.listdir(dir_path):
+#             file_path = os.path.join(dir_path, file_name)
+#             if not file_name.endswith(".md"):
+#                 continue
+
+#             with open(file_path, "r", encoding="utf-8") as file_handle:
+#                 file_str = file_handle.read()
+#                 front_matter = extract_front_matter(file_str)
+#                 global_front_matter[file_path] = front_matter
 
 # ----------------------------------------------------------------------------------
 def verify_links(root_folder):
@@ -178,12 +157,13 @@ def check_file_exists(linked_file_path, file_path):
 
 # ----------------------------------------------------------------------------------
 def check_heading_exists(linked_file_path, link_heading, file_path):
-    file_front_matter = global_front_matter.get(linked_file_path.replace('/', '\\'), {})
+    url = convert_filepath_to_url(linked_file_path, ROOT_FOLDER)
+    file_front_matter = global_front_matter.get(url, {})
     file_headings = file_front_matter.get("headings", [])
     converted_file_headings = [convert_heading_to_anchor(h) for h in file_headings]
 
     if link_heading and link_heading not in converted_file_headings:
-        return log_error(f"HEADING NOT FOUND: {linked_file_path}#{link_heading} in file: {file_path}\n")
+        return log_error(f"HEADING LINK NOT FOUND: {linked_file_path}#{link_heading} in file: {file_path}\n")
     return True
 
 # ----------------------------------------------------------------------------------
@@ -250,9 +230,20 @@ def verify_links_in_file(root_folder, file_path, links, headings) -> bool:
 
 # ----------------------------------------------------------------------------------
 def test_links():
-    root = get_root_dir()
-    extract_front_matter_from_files(root)
-    ret_val = verify_links(root)
+    global global_front_matter
+
+    yaml_filepath = os.path.join(ROOT_FOLDER, "_metadata", "front_matter.yaml")
+
+    # Looks for the front_matter.yaml file in the _metadata folder first
+    if os.path.exists(yaml_filepath):
+        global_front_matter = get_yaml_from_file(yaml_filepath)
+    # Will build the front matter if the yaml file is not found
+    else:
+        global_front_matter = extract_front_matter()
+
+    ret_val = verify_links(ROOT_FOLDER)
     num_errors = num_errors_images+num_errors_headings+num_errors_files+num_errors_url
     logger.info(f" SUMMARY: \n\nBroken Images:    {num_errors_images}\nBroken Files:     {num_errors_files}\nBroken Headings:  {num_errors_headings}\nBroken URLs:      {num_errors_url}\nNUM BROKEN LINKS: {num_errors}\n\nTotal Files checked: {num_files_checked}\nTotal Files Errored: {num_file_errors}\nTotal Files Passed:  {num_files_checked-num_file_errors}\n\nTest Log in 'test_log.log'. Errors in 'error_log.log'")
     assert ret_val == True, "Failed. See log for details."
+
+test_links()
