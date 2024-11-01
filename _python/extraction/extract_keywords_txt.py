@@ -1,21 +1,25 @@
-# Extracts all keywords from the front_matter.yaml file
-# Eliminates duplicates
-# Saves all keywords to OUTPUT_FOLDER/OUTPUT_FILENAME
-
+# BUILDS A TEXT FILE OF ALL THE UNIQUE KEYWORDS FOUND IN THE FRONT MATTER FOR ALL DOC PAGES
 # ---------------------------------------------------------------
+# Run 'extract_front_matter.py' first
+# Extracts all keywords from the `front_matter.yaml`` file
+# Eliminates duplicates
+# Outputs TXT file to gointerject.github.io/OUTPUT_FOLDER/OUTPUT_FILENAME
+
+# BE SURE TO SET THE CONFIG VARIABLES IN `config.py`
+# ---------------------------------------------------------------
+
 import yaml
 import os
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from config import ROOT_FOLDER
+from config import ROOT_FOLDER, METADATA_FOLDER
 
 # ---------------------------------------------------------------
 # GLOBALS
 # ---------------------------------------------------------------
-# All folders are relative to gointerject.github.io folder
-OUTPUT_FOLDER = "_metadata"
+OUTPUT_FOLDER = METADATA_FOLDER
 OUTPUT_FILENAME = 'keywords.txt'
-FRONT_MATTER_FILEPATH = './_metadata/front_matter.yaml'
+FRONT_MATTER_FILEPATH = ROOT_FOLDER + '/' + METADATA_FOLDER + '/front_matter.yaml'
 
 # ---------------------------------------------------------------
 # METHODS
@@ -46,7 +50,7 @@ def main():
     # Define the output file path for saving the front matter
     full_output_filepath = os.path.join(ROOT_FOLDER, OUTPUT_FOLDER, OUTPUT_FILENAME)
 
-    output_filepath = "./" + OUTPUT_FOLDER + "/" + OUTPUT_FILENAME
+    output_filepath = ROOT_FOLDER + "/" + OUTPUT_FOLDER + "/" + OUTPUT_FILENAME
     unique_keywords = extract_keywords(FRONT_MATTER_FILEPATH)
 
     with open(output_filepath, 'w') as file:

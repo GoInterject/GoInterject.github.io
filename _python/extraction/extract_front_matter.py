@@ -1,31 +1,30 @@
-# BUILDS A JSON LIST OF TITLE, URL, CONTENT
+# BUILDS A YAML FILE OF THE FRONT MATTER OF ALL DOC PAGES
 # ---------------------------------------------------------------
-# Be sure to first build the doc site with 'bundle exec jekyll build' to update the _site
-# Searches the gointerject.github.io/_site folder and subfolders for html files
-# Extracts the title, url, and content
-# Outputs as json file to gointerject.github.io/OUTPUT_FOLDER/OUTPUT_FILENAME
-# Replaces strings in output file from OLD_STRINGS to NEW_STRINGS
+# Outputs JSON file to gointerject.github.io/OUTPUT_FOLDER/OUTPUT_FILENAME
 # This script will iterate through all the pages and extract the front matter into an external file
 
+# BE SURE TO SET THE CONFIG VARIABLES IN `config.py`
 # ---------------------------------------------------------------
+
 import os
 import yaml  # for parsing YAML front matter and saving the result
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from utils.doc_page_folder_list import PageDirectories
-from config import ROOT_FOLDER
+from utils.utilities import convert_filepath_to_url, extract_front_matter_from_file
+from config import ROOT_FOLDER, METADATA_FOLDER
 
 # ---------------------------------------------------------------
 # GLOBALS
 # ---------------------------------------------------------------
-OUTPUT_FOLDER = "_metadata" # relative to gointerject.github.io folder
+OUTPUT_FOLDER = METADATA_FOLDER
 OUTPUT_FILENAME = 'front_matter.yaml'
 
 # ---------------------------------------------------------------
 # METHODS
 # ---------------------------------------------------------------
-def extract_front_matter():
-    global_front_matter = {}
+def extract_front_matter_from_all_pages():
+    front_matter = {}
 
     for folder in PageDirectories:
         dir_path = os.path.join(ROOT_FOLDER, folder.value)
@@ -33,36 +32,17 @@ def extract_front_matter():
             continue
 
         for file_name in os.listdir(dir_path):
-            file_path = os.path.join(dir_path, file_name)
+            filepath = os.path.join(dir_path, file_name)
             if not file_name.endswith(".md"):
                 continue
 
-            with open(file_path, "r", encoding="utf-8") as file_handle:
-                front_matter = extract_front_matter_from_file(file_path)
-                web_url = convert_to_url(file_path, ROOT_FOLDER)
-                global_front_matter[web_url] = front_matter
+            with open(filepath, "r", encoding="utf-8") as file_handle:
+                file_front_matter = extract_front_matter_from_file(filepath)
+                web_url = convert_filepath_to_url(filepath)
+                front_matter[web_url] = file_front_matter
     
-    return global_front_matter
+    return front_matter
     
-# ---------------------------------------------------------------
-def extract_front_matter_from_file(file_path):
-    """Extract front matter from a file content string."""
-
-    with open(file_path, "r", encoding="utf-8") as file_handle:
-        file_str = file_handle.read()
-
-        if file_str.startswith("---"):
-            end_idx = file_str.find("---", 3)  # Find the second occurrence of '---'
-            if end_idx != -1:
-                front_matter_str = file_str[3:end_idx]
-                # Replace tabs with spaces to prevent YAML parsing errors
-                front_matter_str = front_matter_str.replace("\t", "    ")  # Replace with 4 spaces (adjust as needed)
-                try:
-                    return yaml.safe_load(front_matter_str)
-                except yaml.YAMLError as e:
-                    print(f"Error parsing YAML front matter in {file_path}:\n{str(e)}")
-    return {}
-
 # ---------------------------------------------------------------
 def save_front_matter_to_file(output_file, front_matter_dict):
     """Save front matter dictionary to an external YAML file."""
@@ -73,20 +53,10 @@ def save_front_matter_to_file(output_file, front_matter_dict):
         print(f"Error saving front matter to file: {str(e)}")
 
 # ---------------------------------------------------------------
-def convert_to_url(file_path, root_folder):
-    """Convert a local file path to a www.gointerject.com URL with .html extension."""
-    relative_path = os.path.relpath(file_path, root_folder)  # Get relative path from root_folder
-    web_url = os.path.join("www.docs.gointerject.com", relative_path)  # Prepend the base URL
-    web_url = web_url.replace("\\", "/")  # Convert backslashes to forward slashes for URLs
-    web_url = web_url.replace(".md", ".html")  # Change .md extension to .html
-    return web_url
-
-
-# ---------------------------------------------------------------
 # MAIN
 # ---------------------------------------------------------------
 def main():
-    global_front_matter = extract_front_matter()
+    front_matter = extract_front_matter_from_all_pages()
 
     # Ensure the output folder exists
     output_folder_path = os.path.join(ROOT_FOLDER, OUTPUT_FOLDER)
@@ -96,7 +66,7 @@ def main():
     full_output_filepath = os.path.join(ROOT_FOLDER, OUTPUT_FOLDER, OUTPUT_FILENAME)
 
     # Save the global front matter dictionary to an external YAML file
-    save_front_matter_to_file(full_output_filepath, global_front_matter)
+    save_front_matter_to_file(full_output_filepath, front_matter)
     print(f"  Front matter saved to {full_output_filepath}")
 
 if __name__ == "__main__":

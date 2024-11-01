@@ -1,10 +1,18 @@
-# SCRIPT IS A PYTEST
-# VALIDATES ALL LINKS IN DOCUMENTATION FOLDERS
-# EXTRACTS FROM THE FRONT MATTER: HEADINGS, IMAGES, AND LINKS
-# HEADINGS: CHECKS IF THAT HEADING EXISTS IN THE FILE
-# IMAGES: CHECKS IF THE IMAGE FILE EXISTS
-# LINKS: CHECK IF THE FILE EXISTS OR THE URL LINK IS VALID
+# PYTEST TO VALIDATE ALL LINKS IN THE DOC FOLDERS
+# ---------------------------------------------------------------
+# Uses the front matter in `front_matter.yaml` as a base
+# If this file is not found, it will extract the front matter using `extract_front_matter()`
+# Iterates through the front matter and validate links:
+# Headings: Checks if the heading exists in the doc page
+# Doc Page: Checks if the doc page exists
+# Images: Checks if the image exists in the correct location
+# Links: Checks if the link exists:
+#   Doc page link: Checks if the doc page exists
+#   Heading link: Check if the heading exists for the doc page
+#   URL: Check if the URL is valid
 
+# BE SURE TO SET THE ROOT_FOLDER AND SITE_FOLDER IN `config.py`
+# ---------------------------------------------------------------
 import os
 import logging
 import requests
@@ -14,10 +22,12 @@ import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from config import ROOT_FOLDER
 from utils.doc_page_folder_list import PageDirectories
-from utils.file_processor import convert_url_to_file_path, convert_filepath_to_url
-from extraction.extract_front_matter import extract_front_matter
+from _python.utils.utilities import convert_url_to_file_path, convert_filepath_to_url
+from extraction.extract_front_matter import extract_front_matter_from_all_pages
 
-# ----------------------------------------------------------------------------------
+# ---------------------------------------------------------------
+# GLOBALS
+# ---------------------------------------------------------------
 logger = logging.getLogger(__name__)
 global_headings_dict = {}
 global_front_matter = {}
@@ -36,7 +46,9 @@ CHECK_FILES_IN_LINKS = True
 CHECK_HEADINGS_IN_LINKS = True # Headings in links will not be check if CHECK_FILES_IN_LINKS = False
 CHECK_URL_LINKS = True
 
-# ----------------------------------------------------------------------------------
+# ---------------------------------------------------------------
+# METHODS
+# ---------------------------------------------------------------
 def convert_heading_to_anchor(heading: str) -> str:
     """
     Convert a heading string into a Jekyll-style anchor link.
@@ -53,46 +65,12 @@ def convert_heading_to_anchor(heading: str) -> str:
     
     return anchor
 
-# ----------------------------------------------------------------------------------
+# ---------------------------------------------------------------
 def get_yaml_from_file(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         return yaml.safe_load(file)
 
-# ----------------------------------------------------------------------------------
-# def extract_front_matter(file_str):
-#     """Extract front matter from a file content string."""
-#     if file_str.startswith("---"):
-#         end_idx = file_str.find("---", 3)  # Find the second occurrence of '---'
-#         if end_idx != -1:
-#             front_matter_str = file_str[3:end_idx]
-#             # Replace tabs with spaces to prevent YAML parsing errors
-#             front_matter_str = front_matter_str.replace("\t", "    ")  # Replace with 4 spaces (adjust as needed)
-#             try:
-#                 return yaml.safe_load(front_matter_str)
-#             except yaml.YAMLError as e:
-#                 logger.error(f"PARSE: Error parsing YAML front matter: {str(e)}")
-#     return {}
-
-# ----------------------------------------------------------------------------------
-# def extract_front_matter_from_files(root_folder):
-#     # global global_front_matter
-
-#     for folder in PageDirectories:
-#         dir_path = os.path.join(root_folder, folder.value)
-#         if not os.path.exists(dir_path):
-#             continue
-
-#         for file_name in os.listdir(dir_path):
-#             file_path = os.path.join(dir_path, file_name)
-#             if not file_name.endswith(".md"):
-#                 continue
-
-#             with open(file_path, "r", encoding="utf-8") as file_handle:
-#                 file_str = file_handle.read()
-#                 front_matter = extract_front_matter(file_str)
-#                 global_front_matter[file_path] = front_matter
-
-# ----------------------------------------------------------------------------------
+# ---------------------------------------------------------------
 def verify_links(root_folder):
     global num_files_checked
     global num_file_errors
@@ -121,7 +99,7 @@ def verify_links(root_folder):
 
     return test_results
 
-# ----------------------------------------------------------------------------------
+# ---------------------------------------------------------------
 def verify_images_in_file(root_folder, file_path, image_dir, images) -> bool:
     global num_errors_images
     file_test_results = True
@@ -144,18 +122,18 @@ def verify_images_in_file(root_folder, file_path, image_dir, images) -> bool:
                 file_test_results = False
     return file_test_results
 
-# ----------------------------------------------------------------------------------
+# ---------------------------------------------------------------
 def log_error(message):
     logger.error(message)
     return False
 
-# ----------------------------------------------------------------------------------
+# ---------------------------------------------------------------
 def check_file_exists(linked_file_path, file_path):
     if not os.path.exists(linked_file_path):
         return log_error(f"FILE NOT FOUND: {linked_file_path} in file: {file_path}\n")
     return True
 
-# ----------------------------------------------------------------------------------
+# ---------------------------------------------------------------
 def check_heading_exists(linked_file_path, link_heading, file_path):
     url = convert_filepath_to_url(linked_file_path, ROOT_FOLDER)
     file_front_matter = global_front_matter.get(url, {})
@@ -166,7 +144,7 @@ def check_heading_exists(linked_file_path, link_heading, file_path):
         return log_error(f"HEADING LINK NOT FOUND: {linked_file_path}#{link_heading} in file: {file_path}\n")
     return True
 
-# ----------------------------------------------------------------------------------
+# ---------------------------------------------------------------
 def verify_links_in_file(root_folder, file_path, links, headings) -> bool:
     file_test_results = True
     global num_errors_url, num_errors_files, num_errors_headings
@@ -228,7 +206,7 @@ def verify_links_in_file(root_folder, file_path, links, headings) -> bool:
 
     return file_test_results
 
-# ----------------------------------------------------------------------------------
+# ---------------------------------------------------------------
 def test_links():
     global global_front_matter
 
@@ -239,11 +217,9 @@ def test_links():
         global_front_matter = get_yaml_from_file(yaml_filepath)
     # Will build the front matter if the yaml file is not found
     else:
-        global_front_matter = extract_front_matter()
+        global_front_matter = extract_front_matter_from_all_pages()
 
     ret_val = verify_links(ROOT_FOLDER)
     num_errors = num_errors_images+num_errors_headings+num_errors_files+num_errors_url
     logger.info(f" SUMMARY: \n\nBroken Images:    {num_errors_images}\nBroken Files:     {num_errors_files}\nBroken Headings:  {num_errors_headings}\nBroken URLs:      {num_errors_url}\nNUM BROKEN LINKS: {num_errors}\n\nTotal Files checked: {num_files_checked}\nTotal Files Errored: {num_file_errors}\nTotal Files Passed:  {num_files_checked-num_file_errors}\n\nTest Log in 'test_log.log'. Errors in 'error_log.log'")
     assert ret_val == True, "Failed. See log for details."
-
-test_links()

@@ -1,23 +1,27 @@
+# BUILDS A JSON FILE OF ALL KEYWORDS AND ALL URLS THAT KEYWORD IS FOUND IN THE FRONT MATTER FOR ALL DOC PAGES
+# ---------------------------------------------------------------
 # Run 'extract_front_matter.py' and 'extract_keywords_txt.py' first
 # Creates a json file of all keywords in the documentation site
 # Each keyword will have a list of URLs that it is found in
+# Outputs JSON file to gointerject.github.io/OUTPUT_FOLDER/OUTPUT_FILENAME
 
+# BE SURE TO SET THE CONFIG VARIABLES IN `config.py`
 # ---------------------------------------------------------------
+
 import yaml
 import json
 import os
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from config import ROOT_FOLDER
+from config import ROOT_FOLDER, METADATA_FOLDER
 
 # ---------------------------------------------------------------
 # GLOBALS
 # ---------------------------------------------------------------
-# All folders are relative to gointerject.github.io folder
-OUTPUT_FOLDER = "_metadata"
+OUTPUT_FOLDER = METADATA_FOLDER
 OUTPUT_FILENAME = 'index.json'
-FRONT_MATTER_FILEPATH = './_metadata/front_matter.yaml'
-KEYWORDS_FILEPATH = './_metadata/keywords.txt'
+FRONT_MATTER_FILEPATH = './' + METADATA_FOLDER + '/front_matter.yaml'
+KEYWORDS_FILEPATH = './' + METADATA_FOLDER + '/keywords.txt'
 
 # ---------------------------------------------------------------
 # METHODS

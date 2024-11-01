@@ -1,12 +1,13 @@
-# BUILDS A JSON LIST OF TITLE, URL, CONTENT
+# BUILDS A JSON LIST OF TITLE, URL, CONTENT OF ALL DOC PAGES
 # ---------------------------------------------------------------
 # Be sure to first build the doc site with 'bundle exec jekyll build' to update the _site
 # Searches the gointerject.github.io/_site folder and subfolders for html files
-# Extracts the title, url, and content
+# Extracts the title, URL, and content
 # Outputs as json file to gointerject.github.io/OUTPUT_FOLDER/OUTPUT_FILENAME
-# Replaces strings in output file from OLD_STRINGS to NEW_STRINGS
 
+# BE SURE TO SET THE CONFIG VARIABLES IN `config.py`
 # ---------------------------------------------------------------
+
 import os
 from bs4 import BeautifulSoup
 import json
@@ -14,31 +15,20 @@ import html2text
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from utils.doc_page_folder_list import PageDirectories
-from config import ROOT_FOLDER
+from utils.utilities import convert_filepath_to_url
+from config import ROOT_FOLDER, SITE_FOLDER, METADATA_FOLDER
 
 # ---------------------------------------------------------------
 # GLOBALS
 # ---------------------------------------------------------------
-OUTPUT_FOLDER = "_metadata" # relative to gointerject.github.io folder
+OUTPUT_FOLDER = METADATA_FOLDER
 OUTPUT_FILENAME = 'content.json'
-
-# Replace words in the result json list
-OLD_STRINGS = [
-    "D:\\\\Users\\\\samuelr\\\\Documents\\\\GitHub\\\\GoInterject.github.io\\\\_site\\\\"
-    ,"\\\\"
-]
-
-NEW_STRINGS = [
-    "https://docs.gointerject.com/"
-    ,"/"
-]
 
 # ---------------------------------------------------------------
 # METHODS
 # ---------------------------------------------------------------
-def extract_page_data(file_path):
-    # print(f"extracting content from {file_path}")
-    with open(file_path, 'r', encoding='utf-8') as file:
+def extract_page_data(filepath):
+    with open(filepath, 'r', encoding='utf-8') as file:
         content = file.read()
         text_maker = html2text.HTML2Text()
         text_maker.ignore_tables = True
@@ -49,8 +39,8 @@ def extract_page_data(file_path):
         # Extract page title
         title = soup.title.text if soup.title else None
 
-        # Construct page URL using file path
-        url = f'{os.path.abspath(file_path)}'
+        # Convert the filepath to a page URL
+        url = convert_filepath_to_url(filepath)
 
         return {'title': title, 'url': url, 'content': stripped}
 
@@ -64,12 +54,11 @@ def extract_content_from_pages(root_folder, output_file):
             continue
 
         for file_name in os.listdir(dir_path):
-            file_path = os.path.join(dir_path, file_name)
+            filepath = os.path.join(dir_path, file_name)
             if not file_name.endswith(".html"):
                 continue
 
-            # with open(file_path, "r", encoding="utf-8") as file_handle:
-            page_data = extract_page_data(file_path)
+            page_data = extract_page_data(filepath)
             if page_data:
                 page_data_list.append(page_data)
 
@@ -77,25 +66,25 @@ def extract_content_from_pages(root_folder, output_file):
         json.dump(page_data_list, json_file, indent=2)
 
 # ---------------------------------------------------------------
-def replace_strings_in_file(file_path, old_string, new_string):
+def replace_strings_in_file(filepath, old_string, new_string):
     try:
-        with open(file_path, 'r', encoding='utf-8') as file:
+        with open(filepath, 'r', encoding='utf-8') as file:
             content = file.read()
 
         modified_content = content.replace(old_string, new_string)
 
-        with open(file_path, 'w', encoding='utf-8') as file:
+        with open(filepath, 'w', encoding='utf-8') as file:
             file.write(modified_content)
 
     except Exception as e:
-        print(f"Error replacing string in {file_path}: {e}")
+        print(f"Error replacing string in {filepath}: {e}")
 
 # ---------------------------------------------------------------
 # MAIN
 # ---------------------------------------------------------------
 def main():
     # The root directory of the documentation repo (i.e. gointerject.github.io)
-    folder_to_search = os.path.join(ROOT_FOLDER, "_site")
+    folder_to_search = os.path.join(ROOT_FOLDER, SITE_FOLDER)
 
     # Ensure the output folder exists
     output_folder_path = os.path.join(ROOT_FOLDER, OUTPUT_FOLDER)
@@ -105,10 +94,6 @@ def main():
     full_output_filepath = os.path.join(ROOT_FOLDER, OUTPUT_FOLDER, OUTPUT_FILENAME)
 
     extract_content_from_pages(folder_to_search, full_output_filepath)
-
-    # Replace strings in the file
-    for i in range(len(OLD_STRINGS)):
-        replace_strings_in_file(full_output_filepath, OLD_STRINGS[i], NEW_STRINGS[i])
 
     print(f"  Index created and saved to {full_output_filepath}")
 

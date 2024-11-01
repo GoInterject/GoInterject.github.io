@@ -1,21 +1,21 @@
-# ADDS IMAGE DIRECTORY TO FRONT MATTER
-
-# Run this script when updating documentation image directories
-
-# This script will search the root folder and all subfolders for .md files
-# Excludes the "_site" folder
+# ADDS IMAGE DIRECTORY TO FRONT MATTER FOR ALL DOC PAGES
+# ---------------------------------------------------------------
+# This script will search md files in all folders in the `doc_page_folder_list.py`
+# For each page:
 # Deletes the image_dir entry in the Jekyll front matter if currently present
-# Extracts the name of the directory used for images (root folder + sub folder if present)
+# Extracts the name of the directory used for images (uses the first occurrence of an image link)
 # Makes en entry of image_dir in the Jekyll front matter after the links entry
 
+# BE SURE TO SET THE CONFIG VARIABLES IN `config.py`
 # ---------------------------------------------------------------
+
 import os
 import re
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from config import ROOT_FOLDER
 from utils.doc_page_folder_list import PageDirectories
-from utils.file_processor import process_folder
+from utils.utilities import process_folder
 
 # ---------------------------------------------------------------
 # METHODS
@@ -45,8 +45,8 @@ def merge_root_and_sub_folder(image):
         return root_folder
 
 # ---------------------------------------------------------------
-def process_md_file(file_path):
-    with open(file_path, 'r', encoding='utf-8') as file:
+def process_md_file(filepath):
+    with open(filepath, 'r', encoding='utf-8') as file:
         raw_content = file.read()
 
     # Delete existing image_dir entry in the front matter, if present
@@ -68,7 +68,7 @@ def process_md_file(file_path):
         # If links entry is not found, insert links and image_dir entry at the beginning
         front_matter = f'---\nlinks: []\nimage_dir: "{image_dir}"' + content[3:]
 
-    with open(file_path, 'w', encoding='utf-8') as file:
+    with open(filepath, 'w', encoding='utf-8') as file:
         file.write(front_matter)
 
 # ---------------------------------------------------------------

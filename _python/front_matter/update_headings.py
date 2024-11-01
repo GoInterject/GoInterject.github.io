@@ -1,21 +1,21 @@
-# ADDS HEADINGS TO FRONT MATTER
-
-# Run this script when updating documentation headings
-
-# This script will search the root folder and all subfolders for .md files
-# Excludes the "_site" folder
+# ADDS HEADINGS TO FRONT MATTER FOR ALL DOC PAGES
+# ---------------------------------------------------------------
+# This script will search md files in all folders in the `doc_page_folder_list.py`
+# For each page:
 # Deletes the headings entry in the Jekyll front matter if currently present
 # Finds all headings in the file (as indicated by '##' or '###' or '####')
 # Makes en entry of headings in the Jekyll front matter after the keywords entry
 
+# BE SURE TO SET THE CONFIG VARIABLES IN `config.py`
 # ---------------------------------------------------------------
+
 import os
 import re
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from config import ROOT_FOLDER
 from utils.doc_page_folder_list import PageDirectories
-from utils.file_processor import process_folder
+from utils.utilities import process_folder
 
 # ---------------------------------------------------------------
 # METHODS
@@ -26,9 +26,9 @@ def extract_headings(file_content):
     return [re.sub(r'^\s*#*\s*', '', heading.strip()) for heading in sum(headings, ()) if heading]
 
 # ---------------------------------------------------------------
-def process_md_file(file_path):
+def process_md_file(filepath):
     # Read the content of the Markdown file
-    with open(file_path, 'r', encoding='utf-8') as file:
+    with open(filepath, 'r', encoding='utf-8') as file:
         raw_content = file.read()
 
     # Extract headings from the content
@@ -60,7 +60,7 @@ def process_md_file(file_path):
         front_matter = f'---\nkeywords: []\nheadings: {headings_str}' + content[3:]
 
     # Write the updated content back to the file
-    with open(file_path, 'w', encoding='utf-8') as file:
+    with open(filepath, 'w', encoding='utf-8') as file:
         file.write(front_matter)
 
 # ---------------------------------------------------------------

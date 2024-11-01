@@ -1,15 +1,15 @@
 # UPDATES ALL IMAGES ENTRY IN FRONT MATTER TO MATCH THE FILENAMES AND TYPES IN THE PAGE
-
-# Run this script when updating image filenames and/or types (i.e. png or jpg)
-
-# This script will search the root folder and all subfolders for .md files
-# Excludes the "_site" folder
+# ---------------------------------------------------------------
+# This script will search md files in all folders in the `doc_page_folder_list.py`
+# For each page:
 # Finds all image references in the file (as indicated by '![](/images/...))
 # Changes the existing images entry in the front matter to match the filenames and types found in the page
 # If number of images in page and entries in images do not match, does not update
 # If no images are found in page, sets the image_dir: "" and images: [] in the front matter
 
+# BE SURE TO SET THE CONFIG VARIABLES IN `config.py`
 # ---------------------------------------------------------------
+
 import os
 import re
 import yaml
@@ -18,7 +18,7 @@ import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from config import ROOT_FOLDER
 from utils.doc_page_folder_list import PageDirectories
-from utils.file_processor import process_folder
+from utils.utilities import process_folder
 
 # ---------------------------------------------------------------
 # GLOBALS
@@ -31,7 +31,7 @@ INSERT_NEW_ENTRY = True
 # ---------------------------------------------------------------
 # METHODS
 # ---------------------------------------------------------------
-def insert_new_content(file_path, content, regex_pattern, new_insert):
+def insert_new_content(filepath, content, regex_pattern, new_insert):
     # Find the position of the regex_pattern
     match = re.search(regex_pattern, content, re.MULTILINE | re.DOTALL)
     
@@ -42,7 +42,7 @@ def insert_new_content(file_path, content, regex_pattern, new_insert):
         # If matched entry is not found, insert make image_dir and new images entry at the beginning
         front_matter = f'---\nimage_dir: ""{new_insert}' + content[3:]
 
-    with open(file_path, 'w', encoding='utf-8') as file:
+    with open(filepath, 'w', encoding='utf-8') as file:
         file.write(front_matter)
     pass
 
@@ -51,21 +51,6 @@ def delete_image_dir_from_frontmatter(file_content):
     # Delete existing image_dir entry in the front matter, if present
     content = re.sub(r'(^.*\bimage_dir\b:.*$\n*)', '', file_content, count=1, flags=re.MULTILINE)
     return content
-
-# ---------------------------------------------------------------
-def extract_front_matter(file_str):
-    """Extract front matter from a file content string."""
-    if file_str.startswith("---"):
-        end_idx = file_str.find("---", 3)  # Find the second occurrence of '---'
-        if end_idx != -1:
-            front_matter_str = file_str[3:end_idx]
-            # Replace tabs with spaces to prevent YAML parsing errors
-            front_matter_str = front_matter_str.replace("\t", "    ")  # Replace with 4 spaces (adjust as needed)
-            try:
-                return yaml.safe_load(front_matter_str)
-            except yaml.YAMLError as e:
-                print(f"PARSE: Error parsing YAML front matter: {str(e)}")
-    return {}
 
 # ---------------------------------------------------------------
 def delete_images_from_frontmatter(file_content):
@@ -121,13 +106,10 @@ def create_new_image():
     }
 
 # ---------------------------------------------------------------
-def process_md_file(file_path):
+def process_md_file(filepath):
     global id
-    with open(file_path, 'r', encoding='utf-8') as file:
+    with open(filepath, 'r', encoding='utf-8') as file:
         raw_content = file.read()
-
-    # front_matter_text = extract_front_matter(raw_content)
-    # images_in_front_matter = front_matter_text.get("images", [])
 
     # Extract title and image filenames from the Markdown content
     images_from_front_matter = extract_images_from_frontmatter(raw_content)
@@ -152,7 +134,7 @@ def process_md_file(file_path):
             # If matched entry is not found, insert make image_dir and new images entry at the beginning
             front_matter = f'---\nlinks: []\nimage_dir: ""\nimages: []' + content[3:]
 
-        with open(file_path, 'w', encoding='utf-8') as file:
+        with open(filepath, 'w', encoding='utf-8') as file:
             file.write(front_matter)
 
     # Number of images found in front matter is equal to the number found in the file
@@ -189,7 +171,7 @@ def process_md_file(file_path):
                 # If matched entry is not found, insert make image_dir and new images entry at the beginning
                 front_matter = f'---\nimage_dir: ""\nimages: {formatted_string}' + content[3:]
 
-            with open(file_path, 'w', encoding='utf-8') as file:
+            with open(filepath, 'w', encoding='utf-8') as file:
                 file.write(front_matter)
 
     # Images found in file and the count does not match the number of images in front matter
@@ -219,13 +201,13 @@ def process_md_file(file_path):
             # If matched entry is not found, insert make image_dir and new images entry at the beginning
             front_matter = f'---\nimage_dir: ""\nimages: {formatted_string}' + content[3:]
 
-        with open(file_path, 'w', encoding='utf-8') as file:
+        with open(filepath, 'w', encoding='utf-8') as file:
             file.write(front_matter)
 
     # Images found in file and the count does not match the number of images in front matter
     # Do not update the file
     else:
-        print(f"ERROR: File {file_path} not updated: images in front matter ({len(images_from_front_matter)}) and in file ({len(image_filenames_list)}) are not equal") 
+        print(f"ERROR: File {filepath} not updated: images in front matter ({len(images_from_front_matter)}) and in file ({len(image_filenames_list)}) are not equal") 
 
 # ---------------------------------------------------------------
 # MAIN

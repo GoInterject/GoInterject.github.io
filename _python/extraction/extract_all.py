@@ -1,14 +1,16 @@
-# run_all_scripts.py
+# RUNS ALL EXTRACT SCRIPTS
 
-# Import each script as a function or module
+# BE SURE TO SET THE CONFIG VARIABLES IN `config.py`
+# ---------------------------------------------------------------
+
 import extract_front_matter
 import extract_keywords_txt
 import extract_keywords
 import extract_content
 from formulas.extract_formulas import main as extract_formulas
 
+# ---------------------------------------------------------------
 def run_all():
-    # Run each script in order
     print("Running extract_front_matter.py...")
     extract_front_matter.main()
 
@@ -26,5 +28,6 @@ def run_all():
 
     print("All scripts completed successfully.")
 
+# ---------------------------------------------------------------
 if __name__ == "__main__":
     run_all()

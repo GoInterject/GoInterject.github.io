@@ -1,18 +1,25 @@
-# 
-
+# BUILDS A JSON FILE OF ALL INTERJECT FORMULAS AND THEIR DESCRIPTION AND PARAMETERS
 # ---------------------------------------------------------------
+# Extracts information about every Interject function in 'utils.formula_list.py'
+# Loads the page corresponding to the Interject function
+# Extracts formula name, description, parameters (name, description, data types, constraints, if_blank)
+# Outputs JSON file to gointerject.github.io/OUTPUT_FOLDER/OUTPUT_FILENAME
+
+# BE SURE TO SET THE CONFIG VARIABLES IN `config.py`
+# ---------------------------------------------------------------
+
 import os
 import re
 import json
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from config import ROOT_FOLDER
+from config import ROOT_FOLDER, METADATA_FOLDER
 from utils.formula_list import InterjectFormulas
 
 # ---------------------------------------------------------------
 # GLOBALS
 # ---------------------------------------------------------------
-OUTPUT_FOLDER = "_metadata" # relative to gointerject.github.io folder
+OUTPUT_FOLDER = METADATA_FOLDER
 OUTPUT_FILENAME = 'formulas.json'
 FILENAME = "ReportRange.md"
 
@@ -93,10 +100,10 @@ def extract_formulas(root_folder):
     }
 
     for file in InterjectFormulas:
-        file_path = os.path.join(root_folder, file.value)
+        filepath = os.path.join(root_folder, file.value)
 
-        with open(file_path, "r", encoding="utf-8") as file_handle:
-            json_data = extract_json_from_file(file_path)
+        with open(filepath, "r", encoding="utf-8") as file_handle:
+            json_data = extract_json_from_file(filepath)
             all_descriptions["interject_formula_descriptions"].extend(json_data["interject_formula_descriptions"])
 
     # Convert to JSON format

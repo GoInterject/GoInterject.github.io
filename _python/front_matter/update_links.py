@@ -1,9 +1,7 @@
-# ADDS LINKS TO FRONT MATTER
-
-# Run this script when updating documentation links for a file or all files of a root folder
-
-# This script will search the root folder and all subfolders for .md files
-# Excludes the "_site" folder
+# ADDS LINKS TO FRONT MATTER FOR ALL DOC PAGES
+# ---------------------------------------------------------------
+# This script will search md files in all folders in the `doc_page_folder_list.py`
+# For each page:
 # Deletes the links entry in the Jekyll front matter if currently present
 # Finds all links in the file (as indicated by '[text](link)' or 'a href="url"')
 # Valid links are preceded by '"', '[', or '('
@@ -12,21 +10,23 @@
 # Excludes references to the same page (as indicated by '[text](#link)') - these are headings
 # Makes an entry of links in the Jekyll front matter after the headings entry
 
+# BE SURE TO SET THE CONFIG VARIABLES IN `config.py`
 # ---------------------------------------------------------------
+
 import os
 import re
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from config import ROOT_FOLDER
 from utils.doc_page_folder_list import PageDirectories
-from utils.file_processor import process_folder
+from utils.utilities import process_folder
 
 # ---------------------------------------------------------------
 # METHODS
 # ---------------------------------------------------------------
-def process_md_file(file_path):
+def process_md_file(filepath):
     # Read the content of the Markdown file
-    with open(file_path, 'r', encoding='utf-8') as file:
+    with open(filepath, 'r', encoding='utf-8') as file:
         raw_content = file.read()
 
     # Delete existing links entry in the front matter, if present
@@ -57,7 +57,7 @@ def process_md_file(file_path):
         front_matter = f'---\nheadings: []\nlinks: {links_str}' + content[3:]
 
     # Write the updated content back to the file
-    with open(file_path, 'w', encoding='utf-8') as file:
+    with open(filepath, 'w', encoding='utf-8') as file:
         file.write(front_matter)
 
 # ---------------------------------------------------------------
@@ -73,6 +73,7 @@ def clean_links(links):
     return cleaned_links
 
 # ---------------------------------------------------------------
+# Extracts the links from the file content by iterating through the text one char at a time
 def extract_links_from_content(file_content):
     links = []
     length = len(file_content)

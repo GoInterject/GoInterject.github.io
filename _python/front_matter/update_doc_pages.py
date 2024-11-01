@@ -1,5 +1,9 @@
-# Updates all front matter in the doc pages:
-# headings, links, filenames, image directory, images
+# UPDATES ALL FRONT MATTER IN ALL DOC PAGES
+# ---------------------------------------------------------------
+# Updates headings, links, filenames, image directory, images front matter in all doc pages
+
+# BE SURE TO SET THE CONFIG VARIABLES IN `config.py`
+# ---------------------------------------------------------------
 
 import subprocess
 
