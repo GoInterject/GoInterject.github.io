@@ -553,3 +553,15 @@ python pytest
 ```
 
 Results will be printed and logs will appear in the `_python/logs` folder.
+
+### Post-Commit Procedures
+
+When you are done committing your changes, you can run the following sequence to update all the front matter for all doc pages, extract the metadata, and run the pytest:
+
+```bash
+cd gointerject.github.io
+python _python/front_matter/update_doc_pages.py
+python _python/extraction/extract_all.py
+cd _python
+pytest
+```

@@ -22,7 +22,7 @@ import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from config import ROOT_FOLDER
 from utils.doc_page_folder_list import PageDirectories
-from _python.utils.utilities import convert_url_to_file_path, convert_filepath_to_url
+from utils.utilities import convert_filepath_to_url
 from extraction.extract_front_matter import extract_front_matter_from_all_pages
 
 # ---------------------------------------------------------------
@@ -45,6 +45,8 @@ CHECK_HEADINGS = True # Headings will not be check if CHECK_FILES = False
 CHECK_FILES_IN_LINKS = True
 CHECK_HEADINGS_IN_LINKS = True # Headings in links will not be check if CHECK_FILES_IN_LINKS = False
 CHECK_URL_LINKS = True
+
+DOMAINS_TO_SKIP = ["github.com"] # domains to skip in the URL verification process
 
 # ---------------------------------------------------------------
 # METHODS
@@ -135,7 +137,7 @@ def check_file_exists(linked_file_path, file_path):
 
 # ---------------------------------------------------------------
 def check_heading_exists(linked_file_path, link_heading, file_path):
-    url = convert_filepath_to_url(linked_file_path, ROOT_FOLDER)
+    url = convert_filepath_to_url(linked_file_path)
     file_front_matter = global_front_matter.get(url, {})
     file_headings = file_front_matter.get("headings", [])
     converted_file_headings = [convert_heading_to_anchor(h) for h in file_headings]
@@ -193,16 +195,19 @@ def verify_links_in_file(root_folder, file_path, links, headings) -> bool:
 
             # External URL - check HTTP response
             elif not link.startswith(base_url) and CHECK_URL_LINKS:
-                try:
-                    response = requests.get(link, allow_redirects=True)
-                    if response.status_code in {401, 403}:
-                        logger.info(f"URL FOUND BUT NOT AUTHORIZED: {link} in file: {file_path}\n")
-                    elif response.status_code != 200:
-                        file_test_results = log_error(f"URL NOT FOUND (Status Code: {response.status_code}): {link} in file: {file_path}\n")
+                if any(substring in link for substring in DOMAINS_TO_SKIP):
+                    logger.info(f"URL FOUND BUT IS SKIPPED: {link} in file: {file_path}\n")
+                else:
+                    try:
+                        response = requests.get(link, allow_redirects=True)
+                        if response.status_code in {401, 403}:
+                            logger.info(f"URL FOUND BUT NOT AUTHORIZED: {link} in file: {file_path}\n")
+                        elif response.status_code != 200:
+                            file_test_results = log_error(f"URL NOT FOUND (Status Code: {response.status_code}): {link} in file: {file_path}\n")
+                            num_errors_url += 1
+                    except requests.RequestException as e:
+                        file_test_results = log_error(f"URL Error while accessing URL: {link} in file: {file_path} - {str(e)}\n")
                         num_errors_url += 1
-                except requests.RequestException as e:
-                    file_test_results = log_error(f"URL Error while accessing URL: {link} in file: {file_path} - {str(e)}\n")
-                    num_errors_url += 1
 
     return file_test_results
 
@@ -221,5 +226,5 @@ def test_links():
 
     ret_val = verify_links(ROOT_FOLDER)
     num_errors = num_errors_images+num_errors_headings+num_errors_files+num_errors_url
-    logger.info(f" SUMMARY: \n\nBroken Images:    {num_errors_images}\nBroken Files:     {num_errors_files}\nBroken Headings:  {num_errors_headings}\nBroken URLs:      {num_errors_url}\nNUM BROKEN LINKS: {num_errors}\n\nTotal Files checked: {num_files_checked}\nTotal Files Errored: {num_file_errors}\nTotal Files Passed:  {num_files_checked-num_file_errors}\n\nTest Log in 'test_log.log'. Errors in 'error_log.log'")
+    logger.info(f"\n\nTEST RESULTS: \n\nBroken Images:    {num_errors_images}\nBroken Files:     {num_errors_files}\nBroken Headings:  {num_errors_headings}\nBroken URLs:      {num_errors_url}\nNUM BROKEN LINKS: {num_errors}\n\nTotal Files checked: {num_files_checked}\nTotal Files Errored: {num_file_errors}\nTotal Files Passed:  {num_files_checked-num_file_errors}\n\nTest Log in 'test_log.log'. Errors in 'error_log.log'")
     assert ret_val == True, "Failed. See log for details."
