@@ -4,39 +4,39 @@ filename: "CapitalInput.md"
 layout: custom
 keywords: [Training, Capital, Capital Input]
 headings: ["Overview", "To Delete PO Items", "Asset Information", "Replacement Info", "Do I have security rights to Save from this Input File?", "Drills", "Common Save Errors"]
-links: ["/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#the-capital-input-tool", "/bApps/InterjectTraining/Capital/CCQuery.html"]
-image_dir: "WCNTraining/Capital"
+links: ["/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#capital-input-tool-and-the-control-center", "/bApps/InterjectTraining/Capital/CCQuery.html"]
+image_dir: "WCNTraining"
 images: [
-	{file: "CapitalInput_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "CapitalInput_Delete", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "CapitalInput_AssetInfo", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "CapitalInput_ReplacementInfo", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "CapitalInput_DrillWindow", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "CapitalInput_CapitalChangeDrill", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "CapitalInput_Error_TypeSubType", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "CapitalInput_Error_ReplacementReqs", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "CapitalInput_Error_RePull", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "CapitalInput_Error_InvalidYear", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "CapitalInput_Error_InvalidDistrict", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "CapitalInput_Error_YearNotSetup", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "CapitalInput_Error_MissingColumns", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "CapitalInput_Error_MissingFields", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "CapitalInput_Error_PONumReq", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "CapitalInput_Error_PODescriptionReq", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "CapitalInput_Error_PODescriptionMatching", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "CapitalInput_Error_PONumRange", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "CapitalInput_Error_InvalidPOItem", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "CapitalInput_Error_DuplicatePOItem", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "CapitalInput_Error_InvalidAssetType", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "CapitalInput_Error_InvalidLife", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "CapitalInput_Error_TruckNum", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "CapitalInput_Error_NewUsed", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "CapitalInput_Error_DuplicateTruck", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "CapitalInput_Error_TruckForBody", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "CapitalInput_Error_TruckNumReq", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "CapitalInput_Error_InvalidModelYear", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "CapitalInput_Error_InvalidMonthly", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "CapitalInput_Error_ExportedPO", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
+	{file: "Capital/CapitalInput_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Capital/CapitalInput_Delete", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Capital/CapitalInput_AssetInfo", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Capital/CapitalInput_ReplacementInfo", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Capital/CapitalInput_DrillWindow", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Capital/CapitalInput_CapitalChangeDrill", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Capital/CapitalInput_Error_TypeSubType", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Capital/CapitalInput_Error_ReplacementReqs", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Capital/CapitalInput_Error_RePull", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Capital/CapitalInput_Error_InvalidYear", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Capital/CapitalInput_Error_InvalidDistrict", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Capital/CapitalInput_Error_YearNotSetup", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Capital/CapitalInput_Error_MissingColumns", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Capital/CapitalInput_Error_MissingFields", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Capital/CapitalInput_Error_PONumReq", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Capital/CapitalInput_Error_PODescriptionReq", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Capital/CapitalInput_Error_PODescriptionMatching", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Capital/CapitalInput_Error_PONumRange", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Capital/CapitalInput_Error_InvalidPOItem", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Capital/CapitalInput_Error_DuplicatePOItem", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Capital/CapitalInput_Error_InvalidAssetType", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Capital/CapitalInput_Error_InvalidLife", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Capital/CapitalInput_Error_TruckNum", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Capital/CapitalInput_Error_NewUsed", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Capital/CapitalInput_Error_DuplicateTruck", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Capital/CapitalInput_Error_TruckForBody", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Capital/CapitalInput_Error_TruckNumReq", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Capital/CapitalInput_Error_InvalidModelYear", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Capital/CapitalInput_Error_InvalidMonthly", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Capital/CapitalInput_Error_ExportedPO", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
 	]
 description: Save new Capital PO Items for a specific District, and pull in existing Capital PO information.
 ---
@@ -78,7 +78,7 @@ This hidden grouped section is for the Replacement Information. You will need to
 
 ## Do I have security rights to Save from this Input File?
 
-To find if you can save to the Capital Input Tool, please check out the [Tools Controlled by the Control Center](/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#the-capital-input-tool) page.
+To find if you can save to the Capital Input Tool, please check out the [Tools Controlled by the Control Center](/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#capital-input-tool-and-the-control-center) page.
 
 ## Drills
 

@@ -4,8 +4,8 @@ filename: "Contributing.md"
 layout: custom
 sitemap: false
 keywords: [best practices, standards, editing, changes, format, style, consistency]
-headings: ["Overview", "Setting Up A Local Environment", "Commit Messages", "Screenshots", "Screenshot Software Requirements", "When to Include a Screenshot", "Click Action (Arrow)", "Highlighting & Emphasizing", "Multi-Step Actions in a Single Screenshot (Numbered Steps)", "Emphasizing Text or a Point in a Screenshot", "Note on Complex Screenshots", "Note on Popups in Screenshots", "Screenshots of Excel Content", "Tab Navigation in Screenshots", "Screenshots Size", "Spacing Surrounding Screenshots", "Interject Company", "Hiding Credentials", "Uploading and Saving Screenshots to the Documentation Site", "Jekyll Front Matter", "Entries", "Images Entry", "Headings", "Table of Contents", "Grammar/Spelling", "Referencing Buttons and Text", "Lists", "Tables", "Links", "Code Blocks", "Consistency"]
-links: ["https://app.clickup.com/8587490/v/dc/86272-35740/86272-32800", "https://github.com/GoInterject/GoInterject.github.io", "https://www.techsmith.com/screen-capture.html", "#collapsible-button"]
+headings: ["Setup", "Setting Up A Local Environment", "Commit Messages", "Screenshots", "Screenshot Software Requirements", "When to Include a Screenshot", "Company and Email", "Sensitive Information", "Click Action (Arrow)", "Dotted Arrows", "Multi-Step Actions in a Single Screenshot (Numbered Steps)", "Red Outlines", "Complex Steps", "Popup Windows in Screenshots", "Ripped Border", "Screenshots of Excel Content", "Screenshots Size", "Spacing Surrounding Screenshots", "Uploading and Saving Screenshots to the Documentation Site", "Standards and Formatting", "Jekyll Front Matter", "Headings", "Table of Contents", "Grammar/Spelling", "Referencing Buttons and Text", "Lists", "Tables", "Links", "Code Blocks", "HTML/CSS Classes", "Collapsible Button", "Collapsible Button (Expanded)", "Parameter Button", "Highlight Note", "Lab Note", ""]
+links: ["https://app.clickup.com/8587490/v/dc/86272-35740/86272-32800", "https://github.com/GoInterject/GoInterject.github.io", "https://github.com/GoInterject/GoInterject.github.io.git", "https://www.techsmith.com/screen-capture.html", "#collapsible-button"]
 image_dir: "Contributing"
 images: [
 	{file: "01", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
@@ -13,23 +13,27 @@ images: [
 	{file: "CommandPromptNavigate", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
 	{file: "PullRequestClick", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
 	{file: "PullRequestChooseBranches", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "PullRequestReviewer", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "PullRequestReviewer", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""},
+	{file: "NorthwindDataCompany", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""},
 	{file: "08", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
 	{file: "09", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "DottedArrow", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""},
+	{file: "14", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
 	{file: "10", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
 	{file: "11", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
 	{file: "12", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
 	{file: "13", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "14", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "06", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "12", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
 	{file: "15", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
 	{file: "16", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "17", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
 	{file: "18", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
 	{file: "19", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "19", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "InterjectDevelopment", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "EmailBlurred", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "DummyEmailDisplayed", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
+	{file: "CodeButton", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "CollapsableButtonExpanded", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "ParameterButton", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "HighlightNote", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "LabNote", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
 	]
 description: Hello and thank you for wanting to make a contribution to Interject. These are the guidelines that we use to make sure our documentation is the highest quality, and consistent. Included in this document is the documentation cycle from creation to approval.
 ---
@@ -517,4 +521,47 @@ The code:
 </blockquote>
 ```
 
-###
+### Python Suite
+
+In the `_python` folder is a suite for various update, extraction, and pytest scripts:
+
+- _python/extraction: Scripts for extracting meta data from the front matter
+- _python/formulas: Scripts for extracting Interject formula information
+- _python/front_matter: Scripts for updating the front matter in doc pages
+- _python/tests: Pytest to verify all links in the doc site
+
+All extracted metadata will be found in the `_metadata` folder.
+
+<blockquote class=highlight_note>
+<b>Note:</b>  Be sure to commit your changes before running scripts in the event you need to revert back.
+</blockquote>
+<br>
+
+### Pytests
+
+The Pytest can be run on the site to validate the links (images, internal links, headings, and URLs). 
+
+<blockquote class=highlight_note>
+<b>Note:</b> The pytest will use the front_matter.yaml in the _metadata folder. If not found, it will extract the front matter from all doc files.
+</blockquote>
+<br>
+
+From the `gointerject.github.io/python` folder, run the following:
+
+```bash
+python pytest
+```
+
+Results will be printed and logs will appear in the `_python/logs` folder.
+
+### Post-Commit Procedures
+
+When you are done committing your changes, you can run the following sequence to update all the front matter for all doc pages, extract the metadata, and run the pytest:
+
+```bash
+cd gointerject.github.io
+python _python/front_matter/update_doc_pages.py
+python _python/extraction/extract_all.py
+cd _python
+pytest
+```

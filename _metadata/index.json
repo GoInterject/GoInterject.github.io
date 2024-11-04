@@ -1,0 +1,2348 @@
+{
+    ".NET framework": [
+        "https://docs.gointerject.com/wApi/dot-net-api-setup.html"
+    ],
+    "2fa": [
+        "https://docs.gointerject.com/wPortal/MFA.html"
+    ],
+    "API": [
+        "https://docs.gointerject.com/wDeveloper/INTERJECT-Website-Portal.html"
+    ],
+    "Account": [
+        "https://docs.gointerject.com/bApps/bFinancials/Core-Features.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Drill.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Epicor-Financials.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Interject-Financials.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Library.html",
+        "https://docs.gointerject.com/bApps/bFinancials/PullSave.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Update-JE-Upload.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Updates.html"
+    ],
+    "Accounts": [
+        "https://docs.gointerject.com/bApps/bFinancials/BudgetReports.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Company-Setup.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Configure.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Distributions.html",
+        "https://docs.gointerject.com/bApps/bFinancials/ExampleCases.html",
+        "https://docs.gointerject.com/bApps/bFinancials/FRxCatalog.html",
+        "https://docs.gointerject.com/bApps/bFinancials/FRxMigration.html",
+        "https://docs.gointerject.com/bApps/bFinancials/HidingZeros.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Install.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Localize.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Portal-Overview.html",
+        "https://docs.gointerject.com/bApps/bFinancials/PrepSpecFile.html",
+        "https://docs.gointerject.com/bApps/bFinancials/PubReports.html",
+        "https://docs.gointerject.com/bApps/bFinancials/ReportTemplates.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Reporting-Capabilities.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Support-Overview.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Test.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Test2Live.html",
+        "https://docs.gointerject.com/bApps/bFinancials/The-Basics.html",
+        "https://docs.gointerject.com/bApps/bFinancials/TransactionReports.html"
+    ],
+    "Apply Special Features": [
+        "https://docs.gointerject.com/wIndex/Diagnostics-SpecialFeatures.html"
+    ],
+    "Basic": [
+        "https://docs.gointerject.com/wAbout/SingleUser.html"
+    ],
+    "Blanks to Zeroes": [
+        "https://docs.gointerject.com/wIndex/QuickTools-Edit.html"
+    ],
+    "Budget": [
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_Detail.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_EBITDAChangeHistory.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_EBITDARevenueBuckets.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_ReviewDateDetail.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_ReviewDateSummary.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_Summary.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetModule.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplate.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetUpload.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenterSecurity.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenterSummary.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html"
+    ],
+    "Budget Change Query": [
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_Detail.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_EBITDAChangeHistory.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_EBITDARevenueBuckets.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_ReviewDateDetail.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_ReviewDateSummary.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_Summary.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html"
+    ],
+    "Budget Template": [
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplate.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplateSummary.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html"
+    ],
+    "Budget Upload Tab": [
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetUpload.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html"
+    ],
+    "CFO": [
+        "https://docs.gointerject.com/wAbout/Why-CFOs-Like-INTERJECT.html"
+    ],
+    "CIO": [
+        "https://docs.gointerject.com/wAbout/Why-CIOs-Like-INTERJECT.html"
+    ],
+    "CPU": [
+        "https://docs.gointerject.com/wIndex/Excel-Best-and-Worst-Practices.html"
+    ],
+    "CYA": [
+        "https://docs.gointerject.com/wIndex/FinCubeTheFinancialCube.html"
+    ],
+    "Capital": [
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplateSummary.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Capital/CCQuery.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalChangeQueryTool.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInput.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInputReport.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalModule.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalSummary.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalSummary2.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalSummaryPOType.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Capital/ReviewDateSummary.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionTemplateSummary.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/WIP/CCQuery_WIP.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/WIP/CapitalChangeQueryTool_WIP.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/WIP/ReviewDateSummary_WIP.html"
+    ],
+    "Capital Change Query": [
+        "https://docs.gointerject.com/bApps/InterjectTraining/Capital/CCQuery.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalChangeQueryTool.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Capital/ReviewDateSummary.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/WIP/CCQuery_WIP.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/WIP/CapitalChangeQueryTool_WIP.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/WIP/ReviewDateSummary_WIP.html"
+    ],
+    "Capital Input": [
+        "https://docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInput.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInputReport.html"
+    ],
+    "Capital Summary by PO Type": [
+        "https://docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalSummaryPOType.html"
+    ],
+    "Center Across Columns": [
+        "https://docs.gointerject.com/wIndex/QuickTools-Format.html"
+    ],
+    "Change Query": [
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html"
+    ],
+    "ColDefRange": [
+        "https://docs.gointerject.com/wTroubleshoot/RowDefClear.html"
+    ],
+    "Column definition missing": [
+        "https://docs.gointerject.com/wTroubleshoot/RowDefClear.html"
+    ],
+    "Comments": [
+        "https://docs.gointerject.com/bApps/bFinancials/AddingNotes.html"
+    ],
+    "Companies": [
+        "https://docs.gointerject.com/bApps/bFinancials/Core-Features.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Drill.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Epicor-Financials.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Interject-Financials.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Library.html",
+        "https://docs.gointerject.com/bApps/bFinancials/PullSave.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Update-JE-Upload.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Updates.html"
+    ],
+    "Config": [
+        "https://docs.gointerject.com/wDeveloper/TLS.html",
+        "https://docs.gointerject.com/wIndex/Diagnostics-ShortKey.html",
+        "https://docs.gointerject.com/wIndex/Diagnostics-SpecialFeatures.html",
+        "https://docs.gointerject.com/wIndex/Diagnostics.html",
+        "https://docs.gointerject.com/wIndex/SettingsCache.html"
+    ],
+    "Configuration": [
+        "https://docs.gointerject.com/wIndex/Diagnostics-ShortKey.html",
+        "https://docs.gointerject.com/wIndex/Diagnostics-SpecialFeatures.html"
+    ],
+    "Configurations": [
+        "https://docs.gointerject.com/wIndex/Diagnostics.html",
+        "https://docs.gointerject.com/wIndex/SettingsCache.html"
+    ],
+    "Control Center": [
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenterSecurity.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenterSummary.html"
+    ],
+    "Create Range Name for Sheet": [
+        "https://docs.gointerject.com/wIndex/QuickTools-Names.html"
+    ],
+    "Create Range Names for Sheet for 2 Column Selection": [
+        "https://docs.gointerject.com/wIndex/QuickTools-Names.html"
+    ],
+    "Create/Edit Interject Hyperlink": [
+        "https://docs.gointerject.com/wIndex/QuickTools-Hyperlink.html"
+    ],
+    "Customer Aging Detail": [
+        "https://docs.gointerject.com/wDeveloper/L-Dev-CustomerAgingDetail.html"
+    ],
+    "Data Governance": [
+        "https://docs.gointerject.com/wAbout/privacy-policy.html",
+        "https://docs.gointerject.com/wAbout/security-policy.html",
+        "https://docs.gointerject.com/wDeveloper/TLS.html"
+    ],
+    "Data Portal": [
+        "https://docs.gointerject.com/wDeveloper/L-Dev-ChangelogDataSave.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-CustomerAgingDetail.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-EditingDataSave.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-InsertDeleteDataSave.html"
+    ],
+    "Delete": [
+        "https://docs.gointerject.com/wAbout/Uninstalling.html"
+    ],
+    "Diagnostics": [
+        "https://docs.gointerject.com/wIndex/Diagnostics-ShortKey.html",
+        "https://docs.gointerject.com/wIndex/Diagnostics-SpecialFeatures.html",
+        "https://docs.gointerject.com/wIndex/Diagnostics.html",
+        "https://docs.gointerject.com/wIndex/SettingsCache.html"
+    ],
+    "Edit Tools": [
+        "https://docs.gointerject.com/wIndex/QuickTools-Edit.html"
+    ],
+    "Enterprise": [
+        "https://docs.gointerject.com/wDeveloper/Enterprise-Login-Setup.html",
+        "https://docs.gointerject.com/wDeveloper/Federated-Login-Design.html"
+    ],
+    "Epicor": [
+        "https://docs.gointerject.com/bApps/bFinancials/AddingNotes.html",
+        "https://docs.gointerject.com/bApps/bFinancials/BudgetReports.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Company-Setup.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Configure.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Core-Features.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Distributions.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Drill.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Epicor-Financials.html",
+        "https://docs.gointerject.com/bApps/bFinancials/ExampleCases.html",
+        "https://docs.gointerject.com/bApps/bFinancials/FRxCatalog.html",
+        "https://docs.gointerject.com/bApps/bFinancials/FRxMigration.html",
+        "https://docs.gointerject.com/bApps/bFinancials/HidingZeros.html",
+        "https://docs.gointerject.com/bApps/bFinancials/InitialDataLoad.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Install.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Interject-Financials.html",
+        "https://docs.gointerject.com/bApps/bFinancials/JE-Upload-Install.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Library.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Localize.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Portal-Overview.html",
+        "https://docs.gointerject.com/bApps/bFinancials/PrepSpecFile.html",
+        "https://docs.gointerject.com/bApps/bFinancials/PubReports.html",
+        "https://docs.gointerject.com/bApps/bFinancials/PullSave.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Reference.html",
+        "https://docs.gointerject.com/bApps/bFinancials/ReportTemplates.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Reporting-Capabilities.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Support-Overview.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Technical-Install.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Test.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Test2Live.html",
+        "https://docs.gointerject.com/bApps/bFinancials/The-Basics.html",
+        "https://docs.gointerject.com/bApps/bFinancials/TransactionReports.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Transactions-Package-Install.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Update-JE-Upload.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Updates.html"
+    ],
+    "Excel": [
+        "https://docs.gointerject.com/wAbout/What-You-Need-to-Know.html",
+        "https://docs.gointerject.com/wIndex/Excel-Best-and-Worst-Practices.html"
+    ],
+    "FRx": [
+        "https://docs.gointerject.com/bApps/bFinancials/Reference.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Technical-Install.html"
+    ],
+    "FinCube": [
+        "https://docs.gointerject.com/wLabs/LabSetup.html"
+    ],
+    "Format Tools": [
+        "https://docs.gointerject.com/wIndex/QuickTools-Format.html"
+    ],
+    "Formula Tools": [
+        "https://docs.gointerject.com/wIndex/QuickTools-Formula.html"
+    ],
+    "Freeze all Tabs": [
+        "https://docs.gointerject.com/wIndex/QuickTools-Panes.html"
+    ],
+    "Freeze/Unfreeze Panes": [
+        "https://docs.gointerject.com/wIndex/QuickTools-Panes.html"
+    ],
+    "Get-FileHash": [
+        "https://docs.gointerject.com/wDeveloper/InstallerValidation.html"
+    ],
+    "Hyperlink Tools": [
+        "https://docs.gointerject.com/wIndex/QuickTools-Hyperlink.html"
+    ],
+    "IDSSettings": [
+        "https://docs.gointerject.com/wDeveloper/TLS.html"
+    ],
+    "IIS": [
+        "https://docs.gointerject.com/wApi/dot-net-api-setup.html"
+    ],
+    "InsertNewRowsWithin": [
+        "https://docs.gointerject.com/wGetStarted/L-Create-RetainFeature.html"
+    ],
+    "Install": [
+        "https://docs.gointerject.com/wAbout/SingleUser.html"
+    ],
+    "Install Code": [
+        "https://docs.gointerject.com/wDeveloper/TLS.html"
+    ],
+    "Installing": [
+        "https://docs.gointerject.com/wAbout/SingleUser.html"
+    ],
+    "Interject_DoubleClick": [
+        "https://docs.gointerject.com/wGetStarted/L-Drill-TheThreeWays.html"
+    ],
+    "Interject_JEQuery": [
+        "https://docs.gointerject.com/wGetStarted/L-Drill-FinancialReport.html"
+    ],
+    "Inverse Sign": [
+        "https://docs.gointerject.com/wIndex/QuickTools-Format.html"
+    ],
+    "JE Query": [
+        "https://docs.gointerject.com/wAbout/Financial-Report.html"
+    ],
+    "JE lookup": [
+        "https://docs.gointerject.com/wAbout/Financial-Report.html"
+    ],
+    "JE transaction": [
+        "https://docs.gointerject.com/wAbout/Financial-Report.html"
+    ],
+    "JEUpload": [
+        "https://docs.gointerject.com/bApps/bFinancials/Update-JE-Upload.html"
+    ],
+    "MSSQL": [
+        "https://docs.gointerject.com/bApps/bFinancials/SQL-Install.html"
+    ],
+    "Multiple Users": [
+        "https://docs.gointerject.com/wAbout/SharedComputer.html"
+    ],
+    "Names Tools": [
+        "https://docs.gointerject.com/wIndex/QuickTools-Names.html"
+    ],
+    "Northwind": [
+        "https://docs.gointerject.com/wLabs/LabSetup.html"
+    ],
+    "Northwind customers": [
+        "https://docs.gointerject.com/wGetStarted/L-Create-CustomerAgingDetail.html"
+    ],
+    "Notes": [
+        "https://docs.gointerject.com/bApps/bFinancials/AddingNotes.html"
+    ],
+    "Other Tools": [
+        "https://docs.gointerject.com/wIndex/QuickTools-Other.html"
+    ],
+    "PDF": [
+        "https://docs.gointerject.com/wGetStarted/Exporting-Reports.html",
+        "https://docs.gointerject.com/wGetStarted/L-Export-BasicDist.html",
+        "https://docs.gointerject.com/wGetStarted/L-Export-QuickExportAndPDF.html"
+    ],
+    "PL Trend": [
+        "https://docs.gointerject.com/wGetStarted/L-Drill-FinancialReport.html",
+        "https://docs.gointerject.com/wGetStarted/L-Modify-FinancialReport.html"
+    ],
+    "PL Trend Report": [
+        "https://docs.gointerject.com/wAbout/Financial-Report.html"
+    ],
+    "Pair": [
+        "https://docs.gointerject.com/wFunctions/Pair.html"
+    ],
+    "PairGroup": [
+        "https://docs.gointerject.com/wFunctions/PairGroup.html"
+    ],
+    "Pane Tools": [
+        "https://docs.gointerject.com/wIndex/QuickTools-Panes.html"
+    ],
+    "Param": [
+        "https://docs.gointerject.com/wFunctions/Param.html"
+    ],
+    "Privacy": [
+        "https://docs.gointerject.com/wAbout/privacy-policy.html",
+        "https://docs.gointerject.com/wDeveloper/TLS.html"
+    ],
+    "Projection Change Query": [
+        "https://docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionChangeQuery.html"
+    ],
+    "Projection Template": [
+        "https://docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionTemplate.html"
+    ],
+    "Projections": [
+        "https://docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionChangeQuery.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionTemplate.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionUpload.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionsModule.html"
+    ],
+    "Projections Template": [
+        "https://docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionTemplateSummary.html"
+    ],
+    "Projections Upload": [
+        "https://docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionUpload.html"
+    ],
+    "Quick Tools": [
+        "https://docs.gointerject.com/wIndex/Quick-Tools-Landing.html",
+        "https://docs.gointerject.com/wIndex/QuickTools-Edit.html",
+        "https://docs.gointerject.com/wIndex/QuickTools-Format.html",
+        "https://docs.gointerject.com/wIndex/QuickTools-Formula.html",
+        "https://docs.gointerject.com/wIndex/QuickTools-Hyperlink.html",
+        "https://docs.gointerject.com/wIndex/QuickTools-Names.html",
+        "https://docs.gointerject.com/wIndex/QuickTools-Other.html",
+        "https://docs.gointerject.com/wIndex/QuickTools-Panes.html"
+    ],
+    "RAISERROR": [
+        "https://docs.gointerject.com/wDeveloper/L-Dev-Error-Handling.html"
+    ],
+    "Remove": [
+        "https://docs.gointerject.com/wAbout/Uninstalling.html"
+    ],
+    "Remove All Names from Book": [
+        "https://docs.gointerject.com/wIndex/QuickTools-Names.html"
+    ],
+    "Remove All Names from Sheet": [
+        "https://docs.gointerject.com/wIndex/QuickTools-Names.html"
+    ],
+    "Remove External References": [
+        "https://docs.gointerject.com/wIndex/QuickTools-Formula.html"
+    ],
+    "Remove Names with Ref Errors from Book": [
+        "https://docs.gointerject.com/wIndex/QuickTools-Names.html"
+    ],
+    "Remove Sheet Objects": [
+        "https://docs.gointerject.com/wIndex/QuickTools-Edit.html"
+    ],
+    "Remove Wrap": [
+        "https://docs.gointerject.com/wIndex/QuickTools-Format.html"
+    ],
+    "Report": [
+        "https://docs.gointerject.com/bApps/bFinancials/AddingNotes.html",
+        "https://docs.gointerject.com/bApps/bFinancials/BudgetReports.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Company-Setup.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Configure.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Distributions.html",
+        "https://docs.gointerject.com/bApps/bFinancials/ExampleCases.html",
+        "https://docs.gointerject.com/bApps/bFinancials/FRxCatalog.html",
+        "https://docs.gointerject.com/bApps/bFinancials/FRxMigration.html",
+        "https://docs.gointerject.com/bApps/bFinancials/HidingZeros.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Install.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Localize.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Portal-Overview.html",
+        "https://docs.gointerject.com/bApps/bFinancials/PrepSpecFile.html",
+        "https://docs.gointerject.com/bApps/bFinancials/PubReports.html",
+        "https://docs.gointerject.com/bApps/bFinancials/ReportTemplates.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Reporting-Capabilities.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Support-Overview.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Test.html",
+        "https://docs.gointerject.com/bApps/bFinancials/Test2Live.html",
+        "https://docs.gointerject.com/bApps/bFinancials/The-Basics.html",
+        "https://docs.gointerject.com/bApps/bFinancials/TransactionReports.html"
+    ],
+    "ReportCalc": [
+        "https://docs.gointerject.com/wFunctions/ReportCalc.html"
+    ],
+    "ReportDefaults": [
+        "https://docs.gointerject.com/wFunctions/ReportDefaults.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-CustomerAgingDetail.html"
+    ],
+    "ReportDrill": [
+        "https://docs.gointerject.com/wFunctions/ReportDrill.html"
+    ],
+    "ReportFixed": [
+        "https://docs.gointerject.com/wFunctions/ReportFixed.html"
+    ],
+    "ReportGrouping": [
+        "https://docs.gointerject.com/wFunctions/ReportGrouping.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-InventoryVariable.html"
+    ],
+    "ReportHideRowOrColumn": [
+        "https://docs.gointerject.com/wFunctions/ReportHideRowOrColumn.html"
+    ],
+    "ReportLookup": [
+        "https://docs.gointerject.com/wFunctions/ReportLookup.html"
+    ],
+    "ReportMacro": [
+        "https://docs.gointerject.com/wFunctions/ReportMacro.html"
+    ],
+    "ReportRange": [
+        "https://docs.gointerject.com/wFunctions/ReportRange.html"
+    ],
+    "ReportRun": [
+        "https://docs.gointerject.com/wFunctions/ReportRun.html"
+    ],
+    "ReportSave": [
+        "https://docs.gointerject.com/wFunctions/ReportSave.html"
+    ],
+    "ReportVariable": [
+        "https://docs.gointerject.com/wFunctions/ReportVariable.html"
+    ],
+    "Reset Hyperlink Targets for Selection": [
+        "https://docs.gointerject.com/wIndex/QuickTools-Hyperlink.html"
+    ],
+    "RetainedRowColumns": [
+        "https://docs.gointerject.com/wGetStarted/L-Create-RetainFeature.html"
+    ],
+    "Review Date": [
+        "https://docs.gointerject.com/bApps/InterjectTraining/Capital/ReviewDateSummary.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/WIP/ReviewDateSummary_WIP.html"
+    ],
+    "RowDefRange": [
+        "https://docs.gointerject.com/wTroubleshoot/RowDefClear.html"
+    ],
+    "Rowdef name": [
+        "https://docs.gointerject.com/wGetStarted/RowDefinitionRange.html"
+    ],
+    "RunOnOpen": [
+        "https://docs.gointerject.com/wGetStarted/L-Create-RunOnOpen.html"
+    ],
+    "SQL": [
+        "https://docs.gointerject.com/bApps/bFinancials/DeactiveDB.html",
+        "https://docs.gointerject.com/wDeveloper/Developing-with-INTERJECT.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-ChangelogDataSave.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-CustomerAging.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-CustomerAgingDetail.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-CustomerOrders.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-EditingDataSave.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-InsertDeleteDataSave.html"
+    ],
+    "SQL MGT Studio": [
+        "https://docs.gointerject.com/bApps/bFinancials/Transactions-Package-Install.html"
+    ],
+    "SQL Server": [
+        "https://docs.gointerject.com/bApps/bFinancials/SQL-Install.html"
+    ],
+    "SSMS": [
+        "https://docs.gointerject.com/bApps/bFinancials/SQL-Install.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-ChangelogDataSave.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-EditingDataSave.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-InsertDeleteDataSave.html"
+    ],
+    "Security": [
+        "https://docs.gointerject.com/wAbout/privacy-policy.html",
+        "https://docs.gointerject.com/wAbout/security-policy.html",
+        "https://docs.gointerject.com/wDeveloper/TLS.html"
+    ],
+    "Server": [
+        "https://docs.gointerject.com/wAbout/SharedComputer.html"
+    ],
+    "Settings": [
+        "https://docs.gointerject.com/wIndex/Diagnostics.html",
+        "https://docs.gointerject.com/wIndex/SettingsCache.html"
+    ],
+    "Shortkey Changes": [
+        "https://docs.gointerject.com/wIndex/Diagnostics-ShortKey.html"
+    ],
+    "Summary Tab": [
+        "https://docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalSummary.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalSummary2.html"
+    ],
+    "To Lower Case": [
+        "https://docs.gointerject.com/wIndex/QuickTools-Format.html"
+    ],
+    "To Proper Case": [
+        "https://docs.gointerject.com/wIndex/QuickTools-Format.html"
+    ],
+    "To Upper Case": [
+        "https://docs.gointerject.com/wIndex/QuickTools-Format.html"
+    ],
+    "Tools": [
+        "https://docs.gointerject.com/wIndex/Diagnostics.html",
+        "https://docs.gointerject.com/wIndex/SettingsCache.html"
+    ],
+    "Training": [
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_Detail.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_EBITDAChangeHistory.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_EBITDARevenueBuckets.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_ReviewDateDetail.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_ReviewDateSummary.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_Summary.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetModule.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplate.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetTemplateSummary.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetUpload.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenter.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenterSecurity.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/ControlCenterSummary.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Capital/CCQuery.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalChangeQueryTool.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInput.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalInputReport.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalModule.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalSummary.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalSummary2.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Capital/CapitalSummaryPOType.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Capital/ReviewDateSummary.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionChangeQuery.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionTemplate.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionTemplateSummary.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionUpload.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/Projections/ProjectionsModule.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetTemplate_WIP.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/WIP/BudgetUpload_WIP.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/WIP/CCQuery_WIP.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/WIP/CapitalChangeQueryTool_WIP.html",
+        "https://docs.gointerject.com/bApps/InterjectTraining/WIP/ReviewDateSummary_WIP.html"
+    ],
+    "Transport": [
+        "https://docs.gointerject.com/wDeveloper/TLS.html"
+    ],
+    "Trim Values": [
+        "https://docs.gointerject.com/wIndex/QuickTools-Format.html"
+    ],
+    "Unhide All Sheets": [
+        "https://docs.gointerject.com/wIndex/QuickTools-Other.html"
+    ],
+    "Uninstall": [
+        "https://docs.gointerject.com/wAbout/Uninstalling.html"
+    ],
+    "Unique List from Selection": [
+        "https://docs.gointerject.com/wIndex/QuickTools-Other.html"
+    ],
+    "Unsynced": [
+        "https://docs.gointerject.com/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html"
+    ],
+    "UserNotice": [
+        "https://docs.gointerject.com/wDeveloper/L-Dev-Error-Handling.html"
+    ],
+    "VBA": [
+        "https://docs.gointerject.com/wDeveloper/MacroSecurity.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-ReportMacro.html",
+        "https://docs.gointerject.com/wIndex/Excel-Best-and-Worst-Practices.html"
+    ],
+    "XML": [
+        "https://docs.gointerject.com/wDeveloper/Request-Context-Parse.html"
+    ],
+    "YTD": [
+        "https://docs.gointerject.com/wGetStarted/L-Modify-FinancialReport.html"
+    ],
+    "Zeros to Blanks": [
+        "https://docs.gointerject.com/wIndex/QuickTools-Edit.html"
+    ],
+    "about": [
+        "https://docs.gointerject.com/wAbout/What-You-Need-to-Know.html",
+        "https://docs.gointerject.com/wAbout/Why-CFOs-Like-INTERJECT.html",
+        "https://docs.gointerject.com/wAbout/Why-CIOs-Like-INTERJECT.html"
+    ],
+    "access control": [
+        "https://docs.gointerject.com/wAbout/security-policy.html"
+    ],
+    "account": [
+        "https://docs.gointerject.com/wFunctions/jAcct.html",
+        "https://docs.gointerject.com/wFunctions/jCell.html",
+        "https://docs.gointerject.com/wPortal/The-INTERJECT-Website-Portal.html"
+    ],
+    "accounts": [
+        "https://docs.gointerject.com/wAbout/Logging-In-Enterprise.html",
+        "https://docs.gointerject.com/wAbout/Logging-In.html",
+        "https://docs.gointerject.com/wDeveloper/Enterprise-Login-Setup.html",
+        "https://docs.gointerject.com/wDeveloper/Federated-Login-Design.html"
+    ],
+    "activity": [
+        "https://docs.gointerject.com/wTroubleshoot/View-SQL.html"
+    ],
+    "activity log": [
+        "https://docs.gointerject.com/wTroubleshoot/Investigating-Errors.html"
+    ],
+    "actuals": [
+        "https://docs.gointerject.com/wGetStarted/L-Modify-FinancialReport.html"
+    ],
+    "add column": [
+        "https://docs.gointerject.com/wGetStarted/L-Modify-InventoryReport.html"
+    ],
+    "add row": [
+        "https://docs.gointerject.com/wGetStarted/L-Modify-InventoryReport.html"
+    ],
+    "addin": [
+        "https://docs.gointerject.com/wTroubleshoot/Addin-Missing.html",
+        "https://docs.gointerject.com/wTroubleshoot/AdxLoader.html",
+        "https://docs.gointerject.com/wTroubleshoot/App-Errors.html",
+        "https://docs.gointerject.com/wTroubleshoot/Troubleshooting-Landing.html"
+    ],
+    "admin": [
+        "https://docs.gointerject.com/wPortal/INTERJECT-Roles.html",
+        "https://docs.gointerject.com/wPortal/User-Profile.html"
+    ],
+    "advanced": [
+        "https://docs.gointerject.com/wDeveloper/Advanced-Data-Pull.html",
+        "https://docs.gointerject.com/wGetStarted/L-Export-AdvancedDist.html"
+    ],
+    "aggregation": [
+        "https://docs.gointerject.com/wGetStarted/RowDefinitionRange.html"
+    ],
+    "aging": [
+        "https://docs.gointerject.com/wAbout/Customer-Aging.html"
+    ],
+    "algorithm": [
+        "https://docs.gointerject.com/wDeveloper/InstallerValidation.html"
+    ],
+    "alter": [
+        "https://docs.gointerject.com/wGetStarted/L-Modify-CustomerAging.html",
+        "https://docs.gointerject.com/wGetStarted/L-Modify-FinancialReport.html",
+        "https://docs.gointerject.com/wGetStarted/L-Modify-InventoryReport.html"
+    ],
+    "altering": [
+        "https://docs.gointerject.com/wPortal/Altering-User-Passwords.html"
+    ],
+    "animations": [
+        "https://docs.gointerject.com/wIndex/Diagnostics-SpecialFeatures.html",
+        "https://docs.gointerject.com/wTroubleshoot/Drill-Animations.html"
+    ],
+    "api": [
+        "https://docs.gointerject.com/wApi/Pyinterject.html",
+        "https://docs.gointerject.com/wApi/python-api-custom-functions.html",
+        "https://docs.gointerject.com/wPortal/Data-Connections.html",
+        "https://docs.gointerject.com/wPortal/L-Api-Connections.html"
+    ],
+    "app": [
+        "https://docs.gointerject.com/wTroubleshoot/Addin-Missing.html",
+        "https://docs.gointerject.com/wTroubleshoot/AdxLoader.html",
+        "https://docs.gointerject.com/wTroubleshoot/App-Errors.html",
+        "https://docs.gointerject.com/wTroubleshoot/Verbose-Logging.html"
+    ],
+    "app.config": [
+        "https://docs.gointerject.com/wDeveloper/InternalSupportSetup.html",
+        "https://docs.gointerject.com/wTroubleshoot/WebProxy.html"
+    ],
+    "apps": [
+        "https://docs.gointerject.com/wPortal/PublishedApps.html"
+    ],
+    "assessments": [
+        "https://docs.gointerject.com/wAbout/security-policy.html"
+    ],
+    "audits": [
+        "https://docs.gointerject.com/wAbout/security-policy.html"
+    ],
+    "auth": [
+        "https://docs.gointerject.com/wDeveloper/Enterprise-Login-Setup.html"
+    ],
+    "authentication": [
+        "https://docs.gointerject.com/bApps/bFinancials/SQL-Install.html"
+    ],
+    "authenticator app": [
+        "https://docs.gointerject.com/wPortal/MFA.html"
+    ],
+    "autorun": [
+        "https://docs.gointerject.com/wGetStarted/L-Create-RunOnOpen.html"
+    ],
+    "background checks": [
+        "https://docs.gointerject.com/wAbout/security-policy.html"
+    ],
+    "basic": [
+        "https://docs.gointerject.com/wGetStarted/L-Export-BasicDist.html"
+    ],
+    "best practice": [
+        "https://docs.gointerject.com/wIndex/Excel-Best-and-Worst-Practices.html"
+    ],
+    "budget": [
+        "https://docs.gointerject.com/wGetStarted/L-Modify-FinancialReport.html"
+    ],
+    "bug fix": [
+        "https://docs.gointerject.com/wIndex/Diagnostics-SpecialFeatures.html"
+    ],
+    "build": [
+        "https://docs.gointerject.com/wDeveloper/DataSave.html",
+        "https://docs.gointerject.com/wDeveloper/Developing-with-INTERJECT.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-jDropdowns.html",
+        "https://docs.gointerject.com/wDeveloper/Simple-Data-Pull.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-CustomerAging.html",
+        "https://docs.gointerject.com/wGetStarted/L-Drill-CustomerAging.html",
+        "https://docs.gointerject.com/wIndex/ReportBuilder.html"
+    ],
+    "buttons": [
+        "https://docs.gointerject.com/wGetStarted/INTERJECT-Ribbon-Menu-Items.html"
+    ],
+    "c#": [
+        "https://docs.gointerject.com/wApi/dot-net-api-setup.html"
+    ],
+    "cache": [
+        "https://docs.gointerject.com/wDeveloper/Managing-Settings-Cache.html",
+        "https://docs.gointerject.com/wIndex/Diagnostics-ClearDataCellCache.html",
+        "https://docs.gointerject.com/wPortal/OrganizationProfile.html"
+    ],
+    "calculation": [
+        "https://docs.gointerject.com/wFunctions/ReportCalc.html"
+    ],
+    "category": [
+        "https://docs.gointerject.com/wGetStarted/L-Modify-InventoryReport.html"
+    ],
+    "cell formula": [
+        "https://docs.gointerject.com/wTroubleshoot/Reports.html"
+    ],
+    "cell formula review": [
+        "https://docs.gointerject.com/wIndex/Report-Formula-Reviews.html"
+    ],
+    "cells": [
+        "https://docs.gointerject.com/wAbout/Tabular-vs-Data-Cells.html"
+    ],
+    "certificate": [
+        "https://docs.gointerject.com/bApps/bFinancials/SQL-Install.html"
+    ],
+    "change": [
+        "https://docs.gointerject.com/wGetStarted/L-Modify-CustomerAging.html",
+        "https://docs.gointerject.com/wGetStarted/L-Modify-FinancialReport.html",
+        "https://docs.gointerject.com/wGetStarted/L-Modify-InventoryReport.html"
+    ],
+    "change log": [
+        "https://docs.gointerject.com/wReleaseNotes/2023-10_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2023-11_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2023-12_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2024-01_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2024-03_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2024-06_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2024-07_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2024-08_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2024-10_ReleaseNotes.html"
+    ],
+    "changing": [
+        "https://docs.gointerject.com/wPortal/Altering-User-Passwords.html"
+    ],
+    "chart of accounts": [
+        "https://docs.gointerject.com/wFunctions/jAcct.html"
+    ],
+    "checksum": [
+        "https://docs.gointerject.com/wDeveloper/InstallerValidation.html",
+        "https://docs.gointerject.com/wDeveloper/MacroSecurity.html",
+        "https://docs.gointerject.com/wPortal/DownloadInterject.html"
+    ],
+    "clear": [
+        "https://docs.gointerject.com/wIndex/Diagnostics-ClearDataCellCache.html"
+    ],
+    "cloud": [
+        "https://docs.gointerject.com/wTroubleshoot/Cloud-File.html"
+    ],
+    "code": [
+        "https://docs.gointerject.com/wDeveloper/Enterprise-Login-Setup.html",
+        "https://docs.gointerject.com/wIndex/SegmentInfoSegmentSearch.html",
+        "https://docs.gointerject.com/wTroubleshoot/Validation-Report.html"
+    ],
+    "column definitions": [
+        "https://docs.gointerject.com/wAbout/Basics-of-Report-Formulas.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-SpecColDefs.html"
+    ],
+    "columns": [
+        "https://docs.gointerject.com/wGetStarted/L-Create-HideRowCol.html",
+        "https://docs.gointerject.com/wIndex/FinCubeTheFinancialCube.html",
+        "https://docs.gointerject.com/wIndex/SegmentInfoSegmentSearch.html"
+    ],
+    "command": [
+        "https://docs.gointerject.com/wDeveloper/SetupjDataPortal.html"
+    ],
+    "comment": [
+        "https://docs.gointerject.com/wGetStarted/L-Create-SpecColDefs.html"
+    ],
+    "company": [
+        "https://docs.gointerject.com/wPortal/OrganizationProfile.html"
+    ],
+    "comparison": [
+        "https://docs.gointerject.com/wGetStarted/L-Modify-FinancialReport.html"
+    ],
+    "confidentiality": [
+        "https://docs.gointerject.com/wAbout/security-policy.html"
+    ],
+    "config": [
+        "https://docs.gointerject.com/wDeveloper/InternalSupportSetup.html",
+        "https://docs.gointerject.com/wDeveloper/Managing-Settings-Cache.html",
+        "https://docs.gointerject.com/wTroubleshoot/WebProxy.html"
+    ],
+    "configurations": [
+        "https://docs.gointerject.com/bApps/bFinancials/Technical-Install.html"
+    ],
+    "conflict": [
+        "https://docs.gointerject.com/wTroubleshoot/GeneralTroubleshooting.html"
+    ],
+    "connection": [
+        "https://docs.gointerject.com/wDeveloper/INTERJECT-Website-Portal.html",
+        "https://docs.gointerject.com/wDeveloper/SetupjDataPortal.html",
+        "https://docs.gointerject.com/wPortal/L-Api-Connections.html",
+        "https://docs.gointerject.com/wTroubleshoot/Testing-Data-Connections.html"
+    ],
+    "connection string": [
+        "https://docs.gointerject.com/wDeveloper/Diagnostics-EnterpriseConnection.html"
+    ],
+    "connection strings": [
+        "https://docs.gointerject.com/wPortal/The-INTERJECT-Website-Portal.html"
+    ],
+    "connections": [
+        "https://docs.gointerject.com/wPortal/MyApps.html"
+    ],
+    "contact": [
+        "https://docs.gointerject.com/wDeveloper/InternalSupportSetup.html",
+        "https://docs.gointerject.com/wTroubleshoot/Interject-Support.html",
+        "https://docs.gointerject.com/wTroubleshoot/Reporting-A-Problem.html"
+    ],
+    "corrupt": [
+        "https://docs.gointerject.com/wTroubleshoot/CorruptedInstallation.html"
+    ],
+    "crash": [
+        "https://docs.gointerject.com/wTroubleshoot/Drill-Animations.html"
+    ],
+    "create": [
+        "https://docs.gointerject.com/wDeveloper/DataSave.html",
+        "https://docs.gointerject.com/wDeveloper/Developing-with-INTERJECT.html",
+        "https://docs.gointerject.com/wDeveloper/Simple-Data-Pull.html",
+        "https://docs.gointerject.com/wGetStarted/Creating-a-Simple-Report.html",
+        "https://docs.gointerject.com/wGetStarted/Creating-with-INTERJECT.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-CustomerAgingDetail.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-CustomerOrders.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-FinancialVariable.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-InventoryFixed.html",
+        "https://docs.gointerject.com/wGetStarted/L-Drill-CustomerAging.html",
+        "https://docs.gointerject.com/wPortal/AddUser.html"
+    ],
+    "credentials": [
+        "https://docs.gointerject.com/wAbout/Logging-In-Enterprise.html",
+        "https://docs.gointerject.com/wAbout/Logging-In.html",
+        "https://docs.gointerject.com/wDeveloper/Enterprise-Login-Setup.html",
+        "https://docs.gointerject.com/wDeveloper/Federated-Login-Design.html",
+        "https://docs.gointerject.com/wPortal/Altering-User-Passwords.html",
+        "https://docs.gointerject.com/wPortal/MFA.html",
+        "https://docs.gointerject.com/wPortal/StaffPage.html"
+    ],
+    "crud": [
+        "https://docs.gointerject.com/wApi/Pyinterject.html"
+    ],
+    "custom": [
+        "https://docs.gointerject.com/wDeveloper/Diagnostics-InstallConfig.html"
+    ],
+    "custom commands": [
+        "https://docs.gointerject.com/wDeveloper/CustomItems.html"
+    ],
+    "custom list": [
+        "https://docs.gointerject.com/wGetStarted/L-Create-Dropdowns.html"
+    ],
+    "custom properties": [
+        "https://docs.gointerject.com/wGetStarted/L-Drill-TheThreeWays.html"
+    ],
+    "customer": [
+        "https://docs.gointerject.com/wAbout/Customer-Aging.html"
+    ],
+    "customer aging": [
+        "https://docs.gointerject.com/wDeveloper/L-Dev-CustomerAging.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-CustomerAging.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-CustomerAgingDetail.html",
+        "https://docs.gointerject.com/wGetStarted/L-Drill-CustomerAging.html",
+        "https://docs.gointerject.com/wGetStarted/L-Modify-CustomerAging.html"
+    ],
+    "customer orders": [
+        "https://docs.gointerject.com/wDeveloper/L-Dev-CustomerOrders.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-CustomerOrders.html"
+    ],
+    "data": [
+        "https://docs.gointerject.com/bApps/bFinancials/InitialDataLoad.html",
+        "https://docs.gointerject.com/wApi/DeveloperMain.html",
+        "https://docs.gointerject.com/wDeveloper/DataSave.html",
+        "https://docs.gointerject.com/wDeveloper/Simple-Data-Pull.html",
+        "https://docs.gointerject.com/wFunctions/Excel-Function-Index.html",
+        "https://docs.gointerject.com/wFunctions/ReportDrill.html",
+        "https://docs.gointerject.com/wFunctions/ReportFixed.html",
+        "https://docs.gointerject.com/wFunctions/ReportLookup.html",
+        "https://docs.gointerject.com/wFunctions/ReportRange.html",
+        "https://docs.gointerject.com/wFunctions/ReportSave.html",
+        "https://docs.gointerject.com/wFunctions/ReportVariable.html",
+        "https://docs.gointerject.com/wTroubleshoot/Testing-Data-Connections.html"
+    ],
+    "data api": [
+        "https://docs.gointerject.com/wApi/dot-net-api-setup.html",
+        "https://docs.gointerject.com/wApi/java-api-setup.html",
+        "https://docs.gointerject.com/wApi/python-api-setup.html"
+    ],
+    "data cell": [
+        "https://docs.gointerject.com/wFunctions/Data-Cell-Functions.html",
+        "https://docs.gointerject.com/wFunctions/Excel-Function-Index.html"
+    ],
+    "data cells": [
+        "https://docs.gointerject.com/wAbout/Financial-Report.html",
+        "https://docs.gointerject.com/wAbout/Tabular-vs-Data-Cells.html",
+        "https://docs.gointerject.com/wAbout/Working-with-INTERJECT.html",
+        "https://docs.gointerject.com/wGetStarted/L-Export-QuickExportAndPDF.html",
+        "https://docs.gointerject.com/wLabs/LabSetup.html"
+    ],
+    "data clear": [
+        "https://docs.gointerject.com/wTroubleshoot/RowDefClear.html"
+    ],
+    "data connection": [
+        "https://docs.gointerject.com/wDeveloper/INTERJECT-Website-Portal.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-ChangelogDataSave.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-CustomerAging.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-EditingDataSave.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-InsertDeleteDataSave.html",
+        "https://docs.gointerject.com/wPortal/Data-Portals.html"
+    ],
+    "data connections": [
+        "https://docs.gointerject.com/wPortal/Data-Connections.html"
+    ],
+    "data drill codes": [
+        "https://docs.gointerject.com/wGetStarted/L-Drill-DrillCodes.html",
+        "https://docs.gointerject.com/wGetStarted/L-Drill-FinancialReport.html"
+    ],
+    "data load": [
+        "https://docs.gointerject.com/bApps/bFinancials/Technical-Install.html"
+    ],
+    "data portal": [
+        "https://docs.gointerject.com/wApi/python-api-custom-functions.html",
+        "https://docs.gointerject.com/wDeveloper/INTERJECT-Website-Portal.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-CustomerAging.html",
+        "https://docs.gointerject.com/wIndex/Common-Dataportal-Index.html",
+        "https://docs.gointerject.com/wIndex/FinCubeTheFinancialCube.html"
+    ],
+    "data portal codes": [
+        "https://docs.gointerject.com/wIndex/Diagnostics-ReplaceDataPortalCodes.html"
+    ],
+    "data portals": [
+        "https://docs.gointerject.com/wPortal/Data-Connections.html",
+        "https://docs.gointerject.com/wPortal/Data-Portals.html",
+        "https://docs.gointerject.com/wPortal/PublishedApps.html"
+    ],
+    "data pull functions": [
+        "https://docs.gointerject.com/wFunctions/Data-Functions-Landing.html"
+    ],
+    "data save": [
+        "https://docs.gointerject.com/wDeveloper/L-Dev-ChangelogDataSave.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-EditingDataSave.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-InsertDeleteDataSave.html"
+    ],
+    "data source": [
+        "https://docs.gointerject.com/wIndex/Diagnostics-ClearDataCellCache.html"
+    ],
+    "data tier": [
+        "https://docs.gointerject.com/bApps/bFinancials/Technical-Install.html"
+    ],
+    "database": [
+        "https://docs.gointerject.com/bApps/bFinancials/JE-Upload-Install.html",
+        "https://docs.gointerject.com/wDeveloper/Developing-with-INTERJECT.html",
+        "https://docs.gointerject.com/wLabs/LabSetup.html",
+        "https://docs.gointerject.com/wPortal/Data-Connections.html"
+    ],
+    "database connection": [
+        "https://docs.gointerject.com/wPortal/L-Database-Connection.html"
+    ],
+    "databases": [
+        "https://docs.gointerject.com/bApps/bFinancials/DeactiveDB.html"
+    ],
+    "deactivate": [
+        "https://docs.gointerject.com/bApps/bFinancials/DeactiveDB.html"
+    ],
+    "defaults": [
+        "https://docs.gointerject.com/wFunctions/ReportDefaults.html"
+    ],
+    "definition": [
+        "https://docs.gointerject.com/wDeveloper/Defining-INTERJECT-for-Developers.html"
+    ],
+    "deleting": [
+        "https://docs.gointerject.com/wAbout/ReportLibraryOrganization.html"
+    ],
+    "deletions": [
+        "https://docs.gointerject.com/wDeveloper/L-Dev-InsertDeleteDataSave.html"
+    ],
+    "deployment": [
+        "https://docs.gointerject.com/bApps/bFinancials/Reference.html",
+        "https://docs.gointerject.com/bApps/bFinancials/SQL-Install.html"
+    ],
+    "detail": [
+        "https://docs.gointerject.com/wAbout/Customer-Aging.html",
+        "https://docs.gointerject.com/wAbout/Financial-Report.html",
+        "https://docs.gointerject.com/wAbout/Inventory-Reports.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-CustomerAgingDetail.html"
+    ],
+    "detailed information": [
+        "https://docs.gointerject.com/wTroubleshoot/Validation-Report.html"
+    ],
+    "details": [
+        "https://docs.gointerject.com/wAbout/ReportLibraryLinks.html",
+        "https://docs.gointerject.com/wPortal/OrganizationProfile.html"
+    ],
+    "develop": [
+        "https://docs.gointerject.com/wDeveloper/DataSave.html",
+        "https://docs.gointerject.com/wDeveloper/Developing-with-INTERJECT.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-jDropdowns.html",
+        "https://docs.gointerject.com/wDeveloper/Simple-Data-Pull.html"
+    ],
+    "developer": [
+        "https://docs.gointerject.com/wDeveloper/Defining-INTERJECT-for-Developers.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-ChangelogDataSave.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-CustomerAging.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-CustomerOrders.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-EditingDataSave.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-InsertDeleteDataSave.html"
+    ],
+    "diagnose": [
+        "https://docs.gointerject.com/wTroubleshoot/GeneralTroubleshooting.html"
+    ],
+    "diagnostics": [
+        "https://docs.gointerject.com/wTroubleshoot/WebProxy.html"
+    ],
+    "disable": [
+        "https://docs.gointerject.com/wTroubleshoot/Drill-Animations.html"
+    ],
+    "disaster": [
+        "https://docs.gointerject.com/wAbout/security-policy.html"
+    ],
+    "distribute": [
+        "https://docs.gointerject.com/wGetStarted/Exporting-Reports.html",
+        "https://docs.gointerject.com/wGetStarted/L-Export-AdvancedDist.html",
+        "https://docs.gointerject.com/wGetStarted/L-Export-QuickExportAndPDF.html"
+    ],
+    "distribution": [
+        "https://docs.gointerject.com/wGetStarted/L-Export-AdvancedDist.html",
+        "https://docs.gointerject.com/wGetStarted/L-Export-BasicDist.html"
+    ],
+    "documentation": [
+        "https://docs.gointerject.com/wAbout/ReportLibraryLinks.html"
+    ],
+    "don't clear": [
+        "https://docs.gointerject.com/wGetStarted/L-Create-RetainFeature.html"
+    ],
+    "double click": [
+        "https://docs.gointerject.com/wIndex/Diagnostics-DoubleClick.html"
+    ],
+    "double click drill": [
+        "https://docs.gointerject.com/wGetStarted/L-Drill-TheThreeWays.html"
+    ],
+    "download": [
+        "https://docs.gointerject.com/wPortal/DownloadInterject.html",
+        "https://docs.gointerject.com/wTroubleshoot/Cloud-File.html"
+    ],
+    "drill": [
+        "https://docs.gointerject.com/wAbout/Customer-Aging.html",
+        "https://docs.gointerject.com/wAbout/Financial-Report.html",
+        "https://docs.gointerject.com/wAbout/Inventory-Reports.html",
+        "https://docs.gointerject.com/wFunctions/Excel-Function-Index.html",
+        "https://docs.gointerject.com/wFunctions/ReportDrill.html",
+        "https://docs.gointerject.com/wGetStarted/Drilling-Between-Reports.html",
+        "https://docs.gointerject.com/wGetStarted/L-Drill-CustomerAging.html",
+        "https://docs.gointerject.com/wGetStarted/L-Drill-FinancialReport.html",
+        "https://docs.gointerject.com/wGetStarted/L-Drill-InventoryReport.html",
+        "https://docs.gointerject.com/wGetStarted/L-Drill-TheThreeWays.html",
+        "https://docs.gointerject.com/wIndex/Diagnostics-DoubleClick.html",
+        "https://docs.gointerject.com/wTroubleshoot/Drill-Animations.html"
+    ],
+    "drive": [
+        "https://docs.gointerject.com/wTroubleshoot/Cloud-File.html"
+    ],
+    "dropdown": [
+        "https://docs.gointerject.com/wGetStarted/L-Create-SpecColDefs.html"
+    ],
+    "edit mode": [
+        "https://docs.gointerject.com/wIndex/Diagnostics-DoubleClick.html"
+    ],
+    "editing": [
+        "https://docs.gointerject.com/wAbout/ReportLibraryOrganization.html"
+    ],
+    "email": [
+        "https://docs.gointerject.com/wGetStarted/L-Export-BasicDist.html"
+    ],
+    "email confirmation": [
+        "https://docs.gointerject.com/wPortal/MFA.html"
+    ],
+    "encrypt": [
+        "https://docs.gointerject.com/wDeveloper/Diagnostics-EnterpriseConnection.html"
+    ],
+    "enterprise": [
+        "https://docs.gointerject.com/wAbout/Logging-In-Enterprise.html",
+        "https://docs.gointerject.com/wDeveloper/ConnectionManager.html"
+    ],
+    "error": [
+        "https://docs.gointerject.com/wDeveloper/L-Dev-Error-Handling.html",
+        "https://docs.gointerject.com/wTroubleshoot/Investigating-Errors.html",
+        "https://docs.gointerject.com/wTroubleshoot/Reporting-A-Problem.html",
+        "https://docs.gointerject.com/wTroubleshoot/Troubleshooting-Landing.html",
+        "https://docs.gointerject.com/wTroubleshoot/Validation-Report.html",
+        "https://docs.gointerject.com/wTroubleshoot/View-SQL.html"
+    ],
+    "errors": [
+        "https://docs.gointerject.com/wTroubleshoot/App-Errors.html",
+        "https://docs.gointerject.com/wTroubleshoot/Reports.html",
+        "https://docs.gointerject.com/wTroubleshoot/Transport-Errors.html",
+        "https://docs.gointerject.com/wTroubleshoot/TroubleshootingGuide.html",
+        "https://docs.gointerject.com/wTroubleshoot/Verbose-Logging.html"
+    ],
+    "event": [
+        "https://docs.gointerject.com/wFunctions/Event-Functions-Landing.html",
+        "https://docs.gointerject.com/wFunctions/Excel-Function-Index.html",
+        "https://docs.gointerject.com/wFunctions/ReportCalc.html",
+        "https://docs.gointerject.com/wFunctions/ReportDefaults.html",
+        "https://docs.gointerject.com/wFunctions/ReportGrouping.html",
+        "https://docs.gointerject.com/wFunctions/ReportHideRowOrColumn.html",
+        "https://docs.gointerject.com/wFunctions/ReportMacro.html",
+        "https://docs.gointerject.com/wFunctions/ReportRun.html"
+    ],
+    "events": [
+        "https://docs.gointerject.com/wTroubleshoot/Validation-Report.html"
+    ],
+    "example": [
+        "https://docs.gointerject.com/wDeveloper/Advanced-Data-Pull.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-ChangelogDataSave.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-CustomerAging.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-CustomerAgingDetail.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-CustomerOrders.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-EditingDataSave.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-InsertDeleteDataSave.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-CustomerAging.html"
+    ],
+    "execute": [
+        "https://docs.gointerject.com/wDeveloper/CustomItems.html"
+    ],
+    "export": [
+        "https://docs.gointerject.com/wGetStarted/Exporting-Reports.html",
+        "https://docs.gointerject.com/wGetStarted/L-Export-AdvancedDist.html",
+        "https://docs.gointerject.com/wGetStarted/L-Export-BasicDist.html",
+        "https://docs.gointerject.com/wGetStarted/L-Export-QuickExportAndPDF.html"
+    ],
+    "federated": [
+        "https://docs.gointerject.com/wDeveloper/ConnectionManager.html"
+    ],
+    "file": [
+        "https://docs.gointerject.com/wAbout/Report-Library-Basics.html",
+        "https://docs.gointerject.com/wAbout/ReportLibraryLinks.html",
+        "https://docs.gointerject.com/wGetStarted/L-Export-BasicDist.html",
+        "https://docs.gointerject.com/wTroubleshoot/Cloud-File.html"
+    ],
+    "file integrity": [
+        "https://docs.gointerject.com/wDeveloper/InstallerValidation.html"
+    ],
+    "files": [
+        "https://docs.gointerject.com/wDeveloper/Managing-Settings-Cache.html"
+    ],
+    "filter": [
+        "https://docs.gointerject.com/wIndex/FinCubeTheFinancialCube.html"
+    ],
+    "financial": [
+        "https://docs.gointerject.com/wAbout/Financial-Report.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-FinancialVariable.html"
+    ],
+    "financial cube": [
+        "https://docs.gointerject.com/wGetStarted/L-Create-FinancialVariable.html"
+    ],
+    "financials": [
+        "https://docs.gointerject.com/wGetStarted/L-Drill-FinancialReport.html"
+    ],
+    "fincube": [
+        "https://docs.gointerject.com/wGetStarted/L-Create-FinancialVariable.html",
+        "https://docs.gointerject.com/wIndex/Common-Dataportal-Index.html",
+        "https://docs.gointerject.com/wIndex/FinCubeTheFinancialCube.html"
+    ],
+    "find": [
+        "https://docs.gointerject.com/wIndex/Diagnostics-FindAllFormulas.html"
+    ],
+    "fix": [
+        "https://docs.gointerject.com/wTroubleshoot/TroubleshootingGuide.html"
+    ],
+    "fixed": [
+        "https://docs.gointerject.com/wFunctions/Data-Functions-Landing.html",
+        "https://docs.gointerject.com/wFunctions/ReportFixed.html",
+        "https://docs.gointerject.com/wGetStarted/Fixed-and-Variable-Reports.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-InventoryFixed.html",
+        "https://docs.gointerject.com/wGetStarted/L-Modify-InventoryReport.html"
+    ],
+    "folder": [
+        "https://docs.gointerject.com/wAbout/Report-Library-Basics.html"
+    ],
+    "folders": [
+        "https://docs.gointerject.com/wAbout/ReportLibraryOrganization.html"
+    ],
+    "forecast": [
+        "https://docs.gointerject.com/wIndex/FinCubeTheFinancialCube.html"
+    ],
+    "formatting range": [
+        "https://docs.gointerject.com/wAbout/Basics-of-Report-Formulas.html"
+    ],
+    "forms": [
+        "https://docs.gointerject.com/wAbout/Resizing-Form-Windows.html"
+    ],
+    "formula": [
+        "https://docs.gointerject.com/wFunctions/Helper-Functions.html",
+        "https://docs.gointerject.com/wFunctions/Pair.html",
+        "https://docs.gointerject.com/wFunctions/PairGroup.html",
+        "https://docs.gointerject.com/wFunctions/Param.html",
+        "https://docs.gointerject.com/wFunctions/ReportCalc.html",
+        "https://docs.gointerject.com/wFunctions/ReportDefaults.html",
+        "https://docs.gointerject.com/wFunctions/ReportDrill.html",
+        "https://docs.gointerject.com/wFunctions/ReportFixed.html",
+        "https://docs.gointerject.com/wFunctions/ReportGrouping.html",
+        "https://docs.gointerject.com/wFunctions/ReportHideRowOrColumn.html",
+        "https://docs.gointerject.com/wFunctions/ReportLookup.html",
+        "https://docs.gointerject.com/wFunctions/ReportMacro.html",
+        "https://docs.gointerject.com/wFunctions/ReportRange.html",
+        "https://docs.gointerject.com/wFunctions/ReportRun.html",
+        "https://docs.gointerject.com/wFunctions/ReportSave.html",
+        "https://docs.gointerject.com/wFunctions/ReportVariable.html",
+        "https://docs.gointerject.com/wFunctions/jAcct.html",
+        "https://docs.gointerject.com/wFunctions/jCell.html",
+        "https://docs.gointerject.com/wFunctions/jColumnDef.html",
+        "https://docs.gointerject.com/wFunctions/jCombine.html",
+        "https://docs.gointerject.com/wFunctions/jCombine_IF.html",
+        "https://docs.gointerject.com/wFunctions/jCombine_Smart.html",
+        "https://docs.gointerject.com/wFunctions/jDataPortal.html",
+        "https://docs.gointerject.com/wFunctions/jDesc.html",
+        "https://docs.gointerject.com/wFunctions/jDropdown.html",
+        "https://docs.gointerject.com/wFunctions/jFocus.html",
+        "https://docs.gointerject.com/wFunctions/jFreezePanes.html",
+        "https://docs.gointerject.com/wFunctions/jRangeTag.html",
+        "https://docs.gointerject.com/wFunctions/jSetting.html",
+        "https://docs.gointerject.com/wFunctions/jWorkbookProperty.html",
+        "https://docs.gointerject.com/wTroubleshoot/Validation-Report.html"
+    ],
+    "formulas": [
+        "https://docs.gointerject.com/wFunctions/Excel-Function-Index.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-RetainFeature.html",
+        "https://docs.gointerject.com/wIndex/Diagnostics-FindAllFormulas.html"
+    ],
+    "frame": [
+        "https://docs.gointerject.com/wAbout/Resizing-Form-Windows.html"
+    ],
+    "freeze": [
+        "https://docs.gointerject.com/wTroubleshoot/Drill-Animations.html"
+    ],
+    "function": [
+        "https://docs.gointerject.com/wDeveloper/L-Dev-jDropdowns.html",
+        "https://docs.gointerject.com/wFunctions/Pair.html",
+        "https://docs.gointerject.com/wFunctions/PairGroup.html",
+        "https://docs.gointerject.com/wFunctions/Param.html",
+        "https://docs.gointerject.com/wFunctions/ReportCalc.html",
+        "https://docs.gointerject.com/wFunctions/ReportDefaults.html",
+        "https://docs.gointerject.com/wFunctions/ReportDrill.html",
+        "https://docs.gointerject.com/wFunctions/ReportFixed.html",
+        "https://docs.gointerject.com/wFunctions/ReportGrouping.html",
+        "https://docs.gointerject.com/wFunctions/ReportHideRowOrColumn.html",
+        "https://docs.gointerject.com/wFunctions/ReportLookup.html",
+        "https://docs.gointerject.com/wFunctions/ReportMacro.html",
+        "https://docs.gointerject.com/wFunctions/ReportRange.html",
+        "https://docs.gointerject.com/wFunctions/ReportRun.html",
+        "https://docs.gointerject.com/wFunctions/ReportSave.html",
+        "https://docs.gointerject.com/wFunctions/ReportVariable.html",
+        "https://docs.gointerject.com/wFunctions/jAcct.html",
+        "https://docs.gointerject.com/wFunctions/jCell.html",
+        "https://docs.gointerject.com/wFunctions/jColumnDef.html",
+        "https://docs.gointerject.com/wFunctions/jCombine.html",
+        "https://docs.gointerject.com/wFunctions/jCombine_IF.html",
+        "https://docs.gointerject.com/wFunctions/jCombine_Smart.html",
+        "https://docs.gointerject.com/wFunctions/jDataPortal.html",
+        "https://docs.gointerject.com/wFunctions/jDesc.html",
+        "https://docs.gointerject.com/wFunctions/jDropdown.html",
+        "https://docs.gointerject.com/wFunctions/jFocus.html",
+        "https://docs.gointerject.com/wFunctions/jFreezePanes.html",
+        "https://docs.gointerject.com/wFunctions/jRangeTag.html",
+        "https://docs.gointerject.com/wFunctions/jSetting.html",
+        "https://docs.gointerject.com/wFunctions/jWorkbookProperty.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-Dropdowns.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-ReportMacro.html",
+        "https://docs.gointerject.com/wIndex/SegmentInfoSegmentSearch.html"
+    ],
+    "function wizard": [
+        "https://docs.gointerject.com/wIndex/Report-Formula-Reviews.html"
+    ],
+    "functions": [
+        "https://docs.gointerject.com/wFunctions/Data-Cell-Functions.html",
+        "https://docs.gointerject.com/wFunctions/Event-Functions-Landing.html",
+        "https://docs.gointerject.com/wFunctions/Excel-Function-Index.html",
+        "https://docs.gointerject.com/wFunctions/Helper-Functions.html",
+        "https://docs.gointerject.com/wIndex/Diagnostics-FindAllFormulas.html",
+        "https://docs.gointerject.com/wTroubleshoot/Validation-Report.html"
+    ],
+    "get started": [
+        "https://docs.gointerject.com/wLabs/lab.html"
+    ],
+    "global settings": [
+        "https://docs.gointerject.com/wIndex/Diagnostics-ReinitiateInterject.html"
+    ],
+    "grouping": [
+        "https://docs.gointerject.com/wFunctions/ReportGrouping.html",
+        "https://docs.gointerject.com/wGetStarted/L-Export-AdvancedDist.html"
+    ],
+    "guide": [
+        "https://docs.gointerject.com/wLabs/LabSetup.html",
+        "https://docs.gointerject.com/wLabs/lab.html"
+    ],
+    "handling": [
+        "https://docs.gointerject.com/wDeveloper/L-Dev-Error-Handling.html"
+    ],
+    "hash": [
+        "https://docs.gointerject.com/wDeveloper/InstallerValidation.html"
+    ],
+    "help": [
+        "https://docs.gointerject.com/wTroubleshoot/GeneralTroubleshooting.html"
+    ],
+    "helper": [
+        "https://docs.gointerject.com/wFunctions/Excel-Function-Index.html",
+        "https://docs.gointerject.com/wFunctions/Helper-Functions.html",
+        "https://docs.gointerject.com/wFunctions/Pair.html",
+        "https://docs.gointerject.com/wFunctions/PairGroup.html",
+        "https://docs.gointerject.com/wFunctions/Param.html",
+        "https://docs.gointerject.com/wFunctions/jColumnDef.html",
+        "https://docs.gointerject.com/wFunctions/jCombine.html",
+        "https://docs.gointerject.com/wFunctions/jCombine_IF.html",
+        "https://docs.gointerject.com/wFunctions/jCombine_Smart.html",
+        "https://docs.gointerject.com/wFunctions/jDataPortal.html",
+        "https://docs.gointerject.com/wFunctions/jDropdown.html",
+        "https://docs.gointerject.com/wFunctions/jFocus.html",
+        "https://docs.gointerject.com/wFunctions/jFreezePanes.html",
+        "https://docs.gointerject.com/wFunctions/jRangeTag.html",
+        "https://docs.gointerject.com/wFunctions/jSetting.html",
+        "https://docs.gointerject.com/wFunctions/jWorkbookProperty.html"
+    ],
+    "hidden": [
+        "https://docs.gointerject.com/wAbout/Basics-of-Report-Formulas.html"
+    ],
+    "hide": [
+        "https://docs.gointerject.com/wFunctions/ReportHideRowOrColumn.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-AdvancedHideRowsSections.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-HideRowCol.html"
+    ],
+    "hierarchy": [
+        "https://docs.gointerject.com/wAbout/ReportLibraryOrganization.html"
+    ],
+    "history": [
+        "https://docs.gointerject.com/wDeveloper/L-Dev-ChangelogDataSave.html",
+        "https://docs.gointerject.com/wReleaseNotes/2023-10_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2023-11_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2023-12_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2024-01_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2024-03_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2024-06_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2024-07_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2024-08_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2024-10_ReleaseNotes.html"
+    ],
+    "hooks": [
+        "https://docs.gointerject.com/wGetStarted/L-Create-ReportMacro.html"
+    ],
+    "hotkey": [
+        "https://docs.gointerject.com/wIndex/Diagnostics-ShortKey.html",
+        "https://docs.gointerject.com/wIndex/INTERJECT-Hotkey-Index.html"
+    ],
+    "how it works": [
+        "https://docs.gointerject.com/wDeveloper/Defining-INTERJECT-for-Developers.html"
+    ],
+    "hyperlink": [
+        "https://docs.gointerject.com/wGetStarted/L-Create-Dropdowns.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-SpecColDefs.html",
+        "https://docs.gointerject.com/wGetStarted/L-Drill-TheThreeWays.html"
+    ],
+    "hyperlinks": [
+        "https://docs.gointerject.com/wGetStarted/L-Drill-InventoryReport.html",
+        "https://docs.gointerject.com/wIndex/INTERJECT-Link-Index.html"
+    ],
+    "id providers": [
+        "https://docs.gointerject.com/wDeveloper/ConnectionManager.html"
+    ],
+    "identity providers": [
+        "https://docs.gointerject.com/wDeveloper/ConnectionManager.html"
+    ],
+    "inactive": [
+        "https://docs.gointerject.com/bApps/bFinancials/DeactiveDB.html"
+    ],
+    "index": [
+        "https://docs.gointerject.com/wFunctions/Excel-Function-Index.html",
+        "https://docs.gointerject.com/wGetStarted/INTERJECT-Ribbon-Menu-Items.html"
+    ],
+    "information": [
+        "https://docs.gointerject.com/wPortal/OrganizationProfile.html"
+    ],
+    "init": [
+        "https://docs.gointerject.com/bApps/bFinancials/InitialDataLoad.html"
+    ],
+    "initialize": [
+        "https://docs.gointerject.com/wIndex/Diagnostics-ReinitiateInterject.html"
+    ],
+    "insertions": [
+        "https://docs.gointerject.com/wDeveloper/L-Dev-InsertDeleteDataSave.html"
+    ],
+    "install": [
+        "https://docs.gointerject.com/wAbout/SharedComputer.html"
+    ],
+    "installation": [
+        "https://docs.gointerject.com/wDeveloper/Diagnostics-InstallConfig.html",
+        "https://docs.gointerject.com/wPortal/DownloadInterject.html",
+        "https://docs.gointerject.com/wTroubleshoot/CorruptedInstallation.html",
+        "https://docs.gointerject.com/wTroubleshoot/Troubleshooting-Landing.html"
+    ],
+    "installing": [
+        "https://docs.gointerject.com/wAbout/Using-INTERJECT.html"
+    ],
+    "interject": [
+        "https://docs.gointerject.com/wTroubleshoot/Interject-Support.html"
+    ],
+    "inventory": [
+        "https://docs.gointerject.com/wAbout/Inventory-Reports.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-InventoryFixed.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-InventoryVariable.html",
+        "https://docs.gointerject.com/wGetStarted/L-Modify-InventoryReport.html"
+    ],
+    "investigate": [
+        "https://docs.gointerject.com/wTroubleshoot/View-SQL.html"
+    ],
+    "issue": [
+        "https://docs.gointerject.com/wIndex/Excel-Best-and-Worst-Practices.html",
+        "https://docs.gointerject.com/wTroubleshoot/GeneralTroubleshooting.html"
+    ],
+    "issues": [
+        "https://docs.gointerject.com/wTroubleshoot/Troubleshooting-Landing.html"
+    ],
+    "items": [
+        "https://docs.gointerject.com/wGetStarted/INTERJECT-Ribbon-Menu-Items.html"
+    ],
+    "jColumnDef": [
+        "https://docs.gointerject.com/wFunctions/jColumnDef.html",
+        "https://docs.gointerject.com/wGetStarted/L-Modify-FinancialReport.html",
+        "https://docs.gointerject.com/wIndex/FinCubeTheFinancialCube.html"
+    ],
+    "jCombine": [
+        "https://docs.gointerject.com/wFunctions/jCombine.html"
+    ],
+    "jCombineIF": [
+        "https://docs.gointerject.com/wFunctions/jCombine_IF.html"
+    ],
+    "jCombineSmart": [
+        "https://docs.gointerject.com/wFunctions/jCombine_Smart.html"
+    ],
+    "jDataPortal": [
+        "https://docs.gointerject.com/wFunctions/jDataPortal.html"
+    ],
+    "jDesc": [
+        "https://docs.gointerject.com/wFunctions/jDesc.html"
+    ],
+    "jDropdown": [
+        "https://docs.gointerject.com/wDeveloper/L-Dev-jDropdowns.html",
+        "https://docs.gointerject.com/wFunctions/jDropdown.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-Dropdowns.html"
+    ],
+    "jFocus": [
+        "https://docs.gointerject.com/wFunctions/jFocus.html"
+    ],
+    "jFreezePanes": [
+        "https://docs.gointerject.com/wFunctions/jFreezePanes.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-CustomerOrders.html",
+        "https://docs.gointerject.com/wGetStarted/L-Modify-InventoryReport.html"
+    ],
+    "jRangeTag": [
+        "https://docs.gointerject.com/wFunctions/jRangeTag.html"
+    ],
+    "jSetting": [
+        "https://docs.gointerject.com/wFunctions/jSetting.html"
+    ],
+    "jWorkbookProperty": [
+        "https://docs.gointerject.com/wFunctions/jWorkbookProperty.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-InventoryFixed.html"
+    ],
+    "jacct": [
+        "https://docs.gointerject.com/wFunctions/jAcct.html"
+    ],
+    "java": [
+        "https://docs.gointerject.com/wApi/java-api-setup.html"
+    ],
+    "jcell": [
+        "https://docs.gointerject.com/wFunctions/jCell.html"
+    ],
+    "jdropdown": [
+        "https://docs.gointerject.com/wDeveloper/Simple-Data-Pull.html"
+    ],
+    "keep": [
+        "https://docs.gointerject.com/wGetStarted/L-Create-RetainFeature.html"
+    ],
+    "keyboard": [
+        "https://docs.gointerject.com/wIndex/Diagnostics-ShortKey.html",
+        "https://docs.gointerject.com/wIndex/INTERJECT-Hotkey-Index.html"
+    ],
+    "keystrokes": [
+        "https://docs.gointerject.com/wIndex/Diagnostics-ShortKey.html",
+        "https://docs.gointerject.com/wIndex/INTERJECT-Hotkey-Index.html"
+    ],
+    "lab": [
+        "https://docs.gointerject.com/wLabs/LabSetup.html",
+        "https://docs.gointerject.com/wLabs/lab.html"
+    ],
+    "link": [
+        "https://docs.gointerject.com/wAbout/Report-Library-Basics.html",
+        "https://docs.gointerject.com/wAbout/ReportLibraryLinks.html",
+        "https://docs.gointerject.com/wTroubleshoot/Cloud-File.html"
+    ],
+    "links": [
+        "https://docs.gointerject.com/wAbout/ReportLibraryOrganization.html",
+        "https://docs.gointerject.com/wIndex/INTERJECT-Link-Index.html",
+        "https://docs.gointerject.com/wPortal/MyApps.html"
+    ],
+    "list": [
+        "https://docs.gointerject.com/wGetStarted/L-Create-SpecColDefs.html"
+    ],
+    "local": [
+        "https://docs.gointerject.com/wIndex/Diagnostics-ClearDataCellCache.html"
+    ],
+    "locking": [
+        "https://docs.gointerject.com/wGetStarted/L-Create-Protecting.html"
+    ],
+    "log": [
+        "https://docs.gointerject.com/wTroubleshoot/RAM-Monitoring.html",
+        "https://docs.gointerject.com/wTroubleshoot/Troubleshooting-Landing.html"
+    ],
+    "logging": [
+        "https://docs.gointerject.com/wTroubleshoot/Interject-Support.html"
+    ],
+    "logging in": [
+        "https://docs.gointerject.com/wAbout/Using-INTERJECT.html"
+    ],
+    "login": [
+        "https://docs.gointerject.com/wAbout/Logging-In-Enterprise.html",
+        "https://docs.gointerject.com/wAbout/Logging-In.html",
+        "https://docs.gointerject.com/wDeveloper/ConnectionManager.html",
+        "https://docs.gointerject.com/wDeveloper/Enterprise-Login-Setup.html",
+        "https://docs.gointerject.com/wDeveloper/Federated-Login-Design.html",
+        "https://docs.gointerject.com/wPortal/Logging-In-to-Website-Portal.html",
+        "https://docs.gointerject.com/wPortal/MFA.html",
+        "https://docs.gointerject.com/wTroubleshoot/WebView2.html"
+    ],
+    "logout": [
+        "https://docs.gointerject.com/wAbout/Logging-In-Enterprise.html",
+        "https://docs.gointerject.com/wAbout/Logging-In.html"
+    ],
+    "logs": [
+        "https://docs.gointerject.com/wTroubleshoot/Reporting-A-Problem.html",
+        "https://docs.gointerject.com/wTroubleshoot/View-SQL.html"
+    ],
+    "lookup": [
+        "https://docs.gointerject.com/wFunctions/Data-Functions-Landing.html",
+        "https://docs.gointerject.com/wFunctions/ReportLookup.html"
+    ],
+    "macro": [
+        "https://docs.gointerject.com/wDeveloper/MacroSecurity.html",
+        "https://docs.gointerject.com/wFunctions/ReportMacro.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-ReportMacro.html"
+    ],
+    "mail profile": [
+        "https://docs.gointerject.com/bApps/bFinancials/SQL-Install.html"
+    ],
+    "make text bigger": [
+        "https://docs.gointerject.com/wAbout/Resizing-Form-Windows.html"
+    ],
+    "management": [
+        "https://docs.gointerject.com/wPortal/Subscribers.html"
+    ],
+    "manual": [
+        "https://docs.gointerject.com/wTroubleshoot/CorruptedInstallation.html"
+    ],
+    "manual setup": [
+        "https://docs.gointerject.com/wLabs/LabSetup.html"
+    ],
+    "memory": [
+        "https://docs.gointerject.com/wTroubleshoot/RAM-Monitoring.html"
+    ],
+    "menu": [
+        "https://docs.gointerject.com/wGetStarted/INTERJECT-Ribbon-Menu-Items.html",
+        "https://docs.gointerject.com/wGetStarted/L-Drill-TheThreeWays.html"
+    ],
+    "microsoft troubleshooter": [
+        "https://docs.gointerject.com/wTroubleshoot/CorruptedInstallation.html"
+    ],
+    "missing": [
+        "https://docs.gointerject.com/wTroubleshoot/Addin-Missing.html",
+        "https://docs.gointerject.com/wTroubleshoot/AdxLoader.html"
+    ],
+    "modify": [
+        "https://docs.gointerject.com/wAbout/Customer-Aging.html",
+        "https://docs.gointerject.com/wGetStarted/Creating-with-INTERJECT.html",
+        "https://docs.gointerject.com/wGetStarted/L-Modify-CustomerAging.html",
+        "https://docs.gointerject.com/wGetStarted/L-Modify-FinancialReport.html",
+        "https://docs.gointerject.com/wGetStarted/L-Modify-InventoryReport.html",
+        "https://docs.gointerject.com/wGetStarted/Modifying-an-Existing-Report.html"
+    ],
+    "monitoring": [
+        "https://docs.gointerject.com/wTroubleshoot/RAM-Monitoring.html"
+    ],
+    "moving": [
+        "https://docs.gointerject.com/wAbout/ReportLibraryOrganization.html"
+    ],
+    "multi-column": [
+        "https://docs.gointerject.com/wGetStarted/RowDefinitionRange.html"
+    ],
+    "multi-row": [
+        "https://docs.gointerject.com/wGetStarted/L-Create-CustomerOrders.html"
+    ],
+    "multiple": [
+        "https://docs.gointerject.com/wGetStarted/RowDefinitionRange.html"
+    ],
+    "navigate": [
+        "https://docs.gointerject.com/wAbout/Report-Library-Basics.html"
+    ],
+    "network": [
+        "https://docs.gointerject.com/wAbout/SharedComputer.html",
+        "https://docs.gointerject.com/wTroubleshoot/Cloud-File.html",
+        "https://docs.gointerject.com/wTroubleshoot/Transport-Errors.html"
+    ],
+    "new": [
+        "https://docs.gointerject.com/wPortal/AddUser.html"
+    ],
+    "new login": [
+        "https://docs.gointerject.com/wAbout/Logging-In-Enterprise.html",
+        "https://docs.gointerject.com/wAbout/Logging-In.html"
+    ],
+    "non-changeable": [
+        "https://docs.gointerject.com/wGetStarted/Exporting-Reports.html"
+    ],
+    "non-editable": [
+        "https://docs.gointerject.com/wGetStarted/Exporting-Reports.html"
+    ],
+    "northwind customer orders": [
+        "https://docs.gointerject.com/wGetStarted/L-Create-CustomerOrders.html"
+    ],
+    "northwind customers": [
+        "https://docs.gointerject.com/wGetStarted/L-Create-CustomerAging.html"
+    ],
+    "northwind fixed": [
+        "https://docs.gointerject.com/wGetStarted/L-Create-InventoryFixed.html"
+    ],
+    "notes": [
+        "https://docs.gointerject.com/wAbout/Basics-of-Report-Formulas.html"
+    ],
+    "offerings": [
+        "https://docs.gointerject.com/wPortal/MyApps.html",
+        "https://docs.gointerject.com/wPortal/PublishedApps.html",
+        "https://docs.gointerject.com/wPortal/Subscribers.html"
+    ],
+    "oidc": [
+        "https://docs.gointerject.com/wDeveloper/Enterprise-Login-Setup.html"
+    ],
+    "open": [
+        "https://docs.gointerject.com/wTroubleshoot/Cloud-File.html"
+    ],
+    "organization": [
+        "https://docs.gointerject.com/wPortal/StaffPage.html"
+    ],
+    "organizing": [
+        "https://docs.gointerject.com/wAbout/ReportLibraryOrganization.html"
+    ],
+    "override": [
+        "https://docs.gointerject.com/wDeveloper/SetupjDataPortal.html",
+        "https://docs.gointerject.com/wPortal/MyApps.html"
+    ],
+    "overview": [
+        "https://docs.gointerject.com/wAbout/Working-with-INTERJECT.html"
+    ],
+    "package": [
+        "https://docs.gointerject.com/wApi/Pyinterject.html"
+    ],
+    "pair": [
+        "https://docs.gointerject.com/wGetStarted/L-Drill-FinancialReport.html"
+    ],
+    "pairgroup": [
+        "https://docs.gointerject.com/wGetStarted/L-Drill-FinancialReport.html"
+    ],
+    "parameters": [
+        "https://docs.gointerject.com/wAbout/Basics-of-Report-Formulas.html",
+        "https://docs.gointerject.com/wTroubleshoot/Validation-Report.html"
+    ],
+    "parse": [
+        "https://docs.gointerject.com/wDeveloper/Request-Context-Parse.html"
+    ],
+    "password": [
+        "https://docs.gointerject.com/wGetStarted/L-Create-Protecting.html"
+    ],
+    "permissions": [
+        "https://docs.gointerject.com/wPortal/INTERJECT-Roles.html"
+    ],
+    "pivot table": [
+        "https://docs.gointerject.com/wAbout/Customer-Aging.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-PivotTable.html"
+    ],
+    "platform": [
+        "https://docs.gointerject.com/wApi/Pyinterject.html",
+        "https://docs.gointerject.com/wDeveloper/Defining-INTERJECT-for-Developers.html"
+    ],
+    "policy": [
+        "https://docs.gointerject.com/wDeveloper/ConditionalAccess.html"
+    ],
+    "portal": [
+        "https://docs.gointerject.com/wDeveloper/INTERJECT-Website-Portal.html",
+        "https://docs.gointerject.com/wDeveloper/SetupjDataPortal.html",
+        "https://docs.gointerject.com/wIndex/ReportBuilder.html"
+    ],
+    "portals": [
+        "https://docs.gointerject.com/wIndex/Diagnostics-ListDataPortals.html",
+        "https://docs.gointerject.com/wPortal/MyApps.html"
+    ],
+    "problem": [
+        "https://docs.gointerject.com/wTroubleshoot/GeneralTroubleshooting.html",
+        "https://docs.gointerject.com/wTroubleshoot/Troubleshooting-Landing.html"
+    ],
+    "progress bar window": [
+        "https://docs.gointerject.com/wTroubleshoot/Investigating-Errors.html"
+    ],
+    "progress window": [
+        "https://docs.gointerject.com/wTroubleshoot/Reports.html"
+    ],
+    "property": [
+        "https://docs.gointerject.com/wGetStarted/L-Create-RunOnOpen.html"
+    ],
+    "protecting": [
+        "https://docs.gointerject.com/wGetStarted/L-Create-Protecting.html"
+    ],
+    "publish": [
+        "https://docs.gointerject.com/wGetStarted/Exporting-Reports.html",
+        "https://docs.gointerject.com/wGetStarted/L-Export-QuickExportAndPDF.html",
+        "https://docs.gointerject.com/wPortal/PublishedApps.html"
+    ],
+    "published apps": [
+        "https://docs.gointerject.com/wPortal/Subscribers.html"
+    ],
+    "pull": [
+        "https://docs.gointerject.com/wDeveloper/Advanced-Data-Pull.html",
+        "https://docs.gointerject.com/wDeveloper/Simple-Data-Pull.html",
+        "https://docs.gointerject.com/wFunctions/Excel-Function-Index.html",
+        "https://docs.gointerject.com/wFunctions/ReportFixed.html",
+        "https://docs.gointerject.com/wFunctions/ReportLookup.html",
+        "https://docs.gointerject.com/wFunctions/ReportRange.html",
+        "https://docs.gointerject.com/wFunctions/ReportVariable.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-RunOnOpen.html"
+    ],
+    "python": [
+        "https://docs.gointerject.com/wApi/Pyinterject.html",
+        "https://docs.gointerject.com/wApi/python-api-custom-functions.html",
+        "https://docs.gointerject.com/wApi/python-api-setup.html"
+    ],
+    "quick": [
+        "https://docs.gointerject.com/wGetStarted/L-Export-QuickExportAndPDF.html"
+    ],
+    "ram": [
+        "https://docs.gointerject.com/wTroubleshoot/RAM-Monitoring.html"
+    ],
+    "range": [
+        "https://docs.gointerject.com/wFunctions/Data-Functions-Landing.html",
+        "https://docs.gointerject.com/wFunctions/ReportRange.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-CustomerAging.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-CustomerAgingDetail.html"
+    ],
+    "real world": [
+        "https://docs.gointerject.com/wAbout/Using-INTERJECT.html"
+    ],
+    "recovery": [
+        "https://docs.gointerject.com/wAbout/security-policy.html"
+    ],
+    "redirect": [
+        "https://docs.gointerject.com/wPortal/MyApps.html"
+    ],
+    "registry": [
+        "https://docs.gointerject.com/wTroubleshoot/CorruptedInstallation.html"
+    ],
+    "rename": [
+        "https://docs.gointerject.com/wIndex/Diagnostics-ReplaceDataPortalCodes.html"
+    ],
+    "report": [
+        "https://docs.gointerject.com/wAbout/ReportLibraryLinks.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-CustomerAging.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-CustomerAgingDetail.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-CustomerOrders.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-FinancialVariable.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-InventoryFixed.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-InventoryVariable.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-ReportMacro.html",
+        "https://docs.gointerject.com/wGetStarted/L-Drill-DrillCodes.html",
+        "https://docs.gointerject.com/wGetStarted/L-Drill-InventoryReport.html",
+        "https://docs.gointerject.com/wGetStarted/L-Export-BasicDist.html",
+        "https://docs.gointerject.com/wIndex/ReportBuilder.html",
+        "https://docs.gointerject.com/wTroubleshoot/Investigating-Errors.html",
+        "https://docs.gointerject.com/wTroubleshoot/RAM-Monitoring.html",
+        "https://docs.gointerject.com/wTroubleshoot/Reporting-A-Problem.html",
+        "https://docs.gointerject.com/wTroubleshoot/Reports.html",
+        "https://docs.gointerject.com/wTroubleshoot/Testing-Data-Connections.html",
+        "https://docs.gointerject.com/wTroubleshoot/Troubleshooting-Landing.html",
+        "https://docs.gointerject.com/wTroubleshoot/Validation-Report.html",
+        "https://docs.gointerject.com/wTroubleshoot/View-SQL.html"
+    ],
+    "report formula": [
+        "https://docs.gointerject.com/wAbout/Basics-of-Report-Formulas.html"
+    ],
+    "report formulas": [
+        "https://docs.gointerject.com/wAbout/Working-with-INTERJECT.html",
+        "https://docs.gointerject.com/wIndex/Report-Formula-Reviews.html"
+    ],
+    "report library": [
+        "https://docs.gointerject.com/wAbout/Report-Library-Basics.html",
+        "https://docs.gointerject.com/wAbout/ReportLibraryLinks.html",
+        "https://docs.gointerject.com/wAbout/Using-INTERJECT.html",
+        "https://docs.gointerject.com/wAbout/What-You-Need-to-Know.html",
+        "https://docs.gointerject.com/wGetStarted/L-Drill-DrillCodes.html",
+        "https://docs.gointerject.com/wTroubleshoot/Cloud-File.html"
+    ],
+    "reporting": [
+        "https://docs.gointerject.com/bApps/bFinancials/JE-Upload-Install.html",
+        "https://docs.gointerject.com/wTroubleshoot/Reporting-A-Problem.html"
+    ],
+    "reporting a problem": [
+        "https://docs.gointerject.com/wIndex/Diagnostics-ClearErrorLog.html"
+    ],
+    "reports": [
+        "https://docs.gointerject.com/wAbout/Inventory-Reports.html",
+        "https://docs.gointerject.com/wGetStarted/Creating-a-Simple-Report.html",
+        "https://docs.gointerject.com/wGetStarted/Creating-with-INTERJECT.html",
+        "https://docs.gointerject.com/wGetStarted/Fixed-and-Variable-Reports.html",
+        "https://docs.gointerject.com/wGetStarted/Modifying-an-Existing-Report.html"
+    ],
+    "request context": [
+        "https://docs.gointerject.com/wDeveloper/Request-Context-Parse.html"
+    ],
+    "reset": [
+        "https://docs.gointerject.com/wIndex/Diagnostics-ClearErrorLog.html",
+        "https://docs.gointerject.com/wIndex/Diagnostics-ReinitiateInterject.html",
+        "https://docs.gointerject.com/wPortal/Altering-User-Passwords.html",
+        "https://docs.gointerject.com/wTroubleshoot/Addin-Missing.html",
+        "https://docs.gointerject.com/wTroubleshoot/AdxLoader.html",
+        "https://docs.gointerject.com/wTroubleshoot/Verbose-Logging.html"
+    ],
+    "resize": [
+        "https://docs.gointerject.com/wAbout/Report-Library-Basics.html",
+        "https://docs.gointerject.com/wAbout/Resizing-Form-Windows.html"
+    ],
+    "retain": [
+        "https://docs.gointerject.com/wGetStarted/L-Create-RetainFeature.html"
+    ],
+    "return": [
+        "https://docs.gointerject.com/wAbout/Inventory-Reports.html"
+    ],
+    "return message": [
+        "https://docs.gointerject.com/wDeveloper/L-Dev-Error-Handling.html"
+    ],
+    "ribbon": [
+        "https://docs.gointerject.com/wAbout/Logging-In-Enterprise.html",
+        "https://docs.gointerject.com/wAbout/Logging-In.html",
+        "https://docs.gointerject.com/wDeveloper/Enterprise-Login-Setup.html",
+        "https://docs.gointerject.com/wGetStarted/INTERJECT-Ribbon-Menu-Items.html"
+    ],
+    "role": [
+        "https://docs.gointerject.com/bApps/bFinancials/SQL-Install.html"
+    ],
+    "roles": [
+        "https://docs.gointerject.com/wPortal/INTERJECT-Roles.html",
+        "https://docs.gointerject.com/wPortal/StaffPage.html",
+        "https://docs.gointerject.com/wPortal/User-Profile.html"
+    ],
+    "routine": [
+        "https://docs.gointerject.com/wGetStarted/L-Create-ReportMacro.html"
+    ],
+    "rows": [
+        "https://docs.gointerject.com/wGetStarted/L-Create-AdvancedHideRowsSections.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-HideRowCol.html"
+    ],
+    "rtf": [
+        "https://docs.gointerject.com/wIndex/Diagnostics-ListDataPortals.html"
+    ],
+    "rules": [
+        "https://docs.gointerject.com/wDeveloper/ConditionalAccess.html"
+    ],
+    "run": [
+        "https://docs.gointerject.com/wFunctions/ReportRun.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-RunOnOpen.html"
+    ],
+    "run on open": [
+        "https://docs.gointerject.com/wGetStarted/L-Create-InventoryFixed.html"
+    ],
+    "save": [
+        "https://docs.gointerject.com/wAbout/Customer-Aging.html",
+        "https://docs.gointerject.com/wDeveloper/DataSave.html",
+        "https://docs.gointerject.com/wFunctions/Excel-Function-Index.html",
+        "https://docs.gointerject.com/wFunctions/ReportSave.html"
+    ],
+    "scalability": [
+        "https://docs.gointerject.com/wAbout/What-You-Need-to-Know.html"
+    ],
+    "script": [
+        "https://docs.gointerject.com/bApps/bFinancials/DeactiveDB.html"
+    ],
+    "scripts": [
+        "https://docs.gointerject.com/wApi/Pyinterject.html"
+    ],
+    "search": [
+        "https://docs.gointerject.com/wAbout/Report-Library-Basics.html",
+        "https://docs.gointerject.com/wIndex/Diagnostics-FindAllFormulas.html"
+    ],
+    "sections": [
+        "https://docs.gointerject.com/wGetStarted/L-Create-AdvancedHideRowsSections.html"
+    ],
+    "security": [
+        "https://docs.gointerject.com/wDeveloper/MacroSecurity.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-Protecting.html",
+        "https://docs.gointerject.com/wPortal/INTERJECT-Roles.html",
+        "https://docs.gointerject.com/wPortal/MFA.html"
+    ],
+    "segment": [
+        "https://docs.gointerject.com/wFunctions/jAcct.html",
+        "https://docs.gointerject.com/wFunctions/jCell.html",
+        "https://docs.gointerject.com/wFunctions/jDesc.html"
+    ],
+    "segment filter": [
+        "https://docs.gointerject.com/wIndex/FinCubeTheFinancialCube.html"
+    ],
+    "segment search": [
+        "https://docs.gointerject.com/wIndex/SegmentInfoSegmentSearch.html"
+    ],
+    "segmentinfo": [
+        "https://docs.gointerject.com/wIndex/Common-Dataportal-Index.html",
+        "https://docs.gointerject.com/wIndex/SegmentInfoSegmentSearch.html"
+    ],
+    "segments": [
+        "https://docs.gointerject.com/wGetStarted/L-Drill-FinancialReport.html"
+    ],
+    "semaphore": [
+        "https://docs.gointerject.com/wTroubleshoot/Transport-Errors.html"
+    ],
+    "send": [
+        "https://docs.gointerject.com/wGetStarted/Exporting-Reports.html"
+    ],
+    "send report": [
+        "https://docs.gointerject.com/wTroubleshoot/Verbose-Logging.html"
+    ],
+    "server": [
+        "https://docs.gointerject.com/wApi/dot-net-api-setup.html",
+        "https://docs.gointerject.com/wDeveloper/INTERJECT-Website-Portal.html"
+    ],
+    "server connection": [
+        "https://docs.gointerject.com/wDeveloper/L-Dev-CustomerAgingDetail.html"
+    ],
+    "setting up": [
+        "https://docs.gointerject.com/wPortal/L-Api-Connections.html",
+        "https://docs.gointerject.com/wPortal/L-Database-Connection.html"
+    ],
+    "settings": [
+        "https://docs.gointerject.com/wDeveloper/InternalSupportSetup.html",
+        "https://docs.gointerject.com/wDeveloper/Managing-Settings-Cache.html",
+        "https://docs.gointerject.com/wTroubleshoot/WebProxy.html"
+    ],
+    "setup": [
+        "https://docs.gointerject.com/bApps/bFinancials/InitialDataLoad.html",
+        "https://docs.gointerject.com/wApi/dot-net-api-setup.html",
+        "https://docs.gointerject.com/wApi/java-api-setup.html",
+        "https://docs.gointerject.com/wApi/python-api-setup.html",
+        "https://docs.gointerject.com/wDeveloper/Diagnostics-EnterpriseConnection.html",
+        "https://docs.gointerject.com/wDeveloper/Diagnostics-InstallConfig.html",
+        "https://docs.gointerject.com/wDeveloper/Enterprise-Login-Setup.html",
+        "https://docs.gointerject.com/wDeveloper/Federated-Login-Design.html",
+        "https://docs.gointerject.com/wIndex/Diagnostics-ReinitiateInterject.html",
+        "https://docs.gointerject.com/wPortal/Data-Portals.html",
+        "https://docs.gointerject.com/wPortal/L-Api-Connections.html",
+        "https://docs.gointerject.com/wPortal/L-Database-Connection.html"
+    ],
+    "shortcut": [
+        "https://docs.gointerject.com/wIndex/Diagnostics-ShortKey.html",
+        "https://docs.gointerject.com/wIndex/INTERJECT-Hotkey-Index.html"
+    ],
+    "shortkey": [
+        "https://docs.gointerject.com/wIndex/INTERJECT-Hotkey-Index.html"
+    ],
+    "sign key": [
+        "https://docs.gointerject.com/wDeveloper/MacroSecurity.html"
+    ],
+    "size": [
+        "https://docs.gointerject.com/wAbout/Resizing-Form-Windows.html"
+    ],
+    "slow": [
+        "https://docs.gointerject.com/wIndex/Excel-Best-and-Worst-Practices.html",
+        "https://docs.gointerject.com/wTroubleshoot/Drill-Animations.html"
+    ],
+    "slow drill": [
+        "https://docs.gointerject.com/wTroubleshoot/Drill-Animations.html"
+    ],
+    "smtp": [
+        "https://docs.gointerject.com/wPortal/OrganizationProfile.html"
+    ],
+    "solutions": [
+        "https://docs.gointerject.com/wTroubleshoot/TroubleshootingGuide.html"
+    ],
+    "sorting": [
+        "https://docs.gointerject.com/wAbout/ReportLibraryOrganization.html"
+    ],
+    "spreadsheet": [
+        "https://docs.gointerject.com/wAbout/What-You-Need-to-Know.html"
+    ],
+    "spring framework": [
+        "https://docs.gointerject.com/wApi/java-api-setup.html"
+    ],
+    "sql": [
+        "https://docs.gointerject.com/wDeveloper/CustomItems.html"
+    ],
+    "sql test": [
+        "https://docs.gointerject.com/wTroubleshoot/Reports.html"
+    ],
+    "standards": [
+        "https://docs.gointerject.com/wDeveloper/Security-Best-Practices.html",
+        "https://docs.gointerject.com/wIndex/Excel-Best-and-Worst-Practices.html"
+    ],
+    "start": [
+        "https://docs.gointerject.com/wLabs/LabSetup.html"
+    ],
+    "statements": [
+        "https://docs.gointerject.com/wDeveloper/ConditionalAccess.html"
+    ],
+    "status": [
+        "https://docs.gointerject.com/wAbout/Report-Library-Basics.html"
+    ],
+    "stored procedure": [
+        "https://docs.gointerject.com/wDeveloper/Request-Context-Parse.html"
+    ],
+    "sub": [
+        "https://docs.gointerject.com/wGetStarted/L-Create-ReportMacro.html"
+    ],
+    "subscribers": [
+        "https://docs.gointerject.com/wPortal/PublishedApps.html"
+    ],
+    "subscriptions": [
+        "https://docs.gointerject.com/wPortal/MyApps.html"
+    ],
+    "support": [
+        "https://docs.gointerject.com/wIndex/Diagnostics-ClearErrorLog.html",
+        "https://docs.gointerject.com/wTroubleshoot/GeneralTroubleshooting.html",
+        "https://docs.gointerject.com/wTroubleshoot/Interject-Support.html",
+        "https://docs.gointerject.com/wTroubleshoot/Troubleshooting-Landing.html"
+    ],
+    "system": [
+        "https://docs.gointerject.com/wDeveloper/Managing-Settings-Cache.html"
+    ],
+    "system parameter": [
+        "https://docs.gointerject.com/wDeveloper/Request-Context-Parse.html"
+    ],
+    "system parameters": [
+        "https://docs.gointerject.com/wPortal/Data-Portals.html"
+    ],
+    "tabular": [
+        "https://docs.gointerject.com/wAbout/Tabular-vs-Data-Cells.html"
+    ],
+    "tabular cells": [
+        "https://docs.gointerject.com/wAbout/Working-with-INTERJECT.html"
+    ],
+    "tech": [
+        "https://docs.gointerject.com/wTroubleshoot/GeneralTroubleshooting.html"
+    ],
+    "tech support": [
+        "https://docs.gointerject.com/wDeveloper/InternalSupportSetup.html"
+    ],
+    "template": [
+        "https://docs.gointerject.com/wIndex/ReportBuilder.html"
+    ],
+    "test": [
+        "https://docs.gointerject.com/wTroubleshoot/Testing-Data-Connections.html"
+    ],
+    "text resize": [
+        "https://docs.gointerject.com/wAbout/Resizing-Form-Windows.html"
+    ],
+    "timeout": [
+        "https://docs.gointerject.com/wTroubleshoot/Transport-Errors.html"
+    ],
+    "tokens": [
+        "https://docs.gointerject.com/wDeveloper/ConnectionManager.html"
+    ],
+    "tools": [
+        "https://docs.gointerject.com/bApps/bFinancials/Transactions-Package-Install.html"
+    ],
+    "totals": [
+        "https://docs.gointerject.com/wGetStarted/L-Modify-CustomerAging.html"
+    ],
+    "trigger": [
+        "https://docs.gointerject.com/wFunctions/Event-Functions-Landing.html",
+        "https://docs.gointerject.com/wFunctions/ReportCalc.html",
+        "https://docs.gointerject.com/wFunctions/ReportDefaults.html",
+        "https://docs.gointerject.com/wFunctions/ReportGrouping.html",
+        "https://docs.gointerject.com/wFunctions/ReportHideRowOrColumn.html",
+        "https://docs.gointerject.com/wFunctions/ReportMacro.html",
+        "https://docs.gointerject.com/wFunctions/ReportRun.html"
+    ],
+    "triggers": [
+        "https://docs.gointerject.com/wGetStarted/L-Create-ReportMacro.html",
+        "https://docs.gointerject.com/wTroubleshoot/Validation-Report.html"
+    ],
+    "troubleshooting": [
+        "https://docs.gointerject.com/wTroubleshoot/Troubleshooting-Landing.html"
+    ],
+    "uninstall": [
+        "https://docs.gointerject.com/wTroubleshoot/CorruptedInstallation.html"
+    ],
+    "unlock": [
+        "https://docs.gointerject.com/wGetStarted/L-Create-Protecting.html"
+    ],
+    "unprotecting": [
+        "https://docs.gointerject.com/wGetStarted/L-Create-Protecting.html"
+    ],
+    "update": [
+        "https://docs.gointerject.com/wAbout/ReportLibraryLinks.html",
+        "https://docs.gointerject.com/wAbout/Updating-INTERJECT.html"
+    ],
+    "updates": [
+        "https://docs.gointerject.com/wReleaseNotes/2023-10_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2023-11_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2023-12_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2024-01_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2024-03_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2024-06_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2024-07_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2024-08_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2024-10_ReleaseNotes.html"
+    ],
+    "updating": [
+        "https://docs.gointerject.com/wAbout/ReportLibraryOrganization.html",
+        "https://docs.gointerject.com/wAbout/Updating-INTERJECT.html"
+    ],
+    "upload": [
+        "https://docs.gointerject.com/wAbout/ReportLibraryLinks.html",
+        "https://docs.gointerject.com/wTroubleshoot/Cloud-File.html"
+    ],
+    "url": [
+        "https://docs.gointerject.com/wTroubleshoot/Cloud-File.html"
+    ],
+    "usage": [
+        "https://docs.gointerject.com/wIndex/Excel-Best-and-Worst-Practices.html"
+    ],
+    "use case": [
+        "https://docs.gointerject.com/wAbout/Real-World-Use-Cases.html",
+        "https://docs.gointerject.com/wAbout/Real-World-Walkthroughs.html"
+    ],
+    "user": [
+        "https://docs.gointerject.com/wAbout/Logging-In-Enterprise.html",
+        "https://docs.gointerject.com/wAbout/Logging-In.html",
+        "https://docs.gointerject.com/wPortal/AddUser.html",
+        "https://docs.gointerject.com/wTroubleshoot/Interject-Support.html"
+    ],
+    "user claims": [
+        "https://docs.gointerject.com/wDeveloper/ConditionalAccess.html"
+    ],
+    "user passwords": [
+        "https://docs.gointerject.com/wPortal/Altering-User-Passwords.html",
+        "https://docs.gointerject.com/wPortal/StaffPage.html"
+    ],
+    "user profile": [
+        "https://docs.gointerject.com/wPortal/INTERJECT-Roles.html",
+        "https://docs.gointerject.com/wPortal/User-Profile.html"
+    ],
+    "user support": [
+        "https://docs.gointerject.com/wTroubleshoot/Investigating-Errors.html",
+        "https://docs.gointerject.com/wTroubleshoot/RAM-Monitoring.html",
+        "https://docs.gointerject.com/wTroubleshoot/Reporting-A-Problem.html",
+        "https://docs.gointerject.com/wTroubleshoot/Reports.html",
+        "https://docs.gointerject.com/wTroubleshoot/Testing-Data-Connections.html",
+        "https://docs.gointerject.com/wTroubleshoot/Validation-Report.html",
+        "https://docs.gointerject.com/wTroubleshoot/View-SQL.html"
+    ],
+    "users": [
+        "https://docs.gointerject.com/wPortal/StaffPage.html"
+    ],
+    "validation": [
+        "https://docs.gointerject.com/wDeveloper/InstallerValidation.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-SpecColDefs.html"
+    ],
+    "validation report": [
+        "https://docs.gointerject.com/wTroubleshoot/Reports.html",
+        "https://docs.gointerject.com/wTroubleshoot/Validation-Report.html"
+    ],
+    "value": [
+        "https://docs.gointerject.com/wDeveloper/InstallerValidation.html"
+    ],
+    "variable": [
+        "https://docs.gointerject.com/wFunctions/Data-Functions-Landing.html",
+        "https://docs.gointerject.com/wFunctions/ReportVariable.html",
+        "https://docs.gointerject.com/wGetStarted/Fixed-and-Variable-Reports.html",
+        "https://docs.gointerject.com/wGetStarted/Fixed-and-Variable-Reports.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-CustomerAgingDetail.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-FinancialVariable.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-InventoryVariable.html"
+    ],
+    "vba": [
+        "https://docs.gointerject.com/wFunctions/ReportMacro.html"
+    ],
+    "verbose logging": [
+        "https://docs.gointerject.com/wTroubleshoot/Verbose-Logging.html"
+    ],
+    "version": [
+        "https://docs.gointerject.com/wAbout/Report-Library-Basics.html",
+        "https://docs.gointerject.com/wAbout/ReportLibraryLinks.html",
+        "https://docs.gointerject.com/wAbout/Updating-INTERJECT.html"
+    ],
+    "versions": [
+        "https://docs.gointerject.com/wReleaseNotes/2023-10_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2023-11_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2023-12_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2024-01_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2024-03_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2024-06_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2024-07_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2024-08_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2024-10_ReleaseNotes.html"
+    ],
+    "virtual private network": [
+        "https://docs.gointerject.com/wTroubleshoot/Transport-Errors.html"
+    ],
+    "vpn": [
+        "https://docs.gointerject.com/wTroubleshoot/Transport-Errors.html"
+    ],
+    "walkthrough": [
+        "https://docs.gointerject.com/wAbout/Customer-Aging.html",
+        "https://docs.gointerject.com/wAbout/Financial-Report.html",
+        "https://docs.gointerject.com/wAbout/Inventory-Reports.html",
+        "https://docs.gointerject.com/wDeveloper/Advanced-Data-Pull.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-ChangelogDataSave.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-CustomerAging.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-CustomerAgingDetail.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-CustomerOrders.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-EditingDataSave.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-InsertDeleteDataSave.html",
+        "https://docs.gointerject.com/wDeveloper/L-Dev-jDropdowns.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-CustomerAging.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-CustomerAgingDetail.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-CustomerOrders.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-Dropdowns.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-FinancialVariable.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-InventoryFixed.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-InventoryVariable.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-PivotTable.html",
+        "https://docs.gointerject.com/wGetStarted/L-Create-SpecColDefs.html",
+        "https://docs.gointerject.com/wGetStarted/L-Drill-CustomerAging.html",
+        "https://docs.gointerject.com/wGetStarted/L-Drill-FinancialReport.html",
+        "https://docs.gointerject.com/wGetStarted/L-Drill-InventoryReport.html",
+        "https://docs.gointerject.com/wGetStarted/L-Export-AdvancedDist.html",
+        "https://docs.gointerject.com/wGetStarted/L-Export-BasicDist.html",
+        "https://docs.gointerject.com/wGetStarted/L-Export-QuickExportAndPDF.html",
+        "https://docs.gointerject.com/wGetStarted/L-Modify-CustomerAging.html",
+        "https://docs.gointerject.com/wGetStarted/L-Modify-FinancialReport.html",
+        "https://docs.gointerject.com/wGetStarted/L-Modify-InventoryReport.html",
+        "https://docs.gointerject.com/wLabs/lab.html"
+    ],
+    "walkthroughs": [
+        "https://docs.gointerject.com/wGetStarted/Creating-a-Simple-Report.html",
+        "https://docs.gointerject.com/wGetStarted/Creating-with-INTERJECT.html",
+        "https://docs.gointerject.com/wGetStarted/Fixed-and-Variable-Reports.html",
+        "https://docs.gointerject.com/wGetStarted/Modifying-an-Existing-Report.html"
+    ],
+    "web api": [
+        "https://docs.gointerject.com/wApi/DeveloperMain.html",
+        "https://docs.gointerject.com/wApi/dot-net-api-setup.html",
+        "https://docs.gointerject.com/wApi/java-api-setup.html"
+    ],
+    "website": [
+        "https://docs.gointerject.com/wTroubleshoot/Cloud-File.html"
+    ],
+    "website portal": [
+        "https://docs.gointerject.com/wPortal/Logging-In-to-Website-Portal.html",
+        "https://docs.gointerject.com/wPortal/The-INTERJECT-Website-Portal.html",
+        "https://docs.gointerject.com/wPortal/User-Profile.html"
+    ],
+    "what's new": [
+        "https://docs.gointerject.com/wReleaseNotes/2023-10_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2023-11_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2023-12_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2024-01_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2024-03_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2024-06_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2024-07_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2024-08_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2024-10_ReleaseNotes.html"
+    ],
+    "window": [
+        "https://docs.gointerject.com/wFunctions/jFreezePanes.html"
+    ],
+    "windows": [
+        "https://docs.gointerject.com/wAbout/Resizing-Form-Windows.html"
+    ],
+    "workflow": [
+        "https://docs.gointerject.com/wDeveloper/Defining-INTERJECT-for-Developers.html"
+    ],
+    "year to date": [
+        "https://docs.gointerject.com/wGetStarted/L-Modify-FinancialReport.html"
+    ]
+}

@@ -4,7 +4,7 @@ filename: "L-Dev-ChangelogDataSave.md"
 layout: custom
 keywords: [developer, example, walkthrough, SQL, SSMS, Data Portal, data connection, data save, history]
 headings: ["Overview", "Setting Up the Data Connection", "Setting Up the Data Portal", "Setting Up the Report", "Setting Up the Tables", "Setting Up the Stored Procedure", "Modifying the Stored Procedure", "Current Date and Time", "ChangeLog", "Merge Update", "Merge Insert", "Merge Output", "Update Target Table", "Update History Table", "Final Stored Procedure", "Testing the Stored Procedure", "Testing the ReportSave"]
-links: ["/wDeveloper/L-Dev-InsertDeleteDataSave.html", "#setting-up-the-data-connection", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "#setting-up-the-data-portal", "#setting-up-the-report", "#setting-up-the-stored-procedure", "#testing-the-stored-procedure", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "https://docs.gointerject.com/wLabs/LabSetup.html#step-1-setting-up-the-database", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "https://portal.gointerject.com", "/wPortal/Logging-In-to-Website-Portal.html", "https://docs.gointerject.com/wDeveloper/L-Dev-ChangelogDataSave.html#setting-up-the-stored-procedure", "/wIndex/Request-Context-Parse.html", "/wDeveloper/L-Dev-InsertDeleteDataSave.html#setting-up-the-report", "/wDeveloper/L-Dev-InsertDeleteDataSave.html#final-stored-procedure", "https://docs.gointerject.com/wDeveloper/L-Dev-ChangelogDataSave.html#testing-the-stored-procedure", "#setting-up-the-tables", "#changelog", "#update-history-table", "/wDeveloper/L-Dev-InsertDeleteDataSave.html#update-changelog", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#overview"]
+links: ["/wDeveloper/L-Dev-InsertDeleteDataSave.html", "#setting-up-the-data-connection", "/wDeveloper/L-Dev-CustomerAging.html#setting-up-the-data-connection", "#setting-up-the-data-portal", "#setting-up-the-report", "#setting-up-the-stored-procedure", "#testing-the-stored-procedure", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "https://docs.gointerject.com/wLabs/LabSetup.html#step-1-setting-up-the-database", "/wDeveloper/L-Dev-CustomerAging.html#setting-up-the-data-connection", "https://portal.gointerject.com", "/wPortal/Logging-In-to-Website-Portal.html", "https://docs.gointerject.com/wDeveloper/L-Dev-ChangelogDataSave.html#setting-up-the-stored-procedure", "/wDeveloper/Request-Context-Parse.html", "/wDeveloper/L-Dev-InsertDeleteDataSave.html#setting-up-the-report", "/wDeveloper/L-Dev-InsertDeleteDataSave.html#final-stored-procedure", "https://docs.gointerject.com/wDeveloper/L-Dev-ChangelogDataSave.html#testing-the-stored-procedure", "#setting-up-the-tables", "#changelog", "#update-history-table", "/wDeveloper/L-Dev-InsertDeleteDataSave.html#update-changelog", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#overview"]
 image_dir: "L-Dev-ChangelogDataSave"
 images: [
 	{file: "NewDataPortal", type: "png", site: "Portal", cat: "Data Portals", sub: "", report: "", ribbon: "", config: ""}, 
@@ -38,7 +38,7 @@ A change log is basically an additional table in the database that will record a
 
 This walkthrough involves 5 main steps:
 
-1. [Set up a Data Connection](#setting-up-the-data-connection) ([completed already](/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection))
+1. [Set up a Data Connection](#setting-up-the-data-connection) ([completed already](/wDeveloper/L-Dev-CustomerAging.html#setting-up-the-data-connection))
 2. [Set up a Data Portal](#setting-up-the-data-portal)
 3. [Setting up the report to handle the save](#setting-up-the-report)
 4. [Set up the Stored Procedure (SP) to handle the save](#setting-up-the-stored-procedure)
@@ -50,7 +50,7 @@ This walkthrough involves 5 main steps:
 
 ## Setting Up the Data Connection
 
-For the Data Connection for this example, you will use the connection previously set up [here](/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection).
+For the Data Connection for this example, you will use the connection previously set up [here](/wDeveloper/L-Dev-CustomerAging.html#setting-up-the-data-connection).
 
 ## Setting Up the Data Portal
 
@@ -81,7 +81,7 @@ For the Data Connection for this example, you will use the connection previously
 ![](/images/L-Dev-ChangelogDataSave/AddSystemParameter.png)
 <br>
 
-The System Parameter [Interject_RequestContext](/wIndex/Request-Context-Parse.html) will transfer contextual data to the Stored Procedure you will set up later. In this example you will not need this info but it is a good practice to set this parameter for all your Stored Procedures.
+The System Parameter [Interject_RequestContext](/wDeveloper/Request-Context-Parse.html) will transfer contextual data to the Stored Procedure you will set up later. In this example you will not need this info but it is a good practice to set this parameter for all your Stored Procedures.
 
 ## Setting Up the Report
 

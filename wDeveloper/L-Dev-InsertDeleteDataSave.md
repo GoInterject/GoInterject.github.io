@@ -4,7 +4,7 @@ filename: "L-Dev-InsertDeleteDataSave.md"
 layout: custom
 keywords: [developer, example, walkthrough, SQL, SSMS, Data Portal, data connection, data save, insertions, deletions]
 headings: ["Overview", "Setting Up the Data Connection", "Setting Up the Data Portal", "Setting Up the Report", "Setting Up the Soft Delete", "Setting Up the Stored Procedure", "Modifying the Stored Procedure", "Data to Process", "Inserting the Data to Process", "Update DataToProcess", "ChangeLog", "Merge Select", "Merge Update", "Merge Insert", "Merge Output", "Update ChangeLog", "Set Message To User", "Final Stored Procedure", "Testing the Stored Procedure", "Testing the ReportSave"]
-links: ["/wDeveloper/L-Dev-EditingDataSave.html", "#setting-up-the-data-connection", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "#setting-up-the-data-portal", "#setting-up-the-report", "#setting-up-the-soft-delete", "#setting-up-the-stored-procedure", "#testing-the-stored-procedure", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "https://docs.gointerject.com/wLabs/LabSetup.html#step-1-setting-up-the-database", "/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection", "https://portal.gointerject.com", "/wPortal/Logging-In-to-Website-Portal.html", "https://docs.gointerject.com/wDeveloper/L-Dev-InsertDeleteDataSave.html#setting-up-the-stored-procedure", "/wIndex/Request-Context-Parse.html", "/wDeveloper/L-Dev-EditingDataSave.html#setting-up-the-report", "/wGetStarted/L-Dev-CustomerAging.html#creating-the-stored-procedure", "/wDeveloper/L-Dev-EditingDataSave.html#final-stored-procedure", "https://docs.gointerject.com/wDeveloper/L-Dev-InsertDeleteDataSave.html#testing-the-stored-procedure", "#setting-up-the-report", "#merge-insert", "#data-to-process", "#update-changelog", "#setting-up-the-soft-delete", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#overview"]
+links: ["/wDeveloper/L-Dev-EditingDataSave.html", "#setting-up-the-data-connection", "/wDeveloper/L-Dev-CustomerAging.html#setting-up-the-data-connection", "#setting-up-the-data-portal", "#setting-up-the-report", "#setting-up-the-soft-delete", "#setting-up-the-stored-procedure", "#testing-the-stored-procedure", "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases", "https://docs.gointerject.com/wLabs/LabSetup.html#step-1-setting-up-the-database", "/wDeveloper/L-Dev-CustomerAging.html#setting-up-the-data-connection", "https://portal.gointerject.com", "/wPortal/Logging-In-to-Website-Portal.html", "https://docs.gointerject.com/wDeveloper/L-Dev-InsertDeleteDataSave.html#setting-up-the-stored-procedure", "/wDeveloper/Request-Context-Parse.html", "/wDeveloper/L-Dev-EditingDataSave.html#setting-up-the-report", "/wDeveloper/L-Dev-CustomerAging.html#creating-the-stored-procedure", "/wDeveloper/L-Dev-EditingDataSave.html#final-stored-procedure", "https://docs.gointerject.com/wDeveloper/L-Dev-InsertDeleteDataSave.html#testing-the-stored-procedure", "#setting-up-the-report", "#merge-insert", "#data-to-process", "#update-changelog", "#setting-up-the-soft-delete", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#overview"]
 image_dir: "L-Dev-InsertDeleteDataSave"
 images: [
 	{file: "NewDataPortal", type: "png", site: "Portal", cat: "Data Portals", sub: "", report: "", ribbon: "", config: ""}, 
@@ -50,7 +50,7 @@ In this example you will modify the previous [Editing Data Save](/wDeveloper/L-D
 
 This walkthrough involves 6 main steps:
 
-1. [Set up a Data Connection](#setting-up-the-data-connection) ([completed already](/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection))
+1. [Set up a Data Connection](#setting-up-the-data-connection) ([completed already](/wDeveloper/L-Dev-CustomerAging.html#setting-up-the-data-connection))
 2. [Set up a Data Portal](#setting-up-the-data-portal)
 3. [Setting up the report to handle the save](#setting-up-the-report)
 4. [Setting up the soft delete](#setting-up-the-soft-delete)
@@ -65,7 +65,7 @@ This walkthrough involves 6 main steps:
 
 ## Setting Up the Data Connection
 
-For the Data Connection for this example, you will use the connection previously set up [here](/wGetStarted/L-Dev-CustomerAging.html#setting-up-the-data-connection).
+For the Data Connection for this example, you will use the connection previously set up [here](/wDeveloper/L-Dev-CustomerAging.html#setting-up-the-data-connection).
 
 ## Setting Up the Data Portal
 
@@ -96,7 +96,7 @@ For the Data Connection for this example, you will use the connection previously
 ![](/images/L-Dev-InsertDeleteDataSave/AddSystemParameter.png)
 <br>
 
-The System Parameter [Interject_RequestContext](/wIndex/Request-Context-Parse.html) will transfer contextual data to the Stored Procedure you will set up later. In this example you will not need this info but it is a good practice to set this parameter for all your Stored Procedures.
+The System Parameter [Interject_RequestContext](/wDeveloper/Request-Context-Parse.html) will transfer contextual data to the Stored Procedure you will set up later. In this example you will not need this info but it is a good practice to set this parameter for all your Stored Procedures.
 
 ## Setting Up the Report
 
@@ -158,7 +158,7 @@ ALTER TABLE dbo.Northwind_Customers
 ALTER COLUMN IsDeleted BIT NOT NULL
 ```
 
-**Step 4:** Lastly, in order to only pull records that are not deleted, you will need to add the following line to the Stored Procedure [previously set up](/wGetStarted/L-Dev-CustomerAging.html#creating-the-stored-procedure) that pulls the data for this report:
+**Step 4:** Lastly, in order to only pull records that are not deleted, you will need to add the following line to the Stored Procedure [previously set up](/wDeveloper/L-Dev-CustomerAging.html#creating-the-stored-procedure) that pulls the data for this report:
 
 ![](/images/L-Dev-InsertDeleteDataSave/AddIsDeletedToPullSP.png)
 <br>

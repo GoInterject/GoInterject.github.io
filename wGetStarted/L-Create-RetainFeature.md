@@ -4,7 +4,7 @@ filename: "L-Create-RetainFeature.md"
 layout: custom
 keywords: [retain, formulas, keep, don't clear, RetainedRowColumns, InsertNewRowsWithin]
 headings: ["Overview", "Create Simple Formulas", "Without RetainedRowColumns", "With RetainedRowColumns", "Insert New Rows Within"]
-links: ["/wIndex/ReportRange.html", "/wIndex/ReportVariable.html", "/wIndex/jCombine.html"]
+links: ["/wFunctions/ReportRange.html", "/wFunctions/ReportVariable.html", "/wFunctions/jCombine.html"]
 image_dir: "L-Create-Retain"
 images: [
 	{file: "01", type: "jpg", site: "Add-in", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, 
@@ -34,7 +34,7 @@ description: When using Interject to pull data into your spreadsheet, the report
 
 Interject provides a retain feature so that you can update the data in a report without deleting rows, keeping your formulas and other information intact. Typically, when using Interject to pull data into your spreadsheet, the report area will be cleared before new data is inserted. This is typically done by the deletion of rows. In some situations, you may want to avoid this clear action in order to retain some formulas or other information, since pulling could remove formulas you have on other columns related to certain data rows. This is especially true when you are budgeting or forecasting with historical numbers. The report may have history on the left and your forecasting formulas and numbers will be input on the right.
 
-Interject's retain feature is available for the [ReportRange()](/wIndex/ReportRange.html) and the [ReportVariable()](/wIndex/ReportVariable.html) functions.
+Interject's retain feature is available for the [ReportRange()](/wFunctions/ReportRange.html) and the [ReportVariable()](/wFunctions/ReportVariable.html) functions.
 
 Since Interject must still update your data, it must determine which columns act as the key values, so it can place the correct data in the correct row. By specifying these key columns in the RetainRowColumns parameter, Interject will retain any row of data where there is a value in these columns. Consequently, on a Pull-Clear action, Interject will not delete these rows but instead zero the amounts.
 
@@ -109,7 +109,7 @@ To fix this, use the RetainedRowColumns to retain the rows and your formulas.
 ![](/images/L-Create-Retain/10.jpg)
 <br>
 
-Now scroll down to the **RetainRowColumns.** The RetainRowColumns argument expects a single string of comma delimited names of columns that will be retained after a data pull. Instead of entering the string, the [jCombine()](/wIndex/jCombine.html) helper function is helpful as it will concatenate the column names for us.
+Now scroll down to the **RetainRowColumns.** The RetainRowColumns argument expects a single string of comma delimited names of columns that will be retained after a data pull. Instead of entering the string, the [jCombine()](/wFunctions/jCombine.html) helper function is helpful as it will concatenate the column names for us.
 
 Enter **jCombine((F2:G2))** in the field. This will retain all rows that have a value in the Segment1 or Segment1Name columns.
 

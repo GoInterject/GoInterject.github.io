@@ -3,8 +3,8 @@ title: "Drill: Customer Aging Report"
 filename: "L-Drill-CustomerAging.md"
 layout: custom
 keywords: [drill, create, build, customer aging, walkthrough]
-headings: ["Overview", "Unfreezing the Excel Sheet", "Build the Drill", "Final Results"]
-links: ["/wIndex/ReportDrill.html", "/wIndex/PairGroup.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "/wAbout/ReportLibraryLinks.html"]
+headings: ["Overview", "Initializing the Report", "Build the Drill", "Final Results"]
+links: ["/wFunctions/ReportDrill.html", "/wFunctions/PairGroup.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "/wAbout/ReportLibraryLinks.html"]
 image_dir: "L-Drill-CustAging"
 images: [
 	{file: "01", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}, 
@@ -45,7 +45,7 @@ In this example, you will be setting up a simple drill to the customer orders hi
 ![](/images/L-Drill-CustAging/02.png)
 <br>
 
-**Step 3:** In this report the [ReportDrill()](/wIndex/ReportDrill.html) functions may have been already set up. To follow along in this guide, you will need to remove these functions so you can set them up manually. Scroll up to the configuration rows and select the three drills and clear their contents.
+**Step 3:** In this report the [ReportDrill()](/wFunctions/ReportDrill.html) functions may have been already set up. To follow along in this guide, you will need to remove these functions so you can set them up manually. Scroll up to the configuration rows and select the three drills and clear their contents.
 
 ![](/images/L-Drill-CustAging/03.png)
 <br>
@@ -64,7 +64,7 @@ You are going to skip the ReportCodeToRun argument, since that is used only when
 ![](/images/L-Drill-CustAging/05.png)
 <br>
 
-**Step 3:** Next, we will use the TransferPairs argument to note which cell values in the source worksheet will be transferred to the target worksheet during the drill operation. To do this we use special functions to pair the source cells to the target cells. Type [**PairGroup(Pair())**](/wIndex/PairGroup.html) in the TransferPairs argument to get it started. You will return to add more to this argument.
+**Step 3:** Next, we will use the TransferPairs argument to note which cell values in the source worksheet will be transferred to the target worksheet during the drill operation. To do this we use special functions to pair the source cells to the target cells. Type [**PairGroup(Pair())**](/wFunctions/PairGroup.html) in the TransferPairs argument to get it started. You will return to add more to this argument.
 
 ![](/images/L-Drill-CustAging/06.png)
 <br>

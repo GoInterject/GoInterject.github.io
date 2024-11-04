@@ -1,0 +1,1021 @@
+{
+    "interject_formula_descriptions": [
+        {
+            "formula": "ReportRange",
+            "description": "The ReportRange function pulls data from a data source and inserts it into a single range within a spreadsheet. Receives a list of columns for input that will be pulled from the data source. Only data that is mapped to these column names will be inserted. Data returned by this function can be filtered, formatted, and customized for a specific desired data set.\n\nFor an example of this function, see [Lab Create: Customer Aging](/wGetStarted/L-Create-CustomerAging.html).",
+            "parameters": {
+                "Data Portal": {
+                    "description": "The name of the Interject Data Portal that will be used as the data source for this function.",
+                    "data_type": [
+                        "String",
+                        "jDataPortal()"
+                    ],
+                    "constraints": "Max 255 char",
+                    "if_blank": "Function Error"
+                },
+                "TargetDataRange": {
+                    "description": "The multi-row range where the data will be inserted. Data is inserted starting at the first row. The last row defined here will be the bottom row below the data.",
+                    "data_type": [
+                        "Range"
+                    ],
+                    "constraints": "Min 2 rows. Must match the width of the range defined in ColDefRange",
+                    "if_blank": "No data inserted"
+                },
+                "ColDefRange": {
+                    "description": "Column definition range: A range designating the names of the columns of the data source. Only data from these columns will be inserted. Range can span multiple rows. Best practice is to use a range instead of whole rows.",
+                    "data_type": [
+                        "Range"
+                    ],
+                    "constraints": "Max 500 columns. Must match the width of the range defined in TargetDataRange",
+                    "if_blank": "Uses all columns from the data source"
+                },
+                "FormatRange": {
+                    "description": "The range designating the formatting style (e.g. font, color) for the inserted data. Data will be formatted using this range as a template. Formulas can also be included, which will be used for the inserted data.",
+                    "data_type": [
+                        "Range"
+                    ],
+                    "constraints": "Must match the range dimensions defined in ColDefRange",
+                    "if_blank": "Uses the formatting in the first row defined in TargetDataRange"
+                },
+                "Parameters": {
+                    "description": "The cells designating the parameters for the Data Portal. The values in these cells will filter the data that is inserted from the data source.",
+                    "data_type": [
+                        "Param()"
+                    ],
+                    "constraints": "The values must match the order of the parameters in the data source (The order can be verified using the [Validation Report](/wTroubleshoot/Reports.html#validation-report-for-interject-events) )",
+                    "if_blank": "Data is not filtered"
+                },
+                "UseEntireRow": {
+                    "description": "True: New rows will be added for the inserted data. Rows in TargetDataRange (besides bottom row) will be deleted first.<br><br>False: Data will be inserted into the range defined in TargetDataRange. Cells outside this range will be unaffected.",
+                    "data_type": [
+                        "Boolean"
+                    ],
+                    "constraints": "",
+                    "if_blank": "False"
+                },
+                "PutFieldNamesAtTop": {
+                    "description": "True: Will insert the column names on a row above the inserted data if ColDefRange is blank.<br><br>False: Will not insert column names.",
+                    "data_type": [
+                        "Boolean"
+                    ],
+                    "constraints": "",
+                    "if_blank": "False"
+                },
+                "RetainRowColumns": {
+                    "description": "The list of column names that will be used as a key for retaining information within the inserted data range. This can be a comma delimited string or a cell reference of a single column name defined in ColDefRange. <br><br>All data in the column(s) matching the names in this argument will be retained after a a Pull-Run or Pull-Clear event. Consequently, such rows are also retained and not deleted. However, all data in columns that are not defined in this argument are blanked out after a clear action or overridden after a pull action.<br><br>This feature makes forecasting calculations to remain in the report instead of being cleared. For an example of this feature, see [Using the Retain Feature](/wGetStarted/L-Create-RetainFeature.html).",
+                    "data_type": [
+                        "String",
+                        "jCombine()",
+                        "jCombine_If()"
+                    ],
+                    "constraints": "Max 255 char",
+                    "if_blank": "All data within the TargetDataRange is cleared on a clear action"
+                },
+                "InsertNewRowsWithin": {
+                    "description": "True: If RetainRowsColumns is used, will insert new data in the TargetDataRange on a pull action by alphabetical order of the first key listed in RetainRowColumns. <br><br>False: Will insert new data below the already present data in the TargetDataRange on a pull action if valid columns are defined in RetainRowColumns.",
+                    "data_type": [
+                        "Boolean"
+                    ],
+                    "constraints": "",
+                    "if_blank": "False"
+                },
+                "UseTopSpacerRow": {
+                    "description": "True: Inserts data starting on the second row defined in TargetDataRange. (Retains top row on a Pull-Run or Pull-Clear event.)<br><br>False: Inserts data starting on the first row defined in TargetDataRange.",
+                    "data_type": [
+                        "Boolean"
+                    ],
+                    "constraints": "",
+                    "if_blank": "False"
+                }
+            }
+        },
+        {
+            "formula": "ReportFixed",
+            "description": "The ReportFixed function pulls data from a data source and inserts it into a spreadsheet. It is similar to the [ReportRange](/wFunctions/ReportRange.html) function but with the addition of receiving row names as input in addition to column names. Only data that is mapped to both these row and column names from the data source will be inserted. Consequently, the range where data is inserted is defined by the boundaries of the RowDefRange and the ColDefRange. Data returned by this function can be filtered, formatted, and customized for a specific desired report.\n\nFor an example of this function, see [Create Inventory Fixed Lab.](/wGetStarted/L-Create-InventoryFixed.html)",
+            "parameters": {
+                "Data Portal": {
+                    "description": "The name of the Interject Data Portal that will be used as the data source for this function.",
+                    "data_type": [
+                        "String",
+                        "jDataPortal()"
+                    ],
+                    "constraints": "Max 255 char",
+                    "if_blank": "Function Error"
+                },
+                "RowDefRange": {
+                    "description": "A single column range whose values that map to the RowDefName field of the data source. Each value in this range will be matched to the same value in the RowDefName of the data source. Only these values will be populated with data after a pull action.<br><br>If the data source does not have a column \"RowDefName\", this function will look for a column name defined in the column in the ColDefRange and the row defined here in RowDefRange. For example, if row 2 is defined in ColDefRange and column B is defined in RowDefRange, this function will look at the value in B2 to map the data to.<br><br>If there are records in the data source that are excluded in this range, the data from those columns will be included in a [leftover] section after a pull action.",
+                    "data_type": [
+                        "Range"
+                    ],
+                    "constraints": "Must be a single column",
+                    "if_blank": "Function Error"
+                },
+                "ColDefRange": {
+                    "description": "A single row range designating the names of the columns of the data source. Only data from these columns will be inserted. Best practice is to use a range instead of whole rows.",
+                    "data_type": [
+                        "Range"
+                    ],
+                    "constraints": "Max 500 columns. Must be a single row.",
+                    "if_blank": "Will Error"
+                },
+                "Parameters": {
+                    "description": "The cells designating the parameters for the Data Portal. The values in these cells will filter the data that is inserted from the data source.",
+                    "data_type": [
+                        "Param()"
+                    ],
+                    "constraints": "The values must match the order of the parameters in the data source (The order can be verified using the <a href=\"https://docs.gointerject.com/wTroubleshoot/Reports.html#validation-report-for-interject-events\">Validation Report</a>)",
+                    "if_blank": "Data is not filtered"
+                }
+            }
+        },
+        {
+            "formula": "ReportVariable",
+            "description": "The ReportVariable function pulls data from a data source and inserts it into a spreadsheet. It is similar to the [ReportFixed](/wFunctions/ReportFixed.html) function because it takes row names as input in addition to column names. Only data that is mapped to both these row and column names from the data source will be inserted. Consequently, the range where data is inserted is defined by the boundaries of the RowDefRange and the ColDefRange. Data returned by this function can be filtered, formatted, and customized for a specific desired report.\n\nThis function differs from the ReportFixed function in that it will group the data based on the values defined in the RowDefRange argument. The grouping feature allows the data to be collapsed and expanded by category. \n\nFor an example of this function, see [Lab Create: Inventory Variable](/wGetStarted/L-Create-InventoryVariable.html).",
+            "parameters": {
+                "DataPortal": {
+                    "description": "The name of the Interject Data Portal that will be used as the data source for this function.",
+                    "data_type": [
+                        "String",
+                        "jDataPortal()"
+                    ],
+                    "constraints": "Max 255 char",
+                    "if_blank": "Function Error"
+                },
+                "RowDefRange": {
+                    "description": "A single column range that contains the values that map to the RowDefName field of the data source. Each value in this range will be matched to the same value in the RowDefName of the data source. Only these values will be populated with data after a pull action.<br><br>If the data source does not have a column \"RowDefName\", this function will look for a column name defined in the column in the ColDefRange and the row defined here in RowDefRange. For example, if row 2 is defined in ColDefRange and column B is defined in RowDefRange, this function will look at the value in B2 to map the data to.<br><br>If there are records in the data source that are excluded in this range, the data from those columns will be included in a [leftover] section after a pull action.<br><br>The last row of this section must be blank.",
+                    "data_type": [
+                        "Range"
+                    ],
+                    "constraints": "A single column range (not whole)",
+                    "if_blank": "Function Error"
+                },
+                "ColDefRange": {
+                    "description": "Column definition range: A single row designating the names of the columns of the data source. Only data from these columns will be inserted. Range cannot span multiple rows. Best practice is to use a range instead of whole rows.",
+                    "data_type": [
+                        "Range"
+                    ],
+                    "constraints": "Max 500 columns. Must be a single row.",
+                    "if_blank": "Will Error"
+                },
+                "FormatRange": {
+                    "description": "The range designating the formatting style (e.g. font, color) for the inserted data. Inserted data will be formated using this range as a template. Formulas can also be included, which will be used for the inserted data.",
+                    "data_type": [
+                        "Range"
+                    ],
+                    "constraints": "Must match the range dimensions defined in ColDefRange",
+                    "if_blank": "Uses the formatting in the first row defined in RowDefRange"
+                },
+                "Parameters": {
+                    "description": "The cells designating the parameters for the Data Portal. The values in these cells will filter the data that is inserted from the data source.",
+                    "data_type": [
+                        "Param()"
+                    ],
+                    "constraints": "The values must match the order of the parameters in the data source (The order can be verified using the <a href=\"https://docs.gointerject.com/wTroubleshoot/Reports.html#validation-report-for-interject-events\">Validation Report</a>)",
+                    "if_blank": "Data is not filtered"
+                },
+                "RetainRowColumns": {
+                    "description": "The list of column names that will be used as a key for retaining information within the inserted data range. This can be a comma delimited string or a cell reference of a single column name defined in ColDefRange. <br><br>All data in the column(s) matching the names in this argument will be retained after a clear or pull action. Consequently, such rows are also retained and not deleted. However, all data in columns that are not defined in this argument are blanked out after a clear action or overridden after a pull action.<br><br>This feature makes forecasting calculations to remain in the report instead of being cleared. For an example of this feature, see [Using the Retain Feature](/wGetStarted/L-Create-RetainFeature.html).",
+                    "data_type": [
+                        "String",
+                        "jCombine()",
+                        "jCombine_If()"
+                    ],
+                    "constraints": "Max 255 char",
+                    "if_blank": "All data within the TargetDataRange is cleared on a clear action"
+                },
+                "InsertNewRowsWithin": {
+                    "description": "True: If RetainRowsColumns is used, will insert new data in the TargetDataRange on a pull action by alphabetical order of the first key listed in RetainRowColumns. <br><br>False: Will insert new data below the already present data in the TargetDataRange on a pull action if valid columns are defined in RetainRowColumns.",
+                    "data_type": [
+                        "Boolean"
+                    ],
+                    "constraints": "",
+                    "if_blank": "False"
+                },
+                "UseTopSpacerRow": {
+                    "description": "True: Inserts data starting on the second row defined in TargetDataRange. (Retains top row on a pull or clear action.)<br><br>False: Inserts data starting on the first row defined in TargetDataRange.",
+                    "data_type": [
+                        "Boolean"
+                    ],
+                    "constraints": "",
+                    "if_blank": "False"
+                },
+                "PopulateDuplicateRowDefs": {
+                    "description": "True: Inserts data for each appearance of a RowDefItem in the sheet.<br><br>False: Will only populate the last instance of a duplicate RowDefItem.",
+                    "data_type": [
+                        "Boolean"
+                    ],
+                    "constraints": "",
+                    "if_blank": "True"
+                }
+            }
+        },
+        {
+            "formula": "ReportLookup",
+            "description": "The ReportLookup function pulls a single piece of data from a data source and inserts it into a single cell within a spreadsheet.",
+            "parameters": {
+                "Data Portal": {
+                    "description": "The name of the Interject Data Portal that will be used as the data source for this function. The helper function\u00a0[jDataPortal()](/wFunctions/jDataPortal.html)\u00a0can be used to further define which row to use from the Data Portal.",
+                    "data_type": [
+                        "String",
+                        "jDataPortal()"
+                    ],
+                    "constraints": "Max 255 char",
+                    "if_blank": "Function Error"
+                },
+                "TargetDataRange": {
+                    "description": "A single cell where the data will be inserted. If the Data Portal returns a list of data, this function will return the value from the first row.",
+                    "data_type": [
+                        "Cell Range"
+                    ],
+                    "constraints": "Single cell",
+                    "if_blank": "No data inserted"
+                },
+                "ColDefRange": {
+                    "description": "Column definition range: A single cell indicating the name of the column of the data source. Only data from this column will be inserted.",
+                    "data_type": [
+                        "Cell Range"
+                    ],
+                    "constraints": "Single cell",
+                    "if_blank": "Returns the first column from the data source"
+                },
+                "Parameters": {
+                    "description": "The cells designating the matching parameters for the Data Portal. The values in these cells will filter the data that is inserted from the data source.",
+                    "data_type": [
+                        "Param()"
+                    ],
+                    "constraints": "The values must match the order of the parameters in the data source (The order can be verified using the [Validation Report](/wTroubleshoot/Reports.html#validation-report-for-interject-events) )",
+                    "if_blank": "Data is not filtered"
+                }
+            }
+        },
+        {
+            "formula": "ReportSave",
+            "description": "The ReportSave function will use a designated Data Portal to save data in a worksheet to a data source. Typically this is done by setting up a DataPortal to run a procedure to take the designated data in the worksheet and save it to a data source. This function makes it convenient to upload local changes to the data source without having to edit it directly.\n\nFor an example of this function, see [Develop: Editing Data Save](/wDeveloper/L-Dev-EditingDataSave.html).",
+            "parameters": {
+                "DataPortal": {
+                    "description": "The name of the Interject Data Portal that will be used when this function is ran.",
+                    "data_type": [
+                        "String",
+                        "jDataPortal()"
+                    ],
+                    "constraints": "Max 255 char",
+                    "if_blank": "Function Error"
+                },
+                "RowDefRange": {
+                    "description": "A single column range that contains the unique row IDs that will be used to save the rows in this range via the data source. A corresponding column name for the unique ID must be included in this column in the row defined in ColDefRange.",
+                    "data_type": [
+                        "Range"
+                    ],
+                    "constraints": "Must be a single column",
+                    "if_blank": "Function Error"
+                },
+                "ColDefRange": {
+                    "description": "Column definition range: The range designating the names of the columns that will be saved via the data source.",
+                    "data_type": [
+                        "Range"
+                    ],
+                    "constraints": "",
+                    "if_blank": "Will save all columns"
+                },
+                "ResultsRange": {
+                    "description": "The range designating the names of the columns that will be returned via the data source. Typically this is information sent back from the Data Portal to be displayed after a save.",
+                    "data_type": [
+                        "Range"
+                    ],
+                    "constraints": "",
+                    "if_blank": "No return data is displayed"
+                },
+                "Parameters": {
+                    "description": "The cells designating the matching parameters for the Data Portal. The values in these cells will filter the data that is saved via the data source.",
+                    "data_type": [
+                        "Param()"
+                    ],
+                    "constraints": "The values must match the order of the parameters in the data source (The order can be verified using the [Validation Report](/wTroubleshoot/Reports.html#validation-report-for-interject-events) )",
+                    "if_blank": "Data is not filtered"
+                },
+                "AutoSaveFile": {
+                    "description": "True: Will save the workbook after a save action. (Saves at current save location without prompt. If file is not saved already, will save in the last used folder.)<br><br>False: Will not save the workbook after a save action.",
+                    "data_type": [
+                        "Boolean"
+                    ],
+                    "constraints": "",
+                    "if_blank": "False"
+                },
+                "CaptureAllRows": {
+                    "description": "True: Will override the value in RowDefRange and designate all rows to be saved via the data source.<br><br>False: Will use the value in RowDefRange to determine which rows are saved.",
+                    "data_type": [
+                        "Boolean"
+                    ],
+                    "constraints": "",
+                    "if_blank": "False"
+                }
+            }
+        },
+        {
+            "formula": "ReportDrill",
+            "description": "The ReportDrill function provides a convenient way to run another targeted function while at the same time, transferring contextual data for filtering to that function. It is widely used as a way to connect and pass information between workbooks and worksheets. Drilling takes a defined input and passes it in as a parameter to another workbook or worksheet, similar to hyperlinks on a web page. Depending on the types of input behind the hyperlink, more detailed and specific information can be viewed. The ReportDrill function can be structured in ways that make drilling data very powerful.\n\nIn order to set up a drill that targets a function in another workbook, it is necessary to set up a drill code in the\u00a0[Report Library](/wGetStarted/L-Drill-DrillCodes.html).\n\nFor an example of this function, see [Lab Drill: Customer Aging](/wGetStarted/L-Drill-CustomerAging.html).",
+            "parameters": {
+                "ReportCellToRun": {
+                    "description": "A cell address in a worksheet within your report that contains an Interject\u00a0[Data Pull Function](/wFunctions/Data-Functions-Landing.html). The Data Pull Functions of the sheet of this range will be ran upon a Drill action. (This parameter will be ignored if <b>ReportCodeToRun</b> is not blank)",
+                    "data_type": [
+                        "Range"
+                    ],
+                    "constraints": "",
+                    "if_blank": "Uses cell reference in ReportCodeToRun"
+                },
+                "ReportCodeToRun": {
+                    "description": "The name of the drill code that has been set up in the\u00a0[Report Library](/wGetStarted/L-Drill-DrillCodes.html)\u00a0that allows you to drill between workbooks.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "Max 255 char",
+                    "if_blank": "Uses cell reference in ReportCellToRun"
+                },
+                "TransferPairs": {
+                    "description": "A Pair or a PairGroup that contains a list of [Pairs](/wFunctions/Pair.html). The Pair function transfers values from one cell to another. This is typically used to filter the data you are drilling. This function will transfer the value in the Pair range (determined by the active cell you are drilling) to the target cell.",
+                    "data_type": [
+                        "Pair()",
+                        "PairGroup()"
+                    ],
+                    "constraints": "Max 34 Pairs",
+                    "if_blank": "Does not transfer anything"
+                },
+                "DrillName": {
+                    "description": "The name of this drill as will be displayed in the list of data drills.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "Max 255 char",
+                    "if_blank": "Uses the ReportCellToRun/ReportCodeToRun as the name"
+                }
+            }
+        },
+        {
+            "formula": "ReportMacro",
+            "description": "The ReportMacro function executes a designated VBA macro when triggered upon a designated [event](/wFunctions/Event-Functions-Landing.html). \n\nFor an example of this function, see [Lab Create: Using Report Macro](/wGetStarted/L-Create-ReportMacro.html)",
+            "parameters": {
+                "OnPullSaveOrBoth": {
+                    "description": "A string that defines what type of action(s) the event in OnClearRunOrBoth refer to: **Pull** action, **Save** action, or **Both** actions.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "\"pull\", \"save\", \"both\"",
+                    "if_blank": "Function Error"
+                },
+                "OnClearRunOrBoth": {
+                    "description": "A string indicating which event(s) will trigger this function: **Clear** event, **Run** event, or **Both** events.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "\"clear\", \"run\", \"both\"",
+                    "if_blank": "Function Error"
+                },
+                "MacroNameToRun": {
+                    "description": "The name of the macro this function will run.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "Macro in VBA cannot contain parameters",
+                    "if_blank": "Will Error"
+                }
+            }
+        },
+        {
+            "formula": "ReportRun",
+            "description": "The ReportRun function will run a designated report function(s) within a Workbook when triggered upon a designated [event](/wFunctions/Event-Functions-Landing.html). This is typically used to synchronize the running of functions in other sheets within the Workbook. \n\nFor an example of this function, see [Working with Pivot Tables](/wGetStarted/L-Create-PivotTable.html).",
+            "parameters": {
+                "ReportCellToRun": {
+                    "description": "A cell address in a worksheet within your report that contains an Interject\u00a0[Data](/wFunctions/Data-Functions-Landing.html)\u00a0or\u00a0[Event](/wFunctions/Event-Functions-Landing.html)\u00a0function.",
+                    "data_type": [
+                        "Range"
+                    ],
+                    "constraints": "",
+                    "if_blank": "Will not run a report"
+                },
+                "RunEntireWorksheet": {
+                    "description": "True: Will run all the report functions located in the sheet specified in ReportCellToRun.<br><br>False: Will only run the report function designated in ReportCellToRun.",
+                    "data_type": [
+                        "Boolean"
+                    ],
+                    "constraints": "",
+                    "if_blank": "True"
+                },
+                "OnAction": {
+                    "description": "A string indicating which event(s) will trigger this function (see table [below](#function-composition) for events).",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "\"pull\", \"save\", \"pullandsave\", \"pullclear\", \"saveclear\", \"pullandsaveclear\"",
+                    "if_blank": "\"pull\""
+                }
+            }
+        },
+        {
+            "formula": "ReportCalc",
+            "description": "The ReportCalc function executes a calculation of formulas in a worksheet or workbook when triggered upon a designated [event](/wFunctions/Event-Functions-Landing.html).\n\n<blockquote class=highlight_note>\n<b>Note:</b> The latest version of the Interject Add-In will automatically perform a recalculation on the workbook whenever the pull, save, or drill window is displayed.\n</blockquote>\n<br>\n\nFor an example of this function, see [Lab Create: Hiding Rows & Columns](/wGetStarted/L-Create-HideRowCol.html).",
+            "parameters": {
+                "OnPullSaveOrBoth": {
+                    "description": "A string that defines what type of action(s) the event in OnClearRunOrBoth refer to: **Pull** action, **Save** action, or **Both** actions.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "\"pull\", \"save\", \"both\"",
+                    "if_blank": "Function Error"
+                },
+                "OnClearRunOrBoth": {
+                    "description": "A string indicating which event(s) will trigger this function: **Clear** event, **Run** event, or **Both** events.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "\"clear\", \"run\", \"both\"",
+                    "if_blank": "Function Error"
+                },
+                "SheetOrWorkBook": {
+                    "description": "A string indicating to perform the calculation on a designated sheet or the entire workbook.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "\"sheet\", \"workbook\"",
+                    "if_blank": "Function Error"
+                },
+                "SheetName": {
+                    "description": "The name of the sheet that the calculation will be performed on if SheetOrWorkBook = \"sheet\".",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "Max 255 char",
+                    "if_blank": "Will run calculations on current sheet"
+                },
+                "Disable": {
+                    "description": "True: This function will be disabled.<br><br>False: This function will be enabled.",
+                    "data_type": [
+                        "Boolean"
+                    ],
+                    "constraints": "",
+                    "if_blank": "False"
+                }
+            }
+        },
+        {
+            "formula": "ReportDefaults",
+            "description": "The ReportDefaults function will copy a value from a range to another range when triggered upon a designated [event](/wFunctions/Event-Functions-Landing.html).\n\nThis function can be used to restore default values to a report after a desired action. For example, the values in the parameters section can be cleared after a clear event or set to a particular value. It can also be used to set initial parameters before a report is ran.\n\nFor an example of this function, see [Lab Create: Customer Aging Detail](/wGetStarted/L-Create-CustomerAgingDetail.html#reportdefaults).",
+            "parameters": {
+                "OnPullSaveOrBoth": {
+                    "description": "A string that defines what type of action(s) the event in OnClearRunOrBoth refer to: **Pull** action, **Save** action, or **Both** actions.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "\"pull\", \"save\", \"both\"",
+                    "if_blank": "Function Error"
+                },
+                "OnClearRunOrBoth": {
+                    "description": "A string indicating which event(s) will trigger this function: **Clear** event, **Run** event, or **Both** events.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "\"clear\", \"run\", \"both\"",
+                    "if_blank": "Function Error"
+                },
+                "TransferPairs": {
+                    "description": "A single Pair or PairGroup that contains a list of Pairs. The Pair function transfers values from one cell to another.",
+                    "data_type": [
+                        "Pair()",
+                        "PairGroup()"
+                    ],
+                    "constraints": "Max 34 Pairs",
+                    "if_blank": "Does not transfer any values"
+                }
+            }
+        },
+        {
+            "formula": "ReportGrouping",
+            "description": "The ReportGrouping function will collapse or expand groups within the sheet when triggered upon a designated [event](/wFunctions/Event-Functions-Landing.html). This function is helpful in grouping or ungrouping sections in a [ReportVariable](/wFunctions/ReportVariable.html) after it is generated.\n\nFor an example of this function, see [Lab Create: Inventory Variable Report](/wGetStarted/L-Create-InventoryVariable.html#reportgrouping).",
+            "parameters": {
+                "OnPullSaveOrBoth": {
+                    "description": "A string that defines what type of action(s) the event in OnClearRunOrBoth refer to: **Pull** action, **Save** action, or **Both** actions.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "\"pull\", \"save\", \"both\"",
+                    "if_blank": "Function Error"
+                },
+                "OnClearRunOrBoth": {
+                    "description": "A string indicating which event(s) will trigger this function: **Clear** event, **Run** event, or **Both** events.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "\"clear\", \"run\", \"both\"",
+                    "if_blank": "Function Error"
+                },
+                "RowOrColumnGroup": {
+                    "description": "A string indicating if row groupings will be acted upon or column groupings.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "\"row\", \"column\"",
+                    "if_blank": "Function Error"
+                },
+                "GroupLevel": {
+                    "description": "A string indicating to expand or collapse all groupings or an integer from 1 to 8 indicating what level the groups will be set to.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "\"expand\", \"collapse\", or 1 through 8",
+                    "if_blank": "Function Error"
+                },
+                "Disabled": {
+                    "description": "True: This function will be disabled.<br><br>False: This function will be enabled.",
+                    "data_type": [
+                        "Boolean"
+                    ],
+                    "constraints": "",
+                    "if_blank": "False"
+                }
+            }
+        },
+        {
+            "formula": "ReportHideRowOrColumn",
+            "description": "The ReportHideRowOrColumn function will hide a designated row or column when triggered upon a designated [event](/wFunctions/Event-Functions-Landing.html). If a cell within the defined range = \"hide\", the function will hide that row or column when triggered. If the defined range is a single row, the function will hide the column. If this range is a single column, the function will hide the row.\n\nTypically this function is used to hide data that is impertinent to the current purpose of the report and/or filters being used. For example, a user can set up a report to hide invoices with zero balances or to show only accounts with a delinquent status, etc. (Note: the rows/columns are not actually hidden in the sense that Excel hides them. They are hidden from view by setting their width/height to 0. A user can simply expand the hidden rows by expanding the width.)\n\nFor an example of this function, see [Lab Create: Hiding Rows & Columns](/wGetStarted/L-Create-HideRowCol.html).",
+            "parameters": {
+                "OnPullSaveOrBoth": {
+                    "description": "A string that defines what type of action(s) the event in OnClearRunOrBoth refer to: **Pull** action, **Save** action, or **Both** actions.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "\"pull\", \"save\", \"both\"",
+                    "if_blank": "Function Error"
+                },
+                "OnClearRunOrBoth": {
+                    "description": "A string indicating which event(s) will trigger this function: **Clear** event, **Run** event, or **Both** events.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "\"clear\", \"run\", \"both\"",
+                    "if_blank": "Function Error"
+                },
+                "RowOrColumnGroup": {
+                    "description": "A single row or column where the function will look for the value of \"hide\". If a cell in this range = \"hide\", the function will hide that row or column. If this range is a single row, the function will hide the column. If this range is a single column, the function will hide the row.",
+                    "data_type": [
+                        "Range"
+                    ],
+                    "constraints": "Must be a single row or single column",
+                    "if_blank": "Function Error"
+                },
+                "Disabled": {
+                    "description": "True: This function will be disabled.<br><br>False: This function will be enabled.",
+                    "data_type": [
+                        "Boolean"
+                    ],
+                    "constraints": "",
+                    "if_blank": "False"
+                }
+            }
+        },
+        {
+            "formula": "jDropdown",
+            "description": "The jDropdown function returns data from a Data Portal that can be displayed in a dropdown window for the user to select and insert into a designated cell within the spreadsheet. It is typically used to easily insert a valid parameter into the spreadsheet to filter the data returned by a report function after a pull action. When this function is linked to a hyperlink, the user can simply click on the hyperlink to display a list of valid parameters and insert one or more into the spreadsheet.\n\nFor an example of this function, see [jDropdown](/wGetStarted/L-Create-Dropdowns.html).",
+            "parameters": {
+                "Data Portal": {
+                    "description": "The name of the Interject Data Portal that will be used as the data source for this function. A <a href=\"https://docs.gointerject.com/wGetStarted/L-Create-Dropdowns.html#creating-a-custom-jdropdown-list\">Custom List</a> may be entered instead of a Data Portal.",
+                    "data_type": [
+                        "String",
+                        "jDataPortal()"
+                    ],
+                    "constraints": "Max 255 char",
+                    "if_blank": "Function Error"
+                },
+                "Parameters": {
+                    "description": "The cells designating the parameters for the Data Portal. The values in these cells will filter the data that is inserted from the data source.",
+                    "data_type": [
+                        "Param()"
+                    ],
+                    "constraints": "The values must match the order of the parameters in the data source (The order can be verified using the [Validation Report](/wTroubleshoot/Reports.html#validation-report-for-interject-events) )",
+                    "if_blank": "Data is not filtered"
+                },
+                "MultiSelect": {
+                    "description": "True: Will enable the option to select multiple entries to insert.<br><br>False: Will only enable one entry to be selected.",
+                    "data_type": [
+                        "Boolean"
+                    ],
+                    "constraints": "",
+                    "if_blank": "False"
+                },
+                "Target Cell": {
+                    "description": "The range where the selected entry will be inserted (will insert into every cell in this range).",
+                    "data_type": [
+                        "Range"
+                    ],
+                    "constraints": "",
+                    "if_blank": "Function Error"
+                },
+                "Value Column Name": {
+                    "description": "The name of the column to be used for the entry or entries that will be inserted into the Target Cell.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "Max 255 char",
+                    "if_blank": "Function Error"
+                },
+                "Display Column Name": {
+                    "description": "Then name of the column from the Data Portal that will be displayed in the drop down list.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "Max 255 char",
+                    "if_blank": "Uses Value Column Name"
+                },
+                "Delimiter": {
+                    "description": "The string that will be used as the delimiter when inserting multiple selections.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "Max 255 char",
+                    "if_blank": "\",\""
+                },
+                "Instruction Text": {
+                    "description": "The string that will be displayed in the popup window under the window title.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "Max 255 char",
+                    "if_blank": "\"Please select the desired options below.\""
+                }
+            }
+        },
+        {
+            "formula": "jFocus",
+            "description": "The jFocus function will move the cursor and select a targeted range after a freeze panes action using Interject's Freeze/UnFreeze Panes action. The [jFreezePanes](/wFunctions/jFreezePanes.html) function must be set up for this to trigger. The Freeze/UnFreeze Panes action can be found in [Quick Tools](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools) on the Interject Ribbon Menu.\n\nFor an example of this function, see [Lab Create: Customer Aging](/wGetStarted/L-Create-CustomerAging.html).",
+            "parameters": {
+                "Target": {
+                    "description": "The range that will be selected after a freeze panes action.",
+                    "data_type": [
+                        "Range"
+                    ],
+                    "constraints": "",
+                    "if_blank": "Will select the cell defined in jFreezePanes FreezePanesCell argument"
+                }
+            }
+        },
+        {
+            "formula": "jFreezePanes",
+            "description": "The jFreezePanes function freezes a designated pane so the user can scroll through data and still keep the frozen pane in view. The function also hides a designated range of the report, typically the configuration section of an Interject report. This provides the user with a more user-friendly simplified viewing experience.\n\nThis action can be triggered by the Freeze/UnFreeze Panes found in [Quick Tools](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools) on the Interject Ribbon Menu. There is also an option there to Freeze All Tabs, which will freeze all sheets containing the jFreezePanes function (it will not unfreeze the panes).\n\nFor an example of this function, see [Lab Create: Customer Aging](/wGetStarted/L-Create-CustomerAging.html).",
+            "parameters": {
+                "FreezePanesCell": {
+                    "description": "A range of cells, the first row of which will be used as the last row frozen in place. All rows after this row will be unfrozen and able to scroll freely after a freeze panes action. This is typically the header row of column names above the targeted data that is or will be inserted. This will allow the header row to stay in view while scrolling through the data.  Best practice is to use a range instead of whole rows.",
+                    "data_type": [
+                        "Range"
+                    ],
+                    "constraints": "",
+                    "if_blank": "Function Error"
+                },
+                "AnchorViewCell": {
+                    "description": "A range of cells, the first row of which will be the top most displayed row after a freeze panes action. This is typically the row just below the Interject's configuration area.  Best practice is to use a range instead of whole rows.",
+                    "data_type": [
+                        "Range"
+                    ],
+                    "constraints": "",
+                    "if_blank": "Will display all rows"
+                }
+            }
+        },
+        {
+            "formula": "jCombine",
+            "description": "The jCombine function concatenates a range or multiple ranges of cells into a single string using a designated delimiter. Blank cells are skipped.\n\nThis function can be used as a standalone function and does not need to be embedded in another function.\n\nFor an example of this function, see [Lab Create: Using the Retain Feature](/wGetStarted/L-Create-RetainFeature.html).",
+            "parameters": {
+                "Selected Range": {
+                    "description": "A range or multiple ranges that will be concatenated. If multiple ranges are selected, they need to be enclosed in parenthesis and separated by a comma (e.g. \"(a2,a14:b15,c6)\"). Concatenation happens row by row (i.e. each column in the row concatenates before moving to the next row).",
+                    "data_type": [
+                        "Range",
+                        "(Range, Range, \u2026)"
+                    ],
+                    "constraints": "Max 7 ranges",
+                    "if_blank": "Function Error"
+                },
+                "Delimiter": {
+                    "description": "The string that will be used as the delimiter when selecting multiple cells.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "Max 255 char",
+                    "if_blank": "\",\""
+                }
+            }
+        },
+        {
+            "formula": "jCombineIF",
+            "description": "The jCombineIF function concatenates a range or multiple ranges of cells into a single string using a designated delimiter if a certain condition is met. Blank cells are skipped.\n\nThis function can be used as a standalone function and does not need to be embedded in another function.",
+            "parameters": {
+                "CriteriaRange": {
+                    "description": "A range designated to be the criteria range. Each cell in this range will be compared to the value in the CriteriaValue argument. If the cell matches, the corresponding cell in the SelectedRange will be concatenated.",
+                    "data_type": [
+                        "Range"
+                    ],
+                    "constraints": "Must match the dimensions of SelectedRange",
+                    "if_blank": "Function Error"
+                },
+                "SelectedRange": {
+                    "description": "A range that will be concatenated. Concatenation happens row by row (i.e. each column in the row concatenates before moving to the next row).",
+                    "data_type": [
+                        "Range"
+                    ],
+                    "constraints": "Must match the dimensions of CriteriaRange",
+                    "if_blank": "Function Error"
+                },
+                "CriteriaValue": {
+                    "description": "A value designated to be the criteria (the first cell is used if a range is entered). If the value here matches a cell in the CriteriaRange argument, the corresponding cell in the SelectedRange will be concatenated.",
+                    "data_type": [
+                        "Range",
+                        "String",
+                        "Boolean"
+                    ],
+                    "constraints": "Max 255 char",
+                    "if_blank": "Does not concatenate any cells"
+                },
+                "Delimiter": {
+                    "description": "The string that will be used as the delimiter when selecting multiple cells.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "Max 255 char",
+                    "if_blank": "\",\""
+                }
+            }
+        },
+        {
+            "formula": "jCombineSmart",
+            "description": "The jCombineSmart function concatenates a range or multiple ranges of cells into a single string using a designated delimiter. Blank cells and duplicate cells are skipped and the resulting concatenation is sorted. This function can also be set to interpret the input as numbers so that sorting can be numerically ascending. In addition, it applies continuous ranges where possible. For example, \"2,6,6,1,3\" becomes \"1..3,6\".\n\nThis function can be used as a standalone function and does not need to be embedded in another function.",
+            "parameters": {
+                "Selected Range": {
+                    "description": "A range or multiple ranges that will be concatenated. If multiple ranges are selected, they need to be enclosed in parenthesis and separated by a comma (e.g. \"(a2,a14:b15,c6)\"). Concatenation happens row by row (i.e. each column in the row concatenates before moving to the next row).",
+                    "data_type": [
+                        "Range",
+                        "(Range, Range, \u2026)"
+                    ],
+                    "constraints": "Max 7 ranges",
+                    "if_blank": "Function Error"
+                },
+                "Delimiter": {
+                    "description": "The string that will be used as the delimiter when selecting multiple cells.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "Max 255 char",
+                    "if_blank": "\",\""
+                },
+                "Range Code": {
+                    "description": "The text displayed as the range operator for continuous ranges.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "Max 255 char",
+                    "if_blank": "\"..\""
+                },
+                "Convert To Numeric": {
+                    "description": "True: Trims inputs of leading zeros and converts to a numeric value.<br><br>False: Treats inputs as text.",
+                    "data_type": [
+                        "Boolean"
+                    ],
+                    "constraints": "",
+                    "if_blank": "False"
+                }
+            }
+        },
+        {
+            "formula": "jColumnDef",
+            "description": "The jColumnDef function defines a column based on one or more parameters. Each parameter represents a segment. The segments can be set to filter the data that this column represents. Typically this function is used with a Data Pull function for a financial report.\n\nThe jColumnDef function utilizes a Data Portal to interact with the segments. This Data Portal is specifically setup for the particular needs of the company using Interject. The segments are thus customizable. For most companies, the Interject [FinCube](/wIndex/FinCubeTheFinancialCube.html) Data Portal will suffice for their reporting needs.\n\nFor an example of this function, see [Lab Create: Financial Variable](/wGetStarted/L-Create-FinancialVariable.html).",
+            "parameters": {
+                "Source (Segment12)": {
+                    "description": "The source of the data (e.g. \"Actual\", \"Budget\", \"Projection\", etc.).",
+                    "data_type": [
+                        "String",
+                        "Range"
+                    ],
+                    "constraints": "Max 255 char or single cell",
+                    "if_blank": "Does not filter data"
+                },
+                "Period (Segment9)": {
+                    "description": "The period of the data (e.g. 1-12 for a month of the year, 1-4 for a quarter). Also accepts YYYY-MM format.",
+                    "data_type": [
+                        "String",
+                        "Range"
+                    ],
+                    "constraints": "Max 255 char or single cell",
+                    "if_blank": "Does not filter data"
+                },
+                "Year (Segment10)": {
+                    "description": "The year of the data. Also accepts YYYY-MM format.",
+                    "data_type": [
+                        "String",
+                        "Range"
+                    ],
+                    "constraints": "Max 255 char or single cell",
+                    "if_blank": "Does not filter data"
+                },
+                "Version (Segment11)": {
+                    "description": "The version of the data.",
+                    "data_type": [
+                        "String",
+                        "Range"
+                    ],
+                    "constraints": "Max 255 char or single cell",
+                    "if_blank": "Does not filter data"
+                },
+                "Customizable (Segment1-8)": {
+                    "description": "Configurable segment.",
+                    "data_type": [
+                        "Custom"
+                    ],
+                    "constraints": "Custom",
+                    "if_blank": "Custom"
+                },
+                "BalanceType": {
+                    "description": "A string indicating the balance type.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "\"MTD\", \"QTD\", \"YTD\", \"QTR\"",
+                    "if_blank": "\"MTD\""
+                }
+            }
+        },
+        {
+            "formula": "jRangeTag",
+            "description": "The jRangeTag function simply tags a designated range with a name. This is used to support certain automated processes unique to Interject functions, for example report distribution.\n\nFor an example of this function, see [Lab Create: Basic Distribution](/wGetStarted/L-Export-BasicDist.html).",
+            "parameters": {
+                "Tag": {
+                    "description": "The name to tag the range",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "Max 255 char",
+                    "if_blank": "Will fail"
+                },
+                "Range": {
+                    "description": "The range to be associated with the Tag",
+                    "data_type": [
+                        "Range"
+                    ],
+                    "constraints": "",
+                    "if_blank": "Will fail"
+                }
+            }
+        },
+        {
+            "formula": "jWorkbookProperty",
+            "description": "The jWorkbookProperty function extracts information from the properties of the workbook.\n\nThis function can be used as a standalone function and does not need to be embedded in another function.\n\nFor an example of this function, see [Lab Create: Inventory Fixed](/wGetStarted/L-Create-InventoryFixed.html#jworkbookproperty).",
+            "parameters": {
+                "PropertyName": {
+                    "description": "A string value indicating which property to extract.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "Max 255 char",
+                    "if_blank": "Nothing is extracted"
+                }
+            }
+        },
+        {
+            "formula": "jSetting",
+            "description": "The jSetting function is a simple way to create a JSON Tag/Value pair that can be used internally by the Interject system.\n\nThis function can be used as a standalone function and does not need to be embedded in another function.\n\nFor an example of this function, see [Appending a Prefix](/wIndex/QuickTools-Names.html#appending-a-prefix-andor-suffix-to-a-name).",
+            "parameters": {
+                "Tag": {
+                    "description": "The title or tag of the setting.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "Max 255 char",
+                    "if_blank": "Empty string"
+                },
+                "Value": {
+                    "description": "The value of the setting.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "Max 255 char",
+                    "if_blank": "Empty string"
+                }
+            }
+        },
+        {
+            "formula": "Pair",
+            "description": "The Pair function transfers values from one cell to another. It is typically used in conjunction with the [PairGroup](/wFunctions/PairGroup.html) function. Values are transferred upon a designated Interject event (e.g. a drill or as defined in the function it is embedded in). It is best practice to use the PairGroup function even when only entering one Pair.\n\nFor an example of this function, see [Lab Drill: Customer Aging](/wGetStarted/L-Drill-CustomerAging.html).",
+            "parameters": {
+                "From": {
+                    "description": "A string or a single cell indicating the value to be transferred. If a range is entered, it will designate a column of possible cells, one of which will be transferred. The cell to be transferred is determine by the row of the active cell when this function is triggered. For example, if the range starts with column H and the active cell is in row 34, the cell H34 will be transferred.",
+                    "data_type": [
+                        "String",
+                        "Range"
+                    ],
+                    "constraints": "Max 255 char",
+                    "if_blank": "Will not transfer values"
+                },
+                "Target": {
+                    "description": "A range indicating where the value in From will be transferred to.",
+                    "data_type": [
+                        "Range"
+                    ],
+                    "constraints": "",
+                    "if_blank": "Will Error"
+                },
+                "RequireValue": {
+                    "description": "True: [ReportDrill](/wFunctions/ReportDrill.html) cannot be ran if the value in the From argument is blank.<br><br>False: ReportDrill can be ran if the value in the From argument is blank.",
+                    "data_type": [
+                        "Boolean"
+                    ],
+                    "constraints": "",
+                    "if_blank": "True"
+                },
+                "ScopeRange": {
+                    "description": "**Deprecated**: This function for the current version of Interject performs the same no matter what value is entered in this argument.",
+                    "data_type": [
+                        "Range"
+                    ],
+                    "constraints": "",
+                    "if_blank": "N/A"
+                }
+            }
+        },
+        {
+            "formula": "PairGroup",
+            "description": "The PairGroup function will active all [Pair()](/wFunctions/Pair.html) functions defined within. It is best practice to use the PairGroup function even when only entering one Pair.\n\nFor an example of this function, see [Lab Drill: Customer Aging](/wGetStarted/L-Drill-CustomerAging.html).",
+            "parameters": {
+                "Pair": {
+                    "description": "The Pair function transfers values from one cell to another upon a designated action or event (e.g. a drill or as defined in the function it is embedded in). Multiple Pairs can be added separated by a comma.",
+                    "data_type": [
+                        "Pair()"
+                    ],
+                    "constraints": "Max 34 Pairs",
+                    "if_blank": "No Pair function will be activated"
+                }
+            }
+        },
+        {
+            "formula": "Param",
+            "description": "The Param function transfers values as parameters to the Data Portal. The values must match the order of the parameters in the data source (The order can be verified using the [Validation Report](/wTroubleshoot/Reports.html#validation-report-for-interject-events) ).\n\nFor an example of this function, see [Lab Drill: Customer Aging](/wGetStarted/L-Drill-CustomerAging.html).",
+            "parameters": {
+                "Value1": {
+                    "description": "A string or single cell indicating the value to be transferred as a parameter to the Data Portal. Multiple values can be entered separated by a comma.",
+                    "data_type": [
+                        "String",
+                        "Single Cell"
+                    ],
+                    "constraints": "Max 255 char or must be a single cell",
+                    "if_blank": "Will not transfer value"
+                },
+                "Val2 - Val40": {
+                    "description": "A string or single cell indicating the value to be transferred as a parameter to the Data Portal. Multiple values can be entered separated by a comma.",
+                    "data_type": [
+                        "String",
+                        "Single Cell"
+                    ],
+                    "constraints": "Max 255 char or must be a single cell",
+                    "if_blank": "Will not transfer value"
+                }
+            }
+        },
+        {
+            "formula": "jAcct",
+            "description": "A helper function that specifies filters for up to six segments of a Chart of Accounts.",
+            "parameters": {
+                "Segment1-6": {
+                    "description": "desc",
+                    "data_type": [
+                        "Cell",
+                        "String"
+                    ],
+                    "constraints": "Max 255 char",
+                    "if_blank": ""
+                }
+            }
+        },
+        {
+            "formula": "",
+            "description": "jCell retrieves data based on the provided parameters. The first argument is typically a [jAcct()](/wFunctions/jAcct.html) lookup when a company has more than one segment to filter. The retrieved data is always summarized into a single value. \n\nFilter text for up to six segments of a chart of accounts. Use the Interject function [jAcct()](/wFunctions/jAcct.html) when more than a single segment is used as a filter.",
+            "parameters": {}
+        },
+        {
+            "formula": "jDesc",
+            "description": "This function is used to look up a context description based on a specific segment.",
+            "parameters": {
+                "Value": {
+                    "description": "A cell that contains a value to lookup.",
+                    "data_type": [
+                        "Cell"
+                    ],
+                    "constraints": "",
+                    "if_blank": "Function Error"
+                },
+                "SegmentNumber": {
+                    "description": "The Segment number to check the value against.",
+                    "data_type": [
+                        "Range",
+                        "String",
+                        "Boolean"
+                    ],
+                    "constraints": "Max 255 char",
+                    "if_blank": "Function error"
+                }
+            }
+        }
+    ]
+}

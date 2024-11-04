@@ -3,15 +3,19 @@ title: Diagnostics - Apply Special Features
 filename: "Diagnostics-SpecialFeatures.md"
 layout: custom
 keywords: [Diagnostics, Apply Special Features, Configuration, Config, animations, bug fix]
-headings: ["Overview", "BugFix1: Microsoft Animations", "BugFix2: Microsoft Repaint"]
-links: []
+headings: ["Overview", "BugFix1: Microsoft Animations", "BugFix2: Microsoft Repaint", "Macro Security Settings", "Webview2/Browser Login"]
+links: ["/wDeveloper/MacroSecurity.html"]
 image_dir: "DiagnosticsSpecialFeatures"
 images: [
     {file: "ApplySpecialFeatures", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""}, 
     {file: "BugFix1On", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""}, 
     {file: "BugFix1Off", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""}, 
     {file: "BugFix2On", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""}, 
-    {file: "BugFix2Off", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""}
+    {file: "BugFix2Off", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""},
+    {file: "MacroSecuritySettings", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""},
+	{file: "LoginCompare", type: "png", site: "Add-in", cat: "Login", sub: "", report: "", ribbon: "", config: ""},
+	{file: "Webview2True", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""},
+	{file: "Webview2False", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Apply Special Features", report: "", ribbon: "", config: ""}
     ]
 description: The "Apply Special Features" in the Interject Diagnostics Pane allows users to apply certain configurations and bug fixes.
 ---
@@ -70,7 +74,7 @@ BugFix2=OFF
 
 ## Macro Security Settings
 
-These are displayed for your reference here. For more on information, see [Macro Security](/wIndex/MacroSecurity.html)
+These are displayed for your reference here. For more on information, see [Macro Security](/wDeveloper/MacroSecurity.html)
 
 ![](/images/DiagnosticsSpecialFeatures/MacroSecuritySettings.png)
 <br>

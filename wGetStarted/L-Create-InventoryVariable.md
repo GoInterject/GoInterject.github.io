@@ -4,7 +4,7 @@ filename: "L-Create-InventoryVariable.md"
 layout: custom
 keywords: [variable, report, inventory, ReportGrouping, walkthrough]
 headings: ["Overview", "Report Variable", "Final Touches", "ReportGrouping()"]
-links: ["/wIndex/ReportVariable.html", "/wAbout/Inventory-Reports.html", "/wAbout/Report-Library-Basics.html", "/wIndex/Param.html", "/wIndex/QuickTools-Panes.html", "/wIndex/ReportGrouping.html", "/wIndex/Event-Functions-Landing.html", "/wAbout/ReportLibraryLinks.html"]
+links: ["/wFunctions/ReportVariable.html", "/wAbout/Inventory-Reports.html", "/wAbout/Report-Library-Basics.html", "/wFunctions/Param.html", "/wIndex/QuickTools-Panes.html", "/wFunctions/ReportGrouping.html", "/wFunctions/Event-Functions-Landing.html", "/wAbout/ReportLibraryLinks.html"]
 image_dir: "L-Create-InventoryVar"
 images: [
 	{file: "01", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "Interject Inventory Demo", ribbon: "Simple", config: ""}, 
@@ -39,7 +39,7 @@ description: The ReportVariable() function directs data into multiple specified 
 
 ## Overview
 
-The [ReportVariable()](/wIndex/ReportVariable.html) function directs data into multiple specified ranges of a report that can grow and shrink with the data. It is ideal for a financial report or any report that has subtotaled sections.  In this example, you will use the report seen in the [Inventory Walkthrough](/wAbout/Inventory-Reports.html). Once completed all rows of the report **Inventory By Category with Detail** will be populated with a single ReportVariable() function.
+The [ReportVariable()](/wFunctions/ReportVariable.html) function directs data into multiple specified ranges of a report that can grow and shrink with the data. It is ideal for a financial report or any report that has subtotaled sections.  In this example, you will use the report seen in the [Inventory Walkthrough](/wAbout/Inventory-Reports.html). Once completed all rows of the report **Inventory By Category with Detail** will be populated with a single ReportVariable() function.
 
 <blockquote class=lab_info>
   If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 3 Creating Reports > Lab 3.4 Inventory Variable Report.
@@ -138,7 +138,7 @@ You can see that all the rows below **Chai** in the Product Name column are bold
 ![](/images/L-Create-InventoryVar/17.png)
 <br>
 
-**Step 12:** Now, add the filters.  In this Data Portal and report there are two filter options, **Min Qty In Stock** and **Product** **Name**. Open the Function Wizard again on cell C4 and enter  **Param( I14,  I15  )** into the  **Parameter** argument. This configures Interject to look for the filters in cells I14 and I15. The order of cell references appearing in the [Param()](/wIndex/Param.html) function must coincide with the order that was originally setup for the Data Portal.
+**Step 12:** Now, add the filters.  In this Data Portal and report there are two filter options, **Min Qty In Stock** and **Product** **Name**. Open the Function Wizard again on cell C4 and enter  **Param( I14,  I15  )** into the  **Parameter** argument. This configures Interject to look for the filters in cells I14 and I15. The order of cell references appearing in the [Param()](/wFunctions/Param.html) function must coincide with the order that was originally setup for the Data Portal.
 
 ![](/images/L-Create-InventoryVar/18.png)
 <br>
@@ -162,7 +162,7 @@ Once the panes are frozen using Interject's [Freeze Panes](/wIndex/QuickTools-Pa
 
 ### ReportGrouping()
 
-**Step 1:** The [ReportGrouping()](/wIndex/ReportGrouping.html) function will collapse or expand all the groups after an Interject [event](/wIndex/Event-Functions-Landing.html). In this case, we will set up ReportGrouping to collapse the groups after a pulling the data (Pull-Run event).
+**Step 1:** The [ReportGrouping()](/wFunctions/ReportGrouping.html) function will collapse or expand all the groups after an Interject [event](/wFunctions/Event-Functions-Landing.html). In this case, we will set up ReportGrouping to collapse the groups after a pulling the data (Pull-Run event).
 
 Click cell **C5** and enter **=ReportGrouping()** and then click the Function Wizard button.
 

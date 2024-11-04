@@ -4,7 +4,7 @@ filename: "Portal-Overview.md"
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: ["User Profiles"]
-links: ["https://portal.gointerject.com/login.html"]
+links: ["https://portal.gointerject.com/login.html", "/images/Login/03.png", "/images/UserProfile/01.png", "/images/UserProfile/03.png"]
 image_dir: "Login"
 images: [
 	{file: "03", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 

@@ -4,7 +4,7 @@ filename: "2023-12_ReleaseNotes.md"
 layout: custom
 keywords: [change log, updates, versions, history, what's new]
 headings: ["December 2023", "Excel Add-in v2.5.0.23", "Portal Site", "Interject Platform", "Documentation Updates"]
-links: ["/wIndex/ReportVariable.html#function-arguments", "/wDeveloper/ConnectionManager.html", "/schemas/custom_search", "/wDeveloper/L-Dev-ChangelogDataSave.html", "/wDeveloper/CustomItems.html", "/schemas/custom_search", "/bApps/schemas/custom_search", "/wTroubleshoot/RowDefClear.html"]
+links: ["/wFunctions/ReportVariable.html#function-arguments", "/wDeveloper/ConnectionManager.html", "/schemas/custom_search.html", "/wDeveloper/L-Dev-ChangelogDataSave.html", "/wDeveloper/CustomItems.html", "/schemas/custom_search.html", "/bApps/schemas/custom_search.html", "/wTroubleshoot/RowDefClear.html"]
 image_dir: ""
 images: []
 description: Release notes for this month's updates
@@ -17,7 +17,7 @@ description: Release notes for this month's updates
 
 _Released 12/18/2023_
 
-* ✅ New parameter for ReportVariable - PopulateDuplicateRowDefs allows control of behavior for duplicate keys in RowDefNames - [See docs](/wIndex/ReportVariable.html#function-arguments)
+* ✅ New parameter for ReportVariable - PopulateDuplicateRowDefs allows control of behavior for duplicate keys in RowDefNames - [See docs](/wFunctions/ReportVariable.html#function-arguments)
 
 * ✅ Connection Manager now shows all identity providers for your company - [See docs](/wDeveloper/ConnectionManager.html)
 
@@ -45,9 +45,9 @@ _Released 12/12/2023_
 
 | Date | Type | Page | Changes |
 |---|---|---|---|
-| 12/7 | New | [Doc Search](/schemas/custom_search) | New search functionality |
+| 12/7 | New | [Doc Search](/schemas/custom_search.html) | New search functionality |
 | 12/8 | New | [Develop: Change Log Data Save](/wDeveloper/L-Dev-ChangelogDataSave.html) | New page |
 | 12/15 | New | [Custom Items](/wDeveloper/CustomItems.html) | New page |
-| 12/28 | Update | [Doc Search](/schemas/custom_search) | Can search top hits |
-| 12/28 | New | [Doc Search (Apps)](/bApps/schemas/custom_search) | New search functionality for Apps |
+| 12/28 | Update | [Doc Search](/schemas/custom_search.html) | Can search top hits |
+| 12/28 | New | [Doc Search (Apps)](/bApps/schemas/custom_search.html) | New search functionality for Apps |
 | 12/28 | New | [RowDef Data Clear](/wTroubleshoot/RowDefClear.html) | New page |

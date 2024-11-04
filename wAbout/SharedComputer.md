@@ -3,7 +3,7 @@ title: Installing - Shared Computer
 filename: "SharedComputer.md"
 layout: custom
 keywords: [install, Multiple Users, Server, network]
-headings: ["Overview", "Installing Interject on Multi-User Systems"]
+headings: ["Overview", "Installing Interject on Multi-User Systems", "File Locations"]
 links: ["https://portal.gointerject.com/login.html", "https://portal.gointerject.com/invite.html?mode=create", "/wPortal/DownloadInterject.html", "/wAbout/Logging-In.html", "mailto:help@gointerject.com"]
 image_dir: "SharedComputer"
 images: [

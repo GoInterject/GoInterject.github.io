@@ -1,9 +1,9 @@
 ---
 title: General Troubleshooting
-filename: "GeneralToubleshooting.md"
+filename: "GeneralTroubleshooting.md"
 layout: custom
 keywords: [help, support, diagnose, conflict, tech, issue, problem]
-headings: ["Overview"]
+headings: ["Overview", "Interject", "Spread of Issue", "Frequency of Issue", "System Environment", "Recent Changes", "Replication Steps", "Authentication and Permissions", "Firewall/Networking", "Antivirus Conflicts", "Error Messages", "Third-Party Add-ins", "Temporary Files and Cache"]
 links: []
 image_dir: ""
 images: []

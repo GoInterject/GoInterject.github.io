@@ -4,7 +4,7 @@ filename: "L-Drill-DrillCodes.md"
 layout: custom
 keywords: [data drill codes, report library, report]
 headings: ["Overview", "Opening the Report and Drilling", "Uploading the Report With a Drill Code", "Adding the Drill Code to the ReportDrill Function", "Running the Drill"]
-links: ["/wGetStarted/Drilling-Between-Reports.html", "/wAbout/Report-Library-Basics.html", "/wGetStarted/L-Drill-CustomerAging.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wAbout/ReportLibraryLinks.html", "/wIndex/ReportDrill.html", "#opening-the-report-and-drilling", "/wIndex/QuickTools-Panes.html#freezeunfreeze-panes"]
+links: ["/wGetStarted/Drilling-Between-Reports.html", "/wAbout/Report-Library-Basics.html", "/wGetStarted/L-Drill-CustomerAging.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wAbout/ReportLibraryLinks.html", "/wFunctions/ReportDrill.html", "#opening-the-report-and-drilling", "/wIndex/QuickTools-Panes.html#freezeunfreeze-panes"]
 image_dir: "L-Drill-DrillCodes"
 images: [
 	{file: "DrillCodes", type: "png", site: "Add-in", cat: "Report Library", sub: "Details", report: "", ribbon: "", config: ""}, 
@@ -96,7 +96,7 @@ In order to drill to a separate workbook, you must first upload the targeted wor
 ![](/images/L-Drill-DrillCodes/CreateNewLinkDetails.png)
 <br>
 
-The Data Drill Code is a unique code that will "point" to this workbook in the Report Library. When a [ReportDrill](/wIndex/ReportDrill.html) function is set up with this code, Interject will open the corresponding workbook in the Library with the same code. The **Target Tab** tells Interject to open the workbook to this tab. If a cell reference is listed in **Report Cell**, it will run the Interject function found there. If this field is left blank, it will simply run the entire sheet.
+The Data Drill Code is a unique code that will "point" to this workbook in the Report Library. When a [ReportDrill](/wFunctions/ReportDrill.html) function is set up with this code, Interject will open the corresponding workbook in the Library with the same code. The **Target Tab** tells Interject to open the workbook to this tab. If a cell reference is listed in **Report Cell**, it will run the Interject function found there. If this field is left blank, it will simply run the entire sheet.
 
 Close the file before proceeding to the next section.
 

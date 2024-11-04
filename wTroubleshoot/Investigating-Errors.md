@@ -4,7 +4,7 @@ filename: "Investigating-Errors.md"
 layout: custom
 keywords: [report, error, user support, progress bar window, activity log]
 headings: ["Overview", "Using the Progress Bar Window", "Using Activity Logs"]
-links: ["/wGetStarted/L-Dev-Error-Handling.html"]
+links: ["/wDeveloper/L-Dev-Error-Handling.html"]
 image_dir: "InvestigatingReportErrors"
 images: [
 	{file: "01", type: "jpg", site: "Add-in", cat: "Progress Bar", sub: "Error Popup", report: "Customer Aging Summary", ribbon: "", config: ""}, 
@@ -20,7 +20,7 @@ description: Report errors can happen for a number of reasons. There are two typ
 
 ## Overview
 
-Report errors can happen for a number of reasons. There are two types of errors that Interject can display: handled and unhandled. Handled errors are errors that the developers have foreseen may occur and have written code to handle. The handling usually involves displaying detailed information. Unhandled errors are errors not specifically coded for and left for the system to handle. For example, on a pull or save, an error may occur on the server which the report is trying to access. This error could be handled by the developer, but it could also be an unhandled error. Developers can handle errors by using the keyword "UserNotice" in SQL (see [here](/wGetStarted/L-Dev-Error-Handling.html) for more info). When the error is handled by the developer, a popup message will display a friendly error text set by the developer.
+Report errors can happen for a number of reasons. There are two types of errors that Interject can display: handled and unhandled. Handled errors are errors that the developers have foreseen may occur and have written code to handle. The handling usually involves displaying detailed information. Unhandled errors are errors not specifically coded for and left for the system to handle. For example, on a pull or save, an error may occur on the server which the report is trying to access. This error could be handled by the developer, but it could also be an unhandled error. Developers can handle errors by using the keyword "UserNotice" in SQL (see [here](/wDeveloper/L-Dev-Error-Handling.html) for more info). When the error is handled by the developer, a popup message will display a friendly error text set by the developer.
 
 Errors can be investigated using the Progress Bar Window or Activity Logs.
 

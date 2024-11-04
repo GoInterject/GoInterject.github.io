@@ -4,7 +4,7 @@ filename: "L-Create-InventoryFixed.md"
 layout: custom
 keywords: [fixed, inventory, report, create, jWorkbookProperty, northwind fixed, run on open, walkthrough]
 headings: ["Overview", "Building the Report", "Setting up Run on Open", "jWorkbookProperty()"]
-links: ["/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder", "/wIndex/Common-Dataportal-Index.html", "/wIndex/ReportRange.html", "/wIndex/ReportFixed.html", "/wIndex/ReportFixed.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wAbout/ReportLibraryLinks.html", "/wGetStarted/L-Create-RunOnOpen.html", "/wIndex/jWorkbookProperty.html"]
+links: ["/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder", "/wIndex/Common-Dataportal-Index.html", "/wFunctions/ReportRange.html", "/wFunctions/ReportFixed.html", "/wFunctions/ReportFixed.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wAbout/ReportLibraryLinks.html", "/wGetStarted/L-Create-RunOnOpen.html", "/wFunctions/jWorkbookProperty.html"]
 image_dir: "L-Create-InventoryFix"
 images: [
 	{file: "01", type: "png", site: "Add-in", cat: "Report Builder", sub: "", report: "", ribbon: "Simple", config: ""}, 
@@ -67,7 +67,7 @@ Delete rows 11 through 24 since they are not needed for this lesson. The page sh
 ![](/images/L-Create-InventoryFix/04.png)
 <br>
 
-**Step 3:** Because [ReportRange()](/wIndex/ReportRange.html) is the most used pull function, the report builder builds one automatically. However, in this report you will be using the [ReportFixed()](/wIndex/ReportFixed.html) function. Clear the ReportRange function in cell C6.
+**Step 3:** Because [ReportRange()](/wFunctions/ReportRange.html) is the most used pull function, the report builder builds one automatically. However, in this report you will be using the [ReportFixed()](/wFunctions/ReportFixed.html) function. Clear the ReportRange function in cell C6.
 
 ![](/images/L-Create-InventoryFix/05.png)
 <br>
@@ -87,7 +87,7 @@ In order to bring in the correct data you will need to designate a Data Portal. 
 ![](/images/L-Create-InventoryFix/07.png)
 <br>
 
-**Step 6:** In a [ReportFixed](/wIndex/ReportFixed.html) function you need to define the Column Definition and Row Definition ranges. Using the Function Wizard, use B16:B28 for the  RowDefRange . For Column Definitions, use row 2 by typing **2:2** in the ColDefRange argument.
+**Step 6:** In a [ReportFixed](/wFunctions/ReportFixed.html) function you need to define the Column Definition and Row Definition ranges. Using the Function Wizard, use B16:B28 for the  RowDefRange . For Column Definitions, use row 2 by typing **2:2** in the ColDefRange argument.
 
 ![](/images/L-Create-InventoryFix/09.png)
 <br>
@@ -168,7 +168,7 @@ For a full guide using a different report, refer to the [Run on Open Example](/w
 
 ### jWorkbookProperty()
 
-Finally, we will add a finishing touch with the [jWorkbookProperty()](/wIndex/jWorkbookProperty.html) function. This function pulls information saved in the Excel file properties into the report. To start, click on File on the top menu and then click **Info**, **Properties**, and then **Advanced Properties**.
+Finally, we will add a finishing touch with the [jWorkbookProperty()](/wFunctions/jWorkbookProperty.html) function. This function pulls information saved in the Excel file properties into the report. To start, click on File on the top menu and then click **Info**, **Properties**, and then **Advanced Properties**.
 
 ![](/images/L-Create-InventoryFix/jWorkbookPropertySettingsClick.png)
 <br>

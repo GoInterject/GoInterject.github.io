@@ -3,25 +3,25 @@ title: Report Library Basics
 filename: "Report-Library-Basics.md"
 layout: custom
 keywords: [report library, folder, link, version, resize, file, status, navigate, search]
-headings: ["Overview", "Opening The Report Library", "Resizing the Report Library", "The Report Library", "Folders Section", "Report Link Section", "Link Version Section", "Status", "Opening a Report", "Navigating the Report Library", "Using the Search Feature", "Using the keyboard", "Using the mouse", "Using the Diagnostics Form", "Related Links"]
-links: ["/wAbout/Resizing-Form-Windows.html", "/wGetStarted/L-Create-UpdatingReportLibrary", "/wAbout/Logging-In.html", "/wAbout/Updating-Interject.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "/wAbout/Real-World-Walkthroughs.html", "/wAbout/Inventory-Reports.html"]
+headings: ["Overview", "Opening The Report Library", "Resizing the Report Library", "The Report Library", "Folders Section", "Report Link Section", "Link Version Section", "Status", "Opening a Report", "Navigating the Report Library", "Using the Search Feature", "Using the keyboard", "Using the mouse", "Related Links"]
+links: ["/wAbout/Resizing-Form-Windows.html", "/wAbout/ReportLibraryLinks.html", "/wAbout/Logging-In.html", "/wAbout/Updating-Interject.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "/wAbout/Real-World-Walkthroughs.html", "/wAbout/Inventory-Reports.html"]
 image_dir: "ReportLibraryBasics"
-images: [{file: "1.01GettingtoRL-InterjectTab", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, 
-{file: "1.02GettingtoRL-ClickRL", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, 
-{file: "ReportLibrary", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "Interject Inventory Demo", ribbon: "", config: ""}, 
-{file: "Resize", type: "png", site: "Add-in", cat: "Report Library", sub: "Resize", report: "", ribbon: "", config: ""}, 
-{file: "ReportLibraryFoldersSection", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "Interject Inventory Demo", ribbon: "", config: ""}, 
-{file: "ReportLibraryLinksSection", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "Interject Inventory Demo", ribbon: "", config: ""}, 
-{file: "ReportLibraryVersionSection", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "Interject Inventory Demo", ribbon: "", config: ""}, 
-{file: "LinkVersionSection", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "", ribbon: "", config: ""}, 
-{file: "Statuses", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "", ribbon: "", config: ""}, 
-{file: "OpenReport", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "Interject Inventory Demo", ribbon: "", config: ""}, 
-{file: "ReportOpened", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Quick Customer Search", ribbon: "Advanced", config: ""}, 
-{file: "ReportLibrarySearch", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "", ribbon: "", config: ""}, 
-{file: "SearchReportLinksWindowReports", type: "png", site: "Add-in", cat: "Report Library", sub: "Search", report: "", ribbon: "", config: ""}, 
-{file: "SearchReportLinksWindowSearch", type: "png", site: "Add-in", cat: "Report Library", sub: "Search", report: "", ribbon: "", config: ""}, 
-{file: "SearchReportLinksWindowGoto", type: "png", site: "Add-in", cat: "Report Library", sub: "Search", report: "", ribbon: "", config: ""}, 
-{file: "SearchReportLinksWindowDownload", type: "png", site: "Add-in", cat: "Report Library", sub: "Search", report: "", ribbon: "", config: ""}
+images: [
+	{file: "Ribbon", type: "png", site: "Add-in", cat: "Ribbon", sub: "Report Library", report: "", ribbon: "Simple", config: ""}, 
+    {file: "ReportLibrary", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "Interject Inventory Demo", ribbon: "", config: ""}, 
+    {file: "Resize", type: "png", site: "Add-in", cat: "Report Library", sub: "Resize", report: "", ribbon: "", config: ""}, 
+    {file: "ReportLibraryFoldersSection", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "Interject Inventory Demo", ribbon: "", config: ""}, 
+    {file: "ReportLibraryLinksSection", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "Interject Inventory Demo", ribbon: "", config: ""}, 
+    {file: "ReportLibraryVersionSection", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "Interject Inventory Demo", ribbon: "", config: ""}, 
+    {file: "LinkVersionSection", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "", ribbon: "", config: ""}, 
+    {file: "Statuses", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "", ribbon: "", config: ""}, 
+    {file: "OpenReport", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "Interject Inventory Demo", ribbon: "", config: ""}, 
+    {file: "ReportOpened", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Quick Customer Search", ribbon: "Advanced", config: ""}, 
+    {file: "ReportLibrarySearch", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "", ribbon: "", config: ""}, 
+    {file: "SearchReportLinksWindowReports", type: "png", site: "Add-in", cat: "Report Library", sub: "Search", report: "", ribbon: "", config: ""}, 
+    {file: "SearchReportLinksWindowSearch", type: "png", site: "Add-in", cat: "Report Library", sub: "Search", report: "", ribbon: "", config: ""}, 
+    {file: "SearchReportLinksWindowGoto", type: "png", site: "Add-in", cat: "Report Library", sub: "Search", report: "", ribbon: "", config: ""}, 
+    {file: "SearchReportLinksWindowDownload", type: "png", site: "Add-in", cat: "Report Library", sub: "Search", report: "", ribbon: "", config: ""}
 ]
 description: The Report Library is a way for your team to share reports from a central location going beyond just a Sharepoint or a Shared Network Folder.The reports are uploaded to the library and can be accessed from any computer using Excel via Interject.
 ---
@@ -165,7 +165,7 @@ You may also download a .CSV file, which lists the ID, Report Path, Report Name,
 
 **Step 3:** Double-clicking on a link opens the report and keeps the Report Library open, while single-clicking the **Open Link** button will open the selected report and close Report Library
 
-For how to add or change files in the Report Library, please check out [Lab Create: Updating the Report Library](/wGetStarted/L-Create-UpdatingReportLibrary) .
+For how to add or change files in the Report Library, please check out [Report Library Links](/wAbout/ReportLibraryLinks.html) .
 
 ## Related Links
 

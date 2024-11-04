@@ -4,7 +4,7 @@ filename: "AddingNotes.md"
 layout: custom
 keywords: [Report, Epicor, Notes, Comments]
 headings: ["Report Setup", "Adding Summary Level Comments"]
-links: []
+links: ["/images/bFinancials-AddingNotes/01.png", "/images/bFinancials-AddingNotes/02.png", "/images/bFinancials-AddingNotes/03.png", "/images/bFinancials-AddingNotes/04.png", "/images/bFinancials-AddingNotes/05.png", "/images/bFinancials-AddingNotes/06.png", "/images/bFinancials-AddingNotes/07.png", "/images/bFinancials-AddingNotes/08.png", "/images/bFinancials-AddingNotes/09.png", "/images/bFinancials-AddingNotes/10.png", "/images/bFinancials-AddingNotes/11.png", "/images/bFinancials-AddingNotes/11.1.png", "/images/bFinancials-AddingNotes/12.png", "/images/bFinancials-AddingNotes/13.png", "/images/bFinancials-AddingNotes/14.png"]
 image_dir: "bFinancials-AddingNotes"
 images: [
 	{file: "01", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 

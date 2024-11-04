@@ -4,7 +4,7 @@ filename: "L-Modify-InventoryReport.md"
 layout: custom
 keywords: [alter, change, modify, fixed, inventory, category, add column, add row, jFreezePanes, walkthrough]
 headings: ["Overview", "Setting up the Report", "Adding a Row to the Report", "Adding a New Definition Column", "Preparing the Report to Share"]
-links: ["/wAbout/Report-Library-Basics.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wAbout/Basics-of-Report-Formulas.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wIndex/jFreezePanes.html", "/wIndex/jFreezePanes.html", "/wAbout/ReportLibraryLinks.html"]
+links: ["/wAbout/Report-Library-Basics.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wAbout/Basics-of-Report-Formulas.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wFunctions/jFreezePanes.html", "/wFunctions/jFreezePanes.html", "/wAbout/ReportLibraryLinks.html"]
 image_dir: "L-Modify-Inventory"
 images: [
 	{file: "01", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "Interject Inventory Demo", ribbon: "Simple", config: "Yes"}, 
@@ -153,14 +153,14 @@ Before saving back changes to the Report Library, clear the data so the next use
 ![](/images/L-Modify-Inventory/18.png)
 <br>
 
-Now that the data is cleared, use the [jFreezePanes](/wIndex/jFreezePanes.html) function to re-freeze the panes on the report so that only the main report area is visible. This report has the jFreezePanes formula in cell G4.
+Now that the data is cleared, use the [jFreezePanes](/wFunctions/jFreezePanes.html) function to re-freeze the panes on the report so that only the main report area is visible. This report has the jFreezePanes formula in cell G4.
 
 jFreezePanes is not configured for all the example reports, but it is easy to setup when needed.
 
 ![](/images/L-Modify-Inventory/19.png)
 <br>
 
-**Step 2:** To use the [jFreezePanes](/wIndex/jFreezePanes.html), click the Quick Tools button in the Interject Ribbon and select **Freeze/UnFreeze Panes**.
+**Step 2:** To use the [jFreezePanes](/wFunctions/jFreezePanes.html), click the Quick Tools button in the Interject Ribbon and select **Freeze/UnFreeze Panes**.
 
 ![](/images/L-Modify-Inventory/20.png)
 <br>

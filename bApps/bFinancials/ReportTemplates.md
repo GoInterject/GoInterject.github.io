@@ -4,7 +4,7 @@ filename: "ReportTemplates.md"
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: ["Account Rollup Screen", "Building Your Rollups", "Build Your Rows", "The Report Template", "Adding Company Columns"]
-links: ["/bApps/bFinancials/Configure.html"]
+links: ["/bApps/bFinancials/Configure.html", "/images/Train/BuildReport1.png", "/images/Train/AcctRollupNew.png", "/images/Train/AcctRollup2.png", "/images/Train/BuildRow.png", "/images/Train/RowTemp4.png", "/images/Train/FRxCatalogRowTemp.png", "/images/Train/rowtemp2c.png", "/images/Train/ReportTemp.png", "/images/Train/DropRow.png", "/images/Train/TypeName.png", "/images/Train/HeaderNames.png", "/images/Train/ShowDetail.png", "/images/Train/DetailShot.png"]
 image_dir: "Train"
 images: [
 	{file: "BuildReport1", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 

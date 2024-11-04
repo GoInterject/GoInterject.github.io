@@ -4,7 +4,7 @@ filename: "Localize.md"
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: []
-links: []
+links: ["/images/Localize/01.png", "/images/Localize/02.png", "/images/Localize/03.png", "/images/Localize/SegNames.png", "/images/Localize/03.png", "/images/Localize/04.png", "/images/Localize/FileSave.png", "/images/Localize/08.png", "/images/Localize/CopyDrillCodes.png"]
 image_dir: "Localize"
 images: [
 	{file: "01", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 

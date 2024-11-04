@@ -5,9 +5,9 @@ layout: custom
 keywords: [Training, Budget, Budget Change Query]
 headings: ["Overview"]
 links: []
-image_dir: "WCNTraining/Budget"
+image_dir: "WCNTraining"
 images: [
-	{file: "BudChangeQuery_EBITDAChangeHistory_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
+	{file: "Budget/BudChangeQuery_EBITDAChangeHistory_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
 	]
 description: This view displays the budget change impacts to Revenue and EBITDA.
 ---

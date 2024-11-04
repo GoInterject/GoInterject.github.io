@@ -9,7 +9,7 @@ horizontalnav:
   path: /wApi/DeveloperMain.html
   node: Developer
 - title: References
-  path: /wIndex/Excel-Function-Index.html
+  path: /wFunctions/Excel-Function-Index.html
   node: index
 - title: Portal Site 
   path: /wPortal/The-INTERJECT-Website-Portal.html
@@ -172,93 +172,93 @@ getstarted:
 
 index:
   - sectiontitle: Interject Function Index
-    path: /wIndex/Excel-Function-Index.html
+    path: /wFunctions/Excel-Function-Index.html
     section:
     - sectiontitle: Data Pull Functions
-      path: /wIndex/Data-Functions-Landing.html
+      path: /wFunctions/Data-Functions-Landing.html
       section:
         - title: ReportRange()
-          path: /wIndex/ReportRange.html
+          path: /wFunctions/ReportRange.html
         - title: ReportFixed()
-          path: /wIndex/ReportFixed.html
+          path: /wFunctions/ReportFixed.html
         - title: ReportVariable()
-          path: /wIndex/ReportVariable.html
+          path: /wFunctions/ReportVariable.html
         - title: ReportLookup()
-          path: /wIndex/ReportLookup.html
+          path: /wFunctions/ReportLookup.html
     - sectiontitle: Data Save Functions
-      path: /wIndex/ReportSave.html
+      path: /wFunctions/ReportSave.html
       section:
         - title: ReportSave()
-          path: /wIndex/ReportSave.html
+          path: /wFunctions/ReportSave.html
     - sectiontitle: Data Drill Functions
-      path: /wIndex/ReportDrill.html
+      path: /wFunctions/ReportDrill.html
       section:
         - title: ReportDrill()
-          path: /wIndex/ReportDrill.html
+          path: /wFunctions/ReportDrill.html
     - sectiontitle: Event Functions
-      path: /wIndex/Event-Functions-Landing.html
+      path: /wFunctions/Event-Functions-Landing.html
       section:
         - title: ReportMacro()
-          path: /wIndex/ReportMacro.html
+          path: /wFunctions/ReportMacro.html
         - title: ReportRun()
-          path: /wIndex/ReportRun.html
+          path: /wFunctions/ReportRun.html
         - title: ReportCalc()
-          path: /wIndex/ReportCalc.html
+          path: /wFunctions/ReportCalc.html
         - title: ReportDefaults()
-          path: /wIndex/ReportDefaults.html
+          path: /wFunctions/ReportDefaults.html
         - title: ReportGrouping()
-          path: /wIndex/ReportGrouping.html  
+          path: /wFunctions/ReportGrouping.html  
         - title: ReportHideRowOrColumn()
-          path: /wIndex/ReportHideRowOrColumn.html
+          path: /wFunctions/ReportHideRowOrColumn.html
     - sectiontitle: Helper Functions
-      path: /wIndex/Helper-Functions.html
+      path: /wFunctions/Helper-Functions.html
       section:
         - title: jDropdown()
-          path: /wIndex/jDropdown.html
+          path: /wFunctions/jDropdown.html
         - title: jFocus()
-          path: /wIndex/jFocus.html
+          path: /wFunctions/jFocus.html
         - title: jFreezePanes()
-          path: /wIndex/jFreezePanes.html
+          path: /wFunctions/jFreezePanes.html
         - title: jCombine()
-          path: /wIndex/jCombine.html
+          path: /wFunctions/jCombine.html
         - title: jCombineIf()
-          path: /wIndex/jCombine_IF.html
+          path: /wFunctions/jCombine_IF.html
         - title: jCombineSmart()
-          path: /wIndex/jCombine_Smart.html
+          path: /wFunctions/jCombine_Smart.html
         - title: jDataPortal()
-          path: /wIndex/jDataPortal.html
+          path: /wFunctions/jDataPortal.html
         - title: jColumnDef()
-          path: /wIndex/jColumnDef.html
+          path: /wFunctions/jColumnDef.html
         - title: jRangeTag()
-          path: /wIndex/jRangeTag.html
+          path: /wFunctions/jRangeTag.html
         - title: jWorkbookProperty()
-          path: /wIndex/jWorkbookProperty.html
+          path: /wFunctions/jWorkbookProperty.html
         - title: jSetting()
-          path: /wIndex/jSetting.html
+          path: /wFunctions/jSetting.html
         - title: Pair()
-          path: /wIndex/Pair.html
+          path: /wFunctions/Pair.html
         - title: PairGroup()
-          path: /wIndex/PairGroup.html
+          path: /wFunctions/PairGroup.html
         - title: Param()
-          path: /wIndex/Param.html
+          path: /wFunctions/Param.html
     - sectiontitle: Data Cell Functions
-      path: /wIndex/Data-Cell-Functions.html
+      path: /wFunctions/Data-Cell-Functions.html
       section:
         - title: jAcct()
-          path: /wIndex/jAcct.html
+          path: /wFunctions/jAcct.html
         - title: jCell/jCellN()
-          path: /wIndex/jCell.html
+          path: /wFunctions/jCell.html
         - title: jDesc()
-          path: /wIndex/jDesc.html
+          path: /wFunctions/jDesc.html
     - title: Reviewing Report Functions
       path: /wIndex/Report-Formula-Reviews.html
   - sectiontitle: Common Data Portal Index
     path: /wIndex/Common-Dataportal-Index.html
     section:
     - title: FinCube - The Financial Cube
-      path: /wIndex/FinCube---The-Financial-Cube.html
+      path: /wIndex/FinCubeTheFinancialCube.html
     - title: SegmentInfo - Segment Search
-      path: /wIndex/SegmentInfo---Segment-Search.html
+      path: /wIndex/SegmentInfoSegmentSearch.html
   - sectiontitle: Diagnostics
     path: /wIndex/Diagnostics.html
     section:
@@ -300,7 +300,7 @@ index:
     - title: Other Tools
       path: /wIndex/QuickTools-Other.html
   - title: Excel Best and Worst Practices
-    path: /wGetStarted/Excel-Best-and-Worst-Practices.html
+    path: /wIndex/Excel-Best-and-Worst-Practices.html
   - title: Interject Shortkey Index
     path: /wIndex/INTERJECT-Hotkey-Index.html
   - title: Interject Hyperlinks
@@ -371,28 +371,28 @@ Developer:
     - title: Java Api Setup
       path: /wApi/java-api-setup.html
     - title: Pyinterject
-      path: /wDeveloper/Pyinterject.html
+      path: /wApi/Pyinterject.html
 - sectiontitle: Developing With Interject
-  path: /wGetStarted/Developing-with-INTERJECT.html
+  path: /wDeveloper/Developing-with-INTERJECT.html
   section:
   - title: Interject Website Portal
-    path: /wGetStarted/INTERJECT-Website-Portal.html
+    path: /wDeveloper/INTERJECT-Website-Portal.html
   - title: Defining Interject for Developers
-    path: /wGetStarted/Defining-INTERJECT-for-Developers.html
+    path: /wDeveloper/Defining-INTERJECT-for-Developers.html
   - sectiontitle: Simple Data Pull
-    path: /wGetStarted/Simple-Data-Pull.html
+    path: /wDeveloper/Simple-Data-Pull.html
     section:
     - title: "Develop: Customer Aging"
-      path: /wGetStarted/L-Dev-CustomerAging.html
+      path: /wDeveloper/L-Dev-CustomerAging.html
     - title: "Develop: Customer Orders"
-      path: /wGetStarted/L-Dev-CustomerOrders.html
+      path: /wDeveloper/L-Dev-CustomerOrders.html
     - title: "Develop: jDropdowns"
-      path: /wGetStarted/L-Dev-jDropdowns.html
+      path: /wDeveloper/L-Dev-jDropdowns.html
   - sectiontitle: Advanced Data Pull
-    path: /wGetStarted/Advanced-Data-Pull.html
+    path: /wDeveloper/Advanced-Data-Pull.html
     section:
     - title: "Develop: Customer Aging Detail"
-      path: /wGetStarted/L-Dev-CustomerAgingDetail.html
+      path: /wDeveloper/L-Dev-CustomerAgingDetail.html
   - sectiontitle: Data Save
     path: /wDeveloper/DataSave.html
     section:
@@ -403,36 +403,36 @@ Developer:
     - title: "Develop: Changelog Data Save"
       path: /wDeveloper/L-Dev-ChangelogDataSave.html
   - title: Request Context Parse
-    path: /wIndex/Request-Context-Parse.html
+    path: /wDeveloper/Request-Context-Parse.html
   - title: Security Best Practices
-    path: /wGetStarted/Security-Best-Practices.html
+    path: /wDeveloper/Security-Best-Practices.html
   - title: Managing Settings Cache
-    path: /wGetStarted/Managing-Settings-Cache.html
+    path: /wDeveloper/Managing-Settings-Cache.html
   - title: "Error Handling (RAISERROR and UserNotice)"
-    path: /wGetStarted/L-Dev-Error-Handling.html
+    path: /wDeveloper/L-Dev-Error-Handling.html
   - title: Setting Up the jDataPortal
     path: /wDeveloper/SetupjDataPortal.html
   - title: Custom Items
     path: /wDeveloper/CustomItems.html
 - sectiontitle: Enterprise Capabilities
-  path: /wAbout/TLS.html
+  path: /wDeveloper/Diagnostics-InstallConfig.html
   section:
   - title: Open Install Configuration
-    path: /wIndex/Diagnostics-InstallConfig.html
+    path: /wDeveloper/Diagnostics-InstallConfig.html
   - title: Set Enterprise Connection
-    path: /wIndex/Diagnostics-EnterpriseConnection.html
+    path: /wDeveloper/Diagnostics-EnterpriseConnection.html
   - title: TLS for HTTPS
-    path: /wAbout/TLS.html
+    path: /wDeveloper/TLS.html
   - title: Checksums for Installers
     path: /wDeveloper/InstallerValidation.html
   - title: Conditional Access
     path: /wDeveloper/ConditionalAccess.html
   - title: Macro Security
-    path: /wIndex/MacroSecurity.html
+    path: /wDeveloper/MacroSecurity.html
   - title: Enterprise Login Setup
-    path: /wAbout/Enterprise-Login-Setup.html
+    path: /wDeveloper/Enterprise-Login-Setup.html
   - title: Federated Login Design
-    path: /wAbout/Federated-Login-Design.html
+    path: /wDeveloper/Federated-Login-Design.html
   - title: Connection Manager
     path: /wDeveloper/ConnectionManager.html
   - title: Internal Support Setup

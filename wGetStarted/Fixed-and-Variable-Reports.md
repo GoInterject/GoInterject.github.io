@@ -4,7 +4,7 @@ filename: "Fixed-and-Variable-Reports.md"
 layout: custom
 keywords: [variable, fixed, variable, reports, walkthroughs]
 headings: ["Overview", "Inventory Fixed Report", "Inventory Variable Report", "Financial Variable Report", "Customer Aging Detail Report"]
-links: ["/wIndex/ReportFixed.html", "/wIndex/ReportVariable.html", "/wGetStarted/L-Create-InventoryFixed.html", "/wAbout/Inventory-Reports.html", "/wIndex/ReportFixed.html", "/wGetStarted/L-Create-InventoryVariable.html", "/wAbout/Inventory-Reports.html", "/wGetStarted/L-Create-FinancialVariable.html", "/wAbout/Financial-Report.html", "/wGetStarted/L-Create-CustomerAgingDetail.html", "/wAbout/Customer-Aging.html"]
+links: ["/wFunctions/ReportFixed.html", "/wFunctions/ReportVariable.html", "/wGetStarted/L-Create-InventoryFixed.html", "/wAbout/Inventory-Reports.html", "/wFunctions/ReportFixed.html", "/wGetStarted/L-Create-InventoryVariable.html", "/wAbout/Inventory-Reports.html", "/wGetStarted/L-Create-FinancialVariable.html", "/wAbout/Financial-Report.html", "/wGetStarted/L-Create-CustomerAgingDetail.html", "/wAbout/Customer-Aging.html"]
 image_dir: ""
 images: []
 description: This section demonstrates additional Report Formulas such as ReportFixed and ReportVariable. 
@@ -13,11 +13,11 @@ description: This section demonstrates additional Report Formulas such as Report
 
 ##  Overview
 
-This section demonstrates additional Report Formulas, [ReportFixed()](/wIndex/ReportFixed.html) and [ReportVariable()](/wIndex/ReportVariable.html). Like ReportRange(), these are used for reporting but allow for special use cases. ReportFixed() provides for a report that is fixed on each row based on a Row Definition that you specify. If the returned record matches the Row Definition, the data is presented, but the report does not expand with new data records. The ReportVariable() function is a combination of ReportFixed() and ReportRange() which allow specific fixed sections to be set up. Within those sections, the data will expand or shrink based on the data result. 
+This section demonstrates additional Report Formulas, [ReportFixed()](/wFunctions/ReportFixed.html) and [ReportVariable()](/wFunctions/ReportVariable.html). Like ReportRange(), these are used for reporting but allow for special use cases. ReportFixed() provides for a report that is fixed on each row based on a Row Definition that you specify. If the returned record matches the Row Definition, the data is presented, but the report does not expand with new data records. The ReportVariable() function is a combination of ReportFixed() and ReportRange() which allow specific fixed sections to be set up. Within those sections, the data will expand or shrink based on the data result. 
 
 ### [Inventory Fixed Report](/wGetStarted/L-Create-InventoryFixed.html)
 
-This page illustrates the process of building a fixed inventory report from scratch using an example seen in the [Inventory Walkthrough](/wAbout/Inventory-Reports.html). By creating this report from scratch, you can better understand how to use the [ReportFixed()](/wIndex/ReportFixed.html) function. 
+This page illustrates the process of building a fixed inventory report from scratch using an example seen in the [Inventory Walkthrough](/wAbout/Inventory-Reports.html). By creating this report from scratch, you can better understand how to use the [ReportFixed()](/wFunctions/ReportFixed.html) function. 
 
 ### [Inventory Variable Report](/wGetStarted/L-Create-InventoryVariable.html)
 

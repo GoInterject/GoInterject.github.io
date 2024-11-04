@@ -19,3 +19,6 @@ search_index_financials.json
 __pycache__/
 .pytest_cache/
 .cache/
+
+# logs
+*.log

@@ -66,7 +66,7 @@ Jekyll::Hooks.register :site, :post_write do |site|
   end
   
   def included_folder?(page)
-    included_folders = ['wAbout', 'wDesign','wDeveloper' 'wGetStarted', 'wIndex', 'wLabs', 'wPortal', 'wReleaseNotes', 'wTroubleshoot']
+    included_folders = ['wAbout', 'wDesign','wDeveloper' 'wGetStarted', 'wFunctions', 'wIndex', 'wLabs', 'wPortal', 'wReleaseNotes', 'wTroubleshoot']
 
     # Check if the page or document is in an included folder
     included_folders.any? do |folder|

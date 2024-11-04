@@ -4,7 +4,7 @@ filename: "Data-Portals.md"
 layout: custom
 keywords: [data portals, data connection, setup, system parameters]
 headings: ["Overview", "Setting up a Data Portal", "Overview of Parameters", "Formula Parameters", "System Parameters", "Adding New Parameters", "System Parameters Options"]
-links: ["/wIndex/ReportBuilder.html", "https://docs.gointerject.com/wIndex/Request-Context-Parse.html"]
+links: ["/wIndex/ReportBuilder.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#custom-commands", "/wIndex/ReportBuilder.html", "https://docs.gointerject.com/wDeveloper/Request-Context-Parse.html"]
 image_dir: "DataPortals"
 images: [
     {file: "NewDataPortalButton", type: "png", site: "Portal", cat: "Data Portals", sub: "", report: "", ribbon: "", config: ""}, 
@@ -143,4 +143,4 @@ There are a number of options that can be used as system parameters. The list be
 | Interject_UserRoles | varchar(1000) | Provides the Interject roles assigned to the user. |
 | Interject_LocalTimeZoneOffset | money | Provides a number (0.000) that represents that offset of the user’s time to UTC time. |
 | Interject_ReturnError | varchar(2000) | Is an output parameter that can be used to return an error back to the user. Pass empty string for no error. |
-| <a href="https://docs.gointerject.com/wIndex/Request-Context-Parse.html">Interject_RequestContext</a> | nvarchar(max) | Provides all above request context and both the open text and encrypted version of the user context. |
+| <a href="https://docs.gointerject.com/wDeveloper/Request-Context-Parse.html">Interject_RequestContext</a> | nvarchar(max) | Provides all above request context and both the open text and encrypted version of the user context. |

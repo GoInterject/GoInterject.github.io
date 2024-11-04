@@ -3,9 +3,9 @@ title: Initial Data Load
 filename: "InitialDataLoad.md"
 layout: custom
 keywords: [Epicor, setup, init, data]
-headings: ["Begin Data Load", "Steps Required for Interject Application Setup - Data Connection", "Redirect the DB Connection to the new DB in Interject portal"]
+headings: ["Begin Data Load", "Steps Required for Interject Application Setup Data Connection", "Redirect the DB Connection to the new DB in Interject portal"]
 links: ["https://docs.gointerject.com/bApps/bFinancials/DeactiveDB.html", "https://portal.gointerject.com", "https://portal.gointerject.com"]
-image_dir: "Train"
+image_dir: "A-InitialDataLoad"
 images: [
 	{file: "sample", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
 	{file: "Login1", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
@@ -80,7 +80,7 @@ description: Setup to initialize Epicor Enterprise Data.
 > * \[Interject_Reporting_AddJobsFromScheduler\] - Process data and distribute it to interject tables 
 > * \[Interject_Reporting_ImporEpicor_DeletesRecords\] - Validates data and remove records nightly if data was removed from Epicor tables 
 
-### Steps Required for Interject Application Setup - Data Connection
+### Steps Required for Interject Application Setup Data Connection
 
 > To Do
 >

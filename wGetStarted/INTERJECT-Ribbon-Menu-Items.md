@@ -4,7 +4,7 @@ filename: "INTERJECT-Ribbon-Menu-Items.md"
 layout: custom
 keywords: [menu, items, ribbon, buttons, index]
 headings: ["Overview", "Simple Menu Items", "Advanced Menu Items", "Report Library", "Pull Data", "Save Data", "Drill on Data", "Return From Drill", "Custom Commands", "Quick Tools", "Export Book", "Report Builder", "Sheet Protector", "Login/Logout", "Connections", "Company", "Validation Report", "JSON", "Diagnostics", "System", "Check For Updates", "Online Training", "User Support", "About Interject"]
-links: ["#report-library", "#pull-data", "#save-data", "#drill-on-data", "#return-from-drill", "#custom-commands", "#quick-tools", "#export-book", "#report-builder", "#sheet-protector", "#loginlogout", "#company", "#connections", "#check-for-updates", "#online-training", "#user-support", "#about-interject", "#validation-report", "#json", "#diagnostics", "#system", "/wAbout/Report-Library-Basics.html", "/wAbout/Customer-Aging.html", "/wIndex/ReportSave.html", "/wAbout/Tabular-vs-Data-Cells.html", "/wGetStarted/Drilling-Between-Reports.html", "/wAbout/Inventory-Reports.html#return-from-drill-and-re-drill", "/wAbout/Tabular-vs-Data-Cells.html#data-cells", "/wDeveloper/CustomItems.html", "/wIndex/Quick-Tools-Landing.html", "/wGetStarted/Exporting-Reports.html", "/wIndex/ReportRange.html", "/wIndex/ReportRange.html", "/wIndex/ReportBuilder.html", "/wGetStarted/L-Create-CustomerAging.html", "/wGetStarted/L-Create-Protecting.html", "/wAbout/Logging-In.html", "/wDeveloper/ConnectionManager.html", "/wAbout/Report-Library-Basics.html", "/wPortal/Data-Connections.html", "/wTroubleshoot/Validation-Report.html", "/wIndex/Data-Functions-Landing.html", "/wIndex/ReportSave.html", "/wPortal/Data-Connections.html", "/wAbout/Updating-INTERJECT.html", "https://docs.gointerject.com/", "/wTroubleshoot/Reporting-A-Problem.html"]
+links: ["#report-library", "#pull-data", "#save-data", "#drill-on-data", "#return-from-drill", "#custom-commands", "#quick-tools", "#export-book", "#report-builder", "#sheet-protector", "#loginlogout", "#company", "#connections", "#check-for-updates", "#online-training", "#user-support", "#about-interject", "#validation-report", "#json", "#diagnostics", "#system", "/wAbout/Report-Library-Basics.html", "/wAbout/Customer-Aging.html", "/wFunctions/ReportSave.html", "/wAbout/Tabular-vs-Data-Cells.html", "/wGetStarted/Drilling-Between-Reports.html", "/wAbout/Inventory-Reports.html#return-from-drill-and-re-drill", "/wAbout/Tabular-vs-Data-Cells.html#data-cells", "/wDeveloper/CustomItems.html", "/wIndex/Quick-Tools-Landing.html", "/wGetStarted/Exporting-Reports.html", "/wFunctions/ReportRange.html", "/wIndex/ReportBuilder.html", "/wGetStarted/L-Create-CustomerAging.html", "/wGetStarted/L-Create-Protecting.html", "/wAbout/Logging-In.html", "/wDeveloper/ConnectionManager.html", "/wAbout/Report-Library-Basics.html", "/wPortal/Data-Connections.html", "/wTroubleshoot/Validation-Report.html", "/wFunctions/Data-Functions-Landing.html", "/wFunctions/ReportSave.html", "/wPortal/Data-Connections.html", "/wAbout/Updating-INTERJECT.html", "https://docs.gointerject.com/", "/wTroubleshoot/Reporting-A-Problem.html"]
 image_dir: "InterjectRibbon"
 images: [
 	{file: "RibbonAdvancedMenuButton", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, 
@@ -158,7 +158,7 @@ Saving Data is an important part of report editing. This operation allows you to
 ![](/images/InterjectRibbon/09.png)
 <br>
 
-The **Save Data** button will run any [ReportSave()](/wIndex/ReportSave.html) function. You can choose whether to perform this action on (S) selected cells, (T) selected tabs, or (W) the entire workbook. 
+The **Save Data** button will run any [ReportSave()](/wFunctions/ReportSave.html) function. You can choose whether to perform this action on (S) selected cells, (T) selected tabs, or (W) the entire workbook. 
 
 The **Show Additional Options** will give the user even greater flexibility between saving Data Cells and Data List Formulas. For more information about the difference, see [here](/wAbout/Tabular-vs-Data-Cells.html).
 
@@ -260,7 +260,7 @@ The Report Builder creates a sample Excel report in the current sheet based on a
 ![](/images/InterjectRibbon/26.png)
 <br>
 
-The Report Builder offers the flexibility to build a [ReportRange](/wIndex/ReportRange.html). For instructions on how to customize the builder, see [Report Builder](/wIndex/ReportBuilder.html). For example of using the Report Builder, see [Create: Customer Aging Report](/wGetStarted/L-Create-CustomerAging.html).
+The Report Builder offers the flexibility to build a [ReportRange](/wFunctions/ReportRange.html). For instructions on how to customize the builder, see [Report Builder](/wIndex/ReportBuilder.html). For example of using the Report Builder, see [Create: Customer Aging Report](/wGetStarted/L-Create-CustomerAging.html).
 
 ![](/images/InterjectRibbon/27.png)
 <br>
@@ -352,7 +352,7 @@ The operation System contains a large number of options.
 | ----------- | ----------- |
 | Force Calc On Workbook | Forces Excel to calculate all formulas in the Workbook. Similar to Excel's **Calculate Now** button in the Formulas tab on the Ribbon. |
 | Force Calc On Worksheet | Forces Excel to calculate all Interject formulas in the Worksheet. Similar to Excel's **Calculate Sheet** button in the Formulas tab on the Ribbon. |
-| View SQL Test For ActiveCell | Provides the SQL code that will be executed for the ActiveCell. The ActiveCell would be any of the [Data Pull](/wIndex/Data-Functions-Landing.html) or [Data Save](/wIndex/ReportSave.html) Formulas. <br> This code can be executed in your development environment to see what would be produced based on current context of the spreadsheet. |
+| View SQL Test For ActiveCell | Provides the SQL code that will be executed for the ActiveCell. The ActiveCell would be any of the [Data Pull](/wFunctions/Data-Functions-Landing.html) or [Data Save](/wFunctions/ReportSave.html) Formulas. <br> This code can be executed in your development environment to see what would be produced based on current context of the spreadsheet. |
 | View SQL Template For ActiveCell | Will provide sample code as a starting point for creating a new Stored Procedure. A ReportSave will provide a template that can be used to save the data back. |
 | Clear Remembered Logins | Logs you out and removes all logins from the cache and the profiles removed from the Login manage |
 | Re-enable Protected Grouping | Excel does not remember when files are protected while enabling groups. Pull or save data to reenable or use this function. |

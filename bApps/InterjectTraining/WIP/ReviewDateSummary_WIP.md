@@ -5,11 +5,11 @@ layout: custom
 keywords: [Training, Capital, Capital Change Query, Review Date]
 headings: ["Overview", "Capital and the Control Center"]
 links: ["/bApps/InterjectTraining/Budget/ControlCenter.html", "/bApps/InterjectTraining/Budget/ControlCenter.html"]
-image_dir: "WCNTraining/Capital"
+image_dir: "WCNTraining"
 images: [
-	{file: "ReviewDateSummary_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "ReviewDateSummary_BuildingsDetail", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "ControlCenter_SimpleExample", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
+	{file: "Capital/ReviewDateSummary_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Capital/ReviewDateSummary_BuildingsDetail", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Capital/ControlCenter_SimpleExample", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
 	]
 description: Pull in Capital amounts grouped by Asset type into the Review Date buckets.
 ---
