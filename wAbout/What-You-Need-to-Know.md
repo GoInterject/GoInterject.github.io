@@ -4,7 +4,7 @@ filename: "What-You-Need-to-Know.md"
 layout: custom
 keywords: [about, scalability, report library, spreadsheet, Excel]
 headings: ["At a Glance", "Key Points on Scalability", "Spans Small and Large Organizations", "Internally Manageable", "Automating Hard-to-Reach Places in your Organization", "Scalable Solutions are in Your Control", "When you Start Using Interject Remember:", "Changing Your Spreadsheets will not Alter Interject's Functionality", "The Interject Data Functionality is Attached to Excel Files", "The Report Library Protects Prior Versions", "Easily Work With Files Outside the Report Library", "Enhancing Spreadsheets With Data List Report Formulas", "Enhancing Spreadsheets With Data Cell Formulas"]
-links: ["/wAbout/Tabular-vs-Data-Cells.html", "/wAbout/Report-Library-Basics.html", "http://Box.com", "/wAbout/Tabular-vs-Data-Cells.html", "Tabular-vs-Data-Cells.html"]
+links: ["/wAbout/Tabular-vs-Data-Cells.html", "/wAbout/Report-Library-Basics.html", "http://Box.com", "/wAbout/Tabular-vs-Data-Cells.html", "/wAbout/Tabular-vs-Data-Cells.html"]
 image_dir: ""
 images: []
 description: Interject was built for large companies with hundreds of users that run thousands of reports each day. Interject commonly handles report volumes over of 300,000 per month, and we can manage much, much more.
@@ -60,4 +60,4 @@ Most Interject reports and applications use Interject [Data List](/wAbout/Tabula
 
 #### Enhancing Spreadsheets With Data Cell Formulas
 
-[Data Cells](Tabular-vs-Data-Cells.html) are two specific spreadsheet formulas that bring any summarized value from a general ledger to any cell of a spreadsheet, so highly customized presentations or standard financial trends are easily created. Modifying Data Cell reports requires only fundamental spreadsheet knowledge using cell references and copy/paste.
+[Data Cells](/wAbout/Tabular-vs-Data-Cells.html) are two specific spreadsheet formulas that bring any summarized value from a general ledger to any cell of a spreadsheet, so highly customized presentations or standard financial trends are easily created. Modifying Data Cell reports requires only fundamental spreadsheet knowledge using cell references and copy/paste.

@@ -4,7 +4,7 @@ filename: "ReportLibraryLinks.md"
 layout: custom
 keywords: [report library, link, file, version, report, update, upload, details, documentation]
 headings: ["Overview", "Creating a New Link (File Open)", "Creating a New Link (File Not Open)", "Creating a New Version to an Existing Link", "Updating a Report Link", "The Report Link Details Form", "Types of Links", "Link Documentation"]
-links: ["#report-link-details-form", "/wAbout/Report-Library-Basics.html#status", "/wAbout/Report-Library-Basics.html#link-version-section", "/wAbout/ReportLibrarySorting.html", "/wAbout/Report-Library-Basics.html#status", "#types-of-links", "#link-documentation", "/wGetStarted/L-Drill-DrillCodes.html", "https://docs.gointerject.com/wTroubleshoot/Cloud-File.html"]
+links: ["#the-report-link-details-form", "/wAbout/Report-Library-Basics.html#status", "/wAbout/Report-Library-Basics.html#link-version-section", "/wAbout/ReportLibraryOrganization.html", "/wAbout/Report-Library-Basics.html#status", "#types-of-links", "#link-documentation", "/wGetStarted/L-Drill-DrillCodes.html", "https://docs.gointerject.com/wTroubleshoot/Cloud-File.html"]
 image_dir: "ReportLibraryLinks"
 images: [
 	{file: "OpenReportLibrary", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "", ribbon: "Simple", config: ""}, 
@@ -56,7 +56,7 @@ description: The Report Library provides an easy interface where new reports can
 ![](/images/ReportLibraryLinks/CreateNewLink.png)
 <br>
 
-**Step 4:** The [Report Link Details Form](#report-link-details-form) appears where you can enter details about the report:
+**Step 4:** The [Report Link Details Form](#the-report-link-details-form) appears where you can enter details about the report:
 
 1. Enter a name for the report
 2. Enter an optional description
@@ -184,7 +184,7 @@ The Report Link Details form displays information about the selected report. Thi
 <br>
 
 * **Link Name:** The name of the report link
-* **Sort:** The sorting order of the report link (see [here](/wAbout/ReportLibrarySorting.html) for more info)
+* **Sort:** The sorting order of the report link (see [here](/wAbout/ReportLibraryOrganization.html) for more info)
 * **Link Description:** A description for the report
 * **Link Folder:** The folder in which the report resides
 * **Status:** The current status of the report (see [here](/wAbout/Report-Library-Basics.html#status) for more info)

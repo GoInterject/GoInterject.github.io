@@ -4,7 +4,7 @@ filename: "TransactionReports.md"
 layout: custom
 keywords: [Report, Epicor, Accounts]
 headings: ["Fill Out Report Parameters and Pull Data", "Drill Through Detail"]
-links: ["https://docs.gointerject.com/bApps/bFinancials/The-Basics.html"]
+links: ["https://docs.gointerject.com/bApps/bFinancials/The-Basics.html", "/images/Train/TransactionRpt1.png", "/images/Train/TransactionRptDrill.png", "/images/Train/TransactionRptDrill2.png"]
 image_dir: "Train"
 images: [
 	{file: "TransactionRpt1", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 

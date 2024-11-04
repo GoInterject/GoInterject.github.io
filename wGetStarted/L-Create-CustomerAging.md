@@ -4,7 +4,7 @@ filename: "L-Create-CustomerAging.md"
 layout: custom
 keywords: [range, report, build, example, customer aging, northwind customers, walkthrough]
 headings: ["Overview", "Building the Report", "Getting Started", "Final Formatting", "Setting up jFreezePanes"]
-links: ["/wIndex/ReportRange.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder", "/wApps/Common-Dataportal-Index.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wIndex/jFreezePanes.html", "/wIndex/jFocus.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools", "/wAbout/ReportLibraryLinks.html"]
+links: ["/wFunctions/ReportRange.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder", "/wIndex/Common-Dataportal-Index.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wFunctions/jFreezePanes.html", "/wFunctions/jFocus.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools", "/wAbout/ReportLibraryLinks.html"]
 image_dir: "L-Create-CustAging"
 images: [
 	{file: "01", type: "png", site: "Add-in", cat: "Report Builder", sub: "", report: "", ribbon: "Simple", config: ""}, 
@@ -38,7 +38,7 @@ description: In this page you will see the process of building a Customer Aging 
 
 ## Overview
 
-In this page you will see the process of building a Customer Aging report from scratch to better understand reports and also get a clearer illustration of the Interject [ReportRange()](/wIndex/ReportRange.html) data function.
+In this page you will see the process of building a Customer Aging report from scratch to better understand reports and also get a clearer illustration of the Interject [ReportRange()](/wFunctions/ReportRange.html) data function.
 
 <blockquote class=lab_info>
  If you are following the Training Labs, this is Lab 3.1. Note: The Report Library at Training Labs for this lab will be blank as you are creating a report from a new blank Excel sheet.
@@ -46,7 +46,7 @@ In this page you will see the process of building a Customer Aging report from s
 
 ### Building the Report
 
-**Step 1:** This process begins with the Interject [Report Builder](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder). Open the Report Build as illustrated below. There is a drop down list of [Data Portals](/wApps/Common-Dataportal-Index.html) that can be chosen. An Interject Data Portal is a pre-configured data query that is setup so spreadsheet users can easily direct data into their own spreadsheet reports. Data Portals can be setup to access databases or cloud data and are either setup by Interject developers or your IT team.
+**Step 1:** This process begins with the Interject [Report Builder](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder). Open the Report Build as illustrated below. There is a drop down list of [Data Portals](/wIndex/Common-Dataportal-Index.html) that can be chosen. An Interject Data Portal is a pre-configured data query that is setup so spreadsheet users can easily direct data into their own spreadsheet reports. Data Portals can be setup to access databases or cloud data and are either setup by Interject developers or your IT team.
 
 ![](/images/L-Create-CustAging/01.png)
 <br>
@@ -144,7 +144,7 @@ Do some quick formatting to clean up the report. Delete rows 21 through 22.
 
 ### Setting up jFreezePanes
 
-Next, you need to freeze the panes to hide the configuration area from the users. This can be done manually with the Excel menu item for freezing panes. But this is a good time to illustrate INTERJECT's jFreezePanes() feature. First, setup the [jFreezePanes](/wIndex/jFreezePanes.html) function by entering **=jFreezePanes()** in F6 and click the **fx** button.
+Next, you need to freeze the panes to hide the configuration area from the users. This can be done manually with the Excel menu item for freezing panes. But this is a good time to illustrate INTERJECT's jFreezePanes() feature. First, setup the [jFreezePanes](/wFunctions/jFreezePanes.html) function by entering **=jFreezePanes()** in F6 and click the **fx** button.
 
 ![](/images/L-Create-CustAging/23.png)
 <br>
@@ -154,7 +154,7 @@ Next, you need to freeze the panes to hide the configuration area from the users
 ![](/images/L-Create-CustAging/24.png)
 <br>
 
-Now we will setup a [jFocus()](/wIndex/jFocus.html) formula so that the cursor will be set to a particular cell after the panes are frozen. In this case, we want the active cell to be C16 after the freeze. Click on cell H6 and enter the formula **=jFocus(C16)**.
+Now we will setup a [jFocus()](/wFunctions/jFocus.html) formula so that the cursor will be set to a particular cell after the panes are frozen. In this case, we want the active cell to be C16 after the freeze. Click on cell H6 and enter the formula **=jFocus(C16)**.
 
 ![](/images/L-Create-CustAging/jFocusEntry.png)
 <br>

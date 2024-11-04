@@ -5,9 +5,9 @@ layout: custom
 keywords: [Training, Capital, Budget Template]
 headings: ["Overview", "Budget Template", "Budget Upload Tool"]
 links: ["/bApps/InterjectTraining/Budget/BudgetTemplate.html", "/bApps/InterjectTraining/Budget/BudgetUpload.html"]
-image_dir: "WCNTraining/Budget"
+image_dir: "WCNTraining"
 images: [
-	{file: "BudgetTemplate_ReportLibrary", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
+	{file: "Budget/BudgetTemplate_ReportLibrary", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
 	]
 description: The Budget Template tools are used by controllers to update their Budgets on the District level.
 ---

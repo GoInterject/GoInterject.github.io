@@ -4,7 +4,7 @@ filename: "ConnectionManager.md"
 layout: custom
 keywords: [id providers, identity providers, login, tokens, federated, enterprise]
 headings: ["Overview", "Logging In and Out of a Connection"]
-links: ["/wAbout/Federated-Login-Design.html", "/wAbout/Enterprise-Login-Setup.html", "/wAbout/Logging-In-Enterprise.html#clearing-login-cookies"]
+links: ["/wDeveloper/Federated-Login-Design.html", "/wDeveloper/Enterprise-Login-Setup.html", "/wAbout/Logging-In-Enterprise.html#clearing-login-cookies"]
 image_dir: "ConnectionManager"
 images: [
 	{file: "ConnectionsWindow", type: "png", site: "Add-in", cat: "Manage Connections", sub: "", report: "", ribbon: "", config: ""}, 
@@ -18,7 +18,7 @@ description: The Interject Connection Manager displays the current Web API conne
 
 ## Overview
 
-The Interject Connection Manager displays all Web API connections that are secured with a [federated login](/wAbout/Federated-Login-Design.html). When a company is [set up](/wAbout/Enterprise-Login-Setup.html) with a federated login, an Enterprise Login Code will be associated with that login in order to direct the user to their federation's login page. Once logged in, the access token issued by that federated identity provider will be used when making calls to that connection.
+The Interject Connection Manager displays all Web API connections that are secured with a [federated login](/wDeveloper/Federated-Login-Design.html). When a company is [set up](/wDeveloper/Enterprise-Login-Setup.html) with a federated login, an Enterprise Login Code will be associated with that login in order to direct the user to their federation's login page. Once logged in, the access token issued by that federated identity provider will be used when making calls to that connection.
 
 ![](/images/ConnectionManager/ConnectionsWindow.png)
 <br>

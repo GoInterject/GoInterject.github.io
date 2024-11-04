@@ -4,10 +4,9 @@ filename: "StaffPage.md"
 layout: custom
 keywords: [users, organization, roles, user passwords, credentials]
 headings: ["Overview", "The Staff Page", "External Admins", "View, Edit, Activate/Deactivate, Delete User", "Add User"]
-links: ["https://portal.gointerject.com/", "/wPortal/INTERJECT-Roles.html#clientadmin-role", "/wPortal/MFA.html", "/wPortal/User-Profile.md", "/wPortal/AddUser.html"]
+links: ["https://portal.gointerject.com/", "/wPortal/INTERJECT-Roles.html#clientadmin-role", "/wPortal/MFA.html", "/wPortal/User-Profile.html", "/wPortal/AddUser.html"]
 image_dir: "StaffPage"
 images: [
-    {file: "SelectCompany", type: "png", site: "Portal", cat: "Home", sub: "Company", report: "", ribbon: "", config: ""}, 
     {file: "ClickStaff", type: "png", site: "Portal", cat: "Sidebar", sub: "", report: "", ribbon: "", config: ""}, 
     {file: "Staff", type: "png", site: "Portal", cat: "Organization Staff", sub: "", report: "", ribbon: "", config: ""}, 
     {file: "ExternalAdmins", type: "png", site: "Portal", cat: "Organization Staff", sub: "", report: "", ribbon: "", config: ""}, 
@@ -62,7 +61,7 @@ From the Staff page, you can do the following by hovering the cursor over the us
 
 ### Add User
 
-Clicking on the **Add User** button will open the [User Profile](/wPortal/User-Profile.md) page where you can add a new user. For detailed information, see [Adding A User](/wPortal/AddUser.html).
+Clicking on the **Add User** button will open the [User Profile](/wPortal/User-Profile.html) page where you can add a new user. For detailed information, see [Adding A User](/wPortal/AddUser.html).
 
 ![](/images/StaffPage/AddUser.png)
 <br>

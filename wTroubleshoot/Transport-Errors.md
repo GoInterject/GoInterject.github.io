@@ -3,7 +3,7 @@ title: Network Transport Errors
 filename: "Transport-Errors.md"
 layout: custom
 keywords: [network, semaphore, timeout, virtual private network, vpn, errors]
-headings: ["Overview"]
+headings: ["Overview", "Types of Transport Errors", "Troubleshooting"]
 links: []
 image_dir: ""
 images: []

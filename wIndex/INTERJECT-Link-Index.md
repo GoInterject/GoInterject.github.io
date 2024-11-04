@@ -4,7 +4,7 @@ filename: "INTERJECT-Link-Index.md"
 layout: custom
 keywords: [links, hyperlinks]
 headings: ["Overview", "Hyperlink List", "Creating An Example Pull Link"]
-links: ["/wIndex/jDropdown.html", "/wGetStarted/L-Create-Dropdowns.html", "/wIndex/ReportDrill.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#return-from-drill", "/wIndex/Data-Functions-Landing.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wIndex/ReportSave.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-library", "/wIndex/QuickTools-Hyperlink.html"]
+links: ["/wFunctions/jDropdown.html", "/wGetStarted/L-Create-Dropdowns.html", "/wFunctions/ReportDrill.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#return-from-drill", "/wFunctions/Data-Functions-Landing.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wFunctions/ReportSave.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-library", "/wIndex/QuickTools-Hyperlink.html"]
 image_dir: "Link-Index"
 images: [
 	{file: "00", type: "png", site: "Add-in", cat: "Report", sub: "", report: "", ribbon: "", config: ""}, 
@@ -27,11 +27,11 @@ This feature only works if the correct Screen Tip is entered for the link. The f
 
 | Screen Tip | Function to Reference | Details |
 |------|------|------|
-| "Interject Dropdown" | [jDropdown Function](/wIndex/jDropdown.html) | Executes a jDropdown Function (see [here](/wGetStarted/L-Create-Dropdowns.html) for an example)|
-| "Interject Drill" | [Data Drill Function](/wIndex/ReportDrill.html) | Opens up the [Data Drill](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data) window |
+| "Interject Dropdown" | [jDropdown Function](/wFunctions/jDropdown.html) | Executes a jDropdown Function (see [here](/wGetStarted/L-Create-Dropdowns.html) for an example)|
+| "Interject Drill" | [Data Drill Function](/wFunctions/ReportDrill.html) | Opens up the [Data Drill](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data) window |
 | "Interject Return From Drill" | n/a | [Returns From Drill](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#return-from-drill) |
-| "Interject Pull" | [Data Pull Function](/wIndex/Data-Functions-Landing.html) | Opens up the [Pull Data](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) window |
-| "Interject Save" | [Data Save Function](/wIndex/ReportSave.html) | Opens up the [Data Save](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data) window |
+| "Interject Pull" | [Data Pull Function](/wFunctions/Data-Functions-Landing.html) | Opens up the [Pull Data](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) window |
+| "Interject Save" | [Data Save Function](/wFunctions/ReportSave.html) | Opens up the [Data Save](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data) window |
 | "Interject Report Library" | n/a | Opens up the [Report Library](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-library) window |
 
 <!---

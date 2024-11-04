@@ -4,7 +4,7 @@ filename: "Tabular-vs-Data-Cells.md"
 layout: custom
 keywords: [cells, tabular, data cells]
 headings: ["Overview", "Tabular", "Data Cells", "What is Common Between Data Lists and Data Cells"]
-links: ["/wGetStarted/INTERJECT-Ribbon-Menu-Items#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items#export-book"]
+links: ["/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#export-book"]
 image_dir: ""
 images: []
 description: The Report Library is a way for your team to share reports from a central location going beyond just a Sharepoint or a Shared Network Folder. The reports are uploaded to the library and can be accessed from any computer using Excel via Interject.
@@ -33,6 +33,6 @@ Once this single formula approach is understood, there is no limit to creating n
 
 Tabular reporting and Data Cells were designed to work together for the most flexibility. These are some of their common traits:
 
- 1. Both will pull data using the same ["Pull Data"](/wGetStarted/INTERJECT-Ribbon-Menu-Items#pull-data) menu action. There is nothing new to learn when changing from one method to the other.
+ 1. Both will pull data using the same ["Pull Data"](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data) menu action. There is nothing new to learn when changing from one method to the other.
  2. Data Cells can be used with Tabular methods to create custom columns that aren't easily available from the data source.
- 3. Both can be shared with users that do not have Interject installed, however Data Cell reports must be exported with the ["Export Book"](/wGetStarted/INTERJECT-Ribbon-Menu-Items#export-book) menu item before they can be shared.
+ 3. Both can be shared with users that do not have Interject installed, however Data Cell reports must be exported with the ["Export Book"](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#export-book) menu item before they can be shared.

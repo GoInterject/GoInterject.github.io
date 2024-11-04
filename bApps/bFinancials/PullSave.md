@@ -27,4 +27,4 @@ description: Interject™ Financials for Epicor Enterprise The basics of pulling
 
 ### Save Data
 You can save data back to the database or web API with the key command **Crtl-Shift-U**, or you can also use the Save-Data button in the Interject Ribbon.
-![Interject ribbon save button](/images/InterjectRibbon/09.png){: .center-image }
+![Interject ribbon save button](/images/Interject-Financials/09.png){: .center-image }

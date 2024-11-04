@@ -4,7 +4,7 @@ filename: "Diagnostics-ShortKey.md"
 layout: custom
 keywords: [Diagnostics, Shortkey Changes, Configuration, Config, hotkey, keystrokes, shortcut, keyboard]
 headings: ["Overview", "Input Examples", "Defaults", "Multiple Input Example"]
-links: ["/wIndex/INTERJECT-Hotkey-Index.html#default-hotkey-index"]
+links: ["/wIndex/INTERJECT-Hotkey-Index.html#default-shortkey-index"]
 image_dir: "DiagnosticsShortKeys"
 images: [
     {file: "ChangeShortKey", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Change ShortKey", report: "", ribbon: "", config: ""}, 
@@ -45,7 +45,7 @@ These settings are found in the IdsSettings.xml file. For example, an entry in t
 
 ### Defaults
 
-For a list of ShortKey defaults, see [here](/wIndex/INTERJECT-Hotkey-Index.html#default-hotkey-index).
+For a list of ShortKey defaults, see [here](/wIndex/INTERJECT-Hotkey-Index.html#default-shortkey-index).
 
 ### Multiple Input Example
 

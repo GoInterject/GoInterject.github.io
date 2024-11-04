@@ -1,7 +1,24 @@
 ---
 title: Advanced Principles for the Row Definition Range
+filename: "RowDefinitionRange.md"
 layout: custom
 keywords: [Rowdef name, multi-column, multiple, aggregation]
+headings: ["Overview", "Multi-Column RowDef Feature", "Opening and Displaying the Report", "RowDef Items", "Information Sent to Data Source", "Multi-Column Row Definitions"]
+links: ["/wGetStarted/Fixed-and-Variable-Reports.html", "/wIndex/QuickTools-Names.md#appending-a-prefix-andor-suffix-to-a-name", "/wFunctions/ReportFixed.html#function-arguments", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#system"]
+image_dir: "RowDefinitionRange"
+images: [
+	{file: "PLReportRL", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""},
+	{file: "PullData", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""},
+	{file: "Unfreeze", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""},
+	{file: "ExpandGroups", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""},
+	{file: "PLTrendRowDefItems", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""},
+	{file: "FixedRowDefRange", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""},
+	{file: "VariableRowDefRange", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""},
+	{file: "ViewSQLClick", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""},
+	{file: "ViewSQLFixedSingleColumn", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""},
+	{file: "RowDefItems2", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""},
+	{file: "CategoryName", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
+]
 description: 
 ---
 
@@ -13,7 +30,7 @@ Starting with version 2.5.0, Interject provides the option of defining multiple 
 
 Another feature that has been added is the ability to define multiple row def items within a single column. This is typically a list separated by a delimiter. The list feature provides a way to further filter the data for a Variable Report. For a Fixed Report, Interject can either return the last record that matches this criteria or aggregate the records in a sum.
 
-To accommodate these new features, a new setting is introduced where one can set the default delimiter and choose to either auto-sum up the list or return the last record. The setting is a named range called [InterjectConfig_Settings](/wIndex/InterjectConfig_Settings.html) that you define inside the Excel file.
+To accommodate these new features, a new setting is introduced where one can set the default delimiter and choose to either auto-sum up the list or return the last record. The setting is a named range called [InterjectConfig_Settings](/wIndex/QuickTools-Names.md#appending-a-prefix-andor-suffix-to-a-name) that you define inside the Excel file.
 
 ## Multi-Column RowDef Feature
 
@@ -59,7 +76,7 @@ Notice this report is a Variable Report with the RowDef Items defined in column 
 
 ## RowDef Items
 
-The Fixed and Variable Reports take a parameter called "RowDefRange" (for more information about this parameter, see [ReportFixed](/wIndex/ReportFixed.html#function-arguments)). This parameter defines a range that includes a set of individual values which are "RowDef Items". Here is an example of a Fixed Report with a single column of row def items (B16:B28):
+The Fixed and Variable Reports take a parameter called "RowDefRange" (for more information about this parameter, see [ReportFixed](/wFunctions/ReportFixed.html#function-arguments)). This parameter defines a range that includes a set of individual values which are "RowDef Items". Here is an example of a Fixed Report with a single column of row def items (B16:B28):
 
 ![](/images/RowDefinitionRange/FixedRowDefRange.png)
 <br>

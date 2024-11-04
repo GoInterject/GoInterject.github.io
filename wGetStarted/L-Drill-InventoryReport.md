@@ -3,12 +3,14 @@ title: "Drill: Inventory Report"
 filename: "L-Drill-InventoryReport.md"
 layout: custom
 keywords: [drill, report, hyperlinks, walkthrough]
-headings: ["Overview", "Unfreezing the Report", "Setting up the Drill", "Creating Hyperlinks as Drills"]
-links: ["/wAbout/Inventory-Reports.html", "/wIndex/ReportDrill.html", "#creating-hyperlinks-as-drills", "/wIndex/ReportDrill.html", "/wIndex/PairGroup.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "wGetStarted/L-Drill-FinancialReport.html"]
+headings: ["Overview", "Initializing the Report", "Setting up the Drill", "Creating Hyperlinks as Drills"]
+links: ["/wAbout/Inventory-Reports.html", "/wFunctions/ReportDrill.html", "#creating-hyperlinks-as-drills", "/wFunctions/ReportDrill.html", "/wFunctions/PairGroup.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html", "/wGetStarted/L-Drill-FinancialReport.html"]
 image_dir: "L-Drill-Inventory"
 images: [
 	{file: "01", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Inventory by Category", ribbon: "", config: ""}, 
 	{file: "02", type: "png", site: "Excel", cat: "Freeze Panes", sub: "", report: "Inventory by Category", ribbon: "", config: ""}, 
+	{file: "02b", type: "png", site: "Excel", cat: "Right Click Menu", sub: "Clear Contents", report: "Inventory by Category", ribbon: "", config: ""}, 
+	{file: "02c", type: "png", site: "Excel", cat: "Right Click Menu", sub: "Remove Hyperlinks", report: "Inventory by Category", ribbon: "", config: ""}, 
 	{file: "03", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, 
 	{file: "04", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, 
 	{file: "05", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "Inventory by Category", ribbon: "", config: "Yes"}, 
@@ -47,7 +49,7 @@ In this example, you will view drilling between reports using the same Inventory
 ![](/images/L-Drill-Inventory/02.png)
 <br>
 
-**Step 3:** In this report the [ReportDrill()](/wIndex/ReportDrill.html) function may have been already set up. To follow along in this guide, you will need to remove this function so you can set them up manually. Scroll up to the configuration rows and select the the drill and clear their contents.
+**Step 3:** In this report the [ReportDrill()](/wFunctions/ReportDrill.html) function may have been already set up. To follow along in this guide, you will need to remove this function so you can set them up manually. Scroll up to the configuration rows and select the the drill and clear their contents.
 
 ![](/images/L-Drill-Inventory/02b.png)
 <br>
@@ -61,7 +63,7 @@ The report is now ready to be set up for drilling.
 
 ### Setting up the Drill
 
-**Step 1:** Type [**=ReportDrill()**](/wIndex/ReportDrill.html) into cell C5. Then, click the **fx** button to bring up the Function Wizard.
+**Step 1:** Type [**=ReportDrill()**](/wFunctions/ReportDrill.html) into cell C5. Then, click the **fx** button to bring up the Function Wizard.
 
 ![](/images/L-Drill-Inventory/03.png)
 <br>
@@ -71,7 +73,7 @@ The report is now ready to be set up for drilling.
 ![](/images/L-Drill-Inventory/04.png)
 <br>
 
-**Step 3:** Next use the TransferPairs argument to note which cell values in the source worksheet will be transferred to the target worksheet during the drill operation. To do this, use special functions to pair the source cells to the target cells. Type [**PairGroup(Pair())**](/wIndex/PairGroup.html) in the TransferPairs argument to get it started.
+**Step 3:** Next use the TransferPairs argument to note which cell values in the source worksheet will be transferred to the target worksheet during the drill operation. To do this, use special functions to pair the source cells to the target cells. Type [**PairGroup(Pair())**](/wFunctions/PairGroup.html) in the TransferPairs argument to get it started.
 
 ![](/images/L-Drill-Inventory/05.png)
 <br>
@@ -133,5 +135,5 @@ Here, you have the report pulled and are ready to go.
 ![](/images/L-Drill-Inventory/InventoryDrill.gif)
 <br>
 
-Hyperlinking Drills is a simple way to make Interject reports faster and more user-friendly. Click [here](wGetStarted/L-Drill-FinancialReport.html) for the Financial Report Drill walkthrough.
+Hyperlinking Drills is a simple way to make Interject reports faster and more user-friendly. Click [here](/wGetStarted/L-Drill-FinancialReport.html) for the Financial Report Drill walkthrough.
 

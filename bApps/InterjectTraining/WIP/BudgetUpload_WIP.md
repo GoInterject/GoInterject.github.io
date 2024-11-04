@@ -4,46 +4,46 @@ filename: "BudgetUpload_WIP.md"
 layout: custom
 keywords: [Training, Budget, Budget Upload Tab]
 headings: ["Overview", "Uploading to more than one district at a time", "Drop Budget numbers in without pulling first", "Do I have security rights to Save from the Budget Upload tab?", "Budget Upload and the Control Center", "After Corp Cutoff and after BOD", "Common Save Errors"]
-links: ["/bApps/InterjectTraining/Budget/BudgetChangeQueryToolSummary.html", "/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html", "/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html", "/bApps/InterjectTraining/Budget/BudgetChangeQueryToolSummary.html"]
-image_dir: "WCNTraining/Budget"
+links: ["/bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html", "/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html", "/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html", "/bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html"]
+image_dir: "WCNTraining"
 images: [
-	{file: "BudgetUpload_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_MultipleDistrictsPull", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_MultipleDistrictsSave", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_BlankRowsDefault", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_InsertNewRowsMiddle", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_InsertNewRowsFromEmpty", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_QuickTools", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_SaveFormula", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_SmallSaveRange", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_BigSaveRange", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "CapitalInput_DPANavigation", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "CapitalInput_DPAWindow", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_ControlCenter1District", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_LockLevel1District", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_ControlCenter2Districts", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_LockLevel2Districts", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_CCAfterCorpCutoff", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_AfterCorpCutoffMessage", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_AfterCorpCutoffRowMessage", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_UnsyncedChangesBCQuery", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_LockLevelError", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_DPAError", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_InvalidSource", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_InvalidYear", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_IncompleteGLString", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_InvalidAccount", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_InvalidDistrict", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_InvalidSystem", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_InvalidSubSystem", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_DuplicateAccount", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_InvalidAmount", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_DistrictNotinRightsRow", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_RegCorpMultipleDistrictError", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_NotinDPAforDistrict", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_CannotUpdateAutocalcs", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_AfterCorpCutoffMessage", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudgetUpload_AfterCorpCutoffRowMessageSingle", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
+	{file: "Budget/BudgetUpload_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_MultipleDistrictsPull", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_MultipleDistrictsSave", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_BlankRowsDefault", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_InsertNewRowsMiddle", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_InsertNewRowsFromEmpty", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_QuickTools", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_SaveFormula", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_SmallSaveRange", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_BigSaveRange", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/CapitalInput_DPANavigation", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/CapitalInput_DPAWindow", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_ControlCenter1District", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_LockLevel1District", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_ControlCenter2Districts", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_LockLevel2Districts", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_CCAfterCorpCutoff", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_AfterCorpCutoffMessage", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_AfterCorpCutoffRowMessage", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_UnsyncedChangesBCQuery", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_LockLevelError", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_DPAError", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_InvalidSource", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_InvalidYear", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_IncompleteGLString", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_InvalidAccount", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_InvalidDistrict", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_InvalidSystem", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_InvalidSubSystem", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_DuplicateAccount", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_InvalidAmount", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_DistrictNotinRightsRow", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_RegCorpMultipleDistrictError", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_NotinDPAforDistrict", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_CannotUpdateAutocalcs", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_AfterCorpCutoffMessage", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudgetUpload_AfterCorpCutoffRowMessageSingle", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
 	]
 description: Bulk upload multiple Budget accounts at the same time, in a simple list format.
 ---
@@ -149,11 +149,11 @@ Then try uploading a change to Budget using the **Budget Upload** tool (after th
 
 Notice the changes have been saved to Target Center 2.0, but they are not yet synced to Interject. Once the *Corp Cutoff* date is set to a Date/Time after our change or BOD, this change will then be synced to Interject.
 
-We can use the [Budget Change Query Tool](/bApps/InterjectTraining/Budget/BudgetChangeQueryToolSummary.html) to confirm that our save has been registered in Target Center 2.0. the new tab [UnsyncedChanges](/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html) is designed to pull in all amounts not yet synced to Interject, which neatly matches our inquiry. The screenshot below shows that our Budget save succeeded and is in the database.
+We can use the [Budget Change Query Tool](/bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html) to confirm that our save has been registered in Target Center 2.0. the new tab [UnsyncedChanges](/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html) is designed to pull in all amounts not yet synced to Interject, which neatly matches our inquiry. The screenshot below shows that our Budget save succeeded and is in the database.
 
 ![](/images/WCNTraining/Budget/BudgetUpload_UnsyncedChangesBCQuery.png)
 
-Once **BOD** for a Budget Year has been created, any save from the **Budget Upload Tool** will not automatically sync to Interject again, just like *After Corp Cutoff*. However, while it is not in Interject, it is in Target Center 2.0 and can be checked using the [UnsyncedChanges](/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html) tab in the [Budget Change Query Tool](/bApps/InterjectTraining/Budget/BudgetChangeQueryToolSummary.html). Once Corporate has versioned your change, the Budget amount will be sycned to Interject.
+Once **BOD** for a Budget Year has been created, any save from the **Budget Upload Tool** will not automatically sync to Interject again, just like *After Corp Cutoff*. However, while it is not in Interject, it is in Target Center 2.0 and can be checked using the [UnsyncedChanges](/bApps/InterjectTraining/Budget/BudgetChangeQuery_UnsyncedChanges.html) tab in the [Budget Change Query Tool](/bApps/InterjectTraining/Budget/BudgetChangeQuerySummary.html). Once Corporate has versioned your change, the Budget amount will be sycned to Interject.
 
 ## Common Save Errors
 

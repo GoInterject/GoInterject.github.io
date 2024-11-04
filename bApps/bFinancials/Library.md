@@ -4,7 +4,7 @@ filename: "Library.md"
 layout: custom
 keywords: [Account, Epicor, Companies]
 headings: ["Using the Report Library"]
-links: []
+links: ["/images/Interject-Financials/InterjectFinancialsReportLib.png"]
 image_dir: "Interject-Financials"
 images: [
 	{file: "InterjectFinancialsReportLib", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}

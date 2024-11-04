@@ -4,7 +4,7 @@ filename: "L-Create-AdvancedHideRowsSections.md"
 layout: custom 
 keywords: [hide, rows, sections]
 headings: ["Overview", "Hiding Rows"]
-links: ["/wIndex/ReportHideRowOrColumn.html", "/wAbout/Report-Library-Basics.html", "/wPortal/INTERJECT-Ribbon-Menu-Items.html"]
+links: ["/wFunctions/ReportHideRowOrColumn.html", "/wAbout/Report-Library-Basics.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html"]
 image_dir: "L-Create-AdvancedHideRow"
 images: [
 	{file: "AdvanceRowHide1", type: "png", site: "Add-in", cat: "Quick Tools", sub: "", report: "Inventory By Category", ribbon: "Advanced", config: ""}, 
@@ -26,7 +26,7 @@ description: In this example of the ReportHideRowOrColumn function, we will hide
 
 ## Overview
 
-In this example of the [ReportHideRowOrColumn()](/wIndex/ReportHideRowOrColumn.html) function, we will hide an entire section of a report based on the condition that the section is empty. You would typically use this in a report when data is pulled in with zero values. By hiding the zero value rows, and the entire section when all the rows within it are zero vale, the reporting area will be more usable. 
+In this example of the [ReportHideRowOrColumn()](/wFunctions/ReportHideRowOrColumn.html) function, we will hide an entire section of a report based on the condition that the section is empty. You would typically use this in a report when data is pulled in with zero values. By hiding the zero value rows, and the entire section when all the rows within it are zero vale, the reporting area will be more usable. 
 
 For this demo, find the Interject Inventory Demo in the Interject Demo folder within the [Report Library](/wAbout/Report-Library-Basics.html). Once open, you'll use the **InvByCategory_WithDetail** tab.
 
@@ -36,7 +36,7 @@ For this demo, find the Interject Inventory Demo in the Interject Demo folder wi
 
 ### Hiding Rows
 
-**Step 1:** Start by using the [Quick Tools](/wPortal/INTERJECT-Ribbon-Menu-Items.html) button in the ribbon menu and selecting **Freeze/Unfreeze Panes**.
+**Step 1:** Start by using the [Quick Tools](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html) button in the ribbon menu and selecting **Freeze/Unfreeze Panes**.
 
 ![](/images/L-Create-AdvancedHideRow/AdvanceRowHide1.png)
 <br> 

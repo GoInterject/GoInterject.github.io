@@ -5,14 +5,14 @@ layout: custom
 keywords: [Training, Budget, Budget Change Query]
 headings: ["Overview", "District List", "Review Date Buckets", "Districts with Different Review Dates"]
 links: []
-image_dir: "WCNTraining/Budget"
+image_dir: "WCNTraining"
 images: [
-	{file: "BudChangeQuery_ReviewDateSummary_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudChangeQuery_ReviewDateSummary_DistrictList", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudChangeQuery_ReviewDateSummary_ReviewDateBuckets", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudChangeQuery_ReviewDateSummary_ChangesFrom", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudChangeQuery_ReviewDateSummary_ControlCenterReviewDates", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "BudChangeQuery_ReviewDateSummary_RegCutoffAmounts", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
+	{file: "Budget/BudChangeQuery_ReviewDateSummary_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudChangeQuery_ReviewDateSummary_DistrictList", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudChangeQuery_ReviewDateSummary_ReviewDateBuckets", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudChangeQuery_ReviewDateSummary_ChangesFrom", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudChangeQuery_ReviewDateSummary_ControlCenterReviewDates", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Budget/BudChangeQuery_ReviewDateSummary_RegCutoffAmounts", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
 	]
 description: This tab of the Budget Change Query tool provides a summarized view of the budget amounts across account groupings up to their own Review Date timestamps.
 ---

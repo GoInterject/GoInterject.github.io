@@ -4,7 +4,7 @@ filename: "L-Create-ReportMacro.md"
 layout: custom
 keywords: [report, macro, VBA, triggers, hooks, sub, routine, function]
 headings: ["Overview", "Setting up the Worksheet", "Using Report Macro", "Requirements for VBA", "Enabling VBA Hooks"]
-links: ["/wIndex/ReportMacro.html", "/wIndex/ReportRange.html", "/wAbout/Customer-Aging.html"]
+links: ["/wFunctions/ReportMacro.html", "/wFunctions/ReportRange.html", "/wAbout/Customer-Aging.html"]
 image_dir: "L-Create-RepMacro"
 images: [
 	{file: "01", type: "jpg", site: "Add-in", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "", config: ""}, 
@@ -31,7 +31,7 @@ description: ReportMacro is an Excel formula provided by Interject. It allows In
 
 ## Overview
 
-[ReportMacro()](/wIndex/ReportMacro.html) is an Excel formula provided by Interject. It allows Interject to interact with publicly defined VBA functions on a report. ReportMacro is useful for specialized reports where a customized action needs to be taken. This action can be built into a VBA Macro based on the complex needs of the report. Then, ReportMacro is used to execute the custom action at the right point within the reporting process.
+[ReportMacro()](/wFunctions/ReportMacro.html) is an Excel formula provided by Interject. It allows Interject to interact with publicly defined VBA functions on a report. ReportMacro is useful for specialized reports where a customized action needs to be taken. This action can be built into a VBA Macro based on the complex needs of the report. Then, ReportMacro is used to execute the custom action at the right point within the reporting process.
 
 <blockquote class=lab_info>
  If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 6 Special Features > Lab 6.3 Using Report Macro.
@@ -39,7 +39,7 @@ description: ReportMacro is an Excel formula provided by Interject. It allows In
 
 ### Setting up the Worksheet
 
-The ReportMacro formula acts in conjunction with another Interject report formula such as a [ReportRange()](/wIndex/ReportRange.html). It is useful when a workbook requiring VBA macros must be used. ReportMacro() is an ordered formula, which means that Interject will perform executions on all report formulas placed above or to the left of the ReportMacro() formula before it is executed.
+The ReportMacro formula acts in conjunction with another Interject report formula such as a [ReportRange()](/wFunctions/ReportRange.html). It is useful when a workbook requiring VBA macros must be used. ReportMacro() is an ordered formula, which means that Interject will perform executions on all report formulas placed above or to the left of the ReportMacro() formula before it is executed.
 
 **Step 1:** Open the Customer Aging Report. (If this report is unfamiliar, click [here](/wAbout/Customer-Aging.html) for a business use case review on the Customer Aging Report.) This time, we want to make sure a value is set to 200 every time the report is pulled.
 

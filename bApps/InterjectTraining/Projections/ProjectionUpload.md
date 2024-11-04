@@ -5,32 +5,32 @@ layout: custom
 keywords: [Training, Projections, Projections Upload]
 headings: ["Overview", "Uploading to more than one district at a time", "Drop Projections numbers in without pulling first", "Do I have security rights to Save from the Projections Upload tab?", "Common Save Errors"]
 links: ["/bApps/InterjectTraining/Budget/ControlCenterSecurity.html#projections-tools-and-the-control-center"]
-image_dir: "WCNTraining/Projections"
+image_dir: "WCNTraining"
 images: [
-	{file: "ProjectionUpload_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "ProjectionUpload_MultipleDistrictsPull", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "ProjectionUpload_MultipleDistrictsSave", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "ProjectionUpload_BlankRowsDefault", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "ProjectionUpload_InsertNewRowsMiddle", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "ProjectionUpload_InsertNewRowsFromEmpty", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "ProjectionUpload_QuickTools", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "ProjectionUpload_SaveFormula", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "ProjectionUpload_SmallSaveRange", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "ProjectionUpload_BigSaveRange", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "ProjectionUpload_LockLevelError", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "ProjectionUpload_DPAError", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "ProjectionUpload_InvalidYearMonth", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "ProjectionUpload_IncompleteGLString", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "ProjectionUpload_InvalidAccount", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "ProjectionUpload_InvalidDistrict", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "ProjectionUpload_InvalidSystem", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "ProjectionUpload_InvalidSubSystem", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "ProjectionUpload_DuplicateAccount", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "ProjectionUpload_InvalidAmount", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "ProjectionUpload_DistrictNotinRightsRow", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "ProjectionUpload_RegCorpMultipleDistrictError", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "ProjectionUpload_NotinDPAforDistrict", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "ProjectionUpload_CannotUpdateAutocalcs", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
+	{file: "Projections/ProjectionUpload_FullView", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Projections/ProjectionUpload_MultipleDistrictsPull", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Projections/ProjectionUpload_MultipleDistrictsSave", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Projections/ProjectionUpload_BlankRowsDefault", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Projections/ProjectionUpload_InsertNewRowsMiddle", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Projections/ProjectionUpload_InsertNewRowsFromEmpty", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Projections/ProjectionUpload_QuickTools", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Projections/ProjectionUpload_SaveFormula", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Projections/ProjectionUpload_SmallSaveRange", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Projections/ProjectionUpload_BigSaveRange", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Projections/ProjectionUpload_LockLevelError", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Projections/ProjectionUpload_DPAError", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Projections/ProjectionUpload_InvalidYearMonth", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Projections/ProjectionUpload_IncompleteGLString", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Projections/ProjectionUpload_InvalidAccount", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Projections/ProjectionUpload_InvalidDistrict", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Projections/ProjectionUpload_InvalidSystem", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Projections/ProjectionUpload_InvalidSubSystem", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Projections/ProjectionUpload_DuplicateAccount", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Projections/ProjectionUpload_InvalidAmount", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Projections/ProjectionUpload_DistrictNotinRightsRow", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Projections/ProjectionUpload_RegCorpMultipleDistrictError", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Projections/ProjectionUpload_NotinDPAforDistrict", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}, 
+	{file: "Projections/ProjectionUpload_CannotUpdateAutocalcs", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""}
 	]
 description: The Projections Upload Tool allows controllers to upload projections for multiple accounts in a district at the same time. This upload tool closely matches the Budget Upload Tool in design and function.
 ---
