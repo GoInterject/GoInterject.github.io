@@ -10606,7 +10606,7 @@ https://docs.gointerject.com/wFunctions/Excel-Function-Index.html:
   - /wFunctions/jFocus.html
   - /wFunctions/jFreezePanes.html
   - /wFunctions/jCombine.html
-  - /wFunctions/jCombine_IF.html
+  - /wFunctions/jCombineIf.html
   - /wFunctions/jDataPortal.html
   - /wFunctions/jColumnDef.html
   - /wFunctions/jRangeTag.html
@@ -10667,7 +10667,7 @@ https://docs.gointerject.com/wFunctions/Helper-Functions.html:
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools
   - /wFunctions/jFreezePanes.html
   - /wFunctions/jCombine.html
-  - /wFunctions/jCombine_IF.html
+  - /wFunctions/jCombineIf.html
   - /wFunctions/jDataPortal.html
   - /wFunctions/jColumnDef.html
   - /wFunctions/jRangeTag.html
@@ -11033,7 +11033,7 @@ https://docs.gointerject.com/wFunctions/ReportRange.html:
   - /wFunctions/jDataPortal.html
   - /wFunctions/Param.html
   - /wFunctions/jCombine.html
-  - /wFunctions/jCombine_IF.html
+  - /wFunctions/jCombineIf.html
   title: ReportRange()
 https://docs.gointerject.com/wFunctions/ReportRun.html:
   description: The ReportRun function will run a designated report function(s) within
@@ -11121,7 +11121,7 @@ https://docs.gointerject.com/wFunctions/ReportVariable.html:
   - /wFunctions/jDataPortal.html
   - /wFunctions/Param.html
   - /wFunctions/jCombine.html
-  - /wFunctions/jCombine_IF.html
+  - /wFunctions/jCombineIf.html
   title: ReportVariable()
 https://docs.gointerject.com/wFunctions/SDesc.html:
   description: null
@@ -11265,11 +11265,11 @@ https://docs.gointerject.com/wFunctions/jCombine.html:
   links:
   - /wGetStarted/L-Create-RetainFeature.html
   title: jCombine()
-https://docs.gointerject.com/wFunctions/jCombine_IF.html:
+https://docs.gointerject.com/wFunctions/jCombineIf.html:
   description: The jCombineIF function concatenates a range or multiple ranges of
     cells into a single string using a designated delimiter if a certain condition
     is met.
-  filename: jCombine_IF.md
+  filename: jCombineIf.md
   headings:
   - Function Summary
   - Function Arguments
@@ -11285,10 +11285,10 @@ https://docs.gointerject.com/wFunctions/jCombine_IF.html:
   layout: custom
   links: []
   title: jCombineIF()
-https://docs.gointerject.com/wFunctions/jCombine_Smart.html:
+https://docs.gointerject.com/wFunctions/jCombineSmart.html:
   description: The jCombine function concatenates a range or multiple ranges of cells
     into a single string using a designated delimiter.
-  filename: jCombine_Smart.md
+  filename: jCombineSmart.md
   headings:
   - Function Summary
   - Function Arguments
@@ -21370,7 +21370,7 @@ https://docs.gointerject.com/wReleaseNotes/2024-10_ReleaseNotes.html:
   - what's new
   layout: custom
   links:
-  - /wFunctions/jCombine_Smart.html
+  - /wFunctions/jCombineSmart.html
   - /wGetStarted/L-Create-HideRowCol.html#hiding-columns
   - /wIndex/ReportBuilder.html
   - /wTroubleshoot/TroubleshootingGuide.html

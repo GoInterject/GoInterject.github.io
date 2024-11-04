@@ -4,7 +4,7 @@ filename: "Helper-Functions.md"
 layout: custom
 keywords: [helper, functions, formula]
 headings: ["Overview", "jDropdown", "jFocus", "jFreezePanes", "jCombine", "jCombineIf", "jDataPortal", "jColumnDef", "jRangeTag", "jWorkbookProperty", "jSetting", "Pair", "PairGroup", "Param"]
-links: ["/wFunctions/jDropdown.html", "/wFunctions/jFocus.html", "/wFunctions/jFreezePanes.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools", "/wFunctions/jFreezePanes.html", "/wFunctions/jCombine.html", "/wFunctions/jCombine_IF.html", "/wFunctions/jDataPortal.html", "/wFunctions/jColumnDef.html", "/wFunctions/jRangeTag.html", "/wFunctions/jWorkbookProperty.html", "/wFunctions/jSetting.html", "/wFunctions/Pair.html", "/wFunctions/PairGroup.html", "/wFunctions/PairGroup.html", "/wFunctions/Pair.html", "/wFunctions/Param.html", "/wTroubleshoot/Reports.html#validation-report-for-interject-events"]
+links: ["/wFunctions/jDropdown.html", "/wFunctions/jFocus.html", "/wFunctions/jFreezePanes.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools", "/wFunctions/jFreezePanes.html", "/wFunctions/jCombine.html", "/wFunctions/jCombineIf.html", "/wFunctions/jDataPortal.html", "/wFunctions/jColumnDef.html", "/wFunctions/jRangeTag.html", "/wFunctions/jWorkbookProperty.html", "/wFunctions/jSetting.html", "/wFunctions/Pair.html", "/wFunctions/PairGroup.html", "/wFunctions/PairGroup.html", "/wFunctions/Pair.html", "/wFunctions/Param.html", "/wTroubleshoot/Reports.html#validation-report-for-interject-events"]
 image_dir: ""
 images: []
 description: Helper Functions are functions that are often embedded into other parent functions to be leveraged into more specific and accurate functions or enhance their capabilities.
@@ -33,7 +33,7 @@ The jFreezePanes function freezes a designated pane so the user can scroll throu
 
 The jCombine function concatenates a range or multiple ranges of cells into a single string using a designated delimiter. Blank cells are skipped.
 
-### [jCombineIf](/wFunctions/jCombine_IF.html)
+### [jCombineIf](/wFunctions/jCombineIf.html)
 
 The jCombineIF function concatenates a range or multiple ranges of cells into a single string using a designated delimiter if a certain condition is met. Blank cells are skipped.
 

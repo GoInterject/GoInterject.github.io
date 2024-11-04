@@ -1274,8 +1274,8 @@
         "https://docs.gointerject.com/wFunctions/jCell.html",
         "https://docs.gointerject.com/wFunctions/jColumnDef.html",
         "https://docs.gointerject.com/wFunctions/jCombine.html",
-        "https://docs.gointerject.com/wFunctions/jCombine_IF.html",
-        "https://docs.gointerject.com/wFunctions/jCombine_Smart.html",
+        "https://docs.gointerject.com/wFunctions/jCombineIf.html",
+        "https://docs.gointerject.com/wFunctions/jCombineSmart.html",
         "https://docs.gointerject.com/wFunctions/jDataPortal.html",
         "https://docs.gointerject.com/wFunctions/jDesc.html",
         "https://docs.gointerject.com/wFunctions/jDropdown.html",
@@ -1318,8 +1318,8 @@
         "https://docs.gointerject.com/wFunctions/jCell.html",
         "https://docs.gointerject.com/wFunctions/jColumnDef.html",
         "https://docs.gointerject.com/wFunctions/jCombine.html",
-        "https://docs.gointerject.com/wFunctions/jCombine_IF.html",
-        "https://docs.gointerject.com/wFunctions/jCombine_Smart.html",
+        "https://docs.gointerject.com/wFunctions/jCombineIf.html",
+        "https://docs.gointerject.com/wFunctions/jCombineSmart.html",
         "https://docs.gointerject.com/wFunctions/jDataPortal.html",
         "https://docs.gointerject.com/wFunctions/jDesc.html",
         "https://docs.gointerject.com/wFunctions/jDropdown.html",
@@ -1374,8 +1374,8 @@
         "https://docs.gointerject.com/wFunctions/Param.html",
         "https://docs.gointerject.com/wFunctions/jColumnDef.html",
         "https://docs.gointerject.com/wFunctions/jCombine.html",
-        "https://docs.gointerject.com/wFunctions/jCombine_IF.html",
-        "https://docs.gointerject.com/wFunctions/jCombine_Smart.html",
+        "https://docs.gointerject.com/wFunctions/jCombineIf.html",
+        "https://docs.gointerject.com/wFunctions/jCombineSmart.html",
         "https://docs.gointerject.com/wFunctions/jDataPortal.html",
         "https://docs.gointerject.com/wFunctions/jDropdown.html",
         "https://docs.gointerject.com/wFunctions/jFocus.html",
@@ -1494,10 +1494,10 @@
         "https://docs.gointerject.com/wFunctions/jCombine.html"
     ],
     "jCombineIF": [
-        "https://docs.gointerject.com/wFunctions/jCombine_IF.html"
+        "https://docs.gointerject.com/wFunctions/jCombineIf.html"
     ],
     "jCombineSmart": [
-        "https://docs.gointerject.com/wFunctions/jCombine_Smart.html"
+        "https://docs.gointerject.com/wFunctions/jCombineSmart.html"
     ],
     "jDataPortal": [
         "https://docs.gointerject.com/wFunctions/jDataPortal.html"

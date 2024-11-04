@@ -222,9 +222,9 @@ index:
         - title: jCombine()
           path: /wFunctions/jCombine.html
         - title: jCombineIf()
-          path: /wFunctions/jCombine_IF.html
+          path: /wFunctions/jCombineIf.html
         - title: jCombineSmart()
-          path: /wFunctions/jCombine_Smart.html
+          path: /wFunctions/jCombineSmart.html
         - title: jDataPortal()
           path: /wFunctions/jDataPortal.html
         - title: jColumnDef()
