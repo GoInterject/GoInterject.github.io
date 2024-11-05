@@ -535,14 +535,13 @@ All extracted metadata will be found in the `_metadata` folder.
 <blockquote class=highlight_note>
 <b>Note:</b>  Be sure to commit your changes before running scripts in the event you need to revert back.
 </blockquote>
-<br>
 
 ### Pytests
 
-The Pytest can be run on the site to validate the links (images, internal links, headings, and URLs). 
+The Pytest can be run on the site to validate the links (images, internal links, headings, toc paths, and URLs).
 
 <blockquote class=highlight_note>
-<b>Note:</b> The pytest will use the front_matter.yaml in the _metadata folder. If not found, it will extract the front matter from all doc files.
+<b>Note:</b> The pytest will use the front_matter.yaml in the _metadata folder. If not found, it will extract the front matter from all doc files. Before running the pytest, be sure this file is updated.
 </blockquote>
 <br>
 
@@ -565,3 +564,8 @@ python _python/extraction/extract_all.py
 cd _python
 pytest
 ```
+
+<blockquote class=highlight_note>
+<b>Note:</b> Be sure to update the variables in the <i>_python\config.py</i> file before running scripts.
+</blockquote>
+<br>
