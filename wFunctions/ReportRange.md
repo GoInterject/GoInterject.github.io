@@ -4,7 +4,7 @@ filename: "ReportRange.md"
 layout: custom
 keywords: [ReportRange, range, function, formula, data, pull]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition", "Embeddable Helper Functions"]
-links: ["/wGetStarted/L-Create-CustomerAging.html", "https://docs.gointerject.com/wFunctions/jDataPortal.html", "https://docs.gointerject.com/wFunctions/Param.html", "/wTroubleshoot/Reports.html#validation-report-for-interject-events", "/wGetStarted/L-Create-RetainFeature.html", "https://docs.gointerject.com/wFunctions/jCombine.html", "https://docs.gointerject.com/wFunctions/jCombine_If.html", "/wFunctions/jDataPortal.html", "/wFunctions/Param.html", "/wFunctions/jCombine.html", "/wFunctions/jCombineIf.html"]
+links: ["/wGetStarted/L-Create-CustomerAging.html", "https://docs.gointerject.com/wFunctions/jDataPortal.html", "https://docs.gointerject.com/wFunctions/Param.html", "/wTroubleshoot/Reports.html#validation-report-for-interject-events", "/wGetStarted/L-Create-RetainFeature.html", "https://docs.gointerject.com/wFunctions/jCombine.html", "https://docs.gointerject.com/wFunctions/jCombineIf.html", "/wFunctions/jDataPortal.html", "/wFunctions/Param.html", "/wFunctions/jCombine.html", "/wFunctions/jCombineIf.html"]
 image_dir: ""
 images: []
 description: The ReportRange function pulls data from a data source and inserts it into a single range within a spreadsheet.
@@ -165,7 +165,7 @@ For an example of this function, see [Lab Create: Customer Aging](/wGetStarted/L
   <tbody>
     <tr>
 		<td class="pph"><b>Type</b></td>
-		<td>String/<a href="https://docs.gointerject.com/wFunctions/jCombine.html">jCombine()</a>/<a href="https://docs.gointerject.com/wFunctions/jCombine_If.html">jCombine_If()</a></td>
+		<td>String/<a href="https://docs.gointerject.com/wFunctions/jCombine.html">jCombine()</a>/<a href="https://docs.gointerject.com/wFunctions/jCombineIf.html">jCombineIf()</a></td>
     </tr>
     <tr>
 		<td class="pph"><b>Constraints</b></td>

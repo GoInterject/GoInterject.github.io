@@ -11,8 +11,9 @@
 #   Heading link: Check if the heading exists for the doc page
 #   URL: Check if the URL is valid
 
-# BE SURE TO SET THE ROOT_FOLDER AND SITE_FOLDER IN `config.py`
+# BE SURE TO SET THE CONFIG VARIABLES IN `config.py`
 # ---------------------------------------------------------------
+
 import os
 import logging
 import requests
@@ -82,7 +83,7 @@ def verify_links(root_folder):
         results_images_test = True
         results_links_test = True
         num_files_checked = num_files_checked + 1
-        logger.info(f" Checking: {file_path}")
+        logger.info(f" Checking Links in: {file_path}")
         links = front_matter.get("links", [])
         image_dir = front_matter.get("image_dir", "error")
         images = front_matter.get("images", [])
@@ -119,7 +120,7 @@ def verify_images_in_file(root_folder, file_path, image_dir, images) -> bool:
             if os.path.exists(image_link):
                 pass
             else:
-                logger.error(f"IMAGE NOT FOUND: {image_link} does not exist in: {file_path}\n")
+                logger.error(f"IMAGE NOT FOUND: {image_link} does not exist in: {file_path}")
                 num_errors_images = num_errors_images + 1
                 file_test_results = False
     return file_test_results
@@ -132,7 +133,7 @@ def log_error(message):
 # ---------------------------------------------------------------
 def check_file_exists(linked_file_path, file_path):
     if not os.path.exists(linked_file_path):
-        return log_error(f"FILE NOT FOUND: {linked_file_path} in file: {file_path}\n")
+        return log_error(f"FILE NOT FOUND: {linked_file_path} in file: {file_path}")
     return True
 
 # ---------------------------------------------------------------
@@ -143,7 +144,7 @@ def check_heading_exists(linked_file_path, link_heading, file_path):
     converted_file_headings = [convert_heading_to_anchor(h) for h in file_headings]
 
     if link_heading and link_heading not in converted_file_headings:
-        return log_error(f"HEADING LINK NOT FOUND: {linked_file_path}#{link_heading} in file: {file_path}\n")
+        return log_error(f"HEADING LINK NOT FOUND: {linked_file_path}#{link_heading} in file: {file_path}")
     return True
 
 # ---------------------------------------------------------------
@@ -159,7 +160,7 @@ def verify_links_in_file(root_folder, file_path, links, headings) -> bool:
         if link.startswith("#") and CHECK_HEADINGS:
             anchor_link = link[1:]  # Remove the '#' character
             if anchor_link not in converted_headings:
-                file_test_results = log_error(f"HEADING NOT FOUND: {link} in file: {file_path}\n")
+                file_test_results = log_error(f"HEADING NOT FOUND: {link} in file: {file_path}")
                 num_errors_headings += 1
 
         # Internal Link - check if file exists
@@ -196,17 +197,17 @@ def verify_links_in_file(root_folder, file_path, links, headings) -> bool:
             # External URL - check HTTP response
             elif not link.startswith(base_url) and CHECK_URL_LINKS:
                 if any(substring in link for substring in DOMAINS_TO_SKIP):
-                    logger.info(f"URL FOUND BUT IS SKIPPED: {link} in file: {file_path}\n")
+                    logger.info(f"URL FOUND BUT IS SKIPPED: {link} in file: {file_path}")
                 else:
                     try:
                         response = requests.get(link, allow_redirects=True)
                         if response.status_code in {401, 403}:
-                            logger.info(f"URL FOUND BUT NOT AUTHORIZED: {link} in file: {file_path}\n")
+                            logger.info(f"URL FOUND BUT NOT AUTHORIZED: {link} in file: {file_path}")
                         elif response.status_code != 200:
-                            file_test_results = log_error(f"URL NOT FOUND (Status Code: {response.status_code}): {link} in file: {file_path}\n")
+                            file_test_results = log_error(f"URL NOT FOUND (Status Code: {response.status_code}): {link} in file: {file_path}")
                             num_errors_url += 1
                     except requests.RequestException as e:
-                        file_test_results = log_error(f"URL Error while accessing URL: {link} in file: {file_path} - {str(e)}\n")
+                        file_test_results = log_error(f"URL Error while accessing URL: {link} in file: {file_path} - {str(e)}")
                         num_errors_url += 1
 
     return file_test_results
@@ -227,4 +228,4 @@ def test_links():
     ret_val = verify_links(ROOT_FOLDER)
     num_errors = num_errors_images+num_errors_headings+num_errors_files+num_errors_url
     logger.info(f"\n\nTEST RESULTS: \n\nBroken Images:    {num_errors_images}\nBroken Files:     {num_errors_files}\nBroken Headings:  {num_errors_headings}\nBroken URLs:      {num_errors_url}\nNUM BROKEN LINKS: {num_errors}\n\nTotal Files checked: {num_files_checked}\nTotal Files Errored: {num_file_errors}\nTotal Files Passed:  {num_files_checked-num_file_errors}\n\nTest Log in 'test_log.log'. Errors in 'error_log.log'")
-    assert ret_val == True, "Failed. See log for details."
+    assert ret_val == True, "Link verification failed. See log for details."
