@@ -18,7 +18,7 @@ horizontalnav:
   path: /wTroubleshoot/Troubleshooting-Landing.html
   node: troubleshoot
 - title: Release Notes
-  path: /wReleaseNotes/2024-10_ReleaseNotes.html
+  path: /wReleaseNotes/2024-11_ReleaseNotes.html
   node: releaseNotes
 
 about:
@@ -485,7 +485,7 @@ troubleshoot:
 
 releaseNotes:
 - sectiontitle: Versions
-  path: /wReleaseNotes/2024-10_ReleaseNotes.html
+  path: /wReleaseNotes/2024-11_ReleaseNotes.html
   section:
     - title: 2.5.0.22
       path: /wReleaseNotes/2023-10_ReleaseNotes.html
@@ -497,6 +497,8 @@ releaseNotes:
       path: /wReleaseNotes/2024-06_ReleaseNotes.html
     - title: 2.5.2.11
       path: /wReleaseNotes/2024-08_ReleaseNotes.html
+    - title: 2.5.2.13
+      path: /wReleaseNotes/2024-11_ReleaseNotes.html
 - sectiontitle: 2023
   path: /wReleaseNotes/2023-12_ReleaseNotes.html
   section:
@@ -521,3 +523,5 @@ releaseNotes:
       path: /wReleaseNotes/2024-08_ReleaseNotes.html
     - title: October
       path: /wReleaseNotes/2024-10_ReleaseNotes.html
+    - title: November
+      path: /wReleaseNotes/2024-11_ReleaseNotes.html
