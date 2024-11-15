@@ -30,7 +30,7 @@ Interject uses the Transport Layer Security (TLS). TLS is a cryptographic protoc
 
 ### TLS 1.0/1.1 End of Support
 
-For Interject version 2.3.34 and earlier, the default is TLS 1.1. Support for TLS 1.0 and TLS 1.1 will end by October 31, 2024. For more info, see [here](https://learn.microsoft.com/en-us/lifecycle/announcements/tls-support-ending-10-31-2024){:target="_blank"}{:rel="noopener noreferrer"}. Your two options are:
+For Interject version 2.3.34 and earlier, the default is TLS 1.1. Eventually TLS 1.0/1.1 will enter into end of life. Your two options before then are:
 
  1. [Upgrade Interject](https://portal.gointerject.com/download-interject.html)
 
@@ -42,10 +42,10 @@ For Interject version 2.3.34 and earlier, the default is TLS 1.1. Support for TL
 
 Interject's Addin and Addin Manager have a default TLS setting based on the Interject version:
 
-Interject versions 2.5.2.12 and above:
+Interject versions 2.5.2.13 and above:
 
-- Addin - Uses TLS 1.2 as default
-- Addin Manager - Uses TLS 1.2 as default
+- Addin - Uses latest TLS available
+- Addin Manager - Uses latest TLS available
 
 Interject versions 2.5.0.14 through 2.5.2.11:
 
