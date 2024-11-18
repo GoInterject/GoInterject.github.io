@@ -3,8 +3,8 @@ title: Open Source Projects
 filename: "OpenSourceProjects.md"
 layout: custom
 keywords: []
-headings: ["Overview", "BeetleETL", "Data-Latinizer", "Financial Data Engineering", "ScriptMySQLServer", "Powershell DB Tools GUI"]
-links: ["#beetleetl", "#data-latinizer", "#financial-data-engineering", "#scriptmysqlserver", "#powershell-db-tools-gui", "https://pypi.org/project/BeetleETL/", "https://gitlab.com/Open-Interject/Beetle-ETL", "https://gitlab.com/Open-Interject/Data-Latinizer", "https://gitlab.com/Open-Interject/interview-projects", "https://gitlab.com/Open-Interject/ScriptMySQLServer", "https://gitlab.com/Open-Interject/PowershellDBToolsGui"]
+headings: ["Overview", "BeetleETL", "Data-Latinizer", "ScriptMySQLServer", "Powershell DB Tools GUI"]
+links: ["#beetleetl", "#data-latinizer", "#scriptmysqlserver", "#powershell-db-tools-gui", "https://pypi.org/project/BeetleETL/", "https://gitlab.com/Open-Interject/Beetle-ETL", "https://gitlab.com/Open-Interject/Data-Latinizer", "https://gitlab.com/Open-Interject/ScriptMySQLServer", "https://gitlab.com/Open-Interject/PowershellDBToolsGui"]
 image_dir: ""
 images: []
 description: Interject hosts a variety of open-source projects aimed at providing useful tools for data handling, automation, and database management.
@@ -36,18 +36,6 @@ This project provides a tool to sanitize data in a database using Latin text. It
 To use Data-Latinizer, download or clone the repository, navigate to the Powershell Scripts folder, and run the ExecuteAllSqlScripts.ps1 script, providing your server instance and database details. This script will loop through and execute all SQL files in the project on the given database. If script execution is blocked, the project provides instructions for adjusting the PowerShell execution policy to bypass restrictions.
 
 [Project Repo](https://gitlab.com/Open-Interject/Data-Latinizer)
-
-### Financial Data Engineering
-
-This project focuses on building a foundational database for analyzing securities, similar to an investment firm’s approach. Using public data, such as an energy fund’s holdings combined with SEC filings, the goal is to create a small reporting app that can query stock information by SEC Accession Number. The project leverages the `yfinance` Python package to tie holdings data (containing ticker symbols) to security information.
-
-Key tasks include:
-
-- Integrating unrelated datasets (holdings, SEC data, and stock data).
-- Designing a SQL database for storing and querying stock data.
-- Building a web app (using Streamlit) to retrieve and display financial information.
-
-[Project Repo](https://github.com/GoInterject/interview-projects/tree/main/financials-example)
 
 ### ScriptMySQLServer
 
