@@ -415,7 +415,7 @@ Developer:
   - title: Custom Items
     path: /wDeveloper/CustomItems.html
 - sectiontitle: Enterprise Capabilities
-  path: /wDeveloper/Diagnostics-InstallConfig.html
+  path: /wDeveloper/EnterpriseLandingPage.html
   section:
   - title: Open Install Configuration
     path: /wDeveloper/Diagnostics-InstallConfig.html
@@ -437,6 +437,8 @@ Developer:
     path: /wDeveloper/ConnectionManager.html
   - title: Internal Support Setup
     path: /wDeveloper/InternalSupportSetup.html
+- title: Open Source Projects
+  path: /wDeveloper/OpenSourceProjects.html
 
 troubleshoot:
 - title: Troubleshooting Guide
