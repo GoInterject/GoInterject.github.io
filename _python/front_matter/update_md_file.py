@@ -21,14 +21,14 @@ if __name__ == "__main__":
     # TAB_FOLDER = "\wIndex"
     # TAB_FOLDER = "\wReleaseNotes"
     # TAB_FOLDER = "\wDeveloper"
-    # TAB_FOLDER = "\wPortal"
+    TAB_FOLDER = "\wPortal"
     # TAB_FOLDER = "\wGetStarted"
     # TAB_FOLDER = "\wTroubleshoot"
-    TAB_FOLDER = "\wAbout"
+    # TAB_FOLDER = "\wAbout"
     # TAB_FOLDER = "\wLabs"
     # TAB_FOLDER = ""
     # TAB_FOLDER = r"\bApps\bFinancials"
-    FILE = "SingleUser"
+    FILE = "DataPortals"
 
     NEW_DOC_PAGE = True # Set to true will generate images entry from all images referenced in the file
     # NEW_DOC_PAGE = False # Set to false will not update images if image front matter entry count is different than images referenced in file count
