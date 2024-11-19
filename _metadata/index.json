@@ -795,7 +795,8 @@
         "https://docs.gointerject.com/wReleaseNotes/2024-06_ReleaseNotes.html",
         "https://docs.gointerject.com/wReleaseNotes/2024-07_ReleaseNotes.html",
         "https://docs.gointerject.com/wReleaseNotes/2024-08_ReleaseNotes.html",
-        "https://docs.gointerject.com/wReleaseNotes/2024-10_ReleaseNotes.html"
+        "https://docs.gointerject.com/wReleaseNotes/2024-10_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2024-11_ReleaseNotes.html"
     ],
     "changing": [
         "https://docs.gointerject.com/wPortal/Altering-User-Passwords.html"
@@ -847,6 +848,9 @@
         "https://docs.gointerject.com/wDeveloper/InternalSupportSetup.html",
         "https://docs.gointerject.com/wDeveloper/Managing-Settings-Cache.html",
         "https://docs.gointerject.com/wTroubleshoot/WebProxy.html"
+    ],
+    "configuration": [
+        "https://docs.gointerject.com/wDeveloper/EnterpriseLandingPage.html"
     ],
     "configurations": [
         "https://docs.gointerject.com/bApps/bFinancials/Technical-Install.html"
@@ -1193,7 +1197,8 @@
         "https://docs.gointerject.com/wGetStarted/L-Export-QuickExportAndPDF.html"
     ],
     "federated": [
-        "https://docs.gointerject.com/wDeveloper/ConnectionManager.html"
+        "https://docs.gointerject.com/wDeveloper/ConnectionManager.html",
+        "https://docs.gointerject.com/wDeveloper/EnterpriseLandingPage.html"
     ],
     "file": [
         "https://docs.gointerject.com/wAbout/Report-Library-Basics.html",
@@ -1405,7 +1410,8 @@
         "https://docs.gointerject.com/wReleaseNotes/2024-06_ReleaseNotes.html",
         "https://docs.gointerject.com/wReleaseNotes/2024-07_ReleaseNotes.html",
         "https://docs.gointerject.com/wReleaseNotes/2024-08_ReleaseNotes.html",
-        "https://docs.gointerject.com/wReleaseNotes/2024-10_ReleaseNotes.html"
+        "https://docs.gointerject.com/wReleaseNotes/2024-10_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2024-11_ReleaseNotes.html"
     ],
     "hooks": [
         "https://docs.gointerject.com/wGetStarted/L-Create-ReportMacro.html"
@@ -1462,6 +1468,9 @@
     ],
     "installing": [
         "https://docs.gointerject.com/wAbout/Using-INTERJECT.html"
+    ],
+    "integration": [
+        "https://docs.gointerject.com/wDeveloper/EnterpriseLandingPage.html"
     ],
     "interject": [
         "https://docs.gointerject.com/wTroubleshoot/Interject-Support.html"
@@ -2174,7 +2183,8 @@
         "https://docs.gointerject.com/wReleaseNotes/2024-06_ReleaseNotes.html",
         "https://docs.gointerject.com/wReleaseNotes/2024-07_ReleaseNotes.html",
         "https://docs.gointerject.com/wReleaseNotes/2024-08_ReleaseNotes.html",
-        "https://docs.gointerject.com/wReleaseNotes/2024-10_ReleaseNotes.html"
+        "https://docs.gointerject.com/wReleaseNotes/2024-10_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2024-11_ReleaseNotes.html"
     ],
     "updating": [
         "https://docs.gointerject.com/wAbout/ReportLibraryOrganization.html",
@@ -2263,7 +2273,8 @@
         "https://docs.gointerject.com/wReleaseNotes/2024-06_ReleaseNotes.html",
         "https://docs.gointerject.com/wReleaseNotes/2024-07_ReleaseNotes.html",
         "https://docs.gointerject.com/wReleaseNotes/2024-08_ReleaseNotes.html",
-        "https://docs.gointerject.com/wReleaseNotes/2024-10_ReleaseNotes.html"
+        "https://docs.gointerject.com/wReleaseNotes/2024-10_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2024-11_ReleaseNotes.html"
     ],
     "virtual private network": [
         "https://docs.gointerject.com/wTroubleshoot/Transport-Errors.html"
@@ -2331,7 +2342,8 @@
         "https://docs.gointerject.com/wReleaseNotes/2024-06_ReleaseNotes.html",
         "https://docs.gointerject.com/wReleaseNotes/2024-07_ReleaseNotes.html",
         "https://docs.gointerject.com/wReleaseNotes/2024-08_ReleaseNotes.html",
-        "https://docs.gointerject.com/wReleaseNotes/2024-10_ReleaseNotes.html"
+        "https://docs.gointerject.com/wReleaseNotes/2024-10_ReleaseNotes.html",
+        "https://docs.gointerject.com/wReleaseNotes/2024-11_ReleaseNotes.html"
     ],
     "window": [
         "https://docs.gointerject.com/wFunctions/jFreezePanes.html"
