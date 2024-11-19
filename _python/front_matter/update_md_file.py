@@ -28,9 +28,9 @@ if __name__ == "__main__":
     # TAB_FOLDER = "\wLabs"
     # TAB_FOLDER = ""
     # TAB_FOLDER = r"\bApps\bFinancials"
-    FILE = "DataPortals"
+    FILE = "Data-Portals"
 
-    NEW_DOC_PAGE = True # Set to true will generate images entry from all images referenced in the file
+    NEW_DOC_PAGE = False # Set to true will generate images entry from all images referenced in the file
     # NEW_DOC_PAGE = False # Set to false will not update images if image front matter entry count is different than images referenced in file count
 
     file_to_update = ROOT_FOLDER + TAB_FOLDER + "\\" + FILE + ".md"
