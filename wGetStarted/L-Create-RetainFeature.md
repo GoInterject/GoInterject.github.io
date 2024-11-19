@@ -4,7 +4,7 @@ filename: "L-Create-RetainFeature.md"
 layout: custom
 keywords: [retain, formulas, keep, don't clear, RetainedRowColumns, InsertNewRowsWithin]
 headings: ["Overview", "Create Simple Formulas", "Without RetainedRowColumns", "With RetainedRowColumns", "Insert New Rows Within"]
-links: ["/wFunctions/ReportRange.html", "/wFunctions/ReportVariable.html", "/wFunctions/jCombine.html"]
+links: ["/wFunctions/ReportRange.html", "/wFunctions/ReportVariable.html", "/wFunctions/jColumnDef.html", "/wFunctions/jCombine.html"]
 image_dir: "L-Create-Retain"
 images: [
 	{file: "01", type: "jpg", site: "Add-in", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, 
@@ -16,6 +16,8 @@ images: [
 	{file: "07", type: "png", site: "Add-in", cat: "Pull Data", sub: "", report: "PL Trend Report", ribbon: "Simple", config: ""}, 
 	{file: "08", type: "png", site: "Add-in", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, 
 	{file: "09", type: "png", site: "Excel", cat: "Right Click Menu", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}, 
+	{file: "InsertRow", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""},
+	{file: "EnterjColumnDef", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""},
 	{file: "10", type: "jpg", site: "Excel", cat: "Function Wizard", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}, 
 	{file: "11", type: "jpg", site: "Excel", cat: "Function Wizard", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}, 
 	{file: "12", type: "jpg", site: "Add-in", cat: "Pull Data", sub: "", report: "PL Trend Report", ribbon: "Simple", config: "Yes"}, 
@@ -104,19 +106,33 @@ To fix this, use the RetainedRowColumns to retain the rows and your formulas.
 ![](/images/L-Create-Retain/09.png)
 <br>
 
-**Step 2:** Now, click on the cell **G16,** which contains the ReportVariable() formula. Now click the **fx** button to pull up the function wizard.
+**Step 2:** Next we need to identify the key column(s) that will be used to signify which rows to be retained. Interject will retain any row with a value in any of these columns. Typically you would enter the name or list of names of the key columns. However, in this financial report, the key columns are using the [jColumnDef()](/wFunctions/jColumnDef.html) function. This function creates a composite column key made up of multiple values.
+
+You can still reference jColumnDef columns by using the names "jColumnDef_1", "jColumnDef_2", "jColumnDef_3", etc. To insert these names, you will create a new row that contains these names so you can reference them in the ReportVariable function.
+
+First right click row 3 and click **Insert** to insert a new row. 
+
+![](/images/L-Create-Retain/InsertRow.png)
+<br>
+
+Now in L3, M3, and N3, enter "jColumnDef_1", "jColumnDef_2", and "jColumnDef_3" respectively.
+
+![](/images/L-Create-Retain/EnterjColumnDef.png)
+<br>
+
+**Step 3:** Now you will reference these 3 columns in the ReportVariable function. Click on the cell **G16**, which contains the ReportVariable formula. Now click the **fx** button to pull up the function wizard.
 
 ![](/images/L-Create-Retain/10.jpg)
 <br>
 
-Now scroll down to the **RetainRowColumns.** The RetainRowColumns argument expects a single string of comma delimited names of columns that will be retained after a data pull. Instead of entering the string, the [jCombine()](/wFunctions/jCombine.html) helper function is helpful as it will concatenate the column names for us.
+Scroll down to the **RetainRowColumns.** The RetainRowColumns argument expects a single string of comma delimited names of columns that will be retained after a data pull. Instead of entering the string, the [jCombine()](/wFunctions/jCombine.html) helper function is helpful as it will concatenate the column names for us.
 
-Enter **jCombine((F2:G2))** in the field. This will retain all rows that have a value in the Segment1 or Segment1Name columns.
+Enter **jCombine((L3:N3))** in the field. This will retain all rows that have a value in any of these jColumnDef columns.
 
 ![](/images/L-Create-Retain/11.jpg)
 <br>
 
-**Step 3:** Now, if the data changes again, you need to **Pull** the report again.
+**Step 4:** Now, if the data changes again, you need to **Pull** the report again.
 
 ![](/images/L-Create-Retain/12.jpg)
 <br>
