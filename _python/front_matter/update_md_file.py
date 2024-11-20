@@ -28,17 +28,17 @@ if __name__ == "__main__":
     # TAB_FOLDER = "\wLabs"
     # TAB_FOLDER = ""
     # TAB_FOLDER = r"\bApps\bFinancials"
-    FILE = "SingleUser"
+    FILE = "Customer-Aging"
 
     NEW_DOC_PAGE = True # Set to true will generate images entry from all images referenced in the file
     # NEW_DOC_PAGE = False # Set to false will not update images if image front matter entry count is different than images referenced in file count
 
     file_to_update = ROOT_FOLDER + TAB_FOLDER + "\\" + FILE + ".md"
 
-    process_md_file_filename(file_to_update)
-    process_md_file_headings(file_to_update)
-    process_md_file_links(file_to_update)
-    process_md_file_image_dir(file_to_update)
+    # process_md_file_filename(file_to_update)
+    # process_md_file_headings(file_to_update)
+    # process_md_file_links(file_to_update)
+    # process_md_file_image_dir(file_to_update)
     process_md_file_images(file_to_update)
 
     print(f"  Updated front matter for file {file_to_update}")

@@ -23,10 +23,6 @@ from utils.utilities import process_folder
 # ---------------------------------------------------------------
 # GLOBALS
 # ---------------------------------------------------------------
-# If true: if the count between the images in the front matter is different 
-# from the number of images found in the document:
-# will remove front matter image entry and insert a new image entry
-INSERT_NEW_ENTRY = True
 
 # ---------------------------------------------------------------
 # METHODS
@@ -106,108 +102,96 @@ def create_new_image():
     }
 
 # ---------------------------------------------------------------
+def format_images(images):
+    """
+    Format the images list into a string for the front matter.
+    """
+    formatted = '[\n\t' + ',\n\t'.join([
+        '{' + ', '.join([f"{key}: \"{value}\"" for key, value in image.items()]) + '}'
+        for image in images
+    ]) + '\n]'
+    return formatted
+
+# ---------------------------------------------------------------
+def update_front_matter(content, images_string, image_dir="\"\""):
+    """
+    Update the front matter with the provided images string and image directory.
+    """
+    content = delete_images_from_frontmatter(content)
+
+    # Find the position of the image_dir entry
+    match = re.search(r'image_dir:\s*("([^"]*)"|)', content, re.MULTILINE | re.DOTALL)
+
+    if match:
+        return content[:match.end()] + f'\nimages: {images_string}' + content[match.end():]
+    else:
+        return f'---\nimage_dir: {image_dir}\nimages: {images_string}' + content[3:]
+
+# ---------------------------------------------------------------
+def write_to_file(filepath, content):
+    """
+    Write the updated content back to the file.
+    """
+    with open(filepath, 'w', encoding='utf-8') as file:
+        file.write(content)
+
+# ---------------------------------------------------------------
 def process_md_file(filepath):
     global id
     with open(filepath, 'r', encoding='utf-8') as file:
         raw_content = file.read()
 
-    # Extract title and image filenames from the Markdown content
     images_from_front_matter = extract_images_from_frontmatter(raw_content)
     images_from_front_matter_original = copy.deepcopy(images_from_front_matter)
     image_filenames_list = extract_image_filenames(raw_content)
 
-    # No images found in file or front matter
-    if len(images_from_front_matter) == 0 and len(image_filenames_list) == 0:
-        pass
-    # No images found in file
-    elif len(image_filenames_list) == 0:
+    # Case 1: No images in file or front matter
+    if not images_from_front_matter and not image_filenames_list:
+        return
+
+    # Case 2: No images in file: Delete image entry from front matter
+    elif not image_filenames_list:
         content = delete_image_dir_from_frontmatter(raw_content)
         content = delete_images_from_frontmatter(content)
+        updated_content = update_front_matter(content, images_string="[]")
+        write_to_file(filepath, updated_content)
 
-        # Find the position of the links entry
-        match = re.search(r'^links:\s*\[.*?\]', content, re.MULTILINE | re.DOTALL)
-        
-        if match:
-            # Insert the new content after the matched entry 
-            front_matter = content[:match.end()] + f'\nimage_dir: ""\nimages: []' + content[match.end():]
-        else:
-            # If matched entry is not found, insert make image_dir and new images entry at the beginning
-            front_matter = f'---\nlinks: []\nimage_dir: ""\nimages: []' + content[3:]
-
-        with open(filepath, 'w', encoding='utf-8') as file:
-            file.write(front_matter)
-
-    # Number of images found in front matter is equal to the number found in the file
+    # Case 3: Matching number of images: update filenames and types in front matter
     elif len(images_from_front_matter) == len(image_filenames_list):
-        updated_images = []
+        for image, (_, _, filename) in zip(images_from_front_matter, image_filenames_list):
+            parts = filename.split(".")
+            image['file'] = '.'.join(parts[:-1])  # Update the file value
+            image['type'] = parts[-1]  # Update the type value
 
-        # Builds a list of updated image key for front matter
-        # Updates the file and type of the image entry in the front matter
-        # Iterate through images and filenames simultaneously
-        for image, filename in zip(images_from_front_matter, image_filenames_list):
-            s = filename[2].split(".") # extract type from filename extension
-            image['file'] = '.'.join(s[:-1]) # updates the file value in the image entry of the front matter
-            image['type'] = s[-1] # updates the type value in the image entry of the front matter
-            # print("image = ", image)
-            updated_images.append(image)
-
-        # Only need to change the entry if there is a difference
         if images_from_front_matter != images_from_front_matter_original:
-            # Convert the list of dictionaries to a string without quotes around keys and double quotes around values
-            formatted_string = '[' + ', '.join(['{' + ', '.join([f"{key}: \"{value}\"" for key, value in item.items()]) + '}' for item in updated_images]) + ']'
-            # Each entry in images should be on a separate newline and start with a tab character
-            formatted_string = formatted_string.replace("{", "\n\t{").replace("]", "\n\t]")
+            images_string = format_images(images_from_front_matter)
+            updated_content = update_front_matter(raw_content, images_string)
+            write_to_file(filepath, updated_content)
 
-            # Returns the file contents without the images entry in the front matter
-            content = delete_images_from_frontmatter(raw_content)
-
-            # Find the position of the image_dir entry
-            match = re.search(r'image_dir:\s*("([^"]*)"|)', content, re.MULTILINE | re.DOTALL)
-            
-            if match:
-                # Insert the new content after the matched entry 
-                front_matter = content[:match.end()] + f'\nimages: {formatted_string}' + content[match.end():]
-            else:
-                # If matched entry is not found, insert make image_dir and new images entry at the beginning
-                front_matter = f'---\nimage_dir: ""\nimages: {formatted_string}' + content[3:]
-
-            with open(filepath, 'w', encoding='utf-8') as file:
-                file.write(front_matter)
-
-    # Images found in file and the count does not match the number of images in front matter
-    # Flag is set to replace current images entry in front matter with new entries
-    elif INSERT_NEW_ENTRY:
-        updated_images = []
-        
-        for filename in image_filenames_list:
-            s = filename[2].split(".")
-            new_image = create_new_image()
-            new_image['file'] = '.'.join(s[:-1])
-            new_image['type'] = s[-1]
-            updated_images.append(new_image)
-
-        # Convert the list of dictionaries to a string without quotes around keys and double quotes around values
-        formatted_string = '[\n\t' + ',\n\t'.join(['{' + ', '.join([f"{key}: \"{value}\"" for key, value in item.items()]) + '}' for item in updated_images]) + '\n]'
-
-        content = delete_images_from_frontmatter(raw_content)
-
-        # Find the position of the image_dir entry
-        match = re.search(r'image_dir:\s*("([^"]*)"|)', content, re.MULTILINE | re.DOTALL)
-        
-        if match:
-            # Insert the new content after the matched entry 
-            front_matter = content[:match.end()] + f'\nimages: {formatted_string}' + content[match.end():]
-        else:
-            # If matched entry is not found, insert make image_dir and new images entry at the beginning
-            front_matter = f'---\nimage_dir: ""\nimages: {formatted_string}' + content[3:]
-
-        with open(filepath, 'w', encoding='utf-8') as file:
-            file.write(front_matter)
-
-    # Images found in file and the count does not match the number of images in front matter
-    # Do not update the file
+    # Case 4: Mismatched number of images: add/remove images to match images found in file
     else:
-        print(f"ERROR: File {filepath} not updated: images in front matter ({len(images_from_front_matter)}) and in file ({len(image_filenames_list)}) are not equal") 
+        updated_images = []
+        front_matter_files = {item['file']: item for item in images_from_front_matter}
+
+        for _, _, filename in image_filenames_list:
+            file = filename.split('.')[0]
+            if file in front_matter_files:
+                updated_images.append(front_matter_files[file])
+            else:
+                updated_images.append({
+                    'file': file,
+                    'type': '',
+                    'site': '',
+                    'cat': '',
+                    'sub': '',
+                    'report': '',
+                    'ribbon': '',
+                    'config': ''
+                })
+
+        images_string = format_images(updated_images)
+        updated_content = update_front_matter(raw_content, images_string)
+        write_to_file(filepath, updated_content)
 
 # ---------------------------------------------------------------
 # MAIN
