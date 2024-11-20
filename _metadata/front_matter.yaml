@@ -8337,6 +8337,35 @@ https://docs.gointerject.com/wDeveloper/Enterprise-Login-Setup.html:
   - /wAbout/Logging-In-Enterprise.html
   - https://portal.gointerject.com/
   title: Enterprise Login Setup
+https://docs.gointerject.com/wDeveloper/EnterpriseLandingPage.html:
+  description: Interject's Enterprise Capabilities highlights a suite of features
+    designed to enhance the security, customization, and management of Interject within
+    enterprise environments. These capabilities allow organizations to configure custom
+    installations, securely manage connections, and implement federated logins with
+    single sign-on (SSO). Interject also supports enterprise-level support configuration,
+    providing a seamless and secure experience for both users and administrators.
+  filename: EnterpriseLandingPage.md
+  headings:
+  - Overview
+  image_dir: ''
+  images: []
+  keywords:
+  - federated
+  - configuration
+  - integration
+  layout: custom
+  links:
+  - /wDeveloper/Diagnostics-InstallConfig.html
+  - /wDeveloper/Diagnostics-EnterpriseConnection.html
+  - /wDeveloper/TLS.html
+  - /wDeveloper/InstallerValidation.html
+  - /wDeveloper/ConditionalAccess.html
+  - /wDeveloper/MacroSecurity.html
+  - /wDeveloper/Enterprise-Login-Setup.html
+  - /wDeveloper/Federated-Login-Design.html
+  - /wDeveloper/ConnectionManager.html
+  - /wDeveloper/InternalSupportSetup.html
+  title: Enterprise Capabilities
 https://docs.gointerject.com/wDeveloper/Federated-Login-Design.html:
   description: Interject uses a Duende (previously Identity Server 4) API to handle
     authentication for federated user logins.
@@ -10150,6 +10179,31 @@ https://docs.gointerject.com/wDeveloper/Managing-Settings-Cache.html:
   layout: custom
   links: []
   title: Managing Settings Cache
+https://docs.gointerject.com/wDeveloper/OpenSourceProjects.html:
+  description: Interject hosts a variety of open-source projects aimed at providing
+    useful tools for data handling, automation, and database management.
+  filename: OpenSourceProjects.md
+  headings:
+  - Overview
+  - BeetleETL
+  - Data-Latinizer
+  - ScriptMySQLServer
+  - Powershell DB Tools GUI
+  image_dir: ''
+  images: []
+  keywords: []
+  layout: custom
+  links:
+  - '#beetleetl'
+  - '#data-latinizer'
+  - '#scriptmysqlserver'
+  - '#powershell-db-tools-gui'
+  - https://pypi.org/project/BeetleETL/
+  - https://gitlab.com/Open-Interject/Beetle-ETL
+  - https://gitlab.com/Open-Interject/Data-Latinizer
+  - https://gitlab.com/Open-Interject/ScriptMySQLServer
+  - https://gitlab.com/Open-Interject/PowershellDBToolsGui
+  title: Open Source Projects
 https://docs.gointerject.com/wDeveloper/Request-Context-Parse.html:
   description: This page that lists the interject request context parse stored procedure
   filename: Request-Context-Parse.md
@@ -10460,20 +10514,6 @@ https://docs.gointerject.com/wDeveloper/TLS.html:
   - https://portal.gointerject.com/download-interject.html
   - '#set-tls-settings-via-idssettings-file'
   title: Interject TLS for HTTPS
-https://docs.gointerject.com/wFunctions/BSpec.html:
-  description: null
-  filename: BSpec.md
-  headings:
-  - Function Summary
-  - Function Arguments
-  - Excel Formula Bar Example
-  - Function Composition
-  image_dir: ''
-  images: []
-  keywords: []
-  layout: custom
-  links: []
-  title: BSpec()
 https://docs.gointerject.com/wFunctions/Data-Cell-Functions.html:
   description: Data Cells are focused on a single formula which can be placed anywhere
     in the spreadsheet and can ask for any financial number or summary from it. Once
@@ -10619,20 +10659,6 @@ https://docs.gointerject.com/wFunctions/Excel-Function-Index.html:
   - /wFunctions/jCell.html
   - /wFunctions/jDesc.html
   title: Excel Function Index
-https://docs.gointerject.com/wFunctions/GL.html:
-  description: null
-  filename: GL.md
-  headings:
-  - Function Summary
-  - Function Arguments
-  - Excel Formula Bar Example
-  - Function Composition
-  image_dir: ''
-  images: []
-  keywords: []
-  layout: custom
-  links: []
-  title: GL/NGL()
 https://docs.gointerject.com/wFunctions/Helper-Functions.html:
   description: Helper Functions are functions that are often embedded into other parent
     functions to be leveraged into more specific and accurate functions or enhance
@@ -10988,20 +11014,6 @@ https://docs.gointerject.com/wFunctions/ReportMacro.html:
   - /wFunctions/Event-Functions-Landing.html
   - /wGetStarted/L-Create-ReportMacro.html
   title: ReportMacro()
-https://docs.gointerject.com/wFunctions/ReportMerge.html:
-  description: null
-  filename: ReportMerge.md
-  headings:
-  - Function Summary
-  - Function Arguments
-  - Excel Formula Bar Example
-  - Function Composition
-  image_dir: ''
-  images: []
-  keywords: []
-  layout: custom
-  links: []
-  title: ReportMerge()
 https://docs.gointerject.com/wFunctions/ReportRange.html:
   description: The ReportRange function pulls data from a data source and inserts
     it into a single range within a spreadsheet.
@@ -11123,20 +11135,6 @@ https://docs.gointerject.com/wFunctions/ReportVariable.html:
   - /wFunctions/jCombine.html
   - /wFunctions/jCombineIf.html
   title: ReportVariable()
-https://docs.gointerject.com/wFunctions/SDesc.html:
-  description: null
-  filename: SDesc.md
-  headings:
-  - Function Summary
-  - Function Arguments
-  - Excel Formula Bar Example
-  - Function Composition
-  image_dir: ''
-  images: []
-  keywords: []
-  layout: custom
-  links: []
-  title: null
 https://docs.gointerject.com/wFunctions/jAcct.html:
   description: A helper function that specifies filters for up to six segments of
     a Chart of Accounts
@@ -11159,34 +11157,6 @@ https://docs.gointerject.com/wFunctions/jAcct.html:
   links:
   - /wFunctions/jCell.html
   title: jAcct()
-https://docs.gointerject.com/wFunctions/jAction.html:
-  description: null
-  filename: jAction.md
-  headings:
-  - Function Summary
-  - Function Arguments
-  - Excel Formula Bar Example
-  - Function Composition
-  image_dir: ''
-  images: []
-  keywords: []
-  layout: custom
-  links: []
-  title: jAction()
-https://docs.gointerject.com/wFunctions/jBinder.html:
-  description: null
-  filename: jBinder.md
-  headings:
-  - Function Summary
-  - Function Arguments
-  - Excel Formula Bar Example
-  - Function Composition
-  image_dir: ''
-  images: []
-  keywords: []
-  layout: custom
-  links: []
-  title: jBinder()
 https://docs.gointerject.com/wFunctions/jCell.html:
   description: jCell retrieves data based on the provided parameters.
   filename: jCell.md
@@ -11210,20 +11180,6 @@ https://docs.gointerject.com/wFunctions/jCell.html:
   - /wFunctions/jAcct.html
   - /wFunctions/jAcct.html
   title: jCell/jCellN()
-https://docs.gointerject.com/wFunctions/jColumn.html:
-  description: null
-  filename: jColumn.md
-  headings:
-  - Function Summary
-  - Function Arguments
-  - Excel Formula Bar Example
-  - Function Composition
-  image_dir: ''
-  images: []
-  keywords: []
-  layout: custom
-  links: []
-  title: jColumn()
 https://docs.gointerject.com/wFunctions/jColumnDef.html:
   description: The jColumnDef function defines a column based on one or more parameters.
   filename: jColumnDef.md
@@ -11304,20 +11260,6 @@ https://docs.gointerject.com/wFunctions/jCombineSmart.html:
   layout: custom
   links: []
   title: jCombineSmart()
-https://docs.gointerject.com/wFunctions/jCopy.html:
-  description: null
-  filename: jCopy.md
-  headings:
-  - Function Summary
-  - Function Arguments
-  - Excel Formula Bar Example
-  - Function Composition
-  image_dir: ''
-  images: []
-  keywords: []
-  layout: custom
-  links: []
-  title: jCopy()
 https://docs.gointerject.com/wFunctions/jDataPortal.html:
   description: The jDataPortal function establishes a connection to an Interject Data
     Portal that will be used as the data source for the function it is embedded in.
@@ -11436,48 +11378,6 @@ https://docs.gointerject.com/wFunctions/jFreezePanes.html:
   - /wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools
   - /wGetStarted/L-Create-CustomerAging.html
   title: jFreezePanes()
-https://docs.gointerject.com/wFunctions/jMacro.html:
-  description: null
-  filename: jMacro.md
-  headings:
-  - Function Summary
-  - Function Arguments
-  - Excel Formula Bar Example
-  - Function Composition
-  image_dir: ''
-  images: []
-  keywords: []
-  layout: custom
-  links: []
-  title: jMacro()
-https://docs.gointerject.com/wFunctions/jMerge.html:
-  description: null
-  filename: jMerge.md
-  headings:
-  - Function Summary
-  - Function Arguments
-  - Excel Formula Bar Example
-  - Function Composition
-  image_dir: ''
-  images: []
-  keywords: []
-  layout: custom
-  links: []
-  title: jMerge()
-https://docs.gointerject.com/wFunctions/jMergePoint.html:
-  description: null
-  filename: jMergePoint.md
-  headings:
-  - Function Summary
-  - Function Arguments
-  - Excel Formula Bar Example
-  - Function Composition
-  image_dir: ''
-  images: []
-  keywords: []
-  layout: custom
-  links: []
-  title: jMergePoint()
 https://docs.gointerject.com/wFunctions/jRangeTag.html:
   description: The jRangeTag function simply tags a designated range with a name.
   filename: jRangeTag.md
@@ -11497,48 +11397,6 @@ https://docs.gointerject.com/wFunctions/jRangeTag.html:
   links:
   - /wGetStarted/L-Export-BasicDist.html
   title: jRangeTag()
-https://docs.gointerject.com/wFunctions/jRequireValue.html:
-  description: null
-  filename: jRequireValue.md
-  headings:
-  - Function Summary
-  - Function Arguments
-  - Excel Formula Bar Example
-  - Function Composition
-  image_dir: ''
-  images: []
-  keywords: []
-  layout: custom
-  links: []
-  title: jRequireValue()
-https://docs.gointerject.com/wFunctions/jRun.html:
-  description: null
-  filename: jRun.md
-  headings:
-  - Function Summary
-  - Function Arguments
-  - Excel Formula Bar Example
-  - Function Composition
-  image_dir: ''
-  images: []
-  keywords: []
-  layout: custom
-  links: []
-  title: jRun()
-https://docs.gointerject.com/wFunctions/jScope.html:
-  description: null
-  filename: jScope.md
-  headings:
-  - Function Summary
-  - Function Arguments
-  - Excel Formula Bar Example
-  - Function Composition
-  image_dir: ''
-  images: []
-  keywords: []
-  layout: custom
-  links: []
-  title: jScope()
 https://docs.gointerject.com/wFunctions/jSetting.html:
   description: The jSetting function is a simple way to create a Tag/Value pair that
     can be used internally by the Interject system.
@@ -11559,20 +11417,6 @@ https://docs.gointerject.com/wFunctions/jSetting.html:
   links:
   - /wIndex/QuickTools-Names.html#appending-a-prefix-andor-suffix-to-a-name
   title: jSetting()
-https://docs.gointerject.com/wFunctions/jTabName.html:
-  description: null
-  filename: jTabName.md
-  headings:
-  - Function Summary
-  - Function Arguments
-  - Excel Formula Bar Example
-  - Function Composition
-  image_dir: ''
-  images: []
-  keywords: []
-  layout: custom
-  links: []
-  title: jTabName()
 https://docs.gointerject.com/wFunctions/jWorkbookProperty.html:
   description: The jWorkbookProperty function extracts information from the properties
     of the workbook.
@@ -21376,6 +21220,23 @@ https://docs.gointerject.com/wReleaseNotes/2024-10_ReleaseNotes.html:
   - /wTroubleshoot/TroubleshootingGuide.html
   - /wTroubleshoot/CorruptedInstallation.html
   - /wApi/Pyinterject.html
+  title: Release Notes
+https://docs.gointerject.com/wReleaseNotes/2024-11_ReleaseNotes.html:
+  description: Release notes for this month's updates
+  filename: 2024-11_ReleaseNotes.md
+  headings:
+  - November 2024
+  - Excel Add-in v2.5.2.13
+  image_dir: ''
+  images: []
+  keywords:
+  - change log
+  - updates
+  - versions
+  - history
+  - what's new
+  layout: custom
+  links: []
   title: Release Notes
 https://docs.gointerject.com/wTroubleshoot/Addin-Missing.html:
   description: Every once in a while, Excel Add-ins may end up missing or fail to

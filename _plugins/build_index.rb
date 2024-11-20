@@ -3,7 +3,7 @@
 
 require 'nokogiri'
 
-puts "Running script build_index"
+puts "Setting hook: build_index"
 
 Jekyll::Hooks.register :site, :post_write do |site|
   puts "Building index search_index.json"
