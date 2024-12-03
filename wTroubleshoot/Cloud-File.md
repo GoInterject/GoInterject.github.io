@@ -45,6 +45,8 @@ After uploading a cloud file to the Report Library, it may display missing detai
 
 In addition, attempting to open the link may not do anything or may give the following error:
 
+"An error prevented Interject from transferring the file. The value cannot be null or empty. Parameter name: mediaType"
+
 ![](/images/CloudFile/UnableToOpen.png)
 <br>
 

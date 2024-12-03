@@ -95,6 +95,8 @@ def main():
 
     extract_content_from_pages(folder_to_search, full_output_filepath)
 
+    replace_strings_in_file(full_output_filepath, "/_site", "")
+    
     print(f"  Index created and saved to {full_output_filepath}")
 
 if __name__ == "__main__":
