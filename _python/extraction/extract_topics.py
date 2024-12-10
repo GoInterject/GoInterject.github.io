@@ -1,0 +1,87 @@
+# BUILDS A JSON FILE OF ALL KEYWORDS AND ALL URLS THAT KEYWORD IS FOUND IN THE FRONT MATTER FOR ALL DOC PAGES
+# ---------------------------------------------------------------
+# Run 'extract_front_matter.py' and 'extract_keywords_txt.py' first
+# Creates a json file of all keywords in the documentation site
+# Each keyword will have a list of URLs that it is found in
+# Outputs JSON file to gointerject.github.io/OUTPUT_FOLDER/OUTPUT_FILENAME
+
+# BE SURE TO SET THE CONFIG VARIABLES IN `config.py`
+# ---------------------------------------------------------------
+
+import yaml
+import json
+import os
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from utils.doc_page_folder_list import PageDirectories
+from utils.utilities import convert_filepath_to_url, extract_front_matter_from_file
+from config import ROOT_FOLDER, METADATA_FOLDER
+
+# ---------------------------------------------------------------
+# GLOBALS
+# ---------------------------------------------------------------
+OUTPUT_FOLDER = METADATA_FOLDER
+OUTPUT_FILENAME = 'page_topics.json'
+FRONT_MATTER_FILEPATH = './' + METADATA_FOLDER + '/front_matter.yaml'
+KEYWORDS_FILEPATH = './' + METADATA_FOLDER + '/keywords.txt'
+
+# ---------------------------------------------------------------
+# METHODS
+# ---------------------------------------------------------------
+def extract_headings_from_all_pages(output_file):
+    topics = {}
+
+    for folder in PageDirectories:
+        dir_path = os.path.join(ROOT_FOLDER, folder.value)
+        if not os.path.exists(dir_path):
+            continue
+
+        for file_name in os.listdir(dir_path):
+            filepath = os.path.join(dir_path, file_name)
+            if not file_name.endswith(".md"):
+                continue
+
+            with open(filepath, "r", encoding="utf-8") as file_handle:
+                # Extract the front matter and content of the file
+                front_matter = extract_front_matter_from_file(filepath)
+                web_url = convert_filepath_to_url(filepath)
+
+                # Extract title, skipping "Overview"
+                title = front_matter.get("title")
+                if title and title != "Overview":
+                    if title not in topics:
+                        topics[title] = []
+                    topics[title].append(web_url)
+
+                # Extract headings, skipping "Overview"
+                headings = front_matter.get("headings", [])
+                for heading in headings:
+                    if heading != "Overview":
+                        if heading not in topics:
+                            topics[heading] = []
+                        topics[heading].append(web_url)
+
+
+    with open(output_file, 'w', encoding='utf-8') as json_file:
+        json.dump({"topics": topics}, json_file, indent=2)
+    
+# ---------------------------------------------------------------
+# MAIN
+# ---------------------------------------------------------------
+def main():
+    # Ensure the output folder exists
+    output_folder_path = os.path.join(ROOT_FOLDER, OUTPUT_FOLDER)
+    os.makedirs(output_folder_path, exist_ok=True)
+
+    # Define the output file path for saving the front matter
+    full_output_filepath = os.path.join(ROOT_FOLDER, OUTPUT_FOLDER, OUTPUT_FILENAME)
+
+    output_filepath = "./" + OUTPUT_FOLDER + "/" + OUTPUT_FILENAME
+    
+    extract_headings_from_all_pages(output_filepath)
+
+    print(f"  Headings extracted and saved to {full_output_filepath}")
+
+if __name__ == "__main__":
+    main()
+    
