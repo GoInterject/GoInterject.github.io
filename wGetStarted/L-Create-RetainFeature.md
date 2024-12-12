@@ -4,7 +4,7 @@ filename: "L-Create-RetainFeature.md"
 layout: custom
 keywords: [retain, formulas, keep, don't clear, RetainedRowColumns, InsertNewRowsWithin]
 headings: ["Overview", "Create Simple Formulas", "Without RetainedRowColumns", "With RetainedRowColumns", "Insert New Rows Within"]
-links: ["/wFunctions/ReportRange.html", "/wFunctions/ReportVariable.html", "/wFunctions/jCombine.html"]
+links: ["/wFunctions/ReportRange.html", "/wFunctions/ReportVariable.html", "/wFunctions/jColumnDef.html", "/wFunctions/jCombine.html"]
 image_dir: "L-Create-Retain"
 images: [
 	{file: "01", type: "jpg", site: "Add-in", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, 
@@ -16,6 +16,8 @@ images: [
 	{file: "07", type: "png", site: "Add-in", cat: "Pull Data", sub: "", report: "PL Trend Report", ribbon: "Simple", config: ""}, 
 	{file: "08", type: "png", site: "Add-in", cat: "Report", sub: "", report: "PL Trend Report", ribbon: "", config: ""}, 
 	{file: "09", type: "png", site: "Excel", cat: "Right Click Menu", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}, 
+	{file: "InsertRow", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""},
+	{file: "EnterjColumnDef", type: "png", site: "", cat: "", sub: "", report: "", ribbon: "", config: ""},
 	{file: "10", type: "jpg", site: "Excel", cat: "Function Wizard", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}, 
 	{file: "11", type: "jpg", site: "Excel", cat: "Function Wizard", sub: "", report: "PL Trend Report", ribbon: "", config: "Yes"}, 
 	{file: "12", type: "jpg", site: "Add-in", cat: "Pull Data", sub: "", report: "PL Trend Report", ribbon: "Simple", config: "Yes"}, 
@@ -34,9 +36,9 @@ description: When using Interject to pull data into your spreadsheet, the report
 
 Interject provides a retain feature so that you can update the data in a report without deleting rows, keeping your formulas and other information intact. Typically, when using Interject to pull data into your spreadsheet, the report area will be cleared before new data is inserted. This is typically done by the deletion of rows. In some situations, you may want to avoid this clear action in order to retain some formulas or other information, since pulling could remove formulas you have on other columns related to certain data rows. This is especially true when you are budgeting or forecasting with historical numbers. The report may have history on the left and your forecasting formulas and numbers will be input on the right.
 
-Interject's retain feature is available for the [ReportRange()](/wFunctions/ReportRange.html) and the [ReportVariable()](/wFunctions/ReportVariable.html) functions.
-
 Since Interject must still update your data, it must determine which columns act as the key values, so it can place the correct data in the correct row. By specifying these key columns in the RetainRowColumns parameter, Interject will retain any row of data where there is a value in these columns. Consequently, on a Pull-Clear action, Interject will not delete these rows but instead zero the amounts.
+
+Interject's retain feature is available for the [ReportRange()](/wFunctions/ReportRange.html) and the [ReportVariable()](/wFunctions/ReportVariable.html) functions.
 
 This example shows how to use the retain feature in your reports. It uses the PL Trend report found in the Report Library under the Interject Financials folder.
 
@@ -104,19 +106,33 @@ To fix this, use the RetainedRowColumns to retain the rows and your formulas.
 ![](/images/L-Create-Retain/09.png)
 <br>
 
-**Step 2:** Now, click on the cell **G16,** which contains the ReportVariable() formula. Now click the **fx** button to pull up the function wizard.
+**Step 2:** Next we need to identify the key column(s) that will be used to signify which rows to be retained. Interject will retain any row with a value in any of these columns. Typically you would enter the name or list of names of the key columns. However, in this financial report, the key columns are using the [jColumnDef()](/wFunctions/jColumnDef.html) function. This function creates a composite column key made up of multiple values.
+
+You can still reference jColumnDef columns by using the names "jColumnDef_1", "jColumnDef_2", "jColumnDef_3", etc. To insert these names, you will create a new row that contains these names so you can reference them in the ReportVariable function.
+
+First right click row 3 and click **Insert** to insert a new row. 
+
+![](/images/L-Create-Retain/InsertRow.png)
+<br>
+
+Now in L3, M3, and N3, enter "jColumnDef_1", "jColumnDef_2", and "jColumnDef_3" respectively.
+
+![](/images/L-Create-Retain/EnterjColumnDef.png)
+<br>
+
+**Step 3:** Now you will reference these 3 columns in the ReportVariable function. Click on the cell **G16**, which contains the ReportVariable formula. Now click the **fx** button to pull up the function wizard.
 
 ![](/images/L-Create-Retain/10.jpg)
 <br>
 
-Now scroll down to the **RetainRowColumns.** The RetainRowColumns argument expects a single string of comma delimited names of columns that will be retained after a data pull. Instead of entering the string, the [jCombine()](/wFunctions/jCombine.html) helper function is helpful as it will concatenate the column names for us.
+Scroll down to the **RetainRowColumns.** The RetainRowColumns argument expects a single string of comma delimited names of columns that will be retained after a data pull. Instead of entering the string, the [jCombine()](/wFunctions/jCombine.html) helper function is helpful as it will concatenate the column names for us.
 
-Enter **jCombine((F2:G2))** in the field. This will retain all rows that have a value in the Segment1 or Segment1Name columns.
+Enter **jCombine((L3:N3))** in the field. This will retain all rows that have a value in any of these jColumnDef columns.
 
 ![](/images/L-Create-Retain/11.jpg)
 <br>
 
-**Step 3:** Now, if the data changes again, you need to **Pull** the report again.
+**Step 4:** Now, if the data changes again, you need to **Pull** the report again.
 
 ![](/images/L-Create-Retain/12.jpg)
 <br>
