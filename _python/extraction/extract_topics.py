@@ -16,6 +16,8 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from utils.doc_page_folder_list import PageDirectories
 from utils.utilities import convert_filepath_to_url, extract_front_matter_from_file
 from config import ROOT_FOLDER, METADATA_FOLDER
+import re
+import unicodedata
 
 # ---------------------------------------------------------------
 # GLOBALS
@@ -27,6 +29,34 @@ KEYWORDS_FILEPATH = './' + METADATA_FOLDER + '/keywords.txt'
 
 # ---------------------------------------------------------------
 # METHODS
+# ---------------------------------------------------------------
+def heading_to_anchor(heading):
+    """
+    Converts a heading string into a URL-friendly anchor following Jekyll's conventions.
+
+    Args:
+        heading (str): The heading text to be converted.
+
+    Returns:
+        str: The generated anchor string.
+    """
+    # Normalize the string to remove special characters
+    normalized_heading = unicodedata.normalize('NFKD', heading)
+    
+    # Convert to lowercase
+    normalized_heading = normalized_heading.lower()
+    
+    # Remove punctuation and non-alphanumeric characters (except spaces)
+    normalized_heading = re.sub(r'[^\w\s-]', '', normalized_heading)
+    
+    # Replace spaces with hyphens
+    normalized_heading = re.sub(r'[\s]+', '-', normalized_heading)
+    
+    # Remove leading and trailing hyphens
+    normalized_heading = normalized_heading.strip('-')
+    
+    return normalized_heading
+
 # ---------------------------------------------------------------
 def extract_headings_from_all_pages(output_file):
     topics = {}
@@ -59,7 +89,8 @@ def extract_headings_from_all_pages(output_file):
                     if heading != "Overview":
                         if heading not in topics:
                             topics[heading] = []
-                        topics[heading].append(web_url)
+                        full_url = web_url + '#' + heading_to_anchor(heading)
+                        topics[heading].append(full_url)
 
 
     with open(output_file, 'w', encoding='utf-8') as json_file:
