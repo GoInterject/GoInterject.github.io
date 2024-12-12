@@ -193,6 +193,7 @@ company
 comparison
 confidentiality
 config
+configuration
 configurations
 conflict
 connection
@@ -321,6 +322,7 @@ insertions
 install
 installation
 installing
+integration
 interject
 inventory
 investigate

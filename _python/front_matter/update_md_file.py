@@ -5,9 +5,10 @@
 
 # BE SURE TO SET THE CONFIG VARIABLES IN `config.py`
 # ---------------------------------------------------------------
-
 import os
 import sys
+import argparse
+
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from config import ROOT_FOLDER
 from update_filename import process_md_file as process_md_file_filename
@@ -16,25 +17,25 @@ from update_image_dir import process_md_file as process_md_file_image_dir
 from update_links import process_md_file as process_md_file_links
 from update_images import process_md_file as process_md_file_images
 
-# ---------------------------------------------------------------
-if __name__ == "__main__":
-    # TAB_FOLDER = "\wIndex"
-    # TAB_FOLDER = "\wReleaseNotes"
-    # TAB_FOLDER = "\wDeveloper"
-    TAB_FOLDER = "\wPortal"
-    # TAB_FOLDER = "\wGetStarted"
-    # TAB_FOLDER = "\wTroubleshoot"
-    # TAB_FOLDER = "\wAbout"
-    # TAB_FOLDER = "\wLabs"
-    # TAB_FOLDER = ""
-    # TAB_FOLDER = r"\bApps\bFinancials"
-    FILE = "Data-Portals"
+def main():
+    # Set up argument parser
+    parser = argparse.ArgumentParser(description="Update front matter for markdown files.")
+    parser.add_argument("file", nargs="?", help="Path to the markdown file to update. Overrides default file path.")
 
-    NEW_DOC_PAGE = False # Set to true will generate images entry from all images referenced in the file
-    # NEW_DOC_PAGE = False # Set to false will not update images if image front matter entry count is different than images referenced in file count
+    args = parser.parse_args()
 
+    # Default values
+    TAB_FOLDER = "\\wTroubleshoot"
+    FILE = "Drill-Animations"
+
+    # Build default file path
     file_to_update = ROOT_FOLDER + TAB_FOLDER + "\\" + FILE + ".md"
 
+    # Override with command-line argument if provided
+    if args.file:
+        file_to_update = ROOT_FOLDER + args.file
+
+    # Process the markdown file
     process_md_file_filename(file_to_update)
     process_md_file_headings(file_to_update)
     process_md_file_links(file_to_update)
@@ -42,3 +43,6 @@ if __name__ == "__main__":
     process_md_file_images(file_to_update)
 
     print(f"  Updated front matter for file {file_to_update}")
+
+if __name__ == "__main__":
+    main()
