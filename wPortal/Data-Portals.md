@@ -2,7 +2,7 @@
 title: Data Portals
 filename: "Data-Portals.md"
 layout: custom
-keywords: [data portals, data connection, setup, system parameters]
+keywords: [data portals, data connection, setup, parameters, input, output, system parameters]
 headings: ["Overview", "Setting up a Data Portal", "Overview of Parameters", "Formula Parameters", "System Parameters", "Adding New Parameters", "System Parameters Options"]
 links: ["/wIndex/ReportBuilder.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#custom-commands", "/wIndex/ReportBuilder.html", "https://docs.gointerject.com/wDeveloper/Request-Context-Parse.html"]
 image_dir: "DataPortals"
@@ -12,6 +12,10 @@ images: [
     {file: "02", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
     {file: "03", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
     {file: "04", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "ParameterFlow", type: "png", site: "External", cat: "Flow Chart", sub: "Input/Output Parameters", report: "", ribbon: "", config: ""},
+	{file: "ParamsInReport", type: "png", site: "Excel", cat: "Report", sub: "", report: "Customer Aging Detail", ribbon: "", config: ""},
+	{file: "ParamsInPortal", type: "png", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""},
+	{file: "ParamsInProcedure", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""},
     {file: "05", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
     {file: "06", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
     {file: "07", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
@@ -66,11 +70,35 @@ The new page will look like below:
 
 ### Overview of Parameters
 
-Parameters are an important feature of Data Portals. There are two types, Formula and System Parameters.
+Parameters are an important feature of Data Portals. Interject can send input parameters from the Excel report to the Stored Procedure through the use of Data Portals. Output parameters can also be sent from the Stored Procedure to Interject to be displayed in the Excel report.
+
+The following diagram describes the flow of parameters to and from the data source:
+
+![](/images/DataPortals/ParameterFlow.png)
+<br>
+
+There are two types of Interject parameters: Formula parameters and System parameters.
 
 ### Formula Parameters
 
 Formula Parameters are passed into the Data Portal from the user inputs in the spreadsheet report or app. In setting up a spreadsheet using Report Formulas, each parameter input can be assigned to a spreadsheet cell so they are passed with the data request. Parameters are often used as filters but can be used for other things as well, depending on the imagination of the developer. They can determine the order that data is returned, or they can be output parameters that are returned from the data request. They are building blocks to create a useful experience to the end users.
+
+The parameters must match in name in the Data Portal and the Stored Procedure. In addition, the order of the parameters must match between the report and the Data Portal.
+
+Parameters in Report:
+
+![](/images/DataPortals/ParamsInReport.png)
+<br>
+
+Parameters in Portal:
+
+![](/images/DataPortals/ParamsInPortal.png)
+<br>
+
+Parameters in Stored Procedure:
+
+![](/images/DataPortals/ParamsInProcedure.png)
+<br>
 
 ### System Parameters
 
