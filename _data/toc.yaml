@@ -469,7 +469,7 @@ troubleshoot:
       path: /wTroubleshoot/WebView2.html
     - title: RowDef Data Clear
       path: /wTroubleshoot/RowDefClear.html
-    - title: Transport Errors
+    - title: Network Transport Errors
       path: /wTroubleshoot/Transport-Errors.html
     - title: Corrupted Interject Installation
       path: /wTroubleshoot/CorruptedInstallation.html
