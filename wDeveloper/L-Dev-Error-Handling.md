@@ -18,7 +18,7 @@ description: Explains how Interject handles errors in Data Portals using T-SQL R
 
 ## Overview
 
-This page will cover error handling in Interject development using T-SQL’s RAISERROR and Interject’s UserNotice flag.
+This page will cover error handling in Interject development using T-SQL's RAISERROR and Interject's UserNotice flag.
 
 ### Understanding Error Handling
 
@@ -33,7 +33,7 @@ RAISERROR is designed to generate error messages and initiate error processing i
 ![](/images/Error-Handling/01.png)
 <br>
 
-**@ErrorMessageToUser** - a string containing a description of the error, with or without a prefix of ‘UserNotice:’.
+**@ErrorMessageToUser** - a string containing a description of the error, with or without a prefix of ‘UserNotice:'.
 
 **severity** - generally a number from 0-18 ranking the severity of the error, typically 18 if you want to stop the execution of a stored procedure.
 

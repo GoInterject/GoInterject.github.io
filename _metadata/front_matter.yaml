@@ -7487,7 +7487,7 @@ https://docs.gointerject.com/wAbout/privacy-policy.html:
   description: Overview of Interject security measures and protocols.
   filename: privacy-policy.md
   headings:
-  - Interject’s Privacy Policy Statement
+  - Interject's Privacy Policy Statement
   - Our Collection of your Information
   - Our Use of your Personal Information
   - Our Disclosure of your Personal Information to Third Parties
@@ -7498,7 +7498,7 @@ https://docs.gointerject.com/wAbout/privacy-policy.html:
   - Your Access to and Updating of your Personal data
   - Marketing Communications
   - Notice to End Users
-  - Children’s Privacy
+  - Children's Privacy
   - Your California Privacy Rights (United States only)
   - Data Security
   - Data Integrity and Purpose Limitations
@@ -19836,7 +19836,7 @@ https://docs.gointerject.com/wPortal/AddUser.html:
   - /wPortal/INTERJECT-Roles.html
   title: Adding a User
 https://docs.gointerject.com/wPortal/Altering-User-Passwords.html:
-  description: This is a section that displays how to reset an Interject user’s password
+  description: This is a section that displays how to reset an Interject user's password
     under the conditions that they are not logged in or they are logged in.
   filename: Altering-User-Passwords.md
   headings:

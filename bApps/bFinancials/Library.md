@@ -25,7 +25,7 @@ Use the Report Library to access and share reports. Any computer on your network
 >
 >  **Step 3:** Pick a report link on the right.
 >
-> **Step 4:** Always check the **Link Version** before opening a report. **The most recent version is green**, and that’s the version you should typically open. Each report is described briefly in the Link Version window and its available versions are listed. 
+> **Step 4:** Always check the **Link Version** before opening a report. **The most recent version is green**, and that's the version you should typically open. Each report is described briefly in the Link Version window and its available versions are listed. 
 >
 > **Step 5:** Click Open Link to open the report.
 >

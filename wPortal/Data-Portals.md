@@ -163,12 +163,12 @@ There are a number of options that can be used as system parameters. The list be
 | Interject_RowDefItems | varchar(max) | Provides the Row Definitions in XML designated within the report formula. |
 | Interject_SourceFileAndPath | varchar(500) | Provides the path and file name delimited by \| of the current file | 
 | Interject_SourceFilePathAndTab | varchar(1000) | Provides the path, file name and active tab name delimited by \| of the current file. |
-| Interject_NTLogin | varchar(50) | Provides the user’s computer login name for their current session. |
+| Interject_NTLogin | varchar(50) | Provides the user's computer login name for their current session. |
 | Interject_UserID | varchar(50) | Provides the Interject User ID for their current session. |
 | Interject_ClientID | varchar(50) | Provides the Interject Client ID for their current session. |
 | Interject_LoginName | varchar(50) | Provides the Interject username for their current session. |
 | Interject_ExcelVersion | varchar(50) | Provides the users Excel version. |
 | Interject_UserRoles | varchar(1000) | Provides the Interject roles assigned to the user. |
-| Interject_LocalTimeZoneOffset | money | Provides a number (0.000) that represents that offset of the user’s time to UTC time. |
+| Interject_LocalTimeZoneOffset | money | Provides a number (0.000) that represents that offset of the user's time to UTC time. |
 | Interject_ReturnError | varchar(2000) | Is an output parameter that can be used to return an error back to the user. Pass empty string for no error. |
 | <a href="https://docs.gointerject.com/wDeveloper/Request-Context-Parse.html">Interject_RequestContext</a> | nvarchar(max) | Provides all above request context and both the open text and encrypted version of the user context. |

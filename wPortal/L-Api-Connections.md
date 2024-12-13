@@ -25,7 +25,7 @@ Another reason to use an API, instead of connecting directly to a data source, i
 
 ### Setup for a Data Connection to an API
 
-In this example, you will set up a simple connection to an example API. Detailed documentation on using a custom data API’s is currently under development. Please contact us for more information if needed.
+In this example, you will set up a simple connection to an example API. Detailed documentation on using a custom data API's is currently under development. Please contact us for more information if needed.
 
 **Step 1:** Navigate to [https://portal.gointerject.com](https://portal.gointerject.com) and [login](/wPortal/Logging-In-to-Website-Portal.html) to Interject. To set up a data connection click on **Data Connections** in the menu on the left.
 

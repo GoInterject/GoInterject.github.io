@@ -13,7 +13,7 @@ description: Overview of Interject security measures and protocols.
 
 ## Overview
 
-Interject provides software, consulting, and online services. The management of Interject is committed to preserving the confidentiality, integrity and availability of all the physical and electronic information assets throughout their organization to maintain legal, regulatory and contractual compliance and to safeguard business integrity and commercial reputation. To achieve this, Interject has implemented an information security policy (ISP) that is subject to routine systematic review and improvement. The ISP demonstrates Interject’s commitment to information security by:
+Interject provides software, consulting, and online services. The management of Interject is committed to preserving the confidentiality, integrity and availability of all the physical and electronic information assets throughout their organization to maintain legal, regulatory and contractual compliance and to safeguard business integrity and commercial reputation. To achieve this, Interject has implemented an information security policy (ISP) that is subject to routine systematic review and improvement. The ISP demonstrates Interject's commitment to information security by:
 
 - Budgeting for security management.
 - Implementing appropriate security technology and high-availability, recoverable systems.
@@ -21,7 +21,7 @@ Interject provides software, consulting, and online services. The management of 
 - Adopting and enforcing requisite policies and ensuring that employees are kept aware of the ISP and their responsibilities towards it via communication and training.
 - Striving to maintain compliance with all applicable legal and industry requirements.
 
-Interject leverages this ISP to support business objectives within their information systems and processes. The related policies and practices are implemented, communicated, and reviewed on a regular basis and reflect the executive management team’s commitment to information security. In the event of a breach of this policy, or any of its supporting policies, all information relating to the breach will be promptly reported and escalated to Interject management, including Interject’s Security and Privacy Officers as appropriate. Policies and practices are in place to govern the protection of each company’s information assets and any information assets of our customers (and others) that have been entrusted to Interject.
+Interject leverages this ISP to support business objectives within their information systems and processes. The related policies and practices are implemented, communicated, and reviewed on a regular basis and reflect the executive management team's commitment to information security. In the event of a breach of this policy, or any of its supporting policies, all information relating to the breach will be promptly reported and escalated to Interject management, including Interject's Security and Privacy Officers as appropriate. Policies and practices are in place to govern the protection of each company's information assets and any information assets of our customers (and others) that have been entrusted to Interject.
 
 ### Information Security Policy
 
@@ -29,7 +29,7 @@ Report Formulas are used to direct data in and out of your spreadsheet reports a
 
 ### Staff
 
-Interject employs staff whose responsibility includes the protection of information. In addition, it is the responsibility of all employees to be aware of information security issues within their daily work. To promote awareness, employees of Interject are provided with training on topics such as the company’s security policies, their responsibilities to protect the confidentiality of information entrusted to them, the appropriate use of resources, the extra care required for the protection of mobile devices, and other related topics.
+Interject employs staff whose responsibility includes the protection of information. In addition, it is the responsibility of all employees to be aware of information security issues within their daily work. To promote awareness, employees of Interject are provided with training on topics such as the company's security policies, their responsibilities to protect the confidentiality of information entrusted to them, the appropriate use of resources, the extra care required for the protection of mobile devices, and other related topics.
 
 ### Confidentiality Agreements
 
@@ -37,7 +37,7 @@ Interject enters into confidentiality or non-disclosure agreements with their ve
 
 ### Background Checks
 
-Interject employees are exposed to confidential customer information and sometimes non-public private information about our customers’ employees and it is critical that we exercise appropriate best practices to ensure that no members of our staff represent a risk to this information. Criminal background checks will be administered on all new hires to ensure confidentiality and maintain appropriate records of these checks. Existing employees may, from time to time, be subject to additional or enhanced background checks as may be required to fulfill contractual requirements or changing industry standards.
+Interject employees are exposed to confidential customer information and sometimes non-public private information about our customers' employees and it is critical that we exercise appropriate best practices to ensure that no members of our staff represent a risk to this information. Criminal background checks will be administered on all new hires to ensure confidentiality and maintain appropriate records of these checks. Existing employees may, from time to time, be subject to additional or enhanced background checks as may be required to fulfill contractual requirements or changing industry standards.
 
 ### Audits and Assessments
 
@@ -65,7 +65,7 @@ Adequate back-up procedures and testing exist to ensure that all essential infor
 
 ### Contacting Us
 
-We have designated a Data Protection Officer who is responsible for monitoring Interject’s ongoing compliance of this Security Policy. If you have any questions about this Security Policy, the practices or concerns of this site, please contact our Data Protection Officer at: security@gointerject.com.
+We have designated a Data Protection Officer who is responsible for monitoring Interject's ongoing compliance of this Security Policy. If you have any questions about this Security Policy, the practices or concerns of this site, please contact our Data Protection Officer at: security@gointerject.com.
 
 For more details on how we handle and protect your personal data, please visit our [Privacy Policy](/wAbout/privacy-policy.html)
 

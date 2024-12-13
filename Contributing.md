@@ -192,7 +192,7 @@ Number-labeled steps should be:
 * red,
 * made using the numbering feature of Snagit,
 * have a middle-centered shadow behind them,
-* large enough to read (use Snagit’s default size),
+* large enough to read (use Snagit's default size),
 * connected to any red arrows also used in the step.
 
 For more complex screenshots containing multiple steps, place steps in an ordered list above the image, numbered correspondingly and tabbed in once.

@@ -35,7 +35,7 @@ Interject Financials - Epicor Enterprise provides a simple template configuratio
 
 
 ### Transaction Reports
-Interject Financials - Epicor transaction reports are governed by admin-configured definitions, tested, validated, and versioned. All transaction reports published in the central report library have been validated for accuracy and are versioned, so you know they’re correct and up-to-date.
+Interject Financials - Epicor transaction reports are governed by admin-configured definitions, tested, validated, and versioned. All transaction reports published in the central report library have been validated for accuracy and are versioned, so you know they're correct and up-to-date.
 
 
 >Included Types

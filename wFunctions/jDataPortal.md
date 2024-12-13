@@ -154,7 +154,7 @@ For instructions on how to set up this function, see [Setting Up the jDataPortal
 |  Function Name  |  =jDataPortal  |  The name of this function.  |  
 |  Data Portal Name  |  NorthwindMultiRecord_Pull  |  This function will use the "NorthwindMultiRecord_Pull" Data Portal for the data source.  |  
 |  Data Result Number  |  2  |  This data connection will use the 2nd result set previously held in memory from previous calls.  |  
-|  Filter  |  [CompanyName] Like ‘%s%’  |  This data connection will only return records whose CompanyName contains an 's' character.  |  
+|  Filter  |  [CompanyName] Like ‘%s%'  |  This data connection will only return records whose CompanyName contains an 's' character.  |  
 |  OrderBy  |  [CustomerID] ASC  |  The data result will be ordered by the column CustomerID in ascending order.  |  
 |  CommandOverride  |    |  Left blank to indicate to not override the command.  |  
 |  ConnectionOverride  |    |  Left blank to indicate to not override the connection.  |  

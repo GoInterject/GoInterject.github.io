@@ -14,7 +14,7 @@ images: [
 description: A quick guide to Using the Interject Data Portal Site.
 ---
 
-Interject’s website portal is a central place to manage Interject client settings and user profiles. Use is to manage users, data portals, and data connections. Data portals and connections support the Interject reporting and save-back functions.
+Interject's website portal is a central place to manage Interject client settings and user profiles. Use is to manage users, data portals, and data connections. Data portals and connections support the Interject reporting and save-back functions.
 
 The database connection can support MS SQL Server OLEDB as well as ODBC. ODBC allows connection to any other relational database. Currently, Interject only supports direct connections with databases that support stored procedures. This includes Oracle, MySQL, MariaDB and many others.
 Logging into Interject Data Connections
