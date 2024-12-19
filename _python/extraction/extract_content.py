@@ -14,7 +14,7 @@ import json
 import html2text
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from utils.doc_page_folder_list import PageDirectories
+from utils.doc_page_folder_list import PageDirectoriesCore
 from utils.utilities import convert_filepath_to_url
 from config import ROOT_FOLDER, SITE_FOLDER, METADATA_FOLDER
 
@@ -48,7 +48,7 @@ def extract_page_data(filepath):
 def extract_content_from_pages(root_folder, output_file):
     page_data_list = []
 
-    for folder in PageDirectories:
+    for folder in PageDirectoriesCore:
         dir_path = os.path.join(root_folder, folder.value)
         if not os.path.exists(dir_path):
             continue
