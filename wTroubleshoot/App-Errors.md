@@ -4,7 +4,7 @@ filename: "App-Errors.md"
 layout: custom
 keywords: [app, addin, errors]
 headings: ["Overview", "Excel Drill Animations", "Add-ins Missing", "Web Proxy Configuration", "Cloud File Uploads Incorrectly", "AdxLoader Don't Match", "WebView2 Installation", "RowDef Data Clear", "Transport Errors", "Corrupted Interject Installation"]
-links: ["/wTroubleshoot/Drill-Animations.html", "/wTroubleshoot/Addin-Missing.html", "/wTroubleshoot/WebProxy.html", "/wTroubleshoot/Cloud-File.html", "/wTroubleshoot/AdxLoader.html", "/wTroubleshoot/WebView2.html", "/wTroubleshoot/RowDefClear.html", "/wTroubleshoot/Transport-Errors.html", "/wTroubleshoot/CorruptedInstallation.html"]
+links: ["/wTroubleshoot/Drill-Animations.html", "/wTroubleshoot/Addin-Missing.html", "/wTroubleshoot/WebProxy.html", "/wTroubleshoot/Cloud-File.html", "/wTroubleshoot/AdxLoader.html", "/wTroubleshoot/WebView2.html", "https://developer.microsoft.com/en-us/microsoft-edge/webview2/", "/wTroubleshoot/RowDefClear.html", "/wTroubleshoot/Transport-Errors.html", "/wTroubleshoot/CorruptedInstallation.html"]
 image_dir: ""
 images: []
 description: Errors can occur for many reasons. Sometimes they are related to the environment or computer running Interject. It is important you have tools to capture everything that is interacting with Excel so, it is easier diagnose the cause of errors. This leads to faster troubleshooting and repair.

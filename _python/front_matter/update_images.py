@@ -10,12 +10,12 @@
 # BE SURE TO SET THE CONFIG VARIABLES IN `config.py`
 # ---------------------------------------------------------------
 
-import os
 import re
 import yaml
 import copy
 import sys
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from pathlib import Path
+sys.path.append(str(Path(__file__).resolve().parent.parent))
 from config import ROOT_FOLDER
 from utils.doc_page_folder_list import PageDirectories
 from utils.utilities import process_folder
