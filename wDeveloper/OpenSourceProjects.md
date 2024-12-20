@@ -20,6 +20,11 @@ Interject hosts a variety of open-source projects aimed at providing useful tool
 - [Script My SQL Server](#scriptmysqlserver) : Set of scripts to automate MySQL server interactions
 - [Powershell DB Tools GUI](#powershell-db-tools-gui) : Simplify scripting out DB objects and executing SQL scripts
 
+<blockquote class=highlight_note>
+<b>Note:</b> These projects are not currently maintained. Use at your own discretion. 
+</blockquote>
+<br>
+
 ### BeetleETL
 
 Beetle is a Python3 package with tools necessary for transferring data from a MongoDB database to a SQL Server Database. A well defined configuration file allows the user to define the exact way data from MongoDB should be transferred to SQL Server, making Beetle a powerful tool for ETL solutions where transferring data from databases is necessary. The package comes equipped with a standalone executable as well as a modular execution setup enabling easy API or custom script integration.

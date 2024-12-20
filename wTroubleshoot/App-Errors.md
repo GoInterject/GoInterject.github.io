@@ -33,11 +33,11 @@ The Report Library provides a central hub where you can upload and download repo
 
 ### [AdxLoader Don't Match](/wTroubleshoot/AdxLoader.html)
 
-This issue results in an error message upon opening Excel. The most likely cause of this error is that the bit version of Excel is out of sync with the Interject Add-in bit version. This will happen if the architecture type of Microsoft Excel/Office is changed (e.g. 32 and 64 bit).
+This issue results in an error message upon opening Excel. The most likely cause of this error is that the bit version of Excel is out of sync with the Interject Add-in bit version. This will happen if the bitness of Microsoft Excel/Office is changed (e.g. 32 and 64 bit).
 
 ### [WebView2 Installation](/wTroubleshoot/WebView2.html)
 
-Interject uses WebView2 for its login screen. If WebView2 is not installed, nothing will appear when you click the login button. Most systems have WebView2 already installed. If, however, it is not, you can install WebView2 manually.
+Interject uses WebView2 for its login screen. If WebView2 is not installed, nothing will appear when you click the login button. Most systems have WebView2 already installed. If, however, it is not, you can install WebView2 [manually](https://developer.microsoft.com/en-us/microsoft-edge/webview2/){:target="_blank"}{:rel="noopener noreferrer"}.
 
 ### [RowDef Data Clear](/wTroubleshoot/RowDefClear.html)
 
@@ -45,7 +45,7 @@ Data does not clear when multiple columns are defined as the RowDefRange for a R
 
 ### [Transport Errors](/wTroubleshoot/Transport-Errors.html)
 
-The network transport layer is responsible for the reliable transmission of data between devices over a network. The transport layer is typically implemented in protocols such as TCP (Transmission Control Protocol) or UDP (User Datagram Protocol). Sometimes in the course of operations, transport errors can occur during the transmission of data between a client and a server.
+The transport layer of a network is responsible for ensuring reliable data transmission between devices. It is commonly implemented using protocols like TCP (Transmission Control Protocol) or UDP (User Datagram Protocol). However, during communication between a client and server, transport errors may occasionally occur.
 
 ### [Corrupted Interject Installation](/wTroubleshoot/CorruptedInstallation.html)
 
