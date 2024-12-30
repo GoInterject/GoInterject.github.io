@@ -24,3 +24,9 @@ _Released 12/20/24_
 * ♻️ Interject Sheet Protector support for selecting individual elements to protect
 
 * ♻️ Better error captures in login history and user client roles
+
+### Portal Site
+
+_Released 12/20/24_
+
+* ✅ New option on Staff Page to download csv of all staff - [See docs](/wPortal/StaffPage.html#the-staff-page)
