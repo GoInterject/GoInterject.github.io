@@ -41,7 +41,7 @@ The button to resize windows can be found in the same location in every window a
 ![](/images/Resizing-Form-Windows/0.7.png)
 <br>
 
-It will open a menu of default sizes that you can choose from when you click on it.
+It will open a menu of default sizes that you can choose from when you click on it. This will not only resize the window but will also resize the font.
 
 ![](/images/Resizing-Form-Windows/0.8.png)
 <br>
@@ -49,6 +49,20 @@ It will open a menu of default sizes that you can choose from when you click on 
 You can also choose a custom sizing within a range of 75%-200% magnification.
 
 ![](/images/Resizing-Form-Windows/0.9.png)
+<br>
+
+### Resize by Dragging
+
+Some Interject forms are able to be resize by dragging the edge or corner. These are the forms that support this functionality:
+
+- [Company](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#company)
+- [Connections](/wDeveloper/ConnectionManager.html)
+- [Login](/wAbout/Logging-In.html)
+- [Report Builder](/wIndex/ReportBuilder.html)
+- [Report Library](/wAbout/Report-Library-Basics.html)
+<br>
+
+![](/images/Resizing-Form-Windows/ResizeFormDrag.png)
 <br>
 
 ### Resize the Current Window
