@@ -3,6 +3,7 @@
 import yaml
 import sys
 from pathlib import Path
+from urllib.parse import urljoin
 sys.path.append(str(Path(__file__).resolve().parent.parent))
 from config import ROOT_FOLDER
 
@@ -25,16 +26,21 @@ def process_folder(root_folder, PageDirectories, process_md_file):
 # ---------------------------------------------------------------
 # Converts a local file path to the url equivalent
 # e.g.:
-# root_folder: D:\\Users\\samuelr\\Documents\\GitHub\\GoInterject.github.io
+# ROOT_FOLDER: D:\\Users\\samuelr\\Documents\\GitHub\\GoInterject.github.io
 # file_path: D:\\Users\\samuelr\\Documents\\GitHub\\GoInterject.github.io\\wAbout\\Basics-of-Report-Formulas.md
 # url: www.gointerject.github.io/wAbout/Basics-of-Report-Formulas.html
 def convert_filepath_to_url(file_path):
-    """Convert a local file path to a www.gointerject.com URL with .html extension."""
-    relative_path = Path(file_path).relative_to(ROOT_FOLDER)  # Get relative path from root_folder
-    web_url = Path("https://docs.gointerject.com") / relative_path  # Prepend the base URL
-    web_url = str(web_url).replace("\\", "/")  # Convert backslashes to forward slashes for URLs
-    web_url = web_url.replace(".md", ".html")  # Change .md extension to .html
-    return web_url
+    """Convert a local file path to a full URL with a .html extension."""
+    global ROOT_FOLDER  # Ensure ROOT_FOLDER is defined as a Path object
+    if not isinstance(ROOT_FOLDER, Path):
+        ROOT_FOLDER = Path(ROOT_FOLDER)
+    
+    relative_path = Path(file_path).resolve().relative_to(ROOT_FOLDER.resolve()).as_posix()
+    relative_path = relative_path.replace(".md", ".html")
+    base_url = "https://docs.gointerject.com/"
+    full_url = urljoin(base_url, relative_path)
+
+    return full_url
 
 # ---------------------------------------------------------------
 # Converts a url to local file path equivalent

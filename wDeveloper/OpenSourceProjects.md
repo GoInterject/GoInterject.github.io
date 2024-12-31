@@ -21,7 +21,7 @@ Interject hosts a variety of open-source projects aimed at providing useful tool
 - [Powershell DB Tools GUI](#powershell-db-tools-gui) : Simplify scripting out DB objects and executing SQL scripts
 
 <blockquote class=highlight_note>
-<b>Note:</b> These projects are not currently maintained. Use at your own discretion. 
+<b>Note:</b> Some of these projects are not actively maintained.
 </blockquote>
 <br>
 
