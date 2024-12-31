@@ -3,8 +3,8 @@ title: Resizing Interject Windows
 filename: "Resizing-Form-Windows.md"
 layout: custom
 keywords: [resize, size, windows, forms, frame, text resize, make text bigger]
-headings: ["Overview", "Resizing Windows", "Resize the Current Window", "Resize All Windows"]
-links: []
+headings: ["Overview", "Resizing Windows", "Resize by Dragging", "Resize the Current Window", "Resize All Windows"]
+links: ["/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#company", "/wDeveloper/ConnectionManager.html", "/wAbout/Logging-In.html", "/wIndex/ReportBuilder.html", "/wAbout/Report-Library-Basics.html"]
 image_dir: "Resizing-Form-Windows"
 images: [
 	{file: "0.7", type: "png", site: "Add-in", cat: "Pull Data", sub: "", report: "", ribbon: "", config: ""}, 
