@@ -19,7 +19,7 @@ _Released 12/20/24_
 
 * ✅ jDropdown upgrade (supports multiple columns)
 
-* ✅ Some Interject forms can now be resized by drag function
+* ✅ Some Interject Add-in windows can now be resized by drag function
 
 * ♻️ Interject Sheet Protector support for selecting individual elements to protect
 
