@@ -34,7 +34,12 @@ You should see a list of staff under your company. You can view various informat
 ![](/images/StaffPage/Staff.png)
 <br>
 
-You can also set up multi factor authentication from here. For more information, see [MFA](/wPortal/MFA.html).
+You can download a csv file of all the staff by clicking the **Download** button:
+
+![](/images/StaffPage/DownloadButton.png)
+<br>
+
+You can also set up multi-factor authentication from here. For more information, see [MFA](/wPortal/MFA.html).
 
 #### External Admins
 

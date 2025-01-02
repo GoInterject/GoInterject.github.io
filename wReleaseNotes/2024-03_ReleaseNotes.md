@@ -17,7 +17,7 @@ description: Release notes for this month's updates
 
 _Released 3/18/24_
 
-* ✅ Added XML number format tag to Interject request XML structure - (Docs coming soon)
+* ✅ Added XML number format tag to Interject request XML structure
 
 * ✅ Added button "Export Sheet" to export workbook feature - [See docs](/wGetStarted/L-Export-QuickExportAndPDF.html#export-sheet)
 
