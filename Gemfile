@@ -45,5 +45,5 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "wdm", "~> 0.1.1" if Gem.win_platform?
 
 gem "rake"
-ruby "3.1.4"
+ruby "~> 3.1.0"
 gem "webrick", "~> 1.7"
