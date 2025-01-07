@@ -9,10 +9,10 @@
 # BE SURE TO SET THE CONFIG VARIABLES IN `config.py`
 # ---------------------------------------------------------------
 
-import os
 import re
 import sys
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from pathlib import Path
+sys.path.append(str(Path(__file__).resolve().parent.parent))
 from config import ROOT_FOLDER
 from utils.doc_page_folder_list import PageDirectories
 from utils.utilities import process_folder
@@ -30,7 +30,7 @@ def process_md_file(filepath):
     # Find the position of the title entry
     match = re.search(r'title: (.+?)(?:\n|$)', content, re.MULTILINE | re.DOTALL)
 
-    filename = os.path.basename(filepath)
+    filename = Path(filepath).name
 
     if match:
         # Insert the filename entry after the title entry without extra spaces and comma

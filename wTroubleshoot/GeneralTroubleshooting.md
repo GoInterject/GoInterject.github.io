@@ -53,7 +53,7 @@ When encountering issues with the Interject Excel Add-in, it is helpful to gathe
 
 - **_Check Proxy Network Setup:_** Ensure that there is no proxy network that could be blocking Interject.
 
-- **_Firewall Settings:_** Verify that your firewall settings are not blocking Interject’s access to the internet.
+- **_Firewall Settings:_** Verify that your firewall settings are not blocking Interject's access to the internet.
 
 - **_TLS:_** Are there special TLS requirements for the system?
 

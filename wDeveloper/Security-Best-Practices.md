@@ -45,7 +45,7 @@ An additional user token is provided by Interject when the Data Portal connects 
 
 In addition to the UserContext node above, there is a node in the data portal parameter @Interject_RequestContext. The XML node \<UserContextEncrypted\>\</UserContextEncrypted\> can be leveraged to trust the user context provided by the data portal parameters. This feature is not enabled, but when available will provide will allow use of client encryption keys and common encryption practices to parse the content.
 
-When considering all the above regarding row level security, you have the ability to specifically identify the user for every data transaction going through the Interject Platform. This identity that can be leveraged in your middle tier code, stored procedure or website API, to be aware of the user’s row level security.
+When considering all the above regarding row level security, you have the ability to specifically identify the user for every data transaction going through the Interject Platform. This identity that can be leveraged in your middle tier code, stored procedure or website API, to be aware of the user's row level security.
 
 ### Template Security
 
@@ -65,11 +65,11 @@ As with all developed applications and row level reports, the testing plan shoul
 
 A best practice method to handle this situation is to add a Data Portal parameter such as **@UserTestMode**. In the middle tier code, the existence of a value provided can trigger the following code steps:
 
-**Step 1:** Using windows authentication or verifying the user token in an API, check to be sure the user can test another user’s security context. This may be hard coded in the middle tier code, can use a lookup list in a database, or even better, verify the correct group in active directory.
+**Step 1:** Using windows authentication or verifying the user token in an API, check to be sure the user can test another user's security context. This may be hard coded in the middle tier code, can use a lookup list in a database, or even better, verify the correct group in active directory.
 
 **Step 2:** Next, verify the value provided in @UserTestMode represents a valid user.
 
-**Step 3:** If the user is allowed to test another user’s security context, change switch the identity so the row level security code is using the identity from @UserTestMode. This operation may be logged for later audit purposes.
+**Step 3:** If the user is allowed to test another user's security context, change switch the identity so the row level security code is using the identity from @UserTestMode. This operation may be logged for later audit purposes.
 
 **Step 4:** In some cases in production, enabling this test mode can be helpful to a support team but the ability to save data changes (if provided in the app) should be prohibited.
 

@@ -14,13 +14,13 @@ images: [
 	{file: "02", type: "jpg", site: "Portal", cat: "Login", sub: "Password Reset Request", report: "", ribbon: "", config: ""}, 
 	{file: "04", type: "jpg", site: "Portal", cat: "Login", sub: "Password Reset Request", report: "", ribbon: "", config: ""}
 	]
-description: This is a section that displays how to reset an Interject user’s password under the conditions that they are not logged in or they are logged in.
+description: This is a section that displays how to reset an Interject user's password under the conditions that they are not logged in or they are logged in.
 ---
 * * *
 
 ## Overview
 
-This is a section that displays how to reset an Interject user’s password under the conditions that they are not logged in or they are logged in.
+This is a section that displays how to reset an Interject user's password under the conditions that they are not logged in or they are logged in.
 
 ### Changing Passwords While Logged In
 

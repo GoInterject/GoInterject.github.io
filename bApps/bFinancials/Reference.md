@@ -14,7 +14,7 @@ description: Reference page for the Intuition Interject Deployment Plan
 
 ## Reference
 
-This deployment documents the steps and procedures to deploy Interject’s Financials for Spreadsheets as a replacement for FRx Financial Reports for Epicor Enterprise 7.x.
+This deployment documents the steps and procedures to deploy Interject's Financials for Spreadsheets as a replacement for FRx Financial Reports for Epicor Enterprise 7.x.
 
 FRx, a Microsoft product, has reached its end-of-life, and official support is ending. Even though this initial deployment focuses on the replacement of FRx and financial reporting, Interject will also be utilized across other departments, functions, and data sources to bring SQL based reporting into the familiar Excel user interface.
 

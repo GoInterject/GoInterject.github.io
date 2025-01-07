@@ -108,7 +108,7 @@ The ReportLookup function pulls a single piece of data from a data source and in
 | Argument Name  |  Example Mapping  |  Explanation   |  
 |------|------|------|
 |  Function Name  |  =ReportLookup()  |  The name of this function.  |  
-|  DataPortal  |  "jDataPortal("NorthwindCustomers",1,"[CustomerID] Like ‘%SAVE%’)"  |  Uses the helper function [jDataPortal()](/wFunctions/jDataPortal.html) designating the "NorthwindCustomers" Data Portal. Filters the records to include only those whose CustomerID contains the string "save".  |  
+|  DataPortal  |  "jDataPortal("NorthwindCustomers",1,"[CustomerID] Like ‘%SAVE%')"  |  Uses the helper function [jDataPortal()](/wFunctions/jDataPortal.html) designating the "NorthwindCustomers" Data Portal. Filters the records to include only those whose CustomerID contains the string "save".  |  
 |  TargetDataRange  |  C14  |  Data will be inserted to cell C14.  |  
 |  ColDefRange  |  H1  |  The column name in H1 will be the data field that is returned from the data source.  |  
 |  Parameters  |  N/A  |  The data returned from the data source will not be filtered.  |  

@@ -7,13 +7,13 @@ headings: ["Overview", "Types of Transport Errors", "Troubleshooting"]
 links: []
 image_dir: ""
 images: []
-description: The network transport layer is responsible for the reliable transmission of data between devices over a network. The transport layer is typically implemented in protocols such as TCP (Transmission Control Protocol) or UDP (User Datagram Protocol). Sometimes in the course of operations, transport errors can occur during the transmission of data between a client and a server.
+description: The transport layer of a network is responsible for ensuring reliable data transmission between devices. It is commonly implemented using protocols like TCP (Transmission Control Protocol) or UDP (User Datagram Protocol). However, during communication between a client and server, transport errors may occasionally occur.
 ---
 * * *
 
 ## Overview
 
-The network transport layer is responsible for the reliable transmission of data between devices over a network. The transport layer is typically implemented in protocols such as TCP (Transmission Control Protocol) or UDP (User Datagram Protocol). Sometimes in the course of operations, transport errors can occur during the transmission of data between a client and a server. 
+The transport layer of a network is responsible for ensuring reliable data transmission between devices. It is commonly implemented using protocols like TCP (Transmission Control Protocol) or UDP (User Datagram Protocol). However, during communication between a client and server, transport errors may occasionally occur.
 
 Network connectivity problems have various causes, but they typically occur because of incorrect network adapters, incorrect switch settings, faulty hardware, or driver issues. Some connectivity symptoms are intermittent and do not clearly point to any one of these causes.
 

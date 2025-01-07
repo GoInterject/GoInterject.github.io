@@ -39,7 +39,7 @@ Excel provides a way to [protect sheets](https://support.microsoft.com/en-au/off
 
 Interject provides a more convenient way to protect a sheet with the [Sheet Protector](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#sheet-protector). The Sheet Protector eliminates the need for a password. Interject uses a default password that is internally managed by the use of Interject [roles](/wPortal/INTERJECT-Roles.html). With the appropriate role, a user does not need to know the protect password and can easily protect/unprotect the sheet. When a sheet is protected using the Sheet Protector window, it will first attempt to use the current password. If that attempt fails it will try any previous passwords that are on file. If those do not work, it will also attempt to use a blank password.
 
-Protecting the sheet still allows for pulls, drills, and many other types of Interject formulas and features. A crucial part of Interject is to still allow users to utilize the input fields built into reports. Protecting the sheet with Interject allows for user inputs to remain unlocked regardless of the user’s role.
+Protecting the sheet still allows for pulls, drills, and many other types of Interject formulas and features. A crucial part of Interject is to still allow users to utilize the input fields built into reports. Protecting the sheet with Interject allows for user inputs to remain unlocked regardless of the user's role.
 
 In the following example, you will protect a sheet and use the Interject pull to illustrate how protected sheets continues to function properly. In this example you use the [Customer Aging](/wGetStarted/L-Create-CustomerAging.html) report.
 
@@ -101,11 +101,11 @@ In the title field, type **Filters** then in the **Refers to cells** field, sele
 
 ### Protecting the Sheet and Pulling Data
 
-Interject’s Sheet Protection tool has three options, **Unprotect, Protect**, and **Cancel**.
+Interject's Sheet Protection tool has three options, **Unprotect, Protect**, and **Cancel**.
 
 * **Protect** has additional options, which includes choosing to protect the current sheet or the whole workbook.
 * **Unprotect** will unprotect the current spreadsheet if the user has the correct role within our company.
-* **Cancel** will close Interject’s Sheet Protection tool.
+* **Cancel** will close Interject's Sheet Protection tool.
 
 Navigate to the Interject Ribbon and select **Sheet Protector** then select **Protect**.
 

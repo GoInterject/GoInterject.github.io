@@ -42,7 +42,7 @@ ReportHideRowsOrColumns() is a function that allows you to hide both rows and co
 
 ### [Building jDropdowns](/wGetStarted/L-Create-Dropdowns.html)
 
-When manually entering different filter values, it can be difficult to remember what the exact filter names are and which are even available. This is especially true in large reports with many filtering options. However, you can use Interject’s jDropdown formula to automatically create hyperlinked lists of available filters, which makes filtering in large reports a much simpler task. 
+When manually entering different filter values, it can be difficult to remember what the exact filter names are and which are even available. This is especially true in large reports with many filtering options. However, you can use Interject's jDropdown formula to automatically create hyperlinked lists of available filters, which makes filtering in large reports a much simpler task. 
 
 ### [Working with Pivot Tables](/wGetStarted/L-Create-PivotTable.html)
 
