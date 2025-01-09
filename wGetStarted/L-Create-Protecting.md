@@ -193,3 +193,27 @@ Select the **system** dropdown and click **Re-enable Protecting Groupings**.
 <br>
 
 Now, the sheet is still protected but groupings can function as normal.
+
+### Working With Excel's Protect Sheet Manager
+
+Excel has a Protect Sheet Manager that allows you to customize which functions the user can execute when the sheet is protected. Click the **Review** tab and then **Protect Sheet**:
+
+![](/images/L-Create-Protecting/ExcelProtectSheet.png)
+<br>
+
+In order to utilize the functionality of Excel's Protect Sheet Manger with Interject's Sheet Protector, be sure to leave the password blank before clicking **OK**:
+
+![](/images/L-Create-Protecting/PasswordBlank.png)
+<br>
+
+<blockquote class=highlight_note>
+<b>Note:</b> If you enter a password, you will be unable to use Interject's Sheet Protector.
+</blockquote>
+<br>
+
+Interject will now use the current permissions you set up when protecting the sheet.
+
+If you want to change these settings, you must first unlock the sheet. You can Interject's Sheet Protector or Excel's to do this.
+
+![](/images/L-Create-Protecting/UnProtectSheet.png)
+<br>
