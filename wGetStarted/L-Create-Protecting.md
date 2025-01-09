@@ -206,4 +206,14 @@ In order to utilize the functionality of Excel's Protect Sheet Manger with Inter
 ![](/images/L-Create-Protecting/PasswordBlank.png)
 <br>
 
+<blockquote class=highlight_note>
+<b>Note:</b> If you enter a password, you will be unable to use Interject's Sheet Protector.
+</blockquote>
+<br>
+
 Interject will now use the current permissions you set up when protecting the sheet.
+
+If you want to change these settings, you must first unlock the sheet. You can Interject's Sheet Protector or Excel's to do this.
+
+![](/images/L-Create-Protecting/UnProtectSheet.png)
+<br>
