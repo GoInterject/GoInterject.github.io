@@ -45,3 +45,19 @@ For information on specific SMTP setup, see [SMTP settings for Outlook](https://
 
 ![](/images/OrganizationProfile/Settings.png)
 <br>
+
+### Macro Security Settings
+
+The Macro Security Settings allows ClientAdmins the ability to allow macro files to be uploaded to the Report Library.
+
+![](/images/OrganizationProfile/MacroSecuritySettings.png)
+<br>
+
+### Report Library Settings
+
+ClientAdmins can edit the Report Library Settings to allow or restrict certain files to be uploaded to the Report Library.
+
+![](/images/OrganizationProfile/ReportLibrarySettings.png)
+<br>
+
+If blank, Interject will only allow the default [file extensions](/wDeveloper/MacroSecurity.html#file-extensions).
