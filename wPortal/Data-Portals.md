@@ -7,21 +7,30 @@ headings: ["Overview", "Setting up a Data Portal", "Overview of Parameters", "Fo
 links: ["/wIndex/ReportBuilder.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#custom-commands", "/wIndex/ReportBuilder.html", "https://docs.gointerject.com/wDeveloper/Request-Context-Parse.html"]
 image_dir: "DataPortals"
 images: [
-    {file: "NewDataPortalButton", type: "png", site: "Portal", cat: "Data Portals", sub: "", report: "", ribbon: "", config: ""}, 
-    {file: "01", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
-    {file: "02", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
-    {file: "03", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
-    {file: "04", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
+	{file: "NewDataPortalButton", type: "png", site: "Portal", cat: "Data Portals", sub: "", report: "", ribbon: "", config: ""},
+	{file: "01", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""},
+	{file: "CodeDescription", type: "Portal", site: "Data Portals", cat: "Details", sub: "", report: "", ribbon: "", config: ""},
+	{file: "Category", type: "Portal", site: "Data Portals", cat: "Details", sub: "", report: "", ribbon: "", config: ""},
+	{file: "Connection", type: "Portal", site: "Data Portals", cat: "Details", sub: "", report: "", ribbon: "", config: ""},
+	{file: "CommandTypes", type: "Portal", site: "Data Portals", cat: "Details", sub: "", report: "", ribbon: "", config: ""},
+	{file: "CommandText", type: "Portal", site: "Data Portals", cat: "Details", sub: "", report: "", ribbon: "", config: ""},
+	{file: "SQLExample", type: "Portal", site: "Data Portals", cat: "Details", sub: "", report: "", ribbon: "", config: ""},
+	{file: "ApiUrl", type: "Portal", site: "Data Portals", cat: "Details", sub: "", report: "", ribbon: "", config: ""},
+	{file: "HelperColumns", type: "Portal", site: "Data Portals", cat: "Details", sub: "", report: "", ribbon: "", config: ""},
+	{file: "Timeout", type: "Portal", site: "Data Portals", cat: "Details", sub: "", report: "", ribbon: "", config: ""},
+	{file: "Status", type: "Portal", site: "Data Portals", cat: "Details", sub: "", report: "", ribbon: "", config: ""},
+	{file: "CustomCommand", type: "Portal", site: "Data Portals", cat: "Details", sub: "", report: "", ribbon: "", config: ""},
+	{file: "CreateDataPortalButton", type: "Portal", site: "Data Portals", cat: "Details", sub: "", report: "", ribbon: "", config: ""},
 	{file: "ParameterFlow", type: "png", site: "External", cat: "Flow Chart", sub: "Input/Output Parameters", report: "", ribbon: "", config: ""},
 	{file: "ParamsInReport", type: "png", site: "Excel", cat: "Report", sub: "", report: "Customer Aging Detail", ribbon: "", config: ""},
 	{file: "ParamsInPortal", type: "png", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""},
 	{file: "ParamsInProcedure", type: "png", site: "SSMS", cat: "Code", sub: "", report: "", ribbon: "", config: ""},
-    {file: "05", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
-    {file: "06", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
-    {file: "07", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
-    {file: "08", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}, 
-    {file: "09", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}
-    ]
+	{file: "05", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""},
+	{file: "06", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""},
+	{file: "07", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""},
+	{file: "08", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""},
+	{file: "09", type: "jpg", site: "Portal", cat: "Data Portals", sub: "Details", report: "", ribbon: "", config: ""}
+]
 description: A Data Portal uses a Data Connection to connect to either a stored procedure within a database or to a website API controller in a customer website API.
 ---
 * * *
@@ -33,39 +42,79 @@ Setting up a Data Portal to connect to a website API is not covered in this docu
 
 ### Setting up a Data Portal
 
-**Step 1** : To setup a Data Portal click on the **Data Portals** button.
+**Step 1:** To setup a Data Portal click on the **Data Portals** button.
 
 ![](/images/DataPortals/NewDataPortalButton.png)
 <br>
 
-**Step 2** : In the Data Portals page, select the **New Data Portal** button in the top right corner.
+**Step 2:** In the Data Portals page, select the **New Data Portal** button in the top right corner.
 
 The new page will look like below:
 
 ![](/images/DataPortals/01.jpg)
 <br>
 
-**Step 3** : The Data Portal Details page will contain the following information for the new data portal:
+**Step 3:** Enter the Data Portal details for the new data portal:
 
-- **Data Portal Code** : A unique name used when setting up report formulas. At this time this is a unique name across the Interject community.
-- **Description (optional)** : Description of what the Data Portal is doing
-- **Category (optional)** : Text that can be used to group Data Portals for easy searches later.
+- **Data Portal Code:** A unique name used when setting up report formulas. Currently, this must be a unique name across the Interject community.
+- **Description (optional):** Description of what the Data Portal is doing.
 
-![](/images/DataPortals/02.jpg)
+![](/images/DataPortals/CodeDescription.png)
 <br>
 
-- **Connection** : Data Connection that will be used for connecting to the database or API. Website provides a dropdown of data connections that have been created.
-- **Command Type** : The type of command that will be executed. By default, the Data Portal uses the **Stored Procedure Name** command option. This field is not required for Data Portals using an API connection.
-- **Stored Procedure / Command** : Full name (including schema) of stored procedure to be executed by this Data Portal. This field is not required for Data Portals connecting to an API connection. Since this field is part of the request object that is provided to an API, the developer can choose to use it within the API they create.
+- **Category (optional):** Text that can be used to group Data Portals for easy searches later.
 
-![](/images/DataPortals/03.jpg)
+![](/images/DataPortals/Category.png)
 <br>
 
-- **Api Relative Url** : This setting indicates the rest of the API URL that will be concatenated with the root URL of an API Data Connection when a request is sent. For example, the root URL for the connection may be **https:[api.myapi.com]** . If your API controller name is CustomerData, then you would type **\CustomerData** in API Relative URL. The API request would be sent to **https:[api.myapi.com]\CustomerData**. This field is ignored when a Data Portal uses a database connection.
-- **Helper Default Columns (optional)** : You can use a comma delimited list to set default columns that will appear when a new report is created using the [Report Builder](/wIndex/ReportBuilder.html).
-- **Is Custom Command** : When set to yes, allows background jobs to run from the Custom Commands Window. Custom Commands require specific parameters to work with the Custom Commands window. See the [Interject Ribbon](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#custom-commands) on how to use Custom Commands.
+- **Connection:** Data Connection that will be used for connecting to the database or API. Website provides a dropdown of data connections that have been created already.
 
-![](/images/DataPortals/04.jpg)
+![](/images/DataPortals/Connection.png)
+<br>
+
+- **Command Type:** The type of command that will be executed. By default, the Data Portal uses the **Stored Procedure Name** command option. This field is not required for Data Portals using an API connection. Also when using an API connection, you can choose to enter JSON or SQL as the command type and that text will be part of the request object for the API to use.
+
+![](/images/DataPortals/CommandTypes.png)
+<br>
+
+- **Command Text:** The command text to be executed by this Data Portal. If a Store Procedure Name, include the schema and full name. This field is not required for Data Portals connecting to an API connection. However, since this field is part of the request object that is provided to an API, the developer can choose to use it within the API they create.
+
+![](/images/DataPortals/CommandText.png)
+<br>
+
+The Command Text can be valid JSON or SQL as well. Here is an example using a SQL command:
+
+![](/images/DataPortals/SQLExample.png)
+<br>
+
+- **Api Relative Url:** This setting indicates the rest of the API URL that will be concatenated with the root URL of an API Data Connection when a request is sent. For example, the root URL for the connection may be **https://[api.myapi.com]** . If your API controller name is CustomerData, then you would type **/CustomerData** in API Relative URL. The API request would be sent to **https://[api.myapi.com]/CustomerData**. This field is ignored when a Data Portal uses a database connection.
+
+![](/images/DataPortals/ApiUrl.png)
+<br>
+
+- **Helper Default Columns (optional):** You can use a comma delimited list to set default columns that will appear when a new report is created using the [Report Builder](/wIndex/ReportBuilder.html).
+
+![](/images/DataPortals/HelperColumns.png)
+<br>
+
+- **Timeout (optional):** By default the Data Portal will timeout after 6 minutes but you can set any value here.
+
+![](/images/DataPortals/Timeout.png)
+<br>
+
+- **Data Portal Status** : You can conveniently enable or disable this Data Portal here.
+
+![](/images/DataPortals/Status.png)
+<br>
+
+- **Is Custom Command:** When set to yes, allows background jobs to run from the Custom Commands Window. Custom Commands require specific parameters to work with the Custom Commands window. See the [Interject Ribbon](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#custom-commands) on how to use Custom Commands.
+
+![](/images/DataPortals/CustomCommand.png)
+<br>
+
+**Step 4:** Finally click the **Create Data Portal** button to create the Data Portal:
+
+![](/images/DataPortals/CreateDataPortalButton.png)
 <br>
 
 ### Overview of Parameters
@@ -107,40 +156,40 @@ System Parameters are automatically passed into the Data Portal from the Interje
 ### Adding New Parameters
 
 Now that the Data Portal is created, you can set up our parameters for the Data Portal. These parameters correlate to the name of the parameters in the stored procedure. If a custom data API is used, the API will be coded to expect the specific parameter name.
-**Step 1** : To add a Formula Parameter click on the **Click here to add a Formula Parameter** button.
+**Step 1:** To add a Formula Parameter click on the **Click here to add a Formula Parameter** button.
 
 ![](/images/DataPortals/05.jpg)
 <br>
 
-**Step 2** : The input fields for the new Formula Parameter will be shown:
+**Step 2:** The input fields for the new Formula Parameter will be shown:
 
-1. **Name** : name of parameter in stored procedure or API
-2. **Type** : data type of parameter
-3. **Direction** : configure the parameter as an input parameter or an output parameter that will be returned to the spreadsheet
+1. **Name:** name of parameter in stored procedure or API
+2. **Type:** data type of parameter
+3. **Direction:** configure the parameter as an input parameter or an output parameter that will be returned to the spreadsheet
 
 ![](/images/DataPortals/06.jpg)
 <br>
 
-**Step 3** : The **More** button can be used to show optional inputs. You can set a default value or the datatype length if it is required. You can also set additional fields that will be used with Report Builder. These Report Builder fields are used to help easily create a report within Excel based on a Data Portal. Below is a description of the fields:
+**Step 3:** The **More** button can be used to show optional inputs. You can set a default value or the datatype length if it is required. You can also set additional fields that will be used with Report Builder. These Report Builder fields are used to help easily create a report within Excel based on a Data Portal. Below is a description of the fields:
 
-- **Helper Name** : This adds a friendly name for the report parameter input in the Report Builder. Otherwise the parameter name is used, which has no spaces.
-- **Helper Default** : This inserts a default value into the cell of the Excel report when using the Report Builder.
-- **Options** : Use a comma separated list to provide the Excel user with a drop down list of options.
-- **Comments** : This inserts an Excel comment, with our text, into the cell of the Excel report when using the Report Builder.
+- **Helper Name:** This adds a friendly name for the report parameter input in the Report Builder. Otherwise the parameter name is used, which has no spaces.
+- **Helper Default:** This inserts a default value into the cell of the Excel report when using the Report Builder.
+- **Options:** Use a comma separated list to provide the Excel user with a drop down list of options.
+- **Comments:** This inserts an Excel comment, with our text, into the cell of the Excel report when using the Report Builder.
 
  To see how these fields are used when setting up a report, see [Report Builder](/wIndex/ReportBuilder.html).
 
 ![](/images/DataPortals/07.jpg)
 <br>
 
-**Step 4** : Once done defining a parameter, you can click on the save icon to save the changes.
+**Step 4:** Once done defining a parameter, you can click on the save icon to save the changes.
 
-**Step 5** : To add a System Parameter, click on the **Click here to add a System Parameter** button.
+**Step 5:** To add a System Parameter, click on the **Click here to add a System Parameter** button.
 
 ![](/images/DataPortals/08.jpg)
 <br>
 
-**Step 6** : Repeat the previous steps to add additional parameters as needed. 
+**Step 6:** Repeat the previous steps to add additional parameters as needed. 
 
 <blockquote class=highlight_note>
 <b>Note:</b> The order in which you add the Formula Parameters must match the order in the Param() formula used in the spreadsheet Report Formula.
