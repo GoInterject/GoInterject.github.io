@@ -40,21 +40,22 @@ description: A Data Portal uses a Data Connection to connect to either a stored 
 A Data Portal uses a Data Connection to connect to either a stored procedure within a database or to a website API controller in a customer website API. In this section, you will quickly set up a Data Portal for a database to pull data into our spreadsheet.
 Setting up a Data Portal to connect to a website API is not covered in this documentation yet as the sections are currently under construction. Please contact us directly for assistance with Website APIs.
 
+![](/images/DataPortals/DataPortalsPage.png)
+<br>
+
 ### Setting up a Data Portal
 
-**Step 1:** To setup a Data Portal click on the **Data Portals** button.
+**Step 1:** To setup a Data Portal click on the **New Data Portal** button.
 
 ![](/images/DataPortals/NewDataPortalButton.png)
 <br>
-
-**Step 2:** In the Data Portals page, select the **New Data Portal** button in the top right corner.
 
 The new page will look like below:
 
 ![](/images/DataPortals/01.jpg)
 <br>
 
-**Step 3:** Enter the Data Portal details for the new data portal:
+**Step 2:** Enter the Data Portal details for the new data portal:
 
 - **Data Portal Code:** A unique name used when setting up report formulas. Currently, this must be a unique name across the Interject community.
 - **Description (optional):** Description of what the Data Portal is doing.
@@ -112,7 +113,7 @@ The Command Text can be valid JSON or SQL as well. Here is an example using a SQ
 ![](/images/DataPortals/CustomCommand.png)
 <br>
 
-**Step 4:** Finally click the **Create Data Portal** button to create the Data Portal:
+**Step 3:** Finally click the **Create Data Portal** button to create the Data Portal:
 
 ![](/images/DataPortals/CreateDataPortalButton.png)
 <br>
