@@ -3,7 +3,7 @@ title: Release Notes
 filename: "2024-12_ReleaseNotes.md"
 layout: custom
 keywords: [change log, updates, versions, history, what's new]
-headings: ["December 2024", "Excel Add-in v2.5.3.4"]
+headings: ["December 2024", "Excel Add-in v2.5.3.4", "Portal Site"]
 links: []
 image_dir: ""
 images: []
