@@ -15,6 +15,11 @@ description: Release notes for this month's updates
 
 ### Excel Add-in v2.5.3.4
 
+<blockquote class=highlight_note>
+<b>Note:</b> This version is superseded by <a href="https://docs.gointerject.com/wReleaseNotes/2025-01_ReleaseNotes.html">v2.5.3.5</a>
+</blockquote>
+<br>
+
 _Released 12/20/24_
 
 * ✅ jDropdown upgrade (supports multiple columns)
