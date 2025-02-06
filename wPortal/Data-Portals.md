@@ -98,7 +98,7 @@ The Command Text can be valid JSON or SQL as well. Here is an example using a SQ
 ![](/images/DataPortals/HelperColumns.png)
 <br>
 
-- **Timeout (optional):** By default the Data Portal will timeout after 6 minutes but you can set any value here.
+- **Timeout (optional):** By default the Data Portal will timeout after 3 minutes but you can set any value here.
 
 ![](/images/DataPortals/Timeout.png)
 <br>
