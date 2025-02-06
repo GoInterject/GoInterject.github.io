@@ -51,20 +51,6 @@ You can also choose a custom sizing within a range of 75%-200% magnification.
 ![](/images/Resizing-Form-Windows/0.9.png)
 <br>
 
-### Resize by Dragging
-
-Some Interject forms are able to be resize by dragging the edge or corner. These are the forms that support this functionality:
-
-- [Company](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#company)
-- [Connections](/wDeveloper/ConnectionManager.html)
-- [Login](/wAbout/Logging-In.html)
-- [Report Builder](/wIndex/ReportBuilder.html)
-- [Report Library](/wAbout/Report-Library-Basics.html)
-<br>
-
-![](/images/Resizing-Form-Windows/ResizeFormDrag.png)
-<br>
-
 ### Resize the Current Window
 
 First, we'll resize just the window that opens when you click on the PULL Data button in the Interject ribbon. The process is the same for all other Interject windows that can be resized.
