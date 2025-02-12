@@ -68,8 +68,8 @@ The following are the IPs to whitelist that are used by the Interject product:
 
 ```
 https://platform-api.gointerject.com/
-https://live-interject-authapi.azurewebsites.net/
-https://auth.gointerject.com/
+https://live-interject-authapi.azurewebsites.net/ (Add-in versions before 2.5.3.5)
+https://auth.gointerject.com/ (Add-in versions 2.5.3.5 and above)
 ```
 
 You will need to ascertain the proper steps in whitelisting these domains on your particular system.

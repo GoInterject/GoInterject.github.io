@@ -4,7 +4,7 @@ filename: "Data-Portals.md"
 layout: custom
 keywords: [data portals, data connection, setup, parameters, input, output, system parameters]
 headings: ["Overview", "Setting up a Data Portal", "Overview of Parameters", "Formula Parameters", "System Parameters", "Adding New Parameters", "System Parameters Options"]
-links: ["/wIndex/ReportBuilder.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#custom-commands", "/wIndex/ReportBuilder.html", "https://docs.gointerject.com/wDeveloper/Request-Context-Parse.html"]
+links: ["/wIndex/ReportBuilder.html", "/wIndex/ReportBuilder.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#custom-commands", "/wIndex/ReportBuilder.html", "https://docs.gointerject.com/wDeveloper/Request-Context-Parse.html"]
 image_dir: "DataPortals"
 images: [
 	{file: "NewDataPortalButton", type: "png", site: "Portal", cat: "Data Portals", sub: "", report: "", ribbon: "", config: ""},
@@ -57,7 +57,7 @@ The new page will look like below:
 
 **Step 2:** Enter the Data Portal details for the new data portal:
 
-- **Data Portal Code:** A unique name used when setting up report formulas. Currently, this must be a unique name across the Interject community.
+- **Data Portal Code:** A unique name used when setting up report formulas. Currently Data Portal codes must be unique across all Interject clients.
 - **Description (optional):** Description of what the Data Portal is doing.
 
 ![](/images/DataPortals/CodeDescription.png)
@@ -103,7 +103,7 @@ The Command Text can be valid JSON or SQL as well. Here is an example using a SQ
 ![](/images/DataPortals/Timeout.png)
 <br>
 
-- **Data Portal Status** : You can conveniently enable or disable this Data Portal here.
+- **Data Portal Status** : You can conveniently enable or disable this Data Portal here. (A disabled Data Portal does not appear in the [Report Builder](/wIndex/ReportBuilder.html) and cannot be accessed in the Add-in.)
 
 ![](/images/DataPortals/Status.png)
 <br>
