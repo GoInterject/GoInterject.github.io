@@ -94,7 +94,7 @@ _"One or more of the Interject web apis are offline or could not be reached. The
     <span style="color: green;">SOLUTION:</span> Review your firewall and networking configuration to ensure your proxy is correctly handling the SSL certificate passthroughs for the Interject auth API domain.
 
 <blockquote class="highlight_note" style="margin-left: 40px;">
-<b>Note:</b> Eventually the auth API will be hosted on the gointerject domain and future addin versions will likely not run into these issues with networks in this configuration.
+<b>Note:</b> As of version 2.5.3.5, the Interject Add-in uses the URL `auth.gointerject.com`.
 </blockquote>
 <br>
 
