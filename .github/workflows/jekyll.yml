@@ -40,11 +40,14 @@ jobs:
         env:
           JEKYLL_ENV: production
 
+      - name: List contents of _site directory
+        run: ls -R ./_site  # Verify the directory exists and contains files
+
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: jekyll-site
-          path: ./_site/
+          path: ./_site/  # Ensure this points to the correct path
 
   deploy:
     environment:
