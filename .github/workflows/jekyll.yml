@@ -66,3 +66,5 @@ jobs:
         uses: actions/deploy-pages@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          artifact_name: jekyll-site
+          
