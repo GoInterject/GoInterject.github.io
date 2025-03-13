@@ -83,6 +83,11 @@ These are displayed for your reference here. For more on information, see [Macro
 
 Interject provides an alternative to the standard Webview2 login form. Your default web browser can be used instead by setting the UseWebView2 switch in Diagnostics.
 
+<blockquote class=highlight_note>
+<b>Note:</b> Web browser login is explicitly supported for Edge, Firefox, Chrome, Opera, Safari, Brave, Vivaldi, and Internet Explorer, but may also work on other browsers.
+</blockquote>
+<br>
+
 ![](/images/DiagnosticsSpecialFeatures/LoginCompare.png)
 <br>
 
