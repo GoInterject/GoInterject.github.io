@@ -6,6 +6,8 @@ This code is for the custom search feature of the website.
 // --------------------------------------------------------------
 const snippetBefore = 50; // number of characters to display before the query
 const snippetAfter = 50; // number of characters to display after the query
+const snippetProximityBefore = 15; // number of characters to display before the query in proximity search
+const snippetProximityAfter = 15; // number of characters to display after the query in proximity search
 
 // Get the query parameter from the URL
 const queriedString = window.location.search;
@@ -19,6 +21,7 @@ https://docs.gointerject.com/schemas/custom_search?q=sample%20&r=false&a=true&t=
 */
 const searchTerm = urlParams.get('q');
 const useRegex = urlParams.get('r');
+const useProximity = urlParams.get('p');
 const allHits = urlParams.get('a');
 const topHits = urlParams.get('t');
 
@@ -58,6 +61,13 @@ if (regexCheckbox && useRegex === 'true') {
   regexCheckbox.checked = true;
 }
 
+// Mark the Proximity checkbox if the query is a proximity query
+//TODO can't use regex and proximity at the same time
+var proximityCheckbox = document.getElementById('custom-proximity');
+if (proximityCheckbox && useProximity === 'true') {
+  proximityCheckbox.checked = true;
+}
+
 // Mark the allHits checkbox if the query is an allHits query
 var allHitsCheckbox = document.getElementById('custom-all-hits');
 if (allHitsCheckbox && allHits === 'true') {
@@ -86,8 +96,14 @@ else if (currentPageUrl.includes("custom_search")){
     console.log("top hits is true: displaying top hits")
 		fetchAndDisplayTopHitsResults();
 	}
-  console.log("displaying all results")
-	fetchAndDisplayResults();
+  // if(useProximity === 'true') {
+  //   console.log("displaying all proximity results")
+  //   fetchAndDisplayProximityResults();
+  // }
+  // else {
+    console.log("displaying all results")
+    fetchAndDisplayResults();
+    // }
 }
 
 // --------------------------------------------------------------
@@ -99,10 +115,11 @@ function reloadPage() {
   var pathPrefix = isAppsSite ? "/bApps" : "";
   var searchInput = encodeURIComponent(document.getElementById('custom-search-input').value);
   var regexChecked = document.getElementById('custom-regex').checked;
+  var proximityChecked = document.getElementById('custom-proximity').checked;
   var allHitsChecked = document.getElementById('custom-all-hits').checked;
   var topHitsChecked = document.getElementById('custom-top-hits').checked;
 
-  var url = `${pathPrefix}/schemas/custom_search?q=${searchInput}&r=${regexChecked}&a=${allHitsChecked}&t=${topHitsChecked}`;
+  var url = `${pathPrefix}/schemas/custom_search?q=${searchInput}&r=${regexChecked}&p=${proximityChecked}&a=${allHitsChecked}&t=${topHitsChecked}`;
 
   loadPage(url);
 }
@@ -136,6 +153,11 @@ function handleCustomRegex() {
 }
 
 // --------------------------------------------------------------
+function handleCustomProximity() {
+	reloadPage()
+}
+
+// --------------------------------------------------------------
 // FUNCTIONS (FETCH AND DISPLAY)
 // --------------------------------------------------------------
 // Gets the top hits and displays them
@@ -146,7 +168,6 @@ function fetchAndDisplayTopHitsResults() {
 
 // --------------------------------------------------------------
 function displayTopHitsResults(results, container) {
-
 	var resultsContainer = document.getElementById("resultsContainer");
 	var horizontalLine = document.createElement("hr");
 	horizontalLine.style.border = "1px solid #878896";
@@ -216,9 +237,13 @@ function fetchAndDisplayResults() {
       if(useRegex === 'true') {
         results = searchRegex(query, searchIndex); // Gets the results with a Regex search
       }
+      else if(useProximity === 'true') {
+        results = searchProximity(query, searchIndex); // Gets the results with a standard proximity search
+      }
       else {
         results = search(query, searchIndex); // Gets the results with a standard search
       }
+    console.log("Results: ", results)
 	  sortResults(results);
     displayResults(results, resultsContainer, query);
     })
@@ -253,7 +278,12 @@ function displayResults(results, container, query) {
         snippetContent = allHits === 'true'
           ? getSnippetRegexAll(result.content, query) // Regex all hits
           : getSnippetRegex(result.content, query); // Regex
-      } else {
+      } else if (useProximity === 'true'){
+        snippetContent = allHits === 'true'
+          ? getSnippetProximityAll(result.content, query) // Proximity all hits
+          : getSnippetProximity(result.content, query); // Proximity
+        }
+        else {
         snippetContent = allHits === 'true'
           ? getSnippetAll(result.content, query) // Standard all hits
           : getSnippet(result.content, query); // Standard
@@ -274,7 +304,7 @@ function displayResults(results, container, query) {
 // --------------------------------------------------------------
 // FUNCTIONS (SEARCH)
 // --------------------------------------------------------------
-// Searches through all pages for the query
+// Searches through all pages for the query using literal search
 function search(query, index) {
   // Map over each page in the index array
   return index.map(page => {
@@ -292,6 +322,47 @@ function search(query, index) {
   })
   // Filter out pages with no occurrences of the query
   .filter(page => page.occurrences > 0);
+}
+
+// --------------------------------------------------------------
+// Searches through all pages for the query using proximity search (whole paragraphs)
+function searchProximity(query, index) {
+  const terms = query.trim().toLowerCase().split(/\s+/);
+  if (terms.length === 0) return [];
+
+  return index.map(page => {
+    const lowercaseContent = page.content.toLowerCase();
+    const paragraphs = lowercaseContent.split(/\n{2,}|\r?\n\r?\n|<\/p>/);
+
+    let occurrences = 0;
+
+    for (const paragraph of paragraphs) {
+      const wordList = paragraph.split(/\s+/);
+
+      // Count how many times all terms appear in the paragraph
+      let localCount = 0;
+      for (let i = 0; i < wordList.length; i++) {
+        let found = {};
+        for (let j = i; j < wordList.length; j++) {
+          terms.forEach(term => {
+            if (wordList[j].includes(term)) {
+              found[term] = true;
+            }
+          });
+
+          if (terms.every(term => found[term])) {
+            localCount++;
+            i = j; // move forward to avoid overlapping matches
+            break;
+          }
+        }
+      }
+
+      occurrences += localCount;
+    }
+
+    return occurrences > 0 ? { ...page, occurrences } : null;
+  }).filter(page => page !== null);
 }
 
 // --------------------------------------------------------------
@@ -393,6 +464,94 @@ function getSnippetRegexAll(content, query) {
 
   // Join the snippets with newline characters and return as a single string
   return snippets.join('<br>');
+}
+
+function paragraphContainsAllTerms(paragraph, terms) {
+
+  for (const term of terms) {
+    const regex = new RegExp(escapeString(term), 'i'); // case-insensitive partial match
+    if (!regex.test(paragraph)) {
+      return false;
+    }
+  }
+
+  console.log("returning true")
+  return true;
+}
+
+// --------------------------------------------------------------
+function getSnippetProximityAll(content, query) {
+  const terms = query.trim().toLowerCase().split(/\s+/);
+  if (terms.length === 0) return '';
+  console.log("terms: ", terms)
+
+  const paragraphs = content.split(/ {4}/);
+  const outputSnippets = [];
+
+  for (const paragraph of paragraphs) {
+    const lowerParagraph = paragraph.toLowerCase();
+
+    // Check if all terms are present in this paragraph
+    if (!paragraphContainsAllTerms(lowerParagraph, terms)) continue;
+    
+    // Get the first index of each term
+    const matchIndexes = terms.map(term => lowerParagraph.indexOf(term)).filter(index => index !== -1);
+    
+    console.log("MATCHED PARAGRAPH:", paragraph);
+    console.log("Matched terms:", matchIndexes);
+
+    if (matchIndexes.length !== terms.length) continue;
+
+    const minStart = Math.max(0, Math.min(...matchIndexes) - snippetBefore);
+    const maxEnd = Math.min(paragraph.length, Math.max(...matchIndexes.map((i, idx) => i + terms[idx].length)) + snippetAfter);
+
+    let snippet = paragraph.substring(minStart, maxEnd);
+
+    // Highlight all terms
+    terms.forEach(term => {
+      const regex = new RegExp(`(${escapeString(term)})`, 'ig');
+      snippet = snippet.replace(regex, `<span style="background-color: yellow;">$1</span>`);
+    });
+
+    outputSnippets.push(`&emsp;...${snippet.trim()}...`);
+  }
+
+  // Return matching paragraph snippets, or fallback if none
+  return outputSnippets.length > 0
+    ? outputSnippets.join('<br>')
+    : `&emsp;...${content.substring(0, snippetBefore + snippetAfter)}...`;
+}
+
+
+// --------------------------------------------------------------
+function getSnippetProximity(content, query) {
+  const terms = query.trim().toLowerCase().split(/\s+/);
+  if (terms.length === 0) return '';
+
+  const lowerContent = content.toLowerCase();
+  const snippets = [];
+
+  terms.forEach(term => {
+    const index = lowerContent.indexOf(term);
+    if (index === -1) return;
+
+    const start = Math.max(0, index - snippetProximityBefore);
+    const end = Math.min(content.length, index + term.length + snippetProximityAfter);
+
+    let snippet = content.substring(start, end);
+
+    // Highlight the term
+    const regex = new RegExp(`(${escapeString(term)})`, 'ig');
+    snippet = snippet.replace(regex, `<span style="background-color: yellow;">$1</span>`);
+
+    snippets.push(snippet.trim());
+  });
+
+  if (snippets.length === 0) {
+    return content.substring(0, snippetBefore + snippetAfter) + '...';
+  }
+
+  return `&emsp;...${snippets.join('...')}...`;
 }
 
 // --------------------------------------------------------------

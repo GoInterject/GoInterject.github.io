@@ -43,14 +43,26 @@ Jekyll::Hooks.register :site, :post_write do |site|
       # Use Nokogiri to strip HTML tags from the content
       stripped_content = Nokogiri::HTML(page.content).text
       
-      # Replace '\n' and '\t' characters with spaces
-      cleaned_content = stripped_content.gsub(/[\n\t]/, ' ')
+      # Replace 2+ newlines (paragraph breaks) with 4 spaces
+      cleaned_content = stripped_content.gsub(/\n{2,}/, '    ')  # <- keep this first
 
-      # Remove the U+00a0 character
+      # Replace all remaining newlines and tabs with single space
+      cleaned_content = cleaned_content.gsub(/[\n\t]/, ' ')
+
+      # Remove non-breaking space
       cleaned_content = cleaned_content.gsub(/\u00a0/, '')
 
-      # Replace multiple consecutive spaces with a single space
+      # Temporarily mark '    ' paragraph separators to preserve them
+      cleaned_content = cleaned_content.gsub('    ', '[[PARA]]')
+
+      # Collapse any other repeated whitespace
       cleaned_content = cleaned_content.gsub(/\s+/, ' ')
+
+      # Restore paragraph markers as exactly 4 spaces
+      cleaned_content = cleaned_content.gsub('[[PARA]]', '    ')
+
+      # Finally, normalize any accidental run of 4+ spaces to just 4
+      cleaned_content = cleaned_content.gsub(/ {4,}/, '    ')
 
       index_data << {
         'title' => page.data['title'],
