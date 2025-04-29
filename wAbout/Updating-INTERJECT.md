@@ -4,7 +4,7 @@ filename: "Updating-INTERJECT.md"
 layout: custom
 keywords: [update, updating, version]
 headings: ["Overview", "Updating to the Newest Version of Interject"]
-links: ["https://www.youtube.com/embed/lNu5AjM7Ofo?si=bwwkpHZBTNK-Jtwf", "https://www.youtube.com/watch?v=lNu5AjM7Ofo", "/wAbout/Logging-In.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#check-for-updates"]
+links: ["https://www.youtube.com/embed/lNu5AjM7Ofo?si=bwwkpHZBTNK-Jtwf", "https://www.youtube.com/watch?v=lNu5AjM7Ofo", "https://learn.microsoft.com/en-us/windows/win32/msi/command-line-options", "/wAbout/Logging-In.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#check-for-updates"]
 image_dir: "Updating"
 images: [
 	{file: "02", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Simple", config: ""}, 
@@ -32,6 +32,11 @@ Here is a brief video on Updating Interject, followed by a more detailed walkthr
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lNu5AjM7Ofo?si=bwwkpHZBTNK-Jtwf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 [Click here](https://www.youtube.com/watch?v=lNu5AjM7Ofo){:target="_blank"}{:rel="noopener noreferrer"} if the above video does not load.
+
+<blockquote class=highlight_note>
+<b>Note:</b> When updating Interject from version 2.3.34 you may need to uninstall first. If uninstalling from Windows Add or Remove programs does not work, you can uninstall with the MSI installer using <a href="https://learn.microsoft.com/en-us/windows/win32/msi/command-line-options" target="_blank" rel="noopener noreferrer">Msiexec</a>.
+</blockquote>
+<br>
 
 ### Updating to the Newest Version of Interject
 
