@@ -34,7 +34,7 @@ Here is a brief video on Updating Interject, followed by a more detailed walkthr
 [Click here](https://www.youtube.com/watch?v=lNu5AjM7Ofo){:target="_blank"}{:rel="noopener noreferrer"} if the above video does not load.
 
 <blockquote class=highlight_note>
-<b>Note:</b> When updating Interject from version 2.3.34 you may need to uninstall first. If uninstalling from Windows Add or Remove programs does not work, you can uninstall with the MSI installer using <a href="https://learn.microsoft.com/en-us/windows/win32/msi/command-line-options" target="_blank" rel="noopener noreferrer">Msiexec</a>.
+<b>Note:</b> When updating Interject from version 2.3.34, you may need to uninstall the existing version first. If uninstalling from Windows Add or Remove Programs does not work, it's possible that you need to uninstall Interject using the same version of the installer that was used to install it. You can also uninstall using the MSI installer directly with <a href="https://learn.microsoft.com/en-us/windows/win32/msi/command-line-options" target="_blank" rel="noopener noreferrer">Msiexec</a>.
 </blockquote>
 <br>
 
