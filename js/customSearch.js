@@ -232,18 +232,18 @@ function fetchAndDisplayResults() {
 	}
   fetch(searchIndexPath)
     .then(response => response.json())
-    .then(searchIndex => {
+    .then(searchIndexPath => {
 
       if(useRegex === 'true') {
-        results = searchRegex(query, searchIndex); // Gets the results with a Regex search
+        results = searchRegex(query, searchIndexPath); // Gets the results with a Regex search
       }
       else if(useProximity === 'true') {
-        results = searchProximity(query, searchIndex); // Gets the results with a standard proximity search
+        results = searchProximity(query, searchIndexPath); // Gets the results with a standard proximity search
       }
       else {
-        results = search(query, searchIndex); // Gets the results with a standard search
+        results = search(query, searchIndexPath); // Gets the results with a standard search
       }
-    console.log("Results: ", results)
+    console.log("Page hits of search term(s): ", results)
 	  sortResults(results);
     displayResults(results, resultsContainer, query);
     })
@@ -253,6 +253,9 @@ function fetchAndDisplayResults() {
 }
 
 // --------------------------------------------------------------
+// Iterates through all the page hits (results) where the search term(s) are found
+// Gets a snippet of the hits
+// Displays the snippet
 function displayResults(results, container, query) {
   const sectionHeader = '<b>Page Results:</b><br>'
   
@@ -317,6 +320,7 @@ function search(query, index) {
     // Return an object representing the page with the added 'occurrences' property
     return {
       ...page, // Spread operator to include all existing properties of the page
+      lowercaseContent,
       occurrences: occurrences // Add a new property 'occurrences' with the count of query occurrences
     };
   })
@@ -326,43 +330,49 @@ function search(query, index) {
 
 // --------------------------------------------------------------
 // Searches through all pages for the query using proximity search (whole paragraphs)
-function searchProximity(query, index) {
-  const terms = query.trim().toLowerCase().split(/\s+/);
+function searchProximity(query, indexPath) {
+  const terms = query.trim().split(/\s+/);
   if (terms.length === 0) return [];
 
-  return index.map(page => {
-    const lowercaseContent = page.content.toLowerCase();
-    const paragraphs = lowercaseContent.split(/\n{2,}|\r?\n\r?\n|<\/p>/);
+  const lowerTerms = terms.map(term => term.toLowerCase());
 
-    let occurrences = 0;
+const filteredPages = indexPath.filter(page => {
+  const lowerContent = page.content.toLowerCase();
+  return lowerTerms.every(term => lowerContent.includes(term));
+});
 
-    for (const paragraph of paragraphs) {
-      const wordList = paragraph.split(/\s+/);
+return filteredPages.map(page => {
+  const lowercaseContent = page.content.toLowerCase();
+  const paragraphs = lowercaseContent.split(/ {4}/); // use your 4-space split
 
-      // Count how many times all terms appear in the paragraph
-      let localCount = 0;
-      for (let i = 0; i < wordList.length; i++) {
-        let found = {};
-        for (let j = i; j < wordList.length; j++) {
-          terms.forEach(term => {
-            if (wordList[j].includes(term)) {
-              found[term] = true;
-            }
-          });
+  let occurrences = 0;
 
-          if (terms.every(term => found[term])) {
-            localCount++;
-            i = j; // move forward to avoid overlapping matches
-            break;
+  for (const paragraph of paragraphs) {
+    const wordList = paragraph.split(/\s+/);
+
+    let localCount = 0;
+    for (let i = 0; i < wordList.length; i++) {
+      let found = {};
+      for (let j = i; j < wordList.length; j++) {
+        lowerTerms.forEach(term => {
+          if (wordList[j].includes(term)) {
+            found[term] = true;
           }
+        });
+
+        if (lowerTerms.every(term => found[term])) {
+          localCount++;
+          i = j; // skip ahead to avoid overlapping
+          break;
         }
       }
-
-      occurrences += localCount;
     }
 
-    return occurrences > 0 ? { ...page, occurrences } : null;
-  }).filter(page => page !== null);
+    occurrences += localCount;
+  }
+
+  return occurrences > 0 ? { ...page, lowercaseContent, occurrences } : null;
+}).filter(page => page !== null);
 }
 
 // --------------------------------------------------------------
@@ -383,6 +393,7 @@ function searchRegex(query, searchIndex) {
     // Return an object representing the item with the added 'occurrences' property
     return {
       ...item, // Spread operator to include all existing properties of the item
+      lowercaseContent,
       occurrences: occurrences // Add a new property 'occurrences' with the count of query occurrences
     };
   })
@@ -525,7 +536,7 @@ function getSnippetProximityAll(content, query) {
 
 // --------------------------------------------------------------
 function getSnippetProximity(content, query) {
-  const terms = query.trim().toLowerCase().split(/\s+/);
+  const terms = query.trim().split(/\s+/);
   if (terms.length === 0) return '';
 
   const lowerContent = content.toLowerCase();
