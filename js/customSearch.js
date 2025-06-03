@@ -21,7 +21,7 @@ https://docs.gointerject.com/schemas/custom_search?q=sample%20&r=false&a=true&t=
 */
 const searchTerm = urlParams.get('q');
 const useRegex = urlParams.get('r');
-const useProximity = urlParams.get('p');
+//const useProximity = urlParams.get('p');
 const allHits = urlParams.get('a');
 const topHits = urlParams.get('t');
 
@@ -36,7 +36,10 @@ const topHitsContainer = document.getElementById('top-hits-results');
 
 // Results
 var results = new Array();
-var topHitsResults = new Array();
+var resultsRegex = new Array();
+var resultsLiteral = new Array();
+var resultsProximity = new Array();
+var resultsTopHits = new Array();
 
 // Page
 var currentPageUrl = window.location.href;
@@ -63,10 +66,10 @@ if (regexCheckbox && useRegex === 'true') {
 
 // Mark the Proximity checkbox if the query is a proximity query
 //TODO can't use regex and proximity at the same time
-var proximityCheckbox = document.getElementById('custom-proximity');
-if (proximityCheckbox && useProximity === 'true') {
-  proximityCheckbox.checked = true;
-}
+//var proximityCheckbox = document.getElementById('custom-proximity');
+//if (proximityCheckbox && useProximity === 'true') {
+//  proximityCheckbox.checked = true;
+//}
 
 // Mark the allHits checkbox if the query is an allHits query
 var allHitsCheckbox = document.getElementById('custom-all-hits');
@@ -115,11 +118,11 @@ function reloadPage() {
   var pathPrefix = isAppsSite ? "/bApps" : "";
   var searchInput = encodeURIComponent(document.getElementById('custom-search-input').value);
   var regexChecked = document.getElementById('custom-regex').checked;
-  var proximityChecked = document.getElementById('custom-proximity').checked;
+  //var proximityChecked = document.getElementById('custom-proximity').checked;
   var allHitsChecked = document.getElementById('custom-all-hits').checked;
   var topHitsChecked = document.getElementById('custom-top-hits').checked;
 
-  var url = `${pathPrefix}/schemas/custom_search?q=${searchInput}&r=${regexChecked}&p=${proximityChecked}&a=${allHitsChecked}&t=${topHitsChecked}`;
+  var url = `${pathPrefix}/schemas/custom_search?q=${searchInput}&r=${regexChecked}&a=${allHitsChecked}&t=${topHitsChecked}`;
 
   loadPage(url);
 }
@@ -162,8 +165,8 @@ function handleCustomProximity() {
 // --------------------------------------------------------------
 // Gets the top hits and displays them
 function fetchAndDisplayTopHitsResults() {
-  topHitsResults = getTopHitsResults(query, isAppsSite); // Function in menu.js	
-	displayTopHitsResults(topHitsResults, topHitsContainer);
+  resultsTopHits = getTopHitsResults(query, isAppsSite); // Function in menu.js	
+	displayTopHitsResults(resultsTopHits, topHitsContainer);
 }
 
 // --------------------------------------------------------------
@@ -199,8 +202,8 @@ function displayTopHitsResults(results, container) {
 
       const imageStrings = extractImageValues(JSON.stringify(pages[results[i].topic].images).toLowerCase())
       const imageHits = findHeadingsWithQuery(imageStrings, query)
-      const imageHightlight = insertHighlightAll(imageHits, query)
-      const hitImages = `<p style="margin-bottom: 0px; margin-top: 0px"><b>Images: </b>${imageHightlight}</p>`;
+      const imageHighlight = insertHighlightAll(imageHits, query)
+      const hitImages = `<p style="margin-bottom: 0px; margin-top: 0px"><b>Images: </b>${imageHighlight}</p>`;
 
       const descriptionHighlight = insertHighlightAll(String(pages[results[i].topic].description).toLowerCase(), query);
 			const hitDescription = `<p style="margin-bottom: 0px; margin-top: 0px"><b>Description: </b>${descriptionHighlight}</p>`;
@@ -235,17 +238,22 @@ function fetchAndDisplayResults() {
     .then(searchIndexPath => {
 
       if(useRegex === 'true') {
-        results = searchRegex(query, searchIndexPath); // Gets the results with a Regex search
+        resultsRegex = searchRegex(query, searchIndexPath); // Gets the results with a Regex search
+        sortResults(resultsRegex);
       }
-      else if(useProximity === 'true') {
-        results = searchProximity(query, searchIndexPath); // Gets the results with a standard proximity search
-      }
+      //else if(useProximity === 'true') {
+      //  results = searchProximity(query, searchIndexPath); // Gets the results with a standard proximity search
+      //}
       else {
-        results = search(query, searchIndexPath); // Gets the results with a standard search
+        resultsLiteral = search(query, searchIndexPath); // Gets the results with a standard search
+        resultsProximity = searchProximity(query, searchIndexPath); // Gets the results with a standard proximity search
+        //results = combineResults(resultsLiteral, resultsProximity); // Combines the results from both searches
+        sortResults(resultsLiteral);
+        sortResults(resultsProximity);
       }
     console.log("Page hits of search term(s): ", results)
-	  sortResults(results);
-    displayResults(results, resultsContainer, query);
+	  //sortResults(results);
+    displayResults(resultsRegex, resultsLiteral, resultsProximity, resultsContainer, query);
     })
     .catch(error => {
       console.error('Error fetching search index:', error);
@@ -256,52 +264,93 @@ function fetchAndDisplayResults() {
 // Iterates through all the page hits (results) where the search term(s) are found
 // Gets a snippet of the hits
 // Displays the snippet
-function displayResults(results, container, query) {
-  const sectionHeader = '<b>Page Results:</b><br>'
-  
-  container.innerHTML = `${sectionHeader}`;
+function displayResults(resultsRegex, resultsLiteral, resultsProximity, container, query) {
+  const sectionHeader = '<b>Page Results:</b><br>';
+  container.innerHTML = sectionHeader;
 
-  if (results.length === 0) {
-    container.innerHTML = `${sectionHeader}<p>No results found</p>`;
-  } 
-  else {
+  if (useRegex === 'true') {
+    if (resultsRegex.length === 0) {
+      container.innerHTML += '<p>No results found</p>';
+    } else {
+      resultsRegex.forEach(result => {
+        appendResultItem(result, 'regex', query, container);
+      });
+    }
+  } else {
+    if (resultsLiteral.length === 0 && resultsProximity.length === 0) {
+      container.innerHTML += '<p>No results found</p>';
+      return;
+    }
 
-    results.forEach(result => {
-      const resultItem = document.createElement('div');
-      const myCurrentTab = findTheTabForThisPage(result.url).toUpperCase()
-      // const currentTab = `<p style="margin-bottom: 0px; margin-top: 3px; display: inline-block;">&lt;${myCurrentTab}&gt; </p>`;
-      const titleLink = `<h5 style="margin-bottom: 0px; margin-top: 3px; display: inline-block;"><a href="${result.url}" target="_blank">${myCurrentTab} : ${result.title}</a></h5>`;
-      const occurrencesContent = `<p style="margin-bottom: 0px; margin-top: 3px; font-size: 12px; display: inline-block; padding-left: 10px;">(Occurrences: ${result.occurrences})</p>`;
+    const literalURLs = new Set(resultsLiteral.map(r => r.url));
+    const proximityURLs = new Set(resultsProximity.map(r => r.url));
 
-      // const titleLink = `<h5 style="margin-bottom: 0px; margin-top: 3px; display: inline-block;"><a href="${myCurrentTab}" target="_blank">${myCurrentTab} : ${result.title}</a></h5>`;
-      // const occurrencesContent = `<p style="margin-bottom: 0px; margin-top: 3px; font-size: 12px; display: inline-block; padding-left: 10px;">(Occurrences: ${result.occurrences})</p>`;
+    const resultsLiteralOnly = resultsLiteral.filter(r => !proximityURLs.has(r.url));
+    const resultsProximityOnly = resultsProximity.filter(r => !literalURLs.has(r.url));
+    const resultsInBoth = combineResults(resultsLiteral, resultsProximity)
+      .filter(r => literalURLs.has(r.url) && proximityURLs.has(r.url));
 
-      let snippetContent;
-      if (useRegex === 'true') {
-        snippetContent = allHits === 'true'
-          ? getSnippetRegexAll(result.content, query) // Regex all hits
-          : getSnippetRegex(result.content, query); // Regex
-      } else if (useProximity === 'true'){
-        snippetContent = allHits === 'true'
-          ? getSnippetProximityAll(result.content, query) // Proximity all hits
-          : getSnippetProximity(result.content, query); // Proximity
-        }
-        else {
-        snippetContent = allHits === 'true'
-          ? getSnippetAll(result.content, query) // Standard all hits
-          : getSnippet(result.content, query); // Standard
-      }
+    // Show literal-only first
+    resultsLiteralOnly.forEach(result => {
+      appendResultItem(result, 'literal', query, container);
+    });
 
-      resultItem.innerHTML = `
-        <div style="margin-bottom: 0px;">
-          ${titleLink} ${occurrencesContent}
-        </div>
-        <p>&emsp;${snippetContent}</p>
-      `;
+    // Then show literal+proximity
+    resultsInBoth.forEach(result => {
+      appendResultItem(result, 'both', query, container);
+    });
 
-      container.appendChild(resultItem);
+    // Finally, show proximity-only
+    resultsProximityOnly.forEach(result => {
+      appendResultItem(result, 'proximity', query, container);
     });
   }
+}
+
+function appendResultItem(result, type, query, container) {
+  const resultItem = document.createElement('div');
+  const myCurrentTab = findTheTabForThisPage(result.url).toUpperCase();
+
+  const titleLink = `<h5 style="margin-bottom: 0px; margin-top: 3px; display: inline-block;">
+    <a href="${result.url}" target="_blank">${myCurrentTab} : ${result.title}</a>
+  </h5>`;
+
+  const occurrencesContent = `<p style="margin-bottom: 0px; margin-top: 3px; font-size: 12px; display: inline-block; padding-left: 10px;">
+    (Occurrences: ${result.occurrences})
+  </p>`;
+
+  let snippet = '';
+
+  if (type === 'regex') {
+    snippet = allHits === 'true'
+      ? getSnippetRegexAll(result.content, query)
+      : getSnippetRegex(result.content, query);
+  } else if (type === 'literal') {
+    snippet = allHits === 'true'
+      ? getSnippetAll(result.content, query)
+      : getSnippet(result.content, query);
+  } else if (type === 'proximity') {
+    snippet = allHits === 'true'
+      ? getSnippetProximityAll(result.content, query)
+      : getSnippetProximity(result.content, query);
+  } else if (type === 'both') {
+    if (allHits === 'true') {
+      const literalSnippet = getSnippetAll(result.content, query);
+      const proximitySnippet = getSnippetProximityAll(result.content, query);
+      snippet = `${literalSnippet}<br>${proximitySnippet}`;
+    } else {
+      snippet = getSnippet(result.content, query); // Only show literal snippet
+    }
+  }
+
+  resultItem.innerHTML = `
+    <div style="margin-bottom: 0px;">
+      ${titleLink} ${occurrencesContent}
+    </div>
+    <p>&emsp;${snippet}</p>
+  `;
+
+  container.appendChild(resultItem);
 }
 
 // --------------------------------------------------------------
@@ -408,6 +457,26 @@ function sortResults(results) {
   results.sort((a, b) => b.occurrences - a.occurrences);
 }
 
+function combineResults(resultsLiteral, resultsProximity) {
+  // Combine the two result arrays
+  const combinedResults = [...resultsLiteral, ...resultsProximity];
+
+  // Create a map to store unique results by URL
+  const uniqueResultsMap = new Map();
+
+  combinedResults.forEach(result => {
+    if (!uniqueResultsMap.has(result.url)) {
+      uniqueResultsMap.set(result.url, result);
+    } else {
+      // If the URL already exists, combine occurrences
+      const existingResult = uniqueResultsMap.get(result.url);
+      existingResult.occurrences += result.occurrences;
+    }
+  });
+
+  // Convert the map back to an array
+  return Array.from(uniqueResultsMap.values());
+}
 // --------------------------------------------------------------
 // FUNCTIONS (SNIPPETS)
 // --------------------------------------------------------------

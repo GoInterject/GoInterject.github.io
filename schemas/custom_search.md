@@ -67,17 +67,8 @@ description: Interject documentation search results
     > 
     Use Regex
   </label>
+    
   <label>
-    <input
-      type="checkbox"
-      id="custom-proximity"
-      title="Search by word proximity, not just exact matches"
-      onclick="handleCustomProximity()"
-    > 
-    Proximity Search
-  </label>
-  
-    <label>
     <input
       type="checkbox"
       id="custom-all-hits"
