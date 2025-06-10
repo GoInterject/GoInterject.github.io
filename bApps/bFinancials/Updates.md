@@ -13,7 +13,7 @@ description: Interject™ Financials for Epicor Enterprise (This would cover top
 ---
 
 <h2>Interject Financials - Epicor Enterprise<br>
-<a href="https://drive.google.com/file/d/1yqewNlhX4tm5jDo-J1lnEjz8qe-w9gqO/view?usp=sharing">Latest Version 1.7.5</a></h2>
+<a href="https://github.com/GoInterject/FinancialPackage/releases/tag/v1.7.9">Latest Version 1.7.9</a></h2>
 
 Depending on which version of Interject Financials you're running, there are different update and rollback scripts. Before updating or rolling back a version, follow the procedure below. Once you know the version you're currently running, click on the appropriate dropdown below for the update release notes, the correct scripts for updating and rolling back versions, as well as procedures for running those scripts.
 
@@ -29,15 +29,15 @@ After the inital install, applying an update, or performing a rollback, you can 
 
 ### Click Your Version Below for Release Notes and Update Scripts
 
-<button class="collapsible"><strong>For Users With Version 1.6.9-1.7.4</strong></button>
+<button class="collapsible"><strong>For Users With Version 1.6.X-1.7.9</strong></button>
 
 <div markdown="1" class="panel">
 <table> 
     <tr>
-        <th><span style="font-weight:bold">Update for Previous Install:</span> <a href="https://drive.google.com/file/d/1b6VJploEafuftn9UP9Mqdt4F7ywbsqju/view?usp=sharing">from1.6.9-1.7.4to1.7.5_Update.Interject_Reporting.SQL</a></th>
+        <th><span style="font-weight:bold">Update for Previous Install:</span> <a href="https://drive.google.com/file/d/1b6VJploEafuftn9UP9Mqdt4F7ywbsqju/view?usp=sharing">from1.6.X-1.7.8to1.7.9_Update.Interject_Reporting.SQL</a></th>
     </tr>  
     <tr>
-        <th><i>There are currently no rollback scripts available for 1.7.5*</i></th>
+        <th><i>There are currently no rollback scripts available for 1.7.*</i></th>
     </tr>
 </table>
 </div>
@@ -66,33 +66,29 @@ After the inital install, applying an update, or performing a rollback, you can 
 
 <table>
     <tr>
-    <th><span style="font-weight:bold">Interject for Financials - Current Version 1.7.5 </span></th>
-    </tr>
-        <tr>
+    <th><span style="font-weight:bold">Interject for Financials - Current Version 1.7.9 </span></th>
+    <tr>
         <th><span style="font-weight:bold">Features</span></th>
         <th><span style="font-weight:bold">Bugs Fixed</span></th>
-        </tr>
-        <tr>
-            <td>
-                <ul>
-                    <li>Update security to include all tables included in validation</li>
-                    <li>Fiscal Period dropdown should return date instead of YYYY-MM</li>
-                    <li>Add Non-validated rollups to the Rollups dropdown in Trial Balance</li>
-                    <li>Created Custom.PullEpicor_NonBudgetYear_Direct procedure for non-financial budgets pull</li>
-                    <li>Added a setting in [Custom].[Job_Import_Financials_Budget] called ImportERPNonFinBud that can be added to [FSGroup].[Group_Setting] which will import non-financial budget</li>
-                </ul>     
-            </td>
-            <td>
-                <ul> 
-                    <li>Fix adding DirectPull_Live settings into FSGroup.Segment_Setting</li>
-                    <li>Fix calling [Custom].[PullEpicor_Budget_Month] correctly in [Custom].[Job_Import_Financials_Budget]</li>
-                    <li>Fix [Custom].[PullEpicor_Budget_Month] to pull single period instead of range</li>
-                    <li>Fix calling  [Custom].[ERP_FiscalPeriodPerDB] in [Custom].[Job_Import_Financials_Budget]</li>
-                    <li>Fix clearing out deleted data in Epicor into Interject in [Custom].[Job_Import_Financials_Budget]</li>
-                    <li>Fix sending Epicor data to the [Import].[Financials_Push] one year at a time in [Custom].[Job_Import_Financials_Budget] & [Custom].[Job_Import_Financials_Actual]</li>
-                </ul>
-            </td>
-        </tr>
+    </tr>
+    <tr>
+        <td>
+            <ul>
+                <li>Enhance the speed of the trial balance through optimization.</li>
+                <li>Improve the process of adding new rollups for increased efficiency.</li>
+                <li>Add option for alternative segment names in dropdowns.</li>
+                <li>Introduce an Onhold option for Journal Entry Query.</li>
+                <li>Implement a daily reset for the change queue.</li>
+                <li>Expanded the upload field and trimmed blank spaces in the JE Export tool.</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Resolve the issue related to fiscal year period alignment in live pull.</li>
+                <li>Fix recursion issue for JE upload.</li>
+            </ul>
+        </td>
+    </tr> 
 </table>
 
 ### Updating
@@ -106,7 +102,7 @@ Whenever an update of Interject for Financials is released, an update script mus
 > Run \[Interject_SetupScript1_Security\], as shown below, to re-enable security.
 >
 > ```SQL
-> EXEC [Custom].[Interject_SetupScript1_Security]
+> EXEC [Setup].[Interject_SetupScript1_Security]
 > 	@MasterEpicorDatabase = '<Epicor Controlling Database Name>'
 > 	,@CertificatePassword =  'myPassword1234'
 > ```
@@ -122,7 +118,7 @@ The following steps must be taken to roll back one version. Note that this will 
 > Run \[Interject_SetupScript1_Security\], as shown below, to re-enable security.
 >
 > ```SQL
-> EXEC [Custom].[Interject_SetupScript1_Security]
+> EXEC [Setup].[Interject_SetupScript1_Security]
 > 	@MasterEpicorDatabase = '<Epicor Controlling Database Name>'
 > 	,@CertificatePassword =  'myPassword1234'
 > ```
