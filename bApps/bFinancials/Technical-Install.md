@@ -43,7 +43,7 @@ After you get access to Interject, there are three parts to installing Interject
                 <td>
                 1.7.5                </td>
                 <td>
-                <a href="https://drive.google.com/file/d/1yqewNlhX4tm5jDo-J1lnEjz8qe-w9gqO/view?usp=sharing">Initial.Interject_Reporting.sql</a> 
+                <a href="https://github.com/GoInterject/FinancialPackage/releases/tag/v1.7.9">1.7.9_Initial.Interject_Reporting.sql</a> 
                 </td>
             </tr>
             <tr>
@@ -81,7 +81,7 @@ After you get access to Interject, there are three parts to installing Interject
 > **Step 5:** Create security objects and grant read-only access to Epicor tables by passing the following parameters using the following script as an example:
 >
 > ```SQL
-> EXEC [Custom].[Interject_SetupScript1_Security]
+> EXEC [Setup].[Interject_SetupScript1_Security]
 > 	@MasterEpicorDatabase = '<Epicor Controlling Database Name>'
 > 	,@CertificatePassword =  'myPassword1234'
 > ```
