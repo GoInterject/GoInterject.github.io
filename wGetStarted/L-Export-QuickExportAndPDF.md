@@ -71,7 +71,7 @@ Once complete, the report will upload into a brand new workbook with fixed value
 
 ### Export Sheet
 
-The Export Sheet option does everything the Export Workbook does but only exports the current sheet.
+The Export Sheet option does everything the Export Workbook but with two exceptions: 1) converts formulas to values and 2) only exports the current sheet.
 
 ![](/images/L-Export-QuickExPDF/ExportSheet.png)
 <br>
