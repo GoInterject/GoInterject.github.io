@@ -442,7 +442,7 @@ function searchRegex(query, searchIndex) {
     // Return an object representing the item with the added 'occurrences' property
     return {
       ...item, // Spread operator to include all existing properties of the item
-      lowercaseContent,
+      //lowercaseContent,
       occurrences: occurrences // Add a new property 'occurrences' with the count of query occurrences
     };
   })
