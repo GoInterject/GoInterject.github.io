@@ -13,14 +13,7 @@ description: Some users have reported issues when attempting to uninstall the In
 
 ## Overview
 
-Some users have encountered a rare issue when attempting to uninstall the Interject Add-In in order to install the latest version. The issue may be with some residual registry keys associated with Interject. In such a case, we have found a resolution by manually removing the registry keys associated with Interject, then reinstalling the latest version.
-
-<blockquote class=highlight_note>
-<b>Note:</b> It is always best to attempt an uninstall by using the installer of the same version as the installed Interject version first. Manual removal of registry keys should be a last resort.
-</blockquote>
-<br>
-
-To facilitate tha manual removal of registry keys, we have presented a PowerShell script to assist in locating the keys:
+Some users have encountered a rare issue when attempting to uninstall the Interject Add-In in order to install the latest version. The issue may be with some residual registry keys associated with Interject. In such a case, doing a complete uninstall by using the installer of the same version as the installed Interject version may solve this issue. If this is not successful, a manual removal of registry keys can be done. To facilitate this last resort option, we have presented a PowerShell script to assist in locating the keys:
 
 [regkey_find.ps1][1]
 
