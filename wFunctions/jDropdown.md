@@ -13,7 +13,7 @@ description: The jDropdown function returns data from a Data Portal that can be 
 
 ##  Function Summary
 
-The jDropdown function returns data from a Data Portal that can be displayed in a dropdown window for the user to select and insert into a designated cell within the spreadsheet. It is typically used to easily insert a valid parameter into the spreadsheet to filter the data returned by a report function after a pull action. When this function is linked to a hyperlink, the user can simply click on the hyperlink to display a list of valid parameters and insert one or more into the spreadsheet.
+The jDropdown function returns data from a Data Portal that can be displayed in a dropdown window for the user to select and insert into a designated range of cells within the spreadsheet. It is typically used to easily insert a valid parameter into the spreadsheet to filter the data returned by a report function after a pull action. When this function is linked to a hyperlink, the user can simply click on the hyperlink to display a list of valid parameters and insert one or more into the spreadsheet.
 
 For an example of this function, see [jDropdown](/wGetStarted/L-Create-Dropdowns.html).
 
@@ -49,7 +49,7 @@ For an example of this function, see [jDropdown](/wGetStarted/L-Create-Dropdowns
     </tr>
     <tr>
 		<td class="pph"><b>Constraints</b></td>
-		<td>The values must match the order of the parameters in the data source (The order can be verified using the [Validation Report](/wTroubleshoot/Reports.html#validation-report-for-interject-events) )</td>
+		<td>The values must match the order of the parameters in the data source (The order can be verified using the <a href="/wTroubleshoot/Reports.html#validation-report-for-interject-events">Validation Report</a>)</td>
     </tr>
     <tr>
 		<td class="pph"><b>If Blank</b></td>
@@ -79,7 +79,7 @@ For an example of this function, see [jDropdown](/wGetStarted/L-Create-Dropdowns
 </table>
 </div>
 
-<button class="collapsible-parameter">**Target Cell**<br>The range where the selected entry will be inserted (will insert into every cell in this range).</button>
+<button class="collapsible-parameter">**Target Cell**<br>The range where the selected entry(s) will be inserted. If a single cell is designated, the entry will go there. If a range of cells with header values is designated, the entries will populate on the same row as the jDropdown link starting at the first column of this range.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
