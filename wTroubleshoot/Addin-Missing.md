@@ -27,6 +27,7 @@ Every once in a while, Excel Add-ins may end up missing or fail to load in Excel
 <br>
 
 ### Reset via System Tray
+{: .link-copy}
 
 Click on the ^ icon in the Windows System Tray, right-click the Interject icon and click "Reset Addins":
 

@@ -76,6 +76,8 @@ responsive_image:
 kramdown:
   smart_quotes: ["apos", "apos", "quot", "quot"]
   input: kramdown
+  auto_ids: true
+  toc_levels: 1..6
 
 defaults:
   -
