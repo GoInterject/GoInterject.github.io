@@ -15,9 +15,7 @@ description: This is a troubleshooting guide for the Interject Add-in. This reso
 
 This is a troubleshooting guide for the Interject Add-in. This resource is designed to help you navigate and resolve a variety of common issues you might encounter while using the Interject Add-in. 
 
-<h3 class="link-copy" id="error-add-in-not-completely-loaded">
-  Error: Add-in Not Completely Loaded
-</h3>
+### Error: Add-in Not Completely Loaded
 
 - <span style="color: red;">ISSUE:</span> Difference in bitness between Excel\Office and Interject
     
@@ -31,9 +29,7 @@ This is a troubleshooting guide for the Interject Add-in. This resource is desig
 
     <span style="color: green;">SOLUTION:</span> Restart Microsoft Excel
 
-<h3 class="link-copy" id="error-incompatible-fips">
-  Error: Incompatible FIPS
-</h3>
+### Error: Incompatible FIPS
 
 _"This implementation is not part of the Windows Platform FIPS validated cryptographic algorithms"_
 
@@ -41,9 +37,7 @@ _"This implementation is not part of the Windows Platform FIPS validated cryptog
 
     <span style="color: green;">SOLUTION:</span> Install Interject 2.5 or greater to use 140-2 compatible encryption methods
 
-<h3 class="link-copy" id="error-interject-web-api-offline">
-  Error: Interject Web API Offline
-</h3>
+### Error: Interject Web API Offline
 
 _"One or more of the Interject web apis are offline or could not be reached. The app can continue to function while offline, for a limited amount of time, with limited functionality"_
 
@@ -57,33 +51,25 @@ _"One or more of the Interject web apis are offline or could not be reached. The
 
     <span style="color: green;">SOLUTION:</span> Review the URL's that must be [whitelisted](/wDeveloper/Enterprise-Login-Setup.html#ip-whitelisting) for Interject to work
 
-<h3 class="link-copy" id="error-cant-install-or-uninstall-interject">
-  Error: Can't Install or Uninstall Interject
-</h3>
+### Error: Can't Install or Uninstall Interject
 
 - <span style="color: red;">ISSUE:</span> A corrupted installation prevents reinstallation or uninstallation
 
     <span style="color: green;">SOLUTION:</span> Use the [Microsoft Troubleshooter](https://support.microsoft.com/en-us/topic/fix-problems-that-block-programs-from-being-installed-or-removed-cca7d1b6-65a9-3d98-426b-e9f927e1eb4d){:target="_blank"}{:rel="noopener noreferrer"} to [manual uninstall](/wTroubleshoot/CorruptedInstallation.html) Interject
 
-<h3 class="link-copy" id="error-interject-add-in-ribbon-is-gone">
-  Error: Interject Add-in Ribbon is Gone
-</h3>
+### Error: Interject Add-in Ribbon is Gone
 
 - <span style="color: red;">ISSUE:</span> Windows can have loading issues with XLL\COM Add-ins sometimes
 
     <span style="color: green;">SOLUTION:</span> Use the Interject Addin manager to [reset the Add-in](/wTroubleshoot/Addin-Missing.html)
 
-<h3 class="link-copy" id="error-cannot-connect-or-communicate-with-interject-platform">
-  Error: Cannot Connect or Communicate With Interject Platform
-</h3>
+### Error: Cannot Connect or Communicate With Interject Platform
 
 - <span style="color: red;">ISSUE:</span> Proxy network is blocking outgoing traffic
 
     <span style="color: green;">SOLUTION:</span> [Whitelist](/wDeveloper/Enterprise-Login-Setup.html#ip-whitelisting) our auth API URL
 
-<h3 class="link-copy" id="error-login-page-not-showing-ver-25">
-  Error: Login Page Not Showing (ver 2.5+)
-</h3>
+### Error: Login Page Not Showing (ver 2.5+)
 
 - <span style="color: red;">ISSUE:</span> Webview2 is not installed (installed by default normally but sometimes it is missing in rare cases)
 
@@ -112,9 +98,7 @@ _"One or more of the Interject web apis are offline or could not be reached. The
 </blockquote>
 <br>
 
-<h3 class="link-copy" id="error-file-not-uploading-correctly-to-report-library">
-  Error: File Not Uploading Correctly to Report Library
-</h3>
+### Error: File Not Uploading Correctly to Report Library
 
 - <span style="color: red;">ISSUE:</span> Cloud files or files on a shared network may not upload to Report Library correctly.
 
@@ -122,9 +106,7 @@ _"One or more of the Interject web apis are offline or could not be reached. The
 
     <span style="color: green;">SOLUTION:</span> Save cloud file as a [website link](/wTroubleshoot/Cloud-File.html#solution-uploading-as-a-website-link).
 
-<h3 class="link-copy" id="error-report-showing-incorrect-data-or-data-missing">
-  Error: Report Showing Incorrect Data or Data Missing
-</h3>
+### Error: Report Showing Incorrect Data or Data Missing
 
 - <span style="color: red;">ISSUE:</span> Report formulas not set up correctly.
 
