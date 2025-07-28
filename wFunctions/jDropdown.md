@@ -213,7 +213,7 @@ For an example of this function, see [jDropdown](/wGetStarted/L-Create-Dropdowns
 |  DataPortal  |  jDataPortal("NorthwindCustomersDropdown",1)  |  Uses the helper function [jDataPortal()](/wFunctions/jDataPortal.html) designating the "NorthwindCustomersDropdown" Data Portal. |  
 |  Parameters  |  ""  |  The data returned from the data source will not be filtered.  |  
 |  MultiSelect  |  FALSE  |  Only one entry can be selected from the dropdown window.  |  
-|  Target Cell  |  PairGroup(Pair(E3,G13),Pair(F3,H13))  |  The entry selected becomes the ID. This ID is matched to column names in E3, F3, and G3, the value of which will be outputted to cells G13, H13, and I13 respectively. |  
+|  Target Cell  |  PairGroup(Pair(E3,G13),Pair(F3,H13),Pair(G3,I13))  |  The entry selected becomes the ID. This ID is matched to column names in E3, F3, and G3, the value of which will be outputted to cells G13, H13, and I13 respectively. |  
 |  Value Column Name  |  "CompanyName"  |  The selected value for the column "CompanyName" will be inserted.  |  
 |  Display Column Name  |  "DisplayText"  |  The values from the column "DisplayText" will be displayed in the dropdown options.  |  
 |  Delimiter  |    |  Value ignored because MultiSelect is false.  |  
