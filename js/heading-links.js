@@ -13,14 +13,16 @@ document.addEventListener("DOMContentLoaded", function () {
       const link = document.createElement("a");
       link.href = `#${header.id}`;
       link.className = "heading-anchor";
-      link.innerHTML = "🔗";
+      link.innerHTML = '<i class="fa fa-chain"></i>'; // initial icon
   
       link.onclick = function (e) {
         e.preventDefault();
         const url = `${window.location.origin}${window.location.pathname}#${header.id}`;
         navigator.clipboard.writeText(url).then(() => {
-          link.innerHTML = "✅";
-          setTimeout(() => link.innerHTML = "🔗", 1000);
+          link.innerHTML = '<i class="fa fa-check text-success"></i>';
+          setTimeout(() => {
+            link.innerHTML = '<i class="fa fa-link"></i>';
+          }, 1000);
         });
       };
   
