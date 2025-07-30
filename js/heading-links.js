@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const link = document.createElement("a");
       link.href = `#${header.id}`;
       link.className = "heading-anchor";
-      link.innerHTML = '<i class="fa fa-chain"></i>'; // initial icon
+      link.innerHTML = '<i class="fa fa-link"></i>'; // initial icon
   
       link.onclick = function (e) {
         e.preventDefault();
