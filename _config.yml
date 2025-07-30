@@ -75,6 +75,7 @@ responsive_image:
 
 kramdown:
   smart_quotes: ["apos", "apos", "quot", "quot"]
+  input: kramdown
 
 defaults:
   -

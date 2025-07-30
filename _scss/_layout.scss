@@ -31,6 +31,17 @@
     transition: all 0.1s ease;
 }
 
+.heading-anchor {
+    margin-left: 8px;
+    text-decoration: none;
+    font-size: 0.8em;
+    visibility: hidden;
+  }
+  
+  .link-copy:hover .heading-anchor {
+    visibility: visible;
+  }
+  
 // @keyframes gradientswitch {
 //     0% {
 //         background: #0087C9;

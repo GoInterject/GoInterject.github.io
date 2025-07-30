@@ -13,7 +13,7 @@ description: The jDropdown function returns data from a Data Portal that can be 
 
 ##  Function Summary
 
-The jDropdown function returns data from a Data Portal that can be displayed in a dropdown window for the user to select and insert into a designated cell within the spreadsheet. It is typically used to easily insert a valid parameter into the spreadsheet to filter the data returned by a report function after a pull action. When this function is linked to a hyperlink, the user can simply click on the hyperlink to display a list of valid parameters and insert one or more into the spreadsheet.
+The jDropdown function returns data from a Data Portal that can be displayed in a dropdown window for the user to select and insert into a designated range of cells within the spreadsheet. It is typically used to easily insert a valid parameter into the spreadsheet to filter the data returned by a report function after a pull action. When this function is linked to a hyperlink, the user can simply click on the hyperlink to display a list of valid parameters and insert one or more into the spreadsheet.
 
 For an example of this function, see [jDropdown](/wGetStarted/L-Create-Dropdowns.html).
 
@@ -49,7 +49,7 @@ For an example of this function, see [jDropdown](/wGetStarted/L-Create-Dropdowns
     </tr>
     <tr>
 		<td class="pph"><b>Constraints</b></td>
-		<td>The values must match the order of the parameters in the data source (The order can be verified using the [Validation Report](/wTroubleshoot/Reports.html#validation-report-for-interject-events) )</td>
+		<td>The values must match the order of the parameters in the data source (The order can be verified using the <a href="/wTroubleshoot/Reports.html#validation-report-for-interject-events">Validation Report</a>)</td>
     </tr>
     <tr>
 		<td class="pph"><b>If Blank</b></td>
@@ -79,14 +79,14 @@ For an example of this function, see [jDropdown](/wGetStarted/L-Create-Dropdowns
 </table>
 </div>
 
-<button class="collapsible-parameter">**Target Cell**<br>The range where the selected entry will be inserted (will insert into every cell in this range).</button>
+<button class="collapsible-parameter">**Target Cell**<br>The range where the selected entry(s) will be inserted. If a single cell is designated, the entry will go there. If a range of cells with header values is designated, the entries will populate on the same row as the jDropdown link starting at the first column of this range. Pairs and PairGroup can also be used to map header values with output cells where the entry(s) will be inserted.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
     <tr>
 		<td class="pph"><b>Type</b></td>
-		<td>Range</td>
-    </tr>
+		<td>Range/<a href="https://docs.gointerject.com/wFunctions/Pair.html">Pair()</a>/<a href="https://docs.gointerject.com/wFunctions/PairGroup.html">PairGroup()</a></td>
+     </tr>
     <tr>
 		<td class="pph"><b>Constraints</b></td>
 		<td></td>
@@ -179,7 +179,7 @@ For an example of this function, see [jDropdown](/wGetStarted/L-Create-Dropdowns
 </table>
 </div>
 
-###  Excel Formula Bar Example
+###  Excel Formula Bar Example (Single Cell Output)
 
 ```Excel
 =jDropdown(jDataPortal("NorthwindCustomersDropdown",1),,FALSE,C17,"CompanyName","DisplayText",,"Select a Customer")
@@ -190,10 +190,30 @@ For an example of this function, see [jDropdown](/wGetStarted/L-Create-Dropdowns
 | Argument Name  |  Example Mapping  |  Explanation   |  
 |------|------|------|
 |  Function Name  |  =jDropdown()  |  The name of this function.  |  
-|  DataPortal  |  jDataPortal("NorthwindCustomersDropdown",1)  |  Uses the helper function [jDataPortal()](/wFunctions/jDataPortal.html) designating the "NorthwindCustomersDropdown" Data Portal. Filters the records to include only those whose CustomerID contains the string "save".  |  
+|  DataPortal  |  jDataPortal("NorthwindCustomersDropdown",1)  |  Uses the helper function [jDataPortal()](/wFunctions/jDataPortal.html) designating the "NorthwindCustomersDropdown" Data Portal.  |  
 |  Parameters  |  ""  |  The data returned from the data source will not be filtered.  |  
 |  MultiSelect  |  FALSE  |  Only one entry can be selected from the dropdown window.  |  
 |  Target Cell  |  C17  |  The entry selected will be inserted into cell C17.  |  
+|  Value Column Name  |  "CompanyName"  |  The selected value for the column "CompanyName" will be inserted.  |  
+|  Display Column Name  |  "DisplayText"  |  The values from the column "DisplayText" will be displayed in the dropdown options.  |  
+|  Delimiter  |    |  Value ignored because MultiSelect is false.  |  
+|  Instruction Text  |  "Select a Customer"  |  The text "Select a Customer" will be displayed under the title in the dropdown window.  |  
+
+###  Excel Formula Bar Example (Multiple Cell Output)
+
+```Excel
+=jDropdown(jDataPortal("NorthwindCustomersDropdown",1),,FALSE,PairGroup(Pair(E3,G13),Pair(F3,H13), Pair(G3,I13)),"CompanyName","DisplayText",,"Select a Customer")
+```
+
+###  Function Composition
+
+| Argument Name  |  Example Mapping  |  Explanation   |  
+|------|------|------|
+|  Function Name  |  =jDropdown()  |  The name of this function.  |  
+|  DataPortal  |  jDataPortal("NorthwindCustomersDropdown",1)  |  Uses the helper function [jDataPortal()](/wFunctions/jDataPortal.html) designating the "NorthwindCustomersDropdown" Data Portal. |  
+|  Parameters  |  ""  |  The data returned from the data source will not be filtered.  |  
+|  MultiSelect  |  FALSE  |  Only one entry can be selected from the dropdown window.  |  
+|  Target Cell  |  PairGroup(Pair(E3,G13),Pair(F3,H13),Pair(G3,I13))  |  The entry selected becomes the ID. This ID is matched to column names in E3, F3, and G3, the value of which will be outputted to cells G13, H13, and I13 respectively. |  
 |  Value Column Name  |  "CompanyName"  |  The selected value for the column "CompanyName" will be inserted.  |  
 |  Display Column Name  |  "DisplayText"  |  The values from the column "DisplayText" will be displayed in the dropdown options.  |  
 |  Delimiter  |    |  Value ignored because MultiSelect is false.  |  
@@ -203,3 +223,5 @@ For an example of this function, see [jDropdown](/wGetStarted/L-Create-Dropdowns
 
 * [jDataPortal](/wFunctions/jDataPortal.html)
 * [Param](/wFunctions/Param.html)
+* [PairGroup](/wFunctions/PairGroup.html)
+* [Pair](/wFunctions/Pair.html)

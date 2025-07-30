@@ -29,7 +29,7 @@ This is a troubleshooting guide for the Interject Add-in. This resource is desig
 
     <span style="color: green;">SOLUTION:</span> Restart Microsoft Excel
 
-### Error: Incompatible FIPS 
+### Error: Incompatible FIPS
 
 _"This implementation is not part of the Windows Platform FIPS validated cryptographic algorithms"_
 
