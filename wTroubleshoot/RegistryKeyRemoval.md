@@ -41,12 +41,6 @@ Run the provided script to list all Interject-related registry entries:
 </blockquote>
 <br>
 
-The script searches under the following hives:
-
-- HKCU:\Software
-- HKLM:\Software
-- HKLM:\Software\WOW6432Node
-
 It will return all keys and subkeys that include "interject" in their path or name.
 
 Example output of registry locations:
@@ -59,7 +53,7 @@ These entries indicate locations that may contain leftover Interject references.
 
 #### Additional Registry Locations
 
-A particular support case revealed additional registry locations that may block successful installation of Interject when residual installer files are missing or corrupted. This issue occurred because the system believed Interject was installed, but the cached installer package (.msi) was missing, causing the installation to fail with an error like:
+A particular support case revealed additional registry locations that may block successful installation of Interject when residual installer files are missing or corrupted. This issue occurred because the system believed Interject was installed, but the cached installer package (.msi) was missing, causing the installation to fail. The error in the log file was:
 
 &emsp; _Warning: Local cached package 'C:\WINDOWS\Installer\ad71cbc.msi' is missing._
 

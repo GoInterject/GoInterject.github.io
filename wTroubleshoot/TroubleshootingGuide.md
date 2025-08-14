@@ -122,8 +122,6 @@ _"One or more of the Interject web apis are offline or could not be reached. The
 
 ### Error: Installation Fails Due to Missing Cached Installer or Residual Registry Keys
 
-_"Warning: Local cached package 'C:\WINDOWS\Installer\xxxxxxx.msi' is missing."_
-
 - <span style="color: red;">ISSUE:</span> Installation of the Interject Excel Add-in fails with error about missing cached installer package (e.g. .msi file missing), or the system incorrectly detects an existing installation blocking update.
 
 - <span style="color: green;">SOLUTION:</span>
