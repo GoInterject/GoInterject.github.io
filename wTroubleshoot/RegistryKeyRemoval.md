@@ -81,6 +81,24 @@ After removing the above keys, perform a full system reboot.
 
 After cleaning the registry, proceed to install the latest version of Interject from the official source.
 
+### Additional Registry Locations from Support Case: Interject Installation Issue
+
+A recent support case revealed additional registry locations that may block successful installation of Interject when residual installer files are missing or corrupted. This issue occurred because the system believed Interject was installed, but the cached installer package (.msi) was missing, causing the installation to fail.
+
+Resolution Steps To Take:
+
+Manually search for and remove registry keys related to previous Interject installations in the following locations:
+
+* HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\ (multiple Interject versions may be present here)
+* HKEY_USERS\[SID Identifier]\Software\Microsoft\Installer\Products\
+* HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData\<UserSID>\Products\
+
+After removing the above keys, perform a full system reboot.
+
+Retry the Interject installation, which should then proceed without errors.
+
+Important: These additional registry paths may not be covered by the existing PowerShell script or manual search, so administrators should manually inspect them if the installer continues to fail with cached package errors.
+
 ### Additional Notes
 
 This issue has primarily occurred when older versions of the Interject add-in were not completely uninstalled.

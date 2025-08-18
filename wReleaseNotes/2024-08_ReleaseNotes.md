@@ -4,7 +4,7 @@ filename: "2024-08_ReleaseNotes.md"
 layout: custom
 keywords: [change log, updates, versions, history, what's new]
 headings: ["August 2024", "Excel Add-in v2.5.2.11", "Portal Site", "Auth API", "Documentation Updates"]
-links: ["/wLabs/lab.html", "/wDeveloper/Request-Context-Parse.html", "/wDeveloper/L-Dev-EditingDataSave.html", "/wGetStarted/L-Create-CustomerOrders.html#adding-a-report-label-with-reportlookup", "/wTroubleshoot/TroubleshootingGuide.html", "/wGetStarted/L-Create-SpecColDefs.html", "/wIndex/Diagnostics-SpecialFeatures.html"]
+links: ["/wIndex/Diagnostics-SpecialFeatures.html#webview2browser-login", "/wLabs/lab.html", "/wDeveloper/Request-Context-Parse.html", "/wDeveloper/L-Dev-EditingDataSave.html", "/wGetStarted/L-Create-CustomerOrders.html#adding-a-report-label-with-reportlookup", "/wTroubleshoot/TroubleshootingGuide.html", "/wGetStarted/L-Create-SpecColDefs.html", "/wIndex/Diagnostics-SpecialFeatures.html"]
 image_dir: ""
 images: []
 description: Release notes for this month's updates
@@ -19,7 +19,7 @@ _Released 8/20/24_
 
 * ✅ Force use of TLS 1.2 in Add-in Manager
 
-* ✅ Add alternate login method using default system browser instead of WebView2 for scenarios where the user's environment does not or can not support WebView2 embedded browser
+* ✅ Added an [alternate login](/wIndex/Diagnostics-SpecialFeatures.html#webview2browser-login) method using default system browser instead of WebView2 for scenarios where the user's environment does not or can not support WebView2 embedded browser
 
 * ♻️ Roles are synced a maximum of every 20 minutes to allow changes made in the Interject Portal site to propagate to end users more effectively
 

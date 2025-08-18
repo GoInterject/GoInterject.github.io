@@ -443,6 +443,8 @@ Developer:
 troubleshoot:
 - title: Troubleshooting Guide
   path: /wTroubleshoot/TroubleshootingGuide.html
+- title: General Troubleshooting
+  path: /wTroubleshoot/GeneralTroubleshooting.html
 - sectiontitle: Interject Support
   path: /wTroubleshoot/Interject-Support.html
   section:
@@ -473,6 +475,8 @@ troubleshoot:
       path: /wTroubleshoot/Transport-Errors.html
     - title: Corrupted Interject Installation
       path: /wTroubleshoot/CorruptedInstallation.html
+    - title: Registry Key Removal
+      path: /wTroubleshoot/RegistryKeyRemoval.html
 - sectiontitle: Report Errors
   path: /wTroubleshoot/Reports.html
   section:
