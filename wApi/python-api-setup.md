@@ -135,6 +135,46 @@ Once settings have been configured, the server can be launched using the built-i
 ```
 python server.py
 ``` 
+### Making an API Call
+
+Once the API is running, you can test it to confirm it's working. 
+
+The simplest way is to use `curl` in your terminal to make a `GET` request to the health check endpoint.
+
+```bash
+curl http://127.0.0.1:8000/health
+```
+A successful request will return a `200 OK` status and the following JSON body:
+```json
+{
+  "status": "OK"
+}
+```
+<blockquote class="highlight_note">
+<details>
+<summary><strong>Alternative 1: Using PowerShell</strong></summary>
+<br>
+In PowerShell, <code>curl</code> is an alias for <code>Invoke-WebRequest</code> which returns a detailed object. For testing REST APIs, it's better to use the <code>Invoke-RestMethod</code> cmdlet, which automatically handles JSON.
+<br><br>
+<code class="language-powershell">
+Invoke-RestMethod http://127.0.0.1:8000/health
+</code>
+<br><br>
+This returns a PowerShell object. To use the literal curl application, you must specify <code>curl.exe</code>.
+</details>
+</blockquote>
+
+<blockquote class="highlight_note">
+<details>
+<summary><strong>Alternative 2: Using Postman</strong></summary>
+<br>
+1. Open a new request tab (click the <strong>+</strong> icon).<br>
+2. Ensure the HTTP method is set to <strong>GET</strong>.<br>
+3. In the URL bar, enter: <code>http://127.0.0.1:8000/health</code><br>
+4. Click the blue <strong>Send</strong> button.<br>
+5. In the response pane below, you will see a green <strong>Status: 200 OK</strong> and the JSON body.
+</details>
+</blockquote>
 
 ### More Information
 
