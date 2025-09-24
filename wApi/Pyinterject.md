@@ -62,21 +62,22 @@ print(dc)
 ```python
 from pyinterject import Interject
 from pyinterject.core.models.user import User
+
 clientIdPublic: str = ids.client.ClientIdPublic
 
 # Get the user
-user = ids.get_user("aBcdeFGHiJ") # The public id of the user
+user = ids.get_user("aBcdeFGHiJ")  # The public id of the user
 
 # Make changes
 user.FirstName = "New_Name"
 user.Address1 = "123 n. nowhere"
 
 # Update the user
-resp = ids.update_user(client_id_public=clientIdPublic, 
-                       user_id_public=user.UserIDPublic, 
+resp = ids.update_user(client_id_public=clientIdPublic,
+                       user_id_public=user.UserIDPublic,
                        user=user)
 ```
 
-###  Get the Code
+### Get the Code
 
 The code for Pyinterject will be released soon. If you are interested, [contact us](mailto:help@gointerject.com) to be a part of the Beta release program.

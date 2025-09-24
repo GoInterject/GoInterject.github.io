@@ -150,31 +150,25 @@ A successful request will return a `200 OK` status and the following JSON body:
   "status": "OK"
 }
 ```
-<blockquote class="highlight_note">
-<details>
-<summary><strong>Alternative 1: Using PowerShell</strong></summary>
-<br>
-In PowerShell, <code>curl</code> is an alias for <code>Invoke-WebRequest</code> which returns a detailed object. For testing REST APIs, it's better to use the <code>Invoke-RestMethod</code> cmdlet, which automatically handles JSON.
-<br><br>
-<code class="language-powershell">
-Invoke-RestMethod http://127.0.0.1:8000/health
-</code>
-<br><br>
-This returns a PowerShell object. To use the literal curl application, you must specify <code>curl.exe</code>.
-</details>
-</blockquote>
+> **Alternative 1: Using PowerShell**
+>
+> In PowerShell, `curl` is an alias for `Invoke-WebRequest`, which returns a detailed object. For testing REST APIs, it's better to use the `Invoke-RestMethod` cmdlet, which automatically handles JSON.
+>
+> ```powershell
+> Invoke-RestMethod http://127.0.0.1:8080/api/health
+> ```
+>
+> This returns a PowerShell object. To use the literal curl application, specify `curl.exe`.
 
-<blockquote class="highlight_note">
-<details>
-<summary><strong>Alternative 2: Using Postman</strong></summary>
-<br>
-1. Open a new request tab (click the <strong>+</strong> icon).<br>
-2. Ensure the HTTP method is set to <strong>GET</strong>.<br>
-3. In the URL bar, enter: <code>http://127.0.0.1:8000/health</code><br>
-4. Click the blue <strong>Send</strong> button.<br>
-5. In the response pane below, you will see a green <strong>Status: 200 OK</strong> and the JSON body.
-</details>
-</blockquote>
+---
+
+> **Alternative 2: Using Postman**
+>
+> 1. Open a new request tab (click the **+** icon).
+> 2. Ensure the HTTP method is set to **GET**.
+> 3. In the URL bar, enter: `http://127.0.0.1:8080/api/health`
+> 4. Click the blue **Send** button.
+> 5. In the response pane below, you will see a green **Status: 200 OK** and the JSON body.
 
 ### More Information
 
