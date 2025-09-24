@@ -75,6 +75,45 @@ java -jar "./target/interject-webbapp-1.0.0-SNAPSHOT.jar"
 </blockquote>
 <br>
 
+### Making an API Call
+Once the API is running, you can test it with a simple health check request. Open a terminal and use curl:
+
+```bash
+curl http://127.0.0.1:8080/api/health
+```
+
+A successful response confirms the API is working:
+```json
+{
+  "status": "OK"
+}
+```
+<blockquote class="highlight_note">
+<details>
+<summary><strong>Alternative 1: Using PowerShell</strong></summary>
+<br>
+In PowerShell, <code>curl</code> is an alias for <code>Invoke-WebRequest</code> which returns a detailed object. For testing REST APIs, it's better to use the <code>Invoke-RestMethod</code> cmdlet, which automatically handles JSON.
+<br><br>
+<code class="language-powershell">
+Invoke-RestMethod http://127.0.0.1:8080/api/health
+</code>
+<br><br>
+This returns a PowerShell object. To use the literal curl application, you must specify <code>curl.exe</code>.
+</details>
+</blockquote>
+
+<blockquote class="highlight_note">
+<details>
+<summary><strong>Alternative 2: Using Postman</strong></summary>
+<br>
+1. Open a new request tab (click the <strong>+</strong> icon).<br>
+2. Ensure the HTTP method is set to <strong>GET</strong>.<br>
+3. In the URL bar, enter: <code>http://127.0.0.1:8080/api/health</code><br>
+4. Click the blue <strong>Send</strong> button.<br>
+5. In the response pane below, you will see a green <strong>Status: 200 OK</strong> and the JSON body.
+</details>
+</blockquote>
+
 ### Change Host and Port
 
 To change the host and port number, simply change the values in the `application.yaml` file:
@@ -84,6 +123,7 @@ server:
       port: 8080
       address: 127.0.0.1
 ```
+
 
 ### Development Docs
 
