@@ -150,12 +150,13 @@ A successful request will return a `200 OK` status and the following JSON body:
   "status": "OK"
 }
 ```
+---
+
 > **Alternative 1: Using PowerShell**
 >
-> In PowerShell, `curl` is an alias for `Invoke-WebRequest`, which returns a detailed object. For testing REST APIs, it's better to use the `Invoke-RestMethod` cmdlet, which automatically handles JSON.
 >
 > ```powershell
-> Invoke-RestMethod http://127.0.0.1:8080/api/health
+> Invoke-RestMethod http://127.0.0.1:8000/api/health
 > ```
 >
 > This returns a PowerShell object. To use the literal curl application, specify `curl.exe`.
@@ -166,7 +167,7 @@ A successful request will return a `200 OK` status and the following JSON body:
 >
 > 1. Open a new request tab (click the **+** icon).
 > 2. Ensure the HTTP method is set to **GET**.
-> 3. In the URL bar, enter: `http://127.0.0.1:8080/api/health`
+> 3. In the URL bar, enter: `http://127.0.0.1:8000/api/health`
 > 4. Click the blue **Send** button.
 > 5. In the response pane below, you will see a green **Status: 200 OK** and the JSON body.
 
