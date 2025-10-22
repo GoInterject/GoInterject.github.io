@@ -45,6 +45,96 @@ When a Data Portal is setup with the System Parameter "Interject_RequestContext"
 | UserContextEncrypted | nvarchar(4000) | &lt;Not used&gt; |
 | XMLDataToSave | nvarchar(max) | The data from the report to be processed/saved |
 
+### Example of what the XML to be Parsed is
+
+<button class="collapsible">View RequestContext XML</button>
+<div markdown="1" class="panel">
+
+```xml
+<RequestContext>
+    <ExcelVersion>16.0</ExcelVersion>
+    <IdsVersion>2.5.4.0</IdsVersion>
+    <FileName>filename_verison2.xlsm</FileName>
+    <FilePath>D:\Users\interject\Downloads</FilePath>
+    <TabName></TabName>
+    <CellRange>I7</CellRange>
+    <SourceFunction>Save</SourceFunction>
+    <UtcOffset>-7</UtcOffset>
+    <ColDefItems>
+        <Value Row="8" Column="9" RowDef="true">
+            <Name>DocID</Name>
+        </Value>
+        <Value Row="8" Column="10">
+            <Name>FieldName</Name>
+        </Value>
+        <Value Row="8" Column="11">
+            <Name>FieldValue</Name>
+        </Value>
+    </ColDefItems>
+    <ResultDefItems />
+    <RowDefItems>
+        <Value Row="9" Column="9" ColumnName="DocID">
+            <Name>1</Name>
+        </Value>
+        <Value Row="10" Column="9" ColumnName="DocID">
+            <Name>1</Name>
+    </RowDefItems>
+    <RowDefItems2>
+        <Value Row="9" RowDefName="R00001">
+            <ColKey Order="1" Column="9" Name="DocID">1</ColKey>
+        </Value>
+        <Value Row="10" RowDefName="R00002">
+            <ColKey Order="1" Column="9" Name="DocID">1</ColKey>
+        </Value>
+    </RowDefItems2>
+    <UserContext>
+		<MachineLoginName>LoginName</MachineLoginName>
+		<MachineName>TheCallingPC</MachineName>
+		<FullName>Interject Data</FullName>
+		<UserId>8tbfi</UserId>
+		<ClientId>CnfeoFMarn</ClientId>
+		<LoginName>interject@gointerject.com</LoginName>
+		<LoginAuthTypeId>-1</LoginAuthTypeId>
+		<LoginDateUtc>09/05/2025 12:15:33</LoginDateUtc>
+		<UserRoles>
+			<Role>ClientAdmin</Role>
+		</UserRoles>
+	</UserContext>
+    <UserContextEncrypted />
+    <XMLDataToSave>
+		<c Column="Row" OrigValue="Row" />
+		<c Column="DocID" OrigValue="DocID" />
+		<c Column="FieldName" OrigValue="FieldName" />
+		<c Column="FieldValue" OrigValue="FieldValue" />
+		<r>
+			<Row>9</Row>
+			<DocID>1</DocID>
+			<FieldName>CONTACT NAME</FieldName>
+			<FieldValue>Jim S</FieldValue>
+		</r>
+		<r>
+			<Row>10</Row>
+			<DocID>1</DocID>
+			<FieldName>DATE OF FISCAL YEAR END</FieldName>
+			<FieldValue>10/5/2026</FieldValue>
+		</r>
+		<r>
+			<Row>11</Row>
+			<DocID>1</DocID>
+			<FieldName>COMPANY NAME</FieldName>
+			<FieldValue>Hauler A Disposal</FieldValue>
+		</r>
+		<r>
+			<Row>12</Row>
+			<DocID>1</DocID>
+			<FieldName>PARK AT HOME?</FieldName>
+			<FieldValue>No</FieldValue>
+		</r>
+    </XMLDataToSave>
+</RequestContext>
+```
+</div>
+
 ### The RequestContext_Parse Code
 
 <button class="collapsible">Get The Stored Procedure</button>
