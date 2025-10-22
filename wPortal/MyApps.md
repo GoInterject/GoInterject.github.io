@@ -52,6 +52,10 @@ ClientAdmins are allowed to redirect a data connection. A Connection Redirect is
 <blockquote class=highlight_note>
 <b>Note:</b> To override a connection on the fly without having to set up a connection redirection, you can use the <a href="https://docs.gointerject.com/wFunctions/jDataPortal.html">jDataPortal</a> function.
 </blockquote>
+
+<blockquote class=important_note>
+<b>Important:</b> Using the jDataPortal connection override will exclusively allow overrides to connections within the subscriber's company. However, this type of override will work if the connection is still provided through the published app (used in a data portal shared through the app), and not setup within the company's connection list. Secondly, if the subscriber has a connection named the same as one provided by the published app, this will always be used over the published app's connection.
+</blockquote>
 <br>
 
 To override a connection, select the data connection you want to redirect in the "Default Offering Connection" and change the redirect in the "Your Company Connection" list and click **Save**:
