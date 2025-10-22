@@ -29,6 +29,10 @@ description: Interject documentation search results
         margin-right: 5px;
         margin-bottom: 10px;
     }
+    #custom-proximity {
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
     #custom-all-hits {
         margin-left: 15px;
         margin-bottom: 10px;
@@ -60,7 +64,14 @@ description: Interject documentation search results
     title="Searches with Regex syntax"
 	onclick="handleCustomRegex()"
   >
-  <label for="custom-regex">Use Regex</label>
+  <label for="custom-proximity">Proximity Search</label>
+  <input
+    type="checkbox"
+    id="custom-proximity"
+    title="Search by word proximity, not just exact matches"
+	onclick="handleCustomProximity()"
+  >
+  <label for="custom-all-hits">Show all hits on page</label>
   <input
     type="checkbox"
     id="custom-all-hits"

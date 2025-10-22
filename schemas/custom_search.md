@@ -29,6 +29,10 @@ description: Interject documentation search results
         margin-right: 5px;
         margin-bottom: 10px;
     }
+    #custom-proximity {
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
     #custom-all-hits {
         margin-left: 15px;
         margin-bottom: 10px;
@@ -54,28 +58,37 @@ description: Interject documentation search results
 </div>
 
 <div id="advanced-search-options">
-  <input
-    type="checkbox"
-    id="custom-regex"
-    title="Searches with Regex syntax"
-	onclick="handleCustomRegex()"
-  >
-  <label for="custom-regex">Use Regex</label>
-  <input
-    type="checkbox"
-    id="custom-all-hits"
-    title="Displays all hits in the page(s)"
-	onclick="handleCustomAllHits()"
-  >
-  <label for="custom-all-hits">Show all hits on page</label>
-  <input
-    type="checkbox"
-    id="custom-top-hits"
-    title="Displays hits in page title, url, keywords, headings, and descriptions (nonRegex search only)"
-	onclick="handleCustomTopHits()"
-  >
-  <label for="custom-top-hits">Display top hits</label>
+  <label>
+    <input
+      type="checkbox"
+      id="custom-regex"
+      title="Searches with Regex syntax"
+      onclick="handleCustomRegex()"
+    > 
+    Use Regex
+  </label>
+    
+  <label>
+    <input
+      type="checkbox"
+      id="custom-all-hits"
+      title="Displays all hits in the page(s)"
+      onclick="handleCustomAllHits()"
+    > 
+    Show all hits on page
+  </label>
+
+  <label>
+    <input
+      type="checkbox"
+      id="custom-top-hits"
+      title="Displays hits in page title, url, keywords, headings, and descriptions (nonRegex search only)"
+      onclick="handleCustomTopHits()"
+    > 
+    Display top hits
+  </label>
 </div>
+
 
 <div id="custom-space">
 	<br>
