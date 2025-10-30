@@ -318,7 +318,7 @@ set @Interject_RequestContext =
 	<Row>18</Row>
 	<Start>0.291666666666667</Start>
 	<CodeInputs>.ids.dev..</CodeInputs>
-	<Description>upgrade timelook</Description>
+	<Description>upgrade timelog</Description>
 	<End />
 	<Duration>15.4</Duration>
 	<Client>ids</Client>

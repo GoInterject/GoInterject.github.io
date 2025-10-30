@@ -54,7 +54,7 @@ Take the report **PL Trend Report with Data Cells** from the [Financial Walkthro
 ![](/images/L-Export-QuickExPDF/02.png)
 <br>
 
-Now you have the report to distribute. However, if you send this report with data cells, people without Interject will not be able to view all the Data Cell formulas like in cell K16 below. Without Interject installed that formula will show as **#NAME**.
+Now you have the report to distribute. However, if you send this report with data cells, people without Interject will not be able to view all the Data Cell formulas like in cell K16 below. Without Interject installed that formula will show as **#NAME?**.
 
 ![](/images/L-Export-QuickExPDF/03.png)
 <br>

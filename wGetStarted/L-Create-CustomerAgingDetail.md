@@ -71,7 +71,7 @@ When the template is complete, it should look like the one below.
 ![](/images/L-Create-CustAgingDetail/02.png)
 <br>
 
-**Step 2:** Add 3 rows above row 25. Highlight rows 19-21 and rick-click on row 19 and click **Insert**.
+**Step 2:** Add 3 rows above row 25. Highlight rows 19-21 and right-click on row 19 and click **Insert**.
 
 ![](/images/L-Create-CustAgingDetail/05.png)
 <br>

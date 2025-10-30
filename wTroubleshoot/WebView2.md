@@ -40,7 +40,7 @@ On the Windows Settings form, type "add" and the **Add or remove programs** shou
 ![](/images/WebView2/AddOrRemovePrograms.png)
 <br>
 
-In the "App & features", type "webview2" to verify if WebView2 is installed.
+In the "Apps & features", type "webview2" to verify if WebView2 is installed.
 
 ![](/images/WebView2/WebView2Installed.png)
 <br>
@@ -52,7 +52,7 @@ Click the Start button and type "Control Panel".
 ![](/images/WebView2/StartControlPanel.png)
 <br>
 
-Next click **Program and Features**.
+Next click **Programs and Features**.
 
 ![](/images/WebView2/ProgramsAndFeatures.png)
 <br>

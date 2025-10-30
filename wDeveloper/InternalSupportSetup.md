@@ -35,7 +35,7 @@ Interject provides a way to add your own internal support contact information to
 
 **Step 1:** Ensure Excel is not running.
 
-**Step 2:** Navigate to the program directory for Interject. This can be easily done using the diagnostics command "Open Application Folder":
+**Step 2:** Navigate to the program directory for Interject. This can be easily done using the diagnostics command "Open Application Folders":
 
 
 ![](/images/InternalSupportSetup/OpenApplicationFolders.png)
@@ -51,7 +51,7 @@ Interject provides a way to add your own internal support contact information to
 ```xml
 	<add key="InternalSupport_Email" value="support@northwinddata.com" />
 	<add key="InternalSupport_Phone" value="123-456-7890" />
-	<add key="InternalSupport_Website" value="www.northwinddatacompany.com" />
+	<add key="InternalSupport_Website" value="www.northwinddata.com" />
 ```
 
 ![](/images/InternalSupportSetup/AddEntries.png)

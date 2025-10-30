@@ -64,8 +64,7 @@ When encountering issues with the Interject Excel Add-in, it is helpful to gathe
 ### Error Messages
 
 - **_Error Logs:_** Document any error messages received. This includes pop-up errors within Excel or system logs.
-
-- **_Addin Manger:_** Does the Addin Manager reveal any errors in the logs?
+ - **_Add-in Manager:_** Does the Add-in Manager reveal any errors in the logs?
 
 ### Third-Party Add-ins
 

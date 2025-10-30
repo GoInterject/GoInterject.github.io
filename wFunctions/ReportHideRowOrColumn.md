@@ -111,10 +111,10 @@ For an example of this function, see [Lab Create: Hiding Rows & Columns](/wGetSt
 
 | Argument Name  |  Example Mapping  |  Explanation   |  
 |------|------|------|
-|  Function Name  |  =ReportGrouping()  |  The name of this function.  |  
+|  Function Name  |  =ReportHideRowOrColumn()  |  The name of this function.  |  
 |  OnPullSaveOrBoth  |  "Both"  |  A pull or save action are designated as the run event.  |  
 |  OnClearRunOrBoth  |  "Run"  |  A run event (defined in OnPullSaveOrBoth) will trigger this function being ran.  |  
-|  RowOrColumnGroup  |  C47:C48  |  A cell value of "hide" in the range C47:48 will hide that row when triggered.  |  
+|  RowOrColumnGroup  |  C47:C48  |  A cell value of "hide" in the range C47:C48 will hide that row when triggered.  |  
 |  Disabled  |  FALSE  |  This function will run.  |  
 
 ###  Trigger Combination List

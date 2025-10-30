@@ -17,7 +17,7 @@ description: Shows how to setup a python data api to utilize custom functions.
 
 setup requires the following conditions be met:
 
-- The Python Interject API is downloaded and all dependancies satisfied
+- The Python Interject API is downloaded and all dependencies satisfied
 - `appconfig.py` contains a name of a valid python script in the current directory for `CUSTOM_MODULE`
     - I.E. `CUSTOM_MODULE = 'etl'`
 - the custom python function script contains a function that expects kwargs and returns a dataframe

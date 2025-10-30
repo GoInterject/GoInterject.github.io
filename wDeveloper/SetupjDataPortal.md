@@ -26,7 +26,7 @@ description: The jDataPortal is a powerful Interject function that not only allo
 
 ## Overview
 
-The [jDataPortal](/wFunctions/jDataPortal.html) is a powerful Interject function that not only allows users to not only establish and customize the connection to an Interject Data Portal, but also override certain parameters of the Portal to customize reporting needs.
+The [jDataPortal](/wFunctions/jDataPortal.html) is a powerful Interject function that not only allows users to establish and customize the connection to an Interject Data Portal, but also override certain parameters of the Portal to customize reporting needs.
 
 ### Setup jDataPortal
 
@@ -67,7 +67,7 @@ The **DataResultNumber** is the second parameter for the jDataPortal. This param
 
 You can also enter negative numbers to specify the query in relation to the last query. For example, -1 will return the last query listed in your stored procedure. To illustrate, the following chart shows an example for a stored procedure returning 4 data sets:
 
-| Query<br>Position | Postive<br>Reference | Negative<br>Reference |
+| Query<br>Position | Positive<br>Reference | Negative<br>Reference |
 |---|---|---|
 | Query 1 | 1 | -4 |
 | Query 2 | 2 | -3 |
@@ -119,12 +119,12 @@ Bring up the Function Wizard again and for the **Filter** parameter, enter:
 ![](/images/SetupjDataPortal/AddFilter.png)
 <br>
 
-Pull the data again and notice the results are filtered to only included entries whose Contact Title includes "Manager".
+Pull the data again and notice the results are filtered to only include entries whose Contact Title includes "Manager".
 
 ![](/images/SetupjDataPortal/ResultsFiltered.png)
 <br>
 
-The **Filter** parameter excepts multiple expressions. Some key points:
+The **Filter** parameter accepts multiple expressions. Some key points:
 
 * This parameter is not case sensitive
 * Brackets may or may not surround column names

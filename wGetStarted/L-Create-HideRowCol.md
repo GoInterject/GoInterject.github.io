@@ -137,7 +137,7 @@ You are now ready to begin editing the excel sheet.
 ![](/images/L-Create-HideRowCol/28.jpg)
 <br>
 
-**Step 7:** Select the filed **RowOrColumnRange** then select the three cells containing **Hide**. In this case it will be **M34:O34**. Click **OK**.
+**Step 7:** Select the field RowOrColumnRange then select the three cells containing **Hide**. In this case it will be **M34:O34**. Click **OK**.
 
 ![](/images/L-Create-HideRowCol/29.jpg)
 <br>

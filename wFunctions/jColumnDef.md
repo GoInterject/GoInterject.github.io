@@ -31,10 +31,10 @@ The parameters and segments listed below are some examples of the FinCube Data P
 		<td class="pph"><b>Type</b></td>
 		<td>String/Range</td>
     </tr>
-    <tr>
-		<td class="pph"><b>Constraints</b></td>
-		<td>Max 255 char or single cell</td>
-    </tr>
+  <tr>
+    <td class="pph"><b>Constraints</b></td>
+    <td>Max 255 characters or single cell</td>
+  </tr>
     <tr>
 		<td class="pph"><b>If Blank</b></td>
 		<td>Does not filter data</td>
@@ -51,10 +51,10 @@ The parameters and segments listed below are some examples of the FinCube Data P
 		<td class="pph"><b>Type</b></td>
 		<td>String/Range</td>
     </tr>
-    <tr>
-		<td class="pph"><b>Constraints</b></td>
-		<td>Max 255 char or single cell</td>
-    </tr>
+  <tr>
+    <td class="pph"><b>Constraints</b></td>
+    <td>Max 255 characters or single cell</td>
+  </tr>
     <tr>
 		<td class="pph"><b>If Blank</b></td>
 		<td>Does not filter data</td>
@@ -71,10 +71,10 @@ The parameters and segments listed below are some examples of the FinCube Data P
 		<td class="pph"><b>Type</b></td>
 		<td>String/Range</td>
     </tr>
-    <tr>
-		<td class="pph"><b>Constraints</b></td>
-		<td>Max 255 char or single cell</td>
-    </tr>
+  <tr>
+    <td class="pph"><b>Constraints</b></td>
+    <td>Max 255 characters or single cell</td>
+  </tr>
     <tr>
 		<td class="pph"><b>If Blank</b></td>
 		<td>Does not filter data</td>
@@ -93,7 +93,7 @@ The parameters and segments listed below are some examples of the FinCube Data P
     </tr>
     <tr>
 		<td class="pph"><b>Constraints</b></td>
-		<td>Max 255 char or single cell</td>
+  <td>Max 255 characters or single cell</td>
     </tr>
     <tr>
 		<td class="pph"><b>If Blank</b></td>

@@ -23,4 +23,4 @@ An API can be used with a Data Connection to connect to any database, including 
 
 ### [Database Connection](/wPortal/L-Database-Connection.html)
 
-A Datat Connection can be set up to connect directly to a database using a OLEDB or a .Net Adapter connection string for MS SQL Server or using a ODBC connection string to connect to Oracle, MySQL, or others that support stored procedures.
+A Data Connection can be set up to connect directly to a database using a OLEDB or a .Net Adapter connection string for MS SQL Server or using a ODBC connection string to connect to Oracle, MySQL, or others that support stored procedures.

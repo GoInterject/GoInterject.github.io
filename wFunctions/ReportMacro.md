@@ -19,7 +19,7 @@ For an example of this function, see [Lab Create: Using Report Macro](/wGetStart
 
 ###  Function Arguments
 
-<button class="collapsible-parameter">**OnPullSaveOrBoth**<br>A string that defines what type of action(s) the event in OnClearRunOrBoth refer to: **Pull** action, **Save** action, or **Both** actions.</button>
+<button class="collapsible-parameter">**OnPullSaveOrBoth**<br>A string that defines what type of action(s) the event in OnPullSaveOrBoth refers to: **Pull** action, **Save** action, or **Both** actions.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>

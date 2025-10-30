@@ -23,7 +23,7 @@ images: [
 	{file: "LogoutForget", type: "png", site: "Add-in", cat: "Login Manager", sub: "", report: "", ribbon: "", config: ""}, 
 	{file: "ClearLoginCookies", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Clear External Login Cookies", report: "", ribbon: "Advanced", config: ""}
 	]
-description: Logging in is simple and fast! Interject will remember your login and sign you in automatically subsequent visits.You can also add multiple logins and switch accounts easily.
+description: Logging in is simple and fast! Interject will remember your login and sign you in automatically subsequent visits. You can also add multiple logins and switch accounts easily.
 ---
 * * *
 
@@ -118,7 +118,7 @@ To switch between accounts, simply click the link of the account you wish to swi
 
 ### Forgetting Login Credentials
 
-Forgetting credentials means the login token is deleted from the cache and the profile removed from the Login Manger. 
+Forgetting credentials means the login token is deleted from the cache and the profile removed from the Login Manager. 
 
 To log out and forget your credentials, click the ellipses on the account you wish to log out and forget and click **Log Out & Forget**.
 

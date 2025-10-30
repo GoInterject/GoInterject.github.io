@@ -41,7 +41,7 @@ These settings are found in the IdsSettings.xml file. For example, an entry in t
 | DisableAll | Disables all shortkey changes. This will make the default shortkeys active. (Requires Excel restart) |
 | EnableAll | Enables all shortkey changes (Requires Excel restart) |
 | ReportLibrary=Ctrl+Shift+A | Changes the shortkey of the Report Library to Ctrl-Shift+A |
-| Diagnostics=Ctrl+Shift+A<br>DrillOnData=Ctrl+Shift+D<br>Diagnostics=Ctrl+Shift+K | First changes Dianostics, then DrillOnData, and then Diagnostics again |
+| Diagnostics=Ctrl+Shift+A<br>DrillOnData=Ctrl+Shift+D<br>Diagnostics=Ctrl+Shift+K | First changes Diagnostics, then DrillOnData, and then Diagnostics again |
 
 ### Defaults
 

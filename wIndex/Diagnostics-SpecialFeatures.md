@@ -52,7 +52,7 @@ BugFix1=OFF
 
 ### BugFix2: Microsoft Repaint
 
-The Microsoft Repaint Bug causes screen issues when an Excel Add-In programatically switches focus to another tab. This bug is present for some users starting with Excel versions 2210. If you are experiencing issues with slow-down and screen issues when drilling data, this bug fix may help.
+The Microsoft Repaint Bug causes screen issues when an Excel Add-In programmatically switches focus to another tab. This bug is present for some users starting with Excel versions 2210. If you are experiencing issues with slow-down and screen issues when drilling data, this bug fix may help.
 
 **Turn On Repaint Bug Fix:** To enable this bug fix, enter the following in the Input field and press &lt;Execute Selected Action&gt;:
 

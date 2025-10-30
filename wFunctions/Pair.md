@@ -19,7 +19,7 @@ For an example of this function, see [Lab Drill: Customer Aging](/wGetStarted/L-
 
 ###  Function Arguments
 
-<button class="collapsible-parameter">**From**<br>A string or a single cell indicating the value to be transferred. If a range is entered, it will designate a column of possible cells, one of which will be transferred. The cell to be transferred is determine by the row of the active cell when this function is triggered. For example, if the range starts with column H and the active cell is in row 34, the cell H34 will be transferred.</button>
+<button class="collapsible-parameter">**From**<br>A string or a single cell indicating the value to be transferred. If a range is entered, it will designate a column of possible cells, one of which will be transferred. The cell to be transferred is determined by the row of the active cell when this function is triggered. For example, if the range starts with column H and the active cell is in row 34, the cell H34 will be transferred.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>

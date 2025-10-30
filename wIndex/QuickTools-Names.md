@@ -63,7 +63,7 @@ You can define a name that is scoped to the entire Workbook by selecting the ran
 ![](/images/QuickToolsNames/NameManager5.png)
 <br>
 
-To create a name scoped to a single sheet the Excel way, you have to use the Name manager. Select the range and click "New" from the Name Manger:
+To create a name scoped to a single sheet the Excel way, you have to use the Name manager. Select the range and click "New" from the Name Manager:
 
 ![](/images/QuickToolsNames/NameManager3.png)
 <br>

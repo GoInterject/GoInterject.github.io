@@ -192,9 +192,6 @@ AS
 		+ ltrim(right(convert(varchar(25), @LastUpdated, 100), 7))
 
 
----
----Do more if this is an execute event
----
 	IF @Interject_CommandExecute = 1
 	BEGIN
 		DECLARE @NewUpdateDate DATETIME
@@ -235,7 +232,7 @@ AS
 				+ LEFT(CONVERT(VARCHAR,@NewUpdateDate, 1),5)  + ' ' 
 				+ LTRIM(RIGHT(CONVERT(VARCHAR(25), @NewUpdateDate, 100), 7))
 
-			-- Redo status reponse based on the successful update
+			-- Redo status response based on the successful update
 			SET @Interject_CommandStatus = 'Month ''' + @YearMonthToUpdate + ''' was updated on ' 
 				+ LEFT(convert(varchar, @NewUpdateDate, 1),5)  + ' ' 
 				+ ltrim(right(convert(varchar(25), @NewUpdateDate, 100), 7))

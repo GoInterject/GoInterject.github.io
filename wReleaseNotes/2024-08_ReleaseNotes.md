@@ -37,7 +37,7 @@ _Released 8/20/24_
 
 _Released 8/20/24_
 
-* ✅ Add roles objects to user's client's data
+* ✅ Add role objects to user's client's data
 
 ### Documentation Updates
 

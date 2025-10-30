@@ -21,7 +21,7 @@ description: The Interject add-in is a client application that can send a reques
 
 The Interject add-in is a client application that can send a request to a POST HTTP(s) REST API. As long as the response is properly structured, Interject will display the data in Excel. Interject is not a tool that communicates with all APIs, but by allowing users to build custom APIs, it can be connected to any data-source including other APIs that are not natively supported. We provide a customizable API, which can serve as the starting point for this translational API.
 
-Another reason to use an API, instead of connecting directly to a data source, is to provide another layer of security. Since most data-sources are protected by a firewall, users outside a network, and/or without the correct credentials, are not able to access the data. An API can be that gatekeeper. Interject users can be validated in the pass-through API whether or not they are valid Interject users, and custom validation can be added to including row level security.
+Another reason to use an API, instead of connecting directly to a data source, is to provide another layer of security. Since most data-sources are protected by a firewall, users outside a network, and/or without the correct credentials, are not able to access the data. An API can be that gatekeeper. Interject users can be validated in the pass-through API whether or not they are valid Interject users, and custom validation can be added, including row level security.
 
 ### Setup for a Data Connection to an API
 

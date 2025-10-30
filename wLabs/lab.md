@@ -9,13 +9,13 @@ image_dir: "LabSetup"
 images: [
 	{file: "ReportLibraryLabFiles", type: "png", site: "Add-in", cat: "Report Library", sub: "", report: "", ribbon: "", config: ""}
 	]
-description: These labs are offered as an introductory course on the Interject® Add-In for Microsoft Excel®. By following this guide, you will be learn how to use the Interject Add-in to create and modify reports in Excel.
+description: These labs are offered as an introductory course on the Interject® Add-In for Microsoft Excel®. By following this guide, you will learn how to use the Interject Add-in to create and modify reports in Excel.
 ---
 * * *
 
 ## Overview
 
-These labs are offered as an introductory course on the Interject® Add-In for Microsoft Excel®. By following this guide, you will be learn how to use the Interject Add-in to create and modify reports in Excel. You will also learn features to customize your reports further and ways to interact between Interject and Excel to make your reports useful in a variety of situations. Finally, you will learn how to export these reports and distribute them.
+These labs are offered as an introductory course on the Interject® Add-In for Microsoft Excel®. By following this guide, you will learn how to use the Interject Add-in to create and modify reports in Excel. You will also learn features to customize your reports further and ways to interact between Interject and Excel to make your reports useful in a variety of situations. Finally, you will learn how to export these reports and distribute them.
 <br>
 
 ### Subscription Setup
@@ -250,7 +250,7 @@ In this lab you will learn certain features that highlight key areas that can he
 #### [6.2 Lab Create: Protecting Sheets](/wGetStarted/L-Create-Protecting.html)
 
 **_Concepts_** :
-• Adding Protection to a Sheets
+• Adding Protection to a Sheet
 • Adding Protection to Multiple Sheets
 • Grouping and Ungrouping Columns
 <br>

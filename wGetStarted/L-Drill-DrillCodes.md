@@ -21,7 +21,7 @@ images: [
 	{file: "FunctionArguments", type: "png", site: "Excel", cat: "Function Wizard", sub: "", report: "", ribbon: "", config: ""}, 
 	{file: "DrillData", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Customer Aging Summary", ribbon: "Advanced", config: ""}, 
 	{file: "DoDrill", type: "png", site: "Add-in", cat: "Data Drill", sub: "", report: "", ribbon: "", config: ""}, 
-	{file: "SeperateWorkbook", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Customer Aging Detail", ribbon: "", config: "Yes"}
+	{file: "SeparateWorkbook", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Customer Aging Detail", ribbon: "", config: "Yes"}
 	]
 description: Interject also gives its users the flexibility in drilling data not only to a different sheet within Excel but a separate workbook altogether. 
 ---
@@ -137,6 +137,6 @@ Select **Drill to Aging Detail** and then **Do Drill**.
 
 This time notice a separate workbook, the one you uploaded, is opened and the drill performed!
 
-![](/images/L-Drill-DrillCodes/SeperateWorkbook.png)
+![](/images/L-Drill-DrillCodes/SeparateWorkbook.png)
 <br>
 

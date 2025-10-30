@@ -107,12 +107,12 @@ CREATE PROCEDURE [demo].[Northwind_CustomerDropdown]
 
 	@Filter varchar(255) = ''
 
-AS
-
--- Customer Search
-SELECT
-	 [CustomerID]
-	,[CompanyName]
+	{
+		"ContactName LIKE '%' + @Filter",
+		"CorrectedText": "CompanyName LIKE '%' + @Filter",
+		"Explanation": "In the third SELECT (Customer ID) the WHERE clause incorrectly uses ContactName where CompanyName is expected; change to CompanyName. Line 143",
+		"LineNumbers": [143]
+	}
 	,([CustomerID]+' - '+[CompanyName]) AS [DisplayText]
 FROM [demo].[Northwind_Customers]
 WHERE

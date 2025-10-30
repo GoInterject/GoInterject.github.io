@@ -572,7 +572,7 @@ Following are the Data Portals that must be set up.
 | UpdateCellDataStatus_\<ClientID>\* | For Data Cells Update | \<FinCube Data Connection> | Stored Procedure Name | [Client].[RequestStatus] | InterjectDefaultRequest |
 | UpdateCellData_\<ClientID> | For Data Cells | \<FinCube Data Connection> | Stored Procedure Name | [Client].[Request] | InterjectDefaultRequest |
 | ImportScheduler_\<ClientID> | For Scheduler | \<FinCube Data Connection> | Stored Procedure Name | [Client].[ImportScheduler] | InterjectDefaultRequest |
-| SegmentData_\<ClientID> | For Data Cells | \<FinCube Data Connection> | Stored Procedure Name | [Client].\[Segment} | InterjectDefaultRequest |
+| SegmentData_\<ClientID> | For Data Cells | \<FinCube Data Connection> | Stored Procedure Name | [Client].[Segment] | InterjectDefaultRequest |
 
 \* Use your ClientID here
 

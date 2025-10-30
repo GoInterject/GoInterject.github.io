@@ -41,7 +41,7 @@ For an example of this function, see [Lab Create: Customer Aging](/wGetStarted/L
 </table>
 </div>
 
-<button class="collapsible-parameter">**AnchorViewCell**<br>A range of cells, the first row of which will be the top most displayed row after a freeze panes action. This is typically the row just below the Interject's configuration area.  Best practice is to use a range instead of whole rows.</button>
+<button class="collapsible-parameter">**AnchorViewCell**<br>A range of cells, the first row of which will be the topmost displayed row after a freeze panes action. This is typically the row just below the Interject's configuration area.  Best practice is to use a range instead of whole rows.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>

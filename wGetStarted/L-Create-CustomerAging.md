@@ -46,7 +46,7 @@ In this page you will see the process of building a Customer Aging report from s
 
 ### Building the Report
 
-**Step 1:** This process begins with the Interject [Report Builder](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder). Open the Report Build as illustrated below. There is a drop down list of [Data Portals](/wIndex/Common-Dataportal-Index.html) that can be chosen. An Interject Data Portal is a pre-configured data query that is setup so spreadsheet users can easily direct data into their own spreadsheet reports. Data Portals can be setup to access databases or cloud data and are either setup by Interject developers or your IT team.
+**Step 1:** This process begins with the Interject [Report Builder](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#report-builder). Open the Report Builder as illustrated below. There is a drop down list of [Data Portals](/wIndex/Common-Dataportal-Index.html) that can be chosen. An Interject Data Portal is a pre-configured data query that is setup so spreadsheet users can easily direct data into their own spreadsheet reports. Data Portals can be setup to access databases or cloud data and are either setup by Interject developers or your IT team.
 
 ![](/images/L-Create-CustAging/01.png)
 <br>
@@ -149,7 +149,7 @@ Next, you need to freeze the panes to hide the configuration area from the users
 ![](/images/L-Create-CustAging/23.png)
 <br>
 
-**Step 1:** In the FeezePanesCell argument, input A21 to mark that row as the top of the visible report. This sets the top of the report that will be visible to the user. For the AnchorViewCell argument, type in A15. This will set the row that will be frozen above A21, where you will place the column headers. Press **OK**.
+**Step 1:** In the FreezePanesCell argument, input A21 to mark that row as the top of the visible report. This sets the top of the report that will be visible to the user. For the AnchorViewCell argument, type in A15. This will set the row that will be frozen above A21, where you will place the column headers. Press **OK**.
 
 ![](/images/L-Create-CustAging/24.png)
 <br>
