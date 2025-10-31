@@ -4,7 +4,7 @@ filename: "jSetting.md"
 layout: custom
 keywords: [jSetting, helper, function, formula]
 headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example", "Function Composition"]
-links: ["/wIndex/QuickTools-Names.html#appending-a-prefix-and-or-suffix-to-a-name"]
+links: ["/wIndex/QuickTools-Names.html#appending-a-prefix-andor-suffix-to-a-name"]
 image_dir: ""
 images: []
 description: The jSetting function is a simple way to create a Tag/Value pair that can be used internally by the Interject system.
@@ -17,7 +17,7 @@ The jSetting function is a simple way to create a JSON Tag/Value pair that can b
 
 This function can be used as a standalone function and does not need to be embedded in another function.
 
-For an example of this function, see [Appending a Prefix](/wIndex/QuickTools-Names.html#appending-a-prefix-and-or-suffix-to-a-name).
+For an example of this function, see [Appending a Prefix](/wIndex/QuickTools-Names.html#appending-a-prefix-andor-suffix-to-a-name).
 
 ###  Function Arguments
 

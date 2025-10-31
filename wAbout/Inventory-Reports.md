@@ -67,12 +67,13 @@ To find the data, use the Drill function for inventory by detail.
 ![](/images/Inventory/2.01-drilling-drill-on-grains-and-cereals.gif)
 <br>
 
-Drilling will take us to Inventory Detail, which will automatically pull all the items in stock within that category.
+Drilling will take us to InventoryByDetail, which will automatically pull all the items in stock within that category.
 
 ![](/images/Inventory/06.png)
 <br>
 
 From here, you can see exactly what is logged in-stock at the time of the pull: **Grains/Cereals** in this example.
+
 ### Return From Drill and Re-Drill
 
 You also need to gather a report of our beverage inventory.
@@ -99,7 +100,7 @@ This will automatically pull the detail page again, but this time with products 
 
 ### Alternate Inventory Example
 
-Now you will use a report that shows all the categories and their details in one sheet, without having to drill back and forth between the two sheets. To accomplish this, you are going to use InvByCategory_WithDetails.
+Now you will use a report that shows all the categories and their details in one sheet, without having to drill back and forth between the two sheets. To accomplish this, you are going to use InvByCategory_WithDetail.
 
 **Step 1:** You need to open the WithDetails tab.
 

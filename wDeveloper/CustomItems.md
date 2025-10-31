@@ -192,6 +192,9 @@ AS
 		+ ltrim(right(convert(varchar(25), @LastUpdated, 100), 7))
 
 
+---
+---Do more if this is an execute event
+---
 	IF @Interject_CommandExecute = 1
 	BEGIN
 		DECLARE @NewUpdateDate DATETIME

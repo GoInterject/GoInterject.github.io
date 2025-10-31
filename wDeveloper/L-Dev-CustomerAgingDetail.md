@@ -119,7 +119,7 @@ DECLARE @ErrorMessage VARCHAR(100)
 
 IF LEN(@CompanyName)>40
 BEGIN
-  SET @ErrorMessage = 'User notice: The company search text must not be more than 40 characters.'
+  SET @ErrorMessage = 'Usernotice: The company search text must not be more than 40 characters.'
   RAISERROR (@ErrorMessage, 18, 1)
   RETURN		
 END

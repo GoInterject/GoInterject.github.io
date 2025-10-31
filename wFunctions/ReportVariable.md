@@ -207,6 +207,7 @@ For an example of this function, see [Lab Create: Inventory Variable](/wGetStart
 =ReportVariable("NorthwindVariable",B18:B54,2:2,4:4,Param(I14,I15),,FALSE,FALSE)
 ```
 
+### Function Composition
 
 | Argument Name  |  Example Mapping  |  Explanation   |  
 |------|------|------|

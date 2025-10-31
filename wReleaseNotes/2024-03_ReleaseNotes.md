@@ -4,7 +4,7 @@ filename: "2024-03_ReleaseNotes.md"
 layout: custom
 keywords: [change log, updates, versions, history, what's new]
 headings: ["March 2024", "Excel Add-in v2.5.1.0", "Documentation Updates"]
-links: ["/wGetStarted/L-Export-QuickExportAndPDF.html#export-sheet", "/wIndex/QuickTools-Names.html#appending-a-prefix-and-or-suffix-to-a-name", "/wGetStarted/L-Export-QuickExportAndPDF.html#export-sheet"]
+links: ["/wGetStarted/L-Export-QuickExportAndPDF.html#export-sheet", "/wIndex/QuickTools-Names.html#appending-a-prefix-andor-suffix-to-a-name", "/wGetStarted/L-Export-QuickExportAndPDF.html#export-sheet"]
 image_dir: ""
 images: []
 description: Release notes for this month's updates
@@ -33,5 +33,5 @@ _Released 3/18/24_
 
 | Date | Type | Page | Changes |
 |---|---|---|---|
-| 3/22 | Update | [Quick Tools - Names Tools](/wIndex/QuickTools-Names.html#appending-a-prefix-and-or-suffix-to-a-name) | Updated pics and section |
+| 3/22 | Update | [Quick Tools - Names Tools](/wIndex/QuickTools-Names.html#appending-a-prefix-andor-suffix-to-a-name) | Updated pics and section |
 | 3/22 | Update | [Quick Export and PDF](/wGetStarted/L-Export-QuickExportAndPDF.html#export-sheet) | Updated section on Export Sheet |

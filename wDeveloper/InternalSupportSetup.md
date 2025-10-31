@@ -51,7 +51,7 @@ Interject provides a way to add your own internal support contact information to
 ```xml
 	<add key="InternalSupport_Email" value="support@northwinddata.com" />
 	<add key="InternalSupport_Phone" value="123-456-7890" />
-	<add key="InternalSupport_Website" value="www.northwinddata.com" />
+	<add key="InternalSupport_Website" value="www.northwinddatacompany.com" />
 ```
 
 ![](/images/InternalSupportSetup/AddEntries.png)

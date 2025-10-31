@@ -3,7 +3,7 @@ title: Interject Roles
 filename: "INTERJECT-Roles.md"
 layout: custom
 keywords: [roles, user profile, admin, permissions, security]
-headings: ["Overview", "Standard Role", "Approver Role", "Editor Role", "Corporate Role", "Protector Role", "Custom Items Role", "SchedulerAdmin Role", "ClientAdmin Role"]
+headings: ["Overview", "Standard Role", "Approver Role", "Editor Role", "Corporate Role", "Protector Role", "CustomItems Role", "SchedulerAdmin Role", "ClientAdmin Role"]
 links: ["https://docs.gointerject.com/wPortal/User-Profile.html", "/wPortal/Roles.html#custom-roles", "https://docs.gointerject.com/wAbout/ReportLibraryLinks.html", "https://docs.gointerject.com/wAbout/ReportLibraryLinks.html", "https://docs.gointerject.com/wDeveloper/SetupjDataPortal.html#overriding-a-connection", "https://docs.gointerject.com/wAbout/Report-Library-Basics.html#status", "https://docs.gointerject.com/wAbout/ReportLibraryLinks.html", "https://docs.gointerject.com/wAbout/ReportLibraryLinks.html#updating-a-report-link", "https://docs.gointerject.com/wDeveloper/SetupjDataPortal.html#overriding-a-command", "https://docs.gointerject.com/wPortal/Data-Portals.html", "https://docs.gointerject.com/wPortal/Data-Portals.html#overview-of-parameters", "https://docs.gointerject.com/wGetStarted/L-Create-Protecting.html", "https://docs.gointerject.com/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#custom-commands", "/bApps/bFinancials/Configure.html", "https://docs.gointerject.com/wAbout/Report-Library-Basics.html#opening-a-report", "https://docs.gointerject.com/wAbout/ReportLibraryLinks.html", "https://docs.gointerject.com/wAbout/ReportLibraryLinks.html#updating-a-report-link", "https://docs.gointerject.com/wDeveloper/SetupjDataPortal.html#overriding-a-connection", "https://docs.gointerject.com/wDeveloper/MacroSecurity.html", "https://docs.gointerject.com/wDeveloper/SetupjDataPortal.html#overriding-a-command", "https://docs.gointerject.com/wGetStarted/L-Create-Protecting.html", "https://docs.gointerject.com/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#custom-commands", "/bApps/bFinancials/Configure.html", "https://docs.gointerject.com/wPortal/Data-Portals.html", "https://docs.gointerject.com/wPortal/Data-Portals.html#overview-of-parameters", "https://docs.gointerject.com/wPortal/Altering-User-Passwords.html", "https://docs.gointerject.com/wPortal/StaffPage.html", "https://docs.gointerject.com/wIndex/Diagnostics.html#system-tools", "https://docs.gointerject.com/wIndex/Diagnostics.html#support", "https://docs.gointerject.com/wIndex/Diagnostics.html#system-tools", "https://docs.gointerject.com/wIndex/Diagnostics.html#support"]
 image_dir: "InterjectRoles"
 images: [
@@ -164,7 +164,7 @@ You can add roles by selecting the role name from the drop down list. Then click
 </table>
 </div>
 
-### Custom Items Role
+### CustomItems Role
 
 <button class="collapsible-expanded">Grants permissions to execute Custom Commands.
 </button>

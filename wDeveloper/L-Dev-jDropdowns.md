@@ -106,13 +106,13 @@ Create a stored procedure called [demo].[Northwind_CustomerDropdown] using the f
 CREATE PROCEDURE [demo].[Northwind_CustomerDropdown]
 
 	@Filter varchar(255) = ''
+	
+AS
 
-	{
-		"ContactName LIKE '%' + @Filter",
-		"CorrectedText": "CompanyName LIKE '%' + @Filter",
-		"Explanation": "In the third SELECT (Customer ID) the WHERE clause incorrectly uses ContactName where CompanyName is expected; change to CompanyName. Line 143",
-		"LineNumbers": [143]
-	}
+-- Customer Search
+SELECT
+	 [CustomerID]
+	,[CompanyName]
 	,([CustomerID]+' - '+[CompanyName]) AS [DisplayText]
 FROM [demo].[Northwind_Customers]
 WHERE
@@ -123,7 +123,7 @@ ORDER BY [DisplayText]
 
 -- Contact Search
 SELECT
-	 [ContactName]	
+	 [ContactName]
 	,[ContactTitle]
 	,([ContactName]+' - '+[ContactTitle]) AS [DisplayText]
 FROM [Demo].[Northwind_Customers]
@@ -135,12 +135,12 @@ ORDER BY [DisplayText]
 
 -- Customer ID
 SELECT
-	 [CustomerID]	
+	 [CustomerID]
 	,[CompanyName]
 	,([CustomerID]+' - '+[CompanyName]) AS [DisplayText]
 FROM [Demo].[Northwind_Customers]
 WHERE
-	(@Filter = '' OR ContactName LIKE '%' + @Filter + '%')
+	(@Filter = '' OR CompanyName LIKE '%' + @Filter + '%')
 	OR
 	(@Filter = '' OR CustomerID LIKE '%' + @Filter + '%')
 ORDER BY [DisplayText]

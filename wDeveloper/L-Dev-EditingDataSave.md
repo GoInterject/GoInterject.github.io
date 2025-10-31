@@ -867,7 +867,7 @@ AS
 	END
 	
 	-- TestMode is provided so a test save can be executed and all related data can be 
-	-- easily viewed for testing while not effecting any data in the database
+	-- easily viewed for testing while not affecting any data in the database
 	IF @TestMode =1 
 	BEGIN
 		SELECT '@DataToProcess - After XML Processing' as ResultName
@@ -954,9 +954,9 @@ AS
 				
 			-- the output captures the changes to the table and logs to a table variable
 			OUTPUT 
-				isnull(inserted.[CustomerID],deleted.[CustomerID]) -- include deleted in case delete is added later. Inserted is used for both Update an Insert
+				isnull(inserted.[CustomerID],deleted.[CustomerID]) -- include deleted in case delete is added later. Inserted is used for both Update and Insert
 				,s.[_ExcelRow] 
-				,$action as UpdateTypeCode -- this logs into an a change log table variable
+				,$action as UpdateTypeCode -- this logs into a change log table variable
 			INTO @ChangeLog
 			(
 				[CustomerID]
@@ -1040,7 +1040,7 @@ Now you can test the SP by using the [test code](#testing). For example, make a 
 ![](/images/L-Dev-EditingDataSave/TestingSP.png)
 <br>
 
-Note that when using the test script, no actually changes are being made to the database since the transaction of the merge is rolled back:
+Note that when using the test script, no actual changes are being made to the database since the transaction of the merge is rolled back:
 
 ![](/images/L-Dev-EditingDataSave/TestingRollback.png)
 <br>

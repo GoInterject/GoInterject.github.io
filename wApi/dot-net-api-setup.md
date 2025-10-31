@@ -169,6 +169,8 @@ For more info about setting up a website in IIS, see [Add a Web Site](https://le
 
 The Windows hosts file is typically used to manually map host names to IP addresses when DNS resolution is not available or when you want to test a website before making it publicly accessible. If you are testing locally (127.0.0.1) or want to use custom domains, you will need to edit this file.
 
+The host file is located in the "System32" folder of your Windows installation:
+
 C:\Windows\System32\drivers\etc\hosts
 
 Open this file as an Administrator in order to save changes.
@@ -258,7 +260,7 @@ Interject supports Data Portal connections for both direct DB access and API acc
 If this API offers public access, then connection strings should not be shared in the `web.config` file. Instead a custom validation lookup process should be implemented, which also requires some custom coding. This Data API uses a `appsettings.json` file for this purpose.
 
 * Determine a meaningful name for the connection string (preferably without spaces) This name will be used by an Interject Data Portal Connection, and it will reference the connection string within the `appsettings.json`. Names must be unique.
-* Open the `appsettings.json` file (in the `ids-dotnet-api` directory) in any text editor or code IDE.
+* Open the `appsettings.json` file (in the `interject-dotnet-api` directory) in any text editor or code IDE.
 * Add a new entry in the list of ConnectionStrings collection.
 
 Example of a connection string entry:
