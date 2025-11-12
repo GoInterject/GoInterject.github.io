@@ -14,6 +14,8 @@ description: A list of the Interject releases.
 
 Here are the release notes for the following Interject versions. For a complete list of versions and where to download them, see [Download Interject](https://portal.gointerject.com/download-interject.html):
 
+* Version [2.5.5.0](/wReleaseNotes/2025-11_ReleaseNotes.html)
+
 * Version [2.5.4.0](/wReleaseNotes/2025-06_ReleaseNotes.html)
 
 * Version [2.5.3.5](/wReleaseNotes/2025-01_ReleaseNotes.html)
