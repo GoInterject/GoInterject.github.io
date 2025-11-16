@@ -17,7 +17,7 @@ Interject hosts a variety of open-source projects aimed at providing useful tool
 
 - [BeetleETL](#beetleetl) : Transfer data from a MongoDB to a SQL Server DB
 - [Data-Latinizer](#data-latinizer) : Sanitize data in a DB using Latin text
-- [Script My SQL Server](#scriptmysqlserver) : Set of scripts to automate MySQL server interactions
+- [ScriptMySQLServer](#scriptmysqlserver) : Set of scripts to automate MySQL server interactions
 - [Powershell DB Tools GUI](#powershell-db-tools-gui) : Simplify scripting out DB objects and executing SQL scripts
 
 <blockquote class=highlight_note>

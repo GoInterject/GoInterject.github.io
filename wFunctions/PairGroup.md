@@ -7,13 +7,13 @@ headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example"
 links: ["/wFunctions/Pair.html", "/wFunctions/Pair.html", "/wGetStarted/L-Drill-CustomerAging.html", "https://docs.gointerject.com/wFunctions/Pair.html", "/wFunctions/ReportDefaults.html", "/wFunctions/ReportDrill.html"]
 image_dir: ""
 images: []
-description: The PairGroup function will active all [Pair()](/wFunctions/Pair.html) functions defined within.
+description: The PairGroup function will activate all [Pair()](/wFunctions/Pair.html) functions defined within.
 ---
 * * *
 
 ##  Function Summary
 
-The PairGroup function will active all [Pair()](/wFunctions/Pair.html) functions defined within. It is best practice to use the PairGroup function even when only entering one Pair.
+The PairGroup function will activate all [Pair()](/wFunctions/Pair.html) functions defined within. It is best practice to use the PairGroup function even when only entering one Pair.
 
 For an example of this function, see [Lab Drill: Customer Aging](/wGetStarted/L-Drill-CustomerAging.html).
 

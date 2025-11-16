@@ -41,7 +41,7 @@ Macro security involves mitigating the opening and uploading of Excel files that
 
 ### [Enterprise Login Setup](/wDeveloper/Enterprise-Login-Setup.html)
 
-Interject supports federated logins for enterprise allowing a single sign on (SSO) experience for Interject users within an organization. Currently, Open ID Connect (OIDC) is the primary protocol Interject supports but more federated authentication systems are planned to be supported, including Security Assertion Markup Language (SAML).
+Interject supports federated logins for enterprise allowing a single sign on (SSO) experience for Interject users within an organization. Currently, OpenID Connect (OIDC) is the primary protocol Interject supports but more federated authentication systems are planned to be supported, including Security Assertion Markup Language (SAML).
 
 ### [Federated Login Design](/wDeveloper/Federated-Login-Design.html)
 

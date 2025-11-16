@@ -20,7 +20,7 @@ description: The Interject Portal site allows you to add, edit, or delete users 
 
 ## Overview
 
-The [Interject Portal](https://portal.gointerject.com/) site allows you to add, edit, or delete users from your organization via the Staff Page. Here you can also activate or deactivate a user. Viewing the Staff Page and all the functionally with it is only accomplished with the [ClientAdmin](/wPortal/INTERJECT-Roles.html#clientadmin-role) role.
+The [Interject Portal](https://portal.gointerject.com/) site allows you to add, edit, or delete users from your organization via the Staff Page. Here you can also activate or deactivate a user. Viewing the Staff Page and all the functionality with it is only accomplished with the [ClientAdmin](/wPortal/INTERJECT-Roles.html#clientadmin-role) role.
 
 ### The Staff Page
 
@@ -59,7 +59,7 @@ From the Staff page, you can do the following by hovering the cursor over the us
 
 * **Profile:** View/Edit a user
 * **Mark as Active/Inactive:** Enable or disable a user's access to Interject
-* **Garbase Icon <font size="+1">&#x1F5D1;</font>:** Delete a user
+* **Garbage Icon <font size="+1">&#x1F5D1;</font>:** Delete a user
 
 ![](/images/StaffPage/ProfileActiveDelete.png)
 <br>

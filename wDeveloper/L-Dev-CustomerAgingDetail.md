@@ -72,7 +72,7 @@ Enter **Include Paid** for Helper Name and enter **Include Invoices that have al
 ![](/images/L-Dev-CustAgingDetail/05.jpg)
 <br>
 
-**Step 5:** Click the trash **<font size="+1">&#x1F5D1;</font>** can icon on the far right of the Interject_LocalTimeZoneOffset to delete it. You are going to a use a different System Parameter for this data portal to illustrate a new System Parameter that has not been presented in previous examples.
+**Step 5:** Click the trash **<font size="+1">&#x1F5D1;</font>** can icon on the far right of the Interject_LocalTimeZoneOffset to delete it. You are going to use a different System Parameter for this data portal to illustrate a new System Parameter that has not been presented in previous examples.
 
 ![](/images/L-Dev-CustAgingDetail/06.jpg)
 <br>
@@ -119,7 +119,7 @@ DECLARE @ErrorMessage VARCHAR(100)
 
 IF LEN(@CompanyName)>40
 BEGIN
-  SET @ErrorMessage = 'Usernotice:The company search text must not be more than 40 characters.'
+  SET @ErrorMessage = 'Usernotice: The company search text must not be more than 40 characters.'
   RAISERROR (@ErrorMessage, 18, 1)
   RETURN		
 END
@@ -241,7 +241,7 @@ END
 It is important to test the stored procedure in the database before testing it through the Interject platform. Using Interject_RequestContext requires the test scripts to be much longer than in the previous steps. To help with this extra text Interject will create the test code for you using the current users context.
 
 **Step 2:** First you must select a report formula that uses the data portal that is mapped to the stored procedure you want to test. You can quickly make a report formula and delete it since you are not creating the spreadsheet report yet. In a spreadsheet tab, in any cell, type
-```=ReportVariable("NorthwindCustomerInvoices",A42:A304,2:2,16:16,Param(H36,H37,H38,""))``` but replace the Data Portal name with the name you created for your own example. Make sure the the cell with the ReportRange() formula is selected.
+```=ReportVariable("NorthwindCustomerInvoices",A42:A304,2:2,16:16,Param(H36,H37,H38,""))``` but replace the Data Portal name with the name you created for your own example. Make sure the cell with the ReportRange() formula is selected.
 
 ![](/images/L-Dev-CustAgingDetail/08.png)
 <br>
@@ -400,7 +400,7 @@ Execute [demo].[Northwind_Invoices_Pull_MyName]
 
 ### Create the Report
 
-At this point you, have a tested a new stored procedure that uses parameters to filter the results. You set up an Interject data connection to go to your example database and you added another Interject data portal to use that connection, which is mapped to the stored procedure that you just created. So now you are ready to build the spreadsheet report using two data portals.
+At this point you have tested a new stored procedure that uses parameters to filter the results. You set up an Interject data connection to go to your example database and you added another Interject data portal to use that connection, which is mapped to the stored procedure that you just created. So now you are ready to build the spreadsheet report using two data portals.
 
 The steps for building the spreadsheet report are in the example [Customer Aging Detail](/wGetStarted/L-Create-CustomerAgingDetail.html). You have likely completed this in earlier training sessions. Repeat the instructions with your newly created data portals discussed in this topic. When you are done, your report should resemble the screenshot below.
 
@@ -425,7 +425,7 @@ Multiple record sets are a very efficient report approach when your data is not 
 ![](/images/L-Dev-CustAgingDetail/15.jpg)
 <br>
 
-**Step 3:** Change the procedure name to run **[demo].[Northwind_CustomerInvoices_Pull_MyName]** but use your own name as the suffice. You will create this stored procedure shortly. Everything else in the cloned data portal remains the same.
+**Step 3:** Change the procedure name to run **[demo].[Northwind_CustomerInvoices_Pull_MyName]** but use your own name as the suffix. You will create this stored procedure shortly. Everything else in the cloned data portal remains the same.
 
 ![](/images/L-Dev-CustAgingDetail/16.jpg)
 <br>
@@ -449,9 +449,10 @@ Multiple record sets are a very efficient report approach when your data is not 
 ![](/images/L-Dev-CustAgingDetail/19.png)
 <br>
 
+
 **Step 5:** After the SQL statement, add **Select \* from #InvoiceDetail**. Then order by the CustomerID. This step returns the invoice detail as the first record set from the stored procedure.
 
-**Step 6:** Next you must use the detail to generate a customer summary list. The below code should be copied into the bottom of the stored procedure. This code simply creates a distinct list of all the customers include in the invoice detail and orders by the customer name.
+**Step 6:** Next you must use the detail to generate a customer summary list. The below code should be copied into the bottom of the stored procedure. This code simply creates a distinct list of all the customers included in the invoice detail and orders by the customer name.
 
 Steps 5 and 6 should look like below:
 

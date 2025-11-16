@@ -29,7 +29,7 @@ Reviewing the Interject report formulas for accuracy is a vital step in eliminat
 
 ### Getting Started
 
-This page will use the the Customer Collections report [previously](/wAbout/Customer-Aging.html) used in the Real World Walkthrough.
+This page will use the Customer Collections report [previously](/wAbout/Customer-Aging.html) used in the Real World Walkthrough.
 
 ![](/images/FormulasReviews/InterjectCustomerCollections.png)
 <br>

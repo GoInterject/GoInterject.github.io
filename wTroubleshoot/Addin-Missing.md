@@ -47,7 +47,7 @@ In the Interject Addin Manager, click "Reset Excel Addins" (If Excel is open you
 
 ### Reset via Developer Tab
 
-If the Developer tab is not showing in Excel, you can enable it by naviagting to File > Options. Then click on "Customize Ribbon" on the left navigation panel and ensure "Developer" is checked:
+If the Developer tab is not showing in Excel, you can enable it by navigating to File > Options. Then click on "Customize Ribbon" on the left navigation panel and ensure "Developer" is checked:
 
 ![](/images/Addin-Missing/Show-Developer-Tab.png)
 <br>

@@ -34,7 +34,7 @@ The [Drill on Data](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#drill-on-data)
 
 There are four steps to using the menu.
 
-1. First, select the cell to drill on. In this example you will chose theSave-a-lot Markets customer's 90 days balance.
+1. First, select the cell to drill on. In this example you will chose the Save-a-lot Markets customer's 90 days balance.
 2. Select the **Drill on Data** menu in the Interject ribbon.
 3. Select the drill option in the Data Drill window. In this example, chose **Drill to Aging Detail**.
 4. Complete the drill by clicking **Do Drill**.

@@ -32,7 +32,7 @@ A Connection is used with Data Portals so Interject can connect to certain store
 
 In this section you will quickly set up a connection to SQL Server and test it using the security context of the user from their Excel session.
 
-A Connection can be set up to connect directly to a database using a OLEDB or a .Net Adapter connection string for MS SQL Server or using a ODBC connection string to connect to Oracle, MySQL, or others that support stored procedures. For other databases, including noSQL databases, a customer website API can be used to connect the datasource to Interject, which is covered in a later section.
+A Connection can be set up to connect directly to a database using a OLEDB or a .Net Adapter connection string for MS SQL Server or using a ODBC connection string to connect to Oracle, MySQL, or others that support stored procedures. For other databases, including noSQL databases, a custom website API can be used to connect the data source to Interject, which is covered in a later section.
 
 The following lists are examples of connection strings for SQL Server:
 

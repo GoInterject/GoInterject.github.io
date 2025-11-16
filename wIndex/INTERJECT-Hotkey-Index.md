@@ -21,13 +21,13 @@ images: [
 	{file: "11", type: "jpg", site: "External", cat: "Notepad+", sub: "", report: "", ribbon: "", config: ""}, 
 	{file: "12", type: "jpg", site: "External", cat: "Notepad+", sub: "", report: "", ribbon: "", config: ""}
 	]
-description: Interject provides ways to increase productivity and work flow by utilizing shortkeys to quickly perform Interject actions.
+description: Interject provides ways to increase productivity and workflow by utilizing shortkeys to quickly perform Interject actions.
 ---
 * * *
 
 ## Overview
 
-Interject provides ways to increase productivity and work flow by utilizing shortkeys to quickly perform Interject actions. These shortkeys are adaptable and customize-able and are a staple to being efficient when using Interject functions. Any shortkey listed here can be changed and set to different keystrokes. However, there is a limitation on available keystrokes to change the shortkeys to.
+Interject provides ways to increase productivity and workflow by utilizing shortkeys to quickly perform Interject actions. These shortkeys are adaptable and customizable and are a staple to being efficient when using Interject functions. Any shortkey listed here can be changed and set to different keystrokes. However, there is a limitation on available keystrokes to change the shortkeys to.
 
 ### Default Shortkey Index
 

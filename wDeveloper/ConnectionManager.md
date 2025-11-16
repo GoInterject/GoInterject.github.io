@@ -28,7 +28,7 @@ The Interject Connection Manager displays all Web API connections that are secur
 </blockquote>
 <br>
 
-The Connection Manger is accessed from the Interject ribbon.
+The Connection Manager is accessed from the Interject ribbon.
 
 ![](/images/ConnectionManager/Connections.png)
 <br>

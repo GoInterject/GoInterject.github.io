@@ -125,7 +125,7 @@ We have designated a Data Protection Officer who is responsible for monitoring I
 
 #### Amendments
 
-This Privacy Statement may be amended from time to time consistent with the requirements of the Shield Frameworks. We will post any revised policy on this website.
+This Privacy Statement may be amended from time to time consistent with the requirements of the Privacy Shield Frameworks. We will post any revised policy on this website.
 
 #### Information Subject to Other Policies
 

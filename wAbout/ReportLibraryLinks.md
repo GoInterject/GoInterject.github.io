@@ -198,7 +198,7 @@ The Report Link Details form displays information about the selected report. Thi
 
 ### Types of Links
 
-The reports in the Report Library are called links because the link to a source. As such there are different types of links for a report:
+The reports in the Report Library are called links because they link to a source. As such there are different types of links for a report:
 
 ![](/images/ReportLibraryLinks/ReportLinkTypes.png)
 <br>

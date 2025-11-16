@@ -30,7 +30,7 @@ We will walk through Run on Open using the [Customer Aging Report](/wGetStarted/
 
 ### Setting up Run on Open via Diagnostics
 
-The [Diagnostics](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#diagnostics) window provides an easy way to set up the run on open feature. It also provides many more ways to customize this feature. To setup the feature you need to input the correct code in the Input field and click **Execute Selected Action**.
+The [Diagnostics](/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#diagnostics) window provides an easy way to set up the run on open feature. It also provides many more ways to customize this feature. To set up the feature you need to input the correct code in the Input field and click **Execute Selected Action**.
 
 ![](/images/L-Create-RunOnOpen/DiagnosticsRunOnOpen.png)
 <br>

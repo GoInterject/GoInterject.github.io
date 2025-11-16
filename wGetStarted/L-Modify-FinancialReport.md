@@ -69,7 +69,7 @@ Notice that [jColumnDef()](/wFunctions/jColumnDef.html) draws its parameters fro
 ![](/images/L-Modify-Financial/04.png)
 <br>
 
-**Step 3:** Expand the trend 3 more months as illustrated in the following animated GIF. Select column N and drag its anchor 3 columns to the right. Note that the Column definitions carry through the new columns you made just by dragging the previous one. This way, you add more columns to to the report without manually typing formulas.
+**Step 3:** Expand the trend 3 more months as illustrated in the following animated GIF. Select column N and drag its anchor 3 columns to the right. Note that the Column definitions carry through the new columns you made just by dragging the previous one. This way, you add more columns to the report without manually typing formulas.
 
 ![](/images/L-Modify-Financial/05.gif)
 <br>
@@ -164,7 +164,7 @@ The new month-to-date difference report columns should populate as expected. Ref
 ![](/images/L-Modify-Financial/21.png)
 <br>
 
-Now copy a blank cell and past it over what you do not need. Change the name of the table to a more accurate name, like **Year To Date**.
+Now copy a blank cell and paste it over what you do not need. Change the name of the table to a more accurate name, like **Year To Date**.
 
 ![](/images/L-Modify-Financial/22.png)
 <br>

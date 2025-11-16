@@ -33,7 +33,7 @@ Interject supports MFA via email confirmation or an Authenticator App and it can
 
 ### Enable MFA for a User
 
-**Step 1:** To begin, login in to the [Portal site](https://portal.gointerject.com/login.html). 
+**Step 1:** To begin, log in to the [Portal site](https://portal.gointerject.com/login.html).
 <br>
 
 **Step 2:** On the left navigation panel, select **Staff**.
@@ -46,7 +46,7 @@ Interject supports MFA via email confirmation or an Authenticator App and it can
 ![](/images/MFA/SelectMFA.png)
 <br>
 
-**Step 4:** Click **MFA Enabled** an authentication type. Click **Save**.
+**Step 4:** Click **MFA Enabled** and select an authentication type. Click **Save**.
 
 ![](/images/MFA/ClickMFAEnabled.png)
 <br>

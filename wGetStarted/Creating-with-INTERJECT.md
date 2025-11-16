@@ -60,7 +60,7 @@ To use it, navigate to the Interject ribbon and click on the  **Sheet Protector*
 
 ### [Using Report Macro](/wGetStarted/L-Create-ReportMacro.html)
 
-The Report Macro function allows Interject to interact with public macros in Excel. These macros can be automatically run after pulling or clearning data.
+The Report Macro function allows Interject to interact with public macros in Excel. These macros can be automatically run after pulling or clearing data.
 
 ### [Using the Retained Feature](/wGetStarted/L-Create-RetainFeature.html)
 
@@ -73,4 +73,4 @@ Some reports require default values, settings, or have summary pages that must b
 
 ### [Exporting Reports](/wGetStarted/Exporting-Reports.html)
 
-Interject reports can be published or exported when needed. In most situations, Interject reports are shared like a web page, where all end users have access but can only see cost centers they have rights to. Still, there are times when reports must be saved to file folders or emailed, and this section walks through the specifics of distribution and all the available methods. 
+Interject reports can be published or exported when needed. In most situations, Interject reports are shared like a web page, where all end users have access but can only see cost centers they have rights to. Still, there are times when reports must be saved to file folders or emailed, and this section walks through the specifics of distribution and all the available methods.

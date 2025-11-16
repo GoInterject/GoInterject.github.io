@@ -49,7 +49,7 @@ In this example, you will view drilling between reports using the same Inventory
 ![](/images/L-Drill-Inventory/02.png)
 <br>
 
-**Step 3:** In this report the [ReportDrill()](/wFunctions/ReportDrill.html) function may have been already set up. To follow along in this guide, you will need to remove this function so you can set them up manually. Scroll up to the configuration rows and select the the drill and clear their contents.
+**Step 3:** In this report the [ReportDrill()](/wFunctions/ReportDrill.html) function may have been already set up. To follow along in this guide, you will need to remove this function so you can set them up manually. Scroll up to the configuration rows and select the drill and clear its contents.
 
 ![](/images/L-Drill-Inventory/02b.png)
 <br>
@@ -95,7 +95,7 @@ After pressing OK, the report formula should look as it does in the image below.
 
 ### Creating Hyperlinks as Drills
 
-**Step 1:** Now you are going to create hyperlinks for the drill. First, highlight the cells you want to setup the hyperlink, then right click and choose **Link**. In some versions of Excel it will show as **Hyperlink**.
+**Step 1:** Now you are going to create hyperlinks for the drill. First, highlight the cells you want to set up the hyperlink, then right click and choose **Link**. In some versions of Excel it will show as **Hyperlink**.
 
 ![](/images/L-Drill-Inventory/09.png)
 <br>
@@ -110,7 +110,7 @@ After pressing OK, the report formula should look as it does in the image below.
 ![](/images/L-Drill-Inventory/10.png)
 <br>
 
-After you select **OK**, select on each of the remaining cells one by one and press **CTL-Y** to apply the last used action (in this case applying the link). Then the cells will be linked to the drill, as shown below.
+After you select **OK**, select on each of the remaining cells one by one and press **Ctrl+Y** to apply the last used action (in this case applying the link). Then the cells will be linked to the drill, as shown below.
 
 ![](/images/L-Drill-Inventory/11.png)
 <br>

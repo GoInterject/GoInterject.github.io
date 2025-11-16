@@ -106,7 +106,7 @@ You can add roles by selecting the role name from the drop down list. Then click
 <td> <a href="https://docs.gointerject.com/wDeveloper/SetupjDataPortal.html#overriding-a-command">Learn more</a> </td>
 </tr>
 <tr>
-<td> Create, Update, Delete, Clone, and Enabled/Disable Data Portals </td>
+<td> Create, Update, Delete, Clone, and Enable/Disable Data Portals </td>
 <td> Portal Site </td>
 <td> <a href="https://docs.gointerject.com/wPortal/Data-Portals.html">Learn more</a> </td>
 </tr>
@@ -266,7 +266,7 @@ You can add roles by selecting the role name from the drop down list. Then click
 <td> <a href="/bApps/bFinancials/Configure.html">Learn more</a> </td>
 </tr>
 <tr>
-<td> Create, Update, Delete, Clone, and Enabled/Disable Data Portals </td>
+<td> Create, Update, Delete, Clone, and Enable/Disable Data Portals </td>
 <td> Portal Site </td>
 <td> <a href="https://docs.gointerject.com/wPortal/Data-Portals.html">Learn more</a> </td>
 </tr>

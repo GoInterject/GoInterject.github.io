@@ -35,7 +35,7 @@ Interject provides a way to add your own internal support contact information to
 
 **Step 1:** Ensure Excel is not running.
 
-**Step 2:** Navigate to the program directory for Interject. This can be easily done using the diagnostics command "Open Application Folder":
+**Step 2:** Navigate to the program directory for Interject. This can be easily done using the diagnostics command "Open Application Folders":
 
 
 ![](/images/InternalSupportSetup/OpenApplicationFolders.png)

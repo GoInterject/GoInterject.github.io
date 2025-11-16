@@ -25,7 +25,7 @@ If your Excel Add-ins go missing, you can follow these steps to reset them.
 
 ### [Web Proxy Configuration](/wTroubleshoot/WebProxy.html)
 
-The Interject Add-in allows users to authenticate using Windows authentication. For this Interject uses System.Net.CredentialCache.DefaultCredential library to set up a proxy. Interject's default Windows proxy at the application level can prevent a client's machine level proxy. This will prevent a user from being able to log in. To get around this, there is an Interject setting where users and clients can disable the Windows proxy.
+The Interject Add-in allows users to authenticate using Windows authentication. For this Interject uses System.Net.CredentialCache.DefaultCredentials library to set up a proxy. Interject's default Windows proxy at the application level can prevent a client's machine level proxy. This will prevent a user from being able to log in. To get around this, there is an Interject setting where users and clients can disable the Windows proxy.
 
 ### [Cloud File Uploads Incorrectly](/wTroubleshoot/Cloud-File.html)
 

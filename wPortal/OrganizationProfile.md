@@ -28,8 +28,8 @@ ClientAdmins can change details of their organization here.
 
 - [Enterprise Login Codes](/wDeveloper/Enterprise-Login-Setup.md#enterprise-login-code): These are login codes that have been set up for your company by Interject.
 - Authorization Type ID: This is unchangeable. Interject sets auth ID 10 for Interject authentication.
-- License Renew Date: This is unchangeable. Displays the current license's expiration date.
-- Created Dated: Optional field to display the company's created date of Interject.
+- License Renewal Date: This is unchangeable. Displays the current license's expiration date.
+- Created Date: Optional field to display the company's created date of Interject.
 - Last Modified Date: Optional field to display when the organization Profile was last updated.
 
 ![](/images/OrganizationProfile/OrganizationDetails.png)

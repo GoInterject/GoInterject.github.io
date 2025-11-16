@@ -73,6 +73,7 @@ Drilling will take us to InventoryByDetail, which will automatically pull all th
 <br>
 
 From here, you can see exactly what is logged in-stock at the time of the pull: **Grains/Cereals** in this example.
+
 ### Return From Drill and Re-Drill
 
 You also need to gather a report of our beverage inventory.
