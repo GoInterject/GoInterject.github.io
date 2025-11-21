@@ -19,9 +19,16 @@ Some users have encountered a rare issue when attempting to uninstall the Interj
 
 [1]:{{ site.url }}/download/regkey_find.ps1
 
-### Steps to Resolve
+**Steps to Resolve:**
 
-1. Locate Interject Registry Keys
+1. [Locate Registry Keys](#1-locate-interject-registry-keys) (use script and/or manually inspect registry)
+2. [Manually Remove Registry Keys](#2-manually-remove-registry-keys)
+3. [Reboot](#3-reboot)
+4. [Reinstall Interject](#4-reinstall-interject)
+
+### 1. Locate Interject Registry Keys
+
+#### Running the Script
 
 Run the provided script to list all Interject-related registry entries:
 
@@ -34,27 +41,30 @@ Run the provided script to list all Interject-related registry entries:
 </blockquote>
 <br>
 
-The script searches under the following hives:
-
-- HKCU:\Software
-- HKLM:\Software
-- HKLM:\Software\WOW6432Node
-
 It will return all keys and subkeys that include "interject" in their path or name.
 
-2. Review Script Output
+Example output of registry locations:
 
-Example output:
-
-```bash
-HKCU:\Software\Interject
-HKLM:\Software\Classes\Installer\Products\{GUID}
-HKLM:\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Interject
-```
+* HKCU:\Software\Interject
+* HKLM:\Software\Classes\Installer\Products\{GUID}
+* HKLM:\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Interject
 
 These entries indicate locations that may contain leftover Interject references.
 
-3. Manually Remove Registry Keys
+#### Additional Registry Locations
+
+A particular support case revealed additional registry locations that may block successful installation of Interject when residual installer files are missing or corrupted. This issue occurred because the system believed Interject was installed, but the cached installer package (.msi) was missing, causing the installation to fail. The error in the log file was:
+
+&emsp; _Warning: Local cached package 'C:\WINDOWS\Installer\ad71cbc.msi' is missing._
+
+The following locations might have additional entries that may need to be manually deleted:
+
+* HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\
+(multiple Interject versions may be present here)
+* HKEY_USERS\[SID Identifier]\Software\Microsoft\Installer\Products\
+* HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData\<UserSID>\Products\
+
+### 2. Manually Remove Registry Keys
 
 Open Registry Editor (regedit) and navigate to the paths returned by the script. Carefully remove any entries related to Interject.
 
@@ -63,9 +73,31 @@ Open Registry Editor (regedit) and navigate to the paths returned by the script.
 </blockquote>
 <br>
 
-4. Reinstall Interject
+### 3. Reboot
+
+After removing the above keys, perform a full system reboot.
+
+### 4. Reinstall Interject
 
 After cleaning the registry, proceed to install the latest version of Interject from the official source.
+
+### Additional Registry Locations from Support Case: Interject Installation Issue
+
+A recent support case revealed additional registry locations that may block successful installation of Interject when residual installer files are missing or corrupted. This issue occurred because the system believed Interject was installed, but the cached installer package (.msi) was missing, causing the installation to fail.
+
+Resolution Steps To Take:
+
+Manually search for and remove registry keys related to previous Interject installations in the following locations:
+
+* HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\ (multiple Interject versions may be present here)
+* HKEY_USERS\[SID Identifier]\Software\Microsoft\Installer\Products\
+* HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData\<UserSID>\Products\
+
+After removing the above keys, perform a full system reboot.
+
+Retry the Interject installation, which should then proceed without errors.
+
+Important: These additional registry paths may not be covered by the existing PowerShell script or manual search, so administrators should manually inspect them if the installer continues to fail with cached package errors.
 
 ### Additional Notes
 

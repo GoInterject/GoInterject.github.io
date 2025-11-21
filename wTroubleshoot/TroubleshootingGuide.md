@@ -3,8 +3,8 @@ title: Troubleshooting Guide
 filename: "TroubleshootingGuide.md"
 layout: custom
 keywords: [errors, solutions, fix]
-headings: ["Overview", "Error: Add-in Not Completely Loaded", "Error: Incompatible FIPS", "Error: Interject Web API Offline", "Error: Can't Install or Uninstall Interject", "Error: Interject Add-in Ribbon is Gone", "Error: Cannot Connect or Communicate With Interject Platform", "Error: Login Page Not Showing (ver 2.5+)", "Error: File Not Uploading Correctly to Report Library", "Error: Report Showing Incorrect Data or Data Missing"]
-links: ["https://portal.gointerject.com/download-interject.html", "/wDeveloper/TLS.html", "/wDeveloper/Enterprise-Login-Setup.html#ip-whitelisting", "https://support.microsoft.com/en-us/topic/fix-problems-that-block-programs-from-being-installed-or-removed-cca7d1b6-65a9-3d98-426b-e9f927e1eb4d", "/wTroubleshoot/CorruptedInstallation.html", "/wTroubleshoot/Addin-Missing.html", "/wDeveloper/Enterprise-Login-Setup.html#ip-whitelisting", "/wTroubleshoot/WebView2.html", "/wDeveloper/Enterprise-Login-Setup.html#ip-whitelisting", "https://live-interject-authapi.azurewebsites.net/", "https://live-interject-authapi.azurewebsites.net/.well-known/openid-configuration", "https://live-interject-authapi.azurewebsites.net/", "/wTroubleshoot/Cloud-File.html#solution-saving-to-local-drive", "/wTroubleshoot/Cloud-File.html#solution-uploading-as-a-website-link", "/wFunctions/Excel-Function-Index.html", "https://portal.gointerject.com/download-interject.html#additionalInstallers"]
+headings: ["Overview", "Error: Add-in Not Completely Loaded", "Error: Incompatible FIPS", "Error: Interject Web API Offline", "Error: Can't Install or Uninstall Interject", "Error: Interject Add-in Ribbon is Gone", "Error: Cannot Connect or Communicate With Interject Platform", "Error: Login Button Does Nothing", "Error: Login Page Not Showing (ver 2.5+)", "Error: File Not Uploading Correctly to Report Library", "Error: Report Showing Incorrect Data or Data Missing"]
+links: ["https://portal.gointerject.com/download-interject.html", "/wDeveloper/TLS.html", "/wDeveloper/Enterprise-Login-Setup.html#ip-whitelisting", "https://support.microsoft.com/en-us/topic/fix-problems-that-block-programs-from-being-installed-or-removed-cca7d1b6-65a9-3d98-426b-e9f927e1eb4d", "/wTroubleshoot/CorruptedInstallation.html", "/wTroubleshoot/Addin-Missing.html", "/wDeveloper/Enterprise-Login-Setup.html#ip-whitelisting", "/wTroubleshoot/WebView2.html", "/wIndex/Diagnostics-SpecialFeatures.html#webview2browser-login", "/wDeveloper/Enterprise-Login-Setup.html#ip-whitelisting", "https://live-interject-authapi.azurewebsites.net/", "https://live-interject-authapi.azurewebsites.net/.well-known/openid-configuration", "https://live-interject-authapi.azurewebsites.net/", "/wTroubleshoot/Cloud-File.html#solution-saving-to-local-drive", "/wTroubleshoot/Cloud-File.html#solution-uploading-as-a-website-link", "/wFunctions/Excel-Function-Index.html", "https://portal.gointerject.com/download-interject.html#additionalInstallers"]
 image_dir: ""
 images: []
 description: This is a troubleshooting guide for the Interject Add-in. This resource is designed to help you navigate and resolve a variety of common issues you might encounter while using the Interject Add-in.
@@ -69,6 +69,19 @@ _"One or more of the Interject web apis are offline or could not be reached. The
 
     <span style="color: green;">SOLUTION:</span> [Whitelist](/wDeveloper/Enterprise-Login-Setup.html#ip-whitelisting) our auth API URL
 
+### Error: Login Button Does Nothing
+
+When clicking the login button, nothing happens and the login page does not load.
+
+- <span style="color: red;">ISSUE:</span> This occurs when the Interject Add-in is unable to use the WebView2 browser engine to render the login page.
+
+- <span style="color: green;">SOLUTION (Step 1):</span> Switch the login page rendering to the default browser (set `WebView2 = false`) using the Interject Diagnostics menu. [Browser Login Settings](https://docs.gointerject.com/wIndex/Diagnostics-SpecialFeatures.html#webview2browser-login).
+
+- <span style="color: red;">ISSUE:</span> After switching to the default browser, you may see this additional error:
+"An error occurred while loading the system settings. An unexpected XML format was used. See logs."
+
+- <span style="color: green;">SOLUTION (Step 2):</span> Delete the contents of the `%appdata%\Interject\Settings` folder (or `C:\Users\<username>\AppData\Roaming\Interject\Settings`). These files will be automatically regenerated when you log in again.
+
 ### Error: Login Page Not Showing (ver 2.5+)
 
 - <span style="color: red;">ISSUE:</span> Webview2 is not installed (installed by default normally but sometimes it is missing in rare cases)
@@ -77,7 +90,7 @@ _"One or more of the Interject web apis are offline or could not be reached. The
 
 - <span style="color: red;">ISSUE:</span> VDI software (e.g. Citrix) is on an old version that does not support Webview2
 
-    <span style="color: green;">SOLUTION:</span> Use the alternative login form setting in 2.5.2+
+    <span style="color: green;">SOLUTION:</span> Use the [alternative login](/wIndex/Diagnostics-SpecialFeatures.html#webview2browser-login) form setting in 2.5.2+
 
 - <span style="color: red;">ISSUE:</span> Firewall does not allow access to unapproved external services
 
@@ -119,3 +132,9 @@ _"One or more of the Interject web apis are offline or could not be reached. The
 - <span style="color: red;">ISSUE:</span> Wrong Interject version. Each versions has different features and functionality. Upgrading may help and in some cases it may help to downgrade your version to isolate the issue.
 
     <span style="color: green;">SOLUTION:</span> Upgrade/Downgrade your [Interject version](https://portal.gointerject.com/download-interject.html#additionalInstallers).
+
+### Error: Installation Fails Due to Missing Cached Installer or Residual Registry Keys
+
+- <span style="color: red;">ISSUE:</span> Installation of the Interject Excel Add-in fails with error about missing cached installer package (e.g. .msi file missing), or the system incorrectly detects an existing installation blocking update.
+
+- <span style="color: green;">SOLUTION:</span> [Manually remove](/wTroubleshoot/RegistryKeyRemoval.html) leftover registry keys related to Interject before uninstalling Interject.

@@ -443,6 +443,8 @@ Developer:
 troubleshoot:
 - title: Troubleshooting Guide
   path: /wTroubleshoot/TroubleshootingGuide.html
+- title: General Troubleshooting
+  path: /wTroubleshoot/GeneralTroubleshooting.html
 - sectiontitle: Interject Support
   path: /wTroubleshoot/Interject-Support.html
   section:
@@ -473,6 +475,8 @@ troubleshoot:
       path: /wTroubleshoot/Transport-Errors.html
     - title: Corrupted Interject Installation
       path: /wTroubleshoot/CorruptedInstallation.html
+    - title: Registry Key Removal
+      path: /wTroubleshoot/RegistryKeyRemoval.html
 - sectiontitle: Report Errors
   path: /wTroubleshoot/Reports.html
   section:
@@ -507,6 +511,8 @@ releaseNotes:
       path: /wReleaseNotes/2025-01_ReleaseNotes.html
     - title: 2.5.4.0
       path: /wReleaseNotes/2025-06_ReleaseNotes.html
+    - title: 2.5.5.0
+      path: /wReleaseNotes/2025-11_ReleaseNotes.html
 - sectiontitle: 2023
   path: /wReleaseNotes/2023-12_ReleaseNotes.html
   section:
@@ -542,3 +548,5 @@ releaseNotes:
       path: /wReleaseNotes/2025-01_ReleaseNotes.html
     - title: June
       path: /wReleaseNotes/2025-06_ReleaseNotes.html
+    - title: November
+      path: /wReleaseNotes/2025-11_ReleaseNotes.html
