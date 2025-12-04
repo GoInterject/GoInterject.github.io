@@ -3,7 +3,7 @@ title: Tabular vs Data Cells
 filename: "Tabular-vs-Data-Cells.md"
 layout: custom
 keywords: [cells, tabular, data cells]
-headings: ["Overview", "Tabular", "Data Cells", "What is Common Between Tabular and Data Cells"]
+headings: ["Overview", "Tabular", "Data Cells", "What is Common Between Data Lists and Data Cells"]
 links: ["/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#export-book"]
 image_dir: ""
 images: []
@@ -29,7 +29,7 @@ Data Cells are focused on a single formula that can be placed anywhere in the sp
 
 Once this single formula approach is understood, there is no limit to creating needed combinations. Typically, this is an easier method to start writing custom reports. However, they must be exported to share with non-Interject users. Given their greater flexibility, report run times are higher than Tabular reports, and more server resources are required. Fortunately, users can continue to work with spreadsheets while Data Cell reports finish calculating.
 
-### What is Common Between Tabular and Data Cells
+### What is Common Between Data Lists and Data Cells
 
 Tabular reporting and Data Cells were designed to work together for the most flexibility. These are some of their common traits:
 
