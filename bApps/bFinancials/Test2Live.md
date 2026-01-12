@@ -43,14 +43,14 @@ This option details the steps in restoring a backup of Interject_Reporting from 
 >
 > **Step 2:** To reapply security to the live DB, execute the **Interject_SetupScript1_Security** stored procedure, seen below.
 > ```SQL
-> EXEC [Custom].[Interject_SetupScript1_Security]
+> EXEC [Setup].[Interject_SetupScript1_Security]
 >       @MasterEpicorDatabase = '<Epicor Controlling Database Name>'
 >      ,@CertificatePassword = 'myPassword1234'
 > ```
 > **Step 3:** Execute **ERP_InstallScript5_SetupJobs**, as seen below, to create sync jobs
 > ```SQL
 > --Setup SQL Agent Jobs to seed "nightly" sync of Interject data store
-> EXEC [Custom].[ERP_InstallScript5_SetupJobs]
+> EXEC [Setup].[ERP_InstallScript5_SetupJobs]
 > ```
 > **Step 4:** Go through the steps required for [Interject Application Setup - Data Connection](https://docs.gointerject.com/bApps/bFinancials/InitialDataLoad.html#steps-required-for-interject-application-setup-data-connection).
 >

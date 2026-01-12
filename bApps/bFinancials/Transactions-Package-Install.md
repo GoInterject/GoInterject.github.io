@@ -39,7 +39,7 @@ The following setup instructions will walk you through installation of the slim 
 > **Step 5:** Create security objects and grant read-only access to Epicor tables by passing the following parameters using the following script as an example:
 >
 > ```SQL
-> EXEC [Custom].[Interject_SetupScript1_Security]
+> EXEC [Setup].[Interject_SetupScript1_Security]
 >        @MasterEpicorDatabase      = '[<INSERT Master DB Name>]'
 >       ,@CertificatePassword       = 'myPassword1234'
 > ```
@@ -48,7 +48,7 @@ The following setup instructions will walk you through installation of the slim 
 >
 > ```SQL
 > -- Import configuration setup from Epicor and initial setup of Interject
-> EXEC [Custom].[ERP_InstallScript1_DatabaseConfig_Slim]
+> EXEC [Setup].[ERP_InstallScript1_DatabaseConfig_Slim]
 >        @MasterEpicorDatabase          = '[<INSERT Master DB NAME>]'
 >       ,@DefaultDatabaseNameSource     = '[<INSERT Default DB name>]'
 > ```
