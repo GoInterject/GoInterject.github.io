@@ -33,3 +33,5 @@ Here are the release notes for the following Interject versions. For a complete 
 * Version [2.5.0.23](/wReleaseNotes/2023-12_ReleaseNotes.html)
 
 * Version [2.5.0.22](/wReleaseNotes/2023-10_ReleaseNotes.html)
+
+* Version [2.5.6.0](/wReleaseNotes/2026-02_ReleaseNotes.html)
