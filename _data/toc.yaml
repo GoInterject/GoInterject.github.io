@@ -370,8 +370,8 @@ Developer:
           path: /wApi/python-api-custom-functions.html
     - title: Java Api Setup
       path: /wApi/java-api-setup.html
-    - title: Pyinterject
-      path: /wApi/Pyinterject.html
+    # - title: Pyinterject
+    #   path: /wApi/Pyinterject.html
 - sectiontitle: Developing With Interject
   path: /wDeveloper/Developing-with-INTERJECT.html
   section:
