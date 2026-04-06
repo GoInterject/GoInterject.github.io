@@ -4,7 +4,7 @@ filename: "2024-10_ReleaseNotes.md"
 layout: custom
 keywords: [change log, updates, versions, history, what's new]
 headings: ["October 2024", "Documentation Updates"]
-links: ["/wFunctions/jCombineSmart.html", "/wGetStarted/L-Create-HideRowCol.html#hiding-columns", "/wIndex/ReportBuilder.html", "/wTroubleshoot/TroubleshootingGuide.html", "/wTroubleshoot/CorruptedInstallation.html", "/wApi/Pyinterject.html"]
+links: ["/wFunctions/jCombineSmart.html", "/wGetStarted/L-Create-HideRowCol.html#hiding-columns", "/wIndex/ReportBuilder.html", "/wTroubleshoot/TroubleshootingGuide.html", "/wTroubleshoot/CorruptedInstallation.html", ]
 image_dir: ""
 images: []
 description: Release notes for this month's updates
@@ -22,4 +22,3 @@ description: Release notes for this month's updates
 | 10/1 | New | [Report Builder](/wIndex/ReportBuilder.html) | New page |
 | 10/1 | New | [Troubleshooting Guide](/wTroubleshoot/TroubleshootingGuide.html) | New Page |
 | 10/1 | New | [Corrupted Interject Installation](/wTroubleshoot/CorruptedInstallation.html) | New page |
-| 10/4 | New | [Pyinterject](/wApi/Pyinterject.html) | New page |
