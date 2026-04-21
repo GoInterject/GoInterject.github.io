@@ -1511,6 +1511,9 @@
     "jDataPortal": [
         "https://docs.gointerject.com/wFunctions/jDataPortal.html"
     ],
+    "jDataSource": [
+        "https://docs.gointerject.com/wFunctions/jDataSource.html"
+    ],
     "jDesc": [
         "https://docs.gointerject.com/wFunctions/jDesc.html"
     ],
@@ -1527,6 +1530,21 @@
         "https://docs.gointerject.com/wGetStarted/L-Create-CustomerOrders.html",
         "https://docs.gointerject.com/wGetStarted/L-Modify-InventoryReport.html"
     ],
+    "jGroup": [
+        "https://docs.gointerject.com/wFunctions/jGroup.html"
+    ],
+    "jAggregate": [
+        "https://docs.gointerject.com/wFunctions/jAggregate.html"
+    ],
+    "jFilter": [
+        "https://docs.gointerject.com/wFunctions/jFilter.html"
+    ],
+    "jJoin": [
+        "https://docs.gointerject.com/wFunctions/jJoin.html"
+    ],
+    "jQuery": [
+        "https://docs.gointerject.com/wFunctions/jQuery.html"
+    ],
     "jRangeTag": [
         "https://docs.gointerject.com/wFunctions/jRangeTag.html"
     ],
@@ -1536,6 +1554,9 @@
     "jWorkbookProperty": [
         "https://docs.gointerject.com/wFunctions/jWorkbookProperty.html",
         "https://docs.gointerject.com/wGetStarted/L-Create-InventoryFixed.html"
+    ],
+    "jWhere": [
+        "https://docs.gointerject.com/wFunctions/jWhere.html"
     ],
     "jacct": [
         "https://docs.gointerject.com/wFunctions/jAcct.html"

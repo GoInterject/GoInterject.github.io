@@ -2,9 +2,9 @@
 title: Excel Function Index
 filename: "Excel-Function-Index.md"
 layout: custom
-keywords: [functions, formulas, index, data, pull, save, drill, event, helper, data cell]
-headings: ["Overview", "Data Pull Functions", "Data Save Functions", "Data Drill Functions", "Event Functions", "Helper Functions", "Data Cell Functions"]
-links: ["/wFunctions/ReportRange.html", "/wFunctions/ReportFixed.html", "/wFunctions/ReportVariable.html", "/wFunctions/ReportLookup.html", "/wFunctions/ReportSave.html", "/wFunctions/ReportDrill.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data", "/wFunctions/ReportMacro.html", "/wFunctions/ReportRun.html", "/wFunctions/ReportCalc.html", "/wFunctions/ReportDefaults.html", "/wFunctions/ReportGrouping.html", "/wFunctions/ReportHideRowOrColumn.html", "/wFunctions/jDropdown.html", "/wFunctions/jFocus.html", "/wFunctions/jFreezePanes.html", "/wFunctions/jCombine.html", "/wFunctions/jCombineIf.html", "/wFunctions/jDataPortal.html", "/wFunctions/jColumnDef.html", "/wFunctions/jRangeTag.html", "/wFunctions/jWorkbookProperty.html", "/wFunctions/Pair.html", "/wFunctions/PairGroup.html", "/wFunctions/Pair.html", "/wFunctions/Param.html", "/wFunctions/jAcct.html", "/wFunctions/jCell.html", "/wFunctions/jDesc.html"]
+keywords: [functions, formulas, index, data, pull, save, drill, event, helper, sql, data cell]
+headings: ["Overview", "Data Pull Functions", "Data Save Functions", "Data Drill Functions", "Event Functions", "Helper Functions", "SQL Helpers", "Data Cell Functions"]
+links: ["/wFunctions/ReportRange.html", "/wFunctions/ReportFixed.html", "/wFunctions/ReportVariable.html", "/wFunctions/ReportLookup.html", "/wFunctions/ReportSave.html", "/wFunctions/ReportDrill.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#pull-data", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#save-data", "/wFunctions/ReportMacro.html", "/wFunctions/ReportRun.html", "/wFunctions/ReportCalc.html", "/wFunctions/ReportDefaults.html", "/wFunctions/ReportGrouping.html", "/wFunctions/ReportHideRowOrColumn.html", "/wFunctions/jDropdown.html", "/wFunctions/jFocus.html", "/wFunctions/jFreezePanes.html", "/wFunctions/jCombine.html", "/wFunctions/jCombineIf.html", "/wFunctions/jDataPortal.html", "/wFunctions/jColumnDef.html", "/wFunctions/jRangeTag.html", "/wFunctions/jWorkbookProperty.html", "/wFunctions/Pair.html", "/wFunctions/PairGroup.html", "/wFunctions/Pair.html", "/wFunctions/Param.html", "/wFunctions/jDataSource.html", "/wFunctions/jQuery.html", "/wFunctions/jFilter.html", "/wFunctions/jJoin.html", "/wFunctions/jGroup.html", "/wFunctions/jAggregate.html", "/wFunctions/jWhere.html", "/wFunctions/jAcct.html", "/wFunctions/jCell.html", "/wFunctions/jDesc.html"]
 image_dir: ""
 images: []
 description: Interject provides features by leveraging spreadsheet formulas that are familiar to many users. These formulas can be used to direct data into a spreadsheet, creating practical and adaptable reports. By adding report drills and navigation through additional spreadsheet formulas, these reports become a comprehensive reporting solution.
@@ -73,6 +73,20 @@ Helper Functions are functions that help streamline the report generation proces
 | [Pair()](/wFunctions/Pair.html) | Used with a variety of report functions to specify a from value or range to a target location or range. |
 | [PairGroup()](/wFunctions/PairGroup.html) | Used to string multiple [Pair()](/wFunctions/Pair.html) functions together into one comma delimited string |
 | [Param()](/wFunctions/Param.html) | Used to help select one or multiple parameters for each of your report formulas. |
+
+### SQL Helpers
+
+SQL Helpers are focused on working with cached data sources using SQL-like operations such as querying, filtering, joining, grouping, and aggregating data.
+
+| Formula | Description |
+|-------|----------|
+| [jDataSource()](/wFunctions/jDataSource.html) | Provides an easy way to cache sheet data and Data Portals. |
+| [jQuery()](/wFunctions/jQuery.html) | Runs a SQL query on a jDataSource reference. |
+| [jFilter()](/wFunctions/jFilter.html) | Filters a data source using one or more jWhere clauses. |
+| [jJoin()](/wFunctions/jJoin.html) | Joins two SQL helper data sources on common columns. |
+| [jGroup()](/wFunctions/jGroup.html) | Groups a data source and supports aggregate column definitions. |
+| [jAggregate()](/wFunctions/jAggregate.html) | Defines aggregate values for grouped output or direct evaluation. |
+| [jWhere()](/wFunctions/jWhere.html) | Creates where-clause expressions used by jFilter. |
 
 ### Data Cell Functions
 

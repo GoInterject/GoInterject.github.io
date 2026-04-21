@@ -241,6 +241,23 @@ index:
           path: /wFunctions/PairGroup.html
         - title: Param()
           path: /wFunctions/Param.html
+        - sectiontitle: SQL Helpers
+          path: /wFunctions/jDataSource.html
+          section:
+            - title: jDataSource()
+              path: /wFunctions/jDataSource.html
+            - title: jQuery()
+              path: /wFunctions/jQuery.html
+            - title: jFilter()
+              path: /wFunctions/jFilter.html
+            - title: jJoin()
+              path: /wFunctions/jJoin.html
+            - title: jGroup()
+              path: /wFunctions/jGroup.html
+            - title: jAggregate()
+              path: /wFunctions/jAggregate.html
+            - title: jWhere()
+              path: /wFunctions/jWhere.html
     - sectiontitle: Data Cell Functions
       path: /wFunctions/Data-Cell-Functions.html
       section:

@@ -2,9 +2,9 @@
 title: Helper Functions
 filename: "Helper-Functions.md"
 layout: custom
-keywords: [helper, functions, formula]
-headings: ["Overview", "jDropdown", "jFocus", "jFreezePanes", "jCombine", "jCombineIf", "jDataPortal", "jColumnDef", "jRangeTag", "jWorkbookProperty", "jSetting", "Pair", "PairGroup", "Param"]
-links: ["/wFunctions/jDropdown.html", "/wFunctions/jFocus.html", "/wFunctions/jFreezePanes.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools", "/wFunctions/jFreezePanes.html", "/wFunctions/jCombine.html", "/wFunctions/jCombineIf.html", "/wFunctions/jDataPortal.html", "/wFunctions/jColumnDef.html", "/wFunctions/jRangeTag.html", "/wFunctions/jWorkbookProperty.html", "/wFunctions/jSetting.html", "/wFunctions/Pair.html", "/wFunctions/PairGroup.html", "/wFunctions/PairGroup.html", "/wFunctions/Pair.html", "/wFunctions/Param.html", "/wTroubleshoot/Reports.html#validation-report-for-interject-events"]
+keywords: [helper, functions, formula, sql]
+headings: ["Overview", "jDropdown", "jFocus", "jFreezePanes", "jCombine", "jCombineIf", "jDataPortal", "jColumnDef", "jRangeTag", "jWorkbookProperty", "jSetting", "Pair", "PairGroup", "Param", "SQL Helpers"]
+links: ["/wFunctions/jDropdown.html", "/wFunctions/jFocus.html", "/wFunctions/jFreezePanes.html", "/wGetStarted/INTERJECT-Ribbon-Menu-Items.html#quick-tools", "/wFunctions/jFreezePanes.html", "/wFunctions/jCombine.html", "/wFunctions/jCombineIf.html", "/wFunctions/jDataPortal.html", "/wFunctions/jColumnDef.html", "/wFunctions/jRangeTag.html", "/wFunctions/jWorkbookProperty.html", "/wFunctions/jSetting.html", "/wFunctions/Pair.html", "/wFunctions/PairGroup.html", "/wFunctions/PairGroup.html", "/wFunctions/Pair.html", "/wFunctions/Param.html", "/wFunctions/jDataSource.html", "/wFunctions/jQuery.html", "/wFunctions/jFilter.html", "/wFunctions/jJoin.html", "/wFunctions/jGroup.html", "/wFunctions/jAggregate.html", "/wFunctions/jWhere.html", "/wTroubleshoot/Reports.html#validation-report-for-interject-events"]
 image_dir: ""
 images: []
 description: Helper Functions are functions that are often embedded into other parent functions to be leveraged into more specific and accurate functions or enhance their capabilities.
@@ -68,4 +68,36 @@ The PairGroup function will active all [Pair()](/wFunctions/Pair.html) functions
 ### [Param](/wFunctions/Param.html)
 
 The Param function transfers values as parameters to the Data Portal. The values must match the order of the parameters in the data source (The order can be verified using the [Validation Report](/wTroubleshoot/Reports.html#validation-report-for-interject-events) ).
+
+### SQL Helpers
+
+The SQL Helper functions support cached-source workflows for querying, filtering, joining, grouping, and aggregating data.
+
+### [jDataSource](/wFunctions/jDataSource.html)
+
+Provides an easy way to cache sheet data and Data Portals.
+
+### [jQuery](/wFunctions/jQuery.html)
+
+Runs a SQL query against a jDataSource reference.
+
+### [jFilter](/wFunctions/jFilter.html)
+
+Filters a data source using jWhere statements.
+
+### [jJoin](/wFunctions/jJoin.html)
+
+Joins two SQL helper data sources on common columns.
+
+### [jGroup](/wFunctions/jGroup.html)
+
+Groups a data source by a selected column and supports aggregate definitions.
+
+### [jAggregate](/wFunctions/jAggregate.html)
+
+Defines aggregate values for jGroup and optional direct evaluation.
+
+### [jWhere](/wFunctions/jWhere.html)
+
+Defines where-clause expressions for jFilter.
 
