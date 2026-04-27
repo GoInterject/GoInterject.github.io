@@ -241,23 +241,6 @@ index:
           path: /wFunctions/PairGroup.html
         - title: Param()
           path: /wFunctions/Param.html
-        - sectiontitle: SQL Helpers
-          path: /wFunctions/jDataSource.html
-          section:
-            - title: jDataSource()
-              path: /wFunctions/jDataSource.html
-            - title: jQuery()
-              path: /wFunctions/jQuery.html
-            - title: jFilter()
-              path: /wFunctions/jFilter.html
-            - title: jJoin()
-              path: /wFunctions/jJoin.html
-            - title: jGroup()
-              path: /wFunctions/jGroup.html
-            - title: jAggregate()
-              path: /wFunctions/jAggregate.html
-            - title: jWhere()
-              path: /wFunctions/jWhere.html
     - sectiontitle: Data Cell Functions
       path: /wFunctions/Data-Cell-Functions.html
       section:
@@ -267,6 +250,23 @@ index:
           path: /wFunctions/jCell.html
         - title: jDesc()
           path: /wFunctions/jDesc.html
+    - sectiontitle: SQL Helpers
+      path: /wFunctions/jDataSource.html
+      section:
+        - title: jDataSource()
+          path: /wFunctions/jDataSource.html
+        - title: jQuery()
+          path: /wFunctions/jQuery.html
+        - title: jFilter()
+          path: /wFunctions/jFilter.html
+        - title: jJoin()
+          path: /wFunctions/jJoin.html
+        - title: jGroup()
+          path: /wFunctions/jGroup.html
+        - title: jAggregate()
+          path: /wFunctions/jAggregate.html
+        - title: jWhere()
+          path: /wFunctions/jWhere.html
     - title: Reviewing Report Functions
       path: /wIndex/Report-Formula-Reviews.html
   - sectiontitle: Common Data Portal Index
@@ -429,6 +429,19 @@ Developer:
     path: /wDeveloper/L-Dev-Error-Handling.html
   - title: Setting Up the jDataPortal
     path: /wDeveloper/SetupjDataPortal.html
+  - sectiontitle: SQL in Excel
+    path: /wDeveloper/L-Dev-SQL-in-Excel.html
+    section:
+    - title: "Develop: jDataSource"
+      path: /wDeveloper/L-Dev-jDataSource.html
+    - title: "Develop: jQuery"
+      path: /wDeveloper/L-Dev-jQuery.html
+    - title: "Develop: jFilter and jWhere"
+      path: /wDeveloper/L-Dev-jFilter-jWhere.html
+    - title: "Develop: jJoin"
+      path: /wDeveloper/L-Dev-jJoin.html
+    - title: "Develop: jGroup and jAggregate"
+      path: /wDeveloper/L-Dev-jGroup-jAggregate.html
   - title: Custom Items
     path: /wDeveloper/CustomItems.html
 - sectiontitle: Enterprise Capabilities
