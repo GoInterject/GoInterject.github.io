@@ -19,7 +19,7 @@ All 6 documentation files now include:
 3. **L-Dev-jQuery.md** - GL aggregation and GROUP BY examples
 4. **L-Dev-jFilter-jWhere.md** - GL filtering with dynamic parameters
 5. **L-Dev-jJoin.md** - GL joining with district lookup tables
-6. **L-Dev-jGroup-jAggregate.md** - GL financial dashboard examples
+6. **L-Dev-jGroup.md** - GL financial dashboard examples
 
 ### 📊 Real Examples from [LocalReportingExamples.xlsx](/download/SQL%20in%20Excel%20Examples/LocalReportingExamples.xlsx)
 
@@ -104,8 +104,8 @@ Updated `_data/toc.yaml` to include the new section:
     path: /wDeveloper/L-Dev-jFilter-jWhere.html
   - title: "Develop: jJoin"
     path: /wDeveloper/L-Dev-jJoin.html
-  - title: "Develop: jGroup and jAggregate"
-    path: /wDeveloper/L-Dev-jGroup-jAggregate.html
+  - title: "Develop: jGroup"
+    path: /wDeveloper/L-Dev-jGroup.html
 ```
 
 ## What's Ready to Use
@@ -166,7 +166,7 @@ This creates a complete learning loop from concept → formula → screenshot �
 - ✅ `wDeveloper/L-Dev-jQuery.md` - Added real GL examples + 3 image placeholders
 - ✅ `wDeveloper/L-Dev-jFilter-jWhere.md` - Added real GL examples + 3 image placeholders
 - ✅ `wDeveloper/L-Dev-jJoin.md` - Added real GL examples + 3 image placeholders
-- ✅ `wDeveloper/L-Dev-jGroup-jAggregate.md` - Added real GL examples + 3 image placeholders
+- ✅ `wDeveloper/L-Dev-jGroup.md` - Added real GL examples + 3 image placeholders
 - ✅ `_data/toc.yaml` - Added "SQL in Excel" section with all 5 sub-pages
 
 ## Files Created
