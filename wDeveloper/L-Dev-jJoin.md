@@ -249,6 +249,6 @@ Instead of seeing just "7001" or "7002" in your GL data, you now see the meaning
 
 Explore advanced techniques:
 
-* [Aggregate joined data with jGroup and jAggregate](/wDeveloper/L-Dev-jGroup-jAggregate.html)
+* [Group joined data with jGroup](/wDeveloper/L-Dev-jGroup.html)
 * [Use jQuery for complex joins](/wDeveloper/L-Dev-jQuery.html)
 * [Return to SQL in Excel overview](/wDeveloper/L-Dev-SQL-in-Excel.html)

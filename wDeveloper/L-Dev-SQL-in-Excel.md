@@ -4,7 +4,7 @@ filename: "L-Dev-SQL-in-Excel.md"
 layout: custom
 keywords: [SQL in Excel, jDataSource, jQuery, jFilter, jWhere, jJoin, jGroup, jAggregate, helper functions, develop, build]
 headings: ["Overview", "SQL Helper Functions", "Getting Started"]
-links: ["/wDeveloper/L-Dev-jDataSource.html", "/wDeveloper/L-Dev-jQuery.html", "/wDeveloper/L-Dev-jFilter-jWhere.html", "/wDeveloper/L-Dev-jJoin.html", "/wDeveloper/L-Dev-jGroup-jAggregate.html"]
+links: ["/wDeveloper/L-Dev-jDataSource.html", "/wDeveloper/L-Dev-jQuery.html", "/wDeveloper/L-Dev-jFilter-jWhere.html", "/wDeveloper/L-Dev-jJoin.html", "/wDeveloper/L-Dev-jGroup.html"]
 image_dir: ""
 images: []
 description: Learn how to use Interject SQL helper functions to query, filter, and aggregate data directly in Excel without writing complex SQL or VBA.
@@ -63,7 +63,7 @@ Combines two data sources based on a common column (INNER, LEFT etc).
 - Combine product data with sales data
 - Merge lookup tables with transaction data
 
-### [jGroup() & jAggregate()](/wDeveloper/L-Dev-jGroup-jAggregate.html)
+### [jGroup()](/wDeveloper/L-Dev-jGroup.html)
 
 Groups data by a column and aggregates values using functions like SUM, COUNT, AVG, MIN, or MAX.
 
@@ -112,6 +112,6 @@ To complete these examples, you should have:
 2. **Learn jFilter & jWhere** - Filter that data source  
 3. **Explore jQuery** - Write custom queries
 4. **Try jJoin** - Combine multiple data sources
-5. **Master jGroup & jAggregate** - Summarize your results
+5. **Master jGroup** - Summarize your results
 
 Each function builds on the concepts from the previous ones, so we recommend following this order.

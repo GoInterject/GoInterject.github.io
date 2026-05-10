@@ -350,6 +350,6 @@ Click on pull and see the filtered data
 
 Explore advanced techniques:
 
-* [Learn jGroup and jAggregate for summary data](/wDeveloper/L-Dev-jGroup-jAggregate.html)
+* [Learn jGroup for summary layouts](/wDeveloper/L-Dev-jGroup.html)
 * [Use jJoin to combine multiple data sources](/wDeveloper/L-Dev-jJoin.html)
 * [Return to SQL in Excel overview](/wDeveloper/L-Dev-SQL-in-Excel.html)

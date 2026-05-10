@@ -262,4 +262,4 @@ Now that you understand how to cache data with jDataSource, explore how to:
 * [Filter cached data with jFilter and jWhere](/wDeveloper/L-Dev-jFilter-jWhere.html)
 * [Query cached data with jQuery](/wDeveloper/L-Dev-jQuery.html)
 * [Join multiple data sources with jJoin](/wDeveloper/L-Dev-jJoin.html)
-* [Group and aggregate data with jGroup and jAggregate](/wDeveloper/L-Dev-jGroup-jAggregate.html)
+* [Group data with jGroup](/wDeveloper/L-Dev-jGroup.html)

@@ -464,5 +464,5 @@ Explore advanced techniques:
 
 * [Learn jQuery for complex queries](/wDeveloper/L-Dev-jQuery.html)
 * [Use jJoin to combine data sources](/wDeveloper/L-Dev-jJoin.html)
-* [Aggregate filtered data with jAggregate](/wDeveloper/L-Dev-jGroup-jAggregate.html)
+* [Group filtered data with jGroup](/wDeveloper/L-Dev-jGroup.html)
 * [Return to SQL in Excel overview](/wDeveloper/L-Dev-SQL-in-Excel.html)
