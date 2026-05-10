@@ -440,8 +440,8 @@ Developer:
       path: /wDeveloper/L-Dev-jFilter-jWhere.html
     - title: "Develop: jJoin"
       path: /wDeveloper/L-Dev-jJoin.html
-    - title: "Develop: jGroup and jAggregate"
-      path: /wDeveloper/L-Dev-jGroup-jAggregate.html
+    - title: "Develop: jGroup"
+      path: /wDeveloper/L-Dev-jGroup.html
   - title: Custom Items
     path: /wDeveloper/CustomItems.html
 - sectiontitle: Enterprise Capabilities

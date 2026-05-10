@@ -11,13 +11,13 @@ images: [
 	{file: "08-Aggregate-Results", type: "png", site: "Excel", cat: "General Ledger", sub: "Query Results", report: "", ribbon: "", config: ""}, 
 	{file: "09-PL-Example-Trends", type: "png", site: "Excel", cat: "General Ledger", sub: "Trend Analysis", report: "", ribbon: "", config: ""}
 	]
-description: Learn how to use the jQuery function to run custom SQL queries against cached jDataSource data.
+description: Learn how to use the jQuery function to run custom SQL queries against jDataSource data.
 ---
 * * *
 
 ## Overview
 
-The jQuery function gives you complete control over data retrieval from a cached jDataSource. Unlike jFilter which uses simple criteria, jQuery lets you write actual SQL SELECT statements to query your data with advanced filtering, joins, aggregations, and more.
+The jQuery function gives you complete control over data retrieval from a  jDataSource. Unlike jFilter which uses simple criteria, jQuery lets you write actual SQL SELECT statements to query your data with advanced filtering, joins, aggregations, and more.
 
 ## Understanding jQuery
 
@@ -40,18 +40,19 @@ The jQuery function gives you complete control over data retrieval from a cached
 
 | Parameter | Description |
 |-----------|-------------|
-| **DataSource** | Range or tag of cached jDataSource |
+| **DataSource** | Range of jDataSource |
 | **SQLQuery** | SQL SELECT statement as text |
 
 ## Basic jQuery Syntax
 
 ### Simple SELECT All
 
-To return all data from a cache:
+To return all data from a dataSource:
 
 ```Excel
 =jQuery(F1, "SELECT * FROM @")
 ```
+The `@` symbol in jQueries is a **placeholder** that represents a reference to a data source (table). It gets replaced with the actual table name at query execution time. This allows you to write flexible SQL queries that work with dynamic data sources.
 
 ### SELECT Specific Columns
 
@@ -60,6 +61,112 @@ To return only certain columns:
 ```Excel
 =jQuery(F1, "SELECT CustomerID, CompanyName, Country FROM @")
 ```
+## Multiple DataSources: Using `Param` with `@1`, `@2`, etc.
+
+### Concept
+
+When you need to work with **multiple data sources**, you use the `Param()` function to bundle them, then reference them individually using `@1`, `@2`, `@3`, etc.
+
+### Why Use Multiple DataSources?
+
+- **Joins** — Combine data from two or more tables
+- **Unions** — Merge data from multiple sources
+- **Complex Queries** — Cross-reference different data sets
+
+### Syntax
+
+```excel
+=jQueries(Param(sourceRef1, sourceRef2, sourceRef3, ...), "SELECT ... FROM @1 ... @2 ... @3 ...")
+```
+
+### How It Works
+
+1. **`Param(source1, source2, source3, ...)`** — Bundles multiple data sources
+   - Source 1 becomes `@1`
+   - Source 2 becomes `@2`
+   - Source 3 becomes `@3`
+   - And so on...
+
+2. **Placeholder Replacement** — Each `@N` in your query gets replaced with the corresponding table name:
+   - `@1` → table name from source 1
+   - `@2` → table name from source 2
+   - `@3` → table name from source 3
+
+3. **Query Execution** — The resolved query runs with actual table names
+
+## Handling Duplicate Column Names
+
+### The Problem
+
+When you use `@1.*` and `@2.*` with sources that have overlapping column names, you get duplicates.
+
+**Example:**
+- `@1` (Customers) has columns: `ID`, `Name`, `Email`
+- `@2` (Orders) has columns: `ID`, `OrderID`, `Date`
+- Query: `SELECT @1.*, @2.* FROM @1 JOIN @2`
+
+The result would have two `ID` columns (one from each source), causing SQLite errors.
+
+### The Solution: Automatic Column Aliasing
+
+The system automatically **renames duplicate columns** by appending numbers to subsequent occurrences.
+
+#### How It Works
+
+When you write:
+```excel
+=jQueries(Param(A1, D1), "SELECT @1.*, @2.* FROM @1 JOIN @2 ON @1.ID = @2.CustomerID")
+```
+
+**Behind the scenes:**
+
+1. **Before replacement:** System detects `@1.*` and `@2.*` patterns
+2. **Column collection:** Gathers all columns from both sources
+   - From `@1`: `ID`, `Name`, `Email`
+   - From `@2`: `ID`, `OrderID`, `Date`
+   - Combined: `ID`, `Name`, `Email`, `ID`, `OrderID`, `Date`
+
+3. **Duplicate detection:** Identifies the second `ID` as a duplicate
+
+4. **Automatic renaming:** 
+   ```
+   @1.ID          → ID         (first occurrence, no change)
+   @1.Name        → Name       (no duplicates)
+   @1.Email       → Email      (no duplicates)
+   @2.ID          → ID1        (renamed to avoid duplicate)
+   @2.OrderID     → OrderID    (no duplicates)
+   @2.Date        → Date       (no duplicates)
+   ```
+
+5. **Query transformation:** 
+   ```sql
+   SELECT @1.ID, @1.Name, @1.Email, @2.ID AS ID1, @2.OrderID, @2.Date 
+   FROM @1 JOIN @2 ON @1.ID = @2.CustomerID
+   ```
+
+#### Result in Excel
+
+The query output will have columns: `ID`, `Name`, `Email`, `ID1`, `OrderID`, `Date`
+
+---
+
+### Example : Simple JOIN with Two Sources
+
+**Setup:**
+- Cell `A1`: `=jDataSource(A2:C10, A1:C1)`  ← Customers table
+- Cell `D1`: `=jDataSource(D2:E10, D1:E1)`  ← Orders table
+- Cell `F1`: Query cell
+
+**Query:**
+```excel
+=jQueries(Param(A1, D1), "SELECT @1.Name, @2.OrderID FROM @1 JOIN @2 ON @1.ID = @2.CustomerID")
+```
+
+**Execution:**
+- `@1` → replaced with customers table name (e.g., `tbl_Sheet1_A1`)
+- `@2` → replaced with orders table name (e.g., `tbl_Sheet1_D1`)
+- Final query: `SELECT tbl_Sheet1_A1.Name, tbl_Sheet1_D1.OrderID FROM tbl_Sheet1_A1 JOIN tbl_Sheet1_D1 ON tbl_Sheet1_A1.ID = tbl_Sheet1_D1.CustomerID`
+
 
 ## Common SQL Query Patterns
 
@@ -227,7 +334,7 @@ Add calculated values:
 
 ## Joining Data Sources
 
-To join multiple cached data sources, reference both in your SQL:
+To join multiple data sources, reference both in your SQL:
 
 
 ## Aggregating Data
