@@ -47,7 +47,7 @@ Imagine you have thousands of sales records with dates, amounts, and product cat
 |-----------|-------------|---------|
 | **DataSource** | Source table or source reference | `"JE_Data!A2:K793,JE_Data!A1:K1"` or  `"F12"` |
 | **ColumnDefs** | Output column definitions for grouped output | `2:2` |
-| **GroupingColumn** | Column name used to aggregate and calculate the SUM | `"Description"` |
+| **GroupingColumn** | Column name used to aggregate and calculate the SUM | `"Amount"` |
 | **GroupingType** | Grouping mode, now only supports cube type | `"Cube"` |
 
 # jGroup Rules and Constraints
@@ -96,7 +96,8 @@ If `ColumnDefs` contains values such as:
 
 - Only **SUM** aggregation is supported.
 - Aggregation conditions are derived from `jColumnDef`.
-- Aggregation filters are allied to all the 13 sgement columns (Source, Period, Year, Version, Segment1, Segment2, Segment3, Segment4, Segment5, Segment6, Segment7, Segment8, BalanceType)
+- Aggregation filters are allied only to 11 sgement columns (`Period`, `Year`, `Version`, `Segment1`, `Segment2`, `Segment3`, `Segment4`, `Segment5`, `Segment6`, `Segment7`, `Segment8`)
+- `BalanceType` and `Source` are never included in aggregation filter conditions.
 
 ### Example
 
@@ -113,7 +114,7 @@ If `jColumnDef` is:
 Then:
 
 - `jColumnDef_1` will:
-  - SUM the `AMOUNT` column
+  - SUM the `AMOUNT` (which will be resolved from `GroupingColumn` parameter of `jGroup`) column
   - Apply filters:
     - Period = 1
     - Year = 2023
@@ -142,9 +143,6 @@ Then:
     - Segment1 = 7001
   - Grouping is applied using Segment1–Segment8
 
-*Note*
-
-- `BalanceType` and `Source` are never included in aggregation filter conditions.
 
 ---
 
