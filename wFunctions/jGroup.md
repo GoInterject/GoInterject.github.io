@@ -37,13 +37,13 @@ The jGroup function groups a jDataSource table by a column with aggregate suppor
 </table>
 </div>
 
-<button class="collapsible-parameter">**ColumnDefs**<br>A Param() list of jAggregate formulas.</button>
+<button class="collapsible-parameter">**ColumnDefs**<br>Columns for grouping.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
     <tr>
 		<td class="pph"><b>Type</b></td>
-		<td>Param(jAggregate(), ...)</td>
+		<td>Range/String</td>
     </tr>
     <tr>
 		<td class="pph"><b>Constraints</b></td>
@@ -57,7 +57,7 @@ The jGroup function groups a jDataSource table by a column with aggregate suppor
 </table>
 </div>
 
-<button class="collapsible-parameter">**GroupingColumn**<br>The column to group the table on.</button>
+<button class="collapsible-parameter">**GroupingColumn**<br>The column to aggegate and SUM from the dataSource.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
