@@ -67,7 +67,8 @@ The jJoin function joins two jDataSources on a common column.
     </tr>
     <tr>
 		<td class="pph"><b>Constraints</b></td>
-		<td>INNER, OUTER, LEFT, or RIGHT</td>
+		<td>INNER, LEFT, LEFT OUTER, CROSS, NATURAL INNER, NATURAL LEFT, NATURAL LEFT OUTER, NATURAL CROSS
+</td>
     </tr>
     <tr>
 		<td class="pph"><b>If Blank</b></td>
