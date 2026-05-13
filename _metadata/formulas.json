@@ -781,6 +781,249 @@
             }
         },
         {
+            "formula": "jDataSource",
+            "description": "The jDataSource function provides an easy way to cache sheet data and Data Portals.",
+            "parameters": {
+                "DataSource": {
+                    "description": "An Excel range or Data Portal to pull data from into a local cache.",
+                    "data_type": [
+                        "Range",
+                        "String"
+                    ],
+                    "constraints": "Must resolve to a valid range or Data Portal reference",
+                    "if_blank": "Function Error"
+                },
+                "ColDefRange": {
+                    "description": "The column definition range used when the source requires explicit column names.",
+                    "data_type": [
+                        "Range"
+                    ],
+                    "constraints": "Should align with the source column structure",
+                    "if_blank": "Uses source defaults"
+                },
+                "Params": {
+                    "description": "Data Portal params go here.",
+                    "data_type": [
+                        "String",
+                        "Param()"
+                    ],
+                    "constraints": "Must match expected Data Portal parameter order",
+                    "if_blank": "No Data Portal parameters are passed"
+                },
+                "CacheTag": {
+                    "description": "Optional tag used to identify the cached source.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "Max 255 char",
+                    "if_blank": "Source is cached without a custom tag"
+                }
+            }
+        },
+        {
+            "formula": "jQuery",
+            "description": "The jQuery function runs a SQL query against a jDataSource reference.",
+            "parameters": {
+                "DataSource": {
+                    "description": "The range reference to a jDataSource or the tag of it.",
+                    "data_type": [
+                        "Range",
+                        "String"
+                    ],
+                    "constraints": "Must reference a valid jDataSource output or tag",
+                    "if_blank": "Function Error"
+                },
+                "Query": {
+                    "description": "The SQL query to run on the DataSource.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "Must be a valid SQL query string for the in-memory source",
+                    "if_blank": "Function Error"
+                }
+            }
+        },
+        {
+            "formula": "jFilter",
+            "description": "The jFilter function filters a SQL helper data source using jWhere clause expressions.",
+            "parameters": {
+                "DataSource": {
+                    "description": "Data Source to filter.",
+                    "data_type": [
+                        "Range",
+                        "String"
+                    ],
+                    "constraints": "Must reference a valid SQL helper source",
+                    "if_blank": "Function Error"
+                },
+                "jWhere": {
+                    "description": "jWhere statements describing the where clause.",
+                    "data_type": [
+                        "jWhere()"
+                    ],
+                    "constraints": "Must contain valid jWhere expressions",
+                    "if_blank": "No filtering is applied"
+                }
+            }
+        },
+        {
+            "formula": "jJoin",
+            "description": "Join two jDataSources on a common column.",
+            "parameters": {
+                "FirstDataSource": {
+                    "description": "First data source to join on.",
+                    "data_type": [
+                        "Range",
+                        "String"
+                    ],
+                    "constraints": "Must reference a valid SQL helper source",
+                    "if_blank": "Function Error"
+                },
+                "SecondDataSource": {
+                    "description": "Second data source to join on.",
+                    "data_type": [
+                        "Range",
+                        "String"
+                    ],
+                    "constraints": "Must reference a valid SQL helper source",
+                    "if_blank": "Function Error"
+                },
+                "JoinType": {
+                    "description": "SQL Join Type: INNER, OUTER, LEFT, RIGHT",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "INNER, OUTER, LEFT, or RIGHT",
+                    "if_blank": "Function Error"
+                },
+                "DS1JoinColumn": {
+                    "description": "Column to join from in the first jDataSource.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "Must be a valid column in FirstDataSource",
+                    "if_blank": "Function Error"
+                },
+                "DS2JoinColumn": {
+                    "description": "Column to join from in the second jDataSource.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "Must be a valid column in SecondDataSource",
+                    "if_blank": "Function Error"
+                }
+            }
+        },
+        {
+            "formula": "jGroup",
+            "description": "Group a jDataSource table by a column with aggregate support.",
+            "parameters": {
+                "DataSource": {
+                    "description": "DataSource to group from.",
+                    "data_type": [
+                        "Range",
+                        "String"
+                    ],
+                    "constraints": "Must reference a valid SQL helper source",
+                    "if_blank": "Function Error"
+                },
+                "ColumnDefs": {
+                    "description": "A Param() list of jAggregate formulas.",
+                    "data_type": [
+                        "Param(jAggregate(), ...)"
+                    ],
+                    "constraints": "Must contain one or more valid jAggregate formulas",
+                    "if_blank": "Function Error"
+                },
+                "GroupingColumn": {
+                    "description": "The column to group the table on.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "Must be a valid column in DataSource",
+                    "if_blank": "Function Error"
+                },
+                "GroupingType": {
+                    "description": "Grouping behavior option used by the SQL helper engine.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "Should use a supported grouping type value",
+                    "if_blank": "Default grouping behavior is used"
+                }
+            }
+        },
+        {
+            "formula": "jAggregate",
+            "description": "For use with jGroup to aggregate values, can be used standalone with EvaluateToCell.",
+            "parameters": {
+                "DataSource": {
+                    "description": "Data Source for the aggregate.",
+                    "data_type": [
+                        "Range",
+                        "String"
+                    ],
+                    "constraints": "Must reference a valid SQL helper source",
+                    "if_blank": "Function Error"
+                },
+                "AggregateType": {
+                    "description": "Options: [\"MIN\", \"MAX\", \"COUNT\", \"SUM\", \"AVG\"]",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "MIN, MAX, COUNT, SUM, or AVG",
+                    "if_blank": "Function Error"
+                },
+                "AggregateColumn": {
+                    "description": "Column to aggregate.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "Must be a valid column in DataSource",
+                    "if_blank": "Function Error"
+                },
+                "EvaluateToCell": {
+                    "description": "Evaluate formula value to this cell, instead of using with jGroup.",
+                    "data_type": [
+                        "String",
+                        "Range"
+                    ],
+                    "constraints": "Must resolve to a valid target cell when used",
+                    "if_blank": "Used as an aggregate definition for jGroup"
+                }
+            }
+        },
+        {
+            "formula": "jWhere",
+            "description": "Where clauses for jDataSources.",
+            "parameters": {
+                "Column": {
+                    "description": "Column from the jDataSource table.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "Must be a valid column name from the SQL helper source",
+                    "if_blank": "Function Error"
+                },
+                "Value": {
+                    "description": "Value to compare against.",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "Use value text compatible with the target comparison",
+                    "if_blank": "Blank value comparison is used"
+                },
+                "SqlOperator": {
+                    "description": "SQL operator for where clause [=, ==, <>, !=, >, <, like, is null, is not null, exists]",
+                    "data_type": [
+                        "String"
+                    ],
+                    "constraints": "Must be a supported operator",
+                    "if_blank": "Defaults to \"=\" behavior"
+                }
+            }
+        },
+        {
             "formula": "jColumnDef",
             "description": "The jColumnDef function defines a column based on one or more parameters. Each parameter represents a segment. The segments can be set to filter the data that this column represents. Typically this function is used with a Data Pull function for a financial report.\n\nThe jColumnDef function utilizes a Data Portal to interact with the segments. This Data Portal is specifically setup for the particular needs of the company using Interject. The segments are thus customizable. For most companies, the Interject [FinCube](/wIndex/FinCubeTheFinancialCube.html) Data Portal will suffice for their reporting needs.\n\nFor an example of this function, see [Lab Create: Financial Variable](/wGetStarted/L-Create-FinancialVariable.html).",
             "parameters": {
