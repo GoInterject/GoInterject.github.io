@@ -46,8 +46,8 @@ Imagine you have thousands of sales records with dates, amounts, and product cat
 | Parameter | Description | Example |
 |-----------|-------------|---------|
 | **DataSource** | Source table or source reference | `"JE_Data!A2:K793,JE_Data!A1:K1"` or  `"F12"` |
-| **ColumnDefs** | Output column definitions for grouped output | `2:2` |
-| **GroupingColumn** | Aggregate input column. Column name used as the input for SUM aggregate method. This MUST be always a numeric column | `"Amount"` |
+| **ColumnDefs** | Output column definitions (used for select statements)  for the grouped output. The group by columns are also resolved from this, but only the segment columns will be considered for group by. | `2:2` |
+| **GroupingColumn** | Aggregate input column. Column name used as the input for SUM aggregate method. This MUST be always a numeric column. We can call it as measure or value column | `"Amount"` |
 | **GroupingType** | Grouping mode, now only supports cube type | `"Cube"` |
 
 # jGroup Rules and Constraints
@@ -96,7 +96,7 @@ If `ColumnDefs` contains values such as:
 
 - Only **SUM** aggregation is supported.
 - Aggregation filters are derived from `jColumnDef`.
-- Aggregation filters are applied only to 11 sgement columns (`Period`, `Year`, `Version`, `Segment1`, `Segment2`, `Segment3`, `Segment4`, `Segment5`, `Segment6`, `Segment7`, `Segment8`)
+- Aggregation filters are applied only to 11 segment columns (`Period`, `Year`, `Version`, `Segment1`, `Segment2`, `Segment3`, `Segment4`, `Segment5`, `Segment6`, `Segment7`, `Segment8`)
 - `BalanceType` and `Source` are never included in aggregation filter conditions.
 
 ### Example

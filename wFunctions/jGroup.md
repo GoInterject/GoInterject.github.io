@@ -57,7 +57,7 @@ The jGroup function groups a jDataSource table by a column with aggregate suppor
 </table>
 </div>
 
-<button class="collapsible-parameter">**GroupingColumn**<br>The column to aggegate and SUM from the dataSource.</button>
+<button class="collapsible-parameter">**GroupingColumn**<br>The column to aggregate and SUM from the dataSource.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>

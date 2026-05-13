@@ -65,7 +65,7 @@ Combines two data sources based on a common column (INNER, LEFT etc).
 
 ### [jGroup()](/wDeveloper/L-Dev-jGroup.html)
 
-Groups data by a column and aggregates values using functions like SUM, COUNT, AVG, MIN, or MAX.
+Groups data by a column and aggregates values.
 
 **Example Use:**
 - Summarize sales by customer
