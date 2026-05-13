@@ -66,7 +66,8 @@ After the inital install, applying an update, or performing a rollback, you can 
 
 <table>
     <tr>
-    <th><span style="font-weight:bold">Interject for Financials - Current Version 1.7.9 </span></th>
+        <th><span style="font-weight:bold">Interject for Financials - Current Version 1.7.9 </span></th>
+    </tr>
     <tr>
         <th><span style="font-weight:bold">Features</span></th>
         <th><span style="font-weight:bold">Bugs Fixed</span></th>
