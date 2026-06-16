@@ -88,7 +88,7 @@ Open the Control Panel and click on **Turn Windows features on or off**:
 ![](/images/dot-net-api/TurnWindowsFeaturesOn.png)
 <br>
 
-Under IIS, select the components you which to install:
+Under IIS, select the components you wish to install:
 
 ![](/images/dot-net-api/IISFeaturesOnOrOff.png)
 <br>
@@ -100,7 +100,7 @@ Click **Manage** and then **Add Roles and Features**:
 ![](/images/dot-net-api/AddRolesAndFeatures.png)
 <br>
 
-Follow the wizard that appears and under "Server Roles", select the Web Server (IIS) components you which to install:
+Follow the wizard that appears and under "Server Roles", select the Web Server (IIS) components you wish to install:
 
 ![](/images/dot-net-api/ServerRoles.png)
 <br>
@@ -171,7 +171,7 @@ The Windows hosts file is typically used to manually map host names to IP addres
 
 The host file is located in the "System32" folder of your Windows installation:
 
-C:\Windows\System32\drivers\etc\host
+C:\Windows\System32\drivers\etc\hosts
 
 Open this file as an Administrator in order to save changes.
 

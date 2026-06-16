@@ -99,7 +99,7 @@ To switch between accounts, simply click the link of the account you wish to swi
 
 ### Forgetting Login Credentials
 
-Forgetting credentials means the login token is deleted from the cache and the profile manager removed from the Login Manger. You will have to reenter your credentials the next time you wish to log in.
+Forgetting credentials means the login token is deleted from the cache and the profile manager removed from the Login Manager. You will have to reenter your credentials the next time you wish to log in.
 
 To log out and forget your credentials, click the ellipses on the account you wish to log out and forget and click **Log Out & Forget**.
 

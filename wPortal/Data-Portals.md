@@ -78,7 +78,7 @@ The new page will look like below:
 ![](/images/DataPortals/CommandTypes.png)
 <br>
 
-- **Command Text:** The command text to be executed by this Data Portal. If a Store Procedure Name, include the schema and full name. This field is not required for Data Portals connecting to an API connection. However, since this field is part of the request object that is provided to an API, the developer can choose to use it within the API they create.
+- **Command Text:** The command text to be executed by this Data Portal. If a Stored Procedure Name, include the schema and full name. This field is not required for Data Portals connecting to an API connection. However, since this field is part of the request object that is provided to an API, the developer can choose to use it within the API they create.
 
 ![](/images/DataPortals/CommandText.png)
 <br>

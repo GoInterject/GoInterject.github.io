@@ -145,7 +145,7 @@ Lets go one step further. Now that you see the journal entry detail summing the 
 ![](/images/Walkthrough-Financial/15.png)
 <br>
 
-This drill goes directly to a second tab in the report called JE Lookup, and it will show the complete detail for journal entry JRNLWA00032760. As expected, it sums to zero like all journal entries must.
+This drill goes directly to a second tab in the report called JE Lookup, and it will show the complete detail for journal entry JRNLWA00032840. As expected, it sums to zero like all journal entries must.
 
 ![](/images/Walkthrough-Financial/16.png)
 <br>
@@ -186,7 +186,7 @@ To get the Function window for jAcct(), just click inside of its function in the
 
 In this function you are using accounts 31000, 32000, and 33000 in Segment 1, and the location 7002 in Segment 2.
 
-Notice that these are the same accounts that makeup **Revenue - Sales** in the original PL Trend and the same location you filtered on earlier.
+Notice that these are the same accounts that make up **Revenue - Sales** in the original PL Trend and the same location you filtered on earlier.
 
 ![](/images/Walkthrough-Financial/20.png)
 <br>
@@ -230,7 +230,7 @@ Although using Data Cells (the jCell() function) to construct a report is very f
 
 The main disadvantages of Data Cells are:
 
- 1. The report will typically run slower, but especially for larger reports. Tabular Reports reports, in comparison, are much faster and more efficient for reporting servers.
+ 1. The report will typically run slower, but especially for larger reports. Tabular Reports, in comparison, are much faster and more efficient for reporting servers.
  2. The report will not allow detail lines to be added or removed automatically based on what data exists for the filters. Data Cells create fixed reports that require more maintenance.
  3. Data Cells are not portable to non-Interject users unless using the export feature to remove the special formulas like jCell().
 

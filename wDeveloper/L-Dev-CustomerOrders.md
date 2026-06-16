@@ -40,7 +40,7 @@ Because this report uses the same database as the [previous example](/wDeveloper
 ![](/images/L-DevCustOrders/02.png)
 <br>
 
-**Step 3:** Change the procedure name to **[Demo].[Northwind_CustomerOrders_Pull_MyName]** (again sub "MyName" with your name). You will set up this procedure next. Then click **Save Changes**.
+**Step 3:** Change the procedure name to **[Demo].[Northwind_CustomerOrders_Pull_MyName]** (again replace "MyName" with your name). You will set up this procedure next. Then click **Save Changes**.
 
 ![](/images/L-DevCustOrders/03.jpg)
 <br>

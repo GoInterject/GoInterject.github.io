@@ -31,7 +31,7 @@ Network connectivity problems have various causes, but they typically occur beca
 
 **Packet Too Large:** This error occurs when trying to transmit a packet that exceeds the maximum transmission unit (MTU) size of the network. It could happen if the packet size is too large or if there are issues with the network path's MTU settings.
 
-**Timeout Error:** This error occurs when a connection or operation takes longer than the specified timeout period. It could indicate network congestion, server overload, or issues with the remote server's responsiveness. The semaphore timeout period has expired" is a network related error, not a SQL Server timeout. The source of the issue can be related to your VPN if you are using a VPN or to Network connectivity problems
+**Timeout Error:** This error occurs when a connection or operation takes longer than the specified timeout period. It could indicate network congestion, server overload, or issues with the remote server's responsiveness. "semaphore timeout period has expired" is a network related error, not a SQL Server timeout. The source of the issue can be related to your VPN if you are using a VPN or to Network connectivity problems
 
 ### Troubleshooting
 

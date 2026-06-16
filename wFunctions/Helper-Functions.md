@@ -63,7 +63,7 @@ The Pair function transfers values from one cell to another. It is typically use
 
 ### [PairGroup](/wFunctions/PairGroup.html)
 
-The PairGroup function will active all [Pair()](/wFunctions/Pair.html) functions defined within. It is best practice to use the PairGroup function even when only entering one Pair.
+The PairGroup function will activate all [Pair()](/wFunctions/Pair.html) functions defined within. It is best practice to use the PairGroup function even when only entering one Pair.
 
 ### [Param](/wFunctions/Param.html)
 

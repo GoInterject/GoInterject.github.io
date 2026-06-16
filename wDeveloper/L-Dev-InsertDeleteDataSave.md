@@ -445,7 +445,7 @@ AS
 					,t.[ContactTitle] = s.[ContactTitle]
 			--WHEN NOT MATCHED BY TARGET THEN -- Handles the insert based on LEFT JOIN -- NOT USED IN THIS EXAMPLE
 			-- INSERT([ExampleColumnKey],[ExampleColumnValue])
-			-- VALUES(s.ExampleColumnKey],s.[ExampleColumnValue])
+			-- VALUES(s.[ExampleColumnKey],s.[ExampleColumnValue])
 			
 			--WHEN NOT MATCHED BY SOURCE -- Handles the delete based on the RIGHT JOIN -- NOT USED IN THIS EXAMPLE
 			-- AND... add restrictions so delete doesn't remove too much. Filter params are normally considered here.

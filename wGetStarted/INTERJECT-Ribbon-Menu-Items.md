@@ -141,7 +141,7 @@ The Pull Data function takes data from Data Portals and places it into an Excel 
 ![](/images/InterjectRibbon/06.png)
 <br>
 
-When you open the Report Library and select a report, you can either use the **Pull Data** button to retrieve the data or hit CTL-SHIFT-J. To view an example, please see [Customer Aging](/wAbout/Customer-Aging.html).
+When you open the Report Library and select a report, you can either use the **Pull Data** button to retrieve the data or hit CTRL-SHIFT-J. To view an example, please see [Customer Aging](/wAbout/Customer-Aging.html).
 
 Another function of the Pull Data tool is the **Clear** operation. While the Pull brings data into the spreadsheet, this function within Pull can remove it.
 
@@ -354,7 +354,7 @@ The operation System contains a large number of options.
 | Force Calc On Worksheet | Forces Excel to calculate all Interject formulas in the Worksheet. Similar to Excel's **Calculate Sheet** button in the Formulas tab on the Ribbon. |
 | View SQL Test For ActiveCell | Provides the SQL code that will be executed for the ActiveCell. The ActiveCell would be any of the [Data Pull](/wFunctions/Data-Functions-Landing.html) or [Data Save](/wFunctions/ReportSave.html) Formulas. <br> This code can be executed in your development environment to see what would be produced based on current context of the spreadsheet. |
 | View SQL Template For ActiveCell | Will provide sample code as a starting point for creating a new Stored Procedure. A ReportSave will provide a template that can be used to save the data back. |
-| Clear Remembered Logins | Logs you out and removes all logins from the cache and the profiles removed from the Login manage |
+| Clear Remembered Logins | Logs you out and removes all logins from the cache and the profiles removed from the Login manager |
 | Re-enable Protected Grouping | Excel does not remember when files are protected while enabling groups. Pull or save data to reenable or use this function. |
 | Run the Interject Addin Manager | Starts the Interject Addin Manager if it is not currently running |
 | Check Connection | Allows user to test if a connection to a database can be established. To learn more, [click here.](/wPortal/Data-Connections.html). |

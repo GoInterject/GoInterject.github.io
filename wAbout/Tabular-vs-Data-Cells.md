@@ -19,7 +19,7 @@ In most of the user documentation, the instruction is focused on **Tabular** bec
 
 ### Tabular
 
-Tabular reporting is closely associated with standard reporting tools. Simply choose fields for each column, setup the level of detail, specify the rows to receive data, and the results populate the spreadsheet. Results can be broken into subtotaled sections, which are common to financial statements.
+Tabular reporting is closely associated with standard reporting tools. Simply choose fields for each column, set up the level of detail, specify the rows to receive data, and the results populate the spreadsheet. Results can be broken into subtotaled sections, which are common to financial statements.
 
 Understanding how rows and columns intersect to place data is important and requires some training. The result is an extremely fast report that can be published or distributed and easily read by users who desire reports in spreadsheets without any additional work. They are also instantly shareable to users who don't have Interject installed.
 

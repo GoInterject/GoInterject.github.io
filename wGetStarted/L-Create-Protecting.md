@@ -117,7 +117,7 @@ To verify that the filter cells are not locked, input Market into the Company Na
 ![](/images/L-Create-Protecting/08.jpg)
 <br>
 
-The speadsheet should look like this after.
+The spreadsheet should look like this after.
 
 ![](/images/L-Create-Protecting/09.jpg)
 <br>
@@ -201,7 +201,7 @@ Excel has a Protect Sheet Manager that allows you to customize which functions t
 ![](/images/L-Create-Protecting/ExcelProtectSheet.png)
 <br>
 
-In order to utilize the functionality of Excel's Protect Sheet Manger with Interject's Sheet Protector, be sure to leave the password blank before clicking **OK**:
+In order to utilize the functionality of Excel's Protect Sheet Manager with Interject's Sheet Protector, be sure to leave the password blank before clicking **OK**:
 
 ![](/images/L-Create-Protecting/PasswordBlank.png)
 <br>

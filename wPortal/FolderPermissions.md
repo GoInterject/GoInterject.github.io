@@ -16,7 +16,7 @@ description:
 
 ## Overview
 
-The Folder Permissions page allows you to assign roles to folders in the Report Library. The role count shows how many roles have been assigned to that particular folder. A folder with roles assigned to it is only viewable by users with those roles. If no roles have been assigned to the folder, then the they are viewable to all roles.
+The Folder Permissions page allows you to assign roles to folders in the Report Library. The role count shows how many roles have been assigned to that particular folder. A folder with roles assigned to it is only viewable by users with those roles. If no roles have been assigned to the folder, then they are viewable to all roles.
 
 <blockquote class=highlight_note>
 <b style='color:red;'><strong>Note: Assigning a folder to a role may leave it inaccessible to some users. For example, if a folder is assigned to the Standard role and users only have the ClientAdmin role, they will not be able to view that folder.</strong></b>
@@ -27,7 +27,7 @@ The Folder Permissions page allows you to assign roles to folders in the Report 
 ![](/images/FolderPermissions/FolderPermissionsPage.png)
 <br>
 
-[Custom roles](/wPortal/Roles.md#custom-roles) can be used in conjunction with folder permissions to give a folder viewable rights only to a selected users.
+[Custom roles](/wPortal/Roles.md#custom-roles) can be used in conjunction with folder permissions to give a folder viewable rights only to selected users.
 
 ![](/images/FolderPermissions/FolderCustomRole.png)
 <br>

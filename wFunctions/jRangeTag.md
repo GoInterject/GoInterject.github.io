@@ -27,10 +27,10 @@ For an example of this function, see [Lab Create: Basic Distribution](/wGetStart
 		<td class="pph"><b>Type</b></td>
 		<td>String</td>
     </tr>
-    <tr>
-		<td class="pph"><b>Constraints</b></td>
-		<td>Max 255 char</td>
-    </tr>
+  <tr>
+    <td class="pph"><b>Constraints</b></td>
+    <td>Max 255 characters</td>
+  </tr>
     <tr>
 		<td class="pph"><b>If Blank</b></td>
 		<td>Will fail</td>

@@ -10,13 +10,13 @@ images: [
 	{file: "DiagnosticsButton", type: "png", site: "Add-in", cat: "Ribbon", sub: "", report: "", ribbon: "Advanced", config: ""}, 
 	{file: "DiagnosticsSetProxyUsage", type: "png", site: "Add-in", cat: "Diagnostics", sub: "Set Proxy Usage", report: "", ribbon: "", config: ""}
 	]
-description: The Interject Add-in allows users to authenticate using Windows authentication. For this Interject uses the Microsoft DefaultCredential library to set up a proxy.
+description: The Interject Add-in allows users to authenticate using Windows authentication. For this Interject uses the Microsoft DefaultCredentials library to set up a proxy.
 ---
 * * *
 
 ## Overview
 
-The Interject Add-in allows users to authenticate using Windows authentication. For this Interject uses [System.Net.CredentialCache.DefaultCredential](https://learn.microsoft.com/en-us/dotnet/api/system.net.credentialcache.defaultcredentials){:target="_blank"}{:rel="noopener noreferrer"} library to set up a proxy. Interject's default Windows proxy at the application level can prevent a client's machine level proxy. This will prevent a user from being able to log in. To get around this, there is an Interject setting where users and clients can disable the Windows proxy.
+The Interject Add-in allows users to authenticate using Windows authentication. For this Interject uses [System.Net.CredentialCache.DefaultCredentials](https://learn.microsoft.com/en-us/dotnet/api/system.net.credentialcache.defaultcredentials){:target="_blank"}{:rel="noopener noreferrer"} library to set up a proxy. Interject's default Windows proxy at the application level can prevent a client's machine level proxy. This will prevent a user from being able to log in. To get around this, there is an Interject setting where users and clients can disable the Windows proxy.
 
 ### Configure via Diagnostics Setting
 
@@ -39,8 +39,8 @@ The following values reflect the possible inputs:
 - 2 (Remember) = Change setting to 2 and do not revert back to the default 2 upon startup
 - 3 (Remember) = Change setting to 3 and do not revert back to the default 2 upon startup
 
-To disable Interject's default web proexy, enter 3 in the Input section and click **Execute Selected Action**.
+To disable Interject's default web proxy, enter 3 in the Input section and click **Execute Selected Action**.
 
 ### Configure via app.config File
 
-Another option for configuring Interject's proxy network behavior is to configure Interject's app.config file. For more infomation, see the [official documentation](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings){:target="_blank"}{:rel="noopener noreferrer"} at Microsoft.
+Another option for configuring Interject's proxy network behavior is to configure Interject's app.config file. For more information, see the [official documentation](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings){:target="_blank"}{:rel="noopener noreferrer"} at Microsoft.

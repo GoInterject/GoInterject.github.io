@@ -29,7 +29,7 @@ For an example of this function, see [Create Inventory Fixed Lab.](/wGetStarted/
     </tr>
     <tr>
 		<td class="pph"><b>Constraints</b></td>
-		<td>Max 255 char</td>
+  <td>Max 255 chars</td>
     </tr>
     <tr>
 		<td class="pph"><b>If Blank</b></td>
@@ -110,7 +110,7 @@ For an example of this function, see [Create Inventory Fixed Lab.](/wGetStarted/
 | Argument Name  |  Example Mapping  |  Explanation   |  
 |------|------|------|
 |  Function Name  |  =ReportFixed()  |  The name of this function.  |  
-|  DataPortal  |  "NorthwindFixed"  |  This function will use the "NorthwindCustomers" Data Portal for the data source.  |  
+|  DataPortal  |  "NorthwindFixed"  |  This function will use the "NorthwindFixed" Data Portal for the data source.  |  
 |  RowDefRange  |  B14:B27  |  The names found in B14:B27 will be used to map to the column names found in row 2 (ColDefRange). Only data that intersects these names will be inserted on these rows.  |  
 |  ColDefRange  |  2:2  |  The names found in row 2 will be used to map to the row names found in row B14:B27 (RowDefRange). Only data that intersects these names will be inserted on these columns.  |  
 |  Parameters  |  N/A  |  The data returned from the data source will not be filtered.  |  

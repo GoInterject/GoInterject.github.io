@@ -49,7 +49,7 @@ description: This page illustrates the process of building a Customer Order repo
 
 ##  Overview
 
-This page illustrates the process of building a Customer Order report from scratch and uses the multi-row option to provide a more advanced presentation. Here you will get a better understating of the [ReportRange()](/wFunctions/ReportRange.html) and the [jFreezePanes()](/wFunctions/jFreezePanes.html) functions.
+This page illustrates the process of building a Customer Order report from scratch and uses the multi-row option to provide a more advanced presentation. Here you will get a better understanding of the [ReportRange()](/wFunctions/ReportRange.html) and the [jFreezePanes()](/wFunctions/jFreezePanes.html) functions.
 
 <blockquote class=lab_info>
 If you are following the Training Labs, this is Lab 3.2. Note: The Report Library at Training Labs for this lab will be blank as you are creating a report from a new blank Excel sheet.
@@ -211,12 +211,12 @@ The report should look something like this. Note that the text gets overwritten 
 
 ###  Final Steps
 
-**Step 1:** Now setup a [jFreezePanes](/wFunctions/jFreezePanes.html) function so you can quickly unfreeze and freeze the panes at the correct position. First, setup the jFreezePane function in cell F10 by going into the report formulas section and typing **=jFreezePanes()**, then click the **fx** button to open the Formula Wizard.
+**Step 1:** Now setup a [jFreezePanes](/wFunctions/jFreezePanes.html) function so you can quickly unfreeze and freeze the panes at the correct position. First, setup the jFreezePanes function in cell F10 by going into the report formulas section and typing **=jFreezePanes()**, then click the **fx** button to open the Formula Wizard.
 
 ![](/images/L-Create-CustOrders/28.png)
 <br>
 
-**Step 2:** In the FeezePanesCell argument, input **A22**. This will set the row that will be frozen above A22, and also where you will place the column headers. For the AnchorViewCell argument, type in A14 to mark that row as the top of the visible report. This sets the top of the report that will be visible to the user.
+**Step 2:** In the FreezePanesCell argument, input **A22**. This will set the row that will be frozen above A22, and also where you will place the column headers. For the AnchorViewCell argument, type in A14 to mark that row as the top of the visible report. This sets the top of the report that will be visible to the user.
 
 ![](/images/L-Create-CustOrders/29.png)
 <br>

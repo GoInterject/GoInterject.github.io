@@ -2,7 +2,7 @@
 title: "Create: Using the Retain Feature"
 filename: "L-Create-RetainFeature.md"
 layout: custom
-keywords: [retain, formulas, keep, don't clear, RetainedRowColumns, InsertNewRowsWithin]
+keywords: [retain, formulas, keep, don't clear, RetainRowColumns, InsertNewRowsWithin]
 headings: ["Overview", "Create Simple Formulas", "Without RetainedRowColumns", "With RetainedRowColumns", "Insert New Rows Within"]
 links: ["/wFunctions/ReportRange.html", "/wFunctions/ReportVariable.html", "/wFunctions/jColumnDef.html", "/wFunctions/jCombine.html"]
 image_dir: "L-Create-Retain"
@@ -144,7 +144,7 @@ Notice that the formulas are still intact and accurate to the new data.
 
 ### Insert New Rows Within
 
-Every time you pull data, it will retrieve the most custom data set. Sometimes this means it has to add new rows of data that do not currently exist in the report. When a new row of data has to be added, there are two options: 1) insert the new row at the bottom of the section or 2) insert the row based on the sorting of the key values columns. The default action is to insert the new rows of data at the bottom of the section, since this helps avoid adding the new rows in-between your formulas.
+Every time you pull data, it will retrieve the most current data set. Sometimes this means it has to add new rows of data that do not currently exist in the report. When a new row of data has to be added, there are two options: 1) insert the new row at the bottom of the section or 2) insert the row based on the sorting of the key values columns. The default action is to insert the new rows of data at the bottom of the section, since this helps avoid adding the new rows in-between your formulas.
 
 The following will illustrate the difference.
 

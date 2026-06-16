@@ -160,7 +160,7 @@ Next you will create a new Stored Procedure that builds from the [previous save]
 <div markdown="1" class="panel">
 
 ```sql
-CREATE OR ALTER   PROC [dbo].[NorthwindInsertDeleteDataSaveSP]
+CREATE OR ALTER   PROC [dbo].[NorthwindChangelogDataSaveSP]
 
 	-- System Params not in formula
 	@Interject_RequestContext nvarchar(max)
@@ -308,7 +308,7 @@ AS
 
 	DECLARE @DataToProcess TABLE
 	(
-		-- the below are system values used internally in this stored procedures
+	-- the below are system values used internally in this stored procedure
 		 [_ExcelRow] INT 
 		,[_MessageToUser] VARCHAR(500) DEFAULT('')
 		-- Below are your columns expected from the spreadsheet that is calling this save stored procedure
@@ -367,7 +367,7 @@ AS
 	END
 	
 	-- TestMode is provided so a test save can be executed and all related data can be 
-	-- easily viewed for testing while not effecting any data in the database
+	-- easily viewed for testing while not affecting any data in the database
 	IF @TestMode =1 
 	BEGIN
 		SELECT '@DataToProcess - After XML Processing' as ResultName
@@ -497,9 +497,9 @@ AS
 				)
 			-- the output captures the changes to the table and logs to a table variable
 			OUTPUT 
-				isnull(inserted.[CustomerID],deleted.[CustomerID])  -- include deleted in case delete is added later. Inserted is used for both Update an Insert
+				isnull(inserted.[CustomerID],deleted.[CustomerID])  -- include deleted in case delete is added later. Inserted is used for both Update and Insert
 				,s.[_ExcelRow] 
-				,$action as UpdateTypeCode  -- this logs into an a change log table variable
+				,$action as UpdateTypeCode  -- this logs into a change log table variable
 				,inserted.[IsDeleted]
 				,deleted.[IsDeleted] 
 			INTO @ChangeLog
@@ -612,7 +612,7 @@ Just after the "BEGIN TRY" statement, you will add a parameter to capture the cu
 
 ### ChangeLog
 
-The `@ChangeLog` table will need to be updated to included all the changes in the columns. This is done by adding the column and its counterpart with the "Old" suffix to show the changes. Note that the `EditedBy` and `LastDateEdited` columns are also added.
+The `@ChangeLog` table will need to be updated to include all the changes in the columns. This is done by adding the column and its counterpart with the "Old" suffix to show the changes. Note that the `EditedBy` and `LastDateEdited` columns are also added.
 
 ![](/images/L-Dev-ChangelogDataSave/SPChangeLog2.png)
 <br>
@@ -810,7 +810,7 @@ AS
 
 	DECLARE @DataToProcess TABLE
 	(
-		-- the below are system values used internally in this stored procedures
+	-- the below are system values used internally in this stored procedure
 		 [_ExcelRow] INT 
 		,[_MessageToUser] VARCHAR(500) DEFAULT('')
 		-- Below are your columns expected from the spreadsheet that is calling this save stored procedure
@@ -868,7 +868,7 @@ AS
 	END
 	
 	-- TestMode is provided so a test save can be executed and all related data can be 
-	-- easily viewed for testing while not effecting any data in the database
+	-- easily viewed for testing while not affecting any data in the database
 	IF @TestMode =1 
 	BEGIN
 		SELECT '@DataToProcess - After XML Processing' as ResultName
@@ -1023,9 +1023,9 @@ AS
 				)
 			-- the output captures the changes to the table and logs to a table variable
 			OUTPUT 
-				isnull(inserted.[CustomerID],deleted.[CustomerID])  -- include deleted in case delete is added later. Inserted is used for both Update an Insert
+				isnull(inserted.[CustomerID],deleted.[CustomerID])  -- include deleted in case delete is added later. Inserted is used for both Update and Insert
 				,s.[_ExcelRow] 
-				,$action as UpdateTypeCode  -- this logs into an a change log table variable
+				,$action as UpdateTypeCode  -- this logs into a change log table variable
 				,s.[CompanyName]
 				,s.[ContactName]
 				,s.[ContactTitle]

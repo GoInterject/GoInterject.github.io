@@ -63,7 +63,7 @@ description: In this example you are going to use the Financial Cube (FinCube) D
 
 ## Overview
 
-The [ReportVariable()](/wFunctions/ReportVariable.html) function is ideal for financial reports since it directs data into multiple specified ranges of a report that can grow and shrink with the data. In this example you are going to use the [Financial Cube](/wIndex/FinCubeTheFinancialCube.html) (FinCube) Data Portal to create a financial statement from scratch. First you will use the [ReportRange()](/wFunctions/ReportRange.html)formula to review the financial group summaries for a location. With the financial groups retrieved, you will than expand to create a subtotaled financial statement so each subtotaled detail will expand and shrink with the data.
+The [ReportVariable()](/wFunctions/ReportVariable.html) function is ideal for financial reports since it directs data into multiple specified ranges of a report that can grow and shrink with the data. In this example you are going to use the [Financial Cube](/wIndex/FinCubeTheFinancialCube.html) (FinCube) Data Portal to create a financial statement from scratch. First you will use the [ReportRange()](/wFunctions/ReportRange.html)formula to review the financial group summaries for a location. With the financial groups retrieved, you will then expand to create a subtotaled financial statement so each subtotaled detail will expand and shrink with the data.
 
 <blockquote class=lab_info>
  If you are following the Training Labs, this is Lab 3.5. Note: The Report Library at Training Labs for this lab will be blank as you are creating a report from a new blank Excel sheet.
@@ -80,7 +80,7 @@ To get started you will need to learn how to pull financial data from the Interj
 
 **Step 2:** The worksheet should look similar to below. A ReportRange() formula should be setup in C6 and its related parameters were placed starting in row 16.
 
-This Data Portal is special and will not show all the available columns by default if you do not have a Column Definition defined. There are simply too many combination of column options to present. So you need to setup the Column Definition range first.
+This Data Portal is special and will not show all the available columns by default if you do not have a Column Definition defined. There are simply too many combinations of column options to present. So you need to setup the Column Definition range first.
 
 Select cell C6 and click the **Fx** button. Set the **ColDefRange** argument to **2:2** as shown below. This row is where you will specify the columns for the report.
 
@@ -275,7 +275,7 @@ Now you will convert ReportRange() to ReportVariable() to populate each financia
 ![](/images/L-Create-FinancialVar/36.png)
 <br>
 
-**Step 2:** Next remove the last two arguments. Remove **,FALSE,TRUE** that is at the end, but keep the **)** at the end. It should look like the below screenshot when removed. Noticed the formula will end with two parenthesis, like **))**.
+**Step 2:** Next remove the last two arguments. Remove **,FALSE,TRUE** that is at the end, but keep the **)** at the end. It should look like the below screenshot when removed. Notice the formula will end with two parentheses, like **))**.
 
 ![](/images/L-Create-FinancialVar/38.png)
 <br>

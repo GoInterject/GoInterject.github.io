@@ -20,13 +20,13 @@ images: [
 	{file: "AdvanceRowHide13", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Inventory By Category", ribbon: "", config: ""}, 
 	{file: "AdvanceRowHide14", type: "png", site: "Add-in", cat: "Report", sub: "", report: "Inventory By Category", ribbon: "Simple", config: ""}
 	]
-description: In this example of the ReportHideRowOrColumn function, we will hide an entire section of a report based on the condition that the section is empty. You would typically use this in a report when data is pulled in with zero values. By hiding the zero value rows, and the entire section when all the rows within it are zero vale, the reporting area will be more usable. 
+description: In this example of the ReportHideRowOrColumn function, we will hide an entire section of a report based on the condition that the section is empty. You would typically use this in a report when data is pulled in with zero values. By hiding the zero value rows, and the entire section when all the rows within it are zero value, the reporting area will be more usable. 
 ---
 * * *
 
 ## Overview
 
-In this example of the [ReportHideRowOrColumn()](/wFunctions/ReportHideRowOrColumn.html) function, we will hide an entire section of a report based on the condition that the section is empty. You would typically use this in a report when data is pulled in with zero values. By hiding the zero value rows, and the entire section when all the rows within it are zero vale, the reporting area will be more usable. 
+In this example of the [ReportHideRowOrColumn()](/wFunctions/ReportHideRowOrColumn.html) function, we will hide an entire section of a report based on the condition that the section is empty. You would typically use this in a report when data is pulled in with zero values. By hiding the zero value rows, and the entire section when all the rows within it are zero value, the reporting area will be more usable. 
 
 For this demo, find the Interject Inventory Demo in the Interject Demo folder within the [Report Library](/wAbout/Report-Library-Basics.html). Once open, you'll use the **InvByCategory_WithDetail** tab.
 
@@ -87,7 +87,7 @@ For this demo, find the Interject Inventory Demo in the Interject Demo folder wi
 ![](/images/L-Create-AdvancedHideRow/AdvanceRowHide8.png)
 <br>
 
-**Step 9:** Select cells **C19:C21** and copy to the clipboard by pressing **CTL-C**. Navigate to cell **C23** and paste the formulas by pressing **CTL-V**.
+**Step 9:** Select cells **C19:C21** and copy to the clipboard by pressing **CTRL-C**. Navigate to cell **C23** and paste the formulas by pressing **CTRL-V**.
 
 ![](/images/L-Create-AdvancedHideRow/AdvanceRowHide9.png)
 <br>
@@ -97,7 +97,7 @@ Continue to navigate to each category and paste the formulas in cells in **C27**
 ![](/images/L-Create-AdvancedHideRow/AdvanceRowHide10.png)
 <br>
 
-**Step 10:** To test that the function and formulas are working correctly, click into cell **B20**, which contains the category name "Beverages" and add and "X". Now freeze the panes using the Quick Tools menu, hide the leftmost columns, and pull the report.
+**Step 10:** To test that the function and formulas are working correctly, click into cell **B20**, which contains the category name "Beverages" and add an "X". Now freeze the panes using the Quick Tools menu, hide the leftmost columns, and pull the report.
 
 ![](/images/L-Create-AdvancedHideRow/AdvanceRowHide13.png)
 <br>

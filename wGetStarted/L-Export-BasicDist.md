@@ -128,7 +128,7 @@ As the distribution process is running, it will display its activity and progres
 ![](/images/L-Export-BasicDist/12.png)
 <br>
 
-When the process is complete, the new workbook opens and the the original workbook is unchanged. Looking closer at what you created, the workbook below has 3 worksheets, and each worksheet has its own filter values as configured. You will notice that the worksheet names are simply incrementally numbers. You will cover how to custom name each tab in the next section, [Advanced Distribution](/wGetStarted/L-Export-AdvancedDist.html#grouping-segments) page.
+When the process is complete, the new workbook opens and the original workbook is unchanged. Looking closer at what you created, the workbook below has 3 worksheets, and each worksheet has its own filter values as configured. You will notice that the worksheet names are simply incrementally numbers. You will cover how to custom name each tab in the next section, [Advanced Distribution](/wGetStarted/L-Export-AdvancedDist.html#grouping-segments) page.
 
 ![](/images/L-Export-BasicDist/13.png)
 <br>

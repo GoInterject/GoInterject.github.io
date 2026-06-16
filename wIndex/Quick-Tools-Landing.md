@@ -52,9 +52,9 @@ These tools are efficient ways to complete the most common actions in Interject.
 | Names | [Remove Names with Ref Errors from Book](/wIndex/QuickTools-Names.html#remove-names-with-ref-errors-from-book) | Removes all named ranges with invalid references (Ref!) in the workbook]() |  |
 | Names | [Remove All Names from Sheet](/wIndex/QuickTools-Names.html#remove-all-names-from-sheet) | Removes all user named ranges that are scoped to the current sheet |  |
 | Names | [Remove All Names from Book](/wIndex/QuickTools-Names.html#remove-all-names-from-book) | Removes all user named ranges in the workbook |  |
-| Names | [Create Range Name for Sheet](/wIndex/QuickTools-Names.html#create-range-name-for-sheet) | Creates a named ranged scoped to the sheet for the selected range |  |
+| Names | [Create Range Name for Sheet](/wIndex/QuickTools-Names.html#create-range-name-for-sheet) | Creates a named range scoped to the sheet for the selected range |  |
 | Names | [Create Range Names for Sheet for 2 Column Selection](/wIndex/QuickTools-Names.html#create-range-names-for-sheet-for-2-column-selection) | For every value in the first column, creates named ranges in the second column (scoped to the sheet). Create names InterjectConfig_NamedRangePrefix and InterjectConfig_NamedRangeSuffix to modify name created. |  |
 | Hyperlink | [Reset Hyperlink Targets for Selection](/wIndex/QuickTools-Hyperlink.html#reset-hyperlink-targets-for-selection) | Fixes hyperlink targets to point to current sheet for selected cells |  |
 | Hyperlink | [Create/Edit Interject Hyperlink](/wIndex/QuickTools-Hyperlink.html#createedit-interject-hyperlink) | Opens a window to create/edit special [Interject Hyperlinks](/wIndex/INTERJECT-Link-Index.html). Add name range InterjectStyle_Hyperlink on formatted cell to preserve style of hyperlink. |  |
-| Other | [Unique List from Selection](/wIndex/QuickTools-Other.html#unique-list-from-selection) | Create a unique list of values from selected cells places in a new tab |  |
+| Other | [Unique List from Selection](/wIndex/QuickTools-Other.html#unique-list-from-selection) | Create a unique list of values from selected cells placed in a new tab |  |
 | Other | [Unhide All Sheets](/wIndex/QuickTools-Other.html#unhide-all-sheets) | Unhides all hidden sheets in the workbook |  |

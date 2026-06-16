@@ -7,7 +7,7 @@ headings: ["Function Summary", "Function Arguments", "Excel Formula Bar Example"
 links: []
 image_dir: ""
 images: []
-description: The jCombine function concatenates a range or multiple ranges of cells into a single string using a designated delimiter.
+description: The jCombineSmart function concatenates a range or multiple ranges of cells into a single string using a designated delimiter.
 ---
 * * *
 
@@ -49,7 +49,7 @@ This function can be used as a standalone function and does not need to be embed
     </tr>
     <tr>
 		<td class="pph"><b>Constraints</b></td>
-		<td>Max 255 char</td>
+  <td>Max 255 characters</td>
     </tr>
     <tr>
 		<td class="pph"><b>If Blank</b></td>
@@ -69,7 +69,7 @@ This function can be used as a standalone function and does not need to be embed
     </tr>
     <tr>
 		<td class="pph"><b>Constraints</b></td>
-		<td>Max 255 char</td>
+  <td>Max 255 characters</td>
     </tr>
     <tr>
 		<td class="pph"><b>If Blank</b></td>
@@ -109,7 +109,7 @@ This function can be used as a standalone function and does not need to be embed
 
 | Argument Name  |  Example Mapping  |  Explanation   |  
 |------|------|------|
-|  Function Name  |  =jCombine()  |  The name of this function.  |  
+|  Function Name  |  =jCombineSmart()  |  The name of this function.  |  
 |  Selected Range  |  F2:L2  |  The range F2:L2 will be the values concatenated.  |  
 |  Delimiter  |  "\|"  |  The pipe "\|" will be used as the delimiter for the concatenation.  |  
 |  Range Code  |  "..."  |  Three dots "..." will be used as the range operator for continuous ranges.  |  

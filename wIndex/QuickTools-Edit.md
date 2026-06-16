@@ -43,7 +43,7 @@ Inserts a zero for the current cell or all selected cells if they are blank.
 
 ### Zeros to Blanks
 
-Clears out the current or cell or all selected cells that contain only a zero.
+Clears out the current cell or all selected cells that contain only a zero.
 
 <b style='color:red;'><strong>Before:</strong></b>
 

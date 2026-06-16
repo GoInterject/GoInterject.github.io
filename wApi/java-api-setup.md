@@ -64,10 +64,11 @@ To run with Maven:
 mvn spring-boot:run
 ```
 
+
 To run with Java:
 
 ```bash
-java -jar "./target/interject-webbapp-1.0.0-SNAPSHOT.jar"
+java -jar "./target/interject-webapp-1.0.0-SNAPSHOT.jar"
 ```
 
 <blockquote class=highlight_note>

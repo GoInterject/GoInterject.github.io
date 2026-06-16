@@ -81,7 +81,7 @@ For an example of this function, see [Lab Create: Inventory Variable](/wGetStart
 </table>
 </div>
 
-<button class="collapsible-parameter">**FormatRange**<br>The range designating the formatting style (e.g. font, color) for the inserted data. Inserted data will be formated using this range as a template. Formulas can also be included, which will be used for the inserted data.</button>
+<button class="collapsible-parameter">**FormatRange**<br>The range designating the formatting style (e.g. font, color) for the inserted data. Inserted data will be formatted using this range as a template. Formulas can also be included, which will be used for the inserted data.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
@@ -141,7 +141,7 @@ For an example of this function, see [Lab Create: Inventory Variable](/wGetStart
 </table>
 </div>
 
-<button class="collapsible-parameter">**InsertNewRowsWithin**<br>True: If RetainRowsColumns is used, will insert new data in the TargetDataRange on a pull action by alphabetical order of the first key listed in RetainRowColumns. <br><br>False: Will insert new data below the already present data in the TargetDataRange on a pull action if valid columns are defined in RetainRowColumns.</button>
+<button class="collapsible-parameter">**InsertNewRowsWithin**<br>True: If RetainRowColumns is used, will insert new data in the TargetDataRange on a pull action by alphabetical order of the first key listed in RetainRowColumns. <br><br>False: Will insert new data below the already present data in the TargetDataRange on a pull action if valid columns are defined in RetainRowColumns.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
@@ -207,7 +207,7 @@ For an example of this function, see [Lab Create: Inventory Variable](/wGetStart
 =ReportVariable("NorthwindVariable",B18:B54,2:2,4:4,Param(I14,I15),,FALSE,FALSE)
 ```
 
-###  Function Composition
+### Function Composition
 
 | Argument Name  |  Example Mapping  |  Explanation   |  
 |------|------|------|
@@ -219,7 +219,7 @@ For an example of this function, see [Lab Create: Inventory Variable](/wGetStart
 |  Parameters  |  Param(I14,I15)  |  Cells I14 and I15 will correspond to the parameters in the data source to filter the inserted data.  |  
 |  RetainRowColumns  |  ""  |  Left blank to indicate not to retain any data in the TargetDataRange (B14:H15).  |  
 |  InsertNewRowsWithin  |  FALSE  |  This value is automatically set to false since RetainRowColumns is blank.  |  
-|  UseTopSpacerRow  |  FALSE  |  Data will be inserted on the first row (18) defined in RowDataRange.  |  
+|  UseTopSpacerRow  |  FALSE  |  Data will be inserted on the first row (18) defined in RowDefRange.  |  
 | PopulateDuplicateRowDefs | "" | Left blank to indicate to display duplicate RowDefItems |
 
 ###  Embeddable Helper Functions

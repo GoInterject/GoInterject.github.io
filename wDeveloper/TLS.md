@@ -61,7 +61,7 @@ Interject versions below 2.5.0.14:
 
 ### Set TLS Settings via IDSSettings File
 
-You can manual set the TLS setting via the **IDSSettings.xml**.
+You can manually set the TLS setting via the **IDSSettings.xml**.
 
 **Step 1:** Open the Diagnostics, select **Open User Folders** and click **Execute Selected Action**.
 
@@ -75,7 +75,7 @@ A few folders should open up.
 </blockquote>
 <br>
 
-**Step 2:** In the Settings folder, open the **IDSSetting.xml** file with a text editor.
+**Step 2:** In the Settings folder, open the **IDSSettings.xml** file with a text editor.
 
 ![](/images/TLS/SettingsFolder.png)
 <br>
@@ -133,12 +133,12 @@ The installation location is on the **Add-Ins** tab:
 
 Be sure to save the file.
 
-**Step 4:** Restart the Addin Manager. Right click the Interject Addin Manger icon in the system tray and select **Exit**.
+**Step 4:** Restart the Addin Manager. Right click the Interject Addin Manager icon in the system tray and select **Exit**.
 
 ![](/images/TLS/ExitAddinManager.png)
 <br>
 
-Restart the Addin Manger.
+Restart the Addin Manager.
 
 ![](/images/TLS/StartAddinManager.png)
 <br>

@@ -35,6 +35,6 @@ When Interject makes the connection between the user session and the middle-tier
 ![](/images/Defined/Interject Stuff.png)
 <br>
 
-The illustration above shows the cloud model of the Interject platform, but there are hybrid models that allow for full on-premise dependency.
+The illustration above shows the cloud model of the Interject platform, but there are hybrid models that allow for full on-premises dependency.
 
 Managing the distribution of spreadsheet reports or apps is just as important as building the spreadsheet app itself. Interject provides the Report Library to publish reports so they are quickly accessible while still protecting and tracking versions of the source templates. The process also begins to teach users that they can access their data without repeatedly saving files locally, just like they learned with website applications. Publishing reports and apps can be done through other file-sharing tools or corporate intranets as well.

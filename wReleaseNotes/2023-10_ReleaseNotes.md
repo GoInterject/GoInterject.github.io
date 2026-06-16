@@ -23,7 +23,7 @@ _Released 10/13/23_
 
 * ✅ Refresh user company list on activate/deactivate client
 
-* ♻️ Legacy auth token is refreshed every 2 days instead of 19
+* ♻️ Legacy auth token is refreshed every 2 days instead of 19 days
 
 * ♻️ Inactive clients no longer show up in the company ddl
 
@@ -37,7 +37,7 @@ _Released 10/18/23_
 
 * ✅ Added MFA config model to staff page in portal
 
-* ✅ Added Checksum added next to the installer download button on portal site - [See docs](/wDeveloper/InstallerValidation.html)
+* ✅ Added Checksum next to the installer download button on portal site - [See docs](/wDeveloper/InstallerValidation.html)
 
 * ♻️ Improved default description box size for data connections
 

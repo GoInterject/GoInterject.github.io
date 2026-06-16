@@ -20,13 +20,13 @@ images: [
 	{file: "ReportBuilderSection", type: "png", site: "Portal", cat: "Data Portals", sub: "Formula Parameters", report: "", ribbon: "", config: ""},
 	{file: "CustomizedParameter", type: "png", site: "Add-in", cat: "Report", sub: "Dropdown Menu", report: "NorthwindCustomers", ribbon: "", config: "Yes"},
 ]
-description: The Report Builder is a tool in the Interject Addin to easily create a report based on the settings in a Data Portal.
+description: The Report Builder is a tool in the Interject Add-in to easily create a report based on the settings in a Data Portal.
 ---
 * * *
 
 ## Overview
 
-The Report Builder is a tool in the Interject Addin to easily create a report based on the settings in a [Data Portal](/wPortal/Data-Portals.html).
+The Report Builder is a tool in the Interject Add-in to easily create a report based on the settings in a [Data Portal](/wPortal/Data-Portals.html).
 
 ![](/images/ReportBuilder/Ribbon.png)
 <br>

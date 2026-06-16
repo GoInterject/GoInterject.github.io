@@ -159,7 +159,7 @@ For an example of this function, see [Lab Create: Customer Aging](/wGetStarted/L
 </table>
 </div>
 
-<button class="collapsible-parameter">**RetainRowColumns**<br>The list of column names that will be used as a key for retaining information within the inserted data range. This can be a comma delimited string or a cell reference of a single column name defined in ColDefRange. <br><br>All data in the column(s) matching the names in this argument will be retained after a a Pull-Run or Pull-Clear event. Consequently, such rows are also retained and not deleted. However, all data in columns that are not defined in this argument are blanked out after a clear action or overridden after a pull action.<br><br>This feature makes forecasting calculations to remain in the report instead of being cleared. For an example of this feature, see [Using the Retain Feature](/wGetStarted/L-Create-RetainFeature.html).</button>
+<button class="collapsible-parameter">**RetainRowColumns**<br>The list of column names that will be used as a key for retaining information within the inserted data range. This can be a comma delimited string or a cell reference of a single column name defined in ColDefRange. <br><br>All data in the column(s) matching the names in this argument will be retained after a Pull-Run or Pull-Clear event. Consequently, such rows are also retained and not deleted. However, all data in columns that are not defined in this argument are blanked out after a clear action or overridden after a pull action.<br><br>This feature makes forecasting calculations to remain in the report instead of being cleared. For an example of this feature, see [Using the Retain Feature](/wGetStarted/L-Create-RetainFeature.html).</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
@@ -179,7 +179,7 @@ For an example of this function, see [Lab Create: Customer Aging](/wGetStarted/L
 </table>
 </div>
 
-<button class="collapsible-parameter">**InsertNewRowsWithin**<br>True: If RetainRowsColumns is used, will insert new data in the TargetDataRange on a pull action by alphabetical order of the first key listed in RetainRowColumns. <br><br>False: Will insert new data below the already present data in the TargetDataRange on a pull action if valid columns are defined in RetainRowColumns.</button>
+<button class="collapsible-parameter">**InsertNewRowsWithin**<br>True: If RetainRowColumns is used, will insert new data in the TargetDataRange on a pull action by alphabetical order of the first key listed in RetainRowColumns. <br><br>False: Will insert new data below the already present data in the TargetDataRange on a pull action if valid columns are defined in RetainRowColumns.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>

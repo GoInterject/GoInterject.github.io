@@ -12,13 +12,13 @@ images: [
 	{file: "39", type: "jpg", site: "Windows", cat: "Uninstall a Program", sub: "", report: "", ribbon: "", config: ""}, 
 	{file: "40", type: "jpg", site: "Windows", cat: "Uninstall a Program", sub: "", report: "", ribbon: "", config: ""}
 	]
-description: Interject aims to make uninstalling a simple and straight forward process. This process fully removes current versions of Interject as well as legacy versions (version 2.3.7.0) and before.
+description: Interject aims to make uninstalling a simple and straightforward process. This process fully removes current versions of Interject as well as legacy versions (version 2.3.7.0) and before.
 ---
 * * *
 
 ## Overview
 
-Interject aims to make uninstalling a simple and straight forward process. This process fully removes current versions of Interject as well as legacy versions (version 2.3.7.0) and before.
+Interject aims to make uninstalling a simple and straightforward process. This process fully removes current versions of Interject as well as legacy versions (version 2.3.7.0) and before.
 
 ### Uninstalling Interject
 

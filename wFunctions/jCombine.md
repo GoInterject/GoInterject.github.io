@@ -21,7 +21,7 @@ For an example of this function, see [Lab Create: Using the Retain Feature](/wGe
 
 ###  Function Arguments
 
-<button class="collapsible-parameter">**Selected Range**<br>A range or multiple ranges that will be concatenated. If multiple ranges are selected, they need to be enclosed in parenthesis and separated by a comma (e.g. "(a2,a14:b15,c6)"). Concatenation happens row by row (i.e. each column in the row concatenates before moving to the next row).</button>
+<button class="collapsible-parameter">**Selected Range**<br>A range or multiple ranges that will be concatenated. If multiple ranges are selected, they need to be enclosed in parentheses and separated by a comma (e.g. "(a2,a14:b15,c6)"). Concatenation happens row by row (i.e. each column in the row concatenates before moving to the next row).</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
@@ -51,7 +51,7 @@ For an example of this function, see [Lab Create: Using the Retain Feature](/wGe
     </tr>
     <tr>
 		<td class="pph"><b>Constraints</b></td>
-		<td>Max 255 char</td>
+		<td>Max 255 characters</td>
     </tr>
     <tr>
 		<td class="pph"><b>If Blank</b></td>

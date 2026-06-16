@@ -60,7 +60,7 @@ The table below explains each of the available parameters of the FinCube Data Po
 | SkipLive             |             | This is a special Interject feature allowing reports to access live data for the current open month being closed. If set to False, the amounts provided are based on the last scheduled or manually triggered import. <br> If this is configured in your Interject installation and SkipLive is set to True, the FinCube Data Portal will directly access the current open month balances in real time. This features gives users up-to-the-second data while limiting the server resources needed to present live data during a financial close. It is a significant productivity improvement compared to data warehouses or data-marts that can only provide data updated on a set schedule. |
 | ReverseSigns         |             | This parameter can be used in conjunction with the ShowCredit parameter to show the required sign for an account segment. By setting to True it will reverse the signs of the amounts returned. See the example chart below. |
 | LastRun              |             | This is an output parameter places in the spreadsheet the report's last run date and time. This will use the timezone settings of the windows session. |
-| TimeLineFrom         |             | If configured, this will allows users run reports showing changes over time based on imported intervals. Using this feature shows the report as it would have been run the previous week. Alternately, it will show changes occuring in the last 12 hours. If this from date and time parameter is omitted, it defaults to 1/1/1900. |
+| TimeLineFrom         |             | If configured, this will allows users run reports showing changes over time based on imported intervals. Using this feature shows the report as it would have been run the previous week. Alternately, it will show changes occurring in the last 12 hours. If this from date and time parameter is omitted, it defaults to 1/1/1900. |
 | TimeLineTo           |             | This parameter works with TimeLineFrom. If omitted it is defaulted to through the current week. |
 
 ### Examples using Show Credits and Reverse Signs Parameters
@@ -97,7 +97,7 @@ This notation is deprecated but is still supported. Since these notations are re
 |--------------------------|----------------------------------------------------------------------------------------------------------------|
 | CYA1 through CYA12       | Current Year actuals for a specific month. The number in the suffix specifies the month.                       |
 | CYAYTD1 through CYAYTD12 | Current year actuals for year to date. The number in the suffix specifies the month.                           |
-| CYA_TOT                  | This is another to total a year. It is same as using CYAYTD12, which returns a total from January to December. |
+| CYA_TOT                  | This is another way to total a year. It is same as using CYAYTD12, which returns a total from January to December. |
 
 Other prefixes can be used in place of CYA:
 
@@ -161,7 +161,7 @@ Since these notations are relative to a year and a period, it is important to sp
 
 The [jColumnDef()](/wFunctions/jColumnDef.html) notation is the most recent addition to the column options and is the most flexible and intuitive in use. Instead of using a single text string to represent an amount, like CYA1 or Act, you can use the jColumnDef() function containing arguments for each of the 12 segments noted in the above Data Portal parameters. In this way, you can specify each component separately and more clearly. jColumnDef() arguments are essentially an additional filter level for each column you want to show.
 
-It is important to emphasize that jColumnDef() goes beyond a source (Actual, Budget, fcast1 to fcast12), a year, and a period alone. These are the same segments (9, 10 and 12) that earlier notations (CTA and ACT) can only specify. jColumnDef also supports the remaining 12 segments and each can support the same filter options and groups noted above for Data Portal parameters The result is a highly flexible method to create columns.
+It is important to emphasize that jColumnDef() goes beyond a source (Actual, Budget, fcast1 to fcast12), a year, and a period alone. These are the same segments (9, 10 and 12) that earlier notations (CYA and ACT) can only specify. jColumnDef also supports the remaining 12 segments and each can support the same filter options and groups noted above for Data Portal parameters The result is a highly flexible method to create columns.
 
 The illustration below shows an example. In cells H2 and I2, the jColumnDef() function is entered into the column definition row instead of CYA1 or Act. The jColumnDef() function argument references the cells below it (rows 4 through 15) that notes all the segment options. In this example, the columns will return the Jan and Feb of 2017 actuals, since Period, Year and Source are the only segments used.
 

@@ -142,7 +142,7 @@ ReportMacro() requires a public function without any parameters, as it is the in
 ![](/images/L-Create-RepMacro/15.jpg)
 <br>
 
-ReportMacro() also requires the VBA macro to be in written in a shared module as it will not work with a Workbook or Sheet module.
+ReportMacro() also requires the VBA macro to be written in a shared module as it will not work with a Workbook or Sheet module.
 
 ![](/images/L-Create-RepMacro/16.jpg)
 <br>

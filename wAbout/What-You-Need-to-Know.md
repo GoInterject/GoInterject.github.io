@@ -7,13 +7,13 @@ headings: ["At a Glance", "Key Points on Scalability", "Spans Small and Large Or
 links: ["/wAbout/Tabular-vs-Data-Cells.html", "/wAbout/Report-Library-Basics.html", "http://Box.com", "/wAbout/Tabular-vs-Data-Cells.html", "/wAbout/Tabular-vs-Data-Cells.html"]
 image_dir: ""
 images: []
-description: Interject was built for large companies with hundreds of users that run thousands of reports each day. Interject commonly handles report volumes over of 300,000 per month, and we can manage much, much more.
+description: Interject was built for large companies with hundreds of users that run thousands of reports each day. Interject commonly handles report volumes over 300,000 per month, and we can manage much, much more.
 ---
 * * *
 
 ### At a Glance
 
-Finding integrated reporting solutions to fit your needs is difficult enough, let alone finding one that can scale with your company's growth. Interject was built for large companies with hundreds of users that run thousands of reports each day. Interject commonly handles report volumes over of 300,000 per month, and we can manage much, much more.
+Finding integrated reporting solutions to fit your needs is difficult enough, let alone finding one that can scale with your company's growth. Interject was built for large companies with hundreds of users that run thousands of reports each day. Interject commonly handles report volumes over 300,000 per month, and we can manage much, much more.
 
 Interject also fits within the specific needs of smaller organizations and is a particular benefit since it can scale with the company as it grows. In business today, data is exploding all around us, and the reporting needs of an organization never slow down.
 
@@ -35,7 +35,7 @@ Interject helps seal the cracks in existing software and provides bridges connec
 
 #### Scalable Solutions are in Your Control
 
-Purchasing key software can leave you dependent on vendors for costly customizations. This prohibits it's practical use over time. Interject hands the control of any and all reporting solutions to your IT department or business analysts. Since Interject leverages common database and cloud API technologies, it lets organizations grow their systems internally.
+Purchasing key software can leave you dependent on vendors for costly customizations. This prohibits its practical use over time. Interject hands the control of any and all reporting solutions to your IT department or business analysts. Since Interject leverages common database and cloud API technologies, it lets organizations grow their systems internally.
 
 ### When you Start Using Interject Remember:
 

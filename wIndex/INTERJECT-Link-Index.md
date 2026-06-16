@@ -19,7 +19,7 @@ description: Interject provides a way to perform some of the basic Interject fun
 
 ## Overview
 
-Interject provides a way to perform some of the basic Interject functions and commands by clicking on a link within the report. This makes it convenient to customize your report to preform commonly used functions and commands by the click of a button. 
+Interject provides a way to perform some of the basic Interject functions and commands by clicking on a link within the report. This makes it convenient to customize your report to perform commonly used functions and commands by the click of a button. 
 
 ### Hyperlink List
 

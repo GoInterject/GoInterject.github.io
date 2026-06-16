@@ -119,11 +119,11 @@ For an example of this function, see [jDropdown](/wGetStarted/L-Create-Dropdowns
 </table>
 </div>
 
-<button class="collapsible-parameter">**Display Column Name**<br>Then name of the column from the Data Portal that will be displayed in the drop down list.</button>
+<button class="collapsible-parameter">**Display Column Name**<br>The name of the column from the Data Portal that will be displayed in the drop down list.</button>
 <div markdown="1" class="panel-parameter">
 <table>
   <tbody>
-    <tr>
+  <tr>
 		<td class="pph"><b>Type</b></td>
 		<td>String</td>
     </tr>
@@ -133,7 +133,7 @@ For an example of this function, see [jDropdown](/wGetStarted/L-Create-Dropdowns
     </tr>
     <tr>
 		<td class="pph"><b>If Blank</b></td>
-		<td>Uses Value Column Name</td>
+    <td>Uses Value Column Name</td>
     </tr>
   </tbody>
 </table>

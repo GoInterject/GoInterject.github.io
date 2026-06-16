@@ -14,7 +14,7 @@ images: [
 	{file: "SendEmail", type: "png", site: "Portal", cat: "User Profile", sub: "", report: "", ribbon: "", config: ""},
 	{file: "AssignRoles", type: "png", site: "Portal", cat: "User Profile", sub: "", report: "", ribbon: "", config: ""}
 ]
-description: The User Profile page allows a user to change their basic information as well as change their password. If the user is a then they will also have additional functionality.
+description: The User Profile page allows a user to change their basic information as well as change their password. If the user is a ClientAdmin then they will also have additional functionality.
 ---
 * * *
 

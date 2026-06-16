@@ -43,7 +43,7 @@ description: In this walkthrough, you will open a basic aging summary and modify
 This lab is a basic Customer Aging demonstration for tracking invoices for multiple customers. In this walkthrough, you will open a basic aging summary and modify it to fit your specific needs. You will then drill into the details tab, take notes on any unpaid invoices, then save them back to the database. This Detail report will also provide the data needed to drill further into each order and customer.
 
 <blockquote class=lab_info>
- If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 1 Real World Walkthoughs > Lab 1.1 Customer Aging.
+ If you are following the Training Labs, this report file can be found in the Report Library at Training Labs > Lab 1 Real World Walkthroughs > Lab 1.1 Customer Aging.
 </blockquote>
 
 ### Navigating to the Aging Summary
@@ -197,4 +197,4 @@ Notice that you do not need to use the[**Pull Data**](/wGetStarted/INTERJECT-Rib
 ![](/images/Walkthrough-CustAging/26.png)
 <br>
 
-From here you can see that Save-a-lot Markets had large invoices in July and August that are not payed. However, you can also see the effort to pay off those invoices in the following months by the over-payments they have made. Take note of this activity and proceed to the next report: [Inventory Report Walk-Through.](/wAbout/Inventory-Reports.html)
+From here you can see that Save-a-lot Markets had large invoices in July and August that are not paid. However, you can also see the effort to pay off those invoices in the following months by the over-payments they have made. Take note of this activity and proceed to the next report: [Inventory Report Walk-Through.](/wAbout/Inventory-Reports.html)

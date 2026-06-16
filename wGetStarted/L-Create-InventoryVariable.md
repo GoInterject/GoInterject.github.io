@@ -66,7 +66,7 @@ The [ReportVariable()](/wFunctions/ReportVariable.html) function directs data in
 
 1. First, select the **View** ribbon.
 2. Second, pull down the Freeze Panes menu and select Unfreeze.
-3. Last, click the plus sign, as shown below, to can expand the column groupings.
+3. Last, click the plus sign, as shown below, to expand the column groupings.
 
 ![](/images/L-Create-InventoryVar/04.png)
 <br>
@@ -162,7 +162,7 @@ Once the panes are frozen using Interject's [Freeze Panes](/wIndex/QuickTools-Pa
 
 ### ReportGrouping()
 
-**Step 1:** The [ReportGrouping()](/wFunctions/ReportGrouping.html) function will collapse or expand all the groups after an Interject [event](/wFunctions/Event-Functions-Landing.html). In this case, we will set up ReportGrouping to collapse the groups after a pulling the data (Pull-Run event).
+**Step 1:** The [ReportGrouping()](/wFunctions/ReportGrouping.html) function will collapse or expand all the groups after an Interject [event](/wFunctions/Event-Functions-Landing.html). In this case, we will set up ReportGrouping to collapse the groups after pulling the data (Pull-Run event).
 
 Click cell **C5** and enter **=ReportGrouping()** and then click the Function Wizard button.
 

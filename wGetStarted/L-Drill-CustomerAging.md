@@ -40,7 +40,7 @@ In this example, you will be setting up a simple drill to the customer orders hi
 ![](/images/L-Drill-CustAging/01.png)
 <br>
 
-**Step 2:** Unfreeze the panes. Go to the **View** tab, find the **Freeze Pane** option, and select **Unfreeze Panes**.
+**Step 2:** Unfreeze the panes. Go to the **View** tab, find the **Freeze Panes** option, and select **Unfreeze Panes**.
 
 ![](/images/L-Drill-CustAging/02.png)
 <br>

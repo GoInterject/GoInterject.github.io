@@ -45,7 +45,7 @@ The macro security related settings are:
 
 | Setting | Description | Value |
 |----|----|----|
-| ExcelMacrosEnabled | Enables upload/open of macro files. If this setting is missing AND the MacroFileSigningKey or FileSigningAPI settings have been set, then those can be used to enable a valid upload/open uploading of macro files. | True/False |
+| ExcelMacrosEnabled | Enables upload/open of macro files. If this setting is missing AND the MacroFileSigningKey or FileSigningAPI settings have been set, then those can be used to enable a valid upload/open of macro files. | True/False |
 | AllowMacroFilesFromDate | Allows users to open files that have been uploaded before this date. This setting makes it possible for users to be able to continue to utilize their existing reports after macro security has been introduced. Typically this setting date is set to the date when macro security is to be implemented. | Date |
 | MacroFileSigningKey | A key that is used to digital sign the macro files. | Long string of characters |
 | FileSigningAPI | A link to an API that will digital sign the macro files. | URL Link |
@@ -76,6 +76,6 @@ The following displays which file types are allowed to upload/open from the Repo
 | Word | doc | Word document (97-2003) |
 | Word | docx | Word document |
 | Adobe | pdf | Portable Document Format file | 
-| Image | png | Portable Network Graphic file |
+| Image | png | Portable Network Graphics file |
 | Image | jpg | Joint Photographic Experts Group file |
  

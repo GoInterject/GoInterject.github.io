@@ -22,7 +22,7 @@ Interject optimizes speed by caching company settings such as Data Portals, Conn
 
 ### [Interject Support](/wTroubleshoot/Interject-Support.html)
 
-Interject Support in built into Excel via the Interject Add-in. You can easily report a problem to Interject or find Interject contact information. You also have the option of turning on certain logs in order to send more key details to Interject.
+Interject Support is built into Excel via the Interject Add-in. You can easily report a problem to Interject or find Interject contact information. You also have the option of turning on certain logs in order to send more key details to Interject.
 
 ### [Add-in Errors](/wTroubleshoot/App-Errors.html)
 

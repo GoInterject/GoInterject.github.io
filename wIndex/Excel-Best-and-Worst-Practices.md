@@ -96,13 +96,13 @@ Alternatively, you can set the default compression rating for all newly inserted
 
 ### File Type
 
-The old Microsoft Excel type .xls does not compress the data in the report using saving so this type of file will be much larger. Always use the xlsl or xlsm file type for your reports.
+The old Microsoft Excel type .xls does not compress the data in the report using saving so this type of file will be much larger. Always use the xlsx or xlsm file type for your reports.
 
 The Microsoft binary file (xlsb) type will further reduce the file size of your report. However, there are some limitations: 1) The file may be a security risk as you will not know if it contains macros. 2) You cannot make changes to the Excel Ribbon while a binary file is open. 3) Spreadsheet programs other than Excel may not be able to open the binary file.
 
 ### Pivot Tables
 
-Pivot tables will save the source data with the file in addition to the file contents, making the file much larger then necessary. You can reduce the file size by selecting not to save the source data and instead, simply choose to refresh the data when opening the file. Both these options are available by right clicking the pivot table, click "PivotTable Options", and then select the "Data" tab.
+Pivot tables will save the source data with the file in addition to the file contents, making the file much larger than necessary. You can reduce the file size by selecting not to save the source data and instead, simply choose to refresh the data when opening the file. Both these options are available by right clicking the pivot table, click "PivotTable Options", and then select the "Data" tab.
 
 ### VBA Macros
 

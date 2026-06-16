@@ -21,7 +21,7 @@ images: [
     {file: "39", type: "png", site: "Add-in", cat: "Installation", sub: "Ready to Install", report: "", ribbon: "", config: ""}, 
     {file: "40", type: "png", site: "Add-in", cat: "Installation", sub: "Completed Install", report: "", ribbon: "", config: ""}
     ]
-description: Shared Computer installation installs a multi-user instance of Interject on one computer, such as a shared server. Since Interject's Addin Manager is used to manage independent settings for multiple users, this installation is dependant on the Addin Manager. In order to run Per-Computer installation, you must have administrative-elevated rights.
+description: Shared Computer installation installs a multi-user instance of Interject on one computer, such as a shared server. Since Interject's Addin Manager is used to manage independent settings for multiple users, this installation is dependent on the Addin Manager. In order to run Per-Computer installation, you must have administrative-elevated rights.
 ---
 * * *
 

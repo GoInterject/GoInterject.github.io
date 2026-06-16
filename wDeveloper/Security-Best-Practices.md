@@ -21,11 +21,11 @@ When setting up Data Connections to connect to a database it is best to use conn
 
 ### Row Level Security for Reports and Apps
 
-The Interject platform connects the spreadsheet interface to a middle-tier and makes the request under the user context of the session. In this way, a stored procedure can leverage Windows authentication to identify the user. In SQL Server the function to retrieve the username is sysname(). Other database engines that support windows authentication will have other methods. Windows authentication can also be used for website API that connects to Interject over SSL using standard coding practices.
+The Interject platform connects the spreadsheet interface to a middle-tier and makes the request under the user context of the session. In this way, a stored procedure can leverage Windows authentication to identify the user. In SQL Server the function to retrieve the username is SUSER_SNAME(). Other database engines that support windows authentication will have other methods. Windows authentication can also be used for website API that connects to Interject over SSL using standard coding practices.
 
 Using a stored procedure and windows authentication, built in row level security features of a database, such as SQL Server, can be used.
 
-In addition to leveraging windows authentication to identify the user, Interject can pass user identity information along with each request to the middle tier. This is useful if windows authentication is not available. If a data portal is configured with the following system parameters, select user context will be provided to each request to the data portal.
+In addition to leveraging windows authentication to identify the user, Interject can pass user identity information along with each request to the middle tier. This is useful if windows authentication is not available. If a data portal is configured with the following system parameters, selected user context will be provided to each request to the data portal.
 
 System Parameters Related to User Identity:
 
@@ -43,7 +43,7 @@ It is critical to note that it is best practice to configure stored procedures w
 
 An additional user token is provided by Interject when the Data Portal connects to a website API. The token can be used by the website API to verify the identity of the user against the Interject Authorization API. The use of this token will be described further in the **Using an API with Interject** example that is currently under construction.
 
-In addition to the UserContext node above, there is a node in the data portal parameter @Interject_RequestContext. The XML node \<UserContextEncrypted\>\</UserContextEncrypted\> can be leveraged to trust the user context provided by the data portal parameters. This feature is not enabled, but when available will provide will allow use of client encryption keys and common encryption practices to parse the content.
+In addition to the UserContext node above, there is a node in the data portal parameter @Interject_RequestContext. The XML node \<UserContextEncrypted\>\</UserContextEncrypted\> can be leveraged to trust the user context provided by the data portal parameters. This feature is not enabled, but when available will allow use of client encryption keys and common encryption practices to parse the content.
 
 When considering all the above regarding row level security, you have the ability to specifically identify the user for every data transaction going through the Interject Platform. This identity that can be leveraged in your middle tier code, stored procedure or website API, to be aware of the user's row level security.
 

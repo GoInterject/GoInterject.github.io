@@ -172,8 +172,8 @@ For an example of this function, see [Develop: Editing Data Save](/wDeveloper/L-
 |  Function Name  |  =ReportSave()  |  The name of this function.  |  
 |  DataPortal  |  "NorthwindInvoiceSave"  |  This function will use the "NorthwindInvoiceSave" Data Portal for the data source.  |  
 |  RowDefRange  |  B42:B58  |  The unique row IDs are designated to be in column B and the rows 42:58 will be saved.  |  
-|  Col Def Range  |  12:12  |  Row 12 is designated to contain the column names that will be saved via the data source.  |  
-|  ResultRange  |  14:14  |  Row 14 is designated to contain the column names that will be displayed when returning from the save.  |  
+|  ColDefRange  |  12:12  |  Row 12 is designated to contain the column names that will be saved via the data source.  |  
+|  ResultsRange  |  14:14  |  Row 14 is designated to contain the column names that will be displayed when returning from the save.  |  
 |  Parameters  |  N/A  |  Data will not be filtered for this save.  |  
 
 ###  Embeddable Helper Functions

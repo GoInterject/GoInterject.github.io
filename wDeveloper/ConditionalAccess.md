@@ -60,7 +60,7 @@ Here is an example of how the conditional rules mapping is applied:
 |---|---|---|---|---|
 | Rule1 | http://schemas.microsoft.com/ws/2008/06/identity/claims/role | Admin | Equals | |
 | Rule2 | http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress | 1@example.com,2@example.com,3@example.com | Contains | |
-| Rule3 | http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress | | RegularExpression | ^[A-Za-z0-9._%+-]+@gointerject\.com$ |
+| Rule3 | http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress | | Regular Expression | ^[A-Za-z0-9._%+-]+@gointerject\.com$ |
 
 **Rule1**: The user is allowed access only when the Claim value for http://schemas.microsoft.com/ws/2008/06/identity/claims/role (Role) is equal to 'Admin'
 
