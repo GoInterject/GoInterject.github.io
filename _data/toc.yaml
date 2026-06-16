@@ -513,6 +513,8 @@ releaseNotes:
       path: /wReleaseNotes/2025-06_ReleaseNotes.html
     - title: 2.5.5.0
       path: /wReleaseNotes/2025-11_ReleaseNotes.html
+    - title: 2.5.6.1
+      path: /wReleaseNotes/2026-03_ReleaseNotes.html
 - sectiontitle: 2023
   path: /wReleaseNotes/2023-12_ReleaseNotes.html
   section:
@@ -542,7 +544,7 @@ releaseNotes:
     - title: December
       path: /wReleaseNotes/2024-12_ReleaseNotes.html
 - sectiontitle: 2025
-  path: /wReleaseNotes/2025-01_ReleaseNotes.html
+  path: /wReleaseNotes/2025-11_ReleaseNotes.html
   section:
     - title: January
       path: /wReleaseNotes/2025-01_ReleaseNotes.html
@@ -550,3 +552,8 @@ releaseNotes:
       path: /wReleaseNotes/2025-06_ReleaseNotes.html
     - title: November
       path: /wReleaseNotes/2025-11_ReleaseNotes.html
+- sectiontitle: 2026
+  path: /wReleaseNotes/2026-03_ReleaseNotes.html
+  section:
+    - title: March
+      path: /wReleaseNotes/2026-03_ReleaseNotes.html
